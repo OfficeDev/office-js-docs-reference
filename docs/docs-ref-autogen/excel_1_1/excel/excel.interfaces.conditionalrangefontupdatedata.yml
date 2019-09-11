@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontUpdateData
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData:interface'
     summary: >-
       An interface for updating data on the ConditionalRangeFont object, for use in "conditionalRangeFont.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,4 +9,4 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

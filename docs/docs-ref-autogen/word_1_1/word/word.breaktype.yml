@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.BreakType
+  - uid: 'word!Word.BreakType:enum'
     summary: |-
       Specifies the form of a break.
 
@@ -10,16 +10,16 @@ items:
     langs:
       - typeScript
     type: enum
-    package: word
+    package: word!
     children:
-      - word.Word.BreakType.line
-      - word.Word.BreakType.next
-      - word.Word.BreakType.page
-      - word.Word.BreakType.sectionContinuous
-      - word.Word.BreakType.sectionEven
-      - word.Word.BreakType.sectionNext
-      - word.Word.BreakType.sectionOdd
-  - uid: word.Word.BreakType.line
+      - 'word!Word.BreakType.line:member'
+      - 'word!Word.BreakType.next:member'
+      - 'word!Word.BreakType.page:member'
+      - 'word!Word.BreakType.sectionContinuous:member'
+      - 'word!Word.BreakType.sectionEven:member'
+      - 'word!Word.BreakType.sectionNext:member'
+      - 'word!Word.BreakType.sectionOdd:member'
+  - uid: 'word!Word.BreakType.line:member'
     summary: Line break.
     name: line
     fullName: line
@@ -27,7 +27,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Line"'
-  - uid: word.Word.BreakType.next
+  - uid: 'word!Word.BreakType.next:member'
     deprecated:
       content: Use sectionNext instead.
     name: next
@@ -36,7 +36,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Next"'
-  - uid: word.Word.BreakType.page
+  - uid: 'word!Word.BreakType.page:member'
     summary: Page break at the insertion point.
     name: page
     fullName: page
@@ -44,7 +44,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Page"'
-  - uid: word.Word.BreakType.sectionContinuous
+  - uid: 'word!Word.BreakType.sectionContinuous:member'
     summary: New section without a corresponding page break.
     name: sectionContinuous
     fullName: sectionContinuous
@@ -52,7 +52,7 @@ items:
       - typeScript
     type: field
     numericValue: '"SectionContinuous"'
-  - uid: word.Word.BreakType.sectionEven
+  - uid: 'word!Word.BreakType.sectionEven:member'
     summary: >-
       Section break with the next section beginning on the next even-numbered page. If the section break falls on an
       even-numbered page, Word leaves the next odd-numbered page blank.
@@ -62,7 +62,7 @@ items:
       - typeScript
     type: field
     numericValue: '"SectionEven"'
-  - uid: word.Word.BreakType.sectionNext
+  - uid: 'word!Word.BreakType.sectionNext:member'
     summary: Section break on next page.
     name: sectionNext
     fullName: sectionNext
@@ -70,7 +70,7 @@ items:
       - typeScript
     type: field
     numericValue: '"SectionNext"'
-  - uid: word.Word.BreakType.sectionOdd
+  - uid: 'word!Word.BreakType.sectionOdd:member'
     summary: >-
       Section break with the next section beginning on the next odd-numbered page. If the section break falls on an
       odd-numbered page, Word leaves the next even-numbered page blank.

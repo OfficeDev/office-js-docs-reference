@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.HyperlinkData
+  - uid: 'visio!Visio.Interfaces.HyperlinkData:interface'
     summary: An interface describing the data returned by calling "hyperlink.toJSON()".
     name: Visio.Interfaces.HyperlinkData
     fullName: Visio.Interfaces.HyperlinkData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.HyperlinkData.address
-      - visio.Visio.Interfaces.HyperlinkData.description
-      - visio.Visio.Interfaces.HyperlinkData.extraInfo
-      - visio.Visio.Interfaces.HyperlinkData.subAddress
-  - uid: visio.Visio.Interfaces.HyperlinkData.address
+      - 'visio!Visio.Interfaces.HyperlinkData#address:member'
+      - 'visio!Visio.Interfaces.HyperlinkData#description:member'
+      - 'visio!Visio.Interfaces.HyperlinkData#extraInfo:member'
+      - 'visio!Visio.Interfaces.HyperlinkData#subAddress:member'
+  - uid: 'visio!Visio.Interfaces.HyperlinkData#address:member'
     summary: |-
       Gets the address of the Hyperlink object. Read-only.
 
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.Interfaces.HyperlinkData.description
+  - uid: 'visio!Visio.Interfaces.HyperlinkData#description:member'
     summary: |-
       Gets the description of a hyperlink. Read-only.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.Interfaces.HyperlinkData.extraInfo
+  - uid: 'visio!Visio.Interfaces.HyperlinkData#extraInfo:member'
     summary: |-
       Gets the extra URL request information used to resolve the hyperlink's URL. Read-only.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.Interfaces.HyperlinkData.subAddress
+  - uid: 'visio!Visio.Interfaces.HyperlinkData#subAddress:member'
     summary: |-
       Gets the sub-address of the Hyperlink object. Read-only.
 

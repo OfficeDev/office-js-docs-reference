@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.HyperlinkLoadOptions
+  - uid: 'visio!Visio.Interfaces.HyperlinkLoadOptions:interface'
     summary: |-
       Represents the Hyperlink.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.HyperlinkLoadOptions.$all
-      - visio.Visio.Interfaces.HyperlinkLoadOptions.address
-      - visio.Visio.Interfaces.HyperlinkLoadOptions.description
-      - visio.Visio.Interfaces.HyperlinkLoadOptions.extraInfo
-      - visio.Visio.Interfaces.HyperlinkLoadOptions.subAddress
-  - uid: visio.Visio.Interfaces.HyperlinkLoadOptions.$all
+      - 'visio!Visio.Interfaces.HyperlinkLoadOptions#$all:member'
+      - 'visio!Visio.Interfaces.HyperlinkLoadOptions#address:member'
+      - 'visio!Visio.Interfaces.HyperlinkLoadOptions#description:member'
+      - 'visio!Visio.Interfaces.HyperlinkLoadOptions#extraInfo:member'
+      - 'visio!Visio.Interfaces.HyperlinkLoadOptions#subAddress:member'
+  - uid: 'visio!Visio.Interfaces.HyperlinkLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.HyperlinkLoadOptions.address
+  - uid: 'visio!Visio.Interfaces.HyperlinkLoadOptions#address:member'
     summary: |-
       Gets the address of the Hyperlink object. Read-only.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.HyperlinkLoadOptions.description
+  - uid: 'visio!Visio.Interfaces.HyperlinkLoadOptions#description:member'
     summary: |-
       Gets the description of a hyperlink. Read-only.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.HyperlinkLoadOptions.extraInfo
+  - uid: 'visio!Visio.Interfaces.HyperlinkLoadOptions#extraInfo:member'
     summary: |-
       Gets the extra URL request information used to resolve the hyperlink's URL. Read-only.
 
@@ -73,7 +73,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.HyperlinkLoadOptions.subAddress
+  - uid: 'visio!Visio.Interfaces.HyperlinkLoadOptions#subAddress:member'
     summary: |-
       Gets the sub-address of the Hyperlink object. Read-only.
 

@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartAreaFormatData
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatData:interface'
     summary: An interface describing the data returned by calling "chartAreaFormat.toJSON()".
     name: Excel.Interfaces.ChartAreaFormatData
     fullName: Excel.Interfaces.ChartAreaFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartAreaFormatData.border
-      - excel.Excel.Interfaces.ChartAreaFormatData.font
-  - uid: excel.Excel.Interfaces.ChartAreaFormatData.border
+      - 'excel!Excel.Interfaces.ChartAreaFormatData#border:member'
+      - 'excel!Excel.Interfaces.ChartAreaFormatData#font:member'
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatData#border:member'
     summary: |-
       Represents the border format of chart area, which includes color, linestyle, and weight. Read-only.
 
@@ -25,8 +25,8 @@ items:
       content: 'border?: Excel.Interfaces.ChartBorderData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartBorderData
-  - uid: excel.Excel.Interfaces.ChartAreaFormatData.font
+          - 'excel!Excel.Interfaces.ChartBorderData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatData#font:member'
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.
 
@@ -40,4 +40,9 @@ items:
       content: 'font?: Excel.Interfaces.ChartFontData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartFontData
+          - 'excel!Excel.Interfaces.ChartFontData:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartBorderData:interface'
+    name: Excel.Interfaces.ChartBorderData
+  - uid: 'excel!Excel.Interfaces.ChartFontData:interface'
+    name: Excel.Interfaces.ChartFontData

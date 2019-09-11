@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalDataBarDirection
+  - uid: 'excel!Excel.ConditionalDataBarDirection:enum'
     summary: |-
       Represents the Data Bar direction within a cell.
 
@@ -10,26 +10,26 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalDataBarDirection.context
-      - excel.Excel.ConditionalDataBarDirection.leftToRight
-      - excel.Excel.ConditionalDataBarDirection.rightToLeft
-  - uid: excel.Excel.ConditionalDataBarDirection.context
+      - 'excel!Excel.ConditionalDataBarDirection.context:member'
+      - 'excel!Excel.ConditionalDataBarDirection.leftToRight:member'
+      - 'excel!Excel.ConditionalDataBarDirection.rightToLeft:member'
+  - uid: 'excel!Excel.ConditionalDataBarDirection.context:member'
     name: context
     fullName: context
     langs:
       - typeScript
     type: field
     numericValue: '"Context"'
-  - uid: excel.Excel.ConditionalDataBarDirection.leftToRight
+  - uid: 'excel!Excel.ConditionalDataBarDirection.leftToRight:member'
     name: leftToRight
     fullName: leftToRight
     langs:
       - typeScript
     type: field
     numericValue: '"LeftToRight"'
-  - uid: excel.Excel.ConditionalDataBarDirection.rightToLeft
+  - uid: 'excel!Excel.ConditionalDataBarDirection.rightToLeft:member'
     name: rightToLeft
     fullName: rightToLeft
     langs:

@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.NoteTagData
+  - uid: 'onenote!OneNote.Interfaces.NoteTagData:interface'
     summary: An interface describing the data returned by calling "noteTag.toJSON()".
     name: OneNote.Interfaces.NoteTagData
     fullName: OneNote.Interfaces.NoteTagData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.NoteTagData.id
-      - onenote.OneNote.Interfaces.NoteTagData.status
-      - onenote.OneNote.Interfaces.NoteTagData.type
-  - uid: onenote.OneNote.Interfaces.NoteTagData.id
+      - 'onenote!OneNote.Interfaces.NoteTagData#id:member'
+      - 'onenote!OneNote.Interfaces.NoteTagData#status:member'
+      - 'onenote!OneNote.Interfaces.NoteTagData#type:member'
+  - uid: 'onenote!OneNote.Interfaces.NoteTagData#id:member'
     summary: |-
       Gets the Id of the NoteTag object. Read-only.
 
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.NoteTagData.status
+  - uid: 'onenote!OneNote.Interfaces.NoteTagData#status:member'
     summary: |-
       Gets the status of the NoteTag object. Read-only.
 
@@ -43,10 +43,8 @@ items:
         "TaskNotSyncedYet" | "TaskRemoved";
       return:
         type:
-          - >-
-            OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet"
-            | "TaskRemoved"
-  - uid: onenote.OneNote.Interfaces.NoteTagData.type
+          - 'onenote!OneNote.Interfaces.NoteTagData#status~0:complex'
+  - uid: 'onenote!OneNote.Interfaces.NoteTagData#type:member'
     summary: |-
       Gets the type of the NoteTag object. Read-only.
 
@@ -62,6 +60,31 @@ items:
         "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2";
       return:
         type:
-          - >-
-            OneNote.NoteTagType | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber"
-            | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2"
+          - 'onenote!OneNote.Interfaces.NoteTagData#type~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.NoteTagData#status~0:complex'
+    name: >-
+      OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" |
+      "TaskRemoved"
+    fullName: >-
+      OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" |
+      "TaskRemoved"
+    spec.typeScript:
+      - uid: 'onenote!OneNote.NoteTagStatus:enum'
+        name: OneNote.NoteTagStatus
+        fullName: OneNote.NoteTagStatus
+      - name: ' | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"'
+        fullName: ' | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"'
+  - uid: 'onenote!OneNote.Interfaces.NoteTagData#type~0:complex'
+    name: >-
+      OneNote.NoteTagType | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" |
+      "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2"
+    fullName: >-
+      OneNote.NoteTagType | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" |
+      "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2"
+    spec.typeScript:
+      - uid: 'onenote!OneNote.NoteTagType:enum'
+        name: OneNote.NoteTagType
+        fullName: OneNote.NoteTagType
+      - name: ' | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2"'
+        fullName: ' | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2"'

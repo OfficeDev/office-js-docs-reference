@@ -1,24 +1,24 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TableUpdateData
+  - uid: 'excel!Excel.Interfaces.TableUpdateData:interface'
     summary: 'An interface for updating data on the Table object, for use in "table.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.TableUpdateData
     fullName: Excel.Interfaces.TableUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TableUpdateData.highlightFirstColumn
-      - excel.Excel.Interfaces.TableUpdateData.highlightLastColumn
-      - excel.Excel.Interfaces.TableUpdateData.name
-      - excel.Excel.Interfaces.TableUpdateData.showBandedColumns
-      - excel.Excel.Interfaces.TableUpdateData.showBandedRows
-      - excel.Excel.Interfaces.TableUpdateData.showFilterButton
-      - excel.Excel.Interfaces.TableUpdateData.showHeaders
-      - excel.Excel.Interfaces.TableUpdateData.showTotals
-      - excel.Excel.Interfaces.TableUpdateData.style
-  - uid: excel.Excel.Interfaces.TableUpdateData.highlightFirstColumn
+      - 'excel!Excel.Interfaces.TableUpdateData#highlightFirstColumn:member'
+      - 'excel!Excel.Interfaces.TableUpdateData#highlightLastColumn:member'
+      - 'excel!Excel.Interfaces.TableUpdateData#name:member'
+      - 'excel!Excel.Interfaces.TableUpdateData#showBandedColumns:member'
+      - 'excel!Excel.Interfaces.TableUpdateData#showBandedRows:member'
+      - 'excel!Excel.Interfaces.TableUpdateData#showFilterButton:member'
+      - 'excel!Excel.Interfaces.TableUpdateData#showHeaders:member'
+      - 'excel!Excel.Interfaces.TableUpdateData#showTotals:member'
+      - 'excel!Excel.Interfaces.TableUpdateData#style:member'
+  - uid: 'excel!Excel.Interfaces.TableUpdateData#highlightFirstColumn:member'
     summary: |-
       Indicates whether the first column contains special formatting.
 
@@ -33,7 +33,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableUpdateData.highlightLastColumn
+  - uid: 'excel!Excel.Interfaces.TableUpdateData#highlightLastColumn:member'
     summary: |-
       Indicates whether the last column contains special formatting.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableUpdateData.name
+  - uid: 'excel!Excel.Interfaces.TableUpdateData#name:member'
     summary: |-
       Name of the table.
 
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.TableUpdateData.showBandedColumns
+  - uid: 'excel!Excel.Interfaces.TableUpdateData#showBandedColumns:member'
     summary: >-
       Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even
       ones to make reading the table easier.
@@ -80,7 +80,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableUpdateData.showBandedRows
+  - uid: 'excel!Excel.Interfaces.TableUpdateData#showBandedRows:member'
     summary: >-
       Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to
       make reading the table easier.
@@ -97,7 +97,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableUpdateData.showFilterButton
+  - uid: 'excel!Excel.Interfaces.TableUpdateData#showFilterButton:member'
     summary: >-
       Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if
       the table contains a header row.
@@ -114,7 +114,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableUpdateData.showHeaders
+  - uid: 'excel!Excel.Interfaces.TableUpdateData#showHeaders:member'
     summary: |-
       Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
 
@@ -129,7 +129,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableUpdateData.showTotals
+  - uid: 'excel!Excel.Interfaces.TableUpdateData#showTotals:member'
     summary: |-
       Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
 
@@ -144,7 +144,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableUpdateData.style
+  - uid: 'excel!Excel.Interfaces.TableUpdateData#style:member'
     summary: >-
       Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21,
       TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined

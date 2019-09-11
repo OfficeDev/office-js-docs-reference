@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.DocumentProperties
+  - uid: 'excel!Excel.DocumentProperties:class'
     summary: |-
       Represents workbook properties.
 
@@ -11,29 +11,29 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.DocumentProperties.author
-      - excel.Excel.DocumentProperties.category
-      - excel.Excel.DocumentProperties.comments
-      - excel.Excel.DocumentProperties.company
-      - excel.Excel.DocumentProperties.context
-      - excel.Excel.DocumentProperties.creationDate
-      - excel.Excel.DocumentProperties.custom
-      - excel.Excel.DocumentProperties.keywords
-      - excel.Excel.DocumentProperties.lastAuthor
-      - excel.Excel.DocumentProperties.load
-      - excel.Excel.DocumentProperties.load_1
-      - excel.Excel.DocumentProperties.load_2
-      - excel.Excel.DocumentProperties.manager
-      - excel.Excel.DocumentProperties.revisionNumber
-      - excel.Excel.DocumentProperties.set
-      - excel.Excel.DocumentProperties.set_1
-      - excel.Excel.DocumentProperties.subject
-      - excel.Excel.DocumentProperties.title
-      - excel.Excel.DocumentProperties.toJSON
-  - uid: excel.Excel.DocumentProperties.author
+      - 'excel!Excel.DocumentProperties#author:member'
+      - 'excel!Excel.DocumentProperties#category:member'
+      - 'excel!Excel.DocumentProperties#comments:member'
+      - 'excel!Excel.DocumentProperties#company:member'
+      - 'excel!Excel.DocumentProperties#context:member'
+      - 'excel!Excel.DocumentProperties#creationDate:member'
+      - 'excel!Excel.DocumentProperties#custom:member'
+      - 'excel!Excel.DocumentProperties#keywords:member'
+      - 'excel!Excel.DocumentProperties#lastAuthor:member'
+      - 'excel!Excel.DocumentProperties#load:member(1)'
+      - 'excel!Excel.DocumentProperties#load:member(2)'
+      - 'excel!Excel.DocumentProperties#load:member(3)'
+      - 'excel!Excel.DocumentProperties#manager:member'
+      - 'excel!Excel.DocumentProperties#revisionNumber:member'
+      - 'excel!Excel.DocumentProperties#set:member(1)'
+      - 'excel!Excel.DocumentProperties#set:member(2)'
+      - 'excel!Excel.DocumentProperties#subject:member'
+      - 'excel!Excel.DocumentProperties#title:member'
+      - 'excel!Excel.DocumentProperties#toJSON:member(1)'
+  - uid: 'excel!Excel.DocumentProperties#author:member'
     summary: |-
       Gets or sets the author of the workbook.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.DocumentProperties.category
+  - uid: 'excel!Excel.DocumentProperties#category:member'
     summary: |-
       Gets or sets the category of the workbook.
 
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.DocumentProperties.comments
+  - uid: 'excel!Excel.DocumentProperties#comments:member'
     summary: |-
       Gets or sets the comments of the workbook.
 
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.DocumentProperties.company
+  - uid: 'excel!Excel.DocumentProperties#company:member'
     summary: |-
       Gets or sets the company of the workbook.
 
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.DocumentProperties.context
+  - uid: 'excel!Excel.DocumentProperties#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -106,8 +106,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.DocumentProperties.creationDate
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.DocumentProperties#creationDate:member'
     summary: |-
       Gets the creation date of the workbook. Read only.
 
@@ -121,8 +121,8 @@ items:
       content: 'readonly creationDate: Date;'
       return:
         type:
-          - Date
-  - uid: excel.Excel.DocumentProperties.custom
+          - '!Date:interface'
+  - uid: 'excel!Excel.DocumentProperties#custom:member'
     summary: |-
       Gets the collection of custom properties of the workbook. Read only.
 
@@ -136,8 +136,8 @@ items:
       content: 'readonly custom: Excel.CustomPropertyCollection;'
       return:
         type:
-          - excel.Excel.CustomPropertyCollection
-  - uid: excel.Excel.DocumentProperties.keywords
+          - 'excel!Excel.CustomPropertyCollection:class'
+  - uid: 'excel!Excel.DocumentProperties#keywords:member'
     summary: |-
       Gets or sets the keywords of the workbook.
 
@@ -152,7 +152,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.DocumentProperties.lastAuthor
+  - uid: 'excel!Excel.DocumentProperties#lastAuthor:member'
     summary: |-
       Gets the last author of the workbook. Read only.
 
@@ -167,7 +167,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.DocumentProperties.load
+  - uid: 'excel!Excel.DocumentProperties#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -198,14 +198,14 @@ items:
       content: 'load(option?: Excel.Interfaces.DocumentPropertiesLoadOptions): Excel.DocumentProperties;'
       return:
         type:
-          - excel.Excel.DocumentProperties
+          - 'excel!Excel.DocumentProperties:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.DocumentPropertiesLoadOptions
-  - uid: excel.Excel.DocumentProperties.load_1
+            - 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
+  - uid: 'excel!Excel.DocumentProperties#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -218,14 +218,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.DocumentProperties;'
       return:
         type:
-          - excel.Excel.DocumentProperties
+          - 'excel!Excel.DocumentProperties:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.DocumentProperties.load_2
+  - uid: 'excel!Excel.DocumentProperties#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -238,7 +238,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.DocumentProperties;'
       return:
         type:
-          - excel.Excel.DocumentProperties
+          - 'excel!Excel.DocumentProperties:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -247,7 +247,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.DocumentProperties.manager
+  - uid: 'excel!Excel.DocumentProperties#manager:member'
     summary: |-
       Gets or sets the manager of the workbook.
 
@@ -262,7 +262,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.DocumentProperties.revisionNumber
+  - uid: 'excel!Excel.DocumentProperties#revisionNumber:member'
     summary: |-
       Gets the revision number of the workbook. Read only.
 
@@ -277,7 +277,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.DocumentProperties.set
+  - uid: 'excel!Excel.DocumentProperties#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -302,12 +302,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.DocumentPropertiesUpdateData
+            - 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.DocumentProperties.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.DocumentProperties#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -324,8 +324,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.DocumentProperties
-  - uid: excel.Excel.DocumentProperties.subject
+            - 'excel!Excel.DocumentProperties:class'
+  - uid: 'excel!Excel.DocumentProperties#subject:member'
     summary: |-
       Gets or sets the subject of the workbook.
 
@@ -340,7 +340,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.DocumentProperties.title
+  - uid: 'excel!Excel.DocumentProperties#title:member'
     summary: |-
       Gets or sets the title of the workbook.
 
@@ -355,7 +355,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.DocumentProperties.toJSON
+  - uid: 'excel!Excel.DocumentProperties#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -371,5 +371,24 @@ items:
       content: 'toJSON(): Excel.Interfaces.DocumentPropertiesData;'
       return:
         type:
-          - excel.Excel.Interfaces.DocumentPropertiesData
+          - 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: '!Date:interface'
+    name: Date
+  - uid: 'excel!Excel.CustomPropertyCollection:class'
+    name: Excel.CustomPropertyCollection
+  - uid: 'excel!Excel.DocumentProperties:class'
+    name: Excel.DocumentProperties
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
+    name: Excel.Interfaces.DocumentPropertiesLoadOptions
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
+    name: Interfaces.DocumentPropertiesUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
+    name: Excel.Interfaces.DocumentPropertiesData

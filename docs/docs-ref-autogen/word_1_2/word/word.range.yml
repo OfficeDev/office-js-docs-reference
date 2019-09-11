@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Range
+  - uid: 'word!Word.Range:class'
     summary: |-
       Represents a contiguous area in a document.
 
@@ -11,48 +11,48 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: word
+      - 'word!OfficeExtension.ClientObject:class'
+    package: word!
     children:
-      - word.Word.Range.clear
-      - word.Word.Range.contentControls
-      - word.Word.Range.context
-      - word.Word.Range.delete
-      - word.Word.Range.font
-      - word.Word.Range.getHtml
-      - word.Word.Range.getOoxml
-      - word.Word.Range.inlinePictures
-      - word.Word.Range.insertBreak
-      - word.Word.Range.insertBreak_1
-      - word.Word.Range.insertContentControl
-      - word.Word.Range.insertFileFromBase64
-      - word.Word.Range.insertFileFromBase64_1
-      - word.Word.Range.insertHtml
-      - word.Word.Range.insertHtml_1
-      - word.Word.Range.insertInlinePictureFromBase64
-      - word.Word.Range.insertInlinePictureFromBase64_1
-      - word.Word.Range.insertOoxml
-      - word.Word.Range.insertOoxml_1
-      - word.Word.Range.insertParagraph
-      - word.Word.Range.insertParagraph_1
-      - word.Word.Range.insertText
-      - word.Word.Range.insertText_1
-      - word.Word.Range.load
-      - word.Word.Range.load_1
-      - word.Word.Range.load_2
-      - word.Word.Range.paragraphs
-      - word.Word.Range.parentContentControl
-      - word.Word.Range.search
-      - word.Word.Range.select
-      - word.Word.Range.select_1
-      - word.Word.Range.set
-      - word.Word.Range.set_1
-      - word.Word.Range.style
-      - word.Word.Range.text
-      - word.Word.Range.toJSON
-      - word.Word.Range.track
-      - word.Word.Range.untrack
-  - uid: word.Word.Range.clear
+      - 'word!Word.Range#clear:member(1)'
+      - 'word!Word.Range#contentControls:member'
+      - 'word!Word.Range#context:member'
+      - 'word!Word.Range#delete:member(1)'
+      - 'word!Word.Range#font:member'
+      - 'word!Word.Range#getHtml:member(1)'
+      - 'word!Word.Range#getOoxml:member(1)'
+      - 'word!Word.Range#inlinePictures:member'
+      - 'word!Word.Range#insertBreak:member(1)'
+      - 'word!Word.Range#insertBreak:member(2)'
+      - 'word!Word.Range#insertContentControl:member(1)'
+      - 'word!Word.Range#insertFileFromBase64:member(1)'
+      - 'word!Word.Range#insertFileFromBase64:member(2)'
+      - 'word!Word.Range#insertHtml:member(1)'
+      - 'word!Word.Range#insertHtml:member(2)'
+      - 'word!Word.Range#insertInlinePictureFromBase64:member(1)'
+      - 'word!Word.Range#insertInlinePictureFromBase64:member(2)'
+      - 'word!Word.Range#insertOoxml:member(1)'
+      - 'word!Word.Range#insertOoxml:member(2)'
+      - 'word!Word.Range#insertParagraph:member(1)'
+      - 'word!Word.Range#insertParagraph:member(2)'
+      - 'word!Word.Range#insertText:member(1)'
+      - 'word!Word.Range#insertText:member(2)'
+      - 'word!Word.Range#load:member(1)'
+      - 'word!Word.Range#load:member(2)'
+      - 'word!Word.Range#load:member(3)'
+      - 'word!Word.Range#paragraphs:member'
+      - 'word!Word.Range#parentContentControl:member'
+      - 'word!Word.Range#search:member(1)'
+      - 'word!Word.Range#select:member(1)'
+      - 'word!Word.Range#select:member(2)'
+      - 'word!Word.Range#set:member(1)'
+      - 'word!Word.Range#set:member(2)'
+      - 'word!Word.Range#style:member'
+      - 'word!Word.Range#text:member'
+      - 'word!Word.Range#toJSON:member(1)'
+      - 'word!Word.Range#track:member(1)'
+      - 'word!Word.Range#untrack:member(1)'
+  - uid: 'word!Word.Range#clear:member(1)'
     summary: |-
       Clears the contents of the range object. The user can perform the undo operation on the cleared content.
 
@@ -80,7 +80,7 @@ items:
               // create a proxy range object with the results.
               var range = context.document.getSelection();
 
-              // Queue a commmand to clear the contents of the proxy range object.
+              // Queue a command to clear the contents of the proxy range object.
               range.clear();
 
               // Synchronize the document state by executing the queued commands,
@@ -96,7 +96,7 @@ items:
               }
           });
           ```
-  - uid: word.Word.Range.contentControls
+  - uid: 'word!Word.Range#contentControls:member'
     summary: |-
       Gets the collection of content control objects in the range. Read-only.
 
@@ -110,8 +110,8 @@ items:
       content: 'readonly contentControls: Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
-  - uid: word.Word.Range.context
+          - 'word!Word.ContentControlCollection:class'
+  - uid: 'word!Word.Range#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -124,8 +124,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.Range.delete
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.Range#delete:member(1)'
     summary: |-
       Deletes the range and its content from the document.
 
@@ -153,7 +153,7 @@ items:
               // create a proxy range object with the results.
               var range = context.document.getSelection();
 
-              // Queue a commmand to delete the range object.
+              // Queue a command to delete the range object.
               range.delete();
 
               // Synchronize the document state by executing the queued commands,
@@ -169,7 +169,7 @@ items:
               }
           });
           ```
-  - uid: word.Word.Range.font
+  - uid: 'word!Word.Range#font:member'
     summary: >-
       Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
       Read-only.
@@ -185,8 +185,8 @@ items:
       content: 'readonly font: Word.Font;'
       return:
         type:
-          - word.Word.Font
-  - uid: word.Word.Range.getHtml
+          - 'word!Word.Font:class'
+  - uid: 'word!Word.Range#getHtml:member(1)'
     summary: >-
       Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will
       be a close, but not exact, match to the formatting of the document. This method does not return the exact same
@@ -204,7 +204,7 @@ items:
       content: 'getHtml(): OfficeExtension.ClientResult<string>;'
       return:
         type:
-          - OfficeExtension.ClientResult<string>
+          - 'word!Word.Range#getHtml~0:complex'
         description: |-
 
 
@@ -218,7 +218,7 @@ items:
               // create a proxy range object with the results.
               var range = context.document.getSelection();
 
-              // Queue a commmand to get the HTML of the current selection.
+              // Queue a command to get the HTML of the current selection.
               var html = range.getHtml();
 
               // Synchronize the document state by executing the queued commands,
@@ -234,7 +234,7 @@ items:
               }
           });
           ```
-  - uid: word.Word.Range.getOoxml
+  - uid: 'word!Word.Range#getOoxml:member(1)'
     summary: |-
       Gets the OOXML representation of the range object.
 
@@ -248,7 +248,7 @@ items:
       content: 'getOoxml(): OfficeExtension.ClientResult<string>;'
       return:
         type:
-          - OfficeExtension.ClientResult<string>
+          - 'word!Word.Range#getOoxml~0:complex'
         description: |-
 
 
@@ -262,7 +262,7 @@ items:
               // create a proxy range object with the results.
               var range = context.document.getSelection();
 
-              // Queue a commmand to get the OOXML of the current selection.
+              // Queue a command to get the OOXML of the current selection.
               var ooxml = range.getOoxml();
 
               // Synchronize the document state by executing the queued commands,
@@ -278,7 +278,7 @@ items:
               }
           });
           ```
-  - uid: word.Word.Range.inlinePictures
+  - uid: 'word!Word.Range#inlinePictures:member'
     summary: |-
       Gets the collection of inline picture objects in the range. Read-only.
 
@@ -292,8 +292,8 @@ items:
       content: 'readonly inlinePictures: Word.InlinePictureCollection;'
       return:
         type:
-          - word.Word.InlinePictureCollection
-  - uid: word.Word.Range.insertBreak
+          - 'word!Word.InlinePictureCollection:class'
+  - uid: 'word!Word.Range#insertBreak:member(1)'
     summary: >-
       Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
       'After'.
@@ -315,12 +315,12 @@ items:
         - id: breakType
           description: Required. The break type to add.
           type:
-            - word.Word.BreakType
+            - 'word!Word.BreakType:enum'
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Range.insertBreak_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Range#insertBreak:member(2)'
     summary: >-
       Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
       'After'.
@@ -352,7 +352,7 @@ items:
               // create a proxy range object with the results.
               var range = context.document.getSelection();
 
-              // Queue a commmand to insert a page break after the selected text.
+              // Queue a command to insert a page break after the selected text.
               range.insertBreak('page', 'After');
 
               // Synchronize the document state by executing the queued commands,
@@ -377,7 +377,7 @@ items:
           description: Required. The value can be 'Before' or 'After'.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Range.insertContentControl
+  - uid: 'word!Word.Range#insertContentControl:member(1)'
     summary: |-
       Wraps the range object with a rich text content control.
 
@@ -391,7 +391,7 @@ items:
       content: 'insertContentControl(): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
+          - 'word!Word.ContentControl:class'
         description: |-
 
 
@@ -405,7 +405,7 @@ items:
               // create a proxy range object with the results.
               var range = context.document.getSelection();
 
-              // Queue a commmand to insert a content control around the selected text,
+              // Queue a command to insert a content control around the selected text,
               // and create a proxy content control object. We'll update the properties
               // on the content control.
               var myContentControl = range.insertContentControl();
@@ -449,7 +449,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: word.Word.Range.insertFileFromBase64
+  - uid: 'word!Word.Range#insertFileFromBase64:member(1)'
     summary: >-
       Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before',
       or 'After'.
@@ -465,7 +465,7 @@ items:
       content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: |-
 
 
@@ -479,7 +479,7 @@ items:
               // create a proxy range object with the results.
               var range = context.document.getSelection();
 
-              // Queue a commmand to insert base64 encoded .docx at the beginning of the range.
+              // Queue a command to insert base64 encoded .docx at the beginning of the range.
               // You'll need to implement getBase64() to make this work.
               range.insertFileFromBase64(getBase64(), Word.InsertLocation.start);
 
@@ -504,8 +504,8 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Range.insertFileFromBase64_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Range#insertFileFromBase64:member(2)'
     summary: >-
       Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before',
       or 'After'.
@@ -523,7 +523,7 @@ items:
         "Replace"): Word.Range;
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: base64File
@@ -534,7 +534,7 @@ items:
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Range.insertHtml
+  - uid: 'word!Word.Range#insertHtml:member(1)'
     summary: >-
       Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or
       'After'.
@@ -550,7 +550,7 @@ items:
       content: 'insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: |-
 
 
@@ -564,7 +564,7 @@ items:
               // create a proxy range object with the results.
               var range = context.document.getSelection();
 
-              // Queue a commmand to insert HTML in to the beginning of the range.
+              // Queue a command to insert HTML in to the beginning of the range.
               range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);
 
               // Synchronize the document state by executing the queued commands,
@@ -588,8 +588,8 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Range.insertHtml_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Range#insertHtml:member(2)'
     summary: >-
       Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or
       'After'.
@@ -605,7 +605,7 @@ items:
       content: 'insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: html
@@ -616,7 +616,7 @@ items:
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Range.insertInlinePictureFromBase64
+  - uid: 'word!Word.Range#insertInlinePictureFromBase64:member(1)'
     summary: >-
       Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before',
       or 'After'.
@@ -634,7 +634,7 @@ items:
         Word.InlinePicture;
       return:
         type:
-          - word.Word.InlinePicture
+          - 'word!Word.InlinePicture:class'
         description: ''
       parameters:
         - id: base64EncodedImage
@@ -644,8 +644,8 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Range.insertInlinePictureFromBase64_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Range#insertInlinePictureFromBase64:member(2)'
     summary: >-
       Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before',
       or 'After'.
@@ -663,7 +663,7 @@ items:
         "End" | "Replace"): Word.InlinePicture;
       return:
         type:
-          - word.Word.InlinePicture
+          - 'word!Word.InlinePicture:class'
         description: ''
       parameters:
         - id: base64EncodedImage
@@ -674,7 +674,7 @@ items:
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Range.insertOoxml
+  - uid: 'word!Word.Range#insertOoxml:member(1)'
     summary: >-
       Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or
       'After'.
@@ -690,7 +690,7 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: |-
 
 
@@ -704,7 +704,7 @@ items:
               // create a proxy range object with the results.
               var range = context.document.getSelection();
 
-              // Queue a commmand to insert OOXML in to the beginning of the range.
+              // Queue a command to insert OOXML in to the beginning of the range.
               range.insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", Word.InsertLocation.start);
 
               // Synchronize the document state by executing the queued commands,
@@ -731,8 +731,8 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Range.insertOoxml_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Range#insertOoxml:member(2)'
     summary: >-
       Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or
       'After'.
@@ -748,7 +748,7 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: ooxml
@@ -759,7 +759,7 @@ items:
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Range.insertParagraph
+  - uid: 'word!Word.Range#insertParagraph:member(1)'
     summary: |-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
 
@@ -773,7 +773,7 @@ items:
       content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: |-
 
 
@@ -787,7 +787,7 @@ items:
               // create a proxy range object with the results.
               var range = context.document.getSelection();
 
-              // Queue a commmand to insert the paragraph after the range.
+              // Queue a command to insert the paragraph after the range.
               range.insertParagraph('Content of a new paragraph', Word.InsertLocation.after);
 
               // Synchronize the document state by executing the queued commands,
@@ -811,8 +811,8 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Range.insertParagraph_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Range#insertParagraph:member(2)'
     summary: |-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
 
@@ -828,7 +828,7 @@ items:
         Word.Paragraph;
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
       parameters:
         - id: paragraphText
@@ -839,7 +839,7 @@ items:
           description: Required. The value can be 'Before' or 'After'.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Range.insertText
+  - uid: 'word!Word.Range#insertText:member(1)'
     summary: >-
       Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or
       'After'.
@@ -855,7 +855,7 @@ items:
       content: 'insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: |-
 
 
@@ -869,7 +869,7 @@ items:
               // create a proxy range object with the results.
               var range = context.document.getSelection();
 
-              // Queue a commmand to insert the paragraph at the end of the range.
+              // Queue a command to insert the paragraph at the end of the range.
               range.insertText('New text inserted into the range.', Word.InsertLocation.end);
 
               // Synchronize the document state by executing the queued commands,
@@ -893,8 +893,8 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Range.insertText_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Range#insertText:member(2)'
     summary: >-
       Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or
       'After'.
@@ -910,7 +910,7 @@ items:
       content: 'insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: text
@@ -921,7 +921,7 @@ items:
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Range.load
+  - uid: 'word!Word.Range#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -952,14 +952,14 @@ items:
       content: 'load(option?: Word.Interfaces.RangeLoadOptions): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.RangeLoadOptions
-  - uid: word.Word.Range.load_1
+            - 'word!Word.Interfaces.RangeLoadOptions:interface'
+  - uid: 'word!Word.Range#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -972,14 +972,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.Range.load_2
+  - uid: 'word!Word.Range#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -992,7 +992,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -1001,7 +1001,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: word.Word.Range.paragraphs
+  - uid: 'word!Word.Range#paragraphs:member'
     summary: |-
       Gets the collection of paragraph objects in the range. Read-only.
 
@@ -1015,8 +1015,8 @@ items:
       content: 'readonly paragraphs: Word.ParagraphCollection;'
       return:
         type:
-          - word.Word.ParagraphCollection
-  - uid: word.Word.Range.parentContentControl
+          - 'word!Word.ParagraphCollection:class'
+  - uid: 'word!Word.Range#parentContentControl:member'
     summary: |-
       Gets the content control that contains the range. Throws if there isn't a parent content control. Read-only.
 
@@ -1030,8 +1030,8 @@ items:
       content: 'readonly parentContentControl: Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
-  - uid: word.Word.Range.search
+          - 'word!Word.ContentControl:class'
+  - uid: 'word!Word.Range#search:member(1)'
     summary: >-
       Performs a search with the specified SearchOptions on the scope of the range object. The search results are a
       collection of range objects.
@@ -1056,7 +1056,7 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - 'word!Word.RangeCollection:class'
         description: ''
       parameters:
         - id: searchText
@@ -1066,17 +1066,8 @@ items:
         - id: searchOptions
           description: Optional. Options for the search.
           type:
-            - |-
-              Word.SearchOptions | {
-                          ignorePunct?: boolean;
-                          ignoreSpace?: boolean;
-                          matchCase?: boolean;
-                          matchPrefix?: boolean;
-                          matchSuffix?: boolean;
-                          matchWholeWord?: boolean;
-                          matchWildcards?: boolean;
-                      }
-  - uid: word.Word.Range.select
+            - 'word!Word.Range#search~0:complex'
+  - uid: 'word!Word.Range#select:member(1)'
     summary: |-
       Selects and navigates the Word UI to the range.
 
@@ -1104,7 +1095,7 @@ items:
               // create a proxy range object with the results.
               var range = context.document.getSelection();
 
-              // Queue a commmand to insert HTML in to the beginning of the range.
+              // Queue a command to insert HTML in to the beginning of the range.
               range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);
 
               // Queue a command to select the HTML that was inserted.
@@ -1127,8 +1118,8 @@ items:
         - id: selectionMode
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
-            - word.Word.SelectionMode
-  - uid: word.Word.Range.select_1
+            - 'word!Word.SelectionMode:enum'
+  - uid: 'word!Word.Range#select:member(2)'
     summary: |-
       Selects and navigates the Word UI to the range.
 
@@ -1149,7 +1140,7 @@ items:
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - '"Select" | "Start" | "End"'
-  - uid: word.Word.Range.set
+  - uid: 'word!Word.Range#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -1174,12 +1165,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.RangeUpdateData
+            - 'word!Word.Interfaces.RangeUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: word.Word.Range.set_1
+            - 'word!OfficeExtension.UpdateOptions:interface'
+  - uid: 'word!Word.Range#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -1196,8 +1187,8 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.Range
-  - uid: word.Word.Range.style
+            - 'word!Word.Range:class'
+  - uid: 'word!Word.Range#style:member'
     summary: >-
       Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -1214,7 +1205,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Range.text
+  - uid: 'word!Word.Range#text:member'
     summary: |-
       Gets the text of the range. Read-only.
 
@@ -1229,7 +1220,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Range.toJSON
+  - uid: 'word!Word.Range#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -1245,9 +1236,9 @@ items:
       content: 'toJSON(): Word.Interfaces.RangeData;'
       return:
         type:
-          - word.Word.Interfaces.RangeData
+          - 'word!Word.Interfaces.RangeData:interface'
         description: ''
-  - uid: word.Word.Range.track
+  - uid: 'word!Word.Range#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -1263,9 +1254,9 @@ items:
       content: 'track(): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
-  - uid: word.Word.Range.untrack
+  - uid: 'word!Word.Range#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -1280,5 +1271,105 @@ items:
       content: 'untrack(): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
+references:
+  - uid: 'word!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.ContentControlCollection:class'
+    name: Word.ContentControlCollection
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.Font:class'
+    name: Word.Font
+  - uid: 'word!Word.Range#getHtml~0:complex'
+    name: OfficeExtension.ClientResult<string>
+    fullName: OfficeExtension.ClientResult<string>
+    spec.typeScript:
+      - uid: 'word!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <string>
+        fullName: <string>
+  - uid: 'word!Word.Range#getOoxml~0:complex'
+    name: OfficeExtension.ClientResult<string>
+    fullName: OfficeExtension.ClientResult<string>
+    spec.typeScript:
+      - uid: 'word!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <string>
+        fullName: <string>
+  - uid: 'word!Word.InlinePictureCollection:class'
+    name: Word.InlinePictureCollection
+  - uid: 'word!Word.BreakType:enum'
+    name: Word.BreakType
+  - uid: 'word!Word.InsertLocation:enum'
+    name: Word.InsertLocation
+  - uid: 'word!Word.ContentControl:class'
+    name: Word.ContentControl
+  - uid: 'word!Word.Range:class'
+    name: Word.Range
+  - uid: 'word!Word.InlinePicture:class'
+    name: Word.InlinePicture
+  - uid: 'word!Word.Paragraph:class'
+    name: Word.Paragraph
+  - uid: 'word!Word.Interfaces.RangeLoadOptions:interface'
+    name: Word.Interfaces.RangeLoadOptions
+  - uid: 'word!Word.ParagraphCollection:class'
+    name: Word.ParagraphCollection
+  - uid: 'word!Word.RangeCollection:class'
+    name: Word.RangeCollection
+  - uid: 'word!Word.Range#search~0:complex'
+    name: |-
+      Word.SearchOptions | {
+                  ignorePunct?: boolean;
+                  ignoreSpace?: boolean;
+                  matchCase?: boolean;
+                  matchPrefix?: boolean;
+                  matchSuffix?: boolean;
+                  matchWholeWord?: boolean;
+                  matchWildcards?: boolean;
+              }
+    fullName: |-
+      Word.SearchOptions | {
+                  ignorePunct?: boolean;
+                  ignoreSpace?: boolean;
+                  matchCase?: boolean;
+                  matchPrefix?: boolean;
+                  matchSuffix?: boolean;
+                  matchWholeWord?: boolean;
+                  matchWildcards?: boolean;
+              }
+    spec.typeScript:
+      - uid: 'word!Word.SearchOptions:class'
+        name: Word.SearchOptions
+        fullName: Word.SearchOptions
+      - name: |2-
+           | {
+                      ignorePunct?: boolean;
+                      ignoreSpace?: boolean;
+                      matchCase?: boolean;
+                      matchPrefix?: boolean;
+                      matchSuffix?: boolean;
+                      matchWholeWord?: boolean;
+                      matchWildcards?: boolean;
+                  }
+        fullName: |2-
+           | {
+                      ignorePunct?: boolean;
+                      ignoreSpace?: boolean;
+                      matchCase?: boolean;
+                      matchPrefix?: boolean;
+                      matchSuffix?: boolean;
+                      matchWholeWord?: boolean;
+                      matchWildcards?: boolean;
+                  }
+  - uid: 'word!Word.SelectionMode:enum'
+    name: Word.SelectionMode
+  - uid: 'word!Word.Interfaces.RangeUpdateData:interface'
+    name: Interfaces.RangeUpdateData
+  - uid: 'word!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'word!Word.Interfaces.RangeData:interface'
+    name: Word.Interfaces.RangeData

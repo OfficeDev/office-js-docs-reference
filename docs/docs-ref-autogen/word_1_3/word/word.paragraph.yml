@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Paragraph
+  - uid: 'word!Word.Paragraph:class'
     summary: |-
       Represents a single paragraph in a selection, range, content control, or document body.
 
@@ -11,84 +11,84 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: word
+      - 'word!OfficeExtension.ClientObject:class'
+    package: word!
     children:
-      - word.Word.Paragraph.alignment
-      - word.Word.Paragraph.attachToList
-      - word.Word.Paragraph.clear
-      - word.Word.Paragraph.contentControls
-      - word.Word.Paragraph.context
-      - word.Word.Paragraph.delete
-      - word.Word.Paragraph.detachFromList
-      - word.Word.Paragraph.firstLineIndent
-      - word.Word.Paragraph.font
-      - word.Word.Paragraph.getHtml
-      - word.Word.Paragraph.getNext
-      - word.Word.Paragraph.getNextOrNullObject
-      - word.Word.Paragraph.getOoxml
-      - word.Word.Paragraph.getPrevious
-      - word.Word.Paragraph.getPreviousOrNullObject
-      - word.Word.Paragraph.getRange
-      - word.Word.Paragraph.getRange_1
-      - word.Word.Paragraph.getTextRanges
-      - word.Word.Paragraph.inlinePictures
-      - word.Word.Paragraph.insertBreak
-      - word.Word.Paragraph.insertBreak_1
-      - word.Word.Paragraph.insertContentControl
-      - word.Word.Paragraph.insertFileFromBase64
-      - word.Word.Paragraph.insertFileFromBase64_1
-      - word.Word.Paragraph.insertHtml
-      - word.Word.Paragraph.insertHtml_1
-      - word.Word.Paragraph.insertInlinePictureFromBase64
-      - word.Word.Paragraph.insertInlinePictureFromBase64_1
-      - word.Word.Paragraph.insertOoxml
-      - word.Word.Paragraph.insertOoxml_1
-      - word.Word.Paragraph.insertParagraph
-      - word.Word.Paragraph.insertParagraph_1
-      - word.Word.Paragraph.insertTable
-      - word.Word.Paragraph.insertTable_1
-      - word.Word.Paragraph.insertText
-      - word.Word.Paragraph.insertText_1
-      - word.Word.Paragraph.isLastParagraph
-      - word.Word.Paragraph.isListItem
-      - word.Word.Paragraph.leftIndent
-      - word.Word.Paragraph.lineSpacing
-      - word.Word.Paragraph.lineUnitAfter
-      - word.Word.Paragraph.lineUnitBefore
-      - word.Word.Paragraph.list
-      - word.Word.Paragraph.listItem
-      - word.Word.Paragraph.listItemOrNullObject
-      - word.Word.Paragraph.listOrNullObject
-      - word.Word.Paragraph.load
-      - word.Word.Paragraph.load_1
-      - word.Word.Paragraph.load_2
-      - word.Word.Paragraph.outlineLevel
-      - word.Word.Paragraph.parentBody
-      - word.Word.Paragraph.parentContentControl
-      - word.Word.Paragraph.parentContentControlOrNullObject
-      - word.Word.Paragraph.parentTable
-      - word.Word.Paragraph.parentTableCell
-      - word.Word.Paragraph.parentTableCellOrNullObject
-      - word.Word.Paragraph.parentTableOrNullObject
-      - word.Word.Paragraph.rightIndent
-      - word.Word.Paragraph.search
-      - word.Word.Paragraph.select
-      - word.Word.Paragraph.select_1
-      - word.Word.Paragraph.set
-      - word.Word.Paragraph.set_1
-      - word.Word.Paragraph.spaceAfter
-      - word.Word.Paragraph.spaceBefore
-      - word.Word.Paragraph.split
-      - word.Word.Paragraph.startNewList
-      - word.Word.Paragraph.style
-      - word.Word.Paragraph.styleBuiltIn
-      - word.Word.Paragraph.tableNestingLevel
-      - word.Word.Paragraph.text
-      - word.Word.Paragraph.toJSON
-      - word.Word.Paragraph.track
-      - word.Word.Paragraph.untrack
-  - uid: word.Word.Paragraph.alignment
+      - 'word!Word.Paragraph#alignment:member'
+      - 'word!Word.Paragraph#attachToList:member(1)'
+      - 'word!Word.Paragraph#clear:member(1)'
+      - 'word!Word.Paragraph#contentControls:member'
+      - 'word!Word.Paragraph#context:member'
+      - 'word!Word.Paragraph#delete:member(1)'
+      - 'word!Word.Paragraph#detachFromList:member(1)'
+      - 'word!Word.Paragraph#firstLineIndent:member'
+      - 'word!Word.Paragraph#font:member'
+      - 'word!Word.Paragraph#getHtml:member(1)'
+      - 'word!Word.Paragraph#getNext:member(1)'
+      - 'word!Word.Paragraph#getNextOrNullObject:member(1)'
+      - 'word!Word.Paragraph#getOoxml:member(1)'
+      - 'word!Word.Paragraph#getPrevious:member(1)'
+      - 'word!Word.Paragraph#getPreviousOrNullObject:member(1)'
+      - 'word!Word.Paragraph#getRange:member(1)'
+      - 'word!Word.Paragraph#getRange:member(2)'
+      - 'word!Word.Paragraph#getTextRanges:member(1)'
+      - 'word!Word.Paragraph#inlinePictures:member'
+      - 'word!Word.Paragraph#insertBreak:member(1)'
+      - 'word!Word.Paragraph#insertBreak:member(2)'
+      - 'word!Word.Paragraph#insertContentControl:member(1)'
+      - 'word!Word.Paragraph#insertFileFromBase64:member(1)'
+      - 'word!Word.Paragraph#insertFileFromBase64:member(2)'
+      - 'word!Word.Paragraph#insertHtml:member(1)'
+      - 'word!Word.Paragraph#insertHtml:member(2)'
+      - 'word!Word.Paragraph#insertInlinePictureFromBase64:member(1)'
+      - 'word!Word.Paragraph#insertInlinePictureFromBase64:member(2)'
+      - 'word!Word.Paragraph#insertOoxml:member(1)'
+      - 'word!Word.Paragraph#insertOoxml:member(2)'
+      - 'word!Word.Paragraph#insertParagraph:member(1)'
+      - 'word!Word.Paragraph#insertParagraph:member(2)'
+      - 'word!Word.Paragraph#insertTable:member(1)'
+      - 'word!Word.Paragraph#insertTable:member(2)'
+      - 'word!Word.Paragraph#insertText:member(1)'
+      - 'word!Word.Paragraph#insertText:member(2)'
+      - 'word!Word.Paragraph#isLastParagraph:member'
+      - 'word!Word.Paragraph#isListItem:member'
+      - 'word!Word.Paragraph#leftIndent:member'
+      - 'word!Word.Paragraph#lineSpacing:member'
+      - 'word!Word.Paragraph#lineUnitAfter:member'
+      - 'word!Word.Paragraph#lineUnitBefore:member'
+      - 'word!Word.Paragraph#list:member'
+      - 'word!Word.Paragraph#listItem:member'
+      - 'word!Word.Paragraph#listItemOrNullObject:member'
+      - 'word!Word.Paragraph#listOrNullObject:member'
+      - 'word!Word.Paragraph#load:member(1)'
+      - 'word!Word.Paragraph#load:member(2)'
+      - 'word!Word.Paragraph#load:member(3)'
+      - 'word!Word.Paragraph#outlineLevel:member'
+      - 'word!Word.Paragraph#parentBody:member'
+      - 'word!Word.Paragraph#parentContentControl:member'
+      - 'word!Word.Paragraph#parentContentControlOrNullObject:member'
+      - 'word!Word.Paragraph#parentTable:member'
+      - 'word!Word.Paragraph#parentTableCell:member'
+      - 'word!Word.Paragraph#parentTableCellOrNullObject:member'
+      - 'word!Word.Paragraph#parentTableOrNullObject:member'
+      - 'word!Word.Paragraph#rightIndent:member'
+      - 'word!Word.Paragraph#search:member(1)'
+      - 'word!Word.Paragraph#select:member(1)'
+      - 'word!Word.Paragraph#select:member(2)'
+      - 'word!Word.Paragraph#set:member(1)'
+      - 'word!Word.Paragraph#set:member(2)'
+      - 'word!Word.Paragraph#spaceAfter:member'
+      - 'word!Word.Paragraph#spaceBefore:member'
+      - 'word!Word.Paragraph#split:member(1)'
+      - 'word!Word.Paragraph#startNewList:member(1)'
+      - 'word!Word.Paragraph#style:member'
+      - 'word!Word.Paragraph#styleBuiltIn:member'
+      - 'word!Word.Paragraph#tableNestingLevel:member'
+      - 'word!Word.Paragraph#text:member'
+      - 'word!Word.Paragraph#toJSON:member(1)'
+      - 'word!Word.Paragraph#track:member(1)'
+      - 'word!Word.Paragraph#untrack:member(1)'
+  - uid: 'word!Word.Paragraph#alignment:member'
     summary: |-
       Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
 
@@ -102,7 +102,7 @@ items:
       content: 'alignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
       return:
         type:
-          - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+          - 'word!Word.Paragraph#alignment~0:complex'
         description: |-
 
 
@@ -116,7 +116,7 @@ items:
             await context.sync();
           });
           ```
-  - uid: word.Word.Paragraph.attachToList
+  - uid: 'word!Word.Paragraph#attachToList:member(1)'
     summary: >-
       Lets the paragraph join an existing list at the specified level. Fails if the paragraph cannot join the list or if
       the paragraph is already a list item.
@@ -132,7 +132,7 @@ items:
       content: 'attachToList(listId: number, level: number): Word.List;'
       return:
         type:
-          - word.Word.List
+          - 'word!Word.List:class'
         description: ''
       parameters:
         - id: listId
@@ -143,7 +143,7 @@ items:
           description: Required. The level in the list.
           type:
             - number
-  - uid: word.Word.Paragraph.clear
+  - uid: 'word!Word.Paragraph#clear:member(1)'
     summary: |-
       Clears the contents of the paragraph object. The user can perform the undo operation on the cleared content.
 
@@ -170,7 +170,7 @@ items:
               // Create a proxy object for the paragraphs collection.
               var paragraphs = context.document.body.paragraphs;
 
-              // Queue a commmand to load the style property for all of the paragraphs.
+              // Queue a command to load the style property for all of the paragraphs.
               context.load(paragraphs, 'style');
 
               // Synchronize the document state by executing the queued commands,
@@ -194,7 +194,7 @@ items:
               }
           });
           ```
-  - uid: word.Word.Paragraph.contentControls
+  - uid: 'word!Word.Paragraph#contentControls:member'
     summary: |-
       Gets the collection of content control objects in the paragraph. Read-only.
 
@@ -208,8 +208,8 @@ items:
       content: 'readonly contentControls: Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
-  - uid: word.Word.Paragraph.context
+          - 'word!Word.ContentControlCollection:class'
+  - uid: 'word!Word.Paragraph#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -222,8 +222,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.Paragraph.delete
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.Paragraph#delete:member(1)'
     summary: |-
       Deletes the paragraph and its content from the document.
 
@@ -250,7 +250,7 @@ items:
               // Create a proxy object for the paragraphs collection.
               var paragraphs = context.document.body.paragraphs;
 
-              // Queue a commmand to load the text property for all of the paragraphs.
+              // Queue a command to load the text property for all of the paragraphs.
               context.load(paragraphs, 'text');
 
               // Synchronize the document state by executing the queued commands,
@@ -274,7 +274,7 @@ items:
               }
           });
           ```
-  - uid: word.Word.Paragraph.detachFromList
+  - uid: 'word!Word.Paragraph#detachFromList:member(1)'
     summary: |-
       Moves this paragraph out of its list, if the paragraph is a list item.
 
@@ -290,7 +290,7 @@ items:
         type:
           - void
         description: ''
-  - uid: word.Word.Paragraph.firstLineIndent
+  - uid: 'word!Word.Paragraph#firstLineIndent:member'
     summary: >-
       Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line
       indent, and use a negative value to set a hanging indent.
@@ -307,7 +307,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Paragraph.font
+  - uid: 'word!Word.Paragraph#font:member'
     summary: >-
       Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
       Read-only.
@@ -323,8 +323,8 @@ items:
       content: 'readonly font: Word.Font;'
       return:
         type:
-          - word.Word.Font
-  - uid: word.Word.Paragraph.getHtml
+          - 'word!Word.Font:class'
+  - uid: 'word!Word.Paragraph#getHtml:member(1)'
     summary: >-
       Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting
       will be a close, but not exact, match to the formatting of the document. This method does not return the exact
@@ -342,7 +342,7 @@ items:
       content: 'getHtml(): OfficeExtension.ClientResult<string>;'
       return:
         type:
-          - OfficeExtension.ClientResult<string>
+          - 'word!Word.Paragraph#getHtml~0:complex'
         description: |-
 
 
@@ -355,7 +355,7 @@ items:
               // Create a proxy object for the paragraphs collection.
               var paragraphs = context.document.body.paragraphs;
 
-              // Queue a commmand to load the style property for all of the paragraphs.
+              // Queue a command to load the style property for all of the paragraphs.
               context.load(paragraphs, 'style');
 
               // Synchronize the document state by executing the queued commands,
@@ -379,7 +379,7 @@ items:
               }
           });
           ```
-  - uid: word.Word.Paragraph.getNext
+  - uid: 'word!Word.Paragraph#getNext:member(1)'
     summary: |-
       Gets the next paragraph. Throws if the paragraph is the last one.
 
@@ -393,9 +393,9 @@ items:
       content: 'getNext(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
-  - uid: word.Word.Paragraph.getNextOrNullObject
+  - uid: 'word!Word.Paragraph#getNextOrNullObject:member(1)'
     summary: |-
       Gets the next paragraph. Returns a null object if the paragraph is the last one.
 
@@ -409,9 +409,9 @@ items:
       content: 'getNextOrNullObject(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
-  - uid: word.Word.Paragraph.getOoxml
+  - uid: 'word!Word.Paragraph#getOoxml:member(1)'
     summary: |-
       Gets the Office Open XML (OOXML) representation of the paragraph object.
 
@@ -425,7 +425,7 @@ items:
       content: 'getOoxml(): OfficeExtension.ClientResult<string>;'
       return:
         type:
-          - OfficeExtension.ClientResult<string>
+          - 'word!Word.Paragraph#getOoxml~0:complex'
         description: |-
 
 
@@ -438,7 +438,7 @@ items:
               // Create a proxy object for the paragraphs collection.
               var paragraphs = context.document.body.paragraphs;
 
-              // Queue a commmand to load the style property for the top 2 paragraphs.
+              // Queue a command to load the style property for the top 2 paragraphs.
               context.load(paragraphs, {select: 'style', top: 2} );
 
               // Synchronize the document state by executing the queued commands,
@@ -462,7 +462,7 @@ items:
               }
           });
           ```
-  - uid: word.Word.Paragraph.getPrevious
+  - uid: 'word!Word.Paragraph#getPrevious:member(1)'
     summary: |-
       Gets the previous paragraph. Throws if the paragraph is the first one.
 
@@ -476,9 +476,9 @@ items:
       content: 'getPrevious(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
-  - uid: word.Word.Paragraph.getPreviousOrNullObject
+  - uid: 'word!Word.Paragraph#getPreviousOrNullObject:member(1)'
     summary: |-
       Gets the previous paragraph. Returns a null object if the paragraph is the first one.
 
@@ -492,7 +492,7 @@ items:
       content: 'getPreviousOrNullObject(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: |-
 
 
@@ -505,7 +505,7 @@ items:
               // Create a proxy object for the paragraphs collection.
               var paragraphs = context.document.body.paragraphs;
 
-              // Queue a commmand to load the text property for all of the paragraphs.
+              // Queue a command to load the text property for all of the paragraphs.
               context.load(paragraphs, 'text');
 
               // Synchronize the document state by executing the queued commands,
@@ -536,7 +536,7 @@ items:
               }
           });
           ```
-  - uid: word.Word.Paragraph.getRange
+  - uid: 'word!Word.Paragraph#getRange:member(1)'
     summary: |-
       Gets the whole paragraph, or the starting or ending point of the paragraph, as a range.
 
@@ -550,14 +550,14 @@ items:
       content: 'getRange(rangeLocation?: Word.RangeLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: rangeLocation
           description: 'Optional. The range location can be ''Whole'', ''Start'', ''End'', ''After'', or ''Content''.'
           type:
-            - word.Word.RangeLocation
-  - uid: word.Word.Paragraph.getRange_1
+            - 'word!Word.RangeLocation:enum'
+  - uid: 'word!Word.Paragraph#getRange:member(2)'
     summary: |-
       Gets the whole paragraph, or the starting or ending point of the paragraph, as a range.
 
@@ -571,14 +571,14 @@ items:
       content: 'getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: rangeLocationString
           description: 'Optional. The range location can be ''Whole'', ''Start'', ''End'', ''After'', or ''Content''.'
           type:
             - '"Whole" | "Start" | "End" | "Before" | "After" | "Content"'
-  - uid: word.Word.Paragraph.getTextRanges
+  - uid: 'word!Word.Paragraph#getTextRanges:member(1)'
     summary: |-
       Gets the text ranges in the paragraph by using punctuation marks and/or other ending marks.
 
@@ -592,7 +592,7 @@ items:
       content: 'getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - 'word!Word.RangeCollection:class'
         description: ''
       parameters:
         - id: endingMarks
@@ -606,7 +606,7 @@ items:
             indicates that spacing characters at the start and end of the ranges are included in the range collection.
           type:
             - boolean
-  - uid: word.Word.Paragraph.inlinePictures
+  - uid: 'word!Word.Paragraph#inlinePictures:member'
     summary: >-
       Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
       Read-only.
@@ -622,8 +622,8 @@ items:
       content: 'readonly inlinePictures: Word.InlinePictureCollection;'
       return:
         type:
-          - word.Word.InlinePictureCollection
-  - uid: word.Word.Paragraph.insertBreak
+          - 'word!Word.InlinePictureCollection:class'
+  - uid: 'word!Word.Paragraph#insertBreak:member(1)'
     summary: >-
       Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
       'After'.
@@ -665,12 +665,12 @@ items:
         - id: breakType
           description: Required. The break type to add to the document.
           type:
-            - word.Word.BreakType
+            - 'word!Word.BreakType:enum'
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Paragraph.insertBreak_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Paragraph#insertBreak:member(2)'
     summary: >-
       Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
       'After'.
@@ -701,7 +701,7 @@ items:
               // Create a proxy object for the paragraphs collection.
               var paragraphs = context.document.body.paragraphs;
 
-              // Queue a commmand to load the style property for the top 2 paragraphs.
+              // Queue a command to load the style property for the top 2 paragraphs.
               // We never perform an empty load. We always must request a property.
               context.load(paragraphs, {select: 'style', top: 2} );
 
@@ -738,7 +738,7 @@ items:
           description: Required. The value can be 'Before' or 'After'.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Paragraph.insertContentControl
+  - uid: 'word!Word.Paragraph#insertContentControl:member(1)'
     summary: |-
       Wraps the paragraph object with a rich text content control.
 
@@ -752,7 +752,7 @@ items:
       content: 'insertContentControl(): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
+          - 'word!Word.ContentControl:class'
         description: |-
 
 
@@ -765,7 +765,7 @@ items:
               // Create a proxy object for the paragraphs collection.
               var paragraphs = context.document.body.paragraphs;
 
-              // Queue a commmand to load the style property for the top 2 paragraphs.
+              // Queue a command to load the style property for the top 2 paragraphs.
               // We never perform an empty load. We always must request a property.
               context.load(paragraphs, {select: 'style', top: 2} );
 
@@ -793,7 +793,7 @@ items:
               }
           });
           ```
-  - uid: word.Word.Paragraph.insertFileFromBase64
+  - uid: 'word!Word.Paragraph#insertFileFromBase64:member(1)'
     summary: >-
       Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace',
       'Start', or 'End'.
@@ -809,7 +809,7 @@ items:
       content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: base64File
@@ -819,8 +819,8 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Paragraph.insertFileFromBase64_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Paragraph#insertFileFromBase64:member(2)'
     summary: >-
       Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace',
       'Start', or 'End'.
@@ -838,7 +838,7 @@ items:
         "Replace"): Word.Range;
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: base64File
@@ -849,7 +849,7 @@ items:
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Paragraph.insertHtml
+  - uid: 'word!Word.Paragraph#insertHtml:member(1)'
     summary: >-
       Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
       'End'.
@@ -865,7 +865,7 @@ items:
       content: 'insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: |-
 
 
@@ -878,7 +878,7 @@ items:
               // Create a proxy object for the paragraphs collection.
               var paragraphs = context.document.body.paragraphs;
 
-              // Queue a commmand to load the style property for the top 2 paragraphs.
+              // Queue a command to load the style property for the top 2 paragraphs.
               // We never perform an empty load. We always must request a property.
               context.load(paragraphs, {select: 'style', top: 2} );
 
@@ -914,8 +914,8 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Paragraph.insertHtml_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Paragraph#insertHtml:member(2)'
     summary: >-
       Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
       'End'.
@@ -931,7 +931,7 @@ items:
       content: 'insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: html
@@ -942,7 +942,7 @@ items:
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Paragraph.insertInlinePictureFromBase64
+  - uid: 'word!Word.Paragraph#insertInlinePictureFromBase64:member(1)'
     summary: >-
       Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace',
       'Start', or 'End'.
@@ -960,7 +960,7 @@ items:
         Word.InlinePicture;
       return:
         type:
-          - word.Word.InlinePicture
+          - 'word!Word.InlinePicture:class'
         description: |-
 
 
@@ -973,7 +973,7 @@ items:
               // Create a proxy object for the paragraphs collection.
               var paragraphs = context.document.body.paragraphs;
 
-              // Queue a commmand to load the style property for all of the paragraphs.
+              // Queue a command to load the style property for all of the paragraphs.
               context.load(paragraphs, 'style');
 
               // Synchronize the document state by executing the queued commands,
@@ -1010,8 +1010,8 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Paragraph.insertInlinePictureFromBase64_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Paragraph#insertInlinePictureFromBase64:member(2)'
     summary: >-
       Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace',
       'Start', or 'End'.
@@ -1029,7 +1029,7 @@ items:
         "End" | "Replace"): Word.InlinePicture;
       return:
         type:
-          - word.Word.InlinePicture
+          - 'word!Word.InlinePicture:class'
         description: ''
       parameters:
         - id: base64EncodedImage
@@ -1040,7 +1040,7 @@ items:
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Paragraph.insertOoxml
+  - uid: 'word!Word.Paragraph#insertOoxml:member(1)'
     summary: >-
       Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
       'End'.
@@ -1056,7 +1056,7 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: ooxml
@@ -1066,8 +1066,8 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Paragraph.insertOoxml_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Paragraph#insertOoxml:member(2)'
     summary: >-
       Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
       'End'.
@@ -1083,7 +1083,7 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: ooxml
@@ -1094,7 +1094,7 @@ items:
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Paragraph.insertParagraph
+  - uid: 'word!Word.Paragraph#insertParagraph:member(1)'
     summary: |-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
 
@@ -1108,7 +1108,7 @@ items:
       content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: |-
 
 
@@ -1121,7 +1121,7 @@ items:
               // Create a proxy object for the paragraphs collection.
               var paragraphs = context.document.body.paragraphs;
 
-              // Queue a commmand to load the style property for the top 2 paragraphs.
+              // Queue a command to load the style property for the top 2 paragraphs.
               // We never perform an empty load. We always must request a property.
               context.load(paragraphs, {select: 'style', top: 2} );
 
@@ -1175,8 +1175,8 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Paragraph.insertParagraph_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Paragraph#insertParagraph:member(2)'
     summary: |-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
 
@@ -1192,7 +1192,7 @@ items:
         Word.Paragraph;
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
       parameters:
         - id: paragraphText
@@ -1203,7 +1203,7 @@ items:
           description: Required. The value can be 'Before' or 'After'.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Paragraph.insertTable
+  - uid: 'word!Word.Paragraph#insertTable:member(1)'
     summary: >-
       Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or
       'After'.
@@ -1221,7 +1221,7 @@ items:
         Word.Table;
       return:
         type:
-          - word.Word.Table
+          - 'word!Word.Table:class'
         description: ''
       parameters:
         - id: rowCount
@@ -1235,12 +1235,12 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - 'word!Word.InsertLocation:enum'
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
-  - uid: word.Word.Paragraph.insertTable_1
+  - uid: 'word!Word.Paragraph#insertTable:member(2)'
     summary: >-
       Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or
       'After'.
@@ -1258,7 +1258,7 @@ items:
         "Replace", values?: string[][]): Word.Table;
       return:
         type:
-          - word.Word.Table
+          - 'word!Word.Table:class'
         description: ''
       parameters:
         - id: rowCount
@@ -1277,7 +1277,7 @@ items:
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
-  - uid: word.Word.Paragraph.insertText
+  - uid: 'word!Word.Paragraph#insertText:member(1)'
     summary: >-
       Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
       'End'.
@@ -1293,7 +1293,7 @@ items:
       content: 'insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: |-
 
 
@@ -1306,7 +1306,7 @@ items:
               // Create a proxy object for the paragraphs collection.
               var paragraphs = context.document.body.paragraphs;
 
-              // Queue a commmand to load the style property for the top 2 paragraphs.
+              // Queue a command to load the style property for the top 2 paragraphs.
               // We never perform an empty load. We always must request a property.
               context.load(paragraphs, {select: 'style', top: 2} );
 
@@ -1352,8 +1352,8 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Paragraph.insertText_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Paragraph#insertText:member(2)'
     summary: >-
       Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
       'End'.
@@ -1369,7 +1369,7 @@ items:
       content: 'insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: text
@@ -1380,7 +1380,7 @@ items:
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Paragraph.isLastParagraph
+  - uid: 'word!Word.Paragraph#isLastParagraph:member'
     summary: |-
       Indicates the paragraph is the last one inside its parent body. Read-only.
 
@@ -1395,7 +1395,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Paragraph.isListItem
+  - uid: 'word!Word.Paragraph#isListItem:member'
     summary: |-
       Checks whether the paragraph is a list item. Read-only.
 
@@ -1410,7 +1410,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Paragraph.leftIndent
+  - uid: 'word!Word.Paragraph#leftIndent:member'
     summary: |-
       Gets or sets the left indent value, in points, for the paragraph.
 
@@ -1438,7 +1438,7 @@ items:
             return context.sync();
           });
           ```
-  - uid: word.Word.Paragraph.lineSpacing
+  - uid: 'word!Word.Paragraph#lineSpacing:member'
     summary: >-
       Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by
       12.
@@ -1468,7 +1468,7 @@ items:
             await context.sync();
           });
           ```
-  - uid: word.Word.Paragraph.lineUnitAfter
+  - uid: 'word!Word.Paragraph#lineUnitAfter:member'
     summary: |-
       Gets or sets the amount of spacing, in grid lines, after the paragraph.
 
@@ -1483,7 +1483,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Paragraph.lineUnitBefore
+  - uid: 'word!Word.Paragraph#lineUnitBefore:member'
     summary: |-
       Gets or sets the amount of spacing, in grid lines, before the paragraph.
 
@@ -1498,7 +1498,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Paragraph.list
+  - uid: 'word!Word.Paragraph#list:member'
     summary: |-
       Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list. Read-only.
 
@@ -1512,8 +1512,8 @@ items:
       content: 'readonly list: Word.List;'
       return:
         type:
-          - word.Word.List
-  - uid: word.Word.Paragraph.listItem
+          - 'word!Word.List:class'
+  - uid: 'word!Word.Paragraph#listItem:member'
     summary: |-
       Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. Read-only.
 
@@ -1527,8 +1527,8 @@ items:
       content: 'readonly listItem: Word.ListItem;'
       return:
         type:
-          - word.Word.ListItem
-  - uid: word.Word.Paragraph.listItemOrNullObject
+          - 'word!Word.ListItem:class'
+  - uid: 'word!Word.Paragraph#listItemOrNullObject:member'
     summary: |-
       Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. Read-only.
 
@@ -1542,8 +1542,8 @@ items:
       content: 'readonly listItemOrNullObject: Word.ListItem;'
       return:
         type:
-          - word.Word.ListItem
-  - uid: word.Word.Paragraph.listOrNullObject
+          - 'word!Word.ListItem:class'
+  - uid: 'word!Word.Paragraph#listOrNullObject:member'
     summary: |-
       Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list. Read-only.
 
@@ -1557,8 +1557,8 @@ items:
       content: 'readonly listOrNullObject: Word.List;'
       return:
         type:
-          - word.Word.List
-  - uid: word.Word.Paragraph.load
+          - 'word!Word.List:class'
+  - uid: 'word!Word.Paragraph#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -1589,14 +1589,14 @@ items:
       content: 'load(option?: Word.Interfaces.ParagraphLoadOptions): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.ParagraphLoadOptions
-  - uid: word.Word.Paragraph.load_1
+            - 'word!Word.Interfaces.ParagraphLoadOptions:interface'
+  - uid: 'word!Word.Paragraph#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -1609,14 +1609,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.Paragraph.load_2
+  - uid: 'word!Word.Paragraph#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -1629,7 +1629,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -1638,7 +1638,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: word.Word.Paragraph.outlineLevel
+  - uid: 'word!Word.Paragraph#outlineLevel:member'
     summary: |-
       Gets or sets the outline level for the paragraph.
 
@@ -1653,7 +1653,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Paragraph.parentBody
+  - uid: 'word!Word.Paragraph#parentBody:member'
     summary: |-
       Gets the parent body of the paragraph. Read-only.
 
@@ -1667,8 +1667,8 @@ items:
       content: 'readonly parentBody: Word.Body;'
       return:
         type:
-          - word.Word.Body
-  - uid: word.Word.Paragraph.parentContentControl
+          - 'word!Word.Body:class'
+  - uid: 'word!Word.Paragraph#parentContentControl:member'
     summary: |-
       Gets the content control that contains the paragraph. Throws if there isn't a parent content control. Read-only.
 
@@ -1682,8 +1682,8 @@ items:
       content: 'readonly parentContentControl: Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
-  - uid: word.Word.Paragraph.parentContentControlOrNullObject
+          - 'word!Word.ContentControl:class'
+  - uid: 'word!Word.Paragraph#parentContentControlOrNullObject:member'
     summary: >-
       Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content
       control. Read-only.
@@ -1699,8 +1699,8 @@ items:
       content: 'readonly parentContentControlOrNullObject: Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
-  - uid: word.Word.Paragraph.parentTable
+          - 'word!Word.ContentControl:class'
+  - uid: 'word!Word.Paragraph#parentTable:member'
     summary: |-
       Gets the table that contains the paragraph. Throws if it is not contained in a table. Read-only.
 
@@ -1714,8 +1714,8 @@ items:
       content: 'readonly parentTable: Word.Table;'
       return:
         type:
-          - word.Word.Table
-  - uid: word.Word.Paragraph.parentTableCell
+          - 'word!Word.Table:class'
+  - uid: 'word!Word.Paragraph#parentTableCell:member'
     summary: |-
       Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell. Read-only.
 
@@ -1729,8 +1729,8 @@ items:
       content: 'readonly parentTableCell: Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
-  - uid: word.Word.Paragraph.parentTableCellOrNullObject
+          - 'word!Word.TableCell:class'
+  - uid: 'word!Word.Paragraph#parentTableCellOrNullObject:member'
     summary: >-
       Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell.
       Read-only.
@@ -1746,8 +1746,8 @@ items:
       content: 'readonly parentTableCellOrNullObject: Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
-  - uid: word.Word.Paragraph.parentTableOrNullObject
+          - 'word!Word.TableCell:class'
+  - uid: 'word!Word.Paragraph#parentTableOrNullObject:member'
     summary: |-
       Gets the table that contains the paragraph. Returns a null object if it is not contained in a table. Read-only.
 
@@ -1761,8 +1761,8 @@ items:
       content: 'readonly parentTableOrNullObject: Word.Table;'
       return:
         type:
-          - word.Word.Table
-  - uid: word.Word.Paragraph.rightIndent
+          - 'word!Word.Table:class'
+  - uid: 'word!Word.Paragraph#rightIndent:member'
     summary: |-
       Gets or sets the right indent value, in points, for the paragraph.
 
@@ -1777,7 +1777,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Paragraph.search
+  - uid: 'word!Word.Paragraph#search:member(1)'
     summary: >-
       Performs a search with the specified SearchOptions on the scope of the paragraph object. The search results are a
       collection of range objects.
@@ -1802,7 +1802,7 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - 'word!Word.RangeCollection:class'
         description: ''
       parameters:
         - id: searchText
@@ -1812,17 +1812,8 @@ items:
         - id: searchOptions
           description: Optional. Options for the search.
           type:
-            - |-
-              Word.SearchOptions | {
-                          ignorePunct?: boolean;
-                          ignoreSpace?: boolean;
-                          matchCase?: boolean;
-                          matchPrefix?: boolean;
-                          matchSuffix?: boolean;
-                          matchWholeWord?: boolean;
-                          matchWildcards?: boolean;
-                      }
-  - uid: word.Word.Paragraph.select
+            - 'word!Word.Paragraph#search~0:complex'
+  - uid: 'word!Word.Paragraph#select:member(1)'
     summary: |-
       Selects and navigates the Word UI to the paragraph.
 
@@ -1849,7 +1840,7 @@ items:
               // Create a proxy object for the paragraphs collection.
               var paragraphs = context.document.body.paragraphs;
 
-              // Queue a commmand to load the style property for all of the paragraphs.
+              // Queue a command to load the style property for all of the paragraphs.
               context.load(paragraphs, 'style');
 
               // Synchronize the document state by executing the queued commands,
@@ -1886,20 +1877,12 @@ items:
             await context.sync();
           });
           ```
-          ```typescript
-          await Word.run(async (context) => {
-            // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
-            context.document.body.paragraphs.getLast().select("End");
-
-            await context.sync();
-          });
-          ```
       parameters:
         - id: selectionMode
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
-            - word.Word.SelectionMode
-  - uid: word.Word.Paragraph.select_1
+            - 'word!Word.SelectionMode:enum'
+  - uid: 'word!Word.Paragraph#select:member(2)'
     summary: |-
       Selects and navigates the Word UI to the paragraph.
 
@@ -1920,7 +1903,7 @@ items:
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - '"Select" | "Start" | "End"'
-  - uid: word.Word.Paragraph.set
+  - uid: 'word!Word.Paragraph#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -1975,12 +1958,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.ParagraphUpdateData
+            - 'word!Word.Interfaces.ParagraphUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: word.Word.Paragraph.set_1
+            - 'word!OfficeExtension.UpdateOptions:interface'
+  - uid: 'word!Word.Paragraph#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -1997,8 +1980,8 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.Paragraph
-  - uid: word.Word.Paragraph.spaceAfter
+            - 'word!Word.Paragraph:class'
+  - uid: 'word!Word.Paragraph#spaceAfter:member'
     summary: |-
       Gets or sets the spacing, in points, after the paragraph.
 
@@ -2026,7 +2009,7 @@ items:
             await context.sync();
           });
           ```
-  - uid: word.Word.Paragraph.spaceBefore
+  - uid: 'word!Word.Paragraph#spaceBefore:member'
     summary: |-
       Gets or sets the spacing, in points, before the paragraph.
 
@@ -2041,7 +2024,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Paragraph.split
+  - uid: 'word!Word.Paragraph#split:member(1)'
     summary: |-
       Splits the paragraph into child ranges by using delimiters.
 
@@ -2055,7 +2038,7 @@ items:
       content: 'split(delimiters: string[], trimDelimiters?: boolean, trimSpacing?: boolean): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - 'word!Word.RangeCollection:class'
         description: |-
 
 
@@ -2098,7 +2081,7 @@ items:
             indicates that spacing characters at the start and end of the ranges are included in the range collection.
           type:
             - boolean
-  - uid: word.Word.Paragraph.startNewList
+  - uid: 'word!Word.Paragraph#startNewList:member(1)'
     summary: |-
       Starts a new list with this paragraph. Fails if the paragraph is already a list item.
 
@@ -2112,7 +2095,7 @@ items:
       content: 'startNewList(): Word.List;'
       return:
         type:
-          - word.Word.List
+          - 'word!Word.List:class'
         description: |-
 
 
@@ -2141,7 +2124,7 @@ items:
             await context.sync();
           });
           ```
-  - uid: word.Word.Paragraph.style
+  - uid: 'word!Word.Paragraph#style:member'
     summary: >-
       Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To
       use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -2158,7 +2141,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Paragraph.styleBuiltIn
+  - uid: 'word!Word.Paragraph#styleBuiltIn:member'
     summary: >-
       Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable
       between locales. To use custom styles or localized style names, see the "style" property.
@@ -2205,41 +2188,8 @@ items:
         "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
       return:
         type:
-          - >-
-            Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" |
-            "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" |
-            "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" |
-            "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" |
-            "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" |
-            "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" |
-            "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" |
-            "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" |
-            "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" |
-            "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" |
-            "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" |
-            "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" |
-            "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" |
-            "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" |
-            "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" |
-            "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" |
-            "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" |
-            "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" |
-            "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" |
-            "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" |
-            "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" |
-            "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" |
-            "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" |
-            "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" |
-            "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" |
-            "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" |
-            "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" |
-            "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" |
-            "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" |
-            "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" |
-            "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" |
-            "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" |
-            "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"
-  - uid: word.Word.Paragraph.tableNestingLevel
+          - 'word!Word.Paragraph#styleBuiltIn~0:complex'
+  - uid: 'word!Word.Paragraph#tableNestingLevel:member'
     summary: |-
       Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
 
@@ -2254,7 +2204,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Paragraph.text
+  - uid: 'word!Word.Paragraph#text:member'
     summary: |-
       Gets the text of the paragraph. Read-only.
 
@@ -2284,7 +2234,7 @@ items:
             console.log(paragraph.text);
           });
           ```
-  - uid: word.Word.Paragraph.toJSON
+  - uid: 'word!Word.Paragraph#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -2300,9 +2250,9 @@ items:
       content: 'toJSON(): Word.Interfaces.ParagraphData;'
       return:
         type:
-          - word.Word.Interfaces.ParagraphData
+          - 'word!Word.Interfaces.ParagraphData:interface'
         description: ''
-  - uid: word.Word.Paragraph.track
+  - uid: 'word!Word.Paragraph#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -2318,9 +2268,9 @@ items:
       content: 'track(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
-  - uid: word.Word.Paragraph.untrack
+  - uid: 'word!Word.Paragraph#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -2335,5 +2285,193 @@ items:
       content: 'untrack(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
+references:
+  - uid: 'word!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.Paragraph#alignment~0:complex'
+    name: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+    fullName: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+    spec.typeScript:
+      - uid: 'word!Word.Alignment:enum'
+        name: Word.Alignment
+        fullName: Word.Alignment
+      - name: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+        fullName: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+  - uid: 'word!Word.List:class'
+    name: Word.List
+  - uid: 'word!Word.ContentControlCollection:class'
+    name: Word.ContentControlCollection
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.Font:class'
+    name: Word.Font
+  - uid: 'word!Word.Paragraph#getHtml~0:complex'
+    name: OfficeExtension.ClientResult<string>
+    fullName: OfficeExtension.ClientResult<string>
+    spec.typeScript:
+      - uid: 'word!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <string>
+        fullName: <string>
+  - uid: 'word!Word.Paragraph:class'
+    name: Word.Paragraph
+  - uid: 'word!Word.Paragraph#getOoxml~0:complex'
+    name: OfficeExtension.ClientResult<string>
+    fullName: OfficeExtension.ClientResult<string>
+    spec.typeScript:
+      - uid: 'word!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <string>
+        fullName: <string>
+  - uid: 'word!Word.Range:class'
+    name: Word.Range
+  - uid: 'word!Word.RangeLocation:enum'
+    name: Word.RangeLocation
+  - uid: 'word!Word.RangeCollection:class'
+    name: Word.RangeCollection
+  - uid: 'word!Word.InlinePictureCollection:class'
+    name: Word.InlinePictureCollection
+  - uid: 'word!Word.BreakType:enum'
+    name: Word.BreakType
+  - uid: 'word!Word.InsertLocation:enum'
+    name: Word.InsertLocation
+  - uid: 'word!Word.ContentControl:class'
+    name: Word.ContentControl
+  - uid: 'word!Word.InlinePicture:class'
+    name: Word.InlinePicture
+  - uid: 'word!Word.Table:class'
+    name: Word.Table
+  - uid: 'word!Word.ListItem:class'
+    name: Word.ListItem
+  - uid: 'word!Word.Interfaces.ParagraphLoadOptions:interface'
+    name: Word.Interfaces.ParagraphLoadOptions
+  - uid: 'word!Word.Body:class'
+    name: Word.Body
+  - uid: 'word!Word.TableCell:class'
+    name: Word.TableCell
+  - uid: 'word!Word.Paragraph#search~0:complex'
+    name: |-
+      Word.SearchOptions | {
+                  ignorePunct?: boolean;
+                  ignoreSpace?: boolean;
+                  matchCase?: boolean;
+                  matchPrefix?: boolean;
+                  matchSuffix?: boolean;
+                  matchWholeWord?: boolean;
+                  matchWildcards?: boolean;
+              }
+    fullName: |-
+      Word.SearchOptions | {
+                  ignorePunct?: boolean;
+                  ignoreSpace?: boolean;
+                  matchCase?: boolean;
+                  matchPrefix?: boolean;
+                  matchSuffix?: boolean;
+                  matchWholeWord?: boolean;
+                  matchWildcards?: boolean;
+              }
+    spec.typeScript:
+      - uid: 'word!Word.SearchOptions:class'
+        name: Word.SearchOptions
+        fullName: Word.SearchOptions
+      - name: |2-
+           | {
+                      ignorePunct?: boolean;
+                      ignoreSpace?: boolean;
+                      matchCase?: boolean;
+                      matchPrefix?: boolean;
+                      matchSuffix?: boolean;
+                      matchWholeWord?: boolean;
+                      matchWildcards?: boolean;
+                  }
+        fullName: |2-
+           | {
+                      ignorePunct?: boolean;
+                      ignoreSpace?: boolean;
+                      matchCase?: boolean;
+                      matchPrefix?: boolean;
+                      matchSuffix?: boolean;
+                      matchWholeWord?: boolean;
+                      matchWildcards?: boolean;
+                  }
+  - uid: 'word!Word.SelectionMode:enum'
+    name: Word.SelectionMode
+  - uid: 'word!Word.Interfaces.ParagraphUpdateData:interface'
+    name: Interfaces.ParagraphUpdateData
+  - uid: 'word!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'word!Word.Paragraph#styleBuiltIn~0:complex'
+    name: >-
+      Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" |
+      "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" |
+      "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" |
+      "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" |
+      "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" |
+      "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" |
+      "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" |
+      "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" |
+      "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" |
+      "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" |
+      "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" |
+      "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" |
+      "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" |
+      "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" |
+      "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" |
+      "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" |
+      "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2"
+      | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" |
+      "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" |
+      "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" |
+      "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" |
+      "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" |
+      "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" |
+      "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" |
+      "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" |
+      "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" |
+      "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3"
+      | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" |
+      "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3"
+      | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"
+    fullName: >-
+      Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" |
+      "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" |
+      "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" |
+      "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" |
+      "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" |
+      "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" |
+      "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" |
+      "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" |
+      "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" |
+      "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" |
+      "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" |
+      "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" |
+      "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" |
+      "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" |
+      "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" |
+      "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" |
+      "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2"
+      | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" |
+      "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" |
+      "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" |
+      "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" |
+      "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" |
+      "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" |
+      "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" |
+      "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" |
+      "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" |
+      "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3"
+      | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" |
+      "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3"
+      | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"
+    spec.typeScript:
+      - uid: 'word!Word.Style:enum'
+        name: Word.Style
+        fullName: Word.Style
+      - name: ' | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"'
+        fullName: ' | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"'
+  - uid: 'word!Word.Interfaces.ParagraphData:interface'
+    name: Word.Interfaces.ParagraphData

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.File
+  - uid: 'office!Office.File:interface'
     summary: Represents the document file associated with an Office Add-in.
     remarks: >-
       Access the File object with the AsyncResult.value property in the callback function passed to the
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.File.closeAsync
-      - office.Office.File.getSliceAsync
-      - office.Office.File.size
-      - office.Office.File.sliceCount
-  - uid: office.Office.File.closeAsync
+      - 'office!Office.File#closeAsync:member(1)'
+      - 'office!Office.File#getSliceAsync:member(1)'
+      - 'office!Office.File#size:member'
+      - 'office!Office.File#sliceCount:member'
+  - uid: 'office!Office.File#closeAsync:member(1)'
     summary: Closes the document file.
     remarks: >-
       **Requirement set**:
@@ -52,10 +52,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.File.getSliceAsync
+            - 'office!Office.File#closeAsync~0:complex'
+  - uid: 'office!Office.File#getSliceAsync:member(1)'
     summary: Returns the specified slice.
     remarks: >-
       **Requirement set**:
@@ -90,11 +90,11 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            [Office.Slice](xref:office.Office.Slice) object.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the [Office.Slice](xref:office!Office.Slice:interface) object.
           type:
-            - '(result: AsyncResult<Office.Slice>) => void'
-  - uid: office.Office.File.size
+            - 'office!Office.File#getSliceAsync~0:complex'
+  - uid: 'office!Office.File#size:member'
     summary: Gets the document file size in bytes.
     name: size
     fullName: size
@@ -106,7 +106,7 @@ items:
       return:
         type:
           - number
-  - uid: office.Office.File.sliceCount
+  - uid: 'office!Office.File#sliceCount:member'
     summary: Gets the number of slices into which the file is divided.
     name: sliceCount
     fullName: sliceCount
@@ -118,3 +118,31 @@ items:
       return:
         type:
           - number
+references:
+  - uid: 'office!Office.File#closeAsync~0:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.File#getSliceAsync~0:complex'
+    name: '(result: AsyncResult<Office.Slice>) => void'
+    fullName: '(result: Office.AsyncResult<Office.Slice>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.Slice:interface'
+        name: Office.Slice
+        fullName: Office.Slice
+      - name: '>) => void'
+        fullName: '>) => void'

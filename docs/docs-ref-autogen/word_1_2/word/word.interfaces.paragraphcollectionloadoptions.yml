@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions:interface'
     summary: |-
-      Contains a collection of [Word.Paragraph](xref:word.Word.Paragraph) objects.
+      Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class) objects.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Interfaces.ParagraphCollectionLoadOptions
@@ -10,24 +10,24 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.$all
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.alignment
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.firstLineIndent
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.font
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.leftIndent
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.lineSpacing
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.lineUnitAfter
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.lineUnitBefore
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.outlineLevel
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControl
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.rightIndent
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.spaceAfter
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.spaceBefore
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.style
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.text
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.$all
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#$all:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#alignment:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#firstLineIndent:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#font:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#leftIndent:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineSpacing:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitAfter:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitBefore:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#outlineLevel:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#rightIndent:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceAfter:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceBefore:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#style:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#text:member'
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -38,7 +38,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.alignment
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#alignment:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the alignment for a paragraph. The value can be 'left', 'centered',
       'right', or 'justified'.
@@ -55,7 +55,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.firstLineIndent
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#firstLineIndent:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the value, in points, for a first line or hanging indent. Use a
       positive value to set a first-line indent, and use a negative value to set a hanging indent.
@@ -72,7 +72,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.font
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#font:member'
     summary: >-
       For EACH ITEM in the collection: Gets the text format of the paragraph. Use this to get and set font name, size,
       color, and other properties.
@@ -88,8 +88,8 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.FontLoadOptions
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.leftIndent
+          - 'word!Word.Interfaces.FontLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#leftIndent:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets the left indent value, in points, for the paragraph.
 
@@ -104,7 +104,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.lineSpacing
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineSpacing:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the line spacing, in points, for the specified paragraph. In the
       Word UI, this value is divided by 12.
@@ -121,7 +121,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.lineUnitAfter
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitAfter:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, after the paragraph.
 
@@ -136,7 +136,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.lineUnitBefore
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitBefore:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, before the paragraph.
 
@@ -151,7 +151,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.outlineLevel
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#outlineLevel:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets the outline level for the paragraph.
 
@@ -166,7 +166,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControl
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member'
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws if there isn't a
       parent content control.
@@ -182,8 +182,8 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.rightIndent
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#rightIndent:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets the right indent value, in points, for the paragraph.
 
@@ -198,7 +198,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.spaceAfter
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceAfter:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets the spacing, in points, after the paragraph.
 
@@ -213,7 +213,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.spaceBefore
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceBefore:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets the spacing, in points, before the paragraph.
 
@@ -228,7 +228,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.style
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#style:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the style name for the paragraph. Use this property for custom
       styles and localized style names. To use the built-in styles that are portable between locales, see the
@@ -246,7 +246,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.text
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#text:member'
     summary: |-
       For EACH ITEM in the collection: Gets the text of the paragraph. Read-only.
 
@@ -261,3 +261,8 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
+    name: Word.Interfaces.FontLoadOptions
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+    name: Word.Interfaces.ContentControlLoadOptions

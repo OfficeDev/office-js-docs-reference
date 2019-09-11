@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Range
+  - uid: 'excel!Excel.Range:class'
     summary: >-
       Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc. To
       learn more about how ranges are used throughout the API, read [Work with ranges using the Excel JavaScript
@@ -16,104 +16,104 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.Range.address
-      - excel.Excel.Range.addressLocal
-      - excel.Excel.Range.autoFill
-      - excel.Excel.Range.autoFill_1
-      - excel.Excel.Range.calculate
-      - excel.Excel.Range.cellCount
-      - excel.Excel.Range.clear
-      - excel.Excel.Range.clear_1
-      - excel.Excel.Range.columnCount
-      - excel.Excel.Range.columnHidden
-      - excel.Excel.Range.columnIndex
-      - excel.Excel.Range.conditionalFormats
-      - excel.Excel.Range.context
-      - excel.Excel.Range.convertDataTypeToText
-      - excel.Excel.Range.convertToLinkedDataType
-      - excel.Excel.Range.copyFrom
-      - excel.Excel.Range.copyFrom_1
-      - excel.Excel.Range.dataValidation
-      - excel.Excel.Range.delete
-      - excel.Excel.Range.delete_1
-      - excel.Excel.Range.find
-      - excel.Excel.Range.findOrNullObject
-      - excel.Excel.Range.flashFill
-      - excel.Excel.Range.format
-      - excel.Excel.Range.formulas
-      - excel.Excel.Range.formulasLocal
-      - excel.Excel.Range.formulasR1C1
-      - excel.Excel.Range.getAbsoluteResizedRange
-      - excel.Excel.Range.getBoundingRect
-      - excel.Excel.Range.getCell
-      - excel.Excel.Range.getCellProperties
-      - excel.Excel.Range.getColumn
-      - excel.Excel.Range.getColumnProperties
-      - excel.Excel.Range.getColumnsAfter
-      - excel.Excel.Range.getColumnsBefore
-      - excel.Excel.Range.getEntireColumn
-      - excel.Excel.Range.getEntireRow
-      - excel.Excel.Range.getImage
-      - excel.Excel.Range.getIntersection
-      - excel.Excel.Range.getIntersectionOrNullObject
-      - excel.Excel.Range.getLastCell
-      - excel.Excel.Range.getLastColumn
-      - excel.Excel.Range.getLastRow
-      - excel.Excel.Range.getOffsetRange
-      - excel.Excel.Range.getResizedRange
-      - excel.Excel.Range.getRow
-      - excel.Excel.Range.getRowProperties
-      - excel.Excel.Range.getRowsAbove
-      - excel.Excel.Range.getRowsBelow
-      - excel.Excel.Range.getSpecialCells
-      - excel.Excel.Range.getSpecialCells_1
-      - excel.Excel.Range.getSpecialCellsOrNullObject
-      - excel.Excel.Range.getSpecialCellsOrNullObject_1
-      - excel.Excel.Range.getSurroundingRegion
-      - excel.Excel.Range.getTables
-      - excel.Excel.Range.getUsedRange
-      - excel.Excel.Range.getUsedRangeOrNullObject
-      - excel.Excel.Range.getVisibleView
-      - excel.Excel.Range.hidden
-      - excel.Excel.Range.hyperlink
-      - excel.Excel.Range.insert
-      - excel.Excel.Range.insert_1
-      - excel.Excel.Range.isEntireColumn
-      - excel.Excel.Range.isEntireRow
-      - excel.Excel.Range.linkedDataTypeState
-      - excel.Excel.Range.load
-      - excel.Excel.Range.load_1
-      - excel.Excel.Range.load_2
-      - excel.Excel.Range.merge
-      - excel.Excel.Range.numberFormat
-      - excel.Excel.Range.numberFormatLocal
-      - excel.Excel.Range.removeDuplicates
-      - excel.Excel.Range.replaceAll
-      - excel.Excel.Range.rowCount
-      - excel.Excel.Range.rowHidden
-      - excel.Excel.Range.rowIndex
-      - excel.Excel.Range.select
-      - excel.Excel.Range.set
-      - excel.Excel.Range.set_1
-      - excel.Excel.Range.setCellProperties
-      - excel.Excel.Range.setColumnProperties
-      - excel.Excel.Range.setDirty
-      - excel.Excel.Range.setRowProperties
-      - excel.Excel.Range.showCard
-      - excel.Excel.Range.sort
-      - excel.Excel.Range.style
-      - excel.Excel.Range.text
-      - excel.Excel.Range.toJSON
-      - excel.Excel.Range.track
-      - excel.Excel.Range.unmerge
-      - excel.Excel.Range.untrack
-      - excel.Excel.Range.values
-      - excel.Excel.Range.valueTypes
-      - excel.Excel.Range.worksheet
-  - uid: excel.Excel.Range.address
+      - 'excel!Excel.Range#address:member'
+      - 'excel!Excel.Range#addressLocal:member'
+      - 'excel!Excel.Range#autoFill:member(1)'
+      - 'excel!Excel.Range#autoFill:member(2)'
+      - 'excel!Excel.Range#calculate:member(1)'
+      - 'excel!Excel.Range#cellCount:member'
+      - 'excel!Excel.Range#clear:member(1)'
+      - 'excel!Excel.Range#clear:member(2)'
+      - 'excel!Excel.Range#columnCount:member'
+      - 'excel!Excel.Range#columnHidden:member'
+      - 'excel!Excel.Range#columnIndex:member'
+      - 'excel!Excel.Range#conditionalFormats:member'
+      - 'excel!Excel.Range#context:member'
+      - 'excel!Excel.Range#convertDataTypeToText:member(1)'
+      - 'excel!Excel.Range#convertToLinkedDataType:member(1)'
+      - 'excel!Excel.Range#copyFrom:member(1)'
+      - 'excel!Excel.Range#copyFrom:member(2)'
+      - 'excel!Excel.Range#dataValidation:member'
+      - 'excel!Excel.Range#delete:member(1)'
+      - 'excel!Excel.Range#delete:member(2)'
+      - 'excel!Excel.Range#find:member(1)'
+      - 'excel!Excel.Range#findOrNullObject:member(1)'
+      - 'excel!Excel.Range#flashFill:member(1)'
+      - 'excel!Excel.Range#format:member'
+      - 'excel!Excel.Range#formulas:member'
+      - 'excel!Excel.Range#formulasLocal:member'
+      - 'excel!Excel.Range#formulasR1C1:member'
+      - 'excel!Excel.Range#getAbsoluteResizedRange:member(1)'
+      - 'excel!Excel.Range#getBoundingRect:member(1)'
+      - 'excel!Excel.Range#getCell:member(1)'
+      - 'excel!Excel.Range#getCellProperties:member(1)'
+      - 'excel!Excel.Range#getColumn:member(1)'
+      - 'excel!Excel.Range#getColumnProperties:member(1)'
+      - 'excel!Excel.Range#getColumnsAfter:member(1)'
+      - 'excel!Excel.Range#getColumnsBefore:member(1)'
+      - 'excel!Excel.Range#getEntireColumn:member(1)'
+      - 'excel!Excel.Range#getEntireRow:member(1)'
+      - 'excel!Excel.Range#getImage:member(1)'
+      - 'excel!Excel.Range#getIntersection:member(1)'
+      - 'excel!Excel.Range#getIntersectionOrNullObject:member(1)'
+      - 'excel!Excel.Range#getLastCell:member(1)'
+      - 'excel!Excel.Range#getLastColumn:member(1)'
+      - 'excel!Excel.Range#getLastRow:member(1)'
+      - 'excel!Excel.Range#getOffsetRange:member(1)'
+      - 'excel!Excel.Range#getResizedRange:member(1)'
+      - 'excel!Excel.Range#getRow:member(1)'
+      - 'excel!Excel.Range#getRowProperties:member(1)'
+      - 'excel!Excel.Range#getRowsAbove:member(1)'
+      - 'excel!Excel.Range#getRowsBelow:member(1)'
+      - 'excel!Excel.Range#getSpecialCells:member(1)'
+      - 'excel!Excel.Range#getSpecialCells:member(2)'
+      - 'excel!Excel.Range#getSpecialCellsOrNullObject:member(1)'
+      - 'excel!Excel.Range#getSpecialCellsOrNullObject:member(2)'
+      - 'excel!Excel.Range#getSurroundingRegion:member(1)'
+      - 'excel!Excel.Range#getTables:member(1)'
+      - 'excel!Excel.Range#getUsedRange:member(1)'
+      - 'excel!Excel.Range#getUsedRangeOrNullObject:member(1)'
+      - 'excel!Excel.Range#getVisibleView:member(1)'
+      - 'excel!Excel.Range#hidden:member'
+      - 'excel!Excel.Range#hyperlink:member'
+      - 'excel!Excel.Range#insert:member(1)'
+      - 'excel!Excel.Range#insert:member(2)'
+      - 'excel!Excel.Range#isEntireColumn:member'
+      - 'excel!Excel.Range#isEntireRow:member'
+      - 'excel!Excel.Range#linkedDataTypeState:member'
+      - 'excel!Excel.Range#load:member(1)'
+      - 'excel!Excel.Range#load:member(2)'
+      - 'excel!Excel.Range#load:member(3)'
+      - 'excel!Excel.Range#merge:member(1)'
+      - 'excel!Excel.Range#numberFormat:member'
+      - 'excel!Excel.Range#numberFormatLocal:member'
+      - 'excel!Excel.Range#removeDuplicates:member(1)'
+      - 'excel!Excel.Range#replaceAll:member(1)'
+      - 'excel!Excel.Range#rowCount:member'
+      - 'excel!Excel.Range#rowHidden:member'
+      - 'excel!Excel.Range#rowIndex:member'
+      - 'excel!Excel.Range#select:member(1)'
+      - 'excel!Excel.Range#set:member(1)'
+      - 'excel!Excel.Range#set:member(2)'
+      - 'excel!Excel.Range#setCellProperties:member(1)'
+      - 'excel!Excel.Range#setColumnProperties:member(1)'
+      - 'excel!Excel.Range#setDirty:member(1)'
+      - 'excel!Excel.Range#setRowProperties:member(1)'
+      - 'excel!Excel.Range#showCard:member(1)'
+      - 'excel!Excel.Range#sort:member'
+      - 'excel!Excel.Range#style:member'
+      - 'excel!Excel.Range#text:member'
+      - 'excel!Excel.Range#toJSON:member(1)'
+      - 'excel!Excel.Range#track:member(1)'
+      - 'excel!Excel.Range#unmerge:member(1)'
+      - 'excel!Excel.Range#untrack:member(1)'
+      - 'excel!Excel.Range#values:member'
+      - 'excel!Excel.Range#valueTypes:member'
+      - 'excel!Excel.Range#worksheet:member'
+  - uid: 'excel!Excel.Range#address:member'
     summary: >-
       Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4").
       Read-only.
@@ -130,7 +130,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Range.addressLocal
+  - uid: 'excel!Excel.Range#addressLocal:member'
     summary: |-
       Represents range reference for the specified range in the language of the user. Read-only.
 
@@ -145,12 +145,10 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Range.autoFill
+  - uid: 'excel!Excel.Range#autoFill:member(1)'
     summary: >-
       Fills range from the current range to the destination range using the specified AutoFill logic. The destination
-      range can be null, or can extend the source either horizontally or vertically. If the destination range is null,
-      data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill
-      handle). Discontiguous ranges are not supported.
+      range must extend the source either horizontally or vertically.
 
 
       For more information, read [Use AutoFill and Flash
@@ -172,21 +170,19 @@ items:
         description: ''
       parameters:
         - id: destinationRange
-          description: The destination range to autofill.
+          description: The destination range to fill. Discontiguous ranges are not supported.
           type:
-            - Range | string
+            - 'excel!Excel.Range#autoFill~0:complex'
         - id: autoFillType
           description: >-
             The type of autofill. Specifies how the destination range is to be filled, based on the contents of the
             current range. Default is "FillDefault".
           type:
-            - excel.Excel.AutoFillType
-  - uid: excel.Excel.Range.autoFill_1
+            - 'excel!Excel.AutoFillType:enum'
+  - uid: 'excel!Excel.Range#autoFill:member(2)'
     summary: >-
       Fills range from the current range to the destination range using the specified AutoFill logic. The destination
-      range can be null, or can extend the source either horizontally or vertically. If the destination range is null,
-      data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill
-      handle). Discontiguous ranges are not supported.
+      range must extend the source either horizontally or vertically.
 
 
       For more information, read [Use AutoFill and Flash
@@ -211,9 +207,9 @@ items:
         description: ''
       parameters:
         - id: destinationRange
-          description: The destination range to autofill.
+          description: The destination range to fill. Discontiguous ranges are not supported.
           type:
-            - Range | string
+            - 'excel!Excel.Range#autoFill~1:complex'
         - id: autoFillTypeString
           description: >-
             The type of autofill. Specifies how the destination range is to be filled, based on the contents of the
@@ -222,7 +218,7 @@ items:
             - >-
               "FillDefault" | "FillCopy" | "FillSeries" | "FillFormats" | "FillValues" | "FillDays" | "FillWeekdays" |
               "FillMonths" | "FillYears" | "LinearTrend" | "GrowthTrend" | "FlashFill"
-  - uid: excel.Excel.Range.calculate
+  - uid: 'excel!Excel.Range#calculate:member(1)'
     summary: |-
       Calculates a range of cells on a worksheet.
 
@@ -238,7 +234,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.Range.cellCount
+  - uid: 'excel!Excel.Range#cellCount:member'
     summary: |-
       Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
 
@@ -253,7 +249,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Range.clear
+  - uid: 'excel!Excel.Range#clear:member(1)'
     summary: |-
       Clear range values, format, fill, border, etc.
 
@@ -292,8 +288,8 @@ items:
         - id: applyTo
           description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
           type:
-            - excel.Excel.ClearApplyTo
-  - uid: excel.Excel.Range.clear_1
+            - 'excel!Excel.ClearApplyTo:enum'
+  - uid: 'excel!Excel.Range#clear:member(2)'
     summary: |-
       Clear range values, format, fill, border, etc.
 
@@ -314,7 +310,7 @@ items:
           description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
           type:
             - '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
-  - uid: excel.Excel.Range.columnCount
+  - uid: 'excel!Excel.Range#columnCount:member'
     summary: |-
       Represents the total number of columns in the range. Read-only.
 
@@ -329,7 +325,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Range.columnHidden
+  - uid: 'excel!Excel.Range#columnHidden:member'
     summary: |-
       Represents if all columns of the current range are hidden.
 
@@ -344,7 +340,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Range.columnIndex
+  - uid: 'excel!Excel.Range#columnIndex:member'
     summary: |-
       Represents the column number of the first cell in the range. Zero-indexed. Read-only.
 
@@ -359,7 +355,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Range.conditionalFormats
+  - uid: 'excel!Excel.Range#conditionalFormats:member'
     summary: |-
       Collection of ConditionalFormats that intersect the range. Read-only.
 
@@ -373,8 +369,8 @@ items:
       content: 'readonly conditionalFormats: Excel.ConditionalFormatCollection;'
       return:
         type:
-          - excel.Excel.ConditionalFormatCollection
-  - uid: excel.Excel.Range.context
+          - 'excel!Excel.ConditionalFormatCollection:class'
+  - uid: 'excel!Excel.Range#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -387,8 +383,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.Range.convertDataTypeToText
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Range#convertDataTypeToText:member(1)'
     summary: |-
       Converts the range cells with datatypes into text.
 
@@ -404,7 +400,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.Range.convertToLinkedDataType
+  - uid: 'excel!Excel.Range#convertToLinkedDataType:member(1)'
     summary: |-
       Converts the range cells into linked datatype in the worksheet.
 
@@ -429,7 +425,7 @@ items:
           description: Language Culture to query the service for.
           type:
             - string
-  - uid: excel.Excel.Range.copyFrom
+  - uid: 'excel!Excel.Range#copyFrom:member(1)'
     summary: >-
       Copies cell data or formatting from the source range or RangeAreas to the current range. The destination range can
       be of different size than the source range or RangeAreas. The destination will be expanded automatically if it is
@@ -472,11 +468,11 @@ items:
             The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, it must in the
             outline form which can be created by removing full rows or columns from a rectangular range.
           type:
-            - Range | RangeAreas | string
+            - 'excel!Excel.Range#copyFrom~0:complex'
         - id: copyType
           description: The type of cell data or formatting to copy over. Default is "All".
           type:
-            - excel.Excel.RangeCopyType
+            - 'excel!Excel.RangeCopyType:enum'
         - id: skipBlanks
           description: True if to skip blank cells in the source range. Default is false.
           type:
@@ -485,7 +481,7 @@ items:
           description: True if to transpose the cells in the destination range. Default is false.
           type:
             - boolean
-  - uid: excel.Excel.Range.copyFrom_1
+  - uid: 'excel!Excel.Range#copyFrom:member(2)'
     summary: >-
       Copies cell data or formatting from the source range or RangeAreas to the current range. The destination range can
       be of different size than the source range or RangeAreas. The destination will be expanded automatically if it is
@@ -512,7 +508,7 @@ items:
             The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, it must in the
             outline form which can be created by removing full rows or columns from a rectangular range.
           type:
-            - Range | RangeAreas | string
+            - 'excel!Excel.Range#copyFrom~1:complex'
         - id: copyTypeString
           description: The type of cell data or formatting to copy over. Default is "All".
           type:
@@ -525,7 +521,7 @@ items:
           description: True if to transpose the cells in the destination range. Default is false.
           type:
             - boolean
-  - uid: excel.Excel.Range.dataValidation
+  - uid: 'excel!Excel.Range#dataValidation:member'
     summary: |-
       Returns a data validation object.
 
@@ -539,8 +535,8 @@ items:
       content: 'readonly dataValidation: Excel.DataValidation;'
       return:
         type:
-          - excel.Excel.DataValidation
-  - uid: excel.Excel.Range.delete
+          - 'excel!Excel.DataValidation:class'
+  - uid: 'excel!Excel.Range#delete:member(1)'
     summary: |-
       Deletes the cells associated with the range.
 
@@ -552,27 +548,6 @@ items:
     type: method
     syntax:
       content: 'delete(shift: Excel.DeleteShiftDirection): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: shift
-          description: Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
-          type:
-            - excel.Excel.DeleteShiftDirection
-  - uid: excel.Excel.Range.delete_1
-    summary: |-
-      Deletes the cells associated with the range.
-
-      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: delete(shiftString)
-    fullName: delete(shiftString)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(shiftString: "Up" | "Left"): void;'
       return:
         type:
           - void
@@ -596,11 +571,32 @@ items:
           });
           ```
       parameters:
+        - id: shift
+          description: Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
+          type:
+            - 'excel!Excel.DeleteShiftDirection:enum'
+  - uid: 'excel!Excel.Range#delete:member(2)'
+    summary: |-
+      Deletes the cells associated with the range.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: delete(shiftString)
+    fullName: delete(shiftString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(shiftString: "Up" | "Left"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
         - id: shiftString
           description: Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
           type:
             - '"Up" | "Left"'
-  - uid: excel.Excel.Range.find
+  - uid: 'excel!Excel.Range#find:member(1)'
     summary: >-
       Finds the given string based on the criteria specified. If the current range is larger than a single cell, then
       the search will be limited to that range, else the search will cover the entire sheet starting after that cell.
@@ -616,7 +612,7 @@ items:
       content: 'find(text: string, criteria: Excel.SearchCriteria): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
           The Range which matched the search criteria.
 
@@ -653,8 +649,8 @@ items:
             Additional search criteria, including the search direction and whether the search needs to match the entire
             cell or be case sensitive.
           type:
-            - excel.Excel.SearchCriteria
-  - uid: excel.Excel.Range.findOrNullObject
+            - 'excel!Excel.SearchCriteria:interface'
+  - uid: 'excel!Excel.Range#findOrNullObject:member(1)'
     summary: >-
       Finds the given string based on the criteria specified. If the current range is larger than a single cell, then
       the search will be limited to that range, else the search will cover the entire sheet starting after that cell. If
@@ -671,7 +667,7 @@ items:
       content: 'findOrNullObject(text: string, criteria: Excel.SearchCriteria): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
           The Range which matched the search criteria.
 
@@ -708,8 +704,8 @@ items:
             Additional search criteria, including the search direction and whether the search needs to match the entire
             cell or be case sensitive.
           type:
-            - excel.Excel.SearchCriteria
-  - uid: excel.Excel.Range.flashFill
+            - 'excel!Excel.SearchCriteria:interface'
+  - uid: 'excel!Excel.Range#flashFill:member(1)'
     summary: >-
       Does FlashFill to current range.Flash Fill will automatically fills data when it senses a pattern, so the range
       must be single column range and have data around in order to find pattern.
@@ -727,7 +723,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.Range.format
+  - uid: 'excel!Excel.Range#format:member'
     summary: >-
       Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
       Read-only.
@@ -743,8 +739,8 @@ items:
       content: 'readonly format: Excel.RangeFormat;'
       return:
         type:
-          - excel.Excel.RangeFormat
-  - uid: excel.Excel.Range.formulas
+          - 'excel!Excel.RangeFormat:class'
+  - uid: 'excel!Excel.Range#formulas:member'
     summary: >-
       Represents the formula in A1-style notation. When setting formulas to a range, the value argument can be either a
       single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all
@@ -762,7 +758,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Range.formulasLocal
+  - uid: 'excel!Excel.Range#formulasLocal:member'
     summary: >-
       Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
       English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. When setting formulas to a range, the
@@ -781,7 +777,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Range.formulasR1C1
+  - uid: 'excel!Excel.Range#formulasR1C1:member'
     summary: >-
       Represents the formula in R1C1-style notation. When setting formulas to a range, the value argument can be either
       a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all
@@ -799,7 +795,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Range.getAbsoluteResizedRange
+  - uid: 'excel!Excel.Range#getAbsoluteResizedRange:member(1)'
     summary: >-
       Gets a Range object with the same top-left cell as the current Range object, but with the specified numbers of
       rows and columns.
@@ -815,7 +811,7 @@ items:
       content: 'getAbsoluteResizedRange(numRows: number, numColumns: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: numRows
@@ -826,7 +822,7 @@ items:
           description: The number of columns of the new range size.
           type:
             - number
-  - uid: excel.Excel.Range.getBoundingRect
+  - uid: 'excel!Excel.Range#getBoundingRect:member(1)'
     summary: >-
       Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and
       "D10:E15" is "B2:E15".
@@ -842,7 +838,7 @@ items:
       content: 'getBoundingRect(anotherRange: Range | string): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -869,8 +865,8 @@ items:
         - id: anotherRange
           description: The range object or address or range name.
           type:
-            - Range | string
-  - uid: excel.Excel.Range.getCell
+            - 'excel!Excel.Range#getBoundingRect~0:complex'
+  - uid: 'excel!Excel.Range#getCell:member(1)'
     summary: >-
       Gets the range object containing the single cell based on row and column numbers. The cell can be outside the
       bounds of its parent range, so long as it stays within the worksheet grid. The returned cell is located relative
@@ -887,7 +883,7 @@ items:
       content: 'getCell(row: number, column: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -920,7 +916,7 @@ items:
           description: Column number of the cell to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.Range.getCellProperties
+  - uid: 'excel!Excel.Range#getCellProperties:member(1)'
     summary: |-
       Returns a 2D array, encapsulating the data for each cell's font, fill, borders, alignment, and other properties.
 
@@ -936,7 +932,7 @@ items:
         OfficeExtension.ClientResult<CellProperties[][]>;
       return:
         type:
-          - 'OfficeExtension.ClientResult<CellProperties[][]>'
+          - 'excel!Excel.Range#getCellProperties~0:complex'
         description: |-
           A 2D array where each item represents the requested properties of the corresponding cell.
 
@@ -971,8 +967,8 @@ items:
         - id: cellPropertiesLoadOptions
           description: An object that represents which cell properties to load.
           type:
-            - excel.Excel.CellPropertiesLoadOptions
-  - uid: excel.Excel.Range.getColumn
+            - 'excel!Excel.CellPropertiesLoadOptions:interface'
+  - uid: 'excel!Excel.Range#getColumn:member(1)'
     summary: |-
       Gets a column contained in the range.
 
@@ -986,7 +982,7 @@ items:
       content: 'getColumn(column: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -1013,7 +1009,7 @@ items:
           description: Column number of the range to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.Range.getColumnProperties
+  - uid: 'excel!Excel.Range#getColumnProperties:member(1)'
     summary: >-
       Returns a single-dimensional array, encapsulating the data for each column's font, fill, borders, alignment, and
       other properties. For properties that are not consistent across each cell within a given column, null will be
@@ -1032,14 +1028,14 @@ items:
         OfficeExtension.ClientResult<ColumnProperties[]>;
       return:
         type:
-          - 'OfficeExtension.ClientResult<ColumnProperties[]>'
+          - 'excel!Excel.Range#getColumnProperties~0:complex'
         description: An array where each item represents the requested properties of the corresponding column.
       parameters:
         - id: columnPropertiesLoadOptions
           description: An object that represents which column properties to load.
           type:
-            - excel.Excel.ColumnPropertiesLoadOptions
-  - uid: excel.Excel.Range.getColumnsAfter
+            - 'excel!Excel.ColumnPropertiesLoadOptions:interface'
+  - uid: 'excel!Excel.Range#getColumnsAfter:member(1)'
     summary: |-
       Gets a certain number of columns to the right of the current Range object.
 
@@ -1053,7 +1049,7 @@ items:
       content: 'getColumnsAfter(count?: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: count
@@ -1063,7 +1059,7 @@ items:
             current range. The default value is 1.
           type:
             - number
-  - uid: excel.Excel.Range.getColumnsBefore
+  - uid: 'excel!Excel.Range#getColumnsBefore:member(1)'
     summary: |-
       Gets a certain number of columns to the left of the current Range object.
 
@@ -1077,7 +1073,7 @@ items:
       content: 'getColumnsBefore(count?: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: count
@@ -1087,7 +1083,7 @@ items:
             current range. The default value is 1.
           type:
             - number
-  - uid: excel.Excel.Range.getEntireColumn
+  - uid: 'excel!Excel.Range#getEntireColumn:member(1)'
     summary: >-
       Gets an object that represents the entire column of the range (for example, if the current range represents cells
       "B4:E11", its `getEntireColumn` is a range that represents columns "B:E").
@@ -1103,7 +1099,7 @@ items:
       content: 'getEntireColumn(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -1128,7 +1124,7 @@ items:
               }
           });
           ```
-  - uid: excel.Excel.Range.getEntireRow
+  - uid: 'excel!Excel.Range#getEntireRow:member(1)'
     summary: >-
       Gets an object that represents the entire row of the range (for example, if the current range represents cells
       "B4:E11", its `GetEntireRow` is a range that represents rows "4:11").
@@ -1144,7 +1140,7 @@ items:
       content: 'getEntireRow(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -1170,7 +1166,7 @@ items:
               }
           });
           ```
-  - uid: excel.Excel.Range.getImage
+  - uid: 'excel!Excel.Range#getImage:member(1)'
     summary: |-
       Renders the range as a base64-encoded png image.
 
@@ -1184,9 +1180,9 @@ items:
       content: 'getImage(): OfficeExtension.ClientResult<string>;'
       return:
         type:
-          - OfficeExtension.ClientResult<string>
+          - 'excel!Excel.Range#getImage~0:complex'
         description: ''
-  - uid: excel.Excel.Range.getIntersection
+  - uid: 'excel!Excel.Range#getIntersection:member(1)'
     summary: |-
       Gets the range object that represents the rectangular intersection of the given ranges.
 
@@ -1200,7 +1196,7 @@ items:
       content: 'getIntersection(anotherRange: Range | string): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -1227,8 +1223,8 @@ items:
         - id: anotherRange
           description: The range object or range address that will be used to determine the intersection of ranges.
           type:
-            - Range | string
-  - uid: excel.Excel.Range.getIntersectionOrNullObject
+            - 'excel!Excel.Range#getIntersection~0:complex'
+  - uid: 'excel!Excel.Range#getIntersectionOrNullObject:member(1)'
     summary: >-
       Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is
       found, will return a null object.
@@ -1244,7 +1240,7 @@ items:
       content: 'getIntersectionOrNullObject(anotherRange: Range | string): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -1310,8 +1306,8 @@ items:
         - id: anotherRange
           description: The range object or range address that will be used to determine the intersection of ranges.
           type:
-            - Range | string
-  - uid: excel.Excel.Range.getLastCell
+            - 'excel!Excel.Range#getIntersectionOrNullObject~0:complex'
+  - uid: 'excel!Excel.Range#getLastCell:member(1)'
     summary: |-
       Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".
 
@@ -1325,7 +1321,7 @@ items:
       content: 'getLastCell(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -1347,7 +1343,7 @@ items:
               }
           });
           ```
-  - uid: excel.Excel.Range.getLastColumn
+  - uid: 'excel!Excel.Range#getLastColumn:member(1)'
     summary: |-
       Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".
 
@@ -1361,7 +1357,7 @@ items:
       content: 'getLastColumn(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -1383,7 +1379,7 @@ items:
               }
           });
           ```
-  - uid: excel.Excel.Range.getLastRow
+  - uid: 'excel!Excel.Range#getLastRow:member(1)'
     summary: |-
       Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
 
@@ -1397,7 +1393,7 @@ items:
       content: 'getLastRow(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -1419,7 +1415,7 @@ items:
               }
           });
           ```
-  - uid: excel.Excel.Range.getOffsetRange
+  - uid: 'excel!Excel.Range#getOffsetRange:member(1)'
     summary: >-
       Gets an object which represents a range that's offset from the specified range. The dimension of the returned
       range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an error
@@ -1436,7 +1432,7 @@ items:
       content: 'getOffsetRange(rowOffset: number, columnOffset: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -1472,7 +1468,7 @@ items:
             offset to the right, and negative values are offset to the left.
           type:
             - number
-  - uid: excel.Excel.Range.getResizedRange
+  - uid: 'excel!Excel.Range#getResizedRange:member(1)'
     summary: >-
       Gets a Range object similar to the current Range object, but with its bottom-right corner expanded (or contracted)
       by some number of rows and columns.
@@ -1488,7 +1484,7 @@ items:
       content: 'getResizedRange(deltaRows: number, deltaColumns: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: deltaRows
@@ -1503,7 +1499,7 @@ items:
             positive number to expand the range, or a negative number to decrease it.
           type:
             - number
-  - uid: excel.Excel.Range.getRow
+  - uid: 'excel!Excel.Range#getRow:member(1)'
     summary: |-
       Gets a row contained in the range.
 
@@ -1517,7 +1513,7 @@ items:
       content: 'getRow(row: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -1544,7 +1540,7 @@ items:
           description: Row number of the range to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.Range.getRowProperties
+  - uid: 'excel!Excel.Range#getRowProperties:member(1)'
     summary: >-
       Returns a single-dimensional array, encapsulating the data for each row's font, fill, borders, alignment, and
       other properties. For properties that are not consistent across each cell within a given row, null will be
@@ -1563,14 +1559,14 @@ items:
         OfficeExtension.ClientResult<RowProperties[]>;
       return:
         type:
-          - 'OfficeExtension.ClientResult<RowProperties[]>'
+          - 'excel!Excel.Range#getRowProperties~0:complex'
         description: An array where each item represents the requested properties of the corresponding row.
       parameters:
         - id: rowPropertiesLoadOptions
           description: An object that represents which row properties to load.
           type:
-            - excel.Excel.RowPropertiesLoadOptions
-  - uid: excel.Excel.Range.getRowsAbove
+            - 'excel!Excel.RowPropertiesLoadOptions:interface'
+  - uid: 'excel!Excel.Range#getRowsAbove:member(1)'
     summary: |-
       Gets a certain number of rows above the current Range object.
 
@@ -1584,7 +1580,7 @@ items:
       content: 'getRowsAbove(count?: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: count
@@ -1594,7 +1590,7 @@ items:
             range. The default value is 1.
           type:
             - number
-  - uid: excel.Excel.Range.getRowsBelow
+  - uid: 'excel!Excel.Range#getRowsBelow:member(1)'
     summary: |-
       Gets a certain number of rows below the current Range object.
 
@@ -1608,7 +1604,7 @@ items:
       content: 'getRowsBelow(count?: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: count
@@ -1618,7 +1614,7 @@ items:
             range. The default value is 1.
           type:
             - number
-  - uid: excel.Excel.Range.getSpecialCells
+  - uid: 'excel!Excel.Range#getSpecialCells:member(1)'
     summary: >-
       Gets the RangeAreas object, comprising one or more rectangular ranges, that represents all the cells that match
       the specified type and value. If no special cells are found, an ItemNotFound error will be thrown.
@@ -1634,7 +1630,7 @@ items:
       content: 'getSpecialCells(cellType: Excel.SpecialCellType, cellValueType?: Excel.SpecialCellValueType): Excel.RangeAreas;'
       return:
         type:
-          - excel.Excel.RangeAreas
+          - 'excel!Excel.RangeAreas:class'
         description: |-
 
 
@@ -1657,15 +1653,15 @@ items:
         - id: cellType
           description: The type of cells to include.
           type:
-            - excel.Excel.SpecialCellType
+            - 'excel!Excel.SpecialCellType:enum'
         - id: cellValueType
           description: >-
             If cellType is either Constants or Formulas, this argument is used to determine which types of cells to
             include in the result. These values can be combined together to return more than one type. The default is to
             select all constants or formulas, no matter what the type.
           type:
-            - excel.Excel.SpecialCellValueType
-  - uid: excel.Excel.Range.getSpecialCells_1
+            - 'excel!Excel.SpecialCellValueType:enum'
+  - uid: 'excel!Excel.Range#getSpecialCells:member(2)'
     summary: >-
       Gets the RangeAreas object, comprising one or more rectangular ranges, that represents all the cells that match
       the specified type and value. If no special cells are found, an ItemNotFound error will be thrown.
@@ -1685,7 +1681,7 @@ items:
         "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
       return:
         type:
-          - excel.Excel.RangeAreas
+          - 'excel!Excel.RangeAreas:class'
         description: ''
       parameters:
         - id: cellTypeString
@@ -1704,7 +1700,7 @@ items:
               "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" |
               "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" |
               "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"
-  - uid: excel.Excel.Range.getSpecialCellsOrNullObject
+  - uid: 'excel!Excel.Range#getSpecialCellsOrNullObject:member(1)'
     summary: >-
       Gets the RangeAreas object, comprising one or more ranges, that represents all the cells that match the specified
       type and value. If no special cells are found, a null object will be returned.
@@ -1722,21 +1718,21 @@ items:
         Excel.RangeAreas;
       return:
         type:
-          - excel.Excel.RangeAreas
+          - 'excel!Excel.RangeAreas:class'
         description: ''
       parameters:
         - id: cellType
           description: The type of cells to include.
           type:
-            - excel.Excel.SpecialCellType
+            - 'excel!Excel.SpecialCellType:enum'
         - id: cellValueType
           description: >-
             If cellType is either Constants or Formulas, this argument is used to determine which types of cells to
             include in the result. These values can be combined together to return more than one type. The default is to
             select all constants or formulas, no matter what the type.
           type:
-            - excel.Excel.SpecialCellValueType
-  - uid: excel.Excel.Range.getSpecialCellsOrNullObject_1
+            - 'excel!Excel.SpecialCellValueType:enum'
+  - uid: 'excel!Excel.Range#getSpecialCellsOrNullObject:member(2)'
     summary: >-
       Gets the RangeAreas object, comprising one or more ranges, that represents all the cells that match the specified
       type and value. If no special cells are found, a null object will be returned.
@@ -1757,7 +1753,7 @@ items:
         "NumbersText" | "Text"): Excel.RangeAreas;
       return:
         type:
-          - excel.Excel.RangeAreas
+          - 'excel!Excel.RangeAreas:class'
         description: ''
       parameters:
         - id: cellTypeString
@@ -1776,7 +1772,7 @@ items:
               "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" |
               "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" |
               "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"
-  - uid: excel.Excel.Range.getSurroundingRegion
+  - uid: 'excel!Excel.Range#getSurroundingRegion:member(1)'
     summary: >-
       Returns a Range object that represents the surrounding region for the top-left cell in this range. A surrounding
       region is a range bounded by any combination of blank rows and blank columns relative to this range.
@@ -1792,9 +1788,9 @@ items:
       content: 'getSurroundingRegion(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
-  - uid: excel.Excel.Range.getTables
+  - uid: 'excel!Excel.Range#getTables:member(1)'
     summary: |-
       Gets a scoped collection of tables that overlap with the range.
 
@@ -1808,14 +1804,14 @@ items:
       content: 'getTables(fullyContained?: boolean): Excel.TableScopedCollection;'
       return:
         type:
-          - excel.Excel.TableScopedCollection
+          - 'excel!Excel.TableScopedCollection:class'
         description: ''
       parameters:
         - id: fullyContained
           description: 'If true, returns only tables that are fully contained within the range bounds. The default value is false.'
           type:
             - boolean
-  - uid: excel.Excel.Range.getUsedRange
+  - uid: 'excel!Excel.Range#getUsedRange:member(1)'
     summary: >-
       Returns the used range of the given range object. If there are no used cells within the range, this function will
       throw an ItemNotFound error.
@@ -1831,7 +1827,7 @@ items:
       content: 'getUsedRange(valuesOnly?: boolean): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -1915,7 +1911,7 @@ items:
           description: 'Considers only cells with values as used cells. \[Api set: ExcelApi 1.2\]'
           type:
             - boolean
-  - uid: excel.Excel.Range.getUsedRangeOrNullObject
+  - uid: 'excel!Excel.Range#getUsedRangeOrNullObject:member(1)'
     summary: >-
       Returns the used range of the given range object. If there are no used cells within the range, this function will
       return a null object.
@@ -1931,7 +1927,7 @@ items:
       content: 'getUsedRangeOrNullObject(valuesOnly?: boolean): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -1976,7 +1972,7 @@ items:
           description: Considers only cells with values as used cells.
           type:
             - boolean
-  - uid: excel.Excel.Range.getVisibleView
+  - uid: 'excel!Excel.Range#getVisibleView:member(1)'
     summary: |-
       Represents the visible rows of the current range.
 
@@ -1990,9 +1986,9 @@ items:
       content: 'getVisibleView(): Excel.RangeView;'
       return:
         type:
-          - excel.Excel.RangeView
+          - 'excel!Excel.RangeView:class'
         description: ''
-  - uid: excel.Excel.Range.hidden
+  - uid: 'excel!Excel.Range#hidden:member'
     summary: |-
       Represents if all cells of the current range are hidden. Read-only.
 
@@ -2007,7 +2003,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Range.hyperlink
+  - uid: 'excel!Excel.Range#hyperlink:member'
     summary: |-
       Represents the hyperlink for the current range.
 
@@ -2021,7 +2017,7 @@ items:
       content: 'hyperlink: Excel.RangeHyperlink;'
       return:
         type:
-          - excel.Excel.RangeHyperlink
+          - 'excel!Excel.RangeHyperlink:interface'
         description: |-
 
 
@@ -2053,7 +2049,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.Range.insert
+  - uid: 'excel!Excel.Range#insert:member(1)'
     summary: >-
       Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make
       space. Returns a new Range object at the now blank space.
@@ -2069,7 +2065,7 @@ items:
       content: 'insert(shift: Excel.InsertShiftDirection): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -2094,8 +2090,8 @@ items:
         - id: shift
           description: Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
           type:
-            - excel.Excel.InsertShiftDirection
-  - uid: excel.Excel.Range.insert_1
+            - 'excel!Excel.InsertShiftDirection:enum'
+  - uid: 'excel!Excel.Range#insert:member(2)'
     summary: >-
       Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make
       space. Returns a new Range object at the now blank space.
@@ -2111,14 +2107,14 @@ items:
       content: 'insert(shiftString: "Down" | "Right"): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: shiftString
           description: Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
           type:
             - '"Down" | "Right"'
-  - uid: excel.Excel.Range.isEntireColumn
+  - uid: 'excel!Excel.Range#isEntireColumn:member'
     summary: |-
       Represents if the current range is an entire column. Read-only.
 
@@ -2133,7 +2129,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Range.isEntireRow
+  - uid: 'excel!Excel.Range#isEntireRow:member'
     summary: |-
       Represents if the current range is an entire row. Read-only.
 
@@ -2148,7 +2144,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Range.linkedDataTypeState
+  - uid: 'excel!Excel.Range#linkedDataTypeState:member'
     summary: |-
       Represents the data type state of each cell. Read-only.
 
@@ -2162,8 +2158,8 @@ items:
       content: 'readonly linkedDataTypeState: Excel.LinkedDataTypeState[][];'
       return:
         type:
-          - 'Excel.LinkedDataTypeState[][]'
-  - uid: excel.Excel.Range.load
+          - 'excel!Excel.Range#linkedDataTypeState~0:complex'
+  - uid: 'excel!Excel.Range#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -2194,14 +2190,14 @@ items:
       content: 'load(option?: Excel.Interfaces.RangeLoadOptions): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.RangeLoadOptions
-  - uid: excel.Excel.Range.load_1
+            - 'excel!Excel.Interfaces.RangeLoadOptions:interface'
+  - uid: 'excel!Excel.Range#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -2214,7 +2210,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -2282,7 +2278,7 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Range.load_2
+  - uid: 'excel!Excel.Range#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -2295,7 +2291,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -2304,7 +2300,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.Range.merge
+  - uid: 'excel!Excel.Range#merge:member(1)'
     summary: |-
       Merge the range cells into one region in the worksheet.
 
@@ -2359,7 +2355,7 @@ items:
             value is false.
           type:
             - boolean
-  - uid: excel.Excel.Range.numberFormat
+  - uid: 'excel!Excel.Range#numberFormat:member'
     summary: >-
       Represents Excel's number format code for the given range. When setting number format to a range, the value
       argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it
@@ -2377,7 +2373,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Range.numberFormatLocal
+  - uid: 'excel!Excel.Range#numberFormatLocal:member'
     summary: >-
       Represents Excel's number format code for the given range, based on the language settings of the user. When
       setting number format local to a range, the value argument can be either a single value (string) or a
@@ -2397,7 +2393,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Range.removeDuplicates
+  - uid: 'excel!Excel.Range#removeDuplicates:member(1)'
     summary: |-
       Removes duplicate values from the range specified by the columns.
 
@@ -2411,7 +2407,7 @@ items:
       content: 'removeDuplicates(columns: number[], includesHeader: boolean): Excel.RemoveDuplicatesResult;'
       return:
         type:
-          - excel.Excel.RemoveDuplicatesResult
+          - 'excel!Excel.RemoveDuplicatesResult:class'
         description: |-
           The resulting object that contains the number of rows removed and the number of remaining unique rows.
 
@@ -2441,7 +2437,7 @@ items:
           description: True if the input data contains header. Default is false.
           type:
             - boolean
-  - uid: excel.Excel.Range.replaceAll
+  - uid: 'excel!Excel.Range#replaceAll:member(1)'
     summary: |-
       Finds and replaces the given string based on the criteria specified within the current range.
 
@@ -2457,7 +2453,7 @@ items:
         OfficeExtension.ClientResult<number>;
       return:
         type:
-          - OfficeExtension.ClientResult<number>
+          - 'excel!Excel.Range#replaceAll~0:complex'
         description: The number of replacements performed.
       parameters:
         - id: text
@@ -2471,8 +2467,8 @@ items:
         - id: criteria
           description: Additional Replace Criteria.
           type:
-            - excel.Excel.ReplaceCriteria
-  - uid: excel.Excel.Range.rowCount
+            - 'excel!Excel.ReplaceCriteria:interface'
+  - uid: 'excel!Excel.Range#rowCount:member'
     summary: |-
       Returns the total number of rows in the range. Read-only.
 
@@ -2487,7 +2483,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Range.rowHidden
+  - uid: 'excel!Excel.Range#rowHidden:member'
     summary: |-
       Represents if all rows of the current range are hidden.
 
@@ -2502,7 +2498,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Range.rowIndex
+  - uid: 'excel!Excel.Range#rowIndex:member'
     summary: |-
       Returns the row number of the first cell in the range. Zero-indexed. Read-only.
 
@@ -2517,7 +2513,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Range.select
+  - uid: 'excel!Excel.Range#select:member(1)'
     summary: |-
       Selects the specified range in the Excel UI.
 
@@ -2551,7 +2547,7 @@ items:
               }
           });
           ```
-  - uid: excel.Excel.Range.set
+  - uid: 'excel!Excel.Range#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -2615,12 +2611,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.RangeUpdateData
+            - 'excel!Excel.Interfaces.RangeUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.Range.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.Range#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -2637,8 +2633,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Range
-  - uid: excel.Excel.Range.setCellProperties
+            - 'excel!Excel.Range:class'
+  - uid: 'excel!Excel.Range#setCellProperties:member(1)'
     summary: >-
       Updates the range based on a 2D array of cell properties , encapsulating things like font, fill, borders,
       alignment, and so forth.
@@ -2736,8 +2732,8 @@ items:
         - id: cellPropertiesData
           description: A 2D array that represents which properties to set in each cell.
           type:
-            - 'SettableCellProperties[][]'
-  - uid: excel.Excel.Range.setColumnProperties
+            - 'excel!Excel.Range#setCellProperties~0:complex'
+  - uid: 'excel!Excel.Range#setColumnProperties:member(1)'
     summary: >-
       Updates the range based on a single-dimensional array of column properties, encapsulating things like font, fill,
       borders, alignment, and so forth.
@@ -2759,8 +2755,8 @@ items:
         - id: columnPropertiesData
           description: An array that represents which properties to set in each column.
           type:
-            - 'SettableColumnProperties[]'
-  - uid: excel.Excel.Range.setDirty
+            - 'excel!Excel.Range#setColumnProperties~0:complex'
+  - uid: 'excel!Excel.Range#setDirty:member(1)'
     summary: |-
       Set a range to be recalculated when the next recalculation occurs.
 
@@ -2776,7 +2772,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.Range.setRowProperties
+  - uid: 'excel!Excel.Range#setRowProperties:member(1)'
     summary: >-
       Updates the range based on a single-dimensional array of row properties, encapsulating things like font, fill,
       borders, alignment, and so forth.
@@ -2798,8 +2794,8 @@ items:
         - id: rowPropertiesData
           description: An array that represents which properties to set in each row.
           type:
-            - 'SettableRowProperties[]'
-  - uid: excel.Excel.Range.showCard
+            - 'excel!Excel.Range#setRowProperties~0:complex'
+  - uid: 'excel!Excel.Range#showCard:member(1)'
     summary: |-
       Displays the card for an active cell if it has rich value content.
 
@@ -2815,7 +2811,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.Range.sort
+  - uid: 'excel!Excel.Range#sort:member'
     summary: |-
       Represents the range sort of the current range. Read-only.
 
@@ -2829,8 +2825,39 @@ items:
       content: 'readonly sort: Excel.RangeSort;'
       return:
         type:
-          - excel.Excel.RangeSort
-  - uid: excel.Excel.Range.style
+          - 'excel!Excel.RangeSort:class'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          async function sortTopToBottom(criteria: string) {
+              await Excel.run(async (context) => {
+                  const sheet = context.workbook.worksheets.getActiveWorksheet();
+                  const range = sheet.getRange("A1:E5");
+
+                  // Find the column header that provides the sort criteria.
+                  const header = range.find(criteria, {});
+                  header.load("columnIndex");
+                  await context.sync();
+
+                  range.sort.apply(
+                      [
+                          {
+                              key: header.columnIndex,
+                              sortOn: Excel.SortOn.value
+                          }
+                      ],
+                      false /*matchCase*/,
+                      true /*hasHeaders*/,
+                      Excel.SortOrientation.rows
+                  );
+                  await context.sync();
+              });
+          }
+          ```
+  - uid: 'excel!Excel.Range#style:member'
     summary: >-
       Represents the style of the current range. If the styles of the cells are inconsistent, null will be returned. For
       custom styles, the style name will be returned. For built-in styles, a string representing a value in the
@@ -2866,7 +2893,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.Range.text
+  - uid: 'excel!Excel.Range#text:member'
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
       that happens in Excel UI will not affect the text value returned by the API. Read-only.
@@ -2883,7 +2910,7 @@ items:
       return:
         type:
           - 'string[][]'
-  - uid: excel.Excel.Range.toJSON
+  - uid: 'excel!Excel.Range#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -2899,9 +2926,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeData
+          - 'excel!Excel.Interfaces.RangeData:interface'
         description: ''
-  - uid: excel.Excel.Range.track
+  - uid: 'excel!Excel.Range#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -2917,9 +2944,9 @@ items:
       content: 'track(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
-  - uid: excel.Excel.Range.unmerge
+  - uid: 'excel!Excel.Range#unmerge:member(1)'
     summary: |-
       Unmerge the range cells into separate cells.
 
@@ -2953,7 +2980,7 @@ items:
               }
           });
           ```
-  - uid: excel.Excel.Range.untrack
+  - uid: 'excel!Excel.Range#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -2968,7 +2995,7 @@ items:
       content: 'untrack(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -2993,7 +3020,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.Range.values
+  - uid: 'excel!Excel.Range#values:member'
     summary: >-
       Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
       Cells that contain an error will return the error string. When setting values to a range, the value argument can
@@ -3012,7 +3039,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Range.valueTypes
+  - uid: 'excel!Excel.Range#valueTypes:member'
     summary: |-
       Represents the type of data of each cell. Read-only.
 
@@ -3026,8 +3053,8 @@ items:
       content: 'readonly valueTypes: Excel.RangeValueType[][];'
       return:
         type:
-          - 'Excel.RangeValueType[][]'
-  - uid: excel.Excel.Range.worksheet
+          - 'excel!Excel.Range#valueTypes~0:complex'
+  - uid: 'excel!Excel.Range#worksheet:member'
     summary: |-
       The worksheet containing the current range. Read-only.
 
@@ -3041,4 +3068,241 @@ items:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.Range#autoFill~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.AutoFillType:enum'
+    name: Excel.AutoFillType
+  - uid: 'excel!Excel.Range#autoFill~1:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.ClearApplyTo:enum'
+    name: Excel.ClearApplyTo
+  - uid: 'excel!Excel.ConditionalFormatCollection:class'
+    name: Excel.ConditionalFormatCollection
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.Range#copyFrom~0:complex'
+    name: Range | RangeAreas | string
+    fullName: Excel.Range | Excel.RangeAreas | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!Excel.RangeAreas:class'
+        name: RangeAreas
+        fullName: Excel.RangeAreas
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.RangeCopyType:enum'
+    name: Excel.RangeCopyType
+  - uid: 'excel!Excel.Range#copyFrom~1:complex'
+    name: Range | RangeAreas | string
+    fullName: Excel.Range | Excel.RangeAreas | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!Excel.RangeAreas:class'
+        name: RangeAreas
+        fullName: Excel.RangeAreas
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.DataValidation:class'
+    name: Excel.DataValidation
+  - uid: 'excel!Excel.DeleteShiftDirection:enum'
+    name: Excel.DeleteShiftDirection
+  - uid: 'excel!Excel.Range:class'
+    name: Excel.Range
+  - uid: 'excel!Excel.SearchCriteria:interface'
+    name: Excel.SearchCriteria
+  - uid: 'excel!Excel.RangeFormat:class'
+    name: Excel.RangeFormat
+  - uid: 'excel!Excel.Range#getBoundingRect~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.Range#getCellProperties~0:complex'
+    name: 'OfficeExtension.ClientResult<CellProperties[][]>'
+    fullName: 'OfficeExtension.ClientResult<Excel.CellProperties[][]>'
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.CellProperties:interface'
+        name: CellProperties
+        fullName: Excel.CellProperties
+      - name: '[][]>'
+        fullName: '[][]>'
+  - uid: 'excel!Excel.CellPropertiesLoadOptions:interface'
+    name: CellPropertiesLoadOptions
+  - uid: 'excel!Excel.Range#getColumnProperties~0:complex'
+    name: 'OfficeExtension.ClientResult<ColumnProperties[]>'
+    fullName: 'OfficeExtension.ClientResult<Excel.ColumnProperties[]>'
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.ColumnProperties:interface'
+        name: ColumnProperties
+        fullName: Excel.ColumnProperties
+      - name: '[]>'
+        fullName: '[]>'
+  - uid: 'excel!Excel.ColumnPropertiesLoadOptions:interface'
+    name: ColumnPropertiesLoadOptions
+  - uid: 'excel!Excel.Range#getImage~0:complex'
+    name: OfficeExtension.ClientResult<string>
+    fullName: OfficeExtension.ClientResult<string>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <string>
+        fullName: <string>
+  - uid: 'excel!Excel.Range#getIntersection~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.Range#getIntersectionOrNullObject~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.Range#getRowProperties~0:complex'
+    name: 'OfficeExtension.ClientResult<RowProperties[]>'
+    fullName: 'OfficeExtension.ClientResult<Excel.RowProperties[]>'
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.RowProperties:interface'
+        name: RowProperties
+        fullName: Excel.RowProperties
+      - name: '[]>'
+        fullName: '[]>'
+  - uid: 'excel!Excel.RowPropertiesLoadOptions:interface'
+    name: RowPropertiesLoadOptions
+  - uid: 'excel!Excel.RangeAreas:class'
+    name: Excel.RangeAreas
+  - uid: 'excel!Excel.SpecialCellType:enum'
+    name: Excel.SpecialCellType
+  - uid: 'excel!Excel.SpecialCellValueType:enum'
+    name: Excel.SpecialCellValueType
+  - uid: 'excel!Excel.TableScopedCollection:class'
+    name: Excel.TableScopedCollection
+  - uid: 'excel!Excel.RangeView:class'
+    name: Excel.RangeView
+  - uid: 'excel!Excel.RangeHyperlink:interface'
+    name: Excel.RangeHyperlink
+  - uid: 'excel!Excel.InsertShiftDirection:enum'
+    name: Excel.InsertShiftDirection
+  - uid: 'excel!Excel.Range#linkedDataTypeState~0:complex'
+    name: 'Excel.LinkedDataTypeState[][]'
+    fullName: 'Excel.LinkedDataTypeState[][]'
+    spec.typeScript:
+      - uid: 'excel!Excel.LinkedDataTypeState:enum'
+        name: Excel.LinkedDataTypeState
+        fullName: Excel.LinkedDataTypeState
+      - name: '[][]'
+        fullName: '[][]'
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions:interface'
+    name: Excel.Interfaces.RangeLoadOptions
+  - uid: 'excel!Excel.RemoveDuplicatesResult:class'
+    name: Excel.RemoveDuplicatesResult
+  - uid: 'excel!Excel.Range#replaceAll~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.ReplaceCriteria:interface'
+    name: Excel.ReplaceCriteria
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData:interface'
+    name: Interfaces.RangeUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Range#setCellProperties~0:complex'
+    name: 'SettableCellProperties[][]'
+    fullName: 'Excel.SettableCellProperties[][]'
+    spec.typeScript:
+      - uid: 'excel!Excel.SettableCellProperties:interface'
+        name: SettableCellProperties
+        fullName: Excel.SettableCellProperties
+      - name: '[][]'
+        fullName: '[][]'
+  - uid: 'excel!Excel.Range#setColumnProperties~0:complex'
+    name: 'SettableColumnProperties[]'
+    fullName: 'Excel.SettableColumnProperties[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.SettableColumnProperties:interface'
+        name: SettableColumnProperties
+        fullName: Excel.SettableColumnProperties
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Range#setRowProperties~0:complex'
+    name: 'SettableRowProperties[]'
+    fullName: 'Excel.SettableRowProperties[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.SettableRowProperties:interface'
+        name: SettableRowProperties
+        fullName: Excel.SettableRowProperties
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.RangeSort:class'
+    name: Excel.RangeSort
+  - uid: 'excel!Excel.Interfaces.RangeData:interface'
+    name: Excel.Interfaces.RangeData
+  - uid: 'excel!Excel.Range#valueTypes~0:complex'
+    name: 'Excel.RangeValueType[][]'
+    fullName: 'Excel.RangeValueType[][]'
+    spec.typeScript:
+      - uid: 'excel!Excel.RangeValueType:enum'
+        name: Excel.RangeValueType
+        fullName: Excel.RangeValueType
+      - name: '[][]'
+        fullName: '[][]'
+  - uid: 'excel!Excel.Worksheet:class'
+    name: Excel.Worksheet

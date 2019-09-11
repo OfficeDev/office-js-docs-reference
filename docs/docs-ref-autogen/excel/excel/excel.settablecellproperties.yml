@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.SettableCellProperties
+  - uid: 'excel!Excel.SettableCellProperties:interface'
     summary: |-
       Represents the input parameter of setCellProperties.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.SettableCellProperties.format
-      - excel.Excel.SettableCellProperties.hyperlink
-      - excel.Excel.SettableCellProperties.style
-  - uid: excel.Excel.SettableCellProperties.format
+      - 'excel!Excel.SettableCellProperties#format:member'
+      - 'excel!Excel.SettableCellProperties#hyperlink:member'
+      - 'excel!Excel.SettableCellProperties#style:member'
+  - uid: 'excel!Excel.SettableCellProperties#format:member'
     summary: |-
       Represents the `format` property.
 
@@ -29,8 +29,8 @@ items:
       content: 'format?: Excel.CellPropertiesFormat;'
       return:
         type:
-          - excel.Excel.CellPropertiesFormat
-  - uid: excel.Excel.SettableCellProperties.hyperlink
+          - 'excel!Excel.CellPropertiesFormat:interface'
+  - uid: 'excel!Excel.SettableCellProperties#hyperlink:member'
     summary: |-
       Represents the `hyperlink` property.
 
@@ -44,8 +44,8 @@ items:
       content: 'hyperlink?: Excel.RangeHyperlink;'
       return:
         type:
-          - excel.Excel.RangeHyperlink
-  - uid: excel.Excel.SettableCellProperties.style
+          - 'excel!Excel.RangeHyperlink:interface'
+  - uid: 'excel!Excel.SettableCellProperties#style:member'
     summary: |-
       Represents the `style` property.
 
@@ -137,3 +137,8 @@ items:
               await context.sync();
           });
           ```
+references:
+  - uid: 'excel!Excel.CellPropertiesFormat:interface'
+    name: Excel.CellPropertiesFormat
+  - uid: 'excel!Excel.RangeHyperlink:interface'
+    name: Excel.RangeHyperlink

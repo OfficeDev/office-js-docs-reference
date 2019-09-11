@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions:interface'
     summary: >-
       A scoped collection of custom XML parts. A scoped collection is the result of some operation, e.g. filtering by
       namespace. A scoped collection cannot be scoped any further.
@@ -12,12 +12,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions.id
-      - excel.Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions.namespaceUri
-  - uid: excel.Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions#namespaceUri:member'
+  - uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions#id:member'
     summary: |-
       For EACH ITEM in the collection: The custom XML part's ID. Read-only.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions.namespaceUri
+  - uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions#namespaceUri:member'
     summary: |-
       For EACH ITEM in the collection: The custom XML part's namespace URI. Read-only.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.TableBorderLoadOptions
+  - uid: 'word!Word.Interfaces.TableBorderLoadOptions:interface'
     summary: |-
       Specifies the border style.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.TableBorderLoadOptions.$all
-      - word.Word.Interfaces.TableBorderLoadOptions.color
-      - word.Word.Interfaces.TableBorderLoadOptions.type
-      - word.Word.Interfaces.TableBorderLoadOptions.width
-  - uid: word.Word.Interfaces.TableBorderLoadOptions.$all
+      - 'word!Word.Interfaces.TableBorderLoadOptions#$all:member'
+      - 'word!Word.Interfaces.TableBorderLoadOptions#color:member'
+      - 'word!Word.Interfaces.TableBorderLoadOptions#type:member'
+      - 'word!Word.Interfaces.TableBorderLoadOptions#width:member'
+  - uid: 'word!Word.Interfaces.TableBorderLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableBorderLoadOptions.color
+  - uid: 'word!Word.Interfaces.TableBorderLoadOptions#color:member'
     summary: |-
       Gets or sets the table border color.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableBorderLoadOptions.type
+  - uid: 'word!Word.Interfaces.TableBorderLoadOptions#type:member'
     summary: |-
       Gets or sets the type of the table border.
 
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableBorderLoadOptions.width
+  - uid: 'word!Word.Interfaces.TableBorderLoadOptions#width:member'
     summary: >-
       Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed
       widths.

@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.SectionGroupCollectionData
+  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionData:interface'
     summary: An interface describing the data returned by calling "sectionGroupCollection.toJSON()".
     name: OneNote.Interfaces.SectionGroupCollectionData
     fullName: OneNote.Interfaces.SectionGroupCollectionData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.SectionGroupCollectionData.items
-  - uid: onenote.OneNote.Interfaces.SectionGroupCollectionData.items
+      - 'onenote!OneNote.Interfaces.SectionGroupCollectionData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionData#items:member'
     name: items
     fullName: items
     langs:
@@ -20,4 +20,14 @@ items:
       content: 'items?: OneNote.Interfaces.SectionGroupData[];'
       return:
         type:
-          - 'OneNote.Interfaces.SectionGroupData[]'
+          - 'onenote!OneNote.Interfaces.SectionGroupCollectionData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionData#items~0:complex'
+    name: 'OneNote.Interfaces.SectionGroupData[]'
+    fullName: 'OneNote.Interfaces.SectionGroupData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.SectionGroupData:interface'
+        name: OneNote.Interfaces.SectionGroupData
+        fullName: OneNote.Interfaces.SectionGroupData
+      - name: '[]'
+        fullName: '[]'

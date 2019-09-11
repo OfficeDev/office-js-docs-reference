@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChangedEventDetail
+  - uid: 'excel!Excel.ChangedEventDetail:interface'
     summary: |-
       Provide information about the detail of WorksheetChangedEvent/TableChangedEvent
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChangedEventDetail.valueAfter
-      - excel.Excel.ChangedEventDetail.valueBefore
-      - excel.Excel.ChangedEventDetail.valueTypeAfter
-      - excel.Excel.ChangedEventDetail.valueTypeBefore
-  - uid: excel.Excel.ChangedEventDetail.valueAfter
+      - 'excel!Excel.ChangedEventDetail#valueAfter:member'
+      - 'excel!Excel.ChangedEventDetail#valueBefore:member'
+      - 'excel!Excel.ChangedEventDetail#valueTypeAfter:member'
+      - 'excel!Excel.ChangedEventDetail#valueTypeBefore:member'
+  - uid: 'excel!Excel.ChangedEventDetail#valueAfter:member'
     summary: >-
       Represents the value after changed. The data returned could be of type string, number, or a boolean. Cells that
       contain an error will return the error string.
@@ -33,7 +33,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.ChangedEventDetail.valueBefore
+  - uid: 'excel!Excel.ChangedEventDetail#valueBefore:member'
     summary: >-
       Represents the value before changed. The data returned could be of type string, number, or a boolean. Cells that
       contain an error will return the error string.
@@ -50,7 +50,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.ChangedEventDetail.valueTypeAfter
+  - uid: 'excel!Excel.ChangedEventDetail#valueTypeAfter:member'
     summary: |-
       Represents the type of value after changed
 
@@ -66,10 +66,8 @@ items:
         "Error" | "RichValue";
       return:
         type:
-          - >-
-            Excel.RangeValueType | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" | "Error" |
-            "RichValue"
-  - uid: excel.Excel.ChangedEventDetail.valueTypeBefore
+          - 'excel!Excel.ChangedEventDetail#valueTypeAfter~0:complex'
+  - uid: 'excel!Excel.ChangedEventDetail#valueTypeBefore:member'
     summary: |-
       Represents the type of value before changed
 
@@ -85,6 +83,23 @@ items:
         "Error" | "RichValue";
       return:
         type:
-          - >-
-            Excel.RangeValueType | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" | "Error" |
-            "RichValue"
+          - 'excel!Excel.ChangedEventDetail#valueTypeBefore~0:complex'
+references:
+  - uid: 'excel!Excel.ChangedEventDetail#valueTypeAfter~0:complex'
+    name: Excel.RangeValueType | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"
+    fullName: Excel.RangeValueType | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"
+    spec.typeScript:
+      - uid: 'excel!Excel.RangeValueType:enum'
+        name: Excel.RangeValueType
+        fullName: Excel.RangeValueType
+      - name: ' | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"'
+        fullName: ' | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"'
+  - uid: 'excel!Excel.ChangedEventDetail#valueTypeBefore~0:complex'
+    name: Excel.RangeValueType | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"
+    fullName: Excel.RangeValueType | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"
+    spec.typeScript:
+      - uid: 'excel!Excel.RangeValueType:enum'
+        name: Excel.RangeValueType
+        fullName: Excel.RangeValueType
+      - name: ' | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"'
+        fullName: ' | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" | "Error" | "RichValue"'

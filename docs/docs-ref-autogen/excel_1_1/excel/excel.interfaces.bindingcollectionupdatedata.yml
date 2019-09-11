@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.BindingCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.BindingCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the BindingCollection object, for use in "bindingCollection.set(<!-- -->{ ...
       }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.BindingCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.BindingCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.BindingCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.BindingCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: Excel.Interfaces.BindingData[];'
       return:
         type:
-          - 'Excel.Interfaces.BindingData[]'
+          - 'excel!Excel.Interfaces.BindingCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.BindingCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.BindingData[]'
+    fullName: 'Excel.Interfaces.BindingData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.BindingData:interface'
+        name: Excel.Interfaces.BindingData
+        fullName: Excel.Interfaces.BindingData
+      - name: '[]'
+        fullName: '[]'

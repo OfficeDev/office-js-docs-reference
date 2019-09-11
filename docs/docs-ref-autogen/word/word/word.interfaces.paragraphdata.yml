@@ -1,35 +1,35 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.ParagraphData
+  - uid: 'word!Word.Interfaces.ParagraphData:interface'
     summary: An interface describing the data returned by calling "paragraph.toJSON()".
     name: Word.Interfaces.ParagraphData
     fullName: Word.Interfaces.ParagraphData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.ParagraphData.alignment
-      - word.Word.Interfaces.ParagraphData.firstLineIndent
-      - word.Word.Interfaces.ParagraphData.font
-      - word.Word.Interfaces.ParagraphData.inlinePictures
-      - word.Word.Interfaces.ParagraphData.isLastParagraph
-      - word.Word.Interfaces.ParagraphData.isListItem
-      - word.Word.Interfaces.ParagraphData.leftIndent
-      - word.Word.Interfaces.ParagraphData.lineSpacing
-      - word.Word.Interfaces.ParagraphData.lineUnitAfter
-      - word.Word.Interfaces.ParagraphData.lineUnitBefore
-      - word.Word.Interfaces.ParagraphData.listItem
-      - word.Word.Interfaces.ParagraphData.listItemOrNullObject
-      - word.Word.Interfaces.ParagraphData.outlineLevel
-      - word.Word.Interfaces.ParagraphData.rightIndent
-      - word.Word.Interfaces.ParagraphData.spaceAfter
-      - word.Word.Interfaces.ParagraphData.spaceBefore
-      - word.Word.Interfaces.ParagraphData.style
-      - word.Word.Interfaces.ParagraphData.styleBuiltIn
-      - word.Word.Interfaces.ParagraphData.tableNestingLevel
-      - word.Word.Interfaces.ParagraphData.text
-  - uid: word.Word.Interfaces.ParagraphData.alignment
+      - 'word!Word.Interfaces.ParagraphData#alignment:member'
+      - 'word!Word.Interfaces.ParagraphData#firstLineIndent:member'
+      - 'word!Word.Interfaces.ParagraphData#font:member'
+      - 'word!Word.Interfaces.ParagraphData#inlinePictures:member'
+      - 'word!Word.Interfaces.ParagraphData#isLastParagraph:member'
+      - 'word!Word.Interfaces.ParagraphData#isListItem:member'
+      - 'word!Word.Interfaces.ParagraphData#leftIndent:member'
+      - 'word!Word.Interfaces.ParagraphData#lineSpacing:member'
+      - 'word!Word.Interfaces.ParagraphData#lineUnitAfter:member'
+      - 'word!Word.Interfaces.ParagraphData#lineUnitBefore:member'
+      - 'word!Word.Interfaces.ParagraphData#listItem:member'
+      - 'word!Word.Interfaces.ParagraphData#listItemOrNullObject:member'
+      - 'word!Word.Interfaces.ParagraphData#outlineLevel:member'
+      - 'word!Word.Interfaces.ParagraphData#rightIndent:member'
+      - 'word!Word.Interfaces.ParagraphData#spaceAfter:member'
+      - 'word!Word.Interfaces.ParagraphData#spaceBefore:member'
+      - 'word!Word.Interfaces.ParagraphData#style:member'
+      - 'word!Word.Interfaces.ParagraphData#styleBuiltIn:member'
+      - 'word!Word.Interfaces.ParagraphData#tableNestingLevel:member'
+      - 'word!Word.Interfaces.ParagraphData#text:member'
+  - uid: 'word!Word.Interfaces.ParagraphData#alignment:member'
     summary: |-
       Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
 
@@ -43,8 +43,8 @@ items:
       content: 'alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
       return:
         type:
-          - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
-  - uid: word.Word.Interfaces.ParagraphData.firstLineIndent
+          - 'word!Word.Interfaces.ParagraphData#alignment~0:complex'
+  - uid: 'word!Word.Interfaces.ParagraphData#firstLineIndent:member'
     summary: >-
       Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line
       indent, and use a negative value to set a hanging indent.
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.font
+  - uid: 'word!Word.Interfaces.ParagraphData#font:member'
     summary: >-
       Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
       Read-only.
@@ -77,8 +77,8 @@ items:
       content: 'font?: Word.Interfaces.FontData;'
       return:
         type:
-          - word.Word.Interfaces.FontData
-  - uid: word.Word.Interfaces.ParagraphData.inlinePictures
+          - 'word!Word.Interfaces.FontData:interface'
+  - uid: 'word!Word.Interfaces.ParagraphData#inlinePictures:member'
     summary: >-
       Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
       Read-only.
@@ -94,8 +94,8 @@ items:
       content: 'inlinePictures?: Word.Interfaces.InlinePictureData[];'
       return:
         type:
-          - 'Word.Interfaces.InlinePictureData[]'
-  - uid: word.Word.Interfaces.ParagraphData.isLastParagraph
+          - 'word!Word.Interfaces.ParagraphData#inlinePictures~0:complex'
+  - uid: 'word!Word.Interfaces.ParagraphData#isLastParagraph:member'
     summary: |-
       Indicates the paragraph is the last one inside its parent body. Read-only.
 
@@ -110,7 +110,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphData.isListItem
+  - uid: 'word!Word.Interfaces.ParagraphData#isListItem:member'
     summary: |-
       Checks whether the paragraph is a list item. Read-only.
 
@@ -125,7 +125,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphData.leftIndent
+  - uid: 'word!Word.Interfaces.ParagraphData#leftIndent:member'
     summary: |-
       Gets or sets the left indent value, in points, for the paragraph.
 
@@ -140,7 +140,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.lineSpacing
+  - uid: 'word!Word.Interfaces.ParagraphData#lineSpacing:member'
     summary: >-
       Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by
       12.
@@ -157,7 +157,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.lineUnitAfter
+  - uid: 'word!Word.Interfaces.ParagraphData#lineUnitAfter:member'
     summary: |-
       Gets or sets the amount of spacing, in grid lines, after the paragraph.
 
@@ -172,7 +172,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.lineUnitBefore
+  - uid: 'word!Word.Interfaces.ParagraphData#lineUnitBefore:member'
     summary: |-
       Gets or sets the amount of spacing, in grid lines, before the paragraph.
 
@@ -187,7 +187,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.listItem
+  - uid: 'word!Word.Interfaces.ParagraphData#listItem:member'
     summary: |-
       Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. Read-only.
 
@@ -201,8 +201,8 @@ items:
       content: 'listItem?: Word.Interfaces.ListItemData;'
       return:
         type:
-          - word.Word.Interfaces.ListItemData
-  - uid: word.Word.Interfaces.ParagraphData.listItemOrNullObject
+          - 'word!Word.Interfaces.ListItemData:interface'
+  - uid: 'word!Word.Interfaces.ParagraphData#listItemOrNullObject:member'
     summary: |-
       Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. Read-only.
 
@@ -216,8 +216,8 @@ items:
       content: 'listItemOrNullObject?: Word.Interfaces.ListItemData;'
       return:
         type:
-          - word.Word.Interfaces.ListItemData
-  - uid: word.Word.Interfaces.ParagraphData.outlineLevel
+          - 'word!Word.Interfaces.ListItemData:interface'
+  - uid: 'word!Word.Interfaces.ParagraphData#outlineLevel:member'
     summary: |-
       Gets or sets the outline level for the paragraph.
 
@@ -232,7 +232,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.rightIndent
+  - uid: 'word!Word.Interfaces.ParagraphData#rightIndent:member'
     summary: |-
       Gets or sets the right indent value, in points, for the paragraph.
 
@@ -247,7 +247,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.spaceAfter
+  - uid: 'word!Word.Interfaces.ParagraphData#spaceAfter:member'
     summary: |-
       Gets or sets the spacing, in points, after the paragraph.
 
@@ -262,7 +262,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.spaceBefore
+  - uid: 'word!Word.Interfaces.ParagraphData#spaceBefore:member'
     summary: |-
       Gets or sets the spacing, in points, before the paragraph.
 
@@ -277,7 +277,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.style
+  - uid: 'word!Word.Interfaces.ParagraphData#style:member'
     summary: >-
       Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To
       use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -294,7 +294,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.ParagraphData.styleBuiltIn
+  - uid: 'word!Word.Interfaces.ParagraphData#styleBuiltIn:member'
     summary: >-
       Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable
       between locales. To use custom styles or localized style names, see the "style" property.
@@ -341,41 +341,8 @@ items:
         "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
       return:
         type:
-          - >-
-            Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" |
-            "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" |
-            "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" |
-            "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" |
-            "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" |
-            "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" |
-            "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" |
-            "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" |
-            "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" |
-            "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" |
-            "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" |
-            "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" |
-            "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" |
-            "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" |
-            "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" |
-            "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" |
-            "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" |
-            "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" |
-            "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" |
-            "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" |
-            "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" |
-            "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" |
-            "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" |
-            "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" |
-            "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" |
-            "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" |
-            "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" |
-            "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" |
-            "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" |
-            "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" |
-            "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" |
-            "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" |
-            "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"
-  - uid: word.Word.Interfaces.ParagraphData.tableNestingLevel
+          - 'word!Word.Interfaces.ParagraphData#styleBuiltIn~0:complex'
+  - uid: 'word!Word.Interfaces.ParagraphData#tableNestingLevel:member'
     summary: |-
       Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
 
@@ -390,7 +357,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.text
+  - uid: 'word!Word.Interfaces.ParagraphData#text:member'
     summary: |-
       Gets the text of the paragraph. Read-only.
 
@@ -405,3 +372,95 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'word!Word.Interfaces.ParagraphData#alignment~0:complex'
+    name: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+    fullName: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+    spec.typeScript:
+      - uid: 'word!Word.Alignment:enum'
+        name: Word.Alignment
+        fullName: Word.Alignment
+      - name: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+        fullName: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+  - uid: 'word!Word.Interfaces.FontData:interface'
+    name: Word.Interfaces.FontData
+  - uid: 'word!Word.Interfaces.ParagraphData#inlinePictures~0:complex'
+    name: 'Word.Interfaces.InlinePictureData[]'
+    fullName: 'Word.Interfaces.InlinePictureData[]'
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.InlinePictureData:interface'
+        name: Word.Interfaces.InlinePictureData
+        fullName: Word.Interfaces.InlinePictureData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'word!Word.Interfaces.ListItemData:interface'
+    name: Word.Interfaces.ListItemData
+  - uid: 'word!Word.Interfaces.ParagraphData#styleBuiltIn~0:complex'
+    name: >-
+      Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" |
+      "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" |
+      "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" |
+      "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" |
+      "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" |
+      "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" |
+      "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" |
+      "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" |
+      "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" |
+      "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" |
+      "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" |
+      "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" |
+      "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" |
+      "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" |
+      "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" |
+      "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" |
+      "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2"
+      | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" |
+      "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" |
+      "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" |
+      "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" |
+      "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" |
+      "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" |
+      "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" |
+      "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" |
+      "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" |
+      "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3"
+      | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" |
+      "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3"
+      | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"
+    fullName: >-
+      Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" |
+      "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" |
+      "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" |
+      "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" |
+      "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" |
+      "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" |
+      "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" |
+      "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" |
+      "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" |
+      "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" |
+      "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" |
+      "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" |
+      "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" |
+      "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" |
+      "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" |
+      "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" |
+      "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2"
+      | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" |
+      "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" |
+      "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" |
+      "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" |
+      "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" |
+      "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" |
+      "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" |
+      "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" |
+      "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" |
+      "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3"
+      | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" |
+      "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3"
+      | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"
+    spec.typeScript:
+      - uid: 'word!Word.Style:enum'
+        name: Word.Style
+        fullName: Word.Style
+      - name: ' | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"'
+        fullName: ' | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"'

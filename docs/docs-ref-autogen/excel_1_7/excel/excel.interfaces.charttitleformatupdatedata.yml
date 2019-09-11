@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartTitleFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartTitleFormatUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartTitleFormat object, for use in "chartTitleFormat.set(<!-- -->{ ...
       }<!-- -->)".
@@ -9,11 +9,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartTitleFormatUpdateData.border
-      - excel.Excel.Interfaces.ChartTitleFormatUpdateData.font
-  - uid: excel.Excel.Interfaces.ChartTitleFormatUpdateData.border
+      - 'excel!Excel.Interfaces.ChartTitleFormatUpdateData#border:member'
+      - 'excel!Excel.Interfaces.ChartTitleFormatUpdateData#font:member'
+  - uid: 'excel!Excel.Interfaces.ChartTitleFormatUpdateData#border:member'
     summary: |-
       Represents the border format of chart title, which includes color, linestyle, and weight.
 
@@ -27,8 +27,8 @@ items:
       content: 'border?: Excel.Interfaces.ChartBorderUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartBorderUpdateData
-  - uid: excel.Excel.Interfaces.ChartTitleFormatUpdateData.font
+          - 'excel!Excel.Interfaces.ChartBorderUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartTitleFormatUpdateData#font:member'
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for an object.
 
@@ -42,4 +42,9 @@ items:
       content: 'font?: Excel.Interfaces.ChartFontUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartFontUpdateData
+          - 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartBorderUpdateData:interface'
+    name: Excel.Interfaces.ChartBorderUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
+    name: Excel.Interfaces.ChartFontUpdateData

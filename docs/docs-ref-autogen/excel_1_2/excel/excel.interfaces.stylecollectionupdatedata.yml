@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.StyleCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.StyleCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the StyleCollection object, for use in "styleCollection.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.StyleCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.StyleCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.StyleCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.StyleCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: Excel.Interfaces.StyleData[];'
       return:
         type:
-          - 'Excel.Interfaces.StyleData[]'
+          - 'excel!Excel.Interfaces.StyleCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.StyleCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.StyleData[]'
+    fullName: 'Excel.Interfaces.StyleData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.StyleData:interface'
+        name: Excel.Interfaces.StyleData
+        fullName: Excel.Interfaces.StyleData
+      - name: '[]'
+        fullName: '[]'

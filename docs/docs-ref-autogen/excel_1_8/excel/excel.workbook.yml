@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Workbook
+  - uid: 'excel!Excel.Workbook:class'
     summary: >-
       Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
       To learn more about the workbook object model, read [Work with workbooks using the Excel JavaScript
@@ -14,35 +14,35 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.Workbook.application
-      - excel.Excel.Workbook.bindings
-      - excel.Excel.Workbook.context
-      - excel.Excel.Workbook.customXmlParts
-      - excel.Excel.Workbook.dataConnections
-      - excel.Excel.Workbook.functions
-      - excel.Excel.Workbook.getActiveCell
-      - excel.Excel.Workbook.getSelectedRange
-      - excel.Excel.Workbook.load
-      - excel.Excel.Workbook.load_1
-      - excel.Excel.Workbook.load_2
-      - excel.Excel.Workbook.name
-      - excel.Excel.Workbook.names
-      - excel.Excel.Workbook.onSelectionChanged
-      - excel.Excel.Workbook.pivotTables
-      - excel.Excel.Workbook.properties
-      - excel.Excel.Workbook.protection
-      - excel.Excel.Workbook.readOnly
-      - excel.Excel.Workbook.set
-      - excel.Excel.Workbook.set_1
-      - excel.Excel.Workbook.settings
-      - excel.Excel.Workbook.styles
-      - excel.Excel.Workbook.tables
-      - excel.Excel.Workbook.toJSON
-      - excel.Excel.Workbook.worksheets
-  - uid: excel.Excel.Workbook.application
+      - 'excel!Excel.Workbook#application:member'
+      - 'excel!Excel.Workbook#bindings:member'
+      - 'excel!Excel.Workbook#context:member'
+      - 'excel!Excel.Workbook#customXmlParts:member'
+      - 'excel!Excel.Workbook#dataConnections:member'
+      - 'excel!Excel.Workbook#functions:member'
+      - 'excel!Excel.Workbook#getActiveCell:member(1)'
+      - 'excel!Excel.Workbook#getSelectedRange:member(1)'
+      - 'excel!Excel.Workbook#load:member(1)'
+      - 'excel!Excel.Workbook#load:member(2)'
+      - 'excel!Excel.Workbook#load:member(3)'
+      - 'excel!Excel.Workbook#name:member'
+      - 'excel!Excel.Workbook#names:member'
+      - 'excel!Excel.Workbook#onSelectionChanged:member'
+      - 'excel!Excel.Workbook#pivotTables:member'
+      - 'excel!Excel.Workbook#properties:member'
+      - 'excel!Excel.Workbook#protection:member'
+      - 'excel!Excel.Workbook#readOnly:member'
+      - 'excel!Excel.Workbook#set:member(1)'
+      - 'excel!Excel.Workbook#set:member(2)'
+      - 'excel!Excel.Workbook#settings:member'
+      - 'excel!Excel.Workbook#styles:member'
+      - 'excel!Excel.Workbook#tables:member'
+      - 'excel!Excel.Workbook#toJSON:member(1)'
+      - 'excel!Excel.Workbook#worksheets:member'
+  - uid: 'excel!Excel.Workbook#application:member'
     summary: |-
       Represents the Excel application instance that contains this workbook. Read-only.
 
@@ -56,8 +56,8 @@ items:
       content: 'readonly application: Excel.Application;'
       return:
         type:
-          - excel.Excel.Application
-  - uid: excel.Excel.Workbook.bindings
+          - 'excel!Excel.Application:class'
+  - uid: 'excel!Excel.Workbook#bindings:member'
     summary: |-
       Represents a collection of bindings that are part of the workbook. Read-only.
 
@@ -71,8 +71,8 @@ items:
       content: 'readonly bindings: Excel.BindingCollection;'
       return:
         type:
-          - excel.Excel.BindingCollection
-  - uid: excel.Excel.Workbook.context
+          - 'excel!Excel.BindingCollection:class'
+  - uid: 'excel!Excel.Workbook#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -85,8 +85,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.Workbook.customXmlParts
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Workbook#customXmlParts:member'
     summary: |-
       Represents the collection of custom XML parts contained by this workbook. Read-only.
 
@@ -100,8 +100,8 @@ items:
       content: 'readonly customXmlParts: Excel.CustomXmlPartCollection;'
       return:
         type:
-          - excel.Excel.CustomXmlPartCollection
-  - uid: excel.Excel.Workbook.dataConnections
+          - 'excel!Excel.CustomXmlPartCollection:class'
+  - uid: 'excel!Excel.Workbook#dataConnections:member'
     summary: |-
       Represents all data connections in the workbook. Read-only.
 
@@ -115,8 +115,8 @@ items:
       content: 'readonly dataConnections: Excel.DataConnectionCollection;'
       return:
         type:
-          - excel.Excel.DataConnectionCollection
-  - uid: excel.Excel.Workbook.functions
+          - 'excel!Excel.DataConnectionCollection:class'
+  - uid: 'excel!Excel.Workbook#functions:member'
     summary: |-
       Represents a collection of worksheet functions that can be used for computation. Read-only.
 
@@ -130,8 +130,8 @@ items:
       content: 'readonly functions: Excel.Functions;'
       return:
         type:
-          - excel.Excel.Functions
-  - uid: excel.Excel.Workbook.getActiveCell
+          - 'excel!Excel.Functions:class'
+  - uid: 'excel!Excel.Workbook#getActiveCell:member(1)'
     summary: |-
       Gets the currently active cell from the workbook.
 
@@ -145,7 +145,7 @@ items:
       content: 'getActiveCell(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -163,7 +163,7 @@ items:
               console.log("The active cell is " + activeCell.address);
           });
           ```
-  - uid: excel.Excel.Workbook.getSelectedRange
+  - uid: 'excel!Excel.Workbook#getSelectedRange:member(1)'
     summary: >-
       Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method
       will throw an error.
@@ -179,7 +179,7 @@ items:
       content: 'getSelectedRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -199,7 +199,7 @@ items:
               }
           });
           ```
-  - uid: excel.Excel.Workbook.load
+  - uid: 'excel!Excel.Workbook#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -230,14 +230,14 @@ items:
       content: 'load(option?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;'
       return:
         type:
-          - excel.Excel.Workbook
+          - 'excel!Excel.Workbook:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.WorkbookLoadOptions
-  - uid: excel.Excel.Workbook.load_1
+            - 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
+  - uid: 'excel!Excel.Workbook#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -250,14 +250,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Workbook;'
       return:
         type:
-          - excel.Excel.Workbook
+          - 'excel!Excel.Workbook:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Workbook.load_2
+  - uid: 'excel!Excel.Workbook#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -270,7 +270,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Workbook;'
       return:
         type:
-          - excel.Excel.Workbook
+          - 'excel!Excel.Workbook:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -279,7 +279,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.Workbook.name
+  - uid: 'excel!Excel.Workbook#name:member'
     summary: |-
       Gets the workbook name. Read-only.
 
@@ -294,7 +294,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Workbook.names
+  - uid: 'excel!Excel.Workbook#names:member'
     summary: |-
       Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
 
@@ -308,8 +308,8 @@ items:
       content: 'readonly names: Excel.NamedItemCollection;'
       return:
         type:
-          - excel.Excel.NamedItemCollection
-  - uid: excel.Excel.Workbook.onSelectionChanged
+          - 'excel!Excel.NamedItemCollection:class'
+  - uid: 'excel!Excel.Workbook#onSelectionChanged:member'
     summary: |-
       Occurs when the selection in the document is changed.
 
@@ -323,8 +323,8 @@ items:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;'
       return:
         type:
-          - OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>
-  - uid: excel.Excel.Workbook.pivotTables
+          - 'excel!Excel.Workbook#onSelectionChanged~0:complex'
+  - uid: 'excel!Excel.Workbook#pivotTables:member'
     summary: |-
       Represents a collection of PivotTables associated with the workbook. Read-only.
 
@@ -338,8 +338,8 @@ items:
       content: 'readonly pivotTables: Excel.PivotTableCollection;'
       return:
         type:
-          - excel.Excel.PivotTableCollection
-  - uid: excel.Excel.Workbook.properties
+          - 'excel!Excel.PivotTableCollection:class'
+  - uid: 'excel!Excel.Workbook#properties:member'
     summary: |-
       Gets the workbook properties. Read-only.
 
@@ -353,7 +353,7 @@ items:
       content: 'readonly properties: Excel.DocumentProperties;'
       return:
         type:
-          - excel.Excel.DocumentProperties
+          - 'excel!Excel.DocumentProperties:class'
         description: |-
 
 
@@ -385,7 +385,7 @@ items:
               console.log("Set the following document properties: title, subject, keywords, comments, category, manager, company.");
           });
           ```
-  - uid: excel.Excel.Workbook.protection
+  - uid: 'excel!Excel.Workbook#protection:member'
     summary: |-
       Returns workbook protection object for a workbook. Read-only.
 
@@ -399,8 +399,8 @@ items:
       content: 'readonly protection: Excel.WorkbookProtection;'
       return:
         type:
-          - excel.Excel.WorkbookProtection
-  - uid: excel.Excel.Workbook.readOnly
+          - 'excel!Excel.WorkbookProtection:class'
+  - uid: 'excel!Excel.Workbook#readOnly:member'
     summary: |-
       True if the workbook is open in Read-only mode. Read-only.
 
@@ -415,7 +415,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Workbook.set
+  - uid: 'excel!Excel.Workbook#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -440,12 +440,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.WorkbookUpdateData
+            - 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.Workbook.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.Workbook#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -462,8 +462,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Workbook
-  - uid: excel.Excel.Workbook.settings
+            - 'excel!Excel.Workbook:class'
+  - uid: 'excel!Excel.Workbook#settings:member'
     summary: |-
       Represents a collection of Settings associated with the workbook. Read-only.
 
@@ -477,8 +477,8 @@ items:
       content: 'readonly settings: Excel.SettingCollection;'
       return:
         type:
-          - excel.Excel.SettingCollection
-  - uid: excel.Excel.Workbook.styles
+          - 'excel!Excel.SettingCollection:class'
+  - uid: 'excel!Excel.Workbook#styles:member'
     summary: |-
       Represents a collection of styles associated with the workbook. Read-only.
 
@@ -492,8 +492,8 @@ items:
       content: 'readonly styles: Excel.StyleCollection;'
       return:
         type:
-          - excel.Excel.StyleCollection
-  - uid: excel.Excel.Workbook.tables
+          - 'excel!Excel.StyleCollection:class'
+  - uid: 'excel!Excel.Workbook#tables:member'
     summary: |-
       Represents a collection of tables associated with the workbook. Read-only.
 
@@ -507,8 +507,8 @@ items:
       content: 'readonly tables: Excel.TableCollection;'
       return:
         type:
-          - excel.Excel.TableCollection
-  - uid: excel.Excel.Workbook.toJSON
+          - 'excel!Excel.TableCollection:class'
+  - uid: 'excel!Excel.Workbook#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -524,9 +524,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorkbookData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorkbookData
+          - 'excel!Excel.Interfaces.WorkbookData:interface'
         description: ''
-  - uid: excel.Excel.Workbook.worksheets
+  - uid: 'excel!Excel.Workbook#worksheets:member'
     summary: |-
       Represents a collection of worksheets associated with the workbook. Read-only.
 
@@ -540,4 +540,61 @@ items:
       content: 'readonly worksheets: Excel.WorksheetCollection;'
       return:
         type:
-          - excel.Excel.WorksheetCollection
+          - 'excel!Excel.WorksheetCollection:class'
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.Application:class'
+    name: Excel.Application
+  - uid: 'excel!Excel.BindingCollection:class'
+    name: Excel.BindingCollection
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.CustomXmlPartCollection:class'
+    name: Excel.CustomXmlPartCollection
+  - uid: 'excel!Excel.DataConnectionCollection:class'
+    name: Excel.DataConnectionCollection
+  - uid: 'excel!Excel.Functions:class'
+    name: Excel.Functions
+  - uid: 'excel!Excel.Range:class'
+    name: Excel.Range
+  - uid: 'excel!Excel.Workbook:class'
+    name: Excel.Workbook
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
+    name: Excel.Interfaces.WorkbookLoadOptions
+  - uid: 'excel!Excel.NamedItemCollection:class'
+    name: Excel.NamedItemCollection
+  - uid: 'excel!Excel.Workbook#onSelectionChanged~0:complex'
+    name: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>
+    fullName: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.EventHandlers:class'
+        name: OfficeExtension.EventHandlers
+        fullName: OfficeExtension.EventHandlers
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.SelectionChangedEventArgs:interface'
+        name: Excel.SelectionChangedEventArgs
+        fullName: Excel.SelectionChangedEventArgs
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.PivotTableCollection:class'
+    name: Excel.PivotTableCollection
+  - uid: 'excel!Excel.DocumentProperties:class'
+    name: Excel.DocumentProperties
+  - uid: 'excel!Excel.WorkbookProtection:class'
+    name: Excel.WorkbookProtection
+  - uid: 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
+    name: Interfaces.WorkbookUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.SettingCollection:class'
+    name: Excel.SettingCollection
+  - uid: 'excel!Excel.StyleCollection:class'
+    name: Excel.StyleCollection
+  - uid: 'excel!Excel.TableCollection:class'
+    name: Excel.TableCollection
+  - uid: 'excel!Excel.Interfaces.WorkbookData:interface'
+    name: Excel.Interfaces.WorkbookData
+  - uid: 'excel!Excel.WorksheetCollection:class'
+    name: Excel.WorksheetCollection

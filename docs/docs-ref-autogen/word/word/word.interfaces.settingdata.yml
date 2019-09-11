@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.SettingData
+  - uid: 'word!Word.Interfaces.SettingData:interface'
     summary: An interface describing the data returned by calling "setting.toJSON()".
     name: Word.Interfaces.SettingData
     fullName: Word.Interfaces.SettingData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.SettingData.key
-      - word.Word.Interfaces.SettingData.value
-  - uid: word.Word.Interfaces.SettingData.key
+      - 'word!Word.Interfaces.SettingData#key:member'
+      - 'word!Word.Interfaces.SettingData#value:member'
+  - uid: 'word!Word.Interfaces.SettingData#key:member'
     summary: >-
       Gets the key of the setting. Read only.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.SettingData.value
+  - uid: 'word!Word.Interfaces.SettingData#value:member'
     summary: >-
       Gets or sets the value of the setting.
 

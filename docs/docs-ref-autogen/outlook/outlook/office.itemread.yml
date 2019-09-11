@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.ItemRead
+  - uid: 'outlook!Office.ItemRead:interface'
     summary: >-
-      The read mode of [Office.context.mailbox.item](xref:outlook.Office.Item)<!-- -->.
+      The read mode of [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
 
 
       **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
@@ -15,26 +15,53 @@ items:
       - typeScript
     type: interface
     extends:
-      - outlook.Office.Item
-    package: outlook
+      - 'outlook!Office.Item:interface'
+    package: outlook!
     children:
-      - outlook.Office.ItemRead.displayReplyAllForm
-      - outlook.Office.ItemRead.displayReplyForm
-      - outlook.Office.ItemRead.getEntities
-      - outlook.Office.ItemRead.getEntitiesByType
-      - outlook.Office.ItemRead.getFilteredEntitiesByName
-      - outlook.Office.ItemRead.getInitializationContextAsync
-      - outlook.Office.ItemRead.getInitializationContextAsync_1
-      - outlook.Office.ItemRead.getRegExMatches
-      - outlook.Office.ItemRead.getRegExMatchesByName
-      - outlook.Office.ItemRead.getSelectedEntities
-      - outlook.Office.ItemRead.getSelectedRegExMatches
-      - outlook.Office.ItemRead.attachments
-      - outlook.Office.ItemRead.itemClass
-      - outlook.Office.ItemRead.itemId
-      - outlook.Office.ItemRead.normalizedSubject
-      - outlook.Office.ItemRead.subject
-  - uid: outlook.Office.ItemRead.displayReplyAllForm
+      - 'outlook!Office.ItemRead#attachments:member'
+      - 'outlook!Office.ItemRead#displayReplyAllForm:member(1)'
+      - 'outlook!Office.ItemRead#displayReplyForm:member(1)'
+      - 'outlook!Office.ItemRead#getEntities:member(1)'
+      - 'outlook!Office.ItemRead#getEntitiesByType:member(1)'
+      - 'outlook!Office.ItemRead#getFilteredEntitiesByName:member(1)'
+      - 'outlook!Office.ItemRead#getInitializationContextAsync:member(1)'
+      - 'outlook!Office.ItemRead#getInitializationContextAsync:member(2)'
+      - 'outlook!Office.ItemRead#getRegExMatches:member(1)'
+      - 'outlook!Office.ItemRead#getRegExMatchesByName:member(1)'
+      - 'outlook!Office.ItemRead#getSelectedEntities:member(1)'
+      - 'outlook!Office.ItemRead#getSelectedRegExMatches:member(1)'
+      - 'outlook!Office.ItemRead#itemClass:member'
+      - 'outlook!Office.ItemRead#itemId:member'
+      - 'outlook!Office.ItemRead#normalizedSubject:member'
+      - 'outlook!Office.ItemRead#subject:member'
+  - uid: 'outlook!Office.ItemRead#attachments:member'
+    summary: |-
+      Gets the item's attachments as an array.
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Read
+
+
+      **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
+      returned. For more information, see [Blocked attachments in
+      Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519)<!--
+      -->.
+    name: attachments
+    fullName: attachments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'attachments: AttachmentDetails[];'
+      return:
+        type:
+          - 'outlook!Office.ItemRead#attachments~0:complex'
+  - uid: 'outlook!Office.ItemRead#displayReplyAllForm:member(1)'
     summary: >-
       Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all
       attendees of the selected appointment.
@@ -79,17 +106,17 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR an [Office.ReplyFormData](xref:outlook.Office.ReplyFormData) object that contains body or
-            attachment data and a callback function.
+            to 32 KB OR an [Office.ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body
+            or attachment data and a callback function.
           type:
-            - string | ReplyFormData
+            - 'outlook!Office.ItemRead#displayReplyAllForm~0:complex'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.ItemRead.displayReplyForm
+            - 'outlook!Office.ItemRead#displayReplyAllForm~1:complex'
+  - uid: 'outlook!Office.ItemRead#displayReplyForm:member(1)'
     summary: >-
       Displays a reply form that includes only the sender of the selected message or the organizer of the selected
       appointment.
@@ -134,17 +161,17 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR an [Office.ReplyFormData](xref:outlook.Office.ReplyFormData) object that contains body or
-            attachment data and a callback function.
+            to 32 KB OR an [Office.ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body
+            or attachment data and a callback function.
           type:
-            - string | ReplyFormData
+            - 'outlook!Office.ItemRead#displayReplyForm~0:complex'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.ItemRead.getEntities
+            - 'outlook!Office.ItemRead#displayReplyForm~1:complex'
+  - uid: 'outlook!Office.ItemRead#getEntities:member(1)'
     summary: |-
       Gets the entities found in the selected item's body.
 
@@ -166,9 +193,9 @@ items:
       content: 'getEntities(): Entities;'
       return:
         type:
-          - outlook.Office.Entities
+          - 'outlook!Office.Entities:interface'
         description: ''
-  - uid: outlook.Office.ItemRead.getEntitiesByType
+  - uid: 'outlook!Office.ItemRead#getEntitiesByType:member(1)'
     summary: |-
       Gets an array of all the entities of the specified entity type found in the selected item's body.
 
@@ -204,7 +231,7 @@ items:
         PhoneNumber | TaskSuggestion)[];
       return:
         type:
-          - '(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[]'
+          - 'outlook!Office.ItemRead#getEntitiesByType~0:complex'
         description: >-
           If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns
           null. If no entities of the specified type are present in the item's body, the method returns an empty array.
@@ -214,8 +241,8 @@ items:
         - id: entityType
           description: One of the EntityType enumeration values.
           type:
-            - MailboxEnums.EntityType | string
-  - uid: outlook.Office.ItemRead.getFilteredEntitiesByName
+            - 'outlook!Office.ItemRead#getEntitiesByType~1:complex'
+  - uid: 'outlook!Office.ItemRead#getFilteredEntitiesByName:member(1)'
     summary: >-
       Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
 
@@ -245,7 +272,7 @@ items:
         TaskSuggestion)[];
       return:
         type:
-          - '(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[]'
+          - 'outlook!Office.ItemRead#getFilteredEntitiesByName~0:complex'
         description: >-
           If there is no ItemHasKnownEntity element in the manifest with a FilterName element value that matches the
           name parameter, the method returns null. If the name parameter does match an ItemHasKnownEntity element in the
@@ -255,7 +282,7 @@ items:
           description: The name of the ItemHasKnownEntity rule element that defines the filter to match.
           type:
             - string
-  - uid: outlook.Office.ItemRead.getInitializationContextAsync
+  - uid: 'outlook!Office.ItemRead#getInitializationContextAsync:member(1)'
     summary: >-
       Gets initialization data passed when the add-in is [activated by an actionable
       message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
@@ -292,7 +319,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -301,8 +328,8 @@ items:
             asyncResult object will contain an Error object with its code property set to 9020 and its name property set
             to GenericResponseError.
           type:
-            - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.ItemRead.getInitializationContextAsync_1
+            - 'outlook!Office.ItemRead#getInitializationContextAsync~0:complex'
+  - uid: 'outlook!Office.ItemRead#getInitializationContextAsync:member(2)'
     summary: >-
       Gets initialization data passed when the add-in is [activated by an actionable
       message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
@@ -340,8 +367,8 @@ items:
             asyncResult object will contain an Error object with its code property set to 9020 and its name property set
             to GenericResponseError.
           type:
-            - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.ItemRead.getRegExMatches
+            - 'outlook!Office.ItemRead#getInitializationContextAsync~1:complex'
+  - uid: 'outlook!Office.ItemRead#getRegExMatches:member(1)'
     summary: >-
       Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
 
@@ -382,7 +409,7 @@ items:
           An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
           The name of each array is equal to the corresponding value of the RegExName attribute of the matching
           ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.
-  - uid: outlook.Office.ItemRead.getRegExMatchesByName
+  - uid: 'outlook!Office.ItemRead#getRegExMatchesByName:member(1)'
     summary: >-
       Returns string values in the selected item that match the named regular expression defined in the manifest XML
       file.
@@ -423,7 +450,7 @@ items:
           description: The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
           type:
             - string
-  - uid: outlook.Office.ItemRead.getSelectedEntities
+  - uid: 'outlook!Office.ItemRead#getSelectedEntities:member(1)'
     summary: >-
       Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual
       add-ins.
@@ -448,9 +475,9 @@ items:
       content: 'getSelectedEntities(): Entities;'
       return:
         type:
-          - outlook.Office.Entities
+          - 'outlook!Office.Entities:interface'
         description: ''
-  - uid: outlook.Office.ItemRead.getSelectedRegExMatches
+  - uid: 'outlook!Office.ItemRead#getSelectedRegExMatches:member(1)'
     summary: >-
       Returns string values in a highlighted match that match the regular expressions defined in the manifest XML file.
       Highlighted matches apply to contextual add-ins.
@@ -492,34 +519,7 @@ items:
           An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
           The name of each array is equal to the corresponding value of the RegExName attribute of the matching
           ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.
-  - uid: outlook.Office.ItemRead.attachments
-    summary: |-
-      Gets the item's attachments as an array.
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Read
-
-
-      **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
-      returned. For more information, see [Blocked attachments in
-      Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519)<!--
-      -->.
-    name: attachments
-    fullName: attachments
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'attachments: AttachmentDetails[];'
-      return:
-        type:
-          - 'AttachmentDetails[]'
-  - uid: outlook.Office.ItemRead.itemClass
+  - uid: 'outlook!Office.ItemRead#itemClass:member'
     summary: >-
       Gets the Exchange Web Services item class of the selected item.
 
@@ -558,7 +558,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.ItemRead.itemId
+  - uid: 'outlook!Office.ItemRead#itemId:member'
     summary: >-
       Gets the Exchange Web Services item identifier for the current item.
 
@@ -592,7 +592,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.ItemRead.normalizedSubject
+  - uid: 'outlook!Office.ItemRead#normalizedSubject:member'
     summary: >-
       Gets the subject of an item, with all prefixes removed (including RE: and FWD:).
 
@@ -618,7 +618,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.ItemRead.subject
+  - uid: 'outlook!Office.ItemRead#subject:member'
     summary: >-
       Gets the description that appears in the subject field of an item.
 
@@ -647,3 +647,142 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'outlook!Office.Item:interface'
+    name: Item
+  - uid: 'outlook!Office.ItemRead#attachments~0:complex'
+    name: 'AttachmentDetails[]'
+    fullName: 'Office.AttachmentDetails[]'
+    spec.typeScript:
+      - uid: 'outlook!Office.AttachmentDetails:interface'
+        name: AttachmentDetails
+        fullName: Office.AttachmentDetails
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'outlook!Office.ItemRead#displayReplyAllForm~0:complex'
+    name: string | ReplyFormData
+    fullName: string | Office.ReplyFormData
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'outlook!Office.ReplyFormData:interface'
+        name: ReplyFormData
+        fullName: Office.ReplyFormData
+  - uid: 'outlook!Office.ItemRead#displayReplyAllForm~1:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.ItemRead#displayReplyForm~0:complex'
+    name: string | ReplyFormData
+    fullName: string | Office.ReplyFormData
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'outlook!Office.ReplyFormData:interface'
+        name: ReplyFormData
+        fullName: Office.ReplyFormData
+  - uid: 'outlook!Office.ItemRead#displayReplyForm~1:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.Entities:interface'
+    name: Entities
+  - uid: 'outlook!Office.ItemRead#getEntitiesByType~0:complex'
+    name: '(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[]'
+    fullName: '(string | Office.Contact | Office.MeetingSuggestion | Office.PhoneNumber | Office.TaskSuggestion)[]'
+    spec.typeScript:
+      - name: '(string | '
+        fullName: '(string | '
+      - uid: 'outlook!Office.Contact:interface'
+        name: Contact
+        fullName: Office.Contact
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'outlook!Office.MeetingSuggestion:interface'
+        name: MeetingSuggestion
+        fullName: Office.MeetingSuggestion
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'outlook!Office.PhoneNumber:interface'
+        name: PhoneNumber
+        fullName: Office.PhoneNumber
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'outlook!Office.TaskSuggestion:interface'
+        name: TaskSuggestion
+        fullName: Office.TaskSuggestion
+      - name: ')[]'
+        fullName: ')[]'
+  - uid: 'outlook!Office.ItemRead#getEntitiesByType~1:complex'
+    name: MailboxEnums.EntityType | string
+    fullName: Office.MailboxEnums.EntityType | string
+    spec.typeScript:
+      - uid: 'outlook!Office.MailboxEnums.EntityType:enum'
+        name: MailboxEnums.EntityType
+        fullName: Office.MailboxEnums.EntityType
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'outlook!Office.ItemRead#getFilteredEntitiesByName~0:complex'
+    name: '(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[]'
+    fullName: '(string | Office.Contact | Office.MeetingSuggestion | Office.PhoneNumber | Office.TaskSuggestion)[]'
+    spec.typeScript:
+      - name: '(string | '
+        fullName: '(string | '
+      - uid: 'outlook!Office.Contact:interface'
+        name: Contact
+        fullName: Office.Contact
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'outlook!Office.MeetingSuggestion:interface'
+        name: MeetingSuggestion
+        fullName: Office.MeetingSuggestion
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'outlook!Office.PhoneNumber:interface'
+        name: PhoneNumber
+        fullName: Office.PhoneNumber
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'outlook!Office.TaskSuggestion:interface'
+        name: TaskSuggestion
+        fullName: Office.TaskSuggestion
+      - name: ')[]'
+        fullName: ')[]'
+  - uid: 'outlook!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions
+  - uid: 'outlook!Office.ItemRead#getInitializationContextAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'outlook!Office.ItemRead#getInitializationContextAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void

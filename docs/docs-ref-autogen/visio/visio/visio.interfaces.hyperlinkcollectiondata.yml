@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.HyperlinkCollectionData
+  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionData:interface'
     summary: An interface describing the data returned by calling "hyperlinkCollection.toJSON()".
     name: Visio.Interfaces.HyperlinkCollectionData
     fullName: Visio.Interfaces.HyperlinkCollectionData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.HyperlinkCollectionData.items
-  - uid: visio.Visio.Interfaces.HyperlinkCollectionData.items
+      - 'visio!Visio.Interfaces.HyperlinkCollectionData#items:member'
+  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionData#items:member'
     name: items
     fullName: items
     langs:
@@ -20,4 +20,14 @@ items:
       content: 'items?: Visio.Interfaces.HyperlinkData[];'
       return:
         type:
-          - 'Visio.Interfaces.HyperlinkData[]'
+          - 'visio!Visio.Interfaces.HyperlinkCollectionData#items~0:complex'
+references:
+  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionData#items~0:complex'
+    name: 'Visio.Interfaces.HyperlinkData[]'
+    fullName: 'Visio.Interfaces.HyperlinkData[]'
+    spec.typeScript:
+      - uid: 'visio!Visio.Interfaces.HyperlinkData:interface'
+        name: Visio.Interfaces.HyperlinkData
+        fullName: Visio.Interfaces.HyperlinkData
+      - name: '[]'
+        fullName: '[]'

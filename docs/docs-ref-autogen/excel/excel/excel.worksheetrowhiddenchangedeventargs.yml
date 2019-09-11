@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.WorksheetRowHiddenChangedEventArgs
+  - uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs:interface'
     summary: >-
       Provides information about the worksheet row hidden change event.
 
@@ -13,14 +13,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.WorksheetRowHiddenChangedEventArgs.address
-      - excel.Excel.WorksheetRowHiddenChangedEventArgs.changeType
-      - excel.Excel.WorksheetRowHiddenChangedEventArgs.source
-      - excel.Excel.WorksheetRowHiddenChangedEventArgs.type
-      - excel.Excel.WorksheetRowHiddenChangedEventArgs.worksheetId
-  - uid: excel.Excel.WorksheetRowHiddenChangedEventArgs.address
+      - 'excel!Excel.WorksheetRowHiddenChangedEventArgs#address:member'
+      - 'excel!Excel.WorksheetRowHiddenChangedEventArgs#changeType:member'
+      - 'excel!Excel.WorksheetRowHiddenChangedEventArgs#source:member'
+      - 'excel!Excel.WorksheetRowHiddenChangedEventArgs#type:member'
+      - 'excel!Excel.WorksheetRowHiddenChangedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs#address:member'
     summary: >-
       Gets the range address that represents the changed area of a specific worksheet.
 
@@ -38,7 +38,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.WorksheetRowHiddenChangedEventArgs.changeType
+  - uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs#changeType:member'
     summary: >-
       Gets the change type that represents how the RowHiddenChanged event is triggered. See Excel.RowHiddenChangeType
       for details.
@@ -56,8 +56,8 @@ items:
       content: 'changeType: Excel.RowHiddenChangeType | "Unhidden" | "Hidden";'
       return:
         type:
-          - Excel.RowHiddenChangeType | "Unhidden" | "Hidden"
-  - uid: excel.Excel.WorksheetRowHiddenChangedEventArgs.source
+          - 'excel!Excel.WorksheetRowHiddenChangedEventArgs#changeType~0:complex'
+  - uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs#source:member'
     summary: >-
       Gets the source of the event. See Excel.EventSource for details.
 
@@ -74,8 +74,8 @@ items:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
         type:
-          - Excel.EventSource | "Local" | "Remote"
-  - uid: excel.Excel.WorksheetRowHiddenChangedEventArgs.type
+          - 'excel!Excel.WorksheetRowHiddenChangedEventArgs#source~0:complex'
+  - uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs#type:member'
     summary: >-
       Gets the type of the event. See Excel.EventType for details.
 
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - '"WorksheetRowHiddenChanged"'
-  - uid: excel.Excel.WorksheetRowHiddenChangedEventArgs.worksheetId
+  - uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs#worksheetId:member'
     summary: >-
       Gets the id of the worksheet in which the data changed.
 
@@ -111,3 +111,22 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs#changeType~0:complex'
+    name: Excel.RowHiddenChangeType | "Unhidden" | "Hidden"
+    fullName: Excel.RowHiddenChangeType | "Unhidden" | "Hidden"
+    spec.typeScript:
+      - uid: 'excel!Excel.RowHiddenChangeType:enum'
+        name: Excel.RowHiddenChangeType
+        fullName: Excel.RowHiddenChangeType
+      - name: ' | "Unhidden" | "Hidden"'
+        fullName: ' | "Unhidden" | "Hidden"'
+  - uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs#source~0:complex'
+    name: Excel.EventSource | "Local" | "Remote"
+    fullName: Excel.EventSource | "Local" | "Remote"
+    spec.typeScript:
+      - uid: 'excel!Excel.EventSource:enum'
+        name: Excel.EventSource
+        fullName: Excel.EventSource
+      - name: ' | "Local" | "Remote"'
+        fullName: ' | "Local" | "Remote"'

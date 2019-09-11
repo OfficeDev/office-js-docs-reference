@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CommentLoadOptions
+  - uid: 'excel!Excel.Interfaces.CommentLoadOptions:interface'
     summary: >-
       Represents a cell comment object in the workbook.
 
@@ -13,16 +13,16 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.CommentLoadOptions.$all
-      - excel.Excel.Interfaces.CommentLoadOptions.authorEmail
-      - excel.Excel.Interfaces.CommentLoadOptions.authorName
-      - excel.Excel.Interfaces.CommentLoadOptions.content
-      - excel.Excel.Interfaces.CommentLoadOptions.creationDate
-      - excel.Excel.Interfaces.CommentLoadOptions.id
-      - excel.Excel.Interfaces.CommentLoadOptions.resolved
-  - uid: excel.Excel.Interfaces.CommentLoadOptions.$all
+      - 'excel!Excel.Interfaces.CommentLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.CommentLoadOptions#authorEmail:member'
+      - 'excel!Excel.Interfaces.CommentLoadOptions#authorName:member'
+      - 'excel!Excel.Interfaces.CommentLoadOptions#content:member'
+      - 'excel!Excel.Interfaces.CommentLoadOptions#creationDate:member'
+      - 'excel!Excel.Interfaces.CommentLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.CommentLoadOptions#resolved:member'
+  - uid: 'excel!Excel.Interfaces.CommentLoadOptions#$all:member'
     isPreview: true
     name: $all
     fullName: $all
@@ -34,7 +34,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.CommentLoadOptions.authorEmail
+  - uid: 'excel!Excel.Interfaces.CommentLoadOptions#authorEmail:member'
     summary: >-
       Gets the email of the comment's author.
 
@@ -52,7 +52,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.CommentLoadOptions.authorName
+  - uid: 'excel!Excel.Interfaces.CommentLoadOptions#authorName:member'
     summary: >-
       Gets the name of the comment's author.
 
@@ -70,7 +70,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.CommentLoadOptions.content
+  - uid: 'excel!Excel.Interfaces.CommentLoadOptions#content:member'
     summary: >-
       Gets or sets the comment's content. The string is plain text.
 
@@ -88,7 +88,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.CommentLoadOptions.creationDate
+  - uid: 'excel!Excel.Interfaces.CommentLoadOptions#creationDate:member'
     summary: >-
       Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment
       does not have a creation date.
@@ -107,7 +107,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.CommentLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.CommentLoadOptions#id:member'
     summary: >-
       Represents the comment identifier. Read-only.
 
@@ -125,7 +125,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.CommentLoadOptions.resolved
+  - uid: 'excel!Excel.Interfaces.CommentLoadOptions#resolved:member'
     summary: >-
       Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
 

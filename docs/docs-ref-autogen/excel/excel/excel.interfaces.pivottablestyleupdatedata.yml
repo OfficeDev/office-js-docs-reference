@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotTableStyleUpdateData
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleUpdateData:interface'
     summary: >-
       An interface for updating data on the PivotTableStyle object, for use in "pivotTableStyle.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotTableStyleUpdateData.name
-  - uid: excel.Excel.Interfaces.PivotTableStyleUpdateData.name
+      - 'excel!Excel.Interfaces.PivotTableStyleUpdateData#name:member'
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleUpdateData#name:member'
     summary: >-
       Gets the name of the PivotTableStyle.
 

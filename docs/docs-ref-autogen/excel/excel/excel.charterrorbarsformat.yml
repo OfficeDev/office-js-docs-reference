@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartErrorBarsFormat
+  - uid: 'excel!Excel.ChartErrorBarsFormat:class'
     summary: |-
       Encapsulates the format properties for chart error bars.
 
@@ -11,18 +11,18 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.ChartErrorBarsFormat.context
-      - excel.Excel.ChartErrorBarsFormat.line
-      - excel.Excel.ChartErrorBarsFormat.load
-      - excel.Excel.ChartErrorBarsFormat.load_1
-      - excel.Excel.ChartErrorBarsFormat.load_2
-      - excel.Excel.ChartErrorBarsFormat.set
-      - excel.Excel.ChartErrorBarsFormat.set_1
-      - excel.Excel.ChartErrorBarsFormat.toJSON
-  - uid: excel.Excel.ChartErrorBarsFormat.context
+      - 'excel!Excel.ChartErrorBarsFormat#context:member'
+      - 'excel!Excel.ChartErrorBarsFormat#line:member'
+      - 'excel!Excel.ChartErrorBarsFormat#load:member(1)'
+      - 'excel!Excel.ChartErrorBarsFormat#load:member(2)'
+      - 'excel!Excel.ChartErrorBarsFormat#load:member(3)'
+      - 'excel!Excel.ChartErrorBarsFormat#set:member(1)'
+      - 'excel!Excel.ChartErrorBarsFormat#set:member(2)'
+      - 'excel!Excel.ChartErrorBarsFormat#toJSON:member(1)'
+  - uid: 'excel!Excel.ChartErrorBarsFormat#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -35,8 +35,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartErrorBarsFormat.line
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartErrorBarsFormat#line:member'
     summary: |-
       Represents the chart line formatting.
 
@@ -50,8 +50,8 @@ items:
       content: 'readonly line: Excel.ChartLineFormat;'
       return:
         type:
-          - excel.Excel.ChartLineFormat
-  - uid: excel.Excel.ChartErrorBarsFormat.load
+          - 'excel!Excel.ChartLineFormat:class'
+  - uid: 'excel!Excel.ChartErrorBarsFormat#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -82,14 +82,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartErrorBarsFormatLoadOptions): Excel.ChartErrorBarsFormat;'
       return:
         type:
-          - excel.Excel.ChartErrorBarsFormat
+          - 'excel!Excel.ChartErrorBarsFormat:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions
-  - uid: excel.Excel.ChartErrorBarsFormat.load_1
+            - 'excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions:interface'
+  - uid: 'excel!Excel.ChartErrorBarsFormat#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -102,14 +102,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartErrorBarsFormat;'
       return:
         type:
-          - excel.Excel.ChartErrorBarsFormat
+          - 'excel!Excel.ChartErrorBarsFormat:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartErrorBarsFormat.load_2
+  - uid: 'excel!Excel.ChartErrorBarsFormat#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -122,7 +122,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartErrorBarsFormat;'
       return:
         type:
-          - excel.Excel.ChartErrorBarsFormat
+          - 'excel!Excel.ChartErrorBarsFormat:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -131,7 +131,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartErrorBarsFormat.set
+  - uid: 'excel!Excel.ChartErrorBarsFormat#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -156,12 +156,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.ChartErrorBarsFormatUpdateData
+            - 'excel!Excel.Interfaces.ChartErrorBarsFormatUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartErrorBarsFormat.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.ChartErrorBarsFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -178,8 +178,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartErrorBarsFormat
-  - uid: excel.Excel.ChartErrorBarsFormat.toJSON
+            - 'excel!Excel.ChartErrorBarsFormat:class'
+  - uid: 'excel!Excel.ChartErrorBarsFormat#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -195,5 +195,22 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartErrorBarsFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartErrorBarsFormatData
+          - 'excel!Excel.Interfaces.ChartErrorBarsFormatData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ChartLineFormat:class'
+    name: Excel.ChartLineFormat
+  - uid: 'excel!Excel.ChartErrorBarsFormat:class'
+    name: Excel.ChartErrorBarsFormat
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartErrorBarsFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatUpdateData:interface'
+    name: Interfaces.ChartErrorBarsFormatUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatData:interface'
+    name: Excel.Interfaces.ChartErrorBarsFormatData

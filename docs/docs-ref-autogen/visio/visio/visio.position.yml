@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Position
+  - uid: 'visio!Visio.Position:interface'
     summary: |-
       Represents the Position of the object in the view.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Position.x
-      - visio.Visio.Position.y
-  - uid: visio.Visio.Position.x
+      - 'visio!Visio.Position#x:member'
+      - 'visio!Visio.Position#y:member'
+  - uid: 'visio!Visio.Position#x:member'
     summary: >-
       An integer that specifies the x-coordinate of the object, which is the signed value of the distance in pixels from
       the viewport's center to the left boundary of the page.
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - number
-  - uid: visio.Visio.Position.y
+  - uid: 'visio!Visio.Position#y:member'
     summary: >-
       An integer that specifies the y-coordinate of the object, which is the signed value of the distance in pixels from
       the viewport's center to the top boundary of the page.

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.NamedItemArrayValuesLoadOptions
+  - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions:interface'
     summary: |-
       Represents an object containing values and types of a named item.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.NamedItemArrayValuesLoadOptions.$all
-      - excel.Excel.Interfaces.NamedItemArrayValuesLoadOptions.types
-      - excel.Excel.Interfaces.NamedItemArrayValuesLoadOptions.values
-  - uid: excel.Excel.Interfaces.NamedItemArrayValuesLoadOptions.$all
+      - 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions#types:member'
+      - 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions#values:member'
+  - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.NamedItemArrayValuesLoadOptions.types
+  - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions#types:member'
     summary: |-
       Represents the types for each item in the named item array
 
@@ -41,7 +41,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.NamedItemArrayValuesLoadOptions.values
+  - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions#values:member'
     summary: |-
       Represents the values of each item in the named item array.
 

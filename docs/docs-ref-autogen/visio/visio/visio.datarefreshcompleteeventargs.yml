@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.DataRefreshCompleteEventArgs
+  - uid: 'visio!Visio.DataRefreshCompleteEventArgs:interface'
     summary: |-
       Provides information about the document that raised the DataRefreshComplete event.
 
@@ -10,7 +10,7 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     remarks: |-
 
 
@@ -35,9 +35,9 @@ items:
       });
       ```
     children:
-      - visio.Visio.DataRefreshCompleteEventArgs.document
-      - visio.Visio.DataRefreshCompleteEventArgs.success
-  - uid: visio.Visio.DataRefreshCompleteEventArgs.document
+      - 'visio!Visio.DataRefreshCompleteEventArgs#document:member'
+      - 'visio!Visio.DataRefreshCompleteEventArgs#success:member'
+  - uid: 'visio!Visio.DataRefreshCompleteEventArgs#document:member'
     summary: |-
       Gets the document object that raised the DataRefreshComplete event.
 
@@ -51,8 +51,8 @@ items:
       content: 'document: Visio.Document;'
       return:
         type:
-          - visio.Visio.Document
-  - uid: visio.Visio.DataRefreshCompleteEventArgs.success
+          - 'visio!Visio.Document:class'
+  - uid: 'visio!Visio.DataRefreshCompleteEventArgs#success:member'
     summary: |-
       Gets the success or failure of the DataRefreshComplete event.
 
@@ -67,3 +67,6 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'visio!Visio.Document:class'
+    name: Visio.Document

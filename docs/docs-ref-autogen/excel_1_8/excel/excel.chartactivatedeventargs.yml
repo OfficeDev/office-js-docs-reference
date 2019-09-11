@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartActivatedEventArgs
+  - uid: 'excel!Excel.ChartActivatedEventArgs:interface'
     summary: |-
       Provides information about the chart that raised the Activated event.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartActivatedEventArgs.chartId
-      - excel.Excel.ChartActivatedEventArgs.type
-      - excel.Excel.ChartActivatedEventArgs.worksheetId
-  - uid: excel.Excel.ChartActivatedEventArgs.chartId
+      - 'excel!Excel.ChartActivatedEventArgs#chartId:member'
+      - 'excel!Excel.ChartActivatedEventArgs#type:member'
+      - 'excel!Excel.ChartActivatedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.ChartActivatedEventArgs#chartId:member'
     summary: |-
       Gets the id of the chart that is activated.
 
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ChartActivatedEventArgs.type
+  - uid: 'excel!Excel.ChartActivatedEventArgs#type:member'
     summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - '"ChartActivated"'
-  - uid: excel.Excel.ChartActivatedEventArgs.worksheetId
+  - uid: 'excel!Excel.ChartActivatedEventArgs#worksheetId:member'
     summary: |-
       Gets the id of the worksheet in which the chart is activated.
 

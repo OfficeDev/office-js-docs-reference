@@ -1,23 +1,23 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.SpecialCellType
+  - uid: 'excel!Excel.SpecialCellType:enum'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.SpecialCellType
     fullName: Excel.SpecialCellType
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.SpecialCellType.blanks
-      - excel.Excel.SpecialCellType.conditionalFormats
-      - excel.Excel.SpecialCellType.constants
-      - excel.Excel.SpecialCellType.dataValidations
-      - excel.Excel.SpecialCellType.formulas
-      - excel.Excel.SpecialCellType.sameConditionalFormat
-      - excel.Excel.SpecialCellType.sameDataValidation
-      - excel.Excel.SpecialCellType.visible
-  - uid: excel.Excel.SpecialCellType.blanks
+      - 'excel!Excel.SpecialCellType.blanks:member'
+      - 'excel!Excel.SpecialCellType.conditionalFormats:member'
+      - 'excel!Excel.SpecialCellType.constants:member'
+      - 'excel!Excel.SpecialCellType.dataValidations:member'
+      - 'excel!Excel.SpecialCellType.formulas:member'
+      - 'excel!Excel.SpecialCellType.sameConditionalFormat:member'
+      - 'excel!Excel.SpecialCellType.sameDataValidation:member'
+      - 'excel!Excel.SpecialCellType.visible:member'
+  - uid: 'excel!Excel.SpecialCellType.blanks:member'
     summary: Cells with no content.
     name: blanks
     fullName: blanks
@@ -25,7 +25,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Blanks"'
-  - uid: excel.Excel.SpecialCellType.conditionalFormats
+  - uid: 'excel!Excel.SpecialCellType.conditionalFormats:member'
     summary: All cells with conditional formats
     name: conditionalFormats
     fullName: conditionalFormats
@@ -33,7 +33,7 @@ items:
       - typeScript
     type: field
     numericValue: '"ConditionalFormats"'
-  - uid: excel.Excel.SpecialCellType.constants
+  - uid: 'excel!Excel.SpecialCellType.constants:member'
     summary: Cells containing constants.
     name: constants
     fullName: constants
@@ -41,7 +41,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Constants"'
-  - uid: excel.Excel.SpecialCellType.dataValidations
+  - uid: 'excel!Excel.SpecialCellType.dataValidations:member'
     summary: Cells having validation criteria.
     name: dataValidations
     fullName: dataValidations
@@ -49,7 +49,7 @@ items:
       - typeScript
     type: field
     numericValue: '"DataValidations"'
-  - uid: excel.Excel.SpecialCellType.formulas
+  - uid: 'excel!Excel.SpecialCellType.formulas:member'
     summary: Cells containing formulas.
     name: formulas
     fullName: formulas
@@ -57,7 +57,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Formulas"'
-  - uid: excel.Excel.SpecialCellType.sameConditionalFormat
+  - uid: 'excel!Excel.SpecialCellType.sameConditionalFormat:member'
     summary: Cells having the same conditional format as the first cell in the range.
     name: sameConditionalFormat
     fullName: sameConditionalFormat
@@ -65,7 +65,7 @@ items:
       - typeScript
     type: field
     numericValue: '"SameConditionalFormat"'
-  - uid: excel.Excel.SpecialCellType.sameDataValidation
+  - uid: 'excel!Excel.SpecialCellType.sameDataValidation:member'
     summary: Cells having the same data validation criteria as the first cell in the range.
     name: sameDataValidation
     fullName: sameDataValidation
@@ -73,7 +73,7 @@ items:
       - typeScript
     type: field
     numericValue: '"SameDataValidation"'
-  - uid: excel.Excel.SpecialCellType.visible
+  - uid: 'excel!Excel.SpecialCellType.visible:member'
     summary: Cells that are visible.
     name: visible
     fullName: visible

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalTopBottomRule
+  - uid: 'excel!Excel.ConditionalTopBottomRule:interface'
     summary: |-
       Represents the rule of the top/bottom conditional format.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalTopBottomRule.rank
-      - excel.Excel.ConditionalTopBottomRule.type
-  - uid: excel.Excel.ConditionalTopBottomRule.rank
+      - 'excel!Excel.ConditionalTopBottomRule#rank:member'
+      - 'excel!Excel.ConditionalTopBottomRule#type:member'
+  - uid: 'excel!Excel.ConditionalTopBottomRule#rank:member'
     summary: |-
       The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent ranks.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ConditionalTopBottomRule.type
+  - uid: 'excel!Excel.ConditionalTopBottomRule#type:member'
     summary: |-
       Format values based on the top or bottom rank.
 
@@ -45,6 +45,14 @@ items:
         "BottomPercent";
       return:
         type:
-          - >-
-            Excel.ConditionalTopBottomCriterionType | "Invalid" | "TopItems" | "TopPercent" | "BottomItems" |
-            "BottomPercent"
+          - 'excel!Excel.ConditionalTopBottomRule#type~0:complex'
+references:
+  - uid: 'excel!Excel.ConditionalTopBottomRule#type~0:complex'
+    name: Excel.ConditionalTopBottomCriterionType | "Invalid" | "TopItems" | "TopPercent" | "BottomItems" | "BottomPercent"
+    fullName: Excel.ConditionalTopBottomCriterionType | "Invalid" | "TopItems" | "TopPercent" | "BottomItems" | "BottomPercent"
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalTopBottomCriterionType:enum'
+        name: Excel.ConditionalTopBottomCriterionType
+        fullName: Excel.ConditionalTopBottomCriterionType
+      - name: ' | "Invalid" | "TopItems" | "TopPercent" | "BottomItems" | "BottomPercent"'
+        fullName: ' | "Invalid" | "TopItems" | "TopPercent" | "BottomItems" | "BottomPercent"'

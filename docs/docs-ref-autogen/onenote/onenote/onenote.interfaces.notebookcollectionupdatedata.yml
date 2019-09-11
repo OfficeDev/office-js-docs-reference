@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.NotebookCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.NotebookCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the NotebookCollection object, for use in "notebookCollection.set(<!-- -->{ ...
       }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.NotebookCollectionUpdateData.items
-  - uid: onenote.OneNote.Interfaces.NotebookCollectionUpdateData.items
+      - 'onenote!OneNote.Interfaces.NotebookCollectionUpdateData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.NotebookCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: OneNote.Interfaces.NotebookData[];'
       return:
         type:
-          - 'OneNote.Interfaces.NotebookData[]'
+          - 'onenote!OneNote.Interfaces.NotebookCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.NotebookCollectionUpdateData#items~0:complex'
+    name: 'OneNote.Interfaces.NotebookData[]'
+    fullName: 'OneNote.Interfaces.NotebookData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.NotebookData:interface'
+        name: OneNote.Interfaces.NotebookData
+        fullName: OneNote.Interfaces.NotebookData
+      - name: '[]'
+        fullName: '[]'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.PageLoadCompleteEventArgs
+  - uid: 'visio!Visio.PageLoadCompleteEventArgs:interface'
     summary: |-
       Provides information about the page that raised the PageLoadComplete event.
 
@@ -10,7 +10,7 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     remarks: |-
 
 
@@ -35,9 +35,9 @@ items:
       });
       ```
     children:
-      - visio.Visio.PageLoadCompleteEventArgs.pageName
-      - visio.Visio.PageLoadCompleteEventArgs.success
-  - uid: visio.Visio.PageLoadCompleteEventArgs.pageName
+      - 'visio!Visio.PageLoadCompleteEventArgs#pageName:member'
+      - 'visio!Visio.PageLoadCompleteEventArgs#success:member'
+  - uid: 'visio!Visio.PageLoadCompleteEventArgs#pageName:member'
     summary: |-
       Gets the name of the page that raised the PageLoad event.
 
@@ -52,7 +52,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.PageLoadCompleteEventArgs.success
+  - uid: 'visio!Visio.PageLoadCompleteEventArgs#success:member'
     summary: |-
       Gets the success or failure of the PageLoadComplete event.
 

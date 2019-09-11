@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.TableCellUpdateData
+  - uid: 'onenote!OneNote.Interfaces.TableCellUpdateData:interface'
     summary: 'An interface for updating data on the TableCell object, for use in "tableCell.set(<!-- -->{ ... }<!-- -->)".'
     name: OneNote.Interfaces.TableCellUpdateData
     fullName: OneNote.Interfaces.TableCellUpdateData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.TableCellUpdateData.shadingColor
-  - uid: onenote.OneNote.Interfaces.TableCellUpdateData.shadingColor
+      - 'onenote!OneNote.Interfaces.TableCellUpdateData#shadingColor:member'
+  - uid: 'onenote!OneNote.Interfaces.TableCellUpdateData#shadingColor:member'
     summary: |-
       Gets and sets the shading color of the cell
 

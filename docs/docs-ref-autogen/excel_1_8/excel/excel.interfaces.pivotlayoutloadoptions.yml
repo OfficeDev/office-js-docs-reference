@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotLayoutLoadOptions
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions:interface'
     summary: |-
       Represents the visual layout of the PivotTable.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotLayoutLoadOptions.$all
-      - excel.Excel.Interfaces.PivotLayoutLoadOptions.layoutType
-      - excel.Excel.Interfaces.PivotLayoutLoadOptions.showColumnGrandTotals
-      - excel.Excel.Interfaces.PivotLayoutLoadOptions.showRowGrandTotals
-      - excel.Excel.Interfaces.PivotLayoutLoadOptions.subtotalLocation
-  - uid: excel.Excel.Interfaces.PivotLayoutLoadOptions.$all
+      - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#layoutType:member'
+      - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showColumnGrandTotals:member'
+      - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showRowGrandTotals:member'
+      - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#subtotalLocation:member'
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotLayoutLoadOptions.layoutType
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#layoutType:member'
     summary: >-
       This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this
       will be null.
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotLayoutLoadOptions.showColumnGrandTotals
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showColumnGrandTotals:member'
     summary: |-
       Specifies whether the PivotTable report shows grand totals for columns.
 
@@ -60,7 +60,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotLayoutLoadOptions.showRowGrandTotals
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showRowGrandTotals:member'
     summary: |-
       Specifies whether the PivotTable report shows grand totals for rows.
 
@@ -75,7 +75,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotLayoutLoadOptions.subtotalLocation
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#subtotalLocation:member'
     summary: >-
       This property indicates the SubtotalLocationType of all fields on the PivotTable. If fields have different states,
       this will be null.

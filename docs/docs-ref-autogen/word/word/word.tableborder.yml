@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.TableBorder
+  - uid: 'word!Word.TableBorder:class'
     summary: |-
       Specifies the border style.
 
@@ -11,22 +11,22 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: word
+      - 'word!OfficeExtension.ClientObject:class'
+    package: word!
     children:
-      - word.Word.TableBorder.color
-      - word.Word.TableBorder.context
-      - word.Word.TableBorder.load
-      - word.Word.TableBorder.load_1
-      - word.Word.TableBorder.load_2
-      - word.Word.TableBorder.set
-      - word.Word.TableBorder.set_1
-      - word.Word.TableBorder.toJSON
-      - word.Word.TableBorder.track
-      - word.Word.TableBorder.type
-      - word.Word.TableBorder.untrack
-      - word.Word.TableBorder.width
-  - uid: word.Word.TableBorder.color
+      - 'word!Word.TableBorder#color:member'
+      - 'word!Word.TableBorder#context:member'
+      - 'word!Word.TableBorder#load:member(1)'
+      - 'word!Word.TableBorder#load:member(2)'
+      - 'word!Word.TableBorder#load:member(3)'
+      - 'word!Word.TableBorder#set:member(1)'
+      - 'word!Word.TableBorder#set:member(2)'
+      - 'word!Word.TableBorder#toJSON:member(1)'
+      - 'word!Word.TableBorder#track:member(1)'
+      - 'word!Word.TableBorder#type:member'
+      - 'word!Word.TableBorder#untrack:member(1)'
+      - 'word!Word.TableBorder#width:member'
+  - uid: 'word!Word.TableBorder#color:member'
     summary: |-
       Gets or sets the table border color.
 
@@ -41,7 +41,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.TableBorder.context
+  - uid: 'word!Word.TableBorder#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -54,8 +54,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.TableBorder.load
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.TableBorder#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -86,14 +86,14 @@ items:
       content: 'load(option?: Word.Interfaces.TableBorderLoadOptions): Word.TableBorder;'
       return:
         type:
-          - word.Word.TableBorder
+          - 'word!Word.TableBorder:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.TableBorderLoadOptions
-  - uid: word.Word.TableBorder.load_1
+            - 'word!Word.Interfaces.TableBorderLoadOptions:interface'
+  - uid: 'word!Word.TableBorder#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -106,14 +106,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.TableBorder;'
       return:
         type:
-          - word.Word.TableBorder
+          - 'word!Word.TableBorder:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.TableBorder.load_2
+  - uid: 'word!Word.TableBorder#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -126,7 +126,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.TableBorder;'
       return:
         type:
-          - word.Word.TableBorder
+          - 'word!Word.TableBorder:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -135,7 +135,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: word.Word.TableBorder.set
+  - uid: 'word!Word.TableBorder#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -160,12 +160,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.TableBorderUpdateData
+            - 'word!Word.Interfaces.TableBorderUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: word.Word.TableBorder.set_1
+            - 'word!OfficeExtension.UpdateOptions:interface'
+  - uid: 'word!Word.TableBorder#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -182,8 +182,8 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.TableBorder
-  - uid: word.Word.TableBorder.toJSON
+            - 'word!Word.TableBorder:class'
+  - uid: 'word!Word.TableBorder#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -199,9 +199,9 @@ items:
       content: 'toJSON(): Word.Interfaces.TableBorderData;'
       return:
         type:
-          - word.Word.Interfaces.TableBorderData
+          - 'word!Word.Interfaces.TableBorderData:interface'
         description: ''
-  - uid: word.Word.TableBorder.track
+  - uid: 'word!Word.TableBorder#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -217,9 +217,9 @@ items:
       content: 'track(): Word.TableBorder;'
       return:
         type:
-          - word.Word.TableBorder
+          - 'word!Word.TableBorder:class'
         description: ''
-  - uid: word.Word.TableBorder.type
+  - uid: 'word!Word.TableBorder#type:member'
     summary: |-
       Gets or sets the type of the table border.
 
@@ -237,12 +237,8 @@ items:
         "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
       return:
         type:
-          - >-
-            Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed"
-            | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" |
-            "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" |
-            "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave"
-  - uid: word.Word.TableBorder.untrack
+          - 'word!Word.TableBorder#type~0:complex'
+  - uid: 'word!Word.TableBorder#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -257,9 +253,9 @@ items:
       content: 'untrack(): Word.TableBorder;'
       return:
         type:
-          - word.Word.TableBorder
+          - 'word!Word.TableBorder:class'
         description: ''
-  - uid: word.Word.TableBorder.width
+  - uid: 'word!Word.TableBorder#width:member'
     summary: >-
       Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed
       widths.
@@ -276,3 +272,35 @@ items:
       return:
         type:
           - number
+references:
+  - uid: 'word!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.TableBorder:class'
+    name: Word.TableBorder
+  - uid: 'word!Word.Interfaces.TableBorderLoadOptions:interface'
+    name: Word.Interfaces.TableBorderLoadOptions
+  - uid: 'word!Word.Interfaces.TableBorderUpdateData:interface'
+    name: Interfaces.TableBorderUpdateData
+  - uid: 'word!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'word!Word.Interfaces.TableBorderData:interface'
+    name: Word.Interfaces.TableBorderData
+  - uid: 'word!Word.TableBorder#type~0:complex'
+    name: >-
+      Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" |
+      "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" |
+      "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" |
+      "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave"
+    fullName: >-
+      Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" |
+      "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" |
+      "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" |
+      "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave"
+    spec.typeScript:
+      - uid: 'word!Word.BorderType:enum'
+        name: Word.BorderType
+        fullName: Word.BorderType
+      - name: ' | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave"'
+        fullName: ' | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave"'

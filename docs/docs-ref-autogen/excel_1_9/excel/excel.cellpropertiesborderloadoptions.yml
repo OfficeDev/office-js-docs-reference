@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CellPropertiesBorderLoadOptions
+  - uid: 'excel!Excel.CellPropertiesBorderLoadOptions:interface'
     summary: |-
       Specifies which properties to load on the `format.borders` object.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.CellPropertiesBorderLoadOptions.color
-      - excel.Excel.CellPropertiesBorderLoadOptions.style
-      - excel.Excel.CellPropertiesBorderLoadOptions.tintAndShade
-      - excel.Excel.CellPropertiesBorderLoadOptions.weight
-  - uid: excel.Excel.CellPropertiesBorderLoadOptions.color
+      - 'excel!Excel.CellPropertiesBorderLoadOptions#color:member'
+      - 'excel!Excel.CellPropertiesBorderLoadOptions#style:member'
+      - 'excel!Excel.CellPropertiesBorderLoadOptions#tintAndShade:member'
+      - 'excel!Excel.CellPropertiesBorderLoadOptions#weight:member'
+  - uid: 'excel!Excel.CellPropertiesBorderLoadOptions#color:member'
     summary: |-
       Specifies whether to load on the `color` property.
 
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesBorderLoadOptions.style
+  - uid: 'excel!Excel.CellPropertiesBorderLoadOptions#style:member'
     summary: |-
       Specifies whether to load on the `style` property.
 
@@ -46,7 +46,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesBorderLoadOptions.tintAndShade
+  - uid: 'excel!Excel.CellPropertiesBorderLoadOptions#tintAndShade:member'
     summary: |-
       Specifies whether to load on the `tintAndShade` property.
 
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesBorderLoadOptions.weight
+  - uid: 'excel!Excel.CellPropertiesBorderLoadOptions#weight:member'
     summary: |-
       Specifies whether to load on the `weight` property.
 

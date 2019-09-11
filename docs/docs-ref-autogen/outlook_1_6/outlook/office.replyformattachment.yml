@@ -1,20 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.ReplyFormAttachment
+  - uid: 'outlook!Office.ReplyFormAttachment:interface'
     summary: A file or item attachment. Used when displaying a reply form.
     name: Office.ReplyFormAttachment
     fullName: Office.ReplyFormAttachment
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.ReplyFormAttachment.inLine
-      - outlook.Office.ReplyFormAttachment.itemId
-      - outlook.Office.ReplyFormAttachment.name
-      - outlook.Office.ReplyFormAttachment.type
-      - outlook.Office.ReplyFormAttachment.url
-  - uid: outlook.Office.ReplyFormAttachment.inLine
+      - 'outlook!Office.ReplyFormAttachment#inLine:member'
+      - 'outlook!Office.ReplyFormAttachment#itemId:member'
+      - 'outlook!Office.ReplyFormAttachment#name:member'
+      - 'outlook!Office.ReplyFormAttachment#type:member'
+      - 'outlook!Office.ReplyFormAttachment#url:member'
+  - uid: 'outlook!Office.ReplyFormAttachment#inLine:member'
     summary: >-
       Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body,
       and should not be displayed in the attachment list.
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: outlook.Office.ReplyFormAttachment.itemId
+  - uid: 'outlook!Office.ReplyFormAttachment#itemId:member'
     summary: Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters.
     name: itemId
     fullName: itemId
@@ -40,7 +40,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.ReplyFormAttachment.name
+  - uid: 'outlook!Office.ReplyFormAttachment#name:member'
     summary: 'A string that contains the name of the attachment, up to 255 characters in length.'
     name: name
     fullName: name
@@ -52,7 +52,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.ReplyFormAttachment.type
+  - uid: 'outlook!Office.ReplyFormAttachment#type:member'
     summary: Indicates the type of attachment. Must be file for a file attachment or item for an item attachment.
     name: type
     fullName: type
@@ -64,7 +64,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.ReplyFormAttachment.url
+  - uid: 'outlook!Office.ReplyFormAttachment#url:member'
     summary: Only used if type is set to file. The URI of the location for the file.
     name: url
     fullName: url

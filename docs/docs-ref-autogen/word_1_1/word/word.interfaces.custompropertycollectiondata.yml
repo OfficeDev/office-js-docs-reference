@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.CustomPropertyCollectionData
+  - uid: 'word!Word.Interfaces.CustomPropertyCollectionData:interface'
     summary: An interface describing the data returned by calling "customPropertyCollection.toJSON()".
     name: Word.Interfaces.CustomPropertyCollectionData
     fullName: Word.Interfaces.CustomPropertyCollectionData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.CustomPropertyCollectionData.items
-  - uid: word.Word.Interfaces.CustomPropertyCollectionData.items
+      - 'word!Word.Interfaces.CustomPropertyCollectionData#items:member'
+  - uid: 'word!Word.Interfaces.CustomPropertyCollectionData#items:member'
     name: items
     fullName: items
     langs:
@@ -20,4 +20,14 @@ items:
       content: 'items?: Word.Interfaces.CustomPropertyData[];'
       return:
         type:
-          - 'Word.Interfaces.CustomPropertyData[]'
+          - 'word!Word.Interfaces.CustomPropertyCollectionData#items~0:complex'
+references:
+  - uid: 'word!Word.Interfaces.CustomPropertyCollectionData#items~0:complex'
+    name: 'Word.Interfaces.CustomPropertyData[]'
+    fullName: 'Word.Interfaces.CustomPropertyData[]'
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.CustomPropertyData:interface'
+        name: Word.Interfaces.CustomPropertyData
+        fullName: Word.Interfaces.CustomPropertyData
+      - name: '[]'
+        fullName: '[]'

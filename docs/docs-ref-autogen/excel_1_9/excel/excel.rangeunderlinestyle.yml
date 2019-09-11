@@ -1,48 +1,48 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.RangeUnderlineStyle
+  - uid: 'excel!Excel.RangeUnderlineStyle:enum'
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.RangeUnderlineStyle
     fullName: Excel.RangeUnderlineStyle
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.RangeUnderlineStyle.double
-      - excel.Excel.RangeUnderlineStyle.doubleAccountant
-      - excel.Excel.RangeUnderlineStyle.none
-      - excel.Excel.RangeUnderlineStyle.single
-      - excel.Excel.RangeUnderlineStyle.singleAccountant
-  - uid: excel.Excel.RangeUnderlineStyle.double
+      - 'excel!Excel.RangeUnderlineStyle.double:member'
+      - 'excel!Excel.RangeUnderlineStyle.doubleAccountant:member'
+      - 'excel!Excel.RangeUnderlineStyle.none:member'
+      - 'excel!Excel.RangeUnderlineStyle.single:member'
+      - 'excel!Excel.RangeUnderlineStyle.singleAccountant:member'
+  - uid: 'excel!Excel.RangeUnderlineStyle.double:member'
     name: double
     fullName: double
     langs:
       - typeScript
     type: field
     numericValue: '"Double"'
-  - uid: excel.Excel.RangeUnderlineStyle.doubleAccountant
+  - uid: 'excel!Excel.RangeUnderlineStyle.doubleAccountant:member'
     name: doubleAccountant
     fullName: doubleAccountant
     langs:
       - typeScript
     type: field
     numericValue: '"DoubleAccountant"'
-  - uid: excel.Excel.RangeUnderlineStyle.none
+  - uid: 'excel!Excel.RangeUnderlineStyle.none:member'
     name: none
     fullName: none
     langs:
       - typeScript
     type: field
     numericValue: '"None"'
-  - uid: excel.Excel.RangeUnderlineStyle.single
+  - uid: 'excel!Excel.RangeUnderlineStyle.single:member'
     name: single
     fullName: single
     langs:
       - typeScript
     type: field
     numericValue: '"Single"'
-  - uid: excel.Excel.RangeUnderlineStyle.singleAccountant
+  - uid: 'excel!Excel.RangeUnderlineStyle.singleAccountant:member'
     name: singleAccountant
     fullName: singleAccountant
     langs:

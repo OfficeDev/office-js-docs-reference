@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartAxesUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartAxesUpdateData:interface'
     summary: 'An interface for updating data on the ChartAxes object, for use in "chartAxes.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.ChartAxesUpdateData
     fullName: Excel.Interfaces.ChartAxesUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartAxesUpdateData.categoryAxis
-      - excel.Excel.Interfaces.ChartAxesUpdateData.seriesAxis
-      - excel.Excel.Interfaces.ChartAxesUpdateData.valueAxis
-  - uid: excel.Excel.Interfaces.ChartAxesUpdateData.categoryAxis
+      - 'excel!Excel.Interfaces.ChartAxesUpdateData#categoryAxis:member'
+      - 'excel!Excel.Interfaces.ChartAxesUpdateData#seriesAxis:member'
+      - 'excel!Excel.Interfaces.ChartAxesUpdateData#valueAxis:member'
+  - uid: 'excel!Excel.Interfaces.ChartAxesUpdateData#categoryAxis:member'
     summary: |-
       Represents the category axis in a chart.
 
@@ -26,8 +26,8 @@ items:
       content: 'categoryAxis?: Excel.Interfaces.ChartAxisUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisUpdateData
-  - uid: excel.Excel.Interfaces.ChartAxesUpdateData.seriesAxis
+          - 'excel!Excel.Interfaces.ChartAxisUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAxesUpdateData#seriesAxis:member'
     summary: |-
       Represents the series axis of a 3-dimensional chart.
 
@@ -41,8 +41,8 @@ items:
       content: 'seriesAxis?: Excel.Interfaces.ChartAxisUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisUpdateData
-  - uid: excel.Excel.Interfaces.ChartAxesUpdateData.valueAxis
+          - 'excel!Excel.Interfaces.ChartAxisUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAxesUpdateData#valueAxis:member'
     summary: |-
       Represents the value axis in an axis.
 
@@ -56,4 +56,7 @@ items:
       content: 'valueAxis?: Excel.Interfaces.ChartAxisUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisUpdateData
+          - 'excel!Excel.Interfaces.ChartAxisUpdateData:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData:interface'
+    name: Excel.Interfaces.ChartAxisUpdateData

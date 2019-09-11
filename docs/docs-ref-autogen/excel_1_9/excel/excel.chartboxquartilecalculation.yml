@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartBoxQuartileCalculation
+  - uid: 'excel!Excel.ChartBoxQuartileCalculation:enum'
     summary: |-
       Represents the quartile calculation type of chart series layout. Only applies to a box and whisker chart.
 
@@ -10,18 +10,18 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartBoxQuartileCalculation.exclusive
-      - excel.Excel.ChartBoxQuartileCalculation.inclusive
-  - uid: excel.Excel.ChartBoxQuartileCalculation.exclusive
+      - 'excel!Excel.ChartBoxQuartileCalculation.exclusive:member'
+      - 'excel!Excel.ChartBoxQuartileCalculation.inclusive:member'
+  - uid: 'excel!Excel.ChartBoxQuartileCalculation.exclusive:member'
     name: exclusive
     fullName: exclusive
     langs:
       - typeScript
     type: field
     numericValue: '"Exclusive"'
-  - uid: excel.Excel.ChartBoxQuartileCalculation.inclusive
+  - uid: 'excel!Excel.ChartBoxQuartileCalculation.inclusive:member'
     name: inclusive
     fullName: inclusive
     langs:

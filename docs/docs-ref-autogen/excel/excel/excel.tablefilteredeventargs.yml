@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.TableFilteredEventArgs
+  - uid: 'excel!Excel.TableFilteredEventArgs:interface'
     summary: >-
       Provides information about the table that raised the filter applied event.
 
@@ -13,12 +13,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.TableFilteredEventArgs.tableId
-      - excel.Excel.TableFilteredEventArgs.type
-      - excel.Excel.TableFilteredEventArgs.worksheetId
-  - uid: excel.Excel.TableFilteredEventArgs.tableId
+      - 'excel!Excel.TableFilteredEventArgs#tableId:member'
+      - 'excel!Excel.TableFilteredEventArgs#type:member'
+      - 'excel!Excel.TableFilteredEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.TableFilteredEventArgs#tableId:member'
     summary: >-
       Represents the id of the table in which the filter is applied..
 
@@ -36,7 +36,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.TableFilteredEventArgs.type
+  - uid: 'excel!Excel.TableFilteredEventArgs#type:member'
     summary: >-
       Represents the type of the event. See Excel.EventType for details.
 
@@ -54,7 +54,7 @@ items:
       return:
         type:
           - '"TableFiltered"'
-  - uid: excel.Excel.TableFilteredEventArgs.worksheetId
+  - uid: 'excel!Excel.TableFilteredEventArgs#worksheetId:member'
     summary: >-
       Represents the id of the worksheet which contains the table.
 

@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.WorkbookProtectionData
+  - uid: 'excel!Excel.Interfaces.WorkbookProtectionData:interface'
     summary: An interface describing the data returned by calling "workbookProtection.toJSON()".
     name: Excel.Interfaces.WorkbookProtectionData
     fullName: Excel.Interfaces.WorkbookProtectionData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.WorkbookProtectionData.protected
-  - uid: excel.Excel.Interfaces.WorkbookProtectionData.protected
+      - 'excel!Excel.Interfaces.WorkbookProtectionData#protected:member'
+  - uid: 'excel!Excel.Interfaces.WorkbookProtectionData#protected:member'
     summary: |-
       Indicates if the workbook is protected. Read-Only.
 

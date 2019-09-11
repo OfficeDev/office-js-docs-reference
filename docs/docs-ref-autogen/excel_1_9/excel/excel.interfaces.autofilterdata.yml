@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.AutoFilterData
+  - uid: 'excel!Excel.Interfaces.AutoFilterData:interface'
     summary: An interface describing the data returned by calling "autoFilter.toJSON()".
     name: Excel.Interfaces.AutoFilterData
     fullName: Excel.Interfaces.AutoFilterData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.AutoFilterData.criteria
-      - excel.Excel.Interfaces.AutoFilterData.enabled
-      - excel.Excel.Interfaces.AutoFilterData.isDataFiltered
-  - uid: excel.Excel.Interfaces.AutoFilterData.criteria
+      - 'excel!Excel.Interfaces.AutoFilterData#criteria:member'
+      - 'excel!Excel.Interfaces.AutoFilterData#enabled:member'
+      - 'excel!Excel.Interfaces.AutoFilterData#isDataFiltered:member'
+  - uid: 'excel!Excel.Interfaces.AutoFilterData#criteria:member'
     summary: |-
       An array that holds all the filter criteria in the autofiltered range. Read-Only.
 
@@ -26,8 +26,8 @@ items:
       content: 'criteria?: Excel.FilterCriteria[];'
       return:
         type:
-          - 'Excel.FilterCriteria[]'
-  - uid: excel.Excel.Interfaces.AutoFilterData.enabled
+          - 'excel!Excel.Interfaces.AutoFilterData#criteria~0:complex'
+  - uid: 'excel!Excel.Interfaces.AutoFilterData#enabled:member'
     summary: |-
       Indicates if the AutoFilter is enabled or not. Read-Only.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.AutoFilterData.isDataFiltered
+  - uid: 'excel!Excel.Interfaces.AutoFilterData#isDataFiltered:member'
     summary: |-
       Indicates if the AutoFilter has filter criteria. Read-Only.
 
@@ -57,3 +57,13 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.AutoFilterData#criteria~0:complex'
+    name: 'Excel.FilterCriteria[]'
+    fullName: 'Excel.FilterCriteria[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.FilterCriteria:interface'
+        name: Excel.FilterCriteria
+        fullName: Excel.FilterCriteria
+      - name: '[]'
+        fullName: '[]'

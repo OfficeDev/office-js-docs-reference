@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
     summary: |-
       An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 
@@ -10,25 +10,25 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.WorksheetLoadOptions.$all
-      - excel.Excel.Interfaces.WorksheetLoadOptions.autoFilter
-      - excel.Excel.Interfaces.WorksheetLoadOptions.charts
-      - excel.Excel.Interfaces.WorksheetLoadOptions.enableCalculation
-      - excel.Excel.Interfaces.WorksheetLoadOptions.id
-      - excel.Excel.Interfaces.WorksheetLoadOptions.name
-      - excel.Excel.Interfaces.WorksheetLoadOptions.pageLayout
-      - excel.Excel.Interfaces.WorksheetLoadOptions.position
-      - excel.Excel.Interfaces.WorksheetLoadOptions.protection
-      - excel.Excel.Interfaces.WorksheetLoadOptions.showGridlines
-      - excel.Excel.Interfaces.WorksheetLoadOptions.showHeadings
-      - excel.Excel.Interfaces.WorksheetLoadOptions.standardHeight
-      - excel.Excel.Interfaces.WorksheetLoadOptions.standardWidth
-      - excel.Excel.Interfaces.WorksheetLoadOptions.tabColor
-      - excel.Excel.Interfaces.WorksheetLoadOptions.tables
-      - excel.Excel.Interfaces.WorksheetLoadOptions.visibility
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.$all
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#autoFilter:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#charts:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#enableCalculation:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#pageLayout:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#position:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#protection:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#showGridlines:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#showHeadings:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#standardHeight:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#standardWidth:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#tabColor:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#tables:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#visibility:member'
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -39,7 +39,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.autoFilter
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#autoFilter:member'
     summary: |-
       Represents the AutoFilter object of the worksheet.
 
@@ -53,8 +53,8 @@ items:
       content: 'autoFilter?: Excel.Interfaces.AutoFilterLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.AutoFilterLoadOptions
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.charts
+          - 'excel!Excel.Interfaces.AutoFilterLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#charts:member'
     summary: |-
       Returns collection of charts that are part of the worksheet.
 
@@ -68,8 +68,8 @@ items:
       content: 'charts?: Excel.Interfaces.ChartCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.enableCalculation
+          - 'excel!Excel.Interfaces.ChartCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#enableCalculation:member'
     summary: >-
       Gets or sets the enableCalculation property of the worksheet. True if Excel recalculates the worksheet when
       necessary. False if Excel doesn't recalculate the sheet.
@@ -86,7 +86,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#id:member'
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
       the same even when the worksheet is renamed or moved. Read-only.
@@ -103,7 +103,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#name:member'
     summary: |-
       The display name of the worksheet.
 
@@ -118,7 +118,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.pageLayout
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#pageLayout:member'
     summary: |-
       Gets the PageLayout object of the worksheet.
 
@@ -132,8 +132,8 @@ items:
       content: 'pageLayout?: Excel.Interfaces.PageLayoutLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.PageLayoutLoadOptions
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.position
+          - 'excel!Excel.Interfaces.PageLayoutLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#position:member'
     summary: |-
       The zero-based position of the worksheet within the workbook.
 
@@ -148,7 +148,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.protection
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#protection:member'
     summary: |-
       Returns sheet protection object for a worksheet.
 
@@ -162,8 +162,8 @@ items:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetProtectionLoadOptions
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.showGridlines
+          - 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#showGridlines:member'
     summary: |-
       Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.
 
@@ -178,7 +178,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.showHeadings
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#showHeadings:member'
     summary: |-
       Gets or sets the worksheet's headings flag. This flag determines whether headings are visible to the user.
 
@@ -193,7 +193,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.standardHeight
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#standardHeight:member'
     summary: |-
       Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
 
@@ -208,7 +208,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.standardWidth
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#standardWidth:member'
     summary: >-
       Returns or sets the standard (default) width of all the columns in the worksheet. One unit of column width is
       equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0
@@ -226,7 +226,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.tabColor
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#tabColor:member'
     summary: >-
       Gets or sets the worksheet tab color. When retrieving the tab color, if the worksheet is invisible, the value will
       be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned.
@@ -245,7 +245,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.tables
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#tables:member'
     summary: |-
       Collection of tables that are part of the worksheet.
 
@@ -259,8 +259,8 @@ items:
       content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TableCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.visibility
+          - 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#visibility:member'
     summary: >-
       The Visibility of the worksheet.
 
@@ -277,3 +277,14 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.AutoFilterLoadOptions:interface'
+    name: Excel.Interfaces.AutoFilterLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions:interface'
+    name: Excel.Interfaces.ChartCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.PageLayoutLoadOptions:interface'
+    name: Excel.Interfaces.PageLayoutLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
+    name: Excel.Interfaces.WorksheetProtectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
+    name: Excel.Interfaces.TableCollectionLoadOptions

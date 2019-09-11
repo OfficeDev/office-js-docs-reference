@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.RangeUpdateData
+  - uid: 'word!Word.Interfaces.RangeUpdateData:interface'
     summary: 'An interface for updating data on the Range object, for use in "range.set(<!-- -->{ ... }<!-- -->)".'
     name: Word.Interfaces.RangeUpdateData
     fullName: Word.Interfaces.RangeUpdateData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.RangeUpdateData.font
-      - word.Word.Interfaces.RangeUpdateData.style
-  - uid: word.Word.Interfaces.RangeUpdateData.font
+      - 'word!Word.Interfaces.RangeUpdateData#font:member'
+      - 'word!Word.Interfaces.RangeUpdateData#style:member'
+  - uid: 'word!Word.Interfaces.RangeUpdateData#font:member'
     summary: |-
       Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
 
@@ -25,8 +25,8 @@ items:
       content: 'font?: Word.Interfaces.FontUpdateData;'
       return:
         type:
-          - word.Word.Interfaces.FontUpdateData
-  - uid: word.Word.Interfaces.RangeUpdateData.style
+          - 'word!Word.Interfaces.FontUpdateData:interface'
+  - uid: 'word!Word.Interfaces.RangeUpdateData#style:member'
     summary: >-
       Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -43,3 +43,6 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'word!Word.Interfaces.FontUpdateData:interface'
+    name: Word.Interfaces.FontUpdateData

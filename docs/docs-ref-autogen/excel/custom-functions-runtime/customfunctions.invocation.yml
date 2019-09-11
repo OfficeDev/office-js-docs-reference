@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: custom-functions-runtime.CustomFunctions.Invocation
+  - uid: 'custom-functions-runtime!CustomFunctions.Invocation:interface'
     summary: Provides information about the invocation of a custom function.
     name: CustomFunctions.Invocation
     fullName: CustomFunctions.Invocation
     langs:
       - typeScript
     type: interface
-    package: custom-functions-runtime
+    package: custom-functions-runtime!
     children:
-      - custom-functions-runtime.CustomFunctions.Invocation.address
-  - uid: custom-functions-runtime.CustomFunctions.Invocation.address
+      - 'custom-functions-runtime!CustomFunctions.Invocation#address:member'
+  - uid: 'custom-functions-runtime!CustomFunctions.Invocation#address:member'
     summary: >-
       The cell address where the function is being called, if requested, otherwise undefined.
 

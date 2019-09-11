@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.PageCollectionUpdateData
+  - uid: 'visio!Visio.Interfaces.PageCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the PageCollection object, for use in "pageCollection.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.PageCollectionUpdateData.items
-  - uid: visio.Visio.Interfaces.PageCollectionUpdateData.items
+      - 'visio!Visio.Interfaces.PageCollectionUpdateData#items:member'
+  - uid: 'visio!Visio.Interfaces.PageCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: Visio.Interfaces.PageData[];'
       return:
         type:
-          - 'Visio.Interfaces.PageData[]'
+          - 'visio!Visio.Interfaces.PageCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'visio!Visio.Interfaces.PageCollectionUpdateData#items~0:complex'
+    name: 'Visio.Interfaces.PageData[]'
+    fullName: 'Visio.Interfaces.PageData[]'
+    spec.typeScript:
+      - uid: 'visio!Visio.Interfaces.PageData:interface'
+        name: Visio.Interfaces.PageData
+        fullName: Visio.Interfaces.PageData
+      - name: '[]'
+        fullName: '[]'

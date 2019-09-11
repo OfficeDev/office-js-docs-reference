@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.ShapeUpdateData
+  - uid: 'visio!Visio.Interfaces.ShapeUpdateData:interface'
     summary: 'An interface for updating data on the Shape object, for use in "shape.set(<!-- -->{ ... }<!-- -->)".'
     name: Visio.Interfaces.ShapeUpdateData
     fullName: Visio.Interfaces.ShapeUpdateData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.ShapeUpdateData.select
-      - visio.Visio.Interfaces.ShapeUpdateData.view
-  - uid: visio.Visio.Interfaces.ShapeUpdateData.select
+      - 'visio!Visio.Interfaces.ShapeUpdateData#select:member'
+      - 'visio!Visio.Interfaces.ShapeUpdateData#view:member'
+  - uid: 'visio!Visio.Interfaces.ShapeUpdateData#select:member'
     summary: |-
       Returns true, if shape is selected. User can set true to select the shape explicitly.
 
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.ShapeUpdateData.view
+  - uid: 'visio!Visio.Interfaces.ShapeUpdateData#view:member'
     summary: |-
       Returns the view of the shape.
 
@@ -40,4 +40,7 @@ items:
       content: 'view?: Visio.Interfaces.ShapeViewUpdateData;'
       return:
         type:
-          - visio.Visio.Interfaces.ShapeViewUpdateData
+          - 'visio!Visio.Interfaces.ShapeViewUpdateData:interface'
+references:
+  - uid: 'visio!Visio.Interfaces.ShapeViewUpdateData:interface'
+    name: Visio.Interfaces.ShapeViewUpdateData

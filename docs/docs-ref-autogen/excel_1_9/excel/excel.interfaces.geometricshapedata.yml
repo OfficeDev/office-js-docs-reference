@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.GeometricShapeData
+  - uid: 'excel!Excel.Interfaces.GeometricShapeData:interface'
     summary: An interface describing the data returned by calling "geometricShape.toJSON()".
     name: Excel.Interfaces.GeometricShapeData
     fullName: Excel.Interfaces.GeometricShapeData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.GeometricShapeData.id
-  - uid: excel.Excel.Interfaces.GeometricShapeData.id
+      - 'excel!Excel.Interfaces.GeometricShapeData#id:member'
+  - uid: 'excel!Excel.Interfaces.GeometricShapeData#id:member'
     summary: |-
       Returns the shape identifier. Read-only.
 

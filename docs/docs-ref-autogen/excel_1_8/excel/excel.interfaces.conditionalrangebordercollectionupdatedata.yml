@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the ConditionalRangeBorderCollection object, for use in
       "conditionalRangeBorderCollection.set(<!-- -->{ ... }<!-- -->)".
@@ -9,14 +9,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.bottom
-      - excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.items
-      - excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.left
-      - excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.right
-      - excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.top
-  - uid: excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.bottom
+      - 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#bottom:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#left:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#right:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#top:member'
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#bottom:member'
     summary: |-
       Gets the bottom border.
 
@@ -30,8 +30,8 @@ items:
       content: 'bottom?: Excel.Interfaces.ConditionalRangeBorderUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeBorderUpdateData
-  - uid: excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.items
+          - 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -41,8 +41,8 @@ items:
       content: 'items?: Excel.Interfaces.ConditionalRangeBorderData[];'
       return:
         type:
-          - 'Excel.Interfaces.ConditionalRangeBorderData[]'
-  - uid: excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.left
+          - 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items~0:complex'
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#left:member'
     summary: |-
       Gets the left border.
 
@@ -56,8 +56,8 @@ items:
       content: 'left?: Excel.Interfaces.ConditionalRangeBorderUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeBorderUpdateData
-  - uid: excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.right
+          - 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#right:member'
     summary: |-
       Gets the right border.
 
@@ -71,8 +71,8 @@ items:
       content: 'right?: Excel.Interfaces.ConditionalRangeBorderUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeBorderUpdateData
-  - uid: excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData.top
+          - 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#top:member'
     summary: |-
       Gets the top border.
 
@@ -86,4 +86,16 @@ items:
       content: 'top?: Excel.Interfaces.ConditionalRangeBorderUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeBorderUpdateData
+          - 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface'
+    name: Excel.Interfaces.ConditionalRangeBorderUpdateData
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.ConditionalRangeBorderData[]'
+    fullName: 'Excel.Interfaces.ConditionalRangeBorderData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderData:interface'
+        name: Excel.Interfaces.ConditionalRangeBorderData
+        fullName: Excel.Interfaces.ConditionalRangeBorderData
+      - name: '[]'
+        fullName: '[]'

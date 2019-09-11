@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.GroupOption
+  - uid: 'excel!Excel.GroupOption:enum'
     summary: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.GroupOption.byColumns
-      - excel.Excel.GroupOption.byRows
-  - uid: excel.Excel.GroupOption.byColumns
+      - 'excel!Excel.GroupOption.byColumns:member'
+      - 'excel!Excel.GroupOption.byRows:member'
+  - uid: 'excel!Excel.GroupOption.byColumns:member'
     summary: Group by columns.
     isPreview: true
     name: byColumns
@@ -23,7 +23,7 @@ items:
       - typeScript
     type: field
     numericValue: '"ByColumns"'
-  - uid: excel.Excel.GroupOption.byRows
+  - uid: 'excel!Excel.GroupOption.byRows:member'
     summary: Group by rows.
     isPreview: true
     name: byRows

@@ -1,26 +1,26 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.OfficeExtension.ErrorCodes
+  - uid: 'office!OfficeExtension.ErrorCodes:class'
     name: OfficeExtension.ErrorCodes
     fullName: OfficeExtension.ErrorCodes
     langs:
       - typeScript
     type: class
-    package: office
+    package: office!
     children:
-      - office.OfficeExtension.ErrorCodes.accessDenied
-      - office.OfficeExtension.ErrorCodes.activityLimitReached
-      - office.OfficeExtension.ErrorCodes.apiNotFound
-      - office.OfficeExtension.ErrorCodes.cannotRegisterEvent
-      - office.OfficeExtension.ErrorCodes.connectionFailure
-      - office.OfficeExtension.ErrorCodes.generalException
-      - office.OfficeExtension.ErrorCodes.invalidArgument
-      - office.OfficeExtension.ErrorCodes.invalidObjectPath
-      - office.OfficeExtension.ErrorCodes.invalidRequestContext
-      - office.OfficeExtension.ErrorCodes.propertyNotLoaded
-      - office.OfficeExtension.ErrorCodes.runMustReturnPromise
-      - office.OfficeExtension.ErrorCodes.valueNotLoaded
-  - uid: office.OfficeExtension.ErrorCodes.accessDenied
+      - 'office!OfficeExtension.ErrorCodes.accessDenied:member'
+      - 'office!OfficeExtension.ErrorCodes.activityLimitReached:member'
+      - 'office!OfficeExtension.ErrorCodes.apiNotFound:member'
+      - 'office!OfficeExtension.ErrorCodes.cannotRegisterEvent:member'
+      - 'office!OfficeExtension.ErrorCodes.connectionFailure:member'
+      - 'office!OfficeExtension.ErrorCodes.generalException:member'
+      - 'office!OfficeExtension.ErrorCodes.invalidArgument:member'
+      - 'office!OfficeExtension.ErrorCodes.invalidObjectPath:member'
+      - 'office!OfficeExtension.ErrorCodes.invalidRequestContext:member'
+      - 'office!OfficeExtension.ErrorCodes.propertyNotLoaded:member'
+      - 'office!OfficeExtension.ErrorCodes.runMustReturnPromise:member'
+      - 'office!OfficeExtension.ErrorCodes.valueNotLoaded:member'
+  - uid: 'office!OfficeExtension.ErrorCodes.accessDenied:member'
     name: accessDenied
     fullName: accessDenied
     langs:
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.ErrorCodes.activityLimitReached
+  - uid: 'office!OfficeExtension.ErrorCodes.activityLimitReached:member'
     name: activityLimitReached
     fullName: activityLimitReached
     langs:
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.ErrorCodes.apiNotFound
+  - uid: 'office!OfficeExtension.ErrorCodes.apiNotFound:member'
     name: apiNotFound
     fullName: apiNotFound
     langs:
@@ -53,7 +53,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.ErrorCodes.cannotRegisterEvent
+  - uid: 'office!OfficeExtension.ErrorCodes.cannotRegisterEvent:member'
     name: cannotRegisterEvent
     fullName: cannotRegisterEvent
     langs:
@@ -64,7 +64,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.ErrorCodes.connectionFailure
+  - uid: 'office!OfficeExtension.ErrorCodes.connectionFailure:member'
     name: connectionFailure
     fullName: connectionFailure
     langs:
@@ -75,7 +75,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.ErrorCodes.generalException
+  - uid: 'office!OfficeExtension.ErrorCodes.generalException:member'
     name: generalException
     fullName: generalException
     langs:
@@ -86,7 +86,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.ErrorCodes.invalidArgument
+  - uid: 'office!OfficeExtension.ErrorCodes.invalidArgument:member'
     name: invalidArgument
     fullName: invalidArgument
     langs:
@@ -97,7 +97,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.ErrorCodes.invalidObjectPath
+  - uid: 'office!OfficeExtension.ErrorCodes.invalidObjectPath:member'
     name: invalidObjectPath
     fullName: invalidObjectPath
     langs:
@@ -108,7 +108,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.ErrorCodes.invalidRequestContext
+  - uid: 'office!OfficeExtension.ErrorCodes.invalidRequestContext:member'
     name: invalidRequestContext
     fullName: invalidRequestContext
     langs:
@@ -119,7 +119,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.ErrorCodes.propertyNotLoaded
+  - uid: 'office!OfficeExtension.ErrorCodes.propertyNotLoaded:member'
     name: propertyNotLoaded
     fullName: propertyNotLoaded
     langs:
@@ -130,7 +130,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.ErrorCodes.runMustReturnPromise
+  - uid: 'office!OfficeExtension.ErrorCodes.runMustReturnPromise:member'
     name: runMustReturnPromise
     fullName: runMustReturnPromise
     langs:
@@ -141,7 +141,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.ErrorCodes.valueNotLoaded
+  - uid: 'office!OfficeExtension.ErrorCodes.valueNotLoaded:member'
     name: valueNotLoaded
     fullName: valueNotLoaded
     langs:

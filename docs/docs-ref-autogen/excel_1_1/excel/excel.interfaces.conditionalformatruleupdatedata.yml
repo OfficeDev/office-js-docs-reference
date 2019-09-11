@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalFormatRuleUpdateData
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleUpdateData:interface'
     summary: >-
       An interface for updating data on the ConditionalFormatRule object, for use in "conditionalFormatRule.set(<!--
       -->{ ... }<!-- -->)".
@@ -9,4 +9,4 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

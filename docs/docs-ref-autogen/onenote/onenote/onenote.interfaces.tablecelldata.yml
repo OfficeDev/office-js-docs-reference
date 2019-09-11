@@ -1,20 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.TableCellData
+  - uid: 'onenote!OneNote.Interfaces.TableCellData:interface'
     summary: An interface describing the data returned by calling "tableCell.toJSON()".
     name: OneNote.Interfaces.TableCellData
     fullName: OneNote.Interfaces.TableCellData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.TableCellData.cellIndex
-      - onenote.OneNote.Interfaces.TableCellData.id
-      - onenote.OneNote.Interfaces.TableCellData.paragraphs
-      - onenote.OneNote.Interfaces.TableCellData.rowIndex
-      - onenote.OneNote.Interfaces.TableCellData.shadingColor
-  - uid: onenote.OneNote.Interfaces.TableCellData.cellIndex
+      - 'onenote!OneNote.Interfaces.TableCellData#cellIndex:member'
+      - 'onenote!OneNote.Interfaces.TableCellData#id:member'
+      - 'onenote!OneNote.Interfaces.TableCellData#paragraphs:member'
+      - 'onenote!OneNote.Interfaces.TableCellData#rowIndex:member'
+      - 'onenote!OneNote.Interfaces.TableCellData#shadingColor:member'
+  - uid: 'onenote!OneNote.Interfaces.TableCellData#cellIndex:member'
     summary: |-
       Gets the index of the cell in its row. Read-only.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.Interfaces.TableCellData.id
+  - uid: 'onenote!OneNote.Interfaces.TableCellData#id:member'
     summary: |-
       Gets the ID of the cell. Read-only.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.TableCellData.paragraphs
+  - uid: 'onenote!OneNote.Interfaces.TableCellData#paragraphs:member'
     summary: |-
       Gets the collection of Paragraph objects in the TableCell. Read-only.
 
@@ -58,8 +58,8 @@ items:
       content: 'paragraphs?: OneNote.Interfaces.ParagraphData[];'
       return:
         type:
-          - 'OneNote.Interfaces.ParagraphData[]'
-  - uid: onenote.OneNote.Interfaces.TableCellData.rowIndex
+          - 'onenote!OneNote.Interfaces.TableCellData#paragraphs~0:complex'
+  - uid: 'onenote!OneNote.Interfaces.TableCellData#rowIndex:member'
     summary: |-
       Gets the index of the cell's row in the table. Read-only.
 
@@ -74,7 +74,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.Interfaces.TableCellData.shadingColor
+  - uid: 'onenote!OneNote.Interfaces.TableCellData#shadingColor:member'
     summary: |-
       Gets and sets the shading color of the cell
 
@@ -89,3 +89,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'onenote!OneNote.Interfaces.TableCellData#paragraphs~0:complex'
+    name: 'OneNote.Interfaces.ParagraphData[]'
+    fullName: 'OneNote.Interfaces.ParagraphData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.ParagraphData:interface'
+        name: OneNote.Interfaces.ParagraphData
+        fullName: OneNote.Interfaces.ParagraphData
+      - name: '[]'
+        fullName: '[]'

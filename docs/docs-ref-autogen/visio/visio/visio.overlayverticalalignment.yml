@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.OverlayVerticalAlignment
+  - uid: 'visio!Visio.OverlayVerticalAlignment:enum'
     summary: |-
       Represents the Vertical Alignment of the Overlay relative to the shape.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: enum
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.OverlayVerticalAlignment.bottom
-      - visio.Visio.OverlayVerticalAlignment.middle
-      - visio.Visio.OverlayVerticalAlignment.top
-  - uid: visio.Visio.OverlayVerticalAlignment.bottom
+      - 'visio!Visio.OverlayVerticalAlignment.bottom:member'
+      - 'visio!Visio.OverlayVerticalAlignment.middle:member'
+      - 'visio!Visio.OverlayVerticalAlignment.top:member'
+  - uid: 'visio!Visio.OverlayVerticalAlignment.bottom:member'
     summary: bottom
     name: bottom
     fullName: bottom
@@ -23,7 +23,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Bottom"'
-  - uid: visio.Visio.OverlayVerticalAlignment.middle
+  - uid: 'visio!Visio.OverlayVerticalAlignment.middle:member'
     summary: middle
     name: middle
     fullName: middle
@@ -31,7 +31,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Middle"'
-  - uid: visio.Visio.OverlayVerticalAlignment.top
+  - uid: 'visio!Visio.OverlayVerticalAlignment.top:member'
     summary: top
     name: top
     fullName: top

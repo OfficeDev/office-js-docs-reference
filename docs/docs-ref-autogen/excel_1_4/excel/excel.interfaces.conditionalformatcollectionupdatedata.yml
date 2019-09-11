@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalFormatCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the ConditionalFormatCollection object, for use in
       "conditionalFormatCollection.set(<!-- -->{ ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ConditionalFormatCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.ConditionalFormatCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.ConditionalFormatCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: Excel.Interfaces.ConditionalFormatData[];'
       return:
         type:
-          - 'Excel.Interfaces.ConditionalFormatData[]'
+          - 'excel!Excel.Interfaces.ConditionalFormatCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.ConditionalFormatData[]'
+    fullName: 'Excel.Interfaces.ConditionalFormatData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ConditionalFormatData:interface'
+        name: Excel.Interfaces.ConditionalFormatData
+        fullName: Excel.Interfaces.ConditionalFormatData
+      - name: '[]'
+        fullName: '[]'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotTableCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions:interface'
     summary: |-
       Represents a collection of all the PivotTables that are part of the workbook or worksheet.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotTableCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.PivotTableCollectionLoadOptions.id
-      - excel.Excel.Interfaces.PivotTableCollectionLoadOptions.layout
-      - excel.Excel.Interfaces.PivotTableCollectionLoadOptions.name
-      - excel.Excel.Interfaces.PivotTableCollectionLoadOptions.worksheet
-  - uid: excel.Excel.Interfaces.PivotTableCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#layout:member'
+      - 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#worksheet:member'
+  - uid: 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotTableCollectionLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#id:member'
     summary: |-
       For EACH ITEM in the collection: Id of the PivotTable. Read-only.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotTableCollectionLoadOptions.layout
+  - uid: 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#layout:member'
     summary: |-
       For EACH ITEM in the collection: The PivotLayout describing the layout and visual structure of the PivotTable.
 
@@ -57,8 +57,8 @@ items:
       content: 'layout?: Excel.Interfaces.PivotLayoutLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.PivotLayoutLoadOptions
-  - uid: excel.Excel.Interfaces.PivotTableCollectionLoadOptions.name
+          - 'excel!Excel.Interfaces.PivotLayoutLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#name:member'
     summary: |-
       For EACH ITEM in the collection: Name of the PivotTable.
 
@@ -73,7 +73,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotTableCollectionLoadOptions.worksheet
+  - uid: 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#worksheet:member'
     summary: |-
       For EACH ITEM in the collection: The worksheet containing the current PivotTable.
 
@@ -87,4 +87,9 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetLoadOptions
+          - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions:interface'
+    name: Excel.Interfaces.PivotLayoutLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+    name: Excel.Interfaces.WorksheetLoadOptions

@@ -1,20 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.DocumentViewData
+  - uid: 'visio!Visio.Interfaces.DocumentViewData:interface'
     summary: An interface describing the data returned by calling "documentView.toJSON()".
     name: Visio.Interfaces.DocumentViewData
     fullName: Visio.Interfaces.DocumentViewData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.DocumentViewData.disableHyperlinks
-      - visio.Visio.Interfaces.DocumentViewData.disablePan
-      - visio.Visio.Interfaces.DocumentViewData.disablePanZoomWindow
-      - visio.Visio.Interfaces.DocumentViewData.disableZoom
-      - visio.Visio.Interfaces.DocumentViewData.hideDiagramBoundary
-  - uid: visio.Visio.Interfaces.DocumentViewData.disableHyperlinks
+      - 'visio!Visio.Interfaces.DocumentViewData#disableHyperlinks:member'
+      - 'visio!Visio.Interfaces.DocumentViewData#disablePan:member'
+      - 'visio!Visio.Interfaces.DocumentViewData#disablePanZoomWindow:member'
+      - 'visio!Visio.Interfaces.DocumentViewData#disableZoom:member'
+      - 'visio!Visio.Interfaces.DocumentViewData#hideDiagramBoundary:member'
+  - uid: 'visio!Visio.Interfaces.DocumentViewData#disableHyperlinks:member'
     summary: |-
       Disable Hyperlinks.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.DocumentViewData.disablePan
+  - uid: 'visio!Visio.Interfaces.DocumentViewData#disablePan:member'
     summary: |-
       Disable Pan.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.DocumentViewData.disablePanZoomWindow
+  - uid: 'visio!Visio.Interfaces.DocumentViewData#disablePanZoomWindow:member'
     summary: |-
       Disable PanZoomWindow.
 
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.DocumentViewData.disableZoom
+  - uid: 'visio!Visio.Interfaces.DocumentViewData#disableZoom:member'
     summary: |-
       Disable Zoom.
 
@@ -74,7 +74,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.DocumentViewData.hideDiagramBoundary
+  - uid: 'visio!Visio.Interfaces.DocumentViewData#hideDiagramBoundary:member'
     summary: |-
       Hide Diagram Boundary.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartDataLabels object, for use in "chartDataLabels.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,18 +9,18 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartDataLabelsUpdateData.format
-      - excel.Excel.Interfaces.ChartDataLabelsUpdateData.position
-      - excel.Excel.Interfaces.ChartDataLabelsUpdateData.separator
-      - excel.Excel.Interfaces.ChartDataLabelsUpdateData.showBubbleSize
-      - excel.Excel.Interfaces.ChartDataLabelsUpdateData.showCategoryName
-      - excel.Excel.Interfaces.ChartDataLabelsUpdateData.showLegendKey
-      - excel.Excel.Interfaces.ChartDataLabelsUpdateData.showPercentage
-      - excel.Excel.Interfaces.ChartDataLabelsUpdateData.showSeriesName
-      - excel.Excel.Interfaces.ChartDataLabelsUpdateData.showValue
-  - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData.format
+      - 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#format:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#position:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#separator:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#showBubbleSize:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#showCategoryName:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#showLegendKey:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#showPercentage:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#showSeriesName:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#showValue:member'
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#format:member'
     summary: |-
       Represents the format of chart data labels, which includes fill and font formatting.
 
@@ -34,8 +34,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartDataLabelFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelFormatUpdateData
-  - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData.position
+          - 'excel!Excel.Interfaces.ChartDataLabelFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#position:member'
     summary: >-
       DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
       details.
@@ -53,10 +53,8 @@ items:
         "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout";
       return:
         type:
-          - >-
-            Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" |
-            "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
-  - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData.separator
+          - 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#position~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#separator:member'
     summary: |-
       String representing the separator used for the data labels on a chart.
 
@@ -71,7 +69,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData.showBubbleSize
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#showBubbleSize:member'
     summary: |-
       Boolean value representing if the data label bubble size is visible or not.
 
@@ -86,7 +84,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData.showCategoryName
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#showCategoryName:member'
     summary: |-
       Boolean value representing if the data label category name is visible or not.
 
@@ -101,7 +99,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData.showLegendKey
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#showLegendKey:member'
     summary: |-
       Boolean value representing if the data label legend key is visible or not.
 
@@ -116,7 +114,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData.showPercentage
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#showPercentage:member'
     summary: |-
       Boolean value representing if the data label percentage is visible or not.
 
@@ -131,7 +129,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData.showSeriesName
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#showSeriesName:member'
     summary: |-
       Boolean value representing if the data label series name is visible or not.
 
@@ -146,7 +144,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelsUpdateData.showValue
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#showValue:member'
     summary: |-
       Boolean value representing if the data label value is visible or not.
 
@@ -161,3 +159,19 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatUpdateData:interface'
+    name: Excel.Interfaces.ChartDataLabelFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#position~0:complex'
+    name: >-
+      Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left"
+      | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
+    fullName: >-
+      Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left"
+      | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartDataLabelPosition:enum'
+        name: Excel.ChartDataLabelPosition
+        fullName: Excel.ChartDataLabelPosition
+      - name: ' | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"'
+        fullName: ' | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"'

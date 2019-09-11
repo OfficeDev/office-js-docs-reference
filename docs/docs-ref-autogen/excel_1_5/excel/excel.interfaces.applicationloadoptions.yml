@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ApplicationLoadOptions
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
     summary: |-
       Represents the Excel application that manages the workbook.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ApplicationLoadOptions.$all
-      - excel.Excel.Interfaces.ApplicationLoadOptions.calculationMode
-  - uid: excel.Excel.Interfaces.ApplicationLoadOptions.$all
+      - 'excel!Excel.Interfaces.ApplicationLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationMode:member'
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -25,7 +25,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ApplicationLoadOptions.calculationMode
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationMode:member'
     summary: >-
       Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible
       values are: `Automatic`<!-- -->, where Excel controls recalculation; `AutomaticExceptTables`<!-- -->, where Excel

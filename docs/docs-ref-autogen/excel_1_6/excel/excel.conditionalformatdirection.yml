@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalFormatDirection
+  - uid: 'excel!Excel.ConditionalFormatDirection:enum'
     summary: |-
       Represents the direction for a selection.
 
@@ -10,18 +10,18 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalFormatDirection.bottom
-      - excel.Excel.ConditionalFormatDirection.top
-  - uid: excel.Excel.ConditionalFormatDirection.bottom
+      - 'excel!Excel.ConditionalFormatDirection.bottom:member'
+      - 'excel!Excel.ConditionalFormatDirection.top:member'
+  - uid: 'excel!Excel.ConditionalFormatDirection.bottom:member'
     name: bottom
     fullName: bottom
     langs:
       - typeScript
     type: field
     numericValue: '"Bottom"'
-  - uid: excel.Excel.ConditionalFormatDirection.top
+  - uid: 'excel!Excel.ConditionalFormatDirection.top:member'
     name: top
     fullName: top
     langs:

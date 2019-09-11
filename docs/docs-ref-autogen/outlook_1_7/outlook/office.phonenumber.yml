@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.PhoneNumber
+  - uid: 'outlook!Office.PhoneNumber:interface'
     summary: >-
       Represents a phone number identified in an item. Read mode only.
 
@@ -44,12 +44,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.PhoneNumber.originalPhoneString
-      - outlook.Office.PhoneNumber.phoneString
-      - outlook.Office.PhoneNumber.type
-  - uid: outlook.Office.PhoneNumber.originalPhoneString
+      - 'outlook!Office.PhoneNumber#originalPhoneString:member'
+      - 'outlook!Office.PhoneNumber#phoneString:member'
+      - 'outlook!Office.PhoneNumber#type:member'
+  - uid: 'outlook!Office.PhoneNumber#originalPhoneString:member'
     summary: Gets the text that was identified in an item as a phone number.
     name: originalPhoneString
     fullName: originalPhoneString
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.PhoneNumber.phoneString
+  - uid: 'outlook!Office.PhoneNumber#phoneString:member'
     summary: >-
       Gets a string containing a phone number. This string contains only the digits of the telephone number and excludes
       characters like parentheses and hyphens, if they exist in the original item.
@@ -75,7 +75,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.PhoneNumber.type
+  - uid: 'outlook!Office.PhoneNumber#type:member'
     summary: 'Gets a string that identifies the type of phone number: Home, Work, Mobile, Unspecified.'
     name: type
     fullName: type

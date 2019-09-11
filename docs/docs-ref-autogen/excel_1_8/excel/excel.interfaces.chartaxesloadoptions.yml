@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartAxesLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartAxesLoadOptions:interface'
     summary: |-
       Represents the chart axes.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartAxesLoadOptions.$all
-      - excel.Excel.Interfaces.ChartAxesLoadOptions.categoryAxis
-      - excel.Excel.Interfaces.ChartAxesLoadOptions.seriesAxis
-      - excel.Excel.Interfaces.ChartAxesLoadOptions.valueAxis
-  - uid: excel.Excel.Interfaces.ChartAxesLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartAxesLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartAxesLoadOptions#categoryAxis:member'
+      - 'excel!Excel.Interfaces.ChartAxesLoadOptions#seriesAxis:member'
+      - 'excel!Excel.Interfaces.ChartAxesLoadOptions#valueAxis:member'
+  - uid: 'excel!Excel.Interfaces.ChartAxesLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxesLoadOptions.categoryAxis
+  - uid: 'excel!Excel.Interfaces.ChartAxesLoadOptions#categoryAxis:member'
     summary: |-
       Represents the category axis in a chart.
 
@@ -41,8 +41,8 @@ items:
       content: 'categoryAxis?: Excel.Interfaces.ChartAxisLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisLoadOptions
-  - uid: excel.Excel.Interfaces.ChartAxesLoadOptions.seriesAxis
+          - 'excel!Excel.Interfaces.ChartAxisLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAxesLoadOptions#seriesAxis:member'
     summary: |-
       Represents the series axis of a 3-dimensional chart.
 
@@ -56,8 +56,8 @@ items:
       content: 'seriesAxis?: Excel.Interfaces.ChartAxisLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisLoadOptions
-  - uid: excel.Excel.Interfaces.ChartAxesLoadOptions.valueAxis
+          - 'excel!Excel.Interfaces.ChartAxisLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAxesLoadOptions#valueAxis:member'
     summary: |-
       Represents the value axis in an axis.
 
@@ -71,4 +71,7 @@ items:
       content: 'valueAxis?: Excel.Interfaces.ChartAxisLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisLoadOptions
+          - 'excel!Excel.Interfaces.ChartAxisLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions:interface'
+    name: Excel.Interfaces.ChartAxisLoadOptions

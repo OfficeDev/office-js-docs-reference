@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartPlotAreaUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartPlotArea object, for use in "chartPlotArea.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,4 +9,4 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

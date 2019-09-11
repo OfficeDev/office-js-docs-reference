@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ApplicationUpdateData
+  - uid: 'excel!Excel.Interfaces.ApplicationUpdateData:interface'
     summary: 'An interface for updating data on the Application object, for use in "application.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.ApplicationUpdateData
     fullName: Excel.Interfaces.ApplicationUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ApplicationUpdateData.calculationMode
-      - excel.Excel.Interfaces.ApplicationUpdateData.iterativeCalculation
-  - uid: excel.Excel.Interfaces.ApplicationUpdateData.calculationMode
+      - 'excel!Excel.Interfaces.ApplicationUpdateData#calculationMode:member'
+      - 'excel!Excel.Interfaces.ApplicationUpdateData#iterativeCalculation:member'
+  - uid: 'excel!Excel.Interfaces.ApplicationUpdateData#calculationMode:member'
     summary: >-
       Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible
       values are: `Automatic`<!-- -->, where Excel controls recalculation; `AutomaticExceptTables`<!-- -->, where Excel
@@ -30,8 +30,8 @@ items:
       content: 'calculationMode?: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual";'
       return:
         type:
-          - Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual"
-  - uid: excel.Excel.Interfaces.ApplicationUpdateData.iterativeCalculation
+          - 'excel!Excel.Interfaces.ApplicationUpdateData#calculationMode~0:complex'
+  - uid: 'excel!Excel.Interfaces.ApplicationUpdateData#iterativeCalculation:member'
     summary: >-
       Returns the Iterative Calculation settings. In Excel on Windows and Mac, the settings will apply to the Excel
       Application. In Excel on the web and other platforms, the settings will apply to the active workbook.
@@ -47,4 +47,16 @@ items:
       content: 'iterativeCalculation?: Excel.Interfaces.IterativeCalculationUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.IterativeCalculationUpdateData
+          - 'excel!Excel.Interfaces.IterativeCalculationUpdateData:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ApplicationUpdateData#calculationMode~0:complex'
+    name: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual"
+    fullName: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual"
+    spec.typeScript:
+      - uid: 'excel!Excel.CalculationMode:enum'
+        name: Excel.CalculationMode
+        fullName: Excel.CalculationMode
+      - name: ' | "Automatic" | "AutomaticExceptTables" | "Manual"'
+        fullName: ' | "Automatic" | "AutomaticExceptTables" | "Manual"'
+  - uid: 'excel!Excel.Interfaces.IterativeCalculationUpdateData:interface'
+    name: Excel.Interfaces.IterativeCalculationUpdateData

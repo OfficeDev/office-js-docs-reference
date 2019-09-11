@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.DocumentLoadOptions
+  - uid: 'word!Word.Interfaces.DocumentLoadOptions:interface'
     summary: >-
       The Document object is the top level object. A Document object contains one or more sections, content controls,
       and the body that contains the contents of the document.
@@ -12,14 +12,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.DocumentLoadOptions.$all
-      - word.Word.Interfaces.DocumentLoadOptions.allowCloseOnUntitled
-      - word.Word.Interfaces.DocumentLoadOptions.body
-      - word.Word.Interfaces.DocumentLoadOptions.properties
-      - word.Word.Interfaces.DocumentLoadOptions.saved
-  - uid: word.Word.Interfaces.DocumentLoadOptions.$all
+      - 'word!Word.Interfaces.DocumentLoadOptions#$all:member'
+      - 'word!Word.Interfaces.DocumentLoadOptions#allowCloseOnUntitled:member'
+      - 'word!Word.Interfaces.DocumentLoadOptions#body:member'
+      - 'word!Word.Interfaces.DocumentLoadOptions#properties:member'
+      - 'word!Word.Interfaces.DocumentLoadOptions#saved:member'
+  - uid: 'word!Word.Interfaces.DocumentLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentLoadOptions.allowCloseOnUntitled
+  - uid: 'word!Word.Interfaces.DocumentLoadOptions#allowCloseOnUntitled:member'
     summary: >-
       Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this
       document even if this document is untitled. True to close, false otherwise.
@@ -47,7 +47,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentLoadOptions.body
+  - uid: 'word!Word.Interfaces.DocumentLoadOptions#body:member'
     summary: >-
       Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
       etc..
@@ -63,8 +63,8 @@ items:
       content: 'body?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.BodyLoadOptions
-  - uid: word.Word.Interfaces.DocumentLoadOptions.properties
+          - 'word!Word.Interfaces.BodyLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.DocumentLoadOptions#properties:member'
     summary: |-
       Gets the properties of the document.
 
@@ -78,8 +78,8 @@ items:
       content: 'properties?: Word.Interfaces.DocumentPropertiesLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.DocumentPropertiesLoadOptions
-  - uid: word.Word.Interfaces.DocumentLoadOptions.saved
+          - 'word!Word.Interfaces.DocumentPropertiesLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.DocumentLoadOptions#saved:member'
     summary: >-
       Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
       changed since it was saved. Read-only.
@@ -96,3 +96,8 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
+    name: Word.Interfaces.BodyLoadOptions
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions:interface'
+    name: Word.Interfaces.DocumentPropertiesLoadOptions

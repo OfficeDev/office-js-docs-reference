@@ -1,27 +1,27 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.DocumentPropertiesData
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
     summary: An interface describing the data returned by calling "documentProperties.toJSON()".
     name: Excel.Interfaces.DocumentPropertiesData
     fullName: Excel.Interfaces.DocumentPropertiesData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.DocumentPropertiesData.author
-      - excel.Excel.Interfaces.DocumentPropertiesData.category
-      - excel.Excel.Interfaces.DocumentPropertiesData.comments
-      - excel.Excel.Interfaces.DocumentPropertiesData.company
-      - excel.Excel.Interfaces.DocumentPropertiesData.creationDate
-      - excel.Excel.Interfaces.DocumentPropertiesData.custom
-      - excel.Excel.Interfaces.DocumentPropertiesData.keywords
-      - excel.Excel.Interfaces.DocumentPropertiesData.lastAuthor
-      - excel.Excel.Interfaces.DocumentPropertiesData.manager
-      - excel.Excel.Interfaces.DocumentPropertiesData.revisionNumber
-      - excel.Excel.Interfaces.DocumentPropertiesData.subject
-      - excel.Excel.Interfaces.DocumentPropertiesData.title
-  - uid: excel.Excel.Interfaces.DocumentPropertiesData.author
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#author:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#category:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#comments:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#company:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#creationDate:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#custom:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#keywords:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#lastAuthor:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#manager:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#revisionNumber:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#subject:member'
+      - 'excel!Excel.Interfaces.DocumentPropertiesData#title:member'
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#author:member'
     summary: |-
       Gets or sets the author of the workbook.
 
@@ -36,7 +36,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.DocumentPropertiesData.category
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#category:member'
     summary: |-
       Gets or sets the category of the workbook.
 
@@ -51,7 +51,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.DocumentPropertiesData.comments
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#comments:member'
     summary: |-
       Gets or sets the comments of the workbook.
 
@@ -66,7 +66,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.DocumentPropertiesData.company
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#company:member'
     summary: |-
       Gets or sets the company of the workbook.
 
@@ -81,7 +81,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.DocumentPropertiesData.creationDate
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#creationDate:member'
     summary: |-
       Gets the creation date of the workbook. Read only.
 
@@ -95,8 +95,8 @@ items:
       content: 'creationDate?: Date;'
       return:
         type:
-          - Date
-  - uid: excel.Excel.Interfaces.DocumentPropertiesData.custom
+          - '!Date:interface'
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#custom:member'
     summary: |-
       Gets the collection of custom properties of the workbook. Read only.
 
@@ -110,8 +110,8 @@ items:
       content: 'custom?: Excel.Interfaces.CustomPropertyData[];'
       return:
         type:
-          - 'Excel.Interfaces.CustomPropertyData[]'
-  - uid: excel.Excel.Interfaces.DocumentPropertiesData.keywords
+          - 'excel!Excel.Interfaces.DocumentPropertiesData#custom~0:complex'
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#keywords:member'
     summary: |-
       Gets or sets the keywords of the workbook.
 
@@ -126,7 +126,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.DocumentPropertiesData.lastAuthor
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#lastAuthor:member'
     summary: |-
       Gets the last author of the workbook. Read only.
 
@@ -141,7 +141,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.DocumentPropertiesData.manager
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#manager:member'
     summary: |-
       Gets or sets the manager of the workbook.
 
@@ -156,7 +156,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.DocumentPropertiesData.revisionNumber
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#revisionNumber:member'
     summary: |-
       Gets the revision number of the workbook. Read only.
 
@@ -171,7 +171,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.DocumentPropertiesData.subject
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#subject:member'
     summary: |-
       Gets or sets the subject of the workbook.
 
@@ -186,7 +186,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.DocumentPropertiesData.title
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#title:member'
     summary: |-
       Gets or sets the title of the workbook.
 
@@ -201,3 +201,15 @@ items:
       return:
         type:
           - string
+references:
+  - uid: '!Date:interface'
+    name: Date
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData#custom~0:complex'
+    name: 'Excel.Interfaces.CustomPropertyData[]'
+    fullName: 'Excel.Interfaces.CustomPropertyData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.CustomPropertyData:interface'
+        name: Excel.Interfaces.CustomPropertyData
+        fullName: Excel.Interfaces.CustomPropertyData
+      - name: '[]'
+        fullName: '[]'

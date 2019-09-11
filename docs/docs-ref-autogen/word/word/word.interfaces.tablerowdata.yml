@@ -1,25 +1,25 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.TableRowData
+  - uid: 'word!Word.Interfaces.TableRowData:interface'
     summary: An interface describing the data returned by calling "tableRow.toJSON()".
     name: Word.Interfaces.TableRowData
     fullName: Word.Interfaces.TableRowData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.TableRowData.cellCount
-      - word.Word.Interfaces.TableRowData.cells
-      - word.Word.Interfaces.TableRowData.font
-      - word.Word.Interfaces.TableRowData.horizontalAlignment
-      - word.Word.Interfaces.TableRowData.isHeader
-      - word.Word.Interfaces.TableRowData.preferredHeight
-      - word.Word.Interfaces.TableRowData.rowIndex
-      - word.Word.Interfaces.TableRowData.shadingColor
-      - word.Word.Interfaces.TableRowData.values
-      - word.Word.Interfaces.TableRowData.verticalAlignment
-  - uid: word.Word.Interfaces.TableRowData.cellCount
+      - 'word!Word.Interfaces.TableRowData#cellCount:member'
+      - 'word!Word.Interfaces.TableRowData#cells:member'
+      - 'word!Word.Interfaces.TableRowData#font:member'
+      - 'word!Word.Interfaces.TableRowData#horizontalAlignment:member'
+      - 'word!Word.Interfaces.TableRowData#isHeader:member'
+      - 'word!Word.Interfaces.TableRowData#preferredHeight:member'
+      - 'word!Word.Interfaces.TableRowData#rowIndex:member'
+      - 'word!Word.Interfaces.TableRowData#shadingColor:member'
+      - 'word!Word.Interfaces.TableRowData#values:member'
+      - 'word!Word.Interfaces.TableRowData#verticalAlignment:member'
+  - uid: 'word!Word.Interfaces.TableRowData#cellCount:member'
     summary: |-
       Gets the number of cells in the row. Read-only.
 
@@ -34,7 +34,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.TableRowData.cells
+  - uid: 'word!Word.Interfaces.TableRowData#cells:member'
     summary: |-
       Gets cells. Read-only.
 
@@ -48,8 +48,8 @@ items:
       content: 'cells?: Word.Interfaces.TableCellData[];'
       return:
         type:
-          - 'Word.Interfaces.TableCellData[]'
-  - uid: word.Word.Interfaces.TableRowData.font
+          - 'word!Word.Interfaces.TableRowData#cells~0:complex'
+  - uid: 'word!Word.Interfaces.TableRowData#font:member'
     summary: |-
       Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
 
@@ -63,8 +63,8 @@ items:
       content: 'font?: Word.Interfaces.FontData;'
       return:
         type:
-          - word.Word.Interfaces.FontData
-  - uid: word.Word.Interfaces.TableRowData.horizontalAlignment
+          - 'word!Word.Interfaces.FontData:interface'
+  - uid: 'word!Word.Interfaces.TableRowData#horizontalAlignment:member'
     summary: >-
       Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or
       'Justified'.
@@ -80,8 +80,8 @@ items:
       content: 'horizontalAlignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
       return:
         type:
-          - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
-  - uid: word.Word.Interfaces.TableRowData.isHeader
+          - 'word!Word.Interfaces.TableRowData#horizontalAlignment~0:complex'
+  - uid: 'word!Word.Interfaces.TableRowData#isHeader:member'
     summary: >-
       Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the
       Table object.
@@ -98,7 +98,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableRowData.preferredHeight
+  - uid: 'word!Word.Interfaces.TableRowData#preferredHeight:member'
     summary: |-
       Gets and sets the preferred height of the row in points.
 
@@ -113,7 +113,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.TableRowData.rowIndex
+  - uid: 'word!Word.Interfaces.TableRowData#rowIndex:member'
     summary: |-
       Gets the index of the row in its parent table. Read-only.
 
@@ -128,7 +128,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.TableRowData.shadingColor
+  - uid: 'word!Word.Interfaces.TableRowData#shadingColor:member'
     summary: |-
       Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by using the color name.
 
@@ -143,7 +143,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.TableRowData.values
+  - uid: 'word!Word.Interfaces.TableRowData#values:member'
     summary: |-
       Gets and sets the text values in the row, as a 2D Javascript array.
 
@@ -158,7 +158,7 @@ items:
       return:
         type:
           - 'string[][]'
-  - uid: word.Word.Interfaces.TableRowData.verticalAlignment
+  - uid: 'word!Word.Interfaces.TableRowData#verticalAlignment:member'
     summary: |-
       Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
 
@@ -172,4 +172,34 @@ items:
       content: 'verticalAlignment?: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";'
       return:
         type:
-          - Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
+          - 'word!Word.Interfaces.TableRowData#verticalAlignment~0:complex'
+references:
+  - uid: 'word!Word.Interfaces.TableRowData#cells~0:complex'
+    name: 'Word.Interfaces.TableCellData[]'
+    fullName: 'Word.Interfaces.TableCellData[]'
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.TableCellData:interface'
+        name: Word.Interfaces.TableCellData
+        fullName: Word.Interfaces.TableCellData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'word!Word.Interfaces.FontData:interface'
+    name: Word.Interfaces.FontData
+  - uid: 'word!Word.Interfaces.TableRowData#horizontalAlignment~0:complex'
+    name: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+    fullName: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+    spec.typeScript:
+      - uid: 'word!Word.Alignment:enum'
+        name: Word.Alignment
+        fullName: Word.Alignment
+      - name: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+        fullName: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+  - uid: 'word!Word.Interfaces.TableRowData#verticalAlignment~0:complex'
+    name: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
+    fullName: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
+    spec.typeScript:
+      - uid: 'word!Word.VerticalAlignment:enum'
+        name: Word.VerticalAlignment
+        fullName: Word.VerticalAlignment
+      - name: ' | "Mixed" | "Top" | "Center" | "Bottom"'
+        fullName: ' | "Mixed" | "Top" | "Center" | "Bottom"'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalColorScaleCriterion
+  - uid: 'excel!Excel.ConditionalColorScaleCriterion:interface'
     summary: |-
       Represents a Color Scale Criterion which contains a type, value, and a color.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalColorScaleCriterion.color
-      - excel.Excel.ConditionalColorScaleCriterion.formula
-      - excel.Excel.ConditionalColorScaleCriterion.type
-  - uid: excel.Excel.ConditionalColorScaleCriterion.color
+      - 'excel!Excel.ConditionalColorScaleCriterion#color:member'
+      - 'excel!Excel.ConditionalColorScaleCriterion#formula:member'
+      - 'excel!Excel.ConditionalColorScaleCriterion#type:member'
+  - uid: 'excel!Excel.ConditionalColorScaleCriterion#color:member'
     summary: |-
       HTML color code representation of the color scale color. E.g. \#FF0000 represents Red.
 
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ConditionalColorScaleCriterion.formula
+  - uid: 'excel!Excel.ConditionalColorScaleCriterion#formula:member'
     summary: |-
       A number, a formula, or null (if Type is LowestValue).
 
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ConditionalColorScaleCriterion.type
+  - uid: 'excel!Excel.ConditionalColorScaleCriterion#type:member'
     summary: |-
       What the criterion conditional formula should be based on.
 
@@ -61,6 +61,18 @@ items:
         "Percent" | "Formula" | "Percentile";
       return:
         type:
-          - >-
-            Excel.ConditionalFormatColorCriterionType | "Invalid" | "LowestValue" | "HighestValue" | "Number" |
-            "Percent" | "Formula" | "Percentile"
+          - 'excel!Excel.ConditionalColorScaleCriterion#type~0:complex'
+references:
+  - uid: 'excel!Excel.ConditionalColorScaleCriterion#type~0:complex'
+    name: >-
+      Excel.ConditionalFormatColorCriterionType | "Invalid" | "LowestValue" | "HighestValue" | "Number" | "Percent" |
+      "Formula" | "Percentile"
+    fullName: >-
+      Excel.ConditionalFormatColorCriterionType | "Invalid" | "LowestValue" | "HighestValue" | "Number" | "Percent" |
+      "Formula" | "Percentile"
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalFormatColorCriterionType:enum'
+        name: Excel.ConditionalFormatColorCriterionType
+        fullName: Excel.ConditionalFormatColorCriterionType
+      - name: ' | "Invalid" | "LowestValue" | "HighestValue" | "Number" | "Percent" | "Formula" | "Percentile"'
+        fullName: ' | "Invalid" | "LowestValue" | "HighestValue" | "Number" | "Percent" | "Formula" | "Percentile"'

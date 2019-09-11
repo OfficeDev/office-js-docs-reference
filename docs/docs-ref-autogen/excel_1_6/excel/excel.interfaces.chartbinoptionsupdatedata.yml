@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartBinOptionsUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartBinOptions object, for use in "chartBinOptions.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,4 +9,4 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

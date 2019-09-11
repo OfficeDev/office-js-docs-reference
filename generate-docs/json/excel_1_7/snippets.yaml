@@ -1,4 +1,4 @@
-Excel.Application.calculate_1:
+'Excel.Application#calculate:member(2)':
   - |-
     Excel.run(function (ctx) {
         ctx.workbook.application.calculate('Full');
@@ -9,7 +9,7 @@ Excel.Application.calculate_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Application.load_1:
+'Excel.Application#load:member(2)':
   - |-
     Excel.run(function (ctx) {
         var application = ctx.workbook.application;
@@ -23,7 +23,7 @@ Excel.Application.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Application.suspendScreenUpdatingUntilNextSync:
+'Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -51,7 +51,7 @@ Excel.Application.suspendScreenUpdatingUntilNextSync:
 
         console.log(`Ending. Adding ${rowCount * columnCount} cells took ${Date.now() - startTime} milliseconds`);
     });
-Excel.AutoFilter.apply:
+'Excel.AutoFilter#apply:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -61,7 +61,7 @@ Excel.AutoFilter.apply:
         sheet.autoFilter.apply(farmData, 3, { criterion1: "25", filterOn: Excel.FilterOn.topPercent });
         await context.sync();
     });
-Excel.Binding.getRange:
+'Excel.Binding#getRange:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var binding = ctx.workbook.bindings.getItemAt(0);
@@ -76,7 +76,7 @@ Excel.Binding.getRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Binding.getTable:
+'Excel.Binding#getTable:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var binding = ctx.workbook.bindings.getItemAt(0);
@@ -91,7 +91,7 @@ Excel.Binding.getTable:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Binding.getText:
+'Excel.Binding#getText:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var binding = ctx.workbook.bindings.getItemAt(0);
@@ -106,7 +106,7 @@ Excel.Binding.getText:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Binding.load_1:
+'Excel.Binding#load:member(2)':
   - |-
     Excel.run(function (ctx) { 
         var binding = ctx.workbook.bindings.getItemAt(0);
@@ -120,7 +120,7 @@ Excel.Binding.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Binding.onDataChanged:
+'Excel.Binding#onDataChanged:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");    
@@ -132,7 +132,7 @@ Excel.Binding.onDataChanged:
 
         await context.sync();
     });
-Excel.BindingCollection.getItem:
+'Excel.BindingCollection#getItem:member(1)':
   - >-
     // Create a table binding to monitor data changes in the table. 
 
@@ -178,7 +178,7 @@ Excel.BindingCollection.getItem:
             });
         });
     }
-Excel.BindingCollection.getItemAt:
+'Excel.BindingCollection#getItemAt:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var lastPosition = ctx.workbook.bindings.count - 1;
@@ -193,7 +193,7 @@ Excel.BindingCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.BindingCollection.load_1:
+'Excel.BindingCollection#load:member(2)':
   - |-
     Excel.run(function (ctx) { 
         var bindings = ctx.workbook.bindings;
@@ -224,7 +224,7 @@ Excel.BindingCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.CellPropertiesFill.color:
+'Excel.CellPropertiesFill#color:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -296,7 +296,7 @@ Excel.CellPropertiesFill.color:
         sheet.getUsedRange().format.autofitColumns();
         await context.sync();
     });
-Excel.CellPropertiesFillLoadOptions.color:
+'Excel.CellPropertiesFillLoadOptions#color:member':
   - |-
     await Excel.run(async (context) => {
         const cell = context.workbook.getActiveCell();
@@ -321,7 +321,7 @@ Excel.CellPropertiesFillLoadOptions.color:
         console.log(
             `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
     });
-Excel.CellPropertiesFont.color:
+'Excel.CellPropertiesFont#color:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -393,7 +393,7 @@ Excel.CellPropertiesFont.color:
         sheet.getUsedRange().format.autofitColumns();
         await context.sync();
     });
-Excel.CellPropertiesFontLoadOptions.color:
+'Excel.CellPropertiesFontLoadOptions#color:member':
   - |-
     await Excel.run(async (context) => {
         const cell = context.workbook.getActiveCell();
@@ -418,7 +418,7 @@ Excel.CellPropertiesFontLoadOptions.color:
         console.log(
             `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
     });
-Excel.CellPropertiesLoadOptions.address:
+'Excel.CellPropertiesLoadOptions#address:member':
   - |-
     await Excel.run(async (context) => {
         const cell = context.workbook.getActiveCell();
@@ -443,7 +443,7 @@ Excel.CellPropertiesLoadOptions.address:
         console.log(
             `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
     });
-Excel.CellValueConditionalFormat.format:
+'Excel.CellValueConditionalFormat#format:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -455,7 +455,7 @@ Excel.CellValueConditionalFormat.format:
 
         await context.sync();
     });
-Excel.CellValueConditionalFormat.rule:
+'Excel.CellValueConditionalFormat#rule:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -467,7 +467,7 @@ Excel.CellValueConditionalFormat.rule:
 
         await context.sync();
     });
-Excel.Chart.delete:
+'Excel.Chart#delete:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
@@ -479,7 +479,7 @@ Excel.Chart.delete:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Chart.getImage:
+'Excel.Chart#getImage:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
@@ -491,7 +491,7 @@ Excel.Chart.getImage:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Chart.load_1:
+'Excel.Chart#load:member(2)':
   - |-
     // Get a chart named "Chart1"
     Excel.run(function (ctx) { 
@@ -506,7 +506,7 @@ Excel.Chart.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Chart.name:
+'Excel.Chart#name:member':
   - >-
     // Rename the chart to new name, resize the chart to 200 points in both
     height and weight. 
@@ -527,7 +527,7 @@ Excel.Chart.name:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Chart.onActivated:
+'Excel.Chart#onActivated:member':
   - |-
     Excel.run(function (context){
         var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
@@ -539,7 +539,7 @@ Excel.Chart.onActivated:
         });
         return context.sync();
     });
-Excel.Chart.onDeactivated:
+'Excel.Chart#onDeactivated:member':
   - |-
     Excel.run(function (context){
         var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
@@ -551,7 +551,7 @@ Excel.Chart.onDeactivated:
         });
         return context.sync();
     });
-Excel.Chart.setData_1:
+'Excel.Chart#setData:member(1)':
   - |-
     // Set the sourceData to be "A1:B4" and seriesBy to be "Columns"
     Excel.run(function (ctx) { 
@@ -565,7 +565,7 @@ Excel.Chart.setData_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Chart.setPosition:
+'Excel.Chart#setPosition:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Charts";
@@ -583,7 +583,7 @@ Excel.Chart.setPosition:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartAxis.displayUnit:
+'Excel.ChartAxis#displayUnit:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -599,7 +599,7 @@ Excel.ChartAxis.displayUnit:
 
         console.log("The vertical axis display unit is: " + valueAxis.displayUnit);
     });
-Excel.ChartAxis.load_1:
+'Excel.ChartAxis#load:member(2)':
   - |-
     // Get the maximum of Chart Axis from Chart1
     Excel.run(function (ctx) { 
@@ -632,7 +632,7 @@ Excel.ChartAxis.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartAxis.showDisplayUnitLabel:
+'Excel.ChartAxis#showDisplayUnitLabel:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -644,7 +644,7 @@ Excel.ChartAxis.showDisplayUnitLabel:
 
         await context.sync();
     });
-Excel.ChartAxisTitle.load_1:
+'Excel.ChartAxisTitle#load:member(2)':
   - |-
     // Get the text of Chart Axis Title from the value axis of Chart1.
     Excel.run(function (ctx) { 
@@ -674,7 +674,7 @@ Excel.ChartAxisTitle.load_1:
                 console.log("Debug info: " + JSON.stringify(error.debugInfo));
             }
     });
-Excel.ChartCollection.add_1:
+'Excel.ChartCollection#add:member(1)':
   - |-
     // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
     // with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
@@ -692,7 +692,7 @@ Excel.ChartCollection.add_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartCollection.getItem:
+'Excel.ChartCollection#getItem:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var chartname = 'Chart1';
@@ -732,7 +732,7 @@ Excel.ChartCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartCollection.getItemAt:
+'Excel.ChartCollection#getItemAt:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var lastPosition = ctx.workbook.worksheets.getItem("Sheet1").charts.count - 1;
@@ -746,7 +746,7 @@ Excel.ChartCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartCollection.load_1:
+'Excel.ChartCollection#load:member(2)':
   - |-
     Excel.run(function (ctx) { 
         var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
@@ -777,7 +777,7 @@ Excel.ChartCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartCollection.onActivated:
+'Excel.ChartCollection#onActivated:member':
   - |-
     Excel.run(function (context){
         context.workbook.worksheets.getActiveWorksheet()
@@ -789,7 +789,7 @@ Excel.ChartCollection.onActivated:
         });
         return context.sync();
     });
-Excel.ChartCollection.onAdded:
+'Excel.ChartCollection#onAdded:member':
   - |-
     Excel.run(function (context){
         context.workbook.worksheets.getActiveWorksheet()
@@ -801,7 +801,7 @@ Excel.ChartCollection.onAdded:
         });
         return context.sync();
     });
-Excel.ChartCollection.onDeactivated:
+'Excel.ChartCollection#onDeactivated:member':
   - |-
     Excel.run(function (context){
         context.workbook.worksheets.getActiveWorksheet()
@@ -813,7 +813,7 @@ Excel.ChartCollection.onDeactivated:
         });
         return context.sync();
     });
-Excel.ChartCollection.onDeleted:
+'Excel.ChartCollection#onDeleted:member':
   - |-
     Excel.run(function (context){
         context.workbook.worksheets.getActiveWorksheet()
@@ -825,7 +825,7 @@ Excel.ChartCollection.onDeleted:
         });
         return context.sync();
     });
-Excel.ChartDataLabels.load_1:
+'Excel.ChartDataLabels#load:member(2)':
   - >-
     // Make Series Name shown in Datalabels and set the position of datalabels
     to be "top";
@@ -844,7 +844,7 @@ Excel.ChartDataLabels.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartFill.clear:
+'Excel.ChartFill#clear:member(1)':
   - >-
     // Clear the line format of the major Gridlines on value axis of the Chart
     named "Chart1"
@@ -861,7 +861,7 @@ Excel.ChartFill.clear:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartFill.setSolidColor:
+'Excel.ChartFill#setSolidColor:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
@@ -889,7 +889,7 @@ Excel.ChartFill.setSolidColor:
 
         await context.sync();        
     });
-Excel.ChartFont:
+'Excel.ChartFont:class':
   - |-
     // Set chart title to be Calbri, size 10, bold and in red. 
     Excel.run(function (ctx) { 
@@ -907,7 +907,7 @@ Excel.ChartFont:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartGridlines.load_1:
+'Excel.ChartGridlines#load:member(2)':
   - |-
     // Get the visible of Major Gridlines on value axis of Chart1
     Excel.run(function (ctx) { 
@@ -937,7 +937,7 @@ Excel.ChartGridlines.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartLegend.load_1:
+'Excel.ChartLegend#load:member(2)':
   - |-
     // Get the position of Chart Legend from Chart1
     Excel.run(function (ctx) { 
@@ -969,7 +969,7 @@ Excel.ChartLegend.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartLegendFormat.font:
+'Excel.ChartLegendFormat#font:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -988,7 +988,7 @@ Excel.ChartLegendFormat.font:
 
         await context.sync();
     });
-Excel.ChartLineFormat.clear:
+'Excel.ChartLineFormat#clear:member(1)':
   - |-
     // Set to show legend of Chart1 and make it on top of the chart.
     Excel.run(function (ctx) { 
@@ -1003,7 +1003,7 @@ Excel.ChartLineFormat.clear:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartLineFormat.load_1:
+'Excel.ChartLineFormat#load:member(2)':
   - |-
     // Set chart major gridlines on value axis to be red.
     Excel.run(function (ctx) {
@@ -1018,7 +1018,7 @@ Excel.ChartLineFormat.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartPointsCollection.getItemAt:
+'Excel.ChartPointsCollection#getItemAt:member(1)':
   - |-
     // Set the border color for the first points in the points collection
     Excel.run(function (ctx) { 
@@ -1033,7 +1033,7 @@ Excel.ChartPointsCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartPointsCollection.load_1:
+'Excel.ChartPointsCollection#load:member(2)':
   - |-
     // Get the names of points in the points collection
     Excel.run(function (ctx) { 
@@ -1064,7 +1064,7 @@ Excel.ChartPointsCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartSeries.delete:
+'Excel.ChartSeries#delete:member(1)':
   - |-
     await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1081,7 +1081,7 @@ Excel.ChartSeries.delete:
 
       await context.sync();
     });
-Excel.ChartSeries.load_1:
+'Excel.ChartSeries#load:member(2)':
   - |-
     // Rename the 1st series of Chart1 to "New Series Name"
     Excel.run(function (ctx) { 
@@ -1096,7 +1096,7 @@ Excel.ChartSeries.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartSeries.markerBackgroundColor:
+'Excel.ChartSeries#markerBackgroundColor:member':
   - |-
     await Excel.run(async (context) => {
         let sheet = context.workbook.worksheets.getItem("Sample");
@@ -1125,7 +1125,7 @@ Excel.ChartSeries.markerBackgroundColor:
 
         await context.sync();
     });
-Excel.ChartSeries.markerForegroundColor:
+'Excel.ChartSeries#markerForegroundColor:member':
   - |-
     await Excel.run(async (context) => {
         let sheet = context.workbook.worksheets.getItem("Sample");
@@ -1154,7 +1154,7 @@ Excel.ChartSeries.markerForegroundColor:
 
         await context.sync();
     });
-Excel.ChartSeries.markerSize:
+'Excel.ChartSeries#markerSize:member':
   - |-
     await Excel.run(async (context) => {
         let sheet = context.workbook.worksheets.getItem("Sample");
@@ -1183,7 +1183,7 @@ Excel.ChartSeries.markerSize:
 
         await context.sync();
     });
-Excel.ChartSeries.markerStyle:
+'Excel.ChartSeries#markerStyle:member':
   - |-
     await Excel.run(async (context) => {
         let sheet = context.workbook.worksheets.getItem("Sample");
@@ -1212,7 +1212,7 @@ Excel.ChartSeries.markerStyle:
 
         await context.sync();
     });
-Excel.ChartSeries.setValues:
+'Excel.ChartSeries#setValues:member(1)':
   - |-
     await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1228,7 +1228,7 @@ Excel.ChartSeries.setValues:
 
       await context.sync();
     });
-Excel.ChartSeriesCollection.getItemAt:
+'Excel.ChartSeriesCollection#getItemAt:member(1)':
   - |-
     // Get the name of the first series in the series collection.
     Excel.run(function (ctx) { 
@@ -1243,7 +1243,7 @@ Excel.ChartSeriesCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartSeriesCollection.load_1:
+'Excel.ChartSeriesCollection#load:member(2)':
   - |-
     // Getting the names of series in the series collection.
     Excel.run(function (ctx) { 
@@ -1275,7 +1275,7 @@ Excel.ChartSeriesCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartTitle.getSubstring:
+'Excel.ChartTitle#getSubstring:member(1)':
   - |-
     await Excel.run(async (context) => {
         let sheet = context.workbook.worksheets.getItem("Sample");
@@ -1285,7 +1285,7 @@ Excel.ChartTitle.getSubstring:
         chart.title.getSubstring(0, 7).font.color = "Yellow";
         await context.sync();
     });
-Excel.ChartTitle.load_1:
+'Excel.ChartTitle#load:member(2)':
   - |-
     // Get the text of Chart Title from Chart1.
     Excel.run(function (ctx) { 
@@ -1322,7 +1322,7 @@ Excel.ChartTitle.load_1:
             }
         });
     });
-Excel.ChartTitle.textOrientation:
+'Excel.ChartTitle#textOrientation:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1331,7 +1331,7 @@ Excel.ChartTitle.textOrientation:
 
         await context.sync();
     });
-Excel.ChartTrendline.type:
+'Excel.ChartTrendline#type:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1346,7 +1346,7 @@ Excel.ChartTrendline.type:
 
         console.log("The trendline type is:" + trendline.type);  
     });
-Excel.ChartTrendlineCollection.add:
+'Excel.ChartTrendlineCollection#add:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1358,7 +1358,7 @@ Excel.ChartTrendlineCollection.add:
 
         await context.sync();
     });
-Excel.ChartTrendlineFormat.line:
+'Excel.ChartTrendlineFormat#line:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1390,7 +1390,7 @@ Excel.ChartTrendlineFormat.line:
 
         console.log("The trendline color has been set to:" + line.color);
     });
-Excel.ColorScaleConditionalFormat.criteria:
+'Excel.ColorScaleConditionalFormat#criteria:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1406,20 +1406,20 @@ Excel.ColorScaleConditionalFormat.criteria:
 
         await context.sync();
     });
-Excel.Comment.content:
+'Excel.Comment#content:member':
   - |-
     await Excel.run(async (context) => {
         const comment = context.workbook.comments.getItemAt(0);
         comment.content = "PLEASE add headers here.";
         await context.sync();
     });
-Excel.Comment.delete:
+'Excel.Comment#delete:member(1)':
   - |-
     await Excel.run(async (context) => {
         context.workbook.comments.getItemByCell("Comments!A2").delete();
         await context.sync();
     });
-Excel.Comment.load_2:
+'Excel.Comment#load:member(2)':
   - |-
     await Excel.run(async (context) => {
         const comment = context.workbook.comments.getItemByCell("Comments!A2");
@@ -1429,7 +1429,7 @@ Excel.Comment.load_2:
         console.log(`${comment.creationDate.toDateString()}: ${comment.authorName} (${comment.authorEmail})`);
         await context.sync();
     });
-Excel.CommentCollection.add:
+'Excel.CommentCollection#add:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Comments");
@@ -1438,14 +1438,14 @@ Excel.CommentCollection.add:
         sheet.comments.add("TODO: add data.", "A2");
         await context.sync();
     });
-Excel.CommentReply.content:
+'Excel.CommentReply#content:member':
   - |-
     await Excel.run(async (context) => {
         const comment = context.workbook.comments.getItemAt(0);
         comment.content = "PLEASE add headers here.";
         await context.sync();
     });
-Excel.CommentReply.delete:
+'Excel.CommentReply#delete:member(1)':
   - |-
     await Excel.run(async (context) => {
         var comment = context.workbook.comments.getItemAt(0);
@@ -1455,14 +1455,14 @@ Excel.CommentReply.delete:
         comment.replies.getItemAt(0).delete();
         await context.sync();
     });
-Excel.CommentReplyCollection.add:
+'Excel.CommentReplyCollection#add:member(1)':
   - |-
     await Excel.run(async (context) => {
         const comment = context.workbook.comments.getItemAt(0);
         comment.replies.add("Do I have to?");
         await context.sync();
     });
-Excel.ConditionalCellValueRule.formula1:
+'Excel.ConditionalCellValueRule#formula1:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1474,7 +1474,7 @@ Excel.ConditionalCellValueRule.formula1:
 
         await context.sync();
     });
-Excel.ConditionalCellValueRule.operator:
+'Excel.ConditionalCellValueRule#operator:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1486,7 +1486,7 @@ Excel.ConditionalCellValueRule.operator:
 
         await context.sync();
     });
-Excel.ConditionalFormat.cellValue:
+'Excel.ConditionalFormat#cellValue:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1498,7 +1498,7 @@ Excel.ConditionalFormat.cellValue:
 
         await context.sync();
     });
-Excel.ConditionalFormat.colorScale:
+'Excel.ConditionalFormat#colorScale:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1514,7 +1514,7 @@ Excel.ConditionalFormat.colorScale:
 
         await context.sync();
     });
-Excel.ConditionalFormat.custom:
+'Excel.ConditionalFormat#custom:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1525,7 +1525,7 @@ Excel.ConditionalFormat.custom:
 
         await context.sync();
     });
-Excel.ConditionalFormat.dataBar:
+'Excel.ConditionalFormat#dataBar:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1536,7 +1536,7 @@ Excel.ConditionalFormat.dataBar:
 
         await context.sync();
     });
-Excel.ConditionalFormat.getRange:
+'Excel.ConditionalFormat#getRange:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1563,7 +1563,7 @@ Excel.ConditionalFormat.getRange:
             console.log("No conditional formats applied.");
         }
     });
-Excel.ConditionalFormat.iconSet:
+'Excel.ConditionalFormat#iconSet:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1603,7 +1603,7 @@ Excel.ConditionalFormat.iconSet:
 
         await context.sync();
     });
-Excel.ConditionalFormat.preset:
+'Excel.ConditionalFormat#preset:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1615,7 +1615,7 @@ Excel.ConditionalFormat.preset:
 
         await context.sync();
     });
-Excel.ConditionalFormat.textComparison:
+'Excel.ConditionalFormat#textComparison:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1627,7 +1627,7 @@ Excel.ConditionalFormat.textComparison:
 
         await context.sync();
     });
-Excel.ConditionalFormat.type:
+'Excel.ConditionalFormat#type:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1654,7 +1654,7 @@ Excel.ConditionalFormat.type:
             console.log("No conditional formats applied.");
         }
     });
-Excel.ConditionalFormatCollection.add:
+'Excel.ConditionalFormatCollection#add:member(1)':
   - |-
     Excel.run(function (ctx) {
         var sheetName = "Sheet1";
@@ -1686,7 +1686,7 @@ Excel.ConditionalFormatCollection.add:
 
         await context.sync();
     });
-Excel.ConditionalFormatCollection.clearAll:
+'Excel.ConditionalFormatCollection#clearAll:member(1)':
   - |-
     Excel.run(function (ctx) {
         var sheetName = "Sheet1";
@@ -1713,7 +1713,7 @@ Excel.ConditionalFormatCollection.clearAll:
 
         $(".conditional-formats").hide();
     });
-Excel.ConditionalFormatCollection.getCount:
+'Excel.ConditionalFormatCollection#getCount:member(1)':
   - |-
     Excel.run(function (ctx) {
         var sheetName = "Sheet1";
@@ -1732,7 +1732,7 @@ Excel.ConditionalFormatCollection.getCount:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ConditionalFormatCollection.getItem:
+'Excel.ConditionalFormatCollection#getItem:member(1)':
   - |-
     Excel.run(function (ctx) {
         var sheetName = "Sheet1";
@@ -1749,7 +1749,7 @@ Excel.ConditionalFormatCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ConditionalFormatCollection.getItemAt:
+'Excel.ConditionalFormatCollection#getItemAt:member(1)':
   - |-
     Excel.run(function (ctx) {
         var sheetName = "Sheet1";
@@ -1792,7 +1792,7 @@ Excel.ConditionalFormatCollection.getItemAt:
             console.log("No conditional formats applied.");
         }
     });
-Excel.ConditionalFormatRule.formula:
+'Excel.ConditionalFormatRule#formula:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1803,7 +1803,7 @@ Excel.ConditionalFormatRule.formula:
 
         await context.sync();
     });
-Excel.ConditionalIconCriterion.formula:
+'Excel.ConditionalIconCriterion#formula:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1843,7 +1843,7 @@ Excel.ConditionalIconCriterion.formula:
 
         await context.sync();
     });
-Excel.ConditionalIconCriterion.operator:
+'Excel.ConditionalIconCriterion#operator:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1894,7 +1894,7 @@ Excel.ConditionalIconCriterion.operator:
 
         await context.sync();
     });
-Excel.ConditionalIconCriterion.type:
+'Excel.ConditionalIconCriterion#type:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1934,7 +1934,7 @@ Excel.ConditionalIconCriterion.type:
 
         await context.sync();
     });
-Excel.ConditionalPresetCriteriaRule.criterion:
+'Excel.ConditionalPresetCriteriaRule#criterion:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1946,7 +1946,7 @@ Excel.ConditionalPresetCriteriaRule.criterion:
 
         await context.sync();
     });
-Excel.ConditionalTextComparisonRule.text:
+'Excel.ConditionalTextComparisonRule#text:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1958,7 +1958,7 @@ Excel.ConditionalTextComparisonRule.text:
 
         await context.sync();
     });
-Excel.CustomConditionalFormat.format:
+'Excel.CustomConditionalFormat#format:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -1969,7 +1969,7 @@ Excel.CustomConditionalFormat.format:
 
         await context.sync();
     });
-Excel.CustomConditionalFormat.rule:
+'Excel.CustomConditionalFormat#rule:member':
   - |-
     Excel.run(function (ctx) {
         var sheet = ctx.workbook.worksheets.getActiveWorksheet();
@@ -1988,7 +1988,7 @@ Excel.CustomConditionalFormat.rule:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.CustomXmlPart.delete:
+'Excel.CustomXmlPart#delete:member(1)':
   - |-
     await Excel.run(async (context) => {
         const settings = context.workbook.settings;
@@ -2017,7 +2017,7 @@ Excel.CustomXmlPart.delete:
             await context.sync();
         }
     });
-Excel.CustomXmlPart.getXml:
+'Excel.CustomXmlPart#getXml:member(1)':
   - |-
     await Excel.run(async (context) => {
         // You must have the xmlns attribute to populate the 
@@ -2038,7 +2038,7 @@ Excel.CustomXmlPart.getXml:
 
         await context.sync();
     });
-Excel.CustomXmlPart.id:
+'Excel.CustomXmlPart#id:member':
   - |-
     await Excel.run(async (context) => {
         // You must have the xmlns attribute to populate the 
@@ -2059,7 +2059,7 @@ Excel.CustomXmlPart.id:
 
         await context.sync();
     });
-Excel.CustomXmlPart.setXml:
+'Excel.CustomXmlPart#setXml:member(1)':
   - |-
     await Excel.run(async (context) => {
         const settings = context.workbook.settings;
@@ -2080,7 +2080,7 @@ Excel.CustomXmlPart.setXml:
             await context.sync();
         }
     });
-Excel.CustomXmlPartCollection.add:
+'Excel.CustomXmlPartCollection#add:member(1)':
   - |-
     await Excel.run(async (context) => {
         // You must have the xmlns attribute to populate the 
@@ -2101,7 +2101,7 @@ Excel.CustomXmlPartCollection.add:
 
         await context.sync();
     });
-Excel.CustomXmlPartCollection.getByNamespace:
+'Excel.CustomXmlPartCollection#getByNamespace:member(1)':
   - |-
     await Excel.run(async (context) => {
         $("#display-xml").text("");
@@ -2130,7 +2130,7 @@ Excel.CustomXmlPartCollection.getByNamespace:
 
         await context.sync();
     });
-Excel.CustomXmlPartCollection.getItem:
+'Excel.CustomXmlPartCollection#getItem:member(1)':
   - |-
     await Excel.run(async (context) => {
         const settings = context.workbook.settings;
@@ -2151,7 +2151,7 @@ Excel.CustomXmlPartCollection.getItem:
             await context.sync();
         }
     });
-Excel.CustomXmlPartScopedCollection.getCount:
+'Excel.CustomXmlPartScopedCollection#getCount:member(1)':
   - |-
     await Excel.run(async (context) => {
         $("#display-xml").text("");
@@ -2180,7 +2180,7 @@ Excel.CustomXmlPartScopedCollection.getCount:
 
         await context.sync();
     });
-Excel.CustomXmlPartScopedCollection.getItemOrNullObject:
+'Excel.CustomXmlPartScopedCollection#getItemOrNullObject:member(1)':
   - |-
     await Excel.run(async (context) => {
         const settings = context.workbook.settings;
@@ -2209,7 +2209,7 @@ Excel.CustomXmlPartScopedCollection.getItemOrNullObject:
             await context.sync();
         }
     });
-Excel.CustomXmlPartScopedCollection.getOnlyItem:
+'Excel.CustomXmlPartScopedCollection#getOnlyItem:member(1)':
   - |-
     await Excel.run(async (context) => {
         $("#display-xml").text("");
@@ -2238,7 +2238,7 @@ Excel.CustomXmlPartScopedCollection.getOnlyItem:
 
         await context.sync();
     });
-Excel.DataBarConditionalFormat.barDirection:
+'Excel.DataBarConditionalFormat#barDirection:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -2249,7 +2249,7 @@ Excel.DataBarConditionalFormat.barDirection:
 
         await context.sync();
     });
-Excel.DataPivotHierarchy.name:
+'Excel.DataPivotHierarchy#name:member':
   - |-
     await Excel.run(async (context) => {
         const dataHierarchies = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales").dataHierarchies
@@ -2260,7 +2260,7 @@ Excel.DataPivotHierarchy.name:
         dataHierarchies.items[1].name = "Wholesale";
         await context.sync();
     });
-Excel.DataPivotHierarchy.showAs:
+'Excel.DataPivotHierarchy#showAs:member':
   - |-
     await Excel.run(async (context) => {
         const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
@@ -2283,7 +2283,7 @@ Excel.DataPivotHierarchy.showAs:
         wholesaleDataHierarchy.showAs = wholesaleShowAs;
         await context.sync();
     });
-Excel.DataValidation.errorAlert:
+'Excel.DataValidation#errorAlert:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Decision");
@@ -2312,7 +2312,7 @@ Excel.DataValidation.errorAlert:
 
         await context.sync();
     });
-Excel.DataValidation.prompt:
+'Excel.DataValidation#prompt:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Decision");
@@ -2345,7 +2345,7 @@ Excel.DataValidation.prompt:
 
         await context.sync();
     });
-Excel.DataValidation.rule:
+'Excel.DataValidation#rule:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Decision");
@@ -2368,7 +2368,7 @@ Excel.DataValidation.rule:
 
         await context.sync();
     });
-Excel.DataValidationRule.list:
+'Excel.DataValidationRule#list:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Decision");
@@ -2391,7 +2391,7 @@ Excel.DataValidationRule.list:
 
         await context.sync();
     });
-Excel.DataValidationRule.wholeNumber:
+'Excel.DataValidationRule#wholeNumber:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Decision");
@@ -2424,7 +2424,7 @@ Excel.DataValidationRule.wholeNumber:
 
         await context.sync();
     });
-Excel.IconSetConditionalFormat.criteria:
+'Excel.IconSetConditionalFormat#criteria:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -2464,7 +2464,7 @@ Excel.IconSetConditionalFormat.criteria:
 
         await context.sync();
     });
-Excel.IconSetConditionalFormat.style:
+'Excel.IconSetConditionalFormat#style:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -2504,7 +2504,7 @@ Excel.IconSetConditionalFormat.style:
 
         await context.sync();
     });
-Excel.Image.format:
+'Excel.Image#format:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -2515,7 +2515,7 @@ Excel.Image.format:
         console.log("The image's format is: " + image.format);
         await context.sync();
     });
-Excel.Line.connectBeginShape:
+'Excel.Line#connectBeginShape:member(1)':
   - |-
     await Excel.run(async (context) => {
         const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
@@ -2524,7 +2524,7 @@ Excel.Line.connectBeginShape:
         line.connectEndShape(shapes.getItem("Right"), 0);
         await context.sync();
     });
-Excel.Line.connectEndShape:
+'Excel.Line#connectEndShape:member(1)':
   - |-
     await Excel.run(async (context) => {
         const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
@@ -2533,7 +2533,7 @@ Excel.Line.connectEndShape:
         line.connectEndShape(shapes.getItem("Right"), 0);
         await context.sync();
     });
-Excel.Line.disconnectBeginShape:
+'Excel.Line#disconnectBeginShape:member(1)':
   - |-
     await Excel.run(async (context) => {
         const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
@@ -2542,7 +2542,7 @@ Excel.Line.disconnectBeginShape:
         line.disconnectEndShape();
         await context.sync();
     });
-Excel.Line.disconnectEndShape:
+'Excel.Line#disconnectEndShape:member(1)':
   - |-
     await Excel.run(async (context) => {
         const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
@@ -2551,7 +2551,7 @@ Excel.Line.disconnectEndShape:
         line.disconnectEndShape();
         await context.sync();
     });
-Excel.NamedItem.delete:
+'Excel.NamedItem#delete:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -2570,7 +2570,7 @@ Excel.NamedItem.delete:
 
         await context.sync();
     });
-Excel.NamedItem.formula:
+'Excel.NamedItem#formula:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -2591,7 +2591,7 @@ Excel.NamedItem.formula:
             console.log(`Just updated the named item "${myNamedItem.name}" -- it's now located here: ${myNamedItem.formula}`);
         }
     });
-Excel.NamedItem.getRange:
+'Excel.NamedItem#getRange:member(1)':
   - |-
     // Returns the Range object that is associated with the name. 
     // null if the name is not of the type Range.
@@ -2609,7 +2609,7 @@ Excel.NamedItem.getRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.NamedItem.load_1:
+'Excel.NamedItem#load:member(2)':
   - |-
     Excel.run(function (ctx) { 
         var names = ctx.workbook.names;
@@ -2624,7 +2624,7 @@ Excel.NamedItem.load_1:
                 console.log("Debug info: " + JSON.stringify(error.debugInfo));
             }
     });
-Excel.NamedItemCollection.add:
+'Excel.NamedItemCollection#add:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -2635,7 +2635,7 @@ Excel.NamedItemCollection.add:
 
         await context.sync();
     });
-Excel.NamedItemCollection.getItem:
+'Excel.NamedItemCollection#getItem:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = 'Sheet1';
@@ -2650,7 +2650,7 @@ Excel.NamedItemCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.NamedItemCollection.load_1:
+'Excel.NamedItemCollection#load:member(2)':
   - |-
     Excel.run(function (ctx) { 
         var nameditems = ctx.workbook.names;
@@ -2668,14 +2668,14 @@ Excel.NamedItemCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.PageBreakCollection.add:
+'Excel.PageBreakCollection#add:member(1)':
   - |-
     await Excel.run(async (context) => {
         const farmSheet = context.workbook.worksheets.getItem("Print");
         farmSheet.horizontalPageBreaks.add("A21:E21");
         await context.sync();
     });
-Excel.PageLayout.centerHorizontally:
+'Excel.PageLayout#centerHorizontally:member':
   - |-
     await Excel.run(async (context) => {
         const farmSheet = context.workbook.worksheets.getItem("Print");
@@ -2683,7 +2683,7 @@ Excel.PageLayout.centerHorizontally:
         farmSheet.pageLayout.centerVertically = true;
         await context.sync();
     });
-Excel.PageLayout.centerVertically:
+'Excel.PageLayout#centerVertically:member':
   - |-
     await Excel.run(async (context) => {
         const farmSheet = context.workbook.worksheets.getItem("Print");
@@ -2691,35 +2691,35 @@ Excel.PageLayout.centerVertically:
         farmSheet.pageLayout.centerVertically = true;
         await context.sync();
     });
-Excel.PageLayout.orientation:
+'Excel.PageLayout#orientation:member':
   - |-
     await Excel.run(async (context) => {
         const farmSheet = context.workbook.worksheets.getItem("Print");
         farmSheet.pageLayout.orientation = Excel.PageOrientation.landscape;
         await context.sync();
     });
-Excel.PageLayout.setPrintArea:
+'Excel.PageLayout#setPrintArea:member(1)':
   - |-
     await Excel.run(async (context) => {
         const farmSheet = context.workbook.worksheets.getItem("Print");
         farmSheet.pageLayout.setPrintArea("A1:D41");
         await context.sync();
     });
-Excel.PageLayout.setPrintTitleRows:
+'Excel.PageLayout#setPrintTitleRows:member(1)':
   - |-
     await Excel.run(async (context) => {
         const farmSheet = context.workbook.worksheets.getItem("Print");
         farmSheet.pageLayout.setPrintTitleRows("$1:$1");
         await context.sync();
     });
-Excel.PageLayout.zoom:
+'Excel.PageLayout#zoom:member':
   - |-
     await Excel.run(async (context) => {
         const farmSheet = context.workbook.worksheets.getItem("Print");
         farmSheet.pageLayout.zoom = { scale: 200 };
         await context.sync();
     });
-Excel.PivotLayout.getDataBodyRange:
+'Excel.PivotLayout#getDataBodyRange:member(1)':
   - |-
     await Excel.run(async (context) => {
         const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
@@ -2737,7 +2737,7 @@ Excel.PivotLayout.getDataBodyRange:
         masterTotalRange.formulas = [["All Crates", "=SUM(" + grandTotalRange.address + ")"]];
         await context.sync();
     });
-Excel.PivotTable.columnHierarchies:
+'Excel.PivotTable#columnHierarchies:member':
   - |-
     await Excel.run(async (context) => {
         const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");       
@@ -2756,7 +2756,7 @@ Excel.PivotTable.columnHierarchies:
 
         await context.sync();
     });
-Excel.PivotTable.dataHierarchies:
+'Excel.PivotTable#dataHierarchies:member':
   - |-
     await Excel.run(async (context) => {
         const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
@@ -2765,14 +2765,14 @@ Excel.PivotTable.dataHierarchies:
 
         await context.sync();
     });
-Excel.PivotTable.delete:
+'Excel.PivotTable#delete:member(1)':
   - |-
     await Excel.run(async (context) => {
         context.workbook.worksheets.getItem("Pivot").pivotTables.getItem("Farm Sales").delete();
 
         await context.sync();
     });
-Excel.PivotTable.filterHierarchies:
+'Excel.PivotTable#filterHierarchies:member':
   - |-
     async function filter(functionType: Excel.AggregationFunction) {
         await Excel.run(async (context) => {
@@ -2789,7 +2789,7 @@ Excel.PivotTable.filterHierarchies:
             }
         });
     }
-Excel.PivotTable.layout:
+'Excel.PivotTable#layout:member':
   - |-
     await Excel.run(async (context) => {
         const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
@@ -2807,7 +2807,7 @@ Excel.PivotTable.layout:
         await context.sync();
         console.log("Pivot layout is now " + pivotTable.layout.layoutType);
     });
-Excel.PivotTableCollection.add:
+'Excel.PivotTableCollection#add:member(1)':
   - |-
     await Excel.run(async (context) => {
         const rangeToAnalyze = context.workbook.worksheets.getItem("Data").getRange("A1:E21");
@@ -2816,7 +2816,7 @@ Excel.PivotTableCollection.add:
 
         await context.sync();
     });
-Excel.PresetCriteriaConditionalFormat.rule:
+'Excel.PresetCriteriaConditionalFormat#rule:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -2838,7 +2838,7 @@ Excel.PresetCriteriaConditionalFormat.rule:
 
         await context.sync();
     });
-Excel.Range.clear:
+'Excel.Range#clear:member(1)':
   - |-
     // Below example clears format and contents of the range. 
     Excel.run(function (ctx) { 
@@ -2853,7 +2853,7 @@ Excel.Range.clear:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.copyFrom:
+'Excel.Range#copyFrom:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -2865,7 +2865,7 @@ Excel.Range.copyFrom:
         sheet.getRange("G2").copyFrom("A1:E1", Excel.RangeCopyType.formulas);
         await context.sync();
     });
-Excel.Range.delete_1:
+'Excel.Range#delete:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -2879,7 +2879,7 @@ Excel.Range.delete_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.find:
+'Excel.Range#find:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -2900,7 +2900,7 @@ Excel.Range.find:
 
         console.log(foundRange.address);
     });
-Excel.Range.findOrNullObject:
+'Excel.Range#findOrNullObject:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -2921,7 +2921,7 @@ Excel.Range.findOrNullObject:
             console.log(foundRange.address);
         }
     });
-Excel.Range.getBoundingRect:
+'Excel.Range#getBoundingRect:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -2938,7 +2938,7 @@ Excel.Range.getBoundingRect:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getCell:
+'Excel.Range#getCell:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -2956,7 +2956,7 @@ Excel.Range.getCell:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getCellProperties:
+'Excel.Range#getCellProperties:member(1)':
   - |-
     await Excel.run(async (context) => {
         const cell = context.workbook.getActiveCell();
@@ -2981,7 +2981,7 @@ Excel.Range.getCellProperties:
         console.log(
             `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
     });
-Excel.Range.getColumn:
+'Excel.Range#getColumn:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet19";
@@ -2997,7 +2997,7 @@ Excel.Range.getColumn:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getEntireColumn:
+'Excel.Range#getEntireColumn:member(1)':
   - |-
     // Note: the grid properties of the Range (values, numberFormat, formulas) 
     // contains null since the Range in question is unbounded.
@@ -3016,7 +3016,7 @@ Excel.Range.getEntireColumn:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getEntireRow:
+'Excel.Range#getEntireRow:member(1)':
   - |-
     // Gets an object that represents the entire row of the range 
     // (for example, if the current range represents cells "B4:E11", 
@@ -3036,7 +3036,7 @@ Excel.Range.getEntireRow:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getIntersection:
+'Excel.Range#getIntersection:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -3053,7 +3053,7 @@ Excel.Range.getIntersection:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getIntersectionOrNullObject:
+'Excel.Range#getIntersectionOrNullObject:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -3109,7 +3109,7 @@ Excel.Range.getIntersectionOrNullObject:
 
         await context.sync();
     });
-Excel.Range.getLastCell:
+'Excel.Range#getLastCell:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -3125,7 +3125,7 @@ Excel.Range.getLastCell:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getLastColumn:
+'Excel.Range#getLastColumn:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -3141,7 +3141,7 @@ Excel.Range.getLastColumn:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getLastRow:
+'Excel.Range#getLastRow:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -3157,7 +3157,7 @@ Excel.Range.getLastRow:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getOffsetRange:
+'Excel.Range#getOffsetRange:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -3174,7 +3174,7 @@ Excel.Range.getOffsetRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getRow:
+'Excel.Range#getRow:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -3190,7 +3190,7 @@ Excel.Range.getRow:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getSpecialCells:
+'Excel.Range#getSpecialCells:member(1)':
   - |-
     await Excel.run(async (context) => {
 
@@ -3203,7 +3203,7 @@ Excel.Range.getSpecialCells:
 
         return context.sync();
     });
-Excel.Range.getUsedRange:
+'Excel.Range#getUsedRange:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -3275,7 +3275,7 @@ Excel.Range.getUsedRange:
 
         await context.sync();
     });
-Excel.Range.getUsedRangeOrNullObject:
+'Excel.Range#getUsedRangeOrNullObject:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -3309,7 +3309,7 @@ Excel.Range.getUsedRangeOrNullObject:
 
         await context.sync();
     });
-Excel.Range.hyperlink:
+'Excel.Range#hyperlink:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Orders");
@@ -3335,7 +3335,7 @@ Excel.Range.hyperlink:
 
         await context.sync();
     });
-Excel.Range.insert:
+'Excel.Range#insert:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -3350,7 +3350,7 @@ Excel.Range.insert:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.load_1:
+'Excel.Range#load:member(2)':
   - |-
     // Below example uses range address to get the range object.
     Excel.run(function (ctx) {
@@ -3407,7 +3407,7 @@ Excel.Range.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.merge:
+'Excel.Range#merge:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -3434,7 +3434,7 @@ Excel.Range.merge:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.removeDuplicates:
+'Excel.Range#removeDuplicates:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -3447,7 +3447,7 @@ Excel.Range.removeDuplicates:
         console.log(deleteResult.removed + " entries with duplicate names removed.");
         console.log(deleteResult.uniqueRemaining + " entries with unique names remain in the range.");
     });
-Excel.Range.select:
+'Excel.Range#select:member(1)':
   - |-
     Excel.run(function (ctx) {
         var sheetName = "Sheet1";
@@ -3461,7 +3461,7 @@ Excel.Range.select:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.set:
+'Excel.Range#set:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -3496,7 +3496,7 @@ Excel.Range.set:
         targetRange.format.autofitColumns();
         await context.sync();
     });
-Excel.Range.setCellProperties:
+'Excel.Range#setCellProperties:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -3568,7 +3568,33 @@ Excel.Range.setCellProperties:
         sheet.getUsedRange().format.autofitColumns();
         await context.sync();
     });
-Excel.Range.style:
+'Excel.Range#sort:member':
+  - |-
+    async function sortTopToBottom(criteria: string) {
+        await Excel.run(async (context) => {
+            const sheet = context.workbook.worksheets.getActiveWorksheet();
+            const range = sheet.getRange("A1:E5");
+
+            // Find the column header that provides the sort criteria.
+            const header = range.find(criteria, {});
+            header.load("columnIndex");
+            await context.sync();
+
+            range.sort.apply(
+                [
+                    {
+                        key: header.columnIndex,
+                        sortOn: Excel.SortOn.value
+                    }
+                ],
+                false /*matchCase*/,
+                true /*hasHeaders*/,
+                Excel.SortOrientation.rows
+            );
+            await context.sync();
+        });
+    }
+'Excel.Range#style:member':
   - |-
     await Excel.run(async (context) => {
         let worksheet = context.workbook.worksheets.getItem("Sample");
@@ -3581,7 +3607,7 @@ Excel.Range.style:
 
         await context.sync();
     });
-Excel.Range.unmerge:
+'Excel.Range#unmerge:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -3595,7 +3621,7 @@ Excel.Range.unmerge:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.untrack:
+'Excel.Range#untrack:member(1)':
   - |-
     Excel.run(async (context) => {
         const largeRange = context.workbook.getSelectedRange();
@@ -3614,7 +3640,7 @@ Excel.Range.untrack:
 
         await context.sync();
     });
-Excel.RangeAreas.format:
+'Excel.RangeAreas#format:member':
   - |-
     await Excel.run(async (context) => {
 
@@ -3627,7 +3653,7 @@ Excel.RangeAreas.format:
 
         await context.sync();
     });
-Excel.RangeBorder.load_1:
+'Excel.RangeBorder#load:member(2)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -3668,7 +3694,7 @@ Excel.RangeBorder.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeBorderCollection.getItem:
+'Excel.RangeBorderCollection#getItem:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -3687,7 +3713,7 @@ Excel.RangeBorderCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeBorderCollection.getItemAt:
+'Excel.RangeBorderCollection#getItemAt:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -3705,7 +3731,7 @@ Excel.RangeBorderCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeBorderCollection.load_1:
+'Excel.RangeBorderCollection#load:member(2)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -3746,7 +3772,7 @@ Excel.RangeBorderCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeFill.clear:
+'Excel.RangeFill#clear:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -3762,7 +3788,7 @@ Excel.RangeFill.clear:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeFill.load_1:
+'Excel.RangeFill#load:member(2)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -3794,7 +3820,7 @@ Excel.RangeFill.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeFont.load_1:
+'Excel.RangeFont#load:member(2)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -3826,7 +3852,7 @@ Excel.RangeFont.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeFormat.load_1:
+'Excel.RangeFormat#load:member(2)':
   - |-
     // Below example selects all of the Range's format properties. 
     Excel.run(function (ctx) { 
@@ -3881,7 +3907,7 @@ Excel.RangeFormat.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeFormat.textOrientation:
+'Excel.RangeFormat#textOrientation:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -3893,7 +3919,7 @@ Excel.RangeFormat.textOrientation:
 
         await context.sync();
     });
-Excel.RangeHyperlink.address:
+'Excel.RangeHyperlink#address:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Orders");
@@ -3919,7 +3945,7 @@ Excel.RangeHyperlink.address:
 
         await context.sync();
     });
-Excel.RangeHyperlink.documentReference:
+'Excel.RangeHyperlink#documentReference:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Orders");
@@ -3945,7 +3971,7 @@ Excel.RangeHyperlink.documentReference:
 
         await context.sync();
     });
-Excel.RangeHyperlink.screenTip:
+'Excel.RangeHyperlink#screenTip:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Orders");
@@ -3971,7 +3997,7 @@ Excel.RangeHyperlink.screenTip:
 
         await context.sync();
     });
-Excel.RangeHyperlink.textToDisplay:
+'Excel.RangeHyperlink#textToDisplay:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Orders");
@@ -3997,7 +4023,7 @@ Excel.RangeHyperlink.textToDisplay:
 
         await context.sync();
     });
-Excel.RemoveDuplicatesResult.uniqueRemaining:
+'Excel.RemoveDuplicatesResult#uniqueRemaining:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -4010,7 +4036,7 @@ Excel.RemoveDuplicatesResult.uniqueRemaining:
         console.log(deleteResult.removed + " entries with duplicate names removed.");
         console.log(deleteResult.uniqueRemaining + " entries with unique names remain in the range.");
     });
-Excel.Runtime.enableEvents:
+'Excel.Runtime#enableEvents:member':
   - |-
     await Excel.run(async (context) => {
         context.runtime.load("enableEvents");
@@ -4027,7 +4053,7 @@ Excel.Runtime.enableEvents:
 
         await context.sync();
     });
-Excel.SettableCellProperties.style:
+'Excel.SettableCellProperties#style:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -4099,7 +4125,7 @@ Excel.SettableCellProperties.style:
         sheet.getUsedRange().format.autofitColumns();
         await context.sync();
     });
-Excel.Setting.delete:
+'Excel.Setting#delete:member(1)':
   - |-
     await Excel.run(async (context) => {
         const settings = context.workbook.settings;
@@ -4117,7 +4143,7 @@ Excel.Setting.delete:
 
         await context.sync();
     });
-Excel.SettingCollection.add:
+'Excel.SettingCollection#add:member(1)':
   - |-
     await Excel.run(async (context) => {
         const settings = context.workbook.settings; 
@@ -4126,7 +4152,7 @@ Excel.SettingCollection.add:
         await context.sync();
         console.log("Settings changed handler registered.");
     });
-Excel.SettingCollection.getItemOrNullObject:
+'Excel.SettingCollection#getItemOrNullObject:member(1)':
   - |-
     await Excel.run(async (context) => {
         const settings = context.workbook.settings;
@@ -4144,7 +4170,7 @@ Excel.SettingCollection.getItemOrNullObject:
 
         await context.sync();
     });
-Excel.SettingCollection.onSettingsChanged:
+'Excel.SettingCollection#onSettingsChanged:member':
   - |-
     await Excel.run(async (context) => {
         const settings = context.workbook.settings; 
@@ -4153,7 +4179,7 @@ Excel.SettingCollection.onSettingsChanged:
         await context.sync();
         console.log("Settings changed handler registered.");
     });
-Excel.Shape.delete:
+'Excel.Shape#delete:member(1)':
   - |-
     await Excel.run(async (context) => {
         context.workbook.worksheets.getItemOrNullObject("Shapes").delete();
@@ -4168,7 +4194,7 @@ Excel.Shape.delete:
         shapes.items.forEach((shape) => shape.delete());
         await context.sync();
     });
-Excel.Shape.fill:
+'Excel.Shape#fill:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -4180,7 +4206,7 @@ Excel.Shape.fill:
         shape.fill.foregroundColor = "yellow"
         await context.sync();
     });
-Excel.Shape.getAsImage:
+'Excel.Shape#getAsImage:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -4192,7 +4218,7 @@ Excel.Shape.getAsImage:
         // Your add-in would save this string as a .png file.
         console.log("The image's base64-encoded string: " + imageString);
     });
-Excel.Shape.group:
+'Excel.Shape#group:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -4203,7 +4229,7 @@ Excel.Shape.group:
 
         await context.sync();
     });
-Excel.Shape.incrementLeft:
+'Excel.Shape#incrementLeft:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -4211,7 +4237,7 @@ Excel.Shape.incrementLeft:
         shape.incrementLeft(-25);
         await context.sync();
     });
-Excel.Shape.incrementRotation:
+'Excel.Shape#incrementRotation:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -4219,7 +4245,7 @@ Excel.Shape.incrementRotation:
         shape.incrementRotation(180);
         await context.sync();
     });
-Excel.Shape.incrementTop:
+'Excel.Shape#incrementTop:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -4227,7 +4253,7 @@ Excel.Shape.incrementTop:
         shape.incrementTop(25);
         await context.sync();
     });
-Excel.Shape.line:
+'Excel.Shape#line:member':
   - |-
     await Excel.run(async (context) => {
         const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
@@ -4242,7 +4268,7 @@ Excel.Shape.line:
 
         await context.sync();
     });
-Excel.Shape.lockAspectRatio:
+'Excel.Shape#lockAspectRatio:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -4251,7 +4277,7 @@ Excel.Shape.lockAspectRatio:
         shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
         await context.sync();
     });
-Excel.Shape.rotation:
+'Excel.Shape#rotation:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -4264,7 +4290,7 @@ Excel.Shape.rotation:
         shape.fill.clear();
         await context.sync();
     });
-Excel.Shape.scaleHeight:
+'Excel.Shape#scaleHeight:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -4273,7 +4299,7 @@ Excel.Shape.scaleHeight:
         shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
         await context.sync();
     });
-Excel.Shape.setZOrder:
+'Excel.Shape#setZOrder:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -4281,7 +4307,7 @@ Excel.Shape.setZOrder:
         shape.setZOrder(Excel.ShapeZOrder.sendBackward);
         await context.sync();
     });
-Excel.ShapeCollection.addGeometricShape:
+'Excel.ShapeCollection#addGeometricShape:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -4292,7 +4318,7 @@ Excel.ShapeCollection.addGeometricShape:
         shape.width = 200;
         await context.sync();
     });
-Excel.ShapeCollection.addGroup:
+'Excel.ShapeCollection#addGroup:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -4306,7 +4332,7 @@ Excel.ShapeCollection.addGroup:
 
         await context.sync();
     });
-Excel.ShapeCollection.addImage:
+'Excel.ShapeCollection#addImage:member(1)':
   - |-
     const myFile = <HTMLInputElement>document.getElementById("selectedFile");
     const reader = new FileReader();
@@ -4324,7 +4350,7 @@ Excel.ShapeCollection.addImage:
 
     // Read in the image file as a data URL.
     reader.readAsDataURL(myFile.files[0]);
-Excel.ShapeCollection.addLine:
+'Excel.ShapeCollection#addLine:member(1)':
   - |-
     await Excel.run(async (context) => {
         const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
@@ -4332,7 +4358,7 @@ Excel.ShapeCollection.addLine:
         line.name = "StraightLine";
         await context.sync();
     });
-Excel.ShapeCollection.addTextBox:
+'Excel.ShapeCollection#addTextBox:member(1)':
   - |-
     await Excel.run(async (context) => {
         const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
@@ -4344,7 +4370,7 @@ Excel.ShapeCollection.addTextBox:
         textbox.name = "Textbox";
         await context.sync();
     });
-Excel.ShapeGroup.ungroup:
+'Excel.ShapeGroup#ungroup:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -4355,7 +4381,7 @@ Excel.ShapeGroup.ungroup:
 
         await context.sync();
     });
-Excel.ShowAsRule.baseItem:
+'Excel.ShowAsRule#baseItem:member':
   - |-
     await Excel.run(async (context) => {
         const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
@@ -4381,35 +4407,35 @@ Excel.ShowAsRule.baseItem:
         wholesaleDataHierarchy.showAs = wholesaleShowAs;
         await context.sync();
     });
-Excel.Slicer.clearFilters:
+'Excel.Slicer#clearFilters:member(1)':
   - |-
     await Excel.run(async (context) => {
         const slicer = context.workbook.slicers.getItem("Fruit Slicer");
         slicer.clearFilters();
         await context.sync();
     });
-Excel.Slicer.delete:
+'Excel.Slicer#delete:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
         sheet.slicers.getItemAt(0).delete();
         await context.sync();
     });
-Excel.Slicer.selectItems:
+'Excel.Slicer#selectItems:member(1)':
   - |-
     await Excel.run(async (context) => {
         const slicer = context.workbook.slicers.getItem("Fruit Slicer");
         slicer.selectItems(["Lemon", "Lime", "Orange"]);
         await context.sync();
     });
-Excel.Slicer.style:
+'Excel.Slicer#style:member':
   - |-
     await Excel.run(async (context) => {
         const slicer = context.workbook.slicers.getItem("Fruit Slicer");
         slicer.style = "SlicerStyleLight6";
         await context.sync();
     });
-Excel.SlicerCollection.add:
+'Excel.SlicerCollection#add:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Pivot");
@@ -4420,7 +4446,7 @@ Excel.SlicerCollection.add:
         slicer.name = "Fruit Slicer";
         await context.sync();
     });
-Excel.SlicerCollection.getItem:
+'Excel.SlicerCollection#getItem:member(1)':
   - |-
     await Excel.run(async (context) => {
         const slicer = context.workbook.slicers.getItem("Fruit Slicer");
@@ -4431,7 +4457,7 @@ Excel.SlicerCollection.getItem:
         slicer.width = 150;
         await context.sync();
     });
-Excel.Style.delete:
+'Excel.Style#delete:member(1)':
   - |-
     await Excel.run(async (context) => {
         let style = context.workbook.styles.getItem("Diagonal Orientation Style");
@@ -4444,7 +4470,7 @@ Excel.Style.delete:
 
         console.log("Successfully deleted the diagonal orientation style from the Home tab ribbon.");
     });
-Excel.Style.font:
+'Excel.Style#font:member':
   - |-
     await Excel.run(async (context) => {
         let style = context.workbook.styles.getItem("Normal");
@@ -4460,7 +4486,7 @@ Excel.Style.font:
         console.log("Size: " + style.font.size);
         console.log("Fill color: " + style.fill.color);
     });
-Excel.Style.horizontalAlignment:
+'Excel.Style#horizontalAlignment:member':
   - |-
     await Excel.run(async (context) => {
         let worksheet = context.workbook.worksheets.getItem("Sample");
@@ -4473,7 +4499,7 @@ Excel.Style.horizontalAlignment:
 
         await context.sync();
     });
-Excel.Style.load:
+'Excel.Style#load:member(1)':
   - |-
     await Excel.run(async (context) => {
         let style = context.workbook.styles.getItem("Diagonal Orientation Style");            
@@ -4490,7 +4516,7 @@ Excel.Style.load:
         console.log("Shrink to fit: " + style.shrinkToFit);
         console.log("Style locked: " + style.locked);
     });
-Excel.StyleCollection.add:
+'Excel.StyleCollection#add:member(1)':
   - |-
     await Excel.run(async (context) => {
         let styles = context.workbook.styles;
@@ -4512,7 +4538,7 @@ Excel.StyleCollection.add:
 
         console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
     });
-Excel.StyleCollection.getItem:
+'Excel.StyleCollection#getItem:member(1)':
   - |-
     await Excel.run(async (context) => {
         let styles = context.workbook.styles;
@@ -4534,7 +4560,7 @@ Excel.StyleCollection.getItem:
 
         console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
     });
-Excel.Table.convertToRange:
+'Excel.Table#convertToRange:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -4547,7 +4573,7 @@ Excel.Table.convertToRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Table.delete:
+'Excel.Table#delete:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -4560,7 +4586,7 @@ Excel.Table.delete:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Table.getDataBodyRange:
+'Excel.Table#getDataBodyRange:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -4576,7 +4602,7 @@ Excel.Table.getDataBodyRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Table.getHeaderRowRange:
+'Excel.Table#getHeaderRowRange:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -4592,7 +4618,7 @@ Excel.Table.getHeaderRowRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Table.getRange:
+'Excel.Table#getRange:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -4608,7 +4634,7 @@ Excel.Table.getRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Table.getTotalRowRange:
+'Excel.Table#getTotalRowRange:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -4624,7 +4650,7 @@ Excel.Table.getTotalRowRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Table.load_1:
+'Excel.Table#load:member(2)':
   - |-
     // Get a table by name. 
     Excel.run(function (ctx) { 
@@ -4673,7 +4699,7 @@ Excel.Table.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Table.onChanged:
+'Excel.Table#onChanged:member':
   - |-
     await Excel.run(async (context) => {
         let table = context.workbook.tables.getItemAt(0);
@@ -4682,7 +4708,7 @@ Excel.Table.onChanged:
         await context.sync();
         console.log("A handler has been registered for the onChanged event");
     });
-Excel.Table.onSelectionChanged:
+'Excel.Table#onSelectionChanged:member':
   - |-
     await Excel.run(async (context) => {
         let table = context.workbook.tables.getItemAt(0);
@@ -4691,7 +4717,7 @@ Excel.Table.onSelectionChanged:
         await context.sync();
         console.log("A handler has been registered for table onSelectionChanged event");
     });
-Excel.TableChangedEventArgs.details:
+'Excel.TableChangedEventArgs#details:member':
   - |-
     async function onTableChanged(eventArgs: Excel.TableChangedEventArgs) {
         await Excel.run(async (context) => {
@@ -4702,7 +4728,7 @@ Excel.TableChangedEventArgs.details:
               + ` now is ${details.valueAfter}(${details.valueTypeAfter})`);
         });
     }
-Excel.TableChangedEventArgs.tableId:
+'Excel.TableChangedEventArgs#tableId:member':
   - |-
     async function onChange(event) {
         await Excel.run(async (context) => {
@@ -4717,7 +4743,7 @@ Excel.TableChangedEventArgs.tableId:
             console.log("Worksheet Id : " + worksheet.name);
         });
     }
-Excel.TableChangedEventArgs.worksheetId:
+'Excel.TableChangedEventArgs#worksheetId:member':
   - |-
     async function onChange(event) {
         await Excel.run(async (context) => {
@@ -4732,7 +4758,7 @@ Excel.TableChangedEventArgs.worksheetId:
             console.log("Worksheet Id : " + worksheet.name);
         });
     }
-Excel.TableCollection.add:
+'Excel.TableCollection#add:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var table = ctx.workbook.tables.add('Sheet1!A1:E7', true);
@@ -4746,7 +4772,7 @@ Excel.TableCollection.add:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableCollection.getItem:
+'Excel.TableCollection#getItem:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -4761,7 +4787,7 @@ Excel.TableCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableCollection.getItemAt:
+'Excel.TableCollection#getItemAt:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var table = ctx.workbook.tables.getItemAt(0);
@@ -4775,7 +4801,7 @@ Excel.TableCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableCollection.load_1:
+'Excel.TableCollection#load:member(2)':
   - |-
     Excel.run(function (ctx) { 
         var tables = ctx.workbook.tables;
@@ -4807,7 +4833,7 @@ Excel.TableCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableCollection.onChanged:
+'Excel.TableCollection#onChanged:member':
   - |-
     await Excel.run(async (context) => {
         let tables = context.workbook.tables;
@@ -4816,7 +4842,7 @@ Excel.TableCollection.onChanged:
         await context.sync();
         console.log("A handler has been registered for the table collection onChanged event");
     });
-Excel.TableColumn.delete:
+'Excel.TableColumn#delete:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -4829,7 +4855,7 @@ Excel.TableColumn.delete:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumn.getDataBodyRange:
+'Excel.TableColumn#getDataBodyRange:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -4844,7 +4870,7 @@ Excel.TableColumn.getDataBodyRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumn.getHeaderRowRange:
+'Excel.TableColumn#getHeaderRowRange:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -4860,7 +4886,7 @@ Excel.TableColumn.getHeaderRowRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumn.getRange:
+'Excel.TableColumn#getRange:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -4876,7 +4902,7 @@ Excel.TableColumn.getRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumn.getTotalRowRange:
+'Excel.TableColumn#getTotalRowRange:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -4892,7 +4918,7 @@ Excel.TableColumn.getTotalRowRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumn.load_1:
+'Excel.TableColumn#load:member(2)':
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -4924,7 +4950,7 @@ Excel.TableColumn.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumnCollection.add:
+'Excel.TableColumnCollection#add:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tables = ctx.workbook.tables;
@@ -4940,7 +4966,7 @@ Excel.TableColumnCollection.add:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumnCollection.getItem:
+'Excel.TableColumnCollection#getItem:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tablecolumn = ctx.workbook.tables.getItem('Table1').columns.getItem(0);
@@ -4954,7 +4980,7 @@ Excel.TableColumnCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumnCollection.getItemAt:
+'Excel.TableColumnCollection#getItemAt:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tablecolumn = ctx.workbook.tables.getItem['Table1'].columns.getItemAt(0);
@@ -4968,7 +4994,7 @@ Excel.TableColumnCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumnCollection.load_1:
+'Excel.TableColumnCollection#load:member(2)':
   - |-
     Excel.run(function (ctx) { 
         var tablecolumns = ctx.workbook.tables.getItem('Table1').columns;
@@ -4985,7 +5011,7 @@ Excel.TableColumnCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableRow.delete:
+'Excel.TableRow#delete:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -4998,7 +5024,7 @@ Excel.TableRow.delete:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableRow.getRange:
+'Excel.TableRow#getRange:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -5014,7 +5040,7 @@ Excel.TableRow.getRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableRow.load_1:
+'Excel.TableRow#load:member(2)':
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -5046,7 +5072,7 @@ Excel.TableRow.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableRowCollection.add:
+'Excel.TableRowCollection#add:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tables = ctx.workbook.tables;
@@ -5062,7 +5088,7 @@ Excel.TableRowCollection.add:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableRowCollection.getItemAt:
+'Excel.TableRowCollection#getItemAt:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tablerow = ctx.workbook.tables.getItem('Table1').rows.getItemAt(0);
@@ -5076,7 +5102,7 @@ Excel.TableRowCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableRowCollection.load_1:
+'Excel.TableRowCollection#load:member(2)':
   - |-
     Excel.run(function (ctx) { 
         var tablerows = ctx.workbook.tables.getItem('Table1').rows;
@@ -5112,14 +5138,14 @@ Excel.TableRowCollection.load_1:
                 console.log("Debug info: " + JSON.stringify(error.debugInfo));
             }
     });
-Excel.TableSelectionChangedEventArgs.address:
+'Excel.TableSelectionChangedEventArgs#address:member':
   - |-
     async function onSelectionChange(args) {
         await Excel.run(async (context) => {
             console.log("Handler for table onSelectionChanged event has been triggered. The new selection is: " + args.address);
         });
     }
-Excel.TableSort.apply:
+'Excel.TableSort#apply:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -5137,7 +5163,7 @@ Excel.TableSort.apply:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TextConditionalFormat.format:
+'Excel.TextConditionalFormat#format:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -5149,7 +5175,7 @@ Excel.TextConditionalFormat.format:
 
         await context.sync();
     });
-Excel.TextConditionalFormat.rule:
+'Excel.TextConditionalFormat#rule:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -5161,7 +5187,7 @@ Excel.TextConditionalFormat.rule:
 
         await context.sync();
     });
-Excel.TextFrame.deleteText:
+'Excel.TextFrame#deleteText:member(1)':
   - |-
     await Excel.run(async (context) => {
         const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
@@ -5169,12 +5195,12 @@ Excel.TextFrame.deleteText:
         textbox.textFrame.deleteText();
         await context.sync();
     });
-Excel.Workbook.close:
+'Excel.Workbook#close:member(1)':
   - |-
     await Excel.run(async (context) => {
         context.workbook.close(Excel.CloseBehavior.save);
     });
-Excel.Workbook.getActiveCell:
+'Excel.Workbook#getActiveCell:member(1)':
   - |-
     await Excel.run(async (context) => {
 
@@ -5186,7 +5212,7 @@ Excel.Workbook.getActiveCell:
         
         console.log("The active cell is " + activeCell.address);
     });
-Excel.Workbook.getSelectedRange:
+'Excel.Workbook#getSelectedRange:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var selectedRange = ctx.workbook.getSelectedRange();
@@ -5200,7 +5226,7 @@ Excel.Workbook.getSelectedRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Workbook.getSelectedRanges:
+'Excel.Workbook#getSelectedRanges:member(1)':
   - |-
     await Excel.run(async (context) => {
 
@@ -5209,7 +5235,7 @@ Excel.Workbook.getSelectedRanges:
 
         await context.sync();
     })
-Excel.Workbook.properties:
+'Excel.Workbook#properties:member':
   - |-
     await Excel.run(async (context) => {
         let titleValue = "Excel document properties API";
@@ -5235,12 +5261,12 @@ Excel.Workbook.properties:
 
         console.log("Set the following document properties: title, subject, keywords, comments, category, manager, company.");
     });
-Excel.Workbook.save:
+'Excel.Workbook#save:member(1)':
   - |-
     await Excel.run(async (context) => {
         context.workbook.save(Excel.SaveBehavior.save);
     });
-Excel.WorkbookProtection.protect:
+'Excel.WorkbookProtection#protect:member(1)':
   - |-
     await Excel.run(async (context) => {
         let workbook = context.workbook;
@@ -5265,7 +5291,7 @@ Excel.WorkbookProtection.protect:
             workbook.protection.protect(password);
         }
     });
-Excel.WorkbookProtection.unprotect:
+'Excel.WorkbookProtection#unprotect:member(1)':
   - |-
     await Excel.run(async (context) => {
         let workbook = context.workbook;
@@ -5278,7 +5304,7 @@ Excel.WorkbookProtection.unprotect:
         let workbook = context.workbook;
         workbook.protection.unprotect(password);
     });
-Excel.Worksheet.activate:
+'Excel.Worksheet#activate:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var wSheetName = 'Sheet1';
@@ -5291,7 +5317,7 @@ Excel.Worksheet.activate:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Worksheet.autoFilter:
+'Excel.Worksheet#autoFilter:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -5301,7 +5327,7 @@ Excel.Worksheet.autoFilter:
         sheet.autoFilter.apply(farmData, 3, { criterion1: "25", filterOn: Excel.FilterOn.topPercent });
         await context.sync();
     });
-Excel.Worksheet.copy:
+'Excel.Worksheet#copy:member(1)':
   - |-
     await Excel.run(async (context) => {
 
@@ -5316,7 +5342,7 @@ Excel.Worksheet.copy:
 
         console.log("'" + sampleSheet.name + "' was copied to '" + copiedSheet.name + "'")
     });
-Excel.Worksheet.delete:
+'Excel.Worksheet#delete:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var wSheetName = 'Sheet1';
@@ -5329,7 +5355,7 @@ Excel.Worksheet.delete:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Worksheet.findAllOrNullObject:
+'Excel.Worksheet#findAllOrNullObject:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -5346,7 +5372,7 @@ Excel.Worksheet.findAllOrNullObject:
             foundRanges.format.fill.color = "green"
         }
     });
-Excel.Worksheet.getCell:
+'Excel.Worksheet#getCell:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -5362,7 +5388,7 @@ Excel.Worksheet.getCell:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Worksheet.getNext:
+'Excel.Worksheet#getNext:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheets = context.workbook.worksheets;
@@ -5388,7 +5414,7 @@ Excel.Worksheet.getNext:
 
         await context.sync();
     });
-Excel.Worksheet.getPrevious:
+'Excel.Worksheet#getPrevious:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheets = context.workbook.worksheets;
@@ -5410,7 +5436,7 @@ Excel.Worksheet.getPrevious:
 
         await context.sync();
     });
-Excel.Worksheet.getRange:
+'Excel.Worksheet#getRange:member(1)':
   - |-
     // Below example uses range address to get the range object.
     Excel.run(function (ctx) { 
@@ -5444,7 +5470,7 @@ Excel.Worksheet.getRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Worksheet.getRanges:
+'Excel.Worksheet#getRanges:member(1)':
   - |-
     await Excel.run(async (context) => {
 
@@ -5454,7 +5480,7 @@ Excel.Worksheet.getRanges:
 
         await context.sync();
     })
-Excel.Worksheet.getUsedRange:
+'Excel.Worksheet#getUsedRange:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var wSheetName = 'Sheet1';
@@ -5470,7 +5496,7 @@ Excel.Worksheet.getUsedRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Worksheet.load_1:
+'Excel.Worksheet#load:member(2)':
   - |-
     // Get worksheet properties based on sheet name.
     Excel.run(function (ctx) { 
@@ -5499,7 +5525,7 @@ Excel.Worksheet.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Worksheet.onActivated:
+'Excel.Worksheet#onActivated:member':
   - |-
     Excel.run(function (context) {
         var sheet = context.workbook.worksheets.getItem("Sample");
@@ -5511,7 +5537,7 @@ Excel.Worksheet.onActivated:
         });
         return context.sync();
     });
-Excel.Worksheet.onCalculated:
+'Excel.Worksheet#onCalculated:member':
   - |-
     Excel.run(function (context) {
         var sheet = context.workbook.worksheets.getItem("Sample");
@@ -5523,7 +5549,7 @@ Excel.Worksheet.onCalculated:
         });
         return context.sync();
     });
-Excel.Worksheet.onChanged:
+'Excel.Worksheet#onChanged:member':
   - |-
     await Excel.run(async (context) => {
         let sheet = context.workbook.worksheets.getItem("Sample");
@@ -5532,7 +5558,29 @@ Excel.Worksheet.onChanged:
         await context.sync();
         console.log("A handler has been registered for the onChanged event.");
     });
-Excel.Worksheet.onDeactivated:
+'Excel.Worksheet#onColumnSorted:member':
+  - |-
+    await Excel.run(async (context) => {
+        console.log("Adding column handler");
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+        // This will fire whenever a column has been moved as the result of a sort action.
+        sheet.onColumnSorted.add((event) => {
+            return Excel.run((context) => {
+                console.log("Column sorted: " + event.address);
+                const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+                // Clear formatting for section, then highlight the sorted area.
+                sheet.getRange("A1:E5").format.fill.clear();
+                if (event.address !== "") {
+                    sheet.getRanges(event.address).format.fill.color = "yellow";
+                }
+
+                return context.sync();
+            });
+        });
+    });
+'Excel.Worksheet#onDeactivated:member':
   - |-
     Excel.run(function (context) {
         var sheet = context.workbook.worksheets.getItem("Sample");
@@ -5544,7 +5592,29 @@ Excel.Worksheet.onDeactivated:
         });
         return context.sync();
     });
-Excel.Worksheet.onSelectionChanged:
+'Excel.Worksheet#onRowSorted:member':
+  - |-
+    await Excel.run(async (context) => {
+        console.log("Adding row handler");
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+        // This will fire whenever a row has been moved as the result of a sort action.
+        sheet.onRowSorted.add((event) => {
+            return Excel.run((context) => {
+                console.log("Row sorted: " + event.address);
+                const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+                // Clear formatting for section, then highlight the sorted area.
+                sheet.getRange("A1:E5").format.fill.clear();
+                if (event.address !== "") {
+                    sheet.getRanges(event.address).format.fill.color = "yellow";
+                }
+
+                return context.sync();
+            });
+        });
+    });
+'Excel.Worksheet#onSelectionChanged:member':
   - |-
     Excel.run(function (context) {
         var sheet = context.workbook.worksheets.getItem("Sample");
@@ -5556,7 +5626,7 @@ Excel.Worksheet.onSelectionChanged:
         });
         return context.sync();
     });
-Excel.Worksheet.onSingleClicked:
+'Excel.Worksheet#onSingleClicked:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -5571,7 +5641,7 @@ Excel.Worksheet.onSingleClicked:
 
         await context.sync();
     });
-Excel.Worksheet.showGridlines:
+'Excel.Worksheet#showGridlines:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -5579,7 +5649,7 @@ Excel.Worksheet.showGridlines:
 
         await context.sync();
     });
-Excel.Worksheet.slicers:
+'Excel.Worksheet#slicers:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Pivot");
@@ -5590,7 +5660,7 @@ Excel.Worksheet.slicers:
         slicer.name = "Fruit Slicer";
         await context.sync();
     });
-Excel.Worksheet.tabColor:
+'Excel.Worksheet#tabColor:member':
   - |-
     await Excel.run(async (context) => {
         const activeSheet = context.workbook.worksheets.getActiveWorksheet();
@@ -5598,7 +5668,7 @@ Excel.Worksheet.tabColor:
 
         await context.sync();
     });
-Excel.WorksheetAddedEventArgs.worksheetId:
+'Excel.WorksheetAddedEventArgs#worksheetId:member':
   - |-
     async function onWorksheetAdd(event) {
         await Excel.run(async (context) => {
@@ -5608,7 +5678,7 @@ Excel.WorksheetAddedEventArgs.worksheetId:
             );
         });
     }
-Excel.WorksheetChangedEventArgs.details:
+'Excel.WorksheetChangedEventArgs#details:member':
   - >-
     // This function would be used as an event handler for the
     Worksheet.onChanged event.
@@ -5624,7 +5694,7 @@ Excel.WorksheetChangedEventArgs.details:
             return context.sync();
         });
     }
-Excel.WorksheetCollection.add:
+'Excel.WorksheetCollection#add:member(1)':
   - |-
     Excel.run(function (ctx) { 
         var wSheetName = 'Sample Name';
@@ -5639,7 +5709,7 @@ Excel.WorksheetCollection.add:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.WorksheetCollection.addFromBase64:
+'Excel.WorksheetCollection#addFromBase64:member(1)':
   - |-
     const myFile = <HTMLInputElement>document.getElementById("file");
     const reader = new FileReader();
@@ -5662,7 +5732,7 @@ Excel.WorksheetCollection.addFromBase64:
 
     // read in the file as a data URL so we can parse the base64-encoded string
     reader.readAsDataURL(myFile.files[0]);
-Excel.WorksheetCollection.getActiveWorksheet:
+'Excel.WorksheetCollection#getActiveWorksheet:member(1)':
   - |-
     Excel.run(function (ctx) {  
         var activeWorksheet = ctx.workbook.worksheets.getActiveWorksheet();
@@ -5676,7 +5746,7 @@ Excel.WorksheetCollection.getActiveWorksheet:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.WorksheetCollection.getFirst:
+'Excel.WorksheetCollection#getFirst:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheets = context.workbook.worksheets;
@@ -5702,7 +5772,7 @@ Excel.WorksheetCollection.getFirst:
 
         await context.sync();
     });
-Excel.WorksheetCollection.getLast:
+'Excel.WorksheetCollection#getLast:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheets = context.workbook.worksheets;
@@ -5728,7 +5798,7 @@ Excel.WorksheetCollection.getLast:
 
         await context.sync();
     });
-Excel.WorksheetCollection.load_1:
+'Excel.WorksheetCollection#load:member(2)':
   - |-
     Excel.run(function (ctx) { 
         var worksheets = ctx.workbook.worksheets;
@@ -5746,7 +5816,7 @@ Excel.WorksheetCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.WorksheetCollection.onActivated:
+'Excel.WorksheetCollection#onActivated:member':
   - |-
     await Excel.run(async (context) => {
         let sheets = context.workbook.worksheets;
@@ -5755,7 +5825,7 @@ Excel.WorksheetCollection.onActivated:
         await context.sync();
         console.log("A handler has been registered for the OnActivate event.");
     });
-Excel.WorksheetCollection.onAdded:
+'Excel.WorksheetCollection#onAdded:member':
   - |-
     await Excel.run(async (context) => {
         let sheet = context.workbook.worksheets;
@@ -5764,7 +5834,7 @@ Excel.WorksheetCollection.onAdded:
         await context.sync();
         console.log("A handler has been registered for the OnAdded event.");
     });
-Excel.WorksheetCollection.onDeactivated:
+'Excel.WorksheetCollection#onDeactivated:member':
   - |-
     await Excel.run(async (context) => {
         let sheets = context.workbook.worksheets;
@@ -5773,7 +5843,7 @@ Excel.WorksheetCollection.onDeactivated:
         await context.sync();
         console.log("A handler has been registered for the OnDeactivate event.");
     });
-Excel.WorksheetFreezePanes.freezeAt:
+'Excel.WorksheetFreezePanes#freezeAt:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -5783,7 +5853,7 @@ Excel.WorksheetFreezePanes.freezeAt:
 
         await context.sync();
     });
-Excel.WorksheetFreezePanes.freezeColumns:
+'Excel.WorksheetFreezePanes#freezeColumns:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -5793,7 +5863,7 @@ Excel.WorksheetFreezePanes.freezeColumns:
 
         await context.sync();
     });
-Excel.WorksheetFreezePanes.freezeRows:
+'Excel.WorksheetFreezePanes#freezeRows:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -5803,7 +5873,7 @@ Excel.WorksheetFreezePanes.freezeRows:
 
         await context.sync();
     });
-Excel.WorksheetFreezePanes.getLocationOrNullObject:
+'Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -5818,7 +5888,7 @@ Excel.WorksheetFreezePanes.getLocationOrNullObject:
             console.log(`The address of the frozen range (cells that are frozen in the top-and-left-most pane) is "${frozenRange.address}"`);
         }
     });
-Excel.WorksheetFreezePanes.unfreeze:
+'Excel.WorksheetFreezePanes#unfreeze:member(1)':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -5826,7 +5896,7 @@ Excel.WorksheetFreezePanes.unfreeze:
 
         await context.sync();
     });
-Excel.WorksheetProtection.protect:
+'Excel.WorksheetProtection#protect:member(1)':
   - |-
     Excel.run(function(ctx) {
       // get a reference to Sheet1
@@ -5869,7 +5939,7 @@ Excel.WorksheetProtection.protect:
             activeSheet.protection.protect(null, password);
         }
     });
-Excel.WorksheetProtection.unprotect:
+'Excel.WorksheetProtection#unprotect:member(1)':
   - |-
     Excel.run(function(ctx) {
       // get a reference to Sheet1
@@ -5909,7 +5979,7 @@ Excel.WorksheetProtection.unprotect:
         let activeSheet = context.workbook.worksheets.getActiveWorksheet();
         activeSheet.protection.unprotect(password);
     });
-Excel.WorksheetSingleClickedEventArgs.address:
+'Excel.WorksheetSingleClickedEventArgs#address:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -5924,7 +5994,7 @@ Excel.WorksheetSingleClickedEventArgs.address:
 
         await context.sync();
     });
-Excel.createWorkbook:
+'Excel.createWorkbook:function(1)':
   - |-
     var myFile = document.getElementById("file");
     var reader = new FileReader();

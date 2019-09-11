@@ -1,27 +1,27 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.LineData
+  - uid: 'excel!Excel.Interfaces.LineData:interface'
     summary: An interface describing the data returned by calling "line.toJSON()".
     name: Excel.Interfaces.LineData
     fullName: Excel.Interfaces.LineData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.LineData.beginArrowheadLength
-      - excel.Excel.Interfaces.LineData.beginArrowheadStyle
-      - excel.Excel.Interfaces.LineData.beginArrowheadWidth
-      - excel.Excel.Interfaces.LineData.beginConnectedSite
-      - excel.Excel.Interfaces.LineData.connectorType
-      - excel.Excel.Interfaces.LineData.endArrowheadLength
-      - excel.Excel.Interfaces.LineData.endArrowheadStyle
-      - excel.Excel.Interfaces.LineData.endArrowheadWidth
-      - excel.Excel.Interfaces.LineData.endConnectedSite
-      - excel.Excel.Interfaces.LineData.id
-      - excel.Excel.Interfaces.LineData.isBeginConnected
-      - excel.Excel.Interfaces.LineData.isEndConnected
-  - uid: excel.Excel.Interfaces.LineData.beginArrowheadLength
+      - 'excel!Excel.Interfaces.LineData#beginArrowheadLength:member'
+      - 'excel!Excel.Interfaces.LineData#beginArrowheadStyle:member'
+      - 'excel!Excel.Interfaces.LineData#beginArrowheadWidth:member'
+      - 'excel!Excel.Interfaces.LineData#beginConnectedSite:member'
+      - 'excel!Excel.Interfaces.LineData#connectorType:member'
+      - 'excel!Excel.Interfaces.LineData#endArrowheadLength:member'
+      - 'excel!Excel.Interfaces.LineData#endArrowheadStyle:member'
+      - 'excel!Excel.Interfaces.LineData#endArrowheadWidth:member'
+      - 'excel!Excel.Interfaces.LineData#endConnectedSite:member'
+      - 'excel!Excel.Interfaces.LineData#id:member'
+      - 'excel!Excel.Interfaces.LineData#isBeginConnected:member'
+      - 'excel!Excel.Interfaces.LineData#isEndConnected:member'
+  - uid: 'excel!Excel.Interfaces.LineData#beginArrowheadLength:member'
     summary: |-
       Represents the length of the arrowhead at the beginning of the specified line.
 
@@ -35,8 +35,8 @@ items:
       content: 'beginArrowheadLength?: Excel.ArrowheadLength | "Short" | "Medium" | "Long";'
       return:
         type:
-          - Excel.ArrowheadLength | "Short" | "Medium" | "Long"
-  - uid: excel.Excel.Interfaces.LineData.beginArrowheadStyle
+          - 'excel!Excel.Interfaces.LineData#beginArrowheadLength~0:complex'
+  - uid: 'excel!Excel.Interfaces.LineData#beginArrowheadStyle:member'
     summary: |-
       Represents the style of the arrowhead at the beginning of the specified line.
 
@@ -50,8 +50,8 @@ items:
       content: 'beginArrowheadStyle?: Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open";'
       return:
         type:
-          - Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"
-  - uid: excel.Excel.Interfaces.LineData.beginArrowheadWidth
+          - 'excel!Excel.Interfaces.LineData#beginArrowheadStyle~0:complex'
+  - uid: 'excel!Excel.Interfaces.LineData#beginArrowheadWidth:member'
     summary: |-
       Represents the width of the arrowhead at the beginning of the specified line.
 
@@ -65,8 +65,8 @@ items:
       content: 'beginArrowheadWidth?: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide";'
       return:
         type:
-          - Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide"
-  - uid: excel.Excel.Interfaces.LineData.beginConnectedSite
+          - 'excel!Excel.Interfaces.LineData#beginArrowheadWidth~0:complex'
+  - uid: 'excel!Excel.Interfaces.LineData#beginConnectedSite:member'
     summary: >-
       Represents the connection site to which the beginning of a connector is connected. Read-only. Returns null when
       the beginning of the line is not attached to any shape.
@@ -83,7 +83,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.LineData.connectorType
+  - uid: 'excel!Excel.Interfaces.LineData#connectorType:member'
     summary: |-
       Represents the connector type for the line.
 
@@ -97,8 +97,8 @@ items:
       content: 'connectorType?: Excel.ConnectorType | "Straight" | "Elbow" | "Curve";'
       return:
         type:
-          - Excel.ConnectorType | "Straight" | "Elbow" | "Curve"
-  - uid: excel.Excel.Interfaces.LineData.endArrowheadLength
+          - 'excel!Excel.Interfaces.LineData#connectorType~0:complex'
+  - uid: 'excel!Excel.Interfaces.LineData#endArrowheadLength:member'
     summary: |-
       Represents the length of the arrowhead at the end of the specified line.
 
@@ -112,8 +112,8 @@ items:
       content: 'endArrowheadLength?: Excel.ArrowheadLength | "Short" | "Medium" | "Long";'
       return:
         type:
-          - Excel.ArrowheadLength | "Short" | "Medium" | "Long"
-  - uid: excel.Excel.Interfaces.LineData.endArrowheadStyle
+          - 'excel!Excel.Interfaces.LineData#endArrowheadLength~0:complex'
+  - uid: 'excel!Excel.Interfaces.LineData#endArrowheadStyle:member'
     summary: |-
       Represents the style of the arrowhead at the end of the specified line.
 
@@ -127,8 +127,8 @@ items:
       content: 'endArrowheadStyle?: Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open";'
       return:
         type:
-          - Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"
-  - uid: excel.Excel.Interfaces.LineData.endArrowheadWidth
+          - 'excel!Excel.Interfaces.LineData#endArrowheadStyle~0:complex'
+  - uid: 'excel!Excel.Interfaces.LineData#endArrowheadWidth:member'
     summary: |-
       Represents the width of the arrowhead at the end of the specified line.
 
@@ -142,8 +142,8 @@ items:
       content: 'endArrowheadWidth?: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide";'
       return:
         type:
-          - Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide"
-  - uid: excel.Excel.Interfaces.LineData.endConnectedSite
+          - 'excel!Excel.Interfaces.LineData#endArrowheadWidth~0:complex'
+  - uid: 'excel!Excel.Interfaces.LineData#endConnectedSite:member'
     summary: >-
       Represents the connection site to which the end of a connector is connected. Read-only. Returns null when the end
       of the line is not attached to any shape.
@@ -160,7 +160,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.LineData.id
+  - uid: 'excel!Excel.Interfaces.LineData#id:member'
     summary: |-
       Represents the shape identifier. Read-only.
 
@@ -175,7 +175,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.LineData.isBeginConnected
+  - uid: 'excel!Excel.Interfaces.LineData#isBeginConnected:member'
     summary: |-
       Specifies whether or not the beginning of the specified line is connected to a shape. Read-only.
 
@@ -190,7 +190,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.LineData.isEndConnected
+  - uid: 'excel!Excel.Interfaces.LineData#isEndConnected:member'
     summary: |-
       Specifies whether or not the end of the specified line is connected to a shape. Read-only.
 
@@ -205,3 +205,67 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.LineData#beginArrowheadLength~0:complex'
+    name: Excel.ArrowheadLength | "Short" | "Medium" | "Long"
+    fullName: Excel.ArrowheadLength | "Short" | "Medium" | "Long"
+    spec.typeScript:
+      - uid: 'excel!Excel.ArrowheadLength:enum'
+        name: Excel.ArrowheadLength
+        fullName: Excel.ArrowheadLength
+      - name: ' | "Short" | "Medium" | "Long"'
+        fullName: ' | "Short" | "Medium" | "Long"'
+  - uid: 'excel!Excel.Interfaces.LineData#beginArrowheadStyle~0:complex'
+    name: Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"
+    fullName: Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"
+    spec.typeScript:
+      - uid: 'excel!Excel.ArrowheadStyle:enum'
+        name: Excel.ArrowheadStyle
+        fullName: Excel.ArrowheadStyle
+      - name: ' | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"'
+        fullName: ' | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"'
+  - uid: 'excel!Excel.Interfaces.LineData#beginArrowheadWidth~0:complex'
+    name: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide"
+    fullName: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide"
+    spec.typeScript:
+      - uid: 'excel!Excel.ArrowheadWidth:enum'
+        name: Excel.ArrowheadWidth
+        fullName: Excel.ArrowheadWidth
+      - name: ' | "Narrow" | "Medium" | "Wide"'
+        fullName: ' | "Narrow" | "Medium" | "Wide"'
+  - uid: 'excel!Excel.Interfaces.LineData#connectorType~0:complex'
+    name: Excel.ConnectorType | "Straight" | "Elbow" | "Curve"
+    fullName: Excel.ConnectorType | "Straight" | "Elbow" | "Curve"
+    spec.typeScript:
+      - uid: 'excel!Excel.ConnectorType:enum'
+        name: Excel.ConnectorType
+        fullName: Excel.ConnectorType
+      - name: ' | "Straight" | "Elbow" | "Curve"'
+        fullName: ' | "Straight" | "Elbow" | "Curve"'
+  - uid: 'excel!Excel.Interfaces.LineData#endArrowheadLength~0:complex'
+    name: Excel.ArrowheadLength | "Short" | "Medium" | "Long"
+    fullName: Excel.ArrowheadLength | "Short" | "Medium" | "Long"
+    spec.typeScript:
+      - uid: 'excel!Excel.ArrowheadLength:enum'
+        name: Excel.ArrowheadLength
+        fullName: Excel.ArrowheadLength
+      - name: ' | "Short" | "Medium" | "Long"'
+        fullName: ' | "Short" | "Medium" | "Long"'
+  - uid: 'excel!Excel.Interfaces.LineData#endArrowheadStyle~0:complex'
+    name: Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"
+    fullName: Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"
+    spec.typeScript:
+      - uid: 'excel!Excel.ArrowheadStyle:enum'
+        name: Excel.ArrowheadStyle
+        fullName: Excel.ArrowheadStyle
+      - name: ' | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"'
+        fullName: ' | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"'
+  - uid: 'excel!Excel.Interfaces.LineData#endArrowheadWidth~0:complex'
+    name: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide"
+    fullName: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide"
+    spec.typeScript:
+      - uid: 'excel!Excel.ArrowheadWidth:enum'
+        name: Excel.ArrowheadWidth
+        fullName: Excel.ArrowheadWidth
+      - name: ' | "Narrow" | "Medium" | "Wide"'
+        fullName: ' | "Narrow" | "Medium" | "Wide"'

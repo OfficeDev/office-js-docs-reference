@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.SlicerStyleData
+  - uid: 'excel!Excel.Interfaces.SlicerStyleData:interface'
     summary: An interface describing the data returned by calling "slicerStyle.toJSON()".
     name: Excel.Interfaces.SlicerStyleData
     fullName: Excel.Interfaces.SlicerStyleData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.SlicerStyleData.name
-      - excel.Excel.Interfaces.SlicerStyleData.readOnly
-  - uid: excel.Excel.Interfaces.SlicerStyleData.name
+      - 'excel!Excel.Interfaces.SlicerStyleData#name:member'
+      - 'excel!Excel.Interfaces.SlicerStyleData#readOnly:member'
+  - uid: 'excel!Excel.Interfaces.SlicerStyleData#name:member'
     summary: >-
       Gets the name of the SlicerStyle.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.SlicerStyleData.readOnly
+  - uid: 'excel!Excel.Interfaces.SlicerStyleData#readOnly:member'
     summary: >-
       Specifies whether this SlicerStyle object is read-only. Read-only.
 

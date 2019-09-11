@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.PivotLayout
+  - uid: 'excel!Excel.PivotLayout:class'
     summary: |-
       Represents the visual layout of the PivotTable.
 
@@ -11,33 +11,33 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.PivotLayout.autoFormat
-      - excel.Excel.PivotLayout.context
-      - excel.Excel.PivotLayout.getColumnLabelRange
-      - excel.Excel.PivotLayout.getDataBodyRange
-      - excel.Excel.PivotLayout.getDataHierarchy
-      - excel.Excel.PivotLayout.getFilterAxisRange
-      - excel.Excel.PivotLayout.getPivotItems
-      - excel.Excel.PivotLayout.getPivotItems_1
-      - excel.Excel.PivotLayout.getRange
-      - excel.Excel.PivotLayout.getRowLabelRange
-      - excel.Excel.PivotLayout.layoutType
-      - excel.Excel.PivotLayout.load
-      - excel.Excel.PivotLayout.load_1
-      - excel.Excel.PivotLayout.load_2
-      - excel.Excel.PivotLayout.preserveFormatting
-      - excel.Excel.PivotLayout.set
-      - excel.Excel.PivotLayout.set_1
-      - excel.Excel.PivotLayout.setAutoSortOnCell
-      - excel.Excel.PivotLayout.setAutoSortOnCell_1
-      - excel.Excel.PivotLayout.showColumnGrandTotals
-      - excel.Excel.PivotLayout.showRowGrandTotals
-      - excel.Excel.PivotLayout.subtotalLocation
-      - excel.Excel.PivotLayout.toJSON
-  - uid: excel.Excel.PivotLayout.autoFormat
+      - 'excel!Excel.PivotLayout#autoFormat:member'
+      - 'excel!Excel.PivotLayout#context:member'
+      - 'excel!Excel.PivotLayout#getColumnLabelRange:member(1)'
+      - 'excel!Excel.PivotLayout#getDataBodyRange:member(1)'
+      - 'excel!Excel.PivotLayout#getDataHierarchy:member(1)'
+      - 'excel!Excel.PivotLayout#getFilterAxisRange:member(1)'
+      - 'excel!Excel.PivotLayout#getPivotItems:member(1)'
+      - 'excel!Excel.PivotLayout#getPivotItems:member(2)'
+      - 'excel!Excel.PivotLayout#getRange:member(1)'
+      - 'excel!Excel.PivotLayout#getRowLabelRange:member(1)'
+      - 'excel!Excel.PivotLayout#layoutType:member'
+      - 'excel!Excel.PivotLayout#load:member(1)'
+      - 'excel!Excel.PivotLayout#load:member(2)'
+      - 'excel!Excel.PivotLayout#load:member(3)'
+      - 'excel!Excel.PivotLayout#preserveFormatting:member'
+      - 'excel!Excel.PivotLayout#set:member(1)'
+      - 'excel!Excel.PivotLayout#set:member(2)'
+      - 'excel!Excel.PivotLayout#setAutoSortOnCell:member(1)'
+      - 'excel!Excel.PivotLayout#setAutoSortOnCell:member(2)'
+      - 'excel!Excel.PivotLayout#showColumnGrandTotals:member'
+      - 'excel!Excel.PivotLayout#showRowGrandTotals:member'
+      - 'excel!Excel.PivotLayout#subtotalLocation:member'
+      - 'excel!Excel.PivotLayout#toJSON:member(1)'
+  - uid: 'excel!Excel.PivotLayout#autoFormat:member'
     summary: |-
       Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
 
@@ -52,7 +52,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.PivotLayout.context
+  - uid: 'excel!Excel.PivotLayout#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -65,8 +65,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.PivotLayout.getColumnLabelRange
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PivotLayout#getColumnLabelRange:member(1)'
     summary: |-
       Returns the range where the PivotTable's column labels reside.
 
@@ -80,9 +80,9 @@ items:
       content: 'getColumnLabelRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
-  - uid: excel.Excel.PivotLayout.getDataBodyRange
+  - uid: 'excel!Excel.PivotLayout#getDataBodyRange:member(1)'
     summary: |-
       Returns the range where the PivotTable's data values reside.
 
@@ -96,7 +96,7 @@ items:
       content: 'getDataBodyRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -120,7 +120,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.PivotLayout.getDataHierarchy
+  - uid: 'excel!Excel.PivotLayout#getDataHierarchy:member(1)'
     summary: |-
       Gets the DataHierarchy that is used to calculate the value in a specified range within the PivotTable.
 
@@ -134,14 +134,14 @@ items:
       content: 'getDataHierarchy(cell: Range | string): Excel.DataPivotHierarchy;'
       return:
         type:
-          - excel.Excel.DataPivotHierarchy
+          - 'excel!Excel.DataPivotHierarchy:class'
         description: The DataPivotHierarchy object used to calculate the value in the specified cell.
       parameters:
         - id: cell
           description: A single cell within the PivotTable data body.
           type:
-            - Range | string
-  - uid: excel.Excel.PivotLayout.getFilterAxisRange
+            - 'excel!Excel.PivotLayout#getDataHierarchy~0:complex'
+  - uid: 'excel!Excel.PivotLayout#getFilterAxisRange:member(1)'
     summary: |-
       Returns the range of the PivotTable's filter area.
 
@@ -155,9 +155,9 @@ items:
       content: 'getFilterAxisRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
-  - uid: excel.Excel.PivotLayout.getPivotItems
+  - uid: 'excel!Excel.PivotLayout#getPivotItems:member(1)'
     summary: |-
       Gets the PivotItems from an axis that make up the value in a specified range within the PivotTable.
 
@@ -171,18 +171,18 @@ items:
       content: 'getPivotItems(axis: Excel.PivotAxis, cell: Range | string): OfficeExtension.ClientResult<Excel.PivotItem[]>;'
       return:
         type:
-          - 'OfficeExtension.ClientResult<Excel.PivotItem[]>'
+          - 'excel!Excel.PivotLayout#getPivotItems~0:complex'
         description: A collection of PivotItems that are used to calculate the values in the specified row.
       parameters:
         - id: axis
           description: The axis from which to get the PivotItems. Must be either "row" or "column."
           type:
-            - excel.Excel.PivotAxis
+            - 'excel!Excel.PivotAxis:enum'
         - id: cell
           description: A single cell within the PivotTable's data body.
           type:
-            - Range | string
-  - uid: excel.Excel.PivotLayout.getPivotItems_1
+            - 'excel!Excel.PivotLayout#getPivotItems~1:complex'
+  - uid: 'excel!Excel.PivotLayout#getPivotItems:member(2)'
     summary: |-
       Gets the PivotItems from an axis that make up the value in a specified range within the PivotTable.
 
@@ -198,7 +198,7 @@ items:
         OfficeExtension.ClientResult<Excel.PivotItem[]>;
       return:
         type:
-          - 'OfficeExtension.ClientResult<Excel.PivotItem[]>'
+          - 'excel!Excel.PivotLayout#getPivotItems~2:complex'
         description: A collection of PivotItems that are used to calculate the values in the specified row.
       parameters:
         - id: axisString
@@ -208,8 +208,8 @@ items:
         - id: cell
           description: A single cell within the PivotTable's data body.
           type:
-            - Range | string
-  - uid: excel.Excel.PivotLayout.getRange
+            - 'excel!Excel.PivotLayout#getPivotItems~3:complex'
+  - uid: 'excel!Excel.PivotLayout#getRange:member(1)'
     summary: |-
       Returns the range the PivotTable exists on, excluding the filter area.
 
@@ -223,9 +223,9 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
-  - uid: excel.Excel.PivotLayout.getRowLabelRange
+  - uid: 'excel!Excel.PivotLayout#getRowLabelRange:member(1)'
     summary: |-
       Returns the range where the PivotTable's row labels reside.
 
@@ -239,9 +239,9 @@ items:
       content: 'getRowLabelRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
-  - uid: excel.Excel.PivotLayout.layoutType
+  - uid: 'excel!Excel.PivotLayout#layoutType:member'
     summary: >-
       This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this
       will be null.
@@ -257,8 +257,8 @@ items:
       content: 'layoutType: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";'
       return:
         type:
-          - Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline"
-  - uid: excel.Excel.PivotLayout.load
+          - 'excel!Excel.PivotLayout#layoutType~0:complex'
+  - uid: 'excel!Excel.PivotLayout#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -289,14 +289,14 @@ items:
       content: 'load(option?: Excel.Interfaces.PivotLayoutLoadOptions): Excel.PivotLayout;'
       return:
         type:
-          - excel.Excel.PivotLayout
+          - 'excel!Excel.PivotLayout:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.PivotLayoutLoadOptions
-  - uid: excel.Excel.PivotLayout.load_1
+            - 'excel!Excel.Interfaces.PivotLayoutLoadOptions:interface'
+  - uid: 'excel!Excel.PivotLayout#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -309,14 +309,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.PivotLayout;'
       return:
         type:
-          - excel.Excel.PivotLayout
+          - 'excel!Excel.PivotLayout:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.PivotLayout.load_2
+  - uid: 'excel!Excel.PivotLayout#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -329,7 +329,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotLayout;'
       return:
         type:
-          - excel.Excel.PivotLayout
+          - 'excel!Excel.PivotLayout:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -338,7 +338,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.PivotLayout.preserveFormatting
+  - uid: 'excel!Excel.PivotLayout#preserveFormatting:member'
     summary: >-
       Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as
       pivoting, sorting, or changing page field items.
@@ -355,7 +355,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.PivotLayout.set
+  - uid: 'excel!Excel.PivotLayout#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -380,12 +380,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.PivotLayoutUpdateData
+            - 'excel!Excel.Interfaces.PivotLayoutUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.PivotLayout.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.PivotLayout#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -402,8 +402,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.PivotLayout
-  - uid: excel.Excel.PivotLayout.setAutoSortOnCell
+            - 'excel!Excel.PivotLayout:class'
+  - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell:member(1)'
     summary: >-
       Sets the PivotTable to automatically sort using the specified cell to automatically select all necessary criteria
       and context. This behaves identically to applying an autosort from the UI.
@@ -425,12 +425,12 @@ items:
         - id: cell
           description: A single cell to use get the criteria from for applying the autosort.
           type:
-            - Range | string
+            - 'excel!Excel.PivotLayout#setAutoSortOnCell~0:complex'
         - id: sortBy
           description: The direction of the sort.
           type:
-            - excel.Excel.SortBy
-  - uid: excel.Excel.PivotLayout.setAutoSortOnCell_1
+            - 'excel!Excel.SortBy:enum'
+  - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell:member(2)'
     summary: >-
       Sets the PivotTable to automatically sort using the specified cell to automatically select all necessary criteria
       and context. This behaves identically to applying an autosort from the UI.
@@ -452,12 +452,12 @@ items:
         - id: cell
           description: A single cell to use get the criteria from for applying the autosort.
           type:
-            - Range | string
+            - 'excel!Excel.PivotLayout#setAutoSortOnCell~1:complex'
         - id: sortByString
           description: The direction of the sort.
           type:
             - '"Ascending" | "Descending"'
-  - uid: excel.Excel.PivotLayout.showColumnGrandTotals
+  - uid: 'excel!Excel.PivotLayout#showColumnGrandTotals:member'
     summary: |-
       Specifies whether the PivotTable report shows grand totals for columns.
 
@@ -472,7 +472,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.PivotLayout.showRowGrandTotals
+  - uid: 'excel!Excel.PivotLayout#showRowGrandTotals:member'
     summary: |-
       Specifies whether the PivotTable report shows grand totals for rows.
 
@@ -487,7 +487,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.PivotLayout.subtotalLocation
+  - uid: 'excel!Excel.PivotLayout#subtotalLocation:member'
     summary: >-
       This property indicates the SubtotalLocationType of all fields on the PivotTable. If fields have different states,
       this will be null.
@@ -503,8 +503,8 @@ items:
       content: 'subtotalLocation: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off";'
       return:
         type:
-          - Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off"
-  - uid: excel.Excel.PivotLayout.toJSON
+          - 'excel!Excel.PivotLayout#subtotalLocation~0:complex'
+  - uid: 'excel!Excel.PivotLayout#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -520,5 +520,119 @@ items:
       content: 'toJSON(): Excel.Interfaces.PivotLayoutData;'
       return:
         type:
-          - excel.Excel.Interfaces.PivotLayoutData
+          - 'excel!Excel.Interfaces.PivotLayoutData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.Range:class'
+    name: Excel.Range
+  - uid: 'excel!Excel.DataPivotHierarchy:class'
+    name: Excel.DataPivotHierarchy
+  - uid: 'excel!Excel.PivotLayout#getDataHierarchy~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.PivotLayout#getPivotItems~0:complex'
+    name: 'OfficeExtension.ClientResult<Excel.PivotItem[]>'
+    fullName: 'OfficeExtension.ClientResult<Excel.PivotItem[]>'
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.PivotItem:class'
+        name: Excel.PivotItem
+        fullName: Excel.PivotItem
+      - name: '[]>'
+        fullName: '[]>'
+  - uid: 'excel!Excel.PivotAxis:enum'
+    name: Excel.PivotAxis
+  - uid: 'excel!Excel.PivotLayout#getPivotItems~1:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.PivotLayout#getPivotItems~2:complex'
+    name: 'OfficeExtension.ClientResult<Excel.PivotItem[]>'
+    fullName: 'OfficeExtension.ClientResult<Excel.PivotItem[]>'
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.PivotItem:class'
+        name: Excel.PivotItem
+        fullName: Excel.PivotItem
+      - name: '[]>'
+        fullName: '[]>'
+  - uid: 'excel!Excel.PivotLayout#getPivotItems~3:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.PivotLayout#layoutType~0:complex'
+    name: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline"
+    fullName: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline"
+    spec.typeScript:
+      - uid: 'excel!Excel.PivotLayoutType:enum'
+        name: Excel.PivotLayoutType
+        fullName: Excel.PivotLayoutType
+      - name: ' | "Compact" | "Tabular" | "Outline"'
+        fullName: ' | "Compact" | "Tabular" | "Outline"'
+  - uid: 'excel!Excel.PivotLayout:class'
+    name: Excel.PivotLayout
+  - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions:interface'
+    name: Excel.Interfaces.PivotLayoutLoadOptions
+  - uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData:interface'
+    name: Interfaces.PivotLayoutUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.SortBy:enum'
+    name: Excel.SortBy
+  - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell~1:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.PivotLayout#subtotalLocation~0:complex'
+    name: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off"
+    fullName: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off"
+    spec.typeScript:
+      - uid: 'excel!Excel.SubtotalLocationType:enum'
+        name: Excel.SubtotalLocationType
+        fullName: Excel.SubtotalLocationType
+      - name: ' | "AtTop" | "AtBottom" | "Off"'
+        fullName: ' | "AtTop" | "AtBottom" | "Off"'
+  - uid: 'excel!Excel.Interfaces.PivotLayoutData:interface'
+    name: Excel.Interfaces.PivotLayoutData

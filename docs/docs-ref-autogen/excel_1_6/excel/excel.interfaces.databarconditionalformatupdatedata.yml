@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.DataBarConditionalFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData:interface'
     summary: >-
       An interface for updating data on the DataBarConditionalFormat object, for use in
       "dataBarConditionalFormat.set(<!-- -->{ ... }<!-- -->)".
@@ -9,17 +9,17 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.axisColor
-      - excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.axisFormat
-      - excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.barDirection
-      - excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.lowerBoundRule
-      - excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.negativeFormat
-      - excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.positiveFormat
-      - excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.showDataBarOnly
-      - excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.upperBoundRule
-  - uid: excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.axisColor
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#axisColor:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#axisFormat:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#barDirection:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#lowerBoundRule:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#negativeFormat:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#positiveFormat:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#showDataBarOnly:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#upperBoundRule:member'
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#axisColor:member'
     summary: >-
       HTML color code representing the color of the Axis line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange"). "" (empty string) if no axis is present or set.
@@ -36,7 +36,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.axisFormat
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#axisFormat:member'
     summary: |-
       Representation of how the axis is determined for an Excel data bar.
 
@@ -50,8 +50,8 @@ items:
       content: 'axisFormat?: Excel.ConditionalDataBarAxisFormat | "Automatic" | "None" | "CellMidPoint";'
       return:
         type:
-          - Excel.ConditionalDataBarAxisFormat | "Automatic" | "None" | "CellMidPoint"
-  - uid: excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.barDirection
+          - 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#axisFormat~0:complex'
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#barDirection:member'
     summary: |-
       Represents the direction that the data bar graphic should be based on.
 
@@ -65,8 +65,8 @@ items:
       content: 'barDirection?: Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft";'
       return:
         type:
-          - Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft"
-  - uid: excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.lowerBoundRule
+          - 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#barDirection~0:complex'
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#lowerBoundRule:member'
     summary: |-
       The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
 
@@ -80,8 +80,8 @@ items:
       content: 'lowerBoundRule?: Excel.ConditionalDataBarRule;'
       return:
         type:
-          - excel.Excel.ConditionalDataBarRule
-  - uid: excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.negativeFormat
+          - 'excel!Excel.ConditionalDataBarRule:interface'
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#negativeFormat:member'
     summary: |-
       Representation of all values to the left of the axis in an Excel data bar.
 
@@ -95,8 +95,8 @@ items:
       content: 'negativeFormat?: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
-  - uid: excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.positiveFormat
+          - 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#positiveFormat:member'
     summary: |-
       Representation of all values to the right of the axis in an Excel data bar.
 
@@ -110,8 +110,8 @@ items:
       content: 'positiveFormat?: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
-  - uid: excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.showDataBarOnly
+          - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#showDataBarOnly:member'
     summary: |-
       If true, hides the values from the cells where the data bar is applied.
 
@@ -126,7 +126,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.DataBarConditionalFormatUpdateData.upperBoundRule
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#upperBoundRule:member'
     summary: |-
       The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
 
@@ -140,4 +140,29 @@ items:
       content: 'upperBoundRule?: Excel.ConditionalDataBarRule;'
       return:
         type:
-          - excel.Excel.ConditionalDataBarRule
+          - 'excel!Excel.ConditionalDataBarRule:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#axisFormat~0:complex'
+    name: Excel.ConditionalDataBarAxisFormat | "Automatic" | "None" | "CellMidPoint"
+    fullName: Excel.ConditionalDataBarAxisFormat | "Automatic" | "None" | "CellMidPoint"
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalDataBarAxisFormat:enum'
+        name: Excel.ConditionalDataBarAxisFormat
+        fullName: Excel.ConditionalDataBarAxisFormat
+      - name: ' | "Automatic" | "None" | "CellMidPoint"'
+        fullName: ' | "Automatic" | "None" | "CellMidPoint"'
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData#barDirection~0:complex'
+    name: Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft"
+    fullName: Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft"
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalDataBarDirection:enum'
+        name: Excel.ConditionalDataBarDirection
+        fullName: Excel.ConditionalDataBarDirection
+      - name: ' | "Context" | "LeftToRight" | "RightToLeft"'
+        fullName: ' | "Context" | "LeftToRight" | "RightToLeft"'
+  - uid: 'excel!Excel.ConditionalDataBarRule:interface'
+    name: Excel.ConditionalDataBarRule
+  - uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData:interface'
+    name: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData:interface'
+    name: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData

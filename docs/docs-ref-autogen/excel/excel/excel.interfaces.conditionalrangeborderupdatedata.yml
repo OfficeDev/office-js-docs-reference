@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalRangeBorderUpdateData
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface'
     summary: >-
       An interface for updating data on the ConditionalRangeBorder object, for use in "conditionalRangeBorder.set(<!--
       -->{ ... }<!-- -->)".
@@ -9,11 +9,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ConditionalRangeBorderUpdateData.color
-      - excel.Excel.Interfaces.ConditionalRangeBorderUpdateData.style
-  - uid: excel.Excel.Interfaces.ConditionalRangeBorderUpdateData.color
+      - 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData#color:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData#style:member'
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData#color:member'
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange").
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ConditionalRangeBorderUpdateData.style
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData#style:member'
     summary: >-
       One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
       details.
@@ -48,4 +48,14 @@ items:
         "Dot";
       return:
         type:
-          - Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot"
+          - 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData#style~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData#style~0:complex'
+    name: Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot"
+    fullName: Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot"
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalRangeBorderLineStyle:enum'
+        name: Excel.ConditionalRangeBorderLineStyle
+        fullName: Excel.ConditionalRangeBorderLineStyle
+      - name: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot"'
+        fullName: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot"'

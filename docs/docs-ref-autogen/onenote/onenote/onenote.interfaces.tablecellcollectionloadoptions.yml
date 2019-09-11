@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions:interface'
     summary: |-
       Contains a collection of TableCell objects.
 
@@ -10,16 +10,16 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.$all
-      - onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.cellIndex
-      - onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.id
-      - onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.paragraphs
-      - onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.parentRow
-      - onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.rowIndex
-      - onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.shadingColor
-  - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.$all
+      - 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#cellIndex:member'
+      - 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#paragraphs:member'
+      - 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#parentRow:member'
+      - 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#rowIndex:member'
+      - 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#shadingColor:member'
+  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.cellIndex
+  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#cellIndex:member'
     summary: |-
       For EACH ITEM in the collection: Gets the index of the cell in its row. Read-only.
 
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.id
+  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#id:member'
     summary: |-
       For EACH ITEM in the collection: Gets the ID of the cell. Read-only.
 
@@ -60,7 +60,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.paragraphs
+  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#paragraphs:member'
     summary: |-
       For EACH ITEM in the collection: Gets the collection of Paragraph objects in the TableCell.
 
@@ -74,8 +74,8 @@ items:
       content: 'paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.parentRow
+          - 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#parentRow:member'
     summary: |-
       For EACH ITEM in the collection: Gets the parent row of the cell.
 
@@ -89,8 +89,8 @@ items:
       content: 'parentRow?: OneNote.Interfaces.TableRowLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableRowLoadOptions
-  - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.rowIndex
+          - 'onenote!OneNote.Interfaces.TableRowLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#rowIndex:member'
     summary: |-
       For EACH ITEM in the collection: Gets the index of the cell's row in the table. Read-only.
 
@@ -105,7 +105,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.shadingColor
+  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions#shadingColor:member'
     summary: |-
       For EACH ITEM in the collection: Gets and sets the shading color of the cell
 
@@ -120,3 +120,8 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface'
+    name: OneNote.Interfaces.ParagraphCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions:interface'
+    name: OneNote.Interfaces.TableRowLoadOptions

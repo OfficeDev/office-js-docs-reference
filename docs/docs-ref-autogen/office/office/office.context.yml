@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.Context
+  - uid: 'office!Office.Context:interface'
     summary: >-
       Represents the runtime environment of the add-in and provides access to key objects of the API. The current
       context exists as a property of Office. It is accessed using `Office.context`<!-- -->.
@@ -10,24 +10,24 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.Context.auth
-      - office.Office.Context.commerceAllowed
-      - office.Office.Context.contentLanguage
-      - office.Office.Context.diagnostics
-      - office.Office.Context.displayLanguage
-      - office.Office.Context.document
-      - office.Office.Context.host
-      - office.Office.Context.license
-      - office.Office.Context.mailbox
-      - office.Office.Context.officeTheme
-      - office.Office.Context.platform
-      - office.Office.Context.requirements
-      - office.Office.Context.roamingSettings
-      - office.Office.Context.touchEnabled
-      - office.Office.Context.ui
-  - uid: office.Office.Context.auth
+      - 'office!Office.Context#auth:member'
+      - 'office!Office.Context#commerceAllowed:member'
+      - 'office!Office.Context#contentLanguage:member'
+      - 'office!Office.Context#diagnostics:member'
+      - 'office!Office.Context#displayLanguage:member'
+      - 'office!Office.Context#document:member'
+      - 'office!Office.Context#host:member'
+      - 'office!Office.Context#license:member'
+      - 'office!Office.Context#mailbox:member'
+      - 'office!Office.Context#officeTheme:member'
+      - 'office!Office.Context#platform:member'
+      - 'office!Office.Context#requirements:member'
+      - 'office!Office.Context#roamingSettings:member'
+      - 'office!Office.Context#touchEnabled:member'
+      - 'office!Office.Context#ui:member'
+  - uid: 'office!Office.Context#auth:member'
     summary: Provides information and access to the signed-in user.
     isPreview: true
     name: auth
@@ -39,8 +39,8 @@ items:
       content: 'auth: Auth;'
       return:
         type:
-          - office.Office.Auth
-  - uid: office.Office.Context.commerceAllowed
+          - 'office!Office.Auth:interface'
+  - uid: 'office!Office.Context#commerceAllowed:member'
     summary: 'True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.'
     remarks: >-
       **Hosts**: Excel, Word
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office.Office.Context.contentLanguage
+  - uid: 'office!Office.Context#contentLanguage:member'
     summary: Gets the locale (language) specified by the user for editing the document or item.
     remarks: >-
       The `contentLanguage` value reflects the **Editing Language** setting specified with **File &gt; Options &gt;
@@ -124,7 +124,7 @@ items:
       return:
         type:
           - string
-  - uid: office.Office.Context.diagnostics
+  - uid: 'office!Office.Context#diagnostics:member'
     summary: Gets information about the environment in which the add-in is running.
     name: diagnostics
     fullName: diagnostics
@@ -135,8 +135,8 @@ items:
       content: 'diagnostics: ContextInformation;'
       return:
         type:
-          - office.Office.ContextInformation
-  - uid: office.Office.Context.displayLanguage
+          - 'office!Office.ContextInformation:interface'
+  - uid: 'office!Office.Context#displayLanguage:member'
     summary: Gets the locale (language) specified by the user for the UI of the Office host application.
     remarks: >-
       The returned value is a string in the RFC 1766 Language tag format, such as en-US.
@@ -203,7 +203,7 @@ items:
       return:
         type:
           - string
-  - uid: office.Office.Context.document
+  - uid: 'office!Office.Context#document:member'
     summary: Gets an object that represents the document the content or task pane add-in is interacting with.
     name: document
     fullName: document
@@ -214,7 +214,7 @@ items:
       content: 'document: Office.Document;'
       return:
         type:
-          - office.Office.Document
+          - 'office!Office.Document:interface'
         description: |-
 
 
@@ -234,7 +234,7 @@ items:
               });
           }
           ```
-  - uid: office.Office.Context.host
+  - uid: 'office!Office.Context#host:member'
     summary: Contains the Office application host in which the add-in is running.
     name: host
     fullName: host
@@ -245,8 +245,8 @@ items:
       content: 'host: HostType;'
       return:
         type:
-          - office.Office.HostType
-  - uid: office.Office.Context.license
+          - 'office!Office.HostType:enum'
+  - uid: 'office!Office.Context#license:member'
     summary: Gets the license information for the user's Office installation.
     name: license
     fullName: license
@@ -258,7 +258,7 @@ items:
       return:
         type:
           - string
-  - uid: office.Office.Context.mailbox
+  - uid: 'office!Office.Context#mailbox:member'
     summary: |-
       Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
 
@@ -303,8 +303,8 @@ items:
       content: 'mailbox: Office.Mailbox;'
       return:
         type:
-          - Office.Mailbox
-  - uid: office.Office.Context.officeTheme
+          - 'office!Office.Mailbox:interface'
+  - uid: 'office!Office.Context#officeTheme:member'
     summary: Provides access to the properties for Office theme colors.
     name: officeTheme
     fullName: officeTheme
@@ -315,7 +315,7 @@ items:
       content: 'officeTheme: OfficeTheme;'
       return:
         type:
-          - office.Office.OfficeTheme
+          - 'office!Office.OfficeTheme:interface'
         description: |-
 
 
@@ -333,7 +333,7 @@ items:
               $('.body').css('background-color', bodyBackgroundColor);
           }
           ```
-  - uid: office.Office.Context.platform
+  - uid: 'office!Office.Context#platform:member'
     summary: Provides the platform on which the add-in is running.
     name: platform
     fullName: platform
@@ -344,8 +344,8 @@ items:
       content: 'platform: PlatformType;'
       return:
         type:
-          - office.Office.PlatformType
-  - uid: office.Office.Context.requirements
+          - 'office!Office.PlatformType:enum'
+  - uid: 'office!Office.Context#requirements:member'
     summary: Provides a method for determining what requirement sets are supported on the current host and platform.
     name: requirements
     fullName: requirements
@@ -356,8 +356,8 @@ items:
       content: 'requirements: RequirementSetSupport;'
       return:
         type:
-          - office.Office.RequirementSetSupport
-  - uid: office.Office.Context.roamingSettings
+          - 'office!Office.RequirementSetSupport:interface'
+  - uid: 'office!Office.Context#roamingSettings:member'
     summary: >-
       Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.
 
@@ -383,8 +383,8 @@ items:
       content: 'roamingSettings: Office.RoamingSettings;'
       return:
         type:
-          - Office.RoamingSettings
-  - uid: office.Office.Context.touchEnabled
+          - 'office!Office.RoamingSettings:interface'
+  - uid: 'office!Office.Context#touchEnabled:member'
     summary: >-
       Specifies whether the platform and device allows touch interaction. True if the add-in is running on a touch
       device, such as an iPad; false otherwise.
@@ -407,7 +407,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office.Office.Context.ui
+  - uid: 'office!Office.Context#ui:member'
     summary: 'Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes.'
     name: ui
     fullName: ui
@@ -418,4 +418,25 @@ items:
       content: 'ui: UI;'
       return:
         type:
-          - office.Office.UI
+          - 'office!Office.UI:interface'
+references:
+  - uid: 'office!Office.Auth:interface'
+    name: Auth
+  - uid: 'office!Office.ContextInformation:interface'
+    name: ContextInformation
+  - uid: 'office!Office.Document:interface'
+    name: Office.Document
+  - uid: 'office!Office.HostType:enum'
+    name: HostType
+  - uid: 'office!Office.Mailbox:interface'
+    name: Office.Mailbox
+  - uid: 'office!Office.OfficeTheme:interface'
+    name: OfficeTheme
+  - uid: 'office!Office.PlatformType:enum'
+    name: PlatformType
+  - uid: 'office!Office.RequirementSetSupport:interface'
+    name: RequirementSetSupport
+  - uid: 'office!Office.RoamingSettings:interface'
+    name: Office.RoamingSettings
+  - uid: 'office!Office.UI:interface'
+    name: UI

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.WorksheetFilteredEventArgs
+  - uid: 'excel!Excel.WorksheetFilteredEventArgs:interface'
     summary: >-
       Provides information about the worksheet that raised the filter applied event.
 
@@ -13,11 +13,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.WorksheetFilteredEventArgs.type
-      - excel.Excel.WorksheetFilteredEventArgs.worksheetId
-  - uid: excel.Excel.WorksheetFilteredEventArgs.type
+      - 'excel!Excel.WorksheetFilteredEventArgs#type:member'
+      - 'excel!Excel.WorksheetFilteredEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.WorksheetFilteredEventArgs#type:member'
     summary: >-
       Represents the type of the event. See Excel.EventType for details.
 
@@ -35,7 +35,7 @@ items:
       return:
         type:
           - '"WorksheetFiltered"'
-  - uid: excel.Excel.WorksheetFilteredEventArgs.worksheetId
+  - uid: 'excel!Excel.WorksheetFilteredEventArgs#worksheetId:member'
     summary: >-
       Represents the id of the worksheet in which the filter is applied.
 

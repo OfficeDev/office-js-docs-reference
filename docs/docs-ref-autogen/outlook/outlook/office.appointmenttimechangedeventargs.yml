@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.AppointmentTimeChangedEventArgs
+  - uid: 'outlook!Office.AppointmentTimeChangedEventArgs:interface'
     summary: >-
       Provides the current dates and times of the appointment that raised the `Office.EventType.AppointmentTimeChanged`
       event.
@@ -12,12 +12,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.AppointmentTimeChangedEventArgs.end
-      - outlook.Office.AppointmentTimeChangedEventArgs.start
-      - outlook.Office.AppointmentTimeChangedEventArgs.type
-  - uid: outlook.Office.AppointmentTimeChangedEventArgs.end
+      - 'outlook!Office.AppointmentTimeChangedEventArgs#end:member'
+      - 'outlook!Office.AppointmentTimeChangedEventArgs#start:member'
+      - 'outlook!Office.AppointmentTimeChangedEventArgs#type:member'
+  - uid: 'outlook!Office.AppointmentTimeChangedEventArgs#end:member'
     summary: |-
       Gets the appointment end date and time.
 
@@ -31,8 +31,8 @@ items:
       content: 'end: Date;'
       return:
         type:
-          - Date
-  - uid: outlook.Office.AppointmentTimeChangedEventArgs.start
+          - '!Date:interface'
+  - uid: 'outlook!Office.AppointmentTimeChangedEventArgs#start:member'
     summary: |-
       Gets the appointment start date and time.
 
@@ -46,8 +46,8 @@ items:
       content: 'start: Date;'
       return:
         type:
-          - Date
-  - uid: outlook.Office.AppointmentTimeChangedEventArgs.type
+          - '!Date:interface'
+  - uid: 'outlook!Office.AppointmentTimeChangedEventArgs#type:member'
     summary: |-
       Gets the type of the event. See `Office.EventType` for details.
 
@@ -62,3 +62,6 @@ items:
       return:
         type:
           - '"olkAppointmentTimeChanged"'
+references:
+  - uid: '!Date:interface'
+    name: Date

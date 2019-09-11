@@ -1,32 +1,32 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.SheetVisibility
+  - uid: 'excel!Excel.SheetVisibility:enum'
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.SheetVisibility
     fullName: Excel.SheetVisibility
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.SheetVisibility.hidden
-      - excel.Excel.SheetVisibility.veryHidden
-      - excel.Excel.SheetVisibility.visible
-  - uid: excel.Excel.SheetVisibility.hidden
+      - 'excel!Excel.SheetVisibility.hidden:member'
+      - 'excel!Excel.SheetVisibility.veryHidden:member'
+      - 'excel!Excel.SheetVisibility.visible:member'
+  - uid: 'excel!Excel.SheetVisibility.hidden:member'
     name: hidden
     fullName: hidden
     langs:
       - typeScript
     type: field
     numericValue: '"Hidden"'
-  - uid: excel.Excel.SheetVisibility.veryHidden
+  - uid: 'excel!Excel.SheetVisibility.veryHidden:member'
     name: veryHidden
     fullName: veryHidden
     langs:
       - typeScript
     type: field
     numericValue: '"VeryHidden"'
-  - uid: excel.Excel.SheetVisibility.visible
+  - uid: 'excel!Excel.SheetVisibility.visible:member'
     name: visible
     fullName: visible
     langs:

@@ -1,20 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeFillUpdateData
+  - uid: 'excel!Excel.Interfaces.RangeFillUpdateData:interface'
     summary: 'An interface for updating data on the RangeFill object, for use in "rangeFill.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.RangeFillUpdateData
     fullName: Excel.Interfaces.RangeFillUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RangeFillUpdateData.color
-      - excel.Excel.Interfaces.RangeFillUpdateData.pattern
-      - excel.Excel.Interfaces.RangeFillUpdateData.patternColor
-      - excel.Excel.Interfaces.RangeFillUpdateData.patternTintAndShade
-      - excel.Excel.Interfaces.RangeFillUpdateData.tintAndShade
-  - uid: excel.Excel.Interfaces.RangeFillUpdateData.color
+      - 'excel!Excel.Interfaces.RangeFillUpdateData#color:member'
+      - 'excel!Excel.Interfaces.RangeFillUpdateData#pattern:member'
+      - 'excel!Excel.Interfaces.RangeFillUpdateData#patternColor:member'
+      - 'excel!Excel.Interfaces.RangeFillUpdateData#patternTintAndShade:member'
+      - 'excel!Excel.Interfaces.RangeFillUpdateData#tintAndShade:member'
+  - uid: 'excel!Excel.Interfaces.RangeFillUpdateData#color:member'
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange")
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.RangeFillUpdateData.pattern
+  - uid: 'excel!Excel.Interfaces.RangeFillUpdateData#pattern:member'
     summary: >-
       Gets or sets the pattern of a Range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are
       not supported. A null value indicates that the entire range doesn't have uniform pattern setting.
@@ -50,11 +50,8 @@ items:
         "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
       return:
         type:
-          - >-
-            Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" |
-            "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" |
-            "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"
-  - uid: excel.Excel.Interfaces.RangeFillUpdateData.patternColor
+          - 'excel!Excel.Interfaces.RangeFillUpdateData#pattern~0:complex'
+  - uid: 'excel!Excel.Interfaces.RangeFillUpdateData#patternColor:member'
     summary: >-
       Sets HTML color code representing the color of the Range pattern, of the form \#RRGGBB (e.g. "FFA500") or as a
       named HTML color (e.g. "orange"). Gets HTML color code representing the color of the Range pattern, of the form
@@ -72,7 +69,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.RangeFillUpdateData.patternTintAndShade
+  - uid: 'excel!Excel.Interfaces.RangeFillUpdateData#patternTintAndShade:member'
     summary: >-
       Returns or sets a double that lightens or darkens a pattern color for Range Fill, the value is between -1
       (darkest) and 1 (brightest), with 0 for the original color. If the pattern tintAndShades are not uniform, null
@@ -90,7 +87,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeFillUpdateData.tintAndShade
+  - uid: 'excel!Excel.Interfaces.RangeFillUpdateData#tintAndShade:member'
     summary: >-
       Returns or sets a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1
       (brightest), with 0 for the original color. If the tintAndShades are not uniform, null will be returned.
@@ -107,3 +104,19 @@ items:
       return:
         type:
           - number
+references:
+  - uid: 'excel!Excel.Interfaces.RangeFillUpdateData#pattern~0:complex'
+    name: >-
+      Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up"
+      | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross"
+      | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"
+    fullName: >-
+      Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up"
+      | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross"
+      | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"
+    spec.typeScript:
+      - uid: 'excel!Excel.FillPattern:enum'
+        name: Excel.FillPattern
+        fullName: Excel.FillPattern
+      - name: ' | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"'
+        fullName: ' | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"'

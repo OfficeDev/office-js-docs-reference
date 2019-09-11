@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ShapeFillType
+  - uid: 'excel!Excel.ShapeFillType:enum'
     summary: |-
       Specifies a shape's fill type.
 
@@ -10,15 +10,15 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ShapeFillType.gradient
-      - excel.Excel.ShapeFillType.mixed
-      - excel.Excel.ShapeFillType.noFill
-      - excel.Excel.ShapeFillType.pattern
-      - excel.Excel.ShapeFillType.pictureAndTexture
-      - excel.Excel.ShapeFillType.solid
-  - uid: excel.Excel.ShapeFillType.gradient
+      - 'excel!Excel.ShapeFillType.gradient:member'
+      - 'excel!Excel.ShapeFillType.mixed:member'
+      - 'excel!Excel.ShapeFillType.noFill:member'
+      - 'excel!Excel.ShapeFillType.pattern:member'
+      - 'excel!Excel.ShapeFillType.pictureAndTexture:member'
+      - 'excel!Excel.ShapeFillType.solid:member'
+  - uid: 'excel!Excel.ShapeFillType.gradient:member'
     summary: Gradient fill.
     name: gradient
     fullName: gradient
@@ -26,7 +26,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Gradient"'
-  - uid: excel.Excel.ShapeFillType.mixed
+  - uid: 'excel!Excel.ShapeFillType.mixed:member'
     summary: Mixed fill.
     name: mixed
     fullName: mixed
@@ -34,7 +34,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Mixed"'
-  - uid: excel.Excel.ShapeFillType.noFill
+  - uid: 'excel!Excel.ShapeFillType.noFill:member'
     summary: No fill.
     name: noFill
     fullName: noFill
@@ -42,7 +42,7 @@ items:
       - typeScript
     type: field
     numericValue: '"NoFill"'
-  - uid: excel.Excel.ShapeFillType.pattern
+  - uid: 'excel!Excel.ShapeFillType.pattern:member'
     summary: Pattern fill.
     name: pattern
     fullName: pattern
@@ -50,7 +50,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Pattern"'
-  - uid: excel.Excel.ShapeFillType.pictureAndTexture
+  - uid: 'excel!Excel.ShapeFillType.pictureAndTexture:member'
     summary: Picture and texture fill.
     name: pictureAndTexture
     fullName: pictureAndTexture
@@ -58,7 +58,7 @@ items:
       - typeScript
     type: field
     numericValue: '"PictureAndTexture"'
-  - uid: excel.Excel.ShapeFillType.solid
+  - uid: 'excel!Excel.ShapeFillType.solid:member'
     summary: Solid fill.
     name: solid
     fullName: solid

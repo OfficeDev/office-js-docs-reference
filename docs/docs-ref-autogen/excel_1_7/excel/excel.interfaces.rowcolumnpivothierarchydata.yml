@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyData
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface'
     summary: An interface describing the data returned by calling "rowColumnPivotHierarchy.toJSON()".
     name: Excel.Interfaces.RowColumnPivotHierarchyData
     fullName: Excel.Interfaces.RowColumnPivotHierarchyData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TableRowLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableRowLoadOptions:interface'
     summary: >-
       Represents a row in a table.
 
@@ -16,12 +16,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TableRowLoadOptions.$all
-      - excel.Excel.Interfaces.TableRowLoadOptions.index
-      - excel.Excel.Interfaces.TableRowLoadOptions.values
-  - uid: excel.Excel.Interfaces.TableRowLoadOptions.$all
+      - 'excel!Excel.Interfaces.TableRowLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.TableRowLoadOptions#index:member'
+      - 'excel!Excel.Interfaces.TableRowLoadOptions#values:member'
+  - uid: 'excel!Excel.Interfaces.TableRowLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableRowLoadOptions.index
+  - uid: 'excel!Excel.Interfaces.TableRowLoadOptions#index:member'
     summary: |-
       Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
 
@@ -47,7 +47,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableRowLoadOptions.values
+  - uid: 'excel!Excel.Interfaces.TableRowLoadOptions#values:member'
     summary: >-
       Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
       Cells that contain an error will return the error string.

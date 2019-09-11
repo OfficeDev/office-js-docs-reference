@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.DataPivotHierarchy
+  - uid: 'excel!Excel.DataPivotHierarchy:class'
     summary: |-
       Represents the Excel DataPivotHierarchy.
 
@@ -11,25 +11,25 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.DataPivotHierarchy.context
-      - excel.Excel.DataPivotHierarchy.field
-      - excel.Excel.DataPivotHierarchy.id
-      - excel.Excel.DataPivotHierarchy.load
-      - excel.Excel.DataPivotHierarchy.load_1
-      - excel.Excel.DataPivotHierarchy.load_2
-      - excel.Excel.DataPivotHierarchy.name
-      - excel.Excel.DataPivotHierarchy.numberFormat
-      - excel.Excel.DataPivotHierarchy.position
-      - excel.Excel.DataPivotHierarchy.set
-      - excel.Excel.DataPivotHierarchy.set_1
-      - excel.Excel.DataPivotHierarchy.setToDefault
-      - excel.Excel.DataPivotHierarchy.showAs
-      - excel.Excel.DataPivotHierarchy.summarizeBy
-      - excel.Excel.DataPivotHierarchy.toJSON
-  - uid: excel.Excel.DataPivotHierarchy.context
+      - 'excel!Excel.DataPivotHierarchy#context:member'
+      - 'excel!Excel.DataPivotHierarchy#field:member'
+      - 'excel!Excel.DataPivotHierarchy#id:member'
+      - 'excel!Excel.DataPivotHierarchy#load:member(1)'
+      - 'excel!Excel.DataPivotHierarchy#load:member(2)'
+      - 'excel!Excel.DataPivotHierarchy#load:member(3)'
+      - 'excel!Excel.DataPivotHierarchy#name:member'
+      - 'excel!Excel.DataPivotHierarchy#numberFormat:member'
+      - 'excel!Excel.DataPivotHierarchy#position:member'
+      - 'excel!Excel.DataPivotHierarchy#set:member(1)'
+      - 'excel!Excel.DataPivotHierarchy#set:member(2)'
+      - 'excel!Excel.DataPivotHierarchy#setToDefault:member(1)'
+      - 'excel!Excel.DataPivotHierarchy#showAs:member'
+      - 'excel!Excel.DataPivotHierarchy#summarizeBy:member'
+      - 'excel!Excel.DataPivotHierarchy#toJSON:member(1)'
+  - uid: 'excel!Excel.DataPivotHierarchy#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -42,8 +42,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.DataPivotHierarchy.field
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.DataPivotHierarchy#field:member'
     summary: |-
       Returns the PivotFields associated with the DataPivotHierarchy.
 
@@ -57,8 +57,8 @@ items:
       content: 'readonly field: Excel.PivotField;'
       return:
         type:
-          - excel.Excel.PivotField
-  - uid: excel.Excel.DataPivotHierarchy.id
+          - 'excel!Excel.PivotField:class'
+  - uid: 'excel!Excel.DataPivotHierarchy#id:member'
     summary: |-
       Id of the DataPivotHierarchy.
 
@@ -73,7 +73,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.DataPivotHierarchy.load
+  - uid: 'excel!Excel.DataPivotHierarchy#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -104,14 +104,14 @@ items:
       content: 'load(option?: Excel.Interfaces.DataPivotHierarchyLoadOptions): Excel.DataPivotHierarchy;'
       return:
         type:
-          - excel.Excel.DataPivotHierarchy
+          - 'excel!Excel.DataPivotHierarchy:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.DataPivotHierarchyLoadOptions
-  - uid: excel.Excel.DataPivotHierarchy.load_1
+            - 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions:interface'
+  - uid: 'excel!Excel.DataPivotHierarchy#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -124,14 +124,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.DataPivotHierarchy;'
       return:
         type:
-          - excel.Excel.DataPivotHierarchy
+          - 'excel!Excel.DataPivotHierarchy:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.DataPivotHierarchy.load_2
+  - uid: 'excel!Excel.DataPivotHierarchy#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -144,7 +144,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.DataPivotHierarchy;'
       return:
         type:
-          - excel.Excel.DataPivotHierarchy
+          - 'excel!Excel.DataPivotHierarchy:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -153,7 +153,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.DataPivotHierarchy.name
+  - uid: 'excel!Excel.DataPivotHierarchy#name:member'
     summary: |-
       Name of the DataPivotHierarchy.
 
@@ -184,7 +184,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.DataPivotHierarchy.numberFormat
+  - uid: 'excel!Excel.DataPivotHierarchy#numberFormat:member'
     summary: |-
       Number format of the DataPivotHierarchy.
 
@@ -199,7 +199,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.DataPivotHierarchy.position
+  - uid: 'excel!Excel.DataPivotHierarchy#position:member'
     summary: |-
       Position of the DataPivotHierarchy.
 
@@ -214,7 +214,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.DataPivotHierarchy.set
+  - uid: 'excel!Excel.DataPivotHierarchy#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -239,12 +239,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.DataPivotHierarchyUpdateData
+            - 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.DataPivotHierarchy.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.DataPivotHierarchy#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -261,8 +261,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.DataPivotHierarchy
-  - uid: excel.Excel.DataPivotHierarchy.setToDefault
+            - 'excel!Excel.DataPivotHierarchy:class'
+  - uid: 'excel!Excel.DataPivotHierarchy#setToDefault:member(1)'
     summary: |-
       Reset the DataPivotHierarchy back to its default values.
 
@@ -278,7 +278,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.DataPivotHierarchy.showAs
+  - uid: 'excel!Excel.DataPivotHierarchy#showAs:member'
     summary: |-
       Determines whether the data should be shown as a specific summary calculation or not.
 
@@ -292,7 +292,7 @@ items:
       content: 'showAs: Excel.ShowAsRule;'
       return:
         type:
-          - excel.Excel.ShowAsRule
+          - 'excel!Excel.ShowAsRule:interface'
         description: |-
 
 
@@ -321,7 +321,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.DataPivotHierarchy.summarizeBy
+  - uid: 'excel!Excel.DataPivotHierarchy#summarizeBy:member'
     summary: |-
       Determines whether to show all items of the DataPivotHierarchy.
 
@@ -337,10 +337,8 @@ items:
         "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP";
       return:
         type:
-          - >-
-            Excel.AggregationFunction | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" |
-            "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP"
-  - uid: excel.Excel.DataPivotHierarchy.toJSON
+          - 'excel!Excel.DataPivotHierarchy#summarizeBy~0:complex'
+  - uid: 'excel!Excel.DataPivotHierarchy#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -356,5 +354,37 @@ items:
       content: 'toJSON(): Excel.Interfaces.DataPivotHierarchyData;'
       return:
         type:
-          - excel.Excel.Interfaces.DataPivotHierarchyData
+          - 'excel!Excel.Interfaces.DataPivotHierarchyData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.PivotField:class'
+    name: Excel.PivotField
+  - uid: 'excel!Excel.DataPivotHierarchy:class'
+    name: Excel.DataPivotHierarchy
+  - uid: 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions:interface'
+    name: Excel.Interfaces.DataPivotHierarchyLoadOptions
+  - uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData:interface'
+    name: Interfaces.DataPivotHierarchyUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.ShowAsRule:interface'
+    name: Excel.ShowAsRule
+  - uid: 'excel!Excel.DataPivotHierarchy#summarizeBy~0:complex'
+    name: >-
+      Excel.AggregationFunction | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" | "Product" |
+      "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP"
+    fullName: >-
+      Excel.AggregationFunction | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" | "Product" |
+      "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP"
+    spec.typeScript:
+      - uid: 'excel!Excel.AggregationFunction:enum'
+        name: Excel.AggregationFunction
+        fullName: Excel.AggregationFunction
+      - name: ' | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" | "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP"'
+        fullName: ' | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" | "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP"'
+  - uid: 'excel!Excel.Interfaces.DataPivotHierarchyData:interface'
+    name: Excel.Interfaces.DataPivotHierarchyData

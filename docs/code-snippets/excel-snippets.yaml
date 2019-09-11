@@ -1,4 +1,4 @@
-Excel.createWorkbook:
+Excel.createWorkbook:function(1):
   - |-
     var myFile = document.getElementById("file");
     var reader = new FileReader();
@@ -13,7 +13,7 @@ Excel.createWorkbook:
 
     // read in the file as a data URL so we can parse the base64-encoded string
     reader.readAsDataURL(myFile.files[0]);
-Excel.Application.calculate_1:
+Excel.Application#calculate:member(2):
   - |-
     Excel.run(function (ctx) {
         ctx.workbook.application.calculate('Full');
@@ -24,7 +24,7 @@ Excel.Application.calculate_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Application.load_1:
+Excel.Application#load:member(2):
   - |-
     Excel.run(function (ctx) {
         var application = ctx.workbook.application;
@@ -38,7 +38,7 @@ Excel.Application.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Binding.getRange:
+Excel.Binding#getRange:member(1):
   - |-
     Excel.run(function (ctx) { 
         var binding = ctx.workbook.bindings.getItemAt(0);
@@ -53,7 +53,7 @@ Excel.Binding.getRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Binding.getTable:
+Excel.Binding#getTable:member(1):
   - |-
     Excel.run(function (ctx) { 
         var binding = ctx.workbook.bindings.getItemAt(0);
@@ -68,7 +68,7 @@ Excel.Binding.getTable:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Binding.getText:
+Excel.Binding#getText:member(1):
   - |-
     Excel.run(function (ctx) { 
         var binding = ctx.workbook.bindings.getItemAt(0);
@@ -83,7 +83,7 @@ Excel.Binding.getText:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Binding.load_1:
+Excel.Binding#load:member(2):
   - |-
     Excel.run(function (ctx) { 
         var binding = ctx.workbook.bindings.getItemAt(0);
@@ -97,7 +97,7 @@ Excel.Binding.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.BindingCollection.getItem:
+Excel.BindingCollection#getItem:member(1):
   - |-
     // Create a table binding to monitor data changes in the table. 
     // When data is changed, the background color of the table will be changed to orange.
@@ -139,7 +139,7 @@ Excel.BindingCollection.getItem:
             });
         });
     }
-Excel.BindingCollection.getItemAt:
+Excel.BindingCollection#getItemAt:member(1):
   - |-
     Excel.run(function (ctx) { 
         var lastPosition = ctx.workbook.bindings.count - 1;
@@ -154,7 +154,7 @@ Excel.BindingCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.BindingCollection.load_1:
+Excel.BindingCollection#load:member(2):
   - |-
     Excel.run(function (ctx) { 
         var bindings = ctx.workbook.bindings;
@@ -185,7 +185,7 @@ Excel.BindingCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Chart.delete:
+Excel.Chart#delete:member(1):
   - |-
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
@@ -197,7 +197,7 @@ Excel.Chart.delete:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Chart.getImage:
+Excel.Chart#getImage:member(1):
   - |-
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
@@ -209,7 +209,7 @@ Excel.Chart.getImage:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Chart.name:
+Excel.Chart#name:member:
   - |-
     // Rename the chart to new name, resize the chart to 200 points in both height and weight. 
     // Move Chart1 to 100 points to the top and left. 
@@ -227,7 +227,7 @@ Excel.Chart.name:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Chart.setData_1:
+Excel.Chart#setData:member(1):
   - |-
     // Set the sourceData to be "A1:B4" and seriesBy to be "Columns"
     Excel.run(function (ctx) { 
@@ -241,7 +241,7 @@ Excel.Chart.setData_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Chart.setPosition:
+Excel.Chart#setPosition:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Charts";
@@ -259,7 +259,7 @@ Excel.Chart.setPosition:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Chart.load_1:
+Excel.Chart#load:member(2):
   - |-
     // Get a chart named "Chart1"
     Excel.run(function (ctx) { 
@@ -274,7 +274,7 @@ Excel.Chart.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartAxis.load_1:
+Excel.ChartAxis#load:member(2):
   - |-
     // Get the maximum of Chart Axis from Chart1
     Excel.run(function (ctx) { 
@@ -307,7 +307,7 @@ Excel.ChartAxis.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartAxisTitle.load_1:
+Excel.ChartAxisTitle#load:member(2):
   - |-
     // Get the text of Chart Axis Title from the value axis of Chart1.
     Excel.run(function (ctx) { 
@@ -337,7 +337,7 @@ Excel.ChartAxisTitle.load_1:
                 console.log("Debug info: " + JSON.stringify(error.debugInfo));
             }
     });
-Excel.Chart.onActivated:
+Excel.Chart#onActivated:member:
   - |-
     Excel.run(function (context){
         var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
@@ -349,7 +349,7 @@ Excel.Chart.onActivated:
         });
         return context.sync();
     });
-Excel.Chart.onDeactivated:
+Excel.Chart#onDeactivated:member:
   - |-
     Excel.run(function (context){
         var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
@@ -361,7 +361,7 @@ Excel.Chart.onDeactivated:
         });
         return context.sync();
     });
-Excel.ChartCollection.add_1:
+Excel.ChartCollection#add:member(1):
   - |-
     // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
     // with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
@@ -379,7 +379,7 @@ Excel.ChartCollection.add_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartCollection.getItem:
+Excel.ChartCollection#getItem:member(1):
   - |-
     Excel.run(function (ctx) { 
         var chartname = 'Chart1';
@@ -419,7 +419,7 @@ Excel.ChartCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartCollection.getItemAt:
+Excel.ChartCollection#getItemAt:member(1):
   - |-
     Excel.run(function (ctx) { 
         var lastPosition = ctx.workbook.worksheets.getItem("Sheet1").charts.count - 1;
@@ -433,7 +433,7 @@ Excel.ChartCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartCollection.load_1:
+Excel.ChartCollection#load:member(2):
   - |-
     Excel.run(function (ctx) { 
         var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
@@ -464,7 +464,7 @@ Excel.ChartCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartCollection.onActivated:
+Excel.ChartCollection#onActivated:member:
   - |-
     Excel.run(function (context){
         context.workbook.worksheets.getActiveWorksheet()
@@ -476,7 +476,7 @@ Excel.ChartCollection.onActivated:
         });
         return context.sync();
     });
-Excel.ChartCollection.onAdded:
+Excel.ChartCollection#onAdded:member:
   - |-
     Excel.run(function (context){
         context.workbook.worksheets.getActiveWorksheet()
@@ -488,7 +488,7 @@ Excel.ChartCollection.onAdded:
         });
         return context.sync();
     });
-Excel.ChartCollection.onDeactivated:
+Excel.ChartCollection#onDeactivated:member:
   - |-
     Excel.run(function (context){
         context.workbook.worksheets.getActiveWorksheet()
@@ -500,7 +500,7 @@ Excel.ChartCollection.onDeactivated:
         });
         return context.sync();
     });
-Excel.ChartCollection.onDeleted:
+Excel.ChartCollection#onDeleted:member:
   - |-
     Excel.run(function (context){
         context.workbook.worksheets.getActiveWorksheet()
@@ -512,7 +512,7 @@ Excel.ChartCollection.onDeleted:
         });
         return context.sync();
     });
-Excel.ChartDataLabels.load_1:
+Excel.ChartDataLabels#load:member(2):
   - |-
     // Make Series Name shown in Datalabels and set the position of datalabels to be "top";
     Excel.run(function (ctx) { 
@@ -529,7 +529,7 @@ Excel.ChartDataLabels.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartFill.clear:
+Excel.ChartFill#clear:member(1):
   - |-
     // Clear the line format of the major Gridlines on value axis of the Chart named "Chart1"
     Excel.run(function (ctx) { 
@@ -544,7 +544,7 @@ Excel.ChartFill.clear:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartFill.setSolidColor:
+Excel.ChartFill#setSolidColor:member(1):
   - |-
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
@@ -560,7 +560,7 @@ Excel.ChartFill.setSolidColor:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartFont:
+Excel.ChartFont:class:
   - |-
     // Set chart title to be Calbri, size 10, bold and in red. 
     Excel.run(function (ctx) { 
@@ -578,7 +578,7 @@ Excel.ChartFont:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartGridlines.load_1:
+Excel.ChartGridlines#load:member(2):
   - |-
     // Get the visible of Major Gridlines on value axis of Chart1
     Excel.run(function (ctx) { 
@@ -608,7 +608,7 @@ Excel.ChartGridlines.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartLegend.load_1:
+Excel.ChartLegend#load:member(2):
   - |-
     // Get the position of Chart Legend from Chart1
     Excel.run(function (ctx) { 
@@ -640,7 +640,7 @@ Excel.ChartLegend.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartLineFormat.clear:
+Excel.ChartLineFormat#clear:member(1):
   - |-
     // Set to show legend of Chart1 and make it on top of the chart.
     Excel.run(function (ctx) { 
@@ -655,7 +655,7 @@ Excel.ChartLineFormat.clear:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartLineFormat.load_1:
+Excel.ChartLineFormat#load:member(2):
   - |-
     // Set chart major gridlines on value axis to be red.
     Excel.run(function (ctx) {
@@ -670,7 +670,7 @@ Excel.ChartLineFormat.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartPointsCollection.getItemAt:
+Excel.ChartPointsCollection#getItemAt:member(1):
   - |-
     // Set the border color for the first points in the points collection
     Excel.run(function (ctx) { 
@@ -685,7 +685,7 @@ Excel.ChartPointsCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartPointsCollection.load_1:
+Excel.ChartPointsCollection#load:member(2):
   - |-
     // Get the names of points in the points collection
     Excel.run(function (ctx) { 
@@ -716,7 +716,7 @@ Excel.ChartPointsCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartSeries.load_1:
+Excel.ChartSeries#load:member(2):
   - |-
     // Rename the 1st series of Chart1 to "New Series Name"
     Excel.run(function (ctx) { 
@@ -731,7 +731,7 @@ Excel.ChartSeries.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartSeriesCollection.getItemAt:
+Excel.ChartSeriesCollection#getItemAt:member(1):
   - |-
     // Get the name of the first series in the series collection.
     Excel.run(function (ctx) { 
@@ -746,7 +746,7 @@ Excel.ChartSeriesCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartSeriesCollection.load_1:
+Excel.ChartSeriesCollection#load:member(2):
   - |-
     // Getting the names of series in the series collection.
     Excel.run(function (ctx) { 
@@ -778,7 +778,7 @@ Excel.ChartSeriesCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartTitle.load_1:
+Excel.ChartTitle#load:member(2):
   - |-
     // Get the text of Chart Title from Chart1.
     Excel.run(function (ctx) { 
@@ -813,7 +813,7 @@ Excel.ChartTitle.load_1:
             }
         });
     });
-Excel.ConditionalFormatCollection.add:
+Excel.ConditionalFormatCollection#add:member(1):
   - |-
     Excel.run(function (ctx) {
         var sheetName = "Sheet1";
@@ -830,7 +830,7 @@ Excel.ConditionalFormatCollection.add:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ConditionalFormatCollection.clearAll:
+Excel.ConditionalFormatCollection#clearAll:member(1):
   - |-
     Excel.run(function (ctx) {
         var sheetName = "Sheet1";
@@ -847,7 +847,7 @@ Excel.ConditionalFormatCollection.clearAll:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ConditionalFormatCollection.getCount:
+Excel.ConditionalFormatCollection#getCount:member(1):
   - |-
     Excel.run(function (ctx) {
         var sheetName = "Sheet1";
@@ -866,7 +866,7 @@ Excel.ConditionalFormatCollection.getCount:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ConditionalFormatCollection.getItem:
+Excel.ConditionalFormatCollection#getItem:member(1):
   - |-
     Excel.run(function (ctx) {
         var sheetName = "Sheet1";
@@ -883,7 +883,7 @@ Excel.ConditionalFormatCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ConditionalFormatCollection.getItemAt:
+Excel.ConditionalFormatCollection#getItemAt:member(1):
   - |-
     Excel.run(function (ctx) {
         var sheetName = "Sheet1";
@@ -900,7 +900,7 @@ Excel.ConditionalFormatCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.CustomConditionalFormat.rule:
+Excel.CustomConditionalFormat#rule:member:
   - |-
     Excel.run(function (ctx) {
         var sheet = ctx.workbook.worksheets.getActiveWorksheet();
@@ -919,7 +919,7 @@ Excel.CustomConditionalFormat.rule:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.NamedItem.getRange:
+Excel.NamedItem#getRange:member(1):
   - |-
     // Returns the Range object that is associated with the name. 
     // null if the name is not of the type Range.
@@ -937,7 +937,7 @@ Excel.NamedItem.getRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.NamedItem.load_1:
+Excel.NamedItem#load:member(2):
   - |-
     Excel.run(function (ctx) { 
         var names = ctx.workbook.names;
@@ -952,7 +952,7 @@ Excel.NamedItem.load_1:
                 console.log("Debug info: " + JSON.stringify(error.debugInfo));
             }
     });
-Excel.NamedItemCollection.getItem:
+Excel.NamedItemCollection#getItem:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = 'Sheet1';
@@ -967,7 +967,7 @@ Excel.NamedItemCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.NamedItemCollection.load_1:
+Excel.NamedItemCollection#load:member(2):
   - |-
     Excel.run(function (ctx) { 
         var nameditems = ctx.workbook.names;
@@ -985,7 +985,7 @@ Excel.NamedItemCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.clear:
+Excel.Range#clear:member(1):
   - |-
     // Below example clears format and contents of the range. 
     Excel.run(function (ctx) { 
@@ -1000,7 +1000,7 @@ Excel.Range.clear:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.delete_1:
+Excel.Range#delete:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1014,7 +1014,7 @@ Excel.Range.delete_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getBoundingRect:
+Excel.Range#getBoundingRect:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1031,7 +1031,7 @@ Excel.Range.getBoundingRect:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getCell:
+Excel.Range#getCell:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1049,7 +1049,7 @@ Excel.Range.getCell:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getColumn:
+Excel.Range#getColumn:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet19";
@@ -1065,7 +1065,7 @@ Excel.Range.getColumn:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getEntireColumn:
+Excel.Range#getEntireColumn:member(1):
   - |-
     // Note: the grid properties of the Range (values, numberFormat, formulas) 
     // contains null since the Range in question is unbounded.
@@ -1084,7 +1084,7 @@ Excel.Range.getEntireColumn:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getEntireRow:
+Excel.Range#getEntireRow:member(1):
   - |-
     // Gets an object that represents the entire row of the range 
     // (for example, if the current range represents cells "B4:E11", 
@@ -1104,7 +1104,7 @@ Excel.Range.getEntireRow:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getIntersection:
+Excel.Range#getIntersection:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1121,7 +1121,7 @@ Excel.Range.getIntersection:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getLastCell:
+Excel.Range#getLastCell:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1137,7 +1137,7 @@ Excel.Range.getLastCell:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getLastColumn:
+Excel.Range#getLastColumn:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1153,7 +1153,7 @@ Excel.Range.getLastColumn:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getLastRow:
+Excel.Range#getLastRow:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1169,7 +1169,7 @@ Excel.Range.getLastRow:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getOffsetRange:
+Excel.Range#getOffsetRange:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1186,7 +1186,7 @@ Excel.Range.getOffsetRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getRow:
+Excel.Range#getRow:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1202,7 +1202,7 @@ Excel.Range.getRow:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.getUsedRange:
+Excel.Range#getUsedRange:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1219,7 +1219,7 @@ Excel.Range.getUsedRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.insert:
+Excel.Range#insert:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1234,7 +1234,7 @@ Excel.Range.insert:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.merge:
+Excel.Range#merge:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1261,7 +1261,7 @@ Excel.Range.merge:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.select:
+Excel.Range#select:member(1):
   - |-
     Excel.run(function (ctx) {
         var sheetName = "Sheet1";
@@ -1275,7 +1275,7 @@ Excel.Range.select:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.unmerge:
+Excel.Range#unmerge:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1289,7 +1289,7 @@ Excel.Range.unmerge:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.untrack:
+Excel.Range#untrack:member(1):
   - |-
     Excel.run(async (context) => {
         const largeRange = context.workbook.getSelectedRange();
@@ -1308,7 +1308,7 @@ Excel.Range.untrack:
 
         await context.sync();
     });
-Excel.Range.load_1:
+Excel.Range#load:member(2):
   - |-
     // Below example uses range address to get the range object.
     Excel.run(function (ctx) {
@@ -1363,7 +1363,7 @@ Excel.Range.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeBorder.load_1:
+Excel.RangeBorder#load:member(2):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1404,7 +1404,7 @@ Excel.RangeBorder.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeBorderCollection.getItem:
+Excel.RangeBorderCollection#getItem:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1423,7 +1423,7 @@ Excel.RangeBorderCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeBorderCollection.getItemAt:
+Excel.RangeBorderCollection#getItemAt:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1441,7 +1441,7 @@ Excel.RangeBorderCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeBorderCollection.load_1:
+Excel.RangeBorderCollection#load:member(2):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1482,7 +1482,7 @@ Excel.RangeBorderCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeFill.clear:
+Excel.RangeFill#clear:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1498,7 +1498,7 @@ Excel.RangeFill.clear:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeFill.load_1:
+Excel.RangeFill#load:member(2):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1530,7 +1530,7 @@ Excel.RangeFill.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeFont.load_1:
+Excel.RangeFont#load:member(2):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1562,7 +1562,7 @@ Excel.RangeFont.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeFormat.load_1:
+Excel.RangeFormat#load:member(2):
   - |-
     // Below example selects all of the Range's format properties. 
     Excel.run(function (ctx) { 
@@ -1617,7 +1617,7 @@ Excel.RangeFormat.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Table.convertToRange:
+Excel.Table#convertToRange:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -1630,7 +1630,7 @@ Excel.Table.convertToRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Table.delete:
+Excel.Table#delete:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -1643,7 +1643,7 @@ Excel.Table.delete:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Table.getDataBodyRange:
+Excel.Table#getDataBodyRange:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -1659,7 +1659,7 @@ Excel.Table.getDataBodyRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Table.getHeaderRowRange:
+Excel.Table#getHeaderRowRange:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -1675,7 +1675,7 @@ Excel.Table.getHeaderRowRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Table.getRange:
+Excel.Table#getRange:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -1691,7 +1691,7 @@ Excel.Table.getRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Table.getTotalRowRange:
+Excel.Table#getTotalRowRange:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -1707,7 +1707,7 @@ Excel.Table.getTotalRowRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Table.load_1:
+Excel.Table#load:member(2):
   - |-
     // Get a table by name. 
     Excel.run(function (ctx) { 
@@ -1756,7 +1756,7 @@ Excel.Table.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableCollection.add:
+Excel.TableCollection#add:member(1):
   - |-
     Excel.run(function (ctx) { 
         var table = ctx.workbook.tables.add('Sheet1!A1:E7', true);
@@ -1770,7 +1770,7 @@ Excel.TableCollection.add:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableCollection.getItem:
+Excel.TableCollection#getItem:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -1785,7 +1785,7 @@ Excel.TableCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableCollection.getItemAt:
+Excel.TableCollection#getItemAt:member(1):
   - |-
     Excel.run(function (ctx) { 
         var table = ctx.workbook.tables.getItemAt(0);
@@ -1799,7 +1799,7 @@ Excel.TableCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableCollection.load_1:
+Excel.TableCollection#load:member(2):
   - |-
     Excel.run(function (ctx) { 
         var tables = ctx.workbook.tables;
@@ -1831,7 +1831,7 @@ Excel.TableCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumn.delete:
+Excel.TableColumn#delete:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -1844,7 +1844,7 @@ Excel.TableColumn.delete:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumn.getDataBodyRange:
+Excel.TableColumn#getDataBodyRange:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -1859,7 +1859,7 @@ Excel.TableColumn.getDataBodyRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumn.getHeaderRowRange:
+Excel.TableColumn#getHeaderRowRange:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -1875,7 +1875,7 @@ Excel.TableColumn.getHeaderRowRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumn.getRange:
+Excel.TableColumn#getRange:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -1891,7 +1891,7 @@ Excel.TableColumn.getRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumn.getTotalRowRange:
+Excel.TableColumn#getTotalRowRange:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -1907,7 +1907,7 @@ Excel.TableColumn.getTotalRowRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumn.load_1:
+Excel.TableColumn#load:member(2):
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -1939,7 +1939,7 @@ Excel.TableColumn.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumnCollection.add:
+Excel.TableColumnCollection#add:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tables = ctx.workbook.tables;
@@ -1955,7 +1955,7 @@ Excel.TableColumnCollection.add:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumnCollection.getItem:
+Excel.TableColumnCollection#getItem:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tablecolumn = ctx.workbook.tables.getItem('Table1').columns.getItem(0);
@@ -1969,7 +1969,7 @@ Excel.TableColumnCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumnCollection.getItemAt:
+Excel.TableColumnCollection#getItemAt:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tablecolumn = ctx.workbook.tables.getItem['Table1'].columns.getItemAt(0);
@@ -1983,7 +1983,7 @@ Excel.TableColumnCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumnCollection.load_1:
+Excel.TableColumnCollection#load:member(2):
   - |-
     Excel.run(function (ctx) { 
         var tablecolumns = ctx.workbook.tables.getItem('Table1').columns;
@@ -2000,7 +2000,7 @@ Excel.TableColumnCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableRow.delete:
+Excel.TableRow#delete:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -2013,7 +2013,7 @@ Excel.TableRow.delete:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableRow.getRange:
+Excel.TableRow#getRange:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -2029,7 +2029,7 @@ Excel.TableRow.getRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableRow.load_1:
+Excel.TableRow#load:member(2):
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -2061,7 +2061,7 @@ Excel.TableRow.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableRowCollection.add:
+Excel.TableRowCollection#add:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tables = ctx.workbook.tables;
@@ -2077,7 +2077,7 @@ Excel.TableRowCollection.add:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableRowCollection.getItemAt:
+Excel.TableRowCollection#getItemAt:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tablerow = ctx.workbook.tables.getItem('Table1').rows.getItemAt(0);
@@ -2091,7 +2091,7 @@ Excel.TableRowCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableRowCollection.load_1:
+Excel.TableRowCollection#load:member(2):
   - |-
     Excel.run(function (ctx) { 
         var tablerows = ctx.workbook.tables.getItem('Table1').rows;
@@ -2127,7 +2127,7 @@ Excel.TableRowCollection.load_1:
                 console.log("Debug info: " + JSON.stringify(error.debugInfo));
             }
     });
-Excel.TableSort.apply:
+Excel.TableSort#apply:member(1):
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -2145,7 +2145,7 @@ Excel.TableSort.apply:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Workbook.getSelectedRange:
+Excel.Workbook#getSelectedRange:member(1):
   - |-
     Excel.run(function (ctx) { 
         var selectedRange = ctx.workbook.getSelectedRange();
@@ -2159,7 +2159,7 @@ Excel.Workbook.getSelectedRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Worksheet.activate:
+Excel.Worksheet#activate:member(1):
   - |-
     Excel.run(function (ctx) { 
         var wSheetName = 'Sheet1';
@@ -2172,7 +2172,7 @@ Excel.Worksheet.activate:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Worksheet.delete:
+Excel.Worksheet#delete:member(1):
   - |-
     Excel.run(function (ctx) { 
         var wSheetName = 'Sheet1';
@@ -2185,7 +2185,7 @@ Excel.Worksheet.delete:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Worksheet.getCell:
+Excel.Worksheet#getCell:member(1):
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -2201,7 +2201,7 @@ Excel.Worksheet.getCell:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Worksheet.getRange:
+Excel.Worksheet#getRange:member(1):
   - |-
     // Below example uses range address to get the range object.
     Excel.run(function (ctx) { 
@@ -2235,7 +2235,7 @@ Excel.Worksheet.getRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Worksheet.getUsedRange:
+Excel.Worksheet#getUsedRange:member(1):
   - |-
     Excel.run(function (ctx) { 
         var wSheetName = 'Sheet1';
@@ -2251,7 +2251,7 @@ Excel.Worksheet.getUsedRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Worksheet.load_1:
+Excel.Worksheet#load:member(2):
   - |-
     // Get worksheet properties based on sheet name.
     Excel.run(function (ctx) { 
@@ -2280,7 +2280,7 @@ Excel.Worksheet.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Worksheet.onActivated:
+Excel.Worksheet#onActivated:member:
   - |-
     Excel.run(function (context) {
         var sheet = context.workbook.worksheets.getItem("Sample");
@@ -2292,7 +2292,7 @@ Excel.Worksheet.onActivated:
         });
         return context.sync();
     });
-Excel.Worksheet.onCalculated:
+Excel.Worksheet#onCalculated:member:
   - |-
     Excel.run(function (context) {
         var sheet = context.workbook.worksheets.getItem("Sample");
@@ -2304,7 +2304,7 @@ Excel.Worksheet.onCalculated:
         });
         return context.sync();
     });
-Excel.Worksheet.onDeactivated:
+Excel.Worksheet#onDeactivated:member:
   - |-
     Excel.run(function (context) {
         var sheet = context.workbook.worksheets.getItem("Sample");
@@ -2316,7 +2316,7 @@ Excel.Worksheet.onDeactivated:
         });
         return context.sync();
     });
-Excel.Worksheet.onSelectionChanged:
+Excel.Worksheet#onSelectionChanged:member:
   - |-
     Excel.run(function (context) {
         var sheet = context.workbook.worksheets.getItem("Sample");
@@ -2328,7 +2328,7 @@ Excel.Worksheet.onSelectionChanged:
         });
         return context.sync();
     });
-Excel.WorksheetChangedEventArgs.details:
+Excel.WorksheetChangedEventArgs#details:member:
   - |-
     // This function would be used as an event handler for the Worksheet.onChanged event.
     function onWorksheetChanged(eventArgs) {
@@ -2342,7 +2342,7 @@ Excel.WorksheetChangedEventArgs.details:
             return context.sync();
         });
     }
-Excel.WorksheetCollection.add:
+Excel.WorksheetCollection#add:member(1):
   - |-
     Excel.run(function (ctx) { 
         var wSheetName = 'Sample Name';
@@ -2357,7 +2357,7 @@ Excel.WorksheetCollection.add:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.WorksheetCollection.getActiveWorksheet:
+Excel.WorksheetCollection#getActiveWorksheet:member(1):
   - |-
     Excel.run(function (ctx) {  
         var activeWorksheet = ctx.workbook.worksheets.getActiveWorksheet();
@@ -2371,7 +2371,7 @@ Excel.WorksheetCollection.getActiveWorksheet:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.WorksheetCollection.load_1:
+Excel.WorksheetCollection#load:member(2):
   - |-
     Excel.run(function (ctx) { 
         var worksheets = ctx.workbook.worksheets;
@@ -2389,7 +2389,7 @@ Excel.WorksheetCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.WorksheetProtection.protect:
+Excel.WorksheetProtection#protect:member(1):
   - |-
     Excel.run(function(ctx) {
       // get a reference to Sheet1
@@ -2408,7 +2408,7 @@ Excel.WorksheetProtection.protect:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.WorksheetProtection.unprotect:
+Excel.WorksheetProtection#unprotect:member(1):
   - |-
     Excel.run(function(ctx) {
       // get a reference to Sheet1

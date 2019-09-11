@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.PivotAxis
+  - uid: 'excel!Excel.PivotAxis:enum'
     summary: |-
       The ShowAs Calculation function for the Data Pivot Field.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.PivotAxis.column
-      - excel.Excel.PivotAxis.data
-      - excel.Excel.PivotAxis.filter
-      - excel.Excel.PivotAxis.row
-      - excel.Excel.PivotAxis.unknown
-  - uid: excel.Excel.PivotAxis.column
+      - 'excel!Excel.PivotAxis.column:member'
+      - 'excel!Excel.PivotAxis.data:member'
+      - 'excel!Excel.PivotAxis.filter:member'
+      - 'excel!Excel.PivotAxis.row:member'
+      - 'excel!Excel.PivotAxis.unknown:member'
+  - uid: 'excel!Excel.PivotAxis.column:member'
     summary: The column axis.
     name: column
     fullName: column
@@ -25,7 +25,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Column"'
-  - uid: excel.Excel.PivotAxis.data
+  - uid: 'excel!Excel.PivotAxis.data:member'
     summary: The data axis.
     name: data
     fullName: data
@@ -33,7 +33,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Data"'
-  - uid: excel.Excel.PivotAxis.filter
+  - uid: 'excel!Excel.PivotAxis.filter:member'
     summary: The filter axis.
     name: filter
     fullName: filter
@@ -41,7 +41,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Filter"'
-  - uid: excel.Excel.PivotAxis.row
+  - uid: 'excel!Excel.PivotAxis.row:member'
     summary: The row axis.
     name: row
     fullName: row
@@ -49,7 +49,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Row"'
-  - uid: excel.Excel.PivotAxis.unknown
+  - uid: 'excel!Excel.PivotAxis.unknown:member'
     summary: The axis or region is unknown or unsupported.
     name: unknown
     fullName: unknown

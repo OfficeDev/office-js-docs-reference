@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions:interface'
     summary: |-
-      Contains a collection of [Word.Range](xref:word.Word.Range) objects.
+      Contains a collection of [Word.Range](xref:word!Word.Range:class) objects.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Interfaces.RangeCollectionLoadOptions
@@ -10,23 +10,23 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.RangeCollectionLoadOptions.$all
-      - word.Word.Interfaces.RangeCollectionLoadOptions.font
-      - word.Word.Interfaces.RangeCollectionLoadOptions.hyperlink
-      - word.Word.Interfaces.RangeCollectionLoadOptions.isEmpty
-      - word.Word.Interfaces.RangeCollectionLoadOptions.parentBody
-      - word.Word.Interfaces.RangeCollectionLoadOptions.parentContentControl
-      - word.Word.Interfaces.RangeCollectionLoadOptions.parentContentControlOrNullObject
-      - word.Word.Interfaces.RangeCollectionLoadOptions.parentTable
-      - word.Word.Interfaces.RangeCollectionLoadOptions.parentTableCell
-      - word.Word.Interfaces.RangeCollectionLoadOptions.parentTableCellOrNullObject
-      - word.Word.Interfaces.RangeCollectionLoadOptions.parentTableOrNullObject
-      - word.Word.Interfaces.RangeCollectionLoadOptions.style
-      - word.Word.Interfaces.RangeCollectionLoadOptions.styleBuiltIn
-      - word.Word.Interfaces.RangeCollectionLoadOptions.text
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.$all
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#$all:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#font:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#hyperlink:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#isEmpty:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#parentBody:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControl:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControlOrNullObject:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#parentTable:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#parentTableCell:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#parentTableCellOrNullObject:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#parentTableOrNullObject:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#style:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#styleBuiltIn:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#text:member'
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -37,7 +37,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.font
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#font:member'
     summary: >-
       For EACH ITEM in the collection: Gets the text format of the range. Use this to get and set font name, size,
       color, and other properties.
@@ -53,8 +53,8 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.FontLoadOptions
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.hyperlink
+          - 'word!Word.Interfaces.FontLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#hyperlink:member'
     summary: >-
       For EACH ITEM in the collection: Gets the first hyperlink in the range, or sets a hyperlink on the range. All
       hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '\#' to separate the address
@@ -72,7 +72,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.isEmpty
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#isEmpty:member'
     summary: |-
       For EACH ITEM in the collection: Checks whether the range length is zero. Read-only.
 
@@ -87,7 +87,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.parentBody
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#parentBody:member'
     summary: |-
       For EACH ITEM in the collection: Gets the parent body of the range.
 
@@ -101,8 +101,8 @@ items:
       content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.BodyLoadOptions
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.parentContentControl
+          - 'word!Word.Interfaces.BodyLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControl:member'
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the range. Throws if there isn't a parent
       content control.
@@ -118,8 +118,8 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.parentContentControlOrNullObject
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControlOrNullObject:member'
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the range. Returns a null object if there
       isn't a parent content control.
@@ -135,8 +135,8 @@ items:
       content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.parentTable
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#parentTable:member'
     summary: |-
       For EACH ITEM in the collection: Gets the table that contains the range. Throws if it is not contained in a table.
 
@@ -150,8 +150,8 @@ items:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableLoadOptions
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.parentTableCell
+          - 'word!Word.Interfaces.TableLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#parentTableCell:member'
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains the range. Throws if it is not contained in a
       table cell.
@@ -167,8 +167,8 @@ items:
       content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableCellLoadOptions
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.parentTableCellOrNullObject
+          - 'word!Word.Interfaces.TableCellLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#parentTableCellOrNullObject:member'
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains the range. Returns a null object if it is not
       contained in a table cell.
@@ -184,8 +184,8 @@ items:
       content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableCellLoadOptions
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.parentTableOrNullObject
+          - 'word!Word.Interfaces.TableCellLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#parentTableOrNullObject:member'
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the range. Returns a null object if it is not
       contained in a table.
@@ -201,8 +201,8 @@ items:
       content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableLoadOptions
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.style
+          - 'word!Word.Interfaces.TableLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#style:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the style name for the range. Use this property for custom styles
       and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn"
@@ -220,7 +220,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.styleBuiltIn
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#styleBuiltIn:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the built-in style name for the range. Use this property for
       built-in styles that are portable between locales. To use custom styles or localized style names, see the "style"
@@ -238,7 +238,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.text
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#text:member'
     summary: |-
       For EACH ITEM in the collection: Gets the text of the range. Read-only.
 
@@ -253,3 +253,14 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
+    name: Word.Interfaces.FontLoadOptions
+  - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
+    name: Word.Interfaces.BodyLoadOptions
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+    name: Word.Interfaces.ContentControlLoadOptions
+  - uid: 'word!Word.Interfaces.TableLoadOptions:interface'
+    name: Word.Interfaces.TableLoadOptions
+  - uid: 'word!Word.Interfaces.TableCellLoadOptions:interface'
+    name: Word.Interfaces.TableCellLoadOptions

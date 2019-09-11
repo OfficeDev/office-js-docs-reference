@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.SettingUpdateData
+  - uid: 'excel!Excel.Interfaces.SettingUpdateData:interface'
     summary: 'An interface for updating data on the Setting object, for use in "setting.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.SettingUpdateData
     fullName: Excel.Interfaces.SettingUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.SettingUpdateData.value
-  - uid: excel.Excel.Interfaces.SettingUpdateData.value
+      - 'excel!Excel.Interfaces.SettingUpdateData#value:member'
+  - uid: 'excel!Excel.Interfaces.SettingUpdateData#value:member'
     summary: |-
       Represents the value stored for this setting.
 

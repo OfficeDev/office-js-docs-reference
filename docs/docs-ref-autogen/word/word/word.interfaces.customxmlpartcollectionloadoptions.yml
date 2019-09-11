@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.CustomXmlPartCollectionLoadOptions
+  - uid: 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions:interface'
     summary: >-
-      Contains the collection of [Word.CustomXmlPart](xref:word.Word.CustomXmlPart) objects.
+      Contains the collection of [Word.CustomXmlPart](xref:word!Word.CustomXmlPart:class) objects.
 
 
       \[ [API set: WordApi BETA (PREVIEW
@@ -13,12 +13,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.CustomXmlPartCollectionLoadOptions.$all
-      - word.Word.Interfaces.CustomXmlPartCollectionLoadOptions.id
-      - word.Word.Interfaces.CustomXmlPartCollectionLoadOptions.namespaceUri
-  - uid: word.Word.Interfaces.CustomXmlPartCollectionLoadOptions.$all
+      - 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#$all:member'
+      - 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#id:member'
+      - 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#namespaceUri:member'
+  - uid: 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#$all:member'
     isPreview: true
     name: $all
     fullName: $all
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.CustomXmlPartCollectionLoadOptions.id
+  - uid: 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#id:member'
     summary: >-
       For EACH ITEM in the collection: Gets the ID of the custom XML part. Read only.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.CustomXmlPartCollectionLoadOptions.namespaceUri
+  - uid: 'word!Word.Interfaces.CustomXmlPartCollectionLoadOptions#namespaceUri:member'
     summary: >-
       For EACH ITEM in the collection: Gets the namespace URI of the custom XML part. Read only.
 

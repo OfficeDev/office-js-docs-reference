@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalRangeBorderLoadOptions
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderLoadOptions:interface'
     summary: |-
       Represents the border of an object.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ConditionalRangeBorderLoadOptions.$all
-      - excel.Excel.Interfaces.ConditionalRangeBorderLoadOptions.color
-      - excel.Excel.Interfaces.ConditionalRangeBorderLoadOptions.sideIndex
-      - excel.Excel.Interfaces.ConditionalRangeBorderLoadOptions.style
-  - uid: excel.Excel.Interfaces.ConditionalRangeBorderLoadOptions.$all
+      - 'excel!Excel.Interfaces.ConditionalRangeBorderLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeBorderLoadOptions#color:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeBorderLoadOptions#sideIndex:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeBorderLoadOptions#style:member'
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalRangeBorderLoadOptions.color
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderLoadOptions#color:member'
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange").
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalRangeBorderLoadOptions.sideIndex
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderLoadOptions#sideIndex:member'
     summary: >-
       Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details.
       Read-only.
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalRangeBorderLoadOptions.style
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderLoadOptions#style:member'
     summary: >-
       One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
       details.

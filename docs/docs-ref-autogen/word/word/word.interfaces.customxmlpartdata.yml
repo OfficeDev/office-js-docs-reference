@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.CustomXmlPartData
+  - uid: 'word!Word.Interfaces.CustomXmlPartData:interface'
     summary: An interface describing the data returned by calling "customXmlPart.toJSON()".
     name: Word.Interfaces.CustomXmlPartData
     fullName: Word.Interfaces.CustomXmlPartData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.CustomXmlPartData.id
-      - word.Word.Interfaces.CustomXmlPartData.namespaceUri
-  - uid: word.Word.Interfaces.CustomXmlPartData.id
+      - 'word!Word.Interfaces.CustomXmlPartData#id:member'
+      - 'word!Word.Interfaces.CustomXmlPartData#namespaceUri:member'
+  - uid: 'word!Word.Interfaces.CustomXmlPartData#id:member'
     summary: >-
       Gets the ID of the custom XML part. Read only.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.CustomXmlPartData.namespaceUri
+  - uid: 'word!Word.Interfaces.CustomXmlPartData#namespaceUri:member'
     summary: >-
       Gets the namespace URI of the custom XML part. Read only.
 

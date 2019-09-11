@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartDataLabelsLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
     summary: |-
       Represents a collection of all the data labels on a chart point.
 
@@ -10,19 +10,19 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartDataLabelsLoadOptions.$all
-      - excel.Excel.Interfaces.ChartDataLabelsLoadOptions.format
-      - excel.Excel.Interfaces.ChartDataLabelsLoadOptions.position
-      - excel.Excel.Interfaces.ChartDataLabelsLoadOptions.separator
-      - excel.Excel.Interfaces.ChartDataLabelsLoadOptions.showBubbleSize
-      - excel.Excel.Interfaces.ChartDataLabelsLoadOptions.showCategoryName
-      - excel.Excel.Interfaces.ChartDataLabelsLoadOptions.showLegendKey
-      - excel.Excel.Interfaces.ChartDataLabelsLoadOptions.showPercentage
-      - excel.Excel.Interfaces.ChartDataLabelsLoadOptions.showSeriesName
-      - excel.Excel.Interfaces.ChartDataLabelsLoadOptions.showValue
-  - uid: excel.Excel.Interfaces.ChartDataLabelsLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#position:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#separator:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showBubbleSize:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showCategoryName:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showLegendKey:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showPercentage:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showSeriesName:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showValue:member'
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -33,7 +33,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelsLoadOptions.format
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#format:member'
     summary: |-
       Represents the format of chart data labels, which includes fill and font formatting.
 
@@ -47,8 +47,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelFormatLoadOptions
-  - uid: excel.Excel.Interfaces.ChartDataLabelsLoadOptions.position
+          - 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#position:member'
     summary: >-
       DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
       details.
@@ -65,7 +65,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelsLoadOptions.separator
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#separator:member'
     summary: |-
       String representing the separator used for the data labels on a chart.
 
@@ -80,7 +80,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelsLoadOptions.showBubbleSize
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showBubbleSize:member'
     summary: |-
       Boolean value representing if the data label bubble size is visible or not.
 
@@ -95,7 +95,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelsLoadOptions.showCategoryName
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showCategoryName:member'
     summary: |-
       Boolean value representing if the data label category name is visible or not.
 
@@ -110,7 +110,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelsLoadOptions.showLegendKey
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showLegendKey:member'
     summary: |-
       Boolean value representing if the data label legend key is visible or not.
 
@@ -125,7 +125,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelsLoadOptions.showPercentage
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showPercentage:member'
     summary: |-
       Boolean value representing if the data label percentage is visible or not.
 
@@ -140,7 +140,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelsLoadOptions.showSeriesName
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showSeriesName:member'
     summary: |-
       Boolean value representing if the data label series name is visible or not.
 
@@ -155,7 +155,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelsLoadOptions.showValue
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showValue:member'
     summary: |-
       Boolean value representing if the data label value is visible or not.
 
@@ -170,3 +170,6 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartDataLabelFormatLoadOptions

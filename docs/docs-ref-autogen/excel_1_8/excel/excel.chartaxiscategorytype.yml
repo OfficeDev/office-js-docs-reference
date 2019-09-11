@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartAxisCategoryType
+  - uid: 'excel!Excel.ChartAxisCategoryType:enum'
     summary: |-
       Specifies the type of the category axis.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartAxisCategoryType.automatic
-      - excel.Excel.ChartAxisCategoryType.dateAxis
-      - excel.Excel.ChartAxisCategoryType.textAxis
-  - uid: excel.Excel.ChartAxisCategoryType.automatic
+      - 'excel!Excel.ChartAxisCategoryType.automatic:member'
+      - 'excel!Excel.ChartAxisCategoryType.dateAxis:member'
+      - 'excel!Excel.ChartAxisCategoryType.textAxis:member'
+  - uid: 'excel!Excel.ChartAxisCategoryType.automatic:member'
     summary: Excel controls the axis type.
     name: automatic
     fullName: automatic
@@ -23,7 +23,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Automatic"'
-  - uid: excel.Excel.ChartAxisCategoryType.dateAxis
+  - uid: 'excel!Excel.ChartAxisCategoryType.dateAxis:member'
     summary: Axis groups data on a time scale.
     name: dateAxis
     fullName: dateAxis
@@ -31,7 +31,7 @@ items:
       - typeScript
     type: field
     numericValue: '"DateAxis"'
-  - uid: excel.Excel.ChartAxisCategoryType.textAxis
+  - uid: 'excel!Excel.ChartAxisCategoryType.textAxis:member'
     summary: Axis groups data by an arbitrary set of categories.
     name: textAxis
     fullName: textAxis

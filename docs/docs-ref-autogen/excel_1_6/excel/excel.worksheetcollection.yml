@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.WorksheetCollection
+  - uid: 'excel!Excel.WorksheetCollection:class'
     summary: |-
       Represents a collection of worksheet objects that are part of the workbook.
 
@@ -11,23 +11,23 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.WorksheetCollection.add
-      - excel.Excel.WorksheetCollection.context
-      - excel.Excel.WorksheetCollection.getActiveWorksheet
-      - excel.Excel.WorksheetCollection.getCount
-      - excel.Excel.WorksheetCollection.getFirst
-      - excel.Excel.WorksheetCollection.getItem
-      - excel.Excel.WorksheetCollection.getItemOrNullObject
-      - excel.Excel.WorksheetCollection.getLast
-      - excel.Excel.WorksheetCollection.items
-      - excel.Excel.WorksheetCollection.load
-      - excel.Excel.WorksheetCollection.load_1
-      - excel.Excel.WorksheetCollection.load_2
-      - excel.Excel.WorksheetCollection.toJSON
-  - uid: excel.Excel.WorksheetCollection.add
+      - 'excel!Excel.WorksheetCollection#add:member(1)'
+      - 'excel!Excel.WorksheetCollection#context:member'
+      - 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
+      - 'excel!Excel.WorksheetCollection#getCount:member(1)'
+      - 'excel!Excel.WorksheetCollection#getFirst:member(1)'
+      - 'excel!Excel.WorksheetCollection#getItem:member(1)'
+      - 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.WorksheetCollection#getLast:member(1)'
+      - 'excel!Excel.WorksheetCollection#items:member'
+      - 'excel!Excel.WorksheetCollection#load:member(1)'
+      - 'excel!Excel.WorksheetCollection#load:member(2)'
+      - 'excel!Excel.WorksheetCollection#load:member(3)'
+      - 'excel!Excel.WorksheetCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.WorksheetCollection#add:member(1)'
     summary: >-
       Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish
       to activate the newly added worksheet, call ".activate() on it.
@@ -43,7 +43,7 @@ items:
       content: 'add(name?: string): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: |-
 
 
@@ -71,7 +71,7 @@ items:
             Excel determines the name of the new worksheet.
           type:
             - string
-  - uid: excel.Excel.WorksheetCollection.context
+  - uid: 'excel!Excel.WorksheetCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -84,8 +84,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.WorksheetCollection.getActiveWorksheet
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.WorksheetCollection#getActiveWorksheet:member(1)'
     summary: |-
       Gets the currently active worksheet in the workbook.
 
@@ -99,7 +99,7 @@ items:
       content: 'getActiveWorksheet(): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: |-
 
 
@@ -119,7 +119,7 @@ items:
               }
           });
           ```
-  - uid: excel.Excel.WorksheetCollection.getCount
+  - uid: 'excel!Excel.WorksheetCollection#getCount:member(1)'
     summary: |-
       Gets the number of worksheets in the collection.
 
@@ -133,14 +133,14 @@ items:
       content: 'getCount(visibleOnly?: boolean): OfficeExtension.ClientResult<number>;'
       return:
         type:
-          - OfficeExtension.ClientResult<number>
+          - 'excel!Excel.WorksheetCollection#getCount~0:complex'
         description: ''
       parameters:
         - id: visibleOnly
           description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
-  - uid: excel.Excel.WorksheetCollection.getFirst
+  - uid: 'excel!Excel.WorksheetCollection#getFirst:member(1)'
     summary: |-
       Gets the first worksheet in the collection.
 
@@ -154,7 +154,7 @@ items:
       content: 'getFirst(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: |-
 
 
@@ -191,7 +191,7 @@ items:
           description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
-  - uid: excel.Excel.WorksheetCollection.getItem
+  - uid: 'excel!Excel.WorksheetCollection#getItem:member(1)'
     summary: |-
       Gets a worksheet object using its Name or ID.
 
@@ -205,14 +205,14 @@ items:
       content: 'getItem(key: string): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: ''
       parameters:
         - id: key
           description: The Name or ID of the worksheet.
           type:
             - string
-  - uid: excel.Excel.WorksheetCollection.getItemOrNullObject
+  - uid: 'excel!Excel.WorksheetCollection#getItemOrNullObject:member(1)'
     summary: |-
       Gets a worksheet object using its Name or ID. If the worksheet does not exist, will return a null object.
 
@@ -226,14 +226,14 @@ items:
       content: 'getItemOrNullObject(key: string): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: ''
       parameters:
         - id: key
           description: The Name or ID of the worksheet.
           type:
             - string
-  - uid: excel.Excel.WorksheetCollection.getLast
+  - uid: 'excel!Excel.WorksheetCollection#getLast:member(1)'
     summary: |-
       Gets the last worksheet in the collection.
 
@@ -247,7 +247,7 @@ items:
       content: 'getLast(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: |-
 
 
@@ -284,7 +284,7 @@ items:
           description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
-  - uid: excel.Excel.WorksheetCollection.items
+  - uid: 'excel!Excel.WorksheetCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -295,8 +295,8 @@ items:
       content: 'readonly items: Excel.Worksheet[];'
       return:
         type:
-          - 'Excel.Worksheet[]'
-  - uid: excel.Excel.WorksheetCollection.load
+          - 'excel!Excel.WorksheetCollection#items~0:complex'
+  - uid: 'excel!Excel.WorksheetCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -329,14 +329,14 @@ items:
         Excel.WorksheetCollection;
       return:
         type:
-          - excel.Excel.WorksheetCollection
+          - 'excel!Excel.WorksheetCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.WorksheetCollection.load_1
+            - 'excel!Excel.WorksheetCollection#load~0:complex'
+  - uid: 'excel!Excel.WorksheetCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -349,7 +349,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.WorksheetCollection;'
       return:
         type:
-          - excel.Excel.WorksheetCollection
+          - 'excel!Excel.WorksheetCollection:class'
         description: |-
 
 
@@ -378,7 +378,7 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.WorksheetCollection.load_2
+  - uid: 'excel!Excel.WorksheetCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -388,14 +388,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.WorksheetCollection;'
       return:
         type:
-          - excel.Excel.WorksheetCollection
+          - 'excel!Excel.WorksheetCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
-  - uid: excel.Excel.WorksheetCollection.toJSON
+            - 'excel!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.WorksheetCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -411,5 +411,48 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorksheetCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetCollectionData
+          - 'excel!Excel.Interfaces.WorksheetCollectionData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.Worksheet:class'
+    name: Excel.Worksheet
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.WorksheetCollection#getCount~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.WorksheetCollection#items~0:complex'
+    name: 'Excel.Worksheet[]'
+    fullName: 'Excel.Worksheet[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Worksheet:class'
+        name: Excel.Worksheet
+        fullName: Excel.Worksheet
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.WorksheetCollection:class'
+    name: Excel.WorksheetCollection
+  - uid: 'excel!Excel.WorksheetCollection#load~0:complex'
+    name: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions:interface'
+        name: Excel.Interfaces.WorksheetCollectionLoadOptions
+        fullName: Excel.Interfaces.WorksheetCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+        name: Excel.Interfaces.CollectionLoadOptions
+        fullName: Excel.Interfaces.CollectionLoadOptions
+  - uid: 'excel!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionData:interface'
+    name: Excel.Interfaces.WorksheetCollectionData

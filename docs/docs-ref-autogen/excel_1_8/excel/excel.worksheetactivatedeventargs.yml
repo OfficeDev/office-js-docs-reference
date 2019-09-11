@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.WorksheetActivatedEventArgs
+  - uid: 'excel!Excel.WorksheetActivatedEventArgs:interface'
     summary: |-
       Provides information about the worksheet that raised the Activated event.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.WorksheetActivatedEventArgs.type
-      - excel.Excel.WorksheetActivatedEventArgs.worksheetId
-  - uid: excel.Excel.WorksheetActivatedEventArgs.type
+      - 'excel!Excel.WorksheetActivatedEventArgs#type:member'
+      - 'excel!Excel.WorksheetActivatedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.WorksheetActivatedEventArgs#type:member'
     summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - '"WorksheetActivated"'
-  - uid: excel.Excel.WorksheetActivatedEventArgs.worksheetId
+  - uid: 'excel!Excel.WorksheetActivatedEventArgs#worksheetId:member'
     summary: |-
       Gets the id of the worksheet that is activated.
 

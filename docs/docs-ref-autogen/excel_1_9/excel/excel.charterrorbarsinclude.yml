@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartErrorBarsInclude
+  - uid: 'excel!Excel.ChartErrorBarsInclude:enum'
     summary: |-
       Represents which parts of the error bar to include.
 
@@ -10,26 +10,26 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartErrorBarsInclude.both
-      - excel.Excel.ChartErrorBarsInclude.minusValues
-      - excel.Excel.ChartErrorBarsInclude.plusValues
-  - uid: excel.Excel.ChartErrorBarsInclude.both
+      - 'excel!Excel.ChartErrorBarsInclude.both:member'
+      - 'excel!Excel.ChartErrorBarsInclude.minusValues:member'
+      - 'excel!Excel.ChartErrorBarsInclude.plusValues:member'
+  - uid: 'excel!Excel.ChartErrorBarsInclude.both:member'
     name: both
     fullName: both
     langs:
       - typeScript
     type: field
     numericValue: '"Both"'
-  - uid: excel.Excel.ChartErrorBarsInclude.minusValues
+  - uid: 'excel!Excel.ChartErrorBarsInclude.minusValues:member'
     name: minusValues
     fullName: minusValues
     langs:
       - typeScript
     type: field
     numericValue: '"MinusValues"'
-  - uid: excel.Excel.ChartErrorBarsInclude.plusValues
+  - uid: 'excel!Excel.ChartErrorBarsInclude.plusValues:member'
     name: plusValues
     fullName: plusValues
     langs:

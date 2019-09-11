@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.Time
+  - uid: 'outlook!Office.Time:interface'
     summary: |-
       The Time object is returned as the start or end property of an appointment in compose mode.
 
@@ -16,13 +16,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.Time.getAsync
-      - outlook.Office.Time.getAsync_1
-      - outlook.Office.Time.setAsync
-      - outlook.Office.Time.setAsync_1
-  - uid: outlook.Office.Time.getAsync
+      - 'outlook!Office.Time#getAsync:member(1)'
+      - 'outlook!Office.Time#getAsync:member(2)'
+      - 'outlook!Office.Time#setAsync:member(1)'
+      - 'outlook!Office.Time#setAsync:member(2)'
+  - uid: 'outlook!Office.Time#getAsync:member(1)'
     summary: >-
       Gets the start or end time of an appointment.
 
@@ -58,14 +58,14 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult. The `value` property of the result is a Date object.
           type:
-            - '(asyncResult: Office.AsyncResult<Date>) => void'
-  - uid: outlook.Office.Time.getAsync_1
+            - 'outlook!Office.Time#getAsync~0:complex'
+  - uid: 'outlook!Office.Time#getAsync:member(2)'
     summary: >-
       Gets the start or end time of an appointment.
 
@@ -116,8 +116,8 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult. The `value` property of the result is a Date object.
           type:
-            - '(asyncResult: Office.AsyncResult<Date>) => void'
-  - uid: outlook.Office.Time.setAsync
+            - 'outlook!Office.Time#getAsync~1:complex'
+  - uid: 'outlook!Office.Time#setAsync:member(1)'
     summary: >-
       Sets the start or end time of an appointment.
 
@@ -185,21 +185,21 @@ items:
         - id: dateTime
           description: A date-time object in Coordinated Universal Time (UTC).
           type:
-            - Date
+            - '!Date:interface'
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. If setting the date and time fails, the asyncResult.error property
             will contain an error code.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.Time.setAsync_1
+            - 'outlook!Office.Time#setAsync~0:complex'
+  - uid: 'outlook!Office.Time#setAsync:member(2)'
     summary: >-
       Sets the start or end time of an appointment.
 
@@ -241,11 +241,70 @@ items:
         - id: dateTime
           description: A date-time object in Coordinated Universal Time (UTC).
           type:
-            - Date
+            - '!Date:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. If setting the date and time fails, the asyncResult.error property
             will contain an error code.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
+            - 'outlook!Office.Time#setAsync~1:complex'
+references:
+  - uid: 'outlook!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions
+  - uid: 'outlook!Office.Time#getAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<Date>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<Date>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: '!Date:interface'
+        name: Date
+        fullName: Date
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'outlook!Office.Time#getAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<Date>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<Date>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: '!Date:interface'
+        name: Date
+        fullName: Date
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: '!Date:interface'
+    name: Date
+  - uid: 'outlook!Office.Time#setAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.Time#setAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void

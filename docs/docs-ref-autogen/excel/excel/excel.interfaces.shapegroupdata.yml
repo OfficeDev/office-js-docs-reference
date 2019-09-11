@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ShapeGroupData
+  - uid: 'excel!Excel.Interfaces.ShapeGroupData:interface'
     summary: An interface describing the data returned by calling "shapeGroup.toJSON()".
     name: Excel.Interfaces.ShapeGroupData
     fullName: Excel.Interfaces.ShapeGroupData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ShapeGroupData.id
-      - excel.Excel.Interfaces.ShapeGroupData.shapes
-  - uid: excel.Excel.Interfaces.ShapeGroupData.id
+      - 'excel!Excel.Interfaces.ShapeGroupData#id:member'
+      - 'excel!Excel.Interfaces.ShapeGroupData#shapes:member'
+  - uid: 'excel!Excel.Interfaces.ShapeGroupData#id:member'
     summary: |-
       Represents the shape identifier. Read-only.
 
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ShapeGroupData.shapes
+  - uid: 'excel!Excel.Interfaces.ShapeGroupData#shapes:member'
     summary: |-
       Returns the collection of Shape objects. Read-only.
 
@@ -40,4 +40,14 @@ items:
       content: 'shapes?: Excel.Interfaces.ShapeData[];'
       return:
         type:
-          - 'Excel.Interfaces.ShapeData[]'
+          - 'excel!Excel.Interfaces.ShapeGroupData#shapes~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.ShapeGroupData#shapes~0:complex'
+    name: 'Excel.Interfaces.ShapeData[]'
+    fullName: 'Excel.Interfaces.ShapeData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ShapeData:interface'
+        name: Excel.Interfaces.ShapeData
+        fullName: Excel.Interfaces.ShapeData
+      - name: '[]'
+        fullName: '[]'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.CommentCollectionLoadOptions
+  - uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions:interface'
     summary: |-
       Represents the CommentCollection for a given Shape.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.CommentCollectionLoadOptions.$all
-      - visio.Visio.Interfaces.CommentCollectionLoadOptions.author
-      - visio.Visio.Interfaces.CommentCollectionLoadOptions.date
-      - visio.Visio.Interfaces.CommentCollectionLoadOptions.text
-  - uid: visio.Visio.Interfaces.CommentCollectionLoadOptions.$all
+      - 'visio!Visio.Interfaces.CommentCollectionLoadOptions#$all:member'
+      - 'visio!Visio.Interfaces.CommentCollectionLoadOptions#author:member'
+      - 'visio!Visio.Interfaces.CommentCollectionLoadOptions#date:member'
+      - 'visio!Visio.Interfaces.CommentCollectionLoadOptions#text:member'
+  - uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.CommentCollectionLoadOptions.author
+  - uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions#author:member'
     summary: |-
       For EACH ITEM in the collection: A string that specifies the name of the author of the comment.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.CommentCollectionLoadOptions.date
+  - uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions#date:member'
     summary: |-
       For EACH ITEM in the collection: A string that specifies the date when the comment was created.
 
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.CommentCollectionLoadOptions.text
+  - uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions#text:member'
     summary: |-
       For EACH ITEM in the collection: A string that contains the comment text.
 

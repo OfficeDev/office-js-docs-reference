@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.DataValidationRule
+  - uid: 'excel!Excel.DataValidationRule:interface'
     summary: >-
       Data validation rule contains different types of data validation. You can only use one of them at a time according
       the Excel.DataValidationType.
@@ -12,16 +12,16 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.DataValidationRule.custom
-      - excel.Excel.DataValidationRule.date
-      - excel.Excel.DataValidationRule.decimal
-      - excel.Excel.DataValidationRule.list
-      - excel.Excel.DataValidationRule.textLength
-      - excel.Excel.DataValidationRule.time
-      - excel.Excel.DataValidationRule.wholeNumber
-  - uid: excel.Excel.DataValidationRule.custom
+      - 'excel!Excel.DataValidationRule#custom:member'
+      - 'excel!Excel.DataValidationRule#date:member'
+      - 'excel!Excel.DataValidationRule#decimal:member'
+      - 'excel!Excel.DataValidationRule#list:member'
+      - 'excel!Excel.DataValidationRule#textLength:member'
+      - 'excel!Excel.DataValidationRule#time:member'
+      - 'excel!Excel.DataValidationRule#wholeNumber:member'
+  - uid: 'excel!Excel.DataValidationRule#custom:member'
     summary: |-
       Custom data validation criteria.
 
@@ -35,8 +35,8 @@ items:
       content: 'custom?: Excel.CustomDataValidation;'
       return:
         type:
-          - excel.Excel.CustomDataValidation
-  - uid: excel.Excel.DataValidationRule.date
+          - 'excel!Excel.CustomDataValidation:interface'
+  - uid: 'excel!Excel.DataValidationRule#date:member'
     summary: |-
       Date data validation criteria.
 
@@ -50,8 +50,8 @@ items:
       content: 'date?: Excel.DateTimeDataValidation;'
       return:
         type:
-          - excel.Excel.DateTimeDataValidation
-  - uid: excel.Excel.DataValidationRule.decimal
+          - 'excel!Excel.DateTimeDataValidation:interface'
+  - uid: 'excel!Excel.DataValidationRule#decimal:member'
     summary: |-
       Decimal data validation criteria.
 
@@ -65,8 +65,8 @@ items:
       content: 'decimal?: Excel.BasicDataValidation;'
       return:
         type:
-          - excel.Excel.BasicDataValidation
-  - uid: excel.Excel.DataValidationRule.list
+          - 'excel!Excel.BasicDataValidation:interface'
+  - uid: 'excel!Excel.DataValidationRule#list:member'
     summary: |-
       List data validation criteria.
 
@@ -80,7 +80,7 @@ items:
       content: 'list?: Excel.ListDataValidation;'
       return:
         type:
-          - excel.Excel.ListDataValidation
+          - 'excel!Excel.ListDataValidation:interface'
         description: |-
 
 
@@ -109,7 +109,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.DataValidationRule.textLength
+  - uid: 'excel!Excel.DataValidationRule#textLength:member'
     summary: |-
       TextLength data validation criteria.
 
@@ -123,8 +123,8 @@ items:
       content: 'textLength?: Excel.BasicDataValidation;'
       return:
         type:
-          - excel.Excel.BasicDataValidation
-  - uid: excel.Excel.DataValidationRule.time
+          - 'excel!Excel.BasicDataValidation:interface'
+  - uid: 'excel!Excel.DataValidationRule#time:member'
     summary: |-
       Time data validation criteria.
 
@@ -138,8 +138,8 @@ items:
       content: 'time?: Excel.DateTimeDataValidation;'
       return:
         type:
-          - excel.Excel.DateTimeDataValidation
-  - uid: excel.Excel.DataValidationRule.wholeNumber
+          - 'excel!Excel.DateTimeDataValidation:interface'
+  - uid: 'excel!Excel.DataValidationRule#wholeNumber:member'
     summary: |-
       WholeNumber data validation criteria.
 
@@ -153,7 +153,7 @@ items:
       content: 'wholeNumber?: Excel.BasicDataValidation;'
       return:
         type:
-          - excel.Excel.BasicDataValidation
+          - 'excel!Excel.BasicDataValidation:interface'
         description: |-
 
 
@@ -192,3 +192,12 @@ items:
               await context.sync();
           });
           ```
+references:
+  - uid: 'excel!Excel.CustomDataValidation:interface'
+    name: Excel.CustomDataValidation
+  - uid: 'excel!Excel.DateTimeDataValidation:interface'
+    name: Excel.DateTimeDataValidation
+  - uid: 'excel!Excel.BasicDataValidation:interface'
+    name: Excel.BasicDataValidation
+  - uid: 'excel!Excel.ListDataValidation:interface'
+    name: Excel.ListDataValidation

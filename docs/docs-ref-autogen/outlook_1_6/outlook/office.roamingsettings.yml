@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.RoamingSettings
+  - uid: 'outlook!Office.RoamingSettings:interface'
     summary: >-
       The settings created by using the methods of the RoamingSettings object are saved per add-in and per user. That
       is, they are available only to the add-in that created them, and only from the user's mail box in which they are
@@ -58,13 +58,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.RoamingSettings.get
-      - outlook.Office.RoamingSettings.remove
-      - outlook.Office.RoamingSettings.saveAsync
-      - outlook.Office.RoamingSettings.set
-  - uid: outlook.Office.RoamingSettings.get
+      - 'outlook!Office.RoamingSettings#get:member(1)'
+      - 'outlook!Office.RoamingSettings#remove:member(1)'
+      - 'outlook!Office.RoamingSettings#saveAsync:member(1)'
+      - 'outlook!Office.RoamingSettings#set:member(1)'
+  - uid: 'outlook!Office.RoamingSettings#get:member(1)'
     summary: |-
       Retrieves the specified setting.
 
@@ -92,7 +92,7 @@ items:
           description: The case-sensitive name of the setting to retrieve.
           type:
             - string
-  - uid: outlook.Office.RoamingSettings.remove
+  - uid: 'outlook!Office.RoamingSettings#remove:member(1)'
     summary: |-
       Removes the specified setting
 
@@ -120,7 +120,7 @@ items:
           description: The case-sensitive name of the setting to remove.
           type:
             - string
-  - uid: outlook.Office.RoamingSettings.saveAsync
+  - uid: 'outlook!Office.RoamingSettings#saveAsync:member(1)'
     summary: >-
       Saves the settings.
 
@@ -156,8 +156,8 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.RoamingSettings.set
+            - 'outlook!Office.RoamingSettings#saveAsync~0:complex'
+  - uid: 'outlook!Office.RoamingSettings#set:member(1)'
     summary: >-
       Sets or creates the specified setting.
 
@@ -202,3 +202,15 @@ items:
           description: Specifies the value to be stored.
           type:
             - any
+references:
+  - uid: 'outlook!Office.RoamingSettings#saveAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void

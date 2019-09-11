@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.ParagraphCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the ParagraphCollection object, for use in "paragraphCollection.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.ParagraphCollectionUpdateData.items
-  - uid: onenote.OneNote.Interfaces.ParagraphCollectionUpdateData.items
+      - 'onenote!OneNote.Interfaces.ParagraphCollectionUpdateData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: OneNote.Interfaces.ParagraphData[];'
       return:
         type:
-          - 'OneNote.Interfaces.ParagraphData[]'
+          - 'onenote!OneNote.Interfaces.ParagraphCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionUpdateData#items~0:complex'
+    name: 'OneNote.Interfaces.ParagraphData[]'
+    fullName: 'OneNote.Interfaces.ParagraphData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.ParagraphData:interface'
+        name: OneNote.Interfaces.ParagraphData
+        fullName: OneNote.Interfaces.ParagraphData
+      - name: '[]'
+        fullName: '[]'

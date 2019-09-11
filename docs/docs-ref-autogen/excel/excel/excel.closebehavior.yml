@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CloseBehavior
+  - uid: 'excel!Excel.CloseBehavior:enum'
     summary: |-
       Specifies the close behavior for Workbook.close API.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.CloseBehavior.save
-      - excel.Excel.CloseBehavior.skipSave
-  - uid: excel.Excel.CloseBehavior.save
+      - 'excel!Excel.CloseBehavior.save:member'
+      - 'excel!Excel.CloseBehavior.skipSave:member'
+  - uid: 'excel!Excel.CloseBehavior.save:member'
     summary: Save the possible changes before closing the workbook.
     name: save
     fullName: save
@@ -22,7 +22,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Save"'
-  - uid: excel.Excel.CloseBehavior.skipSave
+  - uid: 'excel!Excel.CloseBehavior.skipSave:member'
     summary: Discard the possible changes when closing the workbook.
     name: skipSave
     fullName: skipSave

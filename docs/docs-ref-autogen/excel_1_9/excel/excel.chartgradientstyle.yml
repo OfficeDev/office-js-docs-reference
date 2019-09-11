@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartGradientStyle
+  - uid: 'excel!Excel.ChartGradientStyle:enum'
     summary: |-
       Represents the gradient style of a chart series. This is only applicable for region map charts.
 
@@ -10,18 +10,18 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartGradientStyle.threePhaseColor
-      - excel.Excel.ChartGradientStyle.twoPhaseColor
-  - uid: excel.Excel.ChartGradientStyle.threePhaseColor
+      - 'excel!Excel.ChartGradientStyle.threePhaseColor:member'
+      - 'excel!Excel.ChartGradientStyle.twoPhaseColor:member'
+  - uid: 'excel!Excel.ChartGradientStyle.threePhaseColor:member'
     name: threePhaseColor
     fullName: threePhaseColor
     langs:
       - typeScript
     type: field
     numericValue: '"ThreePhaseColor"'
-  - uid: excel.Excel.ChartGradientStyle.twoPhaseColor
+  - uid: 'excel!Excel.ChartGradientStyle.twoPhaseColor:member'
     name: twoPhaseColor
     fullName: twoPhaseColor
     langs:

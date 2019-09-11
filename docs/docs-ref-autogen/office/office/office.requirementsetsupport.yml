@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.RequirementSetSupport
+  - uid: 'office!Office.RequirementSetSupport:interface'
     summary: Provides information about which Requirement Sets are supported in the current environment.
     name: Office.RequirementSetSupport
     fullName: Office.RequirementSetSupport
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.RequirementSetSupport.isSetSupported
-      - office.Office.RequirementSetSupport.isSetSupported_1
-  - uid: office.Office.RequirementSetSupport.isSetSupported
+      - 'office!Office.RequirementSetSupport#isSetSupported:member(1)'
+      - 'office!Office.RequirementSetSupport#isSetSupported:member(2)'
+  - uid: 'office!Office.RequirementSetSupport#isSetSupported:member(1)'
     summary: Check if the specified requirement set is supported by the host Office application.
     name: 'isSetSupported(name, minVersion)'
     fullName: 'isSetSupported(name, minVersion)'
@@ -33,7 +33,7 @@ items:
           description: 'The minimum required version (e.g., "1.4").'
           type:
             - string
-  - uid: office.Office.RequirementSetSupport.isSetSupported_1
+  - uid: 'office!Office.RequirementSetSupport#isSetSupported:member(2)'
     summary: Check if the specified requirement set is supported by the host Office application.
     deprecated:
       content: Use the string overload of `isSetSupported` instead.

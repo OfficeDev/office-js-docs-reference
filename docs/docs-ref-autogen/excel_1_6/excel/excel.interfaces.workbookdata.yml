@@ -1,22 +1,22 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.WorkbookData
+  - uid: 'excel!Excel.Interfaces.WorkbookData:interface'
     summary: An interface describing the data returned by calling "workbook.toJSON()".
     name: Excel.Interfaces.WorkbookData
     fullName: Excel.Interfaces.WorkbookData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.WorkbookData.bindings
-      - excel.Excel.Interfaces.WorkbookData.customXmlParts
-      - excel.Excel.Interfaces.WorkbookData.names
-      - excel.Excel.Interfaces.WorkbookData.pivotTables
-      - excel.Excel.Interfaces.WorkbookData.settings
-      - excel.Excel.Interfaces.WorkbookData.tables
-      - excel.Excel.Interfaces.WorkbookData.worksheets
-  - uid: excel.Excel.Interfaces.WorkbookData.bindings
+      - 'excel!Excel.Interfaces.WorkbookData#bindings:member'
+      - 'excel!Excel.Interfaces.WorkbookData#customXmlParts:member'
+      - 'excel!Excel.Interfaces.WorkbookData#names:member'
+      - 'excel!Excel.Interfaces.WorkbookData#pivotTables:member'
+      - 'excel!Excel.Interfaces.WorkbookData#settings:member'
+      - 'excel!Excel.Interfaces.WorkbookData#tables:member'
+      - 'excel!Excel.Interfaces.WorkbookData#worksheets:member'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#bindings:member'
     summary: |-
       Represents a collection of bindings that are part of the workbook. Read-only.
 
@@ -30,8 +30,8 @@ items:
       content: 'bindings?: Excel.Interfaces.BindingData[];'
       return:
         type:
-          - 'Excel.Interfaces.BindingData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.customXmlParts
+          - 'excel!Excel.Interfaces.WorkbookData#bindings~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#customXmlParts:member'
     summary: |-
       Represents the collection of custom XML parts contained by this workbook. Read-only.
 
@@ -45,8 +45,8 @@ items:
       content: 'customXmlParts?: Excel.Interfaces.CustomXmlPartData[];'
       return:
         type:
-          - 'Excel.Interfaces.CustomXmlPartData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.names
+          - 'excel!Excel.Interfaces.WorkbookData#customXmlParts~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#names:member'
     summary: |-
       Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
 
@@ -60,8 +60,8 @@ items:
       content: 'names?: Excel.Interfaces.NamedItemData[];'
       return:
         type:
-          - 'Excel.Interfaces.NamedItemData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.pivotTables
+          - 'excel!Excel.Interfaces.WorkbookData#names~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#pivotTables:member'
     summary: |-
       Represents a collection of PivotTables associated with the workbook. Read-only.
 
@@ -75,8 +75,8 @@ items:
       content: 'pivotTables?: Excel.Interfaces.PivotTableData[];'
       return:
         type:
-          - 'Excel.Interfaces.PivotTableData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.settings
+          - 'excel!Excel.Interfaces.WorkbookData#pivotTables~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#settings:member'
     summary: |-
       Represents a collection of Settings associated with the workbook. Read-only.
 
@@ -90,8 +90,8 @@ items:
       content: 'settings?: Excel.Interfaces.SettingData[];'
       return:
         type:
-          - 'Excel.Interfaces.SettingData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.tables
+          - 'excel!Excel.Interfaces.WorkbookData#settings~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#tables:member'
     summary: |-
       Represents a collection of tables associated with the workbook. Read-only.
 
@@ -105,8 +105,8 @@ items:
       content: 'tables?: Excel.Interfaces.TableData[];'
       return:
         type:
-          - 'Excel.Interfaces.TableData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.worksheets
+          - 'excel!Excel.Interfaces.WorkbookData#tables~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#worksheets:member'
     summary: |-
       Represents a collection of worksheets associated with the workbook. Read-only.
 
@@ -120,4 +120,68 @@ items:
       content: 'worksheets?: Excel.Interfaces.WorksheetData[];'
       return:
         type:
-          - 'Excel.Interfaces.WorksheetData[]'
+          - 'excel!Excel.Interfaces.WorkbookData#worksheets~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.WorkbookData#bindings~0:complex'
+    name: 'Excel.Interfaces.BindingData[]'
+    fullName: 'Excel.Interfaces.BindingData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.BindingData:interface'
+        name: Excel.Interfaces.BindingData
+        fullName: Excel.Interfaces.BindingData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#customXmlParts~0:complex'
+    name: 'Excel.Interfaces.CustomXmlPartData[]'
+    fullName: 'Excel.Interfaces.CustomXmlPartData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.CustomXmlPartData:interface'
+        name: Excel.Interfaces.CustomXmlPartData
+        fullName: Excel.Interfaces.CustomXmlPartData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#names~0:complex'
+    name: 'Excel.Interfaces.NamedItemData[]'
+    fullName: 'Excel.Interfaces.NamedItemData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.NamedItemData:interface'
+        name: Excel.Interfaces.NamedItemData
+        fullName: Excel.Interfaces.NamedItemData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#pivotTables~0:complex'
+    name: 'Excel.Interfaces.PivotTableData[]'
+    fullName: 'Excel.Interfaces.PivotTableData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PivotTableData:interface'
+        name: Excel.Interfaces.PivotTableData
+        fullName: Excel.Interfaces.PivotTableData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#settings~0:complex'
+    name: 'Excel.Interfaces.SettingData[]'
+    fullName: 'Excel.Interfaces.SettingData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.SettingData:interface'
+        name: Excel.Interfaces.SettingData
+        fullName: Excel.Interfaces.SettingData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#tables~0:complex'
+    name: 'Excel.Interfaces.TableData[]'
+    fullName: 'Excel.Interfaces.TableData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TableData:interface'
+        name: Excel.Interfaces.TableData
+        fullName: Excel.Interfaces.TableData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#worksheets~0:complex'
+    name: 'Excel.Interfaces.WorksheetData[]'
+    fullName: 'Excel.Interfaces.WorksheetData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.WorksheetData:interface'
+        name: Excel.Interfaces.WorksheetData
+        fullName: Excel.Interfaces.WorksheetData
+      - name: '[]'
+        fullName: '[]'

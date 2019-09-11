@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CommentReplyCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the CommentReplyCollection object, for use in "commentReplyCollection.set(<!--
       -->{ ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.CommentReplyCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.CommentReplyCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.CommentReplyCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: Excel.Interfaces.CommentReplyData[];'
       return:
         type:
-          - 'Excel.Interfaces.CommentReplyData[]'
+          - 'excel!Excel.Interfaces.CommentReplyCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.CommentReplyData[]'
+    fullName: 'Excel.Interfaces.CommentReplyData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.CommentReplyData:interface'
+        name: Excel.Interfaces.CommentReplyData
+        fullName: Excel.Interfaces.CommentReplyData
+      - name: '[]'
+        fullName: '[]'

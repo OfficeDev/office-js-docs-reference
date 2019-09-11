@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotTableCollectionData
+  - uid: 'excel!Excel.Interfaces.PivotTableCollectionData:interface'
     summary: An interface describing the data returned by calling "pivotTableCollection.toJSON()".
     name: Excel.Interfaces.PivotTableCollectionData
     fullName: Excel.Interfaces.PivotTableCollectionData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotTableCollectionData.items
-  - uid: excel.Excel.Interfaces.PivotTableCollectionData.items
+      - 'excel!Excel.Interfaces.PivotTableCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.PivotTableCollectionData#items:member'
     name: items
     fullName: items
     langs:
@@ -20,4 +20,14 @@ items:
       content: 'items?: Excel.Interfaces.PivotTableData[];'
       return:
         type:
-          - 'Excel.Interfaces.PivotTableData[]'
+          - 'excel!Excel.Interfaces.PivotTableCollectionData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.PivotTableCollectionData#items~0:complex'
+    name: 'Excel.Interfaces.PivotTableData[]'
+    fullName: 'Excel.Interfaces.PivotTableData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PivotTableData:interface'
+        name: Excel.Interfaces.PivotTableData
+        fullName: Excel.Interfaces.PivotTableData
+      - name: '[]'
+        fullName: '[]'

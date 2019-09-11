@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontLoadOptions
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions:interface'
     summary: |-
       This object represents the font attributes (font style, color, etc.) for an object.
 
@@ -10,15 +10,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ConditionalRangeFontLoadOptions.$all
-      - excel.Excel.Interfaces.ConditionalRangeFontLoadOptions.bold
-      - excel.Excel.Interfaces.ConditionalRangeFontLoadOptions.color
-      - excel.Excel.Interfaces.ConditionalRangeFontLoadOptions.italic
-      - excel.Excel.Interfaces.ConditionalRangeFontLoadOptions.strikethrough
-      - excel.Excel.Interfaces.ConditionalRangeFontLoadOptions.underline
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontLoadOptions.$all
+      - 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#bold:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#color:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#italic:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#strikethrough:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#underline:member'
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontLoadOptions.bold
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#bold:member'
     summary: |-
       Represents the bold status of font.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontLoadOptions.color
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#color:member'
     summary: |-
       HTML color code representation of the text color. E.g. \#FF0000 represents Red.
 
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontLoadOptions.italic
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#italic:member'
     summary: |-
       Represents the italic status of the font.
 
@@ -74,7 +74,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontLoadOptions.strikethrough
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#strikethrough:member'
     summary: |-
       Represents the strikethrough status of the font.
 
@@ -89,7 +89,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontLoadOptions.underline
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions#underline:member'
     summary: |-
       Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
 

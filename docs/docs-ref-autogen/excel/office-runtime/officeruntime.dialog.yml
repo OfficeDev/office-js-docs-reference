@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-runtime.OfficeRuntime.Dialog
+  - uid: 'office-runtime!OfficeRuntime.Dialog:interface'
     summary: Object representing the dialog box.
     name: OfficeRuntime.Dialog
     fullName: OfficeRuntime.Dialog
     langs:
       - typeScript
     type: interface
-    package: office-runtime
+    package: office-runtime!
     children:
-      - office-runtime.OfficeRuntime.Dialog.close
-  - uid: office-runtime.OfficeRuntime.Dialog.close
+      - 'office-runtime!OfficeRuntime.Dialog#close:member(1)'
+  - uid: 'office-runtime!OfficeRuntime.Dialog#close:member(1)'
     summary: Method to close a dialog box. Returns a Promise.
     name: close()
     fullName: close()
@@ -21,5 +21,15 @@ items:
       content: 'close(): Promise<void>;'
       return:
         type:
-          - Promise<void>
+          - 'office-runtime!OfficeRuntime.Dialog#close~0:complex'
         description: ''
+references:
+  - uid: 'office-runtime!OfficeRuntime.Dialog#close~0:complex'
+    name: Promise<void>
+    fullName: Promise<void>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <void>
+        fullName: <void>

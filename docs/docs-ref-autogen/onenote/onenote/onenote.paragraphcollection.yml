@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.ParagraphCollection
+  - uid: 'onenote!OneNote.ParagraphCollection:class'
     summary: |-
       Represents a collection of Paragraph objects.
 
@@ -11,21 +11,21 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: onenote
+      - 'onenote!OfficeExtension.ClientObject:class'
+    package: onenote!
     children:
-      - onenote.OneNote.ParagraphCollection.context
-      - onenote.OneNote.ParagraphCollection.count
-      - onenote.OneNote.ParagraphCollection.getItem
-      - onenote.OneNote.ParagraphCollection.getItemAt
-      - onenote.OneNote.ParagraphCollection.items
-      - onenote.OneNote.ParagraphCollection.load
-      - onenote.OneNote.ParagraphCollection.load_1
-      - onenote.OneNote.ParagraphCollection.load_2
-      - onenote.OneNote.ParagraphCollection.toJSON
-      - onenote.OneNote.ParagraphCollection.track
-      - onenote.OneNote.ParagraphCollection.untrack
-  - uid: onenote.OneNote.ParagraphCollection.context
+      - 'onenote!OneNote.ParagraphCollection#context:member'
+      - 'onenote!OneNote.ParagraphCollection#count:member'
+      - 'onenote!OneNote.ParagraphCollection#getItem:member(1)'
+      - 'onenote!OneNote.ParagraphCollection#getItemAt:member(1)'
+      - 'onenote!OneNote.ParagraphCollection#items:member'
+      - 'onenote!OneNote.ParagraphCollection#load:member(1)'
+      - 'onenote!OneNote.ParagraphCollection#load:member(2)'
+      - 'onenote!OneNote.ParagraphCollection#load:member(3)'
+      - 'onenote!OneNote.ParagraphCollection#toJSON:member(1)'
+      - 'onenote!OneNote.ParagraphCollection#track:member(1)'
+      - 'onenote!OneNote.ParagraphCollection#untrack:member(1)'
+  - uid: 'onenote!OneNote.ParagraphCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -38,8 +38,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
-  - uid: onenote.OneNote.ParagraphCollection.count
+          - 'onenote!OneNote.RequestContext:class'
+  - uid: 'onenote!OneNote.ParagraphCollection#count:member'
     summary: |-
       Returns the number of paragraphs in the page. Read-only.
 
@@ -54,7 +54,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.ParagraphCollection.getItem
+  - uid: 'onenote!OneNote.ParagraphCollection#getItem:member(1)'
     summary: |-
       Gets a Paragraph object by ID or by its index in the collection. Read-only.
 
@@ -68,14 +68,14 @@ items:
       content: 'getItem(index: number | string): OneNote.Paragraph;'
       return:
         type:
-          - onenote.OneNote.Paragraph
+          - 'onenote!OneNote.Paragraph:class'
         description: ''
       parameters:
         - id: index
           description: 'The ID of the Paragraph object, or the index location of the Paragraph object in the collection.'
           type:
             - number | string
-  - uid: onenote.OneNote.ParagraphCollection.getItemAt
+  - uid: 'onenote!OneNote.ParagraphCollection#getItemAt:member(1)'
     summary: |-
       Gets a paragraph on its position in the collection.
 
@@ -89,7 +89,7 @@ items:
       content: 'getItemAt(index: number): OneNote.Paragraph;'
       return:
         type:
-          - onenote.OneNote.Paragraph
+          - 'onenote!OneNote.Paragraph:class'
         description: |-
 
 
@@ -132,7 +132,7 @@ items:
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: onenote.OneNote.ParagraphCollection.items
+  - uid: 'onenote!OneNote.ParagraphCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -143,8 +143,8 @@ items:
       content: 'readonly items: OneNote.Paragraph[];'
       return:
         type:
-          - 'OneNote.Paragraph[]'
-  - uid: onenote.OneNote.ParagraphCollection.load
+          - 'onenote!OneNote.ParagraphCollection#items~0:complex'
+  - uid: 'onenote!OneNote.ParagraphCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -177,14 +177,14 @@ items:
         OneNote.ParagraphCollection;
       return:
         type:
-          - onenote.OneNote.ParagraphCollection
+          - 'onenote!OneNote.ParagraphCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OneNote.Interfaces.ParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
-  - uid: onenote.OneNote.ParagraphCollection.load_1
+            - 'onenote!OneNote.ParagraphCollection#load~0:complex'
+  - uid: 'onenote!OneNote.ParagraphCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -197,7 +197,7 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.ParagraphCollection;'
       return:
         type:
-          - onenote.OneNote.ParagraphCollection
+          - 'onenote!OneNote.ParagraphCollection:class'
         description: |-
 
 
@@ -297,7 +297,7 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.ParagraphCollection.load_2
+  - uid: 'onenote!OneNote.ParagraphCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -307,14 +307,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): OneNote.ParagraphCollection;'
       return:
         type:
-          - onenote.OneNote.ParagraphCollection
+          - 'onenote!OneNote.ParagraphCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
-  - uid: onenote.OneNote.ParagraphCollection.toJSON
+            - 'onenote!OfficeExtension.LoadOption:interface'
+  - uid: 'onenote!OneNote.ParagraphCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -330,9 +330,9 @@ items:
       content: 'toJSON(): OneNote.Interfaces.ParagraphCollectionData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphCollectionData
+          - 'onenote!OneNote.Interfaces.ParagraphCollectionData:interface'
         description: ''
-  - uid: onenote.OneNote.ParagraphCollection.track
+  - uid: 'onenote!OneNote.ParagraphCollection#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -348,9 +348,9 @@ items:
       content: 'track(): OneNote.ParagraphCollection;'
       return:
         type:
-          - onenote.OneNote.ParagraphCollection
+          - 'onenote!OneNote.ParagraphCollection:class'
         description: ''
-  - uid: onenote.OneNote.ParagraphCollection.untrack
+  - uid: 'onenote!OneNote.ParagraphCollection#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -365,5 +365,39 @@ items:
       content: 'untrack(): OneNote.ParagraphCollection;'
       return:
         type:
-          - onenote.OneNote.ParagraphCollection
+          - 'onenote!OneNote.ParagraphCollection:class'
         description: ''
+references:
+  - uid: 'onenote!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'onenote!OneNote.RequestContext:class'
+    name: RequestContext
+  - uid: 'onenote!OneNote.Paragraph:class'
+    name: OneNote.Paragraph
+  - uid: 'onenote!OneNote.ParagraphCollection#items~0:complex'
+    name: 'OneNote.Paragraph[]'
+    fullName: 'OneNote.Paragraph[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Paragraph:class'
+        name: OneNote.Paragraph
+        fullName: OneNote.Paragraph
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'onenote!OneNote.ParagraphCollection:class'
+    name: OneNote.ParagraphCollection
+  - uid: 'onenote!OneNote.ParagraphCollection#load~0:complex'
+    name: OneNote.Interfaces.ParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
+    fullName: OneNote.Interfaces.ParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface'
+        name: OneNote.Interfaces.ParagraphCollectionLoadOptions
+        fullName: OneNote.Interfaces.ParagraphCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'onenote!OneNote.Interfaces.CollectionLoadOptions:interface'
+        name: OneNote.Interfaces.CollectionLoadOptions
+        fullName: OneNote.Interfaces.CollectionLoadOptions
+  - uid: 'onenote!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionData:interface'
+    name: OneNote.Interfaces.ParagraphCollectionData

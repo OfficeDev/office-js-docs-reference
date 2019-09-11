@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.CategoryDetails
+  - uid: 'outlook!Office.CategoryDetails:interface'
     summary: |-
       Represents a category's details like name and associated color.
 
@@ -33,11 +33,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.CategoryDetails.color
-      - outlook.Office.CategoryDetails.displayName
-  - uid: outlook.Office.CategoryDetails.color
+      - 'outlook!Office.CategoryDetails#color:member'
+      - 'outlook!Office.CategoryDetails#displayName:member'
+  - uid: 'outlook!Office.CategoryDetails#color:member'
     summary: The color of the category.
     isPreview: true
     name: color
@@ -49,8 +49,8 @@ items:
       content: 'color: MailboxEnums.CategoryColor | string;'
       return:
         type:
-          - MailboxEnums.CategoryColor | string
-  - uid: outlook.Office.CategoryDetails.displayName
+          - 'outlook!Office.CategoryDetails#color~0:complex'
+  - uid: 'outlook!Office.CategoryDetails#displayName:member'
     summary: The name of the category. Maximum length is 255 characters.
     isPreview: true
     name: displayName
@@ -63,3 +63,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'outlook!Office.CategoryDetails#color~0:complex'
+    name: MailboxEnums.CategoryColor | string
+    fullName: Office.MailboxEnums.CategoryColor | string
+    spec.typeScript:
+      - uid: 'outlook!Office.MailboxEnums.CategoryColor:enum'
+        name: MailboxEnums.CategoryColor
+        fullName: Office.MailboxEnums.CategoryColor
+      - name: ' | string'
+        fullName: ' | string'

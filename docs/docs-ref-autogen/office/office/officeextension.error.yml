@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.OfficeExtension.Error
+  - uid: 'office!OfficeExtension.Error:class'
     summary: >-
       The error object returned by `context.sync()`<!-- -->, if a promise is rejected due to an error while processing
       the request.
@@ -9,7 +9,7 @@ items:
     langs:
       - typeScript
     type: class
-    package: office
+    package: office!
     remarks: |-
 
 
@@ -22,7 +22,7 @@ items:
           // Create a proxy object for the document body.
           var body = context.document.body;
 
-          // Queue a commmand to insert text in to the beginning of the body.
+          // Queue a command to insert text in to the beginning of the body.
           // This will cause an OfficeExtension.Error.
           body.insertText(0);
 
@@ -37,14 +37,14 @@ items:
       });
       ```
     children:
-      - office.OfficeExtension.Error.code
-      - office.OfficeExtension.Error.debugInfo
-      - office.OfficeExtension.Error.innerError
-      - office.OfficeExtension.Error.message
-      - office.OfficeExtension.Error.name
-      - office.OfficeExtension.Error.stack
-      - office.OfficeExtension.Error.traceMessages
-  - uid: office.OfficeExtension.Error.code
+      - 'office!OfficeExtension.Error#code:member'
+      - 'office!OfficeExtension.Error#debugInfo:member'
+      - 'office!OfficeExtension.Error#innerError:member'
+      - 'office!OfficeExtension.Error#message:member'
+      - 'office!OfficeExtension.Error#name:member'
+      - 'office!OfficeExtension.Error#stack:member'
+      - 'office!OfficeExtension.Error#traceMessages:member'
+  - uid: 'office!OfficeExtension.Error#code:member'
     summary: 'Error code string, such as "InvalidArgument".'
     name: code
     fullName: code
@@ -56,7 +56,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.Error.debugInfo
+  - uid: 'office!OfficeExtension.Error#debugInfo:member'
     summary: 'Debug info (useful for detailed logging of the error, i.e., via `JSON.stringify(...)`<!-- -->).'
     name: debugInfo
     fullName: debugInfo
@@ -67,8 +67,8 @@ items:
       content: 'debugInfo: DebugInfo;'
       return:
         type:
-          - office.OfficeExtension.DebugInfo
-  - uid: office.OfficeExtension.Error.innerError
+          - 'office!OfficeExtension.DebugInfo:interface'
+  - uid: 'office!OfficeExtension.Error#innerError:member'
     summary: 'Inner error, if applicable.'
     name: innerError
     fullName: innerError
@@ -79,8 +79,8 @@ items:
       content: 'innerError: Error;'
       return:
         type:
-          - Error
-  - uid: office.OfficeExtension.Error.message
+          - 'office!OfficeExtension.Error:class'
+  - uid: 'office!OfficeExtension.Error#message:member'
     summary: The error message passed through from the host Office application.
     name: message
     fullName: message
@@ -92,7 +92,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.Error.name
+  - uid: 'office!OfficeExtension.Error#name:member'
     summary: 'Error name: "OfficeExtension.Error".'
     name: name
     fullName: name
@@ -104,7 +104,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.Error.stack
+  - uid: 'office!OfficeExtension.Error#stack:member'
     summary: 'Stack trace, if applicable.'
     name: stack
     fullName: stack
@@ -116,7 +116,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.Error.traceMessages
+  - uid: 'office!OfficeExtension.Error#traceMessages:member'
     summary: >-
       Trace messages (if any) that were added via a `context.trace()` invocation before calling `context.sync()`<!--
       -->. If there was an error, this contains all trace messages that were executed before the error occurred. These
@@ -153,7 +153,7 @@ items:
               // Create a proxy object for the document body.
               var body = context.document.body;
 
-              // Queue a commmand to insert the paragraph at the end of the document body.
+              // Queue a command to insert the paragraph at the end of the document body.
               // Start a batch of commands.
               body.insertParagraph('1st paragraph', Word.InsertLocation.end);
               // Queue a command for instrumenting this part of the batch.
@@ -165,7 +165,7 @@ items:
               // Synchronize the document state by executing the queued-up commands,
               // and return a promise to indicate task completion.
               return context.sync().then(function () {
-                  // Queue a commmand to insert the paragraph at the end of the document body.
+                  // Queue a command to insert the paragraph at the end of the document body.
                   // Start a new batch of commands.
                   body.insertParagraph('3rd paragraph', Word.InsertLocation.end);
                   context.trace('3rd paragraph successful');
@@ -189,3 +189,8 @@ items:
 
           // Output: "Trace messages: 3rd paragraph successful,4th paragraph successful"
           ```
+references:
+  - uid: 'office!OfficeExtension.DebugInfo:interface'
+    name: DebugInfo
+  - uid: 'office!OfficeExtension.Error:class'
+    name: Error

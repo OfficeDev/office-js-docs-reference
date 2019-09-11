@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphCollectionData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionData:interface'
     summary: An interface describing the data returned by calling "inkAnalysisParagraphCollection.toJSON()".
     name: OneNote.Interfaces.InkAnalysisParagraphCollectionData
     fullName: OneNote.Interfaces.InkAnalysisParagraphCollectionData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkAnalysisParagraphCollectionData.items
-  - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphCollectionData.items
+      - 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionData#items:member'
     name: items
     fullName: items
     langs:
@@ -20,4 +20,14 @@ items:
       content: 'items?: OneNote.Interfaces.InkAnalysisParagraphData[];'
       return:
         type:
-          - 'OneNote.Interfaces.InkAnalysisParagraphData[]'
+          - 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionData#items~0:complex'
+    name: 'OneNote.Interfaces.InkAnalysisParagraphData[]'
+    fullName: 'OneNote.Interfaces.InkAnalysisParagraphData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface'
+        name: OneNote.Interfaces.InkAnalysisParagraphData
+        fullName: OneNote.Interfaces.InkAnalysisParagraphData
+      - name: '[]'
+        fullName: '[]'

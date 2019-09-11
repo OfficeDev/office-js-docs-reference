@@ -1,4 +1,4 @@
-Word.Body.clear:
+Word.Body#clear:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -6,7 +6,7 @@ Word.Body.clear:
         // Create a proxy object for the document body.
         var body = context.document.body;
     
-        // Queue a commmand to clear the contents of the body.
+        // Queue a command to clear the contents of the body.
         body.clear();
     
         // Synchronize the document state by executing the queued commands,
@@ -25,7 +25,7 @@ Word.Body.clear:
     // The Silly stories add-in sample shows how the 
     // clear method can be used to clear the contents of a document.
     // https://aka.ms/sillystorywordaddin
-Word.Body.font:
+Word.Body#font:member:
   - |-
     // Get the style and the font size, font name, and font color properties on the body object.
     // Run a batch operation against the Word object model.
@@ -34,7 +34,7 @@ Word.Body.font:
         // Create a proxy object for the document body.
         var body = context.document.body;
     
-        // Queue a commmand to load font and style information for the document body.
+        // Queue a command to load font and style information for the document body.
         context.load(body, 'font/size, font/name, font/color, style');
     
         // Synchronize the document state by executing the queued commands,
@@ -56,7 +56,7 @@ Word.Body.font:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Body.getHtml:
+Word.Body#getHtml:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -64,7 +64,7 @@ Word.Body.getHtml:
         // Create a proxy object for the document body.
         var body = context.document.body;
     
-        // Queue a commmand to get the HTML contents of the body.
+        // Queue a command to get the HTML contents of the body.
         var bodyHTML = body.getHtml();
     
         // Synchronize the document state by executing the queued commands,
@@ -79,7 +79,7 @@ Word.Body.getHtml:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Word.Body.getOoxml:
+Word.Body#getOoxml:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -87,7 +87,7 @@ Word.Body.getOoxml:
         // Create a proxy object for the document body.
         var body = context.document.body;
     
-        // Queue a commmand to get the OOXML contents of the body.
+        // Queue a command to get the OOXML contents of the body.
         var bodyOOXML = body.getOoxml();
     
         // Synchronize the document state by executing the queued commands,
@@ -102,7 +102,7 @@ Word.Body.getOoxml:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Word.Body.insertBreak:
+Word.Body#insertBreak:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (ctx) {
@@ -110,7 +110,7 @@ Word.Body.insertBreak:
         // Create a proxy object for the document body.
         var body = ctx.document.body;
     
-        // Queue a commmand to insert a page break at the start of the document body.
+        // Queue a command to insert a page break at the start of the document body.
         body.insertBreak(Word.BreakType.page, Word.InsertLocation.start);
     
         // Synchronize the document state by executing the queued commands,
@@ -125,7 +125,7 @@ Word.Body.insertBreak:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Word.Body.insertContentControl:
+Word.Body#insertContentControl:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -133,7 +133,7 @@ Word.Body.insertContentControl:
         // Create a proxy object for the document body.
         var body = context.document.body;
     
-        // Queue a commmand to wrap the body in a content control.
+        // Queue a command to wrap the body in a content control.
         body.insertContentControl();
     
         // Synchronize the document state by executing the queued commands,
@@ -148,7 +148,7 @@ Word.Body.insertContentControl:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Body.insertFileFromBase64:
+Word.Body#insertFileFromBase64:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -156,7 +156,7 @@ Word.Body.insertFileFromBase64:
         // Create a proxy object for the document body.
         var body = context.document.body;
     
-        // Queue a commmand to insert base64 encoded .docx at the beginning of the content body.
+        // Queue a command to insert base64 encoded .docx at the beginning of the content body.
         // You will need to implement getBase64() to pass in a string of a base64 encoded docx file.
         body.insertFileFromBase64(getBase64(), Word.InsertLocation.start);
     
@@ -172,7 +172,7 @@ Word.Body.insertFileFromBase64:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Body.insertHtml:
+Word.Body#insertHtml:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -180,7 +180,7 @@ Word.Body.insertHtml:
         // Create a proxy object for the document body.
         var body = context.document.body;
     
-        // Queue a commmand to insert HTML in to the beginning of the body.
+        // Queue a command to insert HTML in to the beginning of the body.
         body.insertHtml(
             '<strong>This is text inserted with body.insertHtml()</strong>', Word.InsertLocation.start);
     
@@ -196,7 +196,7 @@ Word.Body.insertHtml:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Body.insertInlinePictureFromBase64:
+Word.Body#insertInlinePictureFromBase64:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -204,7 +204,7 @@ Word.Body.insertInlinePictureFromBase64:
         // Create a proxy object for the document body.
         var body = context.document.body;
     
-        // Queue a commmand to insert OOXML in to the beginning of the body.
+        // Queue a command to insert OOXML in to the beginning of the body.
         body.insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", Word.InsertLocation.start);
     
         // Synchronize the document state by executing the queued commands,
@@ -225,7 +225,7 @@ Word.Body.insertInlinePictureFromBase64:
 
     // The Word-Add-in-DocumentAssembly sample shows how you can use this API to assemble a document.
     // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
-Word.Body.insertParagraph:
+Word.Body#insertParagraph:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -233,7 +233,7 @@ Word.Body.insertParagraph:
         // Create a proxy object for the document body.
         var body = context.document.body;
     
-        // Queue a commmand to insert the paragraph at the end of the document body.
+        // Queue a command to insert the paragraph at the end of the document body.
         body.insertParagraph('Content of a new paragraph', Word.InsertLocation.end);
     
         // Synchronize the document state by executing the queued commands,
@@ -251,7 +251,7 @@ Word.Body.insertParagraph:
 
     // The Word-Add-in-DocumentAssembly sample shows how you can use the insertParagraph method to assemble a document.
     // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
-Word.Body.insertText:
+Word.Body#insertText:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -259,7 +259,7 @@ Word.Body.insertText:
         // Create a proxy object for the document body.
         var body = context.document.body;
     
-        // Queue a commmand to insert text in to the beginning of the body.
+        // Queue a command to insert text in to the beginning of the body.
         body.insertText('This is text inserted with body.insertText()', Word.InsertLocation.start);
     
         // Synchronize the document state by executing the queued commands,
@@ -274,7 +274,7 @@ Word.Body.insertText:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Body.search:
+Word.Body#search:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -282,10 +282,10 @@ Word.Body.search:
         // Create a proxy object for the document body.
         var body = context.document.body;
     
-        // Queue a commmand to search the document.
+        // Queue a command to search the document.
         var searchResults = context.document.body.search('video', {matchCase: false});
     
-        // Queue a commmand to load the results.
+        // Queue a command to load the results.
         context.load(searchResults, 'text, font');
     
         // Synchronize the document state by executing the queued commands,
@@ -317,7 +317,7 @@ Word.Body.search:
 
     // The Word-Add-in-DocumentAssembly sample provides another example of how to search a document.
     // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
-Word.Body.select:
+Word.Body#select:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -325,7 +325,7 @@ Word.Body.select:
         // Create a proxy object for the document body.
         var body = context.document.body;
     
-        // Queue a commmand to select the document body. The Word UI will
+        // Queue a command to select the document body. The Word UI will
         // move to the selected document body.
         body.select();
     
@@ -341,7 +341,7 @@ Word.Body.select:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Body.text:
+Word.Body#text:member:
   - |-
     // Get the text property on the body object
     // Run a batch operation against the Word object model.
@@ -350,7 +350,7 @@ Word.Body.text:
         // Create a proxy object for the document body.
         var body = context.document.body;
     
-        // Queue a commmand to load the text in document body.
+        // Queue a command to load the text in document body.
         context.load(body, 'text');
     
         // Synchronize the document state by executing the queued commands,
@@ -365,7 +365,7 @@ Word.Body.text:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.clear:
+Word.ContentControl#clear:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -402,7 +402,7 @@ Word.ContentControl.clear:
         }
     });
     
-Word.ContentControl.delete:
+Word.ContentControl#delete:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -439,7 +439,7 @@ Word.ContentControl.delete:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.getHtml:
+Word.ContentControl#getHtml:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -475,7 +475,7 @@ Word.ContentControl.getHtml:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.getOoxml:
+Word.ContentControl#getOoxml:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -511,7 +511,7 @@ Word.ContentControl.getOoxml:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.insertBreak_1:
+Word.ContentControl#insertBreak:member(2):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -519,7 +519,7 @@ Word.ContentControl.insertBreak_1:
         // Create a proxy object for the content controls collection.
         var contentControls = context.document.contentControls;
         
-        // Queue a commmand to load the id property for all of content controls. 
+        // Queue a command to load the id property for all of content controls. 
         context.load(contentControls, 'id');
         
         // Synchronize the document state by executing the queued commands, 
@@ -548,7 +548,7 @@ Word.ContentControl.insertBreak_1:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.insertHtml_1:
+Word.ContentControl#insertHtml:member(2):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -586,7 +586,7 @@ Word.ContentControl.insertHtml_1:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.insertOoxml_1:
+Word.ContentControl#insertOoxml:member(2):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -625,7 +625,7 @@ Word.ContentControl.insertOoxml_1:
 
     // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
     // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
-Word.ContentControl.insertParagraph_1:
+Word.ContentControl#insertParagraph:member(2):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -661,7 +661,7 @@ Word.ContentControl.insertParagraph_1:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.insertText_1:
+Word.ContentControl#insertText:member(2):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -700,7 +700,7 @@ Word.ContentControl.insertText_1:
 
     // The Silly stories add-in sample shows how to use the insertText method.
     // https://aka.ms/sillystorywordaddin
-Word.ContentControl.tag:
+Word.ContentControl#tag:member:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -708,7 +708,7 @@ Word.ContentControl.tag:
         // Create a proxy range object for the current selection.
         var range = context.document.getSelection();
         
-        // Queue a commmand to create the content control.
+        // Queue a command to create the content control.
         var myContentControl = range.insertContentControl();
         myContentControl.tag = 'Customer-Address';
         myContentControl.title = ' has t';
@@ -731,7 +731,7 @@ Word.ContentControl.tag:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.load_1:
+Word.ContentControl#load:member(1):
   - |-
     // Load all of the content control properties
     // Run a batch operation against the Word object model.
@@ -796,7 +796,7 @@ Word.ContentControl.load_1:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.search:
+Word.ContentControl#search:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -832,7 +832,7 @@ Word.ContentControl.search:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControlCollection.getById:
+Word.ContentControlCollection#getById:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -881,7 +881,7 @@ Word.ContentControlCollection.getById:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControlCollection.getByIdOrNullObject:
+Word.ContentControlCollection#getByIdOrNullObject:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -908,7 +908,7 @@ Word.ContentControlCollection.getByIdOrNullObject:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControlCollection.getByTag:
+Word.ContentControlCollection#getByTag:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -941,7 +941,7 @@ Word.ContentControlCollection.getByTag:
 
     // The Word-Add-in-DocumentAssembly sample has another example of using the getByTag method.
     // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
-Word.ContentControlCollection.getByTitle:
+Word.ContentControlCollection#getByTitle:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -975,7 +975,7 @@ Word.ContentControlCollection.getByTitle:
 
     // The Word-Add-in-DocumentAssembly sample has another example of using the getByTitle method.
     // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
-Word.ContentControlCollection.getFirst:
+Word.ContentControlCollection#getFirst:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1002,7 +1002,7 @@ Word.ContentControlCollection.getFirst:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControlCollection.load:
+Word.ContentControlCollection#load:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1070,7 +1070,7 @@ Word.ContentControlCollection.load:
     // The Silly stories add-in sample shows how the load method is used
     // to load the content control collection with the tag and title properties.
     // https://aka.ms/sillystorywordaddin
-Word.Document.getSelection:
+Word.Document#getSelection:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1084,7 +1084,7 @@ Word.Document.getSelection:
         // Create a range proxy object for the current selection.
         var range = context.document.getSelection();
         
-        // Queue a commmand to insert text at the end of the selection.
+        // Queue a command to insert text at the end of the selection.
         range.insertText(textSample, Word.InsertLocation.end);
         
         // Synchronize the document state by executing the queued commands, 
@@ -1099,7 +1099,7 @@ Word.Document.getSelection:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Document.load:
+Word.Document#load:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1130,7 +1130,7 @@ Word.Document.load:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Document.save:
+Word.Document#save:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1138,7 +1138,7 @@ Word.Document.save:
         // Create a proxy object for the document.
         var thisDocument = context.document;
     
-        // Queue a commmand to load the document save state (on the saved property).
+        // Queue a command to load the document save state (on the saved property).
         context.load(thisDocument, 'saved');    
         
         // Synchronize the document state by executing the queued commands, 
@@ -1165,7 +1165,7 @@ Word.Document.save:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OfficeExtension.Error:
+OfficeExtension.Error:class:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1173,7 +1173,7 @@ OfficeExtension.Error:
         // Create a proxy object for the document body.
         var body = context.document.body;
     
-        // Queue a commmand to insert text in to the beginning of the body.
+        // Queue a command to insert text in to the beginning of the body.
         // This will cause an OfficeExtension.Error.
         body.insertText(0);
     
@@ -1186,7 +1186,7 @@ OfficeExtension.Error:
             console.log('Error code and message: ' + error.toString());
         }
     });
-OfficeExtension.Error.traceMessages:
+OfficeExtension.Error#traceMessages:member:
   - |-
     // The following example shows how you can instrument a batch of commands
     // to determine where an error occurred. The first batch successfully
@@ -1204,7 +1204,7 @@ OfficeExtension.Error.traceMessages:
         // Create a proxy object for the document body.
         var body = context.document.body;
 
-        // Queue a commmand to insert the paragraph at the end of the document body.
+        // Queue a command to insert the paragraph at the end of the document body.
         // Start a batch of commands.
         body.insertParagraph('1st paragraph', Word.InsertLocation.end);
         // Queue a command for instrumenting this part of the batch.
@@ -1216,7 +1216,7 @@ OfficeExtension.Error.traceMessages:
         // Synchronize the document state by executing the queued-up commands,
         // and return a promise to indicate task completion.
         return context.sync().then(function () {
-            // Queue a commmand to insert the paragraph at the end of the document body.
+            // Queue a command to insert the paragraph at the end of the document body.
             // Start a new batch of commands.
             body.insertParagraph('3rd paragraph', Word.InsertLocation.end);
             context.trace('3rd paragraph successful');
@@ -1239,7 +1239,7 @@ OfficeExtension.Error.traceMessages:
     });
 
     // Output: "Trace messages: 3rd paragraph successful,4th paragraph successful"
-Word.Font.load:
+Word.Font#load:member(1):
   - |-
     // Change the font name
     // Run a batch operation against the Word object model.
@@ -1248,7 +1248,7 @@ Word.Font.load:
         // Create a range proxy object for the current selection.
         var selection = context.document.getSelection();
     
-        // Queue a commmand to change the current selection's font name.
+        // Queue a command to change the current selection's font name.
         selection.font.name = 'Arial';
     
         // Synchronize the document state by executing the queued commands,
@@ -1271,7 +1271,7 @@ Word.Font.load:
         // Create a range proxy object for the current selection.
         var selection = context.document.getSelection();
     
-        // Queue a commmand to change the font color of the current selection.
+        // Queue a command to change the font color of the current selection.
         selection.font.color = 'blue';
     
         // Synchronize the document state by executing the queued commands,
@@ -1294,7 +1294,7 @@ Word.Font.load:
         // Create a range proxy object for the current selection.
         var selection = context.document.getSelection();
     
-        // Queue a commmand to change the current selection's font size.
+        // Queue a command to change the current selection's font size.
         selection.font.size = 20;
     
         // Synchronize the document state by executing the queued commands,
@@ -1317,7 +1317,7 @@ Word.Font.load:
         // Create a range proxy object for the current selection.
         var selection = context.document.getSelection();
     
-        // Queue a commmand to highlight the current selection.
+        // Queue a command to highlight the current selection.
         selection.font.highlightColor = '#FFFF00'; // Yellow
     
         // Synchronize the document state by executing the queued commands,
@@ -1340,7 +1340,7 @@ Word.Font.load:
         // Create a range proxy object for the current selection.
         var selection = context.document.getSelection();
     
-        // Queue a commmand to make the current selection bold.
+        // Queue a command to make the current selection bold.
         selection.font.bold = true;
     
         // Synchronize the document state by executing the queued commands,
@@ -1363,7 +1363,7 @@ Word.Font.load:
         // Create a range proxy object for the current selection.
         var selection = context.document.getSelection();
     
-        // Queue a commmand to underline the current selection.
+        // Queue a command to underline the current selection.
         selection.font.underline = Word.UnderlineType.single;
     
         // Synchronize the document state by executing the queued commands,
@@ -1386,7 +1386,7 @@ Word.Font.load:
         // Create a range proxy object for the current selection.
         var selection = context.document.getSelection();
     
-        // Queue a commmand to strikethrough the font of the current selection.
+        // Queue a command to strikethrough the font of the current selection.
         selection.font.strikeThrough = true;
     
         // Synchronize the document state by executing the queued commands,
@@ -1401,7 +1401,7 @@ Word.Font.load:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.InlinePicture.getNext:
+Word.InlinePicture#getNext:member(1):
   - |-
     // To use this snippet, add an inline picture to the document and assign it an alt text title.
     // Run a batch operation against the Word object model.
@@ -1429,7 +1429,7 @@ Word.InlinePicture.getNext:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.InlinePicture.getNextOrNullObject:
+Word.InlinePicture#getNextOrNullObject:member(1):
   - |-
     // To use this snippet, add an inline picture to the document and assign it an alt text title.
     // Run a batch operation against the Word object model.
@@ -1457,7 +1457,7 @@ Word.InlinePicture.getNextOrNullObject:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Paragraph.clear:
+Word.Paragraph#clear:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1465,7 +1465,7 @@ Word.Paragraph.clear:
         // Create a proxy object for the paragraphs collection.
         var paragraphs = context.document.body.paragraphs;
     
-        // Queue a commmand to load the style property for all of the paragraphs.
+        // Queue a command to load the style property for all of the paragraphs.
         context.load(paragraphs, 'style');
     
         // Synchronize the document state by executing the queued commands,
@@ -1488,7 +1488,7 @@ Word.Paragraph.clear:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Paragraph.delete:
+Word.Paragraph#delete:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1496,7 +1496,7 @@ Word.Paragraph.delete:
         // Create a proxy object for the paragraphs collection.
         var paragraphs = context.document.body.paragraphs;
     
-        // Queue a commmand to load the text property for all of the paragraphs.
+        // Queue a command to load the text property for all of the paragraphs.
         context.load(paragraphs, 'text');
     
         // Synchronize the document state by executing the queued commands,
@@ -1519,7 +1519,7 @@ Word.Paragraph.delete:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Paragraph.getHtml:
+Word.Paragraph#getHtml:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1527,7 +1527,7 @@ Word.Paragraph.getHtml:
         // Create a proxy object for the paragraphs collection.
         var paragraphs = context.document.body.paragraphs;
     
-        // Queue a commmand to load the style property for all of the paragraphs.
+        // Queue a command to load the style property for all of the paragraphs.
         context.load(paragraphs, 'style');
     
         // Synchronize the document state by executing the queued commands,
@@ -1550,7 +1550,7 @@ Word.Paragraph.getHtml:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Paragraph.getOoxml:
+Word.Paragraph#getOoxml:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1558,7 +1558,7 @@ Word.Paragraph.getOoxml:
         // Create a proxy object for the paragraphs collection.
         var paragraphs = context.document.body.paragraphs;
     
-        // Queue a commmand to load the style property for the top 2 paragraphs.
+        // Queue a command to load the style property for the top 2 paragraphs.
         context.load(paragraphs, {select: 'style', top: 2} );
     
         // Synchronize the document state by executing the queued commands,
@@ -1581,7 +1581,7 @@ Word.Paragraph.getOoxml:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Paragraph.getPreviousOrNullObject:
+Word.Paragraph#getPreviousOrNullObject:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1589,7 +1589,7 @@ Word.Paragraph.getPreviousOrNullObject:
         // Create a proxy object for the paragraphs collection.
         var paragraphs = context.document.body.paragraphs;
     
-        // Queue a commmand to load the text property for all of the paragraphs.
+        // Queue a command to load the text property for all of the paragraphs.
         context.load(paragraphs, 'text');
     
         // Synchronize the document state by executing the queued commands,
@@ -1619,7 +1619,7 @@ Word.Paragraph.getPreviousOrNullObject:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Paragraph.insertBreak_1:
+Word.Paragraph#insertBreak:member(2):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1627,7 +1627,7 @@ Word.Paragraph.insertBreak_1:
         // Create a proxy object for the paragraphs collection.
         var paragraphs = context.document.body.paragraphs;
     
-        // Queue a commmand to load the style property for the top 2 paragraphs.
+        // Queue a command to load the style property for the top 2 paragraphs.
         // We never perform an empty load. We always must request a property.
         context.load(paragraphs, {select: 'style', top: 2} );
     
@@ -1654,7 +1654,7 @@ Word.Paragraph.insertBreak_1:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Paragraph.insertContentControl:
+Word.Paragraph#insertContentControl:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1662,7 +1662,7 @@ Word.Paragraph.insertContentControl:
         // Create a proxy object for the paragraphs collection.
         var paragraphs = context.document.body.paragraphs;
     
-        // Queue a commmand to load the style property for the top 2 paragraphs.
+        // Queue a command to load the style property for the top 2 paragraphs.
         // We never perform an empty load. We always must request a property.
         context.load(paragraphs, {select: 'style', top: 2} );
     
@@ -1689,7 +1689,7 @@ Word.Paragraph.insertContentControl:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Paragraph.insertHtml:
+Word.Paragraph#insertHtml:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1697,7 +1697,7 @@ Word.Paragraph.insertHtml:
         // Create a proxy object for the paragraphs collection.
         var paragraphs = context.document.body.paragraphs;
     
-        // Queue a commmand to load the style property for the top 2 paragraphs.
+        // Queue a command to load the style property for the top 2 paragraphs.
         // We never perform an empty load. We always must request a property.
         context.load(paragraphs, {select: 'style', top: 2} );
     
@@ -1725,7 +1725,7 @@ Word.Paragraph.insertHtml:
         }
     });
     
-Word.Paragraph.insertInlinePictureFromBase64:
+Word.Paragraph#insertInlinePictureFromBase64:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1733,7 +1733,7 @@ Word.Paragraph.insertInlinePictureFromBase64:
         // Create a proxy object for the paragraphs collection.
         var paragraphs = context.document.body.paragraphs;
     
-        // Queue a commmand to load the style property for all of the paragraphs.
+        // Queue a command to load the style property for all of the paragraphs.
         context.load(paragraphs, 'style');
     
         // Synchronize the document state by executing the queued commands,
@@ -1761,7 +1761,7 @@ Word.Paragraph.insertInlinePictureFromBase64:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Paragraph.insertParagraph:
+Word.Paragraph#insertParagraph:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1769,7 +1769,7 @@ Word.Paragraph.insertParagraph:
         // Create a proxy object for the paragraphs collection.
         var paragraphs = context.document.body.paragraphs;
     
-        // Queue a commmand to load the style property for the top 2 paragraphs.
+        // Queue a command to load the style property for the top 2 paragraphs.
         // We never perform an empty load. We always must request a property.
         context.load(paragraphs, {select: 'style', top: 2} );
     
@@ -1796,7 +1796,7 @@ Word.Paragraph.insertParagraph:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Paragraph.insertText:
+Word.Paragraph#insertText:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1804,7 +1804,7 @@ Word.Paragraph.insertText:
         // Create a proxy object for the paragraphs collection.
         var paragraphs = context.document.body.paragraphs;
     
-        // Queue a commmand to load the style property for the top 2 paragraphs.
+        // Queue a command to load the style property for the top 2 paragraphs.
         // We never perform an empty load. We always must request a property.
         context.load(paragraphs, {select: 'style', top: 2} );
     
@@ -1831,7 +1831,7 @@ Word.Paragraph.insertText:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Paragraph.select:
+Word.Paragraph#select:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1839,7 +1839,7 @@ Word.Paragraph.select:
         // Create a proxy object for the paragraphs collection.
         var paragraphs = context.document.body.paragraphs;
     
-        // Queue a commmand to load the style property for all of the paragraphs.
+        // Queue a command to load the style property for all of the paragraphs.
         context.load(paragraphs, 'style');
     
         // Synchronize the document state by executing the queued commands,
@@ -1867,7 +1867,7 @@ Word.Paragraph.select:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ParagraphCollection.load:
+Word.ParagraphCollection#load:member(1):
   - |-
     // This example shows how to get the paragraphs in the Word document
     // along with their text and font size properties.
@@ -1878,7 +1878,7 @@ Word.ParagraphCollection.load:
         // Create a proxy object for the paragraphs collection.
         var paragraphs = context.document.body.paragraphs;
 
-        // Queue a commmand to load the text and font properties.
+        // Queue a command to load the text and font properties.
         // It is best practice to always specify the property set. Otherwise, all properties are
         // returned in on the object.
         context.load(paragraphs, 'text, font/size');
@@ -1896,7 +1896,7 @@ Word.ParagraphCollection.load:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Range.clear:
+Word.Range#clear:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1905,7 +1905,7 @@ Word.Range.clear:
         // create a proxy range object with the results.
         var range = context.document.getSelection();
     
-        // Queue a commmand to clear the contents of the proxy range object.
+        // Queue a command to clear the contents of the proxy range object.
         range.clear();
     
         // Synchronize the document state by executing the queued commands,
@@ -1920,7 +1920,7 @@ Word.Range.clear:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Range.delete:
+Word.Range#delete:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1929,7 +1929,7 @@ Word.Range.delete:
         // create a proxy range object with the results.
         var range = context.document.getSelection();
     
-        // Queue a commmand to delete the range object.
+        // Queue a command to delete the range object.
         range.delete();
     
         // Synchronize the document state by executing the queued commands,
@@ -1944,7 +1944,7 @@ Word.Range.delete:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Range.getHtml:
+Word.Range#getHtml:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1953,7 +1953,7 @@ Word.Range.getHtml:
         // create a proxy range object with the results.
         var range = context.document.getSelection();
     
-        // Queue a commmand to get the HTML of the current selection.
+        // Queue a command to get the HTML of the current selection.
         var html = range.getHtml();
     
         // Synchronize the document state by executing the queued commands,
@@ -1968,7 +1968,7 @@ Word.Range.getHtml:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Range.getOoxml:
+Word.Range#getOoxml:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1977,7 +1977,7 @@ Word.Range.getOoxml:
         // create a proxy range object with the results.
         var range = context.document.getSelection();
     
-        // Queue a commmand to get the OOXML of the current selection.
+        // Queue a command to get the OOXML of the current selection.
         var ooxml = range.getOoxml();
     
         // Synchronize the document state by executing the queued commands,
@@ -1992,7 +1992,7 @@ Word.Range.getOoxml:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Range.insertBreak_1:
+Word.Range#insertBreak:member(2):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -2001,7 +2001,7 @@ Word.Range.insertBreak_1:
         // create a proxy range object with the results.
         var range = context.document.getSelection();
     
-        // Queue a commmand to insert a page break after the selected text.
+        // Queue a command to insert a page break after the selected text.
         range.insertBreak('page', 'After');
     
         // Synchronize the document state by executing the queued commands,
@@ -2016,7 +2016,7 @@ Word.Range.insertBreak_1:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Range.insertContentControl:
+Word.Range#insertContentControl:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -2025,7 +2025,7 @@ Word.Range.insertContentControl:
         // create a proxy range object with the results.
         var range = context.document.getSelection();
     
-        // Queue a commmand to insert a content control around the selected text,
+        // Queue a command to insert a content control around the selected text,
         // and create a proxy content control object. We'll update the properties
         // on the content control.
         var myContentControl = range.insertContentControl();
@@ -2047,7 +2047,7 @@ Word.Range.insertContentControl:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Range.insertFileFromBase64:
+Word.Range#insertFileFromBase64:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -2056,7 +2056,7 @@ Word.Range.insertFileFromBase64:
         // create a proxy range object with the results.
         var range = context.document.getSelection();
     
-        // Queue a commmand to insert base64 encoded .docx at the beginning of the range.
+        // Queue a command to insert base64 encoded .docx at the beginning of the range.
         // You'll need to implement getBase64() to make this work.
         range.insertFileFromBase64(getBase64(), Word.InsertLocation.start);
     
@@ -2072,7 +2072,7 @@ Word.Range.insertFileFromBase64:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Range.insertHtml:
+Word.Range#insertHtml:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -2081,7 +2081,7 @@ Word.Range.insertHtml:
         // create a proxy range object with the results.
         var range = context.document.getSelection();
     
-        // Queue a commmand to insert HTML in to the beginning of the range.
+        // Queue a command to insert HTML in to the beginning of the range.
         range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);
     
         // Synchronize the document state by executing the queued commands,
@@ -2096,7 +2096,7 @@ Word.Range.insertHtml:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Range.insertOoxml:
+Word.Range#insertOoxml:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -2105,7 +2105,7 @@ Word.Range.insertOoxml:
         // create a proxy range object with the results.
         var range = context.document.getSelection();
     
-        // Queue a commmand to insert OOXML in to the beginning of the range.
+        // Queue a command to insert OOXML in to the beginning of the range.
         range.insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", Word.InsertLocation.start);
     
         // Synchronize the document state by executing the queued commands,
@@ -2123,7 +2123,7 @@ Word.Range.insertOoxml:
     
     // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
     // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
-Word.Range.insertParagraph:
+Word.Range#insertParagraph:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -2132,7 +2132,7 @@ Word.Range.insertParagraph:
         // create a proxy range object with the results.
         var range = context.document.getSelection();
     
-        // Queue a commmand to insert the paragraph after the range.
+        // Queue a command to insert the paragraph after the range.
         range.insertParagraph('Content of a new paragraph', Word.InsertLocation.after);
     
         // Synchronize the document state by executing the queued commands,
@@ -2147,7 +2147,7 @@ Word.Range.insertParagraph:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Range.insertText:
+Word.Range#insertText:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -2156,7 +2156,7 @@ Word.Range.insertText:
         // create a proxy range object with the results.
         var range = context.document.getSelection();
     
-        // Queue a commmand to insert the paragraph at the end of the range.
+        // Queue a command to insert the paragraph at the end of the range.
         range.insertText('New text inserted into the range.', Word.InsertLocation.end);
     
         // Synchronize the document state by executing the queued commands,
@@ -2171,7 +2171,7 @@ Word.Range.insertText:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Range.select:
+Word.Range#select:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -2180,7 +2180,7 @@ Word.Range.select:
         // create a proxy range object with the results.
         var range = context.document.getSelection();
     
-        // Queue a commmand to insert HTML in to the beginning of the range.
+        // Queue a command to insert HTML in to the beginning of the range.
         range.insertHtml('<strong>This is text inserted with range.insertHtml()</strong>', Word.InsertLocation.start);
     
         // Queue a command to select the HTML that was inserted.
@@ -2198,7 +2198,7 @@ Word.Range.select:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.RequestContext:
+Word.RequestContext:class:
   - |-
     // The following example shows how the request context is used to load the text property on a paragraph collection.
     // Run a batch operation against the Word object model.
@@ -2207,7 +2207,7 @@ Word.RequestContext:
         // Create a proxy object for the paragraphs collection.
         var paragraphs = context.document.body.paragraphs;
     
-        // Queue a commmand to load the text property for all of the paragraphs.
+        // Queue a command to load the text property for all of the paragraphs.
         context.load(paragraphs, 'text');
     
         // Synchronize the document state by executing the queued commands,
@@ -2269,7 +2269,7 @@ Word.RequestContext:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.SearchOptions.load:
+Word.SearchOptions#load:member(1):
   - |-
     // Ignore punctuation search
     // Run a batch operation against the Word object model.
@@ -2407,7 +2407,7 @@ Word.SearchOptions.load:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Section.getFooter_1:
+Word.Section#getFooter:member(2):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -2415,7 +2415,7 @@ Word.Section.getFooter_1:
         // Create a proxy sectionsCollection object.
         var mySections = context.document.sections;
         
-        // Queue a commmand to load the sections.
+        // Queue a command to load the sections.
         context.load(mySections, 'body/style');
         
         // Synchronize the document state by executing the queued commands, 
@@ -2445,7 +2445,7 @@ Word.Section.getFooter_1:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Section.getHeader_1:
+Word.Section#getHeader:member(2):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -2453,7 +2453,7 @@ Word.Section.getHeader_1:
         // Create a proxy sectionsCollection object.
         var mySections = context.document.sections;
         
-        // Queue a commmand to load the sections.
+        // Queue a command to load the sections.
         context.load(mySections, 'body/style');
         
         // Synchronize the document state by executing the queued commands, 
@@ -2483,7 +2483,7 @@ Word.Section.getHeader_1:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Setting.delete:
+Word.Setting#delete:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -2520,7 +2520,7 @@ Word.Setting.delete:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.SettingCollection.deleteAll:
+Word.SettingCollection#deleteAll:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -2557,7 +2557,7 @@ Word.SettingCollection.deleteAll:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.SettingCollection.getCount:
+Word.SettingCollection#getCount:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -2594,7 +2594,7 @@ Word.SettingCollection.getCount:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.SettingCollection.getItem:
+Word.SettingCollection#getItem:member(1):
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {

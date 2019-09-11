@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalFormatCollectionData
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionData:interface'
     summary: An interface describing the data returned by calling "conditionalFormatCollection.toJSON()".
     name: Excel.Interfaces.ConditionalFormatCollectionData
     fullName: Excel.Interfaces.ConditionalFormatCollectionData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ConditionalFormatCollectionData.items
-  - uid: excel.Excel.Interfaces.ConditionalFormatCollectionData.items
+      - 'excel!Excel.Interfaces.ConditionalFormatCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionData#items:member'
     name: items
     fullName: items
     langs:
@@ -20,4 +20,14 @@ items:
       content: 'items?: Excel.Interfaces.ConditionalFormatData[];'
       return:
         type:
-          - 'Excel.Interfaces.ConditionalFormatData[]'
+          - 'excel!Excel.Interfaces.ConditionalFormatCollectionData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionData#items~0:complex'
+    name: 'Excel.Interfaces.ConditionalFormatData[]'
+    fullName: 'Excel.Interfaces.ConditionalFormatData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ConditionalFormatData:interface'
+        name: Excel.Interfaces.ConditionalFormatData
+        fullName: Excel.Interfaces.ConditionalFormatData
+      - name: '[]'
+        fullName: '[]'

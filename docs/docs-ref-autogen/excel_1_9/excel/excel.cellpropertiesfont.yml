@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CellPropertiesFont
+  - uid: 'excel!Excel.CellPropertiesFont:interface'
     summary: >-
       Represents the `format.font` properties of `getCellProperties`<!-- -->, `getRowProperties`<!-- -->, and
       `getColumnProperties` or the `format.font` input parameter of `setCellProperties`<!-- -->, `setRowProperties`<!--
@@ -13,19 +13,19 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.CellPropertiesFont.bold
-      - excel.Excel.CellPropertiesFont.color
-      - excel.Excel.CellPropertiesFont.italic
-      - excel.Excel.CellPropertiesFont.name
-      - excel.Excel.CellPropertiesFont.size
-      - excel.Excel.CellPropertiesFont.strikethrough
-      - excel.Excel.CellPropertiesFont.subscript
-      - excel.Excel.CellPropertiesFont.superscript
-      - excel.Excel.CellPropertiesFont.tintAndShade
-      - excel.Excel.CellPropertiesFont.underline
-  - uid: excel.Excel.CellPropertiesFont.bold
+      - 'excel!Excel.CellPropertiesFont#bold:member'
+      - 'excel!Excel.CellPropertiesFont#color:member'
+      - 'excel!Excel.CellPropertiesFont#italic:member'
+      - 'excel!Excel.CellPropertiesFont#name:member'
+      - 'excel!Excel.CellPropertiesFont#size:member'
+      - 'excel!Excel.CellPropertiesFont#strikethrough:member'
+      - 'excel!Excel.CellPropertiesFont#subscript:member'
+      - 'excel!Excel.CellPropertiesFont#superscript:member'
+      - 'excel!Excel.CellPropertiesFont#tintAndShade:member'
+      - 'excel!Excel.CellPropertiesFont#underline:member'
+  - uid: 'excel!Excel.CellPropertiesFont#bold:member'
     summary: |-
       Represents the `format.font.bold` property.
 
@@ -40,7 +40,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFont.color
+  - uid: 'excel!Excel.CellPropertiesFont#color:member'
     summary: |-
       Represents the `format.font.color` property.
 
@@ -132,7 +132,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.CellPropertiesFont.italic
+  - uid: 'excel!Excel.CellPropertiesFont#italic:member'
     summary: |-
       Represents the `format.font.italic` property.
 
@@ -147,7 +147,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFont.name
+  - uid: 'excel!Excel.CellPropertiesFont#name:member'
     summary: |-
       Represents the `format.font.name` property.
 
@@ -162,7 +162,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.CellPropertiesFont.size
+  - uid: 'excel!Excel.CellPropertiesFont#size:member'
     summary: |-
       Represents the `format.font.size` property.
 
@@ -177,7 +177,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.CellPropertiesFont.strikethrough
+  - uid: 'excel!Excel.CellPropertiesFont#strikethrough:member'
     summary: |-
       Represents the `format.font.strikethrough` property.
 
@@ -192,7 +192,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFont.subscript
+  - uid: 'excel!Excel.CellPropertiesFont#subscript:member'
     summary: |-
       Represents the `format.font.subscript` property.
 
@@ -207,7 +207,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFont.superscript
+  - uid: 'excel!Excel.CellPropertiesFont#superscript:member'
     summary: |-
       Represents the `format.font.superscript` property.
 
@@ -222,7 +222,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFont.tintAndShade
+  - uid: 'excel!Excel.CellPropertiesFont#tintAndShade:member'
     summary: |-
       Represents the `format.font.tintAndShade` property.
 
@@ -237,7 +237,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.CellPropertiesFont.underline
+  - uid: 'excel!Excel.CellPropertiesFont#underline:member'
     summary: |-
       Represents the `format.font.underline` property.
 
@@ -251,4 +251,14 @@ items:
       content: 'underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";'
       return:
         type:
-          - Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"
+          - 'excel!Excel.CellPropertiesFont#underline~0:complex'
+references:
+  - uid: 'excel!Excel.CellPropertiesFont#underline~0:complex'
+    name: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"
+    fullName: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"
+    spec.typeScript:
+      - uid: 'excel!Excel.RangeUnderlineStyle:enum'
+        name: Excel.RangeUnderlineStyle
+        fullName: Excel.RangeUnderlineStyle
+      - name: ' | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"'
+        fullName: ' | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"'

@@ -1,27 +1,27 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.ParagraphUpdateData
+  - uid: 'word!Word.Interfaces.ParagraphUpdateData:interface'
     summary: 'An interface for updating data on the Paragraph object, for use in "paragraph.set(<!-- -->{ ... }<!-- -->)".'
     name: Word.Interfaces.ParagraphUpdateData
     fullName: Word.Interfaces.ParagraphUpdateData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.ParagraphUpdateData.alignment
-      - word.Word.Interfaces.ParagraphUpdateData.firstLineIndent
-      - word.Word.Interfaces.ParagraphUpdateData.font
-      - word.Word.Interfaces.ParagraphUpdateData.leftIndent
-      - word.Word.Interfaces.ParagraphUpdateData.lineSpacing
-      - word.Word.Interfaces.ParagraphUpdateData.lineUnitAfter
-      - word.Word.Interfaces.ParagraphUpdateData.lineUnitBefore
-      - word.Word.Interfaces.ParagraphUpdateData.outlineLevel
-      - word.Word.Interfaces.ParagraphUpdateData.rightIndent
-      - word.Word.Interfaces.ParagraphUpdateData.spaceAfter
-      - word.Word.Interfaces.ParagraphUpdateData.spaceBefore
-      - word.Word.Interfaces.ParagraphUpdateData.style
-  - uid: word.Word.Interfaces.ParagraphUpdateData.alignment
+      - 'word!Word.Interfaces.ParagraphUpdateData#alignment:member'
+      - 'word!Word.Interfaces.ParagraphUpdateData#firstLineIndent:member'
+      - 'word!Word.Interfaces.ParagraphUpdateData#font:member'
+      - 'word!Word.Interfaces.ParagraphUpdateData#leftIndent:member'
+      - 'word!Word.Interfaces.ParagraphUpdateData#lineSpacing:member'
+      - 'word!Word.Interfaces.ParagraphUpdateData#lineUnitAfter:member'
+      - 'word!Word.Interfaces.ParagraphUpdateData#lineUnitBefore:member'
+      - 'word!Word.Interfaces.ParagraphUpdateData#outlineLevel:member'
+      - 'word!Word.Interfaces.ParagraphUpdateData#rightIndent:member'
+      - 'word!Word.Interfaces.ParagraphUpdateData#spaceAfter:member'
+      - 'word!Word.Interfaces.ParagraphUpdateData#spaceBefore:member'
+      - 'word!Word.Interfaces.ParagraphUpdateData#style:member'
+  - uid: 'word!Word.Interfaces.ParagraphUpdateData#alignment:member'
     summary: |-
       Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
 
@@ -35,8 +35,8 @@ items:
       content: 'alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
       return:
         type:
-          - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
-  - uid: word.Word.Interfaces.ParagraphUpdateData.firstLineIndent
+          - 'word!Word.Interfaces.ParagraphUpdateData#alignment~0:complex'
+  - uid: 'word!Word.Interfaces.ParagraphUpdateData#firstLineIndent:member'
     summary: >-
       Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line
       indent, and use a negative value to set a hanging indent.
@@ -53,7 +53,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphUpdateData.font
+  - uid: 'word!Word.Interfaces.ParagraphUpdateData#font:member'
     summary: |-
       Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
 
@@ -67,8 +67,8 @@ items:
       content: 'font?: Word.Interfaces.FontUpdateData;'
       return:
         type:
-          - word.Word.Interfaces.FontUpdateData
-  - uid: word.Word.Interfaces.ParagraphUpdateData.leftIndent
+          - 'word!Word.Interfaces.FontUpdateData:interface'
+  - uid: 'word!Word.Interfaces.ParagraphUpdateData#leftIndent:member'
     summary: |-
       Gets or sets the left indent value, in points, for the paragraph.
 
@@ -83,7 +83,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphUpdateData.lineSpacing
+  - uid: 'word!Word.Interfaces.ParagraphUpdateData#lineSpacing:member'
     summary: >-
       Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by
       12.
@@ -100,7 +100,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphUpdateData.lineUnitAfter
+  - uid: 'word!Word.Interfaces.ParagraphUpdateData#lineUnitAfter:member'
     summary: |-
       Gets or sets the amount of spacing, in grid lines, after the paragraph.
 
@@ -115,7 +115,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphUpdateData.lineUnitBefore
+  - uid: 'word!Word.Interfaces.ParagraphUpdateData#lineUnitBefore:member'
     summary: |-
       Gets or sets the amount of spacing, in grid lines, before the paragraph.
 
@@ -130,7 +130,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphUpdateData.outlineLevel
+  - uid: 'word!Word.Interfaces.ParagraphUpdateData#outlineLevel:member'
     summary: |-
       Gets or sets the outline level for the paragraph.
 
@@ -145,7 +145,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphUpdateData.rightIndent
+  - uid: 'word!Word.Interfaces.ParagraphUpdateData#rightIndent:member'
     summary: |-
       Gets or sets the right indent value, in points, for the paragraph.
 
@@ -160,7 +160,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphUpdateData.spaceAfter
+  - uid: 'word!Word.Interfaces.ParagraphUpdateData#spaceAfter:member'
     summary: |-
       Gets or sets the spacing, in points, after the paragraph.
 
@@ -175,7 +175,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphUpdateData.spaceBefore
+  - uid: 'word!Word.Interfaces.ParagraphUpdateData#spaceBefore:member'
     summary: |-
       Gets or sets the spacing, in points, before the paragraph.
 
@@ -190,7 +190,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphUpdateData.style
+  - uid: 'word!Word.Interfaces.ParagraphUpdateData#style:member'
     summary: >-
       Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To
       use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -207,3 +207,15 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'word!Word.Interfaces.ParagraphUpdateData#alignment~0:complex'
+    name: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+    fullName: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+    spec.typeScript:
+      - uid: 'word!Word.Alignment:enum'
+        name: Word.Alignment
+        fullName: Word.Alignment
+      - name: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+        fullName: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+  - uid: 'word!Word.Interfaces.FontUpdateData:interface'
+    name: Word.Interfaces.FontUpdateData

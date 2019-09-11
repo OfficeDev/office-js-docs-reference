@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.PageUpdateData
+  - uid: 'visio!Visio.Interfaces.PageUpdateData:interface'
     summary: 'An interface for updating data on the Page object, for use in "page.set(<!-- -->{ ... }<!-- -->)".'
     name: Visio.Interfaces.PageUpdateData
     fullName: Visio.Interfaces.PageUpdateData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.PageUpdateData.view
-  - uid: visio.Visio.Interfaces.PageUpdateData.view
+      - 'visio!Visio.Interfaces.PageUpdateData#view:member'
+  - uid: 'visio!Visio.Interfaces.PageUpdateData#view:member'
     summary: |-
       Returns the view of the page.
 
@@ -24,4 +24,7 @@ items:
       content: 'view?: Visio.Interfaces.PageViewUpdateData;'
       return:
         type:
-          - visio.Visio.Interfaces.PageViewUpdateData
+          - 'visio!Visio.Interfaces.PageViewUpdateData:interface'
+references:
+  - uid: 'visio!Visio.Interfaces.PageViewUpdateData:interface'
+    name: Visio.Interfaces.PageViewUpdateData

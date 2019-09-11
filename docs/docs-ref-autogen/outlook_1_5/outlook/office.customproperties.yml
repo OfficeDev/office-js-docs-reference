@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.CustomProperties
+  - uid: 'outlook!Office.CustomProperties:interface'
     summary: >-
       The CustomProperties object represents custom properties that are specific to a particular item and specific to a
       mail add-in for Outlook. For example, there might be a need for a mail add-in to save some data that is specific
@@ -26,13 +26,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.CustomProperties.get
-      - outlook.Office.CustomProperties.remove
-      - outlook.Office.CustomProperties.saveAsync
-      - outlook.Office.CustomProperties.set
-  - uid: outlook.Office.CustomProperties.get
+      - 'outlook!Office.CustomProperties#get:member(1)'
+      - 'outlook!Office.CustomProperties#remove:member(1)'
+      - 'outlook!Office.CustomProperties#saveAsync:member(1)'
+      - 'outlook!Office.CustomProperties#set:member(1)'
+  - uid: 'outlook!Office.CustomProperties#get:member(1)'
     summary: Returns the value of the specified custom property.
     remarks: >-
       **[Minimum permission
@@ -60,7 +60,7 @@ items:
           description: The name of the custom property to be returned.
           type:
             - string
-  - uid: outlook.Office.CustomProperties.remove
+  - uid: 'outlook!Office.CustomProperties#remove:member(1)'
     summary: |-
       Removes the specified property from the custom property collection.
 
@@ -91,7 +91,7 @@ items:
             \[Api set: Mailbox 1.0\]
           type:
             - string
-  - uid: outlook.Office.CustomProperties.saveAsync
+  - uid: 'outlook!Office.CustomProperties#saveAsync:member(1)'
     summary: >-
       Saves item-specific custom properties to the server.
 
@@ -189,7 +189,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
+            - 'outlook!Office.CustomProperties#saveAsync~0:complex'
         - id: asyncContext
           description: |-
             Optional. Any state data that is passed to the callback method.
@@ -197,7 +197,7 @@ items:
             \[Api set: Mailbox 1.0\]
           type:
             - any
-  - uid: outlook.Office.CustomProperties.set
+  - uid: 'outlook!Office.CustomProperties#set:member(1)'
     summary: >-
       Sets the specified property to the specified value.
 
@@ -239,3 +239,15 @@ items:
           description: The value of the property to be set.
           type:
             - string
+references:
+  - uid: 'outlook!Office.CustomProperties#saveAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Runtime
+  - uid: 'excel!Excel.Runtime:class'
     summary: |-
       Represents the Excel Runtime class.
 
@@ -11,17 +11,17 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.Runtime.context
-      - excel.Excel.Runtime.load
-      - excel.Excel.Runtime.load_1
-      - excel.Excel.Runtime.load_2
-      - excel.Excel.Runtime.set
-      - excel.Excel.Runtime.set_1
-      - excel.Excel.Runtime.toJSON
-  - uid: excel.Excel.Runtime.context
+      - 'excel!Excel.Runtime#context:member'
+      - 'excel!Excel.Runtime#load:member(1)'
+      - 'excel!Excel.Runtime#load:member(2)'
+      - 'excel!Excel.Runtime#load:member(3)'
+      - 'excel!Excel.Runtime#set:member(1)'
+      - 'excel!Excel.Runtime#set:member(2)'
+      - 'excel!Excel.Runtime#toJSON:member(1)'
+  - uid: 'excel!Excel.Runtime#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -34,8 +34,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.Runtime.load
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Runtime#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -66,14 +66,14 @@ items:
       content: 'load(option?: Excel.Interfaces.RuntimeLoadOptions): Excel.Runtime;'
       return:
         type:
-          - excel.Excel.Runtime
+          - 'excel!Excel.Runtime:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.RuntimeLoadOptions
-  - uid: excel.Excel.Runtime.load_1
+            - 'excel!Excel.Interfaces.RuntimeLoadOptions:interface'
+  - uid: 'excel!Excel.Runtime#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -86,14 +86,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Runtime;'
       return:
         type:
-          - excel.Excel.Runtime
+          - 'excel!Excel.Runtime:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Runtime.load_2
+  - uid: 'excel!Excel.Runtime#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -106,7 +106,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Runtime;'
       return:
         type:
-          - excel.Excel.Runtime
+          - 'excel!Excel.Runtime:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -115,7 +115,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.Runtime.set
+  - uid: 'excel!Excel.Runtime#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -140,12 +140,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.RuntimeUpdateData
+            - 'excel!Excel.Interfaces.RuntimeUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.Runtime.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.Runtime#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -162,8 +162,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Runtime
-  - uid: excel.Excel.Runtime.toJSON
+            - 'excel!Excel.Runtime:class'
+  - uid: 'excel!Excel.Runtime#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -179,5 +179,20 @@ items:
       content: 'toJSON(): Excel.Interfaces.RuntimeData;'
       return:
         type:
-          - excel.Excel.Interfaces.RuntimeData
+          - 'excel!Excel.Interfaces.RuntimeData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.Runtime:class'
+    name: Excel.Runtime
+  - uid: 'excel!Excel.Interfaces.RuntimeLoadOptions:interface'
+    name: Excel.Interfaces.RuntimeLoadOptions
+  - uid: 'excel!Excel.Interfaces.RuntimeUpdateData:interface'
+    name: Interfaces.RuntimeUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.RuntimeData:interface'
+    name: Excel.Interfaces.RuntimeData

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.NotificationMessageDetails
+  - uid: 'outlook!Office.NotificationMessageDetails:interface'
     summary: |-
       An array of NotificationMessageDetails objects are returned by the NotificationMessages.getAllAsync method.
 
@@ -17,14 +17,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.NotificationMessageDetails.icon
-      - outlook.Office.NotificationMessageDetails.key
-      - outlook.Office.NotificationMessageDetails.message
-      - outlook.Office.NotificationMessageDetails.persistent
-      - outlook.Office.NotificationMessageDetails.type
-  - uid: outlook.Office.NotificationMessageDetails.icon
+      - 'outlook!Office.NotificationMessageDetails#icon:member'
+      - 'outlook!Office.NotificationMessageDetails#key:member'
+      - 'outlook!Office.NotificationMessageDetails#message:member'
+      - 'outlook!Office.NotificationMessageDetails#persistent:member'
+      - 'outlook!Office.NotificationMessageDetails#type:member'
+  - uid: 'outlook!Office.NotificationMessageDetails#icon:member'
     summary: >-
       A reference to an icon that is defined in the manifest in the Resources section. It appears in the infobar area.
       It is only applicable if the type is InformationalMessage. Specifying this parameter for an unsupported type
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.NotificationMessageDetails.key
+  - uid: 'outlook!Office.NotificationMessageDetails#key:member'
     summary: The identifier for the notification message.
     name: key
     fullName: key
@@ -55,7 +55,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.NotificationMessageDetails.message
+  - uid: 'outlook!Office.NotificationMessageDetails#message:member'
     summary: >-
       The text of the notification message. Maximum length is 150 characters. If the developer passes in a longer
       string, an ArgumentOutOfRange exception is thrown.
@@ -69,7 +69,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.NotificationMessageDetails.persistent
+  - uid: 'outlook!Office.NotificationMessageDetails#persistent:member'
     summary: >-
       Only applicable when type is InformationalMessage. If true, the message remains until removed by this add-in or
       dismissed by the user. If false, it is removed when the user navigates to a different item. For error
@@ -84,8 +84,8 @@ items:
       content: 'persistent?: Boolean;'
       return:
         type:
-          - Boolean
-  - uid: outlook.Office.NotificationMessageDetails.type
+          - '!Boolean:interface'
+  - uid: 'outlook!Office.NotificationMessageDetails#type:member'
     summary: >-
       Specifies the ItemNotificationMessageType of message. If type is ProgressIndicator or ErrorMessage, an icon is
       automatically supplied and the message is not persistent. Therefore the icon and persistent properties are not
@@ -100,4 +100,16 @@ items:
       content: 'type: MailboxEnums.ItemNotificationMessageType | string;'
       return:
         type:
-          - MailboxEnums.ItemNotificationMessageType | string
+          - 'outlook!Office.NotificationMessageDetails#type~0:complex'
+references:
+  - uid: '!Boolean:interface'
+    name: Boolean
+  - uid: 'outlook!Office.NotificationMessageDetails#type~0:complex'
+    name: MailboxEnums.ItemNotificationMessageType | string
+    fullName: Office.MailboxEnums.ItemNotificationMessageType | string
+    spec.typeScript:
+      - uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType:enum'
+        name: MailboxEnums.ItemNotificationMessageType
+        fullName: Office.MailboxEnums.ItemNotificationMessageType
+      - name: ' | string'
+        fullName: ' | string'

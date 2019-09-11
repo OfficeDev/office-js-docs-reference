@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.RangeLoadOptions
+  - uid: 'word!Word.Interfaces.RangeLoadOptions:interface'
     summary: |-
       Represents a contiguous area in a document.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.RangeLoadOptions.$all
-      - word.Word.Interfaces.RangeLoadOptions.font
-      - word.Word.Interfaces.RangeLoadOptions.parentContentControl
-      - word.Word.Interfaces.RangeLoadOptions.style
-      - word.Word.Interfaces.RangeLoadOptions.text
-  - uid: word.Word.Interfaces.RangeLoadOptions.$all
+      - 'word!Word.Interfaces.RangeLoadOptions#$all:member'
+      - 'word!Word.Interfaces.RangeLoadOptions#font:member'
+      - 'word!Word.Interfaces.RangeLoadOptions#parentContentControl:member'
+      - 'word!Word.Interfaces.RangeLoadOptions#style:member'
+      - 'word!Word.Interfaces.RangeLoadOptions#text:member'
+  - uid: 'word!Word.Interfaces.RangeLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.RangeLoadOptions.font
+  - uid: 'word!Word.Interfaces.RangeLoadOptions#font:member'
     summary: |-
       Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
 
@@ -42,8 +42,8 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.FontLoadOptions
-  - uid: word.Word.Interfaces.RangeLoadOptions.parentContentControl
+          - 'word!Word.Interfaces.FontLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeLoadOptions#parentContentControl:member'
     summary: |-
       Gets the content control that contains the range. Throws if there isn't a parent content control.
 
@@ -57,8 +57,8 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
-  - uid: word.Word.Interfaces.RangeLoadOptions.style
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeLoadOptions#style:member'
     summary: >-
       Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -75,7 +75,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.RangeLoadOptions.text
+  - uid: 'word!Word.Interfaces.RangeLoadOptions#text:member'
     summary: |-
       Gets the text of the range. Read-only.
 
@@ -90,3 +90,8 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
+    name: Word.Interfaces.FontLoadOptions
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+    name: Word.Interfaces.ContentControlLoadOptions

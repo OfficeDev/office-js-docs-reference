@@ -1,20 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.DocumentSelectionChangedEventArgs
+  - uid: 'office!Office.DocumentSelectionChangedEventArgs:interface'
     summary: Provides information about the document that raised the SelectionChanged event.
     name: Office.DocumentSelectionChangedEventArgs
     fullName: Office.DocumentSelectionChangedEventArgs
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.DocumentSelectionChangedEventArgs.document
-      - office.Office.DocumentSelectionChangedEventArgs.type
-  - uid: office.Office.DocumentSelectionChangedEventArgs.document
+      - 'office!Office.DocumentSelectionChangedEventArgs#document:member'
+      - 'office!Office.DocumentSelectionChangedEventArgs#type:member'
+  - uid: 'office!Office.DocumentSelectionChangedEventArgs#document:member'
     summary: >-
-      Gets an [Office.Document](xref:office.Office.Document) object that represents the document that raised the
-      SelectionChanged event.
+      Gets an [Office.Document](xref:office!Office.Document:interface) object that represents the document that raised
+      the SelectionChanged event.
     name: document
     fullName: document
     langs:
@@ -24,11 +24,11 @@ items:
       content: 'document: Document;'
       return:
         type:
-          - office.Office.Document
-  - uid: office.Office.DocumentSelectionChangedEventArgs.type
+          - 'office!Office.Document:interface'
+  - uid: 'office!Office.DocumentSelectionChangedEventArgs#type:member'
     summary: >-
-      Get an [Office.EventType](xref:office.Office.EventType) enumeration value that identifies the kind of event that
-      was raised.
+      Get an [Office.EventType](xref:office!Office.EventType:enum) enumeration value that identifies the kind of event
+      that was raised.
     name: type
     fullName: type
     langs:
@@ -38,4 +38,9 @@ items:
       content: 'type: EventType;'
       return:
         type:
-          - office.Office.EventType
+          - 'office!Office.EventType:enum'
+references:
+  - uid: 'office!Office.Document:interface'
+    name: Document
+  - uid: 'office!Office.EventType:enum'
+    name: EventType

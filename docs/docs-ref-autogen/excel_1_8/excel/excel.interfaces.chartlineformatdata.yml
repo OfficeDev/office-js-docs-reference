@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartLineFormatData
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatData:interface'
     summary: An interface describing the data returned by calling "chartLineFormat.toJSON()".
     name: Excel.Interfaces.ChartLineFormatData
     fullName: Excel.Interfaces.ChartLineFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartLineFormatData.color
-      - excel.Excel.Interfaces.ChartLineFormatData.lineStyle
-      - excel.Excel.Interfaces.ChartLineFormatData.weight
-  - uid: excel.Excel.Interfaces.ChartLineFormatData.color
+      - 'excel!Excel.Interfaces.ChartLineFormatData#color:member'
+      - 'excel!Excel.Interfaces.ChartLineFormatData#lineStyle:member'
+      - 'excel!Excel.Interfaces.ChartLineFormatData#weight:member'
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatData#color:member'
     summary: |-
       HTML color code representing the color of lines in the chart.
 
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartLineFormatData.lineStyle
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatData#lineStyle:member'
     summary: |-
       Represents the line style. See Excel.ChartLineStyle for details.
 
@@ -43,10 +43,8 @@ items:
         | "Grey50" | "Grey75" | "Automatic" | "RoundDot";
       return:
         type:
-          - >-
-            Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" |
-            "Grey50" | "Grey75" | "Automatic" | "RoundDot"
-  - uid: excel.Excel.Interfaces.ChartLineFormatData.weight
+          - 'excel!Excel.Interfaces.ChartLineFormatData#lineStyle~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatData#weight:member'
     summary: |-
       Represents weight of the line, in points.
 
@@ -61,3 +59,17 @@ items:
       return:
         type:
           - number
+references:
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatData#lineStyle~0:complex'
+    name: >-
+      Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" |
+      "Grey75" | "Automatic" | "RoundDot"
+    fullName: >-
+      Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" |
+      "Grey75" | "Automatic" | "RoundDot"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartLineStyle:enum'
+        name: Excel.ChartLineStyle
+        fullName: Excel.ChartLineStyle
+      - name: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"'
+        fullName: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"'

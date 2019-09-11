@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TableStyleLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableStyleLoadOptions:interface'
     summary: >-
       Represents a TableStyle, which defines the style elements by region of the Table.
 
@@ -13,12 +13,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TableStyleLoadOptions.$all
-      - excel.Excel.Interfaces.TableStyleLoadOptions.name
-      - excel.Excel.Interfaces.TableStyleLoadOptions.readOnly
-  - uid: excel.Excel.Interfaces.TableStyleLoadOptions.$all
+      - 'excel!Excel.Interfaces.TableStyleLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.TableStyleLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.TableStyleLoadOptions#readOnly:member'
+  - uid: 'excel!Excel.Interfaces.TableStyleLoadOptions#$all:member'
     isPreview: true
     name: $all
     fullName: $all
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableStyleLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.TableStyleLoadOptions#name:member'
     summary: >-
       Gets the name of the TableStyle.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableStyleLoadOptions.readOnly
+  - uid: 'excel!Excel.Interfaces.TableStyleLoadOptions#readOnly:member'
     summary: >-
       Specifies whether this TableStyle object is read-only. Read-only.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeLoadOptions
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions:interface'
     summary: |-
       Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
 
@@ -10,35 +10,35 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RangeLoadOptions.$all
-      - excel.Excel.Interfaces.RangeLoadOptions.address
-      - excel.Excel.Interfaces.RangeLoadOptions.addressLocal
-      - excel.Excel.Interfaces.RangeLoadOptions.cellCount
-      - excel.Excel.Interfaces.RangeLoadOptions.columnCount
-      - excel.Excel.Interfaces.RangeLoadOptions.columnHidden
-      - excel.Excel.Interfaces.RangeLoadOptions.columnIndex
-      - excel.Excel.Interfaces.RangeLoadOptions.dataValidation
-      - excel.Excel.Interfaces.RangeLoadOptions.format
-      - excel.Excel.Interfaces.RangeLoadOptions.formulas
-      - excel.Excel.Interfaces.RangeLoadOptions.formulasLocal
-      - excel.Excel.Interfaces.RangeLoadOptions.formulasR1C1
-      - excel.Excel.Interfaces.RangeLoadOptions.hidden
-      - excel.Excel.Interfaces.RangeLoadOptions.hyperlink
-      - excel.Excel.Interfaces.RangeLoadOptions.isEntireColumn
-      - excel.Excel.Interfaces.RangeLoadOptions.isEntireRow
-      - excel.Excel.Interfaces.RangeLoadOptions.numberFormat
-      - excel.Excel.Interfaces.RangeLoadOptions.numberFormatLocal
-      - excel.Excel.Interfaces.RangeLoadOptions.rowCount
-      - excel.Excel.Interfaces.RangeLoadOptions.rowHidden
-      - excel.Excel.Interfaces.RangeLoadOptions.rowIndex
-      - excel.Excel.Interfaces.RangeLoadOptions.style
-      - excel.Excel.Interfaces.RangeLoadOptions.text
-      - excel.Excel.Interfaces.RangeLoadOptions.values
-      - excel.Excel.Interfaces.RangeLoadOptions.valueTypes
-      - excel.Excel.Interfaces.RangeLoadOptions.worksheet
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.$all
+      - 'excel!Excel.Interfaces.RangeLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#address:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#addressLocal:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#cellCount:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#columnCount:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#columnHidden:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#columnIndex:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#dataValidation:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#formulas:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#formulasLocal:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#formulasR1C1:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#hidden:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#hyperlink:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#isEntireColumn:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#isEntireRow:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#numberFormat:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#numberFormatLocal:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#rowCount:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#rowHidden:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#rowIndex:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#style:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#text:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#values:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#valueTypes:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#worksheet:member'
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -49,7 +49,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.address
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#address:member'
     summary: >-
       Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4").
       Read-only.
@@ -66,7 +66,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.addressLocal
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#addressLocal:member'
     summary: |-
       Represents range reference for the specified range in the language of the user. Read-only.
 
@@ -81,7 +81,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.cellCount
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#cellCount:member'
     summary: |-
       Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
 
@@ -96,7 +96,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.columnCount
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#columnCount:member'
     summary: |-
       Represents the total number of columns in the range. Read-only.
 
@@ -111,7 +111,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.columnHidden
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#columnHidden:member'
     summary: |-
       Represents if all columns of the current range are hidden.
 
@@ -126,7 +126,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.columnIndex
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#columnIndex:member'
     summary: |-
       Represents the column number of the first cell in the range. Zero-indexed. Read-only.
 
@@ -141,7 +141,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.dataValidation
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#dataValidation:member'
     summary: |-
       Returns a data validation object.
 
@@ -155,8 +155,8 @@ items:
       content: 'dataValidation?: Excel.Interfaces.DataValidationLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.DataValidationLoadOptions
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.format
+          - 'excel!Excel.Interfaces.DataValidationLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#format:member'
     summary: |-
       Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
 
@@ -170,8 +170,8 @@ items:
       content: 'format?: Excel.Interfaces.RangeFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFormatLoadOptions
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.formulas
+          - 'excel!Excel.Interfaces.RangeFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#formulas:member'
     summary: >-
       Represents the formula in A1-style notation. When setting formulas to a range, the value argument can be either a
       single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all
@@ -189,7 +189,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.formulasLocal
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#formulasLocal:member'
     summary: >-
       Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
       English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. When setting formulas to a range, the
@@ -208,7 +208,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.formulasR1C1
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#formulasR1C1:member'
     summary: >-
       Represents the formula in R1C1-style notation. When setting formulas to a range, the value argument can be either
       a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all
@@ -226,7 +226,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.hidden
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#hidden:member'
     summary: |-
       Represents if all cells of the current range are hidden. Read-only.
 
@@ -241,7 +241,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.hyperlink
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#hyperlink:member'
     summary: |-
       Represents the hyperlink for the current range.
 
@@ -256,7 +256,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.isEntireColumn
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#isEntireColumn:member'
     summary: |-
       Represents if the current range is an entire column. Read-only.
 
@@ -271,7 +271,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.isEntireRow
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#isEntireRow:member'
     summary: |-
       Represents if the current range is an entire row. Read-only.
 
@@ -286,7 +286,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.numberFormat
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#numberFormat:member'
     summary: >-
       Represents Excel's number format code for the given range. When setting number format to a range, the value
       argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it
@@ -304,7 +304,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.numberFormatLocal
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#numberFormatLocal:member'
     summary: >-
       Represents Excel's number format code for the given range, based on the language settings of the user. When
       setting number format local to a range, the value argument can be either a single value (string) or a
@@ -324,7 +324,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.rowCount
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#rowCount:member'
     summary: |-
       Returns the total number of rows in the range. Read-only.
 
@@ -339,7 +339,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.rowHidden
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#rowHidden:member'
     summary: |-
       Represents if all rows of the current range are hidden.
 
@@ -354,7 +354,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.rowIndex
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#rowIndex:member'
     summary: |-
       Returns the row number of the first cell in the range. Zero-indexed. Read-only.
 
@@ -369,7 +369,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.style
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#style:member'
     summary: >-
       Represents the style of the current range. If the styles of the cells are inconsistent, null will be returned. For
       custom styles, the style name will be returned. For built-in styles, a string representing a value in the
@@ -387,7 +387,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.text
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#text:member'
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
       that happens in Excel UI will not affect the text value returned by the API. Read-only.
@@ -404,7 +404,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.values
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#values:member'
     summary: >-
       Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
       Cells that contain an error will return the error string. When setting values to a range, the value argument can
@@ -423,7 +423,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.valueTypes
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#valueTypes:member'
     summary: |-
       Represents the type of data of each cell. Read-only.
 
@@ -438,7 +438,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.worksheet
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#worksheet:member'
     summary: |-
       The worksheet containing the current range.
 
@@ -452,4 +452,11 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetLoadOptions
+          - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions:interface'
+    name: Excel.Interfaces.DataValidationLoadOptions
+  - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions:interface'
+    name: Excel.Interfaces.RangeFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+    name: Excel.Interfaces.WorksheetLoadOptions

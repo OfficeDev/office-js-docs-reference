@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.ContentControlLoadOptions
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
     summary: >-
       Represents a content control. Content controls are bounded and potentially labeled regions in a document that
       serve as containers for specific types of content. Individual content controls may contain contents such as
@@ -13,32 +13,32 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.ContentControlLoadOptions.$all
-      - word.Word.Interfaces.ContentControlLoadOptions.appearance
-      - word.Word.Interfaces.ContentControlLoadOptions.cannotDelete
-      - word.Word.Interfaces.ContentControlLoadOptions.cannotEdit
-      - word.Word.Interfaces.ContentControlLoadOptions.color
-      - word.Word.Interfaces.ContentControlLoadOptions.font
-      - word.Word.Interfaces.ContentControlLoadOptions.id
-      - word.Word.Interfaces.ContentControlLoadOptions.parentBody
-      - word.Word.Interfaces.ContentControlLoadOptions.parentContentControl
-      - word.Word.Interfaces.ContentControlLoadOptions.parentContentControlOrNullObject
-      - word.Word.Interfaces.ContentControlLoadOptions.parentTable
-      - word.Word.Interfaces.ContentControlLoadOptions.parentTableCell
-      - word.Word.Interfaces.ContentControlLoadOptions.parentTableCellOrNullObject
-      - word.Word.Interfaces.ContentControlLoadOptions.parentTableOrNullObject
-      - word.Word.Interfaces.ContentControlLoadOptions.placeholderText
-      - word.Word.Interfaces.ContentControlLoadOptions.removeWhenEdited
-      - word.Word.Interfaces.ContentControlLoadOptions.style
-      - word.Word.Interfaces.ContentControlLoadOptions.styleBuiltIn
-      - word.Word.Interfaces.ContentControlLoadOptions.subtype
-      - word.Word.Interfaces.ContentControlLoadOptions.tag
-      - word.Word.Interfaces.ContentControlLoadOptions.text
-      - word.Word.Interfaces.ContentControlLoadOptions.title
-      - word.Word.Interfaces.ContentControlLoadOptions.type
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.$all
+      - 'word!Word.Interfaces.ContentControlLoadOptions#$all:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#appearance:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#cannotDelete:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#cannotEdit:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#color:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#font:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#id:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#parentBody:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#parentContentControl:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#parentContentControlOrNullObject:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#parentTable:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#parentTableCell:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#parentTableCellOrNullObject:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#parentTableOrNullObject:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#placeholderText:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#removeWhenEdited:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#style:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#styleBuiltIn:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#subtype:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#tag:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#text:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#title:member'
+      - 'word!Word.Interfaces.ContentControlLoadOptions#type:member'
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -49,7 +49,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.appearance
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#appearance:member'
     summary: |-
       Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
 
@@ -64,7 +64,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.cannotDelete
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#cannotDelete:member'
     summary: >-
       Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with
       removeWhenEdited.
@@ -81,7 +81,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.cannotEdit
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#cannotEdit:member'
     summary: |-
       Gets or sets a value that indicates whether the user can edit the contents of the content control.
 
@@ -96,7 +96,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.color
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#color:member'
     summary: |-
       Gets or sets the color of the content control. Color is specified in '\#RRGGBB' format or by using the color name.
 
@@ -111,7 +111,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.font
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#font:member'
     summary: |-
       Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
 
@@ -125,8 +125,8 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.FontLoadOptions
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.id
+          - 'word!Word.Interfaces.FontLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#id:member'
     summary: |-
       Gets an integer that represents the content control identifier. Read-only.
 
@@ -141,7 +141,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.parentBody
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#parentBody:member'
     summary: |-
       Gets the parent body of the content control.
 
@@ -155,8 +155,8 @@ items:
       content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.BodyLoadOptions
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.parentContentControl
+          - 'word!Word.Interfaces.BodyLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#parentContentControl:member'
     summary: |-
       Gets the content control that contains the content control. Throws if there isn't a parent content control.
 
@@ -170,8 +170,8 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.parentContentControlOrNullObject
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#parentContentControlOrNullObject:member'
     summary: >-
       Gets the content control that contains the content control. Returns a null object if there isn't a parent content
       control.
@@ -187,8 +187,8 @@ items:
       content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.parentTable
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#parentTable:member'
     summary: |-
       Gets the table that contains the content control. Throws if it is not contained in a table.
 
@@ -202,8 +202,8 @@ items:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableLoadOptions
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.parentTableCell
+          - 'word!Word.Interfaces.TableLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#parentTableCell:member'
     summary: |-
       Gets the table cell that contains the content control. Throws if it is not contained in a table cell.
 
@@ -217,8 +217,8 @@ items:
       content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableCellLoadOptions
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.parentTableCellOrNullObject
+          - 'word!Word.Interfaces.TableCellLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#parentTableCellOrNullObject:member'
     summary: >-
       Gets the table cell that contains the content control. Returns a null object if it is not contained in a table
       cell.
@@ -234,8 +234,8 @@ items:
       content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableCellLoadOptions
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.parentTableOrNullObject
+          - 'word!Word.Interfaces.TableCellLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#parentTableOrNullObject:member'
     summary: |-
       Gets the table that contains the content control. Returns a null object if it is not contained in a table.
 
@@ -249,8 +249,8 @@ items:
       content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableLoadOptions
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.placeholderText
+          - 'word!Word.Interfaces.TableLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#placeholderText:member'
     summary: >-
       Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control
       is empty.
@@ -267,7 +267,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.removeWhenEdited
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#removeWhenEdited:member'
     summary: >-
       Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive
       with cannotDelete.
@@ -284,7 +284,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.style
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#style:member'
     summary: >-
       Gets or sets the style name for the content control. Use this property for custom styles and localized style
       names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -301,7 +301,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.styleBuiltIn
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#styleBuiltIn:member'
     summary: >-
       Gets or sets the built-in style name for the content control. Use this property for built-in styles that are
       portable between locales. To use custom styles or localized style names, see the "style" property.
@@ -318,7 +318,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.subtype
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#subtype:member'
     summary: >-
       Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell',
       'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
@@ -335,7 +335,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.tag
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#tag:member'
     summary: |-
       Gets or sets a tag to identify a content control.
 
@@ -350,7 +350,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.text
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#text:member'
     summary: |-
       Gets the text of the content control. Read-only.
 
@@ -365,7 +365,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.title
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#title:member'
     summary: |-
       Gets or sets the title for a content control.
 
@@ -380,7 +380,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlLoadOptions.type
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions#type:member'
     summary: |-
       Gets the content control type. Only rich text content controls are supported currently. Read-only.
 
@@ -395,3 +395,14 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
+    name: Word.Interfaces.FontLoadOptions
+  - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
+    name: Word.Interfaces.BodyLoadOptions
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+    name: Word.Interfaces.ContentControlLoadOptions
+  - uid: 'word!Word.Interfaces.TableLoadOptions:interface'
+    name: Word.Interfaces.TableLoadOptions
+  - uid: 'word!Word.Interfaces.TableCellLoadOptions:interface'
+    name: Word.Interfaces.TableCellLoadOptions

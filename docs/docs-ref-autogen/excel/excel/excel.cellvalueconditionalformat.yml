@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CellValueConditionalFormat
+  - uid: 'excel!Excel.CellValueConditionalFormat:class'
     summary: |-
       Represents a cell value conditional format.
 
@@ -11,19 +11,19 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.CellValueConditionalFormat.context
-      - excel.Excel.CellValueConditionalFormat.format
-      - excel.Excel.CellValueConditionalFormat.load
-      - excel.Excel.CellValueConditionalFormat.load_1
-      - excel.Excel.CellValueConditionalFormat.load_2
-      - excel.Excel.CellValueConditionalFormat.rule
-      - excel.Excel.CellValueConditionalFormat.set
-      - excel.Excel.CellValueConditionalFormat.set_1
-      - excel.Excel.CellValueConditionalFormat.toJSON
-  - uid: excel.Excel.CellValueConditionalFormat.context
+      - 'excel!Excel.CellValueConditionalFormat#context:member'
+      - 'excel!Excel.CellValueConditionalFormat#format:member'
+      - 'excel!Excel.CellValueConditionalFormat#load:member(1)'
+      - 'excel!Excel.CellValueConditionalFormat#load:member(2)'
+      - 'excel!Excel.CellValueConditionalFormat#load:member(3)'
+      - 'excel!Excel.CellValueConditionalFormat#rule:member'
+      - 'excel!Excel.CellValueConditionalFormat#set:member(1)'
+      - 'excel!Excel.CellValueConditionalFormat#set:member(2)'
+      - 'excel!Excel.CellValueConditionalFormat#toJSON:member(1)'
+  - uid: 'excel!Excel.CellValueConditionalFormat#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -36,8 +36,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.CellValueConditionalFormat.format
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.CellValueConditionalFormat#format:member'
     summary: |-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
 
@@ -51,7 +51,7 @@ items:
       content: 'readonly format: Excel.ConditionalRangeFormat;'
       return:
         type:
-          - excel.Excel.ConditionalRangeFormat
+          - 'excel!Excel.ConditionalRangeFormat:class'
         description: |-
 
 
@@ -69,7 +69,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.CellValueConditionalFormat.load
+  - uid: 'excel!Excel.CellValueConditionalFormat#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -100,14 +100,14 @@ items:
       content: 'load(option?: Excel.Interfaces.CellValueConditionalFormatLoadOptions): Excel.CellValueConditionalFormat;'
       return:
         type:
-          - excel.Excel.CellValueConditionalFormat
+          - 'excel!Excel.CellValueConditionalFormat:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions
-  - uid: excel.Excel.CellValueConditionalFormat.load_1
+            - 'excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions:interface'
+  - uid: 'excel!Excel.CellValueConditionalFormat#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -120,14 +120,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.CellValueConditionalFormat;'
       return:
         type:
-          - excel.Excel.CellValueConditionalFormat
+          - 'excel!Excel.CellValueConditionalFormat:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.CellValueConditionalFormat.load_2
+  - uid: 'excel!Excel.CellValueConditionalFormat#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -140,7 +140,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.CellValueConditionalFormat;'
       return:
         type:
-          - excel.Excel.CellValueConditionalFormat
+          - 'excel!Excel.CellValueConditionalFormat:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -149,7 +149,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.CellValueConditionalFormat.rule
+  - uid: 'excel!Excel.CellValueConditionalFormat#rule:member'
     summary: |-
       Represents the Rule object on this conditional format.
 
@@ -163,7 +163,7 @@ items:
       content: 'rule: Excel.ConditionalCellValueRule;'
       return:
         type:
-          - excel.Excel.ConditionalCellValueRule
+          - 'excel!Excel.ConditionalCellValueRule:interface'
         description: |-
 
 
@@ -181,7 +181,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.CellValueConditionalFormat.set
+  - uid: 'excel!Excel.CellValueConditionalFormat#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -206,12 +206,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.CellValueConditionalFormatUpdateData
+            - 'excel!Excel.Interfaces.CellValueConditionalFormatUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.CellValueConditionalFormat.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.CellValueConditionalFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -228,8 +228,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.CellValueConditionalFormat
-  - uid: excel.Excel.CellValueConditionalFormat.toJSON
+            - 'excel!Excel.CellValueConditionalFormat:class'
+  - uid: 'excel!Excel.CellValueConditionalFormat#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -245,5 +245,24 @@ items:
       content: 'toJSON(): Excel.Interfaces.CellValueConditionalFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.CellValueConditionalFormatData
+          - 'excel!Excel.Interfaces.CellValueConditionalFormatData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ConditionalRangeFormat:class'
+    name: Excel.ConditionalRangeFormat
+  - uid: 'excel!Excel.CellValueConditionalFormat:class'
+    name: Excel.CellValueConditionalFormat
+  - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions:interface'
+    name: Excel.Interfaces.CellValueConditionalFormatLoadOptions
+  - uid: 'excel!Excel.ConditionalCellValueRule:interface'
+    name: Excel.ConditionalCellValueRule
+  - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatUpdateData:interface'
+    name: Interfaces.CellValueConditionalFormatUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatData:interface'
+    name: Excel.Interfaces.CellValueConditionalFormatData

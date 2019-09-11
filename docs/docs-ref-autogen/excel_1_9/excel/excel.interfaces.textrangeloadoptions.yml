@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TextRangeLoadOptions
+  - uid: 'excel!Excel.Interfaces.TextRangeLoadOptions:interface'
     summary: |-
       Contains the text that is attached to a shape, in addition to properties and methods for manipulating the text.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TextRangeLoadOptions.$all
-      - excel.Excel.Interfaces.TextRangeLoadOptions.font
-      - excel.Excel.Interfaces.TextRangeLoadOptions.text
-  - uid: excel.Excel.Interfaces.TextRangeLoadOptions.$all
+      - 'excel!Excel.Interfaces.TextRangeLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.TextRangeLoadOptions#font:member'
+      - 'excel!Excel.Interfaces.TextRangeLoadOptions#text:member'
+  - uid: 'excel!Excel.Interfaces.TextRangeLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TextRangeLoadOptions.font
+  - uid: 'excel!Excel.Interfaces.TextRangeLoadOptions#font:member'
     summary: |-
       Returns a ShapeFont object that represents the font attributes for the text range.
 
@@ -40,8 +40,8 @@ items:
       content: 'font?: Excel.Interfaces.ShapeFontLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ShapeFontLoadOptions
-  - uid: excel.Excel.Interfaces.TextRangeLoadOptions.text
+          - 'excel!Excel.Interfaces.ShapeFontLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.TextRangeLoadOptions#text:member'
     summary: |-
       Represents the plain text content of the text range.
 
@@ -56,3 +56,6 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions:interface'
+    name: Excel.Interfaces.ShapeFontLoadOptions

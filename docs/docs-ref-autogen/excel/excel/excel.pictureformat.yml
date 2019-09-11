@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.PictureFormat
+  - uid: 'excel!Excel.PictureFormat:enum'
     summary: |-
       The format of the image.
 
@@ -10,15 +10,15 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.PictureFormat.bmp
-      - excel.Excel.PictureFormat.gif
-      - excel.Excel.PictureFormat.jpeg
-      - excel.Excel.PictureFormat.png
-      - excel.Excel.PictureFormat.svg
-      - excel.Excel.PictureFormat.unknown
-  - uid: excel.Excel.PictureFormat.bmp
+      - 'excel!Excel.PictureFormat.bmp:member'
+      - 'excel!Excel.PictureFormat.gif:member'
+      - 'excel!Excel.PictureFormat.jpeg:member'
+      - 'excel!Excel.PictureFormat.png:member'
+      - 'excel!Excel.PictureFormat.svg:member'
+      - 'excel!Excel.PictureFormat.unknown:member'
+  - uid: 'excel!Excel.PictureFormat.bmp:member'
     summary: Bitmap image.
     name: bmp
     fullName: bmp
@@ -26,7 +26,7 @@ items:
       - typeScript
     type: field
     numericValue: '"BMP"'
-  - uid: excel.Excel.PictureFormat.gif
+  - uid: 'excel!Excel.PictureFormat.gif:member'
     summary: Graphics Interchange Format.
     name: gif
     fullName: gif
@@ -34,7 +34,7 @@ items:
       - typeScript
     type: field
     numericValue: '"GIF"'
-  - uid: excel.Excel.PictureFormat.jpeg
+  - uid: 'excel!Excel.PictureFormat.jpeg:member'
     summary: Joint Photographic Experts Group.
     name: jpeg
     fullName: jpeg
@@ -42,7 +42,7 @@ items:
       - typeScript
     type: field
     numericValue: '"JPEG"'
-  - uid: excel.Excel.PictureFormat.png
+  - uid: 'excel!Excel.PictureFormat.png:member'
     summary: Portable Network Graphics.
     name: png
     fullName: png
@@ -50,7 +50,7 @@ items:
       - typeScript
     type: field
     numericValue: '"PNG"'
-  - uid: excel.Excel.PictureFormat.svg
+  - uid: 'excel!Excel.PictureFormat.svg:member'
     summary: Scalable Vector Graphic.
     name: svg
     fullName: svg
@@ -58,7 +58,7 @@ items:
       - typeScript
     type: field
     numericValue: '"SVG"'
-  - uid: excel.Excel.PictureFormat.unknown
+  - uid: 'excel!Excel.PictureFormat.unknown:member'
     name: unknown
     fullName: unknown
     langs:

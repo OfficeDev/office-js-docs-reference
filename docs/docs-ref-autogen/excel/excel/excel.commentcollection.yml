@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CommentCollection
+  - uid: 'excel!Excel.CommentCollection:class'
     summary: >-
       Represents a collection of comment objects that are part of the workbook.
 
@@ -14,23 +14,23 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.CommentCollection.add
-      - excel.Excel.CommentCollection.add_1
-      - excel.Excel.CommentCollection.context
-      - excel.Excel.CommentCollection.getCount
-      - excel.Excel.CommentCollection.getItem
-      - excel.Excel.CommentCollection.getItemAt
-      - excel.Excel.CommentCollection.getItemByCell
-      - excel.Excel.CommentCollection.getItemByReplyId
-      - excel.Excel.CommentCollection.items
-      - excel.Excel.CommentCollection.load
-      - excel.Excel.CommentCollection.load_1
-      - excel.Excel.CommentCollection.load_2
-      - excel.Excel.CommentCollection.toJSON
-  - uid: excel.Excel.CommentCollection.add
+      - 'excel!Excel.CommentCollection#add:member(1)'
+      - 'excel!Excel.CommentCollection#add:member(2)'
+      - 'excel!Excel.CommentCollection#context:member'
+      - 'excel!Excel.CommentCollection#getCount:member(1)'
+      - 'excel!Excel.CommentCollection#getItem:member(1)'
+      - 'excel!Excel.CommentCollection#getItemAt:member(1)'
+      - 'excel!Excel.CommentCollection#getItemByCell:member(1)'
+      - 'excel!Excel.CommentCollection#getItemByReplyId:member(1)'
+      - 'excel!Excel.CommentCollection#items:member'
+      - 'excel!Excel.CommentCollection#load:member(1)'
+      - 'excel!Excel.CommentCollection#load:member(2)'
+      - 'excel!Excel.CommentCollection#load:member(3)'
+      - 'excel!Excel.CommentCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.CommentCollection#add:member(1)'
     summary: >-
       Creates a new comment (comment thread) with the given content on the given cell. An `InvalidArgument` error is
       thrown if the provided range is larger than one cell.
@@ -48,7 +48,7 @@ items:
       content: 'add(content: string, cellAddress: Range | string, contentType?: Excel.ContentType): Excel.Comment;'
       return:
         type:
-          - excel.Excel.Comment
+          - 'excel!Excel.Comment:class'
         description: |-
 
 
@@ -74,12 +74,12 @@ items:
             contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided
             range is larger than one cell.
           type:
-            - Range | string
+            - 'excel!Excel.CommentCollection#add~0:complex'
         - id: contentType
           description: Optional. The type of the comment content
           type:
-            - excel.Excel.ContentType
-  - uid: excel.Excel.CommentCollection.add_1
+            - 'excel!Excel.ContentType:enum'
+  - uid: 'excel!Excel.CommentCollection#add:member(2)'
     summary: >-
       Creates a new comment (comment thread) with the given content on the given cell. An `InvalidArgument` error is
       thrown if the provided range is larger than one cell.
@@ -97,7 +97,7 @@ items:
       content: 'add(content: string, cellAddress: Range | string, contentTypeString?: "Plain"): Excel.Comment;'
       return:
         type:
-          - excel.Excel.Comment
+          - 'excel!Excel.Comment:class'
         description: ''
       parameters:
         - id: content
@@ -110,12 +110,12 @@ items:
             contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided
             range is larger than one cell.
           type:
-            - Range | string
+            - 'excel!Excel.CommentCollection#add~1:complex'
         - id: contentTypeString
           description: Optional. The type of the comment content
           type:
             - '"Plain"'
-  - uid: excel.Excel.CommentCollection.context
+  - uid: 'excel!Excel.CommentCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -129,8 +129,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.CommentCollection.getCount
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.CommentCollection#getCount:member(1)'
     summary: >-
       Gets the number of comments in the collection.
 
@@ -147,9 +147,9 @@ items:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
         type:
-          - OfficeExtension.ClientResult<number>
+          - 'excel!Excel.CommentCollection#getCount~0:complex'
         description: ''
-  - uid: excel.Excel.CommentCollection.getItem
+  - uid: 'excel!Excel.CommentCollection#getItem:member(1)'
     summary: >-
       Gets a comment from the collection based on its ID. Read-only.
 
@@ -166,14 +166,14 @@ items:
       content: 'getItem(commentId: string): Excel.Comment;'
       return:
         type:
-          - excel.Excel.Comment
+          - 'excel!Excel.Comment:class'
         description: ''
       parameters:
         - id: commentId
           description: The identifier for the comment.
           type:
             - string
-  - uid: excel.Excel.CommentCollection.getItemAt
+  - uid: 'excel!Excel.CommentCollection#getItemAt:member(1)'
     summary: >-
       Gets a comment from the collection based on its position.
 
@@ -190,14 +190,14 @@ items:
       content: 'getItemAt(index: number): Excel.Comment;'
       return:
         type:
-          - excel.Excel.Comment
+          - 'excel!Excel.Comment:class'
         description: ''
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.CommentCollection.getItemByCell
+  - uid: 'excel!Excel.CommentCollection#getItemByCell:member(1)'
     summary: >-
       Gets the comment from the specifed cell.
 
@@ -214,7 +214,7 @@ items:
       content: 'getItemByCell(cellAddress: Range | string): Excel.Comment;'
       return:
         type:
-          - excel.Excel.Comment
+          - 'excel!Excel.Comment:class'
         description: ''
       parameters:
         - id: cellAddress
@@ -223,8 +223,8 @@ items:
             the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided range is
             larger than one cell.
           type:
-            - Range | string
-  - uid: excel.Excel.CommentCollection.getItemByReplyId
+            - 'excel!Excel.CommentCollection#getItemByCell~0:complex'
+  - uid: 'excel!Excel.CommentCollection#getItemByReplyId:member(1)'
     summary: >-
       Gets a comment related to its reply ID in the collection.
 
@@ -241,14 +241,14 @@ items:
       content: 'getItemByReplyId(replyId: string): Excel.Comment;'
       return:
         type:
-          - excel.Excel.Comment
+          - 'excel!Excel.Comment:class'
         description: ''
       parameters:
         - id: replyId
           description: The identifier of comment reply.
           type:
             - string
-  - uid: excel.Excel.CommentCollection.items
+  - uid: 'excel!Excel.CommentCollection#items:member'
     summary: Gets the loaded child items in this collection.
     isPreview: true
     name: items
@@ -260,8 +260,8 @@ items:
       content: 'readonly items: Excel.Comment[];'
       return:
         type:
-          - 'Excel.Comment[]'
-  - uid: excel.Excel.CommentCollection.load
+          - 'excel!Excel.CommentCollection#items~0:complex'
+  - uid: 'excel!Excel.CommentCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -295,14 +295,14 @@ items:
         Excel.CommentCollection;
       return:
         type:
-          - excel.Excel.CommentCollection
+          - 'excel!Excel.CommentCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.CommentCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.CommentCollection.load_1
+            - 'excel!Excel.CommentCollection#load~0:complex'
+  - uid: 'excel!Excel.CommentCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -316,14 +316,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.CommentCollection;'
       return:
         type:
-          - excel.Excel.CommentCollection
+          - 'excel!Excel.CommentCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.CommentCollection.load_2
+  - uid: 'excel!Excel.CommentCollection#load:member(3)'
     isPreview: true
     name: load(option)
     fullName: load(option)
@@ -334,14 +334,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.CommentCollection;'
       return:
         type:
-          - excel.Excel.CommentCollection
+          - 'excel!Excel.CommentCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
-  - uid: excel.Excel.CommentCollection.toJSON
+            - 'excel!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.CommentCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -358,5 +358,77 @@ items:
       content: 'toJSON(): Excel.Interfaces.CommentCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.CommentCollectionData
+          - 'excel!Excel.Interfaces.CommentCollectionData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.Comment:class'
+    name: Excel.Comment
+  - uid: 'excel!Excel.CommentCollection#add~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.ContentType:enum'
+    name: Excel.ContentType
+  - uid: 'excel!Excel.CommentCollection#add~1:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.CommentCollection#getCount~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.CommentCollection#getItemByCell~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.CommentCollection#items~0:complex'
+    name: 'Excel.Comment[]'
+    fullName: 'Excel.Comment[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Comment:class'
+        name: Excel.Comment
+        fullName: Excel.Comment
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.CommentCollection:class'
+    name: Excel.CommentCollection
+  - uid: 'excel!Excel.CommentCollection#load~0:complex'
+    name: Excel.Interfaces.CommentCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.CommentCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.CommentCollectionLoadOptions:interface'
+        name: Excel.Interfaces.CommentCollectionLoadOptions
+        fullName: Excel.Interfaces.CommentCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+        name: Excel.Interfaces.CollectionLoadOptions
+        fullName: Excel.Interfaces.CollectionLoadOptions
+  - uid: 'excel!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.Interfaces.CommentCollectionData:interface'
+    name: Excel.Interfaces.CommentCollectionData

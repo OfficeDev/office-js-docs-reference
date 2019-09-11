@@ -1,35 +1,35 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PageLayoutData
+  - uid: 'excel!Excel.Interfaces.PageLayoutData:interface'
     summary: An interface describing the data returned by calling "pageLayout.toJSON()".
     name: Excel.Interfaces.PageLayoutData
     fullName: Excel.Interfaces.PageLayoutData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PageLayoutData.blackAndWhite
-      - excel.Excel.Interfaces.PageLayoutData.bottomMargin
-      - excel.Excel.Interfaces.PageLayoutData.centerHorizontally
-      - excel.Excel.Interfaces.PageLayoutData.centerVertically
-      - excel.Excel.Interfaces.PageLayoutData.draftMode
-      - excel.Excel.Interfaces.PageLayoutData.firstPageNumber
-      - excel.Excel.Interfaces.PageLayoutData.footerMargin
-      - excel.Excel.Interfaces.PageLayoutData.headerMargin
-      - excel.Excel.Interfaces.PageLayoutData.headersFooters
-      - excel.Excel.Interfaces.PageLayoutData.leftMargin
-      - excel.Excel.Interfaces.PageLayoutData.orientation
-      - excel.Excel.Interfaces.PageLayoutData.paperSize
-      - excel.Excel.Interfaces.PageLayoutData.printComments
-      - excel.Excel.Interfaces.PageLayoutData.printErrors
-      - excel.Excel.Interfaces.PageLayoutData.printGridlines
-      - excel.Excel.Interfaces.PageLayoutData.printHeadings
-      - excel.Excel.Interfaces.PageLayoutData.printOrder
-      - excel.Excel.Interfaces.PageLayoutData.rightMargin
-      - excel.Excel.Interfaces.PageLayoutData.topMargin
-      - excel.Excel.Interfaces.PageLayoutData.zoom
-  - uid: excel.Excel.Interfaces.PageLayoutData.blackAndWhite
+      - 'excel!Excel.Interfaces.PageLayoutData#blackAndWhite:member'
+      - 'excel!Excel.Interfaces.PageLayoutData#bottomMargin:member'
+      - 'excel!Excel.Interfaces.PageLayoutData#centerHorizontally:member'
+      - 'excel!Excel.Interfaces.PageLayoutData#centerVertically:member'
+      - 'excel!Excel.Interfaces.PageLayoutData#draftMode:member'
+      - 'excel!Excel.Interfaces.PageLayoutData#firstPageNumber:member'
+      - 'excel!Excel.Interfaces.PageLayoutData#footerMargin:member'
+      - 'excel!Excel.Interfaces.PageLayoutData#headerMargin:member'
+      - 'excel!Excel.Interfaces.PageLayoutData#headersFooters:member'
+      - 'excel!Excel.Interfaces.PageLayoutData#leftMargin:member'
+      - 'excel!Excel.Interfaces.PageLayoutData#orientation:member'
+      - 'excel!Excel.Interfaces.PageLayoutData#paperSize:member'
+      - 'excel!Excel.Interfaces.PageLayoutData#printComments:member'
+      - 'excel!Excel.Interfaces.PageLayoutData#printErrors:member'
+      - 'excel!Excel.Interfaces.PageLayoutData#printGridlines:member'
+      - 'excel!Excel.Interfaces.PageLayoutData#printHeadings:member'
+      - 'excel!Excel.Interfaces.PageLayoutData#printOrder:member'
+      - 'excel!Excel.Interfaces.PageLayoutData#rightMargin:member'
+      - 'excel!Excel.Interfaces.PageLayoutData#topMargin:member'
+      - 'excel!Excel.Interfaces.PageLayoutData#zoom:member'
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#blackAndWhite:member'
     summary: |-
       Gets or sets the worksheet's black and white print option.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PageLayoutData.bottomMargin
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#bottomMargin:member'
     summary: |-
       Gets or sets the worksheet's bottom page margin to use for printing in points.
 
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.PageLayoutData.centerHorizontally
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#centerHorizontally:member'
     summary: >-
       Gets or sets the worksheet's center horizontally flag. This flag determines whether the worksheet will be centered
       horizontally when it's printed.
@@ -76,7 +76,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PageLayoutData.centerVertically
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#centerVertically:member'
     summary: >-
       Gets or sets the worksheet's center vertically flag. This flag determines whether the worksheet will be centered
       vertically when it's printed.
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PageLayoutData.draftMode
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#draftMode:member'
     summary: |-
       Gets or sets the worksheet's draft mode option. If true the sheet will be printed without graphics.
 
@@ -108,7 +108,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PageLayoutData.firstPageNumber
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#firstPageNumber:member'
     summary: |-
       Gets or sets the worksheet's first page number to print. Null value represents "auto" page numbering.
 
@@ -123,7 +123,7 @@ items:
       return:
         type:
           - number | ""
-  - uid: excel.Excel.Interfaces.PageLayoutData.footerMargin
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#footerMargin:member'
     summary: |-
       Gets or sets the worksheet's footer margin, in points, for use when printing.
 
@@ -138,7 +138,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.PageLayoutData.headerMargin
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#headerMargin:member'
     summary: |-
       Gets or sets the worksheet's header margin, in points, for use when printing.
 
@@ -153,7 +153,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.PageLayoutData.headersFooters
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#headersFooters:member'
     summary: |-
       Header and footer configuration for the worksheet.
 
@@ -167,8 +167,8 @@ items:
       content: 'headersFooters?: Excel.Interfaces.HeaderFooterGroupData;'
       return:
         type:
-          - excel.Excel.Interfaces.HeaderFooterGroupData
-  - uid: excel.Excel.Interfaces.PageLayoutData.leftMargin
+          - 'excel!Excel.Interfaces.HeaderFooterGroupData:interface'
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#leftMargin:member'
     summary: |-
       Gets or sets the worksheet's left margin, in points, for use when printing.
 
@@ -183,7 +183,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.PageLayoutData.orientation
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#orientation:member'
     summary: |-
       Gets or sets the worksheet's orientation of the page.
 
@@ -197,8 +197,8 @@ items:
       content: 'orientation?: Excel.PageOrientation | "Portrait" | "Landscape";'
       return:
         type:
-          - Excel.PageOrientation | "Portrait" | "Landscape"
-  - uid: excel.Excel.Interfaces.PageLayoutData.paperSize
+          - 'excel!Excel.Interfaces.PageLayoutData#orientation~0:complex'
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#paperSize:member'
     summary: |-
       Gets or sets the worksheet's paper size of the page.
 
@@ -218,14 +218,8 @@ items:
         "FanfoldUS" | "FanfoldStdGerman" | "FanfoldLegalGerman";
       return:
         type:
-          - >-
-            Excel.PaperType | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" |
-            "A3" | "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" | "Note" |
-            "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" | "Esheet" |
-            "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" |
-            "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" |
-            "FanfoldStdGerman" | "FanfoldLegalGerman"
-  - uid: excel.Excel.Interfaces.PageLayoutData.printComments
+          - 'excel!Excel.Interfaces.PageLayoutData#paperSize~0:complex'
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#printComments:member'
     summary: |-
       Gets or sets whether the worksheet's comments should be displayed when printing.
 
@@ -239,8 +233,8 @@ items:
       content: 'printComments?: Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace";'
       return:
         type:
-          - Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace"
-  - uid: excel.Excel.Interfaces.PageLayoutData.printErrors
+          - 'excel!Excel.Interfaces.PageLayoutData#printComments~0:complex'
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#printErrors:member'
     summary: |-
       Gets or sets the worksheet's print errors option.
 
@@ -254,8 +248,8 @@ items:
       content: 'printErrors?: Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable";'
       return:
         type:
-          - Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable"
-  - uid: excel.Excel.Interfaces.PageLayoutData.printGridlines
+          - 'excel!Excel.Interfaces.PageLayoutData#printErrors~0:complex'
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#printGridlines:member'
     summary: |-
       Gets or sets the worksheet's print gridlines flag. This flag determines whether gridlines will be printed or not.
 
@@ -270,7 +264,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PageLayoutData.printHeadings
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#printHeadings:member'
     summary: |-
       Gets or sets the worksheet's print headings flag. This flag determines whether headings will be printed or not.
 
@@ -285,7 +279,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PageLayoutData.printOrder
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#printOrder:member'
     summary: >-
       Gets or sets the worksheet's page print order option. This specifies the order to use for processing the page
       number printed.
@@ -301,8 +295,8 @@ items:
       content: 'printOrder?: Excel.PrintOrder | "DownThenOver" | "OverThenDown";'
       return:
         type:
-          - Excel.PrintOrder | "DownThenOver" | "OverThenDown"
-  - uid: excel.Excel.Interfaces.PageLayoutData.rightMargin
+          - 'excel!Excel.Interfaces.PageLayoutData#printOrder~0:complex'
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#rightMargin:member'
     summary: |-
       Gets or sets the worksheet's right margin, in points, for use when printing.
 
@@ -317,7 +311,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.PageLayoutData.topMargin
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#topMargin:member'
     summary: |-
       Gets or sets the worksheet's top margin, in points, for use when printing.
 
@@ -332,7 +326,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.PageLayoutData.zoom
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#zoom:member'
     summary: |-
       Gets or sets the worksheet's print zoom options.
 
@@ -346,4 +340,66 @@ items:
       content: 'zoom?: Excel.PageLayoutZoomOptions;'
       return:
         type:
-          - excel.Excel.PageLayoutZoomOptions
+          - 'excel!Excel.PageLayoutZoomOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupData:interface'
+    name: Excel.Interfaces.HeaderFooterGroupData
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#orientation~0:complex'
+    name: Excel.PageOrientation | "Portrait" | "Landscape"
+    fullName: Excel.PageOrientation | "Portrait" | "Landscape"
+    spec.typeScript:
+      - uid: 'excel!Excel.PageOrientation:enum'
+        name: Excel.PageOrientation
+        fullName: Excel.PageOrientation
+      - name: ' | "Portrait" | "Landscape"'
+        fullName: ' | "Portrait" | "Landscape"'
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#paperSize~0:complex'
+    name: >-
+      Excel.PaperType | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" |
+      "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" |
+      "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" | "Esheet" | "EnvelopeDL" |
+      "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" |
+      "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" | "FanfoldStdGerman" |
+      "FanfoldLegalGerman"
+    fullName: >-
+      Excel.PaperType | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" |
+      "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" |
+      "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" | "Esheet" | "EnvelopeDL" |
+      "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" |
+      "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" | "FanfoldStdGerman" |
+      "FanfoldLegalGerman"
+    spec.typeScript:
+      - uid: 'excel!Excel.PaperType:enum'
+        name: Excel.PaperType
+        fullName: Excel.PaperType
+      - name: ' | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" | "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" | "Esheet" | "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" | "FanfoldStdGerman" | "FanfoldLegalGerman"'
+        fullName: ' | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" | "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" | "Esheet" | "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" | "FanfoldStdGerman" | "FanfoldLegalGerman"'
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#printComments~0:complex'
+    name: Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace"
+    fullName: Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace"
+    spec.typeScript:
+      - uid: 'excel!Excel.PrintComments:enum'
+        name: Excel.PrintComments
+        fullName: Excel.PrintComments
+      - name: ' | "NoComments" | "EndSheet" | "InPlace"'
+        fullName: ' | "NoComments" | "EndSheet" | "InPlace"'
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#printErrors~0:complex'
+    name: Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable"
+    fullName: Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable"
+    spec.typeScript:
+      - uid: 'excel!Excel.PrintErrorType:enum'
+        name: Excel.PrintErrorType
+        fullName: Excel.PrintErrorType
+      - name: ' | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable"'
+        fullName: ' | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable"'
+  - uid: 'excel!Excel.Interfaces.PageLayoutData#printOrder~0:complex'
+    name: Excel.PrintOrder | "DownThenOver" | "OverThenDown"
+    fullName: Excel.PrintOrder | "DownThenOver" | "OverThenDown"
+    spec.typeScript:
+      - uid: 'excel!Excel.PrintOrder:enum'
+        name: Excel.PrintOrder
+        fullName: Excel.PrintOrder
+      - name: ' | "DownThenOver" | "OverThenDown"'
+        fullName: ' | "DownThenOver" | "OverThenDown"'
+  - uid: 'excel!Excel.PageLayoutZoomOptions:interface'
+    name: Excel.PageLayoutZoomOptions

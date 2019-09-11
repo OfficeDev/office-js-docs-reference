@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.NodeInsertedEventArgs
+  - uid: 'office!Office.NodeInsertedEventArgs:interface'
     summary: Provides information about the inserted node that raised the nodeInserted event.
     name: Office.NodeInsertedEventArgs
     fullName: Office.NodeInsertedEventArgs
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.NodeInsertedEventArgs.isUndoRedo
-      - office.Office.NodeInsertedEventArgs.newNode
-  - uid: office.Office.NodeInsertedEventArgs.isUndoRedo
+      - 'office!Office.NodeInsertedEventArgs#isUndoRedo:member'
+      - 'office!Office.NodeInsertedEventArgs#newNode:member'
+  - uid: 'office!Office.NodeInsertedEventArgs#isUndoRedo:member'
     summary: Gets whether the node was inserted as part of an Undo/Redo action by the user.
     name: isUndoRedo
     fullName: isUndoRedo
@@ -23,7 +23,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office.Office.NodeInsertedEventArgs.newNode
+  - uid: 'office!Office.NodeInsertedEventArgs#newNode:member'
     summary: |-
       Gets the node that was just added to the CustomXMLPart object.
 
@@ -37,4 +37,7 @@ items:
       content: 'newNode: CustomXmlNode;'
       return:
         type:
-          - office.Office.CustomXmlNode
+          - 'office!Office.CustomXmlNode:interface'
+references:
+  - uid: 'office!Office.CustomXmlNode:interface'
+    name: CustomXmlNode

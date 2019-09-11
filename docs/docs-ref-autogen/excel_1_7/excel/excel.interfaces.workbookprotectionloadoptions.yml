@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.WorkbookProtectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorkbookProtectionLoadOptions:interface'
     summary: |-
       Represents the protection of a workbook object.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.WorkbookProtectionLoadOptions.$all
-      - excel.Excel.Interfaces.WorkbookProtectionLoadOptions.protected
-  - uid: excel.Excel.Interfaces.WorkbookProtectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.WorkbookProtectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.WorkbookProtectionLoadOptions#protected:member'
+  - uid: 'excel!Excel.Interfaces.WorkbookProtectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -25,7 +25,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookProtectionLoadOptions.protected
+  - uid: 'excel!Excel.Interfaces.WorkbookProtectionLoadOptions#protected:member'
     summary: |-
       Indicates if the workbook is protected. Read-Only.
 

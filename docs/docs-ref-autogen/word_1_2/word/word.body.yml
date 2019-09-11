@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Body
+  - uid: 'word!Word.Body:class'
     summary: |-
       Represents the body of a document or a section.
 
@@ -11,47 +11,47 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: word
+      - 'word!OfficeExtension.ClientObject:class'
+    package: word!
     children:
-      - word.Word.Body.clear
-      - word.Word.Body.contentControls
-      - word.Word.Body.context
-      - word.Word.Body.font
-      - word.Word.Body.getHtml
-      - word.Word.Body.getOoxml
-      - word.Word.Body.inlinePictures
-      - word.Word.Body.insertBreak
-      - word.Word.Body.insertBreak_1
-      - word.Word.Body.insertContentControl
-      - word.Word.Body.insertFileFromBase64
-      - word.Word.Body.insertFileFromBase64_1
-      - word.Word.Body.insertHtml
-      - word.Word.Body.insertHtml_1
-      - word.Word.Body.insertInlinePictureFromBase64
-      - word.Word.Body.insertInlinePictureFromBase64_1
-      - word.Word.Body.insertOoxml
-      - word.Word.Body.insertOoxml_1
-      - word.Word.Body.insertParagraph
-      - word.Word.Body.insertParagraph_1
-      - word.Word.Body.insertText
-      - word.Word.Body.insertText_1
-      - word.Word.Body.load
-      - word.Word.Body.load_1
-      - word.Word.Body.load_2
-      - word.Word.Body.paragraphs
-      - word.Word.Body.parentContentControl
-      - word.Word.Body.search
-      - word.Word.Body.select
-      - word.Word.Body.select_1
-      - word.Word.Body.set
-      - word.Word.Body.set_1
-      - word.Word.Body.style
-      - word.Word.Body.text
-      - word.Word.Body.toJSON
-      - word.Word.Body.track
-      - word.Word.Body.untrack
-  - uid: word.Word.Body.clear
+      - 'word!Word.Body#clear:member(1)'
+      - 'word!Word.Body#contentControls:member'
+      - 'word!Word.Body#context:member'
+      - 'word!Word.Body#font:member'
+      - 'word!Word.Body#getHtml:member(1)'
+      - 'word!Word.Body#getOoxml:member(1)'
+      - 'word!Word.Body#inlinePictures:member'
+      - 'word!Word.Body#insertBreak:member(1)'
+      - 'word!Word.Body#insertBreak:member(2)'
+      - 'word!Word.Body#insertContentControl:member(1)'
+      - 'word!Word.Body#insertFileFromBase64:member(1)'
+      - 'word!Word.Body#insertFileFromBase64:member(2)'
+      - 'word!Word.Body#insertHtml:member(1)'
+      - 'word!Word.Body#insertHtml:member(2)'
+      - 'word!Word.Body#insertInlinePictureFromBase64:member(1)'
+      - 'word!Word.Body#insertInlinePictureFromBase64:member(2)'
+      - 'word!Word.Body#insertOoxml:member(1)'
+      - 'word!Word.Body#insertOoxml:member(2)'
+      - 'word!Word.Body#insertParagraph:member(1)'
+      - 'word!Word.Body#insertParagraph:member(2)'
+      - 'word!Word.Body#insertText:member(1)'
+      - 'word!Word.Body#insertText:member(2)'
+      - 'word!Word.Body#load:member(1)'
+      - 'word!Word.Body#load:member(2)'
+      - 'word!Word.Body#load:member(3)'
+      - 'word!Word.Body#paragraphs:member'
+      - 'word!Word.Body#parentContentControl:member'
+      - 'word!Word.Body#search:member(1)'
+      - 'word!Word.Body#select:member(1)'
+      - 'word!Word.Body#select:member(2)'
+      - 'word!Word.Body#set:member(1)'
+      - 'word!Word.Body#set:member(2)'
+      - 'word!Word.Body#style:member'
+      - 'word!Word.Body#text:member'
+      - 'word!Word.Body#toJSON:member(1)'
+      - 'word!Word.Body#track:member(1)'
+      - 'word!Word.Body#untrack:member(1)'
+  - uid: 'word!Word.Body#clear:member(1)'
     summary: |-
       Clears the contents of the body object. The user can perform the undo operation on the cleared content.
 
@@ -78,7 +78,7 @@ items:
               // Create a proxy object for the document body.
               var body = context.document.body;
 
-              // Queue a commmand to clear the contents of the body.
+              // Queue a command to clear the contents of the body.
               body.clear();
 
               // Synchronize the document state by executing the queued commands,
@@ -98,7 +98,7 @@ items:
           // clear method can be used to clear the contents of a document.
           // https://aka.ms/sillystorywordaddin
           ```
-  - uid: word.Word.Body.contentControls
+  - uid: 'word!Word.Body#contentControls:member'
     summary: |-
       Gets the collection of rich text content control objects in the body. Read-only.
 
@@ -112,8 +112,8 @@ items:
       content: 'readonly contentControls: Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
-  - uid: word.Word.Body.context
+          - 'word!Word.ContentControlCollection:class'
+  - uid: 'word!Word.Body#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -126,8 +126,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.Body.font
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.Body#font:member'
     summary: |-
       Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
 
@@ -141,7 +141,7 @@ items:
       content: 'readonly font: Word.Font;'
       return:
         type:
-          - word.Word.Font
+          - 'word!Word.Font:class'
         description: |-
 
 
@@ -155,7 +155,7 @@ items:
               // Create a proxy object for the document body.
               var body = context.document.body;
 
-              // Queue a commmand to load font and style information for the document body.
+              // Queue a command to load font and style information for the document body.
               context.load(body, 'font/size, font/name, font/color, style');
 
               // Synchronize the document state by executing the queued commands,
@@ -178,7 +178,7 @@ items:
               }
           });
           ```
-  - uid: word.Word.Body.getHtml
+  - uid: 'word!Word.Body#getHtml:member(1)'
     summary: >-
       Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be
       a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML
@@ -196,7 +196,7 @@ items:
       content: 'getHtml(): OfficeExtension.ClientResult<string>;'
       return:
         type:
-          - OfficeExtension.ClientResult<string>
+          - 'word!Word.Body#getHtml~0:complex'
         description: |-
 
 
@@ -209,7 +209,7 @@ items:
               // Create a proxy object for the document body.
               var body = context.document.body;
 
-              // Queue a commmand to get the HTML contents of the body.
+              // Queue a command to get the HTML contents of the body.
               var bodyHTML = body.getHtml();
 
               // Synchronize the document state by executing the queued commands,
@@ -225,7 +225,7 @@ items:
               }
           });
           ```
-  - uid: word.Word.Body.getOoxml
+  - uid: 'word!Word.Body#getOoxml:member(1)'
     summary: |-
       Gets the OOXML (Office Open XML) representation of the body object.
 
@@ -239,7 +239,7 @@ items:
       content: 'getOoxml(): OfficeExtension.ClientResult<string>;'
       return:
         type:
-          - OfficeExtension.ClientResult<string>
+          - 'word!Word.Body#getOoxml~0:complex'
         description: |-
 
 
@@ -252,7 +252,7 @@ items:
               // Create a proxy object for the document body.
               var body = context.document.body;
 
-              // Queue a commmand to get the OOXML contents of the body.
+              // Queue a command to get the OOXML contents of the body.
               var bodyOOXML = body.getOoxml();
 
               // Synchronize the document state by executing the queued commands,
@@ -268,7 +268,7 @@ items:
               }
           });
           ```
-  - uid: word.Word.Body.inlinePictures
+  - uid: 'word!Word.Body#inlinePictures:member'
     summary: >-
       Gets the collection of InlinePicture objects in the body. The collection does not include floating images.
       Read-only.
@@ -284,8 +284,8 @@ items:
       content: 'readonly inlinePictures: Word.InlinePictureCollection;'
       return:
         type:
-          - word.Word.InlinePictureCollection
-  - uid: word.Word.Body.insertBreak
+          - 'word!Word.InlinePictureCollection:class'
+  - uid: 'word!Word.Body#insertBreak:member(1)'
     summary: |-
       Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.
 
@@ -312,7 +312,7 @@ items:
               // Create a proxy object for the document body.
               var body = ctx.document.body;
 
-              // Queue a commmand to insert a page break at the start of the document body.
+              // Queue a command to insert a page break at the start of the document body.
               body.insertBreak(Word.BreakType.page, Word.InsertLocation.start);
 
               // Synchronize the document state by executing the queued commands,
@@ -332,12 +332,12 @@ items:
         - id: breakType
           description: Required. The break type to add to the body.
           type:
-            - word.Word.BreakType
+            - 'word!Word.BreakType:enum'
         - id: insertLocation
           description: Required. The value can be 'Start' or 'End'.
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Body.insertBreak_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Body#insertBreak:member(2)'
     summary: |-
       Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.
 
@@ -364,7 +364,7 @@ items:
           description: Required. The value can be 'Start' or 'End'.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Body.insertContentControl
+  - uid: 'word!Word.Body#insertContentControl:member(1)'
     summary: |-
       Wraps the body object with a Rich Text content control.
 
@@ -378,7 +378,7 @@ items:
       content: 'insertContentControl(): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
+          - 'word!Word.ContentControl:class'
         description: |-
 
 
@@ -391,7 +391,7 @@ items:
               // Create a proxy object for the document body.
               var body = context.document.body;
 
-              // Queue a commmand to wrap the body in a content control.
+              // Queue a command to wrap the body in a content control.
               body.insertContentControl();
 
               // Synchronize the document state by executing the queued commands,
@@ -407,7 +407,7 @@ items:
               }
           });
           ```
-  - uid: word.Word.Body.insertFileFromBase64
+  - uid: 'word!Word.Body#insertFileFromBase64:member(1)'
     summary: >-
       Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or
       'End'.
@@ -423,7 +423,7 @@ items:
       content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: |-
 
 
@@ -436,7 +436,7 @@ items:
               // Create a proxy object for the document body.
               var body = context.document.body;
 
-              // Queue a commmand to insert base64 encoded .docx at the beginning of the content body.
+              // Queue a command to insert base64 encoded .docx at the beginning of the content body.
               // You will need to implement getBase64() to pass in a string of a base64 encoded docx file.
               body.insertFileFromBase64(getBase64(), Word.InsertLocation.start);
 
@@ -461,8 +461,8 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Body.insertFileFromBase64_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Body#insertFileFromBase64:member(2)'
     summary: >-
       Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or
       'End'.
@@ -480,7 +480,7 @@ items:
         "Replace"): Word.Range;
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: base64File
@@ -491,7 +491,7 @@ items:
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Body.insertHtml
+  - uid: 'word!Word.Body#insertHtml:member(1)'
     summary: |-
       Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
 
@@ -505,7 +505,7 @@ items:
       content: 'insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: |-
 
 
@@ -518,7 +518,7 @@ items:
               // Create a proxy object for the document body.
               var body = context.document.body;
 
-              // Queue a commmand to insert HTML in to the beginning of the body.
+              // Queue a command to insert HTML in to the beginning of the body.
               body.insertHtml(
                   '<strong>This is text inserted with body.insertHtml()</strong>', Word.InsertLocation.start);
 
@@ -543,8 +543,8 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Body.insertHtml_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Body#insertHtml:member(2)'
     summary: |-
       Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
 
@@ -558,7 +558,7 @@ items:
       content: 'insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: html
@@ -569,7 +569,7 @@ items:
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Body.insertInlinePictureFromBase64
+  - uid: 'word!Word.Body#insertInlinePictureFromBase64:member(1)'
     summary: |-
       Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.
 
@@ -585,7 +585,7 @@ items:
         Word.InlinePicture;
       return:
         type:
-          - word.Word.InlinePicture
+          - 'word!Word.InlinePicture:class'
         description: |-
 
 
@@ -598,7 +598,7 @@ items:
               // Create a proxy object for the document body.
               var body = context.document.body;
 
-              // Queue a commmand to insert OOXML in to the beginning of the body.
+              // Queue a command to insert OOXML in to the beginning of the body.
               body.insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", Word.InsertLocation.start);
 
               // Synchronize the document state by executing the queued commands,
@@ -628,8 +628,8 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Start' or 'End'.
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Body.insertInlinePictureFromBase64_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Body#insertInlinePictureFromBase64:member(2)'
     summary: |-
       Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.
 
@@ -645,7 +645,7 @@ items:
         "End" | "Replace"): Word.InlinePicture;
       return:
         type:
-          - word.Word.InlinePicture
+          - 'word!Word.InlinePicture:class'
         description: ''
       parameters:
         - id: base64EncodedImage
@@ -656,7 +656,7 @@ items:
           description: Required. The value can be 'Start' or 'End'.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Body.insertOoxml
+  - uid: 'word!Word.Body#insertOoxml:member(1)'
     summary: |-
       Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
 
@@ -670,7 +670,7 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: ooxml
@@ -680,8 +680,8 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Body.insertOoxml_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Body#insertOoxml:member(2)'
     summary: |-
       Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
 
@@ -695,7 +695,7 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: ooxml
@@ -706,7 +706,7 @@ items:
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Body.insertParagraph
+  - uid: 'word!Word.Body#insertParagraph:member(1)'
     summary: |-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.
 
@@ -720,7 +720,7 @@ items:
       content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: >-
 
 
@@ -736,7 +736,7 @@ items:
               // Create a proxy object for the document body.
               var body = context.document.body;
 
-              // Queue a commmand to insert the paragraph at the end of the document body.
+              // Queue a command to insert the paragraph at the end of the document body.
               body.insertParagraph('Content of a new paragraph', Word.InsertLocation.end);
 
               // Synchronize the document state by executing the queued commands,
@@ -802,8 +802,8 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Start' or 'End'.
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Body.insertParagraph_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Body#insertParagraph:member(2)'
     summary: |-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.
 
@@ -819,7 +819,7 @@ items:
         Word.Paragraph;
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
       parameters:
         - id: paragraphText
@@ -830,7 +830,7 @@ items:
           description: Required. The value can be 'Start' or 'End'.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Body.insertText
+  - uid: 'word!Word.Body#insertText:member(1)'
     summary: >-
       Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or
       'End'.
@@ -846,7 +846,7 @@ items:
       content: 'insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: |-
 
 
@@ -859,7 +859,7 @@ items:
               // Create a proxy object for the document body.
               var body = context.document.body;
 
-              // Queue a commmand to insert text in to the beginning of the body.
+              // Queue a command to insert text in to the beginning of the body.
               body.insertText('This is text inserted with body.insertText()', Word.InsertLocation.start);
 
               // Synchronize the document state by executing the queued commands,
@@ -883,8 +883,8 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.Body.insertText_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.Body#insertText:member(2)'
     summary: >-
       Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or
       'End'.
@@ -900,7 +900,7 @@ items:
       content: 'insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: text
@@ -911,7 +911,7 @@ items:
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.Body.load
+  - uid: 'word!Word.Body#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -942,14 +942,14 @@ items:
       content: 'load(option?: Word.Interfaces.BodyLoadOptions): Word.Body;'
       return:
         type:
-          - word.Word.Body
+          - 'word!Word.Body:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.BodyLoadOptions
-  - uid: word.Word.Body.load_1
+            - 'word!Word.Interfaces.BodyLoadOptions:interface'
+  - uid: 'word!Word.Body#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -962,14 +962,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.Body;'
       return:
         type:
-          - word.Word.Body
+          - 'word!Word.Body:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.Body.load_2
+  - uid: 'word!Word.Body#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -982,7 +982,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Body;'
       return:
         type:
-          - word.Word.Body
+          - 'word!Word.Body:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -991,7 +991,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: word.Word.Body.paragraphs
+  - uid: 'word!Word.Body#paragraphs:member'
     summary: |-
       Gets the collection of paragraph objects in the body. Read-only.
 
@@ -1005,7 +1005,7 @@ items:
       content: 'readonly paragraphs: Word.ParagraphCollection;'
       return:
         type:
-          - word.Word.ParagraphCollection
+          - 'word!Word.ParagraphCollection:class'
         description: |-
 
 
@@ -1057,7 +1057,7 @@ items:
             });
           });
           ```
-  - uid: word.Word.Body.parentContentControl
+  - uid: 'word!Word.Body#parentContentControl:member'
     summary: |-
       Gets the content control that contains the body. Throws if there isn't a parent content control. Read-only.
 
@@ -1071,8 +1071,8 @@ items:
       content: 'readonly parentContentControl: Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
-  - uid: word.Word.Body.search
+          - 'word!Word.ContentControl:class'
+  - uid: 'word!Word.Body#search:member(1)'
     summary: >-
       Performs a search with the specified SearchOptions on the scope of the body object. The search results are a
       collection of range objects.
@@ -1097,7 +1097,7 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - 'word!Word.RangeCollection:class'
         description: |-
 
 
@@ -1110,10 +1110,10 @@ items:
               // Create a proxy object for the document body.
               var body = context.document.body;
 
-              // Queue a commmand to search the document.
+              // Queue a command to search the document.
               var searchResults = context.document.body.search('video', {matchCase: false});
 
-              // Queue a commmand to load the results.
+              // Queue a command to load the results.
               context.load(searchResults, 'text, font');
 
               // Synchronize the document state by executing the queued commands,
@@ -1233,17 +1233,8 @@ items:
         - id: searchOptions
           description: Optional. Options for the search.
           type:
-            - |-
-              Word.SearchOptions | {
-                          ignorePunct?: boolean;
-                          ignoreSpace?: boolean;
-                          matchCase?: boolean;
-                          matchPrefix?: boolean;
-                          matchSuffix?: boolean;
-                          matchWholeWord?: boolean;
-                          matchWildcards?: boolean;
-                      }
-  - uid: word.Word.Body.select
+            - 'word!Word.Body#search~0:complex'
+  - uid: 'word!Word.Body#select:member(1)'
     summary: |-
       Selects the body and navigates the Word UI to it.
 
@@ -1270,7 +1261,7 @@ items:
               // Create a proxy object for the document body.
               var body = context.document.body;
 
-              // Queue a commmand to select the document body. The Word UI will
+              // Queue a command to select the document body. The Word UI will
               // move to the selected document body.
               body.select();
 
@@ -1291,8 +1282,8 @@ items:
         - id: selectionMode
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
-            - word.Word.SelectionMode
-  - uid: word.Word.Body.select_1
+            - 'word!Word.SelectionMode:enum'
+  - uid: 'word!Word.Body#select:member(2)'
     summary: |-
       Selects the body and navigates the Word UI to it.
 
@@ -1313,7 +1304,7 @@ items:
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - '"Select" | "Start" | "End"'
-  - uid: word.Word.Body.set
+  - uid: 'word!Word.Body#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -1338,12 +1329,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.BodyUpdateData
+            - 'word!Word.Interfaces.BodyUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: word.Word.Body.set_1
+            - 'word!OfficeExtension.UpdateOptions:interface'
+  - uid: 'word!Word.Body#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -1360,8 +1351,8 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.Body
-  - uid: word.Word.Body.style
+            - 'word!Word.Body:class'
+  - uid: 'word!Word.Body#style:member'
     summary: >-
       Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -1378,7 +1369,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Body.text
+  - uid: 'word!Word.Body#text:member'
     summary: |-
       Gets the text of the body. Use the insertText method to insert text. Read-only.
 
@@ -1406,7 +1397,7 @@ items:
               // Create a proxy object for the document body.
               var body = context.document.body;
 
-              // Queue a commmand to load the text in document body.
+              // Queue a command to load the text in document body.
               context.load(body, 'text');
 
               // Synchronize the document state by executing the queued commands,
@@ -1422,7 +1413,7 @@ items:
               }
           });
           ```
-  - uid: word.Word.Body.toJSON
+  - uid: 'word!Word.Body#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -1438,9 +1429,9 @@ items:
       content: 'toJSON(): Word.Interfaces.BodyData;'
       return:
         type:
-          - word.Word.Interfaces.BodyData
+          - 'word!Word.Interfaces.BodyData:interface'
         description: ''
-  - uid: word.Word.Body.track
+  - uid: 'word!Word.Body#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -1456,9 +1447,9 @@ items:
       content: 'track(): Word.Body;'
       return:
         type:
-          - word.Word.Body
+          - 'word!Word.Body:class'
         description: ''
-  - uid: word.Word.Body.untrack
+  - uid: 'word!Word.Body#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -1473,5 +1464,107 @@ items:
       content: 'untrack(): Word.Body;'
       return:
         type:
-          - word.Word.Body
+          - 'word!Word.Body:class'
         description: ''
+references:
+  - uid: 'word!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.ContentControlCollection:class'
+    name: Word.ContentControlCollection
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.Font:class'
+    name: Word.Font
+  - uid: 'word!Word.Body#getHtml~0:complex'
+    name: OfficeExtension.ClientResult<string>
+    fullName: OfficeExtension.ClientResult<string>
+    spec.typeScript:
+      - uid: 'word!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <string>
+        fullName: <string>
+  - uid: 'word!Word.Body#getOoxml~0:complex'
+    name: OfficeExtension.ClientResult<string>
+    fullName: OfficeExtension.ClientResult<string>
+    spec.typeScript:
+      - uid: 'word!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <string>
+        fullName: <string>
+  - uid: 'word!Word.InlinePictureCollection:class'
+    name: Word.InlinePictureCollection
+  - uid: 'word!Word.BreakType:enum'
+    name: Word.BreakType
+  - uid: 'word!Word.InsertLocation:enum'
+    name: Word.InsertLocation
+  - uid: 'word!Word.ContentControl:class'
+    name: Word.ContentControl
+  - uid: 'word!Word.Range:class'
+    name: Word.Range
+  - uid: 'word!Word.InlinePicture:class'
+    name: Word.InlinePicture
+  - uid: 'word!Word.Paragraph:class'
+    name: Word.Paragraph
+  - uid: 'word!Word.Body:class'
+    name: Word.Body
+  - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
+    name: Word.Interfaces.BodyLoadOptions
+  - uid: 'word!Word.ParagraphCollection:class'
+    name: Word.ParagraphCollection
+  - uid: 'word!Word.RangeCollection:class'
+    name: Word.RangeCollection
+  - uid: 'word!Word.Body#search~0:complex'
+    name: |-
+      Word.SearchOptions | {
+                  ignorePunct?: boolean;
+                  ignoreSpace?: boolean;
+                  matchCase?: boolean;
+                  matchPrefix?: boolean;
+                  matchSuffix?: boolean;
+                  matchWholeWord?: boolean;
+                  matchWildcards?: boolean;
+              }
+    fullName: |-
+      Word.SearchOptions | {
+                  ignorePunct?: boolean;
+                  ignoreSpace?: boolean;
+                  matchCase?: boolean;
+                  matchPrefix?: boolean;
+                  matchSuffix?: boolean;
+                  matchWholeWord?: boolean;
+                  matchWildcards?: boolean;
+              }
+    spec.typeScript:
+      - uid: 'word!Word.SearchOptions:class'
+        name: Word.SearchOptions
+        fullName: Word.SearchOptions
+      - name: |2-
+           | {
+                      ignorePunct?: boolean;
+                      ignoreSpace?: boolean;
+                      matchCase?: boolean;
+                      matchPrefix?: boolean;
+                      matchSuffix?: boolean;
+                      matchWholeWord?: boolean;
+                      matchWildcards?: boolean;
+                  }
+        fullName: |2-
+           | {
+                      ignorePunct?: boolean;
+                      ignoreSpace?: boolean;
+                      matchCase?: boolean;
+                      matchPrefix?: boolean;
+                      matchSuffix?: boolean;
+                      matchWholeWord?: boolean;
+                      matchWildcards?: boolean;
+                  }
+  - uid: 'word!Word.SelectionMode:enum'
+    name: Word.SelectionMode
+  - uid: 'word!Word.Interfaces.BodyUpdateData:interface'
+    name: Interfaces.BodyUpdateData
+  - uid: 'word!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'word!Word.Interfaces.BodyData:interface'
+    name: Word.Interfaces.BodyData

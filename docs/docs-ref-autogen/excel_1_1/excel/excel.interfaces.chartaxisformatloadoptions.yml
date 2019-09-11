@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartAxisFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartAxisFormatLoadOptions:interface'
     summary: |-
       Encapsulates the format properties for the chart axis.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartAxisFormatLoadOptions.$all
-      - excel.Excel.Interfaces.ChartAxisFormatLoadOptions.font
-      - excel.Excel.Interfaces.ChartAxisFormatLoadOptions.line
-  - uid: excel.Excel.Interfaces.ChartAxisFormatLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartAxisFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartAxisFormatLoadOptions#font:member'
+      - 'excel!Excel.Interfaces.ChartAxisFormatLoadOptions#line:member'
+  - uid: 'excel!Excel.Interfaces.ChartAxisFormatLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisFormatLoadOptions.font
+  - uid: 'excel!Excel.Interfaces.ChartAxisFormatLoadOptions#font:member'
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for a chart axis element.
 
@@ -40,8 +40,8 @@ items:
       content: 'font?: Excel.Interfaces.ChartFontLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartFontLoadOptions
-  - uid: excel.Excel.Interfaces.ChartAxisFormatLoadOptions.line
+          - 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAxisFormatLoadOptions#line:member'
     summary: |-
       Represents chart line formatting.
 
@@ -55,4 +55,9 @@ items:
       content: 'line?: Excel.Interfaces.ChartLineFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLineFormatLoadOptions
+          - 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
+    name: Excel.Interfaces.ChartFontLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartLineFormatLoadOptions

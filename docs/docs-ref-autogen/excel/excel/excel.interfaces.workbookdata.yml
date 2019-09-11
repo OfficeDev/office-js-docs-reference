@@ -1,40 +1,40 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.WorkbookData
+  - uid: 'excel!Excel.Interfaces.WorkbookData:interface'
     summary: An interface describing the data returned by calling "workbook.toJSON()".
     name: Excel.Interfaces.WorkbookData
     fullName: Excel.Interfaces.WorkbookData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.WorkbookData.autoSave
-      - excel.Excel.Interfaces.WorkbookData.bindings
-      - excel.Excel.Interfaces.WorkbookData.calculationEngineVersion
-      - excel.Excel.Interfaces.WorkbookData.chartDataPointTrack
-      - excel.Excel.Interfaces.WorkbookData.comments
-      - excel.Excel.Interfaces.WorkbookData.customXmlParts
-      - excel.Excel.Interfaces.WorkbookData.isDirty
-      - excel.Excel.Interfaces.WorkbookData.name
-      - excel.Excel.Interfaces.WorkbookData.names
-      - excel.Excel.Interfaces.WorkbookData.pivotTables
-      - excel.Excel.Interfaces.WorkbookData.pivotTableStyles
-      - excel.Excel.Interfaces.WorkbookData.previouslySaved
-      - excel.Excel.Interfaces.WorkbookData.properties
-      - excel.Excel.Interfaces.WorkbookData.protection
-      - excel.Excel.Interfaces.WorkbookData.readOnly
-      - excel.Excel.Interfaces.WorkbookData.settings
-      - excel.Excel.Interfaces.WorkbookData.slicers
-      - excel.Excel.Interfaces.WorkbookData.slicerStyles
-      - excel.Excel.Interfaces.WorkbookData.styles
-      - excel.Excel.Interfaces.WorkbookData.tables
-      - excel.Excel.Interfaces.WorkbookData.tableStyles
-      - excel.Excel.Interfaces.WorkbookData.timelineStyles
-      - excel.Excel.Interfaces.WorkbookData.use1904DateSystem
-      - excel.Excel.Interfaces.WorkbookData.usePrecisionAsDisplayed
-      - excel.Excel.Interfaces.WorkbookData.worksheets
-  - uid: excel.Excel.Interfaces.WorkbookData.autoSave
+      - 'excel!Excel.Interfaces.WorkbookData#autoSave:member'
+      - 'excel!Excel.Interfaces.WorkbookData#bindings:member'
+      - 'excel!Excel.Interfaces.WorkbookData#calculationEngineVersion:member'
+      - 'excel!Excel.Interfaces.WorkbookData#chartDataPointTrack:member'
+      - 'excel!Excel.Interfaces.WorkbookData#comments:member'
+      - 'excel!Excel.Interfaces.WorkbookData#customXmlParts:member'
+      - 'excel!Excel.Interfaces.WorkbookData#isDirty:member'
+      - 'excel!Excel.Interfaces.WorkbookData#name:member'
+      - 'excel!Excel.Interfaces.WorkbookData#names:member'
+      - 'excel!Excel.Interfaces.WorkbookData#pivotTables:member'
+      - 'excel!Excel.Interfaces.WorkbookData#pivotTableStyles:member'
+      - 'excel!Excel.Interfaces.WorkbookData#previouslySaved:member'
+      - 'excel!Excel.Interfaces.WorkbookData#properties:member'
+      - 'excel!Excel.Interfaces.WorkbookData#protection:member'
+      - 'excel!Excel.Interfaces.WorkbookData#readOnly:member'
+      - 'excel!Excel.Interfaces.WorkbookData#settings:member'
+      - 'excel!Excel.Interfaces.WorkbookData#slicers:member'
+      - 'excel!Excel.Interfaces.WorkbookData#slicerStyles:member'
+      - 'excel!Excel.Interfaces.WorkbookData#styles:member'
+      - 'excel!Excel.Interfaces.WorkbookData#tables:member'
+      - 'excel!Excel.Interfaces.WorkbookData#tableStyles:member'
+      - 'excel!Excel.Interfaces.WorkbookData#timelineStyles:member'
+      - 'excel!Excel.Interfaces.WorkbookData#use1904DateSystem:member'
+      - 'excel!Excel.Interfaces.WorkbookData#usePrecisionAsDisplayed:member'
+      - 'excel!Excel.Interfaces.WorkbookData#worksheets:member'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#autoSave:member'
     summary: |-
       Specifies whether or not the workbook is in autosave mode. Read-Only.
 
@@ -49,7 +49,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookData.bindings
+  - uid: 'excel!Excel.Interfaces.WorkbookData#bindings:member'
     summary: |-
       Represents a collection of bindings that are part of the workbook. Read-only.
 
@@ -63,8 +63,8 @@ items:
       content: 'bindings?: Excel.Interfaces.BindingData[];'
       return:
         type:
-          - 'Excel.Interfaces.BindingData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.calculationEngineVersion
+          - 'excel!Excel.Interfaces.WorkbookData#bindings~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#calculationEngineVersion:member'
     summary: |-
       Returns a number about the version of Excel Calculation Engine. Read-Only.
 
@@ -79,7 +79,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.WorkbookData.chartDataPointTrack
+  - uid: 'excel!Excel.Interfaces.WorkbookData#chartDataPointTrack:member'
     summary: >-
       True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
       charts track the index of the data points.
@@ -96,7 +96,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookData.comments
+  - uid: 'excel!Excel.Interfaces.WorkbookData#comments:member'
     summary: >-
       Represents a collection of Comments associated with the workbook. Read-only.
 
@@ -113,8 +113,8 @@ items:
       content: 'comments?: Excel.Interfaces.CommentData[];'
       return:
         type:
-          - 'Excel.Interfaces.CommentData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.customXmlParts
+          - 'excel!Excel.Interfaces.WorkbookData#comments~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#customXmlParts:member'
     summary: |-
       Represents the collection of custom XML parts contained by this workbook. Read-only.
 
@@ -128,8 +128,8 @@ items:
       content: 'customXmlParts?: Excel.Interfaces.CustomXmlPartData[];'
       return:
         type:
-          - 'Excel.Interfaces.CustomXmlPartData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.isDirty
+          - 'excel!Excel.Interfaces.WorkbookData#customXmlParts~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#isDirty:member'
     summary: >-
       Specifies whether or not changes have been made since the workbook was last saved. You can set this property to
       true if you want to close a modified workbook without either saving it or being prompted to save it.
@@ -146,7 +146,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookData.name
+  - uid: 'excel!Excel.Interfaces.WorkbookData#name:member'
     summary: |-
       Gets the workbook name. Read-only.
 
@@ -161,7 +161,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.WorkbookData.names
+  - uid: 'excel!Excel.Interfaces.WorkbookData#names:member'
     summary: |-
       Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
 
@@ -175,8 +175,8 @@ items:
       content: 'names?: Excel.Interfaces.NamedItemData[];'
       return:
         type:
-          - 'Excel.Interfaces.NamedItemData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.pivotTables
+          - 'excel!Excel.Interfaces.WorkbookData#names~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#pivotTables:member'
     summary: |-
       Represents a collection of PivotTables associated with the workbook. Read-only.
 
@@ -190,8 +190,8 @@ items:
       content: 'pivotTables?: Excel.Interfaces.PivotTableData[];'
       return:
         type:
-          - 'Excel.Interfaces.PivotTableData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.pivotTableStyles
+          - 'excel!Excel.Interfaces.WorkbookData#pivotTables~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#pivotTableStyles:member'
     summary: >-
       Represents a collection of PivotTableStyles associated with the workbook. Read-only.
 
@@ -208,8 +208,8 @@ items:
       content: 'pivotTableStyles?: Excel.Interfaces.PivotTableStyleData[];'
       return:
         type:
-          - 'Excel.Interfaces.PivotTableStyleData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.previouslySaved
+          - 'excel!Excel.Interfaces.WorkbookData#pivotTableStyles~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#previouslySaved:member'
     summary: |-
       Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
 
@@ -224,7 +224,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookData.properties
+  - uid: 'excel!Excel.Interfaces.WorkbookData#properties:member'
     summary: |-
       Gets the workbook properties. Read-only.
 
@@ -238,8 +238,8 @@ items:
       content: 'properties?: Excel.Interfaces.DocumentPropertiesData;'
       return:
         type:
-          - excel.Excel.Interfaces.DocumentPropertiesData
-  - uid: excel.Excel.Interfaces.WorkbookData.protection
+          - 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#protection:member'
     summary: |-
       Returns workbook protection object for a workbook. Read-only.
 
@@ -253,8 +253,8 @@ items:
       content: 'protection?: Excel.Interfaces.WorkbookProtectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorkbookProtectionData
-  - uid: excel.Excel.Interfaces.WorkbookData.readOnly
+          - 'excel!Excel.Interfaces.WorkbookProtectionData:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#readOnly:member'
     summary: |-
       True if the workbook is open in Read-only mode. Read-only.
 
@@ -269,7 +269,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookData.settings
+  - uid: 'excel!Excel.Interfaces.WorkbookData#settings:member'
     summary: |-
       Represents a collection of Settings associated with the workbook. Read-only.
 
@@ -283,8 +283,8 @@ items:
       content: 'settings?: Excel.Interfaces.SettingData[];'
       return:
         type:
-          - 'Excel.Interfaces.SettingData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.slicers
+          - 'excel!Excel.Interfaces.WorkbookData#settings~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#slicers:member'
     summary: >-
       Represents a collection of Slicers associated with the workbook. Read-only.
 
@@ -301,8 +301,8 @@ items:
       content: 'slicers?: Excel.Interfaces.SlicerData[];'
       return:
         type:
-          - 'Excel.Interfaces.SlicerData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.slicerStyles
+          - 'excel!Excel.Interfaces.WorkbookData#slicers~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#slicerStyles:member'
     summary: >-
       Represents a collection of SlicerStyles associated with the workbook. Read-only.
 
@@ -319,8 +319,8 @@ items:
       content: 'slicerStyles?: Excel.Interfaces.SlicerStyleData[];'
       return:
         type:
-          - 'Excel.Interfaces.SlicerStyleData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.styles
+          - 'excel!Excel.Interfaces.WorkbookData#slicerStyles~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#styles:member'
     summary: |-
       Represents a collection of styles associated with the workbook. Read-only.
 
@@ -334,8 +334,8 @@ items:
       content: 'styles?: Excel.Interfaces.StyleData[];'
       return:
         type:
-          - 'Excel.Interfaces.StyleData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.tables
+          - 'excel!Excel.Interfaces.WorkbookData#styles~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#tables:member'
     summary: |-
       Represents a collection of tables associated with the workbook. Read-only.
 
@@ -349,8 +349,8 @@ items:
       content: 'tables?: Excel.Interfaces.TableData[];'
       return:
         type:
-          - 'Excel.Interfaces.TableData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.tableStyles
+          - 'excel!Excel.Interfaces.WorkbookData#tables~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#tableStyles:member'
     summary: >-
       Represents a collection of TableStyles associated with the workbook. Read-only.
 
@@ -367,8 +367,8 @@ items:
       content: 'tableStyles?: Excel.Interfaces.TableStyleData[];'
       return:
         type:
-          - 'Excel.Interfaces.TableStyleData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.timelineStyles
+          - 'excel!Excel.Interfaces.WorkbookData#tableStyles~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#timelineStyles:member'
     summary: >-
       Represents a collection of TimelineStyles associated with the workbook. Read-only.
 
@@ -385,8 +385,8 @@ items:
       content: 'timelineStyles?: Excel.Interfaces.TimelineStyleData[];'
       return:
         type:
-          - 'Excel.Interfaces.TimelineStyleData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.use1904DateSystem
+          - 'excel!Excel.Interfaces.WorkbookData#timelineStyles~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#use1904DateSystem:member'
     summary: >-
       True if the workbook uses the 1904 date system.
 
@@ -404,7 +404,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookData.usePrecisionAsDisplayed
+  - uid: 'excel!Excel.Interfaces.WorkbookData#usePrecisionAsDisplayed:member'
     summary: >-
       True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
       Data will permanently lose accuracy when switching this property from false to true.
@@ -421,7 +421,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookData.worksheets
+  - uid: 'excel!Excel.Interfaces.WorkbookData#worksheets:member'
     summary: |-
       Represents a collection of worksheets associated with the workbook. Read-only.
 
@@ -435,4 +435,135 @@ items:
       content: 'worksheets?: Excel.Interfaces.WorksheetData[];'
       return:
         type:
-          - 'Excel.Interfaces.WorksheetData[]'
+          - 'excel!Excel.Interfaces.WorkbookData#worksheets~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.WorkbookData#bindings~0:complex'
+    name: 'Excel.Interfaces.BindingData[]'
+    fullName: 'Excel.Interfaces.BindingData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.BindingData:interface'
+        name: Excel.Interfaces.BindingData
+        fullName: Excel.Interfaces.BindingData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#comments~0:complex'
+    name: 'Excel.Interfaces.CommentData[]'
+    fullName: 'Excel.Interfaces.CommentData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.CommentData:interface'
+        name: Excel.Interfaces.CommentData
+        fullName: Excel.Interfaces.CommentData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#customXmlParts~0:complex'
+    name: 'Excel.Interfaces.CustomXmlPartData[]'
+    fullName: 'Excel.Interfaces.CustomXmlPartData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.CustomXmlPartData:interface'
+        name: Excel.Interfaces.CustomXmlPartData
+        fullName: Excel.Interfaces.CustomXmlPartData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#names~0:complex'
+    name: 'Excel.Interfaces.NamedItemData[]'
+    fullName: 'Excel.Interfaces.NamedItemData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.NamedItemData:interface'
+        name: Excel.Interfaces.NamedItemData
+        fullName: Excel.Interfaces.NamedItemData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#pivotTables~0:complex'
+    name: 'Excel.Interfaces.PivotTableData[]'
+    fullName: 'Excel.Interfaces.PivotTableData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PivotTableData:interface'
+        name: Excel.Interfaces.PivotTableData
+        fullName: Excel.Interfaces.PivotTableData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#pivotTableStyles~0:complex'
+    name: 'Excel.Interfaces.PivotTableStyleData[]'
+    fullName: 'Excel.Interfaces.PivotTableStyleData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PivotTableStyleData:interface'
+        name: Excel.Interfaces.PivotTableStyleData
+        fullName: Excel.Interfaces.PivotTableStyleData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
+    name: Excel.Interfaces.DocumentPropertiesData
+  - uid: 'excel!Excel.Interfaces.WorkbookProtectionData:interface'
+    name: Excel.Interfaces.WorkbookProtectionData
+  - uid: 'excel!Excel.Interfaces.WorkbookData#settings~0:complex'
+    name: 'Excel.Interfaces.SettingData[]'
+    fullName: 'Excel.Interfaces.SettingData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.SettingData:interface'
+        name: Excel.Interfaces.SettingData
+        fullName: Excel.Interfaces.SettingData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#slicers~0:complex'
+    name: 'Excel.Interfaces.SlicerData[]'
+    fullName: 'Excel.Interfaces.SlicerData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.SlicerData:interface'
+        name: Excel.Interfaces.SlicerData
+        fullName: Excel.Interfaces.SlicerData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#slicerStyles~0:complex'
+    name: 'Excel.Interfaces.SlicerStyleData[]'
+    fullName: 'Excel.Interfaces.SlicerStyleData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.SlicerStyleData:interface'
+        name: Excel.Interfaces.SlicerStyleData
+        fullName: Excel.Interfaces.SlicerStyleData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#styles~0:complex'
+    name: 'Excel.Interfaces.StyleData[]'
+    fullName: 'Excel.Interfaces.StyleData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.StyleData:interface'
+        name: Excel.Interfaces.StyleData
+        fullName: Excel.Interfaces.StyleData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#tables~0:complex'
+    name: 'Excel.Interfaces.TableData[]'
+    fullName: 'Excel.Interfaces.TableData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TableData:interface'
+        name: Excel.Interfaces.TableData
+        fullName: Excel.Interfaces.TableData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#tableStyles~0:complex'
+    name: 'Excel.Interfaces.TableStyleData[]'
+    fullName: 'Excel.Interfaces.TableStyleData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TableStyleData:interface'
+        name: Excel.Interfaces.TableStyleData
+        fullName: Excel.Interfaces.TableStyleData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#timelineStyles~0:complex'
+    name: 'Excel.Interfaces.TimelineStyleData[]'
+    fullName: 'Excel.Interfaces.TimelineStyleData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TimelineStyleData:interface'
+        name: Excel.Interfaces.TimelineStyleData
+        fullName: Excel.Interfaces.TimelineStyleData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#worksheets~0:complex'
+    name: 'Excel.Interfaces.WorksheetData[]'
+    fullName: 'Excel.Interfaces.WorksheetData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.WorksheetData:interface'
+        name: Excel.Interfaces.WorksheetData
+        fullName: Excel.Interfaces.WorksheetData
+      - name: '[]'
+        fullName: '[]'

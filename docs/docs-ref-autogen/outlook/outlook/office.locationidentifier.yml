@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.LocationIdentifier
+  - uid: 'outlook!Office.LocationIdentifier:interface'
     summary: |-
       Represents the id of a location.
 
@@ -33,11 +33,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.LocationIdentifier.id
-      - outlook.Office.LocationIdentifier.type
-  - uid: outlook.Office.LocationIdentifier.id
+      - 'outlook!Office.LocationIdentifier#id:member'
+      - 'outlook!Office.LocationIdentifier#type:member'
+  - uid: 'outlook!Office.LocationIdentifier#id:member'
     summary: |-
       The location's unique id.
 
@@ -55,7 +55,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.LocationIdentifier.type
+  - uid: 'outlook!Office.LocationIdentifier#type:member'
     summary: The location's type.
     isPreview: true
     name: type
@@ -67,4 +67,14 @@ items:
       content: 'type: MailboxEnums.LocationType | string;'
       return:
         type:
-          - MailboxEnums.LocationType | string
+          - 'outlook!Office.LocationIdentifier#type~0:complex'
+references:
+  - uid: 'outlook!Office.LocationIdentifier#type~0:complex'
+    name: MailboxEnums.LocationType | string
+    fullName: Office.MailboxEnums.LocationType | string
+    spec.typeScript:
+      - uid: 'outlook!Office.MailboxEnums.LocationType:enum'
+        name: MailboxEnums.LocationType
+        fullName: Office.MailboxEnums.LocationType
+      - name: ' | string'
+        fullName: ' | string'

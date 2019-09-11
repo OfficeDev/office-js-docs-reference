@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.AppointmentForm
+  - uid: 'outlook!Office.AppointmentForm:interface'
     summary: |-
       The AppointmentForm namespace is used to access the currently selected appointment.
 
@@ -17,17 +17,17 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.AppointmentForm.body
-      - outlook.Office.AppointmentForm.end
-      - outlook.Office.AppointmentForm.location
-      - outlook.Office.AppointmentForm.optionalAttendees
-      - outlook.Office.AppointmentForm.requiredAttendees
-      - outlook.Office.AppointmentForm.resources
-      - outlook.Office.AppointmentForm.start
-      - outlook.Office.AppointmentForm.subject
-  - uid: outlook.Office.AppointmentForm.body
+      - 'outlook!Office.AppointmentForm#body:member'
+      - 'outlook!Office.AppointmentForm#end:member'
+      - 'outlook!Office.AppointmentForm#location:member'
+      - 'outlook!Office.AppointmentForm#optionalAttendees:member'
+      - 'outlook!Office.AppointmentForm#requiredAttendees:member'
+      - 'outlook!Office.AppointmentForm#resources:member'
+      - 'outlook!Office.AppointmentForm#start:member'
+      - 'outlook!Office.AppointmentForm#subject:member'
+  - uid: 'outlook!Office.AppointmentForm#body:member'
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
 
@@ -49,7 +49,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.AppointmentForm.end
+  - uid: 'outlook!Office.AppointmentForm#end:member'
     summary: >-
       Gets or sets the date and time that the appointment is to end.
 
@@ -91,8 +91,8 @@ items:
       content: 'end: Date;'
       return:
         type:
-          - Date
-  - uid: outlook.Office.AppointmentForm.location
+          - '!Date:interface'
+  - uid: 'outlook!Office.AppointmentForm#location:member'
     summary: >-
       Gets or sets the location of an appointment.
 
@@ -128,7 +128,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.AppointmentForm.optionalAttendees
+  - uid: 'outlook!Office.AppointmentForm#optionalAttendees:member'
     summary: >-
       Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
       of the current item.
@@ -165,8 +165,8 @@ items:
       content: 'optionalAttendees: string[] | EmailAddressDetails[];'
       return:
         type:
-          - 'string[] | EmailAddressDetails[]'
-  - uid: outlook.Office.AppointmentForm.requiredAttendees
+          - 'outlook!Office.AppointmentForm#optionalAttendees~0:complex'
+  - uid: 'outlook!Office.AppointmentForm#requiredAttendees:member'
     summary: >-
       Provides access to the required attendees of an event. The type of object and level of access depends on the mode
       of the current item.
@@ -203,8 +203,8 @@ items:
       content: 'requiredAttendees: string[] | EmailAddressDetails[];'
       return:
         type:
-          - 'string[] | EmailAddressDetails[]'
-  - uid: outlook.Office.AppointmentForm.resources
+          - 'outlook!Office.AppointmentForm#requiredAttendees~0:complex'
+  - uid: 'outlook!Office.AppointmentForm#resources:member'
     summary: >-
       Provides access to the resources of an event. Returns an array of strings containing the resources required for
       the appointment.
@@ -228,7 +228,7 @@ items:
       return:
         type:
           - 'string[]'
-  - uid: outlook.Office.AppointmentForm.start
+  - uid: 'outlook!Office.AppointmentForm#start:member'
     summary: >-
       Gets or sets the date and time that the appointment is to begin.
 
@@ -270,8 +270,8 @@ items:
       content: 'start: Date;'
       return:
         type:
-          - Date
-  - uid: outlook.Office.AppointmentForm.subject
+          - '!Date:interface'
+  - uid: 'outlook!Office.AppointmentForm#subject:member'
     summary: >-
       Gets or sets the description that appears in the subject field of an item.
 
@@ -310,3 +310,28 @@ items:
       return:
         type:
           - string
+references:
+  - uid: '!Date:interface'
+    name: Date
+  - uid: 'outlook!Office.AppointmentForm#optionalAttendees~0:complex'
+    name: 'string[] | EmailAddressDetails[]'
+    fullName: 'string[] | Office.EmailAddressDetails[]'
+    spec.typeScript:
+      - name: 'string[] | '
+        fullName: 'string[] | '
+      - uid: 'outlook!Office.EmailAddressDetails:interface'
+        name: EmailAddressDetails
+        fullName: Office.EmailAddressDetails
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'outlook!Office.AppointmentForm#requiredAttendees~0:complex'
+    name: 'string[] | EmailAddressDetails[]'
+    fullName: 'string[] | Office.EmailAddressDetails[]'
+    spec.typeScript:
+      - name: 'string[] | '
+        fullName: 'string[] | '
+      - uid: 'outlook!Office.EmailAddressDetails:interface'
+        name: EmailAddressDetails
+        fullName: Office.EmailAddressDetails
+      - name: '[]'
+        fullName: '[]'

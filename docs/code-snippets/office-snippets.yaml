@@ -1,4 +1,4 @@
-Office.AddinCommands.Event.completed:
+Office.AddinCommands.Event#completed:member(1):
   - |-
     // For the following example, the processItem function is
     // defined in the FunctionFile referenced from the add-in manifest,
@@ -24,7 +24,7 @@ Office.AddinCommands.Event.completed:
             event.completed({allowEvent: allowEvent});
         });
     }
-Office.AddinCommands.Event.source:
+Office.AddinCommands.Event#source:member:
   - |-
     // In this example, consider a button defined in an add-in manifest as follows:
     //<Control xsi:type="Button" id="eventTestButton">
@@ -71,7 +71,7 @@ Office.AddinCommands.Event.source:
 
         event.completed();
     }
-Office.AddinCommands.Source.id:
+Office.AddinCommands.Source#id:member:
   - |-
     // In this example, consider a button defined in an add-in manifest as follows:
     //<Control xsi:type="Button" id="eventTestButton">
@@ -118,7 +118,7 @@ Office.AddinCommands.Source.id:
 
         event.completed();
     }
-Office.AsyncResult:
+Office.AsyncResult:interface:
   - |-
     // The following is an example applicable to content and task pane add-ins.
     // The example shows a call to the getSelectedDataAsync method of the Document object.
@@ -143,7 +143,7 @@ Office.AsyncResult:
     var dataValue = result.value;
     // Note that other lines of code in the function use the result parameter of the callback function 
     // to access the status and error properties of the AsyncResult object.
-Office.AsyncResult.asyncContext:
+Office.AsyncResult#asyncContext:member:
   - |-
     function getDataWithContext() {
         var format = "Your data: ";
@@ -160,7 +160,7 @@ Office.AsyncResult.asyncContext:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.AsyncResult.error:
+Office.AsyncResult#error:member:
   - |-
     function getData() {
         Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
@@ -176,7 +176,7 @@ Office.AsyncResult.error:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.AsyncResult.status:
+Office.AsyncResult#status:member:
   - |-
     function getData() {
         Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
@@ -192,7 +192,7 @@ Office.AsyncResult.status:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.AsyncResult.value:
+Office.AsyncResult#value:member:
   - |-
     function getData() {
         Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
@@ -208,7 +208,7 @@ Office.AsyncResult.value:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Auth.getAccessTokenAsync:
+Office.Auth#getAccessTokenAsync:member(1):
   - |-
     Office.context.auth.getAccessTokenAsync(function(result) {
         if (result.status === "succeeded") {
@@ -218,7 +218,7 @@ Office.Auth.getAccessTokenAsync:
             console.log("Error obtaining token", result.error);
         }
     });
-Office.Binding.addHandlerAsync_1:
+Office.Binding#addHandlerAsync:member(2):
   - |-
     // The following code sample calls the select method of the Office object to access the binding
     // with ID "MyBinding", and then calls the addHandlerAsync method to add a handler function 
@@ -252,7 +252,7 @@ Office.Binding.addHandlerAsync_1:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.BindingSelectionChangedEventArgs.columnCount:
+Office.BindingSelectionChangedEventArgs#columnCount:member:
   - |-
     // The following example adds an event handler for the SelectionChanged event to the binding with an id of myTable.
     // When the user changes the selection, the handler displays the coordinates of the first cell in the selection,
@@ -273,7 +273,7 @@ Office.BindingSelectionChangedEventArgs.columnCount:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.BindingSelectionChangedEventArgs.rowCount:
+Office.BindingSelectionChangedEventArgs#rowCount:member:
   - |-
     // The following example adds an event handler for the SelectionChanged event to the binding with an id of myTable.
     // When the user changes the selection, the handler displays the coordinates of the first cell in the selection,
@@ -294,7 +294,7 @@ Office.BindingSelectionChangedEventArgs.rowCount:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.BindingSelectionChangedEventArgs.startColumn:
+Office.BindingSelectionChangedEventArgs#startColumn:member:
   - |-
     // The following example adds an event handler for the SelectionChanged event to the binding with an id of myTable.
     // When the user changes the selection, the handler displays the coordinates of the first cell in the selection,
@@ -315,7 +315,7 @@ Office.BindingSelectionChangedEventArgs.startColumn:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.BindingSelectionChangedEventArgs.startRow:
+Office.BindingSelectionChangedEventArgs#startRow:member:
   - |-
     // The following example adds an event handler for the SelectionChanged event to the binding with an id of myTable.
     // When the user changes the selection, the handler displays the coordinates of the first cell in the selection,
@@ -336,7 +336,7 @@ Office.BindingSelectionChangedEventArgs.startRow:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Binding.document:
+Office.Binding#document:member:
   - |-
     Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
         write(asyncResult.value.document.url);
@@ -346,7 +346,7 @@ Office.Binding.document:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Binding.getDataAsync_1:
+Office.Binding#getDataAsync:member(2):
   - |-
     function showBindingData() {
         Office.select("bindings#MyBinding").getDataAsync(function (asyncResult) {
@@ -408,7 +408,7 @@ Office.Binding.getDataAsync_1:
     function write(message){ 
         document.getElementById('message').innerText += message; 
     }
-Office.Binding.id:
+Office.Binding#id:member:
   - |-
     Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
         write(asyncResult.value.id);
@@ -418,13 +418,13 @@ Office.Binding.id:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Binding.removeHandlerAsync_1:
+Office.Binding#removeHandlerAsync:member(2):
   - |-
     function removeEventHandlerFromBinding() {
         Office.select("bindings#MyBinding").removeHandlerAsync(
             Office.EventType.BindingDataChanged, {handler:onBindingDataChanged});
     }
-Office.Binding.setDataAsync_1:
+Office.Binding#setDataAsync:member(2):
   - |-
     function setBindingData() {
         Office.select("bindings#MyBinding").setDataAsync('Hello World!', function (asyncResult) { });
@@ -510,7 +510,7 @@ Office.Binding.setDataAsync_1:
       {cellFormat:[{cells: {row: 1}, format: {fontColor: "yellow"}}, 
           {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]}, 
       function (asyncResult){});
-Office.Binding.type:
+Office.Binding#type:member:
   - |-
     Office.context.document.bindings.getByIdAsync("MyBinding", function (asyncResult) { 
         write(asyncResult.value.type); 
@@ -520,7 +520,7 @@ Office.Binding.type:
     function write(message){ 
         document.getElementById('message').innerText += message;  
     }
-Office.Bindings.addFromNamedItemAsync:
+Office.Bindings#addFromNamedItemAsync:member(1):
   - |-
     // The following example adds a binding to the myRange named item in Excel as a "matrix" binding,
     // and assigns the binding's id as myMatrix.
@@ -576,7 +576,7 @@ Office.Bindings.addFromNamedItemAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Bindings.addFromPromptAsync:
+Office.Bindings#addFromPromptAsync:member(1):
   - |-
     function addBindingFromPrompt() {
         Office.context.document.bindings.addFromPromptAsync(
@@ -590,7 +590,7 @@ Office.Bindings.addFromPromptAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Bindings.addFromSelectionAsync:
+Office.Bindings#addFromSelectionAsync:member(1):
   - |-
     function addBindingFromSelection() {
         Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Text, { id: 'MyBinding' }, 
@@ -603,7 +603,7 @@ Office.Bindings.addFromSelectionAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Bindings.getAllAsync_1:
+Office.Bindings#getAllAsync:member(2):
   - |-
     function displayAllBindingNames() {
         Office.context.document.bindings.getAllAsync(function (asyncResult) {
@@ -618,7 +618,7 @@ Office.Bindings.getAllAsync_1:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Bindings.getByIdAsync_1:
+Office.Bindings#getByIdAsync:member(2):
   - |-
     function displayBindingType() {
         Office.context.document.bindings.getByIdAsync('MyBinding', function (asyncResult) {
@@ -629,7 +629,7 @@ Office.Bindings.getByIdAsync_1:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Bindings.releaseByIdAsync_1:
+Office.Bindings#releaseByIdAsync:member(2):
   - |-
     Office.context.document.bindings.releaseByIdAsync("MyBinding", function (asyncResult) { 
         write("Released MyBinding!"); 
@@ -638,7 +638,7 @@ Office.Bindings.releaseByIdAsync_1:
     function write(message){ 
         document.getElementById('message').innerText += message;  
     }
-Office.Context.contentLanguage:
+Office.Context#contentLanguage:member:
   - |-
     function sayHelloWithContentLanguage() {
         var myContentLanguage = Office.context.contentLanguage;
@@ -655,7 +655,7 @@ Office.Context.contentLanguage:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Context.displayLanguage:
+Office.Context#displayLanguage:member:
   - |-
     function sayHelloWithDisplayLanguage() {
         var myDisplayLanguage = Office.context.displayLanguage;
@@ -672,7 +672,7 @@ Office.Context.displayLanguage:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Context.document:
+Office.Context#document:member:
   - |-
     // Extension initialization code.
     var _document;
@@ -686,11 +686,11 @@ Office.Context.document:
         _document = Office.context.document;
         });
     }
-Office.Context.mailbox:
+Office.Context#mailbox:member:
   - |-
     // The following line of code access the item object of the JavaScript API for Office.
     var item = Office.context.mailbox.item;
-Office.Context.officeTheme:
+Office.Context#officeTheme:member:
   - |-
     function applyOfficeTheme(){
         // Get office theme colors.
@@ -702,7 +702,7 @@ Office.Context.officeTheme:
         // Apply body background color to a CSS class.
         $('.body').css('background-color', bodyBackgroundColor);
     }
-Office.CustomXmlNode.baseName:
+Office.CustomXmlNode#baseName:member:
   - |-
     function showXmlNodeBaseNames() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -720,7 +720,7 @@ Office.CustomXmlNode.baseName:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlNode.getNodesAsync_1:
+Office.CustomXmlNode#getNodesAsync:member(2):
   - |-
     function showXmlChildNodes() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -740,7 +740,7 @@ Office.CustomXmlNode.getNodesAsync_1:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlNode.getNodeValueAsync_1:
+Office.CustomXmlNode#getNodeValueAsync:member(2):
   - |-
     function showXmlNodeValues() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -760,7 +760,7 @@ Office.CustomXmlNode.getNodeValueAsync_1:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlNode.getTextAsync:
+Office.CustomXmlNode#getTextAsync:member(1):
   - |-
     // Get the built-in core properties XML part by using its ID. This results in a call to Word.
     Office.context.document.customXmlParts.getByIdAsync(
@@ -795,7 +795,7 @@ Office.CustomXmlNode.getTextAsync:
             });
         });
     });
-Office.CustomXmlNode.getXmlAsync_1:
+Office.CustomXmlNode#getXmlAsync:member(2):
   - |-
     function showXmlNodeInnerXml() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -815,7 +815,7 @@ Office.CustomXmlNode.getXmlAsync_1:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlNode.namespaceUri:
+Office.CustomXmlNode#namespaceUri:member:
   - |-
     function showXmlNamespaceUri() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -833,7 +833,7 @@ Office.CustomXmlNode.namespaceUri:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlNode.nodeType:
+Office.CustomXmlNode#nodeType:member:
   - |-
     function showXmlNodeType() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -851,7 +851,7 @@ Office.CustomXmlNode.nodeType:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlNode.setNodeValueAsync_1:
+Office.CustomXmlNode#setNodeValueAsync:member(2):
   - |-
     function setXmlNodeValue() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -870,7 +870,7 @@ Office.CustomXmlNode.setNodeValueAsync_1:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlNode.setTextAsync:
+Office.CustomXmlNode#setTextAsync:member(1):
   - |-
     // Learn how to set the text value of a node in a custom XML part from the following example.
 
@@ -912,7 +912,7 @@ Office.CustomXmlNode.setTextAsync:
             });
         });
     });
-Office.CustomXmlNode.setXmlAsync:
+Office.CustomXmlNode#setXmlAsync:member(1):
   - |-
     function setXmlNodeInnerXml() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -926,7 +926,7 @@ Office.CustomXmlNode.setXmlAsync:
             });
         });
     }
-Office.CustomXmlPart.addHandlerAsync_1:
+Office.CustomXmlPart#addHandlerAsync:member(2):
   - |-
     // To add an event handler for the NodeDeleted event, use the addHandlerAsync method of the CustomXmlPart object.
     function addNodeDeletedEvent() {
@@ -972,7 +972,7 @@ Office.CustomXmlPart.addHandlerAsync_1:
     function write(message){
         document.getElementById('message').innerText += message;
     }
-Office.CustomXmlPart.builtIn:
+Office.CustomXmlPart#builtIn:member:
   - |-
     function showXMLPartBuiltIn() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -986,7 +986,7 @@ Office.CustomXmlPart.builtIn:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlPart.deleteAsync_1:
+Office.CustomXmlPart#deleteAsync:member(2):
   - |-
     function deleteXMLPart() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -1001,7 +1001,7 @@ Office.CustomXmlPart.deleteAsync_1:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlPart.getNodesAsync_1:
+Office.CustomXmlPart#getNodesAsync:member(2):
   - |-
     function showXmlNodeType() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -1019,7 +1019,7 @@ Office.CustomXmlPart.getNodesAsync_1:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlPart.getXmlAsync_1:
+Office.CustomXmlPart#getXmlAsync:member(2):
   - |-
     function showXMLPartInnerXML() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -1034,7 +1034,7 @@ Office.CustomXmlPart.getXmlAsync_1:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlPart.id:
+Office.CustomXmlPart#id:member:
   - |-
     function showXMLPartBuiltId() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -1047,7 +1047,7 @@ Office.CustomXmlPart.id:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlPart.namespaceManager:
+Office.CustomXmlPart#namespaceManager:member:
   - |-
     function setXMLPartNamespaceManagerNamespace() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -1056,7 +1056,7 @@ Office.CustomXmlPart.namespaceManager:
             xmlPart.namespaceManager.addNamespaceAsync("myPrefix", "myNamespace");
         });
     }
-Office.CustomXmlPart.removeHandlerAsync_1:
+Office.CustomXmlPart#removeHandlerAsync:member(2):
   - |-
     function removeNodeInsertedEventHandler() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -1066,7 +1066,7 @@ Office.CustomXmlPart.removeHandlerAsync_1:
                 xmlPart.removeHandlerAsync(Office.EventType.DataNodeInserted, {handler:myHandler});
         });
     }
-Office.CustomXmlParts.addAsync_1:
+Office.CustomXmlParts#addAsync:member(2):
   - |-
     function addXMLPart() {
         Office.context.document.customXmlParts.addAsync(
@@ -1089,7 +1089,7 @@ Office.CustomXmlParts.addAsync_1:
     function write(message){
         document.getElementById('message').innerText += message;
     }
-Office.CustomXmlParts.getByIdAsync:
+Office.CustomXmlParts#getByIdAsync:member(1):
   - |-
     function showXMLPartInnerXML() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -1104,7 +1104,7 @@ Office.CustomXmlParts.getByIdAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlParts.getByNamespaceAsync_1:
+Office.CustomXmlParts#getByNamespaceAsync:member(2):
   - |-
     function showXMLPartsInNamespace() {
         Office.context.document.customXmlParts.getByNamespaceAsync(
@@ -1117,7 +1117,7 @@ Office.CustomXmlParts.getByNamespaceAsync_1:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Document.addHandlerAsync_1:
+Office.Document#addHandlerAsync:member(2):
   - |-
     // The following example adds an event handler for the SelectionChanged event of a document
     function addSelectionChangedEventHandler() {
@@ -1346,7 +1346,7 @@ Office.Document.addHandlerAsync_1:
     // For a complete code sample that shows how to use a ViewSelectionChanged event handler in a Project add-in,
     // see "Create your first task pane add-in for Project by using a text editor."
     // https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
-Office.Document.bindings:
+Office.Document#bindings:member:
   - |-
     function displayAllBindings() {
         Office.context.document.bindings.getAllAsync(function (asyncResult) {
@@ -1362,7 +1362,7 @@ Office.Document.bindings:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Document.customXmlParts:
+Office.Document#customXmlParts:member:
   - |-
     function getCustomXmlParts(){
         Office.context.document.customXmlParts.getByNamespaceAsync('http://tempuri.org', function (asyncResult) {
@@ -1374,7 +1374,7 @@ Office.Document.customXmlParts:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Document.getActiveViewAsync_1:
+Office.Document#getActiveViewAsync:member(2):
   - |-
     function getFileView() {
         // Get whether the current view is edit or read.
@@ -1387,7 +1387,7 @@ Office.Document.getActiveViewAsync_1:
             }
         });
     }
-Office.Document.getFileAsync:
+Office.Document#getFileAsync:member(1):
   - |-
     // The following example gets the document in Office Open XML ("compressed") format in 65536 bytes (64 KB) slices.
     // Note: The implementation of app.showNotification in this example is from the Visual Studio template for Office Add-ins.
@@ -1471,7 +1471,7 @@ Office.Document.getFileAsync:
             }
     }
     );
-Office.Document.getFilePropertiesAsync_1:
+Office.Document#getFilePropertiesAsync:member(2):
   - |-
     // To read the URL of the current file, you need to write a callback function that returns the URL.
     // The following example shows how to:
@@ -1490,7 +1490,7 @@ Office.Document.getFilePropertiesAsync_1:
             }
         });
     }
-Office.Document.getSelectedDataAsync:
+Office.Document#getSelectedDataAsync:member(1):
   - |-
     // The following example uses the getSelectedDataAsync method of the Document object to retrieve the
     // user's current selection as text, and then display it in the add-in's page.
@@ -1581,7 +1581,7 @@ Office.Document.getSelectedDataAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.goToByIdAsync_1:
+Office.Document#goToByIdAsync:member(2):
   - |-
     // Go to a binding by id (Word and Excel)
     // The following example shows how to:
@@ -1681,7 +1681,7 @@ Office.Document.goToByIdAsync_1:
             }
         });
     }
-Office.Document.mode:
+Office.Document#mode:member:
   - |-
     function displayDocumentMode() {
         write(Office.context.document.mode);
@@ -1722,7 +1722,7 @@ Office.Document.mode:
             $('#message').html(output);
         }
     })();
-Office.Document.removeHandlerAsync_1:
+Office.Document#removeHandlerAsync:member(2):
   - |-
     // The following example removes the event handler named 'MyHandler'.
     function removeSelectionChangedEventHandler() {
@@ -1793,7 +1793,7 @@ Office.Document.removeHandlerAsync_1:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.setSelectedDataAsync:
+Office.Document#setSelectedDataAsync:member(1):
   - |-
     // The following example sets the selected text or cell to "Hello World!", 
     // and if that fails, displays the value of the error.message property.
@@ -1906,7 +1906,7 @@ Office.Document.setSelectedDataAsync:
                 }
             });
     }
-Office.Document.url:
+Office.Document#url:member:
   - |-
     function displayDocumentUrl() {
         write(Office.context.document.url);
@@ -1916,7 +1916,7 @@ Office.Document.url:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Error.code:
+Office.Error#code:member:
   - |-
     // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
     function setText() {
@@ -1932,7 +1932,7 @@ Office.Error.code:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Error.message:
+Office.Error#message:member:
   - |-
     // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
     function setText() {
@@ -1948,7 +1948,7 @@ Office.Error.message:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Error.name:
+Office.Error#name:member:
   - |-
     // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
     function setText() {
@@ -1964,7 +1964,7 @@ Office.Error.name:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.initialize:
+Office.initialize:function(1):
   - |-
     // You can use the value of the InitializationEnumeration to implement different logic for
     // when the add-in is first inserted versus when it is already part of the document.
@@ -1987,7 +1987,7 @@ Office.initialize:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.MatrixBinding.columnCount:
+Office.MatrixBinding#columnCount:member:
   - |-
     function showBindingColumnCount() {
         Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
@@ -1998,7 +1998,7 @@ Office.MatrixBinding.columnCount:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.MatrixBinding.rowCount:
+Office.MatrixBinding#rowCount:member:
   - |-
     function showBindingRowCount() {
         Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
@@ -2009,7 +2009,7 @@ Office.MatrixBinding.rowCount:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.OfficeTheme:
+Office.OfficeTheme:interface:
   - |-
     function applyOfficeTheme(){
         // Get office theme colors.
@@ -2021,7 +2021,7 @@ Office.OfficeTheme:
         // Apply body background color to a CSS class.
         $('.body').css('background-color', bodyBackgroundColor);
     }
-Office.Document.getMaxResourceIndexAsync_1:
+Office.Document#getMaxResourceIndexAsync:member(2):
   - |-
     // The following code example calls getResourceTaskIndexAsync to get the maximum index of the collection 
     // of resources in the current project. Then it uses the returned value and the getResourceByIndexAsync
@@ -2098,7 +2098,7 @@ Office.Document.getMaxResourceIndexAsync_1:
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getMaxTaskIndexAsync_1:
+Office.Document#getMaxTaskIndexAsync:member(2):
   - |-
     // The following code example calls getMaxTaskIndexAsync to get the maximum index
     // of the collection of tasks in the current project. Then it uses the returned value
@@ -2175,7 +2175,7 @@ Office.Document.getMaxTaskIndexAsync_1:
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getProjectFieldAsync_1:
+Office.Document#getProjectFieldAsync:member(2):
   - |-
     // The following code example gets the values of three specified fields for the active project, 
     // and then displays the values in the add-in.
@@ -2239,7 +2239,7 @@ Office.Document.getProjectFieldAsync_1:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getResourceByIndexAsync_1:
+Office.Document#getResourceByIndexAsync:member(2):
   - |-
     // The following code example calls getMaxResourceIndexAsync to get the maximum index in the project's resource
     // collection, and then calls getResourceByIndexAsync to get the GUID for each resource.
@@ -2316,7 +2316,7 @@ Office.Document.getResourceByIndexAsync_1:
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getResourceFieldAsync_1:
+Office.Document#getResourceFieldAsync:member(2):
   - |-
     // The following code example calls getSelectedResourceAsync to get the GUID of the resource
     // that's currently selected in a resource view. Then it gets three resource field values by calling 
@@ -2406,7 +2406,7 @@ Office.Document.getResourceFieldAsync_1:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getSelectedResourceAsync_1:
+Office.Document#getSelectedResourceAsync:member(2):
   - |-
     // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's 
     // currently selected in a resource view. Then it gets three resource field values by calling 
@@ -2496,7 +2496,7 @@ Office.Document.getSelectedResourceAsync_1:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getSelectedTaskAsync_1:
+Office.Document#getSelectedTaskAsync:member(2):
   - |-
     // The following code example calls getSelectedTaskAsync to get the GUID of the task that's currently
     // selected in a task view. Then it gets task properties by calling getTaskAsync.
@@ -2565,7 +2565,7 @@ Office.Document.getSelectedTaskAsync_1:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getSelectedViewAsync_1:
+Office.Document#getSelectedViewAsync:member(2):
   - |-
     // The following code example calls adds a ViewSelectionChanged event handler that
     // calls getSelectedViewAsync to get the name and type of the active view in the document.
@@ -2609,7 +2609,7 @@ Office.Document.getSelectedViewAsync_1:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getTaskAsync_1:
+Office.Document#getTaskAsync:member(2):
   - |-
     // The following code example calls getSelectedTaskAsync to get the task GUID of the currently
     // selected task. Then it calls getTaskAsync to get the properties for the task that are
@@ -2679,7 +2679,7 @@ Office.Document.getTaskAsync_1:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getTaskByIndexAsync_1:
+Office.Document#getTaskByIndexAsync:member(2):
   - |-
     // The following code example calls getMaxTaskIndexAsync to get the
     // maximum index in the project's task collection, and then
@@ -2757,7 +2757,7 @@ Office.Document.getTaskByIndexAsync_1:
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getTaskFieldAsync_1:
+Office.Document#getTaskFieldAsync:member(2):
   - |-
     // The following code example calls getSelectedTaskAsync to get the GUID of the task that's currently
     // selected in a task view. Then it gets two task field values by calling getTaskFieldAsync recursively.
@@ -2843,7 +2843,7 @@ Office.Document.getTaskFieldAsync_1:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.setResourceFieldAsync_1:
+Office.Document#setResourceFieldAsync:member(2):
   - |-
     // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's
     // currently selected in a resource view. Then it sets two resource field values by calling
@@ -2922,7 +2922,7 @@ Office.Document.setResourceFieldAsync_1:
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.setTaskFieldAsync_1:
+Office.Document#setTaskFieldAsync:member(2):
   - |-
     // The following code example calls getSelectedTaskAsync to get the GUID of the task that's
     // currently selected in a task view. Then it sets two task field values by calling
@@ -3001,7 +3001,7 @@ Office.Document.setTaskFieldAsync_1:
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.select:
+Office.select:function(1):
   - |-
     // The following code example uses the select method to retrieve a binding with the id "cities" from
     // the Bindings collection, and then calls the addHandlerAsync method to add an event handler for the
@@ -3012,7 +3012,7 @@ Office.select:
             doSomethingWithBinding(eventArgs.binding);
         });
     }
-Office.Settings.addHandlerAsync_1:
+Office.Settings#addHandlerAsync:member(2):
   - |-
     function addSelectionChangedEventHandler() {
         Office.context.document.settings.addHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
@@ -3027,7 +3027,7 @@ Office.Settings.addHandlerAsync_1:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Settings.get:
+Office.Settings#get:member(1):
   - |-
     function displayMySetting() {
         write('Current value for mySetting: ' + Office.context.document.settings.get('mySetting'));
@@ -3036,7 +3036,7 @@ Office.Settings.get:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Settings.refreshAsync:
+Office.Settings#refreshAsync:member(1):
   - |-
     function refreshSettings() {
         Office.context.document.settings.refreshAsync(function (asyncResult) {
@@ -3047,12 +3047,12 @@ Office.Settings.refreshAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Settings.remove:
+Office.Settings#remove:member(1):
   - |-
     function removeMySetting() {
         Office.context.document.settings.remove('mySetting');
     }
-Office.Settings.removeHandlerAsync_1:
+Office.Settings#removeHandlerAsync:member(2):
   - |-
     function removeSettingsChangedEventHandler() {
         Office.context.document.settings.removeHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
@@ -3067,7 +3067,7 @@ Office.Settings.removeHandlerAsync_1:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Settings.saveAsync_1:
+Office.Settings#saveAsync:member(2):
   - |-
     function persistSettings() {
         Office.context.document.settings.saveAsync(function (asyncResult) {
@@ -3078,12 +3078,12 @@ Office.Settings.saveAsync_1:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Settings.set:
+Office.Settings#set:member(1):
   - |-
     function setMySetting() {
         Office.context.document.settings.set('mySetting', 'mySetting value');
     }
-Office.TableBinding.addColumnsAsync:
+Office.TableBinding#addColumnsAsync:member(1):
   - |-
     // The following example adds a single column with three rows to a bound table with the id "myTable"
     // by passing a TableData object as the data argument of the addColumnsAsync method. To succeed,
@@ -3112,7 +3112,7 @@ Office.TableBinding.addColumnsAsync:
             result.value.addColumnsAsync(myTable);
         });
     }
-Office.TableBinding.addRowsAsync:
+Office.TableBinding#addRowsAsync:member(1):
   - |-
     function addRowsToTable() {
         Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
@@ -3120,11 +3120,11 @@ Office.TableBinding.addRowsAsync:
             binding.addRowsAsync([["6", "k"], ["7", "j"]]);
         });
     }
-Office.TableBinding.clearFormatsAsync:
+Office.TableBinding#clearFormatsAsync:member(1):
   - |-
     // The following example shows how to clear the formatting of the bound table with an ID of "myBinding":
     Office.select("bindings#myBinding").clearFormatsAsync();
-Office.TableBinding.columnCount:
+Office.TableBinding#columnCount:member:
   - |-
     function showBindingColumnCount() {
         Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
@@ -3135,7 +3135,7 @@ Office.TableBinding.columnCount:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.TableBinding.deleteAllDataValuesAsync:
+Office.TableBinding#deleteAllDataValuesAsync:member(1):
   - |-
     function deleteAllRowsFromTable() {
         Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
@@ -3143,7 +3143,7 @@ Office.TableBinding.deleteAllDataValuesAsync:
             binding.deleteAllDataValuesAsync();
         });
     }
-Office.TableBinding.hasHeaders:
+Office.TableBinding#hasHeaders:member:
   - |-
     function showBindingHasHeaders() {
         Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
@@ -3154,7 +3154,7 @@ Office.TableBinding.hasHeaders:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.TableBinding.rowCount:
+Office.TableBinding#rowCount:member:
   - |-
     function showBindingRowCount() {
         Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
@@ -3165,7 +3165,7 @@ Office.TableBinding.rowCount:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.TableBinding.setTableOptionsAsync:
+Office.TableBinding#setTableOptionsAsync:member(1):
   - |-
     // The following example shows how to:
     // 1. Create an object literal that specifies the table formatting options to update on the bound table.
@@ -3176,7 +3176,7 @@ Office.TableBinding.setTableOptionsAsync:
 
         Office.select("bindings#myBinding").setTableOptionsAsync(tableOptions, function(asyncResult){});
     }
-Office.TableBinding.setFormatsAsync:
+Office.TableBinding#setFormatsAsync:member(1):
   - |-
     // Specifying a single target
     // The following example shows a cellFormat value that sets the font color of the header row to red.
@@ -3203,7 +3203,7 @@ Office.TableBinding.setFormatsAsync:
         [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
             {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}], 
         function (asyncResult){});
-Office.TableData.headers:
+Office.TableData#headers:member:
   - |-
     // The following example creates a single-column table with a header and three rows.
     function createTableData() {
@@ -3212,7 +3212,7 @@ Office.TableData.headers:
         tableData.rows = [['row1'], ['row2'], ['row3']];
         return tableData;
     }
-Office.TableData.rows:
+Office.TableData#rows:member:
   - |-
     // The following example creates a single-column table with a header and three rows.
     function createTableData() {
@@ -3221,7 +3221,7 @@ Office.TableData.rows:
         tableData.rows = [['row1'], ['row2'], ['row3']];
         return tableData;
     }
-Office.useShortNamespace:
+Office.useShortNamespace:function(1):
   - |-
     function startUsingShortNamespace() {
         if (typeof Office === 'undefined') {
@@ -3247,7 +3247,7 @@ Office.useShortNamespace:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-OfficeExtension.LoadOption:
+OfficeExtension.LoadOption:interface:
   - |-
     // This example shows how to get the paragraphs in the Word document
     // along with their text and font size properties.
@@ -3274,7 +3274,7 @@ OfficeExtension.LoadOption:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-OfficeExtension.LoadOption.top:
+OfficeExtension.LoadOption#top:member:
   - |-
     // This OneNote example shows how to get the page title and indentation level
     // of the top five pages in the current section.

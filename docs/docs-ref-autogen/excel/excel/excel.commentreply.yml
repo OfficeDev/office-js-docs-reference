@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CommentReply
+  - uid: 'excel!Excel.CommentReply:class'
     summary: >-
       Represents a cell comment reply object in the workbook.
 
@@ -14,26 +14,26 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.CommentReply.authorEmail
-      - excel.Excel.CommentReply.authorName
-      - excel.Excel.CommentReply.content
-      - excel.Excel.CommentReply.context
-      - excel.Excel.CommentReply.creationDate
-      - excel.Excel.CommentReply.delete
-      - excel.Excel.CommentReply.getLocation
-      - excel.Excel.CommentReply.getParentComment
-      - excel.Excel.CommentReply.id
-      - excel.Excel.CommentReply.load
-      - excel.Excel.CommentReply.load_1
-      - excel.Excel.CommentReply.load_2
-      - excel.Excel.CommentReply.resolved
-      - excel.Excel.CommentReply.set
-      - excel.Excel.CommentReply.set_1
-      - excel.Excel.CommentReply.toJSON
-  - uid: excel.Excel.CommentReply.authorEmail
+      - 'excel!Excel.CommentReply#authorEmail:member'
+      - 'excel!Excel.CommentReply#authorName:member'
+      - 'excel!Excel.CommentReply#content:member'
+      - 'excel!Excel.CommentReply#context:member'
+      - 'excel!Excel.CommentReply#creationDate:member'
+      - 'excel!Excel.CommentReply#delete:member(1)'
+      - 'excel!Excel.CommentReply#getLocation:member(1)'
+      - 'excel!Excel.CommentReply#getParentComment:member(1)'
+      - 'excel!Excel.CommentReply#id:member'
+      - 'excel!Excel.CommentReply#load:member(1)'
+      - 'excel!Excel.CommentReply#load:member(2)'
+      - 'excel!Excel.CommentReply#load:member(3)'
+      - 'excel!Excel.CommentReply#resolved:member'
+      - 'excel!Excel.CommentReply#set:member(1)'
+      - 'excel!Excel.CommentReply#set:member(2)'
+      - 'excel!Excel.CommentReply#toJSON:member(1)'
+  - uid: 'excel!Excel.CommentReply#authorEmail:member'
     summary: >-
       Gets the email of the comment reply's author.
 
@@ -51,7 +51,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.CommentReply.authorName
+  - uid: 'excel!Excel.CommentReply#authorName:member'
     summary: >-
       Gets the name of the comment reply's author.
 
@@ -69,7 +69,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.CommentReply.content
+  - uid: 'excel!Excel.CommentReply#content:member'
     summary: >-
       Gets or sets the comment reply's content. The string is plain text.
 
@@ -99,7 +99,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.CommentReply.context
+  - uid: 'excel!Excel.CommentReply#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -113,8 +113,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.CommentReply.creationDate
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.CommentReply#creationDate:member'
     summary: >-
       Gets the creation time of the comment reply.
 
@@ -131,8 +131,8 @@ items:
       content: 'readonly creationDate: Date;'
       return:
         type:
-          - Date
-  - uid: excel.Excel.CommentReply.delete
+          - '!Date:interface'
+  - uid: 'excel!Excel.CommentReply#delete:member(1)'
     summary: >-
       Deletes the comment reply.
 
@@ -165,7 +165,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.CommentReply.getLocation
+  - uid: 'excel!Excel.CommentReply#getLocation:member(1)'
     summary: >-
       Gets the cell where this comment reply is located.
 
@@ -182,9 +182,9 @@ items:
       content: 'getLocation(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
-  - uid: excel.Excel.CommentReply.getParentComment
+  - uid: 'excel!Excel.CommentReply#getParentComment:member(1)'
     summary: >-
       Gets the parent comment of this reply.
 
@@ -201,9 +201,9 @@ items:
       content: 'getParentComment(): Excel.Comment;'
       return:
         type:
-          - excel.Excel.Comment
+          - 'excel!Excel.Comment:class'
         description: ''
-  - uid: excel.Excel.CommentReply.id
+  - uid: 'excel!Excel.CommentReply#id:member'
     summary: >-
       Represents the comment reply identifier. Read-only.
 
@@ -221,7 +221,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.CommentReply.load
+  - uid: 'excel!Excel.CommentReply#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -253,14 +253,14 @@ items:
       content: 'load(option?: Excel.Interfaces.CommentReplyLoadOptions): Excel.CommentReply;'
       return:
         type:
-          - excel.Excel.CommentReply
+          - 'excel!Excel.CommentReply:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.CommentReplyLoadOptions
-  - uid: excel.Excel.CommentReply.load_1
+            - 'excel!Excel.Interfaces.CommentReplyLoadOptions:interface'
+  - uid: 'excel!Excel.CommentReply#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -274,14 +274,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.CommentReply;'
       return:
         type:
-          - excel.Excel.CommentReply
+          - 'excel!Excel.CommentReply:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.CommentReply.load_2
+  - uid: 'excel!Excel.CommentReply#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -295,7 +295,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.CommentReply;'
       return:
         type:
-          - excel.Excel.CommentReply
+          - 'excel!Excel.CommentReply:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -304,7 +304,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.CommentReply.resolved
+  - uid: 'excel!Excel.CommentReply#resolved:member'
     summary: >-
       Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
 
@@ -322,7 +322,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CommentReply.set
+  - uid: 'excel!Excel.CommentReply#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -348,12 +348,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.CommentReplyUpdateData
+            - 'excel!Excel.Interfaces.CommentReplyUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.CommentReply.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.CommentReply#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     isPreview: true
     name: set(properties)
@@ -371,8 +371,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.CommentReply
-  - uid: excel.Excel.CommentReply.toJSON
+            - 'excel!Excel.CommentReply:class'
+  - uid: 'excel!Excel.CommentReply#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -389,5 +389,26 @@ items:
       content: 'toJSON(): Excel.Interfaces.CommentReplyData;'
       return:
         type:
-          - excel.Excel.Interfaces.CommentReplyData
+          - 'excel!Excel.Interfaces.CommentReplyData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: '!Date:interface'
+    name: Date
+  - uid: 'excel!Excel.Range:class'
+    name: Excel.Range
+  - uid: 'excel!Excel.Comment:class'
+    name: Excel.Comment
+  - uid: 'excel!Excel.CommentReply:class'
+    name: Excel.CommentReply
+  - uid: 'excel!Excel.Interfaces.CommentReplyLoadOptions:interface'
+    name: Excel.Interfaces.CommentReplyLoadOptions
+  - uid: 'excel!Excel.Interfaces.CommentReplyUpdateData:interface'
+    name: Interfaces.CommentReplyUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.CommentReplyData:interface'
+    name: Excel.Interfaces.CommentReplyData

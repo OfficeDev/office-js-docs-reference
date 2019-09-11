@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.TableRowLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions:interface'
     summary: |-
       Represents a row in a table.
 
@@ -10,15 +10,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.TableRowLoadOptions.$all
-      - onenote.OneNote.Interfaces.TableRowLoadOptions.cellCount
-      - onenote.OneNote.Interfaces.TableRowLoadOptions.cells
-      - onenote.OneNote.Interfaces.TableRowLoadOptions.id
-      - onenote.OneNote.Interfaces.TableRowLoadOptions.parentTable
-      - onenote.OneNote.Interfaces.TableRowLoadOptions.rowIndex
-  - uid: onenote.OneNote.Interfaces.TableRowLoadOptions.$all
+      - 'onenote!OneNote.Interfaces.TableRowLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.TableRowLoadOptions#cellCount:member'
+      - 'onenote!OneNote.Interfaces.TableRowLoadOptions#cells:member'
+      - 'onenote!OneNote.Interfaces.TableRowLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.TableRowLoadOptions#parentTable:member'
+      - 'onenote!OneNote.Interfaces.TableRowLoadOptions#rowIndex:member'
+  - uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.TableRowLoadOptions.cellCount
+  - uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#cellCount:member'
     summary: |-
       Gets the number of cells in the row. Read-only.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.TableRowLoadOptions.cells
+  - uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#cells:member'
     summary: |-
       Gets the cells in the row.
 
@@ -58,8 +58,8 @@ items:
       content: 'cells?: OneNote.Interfaces.TableCellCollectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableCellCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.TableRowLoadOptions.id
+          - 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#id:member'
     summary: |-
       Gets the ID of the row. Read-only.
 
@@ -74,7 +74,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.TableRowLoadOptions.parentTable
+  - uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#parentTable:member'
     summary: |-
       Gets the parent table.
 
@@ -88,8 +88,8 @@ items:
       content: 'parentTable?: OneNote.Interfaces.TableLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableLoadOptions
-  - uid: onenote.OneNote.Interfaces.TableRowLoadOptions.rowIndex
+          - 'onenote!OneNote.Interfaces.TableLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions#rowIndex:member'
     summary: |-
       Gets the index of the row in its parent table. Read-only.
 
@@ -104,3 +104,8 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions:interface'
+    name: OneNote.Interfaces.TableCellCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.TableLoadOptions:interface'
+    name: OneNote.Interfaces.TableLoadOptions

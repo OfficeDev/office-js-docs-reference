@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.DataValidationType
+  - uid: 'excel!Excel.DataValidationType:enum'
     summary: |-
       Represents Data validation type enum.
 
@@ -10,19 +10,19 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.DataValidationType.custom
-      - excel.Excel.DataValidationType.date
-      - excel.Excel.DataValidationType.decimal
-      - excel.Excel.DataValidationType.inconsistent
-      - excel.Excel.DataValidationType.list
-      - excel.Excel.DataValidationType.mixedCriteria
-      - excel.Excel.DataValidationType.none
-      - excel.Excel.DataValidationType.textLength
-      - excel.Excel.DataValidationType.time
-      - excel.Excel.DataValidationType.wholeNumber
-  - uid: excel.Excel.DataValidationType.custom
+      - 'excel!Excel.DataValidationType.custom:member'
+      - 'excel!Excel.DataValidationType.date:member'
+      - 'excel!Excel.DataValidationType.decimal:member'
+      - 'excel!Excel.DataValidationType.inconsistent:member'
+      - 'excel!Excel.DataValidationType.list:member'
+      - 'excel!Excel.DataValidationType.mixedCriteria:member'
+      - 'excel!Excel.DataValidationType.none:member'
+      - 'excel!Excel.DataValidationType.textLength:member'
+      - 'excel!Excel.DataValidationType.time:member'
+      - 'excel!Excel.DataValidationType.wholeNumber:member'
+  - uid: 'excel!Excel.DataValidationType.custom:member'
     summary: Custom data validation type
     name: custom
     fullName: custom
@@ -30,7 +30,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Custom"'
-  - uid: excel.Excel.DataValidationType.date
+  - uid: 'excel!Excel.DataValidationType.date:member'
     summary: Date data validation type
     name: date
     fullName: date
@@ -38,7 +38,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Date"'
-  - uid: excel.Excel.DataValidationType.decimal
+  - uid: 'excel!Excel.DataValidationType.decimal:member'
     summary: Decimal data validation type
     name: decimal
     fullName: decimal
@@ -46,7 +46,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Decimal"'
-  - uid: excel.Excel.DataValidationType.inconsistent
+  - uid: 'excel!Excel.DataValidationType.inconsistent:member'
     summary: Inconsistent means that the range has inconsistent data validation (there are different rules on different cells)
     name: inconsistent
     fullName: inconsistent
@@ -54,7 +54,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Inconsistent"'
-  - uid: excel.Excel.DataValidationType.list
+  - uid: 'excel!Excel.DataValidationType.list:member'
     summary: List data validation type
     name: list
     fullName: list
@@ -62,7 +62,7 @@ items:
       - typeScript
     type: field
     numericValue: '"List"'
-  - uid: excel.Excel.DataValidationType.mixedCriteria
+  - uid: 'excel!Excel.DataValidationType.mixedCriteria:member'
     summary: MixedCriteria means that the range has data validation present on some but not all cells
     name: mixedCriteria
     fullName: mixedCriteria
@@ -70,7 +70,7 @@ items:
       - typeScript
     type: field
     numericValue: '"MixedCriteria"'
-  - uid: excel.Excel.DataValidationType.none
+  - uid: 'excel!Excel.DataValidationType.none:member'
     summary: None means allow any value and so there is no data validation in the range.
     name: none
     fullName: none
@@ -78,7 +78,7 @@ items:
       - typeScript
     type: field
     numericValue: '"None"'
-  - uid: excel.Excel.DataValidationType.textLength
+  - uid: 'excel!Excel.DataValidationType.textLength:member'
     summary: Text length data validation type
     name: textLength
     fullName: textLength
@@ -86,7 +86,7 @@ items:
       - typeScript
     type: field
     numericValue: '"TextLength"'
-  - uid: excel.Excel.DataValidationType.time
+  - uid: 'excel!Excel.DataValidationType.time:member'
     summary: Time data validation type
     name: time
     fullName: time
@@ -94,7 +94,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Time"'
-  - uid: excel.Excel.DataValidationType.wholeNumber
+  - uid: 'excel!Excel.DataValidationType.wholeNumber:member'
     summary: Whole number data validation type
     name: wholeNumber
     fullName: wholeNumber

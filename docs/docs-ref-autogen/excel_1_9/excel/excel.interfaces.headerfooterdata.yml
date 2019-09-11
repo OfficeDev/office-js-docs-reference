@@ -1,21 +1,21 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.HeaderFooterData
+  - uid: 'excel!Excel.Interfaces.HeaderFooterData:interface'
     summary: An interface describing the data returned by calling "headerFooter.toJSON()".
     name: Excel.Interfaces.HeaderFooterData
     fullName: Excel.Interfaces.HeaderFooterData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.HeaderFooterData.centerFooter
-      - excel.Excel.Interfaces.HeaderFooterData.centerHeader
-      - excel.Excel.Interfaces.HeaderFooterData.leftFooter
-      - excel.Excel.Interfaces.HeaderFooterData.leftHeader
-      - excel.Excel.Interfaces.HeaderFooterData.rightFooter
-      - excel.Excel.Interfaces.HeaderFooterData.rightHeader
-  - uid: excel.Excel.Interfaces.HeaderFooterData.centerFooter
+      - 'excel!Excel.Interfaces.HeaderFooterData#centerFooter:member'
+      - 'excel!Excel.Interfaces.HeaderFooterData#centerHeader:member'
+      - 'excel!Excel.Interfaces.HeaderFooterData#leftFooter:member'
+      - 'excel!Excel.Interfaces.HeaderFooterData#leftHeader:member'
+      - 'excel!Excel.Interfaces.HeaderFooterData#rightFooter:member'
+      - 'excel!Excel.Interfaces.HeaderFooterData#rightHeader:member'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterData#centerFooter:member'
     summary: >-
       Gets or sets the center footer of the worksheet. To apply font formatting or insert a variable value, use format
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.HeaderFooterData.centerHeader
+  - uid: 'excel!Excel.Interfaces.HeaderFooterData#centerHeader:member'
     summary: >-
       Gets or sets the center header of the worksheet. To apply font formatting or insert a variable value, use format
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
@@ -49,7 +49,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.HeaderFooterData.leftFooter
+  - uid: 'excel!Excel.Interfaces.HeaderFooterData#leftFooter:member'
     summary: >-
       Gets or sets the left footer of the worksheet. To apply font formatting or insert a variable value, use format
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
@@ -66,7 +66,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.HeaderFooterData.leftHeader
+  - uid: 'excel!Excel.Interfaces.HeaderFooterData#leftHeader:member'
     summary: >-
       Gets or sets the left header of the worksheet. To apply font formatting or insert a variable value, use format
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
@@ -83,7 +83,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.HeaderFooterData.rightFooter
+  - uid: 'excel!Excel.Interfaces.HeaderFooterData#rightFooter:member'
     summary: >-
       Gets or sets the right footer of the worksheet. To apply font formatting or insert a variable value, use format
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
@@ -100,7 +100,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.HeaderFooterData.rightHeader
+  - uid: 'excel!Excel.Interfaces.HeaderFooterData#rightHeader:member'
     summary: >-
       Gets or sets the right header of the worksheet. To apply font formatting or insert a variable value, use format
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.

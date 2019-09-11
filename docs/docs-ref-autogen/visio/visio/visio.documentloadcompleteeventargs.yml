@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.DocumentLoadCompleteEventArgs
+  - uid: 'visio!Visio.DocumentLoadCompleteEventArgs:interface'
     summary: |-
       Provides information about the success or failure of the DocumentLoadComplete event.
 
@@ -10,7 +10,7 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     remarks: |-
 
 
@@ -35,8 +35,8 @@ items:
       });
       ```
     children:
-      - visio.Visio.DocumentLoadCompleteEventArgs.success
-  - uid: visio.Visio.DocumentLoadCompleteEventArgs.success
+      - 'visio!Visio.DocumentLoadCompleteEventArgs#success:member'
+  - uid: 'visio!Visio.DocumentLoadCompleteEventArgs#success:member'
     summary: |-
       Gets the success or failure of the DocumentLoadComplete event.
 

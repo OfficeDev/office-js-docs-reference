@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotItemData
+  - uid: 'excel!Excel.Interfaces.PivotItemData:interface'
     summary: An interface describing the data returned by calling "pivotItem.toJSON()".
     name: Excel.Interfaces.PivotItemData
     fullName: Excel.Interfaces.PivotItemData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotItemData.id
-      - excel.Excel.Interfaces.PivotItemData.isExpanded
-      - excel.Excel.Interfaces.PivotItemData.name
-      - excel.Excel.Interfaces.PivotItemData.visible
-  - uid: excel.Excel.Interfaces.PivotItemData.id
+      - 'excel!Excel.Interfaces.PivotItemData#id:member'
+      - 'excel!Excel.Interfaces.PivotItemData#isExpanded:member'
+      - 'excel!Excel.Interfaces.PivotItemData#name:member'
+      - 'excel!Excel.Interfaces.PivotItemData#visible:member'
+  - uid: 'excel!Excel.Interfaces.PivotItemData#id:member'
     summary: |-
       Id of the PivotItem.
 
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.PivotItemData.isExpanded
+  - uid: 'excel!Excel.Interfaces.PivotItemData#isExpanded:member'
     summary: |-
       Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotItemData.name
+  - uid: 'excel!Excel.Interfaces.PivotItemData#name:member'
     summary: |-
       Name of the PivotItem.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.PivotItemData.visible
+  - uid: 'excel!Excel.Interfaces.PivotItemData#visible:member'
     summary: |-
       Determines whether the PivotItem is visible or not.
 

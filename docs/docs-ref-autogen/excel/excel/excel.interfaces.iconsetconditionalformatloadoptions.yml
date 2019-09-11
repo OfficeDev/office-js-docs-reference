@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface'
     summary: |-
       Represents an IconSet criteria for conditional formatting.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.IconSetConditionalFormatLoadOptions.$all
-      - excel.Excel.Interfaces.IconSetConditionalFormatLoadOptions.criteria
-      - excel.Excel.Interfaces.IconSetConditionalFormatLoadOptions.reverseIconOrder
-      - excel.Excel.Interfaces.IconSetConditionalFormatLoadOptions.showIconOnly
-      - excel.Excel.Interfaces.IconSetConditionalFormatLoadOptions.style
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatLoadOptions.$all
+      - 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#criteria:member'
+      - 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#reverseIconOrder:member'
+      - 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#showIconOnly:member'
+      - 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#style:member'
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatLoadOptions.criteria
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#criteria:member'
     summary: >-
       An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for
       the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when
@@ -46,7 +46,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatLoadOptions.reverseIconOrder
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#reverseIconOrder:member'
     summary: |-
       If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
 
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatLoadOptions.showIconOnly
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#showIconOnly:member'
     summary: |-
       If true, hides the values and only shows icons.
 
@@ -76,7 +76,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatLoadOptions.style
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions#style:member'
     summary: |-
       If set, displays the IconSet option for the conditional format.
 

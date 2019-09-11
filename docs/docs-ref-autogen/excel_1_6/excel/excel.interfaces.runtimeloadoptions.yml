@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RuntimeLoadOptions
+  - uid: 'excel!Excel.Interfaces.RuntimeLoadOptions:interface'
     summary: |-
       Represents the Excel Runtime class.
 
@@ -10,10 +10,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RuntimeLoadOptions.$all
-  - uid: excel.Excel.Interfaces.RuntimeLoadOptions.$all
+      - 'excel!Excel.Interfaces.RuntimeLoadOptions#$all:member'
+  - uid: 'excel!Excel.Interfaces.RuntimeLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:

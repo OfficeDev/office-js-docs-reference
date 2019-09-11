@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.DocumentCreatedLoadOptions
+  - uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions:interface'
     summary: >-
       The DocumentCreated object is the top level object created by Application.CreateDocument. A DocumentCreated object
       is a special Document object.
@@ -12,13 +12,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.DocumentCreatedLoadOptions.$all
-      - word.Word.Interfaces.DocumentCreatedLoadOptions.body
-      - word.Word.Interfaces.DocumentCreatedLoadOptions.properties
-      - word.Word.Interfaces.DocumentCreatedLoadOptions.saved
-  - uid: word.Word.Interfaces.DocumentCreatedLoadOptions.$all
+      - 'word!Word.Interfaces.DocumentCreatedLoadOptions#$all:member'
+      - 'word!Word.Interfaces.DocumentCreatedLoadOptions#body:member'
+      - 'word!Word.Interfaces.DocumentCreatedLoadOptions#properties:member'
+      - 'word!Word.Interfaces.DocumentCreatedLoadOptions#saved:member'
+  - uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentCreatedLoadOptions.body
+  - uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions#body:member'
     summary: >-
       Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
       etc..
@@ -47,8 +47,8 @@ items:
       content: 'body?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.BodyLoadOptions
-  - uid: word.Word.Interfaces.DocumentCreatedLoadOptions.properties
+          - 'word!Word.Interfaces.BodyLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions#properties:member'
     summary: >-
       Gets the properties of the document.
 
@@ -65,8 +65,8 @@ items:
       content: 'properties?: Word.Interfaces.DocumentPropertiesLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.DocumentPropertiesLoadOptions
-  - uid: word.Word.Interfaces.DocumentCreatedLoadOptions.saved
+          - 'word!Word.Interfaces.DocumentPropertiesLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions#saved:member'
     summary: >-
       Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
       changed since it was saved. Read-only.
@@ -85,3 +85,8 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
+    name: Word.Interfaces.BodyLoadOptions
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions:interface'
+    name: Word.Interfaces.DocumentPropertiesLoadOptions

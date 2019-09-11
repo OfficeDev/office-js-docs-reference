@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.ItemCompose
+  - uid: 'outlook!Office.ItemCompose:interface'
     summary: >-
-      The compose mode of [Office.context.mailbox.item](xref:outlook.Office.Item)<!-- -->.
+      The compose mode of [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
 
 
       **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
@@ -15,21 +15,21 @@ items:
       - typeScript
     type: interface
     extends:
-      - outlook.Office.Item
-    package: outlook
+      - 'outlook!Office.Item:interface'
+    package: outlook!
     children:
-      - outlook.Office.ItemCompose.addFileAttachmentAsync
-      - outlook.Office.ItemCompose.addFileAttachmentAsync_1
-      - outlook.Office.ItemCompose.addItemAttachmentAsync
-      - outlook.Office.ItemCompose.addItemAttachmentAsync_1
-      - outlook.Office.ItemCompose.getSelectedDataAsync
-      - outlook.Office.ItemCompose.getSelectedDataAsync_1
-      - outlook.Office.ItemCompose.removeAttachmentAsync
-      - outlook.Office.ItemCompose.removeAttachmentAsync_1
-      - outlook.Office.ItemCompose.setSelectedDataAsync
-      - outlook.Office.ItemCompose.setSelectedDataAsync_1
-      - outlook.Office.ItemCompose.subject
-  - uid: outlook.Office.ItemCompose.addFileAttachmentAsync
+      - 'outlook!Office.ItemCompose#addFileAttachmentAsync:member(1)'
+      - 'outlook!Office.ItemCompose#addFileAttachmentAsync:member(2)'
+      - 'outlook!Office.ItemCompose#addItemAttachmentAsync:member(1)'
+      - 'outlook!Office.ItemCompose#addItemAttachmentAsync:member(2)'
+      - 'outlook!Office.ItemCompose#getSelectedDataAsync:member(1)'
+      - 'outlook!Office.ItemCompose#getSelectedDataAsync:member(2)'
+      - 'outlook!Office.ItemCompose#removeAttachmentAsync:member(1)'
+      - 'outlook!Office.ItemCompose#removeAttachmentAsync:member(2)'
+      - 'outlook!Office.ItemCompose#setSelectedDataAsync:member(1)'
+      - 'outlook!Office.ItemCompose#setSelectedDataAsync:member(2)'
+      - 'outlook!Office.ItemCompose#subject:member'
+  - uid: 'outlook!Office.ItemCompose#addFileAttachmentAsync:member(1)'
     summary: >-
       Adds a file to a message or appointment as an attachment.
 
@@ -94,7 +94,7 @@ items:
             can provide any object they wish to access in the callback method. isInline: If true, indicates that the
             attachment will be shown inline in the message body, and should not be displayed in the attachment list.
           type:
-            - 'Office.AsyncContextOptions & { isInline: boolean }'
+            - 'outlook!Office.ItemCompose#addFileAttachmentAsync~0:complex'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -102,8 +102,8 @@ items:
             asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error
             object that provides a description of the error.
           type:
-            - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.ItemCompose.addFileAttachmentAsync_1
+            - 'outlook!Office.ItemCompose#addFileAttachmentAsync~1:complex'
+  - uid: 'outlook!Office.ItemCompose#addFileAttachmentAsync:member(2)'
     summary: >-
       Adds a file to a message or appointment as an attachment.
 
@@ -169,8 +169,8 @@ items:
             asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error
             object that provides a description of the error.
           type:
-            - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.ItemCompose.addItemAttachmentAsync
+            - 'outlook!Office.ItemCompose#addFileAttachmentAsync~2:complex'
+  - uid: 'outlook!Office.ItemCompose#addItemAttachmentAsync:member(1)'
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
 
@@ -232,7 +232,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -240,8 +240,8 @@ items:
             asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error
             object that provides a description of the error.
           type:
-            - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.ItemCompose.addItemAttachmentAsync_1
+            - 'outlook!Office.ItemCompose#addItemAttachmentAsync~0:complex'
+  - uid: 'outlook!Office.ItemCompose#addItemAttachmentAsync:member(2)'
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
 
@@ -305,8 +305,8 @@ items:
             asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error
             object that provides a description of the error.
           type:
-            - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.ItemCompose.getSelectedDataAsync
+            - 'outlook!Office.ItemCompose#addItemAttachmentAsync~1:complex'
+  - uid: 'outlook!Office.ItemCompose#getSelectedDataAsync:member(1)'
     summary: >-
       Asynchronously returns selected data from the subject or body of a message.
 
@@ -346,20 +346,20 @@ items:
             Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML
             tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
           type:
-            - Office.CoercionType | string
+            - 'outlook!Office.ItemCompose#getSelectedDataAsync~0:complex'
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(asyncResult: Office.AsyncResult<any>) => void'
-  - uid: outlook.Office.ItemCompose.getSelectedDataAsync_1
+            - 'outlook!Office.ItemCompose#getSelectedDataAsync~1:complex'
+  - uid: 'outlook!Office.ItemCompose#getSelectedDataAsync:member(2)'
     summary: >-
       Asynchronously returns selected data from the subject or body of a message.
 
@@ -399,14 +399,14 @@ items:
             Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML
             tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
           type:
-            - Office.CoercionType | string
+            - 'outlook!Office.ItemCompose#getSelectedDataAsync~2:complex'
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(asyncResult: Office.AsyncResult<any>) => void'
-  - uid: outlook.Office.ItemCompose.removeAttachmentAsync
+            - 'outlook!Office.ItemCompose#getSelectedDataAsync~3:complex'
+  - uid: 'outlook!Office.ItemCompose#removeAttachmentAsync:member(1)'
     summary: >-
       Removes an attachment from a message or appointment.
 
@@ -455,15 +455,15 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will
             contain an error code with the reason for the failure.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.ItemCompose.removeAttachmentAsync_1
+            - 'outlook!Office.ItemCompose#removeAttachmentAsync~0:complex'
+  - uid: 'outlook!Office.ItemCompose#removeAttachmentAsync:member(2)'
     summary: >-
       Removes an attachment from a message or appointment.
 
@@ -513,8 +513,8 @@ items:
             parameter of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will
             contain an error code with the reason for the failure.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.ItemCompose.setSelectedDataAsync
+            - 'outlook!Office.ItemCompose#removeAttachmentAsync~1:complex'
+  - uid: 'outlook!Office.ItemCompose#setSelectedDataAsync:member(1)'
     summary: >-
       Asynchronously inserts data into the body or subject of a message.
 
@@ -568,14 +568,14 @@ items:
             the field is a text field, an InvalidDataFormat error is returned. If coercionType is not set, the result
             depends on the field: if the field is HTML then HTML is used; if the field is text, then plain text is used.
           type:
-            - Office.AsyncContextOptions & CoercionTypeOptions
+            - 'outlook!Office.ItemCompose#setSelectedDataAsync~0:complex'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.ItemCompose.setSelectedDataAsync_1
+            - 'outlook!Office.ItemCompose#setSelectedDataAsync~1:complex'
+  - uid: 'outlook!Office.ItemCompose#setSelectedDataAsync:member(2)'
     summary: >-
       Asynchronously inserts data into the body or subject of a message.
 
@@ -622,8 +622,8 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.ItemCompose.subject
+            - 'outlook!Office.ItemCompose#setSelectedDataAsync~2:complex'
+  - uid: 'outlook!Office.ItemCompose#subject:member'
     summary: |-
       Gets or sets the description that appears in the subject field of an item.
 
@@ -647,4 +647,160 @@ items:
       content: 'subject: Subject;'
       return:
         type:
-          - outlook.Office.Subject
+          - 'outlook!Office.Subject:interface'
+references:
+  - uid: 'outlook!Office.Item:interface'
+    name: Item
+  - uid: 'outlook!Office.ItemCompose#addFileAttachmentAsync~0:complex'
+    name: 'Office.AsyncContextOptions & { isInline: boolean }'
+    fullName: 'Office.AsyncContextOptions & { isInline: boolean }'
+    spec.typeScript:
+      - uid: 'outlook!Office.AsyncContextOptions:interface'
+        name: Office.AsyncContextOptions
+        fullName: Office.AsyncContextOptions
+      - name: ' & { isInline: boolean }'
+        fullName: ' & { isInline: boolean }'
+  - uid: 'outlook!Office.ItemCompose#addFileAttachmentAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'outlook!Office.ItemCompose#addFileAttachmentAsync~2:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'outlook!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions
+  - uid: 'outlook!Office.ItemCompose#addItemAttachmentAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'outlook!Office.ItemCompose#addItemAttachmentAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'outlook!Office.ItemCompose#getSelectedDataAsync~0:complex'
+    name: Office.CoercionType | string
+    fullName: Office.CoercionType | string
+    spec.typeScript:
+      - uid: 'outlook!Office.CoercionType:enum'
+        name: Office.CoercionType
+        fullName: Office.CoercionType
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'outlook!Office.ItemCompose#getSelectedDataAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<any>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<any>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <any>) => void
+        fullName: <any>) => void
+  - uid: 'outlook!Office.ItemCompose#getSelectedDataAsync~2:complex'
+    name: Office.CoercionType | string
+    fullName: Office.CoercionType | string
+    spec.typeScript:
+      - uid: 'outlook!Office.CoercionType:enum'
+        name: Office.CoercionType
+        fullName: Office.CoercionType
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'outlook!Office.ItemCompose#getSelectedDataAsync~3:complex'
+    name: '(asyncResult: Office.AsyncResult<any>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<any>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <any>) => void
+        fullName: <any>) => void
+  - uid: 'outlook!Office.ItemCompose#removeAttachmentAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.ItemCompose#removeAttachmentAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.ItemCompose#setSelectedDataAsync~0:complex'
+    name: Office.AsyncContextOptions & CoercionTypeOptions
+    fullName: Office.AsyncContextOptions & Office.CoercionTypeOptions
+    spec.typeScript:
+      - uid: 'outlook!Office.AsyncContextOptions:interface'
+        name: Office.AsyncContextOptions
+        fullName: Office.AsyncContextOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'outlook!Office.CoercionTypeOptions:interface'
+        name: CoercionTypeOptions
+        fullName: Office.CoercionTypeOptions
+  - uid: 'outlook!Office.ItemCompose#setSelectedDataAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.ItemCompose#setSelectedDataAsync~2:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.Subject:interface'
+    name: Subject

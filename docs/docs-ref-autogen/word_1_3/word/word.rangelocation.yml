@@ -1,21 +1,21 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.RangeLocation
+  - uid: 'word!Word.RangeLocation:enum'
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     name: Word.RangeLocation
     fullName: Word.RangeLocation
     langs:
       - typeScript
     type: enum
-    package: word
+    package: word!
     children:
-      - word.Word.RangeLocation.after
-      - word.Word.RangeLocation.before
-      - word.Word.RangeLocation.content
-      - word.Word.RangeLocation.end
-      - word.Word.RangeLocation.start
-      - word.Word.RangeLocation.whole
-  - uid: word.Word.RangeLocation.after
+      - 'word!Word.RangeLocation.after:member'
+      - 'word!Word.RangeLocation.before:member'
+      - 'word!Word.RangeLocation.content:member'
+      - 'word!Word.RangeLocation.end:member'
+      - 'word!Word.RangeLocation.start:member'
+      - 'word!Word.RangeLocation.whole:member'
+  - uid: 'word!Word.RangeLocation.after:member'
     summary: >-
       The point after the object. If the object is a paragraph content control or table content control, it is the point
       after the EOP or Table characters.
@@ -25,7 +25,7 @@ items:
       - typeScript
     type: field
     numericValue: '"After"'
-  - uid: word.Word.RangeLocation.before
+  - uid: 'word!Word.RangeLocation.before:member'
     summary: For content control only. It is the point before the opening tag.
     name: before
     fullName: before
@@ -33,7 +33,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Before"'
-  - uid: word.Word.RangeLocation.content
+  - uid: 'word!Word.RangeLocation.content:member'
     summary: The range between 'Start' and 'End'.
     name: content
     fullName: content
@@ -41,7 +41,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Content"'
-  - uid: word.Word.RangeLocation.end
+  - uid: 'word!Word.RangeLocation.end:member'
     summary: >-
       The ending point of the object. For paragraph, it is the point before the EOP. For content control, it is the
       point before the closing tag.
@@ -51,7 +51,7 @@ items:
       - typeScript
     type: field
     numericValue: '"End"'
-  - uid: word.Word.RangeLocation.start
+  - uid: 'word!Word.RangeLocation.start:member'
     summary: 'The starting point of the object. For content control, it is the point after the opening tag.'
     name: start
     fullName: start
@@ -59,7 +59,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Start"'
-  - uid: word.Word.RangeLocation.whole
+  - uid: 'word!Word.RangeLocation.whole:member'
     summary: >-
       The object's whole range. If the object is a paragraph content control or table content control, the EOP or Table
       characters after the content control are also included.

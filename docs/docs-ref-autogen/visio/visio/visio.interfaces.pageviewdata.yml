@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.PageViewData
+  - uid: 'visio!Visio.Interfaces.PageViewData:interface'
     summary: An interface describing the data returned by calling "pageView.toJSON()".
     name: Visio.Interfaces.PageViewData
     fullName: Visio.Interfaces.PageViewData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.PageViewData.zoom
-  - uid: visio.Visio.Interfaces.PageViewData.zoom
+      - 'visio!Visio.Interfaces.PageViewData#zoom:member'
+  - uid: 'visio!Visio.Interfaces.PageViewData#zoom:member'
     summary: |-
       Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
 

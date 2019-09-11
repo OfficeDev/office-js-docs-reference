@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Font
+  - uid: 'word!Word.Font:class'
     summary: |-
       Represents a font.
 
@@ -11,30 +11,30 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: word
+      - 'word!OfficeExtension.ClientObject:class'
+    package: word!
     children:
-      - word.Word.Font.bold
-      - word.Word.Font.color
-      - word.Word.Font.context
-      - word.Word.Font.doubleStrikeThrough
-      - word.Word.Font.highlightColor
-      - word.Word.Font.italic
-      - word.Word.Font.load
-      - word.Word.Font.load_1
-      - word.Word.Font.load_2
-      - word.Word.Font.name
-      - word.Word.Font.set
-      - word.Word.Font.set_1
-      - word.Word.Font.size
-      - word.Word.Font.strikeThrough
-      - word.Word.Font.subscript
-      - word.Word.Font.superscript
-      - word.Word.Font.toJSON
-      - word.Word.Font.track
-      - word.Word.Font.underline
-      - word.Word.Font.untrack
-  - uid: word.Word.Font.bold
+      - 'word!Word.Font#bold:member'
+      - 'word!Word.Font#color:member'
+      - 'word!Word.Font#context:member'
+      - 'word!Word.Font#doubleStrikeThrough:member'
+      - 'word!Word.Font#highlightColor:member'
+      - 'word!Word.Font#italic:member'
+      - 'word!Word.Font#load:member(1)'
+      - 'word!Word.Font#load:member(2)'
+      - 'word!Word.Font#load:member(3)'
+      - 'word!Word.Font#name:member'
+      - 'word!Word.Font#set:member(1)'
+      - 'word!Word.Font#set:member(2)'
+      - 'word!Word.Font#size:member'
+      - 'word!Word.Font#strikeThrough:member'
+      - 'word!Word.Font#subscript:member'
+      - 'word!Word.Font#superscript:member'
+      - 'word!Word.Font#toJSON:member(1)'
+      - 'word!Word.Font#track:member(1)'
+      - 'word!Word.Font#underline:member'
+      - 'word!Word.Font#untrack:member(1)'
+  - uid: 'word!Word.Font#bold:member'
     summary: >-
       Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise,
       false.
@@ -51,7 +51,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Font.color
+  - uid: 'word!Word.Font#color:member'
     summary: >-
       Gets or sets the color for the specified font. You can provide the value in the '\#RRGGBB' format or the color
       name.
@@ -68,7 +68,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Font.context
+  - uid: 'word!Word.Font#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -81,8 +81,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.Font.doubleStrikeThrough
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.Font#doubleStrikeThrough:member'
     summary: >-
       Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as
       double strikethrough text, otherwise, false.
@@ -99,7 +99,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Font.highlightColor
+  - uid: 'word!Word.Font#highlightColor:member'
     summary: >-
       Gets or sets the highlight color. To set it, use a value either in the '\#RRGGBB' format or the color name. To
       remove highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, an empty
@@ -123,7 +123,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Font.italic
+  - uid: 'word!Word.Font#italic:member'
     summary: >-
       Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise,
       false.
@@ -140,7 +140,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Font.load
+  - uid: 'word!Word.Font#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -178,7 +178,7 @@ items:
           // Create a range proxy object for the current selection.
           var selection = context.document.getSelection();
 
-          // Queue a commmand to change the current selection's font name.
+          // Queue a command to change the current selection's font name.
           selection.font.name = 'Arial';
 
           // Synchronize the document state by executing the queued commands,
@@ -208,7 +208,7 @@ items:
           // Create a range proxy object for the current selection.
           var selection = context.document.getSelection();
 
-          // Queue a commmand to change the font color of the current selection.
+          // Queue a command to change the font color of the current selection.
           selection.font.color = 'blue';
 
           // Synchronize the document state by executing the queued commands,
@@ -238,7 +238,7 @@ items:
           // Create a range proxy object for the current selection.
           var selection = context.document.getSelection();
 
-          // Queue a commmand to change the current selection's font size.
+          // Queue a command to change the current selection's font size.
           selection.font.size = 20;
 
           // Synchronize the document state by executing the queued commands,
@@ -268,7 +268,7 @@ items:
           // Create a range proxy object for the current selection.
           var selection = context.document.getSelection();
 
-          // Queue a commmand to highlight the current selection.
+          // Queue a command to highlight the current selection.
           selection.font.highlightColor = '#FFFF00'; // Yellow
 
           // Synchronize the document state by executing the queued commands,
@@ -298,7 +298,7 @@ items:
           // Create a range proxy object for the current selection.
           var selection = context.document.getSelection();
 
-          // Queue a commmand to make the current selection bold.
+          // Queue a command to make the current selection bold.
           selection.font.bold = true;
 
           // Synchronize the document state by executing the queued commands,
@@ -328,7 +328,7 @@ items:
           // Create a range proxy object for the current selection.
           var selection = context.document.getSelection();
 
-          // Queue a commmand to underline the current selection.
+          // Queue a command to underline the current selection.
           selection.font.underline = Word.UnderlineType.single;
 
           // Synchronize the document state by executing the queued commands,
@@ -358,7 +358,7 @@ items:
           // Create a range proxy object for the current selection.
           var selection = context.document.getSelection();
 
-          // Queue a commmand to strikethrough the font of the current selection.
+          // Queue a command to strikethrough the font of the current selection.
           selection.font.strikeThrough = true;
 
           // Synchronize the document state by executing the queued commands,
@@ -385,14 +385,14 @@ items:
       content: 'load(option?: Word.Interfaces.FontLoadOptions): Word.Font;'
       return:
         type:
-          - word.Word.Font
+          - 'word!Word.Font:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.FontLoadOptions
-  - uid: word.Word.Font.load_1
+            - 'word!Word.Interfaces.FontLoadOptions:interface'
+  - uid: 'word!Word.Font#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -405,14 +405,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.Font;'
       return:
         type:
-          - word.Word.Font
+          - 'word!Word.Font:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.Font.load_2
+  - uid: 'word!Word.Font#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -425,7 +425,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Font;'
       return:
         type:
-          - word.Word.Font
+          - 'word!Word.Font:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -434,7 +434,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: word.Word.Font.name
+  - uid: 'word!Word.Font#name:member'
     summary: |-
       Gets or sets a value that represents the name of the font.
 
@@ -449,7 +449,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Font.set
+  - uid: 'word!Word.Font#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -474,12 +474,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.FontUpdateData
+            - 'word!Word.Interfaces.FontUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: word.Word.Font.set_1
+            - 'word!OfficeExtension.UpdateOptions:interface'
+  - uid: 'word!Word.Font#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -496,8 +496,8 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.Font
-  - uid: word.Word.Font.size
+            - 'word!Word.Font:class'
+  - uid: 'word!Word.Font#size:member'
     summary: |-
       Gets or sets a value that represents the font size in points.
 
@@ -512,7 +512,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Font.strikeThrough
+  - uid: 'word!Word.Font#strikeThrough:member'
     summary: >-
       Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as
       strikethrough text, otherwise, false.
@@ -529,7 +529,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Font.subscript
+  - uid: 'word!Word.Font#subscript:member'
     summary: >-
       Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript,
       otherwise, false.
@@ -546,7 +546,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Font.superscript
+  - uid: 'word!Word.Font#superscript:member'
     summary: >-
       Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as
       superscript, otherwise, false.
@@ -563,7 +563,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Font.toJSON
+  - uid: 'word!Word.Font#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -579,9 +579,9 @@ items:
       content: 'toJSON(): Word.Interfaces.FontData;'
       return:
         type:
-          - word.Word.Interfaces.FontData
+          - 'word!Word.Interfaces.FontData:interface'
         description: ''
-  - uid: word.Word.Font.track
+  - uid: 'word!Word.Font#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -597,9 +597,9 @@ items:
       content: 'track(): Word.Font;'
       return:
         type:
-          - word.Word.Font
+          - 'word!Word.Font:class'
         description: ''
-  - uid: word.Word.Font.underline
+  - uid: 'word!Word.Font#underline:member'
     summary: |-
       Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
 
@@ -616,12 +616,8 @@ items:
         | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
       return:
         type:
-          - >-
-            Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" |
-            "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" |
-            "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" |
-            "WaveDouble"
-  - uid: word.Word.Font.untrack
+          - 'word!Word.Font#underline~0:complex'
+  - uid: 'word!Word.Font#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -636,5 +632,35 @@ items:
       content: 'untrack(): Word.Font;'
       return:
         type:
-          - word.Word.Font
+          - 'word!Word.Font:class'
         description: ''
+references:
+  - uid: 'word!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.Font:class'
+    name: Word.Font
+  - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
+    name: Word.Interfaces.FontLoadOptions
+  - uid: 'word!Word.Interfaces.FontUpdateData:interface'
+    name: Interfaces.FontUpdateData
+  - uid: 'word!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'word!Word.Interfaces.FontData:interface'
+    name: Word.Interfaces.FontData
+  - uid: 'word!Word.Font#underline~0:complex'
+    name: >-
+      Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" |
+      "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" |
+      "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble"
+    fullName: >-
+      Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" |
+      "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" |
+      "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble"
+    spec.typeScript:
+      - uid: 'word!Word.UnderlineType:enum'
+        name: Word.UnderlineType
+        fullName: Word.UnderlineType
+      - name: ' | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble"'
+        fullName: ' | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble"'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.RecurrenceTimeZone
+  - uid: 'outlook!Office.RecurrenceTimeZone:interface'
     summary: |-
       Represents the time zone of the recurrence.
 
@@ -57,11 +57,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.RecurrenceTimeZone.name
-      - outlook.Office.RecurrenceTimeZone.offset
-  - uid: outlook.Office.RecurrenceTimeZone.name
+      - 'outlook!Office.RecurrenceTimeZone#name:member'
+      - 'outlook!Office.RecurrenceTimeZone#offset:member'
+  - uid: 'outlook!Office.RecurrenceTimeZone#name:member'
     summary: Represents the name of the recurrence time zone.
     name: name
     fullName: name
@@ -72,8 +72,8 @@ items:
       content: 'name: MailboxEnums.RecurrenceTimeZone | string;'
       return:
         type:
-          - MailboxEnums.RecurrenceTimeZone | string
-  - uid: outlook.Office.RecurrenceTimeZone.offset
+          - 'outlook!Office.RecurrenceTimeZone#name~0:complex'
+  - uid: 'outlook!Office.RecurrenceTimeZone#offset:member'
     summary: >-
       Integer value representing the difference in minutes between the local time zone and UTC at the date that the
       meeting series began.
@@ -87,3 +87,13 @@ items:
       return:
         type:
           - number
+references:
+  - uid: 'outlook!Office.RecurrenceTimeZone#name~0:complex'
+    name: MailboxEnums.RecurrenceTimeZone | string
+    fullName: Office.MailboxEnums.RecurrenceTimeZone | string
+    spec.typeScript:
+      - uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone:enum'
+        name: MailboxEnums.RecurrenceTimeZone
+        fullName: Office.MailboxEnums.RecurrenceTimeZone
+      - name: ' | string'
+        fullName: ' | string'

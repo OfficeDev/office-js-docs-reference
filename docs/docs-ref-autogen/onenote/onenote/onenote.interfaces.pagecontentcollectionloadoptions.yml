@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.PageContentCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions:interface'
     summary: |-
       Represents the contents of a page, as a collection of PageContent objects.
 
@@ -10,18 +10,18 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.$all
-      - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.id
-      - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.image
-      - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.ink
-      - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.left
-      - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.outline
-      - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.parentPage
-      - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.top
-      - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.type
-  - uid: onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.$all
+      - 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#image:member'
+      - 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#ink:member'
+      - 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#left:member'
+      - 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#outline:member'
+      - 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#parentPage:member'
+      - 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#top:member'
+      - 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#type:member'
+  - uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.id
+  - uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#id:member'
     summary: |-
       For EACH ITEM in the collection: Gets the ID of the PageContent object. Read-only.
 
@@ -47,7 +47,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.image
+  - uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#image:member'
     summary: >-
       For EACH ITEM in the collection: Gets the Image in the PageContent object. Throws an exception if PageContentType
       is not Image.
@@ -63,8 +63,8 @@ items:
       content: 'image?: OneNote.Interfaces.ImageLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ImageLoadOptions
-  - uid: onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.ink
+          - 'onenote!OneNote.Interfaces.ImageLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#ink:member'
     summary: >-
       For EACH ITEM in the collection: Gets the ink in the PageContent object. Throws an exception if PageContentType is
       not Ink.
@@ -80,8 +80,8 @@ items:
       content: 'ink?: OneNote.Interfaces.FloatingInkLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.FloatingInkLoadOptions
-  - uid: onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.left
+          - 'onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#left:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets the left (X-axis) position of the PageContent object.
 
@@ -96,7 +96,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.outline
+  - uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#outline:member'
     summary: >-
       For EACH ITEM in the collection: Gets the Outline in the PageContent object. Throws an exception if
       PageContentType is not Outline.
@@ -112,8 +112,8 @@ items:
       content: 'outline?: OneNote.Interfaces.OutlineLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.OutlineLoadOptions
-  - uid: onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.parentPage
+          - 'onenote!OneNote.Interfaces.OutlineLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#parentPage:member'
     summary: |-
       For EACH ITEM in the collection: Gets the page that contains the PageContent object.
 
@@ -127,8 +127,8 @@ items:
       content: 'parentPage?: OneNote.Interfaces.PageLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageLoadOptions
-  - uid: onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.top
+          - 'onenote!OneNote.Interfaces.PageLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#top:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets the top (Y-axis) position of the PageContent object.
 
@@ -143,7 +143,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.PageContentCollectionLoadOptions.type
+  - uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions#type:member'
     summary: |-
       For EACH ITEM in the collection: Gets the type of the PageContent object. Read-only.
 
@@ -158,3 +158,12 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'onenote!OneNote.Interfaces.ImageLoadOptions:interface'
+    name: OneNote.Interfaces.ImageLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface'
+    name: OneNote.Interfaces.FloatingInkLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions:interface'
+    name: OneNote.Interfaces.OutlineLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.PageLoadOptions:interface'
+    name: OneNote.Interfaces.PageLoadOptions

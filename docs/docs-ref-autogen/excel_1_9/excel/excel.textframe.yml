@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.TextFrame
+  - uid: 'excel!Excel.TextFrame:class'
     summary: |-
       Represents the text frame of a shape object.
 
@@ -11,31 +11,31 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.TextFrame.autoSizeSetting
-      - excel.Excel.TextFrame.bottomMargin
-      - excel.Excel.TextFrame.context
-      - excel.Excel.TextFrame.deleteText
-      - excel.Excel.TextFrame.hasText
-      - excel.Excel.TextFrame.horizontalAlignment
-      - excel.Excel.TextFrame.horizontalOverflow
-      - excel.Excel.TextFrame.leftMargin
-      - excel.Excel.TextFrame.load
-      - excel.Excel.TextFrame.load_1
-      - excel.Excel.TextFrame.load_2
-      - excel.Excel.TextFrame.orientation
-      - excel.Excel.TextFrame.readingOrder
-      - excel.Excel.TextFrame.rightMargin
-      - excel.Excel.TextFrame.set
-      - excel.Excel.TextFrame.set_1
-      - excel.Excel.TextFrame.textRange
-      - excel.Excel.TextFrame.toJSON
-      - excel.Excel.TextFrame.topMargin
-      - excel.Excel.TextFrame.verticalAlignment
-      - excel.Excel.TextFrame.verticalOverflow
-  - uid: excel.Excel.TextFrame.autoSizeSetting
+      - 'excel!Excel.TextFrame#autoSizeSetting:member'
+      - 'excel!Excel.TextFrame#bottomMargin:member'
+      - 'excel!Excel.TextFrame#context:member'
+      - 'excel!Excel.TextFrame#deleteText:member(1)'
+      - 'excel!Excel.TextFrame#hasText:member'
+      - 'excel!Excel.TextFrame#horizontalAlignment:member'
+      - 'excel!Excel.TextFrame#horizontalOverflow:member'
+      - 'excel!Excel.TextFrame#leftMargin:member'
+      - 'excel!Excel.TextFrame#load:member(1)'
+      - 'excel!Excel.TextFrame#load:member(2)'
+      - 'excel!Excel.TextFrame#load:member(3)'
+      - 'excel!Excel.TextFrame#orientation:member'
+      - 'excel!Excel.TextFrame#readingOrder:member'
+      - 'excel!Excel.TextFrame#rightMargin:member'
+      - 'excel!Excel.TextFrame#set:member(1)'
+      - 'excel!Excel.TextFrame#set:member(2)'
+      - 'excel!Excel.TextFrame#textRange:member'
+      - 'excel!Excel.TextFrame#toJSON:member(1)'
+      - 'excel!Excel.TextFrame#topMargin:member'
+      - 'excel!Excel.TextFrame#verticalAlignment:member'
+      - 'excel!Excel.TextFrame#verticalOverflow:member'
+  - uid: 'excel!Excel.TextFrame#autoSizeSetting:member'
     summary: >-
       Gets or sets the automatic sizing settings for the text frame. A text frame can be set to automatically fit the
       text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
@@ -53,8 +53,8 @@ items:
         "AutoSizeMixed";
       return:
         type:
-          - Excel.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"
-  - uid: excel.Excel.TextFrame.bottomMargin
+          - 'excel!Excel.TextFrame#autoSizeSetting~0:complex'
+  - uid: 'excel!Excel.TextFrame#bottomMargin:member'
     summary: |-
       Represents the bottom margin, in points, of the text frame.
 
@@ -69,7 +69,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.TextFrame.context
+  - uid: 'excel!Excel.TextFrame#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -82,8 +82,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.TextFrame.deleteText
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TextFrame#deleteText:member(1)'
     summary: |-
       Deletes all the text in the text frame.
 
@@ -111,7 +111,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.TextFrame.hasText
+  - uid: 'excel!Excel.TextFrame#hasText:member'
     summary: |-
       Specifies whether the text frame contains text.
 
@@ -126,7 +126,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.TextFrame.horizontalAlignment
+  - uid: 'excel!Excel.TextFrame#horizontalAlignment:member'
     summary: |-
       Represents the horizontal alignment of the text frame. See Excel.ShapeTextHorizontalAlignment for details.
 
@@ -142,10 +142,8 @@ items:
         | "Distributed" | "ThaiDistributed";
       return:
         type:
-          - >-
-            Excel.ShapeTextHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed"
-            | "ThaiDistributed"
-  - uid: excel.Excel.TextFrame.horizontalOverflow
+          - 'excel!Excel.TextFrame#horizontalAlignment~0:complex'
+  - uid: 'excel!Excel.TextFrame#horizontalOverflow:member'
     summary: |-
       Represents the horizontal overflow behavior of the text frame. See Excel.ShapeTextHorizontalOverflow for details.
 
@@ -159,8 +157,8 @@ items:
       content: 'horizontalOverflow: Excel.ShapeTextHorizontalOverflow | "Overflow" | "Clip";'
       return:
         type:
-          - Excel.ShapeTextHorizontalOverflow | "Overflow" | "Clip"
-  - uid: excel.Excel.TextFrame.leftMargin
+          - 'excel!Excel.TextFrame#horizontalOverflow~0:complex'
+  - uid: 'excel!Excel.TextFrame#leftMargin:member'
     summary: |-
       Represents the left margin, in points, of the text frame.
 
@@ -175,7 +173,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.TextFrame.load
+  - uid: 'excel!Excel.TextFrame#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -206,14 +204,14 @@ items:
       content: 'load(option?: Excel.Interfaces.TextFrameLoadOptions): Excel.TextFrame;'
       return:
         type:
-          - excel.Excel.TextFrame
+          - 'excel!Excel.TextFrame:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.TextFrameLoadOptions
-  - uid: excel.Excel.TextFrame.load_1
+            - 'excel!Excel.Interfaces.TextFrameLoadOptions:interface'
+  - uid: 'excel!Excel.TextFrame#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -226,14 +224,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.TextFrame;'
       return:
         type:
-          - excel.Excel.TextFrame
+          - 'excel!Excel.TextFrame:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.TextFrame.load_2
+  - uid: 'excel!Excel.TextFrame#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -246,7 +244,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TextFrame;'
       return:
         type:
-          - excel.Excel.TextFrame
+          - 'excel!Excel.TextFrame:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -255,7 +253,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.TextFrame.orientation
+  - uid: 'excel!Excel.TextFrame#orientation:member'
     summary: |-
       Represents the text orientation of the text frame. See Excel.ShapeTextOrientation for details.
 
@@ -271,10 +269,8 @@ items:
         "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL";
       return:
         type:
-          - >-
-            Excel.ShapeTextOrientation | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" |
-            "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL"
-  - uid: excel.Excel.TextFrame.readingOrder
+          - 'excel!Excel.TextFrame#orientation~0:complex'
+  - uid: 'excel!Excel.TextFrame#readingOrder:member'
     summary: >-
       Represents the reading order of the text frame, either left-to-right or right-to-left. See
       Excel.ShapeTextReadingOrder for details.
@@ -290,8 +286,8 @@ items:
       content: 'readingOrder: Excel.ShapeTextReadingOrder | "LeftToRight" | "RightToLeft";'
       return:
         type:
-          - Excel.ShapeTextReadingOrder | "LeftToRight" | "RightToLeft"
-  - uid: excel.Excel.TextFrame.rightMargin
+          - 'excel!Excel.TextFrame#readingOrder~0:complex'
+  - uid: 'excel!Excel.TextFrame#rightMargin:member'
     summary: |-
       Represents the right margin, in points, of the text frame.
 
@@ -306,7 +302,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.TextFrame.set
+  - uid: 'excel!Excel.TextFrame#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -331,12 +327,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.TextFrameUpdateData
+            - 'excel!Excel.Interfaces.TextFrameUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.TextFrame.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.TextFrame#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -353,8 +349,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.TextFrame
-  - uid: excel.Excel.TextFrame.textRange
+            - 'excel!Excel.TextFrame:class'
+  - uid: 'excel!Excel.TextFrame#textRange:member'
     summary: >-
       Represents the text that is attached to a shape in the text frame, and properties and methods for manipulating the
       text. See Excel.TextRange for details.
@@ -370,8 +366,8 @@ items:
       content: 'readonly textRange: Excel.TextRange;'
       return:
         type:
-          - excel.Excel.TextRange
-  - uid: excel.Excel.TextFrame.toJSON
+          - 'excel!Excel.TextRange:class'
+  - uid: 'excel!Excel.TextFrame#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -387,9 +383,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.TextFrameData;'
       return:
         type:
-          - excel.Excel.Interfaces.TextFrameData
+          - 'excel!Excel.Interfaces.TextFrameData:interface'
         description: ''
-  - uid: excel.Excel.TextFrame.topMargin
+  - uid: 'excel!Excel.TextFrame#topMargin:member'
     summary: |-
       Represents the top margin, in points, of the text frame.
 
@@ -404,7 +400,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.TextFrame.verticalAlignment
+  - uid: 'excel!Excel.TextFrame#verticalAlignment:member'
     summary: |-
       Represents the vertical alignment of the text frame. See Excel.ShapeTextVerticalAlignment for details.
 
@@ -418,8 +414,8 @@ items:
       content: 'verticalAlignment: Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed";'
       return:
         type:
-          - Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed"
-  - uid: excel.Excel.TextFrame.verticalOverflow
+          - 'excel!Excel.TextFrame#verticalAlignment~0:complex'
+  - uid: 'excel!Excel.TextFrame#verticalOverflow:member'
     summary: |-
       Represents the vertical overflow behavior of the text frame. See Excel.ShapeTextVerticalOverflow for details.
 
@@ -433,4 +429,92 @@ items:
       content: 'verticalOverflow: Excel.ShapeTextVerticalOverflow | "Overflow" | "Ellipsis" | "Clip";'
       return:
         type:
-          - Excel.ShapeTextVerticalOverflow | "Overflow" | "Ellipsis" | "Clip"
+          - 'excel!Excel.TextFrame#verticalOverflow~0:complex'
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.TextFrame#autoSizeSetting~0:complex'
+    name: Excel.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"
+    fullName: Excel.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"
+    spec.typeScript:
+      - uid: 'excel!Excel.ShapeAutoSize:enum'
+        name: Excel.ShapeAutoSize
+        fullName: Excel.ShapeAutoSize
+      - name: ' | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"'
+        fullName: ' | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"'
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.TextFrame#horizontalAlignment~0:complex'
+    name: >-
+      Excel.ShapeTextHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" |
+      "ThaiDistributed"
+    fullName: >-
+      Excel.ShapeTextHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" |
+      "ThaiDistributed"
+    spec.typeScript:
+      - uid: 'excel!Excel.ShapeTextHorizontalAlignment:enum'
+        name: Excel.ShapeTextHorizontalAlignment
+        fullName: Excel.ShapeTextHorizontalAlignment
+      - name: ' | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed"'
+        fullName: ' | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed"'
+  - uid: 'excel!Excel.TextFrame#horizontalOverflow~0:complex'
+    name: Excel.ShapeTextHorizontalOverflow | "Overflow" | "Clip"
+    fullName: Excel.ShapeTextHorizontalOverflow | "Overflow" | "Clip"
+    spec.typeScript:
+      - uid: 'excel!Excel.ShapeTextHorizontalOverflow:enum'
+        name: Excel.ShapeTextHorizontalOverflow
+        fullName: Excel.ShapeTextHorizontalOverflow
+      - name: ' | "Overflow" | "Clip"'
+        fullName: ' | "Overflow" | "Clip"'
+  - uid: 'excel!Excel.TextFrame:class'
+    name: Excel.TextFrame
+  - uid: 'excel!Excel.Interfaces.TextFrameLoadOptions:interface'
+    name: Excel.Interfaces.TextFrameLoadOptions
+  - uid: 'excel!Excel.TextFrame#orientation~0:complex'
+    name: >-
+      Excel.ShapeTextOrientation | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" | "EastAsianVertical" |
+      "MongolianVertical" | "WordArtVerticalRTL"
+    fullName: >-
+      Excel.ShapeTextOrientation | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" | "EastAsianVertical" |
+      "MongolianVertical" | "WordArtVerticalRTL"
+    spec.typeScript:
+      - uid: 'excel!Excel.ShapeTextOrientation:enum'
+        name: Excel.ShapeTextOrientation
+        fullName: Excel.ShapeTextOrientation
+      - name: ' | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" | "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL"'
+        fullName: ' | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" | "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL"'
+  - uid: 'excel!Excel.TextFrame#readingOrder~0:complex'
+    name: Excel.ShapeTextReadingOrder | "LeftToRight" | "RightToLeft"
+    fullName: Excel.ShapeTextReadingOrder | "LeftToRight" | "RightToLeft"
+    spec.typeScript:
+      - uid: 'excel!Excel.ShapeTextReadingOrder:enum'
+        name: Excel.ShapeTextReadingOrder
+        fullName: Excel.ShapeTextReadingOrder
+      - name: ' | "LeftToRight" | "RightToLeft"'
+        fullName: ' | "LeftToRight" | "RightToLeft"'
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData:interface'
+    name: Interfaces.TextFrameUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.TextRange:class'
+    name: Excel.TextRange
+  - uid: 'excel!Excel.Interfaces.TextFrameData:interface'
+    name: Excel.Interfaces.TextFrameData
+  - uid: 'excel!Excel.TextFrame#verticalAlignment~0:complex'
+    name: Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed"
+    fullName: Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed"
+    spec.typeScript:
+      - uid: 'excel!Excel.ShapeTextVerticalAlignment:enum'
+        name: Excel.ShapeTextVerticalAlignment
+        fullName: Excel.ShapeTextVerticalAlignment
+      - name: ' | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed"'
+        fullName: ' | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed"'
+  - uid: 'excel!Excel.TextFrame#verticalOverflow~0:complex'
+    name: Excel.ShapeTextVerticalOverflow | "Overflow" | "Ellipsis" | "Clip"
+    fullName: Excel.ShapeTextVerticalOverflow | "Overflow" | "Ellipsis" | "Clip"
+    spec.typeScript:
+      - uid: 'excel!Excel.ShapeTextVerticalOverflow:enum'
+        name: Excel.ShapeTextVerticalOverflow
+        fullName: Excel.ShapeTextVerticalOverflow
+      - name: ' | "Overflow" | "Ellipsis" | "Clip"'
+        fullName: ' | "Overflow" | "Ellipsis" | "Clip"'

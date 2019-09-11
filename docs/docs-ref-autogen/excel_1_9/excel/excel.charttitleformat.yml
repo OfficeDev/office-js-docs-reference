@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartTitleFormat
+  - uid: 'excel!Excel.ChartTitleFormat:class'
     summary: |-
       Provides access to the office art formatting for chart title.
 
@@ -11,20 +11,20 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.ChartTitleFormat.border
-      - excel.Excel.ChartTitleFormat.context
-      - excel.Excel.ChartTitleFormat.fill
-      - excel.Excel.ChartTitleFormat.font
-      - excel.Excel.ChartTitleFormat.load
-      - excel.Excel.ChartTitleFormat.load_1
-      - excel.Excel.ChartTitleFormat.load_2
-      - excel.Excel.ChartTitleFormat.set
-      - excel.Excel.ChartTitleFormat.set_1
-      - excel.Excel.ChartTitleFormat.toJSON
-  - uid: excel.Excel.ChartTitleFormat.border
+      - 'excel!Excel.ChartTitleFormat#border:member'
+      - 'excel!Excel.ChartTitleFormat#context:member'
+      - 'excel!Excel.ChartTitleFormat#fill:member'
+      - 'excel!Excel.ChartTitleFormat#font:member'
+      - 'excel!Excel.ChartTitleFormat#load:member(1)'
+      - 'excel!Excel.ChartTitleFormat#load:member(2)'
+      - 'excel!Excel.ChartTitleFormat#load:member(3)'
+      - 'excel!Excel.ChartTitleFormat#set:member(1)'
+      - 'excel!Excel.ChartTitleFormat#set:member(2)'
+      - 'excel!Excel.ChartTitleFormat#toJSON:member(1)'
+  - uid: 'excel!Excel.ChartTitleFormat#border:member'
     summary: |-
       Represents the border format of chart title, which includes color, linestyle, and weight. Read-only.
 
@@ -38,8 +38,8 @@ items:
       content: 'readonly border: Excel.ChartBorder;'
       return:
         type:
-          - excel.Excel.ChartBorder
-  - uid: excel.Excel.ChartTitleFormat.context
+          - 'excel!Excel.ChartBorder:class'
+  - uid: 'excel!Excel.ChartTitleFormat#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -52,8 +52,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartTitleFormat.fill
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartTitleFormat#fill:member'
     summary: |-
       Represents the fill format of an object, which includes background formatting information. Read-only.
 
@@ -67,8 +67,8 @@ items:
       content: 'readonly fill: Excel.ChartFill;'
       return:
         type:
-          - excel.Excel.ChartFill
-  - uid: excel.Excel.ChartTitleFormat.font
+          - 'excel!Excel.ChartFill:class'
+  - uid: 'excel!Excel.ChartTitleFormat#font:member'
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for an object. Read-only.
 
@@ -82,8 +82,8 @@ items:
       content: 'readonly font: Excel.ChartFont;'
       return:
         type:
-          - excel.Excel.ChartFont
-  - uid: excel.Excel.ChartTitleFormat.load
+          - 'excel!Excel.ChartFont:class'
+  - uid: 'excel!Excel.ChartTitleFormat#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -114,14 +114,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartTitleFormatLoadOptions): Excel.ChartTitleFormat;'
       return:
         type:
-          - excel.Excel.ChartTitleFormat
+          - 'excel!Excel.ChartTitleFormat:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartTitleFormatLoadOptions
-  - uid: excel.Excel.ChartTitleFormat.load_1
+            - 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions:interface'
+  - uid: 'excel!Excel.ChartTitleFormat#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -134,14 +134,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartTitleFormat;'
       return:
         type:
-          - excel.Excel.ChartTitleFormat
+          - 'excel!Excel.ChartTitleFormat:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartTitleFormat.load_2
+  - uid: 'excel!Excel.ChartTitleFormat#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -154,7 +154,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTitleFormat;'
       return:
         type:
-          - excel.Excel.ChartTitleFormat
+          - 'excel!Excel.ChartTitleFormat:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -163,7 +163,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartTitleFormat.set
+  - uid: 'excel!Excel.ChartTitleFormat#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -188,12 +188,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.ChartTitleFormatUpdateData
+            - 'excel!Excel.Interfaces.ChartTitleFormatUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartTitleFormat.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.ChartTitleFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -210,8 +210,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartTitleFormat
-  - uid: excel.Excel.ChartTitleFormat.toJSON
+            - 'excel!Excel.ChartTitleFormat:class'
+  - uid: 'excel!Excel.ChartTitleFormat#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -227,5 +227,26 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartTitleFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTitleFormatData
+          - 'excel!Excel.Interfaces.ChartTitleFormatData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.ChartBorder:class'
+    name: Excel.ChartBorder
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ChartFill:class'
+    name: Excel.ChartFill
+  - uid: 'excel!Excel.ChartFont:class'
+    name: Excel.ChartFont
+  - uid: 'excel!Excel.ChartTitleFormat:class'
+    name: Excel.ChartTitleFormat
+  - uid: 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartTitleFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartTitleFormatUpdateData:interface'
+    name: Interfaces.ChartTitleFormatUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.ChartTitleFormatData:interface'
+    name: Excel.Interfaces.ChartTitleFormatData

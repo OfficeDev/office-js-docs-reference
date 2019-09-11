@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalFormatIconRuleType
+  - uid: 'excel!Excel.ConditionalFormatIconRuleType:enum'
     summary: |-
       Represents the types of conditional format values.
 
@@ -10,42 +10,42 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalFormatIconRuleType.formula
-      - excel.Excel.ConditionalFormatIconRuleType.invalid
-      - excel.Excel.ConditionalFormatIconRuleType.number
-      - excel.Excel.ConditionalFormatIconRuleType.percent
-      - excel.Excel.ConditionalFormatIconRuleType.percentile
-  - uid: excel.Excel.ConditionalFormatIconRuleType.formula
+      - 'excel!Excel.ConditionalFormatIconRuleType.formula:member'
+      - 'excel!Excel.ConditionalFormatIconRuleType.invalid:member'
+      - 'excel!Excel.ConditionalFormatIconRuleType.number:member'
+      - 'excel!Excel.ConditionalFormatIconRuleType.percent:member'
+      - 'excel!Excel.ConditionalFormatIconRuleType.percentile:member'
+  - uid: 'excel!Excel.ConditionalFormatIconRuleType.formula:member'
     name: formula
     fullName: formula
     langs:
       - typeScript
     type: field
     numericValue: '"Formula"'
-  - uid: excel.Excel.ConditionalFormatIconRuleType.invalid
+  - uid: 'excel!Excel.ConditionalFormatIconRuleType.invalid:member'
     name: invalid
     fullName: invalid
     langs:
       - typeScript
     type: field
     numericValue: '"Invalid"'
-  - uid: excel.Excel.ConditionalFormatIconRuleType.number
+  - uid: 'excel!Excel.ConditionalFormatIconRuleType.number:member'
     name: number
     fullName: number
     langs:
       - typeScript
     type: field
     numericValue: '"Number"'
-  - uid: excel.Excel.ConditionalFormatIconRuleType.percent
+  - uid: 'excel!Excel.ConditionalFormatIconRuleType.percent:member'
     name: percent
     fullName: percent
     langs:
       - typeScript
     type: field
     numericValue: '"Percent"'
-  - uid: excel.Excel.ConditionalFormatIconRuleType.percentile
+  - uid: 'excel!Excel.ConditionalFormatIconRuleType.percentile:member'
     name: percentile
     fullName: percentile
     langs:

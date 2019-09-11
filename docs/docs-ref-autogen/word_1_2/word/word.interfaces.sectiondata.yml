@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.SectionData
+  - uid: 'word!Word.Interfaces.SectionData:interface'
     summary: An interface describing the data returned by calling "section.toJSON()".
     name: Word.Interfaces.SectionData
     fullName: Word.Interfaces.SectionData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.SectionData.body
-  - uid: word.Word.Interfaces.SectionData.body
+      - 'word!Word.Interfaces.SectionData#body:member'
+  - uid: 'word!Word.Interfaces.SectionData#body:member'
     summary: >-
       Gets the body object of the section. This does not include the header/footer and other section metadata.
       Read-only.
@@ -26,4 +26,7 @@ items:
       content: 'body?: Word.Interfaces.BodyData;'
       return:
         type:
-          - word.Word.Interfaces.BodyData
+          - 'word!Word.Interfaces.BodyData:interface'
+references:
+  - uid: 'word!Word.Interfaces.BodyData:interface'
+    name: Word.Interfaces.BodyData

@@ -1,22 +1,22 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotTableData
+  - uid: 'excel!Excel.Interfaces.PivotTableData:interface'
     summary: An interface describing the data returned by calling "pivotTable.toJSON()".
     name: Excel.Interfaces.PivotTableData
     fullName: Excel.Interfaces.PivotTableData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotTableData.columnHierarchies
-      - excel.Excel.Interfaces.PivotTableData.dataHierarchies
-      - excel.Excel.Interfaces.PivotTableData.filterHierarchies
-      - excel.Excel.Interfaces.PivotTableData.hierarchies
-      - excel.Excel.Interfaces.PivotTableData.id
-      - excel.Excel.Interfaces.PivotTableData.name
-      - excel.Excel.Interfaces.PivotTableData.rowHierarchies
-  - uid: excel.Excel.Interfaces.PivotTableData.columnHierarchies
+      - 'excel!Excel.Interfaces.PivotTableData#columnHierarchies:member'
+      - 'excel!Excel.Interfaces.PivotTableData#dataHierarchies:member'
+      - 'excel!Excel.Interfaces.PivotTableData#filterHierarchies:member'
+      - 'excel!Excel.Interfaces.PivotTableData#hierarchies:member'
+      - 'excel!Excel.Interfaces.PivotTableData#id:member'
+      - 'excel!Excel.Interfaces.PivotTableData#name:member'
+      - 'excel!Excel.Interfaces.PivotTableData#rowHierarchies:member'
+  - uid: 'excel!Excel.Interfaces.PivotTableData#columnHierarchies:member'
     summary: |-
       The Column Pivot Hierarchies of the PivotTable.
 
@@ -30,8 +30,8 @@ items:
       content: 'columnHierarchies?: Excel.Interfaces.RowColumnPivotHierarchyData[];'
       return:
         type:
-          - 'Excel.Interfaces.RowColumnPivotHierarchyData[]'
-  - uid: excel.Excel.Interfaces.PivotTableData.dataHierarchies
+          - 'excel!Excel.Interfaces.PivotTableData#columnHierarchies~0:complex'
+  - uid: 'excel!Excel.Interfaces.PivotTableData#dataHierarchies:member'
     summary: |-
       The Data Pivot Hierarchies of the PivotTable.
 
@@ -45,8 +45,8 @@ items:
       content: 'dataHierarchies?: Excel.Interfaces.DataPivotHierarchyData[];'
       return:
         type:
-          - 'Excel.Interfaces.DataPivotHierarchyData[]'
-  - uid: excel.Excel.Interfaces.PivotTableData.filterHierarchies
+          - 'excel!Excel.Interfaces.PivotTableData#dataHierarchies~0:complex'
+  - uid: 'excel!Excel.Interfaces.PivotTableData#filterHierarchies:member'
     summary: |-
       The Filter Pivot Hierarchies of the PivotTable.
 
@@ -60,8 +60,8 @@ items:
       content: 'filterHierarchies?: Excel.Interfaces.FilterPivotHierarchyData[];'
       return:
         type:
-          - 'Excel.Interfaces.FilterPivotHierarchyData[]'
-  - uid: excel.Excel.Interfaces.PivotTableData.hierarchies
+          - 'excel!Excel.Interfaces.PivotTableData#filterHierarchies~0:complex'
+  - uid: 'excel!Excel.Interfaces.PivotTableData#hierarchies:member'
     summary: |-
       The Pivot Hierarchies of the PivotTable.
 
@@ -75,8 +75,8 @@ items:
       content: 'hierarchies?: Excel.Interfaces.PivotHierarchyData[];'
       return:
         type:
-          - 'Excel.Interfaces.PivotHierarchyData[]'
-  - uid: excel.Excel.Interfaces.PivotTableData.id
+          - 'excel!Excel.Interfaces.PivotTableData#hierarchies~0:complex'
+  - uid: 'excel!Excel.Interfaces.PivotTableData#id:member'
     summary: |-
       Id of the PivotTable. Read-only.
 
@@ -91,7 +91,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.PivotTableData.name
+  - uid: 'excel!Excel.Interfaces.PivotTableData#name:member'
     summary: |-
       Name of the PivotTable.
 
@@ -106,7 +106,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.PivotTableData.rowHierarchies
+  - uid: 'excel!Excel.Interfaces.PivotTableData#rowHierarchies:member'
     summary: |-
       The Row Pivot Hierarchies of the PivotTable.
 
@@ -120,4 +120,50 @@ items:
       content: 'rowHierarchies?: Excel.Interfaces.RowColumnPivotHierarchyData[];'
       return:
         type:
-          - 'Excel.Interfaces.RowColumnPivotHierarchyData[]'
+          - 'excel!Excel.Interfaces.PivotTableData#rowHierarchies~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.PivotTableData#columnHierarchies~0:complex'
+    name: 'Excel.Interfaces.RowColumnPivotHierarchyData[]'
+    fullName: 'Excel.Interfaces.RowColumnPivotHierarchyData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface'
+        name: Excel.Interfaces.RowColumnPivotHierarchyData
+        fullName: Excel.Interfaces.RowColumnPivotHierarchyData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.PivotTableData#dataHierarchies~0:complex'
+    name: 'Excel.Interfaces.DataPivotHierarchyData[]'
+    fullName: 'Excel.Interfaces.DataPivotHierarchyData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.DataPivotHierarchyData:interface'
+        name: Excel.Interfaces.DataPivotHierarchyData
+        fullName: Excel.Interfaces.DataPivotHierarchyData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.PivotTableData#filterHierarchies~0:complex'
+    name: 'Excel.Interfaces.FilterPivotHierarchyData[]'
+    fullName: 'Excel.Interfaces.FilterPivotHierarchyData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyData:interface'
+        name: Excel.Interfaces.FilterPivotHierarchyData
+        fullName: Excel.Interfaces.FilterPivotHierarchyData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.PivotTableData#hierarchies~0:complex'
+    name: 'Excel.Interfaces.PivotHierarchyData[]'
+    fullName: 'Excel.Interfaces.PivotHierarchyData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PivotHierarchyData:interface'
+        name: Excel.Interfaces.PivotHierarchyData
+        fullName: Excel.Interfaces.PivotHierarchyData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.PivotTableData#rowHierarchies~0:complex'
+    name: 'Excel.Interfaces.RowColumnPivotHierarchyData[]'
+    fullName: 'Excel.Interfaces.RowColumnPivotHierarchyData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface'
+        name: Excel.Interfaces.RowColumnPivotHierarchyData
+        fullName: Excel.Interfaces.RowColumnPivotHierarchyData
+      - name: '[]'
+        fullName: '[]'

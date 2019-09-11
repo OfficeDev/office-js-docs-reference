@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.TableColumnCollection
+  - uid: 'excel!Excel.TableColumnCollection:class'
     summary: |-
       Represents a collection of all the columns that are part of the table.
 
@@ -11,20 +11,20 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.TableColumnCollection.add
-      - excel.Excel.TableColumnCollection.context
-      - excel.Excel.TableColumnCollection.count
-      - excel.Excel.TableColumnCollection.getItem
-      - excel.Excel.TableColumnCollection.getItemAt
-      - excel.Excel.TableColumnCollection.items
-      - excel.Excel.TableColumnCollection.load
-      - excel.Excel.TableColumnCollection.load_1
-      - excel.Excel.TableColumnCollection.load_2
-      - excel.Excel.TableColumnCollection.toJSON
-  - uid: excel.Excel.TableColumnCollection.add
+      - 'excel!Excel.TableColumnCollection#add:member(1)'
+      - 'excel!Excel.TableColumnCollection#context:member'
+      - 'excel!Excel.TableColumnCollection#count:member'
+      - 'excel!Excel.TableColumnCollection#getItem:member(1)'
+      - 'excel!Excel.TableColumnCollection#getItemAt:member(1)'
+      - 'excel!Excel.TableColumnCollection#items:member'
+      - 'excel!Excel.TableColumnCollection#load:member(1)'
+      - 'excel!Excel.TableColumnCollection#load:member(2)'
+      - 'excel!Excel.TableColumnCollection#load:member(3)'
+      - 'excel!Excel.TableColumnCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.TableColumnCollection#add:member(1)'
     summary: >-
       Adds a new column to the table.
 
@@ -43,7 +43,7 @@ items:
         string): Excel.TableColumn;
       return:
         type:
-          - excel.Excel.TableColumn
+          - 'excel!Excel.TableColumn:class'
         description: |-
 
 
@@ -75,12 +75,12 @@ items:
         - id: values
           description: Optional. A 2-dimensional array of unformatted values of the table column.
           type:
-            - Array<Array<boolean | string | number>> | boolean | string | number
+            - 'excel!Excel.TableColumnCollection#add~0:complex'
         - id: name
           description: 'Optional. Specifies the name of the new column. If null, the default name will be used.'
           type:
             - string
-  - uid: excel.Excel.TableColumnCollection.context
+  - uid: 'excel!Excel.TableColumnCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -93,8 +93,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.TableColumnCollection.count
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TableColumnCollection#count:member'
     summary: |-
       Returns the number of columns in the table. Read-only.
 
@@ -109,7 +109,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.TableColumnCollection.getItem
+  - uid: 'excel!Excel.TableColumnCollection#getItem:member(1)'
     summary: |-
       Gets a column object by Name or ID.
 
@@ -123,7 +123,7 @@ items:
       content: 'getItem(key: number | string): Excel.TableColumn;'
       return:
         type:
-          - excel.Excel.TableColumn
+          - 'excel!Excel.TableColumn:class'
         description: |-
 
 
@@ -148,7 +148,7 @@ items:
           description: Column Name or ID.
           type:
             - number | string
-  - uid: excel.Excel.TableColumnCollection.getItemAt
+  - uid: 'excel!Excel.TableColumnCollection#getItemAt:member(1)'
     summary: |-
       Gets a column based on its position in the collection.
 
@@ -162,7 +162,7 @@ items:
       content: 'getItemAt(index: number): Excel.TableColumn;'
       return:
         type:
-          - excel.Excel.TableColumn
+          - 'excel!Excel.TableColumn:class'
         description: |-
 
 
@@ -187,7 +187,7 @@ items:
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.TableColumnCollection.items
+  - uid: 'excel!Excel.TableColumnCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -198,8 +198,8 @@ items:
       content: 'readonly items: Excel.TableColumn[];'
       return:
         type:
-          - 'Excel.TableColumn[]'
-  - uid: excel.Excel.TableColumnCollection.load
+          - 'excel!Excel.TableColumnCollection#items~0:complex'
+  - uid: 'excel!Excel.TableColumnCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -232,14 +232,14 @@ items:
         Excel.TableColumnCollection;
       return:
         type:
-          - excel.Excel.TableColumnCollection
+          - 'excel!Excel.TableColumnCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.TableColumnCollection.load_1
+            - 'excel!Excel.TableColumnCollection#load~0:complex'
+  - uid: 'excel!Excel.TableColumnCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -252,7 +252,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.TableColumnCollection;'
       return:
         type:
-          - excel.Excel.TableColumnCollection
+          - 'excel!Excel.TableColumnCollection:class'
         description: |-
 
 
@@ -280,7 +280,7 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.TableColumnCollection.load_2
+  - uid: 'excel!Excel.TableColumnCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -290,14 +290,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.TableColumnCollection;'
       return:
         type:
-          - excel.Excel.TableColumnCollection
+          - 'excel!Excel.TableColumnCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
-  - uid: excel.Excel.TableColumnCollection.toJSON
+            - 'excel!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.TableColumnCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -313,5 +313,53 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableColumnCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.TableColumnCollectionData
+          - 'excel!Excel.Interfaces.TableColumnCollectionData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.TableColumn:class'
+    name: Excel.TableColumn
+  - uid: 'excel!Excel.TableColumnCollection#add~0:complex'
+    name: Array<Array<boolean | string | number>> | boolean | string | number
+    fullName: Array<Array<boolean | string | number>> | boolean | string | number
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: <
+        fullName: <
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: <boolean | string | number>> | boolean | string | number
+        fullName: <boolean | string | number>> | boolean | string | number
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.TableColumnCollection#items~0:complex'
+    name: 'Excel.TableColumn[]'
+    fullName: 'Excel.TableColumn[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.TableColumn:class'
+        name: Excel.TableColumn
+        fullName: Excel.TableColumn
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.TableColumnCollection:class'
+    name: Excel.TableColumnCollection
+  - uid: 'excel!Excel.TableColumnCollection#load~0:complex'
+    name: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
+        name: Excel.Interfaces.TableColumnCollectionLoadOptions
+        fullName: Excel.Interfaces.TableColumnCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+        name: Excel.Interfaces.CollectionLoadOptions
+        fullName: Excel.Interfaces.CollectionLoadOptions
+  - uid: 'excel!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.Interfaces.TableColumnCollectionData:interface'
+    name: Excel.Interfaces.TableColumnCollectionData

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CustomConditionalFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.CustomConditionalFormatUpdateData:interface'
     summary: >-
       An interface for updating data on the CustomConditionalFormat object, for use in "customConditionalFormat.set(<!--
       -->{ ... }<!-- -->)".
@@ -9,4 +9,4 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.RecurrenceChangedEventArgs
+  - uid: 'outlook!Office.RecurrenceChangedEventArgs:interface'
     summary: |-
       Provides updated recurrence object that raised the `Office.EventType.RecurrenceChanged` event.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.RecurrenceChangedEventArgs.recurrence
-      - outlook.Office.RecurrenceChangedEventArgs.type
-  - uid: outlook.Office.RecurrenceChangedEventArgs.recurrence
+      - 'outlook!Office.RecurrenceChangedEventArgs#recurrence:member'
+      - 'outlook!Office.RecurrenceChangedEventArgs#type:member'
+  - uid: 'outlook!Office.RecurrenceChangedEventArgs#recurrence:member'
     summary: |-
       Gets the updated recurrence object.
 
@@ -28,8 +28,8 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - outlook.Office.Recurrence
-  - uid: outlook.Office.RecurrenceChangedEventArgs.type
+          - 'outlook!Office.Recurrence:interface'
+  - uid: 'outlook!Office.RecurrenceChangedEventArgs#type:member'
     summary: |-
       Gets the type of the event. See `Office.EventType` for details.
 
@@ -44,3 +44,6 @@ items:
       return:
         type:
           - '"olkRecurrenceChanged"'
+references:
+  - uid: 'outlook!Office.Recurrence:interface'
+    name: Recurrence

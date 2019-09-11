@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ShapeScaleType
+  - uid: 'excel!Excel.ShapeScaleType:enum'
     summary: |-
       Specifies whether the shape is scaled relative to its original or current size.
 
@@ -10,18 +10,18 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ShapeScaleType.currentSize
-      - excel.Excel.ShapeScaleType.originalSize
-  - uid: excel.Excel.ShapeScaleType.currentSize
+      - 'excel!Excel.ShapeScaleType.currentSize:member'
+      - 'excel!Excel.ShapeScaleType.originalSize:member'
+  - uid: 'excel!Excel.ShapeScaleType.currentSize:member'
     name: currentSize
     fullName: currentSize
     langs:
       - typeScript
     type: field
     numericValue: '"CurrentSize"'
-  - uid: excel.Excel.ShapeScaleType.originalSize
+  - uid: 'excel!Excel.ShapeScaleType.originalSize:member'
     name: originalSize
     fullName: originalSize
     langs:
