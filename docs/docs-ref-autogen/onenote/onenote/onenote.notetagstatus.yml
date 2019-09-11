@@ -1,64 +1,64 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.NoteTagStatus
+  - uid: 'onenote!OneNote.NoteTagStatus:enum'
     summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     name: OneNote.NoteTagStatus
     fullName: OneNote.NoteTagStatus
     langs:
       - typeScript
     type: enum
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.NoteTagStatus.completed
-      - onenote.OneNote.NoteTagStatus.disabled
-      - onenote.OneNote.NoteTagStatus.normal
-      - onenote.OneNote.NoteTagStatus.outlookTask
-      - onenote.OneNote.NoteTagStatus.taskNotSyncedYet
-      - onenote.OneNote.NoteTagStatus.taskRemoved
-      - onenote.OneNote.NoteTagStatus.unknown
-  - uid: onenote.OneNote.NoteTagStatus.completed
+      - 'onenote!OneNote.NoteTagStatus.completed:member'
+      - 'onenote!OneNote.NoteTagStatus.disabled:member'
+      - 'onenote!OneNote.NoteTagStatus.normal:member'
+      - 'onenote!OneNote.NoteTagStatus.outlookTask:member'
+      - 'onenote!OneNote.NoteTagStatus.taskNotSyncedYet:member'
+      - 'onenote!OneNote.NoteTagStatus.taskRemoved:member'
+      - 'onenote!OneNote.NoteTagStatus.unknown:member'
+  - uid: 'onenote!OneNote.NoteTagStatus.completed:member'
     name: completed
     fullName: completed
     langs:
       - typeScript
     type: field
     numericValue: '"Completed"'
-  - uid: onenote.OneNote.NoteTagStatus.disabled
+  - uid: 'onenote!OneNote.NoteTagStatus.disabled:member'
     name: disabled
     fullName: disabled
     langs:
       - typeScript
     type: field
     numericValue: '"Disabled"'
-  - uid: onenote.OneNote.NoteTagStatus.normal
+  - uid: 'onenote!OneNote.NoteTagStatus.normal:member'
     name: normal
     fullName: normal
     langs:
       - typeScript
     type: field
     numericValue: '"Normal"'
-  - uid: onenote.OneNote.NoteTagStatus.outlookTask
+  - uid: 'onenote!OneNote.NoteTagStatus.outlookTask:member'
     name: outlookTask
     fullName: outlookTask
     langs:
       - typeScript
     type: field
     numericValue: '"OutlookTask"'
-  - uid: onenote.OneNote.NoteTagStatus.taskNotSyncedYet
+  - uid: 'onenote!OneNote.NoteTagStatus.taskNotSyncedYet:member'
     name: taskNotSyncedYet
     fullName: taskNotSyncedYet
     langs:
       - typeScript
     type: field
     numericValue: '"TaskNotSyncedYet"'
-  - uid: onenote.OneNote.NoteTagStatus.taskRemoved
+  - uid: 'onenote!OneNote.NoteTagStatus.taskRemoved:member'
     name: taskRemoved
     fullName: taskRemoved
     langs:
       - typeScript
     type: field
     numericValue: '"TaskRemoved"'
-  - uid: onenote.OneNote.NoteTagStatus.unknown
+  - uid: 'onenote!OneNote.NoteTagStatus.unknown:member'
     name: unknown
     fullName: unknown
     langs:

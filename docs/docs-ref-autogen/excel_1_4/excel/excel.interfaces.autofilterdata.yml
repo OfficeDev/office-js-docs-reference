@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.AutoFilterData
+  - uid: 'excel!Excel.Interfaces.AutoFilterData:interface'
     summary: An interface describing the data returned by calling "autoFilter.toJSON()".
     name: Excel.Interfaces.AutoFilterData
     fullName: Excel.Interfaces.AutoFilterData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

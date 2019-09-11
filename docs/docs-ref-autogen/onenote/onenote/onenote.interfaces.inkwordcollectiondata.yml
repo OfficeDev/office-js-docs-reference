@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkWordCollectionData
+  - uid: 'onenote!OneNote.Interfaces.InkWordCollectionData:interface'
     summary: An interface describing the data returned by calling "inkWordCollection.toJSON()".
     name: OneNote.Interfaces.InkWordCollectionData
     fullName: OneNote.Interfaces.InkWordCollectionData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkWordCollectionData.items
-  - uid: onenote.OneNote.Interfaces.InkWordCollectionData.items
+      - 'onenote!OneNote.Interfaces.InkWordCollectionData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.InkWordCollectionData#items:member'
     name: items
     fullName: items
     langs:
@@ -20,4 +20,14 @@ items:
       content: 'items?: OneNote.Interfaces.InkWordData[];'
       return:
         type:
-          - 'OneNote.Interfaces.InkWordData[]'
+          - 'onenote!OneNote.Interfaces.InkWordCollectionData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.InkWordCollectionData#items~0:complex'
+    name: 'OneNote.Interfaces.InkWordData[]'
+    fullName: 'OneNote.Interfaces.InkWordData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.InkWordData:interface'
+        name: OneNote.Interfaces.InkWordData
+        fullName: OneNote.Interfaces.InkWordData
+      - name: '[]'
+        fullName: '[]'

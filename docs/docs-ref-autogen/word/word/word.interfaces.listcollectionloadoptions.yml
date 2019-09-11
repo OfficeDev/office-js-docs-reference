@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.ListCollectionLoadOptions
+  - uid: 'word!Word.Interfaces.ListCollectionLoadOptions:interface'
     summary: |-
-      Contains a collection of [Word.List](xref:word.Word.List) objects.
+      Contains a collection of [Word.List](xref:word!Word.List:class) objects.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Interfaces.ListCollectionLoadOptions
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.ListCollectionLoadOptions.$all
-      - word.Word.Interfaces.ListCollectionLoadOptions.id
-      - word.Word.Interfaces.ListCollectionLoadOptions.levelExistences
-      - word.Word.Interfaces.ListCollectionLoadOptions.levelTypes
-  - uid: word.Word.Interfaces.ListCollectionLoadOptions.$all
+      - 'word!Word.Interfaces.ListCollectionLoadOptions#$all:member'
+      - 'word!Word.Interfaces.ListCollectionLoadOptions#id:member'
+      - 'word!Word.Interfaces.ListCollectionLoadOptions#levelExistences:member'
+      - 'word!Word.Interfaces.ListCollectionLoadOptions#levelTypes:member'
+  - uid: 'word!Word.Interfaces.ListCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ListCollectionLoadOptions.id
+  - uid: 'word!Word.Interfaces.ListCollectionLoadOptions#id:member'
     summary: |-
       For EACH ITEM in the collection: Gets the list's id.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ListCollectionLoadOptions.levelExistences
+  - uid: 'word!Word.Interfaces.ListCollectionLoadOptions#levelExistences:member'
     summary: >-
       For EACH ITEM in the collection: Checks whether each of the 9 levels exists in the list. A true value indicates
       the level exists, which means there is at least one list item at that level. Read-only.
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ListCollectionLoadOptions.levelTypes
+  - uid: 'word!Word.Interfaces.ListCollectionLoadOptions#levelTypes:member'
     summary: >-
       For EACH ITEM in the collection: Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or
       'Picture'. Read-only.

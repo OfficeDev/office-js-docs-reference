@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions:interface'
     summary: |-
       Represents the Excel FilterPivotHierarchy.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.$all
-      - excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.enableMultipleFilterItems
-      - excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.id
-      - excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.name
-      - excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.position
-  - uid: excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.$all
+      - 'excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions#enableMultipleFilterItems:member'
+      - 'excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions#position:member'
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.enableMultipleFilterItems
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions#enableMultipleFilterItems:member'
     summary: |-
       Determines whether to allow multiple filter items.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions#id:member'
     summary: |-
       Id of the FilterPivotHierarchy.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions#name:member'
     summary: |-
       Name of the FilterPivotHierarchy.
 
@@ -73,7 +73,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions.position
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyLoadOptions#position:member'
     summary: |-
       Position of the FilterPivotHierarchy.
 

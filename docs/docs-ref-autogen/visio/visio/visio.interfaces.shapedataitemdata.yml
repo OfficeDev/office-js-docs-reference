@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.ShapeDataItemData
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemData:interface'
     summary: An interface describing the data returned by calling "shapeDataItem.toJSON()".
     name: Visio.Interfaces.ShapeDataItemData
     fullName: Visio.Interfaces.ShapeDataItemData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.ShapeDataItemData.format
-      - visio.Visio.Interfaces.ShapeDataItemData.formattedValue
-      - visio.Visio.Interfaces.ShapeDataItemData.label
-      - visio.Visio.Interfaces.ShapeDataItemData.value
-  - uid: visio.Visio.Interfaces.ShapeDataItemData.format
+      - 'visio!Visio.Interfaces.ShapeDataItemData#format:member'
+      - 'visio!Visio.Interfaces.ShapeDataItemData#formattedValue:member'
+      - 'visio!Visio.Interfaces.ShapeDataItemData#label:member'
+      - 'visio!Visio.Interfaces.ShapeDataItemData#value:member'
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemData#format:member'
     summary: |-
       A string that specifies the format of the shape data item. Read-only.
 
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.Interfaces.ShapeDataItemData.formattedValue
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemData#formattedValue:member'
     summary: |-
       A string that specifies the formatted value of the shape data item. Read-only.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.Interfaces.ShapeDataItemData.label
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemData#label:member'
     summary: |-
       A string that specifies the label of the shape data item. Read-only.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.Interfaces.ShapeDataItemData.value
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemData#value:member'
     summary: |-
       A string that specifies the value of the shape data item. Read-only.
 

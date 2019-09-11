@@ -1,20 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.TableData
+  - uid: 'onenote!OneNote.Interfaces.TableData:interface'
     summary: An interface describing the data returned by calling "table.toJSON()".
     name: OneNote.Interfaces.TableData
     fullName: OneNote.Interfaces.TableData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.TableData.borderVisible
-      - onenote.OneNote.Interfaces.TableData.columnCount
-      - onenote.OneNote.Interfaces.TableData.id
-      - onenote.OneNote.Interfaces.TableData.rowCount
-      - onenote.OneNote.Interfaces.TableData.rows
-  - uid: onenote.OneNote.Interfaces.TableData.borderVisible
+      - 'onenote!OneNote.Interfaces.TableData#borderVisible:member'
+      - 'onenote!OneNote.Interfaces.TableData#columnCount:member'
+      - 'onenote!OneNote.Interfaces.TableData#id:member'
+      - 'onenote!OneNote.Interfaces.TableData#rowCount:member'
+      - 'onenote!OneNote.Interfaces.TableData#rows:member'
+  - uid: 'onenote!OneNote.Interfaces.TableData#borderVisible:member'
     summary: |-
       Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.TableData.columnCount
+  - uid: 'onenote!OneNote.Interfaces.TableData#columnCount:member'
     summary: |-
       Gets the number of columns in the table.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.Interfaces.TableData.id
+  - uid: 'onenote!OneNote.Interfaces.TableData#id:member'
     summary: |-
       Gets the ID of the table. Read-only.
 
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.TableData.rowCount
+  - uid: 'onenote!OneNote.Interfaces.TableData#rowCount:member'
     summary: |-
       Gets the number of rows in the table.
 
@@ -74,7 +74,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.Interfaces.TableData.rows
+  - uid: 'onenote!OneNote.Interfaces.TableData#rows:member'
     summary: |-
       Gets all of the table rows. Read-only.
 
@@ -88,4 +88,14 @@ items:
       content: 'rows?: OneNote.Interfaces.TableRowData[];'
       return:
         type:
-          - 'OneNote.Interfaces.TableRowData[]'
+          - 'onenote!OneNote.Interfaces.TableData#rows~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.TableData#rows~0:complex'
+    name: 'OneNote.Interfaces.TableRowData[]'
+    fullName: 'OneNote.Interfaces.TableRowData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.TableRowData:interface'
+        name: OneNote.Interfaces.TableRowData
+        fullName: OneNote.Interfaces.TableRowData
+      - name: '[]'
+        fullName: '[]'

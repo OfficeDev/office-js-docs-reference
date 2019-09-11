@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the InkAnalysisParagraphCollection object, for use in
       "inkAnalysisParagraphCollection.set(<!-- -->{ ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData.items
-  - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData.items
+      - 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: OneNote.Interfaces.InkAnalysisParagraphData[];'
       return:
         type:
-          - 'OneNote.Interfaces.InkAnalysisParagraphData[]'
+          - 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData#items~0:complex'
+    name: 'OneNote.Interfaces.InkAnalysisParagraphData[]'
+    fullName: 'OneNote.Interfaces.InkAnalysisParagraphData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface'
+        name: OneNote.Interfaces.InkAnalysisParagraphData
+        fullName: OneNote.Interfaces.InkAnalysisParagraphData
+      - name: '[]'
+        fullName: '[]'

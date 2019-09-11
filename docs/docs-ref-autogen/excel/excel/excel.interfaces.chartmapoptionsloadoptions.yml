@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartMapOptionsLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsLoadOptions:interface'
     summary: |-
       Encapsulates the properties for a region map chart.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartMapOptionsLoadOptions.$all
-      - excel.Excel.Interfaces.ChartMapOptionsLoadOptions.labelStrategy
-      - excel.Excel.Interfaces.ChartMapOptionsLoadOptions.level
-      - excel.Excel.Interfaces.ChartMapOptionsLoadOptions.projectionType
-  - uid: excel.Excel.Interfaces.ChartMapOptionsLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartMapOptionsLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartMapOptionsLoadOptions#labelStrategy:member'
+      - 'excel!Excel.Interfaces.ChartMapOptionsLoadOptions#level:member'
+      - 'excel!Excel.Interfaces.ChartMapOptionsLoadOptions#projectionType:member'
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartMapOptionsLoadOptions.labelStrategy
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsLoadOptions#labelStrategy:member'
     summary: |-
       Returns or sets the series map labels strategy of a region map chart. Read/Write.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartMapOptionsLoadOptions.level
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsLoadOptions#level:member'
     summary: |-
       Returns or sets the series mapping level of a region map chart. Read/Write.
 
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartMapOptionsLoadOptions.projectionType
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsLoadOptions#projectionType:member'
     summary: |-
       Returns or sets the series projection type of a region map chart. Read/Write.
 

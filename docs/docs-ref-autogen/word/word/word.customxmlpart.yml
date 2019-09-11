@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.CustomXmlPart
+  - uid: 'word!Word.CustomXmlPart:class'
     summary: >-
       Represents a custom XML part.
 
@@ -14,29 +14,29 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: word
+      - 'word!OfficeExtension.ClientObject:class'
+    package: word!
     children:
-      - word.Word.CustomXmlPart.context
-      - word.Word.CustomXmlPart.delete
-      - word.Word.CustomXmlPart.deleteAttribute
-      - word.Word.CustomXmlPart.deleteElement
-      - word.Word.CustomXmlPart.getXml
-      - word.Word.CustomXmlPart.id
-      - word.Word.CustomXmlPart.insertAttribute
-      - word.Word.CustomXmlPart.insertElement
-      - word.Word.CustomXmlPart.load
-      - word.Word.CustomXmlPart.load_1
-      - word.Word.CustomXmlPart.load_2
-      - word.Word.CustomXmlPart.namespaceUri
-      - word.Word.CustomXmlPart.query
-      - word.Word.CustomXmlPart.setXml
-      - word.Word.CustomXmlPart.toJSON
-      - word.Word.CustomXmlPart.track
-      - word.Word.CustomXmlPart.untrack
-      - word.Word.CustomXmlPart.updateAttribute
-      - word.Word.CustomXmlPart.updateElement
-  - uid: word.Word.CustomXmlPart.context
+      - 'word!Word.CustomXmlPart#context:member'
+      - 'word!Word.CustomXmlPart#delete:member(1)'
+      - 'word!Word.CustomXmlPart#deleteAttribute:member(1)'
+      - 'word!Word.CustomXmlPart#deleteElement:member(1)'
+      - 'word!Word.CustomXmlPart#getXml:member(1)'
+      - 'word!Word.CustomXmlPart#id:member'
+      - 'word!Word.CustomXmlPart#insertAttribute:member(1)'
+      - 'word!Word.CustomXmlPart#insertElement:member(1)'
+      - 'word!Word.CustomXmlPart#load:member(1)'
+      - 'word!Word.CustomXmlPart#load:member(2)'
+      - 'word!Word.CustomXmlPart#load:member(3)'
+      - 'word!Word.CustomXmlPart#namespaceUri:member'
+      - 'word!Word.CustomXmlPart#query:member(1)'
+      - 'word!Word.CustomXmlPart#setXml:member(1)'
+      - 'word!Word.CustomXmlPart#toJSON:member(1)'
+      - 'word!Word.CustomXmlPart#track:member(1)'
+      - 'word!Word.CustomXmlPart#untrack:member(1)'
+      - 'word!Word.CustomXmlPart#updateAttribute:member(1)'
+      - 'word!Word.CustomXmlPart#updateElement:member(1)'
+  - uid: 'word!Word.CustomXmlPart#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -50,8 +50,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.CustomXmlPart.delete
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.CustomXmlPart#delete:member(1)'
     summary: >-
       Deletes the custom XML part.
 
@@ -70,7 +70,7 @@ items:
         type:
           - void
         description: ''
-  - uid: word.Word.CustomXmlPart.deleteAttribute
+  - uid: 'word!Word.CustomXmlPart#deleteAttribute:member(1)'
     summary: >-
       Deletes an attribute with the given name from the element identified by xpath.
 
@@ -104,7 +104,7 @@ items:
           description: Required. Name of the attribute.
           type:
             - string
-  - uid: word.Word.CustomXmlPart.deleteElement
+  - uid: 'word!Word.CustomXmlPart#deleteElement:member(1)'
     summary: >-
       Deletes the element identified by xpath.
 
@@ -134,7 +134,7 @@ items:
             URIs.
           type:
             - any
-  - uid: word.Word.CustomXmlPart.getXml
+  - uid: 'word!Word.CustomXmlPart#getXml:member(1)'
     summary: >-
       Gets the full XML content of the custom XML part.
 
@@ -151,9 +151,9 @@ items:
       content: 'getXml(): OfficeExtension.ClientResult<string>;'
       return:
         type:
-          - OfficeExtension.ClientResult<string>
+          - 'word!Word.CustomXmlPart#getXml~0:complex'
         description: ''
-  - uid: word.Word.CustomXmlPart.id
+  - uid: 'word!Word.CustomXmlPart#id:member'
     summary: >-
       Gets the ID of the custom XML part. Read only.
 
@@ -171,7 +171,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.CustomXmlPart.insertAttribute
+  - uid: 'word!Word.CustomXmlPart#insertAttribute:member(1)'
     summary: >-
       Inserts an attribute with the given name and value to the element identified by xpath.
 
@@ -209,7 +209,7 @@ items:
           description: Required. Value of the attribute.
           type:
             - string
-  - uid: word.Word.CustomXmlPart.insertElement
+  - uid: 'word!Word.CustomXmlPart#insertElement:member(1)'
     summary: >-
       Inserts the given XML under the parent element identified by xpath at child position index.
 
@@ -249,7 +249,7 @@ items:
             the last child of this parent.
           type:
             - number
-  - uid: word.Word.CustomXmlPart.load
+  - uid: 'word!Word.CustomXmlPart#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -281,14 +281,14 @@ items:
       content: 'load(option?: Word.Interfaces.CustomXmlPartLoadOptions): Word.CustomXmlPart;'
       return:
         type:
-          - word.Word.CustomXmlPart
+          - 'word!Word.CustomXmlPart:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.CustomXmlPartLoadOptions
-  - uid: word.Word.CustomXmlPart.load_1
+            - 'word!Word.Interfaces.CustomXmlPartLoadOptions:interface'
+  - uid: 'word!Word.CustomXmlPart#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -302,14 +302,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.CustomXmlPart;'
       return:
         type:
-          - word.Word.CustomXmlPart
+          - 'word!Word.CustomXmlPart:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.CustomXmlPart.load_2
+  - uid: 'word!Word.CustomXmlPart#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -323,7 +323,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.CustomXmlPart;'
       return:
         type:
-          - word.Word.CustomXmlPart
+          - 'word!Word.CustomXmlPart:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -332,7 +332,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: word.Word.CustomXmlPart.namespaceUri
+  - uid: 'word!Word.CustomXmlPart#namespaceUri:member'
     summary: >-
       Gets the namespace URI of the custom XML part. Read only.
 
@@ -350,7 +350,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.CustomXmlPart.query
+  - uid: 'word!Word.CustomXmlPart#query:member(1)'
     summary: >-
       Queries the XML content of the custom XML part.
 
@@ -367,7 +367,7 @@ items:
       content: 'query(xpath: string, namespaceMappings: any): OfficeExtension.ClientResult<string[]>;'
       return:
         type:
-          - 'OfficeExtension.ClientResult<string[]>'
+          - 'word!Word.CustomXmlPart#query~0:complex'
         description: An array where each item represents an entry matched by the XPath query.
       parameters:
         - id: xpath
@@ -380,7 +380,7 @@ items:
             URIs.
           type:
             - any
-  - uid: word.Word.CustomXmlPart.setXml
+  - uid: 'word!Word.CustomXmlPart#setXml:member(1)'
     summary: >-
       Sets the full XML content of the custom XML part.
 
@@ -404,7 +404,7 @@ items:
           description: Required. XML content to be set.
           type:
             - string
-  - uid: word.Word.CustomXmlPart.toJSON
+  - uid: 'word!Word.CustomXmlPart#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -421,9 +421,9 @@ items:
       content: 'toJSON(): Word.Interfaces.CustomXmlPartData;'
       return:
         type:
-          - word.Word.Interfaces.CustomXmlPartData
+          - 'word!Word.Interfaces.CustomXmlPartData:interface'
         description: ''
-  - uid: word.Word.CustomXmlPart.track
+  - uid: 'word!Word.CustomXmlPart#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -440,9 +440,9 @@ items:
       content: 'track(): Word.CustomXmlPart;'
       return:
         type:
-          - word.Word.CustomXmlPart
+          - 'word!Word.CustomXmlPart:class'
         description: ''
-  - uid: word.Word.CustomXmlPart.untrack
+  - uid: 'word!Word.CustomXmlPart#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -458,9 +458,9 @@ items:
       content: 'untrack(): Word.CustomXmlPart;'
       return:
         type:
-          - word.Word.CustomXmlPart
+          - 'word!Word.CustomXmlPart:class'
         description: ''
-  - uid: word.Word.CustomXmlPart.updateAttribute
+  - uid: 'word!Word.CustomXmlPart#updateAttribute:member(1)'
     summary: >-
       Updates the value of an attribute with the given name of the element identified by xpath.
 
@@ -498,7 +498,7 @@ items:
           description: Required. New value of the attribute.
           type:
             - string
-  - uid: word.Word.CustomXmlPart.updateElement
+  - uid: 'word!Word.CustomXmlPart#updateElement:member(1)'
     summary: >-
       Updates the XML of the element identified by xpath.
 
@@ -532,3 +532,32 @@ items:
             URIs.
           type:
             - any
+references:
+  - uid: 'word!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.CustomXmlPart#getXml~0:complex'
+    name: OfficeExtension.ClientResult<string>
+    fullName: OfficeExtension.ClientResult<string>
+    spec.typeScript:
+      - uid: 'word!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <string>
+        fullName: <string>
+  - uid: 'word!Word.CustomXmlPart:class'
+    name: Word.CustomXmlPart
+  - uid: 'word!Word.Interfaces.CustomXmlPartLoadOptions:interface'
+    name: Word.Interfaces.CustomXmlPartLoadOptions
+  - uid: 'word!Word.CustomXmlPart#query~0:complex'
+    name: 'OfficeExtension.ClientResult<string[]>'
+    fullName: 'OfficeExtension.ClientResult<string[]>'
+    spec.typeScript:
+      - uid: 'word!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: '<string[]>'
+        fullName: '<string[]>'
+  - uid: 'word!Word.Interfaces.CustomXmlPartData:interface'
+    name: Word.Interfaces.CustomXmlPartData

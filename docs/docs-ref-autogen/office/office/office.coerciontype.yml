@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.CoercionType
+  - uid: 'office!Office.CoercionType:enum'
     summary: Specifies how to coerce data returned or set by the invoked method.
     remarks: >-
       PowerPoint supports only `Office.CoercionType.Text`<!-- -->, `Office.CoercionType.Image`<!-- -->,
@@ -13,17 +13,17 @@ items:
     langs:
       - typeScript
     type: enum
-    package: office
+    package: office!
     children:
-      - office.Office.CoercionType.Html
-      - office.Office.CoercionType.Image
-      - office.Office.CoercionType.Matrix
-      - office.Office.CoercionType.Ooxml
-      - office.Office.CoercionType.SlideRange
-      - office.Office.CoercionType.Table
-      - office.Office.CoercionType.Text
-      - office.Office.CoercionType.XmlSvg
-  - uid: office.Office.CoercionType.Html
+      - 'office!Office.CoercionType.Html:member'
+      - 'office!Office.CoercionType.Image:member'
+      - 'office!Office.CoercionType.Matrix:member'
+      - 'office!Office.CoercionType.Ooxml:member'
+      - 'office!Office.CoercionType.SlideRange:member'
+      - 'office!Office.CoercionType.Table:member'
+      - 'office!Office.CoercionType.Text:member'
+      - 'office!Office.CoercionType.XmlSvg:member'
+  - uid: 'office!Office.CoercionType.Html:member'
     summary: |-
       Return or set data as HTML.
 
@@ -33,14 +33,14 @@ items:
     langs:
       - typeScript
     type: field
-  - uid: office.Office.CoercionType.Image
+  - uid: 'office!Office.CoercionType.Image:member'
     summary: 'Data is returned or set as an image stream. **Note**: Only applies to data in Excel, Word, and PowerPoint.'
     name: Image
     fullName: Image
     langs:
       - typeScript
     type: field
-  - uid: office.Office.CoercionType.Matrix
+  - uid: 'office!Office.CoercionType.Matrix:member'
     summary: >-
       Return or set data as tabular data with no headers. Data is returned or set as an array of arrays containing
       one-dimensional runs of characters. For example, three rows of string values in two columns would be: \[\["R1C1",
@@ -53,7 +53,7 @@ items:
     langs:
       - typeScript
     type: field
-  - uid: office.Office.CoercionType.Ooxml
+  - uid: 'office!Office.CoercionType.Ooxml:member'
     summary: |-
       Return or set data as Office Open XML.
 
@@ -63,21 +63,22 @@ items:
     langs:
       - typeScript
     type: field
-  - uid: office.Office.CoercionType.SlideRange
+  - uid: 'office!Office.CoercionType.SlideRange:member'
     summary: >-
       Return a JSON object that contains an array of the ids, titles, and indexes of the selected slides. For example,
       `{"slides":[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of
       two slides.
 
 
-      **Note**: Only applies to data in PowerPoint when calling the [Document](xref:office.Office.Document)<!--
-      -->.getSelectedData method to get the current slide or selected range of slides.
+      **Note**: Only applies to data in PowerPoint when calling the
+      [Document](xref:office!Office.Document:interface)<!-- -->.getSelectedData method to get the current slide or
+      selected range of slides.
     name: SlideRange
     fullName: SlideRange
     langs:
       - typeScript
     type: field
-  - uid: office.Office.CoercionType.Table
+  - uid: 'office!Office.CoercionType.Table:member'
     summary: >-
       Return or set data as tabular data with optional headers. Data is returned or set as an array of arrays with
       optional headers.
@@ -89,14 +90,14 @@ items:
     langs:
       - typeScript
     type: field
-  - uid: office.Office.CoercionType.Text
+  - uid: 'office!Office.CoercionType.Text:member'
     summary: Return or set data as text (string). Data is returned or set as a one-dimensional run of characters.
     name: Text
     fullName: Text
     langs:
       - typeScript
     type: field
-  - uid: office.Office.CoercionType.XmlSvg
+  - uid: 'office!Office.CoercionType.XmlSvg:member'
     summary: >-
       Data is returned or set as XML data containing an SVG image. **Note**: Only applies to data in Excel, Word, and
       PowerPoint.

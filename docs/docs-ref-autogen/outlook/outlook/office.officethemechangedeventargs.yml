@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.OfficeThemeChangedEventArgs
+  - uid: 'outlook!Office.OfficeThemeChangedEventArgs:interface'
     summary: |-
       Provides the updated Office theme that raised the `Office.EventType.OfficeThemeChanged` event.
 
@@ -11,11 +11,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.OfficeThemeChangedEventArgs.officeTheme
-      - outlook.Office.OfficeThemeChangedEventArgs.type
-  - uid: outlook.Office.OfficeThemeChangedEventArgs.officeTheme
+      - 'outlook!Office.OfficeThemeChangedEventArgs#officeTheme:member'
+      - 'outlook!Office.OfficeThemeChangedEventArgs#type:member'
+  - uid: 'outlook!Office.OfficeThemeChangedEventArgs#officeTheme:member'
     summary: |-
       Gets the updated Office theme.
 
@@ -30,8 +30,8 @@ items:
       content: 'officeTheme: Office.OfficeTheme;'
       return:
         type:
-          - Office.OfficeTheme
-  - uid: outlook.Office.OfficeThemeChangedEventArgs.type
+          - 'outlook!Office.OfficeTheme:interface'
+  - uid: 'outlook!Office.OfficeThemeChangedEventArgs#type:member'
     summary: |-
       Gets the type of the event. See `Office.EventType` for details.
 
@@ -47,3 +47,6 @@ items:
       return:
         type:
           - '"officeThemeChanged"'
+references:
+  - uid: 'outlook!Office.OfficeTheme:interface'
+    name: Office.OfficeTheme

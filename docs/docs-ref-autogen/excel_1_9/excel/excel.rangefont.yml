@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.RangeFont
+  - uid: 'excel!Excel.RangeFont:class'
     summary: |-
       This object represents the font attributes (font name, font size, color, etc.) for an object.
 
@@ -11,27 +11,27 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.RangeFont.bold
-      - excel.Excel.RangeFont.color
-      - excel.Excel.RangeFont.context
-      - excel.Excel.RangeFont.italic
-      - excel.Excel.RangeFont.load
-      - excel.Excel.RangeFont.load_1
-      - excel.Excel.RangeFont.load_2
-      - excel.Excel.RangeFont.name
-      - excel.Excel.RangeFont.set
-      - excel.Excel.RangeFont.set_1
-      - excel.Excel.RangeFont.size
-      - excel.Excel.RangeFont.strikethrough
-      - excel.Excel.RangeFont.subscript
-      - excel.Excel.RangeFont.superscript
-      - excel.Excel.RangeFont.tintAndShade
-      - excel.Excel.RangeFont.toJSON
-      - excel.Excel.RangeFont.underline
-  - uid: excel.Excel.RangeFont.bold
+      - 'excel!Excel.RangeFont#bold:member'
+      - 'excel!Excel.RangeFont#color:member'
+      - 'excel!Excel.RangeFont#context:member'
+      - 'excel!Excel.RangeFont#italic:member'
+      - 'excel!Excel.RangeFont#load:member(1)'
+      - 'excel!Excel.RangeFont#load:member(2)'
+      - 'excel!Excel.RangeFont#load:member(3)'
+      - 'excel!Excel.RangeFont#name:member'
+      - 'excel!Excel.RangeFont#set:member(1)'
+      - 'excel!Excel.RangeFont#set:member(2)'
+      - 'excel!Excel.RangeFont#size:member'
+      - 'excel!Excel.RangeFont#strikethrough:member'
+      - 'excel!Excel.RangeFont#subscript:member'
+      - 'excel!Excel.RangeFont#superscript:member'
+      - 'excel!Excel.RangeFont#tintAndShade:member'
+      - 'excel!Excel.RangeFont#toJSON:member(1)'
+      - 'excel!Excel.RangeFont#underline:member'
+  - uid: 'excel!Excel.RangeFont#bold:member'
     summary: |-
       Represents the bold status of font.
 
@@ -46,7 +46,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.RangeFont.color
+  - uid: 'excel!Excel.RangeFont#color:member'
     summary: |-
       HTML color code representation of the text color. E.g. \#FF0000 represents Red.
 
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.RangeFont.context
+  - uid: 'excel!Excel.RangeFont#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -74,8 +74,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.RangeFont.italic
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.RangeFont#italic:member'
     summary: |-
       Represents the italic status of the font.
 
@@ -90,7 +90,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.RangeFont.load
+  - uid: 'excel!Excel.RangeFont#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -121,14 +121,14 @@ items:
       content: 'load(option?: Excel.Interfaces.RangeFontLoadOptions): Excel.RangeFont;'
       return:
         type:
-          - excel.Excel.RangeFont
+          - 'excel!Excel.RangeFont:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.RangeFontLoadOptions
-  - uid: excel.Excel.RangeFont.load_1
+            - 'excel!Excel.Interfaces.RangeFontLoadOptions:interface'
+  - uid: 'excel!Excel.RangeFont#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -141,7 +141,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.RangeFont;'
       return:
         type:
-          - excel.Excel.RangeFont
+          - 'excel!Excel.RangeFont:class'
         description: |-
 
 
@@ -185,7 +185,7 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.RangeFont.load_2
+  - uid: 'excel!Excel.RangeFont#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -198,7 +198,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeFont;'
       return:
         type:
-          - excel.Excel.RangeFont
+          - 'excel!Excel.RangeFont:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -207,7 +207,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.RangeFont.name
+  - uid: 'excel!Excel.RangeFont#name:member'
     summary: |-
       Font name (e.g. "Calibri")
 
@@ -222,7 +222,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.RangeFont.set
+  - uid: 'excel!Excel.RangeFont#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -247,12 +247,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.RangeFontUpdateData
+            - 'excel!Excel.Interfaces.RangeFontUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.RangeFont.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.RangeFont#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -269,8 +269,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.RangeFont
-  - uid: excel.Excel.RangeFont.size
+            - 'excel!Excel.RangeFont:class'
+  - uid: 'excel!Excel.RangeFont#size:member'
     summary: |-
       Font size.
 
@@ -285,7 +285,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.RangeFont.strikethrough
+  - uid: 'excel!Excel.RangeFont#strikethrough:member'
     summary: >-
       Represents the strikethrough status of font. A null value indicates that the entire range doesn't have uniform
       Strikethrough setting.
@@ -302,7 +302,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.RangeFont.subscript
+  - uid: 'excel!Excel.RangeFont#subscript:member'
     summary: >-
       Represents the Subscript status of font. Returns True if all the fonts of the range are Subscript. Returns False
       if all the fonts of the range are Superscript or normal (neither Superscript, nor Subscript). Returns Null
@@ -320,7 +320,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.RangeFont.superscript
+  - uid: 'excel!Excel.RangeFont#superscript:member'
     summary: >-
       Represents the Superscript status of font. Returns True if all the fonts of the range are Superscript. Returns
       False if all the fonts of the range are Subscript or normal (neither Superscript, nor Subscript). Returns Null
@@ -338,7 +338,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.RangeFont.tintAndShade
+  - uid: 'excel!Excel.RangeFont#tintAndShade:member'
     summary: >-
       Returns or sets a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1
       (brightest), with 0 for the original color. A null value indicates that the entire range doesn't have uniform font
@@ -356,7 +356,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.RangeFont.toJSON
+  - uid: 'excel!Excel.RangeFont#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -372,9 +372,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeFontData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFontData
+          - 'excel!Excel.Interfaces.RangeFontData:interface'
         description: ''
-  - uid: excel.Excel.RangeFont.underline
+  - uid: 'excel!Excel.RangeFont#underline:member'
     summary: |-
       Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
 
@@ -388,4 +388,28 @@ items:
       content: 'underline: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";'
       return:
         type:
-          - Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"
+          - 'excel!Excel.RangeFont#underline~0:complex'
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.RangeFont:class'
+    name: Excel.RangeFont
+  - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions:interface'
+    name: Excel.Interfaces.RangeFontLoadOptions
+  - uid: 'excel!Excel.Interfaces.RangeFontUpdateData:interface'
+    name: Interfaces.RangeFontUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.RangeFontData:interface'
+    name: Excel.Interfaces.RangeFontData
+  - uid: 'excel!Excel.RangeFont#underline~0:complex'
+    name: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"
+    fullName: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"
+    spec.typeScript:
+      - uid: 'excel!Excel.RangeUnderlineStyle:enum'
+        name: Excel.RangeUnderlineStyle
+        fullName: Excel.RangeUnderlineStyle
+      - name: ' | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"'
+        fullName: ' | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"'

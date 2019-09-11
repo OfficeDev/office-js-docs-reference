@@ -1,48 +1,48 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.DocumentPropertyType
+  - uid: 'excel!Excel.DocumentPropertyType:enum'
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.DocumentPropertyType
     fullName: Excel.DocumentPropertyType
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.DocumentPropertyType.boolean
-      - excel.Excel.DocumentPropertyType.date
-      - excel.Excel.DocumentPropertyType.float
-      - excel.Excel.DocumentPropertyType.number
-      - excel.Excel.DocumentPropertyType.string
-  - uid: excel.Excel.DocumentPropertyType.boolean
+      - 'excel!Excel.DocumentPropertyType.boolean:member'
+      - 'excel!Excel.DocumentPropertyType.date:member'
+      - 'excel!Excel.DocumentPropertyType.float:member'
+      - 'excel!Excel.DocumentPropertyType.number:member'
+      - 'excel!Excel.DocumentPropertyType.string:member'
+  - uid: 'excel!Excel.DocumentPropertyType.boolean:member'
     name: boolean
     fullName: boolean
     langs:
       - typeScript
     type: field
     numericValue: '"Boolean"'
-  - uid: excel.Excel.DocumentPropertyType.date
+  - uid: 'excel!Excel.DocumentPropertyType.date:member'
     name: date
     fullName: date
     langs:
       - typeScript
     type: field
     numericValue: '"Date"'
-  - uid: excel.Excel.DocumentPropertyType.float
+  - uid: 'excel!Excel.DocumentPropertyType.float:member'
     name: float
     fullName: float
     langs:
       - typeScript
     type: field
     numericValue: '"Float"'
-  - uid: excel.Excel.DocumentPropertyType.number
+  - uid: 'excel!Excel.DocumentPropertyType.number:member'
     name: number
     fullName: number
     langs:
       - typeScript
     type: field
     numericValue: '"Number"'
-  - uid: excel.Excel.DocumentPropertyType.string
+  - uid: 'excel!Excel.DocumentPropertyType.string:member'
     name: string
     fullName: string
     langs:

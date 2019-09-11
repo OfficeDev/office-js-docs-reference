@@ -1,8 +1,9 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions
+  - uid: 'word!Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions:interface'
     summary: >-
-      Contains the collection of [Word.CustomXmlPart](xref:word.Word.CustomXmlPart) objects with a specific namespace.
+      Contains the collection of [Word.CustomXmlPart](xref:word!Word.CustomXmlPart:class) objects with a specific
+      namespace.
 
 
       \[ [API set: WordApi BETA (PREVIEW
@@ -13,12 +14,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions.$all
-      - word.Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions.id
-      - word.Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions.namespaceUri
-  - uid: word.Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions.$all
+      - 'word!Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions#$all:member'
+      - 'word!Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions#id:member'
+      - 'word!Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions#namespaceUri:member'
+  - uid: 'word!Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions#$all:member'
     isPreview: true
     name: $all
     fullName: $all
@@ -30,7 +31,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions.id
+  - uid: 'word!Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions#id:member'
     summary: >-
       For EACH ITEM in the collection: Gets the ID of the custom XML part. Read only.
 
@@ -48,7 +49,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions.namespaceUri
+  - uid: 'word!Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions#namespaceUri:member'
     summary: >-
       For EACH ITEM in the collection: Gets the namespace URI of the custom XML part. Read only.
 

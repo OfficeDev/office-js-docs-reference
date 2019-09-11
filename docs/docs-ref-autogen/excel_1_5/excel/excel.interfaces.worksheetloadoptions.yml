@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
     summary: |-
       An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 
@@ -10,17 +10,17 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.WorksheetLoadOptions.$all
-      - excel.Excel.Interfaces.WorksheetLoadOptions.charts
-      - excel.Excel.Interfaces.WorksheetLoadOptions.id
-      - excel.Excel.Interfaces.WorksheetLoadOptions.name
-      - excel.Excel.Interfaces.WorksheetLoadOptions.position
-      - excel.Excel.Interfaces.WorksheetLoadOptions.protection
-      - excel.Excel.Interfaces.WorksheetLoadOptions.tables
-      - excel.Excel.Interfaces.WorksheetLoadOptions.visibility
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.$all
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#charts:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#position:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#protection:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#tables:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#visibility:member'
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.charts
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#charts:member'
     summary: |-
       Returns collection of charts that are part of the worksheet.
 
@@ -45,8 +45,8 @@ items:
       content: 'charts?: Excel.Interfaces.ChartCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.id
+          - 'excel!Excel.Interfaces.ChartCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#id:member'
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
       the same even when the worksheet is renamed or moved. Read-only.
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#name:member'
     summary: |-
       The display name of the worksheet.
 
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.position
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#position:member'
     summary: |-
       The zero-based position of the worksheet within the workbook.
 
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.protection
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#protection:member'
     summary: |-
       Returns sheet protection object for a worksheet.
 
@@ -107,8 +107,8 @@ items:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetProtectionLoadOptions
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.tables
+          - 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#tables:member'
     summary: |-
       Collection of tables that are part of the worksheet.
 
@@ -122,8 +122,8 @@ items:
       content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TableCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.WorksheetLoadOptions.visibility
+          - 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#visibility:member'
     summary: >-
       The Visibility of the worksheet.
 
@@ -140,3 +140,10 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions:interface'
+    name: Excel.Interfaces.ChartCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
+    name: Excel.Interfaces.WorksheetProtectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
+    name: Excel.Interfaces.TableCollectionLoadOptions

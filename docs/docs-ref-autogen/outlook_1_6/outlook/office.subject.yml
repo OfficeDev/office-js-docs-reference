@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.Subject
+  - uid: 'outlook!Office.Subject:interface'
     summary: |-
       Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
 
@@ -16,13 +16,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.Subject.getAsync
-      - outlook.Office.Subject.getAsync_1
-      - outlook.Office.Subject.setAsync
-      - outlook.Office.Subject.setAsync_1
-  - uid: outlook.Office.Subject.getAsync
+      - 'outlook!Office.Subject#getAsync:member(1)'
+      - 'outlook!Office.Subject#getAsync:member(2)'
+      - 'outlook!Office.Subject#setAsync:member(1)'
+      - 'outlook!Office.Subject#setAsync:member(2)'
+  - uid: 'outlook!Office.Subject#getAsync:member(1)'
     summary: >-
       Gets the subject of an appointment or message.
 
@@ -57,14 +57,14 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult. The `value` property of the result is the subject of the item.
           type:
-            - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.Subject.getAsync_1
+            - 'outlook!Office.Subject#getAsync~0:complex'
+  - uid: 'outlook!Office.Subject#getAsync:member(2)'
     summary: >-
       Gets the subject of an appointment or message.
 
@@ -112,8 +112,8 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult. The `value` property of the result is the subject of the item.
           type:
-            - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.Subject.setAsync
+            - 'outlook!Office.Subject#getAsync~1:complex'
+  - uid: 'outlook!Office.Subject#setAsync:member(1)'
     summary: >-
       Sets the subject of an appointment or message.
 
@@ -159,15 +159,15 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. If setting the subject fails, the asyncResult.error property will
             contain an error code.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.Subject.setAsync_1
+            - 'outlook!Office.Subject#setAsync~0:complex'
+  - uid: 'outlook!Office.Subject#setAsync:member(2)'
     summary: >-
       Sets the subject of an appointment or message.
 
@@ -226,4 +226,51 @@ items:
             parameter of type Office.AsyncResult. If setting the subject fails, the asyncResult.error property will
             contain an error code.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
+            - 'outlook!Office.Subject#setAsync~1:complex'
+references:
+  - uid: 'outlook!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions
+  - uid: 'outlook!Office.Subject#getAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'outlook!Office.Subject#getAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'outlook!Office.Subject#setAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.Subject#setAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void

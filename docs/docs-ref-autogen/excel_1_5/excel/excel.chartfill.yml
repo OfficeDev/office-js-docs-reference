@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartFill
+  - uid: 'excel!Excel.ChartFill:class'
     summary: |-
       Represents the fill formatting for a chart element.
 
@@ -11,15 +11,15 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.ChartFill.clear
-      - excel.Excel.ChartFill.context
-      - excel.Excel.ChartFill.load
-      - excel.Excel.ChartFill.setSolidColor
-      - excel.Excel.ChartFill.toJSON
-  - uid: excel.Excel.ChartFill.clear
+      - 'excel!Excel.ChartFill#clear:member(1)'
+      - 'excel!Excel.ChartFill#context:member'
+      - 'excel!Excel.ChartFill#load:member(1)'
+      - 'excel!Excel.ChartFill#setSolidColor:member(1)'
+      - 'excel!Excel.ChartFill#toJSON:member(1)'
+  - uid: 'excel!Excel.ChartFill#clear:member(1)'
     summary: |-
       Clear the fill color of a chart element.
 
@@ -54,7 +54,7 @@ items:
               }
           });
           ```
-  - uid: excel.Excel.ChartFill.context
+  - uid: 'excel!Excel.ChartFill#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -67,8 +67,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartFill.load
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartFill#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -81,14 +81,14 @@ items:
       content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartFill;'
       return:
         type:
-          - excel.Excel.ChartFill
+          - 'excel!Excel.ChartFill:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
-  - uid: excel.Excel.ChartFill.setSolidColor
+            - 'excel!Excel.ChartFill#load~0:complex'
+  - uid: 'excel!Excel.ChartFill#setSolidColor:member(1)'
     summary: |-
       Sets the fill formatting of a chart element to a uniform color.
 
@@ -144,7 +144,7 @@ items:
             named HTML color (e.g. "orange").
           type:
             - string
-  - uid: excel.Excel.ChartFill.toJSON
+  - uid: 'excel!Excel.ChartFill#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -168,3 +168,19 @@ items:
                         [key: string]: string;
                     }
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ChartFill:class'
+    name: Excel.ChartFill
+  - uid: 'excel!Excel.ChartFill#load~0:complex'
+    name: 'string | string[] | OfficeExtension.LoadOption'
+    fullName: 'string | string[] | OfficeExtension.LoadOption'
+    spec.typeScript:
+      - name: 'string | string[] | '
+        fullName: 'string | string[] | '
+      - uid: 'excel!OfficeExtension.LoadOption:interface'
+        name: OfficeExtension.LoadOption
+        fullName: OfficeExtension.LoadOption

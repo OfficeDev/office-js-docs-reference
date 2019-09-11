@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.CustomPropertyData
+  - uid: 'word!Word.Interfaces.CustomPropertyData:interface'
     summary: An interface describing the data returned by calling "customProperty.toJSON()".
     name: Word.Interfaces.CustomPropertyData
     fullName: Word.Interfaces.CustomPropertyData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.CustomPropertyData.key
-      - word.Word.Interfaces.CustomPropertyData.type
-      - word.Word.Interfaces.CustomPropertyData.value
-  - uid: word.Word.Interfaces.CustomPropertyData.key
+      - 'word!Word.Interfaces.CustomPropertyData#key:member'
+      - 'word!Word.Interfaces.CustomPropertyData#type:member'
+      - 'word!Word.Interfaces.CustomPropertyData#value:member'
+  - uid: 'word!Word.Interfaces.CustomPropertyData#key:member'
     summary: |-
       Gets the key of the custom property. Read only.
 
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.CustomPropertyData.type
+  - uid: 'word!Word.Interfaces.CustomPropertyData#type:member'
     summary: |-
       Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only.
 
@@ -41,8 +41,8 @@ items:
       content: 'type?: Word.DocumentPropertyType | "String" | "Number" | "Date" | "Boolean";'
       return:
         type:
-          - Word.DocumentPropertyType | "String" | "Number" | "Date" | "Boolean"
-  - uid: word.Word.Interfaces.CustomPropertyData.value
+          - 'word!Word.Interfaces.CustomPropertyData#type~0:complex'
+  - uid: 'word!Word.Interfaces.CustomPropertyData#value:member'
     summary: >-
       Gets or sets the value of the custom property. Note that even though Word on the web and the docx file format
       allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255
@@ -60,3 +60,13 @@ items:
       return:
         type:
           - any
+references:
+  - uid: 'word!Word.Interfaces.CustomPropertyData#type~0:complex'
+    name: Word.DocumentPropertyType | "String" | "Number" | "Date" | "Boolean"
+    fullName: Word.DocumentPropertyType | "String" | "Number" | "Date" | "Boolean"
+    spec.typeScript:
+      - uid: 'word!Word.DocumentPropertyType:enum'
+        name: Word.DocumentPropertyType
+        fullName: Word.DocumentPropertyType
+      - name: ' | "String" | "Number" | "Date" | "Boolean"'
+        fullName: ' | "String" | "Number" | "Date" | "Boolean"'

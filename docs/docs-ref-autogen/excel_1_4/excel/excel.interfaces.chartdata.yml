@@ -1,26 +1,26 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartData
+  - uid: 'excel!Excel.Interfaces.ChartData:interface'
     summary: An interface describing the data returned by calling "chart.toJSON()".
     name: Excel.Interfaces.ChartData
     fullName: Excel.Interfaces.ChartData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartData.axes
-      - excel.Excel.Interfaces.ChartData.dataLabels
-      - excel.Excel.Interfaces.ChartData.format
-      - excel.Excel.Interfaces.ChartData.height
-      - excel.Excel.Interfaces.ChartData.left
-      - excel.Excel.Interfaces.ChartData.legend
-      - excel.Excel.Interfaces.ChartData.name
-      - excel.Excel.Interfaces.ChartData.series
-      - excel.Excel.Interfaces.ChartData.title
-      - excel.Excel.Interfaces.ChartData.top
-      - excel.Excel.Interfaces.ChartData.width
-  - uid: excel.Excel.Interfaces.ChartData.axes
+      - 'excel!Excel.Interfaces.ChartData#axes:member'
+      - 'excel!Excel.Interfaces.ChartData#dataLabels:member'
+      - 'excel!Excel.Interfaces.ChartData#format:member'
+      - 'excel!Excel.Interfaces.ChartData#height:member'
+      - 'excel!Excel.Interfaces.ChartData#left:member'
+      - 'excel!Excel.Interfaces.ChartData#legend:member'
+      - 'excel!Excel.Interfaces.ChartData#name:member'
+      - 'excel!Excel.Interfaces.ChartData#series:member'
+      - 'excel!Excel.Interfaces.ChartData#title:member'
+      - 'excel!Excel.Interfaces.ChartData#top:member'
+      - 'excel!Excel.Interfaces.ChartData#width:member'
+  - uid: 'excel!Excel.Interfaces.ChartData#axes:member'
     summary: |-
       Represents chart axes. Read-only.
 
@@ -34,8 +34,8 @@ items:
       content: 'axes?: Excel.Interfaces.ChartAxesData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxesData
-  - uid: excel.Excel.Interfaces.ChartData.dataLabels
+          - 'excel!Excel.Interfaces.ChartAxesData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartData#dataLabels:member'
     summary: |-
       Represents the datalabels on the chart. Read-only.
 
@@ -49,8 +49,8 @@ items:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelsData
-  - uid: excel.Excel.Interfaces.ChartData.format
+          - 'excel!Excel.Interfaces.ChartDataLabelsData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartData#format:member'
     summary: |-
       Encapsulates the format properties for the chart area. Read-only.
 
@@ -64,8 +64,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartAreaFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAreaFormatData
-  - uid: excel.Excel.Interfaces.ChartData.height
+          - 'excel!Excel.Interfaces.ChartAreaFormatData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartData#height:member'
     summary: |-
       Represents the height, in points, of the chart object.
 
@@ -80,7 +80,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartData.left
+  - uid: 'excel!Excel.Interfaces.ChartData#left:member'
     summary: |-
       The distance, in points, from the left side of the chart to the worksheet origin.
 
@@ -95,7 +95,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartData.legend
+  - uid: 'excel!Excel.Interfaces.ChartData#legend:member'
     summary: |-
       Represents the legend for the chart. Read-only.
 
@@ -109,8 +109,8 @@ items:
       content: 'legend?: Excel.Interfaces.ChartLegendData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendData
-  - uid: excel.Excel.Interfaces.ChartData.name
+          - 'excel!Excel.Interfaces.ChartLegendData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartData#name:member'
     summary: |-
       Represents the name of a chart object.
 
@@ -125,7 +125,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartData.series
+  - uid: 'excel!Excel.Interfaces.ChartData#series:member'
     summary: |-
       Represents either a single series or collection of series in the chart. Read-only.
 
@@ -139,8 +139,8 @@ items:
       content: 'series?: Excel.Interfaces.ChartSeriesData[];'
       return:
         type:
-          - 'Excel.Interfaces.ChartSeriesData[]'
-  - uid: excel.Excel.Interfaces.ChartData.title
+          - 'excel!Excel.Interfaces.ChartData#series~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartData#title:member'
     summary: >-
       Represents the title of the specified chart, including the text, visibility, position, and formatting of the
       title. Read-only.
@@ -156,8 +156,8 @@ items:
       content: 'title?: Excel.Interfaces.ChartTitleData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTitleData
-  - uid: excel.Excel.Interfaces.ChartData.top
+          - 'excel!Excel.Interfaces.ChartTitleData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartData#top:member'
     summary: >-
       Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the
       top of the chart area (on a chart).
@@ -174,7 +174,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartData.width
+  - uid: 'excel!Excel.Interfaces.ChartData#width:member'
     summary: |-
       Represents the width, in points, of the chart object.
 
@@ -189,3 +189,23 @@ items:
       return:
         type:
           - number
+references:
+  - uid: 'excel!Excel.Interfaces.ChartAxesData:interface'
+    name: Excel.Interfaces.ChartAxesData
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsData:interface'
+    name: Excel.Interfaces.ChartDataLabelsData
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatData:interface'
+    name: Excel.Interfaces.ChartAreaFormatData
+  - uid: 'excel!Excel.Interfaces.ChartLegendData:interface'
+    name: Excel.Interfaces.ChartLegendData
+  - uid: 'excel!Excel.Interfaces.ChartData#series~0:complex'
+    name: 'Excel.Interfaces.ChartSeriesData[]'
+    fullName: 'Excel.Interfaces.ChartSeriesData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ChartSeriesData:interface'
+        name: Excel.Interfaces.ChartSeriesData
+        fullName: Excel.Interfaces.ChartSeriesData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.ChartTitleData:interface'
+    name: Excel.Interfaces.ChartTitleData

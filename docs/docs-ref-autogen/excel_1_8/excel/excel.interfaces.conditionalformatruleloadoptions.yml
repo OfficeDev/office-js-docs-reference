@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalFormatRuleLoadOptions
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions:interface'
     summary: |-
       Represents a rule, for all traditional rule/format pairings.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ConditionalFormatRuleLoadOptions.$all
-      - excel.Excel.Interfaces.ConditionalFormatRuleLoadOptions.formula
-      - excel.Excel.Interfaces.ConditionalFormatRuleLoadOptions.formulaLocal
-      - excel.Excel.Interfaces.ConditionalFormatRuleLoadOptions.formulaR1C1
-  - uid: excel.Excel.Interfaces.ConditionalFormatRuleLoadOptions.$all
+      - 'excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions#formula:member'
+      - 'excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions#formulaLocal:member'
+      - 'excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions#formulaR1C1:member'
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalFormatRuleLoadOptions.formula
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions#formula:member'
     summary: |-
       The formula, if required, to evaluate the conditional format rule on.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalFormatRuleLoadOptions.formulaLocal
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions#formulaLocal:member'
     summary: |-
       The formula, if required, to evaluate the conditional format rule on in the user's language.
 
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalFormatRuleLoadOptions.formulaR1C1
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions#formulaR1C1:member'
     summary: |-
       The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
 

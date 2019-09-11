@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.EventSource
+  - uid: 'excel!Excel.EventSource:enum'
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.EventSource
     fullName: Excel.EventSource
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.EventSource.local
-      - excel.Excel.EventSource.remote
-  - uid: excel.Excel.EventSource.local
+      - 'excel!Excel.EventSource.local:member'
+      - 'excel!Excel.EventSource.remote:member'
+  - uid: 'excel!Excel.EventSource.local:member'
     summary: Local means event comes from local user session.
     name: local
     fullName: local
@@ -19,7 +19,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Local"'
-  - uid: excel.Excel.EventSource.remote
+  - uid: 'excel!Excel.EventSource.remote:member'
     summary: Remote means event comes from remote user session.
     name: remote
     fullName: remote

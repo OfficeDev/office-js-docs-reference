@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartDeletedEventArgs
+  - uid: 'excel!Excel.ChartDeletedEventArgs:interface'
     summary: |-
       Provides information about the chart that raised the Deleted event.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartDeletedEventArgs.chartId
-      - excel.Excel.ChartDeletedEventArgs.source
-      - excel.Excel.ChartDeletedEventArgs.type
-      - excel.Excel.ChartDeletedEventArgs.worksheetId
-  - uid: excel.Excel.ChartDeletedEventArgs.chartId
+      - 'excel!Excel.ChartDeletedEventArgs#chartId:member'
+      - 'excel!Excel.ChartDeletedEventArgs#source:member'
+      - 'excel!Excel.ChartDeletedEventArgs#type:member'
+      - 'excel!Excel.ChartDeletedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.ChartDeletedEventArgs#chartId:member'
     summary: |-
       Gets the id of the chart that is deleted from the worksheet.
 
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ChartDeletedEventArgs.source
+  - uid: 'excel!Excel.ChartDeletedEventArgs#source:member'
     summary: |-
       Gets the source of the event. See Excel.EventSource for details.
 
@@ -45,8 +45,8 @@ items:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
         type:
-          - Excel.EventSource | "Local" | "Remote"
-  - uid: excel.Excel.ChartDeletedEventArgs.type
+          - 'excel!Excel.ChartDeletedEventArgs#source~0:complex'
+  - uid: 'excel!Excel.ChartDeletedEventArgs#type:member'
     summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - '"ChartDeleted"'
-  - uid: excel.Excel.ChartDeletedEventArgs.worksheetId
+  - uid: 'excel!Excel.ChartDeletedEventArgs#worksheetId:member'
     summary: |-
       Gets the id of the worksheet in which the chart is deleted.
 
@@ -76,3 +76,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'excel!Excel.ChartDeletedEventArgs#source~0:complex'
+    name: Excel.EventSource | "Local" | "Remote"
+    fullName: Excel.EventSource | "Local" | "Remote"
+    spec.typeScript:
+      - uid: 'excel!Excel.EventSource:enum'
+        name: Excel.EventSource
+        fullName: Excel.EventSource
+      - name: ' | "Local" | "Remote"'
+        fullName: ' | "Local" | "Remote"'

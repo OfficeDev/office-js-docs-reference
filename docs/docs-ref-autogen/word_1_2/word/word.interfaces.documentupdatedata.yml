@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.DocumentUpdateData
+  - uid: 'word!Word.Interfaces.DocumentUpdateData:interface'
     summary: 'An interface for updating data on the Document object, for use in "document.set(<!-- -->{ ... }<!-- -->)".'
     name: Word.Interfaces.DocumentUpdateData
     fullName: Word.Interfaces.DocumentUpdateData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.DocumentUpdateData.body
-  - uid: word.Word.Interfaces.DocumentUpdateData.body
+      - 'word!Word.Interfaces.DocumentUpdateData#body:member'
+  - uid: 'word!Word.Interfaces.DocumentUpdateData#body:member'
     summary: >-
       Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
       etc..
@@ -26,4 +26,7 @@ items:
       content: 'body?: Word.Interfaces.BodyUpdateData;'
       return:
         type:
-          - word.Word.Interfaces.BodyUpdateData
+          - 'word!Word.Interfaces.BodyUpdateData:interface'
+references:
+  - uid: 'word!Word.Interfaces.BodyUpdateData:interface'
+    name: Word.Interfaces.BodyUpdateData

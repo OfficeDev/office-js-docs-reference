@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.BasicDataValidation
+  - uid: 'excel!Excel.BasicDataValidation:interface'
     summary: |-
       Represents the Basic Type data validation criteria.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.BasicDataValidation.formula1
-      - excel.Excel.BasicDataValidation.formula2
-      - excel.Excel.BasicDataValidation.operator
-  - uid: excel.Excel.BasicDataValidation.formula1
+      - 'excel!Excel.BasicDataValidation#formula1:member'
+      - 'excel!Excel.BasicDataValidation#formula2:member'
+      - 'excel!Excel.BasicDataValidation#operator:member'
+  - uid: 'excel!Excel.BasicDataValidation#formula1:member'
     summary: >-
       Specifies the right-hand operand when the operator property is set to a binary operator such as GreaterThan (the
       left-hand operand is the value the user tries to enter in the cell). With the ternary operators Between and
@@ -36,8 +36,8 @@ items:
       content: 'formula1: string | number | Range;'
       return:
         type:
-          - string | number | Range
-  - uid: excel.Excel.BasicDataValidation.formula2
+          - 'excel!Excel.BasicDataValidation#formula1~0:complex'
+  - uid: 'excel!Excel.BasicDataValidation#formula2:member'
     summary: >-
       With the ternary operators Between and NotBetween, specifies the upper bound operand. Is not used with the binary
       operators, such as GreaterThan. When setting the value, it can be passed in as a number, a range object, or a
@@ -56,8 +56,8 @@ items:
       content: 'formula2?: string | number | Range;'
       return:
         type:
-          - string | number | Range
-  - uid: excel.Excel.BasicDataValidation.operator
+          - 'excel!Excel.BasicDataValidation#formula2~0:complex'
+  - uid: 'excel!Excel.BasicDataValidation#operator:member'
     summary: |-
       The operator to use for validating the data.
 
@@ -73,6 +73,36 @@ items:
         "LessThan" | "GreaterThanOrEqualTo" | "LessThanOrEqualTo";
       return:
         type:
-          - >-
-            Excel.DataValidationOperator | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" |
-            "LessThan" | "GreaterThanOrEqualTo" | "LessThanOrEqualTo"
+          - 'excel!Excel.BasicDataValidation#operator~0:complex'
+references:
+  - uid: 'excel!Excel.BasicDataValidation#formula1~0:complex'
+    name: string | number | Range
+    fullName: string | number | Excel.Range
+    spec.typeScript:
+      - name: 'string | number | '
+        fullName: 'string | number | '
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+  - uid: 'excel!Excel.BasicDataValidation#formula2~0:complex'
+    name: string | number | Range
+    fullName: string | number | Excel.Range
+    spec.typeScript:
+      - name: 'string | number | '
+        fullName: 'string | number | '
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+  - uid: 'excel!Excel.BasicDataValidation#operator~0:complex'
+    name: >-
+      Excel.DataValidationOperator | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" |
+      "GreaterThanOrEqualTo" | "LessThanOrEqualTo"
+    fullName: >-
+      Excel.DataValidationOperator | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" |
+      "GreaterThanOrEqualTo" | "LessThanOrEqualTo"
+    spec.typeScript:
+      - uid: 'excel!Excel.DataValidationOperator:enum'
+        name: Excel.DataValidationOperator
+        fullName: Excel.DataValidationOperator
+      - name: ' | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" | "GreaterThanOrEqualTo" | "LessThanOrEqualTo"'
+        fullName: ' | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" | "GreaterThanOrEqualTo" | "LessThanOrEqualTo"'

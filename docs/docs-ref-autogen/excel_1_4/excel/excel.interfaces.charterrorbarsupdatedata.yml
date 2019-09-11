@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartErrorBarsUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartErrorBars object, for use in "chartErrorBars.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,4 +9,4 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

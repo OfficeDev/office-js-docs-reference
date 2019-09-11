@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkWordCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.InkWordCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the InkWordCollection object, for use in "inkWordCollection.set(<!-- -->{ ...
       }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkWordCollectionUpdateData.items
-  - uid: onenote.OneNote.Interfaces.InkWordCollectionUpdateData.items
+      - 'onenote!OneNote.Interfaces.InkWordCollectionUpdateData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.InkWordCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: OneNote.Interfaces.InkWordData[];'
       return:
         type:
-          - 'OneNote.Interfaces.InkWordData[]'
+          - 'onenote!OneNote.Interfaces.InkWordCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.InkWordCollectionUpdateData#items~0:complex'
+    name: 'OneNote.Interfaces.InkWordData[]'
+    fullName: 'OneNote.Interfaces.InkWordData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.InkWordData:interface'
+        name: OneNote.Interfaces.InkWordData
+        fullName: OneNote.Interfaces.InkWordData
+      - name: '[]'
+        fullName: '[]'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-runtime.OfficeRuntime.Storage
+  - uid: 'office-runtime!OfficeRuntime.Storage:interface'
     summary: 'Asynchronous, global, and persistent key-value storage.'
     remarks: 'Storage limit is 10 MB per domain, which may be shared by multiple add-ins.'
     name: OfficeRuntime.Storage
@@ -8,16 +8,16 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office-runtime
+    package: office-runtime!
     children:
-      - office-runtime.OfficeRuntime.Storage.getItem
-      - office-runtime.OfficeRuntime.Storage.getItems
-      - office-runtime.OfficeRuntime.Storage.getKeys
-      - office-runtime.OfficeRuntime.Storage.removeItem
-      - office-runtime.OfficeRuntime.Storage.removeItems
-      - office-runtime.OfficeRuntime.Storage.setItem
-      - office-runtime.OfficeRuntime.Storage.setItems
-  - uid: office-runtime.OfficeRuntime.Storage.getItem
+      - 'office-runtime!OfficeRuntime.Storage#getItem:member(1)'
+      - 'office-runtime!OfficeRuntime.Storage#getItems:member(1)'
+      - 'office-runtime!OfficeRuntime.Storage#getKeys:member(1)'
+      - 'office-runtime!OfficeRuntime.Storage#removeItem:member(1)'
+      - 'office-runtime!OfficeRuntime.Storage#removeItems:member(1)'
+      - 'office-runtime!OfficeRuntime.Storage#setItem:member(1)'
+      - 'office-runtime!OfficeRuntime.Storage#setItems:member(1)'
+  - uid: 'office-runtime!OfficeRuntime.Storage#getItem:member(1)'
     summary: >-
       Retrieves an item from storage based on its key. Returns a Promise. In the event the Promise does not resolve,
       returns null.
@@ -30,14 +30,14 @@ items:
       content: 'getItem(key: string): Promise<string | null>;'
       return:
         type:
-          - Promise<string | null>
+          - 'office-runtime!OfficeRuntime.Storage#getItem~0:complex'
         description: ''
       parameters:
         - id: key
           description: Key of item to be retrieved. Must be a string.
           type:
             - string
-  - uid: office-runtime.OfficeRuntime.Storage.getItems
+  - uid: 'office-runtime!OfficeRuntime.Storage#getItems:member(1)'
     summary: >-
       Retrieves multiple items from storage based on their key. Returns a Promise. In the event the Promise does not
       resolve, returns null.
@@ -50,14 +50,14 @@ items:
       content: 'getItems(keys: string[]): Promise<{ [key: string]: string | null }>;'
       return:
         type:
-          - 'Promise<{ [key: string]: string | null }>'
+          - 'office-runtime!OfficeRuntime.Storage#getItems~0:complex'
         description: ''
       parameters:
         - id: keys
           description: Keys of items to be removed. Must be an array of strings.
           type:
             - 'string[]'
-  - uid: office-runtime.OfficeRuntime.Storage.getKeys
+  - uid: 'office-runtime!OfficeRuntime.Storage#getKeys:member(1)'
     summary: Retrieves an array of all keys from storage. Returns a Promise.
     name: getKeys()
     fullName: getKeys()
@@ -68,9 +68,9 @@ items:
       content: 'getKeys(): Promise<string[]>;'
       return:
         type:
-          - 'Promise<string[]>'
+          - 'office-runtime!OfficeRuntime.Storage#getKeys~0:complex'
         description: ''
-  - uid: office-runtime.OfficeRuntime.Storage.removeItem
+  - uid: 'office-runtime!OfficeRuntime.Storage#removeItem:member(1)'
     summary: Removes an item from storage based on its key. Returns a Promise.
     name: removeItem(key)
     fullName: removeItem(key)
@@ -81,14 +81,14 @@ items:
       content: 'removeItem(key: string): Promise<void>;'
       return:
         type:
-          - Promise<void>
+          - 'office-runtime!OfficeRuntime.Storage#removeItem~0:complex'
         description: ''
       parameters:
         - id: key
           description: Key of item to be removed. Must be a string.
           type:
             - string
-  - uid: office-runtime.OfficeRuntime.Storage.removeItems
+  - uid: 'office-runtime!OfficeRuntime.Storage#removeItems:member(1)'
     summary: Removes multiple items from storage. Returns a Promise.
     name: removeItems(keys)
     fullName: removeItems(keys)
@@ -99,14 +99,14 @@ items:
       content: 'removeItems(keys: string[]): Promise<void>;'
       return:
         type:
-          - Promise<void>
+          - 'office-runtime!OfficeRuntime.Storage#removeItems~0:complex'
         description: ''
       parameters:
         - id: keys
           description: Keys of items to be removed. Must be an array of strings.
           type:
             - 'string[]'
-  - uid: office-runtime.OfficeRuntime.Storage.setItem
+  - uid: 'office-runtime!OfficeRuntime.Storage#setItem:member(1)'
     summary: Sets a key-value pair into storage or updates an existing key-value pair. Returns a Promise.
     name: 'setItem(key, value)'
     fullName: 'setItem(key, value)'
@@ -117,7 +117,7 @@ items:
       content: 'setItem(key: string, value: string): Promise<void>;'
       return:
         type:
-          - Promise<void>
+          - 'office-runtime!OfficeRuntime.Storage#setItem~0:complex'
         description: ''
       parameters:
         - id: key
@@ -128,7 +128,7 @@ items:
           description: Must be a string.
           type:
             - string
-  - uid: office-runtime.OfficeRuntime.Storage.setItems
+  - uid: 'office-runtime!OfficeRuntime.Storage#setItems:member(1)'
     summary: Sets multiple items into storage or updates multiple items within storage. Returns a Promise.
     name: setItems(keyValues)
     fullName: setItems(keyValues)
@@ -139,10 +139,74 @@ items:
       content: 'setItems(keyValues: { [key: string]: string }): Promise<void>;'
       return:
         type:
-          - Promise<void>
+          - 'office-runtime!OfficeRuntime.Storage#setItems~0:complex'
         description: ''
       parameters:
         - id: keyValues
           description: Key-value pairs to be set. Must be strings.
           type:
             - '{ [key: string]: string }'
+references:
+  - uid: 'office-runtime!OfficeRuntime.Storage#getItem~0:complex'
+    name: Promise<string | null>
+    fullName: Promise<string | null>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <string | null>
+        fullName: <string | null>
+  - uid: 'office-runtime!OfficeRuntime.Storage#getItems~0:complex'
+    name: 'Promise<{ [key: string]: string | null }>'
+    fullName: 'Promise<{ [key: string]: string | null }>'
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: '<{ [key: string]: string | null }>'
+        fullName: '<{ [key: string]: string | null }>'
+  - uid: 'office-runtime!OfficeRuntime.Storage#getKeys~0:complex'
+    name: 'Promise<string[]>'
+    fullName: 'Promise<string[]>'
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: '<string[]>'
+        fullName: '<string[]>'
+  - uid: 'office-runtime!OfficeRuntime.Storage#removeItem~0:complex'
+    name: Promise<void>
+    fullName: Promise<void>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <void>
+        fullName: <void>
+  - uid: 'office-runtime!OfficeRuntime.Storage#removeItems~0:complex'
+    name: Promise<void>
+    fullName: Promise<void>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <void>
+        fullName: <void>
+  - uid: 'office-runtime!OfficeRuntime.Storage#setItem~0:complex'
+    name: Promise<void>
+    fullName: Promise<void>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <void>
+        fullName: <void>
+  - uid: 'office-runtime!OfficeRuntime.Storage#setItems~0:complex'
+    name: Promise<void>
+    fullName: Promise<void>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <void>
+        fullName: <void>

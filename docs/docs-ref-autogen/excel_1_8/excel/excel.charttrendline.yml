@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartTrendline
+  - uid: 'excel!Excel.ChartTrendline:class'
     summary: |-
       This object represents the attributes for a chart trendline object.
 
@@ -11,29 +11,29 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.ChartTrendline.backwardPeriod
-      - excel.Excel.ChartTrendline.context
-      - excel.Excel.ChartTrendline.delete
-      - excel.Excel.ChartTrendline.format
-      - excel.Excel.ChartTrendline.forwardPeriod
-      - excel.Excel.ChartTrendline.intercept
-      - excel.Excel.ChartTrendline.label
-      - excel.Excel.ChartTrendline.load
-      - excel.Excel.ChartTrendline.load_1
-      - excel.Excel.ChartTrendline.load_2
-      - excel.Excel.ChartTrendline.movingAveragePeriod
-      - excel.Excel.ChartTrendline.name
-      - excel.Excel.ChartTrendline.polynomialOrder
-      - excel.Excel.ChartTrendline.set
-      - excel.Excel.ChartTrendline.set_1
-      - excel.Excel.ChartTrendline.showEquation
-      - excel.Excel.ChartTrendline.showRSquared
-      - excel.Excel.ChartTrendline.toJSON
-      - excel.Excel.ChartTrendline.type
-  - uid: excel.Excel.ChartTrendline.backwardPeriod
+      - 'excel!Excel.ChartTrendline#backwardPeriod:member'
+      - 'excel!Excel.ChartTrendline#context:member'
+      - 'excel!Excel.ChartTrendline#delete:member(1)'
+      - 'excel!Excel.ChartTrendline#format:member'
+      - 'excel!Excel.ChartTrendline#forwardPeriod:member'
+      - 'excel!Excel.ChartTrendline#intercept:member'
+      - 'excel!Excel.ChartTrendline#label:member'
+      - 'excel!Excel.ChartTrendline#load:member(1)'
+      - 'excel!Excel.ChartTrendline#load:member(2)'
+      - 'excel!Excel.ChartTrendline#load:member(3)'
+      - 'excel!Excel.ChartTrendline#movingAveragePeriod:member'
+      - 'excel!Excel.ChartTrendline#name:member'
+      - 'excel!Excel.ChartTrendline#polynomialOrder:member'
+      - 'excel!Excel.ChartTrendline#set:member(1)'
+      - 'excel!Excel.ChartTrendline#set:member(2)'
+      - 'excel!Excel.ChartTrendline#showEquation:member'
+      - 'excel!Excel.ChartTrendline#showRSquared:member'
+      - 'excel!Excel.ChartTrendline#toJSON:member(1)'
+      - 'excel!Excel.ChartTrendline#type:member'
+  - uid: 'excel!Excel.ChartTrendline#backwardPeriod:member'
     summary: |-
       Represents the number of periods that the trendline extends backward.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartTrendline.context
+  - uid: 'excel!Excel.ChartTrendline#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -61,8 +61,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartTrendline.delete
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartTrendline#delete:member(1)'
     summary: |-
       Delete the trendline object.
 
@@ -78,7 +78,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.ChartTrendline.format
+  - uid: 'excel!Excel.ChartTrendline#format:member'
     summary: |-
       Represents the formatting of a chart trendline.
 
@@ -92,8 +92,8 @@ items:
       content: 'readonly format: Excel.ChartTrendlineFormat;'
       return:
         type:
-          - excel.Excel.ChartTrendlineFormat
-  - uid: excel.Excel.ChartTrendline.forwardPeriod
+          - 'excel!Excel.ChartTrendlineFormat:class'
+  - uid: 'excel!Excel.ChartTrendline#forwardPeriod:member'
     summary: |-
       Represents the number of periods that the trendline extends forward.
 
@@ -108,7 +108,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartTrendline.intercept
+  - uid: 'excel!Excel.ChartTrendline#intercept:member'
     summary: >-
       Represents the intercept value of the trendline. Can be set to a numeric value or an empty string (for automatic
       values). The returned value is always a number.
@@ -125,7 +125,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.ChartTrendline.label
+  - uid: 'excel!Excel.ChartTrendline#label:member'
     summary: |-
       Represents the label of a chart trendline.
 
@@ -139,8 +139,8 @@ items:
       content: 'readonly label: Excel.ChartTrendlineLabel;'
       return:
         type:
-          - excel.Excel.ChartTrendlineLabel
-  - uid: excel.Excel.ChartTrendline.load
+          - 'excel!Excel.ChartTrendlineLabel:class'
+  - uid: 'excel!Excel.ChartTrendline#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -171,14 +171,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartTrendlineLoadOptions): Excel.ChartTrendline;'
       return:
         type:
-          - excel.Excel.ChartTrendline
+          - 'excel!Excel.ChartTrendline:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartTrendlineLoadOptions
-  - uid: excel.Excel.ChartTrendline.load_1
+            - 'excel!Excel.Interfaces.ChartTrendlineLoadOptions:interface'
+  - uid: 'excel!Excel.ChartTrendline#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -191,14 +191,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartTrendline;'
       return:
         type:
-          - excel.Excel.ChartTrendline
+          - 'excel!Excel.ChartTrendline:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartTrendline.load_2
+  - uid: 'excel!Excel.ChartTrendline#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -211,7 +211,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTrendline;'
       return:
         type:
-          - excel.Excel.ChartTrendline
+          - 'excel!Excel.ChartTrendline:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -220,7 +220,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartTrendline.movingAveragePeriod
+  - uid: 'excel!Excel.ChartTrendline#movingAveragePeriod:member'
     summary: |-
       Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type.
 
@@ -235,7 +235,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartTrendline.name
+  - uid: 'excel!Excel.ChartTrendline#name:member'
     summary: >-
       Represents the name of the trendline. Can be set to a string value, or can be set to null value represents
       automatic values. The returned value is always a string
@@ -252,7 +252,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ChartTrendline.polynomialOrder
+  - uid: 'excel!Excel.ChartTrendline#polynomialOrder:member'
     summary: |-
       Represents the order of a chart trendline. Only applicable for trendline with Polynomial type.
 
@@ -267,7 +267,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartTrendline.set
+  - uid: 'excel!Excel.ChartTrendline#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -292,12 +292,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.ChartTrendlineUpdateData
+            - 'excel!Excel.Interfaces.ChartTrendlineUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartTrendline.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.ChartTrendline#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -314,8 +314,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartTrendline
-  - uid: excel.Excel.ChartTrendline.showEquation
+            - 'excel!Excel.ChartTrendline:class'
+  - uid: 'excel!Excel.ChartTrendline#showEquation:member'
     summary: |-
       True if the equation for the trendline is displayed on the chart.
 
@@ -330,7 +330,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartTrendline.showRSquared
+  - uid: 'excel!Excel.ChartTrendline#showRSquared:member'
     summary: |-
       True if the R-squared for the trendline is displayed on the chart.
 
@@ -345,7 +345,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartTrendline.toJSON
+  - uid: 'excel!Excel.ChartTrendline#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -361,9 +361,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartTrendlineData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTrendlineData
+          - 'excel!Excel.Interfaces.ChartTrendlineData:interface'
         description: ''
-  - uid: excel.Excel.ChartTrendline.type
+  - uid: 'excel!Excel.ChartTrendline#type:member'
     summary: |-
       Represents the type of a chart trendline.
 
@@ -379,9 +379,7 @@ items:
         "Power";
       return:
         type:
-          - >-
-            Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" |
-            "Power"
+          - 'excel!Excel.ChartTrendline#type~0:complex'
         description: |-
 
 
@@ -402,3 +400,31 @@ items:
               console.log("The trendline type is:" + trendline.type);  
           });
           ```
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ChartTrendlineFormat:class'
+    name: Excel.ChartTrendlineFormat
+  - uid: 'excel!Excel.ChartTrendlineLabel:class'
+    name: Excel.ChartTrendlineLabel
+  - uid: 'excel!Excel.ChartTrendline:class'
+    name: Excel.ChartTrendline
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLoadOptions:interface'
+    name: Excel.Interfaces.ChartTrendlineLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData:interface'
+    name: Interfaces.ChartTrendlineUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineData:interface'
+    name: Excel.Interfaces.ChartTrendlineData
+  - uid: 'excel!Excel.ChartTrendline#type~0:complex'
+    name: Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"
+    fullName: Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartTrendlineType:enum'
+        name: Excel.ChartTrendlineType
+        fullName: Excel.ChartTrendlineType
+      - name: ' | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"'
+        fullName: ' | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CalculationState
+  - uid: 'excel!Excel.CalculationState:enum'
     summary: |-
       Represents the state of calculation across the entire Excel application.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.CalculationState.calculating
-      - excel.Excel.CalculationState.done
-      - excel.Excel.CalculationState.pending
-  - uid: excel.Excel.CalculationState.calculating
+      - 'excel!Excel.CalculationState.calculating:member'
+      - 'excel!Excel.CalculationState.done:member'
+      - 'excel!Excel.CalculationState.pending:member'
+  - uid: 'excel!Excel.CalculationState.calculating:member'
     summary: Calculations in progress.
     name: calculating
     fullName: calculating
@@ -23,7 +23,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Calculating"'
-  - uid: excel.Excel.CalculationState.done
+  - uid: 'excel!Excel.CalculationState.done:member'
     summary: Calculations complete.
     name: done
     fullName: done
@@ -31,7 +31,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Done"'
-  - uid: excel.Excel.CalculationState.pending
+  - uid: 'excel!Excel.CalculationState.pending:member'
     summary: 'Changes that trigger calculation have been made, but a recalculation has not yet been performed.'
     name: pending
     fullName: pending

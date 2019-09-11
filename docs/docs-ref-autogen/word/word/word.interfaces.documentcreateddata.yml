@@ -1,22 +1,22 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.DocumentCreatedData
+  - uid: 'word!Word.Interfaces.DocumentCreatedData:interface'
     summary: An interface describing the data returned by calling "documentCreated.toJSON()".
     name: Word.Interfaces.DocumentCreatedData
     fullName: Word.Interfaces.DocumentCreatedData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.DocumentCreatedData.body
-      - word.Word.Interfaces.DocumentCreatedData.contentControls
-      - word.Word.Interfaces.DocumentCreatedData.customXmlParts
-      - word.Word.Interfaces.DocumentCreatedData.properties
-      - word.Word.Interfaces.DocumentCreatedData.saved
-      - word.Word.Interfaces.DocumentCreatedData.sections
-      - word.Word.Interfaces.DocumentCreatedData.settings
-  - uid: word.Word.Interfaces.DocumentCreatedData.body
+      - 'word!Word.Interfaces.DocumentCreatedData#body:member'
+      - 'word!Word.Interfaces.DocumentCreatedData#contentControls:member'
+      - 'word!Word.Interfaces.DocumentCreatedData#customXmlParts:member'
+      - 'word!Word.Interfaces.DocumentCreatedData#properties:member'
+      - 'word!Word.Interfaces.DocumentCreatedData#saved:member'
+      - 'word!Word.Interfaces.DocumentCreatedData#sections:member'
+      - 'word!Word.Interfaces.DocumentCreatedData#settings:member'
+  - uid: 'word!Word.Interfaces.DocumentCreatedData#body:member'
     summary: >-
       Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
       etc.. Read-only.
@@ -34,8 +34,8 @@ items:
       content: 'body?: Word.Interfaces.BodyData;'
       return:
         type:
-          - word.Word.Interfaces.BodyData
-  - uid: word.Word.Interfaces.DocumentCreatedData.contentControls
+          - 'word!Word.Interfaces.BodyData:interface'
+  - uid: 'word!Word.Interfaces.DocumentCreatedData#contentControls:member'
     summary: >-
       Gets the collection of content control objects in the document. This includes content controls in the body of the
       document, headers, footers, textboxes, etc.. Read-only.
@@ -53,8 +53,8 @@ items:
       content: 'contentControls?: Word.Interfaces.ContentControlData[];'
       return:
         type:
-          - 'Word.Interfaces.ContentControlData[]'
-  - uid: word.Word.Interfaces.DocumentCreatedData.customXmlParts
+          - 'word!Word.Interfaces.DocumentCreatedData#contentControls~0:complex'
+  - uid: 'word!Word.Interfaces.DocumentCreatedData#customXmlParts:member'
     summary: >-
       Gets the custom XML parts in the document. Read-only.
 
@@ -71,8 +71,8 @@ items:
       content: 'customXmlParts?: Word.Interfaces.CustomXmlPartData[];'
       return:
         type:
-          - 'Word.Interfaces.CustomXmlPartData[]'
-  - uid: word.Word.Interfaces.DocumentCreatedData.properties
+          - 'word!Word.Interfaces.DocumentCreatedData#customXmlParts~0:complex'
+  - uid: 'word!Word.Interfaces.DocumentCreatedData#properties:member'
     summary: >-
       Gets the properties of the document. Read-only.
 
@@ -89,8 +89,8 @@ items:
       content: 'properties?: Word.Interfaces.DocumentPropertiesData;'
       return:
         type:
-          - word.Word.Interfaces.DocumentPropertiesData
-  - uid: word.Word.Interfaces.DocumentCreatedData.saved
+          - 'word!Word.Interfaces.DocumentPropertiesData:interface'
+  - uid: 'word!Word.Interfaces.DocumentCreatedData#saved:member'
     summary: >-
       Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
       changed since it was saved. Read-only.
@@ -109,7 +109,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentCreatedData.sections
+  - uid: 'word!Word.Interfaces.DocumentCreatedData#sections:member'
     summary: >-
       Gets the collection of section objects in the document. Read-only.
 
@@ -126,8 +126,8 @@ items:
       content: 'sections?: Word.Interfaces.SectionData[];'
       return:
         type:
-          - 'Word.Interfaces.SectionData[]'
-  - uid: word.Word.Interfaces.DocumentCreatedData.settings
+          - 'word!Word.Interfaces.DocumentCreatedData#sections~0:complex'
+  - uid: 'word!Word.Interfaces.DocumentCreatedData#settings:member'
     summary: >-
       Gets the add-in's settings in the document. Read-only.
 
@@ -144,4 +144,45 @@ items:
       content: 'settings?: Word.Interfaces.SettingData[];'
       return:
         type:
-          - 'Word.Interfaces.SettingData[]'
+          - 'word!Word.Interfaces.DocumentCreatedData#settings~0:complex'
+references:
+  - uid: 'word!Word.Interfaces.BodyData:interface'
+    name: Word.Interfaces.BodyData
+  - uid: 'word!Word.Interfaces.DocumentCreatedData#contentControls~0:complex'
+    name: 'Word.Interfaces.ContentControlData[]'
+    fullName: 'Word.Interfaces.ContentControlData[]'
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.ContentControlData:interface'
+        name: Word.Interfaces.ContentControlData
+        fullName: Word.Interfaces.ContentControlData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'word!Word.Interfaces.DocumentCreatedData#customXmlParts~0:complex'
+    name: 'Word.Interfaces.CustomXmlPartData[]'
+    fullName: 'Word.Interfaces.CustomXmlPartData[]'
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.CustomXmlPartData:interface'
+        name: Word.Interfaces.CustomXmlPartData
+        fullName: Word.Interfaces.CustomXmlPartData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData:interface'
+    name: Word.Interfaces.DocumentPropertiesData
+  - uid: 'word!Word.Interfaces.DocumentCreatedData#sections~0:complex'
+    name: 'Word.Interfaces.SectionData[]'
+    fullName: 'Word.Interfaces.SectionData[]'
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.SectionData:interface'
+        name: Word.Interfaces.SectionData
+        fullName: Word.Interfaces.SectionData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'word!Word.Interfaces.DocumentCreatedData#settings~0:complex'
+    name: 'Word.Interfaces.SettingData[]'
+    fullName: 'Word.Interfaces.SettingData[]'
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.SettingData:interface'
+        name: Word.Interfaces.SettingData
+        fullName: Word.Interfaces.SettingData
+      - name: '[]'
+        fullName: '[]'

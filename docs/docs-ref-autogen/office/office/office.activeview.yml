@@ -1,24 +1,24 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.ActiveView
+  - uid: 'office!Office.ActiveView:enum'
     summary: 'Specifies the state of the active view of the document, for example, whether the user can edit the document.'
     name: Office.ActiveView
     fullName: Office.ActiveView
     langs:
       - typeScript
     type: enum
-    package: office
+    package: office!
     children:
-      - office.Office.ActiveView.Edit
-      - office.Office.ActiveView.Read
-  - uid: office.Office.ActiveView.Edit
+      - 'office!Office.ActiveView.Edit:member'
+      - 'office!Office.ActiveView.Read:member'
+  - uid: 'office!Office.ActiveView.Edit:member'
     summary: The active view of the host application lets the user edit the content in the document.
     name: Edit
     fullName: Edit
     langs:
       - typeScript
     type: field
-  - uid: office.Office.ActiveView.Read
+  - uid: 'office!Office.ActiveView.Read:member'
     summary: The active view of the host application only lets the user read the content in the document.
     name: Read
     fullName: Read

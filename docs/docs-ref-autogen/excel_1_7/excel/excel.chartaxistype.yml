@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartAxisType
+  - uid: 'excel!Excel.ChartAxisType:enum'
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartAxisType
     fullName: Excel.ChartAxisType
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartAxisType.category
-      - excel.Excel.ChartAxisType.invalid
-      - excel.Excel.ChartAxisType.series
-      - excel.Excel.ChartAxisType.value
-  - uid: excel.Excel.ChartAxisType.category
+      - 'excel!Excel.ChartAxisType.category:member'
+      - 'excel!Excel.ChartAxisType.invalid:member'
+      - 'excel!Excel.ChartAxisType.series:member'
+      - 'excel!Excel.ChartAxisType.value:member'
+  - uid: 'excel!Excel.ChartAxisType.category:member'
     summary: Axis displays categories.
     name: category
     fullName: category
@@ -21,14 +21,14 @@ items:
       - typeScript
     type: field
     numericValue: '"Category"'
-  - uid: excel.Excel.ChartAxisType.invalid
+  - uid: 'excel!Excel.ChartAxisType.invalid:member'
     name: invalid
     fullName: invalid
     langs:
       - typeScript
     type: field
     numericValue: '"Invalid"'
-  - uid: excel.Excel.ChartAxisType.series
+  - uid: 'excel!Excel.ChartAxisType.series:member'
     summary: Axis displays data series.
     name: series
     fullName: series
@@ -36,7 +36,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Series"'
-  - uid: excel.Excel.ChartAxisType.value
+  - uid: 'excel!Excel.ChartAxisType.value:member'
     summary: Axis displays values.
     name: value
     fullName: value

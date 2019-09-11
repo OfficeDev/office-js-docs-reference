@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.RangeCoordinates
+  - uid: 'office!Office.RangeCoordinates:interface'
     summary: >-
       Specifies a cell, or row, or column, by its zero-based row and/or column number. Example: `{row: 3, column: 4}`
       specifies the cell in the 3rd (zero-based) row in the 4th (zero-based) column.
@@ -9,11 +9,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.RangeCoordinates.column
-      - office.Office.RangeCoordinates.row
-  - uid: office.Office.RangeCoordinates.column
+      - 'office!Office.RangeCoordinates#column:member'
+      - 'office!Office.RangeCoordinates#row:member'
+  - uid: 'office!Office.RangeCoordinates#column:member'
     summary: 'The zero-based column of the range. If not specified, all cells, in the row specified by `row` are included.'
     name: column
     fullName: column
@@ -25,7 +25,7 @@ items:
       return:
         type:
           - number
-  - uid: office.Office.RangeCoordinates.row
+  - uid: 'office!Office.RangeCoordinates#row:member'
     summary: 'The zero-based row of the range. If not specified, all cells, in the column specified by `column` are included.'
     name: row
     fullName: row

@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.DocumentUpdateData
+  - uid: 'visio!Visio.Interfaces.DocumentUpdateData:interface'
     summary: 'An interface for updating data on the Document object, for use in "document.set(<!-- -->{ ... }<!-- -->)".'
     name: Visio.Interfaces.DocumentUpdateData
     fullName: Visio.Interfaces.DocumentUpdateData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.DocumentUpdateData.application
-      - visio.Visio.Interfaces.DocumentUpdateData.view
-  - uid: visio.Visio.Interfaces.DocumentUpdateData.application
+      - 'visio!Visio.Interfaces.DocumentUpdateData#application:member'
+      - 'visio!Visio.Interfaces.DocumentUpdateData#view:member'
+  - uid: 'visio!Visio.Interfaces.DocumentUpdateData#application:member'
     summary: |-
       Represents a Visio application instance that contains this document.
 
@@ -25,8 +25,8 @@ items:
       content: 'application?: Visio.Interfaces.ApplicationUpdateData;'
       return:
         type:
-          - visio.Visio.Interfaces.ApplicationUpdateData
-  - uid: visio.Visio.Interfaces.DocumentUpdateData.view
+          - 'visio!Visio.Interfaces.ApplicationUpdateData:interface'
+  - uid: 'visio!Visio.Interfaces.DocumentUpdateData#view:member'
     summary: |-
       Returns the DocumentView object.
 
@@ -40,4 +40,9 @@ items:
       content: 'view?: Visio.Interfaces.DocumentViewUpdateData;'
       return:
         type:
-          - visio.Visio.Interfaces.DocumentViewUpdateData
+          - 'visio!Visio.Interfaces.DocumentViewUpdateData:interface'
+references:
+  - uid: 'visio!Visio.Interfaces.ApplicationUpdateData:interface'
+    name: Visio.Interfaces.ApplicationUpdateData
+  - uid: 'visio!Visio.Interfaces.DocumentViewUpdateData:interface'
+    name: Visio.Interfaces.DocumentViewUpdateData

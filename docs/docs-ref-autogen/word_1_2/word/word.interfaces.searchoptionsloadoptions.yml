@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.SearchOptionsLoadOptions
+  - uid: 'word!Word.Interfaces.SearchOptionsLoadOptions:interface'
     summary: |-
       Specifies the options to be included in a search operation.
 
@@ -10,17 +10,17 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.SearchOptionsLoadOptions.$all
-      - word.Word.Interfaces.SearchOptionsLoadOptions.ignorePunct
-      - word.Word.Interfaces.SearchOptionsLoadOptions.ignoreSpace
-      - word.Word.Interfaces.SearchOptionsLoadOptions.matchCase
-      - word.Word.Interfaces.SearchOptionsLoadOptions.matchPrefix
-      - word.Word.Interfaces.SearchOptionsLoadOptions.matchSuffix
-      - word.Word.Interfaces.SearchOptionsLoadOptions.matchWholeWord
-      - word.Word.Interfaces.SearchOptionsLoadOptions.matchWildcards
-  - uid: word.Word.Interfaces.SearchOptionsLoadOptions.$all
+      - 'word!Word.Interfaces.SearchOptionsLoadOptions#$all:member'
+      - 'word!Word.Interfaces.SearchOptionsLoadOptions#ignorePunct:member'
+      - 'word!Word.Interfaces.SearchOptionsLoadOptions#ignoreSpace:member'
+      - 'word!Word.Interfaces.SearchOptionsLoadOptions#matchCase:member'
+      - 'word!Word.Interfaces.SearchOptionsLoadOptions#matchPrefix:member'
+      - 'word!Word.Interfaces.SearchOptionsLoadOptions#matchSuffix:member'
+      - 'word!Word.Interfaces.SearchOptionsLoadOptions#matchWholeWord:member'
+      - 'word!Word.Interfaces.SearchOptionsLoadOptions#matchWildcards:member'
+  - uid: 'word!Word.Interfaces.SearchOptionsLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.SearchOptionsLoadOptions.ignorePunct
+  - uid: 'word!Word.Interfaces.SearchOptionsLoadOptions#ignorePunct:member'
     summary: >-
       Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the
       Ignore punctuation check box in the Find and Replace dialog box.
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.SearchOptionsLoadOptions.ignoreSpace
+  - uid: 'word!Word.Interfaces.SearchOptionsLoadOptions#ignoreSpace:member'
     summary: >-
       Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore
       whitespace characters check box in the Find and Replace dialog box.
@@ -65,7 +65,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.SearchOptionsLoadOptions.matchCase
+  - uid: 'word!Word.Interfaces.SearchOptionsLoadOptions#matchCase:member'
     summary: >-
       Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case
       check box in the Find and Replace dialog box.
@@ -82,7 +82,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.SearchOptionsLoadOptions.matchPrefix
+  - uid: 'word!Word.Interfaces.SearchOptionsLoadOptions#matchPrefix:member'
     summary: >-
       Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the
       Match prefix check box in the Find and Replace dialog box.
@@ -99,7 +99,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.SearchOptionsLoadOptions.matchSuffix
+  - uid: 'word!Word.Interfaces.SearchOptionsLoadOptions#matchSuffix:member'
     summary: >-
       Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the
       Match suffix check box in the Find and Replace dialog box.
@@ -116,7 +116,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.SearchOptionsLoadOptions.matchWholeWord
+  - uid: 'word!Word.Interfaces.SearchOptionsLoadOptions#matchWholeWord:member'
     summary: >-
       Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger
       word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
@@ -133,7 +133,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.SearchOptionsLoadOptions.matchWildcards
+  - uid: 'word!Word.Interfaces.SearchOptionsLoadOptions#matchWildcards:member'
     summary: >-
       Gets or sets a value that indicates whether the search will be performed using special search operators.
       Corresponds to the Use wildcards check box in the Find and Replace dialog box.

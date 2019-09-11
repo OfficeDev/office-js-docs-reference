@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions:interface'
     summary: |-
-      Contains a collection of [Word.InlinePicture](xref:word.Word.InlinePicture) objects.
+      Contains a collection of [Word.InlinePicture](xref:word!Word.InlinePicture:class) objects.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Interfaces.InlinePictureCollectionLoadOptions
@@ -10,23 +10,23 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.$all
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.altTextDescription
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.altTextTitle
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.height
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.hyperlink
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.lockAspectRatio
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.paragraph
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControl
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControlOrNullObject
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTable
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCell
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCellOrNullObject
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableOrNullObject
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.width
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.$all
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#$all:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextDescription:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextTitle:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#height:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#hyperlink:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#lockAspectRatio:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#paragraph:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControlOrNullObject:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTable:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableCell:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableCellOrNullObject:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableOrNullObject:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#width:member'
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -37,7 +37,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.altTextDescription
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextDescription:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets a string that represents the alternative text associated with the
       inline image.
@@ -54,7 +54,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.altTextTitle
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextTitle:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets a string that contains the title for the inline image.
 
@@ -69,7 +69,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.height
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#height:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets a number that describes the height of the inline image.
 
@@ -84,7 +84,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.hyperlink
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#hyperlink:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets a hyperlink on the image. Use a '\#' to separate the address part
       from the optional location part.
@@ -101,7 +101,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.lockAspectRatio
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#lockAspectRatio:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets a value that indicates whether the inline image retains its original
       proportions when you resize it.
@@ -118,7 +118,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.paragraph
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#paragraph:member'
     summary: |-
       For EACH ITEM in the collection: Gets the parent paragraph that contains the inline image.
 
@@ -132,8 +132,8 @@ items:
       content: 'paragraph?: Word.Interfaces.ParagraphLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ParagraphLoadOptions
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControl
+          - 'word!Word.Interfaces.ParagraphLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member'
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws if there isn't a
       parent content control.
@@ -149,8 +149,8 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControlOrNullObject
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControlOrNullObject:member'
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the inline image. Returns a null object if
       there isn't a parent content control.
@@ -166,8 +166,8 @@ items:
       content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTable
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTable:member'
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the inline image. Throws if it is not contained in a
       table.
@@ -183,8 +183,8 @@ items:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableLoadOptions
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCell
+          - 'word!Word.Interfaces.TableLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableCell:member'
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains the inline image. Throws if it is not contained
       in a table cell.
@@ -200,8 +200,8 @@ items:
       content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableCellLoadOptions
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCellOrNullObject
+          - 'word!Word.Interfaces.TableCellLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableCellOrNullObject:member'
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains the inline image. Returns a null object if it
       is not contained in a table cell.
@@ -217,8 +217,8 @@ items:
       content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableCellLoadOptions
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableOrNullObject
+          - 'word!Word.Interfaces.TableCellLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableOrNullObject:member'
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the inline image. Returns a null object if it is not
       contained in a table.
@@ -234,8 +234,8 @@ items:
       content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableLoadOptions
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.width
+          - 'word!Word.Interfaces.TableLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#width:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets a number that describes the width of the inline image.
 
@@ -250,3 +250,12 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'word!Word.Interfaces.ParagraphLoadOptions:interface'
+    name: Word.Interfaces.ParagraphLoadOptions
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+    name: Word.Interfaces.ContentControlLoadOptions
+  - uid: 'word!Word.Interfaces.TableLoadOptions:interface'
+    name: Word.Interfaces.TableLoadOptions
+  - uid: 'word!Word.Interfaces.TableCellLoadOptions:interface'
+    name: Word.Interfaces.TableCellLoadOptions

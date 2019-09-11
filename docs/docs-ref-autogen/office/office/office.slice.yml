@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.Slice
+  - uid: 'office!Office.Slice:interface'
     summary: Represents a slice of a document file. The Slice object is accessed with the `File.getSliceAsync` method.
     name: Office.Slice
     fullName: Office.Slice
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.Slice.data
-      - office.Office.Slice.index
-      - office.Office.Slice.size
-  - uid: office.Office.Slice.data
+      - 'office!Office.Slice#data:member'
+      - 'office!Office.Slice#index:member'
+      - 'office!Office.Slice#size:member'
+  - uid: 'office!Office.Slice#data:member'
     summary: >-
       Gets the raw data of the file slice in `Office.FileType.Text` ("text") or `Office.FileType.Compressed`
       ("compressed") format as specified by the fileType parameter of the call to the Document.getFileAsync method.
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - any
-  - uid: office.Office.Slice.index
+  - uid: 'office!Office.Slice#index:member'
     summary: Gets the zero-based index of the file slice.
     name: index
     fullName: index
@@ -41,7 +41,7 @@ items:
       return:
         type:
           - number
-  - uid: office.Office.Slice.size
+  - uid: 'office!Office.Slice#size:member'
     summary: Gets the size of the slice in bytes.
     name: size
     fullName: size

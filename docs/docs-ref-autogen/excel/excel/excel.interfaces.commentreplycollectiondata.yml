@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CommentReplyCollectionData
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionData:interface'
     summary: An interface describing the data returned by calling "commentReplyCollection.toJSON()".
     name: Excel.Interfaces.CommentReplyCollectionData
     fullName: Excel.Interfaces.CommentReplyCollectionData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.CommentReplyCollectionData.items
-  - uid: excel.Excel.Interfaces.CommentReplyCollectionData.items
+      - 'excel!Excel.Interfaces.CommentReplyCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionData#items:member'
     name: items
     fullName: items
     langs:
@@ -20,4 +20,14 @@ items:
       content: 'items?: Excel.Interfaces.CommentReplyData[];'
       return:
         type:
-          - 'Excel.Interfaces.CommentReplyData[]'
+          - 'excel!Excel.Interfaces.CommentReplyCollectionData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionData#items~0:complex'
+    name: 'Excel.Interfaces.CommentReplyData[]'
+    fullName: 'Excel.Interfaces.CommentReplyData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.CommentReplyData:interface'
+        name: Excel.Interfaces.CommentReplyData
+        fullName: Excel.Interfaces.CommentReplyData
+      - name: '[]'
+        fullName: '[]'

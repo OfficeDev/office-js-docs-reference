@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.RequestContext
+  - uid: 'word!Word.RequestContext:class'
     summary: >-
       The RequestContext object facilitates requests to the Word application. Since the Office add-in and the Word
       application run in two different processes, the request context is required to get access to the Word object model
@@ -11,8 +11,8 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientRequestContext '
-    package: word
+      - 'word!OfficeExtension.ClientRequestContext:class'
+    package: word!
     remarks: >-
 
 
@@ -31,7 +31,7 @@ items:
           // Create a proxy object for the paragraphs collection.
           var paragraphs = context.document.body.paragraphs;
 
-          // Queue a commmand to load the text property for all of the paragraphs.
+          // Queue a command to load the text property for all of the paragraphs.
           context.load(paragraphs, 'text');
 
           // Synchronize the document state by executing the queued commands,
@@ -107,10 +107,10 @@ items:
 
       ```
     children:
-      - word.Word.RequestContext.(constructor)
-      - word.Word.RequestContext.application
-      - word.Word.RequestContext.document
-  - uid: word.Word.RequestContext.(constructor)
+      - 'word!Word.RequestContext:constructor(1)'
+      - 'word!Word.RequestContext#application:member'
+      - 'word!Word.RequestContext#document:member'
+  - uid: 'word!Word.RequestContext:constructor(1)'
     summary: Constructs a new instance of the `RequestContext` class
     name: (constructor)(url)
     fullName: (constructor)(url)
@@ -124,7 +124,7 @@ items:
           description: ''
           type:
             - string
-  - uid: word.Word.RequestContext.application
+  - uid: 'word!Word.RequestContext#application:member'
     summary: '\[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \] *'
     name: application
     fullName: application
@@ -135,8 +135,8 @@ items:
       content: 'readonly application: Application;'
       return:
         type:
-          - word.Word.Application
-  - uid: word.Word.RequestContext.document
+          - 'word!Word.Application:class'
+  - uid: 'word!Word.RequestContext#document:member'
     name: document
     fullName: document
     langs:
@@ -146,4 +146,11 @@ items:
       content: 'readonly document: Document;'
       return:
         type:
-          - word.Word.Document
+          - 'word!Word.Document:class'
+references:
+  - uid: 'word!OfficeExtension.ClientRequestContext:class'
+    name: OfficeExtension.ClientRequestContext
+  - uid: 'word!Word.Application:class'
+    name: Application
+  - uid: 'word!Word.Document:class'
+    name: Document

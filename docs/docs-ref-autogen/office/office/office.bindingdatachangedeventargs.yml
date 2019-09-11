@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.BindingDataChangedEventArgs
+  - uid: 'office!Office.BindingDataChangedEventArgs:interface'
     summary: Provides information about the binding that raised the DataChanged event.
     name: Office.BindingDataChangedEventArgs
     fullName: Office.BindingDataChangedEventArgs
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.BindingDataChangedEventArgs.binding
-      - office.Office.BindingDataChangedEventArgs.type
-  - uid: office.Office.BindingDataChangedEventArgs.binding
+      - 'office!Office.BindingDataChangedEventArgs#binding:member'
+      - 'office!Office.BindingDataChangedEventArgs#type:member'
+  - uid: 'office!Office.BindingDataChangedEventArgs#binding:member'
     summary: >-
-      Gets an [Office.Binding](xref:office.Office.Binding) object that represents the binding that raised the
+      Gets an [Office.Binding](xref:office!Office.Binding:interface) object that represents the binding that raised the
       DataChanged event.
     name: binding
     fullName: binding
@@ -24,11 +24,11 @@ items:
       content: 'binding: Binding;'
       return:
         type:
-          - office.Office.Binding
-  - uid: office.Office.BindingDataChangedEventArgs.type
+          - 'office!Office.Binding:interface'
+  - uid: 'office!Office.BindingDataChangedEventArgs#type:member'
     summary: >-
-      Gets an [Office.EventType](xref:office.Office.EventType) enumeration value that identifies the kind of event that
-      was raised.
+      Gets an [Office.EventType](xref:office!Office.EventType:enum) enumeration value that identifies the kind of event
+      that was raised.
     name: type
     fullName: type
     langs:
@@ -38,4 +38,9 @@ items:
       content: 'type: EventType;'
       return:
         type:
-          - office.Office.EventType
+          - 'office!Office.EventType:enum'
+references:
+  - uid: 'office!Office.Binding:interface'
+    name: Binding
+  - uid: 'office!Office.EventType:enum'
+    name: EventType

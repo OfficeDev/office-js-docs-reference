@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CellPropertiesProtection
+  - uid: 'excel!Excel.CellPropertiesProtection:interface'
     summary: >-
       Represents the `format.protection` properties of `getCellProperties`<!-- -->, `getRowProperties`<!-- -->, and
       `getColumnProperties` or the `format.protection` input parameter of `setCellProperties`<!-- -->,
@@ -13,11 +13,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.CellPropertiesProtection.formulaHidden
-      - excel.Excel.CellPropertiesProtection.locked
-  - uid: excel.Excel.CellPropertiesProtection.formulaHidden
+      - 'excel!Excel.CellPropertiesProtection#formulaHidden:member'
+      - 'excel!Excel.CellPropertiesProtection#locked:member'
+  - uid: 'excel!Excel.CellPropertiesProtection#formulaHidden:member'
     summary: |-
       Represents the `format.protection.formulaHidden` property.
 
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesProtection.locked
+  - uid: 'excel!Excel.CellPropertiesProtection#locked:member'
     summary: |-
       Represents the `format.protection.locked` property.
 

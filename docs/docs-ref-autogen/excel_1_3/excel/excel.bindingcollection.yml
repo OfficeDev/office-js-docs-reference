@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.BindingCollection
+  - uid: 'excel!Excel.BindingCollection:class'
     summary: |-
       Represents the collection of all the binding objects that are part of the workbook.
 
@@ -11,25 +11,25 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.BindingCollection.add
-      - excel.Excel.BindingCollection.add_1
-      - excel.Excel.BindingCollection.addFromNamedItem
-      - excel.Excel.BindingCollection.addFromNamedItem_1
-      - excel.Excel.BindingCollection.addFromSelection
-      - excel.Excel.BindingCollection.addFromSelection_1
-      - excel.Excel.BindingCollection.context
-      - excel.Excel.BindingCollection.count
-      - excel.Excel.BindingCollection.getItem
-      - excel.Excel.BindingCollection.getItemAt
-      - excel.Excel.BindingCollection.items
-      - excel.Excel.BindingCollection.load
-      - excel.Excel.BindingCollection.load_1
-      - excel.Excel.BindingCollection.load_2
-      - excel.Excel.BindingCollection.toJSON
-  - uid: excel.Excel.BindingCollection.add
+      - 'excel!Excel.BindingCollection#add:member(1)'
+      - 'excel!Excel.BindingCollection#add:member(2)'
+      - 'excel!Excel.BindingCollection#addFromNamedItem:member(1)'
+      - 'excel!Excel.BindingCollection#addFromNamedItem:member(2)'
+      - 'excel!Excel.BindingCollection#addFromSelection:member(1)'
+      - 'excel!Excel.BindingCollection#addFromSelection:member(2)'
+      - 'excel!Excel.BindingCollection#context:member'
+      - 'excel!Excel.BindingCollection#count:member'
+      - 'excel!Excel.BindingCollection#getItem:member(1)'
+      - 'excel!Excel.BindingCollection#getItemAt:member(1)'
+      - 'excel!Excel.BindingCollection#items:member'
+      - 'excel!Excel.BindingCollection#load:member(1)'
+      - 'excel!Excel.BindingCollection#load:member(2)'
+      - 'excel!Excel.BindingCollection#load:member(3)'
+      - 'excel!Excel.BindingCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.BindingCollection#add:member(1)'
     summary: |-
       Add a new binding to a particular Range.
 
@@ -43,7 +43,7 @@ items:
       content: 'add(range: Range | string, bindingType: Excel.BindingType, id: string): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - 'excel!Excel.Binding:class'
         description: ''
       parameters:
         - id: range
@@ -51,16 +51,16 @@ items:
             Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full
             address, including the sheet name
           type:
-            - Range | string
+            - 'excel!Excel.BindingCollection#add~0:complex'
         - id: bindingType
           description: Type of binding. See Excel.BindingType.
           type:
-            - excel.Excel.BindingType
+            - 'excel!Excel.BindingType:enum'
         - id: id
           description: Name of binding.
           type:
             - string
-  - uid: excel.Excel.BindingCollection.add_1
+  - uid: 'excel!Excel.BindingCollection#add:member(2)'
     summary: |-
       Add a new binding to a particular Range.
 
@@ -74,7 +74,7 @@ items:
       content: 'add(range: Range | string, bindingTypeString: "Range" | "Table" | "Text", id: string): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - 'excel!Excel.Binding:class'
         description: ''
       parameters:
         - id: range
@@ -82,7 +82,7 @@ items:
             Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full
             address, including the sheet name
           type:
-            - Range | string
+            - 'excel!Excel.BindingCollection#add~1:complex'
         - id: bindingTypeString
           description: Type of binding. See Excel.BindingType.
           type:
@@ -91,7 +91,7 @@ items:
           description: Name of binding.
           type:
             - string
-  - uid: excel.Excel.BindingCollection.addFromNamedItem
+  - uid: 'excel!Excel.BindingCollection#addFromNamedItem:member(1)'
     summary: >-
       Add a new binding based on a named item in the workbook. If the named item references to multiple areas, the
       "InvalidReference" error will be returned.
@@ -107,7 +107,7 @@ items:
       content: 'addFromNamedItem(name: string, bindingType: Excel.BindingType, id: string): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - 'excel!Excel.Binding:class'
         description: ''
       parameters:
         - id: name
@@ -117,12 +117,12 @@ items:
         - id: bindingType
           description: Type of binding. See Excel.BindingType.
           type:
-            - excel.Excel.BindingType
+            - 'excel!Excel.BindingType:enum'
         - id: id
           description: Name of binding.
           type:
             - string
-  - uid: excel.Excel.BindingCollection.addFromNamedItem_1
+  - uid: 'excel!Excel.BindingCollection#addFromNamedItem:member(2)'
     summary: >-
       Add a new binding based on a named item in the workbook. If the named item references to multiple areas, the
       "InvalidReference" error will be returned.
@@ -138,7 +138,7 @@ items:
       content: 'addFromNamedItem(name: string, bindingTypeString: "Range" | "Table" | "Text", id: string): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - 'excel!Excel.Binding:class'
         description: ''
       parameters:
         - id: name
@@ -153,7 +153,7 @@ items:
           description: Name of binding.
           type:
             - string
-  - uid: excel.Excel.BindingCollection.addFromSelection
+  - uid: 'excel!Excel.BindingCollection#addFromSelection:member(1)'
     summary: >-
       Add a new binding based on the current selection. If the selection has multiple areas, the "InvalidReference"
       error will be returned.
@@ -169,18 +169,18 @@ items:
       content: 'addFromSelection(bindingType: Excel.BindingType, id: string): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - 'excel!Excel.Binding:class'
         description: ''
       parameters:
         - id: bindingType
           description: Type of binding. See Excel.BindingType.
           type:
-            - excel.Excel.BindingType
+            - 'excel!Excel.BindingType:enum'
         - id: id
           description: Name of binding.
           type:
             - string
-  - uid: excel.Excel.BindingCollection.addFromSelection_1
+  - uid: 'excel!Excel.BindingCollection#addFromSelection:member(2)'
     summary: >-
       Add a new binding based on the current selection. If the selection has multiple areas, the "InvalidReference"
       error will be returned.
@@ -196,7 +196,7 @@ items:
       content: 'addFromSelection(bindingTypeString: "Range" | "Table" | "Text", id: string): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - 'excel!Excel.Binding:class'
         description: ''
       parameters:
         - id: bindingTypeString
@@ -207,7 +207,7 @@ items:
           description: Name of binding.
           type:
             - string
-  - uid: excel.Excel.BindingCollection.context
+  - uid: 'excel!Excel.BindingCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -220,8 +220,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.BindingCollection.count
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.BindingCollection#count:member'
     summary: |-
       Returns the number of bindings in the collection. Read-only.
 
@@ -236,7 +236,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.BindingCollection.getItem
+  - uid: 'excel!Excel.BindingCollection#getItem:member(1)'
     summary: |-
       Gets a binding object by ID.
 
@@ -250,7 +250,7 @@ items:
       content: 'getItem(id: string): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - 'excel!Excel.Binding:class'
         description: |-
 
 
@@ -303,7 +303,7 @@ items:
           description: Id of the binding object to be retrieved.
           type:
             - string
-  - uid: excel.Excel.BindingCollection.getItemAt
+  - uid: 'excel!Excel.BindingCollection#getItemAt:member(1)'
     summary: |-
       Gets a binding object based on its position in the items array.
 
@@ -317,7 +317,7 @@ items:
       content: 'getItemAt(index: number): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - 'excel!Excel.Binding:class'
         description: |-
 
 
@@ -343,7 +343,7 @@ items:
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.BindingCollection.items
+  - uid: 'excel!Excel.BindingCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -354,8 +354,8 @@ items:
       content: 'readonly items: Excel.Binding[];'
       return:
         type:
-          - 'Excel.Binding[]'
-  - uid: excel.Excel.BindingCollection.load
+          - 'excel!Excel.BindingCollection#items~0:complex'
+  - uid: 'excel!Excel.BindingCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -388,14 +388,14 @@ items:
         Excel.BindingCollection;
       return:
         type:
-          - excel.Excel.BindingCollection
+          - 'excel!Excel.BindingCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.BindingCollection.load_1
+            - 'excel!Excel.BindingCollection#load~0:complex'
+  - uid: 'excel!Excel.BindingCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -408,7 +408,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.BindingCollection;'
       return:
         type:
-          - excel.Excel.BindingCollection
+          - 'excel!Excel.BindingCollection:class'
         description: |-
 
 
@@ -451,7 +451,7 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.BindingCollection.load_2
+  - uid: 'excel!Excel.BindingCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -461,14 +461,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.BindingCollection;'
       return:
         type:
-          - excel.Excel.BindingCollection
+          - 'excel!Excel.BindingCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
-  - uid: excel.Excel.BindingCollection.toJSON
+            - 'excel!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.BindingCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -484,5 +484,59 @@ items:
       content: 'toJSON(): Excel.Interfaces.BindingCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.BindingCollectionData
+          - 'excel!Excel.Interfaces.BindingCollectionData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.Binding:class'
+    name: Excel.Binding
+  - uid: 'excel!Excel.BindingCollection#add~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.BindingType:enum'
+    name: Excel.BindingType
+  - uid: 'excel!Excel.BindingCollection#add~1:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.BindingCollection#items~0:complex'
+    name: 'Excel.Binding[]'
+    fullName: 'Excel.Binding[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Binding:class'
+        name: Excel.Binding
+        fullName: Excel.Binding
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.BindingCollection:class'
+    name: Excel.BindingCollection
+  - uid: 'excel!Excel.BindingCollection#load~0:complex'
+    name: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.BindingCollectionLoadOptions:interface'
+        name: Excel.Interfaces.BindingCollectionLoadOptions
+        fullName: Excel.Interfaces.BindingCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+        name: Excel.Interfaces.CollectionLoadOptions
+        fullName: Excel.Interfaces.CollectionLoadOptions
+  - uid: 'excel!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.Interfaces.BindingCollectionData:interface'
+    name: Excel.Interfaces.BindingCollectionData

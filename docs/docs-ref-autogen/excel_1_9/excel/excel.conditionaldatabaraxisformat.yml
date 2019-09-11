@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalDataBarAxisFormat
+  - uid: 'excel!Excel.ConditionalDataBarAxisFormat:enum'
     summary: |-
       Represents the format options for a Data Bar Axis.
 
@@ -10,26 +10,26 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalDataBarAxisFormat.automatic
-      - excel.Excel.ConditionalDataBarAxisFormat.cellMidPoint
-      - excel.Excel.ConditionalDataBarAxisFormat.none
-  - uid: excel.Excel.ConditionalDataBarAxisFormat.automatic
+      - 'excel!Excel.ConditionalDataBarAxisFormat.automatic:member'
+      - 'excel!Excel.ConditionalDataBarAxisFormat.cellMidPoint:member'
+      - 'excel!Excel.ConditionalDataBarAxisFormat.none:member'
+  - uid: 'excel!Excel.ConditionalDataBarAxisFormat.automatic:member'
     name: automatic
     fullName: automatic
     langs:
       - typeScript
     type: field
     numericValue: '"Automatic"'
-  - uid: excel.Excel.ConditionalDataBarAxisFormat.cellMidPoint
+  - uid: 'excel!Excel.ConditionalDataBarAxisFormat.cellMidPoint:member'
     name: cellMidPoint
     fullName: cellMidPoint
     langs:
       - typeScript
     type: field
     numericValue: '"CellMidPoint"'
-  - uid: excel.Excel.ConditionalDataBarAxisFormat.none
+  - uid: 'excel!Excel.ConditionalDataBarAxisFormat.none:member'
     name: none
     fullName: none
     langs:

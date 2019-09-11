@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TimelineStyleLoadOptions
+  - uid: 'excel!Excel.Interfaces.TimelineStyleLoadOptions:interface'
     summary: >-
       Represents a Timeline style, which defines style elements by region in the Timeline.
 
@@ -13,12 +13,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TimelineStyleLoadOptions.$all
-      - excel.Excel.Interfaces.TimelineStyleLoadOptions.name
-      - excel.Excel.Interfaces.TimelineStyleLoadOptions.readOnly
-  - uid: excel.Excel.Interfaces.TimelineStyleLoadOptions.$all
+      - 'excel!Excel.Interfaces.TimelineStyleLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.TimelineStyleLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.TimelineStyleLoadOptions#readOnly:member'
+  - uid: 'excel!Excel.Interfaces.TimelineStyleLoadOptions#$all:member'
     isPreview: true
     name: $all
     fullName: $all
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TimelineStyleLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.TimelineStyleLoadOptions#name:member'
     summary: >-
       Gets the name of the TimelineStyle.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TimelineStyleLoadOptions.readOnly
+  - uid: 'excel!Excel.Interfaces.TimelineStyleLoadOptions#readOnly:member'
     summary: >-
       Specifies whether this TimelineStyle object is read-only. Read-only.
 

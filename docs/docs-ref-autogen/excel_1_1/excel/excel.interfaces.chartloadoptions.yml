@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions:interface'
     summary: |-
       Represents a chart object in a workbook.
 
@@ -10,21 +10,21 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartLoadOptions.$all
-      - excel.Excel.Interfaces.ChartLoadOptions.axes
-      - excel.Excel.Interfaces.ChartLoadOptions.dataLabels
-      - excel.Excel.Interfaces.ChartLoadOptions.format
-      - excel.Excel.Interfaces.ChartLoadOptions.height
-      - excel.Excel.Interfaces.ChartLoadOptions.left
-      - excel.Excel.Interfaces.ChartLoadOptions.legend
-      - excel.Excel.Interfaces.ChartLoadOptions.name
-      - excel.Excel.Interfaces.ChartLoadOptions.series
-      - excel.Excel.Interfaces.ChartLoadOptions.title
-      - excel.Excel.Interfaces.ChartLoadOptions.top
-      - excel.Excel.Interfaces.ChartLoadOptions.width
-  - uid: excel.Excel.Interfaces.ChartLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#axes:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#dataLabels:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#height:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#left:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#legend:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#series:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#title:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#top:member'
+      - 'excel!Excel.Interfaces.ChartLoadOptions#width:member'
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -35,7 +35,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLoadOptions.axes
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#axes:member'
     summary: |-
       Represents chart axes.
 
@@ -49,8 +49,8 @@ items:
       content: 'axes?: Excel.Interfaces.ChartAxesLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxesLoadOptions
-  - uid: excel.Excel.Interfaces.ChartLoadOptions.dataLabels
+          - 'excel!Excel.Interfaces.ChartAxesLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#dataLabels:member'
     summary: |-
       Represents the datalabels on the chart.
 
@@ -64,8 +64,8 @@ items:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelsLoadOptions
-  - uid: excel.Excel.Interfaces.ChartLoadOptions.format
+          - 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#format:member'
     summary: |-
       Encapsulates the format properties for the chart area.
 
@@ -79,8 +79,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartAreaFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAreaFormatLoadOptions
-  - uid: excel.Excel.Interfaces.ChartLoadOptions.height
+          - 'excel!Excel.Interfaces.ChartAreaFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#height:member'
     summary: |-
       Represents the height, in points, of the chart object.
 
@@ -95,7 +95,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLoadOptions.left
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#left:member'
     summary: |-
       The distance, in points, from the left side of the chart to the worksheet origin.
 
@@ -110,7 +110,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLoadOptions.legend
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#legend:member'
     summary: |-
       Represents the legend for the chart.
 
@@ -124,8 +124,8 @@ items:
       content: 'legend?: Excel.Interfaces.ChartLegendLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendLoadOptions
-  - uid: excel.Excel.Interfaces.ChartLoadOptions.name
+          - 'excel!Excel.Interfaces.ChartLegendLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#name:member'
     summary: |-
       Represents the name of a chart object.
 
@@ -140,7 +140,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLoadOptions.series
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#series:member'
     summary: |-
       Represents either a single series or collection of series in the chart.
 
@@ -154,8 +154,8 @@ items:
       content: 'series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.ChartLoadOptions.title
+          - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#title:member'
     summary: >-
       Represents the title of the specified chart, including the text, visibility, position, and formatting of the
       title.
@@ -171,8 +171,8 @@ items:
       content: 'title?: Excel.Interfaces.ChartTitleLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTitleLoadOptions
-  - uid: excel.Excel.Interfaces.ChartLoadOptions.top
+          - 'excel!Excel.Interfaces.ChartTitleLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#top:member'
     summary: >-
       Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the
       top of the chart area (on a chart).
@@ -189,7 +189,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLoadOptions.width
+  - uid: 'excel!Excel.Interfaces.ChartLoadOptions#width:member'
     summary: |-
       Represents the width, in points, of the chart object.
 
@@ -204,3 +204,16 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartAxesLoadOptions:interface'
+    name: Excel.Interfaces.ChartAxesLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
+    name: Excel.Interfaces.ChartDataLabelsLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartAreaFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions:interface'
+    name: Excel.Interfaces.ChartLegendLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface'
+    name: Excel.Interfaces.ChartSeriesCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions:interface'
+    name: Excel.Interfaces.ChartTitleLoadOptions

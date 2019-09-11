@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TableRowCollectionData
+  - uid: 'excel!Excel.Interfaces.TableRowCollectionData:interface'
     summary: An interface describing the data returned by calling "tableRowCollection.toJSON()".
     name: Excel.Interfaces.TableRowCollectionData
     fullName: Excel.Interfaces.TableRowCollectionData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TableRowCollectionData.items
-  - uid: excel.Excel.Interfaces.TableRowCollectionData.items
+      - 'excel!Excel.Interfaces.TableRowCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.TableRowCollectionData#items:member'
     name: items
     fullName: items
     langs:
@@ -20,4 +20,14 @@ items:
       content: 'items?: Excel.Interfaces.TableRowData[];'
       return:
         type:
-          - 'Excel.Interfaces.TableRowData[]'
+          - 'excel!Excel.Interfaces.TableRowCollectionData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.TableRowCollectionData#items~0:complex'
+    name: 'Excel.Interfaces.TableRowData[]'
+    fullName: 'Excel.Interfaces.TableRowData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TableRowData:interface'
+        name: Excel.Interfaces.TableRowData
+        fullName: Excel.Interfaces.TableRowData
+      - name: '[]'
+        fullName: '[]'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.ShapeMouseLeaveEventArgs
+  - uid: 'visio!Visio.ShapeMouseLeaveEventArgs:interface'
     summary: |-
       Provides information about the shape that raised the ShapeMouseLeave event.
 
@@ -10,7 +10,7 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     remarks: |-
 
 
@@ -34,9 +34,9 @@ items:
       });
       ```
     children:
-      - visio.Visio.ShapeMouseLeaveEventArgs.pageName
-      - visio.Visio.ShapeMouseLeaveEventArgs.shapeName
-  - uid: visio.Visio.ShapeMouseLeaveEventArgs.pageName
+      - 'visio!Visio.ShapeMouseLeaveEventArgs#pageName:member'
+      - 'visio!Visio.ShapeMouseLeaveEventArgs#shapeName:member'
+  - uid: 'visio!Visio.ShapeMouseLeaveEventArgs#pageName:member'
     summary: |-
       Gets the name of the page which has the shape object that raised the ShapeMouseLeave event.
 
@@ -51,7 +51,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.ShapeMouseLeaveEventArgs.shapeName
+  - uid: 'visio!Visio.ShapeMouseLeaveEventArgs#shapeName:member'
     summary: |-
       Gets the name of the shape object that raised the ShapeMouseLeave event.
 

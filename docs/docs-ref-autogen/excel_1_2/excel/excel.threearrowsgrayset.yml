@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ThreeArrowsGraySet
+  - uid: 'excel!Excel.ThreeArrowsGraySet:interface'
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ThreeArrowsGraySet
     fullName: Excel.ThreeArrowsGraySet
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ThreeArrowsGraySet.grayDownArrow
-      - excel.Excel.ThreeArrowsGraySet.graySideArrow
-      - excel.Excel.ThreeArrowsGraySet.grayUpArrow
-  - uid: excel.Excel.ThreeArrowsGraySet.grayDownArrow
+      - 'excel!Excel.ThreeArrowsGraySet#grayDownArrow:member'
+      - 'excel!Excel.ThreeArrowsGraySet#graySideArrow:member'
+      - 'excel!Excel.ThreeArrowsGraySet#grayUpArrow:member'
+  - uid: 'excel!Excel.ThreeArrowsGraySet#grayDownArrow:member'
     name: grayDownArrow
     fullName: grayDownArrow
     langs:
@@ -22,8 +22,8 @@ items:
       content: 'grayDownArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.ThreeArrowsGraySet.graySideArrow
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeArrowsGraySet#graySideArrow:member'
     name: graySideArrow
     fullName: graySideArrow
     langs:
@@ -33,8 +33,8 @@ items:
       content: 'graySideArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.ThreeArrowsGraySet.grayUpArrow
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeArrowsGraySet#grayUpArrow:member'
     name: grayUpArrow
     fullName: grayUpArrow
     langs:
@@ -44,4 +44,7 @@ items:
       content: 'grayUpArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - 'excel!Excel.Icon:interface'
+references:
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon

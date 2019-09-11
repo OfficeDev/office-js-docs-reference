@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.UserProfile
+  - uid: 'outlook!Office.UserProfile:interface'
     summary: >-
       Information about the user associated with the mailbox. This includes their account type, display name, email
       address, and time zone.
@@ -19,12 +19,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.UserProfile.displayName
-      - outlook.Office.UserProfile.emailAddress
-      - outlook.Office.UserProfile.timeZone
-  - uid: outlook.Office.UserProfile.displayName
+      - 'outlook!Office.UserProfile#displayName:member'
+      - 'outlook!Office.UserProfile#emailAddress:member'
+      - 'outlook!Office.UserProfile#timeZone:member'
+  - uid: 'outlook!Office.UserProfile#displayName:member'
     summary: |-
       Gets the user's display name.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.UserProfile.emailAddress
+  - uid: 'outlook!Office.UserProfile#emailAddress:member'
     summary: |-
       Gets the user's display name.
 
@@ -92,7 +92,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.UserProfile.timeZone
+  - uid: 'outlook!Office.UserProfile#timeZone:member'
     summary: |-
       Gets the user's SMTP email address.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.FunctionResultLoadOptions
+  - uid: 'excel!Excel.Interfaces.FunctionResultLoadOptions:interface'
     summary: |-
       An object containing the result of a function-evaluation operation
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.FunctionResultLoadOptions.$all
-      - excel.Excel.Interfaces.FunctionResultLoadOptions.error
-      - excel.Excel.Interfaces.FunctionResultLoadOptions.value
-  - uid: excel.Excel.Interfaces.FunctionResultLoadOptions.$all
+      - 'excel!Excel.Interfaces.FunctionResultLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.FunctionResultLoadOptions#error:member'
+      - 'excel!Excel.Interfaces.FunctionResultLoadOptions#value:member'
+  - uid: 'excel!Excel.Interfaces.FunctionResultLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.FunctionResultLoadOptions.error
+  - uid: 'excel!Excel.Interfaces.FunctionResultLoadOptions#error:member'
     summary: >-
       Error value (such as "\#DIV/0") representing the error. If the error string is not set, then the function
       succeeded, and its result is written to the Value field. The error is always in the English locale.
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.FunctionResultLoadOptions.value
+  - uid: 'excel!Excel.Interfaces.FunctionResultLoadOptions#value:member'
     summary: >-
       The value of function evaluation. The value field will be populated only if no error has occurred (i.e., the Error
       property is not set).

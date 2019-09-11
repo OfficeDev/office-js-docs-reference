@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.TableUpdateData
+  - uid: 'onenote!OneNote.Interfaces.TableUpdateData:interface'
     summary: 'An interface for updating data on the Table object, for use in "table.set(<!-- -->{ ... }<!-- -->)".'
     name: OneNote.Interfaces.TableUpdateData
     fullName: OneNote.Interfaces.TableUpdateData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.TableUpdateData.borderVisible
-  - uid: onenote.OneNote.Interfaces.TableUpdateData.borderVisible
+      - 'onenote!OneNote.Interfaces.TableUpdateData#borderVisible:member'
+  - uid: 'onenote!OneNote.Interfaces.TableUpdateData#borderVisible:member'
     summary: |-
       Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
 

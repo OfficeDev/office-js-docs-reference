@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.SearchDirection
+  - uid: 'excel!Excel.SearchDirection:enum'
     summary: |-
       Specifies the search direction.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.SearchDirection.backwards
-      - excel.Excel.SearchDirection.forward
-  - uid: excel.Excel.SearchDirection.backwards
+      - 'excel!Excel.SearchDirection.backwards:member'
+      - 'excel!Excel.SearchDirection.forward:member'
+  - uid: 'excel!Excel.SearchDirection.backwards:member'
     summary: Search in reverse order.
     name: backwards
     fullName: backwards
@@ -22,7 +22,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Backwards"'
-  - uid: excel.Excel.SearchDirection.forward
+  - uid: 'excel!Excel.SearchDirection.forward:member'
     summary: Search in forward order.
     name: forward
     fullName: forward

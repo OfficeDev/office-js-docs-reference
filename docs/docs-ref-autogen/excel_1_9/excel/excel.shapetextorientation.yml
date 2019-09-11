@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ShapeTextOrientation
+  - uid: 'excel!Excel.ShapeTextOrientation:enum'
     summary: |-
       Specifies the orientation for the text frame in a shape.
 
@@ -10,58 +10,58 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ShapeTextOrientation.eastAsianVertical
-      - excel.Excel.ShapeTextOrientation.horizontal
-      - excel.Excel.ShapeTextOrientation.mongolianVertical
-      - excel.Excel.ShapeTextOrientation.vertical
-      - excel.Excel.ShapeTextOrientation.vertical270
-      - excel.Excel.ShapeTextOrientation.wordArtVertical
-      - excel.Excel.ShapeTextOrientation.wordArtVerticalRTL
-  - uid: excel.Excel.ShapeTextOrientation.eastAsianVertical
+      - 'excel!Excel.ShapeTextOrientation.eastAsianVertical:member'
+      - 'excel!Excel.ShapeTextOrientation.horizontal:member'
+      - 'excel!Excel.ShapeTextOrientation.mongolianVertical:member'
+      - 'excel!Excel.ShapeTextOrientation.vertical:member'
+      - 'excel!Excel.ShapeTextOrientation.vertical270:member'
+      - 'excel!Excel.ShapeTextOrientation.wordArtVertical:member'
+      - 'excel!Excel.ShapeTextOrientation.wordArtVerticalRTL:member'
+  - uid: 'excel!Excel.ShapeTextOrientation.eastAsianVertical:member'
     name: eastAsianVertical
     fullName: eastAsianVertical
     langs:
       - typeScript
     type: field
     numericValue: '"EastAsianVertical"'
-  - uid: excel.Excel.ShapeTextOrientation.horizontal
+  - uid: 'excel!Excel.ShapeTextOrientation.horizontal:member'
     name: horizontal
     fullName: horizontal
     langs:
       - typeScript
     type: field
     numericValue: '"Horizontal"'
-  - uid: excel.Excel.ShapeTextOrientation.mongolianVertical
+  - uid: 'excel!Excel.ShapeTextOrientation.mongolianVertical:member'
     name: mongolianVertical
     fullName: mongolianVertical
     langs:
       - typeScript
     type: field
     numericValue: '"MongolianVertical"'
-  - uid: excel.Excel.ShapeTextOrientation.vertical
+  - uid: 'excel!Excel.ShapeTextOrientation.vertical:member'
     name: vertical
     fullName: vertical
     langs:
       - typeScript
     type: field
     numericValue: '"Vertical"'
-  - uid: excel.Excel.ShapeTextOrientation.vertical270
+  - uid: 'excel!Excel.ShapeTextOrientation.vertical270:member'
     name: vertical270
     fullName: vertical270
     langs:
       - typeScript
     type: field
     numericValue: '"Vertical270"'
-  - uid: excel.Excel.ShapeTextOrientation.wordArtVertical
+  - uid: 'excel!Excel.ShapeTextOrientation.wordArtVertical:member'
     name: wordArtVertical
     fullName: wordArtVertical
     langs:
       - typeScript
     type: field
     numericValue: '"WordArtVertical"'
-  - uid: excel.Excel.ShapeTextOrientation.wordArtVerticalRTL
+  - uid: 'excel!Excel.ShapeTextOrientation.wordArtVerticalRTL:member'
     name: wordArtVerticalRTL
     fullName: wordArtVerticalRTL
     langs:

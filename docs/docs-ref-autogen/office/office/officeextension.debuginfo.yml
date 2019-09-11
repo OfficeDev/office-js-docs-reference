@@ -1,22 +1,22 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.OfficeExtension.DebugInfo
+  - uid: 'office!OfficeExtension.DebugInfo:interface'
     summary: Provides information about an error.
     name: OfficeExtension.DebugInfo
     fullName: OfficeExtension.DebugInfo
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.OfficeExtension.DebugInfo.code
-      - office.OfficeExtension.DebugInfo.errorLocation
-      - office.OfficeExtension.DebugInfo.fullStatements
-      - office.OfficeExtension.DebugInfo.innerError
-      - office.OfficeExtension.DebugInfo.message
-      - office.OfficeExtension.DebugInfo.statements
-      - office.OfficeExtension.DebugInfo.surroundingStatements
-  - uid: office.OfficeExtension.DebugInfo.code
+      - 'office!OfficeExtension.DebugInfo#code:member'
+      - 'office!OfficeExtension.DebugInfo#errorLocation:member'
+      - 'office!OfficeExtension.DebugInfo#fullStatements:member'
+      - 'office!OfficeExtension.DebugInfo#innerError:member'
+      - 'office!OfficeExtension.DebugInfo#message:member'
+      - 'office!OfficeExtension.DebugInfo#statements:member'
+      - 'office!OfficeExtension.DebugInfo#surroundingStatements:member'
+  - uid: 'office!OfficeExtension.DebugInfo#code:member'
     summary: 'Error code string, such as "InvalidArgument".'
     name: code
     fullName: code
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.DebugInfo.errorLocation
+  - uid: 'office!OfficeExtension.DebugInfo#errorLocation:member'
     summary: 'The object type and property or method name (or similar information), if available.'
     name: errorLocation
     fullName: errorLocation
@@ -40,7 +40,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.DebugInfo.fullStatements
+  - uid: 'office!OfficeExtension.DebugInfo#fullStatements:member'
     summary: >-
       All statements in the batch request (including any potentially-sensitive information that was specified in the
       request), if available.
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - 'string[]'
-  - uid: office.OfficeExtension.DebugInfo.innerError
+  - uid: 'office!OfficeExtension.DebugInfo#innerError:member'
     summary: 'Inner error, if applicable.'
     name: innerError
     fullName: innerError
@@ -68,8 +68,8 @@ items:
       content: 'innerError?: DebugInfo | string;'
       return:
         type:
-          - DebugInfo | string
-  - uid: office.OfficeExtension.DebugInfo.message
+          - 'office!OfficeExtension.DebugInfo#innerError~0:complex'
+  - uid: 'office!OfficeExtension.DebugInfo#message:member'
     summary: The error message passed through from the host Office application.
     name: message
     fullName: message
@@ -81,7 +81,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.DebugInfo.statements
+  - uid: 'office!OfficeExtension.DebugInfo#statements:member'
     summary: >-
       The statement that caused the error, if available.
 
@@ -98,7 +98,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.DebugInfo.surroundingStatements
+  - uid: 'office!OfficeExtension.DebugInfo#surroundingStatements:member'
     summary: >-
       The statements that closely precede and follow the statement that caused the error, if available.
 
@@ -115,3 +115,13 @@ items:
       return:
         type:
           - 'string[]'
+references:
+  - uid: 'office!OfficeExtension.DebugInfo#innerError~0:complex'
+    name: DebugInfo | string
+    fullName: OfficeExtension.DebugInfo | string
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.DebugInfo:interface'
+        name: DebugInfo
+        fullName: OfficeExtension.DebugInfo
+      - name: ' | string'
+        fullName: ' | string'

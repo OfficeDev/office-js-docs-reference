@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartLegend
+  - uid: 'excel!Excel.ChartLegend:class'
     summary: |-
       Represents the legend in a chart.
 
@@ -11,27 +11,27 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.ChartLegend.context
-      - excel.Excel.ChartLegend.format
-      - excel.Excel.ChartLegend.height
-      - excel.Excel.ChartLegend.left
-      - excel.Excel.ChartLegend.legendEntries
-      - excel.Excel.ChartLegend.load
-      - excel.Excel.ChartLegend.load_1
-      - excel.Excel.ChartLegend.load_2
-      - excel.Excel.ChartLegend.overlay
-      - excel.Excel.ChartLegend.position
-      - excel.Excel.ChartLegend.set
-      - excel.Excel.ChartLegend.set_1
-      - excel.Excel.ChartLegend.showShadow
-      - excel.Excel.ChartLegend.toJSON
-      - excel.Excel.ChartLegend.top
-      - excel.Excel.ChartLegend.visible
-      - excel.Excel.ChartLegend.width
-  - uid: excel.Excel.ChartLegend.context
+      - 'excel!Excel.ChartLegend#context:member'
+      - 'excel!Excel.ChartLegend#format:member'
+      - 'excel!Excel.ChartLegend#height:member'
+      - 'excel!Excel.ChartLegend#left:member'
+      - 'excel!Excel.ChartLegend#legendEntries:member'
+      - 'excel!Excel.ChartLegend#load:member(1)'
+      - 'excel!Excel.ChartLegend#load:member(2)'
+      - 'excel!Excel.ChartLegend#load:member(3)'
+      - 'excel!Excel.ChartLegend#overlay:member'
+      - 'excel!Excel.ChartLegend#position:member'
+      - 'excel!Excel.ChartLegend#set:member(1)'
+      - 'excel!Excel.ChartLegend#set:member(2)'
+      - 'excel!Excel.ChartLegend#showShadow:member'
+      - 'excel!Excel.ChartLegend#toJSON:member(1)'
+      - 'excel!Excel.ChartLegend#top:member'
+      - 'excel!Excel.ChartLegend#visible:member'
+      - 'excel!Excel.ChartLegend#width:member'
+  - uid: 'excel!Excel.ChartLegend#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -44,8 +44,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartLegend.format
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartLegend#format:member'
     summary: |-
       Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
 
@@ -59,8 +59,8 @@ items:
       content: 'readonly format: Excel.ChartLegendFormat;'
       return:
         type:
-          - excel.Excel.ChartLegendFormat
-  - uid: excel.Excel.ChartLegend.height
+          - 'excel!Excel.ChartLegendFormat:class'
+  - uid: 'excel!Excel.ChartLegend#height:member'
     summary: |-
       Represents the height, in points, of the legend on the chart. Null if legend is not visible.
 
@@ -75,7 +75,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartLegend.left
+  - uid: 'excel!Excel.ChartLegend#left:member'
     summary: |-
       Represents the left, in points, of a chart legend. Null if legend is not visible.
 
@@ -90,7 +90,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartLegend.legendEntries
+  - uid: 'excel!Excel.ChartLegend#legendEntries:member'
     summary: |-
       Represents a collection of legendEntries in the legend. Read-only.
 
@@ -104,8 +104,8 @@ items:
       content: 'readonly legendEntries: Excel.ChartLegendEntryCollection;'
       return:
         type:
-          - excel.Excel.ChartLegendEntryCollection
-  - uid: excel.Excel.ChartLegend.load
+          - 'excel!Excel.ChartLegendEntryCollection:class'
+  - uid: 'excel!Excel.ChartLegend#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -136,14 +136,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartLegendLoadOptions): Excel.ChartLegend;'
       return:
         type:
-          - excel.Excel.ChartLegend
+          - 'excel!Excel.ChartLegend:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartLegendLoadOptions
-  - uid: excel.Excel.ChartLegend.load_1
+            - 'excel!Excel.Interfaces.ChartLegendLoadOptions:interface'
+  - uid: 'excel!Excel.ChartLegend#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -156,7 +156,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartLegend;'
       return:
         type:
-          - excel.Excel.ChartLegend
+          - 'excel!Excel.ChartLegend:class'
         description: |-
 
 
@@ -200,7 +200,7 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartLegend.load_2
+  - uid: 'excel!Excel.ChartLegend#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -213,7 +213,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartLegend;'
       return:
         type:
-          - excel.Excel.ChartLegend
+          - 'excel!Excel.ChartLegend:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -222,7 +222,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartLegend.overlay
+  - uid: 'excel!Excel.ChartLegend#overlay:member'
     summary: |-
       Boolean value for whether the chart legend should overlap with the main body of the chart.
 
@@ -237,7 +237,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartLegend.position
+  - uid: 'excel!Excel.ChartLegend#position:member'
     summary: |-
       Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
 
@@ -251,8 +251,8 @@ items:
       content: 'position: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom";'
       return:
         type:
-          - Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
-  - uid: excel.Excel.ChartLegend.set
+          - 'excel!Excel.ChartLegend#position~0:complex'
+  - uid: 'excel!Excel.ChartLegend#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -277,12 +277,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.ChartLegendUpdateData
+            - 'excel!Excel.Interfaces.ChartLegendUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartLegend.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.ChartLegend#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -299,8 +299,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartLegend
-  - uid: excel.Excel.ChartLegend.showShadow
+            - 'excel!Excel.ChartLegend:class'
+  - uid: 'excel!Excel.ChartLegend#showShadow:member'
     summary: |-
       Represents if the legend has a shadow on the chart.
 
@@ -315,7 +315,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartLegend.toJSON
+  - uid: 'excel!Excel.ChartLegend#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -331,9 +331,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartLegendData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendData
+          - 'excel!Excel.Interfaces.ChartLegendData:interface'
         description: ''
-  - uid: excel.Excel.ChartLegend.top
+  - uid: 'excel!Excel.ChartLegend#top:member'
     summary: |-
       Represents the top of a chart legend.
 
@@ -348,7 +348,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartLegend.visible
+  - uid: 'excel!Excel.ChartLegend#visible:member'
     summary: |-
       A boolean value the represents the visibility of a ChartLegend object.
 
@@ -363,7 +363,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartLegend.width
+  - uid: 'excel!Excel.ChartLegend#width:member'
     summary: |-
       Represents the width, in points, of the legend on the chart. Null if legend is not visible.
 
@@ -378,3 +378,31 @@ items:
       return:
         type:
           - number
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ChartLegendFormat:class'
+    name: Excel.ChartLegendFormat
+  - uid: 'excel!Excel.ChartLegendEntryCollection:class'
+    name: Excel.ChartLegendEntryCollection
+  - uid: 'excel!Excel.ChartLegend:class'
+    name: Excel.ChartLegend
+  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions:interface'
+    name: Excel.Interfaces.ChartLegendLoadOptions
+  - uid: 'excel!Excel.ChartLegend#position~0:complex'
+    name: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
+    fullName: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartLegendPosition:enum'
+        name: Excel.ChartLegendPosition
+        fullName: Excel.ChartLegendPosition
+      - name: ' | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"'
+        fullName: ' | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"'
+  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData:interface'
+    name: Interfaces.ChartLegendUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.ChartLegendData:interface'
+    name: Excel.Interfaces.ChartLegendData

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartMapLabelStrategy
+  - uid: 'excel!Excel.ChartMapLabelStrategy:enum'
     summary: |-
       Represents the region level of a chart series layout. This only applies to region map charts.
 
@@ -10,26 +10,26 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartMapLabelStrategy.bestFit
-      - excel.Excel.ChartMapLabelStrategy.none
-      - excel.Excel.ChartMapLabelStrategy.showAll
-  - uid: excel.Excel.ChartMapLabelStrategy.bestFit
+      - 'excel!Excel.ChartMapLabelStrategy.bestFit:member'
+      - 'excel!Excel.ChartMapLabelStrategy.none:member'
+      - 'excel!Excel.ChartMapLabelStrategy.showAll:member'
+  - uid: 'excel!Excel.ChartMapLabelStrategy.bestFit:member'
     name: bestFit
     fullName: bestFit
     langs:
       - typeScript
     type: field
     numericValue: '"BestFit"'
-  - uid: excel.Excel.ChartMapLabelStrategy.none
+  - uid: 'excel!Excel.ChartMapLabelStrategy.none:member'
     name: none
     fullName: none
     langs:
       - typeScript
     type: field
     numericValue: '"None"'
-  - uid: excel.Excel.ChartMapLabelStrategy.showAll
+  - uid: 'excel!Excel.ChartMapLabelStrategy.showAll:member'
     name: showAll
     fullName: showAll
     langs:

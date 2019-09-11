@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalCellValueRule
+  - uid: 'excel!Excel.ConditionalCellValueRule:interface'
     summary: |-
       Represents a cell value conditional format rule.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalCellValueRule.formula1
-      - excel.Excel.ConditionalCellValueRule.formula2
-      - excel.Excel.ConditionalCellValueRule.operator
-  - uid: excel.Excel.ConditionalCellValueRule.formula1
+      - 'excel!Excel.ConditionalCellValueRule#formula1:member'
+      - 'excel!Excel.ConditionalCellValueRule#formula2:member'
+      - 'excel!Excel.ConditionalCellValueRule#operator:member'
+  - uid: 'excel!Excel.ConditionalCellValueRule#formula1:member'
     summary: |-
       The formula, if required, to evaluate the conditional format rule on.
 
@@ -47,7 +47,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.ConditionalCellValueRule.formula2
+  - uid: 'excel!Excel.ConditionalCellValueRule#formula2:member'
     summary: |-
       The formula, if required, to evaluate the conditional format rule on.
 
@@ -62,7 +62,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ConditionalCellValueRule.operator
+  - uid: 'excel!Excel.ConditionalCellValueRule#operator:member'
     summary: |-
       The operator of the text conditional format.
 
@@ -78,9 +78,7 @@ items:
         "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual";
       return:
         type:
-          - >-
-            Excel.ConditionalCellValueOperator | "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" |
-            "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual"
+          - 'excel!Excel.ConditionalCellValueRule#operator~0:complex'
         description: |-
 
 
@@ -98,3 +96,17 @@ items:
               await context.sync();
           });
           ```
+references:
+  - uid: 'excel!Excel.ConditionalCellValueRule#operator~0:complex'
+    name: >-
+      Excel.ConditionalCellValueOperator | "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" |
+      "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual"
+    fullName: >-
+      Excel.ConditionalCellValueOperator | "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" |
+      "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual"
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalCellValueOperator:enum'
+        name: Excel.ConditionalCellValueOperator
+        fullName: Excel.ConditionalCellValueOperator
+      - name: ' | "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual"'
+        fullName: ' | "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual"'

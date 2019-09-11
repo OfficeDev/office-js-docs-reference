@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.TableRow
+  - uid: 'onenote!OneNote.TableRow:class'
     summary: |-
       Represents a row in a table.
 
@@ -11,26 +11,26 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: onenote
+      - 'onenote!OfficeExtension.ClientObject:class'
+    package: onenote!
     children:
-      - onenote.OneNote.TableRow.cellCount
-      - onenote.OneNote.TableRow.cells
-      - onenote.OneNote.TableRow.clear
-      - onenote.OneNote.TableRow.context
-      - onenote.OneNote.TableRow.id
-      - onenote.OneNote.TableRow.insertRowAsSibling
-      - onenote.OneNote.TableRow.insertRowAsSibling_1
-      - onenote.OneNote.TableRow.load
-      - onenote.OneNote.TableRow.load_1
-      - onenote.OneNote.TableRow.load_2
-      - onenote.OneNote.TableRow.parentTable
-      - onenote.OneNote.TableRow.rowIndex
-      - onenote.OneNote.TableRow.setShadingColor
-      - onenote.OneNote.TableRow.toJSON
-      - onenote.OneNote.TableRow.track
-      - onenote.OneNote.TableRow.untrack
-  - uid: onenote.OneNote.TableRow.cellCount
+      - 'onenote!OneNote.TableRow#cellCount:member'
+      - 'onenote!OneNote.TableRow#cells:member'
+      - 'onenote!OneNote.TableRow#clear:member(1)'
+      - 'onenote!OneNote.TableRow#context:member'
+      - 'onenote!OneNote.TableRow#id:member'
+      - 'onenote!OneNote.TableRow#insertRowAsSibling:member(1)'
+      - 'onenote!OneNote.TableRow#insertRowAsSibling:member(2)'
+      - 'onenote!OneNote.TableRow#load:member(1)'
+      - 'onenote!OneNote.TableRow#load:member(2)'
+      - 'onenote!OneNote.TableRow#load:member(3)'
+      - 'onenote!OneNote.TableRow#parentTable:member'
+      - 'onenote!OneNote.TableRow#rowIndex:member'
+      - 'onenote!OneNote.TableRow#setShadingColor:member(1)'
+      - 'onenote!OneNote.TableRow#toJSON:member(1)'
+      - 'onenote!OneNote.TableRow#track:member(1)'
+      - 'onenote!OneNote.TableRow#untrack:member(1)'
+  - uid: 'onenote!OneNote.TableRow#cellCount:member'
     summary: |-
       Gets the number of cells in the row. Read-only.
 
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.TableRow.cells
+  - uid: 'onenote!OneNote.TableRow#cells:member'
     summary: |-
       Gets the cells in the row. Read-only.
 
@@ -59,8 +59,8 @@ items:
       content: 'readonly cells: OneNote.TableCellCollection;'
       return:
         type:
-          - onenote.OneNote.TableCellCollection
-  - uid: onenote.OneNote.TableRow.clear
+          - 'onenote!OneNote.TableCellCollection:class'
+  - uid: 'onenote!OneNote.TableRow#clear:member(1)'
     summary: |-
       Clears the contents of the row.
 
@@ -76,7 +76,7 @@ items:
         type:
           - void
         description: ''
-  - uid: onenote.OneNote.TableRow.context
+  - uid: 'onenote!OneNote.TableRow#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -89,8 +89,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
-  - uid: onenote.OneNote.TableRow.id
+          - 'onenote!OneNote.RequestContext:class'
+  - uid: 'onenote!OneNote.TableRow#id:member'
     summary: |-
       Gets the ID of the row. Read-only.
 
@@ -105,7 +105,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.TableRow.insertRowAsSibling
+  - uid: 'onenote!OneNote.TableRow#insertRowAsSibling:member(1)'
     summary: |-
       Inserts a row before or after the current row.
 
@@ -119,7 +119,7 @@ items:
       content: 'insertRowAsSibling(insertLocation: OneNote.InsertLocation, values?: string[]): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - 'onenote!OneNote.TableRow:class'
         description: |-
 
 
@@ -167,14 +167,14 @@ items:
         - id: insertLocation
           description: Where the new rows should be inserted relative to the current row.
           type:
-            - onenote.OneNote.InsertLocation
+            - 'onenote!OneNote.InsertLocation:enum'
         - id: values
           description: >-
             Strings to insert in the new row, specified as an array. Must not have more cells than in the current row.
             Optional.
           type:
             - 'string[]'
-  - uid: onenote.OneNote.TableRow.insertRowAsSibling_1
+  - uid: 'onenote!OneNote.TableRow#insertRowAsSibling:member(2)'
     summary: |-
       Inserts a row before or after the current row.
 
@@ -188,7 +188,7 @@ items:
       content: 'insertRowAsSibling(insertLocationString: "Before" | "After", values?: string[]): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - 'onenote!OneNote.TableRow:class'
         description: ''
       parameters:
         - id: insertLocationString
@@ -201,7 +201,7 @@ items:
             Optional.
           type:
             - 'string[]'
-  - uid: onenote.OneNote.TableRow.load
+  - uid: 'onenote!OneNote.TableRow#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -232,14 +232,14 @@ items:
       content: 'load(option?: OneNote.Interfaces.TableRowLoadOptions): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - 'onenote!OneNote.TableRow:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.TableRowLoadOptions
-  - uid: onenote.OneNote.TableRow.load_1
+            - 'onenote!OneNote.Interfaces.TableRowLoadOptions:interface'
+  - uid: 'onenote!OneNote.TableRow#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -252,7 +252,7 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - 'onenote!OneNote.TableRow:class'
         description: |-
 
 
@@ -349,7 +349,7 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.TableRow.load_2
+  - uid: 'onenote!OneNote.TableRow#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -362,7 +362,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - 'onenote!OneNote.TableRow:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -371,7 +371,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: onenote.OneNote.TableRow.parentTable
+  - uid: 'onenote!OneNote.TableRow#parentTable:member'
     summary: |-
       Gets the parent table. Read-only.
 
@@ -385,8 +385,8 @@ items:
       content: 'readonly parentTable: OneNote.Table;'
       return:
         type:
-          - onenote.OneNote.Table
-  - uid: onenote.OneNote.TableRow.rowIndex
+          - 'onenote!OneNote.Table:class'
+  - uid: 'onenote!OneNote.TableRow#rowIndex:member'
     summary: |-
       Gets the index of the row in its parent table. Read-only.
 
@@ -401,7 +401,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.TableRow.setShadingColor
+  - uid: 'onenote!OneNote.TableRow#setShadingColor:member(1)'
     summary: |-
       Sets the shading color of all cells in the row. The color code to set the cells to.
 
@@ -422,7 +422,7 @@ items:
           description: ''
           type:
             - string
-  - uid: onenote.OneNote.TableRow.toJSON
+  - uid: 'onenote!OneNote.TableRow#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -438,9 +438,9 @@ items:
       content: 'toJSON(): OneNote.Interfaces.TableRowData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableRowData
+          - 'onenote!OneNote.Interfaces.TableRowData:interface'
         description: ''
-  - uid: onenote.OneNote.TableRow.track
+  - uid: 'onenote!OneNote.TableRow#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -456,9 +456,9 @@ items:
       content: 'track(): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - 'onenote!OneNote.TableRow:class'
         description: ''
-  - uid: onenote.OneNote.TableRow.untrack
+  - uid: 'onenote!OneNote.TableRow#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -473,5 +473,22 @@ items:
       content: 'untrack(): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - 'onenote!OneNote.TableRow:class'
         description: ''
+references:
+  - uid: 'onenote!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'onenote!OneNote.TableCellCollection:class'
+    name: OneNote.TableCellCollection
+  - uid: 'onenote!OneNote.RequestContext:class'
+    name: RequestContext
+  - uid: 'onenote!OneNote.TableRow:class'
+    name: OneNote.TableRow
+  - uid: 'onenote!OneNote.InsertLocation:enum'
+    name: OneNote.InsertLocation
+  - uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions:interface'
+    name: OneNote.Interfaces.TableRowLoadOptions
+  - uid: 'onenote!OneNote.Table:class'
+    name: OneNote.Table
+  - uid: 'onenote!OneNote.Interfaces.TableRowData:interface'
+    name: OneNote.Interfaces.TableRowData

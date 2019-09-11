@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartTrendlineFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineFormatUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartTrendlineFormat object, for use in "chartTrendlineFormat.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,4 +9,4 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

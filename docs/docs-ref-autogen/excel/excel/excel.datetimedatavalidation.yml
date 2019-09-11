@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.DateTimeDataValidation
+  - uid: 'excel!Excel.DateTimeDataValidation:interface'
     summary: |-
       Represents the Date data validation criteria.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.DateTimeDataValidation.formula1
-      - excel.Excel.DateTimeDataValidation.formula2
-      - excel.Excel.DateTimeDataValidation.operator
-  - uid: excel.Excel.DateTimeDataValidation.formula1
+      - 'excel!Excel.DateTimeDataValidation#formula1:member'
+      - 'excel!Excel.DateTimeDataValidation#formula2:member'
+      - 'excel!Excel.DateTimeDataValidation#operator:member'
+  - uid: 'excel!Excel.DateTimeDataValidation#formula1:member'
     summary: >-
       Specifies the right-hand operand when the operator property is set to a binary operator such as GreaterThan (the
       left-hand operand is the value the user tries to enter in the cell). With the ternary operators Between and
@@ -35,8 +35,8 @@ items:
       content: 'formula1: string | Date | Range;'
       return:
         type:
-          - string | Date | Range
-  - uid: excel.Excel.DateTimeDataValidation.formula2
+          - 'excel!Excel.DateTimeDataValidation#formula1~0:complex'
+  - uid: 'excel!Excel.DateTimeDataValidation#formula2:member'
     summary: >-
       With the ternary operators Between and NotBetween, specifies the upper bound operand. Is not used with the binary
       operators, such as GreaterThan. When setting the value, it can be passed in as a Date, a Range object, or a string
@@ -55,8 +55,8 @@ items:
       content: 'formula2?: string | Date | Range;'
       return:
         type:
-          - string | Date | Range
-  - uid: excel.Excel.DateTimeDataValidation.operator
+          - 'excel!Excel.DateTimeDataValidation#formula2~0:complex'
+  - uid: 'excel!Excel.DateTimeDataValidation#operator:member'
     summary: |-
       The operator to use for validating the data.
 
@@ -72,6 +72,46 @@ items:
         "LessThan" | "GreaterThanOrEqualTo" | "LessThanOrEqualTo";
       return:
         type:
-          - >-
-            Excel.DataValidationOperator | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" |
-            "LessThan" | "GreaterThanOrEqualTo" | "LessThanOrEqualTo"
+          - 'excel!Excel.DateTimeDataValidation#operator~0:complex'
+references:
+  - uid: 'excel!Excel.DateTimeDataValidation#formula1~0:complex'
+    name: string | Date | Range
+    fullName: string | Date | Excel.Range
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: '!Date:interface'
+        name: Date
+        fullName: Date
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+  - uid: 'excel!Excel.DateTimeDataValidation#formula2~0:complex'
+    name: string | Date | Range
+    fullName: string | Date | Excel.Range
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: '!Date:interface'
+        name: Date
+        fullName: Date
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+  - uid: 'excel!Excel.DateTimeDataValidation#operator~0:complex'
+    name: >-
+      Excel.DataValidationOperator | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" |
+      "GreaterThanOrEqualTo" | "LessThanOrEqualTo"
+    fullName: >-
+      Excel.DataValidationOperator | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" |
+      "GreaterThanOrEqualTo" | "LessThanOrEqualTo"
+    spec.typeScript:
+      - uid: 'excel!Excel.DataValidationOperator:enum'
+        name: Excel.DataValidationOperator
+        fullName: Excel.DataValidationOperator
+      - name: ' | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" | "GreaterThanOrEqualTo" | "LessThanOrEqualTo"'
+        fullName: ' | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" | "GreaterThan" | "LessThan" | "GreaterThanOrEqualTo" | "LessThanOrEqualTo"'

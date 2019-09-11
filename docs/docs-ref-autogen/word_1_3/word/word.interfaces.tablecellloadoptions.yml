@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.TableCellLoadOptions
+  - uid: 'word!Word.Interfaces.TableCellLoadOptions:interface'
     summary: |-
       Represents a table cell in a Word document.
 
@@ -10,21 +10,21 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.TableCellLoadOptions.$all
-      - word.Word.Interfaces.TableCellLoadOptions.body
-      - word.Word.Interfaces.TableCellLoadOptions.cellIndex
-      - word.Word.Interfaces.TableCellLoadOptions.columnWidth
-      - word.Word.Interfaces.TableCellLoadOptions.horizontalAlignment
-      - word.Word.Interfaces.TableCellLoadOptions.parentRow
-      - word.Word.Interfaces.TableCellLoadOptions.parentTable
-      - word.Word.Interfaces.TableCellLoadOptions.rowIndex
-      - word.Word.Interfaces.TableCellLoadOptions.shadingColor
-      - word.Word.Interfaces.TableCellLoadOptions.value
-      - word.Word.Interfaces.TableCellLoadOptions.verticalAlignment
-      - word.Word.Interfaces.TableCellLoadOptions.width
-  - uid: word.Word.Interfaces.TableCellLoadOptions.$all
+      - 'word!Word.Interfaces.TableCellLoadOptions#$all:member'
+      - 'word!Word.Interfaces.TableCellLoadOptions#body:member'
+      - 'word!Word.Interfaces.TableCellLoadOptions#cellIndex:member'
+      - 'word!Word.Interfaces.TableCellLoadOptions#columnWidth:member'
+      - 'word!Word.Interfaces.TableCellLoadOptions#horizontalAlignment:member'
+      - 'word!Word.Interfaces.TableCellLoadOptions#parentRow:member'
+      - 'word!Word.Interfaces.TableCellLoadOptions#parentTable:member'
+      - 'word!Word.Interfaces.TableCellLoadOptions#rowIndex:member'
+      - 'word!Word.Interfaces.TableCellLoadOptions#shadingColor:member'
+      - 'word!Word.Interfaces.TableCellLoadOptions#value:member'
+      - 'word!Word.Interfaces.TableCellLoadOptions#verticalAlignment:member'
+      - 'word!Word.Interfaces.TableCellLoadOptions#width:member'
+  - uid: 'word!Word.Interfaces.TableCellLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -35,7 +35,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableCellLoadOptions.body
+  - uid: 'word!Word.Interfaces.TableCellLoadOptions#body:member'
     summary: |-
       Gets the body object of the cell.
 
@@ -49,8 +49,8 @@ items:
       content: 'body?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.BodyLoadOptions
-  - uid: word.Word.Interfaces.TableCellLoadOptions.cellIndex
+          - 'word!Word.Interfaces.BodyLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.TableCellLoadOptions#cellIndex:member'
     summary: |-
       Gets the index of the cell in its row. Read-only.
 
@@ -65,7 +65,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableCellLoadOptions.columnWidth
+  - uid: 'word!Word.Interfaces.TableCellLoadOptions#columnWidth:member'
     summary: |-
       Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
 
@@ -80,7 +80,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableCellLoadOptions.horizontalAlignment
+  - uid: 'word!Word.Interfaces.TableCellLoadOptions#horizontalAlignment:member'
     summary: |-
       Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
 
@@ -95,7 +95,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableCellLoadOptions.parentRow
+  - uid: 'word!Word.Interfaces.TableCellLoadOptions#parentRow:member'
     summary: |-
       Gets the parent row of the cell.
 
@@ -109,8 +109,8 @@ items:
       content: 'parentRow?: Word.Interfaces.TableRowLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableRowLoadOptions
-  - uid: word.Word.Interfaces.TableCellLoadOptions.parentTable
+          - 'word!Word.Interfaces.TableRowLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.TableCellLoadOptions#parentTable:member'
     summary: |-
       Gets the parent table of the cell.
 
@@ -124,8 +124,8 @@ items:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableLoadOptions
-  - uid: word.Word.Interfaces.TableCellLoadOptions.rowIndex
+          - 'word!Word.Interfaces.TableLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.TableCellLoadOptions#rowIndex:member'
     summary: |-
       Gets the index of the cell's row in the table. Read-only.
 
@@ -140,7 +140,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableCellLoadOptions.shadingColor
+  - uid: 'word!Word.Interfaces.TableCellLoadOptions#shadingColor:member'
     summary: |-
       Gets or sets the shading color of the cell. Color is specified in "\#RRGGBB" format or by using the color name.
 
@@ -155,7 +155,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableCellLoadOptions.value
+  - uid: 'word!Word.Interfaces.TableCellLoadOptions#value:member'
     summary: |-
       Gets and sets the text of the cell.
 
@@ -170,7 +170,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableCellLoadOptions.verticalAlignment
+  - uid: 'word!Word.Interfaces.TableCellLoadOptions#verticalAlignment:member'
     summary: |-
       Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
 
@@ -185,7 +185,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableCellLoadOptions.width
+  - uid: 'word!Word.Interfaces.TableCellLoadOptions#width:member'
     summary: |-
       Gets the width of the cell in points. Read-only.
 
@@ -200,3 +200,10 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
+    name: Word.Interfaces.BodyLoadOptions
+  - uid: 'word!Word.Interfaces.TableRowLoadOptions:interface'
+    name: Word.Interfaces.TableRowLoadOptions
+  - uid: 'word!Word.Interfaces.TableLoadOptions:interface'
+    name: Word.Interfaces.TableLoadOptions

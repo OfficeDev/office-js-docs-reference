@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.AddinCommands.Event
+  - uid: 'office!Office.AddinCommands.Event:interface'
     summary: >-
       The event object is passed as a parameter to add-in functions invoked by UI-less command buttons. The object
       allows the add-in to identify which button was clicked and to signal the host that it has completed its
@@ -22,11 +22,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.AddinCommands.Event.completed
-      - office.Office.AddinCommands.Event.source
-  - uid: office.Office.AddinCommands.Event.completed
+      - 'office!Office.AddinCommands.Event#completed:member(1)'
+      - 'office!Office.AddinCommands.Event#source:member'
+  - uid: 'office!Office.AddinCommands.Event#completed:member(1)'
     summary: >-
       Indicates that the add-in has completed processing and will automatically be closed.
 
@@ -111,8 +111,8 @@ items:
         - id: options
           description: Optional. An object that specifies behavior options for when the event is completed.
           type:
-            - office.Office.AddinCommands.EventCompletedOptions
-  - uid: office.Office.AddinCommands.Event.source
+            - 'office!Office.AddinCommands.EventCompletedOptions:interface'
+  - uid: 'office!Office.AddinCommands.Event#source:member'
     summary: Information about the control that triggered calling this function.
     remarks: >-
       This property is only supported in Outlook in [requirement
@@ -207,4 +207,9 @@ items:
       content: 'source:Source;'
       return:
         type:
-          - office.Office.AddinCommands.Source
+          - 'office!Office.AddinCommands.Source:interface'
+references:
+  - uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
+    name: EventCompletedOptions
+  - uid: 'office!Office.AddinCommands.Source:interface'
+    name: Source

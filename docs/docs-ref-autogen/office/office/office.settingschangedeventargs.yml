@@ -1,12 +1,12 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.SettingsChangedEventArgs
+  - uid: 'office!Office.SettingsChangedEventArgs:interface'
     summary: >-
       Provides information about the settings that raised the settingsChanged event.
 
 
       To add an event handler for the settingsChanged event, use the addHandlerAsync method of the
-      [Office.Settings](xref:office.Office.Settings) object.
+      [Office.Settings](xref:office!Office.Settings:interface) object.
 
 
       The settingsChanged event fires only when your add-in's script calls the Settings.saveAsync method to persist the
@@ -27,14 +27,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.SettingsChangedEventArgs.settings
-      - office.Office.SettingsChangedEventArgs.type
-  - uid: office.Office.SettingsChangedEventArgs.settings
+      - 'office!Office.SettingsChangedEventArgs#settings:member'
+      - 'office!Office.SettingsChangedEventArgs#type:member'
+  - uid: 'office!Office.SettingsChangedEventArgs#settings:member'
     summary: >-
-      Gets an [Office.Settings](xref:office.Office.Settings) object that represents the settings that raised the
-      settingsChanged event.
+      Gets an [Office.Settings](xref:office!Office.Settings:interface) object that represents the settings that raised
+      the settingsChanged event.
     name: settings
     fullName: settings
     langs:
@@ -44,11 +44,11 @@ items:
       content: 'settings: Settings;'
       return:
         type:
-          - office.Office.Settings
-  - uid: office.Office.SettingsChangedEventArgs.type
+          - 'office!Office.Settings:interface'
+  - uid: 'office!Office.SettingsChangedEventArgs#type:member'
     summary: >-
-      Get an [Office.EventType](xref:office.Office.EventType) enumeration value that identifies the kind of event that
-      was raised.
+      Get an [Office.EventType](xref:office!Office.EventType:enum) enumeration value that identifies the kind of event
+      that was raised.
     name: type
     fullName: type
     langs:
@@ -58,4 +58,9 @@ items:
       content: 'type: EventType;'
       return:
         type:
-          - office.Office.EventType
+          - 'office!Office.EventType:enum'
+references:
+  - uid: 'office!Office.Settings:interface'
+    name: Settings
+  - uid: 'office!Office.EventType:enum'
+    name: EventType

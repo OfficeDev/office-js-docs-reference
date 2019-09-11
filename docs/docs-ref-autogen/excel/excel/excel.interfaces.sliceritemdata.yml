@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.SlicerItemData
+  - uid: 'excel!Excel.Interfaces.SlicerItemData:interface'
     summary: An interface describing the data returned by calling "slicerItem.toJSON()".
     name: Excel.Interfaces.SlicerItemData
     fullName: Excel.Interfaces.SlicerItemData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.SlicerItemData.hasData
-      - excel.Excel.Interfaces.SlicerItemData.isSelected
-      - excel.Excel.Interfaces.SlicerItemData.key
-      - excel.Excel.Interfaces.SlicerItemData.name
-  - uid: excel.Excel.Interfaces.SlicerItemData.hasData
+      - 'excel!Excel.Interfaces.SlicerItemData#hasData:member'
+      - 'excel!Excel.Interfaces.SlicerItemData#isSelected:member'
+      - 'excel!Excel.Interfaces.SlicerItemData#key:member'
+      - 'excel!Excel.Interfaces.SlicerItemData#name:member'
+  - uid: 'excel!Excel.Interfaces.SlicerItemData#hasData:member'
     summary: >-
       True if the slicer item has data.
 
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerItemData.isSelected
+  - uid: 'excel!Excel.Interfaces.SlicerItemData#isSelected:member'
     summary: >-
       True if the slicer item is selected. Setting this value will not clear other SlicerItems' selected state. By
       default, if the slicer item is the only one selected, when it is deselected, all items will be selected.
@@ -50,7 +50,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerItemData.key
+  - uid: 'excel!Excel.Interfaces.SlicerItemData#key:member'
     summary: >-
       Represents the unique value representing the slicer item.
 
@@ -68,7 +68,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.SlicerItemData.name
+  - uid: 'excel!Excel.Interfaces.SlicerItemData#name:member'
     summary: >-
       Represents the title displayed in the UI.
 

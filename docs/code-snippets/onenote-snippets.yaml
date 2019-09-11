@@ -1,4 +1,4 @@
-OneNote.Application.getActiveNotebook:
+OneNote.Application#getActiveNotebook:member(1):
   - |-
     OneNote.run(function (context) {
             
@@ -25,7 +25,7 @@ OneNote.Application.getActiveNotebook:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Application.getActiveNotebookOrNull:
+OneNote.Application#getActiveNotebookOrNull:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -53,7 +53,7 @@ OneNote.Application.getActiveNotebookOrNull:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Application.getActiveOutline:
+OneNote.Application#getActiveOutline:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -77,7 +77,7 @@ OneNote.Application.getActiveOutline:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Application.getActiveOutlineOrNull:
+OneNote.Application#getActiveOutlineOrNull:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -102,7 +102,7 @@ OneNote.Application.getActiveOutlineOrNull:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Application.getActivePage:
+OneNote.Application#getActivePage:member(1):
   - |-
     OneNote.run(function (context) {
             
@@ -129,7 +129,7 @@ OneNote.Application.getActivePage:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Application.getActivePageOrNull:
+OneNote.Application#getActivePageOrNull:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -157,7 +157,7 @@ OneNote.Application.getActivePageOrNull:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Application.getActiveSection:
+OneNote.Application#getActiveSection:member(1):
   - |-
     OneNote.run(function (context) {
             
@@ -184,7 +184,7 @@ OneNote.Application.getActiveSection:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Application.getActiveSectionOrNull:
+OneNote.Application#getActiveSectionOrNull:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -211,7 +211,7 @@ OneNote.Application.getActiveSectionOrNull:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Application.navigateToPage:
+OneNote.Application#navigateToPage:member(1):
   - |-
     OneNote.run(function (context) {
             
@@ -242,7 +242,7 @@ OneNote.Application.navigateToPage:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Application.navigateToPageWithClientUrl:
+OneNote.Application#navigateToPageWithClientUrl:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -273,7 +273,7 @@ OneNote.Application.navigateToPageWithClientUrl:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.FloatingInk.load_1:
+OneNote.FloatingInk#load:member(2):
   - |-
     OneNote.run(function(context) {
     
@@ -312,7 +312,7 @@ OneNote.FloatingInk.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.Image.getBase64Image:
+OneNote.Image#getBase64Image:member(1):
   - |-
     
     var image = null;
@@ -346,7 +346,7 @@ OneNote.Image.getBase64Image:
                 console.log(imageString);
             });
     });
-OneNote.Image.load_1:
+OneNote.Image#load:member(2):
   - |-
     OneNote.run(function(ctx){
         // Get the current outline.         
@@ -461,7 +461,7 @@ OneNote.Image.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.Image.ocrData:
+OneNote.Image#ocrData:member:
   - |-
     var image = null;
     
@@ -499,7 +499,7 @@ OneNote.Image.ocrData:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.InkAnalysis.load_1:
+OneNote.InkAnalysis#load:member(2):
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -521,7 +521,7 @@ OneNote.InkAnalysis.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.InkAnalysisLine.load_1:
+OneNote.InkAnalysisLine#load:member(2):
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -548,7 +548,7 @@ OneNote.InkAnalysisLine.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.InkAnalysisParagraph.load_1:
+OneNote.InkAnalysisParagraph#load:member(2):
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -578,7 +578,7 @@ OneNote.InkAnalysisParagraph.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.InkAnalysisWord.load_1:
+OneNote.InkAnalysisWord#load:member(2):
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -614,7 +614,7 @@ OneNote.InkAnalysisWord.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.Notebook.addSection:
+OneNote.Notebook#addSection:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -639,7 +639,7 @@ OneNote.Notebook.addSection:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.Notebook.addSectionGroup:
+OneNote.Notebook#addSectionGroup:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -664,7 +664,7 @@ OneNote.Notebook.addSectionGroup:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.Notebook.getRestApiId:
+OneNote.Notebook#getRestApiId:member(1):
   - |-
     OneNote.run(function(ctx){
         // Get the current notebook.         
@@ -681,7 +681,7 @@ OneNote.Notebook.getRestApiId:
                 // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
-OneNote.Notebook.load_1:
+OneNote.Notebook#load:member(2):
   - |-
     OneNote.run(function (context) {
             
@@ -802,7 +802,7 @@ OneNote.Notebook.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });   
-OneNote.NotebookCollection.getByName:
+OneNote.NotebookCollection#getByName:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -832,7 +832,7 @@ OneNote.NotebookCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.NotebookCollection.load_1:
+OneNote.NotebookCollection#load:member(2):
   - |-
     OneNote.run(function (context) {
     
@@ -864,7 +864,7 @@ OneNote.NotebookCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Outline.appendHtml:
+OneNote.Outline#appendHtml:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -899,7 +899,7 @@ OneNote.Outline.appendHtml:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Outline.appendTable:
+OneNote.Outline#appendTable:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -933,7 +933,7 @@ OneNote.Outline.appendTable:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Page.addOutline:
+OneNote.Page#addOutline:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -968,7 +968,7 @@ OneNote.Page.addOutline:
                 }
             });
     });
-OneNote.Page.copyToSection:
+OneNote.Page#copyToSection:member(1):
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -1004,7 +1004,7 @@ OneNote.Page.copyToSection:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Page.getRestApiId:
+OneNote.Page#getRestApiId:member(1):
   - |-
     OneNote.run(function(ctx){
         // Get the current page.         
@@ -1021,7 +1021,7 @@ OneNote.Page.getRestApiId:
                 // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
-OneNote.Page.insertPageAsSibling_1:
+OneNote.Page#insertPageAsSibling:member(2):
   - |-
     OneNote.run(function (context) {
     
@@ -1046,7 +1046,7 @@ OneNote.Page.insertPageAsSibling_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Page.load_1:
+OneNote.Page#load:member(2):
   - |-
     OneNote.run(function (context) {
     
@@ -1131,7 +1131,7 @@ OneNote.Page.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.PageCollection.getByTitle:
+OneNote.PageCollection#getByTitle:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -1170,7 +1170,7 @@ OneNote.PageCollection.getByTitle:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.PageCollection.load_1:
+OneNote.PageCollection#load:member(2):
   - |-
     OneNote.run(function (context) {
         
@@ -1197,7 +1197,7 @@ OneNote.PageCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.PageContent.delete:
+OneNote.PageContent#delete:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -1222,7 +1222,7 @@ OneNote.PageContent.delete:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.PageContentCollection.getItemAt:
+OneNote.PageContentCollection#getItemAt:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -1244,7 +1244,7 @@ OneNote.PageContentCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.PageContentCollection.load_1:
+OneNote.PageContentCollection#load:member(2):
   - |-
     OneNote.run(function (context) {
     
@@ -1295,7 +1295,7 @@ OneNote.PageContentCollection.load_1:
                   return Promise.resolve(outlines);
            });
     });
-OneNote.Paragraph.delete:
+OneNote.Paragraph#delete:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -1330,7 +1330,7 @@ OneNote.Paragraph.delete:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Paragraph.insertHtmlAsSibling:
+OneNote.Paragraph#insertHtmlAsSibling:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -1364,7 +1364,7 @@ OneNote.Paragraph.insertHtmlAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Paragraph.insertImageAsSibling:
+OneNote.Paragraph#insertImageAsSibling:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -1398,7 +1398,7 @@ OneNote.Paragraph.insertImageAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Paragraph.insertRichTextAsSibling:
+OneNote.Paragraph#insertRichTextAsSibling:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -1432,7 +1432,7 @@ OneNote.Paragraph.insertRichTextAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.Paragraph.load_1:
+OneNote.Paragraph#load:member(2):
   - |-
     OneNote.run(function (context) {
     
@@ -1499,7 +1499,7 @@ OneNote.Paragraph.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.ParagraphCollection.getItemAt:
+OneNote.ParagraphCollection#getItemAt:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -1531,7 +1531,7 @@ OneNote.ParagraphCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.ParagraphCollection.load_1:
+OneNote.ParagraphCollection#load:member(2):
   - |-
     OneNote.run(function (context) {
     
@@ -1619,7 +1619,7 @@ OneNote.ParagraphCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.RichText.load_1:
+OneNote.RichText#load:member(2):
   - |-
     OneNote.run(function (context) {
     
@@ -1678,7 +1678,7 @@ OneNote.RichText.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.Section.addPage:
+OneNote.Section#addPage:member(1):
   - |-
     OneNote.run(function (context) {
                 
@@ -1705,7 +1705,7 @@ OneNote.Section.addPage:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Section.copyToNotebook:
+OneNote.Section#copyToNotebook:member(1):
   - |-
     OneNote.run(function (context) {
         var app = context.application;
@@ -1734,7 +1734,7 @@ OneNote.Section.copyToNotebook:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Section.copyToSectionGroup:
+OneNote.Section#copyToSectionGroup:member(1):
   - |-
     OneNote.run(function (ctx) {
         var app = ctx.application;
@@ -1764,7 +1764,7 @@ OneNote.Section.copyToSectionGroup:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Section.insertSectionAsSibling_1:
+OneNote.Section#insertSectionAsSibling:member(2):
   - |-
     OneNote.run(function (context) {
                 
@@ -1790,7 +1790,7 @@ OneNote.Section.insertSectionAsSibling_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Section.getRestApiId:
+OneNote.Section#getRestApiId:member(1):
   - |-
     OneNote.run(function(ctx){
         // Get the current section.         
@@ -1807,7 +1807,7 @@ OneNote.Section.getRestApiId:
                 // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
-OneNote.Section.load_1:
+OneNote.Section#load:member(2):
   - |-
     OneNote.run(function (context) {
             
@@ -1876,7 +1876,7 @@ OneNote.Section.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.SectionCollection.getByName:
+OneNote.SectionCollection#getByName:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -1910,7 +1910,7 @@ OneNote.SectionCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.SectionCollection.load_1:
+OneNote.SectionCollection#load:member(2):
   - |-
     OneNote.run(function (context) {
     
@@ -1942,7 +1942,7 @@ OneNote.SectionCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.SectionGroup.addSection:
+OneNote.SectionGroup#addSection:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -1972,7 +1972,7 @@ OneNote.SectionGroup.addSection:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.SectionGroup.addSectionGroup:
+OneNote.SectionGroup#addSectionGroup:member(1):
   - |-
     OneNote.run(function (context) {
         var sectionGroup;
@@ -2009,7 +2009,7 @@ OneNote.SectionGroup.addSectionGroup:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.SectionGroup.load_1:
+OneNote.SectionGroup#load:member(2):
   - |-
     OneNote.run(function (context) {
             
@@ -2120,7 +2120,7 @@ OneNote.SectionGroup.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.SectionGroupCollection.getByName:
+OneNote.SectionGroupCollection#getByName:member(1):
   - |-
     OneNote.run(function (context) {
     
@@ -2154,7 +2154,7 @@ OneNote.SectionGroupCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.SectionGroupCollection.load_1:
+OneNote.SectionGroupCollection#load:member(2):
   - |-
     OneNote.run(function (context) {
     
@@ -2183,7 +2183,7 @@ OneNote.SectionGroupCollection.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Table.appendColumn:
+OneNote.Table#appendColumn:member(1):
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -2213,7 +2213,7 @@ OneNote.Table.appendColumn:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Table.appendRow:
+OneNote.Table#appendRow:member(1):
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -2243,7 +2243,7 @@ OneNote.Table.appendRow:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Table.getCell:
+OneNote.Table#getCell:member(1):
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -2273,7 +2273,7 @@ OneNote.Table.getCell:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Table.insertColumn:
+OneNote.Table#insertColumn:member(1):
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -2303,7 +2303,7 @@ OneNote.Table.insertColumn:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Table.insertRow:
+OneNote.Table#insertRow:member(1):
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -2333,7 +2333,7 @@ OneNote.Table.insertRow:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Table.load_1:
+OneNote.Table#load:member(2):
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -2406,7 +2406,7 @@ OneNote.Table.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.TableCell.appendHtml:
+OneNote.TableCell#appendHtml:member(1):
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -2437,7 +2437,7 @@ OneNote.TableCell.appendHtml:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.TableCell.appendRichText:
+OneNote.TableCell#appendRichText:member(1):
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -2469,7 +2469,7 @@ OneNote.TableCell.appendRichText:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.TableCell.load_1:
+OneNote.TableCell#load:member(2):
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -2550,7 +2550,7 @@ OneNote.TableCell.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.TableRow.insertRowAsSibling:
+OneNote.TableRow#insertRowAsSibling:member(1):
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -2588,7 +2588,7 @@ OneNote.TableRow.insertRowAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.TableRow.load_1:
+OneNote.TableRow#load:member(2):
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;

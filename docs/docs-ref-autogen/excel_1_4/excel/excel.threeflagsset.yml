@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ThreeFlagsSet
+  - uid: 'excel!Excel.ThreeFlagsSet:interface'
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ThreeFlagsSet
     fullName: Excel.ThreeFlagsSet
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ThreeFlagsSet.greenFlag
-      - excel.Excel.ThreeFlagsSet.redFlag
-      - excel.Excel.ThreeFlagsSet.yellowFlag
-  - uid: excel.Excel.ThreeFlagsSet.greenFlag
+      - 'excel!Excel.ThreeFlagsSet#greenFlag:member'
+      - 'excel!Excel.ThreeFlagsSet#redFlag:member'
+      - 'excel!Excel.ThreeFlagsSet#yellowFlag:member'
+  - uid: 'excel!Excel.ThreeFlagsSet#greenFlag:member'
     name: greenFlag
     fullName: greenFlag
     langs:
@@ -22,8 +22,8 @@ items:
       content: 'greenFlag: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.ThreeFlagsSet.redFlag
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeFlagsSet#redFlag:member'
     name: redFlag
     fullName: redFlag
     langs:
@@ -33,8 +33,8 @@ items:
       content: 'redFlag: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.ThreeFlagsSet.yellowFlag
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeFlagsSet#yellowFlag:member'
     name: yellowFlag
     fullName: yellowFlag
     langs:
@@ -44,4 +44,7 @@ items:
       content: 'yellowFlag: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - 'excel!Excel.Icon:interface'
+references:
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon

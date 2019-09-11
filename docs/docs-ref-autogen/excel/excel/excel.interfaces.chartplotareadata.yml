@@ -1,25 +1,25 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartPlotAreaData
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaData:interface'
     summary: An interface describing the data returned by calling "chartPlotArea.toJSON()".
     name: Excel.Interfaces.ChartPlotAreaData
     fullName: Excel.Interfaces.ChartPlotAreaData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartPlotAreaData.format
-      - excel.Excel.Interfaces.ChartPlotAreaData.height
-      - excel.Excel.Interfaces.ChartPlotAreaData.insideHeight
-      - excel.Excel.Interfaces.ChartPlotAreaData.insideLeft
-      - excel.Excel.Interfaces.ChartPlotAreaData.insideTop
-      - excel.Excel.Interfaces.ChartPlotAreaData.insideWidth
-      - excel.Excel.Interfaces.ChartPlotAreaData.left
-      - excel.Excel.Interfaces.ChartPlotAreaData.position
-      - excel.Excel.Interfaces.ChartPlotAreaData.top
-      - excel.Excel.Interfaces.ChartPlotAreaData.width
-  - uid: excel.Excel.Interfaces.ChartPlotAreaData.format
+      - 'excel!Excel.Interfaces.ChartPlotAreaData#format:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaData#height:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaData#insideHeight:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaData#insideLeft:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaData#insideTop:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaData#insideWidth:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaData#left:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaData#position:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaData#top:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaData#width:member'
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaData#format:member'
     summary: |-
       Represents the formatting of a chart plotArea.
 
@@ -33,8 +33,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartPlotAreaFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPlotAreaFormatData
-  - uid: excel.Excel.Interfaces.ChartPlotAreaData.height
+          - 'excel!Excel.Interfaces.ChartPlotAreaFormatData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaData#height:member'
     summary: |-
       Represents the height value of plotArea.
 
@@ -49,7 +49,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartPlotAreaData.insideHeight
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaData#insideHeight:member'
     summary: |-
       Represents the insideHeight value of plotArea.
 
@@ -64,7 +64,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartPlotAreaData.insideLeft
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaData#insideLeft:member'
     summary: |-
       Represents the insideLeft value of plotArea.
 
@@ -79,7 +79,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartPlotAreaData.insideTop
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaData#insideTop:member'
     summary: |-
       Represents the insideTop value of plotArea.
 
@@ -94,7 +94,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartPlotAreaData.insideWidth
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaData#insideWidth:member'
     summary: |-
       Represents the insideWidth value of plotArea.
 
@@ -109,7 +109,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartPlotAreaData.left
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaData#left:member'
     summary: |-
       Represents the left value of plotArea.
 
@@ -124,7 +124,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartPlotAreaData.position
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaData#position:member'
     summary: |-
       Represents the position of plotArea.
 
@@ -138,8 +138,8 @@ items:
       content: 'position?: Excel.ChartPlotAreaPosition | "Automatic" | "Custom";'
       return:
         type:
-          - Excel.ChartPlotAreaPosition | "Automatic" | "Custom"
-  - uid: excel.Excel.Interfaces.ChartPlotAreaData.top
+          - 'excel!Excel.Interfaces.ChartPlotAreaData#position~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaData#top:member'
     summary: |-
       Represents the top value of plotArea.
 
@@ -154,7 +154,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartPlotAreaData.width
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaData#width:member'
     summary: |-
       Represents the width value of plotArea.
 
@@ -169,3 +169,15 @@ items:
       return:
         type:
           - number
+references:
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatData:interface'
+    name: Excel.Interfaces.ChartPlotAreaFormatData
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaData#position~0:complex'
+    name: Excel.ChartPlotAreaPosition | "Automatic" | "Custom"
+    fullName: Excel.ChartPlotAreaPosition | "Automatic" | "Custom"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartPlotAreaPosition:enum'
+        name: Excel.ChartPlotAreaPosition
+        fullName: Excel.ChartPlotAreaPosition
+      - name: ' | "Automatic" | "Custom"'
+        fullName: ' | "Automatic" | "Custom"'

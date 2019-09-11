@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.OfficeExtension.ClientRequestContext
+  - uid: 'office!OfficeExtension.ClientRequestContext:class'
     summary: >-
       An abstract RequestContext object that facilitates requests to the host Office application. The `Excel.run` and
       `Word.run` methods provide a request context.
@@ -9,17 +9,17 @@ items:
     langs:
       - typeScript
     type: class
-    package: office
+    package: office!
     children:
-      - office.OfficeExtension.ClientRequestContext.(constructor)
-      - office.OfficeExtension.ClientRequestContext.debugInfo
-      - office.OfficeExtension.ClientRequestContext.load
-      - office.OfficeExtension.ClientRequestContext.loadRecursive
-      - office.OfficeExtension.ClientRequestContext.requestHeaders
-      - office.OfficeExtension.ClientRequestContext.sync
-      - office.OfficeExtension.ClientRequestContext.trace
-      - office.OfficeExtension.ClientRequestContext.trackedObjects
-  - uid: office.OfficeExtension.ClientRequestContext.(constructor)
+      - 'office!OfficeExtension.ClientRequestContext:constructor(1)'
+      - 'office!OfficeExtension.ClientRequestContext#debugInfo:member'
+      - 'office!OfficeExtension.ClientRequestContext#load:member(1)'
+      - 'office!OfficeExtension.ClientRequestContext#loadRecursive:member(1)'
+      - 'office!OfficeExtension.ClientRequestContext#requestHeaders:member'
+      - 'office!OfficeExtension.ClientRequestContext#sync:member(1)'
+      - 'office!OfficeExtension.ClientRequestContext#trace:member(1)'
+      - 'office!OfficeExtension.ClientRequestContext#trackedObjects:member'
+  - uid: 'office!OfficeExtension.ClientRequestContext:constructor(1)'
     summary: Constructs a new instance of the `ClientRequestContext` class
     name: (constructor)(url)
     fullName: (constructor)(url)
@@ -33,7 +33,7 @@ items:
           description: ''
           type:
             - string
-  - uid: office.OfficeExtension.ClientRequestContext.debugInfo
+  - uid: 'office!OfficeExtension.ClientRequestContext#debugInfo:member'
     summary: Debug information
     name: debugInfo
     fullName: debugInfo
@@ -44,8 +44,8 @@ items:
       content: 'readonly debugInfo: RequestContextDebugInfo;'
       return:
         type:
-          - office.OfficeExtension.RequestContextDebugInfo
-  - uid: office.OfficeExtension.ClientRequestContext.load
+          - 'office!OfficeExtension.RequestContextDebugInfo:interface'
+  - uid: 'office!OfficeExtension.ClientRequestContext#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -64,14 +64,14 @@ items:
         - id: object
           description: The object whose properties are loaded.
           type:
-            - office.OfficeExtension.ClientObject
+            - 'office!OfficeExtension.ClientObject:class'
         - id: option
           description: >-
             A comma-delimited string, or array of strings, that specifies the properties to load, or an
-            [OfficeExtension.LoadOption](xref:office.OfficeExtension.LoadOption) object.
+            [OfficeExtension.LoadOption](xref:office!OfficeExtension.LoadOption:interface) object.
           type:
-            - 'string | string[] | LoadOption'
-  - uid: office.OfficeExtension.ClientRequestContext.loadRecursive
+            - 'office!OfficeExtension.ClientRequestContext#load~0:complex'
+  - uid: 'office!OfficeExtension.ClientRequestContext#loadRecursive:member(1)'
     summary: |-
       Queues up a command to recursively load the specified properties of the object and its navigation properties.
 
@@ -93,18 +93,18 @@ items:
         - id: object
           description: The object to be loaded.
           type:
-            - office.OfficeExtension.ClientObject
+            - 'office!OfficeExtension.ClientObject:class'
         - id: options
           description: >-
             The key-value pairing of load options for the types, such as `{ "Workbook": "worksheets,tables", 
             "Worksheet": "tables",  "Tables": "name" }`
           type:
-            - '{ [typeName: string]: string | string[] | LoadOption }'
+            - 'office!OfficeExtension.ClientRequestContext#loadRecursive~0:complex'
         - id: maxDepth
           description: The maximum recursive depth.
           type:
             - number
-  - uid: office.OfficeExtension.ClientRequestContext.requestHeaders
+  - uid: 'office!OfficeExtension.ClientRequestContext#requestHeaders:member'
     summary: Request headers
     name: requestHeaders
     fullName: requestHeaders
@@ -116,7 +116,7 @@ items:
       return:
         type:
           - '{ [name: string]: string }'
-  - uid: office.OfficeExtension.ClientRequestContext.sync
+  - uid: 'office!OfficeExtension.ClientRequestContext#sync:member(1)'
     summary: >-
       Synchronizes the state between JavaScript proxy objects and the Office document, by executing instructions queued
       on the request context and retrieving properties of loaded Office objects for use in your code. This method
@@ -130,7 +130,7 @@ items:
       content: 'sync<T>(passThroughValue?: T): Promise<T>;'
       return:
         type:
-          - Promise<T>
+          - 'office!OfficeExtension.ClientRequestContext#sync~0:complex'
         description: ''
       parameters:
         - id: passThroughValue
@@ -139,7 +139,7 @@ items:
             - T
       typeParameters:
         - id: T
-  - uid: office.OfficeExtension.ClientRequestContext.trace
+  - uid: 'office!OfficeExtension.ClientRequestContext#trace:member(1)'
     summary: >-
       Adds a trace message to the queue. If the promise returned by `context.sync()` is rejected due to an error, this
       adds a ".traceMessages" array to the OfficeExtension.Error object, containing all trace messages that were
@@ -160,7 +160,7 @@ items:
           description: ''
           type:
             - string
-  - uid: office.OfficeExtension.ClientRequestContext.trackedObjects
+  - uid: 'office!OfficeExtension.ClientRequestContext#trackedObjects:member'
     summary: Collection of objects that are tracked for automatic adjustments based on surrounding changes in the document.
     name: trackedObjects
     fullName: trackedObjects
@@ -171,4 +171,40 @@ items:
       content: 'trackedObjects: TrackedObjects;'
       return:
         type:
-          - office.OfficeExtension.TrackedObjects
+          - 'office!OfficeExtension.TrackedObjects:class'
+references:
+  - uid: 'office!OfficeExtension.RequestContextDebugInfo:interface'
+    name: RequestContextDebugInfo
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: ClientObject
+  - uid: 'office!OfficeExtension.ClientRequestContext#load~0:complex'
+    name: 'string | string[] | LoadOption'
+    fullName: 'string | string[] | OfficeExtension.LoadOption'
+    spec.typeScript:
+      - name: 'string | string[] | '
+        fullName: 'string | string[] | '
+      - uid: 'office!OfficeExtension.LoadOption:interface'
+        name: LoadOption
+        fullName: OfficeExtension.LoadOption
+  - uid: 'office!OfficeExtension.ClientRequestContext#loadRecursive~0:complex'
+    name: '{ [typeName: string]: string | string[] | LoadOption }'
+    fullName: '{ [typeName: string]: string | string[] | OfficeExtension.LoadOption }'
+    spec.typeScript:
+      - name: '{ [typeName: string]: string | string[] | '
+        fullName: '{ [typeName: string]: string | string[] | '
+      - uid: 'office!OfficeExtension.LoadOption:interface'
+        name: LoadOption
+        fullName: OfficeExtension.LoadOption
+      - name: ' }'
+        fullName: ' }'
+  - uid: 'office!OfficeExtension.ClientRequestContext#sync~0:complex'
+    name: Promise<T>
+    fullName: Promise<T>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <T>
+        fullName: <T>
+  - uid: 'office!OfficeExtension.TrackedObjects:class'
+    name: TrackedObjects

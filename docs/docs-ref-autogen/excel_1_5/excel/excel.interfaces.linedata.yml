@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.LineData
+  - uid: 'excel!Excel.Interfaces.LineData:interface'
     summary: An interface describing the data returned by calling "line.toJSON()".
     name: Excel.Interfaces.LineData
     fullName: Excel.Interfaces.LineData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

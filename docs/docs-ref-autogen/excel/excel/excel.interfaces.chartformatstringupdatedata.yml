@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartFormatStringUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartFormatStringUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartFormatString object, for use in "chartFormatString.set(<!-- -->{ ...
       }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartFormatStringUpdateData.font
-  - uid: excel.Excel.Interfaces.ChartFormatStringUpdateData.font
+      - 'excel!Excel.Interfaces.ChartFormatStringUpdateData#font:member'
+  - uid: 'excel!Excel.Interfaces.ChartFormatStringUpdateData#font:member'
     summary: |-
       Represents the font attributes, such as font name, font size, color, etc. of chart characters object.
 
@@ -26,4 +26,7 @@ items:
       content: 'font?: Excel.Interfaces.ChartFontUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartFontUpdateData
+          - 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
+    name: Excel.Interfaces.ChartFontUpdateData

@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.SelectionData
+  - uid: 'visio!Visio.Interfaces.SelectionData:interface'
     summary: An interface describing the data returned by calling "selection.toJSON()".
     name: Visio.Interfaces.SelectionData
     fullName: Visio.Interfaces.SelectionData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.SelectionData.shapes
-  - uid: visio.Visio.Interfaces.SelectionData.shapes
+      - 'visio!Visio.Interfaces.SelectionData#shapes:member'
+  - uid: 'visio!Visio.Interfaces.SelectionData#shapes:member'
     summary: |-
       Gets the Shapes of the Selection. Read-only.
 
@@ -24,4 +24,14 @@ items:
       content: 'shapes?: Visio.Interfaces.ShapeData[];'
       return:
         type:
-          - 'Visio.Interfaces.ShapeData[]'
+          - 'visio!Visio.Interfaces.SelectionData#shapes~0:complex'
+references:
+  - uid: 'visio!Visio.Interfaces.SelectionData#shapes~0:complex'
+    name: 'Visio.Interfaces.ShapeData[]'
+    fullName: 'Visio.Interfaces.ShapeData[]'
+    spec.typeScript:
+      - uid: 'visio!Visio.Interfaces.ShapeData:interface'
+        name: Visio.Interfaces.ShapeData
+        fullName: Visio.Interfaces.ShapeData
+      - name: '[]'
+        fullName: '[]'

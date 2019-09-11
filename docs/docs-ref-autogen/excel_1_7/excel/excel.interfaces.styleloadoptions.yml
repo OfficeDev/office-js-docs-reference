@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.StyleLoadOptions
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions:interface'
     summary: |-
       An object encapsulating a style's format and other properties.
 
@@ -10,31 +10,31 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.StyleLoadOptions.$all
-      - excel.Excel.Interfaces.StyleLoadOptions.borders
-      - excel.Excel.Interfaces.StyleLoadOptions.builtIn
-      - excel.Excel.Interfaces.StyleLoadOptions.fill
-      - excel.Excel.Interfaces.StyleLoadOptions.font
-      - excel.Excel.Interfaces.StyleLoadOptions.formulaHidden
-      - excel.Excel.Interfaces.StyleLoadOptions.horizontalAlignment
-      - excel.Excel.Interfaces.StyleLoadOptions.includeAlignment
-      - excel.Excel.Interfaces.StyleLoadOptions.includeBorder
-      - excel.Excel.Interfaces.StyleLoadOptions.includeFont
-      - excel.Excel.Interfaces.StyleLoadOptions.includeNumber
-      - excel.Excel.Interfaces.StyleLoadOptions.includePatterns
-      - excel.Excel.Interfaces.StyleLoadOptions.includeProtection
-      - excel.Excel.Interfaces.StyleLoadOptions.indentLevel
-      - excel.Excel.Interfaces.StyleLoadOptions.locked
-      - excel.Excel.Interfaces.StyleLoadOptions.name
-      - excel.Excel.Interfaces.StyleLoadOptions.numberFormat
-      - excel.Excel.Interfaces.StyleLoadOptions.numberFormatLocal
-      - excel.Excel.Interfaces.StyleLoadOptions.readingOrder
-      - excel.Excel.Interfaces.StyleLoadOptions.shrinkToFit
-      - excel.Excel.Interfaces.StyleLoadOptions.verticalAlignment
-      - excel.Excel.Interfaces.StyleLoadOptions.wrapText
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.$all
+      - 'excel!Excel.Interfaces.StyleLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#borders:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#builtIn:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#fill:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#font:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#formulaHidden:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#horizontalAlignment:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#includeAlignment:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#includeBorder:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#includeFont:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#includeNumber:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#includePatterns:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#includeProtection:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#indentLevel:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#locked:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#numberFormat:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#numberFormatLocal:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#readingOrder:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#shrinkToFit:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#verticalAlignment:member'
+      - 'excel!Excel.Interfaces.StyleLoadOptions#wrapText:member'
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.borders
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#borders:member'
     summary: |-
       A Border collection of four Border objects that represent the style of the four borders.
 
@@ -59,8 +59,8 @@ items:
       content: 'borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeBorderCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.builtIn
+          - 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#builtIn:member'
     summary: |-
       Indicates if the style is a built-in style.
 
@@ -75,7 +75,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.fill
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#fill:member'
     summary: |-
       The Fill of the style.
 
@@ -89,8 +89,8 @@ items:
       content: 'fill?: Excel.Interfaces.RangeFillLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFillLoadOptions
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.font
+          - 'excel!Excel.Interfaces.RangeFillLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#font:member'
     summary: |-
       A Font object that represents the font of the style.
 
@@ -104,8 +104,8 @@ items:
       content: 'font?: Excel.Interfaces.RangeFontLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFontLoadOptions
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.formulaHidden
+          - 'excel!Excel.Interfaces.RangeFontLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#formulaHidden:member'
     summary: |-
       Indicates if the formula will be hidden when the worksheet is protected.
 
@@ -120,7 +120,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.horizontalAlignment
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#horizontalAlignment:member'
     summary: |-
       Represents the horizontal alignment for the style. See Excel.HorizontalAlignment for details.
 
@@ -135,7 +135,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.includeAlignment
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#includeAlignment:member'
     summary: >-
       Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and
       TextOrientation properties.
@@ -152,7 +152,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.includeBorder
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#includeBorder:member'
     summary: |-
       Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
 
@@ -167,7 +167,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.includeFont
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#includeFont:member'
     summary: >-
       Indicates if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size,
       Strikethrough, Subscript, Superscript, and Underline font properties.
@@ -184,7 +184,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.includeNumber
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#includeNumber:member'
     summary: |-
       Indicates if the style includes the NumberFormat property.
 
@@ -199,7 +199,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.includePatterns
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#includePatterns:member'
     summary: >-
       Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and
       PatternColorIndex interior properties.
@@ -216,7 +216,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.includeProtection
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#includeProtection:member'
     summary: |-
       Indicates if the style includes the FormulaHidden and Locked protection properties.
 
@@ -231,7 +231,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.indentLevel
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#indentLevel:member'
     summary: |-
       An integer from 0 to 250 that indicates the indent level for the style.
 
@@ -246,7 +246,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.locked
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#locked:member'
     summary: |-
       Indicates if the object is locked when the worksheet is protected.
 
@@ -261,7 +261,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#name:member'
     summary: |-
       The name of the style.
 
@@ -276,7 +276,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.numberFormat
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#numberFormat:member'
     summary: |-
       The format code of the number format for the style.
 
@@ -291,7 +291,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.numberFormatLocal
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#numberFormatLocal:member'
     summary: |-
       The localized format code of the number format for the style.
 
@@ -306,7 +306,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.readingOrder
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#readingOrder:member'
     summary: |-
       The reading order for the style.
 
@@ -321,7 +321,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.shrinkToFit
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#shrinkToFit:member'
     summary: |-
       Indicates if text automatically shrinks to fit in the available column width.
 
@@ -336,7 +336,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.verticalAlignment
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#verticalAlignment:member'
     summary: |-
       Represents the vertical alignment for the style. See Excel.VerticalAlignment for details.
 
@@ -351,7 +351,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleLoadOptions.wrapText
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions#wrapText:member'
     summary: |-
       Indicates if Microsoft Excel wraps the text in the object.
 
@@ -366,3 +366,10 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface'
+    name: Excel.Interfaces.RangeBorderCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.RangeFillLoadOptions:interface'
+    name: Excel.Interfaces.RangeFillLoadOptions
+  - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions:interface'
+    name: Excel.Interfaces.RangeFontLoadOptions

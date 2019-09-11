@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.PageLayoutMarginOptions
+  - uid: 'excel!Excel.PageLayoutMarginOptions:interface'
     summary: |-
       Represents the options in page layout margins.
 
@@ -10,15 +10,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.PageLayoutMarginOptions.bottom
-      - excel.Excel.PageLayoutMarginOptions.footer
-      - excel.Excel.PageLayoutMarginOptions.header
-      - excel.Excel.PageLayoutMarginOptions.left
-      - excel.Excel.PageLayoutMarginOptions.right
-      - excel.Excel.PageLayoutMarginOptions.top
-  - uid: excel.Excel.PageLayoutMarginOptions.bottom
+      - 'excel!Excel.PageLayoutMarginOptions#bottom:member'
+      - 'excel!Excel.PageLayoutMarginOptions#footer:member'
+      - 'excel!Excel.PageLayoutMarginOptions#header:member'
+      - 'excel!Excel.PageLayoutMarginOptions#left:member'
+      - 'excel!Excel.PageLayoutMarginOptions#right:member'
+      - 'excel!Excel.PageLayoutMarginOptions#top:member'
+  - uid: 'excel!Excel.PageLayoutMarginOptions#bottom:member'
     summary: |-
       Represents the page layout bottom margin in the unit specified to use for printing.
 
@@ -33,7 +33,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.PageLayoutMarginOptions.footer
+  - uid: 'excel!Excel.PageLayoutMarginOptions#footer:member'
     summary: |-
       Represents the page layout footer margin in the unit specified to use for printing.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.PageLayoutMarginOptions.header
+  - uid: 'excel!Excel.PageLayoutMarginOptions#header:member'
     summary: |-
       Represents the page layout header margin in the unit specified to use for printing.
 
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.PageLayoutMarginOptions.left
+  - uid: 'excel!Excel.PageLayoutMarginOptions#left:member'
     summary: |-
       Represents the page layout left margin in the unit specified to use for printing.
 
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.PageLayoutMarginOptions.right
+  - uid: 'excel!Excel.PageLayoutMarginOptions#right:member'
     summary: |-
       Represents the page layout right margin in the unit specified to use for printing.
 
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.PageLayoutMarginOptions.top
+  - uid: 'excel!Excel.PageLayoutMarginOptions#top:member'
     summary: |-
       Represents the page layout top margin in the unit specified to use for printing.
 

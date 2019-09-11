@@ -1,47 +1,47 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeData
+  - uid: 'excel!Excel.Interfaces.RangeData:interface'
     summary: An interface describing the data returned by calling "range.toJSON()".
     name: Excel.Interfaces.RangeData
     fullName: Excel.Interfaces.RangeData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RangeData.address
-      - excel.Excel.Interfaces.RangeData.addressLocal
-      - excel.Excel.Interfaces.RangeData.cellCount
-      - excel.Excel.Interfaces.RangeData.columnCount
-      - excel.Excel.Interfaces.RangeData.columnHidden
-      - excel.Excel.Interfaces.RangeData.columnIndex
-      - excel.Excel.Interfaces.RangeData.conditionalFormats
-      - excel.Excel.Interfaces.RangeData.dataValidation
-      - excel.Excel.Interfaces.RangeData.format
-      - excel.Excel.Interfaces.RangeData.formulas
-      - excel.Excel.Interfaces.RangeData.formulasLocal
-      - excel.Excel.Interfaces.RangeData.formulasR1C1
-      - excel.Excel.Interfaces.RangeData.hasSpill
-      - excel.Excel.Interfaces.RangeData.height
-      - excel.Excel.Interfaces.RangeData.hidden
-      - excel.Excel.Interfaces.RangeData.hyperlink
-      - excel.Excel.Interfaces.RangeData.isEntireColumn
-      - excel.Excel.Interfaces.RangeData.isEntireRow
-      - excel.Excel.Interfaces.RangeData.left
-      - excel.Excel.Interfaces.RangeData.linkedDataTypeState
-      - excel.Excel.Interfaces.RangeData.numberFormat
-      - excel.Excel.Interfaces.RangeData.numberFormatLocal
-      - excel.Excel.Interfaces.RangeData.rowCount
-      - excel.Excel.Interfaces.RangeData.rowHidden
-      - excel.Excel.Interfaces.RangeData.rowIndex
-      - excel.Excel.Interfaces.RangeData.savedAsArray
-      - excel.Excel.Interfaces.RangeData.style
-      - excel.Excel.Interfaces.RangeData.text
-      - excel.Excel.Interfaces.RangeData.top
-      - excel.Excel.Interfaces.RangeData.values
-      - excel.Excel.Interfaces.RangeData.valueTypes
-      - excel.Excel.Interfaces.RangeData.width
-  - uid: excel.Excel.Interfaces.RangeData.address
+      - 'excel!Excel.Interfaces.RangeData#address:member'
+      - 'excel!Excel.Interfaces.RangeData#addressLocal:member'
+      - 'excel!Excel.Interfaces.RangeData#cellCount:member'
+      - 'excel!Excel.Interfaces.RangeData#columnCount:member'
+      - 'excel!Excel.Interfaces.RangeData#columnHidden:member'
+      - 'excel!Excel.Interfaces.RangeData#columnIndex:member'
+      - 'excel!Excel.Interfaces.RangeData#conditionalFormats:member'
+      - 'excel!Excel.Interfaces.RangeData#dataValidation:member'
+      - 'excel!Excel.Interfaces.RangeData#format:member'
+      - 'excel!Excel.Interfaces.RangeData#formulas:member'
+      - 'excel!Excel.Interfaces.RangeData#formulasLocal:member'
+      - 'excel!Excel.Interfaces.RangeData#formulasR1C1:member'
+      - 'excel!Excel.Interfaces.RangeData#hasSpill:member'
+      - 'excel!Excel.Interfaces.RangeData#height:member'
+      - 'excel!Excel.Interfaces.RangeData#hidden:member'
+      - 'excel!Excel.Interfaces.RangeData#hyperlink:member'
+      - 'excel!Excel.Interfaces.RangeData#isEntireColumn:member'
+      - 'excel!Excel.Interfaces.RangeData#isEntireRow:member'
+      - 'excel!Excel.Interfaces.RangeData#left:member'
+      - 'excel!Excel.Interfaces.RangeData#linkedDataTypeState:member'
+      - 'excel!Excel.Interfaces.RangeData#numberFormat:member'
+      - 'excel!Excel.Interfaces.RangeData#numberFormatLocal:member'
+      - 'excel!Excel.Interfaces.RangeData#rowCount:member'
+      - 'excel!Excel.Interfaces.RangeData#rowHidden:member'
+      - 'excel!Excel.Interfaces.RangeData#rowIndex:member'
+      - 'excel!Excel.Interfaces.RangeData#savedAsArray:member'
+      - 'excel!Excel.Interfaces.RangeData#style:member'
+      - 'excel!Excel.Interfaces.RangeData#text:member'
+      - 'excel!Excel.Interfaces.RangeData#top:member'
+      - 'excel!Excel.Interfaces.RangeData#values:member'
+      - 'excel!Excel.Interfaces.RangeData#valueTypes:member'
+      - 'excel!Excel.Interfaces.RangeData#width:member'
+  - uid: 'excel!Excel.Interfaces.RangeData#address:member'
     summary: >-
       Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4").
       Read-only.
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.RangeData.addressLocal
+  - uid: 'excel!Excel.Interfaces.RangeData#addressLocal:member'
     summary: |-
       Represents range reference for the specified range in the language of the user. Read-only.
 
@@ -73,7 +73,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.RangeData.cellCount
+  - uid: 'excel!Excel.Interfaces.RangeData#cellCount:member'
     summary: |-
       Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
 
@@ -88,7 +88,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeData.columnCount
+  - uid: 'excel!Excel.Interfaces.RangeData#columnCount:member'
     summary: |-
       Represents the total number of columns in the range. Read-only.
 
@@ -103,7 +103,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeData.columnHidden
+  - uid: 'excel!Excel.Interfaces.RangeData#columnHidden:member'
     summary: |-
       Represents if all columns of the current range are hidden.
 
@@ -118,7 +118,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeData.columnIndex
+  - uid: 'excel!Excel.Interfaces.RangeData#columnIndex:member'
     summary: |-
       Represents the column number of the first cell in the range. Zero-indexed. Read-only.
 
@@ -133,7 +133,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeData.conditionalFormats
+  - uid: 'excel!Excel.Interfaces.RangeData#conditionalFormats:member'
     summary: |-
       Collection of ConditionalFormats that intersect the range. Read-only.
 
@@ -147,8 +147,8 @@ items:
       content: 'conditionalFormats?: Excel.Interfaces.ConditionalFormatData[];'
       return:
         type:
-          - 'Excel.Interfaces.ConditionalFormatData[]'
-  - uid: excel.Excel.Interfaces.RangeData.dataValidation
+          - 'excel!Excel.Interfaces.RangeData#conditionalFormats~0:complex'
+  - uid: 'excel!Excel.Interfaces.RangeData#dataValidation:member'
     summary: |-
       Returns a data validation object.
 
@@ -162,8 +162,8 @@ items:
       content: 'dataValidation?: Excel.Interfaces.DataValidationData;'
       return:
         type:
-          - excel.Excel.Interfaces.DataValidationData
-  - uid: excel.Excel.Interfaces.RangeData.format
+          - 'excel!Excel.Interfaces.DataValidationData:interface'
+  - uid: 'excel!Excel.Interfaces.RangeData#format:member'
     summary: >-
       Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
       Read-only.
@@ -179,8 +179,8 @@ items:
       content: 'format?: Excel.Interfaces.RangeFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFormatData
-  - uid: excel.Excel.Interfaces.RangeData.formulas
+          - 'excel!Excel.Interfaces.RangeFormatData:interface'
+  - uid: 'excel!Excel.Interfaces.RangeData#formulas:member'
     summary: >-
       Represents the formula in A1-style notation. When setting formulas to a range, the value argument can be either a
       single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all
@@ -198,7 +198,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeData.formulasLocal
+  - uid: 'excel!Excel.Interfaces.RangeData#formulasLocal:member'
     summary: >-
       Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
       English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. When setting formulas to a range, the
@@ -217,7 +217,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeData.formulasR1C1
+  - uid: 'excel!Excel.Interfaces.RangeData#formulasR1C1:member'
     summary: >-
       Represents the formula in R1C1-style notation. When setting formulas to a range, the value argument can be either
       a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all
@@ -235,7 +235,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeData.hasSpill
+  - uid: 'excel!Excel.Interfaces.RangeData#hasSpill:member'
     summary: >-
       Represents if all cells have a spill border. Returns true if all cells have a spill border, or false if all cells
       do not have a spill border. Returns null if there are cells both with and without spill borders within the range.
@@ -254,7 +254,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeData.height
+  - uid: 'excel!Excel.Interfaces.RangeData#height:member'
     summary: >-
       Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
 
@@ -272,7 +272,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeData.hidden
+  - uid: 'excel!Excel.Interfaces.RangeData#hidden:member'
     summary: |-
       Represents if all cells of the current range are hidden. Read-only.
 
@@ -287,7 +287,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeData.hyperlink
+  - uid: 'excel!Excel.Interfaces.RangeData#hyperlink:member'
     summary: |-
       Represents the hyperlink for the current range.
 
@@ -301,8 +301,8 @@ items:
       content: 'hyperlink?: Excel.RangeHyperlink;'
       return:
         type:
-          - excel.Excel.RangeHyperlink
-  - uid: excel.Excel.Interfaces.RangeData.isEntireColumn
+          - 'excel!Excel.RangeHyperlink:interface'
+  - uid: 'excel!Excel.Interfaces.RangeData#isEntireColumn:member'
     summary: |-
       Represents if the current range is an entire column. Read-only.
 
@@ -317,7 +317,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeData.isEntireRow
+  - uid: 'excel!Excel.Interfaces.RangeData#isEntireRow:member'
     summary: |-
       Represents if the current range is an entire row. Read-only.
 
@@ -332,7 +332,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeData.left
+  - uid: 'excel!Excel.Interfaces.RangeData#left:member'
     summary: >-
       Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range.
       Read-only.
@@ -351,7 +351,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeData.linkedDataTypeState
+  - uid: 'excel!Excel.Interfaces.RangeData#linkedDataTypeState:member'
     summary: |-
       Represents the data type state of each cell. Read-only.
 
@@ -365,8 +365,8 @@ items:
       content: 'linkedDataTypeState?: Excel.LinkedDataTypeState[][];'
       return:
         type:
-          - 'Excel.LinkedDataTypeState[][]'
-  - uid: excel.Excel.Interfaces.RangeData.numberFormat
+          - 'excel!Excel.Interfaces.RangeData#linkedDataTypeState~0:complex'
+  - uid: 'excel!Excel.Interfaces.RangeData#numberFormat:member'
     summary: >-
       Represents Excel's number format code for the given range. When setting number format to a range, the value
       argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it
@@ -384,7 +384,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeData.numberFormatLocal
+  - uid: 'excel!Excel.Interfaces.RangeData#numberFormatLocal:member'
     summary: >-
       Represents Excel's number format code for the given range, based on the language settings of the user. When
       setting number format local to a range, the value argument can be either a single value (string) or a
@@ -404,7 +404,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeData.rowCount
+  - uid: 'excel!Excel.Interfaces.RangeData#rowCount:member'
     summary: |-
       Returns the total number of rows in the range. Read-only.
 
@@ -419,7 +419,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeData.rowHidden
+  - uid: 'excel!Excel.Interfaces.RangeData#rowHidden:member'
     summary: |-
       Represents if all rows of the current range are hidden.
 
@@ -434,7 +434,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeData.rowIndex
+  - uid: 'excel!Excel.Interfaces.RangeData#rowIndex:member'
     summary: |-
       Returns the row number of the first cell in the range. Zero-indexed. Read-only.
 
@@ -449,7 +449,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeData.savedAsArray
+  - uid: 'excel!Excel.Interfaces.RangeData#savedAsArray:member'
     summary: >-
       Represents if ALL the cells would be saved as an array formula. Returns true if ALL cells would be saved as an
       array, or false if ALL cells would NOT be saved as an array formula. Returns null if there is a mixture of cells
@@ -469,7 +469,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeData.style
+  - uid: 'excel!Excel.Interfaces.RangeData#style:member'
     summary: >-
       Represents the style of the current range. If the styles of the cells are inconsistent, null will be returned. For
       custom styles, the style name will be returned. For built-in styles, a string representing a value in the
@@ -487,7 +487,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.RangeData.text
+  - uid: 'excel!Excel.Interfaces.RangeData#text:member'
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
       that happens in Excel UI will not affect the text value returned by the API. Read-only.
@@ -504,7 +504,7 @@ items:
       return:
         type:
           - 'string[][]'
-  - uid: excel.Excel.Interfaces.RangeData.top
+  - uid: 'excel!Excel.Interfaces.RangeData#top:member'
     summary: >-
       Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
 
@@ -522,7 +522,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeData.values
+  - uid: 'excel!Excel.Interfaces.RangeData#values:member'
     summary: >-
       Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
       Cells that contain an error will return the error string. When setting values to a range, the value argument can
@@ -541,7 +541,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeData.valueTypes
+  - uid: 'excel!Excel.Interfaces.RangeData#valueTypes:member'
     summary: |-
       Represents the type of data of each cell. Read-only.
 
@@ -555,8 +555,8 @@ items:
       content: 'valueTypes?: Excel.RangeValueType[][];'
       return:
         type:
-          - 'Excel.RangeValueType[][]'
-  - uid: excel.Excel.Interfaces.RangeData.width
+          - 'excel!Excel.Interfaces.RangeData#valueTypes~0:complex'
+  - uid: 'excel!Excel.Interfaces.RangeData#width:member'
     summary: >-
       Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
 
@@ -574,3 +574,37 @@ items:
       return:
         type:
           - number
+references:
+  - uid: 'excel!Excel.Interfaces.RangeData#conditionalFormats~0:complex'
+    name: 'Excel.Interfaces.ConditionalFormatData[]'
+    fullName: 'Excel.Interfaces.ConditionalFormatData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ConditionalFormatData:interface'
+        name: Excel.Interfaces.ConditionalFormatData
+        fullName: Excel.Interfaces.ConditionalFormatData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.DataValidationData:interface'
+    name: Excel.Interfaces.DataValidationData
+  - uid: 'excel!Excel.Interfaces.RangeFormatData:interface'
+    name: Excel.Interfaces.RangeFormatData
+  - uid: 'excel!Excel.RangeHyperlink:interface'
+    name: Excel.RangeHyperlink
+  - uid: 'excel!Excel.Interfaces.RangeData#linkedDataTypeState~0:complex'
+    name: 'Excel.LinkedDataTypeState[][]'
+    fullName: 'Excel.LinkedDataTypeState[][]'
+    spec.typeScript:
+      - uid: 'excel!Excel.LinkedDataTypeState:enum'
+        name: Excel.LinkedDataTypeState
+        fullName: Excel.LinkedDataTypeState
+      - name: '[][]'
+        fullName: '[][]'
+  - uid: 'excel!Excel.Interfaces.RangeData#valueTypes~0:complex'
+    name: 'Excel.RangeValueType[][]'
+    fullName: 'Excel.RangeValueType[][]'
+    spec.typeScript:
+      - uid: 'excel!Excel.RangeValueType:enum'
+        name: Excel.RangeValueType
+        fullName: Excel.RangeValueType
+      - name: '[][]'
+        fullName: '[][]'

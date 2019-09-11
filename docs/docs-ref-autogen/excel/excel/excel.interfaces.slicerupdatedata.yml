@@ -1,25 +1,25 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.SlicerUpdateData
+  - uid: 'excel!Excel.Interfaces.SlicerUpdateData:interface'
     summary: 'An interface for updating data on the Slicer object, for use in "slicer.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.SlicerUpdateData
     fullName: Excel.Interfaces.SlicerUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.SlicerUpdateData.caption
-      - excel.Excel.Interfaces.SlicerUpdateData.height
-      - excel.Excel.Interfaces.SlicerUpdateData.left
-      - excel.Excel.Interfaces.SlicerUpdateData.name
-      - excel.Excel.Interfaces.SlicerUpdateData.nameInFormula
-      - excel.Excel.Interfaces.SlicerUpdateData.sortBy
-      - excel.Excel.Interfaces.SlicerUpdateData.style
-      - excel.Excel.Interfaces.SlicerUpdateData.top
-      - excel.Excel.Interfaces.SlicerUpdateData.width
-      - excel.Excel.Interfaces.SlicerUpdateData.worksheet
-  - uid: excel.Excel.Interfaces.SlicerUpdateData.caption
+      - 'excel!Excel.Interfaces.SlicerUpdateData#caption:member'
+      - 'excel!Excel.Interfaces.SlicerUpdateData#height:member'
+      - 'excel!Excel.Interfaces.SlicerUpdateData#left:member'
+      - 'excel!Excel.Interfaces.SlicerUpdateData#name:member'
+      - 'excel!Excel.Interfaces.SlicerUpdateData#nameInFormula:member'
+      - 'excel!Excel.Interfaces.SlicerUpdateData#sortBy:member'
+      - 'excel!Excel.Interfaces.SlicerUpdateData#style:member'
+      - 'excel!Excel.Interfaces.SlicerUpdateData#top:member'
+      - 'excel!Excel.Interfaces.SlicerUpdateData#width:member'
+      - 'excel!Excel.Interfaces.SlicerUpdateData#worksheet:member'
+  - uid: 'excel!Excel.Interfaces.SlicerUpdateData#caption:member'
     summary: >-
       Represents the caption of slicer.
 
@@ -37,7 +37,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.SlicerUpdateData.height
+  - uid: 'excel!Excel.Interfaces.SlicerUpdateData#height:member'
     summary: >-
       Represents the height, in points, of the slicer. Throws an invalid argument exception when set with negative value
       or zero as input.
@@ -56,7 +56,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.SlicerUpdateData.left
+  - uid: 'excel!Excel.Interfaces.SlicerUpdateData#left:member'
     summary: >-
       Represents the distance, in points, from the left side of the slicer to the left of the worksheet. Throws an
       invalid argument exception when set with negative value as input.
@@ -75,7 +75,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.SlicerUpdateData.name
+  - uid: 'excel!Excel.Interfaces.SlicerUpdateData#name:member'
     summary: >-
       Represents the name of slicer.
 
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.SlicerUpdateData.nameInFormula
+  - uid: 'excel!Excel.Interfaces.SlicerUpdateData#nameInFormula:member'
     summary: >-
       Represents the slicer name used in the formula.
 
@@ -111,7 +111,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.SlicerUpdateData.sortBy
+  - uid: 'excel!Excel.Interfaces.SlicerUpdateData#sortBy:member'
     summary: >-
       Represents the sort order of the items in the slicer. Possible values are: DataSourceOrder, Ascending, Descending.
 
@@ -128,8 +128,8 @@ items:
       content: 'sortBy?: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";'
       return:
         type:
-          - Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"
-  - uid: excel.Excel.Interfaces.SlicerUpdateData.style
+          - 'excel!Excel.Interfaces.SlicerUpdateData#sortBy~0:complex'
+  - uid: 'excel!Excel.Interfaces.SlicerUpdateData#style:member'
     summary: >-
       Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through
       "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
@@ -149,7 +149,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.SlicerUpdateData.top
+  - uid: 'excel!Excel.Interfaces.SlicerUpdateData#top:member'
     summary: >-
       Represents the distance, in points, from the top edge of the slicer to the top of the worksheet. Throws an invalid
       argument exception when set with negative value as input.
@@ -168,7 +168,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.SlicerUpdateData.width
+  - uid: 'excel!Excel.Interfaces.SlicerUpdateData#width:member'
     summary: >-
       Represents the width, in points, of the slicer. Throws an invalid argument exception when set with negative value
       or zero as input.
@@ -187,7 +187,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.SlicerUpdateData.worksheet
+  - uid: 'excel!Excel.Interfaces.SlicerUpdateData#worksheet:member'
     summary: >-
       Represents the worksheet containing the slicer.
 
@@ -204,4 +204,16 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetUpdateData
+          - 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.SlicerUpdateData#sortBy~0:complex'
+    name: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"
+    fullName: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"
+    spec.typeScript:
+      - uid: 'excel!Excel.SlicerSortType:enum'
+        name: Excel.SlicerSortType
+        fullName: Excel.SlicerSortType
+      - name: ' | "DataSourceOrder" | "Ascending" | "Descending"'
+        fullName: ' | "DataSourceOrder" | "Ascending" | "Descending"'
+  - uid: 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
+    name: Excel.Interfaces.WorksheetUpdateData

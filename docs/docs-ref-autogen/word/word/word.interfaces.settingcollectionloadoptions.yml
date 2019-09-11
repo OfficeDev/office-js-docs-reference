@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.SettingCollectionLoadOptions
+  - uid: 'word!Word.Interfaces.SettingCollectionLoadOptions:interface'
     summary: >-
-      Contains the collection of [Word.Setting](xref:word.Word.Setting) objects.
+      Contains the collection of [Word.Setting](xref:word!Word.Setting:class) objects.
 
 
       \[ [API set: WordApi BETA (PREVIEW
@@ -13,12 +13,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.SettingCollectionLoadOptions.$all
-      - word.Word.Interfaces.SettingCollectionLoadOptions.key
-      - word.Word.Interfaces.SettingCollectionLoadOptions.value
-  - uid: word.Word.Interfaces.SettingCollectionLoadOptions.$all
+      - 'word!Word.Interfaces.SettingCollectionLoadOptions#$all:member'
+      - 'word!Word.Interfaces.SettingCollectionLoadOptions#key:member'
+      - 'word!Word.Interfaces.SettingCollectionLoadOptions#value:member'
+  - uid: 'word!Word.Interfaces.SettingCollectionLoadOptions#$all:member'
     isPreview: true
     name: $all
     fullName: $all
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.SettingCollectionLoadOptions.key
+  - uid: 'word!Word.Interfaces.SettingCollectionLoadOptions#key:member'
     summary: >-
       For EACH ITEM in the collection: Gets the key of the setting. Read only.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.SettingCollectionLoadOptions.value
+  - uid: 'word!Word.Interfaces.SettingCollectionLoadOptions#value:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the value of the setting.
 

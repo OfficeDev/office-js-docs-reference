@@ -1,4 +1,4 @@
-Visio.Application.showBorders:
+Visio.Application#showBorders:member:
   - |-
     Visio.run(session, function (ctx) {
         var application = ctx.document.application;
@@ -11,7 +11,7 @@ Visio.Application.showBorders:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.Comment.load:
+Visio.Comment#load:member(1):
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -34,7 +34,7 @@ Visio.Comment.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.CommentCollection.load:
+Visio.CommentCollection#load:member(1):
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -57,7 +57,7 @@ Visio.CommentCollection.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.DataRefreshCompleteEventArgs:
+Visio.DataRefreshCompleteEventArgs:interface:
   - |-
     Visio.run(session, function (ctx) {
         var document1 = ctx.document;
@@ -75,7 +75,7 @@ Visio.DataRefreshCompleteEventArgs:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.Document.getActivePage:
+Visio.Document#getActivePage:member(1):
   - |-
     Visio.run(session, function (ctx) {
         var document = ctx.document;
@@ -90,7 +90,7 @@ Visio.Document.getActivePage:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.Document.setActivePage:
+Visio.Document#setActivePage:member(1):
   - |-
     Visio.run(session, function (ctx) {
         var document = ctx.document;
@@ -103,7 +103,7 @@ Visio.Document.setActivePage:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.Document.startDataRefresh:
+Visio.Document#startDataRefresh:member(1):
   - |-
     Visio.run(session, function (ctx) {
         var document = ctx.document;
@@ -115,7 +115,7 @@ Visio.Document.startDataRefresh:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.Document.pages:
+Visio.Document#pages:member:
   - |-
     Visio.run(session, function (ctx) {
         var pages = ctx.document.pages;
@@ -129,7 +129,7 @@ Visio.Document.pages:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.DocumentLoadCompleteEventArgs:
+Visio.DocumentLoadCompleteEventArgs:interface:
   - |-
     Visio.run(session, function (ctx) {
         var document1 = ctx.document;
@@ -147,7 +147,7 @@ Visio.DocumentLoadCompleteEventArgs:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.DocumentView.disableHyperlinks:
+Visio.DocumentView#disableHyperlinks:member:
   - |-
     Visio.run(session, function (ctx) {
         var documentView = ctx.document.view;
@@ -159,7 +159,7 @@ Visio.DocumentView.disableHyperlinks:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.Highlight.color:
+Visio.Highlight#color:member:
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -173,7 +173,7 @@ Visio.Highlight.color:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.Hyperlink.load:
+Visio.Hyperlink#load:member(1):
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -192,7 +192,7 @@ Visio.Hyperlink.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.HyperlinkCollection.load:
+Visio.HyperlinkCollection#load:member(1):
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -214,7 +214,7 @@ Visio.HyperlinkCollection.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.PageCollection.getItem:
+Visio.PageCollection#getItem:member(1):
   - |-
     Visio.run(session, function (ctx) {
         var pageName = 'Page-1';
@@ -227,7 +227,7 @@ Visio.PageCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.PageLoadCompleteEventArgs:
+Visio.PageLoadCompleteEventArgs:interface:
   - |-
     Visio.run(session, function (ctx) {
         var document1= ctx.document;
@@ -245,7 +245,7 @@ Visio.PageLoadCompleteEventArgs:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.PageView.centerViewportOnShape:
+Visio.PageView#centerViewportOnShape:member(1):
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -258,7 +258,7 @@ Visio.PageView.centerViewportOnShape:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.PageView.zoom:
+Visio.PageView#zoom:member:
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -270,7 +270,7 @@ Visio.PageView.zoom:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.SelectionChangedEventArgs:
+Visio.SelectionChangedEventArgs:interface:
   - |-
     var eventResult; // Global Variable to store the EventHandlerResult returned on attaching handler.
     
@@ -315,7 +315,7 @@ Visio.SelectionChangedEventArgs:
             }
         });
     }
-Visio.Shape.load_1:
+Visio.Shape#load:member(2):
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -346,7 +346,7 @@ Visio.Shape.load_1:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.ShapeCollection.getCount:
+Visio.ShapeCollection#getCount:member(1):
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -360,7 +360,7 @@ Visio.ShapeCollection.getCount:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.ShapeDataItem.load:
+Visio.ShapeDataItem#load:member(1):
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -377,7 +377,7 @@ Visio.ShapeDataItem.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.ShapeDataItemCollection.load:
+Visio.ShapeDataItemCollection#load:member(1):
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -396,7 +396,7 @@ Visio.ShapeDataItemCollection.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.ShapeMouseEnterEventArgs:
+Visio.ShapeMouseEnterEventArgs:interface:
   - |-
     Visio.run(session, function (ctx) {
         var document1= ctx.document;
@@ -413,7 +413,7 @@ Visio.ShapeMouseEnterEventArgs:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.ShapeMouseLeaveEventArgs:
+Visio.ShapeMouseLeaveEventArgs:interface:
   - |-
     Visio.run(session, function (ctx) {
         var document1= ctx.document;
@@ -430,7 +430,7 @@ Visio.ShapeMouseLeaveEventArgs:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.ShapeView.highlight:
+Visio.ShapeView#highlight:member:
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -443,7 +443,7 @@ Visio.ShapeView.highlight:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.ShapeView.addOverlay:
+Visio.ShapeView#addOverlay:member(1):
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -456,7 +456,7 @@ Visio.ShapeView.addOverlay:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.ShapeView.removeOverlay:
+Visio.ShapeView#removeOverlay:member(1):
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();

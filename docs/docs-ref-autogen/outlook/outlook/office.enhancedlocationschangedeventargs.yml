@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.EnhancedLocationsChangedEventArgs
+  - uid: 'outlook!Office.EnhancedLocationsChangedEventArgs:interface'
     summary: |-
       Provides the current enhanced locations when the `Office.EventType.EnhancedLocationsChanged` event is raised.
 
@@ -11,11 +11,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.EnhancedLocationsChangedEventArgs.enhancedLocations
-      - outlook.Office.EnhancedLocationsChangedEventArgs.type
-  - uid: outlook.Office.EnhancedLocationsChangedEventArgs.enhancedLocations
+      - 'outlook!Office.EnhancedLocationsChangedEventArgs#enhancedLocations:member'
+      - 'outlook!Office.EnhancedLocationsChangedEventArgs#type:member'
+  - uid: 'outlook!Office.EnhancedLocationsChangedEventArgs#enhancedLocations:member'
     summary: |-
       Gets the set of enhanced locations.
 
@@ -30,8 +30,8 @@ items:
       content: 'enhancedLocations: LocationDetails[];'
       return:
         type:
-          - 'LocationDetails[]'
-  - uid: outlook.Office.EnhancedLocationsChangedEventArgs.type
+          - 'outlook!Office.EnhancedLocationsChangedEventArgs#enhancedLocations~0:complex'
+  - uid: 'outlook!Office.EnhancedLocationsChangedEventArgs#type:member'
     summary: |-
       Gets the type of the event. See `Office.EventType` for details.
 
@@ -47,3 +47,13 @@ items:
       return:
         type:
           - '"olkEnhancedLocationsChanged"'
+references:
+  - uid: 'outlook!Office.EnhancedLocationsChangedEventArgs#enhancedLocations~0:complex'
+    name: 'LocationDetails[]'
+    fullName: 'Office.LocationDetails[]'
+    spec.typeScript:
+      - uid: 'outlook!Office.LocationDetails:interface'
+        name: LocationDetails
+        fullName: Office.LocationDetails
+      - name: '[]'
+        fullName: '[]'

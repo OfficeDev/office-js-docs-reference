@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.NotificationMessages
+  - uid: 'outlook!Office.NotificationMessages:interface'
     summary: |-
       The NotificationMessages object is returned as the notificationMessages property of an item.
 
@@ -17,17 +17,17 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.NotificationMessages.addAsync
-      - outlook.Office.NotificationMessages.addAsync_1
-      - outlook.Office.NotificationMessages.getAllAsync
-      - outlook.Office.NotificationMessages.getAllAsync_1
-      - outlook.Office.NotificationMessages.removeAsync
-      - outlook.Office.NotificationMessages.removeAsync_1
-      - outlook.Office.NotificationMessages.replaceAsync
-      - outlook.Office.NotificationMessages.replaceAsync_1
-  - uid: outlook.Office.NotificationMessages.addAsync
+      - 'outlook!Office.NotificationMessages#addAsync:member(1)'
+      - 'outlook!Office.NotificationMessages#addAsync:member(2)'
+      - 'outlook!Office.NotificationMessages#getAllAsync:member(1)'
+      - 'outlook!Office.NotificationMessages#getAllAsync:member(2)'
+      - 'outlook!Office.NotificationMessages#removeAsync:member(1)'
+      - 'outlook!Office.NotificationMessages#removeAsync:member(2)'
+      - 'outlook!Office.NotificationMessages#replaceAsync:member(1)'
+      - 'outlook!Office.NotificationMessages#replaceAsync:member(2)'
+  - uid: 'outlook!Office.NotificationMessages#addAsync:member(1)'
     summary: >-
       Adds a notification to an item.
 
@@ -66,13 +66,13 @@ items:
             A JSON object that contains the notification message to be added to the item. It contains a
             NotificationMessageDetails object.
           type:
-            - outlook.Office.NotificationMessageDetails
+            - 'outlook!Office.NotificationMessageDetails:interface'
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -81,8 +81,8 @@ items:
 
             \[Api set: Mailbox 1.3\]
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.NotificationMessages.addAsync_1
+            - 'outlook!Office.NotificationMessages#addAsync~0:complex'
+  - uid: 'outlook!Office.NotificationMessages#addAsync:member(2)'
     summary: >-
       Adds a notification to an item.
 
@@ -148,7 +148,7 @@ items:
             A JSON object that contains the notification message to be added to the item. It contains a
             NotificationMessageDetails object.
           type:
-            - outlook.Office.NotificationMessageDetails
+            - 'outlook!Office.NotificationMessageDetails:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -157,8 +157,8 @@ items:
 
             \[Api set: Mailbox 1.3\]
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.NotificationMessages.getAllAsync
+            - 'outlook!Office.NotificationMessages#addAsync~1:complex'
+  - uid: 'outlook!Office.NotificationMessages#getAllAsync:member(1)'
     summary: |-
       Returns all keys and messages for an item.
 
@@ -189,15 +189,15 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. The `value` property of the result is an array of
             NotificationMessageDetails objects.
           type:
-            - '(asyncResult: Office.AsyncResult<NotificationMessageDetails[]>) => void'
-  - uid: outlook.Office.NotificationMessages.getAllAsync_1
+            - 'outlook!Office.NotificationMessages#getAllAsync~0:complex'
+  - uid: 'outlook!Office.NotificationMessages#getAllAsync:member(2)'
     summary: |-
       Returns all keys and messages for an item.
 
@@ -248,8 +248,8 @@ items:
             parameter of type Office.AsyncResult. The `value` property of the result is an array of
             NotificationMessageDetails objects.
           type:
-            - '(asyncResult: Office.AsyncResult<NotificationMessageDetails[]>) => void'
-  - uid: outlook.Office.NotificationMessages.removeAsync
+            - 'outlook!Office.NotificationMessages#getAllAsync~1:complex'
+  - uid: 'outlook!Office.NotificationMessages#removeAsync:member(1)'
     summary: |-
       Removes a notification message for an item.
 
@@ -284,14 +284,14 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.NotificationMessages.removeAsync_1
+            - 'outlook!Office.NotificationMessages#removeAsync~0:complex'
+  - uid: 'outlook!Office.NotificationMessages#removeAsync:member(2)'
     summary: |-
       Removes a notification message for an item.
 
@@ -336,8 +336,8 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.NotificationMessages.replaceAsync
+            - 'outlook!Office.NotificationMessages#removeAsync~1:complex'
+  - uid: 'outlook!Office.NotificationMessages#replaceAsync:member(1)'
     summary: |-
       Replaces a notification message that has a given key with another message.
 
@@ -374,20 +374,20 @@ items:
             A JSON object that contains the new notification message to replace the existing message. It contains a
             NotificationMessageDetails object.
           type:
-            - outlook.Office.NotificationMessageDetails
+            - 'outlook!Office.NotificationMessageDetails:interface'
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.NotificationMessages.replaceAsync_1
+            - 'outlook!Office.NotificationMessages#replaceAsync~0:complex'
+  - uid: 'outlook!Office.NotificationMessages#replaceAsync:member(2)'
     summary: |-
       Replaces a notification message that has a given key with another message.
 
@@ -441,10 +441,113 @@ items:
             A JSON object that contains the new notification message to replace the existing message. It contains a
             NotificationMessageDetails object.
           type:
-            - outlook.Office.NotificationMessageDetails
+            - 'outlook!Office.NotificationMessageDetails:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
+            - 'outlook!Office.NotificationMessages#replaceAsync~1:complex'
+references:
+  - uid: 'outlook!Office.NotificationMessageDetails:interface'
+    name: NotificationMessageDetails
+  - uid: 'outlook!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions
+  - uid: 'outlook!Office.NotificationMessages#addAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.NotificationMessages#addAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.NotificationMessages#getAllAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<NotificationMessageDetails[]>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<Office.NotificationMessageDetails[]>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'outlook!Office.NotificationMessageDetails:interface'
+        name: NotificationMessageDetails
+        fullName: Office.NotificationMessageDetails
+      - name: '[]>) => void'
+        fullName: '[]>) => void'
+  - uid: 'outlook!Office.NotificationMessages#getAllAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<NotificationMessageDetails[]>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<Office.NotificationMessageDetails[]>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'outlook!Office.NotificationMessageDetails:interface'
+        name: NotificationMessageDetails
+        fullName: Office.NotificationMessageDetails
+      - name: '[]>) => void'
+        fullName: '[]>) => void'
+  - uid: 'outlook!Office.NotificationMessages#removeAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.NotificationMessages#removeAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.NotificationMessages#replaceAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.NotificationMessages#replaceAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void

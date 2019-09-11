@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.SlicerStyleCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.SlicerStyleCollectionLoadOptions:interface'
     summary: >-
       Represents a collection of SlicerStyle objects.
 
@@ -13,12 +13,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.SlicerStyleCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.SlicerStyleCollectionLoadOptions.name
-      - excel.Excel.Interfaces.SlicerStyleCollectionLoadOptions.readOnly
-  - uid: excel.Excel.Interfaces.SlicerStyleCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.SlicerStyleCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.SlicerStyleCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.SlicerStyleCollectionLoadOptions#readOnly:member'
+  - uid: 'excel!Excel.Interfaces.SlicerStyleCollectionLoadOptions#$all:member'
     isPreview: true
     name: $all
     fullName: $all
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerStyleCollectionLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.SlicerStyleCollectionLoadOptions#name:member'
     summary: >-
       For EACH ITEM in the collection: Gets the name of the SlicerStyle.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerStyleCollectionLoadOptions.readOnly
+  - uid: 'excel!Excel.Interfaces.SlicerStyleCollectionLoadOptions#readOnly:member'
     summary: >-
       For EACH ITEM in the collection: Specifies whether this SlicerStyle object is read-only. Read-only.
 

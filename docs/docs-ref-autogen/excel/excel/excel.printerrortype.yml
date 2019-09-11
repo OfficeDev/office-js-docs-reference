@@ -1,40 +1,40 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.PrintErrorType
+  - uid: 'excel!Excel.PrintErrorType:enum'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.PrintErrorType
     fullName: Excel.PrintErrorType
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.PrintErrorType.asDisplayed
-      - excel.Excel.PrintErrorType.blank
-      - excel.Excel.PrintErrorType.dash
-      - excel.Excel.PrintErrorType.notAvailable
-  - uid: excel.Excel.PrintErrorType.asDisplayed
+      - 'excel!Excel.PrintErrorType.asDisplayed:member'
+      - 'excel!Excel.PrintErrorType.blank:member'
+      - 'excel!Excel.PrintErrorType.dash:member'
+      - 'excel!Excel.PrintErrorType.notAvailable:member'
+  - uid: 'excel!Excel.PrintErrorType.asDisplayed:member'
     name: asDisplayed
     fullName: asDisplayed
     langs:
       - typeScript
     type: field
     numericValue: '"AsDisplayed"'
-  - uid: excel.Excel.PrintErrorType.blank
+  - uid: 'excel!Excel.PrintErrorType.blank:member'
     name: blank
     fullName: blank
     langs:
       - typeScript
     type: field
     numericValue: '"Blank"'
-  - uid: excel.Excel.PrintErrorType.dash
+  - uid: 'excel!Excel.PrintErrorType.dash:member'
     name: dash
     fullName: dash
     langs:
       - typeScript
     type: field
     numericValue: '"Dash"'
-  - uid: excel.Excel.PrintErrorType.notAvailable
+  - uid: 'excel!Excel.PrintErrorType.notAvailable:member'
     name: notAvailable
     fullName: notAvailable
     langs:

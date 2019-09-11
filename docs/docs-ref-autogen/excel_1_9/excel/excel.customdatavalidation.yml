@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CustomDataValidation
+  - uid: 'excel!Excel.CustomDataValidation:interface'
     summary: |-
       Represents the Custom data validation criteria.
 
@@ -10,10 +10,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.CustomDataValidation.formula
-  - uid: excel.Excel.CustomDataValidation.formula
+      - 'excel!Excel.CustomDataValidation#formula:member'
+  - uid: 'excel!Excel.CustomDataValidation#formula:member'
     summary: >-
       A custom data validation formula. This creates special input rules, such as preventing duplicates, or limiting the
       total in a range of cells.

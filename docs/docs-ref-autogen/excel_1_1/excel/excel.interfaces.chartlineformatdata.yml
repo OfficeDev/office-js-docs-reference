@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartLineFormatData
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatData:interface'
     summary: An interface describing the data returned by calling "chartLineFormat.toJSON()".
     name: Excel.Interfaces.ChartLineFormatData
     fullName: Excel.Interfaces.ChartLineFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartLineFormatData.color
-  - uid: excel.Excel.Interfaces.ChartLineFormatData.color
+      - 'excel!Excel.Interfaces.ChartLineFormatData#color:member'
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatData#color:member'
     summary: |-
       HTML color code representing the color of lines in the chart.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CustomConditionalFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.CustomConditionalFormatUpdateData:interface'
     summary: >-
       An interface for updating data on the CustomConditionalFormat object, for use in "customConditionalFormat.set(<!--
       -->{ ... }<!-- -->)".
@@ -9,11 +9,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.CustomConditionalFormatUpdateData.format
-      - excel.Excel.Interfaces.CustomConditionalFormatUpdateData.rule
-  - uid: excel.Excel.Interfaces.CustomConditionalFormatUpdateData.format
+      - 'excel!Excel.Interfaces.CustomConditionalFormatUpdateData#format:member'
+      - 'excel!Excel.Interfaces.CustomConditionalFormatUpdateData#rule:member'
+  - uid: 'excel!Excel.Interfaces.CustomConditionalFormatUpdateData#format:member'
     summary: |-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
 
@@ -27,8 +27,8 @@ items:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeFormatUpdateData
-  - uid: excel.Excel.Interfaces.CustomConditionalFormatUpdateData.rule
+          - 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.CustomConditionalFormatUpdateData#rule:member'
     summary: |-
       Represents the Rule object on this conditional format.
 
@@ -42,4 +42,9 @@ items:
       content: 'rule?: Excel.Interfaces.ConditionalFormatRuleUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalFormatRuleUpdateData
+          - 'excel!Excel.Interfaces.ConditionalFormatRuleUpdateData:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
+    name: Excel.Interfaces.ConditionalRangeFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleUpdateData:interface'
+    name: Excel.Interfaces.ConditionalFormatRuleUpdateData

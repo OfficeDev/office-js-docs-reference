@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TableStyleCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.TableStyleCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the TableStyleCollection object, for use in "tableStyleCollection.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TableStyleCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.TableStyleCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.TableStyleCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.TableStyleCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: Excel.Interfaces.TableStyleData[];'
       return:
         type:
-          - 'Excel.Interfaces.TableStyleData[]'
+          - 'excel!Excel.Interfaces.TableStyleCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.TableStyleCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.TableStyleData[]'
+    fullName: 'Excel.Interfaces.TableStyleData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TableStyleData:interface'
+        name: Excel.Interfaces.TableStyleData
+        fullName: Excel.Interfaces.TableStyleData
+      - name: '[]'
+        fullName: '[]'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartSeriesCollection object, for use in "chartSeriesCollection.set(<!--
       -->{ ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartSeriesCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: Excel.Interfaces.ChartSeriesData[];'
       return:
         type:
-          - 'Excel.Interfaces.ChartSeriesData[]'
+          - 'excel!Excel.Interfaces.ChartSeriesCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.ChartSeriesData[]'
+    fullName: 'Excel.Interfaces.ChartSeriesData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ChartSeriesData:interface'
+        name: Excel.Interfaces.ChartSeriesData
+        fullName: Excel.Interfaces.ChartSeriesData
+      - name: '[]'
+        fullName: '[]'

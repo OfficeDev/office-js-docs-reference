@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.DataValidationAlertStyle
+  - uid: 'excel!Excel.DataValidationAlertStyle:enum'
     summary: |-
       Represents Data validation error alert style. The default is "Stop".
 
@@ -10,26 +10,26 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.DataValidationAlertStyle.information
-      - excel.Excel.DataValidationAlertStyle.stop
-      - excel.Excel.DataValidationAlertStyle.warning
-  - uid: excel.Excel.DataValidationAlertStyle.information
+      - 'excel!Excel.DataValidationAlertStyle.information:member'
+      - 'excel!Excel.DataValidationAlertStyle.stop:member'
+      - 'excel!Excel.DataValidationAlertStyle.warning:member'
+  - uid: 'excel!Excel.DataValidationAlertStyle.information:member'
     name: information
     fullName: information
     langs:
       - typeScript
     type: field
     numericValue: '"Information"'
-  - uid: excel.Excel.DataValidationAlertStyle.stop
+  - uid: 'excel!Excel.DataValidationAlertStyle.stop:member'
     name: stop
     fullName: stop
     langs:
       - typeScript
     type: field
     numericValue: '"Stop"'
-  - uid: excel.Excel.DataValidationAlertStyle.warning
+  - uid: 'excel!Excel.DataValidationAlertStyle.warning:member'
     name: warning
     fullName: warning
     langs:

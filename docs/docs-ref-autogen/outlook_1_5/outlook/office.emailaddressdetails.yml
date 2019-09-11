@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.EmailAddressDetails
+  - uid: 'outlook!Office.EmailAddressDetails:interface'
     summary: |-
       Provides the email properties of the sender or specified recipients of an email message or appointment.
 
@@ -17,13 +17,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.EmailAddressDetails.appointmentResponse
-      - outlook.Office.EmailAddressDetails.displayName
-      - outlook.Office.EmailAddressDetails.emailAddress
-      - outlook.Office.EmailAddressDetails.recipientType
-  - uid: outlook.Office.EmailAddressDetails.appointmentResponse
+      - 'outlook!Office.EmailAddressDetails#appointmentResponse:member'
+      - 'outlook!Office.EmailAddressDetails#displayName:member'
+      - 'outlook!Office.EmailAddressDetails#emailAddress:member'
+      - 'outlook!Office.EmailAddressDetails#recipientType:member'
+  - uid: 'outlook!Office.EmailAddressDetails#appointmentResponse:member'
     summary: >-
       Gets the response that an attendee returned for an appointment. This property applies to only an attendee of an
       appointment, as represented by the optionalAttendees or requiredAttendees property. This property returns
@@ -37,7 +37,7 @@ items:
       content: 'appointmentResponse: MailboxEnums.ResponseType | string;'
       return:
         type:
-          - MailboxEnums.ResponseType | string
+          - 'outlook!Office.EmailAddressDetails#appointmentResponse~0:complex'
         description: |-
 
 
@@ -52,7 +52,7 @@ items:
               console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.appointmentResponse);
           });
           ```
-  - uid: outlook.Office.EmailAddressDetails.displayName
+  - uid: 'outlook!Office.EmailAddressDetails#displayName:member'
     summary: Gets the display name associated with an email address.
     name: displayName
     fullName: displayName
@@ -73,7 +73,7 @@ items:
           var organizerName = Office.context.mailbox.item.organizer.displayName;
           console.log("Organizer: " + organizerName);
           ```
-  - uid: outlook.Office.EmailAddressDetails.emailAddress
+  - uid: 'outlook!Office.EmailAddressDetails#emailAddress:member'
     summary: Gets the SMTP email address.
     name: emailAddress
     fullName: emailAddress
@@ -94,7 +94,7 @@ items:
           var organizerAddress = Office.context.mailbox.item.organizer.emailAddress;
           console.log("Organizer's email address: " + organizerAddress);
           ```
-  - uid: outlook.Office.EmailAddressDetails.recipientType
+  - uid: 'outlook!Office.EmailAddressDetails#recipientType:member'
     summary: Gets the email address type of a recipient.
     name: recipientType
     fullName: recipientType
@@ -105,7 +105,7 @@ items:
       content: 'recipientType: MailboxEnums.RecipientType | string;'
       return:
         type:
-          - MailboxEnums.RecipientType | string
+          - 'outlook!Office.EmailAddressDetails#recipientType~0:complex'
         description: |-
 
 
@@ -118,3 +118,22 @@ items:
               console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.recipientType);
           });
           ```
+references:
+  - uid: 'outlook!Office.EmailAddressDetails#appointmentResponse~0:complex'
+    name: MailboxEnums.ResponseType | string
+    fullName: Office.MailboxEnums.ResponseType | string
+    spec.typeScript:
+      - uid: 'outlook!Office.MailboxEnums.ResponseType:enum'
+        name: MailboxEnums.ResponseType
+        fullName: Office.MailboxEnums.ResponseType
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'outlook!Office.EmailAddressDetails#recipientType~0:complex'
+    name: MailboxEnums.RecipientType | string
+    fullName: Office.MailboxEnums.RecipientType | string
+    spec.typeScript:
+      - uid: 'outlook!Office.MailboxEnums.RecipientType:enum'
+        name: MailboxEnums.RecipientType
+        fullName: Office.MailboxEnums.RecipientType
+      - name: ' | string'
+        fullName: ' | string'

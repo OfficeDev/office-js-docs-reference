@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TimelineStyleCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.TimelineStyleCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the TimelineStyleCollection object, for use in "timelineStyleCollection.set(<!--
       -->{ ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TimelineStyleCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.TimelineStyleCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.TimelineStyleCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.TimelineStyleCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: Excel.Interfaces.TimelineStyleData[];'
       return:
         type:
-          - 'Excel.Interfaces.TimelineStyleData[]'
+          - 'excel!Excel.Interfaces.TimelineStyleCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.TimelineStyleCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.TimelineStyleData[]'
+    fullName: 'Excel.Interfaces.TimelineStyleData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TimelineStyleData:interface'
+        name: Excel.Interfaces.TimelineStyleData
+        fullName: Excel.Interfaces.TimelineStyleData
+      - name: '[]'
+        fullName: '[]'

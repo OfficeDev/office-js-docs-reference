@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Application
+  - uid: 'word!Word.Application:class'
     summary: |-
       Represents the application object.
 
@@ -11,14 +11,14 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: word
+      - 'word!OfficeExtension.ClientObject:class'
+    package: word!
     children:
-      - word.Word.Application.context
-      - word.Word.Application.createDocument
-      - word.Word.Application.newObject
-      - word.Word.Application.toJSON
-  - uid: word.Word.Application.context
+      - 'word!Word.Application#context:member'
+      - 'word!Word.Application#createDocument:member(1)'
+      - 'word!Word.Application.newObject:member(1)'
+      - 'word!Word.Application#toJSON:member(1)'
+  - uid: 'word!Word.Application#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -31,8 +31,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.Application.createDocument
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.Application#createDocument:member(1)'
     summary: |-
       Creates a new document by using an optional base64 encoded .docx file.
 
@@ -46,14 +46,14 @@ items:
       content: 'createDocument(base64File?: string): Word.DocumentCreated;'
       return:
         type:
-          - word.Word.DocumentCreated
+          - 'word!Word.DocumentCreated:class'
         description: ''
       parameters:
         - id: base64File
           description: Optional. The base64 encoded .docx file. The default value is null.
           type:
             - string
-  - uid: word.Word.Application.newObject
+  - uid: 'word!Word.Application.newObject:member(1)'
     summary: Create a new instance of Word.Application object
     name: newObject(context)
     fullName: newObject(context)
@@ -64,14 +64,14 @@ items:
       content: 'static newObject(context: OfficeExtension.ClientRequestContext): Word.Application;'
       return:
         type:
-          - word.Word.Application
+          - 'word!Word.Application:class'
         description: ''
       parameters:
         - id: context
           description: ''
           type:
-            - OfficeExtension.ClientRequestContext
-  - uid: word.Word.Application.toJSON
+            - 'word!OfficeExtension.ClientRequestContext:class'
+  - uid: 'word!Word.Application#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -95,3 +95,14 @@ items:
                         [key: string]: string;
                     }
         description: ''
+references:
+  - uid: 'word!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.DocumentCreated:class'
+    name: Word.DocumentCreated
+  - uid: 'word!Word.Application:class'
+    name: Word.Application
+  - uid: 'word!OfficeExtension.ClientRequestContext:class'
+    name: OfficeExtension.ClientRequestContext

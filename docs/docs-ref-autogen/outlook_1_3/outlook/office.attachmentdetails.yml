@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.AttachmentDetails
+  - uid: 'outlook!Office.AttachmentDetails:interface'
     summary: >-
       Represents an attachment on an item from the server. Read mode only.
 
@@ -54,15 +54,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.AttachmentDetails.attachmentType
-      - outlook.Office.AttachmentDetails.contentType
-      - outlook.Office.AttachmentDetails.id
-      - outlook.Office.AttachmentDetails.isInline
-      - outlook.Office.AttachmentDetails.name
-      - outlook.Office.AttachmentDetails.size
-  - uid: outlook.Office.AttachmentDetails.attachmentType
+      - 'outlook!Office.AttachmentDetails#attachmentType:member'
+      - 'outlook!Office.AttachmentDetails#contentType:member'
+      - 'outlook!Office.AttachmentDetails#id:member'
+      - 'outlook!Office.AttachmentDetails#isInline:member'
+      - 'outlook!Office.AttachmentDetails#name:member'
+      - 'outlook!Office.AttachmentDetails#size:member'
+  - uid: 'outlook!Office.AttachmentDetails#attachmentType:member'
     summary: Gets a value that indicates the type of an attachment.
     name: attachmentType
     fullName: attachmentType
@@ -73,8 +73,8 @@ items:
       content: 'attachmentType: MailboxEnums.AttachmentType | string;'
       return:
         type:
-          - MailboxEnums.AttachmentType | string
-  - uid: outlook.Office.AttachmentDetails.contentType
+          - 'outlook!Office.AttachmentDetails#attachmentType~0:complex'
+  - uid: 'outlook!Office.AttachmentDetails#contentType:member'
     summary: Gets the MIME content type of the attachment.
     name: contentType
     fullName: contentType
@@ -86,7 +86,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.AttachmentDetails.id
+  - uid: 'outlook!Office.AttachmentDetails#id:member'
     summary: Gets the Exchange attachment ID of the attachment.
     name: id
     fullName: id
@@ -98,7 +98,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.AttachmentDetails.isInline
+  - uid: 'outlook!Office.AttachmentDetails#isInline:member'
     summary: Gets a value that indicates whether the attachment should be displayed in the body of the item.
     name: isInline
     fullName: isInline
@@ -110,7 +110,7 @@ items:
       return:
         type:
           - boolean
-  - uid: outlook.Office.AttachmentDetails.name
+  - uid: 'outlook!Office.AttachmentDetails#name:member'
     summary: Gets the name of the attachment.
     name: name
     fullName: name
@@ -122,7 +122,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.AttachmentDetails.size
+  - uid: 'outlook!Office.AttachmentDetails#size:member'
     summary: Gets the size of the attachment in bytes.
     name: size
     fullName: size
@@ -134,3 +134,13 @@ items:
       return:
         type:
           - number
+references:
+  - uid: 'outlook!Office.AttachmentDetails#attachmentType~0:complex'
+    name: MailboxEnums.AttachmentType | string
+    fullName: Office.MailboxEnums.AttachmentType | string
+    spec.typeScript:
+      - uid: 'outlook!Office.MailboxEnums.AttachmentType:enum'
+        name: MailboxEnums.AttachmentType
+        fullName: Office.MailboxEnums.AttachmentType
+      - name: ' | string'
+        fullName: ' | string'

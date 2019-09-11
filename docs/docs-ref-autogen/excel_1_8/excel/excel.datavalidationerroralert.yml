@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.DataValidationErrorAlert
+  - uid: 'excel!Excel.DataValidationErrorAlert:interface'
     summary: |-
       Represents the error alert properties for the data validation.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.DataValidationErrorAlert.message
-      - excel.Excel.DataValidationErrorAlert.showAlert
-      - excel.Excel.DataValidationErrorAlert.style
-      - excel.Excel.DataValidationErrorAlert.title
-  - uid: excel.Excel.DataValidationErrorAlert.message
+      - 'excel!Excel.DataValidationErrorAlert#message:member'
+      - 'excel!Excel.DataValidationErrorAlert#showAlert:member'
+      - 'excel!Excel.DataValidationErrorAlert#style:member'
+      - 'excel!Excel.DataValidationErrorAlert#title:member'
+  - uid: 'excel!Excel.DataValidationErrorAlert#message:member'
     summary: |-
       Represents error alert message.
 
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.DataValidationErrorAlert.showAlert
+  - uid: 'excel!Excel.DataValidationErrorAlert#showAlert:member'
     summary: |-
       Determines whether to show an error alert dialog or not when a user enters invalid data. The default is true.
 
@@ -46,7 +46,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.DataValidationErrorAlert.style
+  - uid: 'excel!Excel.DataValidationErrorAlert#style:member'
     summary: |-
       Represents data validation alert type, please see Excel.DataValidationAlertStyle for details.
 
@@ -60,8 +60,8 @@ items:
       content: 'style: Excel.DataValidationAlertStyle | "Stop" | "Warning" | "Information";'
       return:
         type:
-          - Excel.DataValidationAlertStyle | "Stop" | "Warning" | "Information"
-  - uid: excel.Excel.DataValidationErrorAlert.title
+          - 'excel!Excel.DataValidationErrorAlert#style~0:complex'
+  - uid: 'excel!Excel.DataValidationErrorAlert#title:member'
     summary: |-
       Represents error alert dialog title.
 
@@ -76,3 +76,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'excel!Excel.DataValidationErrorAlert#style~0:complex'
+    name: Excel.DataValidationAlertStyle | "Stop" | "Warning" | "Information"
+    fullName: Excel.DataValidationAlertStyle | "Stop" | "Warning" | "Information"
+    spec.typeScript:
+      - uid: 'excel!Excel.DataValidationAlertStyle:enum'
+        name: Excel.DataValidationAlertStyle
+        fullName: Excel.DataValidationAlertStyle
+      - name: ' | "Stop" | "Warning" | "Information"'
+        fullName: ' | "Stop" | "Warning" | "Information"'

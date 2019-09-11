@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.ShapeMouseEnterEventArgs
+  - uid: 'visio!Visio.ShapeMouseEnterEventArgs:interface'
     summary: |-
       Provides information about the shape that raised the ShapeMouseEnter event.
 
@@ -10,7 +10,7 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     remarks: |-
 
 
@@ -34,9 +34,9 @@ items:
       });
       ```
     children:
-      - visio.Visio.ShapeMouseEnterEventArgs.pageName
-      - visio.Visio.ShapeMouseEnterEventArgs.shapeName
-  - uid: visio.Visio.ShapeMouseEnterEventArgs.pageName
+      - 'visio!Visio.ShapeMouseEnterEventArgs#pageName:member'
+      - 'visio!Visio.ShapeMouseEnterEventArgs#shapeName:member'
+  - uid: 'visio!Visio.ShapeMouseEnterEventArgs#pageName:member'
     summary: |-
       Gets the name of the page which has the shape object that raised the ShapeMouseEnter event.
 
@@ -51,7 +51,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.ShapeMouseEnterEventArgs.shapeName
+  - uid: 'visio!Visio.ShapeMouseEnterEventArgs#shapeName:member'
     summary: |-
       Gets the name of the shape object that raised the ShapeMouseEnter event.
 

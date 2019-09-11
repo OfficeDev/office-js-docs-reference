@@ -1,55 +1,55 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.ErrorCodes
+  - uid: 'visio!Visio.ErrorCodes:enum'
     name: Visio.ErrorCodes
     fullName: Visio.ErrorCodes
     langs:
       - typeScript
     type: enum
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.ErrorCodes.accessDenied
-      - visio.Visio.ErrorCodes.generalException
-      - visio.Visio.ErrorCodes.invalidArgument
-      - visio.Visio.ErrorCodes.itemNotFound
-      - visio.Visio.ErrorCodes.notImplemented
-      - visio.Visio.ErrorCodes.unsupportedOperation
-  - uid: visio.Visio.ErrorCodes.accessDenied
+      - 'visio!Visio.ErrorCodes.accessDenied:member'
+      - 'visio!Visio.ErrorCodes.generalException:member'
+      - 'visio!Visio.ErrorCodes.invalidArgument:member'
+      - 'visio!Visio.ErrorCodes.itemNotFound:member'
+      - 'visio!Visio.ErrorCodes.notImplemented:member'
+      - 'visio!Visio.ErrorCodes.unsupportedOperation:member'
+  - uid: 'visio!Visio.ErrorCodes.accessDenied:member'
     name: accessDenied
     fullName: accessDenied
     langs:
       - typeScript
     type: field
     numericValue: '"AccessDenied"'
-  - uid: visio.Visio.ErrorCodes.generalException
+  - uid: 'visio!Visio.ErrorCodes.generalException:member'
     name: generalException
     fullName: generalException
     langs:
       - typeScript
     type: field
     numericValue: '"GeneralException"'
-  - uid: visio.Visio.ErrorCodes.invalidArgument
+  - uid: 'visio!Visio.ErrorCodes.invalidArgument:member'
     name: invalidArgument
     fullName: invalidArgument
     langs:
       - typeScript
     type: field
     numericValue: '"InvalidArgument"'
-  - uid: visio.Visio.ErrorCodes.itemNotFound
+  - uid: 'visio!Visio.ErrorCodes.itemNotFound:member'
     name: itemNotFound
     fullName: itemNotFound
     langs:
       - typeScript
     type: field
     numericValue: '"ItemNotFound"'
-  - uid: visio.Visio.ErrorCodes.notImplemented
+  - uid: 'visio!Visio.ErrorCodes.notImplemented:member'
     name: notImplemented
     fullName: notImplemented
     langs:
       - typeScript
     type: field
     numericValue: '"NotImplemented"'
-  - uid: visio.Visio.ErrorCodes.unsupportedOperation
+  - uid: 'visio!Visio.ErrorCodes.unsupportedOperation:member'
     name: unsupportedOperation
     fullName: unsupportedOperation
     langs:

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Application
+  - uid: 'onenote!OneNote.Application:class'
     summary: >-
       Represents the top-level object that contains all globally addressable OneNote objects such as notebooks, the
       active notebook, and the active section.
@@ -13,31 +13,31 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: onenote
+      - 'onenote!OfficeExtension.ClientObject:class'
+    package: onenote!
     children:
-      - onenote.OneNote.Application.context
-      - onenote.OneNote.Application.getActiveNotebook
-      - onenote.OneNote.Application.getActiveNotebookOrNull
-      - onenote.OneNote.Application.getActiveOutline
-      - onenote.OneNote.Application.getActiveOutlineOrNull
-      - onenote.OneNote.Application.getActivePage
-      - onenote.OneNote.Application.getActivePageOrNull
-      - onenote.OneNote.Application.getActiveParagraph
-      - onenote.OneNote.Application.getActiveParagraphOrNull
-      - onenote.OneNote.Application.getActiveSection
-      - onenote.OneNote.Application.getActiveSectionOrNull
-      - onenote.OneNote.Application.getWindowSize
-      - onenote.OneNote.Application.insertHtmlAtCurrentPosition
-      - onenote.OneNote.Application.isViewingDeletedNotes
-      - onenote.OneNote.Application.load
-      - onenote.OneNote.Application.load_1
-      - onenote.OneNote.Application.load_2
-      - onenote.OneNote.Application.navigateToPage
-      - onenote.OneNote.Application.navigateToPageWithClientUrl
-      - onenote.OneNote.Application.notebooks
-      - onenote.OneNote.Application.toJSON
-  - uid: onenote.OneNote.Application.context
+      - 'onenote!OneNote.Application#context:member'
+      - 'onenote!OneNote.Application#getActiveNotebook:member(1)'
+      - 'onenote!OneNote.Application#getActiveNotebookOrNull:member(1)'
+      - 'onenote!OneNote.Application#getActiveOutline:member(1)'
+      - 'onenote!OneNote.Application#getActiveOutlineOrNull:member(1)'
+      - 'onenote!OneNote.Application#getActivePage:member(1)'
+      - 'onenote!OneNote.Application#getActivePageOrNull:member(1)'
+      - 'onenote!OneNote.Application#getActiveParagraph:member(1)'
+      - 'onenote!OneNote.Application#getActiveParagraphOrNull:member(1)'
+      - 'onenote!OneNote.Application#getActiveSection:member(1)'
+      - 'onenote!OneNote.Application#getActiveSectionOrNull:member(1)'
+      - 'onenote!OneNote.Application#getWindowSize:member(1)'
+      - 'onenote!OneNote.Application#insertHtmlAtCurrentPosition:member(1)'
+      - 'onenote!OneNote.Application#isViewingDeletedNotes:member(1)'
+      - 'onenote!OneNote.Application#load:member(1)'
+      - 'onenote!OneNote.Application#load:member(2)'
+      - 'onenote!OneNote.Application#load:member(3)'
+      - 'onenote!OneNote.Application#navigateToPage:member(1)'
+      - 'onenote!OneNote.Application#navigateToPageWithClientUrl:member(1)'
+      - 'onenote!OneNote.Application#notebooks:member'
+      - 'onenote!OneNote.Application#toJSON:member(1)'
+  - uid: 'onenote!OneNote.Application#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -50,8 +50,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
-  - uid: onenote.OneNote.Application.getActiveNotebook
+          - 'onenote!OneNote.RequestContext:class'
+  - uid: 'onenote!OneNote.Application#getActiveNotebook:member(1)'
     summary: |-
       Gets the active notebook if one exists. If no notebook is active, throws ItemNotFound.
 
@@ -65,7 +65,7 @@ items:
       content: 'getActiveNotebook(): OneNote.Notebook;'
       return:
         type:
-          - onenote.OneNote.Notebook
+          - 'onenote!OneNote.Notebook:class'
         description: |-
 
 
@@ -98,7 +98,7 @@ items:
               }
           });
           ```
-  - uid: onenote.OneNote.Application.getActiveNotebookOrNull
+  - uid: 'onenote!OneNote.Application#getActiveNotebookOrNull:member(1)'
     summary: |-
       Gets the active notebook if one exists. If no notebook is active, returns null.
 
@@ -112,7 +112,7 @@ items:
       content: 'getActiveNotebookOrNull(): OneNote.Notebook;'
       return:
         type:
-          - onenote.OneNote.Notebook
+          - 'onenote!OneNote.Notebook:class'
         description: |-
 
 
@@ -146,7 +146,7 @@ items:
               }
           });
           ```
-  - uid: onenote.OneNote.Application.getActiveOutline
+  - uid: 'onenote!OneNote.Application#getActiveOutline:member(1)'
     summary: |-
       Gets the active outline if one exists, If no outline is active, throws ItemNotFound.
 
@@ -160,7 +160,7 @@ items:
       content: 'getActiveOutline(): OneNote.Outline;'
       return:
         type:
-          - onenote.OneNote.Outline
+          - 'onenote!OneNote.Outline:class'
         description: |-
 
 
@@ -190,7 +190,7 @@ items:
               }
           });
           ```
-  - uid: onenote.OneNote.Application.getActiveOutlineOrNull
+  - uid: 'onenote!OneNote.Application#getActiveOutlineOrNull:member(1)'
     summary: |-
       Gets the active outline if one exists, otherwise returns null.
 
@@ -204,7 +204,7 @@ items:
       content: 'getActiveOutlineOrNull(): OneNote.Outline;'
       return:
         type:
-          - onenote.OneNote.Outline
+          - 'onenote!OneNote.Outline:class'
         description: |-
 
 
@@ -235,7 +235,7 @@ items:
               }
           });
           ```
-  - uid: onenote.OneNote.Application.getActivePage
+  - uid: 'onenote!OneNote.Application#getActivePage:member(1)'
     summary: |-
       Gets the active page if one exists. If no page is active, throws ItemNotFound.
 
@@ -249,7 +249,7 @@ items:
       content: 'getActivePage(): OneNote.Page;'
       return:
         type:
-          - onenote.OneNote.Page
+          - 'onenote!OneNote.Page:class'
         description: |-
 
 
@@ -282,7 +282,7 @@ items:
               }
           });
           ```
-  - uid: onenote.OneNote.Application.getActivePageOrNull
+  - uid: 'onenote!OneNote.Application#getActivePageOrNull:member(1)'
     summary: |-
       Gets the active page if one exists. If no page is active, returns null.
 
@@ -296,7 +296,7 @@ items:
       content: 'getActivePageOrNull(): OneNote.Page;'
       return:
         type:
-          - onenote.OneNote.Page
+          - 'onenote!OneNote.Page:class'
         description: |-
 
 
@@ -330,7 +330,7 @@ items:
               }
           });
           ```
-  - uid: onenote.OneNote.Application.getActiveParagraph
+  - uid: 'onenote!OneNote.Application#getActiveParagraph:member(1)'
     summary: |-
       Gets the active Paragraph if one exists, If no Paragraph is active, throws ItemNotFound.
 
@@ -344,9 +344,9 @@ items:
       content: 'getActiveParagraph(): OneNote.Paragraph;'
       return:
         type:
-          - onenote.OneNote.Paragraph
+          - 'onenote!OneNote.Paragraph:class'
         description: ''
-  - uid: onenote.OneNote.Application.getActiveParagraphOrNull
+  - uid: 'onenote!OneNote.Application#getActiveParagraphOrNull:member(1)'
     summary: |-
       Gets the active Paragraph if one exists, otherwise returns null.
 
@@ -360,9 +360,9 @@ items:
       content: 'getActiveParagraphOrNull(): OneNote.Paragraph;'
       return:
         type:
-          - onenote.OneNote.Paragraph
+          - 'onenote!OneNote.Paragraph:class'
         description: ''
-  - uid: onenote.OneNote.Application.getActiveSection
+  - uid: 'onenote!OneNote.Application#getActiveSection:member(1)'
     summary: |-
       Gets the active section if one exists. If no section is active, throws ItemNotFound.
 
@@ -376,7 +376,7 @@ items:
       content: 'getActiveSection(): OneNote.Section;'
       return:
         type:
-          - onenote.OneNote.Section
+          - 'onenote!OneNote.Section:class'
         description: |-
 
 
@@ -409,7 +409,7 @@ items:
               }
           });
           ```
-  - uid: onenote.OneNote.Application.getActiveSectionOrNull
+  - uid: 'onenote!OneNote.Application#getActiveSectionOrNull:member(1)'
     summary: |-
       Gets the active section if one exists. If no section is active, returns null.
 
@@ -423,7 +423,7 @@ items:
       content: 'getActiveSectionOrNull(): OneNote.Section;'
       return:
         type:
-          - onenote.OneNote.Section
+          - 'onenote!OneNote.Section:class'
         description: |-
 
 
@@ -456,7 +456,7 @@ items:
               }
           });
           ```
-  - uid: onenote.OneNote.Application.getWindowSize
+  - uid: 'onenote!OneNote.Application#getWindowSize:member(1)'
     name: getWindowSize()
     fullName: getWindowSize()
     langs:
@@ -466,9 +466,9 @@ items:
       content: 'getWindowSize(): OfficeExtension.ClientResult<number[]>;'
       return:
         type:
-          - 'OfficeExtension.ClientResult<number[]>'
+          - 'onenote!OneNote.Application#getWindowSize~0:complex'
         description: ''
-  - uid: onenote.OneNote.Application.insertHtmlAtCurrentPosition
+  - uid: 'onenote!OneNote.Application#insertHtmlAtCurrentPosition:member(1)'
     name: insertHtmlAtCurrentPosition(html)
     fullName: insertHtmlAtCurrentPosition(html)
     langs:
@@ -485,7 +485,7 @@ items:
           description: ''
           type:
             - string
-  - uid: onenote.OneNote.Application.isViewingDeletedNotes
+  - uid: 'onenote!OneNote.Application#isViewingDeletedNotes:member(1)'
     name: isViewingDeletedNotes()
     fullName: isViewingDeletedNotes()
     langs:
@@ -495,9 +495,9 @@ items:
       content: 'isViewingDeletedNotes(): OfficeExtension.ClientResult<boolean>;'
       return:
         type:
-          - OfficeExtension.ClientResult<boolean>
+          - 'onenote!OneNote.Application#isViewingDeletedNotes~0:complex'
         description: ''
-  - uid: onenote.OneNote.Application.load
+  - uid: 'onenote!OneNote.Application#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -528,14 +528,14 @@ items:
       content: 'load(option?: OneNote.Interfaces.ApplicationLoadOptions): OneNote.Application;'
       return:
         type:
-          - onenote.OneNote.Application
+          - 'onenote!OneNote.Application:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.ApplicationLoadOptions
-  - uid: onenote.OneNote.Application.load_1
+            - 'onenote!OneNote.Interfaces.ApplicationLoadOptions:interface'
+  - uid: 'onenote!OneNote.Application#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -548,14 +548,14 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.Application;'
       return:
         type:
-          - onenote.OneNote.Application
+          - 'onenote!OneNote.Application:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.Application.load_2
+  - uid: 'onenote!OneNote.Application#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -568,7 +568,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Application;'
       return:
         type:
-          - onenote.OneNote.Application
+          - 'onenote!OneNote.Application:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -577,7 +577,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: onenote.OneNote.Application.navigateToPage
+  - uid: 'onenote!OneNote.Application#navigateToPage:member(1)'
     summary: |-
       Opens the specified page in the application instance.
 
@@ -632,8 +632,8 @@ items:
         - id: page
           description: The page to open.
           type:
-            - onenote.OneNote.Page
-  - uid: onenote.OneNote.Application.navigateToPageWithClientUrl
+            - 'onenote!OneNote.Page:class'
+  - uid: 'onenote!OneNote.Application#navigateToPageWithClientUrl:member(1)'
     summary: |-
       Gets the specified page, and opens it in the application instance.
 
@@ -647,7 +647,7 @@ items:
       content: 'navigateToPageWithClientUrl(url: string): OneNote.Page;'
       return:
         type:
-          - onenote.OneNote.Page
+          - 'onenote!OneNote.Page:class'
         description: |-
 
 
@@ -689,7 +689,7 @@ items:
           description: The client url of the page to open.
           type:
             - string
-  - uid: onenote.OneNote.Application.notebooks
+  - uid: 'onenote!OneNote.Application#notebooks:member'
     summary: >-
       Gets the collection of notebooks that are open in the OneNote application instance. In OneNote on the web, only
       one notebook at a time is open in the application instance. Read-only.
@@ -705,8 +705,8 @@ items:
       content: 'readonly notebooks: OneNote.NotebookCollection;'
       return:
         type:
-          - onenote.OneNote.NotebookCollection
-  - uid: onenote.OneNote.Application.toJSON
+          - 'onenote!OneNote.NotebookCollection:class'
+  - uid: 'onenote!OneNote.Application#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -722,5 +722,46 @@ items:
       content: 'toJSON(): OneNote.Interfaces.ApplicationData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ApplicationData
+          - 'onenote!OneNote.Interfaces.ApplicationData:interface'
         description: ''
+references:
+  - uid: 'onenote!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'onenote!OneNote.RequestContext:class'
+    name: RequestContext
+  - uid: 'onenote!OneNote.Notebook:class'
+    name: OneNote.Notebook
+  - uid: 'onenote!OneNote.Outline:class'
+    name: OneNote.Outline
+  - uid: 'onenote!OneNote.Page:class'
+    name: OneNote.Page
+  - uid: 'onenote!OneNote.Paragraph:class'
+    name: OneNote.Paragraph
+  - uid: 'onenote!OneNote.Section:class'
+    name: OneNote.Section
+  - uid: 'onenote!OneNote.Application#getWindowSize~0:complex'
+    name: 'OfficeExtension.ClientResult<number[]>'
+    fullName: 'OfficeExtension.ClientResult<number[]>'
+    spec.typeScript:
+      - uid: 'onenote!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: '<number[]>'
+        fullName: '<number[]>'
+  - uid: 'onenote!OneNote.Application#isViewingDeletedNotes~0:complex'
+    name: OfficeExtension.ClientResult<boolean>
+    fullName: OfficeExtension.ClientResult<boolean>
+    spec.typeScript:
+      - uid: 'onenote!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <boolean>
+        fullName: <boolean>
+  - uid: 'onenote!OneNote.Application:class'
+    name: OneNote.Application
+  - uid: 'onenote!OneNote.Interfaces.ApplicationLoadOptions:interface'
+    name: OneNote.Interfaces.ApplicationLoadOptions
+  - uid: 'onenote!OneNote.NotebookCollection:class'
+    name: OneNote.NotebookCollection
+  - uid: 'onenote!OneNote.Interfaces.ApplicationData:interface'
+    name: OneNote.Interfaces.ApplicationData

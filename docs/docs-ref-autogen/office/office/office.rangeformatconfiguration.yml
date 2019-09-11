@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.RangeFormatConfiguration
+  - uid: 'office!Office.RangeFormatConfiguration:interface'
     summary: Specifies a range and its formatting.
     name: Office.RangeFormatConfiguration
     fullName: Office.RangeFormatConfiguration
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.RangeFormatConfiguration.cells
-      - office.Office.RangeFormatConfiguration.format
-  - uid: office.Office.RangeFormatConfiguration.cells
+      - 'office!Office.RangeFormatConfiguration#cells:member'
+      - 'office!Office.RangeFormatConfiguration#format:member'
+  - uid: 'office!Office.RangeFormatConfiguration#cells:member'
     summary: >-
       Specifies the range. Example of using Office.Table enum: Office.Table.All. Example of using RangeCoordinates:
       `{row: 3, column: 4}` specifies the cell in the 3rd (zero-based) row in the 4th (zero-based) column.
@@ -24,8 +24,8 @@ items:
       content: 'cells: Office.Table | RangeCoordinates'
       return:
         type:
-          - Office.Table | RangeCoordinates
-  - uid: office.Office.RangeFormatConfiguration.format
+          - 'office!Office.RangeFormatConfiguration#cells~0:complex'
+  - uid: 'office!Office.RangeFormatConfiguration#format:member'
     summary: 'Specifies the formatting as key-value pairs. Example: `{borderColor: "white", fontStyle: "bold"}`'
     name: format
     fullName: format
@@ -37,3 +37,16 @@ items:
       return:
         type:
           - object
+references:
+  - uid: 'office!Office.RangeFormatConfiguration#cells~0:complex'
+    name: Office.Table | RangeCoordinates
+    fullName: Office.Table | Office.RangeCoordinates
+    spec.typeScript:
+      - uid: 'office!Office.Table:enum'
+        name: Office.Table
+        fullName: Office.Table
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'office!Office.RangeCoordinates:interface'
+        name: RangeCoordinates
+        fullName: Office.RangeCoordinates

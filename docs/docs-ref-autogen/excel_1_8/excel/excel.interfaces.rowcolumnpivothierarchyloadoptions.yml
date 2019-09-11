@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyLoadOptions:interface'
     summary: |-
       Represents the Excel RowColumnPivotHierarchy.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions.$all
-      - excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions.id
-      - excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions.name
-      - excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions.position
-  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions.$all
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyLoadOptions#position:member'
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyLoadOptions#id:member'
     summary: |-
       Id of the RowColumnPivotHierarchy.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyLoadOptions#name:member'
     summary: |-
       Name of the RowColumnPivotHierarchy.
 
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions.position
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyLoadOptions#position:member'
     summary: |-
       Position of the RowColumnPivotHierarchy.
 

@@ -1,15 +1,15 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.CoercionTypeOptions
+  - uid: 'outlook!Office.CoercionTypeOptions:interface'
     name: Office.CoercionTypeOptions
     fullName: Office.CoercionTypeOptions
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.CoercionTypeOptions.coercionType
-  - uid: outlook.Office.CoercionTypeOptions.coercionType
+      - 'outlook!Office.CoercionTypeOptions#coercionType:member'
+  - uid: 'outlook!Office.CoercionTypeOptions#coercionType:member'
     name: coercionType
     fullName: coercionType
     langs:
@@ -19,4 +19,14 @@ items:
       content: 'coercionType?: Office.CoercionType | string;'
       return:
         type:
-          - Office.CoercionType | string
+          - 'outlook!Office.CoercionTypeOptions#coercionType~0:complex'
+references:
+  - uid: 'outlook!Office.CoercionTypeOptions#coercionType~0:complex'
+    name: Office.CoercionType | string
+    fullName: Office.CoercionType | string
+    spec.typeScript:
+      - uid: 'outlook!Office.CoercionType:enum'
+        name: Office.CoercionType
+        fullName: Office.CoercionType
+      - name: ' | string'
+        fullName: ' | string'

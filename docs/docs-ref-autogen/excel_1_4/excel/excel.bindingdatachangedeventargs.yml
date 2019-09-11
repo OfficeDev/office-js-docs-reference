@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.BindingDataChangedEventArgs
+  - uid: 'excel!Excel.BindingDataChangedEventArgs:interface'
     summary: |-
       Provides information about the binding that raised the DataChanged event.
 
@@ -10,10 +10,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.BindingDataChangedEventArgs.binding
-  - uid: excel.Excel.BindingDataChangedEventArgs.binding
+      - 'excel!Excel.BindingDataChangedEventArgs#binding:member'
+  - uid: 'excel!Excel.BindingDataChangedEventArgs#binding:member'
     summary: |-
       Gets the Binding object that represents the binding that raised the DataChanged event.
 
@@ -27,4 +27,7 @@ items:
       content: 'binding: Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - 'excel!Excel.Binding:class'
+references:
+  - uid: 'excel!Excel.Binding:class'
+    name: Excel.Binding

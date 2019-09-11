@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartAxisTitleFormatData
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleFormatData:interface'
     summary: An interface describing the data returned by calling "chartAxisTitleFormat.toJSON()".
     name: Excel.Interfaces.ChartAxisTitleFormatData
     fullName: Excel.Interfaces.ChartAxisTitleFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartAxisTitleFormatData.border
-      - excel.Excel.Interfaces.ChartAxisTitleFormatData.font
-  - uid: excel.Excel.Interfaces.ChartAxisTitleFormatData.border
+      - 'excel!Excel.Interfaces.ChartAxisTitleFormatData#border:member'
+      - 'excel!Excel.Interfaces.ChartAxisTitleFormatData#font:member'
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleFormatData#border:member'
     summary: |-
       Represents the border format, which includes color, linestyle, and weight.
 
@@ -25,8 +25,8 @@ items:
       content: 'border?: Excel.Interfaces.ChartBorderData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartBorderData
-  - uid: excel.Excel.Interfaces.ChartAxisTitleFormatData.font
+          - 'excel!Excel.Interfaces.ChartBorderData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleFormatData#font:member'
     summary: |-
       Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.
 
@@ -40,4 +40,9 @@ items:
       content: 'font?: Excel.Interfaces.ChartFontData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartFontData
+          - 'excel!Excel.Interfaces.ChartFontData:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartBorderData:interface'
+    name: Excel.Interfaces.ChartBorderData
+  - uid: 'excel!Excel.Interfaces.ChartFontData:interface'
+    name: Excel.Interfaces.ChartFontData

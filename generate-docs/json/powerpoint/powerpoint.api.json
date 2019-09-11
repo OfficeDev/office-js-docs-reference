@@ -1,36 +1,28 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.3.2",
-    "schemaVersion": 1001,
+    "toolVersion": "7.4.2",
+    "schemaVersion": 1003,
     "oldestForwardsCompatibleVersion": 1001
   },
   "kind": "Package",
-  "canonicalReference": "powerpoint",
+  "canonicalReference": "powerpoint!",
   "docComment": "",
   "name": "powerpoint",
   "members": [
     {
       "kind": "EntryPoint",
-      "canonicalReference": "",
+      "canonicalReference": "powerpoint!",
       "name": "",
       "members": [
         {
           "kind": "Namespace",
-          "canonicalReference": "(PowerPoint:namespace)",
+          "canonicalReference": "powerpoint!PowerPoint:namespace",
           "docComment": "",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare namespace "
-            },
-            {
-              "kind": "Reference",
-              "text": "PowerPoint"
-            },
-            {
-              "kind": "Content",
-              "text": " "
+              "text": "export declare namespace PowerPoint "
             }
           ],
           "releaseTag": "Public",
@@ -38,28 +30,12 @@
           "members": [
             {
               "kind": "Function",
-              "canonicalReference": "(createPresentation:0)",
+              "canonicalReference": "powerpoint!PowerPoint.createPresentation:function(1)",
               "docComment": "/**\n * Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a base64-encoded .pptx file.\n *\n * [Api set: PowerPointApi 1.1]\n *\n * @param base64File - Optional. The base64-encoded .pptx file. The default value is null.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "export function "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "createPresentation"
-                },
-                {
-                  "kind": "Content",
-                  "text": "("
-                },
-                {
-                  "kind": "Reference",
-                  "text": "base64File"
-                },
-                {
-                  "kind": "Content",
-                  "text": "?: "
+                  "text": "export function createPresentation(base64File?: "
                 },
                 {
                   "kind": "Content",
@@ -71,7 +47,8 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "Promise"
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
                 },
                 {
                   "kind": "Content",
@@ -83,17 +60,17 @@
                 }
               ],
               "returnTypeTokenRange": {
-                "startIndex": 7,
-                "endIndex": 9
+                "startIndex": 3,
+                "endIndex": 5
               },
               "releaseTag": "Public",
-              "overloadIndex": 0,
+              "overloadIndex": 1,
               "parameters": [
                 {
                   "parameterName": "base64File",
                   "parameterTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 1,
+                    "endIndex": 2
                   }
                 }
               ],

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.PivotField
+  - uid: 'excel!Excel.PivotField:class'
     summary: |-
       Represents the Excel PivotField.
 
@@ -11,25 +11,25 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.PivotField.context
-      - excel.Excel.PivotField.id
-      - excel.Excel.PivotField.items
-      - excel.Excel.PivotField.load
-      - excel.Excel.PivotField.load_1
-      - excel.Excel.PivotField.load_2
-      - excel.Excel.PivotField.name
-      - excel.Excel.PivotField.set
-      - excel.Excel.PivotField.set_1
-      - excel.Excel.PivotField.showAllItems
-      - excel.Excel.PivotField.sortByLabels
-      - excel.Excel.PivotField.sortByValues
-      - excel.Excel.PivotField.sortByValues_1
-      - excel.Excel.PivotField.subtotals
-      - excel.Excel.PivotField.toJSON
-  - uid: excel.Excel.PivotField.context
+      - 'excel!Excel.PivotField#context:member'
+      - 'excel!Excel.PivotField#id:member'
+      - 'excel!Excel.PivotField#items:member'
+      - 'excel!Excel.PivotField#load:member(1)'
+      - 'excel!Excel.PivotField#load:member(2)'
+      - 'excel!Excel.PivotField#load:member(3)'
+      - 'excel!Excel.PivotField#name:member'
+      - 'excel!Excel.PivotField#set:member(1)'
+      - 'excel!Excel.PivotField#set:member(2)'
+      - 'excel!Excel.PivotField#showAllItems:member'
+      - 'excel!Excel.PivotField#sortByLabels:member(1)'
+      - 'excel!Excel.PivotField#sortByValues:member(1)'
+      - 'excel!Excel.PivotField#sortByValues:member(2)'
+      - 'excel!Excel.PivotField#subtotals:member'
+      - 'excel!Excel.PivotField#toJSON:member(1)'
+  - uid: 'excel!Excel.PivotField#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -42,8 +42,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.PivotField.id
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PivotField#id:member'
     summary: |-
       Id of the PivotField.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.PivotField.items
+  - uid: 'excel!Excel.PivotField#items:member'
     summary: |-
       Returns the PivotFields associated with the PivotField.
 
@@ -72,8 +72,8 @@ items:
       content: 'readonly items: Excel.PivotItemCollection;'
       return:
         type:
-          - excel.Excel.PivotItemCollection
-  - uid: excel.Excel.PivotField.load
+          - 'excel!Excel.PivotItemCollection:class'
+  - uid: 'excel!Excel.PivotField#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -104,14 +104,14 @@ items:
       content: 'load(option?: Excel.Interfaces.PivotFieldLoadOptions): Excel.PivotField;'
       return:
         type:
-          - excel.Excel.PivotField
+          - 'excel!Excel.PivotField:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.PivotFieldLoadOptions
-  - uid: excel.Excel.PivotField.load_1
+            - 'excel!Excel.Interfaces.PivotFieldLoadOptions:interface'
+  - uid: 'excel!Excel.PivotField#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -124,14 +124,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.PivotField;'
       return:
         type:
-          - excel.Excel.PivotField
+          - 'excel!Excel.PivotField:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.PivotField.load_2
+  - uid: 'excel!Excel.PivotField#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -144,7 +144,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotField;'
       return:
         type:
-          - excel.Excel.PivotField
+          - 'excel!Excel.PivotField:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -153,7 +153,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.PivotField.name
+  - uid: 'excel!Excel.PivotField#name:member'
     summary: |-
       Name of the PivotField.
 
@@ -168,7 +168,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.PivotField.set
+  - uid: 'excel!Excel.PivotField#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -193,12 +193,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.PivotFieldUpdateData
+            - 'excel!Excel.Interfaces.PivotFieldUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.PivotField.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.PivotField#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -215,8 +215,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.PivotField
-  - uid: excel.Excel.PivotField.showAllItems
+            - 'excel!Excel.PivotField:class'
+  - uid: 'excel!Excel.PivotField#showAllItems:member'
     summary: |-
       Determines whether to show all items of the PivotField.
 
@@ -231,7 +231,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.PivotField.sortByLabels
+  - uid: 'excel!Excel.PivotField#sortByLabels:member(1)'
     summary: >-
       Sorts the PivotField. If a DataPivotHierarchy is specified, then sort will be applied based on it, if not sort
       will be based on the PivotField itself.
@@ -253,8 +253,8 @@ items:
         - id: sortBy
           description: Represents whether the sorting is done in an ascending or descending order.
           type:
-            - excel.Excel.SortBy
-  - uid: excel.Excel.PivotField.sortByValues
+            - 'excel!Excel.SortBy:enum'
+  - uid: 'excel!Excel.PivotField#sortByValues:member(1)'
     summary: >-
       Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to
       sort when there are multiple values from the same DataPivotHierarchy.
@@ -278,11 +278,11 @@ items:
         - id: sortBy
           description: Represents whether the sorting is done in an ascending or descending order.
           type:
-            - excel.Excel.SortBy
+            - 'excel!Excel.SortBy:enum'
         - id: valuesHierarchy
           description: Specifies the values hierarchy on the data axis to be used for sorting.
           type:
-            - excel.Excel.DataPivotHierarchy
+            - 'excel!Excel.DataPivotHierarchy:class'
         - id: pivotItemScope
           description: >-
             The items that should be used for the scope of the sorting. These will be the items that make up the row or
@@ -290,8 +290,8 @@ items:
             the PivotItem. If there are no items other than data hierarchy on the axis you want to sort on, this can be
             empty.
           type:
-            - Array<PivotItem | string>
-  - uid: excel.Excel.PivotField.sortByValues_1
+            - 'excel!Excel.PivotField#sortByValues~0:complex'
+  - uid: 'excel!Excel.PivotField#sortByValues:member(2)'
     summary: >-
       Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to
       sort when there are multiple values from the same DataPivotHierarchy.
@@ -319,7 +319,7 @@ items:
         - id: valuesHierarchy
           description: Specifies the values hierarchy on the data axis to be used for sorting.
           type:
-            - excel.Excel.DataPivotHierarchy
+            - 'excel!Excel.DataPivotHierarchy:class'
         - id: pivotItemScope
           description: >-
             The items that should be used for the scope of the sorting. These will be the items that make up the row or
@@ -327,8 +327,8 @@ items:
             the PivotItem. If there are no items other than data hierarchy on the axis you want to sort on, this can be
             empty.
           type:
-            - Array<PivotItem | string>
-  - uid: excel.Excel.PivotField.subtotals
+            - 'excel!Excel.PivotField#sortByValues~1:complex'
+  - uid: 'excel!Excel.PivotField#subtotals:member'
     summary: |-
       Subtotals of the PivotField.
 
@@ -342,8 +342,8 @@ items:
       content: 'subtotals: Excel.Subtotals;'
       return:
         type:
-          - excel.Excel.Subtotals
-  - uid: excel.Excel.PivotField.toJSON
+          - 'excel!Excel.Subtotals:interface'
+  - uid: 'excel!Excel.PivotField#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -359,5 +359,56 @@ items:
       content: 'toJSON(): Excel.Interfaces.PivotFieldData;'
       return:
         type:
-          - excel.Excel.Interfaces.PivotFieldData
+          - 'excel!Excel.Interfaces.PivotFieldData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.PivotItemCollection:class'
+    name: Excel.PivotItemCollection
+  - uid: 'excel!Excel.PivotField:class'
+    name: Excel.PivotField
+  - uid: 'excel!Excel.Interfaces.PivotFieldLoadOptions:interface'
+    name: Excel.Interfaces.PivotFieldLoadOptions
+  - uid: 'excel!Excel.Interfaces.PivotFieldUpdateData:interface'
+    name: Interfaces.PivotFieldUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.SortBy:enum'
+    name: SortBy
+  - uid: 'excel!Excel.DataPivotHierarchy:class'
+    name: Excel.DataPivotHierarchy
+  - uid: 'excel!Excel.PivotField#sortByValues~0:complex'
+    name: Array<PivotItem | string>
+    fullName: Array<Excel.PivotItem | string>
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.PivotItem:class'
+        name: PivotItem
+        fullName: Excel.PivotItem
+      - name: ' | string>'
+        fullName: ' | string>'
+  - uid: 'excel!Excel.PivotField#sortByValues~1:complex'
+    name: Array<PivotItem | string>
+    fullName: Array<Excel.PivotItem | string>
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.PivotItem:class'
+        name: PivotItem
+        fullName: Excel.PivotItem
+      - name: ' | string>'
+        fullName: ' | string>'
+  - uid: 'excel!Excel.Subtotals:interface'
+    name: Excel.Subtotals
+  - uid: 'excel!Excel.Interfaces.PivotFieldData:interface'
+    name: Excel.Interfaces.PivotFieldData

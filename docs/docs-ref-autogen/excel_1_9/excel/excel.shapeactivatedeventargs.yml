@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ShapeActivatedEventArgs
+  - uid: 'excel!Excel.ShapeActivatedEventArgs:interface'
     summary: |-
       Provides information about the shape that raised the Activated event.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ShapeActivatedEventArgs.shapeId
-      - excel.Excel.ShapeActivatedEventArgs.type
-      - excel.Excel.ShapeActivatedEventArgs.worksheetId
-  - uid: excel.Excel.ShapeActivatedEventArgs.shapeId
+      - 'excel!Excel.ShapeActivatedEventArgs#shapeId:member'
+      - 'excel!Excel.ShapeActivatedEventArgs#type:member'
+      - 'excel!Excel.ShapeActivatedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.ShapeActivatedEventArgs#shapeId:member'
     summary: |-
       Gets the id of the activated shape.
 
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ShapeActivatedEventArgs.type
+  - uid: 'excel!Excel.ShapeActivatedEventArgs#type:member'
     summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - '"ShapeActivated"'
-  - uid: excel.Excel.ShapeActivatedEventArgs.worksheetId
+  - uid: 'excel!Excel.ShapeActivatedEventArgs#worksheetId:member'
     summary: |-
       Gets the id of the worksheet in which the shape is activated.
 

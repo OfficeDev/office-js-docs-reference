@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartTrendlineFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineFormatLoadOptions:interface'
     summary: |-
       Represents the format properties for chart trendline.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartTrendlineFormatLoadOptions.$all
-      - excel.Excel.Interfaces.ChartTrendlineFormatLoadOptions.line
-  - uid: excel.Excel.Interfaces.ChartTrendlineFormatLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartTrendlineFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineFormatLoadOptions#line:member'
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineFormatLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -25,7 +25,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartTrendlineFormatLoadOptions.line
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineFormatLoadOptions#line:member'
     summary: |-
       Represents chart line formatting.
 
@@ -39,4 +39,7 @@ items:
       content: 'line?: Excel.Interfaces.ChartLineFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLineFormatLoadOptions
+          - 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartLineFormatLoadOptions

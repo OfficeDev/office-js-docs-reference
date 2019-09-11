@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartBoxwhiskerOptions object, for use in "chartBoxwhiskerOptions.set(<!--
       -->{ ... }<!-- -->)".
@@ -9,4 +9,4 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

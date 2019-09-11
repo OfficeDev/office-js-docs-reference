@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TimelineStyleCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.TimelineStyleCollectionLoadOptions:interface'
     summary: >-
       Represents a collection of TimelineStyles.
 
@@ -13,12 +13,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TimelineStyleCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.TimelineStyleCollectionLoadOptions.name
-      - excel.Excel.Interfaces.TimelineStyleCollectionLoadOptions.readOnly
-  - uid: excel.Excel.Interfaces.TimelineStyleCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.TimelineStyleCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.TimelineStyleCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.TimelineStyleCollectionLoadOptions#readOnly:member'
+  - uid: 'excel!Excel.Interfaces.TimelineStyleCollectionLoadOptions#$all:member'
     isPreview: true
     name: $all
     fullName: $all
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TimelineStyleCollectionLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.TimelineStyleCollectionLoadOptions#name:member'
     summary: >-
       For EACH ITEM in the collection: Gets the name of the TimelineStyle.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TimelineStyleCollectionLoadOptions.readOnly
+  - uid: 'excel!Excel.Interfaces.TimelineStyleCollectionLoadOptions#readOnly:member'
     summary: >-
       For EACH ITEM in the collection: Specifies whether this TimelineStyle object is read-only. Read-only.
 

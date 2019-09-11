@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.TableCellCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the TableCellCollection object, for use in "tableCellCollection.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.TableCellCollectionUpdateData.items
-  - uid: onenote.OneNote.Interfaces.TableCellCollectionUpdateData.items
+      - 'onenote!OneNote.Interfaces.TableCellCollectionUpdateData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: OneNote.Interfaces.TableCellData[];'
       return:
         type:
-          - 'OneNote.Interfaces.TableCellData[]'
+          - 'onenote!OneNote.Interfaces.TableCellCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionUpdateData#items~0:complex'
+    name: 'OneNote.Interfaces.TableCellData[]'
+    fullName: 'OneNote.Interfaces.TableCellData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.TableCellData:interface'
+        name: OneNote.Interfaces.TableCellData
+        fullName: OneNote.Interfaces.TableCellData
+      - name: '[]'
+        fullName: '[]'

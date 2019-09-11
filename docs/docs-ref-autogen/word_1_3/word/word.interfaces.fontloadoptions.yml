@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.FontLoadOptions
+  - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
     summary: |-
       Represents a font.
 
@@ -10,21 +10,21 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.FontLoadOptions.$all
-      - word.Word.Interfaces.FontLoadOptions.bold
-      - word.Word.Interfaces.FontLoadOptions.color
-      - word.Word.Interfaces.FontLoadOptions.doubleStrikeThrough
-      - word.Word.Interfaces.FontLoadOptions.highlightColor
-      - word.Word.Interfaces.FontLoadOptions.italic
-      - word.Word.Interfaces.FontLoadOptions.name
-      - word.Word.Interfaces.FontLoadOptions.size
-      - word.Word.Interfaces.FontLoadOptions.strikeThrough
-      - word.Word.Interfaces.FontLoadOptions.subscript
-      - word.Word.Interfaces.FontLoadOptions.superscript
-      - word.Word.Interfaces.FontLoadOptions.underline
-  - uid: word.Word.Interfaces.FontLoadOptions.$all
+      - 'word!Word.Interfaces.FontLoadOptions#$all:member'
+      - 'word!Word.Interfaces.FontLoadOptions#bold:member'
+      - 'word!Word.Interfaces.FontLoadOptions#color:member'
+      - 'word!Word.Interfaces.FontLoadOptions#doubleStrikeThrough:member'
+      - 'word!Word.Interfaces.FontLoadOptions#highlightColor:member'
+      - 'word!Word.Interfaces.FontLoadOptions#italic:member'
+      - 'word!Word.Interfaces.FontLoadOptions#name:member'
+      - 'word!Word.Interfaces.FontLoadOptions#size:member'
+      - 'word!Word.Interfaces.FontLoadOptions#strikeThrough:member'
+      - 'word!Word.Interfaces.FontLoadOptions#subscript:member'
+      - 'word!Word.Interfaces.FontLoadOptions#superscript:member'
+      - 'word!Word.Interfaces.FontLoadOptions#underline:member'
+  - uid: 'word!Word.Interfaces.FontLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -35,7 +35,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.FontLoadOptions.bold
+  - uid: 'word!Word.Interfaces.FontLoadOptions#bold:member'
     summary: >-
       Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise,
       false.
@@ -52,7 +52,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.FontLoadOptions.color
+  - uid: 'word!Word.Interfaces.FontLoadOptions#color:member'
     summary: >-
       Gets or sets the color for the specified font. You can provide the value in the '\#RRGGBB' format or the color
       name.
@@ -69,7 +69,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.FontLoadOptions.doubleStrikeThrough
+  - uid: 'word!Word.Interfaces.FontLoadOptions#doubleStrikeThrough:member'
     summary: >-
       Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as
       double strikethrough text, otherwise, false.
@@ -86,7 +86,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.FontLoadOptions.highlightColor
+  - uid: 'word!Word.Interfaces.FontLoadOptions#highlightColor:member'
     summary: >-
       Gets or sets the highlight color. To set it, use a value either in the '\#RRGGBB' format or the color name. To
       remove highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, an empty
@@ -110,7 +110,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.FontLoadOptions.italic
+  - uid: 'word!Word.Interfaces.FontLoadOptions#italic:member'
     summary: >-
       Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise,
       false.
@@ -127,7 +127,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.FontLoadOptions.name
+  - uid: 'word!Word.Interfaces.FontLoadOptions#name:member'
     summary: |-
       Gets or sets a value that represents the name of the font.
 
@@ -142,7 +142,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.FontLoadOptions.size
+  - uid: 'word!Word.Interfaces.FontLoadOptions#size:member'
     summary: |-
       Gets or sets a value that represents the font size in points.
 
@@ -157,7 +157,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.FontLoadOptions.strikeThrough
+  - uid: 'word!Word.Interfaces.FontLoadOptions#strikeThrough:member'
     summary: >-
       Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as
       strikethrough text, otherwise, false.
@@ -174,7 +174,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.FontLoadOptions.subscript
+  - uid: 'word!Word.Interfaces.FontLoadOptions#subscript:member'
     summary: >-
       Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript,
       otherwise, false.
@@ -191,7 +191,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.FontLoadOptions.superscript
+  - uid: 'word!Word.Interfaces.FontLoadOptions#superscript:member'
     summary: >-
       Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as
       superscript, otherwise, false.
@@ -208,7 +208,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.FontLoadOptions.underline
+  - uid: 'word!Word.Interfaces.FontLoadOptions#underline:member'
     summary: |-
       Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
 

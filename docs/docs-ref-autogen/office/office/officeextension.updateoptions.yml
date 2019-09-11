@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.OfficeExtension.UpdateOptions
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     summary: >-
       Provides an option for suppressing an error when the object that is used to set multiple properties tries to set
       read-only properties.
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.OfficeExtension.UpdateOptions.throwOnReadOnly
-  - uid: office.OfficeExtension.UpdateOptions.throwOnReadOnly
+      - 'office!OfficeExtension.UpdateOptions#throwOnReadOnly:member'
+  - uid: 'office!OfficeExtension.UpdateOptions#throwOnReadOnly:member'
     summary: Throw an error if the passed-in property list includes read-only properties (default = true).
     name: throwOnReadOnly
     fullName: throwOnReadOnly

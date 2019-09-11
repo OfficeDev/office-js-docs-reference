@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordUpdateData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordUpdateData:interface'
     summary: >-
       An interface for updating data on the InkAnalysisWord object, for use in "inkAnalysisWord.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkAnalysisWordUpdateData.line
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordUpdateData.line
+      - 'onenote!OneNote.Interfaces.InkAnalysisWordUpdateData#line:member'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordUpdateData#line:member'
     summary: |-
       Reference to the parent InkAnalysisLine.
 
@@ -26,4 +26,7 @@ items:
       content: 'line?: OneNote.Interfaces.InkAnalysisLineUpdateData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisLineUpdateData
+          - 'onenote!OneNote.Interfaces.InkAnalysisLineUpdateData:interface'
+references:
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineUpdateData:interface'
+    name: OneNote.Interfaces.InkAnalysisLineUpdateData

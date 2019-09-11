@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartErrorBars
+  - uid: 'excel!Excel.ChartErrorBars:class'
     summary: |-
       This object represents the attributes for a chart's error bars.
 
@@ -11,22 +11,22 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.ChartErrorBars.context
-      - excel.Excel.ChartErrorBars.endStyleCap
-      - excel.Excel.ChartErrorBars.format
-      - excel.Excel.ChartErrorBars.include
-      - excel.Excel.ChartErrorBars.load
-      - excel.Excel.ChartErrorBars.load_1
-      - excel.Excel.ChartErrorBars.load_2
-      - excel.Excel.ChartErrorBars.set
-      - excel.Excel.ChartErrorBars.set_1
-      - excel.Excel.ChartErrorBars.toJSON
-      - excel.Excel.ChartErrorBars.type
-      - excel.Excel.ChartErrorBars.visible
-  - uid: excel.Excel.ChartErrorBars.context
+      - 'excel!Excel.ChartErrorBars#context:member'
+      - 'excel!Excel.ChartErrorBars#endStyleCap:member'
+      - 'excel!Excel.ChartErrorBars#format:member'
+      - 'excel!Excel.ChartErrorBars#include:member'
+      - 'excel!Excel.ChartErrorBars#load:member(1)'
+      - 'excel!Excel.ChartErrorBars#load:member(2)'
+      - 'excel!Excel.ChartErrorBars#load:member(3)'
+      - 'excel!Excel.ChartErrorBars#set:member(1)'
+      - 'excel!Excel.ChartErrorBars#set:member(2)'
+      - 'excel!Excel.ChartErrorBars#toJSON:member(1)'
+      - 'excel!Excel.ChartErrorBars#type:member'
+      - 'excel!Excel.ChartErrorBars#visible:member'
+  - uid: 'excel!Excel.ChartErrorBars#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -39,8 +39,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartErrorBars.endStyleCap
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartErrorBars#endStyleCap:member'
     summary: |-
       Specifies whether or not the error bars have an end style cap.
 
@@ -55,7 +55,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartErrorBars.format
+  - uid: 'excel!Excel.ChartErrorBars#format:member'
     summary: |-
       Specifies the formatting type of the error bars.
 
@@ -69,8 +69,8 @@ items:
       content: 'readonly format: Excel.ChartErrorBarsFormat;'
       return:
         type:
-          - excel.Excel.ChartErrorBarsFormat
-  - uid: excel.Excel.ChartErrorBars.include
+          - 'excel!Excel.ChartErrorBarsFormat:class'
+  - uid: 'excel!Excel.ChartErrorBars#include:member'
     summary: |-
       Specifies which parts of the error bars to include.
 
@@ -84,8 +84,8 @@ items:
       content: 'include: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues";'
       return:
         type:
-          - Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues"
-  - uid: excel.Excel.ChartErrorBars.load
+          - 'excel!Excel.ChartErrorBars#include~0:complex'
+  - uid: 'excel!Excel.ChartErrorBars#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -116,14 +116,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartErrorBarsLoadOptions): Excel.ChartErrorBars;'
       return:
         type:
-          - excel.Excel.ChartErrorBars
+          - 'excel!Excel.ChartErrorBars:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartErrorBarsLoadOptions
-  - uid: excel.Excel.ChartErrorBars.load_1
+            - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions:interface'
+  - uid: 'excel!Excel.ChartErrorBars#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -136,14 +136,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartErrorBars;'
       return:
         type:
-          - excel.Excel.ChartErrorBars
+          - 'excel!Excel.ChartErrorBars:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartErrorBars.load_2
+  - uid: 'excel!Excel.ChartErrorBars#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -156,7 +156,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartErrorBars;'
       return:
         type:
-          - excel.Excel.ChartErrorBars
+          - 'excel!Excel.ChartErrorBars:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -165,7 +165,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartErrorBars.set
+  - uid: 'excel!Excel.ChartErrorBars#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -190,12 +190,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.ChartErrorBarsUpdateData
+            - 'excel!Excel.Interfaces.ChartErrorBarsUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartErrorBars.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.ChartErrorBars#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -212,8 +212,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartErrorBars
-  - uid: excel.Excel.ChartErrorBars.toJSON
+            - 'excel!Excel.ChartErrorBars:class'
+  - uid: 'excel!Excel.ChartErrorBars#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -229,9 +229,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartErrorBarsData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartErrorBarsData
+          - 'excel!Excel.Interfaces.ChartErrorBarsData:interface'
         description: ''
-  - uid: excel.Excel.ChartErrorBars.type
+  - uid: 'excel!Excel.ChartErrorBars#type:member'
     summary: |-
       The type of range marked by the error bars.
 
@@ -245,8 +245,8 @@ items:
       content: 'type: Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom";'
       return:
         type:
-          - Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"
-  - uid: excel.Excel.ChartErrorBars.visible
+          - 'excel!Excel.ChartErrorBars#type~0:complex'
+  - uid: 'excel!Excel.ChartErrorBars#visible:member'
     summary: |-
       Specifies whether or not the error bars are displayed.
 
@@ -261,3 +261,38 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ChartErrorBarsFormat:class'
+    name: Excel.ChartErrorBarsFormat
+  - uid: 'excel!Excel.ChartErrorBars#include~0:complex'
+    name: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues"
+    fullName: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartErrorBarsInclude:enum'
+        name: Excel.ChartErrorBarsInclude
+        fullName: Excel.ChartErrorBarsInclude
+      - name: ' | "Both" | "MinusValues" | "PlusValues"'
+        fullName: ' | "Both" | "MinusValues" | "PlusValues"'
+  - uid: 'excel!Excel.ChartErrorBars:class'
+    name: Excel.ChartErrorBars
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions:interface'
+    name: Excel.Interfaces.ChartErrorBarsLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData:interface'
+    name: Interfaces.ChartErrorBarsUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsData:interface'
+    name: Excel.Interfaces.ChartErrorBarsData
+  - uid: 'excel!Excel.ChartErrorBars#type~0:complex'
+    name: Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"
+    fullName: Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartErrorBarsType:enum'
+        name: Excel.ChartErrorBarsType
+        fullName: Excel.ChartErrorBarsType
+      - name: ' | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"'
+        fullName: ' | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.Document
+  - uid: 'office!Office.Document:interface'
     summary: An abstract class that represents the document the add-in is interacting with.
     remarks: '**Hosts**: Excel, PowerPoint, Project, Word'
     name: Office.Document
@@ -8,58 +8,58 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.Document.addHandlerAsync
-      - office.Office.Document.addHandlerAsync_1
-      - office.Office.Document.getActiveViewAsync
-      - office.Office.Document.getActiveViewAsync_1
-      - office.Office.Document.getFileAsync
-      - office.Office.Document.getFileAsync_1
-      - office.Office.Document.getFilePropertiesAsync
-      - office.Office.Document.getFilePropertiesAsync_1
-      - office.Office.Document.getMaxResourceIndexAsync
-      - office.Office.Document.getMaxResourceIndexAsync_1
-      - office.Office.Document.getMaxTaskIndexAsync
-      - office.Office.Document.getMaxTaskIndexAsync_1
-      - office.Office.Document.getProjectFieldAsync
-      - office.Office.Document.getProjectFieldAsync_1
-      - office.Office.Document.getResourceByIndexAsync
-      - office.Office.Document.getResourceByIndexAsync_1
-      - office.Office.Document.getResourceFieldAsync
-      - office.Office.Document.getResourceFieldAsync_1
-      - office.Office.Document.getSelectedDataAsync
-      - office.Office.Document.getSelectedDataAsync_1
-      - office.Office.Document.getSelectedResourceAsync
-      - office.Office.Document.getSelectedResourceAsync_1
-      - office.Office.Document.getSelectedTaskAsync
-      - office.Office.Document.getSelectedTaskAsync_1
-      - office.Office.Document.getSelectedViewAsync
-      - office.Office.Document.getSelectedViewAsync_1
-      - office.Office.Document.getTaskAsync
-      - office.Office.Document.getTaskAsync_1
-      - office.Office.Document.getTaskByIndexAsync
-      - office.Office.Document.getTaskByIndexAsync_1
-      - office.Office.Document.getTaskFieldAsync
-      - office.Office.Document.getTaskFieldAsync_1
-      - office.Office.Document.getWSSUrlAsync
-      - office.Office.Document.getWSSUrlAsync_1
-      - office.Office.Document.goToByIdAsync
-      - office.Office.Document.goToByIdAsync_1
-      - office.Office.Document.removeHandlerAsync
-      - office.Office.Document.removeHandlerAsync_1
-      - office.Office.Document.setResourceFieldAsync
-      - office.Office.Document.setResourceFieldAsync_1
-      - office.Office.Document.setSelectedDataAsync
-      - office.Office.Document.setSelectedDataAsync_1
-      - office.Office.Document.setTaskFieldAsync
-      - office.Office.Document.setTaskFieldAsync_1
-      - office.Office.Document.bindings
-      - office.Office.Document.customXmlParts
-      - office.Office.Document.mode
-      - office.Office.Document.settings
-      - office.Office.Document.url
-  - uid: office.Office.Document.addHandlerAsync
+      - 'office!Office.Document#addHandlerAsync:member(1)'
+      - 'office!Office.Document#addHandlerAsync:member(2)'
+      - 'office!Office.Document#bindings:member'
+      - 'office!Office.Document#customXmlParts:member'
+      - 'office!Office.Document#getActiveViewAsync:member(1)'
+      - 'office!Office.Document#getActiveViewAsync:member(2)'
+      - 'office!Office.Document#getFileAsync:member(1)'
+      - 'office!Office.Document#getFileAsync:member(2)'
+      - 'office!Office.Document#getFilePropertiesAsync:member(1)'
+      - 'office!Office.Document#getFilePropertiesAsync:member(2)'
+      - 'office!Office.Document#getMaxResourceIndexAsync:member(1)'
+      - 'office!Office.Document#getMaxResourceIndexAsync:member(2)'
+      - 'office!Office.Document#getMaxTaskIndexAsync:member(1)'
+      - 'office!Office.Document#getMaxTaskIndexAsync:member(2)'
+      - 'office!Office.Document#getProjectFieldAsync:member(1)'
+      - 'office!Office.Document#getProjectFieldAsync:member(2)'
+      - 'office!Office.Document#getResourceByIndexAsync:member(1)'
+      - 'office!Office.Document#getResourceByIndexAsync:member(2)'
+      - 'office!Office.Document#getResourceFieldAsync:member(1)'
+      - 'office!Office.Document#getResourceFieldAsync:member(2)'
+      - 'office!Office.Document#getSelectedDataAsync:member(1)'
+      - 'office!Office.Document#getSelectedDataAsync:member(2)'
+      - 'office!Office.Document#getSelectedResourceAsync:member(1)'
+      - 'office!Office.Document#getSelectedResourceAsync:member(2)'
+      - 'office!Office.Document#getSelectedTaskAsync:member(1)'
+      - 'office!Office.Document#getSelectedTaskAsync:member(2)'
+      - 'office!Office.Document#getSelectedViewAsync:member(1)'
+      - 'office!Office.Document#getSelectedViewAsync:member(2)'
+      - 'office!Office.Document#getTaskAsync:member(1)'
+      - 'office!Office.Document#getTaskAsync:member(2)'
+      - 'office!Office.Document#getTaskByIndexAsync:member(1)'
+      - 'office!Office.Document#getTaskByIndexAsync:member(2)'
+      - 'office!Office.Document#getTaskFieldAsync:member(1)'
+      - 'office!Office.Document#getTaskFieldAsync:member(2)'
+      - 'office!Office.Document#getWSSUrlAsync:member(1)'
+      - 'office!Office.Document#getWSSUrlAsync:member(2)'
+      - 'office!Office.Document#goToByIdAsync:member(1)'
+      - 'office!Office.Document#goToByIdAsync:member(2)'
+      - 'office!Office.Document#mode:member'
+      - 'office!Office.Document#removeHandlerAsync:member(1)'
+      - 'office!Office.Document#removeHandlerAsync:member(2)'
+      - 'office!Office.Document#setResourceFieldAsync:member(1)'
+      - 'office!Office.Document#setResourceFieldAsync:member(2)'
+      - 'office!Office.Document#setSelectedDataAsync:member(1)'
+      - 'office!Office.Document#setSelectedDataAsync:member(2)'
+      - 'office!Office.Document#setTaskFieldAsync:member(1)'
+      - 'office!Office.Document#setTaskFieldAsync:member(2)'
+      - 'office!Office.Document#settings:member'
+      - 'office!Office.Document#url:member'
+  - uid: 'office!Office.Document#addHandlerAsync:member(1)'
     summary: Adds an event handler for a Document object event.
     remarks: >-
       **Requirement set**:
@@ -88,25 +88,25 @@ items:
             `Office.EventType.Document.SelectionChanged` or `Office.EventType.Document.ActiveViewChanged`<!-- -->, or
             the corresponding text value of this enumeration.
           type:
-            - office.Office.EventType
+            - 'office!Office.EventType:enum'
         - id: handler
           description: >-
             The event handler function to add, whose only parameter is of type
-            [Office.DocumentSelectionChangedEventArgs](xref:office.Office.DocumentSelectionChangedEventArgs)<!-- -->.
-            Required.
+            [Office.DocumentSelectionChangedEventArgs](xref:office!Office.DocumentSelectionChangedEventArgs:interface)<!--
+            -->. Required.
           type:
             - any
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Document.addHandlerAsync_1
+            - 'office!Office.Document#addHandlerAsync~0:complex'
+  - uid: 'office!Office.Document#addHandlerAsync:member(2)'
     summary: Adds an event handler for a Document object event.
     remarks: >-
       **Requirement set**:
@@ -429,21 +429,90 @@ items:
             `Office.EventType.Document.SelectionChanged` or `Office.EventType.Document.ActiveViewChanged`<!-- -->, or
             the corresponding text value of this enumeration.
           type:
-            - office.Office.EventType
+            - 'office!Office.EventType:enum'
         - id: handler
           description: >-
             The event handler function to add, whose only parameter is of type
-            [Office.DocumentSelectionChangedEventArgs](xref:office.Office.DocumentSelectionChangedEventArgs)<!-- -->.
-            Required.
+            [Office.DocumentSelectionChangedEventArgs](xref:office!Office.DocumentSelectionChangedEventArgs:interface)<!--
+            -->. Required.
           type:
             - any
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Document.getActiveViewAsync
+            - 'office!Office.Document#addHandlerAsync~1:complex'
+  - uid: 'office!Office.Document#bindings:member'
+    summary: Gets an object that provides access to the bindings defined in the document.
+    remarks: >-
+      You don't instantiate the Document object directly in your script. To call members of the Document object to
+      interact with the current document or worksheet, use `Office.context.document` in your script.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      function displayAllBindings() {
+          Office.context.document.bindings.getAllAsync(function (asyncResult) {
+              var bindingString = '';
+              for (var i in asyncResult.value) {
+                  bindingString += asyncResult.value[i].id + '\n';
+              }
+              write('Existing bindings: ' + bindingString);
+          });
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
+    name: bindings
+    fullName: bindings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bindings: Bindings;'
+      return:
+        type:
+          - 'office!Office.Bindings:interface'
+  - uid: 'office!Office.Document#customXmlParts:member'
+    summary: Gets an object that represents the custom XML parts in the document.
+    name: customXmlParts
+    fullName: customXmlParts
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'customXmlParts: CustomXmlParts;'
+      return:
+        type:
+          - 'office!Office.CustomXmlParts:interface'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          function getCustomXmlParts(){
+              Office.context.document.customXmlParts.getByNamespaceAsync('http://tempuri.org', function (asyncResult) {
+                  write('Retrieved ' + asyncResult.value.length + ' custom XML parts');
+              });
+          }
+
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
+  - uid: 'office!Office.Document#getActiveViewAsync:member(1)'
     summary: Returns the state of the current view of the presentation (edit or read).
     remarks: >-
       **Requirement set**:
@@ -468,17 +537,17 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            state of the presentation's current view. The value returned can be either "edit" or "read". "edit"
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the state of the presentation's current view. The value returned can be either "edit" or "read". "edit"
             corresponds to any of the views in which you can edit slides, such as Normal or Outline View. "read"
             corresponds to either Slide Show or Reading View.
           type:
-            - '(result: AsyncResult<"edit" | "read">) => void'
-  - uid: office.Office.Document.getActiveViewAsync_1
+            - 'office!Office.Document#getActiveViewAsync~0:complex'
+  - uid: 'office!Office.Document#getActiveViewAsync:member(2)'
     summary: Returns the state of the current view of the presentation (edit or read).
     remarks: >-
       **Requirement set**:
@@ -521,13 +590,13 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            state of the presentation's current view. The value returned can be either "edit" or "read". "edit"
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the state of the presentation's current view. The value returned can be either "edit" or "read". "edit"
             corresponds to any of the views in which you can edit slides, such as Normal or Outline View. "read"
             corresponds to either Slide Show or Reading View.
           type:
-            - '(result: AsyncResult<"edit" | "read">) => void'
-  - uid: office.Office.Document.getFileAsync
+            - 'office!Office.Document#getActiveViewAsync~1:complex'
+  - uid: 'office!Office.Document#getFileAsync:member(1)'
     summary: >-
       Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins on iOS, file slice is
       supported up to 65536 (64 KB). Note that specifying file slice size of above permitted limit will result in an
@@ -555,8 +624,8 @@ items:
       supports getting files in slices of up to 65536 (64 KB).
 
 
-      The fileType parameter can be specified by using the [Office.FileType](xref:office.Office.FileType) enumeration or
-      text values. But the possible values vary with the host:
+      The fileType parameter can be specified by using the [Office.FileType](xref:office!Office.FileType:enum)
+      enumeration or text values. But the possible values vary with the host:
 
 
       Excel on the web and Windows desktop: `Office.FileType.Compressed`
@@ -686,19 +755,19 @@ items:
         - id: fileType
           description: The format in which the file will be returned
           type:
-            - office.Office.FileType
+            - 'office!Office.FileType:enum'
         - id: options
           description: Provides options for setting the size of slices that the document will be divided into.
           type:
-            - office.Office.GetFileOptions
+            - 'office!Office.GetFileOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the File
-            object.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the File object.
           type:
-            - '(result: AsyncResult<Office.File>) => void'
-  - uid: office.Office.Document.getFileAsync_1
+            - 'office!Office.Document#getFileAsync~0:complex'
+  - uid: 'office!Office.Document#getFileAsync:member(2)'
     summary: >-
       Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins on iOS, file slice is
       supported up to 65536 (64 KB). Note that specifying file slice size of above permitted limit will result in an
@@ -726,8 +795,8 @@ items:
       supports getting files in slices of up to 65536 (64 KB).
 
 
-      The fileType parameter can be specified by using the [Office.FileType](xref:office.Office.FileType) enumeration or
-      text values. But the possible values vary with the host:
+      The fileType parameter can be specified by using the [Office.FileType](xref:office!Office.FileType:enum)
+      enumeration or text values. But the possible values vary with the host:
 
 
       Excel on the web and Windows desktop: `Office.FileType.Compressed`
@@ -756,15 +825,15 @@ items:
         - id: fileType
           description: The format in which the file will be returned
           type:
-            - office.Office.FileType
+            - 'office!Office.FileType:enum'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the File
-            object.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the File object.
           type:
-            - '(result: AsyncResult<Office.File>) => void'
-  - uid: office.Office.Document.getFilePropertiesAsync
+            - 'office!Office.Document#getFileAsync~1:complex'
+  - uid: 'office!Office.Document#getFilePropertiesAsync:member(1)'
     summary: Gets file properties of the current document.
     remarks: >-
       **Requirement sets**: [Not in a
@@ -789,15 +858,15 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            file's properties (with the URL found at `asyncResult.value.url`<!-- -->).
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the file's properties (with the URL found at `asyncResult.value.url`<!-- -->).
           type:
-            - '(result: AsyncResult<Office.FileProperties>) => void'
-  - uid: office.Office.Document.getFilePropertiesAsync_1
+            - 'office!Office.Document#getFilePropertiesAsync~0:complex'
+  - uid: 'office!Office.Document#getFilePropertiesAsync:member(2)'
     summary: Gets file properties of the current document.
     remarks: >-
       **Requirement sets**: [Not in a
@@ -851,11 +920,11 @@ items:
         - id: callback
           description: >-
             A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            file's properties (with the URL found at `asyncResult.value.url`<!-- -->).
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the file's properties (with the URL found at `asyncResult.value.url`<!-- -->).
           type:
-            - '(result: AsyncResult<Office.FileProperties>) => void'
-  - uid: office.Office.Document.getMaxResourceIndexAsync
+            - 'office!Office.Document#getFilePropertiesAsync~1:complex'
+  - uid: 'office!Office.Document#getMaxResourceIndexAsync:member(1)'
     summary: |-
       Project documents only. Get the maximum index of the collection of resources in the current project.
 
@@ -877,15 +946,15 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            highest index number in the current project's resource collection.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the highest index number in the current project's resource collection.
           type:
-            - '(result: AsyncResult<number>) => void'
-  - uid: office.Office.Document.getMaxResourceIndexAsync_1
+            - 'office!Office.Document#getMaxResourceIndexAsync~0:complex'
+  - uid: 'office!Office.Document#getMaxResourceIndexAsync:member(2)'
     summary: |-
       Project documents only. Get the maximum index of the collection of resources in the current project.
 
@@ -986,11 +1055,11 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            highest index number in the current project's resource collection.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the highest index number in the current project's resource collection.
           type:
-            - '(result: AsyncResult<number>) => void'
-  - uid: office.Office.Document.getMaxTaskIndexAsync
+            - 'office!Office.Document#getMaxResourceIndexAsync~1:complex'
+  - uid: 'office!Office.Document#getMaxTaskIndexAsync:member(1)'
     summary: |-
       Project documents only. Get the maximum index of the collection of tasks in the current project.
 
@@ -1012,15 +1081,15 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            highest index number in the current project's task collection.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the highest index number in the current project's task collection.
           type:
-            - '(result: AsyncResult<number>) => void'
-  - uid: office.Office.Document.getMaxTaskIndexAsync_1
+            - 'office!Office.Document#getMaxTaskIndexAsync~0:complex'
+  - uid: 'office!Office.Document#getMaxTaskIndexAsync:member(2)'
     summary: |-
       Project documents only. Get the maximum index of the collection of tasks in the current project.
 
@@ -1121,11 +1190,11 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            highest index number in the current project's task collection.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the highest index number in the current project's task collection.
           type:
-            - '(result: AsyncResult<number>) => void'
-  - uid: office.Office.Document.getProjectFieldAsync
+            - 'office!Office.Document#getMaxTaskIndexAsync~1:complex'
+  - uid: 'office!Office.Document#getProjectFieldAsync:member(1)'
     summary: Project documents only. Get Project field (Ex. ProjectWebAccessURL).
     name: 'getProjectFieldAsync(fieldId, options, callback)'
     fullName: 'getProjectFieldAsync(fieldId, options, callback)'
@@ -1148,15 +1217,15 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
-            the `fieldValue` property, which represents the value of the specified field.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the `fieldValue` property, which represents the value of the specified field.
           type:
-            - '(result: AsyncResult<any>) => void'
-  - uid: office.Office.Document.getProjectFieldAsync_1
+            - 'office!Office.Document#getProjectFieldAsync~0:complex'
+  - uid: 'office!Office.Document#getProjectFieldAsync:member(2)'
     summary: Project documents only. Get Project field (Ex. ProjectWebAccessURL).
     name: 'getProjectFieldAsync(fieldId, callback)'
     fullName: 'getProjectFieldAsync(fieldId, callback)'
@@ -1245,11 +1314,11 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
-            the `fieldValue` property, which represents the value of the specified field.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the `fieldValue` property, which represents the value of the specified field.
           type:
-            - '(result: AsyncResult<any>) => void'
-  - uid: office.Office.Document.getResourceByIndexAsync
+            - 'office!Office.Document#getProjectFieldAsync~1:complex'
+  - uid: 'office!Office.Document#getResourceByIndexAsync:member(1)'
     summary: |-
       Project documents only. Get the GUID of the resource that has the specified index in the resource collection.
 
@@ -1275,15 +1344,15 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
-            of the resource as a string.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the resource as a string.
           type:
-            - '(result: AsyncResult<string>) => void'
-  - uid: office.Office.Document.getResourceByIndexAsync_1
+            - 'office!Office.Document#getResourceByIndexAsync~0:complex'
+  - uid: 'office!Office.Document#getResourceByIndexAsync:member(2)'
     summary: |-
       Project documents only. Get the GUID of the resource that has the specified index in the resource collection.
 
@@ -1398,11 +1467,11 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
-            of the resource as a string.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the resource as a string.
           type:
-            - '(result: AsyncResult<string>) => void'
-  - uid: office.Office.Document.getResourceFieldAsync
+            - 'office!Office.Document#getResourceByIndexAsync~1:complex'
+  - uid: 'office!Office.Document#getResourceFieldAsync:member(1)'
     summary: Project documents only. Get resource field for provided resource Id. (Ex.ResourceName)
     name: 'getResourceFieldAsync(resourceId, fieldId, options, callback)'
     fullName: 'getResourceFieldAsync(resourceId, fieldId, options, callback)'
@@ -1429,15 +1498,15 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
-            of the resource as a string.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the resource as a string.
           type:
-            - '(result: AsyncResult<string>) => void'
-  - uid: office.Office.Document.getResourceFieldAsync_1
+            - 'office!Office.Document#getResourceFieldAsync~0:complex'
+  - uid: 'office!Office.Document#getResourceFieldAsync:member(2)'
     summary: Project documents only. Get resource field for provided resource Id. (Ex.ResourceName)
     name: 'getResourceFieldAsync(resourceId, fieldId, callback)'
     fullName: 'getResourceFieldAsync(resourceId, fieldId, callback)'
@@ -1558,11 +1627,11 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
-            of the resource as a string.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the resource as a string.
           type:
-            - '(result: AsyncResult<string>) => void'
-  - uid: office.Office.Document.getSelectedDataAsync
+            - 'office!Office.Document#getResourceFieldAsync~1:complex'
+  - uid: 'office!Office.Document#getSelectedDataAsync:member(1)'
     summary: Reads the data contained in the current selection in the document.
     remarks: >-
       **Requirement sets**:
@@ -1609,7 +1678,8 @@ items:
       without being altered.</td> </tr> </table>
 
 
-      The possible values for the [Office.CoercionType](xref:office.Office.CoercionType) parameter vary by the host.
+      The possible values for the [Office.CoercionType](xref:office!Office.CoercionType:enum) parameter vary by the
+      host.
 
 
       <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr> <td>Excel, PowerPoint, Project, and
@@ -1761,22 +1831,22 @@ items:
         - id: coercionType
           description: The type of data structure to return. See the remarks section for each host's supported coercion types.
           type:
-            - office.Office.CoercionType
+            - 'office!Office.CoercionType:enum'
         - id: options
           description: Provides options for customizing what data is returned and how it is formatted.
           type:
-            - office.Office.GetSelectedDataOptions
+            - 'office!Office.GetSelectedDataOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the data
-            in the current selection. This is returned in the data structure or format you specified with the
-            coercionType parameter. (See Remarks for more information about data coercion.)
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the data in the current selection. This is returned in the data structure or format you specified with
+            the coercionType parameter. (See Remarks for more information about data coercion.)
           type:
-            - '(result: AsyncResult<T>) => void'
+            - 'office!Office.Document#getSelectedDataAsync~0:complex'
       typeParameters:
         - id: T
-  - uid: office.Office.Document.getSelectedDataAsync_1
+  - uid: 'office!Office.Document#getSelectedDataAsync:member(2)'
     summary: Reads the data contained in the current selection in the document.
     remarks: >-
       **Requirement sets**:
@@ -1823,7 +1893,8 @@ items:
       without being altered.</td> </tr> </table>
 
 
-      The possible values for the [Office.CoercionType](xref:office.Office.CoercionType) parameter vary by the host.
+      The possible values for the [Office.CoercionType](xref:office!Office.CoercionType:enum) parameter vary by the
+      host.
 
 
       <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr> <td>Excel, PowerPoint, Project, and
@@ -1848,18 +1919,18 @@ items:
         - id: coercionType
           description: The type of data structure to return. See the remarks section for each host's supported coercion types.
           type:
-            - office.Office.CoercionType
+            - 'office!Office.CoercionType:enum'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the data
-            in the current selection. This is returned in the data structure or format you specified with the
-            coercionType parameter. (See Remarks for more information about data coercion.)
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the data in the current selection. This is returned in the data structure or format you specified with
+            the coercionType parameter. (See Remarks for more information about data coercion.)
           type:
-            - '(result: AsyncResult<T>) => void'
+            - 'office!Office.Document#getSelectedDataAsync~1:complex'
       typeParameters:
         - id: T
-  - uid: office.Office.Document.getSelectedResourceAsync
+  - uid: 'office!Office.Document#getSelectedResourceAsync:member(1)'
     summary: Project documents only. Get the current selected Resource's Id.
     name: 'getSelectedResourceAsync(options, callback)'
     fullName: 'getSelectedResourceAsync(options, callback)'
@@ -1878,15 +1949,15 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
-            of the resource as a string.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the resource as a string.
           type:
-            - '(result: AsyncResult<string>) => void'
-  - uid: office.Office.Document.getSelectedResourceAsync_1
+            - 'office!Office.Document#getSelectedResourceAsync~0:complex'
+  - uid: 'office!Office.Document#getSelectedResourceAsync:member(2)'
     summary: Project documents only. Get the current selected Resource's Id.
     name: getSelectedResourceAsync(callback)
     fullName: getSelectedResourceAsync(callback)
@@ -2008,11 +2079,11 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
-            of the resource as a string.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the resource as a string.
           type:
-            - '(result: AsyncResult<string>) => void'
-  - uid: office.Office.Document.getSelectedTaskAsync
+            - 'office!Office.Document#getSelectedResourceAsync~1:complex'
+  - uid: 'office!Office.Document#getSelectedTaskAsync:member(1)'
     summary: Project documents only. Get the current selected Task's Id.
     name: 'getSelectedTaskAsync(options, callback)'
     fullName: 'getSelectedTaskAsync(options, callback)'
@@ -2031,15 +2102,15 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
-            of the resource as a string.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the resource as a string.
           type:
-            - '(result: AsyncResult<string>) => void'
-  - uid: office.Office.Document.getSelectedTaskAsync_1
+            - 'office!Office.Document#getSelectedTaskAsync~0:complex'
+  - uid: 'office!Office.Document#getSelectedTaskAsync:member(2)'
     summary: Project documents only. Get the current selected Task's Id.
     name: getSelectedTaskAsync(callback)
     fullName: getSelectedTaskAsync(callback)
@@ -2129,11 +2200,11 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
-            of the resource as a string.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the resource as a string.
           type:
-            - '(result: AsyncResult<string>) => void'
-  - uid: office.Office.Document.getSelectedViewAsync
+            - 'office!Office.Document#getSelectedTaskAsync~1:complex'
+  - uid: 'office!Office.Document#getSelectedViewAsync:member(1)'
     summary: Project documents only. Get the current selected View Type (Ex. Gantt) and View Name.
     name: 'getSelectedViewAsync(options, callback)'
     fullName: 'getSelectedViewAsync(options, callback)'
@@ -2150,16 +2221,16 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
-            the following properties: `viewName` - The name of the view, as a ProjectViewTypes constant. `viewType` -
-            The type of view, as the integer value of a ProjectViewTypes constant.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the following properties: `viewName` - The name of the view, as a ProjectViewTypes constant.
+            `viewType` - The type of view, as the integer value of a ProjectViewTypes constant.
           type:
-            - '(result: AsyncResult<any>) => void'
-  - uid: office.Office.Document.getSelectedViewAsync_1
+            - 'office!Office.Document#getSelectedViewAsync~0:complex'
+  - uid: 'office!Office.Document#getSelectedViewAsync:member(2)'
     summary: Project documents only. Get the current selected View Type (Ex. Gantt) and View Name.
     name: getSelectedViewAsync(callback)
     fullName: getSelectedViewAsync(callback)
@@ -2224,12 +2295,12 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
-            the following properties: `viewName` - The name of the view, as a ProjectViewTypes constant. `viewType` -
-            The type of view, as the integer value of a ProjectViewTypes constant.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the following properties: `viewName` - The name of the view, as a ProjectViewTypes constant.
+            `viewType` - The type of view, as the integer value of a ProjectViewTypes constant.
           type:
-            - '(result: AsyncResult<any>) => void'
-  - uid: office.Office.Document.getTaskAsync
+            - 'office!Office.Document#getSelectedViewAsync~1:complex'
+  - uid: 'office!Office.Document#getTaskAsync:member(1)'
     summary: 'Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.'
     name: 'getTaskAsync(taskId, options, callback)'
     fullName: 'getTaskAsync(taskId, options, callback)'
@@ -2252,17 +2323,18 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
-            the following properties: `taskName` - The name of the task. `wssTaskId` - The ID of the task in the
-            synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the value
-            is 0. `resourceNames` - The comma-separated list of the names of resources that are assigned to the task.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the following properties: `taskName` - The name of the task. `wssTaskId` - The ID of the task in
+            the synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the
+            value is 0. `resourceNames` - The comma-separated list of the names of resources that are assigned to the
+            task.
           type:
-            - '(result: AsyncResult<any>) => void'
-  - uid: office.Office.Document.getTaskAsync_1
+            - 'office!Office.Document#getTaskAsync~0:complex'
+  - uid: 'office!Office.Document#getTaskAsync:member(2)'
     summary: 'Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.'
     name: 'getTaskAsync(taskId, callback)'
     fullName: 'getTaskAsync(taskId, callback)'
@@ -2357,13 +2429,14 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
-            the following properties: `taskName` - The name of the task. `wssTaskId` - The ID of the task in the
-            synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the value
-            is 0. `resourceNames` - The comma-separated list of the names of resources that are assigned to the task.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the following properties: `taskName` - The name of the task. `wssTaskId` - The ID of the task in
+            the synchronized SharePoint task list. If the project is not synchronized with a SharePoint task list, the
+            value is 0. `resourceNames` - The comma-separated list of the names of resources that are assigned to the
+            task.
           type:
-            - '(result: AsyncResult<any>) => void'
-  - uid: office.Office.Document.getTaskByIndexAsync
+            - 'office!Office.Document#getTaskAsync~1:complex'
+  - uid: 'office!Office.Document#getTaskByIndexAsync:member(1)'
     summary: |-
       Project documents only. Get the GUID of the task that has the specified index in the task collection.
 
@@ -2389,15 +2462,15 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
-            of the task as a string.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the task as a string.
           type:
-            - '(result: AsyncResult<string>) => void'
-  - uid: office.Office.Document.getTaskByIndexAsync_1
+            - 'office!Office.Document#getTaskByIndexAsync~0:complex'
+  - uid: 'office!Office.Document#getTaskByIndexAsync:member(2)'
     summary: |-
       Project documents only. Get the GUID of the task that has the specified index in the task collection.
 
@@ -2503,11 +2576,11 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the GUID
-            of the task as a string.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the GUID of the task as a string.
           type:
-            - '(result: AsyncResult<string>) => void'
-  - uid: office.Office.Document.getTaskFieldAsync
+            - 'office!Office.Document#getTaskByIndexAsync~1:complex'
+  - uid: 'office!Office.Document#getTaskFieldAsync:member(1)'
     summary: Project documents only. Get task field for provided task Id. (Ex. StartDate).
     name: 'getTaskFieldAsync(taskId, fieldId, options, callback)'
     fullName: 'getTaskFieldAsync(taskId, fieldId, options, callback)'
@@ -2534,15 +2607,15 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
-            the `fieldValue` property, which represents the value of the specified field.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the `fieldValue` property, which represents the value of the specified field.
           type:
-            - '(result: AsyncResult<any>) => void'
-  - uid: office.Office.Document.getTaskFieldAsync_1
+            - 'office!Office.Document#getTaskFieldAsync~0:complex'
+  - uid: 'office!Office.Document#getTaskFieldAsync:member(2)'
     summary: Project documents only. Get task field for provided task Id. (Ex. StartDate).
     name: 'getTaskFieldAsync(taskId, fieldId, callback)'
     fullName: 'getTaskFieldAsync(taskId, fieldId, callback)'
@@ -2657,11 +2730,11 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
-            the `fieldValue` property, which represents the value of the specified field.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the `fieldValue` property, which represents the value of the specified field.
           type:
-            - '(result: AsyncResult<any>) => void'
-  - uid: office.Office.Document.getWSSUrlAsync
+            - 'office!Office.Document#getTaskFieldAsync~1:complex'
+  - uid: 'office!Office.Document#getWSSUrlAsync:member(1)'
     summary: 'Project documents only. Get the WSS Url and list name for the Tasks List, the MPP is synced too.'
     name: 'getWSSUrlAsync(options, callback)'
     fullName: 'getWSSUrlAsync(options, callback)'
@@ -2678,16 +2751,16 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
-            the following properties: `listName` - the name of the synchronized SharePoint task list. `serverUrl` - the
-            URL of the synchronized SharePoint task list.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the following properties: `listName` - the name of the synchronized SharePoint task list.
+            `serverUrl` - the URL of the synchronized SharePoint task list.
           type:
-            - '(result: AsyncResult<any>) => void'
-  - uid: office.Office.Document.getWSSUrlAsync_1
+            - 'office!Office.Document#getWSSUrlAsync~0:complex'
+  - uid: 'office!Office.Document#getWSSUrlAsync:member(2)'
     summary: 'Project documents only. Get the WSS Url and list name for the Tasks List, the MPP is synced too.'
     name: getWSSUrlAsync(callback)
     fullName: getWSSUrlAsync(callback)
@@ -2704,12 +2777,12 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result contains
-            the following properties: `listName` - the name of the synchronized SharePoint task list. `serverUrl` - the
-            URL of the synchronized SharePoint task list.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            contains the following properties: `listName` - the name of the synchronized SharePoint task list.
+            `serverUrl` - the URL of the synchronized SharePoint task list.
           type:
-            - '(result: AsyncResult<any>) => void'
-  - uid: office.Office.Document.goToByIdAsync
+            - 'office!Office.Document#getWSSUrlAsync~1:complex'
+  - uid: 'office!Office.Document#goToByIdAsync:member(1)'
     summary: Goes to the specified object or location in the document.
     remarks: >-
       **Requirement set**: [Not in a
@@ -2755,19 +2828,19 @@ items:
         - id: goToType
           description: The type of the location to go to.
           type:
-            - office.Office.GoToType
+            - 'office!Office.GoToType:enum'
         - id: options
           description: Provides options for whether to select the location that is navigated to.
           type:
-            - office.Office.GoToByIdOptions
+            - 'office!Office.GoToByIdOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            current view.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the current view.
           type:
-            - '(result: AsyncResult<any>) => void'
-  - uid: office.Office.Document.goToByIdAsync_1
+            - 'office!Office.Document#goToByIdAsync~0:complex'
+  - uid: 'office!Office.Document#goToByIdAsync:member(2)'
     summary: Goes to the specified object or location in the document.
     remarks: >-
       **Requirement set**: [Not in a
@@ -2949,15 +3022,74 @@ items:
         - id: goToType
           description: The type of the location to go to.
           type:
-            - office.Office.GoToType
+            - 'office!Office.GoToType:enum'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            current view.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the current view.
           type:
-            - '(result: AsyncResult<any>) => void'
-  - uid: office.Office.Document.removeHandlerAsync
+            - 'office!Office.Document#goToByIdAsync~1:complex'
+  - uid: 'office!Office.Document#mode:member'
+    summary: Gets the mode the document is in.
+    name: mode
+    fullName: mode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'mode: DocumentMode;'
+      return:
+        type:
+          - 'office!Office.DocumentMode:enum'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          function displayDocumentMode() {
+              write(Office.context.document.mode);
+          }
+
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
+          ```javascript
+          // The following example initializes the add-in and then gets properties of the
+          // Document object that are available in the context of a Project document.
+          // A Project document is the opened, active project. To access members of the
+          // ProjectDocument object, use the Office.context.document object as shown in
+          // the code examples for ProjectDocument methods and events.
+          // The example assumes your add-in has a reference to the jQuery library and
+          // that the following page control is defined in the content div in the page body:
+          // <span id="message"></span>
+
+          (function () {
+              "use strict";
+
+              // The initialize function must be run each time a new page is loaded.
+              Office.initialize = function (reason) {
+                  $(document).ready(function () {
+
+                      // Get information about the document.
+                      showDocumentProperties();
+                  });
+              };
+
+              // Get the document mode and the URL of the active project.
+              function showDocumentProperties() {
+                  var output = String.format(
+                      'The document mode is {0}.<br/>The URL of the active project is {1}.',
+                      Office.context.document.mode,
+                      Office.context.document.url);
+                  $('#message').html(output);
+              }
+          })();
+          ```
+  - uid: 'office!Office.Document#removeHandlerAsync:member(1)'
     summary: Removes an event handler for the specified event type.
     remarks: >-
       **Requirement set**:
@@ -2979,18 +3111,18 @@ items:
         - id: eventType
           description: The event type. For document can be 'Document.SelectionChanged' or 'Document.ActiveViewChanged'.
           type:
-            - office.Office.EventType
+            - 'office!Office.EventType:enum'
         - id: options
           description: Provides options to determine which event handler or handlers are removed.
           type:
-            - office.Office.RemoveHandlerOptions
+            - 'office!Office.RemoveHandlerOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Document.removeHandlerAsync_1
+            - 'office!Office.Document#removeHandlerAsync~0:complex'
+  - uid: 'office!Office.Document#removeHandlerAsync:member(2)'
     summary: Removes an event handler for the specified event type.
     remarks: >-
       **Requirement set**:
@@ -3102,14 +3234,14 @@ items:
         - id: eventType
           description: The event type. For document can be 'Document.SelectionChanged' or 'Document.ActiveViewChanged'.
           type:
-            - office.Office.EventType
+            - 'office!Office.EventType:enum'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Document.setResourceFieldAsync
+            - 'office!Office.Document#removeHandlerAsync~1:complex'
+  - uid: 'office!Office.Document#setResourceFieldAsync:member(1)'
     summary: |-
       Project documents only. Set resource field for specified resource Id.
 
@@ -3143,14 +3275,14 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Document.setResourceFieldAsync_1
+            - 'office!Office.Document#setResourceFieldAsync~0:complex'
+  - uid: 'office!Office.Document#setResourceFieldAsync:member(2)'
     summary: |-
       Project documents only. Set resource field for specified resource Id.
 
@@ -3267,10 +3399,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Document.setSelectedDataAsync
+            - 'office!Office.Document#setResourceFieldAsync~1:complex'
+  - uid: 'office!Office.Document#setSelectedDataAsync:member(1)'
     summary: Writes the specified data into the current selection.
     remarks: >-
       **Requirement sets**:
@@ -3367,7 +3499,8 @@ items:
       original aspect ratio.</td> </tr> </table>
 
 
-      The possible values for the [Office.CoercionType](xref:office.Office.CoercionType) parameter vary by the host.
+      The possible values for the [Office.CoercionType](xref:office!Office.CoercionType:enum) parameter vary by the
+      host.
 
 
       <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr> <td>Excel, PowerPoint, Project, and
@@ -3543,7 +3676,7 @@ items:
       parameters:
         - id: data
           description: >-
-            The data to be set. Either a string or [Office.CoercionType](xref:office.Office.CoercionType) value, 2d
+            The data to be set. Either a string or [Office.CoercionType](xref:office!Office.CoercionType:enum) value, 2d
             array or TableData object.
 
 
@@ -3580,19 +3713,19 @@ items:
             only when one of the following conditions is met: (1) you are writing to all the cells of the column, or (2)
             there are already at least two different formulas in the column.
           type:
-            - 'string | TableData | any[][]'
+            - 'office!Office.Document#setSelectedDataAsync~0:complex'
         - id: options
           description: Provides options for how to insert data to the selection.
           type:
-            - office.Office.SetSelectedDataOptions
+            - 'office!Office.SetSelectedDataOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The AsyncResult.value property always returns
-            undefined because there is no object or data to retrieve.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The AsyncResult.value property
+            always returns undefined because there is no object or data to retrieve.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Document.setSelectedDataAsync_1
+            - 'office!Office.Document#setSelectedDataAsync~1:complex'
+  - uid: 'office!Office.Document#setSelectedDataAsync:member(2)'
     summary: Writes the specified data into the current selection.
     remarks: >-
       **Requirement sets**:
@@ -3689,7 +3822,8 @@ items:
       original aspect ratio.</td> </tr> </table>
 
 
-      The possible values for the [Office.CoercionType](xref:office.Office.CoercionType) parameter vary by the host.
+      The possible values for the [Office.CoercionType](xref:office!Office.CoercionType:enum) parameter vary by the
+      host.
 
 
       <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr> <td>Excel, PowerPoint, Project, and
@@ -3713,7 +3847,7 @@ items:
       parameters:
         - id: data
           description: >-
-            The data to be set. Either a string or [Office.CoercionType](xref:office.Office.CoercionType) value, 2d
+            The data to be set. Either a string or [Office.CoercionType](xref:office!Office.CoercionType:enum) value, 2d
             array or TableData object.
 
 
@@ -3750,15 +3884,15 @@ items:
             only when one of the following conditions is met: (1) you are writing to all the cells of the column, or (2)
             there are already at least two different formulas in the column.
           type:
-            - 'string | TableData | any[][]'
+            - 'office!Office.Document#setSelectedDataAsync~2:complex'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The AsyncResult.value property always returns
-            undefined because there is no object or data to retrieve.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The AsyncResult.value property
+            always returns undefined because there is no object or data to retrieve.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Document.setTaskFieldAsync
+            - 'office!Office.Document#setSelectedDataAsync~3:complex'
+  - uid: 'office!Office.Document#setTaskFieldAsync:member(1)'
     summary: |-
       Project documents only. Set task field for specified task Id.
 
@@ -3792,14 +3926,14 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Document.setTaskFieldAsync_1
+            - 'office!Office.Document#setTaskFieldAsync~0:complex'
+  - uid: 'office!Office.Document#setTaskFieldAsync:member(2)'
     summary: |-
       Project documents only. Set task field for specified task Id.
 
@@ -3916,138 +4050,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Document.bindings
-    summary: Gets an object that provides access to the bindings defined in the document.
-    remarks: >-
-      You don't instantiate the Document object directly in your script. To call members of the Document object to
-      interact with the current document or worksheet, use `Office.context.document` in your script.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function displayAllBindings() {
-          Office.context.document.bindings.getAllAsync(function (asyncResult) {
-              var bindingString = '';
-              for (var i in asyncResult.value) {
-                  bindingString += asyncResult.value[i].id + '\n';
-              }
-              write('Existing bindings: ' + bindingString);
-          });
-      }
-
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
-    name: bindings
-    fullName: bindings
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'bindings: Bindings;'
-      return:
-        type:
-          - office.Office.Bindings
-  - uid: office.Office.Document.customXmlParts
-    summary: Gets an object that represents the custom XML parts in the document.
-    name: customXmlParts
-    fullName: customXmlParts
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'customXmlParts: CustomXmlParts;'
-      return:
-        type:
-          - office.Office.CustomXmlParts
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          function getCustomXmlParts(){
-              Office.context.document.customXmlParts.getByNamespaceAsync('http://tempuri.org', function (asyncResult) {
-                  write('Retrieved ' + asyncResult.value.length + ' custom XML parts');
-              });
-          }
-
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
-  - uid: office.Office.Document.mode
-    summary: Gets the mode the document is in.
-    name: mode
-    fullName: mode
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'mode: DocumentMode;'
-      return:
-        type:
-          - office.Office.DocumentMode
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          function displayDocumentMode() {
-              write(Office.context.document.mode);
-          }
-
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
-          ```javascript
-          // The following example initializes the add-in and then gets properties of the
-          // Document object that are available in the context of a Project document.
-          // A Project document is the opened, active project. To access members of the
-          // ProjectDocument object, use the Office.context.document object as shown in
-          // the code examples for ProjectDocument methods and events.
-          // The example assumes your add-in has a reference to the jQuery library and
-          // that the following page control is defined in the content div in the page body:
-          // <span id="message"></span>
-
-          (function () {
-              "use strict";
-
-              // The initialize function must be run each time a new page is loaded.
-              Office.initialize = function (reason) {
-                  $(document).ready(function () {
-
-                      // Get information about the document.
-                      showDocumentProperties();
-                  });
-              };
-
-              // Get the document mode and the URL of the active project.
-              function showDocumentProperties() {
-                  var output = String.format(
-                      'The document mode is {0}.<br/>The URL of the active project is {1}.',
-                      Office.context.document.mode,
-                      Office.context.document.url);
-                  $('#message').html(output);
-              }
-          })();
-          ```
-  - uid: office.Office.Document.settings
+            - 'office!Office.Document#setTaskFieldAsync~1:complex'
+  - uid: 'office!Office.Document#settings:member'
     summary: >-
       Gets an object that represents the saved custom settings of the content or task pane add-in for the current
       document.
@@ -4060,8 +4066,8 @@ items:
       content: 'settings: Settings;'
       return:
         type:
-          - office.Office.Settings
-  - uid: office.Office.Document.url
+          - 'office!Office.Settings:interface'
+  - uid: 'office!Office.Document#url:member'
     summary: Gets the URL of the document that the host application currently has open. Returns null if the URL is unavailable.
     name: url
     fullName: url
@@ -4088,3 +4094,558 @@ items:
               document.getElementById('message').innerText += message; 
           }
           ```
+references:
+  - uid: 'office!Office.EventType:enum'
+    name: Office.EventType
+  - uid: 'office!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions
+  - uid: 'office!Office.Document#addHandlerAsync~0:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.Document#addHandlerAsync~1:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.Bindings:interface'
+    name: Bindings
+  - uid: 'office!Office.CustomXmlParts:interface'
+    name: CustomXmlParts
+  - uid: 'office!Office.Document#getActiveViewAsync~0:complex'
+    name: '(result: AsyncResult<"edit" | "read">) => void'
+    fullName: '(result: Office.AsyncResult<"edit" | "read">) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <"edit" | "read">) => void
+        fullName: <"edit" | "read">) => void
+  - uid: 'office!Office.Document#getActiveViewAsync~1:complex'
+    name: '(result: AsyncResult<"edit" | "read">) => void'
+    fullName: '(result: Office.AsyncResult<"edit" | "read">) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <"edit" | "read">) => void
+        fullName: <"edit" | "read">) => void
+  - uid: 'office!Office.FileType:enum'
+    name: FileType
+  - uid: 'office!Office.GetFileOptions:interface'
+    name: GetFileOptions
+  - uid: 'office!Office.Document#getFileAsync~0:complex'
+    name: '(result: AsyncResult<Office.File>) => void'
+    fullName: '(result: Office.AsyncResult<Office.File>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.File:interface'
+        name: Office.File
+        fullName: Office.File
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'office!Office.Document#getFileAsync~1:complex'
+    name: '(result: AsyncResult<Office.File>) => void'
+    fullName: '(result: Office.AsyncResult<Office.File>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.File:interface'
+        name: Office.File
+        fullName: Office.File
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'office!Office.Document#getFilePropertiesAsync~0:complex'
+    name: '(result: AsyncResult<Office.FileProperties>) => void'
+    fullName: '(result: Office.AsyncResult<Office.FileProperties>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.FileProperties:interface'
+        name: Office.FileProperties
+        fullName: Office.FileProperties
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'office!Office.Document#getFilePropertiesAsync~1:complex'
+    name: '(result: AsyncResult<Office.FileProperties>) => void'
+    fullName: '(result: Office.AsyncResult<Office.FileProperties>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.FileProperties:interface'
+        name: Office.FileProperties
+        fullName: Office.FileProperties
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'office!Office.Document#getMaxResourceIndexAsync~0:complex'
+    name: '(result: AsyncResult<number>) => void'
+    fullName: '(result: Office.AsyncResult<number>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <number>) => void
+        fullName: <number>) => void
+  - uid: 'office!Office.Document#getMaxResourceIndexAsync~1:complex'
+    name: '(result: AsyncResult<number>) => void'
+    fullName: '(result: Office.AsyncResult<number>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <number>) => void
+        fullName: <number>) => void
+  - uid: 'office!Office.Document#getMaxTaskIndexAsync~0:complex'
+    name: '(result: AsyncResult<number>) => void'
+    fullName: '(result: Office.AsyncResult<number>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <number>) => void
+        fullName: <number>) => void
+  - uid: 'office!Office.Document#getMaxTaskIndexAsync~1:complex'
+    name: '(result: AsyncResult<number>) => void'
+    fullName: '(result: Office.AsyncResult<number>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <number>) => void
+        fullName: <number>) => void
+  - uid: 'office!Office.Document#getProjectFieldAsync~0:complex'
+    name: '(result: AsyncResult<any>) => void'
+    fullName: '(result: Office.AsyncResult<any>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <any>) => void
+        fullName: <any>) => void
+  - uid: 'office!Office.Document#getProjectFieldAsync~1:complex'
+    name: '(result: AsyncResult<any>) => void'
+    fullName: '(result: Office.AsyncResult<any>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <any>) => void
+        fullName: <any>) => void
+  - uid: 'office!Office.Document#getResourceByIndexAsync~0:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'office!Office.Document#getResourceByIndexAsync~1:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'office!Office.Document#getResourceFieldAsync~0:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'office!Office.Document#getResourceFieldAsync~1:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'office!Office.CoercionType:enum'
+    name: Office.CoercionType
+  - uid: 'office!Office.GetSelectedDataOptions:interface'
+    name: GetSelectedDataOptions
+  - uid: 'office!Office.Document#getSelectedDataAsync~0:complex'
+    name: '(result: AsyncResult<T>) => void'
+    fullName: '(result: Office.AsyncResult<T>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <T>) => void
+        fullName: <T>) => void
+  - uid: 'office!Office.Document#getSelectedDataAsync~1:complex'
+    name: '(result: AsyncResult<T>) => void'
+    fullName: '(result: Office.AsyncResult<T>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <T>) => void
+        fullName: <T>) => void
+  - uid: 'office!Office.Document#getSelectedResourceAsync~0:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'office!Office.Document#getSelectedResourceAsync~1:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'office!Office.Document#getSelectedTaskAsync~0:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'office!Office.Document#getSelectedTaskAsync~1:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'office!Office.Document#getSelectedViewAsync~0:complex'
+    name: '(result: AsyncResult<any>) => void'
+    fullName: '(result: Office.AsyncResult<any>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <any>) => void
+        fullName: <any>) => void
+  - uid: 'office!Office.Document#getSelectedViewAsync~1:complex'
+    name: '(result: AsyncResult<any>) => void'
+    fullName: '(result: Office.AsyncResult<any>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <any>) => void
+        fullName: <any>) => void
+  - uid: 'office!Office.Document#getTaskAsync~0:complex'
+    name: '(result: AsyncResult<any>) => void'
+    fullName: '(result: Office.AsyncResult<any>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <any>) => void
+        fullName: <any>) => void
+  - uid: 'office!Office.Document#getTaskAsync~1:complex'
+    name: '(result: AsyncResult<any>) => void'
+    fullName: '(result: Office.AsyncResult<any>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <any>) => void
+        fullName: <any>) => void
+  - uid: 'office!Office.Document#getTaskByIndexAsync~0:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'office!Office.Document#getTaskByIndexAsync~1:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'office!Office.Document#getTaskFieldAsync~0:complex'
+    name: '(result: AsyncResult<any>) => void'
+    fullName: '(result: Office.AsyncResult<any>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <any>) => void
+        fullName: <any>) => void
+  - uid: 'office!Office.Document#getTaskFieldAsync~1:complex'
+    name: '(result: AsyncResult<any>) => void'
+    fullName: '(result: Office.AsyncResult<any>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <any>) => void
+        fullName: <any>) => void
+  - uid: 'office!Office.Document#getWSSUrlAsync~0:complex'
+    name: '(result: AsyncResult<any>) => void'
+    fullName: '(result: Office.AsyncResult<any>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <any>) => void
+        fullName: <any>) => void
+  - uid: 'office!Office.Document#getWSSUrlAsync~1:complex'
+    name: '(result: AsyncResult<any>) => void'
+    fullName: '(result: Office.AsyncResult<any>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <any>) => void
+        fullName: <any>) => void
+  - uid: 'office!Office.GoToType:enum'
+    name: GoToType
+  - uid: 'office!Office.GoToByIdOptions:interface'
+    name: GoToByIdOptions
+  - uid: 'office!Office.Document#goToByIdAsync~0:complex'
+    name: '(result: AsyncResult<any>) => void'
+    fullName: '(result: Office.AsyncResult<any>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <any>) => void
+        fullName: <any>) => void
+  - uid: 'office!Office.Document#goToByIdAsync~1:complex'
+    name: '(result: AsyncResult<any>) => void'
+    fullName: '(result: Office.AsyncResult<any>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <any>) => void
+        fullName: <any>) => void
+  - uid: 'office!Office.DocumentMode:enum'
+    name: DocumentMode
+  - uid: 'office!Office.RemoveHandlerOptions:interface'
+    name: RemoveHandlerOptions
+  - uid: 'office!Office.Document#removeHandlerAsync~0:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.Document#removeHandlerAsync~1:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.Document#setResourceFieldAsync~0:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.Document#setResourceFieldAsync~1:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.Document#setSelectedDataAsync~0:complex'
+    name: 'string | TableData | any[][]'
+    fullName: 'string | Office.TableData | any[][]'
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'office!Office.TableData:class'
+        name: TableData
+        fullName: Office.TableData
+      - name: ' | any[][]'
+        fullName: ' | any[][]'
+  - uid: 'office!Office.SetSelectedDataOptions:interface'
+    name: SetSelectedDataOptions
+  - uid: 'office!Office.Document#setSelectedDataAsync~1:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.Document#setSelectedDataAsync~2:complex'
+    name: 'string | TableData | any[][]'
+    fullName: 'string | Office.TableData | any[][]'
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'office!Office.TableData:class'
+        name: TableData
+        fullName: Office.TableData
+      - name: ' | any[][]'
+        fullName: ' | any[][]'
+  - uid: 'office!Office.Document#setSelectedDataAsync~3:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.Document#setTaskFieldAsync~0:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.Document#setTaskFieldAsync~1:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.Settings:interface'
+    name: Settings

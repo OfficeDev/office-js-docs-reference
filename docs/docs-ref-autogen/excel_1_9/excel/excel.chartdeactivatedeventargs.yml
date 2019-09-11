@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartDeactivatedEventArgs
+  - uid: 'excel!Excel.ChartDeactivatedEventArgs:interface'
     summary: |-
       Provides information about the chart that raised the Deactivated event.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartDeactivatedEventArgs.chartId
-      - excel.Excel.ChartDeactivatedEventArgs.type
-      - excel.Excel.ChartDeactivatedEventArgs.worksheetId
-  - uid: excel.Excel.ChartDeactivatedEventArgs.chartId
+      - 'excel!Excel.ChartDeactivatedEventArgs#chartId:member'
+      - 'excel!Excel.ChartDeactivatedEventArgs#type:member'
+      - 'excel!Excel.ChartDeactivatedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.ChartDeactivatedEventArgs#chartId:member'
     summary: |-
       Gets the id of the chart that is deactivated.
 
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ChartDeactivatedEventArgs.type
+  - uid: 'excel!Excel.ChartDeactivatedEventArgs#type:member'
     summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - '"ChartDeactivated"'
-  - uid: excel.Excel.ChartDeactivatedEventArgs.worksheetId
+  - uid: 'excel!Excel.ChartDeactivatedEventArgs#worksheetId:member'
     summary: |-
       Gets the id of the worksheet in which the chart is deactivated.
 

@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartPlotAreaFormatData
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatData:interface'
     summary: An interface describing the data returned by calling "chartPlotAreaFormat.toJSON()".
     name: Excel.Interfaces.ChartPlotAreaFormatData
     fullName: Excel.Interfaces.ChartPlotAreaFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartPlotAreaFormatData.border
-  - uid: excel.Excel.Interfaces.ChartPlotAreaFormatData.border
+      - 'excel!Excel.Interfaces.ChartPlotAreaFormatData#border:member'
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatData#border:member'
     summary: |-
       Represents the border attributes of a chart plotArea.
 
@@ -24,4 +24,7 @@ items:
       content: 'border?: Excel.Interfaces.ChartBorderData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartBorderData
+          - 'excel!Excel.Interfaces.ChartBorderData:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartBorderData:interface'
+    name: Excel.Interfaces.ChartBorderData

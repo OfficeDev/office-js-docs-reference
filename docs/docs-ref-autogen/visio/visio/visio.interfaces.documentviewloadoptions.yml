@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.DocumentViewLoadOptions
+  - uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions:interface'
     summary: |-
       Represents the DocumentView class.
 
@@ -10,15 +10,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.DocumentViewLoadOptions.$all
-      - visio.Visio.Interfaces.DocumentViewLoadOptions.disableHyperlinks
-      - visio.Visio.Interfaces.DocumentViewLoadOptions.disablePan
-      - visio.Visio.Interfaces.DocumentViewLoadOptions.disablePanZoomWindow
-      - visio.Visio.Interfaces.DocumentViewLoadOptions.disableZoom
-      - visio.Visio.Interfaces.DocumentViewLoadOptions.hideDiagramBoundary
-  - uid: visio.Visio.Interfaces.DocumentViewLoadOptions.$all
+      - 'visio!Visio.Interfaces.DocumentViewLoadOptions#$all:member'
+      - 'visio!Visio.Interfaces.DocumentViewLoadOptions#disableHyperlinks:member'
+      - 'visio!Visio.Interfaces.DocumentViewLoadOptions#disablePan:member'
+      - 'visio!Visio.Interfaces.DocumentViewLoadOptions#disablePanZoomWindow:member'
+      - 'visio!Visio.Interfaces.DocumentViewLoadOptions#disableZoom:member'
+      - 'visio!Visio.Interfaces.DocumentViewLoadOptions#hideDiagramBoundary:member'
+  - uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.DocumentViewLoadOptions.disableHyperlinks
+  - uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions#disableHyperlinks:member'
     summary: |-
       Disable Hyperlinks.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.DocumentViewLoadOptions.disablePan
+  - uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions#disablePan:member'
     summary: |-
       Disable Pan.
 
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.DocumentViewLoadOptions.disablePanZoomWindow
+  - uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions#disablePanZoomWindow:member'
     summary: |-
       Disable PanZoomWindow.
 
@@ -74,7 +74,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.DocumentViewLoadOptions.disableZoom
+  - uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions#disableZoom:member'
     summary: |-
       Disable Zoom.
 
@@ -89,7 +89,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.DocumentViewLoadOptions.hideDiagramBoundary
+  - uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions#hideDiagramBoundary:member'
     summary: |-
       Hide Diagram Boundary.
 

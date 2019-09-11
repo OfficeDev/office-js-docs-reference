@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.MailboxEnums.AttachmentContentFormat
+  - uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat:enum'
     summary: |-
       Specifies the formatting that applies to an attachment's content.
 
@@ -14,13 +14,13 @@ items:
     langs:
       - typeScript
     type: enum
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.MailboxEnums.AttachmentContentFormat.Base64
-      - outlook.Office.MailboxEnums.AttachmentContentFormat.Eml
-      - outlook.Office.MailboxEnums.AttachmentContentFormat.ICalendar
-      - outlook.Office.MailboxEnums.AttachmentContentFormat.Url
-  - uid: outlook.Office.MailboxEnums.AttachmentContentFormat.Base64
+      - 'outlook!Office.MailboxEnums.AttachmentContentFormat.Base64:member'
+      - 'outlook!Office.MailboxEnums.AttachmentContentFormat.Eml:member'
+      - 'outlook!Office.MailboxEnums.AttachmentContentFormat.ICalendar:member'
+      - 'outlook!Office.MailboxEnums.AttachmentContentFormat.Url:member'
+  - uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.Base64:member'
     summary: The content of the attachment is returned as a base64-encoded string.
     isPreview: true
     name: Base64
@@ -29,7 +29,7 @@ items:
       - typeScript
     type: field
     numericValue: '"base64"'
-  - uid: outlook.Office.MailboxEnums.AttachmentContentFormat.Eml
+  - uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.Eml:member'
     summary: The content of the attachment is returned as a string representing an .eml formatted file.
     isPreview: true
     name: Eml
@@ -38,7 +38,7 @@ items:
       - typeScript
     type: field
     numericValue: '"eml"'
-  - uid: outlook.Office.MailboxEnums.AttachmentContentFormat.ICalendar
+  - uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.ICalendar:member'
     summary: The content of the attachment is returned as a string representing an .icalendar formatted file.
     isPreview: true
     name: ICalendar
@@ -47,7 +47,7 @@ items:
       - typeScript
     type: field
     numericValue: '"iCalendar"'
-  - uid: outlook.Office.MailboxEnums.AttachmentContentFormat.Url
+  - uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.Url:member'
     summary: The content of the attachment is returned as a string representing a URL.
     isPreview: true
     name: Url

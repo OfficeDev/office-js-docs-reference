@@ -1,22 +1,22 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CommentData
+  - uid: 'excel!Excel.Interfaces.CommentData:interface'
     summary: An interface describing the data returned by calling "comment.toJSON()".
     name: Excel.Interfaces.CommentData
     fullName: Excel.Interfaces.CommentData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.CommentData.authorEmail
-      - excel.Excel.Interfaces.CommentData.authorName
-      - excel.Excel.Interfaces.CommentData.content
-      - excel.Excel.Interfaces.CommentData.creationDate
-      - excel.Excel.Interfaces.CommentData.id
-      - excel.Excel.Interfaces.CommentData.replies
-      - excel.Excel.Interfaces.CommentData.resolved
-  - uid: excel.Excel.Interfaces.CommentData.authorEmail
+      - 'excel!Excel.Interfaces.CommentData#authorEmail:member'
+      - 'excel!Excel.Interfaces.CommentData#authorName:member'
+      - 'excel!Excel.Interfaces.CommentData#content:member'
+      - 'excel!Excel.Interfaces.CommentData#creationDate:member'
+      - 'excel!Excel.Interfaces.CommentData#id:member'
+      - 'excel!Excel.Interfaces.CommentData#replies:member'
+      - 'excel!Excel.Interfaces.CommentData#resolved:member'
+  - uid: 'excel!Excel.Interfaces.CommentData#authorEmail:member'
     summary: >-
       Gets the email of the comment's author.
 
@@ -34,7 +34,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.CommentData.authorName
+  - uid: 'excel!Excel.Interfaces.CommentData#authorName:member'
     summary: >-
       Gets the name of the comment's author.
 
@@ -52,7 +52,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.CommentData.content
+  - uid: 'excel!Excel.Interfaces.CommentData#content:member'
     summary: >-
       Gets or sets the comment's content. The string is plain text.
 
@@ -70,7 +70,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.CommentData.creationDate
+  - uid: 'excel!Excel.Interfaces.CommentData#creationDate:member'
     summary: >-
       Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment
       does not have a creation date.
@@ -88,8 +88,8 @@ items:
       content: 'creationDate?: Date;'
       return:
         type:
-          - Date
-  - uid: excel.Excel.Interfaces.CommentData.id
+          - '!Date:interface'
+  - uid: 'excel!Excel.Interfaces.CommentData#id:member'
     summary: >-
       Represents the comment identifier. Read-only.
 
@@ -107,7 +107,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.CommentData.replies
+  - uid: 'excel!Excel.Interfaces.CommentData#replies:member'
     summary: >-
       Represents a collection of reply objects associated with the comment. Read-only.
 
@@ -124,8 +124,8 @@ items:
       content: 'replies?: Excel.Interfaces.CommentReplyData[];'
       return:
         type:
-          - 'Excel.Interfaces.CommentReplyData[]'
-  - uid: excel.Excel.Interfaces.CommentData.resolved
+          - 'excel!Excel.Interfaces.CommentData#replies~0:complex'
+  - uid: 'excel!Excel.Interfaces.CommentData#resolved:member'
     summary: >-
       Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
 
@@ -143,3 +143,15 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: '!Date:interface'
+    name: Date
+  - uid: 'excel!Excel.Interfaces.CommentData#replies~0:complex'
+    name: 'Excel.Interfaces.CommentReplyData[]'
+    fullName: 'Excel.Interfaces.CommentReplyData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.CommentReplyData:interface'
+        name: Excel.Interfaces.CommentReplyData
+        fullName: Excel.Interfaces.CommentReplyData
+      - name: '[]'
+        fullName: '[]'

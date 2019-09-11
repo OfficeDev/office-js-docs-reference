@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ThreeArrowsSet
+  - uid: 'excel!Excel.ThreeArrowsSet:interface'
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ThreeArrowsSet
     fullName: Excel.ThreeArrowsSet
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ThreeArrowsSet.greenUpArrow
-      - excel.Excel.ThreeArrowsSet.redDownArrow
-      - excel.Excel.ThreeArrowsSet.yellowSideArrow
-  - uid: excel.Excel.ThreeArrowsSet.greenUpArrow
+      - 'excel!Excel.ThreeArrowsSet#greenUpArrow:member'
+      - 'excel!Excel.ThreeArrowsSet#redDownArrow:member'
+      - 'excel!Excel.ThreeArrowsSet#yellowSideArrow:member'
+  - uid: 'excel!Excel.ThreeArrowsSet#greenUpArrow:member'
     name: greenUpArrow
     fullName: greenUpArrow
     langs:
@@ -22,8 +22,8 @@ items:
       content: 'greenUpArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.ThreeArrowsSet.redDownArrow
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeArrowsSet#redDownArrow:member'
     name: redDownArrow
     fullName: redDownArrow
     langs:
@@ -33,8 +33,8 @@ items:
       content: 'redDownArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.ThreeArrowsSet.yellowSideArrow
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeArrowsSet#yellowSideArrow:member'
     name: yellowSideArrow
     fullName: yellowSideArrow
     langs:
@@ -44,4 +44,7 @@ items:
       content: 'yellowSideArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - 'excel!Excel.Icon:interface'
+references:
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon

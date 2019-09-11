@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartLegendEntryLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions:interface'
     summary: |-
       Represents the legendEntry in legendEntryCollection.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartLegendEntryLoadOptions.$all
-      - excel.Excel.Interfaces.ChartLegendEntryLoadOptions.visible
-  - uid: excel.Excel.Interfaces.ChartLegendEntryLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions#visible:member'
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -25,7 +25,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLegendEntryLoadOptions.visible
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions#visible:member'
     summary: |-
       Represents the visible of a chart legend entry.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.WorksheetAddedEventArgs
+  - uid: 'excel!Excel.WorksheetAddedEventArgs:interface'
     summary: |-
       Provides information about the worksheet that raised the Added event.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.WorksheetAddedEventArgs.source
-      - excel.Excel.WorksheetAddedEventArgs.type
-      - excel.Excel.WorksheetAddedEventArgs.worksheetId
-  - uid: excel.Excel.WorksheetAddedEventArgs.source
+      - 'excel!Excel.WorksheetAddedEventArgs#source:member'
+      - 'excel!Excel.WorksheetAddedEventArgs#type:member'
+      - 'excel!Excel.WorksheetAddedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.WorksheetAddedEventArgs#source:member'
     summary: |-
       Gets the source of the event. See Excel.EventSource for details.
 
@@ -29,8 +29,8 @@ items:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
         type:
-          - Excel.EventSource | "Local" | "Remote"
-  - uid: excel.Excel.WorksheetAddedEventArgs.type
+          - 'excel!Excel.WorksheetAddedEventArgs#source~0:complex'
+  - uid: 'excel!Excel.WorksheetAddedEventArgs#type:member'
     summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - '"WorksheetAdded"'
-  - uid: excel.Excel.WorksheetAddedEventArgs.worksheetId
+  - uid: 'excel!Excel.WorksheetAddedEventArgs#worksheetId:member'
     summary: |-
       Gets the id of the worksheet that is added to the workbook.
 
@@ -75,3 +75,13 @@ items:
               });
           }
           ```
+references:
+  - uid: 'excel!Excel.WorksheetAddedEventArgs#source~0:complex'
+    name: Excel.EventSource | "Local" | "Remote"
+    fullName: Excel.EventSource | "Local" | "Remote"
+    spec.typeScript:
+      - uid: 'excel!Excel.EventSource:enum'
+        name: Excel.EventSource
+        fullName: Excel.EventSource
+      - name: ' | "Local" | "Remote"'
+        fullName: ' | "Local" | "Remote"'

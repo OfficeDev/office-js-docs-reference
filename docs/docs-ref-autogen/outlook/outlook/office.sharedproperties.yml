@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.SharedProperties
+  - uid: 'outlook!Office.SharedProperties:interface'
     summary: |-
       Represents the properties of an appointment or message in a shared folder, mailbox, or calendar.
 
@@ -18,13 +18,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.SharedProperties.delegatePermissions
-      - outlook.Office.SharedProperties.owner
-      - outlook.Office.SharedProperties.targetMailbox
-      - outlook.Office.SharedProperties.targetRestUrl
-  - uid: outlook.Office.SharedProperties.delegatePermissions
+      - 'outlook!Office.SharedProperties#delegatePermissions:member'
+      - 'outlook!Office.SharedProperties#owner:member'
+      - 'outlook!Office.SharedProperties#targetMailbox:member'
+      - 'outlook!Office.SharedProperties#targetRestUrl:member'
+  - uid: 'outlook!Office.SharedProperties#delegatePermissions:member'
     summary: The permissions that the delegate has on a shared folder.
     isPreview: true
     name: delegatePermissions
@@ -36,8 +36,8 @@ items:
       content: 'delegatePermissions: MailboxEnums.DelegatePermissions;'
       return:
         type:
-          - MailboxEnums.DelegatePermissions
-  - uid: outlook.Office.SharedProperties.owner
+          - 'outlook!Office.MailboxEnums.DelegatePermissions:enum'
+  - uid: 'outlook!Office.SharedProperties#owner:member'
     summary: The email address of the owner of a shared item.
     isPreview: true
     name: owner
@@ -50,7 +50,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.SharedProperties.targetMailbox
+  - uid: 'outlook!Office.SharedProperties#targetMailbox:member'
     summary: |-
       The target/owner's mailbox. Use with targetRestUrl to construct REST operation's URL.
 
@@ -66,7 +66,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.SharedProperties.targetRestUrl
+  - uid: 'outlook!Office.SharedProperties#targetRestUrl:member'
     summary: >-
       The REST API's base URL (currently https://outlook.office.com/api). Use with targetMailbox to construct REST
       operation's URL.
@@ -84,3 +84,6 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'outlook!Office.MailboxEnums.DelegatePermissions:enum'
+    name: MailboxEnums.DelegatePermissions

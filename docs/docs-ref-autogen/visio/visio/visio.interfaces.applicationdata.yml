@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.ApplicationData
+  - uid: 'visio!Visio.Interfaces.ApplicationData:interface'
     summary: An interface describing the data returned by calling "application.toJSON()".
     name: Visio.Interfaces.ApplicationData
     fullName: Visio.Interfaces.ApplicationData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.ApplicationData.showBorders
-      - visio.Visio.Interfaces.ApplicationData.showToolbars
-  - uid: visio.Visio.Interfaces.ApplicationData.showBorders
+      - 'visio!Visio.Interfaces.ApplicationData#showBorders:member'
+      - 'visio!Visio.Interfaces.ApplicationData#showToolbars:member'
+  - uid: 'visio!Visio.Interfaces.ApplicationData#showBorders:member'
     summary: |-
       Show or hide the iFrame application borders.
 
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.ApplicationData.showToolbars
+  - uid: 'visio!Visio.Interfaces.ApplicationData#showToolbars:member'
     summary: |-
       Show or hide the standard toolbars.
 

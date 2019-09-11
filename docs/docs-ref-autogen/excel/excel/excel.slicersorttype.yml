@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.SlicerSortType
+  - uid: 'excel!Excel.SlicerSortType:enum'
     summary: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.SlicerSortType.ascending
-      - excel.Excel.SlicerSortType.dataSourceOrder
-      - excel.Excel.SlicerSortType.descending
-  - uid: excel.Excel.SlicerSortType.ascending
+      - 'excel!Excel.SlicerSortType.ascending:member'
+      - 'excel!Excel.SlicerSortType.dataSourceOrder:member'
+      - 'excel!Excel.SlicerSortType.descending:member'
+  - uid: 'excel!Excel.SlicerSortType.ascending:member'
     isPreview: true
     name: ascending
     fullName: ascending
@@ -23,7 +23,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Ascending"'
-  - uid: excel.Excel.SlicerSortType.dataSourceOrder
+  - uid: 'excel!Excel.SlicerSortType.dataSourceOrder:member'
     isPreview: true
     name: dataSourceOrder
     fullName: dataSourceOrder
@@ -31,7 +31,7 @@ items:
       - typeScript
     type: field
     numericValue: '"DataSourceOrder"'
-  - uid: excel.Excel.SlicerSortType.descending
+  - uid: 'excel!Excel.SlicerSortType.descending:member'
     isPreview: true
     name: descending
     fullName: descending

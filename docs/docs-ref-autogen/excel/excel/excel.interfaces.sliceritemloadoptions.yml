@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.SlicerItemLoadOptions
+  - uid: 'excel!Excel.Interfaces.SlicerItemLoadOptions:interface'
     summary: >-
       Represents a slicer item in a slicer.
 
@@ -13,14 +13,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.SlicerItemLoadOptions.$all
-      - excel.Excel.Interfaces.SlicerItemLoadOptions.hasData
-      - excel.Excel.Interfaces.SlicerItemLoadOptions.isSelected
-      - excel.Excel.Interfaces.SlicerItemLoadOptions.key
-      - excel.Excel.Interfaces.SlicerItemLoadOptions.name
-  - uid: excel.Excel.Interfaces.SlicerItemLoadOptions.$all
+      - 'excel!Excel.Interfaces.SlicerItemLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.SlicerItemLoadOptions#hasData:member'
+      - 'excel!Excel.Interfaces.SlicerItemLoadOptions#isSelected:member'
+      - 'excel!Excel.Interfaces.SlicerItemLoadOptions#key:member'
+      - 'excel!Excel.Interfaces.SlicerItemLoadOptions#name:member'
+  - uid: 'excel!Excel.Interfaces.SlicerItemLoadOptions#$all:member'
     isPreview: true
     name: $all
     fullName: $all
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerItemLoadOptions.hasData
+  - uid: 'excel!Excel.Interfaces.SlicerItemLoadOptions#hasData:member'
     summary: >-
       True if the slicer item has data.
 
@@ -50,7 +50,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerItemLoadOptions.isSelected
+  - uid: 'excel!Excel.Interfaces.SlicerItemLoadOptions#isSelected:member'
     summary: >-
       True if the slicer item is selected. Setting this value will not clear other SlicerItems' selected state. By
       default, if the slicer item is the only one selected, when it is deselected, all items will be selected.
@@ -69,7 +69,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerItemLoadOptions.key
+  - uid: 'excel!Excel.Interfaces.SlicerItemLoadOptions#key:member'
     summary: >-
       Represents the unique value representing the slicer item.
 
@@ -87,7 +87,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerItemLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.SlicerItemLoadOptions#name:member'
     summary: >-
       Represents the title displayed in the UI.
 

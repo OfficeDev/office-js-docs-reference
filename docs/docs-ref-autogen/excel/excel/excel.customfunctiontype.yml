@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CustomFunctionType
+  - uid: 'excel!Excel.CustomFunctionType:enum'
     summary: '\[ [API set: CustomFunctions 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: true
     name: Excel.CustomFunctionType
@@ -8,12 +8,12 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.CustomFunctionType.invalid
-      - excel.Excel.CustomFunctionType.script
-      - excel.Excel.CustomFunctionType.webService
-  - uid: excel.Excel.CustomFunctionType.invalid
+      - 'excel!Excel.CustomFunctionType.invalid:member'
+      - 'excel!Excel.CustomFunctionType.script:member'
+      - 'excel!Excel.CustomFunctionType.webService:member'
+  - uid: 'excel!Excel.CustomFunctionType.invalid:member'
     isPreview: true
     name: invalid
     fullName: invalid
@@ -21,7 +21,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Invalid"'
-  - uid: excel.Excel.CustomFunctionType.script
+  - uid: 'excel!Excel.CustomFunctionType.script:member'
     isPreview: true
     name: script
     fullName: script
@@ -29,7 +29,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Script"'
-  - uid: excel.Excel.CustomFunctionType.webService
+  - uid: 'excel!Excel.CustomFunctionType.webService:member'
     isPreview: true
     name: webService
     fullName: webService

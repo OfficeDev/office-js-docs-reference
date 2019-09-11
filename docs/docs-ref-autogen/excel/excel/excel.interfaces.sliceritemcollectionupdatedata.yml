@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.SlicerItemCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.SlicerItemCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the SlicerItemCollection object, for use in "slicerItemCollection.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.SlicerItemCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.SlicerItemCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.SlicerItemCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.SlicerItemCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: Excel.Interfaces.SlicerItemData[];'
       return:
         type:
-          - 'Excel.Interfaces.SlicerItemData[]'
+          - 'excel!Excel.Interfaces.SlicerItemCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.SlicerItemCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.SlicerItemData[]'
+    fullName: 'Excel.Interfaces.SlicerItemData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.SlicerItemData:interface'
+        name: Excel.Interfaces.SlicerItemData
+        fullName: Excel.Interfaces.SlicerItemData
+      - name: '[]'
+        fullName: '[]'

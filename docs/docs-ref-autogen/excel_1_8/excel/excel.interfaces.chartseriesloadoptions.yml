@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions:interface'
     summary: |-
       Represents a series in a chart.
 
@@ -10,34 +10,34 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.$all
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.axisGroup
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.chartType
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.dataLabels
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.doughnutHoleSize
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.explosion
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.filtered
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.firstSliceAngle
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.format
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.gapWidth
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.hasDataLabels
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.invertIfNegative
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.markerBackgroundColor
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.markerForegroundColor
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.markerSize
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.markerStyle
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.name
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.overlap
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.plotOrder
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.points
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.secondPlotSize
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.showShadow
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.smooth
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.splitType
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.varyByCategories
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#axisGroup:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#chartType:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#dataLabels:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#doughnutHoleSize:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#explosion:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#filtered:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#firstSliceAngle:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#gapWidth:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#hasDataLabels:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#invertIfNegative:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#markerBackgroundColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#markerForegroundColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#markerSize:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#markerStyle:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#overlap:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#plotOrder:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#points:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#secondPlotSize:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#showShadow:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#smooth:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#splitType:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#varyByCategories:member'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.axisGroup
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#axisGroup:member'
     summary: |-
       Returns or sets the group for the specified series. Read/Write
 
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.chartType
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#chartType:member'
     summary: |-
       Represents the chart type of a series. See Excel.ChartType for details.
 
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.dataLabels
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#dataLabels:member'
     summary: |-
       Represents a collection of all dataLabels in the series.
 
@@ -92,8 +92,8 @@ items:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelsLoadOptions
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.doughnutHoleSize
+          - 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#doughnutHoleSize:member'
     summary: >-
       Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnutExploded charts. Throws an
       invalid argument exception on invalid charts.
@@ -110,7 +110,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.explosion
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#explosion:member'
     summary: >-
       Returns or sets the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no
       explosion (the tip of the slice is in the center of the pie). Read/Write.
@@ -127,7 +127,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.filtered
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#filtered:member'
     summary: |-
       Boolean value representing if the series is filtered or not. Not applicable for surface charts.
 
@@ -142,7 +142,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.firstSliceAngle
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#firstSliceAngle:member'
     summary: >-
       Returns or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical).
       Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
@@ -159,7 +159,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.format
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#format:member'
     summary: |-
       Represents the formatting of a chart series, which includes fill and line formatting.
 
@@ -173,8 +173,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartSeriesFormatLoadOptions
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.gapWidth
+          - 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#gapWidth:member'
     summary: >-
       Represents the gap width of a chart series. Only valid on bar and column charts, as well as specific classes of
       line and pie charts. Throws an invalid argument exception on invalid charts.
@@ -191,7 +191,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.hasDataLabels
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#hasDataLabels:member'
     summary: |-
       Boolean value representing if the series has data labels or not.
 
@@ -206,7 +206,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.invertIfNegative
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#invertIfNegative:member'
     summary: |-
       True if Microsoft Excel inverts the pattern in the item when it corresponds to a negative number. Read/Write.
 
@@ -221,7 +221,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.markerBackgroundColor
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#markerBackgroundColor:member'
     summary: |-
       Represents markers background color of a chart series.
 
@@ -236,7 +236,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.markerForegroundColor
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#markerForegroundColor:member'
     summary: |-
       Represents markers foreground color of a chart series.
 
@@ -251,7 +251,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.markerSize
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#markerSize:member'
     summary: |-
       Represents marker size of a chart series.
 
@@ -266,7 +266,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.markerStyle
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#markerStyle:member'
     summary: |-
       Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
 
@@ -281,7 +281,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#name:member'
     summary: |-
       Represents the name of a series in a chart.
 
@@ -296,7 +296,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.overlap
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#overlap:member'
     summary: >-
       Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and
       2-D column charts. Read/Write.
@@ -313,7 +313,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.plotOrder
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#plotOrder:member'
     summary: |-
       Represents the plot order of a chart series within the chart group.
 
@@ -328,7 +328,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.points
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#points:member'
     summary: |-
       Represents a collection of all points in the series.
 
@@ -342,8 +342,8 @@ items:
       content: 'points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPointsCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.secondPlotSize
+          - 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#secondPlotSize:member'
     summary: >-
       Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a
       percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write.
@@ -360,7 +360,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.showShadow
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#showShadow:member'
     summary: |-
       Boolean value representing if the series has a shadow or not.
 
@@ -375,7 +375,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.smooth
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#smooth:member'
     summary: |-
       Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
 
@@ -390,7 +390,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.splitType
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#splitType:member'
     summary: |-
       Returns or sets the way the two sections of either a pie of pie chart or a bar of pie chart are split. Read/Write.
 
@@ -405,7 +405,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.varyByCategories
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#varyByCategories:member'
     summary: >-
       True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one
       series. Read/Write.
@@ -422,3 +422,10 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
+    name: Excel.Interfaces.ChartDataLabelsLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartSeriesFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface'
+    name: Excel.Interfaces.ChartPointsCollectionLoadOptions

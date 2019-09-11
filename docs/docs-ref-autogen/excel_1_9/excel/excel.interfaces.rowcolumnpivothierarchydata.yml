@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyData
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface'
     summary: An interface describing the data returned by calling "rowColumnPivotHierarchy.toJSON()".
     name: Excel.Interfaces.RowColumnPivotHierarchyData
     fullName: Excel.Interfaces.RowColumnPivotHierarchyData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RowColumnPivotHierarchyData.fields
-      - excel.Excel.Interfaces.RowColumnPivotHierarchyData.id
-      - excel.Excel.Interfaces.RowColumnPivotHierarchyData.name
-      - excel.Excel.Interfaces.RowColumnPivotHierarchyData.position
-  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyData.fields
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#fields:member'
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#id:member'
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#name:member'
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#position:member'
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#fields:member'
     summary: |-
       Returns the PivotFields associated with the RowColumnPivotHierarchy.
 
@@ -27,8 +27,8 @@ items:
       content: 'fields?: Excel.Interfaces.PivotFieldData[];'
       return:
         type:
-          - 'Excel.Interfaces.PivotFieldData[]'
-  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyData.id
+          - 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#fields~0:complex'
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#id:member'
     summary: |-
       Id of the RowColumnPivotHierarchy.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyData.name
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#name:member'
     summary: |-
       Name of the RowColumnPivotHierarchy.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyData.position
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#position:member'
     summary: |-
       Position of the RowColumnPivotHierarchy.
 
@@ -73,3 +73,13 @@ items:
       return:
         type:
           - number
+references:
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData#fields~0:complex'
+    name: 'Excel.Interfaces.PivotFieldData[]'
+    fullName: 'Excel.Interfaces.PivotFieldData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PivotFieldData:interface'
+        name: Excel.Interfaces.PivotFieldData
+        fullName: Excel.Interfaces.PivotFieldData
+      - name: '[]'
+        fullName: '[]'

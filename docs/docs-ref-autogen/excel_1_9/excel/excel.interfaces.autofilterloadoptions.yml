@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.AutoFilterLoadOptions
+  - uid: 'excel!Excel.Interfaces.AutoFilterLoadOptions:interface'
     summary: >-
       Represents the AutoFilter object. AutoFilter turns the values in Excel column into specific filters based on the
       cell contents.
@@ -12,13 +12,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.AutoFilterLoadOptions.$all
-      - excel.Excel.Interfaces.AutoFilterLoadOptions.criteria
-      - excel.Excel.Interfaces.AutoFilterLoadOptions.enabled
-      - excel.Excel.Interfaces.AutoFilterLoadOptions.isDataFiltered
-  - uid: excel.Excel.Interfaces.AutoFilterLoadOptions.$all
+      - 'excel!Excel.Interfaces.AutoFilterLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.AutoFilterLoadOptions#criteria:member'
+      - 'excel!Excel.Interfaces.AutoFilterLoadOptions#enabled:member'
+      - 'excel!Excel.Interfaces.AutoFilterLoadOptions#isDataFiltered:member'
+  - uid: 'excel!Excel.Interfaces.AutoFilterLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.AutoFilterLoadOptions.criteria
+  - uid: 'excel!Excel.Interfaces.AutoFilterLoadOptions#criteria:member'
     summary: |-
       An array that holds all the filter criteria in the autofiltered range. Read-Only.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.AutoFilterLoadOptions.enabled
+  - uid: 'excel!Excel.Interfaces.AutoFilterLoadOptions#enabled:member'
     summary: |-
       Indicates if the AutoFilter is enabled or not. Read-Only.
 
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.AutoFilterLoadOptions.isDataFiltered
+  - uid: 'excel!Excel.Interfaces.AutoFilterLoadOptions#isDataFiltered:member'
     summary: |-
       Indicates if the AutoFilter has filter criteria. Read-Only.
 

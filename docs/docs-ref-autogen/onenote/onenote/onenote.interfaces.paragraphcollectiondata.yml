@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.ParagraphCollectionData
+  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionData:interface'
     summary: An interface describing the data returned by calling "paragraphCollection.toJSON()".
     name: OneNote.Interfaces.ParagraphCollectionData
     fullName: OneNote.Interfaces.ParagraphCollectionData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.ParagraphCollectionData.items
-  - uid: onenote.OneNote.Interfaces.ParagraphCollectionData.items
+      - 'onenote!OneNote.Interfaces.ParagraphCollectionData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionData#items:member'
     name: items
     fullName: items
     langs:
@@ -20,4 +20,14 @@ items:
       content: 'items?: OneNote.Interfaces.ParagraphData[];'
       return:
         type:
-          - 'OneNote.Interfaces.ParagraphData[]'
+          - 'onenote!OneNote.Interfaces.ParagraphCollectionData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionData#items~0:complex'
+    name: 'OneNote.Interfaces.ParagraphData[]'
+    fullName: 'OneNote.Interfaces.ParagraphData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.ParagraphData:interface'
+        name: OneNote.Interfaces.ParagraphData
+        fullName: OneNote.Interfaces.ParagraphData
+      - name: '[]'
+        fullName: '[]'

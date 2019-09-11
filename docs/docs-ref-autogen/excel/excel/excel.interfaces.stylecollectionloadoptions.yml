@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions:interface'
     summary: |-
       Represents a collection of all the styles.
 
@@ -10,33 +10,33 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.autoIndent
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.borders
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.builtIn
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.fill
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.font
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.formulaHidden
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.horizontalAlignment
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.includeAlignment
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.includeBorder
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.includeFont
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.includeNumber
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.includePatterns
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.includeProtection
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.indentLevel
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.locked
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.name
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.numberFormat
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.numberFormatLocal
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.readingOrder
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.shrinkToFit
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.textOrientation
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.verticalAlignment
-      - excel.Excel.Interfaces.StyleCollectionLoadOptions.wrapText
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#autoIndent:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#borders:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#builtIn:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#fill:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#font:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#formulaHidden:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#horizontalAlignment:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#includeAlignment:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#includeBorder:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#includeFont:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#includeNumber:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#includePatterns:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#includeProtection:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#indentLevel:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#locked:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#numberFormat:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#numberFormatLocal:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#readingOrder:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#shrinkToFit:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#textOrientation:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#verticalAlignment:member'
+      - 'excel!Excel.Interfaces.StyleCollectionLoadOptions#wrapText:member'
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -47,7 +47,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.autoIndent
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#autoIndent:member'
     summary: >-
       For EACH ITEM in the collection: Indicates if text is automatically indented when the text alignment in a cell is
       set to equal distribution.
@@ -64,7 +64,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.borders
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#borders:member'
     summary: >-
       For EACH ITEM in the collection: A Border collection of four Border objects that represent the style of the four
       borders.
@@ -80,8 +80,8 @@ items:
       content: 'borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeBorderCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.builtIn
+          - 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#builtIn:member'
     summary: |-
       For EACH ITEM in the collection: Indicates if the style is a built-in style.
 
@@ -96,7 +96,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.fill
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#fill:member'
     summary: |-
       For EACH ITEM in the collection: The Fill of the style.
 
@@ -110,8 +110,8 @@ items:
       content: 'fill?: Excel.Interfaces.RangeFillLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFillLoadOptions
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.font
+          - 'excel!Excel.Interfaces.RangeFillLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#font:member'
     summary: |-
       For EACH ITEM in the collection: A Font object that represents the font of the style.
 
@@ -125,8 +125,8 @@ items:
       content: 'font?: Excel.Interfaces.RangeFontLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFontLoadOptions
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.formulaHidden
+          - 'excel!Excel.Interfaces.RangeFontLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#formulaHidden:member'
     summary: |-
       For EACH ITEM in the collection: Indicates if the formula will be hidden when the worksheet is protected.
 
@@ -141,7 +141,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.horizontalAlignment
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#horizontalAlignment:member'
     summary: >-
       For EACH ITEM in the collection: Represents the horizontal alignment for the style. See Excel.HorizontalAlignment
       for details.
@@ -158,7 +158,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.includeAlignment
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#includeAlignment:member'
     summary: >-
       For EACH ITEM in the collection: Indicates if the style includes the AutoIndent, HorizontalAlignment,
       VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
@@ -175,7 +175,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.includeBorder
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#includeBorder:member'
     summary: >-
       For EACH ITEM in the collection: Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight
       border properties.
@@ -192,7 +192,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.includeFont
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#includeFont:member'
     summary: >-
       For EACH ITEM in the collection: Indicates if the style includes the Background, Bold, Color, ColorIndex,
       FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
@@ -209,7 +209,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.includeNumber
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#includeNumber:member'
     summary: |-
       For EACH ITEM in the collection: Indicates if the style includes the NumberFormat property.
 
@@ -224,7 +224,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.includePatterns
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#includePatterns:member'
     summary: >-
       For EACH ITEM in the collection: Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern,
       PatternColor, and PatternColorIndex interior properties.
@@ -241,7 +241,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.includeProtection
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#includeProtection:member'
     summary: >-
       For EACH ITEM in the collection: Indicates if the style includes the FormulaHidden and Locked protection
       properties.
@@ -258,7 +258,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.indentLevel
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#indentLevel:member'
     summary: |-
       For EACH ITEM in the collection: An integer from 0 to 250 that indicates the indent level for the style.
 
@@ -273,7 +273,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.locked
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#locked:member'
     summary: |-
       For EACH ITEM in the collection: Indicates if the object is locked when the worksheet is protected.
 
@@ -288,7 +288,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#name:member'
     summary: |-
       For EACH ITEM in the collection: The name of the style.
 
@@ -303,7 +303,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.numberFormat
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#numberFormat:member'
     summary: |-
       For EACH ITEM in the collection: The format code of the number format for the style.
 
@@ -318,7 +318,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.numberFormatLocal
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#numberFormatLocal:member'
     summary: |-
       For EACH ITEM in the collection: The localized format code of the number format for the style.
 
@@ -333,7 +333,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.readingOrder
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#readingOrder:member'
     summary: |-
       For EACH ITEM in the collection: The reading order for the style.
 
@@ -348,7 +348,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.shrinkToFit
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#shrinkToFit:member'
     summary: |-
       For EACH ITEM in the collection: Indicates if text automatically shrinks to fit in the available column width.
 
@@ -363,7 +363,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.textOrientation
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#textOrientation:member'
     summary: |-
       For EACH ITEM in the collection: The text orientation for the style.
 
@@ -378,7 +378,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.verticalAlignment
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#verticalAlignment:member'
     summary: >-
       For EACH ITEM in the collection: Represents the vertical alignment for the style. See Excel.VerticalAlignment for
       details.
@@ -395,7 +395,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleCollectionLoadOptions.wrapText
+  - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#wrapText:member'
     summary: |-
       For EACH ITEM in the collection: Indicates if Microsoft Excel wraps the text in the object.
 
@@ -410,3 +410,10 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface'
+    name: Excel.Interfaces.RangeBorderCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.RangeFillLoadOptions:interface'
+    name: Excel.Interfaces.RangeFillLoadOptions
+  - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions:interface'
+    name: Excel.Interfaces.RangeFontLoadOptions

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.ShapeDataItemCollectionLoadOptions
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions:interface'
     summary: |-
       Represents the ShapeDataItemCollection for a given Shape.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.ShapeDataItemCollectionLoadOptions.$all
-      - visio.Visio.Interfaces.ShapeDataItemCollectionLoadOptions.format
-      - visio.Visio.Interfaces.ShapeDataItemCollectionLoadOptions.formattedValue
-      - visio.Visio.Interfaces.ShapeDataItemCollectionLoadOptions.label
-      - visio.Visio.Interfaces.ShapeDataItemCollectionLoadOptions.value
-  - uid: visio.Visio.Interfaces.ShapeDataItemCollectionLoadOptions.$all
+      - 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions#$all:member'
+      - 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions#format:member'
+      - 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions#formattedValue:member'
+      - 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions#label:member'
+      - 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions#value:member'
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.ShapeDataItemCollectionLoadOptions.format
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions#format:member'
     summary: |-
       For EACH ITEM in the collection: A string that specifies the format of the shape data item. Read-only.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.ShapeDataItemCollectionLoadOptions.formattedValue
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions#formattedValue:member'
     summary: |-
       For EACH ITEM in the collection: A string that specifies the formatted value of the shape data item. Read-only.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.ShapeDataItemCollectionLoadOptions.label
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions#label:member'
     summary: |-
       For EACH ITEM in the collection: A string that specifies the label of the shape data item. Read-only.
 
@@ -73,7 +73,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.ShapeDataItemCollectionLoadOptions.value
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions#value:member'
     summary: |-
       For EACH ITEM in the collection: A string that specifies the value of the shape data item. Read-only.
 

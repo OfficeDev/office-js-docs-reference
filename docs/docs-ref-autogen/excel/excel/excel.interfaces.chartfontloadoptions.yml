@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartFontLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
     summary: |-
       This object represents the font attributes (font name, font size, color, etc.) for a chart object.
 
@@ -10,16 +10,16 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartFontLoadOptions.$all
-      - excel.Excel.Interfaces.ChartFontLoadOptions.bold
-      - excel.Excel.Interfaces.ChartFontLoadOptions.color
-      - excel.Excel.Interfaces.ChartFontLoadOptions.italic
-      - excel.Excel.Interfaces.ChartFontLoadOptions.name
-      - excel.Excel.Interfaces.ChartFontLoadOptions.size
-      - excel.Excel.Interfaces.ChartFontLoadOptions.underline
-  - uid: excel.Excel.Interfaces.ChartFontLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartFontLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartFontLoadOptions#bold:member'
+      - 'excel!Excel.Interfaces.ChartFontLoadOptions#color:member'
+      - 'excel!Excel.Interfaces.ChartFontLoadOptions#italic:member'
+      - 'excel!Excel.Interfaces.ChartFontLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.ChartFontLoadOptions#size:member'
+      - 'excel!Excel.Interfaces.ChartFontLoadOptions#underline:member'
+  - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartFontLoadOptions.bold
+  - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions#bold:member'
     summary: |-
       Represents the bold status of font.
 
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartFontLoadOptions.color
+  - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions#color:member'
     summary: |-
       HTML color code representation of the text color. E.g. \#FF0000 represents Red.
 
@@ -60,7 +60,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartFontLoadOptions.italic
+  - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions#italic:member'
     summary: |-
       Represents the italic status of the font.
 
@@ -75,7 +75,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartFontLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions#name:member'
     summary: |-
       Font name (e.g. "Calibri")
 
@@ -90,7 +90,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartFontLoadOptions.size
+  - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions#size:member'
     summary: |-
       Size of the font (e.g. 11)
 
@@ -105,7 +105,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartFontLoadOptions.underline
+  - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions#underline:member'
     summary: |-
       Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.
 

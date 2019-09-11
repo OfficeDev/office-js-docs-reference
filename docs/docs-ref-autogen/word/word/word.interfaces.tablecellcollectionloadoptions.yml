@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions
+  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions:interface'
     summary: |-
       Contains the collection of the document's TableCell objects.
 
@@ -10,21 +10,21 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.TableCellCollectionLoadOptions.$all
-      - word.Word.Interfaces.TableCellCollectionLoadOptions.body
-      - word.Word.Interfaces.TableCellCollectionLoadOptions.cellIndex
-      - word.Word.Interfaces.TableCellCollectionLoadOptions.columnWidth
-      - word.Word.Interfaces.TableCellCollectionLoadOptions.horizontalAlignment
-      - word.Word.Interfaces.TableCellCollectionLoadOptions.parentRow
-      - word.Word.Interfaces.TableCellCollectionLoadOptions.parentTable
-      - word.Word.Interfaces.TableCellCollectionLoadOptions.rowIndex
-      - word.Word.Interfaces.TableCellCollectionLoadOptions.shadingColor
-      - word.Word.Interfaces.TableCellCollectionLoadOptions.value
-      - word.Word.Interfaces.TableCellCollectionLoadOptions.verticalAlignment
-      - word.Word.Interfaces.TableCellCollectionLoadOptions.width
-  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.$all
+      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#$all:member'
+      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#body:member'
+      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#cellIndex:member'
+      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#columnWidth:member'
+      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#horizontalAlignment:member'
+      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#parentRow:member'
+      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#parentTable:member'
+      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#rowIndex:member'
+      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#shadingColor:member'
+      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#value:member'
+      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#verticalAlignment:member'
+      - 'word!Word.Interfaces.TableCellCollectionLoadOptions#width:member'
+  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -35,7 +35,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.body
+  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#body:member'
     summary: |-
       For EACH ITEM in the collection: Gets the body object of the cell.
 
@@ -49,8 +49,8 @@ items:
       content: 'body?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.BodyLoadOptions
-  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.cellIndex
+          - 'word!Word.Interfaces.BodyLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#cellIndex:member'
     summary: |-
       For EACH ITEM in the collection: Gets the index of the cell in its row. Read-only.
 
@@ -65,7 +65,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.columnWidth
+  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#columnWidth:member'
     summary: >-
       For EACH ITEM in the collection: Gets and sets the width of the cell's column in points. This is applicable to
       uniform tables.
@@ -82,7 +82,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.horizontalAlignment
+  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#horizontalAlignment:member'
     summary: >-
       For EACH ITEM in the collection: Gets and sets the horizontal alignment of the cell. The value can be 'Left',
       'Centered', 'Right', or 'Justified'.
@@ -99,7 +99,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.parentRow
+  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#parentRow:member'
     summary: |-
       For EACH ITEM in the collection: Gets the parent row of the cell.
 
@@ -113,8 +113,8 @@ items:
       content: 'parentRow?: Word.Interfaces.TableRowLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableRowLoadOptions
-  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.parentTable
+          - 'word!Word.Interfaces.TableRowLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#parentTable:member'
     summary: |-
       For EACH ITEM in the collection: Gets the parent table of the cell.
 
@@ -128,8 +128,8 @@ items:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableLoadOptions
-  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.rowIndex
+          - 'word!Word.Interfaces.TableLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#rowIndex:member'
     summary: |-
       For EACH ITEM in the collection: Gets the index of the cell's row in the table. Read-only.
 
@@ -144,7 +144,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.shadingColor
+  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#shadingColor:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the shading color of the cell. Color is specified in "\#RRGGBB"
       format or by using the color name.
@@ -161,7 +161,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.value
+  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#value:member'
     summary: |-
       For EACH ITEM in the collection: Gets and sets the text of the cell.
 
@@ -176,7 +176,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.verticalAlignment
+  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#verticalAlignment:member'
     summary: >-
       For EACH ITEM in the collection: Gets and sets the vertical alignment of the cell. The value can be 'Top',
       'Center', or 'Bottom'.
@@ -193,7 +193,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.width
+  - uid: 'word!Word.Interfaces.TableCellCollectionLoadOptions#width:member'
     summary: |-
       For EACH ITEM in the collection: Gets the width of the cell in points. Read-only.
 
@@ -208,3 +208,10 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
+    name: Word.Interfaces.BodyLoadOptions
+  - uid: 'word!Word.Interfaces.TableRowLoadOptions:interface'
+    name: Word.Interfaces.TableRowLoadOptions
+  - uid: 'word!Word.Interfaces.TableLoadOptions:interface'
+    name: Word.Interfaces.TableLoadOptions

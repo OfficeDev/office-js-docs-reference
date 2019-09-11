@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.PivotTableStyleCollection
+  - uid: 'excel!Excel.PivotTableStyleCollection:class'
     summary: >-
       Represents a collection of PivotTable styles.
 
@@ -14,22 +14,22 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.PivotTableStyleCollection.add
-      - excel.Excel.PivotTableStyleCollection.context
-      - excel.Excel.PivotTableStyleCollection.getCount
-      - excel.Excel.PivotTableStyleCollection.getDefault
-      - excel.Excel.PivotTableStyleCollection.getItem
-      - excel.Excel.PivotTableStyleCollection.getItemOrNullObject
-      - excel.Excel.PivotTableStyleCollection.items
-      - excel.Excel.PivotTableStyleCollection.load
-      - excel.Excel.PivotTableStyleCollection.load_1
-      - excel.Excel.PivotTableStyleCollection.load_2
-      - excel.Excel.PivotTableStyleCollection.setDefault
-      - excel.Excel.PivotTableStyleCollection.toJSON
-  - uid: excel.Excel.PivotTableStyleCollection.add
+      - 'excel!Excel.PivotTableStyleCollection#add:member(1)'
+      - 'excel!Excel.PivotTableStyleCollection#context:member'
+      - 'excel!Excel.PivotTableStyleCollection#getCount:member(1)'
+      - 'excel!Excel.PivotTableStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.PivotTableStyleCollection#getItem:member(1)'
+      - 'excel!Excel.PivotTableStyleCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.PivotTableStyleCollection#items:member'
+      - 'excel!Excel.PivotTableStyleCollection#load:member(1)'
+      - 'excel!Excel.PivotTableStyleCollection#load:member(2)'
+      - 'excel!Excel.PivotTableStyleCollection#load:member(3)'
+      - 'excel!Excel.PivotTableStyleCollection#setDefault:member(1)'
+      - 'excel!Excel.PivotTableStyleCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.PivotTableStyleCollection#add:member(1)'
     summary: >-
       Creates a blank PivotTableStyle with the specified name.
 
@@ -46,7 +46,7 @@ items:
       content: 'add(name: string, makeUniqueName?: boolean): Excel.PivotTableStyle;'
       return:
         type:
-          - excel.Excel.PivotTableStyle
+          - 'excel!Excel.PivotTableStyle:class'
         description: The newly created PivotTableStyle.
       parameters:
         - id: name
@@ -59,7 +59,7 @@ items:
           description: 'Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.'
           type:
             - boolean
-  - uid: excel.Excel.PivotTableStyleCollection.context
+  - uid: 'excel!Excel.PivotTableStyleCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -73,8 +73,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.PivotTableStyleCollection.getCount
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PivotTableStyleCollection#getCount:member(1)'
     summary: >-
       Gets the number of PivotTable styles in the collection.
 
@@ -91,9 +91,9 @@ items:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
         type:
-          - OfficeExtension.ClientResult<number>
+          - 'excel!Excel.PivotTableStyleCollection#getCount~0:complex'
         description: ''
-  - uid: excel.Excel.PivotTableStyleCollection.getDefault
+  - uid: 'excel!Excel.PivotTableStyleCollection#getDefault:member(1)'
     summary: >-
       Gets the default PivotTableStyle for the parent object's scope.
 
@@ -110,9 +110,9 @@ items:
       content: 'getDefault(): Excel.PivotTableStyle;'
       return:
         type:
-          - excel.Excel.PivotTableStyle
+          - 'excel!Excel.PivotTableStyle:class'
         description: The PivotTableStyle object that is the current default PivotTableStyle.
-  - uid: excel.Excel.PivotTableStyleCollection.getItem
+  - uid: 'excel!Excel.PivotTableStyleCollection#getItem:member(1)'
     summary: >-
       Gets a PivotTableStyle by name.
 
@@ -129,14 +129,14 @@ items:
       content: 'getItem(name: string): Excel.PivotTableStyle;'
       return:
         type:
-          - excel.Excel.PivotTableStyle
+          - 'excel!Excel.PivotTableStyle:class'
         description: The PivotTableStyle object whose name matches the input.
       parameters:
         - id: name
           description: Name of the PivotTableStyle to be retrieved.
           type:
             - string
-  - uid: excel.Excel.PivotTableStyleCollection.getItemOrNullObject
+  - uid: 'excel!Excel.PivotTableStyleCollection#getItemOrNullObject:member(1)'
     summary: >-
       Gets a PivotTableStyle by name. If the PivotTableStyle does not exist, will return a null object.
 
@@ -153,14 +153,14 @@ items:
       content: 'getItemOrNullObject(name: string): Excel.PivotTableStyle;'
       return:
         type:
-          - excel.Excel.PivotTableStyle
+          - 'excel!Excel.PivotTableStyle:class'
         description: The PivotTableStyle object whose name matches the input.
       parameters:
         - id: name
           description: Name of the PivotTableStyle to be retrieved.
           type:
             - string
-  - uid: excel.Excel.PivotTableStyleCollection.items
+  - uid: 'excel!Excel.PivotTableStyleCollection#items:member'
     summary: Gets the loaded child items in this collection.
     isPreview: true
     name: items
@@ -172,8 +172,8 @@ items:
       content: 'readonly items: Excel.PivotTableStyle[];'
       return:
         type:
-          - 'Excel.PivotTableStyle[]'
-  - uid: excel.Excel.PivotTableStyleCollection.load
+          - 'excel!Excel.PivotTableStyleCollection#items~0:complex'
+  - uid: 'excel!Excel.PivotTableStyleCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -207,14 +207,14 @@ items:
         Excel.PivotTableStyleCollection;
       return:
         type:
-          - excel.Excel.PivotTableStyleCollection
+          - 'excel!Excel.PivotTableStyleCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.PivotTableStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.PivotTableStyleCollection.load_1
+            - 'excel!Excel.PivotTableStyleCollection#load~0:complex'
+  - uid: 'excel!Excel.PivotTableStyleCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -228,14 +228,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.PivotTableStyleCollection;'
       return:
         type:
-          - excel.Excel.PivotTableStyleCollection
+          - 'excel!Excel.PivotTableStyleCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.PivotTableStyleCollection.load_2
+  - uid: 'excel!Excel.PivotTableStyleCollection#load:member(3)'
     isPreview: true
     name: load(option)
     fullName: load(option)
@@ -246,14 +246,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.PivotTableStyleCollection;'
       return:
         type:
-          - excel.Excel.PivotTableStyleCollection
+          - 'excel!Excel.PivotTableStyleCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
-  - uid: excel.Excel.PivotTableStyleCollection.setDefault
+            - 'excel!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.PivotTableStyleCollection#setDefault:member(1)'
     summary: >-
       Sets the default PivotTableStyle for use in the parent object's scope.
 
@@ -276,8 +276,8 @@ items:
         - id: newDefaultStyle
           description: The PivotTableStyle object or name of the PivotTableStyle object that should be the new default.
           type:
-            - PivotTableStyle | string
-  - uid: excel.Excel.PivotTableStyleCollection.toJSON
+            - 'excel!Excel.PivotTableStyleCollection#setDefault~0:complex'
+  - uid: 'excel!Excel.PivotTableStyleCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -294,5 +294,57 @@ items:
       content: 'toJSON(): Excel.Interfaces.PivotTableStyleCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.PivotTableStyleCollectionData
+          - 'excel!Excel.Interfaces.PivotTableStyleCollectionData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.PivotTableStyle:class'
+    name: Excel.PivotTableStyle
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.PivotTableStyleCollection#getCount~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.PivotTableStyleCollection#items~0:complex'
+    name: 'Excel.PivotTableStyle[]'
+    fullName: 'Excel.PivotTableStyle[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.PivotTableStyle:class'
+        name: Excel.PivotTableStyle
+        fullName: Excel.PivotTableStyle
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.PivotTableStyleCollection:class'
+    name: Excel.PivotTableStyleCollection
+  - uid: 'excel!Excel.PivotTableStyleCollection#load~0:complex'
+    name: Excel.Interfaces.PivotTableStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.PivotTableStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionLoadOptions:interface'
+        name: Excel.Interfaces.PivotTableStyleCollectionLoadOptions
+        fullName: Excel.Interfaces.PivotTableStyleCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+        name: Excel.Interfaces.CollectionLoadOptions
+        fullName: Excel.Interfaces.CollectionLoadOptions
+  - uid: 'excel!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.PivotTableStyleCollection#setDefault~0:complex'
+    name: PivotTableStyle | string
+    fullName: Excel.PivotTableStyle | string
+    spec.typeScript:
+      - uid: 'excel!Excel.PivotTableStyle:class'
+        name: PivotTableStyle
+        fullName: Excel.PivotTableStyle
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionData:interface'
+    name: Excel.Interfaces.PivotTableStyleCollectionData

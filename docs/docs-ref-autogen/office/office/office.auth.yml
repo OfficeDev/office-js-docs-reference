@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.Auth
+  - uid: 'office!Office.Auth:interface'
     summary: >-
       The Office Auth namespace, Office.context.auth, provides a method that allows the Office host to obtain an access
       token to the add-in's web application. Indirectly, this also enables the add-in to access the signed-in user's
@@ -11,11 +11,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.Auth.getAccessTokenAsync
-      - office.Office.Auth.getAccessTokenAsync_1
-  - uid: office.Office.Auth.getAccessTokenAsync
+      - 'office!Office.Auth#getAccessTokenAsync:member(1)'
+      - 'office!Office.Auth#getAccessTokenAsync:member(2)'
+  - uid: 'office!Office.Auth#getAccessTokenAsync:member(1)'
     summary: >-
       Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables
       add-ins to identify users. Server side code can use this token to access Microsoft Graph for the add-in's web
@@ -69,15 +69,15 @@ items:
         - id: options
           description: Optional. Accepts an AuthOptions object to define sign-on behaviors.
           type:
-            - office.Office.AuthOptions
+            - 'office!Office.AuthOptions:interface'
         - id: callback
           description: >-
             Optional. Accepts a callback method that can use parse the token for the user's ID or use the token in the
             "on behalf of" flow to get access to Microsoft Graph. If AsyncResult.status is "succeeded", then
             AsyncResult.value is the raw AAD v. 2.0-formatted access token.
           type:
-            - '(result: AsyncResult<string>) => void'
-  - uid: office.Office.Auth.getAccessTokenAsync_1
+            - 'office!Office.Auth#getAccessTokenAsync~0:complex'
+  - uid: 'office!Office.Auth#getAccessTokenAsync:member(2)'
     summary: >-
       Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables
       add-ins to identify users. Server side code can use this token to access Microsoft Graph for the add-in's web
@@ -117,4 +117,29 @@ items:
             "on behalf of" flow to get access to Microsoft Graph. If AsyncResult.status is "succeeded", then
             AsyncResult.value is the raw AAD v. 2.0-formatted access token.
           type:
-            - '(result: AsyncResult<string>) => void'
+            - 'office!Office.Auth#getAccessTokenAsync~1:complex'
+references:
+  - uid: 'office!Office.AuthOptions:interface'
+    name: AuthOptions
+  - uid: 'office!Office.Auth#getAccessTokenAsync~0:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'office!Office.Auth#getAccessTokenAsync~1:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void

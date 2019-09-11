@@ -1,20 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartErrorBarsData
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsData:interface'
     summary: An interface describing the data returned by calling "chartErrorBars.toJSON()".
     name: Excel.Interfaces.ChartErrorBarsData
     fullName: Excel.Interfaces.ChartErrorBarsData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartErrorBarsData.endStyleCap
-      - excel.Excel.Interfaces.ChartErrorBarsData.format
-      - excel.Excel.Interfaces.ChartErrorBarsData.include
-      - excel.Excel.Interfaces.ChartErrorBarsData.type
-      - excel.Excel.Interfaces.ChartErrorBarsData.visible
-  - uid: excel.Excel.Interfaces.ChartErrorBarsData.endStyleCap
+      - 'excel!Excel.Interfaces.ChartErrorBarsData#endStyleCap:member'
+      - 'excel!Excel.Interfaces.ChartErrorBarsData#format:member'
+      - 'excel!Excel.Interfaces.ChartErrorBarsData#include:member'
+      - 'excel!Excel.Interfaces.ChartErrorBarsData#type:member'
+      - 'excel!Excel.Interfaces.ChartErrorBarsData#visible:member'
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsData#endStyleCap:member'
     summary: |-
       Specifies whether or not the error bars have an end style cap.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartErrorBarsData.format
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsData#format:member'
     summary: |-
       Specifies the formatting type of the error bars.
 
@@ -43,8 +43,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartErrorBarsFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartErrorBarsFormatData
-  - uid: excel.Excel.Interfaces.ChartErrorBarsData.include
+          - 'excel!Excel.Interfaces.ChartErrorBarsFormatData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsData#include:member'
     summary: |-
       Specifies which parts of the error bars to include.
 
@@ -58,8 +58,8 @@ items:
       content: 'include?: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues";'
       return:
         type:
-          - Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues"
-  - uid: excel.Excel.Interfaces.ChartErrorBarsData.type
+          - 'excel!Excel.Interfaces.ChartErrorBarsData#include~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsData#type:member'
     summary: |-
       The type of range marked by the error bars.
 
@@ -73,8 +73,8 @@ items:
       content: 'type?: Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom";'
       return:
         type:
-          - Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"
-  - uid: excel.Excel.Interfaces.ChartErrorBarsData.visible
+          - 'excel!Excel.Interfaces.ChartErrorBarsData#type~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsData#visible:member'
     summary: |-
       Specifies whether or not the error bars are displayed.
 
@@ -89,3 +89,24 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatData:interface'
+    name: Excel.Interfaces.ChartErrorBarsFormatData
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsData#include~0:complex'
+    name: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues"
+    fullName: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartErrorBarsInclude:enum'
+        name: Excel.ChartErrorBarsInclude
+        fullName: Excel.ChartErrorBarsInclude
+      - name: ' | "Both" | "MinusValues" | "PlusValues"'
+        fullName: ' | "Both" | "MinusValues" | "PlusValues"'
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsData#type~0:complex'
+    name: Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"
+    fullName: Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartErrorBarsType:enum'
+        name: Excel.ChartErrorBarsType
+        fullName: Excel.ChartErrorBarsType
+      - name: ' | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"'
+        fullName: ' | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"'

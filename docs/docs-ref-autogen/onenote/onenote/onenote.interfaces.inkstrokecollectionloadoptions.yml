@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions:interface'
     summary: |-
       Represents a collection of InkStroke objects.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions.$all
-      - onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions.floatingInk
-      - onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions.id
-  - uid: onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions.$all
+      - 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#floatingInk:member'
+      - 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#id:member'
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions.floatingInk
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#floatingInk:member'
     summary: |-
       For EACH ITEM in the collection: Gets the ID of the InkStroke object.
 
@@ -40,8 +40,8 @@ items:
       content: 'floatingInk?: OneNote.Interfaces.FloatingInkLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.FloatingInkLoadOptions
-  - uid: onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions.id
+          - 'onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions#id:member'
     summary: |-
       For EACH ITEM in the collection: Gets the ID of the InkStroke object. Read-only.
 
@@ -56,3 +56,6 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface'
+    name: OneNote.Interfaces.FloatingInkLoadOptions

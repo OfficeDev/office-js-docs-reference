@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeViewCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.RangeViewCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the RangeViewCollection object, for use in "rangeViewCollection.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RangeViewCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.RangeViewCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.RangeViewCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.RangeViewCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: Excel.Interfaces.RangeViewData[];'
       return:
         type:
-          - 'Excel.Interfaces.RangeViewData[]'
+          - 'excel!Excel.Interfaces.RangeViewCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.RangeViewCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.RangeViewData[]'
+    fullName: 'Excel.Interfaces.RangeViewData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.RangeViewData:interface'
+        name: Excel.Interfaces.RangeViewData
+        fullName: Excel.Interfaces.RangeViewData
+      - name: '[]'
+        fullName: '[]'

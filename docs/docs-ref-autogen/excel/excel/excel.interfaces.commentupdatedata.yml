@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CommentUpdateData
+  - uid: 'excel!Excel.Interfaces.CommentUpdateData:interface'
     summary: 'An interface for updating data on the Comment object, for use in "comment.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.CommentUpdateData
     fullName: Excel.Interfaces.CommentUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.CommentUpdateData.content
-      - excel.Excel.Interfaces.CommentUpdateData.resolved
-  - uid: excel.Excel.Interfaces.CommentUpdateData.content
+      - 'excel!Excel.Interfaces.CommentUpdateData#content:member'
+      - 'excel!Excel.Interfaces.CommentUpdateData#resolved:member'
+  - uid: 'excel!Excel.Interfaces.CommentUpdateData#content:member'
     summary: >-
       Gets or sets the comment's content. The string is plain text.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.CommentUpdateData.resolved
+  - uid: 'excel!Excel.Interfaces.CommentUpdateData#resolved:member'
     summary: >-
       Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
 

@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.WorksheetCollectionData
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionData:interface'
     summary: An interface describing the data returned by calling "worksheetCollection.toJSON()".
     name: Excel.Interfaces.WorksheetCollectionData
     fullName: Excel.Interfaces.WorksheetCollectionData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.WorksheetCollectionData.items
-  - uid: excel.Excel.Interfaces.WorksheetCollectionData.items
+      - 'excel!Excel.Interfaces.WorksheetCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionData#items:member'
     name: items
     fullName: items
     langs:
@@ -20,4 +20,14 @@ items:
       content: 'items?: Excel.Interfaces.WorksheetData[];'
       return:
         type:
-          - 'Excel.Interfaces.WorksheetData[]'
+          - 'excel!Excel.Interfaces.WorksheetCollectionData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionData#items~0:complex'
+    name: 'Excel.Interfaces.WorksheetData[]'
+    fullName: 'Excel.Interfaces.WorksheetData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.WorksheetData:interface'
+        name: Excel.Interfaces.WorksheetData
+        fullName: Excel.Interfaces.WorksheetData
+      - name: '[]'
+        fullName: '[]'

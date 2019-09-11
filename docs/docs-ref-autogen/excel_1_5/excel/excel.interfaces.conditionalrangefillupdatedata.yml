@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalRangeFillUpdateData
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFillUpdateData:interface'
     summary: >-
       An interface for updating data on the ConditionalRangeFill object, for use in "conditionalRangeFill.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,4 +9,4 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.TableCell
+  - uid: 'onenote!OneNote.TableCell:class'
     summary: |-
       Represents a cell in a OneNote table.
 
@@ -11,30 +11,30 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: onenote
+      - 'onenote!OfficeExtension.ClientObject:class'
+    package: onenote!
     children:
-      - onenote.OneNote.TableCell.appendHtml
-      - onenote.OneNote.TableCell.appendImage
-      - onenote.OneNote.TableCell.appendRichText
-      - onenote.OneNote.TableCell.appendTable
-      - onenote.OneNote.TableCell.cellIndex
-      - onenote.OneNote.TableCell.clear
-      - onenote.OneNote.TableCell.context
-      - onenote.OneNote.TableCell.id
-      - onenote.OneNote.TableCell.load
-      - onenote.OneNote.TableCell.load_1
-      - onenote.OneNote.TableCell.load_2
-      - onenote.OneNote.TableCell.paragraphs
-      - onenote.OneNote.TableCell.parentRow
-      - onenote.OneNote.TableCell.rowIndex
-      - onenote.OneNote.TableCell.set
-      - onenote.OneNote.TableCell.set_1
-      - onenote.OneNote.TableCell.shadingColor
-      - onenote.OneNote.TableCell.toJSON
-      - onenote.OneNote.TableCell.track
-      - onenote.OneNote.TableCell.untrack
-  - uid: onenote.OneNote.TableCell.appendHtml
+      - 'onenote!OneNote.TableCell#appendHtml:member(1)'
+      - 'onenote!OneNote.TableCell#appendImage:member(1)'
+      - 'onenote!OneNote.TableCell#appendRichText:member(1)'
+      - 'onenote!OneNote.TableCell#appendTable:member(1)'
+      - 'onenote!OneNote.TableCell#cellIndex:member'
+      - 'onenote!OneNote.TableCell#clear:member(1)'
+      - 'onenote!OneNote.TableCell#context:member'
+      - 'onenote!OneNote.TableCell#id:member'
+      - 'onenote!OneNote.TableCell#load:member(1)'
+      - 'onenote!OneNote.TableCell#load:member(2)'
+      - 'onenote!OneNote.TableCell#load:member(3)'
+      - 'onenote!OneNote.TableCell#paragraphs:member'
+      - 'onenote!OneNote.TableCell#parentRow:member'
+      - 'onenote!OneNote.TableCell#rowIndex:member'
+      - 'onenote!OneNote.TableCell#set:member(1)'
+      - 'onenote!OneNote.TableCell#set:member(2)'
+      - 'onenote!OneNote.TableCell#shadingColor:member'
+      - 'onenote!OneNote.TableCell#toJSON:member(1)'
+      - 'onenote!OneNote.TableCell#track:member(1)'
+      - 'onenote!OneNote.TableCell#untrack:member(1)'
+  - uid: 'onenote!OneNote.TableCell#appendHtml:member(1)'
     summary: |-
       Adds the specified HTML to the bottom of the TableCell.
 
@@ -93,7 +93,7 @@ items:
             the OneNote add-ins JavaScript API.
           type:
             - string
-  - uid: onenote.OneNote.TableCell.appendImage
+  - uid: 'onenote!OneNote.TableCell#appendImage:member(1)'
     summary: |-
       Adds the specified image to table cell.
 
@@ -107,7 +107,7 @@ items:
       content: 'appendImage(base64EncodedImage: string, width: number, height: number): OneNote.Image;'
       return:
         type:
-          - onenote.OneNote.Image
+          - 'onenote!OneNote.Image:class'
         description: ''
       parameters:
         - id: base64EncodedImage
@@ -122,7 +122,7 @@ items:
           description: Optional. Height in the unit of Points. The default value is null and image height will be respected.
           type:
             - number
-  - uid: onenote.OneNote.TableCell.appendRichText
+  - uid: 'onenote!OneNote.TableCell#appendRichText:member(1)'
     summary: |-
       Adds the specified text to table cell.
 
@@ -136,7 +136,7 @@ items:
       content: 'appendRichText(paragraphText: string): OneNote.RichText;'
       return:
         type:
-          - onenote.OneNote.RichText
+          - 'onenote!OneNote.RichText:class'
         description: |-
 
 
@@ -179,7 +179,7 @@ items:
           description: HTML string to append.
           type:
             - string
-  - uid: onenote.OneNote.TableCell.appendTable
+  - uid: 'onenote!OneNote.TableCell#appendTable:member(1)'
     summary: |-
       Adds a table with the specified number of rows and columns to table cell.
 
@@ -193,7 +193,7 @@ items:
       content: 'appendTable(rowCount: number, columnCount: number, values?: string[][]): OneNote.Table;'
       return:
         type:
-          - onenote.OneNote.Table
+          - 'onenote!OneNote.Table:class'
         description: ''
       parameters:
         - id: rowCount
@@ -208,7 +208,7 @@ items:
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
-  - uid: onenote.OneNote.TableCell.cellIndex
+  - uid: 'onenote!OneNote.TableCell#cellIndex:member'
     summary: |-
       Gets the index of the cell in its row. Read-only.
 
@@ -223,7 +223,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.TableCell.clear
+  - uid: 'onenote!OneNote.TableCell#clear:member(1)'
     summary: |-
       Clears the contents of the cell.
 
@@ -239,7 +239,7 @@ items:
         type:
           - void
         description: ''
-  - uid: onenote.OneNote.TableCell.context
+  - uid: 'onenote!OneNote.TableCell#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -252,8 +252,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
-  - uid: onenote.OneNote.TableCell.id
+          - 'onenote!OneNote.RequestContext:class'
+  - uid: 'onenote!OneNote.TableCell#id:member'
     summary: |-
       Gets the ID of the cell. Read-only.
 
@@ -268,7 +268,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.TableCell.load
+  - uid: 'onenote!OneNote.TableCell#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -299,14 +299,14 @@ items:
       content: 'load(option?: OneNote.Interfaces.TableCellLoadOptions): OneNote.TableCell;'
       return:
         type:
-          - onenote.OneNote.TableCell
+          - 'onenote!OneNote.TableCell:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.TableCellLoadOptions
-  - uid: onenote.OneNote.TableCell.load_1
+            - 'onenote!OneNote.Interfaces.TableCellLoadOptions:interface'
+  - uid: 'onenote!OneNote.TableCell#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -319,7 +319,7 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.TableCell;'
       return:
         type:
-          - onenote.OneNote.TableCell
+          - 'onenote!OneNote.TableCell:class'
         description: |-
 
 
@@ -412,7 +412,7 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.TableCell.load_2
+  - uid: 'onenote!OneNote.TableCell#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -425,7 +425,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.TableCell;'
       return:
         type:
-          - onenote.OneNote.TableCell
+          - 'onenote!OneNote.TableCell:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -434,7 +434,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: onenote.OneNote.TableCell.paragraphs
+  - uid: 'onenote!OneNote.TableCell#paragraphs:member'
     summary: |-
       Gets the collection of Paragraph objects in the TableCell. Read-only.
 
@@ -448,8 +448,8 @@ items:
       content: 'readonly paragraphs: OneNote.ParagraphCollection;'
       return:
         type:
-          - onenote.OneNote.ParagraphCollection
-  - uid: onenote.OneNote.TableCell.parentRow
+          - 'onenote!OneNote.ParagraphCollection:class'
+  - uid: 'onenote!OneNote.TableCell#parentRow:member'
     summary: |-
       Gets the parent row of the cell. Read-only.
 
@@ -463,8 +463,8 @@ items:
       content: 'readonly parentRow: OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
-  - uid: onenote.OneNote.TableCell.rowIndex
+          - 'onenote!OneNote.TableRow:class'
+  - uid: 'onenote!OneNote.TableCell#rowIndex:member'
     summary: |-
       Gets the index of the cell's row in the table. Read-only.
 
@@ -479,7 +479,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.TableCell.set
+  - uid: 'onenote!OneNote.TableCell#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -504,12 +504,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.TableCellUpdateData
+            - 'onenote!OneNote.Interfaces.TableCellUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: onenote.OneNote.TableCell.set_1
+            - 'onenote!OfficeExtension.UpdateOptions:interface'
+  - uid: 'onenote!OneNote.TableCell#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -526,8 +526,8 @@ items:
         - id: properties
           description: ''
           type:
-            - onenote.OneNote.TableCell
-  - uid: onenote.OneNote.TableCell.shadingColor
+            - 'onenote!OneNote.TableCell:class'
+  - uid: 'onenote!OneNote.TableCell#shadingColor:member'
     summary: |-
       Gets and sets the shading color of the cell
 
@@ -542,7 +542,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.TableCell.toJSON
+  - uid: 'onenote!OneNote.TableCell#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -558,9 +558,9 @@ items:
       content: 'toJSON(): OneNote.Interfaces.TableCellData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableCellData
+          - 'onenote!OneNote.Interfaces.TableCellData:interface'
         description: ''
-  - uid: onenote.OneNote.TableCell.track
+  - uid: 'onenote!OneNote.TableCell#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -576,9 +576,9 @@ items:
       content: 'track(): OneNote.TableCell;'
       return:
         type:
-          - onenote.OneNote.TableCell
+          - 'onenote!OneNote.TableCell:class'
         description: ''
-  - uid: onenote.OneNote.TableCell.untrack
+  - uid: 'onenote!OneNote.TableCell#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -593,5 +593,30 @@ items:
       content: 'untrack(): OneNote.TableCell;'
       return:
         type:
-          - onenote.OneNote.TableCell
+          - 'onenote!OneNote.TableCell:class'
         description: ''
+references:
+  - uid: 'onenote!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'onenote!OneNote.Image:class'
+    name: OneNote.Image
+  - uid: 'onenote!OneNote.RichText:class'
+    name: OneNote.RichText
+  - uid: 'onenote!OneNote.Table:class'
+    name: OneNote.Table
+  - uid: 'onenote!OneNote.RequestContext:class'
+    name: RequestContext
+  - uid: 'onenote!OneNote.TableCell:class'
+    name: OneNote.TableCell
+  - uid: 'onenote!OneNote.Interfaces.TableCellLoadOptions:interface'
+    name: OneNote.Interfaces.TableCellLoadOptions
+  - uid: 'onenote!OneNote.ParagraphCollection:class'
+    name: OneNote.ParagraphCollection
+  - uid: 'onenote!OneNote.TableRow:class'
+    name: OneNote.TableRow
+  - uid: 'onenote!OneNote.Interfaces.TableCellUpdateData:interface'
+    name: Interfaces.TableCellUpdateData
+  - uid: 'onenote!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'onenote!OneNote.Interfaces.TableCellData:interface'
+    name: OneNote.Interfaces.TableCellData

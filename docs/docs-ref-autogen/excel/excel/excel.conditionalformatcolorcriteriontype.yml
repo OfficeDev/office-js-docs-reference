@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalFormatColorCriterionType
+  - uid: 'excel!Excel.ConditionalFormatColorCriterionType:enum'
     summary: |-
       Represents the types of conditional format values.
 
@@ -10,58 +10,58 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalFormatColorCriterionType.formula
-      - excel.Excel.ConditionalFormatColorCriterionType.highestValue
-      - excel.Excel.ConditionalFormatColorCriterionType.invalid
-      - excel.Excel.ConditionalFormatColorCriterionType.lowestValue
-      - excel.Excel.ConditionalFormatColorCriterionType.number
-      - excel.Excel.ConditionalFormatColorCriterionType.percent
-      - excel.Excel.ConditionalFormatColorCriterionType.percentile
-  - uid: excel.Excel.ConditionalFormatColorCriterionType.formula
+      - 'excel!Excel.ConditionalFormatColorCriterionType.formula:member'
+      - 'excel!Excel.ConditionalFormatColorCriterionType.highestValue:member'
+      - 'excel!Excel.ConditionalFormatColorCriterionType.invalid:member'
+      - 'excel!Excel.ConditionalFormatColorCriterionType.lowestValue:member'
+      - 'excel!Excel.ConditionalFormatColorCriterionType.number:member'
+      - 'excel!Excel.ConditionalFormatColorCriterionType.percent:member'
+      - 'excel!Excel.ConditionalFormatColorCriterionType.percentile:member'
+  - uid: 'excel!Excel.ConditionalFormatColorCriterionType.formula:member'
     name: formula
     fullName: formula
     langs:
       - typeScript
     type: field
     numericValue: '"Formula"'
-  - uid: excel.Excel.ConditionalFormatColorCriterionType.highestValue
+  - uid: 'excel!Excel.ConditionalFormatColorCriterionType.highestValue:member'
     name: highestValue
     fullName: highestValue
     langs:
       - typeScript
     type: field
     numericValue: '"HighestValue"'
-  - uid: excel.Excel.ConditionalFormatColorCriterionType.invalid
+  - uid: 'excel!Excel.ConditionalFormatColorCriterionType.invalid:member'
     name: invalid
     fullName: invalid
     langs:
       - typeScript
     type: field
     numericValue: '"Invalid"'
-  - uid: excel.Excel.ConditionalFormatColorCriterionType.lowestValue
+  - uid: 'excel!Excel.ConditionalFormatColorCriterionType.lowestValue:member'
     name: lowestValue
     fullName: lowestValue
     langs:
       - typeScript
     type: field
     numericValue: '"LowestValue"'
-  - uid: excel.Excel.ConditionalFormatColorCriterionType.number
+  - uid: 'excel!Excel.ConditionalFormatColorCriterionType.number:member'
     name: number
     fullName: number
     langs:
       - typeScript
     type: field
     numericValue: '"Number"'
-  - uid: excel.Excel.ConditionalFormatColorCriterionType.percent
+  - uid: 'excel!Excel.ConditionalFormatColorCriterionType.percent:member'
     name: percent
     fullName: percent
     langs:
       - typeScript
     type: field
     numericValue: '"Percent"'
-  - uid: excel.Excel.ConditionalFormatColorCriterionType.percentile
+  - uid: 'excel!Excel.ConditionalFormatColorCriterionType.percentile:member'
     name: percentile
     fullName: percentile
     langs:

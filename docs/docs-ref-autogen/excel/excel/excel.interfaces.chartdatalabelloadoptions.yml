@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions:interface'
     summary: |-
       Represents the data label of a chart point.
 
@@ -10,31 +10,31 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.$all
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.autoText
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.format
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.formula
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.height
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.horizontalAlignment
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.left
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.linkNumberFormat
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.numberFormat
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.position
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.separator
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.showBubbleSize
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.showCategoryName
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.showLegendKey
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.showPercentage
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.showSeriesName
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.showValue
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.text
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.textOrientation
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.top
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.verticalAlignment
-      - excel.Excel.Interfaces.ChartDataLabelLoadOptions.width
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#autoText:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#formula:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#height:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#horizontalAlignment:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#left:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#linkNumberFormat:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#numberFormat:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#position:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#separator:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#showBubbleSize:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#showCategoryName:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#showLegendKey:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#showPercentage:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#showSeriesName:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#showValue:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#text:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#textOrientation:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#top:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#verticalAlignment:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#width:member'
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.autoText
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#autoText:member'
     summary: |-
       Boolean value representing if data label automatically generates appropriate text based on context.
 
@@ -60,7 +60,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.format
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#format:member'
     summary: |-
       Represents the format of chart data label.
 
@@ -74,8 +74,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelFormatLoadOptions
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.formula
+          - 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#formula:member'
     summary: |-
       String value that represents the formula of chart data label using A1-style notation.
 
@@ -90,7 +90,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.height
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#height:member'
     summary: |-
       Returns the height, in points, of the chart data label. Read-only. Null if chart data label is not visible.
 
@@ -105,7 +105,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.horizontalAlignment
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#horizontalAlignment:member'
     summary: >-
       Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details. This
       property is valid only when TextOrientation of data label is 90, -90 or 180.
@@ -122,7 +122,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.left
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#left:member'
     summary: >-
       Represents the distance, in points, from the left edge of chart data label to the left edge of chart area. Null if
       chart data label is not visible.
@@ -139,7 +139,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.linkNumberFormat
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#linkNumberFormat:member'
     summary: >-
       Boolean value representing if the number format is linked to the cells (so that the number format changes in the
       labels when it changes in the cells).
@@ -156,7 +156,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.numberFormat
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#numberFormat:member'
     summary: |-
       String value that represents the format code for data label.
 
@@ -171,7 +171,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.position
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#position:member'
     summary: >-
       DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
       details.
@@ -188,7 +188,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.separator
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#separator:member'
     summary: |-
       String representing the separator used for the data label on a chart.
 
@@ -203,7 +203,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.showBubbleSize
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#showBubbleSize:member'
     summary: |-
       Boolean value representing if the data label bubble size is visible or not.
 
@@ -218,7 +218,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.showCategoryName
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#showCategoryName:member'
     summary: |-
       Boolean value representing if the data label category name is visible or not.
 
@@ -233,7 +233,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.showLegendKey
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#showLegendKey:member'
     summary: |-
       Boolean value representing if the data label legend key is visible or not.
 
@@ -248,7 +248,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.showPercentage
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#showPercentage:member'
     summary: |-
       Boolean value representing if the data label percentage is visible or not.
 
@@ -263,7 +263,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.showSeriesName
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#showSeriesName:member'
     summary: |-
       Boolean value representing if the data label series name is visible or not.
 
@@ -278,7 +278,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.showValue
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#showValue:member'
     summary: |-
       Boolean value representing if the data label value is visible or not.
 
@@ -293,7 +293,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.text
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#text:member'
     summary: |-
       String representing the text of the data label on a chart.
 
@@ -308,7 +308,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.textOrientation
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#textOrientation:member'
     summary: >-
       Represents the text orientation of chart data label. The value should be an integer either from -90 to 90, or 180
       for vertically-oriented text.
@@ -325,7 +325,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.top
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#top:member'
     summary: >-
       Represents the distance, in points, from the top edge of chart data label to the top of chart area. Null if chart
       data label is not visible.
@@ -342,7 +342,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.verticalAlignment
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#verticalAlignment:member'
     summary: >-
       Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details. This
       property is valid only when TextOrientation of data label is 0.
@@ -359,7 +359,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelLoadOptions.width
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#width:member'
     summary: |-
       Returns the width, in points, of the chart data label. Read-only. Null if chart data label is not visible.
 
@@ -374,3 +374,6 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartDataLabelFormatLoadOptions

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
     summary: |-
       A container for the visible content on a page. A Paragraph can contain any one ParagraphType type of content.
 
@@ -10,22 +10,22 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.ParagraphLoadOptions.$all
-      - onenote.OneNote.Interfaces.ParagraphLoadOptions.id
-      - onenote.OneNote.Interfaces.ParagraphLoadOptions.image
-      - onenote.OneNote.Interfaces.ParagraphLoadOptions.inkWords
-      - onenote.OneNote.Interfaces.ParagraphLoadOptions.outline
-      - onenote.OneNote.Interfaces.ParagraphLoadOptions.paragraphs
-      - onenote.OneNote.Interfaces.ParagraphLoadOptions.parentParagraph
-      - onenote.OneNote.Interfaces.ParagraphLoadOptions.parentParagraphOrNull
-      - onenote.OneNote.Interfaces.ParagraphLoadOptions.parentTableCell
-      - onenote.OneNote.Interfaces.ParagraphLoadOptions.parentTableCellOrNull
-      - onenote.OneNote.Interfaces.ParagraphLoadOptions.richText
-      - onenote.OneNote.Interfaces.ParagraphLoadOptions.table
-      - onenote.OneNote.Interfaces.ParagraphLoadOptions.type
-  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.$all
+      - 'onenote!OneNote.Interfaces.ParagraphLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.ParagraphLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.ParagraphLoadOptions#image:member'
+      - 'onenote!OneNote.Interfaces.ParagraphLoadOptions#inkWords:member'
+      - 'onenote!OneNote.Interfaces.ParagraphLoadOptions#outline:member'
+      - 'onenote!OneNote.Interfaces.ParagraphLoadOptions#paragraphs:member'
+      - 'onenote!OneNote.Interfaces.ParagraphLoadOptions#parentParagraph:member'
+      - 'onenote!OneNote.Interfaces.ParagraphLoadOptions#parentParagraphOrNull:member'
+      - 'onenote!OneNote.Interfaces.ParagraphLoadOptions#parentTableCell:member'
+      - 'onenote!OneNote.Interfaces.ParagraphLoadOptions#parentTableCellOrNull:member'
+      - 'onenote!OneNote.Interfaces.ParagraphLoadOptions#richText:member'
+      - 'onenote!OneNote.Interfaces.ParagraphLoadOptions#table:member'
+      - 'onenote!OneNote.Interfaces.ParagraphLoadOptions#type:member'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -36,7 +36,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.id
+  - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions#id:member'
     summary: |-
       Gets the ID of the Paragraph object. Read-only.
 
@@ -51,7 +51,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.image
+  - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions#image:member'
     summary: |-
       Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
 
@@ -65,8 +65,8 @@ items:
       content: 'image?: OneNote.Interfaces.ImageLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ImageLoadOptions
-  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.inkWords
+          - 'onenote!OneNote.Interfaces.ImageLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions#inkWords:member'
     summary: |-
       Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink.
 
@@ -80,8 +80,8 @@ items:
       content: 'inkWords?: OneNote.Interfaces.InkWordCollectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkWordCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.outline
+          - 'onenote!OneNote.Interfaces.InkWordCollectionLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions#outline:member'
     summary: |-
       Gets the Outline object that contains the Paragraph.
 
@@ -95,8 +95,8 @@ items:
       content: 'outline?: OneNote.Interfaces.OutlineLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.OutlineLoadOptions
-  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.paragraphs
+          - 'onenote!OneNote.Interfaces.OutlineLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions#paragraphs:member'
     summary: |-
       The collection of paragraphs under this paragraph. Read only
 
@@ -110,8 +110,8 @@ items:
       content: 'paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.parentParagraph
+          - 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions#parentParagraph:member'
     summary: |-
       Gets the parent paragraph object. Throws if a parent paragraph does not exist.
 
@@ -125,8 +125,8 @@ items:
       content: 'parentParagraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphLoadOptions
-  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.parentParagraphOrNull
+          - 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions#parentParagraphOrNull:member'
     summary: |-
       Gets the parent paragraph object. Returns null if a parent paragraph does not exist.
 
@@ -140,8 +140,8 @@ items:
       content: 'parentParagraphOrNull?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphLoadOptions
-  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.parentTableCell
+          - 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions#parentTableCell:member'
     summary: >-
       Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws
       ItemNotFound.
@@ -157,8 +157,8 @@ items:
       content: 'parentTableCell?: OneNote.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableCellLoadOptions
-  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.parentTableCellOrNull
+          - 'onenote!OneNote.Interfaces.TableCellLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions#parentTableCellOrNull:member'
     summary: |-
       Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.
 
@@ -172,8 +172,8 @@ items:
       content: 'parentTableCellOrNull?: OneNote.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableCellLoadOptions
-  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.richText
+          - 'onenote!OneNote.Interfaces.TableCellLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions#richText:member'
     summary: |-
       Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText.
 
@@ -187,8 +187,8 @@ items:
       content: 'richText?: OneNote.Interfaces.RichTextLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.RichTextLoadOptions
-  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.table
+          - 'onenote!OneNote.Interfaces.RichTextLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions#table:member'
     summary: |-
       Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.
 
@@ -202,8 +202,8 @@ items:
       content: 'table?: OneNote.Interfaces.TableLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableLoadOptions
-  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions.type
+          - 'onenote!OneNote.Interfaces.TableLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions#type:member'
     summary: |-
       Gets the type of the Paragraph object. Read-only.
 
@@ -218,3 +218,20 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'onenote!OneNote.Interfaces.ImageLoadOptions:interface'
+    name: OneNote.Interfaces.ImageLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkWordCollectionLoadOptions:interface'
+    name: OneNote.Interfaces.InkWordCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions:interface'
+    name: OneNote.Interfaces.OutlineLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface'
+    name: OneNote.Interfaces.ParagraphCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
+    name: OneNote.Interfaces.ParagraphLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.TableCellLoadOptions:interface'
+    name: OneNote.Interfaces.TableCellLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions:interface'
+    name: OneNote.Interfaces.RichTextLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.TableLoadOptions:interface'
+    name: OneNote.Interfaces.TableLoadOptions

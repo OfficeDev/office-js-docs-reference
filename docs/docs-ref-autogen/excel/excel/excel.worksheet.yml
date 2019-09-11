@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Worksheet
+  - uid: 'excel!Excel.Worksheet:class'
     summary: >-
       An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc. To learn more about the worksheet
       object model, read [Work with worksheets using the Excel JavaScript
@@ -14,70 +14,70 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.Worksheet.activate
-      - excel.Excel.Worksheet.autoFilter
-      - excel.Excel.Worksheet.calculate
-      - excel.Excel.Worksheet.charts
-      - excel.Excel.Worksheet.comments
-      - excel.Excel.Worksheet.context
-      - excel.Excel.Worksheet.copy
-      - excel.Excel.Worksheet.copy_1
-      - excel.Excel.Worksheet.delete
-      - excel.Excel.Worksheet.enableCalculation
-      - excel.Excel.Worksheet.findAll
-      - excel.Excel.Worksheet.findAllOrNullObject
-      - excel.Excel.Worksheet.freezePanes
-      - excel.Excel.Worksheet.getCell
-      - excel.Excel.Worksheet.getNext
-      - excel.Excel.Worksheet.getNextOrNullObject
-      - excel.Excel.Worksheet.getPrevious
-      - excel.Excel.Worksheet.getPreviousOrNullObject
-      - excel.Excel.Worksheet.getRange
-      - excel.Excel.Worksheet.getRangeByIndexes
-      - excel.Excel.Worksheet.getRanges
-      - excel.Excel.Worksheet.getUsedRange
-      - excel.Excel.Worksheet.getUsedRangeOrNullObject
-      - excel.Excel.Worksheet.horizontalPageBreaks
-      - excel.Excel.Worksheet.id
-      - excel.Excel.Worksheet.load
-      - excel.Excel.Worksheet.load_1
-      - excel.Excel.Worksheet.load_2
-      - excel.Excel.Worksheet.name
-      - excel.Excel.Worksheet.names
-      - excel.Excel.Worksheet.onActivated
-      - excel.Excel.Worksheet.onCalculated
-      - excel.Excel.Worksheet.onChanged
-      - excel.Excel.Worksheet.onColumnSorted
-      - excel.Excel.Worksheet.onDeactivated
-      - excel.Excel.Worksheet.onFiltered
-      - excel.Excel.Worksheet.onFormatChanged
-      - excel.Excel.Worksheet.onRowHiddenChanged
-      - excel.Excel.Worksheet.onRowSorted
-      - excel.Excel.Worksheet.onSelectionChanged
-      - excel.Excel.Worksheet.onSingleClicked
-      - excel.Excel.Worksheet.pageLayout
-      - excel.Excel.Worksheet.pivotTables
-      - excel.Excel.Worksheet.position
-      - excel.Excel.Worksheet.protection
-      - excel.Excel.Worksheet.replaceAll
-      - excel.Excel.Worksheet.set
-      - excel.Excel.Worksheet.set_1
-      - excel.Excel.Worksheet.shapes
-      - excel.Excel.Worksheet.showGridlines
-      - excel.Excel.Worksheet.showHeadings
-      - excel.Excel.Worksheet.showOutlineLevels
-      - excel.Excel.Worksheet.slicers
-      - excel.Excel.Worksheet.standardHeight
-      - excel.Excel.Worksheet.standardWidth
-      - excel.Excel.Worksheet.tabColor
-      - excel.Excel.Worksheet.tables
-      - excel.Excel.Worksheet.toJSON
-      - excel.Excel.Worksheet.verticalPageBreaks
-      - excel.Excel.Worksheet.visibility
-  - uid: excel.Excel.Worksheet.activate
+      - 'excel!Excel.Worksheet#activate:member(1)'
+      - 'excel!Excel.Worksheet#autoFilter:member'
+      - 'excel!Excel.Worksheet#calculate:member(1)'
+      - 'excel!Excel.Worksheet#charts:member'
+      - 'excel!Excel.Worksheet#comments:member'
+      - 'excel!Excel.Worksheet#context:member'
+      - 'excel!Excel.Worksheet#copy:member(1)'
+      - 'excel!Excel.Worksheet#copy:member(2)'
+      - 'excel!Excel.Worksheet#delete:member(1)'
+      - 'excel!Excel.Worksheet#enableCalculation:member'
+      - 'excel!Excel.Worksheet#findAll:member(1)'
+      - 'excel!Excel.Worksheet#findAllOrNullObject:member(1)'
+      - 'excel!Excel.Worksheet#freezePanes:member'
+      - 'excel!Excel.Worksheet#getCell:member(1)'
+      - 'excel!Excel.Worksheet#getNext:member(1)'
+      - 'excel!Excel.Worksheet#getNextOrNullObject:member(1)'
+      - 'excel!Excel.Worksheet#getPrevious:member(1)'
+      - 'excel!Excel.Worksheet#getPreviousOrNullObject:member(1)'
+      - 'excel!Excel.Worksheet#getRange:member(1)'
+      - 'excel!Excel.Worksheet#getRangeByIndexes:member(1)'
+      - 'excel!Excel.Worksheet#getRanges:member(1)'
+      - 'excel!Excel.Worksheet#getUsedRange:member(1)'
+      - 'excel!Excel.Worksheet#getUsedRangeOrNullObject:member(1)'
+      - 'excel!Excel.Worksheet#horizontalPageBreaks:member'
+      - 'excel!Excel.Worksheet#id:member'
+      - 'excel!Excel.Worksheet#load:member(1)'
+      - 'excel!Excel.Worksheet#load:member(2)'
+      - 'excel!Excel.Worksheet#load:member(3)'
+      - 'excel!Excel.Worksheet#name:member'
+      - 'excel!Excel.Worksheet#names:member'
+      - 'excel!Excel.Worksheet#onActivated:member'
+      - 'excel!Excel.Worksheet#onCalculated:member'
+      - 'excel!Excel.Worksheet#onChanged:member'
+      - 'excel!Excel.Worksheet#onColumnSorted:member'
+      - 'excel!Excel.Worksheet#onDeactivated:member'
+      - 'excel!Excel.Worksheet#onFiltered:member'
+      - 'excel!Excel.Worksheet#onFormatChanged:member'
+      - 'excel!Excel.Worksheet#onRowHiddenChanged:member'
+      - 'excel!Excel.Worksheet#onRowSorted:member'
+      - 'excel!Excel.Worksheet#onSelectionChanged:member'
+      - 'excel!Excel.Worksheet#onSingleClicked:member'
+      - 'excel!Excel.Worksheet#pageLayout:member'
+      - 'excel!Excel.Worksheet#pivotTables:member'
+      - 'excel!Excel.Worksheet#position:member'
+      - 'excel!Excel.Worksheet#protection:member'
+      - 'excel!Excel.Worksheet#replaceAll:member(1)'
+      - 'excel!Excel.Worksheet#set:member(1)'
+      - 'excel!Excel.Worksheet#set:member(2)'
+      - 'excel!Excel.Worksheet#shapes:member'
+      - 'excel!Excel.Worksheet#showGridlines:member'
+      - 'excel!Excel.Worksheet#showHeadings:member'
+      - 'excel!Excel.Worksheet#showOutlineLevels:member(1)'
+      - 'excel!Excel.Worksheet#slicers:member'
+      - 'excel!Excel.Worksheet#standardHeight:member'
+      - 'excel!Excel.Worksheet#standardWidth:member'
+      - 'excel!Excel.Worksheet#tabColor:member'
+      - 'excel!Excel.Worksheet#tables:member'
+      - 'excel!Excel.Worksheet#toJSON:member(1)'
+      - 'excel!Excel.Worksheet#verticalPageBreaks:member'
+      - 'excel!Excel.Worksheet#visibility:member'
+  - uid: 'excel!Excel.Worksheet#activate:member(1)'
     summary: |-
       Activate the worksheet in the Excel UI.
 
@@ -110,7 +110,7 @@ items:
               }
           });
           ```
-  - uid: excel.Excel.Worksheet.autoFilter
+  - uid: 'excel!Excel.Worksheet#autoFilter:member'
     summary: |-
       Represents the AutoFilter object of the worksheet. Read-Only.
 
@@ -124,7 +124,7 @@ items:
       content: 'readonly autoFilter: Excel.AutoFilter;'
       return:
         type:
-          - excel.Excel.AutoFilter
+          - 'excel!Excel.AutoFilter:class'
         description: |-
 
 
@@ -140,7 +140,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.Worksheet.calculate
+  - uid: 'excel!Excel.Worksheet#calculate:member(1)'
     summary: |-
       Calculates all cells on a worksheet.
 
@@ -161,7 +161,7 @@ items:
           description: 'True, to mark all as dirty.'
           type:
             - boolean
-  - uid: excel.Excel.Worksheet.charts
+  - uid: 'excel!Excel.Worksheet#charts:member'
     summary: |-
       Returns collection of charts that are part of the worksheet. Read-only.
 
@@ -175,8 +175,8 @@ items:
       content: 'readonly charts: Excel.ChartCollection;'
       return:
         type:
-          - excel.Excel.ChartCollection
-  - uid: excel.Excel.Worksheet.comments
+          - 'excel!Excel.ChartCollection:class'
+  - uid: 'excel!Excel.Worksheet#comments:member'
     summary: >-
       Returns a collection of all the Comments objects on the worksheet. Read-only.
 
@@ -193,8 +193,8 @@ items:
       content: 'readonly comments: Excel.CommentCollection;'
       return:
         type:
-          - excel.Excel.CommentCollection
-  - uid: excel.Excel.Worksheet.context
+          - 'excel!Excel.CommentCollection:class'
+  - uid: 'excel!Excel.Worksheet#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -207,8 +207,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.Worksheet.copy
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Worksheet#copy:member(1)'
     summary: |-
       Copy a worksheet and place it at the specified position. Return the copied worksheet.
 
@@ -222,7 +222,7 @@ items:
       content: 'copy(positionType?: Excel.WorksheetPositionType, relativeTo?: Excel.Worksheet): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: |-
 
 
@@ -247,12 +247,12 @@ items:
         - id: positionType
           description: Optional.
           type:
-            - excel.Excel.WorksheetPositionType
+            - 'excel!Excel.WorksheetPositionType:enum'
         - id: relativeTo
           description: Optional.
           type:
-            - excel.Excel.Worksheet
-  - uid: excel.Excel.Worksheet.copy_1
+            - 'excel!Excel.Worksheet:class'
+  - uid: 'excel!Excel.Worksheet#copy:member(2)'
     summary: |-
       Copy a worksheet and place it at the specified position. Return the copied worksheet.
 
@@ -268,7 +268,7 @@ items:
         Excel.Worksheet;
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: ''
       parameters:
         - id: positionTypeString
@@ -278,8 +278,8 @@ items:
         - id: relativeTo
           description: Optional.
           type:
-            - excel.Excel.Worksheet
-  - uid: excel.Excel.Worksheet.delete
+            - 'excel!Excel.Worksheet:class'
+  - uid: 'excel!Excel.Worksheet#delete:member(1)'
     summary: >-
       Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the
       delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden
@@ -315,7 +315,7 @@ items:
               }
           });
           ```
-  - uid: excel.Excel.Worksheet.enableCalculation
+  - uid: 'excel!Excel.Worksheet#enableCalculation:member'
     summary: >-
       Gets or sets the enableCalculation property of the worksheet. True if Excel recalculates the worksheet when
       necessary. False if Excel doesn't recalculate the sheet.
@@ -332,7 +332,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Worksheet.findAll
+  - uid: 'excel!Excel.Worksheet#findAll:member(1)'
     summary: >-
       Finds all occurrences of the given string based on the criteria specified and returns them as a RangeAreas object,
       comprising one or more rectangular ranges.
@@ -348,7 +348,7 @@ items:
       content: 'findAll(text: string, criteria: Excel.WorksheetSearchCriteria): Excel.RangeAreas;'
       return:
         type:
-          - excel.Excel.RangeAreas
+          - 'excel!Excel.RangeAreas:class'
         description: >-
           A RangeArea object, comprising one or more rectangular ranges, that matches the search criteria. If no cells
           meet this criteria, an ItemNotFound error will be thrown.
@@ -362,8 +362,8 @@ items:
             Additional search criteria, including whether the search needs to match the entire cell or be case
             sensitive.
           type:
-            - excel.Excel.WorksheetSearchCriteria
-  - uid: excel.Excel.Worksheet.findAllOrNullObject
+            - 'excel!Excel.WorksheetSearchCriteria:interface'
+  - uid: 'excel!Excel.Worksheet#findAllOrNullObject:member(1)'
     summary: >-
       Finds all occurrences of the given string based on the criteria specified and returns them as a RangeAreas object,
       comprising one or more rectangular ranges.
@@ -379,7 +379,7 @@ items:
       content: 'findAllOrNullObject(text: string, criteria: Excel.WorksheetSearchCriteria): Excel.RangeAreas;'
       return:
         type:
-          - excel.Excel.RangeAreas
+          - 'excel!Excel.RangeAreas:class'
         description: >-
           A RangeArea object, comprising one or more rectangular ranges, that matches the search criteria. If there are
           no matches, this function will return a null object.
@@ -417,8 +417,8 @@ items:
             Additional search criteria, including whether the search needs to match the entire cell or be case
             sensitive.
           type:
-            - excel.Excel.WorksheetSearchCriteria
-  - uid: excel.Excel.Worksheet.freezePanes
+            - 'excel!Excel.WorksheetSearchCriteria:interface'
+  - uid: 'excel!Excel.Worksheet#freezePanes:member'
     summary: |-
       Gets an object that can be used to manipulate frozen panes on the worksheet. Read-only.
 
@@ -432,8 +432,8 @@ items:
       content: 'readonly freezePanes: Excel.WorksheetFreezePanes;'
       return:
         type:
-          - excel.Excel.WorksheetFreezePanes
-  - uid: excel.Excel.Worksheet.getCell
+          - 'excel!Excel.WorksheetFreezePanes:class'
+  - uid: 'excel!Excel.Worksheet#getCell:member(1)'
     summary: >-
       Gets the range object containing the single cell based on row and column numbers. The cell can be outside the
       bounds of its parent range, so long as it stays within the worksheet grid.
@@ -449,7 +449,7 @@ items:
       content: 'getCell(row: number, column: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -480,7 +480,7 @@ items:
           description: the column number of the cell to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.Worksheet.getNext
+  - uid: 'excel!Excel.Worksheet#getNext:member(1)'
     summary: >-
       Gets the worksheet that follows this one. If there are no worksheets following this one, this method will throw an
       error.
@@ -496,7 +496,7 @@ items:
       content: 'getNext(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: |-
 
 
@@ -533,7 +533,7 @@ items:
           description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
-  - uid: excel.Excel.Worksheet.getNextOrNullObject
+  - uid: 'excel!Excel.Worksheet#getNextOrNullObject:member(1)'
     summary: >-
       Gets the worksheet that follows this one. If there are no worksheets following this one, this method will return a
       null object.
@@ -549,14 +549,14 @@ items:
       content: 'getNextOrNullObject(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: ''
       parameters:
         - id: visibleOnly
           description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
-  - uid: excel.Excel.Worksheet.getPrevious
+  - uid: 'excel!Excel.Worksheet#getPrevious:member(1)'
     summary: |-
       Gets the worksheet that precedes this one. If there are no previous worksheets, this method will throw an error.
 
@@ -570,7 +570,7 @@ items:
       content: 'getPrevious(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: |-
 
 
@@ -603,7 +603,7 @@ items:
           description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
-  - uid: excel.Excel.Worksheet.getPreviousOrNullObject
+  - uid: 'excel!Excel.Worksheet#getPreviousOrNullObject:member(1)'
     summary: >-
       Gets the worksheet that precedes this one. If there are no previous worksheets, this method will return a null
       objet.
@@ -619,14 +619,14 @@ items:
       content: 'getPreviousOrNullObject(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: ''
       parameters:
         - id: visibleOnly
           description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
-  - uid: excel.Excel.Worksheet.getRange
+  - uid: 'excel!Excel.Worksheet#getRange:member(1)'
     summary: |-
       Gets the range object, representing a single rectangular block of cells, specified by the address or name.
 
@@ -640,7 +640,7 @@ items:
       content: 'getRange(address?: string): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -688,7 +688,7 @@ items:
             the entire worksheet range is returned.
           type:
             - string
-  - uid: excel.Excel.Worksheet.getRangeByIndexes
+  - uid: 'excel!Excel.Worksheet#getRangeByIndexes:member(1)'
     summary: >-
       Gets the range object beginning at a particular row index and column index, and spanning a certain number of rows
       and columns.
@@ -704,7 +704,7 @@ items:
       content: 'getRangeByIndexes(startRow: number, startColumn: number, rowCount: number, columnCount: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: startRow
@@ -723,7 +723,7 @@ items:
           description: Number of columns to include in the range.
           type:
             - number
-  - uid: excel.Excel.Worksheet.getRanges
+  - uid: 'excel!Excel.Worksheet#getRanges:member(1)'
     summary: >-
       Gets the RangeAreas object, representing one or more blocks of rectangular ranges, specified by the address or
       name.
@@ -739,7 +739,7 @@ items:
       content: 'getRanges(address?: string): Excel.RangeAreas;'
       return:
         type:
-          - excel.Excel.RangeAreas
+          - 'excel!Excel.RangeAreas:class'
         description: |-
 
 
@@ -762,7 +762,7 @@ items:
             "A1:B2, A5:B5". If not specified, an RangeArea object for the entire worksheet is returned.
           type:
             - string
-  - uid: excel.Excel.Worksheet.getUsedRange
+  - uid: 'excel!Excel.Worksheet#getUsedRange:member(1)'
     summary: >-
       The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
       If the entire worksheet is blank, this function will return the top left cell (i.e. it will *not* throw an error).
@@ -778,7 +778,7 @@ items:
       content: 'getUsedRange(valuesOnly?: boolean): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: |-
 
 
@@ -807,7 +807,7 @@ items:
             1.2\]
           type:
             - boolean
-  - uid: excel.Excel.Worksheet.getUsedRangeOrNullObject
+  - uid: 'excel!Excel.Worksheet#getUsedRangeOrNullObject:member(1)'
     summary: >-
       The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
       If the entire worksheet is blank, this function will return a null object.
@@ -823,14 +823,14 @@ items:
       content: 'getUsedRangeOrNullObject(valuesOnly?: boolean): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: valuesOnly
           description: Optional. Considers only cells with values as used cells.
           type:
             - boolean
-  - uid: excel.Excel.Worksheet.horizontalPageBreaks
+  - uid: 'excel!Excel.Worksheet#horizontalPageBreaks:member'
     summary: |-
       Gets the horizontal page break collection for the worksheet. This collection only contains manual page breaks.
 
@@ -844,8 +844,8 @@ items:
       content: 'readonly horizontalPageBreaks: Excel.PageBreakCollection;'
       return:
         type:
-          - excel.Excel.PageBreakCollection
-  - uid: excel.Excel.Worksheet.id
+          - 'excel!Excel.PageBreakCollection:class'
+  - uid: 'excel!Excel.Worksheet#id:member'
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
       the same even when the worksheet is renamed or moved. Read-only.
@@ -862,7 +862,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Worksheet.load
+  - uid: 'excel!Excel.Worksheet#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -893,14 +893,14 @@ items:
       content: 'load(option?: Excel.Interfaces.WorksheetLoadOptions): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.WorksheetLoadOptions
-  - uid: excel.Excel.Worksheet.load_1
+            - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+  - uid: 'excel!Excel.Worksheet#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -913,7 +913,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: |-
 
 
@@ -954,7 +954,7 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Worksheet.load_2
+  - uid: 'excel!Excel.Worksheet#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -967,7 +967,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -976,7 +976,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.Worksheet.name
+  - uid: 'excel!Excel.Worksheet#name:member'
     summary: |-
       The display name of the worksheet.
 
@@ -991,7 +991,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Worksheet.names
+  - uid: 'excel!Excel.Worksheet#names:member'
     summary: |-
       Collection of names scoped to the current worksheet. Read-only.
 
@@ -1005,8 +1005,8 @@ items:
       content: 'readonly names: Excel.NamedItemCollection;'
       return:
         type:
-          - excel.Excel.NamedItemCollection
-  - uid: excel.Excel.Worksheet.onActivated
+          - 'excel!Excel.NamedItemCollection:class'
+  - uid: 'excel!Excel.Worksheet#onActivated:member'
     summary: |-
       Occurs when the worksheet is activated.
 
@@ -1020,7 +1020,7 @@ items:
       content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>;'
       return:
         type:
-          - OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
+          - 'excel!Excel.Worksheet#onActivated~0:complex'
         description: |-
 
 
@@ -1038,7 +1038,7 @@ items:
               return context.sync();
           });
           ```
-  - uid: excel.Excel.Worksheet.onCalculated
+  - uid: 'excel!Excel.Worksheet#onCalculated:member'
     summary: |-
       Occurs when the worksheet is calculated.
 
@@ -1052,7 +1052,7 @@ items:
       content: 'readonly onCalculated: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>;'
       return:
         type:
-          - OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
+          - 'excel!Excel.Worksheet#onCalculated~0:complex'
         description: |-
 
 
@@ -1070,7 +1070,7 @@ items:
               return context.sync();
           });
           ```
-  - uid: excel.Excel.Worksheet.onChanged
+  - uid: 'excel!Excel.Worksheet#onChanged:member'
     summary: |-
       Occurs when data changed on a specific worksheet.
 
@@ -1084,7 +1084,7 @@ items:
       content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>;'
       return:
         type:
-          - OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>
+          - 'excel!Excel.Worksheet#onChanged~0:complex'
         description: |-
 
 
@@ -1099,7 +1099,7 @@ items:
               console.log("A handler has been registered for the onChanged event.");
           });
           ```
-  - uid: excel.Excel.Worksheet.onColumnSorted
+  - uid: 'excel!Excel.Worksheet#onColumnSorted:member'
     summary: >-
       Occurs when sorting on columns.
 
@@ -1116,8 +1116,35 @@ items:
       content: 'readonly onColumnSorted: OfficeExtension.EventHandlers<Excel.WorksheetColumnSortedEventArgs>;'
       return:
         type:
-          - OfficeExtension.EventHandlers<Excel.WorksheetColumnSortedEventArgs>
-  - uid: excel.Excel.Worksheet.onDeactivated
+          - 'excel!Excel.Worksheet#onColumnSorted~0:complex'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              console.log("Adding column handler");
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+              // This will fire whenever a column has been moved as the result of a sort action.
+              sheet.onColumnSorted.add((event) => {
+                  return Excel.run((context) => {
+                      console.log("Column sorted: " + event.address);
+                      const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+                      // Clear formatting for section, then highlight the sorted area.
+                      sheet.getRange("A1:E5").format.fill.clear();
+                      if (event.address !== "") {
+                          sheet.getRanges(event.address).format.fill.color = "yellow";
+                      }
+
+                      return context.sync();
+                  });
+              });
+          });
+          ```
+  - uid: 'excel!Excel.Worksheet#onDeactivated:member'
     summary: |-
       Occurs when the worksheet is deactivated.
 
@@ -1131,7 +1158,7 @@ items:
       content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>;'
       return:
         type:
-          - OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
+          - 'excel!Excel.Worksheet#onDeactivated~0:complex'
         description: |-
 
 
@@ -1149,7 +1176,7 @@ items:
               return context.sync();
           });
           ```
-  - uid: excel.Excel.Worksheet.onFiltered
+  - uid: 'excel!Excel.Worksheet#onFiltered:member'
     summary: >-
       Occurs when filter is applied on a specific worksheet.
 
@@ -1166,8 +1193,8 @@ items:
       content: 'readonly onFiltered: OfficeExtension.EventHandlers<Excel.WorksheetFilteredEventArgs>;'
       return:
         type:
-          - OfficeExtension.EventHandlers<Excel.WorksheetFilteredEventArgs>
-  - uid: excel.Excel.Worksheet.onFormatChanged
+          - 'excel!Excel.Worksheet#onFiltered~0:complex'
+  - uid: 'excel!Excel.Worksheet#onFormatChanged:member'
     summary: |-
       Occurs when format changed on a specific worksheet.
 
@@ -1181,8 +1208,8 @@ items:
       content: 'readonly onFormatChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;'
       return:
         type:
-          - OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>
-  - uid: excel.Excel.Worksheet.onRowHiddenChanged
+          - 'excel!Excel.Worksheet#onFormatChanged~0:complex'
+  - uid: 'excel!Excel.Worksheet#onRowHiddenChanged:member'
     summary: >-
       Occurs when row hidden state changed on a specific worksheet.
 
@@ -1199,8 +1226,8 @@ items:
       content: 'readonly onRowHiddenChanged: OfficeExtension.EventHandlers<Excel.WorksheetRowHiddenChangedEventArgs>;'
       return:
         type:
-          - OfficeExtension.EventHandlers<Excel.WorksheetRowHiddenChangedEventArgs>
-  - uid: excel.Excel.Worksheet.onRowSorted
+          - 'excel!Excel.Worksheet#onRowHiddenChanged~0:complex'
+  - uid: 'excel!Excel.Worksheet#onRowSorted:member'
     summary: >-
       Occurs when sorting on rows.
 
@@ -1217,8 +1244,35 @@ items:
       content: 'readonly onRowSorted: OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>;'
       return:
         type:
-          - OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>
-  - uid: excel.Excel.Worksheet.onSelectionChanged
+          - 'excel!Excel.Worksheet#onRowSorted~0:complex'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              console.log("Adding row handler");
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+              // This will fire whenever a row has been moved as the result of a sort action.
+              sheet.onRowSorted.add((event) => {
+                  return Excel.run((context) => {
+                      console.log("Row sorted: " + event.address);
+                      const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+                      // Clear formatting for section, then highlight the sorted area.
+                      sheet.getRange("A1:E5").format.fill.clear();
+                      if (event.address !== "") {
+                          sheet.getRanges(event.address).format.fill.color = "yellow";
+                      }
+
+                      return context.sync();
+                  });
+              });
+          });
+          ```
+  - uid: 'excel!Excel.Worksheet#onSelectionChanged:member'
     summary: |-
       Occurs when the selection changes on a specific worksheet.
 
@@ -1232,7 +1286,7 @@ items:
       content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;'
       return:
         type:
-          - OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
+          - 'excel!Excel.Worksheet#onSelectionChanged~0:complex'
         description: |-
 
 
@@ -1250,11 +1304,16 @@ items:
               return context.sync();
           });
           ```
-  - uid: excel.Excel.Worksheet.onSingleClicked
+  - uid: 'excel!Excel.Worksheet#onSingleClicked:member'
     summary: >-
       Occurs when left-clicked/tapped operation happens in the worksheet. This event will not be fired when clicking in
-      the following cases: - The user drags the mouse for multi-selection. - The user selects a cell in the mode when
-      cell arguments are selected for formula references.
+      the following cases:
+
+
+      - The user drags the mouse for multi-selection.
+
+
+      - The user selects a cell in the mode when cell arguments are selected for formula references.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -1269,7 +1328,7 @@ items:
       content: 'readonly onSingleClicked: OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>;'
       return:
         type:
-          - OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>
+          - 'excel!Excel.Worksheet#onSingleClicked~0:complex'
         description: |-
 
 
@@ -1290,7 +1349,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.Worksheet.pageLayout
+  - uid: 'excel!Excel.Worksheet#pageLayout:member'
     summary: |-
       Gets the PageLayout object of the worksheet.
 
@@ -1304,8 +1363,8 @@ items:
       content: 'readonly pageLayout: Excel.PageLayout;'
       return:
         type:
-          - excel.Excel.PageLayout
-  - uid: excel.Excel.Worksheet.pivotTables
+          - 'excel!Excel.PageLayout:class'
+  - uid: 'excel!Excel.Worksheet#pivotTables:member'
     summary: |-
       Collection of PivotTables that are part of the worksheet. Read-only.
 
@@ -1319,8 +1378,8 @@ items:
       content: 'readonly pivotTables: Excel.PivotTableCollection;'
       return:
         type:
-          - excel.Excel.PivotTableCollection
-  - uid: excel.Excel.Worksheet.position
+          - 'excel!Excel.PivotTableCollection:class'
+  - uid: 'excel!Excel.Worksheet#position:member'
     summary: |-
       The zero-based position of the worksheet within the workbook.
 
@@ -1335,7 +1394,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Worksheet.protection
+  - uid: 'excel!Excel.Worksheet#protection:member'
     summary: |-
       Returns sheet protection object for a worksheet. Read-only.
 
@@ -1349,8 +1408,8 @@ items:
       content: 'readonly protection: Excel.WorksheetProtection;'
       return:
         type:
-          - excel.Excel.WorksheetProtection
-  - uid: excel.Excel.Worksheet.replaceAll
+          - 'excel!Excel.WorksheetProtection:class'
+  - uid: 'excel!Excel.Worksheet#replaceAll:member(1)'
     summary: |-
       Finds and replaces the given string based on the criteria specified within the current worksheet.
 
@@ -1366,7 +1425,7 @@ items:
         OfficeExtension.ClientResult<number>;
       return:
         type:
-          - OfficeExtension.ClientResult<number>
+          - 'excel!Excel.Worksheet#replaceAll~0:complex'
         description: The number of replacements performed.
       parameters:
         - id: text
@@ -1380,8 +1439,8 @@ items:
         - id: criteria
           description: Additional Replace Criteria.
           type:
-            - excel.Excel.ReplaceCriteria
-  - uid: excel.Excel.Worksheet.set
+            - 'excel!Excel.ReplaceCriteria:interface'
+  - uid: 'excel!Excel.Worksheet#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -1406,12 +1465,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.WorksheetUpdateData
+            - 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.Worksheet.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.Worksheet#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -1428,8 +1487,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Worksheet
-  - uid: excel.Excel.Worksheet.shapes
+            - 'excel!Excel.Worksheet:class'
+  - uid: 'excel!Excel.Worksheet#shapes:member'
     summary: |-
       Returns the collection of all the Shape objects on the worksheet. Read-only.
 
@@ -1443,8 +1502,8 @@ items:
       content: 'readonly shapes: Excel.ShapeCollection;'
       return:
         type:
-          - excel.Excel.ShapeCollection
-  - uid: excel.Excel.Worksheet.showGridlines
+          - 'excel!Excel.ShapeCollection:class'
+  - uid: 'excel!Excel.Worksheet#showGridlines:member'
     summary: |-
       Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.
 
@@ -1472,7 +1531,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.Worksheet.showHeadings
+  - uid: 'excel!Excel.Worksheet#showHeadings:member'
     summary: |-
       Gets or sets the worksheet's headings flag. This flag determines whether headings are visible to the user.
 
@@ -1487,7 +1546,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Worksheet.showOutlineLevels
+  - uid: 'excel!Excel.Worksheet#showOutlineLevels:member(1)'
     summary: >-
       Shows row or column groups by their outline levels. Outlines group and summarize a list of data in the worksheet.
       The `rowLevels` and `columnLevels` parameters specify how many levels of the outline will be displayed. The
@@ -1518,7 +1577,7 @@ items:
           description: The number of column levels of an outline to display.
           type:
             - number
-  - uid: excel.Excel.Worksheet.slicers
+  - uid: 'excel!Excel.Worksheet#slicers:member'
     summary: >-
       Returns collection of slicers that are part of the worksheet. Read-only.
 
@@ -1535,7 +1594,7 @@ items:
       content: 'readonly slicers: Excel.SlicerCollection;'
       return:
         type:
-          - excel.Excel.SlicerCollection
+          - 'excel!Excel.SlicerCollection:class'
         description: |-
 
 
@@ -1552,7 +1611,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.Worksheet.standardHeight
+  - uid: 'excel!Excel.Worksheet#standardHeight:member'
     summary: |-
       Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
 
@@ -1567,7 +1626,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Worksheet.standardWidth
+  - uid: 'excel!Excel.Worksheet#standardWidth:member'
     summary: >-
       Returns or sets the standard (default) width of all the columns in the worksheet. One unit of column width is
       equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0
@@ -1585,7 +1644,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Worksheet.tabColor
+  - uid: 'excel!Excel.Worksheet#tabColor:member'
     summary: >-
       Gets or sets the worksheet tab color. When retrieving the tab color, if the worksheet is invisible, the value will
       be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned.
@@ -1617,7 +1676,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.Worksheet.tables
+  - uid: 'excel!Excel.Worksheet#tables:member'
     summary: |-
       Collection of tables that are part of the worksheet. Read-only.
 
@@ -1631,8 +1690,8 @@ items:
       content: 'readonly tables: Excel.TableCollection;'
       return:
         type:
-          - excel.Excel.TableCollection
-  - uid: excel.Excel.Worksheet.toJSON
+          - 'excel!Excel.TableCollection:class'
+  - uid: 'excel!Excel.Worksheet#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -1648,9 +1707,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorksheetData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetData
+          - 'excel!Excel.Interfaces.WorksheetData:interface'
         description: ''
-  - uid: excel.Excel.Worksheet.verticalPageBreaks
+  - uid: 'excel!Excel.Worksheet#verticalPageBreaks:member'
     summary: |-
       Gets the vertical page break collection for the worksheet. This collection only contains manual page breaks.
 
@@ -1664,8 +1723,8 @@ items:
       content: 'readonly verticalPageBreaks: Excel.PageBreakCollection;'
       return:
         type:
-          - excel.Excel.PageBreakCollection
-  - uid: excel.Excel.Worksheet.visibility
+          - 'excel!Excel.PageBreakCollection:class'
+  - uid: 'excel!Excel.Worksheet#visibility:member'
     summary: >-
       The Visibility of the worksheet.
 
@@ -1681,4 +1740,225 @@ items:
       content: 'visibility: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";'
       return:
         type:
-          - Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden"
+          - 'excel!Excel.Worksheet#visibility~0:complex'
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.AutoFilter:class'
+    name: Excel.AutoFilter
+  - uid: 'excel!Excel.ChartCollection:class'
+    name: Excel.ChartCollection
+  - uid: 'excel!Excel.CommentCollection:class'
+    name: Excel.CommentCollection
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.Worksheet:class'
+    name: Excel.Worksheet
+  - uid: 'excel!Excel.WorksheetPositionType:enum'
+    name: Excel.WorksheetPositionType
+  - uid: 'excel!Excel.RangeAreas:class'
+    name: Excel.RangeAreas
+  - uid: 'excel!Excel.WorksheetSearchCriteria:interface'
+    name: Excel.WorksheetSearchCriteria
+  - uid: 'excel!Excel.WorksheetFreezePanes:class'
+    name: Excel.WorksheetFreezePanes
+  - uid: 'excel!Excel.Range:class'
+    name: Excel.Range
+  - uid: 'excel!Excel.PageBreakCollection:class'
+    name: Excel.PageBreakCollection
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+    name: Excel.Interfaces.WorksheetLoadOptions
+  - uid: 'excel!Excel.NamedItemCollection:class'
+    name: Excel.NamedItemCollection
+  - uid: 'excel!Excel.Worksheet#onActivated~0:complex'
+    name: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
+    fullName: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.EventHandlers:class'
+        name: OfficeExtension.EventHandlers
+        fullName: OfficeExtension.EventHandlers
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.WorksheetActivatedEventArgs:interface'
+        name: Excel.WorksheetActivatedEventArgs
+        fullName: Excel.WorksheetActivatedEventArgs
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.Worksheet#onCalculated~0:complex'
+    name: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
+    fullName: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.EventHandlers:class'
+        name: OfficeExtension.EventHandlers
+        fullName: OfficeExtension.EventHandlers
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.WorksheetCalculatedEventArgs:interface'
+        name: Excel.WorksheetCalculatedEventArgs
+        fullName: Excel.WorksheetCalculatedEventArgs
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.Worksheet#onChanged~0:complex'
+    name: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>
+    fullName: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.EventHandlers:class'
+        name: OfficeExtension.EventHandlers
+        fullName: OfficeExtension.EventHandlers
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.WorksheetChangedEventArgs:interface'
+        name: Excel.WorksheetChangedEventArgs
+        fullName: Excel.WorksheetChangedEventArgs
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.Worksheet#onColumnSorted~0:complex'
+    name: OfficeExtension.EventHandlers<Excel.WorksheetColumnSortedEventArgs>
+    fullName: OfficeExtension.EventHandlers<Excel.WorksheetColumnSortedEventArgs>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.EventHandlers:class'
+        name: OfficeExtension.EventHandlers
+        fullName: OfficeExtension.EventHandlers
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.WorksheetColumnSortedEventArgs:interface'
+        name: Excel.WorksheetColumnSortedEventArgs
+        fullName: Excel.WorksheetColumnSortedEventArgs
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.Worksheet#onDeactivated~0:complex'
+    name: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
+    fullName: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.EventHandlers:class'
+        name: OfficeExtension.EventHandlers
+        fullName: OfficeExtension.EventHandlers
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.WorksheetDeactivatedEventArgs:interface'
+        name: Excel.WorksheetDeactivatedEventArgs
+        fullName: Excel.WorksheetDeactivatedEventArgs
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.Worksheet#onFiltered~0:complex'
+    name: OfficeExtension.EventHandlers<Excel.WorksheetFilteredEventArgs>
+    fullName: OfficeExtension.EventHandlers<Excel.WorksheetFilteredEventArgs>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.EventHandlers:class'
+        name: OfficeExtension.EventHandlers
+        fullName: OfficeExtension.EventHandlers
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.WorksheetFilteredEventArgs:interface'
+        name: Excel.WorksheetFilteredEventArgs
+        fullName: Excel.WorksheetFilteredEventArgs
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.Worksheet#onFormatChanged~0:complex'
+    name: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>
+    fullName: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.EventHandlers:class'
+        name: OfficeExtension.EventHandlers
+        fullName: OfficeExtension.EventHandlers
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.WorksheetFormatChangedEventArgs:interface'
+        name: Excel.WorksheetFormatChangedEventArgs
+        fullName: Excel.WorksheetFormatChangedEventArgs
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.Worksheet#onRowHiddenChanged~0:complex'
+    name: OfficeExtension.EventHandlers<Excel.WorksheetRowHiddenChangedEventArgs>
+    fullName: OfficeExtension.EventHandlers<Excel.WorksheetRowHiddenChangedEventArgs>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.EventHandlers:class'
+        name: OfficeExtension.EventHandlers
+        fullName: OfficeExtension.EventHandlers
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs:interface'
+        name: Excel.WorksheetRowHiddenChangedEventArgs
+        fullName: Excel.WorksheetRowHiddenChangedEventArgs
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.Worksheet#onRowSorted~0:complex'
+    name: OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>
+    fullName: OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.EventHandlers:class'
+        name: OfficeExtension.EventHandlers
+        fullName: OfficeExtension.EventHandlers
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.WorksheetRowSortedEventArgs:interface'
+        name: Excel.WorksheetRowSortedEventArgs
+        fullName: Excel.WorksheetRowSortedEventArgs
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.Worksheet#onSelectionChanged~0:complex'
+    name: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
+    fullName: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.EventHandlers:class'
+        name: OfficeExtension.EventHandlers
+        fullName: OfficeExtension.EventHandlers
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.WorksheetSelectionChangedEventArgs:interface'
+        name: Excel.WorksheetSelectionChangedEventArgs
+        fullName: Excel.WorksheetSelectionChangedEventArgs
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.Worksheet#onSingleClicked~0:complex'
+    name: OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>
+    fullName: OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.EventHandlers:class'
+        name: OfficeExtension.EventHandlers
+        fullName: OfficeExtension.EventHandlers
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.WorksheetSingleClickedEventArgs:interface'
+        name: Excel.WorksheetSingleClickedEventArgs
+        fullName: Excel.WorksheetSingleClickedEventArgs
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.PageLayout:class'
+    name: Excel.PageLayout
+  - uid: 'excel!Excel.PivotTableCollection:class'
+    name: Excel.PivotTableCollection
+  - uid: 'excel!Excel.WorksheetProtection:class'
+    name: Excel.WorksheetProtection
+  - uid: 'excel!Excel.Worksheet#replaceAll~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.ReplaceCriteria:interface'
+    name: Excel.ReplaceCriteria
+  - uid: 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
+    name: Interfaces.WorksheetUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.ShapeCollection:class'
+    name: Excel.ShapeCollection
+  - uid: 'excel!Excel.SlicerCollection:class'
+    name: Excel.SlicerCollection
+  - uid: 'excel!Excel.TableCollection:class'
+    name: Excel.TableCollection
+  - uid: 'excel!Excel.Interfaces.WorksheetData:interface'
+    name: Excel.Interfaces.WorksheetData
+  - uid: 'excel!Excel.Worksheet#visibility~0:complex'
+    name: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden"
+    fullName: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden"
+    spec.typeScript:
+      - uid: 'excel!Excel.SheetVisibility:enum'
+        name: Excel.SheetVisibility
+        fullName: Excel.SheetVisibility
+      - name: ' | "Visible" | "Hidden" | "VeryHidden"'
+        fullName: ' | "Visible" | "Hidden" | "VeryHidden"'

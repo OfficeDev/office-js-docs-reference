@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.WorksheetColumnSortedEventArgs
+  - uid: 'excel!Excel.WorksheetColumnSortedEventArgs:interface'
     summary: >-
       Provides information about the worksheet that raised the ColumnSorted event.
 
@@ -13,13 +13,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.WorksheetColumnSortedEventArgs.address
-      - excel.Excel.WorksheetColumnSortedEventArgs.source
-      - excel.Excel.WorksheetColumnSortedEventArgs.type
-      - excel.Excel.WorksheetColumnSortedEventArgs.worksheetId
-  - uid: excel.Excel.WorksheetColumnSortedEventArgs.address
+      - 'excel!Excel.WorksheetColumnSortedEventArgs#address:member'
+      - 'excel!Excel.WorksheetColumnSortedEventArgs#source:member'
+      - 'excel!Excel.WorksheetColumnSortedEventArgs#type:member'
+      - 'excel!Excel.WorksheetColumnSortedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.WorksheetColumnSortedEventArgs#address:member'
     summary: >-
       Gets the range address that represents the sorted areas of a specific worksheet.
 
@@ -37,7 +37,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.WorksheetColumnSortedEventArgs.source
+  - uid: 'excel!Excel.WorksheetColumnSortedEventArgs#source:member'
     summary: >-
       Gets the source of the event. See Excel.EventSource for details.
 
@@ -54,8 +54,8 @@ items:
       content: 'source: Excel.EventSource | "Local" | "Remote";'
       return:
         type:
-          - Excel.EventSource | "Local" | "Remote"
-  - uid: excel.Excel.WorksheetColumnSortedEventArgs.type
+          - 'excel!Excel.WorksheetColumnSortedEventArgs#source~0:complex'
+  - uid: 'excel!Excel.WorksheetColumnSortedEventArgs#type:member'
     summary: >-
       Gets the type of the event. See Excel.EventType for details.
 
@@ -73,7 +73,7 @@ items:
       return:
         type:
           - '"WorksheetColumnSorted"'
-  - uid: excel.Excel.WorksheetColumnSortedEventArgs.worksheetId
+  - uid: 'excel!Excel.WorksheetColumnSortedEventArgs#worksheetId:member'
     summary: >-
       Gets the id of the worksheet where the sorting happened.
 
@@ -91,3 +91,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'excel!Excel.WorksheetColumnSortedEventArgs#source~0:complex'
+    name: Excel.EventSource | "Local" | "Remote"
+    fullName: Excel.EventSource | "Local" | "Remote"
+    spec.typeScript:
+      - uid: 'excel!Excel.EventSource:enum'
+        name: Excel.EventSource
+        fullName: Excel.EventSource
+      - name: ' | "Local" | "Remote"'
+        fullName: ' | "Local" | "Remote"'

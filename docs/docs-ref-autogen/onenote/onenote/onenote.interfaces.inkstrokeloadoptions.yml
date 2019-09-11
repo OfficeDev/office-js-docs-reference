@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkStrokeLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeLoadOptions:interface'
     summary: |-
       Represents a single stroke of ink.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkStrokeLoadOptions.$all
-      - onenote.OneNote.Interfaces.InkStrokeLoadOptions.floatingInk
-      - onenote.OneNote.Interfaces.InkStrokeLoadOptions.id
-  - uid: onenote.OneNote.Interfaces.InkStrokeLoadOptions.$all
+      - 'onenote!OneNote.Interfaces.InkStrokeLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.InkStrokeLoadOptions#floatingInk:member'
+      - 'onenote!OneNote.Interfaces.InkStrokeLoadOptions#id:member'
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.InkStrokeLoadOptions.floatingInk
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeLoadOptions#floatingInk:member'
     summary: |-
       Gets the ID of the InkStroke object.
 
@@ -40,8 +40,8 @@ items:
       content: 'floatingInk?: OneNote.Interfaces.FloatingInkLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.FloatingInkLoadOptions
-  - uid: onenote.OneNote.Interfaces.InkStrokeLoadOptions.id
+          - 'onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeLoadOptions#id:member'
     summary: |-
       Gets the ID of the InkStroke object. Read-only.
 
@@ -56,3 +56,6 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface'
+    name: OneNote.Interfaces.FloatingInkLoadOptions

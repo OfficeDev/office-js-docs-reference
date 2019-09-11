@@ -1,13 +1,13 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.TaskSuggestion
+  - uid: 'outlook!Office.TaskSuggestion:interface'
     summary: >-
       Represents a suggested task identified in an item. Read mode only.
 
 
       The list of tasks suggested in an email message is returned in the taskSuggestions property of the
-      [Entities](xref:outlook.Office.Entities) object that is returned when the getEntities or getEntitiesByType method
-      is called on the active item.
+      [Entities](xref:outlook!Office.Entities:interface) object that is returned when the getEntities or
+      getEntitiesByType method is called on the active item.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -43,11 +43,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.TaskSuggestion.assignees
-      - outlook.Office.TaskSuggestion.taskString
-  - uid: outlook.Office.TaskSuggestion.assignees
+      - 'outlook!Office.TaskSuggestion#assignees:member'
+      - 'outlook!Office.TaskSuggestion#taskString:member'
+  - uid: 'outlook!Office.TaskSuggestion#assignees:member'
     summary: Gets the users that should be assigned a suggested task.
     name: assignees
     fullName: assignees
@@ -58,8 +58,8 @@ items:
       content: 'assignees: EmailUser[];'
       return:
         type:
-          - 'EmailUser[]'
-  - uid: outlook.Office.TaskSuggestion.taskString
+          - 'outlook!Office.TaskSuggestion#assignees~0:complex'
+  - uid: 'outlook!Office.TaskSuggestion#taskString:member'
     summary: Gets the text of an item that was identified as a task suggestion.
     name: taskString
     fullName: taskString
@@ -71,3 +71,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'outlook!Office.TaskSuggestion#assignees~0:complex'
+    name: 'EmailUser[]'
+    fullName: 'Office.EmailUser[]'
+    spec.typeScript:
+      - uid: 'outlook!Office.EmailUser:interface'
+        name: EmailUser
+        fullName: Office.EmailUser
+      - name: '[]'
+        fullName: '[]'

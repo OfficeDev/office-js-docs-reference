@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.BodyLoadOptions
+  - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
     summary: |-
       Represents the body of a document or a section.
 
@@ -10,21 +10,21 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.BodyLoadOptions.$all
-      - word.Word.Interfaces.BodyLoadOptions.font
-      - word.Word.Interfaces.BodyLoadOptions.parentBody
-      - word.Word.Interfaces.BodyLoadOptions.parentBodyOrNullObject
-      - word.Word.Interfaces.BodyLoadOptions.parentContentControl
-      - word.Word.Interfaces.BodyLoadOptions.parentContentControlOrNullObject
-      - word.Word.Interfaces.BodyLoadOptions.parentSection
-      - word.Word.Interfaces.BodyLoadOptions.parentSectionOrNullObject
-      - word.Word.Interfaces.BodyLoadOptions.style
-      - word.Word.Interfaces.BodyLoadOptions.styleBuiltIn
-      - word.Word.Interfaces.BodyLoadOptions.text
-      - word.Word.Interfaces.BodyLoadOptions.type
-  - uid: word.Word.Interfaces.BodyLoadOptions.$all
+      - 'word!Word.Interfaces.BodyLoadOptions#$all:member'
+      - 'word!Word.Interfaces.BodyLoadOptions#font:member'
+      - 'word!Word.Interfaces.BodyLoadOptions#parentBody:member'
+      - 'word!Word.Interfaces.BodyLoadOptions#parentBodyOrNullObject:member'
+      - 'word!Word.Interfaces.BodyLoadOptions#parentContentControl:member'
+      - 'word!Word.Interfaces.BodyLoadOptions#parentContentControlOrNullObject:member'
+      - 'word!Word.Interfaces.BodyLoadOptions#parentSection:member'
+      - 'word!Word.Interfaces.BodyLoadOptions#parentSectionOrNullObject:member'
+      - 'word!Word.Interfaces.BodyLoadOptions#style:member'
+      - 'word!Word.Interfaces.BodyLoadOptions#styleBuiltIn:member'
+      - 'word!Word.Interfaces.BodyLoadOptions#text:member'
+      - 'word!Word.Interfaces.BodyLoadOptions#type:member'
+  - uid: 'word!Word.Interfaces.BodyLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -35,7 +35,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.BodyLoadOptions.font
+  - uid: 'word!Word.Interfaces.BodyLoadOptions#font:member'
     summary: |-
       Gets the text format of the body. Use this to get and set font name, size, color and other properties.
 
@@ -49,8 +49,8 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.FontLoadOptions
-  - uid: word.Word.Interfaces.BodyLoadOptions.parentBody
+          - 'word!Word.Interfaces.FontLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.BodyLoadOptions#parentBody:member'
     summary: >-
       Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there
       isn't a parent body.
@@ -66,8 +66,8 @@ items:
       content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.BodyLoadOptions
-  - uid: word.Word.Interfaces.BodyLoadOptions.parentBodyOrNullObject
+          - 'word!Word.Interfaces.BodyLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.BodyLoadOptions#parentBodyOrNullObject:member'
     summary: >-
       Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null
       object if there isn't a parent body.
@@ -83,8 +83,8 @@ items:
       content: 'parentBodyOrNullObject?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.BodyLoadOptions
-  - uid: word.Word.Interfaces.BodyLoadOptions.parentContentControl
+          - 'word!Word.Interfaces.BodyLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.BodyLoadOptions#parentContentControl:member'
     summary: |-
       Gets the content control that contains the body. Throws if there isn't a parent content control.
 
@@ -98,8 +98,8 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
-  - uid: word.Word.Interfaces.BodyLoadOptions.parentContentControlOrNullObject
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.BodyLoadOptions#parentContentControlOrNullObject:member'
     summary: |-
       Gets the content control that contains the body. Returns a null object if there isn't a parent content control.
 
@@ -113,8 +113,8 @@ items:
       content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
-  - uid: word.Word.Interfaces.BodyLoadOptions.parentSection
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.BodyLoadOptions#parentSection:member'
     summary: |-
       Gets the parent section of the body. Throws if there isn't a parent section.
 
@@ -128,8 +128,8 @@ items:
       content: 'parentSection?: Word.Interfaces.SectionLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.SectionLoadOptions
-  - uid: word.Word.Interfaces.BodyLoadOptions.parentSectionOrNullObject
+          - 'word!Word.Interfaces.SectionLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.BodyLoadOptions#parentSectionOrNullObject:member'
     summary: |-
       Gets the parent section of the body. Returns a null object if there isn't a parent section.
 
@@ -143,8 +143,8 @@ items:
       content: 'parentSectionOrNullObject?: Word.Interfaces.SectionLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.SectionLoadOptions
-  - uid: word.Word.Interfaces.BodyLoadOptions.style
+          - 'word!Word.Interfaces.SectionLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.BodyLoadOptions#style:member'
     summary: >-
       Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -161,7 +161,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.BodyLoadOptions.styleBuiltIn
+  - uid: 'word!Word.Interfaces.BodyLoadOptions#styleBuiltIn:member'
     summary: >-
       Gets or sets the built-in style name for the body. Use this property for built-in styles that are portable between
       locales. To use custom styles or localized style names, see the "style" property.
@@ -178,7 +178,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.BodyLoadOptions.text
+  - uid: 'word!Word.Interfaces.BodyLoadOptions#text:member'
     summary: |-
       Gets the text of the body. Use the insertText method to insert text. Read-only.
 
@@ -193,7 +193,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.BodyLoadOptions.type
+  - uid: 'word!Word.Interfaces.BodyLoadOptions#type:member'
     summary: |-
       Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.
 
@@ -208,3 +208,12 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
+    name: Word.Interfaces.FontLoadOptions
+  - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
+    name: Word.Interfaces.BodyLoadOptions
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+    name: Word.Interfaces.ContentControlLoadOptions
+  - uid: 'word!Word.Interfaces.SectionLoadOptions:interface'
+    name: Word.Interfaces.SectionLoadOptions

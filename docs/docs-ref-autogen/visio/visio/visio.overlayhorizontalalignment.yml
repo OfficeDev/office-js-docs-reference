@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.OverlayHorizontalAlignment
+  - uid: 'visio!Visio.OverlayHorizontalAlignment:enum'
     summary: |-
       Represents the Horizontal Alignment of the Overlay relative to the shape.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: enum
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.OverlayHorizontalAlignment.center
-      - visio.Visio.OverlayHorizontalAlignment.left
-      - visio.Visio.OverlayHorizontalAlignment.right
-  - uid: visio.Visio.OverlayHorizontalAlignment.center
+      - 'visio!Visio.OverlayHorizontalAlignment.center:member'
+      - 'visio!Visio.OverlayHorizontalAlignment.left:member'
+      - 'visio!Visio.OverlayHorizontalAlignment.right:member'
+  - uid: 'visio!Visio.OverlayHorizontalAlignment.center:member'
     summary: center
     name: center
     fullName: center
@@ -23,7 +23,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Center"'
-  - uid: visio.Visio.OverlayHorizontalAlignment.left
+  - uid: 'visio!Visio.OverlayHorizontalAlignment.left:member'
     summary: left
     name: left
     fullName: left
@@ -31,7 +31,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Left"'
-  - uid: visio.Visio.OverlayHorizontalAlignment.right
+  - uid: 'visio!Visio.OverlayHorizontalAlignment.right:member'
     summary: right
     name: right
     fullName: right

@@ -1,29 +1,31 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.CustomXmlPart
-    summary: 'Represents a single CustomXMLPart in an [Office.CustomXmlParts](xref:office.Office.CustomXmlParts) collection.'
+  - uid: 'office!Office.CustomXmlPart:interface'
+    summary: >-
+      Represents a single CustomXMLPart in an [Office.CustomXmlParts](xref:office!Office.CustomXmlParts:interface)
+      collection.
     remarks: '**Hosts**: Word'
     name: Office.CustomXmlPart
     fullName: Office.CustomXmlPart
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.CustomXmlPart.addHandlerAsync
-      - office.Office.CustomXmlPart.addHandlerAsync_1
-      - office.Office.CustomXmlPart.deleteAsync
-      - office.Office.CustomXmlPart.deleteAsync_1
-      - office.Office.CustomXmlPart.getNodesAsync
-      - office.Office.CustomXmlPart.getNodesAsync_1
-      - office.Office.CustomXmlPart.getXmlAsync
-      - office.Office.CustomXmlPart.getXmlAsync_1
-      - office.Office.CustomXmlPart.removeHandlerAsync
-      - office.Office.CustomXmlPart.removeHandlerAsync_1
-      - office.Office.CustomXmlPart.builtIn
-      - office.Office.CustomXmlPart.id
-      - office.Office.CustomXmlPart.namespaceManager
-  - uid: office.Office.CustomXmlPart.addHandlerAsync
+      - 'office!Office.CustomXmlPart#addHandlerAsync:member(1)'
+      - 'office!Office.CustomXmlPart#addHandlerAsync:member(2)'
+      - 'office!Office.CustomXmlPart#builtIn:member'
+      - 'office!Office.CustomXmlPart#deleteAsync:member(1)'
+      - 'office!Office.CustomXmlPart#deleteAsync:member(2)'
+      - 'office!Office.CustomXmlPart#getNodesAsync:member(1)'
+      - 'office!Office.CustomXmlPart#getNodesAsync:member(2)'
+      - 'office!Office.CustomXmlPart#getXmlAsync:member(1)'
+      - 'office!Office.CustomXmlPart#getXmlAsync:member(2)'
+      - 'office!Office.CustomXmlPart#id:member'
+      - 'office!Office.CustomXmlPart#namespaceManager:member'
+      - 'office!Office.CustomXmlPart#removeHandlerAsync:member(1)'
+      - 'office!Office.CustomXmlPart#removeHandlerAsync:member(2)'
+  - uid: 'office!Office.CustomXmlPart#addHandlerAsync:member(1)'
     summary: Adds an event handler to the object using the specified event type.
     remarks: >-
       **Requirement set**:
@@ -52,26 +54,26 @@ items:
             `Office.EventType.NodeDeleted`<!-- -->, `Office.EventType.NodeInserted`<!-- -->, and
             `Office.EventType.NodeReplaced`<!-- -->.
           type:
-            - office.Office.EventType
+            - 'office!Office.EventType:enum'
         - id: handler
           description: >-
             The event handler function to add, whose only parameter is of type
-            [Office.NodeDeletedEventArgs](xref:office.Office.NodeDeletedEventArgs)<!-- -->,
-            [Office.NodeInsertedEventArgs](xref:office.Office.NodeInsertedEventArgs)<!-- -->, or
-            [Office.NodeReplacedEventArgs](xref:office.Office.NodeReplacedEventArgs)
+            [Office.NodeDeletedEventArgs](xref:office!Office.NodeDeletedEventArgs:interface)<!-- -->,
+            [Office.NodeInsertedEventArgs](xref:office!Office.NodeInsertedEventArgs:interface)<!-- -->, or
+            [Office.NodeReplacedEventArgs](xref:office!Office.NodeReplacedEventArgs:interface)
           type:
             - '(result: any) => void'
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.CustomXmlPart.addHandlerAsync_1
+            - 'office!Office.CustomXmlPart#addHandlerAsync~0:complex'
+  - uid: 'office!Office.CustomXmlPart#addHandlerAsync:member(2)'
     summary: Adds an event handler to the object using the specified event type.
     remarks: >-
       **Requirement set**:
@@ -170,22 +172,53 @@ items:
             `Office.EventType.NodeDeleted`<!-- -->, `Office.EventType.NodeInserted`<!-- -->, and
             `Office.EventType.NodeReplaced`<!-- -->.
           type:
-            - office.Office.EventType
+            - 'office!Office.EventType:enum'
         - id: handler
           description: >-
             The event handler function to add, whose only parameter is of type
-            [Office.NodeDeletedEventArgs](xref:office.Office.NodeDeletedEventArgs)<!-- -->,
-            [Office.NodeInsertedEventArgs](xref:office.Office.NodeInsertedEventArgs)<!-- -->, or
-            [Office.NodeReplacedEventArgs](xref:office.Office.NodeReplacedEventArgs)
+            [Office.NodeDeletedEventArgs](xref:office!Office.NodeDeletedEventArgs:interface)<!-- -->,
+            [Office.NodeInsertedEventArgs](xref:office!Office.NodeInsertedEventArgs:interface)<!-- -->, or
+            [Office.NodeReplacedEventArgs](xref:office!Office.NodeReplacedEventArgs:interface)
           type:
             - '(result: any) => void'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.CustomXmlPart.deleteAsync
+            - 'office!Office.CustomXmlPart#addHandlerAsync~1:complex'
+  - uid: 'office!Office.CustomXmlPart#builtIn:member'
+    summary: 'True, if the custom XML part is built in; otherwise false.'
+    name: builtIn
+    fullName: builtIn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'builtIn: boolean;'
+      return:
+        type:
+          - boolean
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          function showXMLPartBuiltIn() {
+              Office.context.document.customXmlParts.getByIdAsync(
+                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+                  var xmlPart = result.value;
+                  write(xmlPart.builtIn);
+              });
+          }
+
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
+  - uid: 'office!Office.CustomXmlPart#deleteAsync:member(1)'
     summary: Deletes the Custom XML Part.
     remarks: >-
       **Requirement set**:
@@ -205,14 +238,14 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.CustomXmlPart.deleteAsync_1
+            - 'office!Office.CustomXmlPart#deleteAsync~0:complex'
+  - uid: 'office!Office.CustomXmlPart#deleteAsync:member(2)'
     summary: Deletes the Custom XML Part.
     remarks: >-
       **Requirement set**:
@@ -256,10 +289,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.CustomXmlPart.getNodesAsync
+            - 'office!Office.CustomXmlPart#deleteAsync~1:complex'
+  - uid: 'office!Office.CustomXmlPart#getNodesAsync:member(1)'
     summary: Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
     remarks: >-
       **Requirement set**:
@@ -285,16 +318,16 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an array
-            of CustomXmlNode objects that represent the nodes specified by the XPath expression passed to the xPath
-            parameter.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is an array of CustomXmlNode objects that represent the nodes specified by the XPath expression passed to
+            the xPath parameter.
           type:
-            - '(result: AsyncResult<CustomXmlNode[]>) => void'
-  - uid: office.Office.CustomXmlPart.getNodesAsync_1
+            - 'office!Office.CustomXmlPart#getNodesAsync~0:complex'
+  - uid: 'office!Office.CustomXmlPart#getNodesAsync:member(2)'
     summary: Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
     remarks: >-
       **Requirement set**:
@@ -345,12 +378,12 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an array
-            of CustomXmlNode objects that represent the nodes specified by the XPath expression passed to the xPath
-            parameter.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is an array of CustomXmlNode objects that represent the nodes specified by the XPath expression passed to
+            the xPath parameter.
           type:
-            - '(result: AsyncResult<CustomXmlNode[]>) => void'
-  - uid: office.Office.CustomXmlPart.getXmlAsync
+            - 'office!Office.CustomXmlPart#getNodesAsync~1:complex'
+  - uid: 'office!Office.CustomXmlPart#getXmlAsync:member(1)'
     summary: Asynchronously gets the XML inside this custom XML part.
     remarks: >-
       **Requirement set**:
@@ -370,15 +403,15 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a string
-            that contains the XML of the referenced CustomXmlPart object.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is a string that contains the XML of the referenced CustomXmlPart object.
           type:
-            - '(result: AsyncResult<string>) => void'
-  - uid: office.Office.CustomXmlPart.getXmlAsync_1
+            - 'office!Office.CustomXmlPart#getXmlAsync~0:complex'
+  - uid: 'office!Office.CustomXmlPart#getXmlAsync:member(2)'
     summary: Asynchronously gets the XML inside this custom XML part.
     remarks: >-
       **Requirement set**:
@@ -422,11 +455,70 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a string
-            that contains the XML of the referenced CustomXmlPart object.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is a string that contains the XML of the referenced CustomXmlPart object.
           type:
-            - '(result: AsyncResult<string>) => void'
-  - uid: office.Office.CustomXmlPart.removeHandlerAsync
+            - 'office!Office.CustomXmlPart#getXmlAsync~1:complex'
+  - uid: 'office!Office.CustomXmlPart#id:member'
+    summary: Gets the GUID of the CustomXMLPart.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          function showXMLPartBuiltId() {
+              Office.context.document.customXmlParts.getByIdAsync(
+                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+                  var xmlPart = result.value;
+                  write(xmlPart.id);
+              });
+          }
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
+  - uid: 'office!Office.CustomXmlPart#namespaceManager:member'
+    summary: >-
+      Gets the set of namespace prefix mappings
+      ([Office.CustomXmlPrefixMappings](xref:office!Office.CustomXmlPrefixMappings:interface)<!-- -->) used against the
+      current CustomXmlPart.
+    name: namespaceManager
+    fullName: namespaceManager
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'namespaceManager: CustomXmlPrefixMappings;'
+      return:
+        type:
+          - 'office!Office.CustomXmlPrefixMappings:interface'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          function setXMLPartNamespaceManagerNamespace() {
+              Office.context.document.customXmlParts.getByIdAsync(
+                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+                  var xmlPart = result.value;
+                  xmlPart.namespaceManager.addNamespaceAsync("myPrefix", "myNamespace");
+              });
+          }
+          ```
+  - uid: 'office!Office.CustomXmlPart#removeHandlerAsync:member(1)'
     summary: Removes an event handler for the specified event type.
     remarks: >-
       **Requirement set**:
@@ -451,7 +543,7 @@ items:
             as `Office.EventType.NodeDeleted`<!-- -->, `Office.EventType.NodeInserted`<!-- -->, and
             `Office.EventType.NodeReplaced`<!-- -->.
           type:
-            - office.Office.EventType
+            - 'office!Office.EventType:enum'
         - id: handler
           description: The name of the handler to remove.
           type:
@@ -459,14 +551,14 @@ items:
         - id: options
           description: Provides options to determine which event handler or handlers are removed.
           type:
-            - office.Office.RemoveHandlerOptions
+            - 'office!Office.RemoveHandlerOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.CustomXmlPart.removeHandlerAsync_1
+            - 'office!Office.CustomXmlPart#removeHandlerAsync~0:complex'
+  - uid: 'office!Office.CustomXmlPart#removeHandlerAsync:member(2)'
     summary: Removes an event handler for the specified event type.
     remarks: >-
       **Requirement set**:
@@ -508,7 +600,7 @@ items:
             as `Office.EventType.NodeDeleted`<!-- -->, `Office.EventType.NodeInserted`<!-- -->, and
             `Office.EventType.NodeReplaced`<!-- -->.
           type:
-            - office.Office.EventType
+            - 'office!Office.EventType:enum'
         - id: handler
           description: The name of the handler to remove.
           type:
@@ -516,96 +608,135 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.CustomXmlPart.builtIn
-    summary: 'True, if the custom XML part is built in; otherwise false.'
-    name: builtIn
-    fullName: builtIn
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'builtIn: boolean;'
-      return:
-        type:
-          - boolean
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          function showXMLPartBuiltIn() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  var xmlPart = result.value;
-                  write(xmlPart.builtIn);
-              });
-          }
-
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
-  - uid: office.Office.CustomXmlPart.id
-    summary: Gets the GUID of the CustomXMLPart.
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'id: string;'
-      return:
-        type:
-          - string
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          function showXMLPartBuiltId() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  var xmlPart = result.value;
-                  write(xmlPart.id);
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
-  - uid: office.Office.CustomXmlPart.namespaceManager
-    summary: >-
-      Gets the set of namespace prefix mappings
-      ([Office.CustomXmlPrefixMappings](xref:office.Office.CustomXmlPrefixMappings)<!-- -->) used against the current
-      CustomXmlPart.
-    name: namespaceManager
-    fullName: namespaceManager
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'namespaceManager: CustomXmlPrefixMappings;'
-      return:
-        type:
-          - office.Office.CustomXmlPrefixMappings
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          function setXMLPartNamespaceManagerNamespace() {
-              Office.context.document.customXmlParts.getByIdAsync(
-                  "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-                  var xmlPart = result.value;
-                  xmlPart.namespaceManager.addNamespaceAsync("myPrefix", "myNamespace");
-              });
-          }
-          ```
+            - 'office!Office.CustomXmlPart#removeHandlerAsync~1:complex'
+references:
+  - uid: 'office!Office.EventType:enum'
+    name: Office.EventType
+  - uid: 'office!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions
+  - uid: 'office!Office.CustomXmlPart#addHandlerAsync~0:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.CustomXmlPart#addHandlerAsync~1:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.CustomXmlPart#deleteAsync~0:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.CustomXmlPart#deleteAsync~1:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.CustomXmlPart#getNodesAsync~0:complex'
+    name: '(result: AsyncResult<CustomXmlNode[]>) => void'
+    fullName: '(result: Office.AsyncResult<Office.CustomXmlNode[]>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.CustomXmlNode:interface'
+        name: CustomXmlNode
+        fullName: Office.CustomXmlNode
+      - name: '[]>) => void'
+        fullName: '[]>) => void'
+  - uid: 'office!Office.CustomXmlPart#getNodesAsync~1:complex'
+    name: '(result: AsyncResult<CustomXmlNode[]>) => void'
+    fullName: '(result: Office.AsyncResult<Office.CustomXmlNode[]>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'office!Office.CustomXmlNode:interface'
+        name: CustomXmlNode
+        fullName: Office.CustomXmlNode
+      - name: '[]>) => void'
+        fullName: '[]>) => void'
+  - uid: 'office!Office.CustomXmlPart#getXmlAsync~0:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'office!Office.CustomXmlPart#getXmlAsync~1:complex'
+    name: '(result: AsyncResult<string>) => void'
+    fullName: '(result: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'office!Office.CustomXmlPrefixMappings:interface'
+    name: CustomXmlPrefixMappings
+  - uid: 'office!Office.RemoveHandlerOptions:interface'
+    name: RemoveHandlerOptions
+  - uid: 'office!Office.CustomXmlPart#removeHandlerAsync~0:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.CustomXmlPart#removeHandlerAsync~1:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void

@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PageBreakData
+  - uid: 'excel!Excel.Interfaces.PageBreakData:interface'
     summary: An interface describing the data returned by calling "pageBreak.toJSON()".
     name: Excel.Interfaces.PageBreakData
     fullName: Excel.Interfaces.PageBreakData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PageBreakData.columnIndex
-      - excel.Excel.Interfaces.PageBreakData.rowIndex
-  - uid: excel.Excel.Interfaces.PageBreakData.columnIndex
+      - 'excel!Excel.Interfaces.PageBreakData#columnIndex:member'
+      - 'excel!Excel.Interfaces.PageBreakData#rowIndex:member'
+  - uid: 'excel!Excel.Interfaces.PageBreakData#columnIndex:member'
     summary: |-
       Represents the column index for the page break
 
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.PageBreakData.rowIndex
+  - uid: 'excel!Excel.Interfaces.PageBreakData#rowIndex:member'
     summary: |-
       Represents the row index for the page break
 

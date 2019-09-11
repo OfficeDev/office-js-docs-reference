@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ShapeTextHorizontalAlignment
+  - uid: 'excel!Excel.ShapeTextHorizontalAlignment:enum'
     summary: |-
       Specifies the horizontal alignment for the text frame in a shape.
 
@@ -10,58 +10,58 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ShapeTextHorizontalAlignment.center
-      - excel.Excel.ShapeTextHorizontalAlignment.distributed
-      - excel.Excel.ShapeTextHorizontalAlignment.justify
-      - excel.Excel.ShapeTextHorizontalAlignment.justifyLow
-      - excel.Excel.ShapeTextHorizontalAlignment.left
-      - excel.Excel.ShapeTextHorizontalAlignment.right
-      - excel.Excel.ShapeTextHorizontalAlignment.thaiDistributed
-  - uid: excel.Excel.ShapeTextHorizontalAlignment.center
+      - 'excel!Excel.ShapeTextHorizontalAlignment.center:member'
+      - 'excel!Excel.ShapeTextHorizontalAlignment.distributed:member'
+      - 'excel!Excel.ShapeTextHorizontalAlignment.justify:member'
+      - 'excel!Excel.ShapeTextHorizontalAlignment.justifyLow:member'
+      - 'excel!Excel.ShapeTextHorizontalAlignment.left:member'
+      - 'excel!Excel.ShapeTextHorizontalAlignment.right:member'
+      - 'excel!Excel.ShapeTextHorizontalAlignment.thaiDistributed:member'
+  - uid: 'excel!Excel.ShapeTextHorizontalAlignment.center:member'
     name: center
     fullName: center
     langs:
       - typeScript
     type: field
     numericValue: '"Center"'
-  - uid: excel.Excel.ShapeTextHorizontalAlignment.distributed
+  - uid: 'excel!Excel.ShapeTextHorizontalAlignment.distributed:member'
     name: distributed
     fullName: distributed
     langs:
       - typeScript
     type: field
     numericValue: '"Distributed"'
-  - uid: excel.Excel.ShapeTextHorizontalAlignment.justify
+  - uid: 'excel!Excel.ShapeTextHorizontalAlignment.justify:member'
     name: justify
     fullName: justify
     langs:
       - typeScript
     type: field
     numericValue: '"Justify"'
-  - uid: excel.Excel.ShapeTextHorizontalAlignment.justifyLow
+  - uid: 'excel!Excel.ShapeTextHorizontalAlignment.justifyLow:member'
     name: justifyLow
     fullName: justifyLow
     langs:
       - typeScript
     type: field
     numericValue: '"JustifyLow"'
-  - uid: excel.Excel.ShapeTextHorizontalAlignment.left
+  - uid: 'excel!Excel.ShapeTextHorizontalAlignment.left:member'
     name: left
     fullName: left
     langs:
       - typeScript
     type: field
     numericValue: '"Left"'
-  - uid: excel.Excel.ShapeTextHorizontalAlignment.right
+  - uid: 'excel!Excel.ShapeTextHorizontalAlignment.right:member'
     name: right
     fullName: right
     langs:
       - typeScript
     type: field
     numericValue: '"Right"'
-  - uid: excel.Excel.ShapeTextHorizontalAlignment.thaiDistributed
+  - uid: 'excel!Excel.ShapeTextHorizontalAlignment.thaiDistributed:member'
     name: thaiDistributed
     fullName: thaiDistributed
     langs:

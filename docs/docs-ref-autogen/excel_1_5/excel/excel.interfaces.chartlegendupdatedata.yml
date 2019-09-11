@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartLegendUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData:interface'
     summary: 'An interface for updating data on the ChartLegend object, for use in "chartLegend.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.ChartLegendUpdateData
     fullName: Excel.Interfaces.ChartLegendUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartLegendUpdateData.format
-      - excel.Excel.Interfaces.ChartLegendUpdateData.overlay
-      - excel.Excel.Interfaces.ChartLegendUpdateData.position
-      - excel.Excel.Interfaces.ChartLegendUpdateData.visible
-  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.format
+      - 'excel!Excel.Interfaces.ChartLegendUpdateData#format:member'
+      - 'excel!Excel.Interfaces.ChartLegendUpdateData#overlay:member'
+      - 'excel!Excel.Interfaces.ChartLegendUpdateData#position:member'
+      - 'excel!Excel.Interfaces.ChartLegendUpdateData#visible:member'
+  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#format:member'
     summary: |-
       Represents the formatting of a chart legend, which includes fill and font formatting.
 
@@ -27,8 +27,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartLegendFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendFormatUpdateData
-  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.overlay
+          - 'excel!Excel.Interfaces.ChartLegendFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#overlay:member'
     summary: |-
       Boolean value for whether the chart legend should overlap with the main body of the chart.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.position
+  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#position:member'
     summary: |-
       Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
 
@@ -57,8 +57,8 @@ items:
       content: 'position?: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom";'
       return:
         type:
-          - Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
-  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.visible
+          - 'excel!Excel.Interfaces.ChartLegendUpdateData#position~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#visible:member'
     summary: |-
       A boolean value the represents the visibility of a ChartLegend object.
 
@@ -73,3 +73,15 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartLegendFormatUpdateData:interface'
+    name: Excel.Interfaces.ChartLegendFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#position~0:complex'
+    name: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
+    fullName: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartLegendPosition:enum'
+        name: Excel.ChartLegendPosition
+        fullName: Excel.ChartLegendPosition
+      - name: ' | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"'
+        fullName: ' | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"'

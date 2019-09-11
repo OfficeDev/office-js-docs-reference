@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartSeriesFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface'
     summary: |-
       Encapsulates the format properties for the chart series
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartSeriesFormatLoadOptions.$all
-      - excel.Excel.Interfaces.ChartSeriesFormatLoadOptions.line
-  - uid: excel.Excel.Interfaces.ChartSeriesFormatLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions#line:member'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -25,7 +25,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesFormatLoadOptions.line
+  - uid: 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions#line:member'
     summary: |-
       Represents line formatting.
 
@@ -39,4 +39,7 @@ items:
       content: 'line?: Excel.Interfaces.ChartLineFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLineFormatLoadOptions
+          - 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartLineFormatLoadOptions

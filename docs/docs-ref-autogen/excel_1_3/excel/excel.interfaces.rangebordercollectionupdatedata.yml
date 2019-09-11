@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeBorderCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.RangeBorderCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the RangeBorderCollection object, for use in "rangeBorderCollection.set(<!--
       -->{ ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RangeBorderCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.RangeBorderCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.RangeBorderCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.RangeBorderCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: Excel.Interfaces.RangeBorderData[];'
       return:
         type:
-          - 'Excel.Interfaces.RangeBorderData[]'
+          - 'excel!Excel.Interfaces.RangeBorderCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.RangeBorderCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.RangeBorderData[]'
+    fullName: 'Excel.Interfaces.RangeBorderData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.RangeBorderData:interface'
+        name: Excel.Interfaces.RangeBorderData
+        fullName: Excel.Interfaces.RangeBorderData
+      - name: '[]'
+        fullName: '[]'

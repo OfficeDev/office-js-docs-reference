@@ -1,20 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeBorderData
+  - uid: 'excel!Excel.Interfaces.RangeBorderData:interface'
     summary: An interface describing the data returned by calling "rangeBorder.toJSON()".
     name: Excel.Interfaces.RangeBorderData
     fullName: Excel.Interfaces.RangeBorderData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RangeBorderData.color
-      - excel.Excel.Interfaces.RangeBorderData.sideIndex
-      - excel.Excel.Interfaces.RangeBorderData.style
-      - excel.Excel.Interfaces.RangeBorderData.tintAndShade
-      - excel.Excel.Interfaces.RangeBorderData.weight
-  - uid: excel.Excel.Interfaces.RangeBorderData.color
+      - 'excel!Excel.Interfaces.RangeBorderData#color:member'
+      - 'excel!Excel.Interfaces.RangeBorderData#sideIndex:member'
+      - 'excel!Excel.Interfaces.RangeBorderData#style:member'
+      - 'excel!Excel.Interfaces.RangeBorderData#tintAndShade:member'
+      - 'excel!Excel.Interfaces.RangeBorderData#weight:member'
+  - uid: 'excel!Excel.Interfaces.RangeBorderData#color:member'
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange").
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.RangeBorderData.sideIndex
+  - uid: 'excel!Excel.Interfaces.RangeBorderData#sideIndex:member'
     summary: |-
       Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
 
@@ -47,10 +47,8 @@ items:
         "InsideHorizontal" | "DiagonalDown" | "DiagonalUp";
       return:
         type:
-          - >-
-            Excel.BorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" |
-            "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"
-  - uid: excel.Excel.Interfaces.RangeBorderData.style
+          - 'excel!Excel.Interfaces.RangeBorderData#sideIndex~0:complex'
+  - uid: 'excel!Excel.Interfaces.RangeBorderData#style:member'
     summary: >-
       One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
       details.
@@ -68,10 +66,8 @@ items:
         "SlantDashDot";
       return:
         type:
-          - >-
-            Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
-            "SlantDashDot"
-  - uid: excel.Excel.Interfaces.RangeBorderData.tintAndShade
+          - 'excel!Excel.Interfaces.RangeBorderData#style~0:complex'
+  - uid: 'excel!Excel.Interfaces.RangeBorderData#tintAndShade:member'
     summary: >-
       Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and
       1 (brightest), with 0 for the original color. A null value indicates that the border doesn't have uniform
@@ -89,7 +85,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeBorderData.weight
+  - uid: 'excel!Excel.Interfaces.RangeBorderData#weight:member'
     summary: |-
       Specifies the weight of the border around a range. See Excel.BorderWeight for details.
 
@@ -103,4 +99,40 @@ items:
       content: 'weight?: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick";'
       return:
         type:
-          - Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick"
+          - 'excel!Excel.Interfaces.RangeBorderData#weight~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.RangeBorderData#sideIndex~0:complex'
+    name: >-
+      Excel.BorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" |
+      "DiagonalDown" | "DiagonalUp"
+    fullName: >-
+      Excel.BorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" |
+      "DiagonalDown" | "DiagonalUp"
+    spec.typeScript:
+      - uid: 'excel!Excel.BorderIndex:enum'
+        name: Excel.BorderIndex
+        fullName: Excel.BorderIndex
+      - name: ' | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"'
+        fullName: ' | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"'
+  - uid: 'excel!Excel.Interfaces.RangeBorderData#style~0:complex'
+    name: >-
+      Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
+      "SlantDashDot"
+    fullName: >-
+      Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
+      "SlantDashDot"
+    spec.typeScript:
+      - uid: 'excel!Excel.BorderLineStyle:enum'
+        name: Excel.BorderLineStyle
+        fullName: Excel.BorderLineStyle
+      - name: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot"'
+        fullName: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot"'
+  - uid: 'excel!Excel.Interfaces.RangeBorderData#weight~0:complex'
+    name: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick"
+    fullName: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick"
+    spec.typeScript:
+      - uid: 'excel!Excel.BorderWeight:enum'
+        name: Excel.BorderWeight
+        fullName: Excel.BorderWeight
+      - name: ' | "Hairline" | "Thin" | "Medium" | "Thick"'
+        fullName: ' | "Hairline" | "Thin" | "Medium" | "Thick"'

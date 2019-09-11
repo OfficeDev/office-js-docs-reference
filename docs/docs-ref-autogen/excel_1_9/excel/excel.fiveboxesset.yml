@@ -1,20 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.FiveBoxesSet
+  - uid: 'excel!Excel.FiveBoxesSet:interface'
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.FiveBoxesSet
     fullName: Excel.FiveBoxesSet
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.FiveBoxesSet.fourFilledBoxes
-      - excel.Excel.FiveBoxesSet.noFilledBoxes
-      - excel.Excel.FiveBoxesSet.oneFilledBox
-      - excel.Excel.FiveBoxesSet.threeFilledBoxes
-      - excel.Excel.FiveBoxesSet.twoFilledBoxes
-  - uid: excel.Excel.FiveBoxesSet.fourFilledBoxes
+      - 'excel!Excel.FiveBoxesSet#fourFilledBoxes:member'
+      - 'excel!Excel.FiveBoxesSet#noFilledBoxes:member'
+      - 'excel!Excel.FiveBoxesSet#oneFilledBox:member'
+      - 'excel!Excel.FiveBoxesSet#threeFilledBoxes:member'
+      - 'excel!Excel.FiveBoxesSet#twoFilledBoxes:member'
+  - uid: 'excel!Excel.FiveBoxesSet#fourFilledBoxes:member'
     name: fourFilledBoxes
     fullName: fourFilledBoxes
     langs:
@@ -24,8 +24,8 @@ items:
       content: 'fourFilledBoxes: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FiveBoxesSet.noFilledBoxes
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveBoxesSet#noFilledBoxes:member'
     name: noFilledBoxes
     fullName: noFilledBoxes
     langs:
@@ -35,8 +35,8 @@ items:
       content: 'noFilledBoxes: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FiveBoxesSet.oneFilledBox
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveBoxesSet#oneFilledBox:member'
     name: oneFilledBox
     fullName: oneFilledBox
     langs:
@@ -46,8 +46,8 @@ items:
       content: 'oneFilledBox: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FiveBoxesSet.threeFilledBoxes
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveBoxesSet#threeFilledBoxes:member'
     name: threeFilledBoxes
     fullName: threeFilledBoxes
     langs:
@@ -57,8 +57,8 @@ items:
       content: 'threeFilledBoxes: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FiveBoxesSet.twoFilledBoxes
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveBoxesSet#twoFilledBoxes:member'
     name: twoFilledBoxes
     fullName: twoFilledBoxes
     langs:
@@ -68,4 +68,7 @@ items:
       content: 'twoFilledBoxes: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - 'excel!Excel.Icon:interface'
+references:
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData:interface'
     summary: >-
       An interface for updating data on the IconSetConditionalFormat object, for use in
       "iconSetConditionalFormat.set(<!-- -->{ ... }<!-- -->)".
@@ -9,13 +9,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.criteria
-      - excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.reverseIconOrder
-      - excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.showIconOnly
-      - excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.style
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.criteria
+      - 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#criteria:member'
+      - 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#reverseIconOrder:member'
+      - 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#showIconOnly:member'
+      - 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#style:member'
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#criteria:member'
     summary: >-
       An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for
       the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when
@@ -32,8 +32,8 @@ items:
       content: 'criteria?: Excel.ConditionalIconCriterion[];'
       return:
         type:
-          - 'Excel.ConditionalIconCriterion[]'
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.reverseIconOrder
+          - 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#criteria~0:complex'
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#reverseIconOrder:member'
     summary: |-
       If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.showIconOnly
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#showIconOnly:member'
     summary: |-
       If true, hides the values and only shows icons.
 
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.style
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#style:member'
     summary: |-
       If set, displays the IconSet option for the conditional format.
 
@@ -82,9 +82,31 @@ items:
         "LinkedEntityMapIcon";
       return:
         type:
-          - >-
-            Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" |
-            "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" |
-            "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" |
-            "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" |
-            "LinkedEntityMapIcon"
+          - 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#style~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#criteria~0:complex'
+    name: 'Excel.ConditionalIconCriterion[]'
+    fullName: 'Excel.ConditionalIconCriterion[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalIconCriterion:interface'
+        name: Excel.ConditionalIconCriterion
+        fullName: Excel.ConditionalIconCriterion
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#style~0:complex'
+    name: >-
+      Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" |
+      "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" |
+      "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" |
+      "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" | "LinkedEntityMapIcon"
+    fullName: >-
+      Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" |
+      "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" |
+      "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" |
+      "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" | "LinkedEntityMapIcon"
+    spec.typeScript:
+      - uid: 'excel!Excel.IconSet:enum'
+        name: Excel.IconSet
+        fullName: Excel.IconSet
+      - name: ' | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" | "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" | "LinkedEntityMapIcon"'
+        fullName: ' | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" | "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" | "LinkedEntityMapIcon"'
