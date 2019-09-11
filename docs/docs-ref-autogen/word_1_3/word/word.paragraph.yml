@@ -1877,6 +1877,14 @@ items:
             await context.sync();
           });
           ```
+          ```typescript
+          await Word.run(async (context) => {
+            // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
+            context.document.body.paragraphs.getLast().select("End");
+
+            await context.sync();
+          });
+          ```
       parameters:
         - id: selectionMode
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'

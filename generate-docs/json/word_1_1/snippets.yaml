@@ -2153,14 +2153,6 @@
 
       await context.sync();
     });
-'Word.Paragraph#select:member':
-  - |-
-    await Word.run(async (context) => {
-      // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
-      context.document.body.paragraphs.getLast().select("End");
-
-      await context.sync();
-    });
 'Word.Paragraph#select:member(1)':
   - |-
     // Run a batch operation against the Word object model.
@@ -2201,6 +2193,13 @@
     await Word.run(async (context) => {
       // If select is called with no parameters, it selects the object.
       context.document.body.paragraphs.getLast().select();
+
+      await context.sync();
+    });
+  - |-
+    await Word.run(async (context) => {
+      // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
+      context.document.body.paragraphs.getLast().select("End");
 
       await context.sync();
     });

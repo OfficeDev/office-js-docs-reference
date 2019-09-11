@@ -4218,7 +4218,7 @@
         // Your add-in would save this string as a .png file.
         console.log("The image's base64-encoded string: " + imageString);
     });
-'Excel.Shape#group:member(1)':
+'Excel.Shape#group:member':
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
