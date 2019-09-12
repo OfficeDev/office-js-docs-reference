@@ -1,40 +1,40 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.PageContentType
+  - uid: 'onenote!OneNote.PageContentType:enum'
     summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     name: OneNote.PageContentType
     fullName: OneNote.PageContentType
     langs:
       - typeScript
     type: enum
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.PageContentType.image
-      - onenote.OneNote.PageContentType.ink
-      - onenote.OneNote.PageContentType.other
-      - onenote.OneNote.PageContentType.outline
-  - uid: onenote.OneNote.PageContentType.image
+      - 'onenote!OneNote.PageContentType.image:member'
+      - 'onenote!OneNote.PageContentType.ink:member'
+      - 'onenote!OneNote.PageContentType.other:member'
+      - 'onenote!OneNote.PageContentType.outline:member'
+  - uid: 'onenote!OneNote.PageContentType.image:member'
     name: image
     fullName: image
     langs:
       - typeScript
     type: field
     numericValue: '"Image"'
-  - uid: onenote.OneNote.PageContentType.ink
+  - uid: 'onenote!OneNote.PageContentType.ink:member'
     name: ink
     fullName: ink
     langs:
       - typeScript
     type: field
     numericValue: '"Ink"'
-  - uid: onenote.OneNote.PageContentType.other
+  - uid: 'onenote!OneNote.PageContentType.other:member'
     name: other
     fullName: other
     langs:
       - typeScript
     type: field
     numericValue: '"Other"'
-  - uid: onenote.OneNote.PageContentType.outline
+  - uid: 'onenote!OneNote.PageContentType.outline:member'
     name: outline
     fullName: outline
     langs:

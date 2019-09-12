@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.CommentUpdateData
+  - uid: 'visio!Visio.Interfaces.CommentUpdateData:interface'
     summary: 'An interface for updating data on the Comment object, for use in "comment.set(<!-- -->{ ... }<!-- -->)".'
     name: Visio.Interfaces.CommentUpdateData
     fullName: Visio.Interfaces.CommentUpdateData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.CommentUpdateData.author
-      - visio.Visio.Interfaces.CommentUpdateData.date
-      - visio.Visio.Interfaces.CommentUpdateData.text
-  - uid: visio.Visio.Interfaces.CommentUpdateData.author
+      - 'visio!Visio.Interfaces.CommentUpdateData#author:member'
+      - 'visio!Visio.Interfaces.CommentUpdateData#date:member'
+      - 'visio!Visio.Interfaces.CommentUpdateData#text:member'
+  - uid: 'visio!Visio.Interfaces.CommentUpdateData#author:member'
     summary: |-
       A string that specifies the name of the author of the comment.
 
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.Interfaces.CommentUpdateData.date
+  - uid: 'visio!Visio.Interfaces.CommentUpdateData#date:member'
     summary: |-
       A string that specifies the date when the comment was created.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.Interfaces.CommentUpdateData.text
+  - uid: 'visio!Visio.Interfaces.CommentUpdateData#text:member'
     summary: |-
       A string that contains the comment text.
 

@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PageBreakCollectionData
+  - uid: 'excel!Excel.Interfaces.PageBreakCollectionData:interface'
     summary: An interface describing the data returned by calling "pageBreakCollection.toJSON()".
     name: Excel.Interfaces.PageBreakCollectionData
     fullName: Excel.Interfaces.PageBreakCollectionData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PageBreakCollectionData.items
-  - uid: excel.Excel.Interfaces.PageBreakCollectionData.items
+      - 'excel!Excel.Interfaces.PageBreakCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.PageBreakCollectionData#items:member'
     name: items
     fullName: items
     langs:
@@ -20,4 +20,14 @@ items:
       content: 'items?: Excel.Interfaces.PageBreakData[];'
       return:
         type:
-          - 'Excel.Interfaces.PageBreakData[]'
+          - 'excel!Excel.Interfaces.PageBreakCollectionData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.PageBreakCollectionData#items~0:complex'
+    name: 'Excel.Interfaces.PageBreakData[]'
+    fullName: 'Excel.Interfaces.PageBreakData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PageBreakData:interface'
+        name: Excel.Interfaces.PageBreakData
+        fullName: Excel.Interfaces.PageBreakData
+      - name: '[]'
+        fullName: '[]'

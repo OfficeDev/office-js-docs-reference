@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions:interface'
     summary: |-
       This object represents the attributes for a chart plotArea object.
 
@@ -10,20 +10,20 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.$all
-      - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.format
-      - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.height
-      - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.insideHeight
-      - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.insideLeft
-      - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.insideTop
-      - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.insideWidth
-      - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.left
-      - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.position
-      - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.top
-      - excel.Excel.Interfaces.ChartPlotAreaLoadOptions.width
-  - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#height:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#insideHeight:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#insideLeft:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#insideTop:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#insideWidth:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#left:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#position:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#top:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#width:member'
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -34,7 +34,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.format
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#format:member'
     summary: |-
       Represents the formatting of a chart plotArea.
 
@@ -48,8 +48,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartPlotAreaFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPlotAreaFormatLoadOptions
-  - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.height
+          - 'excel!Excel.Interfaces.ChartPlotAreaFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#height:member'
     summary: |-
       Represents the height value of plotArea.
 
@@ -64,7 +64,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.insideHeight
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#insideHeight:member'
     summary: |-
       Represents the insideHeight value of plotArea.
 
@@ -79,7 +79,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.insideLeft
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#insideLeft:member'
     summary: |-
       Represents the insideLeft value of plotArea.
 
@@ -94,7 +94,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.insideTop
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#insideTop:member'
     summary: |-
       Represents the insideTop value of plotArea.
 
@@ -109,7 +109,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.insideWidth
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#insideWidth:member'
     summary: |-
       Represents the insideWidth value of plotArea.
 
@@ -124,7 +124,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.left
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#left:member'
     summary: |-
       Represents the left value of plotArea.
 
@@ -139,7 +139,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.position
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#position:member'
     summary: |-
       Represents the position of plotArea.
 
@@ -154,7 +154,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.top
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#top:member'
     summary: |-
       Represents the top value of plotArea.
 
@@ -169,7 +169,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPlotAreaLoadOptions.width
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#width:member'
     summary: |-
       Represents the width value of plotArea.
 
@@ -184,3 +184,6 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartPlotAreaFormatLoadOptions

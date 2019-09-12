@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.TableRowCollectionData
+  - uid: 'word!Word.Interfaces.TableRowCollectionData:interface'
     summary: An interface describing the data returned by calling "tableRowCollection.toJSON()".
     name: Word.Interfaces.TableRowCollectionData
     fullName: Word.Interfaces.TableRowCollectionData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.TableRowCollectionData.items
-  - uid: word.Word.Interfaces.TableRowCollectionData.items
+      - 'word!Word.Interfaces.TableRowCollectionData#items:member'
+  - uid: 'word!Word.Interfaces.TableRowCollectionData#items:member'
     name: items
     fullName: items
     langs:
@@ -20,4 +20,14 @@ items:
       content: 'items?: Word.Interfaces.TableRowData[];'
       return:
         type:
-          - 'Word.Interfaces.TableRowData[]'
+          - 'word!Word.Interfaces.TableRowCollectionData#items~0:complex'
+references:
+  - uid: 'word!Word.Interfaces.TableRowCollectionData#items~0:complex'
+    name: 'Word.Interfaces.TableRowData[]'
+    fullName: 'Word.Interfaces.TableRowData[]'
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.TableRowData:interface'
+        name: Word.Interfaces.TableRowData
+        fullName: Word.Interfaces.TableRowData
+      - name: '[]'
+        fullName: '[]'

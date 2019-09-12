@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
     summary: |-
       Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
 
@@ -10,16 +10,16 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.WorkbookLoadOptions.$all
-      - excel.Excel.Interfaces.WorkbookLoadOptions.application
-      - excel.Excel.Interfaces.WorkbookLoadOptions.bindings
-      - excel.Excel.Interfaces.WorkbookLoadOptions.name
-      - excel.Excel.Interfaces.WorkbookLoadOptions.properties
-      - excel.Excel.Interfaces.WorkbookLoadOptions.protection
-      - excel.Excel.Interfaces.WorkbookLoadOptions.tables
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.$all
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#application:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#bindings:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#properties:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#protection:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#tables:member'
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.application
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#application:member'
     summary: |-
       Represents the Excel application instance that contains this workbook.
 
@@ -44,8 +44,8 @@ items:
       content: 'application?: Excel.Interfaces.ApplicationLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ApplicationLoadOptions
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.bindings
+          - 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#bindings:member'
     summary: |-
       Represents a collection of bindings that are part of the workbook.
 
@@ -59,8 +59,8 @@ items:
       content: 'bindings?: Excel.Interfaces.BindingCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.BindingCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.name
+          - 'excel!Excel.Interfaces.BindingCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#name:member'
     summary: |-
       Gets the workbook name. Read-only.
 
@@ -75,7 +75,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.properties
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#properties:member'
     summary: |-
       Gets the workbook properties.
 
@@ -89,8 +89,8 @@ items:
       content: 'properties?: Excel.Interfaces.DocumentPropertiesLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.DocumentPropertiesLoadOptions
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.protection
+          - 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#protection:member'
     summary: |-
       Returns workbook protection object for a workbook.
 
@@ -104,8 +104,8 @@ items:
       content: 'protection?: Excel.Interfaces.WorkbookProtectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorkbookProtectionLoadOptions
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.tables
+          - 'excel!Excel.Interfaces.WorkbookProtectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#tables:member'
     summary: |-
       Represents a collection of tables associated with the workbook.
 
@@ -119,4 +119,15 @@ items:
       content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TableCollectionLoadOptions
+          - 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
+    name: Excel.Interfaces.ApplicationLoadOptions
+  - uid: 'excel!Excel.Interfaces.BindingCollectionLoadOptions:interface'
+    name: Excel.Interfaces.BindingCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
+    name: Excel.Interfaces.DocumentPropertiesLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorkbookProtectionLoadOptions:interface'
+    name: Excel.Interfaces.WorkbookProtectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
+    name: Excel.Interfaces.TableCollectionLoadOptions

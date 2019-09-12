@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ShapeType
+  - uid: 'excel!Excel.ShapeType:enum'
     summary: |-
       Specifies the type of a shape.
 
@@ -10,42 +10,42 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ShapeType.geometricShape
-      - excel.Excel.ShapeType.group
-      - excel.Excel.ShapeType.image
-      - excel.Excel.ShapeType.line
-      - excel.Excel.ShapeType.unsupported
-  - uid: excel.Excel.ShapeType.geometricShape
+      - 'excel!Excel.ShapeType.geometricShape:member'
+      - 'excel!Excel.ShapeType.group:member'
+      - 'excel!Excel.ShapeType.image:member'
+      - 'excel!Excel.ShapeType.line:member'
+      - 'excel!Excel.ShapeType.unsupported:member'
+  - uid: 'excel!Excel.ShapeType.geometricShape:member'
     name: geometricShape
     fullName: geometricShape
     langs:
       - typeScript
     type: field
     numericValue: '"GeometricShape"'
-  - uid: excel.Excel.ShapeType.group
+  - uid: 'excel!Excel.ShapeType.group:member'
     name: group
     fullName: group
     langs:
       - typeScript
     type: field
     numericValue: '"Group"'
-  - uid: excel.Excel.ShapeType.image
+  - uid: 'excel!Excel.ShapeType.image:member'
     name: image
     fullName: image
     langs:
       - typeScript
     type: field
     numericValue: '"Image"'
-  - uid: excel.Excel.ShapeType.line
+  - uid: 'excel!Excel.ShapeType.line:member'
     name: line
     fullName: line
     langs:
       - typeScript
     type: field
     numericValue: '"Line"'
-  - uid: excel.Excel.ShapeType.unsupported
+  - uid: 'excel!Excel.ShapeType.unsupported:member'
     name: unsupported
     fullName: unsupported
     langs:

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions:interface'
     summary: |-
       A format object encapsulating the range's font, fill, borders, alignment, and other properties.
 
@@ -10,19 +10,19 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RangeFormatLoadOptions.$all
-      - excel.Excel.Interfaces.RangeFormatLoadOptions.borders
-      - excel.Excel.Interfaces.RangeFormatLoadOptions.columnWidth
-      - excel.Excel.Interfaces.RangeFormatLoadOptions.fill
-      - excel.Excel.Interfaces.RangeFormatLoadOptions.font
-      - excel.Excel.Interfaces.RangeFormatLoadOptions.horizontalAlignment
-      - excel.Excel.Interfaces.RangeFormatLoadOptions.protection
-      - excel.Excel.Interfaces.RangeFormatLoadOptions.rowHeight
-      - excel.Excel.Interfaces.RangeFormatLoadOptions.verticalAlignment
-      - excel.Excel.Interfaces.RangeFormatLoadOptions.wrapText
-  - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.$all
+      - 'excel!Excel.Interfaces.RangeFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.RangeFormatLoadOptions#borders:member'
+      - 'excel!Excel.Interfaces.RangeFormatLoadOptions#columnWidth:member'
+      - 'excel!Excel.Interfaces.RangeFormatLoadOptions#fill:member'
+      - 'excel!Excel.Interfaces.RangeFormatLoadOptions#font:member'
+      - 'excel!Excel.Interfaces.RangeFormatLoadOptions#horizontalAlignment:member'
+      - 'excel!Excel.Interfaces.RangeFormatLoadOptions#protection:member'
+      - 'excel!Excel.Interfaces.RangeFormatLoadOptions#rowHeight:member'
+      - 'excel!Excel.Interfaces.RangeFormatLoadOptions#verticalAlignment:member'
+      - 'excel!Excel.Interfaces.RangeFormatLoadOptions#wrapText:member'
+  - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -33,7 +33,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.borders
+  - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions#borders:member'
     summary: |-
       Collection of border objects that apply to the overall range.
 
@@ -47,8 +47,8 @@ items:
       content: 'borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeBorderCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.columnWidth
+          - 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions#columnWidth:member'
     summary: >-
       Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be
       returned.
@@ -65,7 +65,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.fill
+  - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions#fill:member'
     summary: |-
       Returns the fill object defined on the overall range.
 
@@ -79,8 +79,8 @@ items:
       content: 'fill?: Excel.Interfaces.RangeFillLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFillLoadOptions
-  - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.font
+          - 'excel!Excel.Interfaces.RangeFillLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions#font:member'
     summary: |-
       Returns the font object defined on the overall range.
 
@@ -94,8 +94,8 @@ items:
       content: 'font?: Excel.Interfaces.RangeFontLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFontLoadOptions
-  - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.horizontalAlignment
+          - 'excel!Excel.Interfaces.RangeFontLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions#horizontalAlignment:member'
     summary: |-
       Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
 
@@ -110,7 +110,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.protection
+  - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions#protection:member'
     summary: |-
       Returns the format protection object for a range.
 
@@ -124,8 +124,8 @@ items:
       content: 'protection?: Excel.Interfaces.FormatProtectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.FormatProtectionLoadOptions
-  - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.rowHeight
+          - 'excel!Excel.Interfaces.FormatProtectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions#rowHeight:member'
     summary: |-
       Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
 
@@ -140,7 +140,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.verticalAlignment
+  - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions#verticalAlignment:member'
     summary: |-
       Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.
 
@@ -155,7 +155,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeFormatLoadOptions.wrapText
+  - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions#wrapText:member'
     summary: >-
       Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
       wrap setting
@@ -172,3 +172,12 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface'
+    name: Excel.Interfaces.RangeBorderCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.RangeFillLoadOptions:interface'
+    name: Excel.Interfaces.RangeFillLoadOptions
+  - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions:interface'
+    name: Excel.Interfaces.RangeFontLoadOptions
+  - uid: 'excel!Excel.Interfaces.FormatProtectionLoadOptions:interface'
+    name: Excel.Interfaces.FormatProtectionLoadOptions

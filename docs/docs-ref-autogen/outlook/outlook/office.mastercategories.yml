@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.MasterCategories
+  - uid: 'outlook!Office.MasterCategories:interface'
     summary: >-
       Represents the categories master list on the mailbox.
 
@@ -23,15 +23,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.MasterCategories.addAsync
-      - outlook.Office.MasterCategories.addAsync_1
-      - outlook.Office.MasterCategories.getAsync
-      - outlook.Office.MasterCategories.getAsync_1
-      - outlook.Office.MasterCategories.removeAsync
-      - outlook.Office.MasterCategories.removeAsync_1
-  - uid: outlook.Office.MasterCategories.addAsync
+      - 'outlook!Office.MasterCategories#addAsync:member(1)'
+      - 'outlook!Office.MasterCategories#addAsync:member(2)'
+      - 'outlook!Office.MasterCategories#getAsync:member(1)'
+      - 'outlook!Office.MasterCategories#getAsync:member(2)'
+      - 'outlook!Office.MasterCategories#removeAsync:member(1)'
+      - 'outlook!Office.MasterCategories#removeAsync:member(2)'
+  - uid: 'outlook!Office.MasterCategories#addAsync:member(1)'
     summary: >-
       Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can
       use the same color.
@@ -70,13 +70,13 @@ items:
         - id: categories
           description: The categories to be added to the master list on the mailbox.
           type:
-            - 'CategoryDetails[]'
+            - 'outlook!Office.MasterCategories#addAsync~0:complex'
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -85,8 +85,8 @@ items:
 
             \[Api set: Mailbox Preview\]
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.MasterCategories.addAsync_1
+            - 'outlook!Office.MasterCategories#addAsync~1:complex'
+  - uid: 'outlook!Office.MasterCategories#addAsync:member(2)'
     summary: >-
       Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can
       use the same color.
@@ -147,7 +147,7 @@ items:
         - id: categories
           description: The categories to be added to the master list on the mailbox.
           type:
-            - 'CategoryDetails[]'
+            - 'outlook!Office.MasterCategories#addAsync~2:complex'
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -157,8 +157,8 @@ items:
 
             \[Api set: Mailbox Preview\]
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.MasterCategories.getAsync
+            - 'outlook!Office.MasterCategories#addAsync~3:complex'
+  - uid: 'outlook!Office.MasterCategories#getAsync:member(1)'
     summary: Gets the master list of categories on a mailbox.
     remarks: >-
       **[Minimum permission
@@ -187,7 +187,7 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -197,8 +197,8 @@ items:
 
             \[Api set: Mailbox Preview\]
           type:
-            - '(asyncResult: Office.AsyncResult<CategoryDetails[]>) => void'
-  - uid: outlook.Office.MasterCategories.getAsync_1
+            - 'outlook!Office.MasterCategories#getAsync~0:complex'
+  - uid: 'outlook!Office.MasterCategories#getAsync:member(2)'
     summary: Gets the master list of categories on a mailbox.
     remarks: >-
       **[Minimum permission
@@ -248,8 +248,8 @@ items:
 
             \[Api set: Mailbox Preview\]
           type:
-            - '(asyncResult: Office.AsyncResult<CategoryDetails[]>) => void'
-  - uid: outlook.Office.MasterCategories.removeAsync
+            - 'outlook!Office.MasterCategories#getAsync~1:complex'
+  - uid: 'outlook!Office.MasterCategories#removeAsync:member(1)'
     summary: Removes categories from the master list on a mailbox.
     remarks: >-
       **[Minimum permission
@@ -289,7 +289,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -299,8 +299,8 @@ items:
 
             \[Api set: Mailbox Preview\]
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.MasterCategories.removeAsync_1
+            - 'outlook!Office.MasterCategories#removeAsync~0:complex'
+  - uid: 'outlook!Office.MasterCategories#removeAsync:member(2)'
     summary: Removes categories from the master list on a mailbox.
     remarks: >-
       **[Minimum permission
@@ -361,4 +361,101 @@ items:
 
             \[Api set: Mailbox Preview\]
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
+            - 'outlook!Office.MasterCategories#removeAsync~1:complex'
+references:
+  - uid: 'outlook!Office.MasterCategories#addAsync~0:complex'
+    name: 'CategoryDetails[]'
+    fullName: 'Office.CategoryDetails[]'
+    spec.typeScript:
+      - uid: 'outlook!Office.CategoryDetails:interface'
+        name: CategoryDetails
+        fullName: Office.CategoryDetails
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'outlook!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions
+  - uid: 'outlook!Office.MasterCategories#addAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.MasterCategories#addAsync~2:complex'
+    name: 'CategoryDetails[]'
+    fullName: 'Office.CategoryDetails[]'
+    spec.typeScript:
+      - uid: 'outlook!Office.CategoryDetails:interface'
+        name: CategoryDetails
+        fullName: Office.CategoryDetails
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'outlook!Office.MasterCategories#addAsync~3:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.MasterCategories#getAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<CategoryDetails[]>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<Office.CategoryDetails[]>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'outlook!Office.CategoryDetails:interface'
+        name: CategoryDetails
+        fullName: Office.CategoryDetails
+      - name: '[]>) => void'
+        fullName: '[]>) => void'
+  - uid: 'outlook!Office.MasterCategories#getAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<CategoryDetails[]>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<Office.CategoryDetails[]>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'outlook!Office.CategoryDetails:interface'
+        name: CategoryDetails
+        fullName: Office.CategoryDetails
+      - name: '[]>) => void'
+        fullName: '[]>) => void'
+  - uid: 'outlook!Office.MasterCategories#removeAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.MasterCategories#removeAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void

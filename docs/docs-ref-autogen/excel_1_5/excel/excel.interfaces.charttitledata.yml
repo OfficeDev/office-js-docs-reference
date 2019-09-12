@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartTitleData
+  - uid: 'excel!Excel.Interfaces.ChartTitleData:interface'
     summary: An interface describing the data returned by calling "chartTitle.toJSON()".
     name: Excel.Interfaces.ChartTitleData
     fullName: Excel.Interfaces.ChartTitleData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartTitleData.format
-      - excel.Excel.Interfaces.ChartTitleData.overlay
-      - excel.Excel.Interfaces.ChartTitleData.text
-      - excel.Excel.Interfaces.ChartTitleData.visible
-  - uid: excel.Excel.Interfaces.ChartTitleData.format
+      - 'excel!Excel.Interfaces.ChartTitleData#format:member'
+      - 'excel!Excel.Interfaces.ChartTitleData#overlay:member'
+      - 'excel!Excel.Interfaces.ChartTitleData#text:member'
+      - 'excel!Excel.Interfaces.ChartTitleData#visible:member'
+  - uid: 'excel!Excel.Interfaces.ChartTitleData#format:member'
     summary: |-
       Represents the formatting of a chart title, which includes fill and font formatting. Read-only.
 
@@ -27,8 +27,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartTitleFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTitleFormatData
-  - uid: excel.Excel.Interfaces.ChartTitleData.overlay
+          - 'excel!Excel.Interfaces.ChartTitleFormatData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartTitleData#overlay:member'
     summary: |-
       Boolean value representing if the chart title will overlay the chart or not.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartTitleData.text
+  - uid: 'excel!Excel.Interfaces.ChartTitleData#text:member'
     summary: |-
       Represents the title text of a chart.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartTitleData.visible
+  - uid: 'excel!Excel.Interfaces.ChartTitleData#visible:member'
     summary: |-
       A boolean value the represents the visibility of a chart title object.
 
@@ -73,3 +73,6 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartTitleFormatData:interface'
+    name: Excel.Interfaces.ChartTitleFormatData

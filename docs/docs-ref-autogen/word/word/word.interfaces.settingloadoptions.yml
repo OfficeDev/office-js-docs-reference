@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.SettingLoadOptions
+  - uid: 'word!Word.Interfaces.SettingLoadOptions:interface'
     summary: >-
       Represents a setting of the add-in.
 
@@ -13,12 +13,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.SettingLoadOptions.$all
-      - word.Word.Interfaces.SettingLoadOptions.key
-      - word.Word.Interfaces.SettingLoadOptions.value
-  - uid: word.Word.Interfaces.SettingLoadOptions.$all
+      - 'word!Word.Interfaces.SettingLoadOptions#$all:member'
+      - 'word!Word.Interfaces.SettingLoadOptions#key:member'
+      - 'word!Word.Interfaces.SettingLoadOptions#value:member'
+  - uid: 'word!Word.Interfaces.SettingLoadOptions#$all:member'
     isPreview: true
     name: $all
     fullName: $all
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.SettingLoadOptions.key
+  - uid: 'word!Word.Interfaces.SettingLoadOptions#key:member'
     summary: >-
       Gets the key of the setting. Read only.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.SettingLoadOptions.value
+  - uid: 'word!Word.Interfaces.SettingLoadOptions#value:member'
     summary: >-
       Gets or sets the value of the setting.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartBinOptions
+  - uid: 'excel!Excel.ChartBinOptions:class'
     summary: |-
       Encapsulates the bin options for histogram charts and pareto charts.
 
@@ -11,24 +11,24 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.ChartBinOptions.allowOverflow
-      - excel.Excel.ChartBinOptions.allowUnderflow
-      - excel.Excel.ChartBinOptions.context
-      - excel.Excel.ChartBinOptions.count
-      - excel.Excel.ChartBinOptions.load
-      - excel.Excel.ChartBinOptions.load_1
-      - excel.Excel.ChartBinOptions.load_2
-      - excel.Excel.ChartBinOptions.overflowValue
-      - excel.Excel.ChartBinOptions.set
-      - excel.Excel.ChartBinOptions.set_1
-      - excel.Excel.ChartBinOptions.toJSON
-      - excel.Excel.ChartBinOptions.type
-      - excel.Excel.ChartBinOptions.underflowValue
-      - excel.Excel.ChartBinOptions.width
-  - uid: excel.Excel.ChartBinOptions.allowOverflow
+      - 'excel!Excel.ChartBinOptions#allowOverflow:member'
+      - 'excel!Excel.ChartBinOptions#allowUnderflow:member'
+      - 'excel!Excel.ChartBinOptions#context:member'
+      - 'excel!Excel.ChartBinOptions#count:member'
+      - 'excel!Excel.ChartBinOptions#load:member(1)'
+      - 'excel!Excel.ChartBinOptions#load:member(2)'
+      - 'excel!Excel.ChartBinOptions#load:member(3)'
+      - 'excel!Excel.ChartBinOptions#overflowValue:member'
+      - 'excel!Excel.ChartBinOptions#set:member(1)'
+      - 'excel!Excel.ChartBinOptions#set:member(2)'
+      - 'excel!Excel.ChartBinOptions#toJSON:member(1)'
+      - 'excel!Excel.ChartBinOptions#type:member'
+      - 'excel!Excel.ChartBinOptions#underflowValue:member'
+      - 'excel!Excel.ChartBinOptions#width:member'
+  - uid: 'excel!Excel.ChartBinOptions#allowOverflow:member'
     summary: |-
       Specifies whether or not the bin overflow is enabled in a histogram chart or pareto chart. Read/Write.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartBinOptions.allowUnderflow
+  - uid: 'excel!Excel.ChartBinOptions#allowUnderflow:member'
     summary: |-
       Specifies whether or not the bin underflow is enabled in a histogram chart or pareto chart. Read/Write.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartBinOptions.context
+  - uid: 'excel!Excel.ChartBinOptions#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -71,8 +71,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartBinOptions.count
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartBinOptions#count:member'
     summary: |-
       Returns or sets the bin count of a histogram chart or pareto chart. Read/Write.
 
@@ -87,7 +87,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartBinOptions.load
+  - uid: 'excel!Excel.ChartBinOptions#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -118,14 +118,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartBinOptionsLoadOptions): Excel.ChartBinOptions;'
       return:
         type:
-          - excel.Excel.ChartBinOptions
+          - 'excel!Excel.ChartBinOptions:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartBinOptionsLoadOptions
-  - uid: excel.Excel.ChartBinOptions.load_1
+            - 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions:interface'
+  - uid: 'excel!Excel.ChartBinOptions#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -138,14 +138,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartBinOptions;'
       return:
         type:
-          - excel.Excel.ChartBinOptions
+          - 'excel!Excel.ChartBinOptions:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartBinOptions.load_2
+  - uid: 'excel!Excel.ChartBinOptions#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -158,7 +158,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartBinOptions;'
       return:
         type:
-          - excel.Excel.ChartBinOptions
+          - 'excel!Excel.ChartBinOptions:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -167,7 +167,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartBinOptions.overflowValue
+  - uid: 'excel!Excel.ChartBinOptions#overflowValue:member'
     summary: |-
       Returns or sets the bin overflow value of a histogram chart or pareto chart. Read/Write.
 
@@ -182,7 +182,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartBinOptions.set
+  - uid: 'excel!Excel.ChartBinOptions#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -207,12 +207,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.ChartBinOptionsUpdateData
+            - 'excel!Excel.Interfaces.ChartBinOptionsUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartBinOptions.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.ChartBinOptions#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -229,8 +229,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartBinOptions
-  - uid: excel.Excel.ChartBinOptions.toJSON
+            - 'excel!Excel.ChartBinOptions:class'
+  - uid: 'excel!Excel.ChartBinOptions#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -246,9 +246,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartBinOptionsData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartBinOptionsData
+          - 'excel!Excel.Interfaces.ChartBinOptionsData:interface'
         description: ''
-  - uid: excel.Excel.ChartBinOptions.type
+  - uid: 'excel!Excel.ChartBinOptions#type:member'
     summary: |-
       Returns or sets the bin's type for a histogram chart or pareto chart. Read/Write.
 
@@ -262,8 +262,8 @@ items:
       content: 'type: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount";'
       return:
         type:
-          - Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount"
-  - uid: excel.Excel.ChartBinOptions.underflowValue
+          - 'excel!Excel.ChartBinOptions#type~0:complex'
+  - uid: 'excel!Excel.ChartBinOptions#underflowValue:member'
     summary: |-
       Returns or sets the bin underflow value of a histogram chart or pareto chart. Read/Write.
 
@@ -278,7 +278,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartBinOptions.width
+  - uid: 'excel!Excel.ChartBinOptions#width:member'
     summary: |-
       Returns or sets the bin width value of a histogram chart or pareto chart. Read/Write.
 
@@ -293,3 +293,27 @@ items:
       return:
         type:
           - number
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ChartBinOptions:class'
+    name: Excel.ChartBinOptions
+  - uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions:interface'
+    name: Excel.Interfaces.ChartBinOptionsLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData:interface'
+    name: Interfaces.ChartBinOptionsUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.ChartBinOptionsData:interface'
+    name: Excel.Interfaces.ChartBinOptionsData
+  - uid: 'excel!Excel.ChartBinOptions#type~0:complex'
+    name: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount"
+    fullName: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartBinType:enum'
+        name: Excel.ChartBinType
+        fullName: Excel.ChartBinType
+      - name: ' | "Category" | "Auto" | "BinWidth" | "BinCount"'
+        fullName: ' | "Category" | "Auto" | "BinWidth" | "BinCount"'

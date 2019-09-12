@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.PageCollectionData
+  - uid: 'onenote!OneNote.Interfaces.PageCollectionData:interface'
     summary: An interface describing the data returned by calling "pageCollection.toJSON()".
     name: OneNote.Interfaces.PageCollectionData
     fullName: OneNote.Interfaces.PageCollectionData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.PageCollectionData.items
-  - uid: onenote.OneNote.Interfaces.PageCollectionData.items
+      - 'onenote!OneNote.Interfaces.PageCollectionData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.PageCollectionData#items:member'
     name: items
     fullName: items
     langs:
@@ -20,4 +20,14 @@ items:
       content: 'items?: OneNote.Interfaces.PageData[];'
       return:
         type:
-          - 'OneNote.Interfaces.PageData[]'
+          - 'onenote!OneNote.Interfaces.PageCollectionData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.PageCollectionData#items~0:complex'
+    name: 'OneNote.Interfaces.PageData[]'
+    fullName: 'OneNote.Interfaces.PageData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.PageData:interface'
+        name: OneNote.Interfaces.PageData
+        fullName: OneNote.Interfaces.PageData
+      - name: '[]'
+        fullName: '[]'

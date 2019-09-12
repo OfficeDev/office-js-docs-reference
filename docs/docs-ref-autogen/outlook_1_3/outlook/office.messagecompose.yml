@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.MessageCompose
+  - uid: 'outlook!Office.MessageCompose:interface'
     summary: >-
-      The message compose mode of [Office.context.mailbox.item](xref:outlook.Office.Item)<!-- -->.
+      The message compose mode of [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
 
 
       **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
@@ -15,33 +15,33 @@ items:
       - typeScript
     type: interface
     extends:
-      - outlook.Office.Message
-      - outlook.Office.ItemCompose
-    package: outlook
+      - 'outlook!Office.Message:interface'
+      - 'outlook!Office.ItemCompose:interface'
+    package: outlook!
     children:
-      - outlook.Office.MessageCompose.addFileAttachmentAsync
-      - outlook.Office.MessageCompose.addFileAttachmentAsync_1
-      - outlook.Office.MessageCompose.addItemAttachmentAsync
-      - outlook.Office.MessageCompose.addItemAttachmentAsync_1
-      - outlook.Office.MessageCompose.close
-      - outlook.Office.MessageCompose.getSelectedDataAsync
-      - outlook.Office.MessageCompose.getSelectedDataAsync_1
-      - outlook.Office.MessageCompose.loadCustomPropertiesAsync
-      - outlook.Office.MessageCompose.removeAttachmentAsync
-      - outlook.Office.MessageCompose.removeAttachmentAsync_1
-      - outlook.Office.MessageCompose.saveAsync
-      - outlook.Office.MessageCompose.saveAsync_1
-      - outlook.Office.MessageCompose.setSelectedDataAsync
-      - outlook.Office.MessageCompose.setSelectedDataAsync_1
-      - outlook.Office.MessageCompose.bcc
-      - outlook.Office.MessageCompose.body
-      - outlook.Office.MessageCompose.cc
-      - outlook.Office.MessageCompose.conversationId
-      - outlook.Office.MessageCompose.itemType
-      - outlook.Office.MessageCompose.notificationMessages
-      - outlook.Office.MessageCompose.subject
-      - outlook.Office.MessageCompose.to
-  - uid: outlook.Office.MessageCompose.addFileAttachmentAsync
+      - 'outlook!Office.MessageCompose#addFileAttachmentAsync:member(1)'
+      - 'outlook!Office.MessageCompose#addFileAttachmentAsync:member(2)'
+      - 'outlook!Office.MessageCompose#addItemAttachmentAsync:member(1)'
+      - 'outlook!Office.MessageCompose#addItemAttachmentAsync:member(2)'
+      - 'outlook!Office.MessageCompose#bcc:member'
+      - 'outlook!Office.MessageCompose#body:member'
+      - 'outlook!Office.MessageCompose#cc:member'
+      - 'outlook!Office.MessageCompose#close:member(1)'
+      - 'outlook!Office.MessageCompose#conversationId:member'
+      - 'outlook!Office.MessageCompose#getSelectedDataAsync:member(1)'
+      - 'outlook!Office.MessageCompose#getSelectedDataAsync:member(2)'
+      - 'outlook!Office.MessageCompose#itemType:member'
+      - 'outlook!Office.MessageCompose#loadCustomPropertiesAsync:member(1)'
+      - 'outlook!Office.MessageCompose#notificationMessages:member'
+      - 'outlook!Office.MessageCompose#removeAttachmentAsync:member(1)'
+      - 'outlook!Office.MessageCompose#removeAttachmentAsync:member(2)'
+      - 'outlook!Office.MessageCompose#saveAsync:member(1)'
+      - 'outlook!Office.MessageCompose#saveAsync:member(2)'
+      - 'outlook!Office.MessageCompose#setSelectedDataAsync:member(1)'
+      - 'outlook!Office.MessageCompose#setSelectedDataAsync:member(2)'
+      - 'outlook!Office.MessageCompose#subject:member'
+      - 'outlook!Office.MessageCompose#to:member'
+  - uid: 'outlook!Office.MessageCompose#addFileAttachmentAsync:member(1)'
     summary: >-
       Adds a file to a message or appointment as an attachment.
 
@@ -156,7 +156,7 @@ items:
             can provide any object they wish to access in the callback method. isInline: If true, indicates that the
             attachment will be shown inline in the message body, and should not be displayed in the attachment list.
           type:
-            - 'Office.AsyncContextOptions & { isInline: boolean }'
+            - 'outlook!Office.MessageCompose#addFileAttachmentAsync~0:complex'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -164,8 +164,8 @@ items:
             asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error
             object that provides a description of the error.
           type:
-            - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.MessageCompose.addFileAttachmentAsync_1
+            - 'outlook!Office.MessageCompose#addFileAttachmentAsync~1:complex'
+  - uid: 'outlook!Office.MessageCompose#addFileAttachmentAsync:member(2)'
     summary: >-
       Adds a file to a message or appointment as an attachment.
 
@@ -232,8 +232,8 @@ items:
             asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error
             object that provides a description of the error.
           type:
-            - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.MessageCompose.addItemAttachmentAsync
+            - 'outlook!Office.MessageCompose#addFileAttachmentAsync~2:complex'
+  - uid: 'outlook!Office.MessageCompose#addItemAttachmentAsync:member(1)'
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
 
@@ -327,7 +327,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -335,8 +335,8 @@ items:
             asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error
             object that provides a description of the error.
           type:
-            - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.MessageCompose.addItemAttachmentAsync_1
+            - 'outlook!Office.MessageCompose#addItemAttachmentAsync~0:complex'
+  - uid: 'outlook!Office.MessageCompose#addItemAttachmentAsync:member(2)'
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
 
@@ -401,8 +401,145 @@ items:
             asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error
             object that provides a description of the error.
           type:
-            - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.MessageCompose.close
+            - 'outlook!Office.MessageCompose#addItemAttachmentAsync~1:complex'
+  - uid: 'outlook!Office.MessageCompose#bcc:member'
+    summary: >-
+      Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a
+      message.
+
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
+      Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.bcc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
+
+      Office.context.mailbox.item.bcc.addAsync( ['jason@contoso.com'] );
+
+      Office.context.mailbox.item.bcc.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          var arrayOfBccRecipients = asyncResult.value;
+      }
+
+      ```
+    name: bcc
+    fullName: bcc
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bcc: Recipients;'
+      return:
+        type:
+          - 'outlook!Office.Recipients:interface'
+  - uid: 'outlook!Office.MessageCompose#body:member'
+    summary: |-
+      Gets an object that provides methods for manipulating the body of an item.
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
+      Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // This example gets the body of the item as plain text.
+
+      Office.context.mailbox.item.body.getAsync(
+          "text",
+          { asyncContext: "This is passed to the callback" },
+          function callback(result) {
+              // Do something with the result.
+          });
+
+      // The following is an example of the result parameter passed to the callback function.
+
+      {
+          "value": "TEXT of whole body (including threads below)",
+          "status": "succeeded",
+          "asyncContext": "This is passed to the callback"
+      }
+
+      ```
+    name: body
+    fullName: body
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'body: Body;'
+      return:
+        type:
+          - 'outlook!Office.Body:interface'
+  - uid: 'outlook!Office.MessageCompose#cc:member'
+    summary: >-
+      Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on
+      the mode of the current item.
+
+
+      The cc property returns an [Office.Recipients](xref:outlook!Office.Recipients:interface) object that provides
+      methods to get or update the recipients on the Cc line of the message.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
+      Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.cc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
+
+      Office.context.mailbox.item.cc.addAsync( ['jason@contoso.com'] );
+
+      Office.context.mailbox.item.cc.getAsync(callback);
+
+
+      function callback(asyncResult) {
+          var arrayOfCcRecipients = asyncResult.value;
+      }
+
+      ```
+    name: cc
+    fullName: cc
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cc: Recipients;'
+      return:
+        type:
+          - 'outlook!Office.Recipients:interface'
+  - uid: 'outlook!Office.MessageCompose#close:member(1)'
     summary: >-
       Closes the current item that is being composed
 
@@ -437,7 +574,51 @@ items:
         type:
           - void
         description: ''
-  - uid: outlook.Office.MessageCompose.getSelectedDataAsync
+  - uid: 'outlook!Office.MessageCompose#conversationId:member'
+    summary: >-
+      Gets an identifier for the email conversation that contains a particular message.
+
+
+      You can get an integer for this property if your mail app is activated in read forms or responses in compose
+      forms. If subsequently the user changes the subject of the reply message, upon sending the reply, the conversation
+      ID for that message will change and that value you obtained earlier will no longer apply.
+
+
+      You get null for this property for a new item in a compose form. If the user sets a subject and saves the item,
+      the conversationId property will return a value.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
+      Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      var conversationId = Office.context.mailbox.item.conversationId;
+
+      console.log("conversationId: " + conversationId);
+
+      ```
+    name: conversationId
+    fullName: conversationId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'conversationId: string;'
+      return:
+        type:
+          - string
+  - uid: 'outlook!Office.MessageCompose#getSelectedDataAsync:member(1)'
     summary: >-
       Asynchronously returns selected data from the subject or body of a message.
 
@@ -505,20 +686,20 @@ items:
             Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML
             tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
           type:
-            - Office.CoercionType | string
+            - 'outlook!Office.MessageCompose#getSelectedDataAsync~0:complex'
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(asyncResult: Office.AsyncResult<any>) => void'
-  - uid: outlook.Office.MessageCompose.getSelectedDataAsync_1
+            - 'outlook!Office.MessageCompose#getSelectedDataAsync~1:complex'
+  - uid: 'outlook!Office.MessageCompose#getSelectedDataAsync:member(2)'
     summary: >-
       Asynchronously returns selected data from the subject or body of a message.
 
@@ -559,14 +740,55 @@ items:
             Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML
             tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
           type:
-            - Office.CoercionType | string
+            - 'outlook!Office.MessageCompose#getSelectedDataAsync~2:complex'
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(asyncResult: Office.AsyncResult<any>) => void'
-  - uid: outlook.Office.MessageCompose.loadCustomPropertiesAsync
+            - 'outlook!Office.MessageCompose#getSelectedDataAsync~3:complex'
+  - uid: 'outlook!Office.MessageCompose#itemType:member'
+    summary: >-
+      Gets the type of item that an instance represents.
+
+
+      The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance
+      is a message or an appointment.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
+      Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Message) {
+          // Do something.
+      } else {
+          // Do something else.
+      }
+
+      ```
+    name: itemType
+    fullName: itemType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemType: MailboxEnums.ItemType | string;'
+      return:
+        type:
+          - 'outlook!Office.MessageCompose#itemType~0:complex'
+  - uid: 'outlook!Office.MessageCompose#loadCustomPropertiesAsync:member(1)'
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
 
@@ -609,14 +831,52 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(asyncResult: Office.AsyncResult<CustomProperties>) => void'
+            - 'outlook!Office.MessageCompose#loadCustomPropertiesAsync~0:complex'
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
             accessed by the asyncResult.asyncContext property in the callback function.
           type:
             - any
-  - uid: outlook.Office.MessageCompose.removeAttachmentAsync
+  - uid: 'outlook!Office.MessageCompose#notificationMessages:member'
+    summary: |-
+      Gets the notification messages for an item.
+
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
+      Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Get all notifications.
+
+      Office.context.mailbox.item.notificationMessages.getAllAsync(
+          function (asyncResult) {
+              console.log(JSON.stringify(asyncResult));
+          }
+      );
+
+      ```
+    name: notificationMessages
+    fullName: notificationMessages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'notificationMessages: NotificationMessages;'
+      return:
+        type:
+          - 'outlook!Office.NotificationMessages:interface'
+  - uid: 'outlook!Office.MessageCompose#removeAttachmentAsync:member(1)'
     summary: >-
       Removes an attachment from a message or appointment.
 
@@ -685,15 +945,15 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will
             contain an error code with the reason for the failure.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.MessageCompose.removeAttachmentAsync_1
+            - 'outlook!Office.MessageCompose#removeAttachmentAsync~0:complex'
+  - uid: 'outlook!Office.MessageCompose#removeAttachmentAsync:member(2)'
     summary: >-
       Removes an attachment from a message or appointment.
 
@@ -744,8 +1004,8 @@ items:
             parameter of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will
             contain an error code with the reason for the failure.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.MessageCompose.saveAsync
+            - 'outlook!Office.MessageCompose#removeAttachmentAsync~1:complex'
+  - uid: 'outlook!Office.MessageCompose#saveAsync:member(1)'
     summary: >-
       Asynchronously saves an item.
 
@@ -811,14 +1071,14 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.MessageCompose.saveAsync_1
+            - 'outlook!Office.MessageCompose#saveAsync~0:complex'
+  - uid: 'outlook!Office.MessageCompose#saveAsync:member(2)'
     summary: >-
       Asynchronously saves an item.
 
@@ -910,8 +1170,8 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.MessageCompose.setSelectedDataAsync
+            - 'outlook!Office.MessageCompose#saveAsync~1:complex'
+  - uid: 'outlook!Office.MessageCompose#setSelectedDataAsync:member(1)'
     summary: >-
       Asynchronously inserts data into the body or subject of a message.
 
@@ -976,14 +1236,14 @@ items:
             the field is a text field, an InvalidDataFormat error is returned. If coercionType is not set, the result
             depends on the field: if the field is HTML then HTML is used; if the field is text, then plain text is used.
           type:
-            - Office.AsyncContextOptions & CoercionTypeOptions
+            - 'outlook!Office.MessageCompose#setSelectedDataAsync~0:complex'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.MessageCompose.setSelectedDataAsync_1
+            - 'outlook!Office.MessageCompose#setSelectedDataAsync~1:complex'
+  - uid: 'outlook!Office.MessageCompose#setSelectedDataAsync:member(2)'
     summary: >-
       Asynchronously inserts data into the body or subject of a message.
 
@@ -1041,268 +1301,8 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.MessageCompose.bcc
-    summary: >-
-      Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a
-      message.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
-      Compose
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.bcc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-
-      Office.context.mailbox.item.bcc.addAsync( ['jason@contoso.com'] );
-
-      Office.context.mailbox.item.bcc.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          var arrayOfBccRecipients = asyncResult.value;
-      }
-
-      ```
-    name: bcc
-    fullName: bcc
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'bcc: Recipients;'
-      return:
-        type:
-          - outlook.Office.Recipients
-  - uid: outlook.Office.MessageCompose.body
-    summary: |-
-      Gets an object that provides methods for manipulating the body of an item.
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
-      Compose
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // This example gets the body of the item as plain text.
-
-      Office.context.mailbox.item.body.getAsync(
-          "text",
-          { asyncContext: "This is passed to the callback" },
-          function callback(result) {
-              // Do something with the result.
-          });
-
-      // The following is an example of the result parameter passed to the callback function.
-
-      {
-          "value": "TEXT of whole body (including threads below)",
-          "status": "succeeded",
-          "asyncContext": "This is passed to the callback"
-      }
-
-      ```
-    name: body
-    fullName: body
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'body: Body;'
-      return:
-        type:
-          - outlook.Office.Body
-  - uid: outlook.Office.MessageCompose.cc
-    summary: >-
-      Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on
-      the mode of the current item.
-
-
-      The cc property returns an [Office.Recipients](xref:outlook.Office.Recipients) object that provides methods to get
-      or update the recipients on the Cc line of the message.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
-      Compose
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.cc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-
-      Office.context.mailbox.item.cc.addAsync( ['jason@contoso.com'] );
-
-      Office.context.mailbox.item.cc.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          var arrayOfCcRecipients = asyncResult.value;
-      }
-
-      ```
-    name: cc
-    fullName: cc
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'cc: Recipients;'
-      return:
-        type:
-          - outlook.Office.Recipients
-  - uid: outlook.Office.MessageCompose.conversationId
-    summary: >-
-      Gets an identifier for the email conversation that contains a particular message.
-
-
-      You can get an integer for this property if your mail app is activated in read forms or responses in compose
-      forms. If subsequently the user changes the subject of the reply message, upon sending the reply, the conversation
-      ID for that message will change and that value you obtained earlier will no longer apply.
-
-
-      You get null for this property for a new item in a compose form. If the user sets a subject and saves the item,
-      the conversationId property will return a value.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
-      Compose
-
-
-      #### Examples
-
-
-      ```javascript
-
-      var conversationId = Office.context.mailbox.item.conversationId;
-
-      console.log("conversationId: " + conversationId);
-
-      ```
-    name: conversationId
-    fullName: conversationId
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'conversationId: string;'
-      return:
-        type:
-          - string
-  - uid: outlook.Office.MessageCompose.itemType
-    summary: >-
-      Gets the type of item that an instance represents.
-
-
-      The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance
-      is a message or an appointment.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
-      Compose
-
-
-      #### Examples
-
-
-      ```javascript
-
-      if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Message) {
-          // Do something.
-      } else {
-          // Do something else.
-      }
-
-      ```
-    name: itemType
-    fullName: itemType
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'itemType: MailboxEnums.ItemType | string;'
-      return:
-        type:
-          - MailboxEnums.ItemType | string
-  - uid: outlook.Office.MessageCompose.notificationMessages
-    summary: |-
-      Gets the notification messages for an item.
-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
-      Compose
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // Get all notifications.
-
-      Office.context.mailbox.item.notificationMessages.getAllAsync(
-          function (asyncResult) {
-              console.log(JSON.stringify(asyncResult));
-          }
-      );
-
-      ```
-    name: notificationMessages
-    fullName: notificationMessages
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'notificationMessages: NotificationMessages;'
-      return:
-        type:
-          - outlook.Office.NotificationMessages
-  - uid: outlook.Office.MessageCompose.subject
+            - 'outlook!Office.MessageCompose#setSelectedDataAsync~2:complex'
+  - uid: 'outlook!Office.MessageCompose#subject:member'
     summary: |-
       Gets or sets the description that appears in the subject field of an item.
 
@@ -1342,8 +1342,8 @@ items:
       content: 'subject: Subject;'
       return:
         type:
-          - outlook.Office.Subject
-  - uid: outlook.Office.MessageCompose.to
+          - 'outlook!Office.Subject:interface'
+  - uid: 'outlook!Office.MessageCompose#to:member'
     summary: >-
       Provides access to the recipients on the To line of a message. The type of object and level of access depends on
       the mode of the current item.
@@ -1389,4 +1389,215 @@ items:
       content: 'to: Recipients;'
       return:
         type:
-          - outlook.Office.Recipients
+          - 'outlook!Office.Recipients:interface'
+references:
+  - uid: 'outlook!Office.Message:interface'
+    name: Message
+  - uid: 'outlook!Office.ItemCompose:interface'
+    name: ItemCompose
+  - uid: 'outlook!Office.MessageCompose#addFileAttachmentAsync~0:complex'
+    name: 'Office.AsyncContextOptions & { isInline: boolean }'
+    fullName: 'Office.AsyncContextOptions & { isInline: boolean }'
+    spec.typeScript:
+      - uid: 'outlook!Office.AsyncContextOptions:interface'
+        name: Office.AsyncContextOptions
+        fullName: Office.AsyncContextOptions
+      - name: ' & { isInline: boolean }'
+        fullName: ' & { isInline: boolean }'
+  - uid: 'outlook!Office.MessageCompose#addFileAttachmentAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'outlook!Office.MessageCompose#addFileAttachmentAsync~2:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'outlook!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions
+  - uid: 'outlook!Office.MessageCompose#addItemAttachmentAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'outlook!Office.MessageCompose#addItemAttachmentAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'outlook!Office.Recipients:interface'
+    name: Recipients
+  - uid: 'outlook!Office.Body:interface'
+    name: Body
+  - uid: 'outlook!Office.MessageCompose#getSelectedDataAsync~0:complex'
+    name: Office.CoercionType | string
+    fullName: Office.CoercionType | string
+    spec.typeScript:
+      - uid: 'outlook!Office.CoercionType:enum'
+        name: Office.CoercionType
+        fullName: Office.CoercionType
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'outlook!Office.MessageCompose#getSelectedDataAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<any>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<any>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <any>) => void
+        fullName: <any>) => void
+  - uid: 'outlook!Office.MessageCompose#getSelectedDataAsync~2:complex'
+    name: Office.CoercionType | string
+    fullName: Office.CoercionType | string
+    spec.typeScript:
+      - uid: 'outlook!Office.CoercionType:enum'
+        name: Office.CoercionType
+        fullName: Office.CoercionType
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'outlook!Office.MessageCompose#getSelectedDataAsync~3:complex'
+    name: '(asyncResult: Office.AsyncResult<any>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<any>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <any>) => void
+        fullName: <any>) => void
+  - uid: 'outlook!Office.MessageCompose#itemType~0:complex'
+    name: MailboxEnums.ItemType | string
+    fullName: Office.MailboxEnums.ItemType | string
+    spec.typeScript:
+      - uid: 'outlook!Office.MailboxEnums.ItemType:enum'
+        name: MailboxEnums.ItemType
+        fullName: Office.MailboxEnums.ItemType
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'outlook!Office.MessageCompose#loadCustomPropertiesAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<CustomProperties>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<Office.CustomProperties>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'outlook!Office.CustomProperties:interface'
+        name: CustomProperties
+        fullName: Office.CustomProperties
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'outlook!Office.NotificationMessages:interface'
+    name: NotificationMessages
+  - uid: 'outlook!Office.MessageCompose#removeAttachmentAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.MessageCompose#removeAttachmentAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.MessageCompose#saveAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'outlook!Office.MessageCompose#saveAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'outlook!Office.MessageCompose#setSelectedDataAsync~0:complex'
+    name: Office.AsyncContextOptions & CoercionTypeOptions
+    fullName: Office.AsyncContextOptions & Office.CoercionTypeOptions
+    spec.typeScript:
+      - uid: 'outlook!Office.AsyncContextOptions:interface'
+        name: Office.AsyncContextOptions
+        fullName: Office.AsyncContextOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'outlook!Office.CoercionTypeOptions:interface'
+        name: CoercionTypeOptions
+        fullName: Office.CoercionTypeOptions
+  - uid: 'outlook!Office.MessageCompose#setSelectedDataAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.MessageCompose#setSelectedDataAsync~2:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.Subject:interface'
+    name: Subject

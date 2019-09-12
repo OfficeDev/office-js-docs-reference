@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ThreeTrafficLights1Set
+  - uid: 'excel!Excel.ThreeTrafficLights1Set:interface'
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ThreeTrafficLights1Set
     fullName: Excel.ThreeTrafficLights1Set
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ThreeTrafficLights1Set.greenCircle
-      - excel.Excel.ThreeTrafficLights1Set.redCircleWithBorder
-      - excel.Excel.ThreeTrafficLights1Set.yellowCircle
-  - uid: excel.Excel.ThreeTrafficLights1Set.greenCircle
+      - 'excel!Excel.ThreeTrafficLights1Set#greenCircle:member'
+      - 'excel!Excel.ThreeTrafficLights1Set#redCircleWithBorder:member'
+      - 'excel!Excel.ThreeTrafficLights1Set#yellowCircle:member'
+  - uid: 'excel!Excel.ThreeTrafficLights1Set#greenCircle:member'
     name: greenCircle
     fullName: greenCircle
     langs:
@@ -22,8 +22,8 @@ items:
       content: 'greenCircle: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.ThreeTrafficLights1Set.redCircleWithBorder
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeTrafficLights1Set#redCircleWithBorder:member'
     name: redCircleWithBorder
     fullName: redCircleWithBorder
     langs:
@@ -33,8 +33,8 @@ items:
       content: 'redCircleWithBorder: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.ThreeTrafficLights1Set.yellowCircle
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeTrafficLights1Set#yellowCircle:member'
     name: yellowCircle
     fullName: yellowCircle
     langs:
@@ -44,4 +44,7 @@ items:
       content: 'yellowCircle: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - 'excel!Excel.Icon:interface'
+references:
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon

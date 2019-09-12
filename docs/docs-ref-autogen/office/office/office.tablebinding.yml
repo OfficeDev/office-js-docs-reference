@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.TableBinding
+  - uid: 'office!Office.TableBinding:interface'
     summary: 'Represents a binding in two dimensions of rows and columns, optionally with headers.'
     remarks: >-
       The TableBinding object inherits the `id` property, `type` property, `getDataAsync` method, and `setDataAsync`
-      method from the [Office.Binding](xref:office.Office.Binding) object.
+      method from the [Office.Binding](xref:office!Office.Binding:interface) object.
 
 
       For Excel, note that after you establish a table binding, each new row a user adds to the table is automatically
@@ -15,27 +15,27 @@ items:
       - typeScript
     type: interface
     extends:
-      - office.Office.Binding
-    package: office
+      - 'office!Office.Binding:interface'
+    package: office!
     children:
-      - office.Office.TableBinding.addColumnsAsync
-      - office.Office.TableBinding.addColumnsAsync_1
-      - office.Office.TableBinding.addRowsAsync
-      - office.Office.TableBinding.addRowsAsync_1
-      - office.Office.TableBinding.clearFormatsAsync
-      - office.Office.TableBinding.clearFormatsAsync_1
-      - office.Office.TableBinding.deleteAllDataValuesAsync
-      - office.Office.TableBinding.deleteAllDataValuesAsync_1
-      - office.Office.TableBinding.getFormatsAsync
-      - office.Office.TableBinding.getFormatsAsync_1
-      - office.Office.TableBinding.setFormatsAsync
-      - office.Office.TableBinding.setFormatsAsync_1
-      - office.Office.TableBinding.setTableOptionsAsync
-      - office.Office.TableBinding.setTableOptionsAsync_1
-      - office.Office.TableBinding.columnCount
-      - office.Office.TableBinding.hasHeaders
-      - office.Office.TableBinding.rowCount
-  - uid: office.Office.TableBinding.addColumnsAsync
+      - 'office!Office.TableBinding#addColumnsAsync:member(1)'
+      - 'office!Office.TableBinding#addColumnsAsync:member(2)'
+      - 'office!Office.TableBinding#addRowsAsync:member(1)'
+      - 'office!Office.TableBinding#addRowsAsync:member(2)'
+      - 'office!Office.TableBinding#clearFormatsAsync:member(1)'
+      - 'office!Office.TableBinding#clearFormatsAsync:member(2)'
+      - 'office!Office.TableBinding#columnCount:member'
+      - 'office!Office.TableBinding#deleteAllDataValuesAsync:member(1)'
+      - 'office!Office.TableBinding#deleteAllDataValuesAsync:member(2)'
+      - 'office!Office.TableBinding#getFormatsAsync:member(1)'
+      - 'office!Office.TableBinding#getFormatsAsync:member(2)'
+      - 'office!Office.TableBinding#hasHeaders:member'
+      - 'office!Office.TableBinding#rowCount:member'
+      - 'office!Office.TableBinding#setFormatsAsync:member(1)'
+      - 'office!Office.TableBinding#setFormatsAsync:member(2)'
+      - 'office!Office.TableBinding#setTableOptionsAsync:member(1)'
+      - 'office!Office.TableBinding#setTableOptionsAsync:member(2)'
+  - uid: 'office!Office.TableBinding#addColumnsAsync:member(1)'
     summary: Adds the specified data to the table as additional columns.
     remarks: >-
       To add one or more columns specifying the values of the data and headers, pass a TableData object as the data
@@ -126,18 +126,18 @@ items:
             An array of arrays ("matrix") or a TableData object that contains one or more columns of data to add to the
             table. Required.
           type:
-            - 'TableData | any[][]'
+            - 'office!Office.TableBinding#addColumnsAsync~0:complex'
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.addColumnsAsync_1
+            - 'office!Office.TableBinding#addColumnsAsync~1:complex'
+  - uid: 'office!Office.TableBinding#addColumnsAsync:member(2)'
     summary: Adds the specified data to the table as additional columns.
     remarks: >-
       To add one or more columns specifying the values of the data and headers, pass a TableData object as the data
@@ -181,14 +181,14 @@ items:
             An array of arrays ("matrix") or a TableData object that contains one or more columns of data to add to the
             table. Required.
           type:
-            - 'TableData | any[][]'
+            - 'office!Office.TableBinding#addColumnsAsync~2:complex'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.addRowsAsync
+            - 'office!Office.TableBinding#addColumnsAsync~3:complex'
+  - uid: 'office!Office.TableBinding#addRowsAsync:member(1)'
     summary: Adds the specified data to the table as additional rows.
     remarks: >-
       The success or failure of an addRowsAsync operation is atomic. That is, the entire add columns operation must
@@ -244,18 +244,18 @@ items:
             An array of arrays ("matrix") or a TableData object that contains one or more rows of data to add to the
             table. Required.
           type:
-            - 'TableData | any[][]'
+            - 'office!Office.TableBinding#addRowsAsync~0:complex'
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.addRowsAsync_1
+            - 'office!Office.TableBinding#addRowsAsync~1:complex'
+  - uid: 'office!Office.TableBinding#addRowsAsync:member(2)'
     summary: Adds the specified data to the table as additional rows.
     remarks: >-
       The success or failure of an addRowsAsync operation is atomic. That is, the entire add columns operation must
@@ -294,14 +294,14 @@ items:
             An array of arrays ("matrix") or a TableData object that contains one or more rows of data to add to the
             table. Required.
           type:
-            - 'TableData | any[][]'
+            - 'office!Office.TableBinding#addRowsAsync~2:complex'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.clearFormatsAsync
+            - 'office!Office.TableBinding#addRowsAsync~3:complex'
+  - uid: 'office!Office.TableBinding#clearFormatsAsync:member(1)'
     summary: Clears formatting on the bound table.
     remarks: >-
       See [Format tables in add-ins for
@@ -334,14 +334,14 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.clearFormatsAsync_1
+            - 'office!Office.TableBinding#clearFormatsAsync~0:complex'
+  - uid: 'office!Office.TableBinding#clearFormatsAsync:member(2)'
     summary: Clears formatting on the bound table.
     remarks: >-
       See [Format tables in add-ins for
@@ -362,10 +362,38 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.deleteAllDataValuesAsync
+            - 'office!Office.TableBinding#clearFormatsAsync~1:complex'
+  - uid: 'office!Office.TableBinding#columnCount:member'
+    summary: 'Gets the number of columns in the TableBinding, as an integer value.'
+    name: columnCount
+    fullName: columnCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnCount: number;'
+      return:
+        type:
+          - number
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          function showBindingColumnCount() {
+              Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+                  write("Column: " + asyncResult.value.columnCount);
+              });
+          }
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
+  - uid: 'office!Office.TableBinding#deleteAllDataValuesAsync:member(1)'
     summary: 'Deletes all non-header rows and their values in the table, shifting appropriately for the host application.'
     remarks: |-
       In Excel, if the table has no header row, this method will delete the table itself.
@@ -397,14 +425,14 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.deleteAllDataValuesAsync_1
+            - 'office!Office.TableBinding#deleteAllDataValuesAsync~0:complex'
+  - uid: 'office!Office.TableBinding#deleteAllDataValuesAsync:member(2)'
     summary: 'Deletes all non-header rows and their values in the table, shifting appropriately for the host application.'
     remarks: 'In Excel, if the table has no header row, this method will delete the table itself.'
     name: deleteAllDataValuesAsync(callback)
@@ -422,10 +450,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.getFormatsAsync
+            - 'office!Office.TableBinding#deleteAllDataValuesAsync~1:complex'
+  - uid: 'office!Office.TableBinding#getFormatsAsync:member(1)'
     summary: Gets the formatting on specified items in the table.
     remarks: >-
       **Returned format structure**
@@ -477,15 +505,16 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an array
-            containing one or more JavaScript objects specifying the formatting of their corresponding cells.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is an array containing one or more JavaScript objects specifying the formatting of their corresponding
+            cells.
           type:
-            - '(result: AsyncResult< ({ cells: any, format: any})[]>) => void'
-  - uid: office.Office.TableBinding.getFormatsAsync_1
+            - 'office!Office.TableBinding#getFormatsAsync~0:complex'
+  - uid: 'office!Office.TableBinding#getFormatsAsync:member(2)'
     summary: Gets the formatting on specified items in the table.
     remarks: >-
       **Returned format structure**
@@ -537,11 +566,89 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an array
-            containing one or more JavaScript objects specifying the formatting of their corresponding cells.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is an array containing one or more JavaScript objects specifying the formatting of their corresponding
+            cells.
           type:
-            - '(result: AsyncResult< ({ cells: any, format: any})[]>) => void'
-  - uid: office.Office.TableBinding.setFormatsAsync
+            - 'office!Office.TableBinding#getFormatsAsync~1:complex'
+  - uid: 'office!Office.TableBinding#hasHeaders:member'
+    summary: 'True, if the table has headers; otherwise false.'
+    name: hasHeaders
+    fullName: hasHeaders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasHeaders: boolean;'
+      return:
+        type:
+          - boolean
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          function showBindingHasHeaders() {
+              Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+                  write("Binding has headers: " + asyncResult.value.hasHeaders);
+              });
+          }
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
+  - uid: 'office!Office.TableBinding#rowCount:member'
+    summary: 'Gets the number of rows in the TableBinding, as an integer value.'
+    remarks: >-
+      When you insert an empty table by selecting a single row in Excel 2013 and Excel on the web (using Table on the
+      Insert tab), both Office host applications create a single row of headers followed by a single blank row. However,
+      if your add-in's script creates a binding for this newly inserted table (for example, by using the
+      [Office.Bindings](xref:office!Office.Bindings:interface)<!-- -->.addFromSelectionAsync method), and then checks
+      the value of the rowCount property, the value returned will differ depending whether the spreadsheet is open in
+      Excel 2013 or Excel on the web.
+
+
+      - In Excel on the desktop, rowCount will return 0 (the blank row following the headers is not counted).
+
+
+      - In Excel on the web, rowCount will return 1 (the blank row following the headers is counted).
+
+
+      You can work around this difference in your script by checking if rowCount == 1, and if so, then checking if the
+      row contains all empty strings.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      function showBindingRowCount() {
+          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+              write("Rows: " + asyncResult.value.rowCount);
+          });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
+    name: rowCount
+    fullName: rowCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowCount: number;'
+      return:
+        type:
+          - number
+  - uid: 'office!Office.TableBinding#setFormatsAsync:member(1)'
     summary: Sets formatting on specified items and data in the table.
     remarks: >-
       **Specifying the cellFormat parameter**
@@ -706,14 +813,14 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.setFormatsAsync_1
+            - 'office!Office.TableBinding#setFormatsAsync~0:complex'
+  - uid: 'office!Office.TableBinding#setFormatsAsync:member(2)'
     summary: Sets formatting on specified items and data in the table.
     remarks: >-
       **Specifying the cellFormat parameter**
@@ -831,10 +938,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.setTableOptionsAsync
+            - 'office!Office.TableBinding#setFormatsAsync~1:complex'
+  - uid: 'office!Office.TableBinding#setTableOptionsAsync:member(1)'
     summary: Updates table formatting options on the bound table.
     remarks: >-
       **Requirement set**: [Not in a
@@ -894,14 +1001,14 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.setTableOptionsAsync_1
+            - 'office!Office.TableBinding#setTableOptionsAsync~0:complex'
+  - uid: 'office!Office.TableBinding#setTableOptionsAsync:member(2)'
     summary: Updates table formatting options on the bound table.
     remarks: >-
       **Requirement set**: [Not in a
@@ -937,111 +1044,201 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
-            - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.columnCount
-    summary: 'Gets the number of columns in the TableBinding, as an integer value.'
-    name: columnCount
-    fullName: columnCount
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'columnCount: number;'
-      return:
-        type:
-          - number
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          function showBindingColumnCount() {
-              Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-                  write("Column: " + asyncResult.value.columnCount);
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
-  - uid: office.Office.TableBinding.hasHeaders
-    summary: 'True, if the table has headers; otherwise false.'
-    name: hasHeaders
-    fullName: hasHeaders
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'hasHeaders: boolean;'
-      return:
-        type:
-          - boolean
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          function showBindingHasHeaders() {
-              Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-                  write("Binding has headers: " + asyncResult.value.hasHeaders);
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
-  - uid: office.Office.TableBinding.rowCount
-    summary: 'Gets the number of rows in the TableBinding, as an integer value.'
-    remarks: >-
-      When you insert an empty table by selecting a single row in Excel 2013 and Excel on the web (using Table on the
-      Insert tab), both Office host applications create a single row of headers followed by a single blank row. However,
-      if your add-in's script creates a binding for this newly inserted table (for example, by using the
-      [Office.Bindings](xref:office.Office.Bindings)<!-- -->.addFromSelectionAsync method), and then checks the value of
-      the rowCount property, the value returned will differ depending whether the spreadsheet is open in Excel 2013 or
-      Excel on the web.
-
-
-      - In Excel on the desktop, rowCount will return 0 (the blank row following the headers is not counted).
-
-
-      - In Excel on the web, rowCount will return 1 (the blank row following the headers is counted).
-
-
-      You can work around this difference in your script by checking if rowCount == 1, and if so, then checking if the
-      row contains all empty strings.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function showBindingRowCount() {
-          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-              write("Rows: " + asyncResult.value.rowCount);
-          });
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
-    name: rowCount
-    fullName: rowCount
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'rowCount: number;'
-      return:
-        type:
-          - number
+            - 'office!Office.TableBinding#setTableOptionsAsync~1:complex'
+references:
+  - uid: 'office!Office.Binding:interface'
+    name: Binding
+  - uid: 'office!Office.TableBinding#addColumnsAsync~0:complex'
+    name: 'TableData | any[][]'
+    fullName: 'Office.TableData | any[][]'
+    spec.typeScript:
+      - uid: 'office!Office.TableData:class'
+        name: TableData
+        fullName: Office.TableData
+      - name: ' | any[][]'
+        fullName: ' | any[][]'
+  - uid: 'office!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions
+  - uid: 'office!Office.TableBinding#addColumnsAsync~1:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.TableBinding#addColumnsAsync~2:complex'
+    name: 'TableData | any[][]'
+    fullName: 'Office.TableData | any[][]'
+    spec.typeScript:
+      - uid: 'office!Office.TableData:class'
+        name: TableData
+        fullName: Office.TableData
+      - name: ' | any[][]'
+        fullName: ' | any[][]'
+  - uid: 'office!Office.TableBinding#addColumnsAsync~3:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.TableBinding#addRowsAsync~0:complex'
+    name: 'TableData | any[][]'
+    fullName: 'Office.TableData | any[][]'
+    spec.typeScript:
+      - uid: 'office!Office.TableData:class'
+        name: TableData
+        fullName: Office.TableData
+      - name: ' | any[][]'
+        fullName: ' | any[][]'
+  - uid: 'office!Office.TableBinding#addRowsAsync~1:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.TableBinding#addRowsAsync~2:complex'
+    name: 'TableData | any[][]'
+    fullName: 'Office.TableData | any[][]'
+    spec.typeScript:
+      - uid: 'office!Office.TableData:class'
+        name: TableData
+        fullName: Office.TableData
+      - name: ' | any[][]'
+        fullName: ' | any[][]'
+  - uid: 'office!Office.TableBinding#addRowsAsync~3:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.TableBinding#clearFormatsAsync~0:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.TableBinding#clearFormatsAsync~1:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.TableBinding#deleteAllDataValuesAsync~0:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.TableBinding#deleteAllDataValuesAsync~1:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.TableBinding#getFormatsAsync~0:complex'
+    name: '(result: AsyncResult< ({ cells: any, format: any})[]>) => void'
+    fullName: '(result: Office.AsyncResult< ({ cells: any, format: any})[]>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: '< ({ cells: any, format: any})[]>) => void'
+        fullName: '< ({ cells: any, format: any})[]>) => void'
+  - uid: 'office!Office.TableBinding#getFormatsAsync~1:complex'
+    name: '(result: AsyncResult< ({ cells: any, format: any})[]>) => void'
+    fullName: '(result: Office.AsyncResult< ({ cells: any, format: any})[]>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: '< ({ cells: any, format: any})[]>) => void'
+        fullName: '< ({ cells: any, format: any})[]>) => void'
+  - uid: 'office!Office.TableBinding#setFormatsAsync~0:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.TableBinding#setFormatsAsync~1:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.TableBinding#setTableOptionsAsync~0:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'office!Office.TableBinding#setTableOptionsAsync~1:complex'
+    name: '(result: AsyncResult<void>) => void'
+    fullName: '(result: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(result: '
+        fullName: '(result: '
+      - uid: 'office!Office.AsyncResult:interface'
+        name: AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void

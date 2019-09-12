@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.OfficeExtension.RunOptions
+  - uid: 'office!OfficeExtension.RunOptions:interface'
     summary: 'Additional options passed into `{Host}.run(...)`<!-- -->.'
     name: OfficeExtension.RunOptions
     fullName: OfficeExtension.RunOptions
@@ -10,11 +10,11 @@ items:
     syntax:
       typeParameters:
         - id: T
-    package: office
+    package: office!
     children:
-      - office.OfficeExtension.RunOptions.previousObjects
-      - office.OfficeExtension.RunOptions.session
-  - uid: office.OfficeExtension.RunOptions.previousObjects
+      - 'office!OfficeExtension.RunOptions#previousObjects:member'
+      - 'office!OfficeExtension.RunOptions#session:member'
+  - uid: 'office!OfficeExtension.RunOptions#previousObjects:member'
     summary: >-
       A previously-created context, or API object, or array of objects. The batch will use the same RequestContext as
       the passed-in object, which means that any changes applied to the object will be picked up by `context.sync()`<!--
@@ -28,8 +28,8 @@ items:
       content: 'previousObjects?: ClientObject | ClientObject[] | ClientRequestContext;'
       return:
         type:
-          - 'ClientObject | ClientObject[] | ClientRequestContext'
-  - uid: office.OfficeExtension.RunOptions.session
+          - 'office!OfficeExtension.RunOptions#previousObjects~0:complex'
+  - uid: 'office!OfficeExtension.RunOptions#session:member'
     summary: The URL of the remote workbook and the request headers to be sent.
     name: session
     fullName: session
@@ -40,4 +40,31 @@ items:
       content: 'session?: RequestUrlAndHeaderInfo | T;'
       return:
         type:
-          - RequestUrlAndHeaderInfo | T
+          - 'office!OfficeExtension.RunOptions#session~0:complex'
+references:
+  - uid: 'office!OfficeExtension.RunOptions#previousObjects~0:complex'
+    name: 'ClientObject | ClientObject[] | ClientRequestContext'
+    fullName: 'OfficeExtension.ClientObject | OfficeExtension.ClientObject[] | OfficeExtension.ClientRequestContext'
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientObject:class'
+        name: ClientObject
+        fullName: OfficeExtension.ClientObject
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'office!OfficeExtension.ClientObject:class'
+        name: ClientObject
+        fullName: OfficeExtension.ClientObject
+      - name: '[] | '
+        fullName: '[] | '
+      - uid: 'office!OfficeExtension.ClientRequestContext:class'
+        name: ClientRequestContext
+        fullName: OfficeExtension.ClientRequestContext
+  - uid: 'office!OfficeExtension.RunOptions#session~0:complex'
+    name: RequestUrlAndHeaderInfo | T
+    fullName: OfficeExtension.RequestUrlAndHeaderInfo | T
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.RequestUrlAndHeaderInfo:interface'
+        name: RequestUrlAndHeaderInfo
+        fullName: OfficeExtension.RequestUrlAndHeaderInfo
+      - name: ' | T'
+        fullName: ' | T'

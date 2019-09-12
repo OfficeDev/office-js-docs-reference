@@ -1,80 +1,80 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.BorderLocation
+  - uid: 'word!Word.BorderLocation:enum'
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     name: Word.BorderLocation
     fullName: Word.BorderLocation
     langs:
       - typeScript
     type: enum
-    package: word
+    package: word!
     children:
-      - word.Word.BorderLocation.all
-      - word.Word.BorderLocation.bottom
-      - word.Word.BorderLocation.inside
-      - word.Word.BorderLocation.insideHorizontal
-      - word.Word.BorderLocation.insideVertical
-      - word.Word.BorderLocation.left
-      - word.Word.BorderLocation.outside
-      - word.Word.BorderLocation.right
-      - word.Word.BorderLocation.top
-  - uid: word.Word.BorderLocation.all
+      - 'word!Word.BorderLocation.all:member'
+      - 'word!Word.BorderLocation.bottom:member'
+      - 'word!Word.BorderLocation.inside:member'
+      - 'word!Word.BorderLocation.insideHorizontal:member'
+      - 'word!Word.BorderLocation.insideVertical:member'
+      - 'word!Word.BorderLocation.left:member'
+      - 'word!Word.BorderLocation.outside:member'
+      - 'word!Word.BorderLocation.right:member'
+      - 'word!Word.BorderLocation.top:member'
+  - uid: 'word!Word.BorderLocation.all:member'
     name: all
     fullName: all
     langs:
       - typeScript
     type: field
     numericValue: '"All"'
-  - uid: word.Word.BorderLocation.bottom
+  - uid: 'word!Word.BorderLocation.bottom:member'
     name: bottom
     fullName: bottom
     langs:
       - typeScript
     type: field
     numericValue: '"Bottom"'
-  - uid: word.Word.BorderLocation.inside
+  - uid: 'word!Word.BorderLocation.inside:member'
     name: inside
     fullName: inside
     langs:
       - typeScript
     type: field
     numericValue: '"Inside"'
-  - uid: word.Word.BorderLocation.insideHorizontal
+  - uid: 'word!Word.BorderLocation.insideHorizontal:member'
     name: insideHorizontal
     fullName: insideHorizontal
     langs:
       - typeScript
     type: field
     numericValue: '"InsideHorizontal"'
-  - uid: word.Word.BorderLocation.insideVertical
+  - uid: 'word!Word.BorderLocation.insideVertical:member'
     name: insideVertical
     fullName: insideVertical
     langs:
       - typeScript
     type: field
     numericValue: '"InsideVertical"'
-  - uid: word.Word.BorderLocation.left
+  - uid: 'word!Word.BorderLocation.left:member'
     name: left
     fullName: left
     langs:
       - typeScript
     type: field
     numericValue: '"Left"'
-  - uid: word.Word.BorderLocation.outside
+  - uid: 'word!Word.BorderLocation.outside:member'
     name: outside
     fullName: outside
     langs:
       - typeScript
     type: field
     numericValue: '"Outside"'
-  - uid: word.Word.BorderLocation.right
+  - uid: 'word!Word.BorderLocation.right:member'
     name: right
     fullName: right
     langs:
       - typeScript
     type: field
     numericValue: '"Right"'
-  - uid: word.Word.BorderLocation.top
+  - uid: 'word!Word.BorderLocation.top:member'
     name: top
     fullName: top
     langs:

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.PageCollectionLoadOptions
+  - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions:interface'
     summary: |-
       Represents a collection of Page objects that are part of the document.
 
@@ -10,16 +10,16 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.PageCollectionLoadOptions.$all
-      - visio.Visio.Interfaces.PageCollectionLoadOptions.height
-      - visio.Visio.Interfaces.PageCollectionLoadOptions.index
-      - visio.Visio.Interfaces.PageCollectionLoadOptions.isBackground
-      - visio.Visio.Interfaces.PageCollectionLoadOptions.name
-      - visio.Visio.Interfaces.PageCollectionLoadOptions.view
-      - visio.Visio.Interfaces.PageCollectionLoadOptions.width
-  - uid: visio.Visio.Interfaces.PageCollectionLoadOptions.$all
+      - 'visio!Visio.Interfaces.PageCollectionLoadOptions#$all:member'
+      - 'visio!Visio.Interfaces.PageCollectionLoadOptions#height:member'
+      - 'visio!Visio.Interfaces.PageCollectionLoadOptions#index:member'
+      - 'visio!Visio.Interfaces.PageCollectionLoadOptions#isBackground:member'
+      - 'visio!Visio.Interfaces.PageCollectionLoadOptions#name:member'
+      - 'visio!Visio.Interfaces.PageCollectionLoadOptions#view:member'
+      - 'visio!Visio.Interfaces.PageCollectionLoadOptions#width:member'
+  - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.PageCollectionLoadOptions.height
+  - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#height:member'
     summary: |-
       For EACH ITEM in the collection: Returns the height of the page. Read-only.
 
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.PageCollectionLoadOptions.index
+  - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#index:member'
     summary: |-
       For EACH ITEM in the collection: Index of the Page. Read-only.
 
@@ -60,7 +60,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.PageCollectionLoadOptions.isBackground
+  - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#isBackground:member'
     summary: |-
       For EACH ITEM in the collection: Whether the page is a background page or not. Read-only.
 
@@ -75,7 +75,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.PageCollectionLoadOptions.name
+  - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#name:member'
     summary: |-
       For EACH ITEM in the collection: Page name. Read-only.
 
@@ -90,7 +90,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.PageCollectionLoadOptions.view
+  - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#view:member'
     summary: |-
       For EACH ITEM in the collection: Returns the view of the page.
 
@@ -104,8 +104,8 @@ items:
       content: 'view?: Visio.Interfaces.PageViewLoadOptions;'
       return:
         type:
-          - visio.Visio.Interfaces.PageViewLoadOptions
-  - uid: visio.Visio.Interfaces.PageCollectionLoadOptions.width
+          - 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
+  - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions#width:member'
     summary: |-
       For EACH ITEM in the collection: Returns the width of the page. Read-only.
 
@@ -120,3 +120,6 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
+    name: Visio.Interfaces.PageViewLoadOptions

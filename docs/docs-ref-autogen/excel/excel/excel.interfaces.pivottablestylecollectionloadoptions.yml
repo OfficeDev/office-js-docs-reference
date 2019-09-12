@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotTableStyleCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionLoadOptions:interface'
     summary: >-
       Represents a collection of PivotTable styles.
 
@@ -13,12 +13,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotTableStyleCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.PivotTableStyleCollectionLoadOptions.name
-      - excel.Excel.Interfaces.PivotTableStyleCollectionLoadOptions.readOnly
-  - uid: excel.Excel.Interfaces.PivotTableStyleCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.PivotTableStyleCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.PivotTableStyleCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.PivotTableStyleCollectionLoadOptions#readOnly:member'
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionLoadOptions#$all:member'
     isPreview: true
     name: $all
     fullName: $all
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotTableStyleCollectionLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionLoadOptions#name:member'
     summary: >-
       For EACH ITEM in the collection: Gets the name of the PivotTableStyle.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotTableStyleCollectionLoadOptions.readOnly
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionLoadOptions#readOnly:member'
     summary: >-
       For EACH ITEM in the collection: Specifies whether this PivotTableStyle object is read-only. Read-only.
 

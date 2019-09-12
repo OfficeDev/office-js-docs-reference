@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.InlinePictureCollection
+  - uid: 'word!Word.InlinePictureCollection:class'
     summary: |-
-      Contains a collection of [Word.InlinePicture](xref:word.Word.InlinePicture) objects.
+      Contains a collection of [Word.InlinePicture](xref:word!Word.InlinePicture:class) objects.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.InlinePictureCollection
@@ -11,18 +11,18 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: word
+      - 'word!OfficeExtension.ClientObject:class'
+    package: word!
     children:
-      - word.Word.InlinePictureCollection.context
-      - word.Word.InlinePictureCollection.items
-      - word.Word.InlinePictureCollection.load
-      - word.Word.InlinePictureCollection.load_1
-      - word.Word.InlinePictureCollection.load_2
-      - word.Word.InlinePictureCollection.toJSON
-      - word.Word.InlinePictureCollection.track
-      - word.Word.InlinePictureCollection.untrack
-  - uid: word.Word.InlinePictureCollection.context
+      - 'word!Word.InlinePictureCollection#context:member'
+      - 'word!Word.InlinePictureCollection#items:member'
+      - 'word!Word.InlinePictureCollection#load:member(1)'
+      - 'word!Word.InlinePictureCollection#load:member(2)'
+      - 'word!Word.InlinePictureCollection#load:member(3)'
+      - 'word!Word.InlinePictureCollection#toJSON:member(1)'
+      - 'word!Word.InlinePictureCollection#track:member(1)'
+      - 'word!Word.InlinePictureCollection#untrack:member(1)'
+  - uid: 'word!Word.InlinePictureCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -35,8 +35,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.InlinePictureCollection.items
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.InlinePictureCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -47,8 +47,8 @@ items:
       content: 'readonly items: Word.InlinePicture[];'
       return:
         type:
-          - 'Word.InlinePicture[]'
-  - uid: word.Word.InlinePictureCollection.load
+          - 'word!Word.InlinePictureCollection#items~0:complex'
+  - uid: 'word!Word.InlinePictureCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -81,14 +81,14 @@ items:
         Word.InlinePictureCollection;
       return:
         type:
-          - word.Word.InlinePictureCollection
+          - 'word!Word.InlinePictureCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
-  - uid: word.Word.InlinePictureCollection.load_1
+            - 'word!Word.InlinePictureCollection#load~0:complex'
+  - uid: 'word!Word.InlinePictureCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -101,14 +101,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.InlinePictureCollection;'
       return:
         type:
-          - word.Word.InlinePictureCollection
+          - 'word!Word.InlinePictureCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.InlinePictureCollection.load_2
+  - uid: 'word!Word.InlinePictureCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -118,14 +118,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Word.InlinePictureCollection;'
       return:
         type:
-          - word.Word.InlinePictureCollection
+          - 'word!Word.InlinePictureCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
-  - uid: word.Word.InlinePictureCollection.toJSON
+            - 'word!OfficeExtension.LoadOption:interface'
+  - uid: 'word!Word.InlinePictureCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -141,9 +141,9 @@ items:
       content: 'toJSON(): Word.Interfaces.InlinePictureCollectionData;'
       return:
         type:
-          - word.Word.Interfaces.InlinePictureCollectionData
+          - 'word!Word.Interfaces.InlinePictureCollectionData:interface'
         description: ''
-  - uid: word.Word.InlinePictureCollection.track
+  - uid: 'word!Word.InlinePictureCollection#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -159,9 +159,9 @@ items:
       content: 'track(): Word.InlinePictureCollection;'
       return:
         type:
-          - word.Word.InlinePictureCollection
+          - 'word!Word.InlinePictureCollection:class'
         description: ''
-  - uid: word.Word.InlinePictureCollection.untrack
+  - uid: 'word!Word.InlinePictureCollection#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -176,5 +176,37 @@ items:
       content: 'untrack(): Word.InlinePictureCollection;'
       return:
         type:
-          - word.Word.InlinePictureCollection
+          - 'word!Word.InlinePictureCollection:class'
         description: ''
+references:
+  - uid: 'word!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.InlinePictureCollection#items~0:complex'
+    name: 'Word.InlinePicture[]'
+    fullName: 'Word.InlinePicture[]'
+    spec.typeScript:
+      - uid: 'word!Word.InlinePicture:class'
+        name: Word.InlinePicture
+        fullName: Word.InlinePicture
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'word!Word.InlinePictureCollection:class'
+    name: Word.InlinePictureCollection
+  - uid: 'word!Word.InlinePictureCollection#load~0:complex'
+    name: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+    fullName: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions:interface'
+        name: Word.Interfaces.InlinePictureCollectionLoadOptions
+        fullName: Word.Interfaces.InlinePictureCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'word!Word.Interfaces.CollectionLoadOptions:interface'
+        name: Word.Interfaces.CollectionLoadOptions
+        fullName: Word.Interfaces.CollectionLoadOptions
+  - uid: 'word!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionData:interface'
+    name: Word.Interfaces.InlinePictureCollectionData

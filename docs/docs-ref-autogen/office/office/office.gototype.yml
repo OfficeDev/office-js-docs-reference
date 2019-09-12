@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.GoToType
+  - uid: 'office!Office.GoToType:enum'
     summary: Specifies the type of place or object to navigate to.
     name: Office.GoToType
     fullName: Office.GoToType
     langs:
       - typeScript
     type: enum
-    package: office
+    package: office!
     children:
-      - office.Office.GoToType.Binding
-      - office.Office.GoToType.Index
-      - office.Office.GoToType.NamedItem
-      - office.Office.GoToType.Slide
-  - uid: office.Office.GoToType.Binding
+      - 'office!Office.GoToType.Binding:member'
+      - 'office!Office.GoToType.Index:member'
+      - 'office!Office.GoToType.NamedItem:member'
+      - 'office!Office.GoToType.Slide:member'
+  - uid: 'office!Office.GoToType.Binding:member'
     summary: |-
       Goes to a binding object using the specified binding id.
 
@@ -23,9 +23,9 @@ items:
     langs:
       - typeScript
     type: field
-  - uid: office.Office.GoToType.Index
+  - uid: 'office!Office.GoToType.Index:member'
     summary: |-
-      Goes to the specified index by slide number or [Office.Index](xref:office.Office.Index)<!-- -->.
+      Goes to the specified index by slide number or [Office.Index](xref:office!Office.Index:enum)<!-- -->.
 
       Supported hosts: PowerPoint
     name: Index
@@ -33,7 +33,7 @@ items:
     langs:
       - typeScript
     type: field
-  - uid: office.Office.GoToType.NamedItem
+  - uid: 'office!Office.GoToType.NamedItem:member'
     summary: >-
       Goes to a named item using that item's name. In Excel, you can use any structured reference for a named range or
       table: "Worksheet2!Table1"
@@ -45,7 +45,7 @@ items:
     langs:
       - typeScript
     type: field
-  - uid: office.Office.GoToType.Slide
+  - uid: 'office!Office.GoToType.Slide:member'
     summary: |-
       Goes to a slide using the specified id.
 

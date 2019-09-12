@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.InlinePictureUpdateData
+  - uid: 'word!Word.Interfaces.InlinePictureUpdateData:interface'
     summary: >-
       An interface for updating data on the InlinePicture object, for use in "inlinePicture.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,15 +9,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.InlinePictureUpdateData.altTextDescription
-      - word.Word.Interfaces.InlinePictureUpdateData.altTextTitle
-      - word.Word.Interfaces.InlinePictureUpdateData.height
-      - word.Word.Interfaces.InlinePictureUpdateData.hyperlink
-      - word.Word.Interfaces.InlinePictureUpdateData.lockAspectRatio
-      - word.Word.Interfaces.InlinePictureUpdateData.width
-  - uid: word.Word.Interfaces.InlinePictureUpdateData.altTextDescription
+      - 'word!Word.Interfaces.InlinePictureUpdateData#altTextDescription:member'
+      - 'word!Word.Interfaces.InlinePictureUpdateData#altTextTitle:member'
+      - 'word!Word.Interfaces.InlinePictureUpdateData#height:member'
+      - 'word!Word.Interfaces.InlinePictureUpdateData#hyperlink:member'
+      - 'word!Word.Interfaces.InlinePictureUpdateData#lockAspectRatio:member'
+      - 'word!Word.Interfaces.InlinePictureUpdateData#width:member'
+  - uid: 'word!Word.Interfaces.InlinePictureUpdateData#altTextDescription:member'
     summary: |-
       Gets or sets a string that represents the alternative text associated with the inline image.
 
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.InlinePictureUpdateData.altTextTitle
+  - uid: 'word!Word.Interfaces.InlinePictureUpdateData#altTextTitle:member'
     summary: |-
       Gets or sets a string that contains the title for the inline image.
 
@@ -47,7 +47,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.InlinePictureUpdateData.height
+  - uid: 'word!Word.Interfaces.InlinePictureUpdateData#height:member'
     summary: |-
       Gets or sets a number that describes the height of the inline image.
 
@@ -62,7 +62,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.InlinePictureUpdateData.hyperlink
+  - uid: 'word!Word.Interfaces.InlinePictureUpdateData#hyperlink:member'
     summary: |-
       Gets or sets a hyperlink on the image. Use a '\#' to separate the address part from the optional location part.
 
@@ -77,7 +77,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.InlinePictureUpdateData.lockAspectRatio
+  - uid: 'word!Word.Interfaces.InlinePictureUpdateData#lockAspectRatio:member'
     summary: |-
       Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
 
@@ -92,7 +92,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.InlinePictureUpdateData.width
+  - uid: 'word!Word.Interfaces.InlinePictureUpdateData#width:member'
     summary: |-
       Gets or sets a number that describes the width of the inline image.
 

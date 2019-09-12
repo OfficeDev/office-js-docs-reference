@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CellPropertiesFillLoadOptions
+  - uid: 'excel!Excel.CellPropertiesFillLoadOptions:interface'
     summary: |-
       Specifies which properties to load on the `format.fill` object.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.CellPropertiesFillLoadOptions.color
-      - excel.Excel.CellPropertiesFillLoadOptions.pattern
-      - excel.Excel.CellPropertiesFillLoadOptions.patternColor
-      - excel.Excel.CellPropertiesFillLoadOptions.patternTintAndShade
-      - excel.Excel.CellPropertiesFillLoadOptions.tintAndShade
-  - uid: excel.Excel.CellPropertiesFillLoadOptions.color
+      - 'excel!Excel.CellPropertiesFillLoadOptions#color:member'
+      - 'excel!Excel.CellPropertiesFillLoadOptions#pattern:member'
+      - 'excel!Excel.CellPropertiesFillLoadOptions#patternColor:member'
+      - 'excel!Excel.CellPropertiesFillLoadOptions#patternTintAndShade:member'
+      - 'excel!Excel.CellPropertiesFillLoadOptions#tintAndShade:member'
+  - uid: 'excel!Excel.CellPropertiesFillLoadOptions#color:member'
     summary: |-
       Specifies whether to load on the `color` property.
 
@@ -62,7 +62,7 @@ items:
                   `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
           });
           ```
-  - uid: excel.Excel.CellPropertiesFillLoadOptions.pattern
+  - uid: 'excel!Excel.CellPropertiesFillLoadOptions#pattern:member'
     summary: |-
       Specifies whether to load on the `pattern` property.
 
@@ -77,7 +77,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFillLoadOptions.patternColor
+  - uid: 'excel!Excel.CellPropertiesFillLoadOptions#patternColor:member'
     summary: |-
       Specifies whether to load on the `patternColor` property.
 
@@ -92,7 +92,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFillLoadOptions.patternTintAndShade
+  - uid: 'excel!Excel.CellPropertiesFillLoadOptions#patternTintAndShade:member'
     summary: |-
       Specifies whether to load on the `patternTintAndShade` property.
 
@@ -107,7 +107,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFillLoadOptions.tintAndShade
+  - uid: 'excel!Excel.CellPropertiesFillLoadOptions#tintAndShade:member'
     summary: |-
       Specifies whether to load on the `tintAndShade` property.
 

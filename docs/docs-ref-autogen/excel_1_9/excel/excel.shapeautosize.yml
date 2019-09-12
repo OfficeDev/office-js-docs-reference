@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ShapeAutoSize
+  - uid: 'excel!Excel.ShapeAutoSize:enum'
     summary: |-
       Determines the type of automatic sizing allowed.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ShapeAutoSize.autoSizeMixed
-      - excel.Excel.ShapeAutoSize.autoSizeNone
-      - excel.Excel.ShapeAutoSize.autoSizeShapeToFitText
-      - excel.Excel.ShapeAutoSize.autoSizeTextToFitShape
-  - uid: excel.Excel.ShapeAutoSize.autoSizeMixed
+      - 'excel!Excel.ShapeAutoSize.autoSizeMixed:member'
+      - 'excel!Excel.ShapeAutoSize.autoSizeNone:member'
+      - 'excel!Excel.ShapeAutoSize.autoSizeShapeToFitText:member'
+      - 'excel!Excel.ShapeAutoSize.autoSizeTextToFitShape:member'
+  - uid: 'excel!Excel.ShapeAutoSize.autoSizeMixed:member'
     summary: A combination of automatic sizing schemes are used.
     name: autoSizeMixed
     fullName: autoSizeMixed
@@ -24,7 +24,7 @@ items:
       - typeScript
     type: field
     numericValue: '"AutoSizeMixed"'
-  - uid: excel.Excel.ShapeAutoSize.autoSizeNone
+  - uid: 'excel!Excel.ShapeAutoSize.autoSizeNone:member'
     summary: No autosizing.
     name: autoSizeNone
     fullName: autoSizeNone
@@ -32,7 +32,7 @@ items:
       - typeScript
     type: field
     numericValue: '"AutoSizeNone"'
-  - uid: excel.Excel.ShapeAutoSize.autoSizeShapeToFitText
+  - uid: 'excel!Excel.ShapeAutoSize.autoSizeShapeToFitText:member'
     summary: The shape is adjusted to fit the text.
     name: autoSizeShapeToFitText
     fullName: autoSizeShapeToFitText
@@ -40,7 +40,7 @@ items:
       - typeScript
     type: field
     numericValue: '"AutoSizeShapeToFitText"'
-  - uid: excel.Excel.ShapeAutoSize.autoSizeTextToFitShape
+  - uid: 'excel!Excel.ShapeAutoSize.autoSizeTextToFitShape:member'
     summary: The text is adjusted to fit the shape.
     name: autoSizeTextToFitShape
     fullName: autoSizeTextToFitShape

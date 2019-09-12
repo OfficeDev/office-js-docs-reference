@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartPointFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface'
     summary: |-
       Represents formatting object for chart points.
 
@@ -10,10 +10,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartPointFormatLoadOptions.$all
-  - uid: excel.Excel.Interfaces.ChartPointFormatLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartPointFormatLoadOptions#$all:member'
+  - uid: 'excel!Excel.Interfaces.ChartPointFormatLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:

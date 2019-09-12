@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.ImageUpdateData
+  - uid: 'onenote!OneNote.Interfaces.ImageUpdateData:interface'
     summary: 'An interface for updating data on the Image object, for use in "image.set(<!-- -->{ ... }<!-- -->)".'
     name: OneNote.Interfaces.ImageUpdateData
     fullName: OneNote.Interfaces.ImageUpdateData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.ImageUpdateData.description
-      - onenote.OneNote.Interfaces.ImageUpdateData.height
-      - onenote.OneNote.Interfaces.ImageUpdateData.hyperlink
-      - onenote.OneNote.Interfaces.ImageUpdateData.width
-  - uid: onenote.OneNote.Interfaces.ImageUpdateData.description
+      - 'onenote!OneNote.Interfaces.ImageUpdateData#description:member'
+      - 'onenote!OneNote.Interfaces.ImageUpdateData#height:member'
+      - 'onenote!OneNote.Interfaces.ImageUpdateData#hyperlink:member'
+      - 'onenote!OneNote.Interfaces.ImageUpdateData#width:member'
+  - uid: 'onenote!OneNote.Interfaces.ImageUpdateData#description:member'
     summary: |-
       Gets or sets the description of the Image.
 
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.ImageUpdateData.height
+  - uid: 'onenote!OneNote.Interfaces.ImageUpdateData#height:member'
     summary: |-
       Gets or sets the height of the Image layout.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.Interfaces.ImageUpdateData.hyperlink
+  - uid: 'onenote!OneNote.Interfaces.ImageUpdateData#hyperlink:member'
     summary: |-
       Gets or sets the hyperlink of the Image.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.ImageUpdateData.width
+  - uid: 'onenote!OneNote.Interfaces.ImageUpdateData#width:member'
     summary: |-
       Gets or sets the width of the Image layout.
 

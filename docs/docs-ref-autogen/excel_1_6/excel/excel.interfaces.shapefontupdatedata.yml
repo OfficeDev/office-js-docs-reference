@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ShapeFontUpdateData
+  - uid: 'excel!Excel.Interfaces.ShapeFontUpdateData:interface'
     summary: 'An interface for updating data on the ShapeFont object, for use in "shapeFont.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.ShapeFontUpdateData
     fullName: Excel.Interfaces.ShapeFontUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

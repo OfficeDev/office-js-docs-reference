@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.TableRowCollection
+  - uid: 'word!Word.TableRowCollection:class'
     summary: |-
       Contains the collection of the document's TableRow objects.
 
@@ -11,20 +11,20 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: word
+      - 'word!OfficeExtension.ClientObject:class'
+    package: word!
     children:
-      - word.Word.TableRowCollection.context
-      - word.Word.TableRowCollection.getFirst
-      - word.Word.TableRowCollection.getFirstOrNullObject
-      - word.Word.TableRowCollection.items
-      - word.Word.TableRowCollection.load
-      - word.Word.TableRowCollection.load_1
-      - word.Word.TableRowCollection.load_2
-      - word.Word.TableRowCollection.toJSON
-      - word.Word.TableRowCollection.track
-      - word.Word.TableRowCollection.untrack
-  - uid: word.Word.TableRowCollection.context
+      - 'word!Word.TableRowCollection#context:member'
+      - 'word!Word.TableRowCollection#getFirst:member(1)'
+      - 'word!Word.TableRowCollection#getFirstOrNullObject:member(1)'
+      - 'word!Word.TableRowCollection#items:member'
+      - 'word!Word.TableRowCollection#load:member(1)'
+      - 'word!Word.TableRowCollection#load:member(2)'
+      - 'word!Word.TableRowCollection#load:member(3)'
+      - 'word!Word.TableRowCollection#toJSON:member(1)'
+      - 'word!Word.TableRowCollection#track:member(1)'
+      - 'word!Word.TableRowCollection#untrack:member(1)'
+  - uid: 'word!Word.TableRowCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -37,8 +37,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.TableRowCollection.getFirst
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.TableRowCollection#getFirst:member(1)'
     summary: |-
       Gets the first row in this collection. Throws if this collection is empty.
 
@@ -52,9 +52,9 @@ items:
       content: 'getFirst(): Word.TableRow;'
       return:
         type:
-          - word.Word.TableRow
+          - 'word!Word.TableRow:class'
         description: ''
-  - uid: word.Word.TableRowCollection.getFirstOrNullObject
+  - uid: 'word!Word.TableRowCollection#getFirstOrNullObject:member(1)'
     summary: |-
       Gets the first row in this collection. Returns a null object if this collection is empty.
 
@@ -68,9 +68,9 @@ items:
       content: 'getFirstOrNullObject(): Word.TableRow;'
       return:
         type:
-          - word.Word.TableRow
+          - 'word!Word.TableRow:class'
         description: ''
-  - uid: word.Word.TableRowCollection.items
+  - uid: 'word!Word.TableRowCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -81,8 +81,8 @@ items:
       content: 'readonly items: Word.TableRow[];'
       return:
         type:
-          - 'Word.TableRow[]'
-  - uid: word.Word.TableRowCollection.load
+          - 'word!Word.TableRowCollection#items~0:complex'
+  - uid: 'word!Word.TableRowCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -115,14 +115,14 @@ items:
         Word.TableRowCollection;
       return:
         type:
-          - word.Word.TableRowCollection
+          - 'word!Word.TableRowCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.TableRowCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
-  - uid: word.Word.TableRowCollection.load_1
+            - 'word!Word.TableRowCollection#load~0:complex'
+  - uid: 'word!Word.TableRowCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -135,14 +135,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.TableRowCollection;'
       return:
         type:
-          - word.Word.TableRowCollection
+          - 'word!Word.TableRowCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.TableRowCollection.load_2
+  - uid: 'word!Word.TableRowCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -152,14 +152,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Word.TableRowCollection;'
       return:
         type:
-          - word.Word.TableRowCollection
+          - 'word!Word.TableRowCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
-  - uid: word.Word.TableRowCollection.toJSON
+            - 'word!OfficeExtension.LoadOption:interface'
+  - uid: 'word!Word.TableRowCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -175,9 +175,9 @@ items:
       content: 'toJSON(): Word.Interfaces.TableRowCollectionData;'
       return:
         type:
-          - word.Word.Interfaces.TableRowCollectionData
+          - 'word!Word.Interfaces.TableRowCollectionData:interface'
         description: ''
-  - uid: word.Word.TableRowCollection.track
+  - uid: 'word!Word.TableRowCollection#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -193,9 +193,9 @@ items:
       content: 'track(): Word.TableRowCollection;'
       return:
         type:
-          - word.Word.TableRowCollection
+          - 'word!Word.TableRowCollection:class'
         description: ''
-  - uid: word.Word.TableRowCollection.untrack
+  - uid: 'word!Word.TableRowCollection#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -210,5 +210,39 @@ items:
       content: 'untrack(): Word.TableRowCollection;'
       return:
         type:
-          - word.Word.TableRowCollection
+          - 'word!Word.TableRowCollection:class'
         description: ''
+references:
+  - uid: 'word!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.TableRow:class'
+    name: Word.TableRow
+  - uid: 'word!Word.TableRowCollection#items~0:complex'
+    name: 'Word.TableRow[]'
+    fullName: 'Word.TableRow[]'
+    spec.typeScript:
+      - uid: 'word!Word.TableRow:class'
+        name: Word.TableRow
+        fullName: Word.TableRow
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'word!Word.TableRowCollection:class'
+    name: Word.TableRowCollection
+  - uid: 'word!Word.TableRowCollection#load~0:complex'
+    name: Word.Interfaces.TableRowCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+    fullName: Word.Interfaces.TableRowCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions:interface'
+        name: Word.Interfaces.TableRowCollectionLoadOptions
+        fullName: Word.Interfaces.TableRowCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'word!Word.Interfaces.CollectionLoadOptions:interface'
+        name: Word.Interfaces.CollectionLoadOptions
+        fullName: Word.Interfaces.CollectionLoadOptions
+  - uid: 'word!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'word!Word.Interfaces.TableRowCollectionData:interface'
+    name: Word.Interfaces.TableRowCollectionData

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.PivotItemCollection
+  - uid: 'excel!Excel.PivotItemCollection:class'
     summary: |-
       Represents a collection of all the PivotItems related to their parent PivotField.
 
@@ -11,19 +11,19 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.PivotItemCollection.context
-      - excel.Excel.PivotItemCollection.getCount
-      - excel.Excel.PivotItemCollection.getItem
-      - excel.Excel.PivotItemCollection.getItemOrNullObject
-      - excel.Excel.PivotItemCollection.items
-      - excel.Excel.PivotItemCollection.load
-      - excel.Excel.PivotItemCollection.load_1
-      - excel.Excel.PivotItemCollection.load_2
-      - excel.Excel.PivotItemCollection.toJSON
-  - uid: excel.Excel.PivotItemCollection.context
+      - 'excel!Excel.PivotItemCollection#context:member'
+      - 'excel!Excel.PivotItemCollection#getCount:member(1)'
+      - 'excel!Excel.PivotItemCollection#getItem:member(1)'
+      - 'excel!Excel.PivotItemCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.PivotItemCollection#items:member'
+      - 'excel!Excel.PivotItemCollection#load:member(1)'
+      - 'excel!Excel.PivotItemCollection#load:member(2)'
+      - 'excel!Excel.PivotItemCollection#load:member(3)'
+      - 'excel!Excel.PivotItemCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.PivotItemCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -36,8 +36,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.PivotItemCollection.getCount
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PivotItemCollection#getCount:member(1)'
     summary: |-
       Gets the number of PivotItems in the collection.
 
@@ -51,9 +51,9 @@ items:
       content: 'getCount(): OfficeExtension.ClientResult<number>;'
       return:
         type:
-          - OfficeExtension.ClientResult<number>
+          - 'excel!Excel.PivotItemCollection#getCount~0:complex'
         description: ''
-  - uid: excel.Excel.PivotItemCollection.getItem
+  - uid: 'excel!Excel.PivotItemCollection#getItem:member(1)'
     summary: |-
       Gets a PivotItem by its name or id.
 
@@ -67,14 +67,14 @@ items:
       content: 'getItem(name: string): Excel.PivotItem;'
       return:
         type:
-          - excel.Excel.PivotItem
+          - 'excel!Excel.PivotItem:class'
         description: ''
       parameters:
         - id: name
           description: Name of the PivotItem to be retrieved.
           type:
             - string
-  - uid: excel.Excel.PivotItemCollection.getItemOrNullObject
+  - uid: 'excel!Excel.PivotItemCollection#getItemOrNullObject:member(1)'
     summary: |-
       Gets a PivotItem by name. If the PivotItem does not exist, will return a null object.
 
@@ -88,14 +88,14 @@ items:
       content: 'getItemOrNullObject(name: string): Excel.PivotItem;'
       return:
         type:
-          - excel.Excel.PivotItem
+          - 'excel!Excel.PivotItem:class'
         description: ''
       parameters:
         - id: name
           description: Name of the PivotItem to be retrieved.
           type:
             - string
-  - uid: excel.Excel.PivotItemCollection.items
+  - uid: 'excel!Excel.PivotItemCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -106,8 +106,8 @@ items:
       content: 'readonly items: Excel.PivotItem[];'
       return:
         type:
-          - 'Excel.PivotItem[]'
-  - uid: excel.Excel.PivotItemCollection.load
+          - 'excel!Excel.PivotItemCollection#items~0:complex'
+  - uid: 'excel!Excel.PivotItemCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -140,14 +140,14 @@ items:
         Excel.PivotItemCollection;
       return:
         type:
-          - excel.Excel.PivotItemCollection
+          - 'excel!Excel.PivotItemCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.PivotItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.PivotItemCollection.load_1
+            - 'excel!Excel.PivotItemCollection#load~0:complex'
+  - uid: 'excel!Excel.PivotItemCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -160,14 +160,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.PivotItemCollection;'
       return:
         type:
-          - excel.Excel.PivotItemCollection
+          - 'excel!Excel.PivotItemCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.PivotItemCollection.load_2
+  - uid: 'excel!Excel.PivotItemCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -177,14 +177,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.PivotItemCollection;'
       return:
         type:
-          - excel.Excel.PivotItemCollection
+          - 'excel!Excel.PivotItemCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
-  - uid: excel.Excel.PivotItemCollection.toJSON
+            - 'excel!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.PivotItemCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -200,5 +200,48 @@ items:
       content: 'toJSON(): Excel.Interfaces.PivotItemCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.PivotItemCollectionData
+          - 'excel!Excel.Interfaces.PivotItemCollectionData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.PivotItemCollection#getCount~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.PivotItem:class'
+    name: Excel.PivotItem
+  - uid: 'excel!Excel.PivotItemCollection#items~0:complex'
+    name: 'Excel.PivotItem[]'
+    fullName: 'Excel.PivotItem[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.PivotItem:class'
+        name: Excel.PivotItem
+        fullName: Excel.PivotItem
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.PivotItemCollection:class'
+    name: Excel.PivotItemCollection
+  - uid: 'excel!Excel.PivotItemCollection#load~0:complex'
+    name: Excel.Interfaces.PivotItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.PivotItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PivotItemCollectionLoadOptions:interface'
+        name: Excel.Interfaces.PivotItemCollectionLoadOptions
+        fullName: Excel.Interfaces.PivotItemCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+        name: Excel.Interfaces.CollectionLoadOptions
+        fullName: Excel.Interfaces.CollectionLoadOptions
+  - uid: 'excel!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.Interfaces.PivotItemCollectionData:interface'
+    name: Excel.Interfaces.PivotItemCollectionData

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Application
+  - uid: 'visio!Visio.Application:class'
     summary: |-
       Represents the Application.
 
@@ -11,21 +11,21 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: visio
+      - 'visio!OfficeExtension.ClientObject:class'
+    package: visio!
     children:
-      - visio.Visio.Application.context
-      - visio.Visio.Application.load
-      - visio.Visio.Application.load_1
-      - visio.Visio.Application.load_2
-      - visio.Visio.Application.set
-      - visio.Visio.Application.set_1
-      - visio.Visio.Application.showBorders
-      - visio.Visio.Application.showToolbar
-      - visio.Visio.Application.showToolbar_1
-      - visio.Visio.Application.showToolbars
-      - visio.Visio.Application.toJSON
-  - uid: visio.Visio.Application.context
+      - 'visio!Visio.Application#context:member'
+      - 'visio!Visio.Application#load:member(1)'
+      - 'visio!Visio.Application#load:member(2)'
+      - 'visio!Visio.Application#load:member(3)'
+      - 'visio!Visio.Application#set:member(1)'
+      - 'visio!Visio.Application#set:member(2)'
+      - 'visio!Visio.Application#showBorders:member'
+      - 'visio!Visio.Application#showToolbar:member(1)'
+      - 'visio!Visio.Application#showToolbar:member(2)'
+      - 'visio!Visio.Application#showToolbars:member'
+      - 'visio!Visio.Application#toJSON:member(1)'
+  - uid: 'visio!Visio.Application#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -38,8 +38,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - visio.Visio.RequestContext
-  - uid: visio.Visio.Application.load
+          - 'visio!Visio.RequestContext:class'
+  - uid: 'visio!Visio.Application#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -70,14 +70,14 @@ items:
       content: 'load(option?: Visio.Interfaces.ApplicationLoadOptions): Visio.Application;'
       return:
         type:
-          - visio.Visio.Application
+          - 'visio!Visio.Application:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - visio.Visio.Interfaces.ApplicationLoadOptions
-  - uid: visio.Visio.Application.load_1
+            - 'visio!Visio.Interfaces.ApplicationLoadOptions:interface'
+  - uid: 'visio!Visio.Application#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -90,14 +90,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Visio.Application;'
       return:
         type:
-          - visio.Visio.Application
+          - 'visio!Visio.Application:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: visio.Visio.Application.load_2
+  - uid: 'visio!Visio.Application#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -110,7 +110,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Application;'
       return:
         type:
-          - visio.Visio.Application
+          - 'visio!Visio.Application:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -119,7 +119,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: visio.Visio.Application.set
+  - uid: 'visio!Visio.Application#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -144,12 +144,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.ApplicationUpdateData
+            - 'visio!Visio.Interfaces.ApplicationUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: visio.Visio.Application.set_1
+            - 'visio!OfficeExtension.UpdateOptions:interface'
+  - uid: 'visio!Visio.Application#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -166,8 +166,8 @@ items:
         - id: properties
           description: ''
           type:
-            - visio.Visio.Application
-  - uid: visio.Visio.Application.showBorders
+            - 'visio!Visio.Application:class'
+  - uid: 'visio!Visio.Application#showBorders:member'
     summary: |-
       Show or hide the iFrame application borders.
 
@@ -200,7 +200,7 @@ items:
               }
           });
           ```
-  - uid: visio.Visio.Application.showToolbar
+  - uid: 'visio!Visio.Application#showToolbar:member(1)'
     summary: |-
       Sets the visibility of a specific toolbar in the application.
 
@@ -220,12 +220,12 @@ items:
         - id: id
           description: The type of the Toolbar
           type:
-            - visio.Visio.ToolBarType
+            - 'visio!Visio.ToolBarType:enum'
         - id: show
           description: Whether the toolbar is visibile or not.
           type:
             - boolean
-  - uid: visio.Visio.Application.showToolbar_1
+  - uid: 'visio!Visio.Application#showToolbar:member(2)'
     summary: |-
       Sets the visibility of a specific toolbar in the application.
 
@@ -250,7 +250,7 @@ items:
           description: Whether the toolbar is visibile or not.
           type:
             - boolean
-  - uid: visio.Visio.Application.showToolbars
+  - uid: 'visio!Visio.Application#showToolbars:member'
     summary: |-
       Show or hide the standard toolbars.
 
@@ -265,7 +265,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Application.toJSON
+  - uid: 'visio!Visio.Application#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -281,5 +281,22 @@ items:
       content: 'toJSON(): Visio.Interfaces.ApplicationData;'
       return:
         type:
-          - visio.Visio.Interfaces.ApplicationData
+          - 'visio!Visio.Interfaces.ApplicationData:interface'
         description: ''
+references:
+  - uid: 'visio!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'visio!Visio.RequestContext:class'
+    name: RequestContext
+  - uid: 'visio!Visio.Application:class'
+    name: Visio.Application
+  - uid: 'visio!Visio.Interfaces.ApplicationLoadOptions:interface'
+    name: Visio.Interfaces.ApplicationLoadOptions
+  - uid: 'visio!Visio.Interfaces.ApplicationUpdateData:interface'
+    name: Interfaces.ApplicationUpdateData
+  - uid: 'visio!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'visio!Visio.ToolBarType:enum'
+    name: Visio.ToolBarType
+  - uid: 'visio!Visio.Interfaces.ApplicationData:interface'
+    name: Visio.Interfaces.ApplicationData

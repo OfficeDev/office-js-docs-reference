@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.RichTextData
+  - uid: 'onenote!OneNote.Interfaces.RichTextData:interface'
     summary: An interface describing the data returned by calling "richText.toJSON()".
     name: OneNote.Interfaces.RichTextData
     fullName: OneNote.Interfaces.RichTextData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.RichTextData.id
-      - onenote.OneNote.Interfaces.RichTextData.languageId
-      - onenote.OneNote.Interfaces.RichTextData.text
-  - uid: onenote.OneNote.Interfaces.RichTextData.id
+      - 'onenote!OneNote.Interfaces.RichTextData#id:member'
+      - 'onenote!OneNote.Interfaces.RichTextData#languageId:member'
+      - 'onenote!OneNote.Interfaces.RichTextData#text:member'
+  - uid: 'onenote!OneNote.Interfaces.RichTextData#id:member'
     summary: |-
       Gets the ID of the RichText object. Read-only.
 
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.RichTextData.languageId
+  - uid: 'onenote!OneNote.Interfaces.RichTextData#languageId:member'
     summary: |-
       The language id of the text. Read-only.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.RichTextData.text
+  - uid: 'onenote!OneNote.Interfaces.RichTextData#text:member'
     summary: |-
       Gets the text content of the RichText object. Read-only.
 

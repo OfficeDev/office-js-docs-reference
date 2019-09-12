@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Outline
+  - uid: 'onenote!OneNote.Outline:class'
     summary: |-
       Represents a container for Paragraph objects.
 
@@ -11,25 +11,25 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: onenote
+      - 'onenote!OfficeExtension.ClientObject:class'
+    package: onenote!
     children:
-      - onenote.OneNote.Outline.appendHtml
-      - onenote.OneNote.Outline.appendImage
-      - onenote.OneNote.Outline.appendRichText
-      - onenote.OneNote.Outline.appendTable
-      - onenote.OneNote.Outline.context
-      - onenote.OneNote.Outline.id
-      - onenote.OneNote.Outline.isTitle
-      - onenote.OneNote.Outline.load
-      - onenote.OneNote.Outline.load_1
-      - onenote.OneNote.Outline.load_2
-      - onenote.OneNote.Outline.pageContent
-      - onenote.OneNote.Outline.paragraphs
-      - onenote.OneNote.Outline.toJSON
-      - onenote.OneNote.Outline.track
-      - onenote.OneNote.Outline.untrack
-  - uid: onenote.OneNote.Outline.appendHtml
+      - 'onenote!OneNote.Outline#appendHtml:member(1)'
+      - 'onenote!OneNote.Outline#appendImage:member(1)'
+      - 'onenote!OneNote.Outline#appendRichText:member(1)'
+      - 'onenote!OneNote.Outline#appendTable:member(1)'
+      - 'onenote!OneNote.Outline#context:member'
+      - 'onenote!OneNote.Outline#id:member'
+      - 'onenote!OneNote.Outline#isTitle:member(1)'
+      - 'onenote!OneNote.Outline#load:member(1)'
+      - 'onenote!OneNote.Outline#load:member(2)'
+      - 'onenote!OneNote.Outline#load:member(3)'
+      - 'onenote!OneNote.Outline#pageContent:member'
+      - 'onenote!OneNote.Outline#paragraphs:member'
+      - 'onenote!OneNote.Outline#toJSON:member(1)'
+      - 'onenote!OneNote.Outline#track:member(1)'
+      - 'onenote!OneNote.Outline#untrack:member(1)'
+  - uid: 'onenote!OneNote.Outline#appendHtml:member(1)'
     summary: |-
       Adds the specified HTML to the bottom of the Outline.
 
@@ -92,7 +92,7 @@ items:
             the OneNote add-ins JavaScript API.
           type:
             - string
-  - uid: onenote.OneNote.Outline.appendImage
+  - uid: 'onenote!OneNote.Outline#appendImage:member(1)'
     summary: |-
       Adds the specified image to the bottom of the Outline.
 
@@ -106,7 +106,7 @@ items:
       content: 'appendImage(base64EncodedImage: string, width: number, height: number): OneNote.Image;'
       return:
         type:
-          - onenote.OneNote.Image
+          - 'onenote!OneNote.Image:class'
         description: ''
       parameters:
         - id: base64EncodedImage
@@ -121,7 +121,7 @@ items:
           description: Optional. Height in the unit of Points. The default value is null and image height will be respected.
           type:
             - number
-  - uid: onenote.OneNote.Outline.appendRichText
+  - uid: 'onenote!OneNote.Outline#appendRichText:member(1)'
     summary: |-
       Adds the specified text to the bottom of the Outline.
 
@@ -135,14 +135,14 @@ items:
       content: 'appendRichText(paragraphText: string): OneNote.RichText;'
       return:
         type:
-          - onenote.OneNote.RichText
+          - 'onenote!OneNote.RichText:class'
         description: ''
       parameters:
         - id: paragraphText
           description: HTML string to append.
           type:
             - string
-  - uid: onenote.OneNote.Outline.appendTable
+  - uid: 'onenote!OneNote.Outline#appendTable:member(1)'
     summary: |-
       Adds a table with the specified number of rows and columns to the bottom of the outline.
 
@@ -156,7 +156,7 @@ items:
       content: 'appendTable(rowCount: number, columnCount: number, values?: string[][]): OneNote.Table;'
       return:
         type:
-          - onenote.OneNote.Table
+          - 'onenote!OneNote.Table:class'
         description: |-
 
 
@@ -209,7 +209,7 @@ items:
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
-  - uid: onenote.OneNote.Outline.context
+  - uid: 'onenote!OneNote.Outline#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -222,8 +222,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
-  - uid: onenote.OneNote.Outline.id
+          - 'onenote!OneNote.RequestContext:class'
+  - uid: 'onenote!OneNote.Outline#id:member'
     summary: |-
       Gets the ID of the Outline object. Read-only.
 
@@ -238,7 +238,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Outline.isTitle
+  - uid: 'onenote!OneNote.Outline#isTitle:member(1)'
     summary: |-
       Check if the outline is title outline.
 
@@ -252,9 +252,9 @@ items:
       content: 'isTitle(): OfficeExtension.ClientResult<boolean>;'
       return:
         type:
-          - OfficeExtension.ClientResult<boolean>
+          - 'onenote!OneNote.Outline#isTitle~0:complex'
         description: ''
-  - uid: onenote.OneNote.Outline.load
+  - uid: 'onenote!OneNote.Outline#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -285,14 +285,14 @@ items:
       content: 'load(option?: OneNote.Interfaces.OutlineLoadOptions): OneNote.Outline;'
       return:
         type:
-          - onenote.OneNote.Outline
+          - 'onenote!OneNote.Outline:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.OutlineLoadOptions
-  - uid: onenote.OneNote.Outline.load_1
+            - 'onenote!OneNote.Interfaces.OutlineLoadOptions:interface'
+  - uid: 'onenote!OneNote.Outline#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -305,14 +305,14 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.Outline;'
       return:
         type:
-          - onenote.OneNote.Outline
+          - 'onenote!OneNote.Outline:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.Outline.load_2
+  - uid: 'onenote!OneNote.Outline#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -325,7 +325,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Outline;'
       return:
         type:
-          - onenote.OneNote.Outline
+          - 'onenote!OneNote.Outline:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -334,7 +334,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: onenote.OneNote.Outline.pageContent
+  - uid: 'onenote!OneNote.Outline#pageContent:member'
     summary: >-
       Gets the PageContent object that contains the Outline. This object defines the position of the Outline on the
       page. Read-only.
@@ -350,8 +350,8 @@ items:
       content: 'readonly pageContent: OneNote.PageContent;'
       return:
         type:
-          - onenote.OneNote.PageContent
-  - uid: onenote.OneNote.Outline.paragraphs
+          - 'onenote!OneNote.PageContent:class'
+  - uid: 'onenote!OneNote.Outline#paragraphs:member'
     summary: |-
       Gets the collection of Paragraph objects in the Outline. Read-only.
 
@@ -365,8 +365,8 @@ items:
       content: 'readonly paragraphs: OneNote.ParagraphCollection;'
       return:
         type:
-          - onenote.OneNote.ParagraphCollection
-  - uid: onenote.OneNote.Outline.toJSON
+          - 'onenote!OneNote.ParagraphCollection:class'
+  - uid: 'onenote!OneNote.Outline#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -382,9 +382,9 @@ items:
       content: 'toJSON(): OneNote.Interfaces.OutlineData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.OutlineData
+          - 'onenote!OneNote.Interfaces.OutlineData:interface'
         description: ''
-  - uid: onenote.OneNote.Outline.track
+  - uid: 'onenote!OneNote.Outline#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -400,9 +400,9 @@ items:
       content: 'track(): OneNote.Outline;'
       return:
         type:
-          - onenote.OneNote.Outline
+          - 'onenote!OneNote.Outline:class'
         description: ''
-  - uid: onenote.OneNote.Outline.untrack
+  - uid: 'onenote!OneNote.Outline#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -417,5 +417,35 @@ items:
       content: 'untrack(): OneNote.Outline;'
       return:
         type:
-          - onenote.OneNote.Outline
+          - 'onenote!OneNote.Outline:class'
         description: ''
+references:
+  - uid: 'onenote!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'onenote!OneNote.Image:class'
+    name: OneNote.Image
+  - uid: 'onenote!OneNote.RichText:class'
+    name: OneNote.RichText
+  - uid: 'onenote!OneNote.Table:class'
+    name: OneNote.Table
+  - uid: 'onenote!OneNote.RequestContext:class'
+    name: RequestContext
+  - uid: 'onenote!OneNote.Outline#isTitle~0:complex'
+    name: OfficeExtension.ClientResult<boolean>
+    fullName: OfficeExtension.ClientResult<boolean>
+    spec.typeScript:
+      - uid: 'onenote!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <boolean>
+        fullName: <boolean>
+  - uid: 'onenote!OneNote.Outline:class'
+    name: OneNote.Outline
+  - uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions:interface'
+    name: OneNote.Interfaces.OutlineLoadOptions
+  - uid: 'onenote!OneNote.PageContent:class'
+    name: OneNote.PageContent
+  - uid: 'onenote!OneNote.ParagraphCollection:class'
+    name: OneNote.ParagraphCollection
+  - uid: 'onenote!OneNote.Interfaces.OutlineData:interface'
+    name: OneNote.Interfaces.OutlineData

@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotTableData
+  - uid: 'excel!Excel.Interfaces.PivotTableData:interface'
     summary: An interface describing the data returned by calling "pivotTable.toJSON()".
     name: Excel.Interfaces.PivotTableData
     fullName: Excel.Interfaces.PivotTableData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotTableData.id
-      - excel.Excel.Interfaces.PivotTableData.name
-  - uid: excel.Excel.Interfaces.PivotTableData.id
+      - 'excel!Excel.Interfaces.PivotTableData#id:member'
+      - 'excel!Excel.Interfaces.PivotTableData#name:member'
+  - uid: 'excel!Excel.Interfaces.PivotTableData#id:member'
     summary: |-
       Id of the PivotTable. Read-only.
 
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.PivotTableData.name
+  - uid: 'excel!Excel.Interfaces.PivotTableData#name:member'
     summary: |-
       Name of the PivotTable.
 

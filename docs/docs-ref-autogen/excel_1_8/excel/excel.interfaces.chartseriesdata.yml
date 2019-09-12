@@ -1,40 +1,40 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartSeriesData
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData:interface'
     summary: An interface describing the data returned by calling "chartSeries.toJSON()".
     name: Excel.Interfaces.ChartSeriesData
     fullName: Excel.Interfaces.ChartSeriesData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartSeriesData.axisGroup
-      - excel.Excel.Interfaces.ChartSeriesData.chartType
-      - excel.Excel.Interfaces.ChartSeriesData.dataLabels
-      - excel.Excel.Interfaces.ChartSeriesData.doughnutHoleSize
-      - excel.Excel.Interfaces.ChartSeriesData.explosion
-      - excel.Excel.Interfaces.ChartSeriesData.filtered
-      - excel.Excel.Interfaces.ChartSeriesData.firstSliceAngle
-      - excel.Excel.Interfaces.ChartSeriesData.format
-      - excel.Excel.Interfaces.ChartSeriesData.gapWidth
-      - excel.Excel.Interfaces.ChartSeriesData.hasDataLabels
-      - excel.Excel.Interfaces.ChartSeriesData.invertIfNegative
-      - excel.Excel.Interfaces.ChartSeriesData.markerBackgroundColor
-      - excel.Excel.Interfaces.ChartSeriesData.markerForegroundColor
-      - excel.Excel.Interfaces.ChartSeriesData.markerSize
-      - excel.Excel.Interfaces.ChartSeriesData.markerStyle
-      - excel.Excel.Interfaces.ChartSeriesData.name
-      - excel.Excel.Interfaces.ChartSeriesData.overlap
-      - excel.Excel.Interfaces.ChartSeriesData.plotOrder
-      - excel.Excel.Interfaces.ChartSeriesData.points
-      - excel.Excel.Interfaces.ChartSeriesData.secondPlotSize
-      - excel.Excel.Interfaces.ChartSeriesData.showShadow
-      - excel.Excel.Interfaces.ChartSeriesData.smooth
-      - excel.Excel.Interfaces.ChartSeriesData.splitType
-      - excel.Excel.Interfaces.ChartSeriesData.trendlines
-      - excel.Excel.Interfaces.ChartSeriesData.varyByCategories
-  - uid: excel.Excel.Interfaces.ChartSeriesData.axisGroup
+      - 'excel!Excel.Interfaces.ChartSeriesData#axisGroup:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#chartType:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#dataLabels:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#doughnutHoleSize:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#explosion:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#filtered:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#firstSliceAngle:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#format:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#gapWidth:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#hasDataLabels:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#invertIfNegative:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#markerBackgroundColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#markerForegroundColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#markerSize:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#markerStyle:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#name:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#overlap:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#plotOrder:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#points:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#secondPlotSize:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#showShadow:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#smooth:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#splitType:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#trendlines:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#varyByCategories:member'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#axisGroup:member'
     summary: |-
       Returns or sets the group for the specified series. Read/Write
 
@@ -48,8 +48,8 @@ items:
       content: 'axisGroup?: Excel.ChartAxisGroup | "Primary" | "Secondary";'
       return:
         type:
-          - Excel.ChartAxisGroup | "Primary" | "Secondary"
-  - uid: excel.Excel.Interfaces.ChartSeriesData.chartType
+          - 'excel!Excel.Interfaces.ChartSeriesData#axisGroup~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#chartType:member'
     summary: |-
       Represents the chart type of a series. See Excel.ChartType for details.
 
@@ -77,23 +77,8 @@ items:
         "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
       return:
         type:
-          - >-
-            Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered"
-            | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" |
-            "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" |
-            "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" |
-            "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" |
-            "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" |
-            "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" |
-            "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" |
-            "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" |
-            "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered"
-            | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" |
-            "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" |
-            "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" |
-            "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" |
-            "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
-  - uid: excel.Excel.Interfaces.ChartSeriesData.dataLabels
+          - 'excel!Excel.Interfaces.ChartSeriesData#chartType~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#dataLabels:member'
     summary: |-
       Represents a collection of all dataLabels in the series.
 
@@ -107,8 +92,8 @@ items:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelsData
-  - uid: excel.Excel.Interfaces.ChartSeriesData.doughnutHoleSize
+          - 'excel!Excel.Interfaces.ChartDataLabelsData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#doughnutHoleSize:member'
     summary: >-
       Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnutExploded charts. Throws an
       invalid argument exception on invalid charts.
@@ -125,7 +110,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesData.explosion
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#explosion:member'
     summary: >-
       Returns or sets the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no
       explosion (the tip of the slice is in the center of the pie). Read/Write.
@@ -142,7 +127,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesData.filtered
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#filtered:member'
     summary: |-
       Boolean value representing if the series is filtered or not. Not applicable for surface charts.
 
@@ -157,7 +142,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesData.firstSliceAngle
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#firstSliceAngle:member'
     summary: >-
       Returns or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical).
       Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
@@ -174,7 +159,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesData.format
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#format:member'
     summary: |-
       Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
 
@@ -188,8 +173,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartSeriesFormatData
-  - uid: excel.Excel.Interfaces.ChartSeriesData.gapWidth
+          - 'excel!Excel.Interfaces.ChartSeriesFormatData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#gapWidth:member'
     summary: >-
       Represents the gap width of a chart series. Only valid on bar and column charts, as well as specific classes of
       line and pie charts. Throws an invalid argument exception on invalid charts.
@@ -206,7 +191,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesData.hasDataLabels
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#hasDataLabels:member'
     summary: |-
       Boolean value representing if the series has data labels or not.
 
@@ -221,7 +206,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesData.invertIfNegative
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#invertIfNegative:member'
     summary: |-
       True if Microsoft Excel inverts the pattern in the item when it corresponds to a negative number. Read/Write.
 
@@ -236,7 +221,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesData.markerBackgroundColor
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#markerBackgroundColor:member'
     summary: |-
       Represents markers background color of a chart series.
 
@@ -251,7 +236,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartSeriesData.markerForegroundColor
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#markerForegroundColor:member'
     summary: |-
       Represents markers foreground color of a chart series.
 
@@ -266,7 +251,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartSeriesData.markerSize
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#markerSize:member'
     summary: |-
       Represents marker size of a chart series.
 
@@ -281,7 +266,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesData.markerStyle
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#markerStyle:member'
     summary: |-
       Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
 
@@ -297,10 +282,8 @@ items:
         "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture";
       return:
         type:
-          - >-
-            Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star"
-            | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
-  - uid: excel.Excel.Interfaces.ChartSeriesData.name
+          - 'excel!Excel.Interfaces.ChartSeriesData#markerStyle~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#name:member'
     summary: |-
       Represents the name of a series in a chart.
 
@@ -315,7 +298,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartSeriesData.overlap
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#overlap:member'
     summary: >-
       Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and
       2-D column charts. Read/Write.
@@ -332,7 +315,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesData.plotOrder
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#plotOrder:member'
     summary: |-
       Represents the plot order of a chart series within the chart group.
 
@@ -347,7 +330,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesData.points
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#points:member'
     summary: |-
       Represents a collection of all points in the series. Read-only.
 
@@ -361,8 +344,8 @@ items:
       content: 'points?: Excel.Interfaces.ChartPointData[];'
       return:
         type:
-          - 'Excel.Interfaces.ChartPointData[]'
-  - uid: excel.Excel.Interfaces.ChartSeriesData.secondPlotSize
+          - 'excel!Excel.Interfaces.ChartSeriesData#points~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#secondPlotSize:member'
     summary: >-
       Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a
       percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write.
@@ -379,7 +362,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesData.showShadow
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#showShadow:member'
     summary: |-
       Boolean value representing if the series has a shadow or not.
 
@@ -394,7 +377,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesData.smooth
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#smooth:member'
     summary: |-
       Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
 
@@ -409,7 +392,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesData.splitType
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#splitType:member'
     summary: |-
       Returns or sets the way the two sections of either a pie of pie chart or a bar of pie chart are split. Read/Write.
 
@@ -425,8 +408,8 @@ items:
         "SplitByCustomSplit";
       return:
         type:
-          - Excel.ChartSplitType | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"
-  - uid: excel.Excel.Interfaces.ChartSeriesData.trendlines
+          - 'excel!Excel.Interfaces.ChartSeriesData#splitType~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#trendlines:member'
     summary: |-
       Represents a collection of trendlines in the series. Read-only.
 
@@ -440,8 +423,8 @@ items:
       content: 'trendlines?: Excel.Interfaces.ChartTrendlineData[];'
       return:
         type:
-          - 'Excel.Interfaces.ChartTrendlineData[]'
-  - uid: excel.Excel.Interfaces.ChartSeriesData.varyByCategories
+          - 'excel!Excel.Interfaces.ChartSeriesData#trendlines~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#varyByCategories:member'
     summary: >-
       True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one
       series. Read/Write.
@@ -458,3 +441,94 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#axisGroup~0:complex'
+    name: Excel.ChartAxisGroup | "Primary" | "Secondary"
+    fullName: Excel.ChartAxisGroup | "Primary" | "Secondary"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartAxisGroup:enum'
+        name: Excel.ChartAxisGroup
+        fullName: Excel.ChartAxisGroup
+      - name: ' | "Primary" | "Secondary"'
+        fullName: ' | "Primary" | "Secondary"'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#chartType~0:complex'
+    name: >-
+      Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" |
+      "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" |
+      "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" |
+      "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" |
+      "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" |
+      "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" |
+      "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" |
+      "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100"
+      | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" |
+      "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" |
+      "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked"
+      | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" |
+      "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" |
+      "Waterfall" | "Sunburst" | "Funnel"
+    fullName: >-
+      Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" |
+      "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" |
+      "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" |
+      "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" |
+      "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" |
+      "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" |
+      "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" |
+      "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100"
+      | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" |
+      "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" |
+      "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked"
+      | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" |
+      "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" |
+      "Waterfall" | "Sunburst" | "Funnel"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartType:enum'
+        name: Excel.ChartType
+        fullName: Excel.ChartType
+      - name: ' | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"'
+        fullName: ' | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"'
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsData:interface'
+    name: Excel.Interfaces.ChartDataLabelsData
+  - uid: 'excel!Excel.Interfaces.ChartSeriesFormatData:interface'
+    name: Excel.Interfaces.ChartSeriesFormatData
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#markerStyle~0:complex'
+    name: >-
+      Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star" |
+      "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
+    fullName: >-
+      Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star" |
+      "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartMarkerStyle:enum'
+        name: Excel.ChartMarkerStyle
+        fullName: Excel.ChartMarkerStyle
+      - name: ' | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"'
+        fullName: ' | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#points~0:complex'
+    name: 'Excel.Interfaces.ChartPointData[]'
+    fullName: 'Excel.Interfaces.ChartPointData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ChartPointData:interface'
+        name: Excel.Interfaces.ChartPointData
+        fullName: Excel.Interfaces.ChartPointData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#splitType~0:complex'
+    name: Excel.ChartSplitType | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"
+    fullName: Excel.ChartSplitType | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartSplitType:enum'
+        name: Excel.ChartSplitType
+        fullName: Excel.ChartSplitType
+      - name: ' | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"'
+        fullName: ' | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#trendlines~0:complex'
+    name: 'Excel.Interfaces.ChartTrendlineData[]'
+    fullName: 'Excel.Interfaces.ChartTrendlineData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ChartTrendlineData:interface'
+        name: Excel.Interfaces.ChartTrendlineData
+        fullName: Excel.Interfaces.ChartTrendlineData
+      - name: '[]'
+        fullName: '[]'

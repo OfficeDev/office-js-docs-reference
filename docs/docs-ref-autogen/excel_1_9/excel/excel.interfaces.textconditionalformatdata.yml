@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TextConditionalFormatData
+  - uid: 'excel!Excel.Interfaces.TextConditionalFormatData:interface'
     summary: An interface describing the data returned by calling "textConditionalFormat.toJSON()".
     name: Excel.Interfaces.TextConditionalFormatData
     fullName: Excel.Interfaces.TextConditionalFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TextConditionalFormatData.format
-      - excel.Excel.Interfaces.TextConditionalFormatData.rule
-  - uid: excel.Excel.Interfaces.TextConditionalFormatData.format
+      - 'excel!Excel.Interfaces.TextConditionalFormatData#format:member'
+      - 'excel!Excel.Interfaces.TextConditionalFormatData#rule:member'
+  - uid: 'excel!Excel.Interfaces.TextConditionalFormatData#format:member'
     summary: >-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
       Read-only.
@@ -27,8 +27,8 @@ items:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeFormatData
-  - uid: excel.Excel.Interfaces.TextConditionalFormatData.rule
+          - 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
+  - uid: 'excel!Excel.Interfaces.TextConditionalFormatData#rule:member'
     summary: |-
       The rule of the conditional format.
 
@@ -42,4 +42,9 @@ items:
       content: 'rule?: Excel.ConditionalTextComparisonRule;'
       return:
         type:
-          - excel.Excel.ConditionalTextComparisonRule
+          - 'excel!Excel.ConditionalTextComparisonRule:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
+    name: Excel.Interfaces.ConditionalRangeFormatData
+  - uid: 'excel!Excel.ConditionalTextComparisonRule:interface'
+    name: Excel.ConditionalTextComparisonRule

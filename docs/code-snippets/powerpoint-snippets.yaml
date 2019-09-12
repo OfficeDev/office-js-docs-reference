@@ -1,4 +1,4 @@
-PowerPoint.createPresentation:
+PowerPoint.createPresentation:function(1):
   - |-
     var myFile = document.getElementById("file");
     var reader = new FileReader();

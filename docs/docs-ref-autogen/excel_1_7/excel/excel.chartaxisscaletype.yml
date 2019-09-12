@@ -1,24 +1,24 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartAxisScaleType
+  - uid: 'excel!Excel.ChartAxisScaleType:enum'
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartAxisScaleType
     fullName: Excel.ChartAxisScaleType
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartAxisScaleType.linear
-      - excel.Excel.ChartAxisScaleType.logarithmic
-  - uid: excel.Excel.ChartAxisScaleType.linear
+      - 'excel!Excel.ChartAxisScaleType.linear:member'
+      - 'excel!Excel.ChartAxisScaleType.logarithmic:member'
+  - uid: 'excel!Excel.ChartAxisScaleType.linear:member'
     name: linear
     fullName: linear
     langs:
       - typeScript
     type: field
     numericValue: '"Linear"'
-  - uid: excel.Excel.ChartAxisScaleType.logarithmic
+  - uid: 'excel!Excel.ChartAxisScaleType.logarithmic:member'
     name: logarithmic
     fullName: logarithmic
     langs:

@@ -1,64 +1,64 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.TapObjectType
+  - uid: 'word!Word.TapObjectType:enum'
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     name: Word.TapObjectType
     fullName: Word.TapObjectType
     langs:
       - typeScript
     type: enum
-    package: word
+    package: word!
     children:
-      - word.Word.TapObjectType.chart
-      - word.Word.TapObjectType.image
-      - word.Word.TapObjectType.ole
-      - word.Word.TapObjectType.slide
-      - word.Word.TapObjectType.smartArt
-      - word.Word.TapObjectType.table
-      - word.Word.TapObjectType.text
-  - uid: word.Word.TapObjectType.chart
+      - 'word!Word.TapObjectType.chart:member'
+      - 'word!Word.TapObjectType.image:member'
+      - 'word!Word.TapObjectType.ole:member'
+      - 'word!Word.TapObjectType.slide:member'
+      - 'word!Word.TapObjectType.smartArt:member'
+      - 'word!Word.TapObjectType.table:member'
+      - 'word!Word.TapObjectType.text:member'
+  - uid: 'word!Word.TapObjectType.chart:member'
     name: chart
     fullName: chart
     langs:
       - typeScript
     type: field
     numericValue: '"Chart"'
-  - uid: word.Word.TapObjectType.image
+  - uid: 'word!Word.TapObjectType.image:member'
     name: image
     fullName: image
     langs:
       - typeScript
     type: field
     numericValue: '"Image"'
-  - uid: word.Word.TapObjectType.ole
+  - uid: 'word!Word.TapObjectType.ole:member'
     name: ole
     fullName: ole
     langs:
       - typeScript
     type: field
     numericValue: '"OLE"'
-  - uid: word.Word.TapObjectType.slide
+  - uid: 'word!Word.TapObjectType.slide:member'
     name: slide
     fullName: slide
     langs:
       - typeScript
     type: field
     numericValue: '"Slide"'
-  - uid: word.Word.TapObjectType.smartArt
+  - uid: 'word!Word.TapObjectType.smartArt:member'
     name: smartArt
     fullName: smartArt
     langs:
       - typeScript
     type: field
     numericValue: '"SmartArt"'
-  - uid: word.Word.TapObjectType.table
+  - uid: 'word!Word.TapObjectType.table:member'
     name: table
     fullName: table
     langs:
       - typeScript
     type: field
     numericValue: '"Table"'
-  - uid: word.Word.TapObjectType.text
+  - uid: 'word!Word.TapObjectType.text:member'
     name: text
     fullName: text
     langs:

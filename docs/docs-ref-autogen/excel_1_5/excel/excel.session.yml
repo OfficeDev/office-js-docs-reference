@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Session
+  - uid: 'excel!Excel.Session:class'
     summary: Provides connection session for a remote workbook.
     name: Excel.Session
     fullName: Excel.Session
     langs:
       - typeScript
     type: class
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Session.(constructor)
-      - excel.Excel.Session.close
-  - uid: excel.Excel.Session.(constructor)
+      - 'excel!Excel.Session:constructor(1)'
+      - 'excel!Excel.Session#close:member(1)'
+  - uid: 'excel!Excel.Session:constructor(1)'
     summary: Constructs a new instance of the `Session` class
     name: '(constructor)(workbookUrl, requestHeaders, persisted)'
     fullName: '(constructor)(workbookUrl, requestHeaders, persisted)'
@@ -39,7 +39,7 @@ items:
           description: ''
           type:
             - boolean
-  - uid: excel.Excel.Session.close
+  - uid: 'excel!Excel.Session#close:member(1)'
     summary: Close the session.
     name: close()
     fullName: close()
@@ -50,5 +50,15 @@ items:
       content: 'close(): Promise<void>;'
       return:
         type:
-          - Promise<void>
+          - 'excel!Excel.Session#close~0:complex'
         description: ''
+references:
+  - uid: 'excel!Excel.Session#close~0:complex'
+    name: Promise<void>
+    fullName: Promise<void>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <void>
+        fullName: <void>

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.MeetingSuggestion
+  - uid: 'outlook!Office.MeetingSuggestion:interface'
     summary: >-
       Represents a suggested meeting found in an item. Read mode only.
 
@@ -50,15 +50,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.MeetingSuggestion.attendees
-      - outlook.Office.MeetingSuggestion.end
-      - outlook.Office.MeetingSuggestion.location
-      - outlook.Office.MeetingSuggestion.meetingString
-      - outlook.Office.MeetingSuggestion.start
-      - outlook.Office.MeetingSuggestion.subject
-  - uid: outlook.Office.MeetingSuggestion.attendees
+      - 'outlook!Office.MeetingSuggestion#attendees:member'
+      - 'outlook!Office.MeetingSuggestion#end:member'
+      - 'outlook!Office.MeetingSuggestion#location:member'
+      - 'outlook!Office.MeetingSuggestion#meetingString:member'
+      - 'outlook!Office.MeetingSuggestion#start:member'
+      - 'outlook!Office.MeetingSuggestion#subject:member'
+  - uid: 'outlook!Office.MeetingSuggestion#attendees:member'
     summary: Gets the attendees for a suggested meeting.
     name: attendees
     fullName: attendees
@@ -69,8 +69,8 @@ items:
       content: 'attendees: EmailUser[];'
       return:
         type:
-          - 'EmailUser[]'
-  - uid: outlook.Office.MeetingSuggestion.end
+          - 'outlook!Office.MeetingSuggestion#attendees~0:complex'
+  - uid: 'outlook!Office.MeetingSuggestion#end:member'
     summary: Gets the date and time that a suggested meeting is to end.
     name: end
     fullName: end
@@ -82,7 +82,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.MeetingSuggestion.location
+  - uid: 'outlook!Office.MeetingSuggestion#location:member'
     summary: Gets the location of a suggested meeting.
     name: location
     fullName: location
@@ -94,7 +94,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.MeetingSuggestion.meetingString
+  - uid: 'outlook!Office.MeetingSuggestion#meetingString:member'
     summary: Gets a string that was identified as a meeting suggestion.
     name: meetingString
     fullName: meetingString
@@ -106,7 +106,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.MeetingSuggestion.start
+  - uid: 'outlook!Office.MeetingSuggestion#start:member'
     summary: Gets the date and time that a suggested meeting is to begin.
     name: start
     fullName: start
@@ -118,7 +118,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.MeetingSuggestion.subject
+  - uid: 'outlook!Office.MeetingSuggestion#subject:member'
     summary: Gets the subject of a suggested meeting.
     name: subject
     fullName: subject
@@ -130,3 +130,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'outlook!Office.MeetingSuggestion#attendees~0:complex'
+    name: 'EmailUser[]'
+    fullName: 'Office.EmailUser[]'
+    spec.typeScript:
+      - uid: 'outlook!Office.EmailUser:interface'
+        name: EmailUser
+        fullName: Office.EmailUser
+      - name: '[]'
+        fullName: '[]'

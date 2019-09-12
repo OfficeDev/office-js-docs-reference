@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartTrendlineLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLoadOptions:interface'
     summary: |-
       This object represents the attributes for a chart trendline object.
 
@@ -10,21 +10,21 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartTrendlineLoadOptions.$all
-      - excel.Excel.Interfaces.ChartTrendlineLoadOptions.backwardPeriod
-      - excel.Excel.Interfaces.ChartTrendlineLoadOptions.format
-      - excel.Excel.Interfaces.ChartTrendlineLoadOptions.forwardPeriod
-      - excel.Excel.Interfaces.ChartTrendlineLoadOptions.intercept
-      - excel.Excel.Interfaces.ChartTrendlineLoadOptions.label
-      - excel.Excel.Interfaces.ChartTrendlineLoadOptions.movingAveragePeriod
-      - excel.Excel.Interfaces.ChartTrendlineLoadOptions.name
-      - excel.Excel.Interfaces.ChartTrendlineLoadOptions.polynomialOrder
-      - excel.Excel.Interfaces.ChartTrendlineLoadOptions.showEquation
-      - excel.Excel.Interfaces.ChartTrendlineLoadOptions.showRSquared
-      - excel.Excel.Interfaces.ChartTrendlineLoadOptions.type
-  - uid: excel.Excel.Interfaces.ChartTrendlineLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#backwardPeriod:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#forwardPeriod:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#intercept:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#label:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#movingAveragePeriod:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#polynomialOrder:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#showEquation:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#showRSquared:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#type:member'
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -35,7 +35,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartTrendlineLoadOptions.backwardPeriod
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#backwardPeriod:member'
     summary: |-
       Represents the number of periods that the trendline extends backward.
 
@@ -50,7 +50,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartTrendlineLoadOptions.format
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#format:member'
     summary: |-
       Represents the formatting of a chart trendline.
 
@@ -64,8 +64,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartTrendlineFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTrendlineFormatLoadOptions
-  - uid: excel.Excel.Interfaces.ChartTrendlineLoadOptions.forwardPeriod
+          - 'excel!Excel.Interfaces.ChartTrendlineFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#forwardPeriod:member'
     summary: |-
       Represents the number of periods that the trendline extends forward.
 
@@ -80,7 +80,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartTrendlineLoadOptions.intercept
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#intercept:member'
     summary: >-
       Represents the intercept value of the trendline. Can be set to a numeric value or an empty string (for automatic
       values). The returned value is always a number.
@@ -97,7 +97,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartTrendlineLoadOptions.label
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#label:member'
     summary: |-
       Represents the label of a chart trendline.
 
@@ -111,8 +111,8 @@ items:
       content: 'label?: Excel.Interfaces.ChartTrendlineLabelLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTrendlineLabelLoadOptions
-  - uid: excel.Excel.Interfaces.ChartTrendlineLoadOptions.movingAveragePeriod
+          - 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#movingAveragePeriod:member'
     summary: |-
       Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type.
 
@@ -127,7 +127,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartTrendlineLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#name:member'
     summary: >-
       Represents the name of the trendline. Can be set to a string value, or can be set to null value represents
       automatic values. The returned value is always a string
@@ -144,7 +144,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartTrendlineLoadOptions.polynomialOrder
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#polynomialOrder:member'
     summary: |-
       Represents the order of a chart trendline. Only applicable for trendline with Polynomial type.
 
@@ -159,7 +159,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartTrendlineLoadOptions.showEquation
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#showEquation:member'
     summary: |-
       True if the equation for the trendline is displayed on the chart.
 
@@ -174,7 +174,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartTrendlineLoadOptions.showRSquared
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#showRSquared:member'
     summary: |-
       True if the R-squared for the trendline is displayed on the chart.
 
@@ -189,7 +189,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartTrendlineLoadOptions.type
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLoadOptions#type:member'
     summary: |-
       Represents the type of a chart trendline.
 
@@ -204,3 +204,8 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartTrendlineFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions:interface'
+    name: Excel.Interfaces.ChartTrendlineLabelLoadOptions

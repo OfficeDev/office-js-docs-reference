@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalTextOperator
+  - uid: 'excel!Excel.ConditionalTextOperator:enum'
     summary: |-
       Represents the operator of the text conditional format type.
 
@@ -10,42 +10,42 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalTextOperator.beginsWith
-      - excel.Excel.ConditionalTextOperator.contains
-      - excel.Excel.ConditionalTextOperator.endsWith
-      - excel.Excel.ConditionalTextOperator.invalid
-      - excel.Excel.ConditionalTextOperator.notContains
-  - uid: excel.Excel.ConditionalTextOperator.beginsWith
+      - 'excel!Excel.ConditionalTextOperator.beginsWith:member'
+      - 'excel!Excel.ConditionalTextOperator.contains:member'
+      - 'excel!Excel.ConditionalTextOperator.endsWith:member'
+      - 'excel!Excel.ConditionalTextOperator.invalid:member'
+      - 'excel!Excel.ConditionalTextOperator.notContains:member'
+  - uid: 'excel!Excel.ConditionalTextOperator.beginsWith:member'
     name: beginsWith
     fullName: beginsWith
     langs:
       - typeScript
     type: field
     numericValue: '"BeginsWith"'
-  - uid: excel.Excel.ConditionalTextOperator.contains
+  - uid: 'excel!Excel.ConditionalTextOperator.contains:member'
     name: contains
     fullName: contains
     langs:
       - typeScript
     type: field
     numericValue: '"Contains"'
-  - uid: excel.Excel.ConditionalTextOperator.endsWith
+  - uid: 'excel!Excel.ConditionalTextOperator.endsWith:member'
     name: endsWith
     fullName: endsWith
     langs:
       - typeScript
     type: field
     numericValue: '"EndsWith"'
-  - uid: excel.Excel.ConditionalTextOperator.invalid
+  - uid: 'excel!Excel.ConditionalTextOperator.invalid:member'
     name: invalid
     fullName: invalid
     langs:
       - typeScript
     type: field
     numericValue: '"Invalid"'
-  - uid: excel.Excel.ConditionalTextOperator.notContains
+  - uid: 'excel!Excel.ConditionalTextOperator.notContains:member'
     name: notContains
     fullName: notContains
     langs:

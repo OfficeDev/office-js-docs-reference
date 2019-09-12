@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotTableLoadOptions
+  - uid: 'excel!Excel.Interfaces.PivotTableLoadOptions:interface'
     summary: |-
       Represents an Excel PivotTable.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotTableLoadOptions.$all
-      - excel.Excel.Interfaces.PivotTableLoadOptions.id
-      - excel.Excel.Interfaces.PivotTableLoadOptions.name
-      - excel.Excel.Interfaces.PivotTableLoadOptions.worksheet
-  - uid: excel.Excel.Interfaces.PivotTableLoadOptions.$all
+      - 'excel!Excel.Interfaces.PivotTableLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.PivotTableLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.PivotTableLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.PivotTableLoadOptions#worksheet:member'
+  - uid: 'excel!Excel.Interfaces.PivotTableLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotTableLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.PivotTableLoadOptions#id:member'
     summary: |-
       Id of the PivotTable. Read-only.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotTableLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.PivotTableLoadOptions#name:member'
     summary: |-
       Name of the PivotTable.
 
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotTableLoadOptions.worksheet
+  - uid: 'excel!Excel.Interfaces.PivotTableLoadOptions#worksheet:member'
     summary: |-
       The worksheet containing the current PivotTable.
 
@@ -71,4 +71,7 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetLoadOptions
+          - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+    name: Excel.Interfaces.WorksheetLoadOptions

@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.PageViewUpdateData
+  - uid: 'visio!Visio.Interfaces.PageViewUpdateData:interface'
     summary: 'An interface for updating data on the PageView object, for use in "pageView.set(<!-- -->{ ... }<!-- -->)".'
     name: Visio.Interfaces.PageViewUpdateData
     fullName: Visio.Interfaces.PageViewUpdateData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.PageViewUpdateData.zoom
-  - uid: visio.Visio.Interfaces.PageViewUpdateData.zoom
+      - 'visio!Visio.Interfaces.PageViewUpdateData#zoom:member'
+  - uid: 'visio!Visio.Interfaces.PageViewUpdateData#zoom:member'
     summary: |-
       Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
 

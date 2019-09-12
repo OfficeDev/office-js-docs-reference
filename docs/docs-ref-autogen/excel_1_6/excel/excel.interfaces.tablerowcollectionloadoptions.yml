@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TableRowCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface'
     summary: >-
       Represents a collection of all the rows that are part of the table.
 
@@ -16,12 +16,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TableRowCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.TableRowCollectionLoadOptions.index
-      - excel.Excel.Interfaces.TableRowCollectionLoadOptions.values
-  - uid: excel.Excel.Interfaces.TableRowCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.TableRowCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.TableRowCollectionLoadOptions#index:member'
+      - 'excel!Excel.Interfaces.TableRowCollectionLoadOptions#values:member'
+  - uid: 'excel!Excel.Interfaces.TableRowCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableRowCollectionLoadOptions.index
+  - uid: 'excel!Excel.Interfaces.TableRowCollectionLoadOptions#index:member'
     summary: >-
       For EACH ITEM in the collection: Returns the index number of the row within the rows collection of the table.
       Zero-indexed. Read-only.
@@ -49,7 +49,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableRowCollectionLoadOptions.values
+  - uid: 'excel!Excel.Interfaces.TableRowCollectionLoadOptions#values:member'
     summary: >-
       For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be of
       type string, number, or a boolean. Cells that contain an error will return the error string.

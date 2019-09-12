@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Notebook
+  - uid: 'onenote!OneNote.Notebook:class'
     summary: |-
       Represents a OneNote notebook. Notebooks contain section groups and sections.
 
@@ -11,27 +11,27 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: onenote
+      - 'onenote!OfficeExtension.ClientObject:class'
+    package: onenote!
     children:
-      - onenote.OneNote.Notebook.addSection
-      - onenote.OneNote.Notebook.addSectionGroup
-      - onenote.OneNote.Notebook.baseUrl
-      - onenote.OneNote.Notebook.clientUrl
-      - onenote.OneNote.Notebook.context
-      - onenote.OneNote.Notebook.getRestApiId
-      - onenote.OneNote.Notebook.id
-      - onenote.OneNote.Notebook.isVirtual
-      - onenote.OneNote.Notebook.load
-      - onenote.OneNote.Notebook.load_1
-      - onenote.OneNote.Notebook.load_2
-      - onenote.OneNote.Notebook.name
-      - onenote.OneNote.Notebook.sectionGroups
-      - onenote.OneNote.Notebook.sections
-      - onenote.OneNote.Notebook.toJSON
-      - onenote.OneNote.Notebook.track
-      - onenote.OneNote.Notebook.untrack
-  - uid: onenote.OneNote.Notebook.addSection
+      - 'onenote!OneNote.Notebook#addSection:member(1)'
+      - 'onenote!OneNote.Notebook#addSectionGroup:member(1)'
+      - 'onenote!OneNote.Notebook#baseUrl:member'
+      - 'onenote!OneNote.Notebook#clientUrl:member'
+      - 'onenote!OneNote.Notebook#context:member'
+      - 'onenote!OneNote.Notebook#getRestApiId:member(1)'
+      - 'onenote!OneNote.Notebook#id:member'
+      - 'onenote!OneNote.Notebook#isVirtual:member'
+      - 'onenote!OneNote.Notebook#load:member(1)'
+      - 'onenote!OneNote.Notebook#load:member(2)'
+      - 'onenote!OneNote.Notebook#load:member(3)'
+      - 'onenote!OneNote.Notebook#name:member'
+      - 'onenote!OneNote.Notebook#sectionGroups:member'
+      - 'onenote!OneNote.Notebook#sections:member'
+      - 'onenote!OneNote.Notebook#toJSON:member(1)'
+      - 'onenote!OneNote.Notebook#track:member(1)'
+      - 'onenote!OneNote.Notebook#untrack:member(1)'
+  - uid: 'onenote!OneNote.Notebook#addSection:member(1)'
     summary: |-
       Adds a new section to the end of the notebook.
 
@@ -45,7 +45,7 @@ items:
       content: 'addSection(name: string): OneNote.Section;'
       return:
         type:
-          - onenote.OneNote.Section
+          - 'onenote!OneNote.Section:class'
         description: |-
 
 
@@ -81,7 +81,7 @@ items:
           description: The name of the new section.
           type:
             - string
-  - uid: onenote.OneNote.Notebook.addSectionGroup
+  - uid: 'onenote!OneNote.Notebook#addSectionGroup:member(1)'
     summary: |-
       Adds a new section group to the end of the notebook.
 
@@ -95,7 +95,7 @@ items:
       content: 'addSectionGroup(name: string): OneNote.SectionGroup;'
       return:
         type:
-          - onenote.OneNote.SectionGroup
+          - 'onenote!OneNote.SectionGroup:class'
         description: |-
 
 
@@ -131,7 +131,7 @@ items:
           description: The name of the new section.
           type:
             - string
-  - uid: onenote.OneNote.Notebook.baseUrl
+  - uid: 'onenote!OneNote.Notebook#baseUrl:member'
     summary: |-
       The url of the site that this notebook is located. Read only
 
@@ -146,7 +146,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Notebook.clientUrl
+  - uid: 'onenote!OneNote.Notebook#clientUrl:member'
     summary: |-
       The client url of the notebook. Read only
 
@@ -161,7 +161,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Notebook.context
+  - uid: 'onenote!OneNote.Notebook#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -174,8 +174,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
-  - uid: onenote.OneNote.Notebook.getRestApiId
+          - 'onenote!OneNote.RequestContext:class'
+  - uid: 'onenote!OneNote.Notebook#getRestApiId:member(1)'
     summary: |-
       Gets the REST API ID.
 
@@ -189,7 +189,7 @@ items:
       content: 'getRestApiId(): OfficeExtension.ClientResult<string>;'
       return:
         type:
-          - OfficeExtension.ClientResult<string>
+          - 'onenote!OneNote.Notebook#getRestApiId~0:complex'
         description: |-
 
 
@@ -212,7 +212,7 @@ items:
                   });
           });
           ```
-  - uid: onenote.OneNote.Notebook.id
+  - uid: 'onenote!OneNote.Notebook#id:member'
     summary: |-
       Gets the ID of the notebook. Read-only.
 
@@ -227,7 +227,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Notebook.isVirtual
+  - uid: 'onenote!OneNote.Notebook#isVirtual:member'
     summary: |-
       True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only
 
@@ -242,7 +242,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Notebook.load
+  - uid: 'onenote!OneNote.Notebook#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -273,14 +273,14 @@ items:
       content: 'load(option?: OneNote.Interfaces.NotebookLoadOptions): OneNote.Notebook;'
       return:
         type:
-          - onenote.OneNote.Notebook
+          - 'onenote!OneNote.Notebook:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.NotebookLoadOptions
-  - uid: onenote.OneNote.Notebook.load_1
+            - 'onenote!OneNote.Interfaces.NotebookLoadOptions:interface'
+  - uid: 'onenote!OneNote.Notebook#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -293,7 +293,7 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.Notebook;'
       return:
         type:
-          - onenote.OneNote.Notebook
+          - 'onenote!OneNote.Notebook:class'
         description: |-
 
 
@@ -429,7 +429,7 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.Notebook.load_2
+  - uid: 'onenote!OneNote.Notebook#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -442,7 +442,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Notebook;'
       return:
         type:
-          - onenote.OneNote.Notebook
+          - 'onenote!OneNote.Notebook:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -451,7 +451,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: onenote.OneNote.Notebook.name
+  - uid: 'onenote!OneNote.Notebook#name:member'
     summary: |-
       Gets the name of the notebook. Read-only.
 
@@ -466,7 +466,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Notebook.sectionGroups
+  - uid: 'onenote!OneNote.Notebook#sectionGroups:member'
     summary: |-
       The section groups in the notebook. Read only
 
@@ -480,8 +480,8 @@ items:
       content: 'readonly sectionGroups: OneNote.SectionGroupCollection;'
       return:
         type:
-          - onenote.OneNote.SectionGroupCollection
-  - uid: onenote.OneNote.Notebook.sections
+          - 'onenote!OneNote.SectionGroupCollection:class'
+  - uid: 'onenote!OneNote.Notebook#sections:member'
     summary: |-
       The the sections of the notebook. Read only
 
@@ -495,8 +495,8 @@ items:
       content: 'readonly sections: OneNote.SectionCollection;'
       return:
         type:
-          - onenote.OneNote.SectionCollection
-  - uid: onenote.OneNote.Notebook.toJSON
+          - 'onenote!OneNote.SectionCollection:class'
+  - uid: 'onenote!OneNote.Notebook#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -512,9 +512,9 @@ items:
       content: 'toJSON(): OneNote.Interfaces.NotebookData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.NotebookData
+          - 'onenote!OneNote.Interfaces.NotebookData:interface'
         description: ''
-  - uid: onenote.OneNote.Notebook.track
+  - uid: 'onenote!OneNote.Notebook#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -530,9 +530,9 @@ items:
       content: 'track(): OneNote.Notebook;'
       return:
         type:
-          - onenote.OneNote.Notebook
+          - 'onenote!OneNote.Notebook:class'
         description: ''
-  - uid: onenote.OneNote.Notebook.untrack
+  - uid: 'onenote!OneNote.Notebook#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -547,5 +547,33 @@ items:
       content: 'untrack(): OneNote.Notebook;'
       return:
         type:
-          - onenote.OneNote.Notebook
+          - 'onenote!OneNote.Notebook:class'
         description: ''
+references:
+  - uid: 'onenote!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'onenote!OneNote.Section:class'
+    name: OneNote.Section
+  - uid: 'onenote!OneNote.SectionGroup:class'
+    name: OneNote.SectionGroup
+  - uid: 'onenote!OneNote.RequestContext:class'
+    name: RequestContext
+  - uid: 'onenote!OneNote.Notebook#getRestApiId~0:complex'
+    name: OfficeExtension.ClientResult<string>
+    fullName: OfficeExtension.ClientResult<string>
+    spec.typeScript:
+      - uid: 'onenote!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <string>
+        fullName: <string>
+  - uid: 'onenote!OneNote.Notebook:class'
+    name: OneNote.Notebook
+  - uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions:interface'
+    name: OneNote.Interfaces.NotebookLoadOptions
+  - uid: 'onenote!OneNote.SectionGroupCollection:class'
+    name: OneNote.SectionGroupCollection
+  - uid: 'onenote!OneNote.SectionCollection:class'
+    name: OneNote.SectionCollection
+  - uid: 'onenote!OneNote.Interfaces.NotebookData:interface'
+    name: OneNote.Interfaces.NotebookData

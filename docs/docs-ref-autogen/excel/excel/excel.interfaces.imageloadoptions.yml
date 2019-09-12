@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ImageLoadOptions
+  - uid: 'excel!Excel.Interfaces.ImageLoadOptions:interface'
     summary: |-
       Represents an image in the worksheet. To get the corresponding Shape object, use Image.shape.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ImageLoadOptions.$all
-      - excel.Excel.Interfaces.ImageLoadOptions.format
-      - excel.Excel.Interfaces.ImageLoadOptions.id
-      - excel.Excel.Interfaces.ImageLoadOptions.shape
-  - uid: excel.Excel.Interfaces.ImageLoadOptions.$all
+      - 'excel!Excel.Interfaces.ImageLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ImageLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ImageLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.ImageLoadOptions#shape:member'
+  - uid: 'excel!Excel.Interfaces.ImageLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ImageLoadOptions.format
+  - uid: 'excel!Excel.Interfaces.ImageLoadOptions#format:member'
     summary: |-
       Returns the format of the image. Read-only.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ImageLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.ImageLoadOptions#id:member'
     summary: |-
       Represents the shape identifier for the image object. Read-only.
 
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ImageLoadOptions.shape
+  - uid: 'excel!Excel.Interfaces.ImageLoadOptions#shape:member'
     summary: |-
       Returns the Shape object associated with the image.
 
@@ -71,4 +71,7 @@ items:
       content: 'shape?: Excel.Interfaces.ShapeLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ShapeLoadOptions
+          - 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
+    name: Excel.Interfaces.ShapeLoadOptions

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.OutlineLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions:interface'
     summary: |-
       Represents a container for Paragraph objects.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.OutlineLoadOptions.$all
-      - onenote.OneNote.Interfaces.OutlineLoadOptions.id
-      - onenote.OneNote.Interfaces.OutlineLoadOptions.pageContent
-      - onenote.OneNote.Interfaces.OutlineLoadOptions.paragraphs
-  - uid: onenote.OneNote.Interfaces.OutlineLoadOptions.$all
+      - 'onenote!OneNote.Interfaces.OutlineLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.OutlineLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.OutlineLoadOptions#pageContent:member'
+      - 'onenote!OneNote.Interfaces.OutlineLoadOptions#paragraphs:member'
+  - uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.OutlineLoadOptions.id
+  - uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions#id:member'
     summary: |-
       Gets the ID of the Outline object. Read-only.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.OutlineLoadOptions.pageContent
+  - uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions#pageContent:member'
     summary: >-
       Gets the PageContent object that contains the Outline. This object defines the position of the Outline on the
       page.
@@ -58,8 +58,8 @@ items:
       content: 'pageContent?: OneNote.Interfaces.PageContentLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageContentLoadOptions
-  - uid: onenote.OneNote.Interfaces.OutlineLoadOptions.paragraphs
+          - 'onenote!OneNote.Interfaces.PageContentLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions#paragraphs:member'
     summary: |-
       Gets the collection of Paragraph objects in the Outline.
 
@@ -73,4 +73,9 @@ items:
       content: 'paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions
+          - 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface'
+references:
+  - uid: 'onenote!OneNote.Interfaces.PageContentLoadOptions:interface'
+    name: OneNote.Interfaces.PageContentLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface'
+    name: OneNote.Interfaces.ParagraphCollectionLoadOptions

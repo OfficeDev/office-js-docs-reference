@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions:interface'
     summary: |-
-      Contains a collection of [Word.Range](xref:word.Word.Range) objects.
+      Contains a collection of [Word.Range](xref:word!Word.Range:class) objects.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Interfaces.RangeCollectionLoadOptions
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.RangeCollectionLoadOptions.$all
-      - word.Word.Interfaces.RangeCollectionLoadOptions.font
-      - word.Word.Interfaces.RangeCollectionLoadOptions.parentContentControl
-      - word.Word.Interfaces.RangeCollectionLoadOptions.style
-      - word.Word.Interfaces.RangeCollectionLoadOptions.text
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.$all
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#$all:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#font:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControl:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#style:member'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions#text:member'
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.font
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#font:member'
     summary: >-
       For EACH ITEM in the collection: Gets the text format of the range. Use this to get and set font name, size,
       color, and other properties.
@@ -44,8 +44,8 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.FontLoadOptions
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.parentContentControl
+          - 'word!Word.Interfaces.FontLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControl:member'
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the range. Throws if there isn't a parent
       content control.
@@ -61,8 +61,8 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.style
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#style:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the style name for the range. Use this property for custom styles
       and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn"
@@ -80,7 +80,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.text
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions#text:member'
     summary: |-
       For EACH ITEM in the collection: Gets the text of the range. Read-only.
 
@@ -95,3 +95,8 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
+    name: Word.Interfaces.FontLoadOptions
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+    name: Word.Interfaces.ContentControlLoadOptions

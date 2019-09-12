@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartSeriesData
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData:interface'
     summary: An interface describing the data returned by calling "chartSeries.toJSON()".
     name: Excel.Interfaces.ChartSeriesData
     fullName: Excel.Interfaces.ChartSeriesData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartSeriesData.format
-      - excel.Excel.Interfaces.ChartSeriesData.name
-      - excel.Excel.Interfaces.ChartSeriesData.points
-  - uid: excel.Excel.Interfaces.ChartSeriesData.format
+      - 'excel!Excel.Interfaces.ChartSeriesData#format:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#name:member'
+      - 'excel!Excel.Interfaces.ChartSeriesData#points:member'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#format:member'
     summary: |-
       Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
 
@@ -26,8 +26,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartSeriesFormatData
-  - uid: excel.Excel.Interfaces.ChartSeriesData.name
+          - 'excel!Excel.Interfaces.ChartSeriesFormatData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#name:member'
     summary: |-
       Represents the name of a series in a chart.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartSeriesData.points
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#points:member'
     summary: |-
       Represents a collection of all points in the series. Read-only.
 
@@ -56,4 +56,16 @@ items:
       content: 'points?: Excel.Interfaces.ChartPointData[];'
       return:
         type:
-          - 'Excel.Interfaces.ChartPointData[]'
+          - 'excel!Excel.Interfaces.ChartSeriesData#points~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartSeriesFormatData:interface'
+    name: Excel.Interfaces.ChartSeriesFormatData
+  - uid: 'excel!Excel.Interfaces.ChartSeriesData#points~0:complex'
+    name: 'Excel.Interfaces.ChartPointData[]'
+    fullName: 'Excel.Interfaces.ChartPointData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ChartPointData:interface'
+        name: Excel.Interfaces.ChartPointData
+        fullName: Excel.Interfaces.ChartPointData
+      - name: '[]'
+        fullName: '[]'

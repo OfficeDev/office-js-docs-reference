@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ShapeTextVerticalOverflow
+  - uid: 'excel!Excel.ShapeTextVerticalOverflow:enum'
     summary: |-
       Specifies the vertical overflow for the text frame in a shape.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ShapeTextVerticalOverflow.clip
-      - excel.Excel.ShapeTextVerticalOverflow.ellipsis
-      - excel.Excel.ShapeTextVerticalOverflow.overflow
-  - uid: excel.Excel.ShapeTextVerticalOverflow.clip
+      - 'excel!Excel.ShapeTextVerticalOverflow.clip:member'
+      - 'excel!Excel.ShapeTextVerticalOverflow.ellipsis:member'
+      - 'excel!Excel.ShapeTextVerticalOverflow.overflow:member'
+  - uid: 'excel!Excel.ShapeTextVerticalOverflow.clip:member'
     summary: Hide text that does not fit vertically within the text frame.
     name: clip
     fullName: clip
@@ -23,7 +23,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Clip"'
-  - uid: excel.Excel.ShapeTextVerticalOverflow.ellipsis
+  - uid: 'excel!Excel.ShapeTextVerticalOverflow.ellipsis:member'
     summary: >-
       Hide text that does not fit vertically within the text frame, and add an ellipsis (...) at the end of the visible
       text.
@@ -33,7 +33,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Ellipsis"'
-  - uid: excel.Excel.ShapeTextVerticalOverflow.overflow
+  - uid: 'excel!Excel.ShapeTextVerticalOverflow.overflow:member'
     summary: >-
       Allow text to overflow the text frame vertically (can be from the top, bottom, or both depending on the text
       alignment).

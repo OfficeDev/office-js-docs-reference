@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RemoveDuplicatesResultData
+  - uid: 'excel!Excel.Interfaces.RemoveDuplicatesResultData:interface'
     summary: An interface describing the data returned by calling "removeDuplicatesResult.toJSON()".
     name: Excel.Interfaces.RemoveDuplicatesResultData
     fullName: Excel.Interfaces.RemoveDuplicatesResultData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

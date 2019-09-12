@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface'
     summary: >-
       An interface for updating data on the PresetCriteriaConditionalFormat object, for use in
       "presetCriteriaConditionalFormat.set(<!-- -->{ ... }<!-- -->)".
@@ -9,11 +9,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData.format
-      - excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData.rule
-  - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData.format
+      - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData#format:member'
+      - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData#rule:member'
+  - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData#format:member'
     summary: |-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
 
@@ -27,8 +27,8 @@ items:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeFormatUpdateData
-  - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData.rule
+          - 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData#rule:member'
     summary: |-
       The rule of the conditional format.
 
@@ -42,4 +42,9 @@ items:
       content: 'rule?: Excel.ConditionalPresetCriteriaRule;'
       return:
         type:
-          - excel.Excel.ConditionalPresetCriteriaRule
+          - 'excel!Excel.ConditionalPresetCriteriaRule:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
+    name: Excel.Interfaces.ConditionalRangeFormatUpdateData
+  - uid: 'excel!Excel.ConditionalPresetCriteriaRule:interface'
+    name: Excel.ConditionalPresetCriteriaRule

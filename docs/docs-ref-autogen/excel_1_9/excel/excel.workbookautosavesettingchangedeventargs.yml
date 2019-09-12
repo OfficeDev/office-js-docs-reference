@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.WorkbookAutoSaveSettingChangedEventArgs
+  - uid: 'excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface'
     summary: |-
       Provides information about the workbook's onAutoSaveSettingChanged event.
 
@@ -10,10 +10,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.WorkbookAutoSaveSettingChangedEventArgs.type
-  - uid: excel.Excel.WorkbookAutoSaveSettingChangedEventArgs.type
+      - 'excel!Excel.WorkbookAutoSaveSettingChangedEventArgs#type:member'
+  - uid: 'excel!Excel.WorkbookAutoSaveSettingChangedEventArgs#type:member'
     summary: |-
       Represents the type of the event. See Excel.EventType for details.
 

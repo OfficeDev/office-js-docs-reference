@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartDataLabelUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartDataLabel object, for use in "chartDataLabel.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,4 +9,4 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

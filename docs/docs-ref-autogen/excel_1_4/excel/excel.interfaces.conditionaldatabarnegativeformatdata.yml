@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalDataBarNegativeFormatData
+  - uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatData:interface'
     summary: An interface describing the data returned by calling "conditionalDataBarNegativeFormat.toJSON()".
     name: Excel.Interfaces.ConditionalDataBarNegativeFormatData
     fullName: Excel.Interfaces.ConditionalDataBarNegativeFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

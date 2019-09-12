@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.Organizer
+  - uid: 'outlook!Office.Organizer:interface'
     summary: >-
       Represents the appointment organizer, even if an alias or a delegate was used to create the appointment. This
       object provides a method to get the organizer value of an appointment in an Outlook add-in.
@@ -18,14 +18,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.Organizer.getAsync
-      - outlook.Office.Organizer.getAsync_1
-  - uid: outlook.Office.Organizer.getAsync
+      - 'outlook!Office.Organizer#getAsync:member(1)'
+      - 'outlook!Office.Organizer#getAsync:member(2)'
+  - uid: 'outlook!Office.Organizer#getAsync:member(1)'
     summary: >-
       Gets the organizer value of an appointment as an
-      [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) in the asyncResult.value property.
+      [Office.EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) in the asyncResult.value property.
 
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -54,18 +54,18 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter,
             asyncResult, which is an AsyncResult object. The `value` property of the result is the appointment's
             organizer value, as an EmailAddressDetails object.
           type:
-            - '(asyncResult: Office.AsyncResult<EmailAddressDetails>) => void'
-  - uid: outlook.Office.Organizer.getAsync_1
+            - 'outlook!Office.Organizer#getAsync~0:complex'
+  - uid: 'outlook!Office.Organizer#getAsync:member(2)'
     summary: >-
       Gets the organizer value of an appointment as an
-      [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) in the asyncResult.value property.
+      [Office.EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) in the asyncResult.value property.
 
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -107,4 +107,39 @@ items:
             asyncResult, which is an AsyncResult object. The `value` property of the result is the appointment's
             organizer value, as an EmailAddressDetails object.
           type:
-            - '(asyncResult: Office.AsyncResult<EmailAddressDetails>) => void'
+            - 'outlook!Office.Organizer#getAsync~1:complex'
+references:
+  - uid: 'outlook!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions
+  - uid: 'outlook!Office.Organizer#getAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<EmailAddressDetails>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<Office.EmailAddressDetails>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'outlook!Office.EmailAddressDetails:interface'
+        name: EmailAddressDetails
+        fullName: Office.EmailAddressDetails
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'outlook!Office.Organizer#getAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<EmailAddressDetails>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<Office.EmailAddressDetails>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'outlook!Office.EmailAddressDetails:interface'
+        name: EmailAddressDetails
+        fullName: Office.EmailAddressDetails
+      - name: '>) => void'
+        fullName: '>) => void'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.CommentCollectionUpdateData
+  - uid: 'visio!Visio.Interfaces.CommentCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the CommentCollection object, for use in "commentCollection.set(<!-- -->{ ...
       }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.CommentCollectionUpdateData.items
-  - uid: visio.Visio.Interfaces.CommentCollectionUpdateData.items
+      - 'visio!Visio.Interfaces.CommentCollectionUpdateData#items:member'
+  - uid: 'visio!Visio.Interfaces.CommentCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: Visio.Interfaces.CommentData[];'
       return:
         type:
-          - 'Visio.Interfaces.CommentData[]'
+          - 'visio!Visio.Interfaces.CommentCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'visio!Visio.Interfaces.CommentCollectionUpdateData#items~0:complex'
+    name: 'Visio.Interfaces.CommentData[]'
+    fullName: 'Visio.Interfaces.CommentData[]'
+    spec.typeScript:
+      - uid: 'visio!Visio.Interfaces.CommentData:interface'
+        name: Visio.Interfaces.CommentData
+        fullName: Visio.Interfaces.CommentData
+      - name: '[]'
+        fullName: '[]'

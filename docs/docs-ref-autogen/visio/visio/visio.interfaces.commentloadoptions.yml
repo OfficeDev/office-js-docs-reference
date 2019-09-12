@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.CommentLoadOptions
+  - uid: 'visio!Visio.Interfaces.CommentLoadOptions:interface'
     summary: |-
       Represents the Comment.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.CommentLoadOptions.$all
-      - visio.Visio.Interfaces.CommentLoadOptions.author
-      - visio.Visio.Interfaces.CommentLoadOptions.date
-      - visio.Visio.Interfaces.CommentLoadOptions.text
-  - uid: visio.Visio.Interfaces.CommentLoadOptions.$all
+      - 'visio!Visio.Interfaces.CommentLoadOptions#$all:member'
+      - 'visio!Visio.Interfaces.CommentLoadOptions#author:member'
+      - 'visio!Visio.Interfaces.CommentLoadOptions#date:member'
+      - 'visio!Visio.Interfaces.CommentLoadOptions#text:member'
+  - uid: 'visio!Visio.Interfaces.CommentLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.CommentLoadOptions.author
+  - uid: 'visio!Visio.Interfaces.CommentLoadOptions#author:member'
     summary: |-
       A string that specifies the name of the author of the comment.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.CommentLoadOptions.date
+  - uid: 'visio!Visio.Interfaces.CommentLoadOptions#date:member'
     summary: |-
       A string that specifies the date when the comment was created.
 
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.CommentLoadOptions.text
+  - uid: 'visio!Visio.Interfaces.CommentLoadOptions#text:member'
     summary: |-
       A string that contains the comment text.
 

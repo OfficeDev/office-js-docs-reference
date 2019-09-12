@@ -1,40 +1,40 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartSplitType
+  - uid: 'excel!Excel.ChartSplitType:enum'
     summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartSplitType
     fullName: Excel.ChartSplitType
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartSplitType.splitByCustomSplit
-      - excel.Excel.ChartSplitType.splitByPercentValue
-      - excel.Excel.ChartSplitType.splitByPosition
-      - excel.Excel.ChartSplitType.splitByValue
-  - uid: excel.Excel.ChartSplitType.splitByCustomSplit
+      - 'excel!Excel.ChartSplitType.splitByCustomSplit:member'
+      - 'excel!Excel.ChartSplitType.splitByPercentValue:member'
+      - 'excel!Excel.ChartSplitType.splitByPosition:member'
+      - 'excel!Excel.ChartSplitType.splitByValue:member'
+  - uid: 'excel!Excel.ChartSplitType.splitByCustomSplit:member'
     name: splitByCustomSplit
     fullName: splitByCustomSplit
     langs:
       - typeScript
     type: field
     numericValue: '"SplitByCustomSplit"'
-  - uid: excel.Excel.ChartSplitType.splitByPercentValue
+  - uid: 'excel!Excel.ChartSplitType.splitByPercentValue:member'
     name: splitByPercentValue
     fullName: splitByPercentValue
     langs:
       - typeScript
     type: field
     numericValue: '"SplitByPercentValue"'
-  - uid: excel.Excel.ChartSplitType.splitByPosition
+  - uid: 'excel!Excel.ChartSplitType.splitByPosition:member'
     name: splitByPosition
     fullName: splitByPosition
     langs:
       - typeScript
     type: field
     numericValue: '"SplitByPosition"'
-  - uid: excel.Excel.ChartSplitType.splitByValue
+  - uid: 'excel!Excel.ChartSplitType.splitByValue:member'
     name: splitByValue
     fullName: splitByValue
     langs:

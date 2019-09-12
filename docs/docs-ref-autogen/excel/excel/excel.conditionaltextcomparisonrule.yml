@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalTextComparisonRule
+  - uid: 'excel!Excel.ConditionalTextComparisonRule:interface'
     summary: |-
       Represents a Cell Value Conditional Format Rule
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalTextComparisonRule.operator
-      - excel.Excel.ConditionalTextComparisonRule.text
-  - uid: excel.Excel.ConditionalTextComparisonRule.operator
+      - 'excel!Excel.ConditionalTextComparisonRule#operator:member'
+      - 'excel!Excel.ConditionalTextComparisonRule#text:member'
+  - uid: 'excel!Excel.ConditionalTextComparisonRule#operator:member'
     summary: |-
       The operator of the text conditional format.
 
@@ -28,8 +28,8 @@ items:
       content: 'operator: Excel.ConditionalTextOperator | "Invalid" | "Contains" | "NotContains" | "BeginsWith" | "EndsWith";'
       return:
         type:
-          - Excel.ConditionalTextOperator | "Invalid" | "Contains" | "NotContains" | "BeginsWith" | "EndsWith"
-  - uid: excel.Excel.ConditionalTextComparisonRule.text
+          - 'excel!Excel.ConditionalTextComparisonRule#operator~0:complex'
+  - uid: 'excel!Excel.ConditionalTextComparisonRule#text:member'
     summary: |-
       The Text value of conditional format.
 
@@ -61,3 +61,13 @@ items:
               await context.sync();
           });
           ```
+references:
+  - uid: 'excel!Excel.ConditionalTextComparisonRule#operator~0:complex'
+    name: Excel.ConditionalTextOperator | "Invalid" | "Contains" | "NotContains" | "BeginsWith" | "EndsWith"
+    fullName: Excel.ConditionalTextOperator | "Invalid" | "Contains" | "NotContains" | "BeginsWith" | "EndsWith"
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalTextOperator:enum'
+        name: Excel.ConditionalTextOperator
+        fullName: Excel.ConditionalTextOperator
+      - name: ' | "Invalid" | "Contains" | "NotContains" | "BeginsWith" | "EndsWith"'
+        fullName: ' | "Invalid" | "Contains" | "NotContains" | "BeginsWith" | "EndsWith"'

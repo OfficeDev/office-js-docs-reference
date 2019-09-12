@@ -1,22 +1,22 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.HostType
+  - uid: 'office!Office.HostType:enum'
     summary: Specifies the host Office application in which the add-in is running.
     name: Office.HostType
     fullName: Office.HostType
     langs:
       - typeScript
     type: enum
-    package: office
+    package: office!
     children:
-      - office.Office.HostType.Access
-      - office.Office.HostType.Excel
-      - office.Office.HostType.OneNote
-      - office.Office.HostType.Outlook
-      - office.Office.HostType.PowerPoint
-      - office.Office.HostType.Project
-      - office.Office.HostType.Word
-  - uid: office.Office.HostType.Access
+      - 'office!Office.HostType.Access:member'
+      - 'office!Office.HostType.Excel:member'
+      - 'office!Office.HostType.OneNote:member'
+      - 'office!Office.HostType.Outlook:member'
+      - 'office!Office.HostType.PowerPoint:member'
+      - 'office!Office.HostType.Project:member'
+      - 'office!Office.HostType.Word:member'
+  - uid: 'office!Office.HostType.Access:member'
     summary: >-
       The Office host is Microsoft Access.
 
@@ -29,42 +29,42 @@ items:
     langs:
       - typeScript
     type: field
-  - uid: office.Office.HostType.Excel
+  - uid: 'office!Office.HostType.Excel:member'
     summary: The Office host is Microsoft Excel.
     name: Excel
     fullName: Excel
     langs:
       - typeScript
     type: field
-  - uid: office.Office.HostType.OneNote
+  - uid: 'office!Office.HostType.OneNote:member'
     summary: The Office host is Microsoft OneNote.
     name: OneNote
     fullName: OneNote
     langs:
       - typeScript
     type: field
-  - uid: office.Office.HostType.Outlook
+  - uid: 'office!Office.HostType.Outlook:member'
     summary: The Office host is Microsoft Outlook.
     name: Outlook
     fullName: Outlook
     langs:
       - typeScript
     type: field
-  - uid: office.Office.HostType.PowerPoint
+  - uid: 'office!Office.HostType.PowerPoint:member'
     summary: The Office host is Microsoft PowerPoint.
     name: PowerPoint
     fullName: PowerPoint
     langs:
       - typeScript
     type: field
-  - uid: office.Office.HostType.Project
+  - uid: 'office!Office.HostType.Project:member'
     summary: The Office host is Microsoft Project.
     name: Project
     fullName: Project
     langs:
       - typeScript
     type: field
-  - uid: office.Office.HostType.Word
+  - uid: 'office!Office.HostType.Word:member'
     summary: The Office host is Microsoft Word.
     name: Word
     fullName: Word

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
     summary: >-
       Represents a collection of all the tables that are part of the workbook or worksheet, depending on how it was
       reached.
@@ -12,17 +12,17 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.columns
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.id
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.name
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.rows
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.showHeaders
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.showTotals
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.style
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#columns:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#rows:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#showHeaders:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#showTotals:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#style:member'
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -33,7 +33,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.columns
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#columns:member'
     summary: |-
       For EACH ITEM in the collection: Represents a collection of all the columns in the table.
 
@@ -47,8 +47,8 @@ items:
       content: 'columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TableColumnCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.id
+          - 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#id:member'
     summary: >-
       For EACH ITEM in the collection: Returns a value that uniquely identifies the table in a given workbook. The value
       of the identifier remains the same even when the table is renamed. Read-only.
@@ -65,7 +65,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#name:member'
     summary: |-
       For EACH ITEM in the collection: Name of the table.
 
@@ -80,7 +80,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.rows
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#rows:member'
     summary: |-
       For EACH ITEM in the collection: Represents a collection of all the rows in the table.
 
@@ -94,8 +94,8 @@ items:
       content: 'rows?: Excel.Interfaces.TableRowCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TableRowCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.showHeaders
+          - 'excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#showHeaders:member'
     summary: >-
       For EACH ITEM in the collection: Indicates whether the header row is visible or not. This value can be set to show
       or remove the header row.
@@ -112,7 +112,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.showTotals
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#showTotals:member'
     summary: >-
       For EACH ITEM in the collection: Indicates whether the total row is visible or not. This value can be set to show
       or remove the total row.
@@ -129,7 +129,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.style
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#style:member'
     summary: >-
       For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are:
       TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru
@@ -147,3 +147,8 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
+    name: Excel.Interfaces.TableColumnCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface'
+    name: Excel.Interfaces.TableRowCollectionLoadOptions

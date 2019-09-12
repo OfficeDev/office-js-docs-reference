@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeViewCollectionData
+  - uid: 'excel!Excel.Interfaces.RangeViewCollectionData:interface'
     summary: An interface describing the data returned by calling "rangeViewCollection.toJSON()".
     name: Excel.Interfaces.RangeViewCollectionData
     fullName: Excel.Interfaces.RangeViewCollectionData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RangeViewCollectionData.items
-  - uid: excel.Excel.Interfaces.RangeViewCollectionData.items
+      - 'excel!Excel.Interfaces.RangeViewCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.RangeViewCollectionData#items:member'
     name: items
     fullName: items
     langs:
@@ -20,4 +20,14 @@ items:
       content: 'items?: Excel.Interfaces.RangeViewData[];'
       return:
         type:
-          - 'Excel.Interfaces.RangeViewData[]'
+          - 'excel!Excel.Interfaces.RangeViewCollectionData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.RangeViewCollectionData#items~0:complex'
+    name: 'Excel.Interfaces.RangeViewData[]'
+    fullName: 'Excel.Interfaces.RangeViewData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.RangeViewData:interface'
+        name: Excel.Interfaces.RangeViewData
+        fullName: Excel.Interfaces.RangeViewData
+      - name: '[]'
+        fullName: '[]'

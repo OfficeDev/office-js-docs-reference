@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeFontLoadOptions
+  - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions:interface'
     summary: |-
       This object represents the font attributes (font name, font size, color, etc.) for an object.
 
@@ -10,20 +10,20 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RangeFontLoadOptions.$all
-      - excel.Excel.Interfaces.RangeFontLoadOptions.bold
-      - excel.Excel.Interfaces.RangeFontLoadOptions.color
-      - excel.Excel.Interfaces.RangeFontLoadOptions.italic
-      - excel.Excel.Interfaces.RangeFontLoadOptions.name
-      - excel.Excel.Interfaces.RangeFontLoadOptions.size
-      - excel.Excel.Interfaces.RangeFontLoadOptions.strikethrough
-      - excel.Excel.Interfaces.RangeFontLoadOptions.subscript
-      - excel.Excel.Interfaces.RangeFontLoadOptions.superscript
-      - excel.Excel.Interfaces.RangeFontLoadOptions.tintAndShade
-      - excel.Excel.Interfaces.RangeFontLoadOptions.underline
-  - uid: excel.Excel.Interfaces.RangeFontLoadOptions.$all
+      - 'excel!Excel.Interfaces.RangeFontLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.RangeFontLoadOptions#bold:member'
+      - 'excel!Excel.Interfaces.RangeFontLoadOptions#color:member'
+      - 'excel!Excel.Interfaces.RangeFontLoadOptions#italic:member'
+      - 'excel!Excel.Interfaces.RangeFontLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.RangeFontLoadOptions#size:member'
+      - 'excel!Excel.Interfaces.RangeFontLoadOptions#strikethrough:member'
+      - 'excel!Excel.Interfaces.RangeFontLoadOptions#subscript:member'
+      - 'excel!Excel.Interfaces.RangeFontLoadOptions#superscript:member'
+      - 'excel!Excel.Interfaces.RangeFontLoadOptions#tintAndShade:member'
+      - 'excel!Excel.Interfaces.RangeFontLoadOptions#underline:member'
+  - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -34,7 +34,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeFontLoadOptions.bold
+  - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions#bold:member'
     summary: |-
       Represents the bold status of font.
 
@@ -49,7 +49,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeFontLoadOptions.color
+  - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions#color:member'
     summary: |-
       HTML color code representation of the text color. E.g. \#FF0000 represents Red.
 
@@ -64,7 +64,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeFontLoadOptions.italic
+  - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions#italic:member'
     summary: |-
       Represents the italic status of the font.
 
@@ -79,7 +79,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeFontLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions#name:member'
     summary: |-
       Font name (e.g. "Calibri")
 
@@ -94,7 +94,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeFontLoadOptions.size
+  - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions#size:member'
     summary: |-
       Font size.
 
@@ -109,7 +109,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeFontLoadOptions.strikethrough
+  - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions#strikethrough:member'
     summary: >-
       Represents the strikethrough status of font. A null value indicates that the entire range doesn't have uniform
       Strikethrough setting.
@@ -126,7 +126,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeFontLoadOptions.subscript
+  - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions#subscript:member'
     summary: >-
       Represents the Subscript status of font. Returns True if all the fonts of the range are Subscript. Returns False
       if all the fonts of the range are Superscript or normal (neither Superscript, nor Subscript). Returns Null
@@ -144,7 +144,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeFontLoadOptions.superscript
+  - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions#superscript:member'
     summary: >-
       Represents the Superscript status of font. Returns True if all the fonts of the range are Superscript. Returns
       False if all the fonts of the range are Subscript or normal (neither Superscript, nor Subscript). Returns Null
@@ -162,7 +162,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeFontLoadOptions.tintAndShade
+  - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions#tintAndShade:member'
     summary: >-
       Returns or sets a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1
       (brightest), with 0 for the original color. A null value indicates that the entire range doesn't have uniform font
@@ -180,7 +180,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeFontLoadOptions.underline
+  - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions#underline:member'
     summary: |-
       Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.IterativeCalculationUpdateData
+  - uid: 'excel!Excel.Interfaces.IterativeCalculationUpdateData:interface'
     summary: >-
       An interface for updating data on the IterativeCalculation object, for use in "iterativeCalculation.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,4 +9,4 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.SlicerItemCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.SlicerItemCollectionLoadOptions:interface'
     summary: >-
       Represents a collection of all the slicer item objects on the slicer.
 
@@ -13,14 +13,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.hasData
-      - excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.isSelected
-      - excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.key
-      - excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.name
-  - uid: excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#hasData:member'
+      - 'excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#isSelected:member'
+      - 'excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#key:member'
+      - 'excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#name:member'
+  - uid: 'excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#$all:member'
     isPreview: true
     name: $all
     fullName: $all
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.hasData
+  - uid: 'excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#hasData:member'
     summary: >-
       For EACH ITEM in the collection: True if the slicer item has data.
 
@@ -50,7 +50,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.isSelected
+  - uid: 'excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#isSelected:member'
     summary: >-
       For EACH ITEM in the collection: True if the slicer item is selected. Setting this value will not clear other
       SlicerItems' selected state. By default, if the slicer item is the only one selected, when it is deselected, all
@@ -70,7 +70,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.key
+  - uid: 'excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#key:member'
     summary: >-
       For EACH ITEM in the collection: Represents the unique value representing the slicer item.
 
@@ -88,7 +88,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.SlicerItemCollectionLoadOptions#name:member'
     summary: >-
       For EACH ITEM in the collection: Represents the title displayed in the UI.
 

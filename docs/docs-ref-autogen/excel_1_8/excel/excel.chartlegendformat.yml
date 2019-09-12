@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartLegendFormat
+  - uid: 'excel!Excel.ChartLegendFormat:class'
     summary: |-
       Encapsulates the format properties of a chart legend.
 
@@ -11,20 +11,20 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.ChartLegendFormat.border
-      - excel.Excel.ChartLegendFormat.context
-      - excel.Excel.ChartLegendFormat.fill
-      - excel.Excel.ChartLegendFormat.font
-      - excel.Excel.ChartLegendFormat.load
-      - excel.Excel.ChartLegendFormat.load_1
-      - excel.Excel.ChartLegendFormat.load_2
-      - excel.Excel.ChartLegendFormat.set
-      - excel.Excel.ChartLegendFormat.set_1
-      - excel.Excel.ChartLegendFormat.toJSON
-  - uid: excel.Excel.ChartLegendFormat.border
+      - 'excel!Excel.ChartLegendFormat#border:member'
+      - 'excel!Excel.ChartLegendFormat#context:member'
+      - 'excel!Excel.ChartLegendFormat#fill:member'
+      - 'excel!Excel.ChartLegendFormat#font:member'
+      - 'excel!Excel.ChartLegendFormat#load:member(1)'
+      - 'excel!Excel.ChartLegendFormat#load:member(2)'
+      - 'excel!Excel.ChartLegendFormat#load:member(3)'
+      - 'excel!Excel.ChartLegendFormat#set:member(1)'
+      - 'excel!Excel.ChartLegendFormat#set:member(2)'
+      - 'excel!Excel.ChartLegendFormat#toJSON:member(1)'
+  - uid: 'excel!Excel.ChartLegendFormat#border:member'
     summary: |-
       Represents the border format, which includes color, linestyle, and weight. Read-only.
 
@@ -38,8 +38,8 @@ items:
       content: 'readonly border: Excel.ChartBorder;'
       return:
         type:
-          - excel.Excel.ChartBorder
-  - uid: excel.Excel.ChartLegendFormat.context
+          - 'excel!Excel.ChartBorder:class'
+  - uid: 'excel!Excel.ChartLegendFormat#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -52,8 +52,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartLegendFormat.fill
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartLegendFormat#fill:member'
     summary: |-
       Represents the fill format of an object, which includes background formatting information. Read-only.
 
@@ -67,8 +67,8 @@ items:
       content: 'readonly fill: Excel.ChartFill;'
       return:
         type:
-          - excel.Excel.ChartFill
-  - uid: excel.Excel.ChartLegendFormat.font
+          - 'excel!Excel.ChartFill:class'
+  - uid: 'excel!Excel.ChartLegendFormat#font:member'
     summary: |-
       Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.
 
@@ -82,7 +82,7 @@ items:
       content: 'readonly font: Excel.ChartFont;'
       return:
         type:
-          - excel.Excel.ChartFont
+          - 'excel!Excel.ChartFont:class'
         description: |-
 
 
@@ -107,7 +107,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.ChartLegendFormat.load
+  - uid: 'excel!Excel.ChartLegendFormat#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -138,14 +138,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartLegendFormatLoadOptions): Excel.ChartLegendFormat;'
       return:
         type:
-          - excel.Excel.ChartLegendFormat
+          - 'excel!Excel.ChartLegendFormat:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartLegendFormatLoadOptions
-  - uid: excel.Excel.ChartLegendFormat.load_1
+            - 'excel!Excel.Interfaces.ChartLegendFormatLoadOptions:interface'
+  - uid: 'excel!Excel.ChartLegendFormat#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -158,14 +158,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartLegendFormat;'
       return:
         type:
-          - excel.Excel.ChartLegendFormat
+          - 'excel!Excel.ChartLegendFormat:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartLegendFormat.load_2
+  - uid: 'excel!Excel.ChartLegendFormat#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -178,7 +178,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartLegendFormat;'
       return:
         type:
-          - excel.Excel.ChartLegendFormat
+          - 'excel!Excel.ChartLegendFormat:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -187,7 +187,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartLegendFormat.set
+  - uid: 'excel!Excel.ChartLegendFormat#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -212,12 +212,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.ChartLegendFormatUpdateData
+            - 'excel!Excel.Interfaces.ChartLegendFormatUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartLegendFormat.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.ChartLegendFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -234,8 +234,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartLegendFormat
-  - uid: excel.Excel.ChartLegendFormat.toJSON
+            - 'excel!Excel.ChartLegendFormat:class'
+  - uid: 'excel!Excel.ChartLegendFormat#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -251,5 +251,26 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartLegendFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendFormatData
+          - 'excel!Excel.Interfaces.ChartLegendFormatData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.ChartBorder:class'
+    name: Excel.ChartBorder
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ChartFill:class'
+    name: Excel.ChartFill
+  - uid: 'excel!Excel.ChartFont:class'
+    name: Excel.ChartFont
+  - uid: 'excel!Excel.ChartLegendFormat:class'
+    name: Excel.ChartLegendFormat
+  - uid: 'excel!Excel.Interfaces.ChartLegendFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartLegendFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartLegendFormatUpdateData:interface'
+    name: Interfaces.ChartLegendFormatUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.ChartLegendFormatData:interface'
+    name: Excel.Interfaces.ChartLegendFormatData

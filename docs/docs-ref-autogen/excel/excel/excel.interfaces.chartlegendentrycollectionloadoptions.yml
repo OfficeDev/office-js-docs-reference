@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartLegendEntryCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions:interface'
     summary: |-
       Represents a collection of legendEntries.
 
@@ -10,16 +10,16 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartLegendEntryCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.ChartLegendEntryCollectionLoadOptions.height
-      - excel.Excel.Interfaces.ChartLegendEntryCollectionLoadOptions.index
-      - excel.Excel.Interfaces.ChartLegendEntryCollectionLoadOptions.left
-      - excel.Excel.Interfaces.ChartLegendEntryCollectionLoadOptions.top
-      - excel.Excel.Interfaces.ChartLegendEntryCollectionLoadOptions.visible
-      - excel.Excel.Interfaces.ChartLegendEntryCollectionLoadOptions.width
-  - uid: excel.Excel.Interfaces.ChartLegendEntryCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#height:member'
+      - 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#index:member'
+      - 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#left:member'
+      - 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#top:member'
+      - 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#visible:member'
+      - 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#width:member'
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLegendEntryCollectionLoadOptions.height
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#height:member'
     summary: |-
       For EACH ITEM in the collection: Represents the height of the legendEntry on the chart legend.
 
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLegendEntryCollectionLoadOptions.index
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#index:member'
     summary: |-
       For EACH ITEM in the collection: Represents the index of the legendEntry in the chart legend.
 
@@ -60,7 +60,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLegendEntryCollectionLoadOptions.left
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#left:member'
     summary: |-
       For EACH ITEM in the collection: Represents the left of a chart legendEntry.
 
@@ -75,7 +75,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLegendEntryCollectionLoadOptions.top
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#top:member'
     summary: |-
       For EACH ITEM in the collection: Represents the top of a chart legendEntry.
 
@@ -90,7 +90,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLegendEntryCollectionLoadOptions.visible
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#visible:member'
     summary: |-
       For EACH ITEM in the collection: Represents the visible of a chart legend entry.
 
@@ -105,7 +105,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLegendEntryCollectionLoadOptions.width
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#width:member'
     summary: |-
       For EACH ITEM in the collection: Represents the width of the legendEntry on the chart Legend.
 

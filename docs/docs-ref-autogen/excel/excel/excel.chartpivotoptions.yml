@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartPivotOptions
+  - uid: 'excel!Excel.ChartPivotOptions:class'
     summary: |-
       Encapsulates the options for the pivot chart.
 
@@ -11,21 +11,21 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.ChartPivotOptions.context
-      - excel.Excel.ChartPivotOptions.load
-      - excel.Excel.ChartPivotOptions.load_1
-      - excel.Excel.ChartPivotOptions.load_2
-      - excel.Excel.ChartPivotOptions.set
-      - excel.Excel.ChartPivotOptions.set_1
-      - excel.Excel.ChartPivotOptions.showAxisFieldButtons
-      - excel.Excel.ChartPivotOptions.showLegendFieldButtons
-      - excel.Excel.ChartPivotOptions.showReportFilterFieldButtons
-      - excel.Excel.ChartPivotOptions.showValueFieldButtons
-      - excel.Excel.ChartPivotOptions.toJSON
-  - uid: excel.Excel.ChartPivotOptions.context
+      - 'excel!Excel.ChartPivotOptions#context:member'
+      - 'excel!Excel.ChartPivotOptions#load:member(1)'
+      - 'excel!Excel.ChartPivotOptions#load:member(2)'
+      - 'excel!Excel.ChartPivotOptions#load:member(3)'
+      - 'excel!Excel.ChartPivotOptions#set:member(1)'
+      - 'excel!Excel.ChartPivotOptions#set:member(2)'
+      - 'excel!Excel.ChartPivotOptions#showAxisFieldButtons:member'
+      - 'excel!Excel.ChartPivotOptions#showLegendFieldButtons:member'
+      - 'excel!Excel.ChartPivotOptions#showReportFilterFieldButtons:member'
+      - 'excel!Excel.ChartPivotOptions#showValueFieldButtons:member'
+      - 'excel!Excel.ChartPivotOptions#toJSON:member(1)'
+  - uid: 'excel!Excel.ChartPivotOptions#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -38,8 +38,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartPivotOptions.load
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartPivotOptions#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -70,14 +70,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartPivotOptionsLoadOptions): Excel.ChartPivotOptions;'
       return:
         type:
-          - excel.Excel.ChartPivotOptions
+          - 'excel!Excel.ChartPivotOptions:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartPivotOptionsLoadOptions
-  - uid: excel.Excel.ChartPivotOptions.load_1
+            - 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions:interface'
+  - uid: 'excel!Excel.ChartPivotOptions#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -90,14 +90,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartPivotOptions;'
       return:
         type:
-          - excel.Excel.ChartPivotOptions
+          - 'excel!Excel.ChartPivotOptions:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartPivotOptions.load_2
+  - uid: 'excel!Excel.ChartPivotOptions#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -110,7 +110,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartPivotOptions;'
       return:
         type:
-          - excel.Excel.ChartPivotOptions
+          - 'excel!Excel.ChartPivotOptions:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -119,7 +119,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartPivotOptions.set
+  - uid: 'excel!Excel.ChartPivotOptions#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -144,12 +144,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.ChartPivotOptionsUpdateData
+            - 'excel!Excel.Interfaces.ChartPivotOptionsUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartPivotOptions.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.ChartPivotOptions#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -166,8 +166,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartPivotOptions
-  - uid: excel.Excel.ChartPivotOptions.showAxisFieldButtons
+            - 'excel!Excel.ChartPivotOptions:class'
+  - uid: 'excel!Excel.ChartPivotOptions#showAxisFieldButtons:member'
     summary: >-
       Specifies whether or not to display the axis field buttons on a PivotChart. The ShowAxisFieldButtons property
       corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab,
@@ -185,7 +185,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartPivotOptions.showLegendFieldButtons
+  - uid: 'excel!Excel.ChartPivotOptions#showLegendFieldButtons:member'
     summary: |-
       Specifies whether or not to display the legend field buttons on a PivotChart
 
@@ -200,7 +200,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartPivotOptions.showReportFilterFieldButtons
+  - uid: 'excel!Excel.ChartPivotOptions#showReportFilterFieldButtons:member'
     summary: |-
       Specifies whether or not to display the report filter field buttons on a PivotChart.
 
@@ -215,7 +215,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartPivotOptions.showValueFieldButtons
+  - uid: 'excel!Excel.ChartPivotOptions#showValueFieldButtons:member'
     summary: |-
       Specifies whether or not to display the show value field buttons on a PivotChart
 
@@ -230,7 +230,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartPivotOptions.toJSON
+  - uid: 'excel!Excel.ChartPivotOptions#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -246,5 +246,20 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartPivotOptionsData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPivotOptionsData
+          - 'excel!Excel.Interfaces.ChartPivotOptionsData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ChartPivotOptions:class'
+    name: Excel.ChartPivotOptions
+  - uid: 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions:interface'
+    name: Excel.Interfaces.ChartPivotOptionsLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartPivotOptionsUpdateData:interface'
+    name: Interfaces.ChartPivotOptionsUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.ChartPivotOptionsData:interface'
+    name: Excel.Interfaces.ChartPivotOptionsData

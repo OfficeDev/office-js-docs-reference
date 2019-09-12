@@ -1,32 +1,32 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartTickLabelAlignment
+  - uid: 'excel!Excel.ChartTickLabelAlignment:enum'
     summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartTickLabelAlignment
     fullName: Excel.ChartTickLabelAlignment
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartTickLabelAlignment.center
-      - excel.Excel.ChartTickLabelAlignment.left
-      - excel.Excel.ChartTickLabelAlignment.right
-  - uid: excel.Excel.ChartTickLabelAlignment.center
+      - 'excel!Excel.ChartTickLabelAlignment.center:member'
+      - 'excel!Excel.ChartTickLabelAlignment.left:member'
+      - 'excel!Excel.ChartTickLabelAlignment.right:member'
+  - uid: 'excel!Excel.ChartTickLabelAlignment.center:member'
     name: center
     fullName: center
     langs:
       - typeScript
     type: field
     numericValue: '"Center"'
-  - uid: excel.Excel.ChartTickLabelAlignment.left
+  - uid: 'excel!Excel.ChartTickLabelAlignment.left:member'
     name: left
     fullName: left
     langs:
       - typeScript
     type: field
     numericValue: '"Left"'
-  - uid: excel.Excel.ChartTickLabelAlignment.right
+  - uid: 'excel!Excel.ChartTickLabelAlignment.right:member'
     name: right
     fullName: right
     langs:

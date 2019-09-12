@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.SortBy
+  - uid: 'excel!Excel.SortBy:enum'
     summary: |-
       Represents the sort direction.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.SortBy.ascending
-      - excel.Excel.SortBy.descending
-  - uid: excel.Excel.SortBy.ascending
+      - 'excel!Excel.SortBy.ascending:member'
+      - 'excel!Excel.SortBy.descending:member'
+  - uid: 'excel!Excel.SortBy.ascending:member'
     summary: Ascending sort. Smallest to largest or A to Z.
     name: ascending
     fullName: ascending
@@ -22,7 +22,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Ascending"'
-  - uid: excel.Excel.SortBy.descending
+  - uid: 'excel!Excel.SortBy.descending:member'
     summary: Descending sort. Largest to smallest or Z to A.
     name: descending
     fullName: descending

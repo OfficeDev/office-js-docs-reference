@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions:interface'
     summary: |-
       This object represents the attributes for a chart's error bars.
 
@@ -10,15 +10,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartErrorBarsLoadOptions.$all
-      - excel.Excel.Interfaces.ChartErrorBarsLoadOptions.endStyleCap
-      - excel.Excel.Interfaces.ChartErrorBarsLoadOptions.format
-      - excel.Excel.Interfaces.ChartErrorBarsLoadOptions.include
-      - excel.Excel.Interfaces.ChartErrorBarsLoadOptions.type
-      - excel.Excel.Interfaces.ChartErrorBarsLoadOptions.visible
-  - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#endStyleCap:member'
+      - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#include:member'
+      - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#type:member'
+      - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#visible:member'
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions.endStyleCap
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#endStyleCap:member'
     summary: |-
       Specifies whether or not the error bars have an end style cap.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions.format
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#format:member'
     summary: |-
       Specifies the formatting type of the error bars.
 
@@ -58,8 +58,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartErrorBarsFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions
-  - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions.include
+          - 'excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#include:member'
     summary: |-
       Specifies which parts of the error bars to include.
 
@@ -74,7 +74,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions.type
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#type:member'
     summary: |-
       The type of range marked by the error bars.
 
@@ -89,7 +89,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions.visible
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#visible:member'
     summary: |-
       Specifies whether or not the error bars are displayed.
 
@@ -104,3 +104,6 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartErrorBarsFormatLoadOptions

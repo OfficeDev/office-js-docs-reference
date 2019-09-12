@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TimelineStyleUpdateData
+  - uid: 'excel!Excel.Interfaces.TimelineStyleUpdateData:interface'
     summary: >-
       An interface for updating data on the TimelineStyle object, for use in "timelineStyle.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TimelineStyleUpdateData.name
-  - uid: excel.Excel.Interfaces.TimelineStyleUpdateData.name
+      - 'excel!Excel.Interfaces.TimelineStyleUpdateData#name:member'
+  - uid: 'excel!Excel.Interfaces.TimelineStyleUpdateData#name:member'
     summary: >-
       Gets the name of the TimelineStyle.
 

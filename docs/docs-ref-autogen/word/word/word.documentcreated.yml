@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.DocumentCreated
+  - uid: 'word!Word.DocumentCreated:class'
     summary: >-
       The DocumentCreated object is the top level object created by Application.CreateDocument. A DocumentCreated object
       is a special Document object.
@@ -13,31 +13,31 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: word
+      - 'word!OfficeExtension.ClientObject:class'
+    package: word!
     children:
-      - word.Word.DocumentCreated.body
-      - word.Word.DocumentCreated.contentControls
-      - word.Word.DocumentCreated.context
-      - word.Word.DocumentCreated.customXmlParts
-      - word.Word.DocumentCreated.deleteBookmark
-      - word.Word.DocumentCreated.getBookmarkRange
-      - word.Word.DocumentCreated.getBookmarkRangeOrNullObject
-      - word.Word.DocumentCreated.load
-      - word.Word.DocumentCreated.load_1
-      - word.Word.DocumentCreated.load_2
-      - word.Word.DocumentCreated.open
-      - word.Word.DocumentCreated.properties
-      - word.Word.DocumentCreated.save
-      - word.Word.DocumentCreated.saved
-      - word.Word.DocumentCreated.sections
-      - word.Word.DocumentCreated.set
-      - word.Word.DocumentCreated.set_1
-      - word.Word.DocumentCreated.settings
-      - word.Word.DocumentCreated.toJSON
-      - word.Word.DocumentCreated.track
-      - word.Word.DocumentCreated.untrack
-  - uid: word.Word.DocumentCreated.body
+      - 'word!Word.DocumentCreated#body:member'
+      - 'word!Word.DocumentCreated#contentControls:member'
+      - 'word!Word.DocumentCreated#context:member'
+      - 'word!Word.DocumentCreated#customXmlParts:member'
+      - 'word!Word.DocumentCreated#deleteBookmark:member(1)'
+      - 'word!Word.DocumentCreated#getBookmarkRange:member(1)'
+      - 'word!Word.DocumentCreated#getBookmarkRangeOrNullObject:member(1)'
+      - 'word!Word.DocumentCreated#load:member(1)'
+      - 'word!Word.DocumentCreated#load:member(2)'
+      - 'word!Word.DocumentCreated#load:member(3)'
+      - 'word!Word.DocumentCreated#open:member(1)'
+      - 'word!Word.DocumentCreated#properties:member'
+      - 'word!Word.DocumentCreated#save:member(1)'
+      - 'word!Word.DocumentCreated#saved:member'
+      - 'word!Word.DocumentCreated#sections:member'
+      - 'word!Word.DocumentCreated#set:member(1)'
+      - 'word!Word.DocumentCreated#set:member(2)'
+      - 'word!Word.DocumentCreated#settings:member'
+      - 'word!Word.DocumentCreated#toJSON:member(1)'
+      - 'word!Word.DocumentCreated#track:member(1)'
+      - 'word!Word.DocumentCreated#untrack:member(1)'
+  - uid: 'word!Word.DocumentCreated#body:member'
     summary: >-
       Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
       etc.. Read-only.
@@ -55,8 +55,8 @@ items:
       content: 'readonly body: Word.Body;'
       return:
         type:
-          - word.Word.Body
-  - uid: word.Word.DocumentCreated.contentControls
+          - 'word!Word.Body:class'
+  - uid: 'word!Word.DocumentCreated#contentControls:member'
     summary: >-
       Gets the collection of content control objects in the document. This includes content controls in the body of the
       document, headers, footers, textboxes, etc.. Read-only.
@@ -74,8 +74,8 @@ items:
       content: 'readonly contentControls: Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
-  - uid: word.Word.DocumentCreated.context
+          - 'word!Word.ContentControlCollection:class'
+  - uid: 'word!Word.DocumentCreated#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -88,8 +88,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.DocumentCreated.customXmlParts
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.DocumentCreated#customXmlParts:member'
     summary: >-
       Gets the custom XML parts in the document. Read-only.
 
@@ -106,8 +106,8 @@ items:
       content: 'readonly customXmlParts: Word.CustomXmlPartCollection;'
       return:
         type:
-          - word.Word.CustomXmlPartCollection
-  - uid: word.Word.DocumentCreated.deleteBookmark
+          - 'word!Word.CustomXmlPartCollection:class'
+  - uid: 'word!Word.DocumentCreated#deleteBookmark:member(1)'
     summary: >-
       Deletes a bookmark, if exists, from the document.
 
@@ -131,7 +131,7 @@ items:
           description: 'Required. The bookmark name, which is case-insensitive.'
           type:
             - string
-  - uid: word.Word.DocumentCreated.getBookmarkRange
+  - uid: 'word!Word.DocumentCreated#getBookmarkRange:member(1)'
     summary: >-
       Gets a bookmark's range. Throws if the bookmark does not exist.
 
@@ -148,14 +148,14 @@ items:
       content: 'getBookmarkRange(name: string): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: name
           description: 'Required. The bookmark name, which is case-insensitive.'
           type:
             - string
-  - uid: word.Word.DocumentCreated.getBookmarkRangeOrNullObject
+  - uid: 'word!Word.DocumentCreated#getBookmarkRangeOrNullObject:member(1)'
     summary: >-
       Gets a bookmark's range. Returns a null object if the bookmark does not exist.
 
@@ -172,14 +172,14 @@ items:
       content: 'getBookmarkRangeOrNullObject(name: string): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: name
           description: 'Required. The bookmark name, which is case-insensitive.'
           type:
             - string
-  - uid: word.Word.DocumentCreated.load
+  - uid: 'word!Word.DocumentCreated#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -210,14 +210,14 @@ items:
       content: 'load(option?: Word.Interfaces.DocumentCreatedLoadOptions): Word.DocumentCreated;'
       return:
         type:
-          - word.Word.DocumentCreated
+          - 'word!Word.DocumentCreated:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.DocumentCreatedLoadOptions
-  - uid: word.Word.DocumentCreated.load_1
+            - 'word!Word.Interfaces.DocumentCreatedLoadOptions:interface'
+  - uid: 'word!Word.DocumentCreated#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -230,14 +230,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.DocumentCreated;'
       return:
         type:
-          - word.Word.DocumentCreated
+          - 'word!Word.DocumentCreated:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.DocumentCreated.load_2
+  - uid: 'word!Word.DocumentCreated#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -250,7 +250,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.DocumentCreated;'
       return:
         type:
-          - word.Word.DocumentCreated
+          - 'word!Word.DocumentCreated:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -259,7 +259,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: word.Word.DocumentCreated.open
+  - uid: 'word!Word.DocumentCreated#open:member(1)'
     summary: |-
       Opens the document.
 
@@ -275,7 +275,7 @@ items:
         type:
           - void
         description: ''
-  - uid: word.Word.DocumentCreated.properties
+  - uid: 'word!Word.DocumentCreated#properties:member'
     summary: >-
       Gets the properties of the document. Read-only.
 
@@ -292,8 +292,8 @@ items:
       content: 'readonly properties: Word.DocumentProperties;'
       return:
         type:
-          - word.Word.DocumentProperties
-  - uid: word.Word.DocumentCreated.save
+          - 'word!Word.DocumentProperties:class'
+  - uid: 'word!Word.DocumentCreated#save:member(1)'
     summary: >-
       Saves the document. This will use the Word default file naming convention if the document has not been saved
       before.
@@ -313,7 +313,7 @@ items:
         type:
           - void
         description: ''
-  - uid: word.Word.DocumentCreated.saved
+  - uid: 'word!Word.DocumentCreated#saved:member'
     summary: >-
       Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
       changed since it was saved. Read-only.
@@ -332,7 +332,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.DocumentCreated.sections
+  - uid: 'word!Word.DocumentCreated#sections:member'
     summary: >-
       Gets the collection of section objects in the document. Read-only.
 
@@ -349,8 +349,8 @@ items:
       content: 'readonly sections: Word.SectionCollection;'
       return:
         type:
-          - word.Word.SectionCollection
-  - uid: word.Word.DocumentCreated.set
+          - 'word!Word.SectionCollection:class'
+  - uid: 'word!Word.DocumentCreated#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -375,12 +375,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.DocumentCreatedUpdateData
+            - 'word!Word.Interfaces.DocumentCreatedUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: word.Word.DocumentCreated.set_1
+            - 'word!OfficeExtension.UpdateOptions:interface'
+  - uid: 'word!Word.DocumentCreated#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -397,8 +397,8 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.DocumentCreated
-  - uid: word.Word.DocumentCreated.settings
+            - 'word!Word.DocumentCreated:class'
+  - uid: 'word!Word.DocumentCreated#settings:member'
     summary: >-
       Gets the add-in's settings in the document. Read-only.
 
@@ -415,8 +415,8 @@ items:
       content: 'readonly settings: Word.SettingCollection;'
       return:
         type:
-          - word.Word.SettingCollection
-  - uid: word.Word.DocumentCreated.toJSON
+          - 'word!Word.SettingCollection:class'
+  - uid: 'word!Word.DocumentCreated#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -432,9 +432,9 @@ items:
       content: 'toJSON(): Word.Interfaces.DocumentCreatedData;'
       return:
         type:
-          - word.Word.Interfaces.DocumentCreatedData
+          - 'word!Word.Interfaces.DocumentCreatedData:interface'
         description: ''
-  - uid: word.Word.DocumentCreated.track
+  - uid: 'word!Word.DocumentCreated#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -450,9 +450,9 @@ items:
       content: 'track(): Word.DocumentCreated;'
       return:
         type:
-          - word.Word.DocumentCreated
+          - 'word!Word.DocumentCreated:class'
         description: ''
-  - uid: word.Word.DocumentCreated.untrack
+  - uid: 'word!Word.DocumentCreated#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -467,5 +467,34 @@ items:
       content: 'untrack(): Word.DocumentCreated;'
       return:
         type:
-          - word.Word.DocumentCreated
+          - 'word!Word.DocumentCreated:class'
         description: ''
+references:
+  - uid: 'word!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.Body:class'
+    name: Word.Body
+  - uid: 'word!Word.ContentControlCollection:class'
+    name: Word.ContentControlCollection
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.CustomXmlPartCollection:class'
+    name: Word.CustomXmlPartCollection
+  - uid: 'word!Word.Range:class'
+    name: Word.Range
+  - uid: 'word!Word.DocumentCreated:class'
+    name: Word.DocumentCreated
+  - uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions:interface'
+    name: Word.Interfaces.DocumentCreatedLoadOptions
+  - uid: 'word!Word.DocumentProperties:class'
+    name: Word.DocumentProperties
+  - uid: 'word!Word.SectionCollection:class'
+    name: Word.SectionCollection
+  - uid: 'word!Word.Interfaces.DocumentCreatedUpdateData:interface'
+    name: Interfaces.DocumentCreatedUpdateData
+  - uid: 'word!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'word!Word.SettingCollection:class'
+    name: Word.SettingCollection
+  - uid: 'word!Word.Interfaces.DocumentCreatedData:interface'
+    name: Word.Interfaces.DocumentCreatedData

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.Recipients
+  - uid: 'outlook!Office.Recipients:interface'
     summary: '\[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
     remarks: >-
       **[Minimum permission
@@ -13,15 +13,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.Recipients.addAsync
-      - outlook.Office.Recipients.addAsync_1
-      - outlook.Office.Recipients.getAsync
-      - outlook.Office.Recipients.getAsync_1
-      - outlook.Office.Recipients.setAsync
-      - outlook.Office.Recipients.setAsync_1
-  - uid: outlook.Office.Recipients.addAsync
+      - 'outlook!Office.Recipients#addAsync:member(1)'
+      - 'outlook!Office.Recipients#addAsync:member(2)'
+      - 'outlook!Office.Recipients#getAsync:member(1)'
+      - 'outlook!Office.Recipients#getAsync:member(2)'
+      - 'outlook!Office.Recipients#setAsync:member(1)'
+      - 'outlook!Office.Recipients#setAsync:member(2)'
+  - uid: 'outlook!Office.Recipients#addAsync:member(1)'
     summary: |-
       Adds a recipient list to the existing recipients for an appointment or message.
 
@@ -64,21 +64,21 @@ items:
         - id: recipients
           description: The recipients to add to the recipients list.
           type:
-            - '(string | EmailUser | EmailAddressDetails)[]'
+            - 'outlook!Office.Recipients#addAsync~0:complex'
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. If adding the recipients fails, the asyncResult.error property will
             contain an error code.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.Recipients.addAsync_1
+            - 'outlook!Office.Recipients#addAsync~1:complex'
+  - uid: 'outlook!Office.Recipients#addAsync:member(2)'
     summary: |-
       Adds a recipient list to the existing recipients for an appointment or message.
 
@@ -86,9 +86,9 @@ items:
 
       - Strings containing SMTP email addresses
 
-      - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
+      - [Office.EmailUser](xref:outlook!Office.EmailUser:interface) objects
 
-      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
+      - [Office.EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -153,21 +153,21 @@ items:
         - id: recipients
           description: The recipients to add to the recipients list.
           type:
-            - '(string | EmailUser | EmailAddressDetails)[]'
+            - 'outlook!Office.Recipients#addAsync~2:complex'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. If adding the recipients fails, the asyncResult.error property will
             contain an error code.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.Recipients.getAsync
+            - 'outlook!Office.Recipients#addAsync~3:complex'
+  - uid: 'outlook!Office.Recipients#getAsync:member(1)'
     summary: >-
       Gets a recipient list for an appointment or message.
 
 
       When the call completes, the asyncResult.value property will contain an array of
-      [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects.
+      [Office.EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects.
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -196,20 +196,20 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult. The `value` property of the result is an array of EmailAddressDetails objects.
           type:
-            - '(asyncResult: Office.AsyncResult<EmailAddressDetails[]>) => void'
-  - uid: outlook.Office.Recipients.getAsync_1
+            - 'outlook!Office.Recipients#getAsync~0:complex'
+  - uid: 'outlook!Office.Recipients#getAsync:member(2)'
     summary: >-
       Gets a recipient list for an appointment or message.
 
 
       When the call completes, the asyncResult.value property will contain an array of
-      [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects.
+      [Office.EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects.
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -258,8 +258,8 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult. The `value` property of the result is an array of EmailAddressDetails objects.
           type:
-            - '(asyncResult: Office.AsyncResult<EmailAddressDetails[]>) => void'
-  - uid: outlook.Office.Recipients.setAsync
+            - 'outlook!Office.Recipients#getAsync~1:complex'
+  - uid: 'outlook!Office.Recipients#setAsync:member(1)'
     summary: |-
       Sets a recipient list for an appointment or message.
 
@@ -269,9 +269,9 @@ items:
 
       - Strings containing SMTP email addresses
 
-      - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
+      - [Office.EmailUser](xref:outlook!Office.EmailUser:interface) objects
 
-      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
+      - [Office.EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -304,21 +304,21 @@ items:
         - id: recipients
           description: The recipients to add to the recipients list.
           type:
-            - '(string | EmailUser | EmailAddressDetails)[]'
+            - 'outlook!Office.Recipients#setAsync~0:complex'
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult. If setting the recipients fails the asyncResult.error property will contain a
             code that indicates any error that occurred while adding the data.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.Recipients.setAsync_1
+            - 'outlook!Office.Recipients#setAsync~1:complex'
+  - uid: 'outlook!Office.Recipients#setAsync:member(2)'
     summary: |-
       Sets a recipient list for an appointment or message.
 
@@ -328,9 +328,9 @@ items:
 
       - Strings containing SMTP email addresses
 
-      - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
+      - [Office.EmailUser](xref:outlook!Office.EmailUser:interface) objects
 
-      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
+      - [Office.EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -395,11 +395,154 @@ items:
         - id: recipients
           description: The recipients to add to the recipients list.
           type:
-            - '(string | EmailUser | EmailAddressDetails)[]'
+            - 'outlook!Office.Recipients#setAsync~2:complex'
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult. If setting the recipients fails the asyncResult.error property will contain a
             code that indicates any error that occurred while adding the data.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
+            - 'outlook!Office.Recipients#setAsync~3:complex'
+references:
+  - uid: 'outlook!Office.Recipients#addAsync~0:complex'
+    name: '(string | EmailUser | EmailAddressDetails)[]'
+    fullName: '(string | Office.EmailUser | Office.EmailAddressDetails)[]'
+    spec.typeScript:
+      - name: '(string | '
+        fullName: '(string | '
+      - uid: 'outlook!Office.EmailUser:interface'
+        name: EmailUser
+        fullName: Office.EmailUser
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'outlook!Office.EmailAddressDetails:interface'
+        name: EmailAddressDetails
+        fullName: Office.EmailAddressDetails
+      - name: ')[]'
+        fullName: ')[]'
+  - uid: 'outlook!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions
+  - uid: 'outlook!Office.Recipients#addAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.Recipients#addAsync~2:complex'
+    name: '(string | EmailUser | EmailAddressDetails)[]'
+    fullName: '(string | Office.EmailUser | Office.EmailAddressDetails)[]'
+    spec.typeScript:
+      - name: '(string | '
+        fullName: '(string | '
+      - uid: 'outlook!Office.EmailUser:interface'
+        name: EmailUser
+        fullName: Office.EmailUser
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'outlook!Office.EmailAddressDetails:interface'
+        name: EmailAddressDetails
+        fullName: Office.EmailAddressDetails
+      - name: ')[]'
+        fullName: ')[]'
+  - uid: 'outlook!Office.Recipients#addAsync~3:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.Recipients#getAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<EmailAddressDetails[]>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<Office.EmailAddressDetails[]>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'outlook!Office.EmailAddressDetails:interface'
+        name: EmailAddressDetails
+        fullName: Office.EmailAddressDetails
+      - name: '[]>) => void'
+        fullName: '[]>) => void'
+  - uid: 'outlook!Office.Recipients#getAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<EmailAddressDetails[]>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<Office.EmailAddressDetails[]>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'outlook!Office.EmailAddressDetails:interface'
+        name: EmailAddressDetails
+        fullName: Office.EmailAddressDetails
+      - name: '[]>) => void'
+        fullName: '[]>) => void'
+  - uid: 'outlook!Office.Recipients#setAsync~0:complex'
+    name: '(string | EmailUser | EmailAddressDetails)[]'
+    fullName: '(string | Office.EmailUser | Office.EmailAddressDetails)[]'
+    spec.typeScript:
+      - name: '(string | '
+        fullName: '(string | '
+      - uid: 'outlook!Office.EmailUser:interface'
+        name: EmailUser
+        fullName: Office.EmailUser
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'outlook!Office.EmailAddressDetails:interface'
+        name: EmailAddressDetails
+        fullName: Office.EmailAddressDetails
+      - name: ')[]'
+        fullName: ')[]'
+  - uid: 'outlook!Office.Recipients#setAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.Recipients#setAsync~2:complex'
+    name: '(string | EmailUser | EmailAddressDetails)[]'
+    fullName: '(string | Office.EmailUser | Office.EmailAddressDetails)[]'
+    spec.typeScript:
+      - name: '(string | '
+        fullName: '(string | '
+      - uid: 'outlook!Office.EmailUser:interface'
+        name: EmailUser
+        fullName: Office.EmailUser
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'outlook!Office.EmailAddressDetails:interface'
+        name: EmailAddressDetails
+        fullName: Office.EmailAddressDetails
+      - name: ')[]'
+        fullName: ')[]'
+  - uid: 'outlook!Office.Recipients#setAsync~3:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void

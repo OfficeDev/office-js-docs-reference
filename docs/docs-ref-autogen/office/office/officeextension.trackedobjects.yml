@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.OfficeExtension.TrackedObjects
+  - uid: 'office!OfficeExtension.TrackedObjects:class'
     summary: >-
       Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more
       information.
@@ -9,13 +9,13 @@ items:
     langs:
       - typeScript
     type: class
-    package: office
+    package: office!
     children:
-      - office.OfficeExtension.TrackedObjects.add
-      - office.OfficeExtension.TrackedObjects.add_1
-      - office.OfficeExtension.TrackedObjects.remove
-      - office.OfficeExtension.TrackedObjects.remove_1
-  - uid: office.OfficeExtension.TrackedObjects.add
+      - 'office!OfficeExtension.TrackedObjects#add:member(1)'
+      - 'office!OfficeExtension.TrackedObjects#add:member(2)'
+      - 'office!OfficeExtension.TrackedObjects#remove:member(1)'
+      - 'office!OfficeExtension.TrackedObjects#remove:member(2)'
+  - uid: 'office!OfficeExtension.TrackedObjects#add:member(1)'
     summary: >-
       Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types
       require this. If you are using an object across ".sync" calls and outside the sequential execution of a ".run"
@@ -42,8 +42,8 @@ items:
         - id: object
           description: ''
           type:
-            - office.OfficeExtension.ClientObject
-  - uid: office.OfficeExtension.TrackedObjects.add_1
+            - 'office!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.TrackedObjects#add:member(2)'
     summary: >-
       Track a set of objects for automatic adjustment based on surrounding changes in the document. Only some object
       types require this. If you are using an object across ".sync" calls and outside the sequential execution of a
@@ -64,8 +64,8 @@ items:
         - id: objects
           description: ''
           type:
-            - 'ClientObject[]'
-  - uid: office.OfficeExtension.TrackedObjects.remove
+            - 'office!OfficeExtension.TrackedObjects#add~0:complex'
+  - uid: 'office!OfficeExtension.TrackedObjects#remove:member(1)'
     summary: >-
       Release the memory associated with an object that was previously added to this collection. Having many tracked
       objects slows down the host application, so please remember to free any objects you add, once you're done using
@@ -91,8 +91,8 @@ items:
         - id: object
           description: ''
           type:
-            - office.OfficeExtension.ClientObject
-  - uid: office.OfficeExtension.TrackedObjects.remove_1
+            - 'office!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.TrackedObjects#remove:member(2)'
     summary: >-
       Release the memory associated with an object that was previously added to this collection. Having many tracked
       objects slows down the host application, so please remember to free any objects you add, once you're done using
@@ -112,4 +112,25 @@ items:
         - id: objects
           description: ''
           type:
-            - 'ClientObject[]'
+            - 'office!OfficeExtension.TrackedObjects#remove~0:complex'
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: ClientObject
+  - uid: 'office!OfficeExtension.TrackedObjects#add~0:complex'
+    name: 'ClientObject[]'
+    fullName: 'OfficeExtension.ClientObject[]'
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientObject:class'
+        name: ClientObject
+        fullName: OfficeExtension.ClientObject
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'office!OfficeExtension.TrackedObjects#remove~0:complex'
+    name: 'ClientObject[]'
+    fullName: 'OfficeExtension.ClientObject[]'
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientObject:class'
+        name: ClientObject
+        fullName: OfficeExtension.ClientObject
+      - name: '[]'
+        fullName: '[]'

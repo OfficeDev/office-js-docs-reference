@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.ShapeViewData
+  - uid: 'visio!Visio.Interfaces.ShapeViewData:interface'
     summary: An interface describing the data returned by calling "shapeView.toJSON()".
     name: Visio.Interfaces.ShapeViewData
     fullName: Visio.Interfaces.ShapeViewData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.ShapeViewData.highlight
-  - uid: visio.Visio.Interfaces.ShapeViewData.highlight
+      - 'visio!Visio.Interfaces.ShapeViewData#highlight:member'
+  - uid: 'visio!Visio.Interfaces.ShapeViewData#highlight:member'
     summary: |-
       Represents the highlight around the shape.
 
@@ -24,4 +24,7 @@ items:
       content: 'highlight?: Visio.Highlight;'
       return:
         type:
-          - visio.Visio.Highlight
+          - 'visio!Visio.Highlight:interface'
+references:
+  - uid: 'visio!Visio.Highlight:interface'
+    name: Visio.Highlight

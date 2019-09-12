@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotTableStyleData
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleData:interface'
     summary: An interface describing the data returned by calling "pivotTableStyle.toJSON()".
     name: Excel.Interfaces.PivotTableStyleData
     fullName: Excel.Interfaces.PivotTableStyleData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotTableStyleData.name
-      - excel.Excel.Interfaces.PivotTableStyleData.readOnly
-  - uid: excel.Excel.Interfaces.PivotTableStyleData.name
+      - 'excel!Excel.Interfaces.PivotTableStyleData#name:member'
+      - 'excel!Excel.Interfaces.PivotTableStyleData#readOnly:member'
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleData#name:member'
     summary: >-
       Gets the name of the PivotTableStyle.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.PivotTableStyleData.readOnly
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleData#readOnly:member'
     summary: >-
       Specifies whether this PivotTableStyle object is read-only. Read-only.
 

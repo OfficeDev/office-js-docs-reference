@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartTrendlineCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartTrendlineCollection object, for use in
       "chartTrendlineCollection.set(<!-- -->{ ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartTrendlineCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.ChartTrendlineCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.ChartTrendlineCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: Excel.Interfaces.ChartTrendlineData[];'
       return:
         type:
-          - 'Excel.Interfaces.ChartTrendlineData[]'
+          - 'excel!Excel.Interfaces.ChartTrendlineCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.ChartTrendlineData[]'
+    fullName: 'Excel.Interfaces.ChartTrendlineData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ChartTrendlineData:interface'
+        name: Excel.Interfaces.ChartTrendlineData
+        fullName: Excel.Interfaces.ChartTrendlineData
+      - name: '[]'
+        fullName: '[]'

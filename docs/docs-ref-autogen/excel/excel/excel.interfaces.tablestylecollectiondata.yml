@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TableStyleCollectionData
+  - uid: 'excel!Excel.Interfaces.TableStyleCollectionData:interface'
     summary: An interface describing the data returned by calling "tableStyleCollection.toJSON()".
     name: Excel.Interfaces.TableStyleCollectionData
     fullName: Excel.Interfaces.TableStyleCollectionData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TableStyleCollectionData.items
-  - uid: excel.Excel.Interfaces.TableStyleCollectionData.items
+      - 'excel!Excel.Interfaces.TableStyleCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.TableStyleCollectionData#items:member'
     name: items
     fullName: items
     langs:
@@ -20,4 +20,14 @@ items:
       content: 'items?: Excel.Interfaces.TableStyleData[];'
       return:
         type:
-          - 'Excel.Interfaces.TableStyleData[]'
+          - 'excel!Excel.Interfaces.TableStyleCollectionData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.TableStyleCollectionData#items~0:complex'
+    name: 'Excel.Interfaces.TableStyleData[]'
+    fullName: 'Excel.Interfaces.TableStyleData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TableStyleData:interface'
+        name: Excel.Interfaces.TableStyleData
+        fullName: Excel.Interfaces.TableStyleData
+      - name: '[]'
+        fullName: '[]'

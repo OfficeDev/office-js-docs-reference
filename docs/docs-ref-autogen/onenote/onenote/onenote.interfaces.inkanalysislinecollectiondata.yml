@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLineCollectionData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionData:interface'
     summary: An interface describing the data returned by calling "inkAnalysisLineCollection.toJSON()".
     name: OneNote.Interfaces.InkAnalysisLineCollectionData
     fullName: OneNote.Interfaces.InkAnalysisLineCollectionData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkAnalysisLineCollectionData.items
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLineCollectionData.items
+      - 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionData#items:member'
     name: items
     fullName: items
     langs:
@@ -20,4 +20,14 @@ items:
       content: 'items?: OneNote.Interfaces.InkAnalysisLineData[];'
       return:
         type:
-          - 'OneNote.Interfaces.InkAnalysisLineData[]'
+          - 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionData#items~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionData#items~0:complex'
+    name: 'OneNote.Interfaces.InkAnalysisLineData[]'
+    fullName: 'OneNote.Interfaces.InkAnalysisLineData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData:interface'
+        name: OneNote.Interfaces.InkAnalysisLineData
+        fullName: OneNote.Interfaces.InkAnalysisLineData
+      - name: '[]'
+        fullName: '[]'

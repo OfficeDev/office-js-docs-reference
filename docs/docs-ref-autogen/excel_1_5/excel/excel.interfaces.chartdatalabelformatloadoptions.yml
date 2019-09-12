@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartDataLabelFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface'
     summary: |-
       Encapsulates the format properties for the chart data labels.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartDataLabelFormatLoadOptions.$all
-      - excel.Excel.Interfaces.ChartDataLabelFormatLoadOptions.font
-  - uid: excel.Excel.Interfaces.ChartDataLabelFormatLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#font:member'
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -25,7 +25,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelFormatLoadOptions.font
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions#font:member'
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for a chart data label.
 
@@ -39,4 +39,7 @@ items:
       content: 'font?: Excel.Interfaces.ChartFontLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartFontLoadOptions
+          - 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
+    name: Excel.Interfaces.ChartFontLoadOptions

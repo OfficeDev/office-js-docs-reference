@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.ContentControlCollection
+  - uid: 'word!Word.ContentControlCollection:class'
     summary: >-
-      Contains a collection of [Word.ContentControl](xref:word.Word.ContentControl) objects. Content controls are
+      Contains a collection of [Word.ContentControl](xref:word!Word.ContentControl:class) objects. Content controls are
       bounded and potentially labeled regions in a document that serve as containers for specific types of content.
       Individual content controls may contain contents such as images, tables, or paragraphs of formatted text.
       Currently, only rich text content controls are supported.
@@ -15,22 +15,22 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: word
+      - 'word!OfficeExtension.ClientObject:class'
+    package: word!
     children:
-      - word.Word.ContentControlCollection.context
-      - word.Word.ContentControlCollection.getById
-      - word.Word.ContentControlCollection.getByTag
-      - word.Word.ContentControlCollection.getByTitle
-      - word.Word.ContentControlCollection.getItem
-      - word.Word.ContentControlCollection.items
-      - word.Word.ContentControlCollection.load
-      - word.Word.ContentControlCollection.load_1
-      - word.Word.ContentControlCollection.load_2
-      - word.Word.ContentControlCollection.toJSON
-      - word.Word.ContentControlCollection.track
-      - word.Word.ContentControlCollection.untrack
-  - uid: word.Word.ContentControlCollection.context
+      - 'word!Word.ContentControlCollection#context:member'
+      - 'word!Word.ContentControlCollection#getById:member(1)'
+      - 'word!Word.ContentControlCollection#getByTag:member(1)'
+      - 'word!Word.ContentControlCollection#getByTitle:member(1)'
+      - 'word!Word.ContentControlCollection#getItem:member(1)'
+      - 'word!Word.ContentControlCollection#items:member'
+      - 'word!Word.ContentControlCollection#load:member(1)'
+      - 'word!Word.ContentControlCollection#load:member(2)'
+      - 'word!Word.ContentControlCollection#load:member(3)'
+      - 'word!Word.ContentControlCollection#toJSON:member(1)'
+      - 'word!Word.ContentControlCollection#track:member(1)'
+      - 'word!Word.ContentControlCollection#untrack:member(1)'
+  - uid: 'word!Word.ContentControlCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -43,8 +43,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.ContentControlCollection.getById
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.ContentControlCollection#getById:member(1)'
     summary: >-
       Gets a content control by its identifier. Throws if there isn't a content control with the identifier in this
       collection.
@@ -60,7 +60,7 @@ items:
       content: 'getById(id: number): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
+          - 'word!Word.ContentControl:class'
         description: |-
 
 
@@ -121,7 +121,7 @@ items:
           description: Required. A content control identifier.
           type:
             - number
-  - uid: word.Word.ContentControlCollection.getByTag
+  - uid: 'word!Word.ContentControlCollection#getByTag:member(1)'
     summary: |-
       Gets the content controls that have the specified tag.
 
@@ -135,7 +135,7 @@ items:
       content: 'getByTag(tag: string): Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
+          - 'word!Word.ContentControlCollection:class'
         description: |-
 
 
@@ -193,7 +193,7 @@ items:
           description: Required. A tag set on a content control.
           type:
             - string
-  - uid: word.Word.ContentControlCollection.getByTitle
+  - uid: 'word!Word.ContentControlCollection#getByTitle:member(1)'
     summary: |-
       Gets the content controls that have the specified title.
 
@@ -207,7 +207,7 @@ items:
       content: 'getByTitle(title: string): Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
+          - 'word!Word.ContentControlCollection:class'
         description: |-
 
 
@@ -252,7 +252,7 @@ items:
           description: Required. The title of a content control.
           type:
             - string
-  - uid: word.Word.ContentControlCollection.getItem
+  - uid: 'word!Word.ContentControlCollection#getItem:member(1)'
     summary: |-
       Gets a content control by its index in the collection.
 
@@ -266,14 +266,14 @@ items:
       content: 'getItem(index: number): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
+          - 'word!Word.ContentControl:class'
         description: ''
       parameters:
         - id: index
           description: The index.
           type:
             - number
-  - uid: word.Word.ContentControlCollection.items
+  - uid: 'word!Word.ContentControlCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -284,8 +284,8 @@ items:
       content: 'readonly items: Word.ContentControl[];'
       return:
         type:
-          - 'Word.ContentControl[]'
-  - uid: word.Word.ContentControlCollection.load
+          - 'word!Word.ContentControlCollection#items~0:complex'
+  - uid: 'word!Word.ContentControlCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -398,14 +398,14 @@ items:
         Word.ContentControlCollection;
       return:
         type:
-          - word.Word.ContentControlCollection
+          - 'word!Word.ContentControlCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
-  - uid: word.Word.ContentControlCollection.load_1
+            - 'word!Word.ContentControlCollection#load~0:complex'
+  - uid: 'word!Word.ContentControlCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -418,14 +418,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
+          - 'word!Word.ContentControlCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.ContentControlCollection.load_2
+  - uid: 'word!Word.ContentControlCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -435,14 +435,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
+          - 'word!Word.ContentControlCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
-  - uid: word.Word.ContentControlCollection.toJSON
+            - 'word!OfficeExtension.LoadOption:interface'
+  - uid: 'word!Word.ContentControlCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -458,9 +458,9 @@ items:
       content: 'toJSON(): Word.Interfaces.ContentControlCollectionData;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlCollectionData
+          - 'word!Word.Interfaces.ContentControlCollectionData:interface'
         description: ''
-  - uid: word.Word.ContentControlCollection.track
+  - uid: 'word!Word.ContentControlCollection#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -476,9 +476,9 @@ items:
       content: 'track(): Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
+          - 'word!Word.ContentControlCollection:class'
         description: ''
-  - uid: word.Word.ContentControlCollection.untrack
+  - uid: 'word!Word.ContentControlCollection#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -493,5 +493,39 @@ items:
       content: 'untrack(): Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
+          - 'word!Word.ContentControlCollection:class'
         description: ''
+references:
+  - uid: 'word!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.ContentControl:class'
+    name: Word.ContentControl
+  - uid: 'word!Word.ContentControlCollection:class'
+    name: Word.ContentControlCollection
+  - uid: 'word!Word.ContentControlCollection#items~0:complex'
+    name: 'Word.ContentControl[]'
+    fullName: 'Word.ContentControl[]'
+    spec.typeScript:
+      - uid: 'word!Word.ContentControl:class'
+        name: Word.ContentControl
+        fullName: Word.ContentControl
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'word!Word.ContentControlCollection#load~0:complex'
+    name: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+    fullName: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions:interface'
+        name: Word.Interfaces.ContentControlCollectionLoadOptions
+        fullName: Word.Interfaces.ContentControlCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'word!Word.Interfaces.CollectionLoadOptions:interface'
+        name: Word.Interfaces.CollectionLoadOptions
+        fullName: Word.Interfaces.CollectionLoadOptions
+  - uid: 'word!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'word!Word.Interfaces.ContentControlCollectionData:interface'
+    name: Word.Interfaces.ContentControlCollectionData

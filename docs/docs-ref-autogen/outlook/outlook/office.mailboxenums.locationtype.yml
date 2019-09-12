@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.MailboxEnums.LocationType
+  - uid: 'outlook!Office.MailboxEnums.LocationType:enum'
     summary: |-
       Specifies an appointment location's type.
 
@@ -14,11 +14,11 @@ items:
     langs:
       - typeScript
     type: enum
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.MailboxEnums.LocationType.Custom
-      - outlook.Office.MailboxEnums.LocationType.Room
-  - uid: outlook.Office.MailboxEnums.LocationType.Custom
+      - 'outlook!Office.MailboxEnums.LocationType.Custom:member'
+      - 'outlook!Office.MailboxEnums.LocationType.Room:member'
+  - uid: 'outlook!Office.MailboxEnums.LocationType.Custom:member'
     summary: A custom location.
     isPreview: true
     name: Custom
@@ -27,7 +27,7 @@ items:
       - typeScript
     type: field
     numericValue: '"custom"'
-  - uid: outlook.Office.MailboxEnums.LocationType.Room
+  - uid: 'outlook!Office.MailboxEnums.LocationType.Room:member'
     summary: A conference room or similar resource.
     isPreview: true
     name: Room

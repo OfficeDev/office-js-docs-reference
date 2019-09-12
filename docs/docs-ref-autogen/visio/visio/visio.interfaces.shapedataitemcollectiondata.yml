@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.ShapeDataItemCollectionData
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionData:interface'
     summary: An interface describing the data returned by calling "shapeDataItemCollection.toJSON()".
     name: Visio.Interfaces.ShapeDataItemCollectionData
     fullName: Visio.Interfaces.ShapeDataItemCollectionData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.ShapeDataItemCollectionData.items
-  - uid: visio.Visio.Interfaces.ShapeDataItemCollectionData.items
+      - 'visio!Visio.Interfaces.ShapeDataItemCollectionData#items:member'
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionData#items:member'
     name: items
     fullName: items
     langs:
@@ -20,4 +20,14 @@ items:
       content: 'items?: Visio.Interfaces.ShapeDataItemData[];'
       return:
         type:
-          - 'Visio.Interfaces.ShapeDataItemData[]'
+          - 'visio!Visio.Interfaces.ShapeDataItemCollectionData#items~0:complex'
+references:
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionData#items~0:complex'
+    name: 'Visio.Interfaces.ShapeDataItemData[]'
+    fullName: 'Visio.Interfaces.ShapeDataItemData[]'
+    spec.typeScript:
+      - uid: 'visio!Visio.Interfaces.ShapeDataItemData:interface'
+        name: Visio.Interfaces.ShapeDataItemData
+        fullName: Visio.Interfaces.ShapeDataItemData
+      - name: '[]'
+        fullName: '[]'

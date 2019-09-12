@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.RecipientsChangedFields
+  - uid: 'outlook!Office.RecipientsChangedFields:interface'
     summary: |-
       Represents `RecipientsChangedEventArgs.changedRecipientsFields` object.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.RecipientsChangedFields.optionalAttendees
-      - outlook.Office.RecipientsChangedFields.requiredAttendees
-      - outlook.Office.RecipientsChangedFields.resources
-  - uid: outlook.Office.RecipientsChangedFields.optionalAttendees
+      - 'outlook!Office.RecipientsChangedFields#optionalAttendees:member'
+      - 'outlook!Office.RecipientsChangedFields#requiredAttendees:member'
+      - 'outlook!Office.RecipientsChangedFields#resources:member'
+  - uid: 'outlook!Office.RecipientsChangedFields#optionalAttendees:member'
     summary: |-
       Gets if optional attendees were changed.
 
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - boolean
-  - uid: outlook.Office.RecipientsChangedFields.requiredAttendees
+  - uid: 'outlook!Office.RecipientsChangedFields#requiredAttendees:member'
     summary: |-
       Gets if required attendees were changed.
 
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - boolean
-  - uid: outlook.Office.RecipientsChangedFields.resources
+  - uid: 'outlook!Office.RecipientsChangedFields#resources:member'
     summary: |-
       Gets if resources were changed.
 

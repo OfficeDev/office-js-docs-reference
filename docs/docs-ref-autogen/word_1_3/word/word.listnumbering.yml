@@ -1,56 +1,56 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.ListNumbering
+  - uid: 'word!Word.ListNumbering:enum'
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     name: Word.ListNumbering
     fullName: Word.ListNumbering
     langs:
       - typeScript
     type: enum
-    package: word
+    package: word!
     children:
-      - word.Word.ListNumbering.arabic
-      - word.Word.ListNumbering.lowerLetter
-      - word.Word.ListNumbering.lowerRoman
-      - word.Word.ListNumbering.none
-      - word.Word.ListNumbering.upperLetter
-      - word.Word.ListNumbering.upperRoman
-  - uid: word.Word.ListNumbering.arabic
+      - 'word!Word.ListNumbering.arabic:member'
+      - 'word!Word.ListNumbering.lowerLetter:member'
+      - 'word!Word.ListNumbering.lowerRoman:member'
+      - 'word!Word.ListNumbering.none:member'
+      - 'word!Word.ListNumbering.upperLetter:member'
+      - 'word!Word.ListNumbering.upperRoman:member'
+  - uid: 'word!Word.ListNumbering.arabic:member'
     name: arabic
     fullName: arabic
     langs:
       - typeScript
     type: field
     numericValue: '"Arabic"'
-  - uid: word.Word.ListNumbering.lowerLetter
+  - uid: 'word!Word.ListNumbering.lowerLetter:member'
     name: lowerLetter
     fullName: lowerLetter
     langs:
       - typeScript
     type: field
     numericValue: '"LowerLetter"'
-  - uid: word.Word.ListNumbering.lowerRoman
+  - uid: 'word!Word.ListNumbering.lowerRoman:member'
     name: lowerRoman
     fullName: lowerRoman
     langs:
       - typeScript
     type: field
     numericValue: '"LowerRoman"'
-  - uid: word.Word.ListNumbering.none
+  - uid: 'word!Word.ListNumbering.none:member'
     name: none
     fullName: none
     langs:
       - typeScript
     type: field
     numericValue: '"None"'
-  - uid: word.Word.ListNumbering.upperLetter
+  - uid: 'word!Word.ListNumbering.upperLetter:member'
     name: upperLetter
     fullName: upperLetter
     langs:
       - typeScript
     type: field
     numericValue: '"UpperLetter"'
-  - uid: word.Word.ListNumbering.upperRoman
+  - uid: 'word!Word.ListNumbering.upperRoman:member'
     name: upperRoman
     fullName: upperRoman
     langs:

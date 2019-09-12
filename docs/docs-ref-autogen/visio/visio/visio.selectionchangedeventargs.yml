@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.SelectionChangedEventArgs
+  - uid: 'visio!Visio.SelectionChangedEventArgs:interface'
     summary: |-
       Provides information about the shape collection that raised the SelectionChanged event.
 
@@ -10,7 +10,7 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     remarks: |-
 
 
@@ -62,9 +62,9 @@ items:
       }
       ```
     children:
-      - visio.Visio.SelectionChangedEventArgs.pageName
-      - visio.Visio.SelectionChangedEventArgs.shapeNames
-  - uid: visio.Visio.SelectionChangedEventArgs.pageName
+      - 'visio!Visio.SelectionChangedEventArgs#pageName:member'
+      - 'visio!Visio.SelectionChangedEventArgs#shapeNames:member'
+  - uid: 'visio!Visio.SelectionChangedEventArgs#pageName:member'
     summary: |-
       Gets the name of the page which has the ShapeCollection object that raised the SelectionChanged event.
 
@@ -79,7 +79,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.SelectionChangedEventArgs.shapeNames
+  - uid: 'visio!Visio.SelectionChangedEventArgs#shapeNames:member'
     summary: |-
       Gets the array of shape names that raised the SelectionChanged event.
 

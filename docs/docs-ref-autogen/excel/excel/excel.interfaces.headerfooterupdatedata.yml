@@ -1,21 +1,21 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.HeaderFooterUpdateData
+  - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData:interface'
     summary: 'An interface for updating data on the HeaderFooter object, for use in "headerFooter.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.HeaderFooterUpdateData
     fullName: Excel.Interfaces.HeaderFooterUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.HeaderFooterUpdateData.centerFooter
-      - excel.Excel.Interfaces.HeaderFooterUpdateData.centerHeader
-      - excel.Excel.Interfaces.HeaderFooterUpdateData.leftFooter
-      - excel.Excel.Interfaces.HeaderFooterUpdateData.leftHeader
-      - excel.Excel.Interfaces.HeaderFooterUpdateData.rightFooter
-      - excel.Excel.Interfaces.HeaderFooterUpdateData.rightHeader
-  - uid: excel.Excel.Interfaces.HeaderFooterUpdateData.centerFooter
+      - 'excel!Excel.Interfaces.HeaderFooterUpdateData#centerFooter:member'
+      - 'excel!Excel.Interfaces.HeaderFooterUpdateData#centerHeader:member'
+      - 'excel!Excel.Interfaces.HeaderFooterUpdateData#leftFooter:member'
+      - 'excel!Excel.Interfaces.HeaderFooterUpdateData#leftHeader:member'
+      - 'excel!Excel.Interfaces.HeaderFooterUpdateData#rightFooter:member'
+      - 'excel!Excel.Interfaces.HeaderFooterUpdateData#rightHeader:member'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#centerFooter:member'
     summary: >-
       Gets or sets the center footer of the worksheet. To apply font formatting or insert a variable value, use format
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.HeaderFooterUpdateData.centerHeader
+  - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#centerHeader:member'
     summary: >-
       Gets or sets the center header of the worksheet. To apply font formatting or insert a variable value, use format
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
@@ -49,7 +49,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.HeaderFooterUpdateData.leftFooter
+  - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#leftFooter:member'
     summary: >-
       Gets or sets the left footer of the worksheet. To apply font formatting or insert a variable value, use format
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
@@ -66,7 +66,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.HeaderFooterUpdateData.leftHeader
+  - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#leftHeader:member'
     summary: >-
       Gets or sets the left header of the worksheet. To apply font formatting or insert a variable value, use format
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
@@ -83,7 +83,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.HeaderFooterUpdateData.rightFooter
+  - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#rightFooter:member'
     summary: >-
       Gets or sets the right footer of the worksheet. To apply font formatting or insert a variable value, use format
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
@@ -100,7 +100,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.HeaderFooterUpdateData.rightHeader
+  - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#rightHeader:member'
     summary: >-
       Gets or sets the right header of the worksheet. To apply font formatting or insert a variable value, use format
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.

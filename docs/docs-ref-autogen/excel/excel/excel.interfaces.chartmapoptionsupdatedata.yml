@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartMapOptionsUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartMapOptions object, for use in "chartMapOptions.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,12 +9,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartMapOptionsUpdateData.labelStrategy
-      - excel.Excel.Interfaces.ChartMapOptionsUpdateData.level
-      - excel.Excel.Interfaces.ChartMapOptionsUpdateData.projectionType
-  - uid: excel.Excel.Interfaces.ChartMapOptionsUpdateData.labelStrategy
+      - 'excel!Excel.Interfaces.ChartMapOptionsUpdateData#labelStrategy:member'
+      - 'excel!Excel.Interfaces.ChartMapOptionsUpdateData#level:member'
+      - 'excel!Excel.Interfaces.ChartMapOptionsUpdateData#projectionType:member'
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsUpdateData#labelStrategy:member'
     summary: |-
       Returns or sets the series map labels strategy of a region map chart. Read/Write.
 
@@ -28,8 +28,8 @@ items:
       content: 'labelStrategy?: Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll";'
       return:
         type:
-          - Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll"
-  - uid: excel.Excel.Interfaces.ChartMapOptionsUpdateData.level
+          - 'excel!Excel.Interfaces.ChartMapOptionsUpdateData#labelStrategy~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsUpdateData#level:member'
     summary: |-
       Returns or sets the series mapping level of a region map chart. Read/Write.
 
@@ -45,10 +45,8 @@ items:
         "Continent" | "World";
       return:
         type:
-          - >-
-            Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" |
-            "World"
-  - uid: excel.Excel.Interfaces.ChartMapOptionsUpdateData.projectionType
+          - 'excel!Excel.Interfaces.ChartMapOptionsUpdateData#level~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsUpdateData#projectionType:member'
     summary: |-
       Returns or sets the series projection type of a region map chart. Read/Write.
 
@@ -62,4 +60,36 @@ items:
       content: 'projectionType?: Excel.ChartMapProjectionType | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers";'
       return:
         type:
-          - Excel.ChartMapProjectionType | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"
+          - 'excel!Excel.Interfaces.ChartMapOptionsUpdateData#projectionType~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsUpdateData#labelStrategy~0:complex'
+    name: Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll"
+    fullName: Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartMapLabelStrategy:enum'
+        name: Excel.ChartMapLabelStrategy
+        fullName: Excel.ChartMapLabelStrategy
+      - name: ' | "None" | "BestFit" | "ShowAll"'
+        fullName: ' | "None" | "BestFit" | "ShowAll"'
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsUpdateData#level~0:complex'
+    name: >-
+      Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" |
+      "World"
+    fullName: >-
+      Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" |
+      "World"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartMapAreaLevel:enum'
+        name: Excel.ChartMapAreaLevel
+        fullName: Excel.ChartMapAreaLevel
+      - name: ' | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" | "World"'
+        fullName: ' | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" | "World"'
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsUpdateData#projectionType~0:complex'
+    name: Excel.ChartMapProjectionType | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"
+    fullName: Excel.ChartMapProjectionType | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartMapProjectionType:enum'
+        name: Excel.ChartMapProjectionType
+        fullName: Excel.ChartMapProjectionType
+      - name: ' | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"'
+        fullName: ' | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"'

@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkStrokeData
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeData:interface'
     summary: An interface describing the data returned by calling "inkStroke.toJSON()".
     name: OneNote.Interfaces.InkStrokeData
     fullName: OneNote.Interfaces.InkStrokeData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkStrokeData.floatingInk
-      - onenote.OneNote.Interfaces.InkStrokeData.id
-  - uid: onenote.OneNote.Interfaces.InkStrokeData.floatingInk
+      - 'onenote!OneNote.Interfaces.InkStrokeData#floatingInk:member'
+      - 'onenote!OneNote.Interfaces.InkStrokeData#id:member'
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeData#floatingInk:member'
     summary: |-
       Gets the ID of the InkStroke object. Read-only.
 
@@ -25,8 +25,8 @@ items:
       content: 'floatingInk?: OneNote.Interfaces.FloatingInkData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.FloatingInkData
-  - uid: onenote.OneNote.Interfaces.InkStrokeData.id
+          - 'onenote!OneNote.Interfaces.FloatingInkData:interface'
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeData#id:member'
     summary: |-
       Gets the ID of the InkStroke object. Read-only.
 
@@ -41,3 +41,6 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'onenote!OneNote.Interfaces.FloatingInkData:interface'
+    name: OneNote.Interfaces.FloatingInkData

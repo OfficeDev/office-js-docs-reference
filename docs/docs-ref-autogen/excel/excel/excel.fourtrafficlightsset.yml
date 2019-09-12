@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.FourTrafficLightsSet
+  - uid: 'excel!Excel.FourTrafficLightsSet:interface'
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.FourTrafficLightsSet
     fullName: Excel.FourTrafficLightsSet
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.FourTrafficLightsSet.blackCircleWithBorder
-      - excel.Excel.FourTrafficLightsSet.greenCircle
-      - excel.Excel.FourTrafficLightsSet.redCircleWithBorder
-      - excel.Excel.FourTrafficLightsSet.yellowCircle
-  - uid: excel.Excel.FourTrafficLightsSet.blackCircleWithBorder
+      - 'excel!Excel.FourTrafficLightsSet#blackCircleWithBorder:member'
+      - 'excel!Excel.FourTrafficLightsSet#greenCircle:member'
+      - 'excel!Excel.FourTrafficLightsSet#redCircleWithBorder:member'
+      - 'excel!Excel.FourTrafficLightsSet#yellowCircle:member'
+  - uid: 'excel!Excel.FourTrafficLightsSet#blackCircleWithBorder:member'
     name: blackCircleWithBorder
     fullName: blackCircleWithBorder
     langs:
@@ -23,8 +23,8 @@ items:
       content: 'blackCircleWithBorder: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FourTrafficLightsSet.greenCircle
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourTrafficLightsSet#greenCircle:member'
     name: greenCircle
     fullName: greenCircle
     langs:
@@ -34,8 +34,8 @@ items:
       content: 'greenCircle: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FourTrafficLightsSet.redCircleWithBorder
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourTrafficLightsSet#redCircleWithBorder:member'
     name: redCircleWithBorder
     fullName: redCircleWithBorder
     langs:
@@ -45,8 +45,8 @@ items:
       content: 'redCircleWithBorder: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FourTrafficLightsSet.yellowCircle
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourTrafficLightsSet#yellowCircle:member'
     name: yellowCircle
     fullName: yellowCircle
     langs:
@@ -56,4 +56,7 @@ items:
       content: 'yellowCircle: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - 'excel!Excel.Icon:interface'
+references:
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon

@@ -1,20 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordData:interface'
     summary: An interface describing the data returned by calling "inkAnalysisWord.toJSON()".
     name: OneNote.Interfaces.InkAnalysisWordData
     fullName: OneNote.Interfaces.InkAnalysisWordData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkAnalysisWordData.id
-      - onenote.OneNote.Interfaces.InkAnalysisWordData.languageId
-      - onenote.OneNote.Interfaces.InkAnalysisWordData.line
-      - onenote.OneNote.Interfaces.InkAnalysisWordData.strokePointers
-      - onenote.OneNote.Interfaces.InkAnalysisWordData.wordAlternates
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordData.id
+      - 'onenote!OneNote.Interfaces.InkAnalysisWordData#id:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisWordData#languageId:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisWordData#line:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisWordData#strokePointers:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisWordData#wordAlternates:member'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordData#id:member'
     summary: |-
       Gets the ID of the InkAnalysisWord object. Read-only.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordData.languageId
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordData#languageId:member'
     summary: |-
       The id of the recognized language in this inkAnalysisWord. Read-only.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordData.line
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordData#line:member'
     summary: |-
       Reference to the parent InkAnalysisLine. Read-only.
 
@@ -58,8 +58,8 @@ items:
       content: 'line?: OneNote.Interfaces.InkAnalysisLineData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisLineData
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordData.strokePointers
+          - 'onenote!OneNote.Interfaces.InkAnalysisLineData:interface'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordData#strokePointers:member'
     summary: |-
       Weak references to the ink strokes that were recognized as part of this ink analysis word. Read-only.
 
@@ -73,8 +73,8 @@ items:
       content: 'strokePointers?: OneNote.InkStrokePointer[];'
       return:
         type:
-          - 'OneNote.InkStrokePointer[]'
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordData.wordAlternates
+          - 'onenote!OneNote.Interfaces.InkAnalysisWordData#strokePointers~0:complex'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordData#wordAlternates:member'
     summary: |-
       The words that were recognized in this ink word, in order of likelihood. Read-only.
 
@@ -89,3 +89,15 @@ items:
       return:
         type:
           - 'string[]'
+references:
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData:interface'
+    name: OneNote.Interfaces.InkAnalysisLineData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordData#strokePointers~0:complex'
+    name: 'OneNote.InkStrokePointer[]'
+    fullName: 'OneNote.InkStrokePointer[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.InkStrokePointer:interface'
+        name: OneNote.InkStrokePointer
+        fullName: OneNote.InkStrokePointer
+      - name: '[]'
+        fullName: '[]'

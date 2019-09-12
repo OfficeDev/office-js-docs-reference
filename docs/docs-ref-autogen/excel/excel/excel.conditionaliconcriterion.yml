@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalIconCriterion
+  - uid: 'excel!Excel.ConditionalIconCriterion:interface'
     summary: >-
       Represents an Icon Criterion which contains a type, value, an Operator, and an optional custom icon, if not using
       an iconset.
@@ -12,13 +12,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalIconCriterion.customIcon
-      - excel.Excel.ConditionalIconCriterion.formula
-      - excel.Excel.ConditionalIconCriterion.operator
-      - excel.Excel.ConditionalIconCriterion.type
-  - uid: excel.Excel.ConditionalIconCriterion.customIcon
+      - 'excel!Excel.ConditionalIconCriterion#customIcon:member'
+      - 'excel!Excel.ConditionalIconCriterion#formula:member'
+      - 'excel!Excel.ConditionalIconCriterion#operator:member'
+      - 'excel!Excel.ConditionalIconCriterion#type:member'
+  - uid: 'excel!Excel.ConditionalIconCriterion#customIcon:member'
     summary: |-
       The custom icon for the current criterion if different from the default IconSet, else null will be returned.
 
@@ -32,8 +32,8 @@ items:
       content: 'customIcon?: Excel.Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.ConditionalIconCriterion.formula
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ConditionalIconCriterion#formula:member'
     summary: |-
       A number or a formula depending on the type.
 
@@ -93,7 +93,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.ConditionalIconCriterion.operator
+  - uid: 'excel!Excel.ConditionalIconCriterion#operator:member'
     summary: |-
       GreaterThan or GreaterThanOrEqual for each of the rule type for the Icon conditional format.
 
@@ -107,7 +107,7 @@ items:
       content: 'operator: Excel.ConditionalIconCriterionOperator | "Invalid" | "GreaterThan" | "GreaterThanOrEqual";'
       return:
         type:
-          - Excel.ConditionalIconCriterionOperator | "Invalid" | "GreaterThan" | "GreaterThanOrEqual"
+          - 'excel!Excel.ConditionalIconCriterion#operator~0:complex'
         description: |-
 
 
@@ -165,7 +165,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.ConditionalIconCriterion.type
+  - uid: 'excel!Excel.ConditionalIconCriterion#type:member'
     summary: |-
       What the icon conditional formula should be based on.
 
@@ -179,7 +179,7 @@ items:
       content: 'type: Excel.ConditionalFormatIconRuleType | "Invalid" | "Number" | "Percent" | "Formula" | "Percentile";'
       return:
         type:
-          - Excel.ConditionalFormatIconRuleType | "Invalid" | "Number" | "Percent" | "Formula" | "Percentile"
+          - 'excel!Excel.ConditionalIconCriterion#type~0:complex'
         description: |-
 
 
@@ -225,3 +225,24 @@ items:
               await context.sync();
           });
           ```
+references:
+  - uid: 'excel!Excel.Icon:interface'
+    name: Excel.Icon
+  - uid: 'excel!Excel.ConditionalIconCriterion#operator~0:complex'
+    name: Excel.ConditionalIconCriterionOperator | "Invalid" | "GreaterThan" | "GreaterThanOrEqual"
+    fullName: Excel.ConditionalIconCriterionOperator | "Invalid" | "GreaterThan" | "GreaterThanOrEqual"
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalIconCriterionOperator:enum'
+        name: Excel.ConditionalIconCriterionOperator
+        fullName: Excel.ConditionalIconCriterionOperator
+      - name: ' | "Invalid" | "GreaterThan" | "GreaterThanOrEqual"'
+        fullName: ' | "Invalid" | "GreaterThan" | "GreaterThanOrEqual"'
+  - uid: 'excel!Excel.ConditionalIconCriterion#type~0:complex'
+    name: Excel.ConditionalFormatIconRuleType | "Invalid" | "Number" | "Percent" | "Formula" | "Percentile"
+    fullName: Excel.ConditionalFormatIconRuleType | "Invalid" | "Number" | "Percent" | "Formula" | "Percentile"
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalFormatIconRuleType:enum'
+        name: Excel.ConditionalFormatIconRuleType
+        fullName: Excel.ConditionalFormatIconRuleType
+      - name: ' | "Invalid" | "Number" | "Percent" | "Formula" | "Percentile"'
+        fullName: ' | "Invalid" | "Number" | "Percent" | "Formula" | "Percentile"'

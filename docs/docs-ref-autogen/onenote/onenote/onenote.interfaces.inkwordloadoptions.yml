@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkWordLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkWordLoadOptions:interface'
     summary: |-
       A container for the ink in a word in a paragraph.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkWordLoadOptions.$all
-      - onenote.OneNote.Interfaces.InkWordLoadOptions.id
-      - onenote.OneNote.Interfaces.InkWordLoadOptions.languageId
-      - onenote.OneNote.Interfaces.InkWordLoadOptions.paragraph
-      - onenote.OneNote.Interfaces.InkWordLoadOptions.wordAlternates
-  - uid: onenote.OneNote.Interfaces.InkWordLoadOptions.$all
+      - 'onenote!OneNote.Interfaces.InkWordLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.InkWordLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.InkWordLoadOptions#languageId:member'
+      - 'onenote!OneNote.Interfaces.InkWordLoadOptions#paragraph:member'
+      - 'onenote!OneNote.Interfaces.InkWordLoadOptions#wordAlternates:member'
+  - uid: 'onenote!OneNote.Interfaces.InkWordLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.InkWordLoadOptions.id
+  - uid: 'onenote!OneNote.Interfaces.InkWordLoadOptions#id:member'
     summary: |-
       Gets the ID of the InkWord object. Read-only.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.InkWordLoadOptions.languageId
+  - uid: 'onenote!OneNote.Interfaces.InkWordLoadOptions#languageId:member'
     summary: |-
       The id of the recognized language in this ink word. Read-only.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.InkWordLoadOptions.paragraph
+  - uid: 'onenote!OneNote.Interfaces.InkWordLoadOptions#paragraph:member'
     summary: |-
       The parent paragraph containing the ink word.
 
@@ -72,8 +72,8 @@ items:
       content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphLoadOptions
-  - uid: onenote.OneNote.Interfaces.InkWordLoadOptions.wordAlternates
+          - 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.InkWordLoadOptions#wordAlternates:member'
     summary: |-
       The words that were recognized in this ink word, in order of likelihood. Read-only.
 
@@ -88,3 +88,6 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
+    name: OneNote.Interfaces.ParagraphLoadOptions

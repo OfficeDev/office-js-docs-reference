@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ThreeTrafficLights2Set
+  - uid: 'excel!Excel.ThreeTrafficLights2Set:interface'
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ThreeTrafficLights2Set
     fullName: Excel.ThreeTrafficLights2Set
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ThreeTrafficLights2Set.greenTrafficLight
-      - excel.Excel.ThreeTrafficLights2Set.redTrafficLight
-      - excel.Excel.ThreeTrafficLights2Set.yellowTrafficLight
-  - uid: excel.Excel.ThreeTrafficLights2Set.greenTrafficLight
+      - 'excel!Excel.ThreeTrafficLights2Set#greenTrafficLight:member'
+      - 'excel!Excel.ThreeTrafficLights2Set#redTrafficLight:member'
+      - 'excel!Excel.ThreeTrafficLights2Set#yellowTrafficLight:member'
+  - uid: 'excel!Excel.ThreeTrafficLights2Set#greenTrafficLight:member'
     name: greenTrafficLight
     fullName: greenTrafficLight
     langs:
@@ -22,8 +22,8 @@ items:
       content: 'greenTrafficLight: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.ThreeTrafficLights2Set.redTrafficLight
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeTrafficLights2Set#redTrafficLight:member'
     name: redTrafficLight
     fullName: redTrafficLight
     langs:
@@ -33,8 +33,8 @@ items:
       content: 'redTrafficLight: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.ThreeTrafficLights2Set.yellowTrafficLight
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeTrafficLights2Set#yellowTrafficLight:member'
     name: yellowTrafficLight
     fullName: yellowTrafficLight
     langs:
@@ -44,4 +44,7 @@ items:
       content: 'yellowTrafficLight: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - 'excel!Excel.Icon:interface'
+references:
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon

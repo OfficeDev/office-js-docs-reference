@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.InkAnalysisWord
+  - uid: 'onenote!OneNote.InkAnalysisWord:class'
     summary: |-
       Represents ink analysis data for an identified word formed by ink strokes.
 
@@ -11,24 +11,24 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: onenote
+      - 'onenote!OfficeExtension.ClientObject:class'
+    package: onenote!
     children:
-      - onenote.OneNote.InkAnalysisWord.context
-      - onenote.OneNote.InkAnalysisWord.id
-      - onenote.OneNote.InkAnalysisWord.languageId
-      - onenote.OneNote.InkAnalysisWord.line
-      - onenote.OneNote.InkAnalysisWord.load
-      - onenote.OneNote.InkAnalysisWord.load_1
-      - onenote.OneNote.InkAnalysisWord.load_2
-      - onenote.OneNote.InkAnalysisWord.set
-      - onenote.OneNote.InkAnalysisWord.set_1
-      - onenote.OneNote.InkAnalysisWord.strokePointers
-      - onenote.OneNote.InkAnalysisWord.toJSON
-      - onenote.OneNote.InkAnalysisWord.track
-      - onenote.OneNote.InkAnalysisWord.untrack
-      - onenote.OneNote.InkAnalysisWord.wordAlternates
-  - uid: onenote.OneNote.InkAnalysisWord.context
+      - 'onenote!OneNote.InkAnalysisWord#context:member'
+      - 'onenote!OneNote.InkAnalysisWord#id:member'
+      - 'onenote!OneNote.InkAnalysisWord#languageId:member'
+      - 'onenote!OneNote.InkAnalysisWord#line:member'
+      - 'onenote!OneNote.InkAnalysisWord#load:member(1)'
+      - 'onenote!OneNote.InkAnalysisWord#load:member(2)'
+      - 'onenote!OneNote.InkAnalysisWord#load:member(3)'
+      - 'onenote!OneNote.InkAnalysisWord#set:member(1)'
+      - 'onenote!OneNote.InkAnalysisWord#set:member(2)'
+      - 'onenote!OneNote.InkAnalysisWord#strokePointers:member'
+      - 'onenote!OneNote.InkAnalysisWord#toJSON:member(1)'
+      - 'onenote!OneNote.InkAnalysisWord#track:member(1)'
+      - 'onenote!OneNote.InkAnalysisWord#untrack:member(1)'
+      - 'onenote!OneNote.InkAnalysisWord#wordAlternates:member'
+  - uid: 'onenote!OneNote.InkAnalysisWord#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -41,8 +41,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
-  - uid: onenote.OneNote.InkAnalysisWord.id
+          - 'onenote!OneNote.RequestContext:class'
+  - uid: 'onenote!OneNote.InkAnalysisWord#id:member'
     summary: |-
       Gets the ID of the InkAnalysisWord object. Read-only.
 
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.InkAnalysisWord.languageId
+  - uid: 'onenote!OneNote.InkAnalysisWord#languageId:member'
     summary: |-
       The id of the recognized language in this inkAnalysisWord. Read-only.
 
@@ -72,7 +72,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.InkAnalysisWord.line
+  - uid: 'onenote!OneNote.InkAnalysisWord#line:member'
     summary: |-
       Reference to the parent InkAnalysisLine. Read-only.
 
@@ -86,8 +86,8 @@ items:
       content: 'readonly line: OneNote.InkAnalysisLine;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisLine
-  - uid: onenote.OneNote.InkAnalysisWord.load
+          - 'onenote!OneNote.InkAnalysisLine:class'
+  - uid: 'onenote!OneNote.InkAnalysisWord#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -118,14 +118,14 @@ items:
       content: 'load(option?: OneNote.Interfaces.InkAnalysisWordLoadOptions): OneNote.InkAnalysisWord;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisWord
+          - 'onenote!OneNote.InkAnalysisWord:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.InkAnalysisWordLoadOptions
-  - uid: onenote.OneNote.InkAnalysisWord.load_1
+            - 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions:interface'
+  - uid: 'onenote!OneNote.InkAnalysisWord#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -138,7 +138,7 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.InkAnalysisWord;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisWord
+          - 'onenote!OneNote.InkAnalysisWord:class'
         description: |-
 
 
@@ -185,7 +185,7 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.InkAnalysisWord.load_2
+  - uid: 'onenote!OneNote.InkAnalysisWord#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -198,7 +198,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.InkAnalysisWord;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisWord
+          - 'onenote!OneNote.InkAnalysisWord:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -207,7 +207,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: onenote.OneNote.InkAnalysisWord.set
+  - uid: 'onenote!OneNote.InkAnalysisWord#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -232,12 +232,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.InkAnalysisWordUpdateData
+            - 'onenote!OneNote.Interfaces.InkAnalysisWordUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: onenote.OneNote.InkAnalysisWord.set_1
+            - 'onenote!OfficeExtension.UpdateOptions:interface'
+  - uid: 'onenote!OneNote.InkAnalysisWord#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -254,8 +254,8 @@ items:
         - id: properties
           description: ''
           type:
-            - onenote.OneNote.InkAnalysisWord
-  - uid: onenote.OneNote.InkAnalysisWord.strokePointers
+            - 'onenote!OneNote.InkAnalysisWord:class'
+  - uid: 'onenote!OneNote.InkAnalysisWord#strokePointers:member'
     summary: |-
       Weak references to the ink strokes that were recognized as part of this ink analysis word. Read-only.
 
@@ -269,8 +269,8 @@ items:
       content: 'readonly strokePointers: OneNote.InkStrokePointer[];'
       return:
         type:
-          - 'OneNote.InkStrokePointer[]'
-  - uid: onenote.OneNote.InkAnalysisWord.toJSON
+          - 'onenote!OneNote.InkAnalysisWord#strokePointers~0:complex'
+  - uid: 'onenote!OneNote.InkAnalysisWord#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -286,9 +286,9 @@ items:
       content: 'toJSON(): OneNote.Interfaces.InkAnalysisWordData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisWordData
+          - 'onenote!OneNote.Interfaces.InkAnalysisWordData:interface'
         description: ''
-  - uid: onenote.OneNote.InkAnalysisWord.track
+  - uid: 'onenote!OneNote.InkAnalysisWord#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -304,9 +304,9 @@ items:
       content: 'track(): OneNote.InkAnalysisWord;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisWord
+          - 'onenote!OneNote.InkAnalysisWord:class'
         description: ''
-  - uid: onenote.OneNote.InkAnalysisWord.untrack
+  - uid: 'onenote!OneNote.InkAnalysisWord#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -321,9 +321,9 @@ items:
       content: 'untrack(): OneNote.InkAnalysisWord;'
       return:
         type:
-          - onenote.OneNote.InkAnalysisWord
+          - 'onenote!OneNote.InkAnalysisWord:class'
         description: ''
-  - uid: onenote.OneNote.InkAnalysisWord.wordAlternates
+  - uid: 'onenote!OneNote.InkAnalysisWord#wordAlternates:member'
     summary: |-
       The words that were recognized in this ink word, in order of likelihood. Read-only.
 
@@ -338,3 +338,29 @@ items:
       return:
         type:
           - 'string[]'
+references:
+  - uid: 'onenote!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'onenote!OneNote.RequestContext:class'
+    name: RequestContext
+  - uid: 'onenote!OneNote.InkAnalysisLine:class'
+    name: OneNote.InkAnalysisLine
+  - uid: 'onenote!OneNote.InkAnalysisWord:class'
+    name: OneNote.InkAnalysisWord
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions:interface'
+    name: OneNote.Interfaces.InkAnalysisWordLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordUpdateData:interface'
+    name: Interfaces.InkAnalysisWordUpdateData
+  - uid: 'onenote!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'onenote!OneNote.InkAnalysisWord#strokePointers~0:complex'
+    name: 'OneNote.InkStrokePointer[]'
+    fullName: 'OneNote.InkStrokePointer[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.InkStrokePointer:interface'
+        name: OneNote.InkStrokePointer
+        fullName: OneNote.InkStrokePointer
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordData:interface'
+    name: OneNote.Interfaces.InkAnalysisWordData

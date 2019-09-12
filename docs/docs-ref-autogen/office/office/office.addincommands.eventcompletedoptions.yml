@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.AddinCommands.EventCompletedOptions
+  - uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
     summary: Specifies the behavior for when the event is completed.
     name: Office.AddinCommands.EventCompletedOptions
     fullName: Office.AddinCommands.EventCompletedOptions
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.AddinCommands.EventCompletedOptions.allowEvent
-  - uid: office.Office.AddinCommands.EventCompletedOptions.allowEvent
+      - 'office!Office.AddinCommands.EventCompletedOptions#allowEvent:member'
+  - uid: 'office!Office.AddinCommands.EventCompletedOptions#allowEvent:member'
     summary: >-
       A boolean value. When the completed method is used to signal completion of an event handler, this value indicates
       of the handled event should continue execution or be canceled. For example, an add-in that handles the `ItemSend`

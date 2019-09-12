@@ -1,22 +1,22 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.HeaderFooterGroupData
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupData:interface'
     summary: An interface describing the data returned by calling "headerFooterGroup.toJSON()".
     name: Excel.Interfaces.HeaderFooterGroupData
     fullName: Excel.Interfaces.HeaderFooterGroupData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.HeaderFooterGroupData.defaultForAllPages
-      - excel.Excel.Interfaces.HeaderFooterGroupData.evenPages
-      - excel.Excel.Interfaces.HeaderFooterGroupData.firstPage
-      - excel.Excel.Interfaces.HeaderFooterGroupData.oddPages
-      - excel.Excel.Interfaces.HeaderFooterGroupData.state
-      - excel.Excel.Interfaces.HeaderFooterGroupData.useSheetMargins
-      - excel.Excel.Interfaces.HeaderFooterGroupData.useSheetScale
-  - uid: excel.Excel.Interfaces.HeaderFooterGroupData.defaultForAllPages
+      - 'excel!Excel.Interfaces.HeaderFooterGroupData#defaultForAllPages:member'
+      - 'excel!Excel.Interfaces.HeaderFooterGroupData#evenPages:member'
+      - 'excel!Excel.Interfaces.HeaderFooterGroupData#firstPage:member'
+      - 'excel!Excel.Interfaces.HeaderFooterGroupData#oddPages:member'
+      - 'excel!Excel.Interfaces.HeaderFooterGroupData#state:member'
+      - 'excel!Excel.Interfaces.HeaderFooterGroupData#useSheetMargins:member'
+      - 'excel!Excel.Interfaces.HeaderFooterGroupData#useSheetScale:member'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupData#defaultForAllPages:member'
     summary: |-
       The general header/footer, used for all pages unless even/odd or first page is specified.
 
@@ -30,8 +30,8 @@ items:
       content: 'defaultForAllPages?: Excel.Interfaces.HeaderFooterData;'
       return:
         type:
-          - excel.Excel.Interfaces.HeaderFooterData
-  - uid: excel.Excel.Interfaces.HeaderFooterGroupData.evenPages
+          - 'excel!Excel.Interfaces.HeaderFooterData:interface'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupData#evenPages:member'
     summary: |-
       The header/footer to use for even pages, odd header/footer needs to be specified for odd pages.
 
@@ -45,8 +45,8 @@ items:
       content: 'evenPages?: Excel.Interfaces.HeaderFooterData;'
       return:
         type:
-          - excel.Excel.Interfaces.HeaderFooterData
-  - uid: excel.Excel.Interfaces.HeaderFooterGroupData.firstPage
+          - 'excel!Excel.Interfaces.HeaderFooterData:interface'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupData#firstPage:member'
     summary: |-
       The first page header/footer, for all other pages general or even/odd is used.
 
@@ -60,8 +60,8 @@ items:
       content: 'firstPage?: Excel.Interfaces.HeaderFooterData;'
       return:
         type:
-          - excel.Excel.Interfaces.HeaderFooterData
-  - uid: excel.Excel.Interfaces.HeaderFooterGroupData.oddPages
+          - 'excel!Excel.Interfaces.HeaderFooterData:interface'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupData#oddPages:member'
     summary: |-
       The header/footer to use for odd pages, even header/footer needs to be specified for even pages.
 
@@ -75,8 +75,8 @@ items:
       content: 'oddPages?: Excel.Interfaces.HeaderFooterData;'
       return:
         type:
-          - excel.Excel.Interfaces.HeaderFooterData
-  - uid: excel.Excel.Interfaces.HeaderFooterGroupData.state
+          - 'excel!Excel.Interfaces.HeaderFooterData:interface'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupData#state:member'
     summary: |-
       Gets or sets the state of which headers/footers are set. See Excel.HeaderFooterState for details.
 
@@ -90,8 +90,8 @@ items:
       content: 'state?: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven";'
       return:
         type:
-          - Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"
-  - uid: excel.Excel.Interfaces.HeaderFooterGroupData.useSheetMargins
+          - 'excel!Excel.Interfaces.HeaderFooterGroupData#state~0:complex'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupData#useSheetMargins:member'
     summary: >-
       Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options
       for the worksheet.
@@ -108,7 +108,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.HeaderFooterGroupData.useSheetScale
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupData#useSheetScale:member'
     summary: >-
       Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page
       layout options for the worksheet.
@@ -125,3 +125,15 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.HeaderFooterData:interface'
+    name: Excel.Interfaces.HeaderFooterData
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupData#state~0:complex'
+    name: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"
+    fullName: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"
+    spec.typeScript:
+      - uid: 'excel!Excel.HeaderFooterState:enum'
+        name: Excel.HeaderFooterState
+        fullName: Excel.HeaderFooterState
+      - name: ' | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"'
+        fullName: ' | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"'

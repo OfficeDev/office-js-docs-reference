@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartCollection object, for use in "chartCollection.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.ChartCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.ChartCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.ChartCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: Excel.Interfaces.ChartData[];'
       return:
         type:
-          - 'Excel.Interfaces.ChartData[]'
+          - 'excel!Excel.Interfaces.ChartCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.ChartData[]'
+    fullName: 'Excel.Interfaces.ChartData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ChartData:interface'
+        name: Excel.Interfaces.ChartData
+        fullName: Excel.Interfaces.ChartData
+      - name: '[]'
+        fullName: '[]'

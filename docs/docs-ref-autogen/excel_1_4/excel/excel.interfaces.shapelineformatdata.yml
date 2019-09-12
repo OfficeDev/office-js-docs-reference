@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ShapeLineFormatData
+  - uid: 'excel!Excel.Interfaces.ShapeLineFormatData:interface'
     summary: An interface describing the data returned by calling "shapeLineFormat.toJSON()".
     name: Excel.Interfaces.ShapeLineFormatData
     fullName: Excel.Interfaces.ShapeLineFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

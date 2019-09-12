@@ -1,27 +1,27 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.WorksheetData
+  - uid: 'excel!Excel.Interfaces.WorksheetData:interface'
     summary: An interface describing the data returned by calling "worksheet.toJSON()".
     name: Excel.Interfaces.WorksheetData
     fullName: Excel.Interfaces.WorksheetData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.WorksheetData.charts
-      - excel.Excel.Interfaces.WorksheetData.id
-      - excel.Excel.Interfaces.WorksheetData.name
-      - excel.Excel.Interfaces.WorksheetData.names
-      - excel.Excel.Interfaces.WorksheetData.pivotTables
-      - excel.Excel.Interfaces.WorksheetData.position
-      - excel.Excel.Interfaces.WorksheetData.protection
-      - excel.Excel.Interfaces.WorksheetData.standardHeight
-      - excel.Excel.Interfaces.WorksheetData.standardWidth
-      - excel.Excel.Interfaces.WorksheetData.tabColor
-      - excel.Excel.Interfaces.WorksheetData.tables
-      - excel.Excel.Interfaces.WorksheetData.visibility
-  - uid: excel.Excel.Interfaces.WorksheetData.charts
+      - 'excel!Excel.Interfaces.WorksheetData#charts:member'
+      - 'excel!Excel.Interfaces.WorksheetData#id:member'
+      - 'excel!Excel.Interfaces.WorksheetData#name:member'
+      - 'excel!Excel.Interfaces.WorksheetData#names:member'
+      - 'excel!Excel.Interfaces.WorksheetData#pivotTables:member'
+      - 'excel!Excel.Interfaces.WorksheetData#position:member'
+      - 'excel!Excel.Interfaces.WorksheetData#protection:member'
+      - 'excel!Excel.Interfaces.WorksheetData#standardHeight:member'
+      - 'excel!Excel.Interfaces.WorksheetData#standardWidth:member'
+      - 'excel!Excel.Interfaces.WorksheetData#tabColor:member'
+      - 'excel!Excel.Interfaces.WorksheetData#tables:member'
+      - 'excel!Excel.Interfaces.WorksheetData#visibility:member'
+  - uid: 'excel!Excel.Interfaces.WorksheetData#charts:member'
     summary: |-
       Returns collection of charts that are part of the worksheet. Read-only.
 
@@ -35,8 +35,8 @@ items:
       content: 'charts?: Excel.Interfaces.ChartData[];'
       return:
         type:
-          - 'Excel.Interfaces.ChartData[]'
-  - uid: excel.Excel.Interfaces.WorksheetData.id
+          - 'excel!Excel.Interfaces.WorksheetData#charts~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorksheetData#id:member'
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
       the same even when the worksheet is renamed or moved. Read-only.
@@ -53,7 +53,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.WorksheetData.name
+  - uid: 'excel!Excel.Interfaces.WorksheetData#name:member'
     summary: |-
       The display name of the worksheet.
 
@@ -68,7 +68,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.WorksheetData.names
+  - uid: 'excel!Excel.Interfaces.WorksheetData#names:member'
     summary: |-
       Collection of names scoped to the current worksheet. Read-only.
 
@@ -82,8 +82,8 @@ items:
       content: 'names?: Excel.Interfaces.NamedItemData[];'
       return:
         type:
-          - 'Excel.Interfaces.NamedItemData[]'
-  - uid: excel.Excel.Interfaces.WorksheetData.pivotTables
+          - 'excel!Excel.Interfaces.WorksheetData#names~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorksheetData#pivotTables:member'
     summary: |-
       Collection of PivotTables that are part of the worksheet. Read-only.
 
@@ -97,8 +97,8 @@ items:
       content: 'pivotTables?: Excel.Interfaces.PivotTableData[];'
       return:
         type:
-          - 'Excel.Interfaces.PivotTableData[]'
-  - uid: excel.Excel.Interfaces.WorksheetData.position
+          - 'excel!Excel.Interfaces.WorksheetData#pivotTables~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorksheetData#position:member'
     summary: |-
       The zero-based position of the worksheet within the workbook.
 
@@ -113,7 +113,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.WorksheetData.protection
+  - uid: 'excel!Excel.Interfaces.WorksheetData#protection:member'
     summary: |-
       Returns sheet protection object for a worksheet. Read-only.
 
@@ -127,8 +127,8 @@ items:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetProtectionData
-  - uid: excel.Excel.Interfaces.WorksheetData.standardHeight
+          - 'excel!Excel.Interfaces.WorksheetProtectionData:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetData#standardHeight:member'
     summary: |-
       Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
 
@@ -143,7 +143,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.WorksheetData.standardWidth
+  - uid: 'excel!Excel.Interfaces.WorksheetData#standardWidth:member'
     summary: >-
       Returns or sets the standard (default) width of all the columns in the worksheet. One unit of column width is
       equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0
@@ -161,7 +161,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.WorksheetData.tabColor
+  - uid: 'excel!Excel.Interfaces.WorksheetData#tabColor:member'
     summary: >-
       Gets or sets the worksheet tab color. When retrieving the tab color, if the worksheet is invisible, the value will
       be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned.
@@ -180,7 +180,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.WorksheetData.tables
+  - uid: 'excel!Excel.Interfaces.WorksheetData#tables:member'
     summary: |-
       Collection of tables that are part of the worksheet. Read-only.
 
@@ -194,8 +194,8 @@ items:
       content: 'tables?: Excel.Interfaces.TableData[];'
       return:
         type:
-          - 'Excel.Interfaces.TableData[]'
-  - uid: excel.Excel.Interfaces.WorksheetData.visibility
+          - 'excel!Excel.Interfaces.WorksheetData#tables~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorksheetData#visibility:member'
     summary: >-
       The Visibility of the worksheet.
 
@@ -211,4 +211,52 @@ items:
       content: 'visibility?: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";'
       return:
         type:
-          - Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden"
+          - 'excel!Excel.Interfaces.WorksheetData#visibility~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.WorksheetData#charts~0:complex'
+    name: 'Excel.Interfaces.ChartData[]'
+    fullName: 'Excel.Interfaces.ChartData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ChartData:interface'
+        name: Excel.Interfaces.ChartData
+        fullName: Excel.Interfaces.ChartData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorksheetData#names~0:complex'
+    name: 'Excel.Interfaces.NamedItemData[]'
+    fullName: 'Excel.Interfaces.NamedItemData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.NamedItemData:interface'
+        name: Excel.Interfaces.NamedItemData
+        fullName: Excel.Interfaces.NamedItemData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorksheetData#pivotTables~0:complex'
+    name: 'Excel.Interfaces.PivotTableData[]'
+    fullName: 'Excel.Interfaces.PivotTableData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PivotTableData:interface'
+        name: Excel.Interfaces.PivotTableData
+        fullName: Excel.Interfaces.PivotTableData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorksheetProtectionData:interface'
+    name: Excel.Interfaces.WorksheetProtectionData
+  - uid: 'excel!Excel.Interfaces.WorksheetData#tables~0:complex'
+    name: 'Excel.Interfaces.TableData[]'
+    fullName: 'Excel.Interfaces.TableData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TableData:interface'
+        name: Excel.Interfaces.TableData
+        fullName: Excel.Interfaces.TableData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorksheetData#visibility~0:complex'
+    name: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden"
+    fullName: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden"
+    spec.typeScript:
+      - uid: 'excel!Excel.SheetVisibility:enum'
+        name: Excel.SheetVisibility
+        fullName: Excel.SheetVisibility
+      - name: ' | "Visible" | "Hidden" | "VeryHidden"'
+        fullName: ' | "Visible" | "Hidden" | "VeryHidden"'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.GetBindingDataOptions
+  - uid: 'office!Office.GetBindingDataOptions:interface'
     summary: Provides options for how to get the data in a binding.
     remarks: 'If the rows option is used, the value must be "thisRow".'
     name: Office.GetBindingDataOptions
@@ -8,18 +8,18 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.GetBindingDataOptions.asyncContext
-      - office.Office.GetBindingDataOptions.coercionType
-      - office.Office.GetBindingDataOptions.columnCount
-      - office.Office.GetBindingDataOptions.filterType
-      - office.Office.GetBindingDataOptions.rowCount
-      - office.Office.GetBindingDataOptions.rows
-      - office.Office.GetBindingDataOptions.startColumn
-      - office.Office.GetBindingDataOptions.startRow
-      - office.Office.GetBindingDataOptions.valueFormat
-  - uid: office.Office.GetBindingDataOptions.asyncContext
+      - 'office!Office.GetBindingDataOptions#asyncContext:member'
+      - 'office!Office.GetBindingDataOptions#coercionType:member'
+      - 'office!Office.GetBindingDataOptions#columnCount:member'
+      - 'office!Office.GetBindingDataOptions#filterType:member'
+      - 'office!Office.GetBindingDataOptions#rowCount:member'
+      - 'office!Office.GetBindingDataOptions#rows:member'
+      - 'office!Office.GetBindingDataOptions#startColumn:member'
+      - 'office!Office.GetBindingDataOptions#startRow:member'
+      - 'office!Office.GetBindingDataOptions#valueFormat:member'
+  - uid: 'office!Office.GetBindingDataOptions#asyncContext:member'
     summary: >-
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
@@ -33,10 +33,10 @@ items:
       return:
         type:
           - any
-  - uid: office.Office.GetBindingDataOptions.coercionType
+  - uid: 'office!Office.GetBindingDataOptions#coercionType:member'
     summary: >-
-      The expected shape of the selection. Use [Office.CoercionType](xref:office.Office.CoercionType) or text value.
-      Default: The original, uncoerced type of the binding.
+      The expected shape of the selection. Use [Office.CoercionType](xref:office!Office.CoercionType:enum) or text
+      value. Default: The original, uncoerced type of the binding.
     name: coercionType
     fullName: coercionType
     langs:
@@ -46,8 +46,8 @@ items:
       content: 'coercionType?: Office.CoercionType | string'
       return:
         type:
-          - Office.CoercionType | string
-  - uid: office.Office.GetBindingDataOptions.columnCount
+          - 'office!Office.GetBindingDataOptions#coercionType~0:complex'
+  - uid: 'office!Office.GetBindingDataOptions#columnCount:member'
     summary: >-
       For table or matrix bindings, specifies the number of columns offset from the startColumn. Default is all
       subsequent columns.
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - number
-  - uid: office.Office.GetBindingDataOptions.filterType
+  - uid: 'office!Office.GetBindingDataOptions#filterType:member'
     summary: >-
       Specify whether to get only the visible (filtered in) data or all the data (default is all). Useful when filtering
       data. Use Office.FilterType or text value.
@@ -74,8 +74,8 @@ items:
       content: 'filterType?: Office.FilterType | string'
       return:
         type:
-          - Office.FilterType | string
-  - uid: office.Office.GetBindingDataOptions.rowCount
+          - 'office!Office.GetBindingDataOptions#filterType~0:complex'
+  - uid: 'office!Office.GetBindingDataOptions#rowCount:member'
     summary: >-
       For table or matrix bindings, specifies the number of rows offset from the startRow. Default is all subsequent
       rows.
@@ -89,7 +89,7 @@ items:
       return:
         type:
           - number
-  - uid: office.Office.GetBindingDataOptions.rows
+  - uid: 'office!Office.GetBindingDataOptions#rows:member'
     summary: >-
       Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in
       the currently selected row.
@@ -108,7 +108,7 @@ items:
       return:
         type:
           - string
-  - uid: office.Office.GetBindingDataOptions.startColumn
+  - uid: 'office!Office.GetBindingDataOptions#startColumn:member'
     summary: >-
       For table or matrix bindings, specifies the zero-based starting column for a subset of the data in the binding.
       Default is first column.
@@ -122,7 +122,7 @@ items:
       return:
         type:
           - number
-  - uid: office.Office.GetBindingDataOptions.startRow
+  - uid: 'office!Office.GetBindingDataOptions#startRow:member'
     summary: >-
       For table or matrix bindings, specifies the zero-based starting row for a subset of the data in the binding.
       Default is first row.
@@ -136,7 +136,7 @@ items:
       return:
         type:
           - number
-  - uid: office.Office.GetBindingDataOptions.valueFormat
+  - uid: 'office!Office.GetBindingDataOptions#valueFormat:member'
     summary: >-
       Specifies whether values, such as numbers and dates, are returned with their formatting applied. Use
       Office.ValueFormat or text value. Default: Unformatted data.
@@ -149,4 +149,32 @@ items:
       content: 'valueFormat?: Office.ValueFormat | string'
       return:
         type:
-          - Office.ValueFormat | string
+          - 'office!Office.GetBindingDataOptions#valueFormat~0:complex'
+references:
+  - uid: 'office!Office.GetBindingDataOptions#coercionType~0:complex'
+    name: Office.CoercionType | string
+    fullName: Office.CoercionType | string
+    spec.typeScript:
+      - uid: 'office!Office.CoercionType:enum'
+        name: Office.CoercionType
+        fullName: Office.CoercionType
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'office!Office.GetBindingDataOptions#filterType~0:complex'
+    name: Office.FilterType | string
+    fullName: Office.FilterType | string
+    spec.typeScript:
+      - uid: 'office!Office.FilterType:enum'
+        name: Office.FilterType
+        fullName: Office.FilterType
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'office!Office.GetBindingDataOptions#valueFormat~0:complex'
+    name: Office.ValueFormat | string
+    fullName: Office.ValueFormat | string
+    spec.typeScript:
+      - uid: 'office!Office.ValueFormat:enum'
+        name: Office.ValueFormat
+        fullName: Office.ValueFormat
+      - name: ' | string'
+        fullName: ' | string'

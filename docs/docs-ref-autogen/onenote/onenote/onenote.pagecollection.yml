@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.PageCollection
+  - uid: 'onenote!OneNote.PageCollection:class'
     summary: |-
       Represents a collection of pages.
 
@@ -11,22 +11,22 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: onenote
+      - 'onenote!OfficeExtension.ClientObject:class'
+    package: onenote!
     children:
-      - onenote.OneNote.PageCollection.context
-      - onenote.OneNote.PageCollection.count
-      - onenote.OneNote.PageCollection.getByTitle
-      - onenote.OneNote.PageCollection.getItem
-      - onenote.OneNote.PageCollection.getItemAt
-      - onenote.OneNote.PageCollection.items
-      - onenote.OneNote.PageCollection.load
-      - onenote.OneNote.PageCollection.load_1
-      - onenote.OneNote.PageCollection.load_2
-      - onenote.OneNote.PageCollection.toJSON
-      - onenote.OneNote.PageCollection.track
-      - onenote.OneNote.PageCollection.untrack
-  - uid: onenote.OneNote.PageCollection.context
+      - 'onenote!OneNote.PageCollection#context:member'
+      - 'onenote!OneNote.PageCollection#count:member'
+      - 'onenote!OneNote.PageCollection#getByTitle:member(1)'
+      - 'onenote!OneNote.PageCollection#getItem:member(1)'
+      - 'onenote!OneNote.PageCollection#getItemAt:member(1)'
+      - 'onenote!OneNote.PageCollection#items:member'
+      - 'onenote!OneNote.PageCollection#load:member(1)'
+      - 'onenote!OneNote.PageCollection#load:member(2)'
+      - 'onenote!OneNote.PageCollection#load:member(3)'
+      - 'onenote!OneNote.PageCollection#toJSON:member(1)'
+      - 'onenote!OneNote.PageCollection#track:member(1)'
+      - 'onenote!OneNote.PageCollection#untrack:member(1)'
+  - uid: 'onenote!OneNote.PageCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -39,8 +39,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
-  - uid: onenote.OneNote.PageCollection.count
+          - 'onenote!OneNote.RequestContext:class'
+  - uid: 'onenote!OneNote.PageCollection#count:member'
     summary: |-
       Returns the number of pages in the collection. Read-only.
 
@@ -55,7 +55,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.PageCollection.getByTitle
+  - uid: 'onenote!OneNote.PageCollection#getByTitle:member(1)'
     summary: |-
       Gets the collection of pages with the specified title.
 
@@ -69,7 +69,7 @@ items:
       content: 'getByTitle(title: string): OneNote.PageCollection;'
       return:
         type:
-          - onenote.OneNote.PageCollection
+          - 'onenote!OneNote.PageCollection:class'
         description: |-
 
 
@@ -119,7 +119,7 @@ items:
           description: The title of the page.
           type:
             - string
-  - uid: onenote.OneNote.PageCollection.getItem
+  - uid: 'onenote!OneNote.PageCollection#getItem:member(1)'
     summary: |-
       Gets a page by ID or by its index in the collection. Read-only.
 
@@ -133,14 +133,14 @@ items:
       content: 'getItem(index: number | string): OneNote.Page;'
       return:
         type:
-          - onenote.OneNote.Page
+          - 'onenote!OneNote.Page:class'
         description: ''
       parameters:
         - id: index
           description: 'The ID of the page, or the index location of the page in the collection.'
           type:
             - number | string
-  - uid: onenote.OneNote.PageCollection.getItemAt
+  - uid: 'onenote!OneNote.PageCollection#getItemAt:member(1)'
     summary: |-
       Gets a page on its position in the collection.
 
@@ -154,14 +154,14 @@ items:
       content: 'getItemAt(index: number): OneNote.Page;'
       return:
         type:
-          - onenote.OneNote.Page
+          - 'onenote!OneNote.Page:class'
         description: ''
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: onenote.OneNote.PageCollection.items
+  - uid: 'onenote!OneNote.PageCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -172,8 +172,8 @@ items:
       content: 'readonly items: OneNote.Page[];'
       return:
         type:
-          - 'OneNote.Page[]'
-  - uid: onenote.OneNote.PageCollection.load
+          - 'onenote!OneNote.PageCollection#items~0:complex'
+  - uid: 'onenote!OneNote.PageCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -206,14 +206,14 @@ items:
         OneNote.PageCollection;
       return:
         type:
-          - onenote.OneNote.PageCollection
+          - 'onenote!OneNote.PageCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OneNote.Interfaces.PageCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
-  - uid: onenote.OneNote.PageCollection.load_1
+            - 'onenote!OneNote.PageCollection#load~0:complex'
+  - uid: 'onenote!OneNote.PageCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -226,7 +226,7 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.PageCollection;'
       return:
         type:
-          - onenote.OneNote.PageCollection
+          - 'onenote!OneNote.PageCollection:class'
         description: |-
 
 
@@ -264,7 +264,7 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.PageCollection.load_2
+  - uid: 'onenote!OneNote.PageCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -274,14 +274,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): OneNote.PageCollection;'
       return:
         type:
-          - onenote.OneNote.PageCollection
+          - 'onenote!OneNote.PageCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
-  - uid: onenote.OneNote.PageCollection.toJSON
+            - 'onenote!OfficeExtension.LoadOption:interface'
+  - uid: 'onenote!OneNote.PageCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -297,9 +297,9 @@ items:
       content: 'toJSON(): OneNote.Interfaces.PageCollectionData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageCollectionData
+          - 'onenote!OneNote.Interfaces.PageCollectionData:interface'
         description: ''
-  - uid: onenote.OneNote.PageCollection.track
+  - uid: 'onenote!OneNote.PageCollection#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -315,9 +315,9 @@ items:
       content: 'track(): OneNote.PageCollection;'
       return:
         type:
-          - onenote.OneNote.PageCollection
+          - 'onenote!OneNote.PageCollection:class'
         description: ''
-  - uid: onenote.OneNote.PageCollection.untrack
+  - uid: 'onenote!OneNote.PageCollection#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -332,5 +332,39 @@ items:
       content: 'untrack(): OneNote.PageCollection;'
       return:
         type:
-          - onenote.OneNote.PageCollection
+          - 'onenote!OneNote.PageCollection:class'
         description: ''
+references:
+  - uid: 'onenote!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'onenote!OneNote.RequestContext:class'
+    name: RequestContext
+  - uid: 'onenote!OneNote.PageCollection:class'
+    name: OneNote.PageCollection
+  - uid: 'onenote!OneNote.Page:class'
+    name: OneNote.Page
+  - uid: 'onenote!OneNote.PageCollection#items~0:complex'
+    name: 'OneNote.Page[]'
+    fullName: 'OneNote.Page[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Page:class'
+        name: OneNote.Page
+        fullName: OneNote.Page
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'onenote!OneNote.PageCollection#load~0:complex'
+    name: OneNote.Interfaces.PageCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
+    fullName: OneNote.Interfaces.PageCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.PageCollectionLoadOptions:interface'
+        name: OneNote.Interfaces.PageCollectionLoadOptions
+        fullName: OneNote.Interfaces.PageCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'onenote!OneNote.Interfaces.CollectionLoadOptions:interface'
+        name: OneNote.Interfaces.CollectionLoadOptions
+        fullName: OneNote.Interfaces.CollectionLoadOptions
+  - uid: 'onenote!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'onenote!OneNote.Interfaces.PageCollectionData:interface'
+    name: OneNote.Interfaces.PageCollectionData

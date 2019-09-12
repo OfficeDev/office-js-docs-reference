@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.ListData
+  - uid: 'word!Word.Interfaces.ListData:interface'
     summary: An interface describing the data returned by calling "list.toJSON()".
     name: Word.Interfaces.ListData
     fullName: Word.Interfaces.ListData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.ListData.id
-      - word.Word.Interfaces.ListData.levelExistences
-      - word.Word.Interfaces.ListData.levelTypes
-      - word.Word.Interfaces.ListData.paragraphs
-  - uid: word.Word.Interfaces.ListData.id
+      - 'word!Word.Interfaces.ListData#id:member'
+      - 'word!Word.Interfaces.ListData#levelExistences:member'
+      - 'word!Word.Interfaces.ListData#levelTypes:member'
+      - 'word!Word.Interfaces.ListData#paragraphs:member'
+  - uid: 'word!Word.Interfaces.ListData#id:member'
     summary: |-
       Gets the list's id.
 
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ListData.levelExistences
+  - uid: 'word!Word.Interfaces.ListData#levelExistences:member'
     summary: >-
       Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there
       is at least one list item at that level. Read-only.
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - 'boolean[]'
-  - uid: word.Word.Interfaces.ListData.levelTypes
+  - uid: 'word!Word.Interfaces.ListData#levelTypes:member'
     summary: |-
       Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
 
@@ -59,8 +59,8 @@ items:
       content: 'levelTypes?: Word.ListLevelType[];'
       return:
         type:
-          - 'Word.ListLevelType[]'
-  - uid: word.Word.Interfaces.ListData.paragraphs
+          - 'word!Word.Interfaces.ListData#levelTypes~0:complex'
+  - uid: 'word!Word.Interfaces.ListData#paragraphs:member'
     summary: |-
       Gets paragraphs in the list. Read-only.
 
@@ -74,4 +74,23 @@ items:
       content: 'paragraphs?: Word.Interfaces.ParagraphData[];'
       return:
         type:
-          - 'Word.Interfaces.ParagraphData[]'
+          - 'word!Word.Interfaces.ListData#paragraphs~0:complex'
+references:
+  - uid: 'word!Word.Interfaces.ListData#levelTypes~0:complex'
+    name: 'Word.ListLevelType[]'
+    fullName: 'Word.ListLevelType[]'
+    spec.typeScript:
+      - uid: 'word!Word.ListLevelType:enum'
+        name: Word.ListLevelType
+        fullName: Word.ListLevelType
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'word!Word.Interfaces.ListData#paragraphs~0:complex'
+    name: 'Word.Interfaces.ParagraphData[]'
+    fullName: 'Word.Interfaces.ParagraphData[]'
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.ParagraphData:interface'
+        name: Word.Interfaces.ParagraphData
+        fullName: Word.Interfaces.ParagraphData
+      - name: '[]'
+        fullName: '[]'

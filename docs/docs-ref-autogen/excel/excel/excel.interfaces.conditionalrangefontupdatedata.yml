@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontUpdateData
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData:interface'
     summary: >-
       An interface for updating data on the ConditionalRangeFont object, for use in "conditionalRangeFont.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,14 +9,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ConditionalRangeFontUpdateData.bold
-      - excel.Excel.Interfaces.ConditionalRangeFontUpdateData.color
-      - excel.Excel.Interfaces.ConditionalRangeFontUpdateData.italic
-      - excel.Excel.Interfaces.ConditionalRangeFontUpdateData.strikethrough
-      - excel.Excel.Interfaces.ConditionalRangeFontUpdateData.underline
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontUpdateData.bold
+      - 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#bold:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#color:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#italic:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#strikethrough:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#underline:member'
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#bold:member'
     summary: |-
       Represents the bold status of font.
 
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontUpdateData.color
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#color:member'
     summary: |-
       HTML color code representation of the text color. E.g. \#FF0000 represents Red.
 
@@ -46,7 +46,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontUpdateData.italic
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#italic:member'
     summary: |-
       Represents the italic status of the font.
 
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontUpdateData.strikethrough
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#strikethrough:member'
     summary: |-
       Represents the strikethrough status of the font.
 
@@ -76,7 +76,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontUpdateData.underline
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#underline:member'
     summary: |-
       Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
 
@@ -90,4 +90,14 @@ items:
       content: 'underline?: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double";'
       return:
         type:
-          - Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double"
+          - 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#underline~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#underline~0:complex'
+    name: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double"
+    fullName: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double"
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalRangeFontUnderlineStyle:enum'
+        name: Excel.ConditionalRangeFontUnderlineStyle
+        fullName: Excel.ConditionalRangeFontUnderlineStyle
+      - name: ' | "None" | "Single" | "Double"'
+        fullName: ' | "None" | "Single" | "Double"'

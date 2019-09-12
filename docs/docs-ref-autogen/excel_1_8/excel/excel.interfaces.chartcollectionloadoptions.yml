@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions:interface'
     summary: |-
       A collection of all the chart objects on a worksheet.
 
@@ -10,33 +10,33 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.axes
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.categoryLabelLevel
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.chartType
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.dataLabels
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.displayBlanksAs
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.format
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.height
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.id
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.left
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.legend
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.name
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.plotArea
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.plotBy
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.plotVisibleOnly
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.series
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.seriesNameLevel
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.showAllFieldButtons
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.showDataLabelsOverMaximum
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.style
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.title
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.top
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.width
-      - excel.Excel.Interfaces.ChartCollectionLoadOptions.worksheet
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#axes:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#categoryLabelLevel:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#chartType:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#dataLabels:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#displayBlanksAs:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#height:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#left:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#legend:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#plotArea:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#plotBy:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#plotVisibleOnly:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#series:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#seriesNameLevel:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#showAllFieldButtons:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#showDataLabelsOverMaximum:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#style:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#title:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#top:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#width:member'
+      - 'excel!Excel.Interfaces.ChartCollectionLoadOptions#worksheet:member'
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -47,7 +47,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.axes
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#axes:member'
     summary: |-
       For EACH ITEM in the collection: Represents chart axes.
 
@@ -61,8 +61,8 @@ items:
       content: 'axes?: Excel.Interfaces.ChartAxesLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxesLoadOptions
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.categoryLabelLevel
+          - 'excel!Excel.Interfaces.ChartAxesLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#categoryLabelLevel:member'
     summary: >-
       For EACH ITEM in the collection: Returns or sets a ChartCategoryLabelLevel enumeration constant referring to the
       level of where the category labels are being sourced from. Read/Write.
@@ -79,7 +79,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.chartType
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#chartType:member'
     summary: |-
       For EACH ITEM in the collection: Represents the type of the chart. See Excel.ChartType for details.
 
@@ -94,7 +94,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.dataLabels
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#dataLabels:member'
     summary: |-
       For EACH ITEM in the collection: Represents the datalabels on the chart.
 
@@ -108,8 +108,8 @@ items:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelsLoadOptions
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.displayBlanksAs
+          - 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#displayBlanksAs:member'
     summary: |-
       For EACH ITEM in the collection: Returns or sets the way that blank cells are plotted on a chart. Read/Write.
 
@@ -124,7 +124,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.format
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#format:member'
     summary: |-
       For EACH ITEM in the collection: Encapsulates the format properties for the chart area.
 
@@ -138,8 +138,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartAreaFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAreaFormatLoadOptions
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.height
+          - 'excel!Excel.Interfaces.ChartAreaFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#height:member'
     summary: |-
       For EACH ITEM in the collection: Represents the height, in points, of the chart object.
 
@@ -154,7 +154,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#id:member'
     summary: |-
       For EACH ITEM in the collection: The unique id of chart. Read-only.
 
@@ -169,7 +169,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.left
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#left:member'
     summary: |-
       For EACH ITEM in the collection: The distance, in points, from the left side of the chart to the worksheet origin.
 
@@ -184,7 +184,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.legend
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#legend:member'
     summary: |-
       For EACH ITEM in the collection: Represents the legend for the chart.
 
@@ -198,8 +198,8 @@ items:
       content: 'legend?: Excel.Interfaces.ChartLegendLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendLoadOptions
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.name
+          - 'excel!Excel.Interfaces.ChartLegendLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#name:member'
     summary: |-
       For EACH ITEM in the collection: Represents the name of a chart object.
 
@@ -214,7 +214,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.plotArea
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#plotArea:member'
     summary: |-
       For EACH ITEM in the collection: Represents the plotArea for the chart.
 
@@ -228,8 +228,8 @@ items:
       content: 'plotArea?: Excel.Interfaces.ChartPlotAreaLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPlotAreaLoadOptions
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.plotBy
+          - 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#plotBy:member'
     summary: >-
       For EACH ITEM in the collection: Returns or sets the way columns or rows are used as data series on the chart.
       Read/Write.
@@ -246,7 +246,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.plotVisibleOnly
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#plotVisibleOnly:member'
     summary: >-
       For EACH ITEM in the collection: True if only visible cells are plotted. False if both visible and hidden cells
       are plotted. Read/Write.
@@ -263,7 +263,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.series
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#series:member'
     summary: |-
       For EACH ITEM in the collection: Represents either a single series or collection of series in the chart.
 
@@ -277,8 +277,8 @@ items:
       content: 'series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.seriesNameLevel
+          - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#seriesNameLevel:member'
     summary: >-
       For EACH ITEM in the collection: Returns or sets a ChartSeriesNameLevel enumeration constant referring to the
       level of where the series names are being sourced from. Read/Write.
@@ -295,7 +295,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.showAllFieldButtons
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#showAllFieldButtons:member'
     summary: |-
       For EACH ITEM in the collection: Represents whether to display all field buttons on a PivotChart.
 
@@ -310,7 +310,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.showDataLabelsOverMaximum
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#showDataLabelsOverMaximum:member'
     summary: >-
       For EACH ITEM in the collection: Represents whether to show the data labels when the value is greater than the
       maximum value on the value axis. If value axis became smaller than the size of data points, you can use this
@@ -328,7 +328,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.style
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#style:member'
     summary: |-
       For EACH ITEM in the collection: Returns or sets the chart style for the chart. Read/Write.
 
@@ -343,7 +343,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.title
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#title:member'
     summary: >-
       For EACH ITEM in the collection: Represents the title of the specified chart, including the text, visibility,
       position, and formatting of the title.
@@ -359,8 +359,8 @@ items:
       content: 'title?: Excel.Interfaces.ChartTitleLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTitleLoadOptions
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.top
+          - 'excel!Excel.Interfaces.ChartTitleLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#top:member'
     summary: >-
       For EACH ITEM in the collection: Represents the distance, in points, from the top edge of the object to the top of
       row 1 (on a worksheet) or the top of the chart area (on a chart).
@@ -377,7 +377,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.width
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#width:member'
     summary: |-
       For EACH ITEM in the collection: Represents the width, in points, of the chart object.
 
@@ -392,7 +392,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.worksheet
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#worksheet:member'
     summary: |-
       For EACH ITEM in the collection: The worksheet containing the current chart.
 
@@ -406,4 +406,21 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetLoadOptions
+          - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartAxesLoadOptions:interface'
+    name: Excel.Interfaces.ChartAxesLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
+    name: Excel.Interfaces.ChartDataLabelsLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartAreaFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions:interface'
+    name: Excel.Interfaces.ChartLegendLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions:interface'
+    name: Excel.Interfaces.ChartPlotAreaLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface'
+    name: Excel.Interfaces.ChartSeriesCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions:interface'
+    name: Excel.Interfaces.ChartTitleLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+    name: Excel.Interfaces.WorksheetLoadOptions

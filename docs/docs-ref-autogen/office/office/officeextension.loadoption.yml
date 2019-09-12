@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.OfficeExtension.LoadOption
+  - uid: 'office!OfficeExtension.LoadOption:interface'
     summary: >-
       Specifies which properties of an object should be loaded. This load happens when the sync() method is executed.
       This synchronizes the states between Office objects and corresponding JavaScript proxy objects.
@@ -70,13 +70,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.OfficeExtension.LoadOption.expand
-      - office.OfficeExtension.LoadOption.select
-      - office.OfficeExtension.LoadOption.skip
-      - office.OfficeExtension.LoadOption.top
-  - uid: office.OfficeExtension.LoadOption.expand
+      - 'office!OfficeExtension.LoadOption#expand:member'
+      - 'office!OfficeExtension.LoadOption#select:member'
+      - 'office!OfficeExtension.LoadOption#skip:member'
+      - 'office!OfficeExtension.LoadOption#top:member'
+  - uid: 'office!OfficeExtension.LoadOption#expand:member'
     summary: 'A comma-delimited string, or array of strings, that specifies the navigation properties to load.'
     name: expand
     fullName: expand
@@ -88,7 +88,7 @@ items:
       return:
         type:
           - 'string | string[]'
-  - uid: office.OfficeExtension.LoadOption.select
+  - uid: 'office!OfficeExtension.LoadOption#select:member'
     summary: 'A comma-delimited string, or array of strings, that specifies the properties to load.'
     name: select
     fullName: select
@@ -100,7 +100,7 @@ items:
       return:
         type:
           - 'string | string[]'
-  - uid: office.OfficeExtension.LoadOption.skip
+  - uid: 'office!OfficeExtension.LoadOption#skip:member'
     summary: >-
       Only usable on collection types. Specifies the number of items in the collection that are to be skipped and not
       included in the result. If top is specified, the result set will start after skipping the specified number of
@@ -115,7 +115,7 @@ items:
       return:
         type:
           - number
-  - uid: office.OfficeExtension.LoadOption.top
+  - uid: 'office!OfficeExtension.LoadOption#top:member'
     summary: >-
       Only usable on collection types. Specifies the maximum number of collection items that can be included in the
       result.

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData:interface'
     summary: >-
       An interface for updating data on the ConditionalDataBarNegativeFormat object, for use in
       "conditionalDataBarNegativeFormat.set(<!-- -->{ ... }<!-- -->)".
@@ -9,4 +9,4 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

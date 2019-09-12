@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartAxisTitleData
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleData:interface'
     summary: An interface describing the data returned by calling "chartAxisTitle.toJSON()".
     name: Excel.Interfaces.ChartAxisTitleData
     fullName: Excel.Interfaces.ChartAxisTitleData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartAxisTitleData.format
-      - excel.Excel.Interfaces.ChartAxisTitleData.text
-      - excel.Excel.Interfaces.ChartAxisTitleData.visible
-  - uid: excel.Excel.Interfaces.ChartAxisTitleData.format
+      - 'excel!Excel.Interfaces.ChartAxisTitleData#format:member'
+      - 'excel!Excel.Interfaces.ChartAxisTitleData#text:member'
+      - 'excel!Excel.Interfaces.ChartAxisTitleData#visible:member'
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleData#format:member'
     summary: |-
       Represents the formatting of chart axis title. Read-only.
 
@@ -26,8 +26,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartAxisTitleFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisTitleFormatData
-  - uid: excel.Excel.Interfaces.ChartAxisTitleData.text
+          - 'excel!Excel.Interfaces.ChartAxisTitleFormatData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleData#text:member'
     summary: |-
       Represents the axis title.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartAxisTitleData.visible
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleData#visible:member'
     summary: |-
       A boolean that specifies the visibility of an axis title.
 
@@ -57,3 +57,6 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleFormatData:interface'
+    name: Excel.Interfaces.ChartAxisTitleFormatData

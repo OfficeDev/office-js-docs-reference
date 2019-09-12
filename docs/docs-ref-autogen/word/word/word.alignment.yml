@@ -1,21 +1,21 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Alignment
+  - uid: 'word!Word.Alignment:enum'
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
     name: Word.Alignment
     fullName: Word.Alignment
     langs:
       - typeScript
     type: enum
-    package: word
+    package: word!
     children:
-      - word.Word.Alignment.centered
-      - word.Word.Alignment.justified
-      - word.Word.Alignment.left
-      - word.Word.Alignment.mixed
-      - word.Word.Alignment.right
-      - word.Word.Alignment.unknown
-  - uid: word.Word.Alignment.centered
+      - 'word!Word.Alignment.centered:member'
+      - 'word!Word.Alignment.justified:member'
+      - 'word!Word.Alignment.left:member'
+      - 'word!Word.Alignment.mixed:member'
+      - 'word!Word.Alignment.right:member'
+      - 'word!Word.Alignment.unknown:member'
+  - uid: 'word!Word.Alignment.centered:member'
     summary: Alignment to the center.
     name: centered
     fullName: centered
@@ -23,7 +23,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Centered"'
-  - uid: word.Word.Alignment.justified
+  - uid: 'word!Word.Alignment.justified:member'
     summary: Fully justified alignment.
     name: justified
     fullName: justified
@@ -31,7 +31,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Justified"'
-  - uid: word.Word.Alignment.left
+  - uid: 'word!Word.Alignment.left:member'
     summary: Alignment to the left.
     name: left
     fullName: left
@@ -39,14 +39,14 @@ items:
       - typeScript
     type: field
     numericValue: '"Left"'
-  - uid: word.Word.Alignment.mixed
+  - uid: 'word!Word.Alignment.mixed:member'
     name: mixed
     fullName: mixed
     langs:
       - typeScript
     type: field
     numericValue: '"Mixed"'
-  - uid: word.Word.Alignment.right
+  - uid: 'word!Word.Alignment.right:member'
     summary: Alignment to the right.
     name: right
     fullName: right
@@ -54,7 +54,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Right"'
-  - uid: word.Word.Alignment.unknown
+  - uid: 'word!Word.Alignment.unknown:member'
     summary: Unknown alignment.
     name: unknown
     fullName: unknown

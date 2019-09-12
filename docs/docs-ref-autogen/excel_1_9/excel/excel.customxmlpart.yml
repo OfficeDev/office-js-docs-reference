@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CustomXmlPart
+  - uid: 'excel!Excel.CustomXmlPart:class'
     summary: |-
       Represents a custom XML part object in a workbook.
 
@@ -11,20 +11,20 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.CustomXmlPart.context
-      - excel.Excel.CustomXmlPart.delete
-      - excel.Excel.CustomXmlPart.getXml
-      - excel.Excel.CustomXmlPart.id
-      - excel.Excel.CustomXmlPart.load
-      - excel.Excel.CustomXmlPart.load_1
-      - excel.Excel.CustomXmlPart.load_2
-      - excel.Excel.CustomXmlPart.namespaceUri
-      - excel.Excel.CustomXmlPart.setXml
-      - excel.Excel.CustomXmlPart.toJSON
-  - uid: excel.Excel.CustomXmlPart.context
+      - 'excel!Excel.CustomXmlPart#context:member'
+      - 'excel!Excel.CustomXmlPart#delete:member(1)'
+      - 'excel!Excel.CustomXmlPart#getXml:member(1)'
+      - 'excel!Excel.CustomXmlPart#id:member'
+      - 'excel!Excel.CustomXmlPart#load:member(1)'
+      - 'excel!Excel.CustomXmlPart#load:member(2)'
+      - 'excel!Excel.CustomXmlPart#load:member(3)'
+      - 'excel!Excel.CustomXmlPart#namespaceUri:member'
+      - 'excel!Excel.CustomXmlPart#setXml:member(1)'
+      - 'excel!Excel.CustomXmlPart#toJSON:member(1)'
+  - uid: 'excel!Excel.CustomXmlPart#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -37,8 +37,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.CustomXmlPart.delete
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.CustomXmlPart#delete:member(1)'
     summary: |-
       Deletes the custom XML part.
 
@@ -87,7 +87,7 @@ items:
               }
           });
           ```
-  - uid: excel.Excel.CustomXmlPart.getXml
+  - uid: 'excel!Excel.CustomXmlPart#getXml:member(1)'
     summary: |-
       Gets the custom XML part's full XML content.
 
@@ -101,7 +101,7 @@ items:
       content: 'getXml(): OfficeExtension.ClientResult<string>;'
       return:
         type:
-          - OfficeExtension.ClientResult<string>
+          - 'excel!Excel.CustomXmlPart#getXml~0:complex'
         description: |-
 
 
@@ -128,7 +128,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.CustomXmlPart.id
+  - uid: 'excel!Excel.CustomXmlPart#id:member'
     summary: |-
       The custom XML part's ID. Read-only.
 
@@ -169,7 +169,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.CustomXmlPart.load
+  - uid: 'excel!Excel.CustomXmlPart#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -200,14 +200,14 @@ items:
       content: 'load(option?: Excel.Interfaces.CustomXmlPartLoadOptions): Excel.CustomXmlPart;'
       return:
         type:
-          - excel.Excel.CustomXmlPart
+          - 'excel!Excel.CustomXmlPart:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.CustomXmlPartLoadOptions
-  - uid: excel.Excel.CustomXmlPart.load_1
+            - 'excel!Excel.Interfaces.CustomXmlPartLoadOptions:interface'
+  - uid: 'excel!Excel.CustomXmlPart#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -220,14 +220,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.CustomXmlPart;'
       return:
         type:
-          - excel.Excel.CustomXmlPart
+          - 'excel!Excel.CustomXmlPart:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.CustomXmlPart.load_2
+  - uid: 'excel!Excel.CustomXmlPart#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -240,7 +240,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.CustomXmlPart;'
       return:
         type:
-          - excel.Excel.CustomXmlPart
+          - 'excel!Excel.CustomXmlPart:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -249,7 +249,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.CustomXmlPart.namespaceUri
+  - uid: 'excel!Excel.CustomXmlPart#namespaceUri:member'
     summary: |-
       The custom XML part's namespace URI. Read-only.
 
@@ -264,7 +264,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.CustomXmlPart.setXml
+  - uid: 'excel!Excel.CustomXmlPart#setXml:member(1)'
     summary: |-
       Sets the custom XML part's full XML content.
 
@@ -310,7 +310,7 @@ items:
           description: XML content for the part.
           type:
             - string
-  - uid: excel.Excel.CustomXmlPart.toJSON
+  - uid: 'excel!Excel.CustomXmlPart#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -326,5 +326,25 @@ items:
       content: 'toJSON(): Excel.Interfaces.CustomXmlPartData;'
       return:
         type:
-          - excel.Excel.Interfaces.CustomXmlPartData
+          - 'excel!Excel.Interfaces.CustomXmlPartData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.CustomXmlPart#getXml~0:complex'
+    name: OfficeExtension.ClientResult<string>
+    fullName: OfficeExtension.ClientResult<string>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <string>
+        fullName: <string>
+  - uid: 'excel!Excel.CustomXmlPart:class'
+    name: Excel.CustomXmlPart
+  - uid: 'excel!Excel.Interfaces.CustomXmlPartLoadOptions:interface'
+    name: Excel.Interfaces.CustomXmlPartLoadOptions
+  - uid: 'excel!Excel.Interfaces.CustomXmlPartData:interface'
+    name: Excel.Interfaces.CustomXmlPartData

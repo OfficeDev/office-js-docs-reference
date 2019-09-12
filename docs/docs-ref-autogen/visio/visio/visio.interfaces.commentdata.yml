@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.CommentData
+  - uid: 'visio!Visio.Interfaces.CommentData:interface'
     summary: An interface describing the data returned by calling "comment.toJSON()".
     name: Visio.Interfaces.CommentData
     fullName: Visio.Interfaces.CommentData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.CommentData.author
-      - visio.Visio.Interfaces.CommentData.date
-      - visio.Visio.Interfaces.CommentData.text
-  - uid: visio.Visio.Interfaces.CommentData.author
+      - 'visio!Visio.Interfaces.CommentData#author:member'
+      - 'visio!Visio.Interfaces.CommentData#date:member'
+      - 'visio!Visio.Interfaces.CommentData#text:member'
+  - uid: 'visio!Visio.Interfaces.CommentData#author:member'
     summary: |-
       A string that specifies the name of the author of the comment.
 
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.Interfaces.CommentData.date
+  - uid: 'visio!Visio.Interfaces.CommentData#date:member'
     summary: |-
       A string that specifies the date when the comment was created.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.Interfaces.CommentData.text
+  - uid: 'visio!Visio.Interfaces.CommentData#text:member'
     summary: |-
       A string that contains the comment text.
 

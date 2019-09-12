@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.FileType
+  - uid: 'office!Office.FileType:enum'
     summary: Specifies the format in which to return the document.
     remarks: >-
       `FileType.Text` is only supported in Word, `FileType.Pdf` is only supported in Word on the web, Windows, and Mac,
@@ -10,26 +10,26 @@ items:
     langs:
       - typeScript
     type: enum
-    package: office
+    package: office!
     children:
-      - office.Office.FileType.Compressed
-      - office.Office.FileType.Pdf
-      - office.Office.FileType.Text
-  - uid: office.Office.FileType.Compressed
+      - 'office!Office.FileType.Compressed:member'
+      - 'office!Office.FileType.Pdf:member'
+      - 'office!Office.FileType.Text:member'
+  - uid: 'office!Office.FileType.Compressed:member'
     summary: 'Returns the entire document (.pptx, .docx, or .xlsx) in Office Open XML (OOXML) format as a byte array.'
     name: Compressed
     fullName: Compressed
     langs:
       - typeScript
     type: field
-  - uid: office.Office.FileType.Pdf
+  - uid: 'office!Office.FileType.Pdf:member'
     summary: Returns the entire document in PDF format as a byte array.
     name: Pdf
     fullName: Pdf
     langs:
       - typeScript
     type: field
-  - uid: office.Office.FileType.Text
+  - uid: 'office!Office.FileType.Text:member'
     summary: Returns only the text of the document as a string. (Word only)
     name: Text
     fullName: Text

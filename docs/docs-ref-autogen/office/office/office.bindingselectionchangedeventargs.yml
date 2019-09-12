@@ -1,23 +1,23 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.BindingSelectionChangedEventArgs
+  - uid: 'office!Office.BindingSelectionChangedEventArgs:interface'
     summary: Provides information about the binding that raised the SelectionChanged event.
     name: Office.BindingSelectionChangedEventArgs
     fullName: Office.BindingSelectionChangedEventArgs
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.BindingSelectionChangedEventArgs.binding
-      - office.Office.BindingSelectionChangedEventArgs.columnCount
-      - office.Office.BindingSelectionChangedEventArgs.rowCount
-      - office.Office.BindingSelectionChangedEventArgs.startColumn
-      - office.Office.BindingSelectionChangedEventArgs.startRow
-      - office.Office.BindingSelectionChangedEventArgs.type
-  - uid: office.Office.BindingSelectionChangedEventArgs.binding
+      - 'office!Office.BindingSelectionChangedEventArgs#binding:member'
+      - 'office!Office.BindingSelectionChangedEventArgs#columnCount:member'
+      - 'office!Office.BindingSelectionChangedEventArgs#rowCount:member'
+      - 'office!Office.BindingSelectionChangedEventArgs#startColumn:member'
+      - 'office!Office.BindingSelectionChangedEventArgs#startRow:member'
+      - 'office!Office.BindingSelectionChangedEventArgs#type:member'
+  - uid: 'office!Office.BindingSelectionChangedEventArgs#binding:member'
     summary: >-
-      Gets an [Office.Binding](xref:office.Office.Binding) object that represents the binding that raised the
+      Gets an [Office.Binding](xref:office!Office.Binding:interface) object that represents the binding that raised the
       SelectionChanged event.
     name: binding
     fullName: binding
@@ -28,8 +28,8 @@ items:
       content: 'binding: Binding;'
       return:
         type:
-          - office.Office.Binding
-  - uid: office.Office.BindingSelectionChangedEventArgs.columnCount
+          - 'office!Office.Binding:interface'
+  - uid: 'office!Office.BindingSelectionChangedEventArgs#columnCount:member'
     summary: >-
       Gets the number of columns selected. If a single cell is selected returns 1.
 
@@ -38,7 +38,7 @@ items:
       returned.
 
 
-      For Word, this property will work only for bindings of [Office.BindingType](xref:office.Office.BindingType)
+      For Word, this property will work only for bindings of [Office.BindingType](xref:office!Office.BindingType:enum)
       "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
       merged cells, because the structure of the table must be uniform for this property to work correctly.
     name: columnCount
@@ -89,7 +89,7 @@ items:
           }
 
           ```
-  - uid: office.Office.BindingSelectionChangedEventArgs.rowCount
+  - uid: 'office!Office.BindingSelectionChangedEventArgs#rowCount:member'
     summary: >-
       Gets the number of rows selected. If a single cell is selected returns 1.
 
@@ -98,7 +98,7 @@ items:
       returned.
 
 
-      For Word, this property will work only for bindings of [Office.BindingType](xref:office.Office.BindingType)
+      For Word, this property will work only for bindings of [Office.BindingType](xref:office!Office.BindingType:enum)
       "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
       merged cells, because the structure of the table must be uniform for this property to work correctly.
     name: rowCount
@@ -149,7 +149,7 @@ items:
           }
 
           ```
-  - uid: office.Office.BindingSelectionChangedEventArgs.startColumn
+  - uid: 'office!Office.BindingSelectionChangedEventArgs#startColumn:member'
     summary: >-
       The zero-based index of the first column of the selection counting from the leftmost column in the binding.
 
@@ -158,7 +158,7 @@ items:
       are returned.
 
 
-      For Word, this property will work only for bindings of [Office.BindingType](xref:office.Office.BindingType)
+      For Word, this property will work only for bindings of [Office.BindingType](xref:office!Office.BindingType:enum)
       "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
       merged cells, because the structure of the table must be uniform for this property to work correctly.
     name: startColumn
@@ -209,7 +209,7 @@ items:
           }
 
           ```
-  - uid: office.Office.BindingSelectionChangedEventArgs.startRow
+  - uid: 'office!Office.BindingSelectionChangedEventArgs#startRow:member'
     summary: >-
       The zero-based index of the first row of the selection counting from the first row in the binding.
 
@@ -218,7 +218,7 @@ items:
       are returned.
 
 
-      For Word, this property will work only for bindings of [Office.BindingType](xref:office.Office.BindingType)
+      For Word, this property will work only for bindings of [Office.BindingType](xref:office!Office.BindingType:enum)
       "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains
       merged cells, because the structure of the table must be uniform for this property to work correctly.
     name: startRow
@@ -269,10 +269,10 @@ items:
           }
 
           ```
-  - uid: office.Office.BindingSelectionChangedEventArgs.type
+  - uid: 'office!Office.BindingSelectionChangedEventArgs#type:member'
     summary: >-
-      Gets an [Office.EventType](xref:office.Office.EventType) enumeration value that identifies the kind of event that
-      was raised.
+      Gets an [Office.EventType](xref:office!Office.EventType:enum) enumeration value that identifies the kind of event
+      that was raised.
     name: type
     fullName: type
     langs:
@@ -282,4 +282,9 @@ items:
       content: 'type: EventType;'
       return:
         type:
-          - office.Office.EventType
+          - 'office!Office.EventType:enum'
+references:
+  - uid: 'office!Office.Binding:interface'
+    name: Binding
+  - uid: 'office!Office.EventType:enum'
+    name: EventType

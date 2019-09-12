@@ -1,26 +1,26 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData:interface'
     summary: 'An interface for updating data on the TextFrame object, for use in "textFrame.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.TextFrameUpdateData
     fullName: Excel.Interfaces.TextFrameUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TextFrameUpdateData.autoSizeSetting
-      - excel.Excel.Interfaces.TextFrameUpdateData.bottomMargin
-      - excel.Excel.Interfaces.TextFrameUpdateData.horizontalAlignment
-      - excel.Excel.Interfaces.TextFrameUpdateData.horizontalOverflow
-      - excel.Excel.Interfaces.TextFrameUpdateData.leftMargin
-      - excel.Excel.Interfaces.TextFrameUpdateData.orientation
-      - excel.Excel.Interfaces.TextFrameUpdateData.readingOrder
-      - excel.Excel.Interfaces.TextFrameUpdateData.rightMargin
-      - excel.Excel.Interfaces.TextFrameUpdateData.topMargin
-      - excel.Excel.Interfaces.TextFrameUpdateData.verticalAlignment
-      - excel.Excel.Interfaces.TextFrameUpdateData.verticalOverflow
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.autoSizeSetting
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#autoSizeSetting:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#bottomMargin:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#horizontalAlignment:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#horizontalOverflow:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#leftMargin:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#orientation:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#readingOrder:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#rightMargin:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#topMargin:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#verticalAlignment:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#verticalOverflow:member'
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#autoSizeSetting:member'
     summary: >-
       Gets or sets the automatic sizing settings for the text frame. A text frame can be set to automatically fit the
       text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
@@ -38,8 +38,8 @@ items:
         "AutoSizeMixed";
       return:
         type:
-          - Excel.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.bottomMargin
+          - 'excel!Excel.Interfaces.TextFrameUpdateData#autoSizeSetting~0:complex'
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#bottomMargin:member'
     summary: |-
       Represents the bottom margin, in points, of the text frame.
 
@@ -54,7 +54,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.horizontalAlignment
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#horizontalAlignment:member'
     summary: |-
       Represents the horizontal alignment of the text frame. See Excel.ShapeTextHorizontalAlignment for details.
 
@@ -70,10 +70,8 @@ items:
         "JustifyLow" | "Distributed" | "ThaiDistributed";
       return:
         type:
-          - >-
-            Excel.ShapeTextHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed"
-            | "ThaiDistributed"
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.horizontalOverflow
+          - 'excel!Excel.Interfaces.TextFrameUpdateData#horizontalAlignment~0:complex'
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#horizontalOverflow:member'
     summary: |-
       Represents the horizontal overflow behavior of the text frame. See Excel.ShapeTextHorizontalOverflow for details.
 
@@ -87,8 +85,8 @@ items:
       content: 'horizontalOverflow?: Excel.ShapeTextHorizontalOverflow | "Overflow" | "Clip";'
       return:
         type:
-          - Excel.ShapeTextHorizontalOverflow | "Overflow" | "Clip"
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.leftMargin
+          - 'excel!Excel.Interfaces.TextFrameUpdateData#horizontalOverflow~0:complex'
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#leftMargin:member'
     summary: |-
       Represents the left margin, in points, of the text frame.
 
@@ -103,7 +101,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.orientation
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#orientation:member'
     summary: |-
       Represents the text orientation of the text frame. See Excel.ShapeTextOrientation for details.
 
@@ -119,10 +117,8 @@ items:
         "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL";
       return:
         type:
-          - >-
-            Excel.ShapeTextOrientation | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" |
-            "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL"
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.readingOrder
+          - 'excel!Excel.Interfaces.TextFrameUpdateData#orientation~0:complex'
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#readingOrder:member'
     summary: >-
       Represents the reading order of the text frame, either left-to-right or right-to-left. See
       Excel.ShapeTextReadingOrder for details.
@@ -138,8 +134,8 @@ items:
       content: 'readingOrder?: Excel.ShapeTextReadingOrder | "LeftToRight" | "RightToLeft";'
       return:
         type:
-          - Excel.ShapeTextReadingOrder | "LeftToRight" | "RightToLeft"
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.rightMargin
+          - 'excel!Excel.Interfaces.TextFrameUpdateData#readingOrder~0:complex'
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#rightMargin:member'
     summary: |-
       Represents the right margin, in points, of the text frame.
 
@@ -154,7 +150,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.topMargin
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#topMargin:member'
     summary: |-
       Represents the top margin, in points, of the text frame.
 
@@ -169,7 +165,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.verticalAlignment
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#verticalAlignment:member'
     summary: |-
       Represents the vertical alignment of the text frame. See Excel.ShapeTextVerticalAlignment for details.
 
@@ -185,8 +181,8 @@ items:
         "Distributed";
       return:
         type:
-          - Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed"
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.verticalOverflow
+          - 'excel!Excel.Interfaces.TextFrameUpdateData#verticalAlignment~0:complex'
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#verticalOverflow:member'
     summary: |-
       Represents the vertical overflow behavior of the text frame. See Excel.ShapeTextVerticalOverflow for details.
 
@@ -200,4 +196,76 @@ items:
       content: 'verticalOverflow?: Excel.ShapeTextVerticalOverflow | "Overflow" | "Ellipsis" | "Clip";'
       return:
         type:
-          - Excel.ShapeTextVerticalOverflow | "Overflow" | "Ellipsis" | "Clip"
+          - 'excel!Excel.Interfaces.TextFrameUpdateData#verticalOverflow~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#autoSizeSetting~0:complex'
+    name: Excel.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"
+    fullName: Excel.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"
+    spec.typeScript:
+      - uid: 'excel!Excel.ShapeAutoSize:enum'
+        name: Excel.ShapeAutoSize
+        fullName: Excel.ShapeAutoSize
+      - name: ' | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"'
+        fullName: ' | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"'
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#horizontalAlignment~0:complex'
+    name: >-
+      Excel.ShapeTextHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" |
+      "ThaiDistributed"
+    fullName: >-
+      Excel.ShapeTextHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" |
+      "ThaiDistributed"
+    spec.typeScript:
+      - uid: 'excel!Excel.ShapeTextHorizontalAlignment:enum'
+        name: Excel.ShapeTextHorizontalAlignment
+        fullName: Excel.ShapeTextHorizontalAlignment
+      - name: ' | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed"'
+        fullName: ' | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed" | "ThaiDistributed"'
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#horizontalOverflow~0:complex'
+    name: Excel.ShapeTextHorizontalOverflow | "Overflow" | "Clip"
+    fullName: Excel.ShapeTextHorizontalOverflow | "Overflow" | "Clip"
+    spec.typeScript:
+      - uid: 'excel!Excel.ShapeTextHorizontalOverflow:enum'
+        name: Excel.ShapeTextHorizontalOverflow
+        fullName: Excel.ShapeTextHorizontalOverflow
+      - name: ' | "Overflow" | "Clip"'
+        fullName: ' | "Overflow" | "Clip"'
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#orientation~0:complex'
+    name: >-
+      Excel.ShapeTextOrientation | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" | "EastAsianVertical" |
+      "MongolianVertical" | "WordArtVerticalRTL"
+    fullName: >-
+      Excel.ShapeTextOrientation | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" | "EastAsianVertical" |
+      "MongolianVertical" | "WordArtVerticalRTL"
+    spec.typeScript:
+      - uid: 'excel!Excel.ShapeTextOrientation:enum'
+        name: Excel.ShapeTextOrientation
+        fullName: Excel.ShapeTextOrientation
+      - name: ' | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" | "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL"'
+        fullName: ' | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" | "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL"'
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#readingOrder~0:complex'
+    name: Excel.ShapeTextReadingOrder | "LeftToRight" | "RightToLeft"
+    fullName: Excel.ShapeTextReadingOrder | "LeftToRight" | "RightToLeft"
+    spec.typeScript:
+      - uid: 'excel!Excel.ShapeTextReadingOrder:enum'
+        name: Excel.ShapeTextReadingOrder
+        fullName: Excel.ShapeTextReadingOrder
+      - name: ' | "LeftToRight" | "RightToLeft"'
+        fullName: ' | "LeftToRight" | "RightToLeft"'
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#verticalAlignment~0:complex'
+    name: Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed"
+    fullName: Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed"
+    spec.typeScript:
+      - uid: 'excel!Excel.ShapeTextVerticalAlignment:enum'
+        name: Excel.ShapeTextVerticalAlignment
+        fullName: Excel.ShapeTextVerticalAlignment
+      - name: ' | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed"'
+        fullName: ' | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed"'
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#verticalOverflow~0:complex'
+    name: Excel.ShapeTextVerticalOverflow | "Overflow" | "Ellipsis" | "Clip"
+    fullName: Excel.ShapeTextVerticalOverflow | "Overflow" | "Ellipsis" | "Clip"
+    spec.typeScript:
+      - uid: 'excel!Excel.ShapeTextVerticalOverflow:enum'
+        name: Excel.ShapeTextVerticalOverflow
+        fullName: Excel.ShapeTextVerticalOverflow
+      - name: ' | "Overflow" | "Ellipsis" | "Clip"'
+        fullName: ' | "Overflow" | "Ellipsis" | "Clip"'

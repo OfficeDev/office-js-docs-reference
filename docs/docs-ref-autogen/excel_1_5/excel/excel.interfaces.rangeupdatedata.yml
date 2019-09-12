@@ -1,23 +1,23 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeUpdateData
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData:interface'
     summary: 'An interface for updating data on the Range object, for use in "range.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.RangeUpdateData
     fullName: Excel.Interfaces.RangeUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RangeUpdateData.columnHidden
-      - excel.Excel.Interfaces.RangeUpdateData.format
-      - excel.Excel.Interfaces.RangeUpdateData.formulas
-      - excel.Excel.Interfaces.RangeUpdateData.formulasLocal
-      - excel.Excel.Interfaces.RangeUpdateData.formulasR1C1
-      - excel.Excel.Interfaces.RangeUpdateData.numberFormat
-      - excel.Excel.Interfaces.RangeUpdateData.rowHidden
-      - excel.Excel.Interfaces.RangeUpdateData.values
-  - uid: excel.Excel.Interfaces.RangeUpdateData.columnHidden
+      - 'excel!Excel.Interfaces.RangeUpdateData#columnHidden:member'
+      - 'excel!Excel.Interfaces.RangeUpdateData#format:member'
+      - 'excel!Excel.Interfaces.RangeUpdateData#formulas:member'
+      - 'excel!Excel.Interfaces.RangeUpdateData#formulasLocal:member'
+      - 'excel!Excel.Interfaces.RangeUpdateData#formulasR1C1:member'
+      - 'excel!Excel.Interfaces.RangeUpdateData#numberFormat:member'
+      - 'excel!Excel.Interfaces.RangeUpdateData#rowHidden:member'
+      - 'excel!Excel.Interfaces.RangeUpdateData#values:member'
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#columnHidden:member'
     summary: |-
       Represents if all columns of the current range are hidden.
 
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeUpdateData.format
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#format:member'
     summary: |-
       Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
 
@@ -46,8 +46,8 @@ items:
       content: 'format?: Excel.Interfaces.RangeFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFormatUpdateData
-  - uid: excel.Excel.Interfaces.RangeUpdateData.formulas
+          - 'excel!Excel.Interfaces.RangeFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#formulas:member'
     summary: >-
       Represents the formula in A1-style notation. When setting formulas to a range, the value argument can be either a
       single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all
@@ -65,7 +65,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeUpdateData.formulasLocal
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#formulasLocal:member'
     summary: >-
       Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
       English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. When setting formulas to a range, the
@@ -84,7 +84,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeUpdateData.formulasR1C1
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#formulasR1C1:member'
     summary: >-
       Represents the formula in R1C1-style notation. When setting formulas to a range, the value argument can be either
       a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all
@@ -102,7 +102,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeUpdateData.numberFormat
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#numberFormat:member'
     summary: >-
       Represents Excel's number format code for the given range. When setting number format to a range, the value
       argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it
@@ -120,7 +120,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeUpdateData.rowHidden
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#rowHidden:member'
     summary: |-
       Represents if all rows of the current range are hidden.
 
@@ -135,7 +135,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeUpdateData.values
+  - uid: 'excel!Excel.Interfaces.RangeUpdateData#values:member'
     summary: >-
       Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
       Cells that contain an error will return the error string. When setting values to a range, the value argument can
@@ -154,3 +154,6 @@ items:
       return:
         type:
           - 'any[][]'
+references:
+  - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData:interface'
+    name: Excel.Interfaces.RangeFormatUpdateData

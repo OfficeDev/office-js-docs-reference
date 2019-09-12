@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.List
+  - uid: 'word!Word.List:class'
     summary: |-
-      Contains a collection of [Word.Paragraph](xref:word.Word.Paragraph) objects.
+      Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class) objects.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.List
@@ -11,37 +11,37 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: word
+      - 'word!OfficeExtension.ClientObject:class'
+    package: word!
     children:
-      - word.Word.List.context
-      - word.Word.List.getLevelFont
-      - word.Word.List.getLevelParagraphs
-      - word.Word.List.getLevelPicture
-      - word.Word.List.getLevelString
-      - word.Word.List.id
-      - word.Word.List.insertParagraph
-      - word.Word.List.insertParagraph_1
-      - word.Word.List.levelExistences
-      - word.Word.List.levelTypes
-      - word.Word.List.load
-      - word.Word.List.load_1
-      - word.Word.List.load_2
-      - word.Word.List.paragraphs
-      - word.Word.List.resetLevelFont
-      - word.Word.List.setLevelAlignment
-      - word.Word.List.setLevelAlignment_1
-      - word.Word.List.setLevelBullet
-      - word.Word.List.setLevelBullet_1
-      - word.Word.List.setLevelIndents
-      - word.Word.List.setLevelNumbering
-      - word.Word.List.setLevelNumbering_1
-      - word.Word.List.setLevelPicture
-      - word.Word.List.setLevelStartingNumber
-      - word.Word.List.toJSON
-      - word.Word.List.track
-      - word.Word.List.untrack
-  - uid: word.Word.List.context
+      - 'word!Word.List#context:member'
+      - 'word!Word.List#getLevelFont:member(1)'
+      - 'word!Word.List#getLevelParagraphs:member(1)'
+      - 'word!Word.List#getLevelPicture:member(1)'
+      - 'word!Word.List#getLevelString:member(1)'
+      - 'word!Word.List#id:member'
+      - 'word!Word.List#insertParagraph:member(1)'
+      - 'word!Word.List#insertParagraph:member(2)'
+      - 'word!Word.List#levelExistences:member'
+      - 'word!Word.List#levelTypes:member'
+      - 'word!Word.List#load:member(1)'
+      - 'word!Word.List#load:member(2)'
+      - 'word!Word.List#load:member(3)'
+      - 'word!Word.List#paragraphs:member'
+      - 'word!Word.List#resetLevelFont:member(1)'
+      - 'word!Word.List#setLevelAlignment:member(1)'
+      - 'word!Word.List#setLevelAlignment:member(2)'
+      - 'word!Word.List#setLevelBullet:member(1)'
+      - 'word!Word.List#setLevelBullet:member(2)'
+      - 'word!Word.List#setLevelIndents:member(1)'
+      - 'word!Word.List#setLevelNumbering:member(1)'
+      - 'word!Word.List#setLevelNumbering:member(2)'
+      - 'word!Word.List#setLevelPicture:member(1)'
+      - 'word!Word.List#setLevelStartingNumber:member(1)'
+      - 'word!Word.List#toJSON:member(1)'
+      - 'word!Word.List#track:member(1)'
+      - 'word!Word.List#untrack:member(1)'
+  - uid: 'word!Word.List#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -54,8 +54,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.List.getLevelFont
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.List#getLevelFont:member(1)'
     summary: >-
       Gets the font of the bullet, number or picture at the specified level in the list.
 
@@ -72,14 +72,14 @@ items:
       content: 'getLevelFont(level: number): Word.Font;'
       return:
         type:
-          - word.Word.Font
+          - 'word!Word.Font:class'
         description: ''
       parameters:
         - id: level
           description: Required. The level in the list.
           type:
             - number
-  - uid: word.Word.List.getLevelParagraphs
+  - uid: 'word!Word.List#getLevelParagraphs:member(1)'
     summary: |-
       Gets the paragraphs that occur at the specified level in the list.
 
@@ -93,14 +93,14 @@ items:
       content: 'getLevelParagraphs(level: number): Word.ParagraphCollection;'
       return:
         type:
-          - word.Word.ParagraphCollection
+          - 'word!Word.ParagraphCollection:class'
         description: ''
       parameters:
         - id: level
           description: Required. The level in the list.
           type:
             - number
-  - uid: word.Word.List.getLevelPicture
+  - uid: 'word!Word.List#getLevelPicture:member(1)'
     summary: >-
       Gets the base64 encoded string representation of the picture at the specified level in the list.
 
@@ -117,14 +117,14 @@ items:
       content: 'getLevelPicture(level: number): OfficeExtension.ClientResult<string>;'
       return:
         type:
-          - OfficeExtension.ClientResult<string>
+          - 'word!Word.List#getLevelPicture~0:complex'
         description: ''
       parameters:
         - id: level
           description: Required. The level in the list.
           type:
             - number
-  - uid: word.Word.List.getLevelString
+  - uid: 'word!Word.List#getLevelString:member(1)'
     summary: |-
       Gets the bullet, number or picture at the specified level as a string.
 
@@ -138,14 +138,14 @@ items:
       content: 'getLevelString(level: number): OfficeExtension.ClientResult<string>;'
       return:
         type:
-          - OfficeExtension.ClientResult<string>
+          - 'word!Word.List#getLevelString~0:complex'
         description: ''
       parameters:
         - id: level
           description: Required. The level in the list.
           type:
             - number
-  - uid: word.Word.List.id
+  - uid: 'word!Word.List#id:member'
     summary: |-
       Gets the list's id.
 
@@ -160,7 +160,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.List.insertParagraph
+  - uid: 'word!Word.List#insertParagraph:member(1)'
     summary: >-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or
       'After'.
@@ -176,7 +176,7 @@ items:
       content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
       parameters:
         - id: paragraphText
@@ -186,8 +186,8 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Start'', ''End'', ''Before'', or ''After''.'
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.List.insertParagraph_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.List#insertParagraph:member(2)'
     summary: >-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or
       'After'.
@@ -205,7 +205,7 @@ items:
         Word.Paragraph;
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
       parameters:
         - id: paragraphText
@@ -216,7 +216,7 @@ items:
           description: 'Required. The value can be ''Start'', ''End'', ''Before'', or ''After''.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.List.levelExistences
+  - uid: 'word!Word.List#levelExistences:member'
     summary: >-
       Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there
       is at least one list item at that level. Read-only.
@@ -233,7 +233,7 @@ items:
       return:
         type:
           - 'boolean[]'
-  - uid: word.Word.List.levelTypes
+  - uid: 'word!Word.List#levelTypes:member'
     summary: |-
       Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
 
@@ -247,8 +247,8 @@ items:
       content: 'readonly levelTypes: Word.ListLevelType[];'
       return:
         type:
-          - 'Word.ListLevelType[]'
-  - uid: word.Word.List.load
+          - 'word!Word.List#levelTypes~0:complex'
+  - uid: 'word!Word.List#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -279,14 +279,14 @@ items:
       content: 'load(option?: Word.Interfaces.ListLoadOptions): Word.List;'
       return:
         type:
-          - word.Word.List
+          - 'word!Word.List:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.ListLoadOptions
-  - uid: word.Word.List.load_1
+            - 'word!Word.Interfaces.ListLoadOptions:interface'
+  - uid: 'word!Word.List#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -299,14 +299,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.List;'
       return:
         type:
-          - word.Word.List
+          - 'word!Word.List:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.List.load_2
+  - uid: 'word!Word.List#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -319,7 +319,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.List;'
       return:
         type:
-          - word.Word.List
+          - 'word!Word.List:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -328,7 +328,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: word.Word.List.paragraphs
+  - uid: 'word!Word.List#paragraphs:member'
     summary: |-
       Gets paragraphs in the list. Read-only.
 
@@ -342,8 +342,8 @@ items:
       content: 'readonly paragraphs: Word.ParagraphCollection;'
       return:
         type:
-          - word.Word.ParagraphCollection
-  - uid: word.Word.List.resetLevelFont
+          - 'word!Word.ParagraphCollection:class'
+  - uid: 'word!Word.List#resetLevelFont:member(1)'
     summary: >-
       Resets the font of the bullet, number or picture at the specified level in the list.
 
@@ -373,7 +373,7 @@ items:
             unchanged.
           type:
             - boolean
-  - uid: word.Word.List.setLevelAlignment
+  - uid: 'word!Word.List#setLevelAlignment:member(1)'
     summary: |-
       Sets the alignment of the bullet, number or picture at the specified level in the list.
 
@@ -397,8 +397,8 @@ items:
         - id: alignment
           description: 'Required. The level alignment that can be ''Left'', ''Centered'', or ''Right''.'
           type:
-            - word.Word.Alignment
-  - uid: word.Word.List.setLevelAlignment_1
+            - 'word!Word.Alignment:enum'
+  - uid: 'word!Word.List#setLevelAlignment:member(2)'
     summary: |-
       Sets the alignment of the bullet, number or picture at the specified level in the list.
 
@@ -425,7 +425,7 @@ items:
           description: 'Required. The level alignment that can be ''Left'', ''Centered'', or ''Right''.'
           type:
             - '"Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
-  - uid: word.Word.List.setLevelBullet
+  - uid: 'word!Word.List#setLevelBullet:member(1)'
     summary: |-
       Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.
 
@@ -449,7 +449,7 @@ items:
         - id: listBullet
           description: Required. The bullet.
           type:
-            - word.Word.ListBullet
+            - 'word!Word.ListBullet:enum'
         - id: charCode
           description: Optional. The bullet character's code value. Used only if the bullet is 'Custom'.
           type:
@@ -458,7 +458,7 @@ items:
           description: Optional. The bullet's font name. Used only if the bullet is 'Custom'.
           type:
             - string
-  - uid: word.Word.List.setLevelBullet_1
+  - uid: 'word!Word.List#setLevelBullet:member(2)'
     summary: |-
       Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.
 
@@ -493,7 +493,7 @@ items:
           description: Optional. The bullet's font name. Used only if the bullet is 'Custom'.
           type:
             - string
-  - uid: word.Word.List.setLevelIndents
+  - uid: 'word!Word.List#setLevelIndents:member(1)'
     summary: |-
       Sets the two indents of the specified level in the list.
 
@@ -524,7 +524,7 @@ items:
             first line indent.
           type:
             - number
-  - uid: word.Word.List.setLevelNumbering
+  - uid: 'word!Word.List#setLevelNumbering:member(1)'
     summary: |-
       Sets the numbering format at the specified level in the list.
 
@@ -550,7 +550,7 @@ items:
         - id: listNumbering
           description: Required. The ordinal format.
           type:
-            - word.Word.ListNumbering
+            - 'word!Word.ListNumbering:enum'
         - id: formatString
           description: >-
             Optional. The numbering string format defined as an array of strings and/or integers. Each integer is a
@@ -558,8 +558,8 @@ items:
             ".", level, ")"\] can define the format of "(2.c)", where 2 is the parent's item number and c is this
             level's item number.
           type:
-            - Array<string | number>
-  - uid: word.Word.List.setLevelNumbering_1
+            - 'word!Word.List#setLevelNumbering~0:complex'
+  - uid: 'word!Word.List#setLevelNumbering:member(2)'
     summary: |-
       Sets the numbering format at the specified level in the list.
 
@@ -593,8 +593,8 @@ items:
             ".", level, ")"\] can define the format of "(2.c)", where 2 is the parent's item number and c is this
             level's item number.
           type:
-            - Array<string | number>
-  - uid: word.Word.List.setLevelPicture
+            - 'word!Word.List#setLevelNumbering~1:complex'
+  - uid: 'word!Word.List#setLevelPicture:member(1)'
     summary: >-
       Sets the picture at the specified level in the list.
 
@@ -622,7 +622,7 @@ items:
           description: 'Optional. The base64 encoded image to be set. If not given, the default picture is set.'
           type:
             - string
-  - uid: word.Word.List.setLevelStartingNumber
+  - uid: 'word!Word.List#setLevelStartingNumber:member(1)'
     summary: |-
       Sets the starting number at the specified level in the list. Default value is 1.
 
@@ -647,7 +647,7 @@ items:
           description: Required. The number to start with.
           type:
             - number
-  - uid: word.Word.List.toJSON
+  - uid: 'word!Word.List#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -663,9 +663,9 @@ items:
       content: 'toJSON(): Word.Interfaces.ListData;'
       return:
         type:
-          - word.Word.Interfaces.ListData
+          - 'word!Word.Interfaces.ListData:interface'
         description: ''
-  - uid: word.Word.List.track
+  - uid: 'word!Word.List#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -681,9 +681,9 @@ items:
       content: 'track(): Word.List;'
       return:
         type:
-          - word.Word.List
+          - 'word!Word.List:class'
         description: ''
-  - uid: word.Word.List.untrack
+  - uid: 'word!Word.List#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -698,5 +698,75 @@ items:
       content: 'untrack(): Word.List;'
       return:
         type:
-          - word.Word.List
+          - 'word!Word.List:class'
         description: ''
+references:
+  - uid: 'word!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.Font:class'
+    name: Word.Font
+  - uid: 'word!Word.ParagraphCollection:class'
+    name: Word.ParagraphCollection
+  - uid: 'word!Word.List#getLevelPicture~0:complex'
+    name: OfficeExtension.ClientResult<string>
+    fullName: OfficeExtension.ClientResult<string>
+    spec.typeScript:
+      - uid: 'word!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <string>
+        fullName: <string>
+  - uid: 'word!Word.List#getLevelString~0:complex'
+    name: OfficeExtension.ClientResult<string>
+    fullName: OfficeExtension.ClientResult<string>
+    spec.typeScript:
+      - uid: 'word!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <string>
+        fullName: <string>
+  - uid: 'word!Word.Paragraph:class'
+    name: Word.Paragraph
+  - uid: 'word!Word.InsertLocation:enum'
+    name: Word.InsertLocation
+  - uid: 'word!Word.List#levelTypes~0:complex'
+    name: 'Word.ListLevelType[]'
+    fullName: 'Word.ListLevelType[]'
+    spec.typeScript:
+      - uid: 'word!Word.ListLevelType:enum'
+        name: Word.ListLevelType
+        fullName: Word.ListLevelType
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'word!Word.List:class'
+    name: Word.List
+  - uid: 'word!Word.Interfaces.ListLoadOptions:interface'
+    name: Word.Interfaces.ListLoadOptions
+  - uid: 'word!Word.Alignment:enum'
+    name: Word.Alignment
+  - uid: 'word!Word.ListBullet:enum'
+    name: Word.ListBullet
+  - uid: 'word!Word.ListNumbering:enum'
+    name: Word.ListNumbering
+  - uid: 'word!Word.List#setLevelNumbering~0:complex'
+    name: Array<string | number>
+    fullName: Array<string | number>
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: <string | number>
+        fullName: <string | number>
+  - uid: 'word!Word.List#setLevelNumbering~1:complex'
+    name: Array<string | number>
+    fullName: Array<string | number>
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: <string | number>
+        fullName: <string | number>
+  - uid: 'word!Word.Interfaces.ListData:interface'
+    name: Word.Interfaces.ListData

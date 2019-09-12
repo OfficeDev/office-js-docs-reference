@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.Body
+  - uid: 'outlook!Office.Body:interface'
     summary: >-
       The body object provides methods for adding and updating the content of the message or appointment. It is returned
       in the body property of the selected item.
@@ -19,19 +19,19 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.Body.getAsync
-      - outlook.Office.Body.getAsync_1
-      - outlook.Office.Body.getTypeAsync
-      - outlook.Office.Body.getTypeAsync_1
-      - outlook.Office.Body.prependAsync
-      - outlook.Office.Body.prependAsync_1
-      - outlook.Office.Body.setAsync
-      - outlook.Office.Body.setAsync_1
-      - outlook.Office.Body.setSelectedDataAsync
-      - outlook.Office.Body.setSelectedDataAsync_1
-  - uid: outlook.Office.Body.getAsync
+      - 'outlook!Office.Body#getAsync:member(1)'
+      - 'outlook!Office.Body#getAsync:member(2)'
+      - 'outlook!Office.Body#getTypeAsync:member(1)'
+      - 'outlook!Office.Body#getTypeAsync:member(2)'
+      - 'outlook!Office.Body#prependAsync:member(1)'
+      - 'outlook!Office.Body#prependAsync:member(2)'
+      - 'outlook!Office.Body#setAsync:member(1)'
+      - 'outlook!Office.Body#setAsync:member(2)'
+      - 'outlook!Office.Body#setSelectedDataAsync:member(1)'
+      - 'outlook!Office.Body#setSelectedDataAsync:member(2)'
+  - uid: 'outlook!Office.Body#getAsync:member(1)'
     summary: >-
       Returns the current body in a specified format.
 
@@ -95,21 +95,21 @@ items:
         - id: coercionType
           description: The format for the returned body.
           type:
-            - Office.CoercionType | string
+            - 'outlook!Office.Body#getAsync~0:complex'
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties: asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. The body is provided in the requested format in the asyncResult.value
             property.
           type:
-            - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.Body.getAsync_1
+            - 'outlook!Office.Body#getAsync~1:complex'
+  - uid: 'outlook!Office.Body#getAsync:member(2)'
     summary: >-
       Returns the current body in a specified format.
 
@@ -148,15 +148,15 @@ items:
         - id: coercionType
           description: The format for the returned body.
           type:
-            - Office.CoercionType | string
+            - 'outlook!Office.Body#getAsync~2:complex'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. The body is provided in the requested format in the asyncResult.value
             property.
           type:
-            - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.Body.getTypeAsync
+            - 'outlook!Office.Body#getAsync~3:complex'
+  - uid: 'outlook!Office.Body#getTypeAsync:member(1)'
     summary: |-
       Gets a value that indicates whether the content is in HTML or text format.
 
@@ -186,15 +186,15 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. The content type is returned as one of the CoercionType values in the
             asyncResult.value property.
           type:
-            - '(asyncResult: Office.AsyncResult<Office.CoercionType>) => void'
-  - uid: outlook.Office.Body.getTypeAsync_1
+            - 'outlook!Office.Body#getTypeAsync~0:complex'
+  - uid: 'outlook!Office.Body#getTypeAsync:member(2)'
     summary: |-
       Gets a value that indicates whether the content is in HTML or text format.
 
@@ -239,8 +239,8 @@ items:
             parameter of type Office.AsyncResult. The content type is returned as one of the CoercionType values in the
             asyncResult.value property.
           type:
-            - '(asyncResult: Office.AsyncResult<Office.CoercionType>) => void'
-  - uid: outlook.Office.Body.prependAsync
+            - 'outlook!Office.Body#getTypeAsync~1:complex'
+  - uid: 'outlook!Office.Body#prependAsync:member(1)'
     summary: >-
       Adds the specified content to the beginning of the item body.
 
@@ -307,15 +307,15 @@ items:
             can provide any object they wish to access in the callback method. coercionType: The desired format for the
             body. The string in the data parameter will be converted to this format.
           type:
-            - Office.AsyncContextOptions & CoercionTypeOptions
+            - 'outlook!Office.Body#prependAsync~0:complex'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
             property.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.Body.prependAsync_1
+            - 'outlook!Office.Body#prependAsync~1:complex'
+  - uid: 'outlook!Office.Body#prependAsync:member(2)'
     summary: >-
       Adds the specified content to the beginning of the item body.
 
@@ -364,8 +364,8 @@ items:
             parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
             property.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.Body.setAsync
+            - 'outlook!Office.Body#prependAsync~2:complex'
+  - uid: 'outlook!Office.Body#setAsync:member(1)'
     summary: >-
       Replaces the entire body with the specified text.
 
@@ -454,15 +454,15 @@ items:
             can provide any object they wish to access in the callback method. coercionType: The desired format for the
             body. The string in the data parameter will be converted to this format.
           type:
-            - Office.AsyncContextOptions & CoercionTypeOptions
+            - 'outlook!Office.Body#setAsync~0:complex'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
             property.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.Body.setAsync_1
+            - 'outlook!Office.Body#setAsync~1:complex'
+  - uid: 'outlook!Office.Body#setAsync:member(2)'
     summary: >-
       Replaces the entire body with the specified text.
 
@@ -517,8 +517,8 @@ items:
             parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
             property.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.Body.setSelectedDataAsync
+            - 'outlook!Office.Body#setAsync~2:complex'
+  - uid: 'outlook!Office.Body#setSelectedDataAsync:member(1)'
     summary: >-
       Replaces the selection in the body with the specified text.
 
@@ -591,15 +591,15 @@ items:
             can provide any object they wish to access in the callback method. coercionType: The desired format for the
             body. The string in the data parameter will be converted to this format.
           type:
-            - Office.AsyncContextOptions & CoercionTypeOptions
+            - 'outlook!Office.Body#setSelectedDataAsync~0:complex'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
             property.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.Body.setSelectedDataAsync_1
+            - 'outlook!Office.Body#setSelectedDataAsync~1:complex'
+  - uid: 'outlook!Office.Body#setSelectedDataAsync:member(2)'
     summary: >-
       Replaces the selection in the body with the specified text.
 
@@ -654,4 +654,181 @@ items:
             parameter of type Office.AsyncResult. Any errors encountered will be provided in the asyncResult.error
             property.
           type:
-            - '(asyncResult: Office.AsyncResult<void>) => void'
+            - 'outlook!Office.Body#setSelectedDataAsync~2:complex'
+references:
+  - uid: 'outlook!Office.Body#getAsync~0:complex'
+    name: Office.CoercionType | string
+    fullName: Office.CoercionType | string
+    spec.typeScript:
+      - uid: 'outlook!Office.CoercionType:enum'
+        name: Office.CoercionType
+        fullName: Office.CoercionType
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'outlook!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions
+  - uid: 'outlook!Office.Body#getAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'outlook!Office.Body#getAsync~2:complex'
+    name: Office.CoercionType | string
+    fullName: Office.CoercionType | string
+    spec.typeScript:
+      - uid: 'outlook!Office.CoercionType:enum'
+        name: Office.CoercionType
+        fullName: Office.CoercionType
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'outlook!Office.Body#getAsync~3:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'outlook!Office.Body#getTypeAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<Office.CoercionType>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<Office.CoercionType>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'outlook!Office.CoercionType:enum'
+        name: Office.CoercionType
+        fullName: Office.CoercionType
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'outlook!Office.Body#getTypeAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<Office.CoercionType>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<Office.CoercionType>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'outlook!Office.CoercionType:enum'
+        name: Office.CoercionType
+        fullName: Office.CoercionType
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'outlook!Office.Body#prependAsync~0:complex'
+    name: Office.AsyncContextOptions & CoercionTypeOptions
+    fullName: Office.AsyncContextOptions & Office.CoercionTypeOptions
+    spec.typeScript:
+      - uid: 'outlook!Office.AsyncContextOptions:interface'
+        name: Office.AsyncContextOptions
+        fullName: Office.AsyncContextOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'outlook!Office.CoercionTypeOptions:interface'
+        name: CoercionTypeOptions
+        fullName: Office.CoercionTypeOptions
+  - uid: 'outlook!Office.Body#prependAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.Body#prependAsync~2:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.Body#setAsync~0:complex'
+    name: Office.AsyncContextOptions & CoercionTypeOptions
+    fullName: Office.AsyncContextOptions & Office.CoercionTypeOptions
+    spec.typeScript:
+      - uid: 'outlook!Office.AsyncContextOptions:interface'
+        name: Office.AsyncContextOptions
+        fullName: Office.AsyncContextOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'outlook!Office.CoercionTypeOptions:interface'
+        name: CoercionTypeOptions
+        fullName: Office.CoercionTypeOptions
+  - uid: 'outlook!Office.Body#setAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.Body#setAsync~2:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.Body#setSelectedDataAsync~0:complex'
+    name: Office.AsyncContextOptions & CoercionTypeOptions
+    fullName: Office.AsyncContextOptions & Office.CoercionTypeOptions
+    spec.typeScript:
+      - uid: 'outlook!Office.AsyncContextOptions:interface'
+        name: Office.AsyncContextOptions
+        fullName: Office.AsyncContextOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'outlook!Office.CoercionTypeOptions:interface'
+        name: CoercionTypeOptions
+        fullName: Office.CoercionTypeOptions
+  - uid: 'outlook!Office.Body#setSelectedDataAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void
+  - uid: 'outlook!Office.Body#setSelectedDataAsync~2:complex'
+    name: '(asyncResult: Office.AsyncResult<void>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <void>) => void
+        fullName: <void>) => void

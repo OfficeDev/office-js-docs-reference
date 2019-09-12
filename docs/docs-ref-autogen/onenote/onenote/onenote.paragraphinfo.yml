@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.ParagraphInfo
+  - uid: 'onenote!OneNote.ParagraphInfo:interface'
     summary: |-
       List information for paragraph.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.ParagraphInfo.bulletType
-      - onenote.OneNote.ParagraphInfo.index
-      - onenote.OneNote.ParagraphInfo.listType
-      - onenote.OneNote.ParagraphInfo.numberType
-  - uid: onenote.OneNote.ParagraphInfo.bulletType
+      - 'onenote!OneNote.ParagraphInfo#bulletType:member'
+      - 'onenote!OneNote.ParagraphInfo#index:member'
+      - 'onenote!OneNote.ParagraphInfo#listType:member'
+      - 'onenote!OneNote.ParagraphInfo#numberType:member'
+  - uid: 'onenote!OneNote.ParagraphInfo#bulletType:member'
     summary: |-
       // Bullet list type of paragraph
 
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.ParagraphInfo.index
+  - uid: 'onenote!OneNote.ParagraphInfo#index:member'
     summary: |-
       // Index of paragraph in list
 
@@ -46,7 +46,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.ParagraphInfo.listType
+  - uid: 'onenote!OneNote.ParagraphInfo#listType:member'
     summary: |-
       // Type of list in paragraph
 
@@ -60,8 +60,8 @@ items:
       content: 'listType: OneNote.ListType | "None" | "Number" | "Bullet";'
       return:
         type:
-          - OneNote.ListType | "None" | "Number" | "Bullet"
-  - uid: onenote.OneNote.ParagraphInfo.numberType
+          - 'onenote!OneNote.ParagraphInfo#listType~0:complex'
+  - uid: 'onenote!OneNote.ParagraphInfo#numberType:member'
     summary: |-
       // number list type of paragraph
 
@@ -82,12 +82,37 @@ items:
         "Thai1" | "Thai2" | "NumInDash" | "LCRus" | "UCRus" | "LCGreek" | "UCGreek" | "Lim" | "Custom";
       return:
         type:
-          - >-
-            OneNote.NumberType | "None" | "Arabic" | "UCRoman" | "LCRoman" | "UCLetter" | "LCLetter" | "Ordinal" |
-            "Cardtext" | "Ordtext" | "Hex" | "ChiManSty" | "DbNum1" | "DbNum2" | "Aiueo" | "Iroha" | "DbChar" | "SbChar"
-            | "DbNum3" | "DbNum4" | "Circlenum" | "DArabic" | "DAiueo" | "DIroha" | "ArabicLZ" | "Bullet" | "Ganada" |
-            "Chosung" | "GB1" | "GB2" | "GB3" | "GB4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TpeDbNum1" | "TpeDbNum2" |
-            "TpeDbNum3" | "TpeDbNum4" | "ChnDbNum1" | "ChnDbNum2" | "ChnDbNum3" | "ChnDbNum4" | "KorDbNum1" |
-            "KorDbNum2" | "KorDbNum3" | "KorDbNum4" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "Hindi1" |
-            "Hindi2" | "Hindi3" | "Thai1" | "Thai2" | "NumInDash" | "LCRus" | "UCRus" | "LCGreek" | "UCGreek" | "Lim" |
-            "Custom"
+          - 'onenote!OneNote.ParagraphInfo#numberType~0:complex'
+references:
+  - uid: 'onenote!OneNote.ParagraphInfo#listType~0:complex'
+    name: OneNote.ListType | "None" | "Number" | "Bullet"
+    fullName: OneNote.ListType | "None" | "Number" | "Bullet"
+    spec.typeScript:
+      - uid: 'onenote!OneNote.ListType:enum'
+        name: OneNote.ListType
+        fullName: OneNote.ListType
+      - name: ' | "None" | "Number" | "Bullet"'
+        fullName: ' | "None" | "Number" | "Bullet"'
+  - uid: 'onenote!OneNote.ParagraphInfo#numberType~0:complex'
+    name: >-
+      OneNote.NumberType | "None" | "Arabic" | "UCRoman" | "LCRoman" | "UCLetter" | "LCLetter" | "Ordinal" | "Cardtext"
+      | "Ordtext" | "Hex" | "ChiManSty" | "DbNum1" | "DbNum2" | "Aiueo" | "Iroha" | "DbChar" | "SbChar" | "DbNum3" |
+      "DbNum4" | "Circlenum" | "DArabic" | "DAiueo" | "DIroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GB1" |
+      "GB2" | "GB3" | "GB4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TpeDbNum1" | "TpeDbNum2" | "TpeDbNum3" | "TpeDbNum4"
+      | "ChnDbNum1" | "ChnDbNum2" | "ChnDbNum3" | "ChnDbNum4" | "KorDbNum1" | "KorDbNum2" | "KorDbNum3" | "KorDbNum4" |
+      "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "Hindi1" | "Hindi2" | "Hindi3" | "Thai1" | "Thai2" | "NumInDash" |
+      "LCRus" | "UCRus" | "LCGreek" | "UCGreek" | "Lim" | "Custom"
+    fullName: >-
+      OneNote.NumberType | "None" | "Arabic" | "UCRoman" | "LCRoman" | "UCLetter" | "LCLetter" | "Ordinal" | "Cardtext"
+      | "Ordtext" | "Hex" | "ChiManSty" | "DbNum1" | "DbNum2" | "Aiueo" | "Iroha" | "DbChar" | "SbChar" | "DbNum3" |
+      "DbNum4" | "Circlenum" | "DArabic" | "DAiueo" | "DIroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GB1" |
+      "GB2" | "GB3" | "GB4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TpeDbNum1" | "TpeDbNum2" | "TpeDbNum3" | "TpeDbNum4"
+      | "ChnDbNum1" | "ChnDbNum2" | "ChnDbNum3" | "ChnDbNum4" | "KorDbNum1" | "KorDbNum2" | "KorDbNum3" | "KorDbNum4" |
+      "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "Hindi1" | "Hindi2" | "Hindi3" | "Thai1" | "Thai2" | "NumInDash" |
+      "LCRus" | "UCRus" | "LCGreek" | "UCGreek" | "Lim" | "Custom"
+    spec.typeScript:
+      - uid: 'onenote!OneNote.NumberType:enum'
+        name: OneNote.NumberType
+        fullName: OneNote.NumberType
+      - name: ' | "None" | "Arabic" | "UCRoman" | "LCRoman" | "UCLetter" | "LCLetter" | "Ordinal" | "Cardtext" | "Ordtext" | "Hex" | "ChiManSty" | "DbNum1" | "DbNum2" | "Aiueo" | "Iroha" | "DbChar" | "SbChar" | "DbNum3" | "DbNum4" | "Circlenum" | "DArabic" | "DAiueo" | "DIroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GB1" | "GB2" | "GB3" | "GB4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TpeDbNum1" | "TpeDbNum2" | "TpeDbNum3" | "TpeDbNum4" | "ChnDbNum1" | "ChnDbNum2" | "ChnDbNum3" | "ChnDbNum4" | "KorDbNum1" | "KorDbNum2" | "KorDbNum3" | "KorDbNum4" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "Hindi1" | "Hindi2" | "Hindi3" | "Thai1" | "Thai2" | "NumInDash" | "LCRus" | "UCRus" | "LCGreek" | "UCGreek" | "Lim" | "Custom"'
+        fullName: ' | "None" | "Arabic" | "UCRoman" | "LCRoman" | "UCLetter" | "LCLetter" | "Ordinal" | "Cardtext" | "Ordtext" | "Hex" | "ChiManSty" | "DbNum1" | "DbNum2" | "Aiueo" | "Iroha" | "DbChar" | "SbChar" | "DbNum3" | "DbNum4" | "Circlenum" | "DArabic" | "DAiueo" | "DIroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GB1" | "GB2" | "GB3" | "GB4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TpeDbNum1" | "TpeDbNum2" | "TpeDbNum3" | "TpeDbNum4" | "ChnDbNum1" | "ChnDbNum2" | "ChnDbNum3" | "ChnDbNum4" | "KorDbNum1" | "KorDbNum2" | "KorDbNum3" | "KorDbNum4" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "Hindi1" | "Hindi2" | "Hindi3" | "Thai1" | "Thai2" | "NumInDash" | "LCRus" | "UCRus" | "LCGreek" | "UCGreek" | "Lim" | "Custom"'

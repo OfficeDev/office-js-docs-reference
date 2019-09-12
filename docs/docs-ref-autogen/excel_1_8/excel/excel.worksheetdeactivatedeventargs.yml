@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.WorksheetDeactivatedEventArgs
+  - uid: 'excel!Excel.WorksheetDeactivatedEventArgs:interface'
     summary: |-
       Provides information about the worksheet that raised the Deactivated event.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.WorksheetDeactivatedEventArgs.type
-      - excel.Excel.WorksheetDeactivatedEventArgs.worksheetId
-  - uid: excel.Excel.WorksheetDeactivatedEventArgs.type
+      - 'excel!Excel.WorksheetDeactivatedEventArgs#type:member'
+      - 'excel!Excel.WorksheetDeactivatedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.WorksheetDeactivatedEventArgs#type:member'
     summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - '"WorksheetDeactivated"'
-  - uid: excel.Excel.WorksheetDeactivatedEventArgs.worksheetId
+  - uid: 'excel!Excel.WorksheetDeactivatedEventArgs#worksheetId:member'
     summary: |-
       Gets the id of the worksheet that is deactivated.
 

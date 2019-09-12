@@ -1,21 +1,21 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.TableRowUpdateData
+  - uid: 'word!Word.Interfaces.TableRowUpdateData:interface'
     summary: 'An interface for updating data on the TableRow object, for use in "tableRow.set(<!-- -->{ ... }<!-- -->)".'
     name: Word.Interfaces.TableRowUpdateData
     fullName: Word.Interfaces.TableRowUpdateData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.TableRowUpdateData.font
-      - word.Word.Interfaces.TableRowUpdateData.horizontalAlignment
-      - word.Word.Interfaces.TableRowUpdateData.preferredHeight
-      - word.Word.Interfaces.TableRowUpdateData.shadingColor
-      - word.Word.Interfaces.TableRowUpdateData.values
-      - word.Word.Interfaces.TableRowUpdateData.verticalAlignment
-  - uid: word.Word.Interfaces.TableRowUpdateData.font
+      - 'word!Word.Interfaces.TableRowUpdateData#font:member'
+      - 'word!Word.Interfaces.TableRowUpdateData#horizontalAlignment:member'
+      - 'word!Word.Interfaces.TableRowUpdateData#preferredHeight:member'
+      - 'word!Word.Interfaces.TableRowUpdateData#shadingColor:member'
+      - 'word!Word.Interfaces.TableRowUpdateData#values:member'
+      - 'word!Word.Interfaces.TableRowUpdateData#verticalAlignment:member'
+  - uid: 'word!Word.Interfaces.TableRowUpdateData#font:member'
     summary: |-
       Gets the font. Use this to get and set font name, size, color, and other properties.
 
@@ -29,8 +29,8 @@ items:
       content: 'font?: Word.Interfaces.FontUpdateData;'
       return:
         type:
-          - word.Word.Interfaces.FontUpdateData
-  - uid: word.Word.Interfaces.TableRowUpdateData.horizontalAlignment
+          - 'word!Word.Interfaces.FontUpdateData:interface'
+  - uid: 'word!Word.Interfaces.TableRowUpdateData#horizontalAlignment:member'
     summary: >-
       Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or
       'Justified'.
@@ -46,8 +46,8 @@ items:
       content: 'horizontalAlignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
       return:
         type:
-          - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
-  - uid: word.Word.Interfaces.TableRowUpdateData.preferredHeight
+          - 'word!Word.Interfaces.TableRowUpdateData#horizontalAlignment~0:complex'
+  - uid: 'word!Word.Interfaces.TableRowUpdateData#preferredHeight:member'
     summary: |-
       Gets and sets the preferred height of the row in points.
 
@@ -62,7 +62,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.TableRowUpdateData.shadingColor
+  - uid: 'word!Word.Interfaces.TableRowUpdateData#shadingColor:member'
     summary: |-
       Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by using the color name.
 
@@ -77,7 +77,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.TableRowUpdateData.values
+  - uid: 'word!Word.Interfaces.TableRowUpdateData#values:member'
     summary: |-
       Gets and sets the text values in the row, as a 2D Javascript array.
 
@@ -92,7 +92,7 @@ items:
       return:
         type:
           - 'string[][]'
-  - uid: word.Word.Interfaces.TableRowUpdateData.verticalAlignment
+  - uid: 'word!Word.Interfaces.TableRowUpdateData#verticalAlignment:member'
     summary: |-
       Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
 
@@ -106,4 +106,25 @@ items:
       content: 'verticalAlignment?: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";'
       return:
         type:
-          - Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
+          - 'word!Word.Interfaces.TableRowUpdateData#verticalAlignment~0:complex'
+references:
+  - uid: 'word!Word.Interfaces.FontUpdateData:interface'
+    name: Word.Interfaces.FontUpdateData
+  - uid: 'word!Word.Interfaces.TableRowUpdateData#horizontalAlignment~0:complex'
+    name: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+    fullName: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+    spec.typeScript:
+      - uid: 'word!Word.Alignment:enum'
+        name: Word.Alignment
+        fullName: Word.Alignment
+      - name: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+        fullName: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+  - uid: 'word!Word.Interfaces.TableRowUpdateData#verticalAlignment~0:complex'
+    name: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
+    fullName: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
+    spec.typeScript:
+      - uid: 'word!Word.VerticalAlignment:enum'
+        name: Word.VerticalAlignment
+        fullName: Word.VerticalAlignment
+      - name: ' | "Mixed" | "Top" | "Center" | "Bottom"'
+        fullName: ' | "Mixed" | "Top" | "Center" | "Bottom"'

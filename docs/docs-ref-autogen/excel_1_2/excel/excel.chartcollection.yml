@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartCollection
+  - uid: 'excel!Excel.ChartCollection:class'
     summary: |-
       A collection of all the chart objects on a worksheet.
 
@@ -11,21 +11,21 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.ChartCollection.add
-      - excel.Excel.ChartCollection.add_1
-      - excel.Excel.ChartCollection.context
-      - excel.Excel.ChartCollection.count
-      - excel.Excel.ChartCollection.getItem
-      - excel.Excel.ChartCollection.getItemAt
-      - excel.Excel.ChartCollection.items
-      - excel.Excel.ChartCollection.load
-      - excel.Excel.ChartCollection.load_1
-      - excel.Excel.ChartCollection.load_2
-      - excel.Excel.ChartCollection.toJSON
-  - uid: excel.Excel.ChartCollection.add
+      - 'excel!Excel.ChartCollection#add:member(1)'
+      - 'excel!Excel.ChartCollection#add:member(2)'
+      - 'excel!Excel.ChartCollection#context:member'
+      - 'excel!Excel.ChartCollection#count:member'
+      - 'excel!Excel.ChartCollection#getItem:member(1)'
+      - 'excel!Excel.ChartCollection#getItemAt:member(1)'
+      - 'excel!Excel.ChartCollection#items:member'
+      - 'excel!Excel.ChartCollection#load:member(1)'
+      - 'excel!Excel.ChartCollection#load:member(2)'
+      - 'excel!Excel.ChartCollection#load:member(3)'
+      - 'excel!Excel.ChartCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.ChartCollection#add:member(1)'
     summary: |-
       Creates a new chart.
 
@@ -39,24 +39,46 @@ items:
       content: 'add(type: Excel.ChartType, sourceData: Range, seriesBy?: Excel.ChartSeriesBy): Excel.Chart;'
       return:
         type:
-          - excel.Excel.Chart
-        description: ''
+          - 'excel!Excel.Chart:class'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
+          // with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
+          Excel.run(function (ctx) { 
+              var rangeSelection = "A1:B4";
+              var range = ctx.workbook.worksheets.getItem(sheetName)
+                  .getRange(rangeSelection);
+              var chart = ctx.workbook.worksheets.getItem(sheetName)
+                  .charts.add("ColumnClustered", range, "auto");    return ctx.sync().then(function() {
+                      console.log("New Chart Added");
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
       parameters:
         - id: type
           description: Represents the type of a chart. See Excel.ChartType for details.
           type:
-            - excel.Excel.ChartType
+            - 'excel!Excel.ChartType:enum'
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel.Excel.Range
+            - 'excel!Excel.Range:class'
         - id: seriesBy
           description: >-
             Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy
             for details.
           type:
-            - excel.Excel.ChartSeriesBy
-  - uid: excel.Excel.ChartCollection.add_1
+            - 'excel!Excel.ChartSeriesBy:enum'
+  - uid: 'excel!Excel.ChartCollection#add:member(2)'
     summary: |-
       Creates a new chart.
 
@@ -85,30 +107,8 @@ items:
         sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
       return:
         type:
-          - excel.Excel.Chart
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
-          // with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
-          Excel.run(function (ctx) { 
-              var rangeSelection = "A1:B4";
-              var range = ctx.workbook.worksheets.getItem(sheetName)
-                  .getRange(rangeSelection);
-              var chart = ctx.workbook.worksheets.getItem(sheetName)
-                  .charts.add("ColumnClustered", range, "auto");    return ctx.sync().then(function() {
-                      console.log("New Chart Added");
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Chart:class'
+        description: ''
       parameters:
         - id: typeString
           description: Represents the type of a chart. See Excel.ChartType for details.
@@ -132,14 +132,14 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel.Excel.Range
+            - 'excel!Excel.Range:class'
         - id: seriesBy
           description: >-
             Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy
             for details.
           type:
             - '"Auto" | "Columns" | "Rows"'
-  - uid: excel.Excel.ChartCollection.context
+  - uid: 'excel!Excel.ChartCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -152,8 +152,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartCollection.count
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartCollection#count:member'
     summary: |-
       Returns the number of charts in the worksheet. Read-only.
 
@@ -168,7 +168,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartCollection.getItem
+  - uid: 'excel!Excel.ChartCollection#getItem:member(1)'
     summary: |-
       Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.
 
@@ -182,7 +182,7 @@ items:
       content: 'getItem(name: string): Excel.Chart;'
       return:
         type:
-          - excel.Excel.Chart
+          - 'excel!Excel.Chart:class'
         description: |-
 
 
@@ -235,7 +235,7 @@ items:
           description: Name of the chart to be retrieved.
           type:
             - string
-  - uid: excel.Excel.ChartCollection.getItemAt
+  - uid: 'excel!Excel.ChartCollection#getItemAt:member(1)'
     summary: |-
       Gets a chart based on its position in the collection.
 
@@ -249,7 +249,7 @@ items:
       content: 'getItemAt(index: number): Excel.Chart;'
       return:
         type:
-          - excel.Excel.Chart
+          - 'excel!Excel.Chart:class'
         description: |-
 
 
@@ -274,7 +274,7 @@ items:
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.ChartCollection.items
+  - uid: 'excel!Excel.ChartCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -285,8 +285,8 @@ items:
       content: 'readonly items: Excel.Chart[];'
       return:
         type:
-          - 'Excel.Chart[]'
-  - uid: excel.Excel.ChartCollection.load
+          - 'excel!Excel.ChartCollection#items~0:complex'
+  - uid: 'excel!Excel.ChartCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -319,14 +319,14 @@ items:
         Excel.ChartCollection;
       return:
         type:
-          - excel.Excel.ChartCollection
+          - 'excel!Excel.ChartCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.ChartCollection.load_1
+            - 'excel!Excel.ChartCollection#load~0:complex'
+  - uid: 'excel!Excel.ChartCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -339,7 +339,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartCollection;'
       return:
         type:
-          - excel.Excel.ChartCollection
+          - 'excel!Excel.ChartCollection:class'
         description: |-
 
 
@@ -382,7 +382,7 @@ items:
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartCollection.load_2
+  - uid: 'excel!Excel.ChartCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -392,14 +392,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.ChartCollection;'
       return:
         type:
-          - excel.Excel.ChartCollection
+          - 'excel!Excel.ChartCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
-  - uid: excel.Excel.ChartCollection.toJSON
+            - 'excel!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.ChartCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -415,5 +415,45 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartCollectionData
+          - 'excel!Excel.Interfaces.ChartCollectionData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.Chart:class'
+    name: Excel.Chart
+  - uid: 'excel!Excel.ChartType:enum'
+    name: Excel.ChartType
+  - uid: 'excel!Excel.Range:class'
+    name: Range
+  - uid: 'excel!Excel.ChartSeriesBy:enum'
+    name: Excel.ChartSeriesBy
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ChartCollection#items~0:complex'
+    name: 'Excel.Chart[]'
+    fullName: 'Excel.Chart[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Chart:class'
+        name: Excel.Chart
+        fullName: Excel.Chart
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.ChartCollection:class'
+    name: Excel.ChartCollection
+  - uid: 'excel!Excel.ChartCollection#load~0:complex'
+    name: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions:interface'
+        name: Excel.Interfaces.ChartCollectionLoadOptions
+        fullName: Excel.Interfaces.ChartCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+        name: Excel.Interfaces.CollectionLoadOptions
+        fullName: Excel.Interfaces.CollectionLoadOptions
+  - uid: 'excel!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.Interfaces.ChartCollectionData:interface'
+    name: Excel.Interfaces.ChartCollectionData

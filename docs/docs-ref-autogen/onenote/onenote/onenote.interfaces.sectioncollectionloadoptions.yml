@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.SectionCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions:interface'
     summary: |-
       Represents a collection of sections.
 
@@ -10,20 +10,20 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.SectionCollectionLoadOptions.$all
-      - onenote.OneNote.Interfaces.SectionCollectionLoadOptions.clientUrl
-      - onenote.OneNote.Interfaces.SectionCollectionLoadOptions.id
-      - onenote.OneNote.Interfaces.SectionCollectionLoadOptions.isEncrypted
-      - onenote.OneNote.Interfaces.SectionCollectionLoadOptions.isLocked
-      - onenote.OneNote.Interfaces.SectionCollectionLoadOptions.name
-      - onenote.OneNote.Interfaces.SectionCollectionLoadOptions.notebook
-      - onenote.OneNote.Interfaces.SectionCollectionLoadOptions.pages
-      - onenote.OneNote.Interfaces.SectionCollectionLoadOptions.parentSectionGroup
-      - onenote.OneNote.Interfaces.SectionCollectionLoadOptions.parentSectionGroupOrNull
-      - onenote.OneNote.Interfaces.SectionCollectionLoadOptions.webUrl
-  - uid: onenote.OneNote.Interfaces.SectionCollectionLoadOptions.$all
+      - 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#clientUrl:member'
+      - 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#isEncrypted:member'
+      - 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#isLocked:member'
+      - 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#name:member'
+      - 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#notebook:member'
+      - 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#pages:member'
+      - 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#parentSectionGroup:member'
+      - 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#parentSectionGroupOrNull:member'
+      - 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#webUrl:member'
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -34,7 +34,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.SectionCollectionLoadOptions.clientUrl
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#clientUrl:member'
     summary: |-
       For EACH ITEM in the collection: The client url of the section. Read only
 
@@ -49,7 +49,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.SectionCollectionLoadOptions.id
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#id:member'
     summary: |-
       For EACH ITEM in the collection: Gets the ID of the section. Read-only.
 
@@ -64,7 +64,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.SectionCollectionLoadOptions.isEncrypted
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#isEncrypted:member'
     summary: |-
       For EACH ITEM in the collection: True if this section is encrypted with a password. Read only
 
@@ -79,7 +79,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.SectionCollectionLoadOptions.isLocked
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#isLocked:member'
     summary: |-
       For EACH ITEM in the collection: True if this section is locked. Read only
 
@@ -94,7 +94,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.SectionCollectionLoadOptions.name
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#name:member'
     summary: |-
       For EACH ITEM in the collection: Gets the name of the section. Read-only.
 
@@ -109,7 +109,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.SectionCollectionLoadOptions.notebook
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#notebook:member'
     summary: |-
       For EACH ITEM in the collection: Gets the notebook that contains the section.
 
@@ -123,8 +123,8 @@ items:
       content: 'notebook?: OneNote.Interfaces.NotebookLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.NotebookLoadOptions
-  - uid: onenote.OneNote.Interfaces.SectionCollectionLoadOptions.pages
+          - 'onenote!OneNote.Interfaces.NotebookLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#pages:member'
     summary: |-
       For EACH ITEM in the collection: The collection of pages in the section. Read only
 
@@ -138,8 +138,8 @@ items:
       content: 'pages?: OneNote.Interfaces.PageCollectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.SectionCollectionLoadOptions.parentSectionGroup
+          - 'onenote!OneNote.Interfaces.PageCollectionLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#parentSectionGroup:member'
     summary: >-
       For EACH ITEM in the collection: Gets the section group that contains the section. Throws ItemNotFound if the
       section is a direct child of the notebook.
@@ -155,8 +155,8 @@ items:
       content: 'parentSectionGroup?: OneNote.Interfaces.SectionGroupLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.SectionGroupLoadOptions
-  - uid: onenote.OneNote.Interfaces.SectionCollectionLoadOptions.parentSectionGroupOrNull
+          - 'onenote!OneNote.Interfaces.SectionGroupLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#parentSectionGroupOrNull:member'
     summary: >-
       For EACH ITEM in the collection: Gets the section group that contains the section. Returns null if the section is
       a direct child of the notebook.
@@ -172,8 +172,8 @@ items:
       content: 'parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.SectionGroupLoadOptions
-  - uid: onenote.OneNote.Interfaces.SectionCollectionLoadOptions.webUrl
+          - 'onenote!OneNote.Interfaces.SectionGroupLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions#webUrl:member'
     summary: |-
       For EACH ITEM in the collection: The web url of the page. Read only
 
@@ -188,3 +188,10 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions:interface'
+    name: OneNote.Interfaces.NotebookLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.PageCollectionLoadOptions:interface'
+    name: OneNote.Interfaces.PageCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.SectionGroupLoadOptions:interface'
+    name: OneNote.Interfaces.SectionGroupLoadOptions

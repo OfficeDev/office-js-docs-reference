@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionData
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionData:interface'
     summary: An interface describing the data returned by calling "rowColumnPivotHierarchyCollection.toJSON()".
     name: Excel.Interfaces.RowColumnPivotHierarchyCollectionData
     fullName: Excel.Interfaces.RowColumnPivotHierarchyCollectionData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionData.items
-  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionData.items
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionData#items:member'
     name: items
     fullName: items
     langs:
@@ -20,4 +20,14 @@ items:
       content: 'items?: Excel.Interfaces.RowColumnPivotHierarchyData[];'
       return:
         type:
-          - 'Excel.Interfaces.RowColumnPivotHierarchyData[]'
+          - 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionData#items~0:complex'
+    name: 'Excel.Interfaces.RowColumnPivotHierarchyData[]'
+    fullName: 'Excel.Interfaces.RowColumnPivotHierarchyData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface'
+        name: Excel.Interfaces.RowColumnPivotHierarchyData
+        fullName: Excel.Interfaces.RowColumnPivotHierarchyData
+      - name: '[]'
+        fullName: '[]'

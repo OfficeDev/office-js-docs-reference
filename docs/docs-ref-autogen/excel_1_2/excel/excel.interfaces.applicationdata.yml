@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ApplicationData
+  - uid: 'excel!Excel.Interfaces.ApplicationData:interface'
     summary: An interface describing the data returned by calling "application.toJSON()".
     name: Excel.Interfaces.ApplicationData
     fullName: Excel.Interfaces.ApplicationData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ApplicationData.calculationMode
-  - uid: excel.Excel.Interfaces.ApplicationData.calculationMode
+      - 'excel!Excel.Interfaces.ApplicationData#calculationMode:member'
+  - uid: 'excel!Excel.Interfaces.ApplicationData#calculationMode:member'
     summary: >-
       Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible
       values are: `Automatic`<!-- -->, where Excel controls recalculation; `AutomaticExceptTables`<!-- -->, where Excel
@@ -29,4 +29,14 @@ items:
       content: 'calculationMode?: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual";'
       return:
         type:
-          - Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual"
+          - 'excel!Excel.Interfaces.ApplicationData#calculationMode~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.ApplicationData#calculationMode~0:complex'
+    name: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual"
+    fullName: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual"
+    spec.typeScript:
+      - uid: 'excel!Excel.CalculationMode:enum'
+        name: Excel.CalculationMode
+        fullName: Excel.CalculationMode
+      - name: ' | "Automatic" | "AutomaticExceptTables" | "Manual"'
+        fullName: ' | "Automatic" | "AutomaticExceptTables" | "Manual"'

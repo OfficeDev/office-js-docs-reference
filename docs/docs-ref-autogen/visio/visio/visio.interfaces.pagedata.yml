@@ -1,24 +1,24 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.PageData
+  - uid: 'visio!Visio.Interfaces.PageData:interface'
     summary: An interface describing the data returned by calling "page.toJSON()".
     name: Visio.Interfaces.PageData
     fullName: Visio.Interfaces.PageData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.PageData.allShapes
-      - visio.Visio.Interfaces.PageData.comments
-      - visio.Visio.Interfaces.PageData.height
-      - visio.Visio.Interfaces.PageData.index
-      - visio.Visio.Interfaces.PageData.isBackground
-      - visio.Visio.Interfaces.PageData.name
-      - visio.Visio.Interfaces.PageData.shapes
-      - visio.Visio.Interfaces.PageData.view
-      - visio.Visio.Interfaces.PageData.width
-  - uid: visio.Visio.Interfaces.PageData.allShapes
+      - 'visio!Visio.Interfaces.PageData#allShapes:member'
+      - 'visio!Visio.Interfaces.PageData#comments:member'
+      - 'visio!Visio.Interfaces.PageData#height:member'
+      - 'visio!Visio.Interfaces.PageData#index:member'
+      - 'visio!Visio.Interfaces.PageData#isBackground:member'
+      - 'visio!Visio.Interfaces.PageData#name:member'
+      - 'visio!Visio.Interfaces.PageData#shapes:member'
+      - 'visio!Visio.Interfaces.PageData#view:member'
+      - 'visio!Visio.Interfaces.PageData#width:member'
+  - uid: 'visio!Visio.Interfaces.PageData#allShapes:member'
     summary: |-
       All shapes in the Page, including subshapes. Read-only.
 
@@ -32,8 +32,8 @@ items:
       content: 'allShapes?: Visio.Interfaces.ShapeData[];'
       return:
         type:
-          - 'Visio.Interfaces.ShapeData[]'
-  - uid: visio.Visio.Interfaces.PageData.comments
+          - 'visio!Visio.Interfaces.PageData#allShapes~0:complex'
+  - uid: 'visio!Visio.Interfaces.PageData#comments:member'
     summary: |-
       Returns the Comments Collection. Read-only.
 
@@ -47,8 +47,8 @@ items:
       content: 'comments?: Visio.Interfaces.CommentData[];'
       return:
         type:
-          - 'Visio.Interfaces.CommentData[]'
-  - uid: visio.Visio.Interfaces.PageData.height
+          - 'visio!Visio.Interfaces.PageData#comments~0:complex'
+  - uid: 'visio!Visio.Interfaces.PageData#height:member'
     summary: |-
       Returns the height of the page. Read-only.
 
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - number
-  - uid: visio.Visio.Interfaces.PageData.index
+  - uid: 'visio!Visio.Interfaces.PageData#index:member'
     summary: |-
       Index of the Page. Read-only.
 
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - number
-  - uid: visio.Visio.Interfaces.PageData.isBackground
+  - uid: 'visio!Visio.Interfaces.PageData#isBackground:member'
     summary: |-
       Whether the page is a background page or not. Read-only.
 
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.PageData.name
+  - uid: 'visio!Visio.Interfaces.PageData#name:member'
     summary: |-
       Page name. Read-only.
 
@@ -108,7 +108,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.Interfaces.PageData.shapes
+  - uid: 'visio!Visio.Interfaces.PageData#shapes:member'
     summary: |-
       All top-level shapes in the Page.Read-only.
 
@@ -122,8 +122,8 @@ items:
       content: 'shapes?: Visio.Interfaces.ShapeData[];'
       return:
         type:
-          - 'Visio.Interfaces.ShapeData[]'
-  - uid: visio.Visio.Interfaces.PageData.view
+          - 'visio!Visio.Interfaces.PageData#shapes~0:complex'
+  - uid: 'visio!Visio.Interfaces.PageData#view:member'
     summary: |-
       Returns the view of the page. Read-only.
 
@@ -137,8 +137,8 @@ items:
       content: 'view?: Visio.Interfaces.PageViewData;'
       return:
         type:
-          - visio.Visio.Interfaces.PageViewData
-  - uid: visio.Visio.Interfaces.PageData.width
+          - 'visio!Visio.Interfaces.PageViewData:interface'
+  - uid: 'visio!Visio.Interfaces.PageData#width:member'
     summary: |-
       Returns the width of the page. Read-only.
 
@@ -153,3 +153,33 @@ items:
       return:
         type:
           - number
+references:
+  - uid: 'visio!Visio.Interfaces.PageData#allShapes~0:complex'
+    name: 'Visio.Interfaces.ShapeData[]'
+    fullName: 'Visio.Interfaces.ShapeData[]'
+    spec.typeScript:
+      - uid: 'visio!Visio.Interfaces.ShapeData:interface'
+        name: Visio.Interfaces.ShapeData
+        fullName: Visio.Interfaces.ShapeData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'visio!Visio.Interfaces.PageData#comments~0:complex'
+    name: 'Visio.Interfaces.CommentData[]'
+    fullName: 'Visio.Interfaces.CommentData[]'
+    spec.typeScript:
+      - uid: 'visio!Visio.Interfaces.CommentData:interface'
+        name: Visio.Interfaces.CommentData
+        fullName: Visio.Interfaces.CommentData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'visio!Visio.Interfaces.PageData#shapes~0:complex'
+    name: 'Visio.Interfaces.ShapeData[]'
+    fullName: 'Visio.Interfaces.ShapeData[]'
+    spec.typeScript:
+      - uid: 'visio!Visio.Interfaces.ShapeData:interface'
+        name: Visio.Interfaces.ShapeData
+        fullName: Visio.Interfaces.ShapeData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'visio!Visio.Interfaces.PageViewData:interface'
+    name: Visio.Interfaces.PageViewData

@@ -1,36 +1,36 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.StyleData
+  - uid: 'excel!Excel.Interfaces.StyleData:interface'
     summary: An interface describing the data returned by calling "style.toJSON()".
     name: Excel.Interfaces.StyleData
     fullName: Excel.Interfaces.StyleData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.StyleData.borders
-      - excel.Excel.Interfaces.StyleData.builtIn
-      - excel.Excel.Interfaces.StyleData.fill
-      - excel.Excel.Interfaces.StyleData.font
-      - excel.Excel.Interfaces.StyleData.formulaHidden
-      - excel.Excel.Interfaces.StyleData.horizontalAlignment
-      - excel.Excel.Interfaces.StyleData.includeAlignment
-      - excel.Excel.Interfaces.StyleData.includeBorder
-      - excel.Excel.Interfaces.StyleData.includeFont
-      - excel.Excel.Interfaces.StyleData.includeNumber
-      - excel.Excel.Interfaces.StyleData.includePatterns
-      - excel.Excel.Interfaces.StyleData.includeProtection
-      - excel.Excel.Interfaces.StyleData.indentLevel
-      - excel.Excel.Interfaces.StyleData.locked
-      - excel.Excel.Interfaces.StyleData.name
-      - excel.Excel.Interfaces.StyleData.numberFormat
-      - excel.Excel.Interfaces.StyleData.numberFormatLocal
-      - excel.Excel.Interfaces.StyleData.readingOrder
-      - excel.Excel.Interfaces.StyleData.shrinkToFit
-      - excel.Excel.Interfaces.StyleData.verticalAlignment
-      - excel.Excel.Interfaces.StyleData.wrapText
-  - uid: excel.Excel.Interfaces.StyleData.borders
+      - 'excel!Excel.Interfaces.StyleData#borders:member'
+      - 'excel!Excel.Interfaces.StyleData#builtIn:member'
+      - 'excel!Excel.Interfaces.StyleData#fill:member'
+      - 'excel!Excel.Interfaces.StyleData#font:member'
+      - 'excel!Excel.Interfaces.StyleData#formulaHidden:member'
+      - 'excel!Excel.Interfaces.StyleData#horizontalAlignment:member'
+      - 'excel!Excel.Interfaces.StyleData#includeAlignment:member'
+      - 'excel!Excel.Interfaces.StyleData#includeBorder:member'
+      - 'excel!Excel.Interfaces.StyleData#includeFont:member'
+      - 'excel!Excel.Interfaces.StyleData#includeNumber:member'
+      - 'excel!Excel.Interfaces.StyleData#includePatterns:member'
+      - 'excel!Excel.Interfaces.StyleData#includeProtection:member'
+      - 'excel!Excel.Interfaces.StyleData#indentLevel:member'
+      - 'excel!Excel.Interfaces.StyleData#locked:member'
+      - 'excel!Excel.Interfaces.StyleData#name:member'
+      - 'excel!Excel.Interfaces.StyleData#numberFormat:member'
+      - 'excel!Excel.Interfaces.StyleData#numberFormatLocal:member'
+      - 'excel!Excel.Interfaces.StyleData#readingOrder:member'
+      - 'excel!Excel.Interfaces.StyleData#shrinkToFit:member'
+      - 'excel!Excel.Interfaces.StyleData#verticalAlignment:member'
+      - 'excel!Excel.Interfaces.StyleData#wrapText:member'
+  - uid: 'excel!Excel.Interfaces.StyleData#borders:member'
     summary: |-
       A Border collection of four Border objects that represent the style of the four borders.
 
@@ -44,8 +44,8 @@ items:
       content: 'borders?: Excel.Interfaces.RangeBorderData[];'
       return:
         type:
-          - 'Excel.Interfaces.RangeBorderData[]'
-  - uid: excel.Excel.Interfaces.StyleData.builtIn
+          - 'excel!Excel.Interfaces.StyleData#borders~0:complex'
+  - uid: 'excel!Excel.Interfaces.StyleData#builtIn:member'
     summary: |-
       Indicates if the style is a built-in style.
 
@@ -60,7 +60,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleData.fill
+  - uid: 'excel!Excel.Interfaces.StyleData#fill:member'
     summary: |-
       The Fill of the style.
 
@@ -74,8 +74,8 @@ items:
       content: 'fill?: Excel.Interfaces.RangeFillData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFillData
-  - uid: excel.Excel.Interfaces.StyleData.font
+          - 'excel!Excel.Interfaces.RangeFillData:interface'
+  - uid: 'excel!Excel.Interfaces.StyleData#font:member'
     summary: |-
       A Font object that represents the font of the style.
 
@@ -89,8 +89,8 @@ items:
       content: 'font?: Excel.Interfaces.RangeFontData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFontData
-  - uid: excel.Excel.Interfaces.StyleData.formulaHidden
+          - 'excel!Excel.Interfaces.RangeFontData:interface'
+  - uid: 'excel!Excel.Interfaces.StyleData#formulaHidden:member'
     summary: |-
       Indicates if the formula will be hidden when the worksheet is protected.
 
@@ -105,7 +105,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleData.horizontalAlignment
+  - uid: 'excel!Excel.Interfaces.StyleData#horizontalAlignment:member'
     summary: |-
       Represents the horizontal alignment for the style. See Excel.HorizontalAlignment for details.
 
@@ -121,10 +121,8 @@ items:
         "CenterAcrossSelection" | "Distributed";
       return:
         type:
-          - >-
-            Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
-            "CenterAcrossSelection" | "Distributed"
-  - uid: excel.Excel.Interfaces.StyleData.includeAlignment
+          - 'excel!Excel.Interfaces.StyleData#horizontalAlignment~0:complex'
+  - uid: 'excel!Excel.Interfaces.StyleData#includeAlignment:member'
     summary: >-
       Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and
       TextOrientation properties.
@@ -141,7 +139,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleData.includeBorder
+  - uid: 'excel!Excel.Interfaces.StyleData#includeBorder:member'
     summary: |-
       Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
 
@@ -156,7 +154,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleData.includeFont
+  - uid: 'excel!Excel.Interfaces.StyleData#includeFont:member'
     summary: >-
       Indicates if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size,
       Strikethrough, Subscript, Superscript, and Underline font properties.
@@ -173,7 +171,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleData.includeNumber
+  - uid: 'excel!Excel.Interfaces.StyleData#includeNumber:member'
     summary: |-
       Indicates if the style includes the NumberFormat property.
 
@@ -188,7 +186,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleData.includePatterns
+  - uid: 'excel!Excel.Interfaces.StyleData#includePatterns:member'
     summary: >-
       Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and
       PatternColorIndex interior properties.
@@ -205,7 +203,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleData.includeProtection
+  - uid: 'excel!Excel.Interfaces.StyleData#includeProtection:member'
     summary: |-
       Indicates if the style includes the FormulaHidden and Locked protection properties.
 
@@ -220,7 +218,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleData.indentLevel
+  - uid: 'excel!Excel.Interfaces.StyleData#indentLevel:member'
     summary: |-
       An integer from 0 to 250 that indicates the indent level for the style.
 
@@ -235,7 +233,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.StyleData.locked
+  - uid: 'excel!Excel.Interfaces.StyleData#locked:member'
     summary: |-
       Indicates if the object is locked when the worksheet is protected.
 
@@ -250,7 +248,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleData.name
+  - uid: 'excel!Excel.Interfaces.StyleData#name:member'
     summary: |-
       The name of the style.
 
@@ -265,7 +263,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.StyleData.numberFormat
+  - uid: 'excel!Excel.Interfaces.StyleData#numberFormat:member'
     summary: |-
       The format code of the number format for the style.
 
@@ -280,7 +278,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.StyleData.numberFormatLocal
+  - uid: 'excel!Excel.Interfaces.StyleData#numberFormatLocal:member'
     summary: |-
       The localized format code of the number format for the style.
 
@@ -295,7 +293,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.StyleData.readingOrder
+  - uid: 'excel!Excel.Interfaces.StyleData#readingOrder:member'
     summary: |-
       The reading order for the style.
 
@@ -309,8 +307,8 @@ items:
       content: 'readingOrder?: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft";'
       return:
         type:
-          - Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
-  - uid: excel.Excel.Interfaces.StyleData.shrinkToFit
+          - 'excel!Excel.Interfaces.StyleData#readingOrder~0:complex'
+  - uid: 'excel!Excel.Interfaces.StyleData#shrinkToFit:member'
     summary: |-
       Indicates if text automatically shrinks to fit in the available column width.
 
@@ -325,7 +323,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.StyleData.verticalAlignment
+  - uid: 'excel!Excel.Interfaces.StyleData#verticalAlignment:member'
     summary: |-
       Represents the vertical alignment for the style. See Excel.VerticalAlignment for details.
 
@@ -339,8 +337,8 @@ items:
       content: 'verticalAlignment?: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed";'
       return:
         type:
-          - Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
-  - uid: excel.Excel.Interfaces.StyleData.wrapText
+          - 'excel!Excel.Interfaces.StyleData#verticalAlignment~0:complex'
+  - uid: 'excel!Excel.Interfaces.StyleData#wrapText:member'
     summary: |-
       Indicates if Microsoft Excel wraps the text in the object.
 
@@ -355,3 +353,48 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.StyleData#borders~0:complex'
+    name: 'Excel.Interfaces.RangeBorderData[]'
+    fullName: 'Excel.Interfaces.RangeBorderData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.RangeBorderData:interface'
+        name: Excel.Interfaces.RangeBorderData
+        fullName: Excel.Interfaces.RangeBorderData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.RangeFillData:interface'
+    name: Excel.Interfaces.RangeFillData
+  - uid: 'excel!Excel.Interfaces.RangeFontData:interface'
+    name: Excel.Interfaces.RangeFontData
+  - uid: 'excel!Excel.Interfaces.StyleData#horizontalAlignment~0:complex'
+    name: >-
+      Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection"
+      | "Distributed"
+    fullName: >-
+      Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection"
+      | "Distributed"
+    spec.typeScript:
+      - uid: 'excel!Excel.HorizontalAlignment:enum'
+        name: Excel.HorizontalAlignment
+        fullName: Excel.HorizontalAlignment
+      - name: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
+        fullName: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
+  - uid: 'excel!Excel.Interfaces.StyleData#readingOrder~0:complex'
+    name: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
+    fullName: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
+    spec.typeScript:
+      - uid: 'excel!Excel.ReadingOrder:enum'
+        name: Excel.ReadingOrder
+        fullName: Excel.ReadingOrder
+      - name: ' | "Context" | "LeftToRight" | "RightToLeft"'
+        fullName: ' | "Context" | "LeftToRight" | "RightToLeft"'
+  - uid: 'excel!Excel.Interfaces.StyleData#verticalAlignment~0:complex'
+    name: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
+    fullName: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
+    spec.typeScript:
+      - uid: 'excel!Excel.VerticalAlignment:enum'
+        name: Excel.VerticalAlignment
+        fullName: Excel.VerticalAlignment
+      - name: ' | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"'
+        fullName: ' | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"'

@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.ApplicationData
+  - uid: 'onenote!OneNote.Interfaces.ApplicationData:interface'
     summary: An interface describing the data returned by calling "application.toJSON()".
     name: OneNote.Interfaces.ApplicationData
     fullName: OneNote.Interfaces.ApplicationData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.ApplicationData.notebooks
-  - uid: onenote.OneNote.Interfaces.ApplicationData.notebooks
+      - 'onenote!OneNote.Interfaces.ApplicationData#notebooks:member'
+  - uid: 'onenote!OneNote.Interfaces.ApplicationData#notebooks:member'
     summary: >-
       Gets the collection of notebooks that are open in the OneNote application instance. In OneNote on the web, only
       one notebook at a time is open in the application instance. Read-only.
@@ -26,4 +26,14 @@ items:
       content: 'notebooks?: OneNote.Interfaces.NotebookData[];'
       return:
         type:
-          - 'OneNote.Interfaces.NotebookData[]'
+          - 'onenote!OneNote.Interfaces.ApplicationData#notebooks~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.ApplicationData#notebooks~0:complex'
+    name: 'OneNote.Interfaces.NotebookData[]'
+    fullName: 'OneNote.Interfaces.NotebookData[]'
+    spec.typeScript:
+      - uid: 'onenote!OneNote.Interfaces.NotebookData:interface'
+        name: OneNote.Interfaces.NotebookData
+        fullName: OneNote.Interfaces.NotebookData
+      - name: '[]'
+        fullName: '[]'

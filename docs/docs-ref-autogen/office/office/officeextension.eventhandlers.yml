@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.OfficeExtension.EventHandlers
+  - uid: 'office!OfficeExtension.EventHandlers:class'
     name: OfficeExtension.EventHandlers
     fullName: OfficeExtension.EventHandlers
     langs:
       - typeScript
     type: class
-    package: office
+    package: office!
     children:
-      - office.OfficeExtension.EventHandlers.(constructor)
-      - office.OfficeExtension.EventHandlers.add
-      - office.OfficeExtension.EventHandlers.remove
-  - uid: office.OfficeExtension.EventHandlers.(constructor)
+      - 'office!OfficeExtension.EventHandlers:constructor(1)'
+      - 'office!OfficeExtension.EventHandlers#add:member(1)'
+      - 'office!OfficeExtension.EventHandlers#remove:member(1)'
+  - uid: 'office!OfficeExtension.EventHandlers:constructor(1)'
     summary: Constructs a new instance of the `EventHandlers` class
     name: '(constructor)(context, parentObject, name, eventInfo)'
     fullName: '(constructor)(context, parentObject, name, eventInfo)'
@@ -24,11 +24,11 @@ items:
         - id: context
           description: ''
           type:
-            - office.OfficeExtension.ClientRequestContext
+            - 'office!OfficeExtension.ClientRequestContext:class'
         - id: parentObject
           description: ''
           type:
-            - office.OfficeExtension.ClientObject
+            - 'office!OfficeExtension.ClientObject:class'
         - id: name
           description: ''
           type:
@@ -36,8 +36,8 @@ items:
         - id: eventInfo
           description: ''
           type:
-            - EventInfo<T>
-  - uid: office.OfficeExtension.EventHandlers.add
+            - 'office!OfficeExtension.EventHandlers~0:complex'
+  - uid: 'office!OfficeExtension.EventHandlers#add:member(1)'
     name: add(handler)
     fullName: add(handler)
     langs:
@@ -47,14 +47,14 @@ items:
       content: 'add(handler: (args: T) => Promise<any>): EventHandlerResult<T>;'
       return:
         type:
-          - EventHandlerResult<T>
+          - 'office!OfficeExtension.EventHandlers#add~0:complex'
         description: ''
       parameters:
         - id: handler
           description: ''
           type:
-            - '(args: T) => Promise<any>'
-  - uid: office.OfficeExtension.EventHandlers.remove
+            - 'office!OfficeExtension.EventHandlers#add~1:complex'
+  - uid: 'office!OfficeExtension.EventHandlers#remove:member(1)'
     name: remove(handler)
     fullName: remove(handler)
     langs:
@@ -70,4 +70,49 @@ items:
         - id: handler
           description: ''
           type:
-            - '(args: T) => Promise<any>'
+            - 'office!OfficeExtension.EventHandlers#remove~0:complex'
+references:
+  - uid: 'office!OfficeExtension.ClientRequestContext:class'
+    name: ClientRequestContext
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: ClientObject
+  - uid: 'office!OfficeExtension.EventHandlers~0:complex'
+    name: EventInfo<T>
+    fullName: OfficeExtension.EventInfo<T>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.EventInfo:interface'
+        name: EventInfo
+        fullName: OfficeExtension.EventInfo
+      - name: <T>
+        fullName: <T>
+  - uid: 'office!OfficeExtension.EventHandlers#add~0:complex'
+    name: EventHandlerResult<T>
+    fullName: OfficeExtension.EventHandlerResult<T>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.EventHandlerResult:class'
+        name: EventHandlerResult
+        fullName: OfficeExtension.EventHandlerResult
+      - name: <T>
+        fullName: <T>
+  - uid: 'office!OfficeExtension.EventHandlers#add~1:complex'
+    name: '(args: T) => Promise<any>'
+    fullName: '(args: T) => Promise<any>'
+    spec.typeScript:
+      - name: '(args: T) => '
+        fullName: '(args: T) => '
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <any>
+        fullName: <any>
+  - uid: 'office!OfficeExtension.EventHandlers#remove~0:complex'
+    name: '(args: T) => Promise<any>'
+    fullName: '(args: T) => Promise<any>'
+    spec.typeScript:
+      - name: '(args: T) => '
+        fullName: '(args: T) => '
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <any>
+        fullName: <any>

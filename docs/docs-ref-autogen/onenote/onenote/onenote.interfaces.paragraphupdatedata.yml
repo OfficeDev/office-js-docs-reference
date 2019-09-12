@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.ParagraphUpdateData
+  - uid: 'onenote!OneNote.Interfaces.ParagraphUpdateData:interface'
     summary: 'An interface for updating data on the Paragraph object, for use in "paragraph.set(<!-- -->{ ... }<!-- -->)".'
     name: OneNote.Interfaces.ParagraphUpdateData
     fullName: OneNote.Interfaces.ParagraphUpdateData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.ParagraphUpdateData.image
-      - onenote.OneNote.Interfaces.ParagraphUpdateData.table
-  - uid: onenote.OneNote.Interfaces.ParagraphUpdateData.image
+      - 'onenote!OneNote.Interfaces.ParagraphUpdateData#image:member'
+      - 'onenote!OneNote.Interfaces.ParagraphUpdateData#table:member'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphUpdateData#image:member'
     summary: |-
       Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
 
@@ -25,8 +25,8 @@ items:
       content: 'image?: OneNote.Interfaces.ImageUpdateData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ImageUpdateData
-  - uid: onenote.OneNote.Interfaces.ParagraphUpdateData.table
+          - 'onenote!OneNote.Interfaces.ImageUpdateData:interface'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphUpdateData#table:member'
     summary: |-
       Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.
 
@@ -40,4 +40,9 @@ items:
       content: 'table?: OneNote.Interfaces.TableUpdateData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableUpdateData
+          - 'onenote!OneNote.Interfaces.TableUpdateData:interface'
+references:
+  - uid: 'onenote!OneNote.Interfaces.ImageUpdateData:interface'
+    name: OneNote.Interfaces.ImageUpdateData
+  - uid: 'onenote!OneNote.Interfaces.TableUpdateData:interface'
+    name: OneNote.Interfaces.TableUpdateData

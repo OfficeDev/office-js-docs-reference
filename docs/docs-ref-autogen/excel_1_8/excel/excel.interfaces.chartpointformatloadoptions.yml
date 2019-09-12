@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartPointFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface'
     summary: |-
       Represents formatting object for chart points.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartPointFormatLoadOptions.$all
-      - excel.Excel.Interfaces.ChartPointFormatLoadOptions.border
-  - uid: excel.Excel.Interfaces.ChartPointFormatLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartPointFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartPointFormatLoadOptions#border:member'
+  - uid: 'excel!Excel.Interfaces.ChartPointFormatLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -25,7 +25,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPointFormatLoadOptions.border
+  - uid: 'excel!Excel.Interfaces.ChartPointFormatLoadOptions#border:member'
     summary: |-
       Represents the border format of a chart data point, which includes color, style, and weight information.
 
@@ -39,4 +39,7 @@ items:
       content: 'border?: Excel.Interfaces.ChartBorderLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartBorderLoadOptions
+          - 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
+    name: Excel.Interfaces.ChartBorderLoadOptions

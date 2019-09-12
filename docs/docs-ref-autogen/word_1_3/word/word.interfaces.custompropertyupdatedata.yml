@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.CustomPropertyUpdateData
+  - uid: 'word!Word.Interfaces.CustomPropertyUpdateData:interface'
     summary: >-
       An interface for updating data on the CustomProperty object, for use in "customProperty.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.CustomPropertyUpdateData.value
-  - uid: word.Word.Interfaces.CustomPropertyUpdateData.value
+      - 'word!Word.Interfaces.CustomPropertyUpdateData#value:member'
+  - uid: 'word!Word.Interfaces.CustomPropertyUpdateData#value:member'
     summary: >-
       Gets or sets the value of the custom property. Note that even though Word on the web and the docx file format
       allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255

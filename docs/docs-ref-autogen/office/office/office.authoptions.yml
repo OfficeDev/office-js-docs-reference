@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.AuthOptions
+  - uid: 'office!Office.AuthOptions:interface'
     summary: >-
       Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with
       the getAccessTokenAsync method.
@@ -9,13 +9,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.AuthOptions.asyncContext
-      - office.Office.AuthOptions.authChallenge
-      - office.Office.AuthOptions.forceAddAccount
-      - office.Office.AuthOptions.forceConsent
-  - uid: office.Office.AuthOptions.asyncContext
+      - 'office!Office.AuthOptions#asyncContext:member'
+      - 'office!Office.AuthOptions#authChallenge:member'
+      - 'office!Office.AuthOptions#forceAddAccount:member'
+      - 'office!Office.AuthOptions#forceConsent:member'
+  - uid: 'office!Office.AuthOptions#asyncContext:member'
     summary: >-
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - any
-  - uid: office.Office.AuthOptions.authChallenge
+  - uid: 'office!Office.AuthOptions#authChallenge:member'
     summary: >-
       Causes Office to prompt the user to provide the additional factor when the tenancy being targeted by Microsoft
       Graph requires multifactor authentication. The string value identifies the type of additional factor that is
@@ -47,7 +47,7 @@ items:
       return:
         type:
           - string
-  - uid: office.Office.AuthOptions.forceAddAccount
+  - uid: 'office!Office.AuthOptions#forceAddAccount:member'
     summary: 'Prompts the user to add their Office account (or to switch to it, if it is already added).'
     name: forceAddAccount
     fullName: forceAddAccount
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office.Office.AuthOptions.forceConsent
+  - uid: 'office!Office.AuthOptions#forceConsent:member'
     summary: >-
       Causes Office to display the add-in consent experience. Useful if the add-in's Azure permissions have changed or
       if the user's consent has been revoked.

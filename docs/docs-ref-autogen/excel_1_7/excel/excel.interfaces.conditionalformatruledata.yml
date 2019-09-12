@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalFormatRuleData
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleData:interface'
     summary: An interface describing the data returned by calling "conditionalFormatRule.toJSON()".
     name: Excel.Interfaces.ConditionalFormatRuleData
     fullName: Excel.Interfaces.ConditionalFormatRuleData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ConditionalFormatRuleData.formula
-      - excel.Excel.Interfaces.ConditionalFormatRuleData.formulaLocal
-      - excel.Excel.Interfaces.ConditionalFormatRuleData.formulaR1C1
-  - uid: excel.Excel.Interfaces.ConditionalFormatRuleData.formula
+      - 'excel!Excel.Interfaces.ConditionalFormatRuleData#formula:member'
+      - 'excel!Excel.Interfaces.ConditionalFormatRuleData#formulaLocal:member'
+      - 'excel!Excel.Interfaces.ConditionalFormatRuleData#formulaR1C1:member'
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleData#formula:member'
     summary: |-
       The formula, if required, to evaluate the conditional format rule on.
 
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ConditionalFormatRuleData.formulaLocal
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleData#formulaLocal:member'
     summary: |-
       The formula, if required, to evaluate the conditional format rule on in the user's language.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ConditionalFormatRuleData.formulaR1C1
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleData#formulaR1C1:member'
     summary: |-
       The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
 

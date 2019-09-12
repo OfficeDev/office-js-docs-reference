@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TableColumnCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.TableColumnCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the TableColumnCollection object, for use in "tableColumnCollection.set(<!--
       -->{ ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TableColumnCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.TableColumnCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.TableColumnCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.TableColumnCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: Excel.Interfaces.TableColumnData[];'
       return:
         type:
-          - 'Excel.Interfaces.TableColumnData[]'
+          - 'excel!Excel.Interfaces.TableColumnCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.TableColumnCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.TableColumnData[]'
+    fullName: 'Excel.Interfaces.TableColumnData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TableColumnData:interface'
+        name: Excel.Interfaces.TableColumnData
+        fullName: Excel.Interfaces.TableColumnData
+      - name: '[]'
+        fullName: '[]'

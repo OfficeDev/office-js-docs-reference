@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.AsyncResult
+  - uid: 'office!Office.AsyncResult:interface'
     summary: >-
       An object which encapsulates the result of an asynchronous request, including status and error information if the
       request failed.
@@ -16,7 +16,7 @@ items:
     syntax:
       typeParameters:
         - id: T
-    package: office
+    package: office!
     remarks: |-
 
 
@@ -48,12 +48,12 @@ items:
       // to access the status and error properties of the AsyncResult object.
       ```
     children:
-      - office.Office.AsyncResult.asyncContext
-      - office.Office.AsyncResult.diagnostics
-      - office.Office.AsyncResult.error
-      - office.Office.AsyncResult.status
-      - office.Office.AsyncResult.value
-  - uid: office.Office.AsyncResult.asyncContext
+      - 'office!Office.AsyncResult#asyncContext:member'
+      - 'office!Office.AsyncResult#diagnostics:member'
+      - 'office!Office.AsyncResult#error:member'
+      - 'office!Office.AsyncResult#status:member'
+      - 'office!Office.AsyncResult#value:member'
+  - uid: 'office!Office.AsyncResult#asyncContext:member'
     summary: >-
       Gets the user-defined item passed to the optional `asyncContext` parameter of the invoked method in the same state
       as it was passed in. This returns the user-defined item (which can be of any JavaScript type: String, Number,
@@ -91,8 +91,8 @@ items:
               document.getElementById('message').innerText += message; 
           }
           ```
-  - uid: office.Office.AsyncResult.diagnostics
-    summary: 'Gets an object that may provide additional information if an [error](xref:office.Office.Error) occurred.'
+  - uid: 'office!Office.AsyncResult#diagnostics:member'
+    summary: 'Gets an object that may provide additional information if an [error](xref:office!Office.Error:interface) occurred.'
     remarks: >-
       This property returns additional information if the following errors occur with these supported APIs.
 
@@ -121,10 +121,10 @@ items:
       return:
         type:
           - any
-  - uid: office.Office.AsyncResult.error
+  - uid: 'office!Office.AsyncResult#error:member'
     summary: >-
-      Gets an [Office.Error](xref:office.Office.Error) object that provides a description of the error, if any error
-      occurred.
+      Gets an [Office.Error](xref:office!Office.Error:interface) object that provides a description of the error, if any
+      error occurred.
     name: error
     fullName: error
     langs:
@@ -134,7 +134,7 @@ items:
       content: 'error: Office.Error;'
       return:
         type:
-          - office.Office.Error
+          - 'office!Office.Error:interface'
         description: |-
 
 
@@ -156,8 +156,8 @@ items:
               document.getElementById('message').innerText += message; 
           }
           ```
-  - uid: office.Office.AsyncResult.status
-    summary: 'Gets the [Office.AsyncResultStatus](xref:office.Office.AsyncResultStatus) of the asynchronous operation.'
+  - uid: 'office!Office.AsyncResult#status:member'
+    summary: 'Gets the [Office.AsyncResultStatus](xref:office!Office.AsyncResultStatus:enum) of the asynchronous operation.'
     name: status
     fullName: status
     langs:
@@ -167,7 +167,7 @@ items:
       content: 'status: AsyncResultStatus;'
       return:
         type:
-          - office.Office.AsyncResultStatus
+          - 'office!Office.AsyncResultStatus:enum'
         description: |-
 
 
@@ -189,12 +189,12 @@ items:
               document.getElementById('message').innerText += message; 
           }
           ```
-  - uid: office.Office.AsyncResult.value
+  - uid: 'office!Office.AsyncResult#value:member'
     summary: 'Gets the payload or content of this asynchronous operation, if any.'
     remarks: >-
       You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async"
       method, such as the `getSelectedDataAsync` and `setSelectedDataAsync` methods of the
-      [Document](xref:office.Office.Document) object.
+      [Document](xref:office!Office.Document:interface) object.
 
 
       **Note**: What the value property returns for a particular "Async" method varies depending on the purpose and
@@ -235,3 +235,8 @@ items:
       return:
         type:
           - T
+references:
+  - uid: 'office!Office.Error:interface'
+    name: Office.Error
+  - uid: 'office!Office.AsyncResultStatus:enum'
+    name: AsyncResultStatus

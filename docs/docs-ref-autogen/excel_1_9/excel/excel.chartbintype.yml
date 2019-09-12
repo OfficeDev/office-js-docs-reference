@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartBinType
+  - uid: 'excel!Excel.ChartBinType:enum'
     summary: |-
       Specifies the bin's type of a histogram chart or pareto chart series.
 
@@ -10,34 +10,34 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartBinType.auto
-      - excel.Excel.ChartBinType.binCount
-      - excel.Excel.ChartBinType.binWidth
-      - excel.Excel.ChartBinType.category
-  - uid: excel.Excel.ChartBinType.auto
+      - 'excel!Excel.ChartBinType.auto:member'
+      - 'excel!Excel.ChartBinType.binCount:member'
+      - 'excel!Excel.ChartBinType.binWidth:member'
+      - 'excel!Excel.ChartBinType.category:member'
+  - uid: 'excel!Excel.ChartBinType.auto:member'
     name: auto
     fullName: auto
     langs:
       - typeScript
     type: field
     numericValue: '"Auto"'
-  - uid: excel.Excel.ChartBinType.binCount
+  - uid: 'excel!Excel.ChartBinType.binCount:member'
     name: binCount
     fullName: binCount
     langs:
       - typeScript
     type: field
     numericValue: '"BinCount"'
-  - uid: excel.Excel.ChartBinType.binWidth
+  - uid: 'excel!Excel.ChartBinType.binWidth:member'
     name: binWidth
     fullName: binWidth
     langs:
       - typeScript
     type: field
     numericValue: '"BinWidth"'
-  - uid: excel.Excel.ChartBinType.category
+  - uid: 'excel!Excel.ChartBinType.category:member'
     name: category
     fullName: category
     langs:

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions:interface'
     summary: |-
       Represents a collection of FilterPivotHierarchy items associated with the PivotTable.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions.enableMultipleFilterItems
-      - excel.Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions.id
-      - excel.Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions.name
-      - excel.Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions.position
-  - uid: excel.Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions#enableMultipleFilterItems:member'
+      - 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions#position:member'
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions.enableMultipleFilterItems
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions#enableMultipleFilterItems:member'
     summary: |-
       For EACH ITEM in the collection: Determines whether to allow multiple filter items.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions#id:member'
     summary: |-
       For EACH ITEM in the collection: Id of the FilterPivotHierarchy.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions#name:member'
     summary: |-
       For EACH ITEM in the collection: Name of the FilterPivotHierarchy.
 
@@ -73,7 +73,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions.position
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions#position:member'
     summary: |-
       For EACH ITEM in the collection: Position of the FilterPivotHierarchy.
 

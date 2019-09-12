@@ -1,21 +1,21 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeFontUpdateData
+  - uid: 'excel!Excel.Interfaces.RangeFontUpdateData:interface'
     summary: 'An interface for updating data on the RangeFont object, for use in "rangeFont.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.RangeFontUpdateData
     fullName: Excel.Interfaces.RangeFontUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RangeFontUpdateData.bold
-      - excel.Excel.Interfaces.RangeFontUpdateData.color
-      - excel.Excel.Interfaces.RangeFontUpdateData.italic
-      - excel.Excel.Interfaces.RangeFontUpdateData.name
-      - excel.Excel.Interfaces.RangeFontUpdateData.size
-      - excel.Excel.Interfaces.RangeFontUpdateData.underline
-  - uid: excel.Excel.Interfaces.RangeFontUpdateData.bold
+      - 'excel!Excel.Interfaces.RangeFontUpdateData#bold:member'
+      - 'excel!Excel.Interfaces.RangeFontUpdateData#color:member'
+      - 'excel!Excel.Interfaces.RangeFontUpdateData#italic:member'
+      - 'excel!Excel.Interfaces.RangeFontUpdateData#name:member'
+      - 'excel!Excel.Interfaces.RangeFontUpdateData#size:member'
+      - 'excel!Excel.Interfaces.RangeFontUpdateData#underline:member'
+  - uid: 'excel!Excel.Interfaces.RangeFontUpdateData#bold:member'
     summary: |-
       Represents the bold status of font.
 
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeFontUpdateData.color
+  - uid: 'excel!Excel.Interfaces.RangeFontUpdateData#color:member'
     summary: |-
       HTML color code representation of the text color. E.g. \#FF0000 represents Red.
 
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.RangeFontUpdateData.italic
+  - uid: 'excel!Excel.Interfaces.RangeFontUpdateData#italic:member'
     summary: |-
       Represents the italic status of the font.
 
@@ -60,7 +60,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeFontUpdateData.name
+  - uid: 'excel!Excel.Interfaces.RangeFontUpdateData#name:member'
     summary: |-
       Font name (e.g. "Calibri")
 
@@ -75,7 +75,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.RangeFontUpdateData.size
+  - uid: 'excel!Excel.Interfaces.RangeFontUpdateData#size:member'
     summary: |-
       Font size.
 
@@ -90,7 +90,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeFontUpdateData.underline
+  - uid: 'excel!Excel.Interfaces.RangeFontUpdateData#underline:member'
     summary: |-
       Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
 
@@ -104,4 +104,14 @@ items:
       content: 'underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";'
       return:
         type:
-          - Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"
+          - 'excel!Excel.Interfaces.RangeFontUpdateData#underline~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.RangeFontUpdateData#underline~0:complex'
+    name: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"
+    fullName: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"
+    spec.typeScript:
+      - uid: 'excel!Excel.RangeUnderlineStyle:enum'
+        name: Excel.RangeUnderlineStyle
+        fullName: Excel.RangeUnderlineStyle
+      - name: ' | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"'
+        fullName: ' | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"'

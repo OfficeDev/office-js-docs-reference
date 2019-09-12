@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions:interface'
     summary: |-
       Represents an Excel Conditional Data Bar Type.
 
@@ -10,18 +10,18 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.$all
-      - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.axisColor
-      - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.axisFormat
-      - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.barDirection
-      - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.lowerBoundRule
-      - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.negativeFormat
-      - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.positiveFormat
-      - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.showDataBarOnly
-      - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.upperBoundRule
-  - uid: excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.$all
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#axisColor:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#axisFormat:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#barDirection:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#lowerBoundRule:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#negativeFormat:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#positiveFormat:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#showDataBarOnly:member'
+      - 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#upperBoundRule:member'
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.axisColor
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#axisColor:member'
     summary: >-
       HTML color code representing the color of the Axis line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange"). "" (empty string) if no axis is present or set.
@@ -49,7 +49,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.axisFormat
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#axisFormat:member'
     summary: |-
       Representation of how the axis is determined for an Excel data bar.
 
@@ -64,7 +64,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.barDirection
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#barDirection:member'
     summary: |-
       Represents the direction that the data bar graphic should be based on.
 
@@ -79,7 +79,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.lowerBoundRule
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#lowerBoundRule:member'
     summary: |-
       The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
 
@@ -94,7 +94,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.negativeFormat
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#negativeFormat:member'
     summary: |-
       Representation of all values to the left of the axis in an Excel data bar.
 
@@ -108,8 +108,8 @@ items:
       content: 'negativeFormat?: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
-  - uid: excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.positiveFormat
+          - 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#positiveFormat:member'
     summary: |-
       Representation of all values to the right of the axis in an Excel data bar.
 
@@ -123,8 +123,8 @@ items:
       content: 'positiveFormat?: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
-  - uid: excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.showDataBarOnly
+          - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#showDataBarOnly:member'
     summary: |-
       If true, hides the values from the cells where the data bar is applied.
 
@@ -139,7 +139,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions.upperBoundRule
+  - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions#upperBoundRule:member'
     summary: |-
       The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
 
@@ -154,3 +154,8 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions:interface'
+    name: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions:interface'
+    name: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions

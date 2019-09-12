@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TimelineStyleData
+  - uid: 'excel!Excel.Interfaces.TimelineStyleData:interface'
     summary: An interface describing the data returned by calling "timelineStyle.toJSON()".
     name: Excel.Interfaces.TimelineStyleData
     fullName: Excel.Interfaces.TimelineStyleData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TimelineStyleData.name
-      - excel.Excel.Interfaces.TimelineStyleData.readOnly
-  - uid: excel.Excel.Interfaces.TimelineStyleData.name
+      - 'excel!Excel.Interfaces.TimelineStyleData#name:member'
+      - 'excel!Excel.Interfaces.TimelineStyleData#readOnly:member'
+  - uid: 'excel!Excel.Interfaces.TimelineStyleData#name:member'
     summary: >-
       Gets the name of the TimelineStyle.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.TimelineStyleData.readOnly
+  - uid: 'excel!Excel.Interfaces.TimelineStyleData#readOnly:member'
     summary: >-
       Specifies whether this TimelineStyle object is read-only. Read-only.
 

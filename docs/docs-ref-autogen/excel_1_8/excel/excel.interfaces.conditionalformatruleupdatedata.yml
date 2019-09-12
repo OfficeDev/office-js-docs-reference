@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalFormatRuleUpdateData
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleUpdateData:interface'
     summary: >-
       An interface for updating data on the ConditionalFormatRule object, for use in "conditionalFormatRule.set(<!--
       -->{ ... }<!-- -->)".
@@ -9,12 +9,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ConditionalFormatRuleUpdateData.formula
-      - excel.Excel.Interfaces.ConditionalFormatRuleUpdateData.formulaLocal
-      - excel.Excel.Interfaces.ConditionalFormatRuleUpdateData.formulaR1C1
-  - uid: excel.Excel.Interfaces.ConditionalFormatRuleUpdateData.formula
+      - 'excel!Excel.Interfaces.ConditionalFormatRuleUpdateData#formula:member'
+      - 'excel!Excel.Interfaces.ConditionalFormatRuleUpdateData#formulaLocal:member'
+      - 'excel!Excel.Interfaces.ConditionalFormatRuleUpdateData#formulaR1C1:member'
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleUpdateData#formula:member'
     summary: |-
       The formula, if required, to evaluate the conditional format rule on.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ConditionalFormatRuleUpdateData.formulaLocal
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleUpdateData#formulaLocal:member'
     summary: |-
       The formula, if required, to evaluate the conditional format rule on in the user's language.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ConditionalFormatRuleUpdateData.formulaR1C1
+  - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleUpdateData#formulaR1C1:member'
     summary: |-
       The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
 

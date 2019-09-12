@@ -1,21 +1,21 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.ImageData
+  - uid: 'onenote!OneNote.Interfaces.ImageData:interface'
     summary: An interface describing the data returned by calling "image.toJSON()".
     name: OneNote.Interfaces.ImageData
     fullName: OneNote.Interfaces.ImageData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.ImageData.description
-      - onenote.OneNote.Interfaces.ImageData.height
-      - onenote.OneNote.Interfaces.ImageData.hyperlink
-      - onenote.OneNote.Interfaces.ImageData.id
-      - onenote.OneNote.Interfaces.ImageData.ocrData
-      - onenote.OneNote.Interfaces.ImageData.width
-  - uid: onenote.OneNote.Interfaces.ImageData.description
+      - 'onenote!OneNote.Interfaces.ImageData#description:member'
+      - 'onenote!OneNote.Interfaces.ImageData#height:member'
+      - 'onenote!OneNote.Interfaces.ImageData#hyperlink:member'
+      - 'onenote!OneNote.Interfaces.ImageData#id:member'
+      - 'onenote!OneNote.Interfaces.ImageData#ocrData:member'
+      - 'onenote!OneNote.Interfaces.ImageData#width:member'
+  - uid: 'onenote!OneNote.Interfaces.ImageData#description:member'
     summary: |-
       Gets or sets the description of the Image.
 
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.ImageData.height
+  - uid: 'onenote!OneNote.Interfaces.ImageData#height:member'
     summary: |-
       Gets or sets the height of the Image layout.
 
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.Interfaces.ImageData.hyperlink
+  - uid: 'onenote!OneNote.Interfaces.ImageData#hyperlink:member'
     summary: |-
       Gets or sets the hyperlink of the Image.
 
@@ -60,7 +60,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.ImageData.id
+  - uid: 'onenote!OneNote.Interfaces.ImageData#id:member'
     summary: |-
       Gets the ID of the Image object. Read-only.
 
@@ -75,7 +75,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.ImageData.ocrData
+  - uid: 'onenote!OneNote.Interfaces.ImageData#ocrData:member'
     summary: |-
       Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language.
 
@@ -89,8 +89,8 @@ items:
       content: 'ocrData?: OneNote.ImageOcrData;'
       return:
         type:
-          - onenote.OneNote.ImageOcrData
-  - uid: onenote.OneNote.Interfaces.ImageData.width
+          - 'onenote!OneNote.ImageOcrData:interface'
+  - uid: 'onenote!OneNote.Interfaces.ImageData#width:member'
     summary: |-
       Gets or sets the width of the Image layout.
 
@@ -105,3 +105,6 @@ items:
       return:
         type:
           - number
+references:
+  - uid: 'onenote!OneNote.ImageOcrData:interface'
+    name: OneNote.ImageOcrData

@@ -1,21 +1,21 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.DataValidationData
+  - uid: 'excel!Excel.Interfaces.DataValidationData:interface'
     summary: An interface describing the data returned by calling "dataValidation.toJSON()".
     name: Excel.Interfaces.DataValidationData
     fullName: Excel.Interfaces.DataValidationData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.DataValidationData.errorAlert
-      - excel.Excel.Interfaces.DataValidationData.ignoreBlanks
-      - excel.Excel.Interfaces.DataValidationData.prompt
-      - excel.Excel.Interfaces.DataValidationData.rule
-      - excel.Excel.Interfaces.DataValidationData.type
-      - excel.Excel.Interfaces.DataValidationData.valid
-  - uid: excel.Excel.Interfaces.DataValidationData.errorAlert
+      - 'excel!Excel.Interfaces.DataValidationData#errorAlert:member'
+      - 'excel!Excel.Interfaces.DataValidationData#ignoreBlanks:member'
+      - 'excel!Excel.Interfaces.DataValidationData#prompt:member'
+      - 'excel!Excel.Interfaces.DataValidationData#rule:member'
+      - 'excel!Excel.Interfaces.DataValidationData#type:member'
+      - 'excel!Excel.Interfaces.DataValidationData#valid:member'
+  - uid: 'excel!Excel.Interfaces.DataValidationData#errorAlert:member'
     summary: |-
       Error alert when user enters invalid data.
 
@@ -29,8 +29,8 @@ items:
       content: 'errorAlert?: Excel.DataValidationErrorAlert;'
       return:
         type:
-          - excel.Excel.DataValidationErrorAlert
-  - uid: excel.Excel.Interfaces.DataValidationData.ignoreBlanks
+          - 'excel!Excel.DataValidationErrorAlert:interface'
+  - uid: 'excel!Excel.Interfaces.DataValidationData#ignoreBlanks:member'
     summary: |-
       Ignore blanks: no data validation will be performed on blank cells, it defaults to true.
 
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.DataValidationData.prompt
+  - uid: 'excel!Excel.Interfaces.DataValidationData#prompt:member'
     summary: |-
       Prompt when users select a cell.
 
@@ -59,8 +59,8 @@ items:
       content: 'prompt?: Excel.DataValidationPrompt;'
       return:
         type:
-          - excel.Excel.DataValidationPrompt
-  - uid: excel.Excel.Interfaces.DataValidationData.rule
+          - 'excel!Excel.DataValidationPrompt:interface'
+  - uid: 'excel!Excel.Interfaces.DataValidationData#rule:member'
     summary: |-
       Data validation rule that contains different type of data validation criteria.
 
@@ -74,8 +74,8 @@ items:
       content: 'rule?: Excel.DataValidationRule;'
       return:
         type:
-          - excel.Excel.DataValidationRule
-  - uid: excel.Excel.Interfaces.DataValidationData.type
+          - 'excel!Excel.DataValidationRule:interface'
+  - uid: 'excel!Excel.Interfaces.DataValidationData#type:member'
     summary: |-
       Type of the data validation, see Excel.DataValidationType for details.
 
@@ -91,10 +91,8 @@ items:
         "Custom" | "Inconsistent" | "MixedCriteria";
       return:
         type:
-          - >-
-            Excel.DataValidationType | "None" | "WholeNumber" | "Decimal" | "List" | "Date" | "Time" | "TextLength" |
-            "Custom" | "Inconsistent" | "MixedCriteria"
-  - uid: excel.Excel.Interfaces.DataValidationData.valid
+          - 'excel!Excel.Interfaces.DataValidationData#type~0:complex'
+  - uid: 'excel!Excel.Interfaces.DataValidationData#valid:member'
     summary: >-
       Represents if all cell values are valid according to the data validation rules. Returns true if all cell values
       are valid, or false if all cell values are invalid. Returns null if there are both valid and invalid cell values
@@ -112,3 +110,23 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.DataValidationErrorAlert:interface'
+    name: Excel.DataValidationErrorAlert
+  - uid: 'excel!Excel.DataValidationPrompt:interface'
+    name: Excel.DataValidationPrompt
+  - uid: 'excel!Excel.DataValidationRule:interface'
+    name: Excel.DataValidationRule
+  - uid: 'excel!Excel.Interfaces.DataValidationData#type~0:complex'
+    name: >-
+      Excel.DataValidationType | "None" | "WholeNumber" | "Decimal" | "List" | "Date" | "Time" | "TextLength" | "Custom"
+      | "Inconsistent" | "MixedCriteria"
+    fullName: >-
+      Excel.DataValidationType | "None" | "WholeNumber" | "Decimal" | "List" | "Date" | "Time" | "TextLength" | "Custom"
+      | "Inconsistent" | "MixedCriteria"
+    spec.typeScript:
+      - uid: 'excel!Excel.DataValidationType:enum'
+        name: Excel.DataValidationType
+        fullName: Excel.DataValidationType
+      - name: ' | "None" | "WholeNumber" | "Decimal" | "List" | "Date" | "Time" | "TextLength" | "Custom" | "Inconsistent" | "MixedCriteria"'
+        fullName: ' | "None" | "WholeNumber" | "Decimal" | "List" | "Date" | "Time" | "TextLength" | "Custom" | "Inconsistent" | "MixedCriteria"'

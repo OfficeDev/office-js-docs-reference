@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartLineFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartLineFormat object, for use in "chartLineFormat.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartLineFormatUpdateData.color
-  - uid: excel.Excel.Interfaces.ChartLineFormatUpdateData.color
+      - 'excel!Excel.Interfaces.ChartLineFormatUpdateData#color:member'
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatUpdateData#color:member'
     summary: |-
       HTML color code representing the color of lines in the chart.
 

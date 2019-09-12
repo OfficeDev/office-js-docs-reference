@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ContentType
+  - uid: 'excel!Excel.ContentType:enum'
     summary: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -10,10 +10,10 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ContentType.plain
-  - uid: excel.Excel.ContentType.plain
+      - 'excel!Excel.ContentType.plain:member'
+  - uid: 'excel!Excel.ContentType.plain:member'
     summary: Indicates plain format type of the comment content.
     isPreview: true
     name: plain

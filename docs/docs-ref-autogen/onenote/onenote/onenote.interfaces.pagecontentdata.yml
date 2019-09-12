@@ -1,22 +1,22 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.PageContentData
+  - uid: 'onenote!OneNote.Interfaces.PageContentData:interface'
     summary: An interface describing the data returned by calling "pageContent.toJSON()".
     name: OneNote.Interfaces.PageContentData
     fullName: OneNote.Interfaces.PageContentData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.PageContentData.id
-      - onenote.OneNote.Interfaces.PageContentData.image
-      - onenote.OneNote.Interfaces.PageContentData.ink
-      - onenote.OneNote.Interfaces.PageContentData.left
-      - onenote.OneNote.Interfaces.PageContentData.outline
-      - onenote.OneNote.Interfaces.PageContentData.top
-      - onenote.OneNote.Interfaces.PageContentData.type
-  - uid: onenote.OneNote.Interfaces.PageContentData.id
+      - 'onenote!OneNote.Interfaces.PageContentData#id:member'
+      - 'onenote!OneNote.Interfaces.PageContentData#image:member'
+      - 'onenote!OneNote.Interfaces.PageContentData#ink:member'
+      - 'onenote!OneNote.Interfaces.PageContentData#left:member'
+      - 'onenote!OneNote.Interfaces.PageContentData#outline:member'
+      - 'onenote!OneNote.Interfaces.PageContentData#top:member'
+      - 'onenote!OneNote.Interfaces.PageContentData#type:member'
+  - uid: 'onenote!OneNote.Interfaces.PageContentData#id:member'
     summary: |-
       Gets the ID of the PageContent object. Read-only.
 
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.PageContentData.image
+  - uid: 'onenote!OneNote.Interfaces.PageContentData#image:member'
     summary: |-
       Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
 
@@ -45,8 +45,8 @@ items:
       content: 'image?: OneNote.Interfaces.ImageData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ImageData
-  - uid: onenote.OneNote.Interfaces.PageContentData.ink
+          - 'onenote!OneNote.Interfaces.ImageData:interface'
+  - uid: 'onenote!OneNote.Interfaces.PageContentData#ink:member'
     summary: |-
       Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
 
@@ -60,8 +60,8 @@ items:
       content: 'ink?: OneNote.Interfaces.FloatingInkData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.FloatingInkData
-  - uid: onenote.OneNote.Interfaces.PageContentData.left
+          - 'onenote!OneNote.Interfaces.FloatingInkData:interface'
+  - uid: 'onenote!OneNote.Interfaces.PageContentData#left:member'
     summary: |-
       Gets or sets the left (X-axis) position of the PageContent object.
 
@@ -76,7 +76,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.Interfaces.PageContentData.outline
+  - uid: 'onenote!OneNote.Interfaces.PageContentData#outline:member'
     summary: |-
       Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
 
@@ -90,8 +90,8 @@ items:
       content: 'outline?: OneNote.Interfaces.OutlineData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.OutlineData
-  - uid: onenote.OneNote.Interfaces.PageContentData.top
+          - 'onenote!OneNote.Interfaces.OutlineData:interface'
+  - uid: 'onenote!OneNote.Interfaces.PageContentData#top:member'
     summary: |-
       Gets or sets the top (Y-axis) position of the PageContent object.
 
@@ -106,7 +106,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.Interfaces.PageContentData.type
+  - uid: 'onenote!OneNote.Interfaces.PageContentData#type:member'
     summary: |-
       Gets the type of the PageContent object. Read-only.
 
@@ -120,4 +120,20 @@ items:
       content: 'type?: OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other";'
       return:
         type:
-          - OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other"
+          - 'onenote!OneNote.Interfaces.PageContentData#type~0:complex'
+references:
+  - uid: 'onenote!OneNote.Interfaces.ImageData:interface'
+    name: OneNote.Interfaces.ImageData
+  - uid: 'onenote!OneNote.Interfaces.FloatingInkData:interface'
+    name: OneNote.Interfaces.FloatingInkData
+  - uid: 'onenote!OneNote.Interfaces.OutlineData:interface'
+    name: OneNote.Interfaces.OutlineData
+  - uid: 'onenote!OneNote.Interfaces.PageContentData#type~0:complex'
+    name: OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other"
+    fullName: OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other"
+    spec.typeScript:
+      - uid: 'onenote!OneNote.PageContentType:enum'
+        name: OneNote.PageContentType
+        fullName: OneNote.PageContentType
+      - name: ' | "Outline" | "Image" | "Ink" | "Other"'
+        fullName: ' | "Outline" | "Image" | "Ink" | "Other"'

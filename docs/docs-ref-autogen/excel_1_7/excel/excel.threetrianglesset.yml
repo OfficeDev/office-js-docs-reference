@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ThreeTrianglesSet
+  - uid: 'excel!Excel.ThreeTrianglesSet:interface'
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ThreeTrianglesSet
     fullName: Excel.ThreeTrianglesSet
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ThreeTrianglesSet.greenUpTriangle
-      - excel.Excel.ThreeTrianglesSet.redDownTriangle
-      - excel.Excel.ThreeTrianglesSet.yellowDash
-  - uid: excel.Excel.ThreeTrianglesSet.greenUpTriangle
+      - 'excel!Excel.ThreeTrianglesSet#greenUpTriangle:member'
+      - 'excel!Excel.ThreeTrianglesSet#redDownTriangle:member'
+      - 'excel!Excel.ThreeTrianglesSet#yellowDash:member'
+  - uid: 'excel!Excel.ThreeTrianglesSet#greenUpTriangle:member'
     name: greenUpTriangle
     fullName: greenUpTriangle
     langs:
@@ -22,8 +22,8 @@ items:
       content: 'greenUpTriangle: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.ThreeTrianglesSet.redDownTriangle
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeTrianglesSet#redDownTriangle:member'
     name: redDownTriangle
     fullName: redDownTriangle
     langs:
@@ -33,8 +33,8 @@ items:
       content: 'redDownTriangle: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.ThreeTrianglesSet.yellowDash
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeTrianglesSet#yellowDash:member'
     name: yellowDash
     fullName: yellowDash
     langs:
@@ -44,4 +44,7 @@ items:
       content: 'yellowDash: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - 'excel!Excel.Icon:interface'
+references:
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon

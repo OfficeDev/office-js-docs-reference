@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.UnderlineType
+  - uid: 'word!Word.UnderlineType:enum'
     summary: |-
       Underline types
 
@@ -10,30 +10,30 @@ items:
     langs:
       - typeScript
     type: enum
-    package: word
+    package: word!
     children:
-      - word.Word.UnderlineType.dashLine
-      - word.Word.UnderlineType.dashLineHeavy
-      - word.Word.UnderlineType.dashLineLong
-      - word.Word.UnderlineType.dashLineLongHeavy
-      - word.Word.UnderlineType.dotDashLine
-      - word.Word.UnderlineType.dotDashLineHeavy
-      - word.Word.UnderlineType.dotLine
-      - word.Word.UnderlineType.dotted
-      - word.Word.UnderlineType.dottedHeavy
-      - word.Word.UnderlineType.double
-      - word.Word.UnderlineType.hidden
-      - word.Word.UnderlineType.mixed
-      - word.Word.UnderlineType.none
-      - word.Word.UnderlineType.single
-      - word.Word.UnderlineType.thick
-      - word.Word.UnderlineType.twoDotDashLine
-      - word.Word.UnderlineType.twoDotDashLineHeavy
-      - word.Word.UnderlineType.wave
-      - word.Word.UnderlineType.waveDouble
-      - word.Word.UnderlineType.waveHeavy
-      - word.Word.UnderlineType.word
-  - uid: word.Word.UnderlineType.dashLine
+      - 'word!Word.UnderlineType.dashLine:member'
+      - 'word!Word.UnderlineType.dashLineHeavy:member'
+      - 'word!Word.UnderlineType.dashLineLong:member'
+      - 'word!Word.UnderlineType.dashLineLongHeavy:member'
+      - 'word!Word.UnderlineType.dotDashLine:member'
+      - 'word!Word.UnderlineType.dotDashLineHeavy:member'
+      - 'word!Word.UnderlineType.dotLine:member'
+      - 'word!Word.UnderlineType.dotted:member'
+      - 'word!Word.UnderlineType.dottedHeavy:member'
+      - 'word!Word.UnderlineType.double:member'
+      - 'word!Word.UnderlineType.hidden:member'
+      - 'word!Word.UnderlineType.mixed:member'
+      - 'word!Word.UnderlineType.none:member'
+      - 'word!Word.UnderlineType.single:member'
+      - 'word!Word.UnderlineType.thick:member'
+      - 'word!Word.UnderlineType.twoDotDashLine:member'
+      - 'word!Word.UnderlineType.twoDotDashLineHeavy:member'
+      - 'word!Word.UnderlineType.wave:member'
+      - 'word!Word.UnderlineType.waveDouble:member'
+      - 'word!Word.UnderlineType.waveHeavy:member'
+      - 'word!Word.UnderlineType.word:member'
+  - uid: 'word!Word.UnderlineType.dashLine:member'
     summary: A single dash underline.
     name: dashLine
     fullName: dashLine
@@ -41,28 +41,28 @@ items:
       - typeScript
     type: field
     numericValue: '"DashLine"'
-  - uid: word.Word.UnderlineType.dashLineHeavy
+  - uid: 'word!Word.UnderlineType.dashLineHeavy:member'
     name: dashLineHeavy
     fullName: dashLineHeavy
     langs:
       - typeScript
     type: field
     numericValue: '"DashLineHeavy"'
-  - uid: word.Word.UnderlineType.dashLineLong
+  - uid: 'word!Word.UnderlineType.dashLineLong:member'
     name: dashLineLong
     fullName: dashLineLong
     langs:
       - typeScript
     type: field
     numericValue: '"DashLineLong"'
-  - uid: word.Word.UnderlineType.dashLineLongHeavy
+  - uid: 'word!Word.UnderlineType.dashLineLongHeavy:member'
     name: dashLineLongHeavy
     fullName: dashLineLongHeavy
     langs:
       - typeScript
     type: field
     numericValue: '"DashLineLongHeavy"'
-  - uid: word.Word.UnderlineType.dotDashLine
+  - uid: 'word!Word.UnderlineType.dotDashLine:member'
     summary: An alternating dot-dash underline.
     name: dotDashLine
     fullName: dotDashLine
@@ -70,14 +70,14 @@ items:
       - typeScript
     type: field
     numericValue: '"DotDashLine"'
-  - uid: word.Word.UnderlineType.dotDashLineHeavy
+  - uid: 'word!Word.UnderlineType.dotDashLineHeavy:member'
     name: dotDashLineHeavy
     fullName: dotDashLineHeavy
     langs:
       - typeScript
     type: field
     numericValue: '"DotDashLineHeavy"'
-  - uid: word.Word.UnderlineType.dotLine
+  - uid: 'word!Word.UnderlineType.dotLine:member'
     deprecated:
       content: DotLine is no longer supported.
     name: dotLine
@@ -86,7 +86,7 @@ items:
       - typeScript
     type: field
     numericValue: '"DotLine"'
-  - uid: word.Word.UnderlineType.dotted
+  - uid: 'word!Word.UnderlineType.dotted:member'
     summary: A dotted underline.
     name: dotted
     fullName: dotted
@@ -94,14 +94,14 @@ items:
       - typeScript
     type: field
     numericValue: '"Dotted"'
-  - uid: word.Word.UnderlineType.dottedHeavy
+  - uid: 'word!Word.UnderlineType.dottedHeavy:member'
     name: dottedHeavy
     fullName: dottedHeavy
     langs:
       - typeScript
     type: field
     numericValue: '"DottedHeavy"'
-  - uid: word.Word.UnderlineType.double
+  - uid: 'word!Word.UnderlineType.double:member'
     summary: A double underline.
     name: double
     fullName: double
@@ -109,7 +109,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Double"'
-  - uid: word.Word.UnderlineType.hidden
+  - uid: 'word!Word.UnderlineType.hidden:member'
     deprecated:
       content: Hidden is no longer supported.
     name: hidden
@@ -118,14 +118,14 @@ items:
       - typeScript
     type: field
     numericValue: '"Hidden"'
-  - uid: word.Word.UnderlineType.mixed
+  - uid: 'word!Word.UnderlineType.mixed:member'
     name: mixed
     fullName: mixed
     langs:
       - typeScript
     type: field
     numericValue: '"Mixed"'
-  - uid: word.Word.UnderlineType.none
+  - uid: 'word!Word.UnderlineType.none:member'
     summary: No underline.
     name: none
     fullName: none
@@ -133,7 +133,7 @@ items:
       - typeScript
     type: field
     numericValue: '"None"'
-  - uid: word.Word.UnderlineType.single
+  - uid: 'word!Word.UnderlineType.single:member'
     summary: A single underline. This is the default value.
     name: single
     fullName: single
@@ -141,7 +141,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Single"'
-  - uid: word.Word.UnderlineType.thick
+  - uid: 'word!Word.UnderlineType.thick:member'
     summary: A single thick underline.
     name: thick
     fullName: thick
@@ -149,7 +149,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Thick"'
-  - uid: word.Word.UnderlineType.twoDotDashLine
+  - uid: 'word!Word.UnderlineType.twoDotDashLine:member'
     summary: An alternating dot-dot-dash underline.
     name: twoDotDashLine
     fullName: twoDotDashLine
@@ -157,14 +157,14 @@ items:
       - typeScript
     type: field
     numericValue: '"TwoDotDashLine"'
-  - uid: word.Word.UnderlineType.twoDotDashLineHeavy
+  - uid: 'word!Word.UnderlineType.twoDotDashLineHeavy:member'
     name: twoDotDashLineHeavy
     fullName: twoDotDashLineHeavy
     langs:
       - typeScript
     type: field
     numericValue: '"TwoDotDashLineHeavy"'
-  - uid: word.Word.UnderlineType.wave
+  - uid: 'word!Word.UnderlineType.wave:member'
     summary: A single wavy underline.
     name: wave
     fullName: wave
@@ -172,21 +172,21 @@ items:
       - typeScript
     type: field
     numericValue: '"Wave"'
-  - uid: word.Word.UnderlineType.waveDouble
+  - uid: 'word!Word.UnderlineType.waveDouble:member'
     name: waveDouble
     fullName: waveDouble
     langs:
       - typeScript
     type: field
     numericValue: '"WaveDouble"'
-  - uid: word.Word.UnderlineType.waveHeavy
+  - uid: 'word!Word.UnderlineType.waveHeavy:member'
     name: waveHeavy
     fullName: waveHeavy
     langs:
       - typeScript
     type: field
     numericValue: '"WaveHeavy"'
-  - uid: word.Word.UnderlineType.word
+  - uid: 'word!Word.UnderlineType.word:member'
     summary: Only underline individual words.
     name: word
     fullName: word

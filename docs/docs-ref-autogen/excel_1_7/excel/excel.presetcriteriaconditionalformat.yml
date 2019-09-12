@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.PresetCriteriaConditionalFormat
+  - uid: 'excel!Excel.PresetCriteriaConditionalFormat:class'
     summary: >-
       Represents the the preset criteria conditional format such as above average, below average, unique values,
       contains blank, nonblank, error, and noerror.
@@ -13,19 +13,19 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.PresetCriteriaConditionalFormat.context
-      - excel.Excel.PresetCriteriaConditionalFormat.format
-      - excel.Excel.PresetCriteriaConditionalFormat.load
-      - excel.Excel.PresetCriteriaConditionalFormat.load_1
-      - excel.Excel.PresetCriteriaConditionalFormat.load_2
-      - excel.Excel.PresetCriteriaConditionalFormat.rule
-      - excel.Excel.PresetCriteriaConditionalFormat.set
-      - excel.Excel.PresetCriteriaConditionalFormat.set_1
-      - excel.Excel.PresetCriteriaConditionalFormat.toJSON
-  - uid: excel.Excel.PresetCriteriaConditionalFormat.context
+      - 'excel!Excel.PresetCriteriaConditionalFormat#context:member'
+      - 'excel!Excel.PresetCriteriaConditionalFormat#format:member'
+      - 'excel!Excel.PresetCriteriaConditionalFormat#load:member(1)'
+      - 'excel!Excel.PresetCriteriaConditionalFormat#load:member(2)'
+      - 'excel!Excel.PresetCriteriaConditionalFormat#load:member(3)'
+      - 'excel!Excel.PresetCriteriaConditionalFormat#rule:member'
+      - 'excel!Excel.PresetCriteriaConditionalFormat#set:member(1)'
+      - 'excel!Excel.PresetCriteriaConditionalFormat#set:member(2)'
+      - 'excel!Excel.PresetCriteriaConditionalFormat#toJSON:member(1)'
+  - uid: 'excel!Excel.PresetCriteriaConditionalFormat#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -38,8 +38,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.PresetCriteriaConditionalFormat.format
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PresetCriteriaConditionalFormat#format:member'
     summary: |-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
 
@@ -53,8 +53,8 @@ items:
       content: 'readonly format: Excel.ConditionalRangeFormat;'
       return:
         type:
-          - excel.Excel.ConditionalRangeFormat
-  - uid: excel.Excel.PresetCriteriaConditionalFormat.load
+          - 'excel!Excel.ConditionalRangeFormat:class'
+  - uid: 'excel!Excel.PresetCriteriaConditionalFormat#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -87,14 +87,14 @@ items:
         Excel.PresetCriteriaConditionalFormat;
       return:
         type:
-          - excel.Excel.PresetCriteriaConditionalFormat
+          - 'excel!Excel.PresetCriteriaConditionalFormat:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
-  - uid: excel.Excel.PresetCriteriaConditionalFormat.load_1
+            - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions:interface'
+  - uid: 'excel!Excel.PresetCriteriaConditionalFormat#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -107,14 +107,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.PresetCriteriaConditionalFormat;'
       return:
         type:
-          - excel.Excel.PresetCriteriaConditionalFormat
+          - 'excel!Excel.PresetCriteriaConditionalFormat:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.PresetCriteriaConditionalFormat.load_2
+  - uid: 'excel!Excel.PresetCriteriaConditionalFormat#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -127,7 +127,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PresetCriteriaConditionalFormat;'
       return:
         type:
-          - excel.Excel.PresetCriteriaConditionalFormat
+          - 'excel!Excel.PresetCriteriaConditionalFormat:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -136,7 +136,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.PresetCriteriaConditionalFormat.rule
+  - uid: 'excel!Excel.PresetCriteriaConditionalFormat#rule:member'
     summary: |-
       The rule of the conditional format.
 
@@ -150,7 +150,7 @@ items:
       content: 'rule: Excel.ConditionalPresetCriteriaRule;'
       return:
         type:
-          - excel.Excel.ConditionalPresetCriteriaRule
+          - 'excel!Excel.ConditionalPresetCriteriaRule:interface'
         description: |-
 
 
@@ -179,7 +179,7 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.PresetCriteriaConditionalFormat.set
+  - uid: 'excel!Excel.PresetCriteriaConditionalFormat#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -206,12 +206,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.PresetCriteriaConditionalFormatUpdateData
+            - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.PresetCriteriaConditionalFormat.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.PresetCriteriaConditionalFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -228,8 +228,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.PresetCriteriaConditionalFormat
-  - uid: excel.Excel.PresetCriteriaConditionalFormat.toJSON
+            - 'excel!Excel.PresetCriteriaConditionalFormat:class'
+  - uid: 'excel!Excel.PresetCriteriaConditionalFormat#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -245,5 +245,24 @@ items:
       content: 'toJSON(): Excel.Interfaces.PresetCriteriaConditionalFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.PresetCriteriaConditionalFormatData
+          - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ConditionalRangeFormat:class'
+    name: Excel.ConditionalRangeFormat
+  - uid: 'excel!Excel.PresetCriteriaConditionalFormat:class'
+    name: Excel.PresetCriteriaConditionalFormat
+  - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions:interface'
+    name: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
+  - uid: 'excel!Excel.ConditionalPresetCriteriaRule:interface'
+    name: Excel.ConditionalPresetCriteriaRule
+  - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface'
+    name: Interfaces.PresetCriteriaConditionalFormatUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface'
+    name: Excel.Interfaces.PresetCriteriaConditionalFormatData

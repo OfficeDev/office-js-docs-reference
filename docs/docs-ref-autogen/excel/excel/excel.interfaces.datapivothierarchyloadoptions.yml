@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.DataPivotHierarchyLoadOptions
+  - uid: 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions:interface'
     summary: |-
       Represents the Excel DataPivotHierarchy.
 
@@ -10,17 +10,17 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.DataPivotHierarchyLoadOptions.$all
-      - excel.Excel.Interfaces.DataPivotHierarchyLoadOptions.field
-      - excel.Excel.Interfaces.DataPivotHierarchyLoadOptions.id
-      - excel.Excel.Interfaces.DataPivotHierarchyLoadOptions.name
-      - excel.Excel.Interfaces.DataPivotHierarchyLoadOptions.numberFormat
-      - excel.Excel.Interfaces.DataPivotHierarchyLoadOptions.position
-      - excel.Excel.Interfaces.DataPivotHierarchyLoadOptions.showAs
-      - excel.Excel.Interfaces.DataPivotHierarchyLoadOptions.summarizeBy
-  - uid: excel.Excel.Interfaces.DataPivotHierarchyLoadOptions.$all
+      - 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#field:member'
+      - 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#numberFormat:member'
+      - 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#position:member'
+      - 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#showAs:member'
+      - 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#summarizeBy:member'
+  - uid: 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.DataPivotHierarchyLoadOptions.field
+  - uid: 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#field:member'
     summary: |-
       Returns the PivotFields associated with the DataPivotHierarchy.
 
@@ -45,8 +45,8 @@ items:
       content: 'field?: Excel.Interfaces.PivotFieldLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.PivotFieldLoadOptions
-  - uid: excel.Excel.Interfaces.DataPivotHierarchyLoadOptions.id
+          - 'excel!Excel.Interfaces.PivotFieldLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#id:member'
     summary: |-
       Id of the DataPivotHierarchy.
 
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.DataPivotHierarchyLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#name:member'
     summary: |-
       Name of the DataPivotHierarchy.
 
@@ -76,7 +76,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.DataPivotHierarchyLoadOptions.numberFormat
+  - uid: 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#numberFormat:member'
     summary: |-
       Number format of the DataPivotHierarchy.
 
@@ -91,7 +91,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.DataPivotHierarchyLoadOptions.position
+  - uid: 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#position:member'
     summary: |-
       Position of the DataPivotHierarchy.
 
@@ -106,7 +106,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.DataPivotHierarchyLoadOptions.showAs
+  - uid: 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#showAs:member'
     summary: |-
       Determines whether the data should be shown as a specific summary calculation or not.
 
@@ -121,7 +121,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.DataPivotHierarchyLoadOptions.summarizeBy
+  - uid: 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions#summarizeBy:member'
     summary: |-
       Determines whether to show all items of the DataPivotHierarchy.
 
@@ -136,3 +136,6 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.PivotFieldLoadOptions:interface'
+    name: Excel.Interfaces.PivotFieldLoadOptions

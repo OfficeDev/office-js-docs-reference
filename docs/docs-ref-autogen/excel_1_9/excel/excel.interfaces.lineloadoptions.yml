@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.LineLoadOptions
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions:interface'
     summary: |-
       Represents a line inside a worksheet. To get the corresponding Shape object, use `Line.shape`<!-- -->.
 
@@ -10,25 +10,25 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.LineLoadOptions.$all
-      - excel.Excel.Interfaces.LineLoadOptions.beginArrowheadLength
-      - excel.Excel.Interfaces.LineLoadOptions.beginArrowheadStyle
-      - excel.Excel.Interfaces.LineLoadOptions.beginArrowheadWidth
-      - excel.Excel.Interfaces.LineLoadOptions.beginConnectedShape
-      - excel.Excel.Interfaces.LineLoadOptions.beginConnectedSite
-      - excel.Excel.Interfaces.LineLoadOptions.connectorType
-      - excel.Excel.Interfaces.LineLoadOptions.endArrowheadLength
-      - excel.Excel.Interfaces.LineLoadOptions.endArrowheadStyle
-      - excel.Excel.Interfaces.LineLoadOptions.endArrowheadWidth
-      - excel.Excel.Interfaces.LineLoadOptions.endConnectedShape
-      - excel.Excel.Interfaces.LineLoadOptions.endConnectedSite
-      - excel.Excel.Interfaces.LineLoadOptions.id
-      - excel.Excel.Interfaces.LineLoadOptions.isBeginConnected
-      - excel.Excel.Interfaces.LineLoadOptions.isEndConnected
-      - excel.Excel.Interfaces.LineLoadOptions.shape
-  - uid: excel.Excel.Interfaces.LineLoadOptions.$all
+      - 'excel!Excel.Interfaces.LineLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#beginArrowheadLength:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#beginArrowheadStyle:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#beginArrowheadWidth:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#beginConnectedShape:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#beginConnectedSite:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#connectorType:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#endArrowheadLength:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#endArrowheadStyle:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#endArrowheadWidth:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#endConnectedShape:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#endConnectedSite:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#isBeginConnected:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#isEndConnected:member'
+      - 'excel!Excel.Interfaces.LineLoadOptions#shape:member'
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -39,7 +39,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.LineLoadOptions.beginArrowheadLength
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#beginArrowheadLength:member'
     summary: |-
       Represents the length of the arrowhead at the beginning of the specified line.
 
@@ -54,7 +54,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.LineLoadOptions.beginArrowheadStyle
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#beginArrowheadStyle:member'
     summary: |-
       Represents the style of the arrowhead at the beginning of the specified line.
 
@@ -69,7 +69,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.LineLoadOptions.beginArrowheadWidth
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#beginArrowheadWidth:member'
     summary: |-
       Represents the width of the arrowhead at the beginning of the specified line.
 
@@ -84,7 +84,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.LineLoadOptions.beginConnectedShape
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#beginConnectedShape:member'
     summary: |-
       Represents the shape to which the beginning of the specified line is attached.
 
@@ -98,8 +98,8 @@ items:
       content: 'beginConnectedShape?: Excel.Interfaces.ShapeLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ShapeLoadOptions
-  - uid: excel.Excel.Interfaces.LineLoadOptions.beginConnectedSite
+          - 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#beginConnectedSite:member'
     summary: >-
       Represents the connection site to which the beginning of a connector is connected. Read-only. Returns null when
       the beginning of the line is not attached to any shape.
@@ -116,7 +116,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.LineLoadOptions.connectorType
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#connectorType:member'
     summary: |-
       Represents the connector type for the line.
 
@@ -131,7 +131,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.LineLoadOptions.endArrowheadLength
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#endArrowheadLength:member'
     summary: |-
       Represents the length of the arrowhead at the end of the specified line.
 
@@ -146,7 +146,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.LineLoadOptions.endArrowheadStyle
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#endArrowheadStyle:member'
     summary: |-
       Represents the style of the arrowhead at the end of the specified line.
 
@@ -161,7 +161,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.LineLoadOptions.endArrowheadWidth
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#endArrowheadWidth:member'
     summary: |-
       Represents the width of the arrowhead at the end of the specified line.
 
@@ -176,7 +176,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.LineLoadOptions.endConnectedShape
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#endConnectedShape:member'
     summary: |-
       Represents the shape to which the end of the specified line is attached.
 
@@ -190,8 +190,8 @@ items:
       content: 'endConnectedShape?: Excel.Interfaces.ShapeLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ShapeLoadOptions
-  - uid: excel.Excel.Interfaces.LineLoadOptions.endConnectedSite
+          - 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#endConnectedSite:member'
     summary: >-
       Represents the connection site to which the end of a connector is connected. Read-only. Returns null when the end
       of the line is not attached to any shape.
@@ -208,7 +208,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.LineLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#id:member'
     summary: |-
       Represents the shape identifier. Read-only.
 
@@ -223,7 +223,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.LineLoadOptions.isBeginConnected
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#isBeginConnected:member'
     summary: |-
       Specifies whether or not the beginning of the specified line is connected to a shape. Read-only.
 
@@ -238,7 +238,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.LineLoadOptions.isEndConnected
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#isEndConnected:member'
     summary: |-
       Specifies whether or not the end of the specified line is connected to a shape. Read-only.
 
@@ -253,7 +253,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.LineLoadOptions.shape
+  - uid: 'excel!Excel.Interfaces.LineLoadOptions#shape:member'
     summary: |-
       Returns the Shape object associated with the line.
 
@@ -267,4 +267,7 @@ items:
       content: 'shape?: Excel.Interfaces.ShapeLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ShapeLoadOptions
+          - 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
+    name: Excel.Interfaces.ShapeLoadOptions

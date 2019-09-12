@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.PrintMarginUnit
+  - uid: 'excel!Excel.PrintMarginUnit:enum'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.PrintMarginUnit
     fullName: Excel.PrintMarginUnit
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.PrintMarginUnit.centimeters
-      - excel.Excel.PrintMarginUnit.inches
-      - excel.Excel.PrintMarginUnit.points
-  - uid: excel.Excel.PrintMarginUnit.centimeters
+      - 'excel!Excel.PrintMarginUnit.centimeters:member'
+      - 'excel!Excel.PrintMarginUnit.inches:member'
+      - 'excel!Excel.PrintMarginUnit.points:member'
+  - uid: 'excel!Excel.PrintMarginUnit.centimeters:member'
     summary: Assign the page margins in centimeters.
     name: centimeters
     fullName: centimeters
@@ -20,7 +20,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Centimeters"'
-  - uid: excel.Excel.PrintMarginUnit.inches
+  - uid: 'excel!Excel.PrintMarginUnit.inches:member'
     summary: Assign the page margins in inches.
     name: inches
     fullName: inches
@@ -28,7 +28,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Inches"'
-  - uid: excel.Excel.PrintMarginUnit.points
+  - uid: 'excel!Excel.PrintMarginUnit.points:member'
     summary: Assign the page margins in points. A point is 1/72 of an inch.
     name: points
     fullName: points

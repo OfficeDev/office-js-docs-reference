@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.ShapeViewLoadOptions
+  - uid: 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'
     summary: |-
       Represents the ShapeView class.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.ShapeViewLoadOptions.$all
-      - visio.Visio.Interfaces.ShapeViewLoadOptions.highlight
-  - uid: visio.Visio.Interfaces.ShapeViewLoadOptions.$all
+      - 'visio!Visio.Interfaces.ShapeViewLoadOptions#$all:member'
+      - 'visio!Visio.Interfaces.ShapeViewLoadOptions#highlight:member'
+  - uid: 'visio!Visio.Interfaces.ShapeViewLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -25,7 +25,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.ShapeViewLoadOptions.highlight
+  - uid: 'visio!Visio.Interfaces.ShapeViewLoadOptions#highlight:member'
     summary: |-
       Represents the highlight around the shape.
 

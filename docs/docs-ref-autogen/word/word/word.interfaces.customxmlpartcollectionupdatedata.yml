@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.CustomXmlPartCollectionUpdateData
+  - uid: 'word!Word.Interfaces.CustomXmlPartCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the CustomXmlPartCollection object, for use in "customXmlPartCollection.set(<!--
       -->{ ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.CustomXmlPartCollectionUpdateData.items
-  - uid: word.Word.Interfaces.CustomXmlPartCollectionUpdateData.items
+      - 'word!Word.Interfaces.CustomXmlPartCollectionUpdateData#items:member'
+  - uid: 'word!Word.Interfaces.CustomXmlPartCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: Word.Interfaces.CustomXmlPartData[];'
       return:
         type:
-          - 'Word.Interfaces.CustomXmlPartData[]'
+          - 'word!Word.Interfaces.CustomXmlPartCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'word!Word.Interfaces.CustomXmlPartCollectionUpdateData#items~0:complex'
+    name: 'Word.Interfaces.CustomXmlPartData[]'
+    fullName: 'Word.Interfaces.CustomXmlPartData[]'
+    spec.typeScript:
+      - uid: 'word!Word.Interfaces.CustomXmlPartData:interface'
+        name: Word.Interfaces.CustomXmlPartData
+        fullName: Word.Interfaces.CustomXmlPartData
+      - name: '[]'
+        fullName: '[]'

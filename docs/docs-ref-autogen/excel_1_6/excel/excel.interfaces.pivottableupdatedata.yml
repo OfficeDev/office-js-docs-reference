@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotTableUpdateData
+  - uid: 'excel!Excel.Interfaces.PivotTableUpdateData:interface'
     summary: 'An interface for updating data on the PivotTable object, for use in "pivotTable.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.PivotTableUpdateData
     fullName: Excel.Interfaces.PivotTableUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotTableUpdateData.name
-  - uid: excel.Excel.Interfaces.PivotTableUpdateData.name
+      - 'excel!Excel.Interfaces.PivotTableUpdateData#name:member'
+  - uid: 'excel!Excel.Interfaces.PivotTableUpdateData#name:member'
     summary: |-
       Name of the PivotTable.
 

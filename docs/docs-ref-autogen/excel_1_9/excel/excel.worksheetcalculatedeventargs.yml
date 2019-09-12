@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.WorksheetCalculatedEventArgs
+  - uid: 'excel!Excel.WorksheetCalculatedEventArgs:interface'
     summary: |-
       Provides information about the worksheet that raised the Calculated event.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.WorksheetCalculatedEventArgs.type
-      - excel.Excel.WorksheetCalculatedEventArgs.worksheetId
-  - uid: excel.Excel.WorksheetCalculatedEventArgs.type
+      - 'excel!Excel.WorksheetCalculatedEventArgs#type:member'
+      - 'excel!Excel.WorksheetCalculatedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.WorksheetCalculatedEventArgs#type:member'
     summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - '"WorksheetCalculated"'
-  - uid: excel.Excel.WorksheetCalculatedEventArgs.worksheetId
+  - uid: 'excel!Excel.WorksheetCalculatedEventArgs#worksheetId:member'
     summary: |-
       Gets the id of the worksheet that is calculated.
 

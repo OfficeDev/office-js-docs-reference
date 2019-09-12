@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ShapeFillData
+  - uid: 'excel!Excel.Interfaces.ShapeFillData:interface'
     summary: An interface describing the data returned by calling "shapeFill.toJSON()".
     name: Excel.Interfaces.ShapeFillData
     fullName: Excel.Interfaces.ShapeFillData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ShapeFillData.foregroundColor
-      - excel.Excel.Interfaces.ShapeFillData.transparency
-      - excel.Excel.Interfaces.ShapeFillData.type
-  - uid: excel.Excel.Interfaces.ShapeFillData.foregroundColor
+      - 'excel!Excel.Interfaces.ShapeFillData#foregroundColor:member'
+      - 'excel!Excel.Interfaces.ShapeFillData#transparency:member'
+      - 'excel!Excel.Interfaces.ShapeFillData#type:member'
+  - uid: 'excel!Excel.Interfaces.ShapeFillData#foregroundColor:member'
     summary: >-
       Represents the shape fill foreground color in HTML color format, of the form \#RRGGBB (e.g. "FFA500") or as a
       named HTML color (e.g. "orange")
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ShapeFillData.transparency
+  - uid: 'excel!Excel.Interfaces.ShapeFillData#transparency:member'
     summary: >-
       Returns or sets the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns
       null if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with
@@ -47,7 +47,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ShapeFillData.type
+  - uid: 'excel!Excel.Interfaces.ShapeFillData#type:member'
     summary: |-
       Returns the fill type of the shape. Read-only. See Excel.ShapeFillType for details.
 
@@ -61,4 +61,14 @@ items:
       content: 'type?: Excel.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" | "Mixed";'
       return:
         type:
-          - Excel.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" | "Mixed"
+          - 'excel!Excel.Interfaces.ShapeFillData#type~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.ShapeFillData#type~0:complex'
+    name: Excel.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" | "Mixed"
+    fullName: Excel.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" | "Mixed"
+    spec.typeScript:
+      - uid: 'excel!Excel.ShapeFillType:enum'
+        name: Excel.ShapeFillType
+        fullName: Excel.ShapeFillType
+      - name: ' | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" | "Mixed"'
+        fullName: ' | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" | "Mixed"'

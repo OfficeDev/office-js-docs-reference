@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartLegendEntryUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartLegendEntry object, for use in "chartLegendEntry.set(<!-- -->{ ...
       }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartLegendEntryUpdateData.visible
-  - uid: excel.Excel.Interfaces.ChartLegendEntryUpdateData.visible
+      - 'excel!Excel.Interfaces.ChartLegendEntryUpdateData#visible:member'
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryUpdateData#visible:member'
     summary: |-
       Represents the visible of a chart legend entry.
 

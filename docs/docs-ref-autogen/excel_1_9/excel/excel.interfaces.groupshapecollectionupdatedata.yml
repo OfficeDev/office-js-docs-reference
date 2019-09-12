@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the GroupShapeCollection object, for use in "groupShapeCollection.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.GroupShapeCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.GroupShapeCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:
@@ -22,4 +22,14 @@ items:
       content: 'items?: Excel.Interfaces.ShapeData[];'
       return:
         type:
-          - 'Excel.Interfaces.ShapeData[]'
+          - 'excel!Excel.Interfaces.GroupShapeCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.ShapeData[]'
+    fullName: 'Excel.Interfaces.ShapeData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ShapeData:interface'
+        name: Excel.Interfaces.ShapeData
+        fullName: Excel.Interfaces.ShapeData
+      - name: '[]'
+        fullName: '[]'

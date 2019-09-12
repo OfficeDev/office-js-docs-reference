@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.TableStyle
+  - uid: 'excel!Excel.TableStyle:class'
     summary: >-
       Represents a TableStyle, which defines the style elements by region of the Table.
 
@@ -14,21 +14,21 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: excel
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
-      - excel.Excel.TableStyle.context
-      - excel.Excel.TableStyle.delete
-      - excel.Excel.TableStyle.duplicate
-      - excel.Excel.TableStyle.load
-      - excel.Excel.TableStyle.load_1
-      - excel.Excel.TableStyle.load_2
-      - excel.Excel.TableStyle.name
-      - excel.Excel.TableStyle.readOnly
-      - excel.Excel.TableStyle.set
-      - excel.Excel.TableStyle.set_1
-      - excel.Excel.TableStyle.toJSON
-  - uid: excel.Excel.TableStyle.context
+      - 'excel!Excel.TableStyle#context:member'
+      - 'excel!Excel.TableStyle#delete:member(1)'
+      - 'excel!Excel.TableStyle#duplicate:member(1)'
+      - 'excel!Excel.TableStyle#load:member(1)'
+      - 'excel!Excel.TableStyle#load:member(2)'
+      - 'excel!Excel.TableStyle#load:member(3)'
+      - 'excel!Excel.TableStyle#name:member'
+      - 'excel!Excel.TableStyle#readOnly:member'
+      - 'excel!Excel.TableStyle#set:member(1)'
+      - 'excel!Excel.TableStyle#set:member(2)'
+      - 'excel!Excel.TableStyle#toJSON:member(1)'
+  - uid: 'excel!Excel.TableStyle#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -42,8 +42,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.TableStyle.delete
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TableStyle#delete:member(1)'
     summary: >-
       Deletes the TableStyle.
 
@@ -62,7 +62,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.TableStyle.duplicate
+  - uid: 'excel!Excel.TableStyle#duplicate:member(1)'
     summary: >-
       Creates a duplicate of this TableStyle with copies of all the style elements.
 
@@ -79,9 +79,9 @@ items:
       content: 'duplicate(): Excel.TableStyle;'
       return:
         type:
-          - excel.Excel.TableStyle
+          - 'excel!Excel.TableStyle:class'
         description: The new TableStyle object that has been duplicated from this TableStyle.
-  - uid: excel.Excel.TableStyle.load
+  - uid: 'excel!Excel.TableStyle#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -113,14 +113,14 @@ items:
       content: 'load(option?: Excel.Interfaces.TableStyleLoadOptions): Excel.TableStyle;'
       return:
         type:
-          - excel.Excel.TableStyle
+          - 'excel!Excel.TableStyle:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.TableStyleLoadOptions
-  - uid: excel.Excel.TableStyle.load_1
+            - 'excel!Excel.Interfaces.TableStyleLoadOptions:interface'
+  - uid: 'excel!Excel.TableStyle#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -134,14 +134,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.TableStyle;'
       return:
         type:
-          - excel.Excel.TableStyle
+          - 'excel!Excel.TableStyle:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.TableStyle.load_2
+  - uid: 'excel!Excel.TableStyle#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -155,7 +155,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TableStyle;'
       return:
         type:
-          - excel.Excel.TableStyle
+          - 'excel!Excel.TableStyle:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -164,7 +164,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.TableStyle.name
+  - uid: 'excel!Excel.TableStyle#name:member'
     summary: >-
       Gets the name of the TableStyle.
 
@@ -182,7 +182,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.TableStyle.readOnly
+  - uid: 'excel!Excel.TableStyle#readOnly:member'
     summary: >-
       Specifies whether this TableStyle object is read-only. Read-only.
 
@@ -200,7 +200,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.TableStyle.set
+  - uid: 'excel!Excel.TableStyle#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -226,12 +226,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.TableStyleUpdateData
+            - 'excel!Excel.Interfaces.TableStyleUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.TableStyle.set_1
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.TableStyle#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     isPreview: true
     name: set(properties)
@@ -249,8 +249,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.TableStyle
-  - uid: excel.Excel.TableStyle.toJSON
+            - 'excel!Excel.TableStyle:class'
+  - uid: 'excel!Excel.TableStyle#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -267,5 +267,20 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableStyleData;'
       return:
         type:
-          - excel.Excel.Interfaces.TableStyleData
+          - 'excel!Excel.Interfaces.TableStyleData:interface'
         description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.TableStyle:class'
+    name: Excel.TableStyle
+  - uid: 'excel!Excel.Interfaces.TableStyleLoadOptions:interface'
+    name: Excel.Interfaces.TableStyleLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableStyleUpdateData:interface'
+    name: Interfaces.TableStyleUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.TableStyleData:interface'
+    name: Excel.Interfaces.TableStyleData

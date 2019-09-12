@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions:interface'
     summary: |-
       Represents a series in a chart.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.$all
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.format
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.name
-      - excel.Excel.Interfaces.ChartSeriesLoadOptions.points
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.ChartSeriesLoadOptions#points:member'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.format
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#format:member'
     summary: |-
       Represents the formatting of a chart series, which includes fill and line formatting.
 
@@ -41,8 +41,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartSeriesFormatLoadOptions
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.name
+          - 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#name:member'
     summary: |-
       Represents the name of a series in a chart.
 
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesLoadOptions.points
+  - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#points:member'
     summary: |-
       Represents a collection of all points in the series.
 
@@ -71,4 +71,9 @@ items:
       content: 'points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPointsCollectionLoadOptions
+          - 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartSeriesFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface'
+    name: Excel.Interfaces.ChartPointsCollectionLoadOptions

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.NamedItemLoadOptions
+  - uid: 'excel!Excel.Interfaces.NamedItemLoadOptions:interface'
     summary: >-
       Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type
       below), range object, or a reference to a range. This object can be used to obtain range object associated with
@@ -13,14 +13,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.NamedItemLoadOptions.$all
-      - excel.Excel.Interfaces.NamedItemLoadOptions.name
-      - excel.Excel.Interfaces.NamedItemLoadOptions.type
-      - excel.Excel.Interfaces.NamedItemLoadOptions.value
-      - excel.Excel.Interfaces.NamedItemLoadOptions.visible
-  - uid: excel.Excel.Interfaces.NamedItemLoadOptions.$all
+      - 'excel!Excel.Interfaces.NamedItemLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.NamedItemLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.NamedItemLoadOptions#type:member'
+      - 'excel!Excel.Interfaces.NamedItemLoadOptions#value:member'
+      - 'excel!Excel.Interfaces.NamedItemLoadOptions#visible:member'
+  - uid: 'excel!Excel.Interfaces.NamedItemLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.NamedItemLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.NamedItemLoadOptions#name:member'
     summary: |-
       The name of the object. Read-only.
 
@@ -46,7 +46,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.NamedItemLoadOptions.type
+  - uid: 'excel!Excel.Interfaces.NamedItemLoadOptions#type:member'
     summary: >-
       Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
 
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.NamedItemLoadOptions.value
+  - uid: 'excel!Excel.Interfaces.NamedItemLoadOptions#value:member'
     summary: |-
       Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
 
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.NamedItemLoadOptions.visible
+  - uid: 'excel!Excel.Interfaces.NamedItemLoadOptions#visible:member'
     summary: |-
       Specifies whether the object is visible or not.
 

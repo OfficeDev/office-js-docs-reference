@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.TableRow
+  - uid: 'word!Word.TableRow:class'
     summary: |-
       Represents a row in a Word document.
 
@@ -11,47 +11,47 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
-    package: word
+      - 'word!OfficeExtension.ClientObject:class'
+    package: word!
     children:
-      - word.Word.TableRow.cellCount
-      - word.Word.TableRow.cells
-      - word.Word.TableRow.clear
-      - word.Word.TableRow.context
-      - word.Word.TableRow.delete
-      - word.Word.TableRow.font
-      - word.Word.TableRow.getBorder
-      - word.Word.TableRow.getBorder_1
-      - word.Word.TableRow.getCellPadding
-      - word.Word.TableRow.getCellPadding_1
-      - word.Word.TableRow.getNext
-      - word.Word.TableRow.getNextOrNullObject
-      - word.Word.TableRow.horizontalAlignment
-      - word.Word.TableRow.insertContentControl
-      - word.Word.TableRow.insertRows
-      - word.Word.TableRow.insertRows_1
-      - word.Word.TableRow.isHeader
-      - word.Word.TableRow.load
-      - word.Word.TableRow.load_1
-      - word.Word.TableRow.load_2
-      - word.Word.TableRow.merge
-      - word.Word.TableRow.parentTable
-      - word.Word.TableRow.preferredHeight
-      - word.Word.TableRow.rowIndex
-      - word.Word.TableRow.search
-      - word.Word.TableRow.select
-      - word.Word.TableRow.select_1
-      - word.Word.TableRow.set
-      - word.Word.TableRow.set_1
-      - word.Word.TableRow.setCellPadding
-      - word.Word.TableRow.setCellPadding_1
-      - word.Word.TableRow.shadingColor
-      - word.Word.TableRow.toJSON
-      - word.Word.TableRow.track
-      - word.Word.TableRow.untrack
-      - word.Word.TableRow.values
-      - word.Word.TableRow.verticalAlignment
-  - uid: word.Word.TableRow.cellCount
+      - 'word!Word.TableRow#cellCount:member'
+      - 'word!Word.TableRow#cells:member'
+      - 'word!Word.TableRow#clear:member(1)'
+      - 'word!Word.TableRow#context:member'
+      - 'word!Word.TableRow#delete:member(1)'
+      - 'word!Word.TableRow#font:member'
+      - 'word!Word.TableRow#getBorder:member(1)'
+      - 'word!Word.TableRow#getBorder:member(2)'
+      - 'word!Word.TableRow#getCellPadding:member(1)'
+      - 'word!Word.TableRow#getCellPadding:member(2)'
+      - 'word!Word.TableRow#getNext:member(1)'
+      - 'word!Word.TableRow#getNextOrNullObject:member(1)'
+      - 'word!Word.TableRow#horizontalAlignment:member'
+      - 'word!Word.TableRow#insertContentControl:member(1)'
+      - 'word!Word.TableRow#insertRows:member(1)'
+      - 'word!Word.TableRow#insertRows:member(2)'
+      - 'word!Word.TableRow#isHeader:member'
+      - 'word!Word.TableRow#load:member(1)'
+      - 'word!Word.TableRow#load:member(2)'
+      - 'word!Word.TableRow#load:member(3)'
+      - 'word!Word.TableRow#merge:member(1)'
+      - 'word!Word.TableRow#parentTable:member'
+      - 'word!Word.TableRow#preferredHeight:member'
+      - 'word!Word.TableRow#rowIndex:member'
+      - 'word!Word.TableRow#search:member(1)'
+      - 'word!Word.TableRow#select:member(1)'
+      - 'word!Word.TableRow#select:member(2)'
+      - 'word!Word.TableRow#set:member(1)'
+      - 'word!Word.TableRow#set:member(2)'
+      - 'word!Word.TableRow#setCellPadding:member(1)'
+      - 'word!Word.TableRow#setCellPadding:member(2)'
+      - 'word!Word.TableRow#shadingColor:member'
+      - 'word!Word.TableRow#toJSON:member(1)'
+      - 'word!Word.TableRow#track:member(1)'
+      - 'word!Word.TableRow#untrack:member(1)'
+      - 'word!Word.TableRow#values:member'
+      - 'word!Word.TableRow#verticalAlignment:member'
+  - uid: 'word!Word.TableRow#cellCount:member'
     summary: |-
       Gets the number of cells in the row. Read-only.
 
@@ -66,7 +66,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.TableRow.cells
+  - uid: 'word!Word.TableRow#cells:member'
     summary: |-
       Gets cells. Read-only.
 
@@ -80,8 +80,8 @@ items:
       content: 'readonly cells: Word.TableCellCollection;'
       return:
         type:
-          - word.Word.TableCellCollection
-  - uid: word.Word.TableRow.clear
+          - 'word!Word.TableCellCollection:class'
+  - uid: 'word!Word.TableRow#clear:member(1)'
     summary: |-
       Clears the contents of the row.
 
@@ -97,7 +97,7 @@ items:
         type:
           - void
         description: ''
-  - uid: word.Word.TableRow.context
+  - uid: 'word!Word.TableRow#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -110,8 +110,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.TableRow.delete
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.TableRow#delete:member(1)'
     summary: |-
       Deletes the entire row.
 
@@ -127,7 +127,7 @@ items:
         type:
           - void
         description: ''
-  - uid: word.Word.TableRow.font
+  - uid: 'word!Word.TableRow#font:member'
     summary: |-
       Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
 
@@ -141,8 +141,8 @@ items:
       content: 'readonly font: Word.Font;'
       return:
         type:
-          - word.Word.Font
-  - uid: word.Word.TableRow.getBorder
+          - 'word!Word.Font:class'
+  - uid: 'word!Word.TableRow#getBorder:member(1)'
     summary: |-
       Gets the border style of the cells in the row.
 
@@ -156,14 +156,14 @@ items:
       content: 'getBorder(borderLocation: Word.BorderLocation): Word.TableBorder;'
       return:
         type:
-          - word.Word.TableBorder
+          - 'word!Word.TableBorder:class'
         description: ''
       parameters:
         - id: borderLocation
           description: Required. The border location.
           type:
-            - word.Word.BorderLocation
-  - uid: word.Word.TableRow.getBorder_1
+            - 'word!Word.BorderLocation:enum'
+  - uid: 'word!Word.TableRow#getBorder:member(2)'
     summary: |-
       Gets the border style of the cells in the row.
 
@@ -179,14 +179,14 @@ items:
         "Inside" | "Outside" | "All"): Word.TableBorder;
       return:
         type:
-          - word.Word.TableBorder
+          - 'word!Word.TableBorder:class'
         description: ''
       parameters:
         - id: borderLocationString
           description: Required. The border location.
           type:
             - '"Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"'
-  - uid: word.Word.TableRow.getCellPadding
+  - uid: 'word!Word.TableRow#getCellPadding:member(1)'
     summary: |-
       Gets cell padding in points.
 
@@ -200,14 +200,14 @@ items:
       content: 'getCellPadding(cellPaddingLocation: Word.CellPaddingLocation): OfficeExtension.ClientResult<number>;'
       return:
         type:
-          - OfficeExtension.ClientResult<number>
+          - 'word!Word.TableRow#getCellPadding~0:complex'
         description: ''
       parameters:
         - id: cellPaddingLocation
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
-            - word.Word.CellPaddingLocation
-  - uid: word.Word.TableRow.getCellPadding_1
+            - 'word!Word.CellPaddingLocation:enum'
+  - uid: 'word!Word.TableRow#getCellPadding:member(2)'
     summary: |-
       Gets cell padding in points.
 
@@ -223,14 +223,14 @@ items:
         OfficeExtension.ClientResult<number>;
       return:
         type:
-          - OfficeExtension.ClientResult<number>
+          - 'word!Word.TableRow#getCellPadding~1:complex'
         description: ''
       parameters:
         - id: cellPaddingLocationString
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
             - '"Top" | "Left" | "Bottom" | "Right"'
-  - uid: word.Word.TableRow.getNext
+  - uid: 'word!Word.TableRow#getNext:member(1)'
     summary: |-
       Gets the next row. Throws if this row is the last one.
 
@@ -244,9 +244,9 @@ items:
       content: 'getNext(): Word.TableRow;'
       return:
         type:
-          - word.Word.TableRow
+          - 'word!Word.TableRow:class'
         description: ''
-  - uid: word.Word.TableRow.getNextOrNullObject
+  - uid: 'word!Word.TableRow#getNextOrNullObject:member(1)'
     summary: |-
       Gets the next row. Returns a null object if this row is the last one.
 
@@ -260,9 +260,9 @@ items:
       content: 'getNextOrNullObject(): Word.TableRow;'
       return:
         type:
-          - word.Word.TableRow
+          - 'word!Word.TableRow:class'
         description: ''
-  - uid: word.Word.TableRow.horizontalAlignment
+  - uid: 'word!Word.TableRow#horizontalAlignment:member'
     summary: >-
       Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or
       'Justified'.
@@ -278,8 +278,8 @@ items:
       content: 'horizontalAlignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
       return:
         type:
-          - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
-  - uid: word.Word.TableRow.insertContentControl
+          - 'word!Word.TableRow#horizontalAlignment~0:complex'
+  - uid: 'word!Word.TableRow#insertContentControl:member(1)'
     summary: >-
       Inserts a content control on the row.
 
@@ -296,9 +296,9 @@ items:
       content: 'insertContentControl(): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
+          - 'word!Word.ContentControl:class'
         description: ''
-  - uid: word.Word.TableRow.insertRows
+  - uid: 'word!Word.TableRow#insertRows:member(1)'
     summary: |-
       Inserts rows using this row as a template. If values are specified, inserts the values into the new rows.
 
@@ -312,13 +312,13 @@ items:
       content: 'insertRows(insertLocation: Word.InsertLocation, rowCount: number, values?: string[][]): Word.TableRowCollection;'
       return:
         type:
-          - word.Word.TableRowCollection
+          - 'word!Word.TableRowCollection:class'
         description: ''
       parameters:
         - id: insertLocation
           description: 'Required. Where the new rows should be inserted, relative to the current row. It can be ''Before'' or ''After''.'
           type:
-            - word.Word.InsertLocation
+            - 'word!Word.InsertLocation:enum'
         - id: rowCount
           description: Required. Number of rows to add
           type:
@@ -329,7 +329,7 @@ items:
             not exceed the number of cells in the existing row.
           type:
             - 'string[][]'
-  - uid: word.Word.TableRow.insertRows_1
+  - uid: 'word!Word.TableRow#insertRows:member(2)'
     summary: |-
       Inserts rows using this row as a template. If values are specified, inserts the values into the new rows.
 
@@ -345,7 +345,7 @@ items:
         string[][]): Word.TableRowCollection;
       return:
         type:
-          - word.Word.TableRowCollection
+          - 'word!Word.TableRowCollection:class'
         description: ''
       parameters:
         - id: insertLocationString
@@ -362,7 +362,7 @@ items:
             not exceed the number of cells in the existing row.
           type:
             - 'string[][]'
-  - uid: word.Word.TableRow.isHeader
+  - uid: 'word!Word.TableRow#isHeader:member'
     summary: >-
       Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the
       Table object.
@@ -379,7 +379,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.TableRow.load
+  - uid: 'word!Word.TableRow#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -410,14 +410,14 @@ items:
       content: 'load(option?: Word.Interfaces.TableRowLoadOptions): Word.TableRow;'
       return:
         type:
-          - word.Word.TableRow
+          - 'word!Word.TableRow:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.TableRowLoadOptions
-  - uid: word.Word.TableRow.load_1
+            - 'word!Word.Interfaces.TableRowLoadOptions:interface'
+  - uid: 'word!Word.TableRow#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -430,14 +430,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.TableRow;'
       return:
         type:
-          - word.Word.TableRow
+          - 'word!Word.TableRow:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.TableRow.load_2
+  - uid: 'word!Word.TableRow#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -450,7 +450,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.TableRow;'
       return:
         type:
-          - word.Word.TableRow
+          - 'word!Word.TableRow:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -459,7 +459,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: word.Word.TableRow.merge
+  - uid: 'word!Word.TableRow#merge:member(1)'
     summary: >-
       Merges the row into one cell.
 
@@ -476,9 +476,9 @@ items:
       content: 'merge(): Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
+          - 'word!Word.TableCell:class'
         description: ''
-  - uid: word.Word.TableRow.parentTable
+  - uid: 'word!Word.TableRow#parentTable:member'
     summary: |-
       Gets parent table. Read-only.
 
@@ -492,8 +492,8 @@ items:
       content: 'readonly parentTable: Word.Table;'
       return:
         type:
-          - word.Word.Table
-  - uid: word.Word.TableRow.preferredHeight
+          - 'word!Word.Table:class'
+  - uid: 'word!Word.TableRow#preferredHeight:member'
     summary: |-
       Gets and sets the preferred height of the row in points.
 
@@ -508,7 +508,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.TableRow.rowIndex
+  - uid: 'word!Word.TableRow#rowIndex:member'
     summary: |-
       Gets the index of the row in its parent table. Read-only.
 
@@ -523,7 +523,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.TableRow.search
+  - uid: 'word!Word.TableRow#search:member(1)'
     summary: >-
       Performs a search with the specified SearchOptions on the scope of the row. The search results are a collection of
       range objects.
@@ -548,7 +548,7 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - 'word!Word.RangeCollection:class'
         description: ''
       parameters:
         - id: searchText
@@ -558,17 +558,8 @@ items:
         - id: searchOptions
           description: Optional. Options for the search.
           type:
-            - |-
-              Word.SearchOptions | {
-                          ignorePunct?: boolean;
-                          ignoreSpace?: boolean;
-                          matchCase?: boolean;
-                          matchPrefix?: boolean;
-                          matchSuffix?: boolean;
-                          matchWholeWord?: boolean;
-                          matchWildcards?: boolean;
-                      }
-  - uid: word.Word.TableRow.select
+            - 'word!Word.TableRow#search~0:complex'
+  - uid: 'word!Word.TableRow#select:member(1)'
     summary: |-
       Selects the row and navigates the Word UI to it.
 
@@ -588,8 +579,8 @@ items:
         - id: selectionMode
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
-            - word.Word.SelectionMode
-  - uid: word.Word.TableRow.select_1
+            - 'word!Word.SelectionMode:enum'
+  - uid: 'word!Word.TableRow#select:member(2)'
     summary: |-
       Selects the row and navigates the Word UI to it.
 
@@ -610,7 +601,7 @@ items:
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - '"Select" | "Start" | "End"'
-  - uid: word.Word.TableRow.set
+  - uid: 'word!Word.TableRow#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -635,12 +626,12 @@ items:
             A JavaScript object with properties that are structured isomorphically to the properties of the object on
             which the method is called.
           type:
-            - Interfaces.TableRowUpdateData
+            - 'word!Word.Interfaces.TableRowUpdateData:interface'
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
-  - uid: word.Word.TableRow.set_1
+            - 'word!OfficeExtension.UpdateOptions:interface'
+  - uid: 'word!Word.TableRow#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -657,8 +648,8 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.TableRow
-  - uid: word.Word.TableRow.setCellPadding
+            - 'word!Word.TableRow:class'
+  - uid: 'word!Word.TableRow#setCellPadding:member(1)'
     summary: |-
       Sets cell padding in points.
 
@@ -678,12 +669,12 @@ items:
         - id: cellPaddingLocation
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
-            - word.Word.CellPaddingLocation
+            - 'word!Word.CellPaddingLocation:enum'
         - id: cellPadding
           description: Required. The cell padding.
           type:
             - number
-  - uid: word.Word.TableRow.setCellPadding_1
+  - uid: 'word!Word.TableRow#setCellPadding:member(2)'
     summary: |-
       Sets cell padding in points.
 
@@ -708,7 +699,7 @@ items:
           description: Required. The cell padding.
           type:
             - number
-  - uid: word.Word.TableRow.shadingColor
+  - uid: 'word!Word.TableRow#shadingColor:member'
     summary: |-
       Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by using the color name.
 
@@ -723,7 +714,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.TableRow.toJSON
+  - uid: 'word!Word.TableRow#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -739,9 +730,9 @@ items:
       content: 'toJSON(): Word.Interfaces.TableRowData;'
       return:
         type:
-          - word.Word.Interfaces.TableRowData
+          - 'word!Word.Interfaces.TableRowData:interface'
         description: ''
-  - uid: word.Word.TableRow.track
+  - uid: 'word!Word.TableRow#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -757,9 +748,9 @@ items:
       content: 'track(): Word.TableRow;'
       return:
         type:
-          - word.Word.TableRow
+          - 'word!Word.TableRow:class'
         description: ''
-  - uid: word.Word.TableRow.untrack
+  - uid: 'word!Word.TableRow#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -774,9 +765,9 @@ items:
       content: 'untrack(): Word.TableRow;'
       return:
         type:
-          - word.Word.TableRow
+          - 'word!Word.TableRow:class'
         description: ''
-  - uid: word.Word.TableRow.values
+  - uid: 'word!Word.TableRow#values:member'
     summary: |-
       Gets and sets the text values in the row, as a 2D Javascript array.
 
@@ -791,7 +782,7 @@ items:
       return:
         type:
           - 'string[][]'
-  - uid: word.Word.TableRow.verticalAlignment
+  - uid: 'word!Word.TableRow#verticalAlignment:member'
     summary: |-
       Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
 
@@ -805,4 +796,124 @@ items:
       content: 'verticalAlignment: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";'
       return:
         type:
-          - Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
+          - 'word!Word.TableRow#verticalAlignment~0:complex'
+references:
+  - uid: 'word!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'word!Word.TableCellCollection:class'
+    name: Word.TableCellCollection
+  - uid: 'word!Word.RequestContext:class'
+    name: RequestContext
+  - uid: 'word!Word.Font:class'
+    name: Word.Font
+  - uid: 'word!Word.TableBorder:class'
+    name: Word.TableBorder
+  - uid: 'word!Word.BorderLocation:enum'
+    name: Word.BorderLocation
+  - uid: 'word!Word.TableRow#getCellPadding~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'word!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'word!Word.CellPaddingLocation:enum'
+    name: Word.CellPaddingLocation
+  - uid: 'word!Word.TableRow#getCellPadding~1:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'word!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'word!Word.TableRow:class'
+    name: Word.TableRow
+  - uid: 'word!Word.TableRow#horizontalAlignment~0:complex'
+    name: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+    fullName: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+    spec.typeScript:
+      - uid: 'word!Word.Alignment:enum'
+        name: Word.Alignment
+        fullName: Word.Alignment
+      - name: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+        fullName: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
+  - uid: 'word!Word.ContentControl:class'
+    name: Word.ContentControl
+  - uid: 'word!Word.TableRowCollection:class'
+    name: Word.TableRowCollection
+  - uid: 'word!Word.InsertLocation:enum'
+    name: Word.InsertLocation
+  - uid: 'word!Word.Interfaces.TableRowLoadOptions:interface'
+    name: Word.Interfaces.TableRowLoadOptions
+  - uid: 'word!Word.TableCell:class'
+    name: Word.TableCell
+  - uid: 'word!Word.Table:class'
+    name: Word.Table
+  - uid: 'word!Word.RangeCollection:class'
+    name: Word.RangeCollection
+  - uid: 'word!Word.TableRow#search~0:complex'
+    name: |-
+      Word.SearchOptions | {
+                  ignorePunct?: boolean;
+                  ignoreSpace?: boolean;
+                  matchCase?: boolean;
+                  matchPrefix?: boolean;
+                  matchSuffix?: boolean;
+                  matchWholeWord?: boolean;
+                  matchWildcards?: boolean;
+              }
+    fullName: |-
+      Word.SearchOptions | {
+                  ignorePunct?: boolean;
+                  ignoreSpace?: boolean;
+                  matchCase?: boolean;
+                  matchPrefix?: boolean;
+                  matchSuffix?: boolean;
+                  matchWholeWord?: boolean;
+                  matchWildcards?: boolean;
+              }
+    spec.typeScript:
+      - uid: 'word!Word.SearchOptions:class'
+        name: Word.SearchOptions
+        fullName: Word.SearchOptions
+      - name: |2-
+           | {
+                      ignorePunct?: boolean;
+                      ignoreSpace?: boolean;
+                      matchCase?: boolean;
+                      matchPrefix?: boolean;
+                      matchSuffix?: boolean;
+                      matchWholeWord?: boolean;
+                      matchWildcards?: boolean;
+                  }
+        fullName: |2-
+           | {
+                      ignorePunct?: boolean;
+                      ignoreSpace?: boolean;
+                      matchCase?: boolean;
+                      matchPrefix?: boolean;
+                      matchSuffix?: boolean;
+                      matchWholeWord?: boolean;
+                      matchWildcards?: boolean;
+                  }
+  - uid: 'word!Word.SelectionMode:enum'
+    name: Word.SelectionMode
+  - uid: 'word!Word.Interfaces.TableRowUpdateData:interface'
+    name: Interfaces.TableRowUpdateData
+  - uid: 'word!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'word!Word.Interfaces.TableRowData:interface'
+    name: Word.Interfaces.TableRowData
+  - uid: 'word!Word.TableRow#verticalAlignment~0:complex'
+    name: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
+    fullName: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
+    spec.typeScript:
+      - uid: 'word!Word.VerticalAlignment:enum'
+        name: Word.VerticalAlignment
+        fullName: Word.VerticalAlignment
+      - name: ' | "Mixed" | "Top" | "Center" | "Bottom"'
+        fullName: ' | "Mixed" | "Top" | "Center" | "Bottom"'

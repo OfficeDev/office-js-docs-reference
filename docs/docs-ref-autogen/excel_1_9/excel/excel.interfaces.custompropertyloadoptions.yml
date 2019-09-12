@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CustomPropertyLoadOptions
+  - uid: 'excel!Excel.Interfaces.CustomPropertyLoadOptions:interface'
     summary: |-
       Represents a custom property.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.CustomPropertyLoadOptions.$all
-      - excel.Excel.Interfaces.CustomPropertyLoadOptions.key
-      - excel.Excel.Interfaces.CustomPropertyLoadOptions.type
-      - excel.Excel.Interfaces.CustomPropertyLoadOptions.value
-  - uid: excel.Excel.Interfaces.CustomPropertyLoadOptions.$all
+      - 'excel!Excel.Interfaces.CustomPropertyLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.CustomPropertyLoadOptions#key:member'
+      - 'excel!Excel.Interfaces.CustomPropertyLoadOptions#type:member'
+      - 'excel!Excel.Interfaces.CustomPropertyLoadOptions#value:member'
+  - uid: 'excel!Excel.Interfaces.CustomPropertyLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.CustomPropertyLoadOptions.key
+  - uid: 'excel!Excel.Interfaces.CustomPropertyLoadOptions#key:member'
     summary: |-
       Gets the key of the custom property. Read only.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.CustomPropertyLoadOptions.type
+  - uid: 'excel!Excel.Interfaces.CustomPropertyLoadOptions#type:member'
     summary: |-
       Gets the value type of the custom property. Read only.
 
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.CustomPropertyLoadOptions.value
+  - uid: 'excel!Excel.Interfaces.CustomPropertyLoadOptions#value:member'
     summary: |-
       Gets or sets the value of the custom property.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
     summary: |-
       Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
 
@@ -10,24 +10,24 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.WorkbookLoadOptions.$all
-      - excel.Excel.Interfaces.WorkbookLoadOptions.application
-      - excel.Excel.Interfaces.WorkbookLoadOptions.autoSave
-      - excel.Excel.Interfaces.WorkbookLoadOptions.bindings
-      - excel.Excel.Interfaces.WorkbookLoadOptions.calculationEngineVersion
-      - excel.Excel.Interfaces.WorkbookLoadOptions.chartDataPointTrack
-      - excel.Excel.Interfaces.WorkbookLoadOptions.isDirty
-      - excel.Excel.Interfaces.WorkbookLoadOptions.name
-      - excel.Excel.Interfaces.WorkbookLoadOptions.previouslySaved
-      - excel.Excel.Interfaces.WorkbookLoadOptions.properties
-      - excel.Excel.Interfaces.WorkbookLoadOptions.protection
-      - excel.Excel.Interfaces.WorkbookLoadOptions.readOnly
-      - excel.Excel.Interfaces.WorkbookLoadOptions.tables
-      - excel.Excel.Interfaces.WorkbookLoadOptions.use1904DateSystem
-      - excel.Excel.Interfaces.WorkbookLoadOptions.usePrecisionAsDisplayed
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.$all
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#application:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#autoSave:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#bindings:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#calculationEngineVersion:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#chartDataPointTrack:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#isDirty:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#previouslySaved:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#properties:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#protection:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#readOnly:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#tables:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#use1904DateSystem:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#usePrecisionAsDisplayed:member'
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -38,7 +38,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.application
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#application:member'
     summary: |-
       Represents the Excel application instance that contains this workbook.
 
@@ -52,8 +52,8 @@ items:
       content: 'application?: Excel.Interfaces.ApplicationLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ApplicationLoadOptions
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.autoSave
+          - 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#autoSave:member'
     summary: |-
       Specifies whether or not the workbook is in autosave mode. Read-Only.
 
@@ -68,7 +68,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.bindings
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#bindings:member'
     summary: |-
       Represents a collection of bindings that are part of the workbook.
 
@@ -82,8 +82,8 @@ items:
       content: 'bindings?: Excel.Interfaces.BindingCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.BindingCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.calculationEngineVersion
+          - 'excel!Excel.Interfaces.BindingCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#calculationEngineVersion:member'
     summary: |-
       Returns a number about the version of Excel Calculation Engine. Read-Only.
 
@@ -98,7 +98,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.chartDataPointTrack
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#chartDataPointTrack:member'
     summary: >-
       True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
       charts track the index of the data points.
@@ -115,7 +115,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.isDirty
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#isDirty:member'
     summary: >-
       Specifies whether or not changes have been made since the workbook was last saved. You can set this property to
       true if you want to close a modified workbook without either saving it or being prompted to save it.
@@ -132,7 +132,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#name:member'
     summary: |-
       Gets the workbook name. Read-only.
 
@@ -147,7 +147,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.previouslySaved
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#previouslySaved:member'
     summary: |-
       Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
 
@@ -162,7 +162,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.properties
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#properties:member'
     summary: |-
       Gets the workbook properties.
 
@@ -176,8 +176,8 @@ items:
       content: 'properties?: Excel.Interfaces.DocumentPropertiesLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.DocumentPropertiesLoadOptions
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.protection
+          - 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#protection:member'
     summary: |-
       Returns workbook protection object for a workbook.
 
@@ -191,8 +191,8 @@ items:
       content: 'protection?: Excel.Interfaces.WorkbookProtectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorkbookProtectionLoadOptions
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.readOnly
+          - 'excel!Excel.Interfaces.WorkbookProtectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#readOnly:member'
     summary: |-
       True if the workbook is open in Read-only mode. Read-only.
 
@@ -207,7 +207,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.tables
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#tables:member'
     summary: |-
       Represents a collection of tables associated with the workbook.
 
@@ -221,8 +221,8 @@ items:
       content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TableCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.use1904DateSystem
+          - 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#use1904DateSystem:member'
     summary: >-
       True if the workbook uses the 1904 date system.
 
@@ -240,7 +240,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.usePrecisionAsDisplayed
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#usePrecisionAsDisplayed:member'
     summary: >-
       True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
       Data will permanently lose accuracy when switching this property from false to true.
@@ -257,3 +257,14 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
+    name: Excel.Interfaces.ApplicationLoadOptions
+  - uid: 'excel!Excel.Interfaces.BindingCollectionLoadOptions:interface'
+    name: Excel.Interfaces.BindingCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
+    name: Excel.Interfaces.DocumentPropertiesLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorkbookProtectionLoadOptions:interface'
+    name: Excel.Interfaces.WorkbookProtectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
+    name: Excel.Interfaces.TableCollectionLoadOptions
