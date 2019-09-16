@@ -94,7 +94,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: Name of the PivotTable to be retrieved.
+          description: Name of the DataPivotHierarchy to be retrieved.
           type:
             - string
   - uid: 'excel!Excel.DataPivotHierarchyCollection#getItemOrNullObject:member(1)'

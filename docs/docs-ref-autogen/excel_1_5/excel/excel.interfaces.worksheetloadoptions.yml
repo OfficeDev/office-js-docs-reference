@@ -1,8 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
-    summary: |-
-      An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
+    summary: >-
+      An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc. To learn more about the worksheet
+      object model, read [Work with worksheets using the Excel JavaScript
+      API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!-- -->.
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.WorksheetLoadOptions

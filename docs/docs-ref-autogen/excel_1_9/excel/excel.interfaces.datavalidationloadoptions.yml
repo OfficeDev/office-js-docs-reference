@@ -1,8 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions:interface'
-    summary: |-
-      Represents the data validation applied to the current range.
+    summary: >-
+      Represents the data validation applied to the current range. To learn more about the data validation object model,
+      read [Add data validation to Excel
+      ranges](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation)<!-- -->.
+
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.DataValidationLoadOptions

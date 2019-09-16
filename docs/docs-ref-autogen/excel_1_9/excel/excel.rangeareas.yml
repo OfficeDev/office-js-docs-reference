@@ -268,7 +268,7 @@ items:
   - uid: 'excel!Excel.RangeAreas#copyFrom:member(1)'
     summary: >-
       Copies cell data or formatting from the source range or RangeAreas to the current RangeAreas. The destination
-      rangeAreas can be of different size than the source range or RangeAreas. The destination will be expanded
+      rangeAreas can be a different size than the source range or RangeAreas. The destination will be expanded
       automatically if it is smaller than the source.
 
 
@@ -289,8 +289,8 @@ items:
       parameters:
         - id: sourceRange
           description: >-
-            The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, it must be in
-            the outline form which can be created by removing full rows or columns from a rectangular range.
+            The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, their form must
+            able to be created by removing full rows or columns from a rectangular range.
           type:
             - 'excel!Excel.RangeAreas#copyFrom~0:complex'
         - id: copyType
@@ -308,7 +308,7 @@ items:
   - uid: 'excel!Excel.RangeAreas#copyFrom:member(2)'
     summary: >-
       Copies cell data or formatting from the source range or RangeAreas to the current RangeAreas. The destination
-      rangeAreas can be of different size than the source range or RangeAreas. The destination will be expanded
+      rangeAreas can be a different size than the source range or RangeAreas. The destination will be expanded
       automatically if it is smaller than the source.
 
 
@@ -329,8 +329,8 @@ items:
       parameters:
         - id: sourceRange
           description: >-
-            The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, it must be in
-            the outline form which can be created by removing full rows or columns from a rectangular range.
+            The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, their form must
+            able to be created by removing full rows or columns from a rectangular range.
           type:
             - 'excel!Excel.RangeAreas#copyFrom~1:complex'
         - id: copyTypeString

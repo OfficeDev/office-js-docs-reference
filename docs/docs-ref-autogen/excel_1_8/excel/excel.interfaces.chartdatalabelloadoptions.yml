@@ -107,7 +107,7 @@ items:
   - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions#horizontalAlignment:member'
     summary: >-
       Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details. This
-      property is valid only when TextOrientation of data label is 90, -90 or 180.
+      property is valid only when TextOrientation of data label is -90, 90, or 180.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

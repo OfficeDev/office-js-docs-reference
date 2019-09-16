@@ -15143,6 +15143,27 @@
                 },
                 {
                   "kind": "EnumMember",
+                  "canonicalReference": "excel!Excel.ErrorCodes.rangeExceedsLimit:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "rangeExceedsLimit = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"RangeExceedsLimit\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "rangeExceedsLimit",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ErrorCodes.unsupportedOperation:member",
                   "docComment": "",
                   "excerptTokens": [
@@ -21404,7 +21425,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.ChartLoadOptions:interface",
-                  "docComment": "/**\n * Represents a chart object in a workbook.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents a chart object in a workbook. To learn more about the Chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -29078,7 +29099,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.RangeLoadOptions:interface",
-                  "docComment": "/**\n * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc. To learn more about how ranges are used throughout the API, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | Work with ranges using the Excel JavaScript API} and {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced | Work with ranges using the Excel JavaScript API (advanced)}.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -30634,7 +30655,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableCollectionLoadOptions#style:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleStyleDark1\" through \"TableStyleStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -31437,7 +31458,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableData#style:member",
-                      "docComment": "/**\n * Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleStyleDark1\" through \"TableStyleStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -31465,7 +31486,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.TableLoadOptions:interface",
-                  "docComment": "/**\n * Represents an Excel table.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Represents an Excel table. To learn more about the table object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -31655,7 +31676,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableLoadOptions#style:member",
-                      "docComment": "/**\n * Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleStyleDark1\" through \"TableStyleStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -32259,7 +32280,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableUpdateData#style:member",
-                      "docComment": "/**\n * Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleStyleDark1\" through \"TableStyleStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -32558,7 +32579,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.WorkbookLoadOptions:interface",
-                  "docComment": "/**\n * Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc. To learn more about the workbook object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -33173,7 +33194,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.WorksheetLoadOptions:interface",
-                  "docComment": "/**\n * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc. To learn more about the worksheet object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -39953,7 +39974,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Table#style:member",
-                  "docComment": "/**\n * Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleStyleDark1\" through \"TableStyleStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -43058,7 +43079,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.Worksheet#delete:member(1)",
-                  "docComment": "/**\n * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to \"VeryHidden\", the delete operation will fail with a GeneralException.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to \"VeryHidden\", the delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden or visible before deleting it.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

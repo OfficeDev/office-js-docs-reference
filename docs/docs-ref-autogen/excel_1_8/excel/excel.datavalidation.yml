@@ -206,10 +206,8 @@ items:
           type:
             - '{ select?: string; expand?: string; }'
   - uid: 'excel!Excel.DataValidation#prompt:member'
-    summary: >-
-      Prompt when users select a cell. The `DataValidationPrompt` object must be set as a JSON object (use `x.prompt =
-      {...}` instead of `x.prompt.message = ...`<!-- -->).
-
+    summary: |-
+      Prompt when users select a cell.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: prompt

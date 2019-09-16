@@ -1,8 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.TableLoadOptions:interface'
-    summary: |-
-      Represents an Excel table.
+    summary: >-
+      Represents an Excel table. To learn more about the table object model, read [Work with tables using the Excel
+      JavaScript API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)<!-- -->.
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.TableLoadOptions
@@ -142,9 +144,9 @@ items:
           - 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.TableLoadOptions#style:member'
     summary: >-
-      Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21,
-      TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined
-      style present in the workbook can also be specified.
+      Constant value that represents the Table style. Possible values are: "TableStyleLight1" through
+      "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through
+      "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
