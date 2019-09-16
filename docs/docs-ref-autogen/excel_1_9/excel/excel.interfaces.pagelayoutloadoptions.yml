@@ -1,7 +1,12 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.PageLayoutLoadOptions:interface'
-    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    summary: >-
+      Represents layout and print settings that are not dependent any printer-specific implementation. These settings
+      include margins, orientation, page numbering, title rows, and print area.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.PageLayoutLoadOptions
     fullName: Excel.Interfaces.PageLayoutLoadOptions
     langs:
@@ -333,8 +338,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.PageLayoutLoadOptions#zoom:member'
-    summary: |-
-      Gets or sets the worksheet's print zoom options.
+    summary: >-
+      Gets or sets the worksheet's print zoom options. The `PageLayoutZoomOptions` object must be set as a JSON object
+      (use `x.zoom = {...}` instead of `x.zoom.scale = ...`<!-- -->).
+
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: zoom

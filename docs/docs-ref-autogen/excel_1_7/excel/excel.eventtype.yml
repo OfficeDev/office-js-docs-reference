@@ -35,6 +35,7 @@ items:
       - 'excel!Excel.EventType.worksheetDeleted:member'
       - 'excel!Excel.EventType.worksheetFiltered:member'
       - 'excel!Excel.EventType.worksheetFormatChanged:member'
+      - 'excel!Excel.EventType.worksheetRowHiddenChanged:member'
       - 'excel!Excel.EventType.worksheetRowSorted:member'
       - 'excel!Excel.EventType.worksheetSelectionChanged:member'
       - 'excel!Excel.EventType.worksheetSingleClicked:member'
@@ -281,6 +282,16 @@ items:
       - typeScript
     type: field
     numericValue: '"WorksheetFormatChanged"'
+  - uid: 'excel!Excel.EventType.worksheetRowHiddenChanged:member'
+    summary: >-
+      WorksheetRowHiddenChanged represents the type of event registered on worksheet, and occurs when a row's hidden
+      state is changed.
+    name: worksheetRowHiddenChanged
+    fullName: worksheetRowHiddenChanged
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WorksheetRowHiddenChanged"'
   - uid: 'excel!Excel.EventType.worksheetRowSorted:member'
     summary: >-
       WorksheetRowSorted represents the type of event registered on worksheet, and occurs when there is a sorting on

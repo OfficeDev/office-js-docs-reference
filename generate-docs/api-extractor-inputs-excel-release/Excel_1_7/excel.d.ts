@@ -798,7 +798,7 @@ export declare namespace Excel {
     /**
      *
      * Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
-     * To learn more about the workbook object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.
+            To learn more about the workbook object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.
      *
      * [Api set: ExcelApi 1.1]
      */
@@ -1054,7 +1054,7 @@ export declare namespace Excel {
     /**
      *
      * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
-     * To learn more about the worksheet object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
+            To learn more about the worksheet object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
      *
      * [Api set: ExcelApi 1.1]
      */
@@ -1215,7 +1215,7 @@ export declare namespace Excel {
         copy(positionTypeString?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Excel.Worksheet): Excel.Worksheet;
         /**
          *
-         * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the delete operation will fail with a GeneralException.
+         * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden or visible before deleting it.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -1768,7 +1768,8 @@ export declare namespace Excel {
     /**
      *
      * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
-     * To learn more about how ranges are used throughout the API, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | Work with ranges using the Excel JavaScript API} and {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced | Work with ranges using the Excel JavaScript API (advanced)}.
+            To learn more about how ranges are used throughout the API, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | Work with ranges using the Excel JavaScript API}
+            and {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced | Work with ranges using the Excel JavaScript API (advanced)}.
      *
      * [Api set: ExcelApi 1.1]
      */
@@ -1909,9 +1910,11 @@ export declare namespace Excel {
         numberFormat: any[][];
         /**
          *
-         * Represents Excel's number format code for the given range, based on the language settings of the user.
-            When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
-            Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned text uses the locally-formatted strings based on the language specified in the system settings.
+         * Represents Excel's number format code for the given range, based on the language settings of the user.​
+            When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array.
+            If the argument is a single value, it will be applied to all cells in the range.​
+            Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
+            Any returned text uses the locally-formatted strings based on the language specified in the system settings.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -3400,7 +3403,7 @@ export declare namespace Excel {
     /**
      *
      * Represents an Excel table.
-     * To learn more about the table object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.
+            To learn more about the table object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.
      *
      * [Api set: ExcelApi 1.1]
      */
@@ -3502,7 +3505,7 @@ export declare namespace Excel {
         showTotals: boolean;
         /**
          *
-         * Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
+         * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -4703,7 +4706,7 @@ export declare namespace Excel {
     /**
      *
      * Represents a chart object in a workbook.
-     * To learn more about the Chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.
+            To learn more about the Chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.
      *
      * [Api set: ExcelApi 1.1]
      */
@@ -8645,7 +8648,7 @@ export declare namespace Excel {
     /**
      *
      * Represents an Excel PivotTable.
-     * To learn more about the PivotTable object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables | Work with PivotTables using the Excel JavaScript API}.
+            To learn more about the PivotTable object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables | Work with PivotTables using the Excel JavaScript API}.
      *
      * [Api set: ExcelApi 1.3]
      */
@@ -9151,7 +9154,7 @@ export declare namespace Excel {
     /**
      *
      * An object encapsulating a conditional format's range, format, rule, and other properties.
-     * To learn more about the conditional formatting object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting | Apply conditional formatting to Excel ranges}.
+            To learn more about the conditional formatting object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting | Apply conditional formatting to Excel ranges}.
      *
      * [Api set: ExcelApi 1.6]
      */
@@ -9424,8 +9427,8 @@ export declare namespace Excel {
         barDirection: Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft";
         /**
          *
-         * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar. 
-         * The `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of `x.lowerBoundRule.formula = ...`).
+         * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
+            The `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of `x.lowerBoundRule.formula = ...`).
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -9439,8 +9442,8 @@ export declare namespace Excel {
         showDataBarOnly: boolean;
         /**
          *
-         * The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar. 
-         * The `ConditionalDataBarRule` object must be set as a JSON object (use `x.upperBoundRule = {...}` instead of `x.upperBoundRule.formula = ...`).
+         * The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
+            The `ConditionalDataBarRule` object must be set as a JSON object (use `x.upperBoundRule = {...}` instead of `x.upperBoundRule.formula = ...`).
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -12401,7 +12404,13 @@ export declare namespace Excel {
          * WorksheetSingleClicked represents the type of event registered on worksheet, and occurs when cell is left-clicked/tapped.
          *
          */
-        worksheetSingleClicked = "WorksheetSingleClicked"
+        worksheetSingleClicked = "WorksheetSingleClicked",
+        /**
+         *
+         * WorksheetRowHiddenChanged represents the type of event registered on worksheet, and occurs when a row's hidden state is changed.
+         *
+         */
+        worksheetRowHiddenChanged = "WorksheetRowHiddenChanged"
     }
     /**
      * [Api set: ExcelApi 1.7]
@@ -16391,6 +16400,7 @@ export declare namespace Excel {
         itemNotFound = "ItemNotFound",
         nonBlankCellOffSheet = "NonBlankCellOffSheet",
         notImplemented = "NotImplemented",
+        rangeExceedsLimit = "RangeExceedsLimit",
         unsupportedOperation = "UnsupportedOperation",
         invalidOperationInCellEditMode = "InvalidOperationInCellEditMode"
     }
@@ -16549,9 +16559,11 @@ export declare namespace Excel {
             numberFormat?: any[][];
             /**
              *
-             * Represents Excel's number format code for the given range, based on the language settings of the user.
-                When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
-                Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned text uses the locally-formatted strings based on the language specified in the system settings.
+             * Represents Excel's number format code for the given range, based on the language settings of the user.​
+            When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array.
+            If the argument is a single value, it will be applied to all cells in the range.​
+            Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
+            Any returned text uses the locally-formatted strings based on the language specified in the system settings.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -16743,7 +16755,7 @@ export declare namespace Excel {
             showTotals?: boolean;
             /**
              *
-             * Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
+             * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -18552,6 +18564,7 @@ export declare namespace Excel {
             /**
              *
              * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
+            The `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of `x.lowerBoundRule.formula = ...`).
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -18566,6 +18579,7 @@ export declare namespace Excel {
             /**
              *
              * The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
+            The `ConditionalDataBarRule` object must be set as a JSON object (use `x.upperBoundRule = {...}` instead of `x.upperBoundRule.formula = ...`).
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -19538,9 +19552,11 @@ export declare namespace Excel {
             numberFormat?: any[][];
             /**
              *
-             * Represents Excel's number format code for the given range, based on the language settings of the user.
-                When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
-                Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned text uses the locally-formatted strings based on the language specified in the system settings.
+             * Represents Excel's number format code for the given range, based on the language settings of the user.​
+            When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array.
+            If the argument is a single value, it will be applied to all cells in the range.​
+            Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
+            Any returned text uses the locally-formatted strings based on the language specified in the system settings.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -19923,7 +19939,7 @@ export declare namespace Excel {
             showTotals?: boolean;
             /**
              *
-             * Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
+             * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -22016,6 +22032,7 @@ export declare namespace Excel {
             /**
              *
              * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
+            The `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of `x.lowerBoundRule.formula = ...`).
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -22030,6 +22047,7 @@ export declare namespace Excel {
             /**
              *
              * The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
+            The `ConditionalDataBarRule` object must be set as a JSON object (use `x.upperBoundRule = {...}` instead of `x.upperBoundRule.formula = ...`).
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -22719,6 +22737,7 @@ export declare namespace Excel {
         /**
          *
          * Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
+            To learn more about the workbook object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -22793,6 +22812,7 @@ export declare namespace Excel {
         /**
          *
          * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
+            To learn more about the worksheet object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -22990,6 +23010,8 @@ export declare namespace Excel {
         /**
          *
          * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
+            To learn more about how ranges are used throughout the API, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | Work with ranges using the Excel JavaScript API}
+            and {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced | Work with ranges using the Excel JavaScript API (advanced)}.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -23115,9 +23137,11 @@ export declare namespace Excel {
             numberFormat?: boolean;
             /**
              *
-             * Represents Excel's number format code for the given range, based on the language settings of the user.
-                When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
-                Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned text uses the locally-formatted strings based on the language specified in the system settings.
+             * Represents Excel's number format code for the given range, based on the language settings of the user.​
+            When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array.
+            If the argument is a single value, it will be applied to all cells in the range.​
+            Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
+            Any returned text uses the locally-formatted strings based on the language specified in the system settings.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -23724,7 +23748,7 @@ export declare namespace Excel {
             showTotals?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
+             * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -23734,6 +23758,7 @@ export declare namespace Excel {
         /**
          *
          * Represents an Excel table.
+            To learn more about the table object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -23834,7 +23859,7 @@ export declare namespace Excel {
             showTotals?: boolean;
             /**
              *
-             * Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
+             * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -24391,6 +24416,7 @@ export declare namespace Excel {
         /**
          *
          * Represents a chart object in a workbook.
+            To learn more about the Chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -26217,6 +26243,7 @@ export declare namespace Excel {
         /**
          *
          * Represents an Excel PivotTable.
+            To learn more about the PivotTable object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables | Work with PivotTables using the Excel JavaScript API}.
          *
          * [Api set: ExcelApi 1.3]
          */
@@ -26569,6 +26596,7 @@ export declare namespace Excel {
         /**
          *
          * An object encapsulating a conditional format's range, format, rule, and other properties.
+            To learn more about the conditional formatting object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting | Apply conditional formatting to Excel ranges}.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -26773,6 +26801,7 @@ export declare namespace Excel {
             /**
              *
              * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
+            The `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of `x.lowerBoundRule.formula = ...`).
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -26787,6 +26816,7 @@ export declare namespace Excel {
             /**
              *
              * The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
+            The `ConditionalDataBarRule` object must be set as a JSON object (use `x.upperBoundRule = {...}` instead of `x.upperBoundRule.formula = ...`).
              *
              * [Api set: ExcelApi 1.6]
              */

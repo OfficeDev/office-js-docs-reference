@@ -223,8 +223,8 @@ items:
           ```
   - uid: 'excel!Excel.Workbook#getActiveChart:member(1)'
     summary: >-
-      Gets the currently active chart in the workbook. If there is no active chart, will throw exception when invoke
-      this statement
+      Gets the currently active chart in the workbook. If there is no active chart, an `ItemNotFound` exception is
+      thrown.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -241,7 +241,7 @@ items:
         description: ''
   - uid: 'excel!Excel.Workbook#getActiveChartOrNullObject:member(1)'
     summary: |-
-      Gets the currently active chart in the workbook. If there is no active chart, will return null object
+      Gets the currently active chart in the workbook. If there is no active chart, a null object is returned.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getActiveChartOrNullObject()

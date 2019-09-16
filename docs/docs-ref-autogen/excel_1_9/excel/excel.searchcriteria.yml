@@ -18,8 +18,7 @@ items:
   - uid: 'excel!Excel.SearchCriteria#completeMatch:member'
     summary: >-
       Specifies whether the match needs to be complete or partial. A complete match matches the entire contents of the
-      cell. A partial match matches a substring within the content of the cell (e.g., `cat` partially matches
-      `caterpillar` and `scatter`<!-- -->). Default is false (partial).
+      cell. Default is false (partial).
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

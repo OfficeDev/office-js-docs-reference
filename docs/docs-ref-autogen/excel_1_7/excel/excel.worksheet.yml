@@ -212,7 +212,8 @@ items:
   - uid: 'excel!Excel.Worksheet#delete:member(1)'
     summary: >-
       Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the
-      delete operation will fail with a GeneralException.
+      delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden
+      or visible before deleting it.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

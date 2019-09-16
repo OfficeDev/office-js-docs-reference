@@ -1,7 +1,12 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.PageLayout:class'
-    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    summary: >-
+      Represents layout and print settings that are not dependent any printer-specific implementation. These settings
+      include margins, orientation, page numbering, title rows, and print area.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PageLayout
     fullName: Excel.PageLayout
     langs:
