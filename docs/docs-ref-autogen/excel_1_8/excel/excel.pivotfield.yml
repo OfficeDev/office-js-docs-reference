@@ -2,7 +2,7 @@
 items:
   - uid: 'excel!Excel.PivotField:class'
     summary: |-
-      Represents a single pivot field within a PivotHierarchy.
+      Represents the Excel PivotField.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotField
@@ -58,7 +58,7 @@ items:
           - string
   - uid: 'excel!Excel.PivotField#items:member'
     summary: |-
-      Returns the PivotItems that comprise with the PivotField.
+      Returns the PivotFields associated with the PivotField.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: items

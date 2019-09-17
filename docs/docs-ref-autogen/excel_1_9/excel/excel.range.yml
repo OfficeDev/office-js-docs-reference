@@ -147,8 +147,8 @@ items:
           - string
   - uid: 'excel!Excel.Range#autoFill:member(1)'
     summary: >-
-      Fills range from the current range to the destination range using the specified AutoFill logic. The destination
-      range must extend the source either horizontally or vertically.
+      Fills range from the current range to the destination range. The destination range must extend the source either
+      horizontally or vertically.
 
 
       For more information, read [Use AutoFill and Flash
@@ -170,7 +170,7 @@ items:
         description: ''
       parameters:
         - id: destinationRange
-          description: The destination range to fill. Discontiguous ranges are not supported.
+          description: The destination range to autofill. Discontiguous ranges are not supported.
           type:
             - 'excel!Excel.Range#autoFill~0:complex'
         - id: autoFillType
@@ -181,8 +181,8 @@ items:
             - 'excel!Excel.AutoFillType:enum'
   - uid: 'excel!Excel.Range#autoFill:member(2)'
     summary: >-
-      Fills range from the current range to the destination range using the specified AutoFill logic. The destination
-      range must extend the source either horizontally or vertically.
+      Fills range from the current range to the destination range. Discontiguous ranges are not supported. The
+      destination range must extend the source either horizontally or vertically.
 
 
       For more information, read [Use AutoFill and Flash
@@ -207,7 +207,7 @@ items:
         description: ''
       parameters:
         - id: destinationRange
-          description: The destination range to fill. Discontiguous ranges are not supported.
+          description: The destination range to autofill.
           type:
             - 'excel!Excel.Range#autoFill~1:complex'
         - id: autoFillTypeString
@@ -428,7 +428,7 @@ items:
   - uid: 'excel!Excel.Range#copyFrom:member(1)'
     summary: >-
       Copies cell data or formatting from the source range or RangeAreas to the current range. The destination range can
-      be of different size than the source range or RangeAreas. The destination will be expanded automatically if it is
+      be a different size than the source range or RangeAreas. The destination will be expanded automatically if it is
       smaller than the source.
 
 
@@ -465,8 +465,8 @@ items:
       parameters:
         - id: sourceRange
           description: >-
-            The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, it must in the
-            outline form which can be created by removing full rows or columns from a rectangular range.
+            The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, their form must
+            be able to be created by removing full rows or columns from a rectangular range.
           type:
             - 'excel!Excel.Range#copyFrom~0:complex'
         - id: copyType
@@ -484,7 +484,7 @@ items:
   - uid: 'excel!Excel.Range#copyFrom:member(2)'
     summary: >-
       Copies cell data or formatting from the source range or RangeAreas to the current range. The destination range can
-      be of different size than the source range or RangeAreas. The destination will be expanded automatically if it is
+      be a different size than the source range or RangeAreas. The destination will be expanded automatically if it is
       smaller than the source.
 
 
@@ -505,8 +505,8 @@ items:
       parameters:
         - id: sourceRange
           description: >-
-            The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, it must in the
-            outline form which can be created by removing full rows or columns from a rectangular range.
+            The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, their form must
+            be able to be created by removing full rows or columns from a rectangular range.
           type:
             - 'excel!Excel.Range#copyFrom~1:complex'
         - id: copyTypeString
@@ -2375,11 +2375,11 @@ items:
           - 'any[][]'
   - uid: 'excel!Excel.Range#numberFormatLocal:member'
     summary: >-
-      Represents Excel's number format code for the given range, based on the language settings of the user. When
+      Represents Excel's number format code for the given range, based on the language settings of the user.​ When
       setting number format local to a range, the value argument can be either a single value (string) or a
-      two-dimensional array. If the argument is a single value, it will be applied to all cells in the range. Excel does
-      not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned
-      text uses the locally-formatted strings based on the language specified in the system settings.
+      two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.​ Excel
+      does not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any
+      returned text uses the locally-formatted strings based on the language specified in the system settings.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

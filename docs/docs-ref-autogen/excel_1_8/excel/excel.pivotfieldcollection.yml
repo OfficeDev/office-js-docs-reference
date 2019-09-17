@@ -2,7 +2,7 @@
 items:
   - uid: 'excel!Excel.PivotFieldCollection:class'
     summary: |-
-      A collection of PivotField objects within a PivotHierarchy.
+      Represents a collection of all the PivotFields that are part of a PivotTable's hierarchy.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotFieldCollection
@@ -71,7 +71,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: Name of the PivotTable to be retrieved.
+          description: Name of the PivotField to be retrieved.
           type:
             - string
   - uid: 'excel!Excel.PivotFieldCollection#getItemOrNullObject:member(1)'

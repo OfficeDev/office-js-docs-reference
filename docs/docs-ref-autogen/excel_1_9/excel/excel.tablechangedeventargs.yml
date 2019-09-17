@@ -56,7 +56,8 @@ items:
   - uid: 'excel!Excel.TableChangedEventArgs#details:member'
     summary: >-
       Represents the information about the change detail. This property can be retrieved when the Changed event is
-      triggered on single cell. If the Changed event is triggered on multiple cells, this property can not be retrieved.
+      triggered on a single cell. If the Changed event is triggered on multiple cells, this property cannot be
+      retrieved.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

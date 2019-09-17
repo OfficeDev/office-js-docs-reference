@@ -3,7 +3,8 @@ items:
   - uid: 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
     summary: >-
       Represents a generic shape object in the worksheet. A shape could be a geometric shape, a line, a group of shapes,
-      etc.
+      etc. To learn more about the shape object model, read [Work with shapes using the Excel JavaScript
+      API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes)<!-- -->.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

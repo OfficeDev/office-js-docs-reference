@@ -112,7 +112,7 @@ items:
   - uid: 'excel!Excel.ChartTrendlineLabel#horizontalAlignment:member'
     summary: >-
       Represents the horizontal alignment for chart trendline label. See Excel.ChartTextHorizontalAlignment for details.
-      This property is valid only when TextOrientation of trendline label is 90, -90 or 180.
+      This property is valid only when TextOrientation of trendline label is -90, 90, or 180.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
