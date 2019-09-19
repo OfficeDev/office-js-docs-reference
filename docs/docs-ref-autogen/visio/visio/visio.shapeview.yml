@@ -64,7 +64,7 @@ items:
           ```
       parameters:
         - id: OverlayType
-          description: An Overlay Type. Can be 'Text' or 'Image'.
+          description: An Overlay Type. Can be 'Text','Image' or 'HTML'.
           type:
             - 'visio!Visio.OverlayType:enum'
         - id: Content
@@ -108,7 +108,7 @@ items:
         description: ''
       parameters:
         - id: OverlayTypeString
-          description: An Overlay Type. Can be 'Text' or 'Image'.
+          description: An Overlay Type. Can be 'Text','Image' or 'HTML'.
           type:
             - '"Text" | "Image" | "Html"'
         - id: Content
