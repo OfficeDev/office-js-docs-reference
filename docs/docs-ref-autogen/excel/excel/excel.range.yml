@@ -188,7 +188,22 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+            const sheet = context.workbook.worksheets.getActiveWorksheet();
+            const sumCell = sheet.getRange("P4");
+            
+            // Copy everything. The formulas will be contextually updated based on their new locations.
+            sumCell.autoFill("P4:P7", Excel.AutoFillType.fillCopy);
+            sumCell.format.autofitColumns();
+            await context.sync();
+          });
+          ```
       parameters:
         - id: destinationRange
           description: The destination range to fill. Discontiguous ranges are not supported.
@@ -2110,7 +2125,26 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              
+              // Group the larger, main level. Note that the outline controls
+              // will be on row 10, meaning 4-9 will collapse and expand.
+              sheet.getRange("4:9").group(Excel.GroupOption.byRows);
+
+              // Group the smaller, sublevels. Note that the outline controls
+              // will be on rows 6 and 9, meaning 4-5 and 7-8 will collapse and expand.
+              sheet.getRange("4:5").group(Excel.GroupOption.byRows);
+              sheet.getRange("7:8").group(Excel.GroupOption.byRows);
+              await context.sync();
+          });
+          ```
       parameters:
         - id: groupOption
           description: >-
@@ -3312,7 +3346,24 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              
+              // This removes two levels of groups from the "A1-R10" range.
+              // Any groups at the same level on the same dimension will be removed by a single call.
+              sheet.getRange("A1:R10").ungroup(Excel.GroupOption.byRows);
+              sheet.getRange("A1:R10").ungroup(Excel.GroupOption.byRows);
+              sheet.getRange("A1:R10").ungroup(Excel.GroupOption.byColumns);
+              sheet.getRange("A1:R10").ungroup(Excel.GroupOption.byColumns);
+              await context.sync();
+          });
+          ```
       parameters:
         - id: groupOption
           description: Specifies how the range can be ungrouped by rows or columns.
