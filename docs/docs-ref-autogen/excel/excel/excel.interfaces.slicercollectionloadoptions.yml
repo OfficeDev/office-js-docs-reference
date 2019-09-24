@@ -29,6 +29,9 @@ items:
       - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#width:member'
       - 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#worksheet:member'
   - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     isPreview: true
     name: $all
     fullName: $all
@@ -60,8 +63,8 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#height:member'
     summary: >-
-      For EACH ITEM in the collection: Represents the height, in points, of the slicer. Throws an invalid argument
-      exception when set with negative value or zero as input.
+      For EACH ITEM in the collection: Represents the height, in points, of the slicer. Throws an "The argument is
+      invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -116,7 +119,8 @@ items:
   - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#left:member'
     summary: >-
       For EACH ITEM in the collection: Represents the distance, in points, from the left side of the slicer to the left
-      of the worksheet. Throws an invalid argument exception when set with negative value as input.
+      of the worksheet. Throws an "The argument is invalid or missing or has an incorrect format." exception when set
+      with negative value as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -171,7 +175,7 @@ items:
   - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#sortBy:member'
     summary: >-
       For EACH ITEM in the collection: Represents the sort order of the items in the slicer. Possible values are:
-      DataSourceOrder, Ascending, Descending.
+      "DataSourceOrder", "Ascending", "Descending".
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -210,7 +214,8 @@ items:
   - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#top:member'
     summary: >-
       For EACH ITEM in the collection: Represents the distance, in points, from the top edge of the slicer to the top of
-      the worksheet. Throws an invalid argument exception when set with negative value as input.
+      the worksheet. Throws an "The argument is invalid or missing or has an incorrect format." exception when set with
+      negative value as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -228,8 +233,8 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#width:member'
     summary: >-
-      For EACH ITEM in the collection: Represents the width, in points, of the slicer. Throws an invalid argument
-      exception when set with negative value or zero as input.
+      For EACH ITEM in the collection: Represents the width, in points, of the slicer. Throws an "The argument is
+      invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

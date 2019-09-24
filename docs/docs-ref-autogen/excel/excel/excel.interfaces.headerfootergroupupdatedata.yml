@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData:interface'
     summary: >-
-      An interface for updating data on the HeaderFooterGroup object, for use in "headerFooterGroup.set(<!-- -->{ ...
-      }<!-- -->)".
+      An interface for updating data on the HeaderFooterGroup object, for use in `headerFooterGroup.set({ ... })`<!--
+      -->.
     name: Excel.Interfaces.HeaderFooterGroupUpdateData
     fullName: Excel.Interfaces.HeaderFooterGroupUpdateData
     langs:

@@ -179,9 +179,9 @@ items:
   - uid: 'word!Word.Body#getHtml:member(1)'
     summary: >-
       Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be
-      a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML
-      for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency
-      across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
+      a close, but not exact, match for of the formatting of the document. This method does not return the exact same
+      HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact
+      fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
 
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -285,7 +285,7 @@ items:
           - 'word!Word.InlinePictureCollection:class'
   - uid: 'word!Word.Body#insertBreak:member(1)'
     summary: |-
-      Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.
+      Inserts a break at the specified location in the main document.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertBreak(breakType, insertLocation)'
@@ -337,7 +337,7 @@ items:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.Body#insertBreak:member(2)'
     summary: |-
-      Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.
+      Inserts a break at the specified location in the main document.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertBreak(breakTypeString, insertLocation)'
@@ -406,10 +406,8 @@ items:
           });
           ```
   - uid: 'word!Word.Body#insertFileFromBase64:member(1)'
-    summary: >-
-      Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or
-      'End'.
-
+    summary: |-
+      Inserts a document into the body at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertFileFromBase64(base64File, insertLocation)'
@@ -461,10 +459,8 @@ items:
           type:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.Body#insertFileFromBase64:member(2)'
-    summary: >-
-      Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or
-      'End'.
-
+    summary: |-
+      Inserts a document into the body at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertFileFromBase64(base64File, insertLocationString)'
@@ -491,7 +487,7 @@ items:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.Body#insertHtml:member(1)'
     summary: |-
-      Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+      Inserts HTML at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertHtml(html, insertLocation)'
@@ -544,7 +540,7 @@ items:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.Body#insertHtml:member(2)'
     summary: |-
-      Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+      Inserts HTML at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertHtml(html, insertLocationString)'
@@ -569,7 +565,7 @@ items:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.Body#insertOoxml:member(1)'
     summary: |-
-      Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+      Inserts OOXML at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertOoxml(ooxml, insertLocation)'
@@ -594,7 +590,7 @@ items:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.Body#insertOoxml:member(2)'
     summary: |-
-      Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+      Inserts OOXML at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertOoxml(ooxml, insertLocationString)'
@@ -619,7 +615,7 @@ items:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.Body#insertParagraph:member(1)'
     summary: |-
-      Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.
+      Inserts a paragraph at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertParagraph(paragraphText, insertLocation)'
@@ -716,7 +712,7 @@ items:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.Body#insertParagraph:member(2)'
     summary: |-
-      Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.
+      Inserts a paragraph at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertParagraph(paragraphText, insertLocationString)'
@@ -742,10 +738,8 @@ items:
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.Body#insertText:member(1)'
-    summary: >-
-      Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or
-      'End'.
-
+    summary: |-
+      Inserts text into the body at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertText(text, insertLocation)'
@@ -796,10 +790,8 @@ items:
           type:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.Body#insertText:member(2)'
-    summary: >-
-      Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or
-      'End'.
-
+    summary: |-
+      Inserts text into the body at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertText(text, insertLocationString)'
@@ -969,8 +961,10 @@ items:
           });
           ```
   - uid: 'word!Word.Body#parentContentControl:member'
-    summary: |-
-      Gets the content control that contains the body. Throws if there isn't a parent content control. Read-only.
+    summary: >-
+      Gets the content control that contains the body. Throws an error if there isn't a parent content control.
+      Read-only.
+
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControl

@@ -48,7 +48,7 @@ export declare namespace Word {
         
         /**
          *
-         * Gets the content control that contains the body. Throws if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the body. Throws an error if there isn't a parent content control. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
@@ -96,7 +96,7 @@ export declare namespace Word {
         clear(): void;
         /**
          *
-         * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
+         * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
          *
          * [Api set: WordApi 1.1]
          */
@@ -112,7 +112,7 @@ export declare namespace Word {
         
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.
+         * Inserts a break at the specified location in the main document.
          *
          * [Api set: WordApi 1.1]
          *
@@ -122,7 +122,7 @@ export declare namespace Word {
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.
+         * Inserts a break at the specified location in the main document.
          *
          * [Api set: WordApi 1.1]
          *
@@ -139,7 +139,7 @@ export declare namespace Word {
         insertContentControl(): Word.ContentControl;
         /**
          *
-         * Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts a document into the body at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -149,7 +149,7 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts a document into the body at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -159,7 +159,7 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts HTML at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -169,7 +169,7 @@ export declare namespace Word {
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts HTML at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -179,7 +179,7 @@ export declare namespace Word {
         insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.
+         * Inserts a picture into the body at the specified location.
          *
          * [Api set: WordApi 1.2]
          *
@@ -189,7 +189,7 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
         /**
          *
-         * Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.
+         * Inserts a picture into the body at the specified location.
          *
          * [Api set: WordApi 1.2]
          *
@@ -199,7 +199,7 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
-         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts OOXML at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -209,7 +209,7 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts OOXML at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -219,7 +219,7 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.
+         * Inserts a paragraph at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -229,7 +229,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.
+         * Inserts a paragraph at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -241,7 +241,7 @@ export declare namespace Word {
         
         /**
          *
-         * Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts text into the body at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -251,7 +251,7 @@ export declare namespace Word {
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts text into the body at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -376,7 +376,7 @@ export declare namespace Word {
         
         /**
          *
-         * Gets the content control that contains the content control. Throws if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the content control. Throws an error if there isn't a parent content control. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
@@ -505,7 +505,7 @@ export declare namespace Word {
         delete(keepContent: boolean): void;
         /**
          *
-         * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
+         * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
          *
          * [Api set: WordApi 1.1]
          */
@@ -522,7 +522,7 @@ export declare namespace Word {
         
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+         * Inserts a break at the specified location in the main document. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
          *
          * [Api set: WordApi 1.1]
          *
@@ -532,7 +532,7 @@ export declare namespace Word {
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+         * Inserts a break at the specified location in the main document. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
          *
          * [Api set: WordApi 1.1]
          *
@@ -542,7 +542,7 @@ export declare namespace Word {
         insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
         /**
          *
-         * Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts a document into the content control at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -552,7 +552,7 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts a document into the content control at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -562,7 +562,7 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts HTML into the content control at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -572,7 +572,7 @@ export declare namespace Word {
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts HTML into the content control at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -582,7 +582,7 @@ export declare namespace Word {
         insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts an inline picture into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts an inline picture into the content control at the specified location.
          *
          * [Api set: WordApi 1.2]
          *
@@ -592,7 +592,7 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
         /**
          *
-         * Inserts an inline picture into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts an inline picture into the content control at the specified location.
          *
          * [Api set: WordApi 1.2]
          *
@@ -602,7 +602,7 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
-         * Inserts OOXML into the content control at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts OOXML into the content control at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -612,7 +612,7 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts OOXML into the content control at the specified location.  The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts OOXML into the content control at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -622,7 +622,7 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
+         * Inserts a paragraph at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -632,7 +632,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
+         * Inserts a paragraph at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -644,7 +644,7 @@ export declare namespace Word {
         
         /**
          *
-         * Inserts text into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts text into the content control at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -654,7 +654,7 @@ export declare namespace Word {
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts text into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts text into the content control at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -752,7 +752,7 @@ export declare namespace Word {
         readonly items: Word.ContentControl[];
         /**
          *
-         * Gets a content control by its identifier. Throws if there isn't a content control with the identifier in this collection.
+         * Gets a content control by its identifier. Throws an error if there isn't a content control with the identifier in this collection.
          *
          * [Api set: WordApi 1.1]
          *
@@ -889,7 +889,7 @@ export declare namespace Word {
         getSelection(): Word.Range;
         /**
          *
-         * Saves the document. This will use the Word default file naming convention if the document has not been saved before.
+         * Saves the document. This uses the Word default file naming convention if the document has not been saved before.
          *
          * [Api set: WordApi 1.1]
          */
@@ -969,11 +969,8 @@ export declare namespace Word {
         /**
          *
          * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
+            **Note**: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
          *
-         * **Note**: Only the default highlight colors are available in Office on Windows Desktop. 
-         * These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black".
-         * When the add-in runs in Office on Windows Desktop, any other color is converted to the closest color when applied to the font.
-         * 
          * [Api set: WordApi 1.1]
          */
         highlightColor: string;
@@ -1098,7 +1095,7 @@ export declare namespace Word {
         readonly paragraph: Word.Paragraph;
         /**
          *
-         * Gets the content control that contains the inline image. Throws if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the inline image. Throws an error if there isn't a parent content control. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
@@ -1184,7 +1181,7 @@ export declare namespace Word {
         
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a break at the specified location in the main document.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1194,7 +1191,7 @@ export declare namespace Word {
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a break at the specified location in the main document.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1211,7 +1208,7 @@ export declare namespace Word {
         insertContentControl(): Word.ContentControl;
         /**
          *
-         * Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a document at the specified location.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1221,7 +1218,7 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a document at the specified location.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1231,7 +1228,7 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts HTML at the specified location.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1241,7 +1238,7 @@ export declare namespace Word {
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts HTML at the specified location.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1251,7 +1248,7 @@ export declare namespace Word {
         insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or 'After'.
+         * Inserts an inline picture at the specified location.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1261,7 +1258,7 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
         /**
          *
-         * Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or 'After'.
+         * Inserts an inline picture at the specified location.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1271,7 +1268,7 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
-         * Inserts OOXML at the specified location.  The insertLocation value can be 'Before' or 'After'.
+         * Inserts OOXML at the specified location.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1281,7 +1278,7 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts OOXML at the specified location.  The insertLocation value can be 'Before' or 'After'.
+         * Inserts OOXML at the specified location.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1291,7 +1288,7 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a paragraph at the specified location.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1301,7 +1298,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a paragraph at the specified location.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1311,7 +1308,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
         /**
          *
-         * Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts text at the specified location.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1321,7 +1318,7 @@ export declare namespace Word {
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts text at the specified location.
          *
          * [Api set: WordApi 1.2]
          *
@@ -1476,7 +1473,7 @@ export declare namespace Word {
         
         /**
          *
-         * Gets the content control that contains the paragraph. Throws if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
@@ -1606,7 +1603,7 @@ export declare namespace Word {
         
         /**
          *
-         * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
+         * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
          *
          * [Api set: WordApi 1.1]
          */
@@ -1627,7 +1624,7 @@ export declare namespace Word {
         
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a break at the specified location in the main document.
          *
          * [Api set: WordApi 1.1]
          *
@@ -1637,7 +1634,7 @@ export declare namespace Word {
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a break at the specified location in the main document.
          *
          * [Api set: WordApi 1.1]
          *
@@ -1654,7 +1651,7 @@ export declare namespace Word {
         insertContentControl(): Word.ContentControl;
         /**
          *
-         * Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts a document into the paragraph at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -1664,7 +1661,7 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts a document into the paragraph at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -1674,7 +1671,7 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts HTML into the paragraph at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -1684,7 +1681,7 @@ export declare namespace Word {
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts HTML into the paragraph at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -1694,7 +1691,7 @@ export declare namespace Word {
         insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts a picture into the paragraph at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -1704,7 +1701,7 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
         /**
          *
-         * Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts a picture into the paragraph at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -1714,7 +1711,7 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
-         * Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts OOXML into the paragraph at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -1724,7 +1721,7 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts OOXML into the paragraph at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -1734,7 +1731,7 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a paragraph at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -1744,7 +1741,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a paragraph at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -1756,7 +1753,7 @@ export declare namespace Word {
         
         /**
          *
-         * Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts text into the paragraph at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -1766,7 +1763,7 @@ export declare namespace Word {
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+         * Inserts text into the paragraph at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -1944,7 +1941,7 @@ export declare namespace Word {
         
         /**
          *
-         * Gets the content control that contains the range. Throws if there isn't a parent content control. Read-only.
+         * Gets the content control that contains the range. Throws an error if there isn't a parent content control. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
@@ -2005,7 +2002,7 @@ export declare namespace Word {
         
         /**
          *
-         * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
+         * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
          *
          * [Api set: WordApi 1.1]
          */
@@ -2025,7 +2022,7 @@ export declare namespace Word {
         
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a break at the specified location in the main document.
          *
          * [Api set: WordApi 1.1]
          *
@@ -2035,7 +2032,7 @@ export declare namespace Word {
         insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;
         /**
          *
-         * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a break at the specified location in the main document.
          *
          * [Api set: WordApi 1.1]
          *
@@ -2052,7 +2049,7 @@ export declare namespace Word {
         insertContentControl(): Word.ContentControl;
         /**
          *
-         * Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * Inserts a document at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -2062,7 +2059,7 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * Inserts a document at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -2072,7 +2069,7 @@ export declare namespace Word {
         insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * Inserts HTML at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -2082,7 +2079,7 @@ export declare namespace Word {
         insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * Inserts HTML at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -2092,7 +2089,7 @@ export declare namespace Word {
         insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * Inserts a picture at the specified location.
          *
          * [Api set: WordApi 1.2]
          *
@@ -2102,7 +2099,7 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation): Word.InlinePicture;
         /**
          *
-         * Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * Inserts a picture at the specified location.
          *
          * [Api set: WordApi 1.2]
          *
@@ -2112,7 +2109,7 @@ export declare namespace Word {
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.InlinePicture;
         /**
          *
-         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * Inserts OOXML at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -2122,7 +2119,7 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts OOXML at the specified location.  The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * Inserts OOXML at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -2132,7 +2129,7 @@ export declare namespace Word {
         insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a paragraph at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -2142,7 +2139,7 @@ export declare namespace Word {
         insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;
         /**
          *
-         * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+         * Inserts a paragraph at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -2154,7 +2151,7 @@ export declare namespace Word {
         
         /**
          *
-         * Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * Inserts text at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -2164,7 +2161,7 @@ export declare namespace Word {
         insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;
         /**
          *
-         * Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.
+         * Inserts text at the specified location.
          *
          * [Api set: WordApi 1.1]
          *
@@ -2910,7 +2907,7 @@ export declare namespace Word {
     enum HeaderFooterType {
         /**
          *
-         * Returns the header or footer on all pages of a section, with the first page or odd pages excluded if they are different.
+         * Returns the header or footer on all pages of a section, but excludes the first page or odd pages if they are different.
          *
          */
         primary = "Primary",
@@ -3620,11 +3617,8 @@ export declare namespace Word {
             /**
              *
              * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
+            **Note**: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
              *
-             * **Note**: Only the default highlight colors are available in Office on Windows Desktop. 
-             * These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black".
-             * When the add-in runs in Office on Windows Desktop, any other color is converted to the closest color when applied to the font.
-             * 
              * [Api set: WordApi 1.1]
              */
             highlightColor?: string;
@@ -4271,11 +4265,8 @@ export declare namespace Word {
             /**
              *
              * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
+            **Note**: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
              *
-             * **Note**: Only the default highlight colors are available in Office on Windows Desktop. 
-             * These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black".
-             * When the add-in runs in Office on Windows Desktop, any other color is converted to the closest color when applied to the font.
-             * 
              * [Api set: WordApi 1.1]
              */
             highlightColor?: string;
@@ -4695,7 +4686,7 @@ export declare namespace Word {
             
             /**
             *
-            * Gets the content control that contains the body. Throws if there isn't a parent content control.
+            * Gets the content control that contains the body. Throws an error if there isn't a parent content control.
             *
             * [Api set: WordApi 1.1]
             */
@@ -4738,7 +4729,7 @@ export declare namespace Word {
             
             /**
             *
-            * Gets the content control that contains the content control. Throws if there isn't a parent content control.
+            * Gets the content control that contains the content control. Throws an error if there isn't a parent content control.
             *
             * [Api set: WordApi 1.1]
             */
@@ -4853,7 +4844,7 @@ export declare namespace Word {
             
             /**
             *
-            * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws if there isn't a parent content control.
+            * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws an error if there isn't a parent content control.
             *
             * [Api set: WordApi 1.1]
             */
@@ -5017,11 +5008,8 @@ export declare namespace Word {
             /**
              *
              * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
+            **Note**: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
              *
-             * **Note**: Only the default highlight colors are available in Office on Windows Desktop. 
-             * These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black".
-             * When the add-in runs in Office on Windows Desktop, any other color is converted to the closest color when applied to the font.
-             * 
              * [Api set: WordApi 1.1]
              */
             highlightColor?: boolean;
@@ -5092,7 +5080,7 @@ export declare namespace Word {
             paragraph?: Word.Interfaces.ParagraphLoadOptions;
             /**
             *
-            * Gets the content control that contains the inline image. Throws if there isn't a parent content control.
+            * Gets the content control that contains the inline image. Throws an error if there isn't a parent content control.
             *
             * [Api set: WordApi 1.1]
             */
@@ -5162,7 +5150,7 @@ export declare namespace Word {
             paragraph?: Word.Interfaces.ParagraphLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws if there isn't a parent content control.
+            * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws an error if there isn't a parent content control.
             *
             * [Api set: WordApi 1.1]
             */
@@ -5240,7 +5228,7 @@ export declare namespace Word {
             
             /**
             *
-            * Gets the content control that contains the paragraph. Throws if there isn't a parent content control.
+            * Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control.
             *
             * [Api set: WordApi 1.1]
             */
@@ -5361,7 +5349,7 @@ export declare namespace Word {
             
             /**
             *
-            * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws if there isn't a parent content control.
+            * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control.
             *
             * [Api set: WordApi 1.1]
             */
@@ -5478,7 +5466,7 @@ export declare namespace Word {
             
             /**
             *
-            * Gets the content control that contains the range. Throws if there isn't a parent content control.
+            * Gets the content control that contains the range. Throws an error if there isn't a parent content control.
             *
             * [Api set: WordApi 1.1]
             */
@@ -5524,7 +5512,7 @@ export declare namespace Word {
             
             /**
             *
-            * For EACH ITEM in the collection: Gets the content control that contains the range. Throws if there isn't a parent content control.
+            * For EACH ITEM in the collection: Gets the content control that contains the range. Throws an error if there isn't a parent content control.
             *
             * [Api set: WordApi 1.1]
             */

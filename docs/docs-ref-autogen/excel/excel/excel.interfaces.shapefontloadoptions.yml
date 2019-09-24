@@ -20,6 +20,9 @@ items:
       - 'excel!Excel.Interfaces.ShapeFontLoadOptions#size:member'
       - 'excel!Excel.Interfaces.ShapeFontLoadOptions#underline:member'
   - uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     name: $all
     fullName: $all
     langs:

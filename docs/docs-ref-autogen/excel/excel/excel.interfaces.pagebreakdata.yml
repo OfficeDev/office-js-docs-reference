@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.PageBreakData:interface'
-    summary: An interface describing the data returned by calling "pageBreak.toJSON()".
+    summary: An interface describing the data returned by calling `pageBreak.toJSON()`<!-- -->.
     name: Excel.Interfaces.PageBreakData
     fullName: Excel.Interfaces.PageBreakData
     langs:

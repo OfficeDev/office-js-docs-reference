@@ -2,6 +2,9 @@
 items:
   - uid: 'excel!Excel.SlicerSortType:enum'
     summary: >-
+      Specifies the slicer sort behavior for Slicer.sortBy API.
+
+
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -16,6 +19,7 @@ items:
       - 'excel!Excel.SlicerSortType.dataSourceOrder:member'
       - 'excel!Excel.SlicerSortType.descending:member'
   - uid: 'excel!Excel.SlicerSortType.ascending:member'
+    summary: Sort slicer items in ascending order by item captions.
     isPreview: true
     name: ascending
     fullName: ascending
@@ -24,6 +28,7 @@ items:
     type: field
     numericValue: '"Ascending"'
   - uid: 'excel!Excel.SlicerSortType.dataSourceOrder:member'
+    summary: Sort slicer items in the order provided by the data source.
     isPreview: true
     name: dataSourceOrder
     fullName: dataSourceOrder
@@ -32,6 +37,7 @@ items:
     type: field
     numericValue: '"DataSourceOrder"'
   - uid: 'excel!Excel.SlicerSortType.descending:member'
+    summary: Sort slicer items in descending order by item captions.
     isPreview: true
     name: descending
     fullName: descending

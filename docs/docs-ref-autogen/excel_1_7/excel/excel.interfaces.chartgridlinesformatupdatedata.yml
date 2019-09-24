@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartGridlinesFormatUpdateData:interface'
     summary: >-
-      An interface for updating data on the ChartGridlinesFormat object, for use in "chartGridlinesFormat.set(<!-- -->{
-      ... }<!-- -->)".
+      An interface for updating data on the ChartGridlinesFormat object, for use in `chartGridlinesFormat.set({ ...
+      })`<!-- -->.
     name: Excel.Interfaces.ChartGridlinesFormatUpdateData
     fullName: Excel.Interfaces.ChartGridlinesFormatUpdateData
     langs:

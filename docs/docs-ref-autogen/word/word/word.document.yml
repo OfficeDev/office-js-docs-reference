@@ -106,7 +106,7 @@ items:
           - 'word!Word.CustomXmlPartCollection:class'
   - uid: 'word!Word.Document#deleteBookmark:member(1)'
     summary: >-
-      Deletes a bookmark, if exists, from the document.
+      Deletes a bookmark, if it exists, from the document.
 
 
       \[ [API set: WordApi BETA (PREVIEW
@@ -130,7 +130,7 @@ items:
             - string
   - uid: 'word!Word.Document#getBookmarkRange:member(1)'
     summary: >-
-      Gets a bookmark's range. Throws if the bookmark does not exist.
+      Gets a bookmark's range. Throws an error if the bookmark does not exist.
 
 
       \[ [API set: WordApi BETA (PREVIEW
@@ -394,10 +394,8 @@ items:
           });
           ```
   - uid: 'word!Word.Document#save:member(1)'
-    summary: >-
-      Saves the document. This will use the Word default file naming convention if the document has not been saved
-      before.
-
+    summary: |-
+      Saves the document. This uses the Word default file naming convention if the document has not been saved before.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: save()

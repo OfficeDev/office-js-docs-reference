@@ -15,6 +15,9 @@ items:
       - 'excel!Excel.Interfaces.FilterLoadOptions#$all:member'
       - 'excel!Excel.Interfaces.FilterLoadOptions#criteria:member'
   - uid: 'excel!Excel.Interfaces.FilterLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     name: $all
     fullName: $all
     langs:

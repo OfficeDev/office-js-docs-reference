@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.TableRowCollectionUpdateData:interface'
     summary: >-
-      An interface for updating data on the TableRowCollection object, for use in "tableRowCollection.set(<!-- -->{ ...
-      }<!-- -->)".
+      An interface for updating data on the TableRowCollection object, for use in `tableRowCollection.set({ ... })`<!--
+      -->.
     name: Excel.Interfaces.TableRowCollectionUpdateData
     fullName: Excel.Interfaces.TableRowCollectionUpdateData
     langs:

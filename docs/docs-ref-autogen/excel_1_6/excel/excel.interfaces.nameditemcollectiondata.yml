@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.NamedItemCollectionData:interface'
-    summary: An interface describing the data returned by calling "namedItemCollection.toJSON()".
+    summary: An interface describing the data returned by calling `namedItemCollection.toJSON()`<!-- -->.
     name: Excel.Interfaces.NamedItemCollectionData
     fullName: Excel.Interfaces.NamedItemCollectionData
     langs:

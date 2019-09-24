@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.PivotHierarchyCollectionData:interface'
-    summary: An interface describing the data returned by calling "pivotHierarchyCollection.toJSON()".
+    summary: An interface describing the data returned by calling `pivotHierarchyCollection.toJSON()`<!-- -->.
     name: Excel.Interfaces.PivotHierarchyCollectionData
     fullName: Excel.Interfaces.PivotHierarchyCollectionData
     langs:

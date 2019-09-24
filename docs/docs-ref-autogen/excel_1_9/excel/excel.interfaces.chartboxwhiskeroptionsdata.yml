@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData:interface'
-    summary: An interface describing the data returned by calling "chartBoxwhiskerOptions.toJSON()".
+    summary: An interface describing the data returned by calling `chartBoxwhiskerOptions.toJSON()`<!-- -->.
     name: Excel.Interfaces.ChartBoxwhiskerOptionsData
     fullName: Excel.Interfaces.ChartBoxwhiskerOptionsData
     langs:

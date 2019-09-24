@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ChartMapOptionsData:interface'
-    summary: An interface describing the data returned by calling "chartMapOptions.toJSON()".
+    summary: An interface describing the data returned by calling `chartMapOptions.toJSON()`<!-- -->.
     name: Excel.Interfaces.ChartMapOptionsData
     fullName: Excel.Interfaces.ChartMapOptionsData
     langs:

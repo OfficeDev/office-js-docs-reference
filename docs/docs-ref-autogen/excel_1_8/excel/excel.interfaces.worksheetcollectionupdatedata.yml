@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.WorksheetCollectionUpdateData:interface'
     summary: >-
-      An interface for updating data on the WorksheetCollection object, for use in "worksheetCollection.set(<!-- -->{
-      ... }<!-- -->)".
+      An interface for updating data on the WorksheetCollection object, for use in `worksheetCollection.set({ ...
+      })`<!-- -->.
     name: Excel.Interfaces.WorksheetCollectionUpdateData
     fullName: Excel.Interfaces.WorksheetCollectionUpdateData
     langs:

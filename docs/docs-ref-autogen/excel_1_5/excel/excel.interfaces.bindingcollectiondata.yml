@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.BindingCollectionData:interface'
-    summary: An interface describing the data returned by calling "bindingCollection.toJSON()".
+    summary: An interface describing the data returned by calling `bindingCollection.toJSON()`<!-- -->.
     name: Excel.Interfaces.BindingCollectionData
     fullName: Excel.Interfaces.BindingCollectionData
     langs:

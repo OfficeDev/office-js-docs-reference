@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.PivotItemCollectionUpdateData:interface'
     summary: >-
-      An interface for updating data on the PivotItemCollection object, for use in "pivotItemCollection.set(<!-- -->{
-      ... }<!-- -->)".
+      An interface for updating data on the PivotItemCollection object, for use in `pivotItemCollection.set({ ...
+      })`<!-- -->.
     name: Excel.Interfaces.PivotItemCollectionUpdateData
     fullName: Excel.Interfaces.PivotItemCollectionUpdateData
     langs:

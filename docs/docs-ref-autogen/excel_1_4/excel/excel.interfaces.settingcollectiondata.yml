@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.SettingCollectionData:interface'
-    summary: An interface describing the data returned by calling "settingCollection.toJSON()".
+    summary: An interface describing the data returned by calling `settingCollection.toJSON()`<!-- -->.
     name: Excel.Interfaces.SettingCollectionData
     fullName: Excel.Interfaces.SettingCollectionData
     langs:

@@ -46,8 +46,8 @@ items:
           - 'word!Word.RequestContext:class'
   - uid: 'word!Word.ContentControlCollection#getById:member(1)'
     summary: >-
-      Gets a content control by its identifier. Throws if there isn't a content control with the identifier in this
-      collection.
+      Gets a content control by its identifier. Throws an error if there isn't a content control with the identifier in
+      this collection.
 
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]

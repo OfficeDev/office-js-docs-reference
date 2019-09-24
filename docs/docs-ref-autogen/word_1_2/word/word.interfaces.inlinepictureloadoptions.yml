@@ -124,7 +124,7 @@ items:
           - 'word!Word.Interfaces.ParagraphLoadOptions:interface'
   - uid: 'word!Word.Interfaces.InlinePictureLoadOptions#parentContentControl:member'
     summary: |-
-      Gets the content control that contains the inline image. Throws if there isn't a parent content control.
+      Gets the content control that contains the inline image. Throws an error if there isn't a parent content control.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControl

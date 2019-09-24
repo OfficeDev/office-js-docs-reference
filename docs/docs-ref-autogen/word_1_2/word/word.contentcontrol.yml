@@ -295,9 +295,10 @@ items:
   - uid: 'word!Word.ContentControl#getHtml:member(1)'
     summary: >-
       Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the
-      formatting will be a close, but not exact, match to the formatting of the document. This method does not return
-      the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity,
-      or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
+      formatting will be a close, but not exact, match for of the formatting of the document. This method does not
+      return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If
+      you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned
+      XML to HTML.
 
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -442,9 +443,8 @@ items:
           - 'word!Word.InlinePictureCollection:class'
   - uid: 'word!Word.ContentControl#insertBreak:member(1)'
     summary: >-
-      Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End',
-      'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell'
-      content controls.
+      Inserts a break at the specified location in the main document. This method cannot be used with 'RichTextTable',
+      'RichTextTableRow' and 'RichTextTableCell' content controls.
 
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -470,9 +470,8 @@ items:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.ContentControl#insertBreak:member(2)'
     summary: >-
-      Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End',
-      'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell'
-      content controls.
+      Inserts a break at the specified location in the main document. This method cannot be used with 'RichTextTable',
+      'RichTextTableRow' and 'RichTextTableCell' content controls.
 
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -540,10 +539,8 @@ items:
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.ContentControl#insertFileFromBase64:member(1)'
-    summary: >-
-      Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace',
-      'Start', or 'End'.
-
+    summary: |-
+      Inserts a document into the content control at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertFileFromBase64(base64File, insertLocation)'
@@ -569,10 +566,8 @@ items:
           type:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.ContentControl#insertFileFromBase64:member(2)'
-    summary: >-
-      Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace',
-      'Start', or 'End'.
-
+    summary: |-
+      Inserts a document into the content control at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertFileFromBase64(base64File, insertLocationString)'
@@ -600,10 +595,8 @@ items:
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.ContentControl#insertHtml:member(1)'
-    summary: >-
-      Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace',
-      'Start', or 'End'.
-
+    summary: |-
+      Inserts HTML into the content control at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertHtml(html, insertLocation)'
@@ -629,10 +622,8 @@ items:
           type:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.ContentControl#insertHtml:member(2)'
-    summary: >-
-      Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace',
-      'Start', or 'End'.
-
+    summary: |-
+      Inserts HTML into the content control at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertHtml(html, insertLocationString)'
@@ -700,10 +691,8 @@ items:
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.ContentControl#insertInlinePictureFromBase64:member(1)'
-    summary: >-
-      Inserts an inline picture into the content control at the specified location. The insertLocation value can be
-      'Replace', 'Start', or 'End'.
-
+    summary: |-
+      Inserts an inline picture into the content control at the specified location.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
@@ -731,10 +720,8 @@ items:
           type:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.ContentControl#insertInlinePictureFromBase64:member(2)'
-    summary: >-
-      Inserts an inline picture into the content control at the specified location. The insertLocation value can be
-      'Replace', 'Start', or 'End'.
-
+    summary: |-
+      Inserts an inline picture into the content control at the specified location.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocationString)'
@@ -762,10 +749,8 @@ items:
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.ContentControl#insertOoxml:member(1)'
-    summary: >-
-      Inserts OOXML into the content control at the specified location. The insertLocation value can be 'Replace',
-      'Start', or 'End'.
-
+    summary: |-
+      Inserts OOXML into the content control at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertOoxml(ooxml, insertLocation)'
@@ -791,10 +776,8 @@ items:
           type:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.ContentControl#insertOoxml:member(2)'
-    summary: >-
-      Inserts OOXML into the content control at the specified location. The insertLocation value can be 'Replace',
-      'Start', or 'End'.
-
+    summary: |-
+      Inserts OOXML into the content control at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertOoxml(ooxml, insertLocationString)'
@@ -863,10 +846,8 @@ items:
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.ContentControl#insertParagraph:member(1)'
-    summary: >-
-      Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or
-      'After'.
-
+    summary: |-
+      Inserts a paragraph at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertParagraph(paragraphText, insertLocation)'
@@ -892,10 +873,8 @@ items:
           type:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.ContentControl#insertParagraph:member(2)'
-    summary: >-
-      Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or
-      'After'.
-
+    summary: |-
+      Inserts a paragraph at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertParagraph(paragraphText, insertLocationString)'
@@ -963,10 +942,8 @@ items:
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.ContentControl#insertText:member(1)'
-    summary: >-
-      Inserts text into the content control at the specified location. The insertLocation value can be 'Replace',
-      'Start', or 'End'.
-
+    summary: |-
+      Inserts text into the content control at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertText(text, insertLocation)'
@@ -992,10 +969,8 @@ items:
           type:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.ContentControl#insertText:member(2)'
-    summary: >-
-      Inserts text into the content control at the specified location. The insertLocation value can be 'Replace',
-      'Start', or 'End'.
-
+    summary: |-
+      Inserts text into the content control at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertText(text, insertLocationString)'
@@ -1235,8 +1210,8 @@ items:
           - 'word!Word.ParagraphCollection:class'
   - uid: 'word!Word.ContentControl#parentContentControl:member'
     summary: >-
-      Gets the content control that contains the content control. Throws if there isn't a parent content control.
-      Read-only.
+      Gets the content control that contains the content control. Throws an error if there isn't a parent content
+      control. Read-only.
 
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]

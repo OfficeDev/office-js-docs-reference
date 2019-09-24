@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ChartAreaFormatUpdateData:interface'
-    summary: >-
-      An interface for updating data on the ChartAreaFormat object, for use in "chartAreaFormat.set(<!-- -->{ ... }<!--
-      -->)".
+    summary: 'An interface for updating data on the ChartAreaFormat object, for use in `chartAreaFormat.set({ ... })`<!-- -->.'
     name: Excel.Interfaces.ChartAreaFormatUpdateData
     fullName: Excel.Interfaces.ChartAreaFormatUpdateData
     langs:

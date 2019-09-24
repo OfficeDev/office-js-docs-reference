@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.SettingCollectionUpdateData:interface'
     summary: >-
-      An interface for updating data on the SettingCollection object, for use in "settingCollection.set(<!-- -->{ ...
-      }<!-- -->)".
+      An interface for updating data on the SettingCollection object, for use in `settingCollection.set({ ... })`<!--
+      -->.
     name: Excel.Interfaces.SettingCollectionUpdateData
     fullName: Excel.Interfaces.SettingCollectionUpdateData
     langs:

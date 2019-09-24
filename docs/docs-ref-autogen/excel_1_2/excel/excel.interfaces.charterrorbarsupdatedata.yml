@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData:interface'
-    summary: >-
-      An interface for updating data on the ChartErrorBars object, for use in "chartErrorBars.set(<!-- -->{ ... }<!--
-      -->)".
+    summary: 'An interface for updating data on the ChartErrorBars object, for use in `chartErrorBars.set({ ... })`<!-- -->.'
     name: Excel.Interfaces.ChartErrorBarsUpdateData
     fullName: Excel.Interfaces.ChartErrorBarsUpdateData
     langs:

@@ -30,7 +30,7 @@ items:
     numericValue: '"FirstPage"'
   - uid: 'word!Word.HeaderFooterType.primary:member'
     summary: >-
-      Returns the header or footer on all pages of a section, with the first page or odd pages excluded if they are
+      Returns the header or footer on all pages of a section, but excludes the first page or odd pages if they are
       different.
     name: primary
     fullName: primary

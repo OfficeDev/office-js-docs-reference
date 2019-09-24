@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
-    summary: An interface describing the data returned by calling "documentProperties.toJSON()".
+    summary: An interface describing the data returned by calling `documentProperties.toJSON()`<!-- -->.
     name: Excel.Interfaces.DocumentPropertiesData
     fullName: Excel.Interfaces.DocumentPropertiesData
     langs:

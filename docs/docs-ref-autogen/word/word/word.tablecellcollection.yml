@@ -40,7 +40,7 @@ items:
           - 'word!Word.RequestContext:class'
   - uid: 'word!Word.TableCellCollection#getFirst:member(1)'
     summary: |-
-      Gets the first table cell in this collection. Throws if this collection is empty.
+      Gets the first table cell in this collection. Throws an error if this collection is empty.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getFirst()

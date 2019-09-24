@@ -3,7 +3,7 @@ items:
   - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the PivotTableStyleCollection object, for use in
-      "pivotTableStyleCollection.set(<!-- -->{ ... }<!-- -->)".
+      `pivotTableStyleCollection.set({ ... })`<!-- -->.
     name: Excel.Interfaces.PivotTableStyleCollectionUpdateData
     fullName: Excel.Interfaces.PivotTableStyleCollectionUpdateData
     langs:

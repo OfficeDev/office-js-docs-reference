@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.GroupShapeCollectionUpdateData:interface'
     summary: >-
-      An interface for updating data on the GroupShapeCollection object, for use in "groupShapeCollection.set(<!-- -->{
-      ... }<!-- -->)".
+      An interface for updating data on the GroupShapeCollection object, for use in `groupShapeCollection.set({ ...
+      })`<!-- -->.
     name: Excel.Interfaces.GroupShapeCollectionUpdateData
     fullName: Excel.Interfaces.GroupShapeCollectionUpdateData
     langs:

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsData:interface'
-    summary: An interface describing the data returned by calling "chartErrorBars.toJSON()".
+    summary: An interface describing the data returned by calling `chartErrorBars.toJSON()`<!-- -->.
     name: Excel.Interfaces.ChartErrorBarsData
     fullName: Excel.Interfaces.ChartErrorBarsData
     langs:

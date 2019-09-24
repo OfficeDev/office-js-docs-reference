@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatUpdateData:interface'
     summary: >-
-      An interface for updating data on the ChartErrorBarsFormat object, for use in "chartErrorBarsFormat.set(<!-- -->{
-      ... }<!-- -->)".
+      An interface for updating data on the ChartErrorBarsFormat object, for use in `chartErrorBarsFormat.set({ ...
+      })`<!-- -->.
     name: Excel.Interfaces.ChartErrorBarsFormatUpdateData
     fullName: Excel.Interfaces.ChartErrorBarsFormatUpdateData
     langs:

@@ -19,6 +19,9 @@ items:
       - 'excel!Excel.Interfaces.PivotTableStyleLoadOptions#name:member'
       - 'excel!Excel.Interfaces.PivotTableStyleLoadOptions#readOnly:member'
   - uid: 'excel!Excel.Interfaces.PivotTableStyleLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     isPreview: true
     name: $all
     fullName: $all

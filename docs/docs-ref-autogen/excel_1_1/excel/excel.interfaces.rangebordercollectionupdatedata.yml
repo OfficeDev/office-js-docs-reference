@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.RangeBorderCollectionUpdateData:interface'
     summary: >-
-      An interface for updating data on the RangeBorderCollection object, for use in "rangeBorderCollection.set(<!--
-      -->{ ... }<!-- -->)".
+      An interface for updating data on the RangeBorderCollection object, for use in `rangeBorderCollection.set({ ...
+      })`<!-- -->.
     name: Excel.Interfaces.RangeBorderCollectionUpdateData
     fullName: Excel.Interfaces.RangeBorderCollectionUpdateData
     langs:

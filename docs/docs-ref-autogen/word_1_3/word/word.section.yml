@@ -255,7 +255,7 @@ items:
             - '"Primary" | "FirstPage" | "EvenPages"'
   - uid: 'word!Word.Section#getNext:member(1)'
     summary: |-
-      Gets the next section. Throws if this section is the last one.
+      Gets the next section. Throws an error if this section is the last one.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getNext()

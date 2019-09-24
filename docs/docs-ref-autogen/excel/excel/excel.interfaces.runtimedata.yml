@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.RuntimeData:interface'
-    summary: An interface describing the data returned by calling "runtime.toJSON()".
+    summary: An interface describing the data returned by calling `runtime.toJSON()`<!-- -->.
     name: Excel.Interfaces.RuntimeData
     fullName: Excel.Interfaces.RuntimeData
     langs:
