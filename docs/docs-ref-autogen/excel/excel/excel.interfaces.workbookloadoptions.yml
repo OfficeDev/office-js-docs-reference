@@ -1,8 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
-    summary: |-
+    summary: >-
       Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
+      To learn more about the workbook object model, read [Work with workbooks using the Excel JavaScript
+      API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.WorkbookLoadOptions
@@ -28,6 +31,9 @@ items:
       - 'excel!Excel.Interfaces.WorkbookLoadOptions#use1904DateSystem:member'
       - 'excel!Excel.Interfaces.WorkbookLoadOptions#usePrecisionAsDisplayed:member'
   - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     name: $all
     fullName: $all
     langs:

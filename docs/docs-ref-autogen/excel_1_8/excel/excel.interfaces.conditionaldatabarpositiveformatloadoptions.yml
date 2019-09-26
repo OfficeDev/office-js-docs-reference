@@ -17,6 +17,9 @@ items:
       - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#fillColor:member'
       - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#gradientFill:member'
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     name: $all
     fullName: $all
     langs:

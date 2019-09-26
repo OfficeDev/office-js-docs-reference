@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ChartLegendData:interface'
-    summary: An interface describing the data returned by calling "chartLegend.toJSON()".
+    summary: An interface describing the data returned by calling `chartLegend.toJSON()`<!-- -->.
     name: Excel.Interfaces.ChartLegendData
     fullName: Excel.Interfaces.ChartLegendData
     langs:

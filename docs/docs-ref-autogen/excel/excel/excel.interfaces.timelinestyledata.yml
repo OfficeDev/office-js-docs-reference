@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.TimelineStyleData:interface'
-    summary: An interface describing the data returned by calling "timelineStyle.toJSON()".
+    summary: An interface describing the data returned by calling `timelineStyle.toJSON()`<!-- -->.
     name: Excel.Interfaces.TimelineStyleData
     fullName: Excel.Interfaces.TimelineStyleData
     langs:

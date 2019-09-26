@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyUpdateData:interface'
     summary: >-
-      An interface for updating data on the FilterPivotHierarchy object, for use in "filterPivotHierarchy.set(<!-- -->{
-      ... }<!-- -->)".
+      An interface for updating data on the FilterPivotHierarchy object, for use in `filterPivotHierarchy.set({ ...
+      })`<!-- -->.
     name: Excel.Interfaces.FilterPivotHierarchyUpdateData
     fullName: Excel.Interfaces.FilterPivotHierarchyUpdateData
     langs:

@@ -61,7 +61,7 @@ items:
           - boolean
   - uid: 'word!Word.Interfaces.CustomPropertyCollectionLoadOptions#value:member'
     summary: >-
-      For EACH ITEM in the collection: Gets or sets the value of the custom property. Note that even though Word on the
+      For EACH ITEM in the collection: Gets or sets the value of the custom property. Note that even though Word for the
       web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will
       truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
 

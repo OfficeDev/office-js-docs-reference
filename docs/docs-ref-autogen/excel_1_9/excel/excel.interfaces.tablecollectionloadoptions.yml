@@ -32,6 +32,9 @@ items:
       - 'excel!Excel.Interfaces.TableCollectionLoadOptions#style:member'
       - 'excel!Excel.Interfaces.TableCollectionLoadOptions#worksheet:member'
   - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     name: $all
     fullName: $all
     langs:

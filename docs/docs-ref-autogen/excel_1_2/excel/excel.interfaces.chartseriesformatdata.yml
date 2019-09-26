@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ChartSeriesFormatData:interface'
-    summary: An interface describing the data returned by calling "chartSeriesFormat.toJSON()".
+    summary: An interface describing the data returned by calling `chartSeriesFormat.toJSON()`<!-- -->.
     name: Excel.Interfaces.ChartSeriesFormatData
     fullName: Excel.Interfaces.ChartSeriesFormatData
     langs:

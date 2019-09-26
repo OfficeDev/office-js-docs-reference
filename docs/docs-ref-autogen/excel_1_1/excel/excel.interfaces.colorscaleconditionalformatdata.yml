@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatData:interface'
-    summary: An interface describing the data returned by calling "colorScaleConditionalFormat.toJSON()".
+    summary: An interface describing the data returned by calling `colorScaleConditionalFormat.toJSON()`<!-- -->.
     name: Excel.Interfaces.ColorScaleConditionalFormatData
     fullName: Excel.Interfaces.ColorScaleConditionalFormatData
     langs:

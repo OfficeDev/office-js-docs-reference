@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleData:interface'
-    summary: An interface describing the data returned by calling "conditionalFormatRule.toJSON()".
+    summary: An interface describing the data returned by calling `conditionalFormatRule.toJSON()`<!-- -->.
     name: Excel.Interfaces.ConditionalFormatRuleData
     fullName: Excel.Interfaces.ConditionalFormatRuleData
     langs:

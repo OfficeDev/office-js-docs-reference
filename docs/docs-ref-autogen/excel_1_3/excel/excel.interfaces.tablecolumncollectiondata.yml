@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.TableColumnCollectionData:interface'
-    summary: An interface describing the data returned by calling "tableColumnCollection.toJSON()".
+    summary: An interface describing the data returned by calling `tableColumnCollection.toJSON()`<!-- -->.
     name: Excel.Interfaces.TableColumnCollectionData
     fullName: Excel.Interfaces.TableColumnCollectionData
     langs:

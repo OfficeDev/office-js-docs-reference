@@ -16,6 +16,9 @@ items:
       - 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions#format:member'
       - 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions#value:member'
   - uid: 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     name: $all
     fullName: $all
     langs:

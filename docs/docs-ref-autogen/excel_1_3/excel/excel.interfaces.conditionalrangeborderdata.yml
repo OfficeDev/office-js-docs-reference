@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderData:interface'
-    summary: An interface describing the data returned by calling "conditionalRangeBorder.toJSON()".
+    summary: An interface describing the data returned by calling `conditionalRangeBorder.toJSON()`<!-- -->.
     name: Excel.Interfaces.ConditionalRangeBorderData
     fullName: Excel.Interfaces.ConditionalRangeBorderData
     langs:

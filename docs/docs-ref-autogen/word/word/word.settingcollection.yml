@@ -195,7 +195,7 @@ items:
           ```
   - uid: 'word!Word.SettingCollection#getItem:member(1)'
     summary: >-
-      Gets a setting object by its key, which is case-sensitive. Throws if the setting does not exist.
+      Gets a setting object by its key, which is case-sensitive. Throws an error if the setting does not exist.
 
 
       \[ [API set: WordApi BETA (PREVIEW

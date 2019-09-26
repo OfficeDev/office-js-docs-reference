@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatUpdateData:interface'
     summary: >-
-      An interface for updating data on the ChartPlotAreaFormat object, for use in "chartPlotAreaFormat.set(<!-- -->{
-      ... }<!-- -->)".
+      An interface for updating data on the ChartPlotAreaFormat object, for use in `chartPlotAreaFormat.set({ ...
+      })`<!-- -->.
     name: Excel.Interfaces.ChartPlotAreaFormatUpdateData
     fullName: Excel.Interfaces.ChartPlotAreaFormatUpdateData
     langs:

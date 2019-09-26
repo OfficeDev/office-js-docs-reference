@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
-    summary: 'An interface for updating data on the Worksheet object, for use in "worksheet.set(<!-- -->{ ... }<!-- -->)".'
+    summary: 'An interface for updating data on the Worksheet object, for use in `worksheet.set({ ... })`<!-- -->.'
     name: Excel.Interfaces.WorksheetUpdateData
     fullName: Excel.Interfaces.WorksheetUpdateData
     langs:

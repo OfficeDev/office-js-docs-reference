@@ -3,7 +3,7 @@ items:
   - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface'
     summary: >-
       An interface for updating data on the PresetCriteriaConditionalFormat object, for use in
-      "presetCriteriaConditionalFormat.set(<!-- -->{ ... }<!-- -->)".
+      `presetCriteriaConditionalFormat.set({ ... })`<!-- -->.
     name: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
     fullName: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
     langs:

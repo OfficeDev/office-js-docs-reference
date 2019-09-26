@@ -16,6 +16,9 @@ items:
       - 'excel!Excel.Interfaces.CustomXmlPartLoadOptions#id:member'
       - 'excel!Excel.Interfaces.CustomXmlPartLoadOptions#namespaceUri:member'
   - uid: 'excel!Excel.Interfaces.CustomXmlPartLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     name: $all
     fullName: $all
     langs:

@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.TableStyleCollectionUpdateData:interface'
     summary: >-
-      An interface for updating data on the TableStyleCollection object, for use in "tableStyleCollection.set(<!-- -->{
-      ... }<!-- -->)".
+      An interface for updating data on the TableStyleCollection object, for use in `tableStyleCollection.set({ ...
+      })`<!-- -->.
     name: Excel.Interfaces.TableStyleCollectionUpdateData
     fullName: Excel.Interfaces.TableStyleCollectionUpdateData
     langs:

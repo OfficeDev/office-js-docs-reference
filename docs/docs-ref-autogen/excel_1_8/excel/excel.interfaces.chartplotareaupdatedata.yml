@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData:interface'
-    summary: >-
-      An interface for updating data on the ChartPlotArea object, for use in "chartPlotArea.set(<!-- -->{ ... }<!--
-      -->)".
+    summary: 'An interface for updating data on the ChartPlotArea object, for use in `chartPlotArea.set({ ... })`<!-- -->.'
     name: Excel.Interfaces.ChartPlotAreaUpdateData
     fullName: Excel.Interfaces.ChartPlotAreaUpdateData
     langs:

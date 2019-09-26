@@ -134,8 +134,10 @@ items:
         type:
           - boolean
   - uid: 'word!Word.Interfaces.ContentControlLoadOptions#parentContentControl:member'
-    summary: |-
-      Gets the content control that contains the content control. Throws if there isn't a parent content control.
+    summary: >-
+      Gets the content control that contains the content control. Throws an error if there isn't a parent content
+      control.
+
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControl

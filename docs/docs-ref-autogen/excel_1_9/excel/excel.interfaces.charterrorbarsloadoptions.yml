@@ -19,6 +19,9 @@ items:
       - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#type:member'
       - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#visible:member'
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     name: $all
     fullName: $all
     langs:

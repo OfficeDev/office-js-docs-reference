@@ -45,8 +45,8 @@ items:
           - 'word!Word.RequestContext:class'
   - uid: 'word!Word.ListItem#getAncestor:member(1)'
     summary: >-
-      Gets the list item parent, or the closest ancestor if the parent does not exist. Throws if the list item has no
-      ancestor.
+      Gets the list item parent, or the closest ancestor if the parent does not exist. Throws an error if the list item
+      has no ancestor.
 
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]

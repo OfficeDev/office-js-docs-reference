@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ShapeCollectionUpdateData:interface'
-    summary: >-
-      An interface for updating data on the ShapeCollection object, for use in "shapeCollection.set(<!-- -->{ ... }<!--
-      -->)".
+    summary: 'An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`<!-- -->.'
     name: Excel.Interfaces.ShapeCollectionUpdateData
     fullName: Excel.Interfaces.ShapeCollectionUpdateData
     langs:

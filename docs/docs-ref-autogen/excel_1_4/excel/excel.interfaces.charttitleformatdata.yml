@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ChartTitleFormatData:interface'
-    summary: An interface describing the data returned by calling "chartTitleFormat.toJSON()".
+    summary: An interface describing the data returned by calling `chartTitleFormat.toJSON()`<!-- -->.
     name: Excel.Interfaces.ChartTitleFormatData
     fullName: Excel.Interfaces.ChartTitleFormatData
     langs:

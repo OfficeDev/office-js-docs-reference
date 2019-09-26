@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartPivotOptionsUpdateData:interface'
     summary: >-
-      An interface for updating data on the ChartPivotOptions object, for use in "chartPivotOptions.set(<!-- -->{ ...
-      }<!-- -->)".
+      An interface for updating data on the ChartPivotOptions object, for use in `chartPivotOptions.set({ ... })`<!--
+      -->.
     name: Excel.Interfaces.ChartPivotOptionsUpdateData
     fullName: Excel.Interfaces.ChartPivotOptionsUpdateData
     langs:

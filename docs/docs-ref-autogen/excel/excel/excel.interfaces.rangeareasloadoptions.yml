@@ -1,8 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.RangeAreasLoadOptions:interface'
-    summary: |-
-      RangeAreas represents a collection of one or more rectangular ranges in the same worksheet.
+    summary: >-
+      RangeAreas represents a collection of one or more rectangular ranges in the same worksheet. To learn how to use
+      discontinguous ranges, read [Work with multiple ranges simultaneously in Excel
+      add-ins](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)<!-- -->.
+
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.RangeAreasLoadOptions
@@ -24,6 +27,9 @@ items:
       - 'excel!Excel.Interfaces.RangeAreasLoadOptions#style:member'
       - 'excel!Excel.Interfaces.RangeAreasLoadOptions#worksheet:member'
   - uid: 'excel!Excel.Interfaces.RangeAreasLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     name: $all
     fullName: $all
     langs:

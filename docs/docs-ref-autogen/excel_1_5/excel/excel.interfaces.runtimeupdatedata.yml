@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.RuntimeUpdateData:interface'
-    summary: 'An interface for updating data on the Runtime object, for use in "runtime.set(<!-- -->{ ... }<!-- -->)".'
+    summary: 'An interface for updating data on the Runtime object, for use in `runtime.set({ ... })`<!-- -->.'
     name: Excel.Interfaces.RuntimeUpdateData
     fullName: Excel.Interfaces.RuntimeUpdateData
     langs:

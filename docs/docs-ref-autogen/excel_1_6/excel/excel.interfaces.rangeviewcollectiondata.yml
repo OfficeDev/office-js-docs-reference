@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.RangeViewCollectionData:interface'
-    summary: An interface describing the data returned by calling "rangeViewCollection.toJSON()".
+    summary: An interface describing the data returned by calling `rangeViewCollection.toJSON()`<!-- -->.
     name: Excel.Interfaces.RangeViewCollectionData
     fullName: Excel.Interfaces.RangeViewCollectionData
     langs:

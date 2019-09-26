@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.PageBreakCollectionUpdateData:interface'
     summary: >-
-      An interface for updating data on the PageBreakCollection object, for use in "pageBreakCollection.set(<!-- -->{
-      ... }<!-- -->)".
+      An interface for updating data on the PageBreakCollection object, for use in `pageBreakCollection.set({ ...
+      })`<!-- -->.
     name: Excel.Interfaces.PageBreakCollectionUpdateData
     fullName: Excel.Interfaces.PageBreakCollectionUpdateData
     langs:

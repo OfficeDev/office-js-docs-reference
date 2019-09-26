@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartSeriesFormatUpdateData:interface'
     summary: >-
-      An interface for updating data on the ChartSeriesFormat object, for use in "chartSeriesFormat.set(<!-- -->{ ...
-      }<!-- -->)".
+      An interface for updating data on the ChartSeriesFormat object, for use in `chartSeriesFormat.set({ ... })`<!--
+      -->.
     name: Excel.Interfaces.ChartSeriesFormatUpdateData
     fullName: Excel.Interfaces.ChartSeriesFormatUpdateData
     langs:

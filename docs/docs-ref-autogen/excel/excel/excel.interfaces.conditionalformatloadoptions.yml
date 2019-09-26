@@ -1,8 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ConditionalFormatLoadOptions:interface'
-    summary: |-
-      An object encapsulating a conditional format's range, format, rule, and other properties.
+    summary: >-
+      An object encapsulating a conditional format's range, format, rule, and other properties. To learn more about the
+      conditional formatting object model, read [Apply conditional formatting to Excel
+      ranges](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting)<!-- -->.
+
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.ConditionalFormatLoadOptions
@@ -34,6 +37,9 @@ items:
       - 'excel!Excel.Interfaces.ConditionalFormatLoadOptions#topBottomOrNullObject:member'
       - 'excel!Excel.Interfaces.ConditionalFormatLoadOptions#type:member'
   - uid: 'excel!Excel.Interfaces.ConditionalFormatLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     name: $all
     fullName: $all
     langs:

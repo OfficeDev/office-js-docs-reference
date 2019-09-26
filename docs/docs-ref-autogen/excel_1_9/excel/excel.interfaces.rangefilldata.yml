@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.RangeFillData:interface'
-    summary: An interface describing the data returned by calling "rangeFill.toJSON()".
+    summary: An interface describing the data returned by calling `rangeFill.toJSON()`<!-- -->.
     name: Excel.Interfaces.RangeFillData
     fullName: Excel.Interfaces.RangeFillData
     langs:
@@ -16,7 +16,7 @@ items:
       - 'excel!Excel.Interfaces.RangeFillData#tintAndShade:member'
   - uid: 'excel!Excel.Interfaces.RangeFillData#color:member'
     summary: >-
-      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
+      HTML color code representing the color of the background, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange")
 
 

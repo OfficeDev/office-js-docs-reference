@@ -19,6 +19,9 @@ items:
       - 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions#showMeanMarker:member'
       - 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions#showOutlierPoints:member'
   - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     name: $all
     fullName: $all
     langs:

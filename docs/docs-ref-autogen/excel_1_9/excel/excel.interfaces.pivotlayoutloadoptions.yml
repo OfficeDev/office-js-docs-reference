@@ -20,6 +20,9 @@ items:
       - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#showRowGrandTotals:member'
       - 'excel!Excel.Interfaces.PivotLayoutLoadOptions#subtotalLocation:member'
   - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     name: $all
     fullName: $all
     langs:

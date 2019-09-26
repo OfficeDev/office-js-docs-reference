@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.SlicerItemCollectionUpdateData:interface'
     summary: >-
-      An interface for updating data on the SlicerItemCollection object, for use in "slicerItemCollection.set(<!-- -->{
-      ... }<!-- -->)".
+      An interface for updating data on the SlicerItemCollection object, for use in `slicerItemCollection.set({ ...
+      })`<!-- -->.
     name: Excel.Interfaces.SlicerItemCollectionUpdateData
     fullName: Excel.Interfaces.SlicerItemCollectionUpdateData
     langs:

@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.CommentReplyCollectionUpdateData:interface'
     summary: >-
-      An interface for updating data on the CommentReplyCollection object, for use in "commentReplyCollection.set(<!--
-      -->{ ... }<!-- -->)".
+      An interface for updating data on the CommentReplyCollection object, for use in `commentReplyCollection.set({ ...
+      })`<!-- -->.
     name: Excel.Interfaces.CommentReplyCollectionUpdateData
     fullName: Excel.Interfaces.CommentReplyCollectionUpdateData
     langs:

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ChartTrendlineFormatData:interface'
-    summary: An interface describing the data returned by calling "chartTrendlineFormat.toJSON()".
+    summary: An interface describing the data returned by calling `chartTrendlineFormat.toJSON()`<!-- -->.
     name: Excel.Interfaces.ChartTrendlineFormatData
     fullName: Excel.Interfaces.ChartTrendlineFormatData
     langs:

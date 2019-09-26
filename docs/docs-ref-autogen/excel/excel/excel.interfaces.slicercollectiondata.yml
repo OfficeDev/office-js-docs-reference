@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.SlicerCollectionData:interface'
-    summary: An interface describing the data returned by calling "slicerCollection.toJSON()".
+    summary: An interface describing the data returned by calling `slicerCollection.toJSON()`<!-- -->.
     name: Excel.Interfaces.SlicerCollectionData
     fullName: Excel.Interfaces.SlicerCollectionData
     langs:

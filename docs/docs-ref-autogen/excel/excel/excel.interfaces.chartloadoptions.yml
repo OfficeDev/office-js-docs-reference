@@ -1,8 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ChartLoadOptions:interface'
-    summary: |-
-      Represents a chart object in a workbook.
+    summary: >-
+      Represents a chart object in a workbook. To learn more about the Chart object model, see [Work with charts using
+      the Excel JavaScript API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)<!-- -->.
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.ChartLoadOptions
@@ -38,6 +40,9 @@ items:
       - 'excel!Excel.Interfaces.ChartLoadOptions#width:member'
       - 'excel!Excel.Interfaces.ChartLoadOptions#worksheet:member'
   - uid: 'excel!Excel.Interfaces.ChartLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     name: $all
     fullName: $all
     langs:

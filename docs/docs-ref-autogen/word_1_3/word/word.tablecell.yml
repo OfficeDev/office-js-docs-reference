@@ -229,7 +229,7 @@ items:
             - '"Top" | "Left" | "Bottom" | "Right"'
   - uid: 'word!Word.TableCell#getNext:member(1)'
     summary: |-
-      Gets the next cell. Throws if this cell is the last one.
+      Gets the next cell. Throws an error if this cell is the last one.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getNext()

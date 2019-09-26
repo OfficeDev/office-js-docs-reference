@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.HeaderFooterData:interface'
-    summary: An interface describing the data returned by calling "headerFooter.toJSON()".
+    summary: An interface describing the data returned by calling `headerFooter.toJSON()`<!-- -->.
     name: Excel.Interfaces.HeaderFooterData
     fullName: Excel.Interfaces.HeaderFooterData
     langs:

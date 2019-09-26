@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ApplicationData:interface'
-    summary: An interface describing the data returned by calling "application.toJSON()".
+    summary: An interface describing the data returned by calling `application.toJSON()`<!-- -->.
     name: Excel.Interfaces.ApplicationData
     fullName: Excel.Interfaces.ApplicationData
     langs:

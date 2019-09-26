@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.StyleCollectionData:interface'
-    summary: An interface describing the data returned by calling "styleCollection.toJSON()".
+    summary: An interface describing the data returned by calling `styleCollection.toJSON()`<!-- -->.
     name: Excel.Interfaces.StyleCollectionData
     fullName: Excel.Interfaces.StyleCollectionData
     langs:

@@ -197,8 +197,8 @@ items:
           - boolean
   - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#list:member'
     summary: >-
-      For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Throws if the paragraph is not in
-      a list.
+      For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Throws an error if the paragraph
+      is not in a list.
 
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -214,8 +214,8 @@ items:
           - 'word!Word.Interfaces.ListLoadOptions:interface'
   - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#listItem:member'
     summary: >-
-      For EACH ITEM in the collection: Gets the ListItem for the paragraph. Throws if the paragraph is not part of a
-      list.
+      For EACH ITEM in the collection: Gets the ListItem for the paragraph. Throws an error if the paragraph is not part
+      of a list.
 
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -295,8 +295,8 @@ items:
           - 'word!Word.Interfaces.BodyLoadOptions:interface'
   - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member'
     summary: >-
-      For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws if there isn't a
-      parent content control.
+      For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws an error if there
+      isn't a parent content control.
 
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -329,8 +329,8 @@ items:
           - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
   - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTable:member'
     summary: >-
-      For EACH ITEM in the collection: Gets the table that contains the paragraph. Throws if it is not contained in a
-      table.
+      For EACH ITEM in the collection: Gets the table that contains the paragraph. Throws an error if it is not
+      contained in a table.
 
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -346,8 +346,8 @@ items:
           - 'word!Word.Interfaces.TableLoadOptions:interface'
   - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableCell:member'
     summary: >-
-      For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Throws if it is not contained in
-      a table cell.
+      For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Throws an error if it is not
+      contained in a table cell.
 
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
