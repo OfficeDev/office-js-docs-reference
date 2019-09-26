@@ -108,40 +108,22 @@ items:
           - string
   - uid: 'excel!Excel.HeaderFooter#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
-
-
-      `load(option?: string | string[]): Excel.HeaderFooter` - Where option is a comma-delimited string or an array of
-      strings that specify the properties to load.
-
-
-      `load(option?: { select?: string; expand?: string; }): Excel.HeaderFooter` - Where option.select is a
-      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
-      specifies the navigation properties to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.HeaderFooter` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
-    name: load(option)
-    fullName: load(option)
+    name: load(options)
+    fullName: load(options)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Excel.Interfaces.HeaderFooterLoadOptions): Excel.HeaderFooter;'
+      content: 'load(options?: Excel.Interfaces.HeaderFooterLoadOptions): Excel.HeaderFooter;'
       return:
         type:
           - 'excel!Excel.HeaderFooter:class'
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: options
+          description: Provides options for which properties of the object to load.
           type:
             - 'excel!Excel.Interfaces.HeaderFooterLoadOptions:interface'
   - uid: 'excel!Excel.HeaderFooter#load:member(2)'
@@ -174,7 +156,11 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.HeaderFooter;'
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.HeaderFooter;
       return:
         type:
           - 'excel!Excel.HeaderFooter:class'
@@ -182,10 +168,14 @@ items:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
-            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type:
-            - '{ select?: string; expand?: string; }'
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: 'excel!Excel.HeaderFooter#rightFooter:member'
     summary: >-
       Gets or sets the right footer of the worksheet. To apply font formatting or insert a variable value, use format

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.TableScopedCollectionData:interface'
-    summary: An interface describing the data returned by calling "tableScopedCollection.toJSON()".
+    summary: An interface describing the data returned by calling `tableScopedCollection.toJSON()`<!-- -->.
     name: Excel.Interfaces.TableScopedCollectionData
     fullName: Excel.Interfaces.TableScopedCollectionData
     langs:

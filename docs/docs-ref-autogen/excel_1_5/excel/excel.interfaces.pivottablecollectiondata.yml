@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.PivotTableCollectionData:interface'
-    summary: An interface describing the data returned by calling "pivotTableCollection.toJSON()".
+    summary: An interface describing the data returned by calling `pivotTableCollection.toJSON()`<!-- -->.
     name: Excel.Interfaces.PivotTableCollectionData
     fullName: Excel.Interfaces.PivotTableCollectionData
     langs:

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaData:interface'
-    summary: An interface describing the data returned by calling "chartPlotArea.toJSON()".
+    summary: An interface describing the data returned by calling `chartPlotArea.toJSON()`<!-- -->.
     name: Excel.Interfaces.ChartPlotAreaData
     fullName: Excel.Interfaces.ChartPlotAreaData
     langs:

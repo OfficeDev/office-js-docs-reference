@@ -2,7 +2,7 @@
 items:
   - uid: 'excel!Excel.WorksheetColumnSortedEventArgs:interface'
     summary: >-
-      Provides information about the worksheet that raised the ColumnSorted event.
+      Provides information about the column-sorted event and its related worksheet.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -21,7 +21,8 @@ items:
       - 'excel!Excel.WorksheetColumnSortedEventArgs#worksheetId:member'
   - uid: 'excel!Excel.WorksheetColumnSortedEventArgs#address:member'
     summary: >-
-      Gets the range address that represents the sorted areas of a specific worksheet.
+      Gets the range address that represents the sorted areas of a specific worksheet. Only columns changed as a result
+      of the sort operation are returned.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

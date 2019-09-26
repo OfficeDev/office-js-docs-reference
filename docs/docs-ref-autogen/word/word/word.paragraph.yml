@@ -327,9 +327,9 @@ items:
   - uid: 'word!Word.Paragraph#getHtml:member(1)'
     summary: >-
       Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting
-      will be a close, but not exact, match to the formatting of the document. This method does not return the exact
-      same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or
-      consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
+      will be a close, but not exact, match for of the formatting of the document. This method does not return the exact
+      same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact
+      fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
 
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -381,7 +381,7 @@ items:
           ```
   - uid: 'word!Word.Paragraph#getNext:member(1)'
     summary: |-
-      Gets the next paragraph. Throws if the paragraph is the last one.
+      Gets the next paragraph. Throws an error if the paragraph is the last one.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getNext()
@@ -464,7 +464,7 @@ items:
           ```
   - uid: 'word!Word.Paragraph#getPrevious:member(1)'
     summary: |-
-      Gets the previous paragraph. Throws if the paragraph is the first one.
+      Gets the previous paragraph. Throws an error if the paragraph is the first one.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: getPrevious()
@@ -624,10 +624,8 @@ items:
         type:
           - 'word!Word.InlinePictureCollection:class'
   - uid: 'word!Word.Paragraph#insertBreak:member(1)'
-    summary: >-
-      Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
-      'After'.
-
+    summary: |-
+      Inserts a break at the specified location in the main document.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertBreak(breakType, insertLocation)'
@@ -671,10 +669,8 @@ items:
           type:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.Paragraph#insertBreak:member(2)'
-    summary: >-
-      Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
-      'After'.
-
+    summary: |-
+      Inserts a break at the specified location in the main document.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertBreak(breakTypeString, insertLocation)'
@@ -794,10 +790,8 @@ items:
           });
           ```
   - uid: 'word!Word.Paragraph#insertFileFromBase64:member(1)'
-    summary: >-
-      Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace',
-      'Start', or 'End'.
-
+    summary: |-
+      Inserts a document into the paragraph at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertFileFromBase64(base64File, insertLocation)'
@@ -821,10 +815,8 @@ items:
           type:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.Paragraph#insertFileFromBase64:member(2)'
-    summary: >-
-      Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace',
-      'Start', or 'End'.
-
+    summary: |-
+      Inserts a document into the paragraph at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertFileFromBase64(base64File, insertLocationString)'
@@ -850,10 +842,8 @@ items:
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.Paragraph#insertHtml:member(1)'
-    summary: >-
-      Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
-      'End'.
-
+    summary: |-
+      Inserts HTML into the paragraph at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertHtml(html, insertLocation)'
@@ -916,10 +906,8 @@ items:
           type:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.Paragraph#insertHtml:member(2)'
-    summary: >-
-      Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
-      'End'.
-
+    summary: |-
+      Inserts HTML into the paragraph at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertHtml(html, insertLocationString)'
@@ -943,10 +931,8 @@ items:
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.Paragraph#insertInlinePictureFromBase64:member(1)'
-    summary: >-
-      Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace',
-      'Start', or 'End'.
-
+    summary: |-
+      Inserts a picture into the paragraph at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
@@ -1012,10 +998,8 @@ items:
           type:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.Paragraph#insertInlinePictureFromBase64:member(2)'
-    summary: >-
-      Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace',
-      'Start', or 'End'.
-
+    summary: |-
+      Inserts a picture into the paragraph at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocationString)'
@@ -1041,10 +1025,8 @@ items:
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.Paragraph#insertOoxml:member(1)'
-    summary: >-
-      Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
-      'End'.
-
+    summary: |-
+      Inserts OOXML into the paragraph at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertOoxml(ooxml, insertLocation)'
@@ -1068,10 +1050,8 @@ items:
           type:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.Paragraph#insertOoxml:member(2)'
-    summary: >-
-      Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
-      'End'.
-
+    summary: |-
+      Inserts OOXML into the paragraph at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertOoxml(ooxml, insertLocationString)'
@@ -1096,7 +1076,7 @@ items:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.Paragraph#insertParagraph:member(1)'
     summary: |-
-      Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+      Inserts a paragraph at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertParagraph(paragraphText, insertLocation)'
@@ -1178,7 +1158,7 @@ items:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.Paragraph#insertParagraph:member(2)'
     summary: |-
-      Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+      Inserts a paragraph at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertParagraph(paragraphText, insertLocationString)'
@@ -1204,10 +1184,8 @@ items:
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.Paragraph#insertTable:member(1)'
-    summary: >-
-      Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or
-      'After'.
-
+    summary: |-
+      Inserts a table with the specified number of rows and columns.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertTable(rowCount, columnCount, insertLocation, values)'
@@ -1241,10 +1219,8 @@ items:
           type:
             - 'string[][]'
   - uid: 'word!Word.Paragraph#insertTable:member(2)'
-    summary: >-
-      Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or
-      'After'.
-
+    summary: |-
+      Inserts a table with the specified number of rows and columns.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertTable(rowCount, columnCount, insertLocationString, values)'
@@ -1278,10 +1254,8 @@ items:
           type:
             - 'string[][]'
   - uid: 'word!Word.Paragraph#insertText:member(1)'
-    summary: >-
-      Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
-      'End'.
-
+    summary: |-
+      Inserts text into the paragraph at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertText(text, insertLocation)'
@@ -1354,10 +1328,8 @@ items:
           type:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.Paragraph#insertText:member(2)'
-    summary: >-
-      Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
-      'End'.
-
+    summary: |-
+      Inserts text into the paragraph at the specified location.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertText(text, insertLocationString)'
@@ -1500,7 +1472,7 @@ items:
           - number
   - uid: 'word!Word.Paragraph#list:member'
     summary: |-
-      Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list. Read-only.
+      Gets the List to which this paragraph belongs. Throws an error if the paragraph is not in a list. Read-only.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: list
@@ -1515,7 +1487,7 @@ items:
           - 'word!Word.List:class'
   - uid: 'word!Word.Paragraph#listItem:member'
     summary: |-
-      Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. Read-only.
+      Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list. Read-only.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: listItem
@@ -1669,8 +1641,10 @@ items:
         type:
           - 'word!Word.Body:class'
   - uid: 'word!Word.Paragraph#parentContentControl:member'
-    summary: |-
-      Gets the content control that contains the paragraph. Throws if there isn't a parent content control. Read-only.
+    summary: >-
+      Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control.
+      Read-only.
+
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentContentControl
@@ -1702,7 +1676,7 @@ items:
           - 'word!Word.ContentControl:class'
   - uid: 'word!Word.Paragraph#parentTable:member'
     summary: |-
-      Gets the table that contains the paragraph. Throws if it is not contained in a table. Read-only.
+      Gets the table that contains the paragraph. Throws an error if it is not contained in a table. Read-only.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTable
@@ -1716,8 +1690,10 @@ items:
         type:
           - 'word!Word.Table:class'
   - uid: 'word!Word.Paragraph#parentTableCell:member'
-    summary: |-
-      Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell. Read-only.
+    summary: >-
+      Gets the table cell that contains the paragraph. Throws an error if it is not contained in a table cell.
+      Read-only.
+
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: parentTableCell

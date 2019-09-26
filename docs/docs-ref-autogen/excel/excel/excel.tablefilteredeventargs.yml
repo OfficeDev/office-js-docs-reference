@@ -20,7 +20,7 @@ items:
       - 'excel!Excel.TableFilteredEventArgs#worksheetId:member'
   - uid: 'excel!Excel.TableFilteredEventArgs#tableId:member'
     summary: >-
-      Represents the id of the table in which the filter is applied..
+      Represents the id of the table in which the filter is applied.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.SlicerData:interface'
-    summary: An interface describing the data returned by calling "slicer.toJSON()".
+    summary: An interface describing the data returned by calling `slicer.toJSON()`<!-- -->.
     name: Excel.Interfaces.SlicerData
     fullName: Excel.Interfaces.SlicerData
     langs:
@@ -42,8 +42,8 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.SlicerData#height:member'
     summary: >-
-      Represents the height, in points, of the slicer. Throws an invalid argument exception when set with negative value
-      or zero as input.
+      Represents the height, in points, of the slicer. Throws an "The argument is invalid or missing or has an incorrect
+      format." exception when set with negative value or zero as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -97,8 +97,8 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.SlicerData#left:member'
     summary: >-
-      Represents the distance, in points, from the left side of the slicer to the left of the worksheet. Throws an
-      invalid argument exception when set with negative value as input.
+      Represents the distance, in points, from the left side of the slicer to the left of the worksheet. Throws an "The
+      argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -170,7 +170,8 @@ items:
           - 'excel!Excel.Interfaces.SlicerData#slicerItems~0:complex'
   - uid: 'excel!Excel.Interfaces.SlicerData#sortBy:member'
     summary: >-
-      Represents the sort order of the items in the slicer. Possible values are: DataSourceOrder, Ascending, Descending.
+      Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending",
+      "Descending".
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -208,8 +209,8 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.SlicerData#top:member'
     summary: >-
-      Represents the distance, in points, from the top edge of the slicer to the top of the worksheet. Throws an invalid
-      argument exception when set with negative value as input.
+      Represents the distance, in points, from the top edge of the slicer to the top of the worksheet. Throws an "The
+      argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -227,8 +228,8 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.SlicerData#width:member'
     summary: >-
-      Represents the width, in points, of the slicer. Throws an invalid argument exception when set with negative value
-      or zero as input.
+      Represents the width, in points, of the slicer. Throws an "The argument is invalid or missing or has an incorrect
+      format." exception when set with negative value or zero as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

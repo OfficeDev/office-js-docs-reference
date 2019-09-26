@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.WorksheetCollectionData:interface'
-    summary: An interface describing the data returned by calling "worksheetCollection.toJSON()".
+    summary: An interface describing the data returned by calling `worksheetCollection.toJSON()`<!-- -->.
     name: Excel.Interfaces.WorksheetCollectionData
     fullName: Excel.Interfaces.WorksheetCollectionData
     langs:

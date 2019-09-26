@@ -478,7 +478,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#getHtml:member(1)",
-                  "docComment": "/**\n * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -662,7 +662,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertBreak:member(1)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakType - Required. The break type to add to the body.\n *\n * @param insertLocation - Required. The value can be 'Start' or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a break at the specified location in the main document.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakType - Required. The break type to add to the body.\n *\n * @param insertLocation - Required. The value can be 'Start' or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -723,7 +723,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertBreak:member(2)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. The break type to add to the body.\n *\n * @param insertLocation - Required. The value can be 'Start' or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a break at the specified location in the main document.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. The break type to add to the body.\n *\n * @param insertLocation - Required. The value can be 'Start' or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -811,7 +811,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertFileFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a document into the body at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -872,7 +872,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertFileFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a document into the body at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -932,7 +932,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertHtml:member(1)",
-                  "docComment": "/**\n * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in the document.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts HTML at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in the document.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -993,7 +993,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertHtml:member(2)",
-                  "docComment": "/**\n * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in the document.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts HTML at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in the document.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1053,7 +1053,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertInlinePictureFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the body.\n *\n * @param insertLocation - Required. The value can be 'Start' or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a picture into the body at the specified location.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the body.\n *\n * @param insertLocation - Required. The value can be 'Start' or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1114,7 +1114,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertInlinePictureFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the body.\n *\n * @param insertLocationString - Required. The value can be 'Start' or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a picture into the body at the specified location.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the body.\n *\n * @param insertLocationString - Required. The value can be 'Start' or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1174,7 +1174,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertOoxml:member(1)",
-                  "docComment": "/**\n * Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1235,7 +1235,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertOoxml:member(2)",
-                  "docComment": "/**\n * Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1295,7 +1295,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertParagraph:member(1)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Start' or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Start' or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1356,7 +1356,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertParagraph:member(2)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Start' or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Start' or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1416,7 +1416,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertTable:member(1)",
-                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocation - Required. The value can be 'Start' or 'End'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocation - Required. The value can be 'Start' or 'End'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1507,7 +1507,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertTable:member(2)",
-                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocationString - Required. The value can be 'Start' or 'End'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocationString - Required. The value can be 'Start' or 'End'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1597,7 +1597,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertText:member(1)",
-                  "docComment": "/**\n * Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts text into the body at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1658,7 +1658,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertText:member(2)",
-                  "docComment": "/**\n * Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts text into the body at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1908,7 +1908,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Body#parentBody:member",
-                  "docComment": "/**\n * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there isn't a parent body. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws an error if there isn't a parent body. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1962,7 +1962,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Body#parentContentControl:member",
-                  "docComment": "/**\n * Gets the content control that contains the body. Throws if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets the content control that contains the body. Throws an error if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2016,7 +2016,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Body#parentSection:member",
-                  "docComment": "/**\n * Gets the parent section of the body. Throws if there isn't a parent section. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the parent section of the body. Throws an error if there isn't a parent section. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3974,7 +3974,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#getHtml:member(1)",
-                  "docComment": "/**\n * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4244,7 +4244,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertBreak:member(1)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakType - Required. Type of break.\n *\n * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a break at the specified location in the main document. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakType - Required. Type of break.\n *\n * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4305,7 +4305,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertBreak:member(2)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. Type of break.\n *\n * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a break at the specified location in the main document. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. Type of break.\n *\n * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4364,7 +4364,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertFileFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts a document into the content control at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4425,7 +4425,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertFileFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts a document into the content control at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4485,7 +4485,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertHtml:member(1)",
-                  "docComment": "/**\n * Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in to the content control.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts HTML into the content control at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in to the content control.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4546,7 +4546,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertHtml:member(2)",
-                  "docComment": "/**\n * Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in to the content control.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts HTML into the content control at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in to the content control.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4606,7 +4606,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertInlinePictureFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts an inline picture into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the content control.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts an inline picture into the content control at the specified location.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the content control.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4667,7 +4667,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertInlinePictureFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts an inline picture into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the content control.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts an inline picture into the content control at the specified location.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the content control.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4727,7 +4727,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertOoxml:member(1)",
-                  "docComment": "/**\n * Inserts OOXML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in to the content control.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML into the content control at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in to the content control.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4788,7 +4788,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertOoxml:member(2)",
-                  "docComment": "/**\n * Inserts OOXML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in to the content control.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML into the content control at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in to the content control.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4848,7 +4848,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertParagraph:member(1)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4909,7 +4909,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertParagraph:member(2)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4969,7 +4969,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertTable:member(1)",
-                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns into, or next to, a content control. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns into, or next to, a content control.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5060,7 +5060,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertTable:member(2)",
-                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns into, or next to, a content control. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocationString - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns into, or next to, a content control.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocationString - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5150,7 +5150,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertText:member(1)",
-                  "docComment": "/**\n * Inserts text into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. The text to be inserted in to the content control.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts text into the content control at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. The text to be inserted in to the content control.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5211,7 +5211,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertText:member(2)",
-                  "docComment": "/**\n * Inserts text into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. The text to be inserted in to the content control.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts text into the content control at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. The text to be inserted in to the content control.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5488,7 +5488,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.ContentControl#parentContentControl:member",
-                  "docComment": "/**\n * Gets the content control that contains the content control. Throws if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets the content control that contains the content control. Throws an error if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5542,7 +5542,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.ContentControl#parentTable:member",
-                  "docComment": "/**\n * Gets the table that contains the content control. Throws if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the table that contains the content control. Throws an error if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5569,7 +5569,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.ContentControl#parentTableCell:member",
-                  "docComment": "/**\n * Gets the table cell that contains the content control. Throws if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the table cell that contains the content control. Throws an error if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6497,7 +6497,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControlCollection#getById:member(1)",
-                  "docComment": "/**\n * Gets a content control by its identifier. Throws if there isn't a content control with the identifier in this collection.\n *\n * [Api set: WordApi 1.1]\n *\n * @param id - Required. A content control identifier.\n */\n",
+                  "docComment": "/**\n * Gets a content control by its identifier. Throws an error if there isn't a content control with the identifier in this collection.\n *\n * [Api set: WordApi 1.1]\n *\n * @param id - Required. A content control identifier.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6727,7 +6727,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControlCollection#getFirst:member(1)",
-                  "docComment": "/**\n * Gets the first content control in this collection. Throws if this collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the first content control in this collection. Throws an error if this collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7936,7 +7936,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.CustomProperty#value:member",
-                  "docComment": "/**\n * Gets or sets the value of the custom property. Note that even though Word on the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets or sets the value of the custom property. Note that even though Word for the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8139,7 +8139,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.CustomPropertyCollection#getItem:member(1)",
-                  "docComment": "/**\n * Gets a custom property object by its key, which is case-insensitive. Throws if the custom property does not exist.\n *\n * [Api set: WordApi 1.3]\n *\n * @param key - The key that identifies the custom property object.\n */\n",
+                  "docComment": "/**\n * Gets a custom property object by its key, which is case-insensitive. Throws an error if the custom property does not exist.\n *\n * [Api set: WordApi 1.3]\n *\n * @param key - The key that identifies the custom property object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8795,7 +8795,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#save:member(1)",
-                  "docComment": "/**\n * Saves the document. This will use the Word default file naming convention if the document has not been saved before.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Saves the document. This uses the Word default file naming convention if the document has not been saved before.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9370,7 +9370,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.DocumentCreated#save:member(1)",
-                  "docComment": "/**\n * Saves the document. This will use the Word default file naming convention if the document has not been saved before.\n *\n * [Api set: WordApiHiddenDocument 1.3]\n */\n",
+                  "docComment": "/**\n * Saves the document. This uses the Word default file naming convention if the document has not been saved before.\n *\n * [Api set: WordApiHiddenDocument 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11094,7 +11094,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Font#highlightColor:member",
-                  "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * **Note**: Only the default highlight colors are available in Office on Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office on Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. *Note**: Only the default highlight colors are available in Office for Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11698,7 +11698,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "word!Word.HeaderFooterType.primary:member",
-                  "docComment": "/**\n * Returns the header or footer on all pages of a section, with the first page or odd pages excluded if they are different.\n */\n",
+                  "docComment": "/**\n * Returns the header or footer on all pages of a section, but excludes the first page or odd pages if they are different.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12192,7 +12192,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#getNext:member(1)",
-                  "docComment": "/**\n * Gets the next inline image. Throws if this inline image is the last one.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the next inline image. Throws an error if this inline image is the last one.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12393,7 +12393,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertBreak:member(1)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param breakType - Required. The break type to add.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a break at the specified location in the main document.\n *\n * [Api set: WordApi 1.2]\n *\n * @param breakType - Required. The break type to add.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12454,7 +12454,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertBreak:member(2)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param breakTypeString - Required. The break type to add.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a break at the specified location in the main document.\n *\n * [Api set: WordApi 1.2]\n *\n * @param breakTypeString - Required. The break type to add.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12542,7 +12542,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertFileFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a document at the specified location.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12603,7 +12603,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertFileFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a document at the specified location.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12663,7 +12663,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertHtml:member(1)",
-                  "docComment": "/**\n * Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param html - Required. The HTML to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts HTML at the specified location.\n *\n * [Api set: WordApi 1.2]\n *\n * @param html - Required. The HTML to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12724,7 +12724,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertHtml:member(2)",
-                  "docComment": "/**\n * Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param html - Required. The HTML to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts HTML at the specified location.\n *\n * [Api set: WordApi 1.2]\n *\n * @param html - Required. The HTML to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12784,7 +12784,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertInlinePictureFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts an inline picture at the specified location.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12845,7 +12845,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertInlinePictureFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts an inline picture at the specified location.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12905,7 +12905,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertOoxml:member(1)",
-                  "docComment": "/**\n * Inserts OOXML at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML at the specified location.\n *\n * [Api set: WordApi 1.2]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12966,7 +12966,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertOoxml:member(2)",
-                  "docComment": "/**\n * Inserts OOXML at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML at the specified location.\n *\n * [Api set: WordApi 1.2]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13026,7 +13026,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertParagraph:member(1)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location.\n *\n * [Api set: WordApi 1.2]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13087,7 +13087,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertParagraph:member(2)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location.\n *\n * [Api set: WordApi 1.2]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13147,7 +13147,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertText:member(1)",
-                  "docComment": "/**\n * Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts text at the specified location.\n *\n * [Api set: WordApi 1.2]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13208,7 +13208,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertText:member(2)",
-                  "docComment": "/**\n * Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts text at the specified location.\n *\n * [Api set: WordApi 1.2]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13457,7 +13457,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.InlinePicture#parentContentControl:member",
-                  "docComment": "/**\n * Gets the content control that contains the inline image. Throws if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets the content control that contains the inline image. Throws an error if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13511,7 +13511,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.InlinePicture#parentTable:member",
-                  "docComment": "/**\n * Gets the table that contains the inline image. Throws if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the table that contains the inline image. Throws an error if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13538,7 +13538,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.InlinePicture#parentTableCell:member",
-                  "docComment": "/**\n * Gets the table cell that contains the inline image. Throws if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the table cell that contains the inline image. Throws an error if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13983,7 +13983,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePictureCollection#getFirst:member(1)",
-                  "docComment": "/**\n * Gets the first inline image in this collection. Throws if this collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the first inline image in this collection. Throws an error if this collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14811,7 +14811,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.BodyLoadOptions#parentBody:member",
-                      "docComment": "/**\n * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there isn't a parent body.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws an error if there isn't a parent body.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14863,7 +14863,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.BodyLoadOptions#parentContentControl:member",
-                      "docComment": "/**\n * Gets the content control that contains the body. Throws if there isn't a parent content control.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets the content control that contains the body. Throws an error if there isn't a parent content control.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14915,7 +14915,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.BodyLoadOptions#parentSection:member",
-                      "docComment": "/**\n * Gets the parent section of the body. Throws if there isn't a parent section.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the parent section of the body. Throws an error if there isn't a parent section.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15494,7 +15494,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControl:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws if there isn't a parent content control.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws an error if there isn't a parent content control.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15546,7 +15546,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTable:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table that contains the content control. Throws if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table that contains the content control. Throws an error if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15572,7 +15572,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlCollectionLoadOptions#parentTableCell:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table cell that contains the content control. Throws if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table cell that contains the content control. Throws an error if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16701,7 +16701,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlLoadOptions#parentContentControl:member",
-                      "docComment": "/**\n * Gets the content control that contains the content control. Throws if there isn't a parent content control.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets the content control that contains the content control. Throws an error if there isn't a parent content control.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16753,7 +16753,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlLoadOptions#parentTable:member",
-                      "docComment": "/**\n * Gets the table that contains the content control. Throws if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the table that contains the content control. Throws an error if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16779,7 +16779,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlLoadOptions#parentTableCell:member",
-                      "docComment": "/**\n * Gets the table cell that contains the content control. Throws if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the table cell that contains the content control. Throws an error if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17521,7 +17521,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CustomPropertyCollectionLoadOptions#value:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the value of the custom property. Note that even though Word on the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets or sets the value of the custom property. Note that even though Word for the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17663,7 +17663,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CustomPropertyData#value:member",
-                      "docComment": "/**\n * Gets or sets the value of the custom property. Note that even though Word on the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets or sets the value of the custom property. Note that even though Word for the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17779,7 +17779,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CustomPropertyLoadOptions#value:member",
-                      "docComment": "/**\n * Gets or sets the value of the custom property. Note that even though Word on the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets or sets the value of the custom property. Note that even though Word for the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17820,7 +17820,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.CustomPropertyUpdateData#value:member",
-                      "docComment": "/**\n * Gets or sets the value of the custom property. Note that even though Word on the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets or sets the value of the custom property. Note that even though Word for the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -19820,7 +19820,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontData#highlightColor:member",
-                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * **Note**: Only the default highlight colors are available in Office on Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office on Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. *Note**: Only the default highlight colors are available in Office for Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -20141,7 +20141,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontLoadOptions#highlightColor:member",
-                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * **Note**: Only the default highlight colors are available in Office on Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office on Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. *Note**: Only the default highlight colors are available in Office for Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -20432,7 +20432,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontUpdateData#highlightColor:member",
-                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * **Note**: Only the default highlight colors are available in Office on Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office on Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. *Note**: Only the default highlight colors are available in Office for Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -20875,7 +20875,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws if there isn't a parent content control.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws an error if there isn't a parent content control.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -20927,7 +20927,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTable:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table that contains the inline image. Throws if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table that contains the inline image. Throws an error if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -20953,7 +20953,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentTableCell:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table cell that contains the inline image. Throws if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table cell that contains the inline image. Throws an error if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21460,7 +21460,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureLoadOptions#parentContentControl:member",
-                      "docComment": "/**\n * Gets the content control that contains the inline image. Throws if there isn't a parent content control.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets the content control that contains the inline image. Throws an error if there isn't a parent content control.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21512,7 +21512,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureLoadOptions#parentTable:member",
-                      "docComment": "/**\n * Gets the table that contains the inline image. Throws if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the table that contains the inline image. Throws an error if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -21538,7 +21538,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureLoadOptions#parentTableCell:member",
-                      "docComment": "/**\n * Gets the table cell that contains the inline image. Throws if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the table cell that contains the inline image. Throws an error if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22818,7 +22818,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#list:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Throws an error if the paragraph is not in a list.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22844,7 +22844,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#listItem:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -22973,7 +22973,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws if there isn't a parent content control.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -23025,7 +23025,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTable:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table that contains the paragraph. Throws if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table that contains the paragraph. Throws an error if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -23051,7 +23051,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableCell:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Throws an error if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -23627,7 +23627,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphData#listItem:member",
-                      "docComment": "/**\n * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -24151,7 +24151,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#list:member",
-                      "docComment": "/**\n * Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the List to which this paragraph belongs. Throws an error if the paragraph is not in a list.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -24177,7 +24177,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#listItem:member",
-                      "docComment": "/**\n * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -24306,7 +24306,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#parentContentControl:member",
-                      "docComment": "/**\n * Gets the content control that contains the paragraph. Throws if there isn't a parent content control.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -24358,7 +24358,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#parentTable:member",
-                      "docComment": "/**\n * Gets the table that contains the paragraph. Throws if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the table that contains the paragraph. Throws an error if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -24384,7 +24384,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#parentTableCell:member",
-                      "docComment": "/**\n * Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the table cell that contains the paragraph. Throws an error if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -24834,7 +24834,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphUpdateData#listItem:member",
-                      "docComment": "/**\n * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -25230,7 +25230,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.RangeCollectionLoadOptions#parentContentControl:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the content control that contains the range. Throws if there isn't a parent content control.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the content control that contains the range. Throws an error if there isn't a parent content control.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -25282,7 +25282,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.RangeCollectionLoadOptions#parentTable:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table that contains the range. Throws if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table that contains the range. Throws an error if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -25308,7 +25308,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.RangeCollectionLoadOptions#parentTableCell:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table cell that contains the range. Throws if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table cell that contains the range. Throws an error if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -25852,7 +25852,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.RangeLoadOptions#parentContentControl:member",
-                      "docComment": "/**\n * Gets the content control that contains the range. Throws if there isn't a parent content control.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets the content control that contains the range. Throws an error if there isn't a parent content control.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -25904,7 +25904,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.RangeLoadOptions#parentTable:member",
-                      "docComment": "/**\n * Gets the table that contains the range. Throws if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the table that contains the range. Throws an error if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -25930,7 +25930,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.RangeLoadOptions#parentTableCell:member",
-                      "docComment": "/**\n * Gets the table cell that contains the range. Throws if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the table cell that contains the range. Throws an error if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28844,7 +28844,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.TableCollectionLoadOptions#parentContentControl:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the content control that contains the table. Throws if there isn't a parent content control.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the content control that contains the table. Throws an error if there isn't a parent content control.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28896,7 +28896,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.TableCollectionLoadOptions#parentTable:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table that contains this table. Throws if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table that contains this table. Throws an error if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28922,7 +28922,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.TableCollectionLoadOptions#parentTableCell:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table cell that contains this table. Throws if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Gets the table cell that contains this table. Throws an error if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30111,7 +30111,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.TableLoadOptions#parentContentControl:member",
-                      "docComment": "/**\n * Gets the content control that contains the table. Throws if there isn't a parent content control.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the content control that contains the table. Throws an error if there isn't a parent content control.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30163,7 +30163,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.TableLoadOptions#parentTable:member",
-                      "docComment": "/**\n * Gets the table that contains this table. Throws if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the table that contains this table. Throws an error if it is not contained in a table.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -30189,7 +30189,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.TableLoadOptions#parentTableCell:member",
-                      "docComment": "/**\n * Gets the table cell that contains this table. Throws if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the table cell that contains this table. Throws an error if it is not contained in a table cell.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -32215,7 +32215,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.List#getLevelString:member(1)",
-                  "docComment": "/**\n * Gets the bullet, number or picture at the specified level as a string.\n *\n * [Api set: WordApi 1.3]\n *\n * @param level - Required. The level in the list.\n */\n",
+                  "docComment": "/**\n * Gets the bullet, number, or picture at the specified level as a string.\n *\n * [Api set: WordApi 1.3]\n *\n * @param level - Required. The level in the list.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -32290,7 +32290,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.List#insertParagraph:member(1)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location.\n *\n * [Api set: WordApi 1.3]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -32351,7 +32351,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.List#insertParagraph:member(2)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location.\n *\n * [Api set: WordApi 1.3]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -32631,7 +32631,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.List#setLevelAlignment:member(1)",
-                  "docComment": "/**\n * Sets the alignment of the bullet, number or picture at the specified level in the list.\n *\n * [Api set: WordApi 1.3]\n *\n * @param level - Required. The level in the list.\n *\n * @param alignment - Required. The level alignment that can be 'Left', 'Centered', or 'Right'.\n */\n",
+                  "docComment": "/**\n * Sets the alignment of the bullet, number, or picture at the specified level in the list.\n *\n * [Api set: WordApi 1.3]\n *\n * @param level - Required. The level in the list.\n *\n * @param alignment - Required. The level alignment that can be 'Left', 'Centered', or 'Right'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -32691,7 +32691,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.List#setLevelAlignment:member(2)",
-                  "docComment": "/**\n * Sets the alignment of the bullet, number or picture at the specified level in the list.\n *\n * [Api set: WordApi 1.3]\n *\n * @param level - Required. The level in the list.\n *\n * @param alignmentString - Required. The level alignment that can be 'Left', 'Centered', or 'Right'.\n */\n",
+                  "docComment": "/**\n * Sets the alignment of the bullet, number, or picture at the specified level in the list.\n *\n * [Api set: WordApi 1.3]\n *\n * @param level - Required. The level in the list.\n *\n * @param alignmentString - Required. The level alignment that can be 'Left', 'Centered', or 'Right'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -32929,7 +32929,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.List#setLevelIndents:member(1)",
-                  "docComment": "/**\n * Sets the two indents of the specified level in the list.\n *\n * [Api set: WordApi 1.3]\n *\n * @param level - Required. The level in the list.\n *\n * @param textIndent - Required. The text indent in points. It is the same as paragraph left indent.\n *\n * @param bulletNumberPictureIndent - Required. The relative indent, in points, of the bullet, number or picture. It is the same as paragraph first line indent.\n */\n",
+                  "docComment": "/**\n * Sets the two indents of the specified level in the list.\n *\n * [Api set: WordApi 1.3]\n *\n * @param level - Required. The level in the list.\n *\n * @param textIndent - Required. The text indent in points. It is the same as paragraph left indent.\n *\n * @param bulletNumberPictureIndent - Required. The relative indent, in points, of the bullet, number, or picture. It is the same as paragraph first line indent.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -33526,7 +33526,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ListCollection#getById:member(1)",
-                  "docComment": "/**\n * Gets a list by its identifier. Throws if there isn't a list with the identifier in this collection.\n *\n * [Api set: WordApi 1.3]\n *\n * @param id - Required. A list identifier.\n */\n",
+                  "docComment": "/**\n * Gets a list by its identifier. Throws an error if there isn't a list with the identifier in this collection.\n *\n * [Api set: WordApi 1.3]\n *\n * @param id - Required. A list identifier.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -33616,7 +33616,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ListCollection#getFirst:member(1)",
-                  "docComment": "/**\n * Gets the first list in this collection. Throws if this collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the first list in this collection. Throws an error if this collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -34039,7 +34039,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ListItem#getAncestor:member(1)",
-                  "docComment": "/**\n * Gets the list item parent, or the closest ancestor if the parent does not exist. Throws if the list item has no ancestor.\n *\n * [Api set: WordApi 1.3]\n *\n * @param parentOnly - Optional. Specifies only the list item's parent will be returned. The default is false that specifies to get the lowest ancestor.\n */\n",
+                  "docComment": "/**\n * Gets the list item parent, or the closest ancestor if the parent does not exist. Throws an error if the list item has no ancestor.\n *\n * [Api set: WordApi 1.3]\n *\n * @param parentOnly - Optional. Specifies only the list item's parent will be returned. The default is false that specifies to get the lowest ancestor.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -35420,7 +35420,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#getHtml:member(1)",
-                  "docComment": "/**\n * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -35453,7 +35453,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#getNext:member(1)",
-                  "docComment": "/**\n * Gets the next paragraph. Throws if the paragraph is the last one.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the next paragraph. Throws an error if the paragraph is the last one.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -35544,7 +35544,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#getPrevious:member(1)",
-                  "docComment": "/**\n * Gets the previous paragraph. Throws if the paragraph is the first one.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the previous paragraph. Throws an error if the paragraph is the first one.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -35780,7 +35780,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertBreak:member(1)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakType - Required. The break type to add to the document.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a break at the specified location in the main document.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakType - Required. The break type to add to the document.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -35841,7 +35841,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertBreak:member(2)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. The break type to add to the document.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a break at the specified location in the main document.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. The break type to add to the document.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -35929,7 +35929,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertFileFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a document into the paragraph at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -35990,7 +35990,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertFileFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a document into the paragraph at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36050,7 +36050,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertHtml:member(1)",
-                  "docComment": "/**\n * Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in the paragraph.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts HTML into the paragraph at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in the paragraph.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36111,7 +36111,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertHtml:member(2)",
-                  "docComment": "/**\n * Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in the paragraph.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts HTML into the paragraph at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in the paragraph.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36171,7 +36171,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertInlinePictureFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a picture into the paragraph at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36232,7 +36232,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertInlinePictureFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a picture into the paragraph at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36292,7 +36292,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertOoxml:member(1)",
-                  "docComment": "/**\n * Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in the paragraph.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML into the paragraph at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in the paragraph.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36353,7 +36353,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertOoxml:member(2)",
-                  "docComment": "/**\n * Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in the paragraph.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML into the paragraph at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in the paragraph.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36413,7 +36413,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertParagraph:member(1)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36474,7 +36474,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertParagraph:member(2)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36534,7 +36534,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertTable:member(1)",
-                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36625,7 +36625,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertTable:member(2)",
-                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36715,7 +36715,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertText:member(1)",
-                  "docComment": "/**\n * Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts text into the paragraph at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36776,7 +36776,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertText:member(2)",
-                  "docComment": "/**\n * Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts text into the paragraph at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36992,7 +36992,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#list:member",
-                  "docComment": "/**\n * Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the List to which this paragraph belongs. Throws an error if the paragraph is not in a list. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -37019,7 +37019,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#listItem:member",
-                  "docComment": "/**\n * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -37289,7 +37289,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#parentContentControl:member",
-                  "docComment": "/**\n * Gets the content control that contains the paragraph. Throws if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -37343,7 +37343,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#parentTable:member",
-                  "docComment": "/**\n * Gets the table that contains the paragraph. Throws if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the table that contains the paragraph. Throws an error if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -37370,7 +37370,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Paragraph#parentTableCell:member",
-                  "docComment": "/**\n * Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the table cell that contains the paragraph. Throws an error if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -38145,7 +38145,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ParagraphCollection#getFirst:member(1)",
-                  "docComment": "/**\n * Gets the first paragraph in this collection. Throws if the collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the first paragraph in this collection. Throws an error if the collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -38203,7 +38203,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ParagraphCollection#getLast:member(1)",
-                  "docComment": "/**\n * Gets the last paragraph in this collection. Throws if the collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the last paragraph in this collection. Throws an error if the collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -38723,7 +38723,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#expandTo:member(1)",
-                  "docComment": "/**\n * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. Throws if the two ranges do not have a union.\n *\n * [Api set: WordApi 1.3]\n *\n * @param range - Required. Another range.\n */\n",
+                  "docComment": "/**\n * Returns a new range that extends from this range in either direction to cover another range. This range is not changed. Throws an error if the two ranges do not have a union.\n *\n * [Api set: WordApi 1.3]\n *\n * @param range - Required. Another range.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -38842,7 +38842,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#getHtml:member(1)",
-                  "docComment": "/**\n * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -38904,7 +38904,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#getNextTextRange:member(1)",
-                  "docComment": "/**\n * Gets the next text range by using punctuation marks and/or other ending marks. Throws if this text range is the last one.\n *\n * [Api set: WordApi 1.3]\n *\n * @param endingMarks - Required. The punctuation marks and/or other ending marks as an array of strings.\n *\n * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the returned range. Default is false which indicates that spacing characters at the start and end of the range are included.\n */\n",
+                  "docComment": "/**\n * Gets the next text range by using punctuation marks and/or other ending marks. Throws an error if this text range is the last one.\n *\n * [Api set: WordApi 1.3]\n *\n * @param endingMarks - Required. The punctuation marks and/or other ending marks as an array of strings.\n *\n * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the returned range. Default is false which indicates that spacing characters at the start and end of the range are included.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -39261,7 +39261,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertBreak:member(1)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakType - Required. The break type to add.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a break at the specified location in the main document.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakType - Required. The break type to add.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -39322,7 +39322,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertBreak:member(2)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. The break type to add.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a break at the specified location in the main document.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. The break type to add.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -39410,7 +39410,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertFileFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a document at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -39471,7 +39471,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertFileFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a document at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -39531,7 +39531,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertHtml:member(1)",
-                  "docComment": "/**\n * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts HTML at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -39592,7 +39592,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertHtml:member(2)",
-                  "docComment": "/**\n * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts HTML at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -39652,7 +39652,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertInlinePictureFromBase64:member(1)",
-                  "docComment": "/**\n * Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a picture at the specified location.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -39713,7 +39713,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertInlinePictureFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a picture at the specified location.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -39773,7 +39773,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertOoxml:member(1)",
-                  "docComment": "/**\n * Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -39834,7 +39834,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertOoxml:member(2)",
-                  "docComment": "/**\n * Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -39894,7 +39894,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertParagraph:member(1)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -39955,7 +39955,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertParagraph:member(2)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -40015,7 +40015,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertTable:member(1)",
-                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -40106,7 +40106,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertTable:member(2)",
-                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -40196,7 +40196,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertText:member(1)",
-                  "docComment": "/**\n * Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts text at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -40257,7 +40257,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertText:member(2)",
-                  "docComment": "/**\n * Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts text at the specified location.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -40317,7 +40317,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#intersectWith:member(1)",
-                  "docComment": "/**\n * Returns a new range as the intersection of this range with another range. This range is not changed. Throws if the two ranges are not overlapped or adjacent.\n *\n * [Api set: WordApi 1.3]\n *\n * @param range - Required. Another range.\n */\n",
+                  "docComment": "/**\n * Returns a new range as the intersection of this range with another range. This range is not changed. Throws an error if the two ranges are not overlapped or adjacent.\n *\n * [Api set: WordApi 1.3]\n *\n * @param range - Required. Another range.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -40652,7 +40652,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Range#parentContentControl:member",
-                  "docComment": "/**\n * Gets the content control that contains the range. Throws if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets the content control that contains the range. Throws an error if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -40706,7 +40706,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Range#parentTable:member",
-                  "docComment": "/**\n * Gets the table that contains the range. Throws if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the table that contains the range. Throws an error if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -40733,7 +40733,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Range#parentTableCell:member",
-                  "docComment": "/**\n * Gets the table cell that contains the range. Throws if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the table cell that contains the range. Throws an error if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -41417,7 +41417,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.RangeCollection#getFirst:member(1)",
-                  "docComment": "/**\n * Gets the first range in this collection. Throws if this collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the first range in this collection. Throws an error if this collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -43112,7 +43112,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Section#getNext:member(1)",
-                  "docComment": "/**\n * Gets the next section. Throws if this section is the last one.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the next section. Throws an error if this section is the last one.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -43555,7 +43555,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.SectionCollection#getFirst:member(1)",
-                  "docComment": "/**\n * Gets the first section in this collection. Throws if this collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the first section in this collection. Throws an error if this collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -47813,7 +47813,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Table#getCell:member(1)",
-                  "docComment": "/**\n * Gets the table cell at a specified row and column. Throws if the specified table cell does not exist.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowIndex - Required. The index of the row.\n *\n * @param cellIndex - Required. The index of the cell in the row.\n */\n",
+                  "docComment": "/**\n * Gets the table cell at a specified row and column. Throws an error if the specified table cell does not exist.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowIndex - Required. The index of the row.\n *\n * @param cellIndex - Required. The index of the cell in the row.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -48032,7 +48032,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Table#getNext:member(1)",
-                  "docComment": "/**\n * Gets the next table. Throws if this table is the last one.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the next table. Throws an error if this table is the last one.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -48090,7 +48090,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Table#getParagraphAfter:member(1)",
-                  "docComment": "/**\n * Gets the paragraph after the table. Throws if there isn't a paragraph after the table.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the paragraph after the table. Throws an error if there isn't a paragraph after the table.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -48148,7 +48148,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Table#getParagraphBefore:member(1)",
-                  "docComment": "/**\n * Gets the paragraph before the table. Throws if there isn't a paragraph before the table.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the paragraph before the table. Throws an error if there isn't a paragraph before the table.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -48383,7 +48383,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Table#insertParagraph:member(1)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location.\n *\n * [Api set: WordApi 1.3]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -48444,7 +48444,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Table#insertParagraph:member(2)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location.\n *\n * [Api set: WordApi 1.3]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -48504,7 +48504,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Table#insertTable:member(1)",
-                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -48595,7 +48595,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Table#insertTable:member(2)",
-                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -48900,7 +48900,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Table#parentContentControl:member",
-                  "docComment": "/**\n * Gets the content control that contains the table. Throws if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the content control that contains the table. Throws an error if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -48954,7 +48954,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Table#parentTable:member",
-                  "docComment": "/**\n * Gets the table that contains this table. Throws if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the table that contains this table. Throws an error if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -48981,7 +48981,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "word!Word.Table#parentTableCell:member",
-                  "docComment": "/**\n * Gets the table cell that contains this table. Throws if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the table cell that contains this table. Throws an error if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -50753,7 +50753,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableCell#getNext:member(1)",
-                  "docComment": "/**\n * Gets the next cell. Throws if this cell is the last one.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the next cell. Throws an error if this cell is the last one.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -51835,7 +51835,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableCellCollection#getFirst:member(1)",
-                  "docComment": "/**\n * Gets the first table cell in this collection. Throws if this collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the first table cell in this collection. Throws an error if this collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -52213,7 +52213,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableCollection#getFirst:member(1)",
-                  "docComment": "/**\n * Gets the first table in this collection. Throws if this collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the first table in this collection. Throws an error if this collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -52917,7 +52917,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableRow#getNext:member(1)",
-                  "docComment": "/**\n * Gets the next row. Throws if this row is the last one.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the next row. Throws an error if this row is the last one.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -54003,7 +54003,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableRowCollection#getFirst:member(1)",
-                  "docComment": "/**\n * Gets the first row in this collection. Throws if this collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets the first row in this collection. Throws an error if this collection is empty.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

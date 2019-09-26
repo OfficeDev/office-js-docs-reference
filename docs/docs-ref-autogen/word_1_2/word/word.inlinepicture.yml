@@ -175,10 +175,8 @@ items:
         type:
           - string
   - uid: 'word!Word.InlinePicture#insertBreak:member(1)'
-    summary: >-
-      Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
-      'After'.
-
+    summary: |-
+      Inserts a break at the specified location in the main document.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertBreak(breakType, insertLocation)'
@@ -202,10 +200,8 @@ items:
           type:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.InlinePicture#insertBreak:member(2)'
-    summary: >-
-      Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
-      'After'.
-
+    summary: |-
+      Inserts a break at the specified location in the main document.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertBreak(breakTypeString, insertLocation)'
@@ -248,7 +244,7 @@ items:
         description: ''
   - uid: 'word!Word.InlinePicture#insertFileFromBase64:member(1)'
     summary: |-
-      Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.
+      Inserts a document at the specified location.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertFileFromBase64(base64File, insertLocation)'
@@ -273,7 +269,7 @@ items:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.InlinePicture#insertFileFromBase64:member(2)'
     summary: |-
-      Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.
+      Inserts a document at the specified location.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertFileFromBase64(base64File, insertLocationString)'
@@ -300,7 +296,7 @@ items:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.InlinePicture#insertHtml:member(1)'
     summary: |-
-      Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
+      Inserts HTML at the specified location.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertHtml(html, insertLocation)'
@@ -325,7 +321,7 @@ items:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.InlinePicture#insertHtml:member(2)'
     summary: |-
-      Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
+      Inserts HTML at the specified location.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertHtml(html, insertLocationString)'
@@ -349,10 +345,8 @@ items:
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.InlinePicture#insertInlinePictureFromBase64:member(1)'
-    summary: >-
-      Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or
-      'After'.
-
+    summary: |-
+      Inserts an inline picture at the specified location.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
@@ -378,10 +372,8 @@ items:
           type:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.InlinePicture#insertInlinePictureFromBase64:member(2)'
-    summary: >-
-      Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or
-      'After'.
-
+    summary: |-
+      Inserts an inline picture at the specified location.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocationString)'
@@ -408,7 +400,7 @@ items:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.InlinePicture#insertOoxml:member(1)'
     summary: |-
-      Inserts OOXML at the specified location. The insertLocation value can be 'Before' or 'After'.
+      Inserts OOXML at the specified location.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertOoxml(ooxml, insertLocation)'
@@ -433,7 +425,7 @@ items:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.InlinePicture#insertOoxml:member(2)'
     summary: |-
-      Inserts OOXML at the specified location. The insertLocation value can be 'Before' or 'After'.
+      Inserts OOXML at the specified location.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertOoxml(ooxml, insertLocationString)'
@@ -458,7 +450,7 @@ items:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.InlinePicture#insertParagraph:member(1)'
     summary: |-
-      Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+      Inserts a paragraph at the specified location.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertParagraph(paragraphText, insertLocation)'
@@ -483,7 +475,7 @@ items:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.InlinePicture#insertParagraph:member(2)'
     summary: |-
-      Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+      Inserts a paragraph at the specified location.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertParagraph(paragraphText, insertLocationString)'
@@ -510,7 +502,7 @@ items:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
   - uid: 'word!Word.InlinePicture#insertText:member(1)'
     summary: |-
-      Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
+      Inserts text at the specified location.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertText(text, insertLocation)'
@@ -535,7 +527,7 @@ items:
             - 'word!Word.InsertLocation:enum'
   - uid: 'word!Word.InlinePicture#insertText:member(2)'
     summary: |-
-      Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
+      Inserts text at the specified location.
 
       \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: 'insertText(text, insertLocationString)'
@@ -670,7 +662,7 @@ items:
           - 'word!Word.Paragraph:class'
   - uid: 'word!Word.InlinePicture#parentContentControl:member'
     summary: >-
-      Gets the content control that contains the inline image. Throws if there isn't a parent content control.
+      Gets the content control that contains the inline image. Throws an error if there isn't a parent content control.
       Read-only.
 
 

@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
     summary: >-
-      An interface for updating data on the DocumentProperties object, for use in "documentProperties.set(<!-- -->{ ...
-      }<!-- -->)".
+      An interface for updating data on the DocumentProperties object, for use in `documentProperties.set({ ... })`<!--
+      -->.
     name: Excel.Interfaces.DocumentPropertiesUpdateData
     fullName: Excel.Interfaces.DocumentPropertiesUpdateData
     langs:

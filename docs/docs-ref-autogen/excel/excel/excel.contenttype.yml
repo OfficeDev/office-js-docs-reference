@@ -12,7 +12,17 @@ items:
     type: enum
     package: excel!
     children:
+      - 'excel!Excel.ContentType.mention:member'
       - 'excel!Excel.ContentType.plain:member'
+  - uid: 'excel!Excel.ContentType.mention:member'
+    summary: Comment content containing mentions.
+    isPreview: true
+    name: mention
+    fullName: mention
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Mention"'
   - uid: 'excel!Excel.ContentType.plain:member'
     summary: Indicates plain format type of the comment content.
     isPreview: true

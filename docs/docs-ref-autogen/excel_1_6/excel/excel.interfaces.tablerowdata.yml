@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.TableRowData:interface'
-    summary: An interface describing the data returned by calling "tableRow.toJSON()".
+    summary: An interface describing the data returned by calling `tableRow.toJSON()`<!-- -->.
     name: Excel.Interfaces.TableRowData
     fullName: Excel.Interfaces.TableRowData
     langs:

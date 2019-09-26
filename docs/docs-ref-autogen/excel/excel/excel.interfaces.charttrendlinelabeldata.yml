@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData:interface'
-    summary: An interface describing the data returned by calling "chartTrendlineLabel.toJSON()".
+    summary: An interface describing the data returned by calling `chartTrendlineLabel.toJSON()`<!-- -->.
     name: Excel.Interfaces.ChartTrendlineLabelData
     fullName: Excel.Interfaces.ChartTrendlineLabelData
     langs:
@@ -87,7 +87,7 @@ items:
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#horizontalAlignment:member'
     summary: >-
       Represents the horizontal alignment for chart trendline label. See Excel.ChartTextHorizontalAlignment for details.
-      This property is valid only when TextOrientation of trendline label is 90, -90 or 180.
+      This property is valid only when TextOrientation of trendline label is -90, 90, or 180.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

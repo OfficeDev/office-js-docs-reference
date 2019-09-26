@@ -29,6 +29,9 @@ items:
       - 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#textOrientation:member'
       - 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#verticalAlignment:member'
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     name: $all
     fullName: $all
     langs:
@@ -260,7 +263,7 @@ items:
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#verticalAlignment:member'
     summary: >-
       Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details. This
-      property is valid only when TextOrientation of data label is 90, -90 or 180.
+      property is valid only when TextOrientation of data label is -90, 90, or 180.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

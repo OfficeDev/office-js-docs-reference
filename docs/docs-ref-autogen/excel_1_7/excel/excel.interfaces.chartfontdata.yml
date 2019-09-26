@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ChartFontData:interface'
-    summary: An interface describing the data returned by calling "chartFont.toJSON()".
+    summary: An interface describing the data returned by calling `chartFont.toJSON()`<!-- -->.
     name: Excel.Interfaces.ChartFontData
     fullName: Excel.Interfaces.ChartFontData
     langs:

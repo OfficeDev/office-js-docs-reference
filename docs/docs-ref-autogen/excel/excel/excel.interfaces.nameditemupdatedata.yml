@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.NamedItemUpdateData:interface'
-    summary: 'An interface for updating data on the NamedItem object, for use in "namedItem.set(<!-- -->{ ... }<!-- -->)".'
+    summary: 'An interface for updating data on the NamedItem object, for use in `namedItem.set({ ... })`<!-- -->.'
     name: Excel.Interfaces.NamedItemUpdateData
     fullName: Excel.Interfaces.NamedItemUpdateData
     langs:

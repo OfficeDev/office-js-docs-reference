@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsData:interface'
-    summary: An interface describing the data returned by calling "chartDataLabels.toJSON()".
+    summary: An interface describing the data returned by calling `chartDataLabels.toJSON()`<!-- -->.
     name: Excel.Interfaces.ChartDataLabelsData
     fullName: Excel.Interfaces.ChartDataLabelsData
     langs:

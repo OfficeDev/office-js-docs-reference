@@ -166,12 +166,8 @@ items:
   - uid: 'excel!Excel.Range#autoFill:member(1)'
     summary: >-
       Fills range from the current range to the destination range using the specified AutoFill logic. The destination
-      range can be null, or can extend the source either horizontally or vertically. If the destination range is null,
-      data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill
-      handle).
-
-
-      For more information, read [Use AutoFill and Flash
+      range can be null, or can extend the source either horizontally or vertically. Discontiguous ranges are not
+      supported. For more information, read [Use AutoFill and Flash
       Fill](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!--
       -->.
 
@@ -188,27 +184,40 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+            const sheet = context.workbook.worksheets.getActiveWorksheet();
+            const sumCell = sheet.getRange("P4");
+            
+            // Copy everything. The formulas will be contextually updated based on their new locations.
+            sumCell.autoFill("P4:P7", Excel.AutoFillType.fillCopy);
+            sumCell.format.autofitColumns();
+            await context.sync();
+          });
+          ```
       parameters:
         - id: destinationRange
-          description: The destination range to fill. Discontiguous ranges are not supported.
+          description: >-
+            The destination range to autofill. If the destination range is null, data is filled out based on the
+            surrounding cells (which is the behavior when double-clicking the UI’s range fill handle).
           type:
             - 'excel!Excel.Range#autoFill~0:complex'
         - id: autoFillType
           description: >-
-            The type of AutoFill. Specifies how the destination range is to be filled, based on the contents of the
+            The type of autofill. Specifies how the destination range is to be filled, based on the contents of the
             current range. Default is "FillDefault".
           type:
             - 'excel!Excel.AutoFillType:enum'
   - uid: 'excel!Excel.Range#autoFill:member(2)'
     summary: >-
       Fills range from the current range to the destination range using the specified AutoFill logic. The destination
-      range can be null, or can extend the source either horizontally or vertically. If the destination range is null,
-      data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill
-      handle).
-
-
-      For more information, read [Use AutoFill and Flash
+      range can be null, or can extend the source either horizontally or vertically. Discontiguous ranges are not
+      supported. For more information, read [Use AutoFill and Flash
       Fill](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!--
       -->.
 
@@ -231,12 +240,14 @@ items:
         description: ''
       parameters:
         - id: destinationRange
-          description: The destination range to fill. Discontiguous ranges are not supported.
+          description: >-
+            The destination range to autofill. If the destination range is null, data is filled out based on the
+            surrounding cells (which is the behavior when double-clicking the UI’s range fill handle).
           type:
             - 'excel!Excel.Range#autoFill~1:complex'
         - id: autoFillTypeString
           description: >-
-            The type of AutoFill. Specifies how the destination range is to be filled, based on the contents of the
+            The type of autofill. Specifies how the destination range is to be filled, based on the contents of the
             current range. Default is "FillDefault".
           type:
             - >-
@@ -452,7 +463,7 @@ items:
   - uid: 'excel!Excel.Range#copyFrom:member(1)'
     summary: >-
       Copies cell data or formatting from the source range or RangeAreas to the current range. The destination range can
-      be of different size than the source range or RangeAreas. The destination will be expanded automatically if it is
+      be a different size than the source range or RangeAreas. The destination will be expanded automatically if it is
       smaller than the source.
 
 
@@ -489,8 +500,8 @@ items:
       parameters:
         - id: sourceRange
           description: >-
-            The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, it must in the
-            outline form which can be created by removing full rows or columns from a rectangular range.
+            The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, their form must
+            be able to be created by removing full rows or columns from a rectangular range.
           type:
             - 'excel!Excel.Range#copyFrom~0:complex'
         - id: copyType
@@ -508,7 +519,7 @@ items:
   - uid: 'excel!Excel.Range#copyFrom:member(2)'
     summary: >-
       Copies cell data or formatting from the source range or RangeAreas to the current range. The destination range can
-      be of different size than the source range or RangeAreas. The destination will be expanded automatically if it is
+      be a different size than the source range or RangeAreas. The destination will be expanded automatically if it is
       smaller than the source.
 
 
@@ -529,8 +540,8 @@ items:
       parameters:
         - id: sourceRange
           description: >-
-            The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, it must in the
-            outline form which can be created by removing full rows or columns from a rectangular range.
+            The source range or RangeAreas to copy from. When the source RangeAreas has multiple ranges, their form must
+            be able to be created by removing full rows or columns from a rectangular range.
           type:
             - 'excel!Excel.Range#copyFrom~1:complex'
         - id: copyTypeString
@@ -638,7 +649,7 @@ items:
         type:
           - 'excel!Excel.Range:class'
         description: |-
-          The Range which matched the search criteria.
+          The Range object representing the first cell that contains a value matching the search text and criteria.
 
           #### Examples
 
@@ -2110,7 +2121,26 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              
+              // Group the larger, main level. Note that the outline controls
+              // will be on row 10, meaning 4-9 will collapse and expand.
+              sheet.getRange("4:9").group(Excel.GroupOption.byRows);
+
+              // Group the smaller, sublevels. Note that the outline controls
+              // will be on rows 6 and 9, meaning 4-5 and 7-8 will collapse and expand.
+              sheet.getRange("4:5").group(Excel.GroupOption.byRows);
+              sheet.getRange("7:8").group(Excel.GroupOption.byRows);
+              await context.sync();
+          });
+          ```
       parameters:
         - id: groupOption
           description: >-
@@ -2423,40 +2453,22 @@ items:
           - 'excel!Excel.Range#linkedDataTypeState~0:complex'
   - uid: 'excel!Excel.Range#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
-
-
-      `load(option?: string | string[]): Excel.Range` - Where option is a comma-delimited string or an array of strings
-      that specify the properties to load.
-
-
-      `load(option?: { select?: string; expand?: string; }): Excel.Range` - Where option.select is a comma-delimited
-      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
-      navigation properties to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Range` - Only available
-      on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
-      collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
-    name: load(option)
-    fullName: load(option)
+    name: load(options)
+    fullName: load(options)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Excel.Interfaces.RangeLoadOptions): Excel.Range;'
+      content: 'load(options?: Excel.Interfaces.RangeLoadOptions): Excel.Range;'
       return:
         type:
           - 'excel!Excel.Range:class'
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: options
+          description: Provides options for which properties of the object to load.
           type:
             - 'excel!Excel.Interfaces.RangeLoadOptions:interface'
   - uid: 'excel!Excel.Range#load:member(2)'
@@ -2550,7 +2562,11 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Range;'
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Range;
       return:
         type:
           - 'excel!Excel.Range:class'
@@ -2558,10 +2574,14 @@ items:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
-            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type:
-            - '{ select?: string; expand?: string; }'
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: 'excel!Excel.Range#merge:member(1)'
     summary: |-
       Merge the range cells into one region in the worksheet.
@@ -2637,11 +2657,11 @@ items:
           - 'any[][]'
   - uid: 'excel!Excel.Range#numberFormatLocal:member'
     summary: >-
-      Represents Excel's number format code for the given range, based on the language settings of the user. When
+      Represents Excel's number format code for the given range, based on the language settings of the user.​ When
       setting number format local to a range, the value argument can be either a single value (string) or a
-      two-dimensional array. If the argument is a single value, it will be applied to all cells in the range. Excel does
-      not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any returned
-      text uses the locally-formatted strings based on the language specified in the system settings.
+      two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.​ Excel
+      does not perform any language or format coercion when getting or setting the `numberFormatLocal` property. Any
+      returned text uses the locally-formatted strings based on the language specified in the system settings.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -2778,8 +2798,8 @@ items:
   - uid: 'excel!Excel.Range#savedAsArray:member'
     summary: >-
       Represents if ALL the cells would be saved as an array formula. Returns true if ALL cells would be saved as an
-      array, or false if ALL cells would NOT be saved as an array formula. Returns null if there is a mixture of cells
-      that would and would not be saved as an array formula.
+      array formula, or false if ALL cells would NOT be saved as an array formula. Returns null if some cells would be
+      saved as an array formula and some would not be.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -3279,10 +3299,10 @@ items:
   - uid: 'excel!Excel.Range#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
-      method on the object, you needed to have added the object to the tracked object collection when the object was
-      first created.
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
     name: track()
     fullName: track()
     langs:
@@ -3312,7 +3332,24 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              
+              // This removes two levels of groups from the "A1-R10" range.
+              // Any groups at the same level on the same dimension will be removed by a single call.
+              sheet.getRange("A1:R10").ungroup(Excel.GroupOption.byRows);
+              sheet.getRange("A1:R10").ungroup(Excel.GroupOption.byRows);
+              sheet.getRange("A1:R10").ungroup(Excel.GroupOption.byColumns);
+              sheet.getRange("A1:R10").ungroup(Excel.GroupOption.byColumns);
+              await context.sync();
+          });
+          ```
       parameters:
         - id: groupOption
           description: Specifies how the range can be ungrouped by rows or columns.
@@ -3379,9 +3416,9 @@ items:
   - uid: 'excel!Excel.Range#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
-      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
-      the memory release takes effect.
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
+      `context.sync()` before the memory release takes effect.
     name: untrack()
     fullName: untrack()
     langs:

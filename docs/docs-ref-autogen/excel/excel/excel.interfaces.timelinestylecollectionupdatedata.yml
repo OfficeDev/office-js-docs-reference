@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.TimelineStyleCollectionUpdateData:interface'
     summary: >-
-      An interface for updating data on the TimelineStyleCollection object, for use in "timelineStyleCollection.set(<!--
-      -->{ ... }<!-- -->)".
+      An interface for updating data on the TimelineStyleCollection object, for use in `timelineStyleCollection.set({
+      ... })`<!-- -->.
     name: Excel.Interfaces.TimelineStyleCollectionUpdateData
     fullName: Excel.Interfaces.TimelineStyleCollectionUpdateData
     langs:

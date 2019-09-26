@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData:interface'
     summary: >-
-      An interface for updating data on the ChartAxisTitleFormat object, for use in "chartAxisTitleFormat.set(<!-- -->{
-      ... }<!-- -->)".
+      An interface for updating data on the ChartAxisTitleFormat object, for use in `chartAxisTitleFormat.set({ ...
+      })`<!-- -->.
     name: Excel.Interfaces.ChartAxisTitleFormatUpdateData
     fullName: Excel.Interfaces.ChartAxisTitleFormatUpdateData
     langs:

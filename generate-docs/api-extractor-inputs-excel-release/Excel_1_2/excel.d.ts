@@ -376,7 +376,7 @@ export declare namespace Excel {
      */
     export class Application extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         
         
         /**
@@ -422,31 +422,26 @@ export declare namespace Excel {
         
         
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.Application` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.Application` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Application` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ApplicationLoadOptions): Excel.Application;
+        load(options?: Excel.Interfaces.ApplicationLoadOptions): Excel.Application;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Application;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Application;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Application;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
@@ -463,7 +458,7 @@ export declare namespace Excel {
      */
     export class Workbook extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the Excel application instance that contains this workbook. Read-only.
@@ -548,31 +543,26 @@ export declare namespace Excel {
         getSelectedRange(): Excel.Range;
         
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.Workbook` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.Workbook` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Workbook` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;
+        load(options?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Workbook;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Workbook;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Workbook;
         
         /**
          *
@@ -600,7 +590,7 @@ export declare namespace Excel {
      */
     export class Worksheet extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         
         /**
          *
@@ -734,31 +724,26 @@ export declare namespace Excel {
         
         
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.Worksheet` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.Worksheet` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Worksheet` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.WorksheetLoadOptions): Excel.Worksheet;
+        load(options?: Excel.Interfaces.WorksheetLoadOptions): Excel.Worksheet;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Worksheet;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Worksheet;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Worksheet;
         
         
         
@@ -779,7 +764,7 @@ export declare namespace Excel {
      */
     export class WorksheetCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Worksheet[];
         /**
@@ -812,27 +797,23 @@ export declare namespace Excel {
         
         
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.WorksheetCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.WorksheetCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.WorksheetCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.WorksheetCollection;
+        load(options?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.WorksheetCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.WorksheetCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.WorksheetCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.WorksheetCollection;
         
         
         
@@ -855,7 +836,7 @@ export declare namespace Excel {
      */
     export class WorksheetProtection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Sheet protection options. Read-only.
@@ -882,31 +863,26 @@ export declare namespace Excel {
         protect(options?: Excel.WorksheetProtectionOptions, password?: string): void;
         
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.WorksheetProtection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.WorksheetProtection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.WorksheetProtection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.WorksheetProtectionLoadOptions): Excel.WorksheetProtection;
+        load(options?: Excel.Interfaces.WorksheetProtectionLoadOptions): Excel.WorksheetProtection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.WorksheetProtection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.WorksheetProtection;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.WorksheetProtection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.WorksheetProtection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetProtectionData`) that contains shallow copies of any loaded child properties from the original object.
@@ -1012,7 +988,7 @@ export declare namespace Excel {
      */
     export class Range extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         
         
         /**
@@ -1435,37 +1411,32 @@ export declare namespace Excel {
          */
         unmerge(): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.Range` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.Range` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Range` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.RangeLoadOptions): Excel.Range;
+        load(options?: Excel.Interfaces.RangeLoadOptions): Excel.Range;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Range;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Range;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Range;
         /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
         track(): Excel.Range;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): Excel.Range;
         /**
@@ -1514,7 +1485,7 @@ export declare namespace Excel {
      */
     export class NamedItemCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.NamedItem[];
         
@@ -1531,27 +1502,23 @@ export declare namespace Excel {
         getItem(name: string): Excel.NamedItem;
         
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.NamedItemCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.NamedItemCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.NamedItemCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.NamedItemCollection;
+        load(options?: Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.NamedItemCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.NamedItemCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.NamedItemCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.NamedItemCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original `Excel.NamedItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
@@ -1566,7 +1533,7 @@ export declare namespace Excel {
      */
     export class NamedItem extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         
         
         
@@ -1625,31 +1592,26 @@ export declare namespace Excel {
         getRange(): Excel.Range;
         
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.NamedItem` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.NamedItem` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.NamedItem` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.NamedItemLoadOptions): Excel.NamedItem;
+        load(options?: Excel.Interfaces.NamedItemLoadOptions): Excel.NamedItem;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.NamedItem;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.NamedItem;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.NamedItem;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.NamedItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemData`) that contains shallow copies of any loaded child properties from the original object.
@@ -1665,7 +1627,7 @@ export declare namespace Excel {
      */
     export class Binding extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents binding identifier. Read-only.
@@ -1703,31 +1665,26 @@ export declare namespace Excel {
          */
         getText(): OfficeExtension.ClientResult<string>;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.Binding` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.Binding` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Binding` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.BindingLoadOptions): Excel.Binding;
+        load(options?: Excel.Interfaces.BindingLoadOptions): Excel.Binding;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Binding;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Binding;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Binding;
         /**
          *
          * Occurs when data or formatting within the binding is changed.
@@ -1760,7 +1717,7 @@ export declare namespace Excel {
      */
     export class BindingCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Binding[];
         /**
@@ -1797,27 +1754,23 @@ export declare namespace Excel {
         getItemAt(index: number): Excel.Binding;
         
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.BindingCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.BindingCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.BindingCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.BindingCollection;
+        load(options?: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.BindingCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.BindingCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.BindingCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.BindingCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original `Excel.BindingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.BindingCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
@@ -1832,7 +1785,7 @@ export declare namespace Excel {
      */
     export class TableCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Table[];
         /**
@@ -1873,27 +1826,23 @@ export declare namespace Excel {
         getItemAt(index: number): Excel.Table;
         
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.TableCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.TableCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableCollection;
+        load(options?: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.TableCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.TableCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TableCollection;
         
         
         
@@ -1913,7 +1862,7 @@ export declare namespace Excel {
      */
     export class Table extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         
         /**
          *
@@ -2055,31 +2004,26 @@ export declare namespace Excel {
          */
         reapplyFilters(): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.Table` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.Table` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Table` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.TableLoadOptions): Excel.Table;
+        load(options?: Excel.Interfaces.TableLoadOptions): Excel.Table;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Table;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Table;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Table;
         
         
         /**
@@ -2096,7 +2040,7 @@ export declare namespace Excel {
      */
     export class TableColumnCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.TableColumn[];
         /**
@@ -2138,27 +2082,23 @@ export declare namespace Excel {
         getItemAt(index: number): Excel.TableColumn;
         
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.TableColumnCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.TableColumnCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableColumnCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableColumnCollection;
+        load(options?: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableColumnCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.TableColumnCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.TableColumnCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TableColumnCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original `Excel.TableColumnCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableColumnCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
@@ -2173,7 +2113,7 @@ export declare namespace Excel {
      */
     export class TableColumn extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Retrieve the filter applied to the column. Read-only.
@@ -2259,31 +2199,26 @@ export declare namespace Excel {
          */
         getTotalRowRange(): Excel.Range;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.TableColumn` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.TableColumn` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableColumn` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.TableColumnLoadOptions): Excel.TableColumn;
+        load(options?: Excel.Interfaces.TableColumnLoadOptions): Excel.TableColumn;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.TableColumn;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TableColumn;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.TableColumn;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.TableColumn object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableColumnData`) that contains shallow copies of any loaded child properties from the original object.
@@ -2303,7 +2238,7 @@ export declare namespace Excel {
      */
     export class TableRowCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.TableRow[];
         /**
@@ -2344,27 +2279,23 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.TableRow;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.TableRowCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.TableRowCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableRowCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableRowCollection;
+        load(options?: Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableRowCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.TableRowCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.TableRowCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TableRowCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original `Excel.TableRowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
@@ -2384,7 +2315,7 @@ export declare namespace Excel {
      */
     export class TableRow extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
@@ -2428,31 +2359,26 @@ export declare namespace Excel {
          */
         getRange(): Excel.Range;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.TableRow` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.TableRow` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableRow` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.TableRowLoadOptions): Excel.TableRow;
+        load(options?: Excel.Interfaces.TableRowLoadOptions): Excel.TableRow;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.TableRow;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TableRow;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.TableRow;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.TableRow object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.
@@ -2476,7 +2402,7 @@ export declare namespace Excel {
      */
     export class RangeFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Collection of border objects that apply to the overall range. Read-only.
@@ -2576,31 +2502,26 @@ export declare namespace Excel {
          */
         autofitRows(): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.RangeFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.RangeFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.RangeFormatLoadOptions): Excel.RangeFormat;
+        load(options?: Excel.Interfaces.RangeFormatLoadOptions): Excel.RangeFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.RangeFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeFormat;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.RangeFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.RangeFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -2615,7 +2536,7 @@ export declare namespace Excel {
      */
     export class FormatProtection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
@@ -2645,31 +2566,26 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.FormatProtection): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.FormatProtection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.FormatProtection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.FormatProtection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.FormatProtectionLoadOptions): Excel.FormatProtection;
+        load(options?: Excel.Interfaces.FormatProtectionLoadOptions): Excel.FormatProtection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.FormatProtection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.FormatProtection;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.FormatProtection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.FormatProtection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FormatProtectionData`) that contains shallow copies of any loaded child properties from the original object.
@@ -2684,10 +2600,10 @@ export declare namespace Excel {
      */
     export class RangeFill extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
-         * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
+         * HTML color code representing the color of the background, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -2718,31 +2634,26 @@ export declare namespace Excel {
          */
         clear(): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.RangeFill` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.RangeFill` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeFill` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.RangeFillLoadOptions): Excel.RangeFill;
+        load(options?: Excel.Interfaces.RangeFillLoadOptions): Excel.RangeFill;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.RangeFill;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeFill;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.RangeFill;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.RangeFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFillData`) that contains shallow copies of any loaded child properties from the original object.
@@ -2757,7 +2668,7 @@ export declare namespace Excel {
      */
     export class RangeBorder extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -2802,31 +2713,26 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.RangeBorder): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.RangeBorder` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.RangeBorder` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeBorder` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.RangeBorderLoadOptions): Excel.RangeBorder;
+        load(options?: Excel.Interfaces.RangeBorderLoadOptions): Excel.RangeBorder;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.RangeBorder;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeBorder;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.RangeBorder;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.RangeBorder object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderData`) that contains shallow copies of any loaded child properties from the original object.
@@ -2841,7 +2747,7 @@ export declare namespace Excel {
      */
     export class RangeBorderCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.RangeBorder[];
         /**
@@ -2880,27 +2786,23 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.RangeBorder;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.RangeBorderCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.RangeBorderCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeBorderCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.RangeBorderCollection;
+        load(options?: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.RangeBorderCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.RangeBorderCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.RangeBorderCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.RangeBorderCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original `Excel.RangeBorderCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
@@ -2915,7 +2817,7 @@ export declare namespace Excel {
      */
     export class RangeFont extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the bold status of font.
@@ -2977,31 +2879,26 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.RangeFont): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.RangeFont` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.RangeFont` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeFont` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.RangeFontLoadOptions): Excel.RangeFont;
+        load(options?: Excel.Interfaces.RangeFontLoadOptions): Excel.RangeFont;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.RangeFont;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeFont;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.RangeFont;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.RangeFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFontData`) that contains shallow copies of any loaded child properties from the original object.
@@ -3016,7 +2913,7 @@ export declare namespace Excel {
      */
     export class ChartCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Chart[];
         /**
@@ -3069,27 +2966,23 @@ export declare namespace Excel {
         getItemAt(index: number): Excel.Chart;
         
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartCollection;
+        load(options?: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.ChartCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ChartCollection;
         
         
         
@@ -3109,7 +3002,7 @@ export declare namespace Excel {
      */
     export class Chart extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents chart axes. Read-only.
@@ -3283,31 +3176,26 @@ export declare namespace Excel {
          */
         setPosition(startCell: Range | string, endCell?: Range | string): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.Chart` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.Chart` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Chart` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartLoadOptions): Excel.Chart;
+        load(options?: Excel.Interfaces.ChartLoadOptions): Excel.Chart;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Chart;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Chart;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Chart;
         
         
         /**
@@ -3325,7 +3213,7 @@ export declare namespace Excel {
      */
     export class ChartAreaFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         
         /**
          *
@@ -3358,31 +3246,26 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ChartAreaFormat): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartAreaFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartAreaFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAreaFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartAreaFormatLoadOptions): Excel.ChartAreaFormat;
+        load(options?: Excel.Interfaces.ChartAreaFormatLoadOptions): Excel.ChartAreaFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartAreaFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAreaFormat;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartAreaFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartAreaFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAreaFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -3397,7 +3280,7 @@ export declare namespace Excel {
      */
     export class ChartSeriesCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.ChartSeries[];
         /**
@@ -3419,27 +3302,23 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.ChartSeries;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartSeriesCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartSeriesCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartSeriesCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartSeriesCollection;
+        load(options?: Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartSeriesCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartSeriesCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.ChartSeriesCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ChartSeriesCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original `Excel.ChartSeriesCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
@@ -3454,7 +3333,7 @@ export declare namespace Excel {
      */
     export class ChartSeries extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         
         
         
@@ -3538,31 +3417,26 @@ export declare namespace Excel {
         
         
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartSeries` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartSeries` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartSeries` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartSeriesLoadOptions): Excel.ChartSeries;
+        load(options?: Excel.Interfaces.ChartSeriesLoadOptions): Excel.ChartSeries;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartSeries;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartSeries;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartSeries;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartSeries object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesData`) that contains shallow copies of any loaded child properties from the original object.
@@ -3577,7 +3451,7 @@ export declare namespace Excel {
      */
     export class ChartSeriesFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the fill format of a chart series, which includes background formatting information. Read-only.
@@ -3607,31 +3481,26 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ChartSeriesFormat): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartSeriesFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartSeriesFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartSeriesFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartSeriesFormatLoadOptions): Excel.ChartSeriesFormat;
+        load(options?: Excel.Interfaces.ChartSeriesFormatLoadOptions): Excel.ChartSeriesFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartSeriesFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartSeriesFormat;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartSeriesFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartSeriesFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -3646,7 +3515,7 @@ export declare namespace Excel {
      */
     export class ChartPointsCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.ChartPoint[];
         /**
@@ -3667,27 +3536,23 @@ export declare namespace Excel {
          */
         getItemAt(index: number): Excel.ChartPoint;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartPointsCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartPointsCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartPointsCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartPointsCollection;
+        load(options?: Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartPointsCollection;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartPointsCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.ChartPointsCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.ChartPointsCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original `Excel.ChartPointsCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointsCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
@@ -3702,7 +3567,7 @@ export declare namespace Excel {
      */
     export class ChartPoint extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         
         /**
          *
@@ -3738,31 +3603,26 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ChartPoint): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartPoint` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartPoint` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartPoint` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartPointLoadOptions): Excel.ChartPoint;
+        load(options?: Excel.Interfaces.ChartPointLoadOptions): Excel.ChartPoint;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartPoint;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartPoint;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartPoint;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartPoint object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointData`) that contains shallow copies of any loaded child properties from the original object.
@@ -3777,7 +3637,7 @@ export declare namespace Excel {
      */
     export class ChartPointFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         
         /**
          *
@@ -3801,31 +3661,26 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ChartPointFormat): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartPointFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartPointFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartPointFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartPointFormatLoadOptions): Excel.ChartPointFormat;
+        load(options?: Excel.Interfaces.ChartPointFormatLoadOptions): Excel.ChartPointFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartPointFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartPointFormat;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartPointFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartPointFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -3840,7 +3695,7 @@ export declare namespace Excel {
      */
     export class ChartAxes extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the category axis in a chart. Read-only.
@@ -3879,31 +3734,26 @@ export declare namespace Excel {
         
         
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartAxes` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxes` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxes` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartAxesLoadOptions): Excel.ChartAxes;
+        load(options?: Excel.Interfaces.ChartAxesLoadOptions): Excel.ChartAxes;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartAxes;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxes;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartAxes;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartAxes object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxesData`) that contains shallow copies of any loaded child properties from the original object.
@@ -3918,7 +3768,7 @@ export declare namespace Excel {
      */
     export class ChartAxis extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the formatting of a chart object, which includes line and font formatting. Read-only.
@@ -4024,31 +3874,26 @@ export declare namespace Excel {
         
         
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartAxis` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxis` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxis` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartAxisLoadOptions): Excel.ChartAxis;
+        load(options?: Excel.Interfaces.ChartAxisLoadOptions): Excel.ChartAxis;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartAxis;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxis;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartAxis;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartAxis object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisData`) that contains shallow copies of any loaded child properties from the original object.
@@ -4063,7 +3908,7 @@ export declare namespace Excel {
      */
     export class ChartAxisFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         
         /**
          *
@@ -4094,31 +3939,26 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ChartAxisFormat): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartAxisFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxisFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxisFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartAxisFormatLoadOptions): Excel.ChartAxisFormat;
+        load(options?: Excel.Interfaces.ChartAxisFormatLoadOptions): Excel.ChartAxisFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartAxisFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxisFormat;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartAxisFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartAxisFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -4133,7 +3973,7 @@ export declare namespace Excel {
      */
     export class ChartAxisTitle extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the formatting of chart axis title. Read-only.
@@ -4171,31 +4011,26 @@ export declare namespace Excel {
         set(properties: Excel.ChartAxisTitle): void;
         
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartAxisTitle` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxisTitle` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxisTitle` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartAxisTitleLoadOptions): Excel.ChartAxisTitle;
+        load(options?: Excel.Interfaces.ChartAxisTitleLoadOptions): Excel.ChartAxisTitle;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartAxisTitle;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxisTitle;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartAxisTitle;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartAxisTitle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleData`) that contains shallow copies of any loaded child properties from the original object.
@@ -4210,7 +4045,7 @@ export declare namespace Excel {
      */
     export class ChartAxisTitleFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         
         
         /**
@@ -4235,31 +4070,26 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ChartAxisTitleFormat): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartAxisTitleFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartAxisTitleFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxisTitleFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions): Excel.ChartAxisTitleFormat;
+        load(options?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions): Excel.ChartAxisTitleFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartAxisTitleFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxisTitleFormat;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartAxisTitleFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartAxisTitleFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -4274,7 +4104,7 @@ export declare namespace Excel {
      */
     export class ChartDataLabels extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the format of chart data labels, which includes fill and font formatting. Read-only.
@@ -4359,31 +4189,26 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ChartDataLabels): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartDataLabels` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabels` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartDataLabels` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartDataLabelsLoadOptions): Excel.ChartDataLabels;
+        load(options?: Excel.Interfaces.ChartDataLabelsLoadOptions): Excel.ChartDataLabels;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartDataLabels;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartDataLabels;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartDataLabels;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartDataLabels object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelsData`) that contains shallow copies of any loaded child properties from the original object.
@@ -4399,7 +4224,7 @@ export declare namespace Excel {
      */
     export class ChartDataLabelFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         
         /**
          *
@@ -4430,31 +4255,26 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ChartDataLabelFormat): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartDataLabelFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabelFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartDataLabelFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartDataLabelFormatLoadOptions): Excel.ChartDataLabelFormat;
+        load(options?: Excel.Interfaces.ChartDataLabelFormatLoadOptions): Excel.ChartDataLabelFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartDataLabelFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartDataLabelFormat;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartDataLabelFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartDataLabelFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -4471,7 +4291,7 @@ export declare namespace Excel {
      */
     export class ChartGridlines extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the formatting of chart gridlines. Read-only.
@@ -4501,31 +4321,26 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ChartGridlines): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartGridlines` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartGridlines` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartGridlines` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartGridlinesLoadOptions): Excel.ChartGridlines;
+        load(options?: Excel.Interfaces.ChartGridlinesLoadOptions): Excel.ChartGridlines;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartGridlines;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartGridlines;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartGridlines;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartGridlines object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesData`) that contains shallow copies of any loaded child properties from the original object.
@@ -4540,7 +4355,7 @@ export declare namespace Excel {
      */
     export class ChartGridlinesFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents chart line formatting. Read-only.
@@ -4563,31 +4378,26 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ChartGridlinesFormat): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartGridlinesFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartGridlinesFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartGridlinesFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartGridlinesFormatLoadOptions): Excel.ChartGridlinesFormat;
+        load(options?: Excel.Interfaces.ChartGridlinesFormatLoadOptions): Excel.ChartGridlinesFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartGridlinesFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartGridlinesFormat;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartGridlinesFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartGridlinesFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -4602,7 +4412,7 @@ export declare namespace Excel {
      */
     export class ChartLegend extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
@@ -4652,31 +4462,26 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ChartLegend): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartLegend` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartLegend` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartLegend` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartLegendLoadOptions): Excel.ChartLegend;
+        load(options?: Excel.Interfaces.ChartLegendLoadOptions): Excel.ChartLegend;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartLegend;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartLegend;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartLegend;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartLegend object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendData`) that contains shallow copies of any loaded child properties from the original object.
@@ -4693,7 +4498,7 @@ export declare namespace Excel {
      */
     export class ChartLegendFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         
         /**
          *
@@ -4724,31 +4529,26 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ChartLegendFormat): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartLegendFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartLegendFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartLegendFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartLegendFormatLoadOptions): Excel.ChartLegendFormat;
+        load(options?: Excel.Interfaces.ChartLegendFormatLoadOptions): Excel.ChartLegendFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartLegendFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartLegendFormat;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartLegendFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartLegendFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -4764,7 +4564,7 @@ export declare namespace Excel {
      */
     export class ChartTitle extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the formatting of a chart title, which includes fill and font formatting. Read-only.
@@ -4819,31 +4619,26 @@ export declare namespace Excel {
         
         
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartTitle` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartTitle` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTitle` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartTitleLoadOptions): Excel.ChartTitle;
+        load(options?: Excel.Interfaces.ChartTitleLoadOptions): Excel.ChartTitle;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartTitle;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTitle;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartTitle;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartTitle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleData`) that contains shallow copies of any loaded child properties from the original object.
@@ -4859,7 +4654,7 @@ export declare namespace Excel {
      */
     export class ChartTitleFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         
         /**
          *
@@ -4890,31 +4685,26 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ChartTitleFormat): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartTitleFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartTitleFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTitleFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartTitleFormatLoadOptions): Excel.ChartTitleFormat;
+        load(options?: Excel.Interfaces.ChartTitleFormatLoadOptions): Excel.ChartTitleFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartTitleFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTitleFormat;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartTitleFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartTitleFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -4929,7 +4719,7 @@ export declare namespace Excel {
      */
     export class ChartFill extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
@@ -4947,7 +4737,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param color - HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+         * @param color - HTML color code representing the color of the background, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
          */
         setSolidColor(color: string): void;
         /**
@@ -4969,7 +4759,7 @@ export declare namespace Excel {
      */
     export class ChartLineFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * HTML color code representing the color of lines in the chart.
@@ -5001,31 +4791,26 @@ export declare namespace Excel {
          */
         clear(): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartLineFormat` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartLineFormat` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartLineFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartLineFormatLoadOptions): Excel.ChartLineFormat;
+        load(options?: Excel.Interfaces.ChartLineFormatLoadOptions): Excel.ChartLineFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartLineFormat;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartLineFormat;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartLineFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartLineFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLineFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -5040,7 +4825,7 @@ export declare namespace Excel {
      */
     export class ChartFont extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the bold status of font.
@@ -5098,31 +4883,26 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ChartFont): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.ChartFont` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.ChartFont` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartFont` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.ChartFontLoadOptions): Excel.ChartFont;
+        load(options?: Excel.Interfaces.ChartFontLoadOptions): Excel.ChartFont;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.ChartFont;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartFont;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.ChartFont;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFontData`) that contains shallow copies of any loaded child properties from the original object.
@@ -5144,7 +4924,7 @@ export declare namespace Excel {
      */
     export class RangeSort extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Perform a sort operation.
@@ -5187,7 +4967,7 @@ export declare namespace Excel {
      */
     export class TableSort extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Represents the current conditions used to last sort the table. Read-only.
@@ -5246,31 +5026,26 @@ export declare namespace Excel {
          */
         reapply(): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.TableSort` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.TableSort` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableSort` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.TableSortLoadOptions): Excel.TableSort;
+        load(options?: Excel.Interfaces.TableSortLoadOptions): Excel.TableSort;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.TableSort;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TableSort;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.TableSort;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.TableSort object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableSortData`) that contains shallow copies of any loaded child properties from the original object.
@@ -5336,7 +5111,7 @@ export declare namespace Excel {
      */
     export class Filter extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * The currently applied filter on the given column. Read-only.
@@ -5473,31 +5248,26 @@ export declare namespace Excel {
          */
         clear(): void;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): Excel.Filter` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): Excel.Filter` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Filter` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.FilterLoadOptions): Excel.Filter;
+        load(options?: Excel.Interfaces.FilterLoadOptions): Excel.Filter;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Excel.Filter;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Filter;
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Excel.Filter;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Filter object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FilterData`) that contains shallow copies of any loaded child properties from the original object.
@@ -6280,7 +6050,7 @@ export declare namespace Excel {
      */
     export class FunctionResult<T> extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Error value (such as "#DIV/0") representing the error. If the error string is not set, then the function succeeded, and its result is written to the Value field. The error is always in the English locale.
@@ -6296,23 +6066,23 @@ export declare namespace Excel {
          */
         readonly value: T;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         *
-         * @remarks
-         *
-         * In addition to this signature, this method has the following signatures:
-         *
-         * `load(option?: string | string[]): FunctionResult<T>` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; }): FunctionResult<T>` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-         *
-         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): FunctionResult<T>` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
          * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: Excel.Interfaces.FunctionResultLoadOptions): FunctionResult<T>;
-        load(option?: string | string[]): FunctionResult<T>;
-        load(option?: {
+        load(options?: Excel.Interfaces.FunctionResultLoadOptions): FunctionResult<T>;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): FunctionResult<T>;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
             select?: string;
             expand?: string;
         }): FunctionResult<T>;
@@ -6330,7 +6100,7 @@ export declare namespace Excel {
      */
     export class Functions extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Returns the absolute value of a number, a number without its sign.
@@ -10108,11 +9878,11 @@ export declare namespace Excel {
             */
             $skip?: number;
         }
-        /** An interface for updating data on the Runtime object, for use in "runtime.set({ ... })". */
+        /** An interface for updating data on the Runtime object, for use in `runtime.set({ ... })`. */
         export interface RuntimeUpdateData {
             
         }
-        /** An interface for updating data on the Application object, for use in "application.set({ ... })". */
+        /** An interface for updating data on the Application object, for use in `application.set({ ... })`. */
         export interface ApplicationUpdateData {
             
             /**
@@ -10123,20 +9893,20 @@ export declare namespace Excel {
              */
             calculationMode?: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual";
         }
-        /** An interface for updating data on the IterativeCalculation object, for use in "iterativeCalculation.set({ ... })". */
+        /** An interface for updating data on the IterativeCalculation object, for use in `iterativeCalculation.set({ ... })`. */
         export interface IterativeCalculationUpdateData {
             
             
             
         }
-        /** An interface for updating data on the Workbook object, for use in "workbook.set({ ... })". */
+        /** An interface for updating data on the Workbook object, for use in `workbook.set({ ... })`. */
         export interface WorkbookUpdateData {
             
             
             
             
         }
-        /** An interface for updating data on the Worksheet object, for use in "worksheet.set({ ... })". */
+        /** An interface for updating data on the Worksheet object, for use in `worksheet.set({ ... })`. */
         export interface WorksheetUpdateData {
             
             
@@ -10166,11 +9936,11 @@ export declare namespace Excel {
              */
             visibility?: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";
         }
-        /** An interface for updating data on the WorksheetCollection object, for use in "worksheetCollection.set({ ... })". */
+        /** An interface for updating data on the WorksheetCollection object, for use in `worksheetCollection.set({ ... })`. */
         export interface WorksheetCollectionUpdateData {
             items?: Excel.Interfaces.WorksheetData[];
         }
-        /** An interface for updating data on the Range object, for use in "range.set({ ... })". */
+        /** An interface for updating data on the Range object, for use in `range.set({ ... })`. */
         export interface RangeUpdateData {
             
             /**
@@ -10238,13 +10008,13 @@ export declare namespace Excel {
              */
             values?: any[][];
         }
-        /** An interface for updating data on the RangeAreas object, for use in "rangeAreas.set({ ... })". */
+        /** An interface for updating data on the RangeAreas object, for use in `rangeAreas.set({ ... })`. */
         export interface RangeAreasUpdateData {
             
             
             
         }
-        /** An interface for updating data on the RangeView object, for use in "rangeView.set({ ... })". */
+        /** An interface for updating data on the RangeView object, for use in `rangeView.set({ ... })`. */
         export interface RangeViewUpdateData {
             
             
@@ -10252,23 +10022,23 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the RangeViewCollection object, for use in "rangeViewCollection.set({ ... })". */
+        /** An interface for updating data on the RangeViewCollection object, for use in `rangeViewCollection.set({ ... })`. */
         export interface RangeViewCollectionUpdateData {
             items?: Excel.Interfaces.RangeViewData[];
         }
-        /** An interface for updating data on the SettingCollection object, for use in "settingCollection.set({ ... })". */
+        /** An interface for updating data on the SettingCollection object, for use in `settingCollection.set({ ... })`. */
         export interface SettingCollectionUpdateData {
             items?: Excel.Interfaces.SettingData[];
         }
-        /** An interface for updating data on the Setting object, for use in "setting.set({ ... })". */
+        /** An interface for updating data on the Setting object, for use in `setting.set({ ... })`. */
         export interface SettingUpdateData {
             
         }
-        /** An interface for updating data on the NamedItemCollection object, for use in "namedItemCollection.set({ ... })". */
+        /** An interface for updating data on the NamedItemCollection object, for use in `namedItemCollection.set({ ... })`. */
         export interface NamedItemCollectionUpdateData {
             items?: Excel.Interfaces.NamedItemData[];
         }
-        /** An interface for updating data on the NamedItem object, for use in "namedItem.set({ ... })". */
+        /** An interface for updating data on the NamedItem object, for use in `namedItem.set({ ... })`. */
         export interface NamedItemUpdateData {
             
             
@@ -10280,19 +10050,19 @@ export declare namespace Excel {
              */
             visible?: boolean;
         }
-        /** An interface for updating data on the BindingCollection object, for use in "bindingCollection.set({ ... })". */
+        /** An interface for updating data on the BindingCollection object, for use in `bindingCollection.set({ ... })`. */
         export interface BindingCollectionUpdateData {
             items?: Excel.Interfaces.BindingData[];
         }
-        /** An interface for updating data on the TableCollection object, for use in "tableCollection.set({ ... })". */
+        /** An interface for updating data on the TableCollection object, for use in `tableCollection.set({ ... })`. */
         export interface TableCollectionUpdateData {
             items?: Excel.Interfaces.TableData[];
         }
-        /** An interface for updating data on the TableScopedCollection object, for use in "tableScopedCollection.set({ ... })". */
+        /** An interface for updating data on the TableScopedCollection object, for use in `tableScopedCollection.set({ ... })`. */
         export interface TableScopedCollectionUpdateData {
             items?: Excel.Interfaces.TableData[];
         }
-        /** An interface for updating data on the Table object, for use in "table.set({ ... })". */
+        /** An interface for updating data on the Table object, for use in `table.set({ ... })`. */
         export interface TableUpdateData {
             
             
@@ -10328,11 +10098,11 @@ export declare namespace Excel {
              */
             style?: string;
         }
-        /** An interface for updating data on the TableColumnCollection object, for use in "tableColumnCollection.set({ ... })". */
+        /** An interface for updating data on the TableColumnCollection object, for use in `tableColumnCollection.set({ ... })`. */
         export interface TableColumnCollectionUpdateData {
             items?: Excel.Interfaces.TableColumnData[];
         }
-        /** An interface for updating data on the TableColumn object, for use in "tableColumn.set({ ... })". */
+        /** An interface for updating data on the TableColumn object, for use in `tableColumn.set({ ... })`. */
         export interface TableColumnUpdateData {
             /**
              *
@@ -10349,11 +10119,11 @@ export declare namespace Excel {
              */
             values?: any[][];
         }
-        /** An interface for updating data on the TableRowCollection object, for use in "tableRowCollection.set({ ... })". */
+        /** An interface for updating data on the TableRowCollection object, for use in `tableRowCollection.set({ ... })`. */
         export interface TableRowCollectionUpdateData {
             items?: Excel.Interfaces.TableRowData[];
         }
-        /** An interface for updating data on the TableRow object, for use in "tableRow.set({ ... })". */
+        /** An interface for updating data on the TableRow object, for use in `tableRow.set({ ... })`. */
         export interface TableRowUpdateData {
             /**
              *
@@ -10363,14 +10133,14 @@ export declare namespace Excel {
              */
             values?: any[][];
         }
-        /** An interface for updating data on the DataValidation object, for use in "dataValidation.set({ ... })". */
+        /** An interface for updating data on the DataValidation object, for use in `dataValidation.set({ ... })`. */
         export interface DataValidationUpdateData {
             
             
             
             
         }
-        /** An interface for updating data on the RangeFormat object, for use in "rangeFormat.set({ ... })". */
+        /** An interface for updating data on the RangeFormat object, for use in `rangeFormat.set({ ... })`. */
         export interface RangeFormatUpdateData {
             /**
             *
@@ -10443,7 +10213,7 @@ export declare namespace Excel {
              */
             wrapText?: boolean;
         }
-        /** An interface for updating data on the FormatProtection object, for use in "formatProtection.set({ ... })". */
+        /** An interface for updating data on the FormatProtection object, for use in `formatProtection.set({ ... })`. */
         export interface FormatProtectionUpdateData {
             /**
              *
@@ -10460,11 +10230,11 @@ export declare namespace Excel {
              */
             locked?: boolean;
         }
-        /** An interface for updating data on the RangeFill object, for use in "rangeFill.set({ ... })". */
+        /** An interface for updating data on the RangeFill object, for use in `rangeFill.set({ ... })`. */
         export interface RangeFillUpdateData {
             /**
              *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
+             * HTML color code representing the color of the background, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -10474,7 +10244,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the RangeBorder object, for use in "rangeBorder.set({ ... })". */
+        /** An interface for updating data on the RangeBorder object, for use in `rangeBorder.set({ ... })`. */
         export interface RangeBorderUpdateData {
             /**
              *
@@ -10499,12 +10269,12 @@ export declare namespace Excel {
              */
             weight?: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick";
         }
-        /** An interface for updating data on the RangeBorderCollection object, for use in "rangeBorderCollection.set({ ... })". */
+        /** An interface for updating data on the RangeBorderCollection object, for use in `rangeBorderCollection.set({ ... })`. */
         export interface RangeBorderCollectionUpdateData {
             
             items?: Excel.Interfaces.RangeBorderData[];
         }
-        /** An interface for updating data on the RangeFont object, for use in "rangeFont.set({ ... })". */
+        /** An interface for updating data on the RangeFont object, for use in `rangeFont.set({ ... })`. */
         export interface RangeFontUpdateData {
             /**
              *
@@ -10553,11 +10323,11 @@ export declare namespace Excel {
              */
             underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";
         }
-        /** An interface for updating data on the ChartCollection object, for use in "chartCollection.set({ ... })". */
+        /** An interface for updating data on the ChartCollection object, for use in `chartCollection.set({ ... })`. */
         export interface ChartCollectionUpdateData {
             items?: Excel.Interfaces.ChartData[];
         }
-        /** An interface for updating data on the Chart object, for use in "chart.set({ ... })". */
+        /** An interface for updating data on the Chart object, for use in `chart.set({ ... })`. */
         export interface ChartUpdateData {
             /**
             *
@@ -10641,14 +10411,14 @@ export declare namespace Excel {
              */
             width?: number;
         }
-        /** An interface for updating data on the ChartPivotOptions object, for use in "chartPivotOptions.set({ ... })". */
+        /** An interface for updating data on the ChartPivotOptions object, for use in `chartPivotOptions.set({ ... })`. */
         export interface ChartPivotOptionsUpdateData {
             
             
             
             
         }
-        /** An interface for updating data on the ChartAreaFormat object, for use in "chartAreaFormat.set({ ... })". */
+        /** An interface for updating data on the ChartAreaFormat object, for use in `chartAreaFormat.set({ ... })`. */
         export interface ChartAreaFormatUpdateData {
             
             /**
@@ -10661,11 +10431,11 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartSeriesCollection object, for use in "chartSeriesCollection.set({ ... })". */
+        /** An interface for updating data on the ChartSeriesCollection object, for use in `chartSeriesCollection.set({ ... })`. */
         export interface ChartSeriesCollectionUpdateData {
             items?: Excel.Interfaces.ChartSeriesData[];
         }
-        /** An interface for updating data on the ChartSeries object, for use in "chartSeries.set({ ... })". */
+        /** An interface for updating data on the ChartSeries object, for use in `chartSeries.set({ ... })`. */
         export interface ChartSeriesUpdateData {
             
             
@@ -10724,7 +10494,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartSeriesFormat object, for use in "chartSeriesFormat.set({ ... })". */
+        /** An interface for updating data on the ChartSeriesFormat object, for use in `chartSeriesFormat.set({ ... })`. */
         export interface ChartSeriesFormatUpdateData {
             /**
             *
@@ -10734,11 +10504,11 @@ export declare namespace Excel {
             */
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
-        /** An interface for updating data on the ChartPointsCollection object, for use in "chartPointsCollection.set({ ... })". */
+        /** An interface for updating data on the ChartPointsCollection object, for use in `chartPointsCollection.set({ ... })`. */
         export interface ChartPointsCollectionUpdateData {
             items?: Excel.Interfaces.ChartPointData[];
         }
-        /** An interface for updating data on the ChartPoint object, for use in "chartPoint.set({ ... })". */
+        /** An interface for updating data on the ChartPoint object, for use in `chartPoint.set({ ... })`. */
         export interface ChartPointUpdateData {
             
             /**
@@ -10754,11 +10524,11 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartPointFormat object, for use in "chartPointFormat.set({ ... })". */
+        /** An interface for updating data on the ChartPointFormat object, for use in `chartPointFormat.set({ ... })`. */
         export interface ChartPointFormatUpdateData {
             
         }
-        /** An interface for updating data on the ChartAxes object, for use in "chartAxes.set({ ... })". */
+        /** An interface for updating data on the ChartAxes object, for use in `chartAxes.set({ ... })`. */
         export interface ChartAxesUpdateData {
             /**
             *
@@ -10782,7 +10552,7 @@ export declare namespace Excel {
             */
             valueAxis?: Excel.Interfaces.ChartAxisUpdateData;
         }
-        /** An interface for updating data on the ChartAxis object, for use in "chartAxis.set({ ... })". */
+        /** An interface for updating data on the ChartAxis object, for use in `chartAxis.set({ ... })`. */
         export interface ChartAxisUpdateData {
             /**
             *
@@ -10864,7 +10634,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartAxisFormat object, for use in "chartAxisFormat.set({ ... })". */
+        /** An interface for updating data on the ChartAxisFormat object, for use in `chartAxisFormat.set({ ... })`. */
         export interface ChartAxisFormatUpdateData {
             /**
             *
@@ -10881,7 +10651,7 @@ export declare namespace Excel {
             */
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
-        /** An interface for updating data on the ChartAxisTitle object, for use in "chartAxisTitle.set({ ... })". */
+        /** An interface for updating data on the ChartAxisTitle object, for use in `chartAxisTitle.set({ ... })`. */
         export interface ChartAxisTitleUpdateData {
             /**
             *
@@ -10905,7 +10675,7 @@ export declare namespace Excel {
              */
             visible?: boolean;
         }
-        /** An interface for updating data on the ChartAxisTitleFormat object, for use in "chartAxisTitleFormat.set({ ... })". */
+        /** An interface for updating data on the ChartAxisTitleFormat object, for use in `chartAxisTitleFormat.set({ ... })`. */
         export interface ChartAxisTitleFormatUpdateData {
             
             /**
@@ -10916,7 +10686,7 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
-        /** An interface for updating data on the ChartDataLabels object, for use in "chartDataLabels.set({ ... })". */
+        /** An interface for updating data on the ChartDataLabels object, for use in `chartDataLabels.set({ ... })`. */
         export interface ChartDataLabelsUpdateData {
             /**
             *
@@ -10988,7 +10758,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartDataLabel object, for use in "chartDataLabel.set({ ... })". */
+        /** An interface for updating data on the ChartDataLabel object, for use in `chartDataLabel.set({ ... })`. */
         export interface ChartDataLabelUpdateData {
             
             
@@ -11010,7 +10780,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartDataLabelFormat object, for use in "chartDataLabelFormat.set({ ... })". */
+        /** An interface for updating data on the ChartDataLabelFormat object, for use in `chartDataLabelFormat.set({ ... })`. */
         export interface ChartDataLabelFormatUpdateData {
             
             /**
@@ -11021,7 +10791,7 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
-        /** An interface for updating data on the ChartErrorBars object, for use in "chartErrorBars.set({ ... })". */
+        /** An interface for updating data on the ChartErrorBars object, for use in `chartErrorBars.set({ ... })`. */
         export interface ChartErrorBarsUpdateData {
             
             
@@ -11029,11 +10799,11 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartErrorBarsFormat object, for use in "chartErrorBarsFormat.set({ ... })". */
+        /** An interface for updating data on the ChartErrorBarsFormat object, for use in `chartErrorBarsFormat.set({ ... })`. */
         export interface ChartErrorBarsFormatUpdateData {
             
         }
-        /** An interface for updating data on the ChartGridlines object, for use in "chartGridlines.set({ ... })". */
+        /** An interface for updating data on the ChartGridlines object, for use in `chartGridlines.set({ ... })`. */
         export interface ChartGridlinesUpdateData {
             /**
             *
@@ -11050,7 +10820,7 @@ export declare namespace Excel {
              */
             visible?: boolean;
         }
-        /** An interface for updating data on the ChartGridlinesFormat object, for use in "chartGridlinesFormat.set({ ... })". */
+        /** An interface for updating data on the ChartGridlinesFormat object, for use in `chartGridlinesFormat.set({ ... })`. */
         export interface ChartGridlinesFormatUpdateData {
             /**
             *
@@ -11060,7 +10830,7 @@ export declare namespace Excel {
             */
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
-        /** An interface for updating data on the ChartLegend object, for use in "chartLegend.set({ ... })". */
+        /** An interface for updating data on the ChartLegend object, for use in `chartLegend.set({ ... })`. */
         export interface ChartLegendUpdateData {
             /**
             *
@@ -11096,15 +10866,15 @@ export declare namespace Excel {
             visible?: boolean;
             
         }
-        /** An interface for updating data on the ChartLegendEntry object, for use in "chartLegendEntry.set({ ... })". */
+        /** An interface for updating data on the ChartLegendEntry object, for use in `chartLegendEntry.set({ ... })`. */
         export interface ChartLegendEntryUpdateData {
             
         }
-        /** An interface for updating data on the ChartLegendEntryCollection object, for use in "chartLegendEntryCollection.set({ ... })". */
+        /** An interface for updating data on the ChartLegendEntryCollection object, for use in `chartLegendEntryCollection.set({ ... })`. */
         export interface ChartLegendEntryCollectionUpdateData {
             items?: Excel.Interfaces.ChartLegendEntryData[];
         }
-        /** An interface for updating data on the ChartLegendFormat object, for use in "chartLegendFormat.set({ ... })". */
+        /** An interface for updating data on the ChartLegendFormat object, for use in `chartLegendFormat.set({ ... })`. */
         export interface ChartLegendFormatUpdateData {
             
             /**
@@ -11115,13 +10885,13 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
-        /** An interface for updating data on the ChartMapOptions object, for use in "chartMapOptions.set({ ... })". */
+        /** An interface for updating data on the ChartMapOptions object, for use in `chartMapOptions.set({ ... })`. */
         export interface ChartMapOptionsUpdateData {
             
             
             
         }
-        /** An interface for updating data on the ChartTitle object, for use in "chartTitle.set({ ... })". */
+        /** An interface for updating data on the ChartTitle object, for use in `chartTitle.set({ ... })`. */
         export interface ChartTitleUpdateData {
             /**
             *
@@ -11159,11 +10929,11 @@ export declare namespace Excel {
              */
             visible?: boolean;
         }
-        /** An interface for updating data on the ChartFormatString object, for use in "chartFormatString.set({ ... })". */
+        /** An interface for updating data on the ChartFormatString object, for use in `chartFormatString.set({ ... })`. */
         export interface ChartFormatStringUpdateData {
             
         }
-        /** An interface for updating data on the ChartTitleFormat object, for use in "chartTitleFormat.set({ ... })". */
+        /** An interface for updating data on the ChartTitleFormat object, for use in `chartTitleFormat.set({ ... })`. */
         export interface ChartTitleFormatUpdateData {
             
             /**
@@ -11174,13 +10944,13 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
-        /** An interface for updating data on the ChartBorder object, for use in "chartBorder.set({ ... })". */
+        /** An interface for updating data on the ChartBorder object, for use in `chartBorder.set({ ... })`. */
         export interface ChartBorderUpdateData {
             
             
             
         }
-        /** An interface for updating data on the ChartBinOptions object, for use in "chartBinOptions.set({ ... })". */
+        /** An interface for updating data on the ChartBinOptions object, for use in `chartBinOptions.set({ ... })`. */
         export interface ChartBinOptionsUpdateData {
             
             
@@ -11190,7 +10960,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartBoxwhiskerOptions object, for use in "chartBoxwhiskerOptions.set({ ... })". */
+        /** An interface for updating data on the ChartBoxwhiskerOptions object, for use in `chartBoxwhiskerOptions.set({ ... })`. */
         export interface ChartBoxwhiskerOptionsUpdateData {
             
             
@@ -11198,7 +10968,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartLineFormat object, for use in "chartLineFormat.set({ ... })". */
+        /** An interface for updating data on the ChartLineFormat object, for use in `chartLineFormat.set({ ... })`. */
         export interface ChartLineFormatUpdateData {
             /**
              *
@@ -11210,7 +10980,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartFont object, for use in "chartFont.set({ ... })". */
+        /** An interface for updating data on the ChartFont object, for use in `chartFont.set({ ... })`. */
         export interface ChartFontUpdateData {
             /**
              *
@@ -11255,7 +11025,7 @@ export declare namespace Excel {
              */
             underline?: Excel.ChartUnderlineStyle | "None" | "Single";
         }
-        /** An interface for updating data on the ChartTrendline object, for use in "chartTrendline.set({ ... })". */
+        /** An interface for updating data on the ChartTrendline object, for use in `chartTrendline.set({ ... })`. */
         export interface ChartTrendlineUpdateData {
             
             
@@ -11269,15 +11039,15 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartTrendlineCollection object, for use in "chartTrendlineCollection.set({ ... })". */
+        /** An interface for updating data on the ChartTrendlineCollection object, for use in `chartTrendlineCollection.set({ ... })`. */
         export interface ChartTrendlineCollectionUpdateData {
             items?: Excel.Interfaces.ChartTrendlineData[];
         }
-        /** An interface for updating data on the ChartTrendlineFormat object, for use in "chartTrendlineFormat.set({ ... })". */
+        /** An interface for updating data on the ChartTrendlineFormat object, for use in `chartTrendlineFormat.set({ ... })`. */
         export interface ChartTrendlineFormatUpdateData {
             
         }
-        /** An interface for updating data on the ChartTrendlineLabel object, for use in "chartTrendlineLabel.set({ ... })". */
+        /** An interface for updating data on the ChartTrendlineLabel object, for use in `chartTrendlineLabel.set({ ... })`. */
         export interface ChartTrendlineLabelUpdateData {
             
             
@@ -11291,12 +11061,12 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartTrendlineLabelFormat object, for use in "chartTrendlineLabelFormat.set({ ... })". */
+        /** An interface for updating data on the ChartTrendlineLabelFormat object, for use in `chartTrendlineLabelFormat.set({ ... })`. */
         export interface ChartTrendlineLabelFormatUpdateData {
             
             
         }
-        /** An interface for updating data on the ChartPlotArea object, for use in "chartPlotArea.set({ ... })". */
+        /** An interface for updating data on the ChartPlotArea object, for use in `chartPlotArea.set({ ... })`. */
         export interface ChartPlotAreaUpdateData {
             
             
@@ -11309,29 +11079,29 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ChartPlotAreaFormat object, for use in "chartPlotAreaFormat.set({ ... })". */
+        /** An interface for updating data on the ChartPlotAreaFormat object, for use in `chartPlotAreaFormat.set({ ... })`. */
         export interface ChartPlotAreaFormatUpdateData {
             
         }
-        /** An interface for updating data on the CustomXmlPartScopedCollection object, for use in "customXmlPartScopedCollection.set({ ... })". */
+        /** An interface for updating data on the CustomXmlPartScopedCollection object, for use in `customXmlPartScopedCollection.set({ ... })`. */
         export interface CustomXmlPartScopedCollectionUpdateData {
             items?: Excel.Interfaces.CustomXmlPartData[];
         }
-        /** An interface for updating data on the CustomXmlPartCollection object, for use in "customXmlPartCollection.set({ ... })". */
+        /** An interface for updating data on the CustomXmlPartCollection object, for use in `customXmlPartCollection.set({ ... })`. */
         export interface CustomXmlPartCollectionUpdateData {
             items?: Excel.Interfaces.CustomXmlPartData[];
         }
-        /** An interface for updating data on the PivotTableCollection object, for use in "pivotTableCollection.set({ ... })". */
+        /** An interface for updating data on the PivotTableCollection object, for use in `pivotTableCollection.set({ ... })`. */
         export interface PivotTableCollectionUpdateData {
             items?: Excel.Interfaces.PivotTableData[];
         }
-        /** An interface for updating data on the PivotTable object, for use in "pivotTable.set({ ... })". */
+        /** An interface for updating data on the PivotTable object, for use in `pivotTable.set({ ... })`. */
         export interface PivotTableUpdateData {
             
             
             
         }
-        /** An interface for updating data on the PivotLayout object, for use in "pivotLayout.set({ ... })". */
+        /** An interface for updating data on the PivotLayout object, for use in `pivotLayout.set({ ... })`. */
         export interface PivotLayoutUpdateData {
             
             
@@ -11340,38 +11110,38 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the PivotHierarchyCollection object, for use in "pivotHierarchyCollection.set({ ... })". */
+        /** An interface for updating data on the PivotHierarchyCollection object, for use in `pivotHierarchyCollection.set({ ... })`. */
         export interface PivotHierarchyCollectionUpdateData {
             items?: Excel.Interfaces.PivotHierarchyData[];
         }
-        /** An interface for updating data on the PivotHierarchy object, for use in "pivotHierarchy.set({ ... })". */
+        /** An interface for updating data on the PivotHierarchy object, for use in `pivotHierarchy.set({ ... })`. */
         export interface PivotHierarchyUpdateData {
             
         }
-        /** An interface for updating data on the RowColumnPivotHierarchyCollection object, for use in "rowColumnPivotHierarchyCollection.set({ ... })". */
+        /** An interface for updating data on the RowColumnPivotHierarchyCollection object, for use in `rowColumnPivotHierarchyCollection.set({ ... })`. */
         export interface RowColumnPivotHierarchyCollectionUpdateData {
             items?: Excel.Interfaces.RowColumnPivotHierarchyData[];
         }
-        /** An interface for updating data on the RowColumnPivotHierarchy object, for use in "rowColumnPivotHierarchy.set({ ... })". */
+        /** An interface for updating data on the RowColumnPivotHierarchy object, for use in `rowColumnPivotHierarchy.set({ ... })`. */
         export interface RowColumnPivotHierarchyUpdateData {
             
             
         }
-        /** An interface for updating data on the FilterPivotHierarchyCollection object, for use in "filterPivotHierarchyCollection.set({ ... })". */
+        /** An interface for updating data on the FilterPivotHierarchyCollection object, for use in `filterPivotHierarchyCollection.set({ ... })`. */
         export interface FilterPivotHierarchyCollectionUpdateData {
             items?: Excel.Interfaces.FilterPivotHierarchyData[];
         }
-        /** An interface for updating data on the FilterPivotHierarchy object, for use in "filterPivotHierarchy.set({ ... })". */
+        /** An interface for updating data on the FilterPivotHierarchy object, for use in `filterPivotHierarchy.set({ ... })`. */
         export interface FilterPivotHierarchyUpdateData {
             
             
             
         }
-        /** An interface for updating data on the DataPivotHierarchyCollection object, for use in "dataPivotHierarchyCollection.set({ ... })". */
+        /** An interface for updating data on the DataPivotHierarchyCollection object, for use in `dataPivotHierarchyCollection.set({ ... })`. */
         export interface DataPivotHierarchyCollectionUpdateData {
             items?: Excel.Interfaces.DataPivotHierarchyData[];
         }
-        /** An interface for updating data on the DataPivotHierarchy object, for use in "dataPivotHierarchy.set({ ... })". */
+        /** An interface for updating data on the DataPivotHierarchy object, for use in `dataPivotHierarchy.set({ ... })`. */
         export interface DataPivotHierarchyUpdateData {
             
             
@@ -11380,27 +11150,27 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the PivotFieldCollection object, for use in "pivotFieldCollection.set({ ... })". */
+        /** An interface for updating data on the PivotFieldCollection object, for use in `pivotFieldCollection.set({ ... })`. */
         export interface PivotFieldCollectionUpdateData {
             items?: Excel.Interfaces.PivotFieldData[];
         }
-        /** An interface for updating data on the PivotField object, for use in "pivotField.set({ ... })". */
+        /** An interface for updating data on the PivotField object, for use in `pivotField.set({ ... })`. */
         export interface PivotFieldUpdateData {
             
             
             
         }
-        /** An interface for updating data on the PivotItemCollection object, for use in "pivotItemCollection.set({ ... })". */
+        /** An interface for updating data on the PivotItemCollection object, for use in `pivotItemCollection.set({ ... })`. */
         export interface PivotItemCollectionUpdateData {
             items?: Excel.Interfaces.PivotItemData[];
         }
-        /** An interface for updating data on the PivotItem object, for use in "pivotItem.set({ ... })". */
+        /** An interface for updating data on the PivotItem object, for use in `pivotItem.set({ ... })`. */
         export interface PivotItemUpdateData {
             
             
             
         }
-        /** An interface for updating data on the DocumentProperties object, for use in "documentProperties.set({ ... })". */
+        /** An interface for updating data on the DocumentProperties object, for use in `documentProperties.set({ ... })`. */
         export interface DocumentPropertiesUpdateData {
             
             
@@ -11412,19 +11182,19 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the CustomProperty object, for use in "customProperty.set({ ... })". */
+        /** An interface for updating data on the CustomProperty object, for use in `customProperty.set({ ... })`. */
         export interface CustomPropertyUpdateData {
             
         }
-        /** An interface for updating data on the CustomPropertyCollection object, for use in "customPropertyCollection.set({ ... })". */
+        /** An interface for updating data on the CustomPropertyCollection object, for use in `customPropertyCollection.set({ ... })`. */
         export interface CustomPropertyCollectionUpdateData {
             items?: Excel.Interfaces.CustomPropertyData[];
         }
-        /** An interface for updating data on the ConditionalFormatCollection object, for use in "conditionalFormatCollection.set({ ... })". */
+        /** An interface for updating data on the ConditionalFormatCollection object, for use in `conditionalFormatCollection.set({ ... })`. */
         export interface ConditionalFormatCollectionUpdateData {
             items?: Excel.Interfaces.ConditionalFormatData[];
         }
-        /** An interface for updating data on the ConditionalFormat object, for use in "conditionalFormat.set({ ... })". */
+        /** An interface for updating data on the ConditionalFormat object, for use in `conditionalFormat.set({ ... })`. */
         export interface ConditionalFormatUpdateData {
             
             
@@ -11445,7 +11215,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the DataBarConditionalFormat object, for use in "dataBarConditionalFormat.set({ ... })". */
+        /** An interface for updating data on the DataBarConditionalFormat object, for use in `dataBarConditionalFormat.set({ ... })`. */
         export interface DataBarConditionalFormatUpdateData {
             
             
@@ -11456,69 +11226,69 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ConditionalDataBarPositiveFormat object, for use in "conditionalDataBarPositiveFormat.set({ ... })". */
+        /** An interface for updating data on the ConditionalDataBarPositiveFormat object, for use in `conditionalDataBarPositiveFormat.set({ ... })`. */
         export interface ConditionalDataBarPositiveFormatUpdateData {
             
             
             
         }
-        /** An interface for updating data on the ConditionalDataBarNegativeFormat object, for use in "conditionalDataBarNegativeFormat.set({ ... })". */
+        /** An interface for updating data on the ConditionalDataBarNegativeFormat object, for use in `conditionalDataBarNegativeFormat.set({ ... })`. */
         export interface ConditionalDataBarNegativeFormatUpdateData {
             
             
             
             
         }
-        /** An interface for updating data on the CustomConditionalFormat object, for use in "customConditionalFormat.set({ ... })". */
+        /** An interface for updating data on the CustomConditionalFormat object, for use in `customConditionalFormat.set({ ... })`. */
         export interface CustomConditionalFormatUpdateData {
             
             
         }
-        /** An interface for updating data on the ConditionalFormatRule object, for use in "conditionalFormatRule.set({ ... })". */
+        /** An interface for updating data on the ConditionalFormatRule object, for use in `conditionalFormatRule.set({ ... })`. */
         export interface ConditionalFormatRuleUpdateData {
             
             
             
         }
-        /** An interface for updating data on the IconSetConditionalFormat object, for use in "iconSetConditionalFormat.set({ ... })". */
+        /** An interface for updating data on the IconSetConditionalFormat object, for use in `iconSetConditionalFormat.set({ ... })`. */
         export interface IconSetConditionalFormatUpdateData {
             
             
             
             
         }
-        /** An interface for updating data on the ColorScaleConditionalFormat object, for use in "colorScaleConditionalFormat.set({ ... })". */
+        /** An interface for updating data on the ColorScaleConditionalFormat object, for use in `colorScaleConditionalFormat.set({ ... })`. */
         export interface ColorScaleConditionalFormatUpdateData {
             
         }
-        /** An interface for updating data on the TopBottomConditionalFormat object, for use in "topBottomConditionalFormat.set({ ... })". */
+        /** An interface for updating data on the TopBottomConditionalFormat object, for use in `topBottomConditionalFormat.set({ ... })`. */
         export interface TopBottomConditionalFormatUpdateData {
             
             
         }
-        /** An interface for updating data on the PresetCriteriaConditionalFormat object, for use in "presetCriteriaConditionalFormat.set({ ... })". */
+        /** An interface for updating data on the PresetCriteriaConditionalFormat object, for use in `presetCriteriaConditionalFormat.set({ ... })`. */
         export interface PresetCriteriaConditionalFormatUpdateData {
             
             
         }
-        /** An interface for updating data on the TextConditionalFormat object, for use in "textConditionalFormat.set({ ... })". */
+        /** An interface for updating data on the TextConditionalFormat object, for use in `textConditionalFormat.set({ ... })`. */
         export interface TextConditionalFormatUpdateData {
             
             
         }
-        /** An interface for updating data on the CellValueConditionalFormat object, for use in "cellValueConditionalFormat.set({ ... })". */
+        /** An interface for updating data on the CellValueConditionalFormat object, for use in `cellValueConditionalFormat.set({ ... })`. */
         export interface CellValueConditionalFormatUpdateData {
             
             
         }
-        /** An interface for updating data on the ConditionalRangeFormat object, for use in "conditionalRangeFormat.set({ ... })". */
+        /** An interface for updating data on the ConditionalRangeFormat object, for use in `conditionalRangeFormat.set({ ... })`. */
         export interface ConditionalRangeFormatUpdateData {
             
             
             
             
         }
-        /** An interface for updating data on the ConditionalRangeFont object, for use in "conditionalRangeFont.set({ ... })". */
+        /** An interface for updating data on the ConditionalRangeFont object, for use in `conditionalRangeFont.set({ ... })`. */
         export interface ConditionalRangeFontUpdateData {
             
             
@@ -11526,16 +11296,16 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ConditionalRangeFill object, for use in "conditionalRangeFill.set({ ... })". */
+        /** An interface for updating data on the ConditionalRangeFill object, for use in `conditionalRangeFill.set({ ... })`. */
         export interface ConditionalRangeFillUpdateData {
             
         }
-        /** An interface for updating data on the ConditionalRangeBorder object, for use in "conditionalRangeBorder.set({ ... })". */
+        /** An interface for updating data on the ConditionalRangeBorder object, for use in `conditionalRangeBorder.set({ ... })`. */
         export interface ConditionalRangeBorderUpdateData {
             
             
         }
-        /** An interface for updating data on the ConditionalRangeBorderCollection object, for use in "conditionalRangeBorderCollection.set({ ... })". */
+        /** An interface for updating data on the ConditionalRangeBorderCollection object, for use in `conditionalRangeBorderCollection.set({ ... })`. */
         export interface ConditionalRangeBorderCollectionUpdateData {
             
             
@@ -11543,7 +11313,7 @@ export declare namespace Excel {
             
             items?: Excel.Interfaces.ConditionalRangeBorderData[];
         }
-        /** An interface for updating data on the Style object, for use in "style.set({ ... })". */
+        /** An interface for updating data on the Style object, for use in `style.set({ ... })`. */
         export interface StyleUpdateData {
             
             
@@ -11567,11 +11337,11 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the StyleCollection object, for use in "styleCollection.set({ ... })". */
+        /** An interface for updating data on the StyleCollection object, for use in `styleCollection.set({ ... })`. */
         export interface StyleCollectionUpdateData {
             items?: Excel.Interfaces.StyleData[];
         }
-        /** An interface for updating data on the PageLayout object, for use in "pageLayout.set({ ... })". */
+        /** An interface for updating data on the PageLayout object, for use in `pageLayout.set({ ... })`. */
         export interface PageLayoutUpdateData {
             
             
@@ -11594,7 +11364,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the HeaderFooter object, for use in "headerFooter.set({ ... })". */
+        /** An interface for updating data on the HeaderFooter object, for use in `headerFooter.set({ ... })`. */
         export interface HeaderFooterUpdateData {
             
             
@@ -11603,7 +11373,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the HeaderFooterGroup object, for use in "headerFooterGroup.set({ ... })". */
+        /** An interface for updating data on the HeaderFooterGroup object, for use in `headerFooterGroup.set({ ... })`. */
         export interface HeaderFooterGroupUpdateData {
             
             
@@ -11613,19 +11383,19 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the PageBreakCollection object, for use in "pageBreakCollection.set({ ... })". */
+        /** An interface for updating data on the PageBreakCollection object, for use in `pageBreakCollection.set({ ... })`. */
         export interface PageBreakCollectionUpdateData {
             items?: Excel.Interfaces.PageBreakData[];
         }
-        /** An interface for updating data on the RangeCollection object, for use in "rangeCollection.set({ ... })". */
+        /** An interface for updating data on the RangeCollection object, for use in `rangeCollection.set({ ... })`. */
         export interface RangeCollectionUpdateData {
             items?: Excel.Interfaces.RangeData[];
         }
-        /** An interface for updating data on the ShapeCollection object, for use in "shapeCollection.set({ ... })". */
+        /** An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
             items?: Excel.Interfaces.ShapeData[];
         }
-        /** An interface for updating data on the Shape object, for use in "shape.set({ ... })". */
+        /** An interface for updating data on the Shape object, for use in `shape.set({ ... })`. */
         export interface ShapeUpdateData {
             
             
@@ -11641,11 +11411,11 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the GroupShapeCollection object, for use in "groupShapeCollection.set({ ... })". */
+        /** An interface for updating data on the GroupShapeCollection object, for use in `groupShapeCollection.set({ ... })`. */
         export interface GroupShapeCollectionUpdateData {
             items?: Excel.Interfaces.ShapeData[];
         }
-        /** An interface for updating data on the Line object, for use in "line.set({ ... })". */
+        /** An interface for updating data on the Line object, for use in `line.set({ ... })`. */
         export interface LineUpdateData {
             
             
@@ -11655,12 +11425,12 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the ShapeFill object, for use in "shapeFill.set({ ... })". */
+        /** An interface for updating data on the ShapeFill object, for use in `shapeFill.set({ ... })`. */
         export interface ShapeFillUpdateData {
             
             
         }
-        /** An interface for updating data on the ShapeLineFormat object, for use in "shapeLineFormat.set({ ... })". */
+        /** An interface for updating data on the ShapeLineFormat object, for use in `shapeLineFormat.set({ ... })`. */
         export interface ShapeLineFormatUpdateData {
             
             
@@ -11669,7 +11439,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the TextFrame object, for use in "textFrame.set({ ... })". */
+        /** An interface for updating data on the TextFrame object, for use in `textFrame.set({ ... })`. */
         export interface TextFrameUpdateData {
             
             
@@ -11683,12 +11453,12 @@ export declare namespace Excel {
             
             
         }
-        /** An interface for updating data on the TextRange object, for use in "textRange.set({ ... })". */
+        /** An interface for updating data on the TextRange object, for use in `textRange.set({ ... })`. */
         export interface TextRangeUpdateData {
             
             
         }
-        /** An interface for updating data on the ShapeFont object, for use in "shapeFont.set({ ... })". */
+        /** An interface for updating data on the ShapeFont object, for use in `shapeFont.set({ ... })`. */
         export interface ShapeFontUpdateData {
             
             
@@ -11697,11 +11467,11 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "runtime.toJSON()". */
+        /** An interface describing the data returned by calling `runtime.toJSON()`. */
         export interface RuntimeData {
             
         }
-        /** An interface describing the data returned by calling "application.toJSON()". */
+        /** An interface describing the data returned by calling `application.toJSON()`. */
         export interface ApplicationData {
             
             
@@ -11714,13 +11484,13 @@ export declare namespace Excel {
             calculationMode?: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual";
             
         }
-        /** An interface describing the data returned by calling "iterativeCalculation.toJSON()". */
+        /** An interface describing the data returned by calling `iterativeCalculation.toJSON()`. */
         export interface IterativeCalculationData {
             
             
             
         }
-        /** An interface describing the data returned by calling "workbook.toJSON()". */
+        /** An interface describing the data returned by calling `workbook.toJSON()`. */
         export interface WorkbookData {
             /**
             *
@@ -11765,14 +11535,14 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "workbookProtection.toJSON()". */
+        /** An interface describing the data returned by calling `workbookProtection.toJSON()`. */
         export interface WorkbookProtectionData {
             
         }
-        /** An interface describing the data returned by calling "workbookCreated.toJSON()". */
+        /** An interface describing the data returned by calling `workbookCreated.toJSON()`. */
         export interface WorkbookCreatedData {
         }
-        /** An interface describing the data returned by calling "worksheet.toJSON()". */
+        /** An interface describing the data returned by calling `worksheet.toJSON()`. */
         export interface WorksheetData {
             
             /**
@@ -11837,11 +11607,11 @@ export declare namespace Excel {
              */
             visibility?: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";
         }
-        /** An interface describing the data returned by calling "worksheetCollection.toJSON()". */
+        /** An interface describing the data returned by calling `worksheetCollection.toJSON()`. */
         export interface WorksheetCollectionData {
             items?: Excel.Interfaces.WorksheetData[];
         }
-        /** An interface describing the data returned by calling "worksheetProtection.toJSON()". */
+        /** An interface describing the data returned by calling `worksheetProtection.toJSON()`. */
         export interface WorksheetProtectionData {
             /**
              *
@@ -11858,7 +11628,7 @@ export declare namespace Excel {
              */
             protected?: boolean;
         }
-        /** An interface describing the data returned by calling "range.toJSON()". */
+        /** An interface describing the data returned by calling `range.toJSON()`. */
         export interface RangeData {
             
             
@@ -12000,7 +11770,7 @@ export declare namespace Excel {
              */
             values?: any[][];
         }
-        /** An interface describing the data returned by calling "rangeAreas.toJSON()". */
+        /** An interface describing the data returned by calling `rangeAreas.toJSON()`. */
         export interface RangeAreasData {
             
             
@@ -12014,7 +11784,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "rangeView.toJSON()". */
+        /** An interface describing the data returned by calling `rangeView.toJSON()`. */
         export interface RangeViewData {
             
             
@@ -12029,24 +11799,24 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "rangeViewCollection.toJSON()". */
+        /** An interface describing the data returned by calling `rangeViewCollection.toJSON()`. */
         export interface RangeViewCollectionData {
             items?: Excel.Interfaces.RangeViewData[];
         }
-        /** An interface describing the data returned by calling "settingCollection.toJSON()". */
+        /** An interface describing the data returned by calling `settingCollection.toJSON()`. */
         export interface SettingCollectionData {
             items?: Excel.Interfaces.SettingData[];
         }
-        /** An interface describing the data returned by calling "setting.toJSON()". */
+        /** An interface describing the data returned by calling `setting.toJSON()`. */
         export interface SettingData {
             
             
         }
-        /** An interface describing the data returned by calling "namedItemCollection.toJSON()". */
+        /** An interface describing the data returned by calling `namedItemCollection.toJSON()`. */
         export interface NamedItemCollectionData {
             items?: Excel.Interfaces.NamedItemData[];
         }
-        /** An interface describing the data returned by calling "namedItem.toJSON()". */
+        /** An interface describing the data returned by calling `namedItem.toJSON()`. */
         export interface NamedItemData {
             
             
@@ -12081,12 +11851,12 @@ export declare namespace Excel {
              */
             visible?: boolean;
         }
-        /** An interface describing the data returned by calling "namedItemArrayValues.toJSON()". */
+        /** An interface describing the data returned by calling `namedItemArrayValues.toJSON()`. */
         export interface NamedItemArrayValuesData {
             
             
         }
-        /** An interface describing the data returned by calling "binding.toJSON()". */
+        /** An interface describing the data returned by calling `binding.toJSON()`. */
         export interface BindingData {
             /**
              *
@@ -12103,19 +11873,19 @@ export declare namespace Excel {
              */
             type?: Excel.BindingType | "Range" | "Table" | "Text";
         }
-        /** An interface describing the data returned by calling "bindingCollection.toJSON()". */
+        /** An interface describing the data returned by calling `bindingCollection.toJSON()`. */
         export interface BindingCollectionData {
             items?: Excel.Interfaces.BindingData[];
         }
-        /** An interface describing the data returned by calling "tableCollection.toJSON()". */
+        /** An interface describing the data returned by calling `tableCollection.toJSON()`. */
         export interface TableCollectionData {
             items?: Excel.Interfaces.TableData[];
         }
-        /** An interface describing the data returned by calling "tableScopedCollection.toJSON()". */
+        /** An interface describing the data returned by calling `tableScopedCollection.toJSON()`. */
         export interface TableScopedCollectionData {
             items?: Excel.Interfaces.TableData[];
         }
-        /** An interface describing the data returned by calling "table.toJSON()". */
+        /** An interface describing the data returned by calling `table.toJSON()`. */
         export interface TableData {
             
             /**
@@ -12181,11 +11951,11 @@ export declare namespace Excel {
              */
             style?: string;
         }
-        /** An interface describing the data returned by calling "tableColumnCollection.toJSON()". */
+        /** An interface describing the data returned by calling `tableColumnCollection.toJSON()`. */
         export interface TableColumnCollectionData {
             items?: Excel.Interfaces.TableColumnData[];
         }
-        /** An interface describing the data returned by calling "tableColumn.toJSON()". */
+        /** An interface describing the data returned by calling `tableColumn.toJSON()`. */
         export interface TableColumnData {
             /**
             *
@@ -12223,11 +11993,11 @@ export declare namespace Excel {
              */
             values?: any[][];
         }
-        /** An interface describing the data returned by calling "tableRowCollection.toJSON()". */
+        /** An interface describing the data returned by calling `tableRowCollection.toJSON()`. */
         export interface TableRowCollectionData {
             items?: Excel.Interfaces.TableRowData[];
         }
-        /** An interface describing the data returned by calling "tableRow.toJSON()". */
+        /** An interface describing the data returned by calling `tableRow.toJSON()`. */
         export interface TableRowData {
             /**
              *
@@ -12244,7 +12014,7 @@ export declare namespace Excel {
              */
             values?: any[][];
         }
-        /** An interface describing the data returned by calling "dataValidation.toJSON()". */
+        /** An interface describing the data returned by calling `dataValidation.toJSON()`. */
         export interface DataValidationData {
             
             
@@ -12253,12 +12023,12 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "removeDuplicatesResult.toJSON()". */
+        /** An interface describing the data returned by calling `removeDuplicatesResult.toJSON()`. */
         export interface RemoveDuplicatesResultData {
             
             
         }
-        /** An interface describing the data returned by calling "rangeFormat.toJSON()". */
+        /** An interface describing the data returned by calling `rangeFormat.toJSON()`. */
         export interface RangeFormatData {
             /**
             *
@@ -12331,7 +12101,7 @@ export declare namespace Excel {
              */
             wrapText?: boolean;
         }
-        /** An interface describing the data returned by calling "formatProtection.toJSON()". */
+        /** An interface describing the data returned by calling `formatProtection.toJSON()`. */
         export interface FormatProtectionData {
             /**
              *
@@ -12348,11 +12118,11 @@ export declare namespace Excel {
              */
             locked?: boolean;
         }
-        /** An interface describing the data returned by calling "rangeFill.toJSON()". */
+        /** An interface describing the data returned by calling `rangeFill.toJSON()`. */
         export interface RangeFillData {
             /**
              *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
+             * HTML color code representing the color of the background, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -12362,7 +12132,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "rangeBorder.toJSON()". */
+        /** An interface describing the data returned by calling `rangeBorder.toJSON()`. */
         export interface RangeBorderData {
             /**
              *
@@ -12394,11 +12164,11 @@ export declare namespace Excel {
              */
             weight?: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick";
         }
-        /** An interface describing the data returned by calling "rangeBorderCollection.toJSON()". */
+        /** An interface describing the data returned by calling `rangeBorderCollection.toJSON()`. */
         export interface RangeBorderCollectionData {
             items?: Excel.Interfaces.RangeBorderData[];
         }
-        /** An interface describing the data returned by calling "rangeFont.toJSON()". */
+        /** An interface describing the data returned by calling `rangeFont.toJSON()`. */
         export interface RangeFontData {
             /**
              *
@@ -12447,11 +12217,11 @@ export declare namespace Excel {
              */
             underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";
         }
-        /** An interface describing the data returned by calling "chartCollection.toJSON()". */
+        /** An interface describing the data returned by calling `chartCollection.toJSON()`. */
         export interface ChartCollectionData {
             items?: Excel.Interfaces.ChartData[];
         }
-        /** An interface describing the data returned by calling "chart.toJSON()". */
+        /** An interface describing the data returned by calling `chart.toJSON()`. */
         export interface ChartData {
             /**
             *
@@ -12543,14 +12313,14 @@ export declare namespace Excel {
              */
             width?: number;
         }
-        /** An interface describing the data returned by calling "chartPivotOptions.toJSON()". */
+        /** An interface describing the data returned by calling `chartPivotOptions.toJSON()`. */
         export interface ChartPivotOptionsData {
             
             
             
             
         }
-        /** An interface describing the data returned by calling "chartAreaFormat.toJSON()". */
+        /** An interface describing the data returned by calling `chartAreaFormat.toJSON()`. */
         export interface ChartAreaFormatData {
             
             /**
@@ -12563,11 +12333,11 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "chartSeriesCollection.toJSON()". */
+        /** An interface describing the data returned by calling `chartSeriesCollection.toJSON()`. */
         export interface ChartSeriesCollectionData {
             items?: Excel.Interfaces.ChartSeriesData[];
         }
-        /** An interface describing the data returned by calling "chartSeries.toJSON()". */
+        /** An interface describing the data returned by calling `chartSeries.toJSON()`. */
         export interface ChartSeriesData {
             
             
@@ -12634,7 +12404,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "chartSeriesFormat.toJSON()". */
+        /** An interface describing the data returned by calling `chartSeriesFormat.toJSON()`. */
         export interface ChartSeriesFormatData {
             /**
             *
@@ -12644,11 +12414,11 @@ export declare namespace Excel {
             */
             line?: Excel.Interfaces.ChartLineFormatData;
         }
-        /** An interface describing the data returned by calling "chartPointsCollection.toJSON()". */
+        /** An interface describing the data returned by calling `chartPointsCollection.toJSON()`. */
         export interface ChartPointsCollectionData {
             items?: Excel.Interfaces.ChartPointData[];
         }
-        /** An interface describing the data returned by calling "chartPoint.toJSON()". */
+        /** An interface describing the data returned by calling `chartPoint.toJSON()`. */
         export interface ChartPointData {
             
             /**
@@ -12671,11 +12441,11 @@ export declare namespace Excel {
              */
             value?: any;
         }
-        /** An interface describing the data returned by calling "chartPointFormat.toJSON()". */
+        /** An interface describing the data returned by calling `chartPointFormat.toJSON()`. */
         export interface ChartPointFormatData {
             
         }
-        /** An interface describing the data returned by calling "chartAxes.toJSON()". */
+        /** An interface describing the data returned by calling `chartAxes.toJSON()`. */
         export interface ChartAxesData {
             /**
             *
@@ -12699,7 +12469,7 @@ export declare namespace Excel {
             */
             valueAxis?: Excel.Interfaces.ChartAxisData;
         }
-        /** An interface describing the data returned by calling "chartAxis.toJSON()". */
+        /** An interface describing the data returned by calling `chartAxis.toJSON()`. */
         export interface ChartAxisData {
             /**
             *
@@ -12789,7 +12559,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "chartAxisFormat.toJSON()". */
+        /** An interface describing the data returned by calling `chartAxisFormat.toJSON()`. */
         export interface ChartAxisFormatData {
             /**
             *
@@ -12806,7 +12576,7 @@ export declare namespace Excel {
             */
             line?: Excel.Interfaces.ChartLineFormatData;
         }
-        /** An interface describing the data returned by calling "chartAxisTitle.toJSON()". */
+        /** An interface describing the data returned by calling `chartAxisTitle.toJSON()`. */
         export interface ChartAxisTitleData {
             /**
             *
@@ -12830,7 +12600,7 @@ export declare namespace Excel {
              */
             visible?: boolean;
         }
-        /** An interface describing the data returned by calling "chartAxisTitleFormat.toJSON()". */
+        /** An interface describing the data returned by calling `chartAxisTitleFormat.toJSON()`. */
         export interface ChartAxisTitleFormatData {
             
             /**
@@ -12841,7 +12611,7 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ChartFontData;
         }
-        /** An interface describing the data returned by calling "chartDataLabels.toJSON()". */
+        /** An interface describing the data returned by calling `chartDataLabels.toJSON()`. */
         export interface ChartDataLabelsData {
             /**
             *
@@ -12913,7 +12683,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "chartDataLabel.toJSON()". */
+        /** An interface describing the data returned by calling `chartDataLabel.toJSON()`. */
         export interface ChartDataLabelData {
             
             
@@ -12937,7 +12707,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "chartDataLabelFormat.toJSON()". */
+        /** An interface describing the data returned by calling `chartDataLabelFormat.toJSON()`. */
         export interface ChartDataLabelFormatData {
             
             /**
@@ -12948,7 +12718,7 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ChartFontData;
         }
-        /** An interface describing the data returned by calling "chartErrorBars.toJSON()". */
+        /** An interface describing the data returned by calling `chartErrorBars.toJSON()`. */
         export interface ChartErrorBarsData {
             
             
@@ -12956,11 +12726,11 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "chartErrorBarsFormat.toJSON()". */
+        /** An interface describing the data returned by calling `chartErrorBarsFormat.toJSON()`. */
         export interface ChartErrorBarsFormatData {
             
         }
-        /** An interface describing the data returned by calling "chartGridlines.toJSON()". */
+        /** An interface describing the data returned by calling `chartGridlines.toJSON()`. */
         export interface ChartGridlinesData {
             /**
             *
@@ -12977,7 +12747,7 @@ export declare namespace Excel {
              */
             visible?: boolean;
         }
-        /** An interface describing the data returned by calling "chartGridlinesFormat.toJSON()". */
+        /** An interface describing the data returned by calling `chartGridlinesFormat.toJSON()`. */
         export interface ChartGridlinesFormatData {
             /**
             *
@@ -12987,7 +12757,7 @@ export declare namespace Excel {
             */
             line?: Excel.Interfaces.ChartLineFormatData;
         }
-        /** An interface describing the data returned by calling "chartLegend.toJSON()". */
+        /** An interface describing the data returned by calling `chartLegend.toJSON()`. */
         export interface ChartLegendData {
             /**
             *
@@ -13024,7 +12794,7 @@ export declare namespace Excel {
             visible?: boolean;
             
         }
-        /** An interface describing the data returned by calling "chartLegendEntry.toJSON()". */
+        /** An interface describing the data returned by calling `chartLegendEntry.toJSON()`. */
         export interface ChartLegendEntryData {
             
             
@@ -13033,11 +12803,11 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "chartLegendEntryCollection.toJSON()". */
+        /** An interface describing the data returned by calling `chartLegendEntryCollection.toJSON()`. */
         export interface ChartLegendEntryCollectionData {
             items?: Excel.Interfaces.ChartLegendEntryData[];
         }
-        /** An interface describing the data returned by calling "chartLegendFormat.toJSON()". */
+        /** An interface describing the data returned by calling `chartLegendFormat.toJSON()`. */
         export interface ChartLegendFormatData {
             
             /**
@@ -13048,13 +12818,13 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ChartFontData;
         }
-        /** An interface describing the data returned by calling "chartMapOptions.toJSON()". */
+        /** An interface describing the data returned by calling `chartMapOptions.toJSON()`. */
         export interface ChartMapOptionsData {
             
             
             
         }
-        /** An interface describing the data returned by calling "chartTitle.toJSON()". */
+        /** An interface describing the data returned by calling `chartTitle.toJSON()`. */
         export interface ChartTitleData {
             /**
             *
@@ -13094,11 +12864,11 @@ export declare namespace Excel {
             visible?: boolean;
             
         }
-        /** An interface describing the data returned by calling "chartFormatString.toJSON()". */
+        /** An interface describing the data returned by calling `chartFormatString.toJSON()`. */
         export interface ChartFormatStringData {
             
         }
-        /** An interface describing the data returned by calling "chartTitleFormat.toJSON()". */
+        /** An interface describing the data returned by calling `chartTitleFormat.toJSON()`. */
         export interface ChartTitleFormatData {
             
             /**
@@ -13109,13 +12879,13 @@ export declare namespace Excel {
             */
             font?: Excel.Interfaces.ChartFontData;
         }
-        /** An interface describing the data returned by calling "chartBorder.toJSON()". */
+        /** An interface describing the data returned by calling `chartBorder.toJSON()`. */
         export interface ChartBorderData {
             
             
             
         }
-        /** An interface describing the data returned by calling "chartBinOptions.toJSON()". */
+        /** An interface describing the data returned by calling `chartBinOptions.toJSON()`. */
         export interface ChartBinOptionsData {
             
             
@@ -13125,7 +12895,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "chartBoxwhiskerOptions.toJSON()". */
+        /** An interface describing the data returned by calling `chartBoxwhiskerOptions.toJSON()`. */
         export interface ChartBoxwhiskerOptionsData {
             
             
@@ -13133,7 +12903,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "chartLineFormat.toJSON()". */
+        /** An interface describing the data returned by calling `chartLineFormat.toJSON()`. */
         export interface ChartLineFormatData {
             /**
              *
@@ -13145,7 +12915,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "chartFont.toJSON()". */
+        /** An interface describing the data returned by calling `chartFont.toJSON()`. */
         export interface ChartFontData {
             /**
              *
@@ -13190,7 +12960,7 @@ export declare namespace Excel {
              */
             underline?: Excel.ChartUnderlineStyle | "None" | "Single";
         }
-        /** An interface describing the data returned by calling "chartTrendline.toJSON()". */
+        /** An interface describing the data returned by calling `chartTrendline.toJSON()`. */
         export interface ChartTrendlineData {
             
             
@@ -13204,15 +12974,15 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "chartTrendlineCollection.toJSON()". */
+        /** An interface describing the data returned by calling `chartTrendlineCollection.toJSON()`. */
         export interface ChartTrendlineCollectionData {
             items?: Excel.Interfaces.ChartTrendlineData[];
         }
-        /** An interface describing the data returned by calling "chartTrendlineFormat.toJSON()". */
+        /** An interface describing the data returned by calling `chartTrendlineFormat.toJSON()`. */
         export interface ChartTrendlineFormatData {
             
         }
-        /** An interface describing the data returned by calling "chartTrendlineLabel.toJSON()". */
+        /** An interface describing the data returned by calling `chartTrendlineLabel.toJSON()`. */
         export interface ChartTrendlineLabelData {
             
             
@@ -13228,12 +12998,12 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "chartTrendlineLabelFormat.toJSON()". */
+        /** An interface describing the data returned by calling `chartTrendlineLabelFormat.toJSON()`. */
         export interface ChartTrendlineLabelFormatData {
             
             
         }
-        /** An interface describing the data returned by calling "chartPlotArea.toJSON()". */
+        /** An interface describing the data returned by calling `chartPlotArea.toJSON()`. */
         export interface ChartPlotAreaData {
             
             
@@ -13246,11 +13016,11 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "chartPlotAreaFormat.toJSON()". */
+        /** An interface describing the data returned by calling `chartPlotAreaFormat.toJSON()`. */
         export interface ChartPlotAreaFormatData {
             
         }
-        /** An interface describing the data returned by calling "tableSort.toJSON()". */
+        /** An interface describing the data returned by calling `tableSort.toJSON()`. */
         export interface TableSortData {
             /**
              *
@@ -13274,7 +13044,7 @@ export declare namespace Excel {
              */
             method?: Excel.SortMethod | "PinYin" | "StrokeCount";
         }
-        /** An interface describing the data returned by calling "filter.toJSON()". */
+        /** An interface describing the data returned by calling `filter.toJSON()`. */
         export interface FilterData {
             /**
              *
@@ -13284,30 +13054,30 @@ export declare namespace Excel {
              */
             criteria?: Excel.FilterCriteria;
         }
-        /** An interface describing the data returned by calling "autoFilter.toJSON()". */
+        /** An interface describing the data returned by calling `autoFilter.toJSON()`. */
         export interface AutoFilterData {
             
             
             
         }
-        /** An interface describing the data returned by calling "customXmlPartScopedCollection.toJSON()". */
+        /** An interface describing the data returned by calling `customXmlPartScopedCollection.toJSON()`. */
         export interface CustomXmlPartScopedCollectionData {
             items?: Excel.Interfaces.CustomXmlPartData[];
         }
-        /** An interface describing the data returned by calling "customXmlPartCollection.toJSON()". */
+        /** An interface describing the data returned by calling `customXmlPartCollection.toJSON()`. */
         export interface CustomXmlPartCollectionData {
             items?: Excel.Interfaces.CustomXmlPartData[];
         }
-        /** An interface describing the data returned by calling "customXmlPart.toJSON()". */
+        /** An interface describing the data returned by calling `customXmlPart.toJSON()`. */
         export interface CustomXmlPartData {
             
             
         }
-        /** An interface describing the data returned by calling "pivotTableCollection.toJSON()". */
+        /** An interface describing the data returned by calling `pivotTableCollection.toJSON()`. */
         export interface PivotTableCollectionData {
             items?: Excel.Interfaces.PivotTableData[];
         }
-        /** An interface describing the data returned by calling "pivotTable.toJSON()". */
+        /** An interface describing the data returned by calling `pivotTable.toJSON()`. */
         export interface PivotTableData {
             
             
@@ -13319,7 +13089,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "pivotLayout.toJSON()". */
+        /** An interface describing the data returned by calling `pivotLayout.toJSON()`. */
         export interface PivotLayoutData {
             
             
@@ -13328,32 +13098,32 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "pivotHierarchyCollection.toJSON()". */
+        /** An interface describing the data returned by calling `pivotHierarchyCollection.toJSON()`. */
         export interface PivotHierarchyCollectionData {
             items?: Excel.Interfaces.PivotHierarchyData[];
         }
-        /** An interface describing the data returned by calling "pivotHierarchy.toJSON()". */
+        /** An interface describing the data returned by calling `pivotHierarchy.toJSON()`. */
         export interface PivotHierarchyData {
             
             
             
         }
-        /** An interface describing the data returned by calling "rowColumnPivotHierarchyCollection.toJSON()". */
+        /** An interface describing the data returned by calling `rowColumnPivotHierarchyCollection.toJSON()`. */
         export interface RowColumnPivotHierarchyCollectionData {
             items?: Excel.Interfaces.RowColumnPivotHierarchyData[];
         }
-        /** An interface describing the data returned by calling "rowColumnPivotHierarchy.toJSON()". */
+        /** An interface describing the data returned by calling `rowColumnPivotHierarchy.toJSON()`. */
         export interface RowColumnPivotHierarchyData {
             
             
             
             
         }
-        /** An interface describing the data returned by calling "filterPivotHierarchyCollection.toJSON()". */
+        /** An interface describing the data returned by calling `filterPivotHierarchyCollection.toJSON()`. */
         export interface FilterPivotHierarchyCollectionData {
             items?: Excel.Interfaces.FilterPivotHierarchyData[];
         }
-        /** An interface describing the data returned by calling "filterPivotHierarchy.toJSON()". */
+        /** An interface describing the data returned by calling `filterPivotHierarchy.toJSON()`. */
         export interface FilterPivotHierarchyData {
             
             
@@ -13361,11 +13131,11 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "dataPivotHierarchyCollection.toJSON()". */
+        /** An interface describing the data returned by calling `dataPivotHierarchyCollection.toJSON()`. */
         export interface DataPivotHierarchyCollectionData {
             items?: Excel.Interfaces.DataPivotHierarchyData[];
         }
-        /** An interface describing the data returned by calling "dataPivotHierarchy.toJSON()". */
+        /** An interface describing the data returned by calling `dataPivotHierarchy.toJSON()`. */
         export interface DataPivotHierarchyData {
             
             
@@ -13375,11 +13145,11 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "pivotFieldCollection.toJSON()". */
+        /** An interface describing the data returned by calling `pivotFieldCollection.toJSON()`. */
         export interface PivotFieldCollectionData {
             items?: Excel.Interfaces.PivotFieldData[];
         }
-        /** An interface describing the data returned by calling "pivotField.toJSON()". */
+        /** An interface describing the data returned by calling `pivotField.toJSON()`. */
         export interface PivotFieldData {
             
             
@@ -13387,18 +13157,18 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "pivotItemCollection.toJSON()". */
+        /** An interface describing the data returned by calling `pivotItemCollection.toJSON()`. */
         export interface PivotItemCollectionData {
             items?: Excel.Interfaces.PivotItemData[];
         }
-        /** An interface describing the data returned by calling "pivotItem.toJSON()". */
+        /** An interface describing the data returned by calling `pivotItem.toJSON()`. */
         export interface PivotItemData {
             
             
             
             
         }
-        /** An interface describing the data returned by calling "documentProperties.toJSON()". */
+        /** An interface describing the data returned by calling `documentProperties.toJSON()`. */
         export interface DocumentPropertiesData {
             
             
@@ -13413,21 +13183,21 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "customProperty.toJSON()". */
+        /** An interface describing the data returned by calling `customProperty.toJSON()`. */
         export interface CustomPropertyData {
             
             
             
         }
-        /** An interface describing the data returned by calling "customPropertyCollection.toJSON()". */
+        /** An interface describing the data returned by calling `customPropertyCollection.toJSON()`. */
         export interface CustomPropertyCollectionData {
             items?: Excel.Interfaces.CustomPropertyData[];
         }
-        /** An interface describing the data returned by calling "conditionalFormatCollection.toJSON()". */
+        /** An interface describing the data returned by calling `conditionalFormatCollection.toJSON()`. */
         export interface ConditionalFormatCollectionData {
             items?: Excel.Interfaces.ConditionalFormatData[];
         }
-        /** An interface describing the data returned by calling "conditionalFormat.toJSON()". */
+        /** An interface describing the data returned by calling `conditionalFormat.toJSON()`. */
         export interface ConditionalFormatData {
             
             
@@ -13450,7 +13220,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "dataBarConditionalFormat.toJSON()". */
+        /** An interface describing the data returned by calling `dataBarConditionalFormat.toJSON()`. */
         export interface DataBarConditionalFormatData {
             
             
@@ -13461,70 +13231,70 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "conditionalDataBarPositiveFormat.toJSON()". */
+        /** An interface describing the data returned by calling `conditionalDataBarPositiveFormat.toJSON()`. */
         export interface ConditionalDataBarPositiveFormatData {
             
             
             
         }
-        /** An interface describing the data returned by calling "conditionalDataBarNegativeFormat.toJSON()". */
+        /** An interface describing the data returned by calling `conditionalDataBarNegativeFormat.toJSON()`. */
         export interface ConditionalDataBarNegativeFormatData {
             
             
             
             
         }
-        /** An interface describing the data returned by calling "customConditionalFormat.toJSON()". */
+        /** An interface describing the data returned by calling `customConditionalFormat.toJSON()`. */
         export interface CustomConditionalFormatData {
             
             
         }
-        /** An interface describing the data returned by calling "conditionalFormatRule.toJSON()". */
+        /** An interface describing the data returned by calling `conditionalFormatRule.toJSON()`. */
         export interface ConditionalFormatRuleData {
             
             
             
         }
-        /** An interface describing the data returned by calling "iconSetConditionalFormat.toJSON()". */
+        /** An interface describing the data returned by calling `iconSetConditionalFormat.toJSON()`. */
         export interface IconSetConditionalFormatData {
             
             
             
             
         }
-        /** An interface describing the data returned by calling "colorScaleConditionalFormat.toJSON()". */
+        /** An interface describing the data returned by calling `colorScaleConditionalFormat.toJSON()`. */
         export interface ColorScaleConditionalFormatData {
             
             
         }
-        /** An interface describing the data returned by calling "topBottomConditionalFormat.toJSON()". */
+        /** An interface describing the data returned by calling `topBottomConditionalFormat.toJSON()`. */
         export interface TopBottomConditionalFormatData {
             
             
         }
-        /** An interface describing the data returned by calling "presetCriteriaConditionalFormat.toJSON()". */
+        /** An interface describing the data returned by calling `presetCriteriaConditionalFormat.toJSON()`. */
         export interface PresetCriteriaConditionalFormatData {
             
             
         }
-        /** An interface describing the data returned by calling "textConditionalFormat.toJSON()". */
+        /** An interface describing the data returned by calling `textConditionalFormat.toJSON()`. */
         export interface TextConditionalFormatData {
             
             
         }
-        /** An interface describing the data returned by calling "cellValueConditionalFormat.toJSON()". */
+        /** An interface describing the data returned by calling `cellValueConditionalFormat.toJSON()`. */
         export interface CellValueConditionalFormatData {
             
             
         }
-        /** An interface describing the data returned by calling "conditionalRangeFormat.toJSON()". */
+        /** An interface describing the data returned by calling `conditionalRangeFormat.toJSON()`. */
         export interface ConditionalRangeFormatData {
             
             
             
             
         }
-        /** An interface describing the data returned by calling "conditionalRangeFont.toJSON()". */
+        /** An interface describing the data returned by calling `conditionalRangeFont.toJSON()`. */
         export interface ConditionalRangeFontData {
             
             
@@ -13532,21 +13302,21 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "conditionalRangeFill.toJSON()". */
+        /** An interface describing the data returned by calling `conditionalRangeFill.toJSON()`. */
         export interface ConditionalRangeFillData {
             
         }
-        /** An interface describing the data returned by calling "conditionalRangeBorder.toJSON()". */
+        /** An interface describing the data returned by calling `conditionalRangeBorder.toJSON()`. */
         export interface ConditionalRangeBorderData {
             
             
             
         }
-        /** An interface describing the data returned by calling "conditionalRangeBorderCollection.toJSON()". */
+        /** An interface describing the data returned by calling `conditionalRangeBorderCollection.toJSON()`. */
         export interface ConditionalRangeBorderCollectionData {
             items?: Excel.Interfaces.ConditionalRangeBorderData[];
         }
-        /** An interface describing the data returned by calling "style.toJSON()". */
+        /** An interface describing the data returned by calling `style.toJSON()`. */
         export interface StyleData {
             
             
@@ -13572,11 +13342,11 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "styleCollection.toJSON()". */
+        /** An interface describing the data returned by calling `styleCollection.toJSON()`. */
         export interface StyleCollectionData {
             items?: Excel.Interfaces.StyleData[];
         }
-        /** An interface describing the data returned by calling "pageLayout.toJSON()". */
+        /** An interface describing the data returned by calling `pageLayout.toJSON()`. */
         export interface PageLayoutData {
             
             
@@ -13599,7 +13369,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "headerFooter.toJSON()". */
+        /** An interface describing the data returned by calling `headerFooter.toJSON()`. */
         export interface HeaderFooterData {
             
             
@@ -13608,7 +13378,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "headerFooterGroup.toJSON()". */
+        /** An interface describing the data returned by calling `headerFooterGroup.toJSON()`. */
         export interface HeaderFooterGroupData {
             
             
@@ -13618,24 +13388,24 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "pageBreak.toJSON()". */
+        /** An interface describing the data returned by calling `pageBreak.toJSON()`. */
         export interface PageBreakData {
             
             
         }
-        /** An interface describing the data returned by calling "pageBreakCollection.toJSON()". */
+        /** An interface describing the data returned by calling `pageBreakCollection.toJSON()`. */
         export interface PageBreakCollectionData {
             items?: Excel.Interfaces.PageBreakData[];
         }
-        /** An interface describing the data returned by calling "rangeCollection.toJSON()". */
+        /** An interface describing the data returned by calling `rangeCollection.toJSON()`. */
         export interface RangeCollectionData {
             items?: Excel.Interfaces.RangeData[];
         }
-        /** An interface describing the data returned by calling "shapeCollection.toJSON()". */
+        /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
             items?: Excel.Interfaces.ShapeData[];
         }
-        /** An interface describing the data returned by calling "shape.toJSON()". */
+        /** An interface describing the data returned by calling `shape.toJSON()`. */
         export interface ShapeData {
             
             
@@ -13656,25 +13426,25 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "geometricShape.toJSON()". */
+        /** An interface describing the data returned by calling `geometricShape.toJSON()`. */
         export interface GeometricShapeData {
             
         }
-        /** An interface describing the data returned by calling "image.toJSON()". */
+        /** An interface describing the data returned by calling `image.toJSON()`. */
         export interface ImageData {
             
             
         }
-        /** An interface describing the data returned by calling "shapeGroup.toJSON()". */
+        /** An interface describing the data returned by calling `shapeGroup.toJSON()`. */
         export interface ShapeGroupData {
             
             
         }
-        /** An interface describing the data returned by calling "groupShapeCollection.toJSON()". */
+        /** An interface describing the data returned by calling `groupShapeCollection.toJSON()`. */
         export interface GroupShapeCollectionData {
             items?: Excel.Interfaces.ShapeData[];
         }
-        /** An interface describing the data returned by calling "line.toJSON()". */
+        /** An interface describing the data returned by calling `line.toJSON()`. */
         export interface LineData {
             
             
@@ -13689,13 +13459,13 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "shapeFill.toJSON()". */
+        /** An interface describing the data returned by calling `shapeFill.toJSON()`. */
         export interface ShapeFillData {
             
             
             
         }
-        /** An interface describing the data returned by calling "shapeLineFormat.toJSON()". */
+        /** An interface describing the data returned by calling `shapeLineFormat.toJSON()`. */
         export interface ShapeLineFormatData {
             
             
@@ -13704,7 +13474,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "textFrame.toJSON()". */
+        /** An interface describing the data returned by calling `textFrame.toJSON()`. */
         export interface TextFrameData {
             
             
@@ -13719,12 +13489,12 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "textRange.toJSON()". */
+        /** An interface describing the data returned by calling `textRange.toJSON()`. */
         export interface TextRangeData {
             
             
         }
-        /** An interface describing the data returned by calling "shapeFont.toJSON()". */
+        /** An interface describing the data returned by calling `shapeFont.toJSON()`. */
         export interface ShapeFontData {
             
             
@@ -13733,7 +13503,7 @@ export declare namespace Excel {
             
             
         }
-        /** An interface describing the data returned by calling "functionResult.toJSON()". */
+        /** An interface describing the data returned by calling `functionResult.toJSON()`. */
         export interface FunctionResultData<T> {
             /**
              *
@@ -13758,6 +13528,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ApplicationLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             
             
@@ -13779,6 +13552,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface WorkbookLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
             *
@@ -13821,6 +13597,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface WorksheetLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             
             /**
@@ -13887,6 +13666,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface WorksheetCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             
             /**
@@ -13953,6 +13735,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          */
         export interface WorksheetProtectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
              *
@@ -13978,6 +13763,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface RangeLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             
             /**
@@ -14137,6 +13925,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface NamedItemCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             
             
@@ -14180,6 +13971,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface NamedItemLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             
             
@@ -14224,6 +14018,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface BindingLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
              *
@@ -14247,6 +14044,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface BindingCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
              *
@@ -14270,6 +14070,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface TableCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             
             /**
@@ -14351,6 +14154,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface TableLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             
             /**
@@ -14430,6 +14236,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface TableColumnCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
             *
@@ -14474,6 +14283,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface TableColumnLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
             *
@@ -14523,6 +14335,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface TableRowCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
              *
@@ -14551,6 +14366,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface TableRowLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
              *
@@ -14576,6 +14394,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface RangeFormatLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
             *
@@ -14655,6 +14476,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          */
         export interface FormatProtectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
              *
@@ -14678,10 +14502,13 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface RangeFillLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
              *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
+             * HTML color code representing the color of the background, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -14698,6 +14525,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface RangeBorderLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
              *
@@ -14736,6 +14566,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface RangeBorderCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
              *
@@ -14774,6 +14607,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface RangeFontLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
              *
@@ -14829,6 +14665,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
             *
@@ -14935,6 +14774,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
             *
@@ -15041,6 +14883,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartAreaFormatLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             
             /**
@@ -15060,6 +14905,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartSeriesCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             
             
@@ -15132,6 +14980,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartSeriesLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             
             
@@ -15204,6 +15055,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartSeriesFormatLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
             *
@@ -15220,6 +15074,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartPointsCollectionLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             
             /**
@@ -15249,6 +15106,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartPointLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             
             /**
@@ -15278,6 +15138,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartPointFormatLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             
         }
@@ -15288,6 +15151,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartAxesLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
             *
@@ -15318,6 +15184,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartAxisLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
             *
@@ -15416,6 +15285,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartAxisFormatLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
             *
@@ -15439,6 +15311,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartAxisTitleLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
             *
@@ -15469,6 +15344,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartAxisTitleFormatLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             
             /**
@@ -15486,6 +15364,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartDataLabelsLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
             *
@@ -15565,6 +15446,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartDataLabelFormatLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             
             /**
@@ -15584,6 +15468,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartGridlinesLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
             *
@@ -15607,6 +15494,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartGridlinesFormatLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
             *
@@ -15623,6 +15513,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartLegendLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
             *
@@ -15667,6 +15560,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartLegendFormatLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             
             /**
@@ -15685,6 +15581,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartTitleLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
             *
@@ -15732,6 +15631,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartTitleFormatLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             
             /**
@@ -15752,6 +15654,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartLineFormatLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
              *
@@ -15770,6 +15675,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         export interface ChartFontLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
              *
@@ -15828,6 +15736,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          */
         export interface TableSortLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
              *
@@ -15858,6 +15769,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          */
         export interface FilterLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
              *
@@ -15934,6 +15848,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          */
         export interface FunctionResultLoadOptions {
+            /**
+              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+             */
             $all?: boolean;
             /**
              *

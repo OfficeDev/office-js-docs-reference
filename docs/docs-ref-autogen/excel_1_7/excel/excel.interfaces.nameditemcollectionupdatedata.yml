@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.NamedItemCollectionUpdateData:interface'
     summary: >-
-      An interface for updating data on the NamedItemCollection object, for use in "namedItemCollection.set(<!-- -->{
-      ... }<!-- -->)".
+      An interface for updating data on the NamedItemCollection object, for use in `namedItemCollection.set({ ...
+      })`<!-- -->.
     name: Excel.Interfaces.NamedItemCollectionUpdateData
     fullName: Excel.Interfaces.NamedItemCollectionUpdateData
     langs:

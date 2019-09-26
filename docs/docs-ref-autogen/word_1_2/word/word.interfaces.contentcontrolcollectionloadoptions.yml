@@ -144,8 +144,8 @@ items:
           - boolean
   - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControl:member'
     summary: >-
-      For EACH ITEM in the collection: Gets the content control that contains the content control. Throws if there isn't
-      a parent content control.
+      For EACH ITEM in the collection: Gets the content control that contains the content control. Throws an error if
+      there isn't a parent content control.
 
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]

@@ -17,6 +17,9 @@ items:
       - 'excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions#formulaLocal:member'
       - 'excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions#formulaR1C1:member'
   - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     name: $all
     fullName: $all
     langs:

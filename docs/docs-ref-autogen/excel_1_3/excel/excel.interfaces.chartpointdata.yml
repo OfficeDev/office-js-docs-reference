@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.ChartPointData:interface'
-    summary: An interface describing the data returned by calling "chartPoint.toJSON()".
+    summary: An interface describing the data returned by calling `chartPoint.toJSON()`<!-- -->.
     name: Excel.Interfaces.ChartPointData
     fullName: Excel.Interfaces.ChartPointData
     langs:

@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.RangeViewCollectionUpdateData:interface'
     summary: >-
-      An interface for updating data on the RangeViewCollection object, for use in "rangeViewCollection.set(<!-- -->{
-      ... }<!-- -->)".
+      An interface for updating data on the RangeViewCollection object, for use in `rangeViewCollection.set({ ...
+      })`<!-- -->.
     name: Excel.Interfaces.RangeViewCollectionUpdateData
     fullName: Excel.Interfaces.RangeViewCollectionUpdateData
     langs:

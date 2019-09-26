@@ -3,7 +3,7 @@ items:
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData:interface'
     summary: >-
       An interface for updating data on the ConditionalDataBarPositiveFormat object, for use in
-      "conditionalDataBarPositiveFormat.set(<!-- -->{ ... }<!-- -->)".
+      `conditionalDataBarPositiveFormat.set({ ... })`<!-- -->.
     name: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
     fullName: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
     langs:

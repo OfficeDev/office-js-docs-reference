@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.SlicerStyleUpdateData:interface'
-    summary: 'An interface for updating data on the SlicerStyle object, for use in "slicerStyle.set(<!-- -->{ ... }<!-- -->)".'
+    summary: 'An interface for updating data on the SlicerStyle object, for use in `slicerStyle.set({ ... })`<!-- -->.'
     name: Excel.Interfaces.SlicerStyleUpdateData
     fullName: Excel.Interfaces.SlicerStyleUpdateData
     langs:

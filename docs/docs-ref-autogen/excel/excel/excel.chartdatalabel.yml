@@ -119,7 +119,7 @@ items:
   - uid: 'excel!Excel.ChartDataLabel#horizontalAlignment:member'
     summary: >-
       Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details. This
-      property is valid only when TextOrientation of data label is 90, -90 or 180.
+      property is valid only when TextOrientation of data label is -90, 90, or 180.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -171,40 +171,22 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartDataLabel#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
-
-
-      `load(option?: string | string[]): Excel.ChartDataLabel` - Where option is a comma-delimited string or an array of
-      strings that specify the properties to load.
-
-
-      `load(option?: { select?: string; expand?: string; }): Excel.ChartDataLabel` - Where option.select is a
-      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
-      specifies the navigation properties to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartDataLabel` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
-      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
-      specified number of items.
-    name: load(option)
-    fullName: load(option)
+    name: load(options)
+    fullName: load(options)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: Excel.Interfaces.ChartDataLabelLoadOptions): Excel.ChartDataLabel;'
+      content: 'load(options?: Excel.Interfaces.ChartDataLabelLoadOptions): Excel.ChartDataLabel;'
       return:
         type:
           - 'excel!Excel.ChartDataLabel:class'
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: options
+          description: Provides options for which properties of the object to load.
           type:
             - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions:interface'
   - uid: 'excel!Excel.ChartDataLabel#load:member(2)'
@@ -237,7 +219,11 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartDataLabel;'
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartDataLabel;
       return:
         type:
           - 'excel!Excel.ChartDataLabel:class'
@@ -245,10 +231,14 @@ items:
       parameters:
         - id: propertyNamesAndPaths
           description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
-            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type:
-            - '{ select?: string; expand?: string; }'
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: 'excel!Excel.ChartDataLabel#numberFormat:member'
     summary: |-
       String value that represents the format code for data label.

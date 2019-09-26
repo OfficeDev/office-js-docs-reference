@@ -1,8 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions:interface'
-    summary: |-
-      Represents the data validation applied to the current range.
+    summary: >-
+      Represents the data validation applied to the current range. To learn more about the data validation object model,
+      read [Add data validation to Excel
+      ranges](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation)<!-- -->.
+
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.DataValidationLoadOptions
@@ -20,6 +23,9 @@ items:
       - 'excel!Excel.Interfaces.DataValidationLoadOptions#type:member'
       - 'excel!Excel.Interfaces.DataValidationLoadOptions#valid:member'
   - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     name: $all
     fullName: $all
     langs:

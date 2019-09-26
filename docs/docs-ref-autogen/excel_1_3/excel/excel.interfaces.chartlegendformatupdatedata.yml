@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartLegendFormatUpdateData:interface'
     summary: >-
-      An interface for updating data on the ChartLegendFormat object, for use in "chartLegendFormat.set(<!-- -->{ ...
-      }<!-- -->)".
+      An interface for updating data on the ChartLegendFormat object, for use in `chartLegendFormat.set({ ... })`<!--
+      -->.
     name: Excel.Interfaces.ChartLegendFormatUpdateData
     fullName: Excel.Interfaces.ChartLegendFormatUpdateData
     langs:

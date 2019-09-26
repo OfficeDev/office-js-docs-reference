@@ -19,6 +19,9 @@ items:
       - 'excel!Excel.Interfaces.RangeFillLoadOptions#patternTintAndShade:member'
       - 'excel!Excel.Interfaces.RangeFillLoadOptions#tintAndShade:member'
   - uid: 'excel!Excel.Interfaces.RangeFillLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     name: $all
     fullName: $all
     langs:
@@ -31,7 +34,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeFillLoadOptions#color:member'
     summary: >-
-      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
+      HTML color code representing the color of the background, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange")
 
 

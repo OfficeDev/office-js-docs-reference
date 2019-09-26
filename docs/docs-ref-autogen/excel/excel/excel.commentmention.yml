@@ -1,0 +1,75 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CommentMention:interface'
+    summary: >-
+      Represents the entity that is mentioned in comments.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.CommentMention
+    fullName: Excel.CommentMention
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CommentMention#email:member'
+      - 'excel!Excel.CommentMention#id:member'
+      - 'excel!Excel.CommentMention#name:member'
+  - uid: 'excel!Excel.CommentMention#email:member'
+    summary: >-
+      Gets or sets the email address of the entity that is mentioned in comment.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: email
+    fullName: email
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'email: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.CommentMention#id:member'
+    summary: >-
+      Gets or sets the id of the entity. This is aligned with the id information in `CommentRichContent.richContent`<!--
+      -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.CommentMention#name:member'
+    summary: >-
+      Gets or sets the name of the entity that is mentioned in comment.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string

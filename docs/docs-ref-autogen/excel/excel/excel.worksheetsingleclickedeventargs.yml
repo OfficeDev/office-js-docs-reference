@@ -2,7 +2,7 @@
 items:
   - uid: 'excel!Excel.WorksheetSingleClickedEventArgs:interface'
     summary: >-
-      Provides information about the worksheet that raised the left-clicked/tapped event.
+      Provides information about the left-clicked/tapped event and its related worksheet.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
