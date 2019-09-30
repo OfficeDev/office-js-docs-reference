@@ -36,6 +36,32 @@ items:
       return:
         type:
           - 'excel!Excel.CommentRichContent#mentions~0:complex'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Comments");
+              const mention = {
+                  email: "kakri@contoso.com",
+                  id: 0,
+                  name: "Kate Kristensen"
+              };
+
+              // This will tag the mention's name using the '@' syntax.
+              // They will be notified via email.
+              const commentBody = {
+                  mentions: [mention],
+                  richContent: '<at id="0">' + mention.name + "</at> -  Can you take a look?"
+              };
+
+              // Note that an InvalidArgument error will be thrown if multiple cells passed to `comment.add`.
+              sheet.comments.add("A1", commentBody, Excel.ContentType.mention);
+              await context.sync();
+          });
+          ```
   - uid: 'excel!Excel.CommentRichContent#richContent:member'
     isPreview: true
     name: richContent
