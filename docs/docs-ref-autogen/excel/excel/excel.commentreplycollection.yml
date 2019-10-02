@@ -53,8 +53,10 @@ items:
 
           ```typescript
           await Excel.run(async (context) => {
-              const comment = context.workbook.comments.getItemAt(0);
-              comment.replies.add("Do I have to?");
+              // Adds a reply to the first comment in this worksheet.
+              const sheet = context.workbook.worksheets.getItem("Comments");
+              const comment = sheet.comments.getItemAt(0);
+              comment.replies.add("Add content to this worksheet.");
               await context.sync();
           });
           ```

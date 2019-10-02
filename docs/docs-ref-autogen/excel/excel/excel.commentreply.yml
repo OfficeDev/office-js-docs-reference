@@ -97,8 +97,15 @@ items:
 
           ```typescript
           await Excel.run(async (context) => {
-              const comment = context.workbook.comments.getItemAt(0);
-              comment.content = "PLEASE add headers here.";
+              const sheet = context.workbook.worksheets.getItem("Comments");
+              const comment = sheet.comments.getItemAt(0);
+              const reply = comment.replies.getItemAt(0);
+              reply.load("content");
+              // Sync to load the content of the comment reply.
+              await context.sync();
+
+              // Append "Please!" to the end of the comment reply.
+              reply.content += " Please!";
               await context.sync();
           });
           ```
@@ -160,10 +167,9 @@ items:
 
           ```typescript
           await Excel.run(async (context) => {
-              var comment = context.workbook.comments.getItemAt(0);
-              comment.load("replies");
-              await context.sync();
-
+              // Remove the first comment reply from this worksheet's first comment.
+              const sheet = context.workbook.worksheets.getItem("Comments");
+              const comment = sheet.comments.getItemAt(0);
               comment.replies.getItemAt(0).delete();
               await context.sync();
           });
