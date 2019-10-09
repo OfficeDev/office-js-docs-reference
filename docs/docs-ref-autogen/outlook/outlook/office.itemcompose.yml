@@ -192,6 +192,11 @@ items:
       session.
 
 
+      **Note**: If you're using a data URL API (e.g., readAsDataURL), you need to strip out the data URL prefix then
+      send the rest of the string to this API. For example, if the full string is represented by
+      `data:image/svg+xml;base64,<rest of base64 string>`<!-- -->, remove `data:image/svg+xml;base64,`<!-- -->.
+
+
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
@@ -264,6 +269,11 @@ items:
 
       You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same
       session.
+
+
+      **Note**: If you're using a data URL API (e.g., readAsDataURL), you need to strip out the data URL prefix then
+      send the rest of the string to this API. For example, if the full string is represented by
+      `data:image/svg+xml;base64,<rest of base64 string>`<!-- -->, remove `data:image/svg+xml;base64,`<!-- -->.
 
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
