@@ -2156,7 +2156,6 @@ items:
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: group(groupOptionString)
     fullName: group(groupOptionString)
     langs:
@@ -2259,7 +2258,6 @@ items:
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: hideGroupDetails(groupOptionString)
     fullName: hideGroupDetails(groupOptionString)
     langs:
@@ -3145,7 +3143,6 @@ items:
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: showGroupDetails(groupOptionString)
     fullName: showGroupDetails(groupOptionString)
     langs:
@@ -3363,7 +3360,6 @@ items:
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: ungroup(groupOptionString)
     fullName: ungroup(groupOptionString)
     langs:

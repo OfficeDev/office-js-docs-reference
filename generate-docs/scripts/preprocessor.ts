@@ -231,7 +231,7 @@ tryCatch(async () => {
 
 function excelSpecificCleanup(dtsContent: string) {
     return dtsContent.replace(/export interface .*Set {\n.*Icon;/gm, `/** [Api set: ExcelApi 1.2] */\n\t$&`)
-        .replace("readonly runtime: Runtime;", "/** [Api set: ExcelApi 1.5] **/\n\t\treadonly runtime: Runtime;")
+        .replace("readonly runtime: Runtime;", "/** [Api set: ExcelApi 1.5] */\n\t\treadonly runtime: Runtime;")
         .replace("export interface IconCollections {", "/** [Api set: ExcelApi 1.2] */\n\texport interface IconCollections {")
         .replace("var icons: IconCollections;", "/** [Api set: ExcelApi 1.2] */\n\tvar icons: IconCollections;");
 }
