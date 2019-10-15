@@ -10685,6 +10685,7 @@ export declare namespace Excel {
         nonBlankCellOffSheet = "NonBlankCellOffSheet",
         notImplemented = "NotImplemented",
         rangeExceedsLimit = "RangeExceedsLimit",
+        requestAborted = "RequestAborted",
         unsupportedOperation = "UnsupportedOperation",
         invalidOperationInCellEditMode = "InvalidOperationInCellEditMode"
     }
