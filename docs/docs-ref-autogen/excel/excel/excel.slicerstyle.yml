@@ -8,13 +8,16 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: Excel.SlicerStyle
+    name: SlicerStyle
     fullName: Excel.SlicerStyle
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.SlicerStyle#context:member'
@@ -264,13 +267,18 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.SlicerStyle:class'
-    name: Excel.SlicerStyle
+    name: SlicerStyle
+    fullName: Excel.SlicerStyle
   - uid: 'excel!Excel.Interfaces.SlicerStyleLoadOptions:interface'
-    name: Excel.Interfaces.SlicerStyleLoadOptions
+    name: SlicerStyleLoadOptions
+    fullName: Excel.Interfaces.SlicerStyleLoadOptions
   - uid: 'excel!Excel.Interfaces.SlicerStyleUpdateData:interface'
-    name: Interfaces.SlicerStyleUpdateData
+    name: SlicerStyleUpdateData
+    fullName: Excel.Interfaces.SlicerStyleUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.SlicerStyleData:interface'
-    name: Excel.Interfaces.SlicerStyleData
+    name: SlicerStyleData
+    fullName: Excel.Interfaces.SlicerStyleData

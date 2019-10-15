@@ -5,10 +5,11 @@ items:
       This object represents the font attributes (font style, color, etc.) for an object.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ConditionalRangeFontLoadOptions
+    name: ConditionalRangeFontLoadOptions
     fullName: Excel.Interfaces.ConditionalRangeFontLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

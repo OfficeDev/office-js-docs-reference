@@ -2,10 +2,11 @@
 items:
   - uid: 'office!Office.GoToType:enum'
     summary: Specifies the type of place or object to navigate to.
-    name: Office.GoToType
+    name: GoToType
     fullName: Office.GoToType
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: enum
     package: office!
     children:

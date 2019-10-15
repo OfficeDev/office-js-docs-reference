@@ -5,13 +5,16 @@ items:
       Represents the DocumentView class.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: Visio.DocumentView
+    name: DocumentView
     fullName: Visio.DocumentView
     langs:
       - typeScript
+    namespace: 'visio!Visio:namespace'
     type: class
     extends:
       - 'visio!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'visio!OfficeExtension.ClientObject:class'
     package: visio!
     children:
       - 'visio!Visio.DocumentView#context:member'
@@ -283,13 +286,18 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'visio!Visio.RequestContext:class'
     name: RequestContext
+    fullName: Visio.RequestContext
   - uid: 'visio!Visio.DocumentView:class'
-    name: Visio.DocumentView
+    name: DocumentView
+    fullName: Visio.DocumentView
   - uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions:interface'
-    name: Visio.Interfaces.DocumentViewLoadOptions
+    name: DocumentViewLoadOptions
+    fullName: Visio.Interfaces.DocumentViewLoadOptions
   - uid: 'visio!Visio.Interfaces.DocumentViewUpdateData:interface'
-    name: Interfaces.DocumentViewUpdateData
+    name: DocumentViewUpdateData
+    fullName: Visio.Interfaces.DocumentViewUpdateData
   - uid: 'visio!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'visio!Visio.Interfaces.DocumentViewData:interface'
-    name: Visio.Interfaces.DocumentViewData
+    name: DocumentViewData
+    fullName: Visio.Interfaces.DocumentViewData

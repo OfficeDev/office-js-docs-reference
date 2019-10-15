@@ -2,10 +2,11 @@
 items:
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisData:interface'
     summary: An interface describing the data returned by calling "inkAnalysis.toJSON()".
-    name: OneNote.Interfaces.InkAnalysisData
+    name: InkAnalysisData
     fullName: OneNote.Interfaces.InkAnalysisData
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -43,4 +44,5 @@ items:
           - 'onenote!OneNote.Interfaces.PageData:interface'
 references:
   - uid: 'onenote!OneNote.Interfaces.PageData:interface'
-    name: OneNote.Interfaces.PageData
+    name: PageData
+    fullName: OneNote.Interfaces.PageData

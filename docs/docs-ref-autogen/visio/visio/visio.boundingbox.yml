@@ -5,10 +5,11 @@ items:
       Represents the BoundingBox of the shape.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: Visio.BoundingBox
+    name: BoundingBox
     fullName: Visio.BoundingBox
     langs:
       - typeScript
+    namespace: 'visio!Visio:namespace'
     type: interface
     package: visio!
     children:

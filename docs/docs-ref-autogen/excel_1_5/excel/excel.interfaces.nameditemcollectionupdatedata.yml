@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the NamedItemCollection object, for use in `namedItemCollection.set({ ...
       })`<!-- -->.
-    name: Excel.Interfaces.NamedItemCollectionUpdateData
+    name: NamedItemCollectionUpdateData
     fullName: Excel.Interfaces.NamedItemCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

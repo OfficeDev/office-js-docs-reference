@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.WorkbookData:interface'
     summary: An interface describing the data returned by calling `workbook.toJSON()`<!-- -->.
-    name: Excel.Interfaces.WorkbookData
+    name: WorkbookData
     fullName: Excel.Interfaces.WorkbookData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -239,9 +240,11 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
-    name: Excel.Interfaces.DocumentPropertiesData
+    name: DocumentPropertiesData
+    fullName: Excel.Interfaces.DocumentPropertiesData
   - uid: 'excel!Excel.Interfaces.WorkbookProtectionData:interface'
-    name: Excel.Interfaces.WorkbookProtectionData
+    name: WorkbookProtectionData
+    fullName: Excel.Interfaces.WorkbookProtectionData
   - uid: 'excel!Excel.Interfaces.WorkbookData#settings~0:complex'
     name: 'Excel.Interfaces.SettingData[]'
     fullName: 'Excel.Interfaces.SettingData[]'

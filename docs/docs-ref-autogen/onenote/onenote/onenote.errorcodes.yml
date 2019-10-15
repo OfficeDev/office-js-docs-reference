@@ -1,10 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'onenote!OneNote.ErrorCodes:enum'
-    name: OneNote.ErrorCodes
+    name: ErrorCodes
     fullName: OneNote.ErrorCodes
     langs:
       - typeScript
+    namespace: 'onenote!OneNote:namespace'
     type: enum
     package: onenote!
     children:

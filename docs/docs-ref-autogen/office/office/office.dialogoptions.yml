@@ -2,10 +2,11 @@
 items:
   - uid: 'office!Office.DialogOptions:interface'
     summary: Provides options for how a dialog is displayed.
-    name: Office.DialogOptions
+    name: DialogOptions
     fullName: Office.DialogOptions
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:

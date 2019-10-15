@@ -5,13 +5,16 @@ items:
       Represents a custom conditional format type.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.CustomConditionalFormat
+    name: CustomConditionalFormat
     fullName: Excel.CustomConditionalFormat
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.CustomConditionalFormat#context:member'
@@ -250,17 +253,24 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ConditionalRangeFormat:class'
-    name: Excel.ConditionalRangeFormat
+    name: ConditionalRangeFormat
+    fullName: Excel.ConditionalRangeFormat
   - uid: 'excel!Excel.CustomConditionalFormat:class'
-    name: Excel.CustomConditionalFormat
+    name: CustomConditionalFormat
+    fullName: Excel.CustomConditionalFormat
   - uid: 'excel!Excel.Interfaces.CustomConditionalFormatLoadOptions:interface'
-    name: Excel.Interfaces.CustomConditionalFormatLoadOptions
+    name: CustomConditionalFormatLoadOptions
+    fullName: Excel.Interfaces.CustomConditionalFormatLoadOptions
   - uid: 'excel!Excel.ConditionalFormatRule:class'
-    name: Excel.ConditionalFormatRule
+    name: ConditionalFormatRule
+    fullName: Excel.ConditionalFormatRule
   - uid: 'excel!Excel.Interfaces.CustomConditionalFormatUpdateData:interface'
-    name: Interfaces.CustomConditionalFormatUpdateData
+    name: CustomConditionalFormatUpdateData
+    fullName: Excel.Interfaces.CustomConditionalFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.CustomConditionalFormatData:interface'
-    name: Excel.Interfaces.CustomConditionalFormatData
+    name: CustomConditionalFormatData
+    fullName: Excel.Interfaces.CustomConditionalFormatData

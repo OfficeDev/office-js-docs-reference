@@ -12,10 +12,11 @@ items:
       For more information about working with fields in Project, see [Available
       fields](https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
       reference. In Project Help, search for Available fields.
-    name: Office.ProjectResourceFields
+    name: ProjectResourceFields
     fullName: Office.ProjectResourceFields
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: enum
     package: office!
     children:

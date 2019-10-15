@@ -5,13 +5,16 @@ items:
       Represents a collection of DataPivotHierarchy items associated with the PivotTable.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.DataPivotHierarchyCollection
+    name: DataPivotHierarchyCollection
     fullName: Excel.DataPivotHierarchyCollection
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.DataPivotHierarchyCollection#add:member(1)'
@@ -237,11 +240,14 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.DataPivotHierarchy:class'
-    name: Excel.DataPivotHierarchy
+    name: DataPivotHierarchy
+    fullName: Excel.DataPivotHierarchy
   - uid: 'excel!Excel.PivotHierarchy:class'
-    name: Excel.PivotHierarchy
+    name: PivotHierarchy
+    fullName: Excel.PivotHierarchy
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.DataPivotHierarchyCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -261,7 +267,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.DataPivotHierarchyCollection:class'
-    name: Excel.DataPivotHierarchyCollection
+    name: DataPivotHierarchyCollection
+    fullName: Excel.DataPivotHierarchyCollection
   - uid: 'excel!Excel.DataPivotHierarchyCollection#load~0:complex'
     name: Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -277,4 +284,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.DataPivotHierarchyCollectionData:interface'
-    name: Excel.Interfaces.DataPivotHierarchyCollectionData
+    name: DataPivotHierarchyCollectionData
+    fullName: Excel.Interfaces.DataPivotHierarchyCollectionData

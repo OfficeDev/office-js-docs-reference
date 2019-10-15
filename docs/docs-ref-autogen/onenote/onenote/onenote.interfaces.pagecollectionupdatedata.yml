@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the PageCollection object, for use in "pageCollection.set(<!-- -->{ ... }<!--
       -->)".
-    name: OneNote.Interfaces.PageCollectionUpdateData
+    name: PageCollectionUpdateData
     fullName: OneNote.Interfaces.PageCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:

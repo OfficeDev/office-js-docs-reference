@@ -4,10 +4,11 @@ items:
     summary: >-
       A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply
       form.
-    name: Office.ReplyFormData
+    name: ReplyFormData
     fullName: Office.ReplyFormData
     langs:
       - typeScript
+    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

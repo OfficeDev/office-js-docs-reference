@@ -5,10 +5,11 @@ items:
       Represents a container for Paragraph objects.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Interfaces.OutlineLoadOptions
+    name: OutlineLoadOptions
     fullName: OneNote.Interfaces.OutlineLoadOptions
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -76,6 +77,8 @@ items:
           - 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface'
 references:
   - uid: 'onenote!OneNote.Interfaces.PageContentLoadOptions:interface'
-    name: OneNote.Interfaces.PageContentLoadOptions
+    name: PageContentLoadOptions
+    fullName: OneNote.Interfaces.PageContentLoadOptions
   - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface'
-    name: OneNote.Interfaces.ParagraphCollectionLoadOptions
+    name: ParagraphCollectionLoadOptions
+    fullName: OneNote.Interfaces.ParagraphCollectionLoadOptions

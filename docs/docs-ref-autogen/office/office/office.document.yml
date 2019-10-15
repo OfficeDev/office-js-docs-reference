@@ -3,10 +3,11 @@ items:
   - uid: 'office!Office.Document:interface'
     summary: An abstract class that represents the document the add-in is interacting with.
     remarks: '**Hosts**: Excel, PowerPoint, Project, Word'
-    name: Office.Document
+    name: Document
     fullName: Office.Document
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:
@@ -4096,9 +4097,11 @@ items:
           ```
 references:
   - uid: 'office!Office.EventType:enum'
-    name: Office.EventType
+    name: EventType
+    fullName: Office.EventType
   - uid: 'office!Office.AsyncContextOptions:interface'
-    name: Office.AsyncContextOptions
+    name: AsyncContextOptions
+    fullName: Office.AsyncContextOptions
   - uid: 'office!Office.Document#addHandlerAsync~0:complex'
     name: '(result: AsyncResult<void>) => void'
     fullName: '(result: Office.AsyncResult<void>) => void'
@@ -4123,8 +4126,10 @@ references:
         fullName: <void>) => void
   - uid: 'office!Office.Bindings:interface'
     name: Bindings
+    fullName: Office.Bindings
   - uid: 'office!Office.CustomXmlParts:interface'
     name: CustomXmlParts
+    fullName: Office.CustomXmlParts
   - uid: 'office!Office.Document#getActiveViewAsync~0:complex'
     name: '(result: AsyncResult<"edit" | "read">) => void'
     fullName: '(result: Office.AsyncResult<"edit" | "read">) => void'
@@ -4149,8 +4154,10 @@ references:
         fullName: <"edit" | "read">) => void
   - uid: 'office!Office.FileType:enum'
     name: FileType
+    fullName: Office.FileType
   - uid: 'office!Office.GetFileOptions:interface'
     name: GetFileOptions
+    fullName: Office.GetFileOptions
   - uid: 'office!Office.Document#getFileAsync~0:complex'
     name: '(result: AsyncResult<Office.File>) => void'
     fullName: '(result: Office.AsyncResult<Office.File>) => void'
@@ -4326,9 +4333,11 @@ references:
       - name: <string>) => void
         fullName: <string>) => void
   - uid: 'office!Office.CoercionType:enum'
-    name: Office.CoercionType
+    name: CoercionType
+    fullName: Office.CoercionType
   - uid: 'office!Office.GetSelectedDataOptions:interface'
     name: GetSelectedDataOptions
+    fullName: Office.GetSelectedDataOptions
   - uid: 'office!Office.Document#getSelectedDataAsync~0:complex'
     name: '(result: AsyncResult<T>) => void'
     fullName: '(result: Office.AsyncResult<T>) => void'
@@ -4507,8 +4516,10 @@ references:
         fullName: <any>) => void
   - uid: 'office!Office.GoToType:enum'
     name: GoToType
+    fullName: Office.GoToType
   - uid: 'office!Office.GoToByIdOptions:interface'
     name: GoToByIdOptions
+    fullName: Office.GoToByIdOptions
   - uid: 'office!Office.Document#goToByIdAsync~0:complex'
     name: '(result: AsyncResult<any>) => void'
     fullName: '(result: Office.AsyncResult<any>) => void'
@@ -4533,8 +4544,10 @@ references:
         fullName: <any>) => void
   - uid: 'office!Office.DocumentMode:enum'
     name: DocumentMode
+    fullName: Office.DocumentMode
   - uid: 'office!Office.RemoveHandlerOptions:interface'
     name: RemoveHandlerOptions
+    fullName: Office.RemoveHandlerOptions
   - uid: 'office!Office.Document#removeHandlerAsync~0:complex'
     name: '(result: AsyncResult<void>) => void'
     fullName: '(result: Office.AsyncResult<void>) => void'
@@ -4592,6 +4605,7 @@ references:
         fullName: ' | any[][]'
   - uid: 'office!Office.SetSelectedDataOptions:interface'
     name: SetSelectedDataOptions
+    fullName: Office.SetSelectedDataOptions
   - uid: 'office!Office.Document#setSelectedDataAsync~1:complex'
     name: '(result: AsyncResult<void>) => void'
     fullName: '(result: Office.AsyncResult<void>) => void'
@@ -4649,3 +4663,4 @@ references:
         fullName: <void>) => void
   - uid: 'office!Office.Settings:interface'
     name: Settings
+    fullName: Office.Settings

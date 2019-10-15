@@ -7,10 +7,11 @@ items:
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
+    name: PresetCriteriaConditionalFormatLoadOptions
     fullName: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -63,4 +64,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface'
-    name: Excel.Interfaces.ConditionalRangeFormatLoadOptions
+    name: ConditionalRangeFormatLoadOptions
+    fullName: Excel.Interfaces.ConditionalRangeFormatLoadOptions

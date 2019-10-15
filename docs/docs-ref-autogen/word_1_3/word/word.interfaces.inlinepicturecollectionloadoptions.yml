@@ -5,10 +5,11 @@ items:
       Contains a collection of [Word.InlinePicture](xref:word!Word.InlinePicture:class) objects.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.Interfaces.InlinePictureCollectionLoadOptions
+    name: InlinePictureCollectionLoadOptions
     fullName: Word.Interfaces.InlinePictureCollectionLoadOptions
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -252,10 +253,14 @@ items:
           - boolean
 references:
   - uid: 'word!Word.Interfaces.ParagraphLoadOptions:interface'
-    name: Word.Interfaces.ParagraphLoadOptions
+    name: ParagraphLoadOptions
+    fullName: Word.Interfaces.ParagraphLoadOptions
   - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
-    name: Word.Interfaces.ContentControlLoadOptions
+    name: ContentControlLoadOptions
+    fullName: Word.Interfaces.ContentControlLoadOptions
   - uid: 'word!Word.Interfaces.TableLoadOptions:interface'
-    name: Word.Interfaces.TableLoadOptions
+    name: TableLoadOptions
+    fullName: Word.Interfaces.TableLoadOptions
   - uid: 'word!Word.Interfaces.TableCellLoadOptions:interface'
-    name: Word.Interfaces.TableCellLoadOptions
+    name: TableCellLoadOptions
+    fullName: Word.Interfaces.TableCellLoadOptions

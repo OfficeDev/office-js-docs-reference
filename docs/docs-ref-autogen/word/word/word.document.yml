@@ -7,13 +7,16 @@ items:
 
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.Document
+    name: Document
     fullName: Word.Document
     langs:
       - typeScript
+    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.Document#body:member'
@@ -603,19 +606,26 @@ references:
   - uid: 'word!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.Body:class'
-    name: Word.Body
+    name: Body
+    fullName: Word.Body
   - uid: 'word!Word.ContentControlCollection:class'
-    name: Word.ContentControlCollection
+    name: ContentControlCollection
+    fullName: Word.ContentControlCollection
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.CustomXmlPartCollection:class'
-    name: Word.CustomXmlPartCollection
+    name: CustomXmlPartCollection
+    fullName: Word.CustomXmlPartCollection
   - uid: 'word!Word.Range:class'
-    name: Word.Range
+    name: Range
+    fullName: Word.Range
   - uid: 'word!Word.Document:class'
-    name: Word.Document
+    name: Document
+    fullName: Word.Document
   - uid: 'word!Word.Interfaces.DocumentLoadOptions:interface'
-    name: Word.Interfaces.DocumentLoadOptions
+    name: DocumentLoadOptions
+    fullName: Word.Interfaces.DocumentLoadOptions
   - uid: 'word!Word.Document#onContentControlAdded~0:complex'
     name: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>
     fullName: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>
@@ -631,14 +641,19 @@ references:
       - name: '>'
         fullName: '>'
   - uid: 'word!Word.DocumentProperties:class'
-    name: Word.DocumentProperties
+    name: DocumentProperties
+    fullName: Word.DocumentProperties
   - uid: 'word!Word.SectionCollection:class'
-    name: Word.SectionCollection
+    name: SectionCollection
+    fullName: Word.SectionCollection
   - uid: 'word!Word.Interfaces.DocumentUpdateData:interface'
-    name: Interfaces.DocumentUpdateData
+    name: DocumentUpdateData
+    fullName: Word.Interfaces.DocumentUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.SettingCollection:class'
-    name: Word.SettingCollection
+    name: SettingCollection
+    fullName: Word.SettingCollection
   - uid: 'word!Word.Interfaces.DocumentData:interface'
-    name: Word.Interfaces.DocumentData
+    name: DocumentData
+    fullName: Word.Interfaces.DocumentData

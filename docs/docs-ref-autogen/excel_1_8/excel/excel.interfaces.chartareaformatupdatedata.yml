@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartAreaFormatUpdateData:interface'
     summary: 'An interface for updating data on the ChartAreaFormat object, for use in `chartAreaFormat.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.ChartAreaFormatUpdateData
+    name: ChartAreaFormatUpdateData
     fullName: Excel.Interfaces.ChartAreaFormatUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -43,6 +44,8 @@ items:
           - 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartBorderUpdateData:interface'
-    name: Excel.Interfaces.ChartBorderUpdateData
+    name: ChartBorderUpdateData
+    fullName: Excel.Interfaces.ChartBorderUpdateData
   - uid: 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
-    name: Excel.Interfaces.ChartFontUpdateData
+    name: ChartFontUpdateData
+    fullName: Excel.Interfaces.ChartFontUpdateData

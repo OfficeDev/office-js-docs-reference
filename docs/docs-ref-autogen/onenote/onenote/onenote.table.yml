@@ -5,13 +5,16 @@ items:
       Represents a table in a OneNote page.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Table
+    name: Table
     fullName: OneNote.Table
     langs:
       - typeScript
+    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.Table#appendColumn:member(1)'
@@ -741,22 +744,31 @@ references:
   - uid: 'onenote!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.TableRow:class'
-    name: OneNote.TableRow
+    name: TableRow
+    fullName: OneNote.TableRow
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
+    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.TableCell:class'
-    name: OneNote.TableCell
+    name: TableCell
+    fullName: OneNote.TableCell
   - uid: 'onenote!OneNote.Table:class'
-    name: OneNote.Table
+    name: Table
+    fullName: OneNote.Table
   - uid: 'onenote!OneNote.Interfaces.TableLoadOptions:interface'
-    name: OneNote.Interfaces.TableLoadOptions
+    name: TableLoadOptions
+    fullName: OneNote.Interfaces.TableLoadOptions
   - uid: 'onenote!OneNote.Paragraph:class'
-    name: OneNote.Paragraph
+    name: Paragraph
+    fullName: OneNote.Paragraph
   - uid: 'onenote!OneNote.TableRowCollection:class'
-    name: OneNote.TableRowCollection
+    name: TableRowCollection
+    fullName: OneNote.TableRowCollection
   - uid: 'onenote!OneNote.Interfaces.TableUpdateData:interface'
-    name: Interfaces.TableUpdateData
+    name: TableUpdateData
+    fullName: OneNote.Interfaces.TableUpdateData
   - uid: 'onenote!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'onenote!OneNote.Interfaces.TableData:interface'
-    name: OneNote.Interfaces.TableData
+    name: TableData
+    fullName: OneNote.Interfaces.TableData

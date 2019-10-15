@@ -8,13 +8,16 @@ items:
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    name: Word.CustomXmlPartCollection
+    name: CustomXmlPartCollection
     fullName: Word.CustomXmlPartCollection
     langs:
       - typeScript
+    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.CustomXmlPartCollection#add:member(1)'
@@ -313,11 +316,14 @@ references:
   - uid: 'word!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.CustomXmlPart:class'
-    name: Word.CustomXmlPart
+    name: CustomXmlPart
+    fullName: Word.CustomXmlPart
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.CustomXmlPartScopedCollection:class'
-    name: Word.CustomXmlPartScopedCollection
+    name: CustomXmlPartScopedCollection
+    fullName: Word.CustomXmlPartScopedCollection
   - uid: 'word!Word.CustomXmlPartCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -337,7 +343,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.CustomXmlPartCollection:class'
-    name: Word.CustomXmlPartCollection
+    name: CustomXmlPartCollection
+    fullName: Word.CustomXmlPartCollection
   - uid: 'word!Word.CustomXmlPartCollection#load~0:complex'
     name: Word.Interfaces.CustomXmlPartCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
     fullName: Word.Interfaces.CustomXmlPartCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
@@ -353,4 +360,5 @@ references:
   - uid: 'word!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'word!Word.Interfaces.CustomXmlPartCollectionData:interface'
-    name: Word.Interfaces.CustomXmlPartCollectionData
+    name: CustomXmlPartCollectionData
+    fullName: Word.Interfaces.CustomXmlPartCollectionData

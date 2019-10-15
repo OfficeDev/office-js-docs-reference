@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.RangeCollectionData:interface'
     summary: An interface describing the data returned by calling `rangeCollection.toJSON()`<!-- -->.
-    name: Excel.Interfaces.RangeCollectionData
+    name: RangeCollectionData
     fullName: Excel.Interfaces.RangeCollectionData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

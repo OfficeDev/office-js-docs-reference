@@ -7,10 +7,11 @@ items:
 
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.PivotTableLoadOptions
+    name: PivotTableLoadOptions
     fullName: Excel.Interfaces.PivotTableLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -63,4 +64,5 @@ items:
           - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
-    name: Excel.Interfaces.WorksheetLoadOptions
+    name: WorksheetLoadOptions
+    fullName: Excel.Interfaces.WorksheetLoadOptions

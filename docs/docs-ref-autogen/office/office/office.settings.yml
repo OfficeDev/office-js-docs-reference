@@ -21,10 +21,11 @@ items:
 
       The developer is responsible for calling the saveAsync method after adding or deleting settings to save the
       settings in the document.
-    name: Office.Settings
+    name: Settings
     fullName: Office.Settings
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:
@@ -593,9 +594,11 @@ items:
             - any
 references:
   - uid: 'office!Office.EventType:enum'
-    name: Office.EventType
+    name: EventType
+    fullName: Office.EventType
   - uid: 'office!Office.AsyncContextOptions:interface'
-    name: Office.AsyncContextOptions
+    name: AsyncContextOptions
+    fullName: Office.AsyncContextOptions
   - uid: 'office!Office.Settings#addHandlerAsync~0:complex'
     name: '(result: AsyncResult<void>) => void'
     fullName: '(result: Office.AsyncResult<void>) => void'
@@ -636,6 +639,7 @@ references:
         fullName: '>) => void'
   - uid: 'office!Office.RemoveHandlerOptions:interface'
     name: RemoveHandlerOptions
+    fullName: Office.RemoveHandlerOptions
   - uid: 'office!Office.Settings#removeHandlerAsync~0:complex'
     name: '(result: AsyncResult<void>) => void'
     fullName: '(result: Office.AsyncResult<void>) => void'
@@ -660,6 +664,7 @@ references:
         fullName: <void>) => void
   - uid: 'office!Office.SaveSettingsOptions:interface'
     name: SaveSettingsOptions
+    fullName: Office.SaveSettingsOptions
   - uid: 'office!Office.Settings#saveAsync~0:complex'
     name: '(result: AsyncResult<void>) => void'
     fullName: '(result: Office.AsyncResult<void>) => void'

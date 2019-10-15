@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the InkStrokeCollection object, for use in "inkStrokeCollection.set(<!-- -->{
       ... }<!-- -->)".
-    name: OneNote.Interfaces.InkStrokeCollectionUpdateData
+    name: InkStrokeCollectionUpdateData
     fullName: OneNote.Interfaces.InkStrokeCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:

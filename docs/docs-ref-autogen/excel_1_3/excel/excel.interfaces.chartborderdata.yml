@@ -2,9 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartBorderData:interface'
     summary: An interface describing the data returned by calling `chartBorder.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ChartBorderData
+    name: ChartBorderData
     fullName: Excel.Interfaces.ChartBorderData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

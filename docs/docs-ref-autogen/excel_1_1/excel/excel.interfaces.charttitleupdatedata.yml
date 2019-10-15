@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartTitleUpdateData:interface'
     summary: 'An interface for updating data on the ChartTitle object, for use in `chartTitle.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.ChartTitleUpdateData
+    name: ChartTitleUpdateData
     fullName: Excel.Interfaces.ChartTitleUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -75,4 +76,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartTitleFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartTitleFormatUpdateData
+    name: ChartTitleFormatUpdateData
+    fullName: Excel.Interfaces.ChartTitleFormatUpdateData

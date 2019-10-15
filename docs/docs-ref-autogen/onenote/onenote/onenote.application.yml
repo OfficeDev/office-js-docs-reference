@@ -7,13 +7,16 @@ items:
 
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Application
+    name: Application
     fullName: OneNote.Application
     langs:
       - typeScript
+    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.Application#context:member'
@@ -729,16 +732,22 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
+    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.Notebook:class'
-    name: OneNote.Notebook
+    name: Notebook
+    fullName: OneNote.Notebook
   - uid: 'onenote!OneNote.Outline:class'
-    name: OneNote.Outline
+    name: Outline
+    fullName: OneNote.Outline
   - uid: 'onenote!OneNote.Page:class'
-    name: OneNote.Page
+    name: Page
+    fullName: OneNote.Page
   - uid: 'onenote!OneNote.Paragraph:class'
-    name: OneNote.Paragraph
+    name: Paragraph
+    fullName: OneNote.Paragraph
   - uid: 'onenote!OneNote.Section:class'
-    name: OneNote.Section
+    name: Section
+    fullName: OneNote.Section
   - uid: 'onenote!OneNote.Application#getWindowSize~0:complex'
     name: 'OfficeExtension.ClientResult<number[]>'
     fullName: 'OfficeExtension.ClientResult<number[]>'
@@ -758,10 +767,14 @@ references:
       - name: <boolean>
         fullName: <boolean>
   - uid: 'onenote!OneNote.Application:class'
-    name: OneNote.Application
+    name: Application
+    fullName: OneNote.Application
   - uid: 'onenote!OneNote.Interfaces.ApplicationLoadOptions:interface'
-    name: OneNote.Interfaces.ApplicationLoadOptions
+    name: ApplicationLoadOptions
+    fullName: OneNote.Interfaces.ApplicationLoadOptions
   - uid: 'onenote!OneNote.NotebookCollection:class'
-    name: OneNote.NotebookCollection
+    name: NotebookCollection
+    fullName: OneNote.NotebookCollection
   - uid: 'onenote!OneNote.Interfaces.ApplicationData:interface'
-    name: OneNote.Interfaces.ApplicationData
+    name: ApplicationData
+    fullName: OneNote.Interfaces.ApplicationData

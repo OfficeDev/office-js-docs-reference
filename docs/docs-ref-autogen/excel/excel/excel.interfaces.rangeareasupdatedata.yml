@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.RangeAreasUpdateData:interface'
     summary: 'An interface for updating data on the RangeAreas object, for use in `rangeAreas.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.RangeAreasUpdateData
+    name: RangeAreasUpdateData
     fullName: Excel.Interfaces.RangeAreasUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -64,6 +65,8 @@ items:
           - string
 references:
   - uid: 'excel!Excel.Interfaces.DataValidationUpdateData:interface'
-    name: Excel.Interfaces.DataValidationUpdateData
+    name: DataValidationUpdateData
+    fullName: Excel.Interfaces.DataValidationUpdateData
   - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData:interface'
-    name: Excel.Interfaces.RangeFormatUpdateData
+    name: RangeFormatUpdateData
+    fullName: Excel.Interfaces.RangeFormatUpdateData

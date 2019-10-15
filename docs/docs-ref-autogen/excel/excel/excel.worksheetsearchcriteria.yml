@@ -5,10 +5,11 @@ items:
       Represents the worksheet search criteria to be used.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.WorksheetSearchCriteria
+    name: WorksheetSearchCriteria
     fullName: Excel.WorksheetSearchCriteria
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

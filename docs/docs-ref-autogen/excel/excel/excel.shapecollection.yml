@@ -5,13 +5,16 @@ items:
       Represents a collection of all the shapes in the worksheet.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ShapeCollection
+    name: ShapeCollection
     fullName: Excel.ShapeCollection
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ShapeCollection#addGeometricShape:member(1)'
@@ -561,9 +564,11 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Shape:class'
-    name: Excel.Shape
+    name: Shape
+    fullName: Excel.Shape
   - uid: 'excel!Excel.GeometricShapeType:enum'
-    name: Excel.GeometricShapeType
+    name: GeometricShapeType
+    fullName: Excel.GeometricShapeType
   - uid: 'excel!Excel.ShapeCollection#addGroup~0:complex'
     name: Array<string | Shape>
     fullName: Array<string | Excel.Shape>
@@ -579,9 +584,11 @@ references:
       - name: '>'
         fullName: '>'
   - uid: 'excel!Excel.ConnectorType:enum'
-    name: Excel.ConnectorType
+    name: ConnectorType
+    fullName: Excel.ConnectorType
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ShapeCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -601,7 +608,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.ShapeCollection:class'
-    name: Excel.ShapeCollection
+    name: ShapeCollection
+    fullName: Excel.ShapeCollection
   - uid: 'excel!Excel.ShapeCollection#load~0:complex'
     name: Excel.Interfaces.ShapeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.ShapeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -617,4 +625,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.ShapeCollectionData:interface'
-    name: Excel.Interfaces.ShapeCollectionData
+    name: ShapeCollectionData
+    fullName: Excel.Interfaces.ShapeCollectionData

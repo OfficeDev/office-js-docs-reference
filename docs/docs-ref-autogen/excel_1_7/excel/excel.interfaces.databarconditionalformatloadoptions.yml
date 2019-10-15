@@ -5,10 +5,11 @@ items:
       Represents an Excel Conditional Data Bar Type.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.DataBarConditionalFormatLoadOptions
+    name: DataBarConditionalFormatLoadOptions
     fullName: Excel.Interfaces.DataBarConditionalFormatLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -165,6 +166,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions:interface'
-    name: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
+    name: ConditionalDataBarNegativeFormatLoadOptions
+    fullName: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions:interface'
-    name: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
+    name: ConditionalDataBarPositiveFormatLoadOptions
+    fullName: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions

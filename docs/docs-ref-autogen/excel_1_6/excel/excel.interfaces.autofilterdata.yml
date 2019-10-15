@@ -2,9 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.AutoFilterData:interface'
     summary: An interface describing the data returned by calling `autoFilter.toJSON()`<!-- -->.
-    name: Excel.Interfaces.AutoFilterData
+    name: AutoFilterData
     fullName: Excel.Interfaces.AutoFilterData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

@@ -5,10 +5,11 @@ items:
       Represents an Image. An Image can be a direct child of a PageContent object or a Paragraph object.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Interfaces.ImageLoadOptions
+    name: ImageLoadOptions
     fullName: OneNote.Interfaces.ImageLoadOptions
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -156,6 +157,8 @@ items:
           - boolean
 references:
   - uid: 'onenote!OneNote.Interfaces.PageContentLoadOptions:interface'
-    name: OneNote.Interfaces.PageContentLoadOptions
+    name: PageContentLoadOptions
+    fullName: OneNote.Interfaces.PageContentLoadOptions
   - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
-    name: OneNote.Interfaces.ParagraphLoadOptions
+    name: ParagraphLoadOptions
+    fullName: OneNote.Interfaces.ParagraphLoadOptions

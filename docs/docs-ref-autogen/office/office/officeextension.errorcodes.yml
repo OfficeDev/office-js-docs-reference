@@ -1,10 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'office!OfficeExtension.ErrorCodes:class'
-    name: OfficeExtension.ErrorCodes
+    name: ErrorCodes
     fullName: OfficeExtension.ErrorCodes
     langs:
       - typeScript
+    namespace: 'office!OfficeExtension:namespace'
     type: class
     package: office!
     children:

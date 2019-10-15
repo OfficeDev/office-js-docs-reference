@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the WorksheetCollection object, for use in `worksheetCollection.set({ ...
       })`<!-- -->.
-    name: Excel.Interfaces.WorksheetCollectionUpdateData
+    name: WorksheetCollectionUpdateData
     fullName: Excel.Interfaces.WorksheetCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

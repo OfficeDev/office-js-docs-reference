@@ -6,11 +6,13 @@ items:
       - name: Word
         uid: word!
         items:
-          - name: Enums
-            uid: ''
+          - name: Word
+            uid: 'word!Word:namespace'
             items:
               - name: Alignment
                 uid: 'word!Word.Alignment:enum'
+              - name: Body
+                uid: 'word!Word.Body:class'
               - name: BodyType
                 uid: 'word!Word.BodyType:enum'
               - name: BorderLocation
@@ -21,10 +23,16 @@ items:
                 uid: 'word!Word.BreakType:enum'
               - name: CellPaddingLocation
                 uid: 'word!Word.CellPaddingLocation:enum'
+              - name: ContentControl
+                uid: 'word!Word.ContentControl:class'
               - name: ContentControlAppearance
                 uid: 'word!Word.ContentControlAppearance:enum'
+              - name: ContentControlCollection
+                uid: 'word!Word.ContentControlCollection:class'
               - name: ContentControlType
                 uid: 'word!Word.ContentControlType:enum'
+              - name: Document
+                uid: 'word!Word.Document:class'
               - name: DocumentPropertyType
                 uid: 'word!Word.DocumentPropertyType:enum'
               - name: ErrorCodes
@@ -33,10 +41,16 @@ items:
                 uid: 'word!Word.EventType:enum'
               - name: FileContentFormat
                 uid: 'word!Word.FileContentFormat:enum'
+              - name: Font
+                uid: 'word!Word.Font:class'
               - name: HeaderFooterType
                 uid: 'word!Word.HeaderFooterType:enum'
               - name: ImageFormat
                 uid: 'word!Word.ImageFormat:enum'
+              - name: InlinePicture
+                uid: 'word!Word.InlinePicture:class'
+              - name: InlinePictureCollection
+                uid: 'word!Word.InlinePictureCollection:class'
               - name: InsertLocation
                 uid: 'word!Word.InsertLocation:enum'
               - name: ListBullet
@@ -47,8 +61,24 @@ items:
                 uid: 'word!Word.ListNumbering:enum'
               - name: LocationRelation
                 uid: 'word!Word.LocationRelation:enum'
+              - name: Paragraph
+                uid: 'word!Word.Paragraph:class'
+              - name: ParagraphCollection
+                uid: 'word!Word.ParagraphCollection:class'
+              - name: Range
+                uid: 'word!Word.Range:class'
+              - name: RangeCollection
+                uid: 'word!Word.RangeCollection:class'
               - name: RangeLocation
                 uid: 'word!Word.RangeLocation:enum'
+              - name: RequestContext
+                uid: 'word!Word.RequestContext:class'
+              - name: SearchOptions
+                uid: 'word!Word.SearchOptions:class'
+              - name: Section
+                uid: 'word!Word.Section:class'
+              - name: SectionCollection
+                uid: 'word!Word.SectionCollection:class'
               - name: SelectionMode
                 uid: 'word!Word.SelectionMode:enum'
               - name: Style
@@ -59,40 +89,159 @@ items:
                 uid: 'word!Word.UnderlineType:enum'
               - name: VerticalAlignment
                 uid: 'word!Word.VerticalAlignment:enum'
-          - name: Body
-            uid: 'word!Word.Body:class'
-          - name: ContentControl
-            uid: 'word!Word.ContentControl:class'
-          - name: ContentControlCollection
-            uid: 'word!Word.ContentControlCollection:class'
-          - name: Document
-            uid: 'word!Word.Document:class'
-          - name: Font
-            uid: 'word!Word.Font:class'
-          - name: InlinePicture
-            uid: 'word!Word.InlinePicture:class'
-          - name: InlinePictureCollection
-            uid: 'word!Word.InlinePictureCollection:class'
-          - name: Paragraph
-            uid: 'word!Word.Paragraph:class'
-          - name: ParagraphCollection
-            uid: 'word!Word.ParagraphCollection:class'
-          - name: Range
-            uid: 'word!Word.Range:class'
-          - name: RangeCollection
-            uid: 'word!Word.RangeCollection:class'
-          - name: RequestContext
-            uid: 'word!Word.RequestContext:class'
-          - name: SearchOptions
-            uid: 'word!Word.SearchOptions:class'
-          - name: Section
-            uid: 'word!Word.Section:class'
-          - name: SectionCollection
-            uid: 'word!Word.SectionCollection:class'
+          - name: Word.Interfaces
+            uid: 'word!Word.Interfaces:namespace'
+            items:
+              - name: BodyData
+                uid: 'word!Word.Interfaces.BodyData:interface'
+              - name: BodyLoadOptions
+                uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
+              - name: BodyUpdateData
+                uid: 'word!Word.Interfaces.BodyUpdateData:interface'
+              - name: CollectionLoadOptions
+                uid: 'word!Word.Interfaces.CollectionLoadOptions:interface'
+              - name: ContentControlCollectionData
+                uid: 'word!Word.Interfaces.ContentControlCollectionData:interface'
+              - name: ContentControlCollectionLoadOptions
+                uid: >-
+                  word!Word.Interfaces.ContentControlCollectionLoadOptions:interface
+              - name: ContentControlCollectionUpdateData
+                uid: >-
+                  word!Word.Interfaces.ContentControlCollectionUpdateData:interface
+              - name: ContentControlData
+                uid: 'word!Word.Interfaces.ContentControlData:interface'
+              - name: ContentControlLoadOptions
+                uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+              - name: ContentControlUpdateData
+                uid: 'word!Word.Interfaces.ContentControlUpdateData:interface'
+              - name: CustomPropertyCollectionData
+                uid: 'word!Word.Interfaces.CustomPropertyCollectionData:interface'
+              - name: CustomPropertyCollectionUpdateData
+                uid: >-
+                  word!Word.Interfaces.CustomPropertyCollectionUpdateData:interface
+              - name: CustomPropertyData
+                uid: 'word!Word.Interfaces.CustomPropertyData:interface'
+              - name: CustomPropertyUpdateData
+                uid: 'word!Word.Interfaces.CustomPropertyUpdateData:interface'
+              - name: DocumentCreatedData
+                uid: 'word!Word.Interfaces.DocumentCreatedData:interface'
+              - name: DocumentCreatedUpdateData
+                uid: 'word!Word.Interfaces.DocumentCreatedUpdateData:interface'
+              - name: DocumentData
+                uid: 'word!Word.Interfaces.DocumentData:interface'
+              - name: DocumentLoadOptions
+                uid: 'word!Word.Interfaces.DocumentLoadOptions:interface'
+              - name: DocumentPropertiesData
+                uid: 'word!Word.Interfaces.DocumentPropertiesData:interface'
+              - name: DocumentPropertiesUpdateData
+                uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData:interface'
+              - name: DocumentUpdateData
+                uid: 'word!Word.Interfaces.DocumentUpdateData:interface'
+              - name: FontData
+                uid: 'word!Word.Interfaces.FontData:interface'
+              - name: FontLoadOptions
+                uid: 'word!Word.Interfaces.FontLoadOptions:interface'
+              - name: FontUpdateData
+                uid: 'word!Word.Interfaces.FontUpdateData:interface'
+              - name: InlinePictureCollectionData
+                uid: 'word!Word.Interfaces.InlinePictureCollectionData:interface'
+              - name: InlinePictureCollectionLoadOptions
+                uid: >-
+                  word!Word.Interfaces.InlinePictureCollectionLoadOptions:interface
+              - name: InlinePictureCollectionUpdateData
+                uid: >-
+                  word!Word.Interfaces.InlinePictureCollectionUpdateData:interface
+              - name: InlinePictureData
+                uid: 'word!Word.Interfaces.InlinePictureData:interface'
+              - name: InlinePictureLoadOptions
+                uid: 'word!Word.Interfaces.InlinePictureLoadOptions:interface'
+              - name: InlinePictureUpdateData
+                uid: 'word!Word.Interfaces.InlinePictureUpdateData:interface'
+              - name: ListCollectionData
+                uid: 'word!Word.Interfaces.ListCollectionData:interface'
+              - name: ListCollectionUpdateData
+                uid: 'word!Word.Interfaces.ListCollectionUpdateData:interface'
+              - name: ListData
+                uid: 'word!Word.Interfaces.ListData:interface'
+              - name: ListItemData
+                uid: 'word!Word.Interfaces.ListItemData:interface'
+              - name: ListItemUpdateData
+                uid: 'word!Word.Interfaces.ListItemUpdateData:interface'
+              - name: ParagraphCollectionData
+                uid: 'word!Word.Interfaces.ParagraphCollectionData:interface'
+              - name: ParagraphCollectionLoadOptions
+                uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions:interface'
+              - name: ParagraphCollectionUpdateData
+                uid: 'word!Word.Interfaces.ParagraphCollectionUpdateData:interface'
+              - name: ParagraphData
+                uid: 'word!Word.Interfaces.ParagraphData:interface'
+              - name: ParagraphLoadOptions
+                uid: 'word!Word.Interfaces.ParagraphLoadOptions:interface'
+              - name: ParagraphUpdateData
+                uid: 'word!Word.Interfaces.ParagraphUpdateData:interface'
+              - name: RangeCollectionData
+                uid: 'word!Word.Interfaces.RangeCollectionData:interface'
+              - name: RangeCollectionLoadOptions
+                uid: 'word!Word.Interfaces.RangeCollectionLoadOptions:interface'
+              - name: RangeCollectionUpdateData
+                uid: 'word!Word.Interfaces.RangeCollectionUpdateData:interface'
+              - name: RangeData
+                uid: 'word!Word.Interfaces.RangeData:interface'
+              - name: RangeLoadOptions
+                uid: 'word!Word.Interfaces.RangeLoadOptions:interface'
+              - name: RangeUpdateData
+                uid: 'word!Word.Interfaces.RangeUpdateData:interface'
+              - name: SearchOptionsData
+                uid: 'word!Word.Interfaces.SearchOptionsData:interface'
+              - name: SearchOptionsLoadOptions
+                uid: 'word!Word.Interfaces.SearchOptionsLoadOptions:interface'
+              - name: SearchOptionsUpdateData
+                uid: 'word!Word.Interfaces.SearchOptionsUpdateData:interface'
+              - name: SectionCollectionData
+                uid: 'word!Word.Interfaces.SectionCollectionData:interface'
+              - name: SectionCollectionLoadOptions
+                uid: 'word!Word.Interfaces.SectionCollectionLoadOptions:interface'
+              - name: SectionCollectionUpdateData
+                uid: 'word!Word.Interfaces.SectionCollectionUpdateData:interface'
+              - name: SectionData
+                uid: 'word!Word.Interfaces.SectionData:interface'
+              - name: SectionLoadOptions
+                uid: 'word!Word.Interfaces.SectionLoadOptions:interface'
+              - name: SectionUpdateData
+                uid: 'word!Word.Interfaces.SectionUpdateData:interface'
+              - name: TableBorderData
+                uid: 'word!Word.Interfaces.TableBorderData:interface'
+              - name: TableBorderUpdateData
+                uid: 'word!Word.Interfaces.TableBorderUpdateData:interface'
+              - name: TableCellCollectionData
+                uid: 'word!Word.Interfaces.TableCellCollectionData:interface'
+              - name: TableCellCollectionUpdateData
+                uid: 'word!Word.Interfaces.TableCellCollectionUpdateData:interface'
+              - name: TableCellData
+                uid: 'word!Word.Interfaces.TableCellData:interface'
+              - name: TableCellUpdateData
+                uid: 'word!Word.Interfaces.TableCellUpdateData:interface'
+              - name: TableCollectionData
+                uid: 'word!Word.Interfaces.TableCollectionData:interface'
+              - name: TableCollectionUpdateData
+                uid: 'word!Word.Interfaces.TableCollectionUpdateData:interface'
+              - name: TableData
+                uid: 'word!Word.Interfaces.TableData:interface'
+              - name: TableRowCollectionData
+                uid: 'word!Word.Interfaces.TableRowCollectionData:interface'
+              - name: TableRowCollectionUpdateData
+                uid: 'word!Word.Interfaces.TableRowCollectionUpdateData:interface'
+              - name: TableRowData
+                uid: 'word!Word.Interfaces.TableRowData:interface'
+              - name: TableRowUpdateData
+                uid: 'word!Word.Interfaces.TableRowUpdateData:interface'
+              - name: TableUpdateData
+                uid: 'word!Word.Interfaces.TableUpdateData:interface'
       - name: Common API
         uid: office!
         items:
           - name: Office
+            uid: 'office!Office:namespace'
             items:
               - name: Enums
                 uid: ''
@@ -145,15 +294,6 @@ items:
                 uid: 'office!Office.AddBindingFromPromptOptions:interface'
               - name: AddBindingFromSelectionOptions
                 uid: 'office!Office.AddBindingFromSelectionOptions:interface'
-              - name: AddinCommands
-                items:
-                  - name: Event
-                    uid: 'office!Office.AddinCommands.Event:interface'
-                  - name: EventCompletedOptions
-                    uid: >-
-                      office!Office.AddinCommands.EventCompletedOptions:interface
-                  - name: Source
-                    uid: 'office!Office.AddinCommands.Source:interface'
               - name: AsyncContextOptions
                 uid: 'office!Office.AsyncContextOptions:interface'
               - name: AsyncResult
@@ -244,7 +384,17 @@ items:
                 uid: 'office!Office.TextBinding:interface'
               - name: UI
                 uid: 'office!Office.UI:interface'
+          - name: Office.AddinCommands
+            uid: 'office!Office.AddinCommands:namespace'
+            items:
+              - name: Event
+                uid: 'office!Office.AddinCommands.Event:interface'
+              - name: EventCompletedOptions
+                uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
+              - name: Source
+                uid: 'office!Office.AddinCommands.Source:interface'
           - name: OfficeExtension
+            uid: 'office!OfficeExtension:namespace'
             items:
               - name: ClientObject
                 uid: 'office!OfficeExtension.ClientObject:class'

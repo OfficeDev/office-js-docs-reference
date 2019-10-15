@@ -8,10 +8,11 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: Excel.Interfaces.TimelineStyleLoadOptions
+    name: TimelineStyleLoadOptions
     fullName: Excel.Interfaces.TimelineStyleLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

@@ -2,10 +2,11 @@
 items:
   - uid: 'office!Office.BindingSelectionChangedEventArgs:interface'
     summary: Provides information about the binding that raised the SelectionChanged event.
-    name: Office.BindingSelectionChangedEventArgs
+    name: BindingSelectionChangedEventArgs
     fullName: Office.BindingSelectionChangedEventArgs
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:
@@ -286,5 +287,7 @@ items:
 references:
   - uid: 'office!Office.Binding:interface'
     name: Binding
+    fullName: Office.Binding
   - uid: 'office!Office.EventType:enum'
     name: EventType
+    fullName: Office.EventType

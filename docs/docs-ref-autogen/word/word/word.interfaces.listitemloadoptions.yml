@@ -5,10 +5,11 @@ items:
       Represents the paragraph list item format.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.Interfaces.ListItemLoadOptions
+    name: ListItemLoadOptions
     fullName: Word.Interfaces.ListItemLoadOptions
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

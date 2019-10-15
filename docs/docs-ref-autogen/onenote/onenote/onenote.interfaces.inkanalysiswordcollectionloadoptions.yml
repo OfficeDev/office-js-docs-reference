@@ -5,10 +5,11 @@ items:
       Represents a collection of InkAnalysisWord objects.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
+    name: InkAnalysisWordCollectionLoadOptions
     fullName: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -110,4 +111,5 @@ items:
           - boolean
 references:
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions:interface'
-    name: OneNote.Interfaces.InkAnalysisLineLoadOptions
+    name: InkAnalysisLineLoadOptions
+    fullName: OneNote.Interfaces.InkAnalysisLineLoadOptions

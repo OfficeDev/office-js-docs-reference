@@ -5,10 +5,11 @@ items:
       Specifies the horizontal overflow for the text frame in a shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ShapeTextHorizontalOverflow
+    name: ShapeTextHorizontalOverflow
     fullName: Excel.ShapeTextHorizontalOverflow
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

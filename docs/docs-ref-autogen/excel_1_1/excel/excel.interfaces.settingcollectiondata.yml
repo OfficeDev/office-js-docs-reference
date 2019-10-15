@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.SettingCollectionData:interface'
     summary: An interface describing the data returned by calling `settingCollection.toJSON()`<!-- -->.
-    name: Excel.Interfaces.SettingCollectionData
+    name: SettingCollectionData
     fullName: Excel.Interfaces.SettingCollectionData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

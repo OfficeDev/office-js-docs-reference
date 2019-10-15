@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartTrendlineData:interface'
     summary: An interface describing the data returned by calling `chartTrendline.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ChartTrendlineData
+    name: ChartTrendlineData
     fullName: Excel.Interfaces.ChartTrendlineData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -113,7 +114,8 @@ items:
           - 'excel!Excel.Interfaces.ChartTrendlineData#type~0:complex'
 references:
   - uid: 'excel!Excel.Interfaces.ChartTrendlineFormatData:interface'
-    name: Excel.Interfaces.ChartTrendlineFormatData
+    name: ChartTrendlineFormatData
+    fullName: Excel.Interfaces.ChartTrendlineFormatData
   - uid: 'excel!Excel.Interfaces.ChartTrendlineData#type~0:complex'
     name: Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"
     fullName: Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"

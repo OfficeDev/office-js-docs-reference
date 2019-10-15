@@ -4,9 +4,10 @@ items:
     summary: >-
       An interface for updating data on the ChartPivotOptions object, for use in `chartPivotOptions.set({ ... })`<!--
       -->.
-    name: Excel.Interfaces.ChartPivotOptionsUpdateData
+    name: ChartPivotOptionsUpdateData
     fullName: Excel.Interfaces.ChartPivotOptionsUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

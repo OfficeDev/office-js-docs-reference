@@ -2,10 +2,11 @@
 items:
   - uid: 'word!Word.Interfaces.FontUpdateData:interface'
     summary: 'An interface for updating data on the Font object, for use in "font.set(<!-- -->{ ... }<!-- -->)".'
-    name: Word.Interfaces.FontUpdateData
+    name: FontUpdateData
     fullName: Word.Interfaces.FontUpdateData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

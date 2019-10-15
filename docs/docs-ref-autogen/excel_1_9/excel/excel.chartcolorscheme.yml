@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.ChartColorScheme:enum'
     summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.ChartColorScheme
+    name: ChartColorScheme
     fullName: Excel.ChartColorScheme
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

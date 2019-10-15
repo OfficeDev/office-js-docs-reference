@@ -5,10 +5,11 @@ items:
       Represents the PageView class.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: Visio.Interfaces.PageViewLoadOptions
+    name: PageViewLoadOptions
     fullName: Visio.Interfaces.PageViewLoadOptions
     langs:
       - typeScript
+    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:

@@ -2,10 +2,11 @@
 items:
   - uid: 'word!Word.Interfaces.CustomXmlPartCollectionData:interface'
     summary: An interface describing the data returned by calling "customXmlPartCollection.toJSON()".
-    name: Word.Interfaces.CustomXmlPartCollectionData
+    name: CustomXmlPartCollectionData
     fullName: Word.Interfaces.CustomXmlPartCollectionData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

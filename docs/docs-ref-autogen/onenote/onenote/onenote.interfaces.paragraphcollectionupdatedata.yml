@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the ParagraphCollection object, for use in "paragraphCollection.set(<!-- -->{
       ... }<!-- -->)".
-    name: OneNote.Interfaces.ParagraphCollectionUpdateData
+    name: ParagraphCollectionUpdateData
     fullName: OneNote.Interfaces.ParagraphCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:

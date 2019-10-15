@@ -2,10 +2,11 @@
 items:
   - uid: 'office!Office.Bindings:interface'
     summary: Represents the bindings the add-in has within the document.
-    name: Office.Bindings
+    name: Bindings
     fullName: Office.Bindings
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:
@@ -803,8 +804,10 @@ items:
 references:
   - uid: 'office!Office.BindingType:enum'
     name: BindingType
+    fullName: Office.BindingType
   - uid: 'office!Office.AddBindingFromNamedItemOptions:interface'
     name: AddBindingFromNamedItemOptions
+    fullName: Office.AddBindingFromNamedItemOptions
   - uid: 'office!Office.Bindings#addFromNamedItemAsync~0:complex'
     name: '(result: AsyncResult<Binding>) => void'
     fullName: '(result: Office.AsyncResult<Office.Binding>) => void'
@@ -839,6 +842,7 @@ references:
         fullName: '>) => void'
   - uid: 'office!Office.AddBindingFromPromptOptions:interface'
     name: AddBindingFromPromptOptions
+    fullName: Office.AddBindingFromPromptOptions
   - uid: 'office!Office.Bindings#addFromPromptAsync~0:complex'
     name: '(result: AsyncResult<Binding>) => void'
     fullName: '(result: Office.AsyncResult<Office.Binding>) => void'
@@ -873,6 +877,7 @@ references:
         fullName: '>) => void'
   - uid: 'office!Office.AddBindingFromSelectionOptions:interface'
     name: AddBindingFromSelectionOptions
+    fullName: Office.AddBindingFromSelectionOptions
   - uid: 'office!Office.Bindings#addFromSelectionAsync~0:complex'
     name: '(result: AsyncResult<Binding>) => void'
     fullName: '(result: Office.AsyncResult<Office.Binding>) => void'
@@ -907,8 +912,10 @@ references:
         fullName: '>) => void'
   - uid: 'office!Office.Document:interface'
     name: Document
+    fullName: Office.Document
   - uid: 'office!Office.AsyncContextOptions:interface'
-    name: Office.AsyncContextOptions
+    name: AsyncContextOptions
+    fullName: Office.AsyncContextOptions
   - uid: 'office!Office.Bindings#getAllAsync~0:complex'
     name: '(result: AsyncResult<Binding[]>) => void'
     fullName: '(result: Office.AsyncResult<Office.Binding[]>) => void'

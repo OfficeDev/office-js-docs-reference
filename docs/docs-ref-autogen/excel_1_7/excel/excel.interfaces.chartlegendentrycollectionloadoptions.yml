@@ -5,10 +5,11 @@ items:
       Represents a collection of legendEntries.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions
+    name: ChartLegendEntryCollectionLoadOptions
     fullName: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

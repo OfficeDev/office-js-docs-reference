@@ -5,10 +5,11 @@ items:
       Represents a point of a series in a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartPointLoadOptions
+    name: ChartPointLoadOptions
     fullName: Excel.Interfaces.ChartPointLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -61,4 +62,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartPointFormatLoadOptions
+    name: ChartPointFormatLoadOptions
+    fullName: Excel.Interfaces.ChartPointFormatLoadOptions

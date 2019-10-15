@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionData:interface'
     summary: An interface describing the data returned by calling `chartLegendEntryCollection.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ChartLegendEntryCollectionData
+    name: ChartLegendEntryCollectionData
     fullName: Excel.Interfaces.ChartLegendEntryCollectionData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

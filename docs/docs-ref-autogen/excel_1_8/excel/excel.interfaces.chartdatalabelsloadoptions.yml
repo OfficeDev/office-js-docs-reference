@@ -5,10 +5,11 @@ items:
       Represents a collection of all the data labels on a chart point.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartDataLabelsLoadOptions
+    name: ChartDataLabelsLoadOptions
     fullName: Excel.Interfaces.ChartDataLabelsLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -261,4 +262,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartDataLabelFormatLoadOptions
+    name: ChartDataLabelFormatLoadOptions
+    fullName: Excel.Interfaces.ChartDataLabelFormatLoadOptions

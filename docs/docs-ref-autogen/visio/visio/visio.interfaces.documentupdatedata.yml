@@ -2,10 +2,11 @@
 items:
   - uid: 'visio!Visio.Interfaces.DocumentUpdateData:interface'
     summary: 'An interface for updating data on the Document object, for use in "document.set(<!-- -->{ ... }<!-- -->)".'
-    name: Visio.Interfaces.DocumentUpdateData
+    name: DocumentUpdateData
     fullName: Visio.Interfaces.DocumentUpdateData
     langs:
       - typeScript
+    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:
@@ -43,6 +44,8 @@ items:
           - 'visio!Visio.Interfaces.DocumentViewUpdateData:interface'
 references:
   - uid: 'visio!Visio.Interfaces.ApplicationUpdateData:interface'
-    name: Visio.Interfaces.ApplicationUpdateData
+    name: ApplicationUpdateData
+    fullName: Visio.Interfaces.ApplicationUpdateData
   - uid: 'visio!Visio.Interfaces.DocumentViewUpdateData:interface'
-    name: Visio.Interfaces.DocumentViewUpdateData
+    name: DocumentViewUpdateData
+    fullName: Visio.Interfaces.DocumentViewUpdateData

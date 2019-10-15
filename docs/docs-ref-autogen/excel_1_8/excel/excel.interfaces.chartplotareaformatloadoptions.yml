@@ -5,10 +5,11 @@ items:
       Represents the format properties for chart plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartPlotAreaFormatLoadOptions
+    name: ChartPlotAreaFormatLoadOptions
     fullName: Excel.Interfaces.ChartPlotAreaFormatLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -45,4 +46,5 @@ items:
           - 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
-    name: Excel.Interfaces.ChartBorderLoadOptions
+    name: ChartBorderLoadOptions
+    fullName: Excel.Interfaces.ChartBorderLoadOptions

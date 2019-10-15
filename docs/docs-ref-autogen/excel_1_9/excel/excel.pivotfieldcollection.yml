@@ -5,13 +5,16 @@ items:
       Represents a collection of all the PivotFields that are part of a PivotTable's hierarchy.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.PivotFieldCollection
+    name: PivotFieldCollection
     fullName: Excel.PivotFieldCollection
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PivotFieldCollection#context:member'
@@ -194,6 +197,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.PivotFieldCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -204,7 +208,8 @@ references:
       - name: <number>
         fullName: <number>
   - uid: 'excel!Excel.PivotField:class'
-    name: Excel.PivotField
+    name: PivotField
+    fullName: Excel.PivotField
   - uid: 'excel!Excel.PivotFieldCollection#items~0:complex'
     name: 'Excel.PivotField[]'
     fullName: 'Excel.PivotField[]'
@@ -215,7 +220,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.PivotFieldCollection:class'
-    name: Excel.PivotFieldCollection
+    name: PivotFieldCollection
+    fullName: Excel.PivotFieldCollection
   - uid: 'excel!Excel.PivotFieldCollection#load~0:complex'
     name: Excel.Interfaces.PivotFieldCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.PivotFieldCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -231,4 +237,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.PivotFieldCollectionData:interface'
-    name: Excel.Interfaces.PivotFieldCollectionData
+    name: PivotFieldCollectionData
+    fullName: Excel.Interfaces.PivotFieldCollectionData

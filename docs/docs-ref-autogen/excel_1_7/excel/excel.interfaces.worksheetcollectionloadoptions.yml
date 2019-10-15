@@ -5,10 +5,11 @@ items:
       Represents a collection of worksheet objects that are part of the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.WorksheetCollectionLoadOptions
+    name: WorksheetCollectionLoadOptions
     fullName: Excel.Interfaces.WorksheetCollectionLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -202,8 +203,11 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions:interface'
-    name: Excel.Interfaces.ChartCollectionLoadOptions
+    name: ChartCollectionLoadOptions
+    fullName: Excel.Interfaces.ChartCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
-    name: Excel.Interfaces.WorksheetProtectionLoadOptions
+    name: WorksheetProtectionLoadOptions
+    fullName: Excel.Interfaces.WorksheetProtectionLoadOptions
   - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
-    name: Excel.Interfaces.TableCollectionLoadOptions
+    name: TableCollectionLoadOptions
+    fullName: Excel.Interfaces.TableCollectionLoadOptions

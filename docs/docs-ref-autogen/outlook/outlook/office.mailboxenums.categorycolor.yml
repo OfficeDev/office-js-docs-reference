@@ -14,10 +14,11 @@ items:
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
     isPreview: true
-    name: Office.MailboxEnums.CategoryColor
+    name: CategoryColor
     fullName: Office.MailboxEnums.CategoryColor
     langs:
       - typeScript
+    namespace: 'outlook!Office.MailboxEnums:namespace'
     type: enum
     package: outlook!
     children:

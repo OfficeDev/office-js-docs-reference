@@ -8,10 +8,11 @@ items:
     remarks: >-
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
-    name: Office.MailboxEnums.RecipientType
+    name: RecipientType
     fullName: Office.MailboxEnums.RecipientType
     langs:
       - typeScript
+    namespace: 'outlook!Office.MailboxEnums:namespace'
     type: enum
     package: outlook!
     children:

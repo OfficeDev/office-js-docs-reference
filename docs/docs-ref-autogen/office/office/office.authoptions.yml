@@ -4,10 +4,11 @@ items:
     summary: >-
       Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with
       the getAccessTokenAsync method.
-    name: Office.AuthOptions
+    name: AuthOptions
     fullName: Office.AuthOptions
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:

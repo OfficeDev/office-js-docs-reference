@@ -42,10 +42,11 @@ items:
       });
 
       ```
-    name: Office.Contact
+    name: Contact
     fullName: Office.Contact
     langs:
       - typeScript
+    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

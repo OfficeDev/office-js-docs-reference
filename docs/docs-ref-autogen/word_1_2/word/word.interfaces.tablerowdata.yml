@@ -2,9 +2,10 @@
 items:
   - uid: 'word!Word.Interfaces.TableRowData:interface'
     summary: An interface describing the data returned by calling "tableRow.toJSON()".
-    name: Word.Interfaces.TableRowData
+    name: TableRowData
     fullName: Word.Interfaces.TableRowData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!

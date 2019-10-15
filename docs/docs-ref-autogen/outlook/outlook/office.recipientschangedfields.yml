@@ -5,10 +5,11 @@ items:
       Represents `RecipientsChangedEventArgs.changedRecipientsFields` object.
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    name: Office.RecipientsChangedFields
+    name: RecipientsChangedFields
     fullName: Office.RecipientsChangedFields
     langs:
       - typeScript
+    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

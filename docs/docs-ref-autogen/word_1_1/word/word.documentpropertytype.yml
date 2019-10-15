@@ -2,10 +2,11 @@
 items:
   - uid: 'word!Word.DocumentPropertyType:enum'
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    name: Word.DocumentPropertyType
+    name: DocumentPropertyType
     fullName: Word.DocumentPropertyType
     langs:
       - typeScript
+    namespace: 'word!Word:namespace'
     type: enum
     package: word!
     children:

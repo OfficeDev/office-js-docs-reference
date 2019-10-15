@@ -8,13 +8,16 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: Excel.PivotTableStyle
+    name: PivotTableStyle
     fullName: Excel.PivotTableStyle
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PivotTableStyle#context:member'
@@ -264,13 +267,18 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.PivotTableStyle:class'
-    name: Excel.PivotTableStyle
+    name: PivotTableStyle
+    fullName: Excel.PivotTableStyle
   - uid: 'excel!Excel.Interfaces.PivotTableStyleLoadOptions:interface'
-    name: Excel.Interfaces.PivotTableStyleLoadOptions
+    name: PivotTableStyleLoadOptions
+    fullName: Excel.Interfaces.PivotTableStyleLoadOptions
   - uid: 'excel!Excel.Interfaces.PivotTableStyleUpdateData:interface'
-    name: Interfaces.PivotTableStyleUpdateData
+    name: PivotTableStyleUpdateData
+    fullName: Excel.Interfaces.PivotTableStyleUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.PivotTableStyleData:interface'
-    name: Excel.Interfaces.PivotTableStyleData
+    name: PivotTableStyleData
+    fullName: Excel.Interfaces.PivotTableStyleData

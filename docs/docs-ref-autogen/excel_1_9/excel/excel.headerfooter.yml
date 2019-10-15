@@ -2,13 +2,16 @@
 items:
   - uid: 'excel!Excel.HeaderFooter:class'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.HeaderFooter
+    name: HeaderFooter
     fullName: Excel.HeaderFooter
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.HeaderFooter#centerFooter:member'
@@ -281,13 +284,18 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.HeaderFooter:class'
-    name: Excel.HeaderFooter
+    name: HeaderFooter
+    fullName: Excel.HeaderFooter
   - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions:interface'
-    name: Excel.Interfaces.HeaderFooterLoadOptions
+    name: HeaderFooterLoadOptions
+    fullName: Excel.Interfaces.HeaderFooterLoadOptions
   - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData:interface'
-    name: Interfaces.HeaderFooterUpdateData
+    name: HeaderFooterUpdateData
+    fullName: Excel.Interfaces.HeaderFooterUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.HeaderFooterData:interface'
-    name: Excel.Interfaces.HeaderFooterData
+    name: HeaderFooterData
+    fullName: Excel.Interfaces.HeaderFooterData

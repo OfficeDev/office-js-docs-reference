@@ -2,10 +2,11 @@
 items:
   - uid: 'onenote!OneNote.Interfaces.PageCollectionData:interface'
     summary: An interface describing the data returned by calling "pageCollection.toJSON()".
-    name: OneNote.Interfaces.PageCollectionData
+    name: PageCollectionData
     fullName: OneNote.Interfaces.PageCollectionData
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:

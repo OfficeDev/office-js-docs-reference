@@ -2,10 +2,11 @@
 items:
   - uid: 'word!Word.Interfaces.TableRowUpdateData:interface'
     summary: 'An interface for updating data on the TableRow object, for use in "tableRow.set(<!-- -->{ ... }<!-- -->)".'
-    name: Word.Interfaces.TableRowUpdateData
+    name: TableRowUpdateData
     fullName: Word.Interfaces.TableRowUpdateData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -109,7 +110,8 @@ items:
           - 'word!Word.Interfaces.TableRowUpdateData#verticalAlignment~0:complex'
 references:
   - uid: 'word!Word.Interfaces.FontUpdateData:interface'
-    name: Word.Interfaces.FontUpdateData
+    name: FontUpdateData
+    fullName: Word.Interfaces.FontUpdateData
   - uid: 'word!Word.Interfaces.TableRowUpdateData#horizontalAlignment~0:complex'
     name: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
     fullName: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"

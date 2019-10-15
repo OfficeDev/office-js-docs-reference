@@ -5,13 +5,16 @@ items:
       Represents a cell in a OneNote table.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.TableCell
+    name: TableCell
     fullName: OneNote.TableCell
     langs:
       - typeScript
+    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.TableCell#appendHtml:member(1)'
@@ -599,24 +602,34 @@ references:
   - uid: 'onenote!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.Image:class'
-    name: OneNote.Image
+    name: Image
+    fullName: OneNote.Image
   - uid: 'onenote!OneNote.RichText:class'
-    name: OneNote.RichText
+    name: RichText
+    fullName: OneNote.RichText
   - uid: 'onenote!OneNote.Table:class'
-    name: OneNote.Table
+    name: Table
+    fullName: OneNote.Table
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
+    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.TableCell:class'
-    name: OneNote.TableCell
+    name: TableCell
+    fullName: OneNote.TableCell
   - uid: 'onenote!OneNote.Interfaces.TableCellLoadOptions:interface'
-    name: OneNote.Interfaces.TableCellLoadOptions
+    name: TableCellLoadOptions
+    fullName: OneNote.Interfaces.TableCellLoadOptions
   - uid: 'onenote!OneNote.ParagraphCollection:class'
-    name: OneNote.ParagraphCollection
+    name: ParagraphCollection
+    fullName: OneNote.ParagraphCollection
   - uid: 'onenote!OneNote.TableRow:class'
-    name: OneNote.TableRow
+    name: TableRow
+    fullName: OneNote.TableRow
   - uid: 'onenote!OneNote.Interfaces.TableCellUpdateData:interface'
-    name: Interfaces.TableCellUpdateData
+    name: TableCellUpdateData
+    fullName: OneNote.Interfaces.TableCellUpdateData
   - uid: 'onenote!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'onenote!OneNote.Interfaces.TableCellData:interface'
-    name: OneNote.Interfaces.TableCellData
+    name: TableCellData
+    fullName: OneNote.Interfaces.TableCellData

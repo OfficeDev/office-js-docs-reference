@@ -2,10 +2,11 @@
 items:
   - uid: 'outlook!Office.MailboxEnums.OWAView:enum'
     summary: Represents the current view of Outlook on the web.
-    name: Office.MailboxEnums.OWAView
+    name: OWAView
     fullName: Office.MailboxEnums.OWAView
     langs:
       - typeScript
+    namespace: 'outlook!Office.MailboxEnums:namespace'
     type: enum
     package: outlook!
     children:

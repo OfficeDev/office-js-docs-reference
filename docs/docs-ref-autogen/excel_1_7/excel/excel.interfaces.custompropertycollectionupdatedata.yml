@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the CustomPropertyCollection object, for use in `customPropertyCollection.set({
       ... })`<!-- -->.
-    name: Excel.Interfaces.CustomPropertyCollectionUpdateData
+    name: CustomPropertyCollectionUpdateData
     fullName: Excel.Interfaces.CustomPropertyCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

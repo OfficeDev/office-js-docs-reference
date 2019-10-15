@@ -2,10 +2,11 @@
 items:
   - uid: 'word!Word.Interfaces.RangeCollectionData:interface'
     summary: An interface describing the data returned by calling "rangeCollection.toJSON()".
-    name: Word.Interfaces.RangeCollectionData
+    name: RangeCollectionData
     fullName: Word.Interfaces.RangeCollectionData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

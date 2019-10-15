@@ -2,10 +2,11 @@
 items:
   - uid: 'word!Word.Interfaces.ParagraphUpdateData:interface'
     summary: 'An interface for updating data on the Paragraph object, for use in "paragraph.set(<!-- -->{ ... }<!-- -->)".'
-    name: Word.Interfaces.ParagraphUpdateData
+    name: ParagraphUpdateData
     fullName: Word.Interfaces.ParagraphUpdateData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -218,4 +219,5 @@ references:
       - name: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
         fullName: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
   - uid: 'word!Word.Interfaces.FontUpdateData:interface'
-    name: Word.Interfaces.FontUpdateData
+    name: FontUpdateData
+    fullName: Word.Interfaces.FontUpdateData

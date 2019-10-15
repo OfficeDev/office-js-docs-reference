@@ -5,10 +5,11 @@ items:
       Provides information about the worksheet that raised the Deleted event.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.WorksheetDeletedEventArgs
+    name: WorksheetDeletedEventArgs
     fullName: Excel.WorksheetDeletedEventArgs
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

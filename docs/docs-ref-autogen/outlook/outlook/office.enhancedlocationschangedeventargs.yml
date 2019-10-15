@@ -6,10 +6,11 @@ items:
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     isPreview: true
-    name: Office.EnhancedLocationsChangedEventArgs
+    name: EnhancedLocationsChangedEventArgs
     fullName: Office.EnhancedLocationsChangedEventArgs
     langs:
       - typeScript
+    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

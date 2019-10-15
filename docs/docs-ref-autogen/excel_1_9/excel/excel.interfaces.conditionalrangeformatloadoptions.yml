@@ -5,10 +5,11 @@ items:
       A format object encapsulating the conditional formats range's font, fill, borders, and other properties.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ConditionalRangeFormatLoadOptions
+    name: ConditionalRangeFormatLoadOptions
     fullName: Excel.Interfaces.ConditionalRangeFormatLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -93,8 +94,11 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions:interface'
-    name: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions
+    name: ConditionalRangeBorderCollectionLoadOptions
+    fullName: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFillLoadOptions:interface'
-    name: Excel.Interfaces.ConditionalRangeFillLoadOptions
+    name: ConditionalRangeFillLoadOptions
+    fullName: Excel.Interfaces.ConditionalRangeFillLoadOptions
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions:interface'
-    name: Excel.Interfaces.ConditionalRangeFontLoadOptions
+    name: ConditionalRangeFontLoadOptions
+    fullName: Excel.Interfaces.ConditionalRangeFontLoadOptions

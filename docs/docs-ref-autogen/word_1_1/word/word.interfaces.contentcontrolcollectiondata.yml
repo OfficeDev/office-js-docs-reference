@@ -2,10 +2,11 @@
 items:
   - uid: 'word!Word.Interfaces.ContentControlCollectionData:interface'
     summary: An interface describing the data returned by calling "contentControlCollection.toJSON()".
-    name: Word.Interfaces.ContentControlCollectionData
+    name: ContentControlCollectionData
     fullName: Word.Interfaces.ContentControlCollectionData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

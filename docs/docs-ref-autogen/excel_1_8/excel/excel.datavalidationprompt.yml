@@ -5,10 +5,11 @@ items:
       Represents the user prompt properties for the data validation.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.DataValidationPrompt
+    name: DataValidationPrompt
     fullName: Excel.DataValidationPrompt
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

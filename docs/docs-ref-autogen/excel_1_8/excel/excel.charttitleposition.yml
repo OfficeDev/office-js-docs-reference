@@ -5,10 +5,11 @@ items:
       Represents the position of chart title.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartTitlePosition
+    name: ChartTitlePosition
     fullName: Excel.ChartTitlePosition
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

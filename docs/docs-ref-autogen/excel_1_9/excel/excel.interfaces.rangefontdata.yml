@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.RangeFontData:interface'
     summary: An interface describing the data returned by calling `rangeFont.toJSON()`<!-- -->.
-    name: Excel.Interfaces.RangeFontData
+    name: RangeFontData
     fullName: Excel.Interfaces.RangeFontData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

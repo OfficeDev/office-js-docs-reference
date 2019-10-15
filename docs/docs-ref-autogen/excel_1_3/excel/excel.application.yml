@@ -5,13 +5,16 @@ items:
       Represents the Excel application that manages the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Application
+    name: Application
     fullName: Excel.Application
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Application#calculate:member(1)'
@@ -273,7 +276,8 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.CalculationType:enum'
-    name: Excel.CalculationType
+    name: CalculationType
+    fullName: Excel.CalculationType
   - uid: 'excel!Excel.Application#calculationMode~0:complex'
     name: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual"
     fullName: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual"
@@ -285,13 +289,18 @@ references:
         fullName: ' | "Automatic" | "AutomaticExceptTables" | "Manual"'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Application:class'
-    name: Excel.Application
+    name: Application
+    fullName: Excel.Application
   - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
-    name: Excel.Interfaces.ApplicationLoadOptions
+    name: ApplicationLoadOptions
+    fullName: Excel.Interfaces.ApplicationLoadOptions
   - uid: 'excel!Excel.Interfaces.ApplicationUpdateData:interface'
-    name: Interfaces.ApplicationUpdateData
+    name: ApplicationUpdateData
+    fullName: Excel.Interfaces.ApplicationUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ApplicationData:interface'
-    name: Excel.Interfaces.ApplicationData
+    name: ApplicationData
+    fullName: Excel.Interfaces.ApplicationData

@@ -8,10 +8,11 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: Excel.Interfaces.SlicerLoadOptions
+    name: SlicerLoadOptions
     fullName: Excel.Interfaces.SlicerLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -268,4 +269,5 @@ items:
           - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
-    name: Excel.Interfaces.WorksheetLoadOptions
+    name: WorksheetLoadOptions
+    fullName: Excel.Interfaces.WorksheetLoadOptions

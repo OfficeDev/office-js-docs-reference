@@ -5,10 +5,11 @@ items:
       Represents data obtained by OCR (optical character recognition) of an image.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.ImageOcrData
+    name: ImageOcrData
     fullName: OneNote.ImageOcrData
     langs:
       - typeScript
+    namespace: 'onenote!OneNote:namespace'
     type: interface
     package: onenote!
     children:

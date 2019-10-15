@@ -4,9 +4,10 @@ items:
     summary: >-
       An interface for updating data on the ChartPlotAreaFormat object, for use in `chartPlotAreaFormat.set({ ...
       })`<!-- -->.
-    name: Excel.Interfaces.ChartPlotAreaFormatUpdateData
+    name: ChartPlotAreaFormatUpdateData
     fullName: Excel.Interfaces.ChartPlotAreaFormatUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

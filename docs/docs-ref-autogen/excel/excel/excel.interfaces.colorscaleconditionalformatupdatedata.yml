@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the ColorScaleConditionalFormat object, for use in
       `colorScaleConditionalFormat.set({ ... })`<!-- -->.
-    name: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
+    name: ColorScaleConditionalFormatUpdateData
     fullName: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -29,4 +30,5 @@ items:
           - 'excel!Excel.ConditionalColorScaleCriteria:interface'
 references:
   - uid: 'excel!Excel.ConditionalColorScaleCriteria:interface'
-    name: Excel.ConditionalColorScaleCriteria
+    name: ConditionalColorScaleCriteria
+    fullName: Excel.ConditionalColorScaleCriteria

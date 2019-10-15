@@ -5,13 +5,16 @@ items:
       Represents a conditional format DataBar Format for the positive side of the data bar.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ConditionalDataBarPositiveFormat
+    name: ConditionalDataBarPositiveFormat
     fullName: Excel.ConditionalDataBarPositiveFormat
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ConditionalDataBarPositiveFormat#borderColor:member'
@@ -232,13 +235,18 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ConditionalDataBarPositiveFormat:class'
-    name: Excel.ConditionalDataBarPositiveFormat
+    name: ConditionalDataBarPositiveFormat
+    fullName: Excel.ConditionalDataBarPositiveFormat
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions:interface'
-    name: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
+    name: ConditionalDataBarPositiveFormatLoadOptions
+    fullName: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData:interface'
-    name: Interfaces.ConditionalDataBarPositiveFormatUpdateData
+    name: ConditionalDataBarPositiveFormatUpdateData
+    fullName: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatData:interface'
-    name: Excel.Interfaces.ConditionalDataBarPositiveFormatData
+    name: ConditionalDataBarPositiveFormatData
+    fullName: Excel.Interfaces.ConditionalDataBarPositiveFormatData

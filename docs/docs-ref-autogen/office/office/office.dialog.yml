@@ -7,10 +7,11 @@ items:
     remarks: >-
       **Requirement set**:
       [DialogAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)
-    name: Office.Dialog
+    name: Dialog
     fullName: Office.Dialog
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:
@@ -77,6 +78,7 @@ items:
             - string
 references:
   - uid: 'office!Office.EventType:enum'
-    name: Office.EventType
+    name: EventType
+    fullName: Office.EventType
   - uid: '!Function:interface'
     name: Function

@@ -9,10 +9,11 @@ items:
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
     isPreview: true
-    name: Office.MailboxEnums.AttachmentContentFormat
+    name: AttachmentContentFormat
     fullName: Office.MailboxEnums.AttachmentContentFormat
     langs:
       - typeScript
+    namespace: 'outlook!Office.MailboxEnums:namespace'
     type: enum
     package: outlook!
     children:

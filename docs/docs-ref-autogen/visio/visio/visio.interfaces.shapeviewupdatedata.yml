@@ -2,10 +2,11 @@
 items:
   - uid: 'visio!Visio.Interfaces.ShapeViewUpdateData:interface'
     summary: 'An interface for updating data on the ShapeView object, for use in "shapeView.set(<!-- -->{ ... }<!-- -->)".'
-    name: Visio.Interfaces.ShapeViewUpdateData
+    name: ShapeViewUpdateData
     fullName: Visio.Interfaces.ShapeViewUpdateData
     langs:
       - typeScript
+    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:
@@ -27,4 +28,5 @@ items:
           - 'visio!Visio.Highlight:interface'
 references:
   - uid: 'visio!Visio.Highlight:interface'
-    name: Visio.Highlight
+    name: Highlight
+    fullName: Visio.Highlight

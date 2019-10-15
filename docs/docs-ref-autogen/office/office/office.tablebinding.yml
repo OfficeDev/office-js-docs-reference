@@ -9,13 +9,16 @@ items:
 
       For Excel, note that after you establish a table binding, each new row a user adds to the table is automatically
       included in the binding and rowCount increases.
-    name: Office.TableBinding
+    name: TableBinding
     fullName: Office.TableBinding
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     extends:
       - 'office!Office.Binding:interface'
+    inheritance:
+      - type: 'office!Office.Binding:interface'
     package: office!
     children:
       - 'office!Office.TableBinding#addColumnsAsync:member(1)'
@@ -1050,6 +1053,7 @@ items:
 references:
   - uid: 'office!Office.Binding:interface'
     name: Binding
+    fullName: Office.Binding
   - uid: 'office!Office.TableBinding#addColumnsAsync~0:complex'
     name: 'TableData | any[][]'
     fullName: 'Office.TableData | any[][]'
@@ -1060,7 +1064,8 @@ references:
       - name: ' | any[][]'
         fullName: ' | any[][]'
   - uid: 'office!Office.AsyncContextOptions:interface'
-    name: Office.AsyncContextOptions
+    name: AsyncContextOptions
+    fullName: Office.AsyncContextOptions
   - uid: 'office!Office.TableBinding#addColumnsAsync~1:complex'
     name: '(result: AsyncResult<void>) => void'
     fullName: '(result: Office.AsyncResult<void>) => void'

@@ -8,10 +8,11 @@ items:
 
 
       Project supports only `Office.CoercionType.Text`<!-- -->.
-    name: Office.CoercionType
+    name: CoercionType
     fullName: Office.CoercionType
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: enum
     package: office!
     children:

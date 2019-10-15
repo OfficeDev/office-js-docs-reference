@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
     summary: 'An interface for updating data on the Worksheet object, for use in `worksheet.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.WorksheetUpdateData
+    name: WorksheetUpdateData
     fullName: Excel.Interfaces.WorksheetUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

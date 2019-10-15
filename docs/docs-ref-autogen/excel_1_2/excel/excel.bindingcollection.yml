@@ -5,13 +5,16 @@ items:
       Represents the collection of all the binding objects that are part of the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.BindingCollection
+    name: BindingCollection
     fullName: Excel.BindingCollection
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.BindingCollection#context:member'
@@ -294,8 +297,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Binding:class'
-    name: Excel.Binding
+    name: Binding
+    fullName: Excel.Binding
   - uid: 'excel!Excel.BindingCollection#items~0:complex'
     name: 'Excel.Binding[]'
     fullName: 'Excel.Binding[]'
@@ -306,7 +311,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.BindingCollection:class'
-    name: Excel.BindingCollection
+    name: BindingCollection
+    fullName: Excel.BindingCollection
   - uid: 'excel!Excel.BindingCollection#load~0:complex'
     name: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -322,4 +328,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.BindingCollectionData:interface'
-    name: Excel.Interfaces.BindingCollectionData
+    name: BindingCollectionData
+    fullName: Excel.Interfaces.BindingCollectionData

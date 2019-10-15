@@ -5,13 +5,16 @@ items:
       Represents a collection of all the PivotTables that are part of the workbook or worksheet.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.PivotTableCollection
+    name: PivotTableCollection
     fullName: Excel.PivotTableCollection
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PivotTableCollection#context:member'
@@ -211,6 +214,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.PivotTableCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -221,7 +225,8 @@ references:
       - name: <number>
         fullName: <number>
   - uid: 'excel!Excel.PivotTable:class'
-    name: Excel.PivotTable
+    name: PivotTable
+    fullName: Excel.PivotTable
   - uid: 'excel!Excel.PivotTableCollection#items~0:complex'
     name: 'Excel.PivotTable[]'
     fullName: 'Excel.PivotTable[]'
@@ -232,7 +237,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.PivotTableCollection:class'
-    name: Excel.PivotTableCollection
+    name: PivotTableCollection
+    fullName: Excel.PivotTableCollection
   - uid: 'excel!Excel.PivotTableCollection#load~0:complex'
     name: Excel.Interfaces.PivotTableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.PivotTableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -248,4 +254,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.PivotTableCollectionData:interface'
-    name: Excel.Interfaces.PivotTableCollectionData
+    name: PivotTableCollectionData
+    fullName: Excel.Interfaces.PivotTableCollectionData

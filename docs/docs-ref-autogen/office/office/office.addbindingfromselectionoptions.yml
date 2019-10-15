@@ -2,10 +2,11 @@
 items:
   - uid: 'office!Office.AddBindingFromSelectionOptions:interface'
     summary: Provides options for configuring the prompt and identifying the binding that is created.
-    name: Office.AddBindingFromSelectionOptions
+    name: AddBindingFromSelectionOptions
     fullName: Office.AddBindingFromSelectionOptions
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:

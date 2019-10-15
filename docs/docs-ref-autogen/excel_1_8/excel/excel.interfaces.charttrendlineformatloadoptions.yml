@@ -5,10 +5,11 @@ items:
       Represents the format properties for chart trendline.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartTrendlineFormatLoadOptions
+    name: ChartTrendlineFormatLoadOptions
     fullName: Excel.Interfaces.ChartTrendlineFormatLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -45,4 +46,5 @@ items:
           - 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartLineFormatLoadOptions
+    name: ChartLineFormatLoadOptions
+    fullName: Excel.Interfaces.ChartLineFormatLoadOptions

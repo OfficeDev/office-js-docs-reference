@@ -8,10 +8,11 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.WorkbookLoadOptions
+    name: WorkbookLoadOptions
     fullName: Excel.Interfaces.WorkbookLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -80,8 +81,11 @@ items:
           - 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
-    name: Excel.Interfaces.ApplicationLoadOptions
+    name: ApplicationLoadOptions
+    fullName: Excel.Interfaces.ApplicationLoadOptions
   - uid: 'excel!Excel.Interfaces.BindingCollectionLoadOptions:interface'
-    name: Excel.Interfaces.BindingCollectionLoadOptions
+    name: BindingCollectionLoadOptions
+    fullName: Excel.Interfaces.BindingCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
-    name: Excel.Interfaces.TableCollectionLoadOptions
+    name: TableCollectionLoadOptions
+    fullName: Excel.Interfaces.TableCollectionLoadOptions

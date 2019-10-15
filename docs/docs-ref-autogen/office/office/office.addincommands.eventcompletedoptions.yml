@@ -2,10 +2,11 @@
 items:
   - uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
     summary: Specifies the behavior for when the event is completed.
-    name: Office.AddinCommands.EventCompletedOptions
+    name: EventCompletedOptions
     fullName: Office.AddinCommands.EventCompletedOptions
     langs:
       - typeScript
+    namespace: 'office!Office.AddinCommands:namespace'
     type: interface
     package: office!
     children:

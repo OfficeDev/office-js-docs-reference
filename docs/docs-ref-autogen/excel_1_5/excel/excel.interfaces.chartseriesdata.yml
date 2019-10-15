@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartSeriesData:interface'
     summary: An interface describing the data returned by calling `chartSeries.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ChartSeriesData
+    name: ChartSeriesData
     fullName: Excel.Interfaces.ChartSeriesData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -59,7 +60,8 @@ items:
           - 'excel!Excel.Interfaces.ChartSeriesData#points~0:complex'
 references:
   - uid: 'excel!Excel.Interfaces.ChartSeriesFormatData:interface'
-    name: Excel.Interfaces.ChartSeriesFormatData
+    name: ChartSeriesFormatData
+    fullName: Excel.Interfaces.ChartSeriesFormatData
   - uid: 'excel!Excel.Interfaces.ChartSeriesData#points~0:complex'
     name: 'Excel.Interfaces.ChartPointData[]'
     fullName: 'Excel.Interfaces.ChartPointData[]'

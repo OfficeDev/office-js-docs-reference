@@ -3,10 +3,11 @@ items:
   - uid: 'office!Office.GetBindingDataOptions:interface'
     summary: Provides options for how to get the data in a binding.
     remarks: 'If the rows option is used, the value must be "thisRow".'
-    name: Office.GetBindingDataOptions
+    name: GetBindingDataOptions
     fullName: Office.GetBindingDataOptions
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:

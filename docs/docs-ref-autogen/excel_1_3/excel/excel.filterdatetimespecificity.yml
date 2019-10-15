@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.FilterDatetimeSpecificity:enum'
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.FilterDatetimeSpecificity
+    name: FilterDatetimeSpecificity
     fullName: Excel.FilterDatetimeSpecificity
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

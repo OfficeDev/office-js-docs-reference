@@ -5,10 +5,11 @@ items:
       Provides access to the office art formatting for chart title.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartTitleFormatLoadOptions
+    name: ChartTitleFormatLoadOptions
     fullName: Excel.Interfaces.ChartTitleFormatLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -45,4 +46,5 @@ items:
           - 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
-    name: Excel.Interfaces.ChartFontLoadOptions
+    name: ChartFontLoadOptions
+    fullName: Excel.Interfaces.ChartFontLoadOptions

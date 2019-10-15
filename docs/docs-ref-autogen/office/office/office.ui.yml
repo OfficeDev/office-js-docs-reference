@@ -9,10 +9,11 @@ items:
       Visit "[Use the Dialog API in your Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!-- -->" for more
       information.
-    name: Office.UI
+    name: UI
     fullName: Office.UI
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:
@@ -318,6 +319,7 @@ items:
 references:
   - uid: 'office!Office.DialogOptions:interface'
     name: DialogOptions
+    fullName: Office.DialogOptions
   - uid: 'office!Office.UI#displayDialogAsync~0:complex'
     name: '(result: AsyncResult<Dialog>) => void'
     fullName: '(result: Office.AsyncResult<Office.Dialog>) => void'

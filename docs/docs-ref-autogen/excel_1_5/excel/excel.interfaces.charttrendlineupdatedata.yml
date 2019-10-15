@@ -2,9 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData:interface'
     summary: 'An interface for updating data on the ChartTrendline object, for use in `chartTrendline.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.ChartTrendlineUpdateData
+    name: ChartTrendlineUpdateData
     fullName: Excel.Interfaces.ChartTrendlineUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

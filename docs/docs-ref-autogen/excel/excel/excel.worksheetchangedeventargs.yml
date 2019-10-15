@@ -5,10 +5,11 @@ items:
       Provides information about the worksheet that raised the Changed event.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.WorksheetChangedEventArgs
+    name: WorksheetChangedEventArgs
     fullName: Excel.WorksheetChangedEventArgs
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:
@@ -191,11 +192,14 @@ references:
       - name: ' | "Unknown" | "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" | "ColumnDeleted" | "CellInserted" | "CellDeleted"'
         fullName: ' | "Unknown" | "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" | "ColumnDeleted" | "CellInserted" | "CellDeleted"'
   - uid: 'excel!Excel.ChangedEventDetail:interface'
-    name: Excel.ChangedEventDetail
+    name: ChangedEventDetail
+    fullName: Excel.ChangedEventDetail
   - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
+    name: Range
+    fullName: Excel.Range
   - uid: 'excel!Excel.RequestContext:class'
-    name: Excel.RequestContext
+    name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.WorksheetChangedEventArgs#source~0:complex'
     name: Excel.EventSource | "Local" | "Remote"
     fullName: Excel.EventSource | "Local" | "Remote"

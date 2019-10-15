@@ -5,10 +5,11 @@ items:
       Represents a collection of InkStroke objects.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Interfaces.InkStrokeCollectionLoadOptions
+    name: InkStrokeCollectionLoadOptions
     fullName: OneNote.Interfaces.InkStrokeCollectionLoadOptions
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -58,4 +59,5 @@ items:
           - boolean
 references:
   - uid: 'onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface'
-    name: OneNote.Interfaces.FloatingInkLoadOptions
+    name: FloatingInkLoadOptions
+    fullName: OneNote.Interfaces.FloatingInkLoadOptions

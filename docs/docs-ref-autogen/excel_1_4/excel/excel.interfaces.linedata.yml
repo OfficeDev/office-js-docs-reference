@@ -2,9 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.LineData:interface'
     summary: An interface describing the data returned by calling `line.toJSON()`<!-- -->.
-    name: Excel.Interfaces.LineData
+    name: LineData
     fullName: Excel.Interfaces.LineData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

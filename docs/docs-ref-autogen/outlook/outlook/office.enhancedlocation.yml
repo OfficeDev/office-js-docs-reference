@@ -13,10 +13,11 @@ items:
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
     isPreview: true
-    name: Office.EnhancedLocation
+    name: EnhancedLocation
     fullName: Office.EnhancedLocation
     langs:
       - typeScript
+    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

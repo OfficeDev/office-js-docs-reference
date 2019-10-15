@@ -2,10 +2,11 @@
 items:
   - uid: 'word!Word.BorderType:enum'
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    name: Word.BorderType
+    name: BorderType
     fullName: Word.BorderType
     langs:
       - typeScript
+    namespace: 'word!Word:namespace'
     type: enum
     package: word!
     children:

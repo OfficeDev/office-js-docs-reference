@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData:interface'
     summary: An interface describing the data returned by calling `chartTrendlineLabel.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ChartTrendlineLabelData
+    name: ChartTrendlineLabelData
     fullName: Excel.Interfaces.ChartTrendlineLabelData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -237,7 +238,8 @@ items:
           - number
 references:
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatData:interface'
-    name: Excel.Interfaces.ChartTrendlineLabelFormatData
+    name: ChartTrendlineLabelFormatData
+    fullName: Excel.Interfaces.ChartTrendlineLabelFormatData
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#horizontalAlignment~0:complex'
     name: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
     fullName: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"

@@ -5,10 +5,11 @@ items:
       Specifies the type of a shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ShapeType
+    name: ShapeType
     fullName: Excel.ShapeType
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

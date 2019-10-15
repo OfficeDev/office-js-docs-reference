@@ -1,0 +1,187 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office:namespace'
+    name: Office
+    fullName: Office
+    langs:
+      - typeScript
+    type: namespace
+    package: outlook!
+    children:
+      - 'outlook!Office.Appointment:interface'
+      - 'outlook!Office.AppointmentCompose:interface'
+      - 'outlook!Office.AppointmentForm:interface'
+      - 'outlook!Office.AppointmentRead:interface'
+      - 'outlook!Office.AttachmentDetails:interface'
+      - 'outlook!Office.Body:interface'
+      - 'outlook!Office.CoercionTypeOptions:interface'
+      - 'outlook!Office.Contact:interface'
+      - 'outlook!Office.CustomProperties:interface'
+      - 'outlook!Office.Diagnostics:interface'
+      - 'outlook!Office.EmailAddressDetails:interface'
+      - 'outlook!Office.EmailUser:interface'
+      - 'outlook!Office.Entities:interface'
+      - 'outlook!Office.From:interface'
+      - 'outlook!Office.Item:interface'
+      - 'outlook!Office.ItemCompose:interface'
+      - 'outlook!Office.ItemRead:interface'
+      - 'outlook!Office.LocalClientTime:interface'
+      - 'outlook!Office.Location:interface'
+      - 'outlook!Office.Mailbox:interface'
+      - 'outlook!Office.MeetingSuggestion:interface'
+      - 'outlook!Office.Message:interface'
+      - 'outlook!Office.MessageCompose:interface'
+      - 'outlook!Office.MessageRead:interface'
+      - 'outlook!Office.NotificationMessageDetails:interface'
+      - 'outlook!Office.NotificationMessages:interface'
+      - 'outlook!Office.Organizer:interface'
+      - 'outlook!Office.PhoneNumber:interface'
+      - 'outlook!Office.Recipients:interface'
+      - 'outlook!Office.RecipientsChangedEventArgs:interface'
+      - 'outlook!Office.RecipientsChangedFields:interface'
+      - 'outlook!Office.Recurrence:interface'
+      - 'outlook!Office.RecurrenceChangedEventArgs:interface'
+      - 'outlook!Office.RecurrenceProperties:interface'
+      - 'outlook!Office.RecurrenceTimeZone:interface'
+      - 'outlook!Office.ReplyFormAttachment:interface'
+      - 'outlook!Office.ReplyFormData:interface'
+      - 'outlook!Office.RoamingSettings:interface'
+      - 'outlook!Office.SeriesTime:interface'
+      - 'outlook!Office.SourceProperty:enum'
+      - 'outlook!Office.Subject:interface'
+      - 'outlook!Office.TaskSuggestion:interface'
+      - 'outlook!Office.Time:interface'
+      - 'outlook!Office.UserProfile:interface'
+references:
+  - uid: 'outlook!Office.Appointment:interface'
+    name: Appointment
+    fullName: Office.Appointment
+  - uid: 'outlook!Office.AppointmentCompose:interface'
+    name: AppointmentCompose
+    fullName: Office.AppointmentCompose
+  - uid: 'outlook!Office.AppointmentForm:interface'
+    name: AppointmentForm
+    fullName: Office.AppointmentForm
+  - uid: 'outlook!Office.AppointmentRead:interface'
+    name: AppointmentRead
+    fullName: Office.AppointmentRead
+  - uid: 'outlook!Office.AttachmentDetails:interface'
+    name: AttachmentDetails
+    fullName: Office.AttachmentDetails
+  - uid: 'outlook!Office.Body:interface'
+    name: Body
+    fullName: Office.Body
+  - uid: 'outlook!Office.CoercionTypeOptions:interface'
+    name: CoercionTypeOptions
+    fullName: Office.CoercionTypeOptions
+  - uid: 'outlook!Office.Contact:interface'
+    name: Contact
+    fullName: Office.Contact
+  - uid: 'outlook!Office.CustomProperties:interface'
+    name: CustomProperties
+    fullName: Office.CustomProperties
+  - uid: 'outlook!Office.Diagnostics:interface'
+    name: Diagnostics
+    fullName: Office.Diagnostics
+  - uid: 'outlook!Office.EmailAddressDetails:interface'
+    name: EmailAddressDetails
+    fullName: Office.EmailAddressDetails
+  - uid: 'outlook!Office.EmailUser:interface'
+    name: EmailUser
+    fullName: Office.EmailUser
+  - uid: 'outlook!Office.Entities:interface'
+    name: Entities
+    fullName: Office.Entities
+  - uid: 'outlook!Office.From:interface'
+    name: From
+    fullName: Office.From
+  - uid: 'outlook!Office.Item:interface'
+    name: Item
+    fullName: Office.Item
+  - uid: 'outlook!Office.ItemCompose:interface'
+    name: ItemCompose
+    fullName: Office.ItemCompose
+  - uid: 'outlook!Office.ItemRead:interface'
+    name: ItemRead
+    fullName: Office.ItemRead
+  - uid: 'outlook!Office.LocalClientTime:interface'
+    name: LocalClientTime
+    fullName: Office.LocalClientTime
+  - uid: 'outlook!Office.Location:interface'
+    name: Location
+    fullName: Office.Location
+  - uid: 'outlook!Office.Mailbox:interface'
+    name: Mailbox
+    fullName: Office.Mailbox
+  - uid: 'outlook!Office.MeetingSuggestion:interface'
+    name: MeetingSuggestion
+    fullName: Office.MeetingSuggestion
+  - uid: 'outlook!Office.Message:interface'
+    name: Message
+    fullName: Office.Message
+  - uid: 'outlook!Office.MessageCompose:interface'
+    name: MessageCompose
+    fullName: Office.MessageCompose
+  - uid: 'outlook!Office.MessageRead:interface'
+    name: MessageRead
+    fullName: Office.MessageRead
+  - uid: 'outlook!Office.NotificationMessageDetails:interface'
+    name: NotificationMessageDetails
+    fullName: Office.NotificationMessageDetails
+  - uid: 'outlook!Office.NotificationMessages:interface'
+    name: NotificationMessages
+    fullName: Office.NotificationMessages
+  - uid: 'outlook!Office.Organizer:interface'
+    name: Organizer
+    fullName: Office.Organizer
+  - uid: 'outlook!Office.PhoneNumber:interface'
+    name: PhoneNumber
+    fullName: Office.PhoneNumber
+  - uid: 'outlook!Office.Recipients:interface'
+    name: Recipients
+    fullName: Office.Recipients
+  - uid: 'outlook!Office.RecipientsChangedEventArgs:interface'
+    name: RecipientsChangedEventArgs
+    fullName: Office.RecipientsChangedEventArgs
+  - uid: 'outlook!Office.RecipientsChangedFields:interface'
+    name: RecipientsChangedFields
+    fullName: Office.RecipientsChangedFields
+  - uid: 'outlook!Office.Recurrence:interface'
+    name: Recurrence
+    fullName: Office.Recurrence
+  - uid: 'outlook!Office.RecurrenceChangedEventArgs:interface'
+    name: RecurrenceChangedEventArgs
+    fullName: Office.RecurrenceChangedEventArgs
+  - uid: 'outlook!Office.RecurrenceProperties:interface'
+    name: RecurrenceProperties
+    fullName: Office.RecurrenceProperties
+  - uid: 'outlook!Office.RecurrenceTimeZone:interface'
+    name: RecurrenceTimeZone
+    fullName: Office.RecurrenceTimeZone
+  - uid: 'outlook!Office.ReplyFormAttachment:interface'
+    name: ReplyFormAttachment
+    fullName: Office.ReplyFormAttachment
+  - uid: 'outlook!Office.ReplyFormData:interface'
+    name: ReplyFormData
+    fullName: Office.ReplyFormData
+  - uid: 'outlook!Office.RoamingSettings:interface'
+    name: RoamingSettings
+    fullName: Office.RoamingSettings
+  - uid: 'outlook!Office.SeriesTime:interface'
+    name: SeriesTime
+    fullName: Office.SeriesTime
+  - uid: 'outlook!Office.SourceProperty:enum'
+    name: SourceProperty
+    fullName: Office.SourceProperty
+  - uid: 'outlook!Office.Subject:interface'
+    name: Subject
+    fullName: Office.Subject
+  - uid: 'outlook!Office.TaskSuggestion:interface'
+    name: TaskSuggestion
+    fullName: Office.TaskSuggestion
+  - uid: 'outlook!Office.Time:interface'
+    name: Time
+    fullName: Office.Time
+  - uid: 'outlook!Office.UserProfile:interface'
+    name: UserProfile
+    fullName: Office.UserProfile

@@ -5,10 +5,11 @@ items:
       Represents the body of a document or a section.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.Interfaces.BodyLoadOptions
+    name: BodyLoadOptions
     fullName: Word.Interfaces.BodyLoadOptions
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -92,6 +93,8 @@ items:
           - boolean
 references:
   - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
-    name: Word.Interfaces.FontLoadOptions
+    name: FontLoadOptions
+    fullName: Word.Interfaces.FontLoadOptions
   - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
-    name: Word.Interfaces.ContentControlLoadOptions
+    name: ContentControlLoadOptions
+    fullName: Word.Interfaces.ContentControlLoadOptions

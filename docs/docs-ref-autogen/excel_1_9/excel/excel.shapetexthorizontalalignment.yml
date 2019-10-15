@@ -5,10 +5,11 @@ items:
       Specifies the horizontal alignment for the text frame in a shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ShapeTextHorizontalAlignment
+    name: ShapeTextHorizontalAlignment
     fullName: Excel.ShapeTextHorizontalAlignment
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

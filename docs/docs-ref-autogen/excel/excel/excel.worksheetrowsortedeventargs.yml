@@ -8,10 +8,11 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: Excel.WorksheetRowSortedEventArgs
+    name: WorksheetRowSortedEventArgs
     fullName: Excel.WorksheetRowSortedEventArgs
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

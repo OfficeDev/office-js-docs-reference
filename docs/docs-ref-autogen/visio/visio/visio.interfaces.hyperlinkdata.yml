@@ -2,10 +2,11 @@
 items:
   - uid: 'visio!Visio.Interfaces.HyperlinkData:interface'
     summary: An interface describing the data returned by calling "hyperlink.toJSON()".
-    name: Visio.Interfaces.HyperlinkData
+    name: HyperlinkData
     fullName: Visio.Interfaces.HyperlinkData
     langs:
       - typeScript
+    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:

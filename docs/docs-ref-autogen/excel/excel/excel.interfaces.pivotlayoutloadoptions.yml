@@ -5,10 +5,11 @@ items:
       Represents the visual layout of the PivotTable.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.PivotLayoutLoadOptions
+    name: PivotLayoutLoadOptions
     fullName: Excel.Interfaces.PivotLayoutLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

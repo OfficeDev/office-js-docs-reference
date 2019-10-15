@@ -5,10 +5,11 @@ items:
       Represents a OneNote section group. Section groups can contain sections and other section groups.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Interfaces.SectionGroupLoadOptions
+    name: SectionGroupLoadOptions
     fullName: OneNote.Interfaces.SectionGroupLoadOptions
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -158,10 +159,14 @@ items:
           - 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions:interface'
 references:
   - uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions:interface'
-    name: OneNote.Interfaces.NotebookLoadOptions
+    name: NotebookLoadOptions
+    fullName: OneNote.Interfaces.NotebookLoadOptions
   - uid: 'onenote!OneNote.Interfaces.SectionGroupLoadOptions:interface'
-    name: OneNote.Interfaces.SectionGroupLoadOptions
+    name: SectionGroupLoadOptions
+    fullName: OneNote.Interfaces.SectionGroupLoadOptions
   - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions:interface'
-    name: OneNote.Interfaces.SectionGroupCollectionLoadOptions
+    name: SectionGroupCollectionLoadOptions
+    fullName: OneNote.Interfaces.SectionGroupCollectionLoadOptions
   - uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions:interface'
-    name: OneNote.Interfaces.SectionCollectionLoadOptions
+    name: SectionCollectionLoadOptions
+    fullName: OneNote.Interfaces.SectionCollectionLoadOptions

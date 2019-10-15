@@ -2,9 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.WorksheetProtectionData:interface'
     summary: An interface describing the data returned by calling `worksheetProtection.toJSON()`<!-- -->.
-    name: Excel.Interfaces.WorksheetProtectionData
+    name: WorksheetProtectionData
     fullName: Excel.Interfaces.WorksheetProtectionData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

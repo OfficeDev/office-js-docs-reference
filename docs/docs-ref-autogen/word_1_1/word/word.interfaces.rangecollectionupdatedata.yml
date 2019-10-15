@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the RangeCollection object, for use in "rangeCollection.set(<!-- -->{ ... }<!--
       -->)".
-    name: Word.Interfaces.RangeCollectionUpdateData
+    name: RangeCollectionUpdateData
     fullName: Word.Interfaces.RangeCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

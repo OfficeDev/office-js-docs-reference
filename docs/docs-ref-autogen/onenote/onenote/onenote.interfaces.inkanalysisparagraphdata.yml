@@ -2,10 +2,11 @@
 items:
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface'
     summary: An interface describing the data returned by calling "inkAnalysisParagraph.toJSON()".
-    name: OneNote.Interfaces.InkAnalysisParagraphData
+    name: InkAnalysisParagraphData
     fullName: OneNote.Interfaces.InkAnalysisParagraphData
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -59,7 +60,8 @@ items:
           - 'onenote!OneNote.Interfaces.InkAnalysisParagraphData#lines~0:complex'
 references:
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisData:interface'
-    name: OneNote.Interfaces.InkAnalysisData
+    name: InkAnalysisData
+    fullName: OneNote.Interfaces.InkAnalysisData
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphData#lines~0:complex'
     name: 'OneNote.Interfaces.InkAnalysisLineData[]'
     fullName: 'OneNote.Interfaces.InkAnalysisLineData[]'

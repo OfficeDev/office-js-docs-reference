@@ -5,10 +5,11 @@ items:
       Represents a cell value conditional format rule.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ConditionalCellValueRule
+    name: ConditionalCellValueRule
     fullName: Excel.ConditionalCellValueRule
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

@@ -2,10 +2,11 @@
 items:
   - uid: 'word!Word.Interfaces.TableCellData:interface'
     summary: An interface describing the data returned by calling "tableCell.toJSON()".
-    name: Word.Interfaces.TableCellData
+    name: TableCellData
     fullName: Word.Interfaces.TableCellData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -155,7 +156,8 @@ items:
           - number
 references:
   - uid: 'word!Word.Interfaces.BodyData:interface'
-    name: Word.Interfaces.BodyData
+    name: BodyData
+    fullName: Word.Interfaces.BodyData
   - uid: 'word!Word.Interfaces.TableCellData#horizontalAlignment~0:complex'
     name: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
     fullName: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"

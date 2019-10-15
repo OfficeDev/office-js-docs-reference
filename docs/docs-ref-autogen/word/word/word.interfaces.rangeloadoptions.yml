@@ -5,10 +5,11 @@ items:
       Represents a contiguous area in a document.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.Interfaces.RangeLoadOptions
+    name: RangeLoadOptions
     fullName: Word.Interfaces.RangeLoadOptions
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -241,12 +242,17 @@ items:
           - boolean
 references:
   - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
-    name: Word.Interfaces.FontLoadOptions
+    name: FontLoadOptions
+    fullName: Word.Interfaces.FontLoadOptions
   - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
-    name: Word.Interfaces.BodyLoadOptions
+    name: BodyLoadOptions
+    fullName: Word.Interfaces.BodyLoadOptions
   - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
-    name: Word.Interfaces.ContentControlLoadOptions
+    name: ContentControlLoadOptions
+    fullName: Word.Interfaces.ContentControlLoadOptions
   - uid: 'word!Word.Interfaces.TableLoadOptions:interface'
-    name: Word.Interfaces.TableLoadOptions
+    name: TableLoadOptions
+    fullName: Word.Interfaces.TableLoadOptions
   - uid: 'word!Word.Interfaces.TableCellLoadOptions:interface'
-    name: Word.Interfaces.TableCellLoadOptions
+    name: TableCellLoadOptions
+    fullName: Word.Interfaces.TableCellLoadOptions

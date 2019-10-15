@@ -5,10 +5,11 @@ items:
       Represents a OneNote notebook. Notebooks contain section groups and sections.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Interfaces.NotebookLoadOptions
+    name: NotebookLoadOptions
     fullName: OneNote.Interfaces.NotebookLoadOptions
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -138,6 +139,8 @@ items:
           - 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions:interface'
 references:
   - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions:interface'
-    name: OneNote.Interfaces.SectionGroupCollectionLoadOptions
+    name: SectionGroupCollectionLoadOptions
+    fullName: OneNote.Interfaces.SectionGroupCollectionLoadOptions
   - uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions:interface'
-    name: OneNote.Interfaces.SectionCollectionLoadOptions
+    name: SectionCollectionLoadOptions
+    fullName: OneNote.Interfaces.SectionCollectionLoadOptions

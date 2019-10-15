@@ -1,0 +1,191 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'visio!Visio.Interfaces:namespace'
+    name: Visio.Interfaces
+    fullName: Visio.Interfaces
+    langs:
+      - typeScript
+    type: namespace
+    package: visio!
+    children:
+      - 'visio!Visio.Interfaces.ApplicationData:interface'
+      - 'visio!Visio.Interfaces.ApplicationLoadOptions:interface'
+      - 'visio!Visio.Interfaces.ApplicationUpdateData:interface'
+      - 'visio!Visio.Interfaces.CollectionLoadOptions:interface'
+      - 'visio!Visio.Interfaces.CommentCollectionData:interface'
+      - 'visio!Visio.Interfaces.CommentCollectionLoadOptions:interface'
+      - 'visio!Visio.Interfaces.CommentCollectionUpdateData:interface'
+      - 'visio!Visio.Interfaces.CommentData:interface'
+      - 'visio!Visio.Interfaces.CommentLoadOptions:interface'
+      - 'visio!Visio.Interfaces.CommentUpdateData:interface'
+      - 'visio!Visio.Interfaces.DocumentData:interface'
+      - 'visio!Visio.Interfaces.DocumentLoadOptions:interface'
+      - 'visio!Visio.Interfaces.DocumentUpdateData:interface'
+      - 'visio!Visio.Interfaces.DocumentViewData:interface'
+      - 'visio!Visio.Interfaces.DocumentViewLoadOptions:interface'
+      - 'visio!Visio.Interfaces.DocumentViewUpdateData:interface'
+      - 'visio!Visio.Interfaces.HyperlinkCollectionData:interface'
+      - 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions:interface'
+      - 'visio!Visio.Interfaces.HyperlinkCollectionUpdateData:interface'
+      - 'visio!Visio.Interfaces.HyperlinkData:interface'
+      - 'visio!Visio.Interfaces.HyperlinkLoadOptions:interface'
+      - 'visio!Visio.Interfaces.PageCollectionData:interface'
+      - 'visio!Visio.Interfaces.PageCollectionLoadOptions:interface'
+      - 'visio!Visio.Interfaces.PageCollectionUpdateData:interface'
+      - 'visio!Visio.Interfaces.PageData:interface'
+      - 'visio!Visio.Interfaces.PageLoadOptions:interface'
+      - 'visio!Visio.Interfaces.PageUpdateData:interface'
+      - 'visio!Visio.Interfaces.PageViewData:interface'
+      - 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
+      - 'visio!Visio.Interfaces.PageViewUpdateData:interface'
+      - 'visio!Visio.Interfaces.SelectionData:interface'
+      - 'visio!Visio.Interfaces.ShapeCollectionData:interface'
+      - 'visio!Visio.Interfaces.ShapeCollectionLoadOptions:interface'
+      - 'visio!Visio.Interfaces.ShapeCollectionUpdateData:interface'
+      - 'visio!Visio.Interfaces.ShapeData:interface'
+      - 'visio!Visio.Interfaces.ShapeDataItemCollectionData:interface'
+      - 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions:interface'
+      - 'visio!Visio.Interfaces.ShapeDataItemCollectionUpdateData:interface'
+      - 'visio!Visio.Interfaces.ShapeDataItemData:interface'
+      - 'visio!Visio.Interfaces.ShapeDataItemLoadOptions:interface'
+      - 'visio!Visio.Interfaces.ShapeLoadOptions:interface'
+      - 'visio!Visio.Interfaces.ShapeUpdateData:interface'
+      - 'visio!Visio.Interfaces.ShapeViewData:interface'
+      - 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'
+      - 'visio!Visio.Interfaces.ShapeViewUpdateData:interface'
+references:
+  - uid: 'visio!Visio.Interfaces.ApplicationData:interface'
+    name: ApplicationData
+    fullName: Visio.Interfaces.ApplicationData
+  - uid: 'visio!Visio.Interfaces.ApplicationLoadOptions:interface'
+    name: ApplicationLoadOptions
+    fullName: Visio.Interfaces.ApplicationLoadOptions
+  - uid: 'visio!Visio.Interfaces.ApplicationUpdateData:interface'
+    name: ApplicationUpdateData
+    fullName: Visio.Interfaces.ApplicationUpdateData
+  - uid: 'visio!Visio.Interfaces.CollectionLoadOptions:interface'
+    name: CollectionLoadOptions
+    fullName: Visio.Interfaces.CollectionLoadOptions
+  - uid: 'visio!Visio.Interfaces.CommentCollectionData:interface'
+    name: CommentCollectionData
+    fullName: Visio.Interfaces.CommentCollectionData
+  - uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions:interface'
+    name: CommentCollectionLoadOptions
+    fullName: Visio.Interfaces.CommentCollectionLoadOptions
+  - uid: 'visio!Visio.Interfaces.CommentCollectionUpdateData:interface'
+    name: CommentCollectionUpdateData
+    fullName: Visio.Interfaces.CommentCollectionUpdateData
+  - uid: 'visio!Visio.Interfaces.CommentData:interface'
+    name: CommentData
+    fullName: Visio.Interfaces.CommentData
+  - uid: 'visio!Visio.Interfaces.CommentLoadOptions:interface'
+    name: CommentLoadOptions
+    fullName: Visio.Interfaces.CommentLoadOptions
+  - uid: 'visio!Visio.Interfaces.CommentUpdateData:interface'
+    name: CommentUpdateData
+    fullName: Visio.Interfaces.CommentUpdateData
+  - uid: 'visio!Visio.Interfaces.DocumentData:interface'
+    name: DocumentData
+    fullName: Visio.Interfaces.DocumentData
+  - uid: 'visio!Visio.Interfaces.DocumentLoadOptions:interface'
+    name: DocumentLoadOptions
+    fullName: Visio.Interfaces.DocumentLoadOptions
+  - uid: 'visio!Visio.Interfaces.DocumentUpdateData:interface'
+    name: DocumentUpdateData
+    fullName: Visio.Interfaces.DocumentUpdateData
+  - uid: 'visio!Visio.Interfaces.DocumentViewData:interface'
+    name: DocumentViewData
+    fullName: Visio.Interfaces.DocumentViewData
+  - uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions:interface'
+    name: DocumentViewLoadOptions
+    fullName: Visio.Interfaces.DocumentViewLoadOptions
+  - uid: 'visio!Visio.Interfaces.DocumentViewUpdateData:interface'
+    name: DocumentViewUpdateData
+    fullName: Visio.Interfaces.DocumentViewUpdateData
+  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionData:interface'
+    name: HyperlinkCollectionData
+    fullName: Visio.Interfaces.HyperlinkCollectionData
+  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions:interface'
+    name: HyperlinkCollectionLoadOptions
+    fullName: Visio.Interfaces.HyperlinkCollectionLoadOptions
+  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionUpdateData:interface'
+    name: HyperlinkCollectionUpdateData
+    fullName: Visio.Interfaces.HyperlinkCollectionUpdateData
+  - uid: 'visio!Visio.Interfaces.HyperlinkData:interface'
+    name: HyperlinkData
+    fullName: Visio.Interfaces.HyperlinkData
+  - uid: 'visio!Visio.Interfaces.HyperlinkLoadOptions:interface'
+    name: HyperlinkLoadOptions
+    fullName: Visio.Interfaces.HyperlinkLoadOptions
+  - uid: 'visio!Visio.Interfaces.PageCollectionData:interface'
+    name: PageCollectionData
+    fullName: Visio.Interfaces.PageCollectionData
+  - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions:interface'
+    name: PageCollectionLoadOptions
+    fullName: Visio.Interfaces.PageCollectionLoadOptions
+  - uid: 'visio!Visio.Interfaces.PageCollectionUpdateData:interface'
+    name: PageCollectionUpdateData
+    fullName: Visio.Interfaces.PageCollectionUpdateData
+  - uid: 'visio!Visio.Interfaces.PageData:interface'
+    name: PageData
+    fullName: Visio.Interfaces.PageData
+  - uid: 'visio!Visio.Interfaces.PageLoadOptions:interface'
+    name: PageLoadOptions
+    fullName: Visio.Interfaces.PageLoadOptions
+  - uid: 'visio!Visio.Interfaces.PageUpdateData:interface'
+    name: PageUpdateData
+    fullName: Visio.Interfaces.PageUpdateData
+  - uid: 'visio!Visio.Interfaces.PageViewData:interface'
+    name: PageViewData
+    fullName: Visio.Interfaces.PageViewData
+  - uid: 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
+    name: PageViewLoadOptions
+    fullName: Visio.Interfaces.PageViewLoadOptions
+  - uid: 'visio!Visio.Interfaces.PageViewUpdateData:interface'
+    name: PageViewUpdateData
+    fullName: Visio.Interfaces.PageViewUpdateData
+  - uid: 'visio!Visio.Interfaces.SelectionData:interface'
+    name: SelectionData
+    fullName: Visio.Interfaces.SelectionData
+  - uid: 'visio!Visio.Interfaces.ShapeCollectionData:interface'
+    name: ShapeCollectionData
+    fullName: Visio.Interfaces.ShapeCollectionData
+  - uid: 'visio!Visio.Interfaces.ShapeCollectionLoadOptions:interface'
+    name: ShapeCollectionLoadOptions
+    fullName: Visio.Interfaces.ShapeCollectionLoadOptions
+  - uid: 'visio!Visio.Interfaces.ShapeCollectionUpdateData:interface'
+    name: ShapeCollectionUpdateData
+    fullName: Visio.Interfaces.ShapeCollectionUpdateData
+  - uid: 'visio!Visio.Interfaces.ShapeData:interface'
+    name: ShapeData
+    fullName: Visio.Interfaces.ShapeData
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionData:interface'
+    name: ShapeDataItemCollectionData
+    fullName: Visio.Interfaces.ShapeDataItemCollectionData
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions:interface'
+    name: ShapeDataItemCollectionLoadOptions
+    fullName: Visio.Interfaces.ShapeDataItemCollectionLoadOptions
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionUpdateData:interface'
+    name: ShapeDataItemCollectionUpdateData
+    fullName: Visio.Interfaces.ShapeDataItemCollectionUpdateData
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemData:interface'
+    name: ShapeDataItemData
+    fullName: Visio.Interfaces.ShapeDataItemData
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemLoadOptions:interface'
+    name: ShapeDataItemLoadOptions
+    fullName: Visio.Interfaces.ShapeDataItemLoadOptions
+  - uid: 'visio!Visio.Interfaces.ShapeLoadOptions:interface'
+    name: ShapeLoadOptions
+    fullName: Visio.Interfaces.ShapeLoadOptions
+  - uid: 'visio!Visio.Interfaces.ShapeUpdateData:interface'
+    name: ShapeUpdateData
+    fullName: Visio.Interfaces.ShapeUpdateData
+  - uid: 'visio!Visio.Interfaces.ShapeViewData:interface'
+    name: ShapeViewData
+    fullName: Visio.Interfaces.ShapeViewData
+  - uid: 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'
+    name: ShapeViewLoadOptions
+    fullName: Visio.Interfaces.ShapeViewLoadOptions
+  - uid: 'visio!Visio.Interfaces.ShapeViewUpdateData:interface'
+    name: ShapeViewUpdateData
+    fullName: Visio.Interfaces.ShapeViewUpdateData

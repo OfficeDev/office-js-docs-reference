@@ -2,10 +2,11 @@
 items:
   - uid: 'word!Word.Interfaces.SearchOptionsData:interface'
     summary: An interface describing the data returned by calling "searchOptions.toJSON()".
-    name: Word.Interfaces.SearchOptionsData
+    name: SearchOptionsData
     fullName: Word.Interfaces.SearchOptionsData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

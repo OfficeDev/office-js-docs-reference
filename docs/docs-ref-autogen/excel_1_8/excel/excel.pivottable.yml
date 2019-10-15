@@ -7,13 +7,16 @@ items:
 
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.PivotTable
+    name: PivotTable
     fullName: Excel.PivotTable
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PivotTable#columnHierarchies:member'
@@ -449,26 +452,37 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RowColumnPivotHierarchyCollection:class'
-    name: Excel.RowColumnPivotHierarchyCollection
+    name: RowColumnPivotHierarchyCollection
+    fullName: Excel.RowColumnPivotHierarchyCollection
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.DataPivotHierarchyCollection:class'
-    name: Excel.DataPivotHierarchyCollection
+    name: DataPivotHierarchyCollection
+    fullName: Excel.DataPivotHierarchyCollection
   - uid: 'excel!Excel.FilterPivotHierarchyCollection:class'
-    name: Excel.FilterPivotHierarchyCollection
+    name: FilterPivotHierarchyCollection
+    fullName: Excel.FilterPivotHierarchyCollection
   - uid: 'excel!Excel.PivotHierarchyCollection:class'
-    name: Excel.PivotHierarchyCollection
+    name: PivotHierarchyCollection
+    fullName: Excel.PivotHierarchyCollection
   - uid: 'excel!Excel.PivotLayout:class'
-    name: Excel.PivotLayout
+    name: PivotLayout
+    fullName: Excel.PivotLayout
   - uid: 'excel!Excel.PivotTable:class'
-    name: Excel.PivotTable
+    name: PivotTable
+    fullName: Excel.PivotTable
   - uid: 'excel!Excel.Interfaces.PivotTableLoadOptions:interface'
-    name: Excel.Interfaces.PivotTableLoadOptions
+    name: PivotTableLoadOptions
+    fullName: Excel.Interfaces.PivotTableLoadOptions
   - uid: 'excel!Excel.Interfaces.PivotTableUpdateData:interface'
-    name: Interfaces.PivotTableUpdateData
+    name: PivotTableUpdateData
+    fullName: Excel.Interfaces.PivotTableUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.PivotTableData:interface'
-    name: Excel.Interfaces.PivotTableData
+    name: PivotTableData
+    fullName: Excel.Interfaces.PivotTableData
   - uid: 'excel!Excel.Worksheet:class'
-    name: Excel.Worksheet
+    name: Worksheet
+    fullName: Excel.Worksheet

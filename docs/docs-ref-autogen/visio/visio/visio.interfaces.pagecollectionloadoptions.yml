@@ -5,10 +5,11 @@ items:
       Represents a collection of Page objects that are part of the document.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: Visio.Interfaces.PageCollectionLoadOptions
+    name: PageCollectionLoadOptions
     fullName: Visio.Interfaces.PageCollectionLoadOptions
     langs:
       - typeScript
+    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:
@@ -122,4 +123,5 @@ items:
           - boolean
 references:
   - uid: 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
-    name: Visio.Interfaces.PageViewLoadOptions
+    name: PageViewLoadOptions
+    fullName: Visio.Interfaces.PageViewLoadOptions

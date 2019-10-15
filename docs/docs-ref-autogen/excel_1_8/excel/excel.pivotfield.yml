@@ -5,13 +5,16 @@ items:
       Represents the Excel PivotField.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.PivotField
+    name: PivotField
     fullName: Excel.PivotField
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PivotField#context:member'
@@ -280,19 +283,27 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.PivotItemCollection:class'
-    name: Excel.PivotItemCollection
+    name: PivotItemCollection
+    fullName: Excel.PivotItemCollection
   - uid: 'excel!Excel.PivotField:class'
-    name: Excel.PivotField
+    name: PivotField
+    fullName: Excel.PivotField
   - uid: 'excel!Excel.Interfaces.PivotFieldLoadOptions:interface'
-    name: Excel.Interfaces.PivotFieldLoadOptions
+    name: PivotFieldLoadOptions
+    fullName: Excel.Interfaces.PivotFieldLoadOptions
   - uid: 'excel!Excel.Interfaces.PivotFieldUpdateData:interface'
-    name: Interfaces.PivotFieldUpdateData
+    name: PivotFieldUpdateData
+    fullName: Excel.Interfaces.PivotFieldUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.SortBy:enum'
     name: SortBy
+    fullName: Excel.SortBy
   - uid: 'excel!Excel.Subtotals:interface'
-    name: Excel.Subtotals
+    name: Subtotals
+    fullName: Excel.Subtotals
   - uid: 'excel!Excel.Interfaces.PivotFieldData:interface'
-    name: Excel.Interfaces.PivotFieldData
+    name: PivotFieldData
+    fullName: Excel.Interfaces.PivotFieldData

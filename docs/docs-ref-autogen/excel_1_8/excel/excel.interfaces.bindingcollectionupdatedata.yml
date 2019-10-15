@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the BindingCollection object, for use in `bindingCollection.set({ ... })`<!--
       -->.
-    name: Excel.Interfaces.BindingCollectionUpdateData
+    name: BindingCollectionUpdateData
     fullName: Excel.Interfaces.BindingCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

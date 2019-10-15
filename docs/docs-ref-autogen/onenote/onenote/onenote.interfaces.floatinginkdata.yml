@@ -2,10 +2,11 @@
 items:
   - uid: 'onenote!OneNote.Interfaces.FloatingInkData:interface'
     summary: An interface describing the data returned by calling "floatingInk.toJSON()".
-    name: OneNote.Interfaces.FloatingInkData
+    name: FloatingInkData
     fullName: OneNote.Interfaces.FloatingInkData
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:

@@ -8,13 +8,16 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: Excel.SlicerCollection
+    name: SlicerCollection
     fullName: Excel.SlicerCollection
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.SlicerCollection#add:member(1)'
@@ -309,7 +312,8 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Slicer:class'
-    name: Excel.Slicer
+    name: Slicer
+    fullName: Excel.Slicer
   - uid: 'excel!Excel.SlicerCollection#add~0:complex'
     name: string | PivotTable | Table
     fullName: string | Excel.PivotTable | Excel.Table
@@ -349,6 +353,7 @@ references:
         fullName: Excel.Worksheet
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.SlicerCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -368,7 +373,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.SlicerCollection:class'
-    name: Excel.SlicerCollection
+    name: SlicerCollection
+    fullName: Excel.SlicerCollection
   - uid: 'excel!Excel.SlicerCollection#load~0:complex'
     name: Excel.Interfaces.SlicerCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.SlicerCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -384,4 +390,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.SlicerCollectionData:interface'
-    name: Excel.Interfaces.SlicerCollectionData
+    name: SlicerCollectionData
+    fullName: Excel.Interfaces.SlicerCollectionData

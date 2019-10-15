@@ -4,9 +4,10 @@ items:
     summary: >-
       An interface for updating data on the CustomProperty object, for use in "customProperty.set(<!-- -->{ ... }<!--
       -->)".
-    name: Word.Interfaces.CustomPropertyUpdateData
+    name: CustomPropertyUpdateData
     fullName: Word.Interfaces.CustomPropertyUpdateData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!

@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the TableScopedCollection object, for use in `tableScopedCollection.set({ ...
       })`<!-- -->.
-    name: Excel.Interfaces.TableScopedCollectionUpdateData
+    name: TableScopedCollectionUpdateData
     fullName: Excel.Interfaces.TableScopedCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

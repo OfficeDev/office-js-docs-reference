@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatData:interface'
     summary: An interface describing the data returned by calling `conditionalDataBarNegativeFormat.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ConditionalDataBarNegativeFormatData
+    name: ConditionalDataBarNegativeFormatData
     fullName: Excel.Interfaces.ConditionalDataBarNegativeFormatData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

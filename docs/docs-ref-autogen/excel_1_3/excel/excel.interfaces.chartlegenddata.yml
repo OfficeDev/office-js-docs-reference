@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartLegendData:interface'
     summary: An interface describing the data returned by calling `chartLegend.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ChartLegendData
+    name: ChartLegendData
     fullName: Excel.Interfaces.ChartLegendData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -75,7 +76,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartLegendFormatData:interface'
-    name: Excel.Interfaces.ChartLegendFormatData
+    name: ChartLegendFormatData
+    fullName: Excel.Interfaces.ChartLegendFormatData
   - uid: 'excel!Excel.Interfaces.ChartLegendData#position~0:complex'
     name: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
     fullName: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"

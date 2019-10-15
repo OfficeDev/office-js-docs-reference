@@ -6,7 +6,125 @@ items:
       - name: Outlook
         uid: outlook!
         items:
-          - name: MailboxEnums
+          - name: Office
+            uid: 'outlook!Office:namespace'
+            items:
+              - name: Appointment
+                uid: 'outlook!Office.Appointment:interface'
+              - name: AppointmentCompose
+                uid: 'outlook!Office.AppointmentCompose:interface'
+              - name: AppointmentForm
+                uid: 'outlook!Office.AppointmentForm:interface'
+              - name: AppointmentRead
+                uid: 'outlook!Office.AppointmentRead:interface'
+              - name: AppointmentTimeChangedEventArgs
+                uid: 'outlook!Office.AppointmentTimeChangedEventArgs:interface'
+              - name: AttachmentContent
+                uid: 'outlook!Office.AttachmentContent:interface'
+              - name: AttachmentDetails
+                uid: 'outlook!Office.AttachmentDetails:interface'
+              - name: AttachmentsChangedEventArgs
+                uid: 'outlook!Office.AttachmentsChangedEventArgs:interface'
+              - name: Body
+                uid: 'outlook!Office.Body:interface'
+              - name: Categories
+                uid: 'outlook!Office.Categories:interface'
+              - name: CategoryDetails
+                uid: 'outlook!Office.CategoryDetails:interface'
+              - name: CoercionTypeOptions
+                uid: 'outlook!Office.CoercionTypeOptions:interface'
+              - name: Contact
+                uid: 'outlook!Office.Contact:interface'
+              - name: CustomProperties
+                uid: 'outlook!Office.CustomProperties:interface'
+              - name: Diagnostics
+                uid: 'outlook!Office.Diagnostics:interface'
+              - name: EmailAddressDetails
+                uid: 'outlook!Office.EmailAddressDetails:interface'
+              - name: EmailUser
+                uid: 'outlook!Office.EmailUser:interface'
+              - name: EnhancedLocation
+                uid: 'outlook!Office.EnhancedLocation:interface'
+              - name: EnhancedLocationsChangedEventArgs
+                uid: 'outlook!Office.EnhancedLocationsChangedEventArgs:interface'
+              - name: Entities
+                uid: 'outlook!Office.Entities:interface'
+              - name: From
+                uid: 'outlook!Office.From:interface'
+              - name: InternetHeaders
+                uid: 'outlook!Office.InternetHeaders:interface'
+              - name: Item
+                uid: 'outlook!Office.Item:interface'
+              - name: ItemCompose
+                uid: 'outlook!Office.ItemCompose:interface'
+              - name: ItemRead
+                uid: 'outlook!Office.ItemRead:interface'
+              - name: LocalClientTime
+                uid: 'outlook!Office.LocalClientTime:interface'
+              - name: Location
+                uid: 'outlook!Office.Location:interface'
+              - name: LocationDetails
+                uid: 'outlook!Office.LocationDetails:interface'
+              - name: LocationIdentifier
+                uid: 'outlook!Office.LocationIdentifier:interface'
+              - name: Mailbox
+                uid: 'outlook!Office.Mailbox:interface'
+              - name: MasterCategories
+                uid: 'outlook!Office.MasterCategories:interface'
+              - name: MeetingSuggestion
+                uid: 'outlook!Office.MeetingSuggestion:interface'
+              - name: Message
+                uid: 'outlook!Office.Message:interface'
+              - name: MessageCompose
+                uid: 'outlook!Office.MessageCompose:interface'
+              - name: MessageRead
+                uid: 'outlook!Office.MessageRead:interface'
+              - name: NotificationMessageDetails
+                uid: 'outlook!Office.NotificationMessageDetails:interface'
+              - name: NotificationMessages
+                uid: 'outlook!Office.NotificationMessages:interface'
+              - name: OfficeThemeChangedEventArgs
+                uid: 'outlook!Office.OfficeThemeChangedEventArgs:interface'
+              - name: Organizer
+                uid: 'outlook!Office.Organizer:interface'
+              - name: PhoneNumber
+                uid: 'outlook!Office.PhoneNumber:interface'
+              - name: Recipients
+                uid: 'outlook!Office.Recipients:interface'
+              - name: RecipientsChangedEventArgs
+                uid: 'outlook!Office.RecipientsChangedEventArgs:interface'
+              - name: RecipientsChangedFields
+                uid: 'outlook!Office.RecipientsChangedFields:interface'
+              - name: Recurrence
+                uid: 'outlook!Office.Recurrence:interface'
+              - name: RecurrenceChangedEventArgs
+                uid: 'outlook!Office.RecurrenceChangedEventArgs:interface'
+              - name: RecurrenceProperties
+                uid: 'outlook!Office.RecurrenceProperties:interface'
+              - name: RecurrenceTimeZone
+                uid: 'outlook!Office.RecurrenceTimeZone:interface'
+              - name: ReplyFormAttachment
+                uid: 'outlook!Office.ReplyFormAttachment:interface'
+              - name: ReplyFormData
+                uid: 'outlook!Office.ReplyFormData:interface'
+              - name: RoamingSettings
+                uid: 'outlook!Office.RoamingSettings:interface'
+              - name: SeriesTime
+                uid: 'outlook!Office.SeriesTime:interface'
+              - name: SharedProperties
+                uid: 'outlook!Office.SharedProperties:interface'
+              - name: SourceProperty
+                uid: 'outlook!Office.SourceProperty:enum'
+              - name: Subject
+                uid: 'outlook!Office.Subject:interface'
+              - name: TaskSuggestion
+                uid: 'outlook!Office.TaskSuggestion:interface'
+              - name: Time
+                uid: 'outlook!Office.Time:interface'
+              - name: UserProfile
+                uid: 'outlook!Office.UserProfile:interface'
+          - name: Office.MailboxEnums
+            uid: 'outlook!Office.MailboxEnums:namespace'
             items:
               - name: AttachmentContentFormat
                 uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat:enum'
@@ -44,114 +162,11 @@ items:
                 uid: 'outlook!Office.MailboxEnums.RestVersion:enum'
               - name: WeekNumber
                 uid: 'outlook!Office.MailboxEnums.WeekNumber:enum'
-          - name: AppointmentCompose
-            uid: 'outlook!Office.AppointmentCompose:interface'
-          - name: AppointmentRead
-            uid: 'outlook!Office.AppointmentRead:interface'
-          - name: AppointmentTimeChangedEventArgs
-            uid: 'outlook!Office.AppointmentTimeChangedEventArgs:interface'
-          - name: AttachmentContent
-            uid: 'outlook!Office.AttachmentContent:interface'
-          - name: AttachmentDetails
-            uid: 'outlook!Office.AttachmentDetails:interface'
-          - name: AttachmentsChangedEventArgs
-            uid: 'outlook!Office.AttachmentsChangedEventArgs:interface'
-          - name: Body
-            uid: 'outlook!Office.Body:interface'
-          - name: Categories
-            uid: 'outlook!Office.Categories:interface'
-          - name: CategoryDetails
-            uid: 'outlook!Office.CategoryDetails:interface'
-          - name: CoercionTypeOptions
-            uid: 'outlook!Office.CoercionTypeOptions:interface'
-          - name: Contact
-            uid: 'outlook!Office.Contact:interface'
-          - name: CustomProperties
-            uid: 'outlook!Office.CustomProperties:interface'
-          - name: Diagnostics
-            uid: 'outlook!Office.Diagnostics:interface'
-          - name: EmailAddressDetails
-            uid: 'outlook!Office.EmailAddressDetails:interface'
-          - name: EmailUser
-            uid: 'outlook!Office.EmailUser:interface'
-          - name: EnhancedLocation
-            uid: 'outlook!Office.EnhancedLocation:interface'
-          - name: EnhancedLocationsChangedEventArgs
-            uid: 'outlook!Office.EnhancedLocationsChangedEventArgs:interface'
-          - name: Entities
-            uid: 'outlook!Office.Entities:interface'
-          - name: From
-            uid: 'outlook!Office.From:interface'
-          - name: InternetHeaders
-            uid: 'outlook!Office.InternetHeaders:interface'
-          - name: Item
-            uid: 'outlook!Office.Item:interface'
-          - name: LocalClientTime
-            uid: 'outlook!Office.LocalClientTime:interface'
-          - name: Location
-            uid: 'outlook!Office.Location:interface'
-          - name: LocationDetails
-            uid: 'outlook!Office.LocationDetails:interface'
-          - name: LocationIdentifier
-            uid: 'outlook!Office.LocationIdentifier:interface'
-          - name: Mailbox
-            uid: 'outlook!Office.Mailbox:interface'
-          - name: MasterCategories
-            uid: 'outlook!Office.MasterCategories:interface'
-          - name: MeetingSuggestion
-            uid: 'outlook!Office.MeetingSuggestion:interface'
-          - name: MessageCompose
-            uid: 'outlook!Office.MessageCompose:interface'
-          - name: MessageRead
-            uid: 'outlook!Office.MessageRead:interface'
-          - name: NotificationMessageDetails
-            uid: 'outlook!Office.NotificationMessageDetails:interface'
-          - name: NotificationMessages
-            uid: 'outlook!Office.NotificationMessages:interface'
-          - name: OfficeThemeChangedEventArgs
-            uid: 'outlook!Office.OfficeThemeChangedEventArgs:interface'
-          - name: Organizer
-            uid: 'outlook!Office.Organizer:interface'
-          - name: PhoneNumber
-            uid: 'outlook!Office.PhoneNumber:interface'
-          - name: Recipients
-            uid: 'outlook!Office.Recipients:interface'
-          - name: RecipientsChangedEventArgs
-            uid: 'outlook!Office.RecipientsChangedEventArgs:interface'
-          - name: RecipientsChangedFields
-            uid: 'outlook!Office.RecipientsChangedFields:interface'
-          - name: Recurrence
-            uid: 'outlook!Office.Recurrence:interface'
-          - name: RecurrenceChangedEventArgs
-            uid: 'outlook!Office.RecurrenceChangedEventArgs:interface'
-          - name: RecurrenceProperties
-            uid: 'outlook!Office.RecurrenceProperties:interface'
-          - name: RecurrenceTimeZone
-            uid: 'outlook!Office.RecurrenceTimeZone:interface'
-          - name: ReplyFormAttachment
-            uid: 'outlook!Office.ReplyFormAttachment:interface'
-          - name: ReplyFormData
-            uid: 'outlook!Office.ReplyFormData:interface'
-          - name: RoamingSettings
-            uid: 'outlook!Office.RoamingSettings:interface'
-          - name: SeriesTime
-            uid: 'outlook!Office.SeriesTime:interface'
-          - name: SharedProperties
-            uid: 'outlook!Office.SharedProperties:interface'
-          - name: SourceProperty
-            uid: 'outlook!Office.SourceProperty:enum'
-          - name: Subject
-            uid: 'outlook!Office.Subject:interface'
-          - name: TaskSuggestion
-            uid: 'outlook!Office.TaskSuggestion:interface'
-          - name: Time
-            uid: 'outlook!Office.Time:interface'
-          - name: UserProfile
-            uid: 'outlook!Office.UserProfile:interface'
       - name: Common API
         uid: office!
         items:
           - name: Office
+            uid: 'office!Office:namespace'
             items:
               - name: Enums
                 uid: ''
@@ -204,15 +219,6 @@ items:
                 uid: 'office!Office.AddBindingFromPromptOptions:interface'
               - name: AddBindingFromSelectionOptions
                 uid: 'office!Office.AddBindingFromSelectionOptions:interface'
-              - name: AddinCommands
-                items:
-                  - name: Event
-                    uid: 'office!Office.AddinCommands.Event:interface'
-                  - name: EventCompletedOptions
-                    uid: >-
-                      office!Office.AddinCommands.EventCompletedOptions:interface
-                  - name: Source
-                    uid: 'office!Office.AddinCommands.Source:interface'
               - name: AsyncContextOptions
                 uid: 'office!Office.AsyncContextOptions:interface'
               - name: AsyncResult
@@ -303,7 +309,17 @@ items:
                 uid: 'office!Office.TextBinding:interface'
               - name: UI
                 uid: 'office!Office.UI:interface'
+          - name: Office.AddinCommands
+            uid: 'office!Office.AddinCommands:namespace'
+            items:
+              - name: Event
+                uid: 'office!Office.AddinCommands.Event:interface'
+              - name: EventCompletedOptions
+                uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
+              - name: Source
+                uid: 'office!Office.AddinCommands.Source:interface'
           - name: OfficeExtension
+            uid: 'office!OfficeExtension:namespace'
             items:
               - name: ClientObject
                 uid: 'office!OfficeExtension.ClientObject:class'

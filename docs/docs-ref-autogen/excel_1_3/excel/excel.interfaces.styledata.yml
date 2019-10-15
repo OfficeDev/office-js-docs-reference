@@ -2,9 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.StyleData:interface'
     summary: An interface describing the data returned by calling `style.toJSON()`<!-- -->.
-    name: Excel.Interfaces.StyleData
+    name: StyleData
     fullName: Excel.Interfaces.StyleData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

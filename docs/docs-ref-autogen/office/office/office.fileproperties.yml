@@ -1,10 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'office!Office.FileProperties:interface'
-    name: Office.FileProperties
+    name: FileProperties
     fullName: Office.FileProperties
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:

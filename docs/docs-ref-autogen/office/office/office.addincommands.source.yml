@@ -2,10 +2,11 @@
 items:
   - uid: 'office!Office.AddinCommands.Source:interface'
     summary: Encapsulates source data for add-in events.
-    name: Office.AddinCommands.Source
+    name: Source
     fullName: Office.AddinCommands.Source
     langs:
       - typeScript
+    namespace: 'office!Office.AddinCommands:namespace'
     type: interface
     package: office!
     children:

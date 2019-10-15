@@ -3,10 +3,11 @@ items:
   - uid: 'excel!Excel.CustomFunctionMetadataFormat:enum'
     summary: '\[ [API set: CustomFunctions 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     isPreview: true
-    name: Excel.CustomFunctionMetadataFormat
+    name: CustomFunctionMetadataFormat
     fullName: Excel.CustomFunctionMetadataFormat
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

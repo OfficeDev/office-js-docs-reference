@@ -4,10 +4,11 @@ items:
     summary: >-
       Specifies enumerated values for the `cells` property in the cellFormat parameter of [table formatting
       methods](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!-- -->.
-    name: Office.Table
+    name: Table
     fullName: Office.Table
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: enum
     package: office!
     children:

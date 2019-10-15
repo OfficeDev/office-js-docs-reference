@@ -34,10 +34,11 @@ items:
 
       ```
     isPreview: true
-    name: Office.LocationDetails
+    name: LocationDetails
     fullName: Office.LocationDetails
     langs:
       - typeScript
+    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:
@@ -86,3 +87,4 @@ items:
 references:
   - uid: 'outlook!Office.LocationIdentifier:interface'
     name: LocationIdentifier
+    fullName: Office.LocationIdentifier

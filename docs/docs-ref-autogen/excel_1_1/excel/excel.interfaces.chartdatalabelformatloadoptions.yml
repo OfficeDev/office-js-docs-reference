@@ -5,10 +5,11 @@ items:
       Encapsulates the format properties for the chart data labels.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartDataLabelFormatLoadOptions
+    name: ChartDataLabelFormatLoadOptions
     fullName: Excel.Interfaces.ChartDataLabelFormatLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -45,4 +46,5 @@ items:
           - 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
-    name: Excel.Interfaces.ChartFontLoadOptions
+    name: ChartFontLoadOptions
+    fullName: Excel.Interfaces.ChartFontLoadOptions

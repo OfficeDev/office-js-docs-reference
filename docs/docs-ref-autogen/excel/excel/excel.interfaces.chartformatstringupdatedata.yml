@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the ChartFormatString object, for use in `chartFormatString.set({ ... })`<!--
       -->.
-    name: Excel.Interfaces.ChartFormatStringUpdateData
+    name: ChartFormatStringUpdateData
     fullName: Excel.Interfaces.ChartFormatStringUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -29,4 +30,5 @@ items:
           - 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
-    name: Excel.Interfaces.ChartFontUpdateData
+    name: ChartFontUpdateData
+    fullName: Excel.Interfaces.ChartFontUpdateData

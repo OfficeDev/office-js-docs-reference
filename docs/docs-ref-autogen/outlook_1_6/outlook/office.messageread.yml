@@ -9,14 +9,22 @@ items:
       treat this as a mode of Office.context.mailbox.item. Refer to the [Object
       Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox.item)
       page for more information.
-    name: Office.MessageRead
+    name: MessageRead
     fullName: Office.MessageRead
     langs:
       - typeScript
+    namespace: 'outlook!Office:namespace'
     type: interface
     extends:
       - 'outlook!Office.Message:interface'
       - 'outlook!Office.ItemRead:interface'
+    inheritance:
+      - type: 'outlook!Office.Message:interface'
+        inheritance:
+          - type: 'outlook!Office.Item:interface'
+      - type: 'outlook!Office.ItemRead:interface'
+        inheritance:
+          - type: 'outlook!Office.Item:interface'
     package: outlook!
     children:
       - 'outlook!Office.MessageRead#attachments:member'
@@ -1531,8 +1539,13 @@ items:
 references:
   - uid: 'outlook!Office.Message:interface'
     name: Message
+    fullName: Office.Message
   - uid: 'outlook!Office.ItemRead:interface'
     name: ItemRead
+    fullName: Office.ItemRead
+  - uid: 'outlook!Office.Item:interface'
+    name: Item
+    fullName: Office.Item
   - uid: 'outlook!Office.MessageRead#attachments~0:complex'
     name: 'AttachmentDetails[]'
     fullName: 'Office.AttachmentDetails[]'
@@ -1544,6 +1557,7 @@ references:
         fullName: '[]'
   - uid: 'outlook!Office.Body:interface'
     name: Body
+    fullName: Office.Body
   - uid: 'outlook!Office.MessageRead#cc~0:complex'
     name: 'EmailAddressDetails[]'
     fullName: 'Office.EmailAddressDetails[]'
@@ -1597,8 +1611,10 @@ references:
         fullName: <void>) => void
   - uid: 'outlook!Office.EmailAddressDetails:interface'
     name: EmailAddressDetails
+    fullName: Office.EmailAddressDetails
   - uid: 'outlook!Office.Entities:interface'
     name: Entities
+    fullName: Office.Entities
   - uid: 'outlook!Office.MessageRead#getEntitiesByType~0:complex'
     name: '(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[]'
     fullName: '(string | Office.Contact | Office.MeetingSuggestion | Office.PhoneNumber | Office.TaskSuggestion)[]'
@@ -1687,6 +1703,7 @@ references:
         fullName: '>) => void'
   - uid: 'outlook!Office.NotificationMessages:interface'
     name: NotificationMessages
+    fullName: Office.NotificationMessages
   - uid: 'outlook!Office.MessageRead#to~0:complex'
     name: 'EmailAddressDetails[]'
     fullName: 'Office.EmailAddressDetails[]'

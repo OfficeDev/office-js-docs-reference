@@ -5,10 +5,11 @@ items:
       Represents a series in a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartSeriesLoadOptions
+    name: ChartSeriesLoadOptions
     fullName: Excel.Interfaces.ChartSeriesLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -273,6 +274,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartSeriesFormatLoadOptions
+    name: ChartSeriesFormatLoadOptions
+    fullName: Excel.Interfaces.ChartSeriesFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface'
-    name: Excel.Interfaces.ChartPointsCollectionLoadOptions
+    name: ChartPointsCollectionLoadOptions
+    fullName: Excel.Interfaces.ChartPointsCollectionLoadOptions

@@ -20,10 +20,11 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
-    name: Office.Mailbox
+    name: Mailbox
     fullName: Office.Mailbox
     langs:
       - typeScript
+    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:
@@ -902,6 +903,7 @@ references:
         fullName: ' | string'
   - uid: 'outlook!Office.LocalClientTime:interface'
     name: LocalClientTime
+    fullName: Office.LocalClientTime
   - uid: '!Date:interface'
     name: Date
   - uid: 'outlook!Office.Mailbox#convertToRestId~0:complex'
@@ -915,8 +917,10 @@ references:
         fullName: ' | string'
   - uid: 'outlook!Office.Diagnostics:interface'
     name: Diagnostics
+    fullName: Office.Diagnostics
   - uid: 'outlook!Office.AppointmentForm:interface'
     name: AppointmentForm
+    fullName: Office.AppointmentForm
   - uid: 'outlook!Office.Mailbox#getCallbackTokenAsync~0:complex'
     name: '(asyncResult: Office.AsyncResult<string>) => void'
     fullName: '(asyncResult: Office.AsyncResult<string>) => void'
@@ -991,3 +995,4 @@ references:
         fullName: <string>) => void
   - uid: 'outlook!Office.UserProfile:interface'
     name: UserProfile
+    fullName: Office.UserProfile

@@ -5,10 +5,11 @@ items:
       A container for the NoteTag in a paragraph.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Interfaces.NoteTagLoadOptions
+    name: NoteTagLoadOptions
     fullName: OneNote.Interfaces.NoteTagLoadOptions
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:

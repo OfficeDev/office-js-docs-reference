@@ -5,10 +5,11 @@ items:
       Specifies the unit of time for chart axes and data series.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartAxisTimeUnit
+    name: ChartAxisTimeUnit
     fullName: Excel.ChartAxisTimeUnit
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

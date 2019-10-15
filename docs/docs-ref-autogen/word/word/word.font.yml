@@ -5,13 +5,16 @@ items:
       Represents a font.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.Font
+    name: Font
     fullName: Word.Font
     langs:
       - typeScript
+    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.Font#bold:member'
@@ -636,16 +639,21 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.Font:class'
-    name: Word.Font
+    name: Font
+    fullName: Word.Font
   - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
-    name: Word.Interfaces.FontLoadOptions
+    name: FontLoadOptions
+    fullName: Word.Interfaces.FontLoadOptions
   - uid: 'word!Word.Interfaces.FontUpdateData:interface'
-    name: Interfaces.FontUpdateData
+    name: FontUpdateData
+    fullName: Word.Interfaces.FontUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.FontData:interface'
-    name: Word.Interfaces.FontData
+    name: FontData
+    fullName: Word.Interfaces.FontData
   - uid: 'word!Word.Font#underline~0:complex'
     name: >-
       Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" |

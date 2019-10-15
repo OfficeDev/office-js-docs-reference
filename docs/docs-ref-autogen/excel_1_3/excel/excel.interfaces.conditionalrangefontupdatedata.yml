@@ -4,9 +4,10 @@ items:
     summary: >-
       An interface for updating data on the ConditionalRangeFont object, for use in `conditionalRangeFont.set({ ...
       })`<!-- -->.
-    name: Excel.Interfaces.ConditionalRangeFontUpdateData
+    name: ConditionalRangeFontUpdateData
     fullName: Excel.Interfaces.ConditionalRangeFontUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

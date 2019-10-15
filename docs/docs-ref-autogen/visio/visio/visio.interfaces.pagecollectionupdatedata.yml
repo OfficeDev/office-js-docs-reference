@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the PageCollection object, for use in "pageCollection.set(<!-- -->{ ... }<!--
       -->)".
-    name: Visio.Interfaces.PageCollectionUpdateData
+    name: PageCollectionUpdateData
     fullName: Visio.Interfaces.PageCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:

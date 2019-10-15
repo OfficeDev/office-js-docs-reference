@@ -2,10 +2,11 @@
 items:
   - uid: 'office!Office.Slice:interface'
     summary: Represents a slice of a document file. The Slice object is accessed with the `File.getSliceAsync` method.
-    name: Office.Slice
+    name: Slice
     fullName: Office.Slice
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:

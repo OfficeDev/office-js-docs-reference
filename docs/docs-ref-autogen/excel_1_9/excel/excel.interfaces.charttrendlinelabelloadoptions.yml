@@ -5,10 +5,11 @@ items:
       This object represents the attributes for a chart trendline lable object.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartTrendlineLabelLoadOptions
+    name: ChartTrendlineLabelLoadOptions
     fullName: Excel.Interfaces.ChartTrendlineLabelLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -253,4 +254,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions
+    name: ChartTrendlineLabelFormatLoadOptions
+    fullName: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions

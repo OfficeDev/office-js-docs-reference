@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the CustomPropertyCollection object, for use in
       "customPropertyCollection.set(<!-- -->{ ... }<!-- -->)".
-    name: Word.Interfaces.CustomPropertyCollectionUpdateData
+    name: CustomPropertyCollectionUpdateData
     fullName: Word.Interfaces.CustomPropertyCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
