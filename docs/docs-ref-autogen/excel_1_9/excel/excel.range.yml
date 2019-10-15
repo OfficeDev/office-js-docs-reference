@@ -147,18 +147,23 @@ items:
           - string
   - uid: 'excel!Excel.Range#autoFill:member(1)'
     summary: >-
-      Fills range from the current range to the destination range. The destination range must extend the source either
-      horizontally or vertically. Discontiguous ranges are not supported.
+      Fills range from the current range to the destination range using the specified AutoFill logic. The destination
+      range can be null, or can extend the source either horizontally or vertically. If the destination range is null,
+      data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill
+      handle). For more information, read [Use AutoFill and Flash
+      Fill](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!--
+      -->.
 
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`<!--
+      -->](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'autoFill(destinationRange, autoFillType)'
     fullName: 'autoFill(destinationRange, autoFillType)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'autoFill(destinationRange: Range | string, autoFillType?: Excel.AutoFillType): void;'
+      content: 'autoFill(destinationRange?: Range | string, autoFillType?: Excel.AutoFillType): void;'
       return:
         type:
           - void
@@ -180,7 +185,7 @@ items:
           ```
       parameters:
         - id: destinationRange
-          description: The destination range to autofill.
+          description: The destination range to autofill. Discontiguous ranges are not supported.
           type:
             - 'excel!Excel.Range#autoFill~0:complex'
         - id: autoFillType
@@ -191,11 +196,16 @@ items:
             - 'excel!Excel.AutoFillType:enum'
   - uid: 'excel!Excel.Range#autoFill:member(2)'
     summary: >-
-      Fills range from the current range to the destination range. The destination range must extend the source either
-      horizontally or vertically. Discontiguous ranges are not supported.
+      Fills range from the current range to the destination range using the specified AutoFill logic. The destination
+      range can be null, or can extend the source either horizontally or vertically. If the destination range is null,
+      data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill
+      handle). For more information, read [Use AutoFill and Flash
+      Fill](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!--
+      -->.
 
 
-      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`<!--
+      -->](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'autoFill(destinationRange, autoFillTypeString)'
     fullName: 'autoFill(destinationRange, autoFillTypeString)'
     langs:
@@ -203,7 +213,7 @@ items:
     type: method
     syntax:
       content: >-
-        autoFill(destinationRange: Range | string, autoFillTypeString?: "FillDefault" | "FillCopy" | "FillSeries" |
+        autoFill(destinationRange?: Range | string, autoFillTypeString?: "FillDefault" | "FillCopy" | "FillSeries" |
         "FillFormats" | "FillValues" | "FillDays" | "FillWeekdays" | "FillMonths" | "FillYears" | "LinearTrend" |
         "GrowthTrend" | "FlashFill"): void;
       return:
@@ -212,7 +222,7 @@ items:
         description: ''
       parameters:
         - id: destinationRange
-          description: The destination range to autofill.
+          description: The destination range to autofill. Discontiguous ranges are not supported.
           type:
             - 'excel!Excel.Range#autoFill~1:complex'
         - id: autoFillTypeString

@@ -16364,6 +16364,27 @@
                 },
                 {
                   "kind": "EnumMember",
+                  "canonicalReference": "excel!Excel.ErrorCodes.requestAborted:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "requestAborted = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"RequestAborted\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "requestAborted",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
                   "canonicalReference": "excel!Excel.ErrorCodes.unsupportedOperation:member",
                   "docComment": "",
                   "excerptTokens": [
