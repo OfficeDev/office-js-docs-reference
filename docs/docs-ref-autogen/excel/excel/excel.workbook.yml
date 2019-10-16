@@ -183,7 +183,6 @@ items:
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: close(closeBehaviorString)
     fullName: close(closeBehaviorString)
     langs:
@@ -778,7 +777,6 @@ items:
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: save(saveBehaviorString)
     fullName: save(saveBehaviorString)
     langs:

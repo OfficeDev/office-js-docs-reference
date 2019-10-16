@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.4.2",
+    "toolVersion": "7.5.0",
     "schemaVersion": 1003,
     "oldestForwardsCompatibleVersion": 1001
   },
@@ -16357,6 +16357,27 @@
                   ],
                   "releaseTag": "Public",
                   "name": "rangeExceedsLimit",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "excel!Excel.ErrorCodes.requestAborted:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "requestAborted = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"RequestAborted\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "requestAborted",
                   "initializerTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2

@@ -218,7 +218,7 @@ export declare namespace Excel {
         constructor(url?: string | Session);
         readonly workbook: Workbook;
         readonly application: Application;
-        /** [Api set: ExcelApi 1.5] **/
+        /** [Api set: ExcelApi 1.5] */
 		readonly runtime: Runtime;
     }
     export interface RunOptions extends OfficeExtension.RunOptions<Session> {
@@ -15967,6 +15967,7 @@ export declare namespace Excel {
         nonBlankCellOffSheet = "NonBlankCellOffSheet",
         notImplemented = "NotImplemented",
         rangeExceedsLimit = "RangeExceedsLimit",
+        requestAborted = "RequestAborted",
         unsupportedOperation = "UnsupportedOperation",
         invalidOperationInCellEditMode = "InvalidOperationInCellEditMode"
     }

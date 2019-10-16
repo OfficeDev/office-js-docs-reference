@@ -164,7 +164,6 @@ items:
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: 'addFromBase64(base64File, sheetNamesToInsert, positionTypeString, relativeTo)'
     fullName: 'addFromBase64(base64File, sheetNamesToInsert, positionTypeString, relativeTo)'
     langs:

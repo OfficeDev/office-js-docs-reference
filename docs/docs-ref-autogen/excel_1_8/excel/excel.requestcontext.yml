@@ -44,7 +44,7 @@ items:
         type:
           - 'excel!Excel.Application:class'
   - uid: 'excel!Excel.RequestContext#runtime:member'
-    summary: '\[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \] *'
+    summary: '\[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: runtime
     fullName: runtime
     langs:
