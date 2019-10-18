@@ -143,7 +143,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.Worksheet#copy:member(1)'
     summary: |-
-      Copy a worksheet and place it at the specified position. Return the copied worksheet.
+      Copies a worksheet and places it at the specified position.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'copy(positionType, relativeTo)'
@@ -157,7 +157,7 @@ items:
         type:
           - 'excel!Excel.Worksheet:class'
         description: |-
-
+          The newly created worksheet.
 
           #### Examples
 
@@ -178,16 +178,20 @@ items:
           ```
       parameters:
         - id: positionType
-          description: Optional.
+          description: >-
+            The location in the workbook to place the newly created worksheet. The default value is "None", which
+            inserts the worksheet at the beginning of the worksheet.
           type:
             - 'excel!Excel.WorksheetPositionType:enum'
         - id: relativeTo
-          description: Optional.
+          description: >-
+            The existing worksheet which determines the newly created worksheet's position. This is only needed if
+            `positionType` is "Before" or "After".
           type:
             - 'excel!Excel.Worksheet:class'
   - uid: 'excel!Excel.Worksheet#copy:member(2)'
     summary: |-
-      Copy a worksheet and place it at the specified position. Return the copied worksheet.
+      Copies a worksheet and places it at the specified position.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'copy(positionTypeString, relativeTo)'
@@ -202,14 +206,18 @@ items:
       return:
         type:
           - 'excel!Excel.Worksheet:class'
-        description: ''
+        description: The newly created worksheet.
       parameters:
         - id: positionTypeString
-          description: Optional.
+          description: >-
+            The location in the workbook to place the newly created worksheet. The default value is "None", which
+            inserts the worksheet at the beginning of the worksheet.
           type:
             - '"None" | "Before" | "After" | "Beginning" | "End"'
         - id: relativeTo
-          description: Optional.
+          description: >-
+            The existing worksheet which determines the newly created worksheet's position. This is only needed if
+            `positionType` is "Before" or "After".
           type:
             - 'excel!Excel.Worksheet:class'
   - uid: 'excel!Excel.Worksheet#delete:member(1)'
