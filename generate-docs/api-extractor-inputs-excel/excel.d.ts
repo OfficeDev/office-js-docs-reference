@@ -761,6 +761,39 @@ export declare namespace Excel {
     export function getDataCommonPostprocess(response: any, callArgs: any): any;
     /**
      *
+     * Represents the dimensions when getting values from chart series.
+     *
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ChartSeriesDimension {
+        /**
+         *
+         * The chart series axis for the categories.
+         *
+         */
+        categories = "Categories",
+        /**
+         *
+         * The chart series axis for the values.
+         *
+         */
+        values = "Values",
+        /**
+         *
+         * The chart series axis for the x-axis values in scatter and bubble charts.
+         *
+         */
+        xvalues = "XValues",
+        /**
+         *
+         * The chart series axis for the y-axis values in scatter and bubble charts.
+         *
+         */
+        yvalues = "YValues"
+    }
+    /**
+     *
      * Provides information about the binding that raised the SelectionChanged event.
      *
      * [Api set: ExcelApi 1.2]
@@ -2707,22 +2740,24 @@ export declare namespace Excel {
         calculate(markAllDirty: boolean): void;
         /**
          *
-         * Copy a worksheet and place it at the specified position. Return the copied worksheet.
+         * Copies a worksheet and places it at the specified position. 
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param positionType - Optional.
-         * @param relativeTo - Optional.
+         * @param positionType - The location in the workbook to place the newly created worksheet. The default value is "None", which inserts the worksheet at the beginning of the worksheet.
+         * @param relativeTo - The existing worksheet which determines the newly created worksheet's position. This is only needed if `positionType` is "Before" or "After".
+         * @returns The newly created worksheet.
          */
         copy(positionType?: Excel.WorksheetPositionType, relativeTo?: Excel.Worksheet): Excel.Worksheet;
         /**
          *
-         * Copy a worksheet and place it at the specified position. Return the copied worksheet.
+         * Copies a worksheet and places it at the specified position. 
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param positionTypeString - Optional.
-         * @param relativeTo - Optional.
+         * @param positionTypeString - The location in the workbook to place the newly created worksheet. The default value is "None", which inserts the worksheet at the beginning of the worksheet.
+         * @param relativeTo - The existing worksheet which determines the newly created worksheet's position. This is only needed if `positionType` is "Before" or "After".
+         * @returns The newly created worksheet.
          */
         copy(positionTypeString?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Excel.Worksheet): Excel.Worksheet;
         /**
@@ -2995,7 +3030,7 @@ export declare namespace Excel {
          * Occurs when left-clicked/tapped operation happens in the worksheet. This event will not be fired when clicking in the following cases:
          * 
                     - The user drags the mouse for multi-selection.
-
+           
                     - The user selects a cell in the mode when cell arguments are selected for formula references.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -3787,29 +3822,29 @@ export declare namespace Excel {
         /**
          *
          * Fills range from the current range to the destination range using the specified AutoFill logic.
-The destination range can be null, or can extend the source either horizontally or vertically.
-Discontiguous ranges are not supported.
-For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
+            The destination range can be null, or can extend the source either horizontally or vertically.
+            Discontiguous ranges are not supported.
+            For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * [Api set: ExcelApi 1.9, ExcelApi BETA (PREVIEW ONLY) for null `destinationRange`]
          *
          * @param destinationRange - The destination range to autofill. If the destination range is null, data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill handle). 
          * @param autoFillType - The type of autofill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
          */
-        autoFill(destinationRange: Range | string, autoFillType?: Excel.AutoFillType): void;
+        autoFill(destinationRange?: Range | string, autoFillType?: Excel.AutoFillType): void;
         /**
          *
          * Fills range from the current range to the destination range using the specified AutoFill logic.
-The destination range can be null, or can extend the source either horizontally or vertically. 
-Discontiguous ranges are not supported.
-For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
+            The destination range can be null, or can extend the source either horizontally or vertically.
+            Discontiguous ranges are not supported.
+            For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * [Api set: ExcelApi 1.9, ExcelApi BETA (PREVIEW ONLY) for null `destinationRange`]
          *
          * @param destinationRange - The destination range to autofill. If the destination range is null, data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill handle). 
          * @param autoFillTypeString - The type of autofill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
          */
-        autoFill(destinationRange: Range | string, autoFillTypeString?: "FillDefault" | "FillCopy" | "FillSeries" | "FillFormats" | "FillValues" | "FillDays" | "FillWeekdays" | "FillMonths" | "FillYears" | "LinearTrend" | "GrowthTrend" | "FlashFill"): void;
+        autoFill(destinationRange?: Range | string, autoFillTypeString?: "FillDefault" | "FillCopy" | "FillSeries" | "FillFormats" | "FillValues" | "FillDays" | "FillWeekdays" | "FillMonths" | "FillYears" | "LinearTrend" | "GrowthTrend" | "FlashFill"): void;
         /**
          *
          * Calculates a range of cells on a worksheet.
@@ -9054,6 +9089,25 @@ For more information, read {@link https://support.office.com/article/video-use-a
          * [Api set: ExcelApi 1.7]
          */
         delete(): void;
+        /**
+         *
+         * Gets the values from a single dimension of the chart series. These could be either category values or data values, depending on the dimension specified and how the data is mapped for the chart series.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param dimension - the dimension of axis where the data from
+         */
+        getDimensionValues(dimension: Excel.ChartSeriesDimension): OfficeExtension.ClientResult<string[]>;
+        /**
+         *
+         * Gets the values from a single dimension of the chart series. These could be either category values or data values, depending on the dimension specified and how the data is mapped for the chart series.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         *
+         * @param dimensionString - the dimension of axis where the data from
+         */
+        getDimensionValues(dimensionString: "Categories" | "Values" | "XValues" | "YValues"): OfficeExtension.ClientResult<string[]>;
         /**
          *
          * Set bubble sizes for a chart series. Only works for bubble charts.
@@ -27890,6 +27944,7 @@ For more information, read {@link https://support.office.com/article/video-use-a
         nonBlankCellOffSheet = "NonBlankCellOffSheet",
         notImplemented = "NotImplemented",
         rangeExceedsLimit = "RangeExceedsLimit",
+        requestAborted = "RequestAborted",
         unsupportedOperation = "UnsupportedOperation",
         invalidOperationInCellEditMode = "InvalidOperationInCellEditMode"
     }

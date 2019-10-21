@@ -1,0 +1,57 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartSeriesDimension:enum'
+    summary: >-
+      Represents the dimensions when getting values from chart series.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.ChartSeriesDimension
+    fullName: Excel.ChartSeriesDimension
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.ChartSeriesDimension.categories:member'
+      - 'excel!Excel.ChartSeriesDimension.values:member'
+      - 'excel!Excel.ChartSeriesDimension.xvalues:member'
+      - 'excel!Excel.ChartSeriesDimension.yvalues:member'
+  - uid: 'excel!Excel.ChartSeriesDimension.categories:member'
+    summary: The chart series axis for the categories.
+    isPreview: true
+    name: categories
+    fullName: categories
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Categories"'
+  - uid: 'excel!Excel.ChartSeriesDimension.values:member'
+    summary: The chart series axis for the values.
+    isPreview: true
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Values"'
+  - uid: 'excel!Excel.ChartSeriesDimension.xvalues:member'
+    summary: The chart series axis for the x-axis values in scatter and bubble charts.
+    isPreview: true
+    name: xvalues
+    fullName: xvalues
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"XValues"'
+  - uid: 'excel!Excel.ChartSeriesDimension.yvalues:member'
+    summary: The chart series axis for the y-axis values in scatter and bubble charts.
+    isPreview: true
+    name: yvalues
+    fullName: yvalues
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"YValues"'
