@@ -14,13 +14,10 @@ items:
       - 'excel!Excel.Interfaces.SlicerItemData#key:member'
       - 'excel!Excel.Interfaces.SlicerItemData#name:member'
   - uid: 'excel!Excel.Interfaces.SlicerItemData#hasData:member'
-    summary: >-
+    summary: |-
       True if the slicer item has data.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hasData
     fullName: hasData
     langs:
@@ -37,9 +34,7 @@ items:
       default, if the slicer item is the only one selected, when it is deselected, all items will be selected.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isSelected
     fullName: isSelected
     langs:
@@ -51,13 +46,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.SlicerItemData#key:member'
-    summary: >-
+    summary: |-
       Represents the unique value representing the slicer item.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: key
     fullName: key
     langs:
@@ -69,13 +61,10 @@ items:
         type:
           - string
   - uid: 'excel!Excel.Interfaces.SlicerItemData#name:member'
-    summary: >-
+    summary: |-
       Represents the title displayed in the UI.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:

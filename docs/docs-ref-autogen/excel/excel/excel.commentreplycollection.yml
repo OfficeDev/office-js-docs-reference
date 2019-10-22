@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.CommentReplyCollection:class'
-    summary: >-
+    summary: |-
       Represents a collection of comment reply objects that are part of the comment.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CommentReplyCollection
     fullName: Excel.CommentReplyCollection
     langs:
@@ -29,13 +26,10 @@ items:
       - 'excel!Excel.CommentReplyCollection#load:member(3)'
       - 'excel!Excel.CommentReplyCollection#toJSON:member(1)'
   - uid: 'excel!Excel.CommentReplyCollection#add:member(1)'
-    summary: >-
+    summary: |-
       Creates a comment reply for comment.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(content, contentType)'
     fullName: 'add(content, contentType)'
     langs:
@@ -64,8 +58,7 @@ items:
         - id: content
           description: >-
             The comment's content. This can be either a string or Interface CommentRichContent (e.g. for comments with
-            mentions). \[Api set: ExcelApi BETA (PREVIEW ONLY) for string, ExcelApi Preview for CommentRichContent
-            object\]
+            mentions). \[Api set: ExcelApi 1.10 for string, ExcelApi Preview for CommentRichContent object\]
           type:
             - 'excel!Excel.CommentReplyCollection#add~0:complex'
         - id: contentType
@@ -75,13 +68,10 @@ items:
           type:
             - 'excel!Excel.ContentType:enum'
   - uid: 'excel!Excel.CommentReplyCollection#add:member(2)'
-    summary: >-
+    summary: |-
       Creates a comment reply for comment.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(content, contentTypeString)'
     fullName: 'add(content, contentTypeString)'
     langs:
@@ -97,8 +87,7 @@ items:
         - id: content
           description: >-
             The comment's content. This can be either a string or Interface CommentRichContent (e.g. for comments with
-            mentions). \[Api set: ExcelApi BETA (PREVIEW ONLY) for string, ExcelApi Preview for CommentRichContent
-            object\]
+            mentions). \[Api set: ExcelApi 1.10 for string, ExcelApi Preview for CommentRichContent object\]
           type:
             - 'excel!Excel.CommentReplyCollection#add~1:complex'
         - id: contentTypeString
@@ -111,7 +100,6 @@ items:
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
-    isPreview: true
     name: context
     fullName: context
     langs:
@@ -123,13 +111,10 @@ items:
         type:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.CommentReplyCollection#getCount:member(1)'
-    summary: >-
+    summary: |-
       Gets the number of comment replies in the collection.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount()
     langs:
@@ -142,13 +127,10 @@ items:
           - 'excel!Excel.CommentReplyCollection#getCount~0:complex'
         description: ''
   - uid: 'excel!Excel.CommentReplyCollection#getItem:member(1)'
-    summary: >-
+    summary: |-
       Returns a comment reply identified by its ID. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(commentReplyId)
     fullName: getItem(commentReplyId)
     langs:
@@ -166,13 +148,10 @@ items:
           type:
             - string
   - uid: 'excel!Excel.CommentReplyCollection#getItemAt:member(1)'
-    summary: >-
+    summary: |-
       Gets a comment reply based on its position in the collection.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt(index)
     langs:
@@ -191,7 +170,6 @@ items:
             - number
   - uid: 'excel!Excel.CommentReplyCollection#items:member'
     summary: Gets the loaded child items in this collection.
-    isPreview: true
     name: items
     fullName: items
     langs:
@@ -206,7 +184,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(options)
     fullName: load(options)
     langs:
@@ -229,7 +206,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNames)
     fullName: load(propertyNames)
     langs:
@@ -250,7 +226,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNamesAndPaths)
     fullName: load(propertyNamesAndPaths)
     langs:
@@ -276,7 +251,6 @@ items:
       passed to it.) Whereas the original `Excel.CommentReplyCollection` object is an API object, the `toJSON` method
       returns a plain JavaScript object (typed as `Excel.Interfaces.CommentReplyCollectionData`<!-- -->) that contains
       an "items" array with shallow copies of any loaded properties from the collection's items.
-    isPreview: true
     name: toJSON()
     fullName: toJSON()
     langs:

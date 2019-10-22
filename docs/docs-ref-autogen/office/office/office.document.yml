@@ -3499,6 +3499,16 @@ items:
       original aspect ratio.</td> </tr> </table>
 
 
+      **Type-specific behaviors**
+
+
+      <table> <tr> <td>`Office.CoercionType.XmlSvg`</td> <td>There is a 64KB size limitation for SVG insertions.</td>
+      </tr> </table>
+
+
+      **Hosts**
+
+
       The possible values for the [Office.CoercionType](xref:office!Office.CoercionType:enum) parameter vary by the
       host.
 
@@ -3820,6 +3830,16 @@ items:
       Image aspect ratio will be locked unless both imageWidth and imageHeight parameters are provided. If only one of
       the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the
       original aspect ratio.</td> </tr> </table>
+
+
+      **Type-specific behaviors**
+
+
+      <table> <tr> <td>`Office.CoercionType.XmlSvg`</td> <td>There is a 64KB size limitation for SVG insertions.</td>
+      </tr> </table>
+
+
+      **Hosts**
 
 
       The possible values for the [Office.CoercionType](xref:office!Office.CoercionType:enum) parameter vary by the

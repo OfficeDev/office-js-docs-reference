@@ -163,7 +163,7 @@ items:
             - boolean
   - uid: 'excel!Excel.Worksheet#charts:member'
     summary: |-
-      Returns collection of charts that are part of the worksheet. Read-only.
+      Returns a collection of charts that are part of the worksheet. Read-only.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: charts
@@ -177,13 +177,10 @@ items:
         type:
           - 'excel!Excel.ChartCollection:class'
   - uid: 'excel!Excel.Worksheet#comments:member'
-    summary: >-
+    summary: |-
       Returns a collection of all the Comments objects on the worksheet. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: comments
     fullName: comments
     langs:
@@ -1098,13 +1095,10 @@ items:
           });
           ```
   - uid: 'excel!Excel.Worksheet#onColumnSorted:member'
-    summary: >-
+    summary: |-
       Occurs when one or more columns have been sorted. This happens as the result of a left-to-right sort operation.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onColumnSorted
     fullName: onColumnSorted
     langs:
@@ -1226,13 +1220,10 @@ items:
         type:
           - 'excel!Excel.Worksheet#onRowHiddenChanged~0:complex'
   - uid: 'excel!Excel.Worksheet#onRowSorted:member'
-    summary: >-
+    summary: |-
       Occurs when one or more rows have been sorted. This happens as the result of a top-to-bottom sort operation.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onRowSorted
     fullName: onRowSorted
     langs:
@@ -1304,7 +1295,7 @@ items:
           ```
   - uid: 'excel!Excel.Worksheet#onSingleClicked:member'
     summary: >-
-      Occurs when left-clicked/tapped operation happens in the worksheet. This event will not be fired when clicking in
+      Occurs when a left-clicked/tapped action happens in the worksheet. This event will not be fired when clicking in
       the following cases:
 
 
@@ -1314,9 +1305,7 @@ items:
       - The user selects a cell in the mode when cell arguments are selected for formula references.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onSingleClicked
     fullName: onSingleClicked
     langs:
@@ -1552,9 +1541,7 @@ items:
       than the current number of levels displays all the levels.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'showOutlineLevels(rowLevels, columnLevels)'
     fullName: 'showOutlineLevels(rowLevels, columnLevels)'
     langs:
@@ -1598,13 +1585,10 @@ items:
           type:
             - number
   - uid: 'excel!Excel.Worksheet#slicers:member'
-    summary: >-
-      Returns collection of slicers that are part of the worksheet. Read-only.
+    summary: |-
+      Returns a collection of slicers that are part of the worksheet. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: slicers
     fullName: slicers
     langs:

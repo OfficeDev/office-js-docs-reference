@@ -40191,11 +40191,11 @@
             {
               "kind": "Class",
               "canonicalReference": "excel!Excel.Session:class",
-              "docComment": "",
+              "docComment": "/**\n * Provides connection session for a remote workbook.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    \n    \n    /**\n     * Provides connection session for a remote workbook.\n     */\n    export class Session "
+                  "text": "export class Session "
                 }
               ],
               "releaseTag": "Public",

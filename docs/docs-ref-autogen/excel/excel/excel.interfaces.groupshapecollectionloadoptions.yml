@@ -325,13 +325,10 @@ items:
         type:
           - 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#placement:member'
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Represents how the object is attached to the cells below it.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: placement
     fullName: placement
     langs:

@@ -195,30 +195,27 @@ items:
           type:
             - 'string | string[]'
   - uid: 'visio!Visio.Page#load:member(3)'
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
     langs:
       - typeScript
     type: method
     syntax:
-      content: |-
-        load(option?: {
-                    select?: string;
-                    expand?: string;
-                }): Visio.Page;
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Page;'
       return:
         type:
           - 'visio!Visio.Page:class'
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
+            - '{ select?: string; expand?: string; }'
   - uid: 'visio!Visio.Page#name:member'
     summary: |-
       Page name. Read-only.

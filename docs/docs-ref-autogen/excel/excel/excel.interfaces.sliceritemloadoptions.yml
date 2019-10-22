@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.SlicerItemLoadOptions:interface'
-    summary: >-
+    summary: |-
       Represents a slicer item in a slicer.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.SlicerItemLoadOptions
     fullName: Excel.Interfaces.SlicerItemLoadOptions
     langs:
@@ -24,7 +21,6 @@ items:
     summary: >-
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    isPreview: true
     name: $all
     fullName: $all
     langs:
@@ -36,13 +32,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.SlicerItemLoadOptions#hasData:member'
-    summary: >-
+    summary: |-
       True if the slicer item has data.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hasData
     fullName: hasData
     langs:
@@ -59,9 +52,7 @@ items:
       default, if the slicer item is the only one selected, when it is deselected, all items will be selected.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isSelected
     fullName: isSelected
     langs:
@@ -73,13 +64,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.SlicerItemLoadOptions#key:member'
-    summary: >-
+    summary: |-
       Represents the unique value representing the slicer item.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: key
     fullName: key
     langs:
@@ -91,13 +79,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.SlicerItemLoadOptions#name:member'
-    summary: >-
+    summary: |-
       Represents the title displayed in the UI.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:

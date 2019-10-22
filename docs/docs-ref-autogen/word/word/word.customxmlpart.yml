@@ -310,31 +310,28 @@ items:
           type:
             - 'string | string[]'
   - uid: 'word!Word.CustomXmlPart#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     isPreview: true
-    name: load(option)
-    fullName: load(option)
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
     langs:
       - typeScript
     type: method
     syntax:
-      content: |-
-        load(option?: {
-                    select?: string;
-                    expand?: string;
-                }): Word.CustomXmlPart;
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.CustomXmlPart;'
       return:
         type:
           - 'word!Word.CustomXmlPart:class'
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
+            - '{ select?: string; expand?: string; }'
   - uid: 'word!Word.CustomXmlPart#namespaceUri:member'
     summary: >-
       Gets the namespace URI of the custom XML part. Read only.

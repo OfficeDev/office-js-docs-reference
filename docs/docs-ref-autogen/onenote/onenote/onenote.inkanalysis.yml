@@ -139,30 +139,27 @@ items:
           type:
             - 'string | string[]'
   - uid: 'onenote!OneNote.InkAnalysis#load:member(3)'
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
     langs:
       - typeScript
     type: method
     syntax:
-      content: |-
-        load(option?: {
-                    select?: string;
-                    expand?: string;
-                }): OneNote.InkAnalysis;
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.InkAnalysis;'
       return:
         type:
           - 'onenote!OneNote.InkAnalysis:class'
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
+            - '{ select?: string; expand?: string; }'
   - uid: 'onenote!OneNote.InkAnalysis#page:member'
     summary: |-
       Gets the parent page object. Read-only.

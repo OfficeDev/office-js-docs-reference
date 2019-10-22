@@ -1,10 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.GroupOption:enum'
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    summary: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.GroupOption
     fullName: Excel.GroupOption
     langs:
@@ -16,7 +13,6 @@ items:
       - 'excel!Excel.GroupOption.byRows:member'
   - uid: 'excel!Excel.GroupOption.byColumns:member'
     summary: Group by columns.
-    isPreview: true
     name: byColumns
     fullName: byColumns
     langs:
@@ -25,7 +21,6 @@ items:
     numericValue: '"ByColumns"'
   - uid: 'excel!Excel.GroupOption.byRows:member'
     summary: Group by rows.
-    isPreview: true
     name: byRows
     fullName: byRows
     langs:

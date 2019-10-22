@@ -1,10 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.ContentType:enum'
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    summary: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ContentType
     fullName: Excel.ContentType
     langs:
@@ -16,7 +13,6 @@ items:
       - 'excel!Excel.ContentType.plain:member'
   - uid: 'excel!Excel.ContentType.mention:member'
     summary: Comment content containing mentions.
-    isPreview: true
     name: mention
     fullName: mention
     langs:
@@ -25,7 +21,6 @@ items:
     numericValue: '"Mention"'
   - uid: 'excel!Excel.ContentType.plain:member'
     summary: Indicates plain format type of the comment content.
-    isPreview: true
     name: plain
     fullName: plain
     langs:

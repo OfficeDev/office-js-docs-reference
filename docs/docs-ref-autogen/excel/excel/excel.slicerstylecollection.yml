@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.SlicerStyleCollection:class'
-    summary: >-
+    summary: |-
       Represents a collection of SlicerStyle objects.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.SlicerStyleCollection
     fullName: Excel.SlicerStyleCollection
     langs:
@@ -30,13 +27,10 @@ items:
       - 'excel!Excel.SlicerStyleCollection#setDefault:member(1)'
       - 'excel!Excel.SlicerStyleCollection#toJSON:member(1)'
   - uid: 'excel!Excel.SlicerStyleCollection#add:member(1)'
-    summary: >-
+    summary: |-
       Creates a blank SlicerStyle with the specified name.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(name, makeUniqueName)'
     fullName: 'add(name, makeUniqueName)'
     langs:
@@ -63,7 +57,6 @@ items:
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
-    isPreview: true
     name: context
     fullName: context
     langs:
@@ -75,13 +68,10 @@ items:
         type:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.SlicerStyleCollection#getCount:member(1)'
-    summary: >-
+    summary: |-
       Gets the number of slicer styles in the collection.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount()
     langs:
@@ -94,13 +84,10 @@ items:
           - 'excel!Excel.SlicerStyleCollection#getCount~0:complex'
         description: ''
   - uid: 'excel!Excel.SlicerStyleCollection#getDefault:member(1)'
-    summary: >-
+    summary: |-
       Gets the default SlicerStyle for the parent object's scope.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getDefault()
     fullName: getDefault()
     langs:
@@ -113,13 +100,10 @@ items:
           - 'excel!Excel.SlicerStyle:class'
         description: The SlicerStyle object that is the current default SlicerStyle.
   - uid: 'excel!Excel.SlicerStyleCollection#getItem:member(1)'
-    summary: >-
+    summary: |-
       Gets a SlicerStyle by name.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
     fullName: getItem(name)
     langs:
@@ -137,13 +121,10 @@ items:
           type:
             - string
   - uid: 'excel!Excel.SlicerStyleCollection#getItemOrNullObject:member(1)'
-    summary: >-
+    summary: |-
       Gets a SlicerStyle by name. If the SlicerStyle does not exist, will return a null object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
     fullName: getItemOrNullObject(name)
     langs:
@@ -162,7 +143,6 @@ items:
             - string
   - uid: 'excel!Excel.SlicerStyleCollection#items:member'
     summary: Gets the loaded child items in this collection.
-    isPreview: true
     name: items
     fullName: items
     langs:
@@ -177,7 +157,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(options)
     fullName: load(options)
     langs:
@@ -200,7 +179,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNames)
     fullName: load(propertyNames)
     langs:
@@ -221,7 +199,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNamesAndPaths)
     fullName: load(propertyNamesAndPaths)
     langs:
@@ -241,13 +218,10 @@ items:
           type:
             - 'excel!OfficeExtension.LoadOption:interface'
   - uid: 'excel!Excel.SlicerStyleCollection#setDefault:member(1)'
-    summary: >-
+    summary: |-
       Sets the default SlicerStyle for use in the parent object's scope.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setDefault(newDefaultStyle)
     fullName: setDefault(newDefaultStyle)
     langs:
@@ -271,7 +245,6 @@ items:
       passed to it.) Whereas the original `Excel.SlicerStyleCollection` object is an API object, the `toJSON` method
       returns a plain JavaScript object (typed as `Excel.Interfaces.SlicerStyleCollectionData`<!-- -->) that contains an
       "items" array with shallow copies of any loaded properties from the collection's items.
-    isPreview: true
     name: toJSON()
     fullName: toJSON()
     langs:

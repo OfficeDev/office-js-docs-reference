@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.SlicerItem:class'
-    summary: >-
+    summary: |-
       Represents a slicer item in a slicer.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.SlicerItem
     fullName: Excel.SlicerItem
     langs:
@@ -32,7 +29,6 @@ items:
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
-    isPreview: true
     name: context
     fullName: context
     langs:
@@ -44,13 +40,10 @@ items:
         type:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.SlicerItem#hasData:member'
-    summary: >-
+    summary: |-
       True if the slicer item has data.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hasData
     fullName: hasData
     langs:
@@ -67,9 +60,7 @@ items:
       default, if the slicer item is the only one selected, when it is deselected, all items will be selected.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isSelected
     fullName: isSelected
     langs:
@@ -81,13 +72,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.SlicerItem#key:member'
-    summary: >-
+    summary: |-
       Represents the unique value representing the slicer item.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: key
     fullName: key
     langs:
@@ -102,7 +90,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(options)
     fullName: load(options)
     langs:
@@ -123,7 +110,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNames)
     fullName: load(propertyNames)
     langs:
@@ -144,7 +130,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNamesAndPaths)
     fullName: load(propertyNamesAndPaths)
     langs:
@@ -172,13 +157,10 @@ items:
                           expand?: string;
                       }
   - uid: 'excel!Excel.SlicerItem#name:member'
-    summary: >-
+    summary: |-
       Represents the title displayed in the UI.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -197,7 +179,6 @@ items:
       This method has the following additional signature:
 
       `set(properties: Excel.SlicerItem): void`
-    isPreview: true
     name: 'set(properties, options)'
     fullName: 'set(properties, options)'
     langs:
@@ -222,7 +203,6 @@ items:
             - 'excel!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.SlicerItem#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    isPreview: true
     name: set(properties)
     fullName: set(properties)
     langs:
@@ -246,7 +226,6 @@ items:
       passed to it.) Whereas the original Excel.SlicerItem object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Excel.Interfaces.SlicerItemData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
-    isPreview: true
     name: toJSON()
     fullName: toJSON()
     langs:

@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.SlicerCollection:class'
-    summary: >-
+    summary: |-
       Represents a collection of all the slicer objects on the workbook or a worksheet.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.SlicerCollection
     fullName: Excel.SlicerCollection
     langs:
@@ -29,13 +26,10 @@ items:
       - 'excel!Excel.SlicerCollection#load:member(3)'
       - 'excel!Excel.SlicerCollection#toJSON:member(1)'
   - uid: 'excel!Excel.SlicerCollection#add:member(1)'
-    summary: >-
+    summary: |-
       Adds a new slicer to the workbook.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(slicerSource, sourceField, slicerDestination)'
     fullName: 'add(slicerSource, sourceField, slicerDestination)'
     langs:
@@ -89,7 +83,6 @@ items:
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
-    isPreview: true
     name: context
     fullName: context
     langs:
@@ -101,13 +94,10 @@ items:
         type:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.SlicerCollection#getCount:member(1)'
-    summary: >-
+    summary: |-
       Returns the number of slicers in the collection.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount()
     langs:
@@ -120,13 +110,10 @@ items:
           - 'excel!Excel.SlicerCollection#getCount~0:complex'
         description: ''
   - uid: 'excel!Excel.SlicerCollection#getItem:member(1)'
-    summary: >-
+    summary: |-
       Gets a slicer object using its name or id.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
     fullName: getItem(key)
     langs:
@@ -159,13 +146,10 @@ items:
           type:
             - string
   - uid: 'excel!Excel.SlicerCollection#getItemAt:member(1)'
-    summary: >-
+    summary: |-
       Gets a slicer based on its position in the collection.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt(index)
     langs:
@@ -183,13 +167,10 @@ items:
           type:
             - number
   - uid: 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
-    summary: >-
+    summary: |-
       Gets a slicer using its name or id. If the slicer does not exist, will return a null object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
     fullName: getItemOrNullObject(key)
     langs:
@@ -208,7 +189,6 @@ items:
             - string
   - uid: 'excel!Excel.SlicerCollection#items:member'
     summary: Gets the loaded child items in this collection.
-    isPreview: true
     name: items
     fullName: items
     langs:
@@ -223,7 +203,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(options)
     fullName: load(options)
     langs:
@@ -246,7 +225,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNames)
     fullName: load(propertyNames)
     langs:
@@ -267,7 +245,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNamesAndPaths)
     fullName: load(propertyNamesAndPaths)
     langs:
@@ -293,7 +270,6 @@ items:
       passed to it.) Whereas the original `Excel.SlicerCollection` object is an API object, the `toJSON` method returns
       a plain JavaScript object (typed as `Excel.Interfaces.SlicerCollectionData`<!-- -->) that contains an "items"
       array with shallow copies of any loaded properties from the collection's items.
-    isPreview: true
     name: toJSON()
     fullName: toJSON()
     langs:

@@ -50,13 +50,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions#enableFieldList:member'
-    summary: >-
+    summary: |-
       Specifies whether the field list can be shown in the UI.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableFieldList
     fullName: enableFieldList
     langs:
