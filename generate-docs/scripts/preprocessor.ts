@@ -70,7 +70,6 @@ tryCatch(async () => {
 
     let releaseDefinitions = cleanUpDts(localReleaseDtsPath);
     let previewDefinitions = cleanUpDts(localPreviewDtsPath);
-    fsx.writeFileSync("text.txt", releaseDefinitions);
 
     const dtsBuilder = new DtsBuilder();
 
