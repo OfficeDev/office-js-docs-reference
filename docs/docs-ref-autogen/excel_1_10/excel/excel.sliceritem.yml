@@ -1,0 +1,254 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SlicerItem:class'
+    summary: |-
+      Represents a slicer item in a slicer.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.SlicerItem
+    fullName: Excel.SlicerItem
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.SlicerItem#context:member'
+      - 'excel!Excel.SlicerItem#hasData:member'
+      - 'excel!Excel.SlicerItem#isSelected:member'
+      - 'excel!Excel.SlicerItem#key:member'
+      - 'excel!Excel.SlicerItem#load:member(1)'
+      - 'excel!Excel.SlicerItem#load:member(2)'
+      - 'excel!Excel.SlicerItem#load:member(3)'
+      - 'excel!Excel.SlicerItem#name:member'
+      - 'excel!Excel.SlicerItem#set:member(1)'
+      - 'excel!Excel.SlicerItem#set:member(2)'
+      - 'excel!Excel.SlicerItem#toJSON:member(1)'
+  - uid: 'excel!Excel.SlicerItem#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.SlicerItem#hasData:member'
+    summary: |-
+      True if the slicer item has data.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: hasData
+    fullName: hasData
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly hasData: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.SlicerItem#isSelected:member'
+    summary: >-
+      True if the slicer item is selected. Setting this value will not clear other SlicerItems' selected state. By
+      default, if the slicer item is the only one selected, when it is deselected, all items will be selected.
+
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isSelected
+    fullName: isSelected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isSelected: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.SlicerItem#key:member'
+    summary: |-
+      Represents the unique value representing the slicer item.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly key: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.SlicerItem#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.SlicerItemLoadOptions): Excel.SlicerItem;'
+      return:
+        type:
+          - 'excel!Excel.SlicerItem:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.SlicerItemLoadOptions:interface'
+  - uid: 'excel!Excel.SlicerItem#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.SlicerItem;'
+      return:
+        type:
+          - 'excel!Excel.SlicerItem:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.SlicerItem#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.SlicerItem;
+      return:
+        type:
+          - 'excel!Excel.SlicerItem:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.SlicerItem#name:member'
+    summary: |-
+      Represents the title displayed in the UI.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.SlicerItem#set:member(1)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.SlicerItem): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.SlicerItemUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.SlicerItemUpdateData:interface'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.SlicerItem#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.SlicerItem): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.SlicerItem:class'
+  - uid: 'excel!Excel.SlicerItem#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.SlicerItem object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.SlicerItemData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.SlicerItemData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.SlicerItemData:interface'
+        description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.SlicerItem:class'
+    name: Excel.SlicerItem
+  - uid: 'excel!Excel.Interfaces.SlicerItemLoadOptions:interface'
+    name: Excel.Interfaces.SlicerItemLoadOptions
+  - uid: 'excel!Excel.Interfaces.SlicerItemUpdateData:interface'
+    name: Interfaces.SlicerItemUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.SlicerItemData:interface'
+    name: Excel.Interfaces.SlicerItemData

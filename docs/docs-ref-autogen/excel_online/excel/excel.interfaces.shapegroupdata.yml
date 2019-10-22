@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ShapeGroupData:interface'
+    summary: An interface describing the data returned by calling `shapeGroup.toJSON()`<!-- -->.
+    name: Excel.Interfaces.ShapeGroupData
+    fullName: Excel.Interfaces.ShapeGroupData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ShapeGroupData#id:member'
+      - 'excel!Excel.Interfaces.ShapeGroupData#shapes:member'
+  - uid: 'excel!Excel.Interfaces.ShapeGroupData#id:member'
+    summary: |-
+      Represents the shape identifier. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.ShapeGroupData#shapes:member'
+    summary: |-
+      Returns the collection of Shape objects. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: shapes
+    fullName: shapes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shapes?: Excel.Interfaces.ShapeData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ShapeGroupData#shapes~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.ShapeGroupData#shapes~0:complex'
+    name: 'Excel.Interfaces.ShapeData[]'
+    fullName: 'Excel.Interfaces.ShapeData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ShapeData:interface'
+        name: Excel.Interfaces.ShapeData
+        fullName: Excel.Interfaces.ShapeData
+      - name: '[]'
+        fullName: '[]'

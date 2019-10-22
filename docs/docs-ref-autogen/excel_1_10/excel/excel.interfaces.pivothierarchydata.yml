@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.PivotHierarchyData:interface'
+    summary: An interface describing the data returned by calling `pivotHierarchy.toJSON()`<!-- -->.
+    name: Excel.Interfaces.PivotHierarchyData
+    fullName: Excel.Interfaces.PivotHierarchyData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.PivotHierarchyData#fields:member'
+      - 'excel!Excel.Interfaces.PivotHierarchyData#id:member'
+      - 'excel!Excel.Interfaces.PivotHierarchyData#name:member'
+  - uid: 'excel!Excel.Interfaces.PivotHierarchyData#fields:member'
+    summary: |-
+      Returns the PivotFields associated with the PivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: fields
+    fullName: fields
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fields?: Excel.Interfaces.PivotFieldData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.PivotHierarchyData#fields~0:complex'
+  - uid: 'excel!Excel.Interfaces.PivotHierarchyData#id:member'
+    summary: |-
+      Id of the PivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.PivotHierarchyData#name:member'
+    summary: |-
+      Name of the PivotHierarchy.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'excel!Excel.Interfaces.PivotHierarchyData#fields~0:complex'
+    name: 'Excel.Interfaces.PivotFieldData[]'
+    fullName: 'Excel.Interfaces.PivotFieldData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PivotFieldData:interface'
+        name: Excel.Interfaces.PivotFieldData
+        fullName: Excel.Interfaces.PivotFieldData
+      - name: '[]'
+        fullName: '[]'

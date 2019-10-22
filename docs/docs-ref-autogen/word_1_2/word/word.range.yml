@@ -956,27 +956,30 @@ items:
           type:
             - 'string | string[]'
   - uid: 'word!Word.Range#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
-    fullName: load(propertyNamesAndPaths)
+    name: load(option)
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Range;'
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.Range;
       return:
         type:
           - 'word!Word.Range:class'
         description: ''
       parameters:
-        - id: propertyNamesAndPaths
-          description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
-            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+        - id: option
+          description: ''
           type:
-            - '{ select?: string; expand?: string; }'
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: 'word!Word.Range#paragraphs:member'
     summary: |-
       Gets the collection of paragraph objects in the range. Read-only.

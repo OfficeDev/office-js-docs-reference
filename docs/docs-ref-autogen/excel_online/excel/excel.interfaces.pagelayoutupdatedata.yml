@@ -1,0 +1,407 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData:interface'
+    summary: 'An interface for updating data on the PageLayout object, for use in `pageLayout.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.PageLayoutUpdateData
+    fullName: Excel.Interfaces.PageLayoutUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#blackAndWhite:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#bottomMargin:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#centerHorizontally:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#centerVertically:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#draftMode:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#firstPageNumber:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#footerMargin:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#headerMargin:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#headersFooters:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#leftMargin:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#orientation:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#paperSize:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#printComments:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#printErrors:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#printGridlines:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#printHeadings:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#printOrder:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#rightMargin:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#topMargin:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#zoom:member'
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#blackAndWhite:member'
+    summary: |-
+      Gets or sets the worksheet's black and white print option.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: blackAndWhite
+    fullName: blackAndWhite
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'blackAndWhite?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#bottomMargin:member'
+    summary: |-
+      Gets or sets the worksheet's bottom page margin to use for printing in points.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bottomMargin
+    fullName: bottomMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bottomMargin?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#centerHorizontally:member'
+    summary: >-
+      Gets or sets the worksheet's center horizontally flag. This flag determines whether the worksheet will be centered
+      horizontally when it's printed.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: centerHorizontally
+    fullName: centerHorizontally
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'centerHorizontally?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#centerVertically:member'
+    summary: >-
+      Gets or sets the worksheet's center vertically flag. This flag determines whether the worksheet will be centered
+      vertically when it's printed.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: centerVertically
+    fullName: centerVertically
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'centerVertically?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#draftMode:member'
+    summary: |-
+      Gets or sets the worksheet's draft mode option. If true the sheet will be printed without graphics.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: draftMode
+    fullName: draftMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'draftMode?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#firstPageNumber:member'
+    summary: |-
+      Gets or sets the worksheet's first page number to print. Null value represents "auto" page numbering.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: firstPageNumber
+    fullName: firstPageNumber
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'firstPageNumber?: number | "";'
+      return:
+        type:
+          - number | ""
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#footerMargin:member'
+    summary: |-
+      Gets or sets the worksheet's footer margin, in points, for use when printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: footerMargin
+    fullName: footerMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'footerMargin?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#headerMargin:member'
+    summary: |-
+      Gets or sets the worksheet's header margin, in points, for use when printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: headerMargin
+    fullName: headerMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'headerMargin?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#headersFooters:member'
+    summary: |-
+      Header and footer configuration for the worksheet.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: headersFooters
+    fullName: headersFooters
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'headersFooters?: Excel.Interfaces.HeaderFooterGroupUpdateData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#leftMargin:member'
+    summary: |-
+      Gets or sets the worksheet's left margin, in points, for use when printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: leftMargin
+    fullName: leftMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'leftMargin?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#orientation:member'
+    summary: |-
+      Gets or sets the worksheet's orientation of the page.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: orientation
+    fullName: orientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'orientation?: Excel.PageOrientation | "Portrait" | "Landscape";'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.PageLayoutUpdateData#orientation~0:complex'
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#paperSize:member'
+    summary: |-
+      Gets or sets the worksheet's paper size of the page.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: paperSize
+    fullName: paperSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        paperSize?: Excel.PaperType | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" |
+        "Executive" | "A3" | "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" |
+        "Note" | "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" |
+        "Esheet" | "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" |
+        "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" |
+        "FanfoldUS" | "FanfoldStdGerman" | "FanfoldLegalGerman";
+      return:
+        type:
+          - 'excel!Excel.Interfaces.PageLayoutUpdateData#paperSize~0:complex'
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#printComments:member'
+    summary: |-
+      Gets or sets whether the worksheet's comments should be displayed when printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printComments
+    fullName: printComments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'printComments?: Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace";'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.PageLayoutUpdateData#printComments~0:complex'
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#printErrors:member'
+    summary: |-
+      Gets or sets the worksheet's print errors option.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printErrors
+    fullName: printErrors
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'printErrors?: Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable";'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.PageLayoutUpdateData#printErrors~0:complex'
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#printGridlines:member'
+    summary: |-
+      Gets or sets the worksheet's print gridlines flag. This flag determines whether gridlines will be printed or not.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printGridlines
+    fullName: printGridlines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'printGridlines?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#printHeadings:member'
+    summary: |-
+      Gets or sets the worksheet's print headings flag. This flag determines whether headings will be printed or not.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printHeadings
+    fullName: printHeadings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'printHeadings?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#printOrder:member'
+    summary: >-
+      Gets or sets the worksheet's page print order option. This specifies the order to use for processing the page
+      number printed.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printOrder
+    fullName: printOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'printOrder?: Excel.PrintOrder | "DownThenOver" | "OverThenDown";'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.PageLayoutUpdateData#printOrder~0:complex'
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#rightMargin:member'
+    summary: |-
+      Gets or sets the worksheet's right margin, in points, for use when printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rightMargin
+    fullName: rightMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rightMargin?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#topMargin:member'
+    summary: |-
+      Gets or sets the worksheet's top margin, in points, for use when printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: topMargin
+    fullName: topMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'topMargin?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#zoom:member'
+    summary: >-
+      Gets or sets the worksheet's print zoom options. The `PageLayoutZoomOptions` object must be set as a JSON object
+      (use `x.zoom = {...}` instead of `x.zoom.scale = ...`<!-- -->).
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: zoom
+    fullName: zoom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'zoom?: Excel.PageLayoutZoomOptions;'
+      return:
+        type:
+          - 'excel!Excel.PageLayoutZoomOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData:interface'
+    name: Excel.Interfaces.HeaderFooterGroupUpdateData
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#orientation~0:complex'
+    name: Excel.PageOrientation | "Portrait" | "Landscape"
+    fullName: Excel.PageOrientation | "Portrait" | "Landscape"
+    spec.typeScript:
+      - uid: 'excel!Excel.PageOrientation:enum'
+        name: Excel.PageOrientation
+        fullName: Excel.PageOrientation
+      - name: ' | "Portrait" | "Landscape"'
+        fullName: ' | "Portrait" | "Landscape"'
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#paperSize~0:complex'
+    name: >-
+      Excel.PaperType | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" |
+      "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" |
+      "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" | "Esheet" | "EnvelopeDL" |
+      "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" |
+      "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" | "FanfoldStdGerman" |
+      "FanfoldLegalGerman"
+    fullName: >-
+      Excel.PaperType | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" |
+      "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" |
+      "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" | "Esheet" | "EnvelopeDL" |
+      "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" |
+      "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" | "FanfoldStdGerman" |
+      "FanfoldLegalGerman"
+    spec.typeScript:
+      - uid: 'excel!Excel.PaperType:enum'
+        name: Excel.PaperType
+        fullName: Excel.PaperType
+      - name: ' | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" | "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" | "Esheet" | "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" | "FanfoldStdGerman" | "FanfoldLegalGerman"'
+        fullName: ' | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" | "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" | "Esheet" | "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" | "FanfoldStdGerman" | "FanfoldLegalGerman"'
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#printComments~0:complex'
+    name: Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace"
+    fullName: Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace"
+    spec.typeScript:
+      - uid: 'excel!Excel.PrintComments:enum'
+        name: Excel.PrintComments
+        fullName: Excel.PrintComments
+      - name: ' | "NoComments" | "EndSheet" | "InPlace"'
+        fullName: ' | "NoComments" | "EndSheet" | "InPlace"'
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#printErrors~0:complex'
+    name: Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable"
+    fullName: Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable"
+    spec.typeScript:
+      - uid: 'excel!Excel.PrintErrorType:enum'
+        name: Excel.PrintErrorType
+        fullName: Excel.PrintErrorType
+      - name: ' | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable"'
+        fullName: ' | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable"'
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#printOrder~0:complex'
+    name: Excel.PrintOrder | "DownThenOver" | "OverThenDown"
+    fullName: Excel.PrintOrder | "DownThenOver" | "OverThenDown"
+    spec.typeScript:
+      - uid: 'excel!Excel.PrintOrder:enum'
+        name: Excel.PrintOrder
+        fullName: Excel.PrintOrder
+      - name: ' | "DownThenOver" | "OverThenDown"'
+        fullName: ' | "DownThenOver" | "OverThenDown"'
+  - uid: 'excel!Excel.PageLayoutZoomOptions:interface'
+    name: Excel.PageLayoutZoomOptions

@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleData:interface'
+    summary: An interface describing the data returned by calling `pivotTableStyle.toJSON()`<!-- -->.
+    name: Excel.Interfaces.PivotTableStyleData
+    fullName: Excel.Interfaces.PivotTableStyleData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

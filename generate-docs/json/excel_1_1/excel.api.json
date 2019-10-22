@@ -24092,6 +24092,250 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.CommentCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `commentCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface CommentCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "CommentCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.CommentCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.CommentData",
+                          "canonicalReference": "excel!Excel.Interfaces.CommentData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.CommentCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the CommentCollection object, for use in `commentCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface CommentCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "CommentCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.CommentCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.CommentData",
+                          "canonicalReference": "excel!Excel.Interfaces.CommentData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.CommentData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `comment.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface CommentData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "CommentData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.CommentReplyCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `commentReplyCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface CommentReplyCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "CommentReplyCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.CommentReplyCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.CommentReplyData",
+                          "canonicalReference": "excel!Excel.Interfaces.CommentReplyData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.CommentReplyCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the CommentReplyCollection object, for use in `commentReplyCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface CommentReplyCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "CommentReplyCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.CommentReplyCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.CommentReplyData",
+                          "canonicalReference": "excel!Excel.Interfaces.CommentReplyData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.CommentReplyData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `commentReply.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface CommentReplyData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "CommentReplyData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.CommentReplyUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the CommentReply object, for use in `commentReply.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface CommentReplyUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "CommentReplyUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.CommentUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the Comment object, for use in `comment.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface CommentUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "CommentUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.ConditionalDataBarNegativeFormatData:interface",
                   "docComment": "/**\n * An interface describing the data returned by calling `conditionalDataBarNegativeFormat.toJSON()`.\n */\n",
                   "excerptTokens": [
@@ -26732,6 +26976,128 @@
                   ],
                   "releaseTag": "Public",
                   "name": "PivotTableData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.PivotTableStyleCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `pivotTableStyleCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface PivotTableStyleCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "PivotTableStyleCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.PivotTableStyleCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.PivotTableStyleData",
+                          "canonicalReference": "excel!Excel.Interfaces.PivotTableStyleData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the PivotTableStyleCollection object, for use in `pivotTableStyleCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface PivotTableStyleCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "PivotTableStyleCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.PivotTableStyleData",
+                          "canonicalReference": "excel!Excel.Interfaces.PivotTableStyleData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.PivotTableStyleData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `pivotTableStyle.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface PivotTableStyleData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "PivotTableStyleData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.PivotTableStyleUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the PivotTableStyle object, for use in `pivotTableStyle.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface PivotTableStyleUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "PivotTableStyleUpdateData",
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -30317,6 +30683,372 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.SlicerCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slicerCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlicerCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlicerCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.SlicerCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.SlicerData",
+                          "canonicalReference": "excel!Excel.Interfaces.SlicerData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.SlicerCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the SlicerCollection object, for use in `slicerCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlicerCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlicerCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.SlicerCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.SlicerData",
+                          "canonicalReference": "excel!Excel.Interfaces.SlicerData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.SlicerData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slicer.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlicerData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlicerData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.SlicerItemCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slicerItemCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlicerItemCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlicerItemCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.SlicerItemCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.SlicerItemData",
+                          "canonicalReference": "excel!Excel.Interfaces.SlicerItemData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.SlicerItemCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the SlicerItemCollection object, for use in `slicerItemCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlicerItemCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlicerItemCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.SlicerItemCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.SlicerItemData",
+                          "canonicalReference": "excel!Excel.Interfaces.SlicerItemData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.SlicerItemData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slicerItem.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlicerItemData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlicerItemData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.SlicerItemUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the SlicerItem object, for use in `slicerItem.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlicerItemUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlicerItemUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.SlicerStyleCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slicerStyleCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlicerStyleCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlicerStyleCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.SlicerStyleCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.SlicerStyleData",
+                          "canonicalReference": "excel!Excel.Interfaces.SlicerStyleData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.SlicerStyleCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the SlicerStyleCollection object, for use in `slicerStyleCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlicerStyleCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlicerStyleCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.SlicerStyleCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.SlicerStyleData",
+                          "canonicalReference": "excel!Excel.Interfaces.SlicerStyleData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.SlicerStyleData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `slicerStyle.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlicerStyleData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlicerStyleData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.SlicerStyleUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the SlicerStyle object, for use in `slicerStyle.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlicerStyleUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlicerStyleUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.SlicerUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the Slicer object, for use in `slicer.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface SlicerUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SlicerUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.StyleCollectionData:interface",
                   "docComment": "/**\n * An interface describing the data returned by calling `styleCollection.toJSON()`.\n */\n",
                   "excerptTokens": [
@@ -30676,7 +31408,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableCollectionLoadOptions#style:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleStyleDark1\" through \"TableStyleStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleDark1\" through \"TableStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -31479,7 +32211,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableData#style:member",
-                      "docComment": "/**\n * Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleStyleDark1\" through \"TableStyleStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleDark1\" through \"TableStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -31697,7 +32429,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableLoadOptions#style:member",
-                      "docComment": "/**\n * Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleStyleDark1\" through \"TableStyleStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleDark1\" through \"TableStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -32212,6 +32944,128 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.TableStyleCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `tableStyleCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TableStyleCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TableStyleCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.TableStyleCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.TableStyleData",
+                          "canonicalReference": "excel!Excel.Interfaces.TableStyleData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.TableStyleCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the TableStyleCollection object, for use in `tableStyleCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TableStyleCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TableStyleCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.TableStyleCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.TableStyleData",
+                          "canonicalReference": "excel!Excel.Interfaces.TableStyleData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.TableStyleData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `tableStyle.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TableStyleData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TableStyleData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.TableStyleUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the TableStyle object, for use in `tableStyle.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TableStyleUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TableStyleUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "excel!Excel.Interfaces.TableUpdateData:interface",
                   "docComment": "/**\n * An interface for updating data on the Table object, for use in `table.set({ ... })`.\n */\n",
                   "excerptTokens": [
@@ -32301,7 +33155,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableUpdateData#style:member",
-                      "docComment": "/**\n * Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleStyleDark1\" through \"TableStyleStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleDark1\" through \"TableStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -32413,6 +33267,128 @@
                   ],
                   "releaseTag": "Public",
                   "name": "TextRangeUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.TimelineStyleCollectionData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `timelineStyleCollection.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TimelineStyleCollectionData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TimelineStyleCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.TimelineStyleCollectionData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.TimelineStyleData",
+                          "canonicalReference": "excel!Excel.Interfaces.TimelineStyleData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.TimelineStyleCollectionUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the TimelineStyleCollection object, for use in `timelineStyleCollection.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TimelineStyleCollectionUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TimelineStyleCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.TimelineStyleCollectionUpdateData#items:member",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "items?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.Interfaces.TimelineStyleData",
+                          "canonicalReference": "excel!Excel.Interfaces.TimelineStyleData:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.TimelineStyleData:interface",
+                  "docComment": "/**\n * An interface describing the data returned by calling `timelineStyle.toJSON()`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TimelineStyleData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TimelineStyleData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "excel!Excel.Interfaces.TimelineStyleUpdateData:interface",
+                  "docComment": "/**\n * An interface for updating data on the TimelineStyle object, for use in `timelineStyle.set({ ... })`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface TimelineStyleUpdateData "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TimelineStyleUpdateData",
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -32833,7 +33809,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.WorksheetCollectionLoadOptions#charts:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Returns collection of charts that are part of the worksheet.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Returns a collection of charts that are part of the worksheet.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -33047,7 +34023,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.WorksheetData#charts:member",
-                      "docComment": "/**\n * Returns collection of charts that are part of the worksheet. Read-only.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Returns a collection of charts that are part of the worksheet. Read-only.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -33253,7 +34229,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.WorksheetLoadOptions#charts:member",
-                      "docComment": "/**\n * Returns collection of charts that are part of the worksheet.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Returns a collection of charts that are part of the worksheet.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -39056,7 +40032,7 @@
             {
               "kind": "Function",
               "canonicalReference": "excel!Excel.run:function(5)",
-              "docComment": "/**\n * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.\n *\n * @remarks\n *\n * In addition to this signature, the method also has the following signatures:\n *\n * `run<T>(object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;`\n *\n * `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;`\n *\n * `run<T>(options: Excel.RunOptions, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;`\n *\n * `run<T>(batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;`\n *\n * @param context - A previously-created object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by \"context.sync()\".\n *\n * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of \"context.sync()\"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.\n */\n",
+              "docComment": "/**\n * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.\n *\n * @param context - A previously-created object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by \"context.sync()\".\n *\n * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of \"context.sync()\"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -39215,11 +40191,11 @@
             {
               "kind": "Class",
               "canonicalReference": "excel!Excel.Session:class",
-              "docComment": "/**\n * Provides connection session for a remote workbook.\n */\n",
+              "docComment": "",
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "export class Session "
+                  "text": "export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    export \n    \n    \n    /**\n     * Provides connection session for a remote workbook.\n     */\n    export class Session "
                 }
               ],
               "releaseTag": "Public",
@@ -39995,7 +40971,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Table#style:member",
-                  "docComment": "/**\n * Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleStyleDark1\" through \"TableStyleStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Constant value that represents the Table style. Possible values are: \"TableStyleLight1\" through \"TableStyleLight21\", \"TableStyleMedium1\" through \"TableStyleMedium28\", \"TableStyleDark1\" through \"TableStyleDark11\". A custom user-defined style present in the workbook can also be specified.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -43046,7 +44022,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Worksheet#charts:member",
-                  "docComment": "/**\n * Returns collection of charts that are part of the worksheet. Read-only.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Returns a collection of charts that are part of the worksheet. Read-only.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

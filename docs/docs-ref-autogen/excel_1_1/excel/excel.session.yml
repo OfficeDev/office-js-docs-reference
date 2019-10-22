@@ -1,7 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Session:class'
-    summary: Provides connection session for a remote workbook.
     name: Excel.Session
     fullName: Excel.Session
     langs:

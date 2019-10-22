@@ -1,7 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.ThreeTrafficLights2Set:interface'
-    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ThreeTrafficLights2Set
     fullName: Excel.ThreeTrafficLights2Set
     langs:

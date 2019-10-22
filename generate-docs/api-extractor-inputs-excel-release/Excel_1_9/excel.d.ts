@@ -502,104 +502,104 @@ export declare namespace Excel {
      * @param base64File - Optional. The base64 encoded .xlsx file. The default value is null.
      */
     export function createWorkbook(base64?: string): Promise<void>;
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeArrowsSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
         yellowSideArrow: Icon;
         greenUpArrow: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeArrowsGraySet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeArrowsGraySet {
         [index: number]: Icon;
         grayDownArrow: Icon;
         graySideArrow: Icon;
         grayUpArrow: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeFlagsSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeFlagsSet {
         [index: number]: Icon;
         redFlag: Icon;
         yellowFlag: Icon;
         greenFlag: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeTrafficLights1Set {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeTrafficLights1Set {
         [index: number]: Icon;
         redCircleWithBorder: Icon;
         yellowCircle: Icon;
         greenCircle: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeTrafficLights2Set {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeTrafficLights2Set {
         [index: number]: Icon;
         redTrafficLight: Icon;
         yellowTrafficLight: Icon;
         greenTrafficLight: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeSignsSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeSignsSet {
         [index: number]: Icon;
         redDiamond: Icon;
         yellowTriangle: Icon;
         greenCircle: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeSymbolsSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeSymbolsSet {
         [index: number]: Icon;
         redCrossSymbol: Icon;
         yellowExclamationSymbol: Icon;
         greenCheckSymbol: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeSymbols2Set {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeSymbols2Set {
         [index: number]: Icon;
         redCross: Icon;
         yellowExclamation: Icon;
         greenCheck: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FourArrowsSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FourArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
         yellowDownInclineArrow: Icon;
         yellowUpInclineArrow: Icon;
         greenUpArrow: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FourArrowsGraySet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FourArrowsGraySet {
         [index: number]: Icon;
         grayDownArrow: Icon;
         grayDownInclineArrow: Icon;
         grayUpInclineArrow: Icon;
         grayUpArrow: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FourRedToBlackSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FourRedToBlackSet {
         [index: number]: Icon;
         blackCircle: Icon;
         grayCircle: Icon;
         pinkCircle: Icon;
         redCircle: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FourRatingSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FourRatingSet {
         [index: number]: Icon;
         oneBar: Icon;
         twoBars: Icon;
         threeBars: Icon;
         fourBars: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FourTrafficLightsSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FourTrafficLightsSet {
         [index: number]: Icon;
         blackCircleWithBorder: Icon;
         redCircleWithBorder: Icon;
         yellowCircle: Icon;
         greenCircle: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FiveArrowsSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FiveArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
         yellowDownInclineArrow: Icon;
@@ -607,8 +607,8 @@ export declare namespace Excel {
         yellowUpInclineArrow: Icon;
         greenUpArrow: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FiveArrowsGraySet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FiveArrowsGraySet {
         [index: number]: Icon;
         grayDownArrow: Icon;
         grayDownInclineArrow: Icon;
@@ -616,8 +616,8 @@ export declare namespace Excel {
         grayUpInclineArrow: Icon;
         grayUpArrow: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FiveRatingSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FiveRatingSet {
         [index: number]: Icon;
         noBars: Icon;
         oneBar: Icon;
@@ -625,8 +625,8 @@ export declare namespace Excel {
         threeBars: Icon;
         fourBars: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FiveQuartersSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FiveQuartersSet {
         [index: number]: Icon;
         whiteCircleAllWhiteQuarters: Icon;
         circleWithThreeWhiteQuarters: Icon;
@@ -634,22 +634,22 @@ export declare namespace Excel {
         circleWithOneWhiteQuarter: Icon;
         blackCircle: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeStarsSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeStarsSet {
         [index: number]: Icon;
         silverStar: Icon;
         halfGoldStar: Icon;
         goldStar: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeTrianglesSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeTrianglesSet {
         [index: number]: Icon;
         redDownTriangle: Icon;
         yellowDash: Icon;
         greenUpTriangle: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FiveBoxesSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FiveBoxesSet {
         [index: number]: Icon;
         noFilledBoxes: Icon;
         oneFilledBox: Icon;
@@ -703,8 +703,10 @@ export declare namespace Excel {
         constructor(url?: string | Session);
         readonly workbook: Workbook;
         readonly application: Application;
-        /** [Api set: ExcelApi 1.5] */
-		readonly runtime: Runtime;
+        /**
+        * [Api set: ExcelApi 1.5]
+        */
+        readonly runtime: Runtime;
     }
     export interface RunOptions extends OfficeExtension.RunOptions<Session> {
         /**
@@ -740,18 +742,6 @@ export declare namespace Excel {
     export function run<T>(options: Excel.RunOptions, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     *
-     * @remarks
-     *
-     * In addition to this signature, the method also has the following signatures:
-     *
-     * `run<T>(object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;`
-     *
-     * `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;`
-     *
-     * `run<T>(options: Excel.RunOptions, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;`
-     *
-     * `run<T>(batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;`
      *
      * @param context - A previously-created object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
@@ -1127,6 +1117,8 @@ export declare namespace Excel {
          */
         worksheetId: string;
     }
+    
+    
     /**
      *
      * Provides information about the worksheet that raised the SelectionChanged event.
@@ -1156,6 +1148,7 @@ export declare namespace Excel {
          */
         worksheetId: string;
     }
+    
     /**
      *
      * Provides information about the table that raised the SelectionChanged event.
@@ -1403,7 +1396,7 @@ export declare namespace Excel {
         type: "WorksheetCalculated";
         /**
          *
-         * Gets the id of the worksheet that is calculated.
+         * Gets the id of the worksheet in which the calculation occurred.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -1810,6 +1803,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly bindings: Excel.BindingCollection;
+        
         /**
          *
          * Represents the collection of custom XML parts contained by this workbook. Read-only.
@@ -1838,6 +1832,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly names: Excel.NamedItemCollection;
+        
         /**
          *
          * Represents a collection of PivotTables associated with the workbook. Read-only.
@@ -1866,6 +1861,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.4]
          */
         readonly settings: Excel.SettingCollection;
+        
+        
         /**
          *
          * Represents a collection of styles associated with the workbook. Read-only.
@@ -1873,6 +1870,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         readonly styles: Excel.StyleCollection;
+        
         /**
          *
          * Represents a collection of tables associated with the workbook. Read-only.
@@ -1880,6 +1878,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly tables: Excel.TableCollection;
+        
         /**
          *
          * Represents a collection of worksheets associated with the workbook. Read-only.
@@ -1981,6 +1980,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         getActiveChartOrNullObject(): Excel.Chart;
+        
+        
         /**
          *
          * True if the workbook is being edited by multiple users (co-authoring).
@@ -2158,11 +2159,12 @@ export declare namespace Excel {
         readonly autoFilter: Excel.AutoFilter;
         /**
          *
-         * Returns collection of charts that are part of the worksheet. Read-only.
+         * Returns a collection of charts that are part of the worksheet. Read-only.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly charts: Excel.ChartCollection;
+        
         /**
          *
          * Gets an object that can be used to manipulate frozen panes on the worksheet. Read-only.
@@ -2212,6 +2214,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         readonly shapes: Excel.ShapeCollection;
+        
         /**
          *
          * Collection of tables that are part of the worksheet. Read-only.
@@ -2334,8 +2337,8 @@ export declare namespace Excel {
         calculate(markAllDirty: boolean): void;
         /**
          *
-         * Copies a worksheet and places it at the specified position. 
-         * 
+         * Copies a worksheet and places it at the specified position.
+         *
          * [Api set: ExcelApi 1.7]
          *
          * @param positionType - The location in the workbook to place the newly created worksheet. The default value is "None", which inserts the worksheet at the beginning of the worksheet.
@@ -2345,8 +2348,8 @@ export declare namespace Excel {
         copy(positionType?: Excel.WorksheetPositionType, relativeTo?: Excel.Worksheet): Excel.Worksheet;
         /**
          *
-         * Copies a worksheet and places it at the specified position. 
-         * 
+         * Copies a worksheet and places it at the specified position.
+         *
          * [Api set: ExcelApi 1.7]
          *
          * @param positionTypeString - The location in the workbook to place the newly created worksheet. The default value is "None", which inserts the worksheet at the beginning of the worksheet.
@@ -2489,6 +2492,7 @@ export declare namespace Excel {
          * @returns The number of replacements performed.
          */
         replaceAll(text: string, replacement: string, criteria: Excel.ReplaceCriteria): OfficeExtension.ClientResult<number>;
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -2537,6 +2541,7 @@ export declare namespace Excel {
          * @eventproperty
          */
         readonly onChanged: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>;
+        
         /**
          *
          * Occurs when the worksheet is deactivated.
@@ -2555,6 +2560,7 @@ export declare namespace Excel {
          * @eventproperty
          */
         readonly onFormatChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;
+        
         /**
          *
          * Occurs when the selection changes on a specific worksheet.
@@ -2564,6 +2570,7 @@ export declare namespace Excel {
          * @eventproperty
          */
         readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;
+        
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Worksheet object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetData`) that contains shallow copies of any loaded child properties from the original object.
@@ -2696,6 +2703,7 @@ export declare namespace Excel {
          * @eventproperty
          */
         readonly onChanged: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>;
+        
         /**
          *
          * Occurs when any worksheet in the workbook is deactivated.
@@ -2723,6 +2731,7 @@ export declare namespace Excel {
          * @eventproperty
          */
         readonly onFormatChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;
+        
         /**
          *
          * Occurs when the selection changes on any worksheet.
@@ -2732,6 +2741,7 @@ export declare namespace Excel {
          * @eventproperty
          */
         readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;
+        
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original `Excel.WorksheetCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
@@ -3091,6 +3101,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          */
         formulasR1C1: any[][];
+        
         /**
          *
          * Represents if all cells of the current range are hidden. Read-only.
@@ -3119,6 +3130,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         readonly isEntireRow: boolean;
+        
         /**
          *
          * Represents the data type state of each cell. Read-only.
@@ -3182,6 +3194,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly text: string[][];
+        
         /**
          *
          * Represents the type of data of each cell. Read-only.
@@ -3197,6 +3210,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         values: any[][];
+        
         /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          *
          * @remarks
@@ -3214,24 +3228,28 @@ export declare namespace Excel {
         /**
          *
          * Fills range from the current range to the destination range using the specified AutoFill logic.
-            The destination range can be null, or can extend the source either horizontally or vertically. If the destination range is null, data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill handle).
-            For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
+             The destination range can be null, or can extend the source either horizontally or vertically.
+             Discontiguous ranges are not supported.
+            
+             For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
          *
-         * @param destinationRange - The destination range to autofill. Discontiguous ranges are not supported.
+         * @param destinationRange - The destination range to autofill. If the destination range is null, data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill handle).
          * @param autoFillType - The type of autofill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
          */
         autoFill(destinationRange?: Range | string, autoFillType?: Excel.AutoFillType): void;
         /**
          *
          * Fills range from the current range to the destination range using the specified AutoFill logic.
-            The destination range can be null, or can extend the source either horizontally or vertically. If the destination range is null, data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill handle).
-            For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
+             The destination range can be null, or can extend the source either horizontally or vertically.
+             Discontiguous ranges are not supported.
+            
+             For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
          *
-         * @param destinationRange - The destination range to autofill. Discontiguous ranges are not supported.
+         * @param destinationRange - The destination range to autofill. If the destination range is null, data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill handle).
          * @param autoFillTypeString - The type of autofill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
          */
         autoFill(destinationRange?: Range | string, autoFillTypeString?: "FillDefault" | "FillCopy" | "FillSeries" | "FillFormats" | "FillValues" | "FillDays" | "FillWeekdays" | "FillMonths" | "FillYears" | "LinearTrend" | "GrowthTrend" | "FlashFill"): void;
@@ -3631,6 +3649,10 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.3]
          */
         getVisibleView(): Excel.RangeView;
+        
+        
+        
+        
         /**
          *
          * Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.
@@ -3729,6 +3751,10 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         showCard(): void;
+        
+        
+        
+        
         /**
          *
          * Unmerge the range cells into separate cells.
@@ -4162,7 +4188,7 @@ export declare namespace Excel {
     export interface SearchCriteria {
         /**
          *
-         * Specifies whether the match needs to be complete or partial. A complete match matches the entire contents of the cell. Default is false (partial).
+         * Specifies whether the match needs to be complete or partial. A complete match matches the entire contents of the cell. A partial match matches a substring within the content of the cell (e.g., `cat` partially matches `caterpillar` and `scatter`). Default is false (partial).
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -4191,7 +4217,7 @@ export declare namespace Excel {
     export interface WorksheetSearchCriteria {
         /**
          *
-         * Specifies whether the match needs to be complete or partial. A complete match matches the entire contents of the cell. Default is false (partial).
+         * Specifies whether the match needs to be complete or partial. A complete match matches the entire contents of the cell. A partial match matches a substring within the content of the cell (e.g., `cat` partially matches `caterpillar` and `scatter`). Default is false (partial).
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -4213,7 +4239,7 @@ export declare namespace Excel {
     export interface ReplaceCriteria {
         /**
          *
-         * Specifies whether the match needs to be complete or partial. Default is false (partial).
+         * Specifies whether the match needs to be complete or partial. A complete match matches the entire contents of the cell. A partial match matches a substring within the content of the cell (e.g., `cat` partially matches `caterpillar` and `scatter`). Default is false (partial).
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -5774,7 +5800,7 @@ export declare namespace Excel {
         showTotals: boolean;
         /**
          *
-         * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
+         * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -7756,7 +7782,7 @@ export declare namespace Excel {
         showAxisFieldButtons: boolean;
         /**
          *
-         * Specifies whether or not to display the legend field buttons on a PivotChart
+         * Specifies whether or not to display the legend field buttons on a PivotChart.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -7770,7 +7796,7 @@ export declare namespace Excel {
         showReportFilterFieldButtons: boolean;
         /**
          *
-         * Specifies whether or not to display the show value field buttons on a PivotChart
+         * Specifies whether or not to display the show value field buttons on a PivotChart.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -12897,6 +12923,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         autoFormat: boolean;
+        
         /**
          *
          * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
@@ -16627,6 +16654,14 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.StyleCollectionData;
     }
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      *
      * Represents layout and print settings that are not dependent any printer-specific implementation. These settings include margins, orientation, page numbering, title rows, and print area.
@@ -17374,6 +17409,11 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.RangeCollectionData;
     }
+    
+    
+    
+    
+    
     /**
      *
      * Represents a collection of all the shapes in the worksheet.
@@ -17643,6 +17683,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.9]
          */
         name: string;
+        
         /**
          *
          * Represents the rotation, in degrees, of the shape.
@@ -17701,6 +17742,7 @@ export declare namespace Excel {
         set(properties: Interfaces.ShapeUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.Shape): void;
+        
         /**
          *
          * Removes the shape from the worksheet.
@@ -18774,6 +18816,10 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.ShapeFontData;
     }
+    
+    
+    
+    
     /**
      * [Api set: ExcelApi 1.7]
      */
@@ -20893,6 +20939,7 @@ export declare namespace Excel {
         growthTrend = "GrowthTrend",
         flashFill = "FlashFill"
     }
+    
     /**
      * [Api set: ExcelApi 1.9]
      */
@@ -21105,6 +21152,7 @@ export declare namespace Excel {
         elbow = "Elbow",
         curve = "Curve"
     }
+    
     /**
      * [Api set: ExcelApi 1.9]
      */
@@ -21468,6 +21516,7 @@ export declare namespace Excel {
          */
         prompt = "Prompt"
     }
+    
     /**
      * [Api set: ExcelApi 1.9]
      */
@@ -25765,7 +25814,7 @@ export declare namespace Excel {
             showTotals?: boolean;
             /**
              *
-             * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
+             * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -26312,7 +26361,7 @@ export declare namespace Excel {
             showAxisFieldButtons?: boolean;
             /**
              *
-             * Specifies whether or not to display the legend field buttons on a PivotChart
+             * Specifies whether or not to display the legend field buttons on a PivotChart.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -26326,7 +26375,7 @@ export declare namespace Excel {
             showReportFilterFieldButtons?: boolean;
             /**
              *
-             * Specifies whether or not to display the show value field buttons on a PivotChart
+             * Specifies whether or not to display the show value field buttons on a PivotChart.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -28130,6 +28179,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             autoFormat?: boolean;
+            
             /**
              *
              * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
@@ -29109,6 +29159,38 @@ export declare namespace Excel {
         export interface StyleCollectionUpdateData {
             items?: Excel.Interfaces.StyleData[];
         }
+        /** An interface for updating data on the TableStyleCollection object, for use in `tableStyleCollection.set({ ... })`. */
+        export interface TableStyleCollectionUpdateData {
+            items?: Excel.Interfaces.TableStyleData[];
+        }
+        /** An interface for updating data on the TableStyle object, for use in `tableStyle.set({ ... })`. */
+        export interface TableStyleUpdateData {
+            
+        }
+        /** An interface for updating data on the PivotTableStyleCollection object, for use in `pivotTableStyleCollection.set({ ... })`. */
+        export interface PivotTableStyleCollectionUpdateData {
+            items?: Excel.Interfaces.PivotTableStyleData[];
+        }
+        /** An interface for updating data on the PivotTableStyle object, for use in `pivotTableStyle.set({ ... })`. */
+        export interface PivotTableStyleUpdateData {
+            
+        }
+        /** An interface for updating data on the SlicerStyleCollection object, for use in `slicerStyleCollection.set({ ... })`. */
+        export interface SlicerStyleCollectionUpdateData {
+            items?: Excel.Interfaces.SlicerStyleData[];
+        }
+        /** An interface for updating data on the SlicerStyle object, for use in `slicerStyle.set({ ... })`. */
+        export interface SlicerStyleUpdateData {
+            
+        }
+        /** An interface for updating data on the TimelineStyleCollection object, for use in `timelineStyleCollection.set({ ... })`. */
+        export interface TimelineStyleCollectionUpdateData {
+            items?: Excel.Interfaces.TimelineStyleData[];
+        }
+        /** An interface for updating data on the TimelineStyle object, for use in `timelineStyle.set({ ... })`. */
+        export interface TimelineStyleUpdateData {
+            
+        }
         /** An interface for updating data on the PageLayout object, for use in `pageLayout.set({ ... })`. */
         export interface PageLayoutUpdateData {
             /**
@@ -29364,6 +29446,22 @@ export declare namespace Excel {
         export interface RangeCollectionUpdateData {
             items?: Excel.Interfaces.RangeData[];
         }
+        /** An interface for updating data on the CommentCollection object, for use in `commentCollection.set({ ... })`. */
+        export interface CommentCollectionUpdateData {
+            items?: Excel.Interfaces.CommentData[];
+        }
+        /** An interface for updating data on the Comment object, for use in `comment.set({ ... })`. */
+        export interface CommentUpdateData {
+            
+        }
+        /** An interface for updating data on the CommentReplyCollection object, for use in `commentReplyCollection.set({ ... })`. */
+        export interface CommentReplyCollectionUpdateData {
+            items?: Excel.Interfaces.CommentReplyData[];
+        }
+        /** An interface for updating data on the CommentReply object, for use in `commentReply.set({ ... })`. */
+        export interface CommentReplyUpdateData {
+            
+        }
         /** An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
             items?: Excel.Interfaces.ShapeData[];
@@ -29435,6 +29533,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             name?: string;
+            
             /**
              *
              * Represents the rotation, in degrees, of the shape.
@@ -29726,6 +29825,30 @@ export declare namespace Excel {
              */
             underline?: Excel.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
         }
+        /** An interface for updating data on the Slicer object, for use in `slicer.set({ ... })`. */
+        export interface SlicerUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the SlicerCollection object, for use in `slicerCollection.set({ ... })`. */
+        export interface SlicerCollectionUpdateData {
+            items?: Excel.Interfaces.SlicerData[];
+        }
+        /** An interface for updating data on the SlicerItem object, for use in `slicerItem.set({ ... })`. */
+        export interface SlicerItemUpdateData {
+            
+        }
+        /** An interface for updating data on the SlicerItemCollection object, for use in `slicerItemCollection.set({ ... })`. */
+        export interface SlicerItemCollectionUpdateData {
+            items?: Excel.Interfaces.SlicerItemData[];
+        }
         /** An interface describing the data returned by calling `runtime.toJSON()`. */
         export interface RuntimeData {
             /**
@@ -29802,6 +29925,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             bindings?: Excel.Interfaces.BindingData[];
+            
             /**
             *
             * Represents the collection of custom XML parts contained by this workbook. Read-only.
@@ -29816,6 +29940,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             names?: Excel.Interfaces.NamedItemData[];
+            
             /**
             *
             * Represents a collection of PivotTables associated with the workbook. Read-only.
@@ -29844,6 +29969,8 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.4]
             */
             settings?: Excel.Interfaces.SettingData[];
+            
+            
             /**
             *
             * Represents a collection of styles associated with the workbook. Read-only.
@@ -29851,6 +29978,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.7]
             */
             styles?: Excel.Interfaces.StyleData[];
+            
             /**
             *
             * Represents a collection of tables associated with the workbook. Read-only.
@@ -29858,6 +29986,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             tables?: Excel.Interfaces.TableData[];
+            
             /**
             *
             * Represents a collection of worksheets associated with the workbook. Read-only.
@@ -29949,11 +30078,12 @@ export declare namespace Excel {
             autoFilter?: Excel.Interfaces.AutoFilterData;
             /**
             *
-            * Returns collection of charts that are part of the worksheet. Read-only.
+            * Returns a collection of charts that are part of the worksheet. Read-only.
             *
             * [Api set: ExcelApi 1.1]
             */
             charts?: Excel.Interfaces.ChartData[];
+            
             /**
             *
             * Gets the horizontal page break collection for the worksheet. This collection only contains manual page breaks.
@@ -29996,6 +30126,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.9]
             */
             shapes?: Excel.Interfaces.ShapeData[];
+            
             /**
             *
             * Collection of tables that are part of the worksheet. Read-only.
@@ -30197,6 +30328,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             formulasR1C1?: any[][];
+            
             /**
              *
              * Represents if all cells of the current range are hidden. Read-only.
@@ -30225,6 +30357,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.7]
              */
             isEntireRow?: boolean;
+            
             /**
              *
              * Represents the data type state of each cell. Read-only.
@@ -30288,6 +30421,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             text?: string[][];
+            
             /**
              *
              * Represents the type of data of each cell. Read-only.
@@ -30303,6 +30437,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            
         }
         /** An interface describing the data returned by calling `rangeAreas.toJSON()`. */
         export interface RangeAreasData {
@@ -30709,7 +30844,7 @@ export declare namespace Excel {
             showTotals?: boolean;
             /**
              *
-             * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
+             * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -31330,7 +31465,7 @@ export declare namespace Excel {
             showAxisFieldButtons?: boolean;
             /**
              *
-             * Specifies whether or not to display the legend field buttons on a PivotChart
+             * Specifies whether or not to display the legend field buttons on a PivotChart.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -31344,7 +31479,7 @@ export declare namespace Excel {
             showReportFilterFieldButtons?: boolean;
             /**
              *
-             * Specifies whether or not to display the show value field buttons on a PivotChart
+             * Specifies whether or not to display the show value field buttons on a PivotChart.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -33426,6 +33561,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             autoFormat?: boolean;
+            
             /**
              *
              * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
@@ -34524,6 +34660,42 @@ export declare namespace Excel {
         export interface StyleCollectionData {
             items?: Excel.Interfaces.StyleData[];
         }
+        /** An interface describing the data returned by calling `tableStyleCollection.toJSON()`. */
+        export interface TableStyleCollectionData {
+            items?: Excel.Interfaces.TableStyleData[];
+        }
+        /** An interface describing the data returned by calling `tableStyle.toJSON()`. */
+        export interface TableStyleData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `pivotTableStyleCollection.toJSON()`. */
+        export interface PivotTableStyleCollectionData {
+            items?: Excel.Interfaces.PivotTableStyleData[];
+        }
+        /** An interface describing the data returned by calling `pivotTableStyle.toJSON()`. */
+        export interface PivotTableStyleData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `slicerStyleCollection.toJSON()`. */
+        export interface SlicerStyleCollectionData {
+            items?: Excel.Interfaces.SlicerStyleData[];
+        }
+        /** An interface describing the data returned by calling `slicerStyle.toJSON()`. */
+        export interface SlicerStyleData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `timelineStyleCollection.toJSON()`. */
+        export interface TimelineStyleCollectionData {
+            items?: Excel.Interfaces.TimelineStyleData[];
+        }
+        /** An interface describing the data returned by calling `timelineStyle.toJSON()`. */
+        export interface TimelineStyleData {
+            
+            
+        }
         /** An interface describing the data returned by calling `pageLayout.toJSON()`. */
         export interface PageLayoutData {
             /**
@@ -34796,6 +34968,31 @@ export declare namespace Excel {
         export interface RangeCollectionData {
             items?: Excel.Interfaces.RangeData[];
         }
+        /** An interface describing the data returned by calling `commentCollection.toJSON()`. */
+        export interface CommentCollectionData {
+            items?: Excel.Interfaces.CommentData[];
+        }
+        /** An interface describing the data returned by calling `comment.toJSON()`. */
+        export interface CommentData {
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `commentReplyCollection.toJSON()`. */
+        export interface CommentReplyCollectionData {
+            items?: Excel.Interfaces.CommentReplyData[];
+        }
+        /** An interface describing the data returned by calling `commentReply.toJSON()`. */
+        export interface CommentReplyData {
+            
+            
+            
+            
+            
+        }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
             items?: Excel.Interfaces.ShapeData[];
@@ -34888,6 +35085,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             name?: string;
+            
             /**
              *
              * Represents the rotation, in degrees, of the shape.
@@ -35286,6 +35484,36 @@ export declare namespace Excel {
              */
             underline?: Excel.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
         }
+        /** An interface describing the data returned by calling `slicer.toJSON()`. */
+        export interface SlicerData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `slicerCollection.toJSON()`. */
+        export interface SlicerCollectionData {
+            items?: Excel.Interfaces.SlicerData[];
+        }
+        /** An interface describing the data returned by calling `slicerItem.toJSON()`. */
+        export interface SlicerItemData {
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `slicerItemCollection.toJSON()`. */
+        export interface SlicerItemCollectionData {
+            items?: Excel.Interfaces.SlicerItemData[];
+        }
         /** An interface describing the data returned by calling `functionResult.toJSON()`. */
         export interface FunctionResultData<T> {
             /**
@@ -35544,7 +35772,7 @@ export declare namespace Excel {
             autoFilter?: Excel.Interfaces.AutoFilterLoadOptions;
             /**
             *
-            * Returns collection of charts that are part of the worksheet.
+            * Returns a collection of charts that are part of the worksheet.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -35667,7 +35895,7 @@ export declare namespace Excel {
             autoFilter?: Excel.Interfaces.AutoFilterLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Returns collection of charts that are part of the worksheet.
+            * For EACH ITEM in the collection: Returns a collection of charts that are part of the worksheet.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -35896,6 +36124,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             formulasR1C1?: boolean;
+            
             /**
              *
              * Represents if all cells of the current range are hidden. Read-only.
@@ -35924,6 +36153,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.7]
              */
             isEntireRow?: boolean;
+            
             /**
              *
              * Represents the data type state of each cell. Read-only.
@@ -35987,6 +36217,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             text?: boolean;
+            
             /**
              *
              * Represents the type of data of each cell. Read-only.
@@ -36002,6 +36233,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            
         }
         /**
          *
@@ -36678,7 +36910,7 @@ export declare namespace Excel {
             showTotals?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
+             * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -36802,7 +37034,7 @@ export declare namespace Excel {
             showTotals?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
+             * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -36927,7 +37159,7 @@ export declare namespace Excel {
             showTotals?: boolean;
             /**
              *
-             * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
+             * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -37955,7 +38187,7 @@ export declare namespace Excel {
             showAxisFieldButtons?: boolean;
             /**
              *
-             * Specifies whether or not to display the legend field buttons on a PivotChart
+             * Specifies whether or not to display the legend field buttons on a PivotChart.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -37969,7 +38201,7 @@ export declare namespace Excel {
             showReportFilterFieldButtons?: boolean;
             /**
              *
-             * Specifies whether or not to display the show value field buttons on a PivotChart
+             * Specifies whether or not to display the show value field buttons on a PivotChart.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -41021,6 +41253,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             autoFormat?: boolean;
+            
             /**
              *
              * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
@@ -42912,6 +43145,14 @@ export declare namespace Excel {
              */
             wrapText?: boolean;
         }
+        
+        
+        
+        
+        
+        
+        
+        
         /**
          *
          * Represents layout and print settings that are not dependent any printer-specific implementation. These settings include margins, orientation, page numbering, title rows, and print area.
@@ -43321,6 +43562,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             formulasR1C1?: boolean;
+            
             /**
              *
              * For EACH ITEM in the collection: Represents if all cells of the current range are hidden. Read-only.
@@ -43349,6 +43591,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.7]
              */
             isEntireRow?: boolean;
+            
             /**
              *
              * For EACH ITEM in the collection: Represents the data type state of each cell. Read-only.
@@ -43412,6 +43655,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             text?: boolean;
+            
             /**
              *
              * For EACH ITEM in the collection: Represents the type of data of each cell. Read-only.
@@ -43427,7 +43671,12 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            
         }
+        
+        
+        
+        
         /**
          *
          * Represents a collection of all the shapes in the worksheet.
@@ -43567,6 +43816,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             name?: boolean;
+            
             /**
              *
              * For EACH ITEM in the collection: Represents the rotation, in degrees, of the shape.
@@ -43752,6 +44002,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             name?: boolean;
+            
             /**
              *
              * Represents the rotation, in degrees, of the shape.
@@ -44021,6 +44272,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.9]
              */
             name?: boolean;
+            
             /**
              *
              * For EACH ITEM in the collection: Represents the rotation, in degrees, of the shape.
@@ -44453,6 +44705,10 @@ export declare namespace Excel {
              */
             underline?: boolean;
         }
+        
+        
+        
+        
         /**
          *
          * An object containing the result of a function-evaluation operation

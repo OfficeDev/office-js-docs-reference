@@ -502,104 +502,104 @@ export declare namespace Excel {
      * @param base64File - Optional. The base64 encoded .xlsx file. The default value is null.
      */
     export function createWorkbook(base64?: string): Promise<void>;
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeArrowsSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
         yellowSideArrow: Icon;
         greenUpArrow: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeArrowsGraySet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeArrowsGraySet {
         [index: number]: Icon;
         grayDownArrow: Icon;
         graySideArrow: Icon;
         grayUpArrow: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeFlagsSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeFlagsSet {
         [index: number]: Icon;
         redFlag: Icon;
         yellowFlag: Icon;
         greenFlag: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeTrafficLights1Set {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeTrafficLights1Set {
         [index: number]: Icon;
         redCircleWithBorder: Icon;
         yellowCircle: Icon;
         greenCircle: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeTrafficLights2Set {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeTrafficLights2Set {
         [index: number]: Icon;
         redTrafficLight: Icon;
         yellowTrafficLight: Icon;
         greenTrafficLight: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeSignsSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeSignsSet {
         [index: number]: Icon;
         redDiamond: Icon;
         yellowTriangle: Icon;
         greenCircle: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeSymbolsSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeSymbolsSet {
         [index: number]: Icon;
         redCrossSymbol: Icon;
         yellowExclamationSymbol: Icon;
         greenCheckSymbol: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeSymbols2Set {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeSymbols2Set {
         [index: number]: Icon;
         redCross: Icon;
         yellowExclamation: Icon;
         greenCheck: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FourArrowsSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FourArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
         yellowDownInclineArrow: Icon;
         yellowUpInclineArrow: Icon;
         greenUpArrow: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FourArrowsGraySet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FourArrowsGraySet {
         [index: number]: Icon;
         grayDownArrow: Icon;
         grayDownInclineArrow: Icon;
         grayUpInclineArrow: Icon;
         grayUpArrow: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FourRedToBlackSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FourRedToBlackSet {
         [index: number]: Icon;
         blackCircle: Icon;
         grayCircle: Icon;
         pinkCircle: Icon;
         redCircle: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FourRatingSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FourRatingSet {
         [index: number]: Icon;
         oneBar: Icon;
         twoBars: Icon;
         threeBars: Icon;
         fourBars: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FourTrafficLightsSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FourTrafficLightsSet {
         [index: number]: Icon;
         blackCircleWithBorder: Icon;
         redCircleWithBorder: Icon;
         yellowCircle: Icon;
         greenCircle: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FiveArrowsSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FiveArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
         yellowDownInclineArrow: Icon;
@@ -607,8 +607,8 @@ export declare namespace Excel {
         yellowUpInclineArrow: Icon;
         greenUpArrow: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FiveArrowsGraySet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FiveArrowsGraySet {
         [index: number]: Icon;
         grayDownArrow: Icon;
         grayDownInclineArrow: Icon;
@@ -616,8 +616,8 @@ export declare namespace Excel {
         grayUpInclineArrow: Icon;
         grayUpArrow: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FiveRatingSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FiveRatingSet {
         [index: number]: Icon;
         noBars: Icon;
         oneBar: Icon;
@@ -625,8 +625,8 @@ export declare namespace Excel {
         threeBars: Icon;
         fourBars: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FiveQuartersSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FiveQuartersSet {
         [index: number]: Icon;
         whiteCircleAllWhiteQuarters: Icon;
         circleWithThreeWhiteQuarters: Icon;
@@ -634,22 +634,22 @@ export declare namespace Excel {
         circleWithOneWhiteQuarter: Icon;
         blackCircle: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeStarsSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeStarsSet {
         [index: number]: Icon;
         silverStar: Icon;
         halfGoldStar: Icon;
         goldStar: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface ThreeTrianglesSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface ThreeTrianglesSet {
         [index: number]: Icon;
         redDownTriangle: Icon;
         yellowDash: Icon;
         greenUpTriangle: Icon;
     }
-    /** [Api set: ExcelApi 1.2] */
-	export interface FiveBoxesSet {
+    export /** [Api set: ExcelApi 1.2] */
+	interface FiveBoxesSet {
         [index: number]: Icon;
         noFilledBoxes: Icon;
         oneFilledBox: Icon;
@@ -703,8 +703,7 @@ export declare namespace Excel {
         constructor(url?: string | Session);
         readonly workbook: Workbook;
         readonly application: Application;
-        /** [Api set: ExcelApi 1.5] */
-		readonly runtime: Runtime;
+        readonly runtime: Runtime;
     }
     export interface RunOptions extends OfficeExtension.RunOptions<Session> {
         /**

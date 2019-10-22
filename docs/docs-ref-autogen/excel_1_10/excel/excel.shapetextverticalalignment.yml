@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ShapeTextVerticalAlignment:enum'
+    summary: |-
+      Specifies the vertical alignment for the text frame in a shape.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShapeTextVerticalAlignment
+    fullName: Excel.ShapeTextVerticalAlignment
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.ShapeTextVerticalAlignment.bottom:member'
+      - 'excel!Excel.ShapeTextVerticalAlignment.distributed:member'
+      - 'excel!Excel.ShapeTextVerticalAlignment.justified:member'
+      - 'excel!Excel.ShapeTextVerticalAlignment.middle:member'
+      - 'excel!Excel.ShapeTextVerticalAlignment.top:member'
+  - uid: 'excel!Excel.ShapeTextVerticalAlignment.bottom:member'
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bottom"'
+  - uid: 'excel!Excel.ShapeTextVerticalAlignment.distributed:member'
+    name: distributed
+    fullName: distributed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Distributed"'
+  - uid: 'excel!Excel.ShapeTextVerticalAlignment.justified:member'
+    name: justified
+    fullName: justified
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Justified"'
+  - uid: 'excel!Excel.ShapeTextVerticalAlignment.middle:member'
+    name: middle
+    fullName: middle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Middle"'
+  - uid: 'excel!Excel.ShapeTextVerticalAlignment.top:member'
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Top"'

@@ -1,7 +1,6 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.ThreeArrowsGraySet:interface'
-    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ThreeArrowsGraySet
     fullName: Excel.ThreeArrowsGraySet
     langs:

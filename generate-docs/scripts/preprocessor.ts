@@ -70,6 +70,7 @@ tryCatch(async () => {
 
     let releaseDefinitions = cleanUpDts(localReleaseDtsPath);
     let previewDefinitions = cleanUpDts(localPreviewDtsPath);
+    fsx.writeFileSync("text.txt", releaseDefinitions);
 
     const dtsBuilder = new DtsBuilder();
 
@@ -92,7 +93,7 @@ tryCatch(async () => {
 
     console.log("\ncreate file: excel.d.ts (release)");
     fsx.writeFileSync(
-        '../api-extractor-inputs-excel-release/excel_1_9/excel.d.ts',
+        '../api-extractor-inputs-excel-release/excel_online/excel.d.ts',
         handleCommonImports(handleLiteralParameterOverloads(excelSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs"))), "Other", true)
     );
 
@@ -230,8 +231,7 @@ tryCatch(async () => {
 });
 
 function excelSpecificCleanup(dtsContent: string) {
-    return dtsContent.replace(/export interface .*Set {\n.*Icon;/gm, `/** [Api set: ExcelApi 1.2] */\n\t$&`)
-        .replace("readonly runtime: Runtime;", "/** [Api set: ExcelApi 1.5] */\n\t\treadonly runtime: Runtime;")
+    return dtsContent.replace(/export interface .*Set {\r?\n.*Icon;/gm, `/** [Api set: ExcelApi 1.2] */\n\t$&`)
         .replace("export interface IconCollections {", "/** [Api set: ExcelApi 1.2] */\n\texport interface IconCollections {")
         .replace("var icons: IconCollections;", "/** [Api set: ExcelApi 1.2] */\n\tvar icons: IconCollections;");
 }

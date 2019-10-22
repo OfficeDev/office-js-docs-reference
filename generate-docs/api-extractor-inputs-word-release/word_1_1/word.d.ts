@@ -14,7 +14,7 @@ export declare namespace Word {
      */
     export class Body extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Gets the collection of rich text content control objects in the body. Read-only.
@@ -298,11 +298,10 @@ export declare namespace Word {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Word.Body;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Body;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Word.Body;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -325,7 +324,7 @@ export declare namespace Word {
      */
     export class ContentControl extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Gets the collection of content control objects in the content control. Read-only.
@@ -684,11 +683,10 @@ export declare namespace Word {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Word.ContentControl;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.ContentControl;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Word.ContentControl;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -711,7 +709,7 @@ export declare namespace Word {
      */
     export class ContentControlCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Word.ContentControl[];
         /**
@@ -800,7 +798,7 @@ export declare namespace Word {
      */
     export class Document extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
@@ -879,11 +877,10 @@ export declare namespace Word {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Word.Document;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Document;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Word.Document;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -908,7 +905,7 @@ export declare namespace Word {
      */
     export class Font extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
@@ -1022,11 +1019,10 @@ export declare namespace Word {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Word.Font;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Font;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Word.Font;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -1049,7 +1045,7 @@ export declare namespace Word {
      */
     export class InlinePicture extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         
         /**
          *
@@ -1175,11 +1171,10 @@ export declare namespace Word {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Word.InlinePicture;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.InlinePicture;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Word.InlinePicture;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -1202,7 +1197,7 @@ export declare namespace Word {
      */
     export class InlinePictureCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Word.InlinePicture[];
         
@@ -1254,7 +1249,7 @@ export declare namespace Word {
      */
     export class Paragraph extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Gets the collection of content control objects in the paragraph. Read-only.
@@ -1640,11 +1635,10 @@ export declare namespace Word {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Word.Paragraph;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Paragraph;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Word.Paragraph;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -1667,7 +1661,7 @@ export declare namespace Word {
      */
     export class ParagraphCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Word.Paragraph[];
         
@@ -1718,7 +1712,7 @@ export declare namespace Word {
      */
     export class Range extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Gets the collection of content control objects in the range. Read-only.
@@ -2015,11 +2009,10 @@ export declare namespace Word {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Word.Range;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Range;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Word.Range;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -2042,7 +2035,7 @@ export declare namespace Word {
      */
     export class RangeCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Word.Range[];
         
@@ -2091,7 +2084,7 @@ export declare namespace Word {
      */
     export class SearchOptions extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         matchWildCards: boolean;
         /**
          *
@@ -2177,11 +2170,10 @@ export declare namespace Word {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Word.SearchOptions;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.SearchOptions;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Word.SearchOptions;
         /**
          * Create a new instance of Word.SearchOptions object
          */
@@ -2200,7 +2192,7 @@ export declare namespace Word {
      */
     export class Section extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /**
          *
          * Gets the body object of the section. This does not include the header/footer and other section metadata. Read-only.
@@ -2281,11 +2273,10 @@ export declare namespace Word {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Word.Section;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Section;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Word.Section;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -2308,7 +2299,7 @@ export declare namespace Word {
      */
     export class SectionCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-        context: RequestContext; 
+        context: RequestContext;
         /** Gets the loaded child items in this collection. */
         readonly items: Word.Section[];
         

@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.CommentData:interface'
+    summary: An interface describing the data returned by calling `comment.toJSON()`<!-- -->.
+    name: Excel.Interfaces.CommentData
+    fullName: Excel.Interfaces.CommentData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

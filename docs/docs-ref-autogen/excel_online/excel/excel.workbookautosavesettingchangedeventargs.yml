@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface'
+    summary: |-
+      Provides information about the workbook's onAutoSaveSettingChanged event.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.WorkbookAutoSaveSettingChangedEventArgs
+    fullName: Excel.WorkbookAutoSaveSettingChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.WorkbookAutoSaveSettingChangedEventArgs#type:member'
+  - uid: 'excel!Excel.WorkbookAutoSaveSettingChangedEventArgs#type:member'
+    summary: |-
+      Represents the type of the event. See Excel.EventType for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "WorkbookAutoSaveSettingChanged";'
+      return:
+        type:
+          - '"WorkbookAutoSaveSettingChanged"'

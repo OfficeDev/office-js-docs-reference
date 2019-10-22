@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartGradientStyleType:enum'
+    summary: |-
+      Represents the gradient style type of a chart series. This is only applicable for region map charts.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartGradientStyleType
+    fullName: Excel.ChartGradientStyleType
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.ChartGradientStyleType.extremeValue:member'
+      - 'excel!Excel.ChartGradientStyleType.number:member'
+      - 'excel!Excel.ChartGradientStyleType.percent:member'
+  - uid: 'excel!Excel.ChartGradientStyleType.extremeValue:member'
+    name: extremeValue
+    fullName: extremeValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ExtremeValue"'
+  - uid: 'excel!Excel.ChartGradientStyleType.number:member'
+    name: number
+    fullName: number
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Number"'
+  - uid: 'excel!Excel.ChartGradientStyleType.percent:member'
+    name: percent
+    fullName: percent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Percent"'

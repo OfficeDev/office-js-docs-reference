@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TimelineStyleUpdateData:interface'
+    summary: 'An interface for updating data on the TimelineStyle object, for use in `timelineStyle.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.TimelineStyleUpdateData
+    fullName: Excel.Interfaces.TimelineStyleUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.TimelineStyleUpdateData#name:member'
+  - uid: 'excel!Excel.Interfaces.TimelineStyleUpdateData#name:member'
+    summary: |-
+      Gets the name of the TimelineStyle.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string

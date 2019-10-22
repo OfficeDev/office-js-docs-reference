@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'custom-functions-runtime!CustomFunctions.CancelableInvocation:interface'
+    summary: >-
+      Provides information about the invocation of a cancelable custom function. A cancelable custom function can
+      provide a handler for the onCanceled event.
+
+
+      To indicate that a function is cancelable, in the metadata JSON file, the function options should specify: `{
+      "cancelable": true }`
+
+
+      If the metadata JSON file is being generated from JSDoc comments, include the tag `@cancelable`<!-- -->.
+    name: CustomFunctions.CancelableInvocation
+    fullName: CustomFunctions.CancelableInvocation
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'custom-functions-runtime!CustomFunctions.Invocation:interface'
+    package: custom-functions-runtime!
+    children:
+      - 'custom-functions-runtime!CustomFunctions.CancelableInvocation#onCanceled:member'
+  - uid: 'custom-functions-runtime!CustomFunctions.CancelableInvocation#onCanceled:member'
+    summary: Event handler called when the custom function is canceled.
+    name: onCanceled
+    fullName: onCanceled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onCanceled: () => void;'
+      return:
+        type:
+          - () => void
+references:
+  - uid: 'custom-functions-runtime!CustomFunctions.Invocation:interface'
+    name: Invocation

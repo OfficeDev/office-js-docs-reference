@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConnectorType:enum'
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ConnectorType
+    fullName: Excel.ConnectorType
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.ConnectorType.curve:member'
+      - 'excel!Excel.ConnectorType.elbow:member'
+      - 'excel!Excel.ConnectorType.straight:member'
+  - uid: 'excel!Excel.ConnectorType.curve:member'
+    name: curve
+    fullName: curve
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Curve"'
+  - uid: 'excel!Excel.ConnectorType.elbow:member'
+    name: elbow
+    fullName: elbow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Elbow"'
+  - uid: 'excel!Excel.ConnectorType.straight:member'
+    name: straight
+    fullName: straight
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Straight"'

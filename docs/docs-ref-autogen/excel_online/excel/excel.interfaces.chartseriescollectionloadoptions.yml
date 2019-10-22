@@ -1,0 +1,813 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface'
+    summary: |-
+      Represents a collection of chart series.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartSeriesCollectionLoadOptions
+    fullName: Excel.Interfaces.ChartSeriesCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#axisGroup:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#binOptions:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#boxwhiskerOptions:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#bubbleScale:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#chartType:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#dataLabels:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#doughnutHoleSize:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#explosion:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#filtered:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#firstSliceAngle:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gapWidth:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMaximumColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMaximumType:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMaximumValue:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMidpointColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMidpointType:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMidpointValue:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMinimumColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMinimumType:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMinimumValue:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientStyle:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#hasDataLabels:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#invertColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#invertIfNegative:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#mapOptions:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerBackgroundColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerForegroundColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerSize:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerStyle:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#overlap:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#parentLabelStrategy:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#plotOrder:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#points:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#secondPlotSize:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#showConnectorLines:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#showLeaderLines:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#showShadow:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#smooth:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#splitType:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#splitValue:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#varyByCategories:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#xErrorBars:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#yErrorBars:member'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#axisGroup:member'
+    summary: |-
+      For EACH ITEM in the collection: Returns or sets the group for the specified series. Read/Write
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: axisGroup
+    fullName: axisGroup
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'axisGroup?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#binOptions:member'
+    summary: |-
+      For EACH ITEM in the collection: Encapsulates the bin options for histogram charts and pareto charts.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: binOptions
+    fullName: binOptions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'binOptions?: Excel.Interfaces.ChartBinOptionsLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#boxwhiskerOptions:member'
+    summary: |-
+      For EACH ITEM in the collection: Encapsulates the options for the box and whisker charts.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: boxwhiskerOptions
+    fullName: boxwhiskerOptions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'boxwhiskerOptions?: Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#bubbleScale:member'
+    summary: >-
+      For EACH ITEM in the collection: This can be an integer value from 0 (zero) to 300, representing the percentage of
+      the default size. This property only applies to bubble charts. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bubbleScale
+    fullName: bubbleScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bubbleScale?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#chartType:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents the chart type of a series. See Excel.ChartType for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: chartType
+    fullName: chartType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'chartType?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#dataLabels:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents a collection of all dataLabels in the series.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dataLabels
+    fullName: dataLabels
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#doughnutHoleSize:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents the doughnut hole size of a chart series. Only valid on doughnut and
+      doughnutExploded charts. Throws an invalid argument exception on invalid charts.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: doughnutHoleSize
+    fullName: doughnutHoleSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'doughnutHoleSize?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#explosion:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns or sets the explosion value for a pie-chart or doughnut-chart slice.
+      Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie). Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: explosion
+    fullName: explosion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'explosion?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#filtered:member'
+    summary: >-
+      For EACH ITEM in the collection: Boolean value representing if the series is filtered or not. Not applicable for
+      surface charts.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: filtered
+    fullName: filtered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'filtered?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#firstSliceAngle:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns or sets the angle of the first pie-chart or doughnut-chart slice, in
+      degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0
+      through 360. Read/Write
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: firstSliceAngle
+    fullName: firstSliceAngle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'firstSliceAngle?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#format:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents the formatting of a chart series, which includes fill and line
+      formatting.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gapWidth:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents the gap width of a chart series. Only valid on bar and column charts,
+      as well as specific classes of line and pie charts. Throws an invalid argument exception on invalid charts.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gapWidth
+    fullName: gapWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gapWidth?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMaximumColor:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns or sets the color for maximum value of a region map chart series.
+      Read/Write.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientMaximumColor
+    fullName: gradientMaximumColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientMaximumColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMaximumType:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns or sets the type for maximum value of a region map chart series.
+      Read/Write.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientMaximumType
+    fullName: gradientMaximumType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientMaximumType?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMaximumValue:member'
+    summary: |-
+      For EACH ITEM in the collection: Returns or sets the maximum value of a region map chart series. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientMaximumValue
+    fullName: gradientMaximumValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientMaximumValue?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMidpointColor:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns or sets the color for midpoint value of a region map chart series.
+      Read/Write.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientMidpointColor
+    fullName: gradientMidpointColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientMidpointColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMidpointType:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns or sets the type for midpoint value of a region map chart series.
+      Read/Write.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientMidpointType
+    fullName: gradientMidpointType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientMidpointType?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMidpointValue:member'
+    summary: |-
+      For EACH ITEM in the collection: Returns or sets the midpoint value of a region map chart series. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientMidpointValue
+    fullName: gradientMidpointValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientMidpointValue?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMinimumColor:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns or sets the color for minimum value of a region map chart series.
+      Read/Write.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientMinimumColor
+    fullName: gradientMinimumColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientMinimumColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMinimumType:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns or sets the type for minimum value of a region map chart series.
+      Read/Write.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientMinimumType
+    fullName: gradientMinimumType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientMinimumType?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMinimumValue:member'
+    summary: |-
+      For EACH ITEM in the collection: Returns or sets the minimum value of a region map chart series. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientMinimumValue
+    fullName: gradientMinimumValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientMinimumValue?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientStyle:member'
+    summary: |-
+      For EACH ITEM in the collection: Returns or sets series gradient style of a region map chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientStyle
+    fullName: gradientStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientStyle?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#hasDataLabels:member'
+    summary: |-
+      For EACH ITEM in the collection: Boolean value representing if the series has data labels or not.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: hasDataLabels
+    fullName: hasDataLabels
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasDataLabels?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#invertColor:member'
+    summary: |-
+      For EACH ITEM in the collection: Returns or sets the fill color for negative data points in a series. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: invertColor
+    fullName: invertColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'invertColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#invertIfNegative:member'
+    summary: >-
+      For EACH ITEM in the collection: True if Microsoft Excel inverts the pattern in the item when it corresponds to a
+      negative number. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: invertIfNegative
+    fullName: invertIfNegative
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'invertIfNegative?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#mapOptions:member'
+    summary: |-
+      For EACH ITEM in the collection: Encapsulates the options for a region map chart.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: mapOptions
+    fullName: mapOptions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'mapOptions?: Excel.Interfaces.ChartMapOptionsLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ChartMapOptionsLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerBackgroundColor:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents markers background color of a chart series.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: markerBackgroundColor
+    fullName: markerBackgroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerBackgroundColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerForegroundColor:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents markers foreground color of a chart series.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: markerForegroundColor
+    fullName: markerForegroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerForegroundColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerSize:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents marker size of a chart series.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: markerSize
+    fullName: markerSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerSize?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerStyle:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents marker style of a chart series. See Excel.ChartMarkerStyle for
+      details.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: markerStyle
+    fullName: markerStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerStyle?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#name:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents the name of a series in a chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#overlap:member'
+    summary: >-
+      For EACH ITEM in the collection: Specifies how bars and columns are positioned. Can be a value between –100 and
+      100. Applies only to 2-D bar and 2-D column charts. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: overlap
+    fullName: overlap
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overlap?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#parentLabelStrategy:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns or sets the series parent label strategy area for a treemap chart.
+      Read/Write.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: parentLabelStrategy
+    fullName: parentLabelStrategy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentLabelStrategy?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#plotOrder:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents the plot order of a chart series within the chart group.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: plotOrder
+    fullName: plotOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'plotOrder?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#points:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents a collection of all points in the series.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: points
+    fullName: points
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#secondPlotSize:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns or sets the size of the secondary section of either a pie of pie chart or
+      a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: secondPlotSize
+    fullName: secondPlotSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'secondPlotSize?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#showConnectorLines:member'
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether or not connector lines are shown in waterfall charts.
+      Read/Write.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showConnectorLines
+    fullName: showConnectorLines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showConnectorLines?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#showLeaderLines:member'
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether or not leader lines are displayed for each data label in the
+      series. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showLeaderLines
+    fullName: showLeaderLines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showLeaderLines?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#showShadow:member'
+    summary: |-
+      For EACH ITEM in the collection: Boolean value representing if the series has a shadow or not.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showShadow
+    fullName: showShadow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showShadow?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#smooth:member'
+    summary: >-
+      For EACH ITEM in the collection: Boolean value representing if the series is smooth or not. Only applicable to
+      line and scatter charts.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: smooth
+    fullName: smooth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'smooth?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#splitType:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns or sets the way the two sections of either a pie of pie chart or a bar of
+      pie chart are split. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: splitType
+    fullName: splitType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'splitType?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#splitValue:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns or sets the threshold value that separates two sections of either a
+      pie-of-pie chart or a bar-of-pie chart. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: splitValue
+    fullName: splitValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'splitValue?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#varyByCategories:member'
+    summary: >-
+      For EACH ITEM in the collection: True if Microsoft Excel assigns a different color or pattern to each data marker.
+      The chart must contain only one series. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: varyByCategories
+    fullName: varyByCategories
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'varyByCategories?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#xErrorBars:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents the error bar object of a chart series.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: xErrorBars
+    fullName: xErrorBars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'xErrorBars?: Excel.Interfaces.ChartErrorBarsLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#yErrorBars:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents the error bar object of a chart series.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: yErrorBars
+    fullName: yErrorBars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yErrorBars?: Excel.Interfaces.ChartErrorBarsLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions:interface'
+    name: Excel.Interfaces.ChartBinOptionsLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions:interface'
+    name: Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
+    name: Excel.Interfaces.ChartDataLabelsLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface'
+    name: Excel.Interfaces.ChartSeriesFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsLoadOptions:interface'
+    name: Excel.Interfaces.ChartMapOptionsLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface'
+    name: Excel.Interfaces.ChartPointsCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions:interface'
+    name: Excel.Interfaces.ChartErrorBarsLoadOptions

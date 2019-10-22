@@ -1,0 +1,195 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.IconSet:enum'
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.IconSet
+    fullName: Excel.IconSet
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.IconSet.fiveArrows:member'
+      - 'excel!Excel.IconSet.fiveArrowsGray:member'
+      - 'excel!Excel.IconSet.fiveBoxes:member'
+      - 'excel!Excel.IconSet.fiveQuarters:member'
+      - 'excel!Excel.IconSet.fiveRating:member'
+      - 'excel!Excel.IconSet.fourArrows:member'
+      - 'excel!Excel.IconSet.fourArrowsGray:member'
+      - 'excel!Excel.IconSet.fourRating:member'
+      - 'excel!Excel.IconSet.fourRedToBlack:member'
+      - 'excel!Excel.IconSet.fourTrafficLights:member'
+      - 'excel!Excel.IconSet.invalid:member'
+      - 'excel!Excel.IconSet.linkedEntityFinanceIcon:member'
+      - 'excel!Excel.IconSet.linkedEntityMapIcon:member'
+      - 'excel!Excel.IconSet.threeArrows:member'
+      - 'excel!Excel.IconSet.threeArrowsGray:member'
+      - 'excel!Excel.IconSet.threeFlags:member'
+      - 'excel!Excel.IconSet.threeSigns:member'
+      - 'excel!Excel.IconSet.threeStars:member'
+      - 'excel!Excel.IconSet.threeSymbols:member'
+      - 'excel!Excel.IconSet.threeSymbols2:member'
+      - 'excel!Excel.IconSet.threeTrafficLights1:member'
+      - 'excel!Excel.IconSet.threeTrafficLights2:member'
+      - 'excel!Excel.IconSet.threeTriangles:member'
+  - uid: 'excel!Excel.IconSet.fiveArrows:member'
+    name: fiveArrows
+    fullName: fiveArrows
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FiveArrows"'
+  - uid: 'excel!Excel.IconSet.fiveArrowsGray:member'
+    name: fiveArrowsGray
+    fullName: fiveArrowsGray
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FiveArrowsGray"'
+  - uid: 'excel!Excel.IconSet.fiveBoxes:member'
+    name: fiveBoxes
+    fullName: fiveBoxes
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FiveBoxes"'
+  - uid: 'excel!Excel.IconSet.fiveQuarters:member'
+    name: fiveQuarters
+    fullName: fiveQuarters
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FiveQuarters"'
+  - uid: 'excel!Excel.IconSet.fiveRating:member'
+    name: fiveRating
+    fullName: fiveRating
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FiveRating"'
+  - uid: 'excel!Excel.IconSet.fourArrows:member'
+    name: fourArrows
+    fullName: fourArrows
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FourArrows"'
+  - uid: 'excel!Excel.IconSet.fourArrowsGray:member'
+    name: fourArrowsGray
+    fullName: fourArrowsGray
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FourArrowsGray"'
+  - uid: 'excel!Excel.IconSet.fourRating:member'
+    name: fourRating
+    fullName: fourRating
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FourRating"'
+  - uid: 'excel!Excel.IconSet.fourRedToBlack:member'
+    name: fourRedToBlack
+    fullName: fourRedToBlack
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FourRedToBlack"'
+  - uid: 'excel!Excel.IconSet.fourTrafficLights:member'
+    name: fourTrafficLights
+    fullName: fourTrafficLights
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FourTrafficLights"'
+  - uid: 'excel!Excel.IconSet.invalid:member'
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: 'excel!Excel.IconSet.linkedEntityFinanceIcon:member'
+    name: linkedEntityFinanceIcon
+    fullName: linkedEntityFinanceIcon
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LinkedEntityFinanceIcon"'
+  - uid: 'excel!Excel.IconSet.linkedEntityMapIcon:member'
+    name: linkedEntityMapIcon
+    fullName: linkedEntityMapIcon
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LinkedEntityMapIcon"'
+  - uid: 'excel!Excel.IconSet.threeArrows:member'
+    name: threeArrows
+    fullName: threeArrows
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThreeArrows"'
+  - uid: 'excel!Excel.IconSet.threeArrowsGray:member'
+    name: threeArrowsGray
+    fullName: threeArrowsGray
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThreeArrowsGray"'
+  - uid: 'excel!Excel.IconSet.threeFlags:member'
+    name: threeFlags
+    fullName: threeFlags
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThreeFlags"'
+  - uid: 'excel!Excel.IconSet.threeSigns:member'
+    name: threeSigns
+    fullName: threeSigns
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThreeSigns"'
+  - uid: 'excel!Excel.IconSet.threeStars:member'
+    name: threeStars
+    fullName: threeStars
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThreeStars"'
+  - uid: 'excel!Excel.IconSet.threeSymbols:member'
+    name: threeSymbols
+    fullName: threeSymbols
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThreeSymbols"'
+  - uid: 'excel!Excel.IconSet.threeSymbols2:member'
+    name: threeSymbols2
+    fullName: threeSymbols2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThreeSymbols2"'
+  - uid: 'excel!Excel.IconSet.threeTrafficLights1:member'
+    name: threeTrafficLights1
+    fullName: threeTrafficLights1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThreeTrafficLights1"'
+  - uid: 'excel!Excel.IconSet.threeTrafficLights2:member'
+    name: threeTrafficLights2
+    fullName: threeTrafficLights2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThreeTrafficLights2"'
+  - uid: 'excel!Excel.IconSet.threeTriangles:member'
+    name: threeTriangles
+    fullName: threeTriangles
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThreeTriangles"'

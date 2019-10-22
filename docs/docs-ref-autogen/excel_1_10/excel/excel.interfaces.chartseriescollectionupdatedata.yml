@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the ChartSeriesCollection object, for use in `chartSeriesCollection.set({ ...
+      })`<!-- -->.
+    name: Excel.Interfaces.ChartSeriesCollectionUpdateData
+    fullName: Excel.Interfaces.ChartSeriesCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionUpdateData#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.ChartSeriesData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ChartSeriesCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.ChartSeriesData[]'
+    fullName: 'Excel.Interfaces.ChartSeriesData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.ChartSeriesData:interface'
+        name: Excel.Interfaces.ChartSeriesData
+        fullName: Excel.Interfaces.ChartSeriesData
+      - name: '[]'
+        fullName: '[]'
