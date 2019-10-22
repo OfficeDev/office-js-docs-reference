@@ -108,6 +108,7 @@ items:
       - 'excel!Excel.ChartSeries:class'
       - 'excel!Excel.ChartSeriesBy:enum'
       - 'excel!Excel.ChartSeriesCollection:class'
+      - 'excel!Excel.ChartSeriesDimension:enum'
       - 'excel!Excel.ChartSeriesFormat:class'
       - 'excel!Excel.ChartSplitType:enum'
       - 'excel!Excel.ChartTextHorizontalAlignment:enum'
@@ -1338,6 +1339,8 @@ references:
     name: Excel.ChartSeriesBy
   - uid: 'excel!Excel.ChartSeriesCollection:class'
     name: Excel.ChartSeriesCollection
+  - uid: 'excel!Excel.ChartSeriesDimension:enum'
+    name: Excel.ChartSeriesDimension
   - uid: 'excel!Excel.ChartSeriesFormat:class'
     name: Excel.ChartSeriesFormat
   - uid: 'excel!Excel.ChartSplitType:enum'

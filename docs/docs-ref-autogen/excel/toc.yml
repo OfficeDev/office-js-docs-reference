@@ -116,6 +116,8 @@ items:
                 uid: 'excel!Excel.ChartPlotBy:enum'
               - name: ChartSeriesBy
                 uid: 'excel!Excel.ChartSeriesBy:enum'
+              - name: ChartSeriesDimension
+                uid: 'excel!Excel.ChartSeriesDimension:enum'
               - name: ChartSplitType
                 uid: 'excel!Excel.ChartSplitType:enum'
               - name: ChartTextHorizontalAlignment
