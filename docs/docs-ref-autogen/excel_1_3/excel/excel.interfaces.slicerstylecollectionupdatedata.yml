@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.SlicerStyleCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the SlicerStyleCollection object, for use in `slicerStyleCollection.set({ ...
+      })`<!-- -->.
+    name: Excel.Interfaces.SlicerStyleCollectionUpdateData
+    fullName: Excel.Interfaces.SlicerStyleCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.SlicerStyleCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.SlicerStyleCollectionUpdateData#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.SlicerStyleData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.SlicerStyleCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.SlicerStyleCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.SlicerStyleData[]'
+    fullName: 'Excel.Interfaces.SlicerStyleData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.SlicerStyleData:interface'
+        name: Excel.Interfaces.SlicerStyleData
+        fullName: Excel.Interfaces.SlicerStyleData
+      - name: '[]'
+        fullName: '[]'

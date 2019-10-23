@@ -172,6 +172,7 @@ items:
       - 'excel!Excel.ConnectorType:enum'
       - 'excel!Excel.ContentType:enum'
       - 'excel!Excel.createWorkbook:function(1)'
+      - 'excel!Excel.CultureInfo:class'
       - 'excel!Excel.CustomConditionalFormat:class'
       - 'excel!Excel.CustomDataValidation:interface'
       - 'excel!Excel.CustomFunctionMetadataFormat:enum'
@@ -425,6 +426,8 @@ items:
       - 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
       - 'excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface'
       - 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
+      - 'excel!Excel.Interfaces.CultureInfoData:interface'
+      - 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
       - 'excel!Excel.Interfaces.CustomConditionalFormatData:interface'
       - 'excel!Excel.Interfaces.CustomConditionalFormatLoadOptions:interface'
       - 'excel!Excel.Interfaces.CustomConditionalFormatUpdateData:interface'
@@ -500,6 +503,8 @@ items:
       - 'excel!Excel.Interfaces.NamedItemData:interface'
       - 'excel!Excel.Interfaces.NamedItemLoadOptions:interface'
       - 'excel!Excel.Interfaces.NamedItemUpdateData:interface'
+      - 'excel!Excel.Interfaces.NumberFormatInfoData:interface'
+      - 'excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface'
       - 'excel!Excel.Interfaces.PageBreakCollectionData:interface'
       - 'excel!Excel.Interfaces.PageBreakCollectionLoadOptions:interface'
       - 'excel!Excel.Interfaces.PageBreakCollectionUpdateData:interface'
@@ -702,6 +707,7 @@ items:
       - 'excel!Excel.NamedItemCollection:class'
       - 'excel!Excel.NamedItemScope:enum'
       - 'excel!Excel.NamedItemType:enum'
+      - 'excel!Excel.NumberFormatInfo:class'
       - 'excel!Excel.PageBreak:class'
       - 'excel!Excel.PageBreakCollection:class'
       - 'excel!Excel.PageLayout:class'
@@ -1091,21 +1097,6 @@ items:
       Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
       previously-created object. When the promise is resolved, any tracked objects that were automatically allocated
       during execution will be released.
-    remarks: >-
-      In addition to this signature, the method also has the following signatures:
-
-
-      `run<T>(object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;`
-
-
-      `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => Promise<T>):
-      Promise<T>;`
-
-
-      `run<T>(options: Excel.RunOptions, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;`
-
-
-      `run<T>(batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;`
     name: 'Excel.run(context, batch)'
     fullName: 'Excel.run(context, batch)'
     langs:
@@ -1474,6 +1465,8 @@ references:
         fullName: Promise
       - name: <void>
         fullName: <void>
+  - uid: 'excel!Excel.CultureInfo:class'
+    name: Excel.CultureInfo
   - uid: 'excel!Excel.CustomConditionalFormat:class'
     name: Excel.CustomConditionalFormat
   - uid: 'excel!Excel.CustomDataValidation:interface'
@@ -1978,6 +1971,10 @@ references:
     name: Excel.Interfaces.ConditionalRangeFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
     name: Excel.Interfaces.ConditionalRangeFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.CultureInfoData:interface'
+    name: Excel.Interfaces.CultureInfoData
+  - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
+    name: Excel.Interfaces.CultureInfoLoadOptions
   - uid: 'excel!Excel.Interfaces.CustomConditionalFormatData:interface'
     name: Excel.Interfaces.CustomConditionalFormatData
   - uid: 'excel!Excel.Interfaces.CustomConditionalFormatLoadOptions:interface'
@@ -2128,6 +2125,10 @@ references:
     name: Excel.Interfaces.NamedItemLoadOptions
   - uid: 'excel!Excel.Interfaces.NamedItemUpdateData:interface'
     name: Excel.Interfaces.NamedItemUpdateData
+  - uid: 'excel!Excel.Interfaces.NumberFormatInfoData:interface'
+    name: Excel.Interfaces.NumberFormatInfoData
+  - uid: 'excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface'
+    name: Excel.Interfaces.NumberFormatInfoLoadOptions
   - uid: 'excel!Excel.Interfaces.PageBreakCollectionData:interface'
     name: Excel.Interfaces.PageBreakCollectionData
   - uid: 'excel!Excel.Interfaces.PageBreakCollectionLoadOptions:interface'
@@ -2532,6 +2533,8 @@ references:
     name: Excel.NamedItemScope
   - uid: 'excel!Excel.NamedItemType:enum'
     name: Excel.NamedItemType
+  - uid: 'excel!Excel.NumberFormatInfo:class'
+    name: Excel.NumberFormatInfo
   - uid: 'excel!Excel.PageBreak:class'
     name: Excel.PageBreak
   - uid: 'excel!Excel.PageBreakCollection:class'

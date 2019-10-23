@@ -18,6 +18,8 @@
           "excel_1_7/**",
           "excel_1_8/**",
           "excel_1_9/**",
+          "excel_1_10/**",
+          "excel_online/**",
           "office/**",
           "onenote/**",
           "outlook/**",
@@ -85,6 +87,10 @@
           "excel_1_8.yml",
           "excel_1_9/**",
           "excel_1_9.yml",
+          "excel_1_10/**",
+          "excel_1_10.yml",
+          "excel_online/**",
+          "excel_online.yml",
           "office/**",
           "office.yml",
           "onenote/**",
@@ -800,6 +806,76 @@
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
+    
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "excel-js-1.10",
+      "src": "docs-ref-autogen/excel_1_10",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "excel-js-1.10",
+      "src": "docs-ref-autogen/office",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "excel_1_10.yml"
+      ],
+      "group": "excel-js-1.10",
+      "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "toc.yml"
+      ],
+      "group": "excel-js-1.10",
+      "src": "breadcrumb",
+      "dest": "office_js_breadcrumb"
+    },
+    
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "excel-js-online",
+      "src": "docs-ref-autogen/excel_online",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "excel-js-online",
+      "src": "docs-ref-autogen/office",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "excel_online.yml"
+      ],
+      "group": "excel-js-online",
+      "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "toc.yml"
+      ],
+      "group": "excel-js-online",
+      "src": "breadcrumb",
+      "dest": "office_js_breadcrumb"
+    },
 
     {
       "files": [
@@ -1157,6 +1233,14 @@
         "dest": "excel-js-1.9",
         "moniker_range": "excel-js-1.9"
       },
+      "excel-js-1.10": {
+        "dest": "excel-js-1.10",
+        "moniker_range": "excel-js-1.10"
+      },
+      "excel-js-online": {
+        "dest": "excel-js-online",
+        "moniker_range": "excel-js-online"
+      },
       "onenote-js-1.1": {
         "dest": "onenote-js-1.1",
         "moniker_range": "onenote-js-1.1"
@@ -1288,6 +1372,18 @@
         "docs-ref-autogen/excel_1_9/excel/**": [
           "excel 1.9"
         ],
+        "docs-ref-autogen/excel_1_10/**": [
+          "excel 1.10"
+        ],
+        "docs-ref-autogen/excel_1_10/excel/**": [
+          "excel 1.10"
+        ],
+        "docs-ref-autogen/excel_online/**": [
+          "excel online"
+        ],
+        "docs-ref-autogen/excel_online/excel/**": [
+          "excel online"
+        ],
         "docs-ref-autogen/office/**": [
           "common"
         ],
@@ -1400,6 +1496,8 @@
         "docs-ref-autogen/excel_1_7/**": "excel",
         "docs-ref-autogen/excel_1_8/**": "excel",
         "docs-ref-autogen/excel_1_9/**": "excel",
+        "docs-ref-autogen/excel_1_10/**": "excel",
+        "docs-ref-autogen/excel_online/**": "excel",
         "docs-ref-autogen/excel_1_1/excel/**": "excel",
         "docs-ref-autogen/excel_1_2/excel/**": "excel",
         "docs-ref-autogen/excel_1_3/excel/**": "excel",
@@ -1409,6 +1507,8 @@
         "docs-ref-autogen/excel_1_7/excel/**": "excel",
         "docs-ref-autogen/excel_1_8/excel/**": "excel",
         "docs-ref-autogen/excel_1_9/excel/**": "excel",
+        "docs-ref-autogen/excel_1_10/excel/**": "excel",
+        "docs-ref-autogen/excel_online/excel/**": "excel",
         "docs-ref-autogen/office/**": "non-product-specific",
         "docs-ref-autogen/office/office/**": "non-product-specific",
         "docs-ref-autogen/onenote/**": "onenote",

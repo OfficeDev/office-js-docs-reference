@@ -1,0 +1,208 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.RangeAreasLoadOptions:interface'
+    summary: >-
+      RangeAreas represents a collection of one or more rectangular ranges in the same worksheet. To learn how to use
+      discontinguous ranges, read [Work with multiple ranges simultaneously in Excel
+      add-ins](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)<!-- -->.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.RangeAreasLoadOptions
+    fullName: Excel.Interfaces.RangeAreasLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.RangeAreasLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.RangeAreasLoadOptions#address:member'
+      - 'excel!Excel.Interfaces.RangeAreasLoadOptions#addressLocal:member'
+      - 'excel!Excel.Interfaces.RangeAreasLoadOptions#areaCount:member'
+      - 'excel!Excel.Interfaces.RangeAreasLoadOptions#cellCount:member'
+      - 'excel!Excel.Interfaces.RangeAreasLoadOptions#dataValidation:member'
+      - 'excel!Excel.Interfaces.RangeAreasLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.RangeAreasLoadOptions#isEntireColumn:member'
+      - 'excel!Excel.Interfaces.RangeAreasLoadOptions#isEntireRow:member'
+      - 'excel!Excel.Interfaces.RangeAreasLoadOptions#style:member'
+      - 'excel!Excel.Interfaces.RangeAreasLoadOptions#worksheet:member'
+  - uid: 'excel!Excel.Interfaces.RangeAreasLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeAreasLoadOptions#address:member'
+    summary: >-
+      Returns the RageAreas reference in A1-style. Address value will contain the worksheet name for each rectangular
+      block of cells (e.g. "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeAreasLoadOptions#addressLocal:member'
+    summary: |-
+      Returns the RageAreas reference in the user locale. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: addressLocal
+    fullName: addressLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'addressLocal?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeAreasLoadOptions#areaCount:member'
+    summary: |-
+      Returns the number of rectangular ranges that comprise this RangeAreas object.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: areaCount
+    fullName: areaCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'areaCount?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeAreasLoadOptions#cellCount:member'
+    summary: >-
+      Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual
+      rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: cellCount
+    fullName: cellCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cellCount?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeAreasLoadOptions#dataValidation:member'
+    summary: |-
+      Returns a dataValidation object for all ranges in the RangeAreas.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dataValidation
+    fullName: dataValidation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dataValidation?: Excel.Interfaces.DataValidationLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.DataValidationLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.RangeAreasLoadOptions#format:member'
+    summary: >-
+      Returns a rangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all
+      ranges in the RangeAreas object.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.RangeFormatLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.RangeFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.RangeAreasLoadOptions#isEntireColumn:member'
+    summary: |-
+      Indicates whether all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z"). Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isEntireColumn
+    fullName: isEntireColumn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isEntireColumn?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeAreasLoadOptions#isEntireRow:member'
+    summary: |-
+      Indicates whether all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7"). Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isEntireRow
+    fullName: isEntireRow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isEntireRow?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeAreasLoadOptions#style:member'
+    summary: >-
+      Represents the style for all ranges in this RangeAreas object. If the styles of the cells are inconsistent, null
+      will be returned. For custom styles, the style name will be returned. For built-in styles, a string representing a
+      value in the BuiltInStyle enum will be returned.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeAreasLoadOptions#worksheet:member'
+    summary: |-
+      Returns the worksheet for the current RangeAreas.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions:interface'
+    name: Excel.Interfaces.DataValidationLoadOptions
+  - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions:interface'
+    name: Excel.Interfaces.RangeFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+    name: Excel.Interfaces.WorksheetLoadOptions

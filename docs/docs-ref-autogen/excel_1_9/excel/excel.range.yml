@@ -148,9 +148,11 @@ items:
   - uid: 'excel!Excel.Range#autoFill:member(1)'
     summary: >-
       Fills range from the current range to the destination range using the specified AutoFill logic. The destination
-      range can be null, or can extend the source either horizontally or vertically. If the destination range is null,
-      data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill
-      handle). For more information, read [Use AutoFill and Flash
+      range can be null, or can extend the source either horizontally or vertically. Discontiguous ranges are not
+      supported.
+
+
+      For more information, read [Use AutoFill and Flash
       Fill](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!--
       -->.
 
@@ -185,7 +187,9 @@ items:
           ```
       parameters:
         - id: destinationRange
-          description: The destination range to autofill. Discontiguous ranges are not supported.
+          description: >-
+            The destination range to autofill. If the destination range is null, data is filled out based on the
+            surrounding cells (which is the behavior when double-clicking the UI’s range fill handle).
           type:
             - 'excel!Excel.Range#autoFill~0:complex'
         - id: autoFillType
@@ -197,9 +201,11 @@ items:
   - uid: 'excel!Excel.Range#autoFill:member(2)'
     summary: >-
       Fills range from the current range to the destination range using the specified AutoFill logic. The destination
-      range can be null, or can extend the source either horizontally or vertically. If the destination range is null,
-      data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill
-      handle). For more information, read [Use AutoFill and Flash
+      range can be null, or can extend the source either horizontally or vertically. Discontiguous ranges are not
+      supported.
+
+
+      For more information, read [Use AutoFill and Flash
       Fill](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!--
       -->.
 
@@ -222,7 +228,9 @@ items:
         description: ''
       parameters:
         - id: destinationRange
-          description: The destination range to autofill. Discontiguous ranges are not supported.
+          description: >-
+            The destination range to autofill. If the destination range is null, data is filled out based on the
+            surrounding cells (which is the behavior when double-clicking the UI’s range fill handle).
           type:
             - 'excel!Excel.Range#autoFill~1:complex'
         - id: autoFillTypeString

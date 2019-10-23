@@ -23,13 +23,10 @@ items:
       - 'excel!Excel.Interfaces.SlicerData#width:member'
       - 'excel!Excel.Interfaces.SlicerData#worksheet:member'
   - uid: 'excel!Excel.Interfaces.SlicerData#caption:member'
-    summary: >-
+    summary: |-
       Represents the caption of slicer.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: caption
     fullName: caption
     langs:
@@ -46,9 +43,7 @@ items:
       format." exception when set with negative value or zero as input.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
     fullName: height
     langs:
@@ -60,13 +55,10 @@ items:
         type:
           - number
   - uid: 'excel!Excel.Interfaces.SlicerData#id:member'
-    summary: >-
+    summary: |-
       Represents the unique id of slicer. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -78,13 +70,10 @@ items:
         type:
           - string
   - uid: 'excel!Excel.Interfaces.SlicerData#isFilterCleared:member'
-    summary: >-
+    summary: |-
       True if all filters currently applied on the slicer are cleared.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isFilterCleared
     fullName: isFilterCleared
     langs:
@@ -101,9 +90,7 @@ items:
       argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: left
     langs:
@@ -115,13 +102,10 @@ items:
         type:
           - number
   - uid: 'excel!Excel.Interfaces.SlicerData#name:member'
-    summary: >-
+    summary: |-
       Represents the name of slicer.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -151,13 +135,10 @@ items:
         type:
           - string
   - uid: 'excel!Excel.Interfaces.SlicerData#slicerItems:member'
-    summary: >-
+    summary: |-
       Represents the collection of SlicerItems that are part of the slicer. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: slicerItems
     fullName: slicerItems
     langs:
@@ -174,9 +155,7 @@ items:
       "Descending".
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sortBy
     fullName: sortBy
     langs:
@@ -194,9 +173,7 @@ items:
       A custom user-defined style present in the workbook can also be specified.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: style
     langs:
@@ -213,9 +190,7 @@ items:
       argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: top
     langs:
@@ -232,9 +207,7 @@ items:
       format." exception when set with negative value or zero as input.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
     fullName: width
     langs:
@@ -246,13 +219,10 @@ items:
         type:
           - number
   - uid: 'excel!Excel.Interfaces.SlicerData#worksheet:member'
-    summary: >-
+    summary: |-
       Represents the worksheet containing the slicer. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
     fullName: worksheet
     langs:

@@ -200,13 +200,10 @@ items:
           type:
             - '"Save" | "SkipSave"'
   - uid: 'excel!Excel.Workbook#comments:member'
-    summary: >-
+    summary: |-
       Represents a collection of Comments associated with the workbook. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: comments
     fullName: comments
     langs:
@@ -348,9 +345,7 @@ items:
       thrown.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getActiveSlicer()
     fullName: getActiveSlicer()
     langs:
@@ -363,13 +358,10 @@ items:
           - 'excel!Excel.Slicer:class'
         description: ''
   - uid: 'excel!Excel.Workbook#getActiveSlicerOrNullObject:member(1)'
-    summary: >-
+    summary: |-
       Gets the currently active slicer in the workbook. If there is no active slicer, a null object is returned.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getActiveSlicerOrNullObject()
     fullName: getActiveSlicerOrNullObject()
     langs:
@@ -629,13 +621,10 @@ items:
         type:
           - 'excel!Excel.PivotTableCollection:class'
   - uid: 'excel!Excel.Workbook#pivotTableStyles:member'
-    summary: >-
+    summary: |-
       Represents a collection of PivotTableStyles associated with the workbook. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pivotTableStyles
     fullName: pivotTableStyles
     langs:
@@ -857,13 +846,10 @@ items:
         type:
           - 'excel!Excel.SettingCollection:class'
   - uid: 'excel!Excel.Workbook#slicers:member'
-    summary: >-
+    summary: |-
       Represents a collection of Slicers associated with the workbook. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: slicers
     fullName: slicers
     langs:
@@ -875,13 +861,10 @@ items:
         type:
           - 'excel!Excel.SlicerCollection:class'
   - uid: 'excel!Excel.Workbook#slicerStyles:member'
-    summary: >-
+    summary: |-
       Represents a collection of SlicerStyles associated with the workbook. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: slicerStyles
     fullName: slicerStyles
     langs:
@@ -950,13 +933,10 @@ items:
         type:
           - 'excel!Excel.TableCollection:class'
   - uid: 'excel!Excel.Workbook#tableStyles:member'
-    summary: >-
+    summary: |-
       Represents a collection of TableStyles associated with the workbook. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tableStyles
     fullName: tableStyles
     langs:
@@ -968,13 +948,10 @@ items:
         type:
           - 'excel!Excel.TableStyleCollection:class'
   - uid: 'excel!Excel.Workbook#timelineStyles:member'
-    summary: >-
+    summary: |-
       Represents a collection of TimelineStyles associated with the workbook. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: timelineStyles
     fullName: timelineStyles
     langs:

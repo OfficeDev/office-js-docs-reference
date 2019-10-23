@@ -1,0 +1,101 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData:interface'
+    summary: An interface describing the data returned by calling `chartBoxwhiskerOptions.toJSON()`<!-- -->.
+    name: Excel.Interfaces.ChartBoxwhiskerOptionsData
+    fullName: Excel.Interfaces.ChartBoxwhiskerOptionsData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#quartileCalculation:member'
+      - 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#showInnerPoints:member'
+      - 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#showMeanLine:member'
+      - 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#showMeanMarker:member'
+      - 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#showOutlierPoints:member'
+  - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#quartileCalculation:member'
+    summary: |-
+      Returns or sets the quartile calculation type of a box and whisker chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: quartileCalculation
+    fullName: quartileCalculation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'quartileCalculation?: Excel.ChartBoxQuartileCalculation | "Inclusive" | "Exclusive";'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#quartileCalculation~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#showInnerPoints:member'
+    summary: |-
+      Specifies whether or not the inner points are shown in a box and whisker chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showInnerPoints
+    fullName: showInnerPoints
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showInnerPoints?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#showMeanLine:member'
+    summary: |-
+      Specifies whether or not the mean line is shown in a box and whisker chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showMeanLine
+    fullName: showMeanLine
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showMeanLine?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#showMeanMarker:member'
+    summary: |-
+      Specifies whether or not the mean marker is shown in a box and whisker chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showMeanMarker
+    fullName: showMeanMarker
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showMeanMarker?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#showOutlierPoints:member'
+    summary: |-
+      Specifies whether or not outlier points are shown in a box and whisker chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showOutlierPoints
+    fullName: showOutlierPoints
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showOutlierPoints?: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#quartileCalculation~0:complex'
+    name: Excel.ChartBoxQuartileCalculation | "Inclusive" | "Exclusive"
+    fullName: Excel.ChartBoxQuartileCalculation | "Inclusive" | "Exclusive"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartBoxQuartileCalculation:enum'
+        name: Excel.ChartBoxQuartileCalculation
+        fullName: Excel.ChartBoxQuartileCalculation
+      - name: ' | "Inclusive" | "Exclusive"'
+        fullName: ' | "Inclusive" | "Exclusive"'

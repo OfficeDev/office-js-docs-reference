@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.WorksheetSelectionChangedEventArgs:interface'
+    summary: |-
+      Provides information about the worksheet that raised the SelectionChanged event.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.WorksheetSelectionChangedEventArgs
+    fullName: Excel.WorksheetSelectionChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.WorksheetSelectionChangedEventArgs#address:member'
+      - 'excel!Excel.WorksheetSelectionChangedEventArgs#type:member'
+      - 'excel!Excel.WorksheetSelectionChangedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.WorksheetSelectionChangedEventArgs#address:member'
+    summary: |-
+      Gets the range address that represents the selected area of a specific worksheet.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.WorksheetSelectionChangedEventArgs#type:member'
+    summary: |-
+      Gets the type of the event. See Excel.EventType for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "WorksheetSelectionChanged";'
+      return:
+        type:
+          - '"WorksheetSelectionChanged"'
+  - uid: 'excel!Excel.WorksheetSelectionChangedEventArgs#worksheetId:member'
+    summary: |-
+      Gets the id of the worksheet in which the selection changed.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheetId
+    fullName: worksheetId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type:
+          - string

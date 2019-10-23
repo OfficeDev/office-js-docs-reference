@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
+    summary: >-
+      Provides information based on current system culture settings. This includes the culture names, number formatting,
+      and other culturally dependent settings.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.CultureInfoLoadOptions
+    fullName: Excel.Interfaces.CultureInfoLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.CultureInfoLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.CultureInfoLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.CultureInfoLoadOptions#numberFormatInfo:member'
+  - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions#name:member'
+    summary: >-
+      Gets the culture name in the format languagecode2-country/regioncode2 (e.g. "zh-cn" or "en-us"). This is based on
+      current system settings.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions#numberFormatInfo:member'
+    summary: >-
+      Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: numberFormatInfo
+    fullName: numberFormatInfo
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormatInfo?: Excel.Interfaces.NumberFormatInfoLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface'
+    name: Excel.Interfaces.NumberFormatInfoLoadOptions

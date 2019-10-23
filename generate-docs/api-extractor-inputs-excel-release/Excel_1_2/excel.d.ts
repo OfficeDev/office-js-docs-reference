@@ -255,18 +255,6 @@ export declare namespace Excel {
     /**
      * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      *
-     * @remarks
-     *
-     * In addition to this signature, the method also has the following signatures:
-     *
-     * `run<T>(object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;`
-     *
-     * `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;`
-     *
-     * `run<T>(options: Excel.RunOptions, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;`
-     *
-     * `run<T>(batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;`
-     *
      * @param context - A previously-created object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
@@ -346,6 +334,9 @@ export declare namespace Excel {
          */
         workbook: Excel.Workbook;
     }
+    
+    
+    
     
     
     
@@ -475,6 +466,7 @@ export declare namespace Excel {
         readonly bindings: Excel.BindingCollection;
         
         
+        
         /**
          *
          * Represents a collection of worksheet functions that can be used for computation. Read-only.
@@ -494,6 +486,10 @@ export declare namespace Excel {
         
         
         
+        
+        
+        
+        
         /**
          *
          * Represents a collection of tables associated with the workbook. Read-only.
@@ -501,6 +497,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly tables: Excel.TableCollection;
+        
         /**
          *
          * Represents a collection of worksheets associated with the workbook. Read-only.
@@ -530,6 +527,8 @@ export declare namespace Excel {
         set(properties: Interfaces.WorkbookUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.Workbook): void;
+        
+        
         
         
         
@@ -594,11 +593,12 @@ export declare namespace Excel {
         
         /**
          *
-         * Returns collection of charts that are part of the worksheet. Read-only.
+         * Returns a collection of charts that are part of the worksheet. Read-only.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly charts: Excel.ChartCollection;
+        
         
         
         
@@ -611,6 +611,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          */
         readonly protection: Excel.WorksheetProtection;
+        
         
         /**
          *
@@ -723,6 +724,7 @@ export declare namespace Excel {
         getUsedRange(valuesOnly?: boolean): Excel.Range;
         
         
+        
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -744,6 +746,9 @@ export declare namespace Excel {
             select?: string;
             expand?: string;
         }): Excel.Worksheet;
+        
+        
+        
         
         
         
@@ -814,6 +819,9 @@ export declare namespace Excel {
          * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
          */
         load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.WorksheetCollection;
+        
+        
+        
         
         
         
@@ -1078,6 +1086,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          */
         formulasR1C1: any[][];
+        
         /**
          *
          * Represents if all cells of the current range are hidden. Read-only.
@@ -1085,6 +1094,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          */
         readonly hidden: boolean;
+        
         
         
         
@@ -1127,6 +1137,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         readonly text: string[][];
+        
         /**
          *
          * Represents the type of data of each cell. Read-only.
@@ -1142,6 +1153,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         values: any[][];
+        
         /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          *
          * @remarks
@@ -1362,6 +1374,10 @@ export declare namespace Excel {
         getUsedRange(valuesOnly?: boolean): Excel.Range;
         
         
+        
+        
+        
+        
         /**
          *
          * Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.
@@ -1398,6 +1414,10 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         select(): void;
+        
+        
+        
+        
         
         
         
@@ -1928,7 +1948,7 @@ export declare namespace Excel {
         showTotals: boolean;
         /**
          *
-         * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
+         * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -5477,6 +5497,23 @@ export declare namespace Excel {
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * [Api set: ExcelApi 1.1]
      */
@@ -6005,6 +6042,9 @@ export declare namespace Excel {
         justify = "Justify",
         distributed = "Distributed"
     }
+    
+    
+    
     
     
     
@@ -10093,7 +10133,7 @@ export declare namespace Excel {
             showTotals?: boolean;
             /**
              *
-             * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
+             * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -11110,6 +11150,7 @@ export declare namespace Excel {
             
             
             
+            
         }
         /** An interface for updating data on the PivotHierarchyCollection object, for use in `pivotHierarchyCollection.set({ ... })`. */
         export interface PivotHierarchyCollectionUpdateData {
@@ -11342,6 +11383,38 @@ export declare namespace Excel {
         export interface StyleCollectionUpdateData {
             items?: Excel.Interfaces.StyleData[];
         }
+        /** An interface for updating data on the TableStyleCollection object, for use in `tableStyleCollection.set({ ... })`. */
+        export interface TableStyleCollectionUpdateData {
+            items?: Excel.Interfaces.TableStyleData[];
+        }
+        /** An interface for updating data on the TableStyle object, for use in `tableStyle.set({ ... })`. */
+        export interface TableStyleUpdateData {
+            
+        }
+        /** An interface for updating data on the PivotTableStyleCollection object, for use in `pivotTableStyleCollection.set({ ... })`. */
+        export interface PivotTableStyleCollectionUpdateData {
+            items?: Excel.Interfaces.PivotTableStyleData[];
+        }
+        /** An interface for updating data on the PivotTableStyle object, for use in `pivotTableStyle.set({ ... })`. */
+        export interface PivotTableStyleUpdateData {
+            
+        }
+        /** An interface for updating data on the SlicerStyleCollection object, for use in `slicerStyleCollection.set({ ... })`. */
+        export interface SlicerStyleCollectionUpdateData {
+            items?: Excel.Interfaces.SlicerStyleData[];
+        }
+        /** An interface for updating data on the SlicerStyle object, for use in `slicerStyle.set({ ... })`. */
+        export interface SlicerStyleUpdateData {
+            
+        }
+        /** An interface for updating data on the TimelineStyleCollection object, for use in `timelineStyleCollection.set({ ... })`. */
+        export interface TimelineStyleCollectionUpdateData {
+            items?: Excel.Interfaces.TimelineStyleData[];
+        }
+        /** An interface for updating data on the TimelineStyle object, for use in `timelineStyle.set({ ... })`. */
+        export interface TimelineStyleUpdateData {
+            
+        }
         /** An interface for updating data on the PageLayout object, for use in `pageLayout.set({ ... })`. */
         export interface PageLayoutUpdateData {
             
@@ -11392,12 +11465,29 @@ export declare namespace Excel {
         export interface RangeCollectionUpdateData {
             items?: Excel.Interfaces.RangeData[];
         }
+        /** An interface for updating data on the CommentCollection object, for use in `commentCollection.set({ ... })`. */
+        export interface CommentCollectionUpdateData {
+            items?: Excel.Interfaces.CommentData[];
+        }
+        /** An interface for updating data on the Comment object, for use in `comment.set({ ... })`. */
+        export interface CommentUpdateData {
+            
+        }
+        /** An interface for updating data on the CommentReplyCollection object, for use in `commentReplyCollection.set({ ... })`. */
+        export interface CommentReplyCollectionUpdateData {
+            items?: Excel.Interfaces.CommentReplyData[];
+        }
+        /** An interface for updating data on the CommentReply object, for use in `commentReply.set({ ... })`. */
+        export interface CommentReplyUpdateData {
+            
+        }
         /** An interface for updating data on the ShapeCollection object, for use in `shapeCollection.set({ ... })`. */
         export interface ShapeCollectionUpdateData {
             items?: Excel.Interfaces.ShapeData[];
         }
         /** An interface for updating data on the Shape object, for use in `shape.set({ ... })`. */
         export interface ShapeUpdateData {
+            
             
             
             
@@ -11468,6 +11558,30 @@ export declare namespace Excel {
             
             
         }
+        /** An interface for updating data on the Slicer object, for use in `slicer.set({ ... })`. */
+        export interface SlicerUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the SlicerCollection object, for use in `slicerCollection.set({ ... })`. */
+        export interface SlicerCollectionUpdateData {
+            items?: Excel.Interfaces.SlicerData[];
+        }
+        /** An interface for updating data on the SlicerItem object, for use in `slicerItem.set({ ... })`. */
+        export interface SlicerItemUpdateData {
+            
+        }
+        /** An interface for updating data on the SlicerItemCollection object, for use in `slicerItemCollection.set({ ... })`. */
+        export interface SlicerItemCollectionUpdateData {
+            items?: Excel.Interfaces.SlicerItemData[];
+        }
         /** An interface describing the data returned by calling `runtime.toJSON()`. */
         export interface RuntimeData {
             
@@ -11501,6 +11615,7 @@ export declare namespace Excel {
             */
             bindings?: Excel.Interfaces.BindingData[];
             
+            
             /**
             *
             * Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
@@ -11513,6 +11628,10 @@ export declare namespace Excel {
             
             
             
+            
+            
+            
+            
             /**
             *
             * Represents a collection of tables associated with the workbook. Read-only.
@@ -11520,6 +11639,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             tables?: Excel.Interfaces.TableData[];
+            
             /**
             *
             * Represents a collection of worksheets associated with the workbook. Read-only.
@@ -11548,11 +11668,12 @@ export declare namespace Excel {
             
             /**
             *
-            * Returns collection of charts that are part of the worksheet. Read-only.
+            * Returns a collection of charts that are part of the worksheet. Read-only.
             *
             * [Api set: ExcelApi 1.1]
             */
             charts?: Excel.Interfaces.ChartData[];
+            
             
             
             
@@ -11564,6 +11685,7 @@ export declare namespace Excel {
             * [Api set: ExcelApi 1.2]
             */
             protection?: Excel.Interfaces.WorksheetProtectionData;
+            
             
             /**
             *
@@ -11706,6 +11828,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             formulasR1C1?: any[][];
+            
             /**
              *
              * Represents if all cells of the current range are hidden. Read-only.
@@ -11713,6 +11836,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             hidden?: boolean;
+            
             
             
             
@@ -11755,6 +11879,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             text?: string[][];
+            
             /**
              *
              * Represents the type of data of each cell. Read-only.
@@ -11770,6 +11895,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            
         }
         /** An interface describing the data returned by calling `rangeAreas.toJSON()`. */
         export interface RangeAreasData {
@@ -11946,7 +12072,7 @@ export declare namespace Excel {
             showTotals?: boolean;
             /**
              *
-             * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
+             * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -13098,6 +13224,7 @@ export declare namespace Excel {
             
             
             
+            
         }
         /** An interface describing the data returned by calling `pivotHierarchyCollection.toJSON()`. */
         export interface PivotHierarchyCollectionData {
@@ -13347,6 +13474,42 @@ export declare namespace Excel {
         export interface StyleCollectionData {
             items?: Excel.Interfaces.StyleData[];
         }
+        /** An interface describing the data returned by calling `tableStyleCollection.toJSON()`. */
+        export interface TableStyleCollectionData {
+            items?: Excel.Interfaces.TableStyleData[];
+        }
+        /** An interface describing the data returned by calling `tableStyle.toJSON()`. */
+        export interface TableStyleData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `pivotTableStyleCollection.toJSON()`. */
+        export interface PivotTableStyleCollectionData {
+            items?: Excel.Interfaces.PivotTableStyleData[];
+        }
+        /** An interface describing the data returned by calling `pivotTableStyle.toJSON()`. */
+        export interface PivotTableStyleData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `slicerStyleCollection.toJSON()`. */
+        export interface SlicerStyleCollectionData {
+            items?: Excel.Interfaces.SlicerStyleData[];
+        }
+        /** An interface describing the data returned by calling `slicerStyle.toJSON()`. */
+        export interface SlicerStyleData {
+            
+            
+        }
+        /** An interface describing the data returned by calling `timelineStyleCollection.toJSON()`. */
+        export interface TimelineStyleCollectionData {
+            items?: Excel.Interfaces.TimelineStyleData[];
+        }
+        /** An interface describing the data returned by calling `timelineStyle.toJSON()`. */
+        export interface TimelineStyleData {
+            
+            
+        }
         /** An interface describing the data returned by calling `pageLayout.toJSON()`. */
         export interface PageLayoutData {
             
@@ -13402,12 +13565,38 @@ export declare namespace Excel {
         export interface RangeCollectionData {
             items?: Excel.Interfaces.RangeData[];
         }
+        /** An interface describing the data returned by calling `commentCollection.toJSON()`. */
+        export interface CommentCollectionData {
+            items?: Excel.Interfaces.CommentData[];
+        }
+        /** An interface describing the data returned by calling `comment.toJSON()`. */
+        export interface CommentData {
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `commentReplyCollection.toJSON()`. */
+        export interface CommentReplyCollectionData {
+            items?: Excel.Interfaces.CommentReplyData[];
+        }
+        /** An interface describing the data returned by calling `commentReply.toJSON()`. */
+        export interface CommentReplyData {
+            
+            
+            
+            
+            
+        }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {
             items?: Excel.Interfaces.ShapeData[];
         }
         /** An interface describing the data returned by calling `shape.toJSON()`. */
         export interface ShapeData {
+            
             
             
             
@@ -13503,6 +13692,36 @@ export declare namespace Excel {
             
             
             
+        }
+        /** An interface describing the data returned by calling `slicer.toJSON()`. */
+        export interface SlicerData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `slicerCollection.toJSON()`. */
+        export interface SlicerCollectionData {
+            items?: Excel.Interfaces.SlicerData[];
+        }
+        /** An interface describing the data returned by calling `slicerItem.toJSON()`. */
+        export interface SlicerItemData {
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling `slicerItemCollection.toJSON()`. */
+        export interface SlicerItemCollectionData {
+            items?: Excel.Interfaces.SlicerItemData[];
         }
         /** An interface describing the data returned by calling `functionResult.toJSON()`. */
         export interface FunctionResultData<T> {
@@ -13605,7 +13824,7 @@ export declare namespace Excel {
             
             /**
             *
-            * Returns collection of charts that are part of the worksheet.
+            * Returns a collection of charts that are part of the worksheet.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -13674,7 +13893,7 @@ export declare namespace Excel {
             
             /**
             *
-            * For EACH ITEM in the collection: Returns collection of charts that are part of the worksheet.
+            * For EACH ITEM in the collection: Returns a collection of charts that are part of the worksheet.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -13849,6 +14068,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             formulasR1C1?: boolean;
+            
             /**
              *
              * Represents if all cells of the current range are hidden. Read-only.
@@ -13856,6 +14076,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.2]
              */
             hidden?: boolean;
+            
             
             
             
@@ -13898,6 +14119,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             text?: boolean;
+            
             /**
              *
              * Represents the type of data of each cell. Read-only.
@@ -13913,6 +14135,7 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            
         }
         
         
@@ -14140,7 +14363,7 @@ export declare namespace Excel {
             showTotals?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
+             * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -14224,7 +14447,7 @@ export declare namespace Excel {
             showTotals?: boolean;
             /**
              *
-             * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
+             * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -15782,6 +16005,22 @@ export declare namespace Excel {
              */
             criteria?: boolean;
         }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         

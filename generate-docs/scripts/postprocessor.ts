@@ -5,7 +5,7 @@ import * as fsx from 'fs-extra';
 import * as jsyaml from "js-yaml";
 import * as path from "path";
 
-const CUSTOM_FUNCTIONS_EXCEL_STARTING_VERSION = 9;
+const OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
 
 interface IOrigToc {
     items: [
@@ -88,7 +88,7 @@ tryCatch(async () => {
     // fix all the individual TOC files
     const commonTocFolder = path.resolve("../yaml/office");
     const commonToc = scrubAndWriteToc(commonTocFolder);
-    const hostVersionMap = [{host: "excel", versions: 10},
+    const hostVersionMap = [{host: "excel", versions: 11},
                             {host: "onenote", versions: 1},
                             {host: "outlook", versions: 8},
                             {host: "powerpoint", versions: 1},
@@ -101,6 +101,9 @@ tryCatch(async () => {
             scrubAndWriteToc(path.resolve(`../yaml/${category.host}_1_${i}`), commonToc, category.host, i);
         }
     });
+
+    // Special case for ExcelApi Online
+    scrubAndWriteToc(path.resolve(`../yaml/excel_online`), commonToc, "excel", 99);
 
 
     console.log(`Namespace pass on Outlook docs`);
@@ -133,7 +136,7 @@ tryCatch(async () => {
                 });
         });
 
-        
+
     console.log(`Moving common TOC to its own folder`);
     fsx.copySync(commonTocFolder + "/toc.yml",  "../yaml/common/toc.yml");
     fsx.copySync(commonTocFolder + "/overview.md", "../yaml/common/overview.md");
@@ -194,7 +197,7 @@ function fixToc(tocPath: string, commonToc: INewToc, versionNumber: number): INe
         "name": "API reference overview",
         "href": "overview.md"
     }] as any;
-    
+
 
     // look for existing folders to move
     let outlookFolders : string[] = ["MailboxEnums"];
@@ -203,13 +206,13 @@ function fixToc(tocPath: string, commonToc: INewToc, versionNumber: number): INe
     let excelEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-excel/excel.d.ts").toString());
 
     let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
-    
+
     let customFunctionsRoot = {"name": "Custom Functions", "uid": "", "items": [] as any};
 
     // create folders for OneNote subcategories
     let oneNoteEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
     let oneNoteEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-onenote/onenote.d.ts").toString());
-    
+
     // create folders for word subcategories
     let wordEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-word/word.d.ts").toString());
 
@@ -225,7 +228,7 @@ function fixToc(tocPath: string, commonToc: INewToc, versionNumber: number): INe
 
     let oneNoteFilter: string[] = ["Interfaces"];
     oneNoteFilter = oneNoteFilter.concat(oneNoteEnumFilter);
-    
+
     let visioFilter: string[] = ["Interfaces"];
 
     // process all packages except 'office' (Common "Shared" API)
@@ -282,7 +285,7 @@ function fixToc(tocPath: string, commonToc: INewToc, versionNumber: number): INe
                         let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
                         primaryList.unshift(excelIconSetRoot);
                         primaryList.unshift(excelEnumRoot);
-                        if (versionNumber >= CUSTOM_FUNCTIONS_EXCEL_STARTING_VERSION) {
+                        if (versionNumber >= OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS) {
                             primaryList.unshift(customFunctionsRoot);
                         }
                         newToc.items[0].items.push({
@@ -376,7 +379,7 @@ function fixCommonToc(tocPath: string): INewToc {
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as IOrigToc);
     let newToc = <INewToc>{};
-    
+
     newToc.items = [{
         "name": "API reference",
         "items": [] as any
@@ -412,7 +415,7 @@ function fixCommonToc(tocPath: string): INewToc {
         });
     });
 
-    
+
     // add API reference overview to Common API
     newToc.items[0].items.unshift({
         "name": "API reference overview",

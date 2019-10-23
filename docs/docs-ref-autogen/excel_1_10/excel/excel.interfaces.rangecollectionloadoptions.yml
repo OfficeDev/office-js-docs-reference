@@ -1,0 +1,560 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions:interface'
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.Interfaces.RangeCollectionLoadOptions
+    fullName: Excel.Interfaces.RangeCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#address:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#addressLocal:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#cellCount:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#columnCount:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#columnHidden:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#columnIndex:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#dataValidation:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#formulas:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#formulasLocal:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#formulasR1C1:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#height:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#hidden:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#hyperlink:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#isEntireColumn:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#isEntireRow:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#left:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#linkedDataTypeState:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#numberFormat:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#numberFormatLocal:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#rowCount:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#rowHidden:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#rowIndex:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#style:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#text:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#top:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#values:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#valueTypes:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#width:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#worksheet:member'
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#address:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents the range reference in A1-style. Address value will contain the Sheet
+      reference (e.g. "Sheet1!A1:B4"). Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#addressLocal:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents range reference for the specified range in the language of the user.
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: addressLocal
+    fullName: addressLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'addressLocal?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#cellCount:member'
+    summary: >-
+      For EACH ITEM in the collection: Number of cells in the range. This API will return -1 if the cell count exceeds
+      2^31-1 (2,147,483,647). Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: cellCount
+    fullName: cellCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cellCount?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#columnCount:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents the total number of columns in the range. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnCount
+    fullName: columnCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnCount?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#columnHidden:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents if all columns of the current range are hidden.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnHidden
+    fullName: columnHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnHidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#columnIndex:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents the column number of the first cell in the range. Zero-indexed.
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnIndex
+    fullName: columnIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnIndex?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#dataValidation:member'
+    summary: |-
+      For EACH ITEM in the collection: Returns a data validation object.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dataValidation
+    fullName: dataValidation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dataValidation?: Excel.Interfaces.DataValidationLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.DataValidationLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#format:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns a format object, encapsulating the range's font, fill, borders,
+      alignment, and other properties.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.RangeFormatLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.RangeFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#formulas:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents the formula in A1-style notation. When setting formulas to a range,
+      the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single
+      value, it will be applied to all cells in the range.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulas
+    fullName: formulas
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulas?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#formulasLocal:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents the formula in A1-style notation, in the user's language and
+      number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in
+      German. When setting formulas to a range, the value argument can be either a single value (a string) or a
+      two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulasLocal
+    fullName: formulasLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulasLocal?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#formulasR1C1:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents the formula in R1C1-style notation. When setting formulas to a range,
+      the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single
+      value, it will be applied to all cells in the range.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulasR1C1
+    fullName: formulasR1C1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulasR1C1?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#height:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from top edge of the range to
+      bottom edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#hidden:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents if all cells of the current range are hidden. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: hidden
+    fullName: hidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#hyperlink:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents the hyperlink for the current range.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: hyperlink
+    fullName: hyperlink
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hyperlink?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#isEntireColumn:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents if the current range is an entire column. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isEntireColumn
+    fullName: isEntireColumn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isEntireColumn?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#isEntireRow:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents if the current range is an entire row. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isEntireRow
+    fullName: isEntireRow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isEntireRow?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#left:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from left edge of the worksheet to
+      left edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#linkedDataTypeState:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents the data type state of each cell. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: linkedDataTypeState
+    fullName: linkedDataTypeState
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkedDataTypeState?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#numberFormat:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents Excel's number format code for the given range. When setting number
+      format to a range, the value argument can be either a single value (string) or a two-dimensional array. If the
+      argument is a single value, it will be applied to all cells in the range.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#numberFormatLocal:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents Excel's number format code for the given range, based on the language
+      settings of the user.​ When setting number format local to a range, the value argument can be either a single
+      value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in
+      the range.​ Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal`
+      property. Any returned text uses the locally-formatted strings based on the language specified in the system
+      settings.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormatLocal
+    fullName: numberFormatLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormatLocal?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#rowCount:member'
+    summary: |-
+      For EACH ITEM in the collection: Returns the total number of rows in the range. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowCount
+    fullName: rowCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowCount?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#rowHidden:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents if all rows of the current range are hidden.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowHidden
+    fullName: rowHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowHidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#rowIndex:member'
+    summary: |-
+      For EACH ITEM in the collection: Returns the row number of the first cell in the range. Zero-indexed. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowIndex
+    fullName: rowIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowIndex?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#style:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents the style of the current range. If the styles of the cells are
+      inconsistent, null will be returned. For custom styles, the style name will be returned. For built-in styles, a
+      string representing a value in the BuiltInStyle enum will be returned.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#text:member'
+    summary: >-
+      For EACH ITEM in the collection: Text values of the specified range. The Text value will not depend on the cell
+      width. The \# sign substitution that happens in Excel UI will not affect the text value returned by the API.
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#top:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from top edge of the worksheet to
+      top edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#values:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be of
+      type string, number, or a boolean. Cells that contain an error will return the error string. When setting values
+      to a range, the value argument can be either a single value (string, number or boolean) or a two-dimensional
+      array. If the argument is a single value, it will be applied to all cells in the range.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#valueTypes:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents the type of data of each cell. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: valueTypes
+    fullName: valueTypes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'valueTypes?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#width:member'
+    summary: >-
+      For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from left edge of the range to
+      right edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#worksheet:member'
+    summary: |-
+      For EACH ITEM in the collection: The worksheet containing the current range.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions:interface'
+    name: Excel.Interfaces.DataValidationLoadOptions
+  - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions:interface'
+    name: Excel.Interfaces.RangeFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+    name: Excel.Interfaces.WorksheetLoadOptions

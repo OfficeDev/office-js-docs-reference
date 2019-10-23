@@ -1,0 +1,139 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.DocumentPropertyItem:enum'
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.DocumentPropertyItem
+    fullName: Excel.DocumentPropertyItem
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.DocumentPropertyItem.appName:member'
+      - 'excel!Excel.DocumentPropertyItem.author:member'
+      - 'excel!Excel.DocumentPropertyItem.category:member'
+      - 'excel!Excel.DocumentPropertyItem.comments:member'
+      - 'excel!Excel.DocumentPropertyItem.company:member'
+      - 'excel!Excel.DocumentPropertyItem.creation:member'
+      - 'excel!Excel.DocumentPropertyItem.format:member'
+      - 'excel!Excel.DocumentPropertyItem.keywords:member'
+      - 'excel!Excel.DocumentPropertyItem.lastAuth:member'
+      - 'excel!Excel.DocumentPropertyItem.lastPrint:member'
+      - 'excel!Excel.DocumentPropertyItem.lastSave:member'
+      - 'excel!Excel.DocumentPropertyItem.manager:member'
+      - 'excel!Excel.DocumentPropertyItem.revision:member'
+      - 'excel!Excel.DocumentPropertyItem.subject:member'
+      - 'excel!Excel.DocumentPropertyItem.template:member'
+      - 'excel!Excel.DocumentPropertyItem.title:member'
+  - uid: 'excel!Excel.DocumentPropertyItem.appName:member'
+    name: appName
+    fullName: appName
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AppName"'
+  - uid: 'excel!Excel.DocumentPropertyItem.author:member'
+    name: author
+    fullName: author
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Author"'
+  - uid: 'excel!Excel.DocumentPropertyItem.category:member'
+    name: category
+    fullName: category
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Category"'
+  - uid: 'excel!Excel.DocumentPropertyItem.comments:member'
+    name: comments
+    fullName: comments
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Comments"'
+  - uid: 'excel!Excel.DocumentPropertyItem.company:member'
+    name: company
+    fullName: company
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Company"'
+  - uid: 'excel!Excel.DocumentPropertyItem.creation:member'
+    name: creation
+    fullName: creation
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Creation"'
+  - uid: 'excel!Excel.DocumentPropertyItem.format:member'
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Format"'
+  - uid: 'excel!Excel.DocumentPropertyItem.keywords:member'
+    name: keywords
+    fullName: keywords
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Keywords"'
+  - uid: 'excel!Excel.DocumentPropertyItem.lastAuth:member'
+    name: lastAuth
+    fullName: lastAuth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastAuth"'
+  - uid: 'excel!Excel.DocumentPropertyItem.lastPrint:member'
+    name: lastPrint
+    fullName: lastPrint
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastPrint"'
+  - uid: 'excel!Excel.DocumentPropertyItem.lastSave:member'
+    name: lastSave
+    fullName: lastSave
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastSave"'
+  - uid: 'excel!Excel.DocumentPropertyItem.manager:member'
+    name: manager
+    fullName: manager
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Manager"'
+  - uid: 'excel!Excel.DocumentPropertyItem.revision:member'
+    name: revision
+    fullName: revision
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Revision"'
+  - uid: 'excel!Excel.DocumentPropertyItem.subject:member'
+    name: subject
+    fullName: subject
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Subject"'
+  - uid: 'excel!Excel.DocumentPropertyItem.template:member'
+    name: template
+    fullName: template
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Template"'
+  - uid: 'excel!Excel.DocumentPropertyItem.title:member'
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Title"'
