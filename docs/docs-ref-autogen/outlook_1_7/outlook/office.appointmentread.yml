@@ -1422,7 +1422,10 @@ items:
       the following limits apply.
 
 
-      - Get 500 members maximum. - Set a maximum of 100 members per call, up to 500 members total.
+      - Get 500 members maximum.
+
+
+      - Set a maximum of 100 members per call, up to 500 members total.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
