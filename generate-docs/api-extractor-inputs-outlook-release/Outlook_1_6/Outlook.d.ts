@@ -319,7 +319,7 @@ export declare namespace Office {
          * for a meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
          * 
          * - Get 500 members maximum.
-         * 
+         *
          * - Set a maximum of 100 members per call, up to 500 members total.
          *
          * [Api set: Mailbox 1.0]
@@ -340,7 +340,7 @@ export declare namespace Office {
          * for a meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
          *
          * - Get 500 members maximum.
-         * 
+         *
          * - Set a maximum of 100 members per call, up to 500 members total.
          *
          * [Api set: Mailbox 1.0]
@@ -894,7 +894,7 @@ export declare namespace Office {
         * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
         * 
         * - Get 500 members maximum.
-        * 
+        *
         * - Set a maximum of 100 members per call, up to 500 members total.
         *
         * [Api set: Mailbox 1.0]
@@ -932,7 +932,7 @@ export declare namespace Office {
          * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
          *
          * - Get 500 members maximum.
-         * 
+         *
          * - Set a maximum of 100 members per call, up to 500 members total.
          *
          * [Api set: Mailbox 1.0]
@@ -1189,11 +1189,7 @@ export declare namespace Office {
          * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item.
          *
          * The optionalAttendees property returns an array that contains an {@link Office.EmailAddressDetails} object for each optional attendee to 
-         * the meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
-         *
-         * - Get 500 members maximum.
-         * 
-         * - Set a maximum of 100 members per call, up to 500 members total.
+         * the meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -3880,7 +3876,7 @@ export declare namespace Office {
          * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
          *
          * - Get 500 members maximum.
-         * 
+         *
          * - Set a maximum of 100 members per call, up to 500 members total.
          *
          * [Api set: Mailbox 1.1]
@@ -3912,7 +3908,7 @@ export declare namespace Office {
          * the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
          * 
          * - Get 500 members maximum.
-         * 
+         *
          * - Set a maximum of 100 members per call, up to 500 members total.
          *
          * [Api set: Mailbox 1.0]
@@ -3996,7 +3992,7 @@ export declare namespace Office {
          * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
          * 
          * - Get 500 members maximum.
-         * 
+         *
          * - Set a maximum of 100 members per call, up to 500 members total.
          *
          * [Api set: Mailbox 1.0]
