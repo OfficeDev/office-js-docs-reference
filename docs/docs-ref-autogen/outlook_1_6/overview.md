@@ -1,7 +1,7 @@
 ---
 title: Office JavaScript API reference 
 description: 'The Office JavaScript APIs per host requirement set'
-ms.date: 07/25/2019
+ms.date: 10/24/2019
 ---
 
 # Office JavaScript API reference
@@ -16,6 +16,7 @@ The following is a list of host-specific requirement sets (and the cross-host Co
 ## Excel
 
 - [ExcelApi Preview](/javascript/api/excel?view=excel-js-preview)
+- [ExcelApi 1.10](/javascript/api/excel?view=excel-js-1.10)
 - [ExcelApi 1.9](/javascript/api/excel?view=excel-js-1.9)
 - [ExcelApi 1.8](/javascript/api/excel?view=excel-js-1.8)
 - [ExcelApi 1.7](/javascript/api/excel?view=excel-js-1.7)
