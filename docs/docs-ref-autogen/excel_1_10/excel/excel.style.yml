@@ -1,0 +1,695 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Style:class'
+    summary: |-
+      An object encapsulating a style's format and other properties.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Style
+    fullName: Excel.Style
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.Style#autoIndent:member'
+      - 'excel!Excel.Style#borders:member'
+      - 'excel!Excel.Style#builtIn:member'
+      - 'excel!Excel.Style#context:member'
+      - 'excel!Excel.Style#delete:member(1)'
+      - 'excel!Excel.Style#fill:member'
+      - 'excel!Excel.Style#font:member'
+      - 'excel!Excel.Style#formulaHidden:member'
+      - 'excel!Excel.Style#horizontalAlignment:member'
+      - 'excel!Excel.Style#includeAlignment:member'
+      - 'excel!Excel.Style#includeBorder:member'
+      - 'excel!Excel.Style#includeFont:member'
+      - 'excel!Excel.Style#includeNumber:member'
+      - 'excel!Excel.Style#includePatterns:member'
+      - 'excel!Excel.Style#includeProtection:member'
+      - 'excel!Excel.Style#indentLevel:member'
+      - 'excel!Excel.Style#load:member(1)'
+      - 'excel!Excel.Style#load:member(2)'
+      - 'excel!Excel.Style#load:member(3)'
+      - 'excel!Excel.Style#locked:member'
+      - 'excel!Excel.Style#name:member'
+      - 'excel!Excel.Style#numberFormat:member'
+      - 'excel!Excel.Style#numberFormatLocal:member'
+      - 'excel!Excel.Style#readingOrder:member'
+      - 'excel!Excel.Style#set:member(1)'
+      - 'excel!Excel.Style#set:member(2)'
+      - 'excel!Excel.Style#shrinkToFit:member'
+      - 'excel!Excel.Style#textOrientation:member'
+      - 'excel!Excel.Style#toJSON:member(1)'
+      - 'excel!Excel.Style#verticalAlignment:member'
+      - 'excel!Excel.Style#wrapText:member'
+  - uid: 'excel!Excel.Style#autoIndent:member'
+    summary: |-
+      Indicates if text is automatically indented when the text alignment in a cell is set to equal distribution.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoIndent
+    fullName: autoIndent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoIndent: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#borders:member'
+    summary: |-
+      A Border collection of four Border objects that represent the style of the four borders.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: borders
+    fullName: borders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly borders: Excel.RangeBorderCollection;'
+      return:
+        type:
+          - 'excel!Excel.RangeBorderCollection:class'
+  - uid: 'excel!Excel.Style#builtIn:member'
+    summary: |-
+      Indicates if the style is a built-in style.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: builtIn
+    fullName: builtIn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly builtIn: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Style#delete:member(1)'
+    summary: |-
+      Deletes this style.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              let style = context.workbook.styles.getItem("Diagonal Orientation Style");
+
+              // Delete the diagonal orientation style from the style collection.
+              // Styles are in the Home tab ribbon.
+              style.delete();
+
+              await context.sync();
+
+              console.log("Successfully deleted the diagonal orientation style from the Home tab ribbon.");
+          });
+          ```
+  - uid: 'excel!Excel.Style#fill:member'
+    summary: |-
+      The Fill of the style.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: Excel.RangeFill;'
+      return:
+        type:
+          - 'excel!Excel.RangeFill:class'
+  - uid: 'excel!Excel.Style#font:member'
+    summary: |-
+      A Font object that represents the font of the style.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Excel.RangeFont;'
+      return:
+        type:
+          - 'excel!Excel.RangeFont:class'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              let style = context.workbook.styles.getItem("Normal");
+              style.font.load("bold, color, italic, name, size");
+              style.fill.load("color");
+
+              await context.sync();
+
+              console.log("Bold: " + style.font.bold);
+              console.log("Font color: " + style.font.color);
+              console.log("Italic: " + style.font.italic);
+              console.log("Name: " + style.font.name);
+              console.log("Size: " + style.font.size);
+              console.log("Fill color: " + style.fill.color);
+          });
+          ```
+  - uid: 'excel!Excel.Style#formulaHidden:member'
+    summary: |-
+      Indicates if the formula will be hidden when the worksheet is protected.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formulaHidden
+    fullName: formulaHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulaHidden: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#horizontalAlignment:member'
+    summary: |-
+      Represents the horizontal alignment for the style. See Excel.HorizontalAlignment for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        horizontalAlignment: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
+        "CenterAcrossSelection" | "Distributed";
+      return:
+        type:
+          - 'excel!Excel.Style#horizontalAlignment~0:complex'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              let worksheet = context.workbook.worksheets.getItem("Sample");
+              let range = worksheet.getRange("A1:E1");
+
+              // Apply built-in style. 
+              // Styles are in the Home tab ribbon.
+              range.style = Excel.BuiltInStyle.neutral;
+              range.format.horizontalAlignment = "Right";
+
+              await context.sync();
+          });
+          ```
+  - uid: 'excel!Excel.Style#includeAlignment:member'
+    summary: >-
+      Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and
+      TextOrientation properties.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: includeAlignment
+    fullName: includeAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'includeAlignment: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#includeBorder:member'
+    summary: |-
+      Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: includeBorder
+    fullName: includeBorder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'includeBorder: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#includeFont:member'
+    summary: >-
+      Indicates if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size,
+      Strikethrough, Subscript, Superscript, and Underline font properties.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: includeFont
+    fullName: includeFont
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'includeFont: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#includeNumber:member'
+    summary: |-
+      Indicates if the style includes the NumberFormat property.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: includeNumber
+    fullName: includeNumber
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'includeNumber: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#includePatterns:member'
+    summary: >-
+      Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and
+      PatternColorIndex interior properties.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: includePatterns
+    fullName: includePatterns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'includePatterns: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#includeProtection:member'
+    summary: |-
+      Indicates if the style includes the FormulaHidden and Locked protection properties.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: includeProtection
+    fullName: includeProtection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'includeProtection: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#indentLevel:member'
+    summary: |-
+      An integer from 0 to 250 that indicates the indent level for the style.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: indentLevel
+    fullName: indentLevel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'indentLevel: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Style#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.StyleLoadOptions): Excel.Style;'
+      return:
+        type:
+          - 'excel!Excel.Style:class'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              let style = context.workbook.styles.getItem("Diagonal Orientation Style");            
+              style.load("textOrientation, horizontalAlignment, autoIndent, readingOrder, wrapText, includeProtection, shrinkToFit, locked");
+
+              await context.sync();
+
+              console.log("Orientation: " + style.textOrientation);
+              console.log("Horizontal alignment: " + style.horizontalAlignment);
+              console.log("Add indent: " + style.autoIndent);
+              console.log("Reading order: " + style.readingOrder);
+              console.log("Wrap text: " + style.wrapText);
+              console.log("Include protection: " + style.includeProtection);
+              console.log("Shrink to fit: " + style.shrinkToFit);
+              console.log("Style locked: " + style.locked);
+          });
+          ```
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.StyleLoadOptions:interface'
+  - uid: 'excel!Excel.Style#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Style;'
+      return:
+        type:
+          - 'excel!Excel.Style:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Style#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Style;
+      return:
+        type:
+          - 'excel!Excel.Style:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.Style#locked:member'
+    summary: |-
+      Indicates if the object is locked when the worksheet is protected.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: locked
+    fullName: locked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'locked: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#name:member'
+    summary: |-
+      The name of the style.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Style#numberFormat:member'
+    summary: |-
+      The format code of the number format for the style.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Style#numberFormatLocal:member'
+    summary: |-
+      The localized format code of the number format for the style.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormatLocal
+    fullName: numberFormatLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormatLocal: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Style#readingOrder:member'
+    summary: |-
+      The reading order for the style.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: readingOrder
+    fullName: readingOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readingOrder: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft";'
+      return:
+        type:
+          - 'excel!Excel.Style#readingOrder~0:complex'
+  - uid: 'excel!Excel.Style#set:member(1)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.Style): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.StyleUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.StyleUpdateData:interface'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.Style#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.Style): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.Style:class'
+  - uid: 'excel!Excel.Style#shrinkToFit:member'
+    summary: |-
+      Indicates if text automatically shrinks to fit in the available column width.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: shrinkToFit
+    fullName: shrinkToFit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shrinkToFit: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Style#textOrientation:member'
+    summary: |-
+      The text orientation for the style.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Style#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Style object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.StyleData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.StyleData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.StyleData:interface'
+        description: ''
+  - uid: 'excel!Excel.Style#verticalAlignment:member'
+    summary: |-
+      Represents the vertical alignment for the style. See Excel.VerticalAlignment for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed";'
+      return:
+        type:
+          - 'excel!Excel.Style#verticalAlignment~0:complex'
+  - uid: 'excel!Excel.Style#wrapText:member'
+    summary: |-
+      Indicates if Microsoft Excel wraps the text in the object.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: wrapText
+    fullName: wrapText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'wrapText: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RangeBorderCollection:class'
+    name: Excel.RangeBorderCollection
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.RangeFill:class'
+    name: Excel.RangeFill
+  - uid: 'excel!Excel.RangeFont:class'
+    name: Excel.RangeFont
+  - uid: 'excel!Excel.Style#horizontalAlignment~0:complex'
+    name: >-
+      Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection"
+      | "Distributed"
+    fullName: >-
+      Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection"
+      | "Distributed"
+    spec.typeScript:
+      - uid: 'excel!Excel.HorizontalAlignment:enum'
+        name: Excel.HorizontalAlignment
+        fullName: Excel.HorizontalAlignment
+      - name: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
+        fullName: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
+  - uid: 'excel!Excel.Style:class'
+    name: Excel.Style
+  - uid: 'excel!Excel.Interfaces.StyleLoadOptions:interface'
+    name: Excel.Interfaces.StyleLoadOptions
+  - uid: 'excel!Excel.Style#readingOrder~0:complex'
+    name: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
+    fullName: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
+    spec.typeScript:
+      - uid: 'excel!Excel.ReadingOrder:enum'
+        name: Excel.ReadingOrder
+        fullName: Excel.ReadingOrder
+      - name: ' | "Context" | "LeftToRight" | "RightToLeft"'
+        fullName: ' | "Context" | "LeftToRight" | "RightToLeft"'
+  - uid: 'excel!Excel.Interfaces.StyleUpdateData:interface'
+    name: Interfaces.StyleUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.StyleData:interface'
+    name: Excel.Interfaces.StyleData
+  - uid: 'excel!Excel.Style#verticalAlignment~0:complex'
+    name: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
+    fullName: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
+    spec.typeScript:
+      - uid: 'excel!Excel.VerticalAlignment:enum'
+        name: Excel.VerticalAlignment
+        fullName: Excel.VerticalAlignment
+      - name: ' | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"'
+        fullName: ' | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"'

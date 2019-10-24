@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.FiveArrowsGraySet:interface'
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.FiveArrowsGraySet
+    fullName: Excel.FiveArrowsGraySet
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.FiveArrowsGraySet#grayDownArrow:member'
+      - 'excel!Excel.FiveArrowsGraySet#grayDownInclineArrow:member'
+      - 'excel!Excel.FiveArrowsGraySet#graySideArrow:member'
+      - 'excel!Excel.FiveArrowsGraySet#grayUpArrow:member'
+      - 'excel!Excel.FiveArrowsGraySet#grayUpInclineArrow:member'
+  - uid: 'excel!Excel.FiveArrowsGraySet#grayDownArrow:member'
+    name: grayDownArrow
+    fullName: grayDownArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayDownArrow: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveArrowsGraySet#grayDownInclineArrow:member'
+    name: grayDownInclineArrow
+    fullName: grayDownInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayDownInclineArrow: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveArrowsGraySet#graySideArrow:member'
+    name: graySideArrow
+    fullName: graySideArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'graySideArrow: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveArrowsGraySet#grayUpArrow:member'
+    name: grayUpArrow
+    fullName: grayUpArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayUpArrow: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveArrowsGraySet#grayUpInclineArrow:member'
+    name: grayUpInclineArrow
+    fullName: grayUpInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayUpInclineArrow: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+references:
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon

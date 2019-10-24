@@ -1,0 +1,163 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeSort:class'
+    summary: |-
+      Manages sorting operations on Range objects.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.RangeSort
+    fullName: Excel.RangeSort
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.RangeSort#apply:member(1)'
+      - 'excel!Excel.RangeSort#apply:member(2)'
+      - 'excel!Excel.RangeSort#context:member'
+      - 'excel!Excel.RangeSort#toJSON:member(1)'
+  - uid: 'excel!Excel.RangeSort#apply:member(1)'
+    summary: |-
+      Perform a sort operation.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    fullName: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientation?: Excel.SortOrientation,
+        method?: Excel.SortMethod): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: fields
+          description: The list of conditions to sort on.
+          type:
+            - 'excel!Excel.RangeSort#apply~0:complex'
+        - id: matchCase
+          description: Optional. Whether to have the casing impact string ordering.
+          type:
+            - boolean
+        - id: hasHeaders
+          description: Optional. Whether the range has a header.
+          type:
+            - boolean
+        - id: orientation
+          description: Optional. Whether the operation is sorting rows or columns.
+          type:
+            - 'excel!Excel.SortOrientation:enum'
+        - id: method
+          description: Optional. The ordering method used for Chinese characters.
+          type:
+            - 'excel!Excel.SortMethod:enum'
+  - uid: 'excel!Excel.RangeSort#apply:member(2)'
+    summary: |-
+      Perform a sort operation.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'apply(fields, matchCase, hasHeaders, orientationString, method)'
+    fullName: 'apply(fields, matchCase, hasHeaders, orientationString, method)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientationString?: "Rows" |
+        "Columns", method?: "PinYin" | "StrokeCount"): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: fields
+          description: The list of conditions to sort on.
+          type:
+            - 'excel!Excel.RangeSort#apply~1:complex'
+        - id: matchCase
+          description: Optional. Whether to have the casing impact string ordering.
+          type:
+            - boolean
+        - id: hasHeaders
+          description: Optional. Whether the range has a header.
+          type:
+            - boolean
+        - id: orientationString
+          description: Optional. Whether the operation is sorting rows or columns.
+          type:
+            - '"Rows" | "Columns"'
+        - id: method
+          description: Optional. The ordering method used for Chinese characters.
+          type:
+            - '"PinYin" | "StrokeCount"'
+  - uid: 'excel!Excel.RangeSort#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.RangeSort#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.RangeSort object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.RangeSortData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        toJSON(): {
+                    [key: string]: string;
+                };
+      return:
+        type:
+          - |-
+            {
+                        [key: string]: string;
+                    }
+        description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RangeSort#apply~0:complex'
+    name: 'Excel.SortField[]'
+    fullName: 'Excel.SortField[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.SortField:interface'
+        name: Excel.SortField
+        fullName: Excel.SortField
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.SortOrientation:enum'
+    name: Excel.SortOrientation
+  - uid: 'excel!Excel.SortMethod:enum'
+    name: Excel.SortMethod
+  - uid: 'excel!Excel.RangeSort#apply~1:complex'
+    name: 'Excel.SortField[]'
+    fullName: 'Excel.SortField[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.SortField:interface'
+        name: Excel.SortField
+        fullName: Excel.SortField
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext

@@ -1,0 +1,252 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotItem:class'
+    summary: |-
+      Represents the Excel PivotItem.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.PivotItem
+    fullName: Excel.PivotItem
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.PivotItem#context:member'
+      - 'excel!Excel.PivotItem#id:member'
+      - 'excel!Excel.PivotItem#isExpanded:member'
+      - 'excel!Excel.PivotItem#load:member(1)'
+      - 'excel!Excel.PivotItem#load:member(2)'
+      - 'excel!Excel.PivotItem#load:member(3)'
+      - 'excel!Excel.PivotItem#name:member'
+      - 'excel!Excel.PivotItem#set:member(1)'
+      - 'excel!Excel.PivotItem#set:member(2)'
+      - 'excel!Excel.PivotItem#toJSON:member(1)'
+      - 'excel!Excel.PivotItem#visible:member'
+  - uid: 'excel!Excel.PivotItem#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PivotItem#id:member'
+    summary: |-
+      Id of the PivotItem.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotItem#isExpanded:member'
+    summary: |-
+      Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isExpanded
+    fullName: isExpanded
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isExpanded: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotItem#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.PivotItemLoadOptions): Excel.PivotItem;'
+      return:
+        type:
+          - 'excel!Excel.PivotItem:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.PivotItemLoadOptions:interface'
+  - uid: 'excel!Excel.PivotItem#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.PivotItem;'
+      return:
+        type:
+          - 'excel!Excel.PivotItem:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotItem#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.PivotItem;
+      return:
+        type:
+          - 'excel!Excel.PivotItem:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.PivotItem#name:member'
+    summary: |-
+      Name of the PivotItem.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotItem#set:member(1)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.PivotItem): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.PivotItemUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.PivotItemUpdateData:interface'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.PivotItem#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.PivotItem): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.PivotItem:class'
+  - uid: 'excel!Excel.PivotItem#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.PivotItem object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.PivotItemData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.PivotItemData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.PivotItemData:interface'
+        description: ''
+  - uid: 'excel!Excel.PivotItem#visible:member'
+    summary: |-
+      Determines whether the PivotItem is visible or not.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.PivotItem:class'
+    name: Excel.PivotItem
+  - uid: 'excel!Excel.Interfaces.PivotItemLoadOptions:interface'
+    name: Excel.Interfaces.PivotItemLoadOptions
+  - uid: 'excel!Excel.Interfaces.PivotItemUpdateData:interface'
+    name: Interfaces.PivotItemUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.PivotItemData:interface'
+    name: Excel.Interfaces.PivotItemData

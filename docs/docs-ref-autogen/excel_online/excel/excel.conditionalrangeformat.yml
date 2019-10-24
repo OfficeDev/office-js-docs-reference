@@ -1,0 +1,258 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalRangeFormat:class'
+    summary: |-
+      A format object encapsulating the conditional formats range's font, fill, borders, and other properties.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalRangeFormat
+    fullName: Excel.ConditionalRangeFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalRangeFormat#borders:member'
+      - 'excel!Excel.ConditionalRangeFormat#context:member'
+      - 'excel!Excel.ConditionalRangeFormat#fill:member'
+      - 'excel!Excel.ConditionalRangeFormat#font:member'
+      - 'excel!Excel.ConditionalRangeFormat#load:member(1)'
+      - 'excel!Excel.ConditionalRangeFormat#load:member(2)'
+      - 'excel!Excel.ConditionalRangeFormat#load:member(3)'
+      - 'excel!Excel.ConditionalRangeFormat#numberFormat:member'
+      - 'excel!Excel.ConditionalRangeFormat#set:member(1)'
+      - 'excel!Excel.ConditionalRangeFormat#set:member(2)'
+      - 'excel!Excel.ConditionalRangeFormat#toJSON:member(1)'
+  - uid: 'excel!Excel.ConditionalRangeFormat#borders:member'
+    summary: |-
+      Collection of border objects that apply to the overall conditional format range. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: borders
+    fullName: borders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly borders: Excel.ConditionalRangeBorderCollection;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorderCollection:class'
+  - uid: 'excel!Excel.ConditionalRangeFormat#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ConditionalRangeFormat#fill:member'
+    summary: |-
+      Returns the fill object defined on the overall conditional format range. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: Excel.ConditionalRangeFill;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFill:class'
+  - uid: 'excel!Excel.ConditionalRangeFormat#font:member'
+    summary: |-
+      Returns the font object defined on the overall conditional format range. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Excel.ConditionalRangeFont;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFont:class'
+  - uid: 'excel!Excel.ConditionalRangeFormat#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.ConditionalRangeFormatLoadOptions): Excel.ConditionalRangeFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFormat:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface'
+  - uid: 'excel!Excel.ConditionalRangeFormat#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ConditionalRangeFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalRangeFormat#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ConditionalRangeFormat;
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ConditionalRangeFormat#numberFormat:member'
+    summary: |-
+      Represents Excel's number format code for the given range. Cleared if null is passed in.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat: any;'
+      return:
+        type:
+          - any
+  - uid: 'excel!Excel.ConditionalRangeFormat#set:member(1)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ConditionalRangeFormat): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ConditionalRangeFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.ConditionalRangeFormat#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ConditionalRangeFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ConditionalRangeFormat:class'
+  - uid: 'excel!Excel.ConditionalRangeFormat#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ConditionalRangeFormat object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFormatData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ConditionalRangeFormatData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
+        description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection:class'
+    name: Excel.ConditionalRangeBorderCollection
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.ConditionalRangeFill:class'
+    name: Excel.ConditionalRangeFill
+  - uid: 'excel!Excel.ConditionalRangeFont:class'
+    name: Excel.ConditionalRangeFont
+  - uid: 'excel!Excel.ConditionalRangeFormat:class'
+    name: Excel.ConditionalRangeFormat
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface'
+    name: Excel.Interfaces.ConditionalRangeFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
+    name: Interfaces.ConditionalRangeFormatUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
+    name: Excel.Interfaces.ConditionalRangeFormatData

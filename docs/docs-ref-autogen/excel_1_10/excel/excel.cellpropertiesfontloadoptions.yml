@@ -1,0 +1,204 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CellPropertiesFontLoadOptions:interface'
+    summary: |-
+      Specifies which properties to load on the `format.font` object.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.CellPropertiesFontLoadOptions
+    fullName: Excel.CellPropertiesFontLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CellPropertiesFontLoadOptions#bold:member'
+      - 'excel!Excel.CellPropertiesFontLoadOptions#color:member'
+      - 'excel!Excel.CellPropertiesFontLoadOptions#italic:member'
+      - 'excel!Excel.CellPropertiesFontLoadOptions#name:member'
+      - 'excel!Excel.CellPropertiesFontLoadOptions#size:member'
+      - 'excel!Excel.CellPropertiesFontLoadOptions#strikethrough:member'
+      - 'excel!Excel.CellPropertiesFontLoadOptions#subscript:member'
+      - 'excel!Excel.CellPropertiesFontLoadOptions#superscript:member'
+      - 'excel!Excel.CellPropertiesFontLoadOptions#tintAndShade:member'
+      - 'excel!Excel.CellPropertiesFontLoadOptions#underline:member'
+  - uid: 'excel!Excel.CellPropertiesFontLoadOptions#bold:member'
+    summary: |-
+      Specifies whether to load on the `bold` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFontLoadOptions#color:member'
+    summary: |-
+      Specifies whether to load on the `color` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const cell = context.workbook.getActiveCell();
+
+              // Define the cell properties to get by setting the matching LoadOptions to true.
+              const propertiesToGet = cell.getCellProperties({
+                  address: true,
+                  format: {
+                      fill: {
+                          color: true
+                      },
+                      font: {
+                          color: true
+                      }
+                  },
+                  style: true
+              });
+
+              // Sync to get the data from the workbook.
+              await context.sync();
+              const cellProperties = propertiesToGet.value[0][0];
+              console.log(
+                  `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
+          });
+          ```
+  - uid: 'excel!Excel.CellPropertiesFontLoadOptions#italic:member'
+    summary: |-
+      Specifies whether to load on the `italic` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFontLoadOptions#name:member'
+    summary: |-
+      Specifies whether to load on the `name` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFontLoadOptions#size:member'
+    summary: |-
+      Specifies whether to load on the `size` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFontLoadOptions#strikethrough:member'
+    summary: |-
+      Specifies whether to load on the `strikethrough` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: strikethrough
+    fullName: strikethrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strikethrough?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFontLoadOptions#subscript:member'
+    summary: |-
+      Specifies whether to load on the `subscript` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: subscript
+    fullName: subscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subscript?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFontLoadOptions#superscript:member'
+    summary: |-
+      Specifies whether to load on the `superscript` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: superscript
+    fullName: superscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'superscript?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFontLoadOptions#tintAndShade:member'
+    summary: |-
+      Specifies whether to load on the `tintAndShade` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFontLoadOptions#underline:member'
+    summary: |-
+      Specifies whether to load on the `underline` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline?: boolean;'
+      return:
+        type:
+          - boolean

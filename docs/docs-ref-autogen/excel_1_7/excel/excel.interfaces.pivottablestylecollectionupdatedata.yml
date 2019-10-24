@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the PivotTableStyleCollection object, for use in
+      `pivotTableStyleCollection.set({ ... })`<!-- -->.
+    name: Excel.Interfaces.PivotTableStyleCollectionUpdateData
+    fullName: Excel.Interfaces.PivotTableStyleCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.PivotTableStyleData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.PivotTableStyleData[]'
+    fullName: 'Excel.Interfaces.PivotTableStyleData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PivotTableStyleData:interface'
+        name: Excel.Interfaces.PivotTableStyleData
+        fullName: Excel.Interfaces.PivotTableStyleData
+      - name: '[]'
+        fullName: '[]'

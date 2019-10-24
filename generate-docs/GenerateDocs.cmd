@@ -34,6 +34,8 @@ popd
 pushd tools
 call npm install
 call npm run build
+call node version-remover ..\api-extractor-inputs-excel-release\Excel_online\excel.d.ts "ExcelApi Online" ..\api-extractor-inputs-excel-release\Excel_1_10\excel.d.ts
+call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_10\excel.d.ts "ExcelApi 1.10" ..\api-extractor-inputs-excel-release\Excel_1_9\excel.d.ts
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_9\excel.d.ts "ExcelApi 1.9" ..\api-extractor-inputs-excel-release\Excel_1_8\excel.d.ts
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_8\excel.d.ts "ExcelApi 1.8" ..\api-extractor-inputs-excel-release\Excel_1_7\excel.d.ts
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_7\excel.d.ts "ExcelApi 1.7" ..\api-extractor-inputs-excel-release\Excel_1_6\excel.d.ts
@@ -59,7 +61,11 @@ call ..\node_modules\.bin\api-extractor run
 
 cd ..\api-extractor-inputs-excel
 call ..\node_modules\.bin\api-extractor run
-cd ..\api-extractor-inputs-excel-release\excel_1_9
+cd ..\api-extractor-inputs-excel-release\excel_online
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\excel_1_10
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\excel_1_9
 call ..\..\node_modules\.bin\api-extractor run
 cd ..\excel_1_8
 call ..\..\node_modules\.bin\api-extractor run
@@ -147,6 +153,8 @@ call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_6 --o
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_7 --output-folder .\yaml\excel_1_7 --office
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_8 --output-folder .\yaml\excel_1_8 --office
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_9 --output-folder .\yaml\excel_1_9 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_10 --output-folder .\yaml\excel_1_10 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_online --output-folder .\yaml\excel_online --office
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\office --output-folder .\yaml\office --office
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook --output-folder .\yaml\outlook --office
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_1 --output-folder .\yaml\outlook_1_1 --office

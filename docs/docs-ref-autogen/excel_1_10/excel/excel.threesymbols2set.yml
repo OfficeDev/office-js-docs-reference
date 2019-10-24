@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ThreeSymbols2Set:interface'
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ThreeSymbols2Set
+    fullName: Excel.ThreeSymbols2Set
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ThreeSymbols2Set#greenCheck:member'
+      - 'excel!Excel.ThreeSymbols2Set#redCross:member'
+      - 'excel!Excel.ThreeSymbols2Set#yellowExclamation:member'
+  - uid: 'excel!Excel.ThreeSymbols2Set#greenCheck:member'
+    name: greenCheck
+    fullName: greenCheck
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenCheck: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeSymbols2Set#redCross:member'
+    name: redCross
+    fullName: redCross
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redCross: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeSymbols2Set#yellowExclamation:member'
+    name: yellowExclamation
+    fullName: yellowExclamation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowExclamation: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+references:
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon

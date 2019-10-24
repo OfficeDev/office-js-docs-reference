@@ -11739,6 +11739,23 @@
   - |-
     var from = Office.context.mailbox.item.from;
     console.log("From " + from);
+'Office.MessageRead#getAllInternetHeadersAsync:member(1)':
+  - |-
+    // Get the internet headers related to the mail.
+    Office.context.mailbox.item.getAllInternetHeadersAsync(
+        function(asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                console.log(asyncResult.value);
+            } else {
+                if (asyncResult.error.code == 9020) {
+                    // GenericResponseError returned when there is no context.
+                    // Treat as no context.
+                } else {
+                    // Handle the error.
+                }
+            }
+        }
+    );
 'Office.MessageRead#getEntities:member(1)':
   - >-
     // The following example accesses the contacts entities in the current

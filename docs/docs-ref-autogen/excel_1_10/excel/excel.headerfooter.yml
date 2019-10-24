@@ -1,0 +1,293 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.HeaderFooter:class'
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.HeaderFooter
+    fullName: Excel.HeaderFooter
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.HeaderFooter#centerFooter:member'
+      - 'excel!Excel.HeaderFooter#centerHeader:member'
+      - 'excel!Excel.HeaderFooter#context:member'
+      - 'excel!Excel.HeaderFooter#leftFooter:member'
+      - 'excel!Excel.HeaderFooter#leftHeader:member'
+      - 'excel!Excel.HeaderFooter#load:member(1)'
+      - 'excel!Excel.HeaderFooter#load:member(2)'
+      - 'excel!Excel.HeaderFooter#load:member(3)'
+      - 'excel!Excel.HeaderFooter#rightFooter:member'
+      - 'excel!Excel.HeaderFooter#rightHeader:member'
+      - 'excel!Excel.HeaderFooter#set:member(1)'
+      - 'excel!Excel.HeaderFooter#set:member(2)'
+      - 'excel!Excel.HeaderFooter#toJSON:member(1)'
+  - uid: 'excel!Excel.HeaderFooter#centerFooter:member'
+    summary: >-
+      Gets or sets the center footer of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: centerFooter
+    fullName: centerFooter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'centerFooter: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.HeaderFooter#centerHeader:member'
+    summary: >-
+      Gets or sets the center header of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: centerHeader
+    fullName: centerHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'centerHeader: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.HeaderFooter#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.HeaderFooter#leftFooter:member'
+    summary: >-
+      Gets or sets the left footer of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: leftFooter
+    fullName: leftFooter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'leftFooter: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.HeaderFooter#leftHeader:member'
+    summary: >-
+      Gets or sets the left header of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: leftHeader
+    fullName: leftHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'leftHeader: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.HeaderFooter#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.HeaderFooterLoadOptions): Excel.HeaderFooter;'
+      return:
+        type:
+          - 'excel!Excel.HeaderFooter:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.HeaderFooterLoadOptions:interface'
+  - uid: 'excel!Excel.HeaderFooter#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.HeaderFooter;'
+      return:
+        type:
+          - 'excel!Excel.HeaderFooter:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.HeaderFooter#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.HeaderFooter;
+      return:
+        type:
+          - 'excel!Excel.HeaderFooter:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.HeaderFooter#rightFooter:member'
+    summary: >-
+      Gets or sets the right footer of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rightFooter
+    fullName: rightFooter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rightFooter: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.HeaderFooter#rightHeader:member'
+    summary: >-
+      Gets or sets the right header of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rightHeader
+    fullName: rightHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rightHeader: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.HeaderFooter#set:member(1)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.HeaderFooter): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.HeaderFooterUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.HeaderFooterUpdateData:interface'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.HeaderFooter#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.HeaderFooter): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.HeaderFooter:class'
+  - uid: 'excel!Excel.HeaderFooter#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.HeaderFooter object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.HeaderFooterData`<!-- -->) that contains shallow copies of any
+      loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.HeaderFooterData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.HeaderFooterData:interface'
+        description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.HeaderFooter:class'
+    name: Excel.HeaderFooter
+  - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions:interface'
+    name: Excel.Interfaces.HeaderFooterLoadOptions
+  - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData:interface'
+    name: Interfaces.HeaderFooterUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.Interfaces.HeaderFooterData:interface'
+    name: Excel.Interfaces.HeaderFooterData

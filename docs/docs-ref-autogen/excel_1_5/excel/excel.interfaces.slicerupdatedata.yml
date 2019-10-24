@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.SlicerUpdateData:interface'
+    summary: 'An interface for updating data on the Slicer object, for use in `slicer.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.SlicerUpdateData
+    fullName: Excel.Interfaces.SlicerUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

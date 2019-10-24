@@ -1,0 +1,124 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CellPropertiesFillLoadOptions:interface'
+    summary: |-
+      Specifies which properties to load on the `format.fill` object.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.CellPropertiesFillLoadOptions
+    fullName: Excel.CellPropertiesFillLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CellPropertiesFillLoadOptions#color:member'
+      - 'excel!Excel.CellPropertiesFillLoadOptions#pattern:member'
+      - 'excel!Excel.CellPropertiesFillLoadOptions#patternColor:member'
+      - 'excel!Excel.CellPropertiesFillLoadOptions#patternTintAndShade:member'
+      - 'excel!Excel.CellPropertiesFillLoadOptions#tintAndShade:member'
+  - uid: 'excel!Excel.CellPropertiesFillLoadOptions#color:member'
+    summary: |-
+      Specifies whether to load on the `color` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const cell = context.workbook.getActiveCell();
+
+              // Define the cell properties to get by setting the matching LoadOptions to true.
+              const propertiesToGet = cell.getCellProperties({
+                  address: true,
+                  format: {
+                      fill: {
+                          color: true
+                      },
+                      font: {
+                          color: true
+                      }
+                  },
+                  style: true
+              });
+
+              // Sync to get the data from the workbook.
+              await context.sync();
+              const cellProperties = propertiesToGet.value[0][0];
+              console.log(
+                  `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
+          });
+          ```
+  - uid: 'excel!Excel.CellPropertiesFillLoadOptions#pattern:member'
+    summary: |-
+      Specifies whether to load on the `pattern` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: pattern
+    fullName: pattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pattern?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFillLoadOptions#patternColor:member'
+    summary: |-
+      Specifies whether to load on the `patternColor` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: patternColor
+    fullName: patternColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFillLoadOptions#patternTintAndShade:member'
+    summary: |-
+      Specifies whether to load on the `patternTintAndShade` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: patternTintAndShade
+    fullName: patternTintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternTintAndShade?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesFillLoadOptions#tintAndShade:member'
+    summary: |-
+      Specifies whether to load on the `tintAndShade` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: boolean;'
+      return:
+        type:
+          - boolean

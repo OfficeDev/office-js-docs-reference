@@ -36,7 +36,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#charts:member'
     summary: |-
-      For EACH ITEM in the collection: Returns collection of charts that are part of the worksheet.
+      For EACH ITEM in the collection: Returns a collection of charts that are part of the worksheet.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: charts

@@ -1,0 +1,84 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
+    summary: 'An interface for updating data on the Workbook object, for use in `workbook.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.WorkbookUpdateData
+    fullName: Excel.Interfaces.WorkbookUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.WorkbookUpdateData#chartDataPointTrack:member'
+      - 'excel!Excel.Interfaces.WorkbookUpdateData#isDirty:member'
+      - 'excel!Excel.Interfaces.WorkbookUpdateData#properties:member'
+      - 'excel!Excel.Interfaces.WorkbookUpdateData#usePrecisionAsDisplayed:member'
+  - uid: 'excel!Excel.Interfaces.WorkbookUpdateData#chartDataPointTrack:member'
+    summary: >-
+      True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
+      charts track the index of the data points.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: chartDataPointTrack
+    fullName: chartDataPointTrack
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'chartDataPointTrack?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorkbookUpdateData#isDirty:member'
+    summary: >-
+      Specifies whether or not changes have been made since the workbook was last saved. You can set this property to
+      true if you want to close a modified workbook without either saving it or being prompted to save it.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isDirty
+    fullName: isDirty
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isDirty?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorkbookUpdateData#properties:member'
+    summary: |-
+      Gets the workbook properties.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: properties
+    fullName: properties
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'properties?: Excel.Interfaces.DocumentPropertiesUpdateData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookUpdateData#usePrecisionAsDisplayed:member'
+    summary: >-
+      True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
+      Data will permanently lose accuracy when switching this property from false to true.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: usePrecisionAsDisplayed
+    fullName: usePrecisionAsDisplayed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'usePrecisionAsDisplayed?: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
+    name: Excel.Interfaces.DocumentPropertiesUpdateData

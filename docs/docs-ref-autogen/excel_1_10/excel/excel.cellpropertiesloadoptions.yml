@@ -1,0 +1,143 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CellPropertiesLoadOptions:interface'
+    summary: |-
+      Represents which cell properties to load, when used as part of a "range.getCellProperties" method.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.CellPropertiesLoadOptions
+    fullName: Excel.CellPropertiesLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CellPropertiesLoadOptions#address:member'
+      - 'excel!Excel.CellPropertiesLoadOptions#addressLocal:member'
+      - 'excel!Excel.CellPropertiesLoadOptions#format:member'
+      - 'excel!Excel.CellPropertiesLoadOptions#hidden:member'
+      - 'excel!Excel.CellPropertiesLoadOptions#hyperlink:member'
+      - 'excel!Excel.CellPropertiesLoadOptions#style:member'
+  - uid: 'excel!Excel.CellPropertiesLoadOptions#address:member'
+    summary: |-
+      Specifies whether to load on the `address` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address?: boolean;'
+      return:
+        type:
+          - boolean
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const cell = context.workbook.getActiveCell();
+
+              // Define the cell properties to get by setting the matching LoadOptions to true.
+              const propertiesToGet = cell.getCellProperties({
+                  address: true,
+                  format: {
+                      fill: {
+                          color: true
+                      },
+                      font: {
+                          color: true
+                      }
+                  },
+                  style: true
+              });
+
+              // Sync to get the data from the workbook.
+              await context.sync();
+              const cellProperties = propertiesToGet.value[0][0];
+              console.log(
+                  `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
+          });
+          ```
+  - uid: 'excel!Excel.CellPropertiesLoadOptions#addressLocal:member'
+    summary: |-
+      Specifies whether to load on the `addressLocal` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: addressLocal
+    fullName: addressLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'addressLocal?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesLoadOptions#format:member'
+    summary: |-
+      Specifies whether to load on the `format` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.CellPropertiesFormatLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.CellPropertiesFormatLoadOptions:interface'
+  - uid: 'excel!Excel.CellPropertiesLoadOptions#hidden:member'
+    summary: |-
+      Specifies whether to load on the `hidden` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: hidden
+    fullName: hidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesLoadOptions#hyperlink:member'
+    summary: |-
+      Specifies whether to load on the `hyperlink` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: hyperlink
+    fullName: hyperlink
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hyperlink?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.CellPropertiesLoadOptions#style:member'
+    summary: |-
+      Specifies whether to load on the `style` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions:interface'
+    name: Excel.CellPropertiesFormatLoadOptions

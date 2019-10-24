@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartTitlePosition:enum'
+    summary: |-
+      Represents the position of chart title.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartTitlePosition
+    fullName: Excel.ChartTitlePosition
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.ChartTitlePosition.automatic:member'
+      - 'excel!Excel.ChartTitlePosition.bottom:member'
+      - 'excel!Excel.ChartTitlePosition.left:member'
+      - 'excel!Excel.ChartTitlePosition.right:member'
+      - 'excel!Excel.ChartTitlePosition.top:member'
+  - uid: 'excel!Excel.ChartTitlePosition.automatic:member'
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Automatic"'
+  - uid: 'excel!Excel.ChartTitlePosition.bottom:member'
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bottom"'
+  - uid: 'excel!Excel.ChartTitlePosition.left:member'
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Left"'
+  - uid: 'excel!Excel.ChartTitlePosition.right:member'
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Right"'
+  - uid: 'excel!Excel.ChartTitlePosition.top:member'
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Top"'

@@ -91,6 +91,9 @@ items:
       Inserts the specified worksheets of a workbook into the current workbook.
 
 
+      **Note**: This API is currently only supported for Office on Windows and Mac.
+
+
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -160,6 +163,9 @@ items:
   - uid: 'excel!Excel.WorksheetCollection#addFromBase64:member(2)'
     summary: >-
       Inserts the specified worksheets of a workbook into the current workbook.
+
+
+      **Note**: This API is currently only supported for Office on Windows and Mac.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -600,13 +606,10 @@ items:
         type:
           - 'excel!Excel.WorksheetCollection#onChanged~0:complex'
   - uid: 'excel!Excel.WorksheetCollection#onColumnSorted:member'
-    summary: >-
+    summary: |-
       Occurs when one or more columns have been sorted. This happens as the result of a left-to-right sort operation.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onColumnSorted
     fullName: onColumnSorted
     langs:
@@ -713,13 +716,10 @@ items:
         type:
           - 'excel!Excel.WorksheetCollection#onRowHiddenChanged~0:complex'
   - uid: 'excel!Excel.WorksheetCollection#onRowSorted:member'
-    summary: >-
+    summary: |-
       Occurs when one or more rows have been sorted. This happens as the result of a top-to-bottom sort operation.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onRowSorted
     fullName: onRowSorted
     langs:
@@ -748,18 +748,11 @@ items:
   - uid: 'excel!Excel.WorksheetCollection#onSingleClicked:member'
     summary: >-
       Occurs when left-clicked/tapped operation happens in the worksheet collection. This event will not be fired when
-      clicking in the following cases:
+      clicking in the following cases: - The user drags the mouse for multi-selection. - The user selects a cell in the
+      mode when cell arguments are selected for formula references.
 
 
-      - The user drags the mouse for multi-selection.
-
-
-      - The user selects a cell in the mode when cell arguments are selected for formula references.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onSingleClicked
     fullName: onSingleClicked
     langs:

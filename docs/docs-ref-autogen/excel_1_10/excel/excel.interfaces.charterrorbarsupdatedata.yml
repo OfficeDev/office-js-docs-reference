@@ -1,0 +1,112 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData:interface'
+    summary: 'An interface for updating data on the ChartErrorBars object, for use in `chartErrorBars.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.ChartErrorBarsUpdateData
+    fullName: Excel.Interfaces.ChartErrorBarsUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#endStyleCap:member'
+      - 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#format:member'
+      - 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#include:member'
+      - 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#type:member'
+      - 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#visible:member'
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#endStyleCap:member'
+    summary: |-
+      Specifies whether or not the error bars have an end style cap.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: endStyleCap
+    fullName: endStyleCap
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endStyleCap?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#format:member'
+    summary: |-
+      Specifies the formatting type of the error bars.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartErrorBarsFormatUpdateData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ChartErrorBarsFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#include:member'
+    summary: |-
+      Specifies which parts of the error bars to include.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: include
+    fullName: include
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'include?: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues";'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#include~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#type:member'
+    summary: |-
+      The type of range marked by the error bars.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom";'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#type~0:complex'
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#visible:member'
+    summary: |-
+      Specifies whether or not the error bars are displayed.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatUpdateData:interface'
+    name: Excel.Interfaces.ChartErrorBarsFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#include~0:complex'
+    name: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues"
+    fullName: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartErrorBarsInclude:enum'
+        name: Excel.ChartErrorBarsInclude
+        fullName: Excel.ChartErrorBarsInclude
+      - name: ' | "Both" | "MinusValues" | "PlusValues"'
+        fullName: ' | "Both" | "MinusValues" | "PlusValues"'
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#type~0:complex'
+    name: Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"
+    fullName: Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartErrorBarsType:enum'
+        name: Excel.ChartErrorBarsType
+        fullName: Excel.ChartErrorBarsType
+      - name: ' | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"'
+        fullName: ' | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"'

@@ -1,0 +1,109 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions:interface'
+    summary: |-
+      Represents a collection of comment reply objects that are part of the comment.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.CommentReplyCollectionLoadOptions
+    fullName: Excel.Interfaces.CommentReplyCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#authorEmail:member'
+      - 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#authorName:member'
+      - 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#content:member'
+      - 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#creationDate:member'
+      - 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#id:member'
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#authorEmail:member'
+    summary: |-
+      For EACH ITEM in the collection: Gets the email of the comment reply's author.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: authorEmail
+    fullName: authorEmail
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'authorEmail?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#authorName:member'
+    summary: |-
+      For EACH ITEM in the collection: Gets the name of the comment reply's author.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: authorName
+    fullName: authorName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'authorName?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#content:member'
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets the comment reply's content. The string is plain text.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'content?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#creationDate:member'
+    summary: |-
+      For EACH ITEM in the collection: Gets the creation time of the comment reply.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: creationDate
+    fullName: creationDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'creationDate?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#id:member'
+    summary: |-
+      For EACH ITEM in the collection: Represents the comment reply identifier. Read-only.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean

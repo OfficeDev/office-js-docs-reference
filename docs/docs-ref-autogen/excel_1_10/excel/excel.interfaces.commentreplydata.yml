@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.CommentReplyData:interface'
+    summary: An interface describing the data returned by calling `commentReply.toJSON()`<!-- -->.
+    name: Excel.Interfaces.CommentReplyData
+    fullName: Excel.Interfaces.CommentReplyData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.CommentReplyData#authorEmail:member'
+      - 'excel!Excel.Interfaces.CommentReplyData#authorName:member'
+      - 'excel!Excel.Interfaces.CommentReplyData#content:member'
+      - 'excel!Excel.Interfaces.CommentReplyData#creationDate:member'
+      - 'excel!Excel.Interfaces.CommentReplyData#id:member'
+  - uid: 'excel!Excel.Interfaces.CommentReplyData#authorEmail:member'
+    summary: |-
+      Gets the email of the comment reply's author.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: authorEmail
+    fullName: authorEmail
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'authorEmail?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.CommentReplyData#authorName:member'
+    summary: |-
+      Gets the name of the comment reply's author.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: authorName
+    fullName: authorName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'authorName?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.CommentReplyData#content:member'
+    summary: |-
+      Gets or sets the comment reply's content. The string is plain text.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'content?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.CommentReplyData#creationDate:member'
+    summary: |-
+      Gets the creation time of the comment reply.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: creationDate
+    fullName: creationDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'creationDate?: Date;'
+      return:
+        type:
+          - '!Date:interface'
+  - uid: 'excel!Excel.Interfaces.CommentReplyData#id:member'
+    summary: |-
+      Represents the comment reply identifier. Read-only.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: '!Date:interface'
+    name: Date

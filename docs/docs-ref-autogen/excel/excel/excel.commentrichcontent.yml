@@ -6,9 +6,7 @@ items:
       other objects contained within the comment body, such as mentions.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CommentRichContent
     fullName: Excel.CommentRichContent
     langs:
@@ -25,7 +23,6 @@ items:
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: mentions
     fullName: mentions
     langs:
@@ -63,7 +60,6 @@ items:
           });
           ```
   - uid: 'excel!Excel.CommentRichContent#richContent:member'
-    isPreview: true
     name: richContent
     fullName: richContent
     langs:

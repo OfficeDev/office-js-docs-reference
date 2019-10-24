@@ -99,6 +99,7 @@ items:
       - 'excel!Excel.Range#load:member(2)'
       - 'excel!Excel.Range#load:member(3)'
       - 'excel!Excel.Range#merge:member(1)'
+      - 'excel!Excel.Range#moveTo:member(1)'
       - 'excel!Excel.Range#numberFormat:member'
       - 'excel!Excel.Range#numberFormatLocal:member'
       - 'excel!Excel.Range#removeDuplicates:member(1)'
@@ -167,12 +168,15 @@ items:
     summary: >-
       Fills range from the current range to the destination range using the specified AutoFill logic. The destination
       range can be null, or can extend the source either horizontally or vertically. Discontiguous ranges are not
-      supported. For more information, read [Use AutoFill and Flash
+      supported.
+
+
+      For more information, read [Use AutoFill and Flash
       Fill](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!--
       -->.
 
 
-      \[ [API set: ExcelApi 1.9, ExcelApi BETA (PREVIEW ONLY) for null `destinationRange`<!--
+      \[ [API set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`<!--
       -->](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'autoFill(destinationRange, autoFillType)'
     fullName: 'autoFill(destinationRange, autoFillType)'
@@ -217,12 +221,15 @@ items:
     summary: >-
       Fills range from the current range to the destination range using the specified AutoFill logic. The destination
       range can be null, or can extend the source either horizontally or vertically. Discontiguous ranges are not
-      supported. For more information, read [Use AutoFill and Flash
+      supported.
+
+
+      For more information, read [Use AutoFill and Flash
       Fill](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!--
       -->.
 
 
-      \[ [API set: ExcelApi 1.9, ExcelApi BETA (PREVIEW ONLY) for null `destinationRange`<!--
+      \[ [API set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`<!--
       -->](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'autoFill(destinationRange, autoFillTypeString)'
     fullName: 'autoFill(destinationRange, autoFillTypeString)'
@@ -2104,13 +2111,10 @@ items:
           - 'excel!Excel.RangeView:class'
         description: ''
   - uid: 'excel!Excel.Range#group:member(1)'
-    summary: >-
+    summary: |-
       Groups columns and rows for an outline.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: group(groupOption)
     fullName: group(groupOption)
     langs:
@@ -2150,12 +2154,10 @@ items:
           type:
             - 'excel!Excel.GroupOption:enum'
   - uid: 'excel!Excel.Range#group:member(2)'
-    summary: >-
+    summary: |-
       Groups columns and rows for an outline.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: group(groupOptionString)
     fullName: group(groupOptionString)
     langs:
@@ -2195,13 +2197,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Range#height:member'
-    summary: >-
+    summary: |-
       Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
     fullName: height
     langs:
@@ -2228,13 +2227,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Range#hideGroupDetails:member(1)'
-    summary: >-
+    summary: |-
       Hide details of the row or column group.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hideGroupDetails(groupOption)
     fullName: hideGroupDetails(groupOption)
     langs:
@@ -2252,12 +2248,10 @@ items:
           type:
             - 'excel!Excel.GroupOption:enum'
   - uid: 'excel!Excel.Range#hideGroupDetails:member(2)'
-    summary: >-
+    summary: |-
       Hide details of the row or column group.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hideGroupDetails(groupOptionString)
     fullName: hideGroupDetails(groupOptionString)
     langs:
@@ -2421,9 +2415,7 @@ items:
       Read-only.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: left
     langs:
@@ -2635,6 +2627,32 @@ items:
             value is false.
           type:
             - boolean
+  - uid: 'excel!Excel.Range#moveTo:member(1)'
+    summary: >-
+      Moves cell values, formatting, and formulas from current range to the destination range, replacing the old
+      information in those cells. The destination range will be expanded automatically if it is smaller than the current
+      range. Any cells in the destination range that are outside of the original range's area are not changed.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: moveTo(destinationRange)
+    fullName: moveTo(destinationRange)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'moveTo(destinationRange: Range | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: destinationRange
+          description: destinationRange Specifies the range to where the information in this range will be moved.
+          type:
+            - 'excel!Excel.Range#moveTo~0:complex'
   - uid: 'excel!Excel.Range#numberFormat:member'
     summary: >-
       Represents Excel's number format code for the given range. When setting number format to a range, the value
@@ -3113,13 +3131,10 @@ items:
           - void
         description: ''
   - uid: 'excel!Excel.Range#showGroupDetails:member(1)'
-    summary: >-
+    summary: |-
       Show details of the row or column group.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showGroupDetails(groupOption)
     fullName: showGroupDetails(groupOption)
     langs:
@@ -3137,12 +3152,10 @@ items:
           type:
             - 'excel!Excel.GroupOption:enum'
   - uid: 'excel!Excel.Range#showGroupDetails:member(2)'
-    summary: >-
+    summary: |-
       Show details of the row or column group.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showGroupDetails(groupOptionString)
     fullName: showGroupDetails(groupOptionString)
     langs:
@@ -3277,13 +3290,10 @@ items:
           - 'excel!Excel.Interfaces.RangeData:interface'
         description: ''
   - uid: 'excel!Excel.Range#top:member'
-    summary: >-
+    summary: |-
       Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: top
     langs:
@@ -3313,13 +3323,10 @@ items:
           - 'excel!Excel.Range:class'
         description: ''
   - uid: 'excel!Excel.Range#ungroup:member(1)'
-    summary: >-
+    summary: |-
       Ungroups columns and rows for an outline.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: ungroup(groupOption)
     fullName: ungroup(groupOption)
     langs:
@@ -3354,12 +3361,10 @@ items:
           type:
             - 'excel!Excel.GroupOption:enum'
   - uid: 'excel!Excel.Range#ungroup:member(2)'
-    summary: >-
+    summary: |-
       Ungroups columns and rows for an outline.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: ungroup(groupOptionString)
     fullName: ungroup(groupOptionString)
     langs:
@@ -3485,13 +3490,10 @@ items:
         type:
           - 'excel!Excel.Range#valueTypes~0:complex'
   - uid: 'excel!Excel.Range#width:member'
-    summary: >-
+    summary: |-
       Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
     fullName: width
     langs:
@@ -3697,6 +3699,15 @@ references:
         fullName: '[][]'
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions:interface'
     name: Excel.Interfaces.RangeLoadOptions
+  - uid: 'excel!Excel.Range#moveTo~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
   - uid: 'excel!Excel.RemoveDuplicatesResult:class'
     name: Excel.RemoveDuplicatesResult
   - uid: 'excel!Excel.Range#replaceAll~0:complex'

@@ -1,0 +1,78 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.DataValidationOperator:enum'
+    summary: |-
+      Represents Data validation operator enum.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.DataValidationOperator
+    fullName: Excel.DataValidationOperator
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.DataValidationOperator.between:member'
+      - 'excel!Excel.DataValidationOperator.equalTo:member'
+      - 'excel!Excel.DataValidationOperator.greaterThan:member'
+      - 'excel!Excel.DataValidationOperator.greaterThanOrEqualTo:member'
+      - 'excel!Excel.DataValidationOperator.lessThan:member'
+      - 'excel!Excel.DataValidationOperator.lessThanOrEqualTo:member'
+      - 'excel!Excel.DataValidationOperator.notBetween:member'
+      - 'excel!Excel.DataValidationOperator.notEqualTo:member'
+  - uid: 'excel!Excel.DataValidationOperator.between:member'
+    name: between
+    fullName: between
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Between"'
+  - uid: 'excel!Excel.DataValidationOperator.equalTo:member'
+    name: equalTo
+    fullName: equalTo
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EqualTo"'
+  - uid: 'excel!Excel.DataValidationOperator.greaterThan:member'
+    name: greaterThan
+    fullName: greaterThan
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GreaterThan"'
+  - uid: 'excel!Excel.DataValidationOperator.greaterThanOrEqualTo:member'
+    name: greaterThanOrEqualTo
+    fullName: greaterThanOrEqualTo
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GreaterThanOrEqualTo"'
+  - uid: 'excel!Excel.DataValidationOperator.lessThan:member'
+    name: lessThan
+    fullName: lessThan
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LessThan"'
+  - uid: 'excel!Excel.DataValidationOperator.lessThanOrEqualTo:member'
+    name: lessThanOrEqualTo
+    fullName: lessThanOrEqualTo
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LessThanOrEqualTo"'
+  - uid: 'excel!Excel.DataValidationOperator.notBetween:member'
+    name: notBetween
+    fullName: notBetween
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NotBetween"'
+  - uid: 'excel!Excel.DataValidationOperator.notEqualTo:member'
+    name: notEqualTo
+    fullName: notEqualTo
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NotEqualTo"'
