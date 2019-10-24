@@ -260,7 +260,8 @@ items:
 
 
       The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc
-      line of the message. The collection is limited to a maximum of 100 members.
+      line of the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and
+      Mac, you can get 500 members maximum.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1796,7 +1797,8 @@ items:
 
 
       The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To
-      line of the message. The collection is limited to a maximum of 100 members.
+      line of the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and
+      Mac, you can get 500 members maximum.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
