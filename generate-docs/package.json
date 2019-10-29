@@ -2,7 +2,7 @@
   "name": "generate-docs",
   "version": "1.0.0",
   "dependencies": {
-    "@microsoft/api-extractor": "^7.5.0",
-    "@microsoft/api-documenter": "^7.5.0"
+    "@microsoft/api-documenter": "https://github.com/microsoft/rushstack/files/3786226/microsoft-api-documenter-7.4.6.tar.gz",
+    "@microsoft/api-extractor": "^7.5.2"
   }
 }

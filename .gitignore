@@ -3,6 +3,7 @@ obj/
 _site/
 .optemp/
 _themes*/
+!_themes.office/
 _repo.*/
 _dependentPackages/
 .openpublishing.buildcore.ps1

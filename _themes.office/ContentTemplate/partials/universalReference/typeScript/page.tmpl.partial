@@ -1,0 +1,74 @@
+<h1>{{{displayName}}}</h1>
+
+{{^isPackage}}
+	<div class="metadata">
+		{{#namespace}}
+			<dl class="attributeList">
+				<dt>{{__global.namespace}}:</dt>
+				<dd>{{#value}}{{#specName}}{{{value}}}{{/specName}}{{/value}}</dd>
+			</dl>
+		{{/namespace}}
+
+		{{#package}}
+			<dl class="attributeList">
+				<dt>{{__global.package}}:</dt>
+				<dd>{{{packageRef}}}</dd>
+			</dl>
+		{{/package}}
+
+		{{#module}}
+			<dl class="attributeList">
+				<dt>module:</dt><dd><xref href="{{module}}" /></dd>
+			</dl>
+		{{/module}}
+	</div>
+{{/isPackage}}
+
+{{#isClass}}
+	{{>partials/universalReference/typeScript/deprecated}}
+	{{>partials/universalReference/typeScript/isPreview}}
+{{/isClass}}
+
+{{#isInterface}}
+	{{>partials/universalReference/typeScript/deprecated}}
+	{{>partials/universalReference/typeScript/isPreview}}
+{{/isInterface}}
+
+{{#isEnum}}
+	{{>partials/universalReference/typeScript/deprecated}}
+	{{>partials/universalReference/typeScript/isPreview}}
+{{/isEnum}}
+
+{{#summary}}
+	<div class="summaryHolder">
+		<div class="summary">
+			{{{summary}}}
+		</div>
+	</div>
+{{/summary}}
+
+{{>partials/docOutline}}
+
+{{#isClass}}
+	{{>partials/universalReference/typeScript/class}}
+{{/isClass}}
+
+{{#isInterface}}
+	{{>partials/universalReference/typeScript/interface}}
+{{/isInterface}}
+
+{{#isEnum}}
+	{{>partials/universalReference/typeScript/enum}}
+{{/isEnum}}
+
+{{#isModule}}
+	{{>partials/universalReference/typeScript/module}}
+{{/isModule}}
+
+{{#isNamespace}}
+	{{>partials/universalReference/typeScript/module}}
+{{/isNamespace}}
+
+{{#isTypeAlias}}
+	{{>partials/universalReference/typeScript/typeAlias}}
+{{/isTypeAlias}}
