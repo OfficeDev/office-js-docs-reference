@@ -29,7 +29,8 @@
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "customized_template_paths": [
-        "_dependentPackages/uref.plugins/content"
+        "_dependentPackages/uref.plugins/content",
+        "_themes.office/ContentTemplate"
       ]
 
     }

@@ -1,0 +1,49 @@
+{{#syntax}}
+	{{#content}}
+	<pre class="wrap"><code class="lang-typescript">{{value}}</code></pre>
+	{{/content}}
+{{/syntax}}
+
+{{#extendsRef}}
+	<dl class="attributeList stack">
+		<dt>Extends</dt><dd>
+		<div class="cdlHolder">
+			<span class="cdl">{{{extendsRef}}}</span>
+		</div>
+		</dd>
+	</dl>
+{{/extendsRef}}
+
+{{#inheritance.0}}
+	<dl class="attributeList stack">
+		<dt>{{__global.inheritance}}</dt><dd>
+		<div class="cdlHolder">
+		{{#value}}
+			{{>partials/universalReference/typeScript/inheritance}}
+			<div class="level{{level}}"><span class="cdl">{{name.0.value}}</span></div>
+		{{/value}}
+		</div>
+		</dd>
+	</dl>
+{{/inheritance.0}}
+
+{{#implements.0}}
+	<dl class="attributeList stack">
+		<dt>{{__global.implements}}</dt><dd>
+		<div class="cdlHolder">
+		{{#implements}}
+			{{#value}}
+				{{#specName}}
+					<span class="cdl">{{{value}}}</span>
+				{{/specName}}
+			{{/value}}
+		{{/implements}}
+		</div>
+		</dd>
+	</dl>
+{{/implements.0}}
+
+{{#remarks}}
+	<h2 id="remarks">{{__global.remarks}}</h2>
+	{{{remarks}}}
+{{/remarks}}

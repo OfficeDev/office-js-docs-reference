@@ -1,0 +1,84 @@
+{{#remarks}}
+	<h2 id="remarks">{{__global.remarks}}</h2>
+	{{{remarks}}}
+{{/remarks}}
+
+{{#classes.0}}
+	<h2 id="classes">{{__global.classesInSubtitle}}</h2>
+	<table class="nameValue">
+		{{#classes}}
+		<tr>
+			<td><xref href="{{uid}}?text={{#name}}{{value}}{{/name}}" /></td>
+			<td>{{{summary}}}</td>
+		</tr>
+		{{/classes}}
+	</table>
+{{/classes.0}}
+
+{{#interfaces.0}}
+	<h2 id="interfaces">{{__global.interfacesInSubtitle}}</h2>
+	<table class="nameValue">
+		{{#interfaces}}
+		<tr>
+			<td><xref href="{{uid}}?text={{#name}}{{value}}{{/name}}" /></td>
+			<td>{{{summary}}}</td>
+		</tr>
+		{{/interfaces}}
+	</table>
+{{/interfaces.0}}
+
+{{#typeAliases.0}}
+	<h2 id="typeAliases">{{__global.typeAliasInSubtitle}}</h2>
+	<table class="nameValue">
+		{{#typeAliases}}
+		<tr>
+			<td><xref href="{{uid}}?text={{#name}}{{value}}{{/name}}" /></td>
+			<td>{{{summary}}}</td>
+		</tr>
+		{{/typeAliases}}
+	</table>
+{{/typeAliases.0}}
+
+{{#enums.0}}
+	<h2 id="enums">{{__global.enumsInSubtitle}}</h2>
+	<table class="nameValue">
+		{{#enums}}
+		<tr>
+			<td><xref href="{{uid}}?text={{#name}}{{value}}{{/name}}" /></td>
+			<td>{{{summary}}}</td>
+		</tr>
+		{{/enums}}
+	</table>
+{{/enums.0}}
+
+{{#functions.0}}
+	<h2 id="functions">{{__global.functionsInSubtitle}}</h2>
+	<table class="nameValue">
+		{{#functions}}
+			{{>partials/universalReference/typeScript/member-summary}}
+		{{/functions}}
+	</table>
+{{/functions.0}}
+
+{{#properties.0}}
+	<h2 id="properties">{{__global.propertiesInSubtitle}}</h2>
+	<table class="nameValue">
+		{{#properties}}
+			{{>partials/universalReference/typeScript/member-summary}}
+		{{/properties}}
+	</table>
+{{/properties.0}}
+
+{{#functions.0}}
+	<h2 id="function-details">{{__global.functionDetails}}</h2>
+	{{#functions}}
+		{{>partials/universalReference/typeScript/member}}
+	{{/functions}}
+{{/functions.0}}
+
+{{#properties.0}}
+	<h2 id="property-details">{{__global.propertyDetails}}</h2>
+	{{#properties}}
+		{{>partials/universalReference/typeScript/member}}
+	{{/properties}}
+{{/properties.0}}

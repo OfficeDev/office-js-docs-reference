@@ -1,0 +1,4 @@
+{{#inheritance}}
+    {{>partials/universalReference/typeScript/inheritance}}
+{{/inheritance}}
+<div class="level{{level}}"><span class="cdl">{{{type.specName.0.value}}}</span></div>
