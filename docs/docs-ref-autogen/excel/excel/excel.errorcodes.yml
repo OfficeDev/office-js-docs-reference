@@ -25,6 +25,7 @@ items:
       - 'excel!Excel.ErrorCodes.nonBlankCellOffSheet:member'
       - 'excel!Excel.ErrorCodes.notImplemented:member'
       - 'excel!Excel.ErrorCodes.rangeExceedsLimit:member'
+      - 'excel!Excel.ErrorCodes.requestAborted:member'
       - 'excel!Excel.ErrorCodes.unsupportedOperation:member'
   - uid: 'excel!Excel.ErrorCodes.accessDenied:member'
     name: accessDenied
@@ -138,6 +139,13 @@ items:
       - typeScript
     type: field
     numericValue: '"RangeExceedsLimit"'
+  - uid: 'excel!Excel.ErrorCodes.requestAborted:member'
+    name: requestAborted
+    fullName: requestAborted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RequestAborted"'
   - uid: 'excel!Excel.ErrorCodes.unsupportedOperation:member'
     name: unsupportedOperation
     fullName: unsupportedOperation

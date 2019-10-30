@@ -1,0 +1,33 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.SlicerCollectionData:interface'
+    summary: An interface describing the data returned by calling `slicerCollection.toJSON()`<!-- -->.
+    name: Excel.Interfaces.SlicerCollectionData
+    fullName: Excel.Interfaces.SlicerCollectionData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.SlicerCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.SlicerCollectionData#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.SlicerData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.SlicerCollectionData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.SlicerCollectionData#items~0:complex'
+    name: 'Excel.Interfaces.SlicerData[]'
+    fullName: 'Excel.Interfaces.SlicerData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.SlicerData:interface'
+        name: Excel.Interfaces.SlicerData
+        fullName: Excel.Interfaces.SlicerData
+      - name: '[]'
+        fullName: '[]'

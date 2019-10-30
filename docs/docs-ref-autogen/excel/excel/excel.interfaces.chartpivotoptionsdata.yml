@@ -34,7 +34,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartPivotOptionsData#showLegendFieldButtons:member'
     summary: |-
-      Specifies whether or not to display the legend field buttons on a PivotChart
+      Specifies whether or not to display the legend field buttons on a PivotChart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showLegendFieldButtons
@@ -64,7 +64,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartPivotOptionsData#showValueFieldButtons:member'
     summary: |-
-      Specifies whether or not to display the show value field buttons on a PivotChart
+      Specifies whether or not to display the show value field buttons on a PivotChart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showValueFieldButtons

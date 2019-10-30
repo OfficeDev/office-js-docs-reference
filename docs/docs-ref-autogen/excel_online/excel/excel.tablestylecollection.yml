@@ -1,0 +1,310 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableStyleCollection:class'
+    summary: |-
+      Represents a collection of TableStyles.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.TableStyleCollection
+    fullName: Excel.TableStyleCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.TableStyleCollection#add:member(1)'
+      - 'excel!Excel.TableStyleCollection#context:member'
+      - 'excel!Excel.TableStyleCollection#getCount:member(1)'
+      - 'excel!Excel.TableStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.TableStyleCollection#getItem:member(1)'
+      - 'excel!Excel.TableStyleCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.TableStyleCollection#items:member'
+      - 'excel!Excel.TableStyleCollection#load:member(1)'
+      - 'excel!Excel.TableStyleCollection#load:member(2)'
+      - 'excel!Excel.TableStyleCollection#load:member(3)'
+      - 'excel!Excel.TableStyleCollection#setDefault:member(1)'
+      - 'excel!Excel.TableStyleCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.TableStyleCollection#add:member(1)'
+    summary: |-
+      Creates a blank TableStyle with the specified name.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'add(name, makeUniqueName)'
+    fullName: 'add(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string, makeUniqueName?: boolean): Excel.TableStyle;'
+      return:
+        type:
+          - 'excel!Excel.TableStyle:class'
+        description: The newly created TableStyle.
+      parameters:
+        - id: name
+          description: >-
+            The unique name for the new TableStyle. Will throw an invalid argument exception if the name is already in
+            use.
+          type:
+            - string
+        - id: makeUniqueName
+          description: 'Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.'
+          type:
+            - boolean
+  - uid: 'excel!Excel.TableStyleCollection#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TableStyleCollection#getCount:member(1)'
+    summary: |-
+      Gets the number of table styles in the collection.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.TableStyleCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.TableStyleCollection#getDefault:member(1)'
+    summary: |-
+      Gets the default TableStyle for the parent object's scope.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getDefault()
+    fullName: getDefault()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefault(): Excel.TableStyle;'
+      return:
+        type:
+          - 'excel!Excel.TableStyle:class'
+        description: The TableStyle object that is the current default TableStyle.
+  - uid: 'excel!Excel.TableStyleCollection#getItem:member(1)'
+    summary: |-
+      Gets a TableStyle by name.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Excel.TableStyle;'
+      return:
+        type:
+          - 'excel!Excel.TableStyle:class'
+        description: The TableStyle object whose name matches the input.
+      parameters:
+        - id: name
+          description: Name of the TableStyle to be retrieved.
+          type:
+            - string
+  - uid: 'excel!Excel.TableStyleCollection#getItemOrNullObject:member(1)'
+    summary: |-
+      Gets a TableStyle by name. If the TableStyle does not exist, will return a null object.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Excel.TableStyle;'
+      return:
+        type:
+          - 'excel!Excel.TableStyle:class'
+        description: The TableStyle object whose name matches the input.
+      parameters:
+        - id: name
+          description: Name of the TableStyle to be retrieved.
+          type:
+            - string
+  - uid: 'excel!Excel.TableStyleCollection#items:member'
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.TableStyle[];'
+      return:
+        type:
+          - 'excel!Excel.TableStyleCollection#items~0:complex'
+  - uid: 'excel!Excel.TableStyleCollection#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.TableStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.TableStyleCollection;
+      return:
+        type:
+          - 'excel!Excel.TableStyleCollection:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.TableStyleCollection#load~0:complex'
+  - uid: 'excel!Excel.TableStyleCollection#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.TableStyleCollection;'
+      return:
+        type:
+          - 'excel!Excel.TableStyleCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TableStyleCollection#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.TableStyleCollection;'
+      return:
+        type:
+          - 'excel!Excel.TableStyleCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - 'excel!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.TableStyleCollection#setDefault:member(1)'
+    summary: |-
+      Sets the default TableStyle for use in the parent object's scope.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: setDefault(newDefaultStyle)
+    fullName: setDefault(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefault(newDefaultStyle: TableStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: The TableStyle object or name of the TableStyle object that should be the new default.
+          type:
+            - 'excel!Excel.TableStyleCollection#setDefault~0:complex'
+  - uid: 'excel!Excel.TableStyleCollection#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.TableStyleCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.TableStyleCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.TableStyleCollectionData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.TableStyleCollectionData:interface'
+        description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.TableStyle:class'
+    name: Excel.TableStyle
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.TableStyleCollection#getCount~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.TableStyleCollection#items~0:complex'
+    name: 'Excel.TableStyle[]'
+    fullName: 'Excel.TableStyle[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.TableStyle:class'
+        name: Excel.TableStyle
+        fullName: Excel.TableStyle
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.TableStyleCollection:class'
+    name: Excel.TableStyleCollection
+  - uid: 'excel!Excel.TableStyleCollection#load~0:complex'
+    name: Excel.Interfaces.TableStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.TableStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions:interface'
+        name: Excel.Interfaces.TableStyleCollectionLoadOptions
+        fullName: Excel.Interfaces.TableStyleCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+        name: Excel.Interfaces.CollectionLoadOptions
+        fullName: Excel.Interfaces.CollectionLoadOptions
+  - uid: 'excel!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.TableStyleCollection#setDefault~0:complex'
+    name: TableStyle | string
+    fullName: Excel.TableStyle | string
+    spec.typeScript:
+      - uid: 'excel!Excel.TableStyle:class'
+        name: TableStyle
+        fullName: Excel.TableStyle
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.Interfaces.TableStyleCollectionData:interface'
+    name: Excel.Interfaces.TableStyleCollectionData

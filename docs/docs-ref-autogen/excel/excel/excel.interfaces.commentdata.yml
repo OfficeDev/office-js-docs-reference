@@ -20,13 +20,10 @@ items:
       - 'excel!Excel.Interfaces.CommentData#resolved:member'
       - 'excel!Excel.Interfaces.CommentData#richContent:member'
   - uid: 'excel!Excel.Interfaces.CommentData#authorEmail:member'
-    summary: >-
+    summary: |-
       Gets the email of the comment's author.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: authorEmail
     fullName: authorEmail
     langs:
@@ -38,13 +35,10 @@ items:
         type:
           - string
   - uid: 'excel!Excel.Interfaces.CommentData#authorName:member'
-    summary: >-
+    summary: |-
       Gets the name of the comment's author.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: authorName
     fullName: authorName
     langs:
@@ -56,13 +50,10 @@ items:
         type:
           - string
   - uid: 'excel!Excel.Interfaces.CommentData#content:member'
-    summary: >-
+    summary: |-
       Gets or sets the comment's content. The string is plain text.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: content
     fullName: content
     langs:
@@ -79,9 +70,7 @@ items:
       does not have a creation date.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: creationDate
     fullName: creationDate
     langs:
@@ -93,13 +82,10 @@ items:
         type:
           - '!Date:interface'
   - uid: 'excel!Excel.Interfaces.CommentData#id:member'
-    summary: >-
+    summary: |-
       Represents the comment identifier. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -129,13 +115,10 @@ items:
         type:
           - 'excel!Excel.Interfaces.CommentData#mentions~0:complex'
   - uid: 'excel!Excel.Interfaces.CommentData#replies:member'
-    summary: >-
+    summary: |-
       Represents a collection of reply objects associated with the comment. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: replies
     fullName: replies
     langs:

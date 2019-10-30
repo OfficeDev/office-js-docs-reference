@@ -17,9 +17,7 @@ items:
       default, if the slicer item is the only one selected, when it is deselected, all items will be selected.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isSelected
     fullName: isSelected
     langs:

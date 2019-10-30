@@ -1,0 +1,296 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+    summary: >-
+      An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc. To learn more about the worksheet
+      object model, read [Work with worksheets using the Excel JavaScript
+      API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!-- -->.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.WorksheetLoadOptions
+    fullName: Excel.Interfaces.WorksheetLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#autoFilter:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#charts:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#enableCalculation:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#pageLayout:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#position:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#protection:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#showGridlines:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#showHeadings:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#standardHeight:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#standardWidth:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#tabColor:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#tables:member'
+      - 'excel!Excel.Interfaces.WorksheetLoadOptions#visibility:member'
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#autoFilter:member'
+    summary: |-
+      Represents the AutoFilter object of the worksheet.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoFilter
+    fullName: autoFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoFilter?: Excel.Interfaces.AutoFilterLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.AutoFilterLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#charts:member'
+    summary: |-
+      Returns a collection of charts that are part of the worksheet.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: charts
+    fullName: charts
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'charts?: Excel.Interfaces.ChartCollectionLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ChartCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#enableCalculation:member'
+    summary: >-
+      Gets or sets the enableCalculation property of the worksheet. True if Excel recalculates the worksheet when
+      necessary. False if Excel doesn't recalculate the sheet.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: enableCalculation
+    fullName: enableCalculation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableCalculation?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#id:member'
+    summary: >-
+      Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
+      the same even when the worksheet is renamed or moved. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#name:member'
+    summary: |-
+      The display name of the worksheet.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#pageLayout:member'
+    summary: |-
+      Gets the PageLayout object of the worksheet.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: pageLayout
+    fullName: pageLayout
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pageLayout?: Excel.Interfaces.PageLayoutLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.PageLayoutLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#position:member'
+    summary: |-
+      The zero-based position of the worksheet within the workbook.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#protection:member'
+    summary: |-
+      Returns sheet protection object for a worksheet.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: protection
+    fullName: protection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#showGridlines:member'
+    summary: |-
+      Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showGridlines
+    fullName: showGridlines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showGridlines?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#showHeadings:member'
+    summary: |-
+      Gets or sets the worksheet's headings flag. This flag determines whether headings are visible to the user.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showHeadings
+    fullName: showHeadings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showHeadings?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#standardHeight:member'
+    summary: |-
+      Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: standardHeight
+    fullName: standardHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'standardHeight?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#standardWidth:member'
+    summary: >-
+      Returns or sets the standard (default) width of all the columns in the worksheet. One unit of column width is
+      equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0
+      (zero) is used.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: standardWidth
+    fullName: standardWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'standardWidth?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#tabColor:member'
+    summary: >-
+      Gets or sets the worksheet tab color. When retrieving the tab color, if the worksheet is invisible, the value will
+      be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned.
+      Otherwise, the property will be set to a color, in the form "\#123456" When setting the color, use an empty-string
+      to set an "auto" color, or a real color otherwise.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tabColor
+    fullName: tabColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tabColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#tables:member'
+    summary: |-
+      Collection of tables that are part of the worksheet.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tables
+    fullName: tables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#visibility:member'
+    summary: >-
+      The Visibility of the worksheet.
+
+
+      \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
+      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visibility
+    fullName: visibility
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visibility?: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.Interfaces.AutoFilterLoadOptions:interface'
+    name: Excel.Interfaces.AutoFilterLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions:interface'
+    name: Excel.Interfaces.ChartCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.PageLayoutLoadOptions:interface'
+    name: Excel.Interfaces.PageLayoutLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
+    name: Excel.Interfaces.WorksheetProtectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
+    name: Excel.Interfaces.TableCollectionLoadOptions

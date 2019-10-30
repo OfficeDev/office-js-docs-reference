@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ShapeDeactivatedEventArgs:interface'
+    summary: |-
+      Provides information about the shape that raised the Deactivated event.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShapeDeactivatedEventArgs
+    fullName: Excel.ShapeDeactivatedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ShapeDeactivatedEventArgs#shapeId:member'
+      - 'excel!Excel.ShapeDeactivatedEventArgs#type:member'
+      - 'excel!Excel.ShapeDeactivatedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.ShapeDeactivatedEventArgs#shapeId:member'
+    summary: |-
+      Gets the id of the shape deactivated shape.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: shapeId
+    fullName: shapeId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shapeId: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ShapeDeactivatedEventArgs#type:member'
+    summary: |-
+      Gets the type of the event. See Excel.EventType for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "ShapeDeactivated";'
+      return:
+        type:
+          - '"ShapeDeactivated"'
+  - uid: 'excel!Excel.ShapeDeactivatedEventArgs#worksheetId:member'
+    summary: |-
+      Gets the id of the worksheet in which the shape is deactivated.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheetId
+    fullName: worksheetId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type:
+          - string

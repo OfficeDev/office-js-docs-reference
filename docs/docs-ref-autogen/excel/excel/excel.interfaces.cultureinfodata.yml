@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.CultureInfoData:interface'
+    summary: An interface describing the data returned by calling `cultureInfo.toJSON()`<!-- -->.
+    name: Excel.Interfaces.CultureInfoData
+    fullName: Excel.Interfaces.CultureInfoData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.CultureInfoData#name:member'
+      - 'excel!Excel.Interfaces.CultureInfoData#numberFormatInfo:member'
+  - uid: 'excel!Excel.Interfaces.CultureInfoData#name:member'
+    summary: >-
+      Gets the culture name in the format languagecode2-country/regioncode2 (e.g. "zh-cn" or "en-us"). This is based on
+      current system settings.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.CultureInfoData#numberFormatInfo:member'
+    summary: >-
+      Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: numberFormatInfo
+    fullName: numberFormatInfo
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormatInfo?: Excel.Interfaces.NumberFormatInfoData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.NumberFormatInfoData:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.NumberFormatInfoData:interface'
+    name: Excel.Interfaces.NumberFormatInfoData

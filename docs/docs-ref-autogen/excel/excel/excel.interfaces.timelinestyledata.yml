@@ -13,13 +13,10 @@ items:
       - 'excel!Excel.Interfaces.TimelineStyleData#name:member'
       - 'excel!Excel.Interfaces.TimelineStyleData#readOnly:member'
   - uid: 'excel!Excel.Interfaces.TimelineStyleData#name:member'
-    summary: >-
+    summary: |-
       Gets the name of the TimelineStyle.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -31,13 +28,10 @@ items:
         type:
           - string
   - uid: 'excel!Excel.Interfaces.TimelineStyleData#readOnly:member'
-    summary: >-
+    summary: |-
       Specifies whether this TimelineStyle object is read-only. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readOnly
     fullName: readOnly
     langs:

@@ -17,7 +17,11 @@ items:
       - 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationEngineVersion:member'
       - 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationMode:member'
       - 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationState:member'
+      - 'excel!Excel.Interfaces.ApplicationLoadOptions#cultureInfo:member'
+      - 'excel!Excel.Interfaces.ApplicationLoadOptions#decimalSeparator:member'
       - 'excel!Excel.Interfaces.ApplicationLoadOptions#iterativeCalculation:member'
+      - 'excel!Excel.Interfaces.ApplicationLoadOptions#thousandsSeparator:member'
+      - 'excel!Excel.Interfaces.ApplicationLoadOptions#useSystemSeparators:member'
   - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#$all:member'
     summary: >-
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
@@ -82,6 +86,43 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#cultureInfo:member'
+    summary: >-
+      Provides information based on current system culture settings. This includes the culture names, number formatting,
+      and other culturally dependent settings.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: cultureInfo
+    fullName: cultureInfo
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cultureInfo?: Excel.Interfaces.CultureInfoLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#decimalSeparator:member'
+    summary: >-
+      Gets the string used as the decimal separator for numeric values. This is based on Excel's local settings.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: decimalSeparator
+    fullName: decimalSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'decimalSeparator?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#iterativeCalculation:member'
     summary: >-
       Returns the Iterative Calculation settings. In Excel on Windows and Mac, the settings will apply to the Excel
@@ -99,7 +140,47 @@ items:
       return:
         type:
           - 'excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#thousandsSeparator:member'
+    summary: >-
+      Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on
+      Excel's local settings.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: thousandsSeparator
+    fullName: thousandsSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'thousandsSeparator?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#useSystemSeparators:member'
+    summary: >-
+      Specifies whether the system separators of Microsoft Excel are enabled. System separators include the decimal
+      separator and thousands separator.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: useSystemSeparators
+    fullName: useSystemSeparators
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useSystemSeparators?: boolean;'
+      return:
+        type:
+          - boolean
 references:
+  - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
+    name: Excel.Interfaces.CultureInfoLoadOptions
   - uid: 'excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface'
     name: IterativeCalculationLoadOptions
     fullName: Excel.Interfaces.IterativeCalculationLoadOptions

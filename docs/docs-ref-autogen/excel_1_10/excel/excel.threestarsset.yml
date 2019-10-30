@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ThreeStarsSet:interface'
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ThreeStarsSet
+    fullName: Excel.ThreeStarsSet
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ThreeStarsSet#goldStar:member'
+      - 'excel!Excel.ThreeStarsSet#halfGoldStar:member'
+      - 'excel!Excel.ThreeStarsSet#silverStar:member'
+  - uid: 'excel!Excel.ThreeStarsSet#goldStar:member'
+    name: goldStar
+    fullName: goldStar
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'goldStar: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeStarsSet#halfGoldStar:member'
+    name: halfGoldStar
+    fullName: halfGoldStar
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'halfGoldStar: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeStarsSet#silverStar:member'
+    name: silverStar
+    fullName: silverStar
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'silverStar: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+references:
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon

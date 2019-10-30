@@ -1,0 +1,33 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionData:interface'
+    summary: An interface describing the data returned by calling `filterPivotHierarchyCollection.toJSON()`<!-- -->.
+    name: Excel.Interfaces.FilterPivotHierarchyCollectionData
+    fullName: Excel.Interfaces.FilterPivotHierarchyCollectionData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionData#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.FilterPivotHierarchyData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionData#items~0:complex'
+    name: 'Excel.Interfaces.FilterPivotHierarchyData[]'
+    fullName: 'Excel.Interfaces.FilterPivotHierarchyData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyData:interface'
+        name: Excel.Interfaces.FilterPivotHierarchyData
+        fullName: Excel.Interfaces.FilterPivotHierarchyData
+      - name: '[]'
+        fullName: '[]'

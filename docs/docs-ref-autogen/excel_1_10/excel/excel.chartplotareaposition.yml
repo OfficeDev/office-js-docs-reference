@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartPlotAreaPosition:enum'
+    summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartPlotAreaPosition
+    fullName: Excel.ChartPlotAreaPosition
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.ChartPlotAreaPosition.automatic:member'
+      - 'excel!Excel.ChartPlotAreaPosition.custom:member'
+  - uid: 'excel!Excel.ChartPlotAreaPosition.automatic:member'
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Automatic"'
+  - uid: 'excel!Excel.ChartPlotAreaPosition.custom:member'
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Custom"'

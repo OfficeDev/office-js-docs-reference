@@ -6,18 +6,14 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: ContentType
-    fullName: Excel.ContentType
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
-    type: enum
     package: excel!
     children:
       - 'excel!Excel.ContentType.mention:member'
       - 'excel!Excel.ContentType.plain:member'
   - uid: 'excel!Excel.ContentType.mention:member'
     summary: Comment content containing mentions.
-    isPreview: true
     name: mention
     fullName: mention
     langs:
@@ -26,7 +22,6 @@ items:
     numericValue: '"Mention"'
   - uid: 'excel!Excel.ContentType.plain:member'
     summary: Indicates plain format type of the comment content.
-    isPreview: true
     name: plain
     fullName: plain
     langs:

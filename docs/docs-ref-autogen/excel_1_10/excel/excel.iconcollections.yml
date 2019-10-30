@@ -1,0 +1,292 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.IconCollections:interface'
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.IconCollections
+    fullName: Excel.IconCollections
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.IconCollections#fiveArrows:member'
+      - 'excel!Excel.IconCollections#fiveArrowsGray:member'
+      - 'excel!Excel.IconCollections#fiveBoxes:member'
+      - 'excel!Excel.IconCollections#fiveQuarters:member'
+      - 'excel!Excel.IconCollections#fiveRating:member'
+      - 'excel!Excel.IconCollections#fourArrows:member'
+      - 'excel!Excel.IconCollections#fourArrowsGray:member'
+      - 'excel!Excel.IconCollections#fourRating:member'
+      - 'excel!Excel.IconCollections#fourRedToBlack:member'
+      - 'excel!Excel.IconCollections#fourTrafficLights:member'
+      - 'excel!Excel.IconCollections#threeArrows:member'
+      - 'excel!Excel.IconCollections#threeArrowsGray:member'
+      - 'excel!Excel.IconCollections#threeFlags:member'
+      - 'excel!Excel.IconCollections#threeSigns:member'
+      - 'excel!Excel.IconCollections#threeStars:member'
+      - 'excel!Excel.IconCollections#threeSymbols:member'
+      - 'excel!Excel.IconCollections#threeSymbols2:member'
+      - 'excel!Excel.IconCollections#threeTrafficLights1:member'
+      - 'excel!Excel.IconCollections#threeTrafficLights2:member'
+      - 'excel!Excel.IconCollections#threeTriangles:member'
+  - uid: 'excel!Excel.IconCollections#fiveArrows:member'
+    name: fiveArrows
+    fullName: fiveArrows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fiveArrows: FiveArrowsSet;'
+      return:
+        type:
+          - 'excel!Excel.FiveArrowsSet:interface'
+  - uid: 'excel!Excel.IconCollections#fiveArrowsGray:member'
+    name: fiveArrowsGray
+    fullName: fiveArrowsGray
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fiveArrowsGray: FiveArrowsGraySet;'
+      return:
+        type:
+          - 'excel!Excel.FiveArrowsGraySet:interface'
+  - uid: 'excel!Excel.IconCollections#fiveBoxes:member'
+    name: fiveBoxes
+    fullName: fiveBoxes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fiveBoxes: FiveBoxesSet;'
+      return:
+        type:
+          - 'excel!Excel.FiveBoxesSet:interface'
+  - uid: 'excel!Excel.IconCollections#fiveQuarters:member'
+    name: fiveQuarters
+    fullName: fiveQuarters
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fiveQuarters: FiveQuartersSet;'
+      return:
+        type:
+          - 'excel!Excel.FiveQuartersSet:interface'
+  - uid: 'excel!Excel.IconCollections#fiveRating:member'
+    name: fiveRating
+    fullName: fiveRating
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fiveRating: FiveRatingSet;'
+      return:
+        type:
+          - 'excel!Excel.FiveRatingSet:interface'
+  - uid: 'excel!Excel.IconCollections#fourArrows:member'
+    name: fourArrows
+    fullName: fourArrows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fourArrows: FourArrowsSet;'
+      return:
+        type:
+          - 'excel!Excel.FourArrowsSet:interface'
+  - uid: 'excel!Excel.IconCollections#fourArrowsGray:member'
+    name: fourArrowsGray
+    fullName: fourArrowsGray
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fourArrowsGray: FourArrowsGraySet;'
+      return:
+        type:
+          - 'excel!Excel.FourArrowsGraySet:interface'
+  - uid: 'excel!Excel.IconCollections#fourRating:member'
+    name: fourRating
+    fullName: fourRating
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fourRating: FourRatingSet;'
+      return:
+        type:
+          - 'excel!Excel.FourRatingSet:interface'
+  - uid: 'excel!Excel.IconCollections#fourRedToBlack:member'
+    name: fourRedToBlack
+    fullName: fourRedToBlack
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fourRedToBlack: FourRedToBlackSet;'
+      return:
+        type:
+          - 'excel!Excel.FourRedToBlackSet:interface'
+  - uid: 'excel!Excel.IconCollections#fourTrafficLights:member'
+    name: fourTrafficLights
+    fullName: fourTrafficLights
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fourTrafficLights: FourTrafficLightsSet;'
+      return:
+        type:
+          - 'excel!Excel.FourTrafficLightsSet:interface'
+  - uid: 'excel!Excel.IconCollections#threeArrows:member'
+    name: threeArrows
+    fullName: threeArrows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeArrows: ThreeArrowsSet;'
+      return:
+        type:
+          - 'excel!Excel.ThreeArrowsSet:interface'
+  - uid: 'excel!Excel.IconCollections#threeArrowsGray:member'
+    name: threeArrowsGray
+    fullName: threeArrowsGray
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeArrowsGray: ThreeArrowsGraySet;'
+      return:
+        type:
+          - 'excel!Excel.ThreeArrowsGraySet:interface'
+  - uid: 'excel!Excel.IconCollections#threeFlags:member'
+    name: threeFlags
+    fullName: threeFlags
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeFlags: ThreeFlagsSet;'
+      return:
+        type:
+          - 'excel!Excel.ThreeFlagsSet:interface'
+  - uid: 'excel!Excel.IconCollections#threeSigns:member'
+    name: threeSigns
+    fullName: threeSigns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeSigns: ThreeSignsSet;'
+      return:
+        type:
+          - 'excel!Excel.ThreeSignsSet:interface'
+  - uid: 'excel!Excel.IconCollections#threeStars:member'
+    name: threeStars
+    fullName: threeStars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeStars: ThreeStarsSet;'
+      return:
+        type:
+          - 'excel!Excel.ThreeStarsSet:interface'
+  - uid: 'excel!Excel.IconCollections#threeSymbols:member'
+    name: threeSymbols
+    fullName: threeSymbols
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeSymbols: ThreeSymbolsSet;'
+      return:
+        type:
+          - 'excel!Excel.ThreeSymbolsSet:interface'
+  - uid: 'excel!Excel.IconCollections#threeSymbols2:member'
+    name: threeSymbols2
+    fullName: threeSymbols2
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeSymbols2: ThreeSymbols2Set;'
+      return:
+        type:
+          - 'excel!Excel.ThreeSymbols2Set:interface'
+  - uid: 'excel!Excel.IconCollections#threeTrafficLights1:member'
+    name: threeTrafficLights1
+    fullName: threeTrafficLights1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeTrafficLights1: ThreeTrafficLights1Set;'
+      return:
+        type:
+          - 'excel!Excel.ThreeTrafficLights1Set:interface'
+  - uid: 'excel!Excel.IconCollections#threeTrafficLights2:member'
+    name: threeTrafficLights2
+    fullName: threeTrafficLights2
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeTrafficLights2: ThreeTrafficLights2Set;'
+      return:
+        type:
+          - 'excel!Excel.ThreeTrafficLights2Set:interface'
+  - uid: 'excel!Excel.IconCollections#threeTriangles:member'
+    name: threeTriangles
+    fullName: threeTriangles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeTriangles: ThreeTrianglesSet;'
+      return:
+        type:
+          - 'excel!Excel.ThreeTrianglesSet:interface'
+references:
+  - uid: 'excel!Excel.FiveArrowsSet:interface'
+    name: FiveArrowsSet
+  - uid: 'excel!Excel.FiveArrowsGraySet:interface'
+    name: FiveArrowsGraySet
+  - uid: 'excel!Excel.FiveBoxesSet:interface'
+    name: FiveBoxesSet
+  - uid: 'excel!Excel.FiveQuartersSet:interface'
+    name: FiveQuartersSet
+  - uid: 'excel!Excel.FiveRatingSet:interface'
+    name: FiveRatingSet
+  - uid: 'excel!Excel.FourArrowsSet:interface'
+    name: FourArrowsSet
+  - uid: 'excel!Excel.FourArrowsGraySet:interface'
+    name: FourArrowsGraySet
+  - uid: 'excel!Excel.FourRatingSet:interface'
+    name: FourRatingSet
+  - uid: 'excel!Excel.FourRedToBlackSet:interface'
+    name: FourRedToBlackSet
+  - uid: 'excel!Excel.FourTrafficLightsSet:interface'
+    name: FourTrafficLightsSet
+  - uid: 'excel!Excel.ThreeArrowsSet:interface'
+    name: ThreeArrowsSet
+  - uid: 'excel!Excel.ThreeArrowsGraySet:interface'
+    name: ThreeArrowsGraySet
+  - uid: 'excel!Excel.ThreeFlagsSet:interface'
+    name: ThreeFlagsSet
+  - uid: 'excel!Excel.ThreeSignsSet:interface'
+    name: ThreeSignsSet
+  - uid: 'excel!Excel.ThreeStarsSet:interface'
+    name: ThreeStarsSet
+  - uid: 'excel!Excel.ThreeSymbolsSet:interface'
+    name: ThreeSymbolsSet
+  - uid: 'excel!Excel.ThreeSymbols2Set:interface'
+    name: ThreeSymbols2Set
+  - uid: 'excel!Excel.ThreeTrafficLights1Set:interface'
+    name: ThreeTrafficLights1Set
+  - uid: 'excel!Excel.ThreeTrafficLights2Set:interface'
+    name: ThreeTrafficLights2Set
+  - uid: 'excel!Excel.ThreeTrianglesSet:interface'
+    name: ThreeTrianglesSet

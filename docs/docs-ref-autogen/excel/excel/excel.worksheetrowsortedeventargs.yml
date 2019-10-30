@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.WorksheetRowSortedEventArgs:interface'
-    summary: >-
+    summary: |-
       Provides information about the row-sorted event and its related worksheet.
 
 
@@ -26,9 +26,7 @@ items:
       the sort operation are returned.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
     fullName: address
     langs:
@@ -40,13 +38,10 @@ items:
         type:
           - string
   - uid: 'excel!Excel.WorksheetRowSortedEventArgs#source:member'
-    summary: >-
+    summary: |-
       Gets the source of the event. See Excel.EventSource for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: source
     fullName: source
     langs:
@@ -58,13 +53,10 @@ items:
         type:
           - 'excel!Excel.WorksheetRowSortedEventArgs#source~0:complex'
   - uid: 'excel!Excel.WorksheetRowSortedEventArgs#type:member'
-    summary: >-
+    summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -76,13 +68,10 @@ items:
         type:
           - '"WorksheetRowSorted"'
   - uid: 'excel!Excel.WorksheetRowSortedEventArgs#worksheetId:member'
-    summary: >-
+    summary: |-
       Gets the id of the worksheet where the sorting happened.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId
     fullName: worksheetId
     langs:

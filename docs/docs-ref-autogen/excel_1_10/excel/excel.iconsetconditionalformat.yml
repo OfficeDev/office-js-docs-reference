@@ -1,0 +1,376 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.IconSetConditionalFormat:class'
+    summary: |-
+      Represents an IconSet criteria for conditional formatting.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.IconSetConditionalFormat
+    fullName: Excel.IconSetConditionalFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.IconSetConditionalFormat#context:member'
+      - 'excel!Excel.IconSetConditionalFormat#criteria:member'
+      - 'excel!Excel.IconSetConditionalFormat#load:member(1)'
+      - 'excel!Excel.IconSetConditionalFormat#load:member(2)'
+      - 'excel!Excel.IconSetConditionalFormat#load:member(3)'
+      - 'excel!Excel.IconSetConditionalFormat#reverseIconOrder:member'
+      - 'excel!Excel.IconSetConditionalFormat#set:member(1)'
+      - 'excel!Excel.IconSetConditionalFormat#set:member(2)'
+      - 'excel!Excel.IconSetConditionalFormat#showIconOnly:member'
+      - 'excel!Excel.IconSetConditionalFormat#style:member'
+      - 'excel!Excel.IconSetConditionalFormat#toJSON:member(1)'
+  - uid: 'excel!Excel.IconSetConditionalFormat#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.IconSetConditionalFormat#criteria:member'
+    summary: >-
+      An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for
+      the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when
+      set.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: criteria
+    fullName: criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criteria: Excel.ConditionalIconCriterion[];'
+      return:
+        type:
+          - 'excel!Excel.IconSetConditionalFormat#criteria~0:complex'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B8:E13");
+              const conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.iconSet);
+              const iconSetCF = conditionalFormat.iconSet;
+              iconSetCF.style = Excel.IconSet.threeTriangles;
+
+              /*
+                  The iconSetCF.criteria array is automatically prepopulated with
+                  criterion elements whose properties have been given default settings.
+                  You can't write to each property of a criterion directly. Instead,
+                  replace the whole criteria object.
+
+                  With a "three*" icon set style, such as "threeTriangles", the third
+                  element in the criteria array (criteria[2]) defines the "top" icon;
+                  e.g., a green triangle. The second (criteria[1]) defines the "middle"
+                  icon, The first (criteria[0]) defines the "low" icon, but it
+                  can often be left empty as this method does below, because every
+                  cell that does not match the other two criteria always gets the low
+                  icon.            
+              */
+              iconSetCF.criteria = [
+                  {} as any,
+                  {
+                      type: Excel.ConditionalFormatIconRuleType.number,
+                      operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+                      formula: "=700"
+                  },
+                  {
+                      type: Excel.ConditionalFormatIconRuleType.number,
+                      operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+                      formula: "=1000",
+                  }
+              ];
+
+              await context.sync();
+          });
+          ```
+  - uid: 'excel!Excel.IconSetConditionalFormat#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.IconSetConditionalFormatLoadOptions): Excel.IconSetConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.IconSetConditionalFormat:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface'
+  - uid: 'excel!Excel.IconSetConditionalFormat#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.IconSetConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.IconSetConditionalFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.IconSetConditionalFormat#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.IconSetConditionalFormat;
+      return:
+        type:
+          - 'excel!Excel.IconSetConditionalFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.IconSetConditionalFormat#reverseIconOrder:member'
+    summary: |-
+      If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: reverseIconOrder
+    fullName: reverseIconOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'reverseIconOrder: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.IconSetConditionalFormat#set:member(1)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.IconSetConditionalFormat): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.IconSetConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData:interface'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.IconSetConditionalFormat#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.IconSetConditionalFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.IconSetConditionalFormat:class'
+  - uid: 'excel!Excel.IconSetConditionalFormat#showIconOnly:member'
+    summary: |-
+      If true, hides the values and only shows icons.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showIconOnly
+    fullName: showIconOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showIconOnly: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.IconSetConditionalFormat#style:member'
+    summary: |-
+      If set, displays the IconSet option for the conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        style: Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" |
+        "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" |
+        "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" |
+        "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" |
+        "LinkedEntityMapIcon";
+      return:
+        type:
+          - 'excel!Excel.IconSetConditionalFormat#style~0:complex'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B8:E13");
+              const conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.iconSet);
+              const iconSetCF = conditionalFormat.iconSet;
+              iconSetCF.style = Excel.IconSet.threeTriangles;
+
+              /*
+                  The iconSetCF.criteria array is automatically prepopulated with
+                  criterion elements whose properties have been given default settings.
+                  You can't write to each property of a criterion directly. Instead,
+                  replace the whole criteria object.
+
+                  With a "three*" icon set style, such as "threeTriangles", the third
+                  element in the criteria array (criteria[2]) defines the "top" icon;
+                  e.g., a green triangle. The second (criteria[1]) defines the "middle"
+                  icon, The first (criteria[0]) defines the "low" icon, but it
+                  can often be left empty as this method does below, because every
+                  cell that does not match the other two criteria always gets the low
+                  icon.            
+              */
+              iconSetCF.criteria = [
+                  {} as any,
+                  {
+                      type: Excel.ConditionalFormatIconRuleType.number,
+                      operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+                      formula: "=700"
+                  },
+                  {
+                      type: Excel.ConditionalFormatIconRuleType.number,
+                      operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+                      formula: "=1000",
+                  }
+              ];
+
+              await context.sync();
+          });
+          ```
+  - uid: 'excel!Excel.IconSetConditionalFormat#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.IconSetConditionalFormat object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.IconSetConditionalFormatData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.IconSetConditionalFormatData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.IconSetConditionalFormatData:interface'
+        description: ''
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.IconSetConditionalFormat#criteria~0:complex'
+    name: 'Excel.ConditionalIconCriterion[]'
+    fullName: 'Excel.ConditionalIconCriterion[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.ConditionalIconCriterion:interface'
+        name: Excel.ConditionalIconCriterion
+        fullName: Excel.ConditionalIconCriterion
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.IconSetConditionalFormat:class'
+    name: Excel.IconSetConditionalFormat
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface'
+    name: Excel.Interfaces.IconSetConditionalFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData:interface'
+    name: Interfaces.IconSetConditionalFormatUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.IconSetConditionalFormat#style~0:complex'
+    name: >-
+      Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" |
+      "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" |
+      "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" |
+      "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" | "LinkedEntityMapIcon"
+    fullName: >-
+      Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" |
+      "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" |
+      "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" |
+      "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" | "LinkedEntityMapIcon"
+    spec.typeScript:
+      - uid: 'excel!Excel.IconSet:enum'
+        name: Excel.IconSet
+        fullName: Excel.IconSet
+      - name: ' | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" | "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" | "LinkedEntityMapIcon"'
+        fullName: ' | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" | "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" | "LinkedEntityMapIcon"'
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatData:interface'
+    name: Excel.Interfaces.IconSetConditionalFormatData

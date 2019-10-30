@@ -1,0 +1,48 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatData:interface'
+    summary: An interface describing the data returned by calling `colorScaleConditionalFormat.toJSON()`<!-- -->.
+    name: Excel.Interfaces.ColorScaleConditionalFormatData
+    fullName: Excel.Interfaces.ColorScaleConditionalFormatData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.ColorScaleConditionalFormatData#criteria:member'
+      - 'excel!Excel.Interfaces.ColorScaleConditionalFormatData#threeColorScale:member'
+  - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatData#criteria:member'
+    summary: |-
+      The criteria of the color scale. Midpoint is optional when using a two point color scale.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: criteria
+    fullName: criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criteria?: Excel.ConditionalColorScaleCriteria;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalColorScaleCriteria:interface'
+  - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatData#threeColorScale:member'
+    summary: >-
+      If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum,
+      maximum).
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: threeColorScale
+    fullName: threeColorScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeColorScale?: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.ConditionalColorScaleCriteria:interface'
+    name: Excel.ConditionalColorScaleCriteria

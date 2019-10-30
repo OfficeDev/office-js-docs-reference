@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ProtectionSelectionMode:enum'
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ProtectionSelectionMode
+    fullName: Excel.ProtectionSelectionMode
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.ProtectionSelectionMode.none:member'
+      - 'excel!Excel.ProtectionSelectionMode.normal:member'
+      - 'excel!Excel.ProtectionSelectionMode.unlocked:member'
+  - uid: 'excel!Excel.ProtectionSelectionMode.none:member'
+    summary: Selection is not allowed for all cells.
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: 'excel!Excel.ProtectionSelectionMode.normal:member'
+    summary: Selection is allowed for all cells.
+    name: normal
+    fullName: normal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Normal"'
+  - uid: 'excel!Excel.ProtectionSelectionMode.unlocked:member'
+    summary: Selection is allowed only for cells that are not locked.
+    name: unlocked
+    fullName: unlocked
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unlocked"'

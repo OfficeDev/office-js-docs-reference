@@ -24,7 +24,7 @@ items:
       - 'excel!Excel.Interfaces.WorksheetData#visibility:member'
   - uid: 'excel!Excel.Interfaces.WorksheetData#charts:member'
     summary: |-
-      Returns collection of charts that are part of the worksheet. Read-only.
+      Returns a collection of charts that are part of the worksheet. Read-only.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: charts

@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ShapeZOrder:enum'
+    summary: |-
+      Specifies where in the z-order a shape should be moved relative to other shapes.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShapeZOrder
+    fullName: Excel.ShapeZOrder
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.ShapeZOrder.bringForward:member'
+      - 'excel!Excel.ShapeZOrder.bringToFront:member'
+      - 'excel!Excel.ShapeZOrder.sendBackward:member'
+      - 'excel!Excel.ShapeZOrder.sendToBack:member'
+  - uid: 'excel!Excel.ShapeZOrder.bringForward:member'
+    name: bringForward
+    fullName: bringForward
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BringForward"'
+  - uid: 'excel!Excel.ShapeZOrder.bringToFront:member'
+    name: bringToFront
+    fullName: bringToFront
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BringToFront"'
+  - uid: 'excel!Excel.ShapeZOrder.sendBackward:member'
+    name: sendBackward
+    fullName: sendBackward
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SendBackward"'
+  - uid: 'excel!Excel.ShapeZOrder.sendToBack:member'
+    name: sendToBack
+    fullName: sendToBack
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SendToBack"'

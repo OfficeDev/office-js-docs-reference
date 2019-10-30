@@ -12,13 +12,10 @@ items:
     children:
       - 'excel!Excel.Interfaces.TableStyleUpdateData#name:member'
   - uid: 'excel!Excel.Interfaces.TableStyleUpdateData#name:member'
-    summary: >-
+    summary: |-
       Gets the name of the TableStyle.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:

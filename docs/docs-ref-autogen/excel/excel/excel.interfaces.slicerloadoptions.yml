@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.SlicerLoadOptions:interface'
-    summary: >-
+    summary: |-
       Represents a slicer object in the workbook.
 
 
@@ -9,11 +9,8 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: SlicerLoadOptions
-    fullName: Excel.Interfaces.SlicerLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
-    type: interface
     package: excel!
     children:
       - 'excel!Excel.Interfaces.SlicerLoadOptions#$all:member'
@@ -33,7 +30,6 @@ items:
     summary: >-
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    isPreview: true
     name: $all
     fullName: $all
     langs:
@@ -45,13 +41,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#caption:member'
-    summary: >-
+    summary: |-
       Represents the caption of slicer.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: caption
     fullName: caption
     langs:
@@ -68,9 +61,7 @@ items:
       format." exception when set with negative value or zero as input.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
     fullName: height
     langs:
@@ -82,13 +73,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#id:member'
-    summary: >-
+    summary: |-
       Represents the unique id of slicer. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -100,13 +88,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#isFilterCleared:member'
-    summary: >-
+    summary: |-
       True if all filters currently applied on the slicer are cleared.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isFilterCleared
     fullName: isFilterCleared
     langs:
@@ -123,9 +108,7 @@ items:
       argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: left
     langs:
@@ -137,13 +120,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#name:member'
-    summary: >-
+    summary: |-
       Represents the name of slicer.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -178,9 +158,7 @@ items:
       "Descending".
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sortBy
     fullName: sortBy
     langs:
@@ -198,9 +176,7 @@ items:
       A custom user-defined style present in the workbook can also be specified.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: style
     langs:
@@ -217,9 +193,7 @@ items:
       argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: top
     langs:
@@ -236,9 +210,7 @@ items:
       format." exception when set with negative value or zero as input.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
     fullName: width
     langs:
@@ -250,13 +222,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#worksheet:member'
-    summary: >-
+    summary: |-
       Represents the worksheet containing the slicer.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
     fullName: worksheet
     langs:

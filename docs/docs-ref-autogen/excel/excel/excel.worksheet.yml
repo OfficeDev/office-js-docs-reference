@@ -166,7 +166,7 @@ items:
             - boolean
   - uid: 'excel!Excel.Worksheet#charts:member'
     summary: |-
-      Returns collection of charts that are part of the worksheet. Read-only.
+      Returns a collection of charts that are part of the worksheet. Read-only.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: charts
@@ -180,13 +180,10 @@ items:
         type:
           - 'excel!Excel.ChartCollection:class'
   - uid: 'excel!Excel.Worksheet#comments:member'
-    summary: >-
+    summary: |-
       Returns a collection of all the Comments objects on the worksheet. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: comments
     fullName: comments
     langs:
@@ -213,7 +210,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.Worksheet#copy:member(1)'
     summary: |-
-      Copy a worksheet and place it at the specified position. Return the copied worksheet.
+      Copies a worksheet and places it at the specified position.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'copy(positionType, relativeTo)'
@@ -227,7 +224,7 @@ items:
         type:
           - 'excel!Excel.Worksheet:class'
         description: |-
-
+          The newly created worksheet.
 
           #### Examples
 
@@ -248,16 +245,20 @@ items:
           ```
       parameters:
         - id: positionType
-          description: Optional.
+          description: >-
+            The location in the workbook to place the newly created worksheet. The default value is "None", which
+            inserts the worksheet at the beginning of the worksheet.
           type:
             - 'excel!Excel.WorksheetPositionType:enum'
         - id: relativeTo
-          description: Optional.
+          description: >-
+            The existing worksheet which determines the newly created worksheet's position. This is only needed if
+            `positionType` is "Before" or "After".
           type:
             - 'excel!Excel.Worksheet:class'
   - uid: 'excel!Excel.Worksheet#copy:member(2)'
     summary: |-
-      Copy a worksheet and place it at the specified position. Return the copied worksheet.
+      Copies a worksheet and places it at the specified position.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'copy(positionTypeString, relativeTo)'
@@ -272,14 +273,18 @@ items:
       return:
         type:
           - 'excel!Excel.Worksheet:class'
-        description: ''
+        description: The newly created worksheet.
       parameters:
         - id: positionTypeString
-          description: Optional.
+          description: >-
+            The location in the workbook to place the newly created worksheet. The default value is "None", which
+            inserts the worksheet at the beginning of the worksheet.
           type:
             - '"None" | "Before" | "After" | "Beginning" | "End"'
         - id: relativeTo
-          description: Optional.
+          description: >-
+            The existing worksheet which determines the newly created worksheet's position. This is only needed if
+            `positionType` is "Before" or "After".
           type:
             - 'excel!Excel.Worksheet:class'
   - uid: 'excel!Excel.Worksheet#delete:member(1)'
@@ -1093,13 +1098,10 @@ items:
           });
           ```
   - uid: 'excel!Excel.Worksheet#onColumnSorted:member'
-    summary: >-
+    summary: |-
       Occurs when one or more columns have been sorted. This happens as the result of a left-to-right sort operation.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onColumnSorted
     fullName: onColumnSorted
     langs:
@@ -1221,13 +1223,10 @@ items:
         type:
           - 'excel!Excel.Worksheet#onRowHiddenChanged~0:complex'
   - uid: 'excel!Excel.Worksheet#onRowSorted:member'
-    summary: >-
+    summary: |-
       Occurs when one or more rows have been sorted. This happens as the result of a top-to-bottom sort operation.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onRowSorted
     fullName: onRowSorted
     langs:
@@ -1299,7 +1298,7 @@ items:
           ```
   - uid: 'excel!Excel.Worksheet#onSingleClicked:member'
     summary: >-
-      Occurs when left-clicked/tapped operation happens in the worksheet. This event will not be fired when clicking in
+      Occurs when a left-clicked/tapped action happens in the worksheet. This event will not be fired when clicking in
       the following cases:
 
 
@@ -1309,9 +1308,7 @@ items:
       - The user selects a cell in the mode when cell arguments are selected for formula references.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onSingleClicked
     fullName: onSingleClicked
     langs:
@@ -1547,9 +1544,7 @@ items:
       than the current number of levels displays all the levels.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'showOutlineLevels(rowLevels, columnLevels)'
     fullName: 'showOutlineLevels(rowLevels, columnLevels)'
     langs:
@@ -1593,13 +1588,10 @@ items:
           type:
             - number
   - uid: 'excel!Excel.Worksheet#slicers:member'
-    summary: >-
-      Returns collection of slicers that are part of the worksheet. Read-only.
+    summary: |-
+      Returns a collection of slicers that are part of the worksheet. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: slicers
     fullName: slicers
     langs:

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.WorksheetSingleClickedEventArgs:interface'
-    summary: >-
+    summary: |-
       Provides information about the left-clicked/tapped event and its related worksheet.
 
 
@@ -22,13 +22,10 @@ items:
       - 'excel!Excel.WorksheetSingleClickedEventArgs#type:member'
       - 'excel!Excel.WorksheetSingleClickedEventArgs#worksheetId:member'
   - uid: 'excel!Excel.WorksheetSingleClickedEventArgs#address:member'
-    summary: >-
+    summary: |-
       Gets the address that represents the cell which was left-clicked/tapped for a specific worksheet.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
     fullName: address
     langs:
@@ -61,13 +58,11 @@ items:
           ```
   - uid: 'excel!Excel.WorksheetSingleClickedEventArgs#offsetX:member'
     summary: >-
-      The distance, in points, from the left-clicked/tapped point to the left (or right for RTL) gridline edge of the
-      left-clicked/tapped cell.
+      The distance, in points, from the left-clicked/tapped point to the left (or right for right-to-left languages)
+      gridline edge of the left-clicked/tapped cell.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: offsetX
     fullName: offsetX
     langs:
@@ -84,9 +79,7 @@ items:
       cell.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: offsetY
     fullName: offsetY
     langs:
@@ -98,13 +91,10 @@ items:
         type:
           - number
   - uid: 'excel!Excel.WorksheetSingleClickedEventArgs#type:member'
-    summary: >-
+    summary: |-
       Gets the type of the event.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -116,13 +106,10 @@ items:
         type:
           - '"WorksheetSingleClicked"'
   - uid: 'excel!Excel.WorksheetSingleClickedEventArgs#worksheetId:member'
-    summary: >-
+    summary: |-
       Gets the id of the worksheet in which the cell was left-clicked/tapped.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId
     fullName: worksheetId
     langs:

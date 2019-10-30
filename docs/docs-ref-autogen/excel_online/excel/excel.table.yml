@@ -1,0 +1,862 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Table:class'
+    summary: >-
+      Represents an Excel table. To learn more about the table object model, read [Work with tables using the Excel
+      JavaScript API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)<!-- -->.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Table
+    fullName: Excel.Table
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.Table#autoFilter:member'
+      - 'excel!Excel.Table#clearFilters:member(1)'
+      - 'excel!Excel.Table#columns:member'
+      - 'excel!Excel.Table#context:member'
+      - 'excel!Excel.Table#convertToRange:member(1)'
+      - 'excel!Excel.Table#delete:member(1)'
+      - 'excel!Excel.Table#getDataBodyRange:member(1)'
+      - 'excel!Excel.Table#getHeaderRowRange:member(1)'
+      - 'excel!Excel.Table#getRange:member(1)'
+      - 'excel!Excel.Table#getTotalRowRange:member(1)'
+      - 'excel!Excel.Table#highlightFirstColumn:member'
+      - 'excel!Excel.Table#highlightLastColumn:member'
+      - 'excel!Excel.Table#id:member'
+      - 'excel!Excel.Table#legacyId:member'
+      - 'excel!Excel.Table#load:member(1)'
+      - 'excel!Excel.Table#load:member(2)'
+      - 'excel!Excel.Table#load:member(3)'
+      - 'excel!Excel.Table#name:member'
+      - 'excel!Excel.Table#onChanged:member'
+      - 'excel!Excel.Table#onSelectionChanged:member'
+      - 'excel!Excel.Table#reapplyFilters:member(1)'
+      - 'excel!Excel.Table#rows:member'
+      - 'excel!Excel.Table#set:member(1)'
+      - 'excel!Excel.Table#set:member(2)'
+      - 'excel!Excel.Table#showBandedColumns:member'
+      - 'excel!Excel.Table#showBandedRows:member'
+      - 'excel!Excel.Table#showFilterButton:member'
+      - 'excel!Excel.Table#showHeaders:member'
+      - 'excel!Excel.Table#showTotals:member'
+      - 'excel!Excel.Table#sort:member'
+      - 'excel!Excel.Table#style:member'
+      - 'excel!Excel.Table#toJSON:member(1)'
+      - 'excel!Excel.Table#worksheet:member'
+  - uid: 'excel!Excel.Table#autoFilter:member'
+    summary: |-
+      Represents the AutoFilter object of the table. Read-Only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoFilter
+    fullName: autoFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly autoFilter: Excel.AutoFilter;'
+      return:
+        type:
+          - 'excel!Excel.AutoFilter:class'
+  - uid: 'excel!Excel.Table#clearFilters:member(1)'
+    summary: |-
+      Clears all the filters currently applied on the table.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: clearFilters()
+    fullName: clearFilters()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearFilters(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.Table#columns:member'
+    summary: |-
+      Represents a collection of all the columns in the table. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columns
+    fullName: columns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly columns: Excel.TableColumnCollection;'
+      return:
+        type:
+          - 'excel!Excel.TableColumnCollection:class'
+  - uid: 'excel!Excel.Table#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Table#convertToRange:member(1)'
+    summary: |-
+      Converts the table into a normal range of cells. All data is preserved.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: convertToRange()
+    fullName: convertToRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'convertToRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var table = ctx.workbook.tables.getItem(tableName);
+              table.convertToRange();
+              return ctx.sync(); 
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+  - uid: 'excel!Excel.Table#delete:member(1)'
+    summary: |-
+      Deletes the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var table = ctx.workbook.tables.getItem(tableName);
+              table.delete();
+              return ctx.sync(); 
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+  - uid: 'excel!Excel.Table#getDataBodyRange:member(1)'
+    summary: |-
+      Gets the range object associated with the data body of the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getDataBodyRange()
+    fullName: getDataBodyRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataBodyRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var table = ctx.workbook.tables.getItem(tableName);
+              var tableDataRange = table.getDataBodyRange();
+              tableDataRange.load('address')
+              return ctx.sync().then(function() {
+                      console.log(tableDataRange.address);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+  - uid: 'excel!Excel.Table#getHeaderRowRange:member(1)'
+    summary: |-
+      Gets the range object associated with header row of the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getHeaderRowRange()
+    fullName: getHeaderRowRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHeaderRowRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var table = ctx.workbook.tables.getItem(tableName);
+              var tableHeaderRange = table.getHeaderRowRange();
+              tableHeaderRange.load('address');
+              return ctx.sync().then(function() {
+                  console.log(tableHeaderRange.address);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+  - uid: 'excel!Excel.Table#getRange:member(1)'
+    summary: |-
+      Gets the range object associated with the entire table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var table = ctx.workbook.tables.getItem(tableName);
+              var tableRange = table.getRange();
+              tableRange.load('address');    
+              return ctx.sync().then(function() {
+                      console.log(tableRange.address);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+  - uid: 'excel!Excel.Table#getTotalRowRange:member(1)'
+    summary: |-
+      Gets the range object associated with totals row of the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getTotalRowRange()
+    fullName: getTotalRowRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTotalRowRange(): Excel.Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:class'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var table = ctx.workbook.tables.getItem(tableName);
+              var tableTotalsRange = table.getTotalRowRange();
+              tableTotalsRange.load('address');    
+              return ctx.sync().then(function() {
+                      console.log(tableTotalsRange.address);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+  - uid: 'excel!Excel.Table#highlightFirstColumn:member'
+    summary: |-
+      Indicates whether the first column contains special formatting.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: highlightFirstColumn
+    fullName: highlightFirstColumn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'highlightFirstColumn: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#highlightLastColumn:member'
+    summary: |-
+      Indicates whether the last column contains special formatting.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: highlightLastColumn
+    fullName: highlightLastColumn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'highlightLastColumn: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#id:member'
+    summary: >-
+      Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the
+      same even when the table is renamed. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Table#legacyId:member'
+    summary: |-
+      Returns a numeric id.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: legacyId
+    fullName: legacyId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly legacyId: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Table#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.TableLoadOptions): Excel.Table;'
+      return:
+        type:
+          - 'excel!Excel.Table:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.TableLoadOptions:interface'
+  - uid: 'excel!Excel.Table#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Table;'
+      return:
+        type:
+          - 'excel!Excel.Table:class'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Get a table by name. 
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var table = ctx.workbook.tables.getItem(tableName);
+              table.load('index')
+              return ctx.sync().then(function() {
+                      console.log(table.index);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          // Get a table by index.
+          Excel.run(function (ctx) { 
+              var index = 0;
+              var table = ctx.workbook.tables.getItemAt(0);
+              table.load('id')
+              return ctx.sync().then(function() {
+                      console.log(table.id);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          // Set table style. 
+          Excel.run(function (ctx) { 
+              var tableName = 'Table1';
+              var table = ctx.workbook.tables.getItem(tableName);
+              table.name = 'Table1-Renamed';
+              table.showTotals = false;
+              table.style = 'TableStyleMedium2';
+              table.load('tableStyle');
+              return ctx.sync().then(function() {
+                      console.log(table.style);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Table#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.Table;
+      return:
+        type:
+          - 'excel!Excel.Table:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.Table#name:member'
+    summary: |-
+      Name of the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Table#onChanged:member'
+    summary: |-
+      Occurs when data in cells changes on a specific table.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: onChanged
+    fullName: onChanged
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>;'
+      return:
+        type:
+          - 'excel!Excel.Table#onChanged~0:complex'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              let table = context.workbook.tables.getItemAt(0);
+              table.onChanged.add(onChange);
+
+              await context.sync();
+              console.log("A handler has been registered for the onChanged event");
+          });
+          ```
+  - uid: 'excel!Excel.Table#onSelectionChanged:member'
+    summary: |-
+      Occurs when the selection changes on a specific table.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: onSelectionChanged
+    fullName: onSelectionChanged
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.TableSelectionChangedEventArgs>;'
+      return:
+        type:
+          - 'excel!Excel.Table#onSelectionChanged~0:complex'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              let table = context.workbook.tables.getItemAt(0);
+              table.onSelectionChanged.add(onSelectionChange);
+
+              await context.sync();
+              console.log("A handler has been registered for table onSelectionChanged event");
+          });
+          ```
+  - uid: 'excel!Excel.Table#reapplyFilters:member(1)'
+    summary: |-
+      Reapplies all the filters currently on the table.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: reapplyFilters()
+    fullName: reapplyFilters()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'reapplyFilters(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.Table#rows:member'
+    summary: |-
+      Represents a collection of all the rows in the table. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rows
+    fullName: rows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly rows: Excel.TableRowCollection;'
+      return:
+        type:
+          - 'excel!Excel.TableRowCollection:class'
+  - uid: 'excel!Excel.Table#set:member(1)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.Table): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.TableUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.TableUpdateData:interface'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.Table#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.Table): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.Table:class'
+  - uid: 'excel!Excel.Table#showBandedColumns:member'
+    summary: >-
+      Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even
+      ones to make reading the table easier.
+
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showBandedColumns
+    fullName: showBandedColumns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showBandedColumns: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#showBandedRows:member'
+    summary: >-
+      Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to
+      make reading the table easier.
+
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showBandedRows
+    fullName: showBandedRows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showBandedRows: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#showFilterButton:member'
+    summary: >-
+      Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if
+      the table contains a header row.
+
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showFilterButton
+    fullName: showFilterButton
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showFilterButton: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#showHeaders:member'
+    summary: |-
+      Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showHeaders
+    fullName: showHeaders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showHeaders: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#showTotals:member'
+    summary: |-
+      Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showTotals
+    fullName: showTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showTotals: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#sort:member'
+    summary: |-
+      Represents the sorting for the table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: sort
+    fullName: sort
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly sort: Excel.TableSort;'
+      return:
+        type:
+          - 'excel!Excel.TableSort:class'
+  - uid: 'excel!Excel.Table#style:member'
+    summary: >-
+      Constant value that represents the Table style. Possible values are: "TableStyleLight1" through
+      "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through
+      "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Table#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Table object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.TableData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.TableData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.TableData:interface'
+        description: ''
+  - uid: 'excel!Excel.Table#worksheet:member'
+    summary: |-
+      The worksheet containing the current table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheet: Excel.Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:class'
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.AutoFilter:class'
+    name: Excel.AutoFilter
+  - uid: 'excel!Excel.TableColumnCollection:class'
+    name: Excel.TableColumnCollection
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.Range:class'
+    name: Excel.Range
+  - uid: 'excel!Excel.Table:class'
+    name: Excel.Table
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions:interface'
+    name: Excel.Interfaces.TableLoadOptions
+  - uid: 'excel!Excel.Table#onChanged~0:complex'
+    name: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
+    fullName: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.EventHandlers:class'
+        name: OfficeExtension.EventHandlers
+        fullName: OfficeExtension.EventHandlers
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.TableChangedEventArgs:interface'
+        name: Excel.TableChangedEventArgs
+        fullName: Excel.TableChangedEventArgs
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.Table#onSelectionChanged~0:complex'
+    name: OfficeExtension.EventHandlers<Excel.TableSelectionChangedEventArgs>
+    fullName: OfficeExtension.EventHandlers<Excel.TableSelectionChangedEventArgs>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.EventHandlers:class'
+        name: OfficeExtension.EventHandlers
+        fullName: OfficeExtension.EventHandlers
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.TableSelectionChangedEventArgs:interface'
+        name: Excel.TableSelectionChangedEventArgs
+        fullName: Excel.TableSelectionChangedEventArgs
+      - name: '>'
+        fullName: '>'
+  - uid: 'excel!Excel.TableRowCollection:class'
+    name: Excel.TableRowCollection
+  - uid: 'excel!Excel.Interfaces.TableUpdateData:interface'
+    name: Interfaces.TableUpdateData
+  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
+  - uid: 'excel!Excel.TableSort:class'
+    name: Excel.TableSort
+  - uid: 'excel!Excel.Interfaces.TableData:interface'
+    name: Excel.Interfaces.TableData
+  - uid: 'excel!Excel.Worksheet:class'
+    name: Excel.Worksheet

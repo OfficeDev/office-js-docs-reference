@@ -1,0 +1,48 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatData:interface'
+    summary: An interface describing the data returned by calling `cellValueConditionalFormat.toJSON()`<!-- -->.
+    name: Excel.Interfaces.CellValueConditionalFormatData
+    fullName: Excel.Interfaces.CellValueConditionalFormatData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.CellValueConditionalFormatData#format:member'
+      - 'excel!Excel.Interfaces.CellValueConditionalFormatData#rule:member'
+  - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatData#format:member'
+    summary: |-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ConditionalRangeFormatData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
+  - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatData#rule:member'
+    summary: |-
+      Represents the Rule object on this conditional format.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rule
+    fullName: rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule?: Excel.ConditionalCellValueRule;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalCellValueRule:interface'
+references:
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
+    name: Excel.Interfaces.ConditionalRangeFormatData
+  - uid: 'excel!Excel.ConditionalCellValueRule:interface'
+    name: Excel.ConditionalCellValueRule

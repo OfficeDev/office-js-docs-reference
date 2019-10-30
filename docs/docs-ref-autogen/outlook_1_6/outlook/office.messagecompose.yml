@@ -416,6 +416,16 @@ items:
       message.
 
 
+      By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following
+      limits apply.
+
+
+      - Get 500 members maximum.
+
+
+      - Set a maximum of 100 members per call, up to 500 members total.
+
+
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
@@ -507,7 +517,14 @@ items:
 
 
       The cc property returns an [Office.Recipients](xref:outlook!Office.Recipients:interface) object that provides
-      methods to get or update the recipients on the Cc line of the message.
+      methods to get or update the recipients on the Cc line of the message. By default, the collection is limited to a
+      maximum of 100 members. However, on Windows and Mac, the following limits apply.
+
+
+      - Get 500 members maximum.
+
+
+      - Set a maximum of 100 members per call, up to 500 members total.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1356,7 +1373,14 @@ items:
 
 
       The to property returns a Recipients object that provides methods to get or update the recipients on the To line
-      of the message.
+      of the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac,
+      the following limits apply.
+
+
+      - Get 500 members maximum.
+
+
+      - Set a maximum of 100 members per call, up to 500 members total.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]

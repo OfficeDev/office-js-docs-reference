@@ -49,7 +49,7 @@ items:
           - 'excel!Excel.Interfaces.AutoFilterData:interface'
   - uid: 'excel!Excel.Interfaces.WorksheetData#charts:member'
     summary: |-
-      Returns collection of charts that are part of the worksheet. Read-only.
+      Returns a collection of charts that are part of the worksheet. Read-only.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: charts
@@ -63,13 +63,10 @@ items:
         type:
           - 'excel!Excel.Interfaces.WorksheetData#charts~0:complex'
   - uid: 'excel!Excel.Interfaces.WorksheetData#comments:member'
-    summary: >-
+    summary: |-
       Returns a collection of all the Comments objects on the worksheet. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: comments
     fullName: comments
     langs:
@@ -265,13 +262,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorksheetData#slicers:member'
-    summary: >-
-      Returns collection of slicers that are part of the worksheet. Read-only.
+    summary: |-
+      Returns a collection of slicers that are part of the worksheet. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: slicers
     fullName: slicers
     langs:

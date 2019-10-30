@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.TimelineStyle:class'
-    summary: >-
+    summary: |-
       Represents a Timeline style, which defines style elements by region in the Timeline.
 
 
@@ -35,7 +35,6 @@ items:
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
-    isPreview: true
     name: context
     fullName: context
     langs:
@@ -47,13 +46,10 @@ items:
         type:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.TimelineStyle#delete:member(1)'
-    summary: >-
+    summary: |-
       Deletes the TableStyle.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: delete()
     langs:
@@ -66,13 +62,10 @@ items:
           - void
         description: ''
   - uid: 'excel!Excel.TimelineStyle#duplicate:member(1)'
-    summary: >-
+    summary: |-
       Creates a duplicate of this TimelineStyle with copies of all the style elements.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: duplicate()
     fullName: duplicate()
     langs:
@@ -88,7 +81,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(options)
     fullName: load(options)
     langs:
@@ -109,7 +101,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNames)
     fullName: load(propertyNames)
     langs:
@@ -130,7 +121,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNamesAndPaths)
     fullName: load(propertyNamesAndPaths)
     langs:
@@ -158,13 +148,10 @@ items:
                           expand?: string;
                       }
   - uid: 'excel!Excel.TimelineStyle#name:member'
-    summary: >-
+    summary: |-
       Gets the name of the TimelineStyle.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -176,13 +163,10 @@ items:
         type:
           - string
   - uid: 'excel!Excel.TimelineStyle#readOnly:member'
-    summary: >-
+    summary: |-
       Specifies whether this TimelineStyle object is read-only. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readOnly
     fullName: readOnly
     langs:
@@ -201,7 +185,6 @@ items:
       This method has the following additional signature:
 
       `set(properties: Excel.TimelineStyle): void`
-    isPreview: true
     name: 'set(properties, options)'
     fullName: 'set(properties, options)'
     langs:
@@ -226,7 +209,6 @@ items:
             - 'excel!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.TimelineStyle#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    isPreview: true
     name: set(properties)
     fullName: set(properties)
     langs:
@@ -250,7 +232,6 @@ items:
       passed to it.) Whereas the original Excel.TimelineStyle object is an API object, the `toJSON` method returns a
       plain JavaScript object (typed as `Excel.Interfaces.TimelineStyleData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
-    isPreview: true
     name: toJSON()
     fullName: toJSON()
     langs:

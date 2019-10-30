@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.NamedItemType:enum'
+    summary: >-
+      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
+      Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.NamedItemType
+    fullName: Excel.NamedItemType
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.NamedItemType.array:member'
+      - 'excel!Excel.NamedItemType.boolean:member'
+      - 'excel!Excel.NamedItemType.double:member'
+      - 'excel!Excel.NamedItemType.error:member'
+      - 'excel!Excel.NamedItemType.integer:member'
+      - 'excel!Excel.NamedItemType.range:member'
+      - 'excel!Excel.NamedItemType.string:member'
+  - uid: 'excel!Excel.NamedItemType.array:member'
+    name: array
+    fullName: array
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Array"'
+  - uid: 'excel!Excel.NamedItemType.boolean:member'
+    name: boolean
+    fullName: boolean
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Boolean"'
+  - uid: 'excel!Excel.NamedItemType.double:member'
+    name: double
+    fullName: double
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Double"'
+  - uid: 'excel!Excel.NamedItemType.error:member'
+    name: error
+    fullName: error
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Error"'
+  - uid: 'excel!Excel.NamedItemType.integer:member'
+    name: integer
+    fullName: integer
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Integer"'
+  - uid: 'excel!Excel.NamedItemType.range:member'
+    name: range
+    fullName: range
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Range"'
+  - uid: 'excel!Excel.NamedItemType.string:member'
+    name: string
+    fullName: string
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"String"'

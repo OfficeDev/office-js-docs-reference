@@ -1,0 +1,532 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.WorkbookData:interface'
+    summary: An interface describing the data returned by calling `workbook.toJSON()`<!-- -->.
+    name: Excel.Interfaces.WorkbookData
+    fullName: Excel.Interfaces.WorkbookData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.WorkbookData#autoSave:member'
+      - 'excel!Excel.Interfaces.WorkbookData#bindings:member'
+      - 'excel!Excel.Interfaces.WorkbookData#calculationEngineVersion:member'
+      - 'excel!Excel.Interfaces.WorkbookData#chartDataPointTrack:member'
+      - 'excel!Excel.Interfaces.WorkbookData#comments:member'
+      - 'excel!Excel.Interfaces.WorkbookData#customXmlParts:member'
+      - 'excel!Excel.Interfaces.WorkbookData#isDirty:member'
+      - 'excel!Excel.Interfaces.WorkbookData#name:member'
+      - 'excel!Excel.Interfaces.WorkbookData#names:member'
+      - 'excel!Excel.Interfaces.WorkbookData#pivotTables:member'
+      - 'excel!Excel.Interfaces.WorkbookData#pivotTableStyles:member'
+      - 'excel!Excel.Interfaces.WorkbookData#previouslySaved:member'
+      - 'excel!Excel.Interfaces.WorkbookData#properties:member'
+      - 'excel!Excel.Interfaces.WorkbookData#protection:member'
+      - 'excel!Excel.Interfaces.WorkbookData#readOnly:member'
+      - 'excel!Excel.Interfaces.WorkbookData#settings:member'
+      - 'excel!Excel.Interfaces.WorkbookData#slicers:member'
+      - 'excel!Excel.Interfaces.WorkbookData#slicerStyles:member'
+      - 'excel!Excel.Interfaces.WorkbookData#styles:member'
+      - 'excel!Excel.Interfaces.WorkbookData#tables:member'
+      - 'excel!Excel.Interfaces.WorkbookData#tableStyles:member'
+      - 'excel!Excel.Interfaces.WorkbookData#timelineStyles:member'
+      - 'excel!Excel.Interfaces.WorkbookData#usePrecisionAsDisplayed:member'
+      - 'excel!Excel.Interfaces.WorkbookData#worksheets:member'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#autoSave:member'
+    summary: |-
+      Specifies whether or not the workbook is in autosave mode. Read-Only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoSave
+    fullName: autoSave
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoSave?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorkbookData#bindings:member'
+    summary: |-
+      Represents a collection of bindings that are part of the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bindings
+    fullName: bindings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bindings?: Excel.Interfaces.BindingData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorkbookData#bindings~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#calculationEngineVersion:member'
+    summary: |-
+      Returns a number about the version of Excel Calculation Engine. Read-Only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: calculationEngineVersion
+    fullName: calculationEngineVersion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'calculationEngineVersion?: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Interfaces.WorkbookData#chartDataPointTrack:member'
+    summary: >-
+      True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
+      charts track the index of the data points.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: chartDataPointTrack
+    fullName: chartDataPointTrack
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'chartDataPointTrack?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorkbookData#comments:member'
+    summary: |-
+      Represents a collection of Comments associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: comments
+    fullName: comments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comments?: Excel.Interfaces.CommentData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorkbookData#comments~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#customXmlParts:member'
+    summary: |-
+      Represents the collection of custom XML parts contained by this workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: customXmlParts
+    fullName: customXmlParts
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'customXmlParts?: Excel.Interfaces.CustomXmlPartData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorkbookData#customXmlParts~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#isDirty:member'
+    summary: >-
+      Specifies whether or not changes have been made since the workbook was last saved. You can set this property to
+      true if you want to close a modified workbook without either saving it or being prompted to save it.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isDirty
+    fullName: isDirty
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isDirty?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorkbookData#name:member'
+    summary: |-
+      Gets the workbook name. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.WorkbookData#names:member'
+    summary: |-
+      Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: names
+    fullName: names
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'names?: Excel.Interfaces.NamedItemData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorkbookData#names~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#pivotTables:member'
+    summary: |-
+      Represents a collection of PivotTables associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: pivotTables
+    fullName: pivotTables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pivotTables?: Excel.Interfaces.PivotTableData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorkbookData#pivotTables~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#pivotTableStyles:member'
+    summary: |-
+      Represents a collection of PivotTableStyles associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: pivotTableStyles
+    fullName: pivotTableStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pivotTableStyles?: Excel.Interfaces.PivotTableStyleData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorkbookData#pivotTableStyles~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#previouslySaved:member'
+    summary: |-
+      Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: previouslySaved
+    fullName: previouslySaved
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'previouslySaved?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorkbookData#properties:member'
+    summary: |-
+      Gets the workbook properties. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: properties
+    fullName: properties
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'properties?: Excel.Interfaces.DocumentPropertiesData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#protection:member'
+    summary: |-
+      Returns workbook protection object for a workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: protection
+    fullName: protection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protection?: Excel.Interfaces.WorkbookProtectionData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorkbookProtectionData:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#readOnly:member'
+    summary: |-
+      True if the workbook is open in Read-only mode. Read-only.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readOnly?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorkbookData#settings:member'
+    summary: |-
+      Represents a collection of Settings associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: settings
+    fullName: settings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'settings?: Excel.Interfaces.SettingData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorkbookData#settings~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#slicers:member'
+    summary: |-
+      Represents a collection of Slicers associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: slicers
+    fullName: slicers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'slicers?: Excel.Interfaces.SlicerData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorkbookData#slicers~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#slicerStyles:member'
+    summary: |-
+      Represents a collection of SlicerStyles associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: slicerStyles
+    fullName: slicerStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'slicerStyles?: Excel.Interfaces.SlicerStyleData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorkbookData#slicerStyles~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#styles:member'
+    summary: |-
+      Represents a collection of styles associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: Excel.Interfaces.StyleData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorkbookData#styles~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#tables:member'
+    summary: |-
+      Represents a collection of tables associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tables
+    fullName: tables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tables?: Excel.Interfaces.TableData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorkbookData#tables~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#tableStyles:member'
+    summary: |-
+      Represents a collection of TableStyles associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tableStyles
+    fullName: tableStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tableStyles?: Excel.Interfaces.TableStyleData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorkbookData#tableStyles~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#timelineStyles:member'
+    summary: |-
+      Represents a collection of TimelineStyles associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: timelineStyles
+    fullName: timelineStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'timelineStyles?: Excel.Interfaces.TimelineStyleData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorkbookData#timelineStyles~0:complex'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#usePrecisionAsDisplayed:member'
+    summary: >-
+      True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
+      Data will permanently lose accuracy when switching this property from false to true.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: usePrecisionAsDisplayed
+    fullName: usePrecisionAsDisplayed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'usePrecisionAsDisplayed?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.WorkbookData#worksheets:member'
+    summary: |-
+      Represents a collection of worksheets associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheets
+    fullName: worksheets
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheets?: Excel.Interfaces.WorksheetData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorkbookData#worksheets~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.WorkbookData#bindings~0:complex'
+    name: 'Excel.Interfaces.BindingData[]'
+    fullName: 'Excel.Interfaces.BindingData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.BindingData:interface'
+        name: Excel.Interfaces.BindingData
+        fullName: Excel.Interfaces.BindingData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#comments~0:complex'
+    name: 'Excel.Interfaces.CommentData[]'
+    fullName: 'Excel.Interfaces.CommentData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.CommentData:interface'
+        name: Excel.Interfaces.CommentData
+        fullName: Excel.Interfaces.CommentData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#customXmlParts~0:complex'
+    name: 'Excel.Interfaces.CustomXmlPartData[]'
+    fullName: 'Excel.Interfaces.CustomXmlPartData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.CustomXmlPartData:interface'
+        name: Excel.Interfaces.CustomXmlPartData
+        fullName: Excel.Interfaces.CustomXmlPartData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#names~0:complex'
+    name: 'Excel.Interfaces.NamedItemData[]'
+    fullName: 'Excel.Interfaces.NamedItemData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.NamedItemData:interface'
+        name: Excel.Interfaces.NamedItemData
+        fullName: Excel.Interfaces.NamedItemData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#pivotTables~0:complex'
+    name: 'Excel.Interfaces.PivotTableData[]'
+    fullName: 'Excel.Interfaces.PivotTableData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PivotTableData:interface'
+        name: Excel.Interfaces.PivotTableData
+        fullName: Excel.Interfaces.PivotTableData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#pivotTableStyles~0:complex'
+    name: 'Excel.Interfaces.PivotTableStyleData[]'
+    fullName: 'Excel.Interfaces.PivotTableStyleData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PivotTableStyleData:interface'
+        name: Excel.Interfaces.PivotTableStyleData
+        fullName: Excel.Interfaces.PivotTableStyleData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
+    name: Excel.Interfaces.DocumentPropertiesData
+  - uid: 'excel!Excel.Interfaces.WorkbookProtectionData:interface'
+    name: Excel.Interfaces.WorkbookProtectionData
+  - uid: 'excel!Excel.Interfaces.WorkbookData#settings~0:complex'
+    name: 'Excel.Interfaces.SettingData[]'
+    fullName: 'Excel.Interfaces.SettingData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.SettingData:interface'
+        name: Excel.Interfaces.SettingData
+        fullName: Excel.Interfaces.SettingData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#slicers~0:complex'
+    name: 'Excel.Interfaces.SlicerData[]'
+    fullName: 'Excel.Interfaces.SlicerData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.SlicerData:interface'
+        name: Excel.Interfaces.SlicerData
+        fullName: Excel.Interfaces.SlicerData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#slicerStyles~0:complex'
+    name: 'Excel.Interfaces.SlicerStyleData[]'
+    fullName: 'Excel.Interfaces.SlicerStyleData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.SlicerStyleData:interface'
+        name: Excel.Interfaces.SlicerStyleData
+        fullName: Excel.Interfaces.SlicerStyleData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#styles~0:complex'
+    name: 'Excel.Interfaces.StyleData[]'
+    fullName: 'Excel.Interfaces.StyleData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.StyleData:interface'
+        name: Excel.Interfaces.StyleData
+        fullName: Excel.Interfaces.StyleData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#tables~0:complex'
+    name: 'Excel.Interfaces.TableData[]'
+    fullName: 'Excel.Interfaces.TableData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TableData:interface'
+        name: Excel.Interfaces.TableData
+        fullName: Excel.Interfaces.TableData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#tableStyles~0:complex'
+    name: 'Excel.Interfaces.TableStyleData[]'
+    fullName: 'Excel.Interfaces.TableStyleData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TableStyleData:interface'
+        name: Excel.Interfaces.TableStyleData
+        fullName: Excel.Interfaces.TableStyleData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#timelineStyles~0:complex'
+    name: 'Excel.Interfaces.TimelineStyleData[]'
+    fullName: 'Excel.Interfaces.TimelineStyleData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.TimelineStyleData:interface'
+        name: Excel.Interfaces.TimelineStyleData
+        fullName: Excel.Interfaces.TimelineStyleData
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#worksheets~0:complex'
+    name: 'Excel.Interfaces.WorksheetData[]'
+    fullName: 'Excel.Interfaces.WorksheetData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.WorksheetData:interface'
+        name: Excel.Interfaces.WorksheetData
+        fullName: Excel.Interfaces.WorksheetData
+      - name: '[]'
+        fullName: '[]'

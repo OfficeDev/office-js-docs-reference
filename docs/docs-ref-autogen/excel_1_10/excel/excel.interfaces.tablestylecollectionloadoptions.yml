@@ -1,0 +1,61 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions:interface'
+    summary: |-
+      Represents a collection of TableStyles.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.TableStyleCollectionLoadOptions
+    fullName: Excel.Interfaces.TableStyleCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions#readOnly:member'
+  - uid: 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions#name:member'
+    summary: |-
+      For EACH ITEM in the collection: Gets the name of the TableStyle.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions#readOnly:member'
+    summary: |-
+      For EACH ITEM in the collection: Specifies whether this TableStyle object is read-only. Read-only.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readOnly?: boolean;'
+      return:
+        type:
+          - boolean

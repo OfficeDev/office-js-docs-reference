@@ -1,0 +1,47 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.TableColumnUpdateData:interface'
+    summary: 'An interface for updating data on the TableColumn object, for use in `tableColumn.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.TableColumnUpdateData
+    fullName: Excel.Interfaces.TableColumnUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.TableColumnUpdateData#name:member'
+      - 'excel!Excel.Interfaces.TableColumnUpdateData#values:member'
+  - uid: 'excel!Excel.Interfaces.TableColumnUpdateData#name:member'
+    summary: >-
+      Represents the name of the table column.
+
+
+      \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting
+      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Interfaces.TableColumnUpdateData#values:member'
+    summary: >-
+      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
+      Cells that contain an error will return the error string.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values?: any[][];'
+      return:
+        type:
+          - 'any[][]'

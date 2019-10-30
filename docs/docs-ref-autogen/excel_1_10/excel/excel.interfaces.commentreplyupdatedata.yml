@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.CommentReplyUpdateData:interface'
+    summary: 'An interface for updating data on the CommentReply object, for use in `commentReply.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.CommentReplyUpdateData
+    fullName: Excel.Interfaces.CommentReplyUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.CommentReplyUpdateData#content:member'
+  - uid: 'excel!Excel.Interfaces.CommentReplyUpdateData#content:member'
+    summary: |-
+      Gets or sets the comment reply's content. The string is plain text.
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'content?: string;'
+      return:
+        type:
+          - string

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.CommentLoadOptions:interface'
-    summary: >-
+    summary: |-
       Represents a comment in the workbook.
 
 
@@ -9,11 +9,8 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: CommentLoadOptions
-    fullName: Excel.Interfaces.CommentLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
-    type: interface
     package: excel!
     children:
       - 'excel!Excel.Interfaces.CommentLoadOptions#$all:member'
@@ -29,7 +26,6 @@ items:
     summary: >-
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    isPreview: true
     name: $all
     fullName: $all
     langs:
@@ -41,13 +37,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.CommentLoadOptions#authorEmail:member'
-    summary: >-
+    summary: |-
       Gets the email of the comment's author.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: authorEmail
     fullName: authorEmail
     langs:
@@ -59,13 +52,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.CommentLoadOptions#authorName:member'
-    summary: >-
+    summary: |-
       Gets the name of the comment's author.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: authorName
     fullName: authorName
     langs:
@@ -77,13 +67,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.CommentLoadOptions#content:member'
-    summary: >-
+    summary: |-
       Gets or sets the comment's content. The string is plain text.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: content
     fullName: content
     langs:
@@ -100,9 +87,7 @@ items:
       does not have a creation date.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: creationDate
     fullName: creationDate
     langs:
@@ -114,13 +99,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.CommentLoadOptions#id:member'
-    summary: >-
+    summary: |-
       Represents the comment identifier. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:

@@ -256,13 +256,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeData#height:member'
-    summary: >-
+    summary: |-
       Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
     fullName: height
     langs:
@@ -339,9 +336,7 @@ items:
       Read-only.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: left
     langs:
@@ -506,13 +501,10 @@ items:
         type:
           - 'string[][]'
   - uid: 'excel!Excel.Interfaces.RangeData#top:member'
-    summary: >-
+    summary: |-
       Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: top
     langs:
@@ -558,13 +550,10 @@ items:
         type:
           - 'excel!Excel.Interfaces.RangeData#valueTypes~0:complex'
   - uid: 'excel!Excel.Interfaces.RangeData#width:member'
-    summary: >-
+    summary: |-
       Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
     fullName: width
     langs:

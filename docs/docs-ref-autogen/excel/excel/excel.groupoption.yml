@@ -6,18 +6,14 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: GroupOption
-    fullName: Excel.GroupOption
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
-    type: enum
     package: excel!
     children:
       - 'excel!Excel.GroupOption.byColumns:member'
       - 'excel!Excel.GroupOption.byRows:member'
   - uid: 'excel!Excel.GroupOption.byColumns:member'
     summary: Group by columns.
-    isPreview: true
     name: byColumns
     fullName: byColumns
     langs:
@@ -26,7 +22,6 @@ items:
     numericValue: '"ByColumns"'
   - uid: 'excel!Excel.GroupOption.byRows:member'
     summary: Group by rows.
-    isPreview: true
     name: byRows
     fullName: byRows
     langs:

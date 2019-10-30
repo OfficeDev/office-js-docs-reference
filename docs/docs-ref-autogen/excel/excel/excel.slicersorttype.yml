@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.SlicerSortType:enum'
-    summary: >-
+    summary: |-
       Specifies the slicer sort behavior for Slicer.sortBy API.
 
 
@@ -21,7 +21,6 @@ items:
       - 'excel!Excel.SlicerSortType.descending:member'
   - uid: 'excel!Excel.SlicerSortType.ascending:member'
     summary: Sort slicer items in ascending order by item captions.
-    isPreview: true
     name: ascending
     fullName: ascending
     langs:
@@ -30,7 +29,6 @@ items:
     numericValue: '"Ascending"'
   - uid: 'excel!Excel.SlicerSortType.dataSourceOrder:member'
     summary: Sort slicer items in the order provided by the data source.
-    isPreview: true
     name: dataSourceOrder
     fullName: dataSourceOrder
     langs:
@@ -39,7 +37,6 @@ items:
     numericValue: '"DataSourceOrder"'
   - uid: 'excel!Excel.SlicerSortType.descending:member'
     summary: Sort slicer items in descending order by item captions.
-    isPreview: true
     name: descending
     fullName: descending
     langs:

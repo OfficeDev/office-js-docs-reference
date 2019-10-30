@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.NamedItemScope:enum'
+    summary: '\[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.NamedItemScope
+    fullName: Excel.NamedItemScope
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.NamedItemScope.workbook:member'
+      - 'excel!Excel.NamedItemScope.worksheet:member'
+  - uid: 'excel!Excel.NamedItemScope.workbook:member'
+    name: workbook
+    fullName: workbook
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Workbook"'
+  - uid: 'excel!Excel.NamedItemScope.worksheet:member'
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Worksheet"'

@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartLegendPosition:enum'
+    summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartLegendPosition
+    fullName: Excel.ChartLegendPosition
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.ChartLegendPosition.bottom:member'
+      - 'excel!Excel.ChartLegendPosition.corner:member'
+      - 'excel!Excel.ChartLegendPosition.custom:member'
+      - 'excel!Excel.ChartLegendPosition.invalid:member'
+      - 'excel!Excel.ChartLegendPosition.left:member'
+      - 'excel!Excel.ChartLegendPosition.right:member'
+      - 'excel!Excel.ChartLegendPosition.top:member'
+  - uid: 'excel!Excel.ChartLegendPosition.bottom:member'
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bottom"'
+  - uid: 'excel!Excel.ChartLegendPosition.corner:member'
+    name: corner
+    fullName: corner
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Corner"'
+  - uid: 'excel!Excel.ChartLegendPosition.custom:member'
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Custom"'
+  - uid: 'excel!Excel.ChartLegendPosition.invalid:member'
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: 'excel!Excel.ChartLegendPosition.left:member'
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Left"'
+  - uid: 'excel!Excel.ChartLegendPosition.right:member'
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Right"'
+  - uid: 'excel!Excel.ChartLegendPosition.top:member'
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Top"'

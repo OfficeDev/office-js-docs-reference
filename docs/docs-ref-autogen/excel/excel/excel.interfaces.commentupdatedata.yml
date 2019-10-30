@@ -13,13 +13,10 @@ items:
       - 'excel!Excel.Interfaces.CommentUpdateData#content:member'
       - 'excel!Excel.Interfaces.CommentUpdateData#resolved:member'
   - uid: 'excel!Excel.Interfaces.CommentUpdateData#content:member'
-    summary: >-
+    summary: |-
       Gets or sets the comment's content. The string is plain text.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: content
     fullName: content
     langs:

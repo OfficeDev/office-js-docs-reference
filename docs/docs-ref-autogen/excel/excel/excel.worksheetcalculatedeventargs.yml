@@ -13,8 +13,27 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.WorksheetCalculatedEventArgs#address:member'
       - 'excel!Excel.WorksheetCalculatedEventArgs#type:member'
       - 'excel!Excel.WorksheetCalculatedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.WorksheetCalculatedEventArgs#address:member'
+    summary: >-
+      The address of the ranges that completed calculation. If multiple ranges completed calculation, the string is a
+      comma-separated list of those range addresses.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address: string;'
+      return:
+        type:
+          - string
   - uid: 'excel!Excel.WorksheetCalculatedEventArgs#type:member'
     summary: |-
       Gets the type of the event. See Excel.EventType for details.
@@ -32,7 +51,7 @@ items:
           - '"WorksheetCalculated"'
   - uid: 'excel!Excel.WorksheetCalculatedEventArgs#worksheetId:member'
     summary: |-
-      Gets the id of the worksheet that is calculated.
+      Gets the id of the worksheet in which the calculation occurred.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId

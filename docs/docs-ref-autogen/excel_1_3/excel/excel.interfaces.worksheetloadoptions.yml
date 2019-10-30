@@ -40,7 +40,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#charts:member'
     summary: |-
-      Returns collection of charts that are part of the worksheet.
+      Returns a collection of charts that are part of the worksheet.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: charts

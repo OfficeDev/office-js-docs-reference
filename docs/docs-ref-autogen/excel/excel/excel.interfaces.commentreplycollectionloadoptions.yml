@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions:interface'
-    summary: >-
+    summary: |-
       Represents a collection of comment reply objects that are part of the comment.
 
 
@@ -9,12 +9,9 @@ items:
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: CommentReplyCollectionLoadOptions
-    fullName: Excel.Interfaces.CommentReplyCollectionLoadOptions
+    package: excel!
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
-    type: interface
-    package: excel!
     children:
       - 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#$all:member'
       - 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#authorEmail:member'
@@ -29,7 +26,6 @@ items:
     summary: >-
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    isPreview: true
     name: $all
     fullName: $all
     langs:
@@ -41,13 +37,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#authorEmail:member'
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Gets the email of the comment reply's author.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: authorEmail
     fullName: authorEmail
     langs:
@@ -59,13 +52,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#authorName:member'
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Gets the name of the comment reply's author.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: authorName
     fullName: authorName
     langs:
@@ -77,13 +67,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#content:member'
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Gets or sets the comment reply's content. The string is plain text.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: content
     fullName: content
     langs:
@@ -95,13 +82,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#creationDate:member'
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Gets the creation time of the comment reply.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: creationDate
     fullName: creationDate
     langs:
@@ -113,13 +97,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#id:member'
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Represents the comment reply identifier. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
