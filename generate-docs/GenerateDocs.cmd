@@ -174,7 +174,7 @@ call .\node_modules\.bin\api-documenter yaml --input-folder .\json\word_1_3 --ou
 
 
 pushd scripts
-REM call node postprocessor.js
+call node postprocessor.js
 popd
 
 pause
