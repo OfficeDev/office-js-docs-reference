@@ -1006,7 +1006,7 @@
             filterType: "all"
         },
         function (result) {
-            if (result.status === "success") {
+            if (result.status === Office.AsyncResultStatus.Succeeded) {
                 var dataValue = result.value; // Get selected data.
                 console.log('Selected data is ' + dataValue);
             } else {
