@@ -29,7 +29,7 @@ items:
 
 
       The from value of the item is provided as an
-      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) in the asyncResult.value property.
+      [Office.EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) in the asyncResult.value property.
 
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -75,7 +75,7 @@ items:
 
 
       The from value of the item is provided as an
-      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) in the asyncResult.value property.
+      [Office.EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) in the asyncResult.value property.
 
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]

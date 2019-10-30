@@ -16,8 +16,8 @@ items:
       - 'outlook!Office.ReplyFormData#htmlBody:member'
   - uid: 'outlook!Office.ReplyFormData#attachments:member'
     summary: >-
-      An array of [ReplyFormAttachment](xref:outlook!Office.ReplyFormAttachment:interface) that are either file or item
-      attachments.
+      An array of [Office.ReplyFormAttachment](xref:outlook!Office.ReplyFormAttachment:interface) that are either file
+      or item attachments.
     name: attachments
     fullName: attachments
     langs:

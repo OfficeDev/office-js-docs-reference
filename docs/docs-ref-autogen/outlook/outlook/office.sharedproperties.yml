@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the properties of an appointment or message in a shared folder, mailbox, or calendar.
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -12,6 +12,7 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
+    isPreview: true
     name: Office.SharedProperties
     fullName: Office.SharedProperties
     langs:
@@ -25,6 +26,7 @@ items:
       - 'outlook!Office.SharedProperties#targetRestUrl:member'
   - uid: 'outlook!Office.SharedProperties#delegatePermissions:member'
     summary: The permissions that the delegate has on a shared folder.
+    isPreview: true
     name: delegatePermissions
     fullName: delegatePermissions
     langs:
@@ -37,6 +39,7 @@ items:
           - 'outlook!Office.MailboxEnums.DelegatePermissions:enum'
   - uid: 'outlook!Office.SharedProperties#owner:member'
     summary: The email address of the owner of a shared item.
+    isPreview: true
     name: owner
     fullName: owner
     langs:
@@ -48,10 +51,16 @@ items:
         type:
           - string
   - uid: 'outlook!Office.SharedProperties#targetMailbox:member'
-    summary: |-
+    summary: >-
       The target/owner's mailbox. Use with targetRestUrl to construct REST operation's URL.
 
+
       Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
+
+
+      **Note**: The URL property name is being transitioned from `restUrl` to `targetRestUrl`<!-- -->. For Outlook on
+      the web, use `targetRestUrl`<!-- -->. For Windows and Mac, use `restUrl`<!-- -->.
+    isPreview: true
     name: targetMailbox
     fullName: targetMailbox
     langs:
@@ -69,6 +78,11 @@ items:
 
 
       Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
+
+
+      **Note**: This property name is being transitioned from `restUrl` to `targetRestUrl`<!-- -->. For Outlook on the
+      web, use `targetRestUrl`<!-- -->. For Windows and Mac, use `restUrl`<!-- -->.
+    isPreview: true
     name: targetRestUrl
     fullName: targetRestUrl
     langs:

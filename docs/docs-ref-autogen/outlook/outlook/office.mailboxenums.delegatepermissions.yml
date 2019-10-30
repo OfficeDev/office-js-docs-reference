@@ -4,10 +4,11 @@ items:
     summary: |-
       This bit mask represents a delegate's permissions on a shared folder.
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
+    isPreview: true
     name: Office.MailboxEnums.DelegatePermissions
     fullName: Office.MailboxEnums.DelegatePermissions
     langs:
@@ -23,6 +24,7 @@ items:
       - 'outlook!Office.MailboxEnums.DelegatePermissions.Write:member'
   - uid: 'outlook!Office.MailboxEnums.DelegatePermissions.DeleteAll:member'
     summary: Delegate has permission to delete any items.
+    isPreview: true
     name: DeleteAll
     fullName: DeleteAll
     langs:
@@ -31,6 +33,7 @@ items:
     numericValue: '8'
   - uid: 'outlook!Office.MailboxEnums.DelegatePermissions.DeleteOwn:member'
     summary: Delegate has permission to delete only the items they created.
+    isPreview: true
     name: DeleteOwn
     fullName: DeleteOwn
     langs:
@@ -39,6 +42,7 @@ items:
     numericValue: '4'
   - uid: 'outlook!Office.MailboxEnums.DelegatePermissions.EditAll:member'
     summary: Delegate has permission to edit any items.
+    isPreview: true
     name: EditAll
     fullName: EditAll
     langs:
@@ -47,6 +51,7 @@ items:
     numericValue: '32'
   - uid: 'outlook!Office.MailboxEnums.DelegatePermissions.EditOwn:member'
     summary: Delegate has permission to edit only they items they created.
+    isPreview: true
     name: EditOwn
     fullName: EditOwn
     langs:
@@ -55,6 +60,7 @@ items:
     numericValue: '16'
   - uid: 'outlook!Office.MailboxEnums.DelegatePermissions.Read:member'
     summary: Delegate has permission to read items.
+    isPreview: true
     name: Read
     fullName: Read
     langs:
@@ -63,6 +69,7 @@ items:
     numericValue: '1'
   - uid: 'outlook!Office.MailboxEnums.DelegatePermissions.Write:member'
     summary: Delegate has permission to create and write items.
+    isPreview: true
     name: Write
     fullName: Write
     langs:

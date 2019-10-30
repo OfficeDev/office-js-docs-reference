@@ -102,8 +102,8 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or
-            attachment data and a callback function.
+            to 32 KB OR an [Office.ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body
+            or attachment data and a callback function.
           type:
             - 'outlook!Office.ItemRead#displayReplyAllForm~0:complex'
         - id: callback
@@ -157,8 +157,8 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or
-            attachment data and a callback function.
+            to 32 KB OR an [Office.ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body
+            or attachment data and a callback function.
           type:
             - 'outlook!Office.ItemRead#displayReplyForm~0:complex'
         - id: callback

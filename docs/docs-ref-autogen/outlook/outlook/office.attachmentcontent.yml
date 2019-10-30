@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the content of an attachment on a message or appointment item.
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -12,6 +12,7 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
+    isPreview: true
     name: Office.AttachmentContent
     fullName: Office.AttachmentContent
     langs:
@@ -23,6 +24,7 @@ items:
       - 'outlook!Office.AttachmentContent#format:member'
   - uid: 'outlook!Office.AttachmentContent#content:member'
     summary: The content of an attachment as a string.
+    isPreview: true
     name: content
     fullName: content
     langs:
@@ -44,6 +46,7 @@ items:
       For item attachments that represent calendar items, the formatting is a string representing an .icalendar file.
 
       For cloud attachments, the formatting is a URL string.
+    isPreview: true
     name: format
     fullName: format
     langs:

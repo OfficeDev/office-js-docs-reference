@@ -1,0 +1,173 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.UserProfile:interface'
+    summary: >-
+      Information about the user associated with the mailbox. This includes their account type, display name, email
+      address, and time zone.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+    name: Office.UserProfile
+    fullName: Office.UserProfile
+    langs:
+      - typeScript
+    type: interface
+    package: outlook!
+    children:
+      - 'outlook!Office.UserProfile#accountType:member'
+      - 'outlook!Office.UserProfile#displayName:member'
+      - 'outlook!Office.UserProfile#emailAddress:member'
+      - 'outlook!Office.UserProfile#timeZone:member'
+  - uid: 'outlook!Office.UserProfile#accountType:member'
+    summary: |-
+      Gets the account type of the user associated with the mailbox.
+
+      **Note**: This member is currently only supported in Outlook 2016 or later on Mac, build 16.9.1212 and greater.
+
+      \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+
+
+      The possible account types are listed in the following table.
+
+
+      <table> <tr> <th>Value</th> <th>Description?</th> </tr> <tr> <td>enterprise</td> <td>The mailbox is on an
+      on-premises Exchange server.</td> </tr> <tr> <td>gmail</td> <td>The mailbox is associated with a Gmail
+      account.</td> </tr> <tr> <td>office365</td> <td>The mailbox is associated with an Office 365 work or school
+      account.</td> </tr> <tr> <td>outlookCom</td> <td>The mailbox is associated with a personal Outlook.com
+      account.</td> </tr> </table>
+
+
+      #### Examples
+
+
+      ```javascript
+
+      console.log(Office.context.mailbox.userProfile.accountType);
+
+      ```
+    name: accountType
+    fullName: accountType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'accountType: string;'
+      return:
+        type:
+          - string
+  - uid: 'outlook!Office.UserProfile#displayName:member'
+    summary: |-
+      Gets the user's display name.
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Example: Allie Bellew
+
+      console.log(Office.context.mailbox.userProfile.displayName);
+
+      ```
+    name: displayName
+    fullName: displayName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayName: string;'
+      return:
+        type:
+          - string
+  - uid: 'outlook!Office.UserProfile#emailAddress:member'
+    summary: |-
+      Gets the user's display name.
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Example: allieb@contoso.com
+
+      console.log(Office.context.mailbox.userProfile.emailAddress);
+
+      ```
+    name: emailAddress
+    fullName: emailAddress
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailAddress: string;'
+      return:
+        type:
+          - string
+  - uid: 'outlook!Office.UserProfile#timeZone:member'
+    summary: |-
+      Gets the user's SMTP email address.
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Example: Pacific Standard Time
+
+      console.log(Office.context.mailbox.userProfile.timeZone);
+
+      ```
+    name: timeZone
+    fullName: timeZone
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'timeZone: string;'
+      return:
+        type:
+          - string

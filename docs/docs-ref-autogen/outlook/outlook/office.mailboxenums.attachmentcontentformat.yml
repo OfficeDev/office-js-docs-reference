@@ -4,10 +4,11 @@ items:
     summary: |-
       Specifies the formatting that applies to an attachment's content.
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
+    isPreview: true
     name: Office.MailboxEnums.AttachmentContentFormat
     fullName: Office.MailboxEnums.AttachmentContentFormat
     langs:
@@ -21,6 +22,7 @@ items:
       - 'outlook!Office.MailboxEnums.AttachmentContentFormat.Url:member'
   - uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.Base64:member'
     summary: The content of the attachment is returned as a base64-encoded string.
+    isPreview: true
     name: Base64
     fullName: Base64
     langs:
@@ -29,6 +31,7 @@ items:
     numericValue: '"base64"'
   - uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.Eml:member'
     summary: The content of the attachment is returned as a string representing an .eml formatted file.
+    isPreview: true
     name: Eml
     fullName: Eml
     langs:
@@ -37,6 +40,7 @@ items:
     numericValue: '"eml"'
   - uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.ICalendar:member'
     summary: The content of the attachment is returned as a string representing an .icalendar formatted file.
+    isPreview: true
     name: ICalendar
     fullName: ICalendar
     langs:
@@ -45,6 +49,7 @@ items:
     numericValue: '"iCalendar"'
   - uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat.Url:member'
     summary: The content of the attachment is returned as a string representing a URL.
+    isPreview: true
     name: Url
     fullName: Url
     langs:

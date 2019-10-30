@@ -5,7 +5,7 @@ import * as colors from 'colors';
 
 const CURRENT_EXCEL_RELEASE = 10;
 const OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
-const CURRENT_OUTLOOK_RELEASE = 7;
+const CURRENT_OUTLOOK_RELEASE = 8;
 const CURRENT_WORD_RELEASE = 3;
 
 tryCatch(async () => {

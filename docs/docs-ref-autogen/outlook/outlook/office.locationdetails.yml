@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a location. Read only.
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -33,6 +33,7 @@ items:
       }
 
       ```
+    isPreview: true
     name: Office.LocationDetails
     fullName: Office.LocationDetails
     langs:
@@ -45,6 +46,7 @@ items:
       - 'outlook!Office.LocationDetails#locationIdentifier:member'
   - uid: 'outlook!Office.LocationDetails#displayName:member'
     summary: The location's display name.
+    isPreview: true
     name: displayName
     fullName: displayName
     langs:
@@ -57,6 +59,7 @@ items:
           - string
   - uid: 'outlook!Office.LocationDetails#emailAddress:member'
     summary: The email address associated with the location.
+    isPreview: true
     name: emailAddress
     fullName: emailAddress
     langs:
@@ -69,6 +72,7 @@ items:
           - string
   - uid: 'outlook!Office.LocationDetails#locationIdentifier:member'
     summary: The LocationIdentifier of the location.
+    isPreview: true
     name: locationIdentifier
     fullName: locationIdentifier
     langs:

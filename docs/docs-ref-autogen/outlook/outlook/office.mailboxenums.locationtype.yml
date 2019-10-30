@@ -4,10 +4,11 @@ items:
     summary: |-
       Specifies an appointment location's type.
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
+    isPreview: true
     name: Office.MailboxEnums.LocationType
     fullName: Office.MailboxEnums.LocationType
     langs:
@@ -19,6 +20,7 @@ items:
       - 'outlook!Office.MailboxEnums.LocationType.Room:member'
   - uid: 'outlook!Office.MailboxEnums.LocationType.Custom:member'
     summary: A custom location.
+    isPreview: true
     name: Custom
     fullName: Custom
     langs:
@@ -27,6 +29,7 @@ items:
     numericValue: '"custom"'
   - uid: 'outlook!Office.MailboxEnums.LocationType.Room:member'
     summary: A conference room or similar resource.
+    isPreview: true
     name: Room
     fullName: Room
     langs:

@@ -9,10 +9,11 @@ items:
       preset are for the Outlook desktop client.
 
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
+    isPreview: true
     name: Office.MailboxEnums.CategoryColor
     fullName: Office.MailboxEnums.CategoryColor
     langs:
@@ -48,6 +49,7 @@ items:
       - 'outlook!Office.MailboxEnums.CategoryColor.Preset9:member'
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.None:member'
     summary: Default color or no color mapped
+    isPreview: true
     name: None
     fullName: None
     langs:
@@ -55,6 +57,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset0:member'
     summary: Red
+    isPreview: true
     name: Preset0
     fullName: Preset0
     langs:
@@ -62,6 +65,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset1:member'
     summary: Orange
+    isPreview: true
     name: Preset1
     fullName: Preset1
     langs:
@@ -69,6 +73,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset10:member'
     summary: Steel
+    isPreview: true
     name: Preset10
     fullName: Preset10
     langs:
@@ -76,6 +81,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset11:member'
     summary: DarkSteel
+    isPreview: true
     name: Preset11
     fullName: Preset11
     langs:
@@ -83,6 +89,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset12:member'
     summary: Gray
+    isPreview: true
     name: Preset12
     fullName: Preset12
     langs:
@@ -90,6 +97,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset13:member'
     summary: DarkGray
+    isPreview: true
     name: Preset13
     fullName: Preset13
     langs:
@@ -97,6 +105,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset14:member'
     summary: Black
+    isPreview: true
     name: Preset14
     fullName: Preset14
     langs:
@@ -104,6 +113,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset15:member'
     summary: DarkRed
+    isPreview: true
     name: Preset15
     fullName: Preset15
     langs:
@@ -111,6 +121,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset16:member'
     summary: DarkOrange
+    isPreview: true
     name: Preset16
     fullName: Preset16
     langs:
@@ -118,6 +129,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset17:member'
     summary: DarkBrown
+    isPreview: true
     name: Preset17
     fullName: Preset17
     langs:
@@ -125,6 +137,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset18:member'
     summary: DarkYellow
+    isPreview: true
     name: Preset18
     fullName: Preset18
     langs:
@@ -132,6 +145,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset19:member'
     summary: DarkGreen
+    isPreview: true
     name: Preset19
     fullName: Preset19
     langs:
@@ -139,6 +153,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset2:member'
     summary: Brown
+    isPreview: true
     name: Preset2
     fullName: Preset2
     langs:
@@ -146,6 +161,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset20:member'
     summary: DarkTeal
+    isPreview: true
     name: Preset20
     fullName: Preset20
     langs:
@@ -153,6 +169,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset21:member'
     summary: DarkOlive
+    isPreview: true
     name: Preset21
     fullName: Preset21
     langs:
@@ -160,6 +177,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset22:member'
     summary: DarkBlue
+    isPreview: true
     name: Preset22
     fullName: Preset22
     langs:
@@ -167,6 +185,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset23:member'
     summary: DarkPurple
+    isPreview: true
     name: Preset23
     fullName: Preset23
     langs:
@@ -174,6 +193,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset24:member'
     summary: DarkCranberry
+    isPreview: true
     name: Preset24
     fullName: Preset24
     langs:
@@ -181,6 +201,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset3:member'
     summary: Yellow
+    isPreview: true
     name: Preset3
     fullName: Preset3
     langs:
@@ -188,6 +209,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset4:member'
     summary: Green
+    isPreview: true
     name: Preset4
     fullName: Preset4
     langs:
@@ -195,6 +217,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset5:member'
     summary: Teal
+    isPreview: true
     name: Preset5
     fullName: Preset5
     langs:
@@ -202,6 +225,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset6:member'
     summary: Olive
+    isPreview: true
     name: Preset6
     fullName: Preset6
     langs:
@@ -209,6 +233,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset7:member'
     summary: Blue
+    isPreview: true
     name: Preset7
     fullName: Preset7
     langs:
@@ -216,6 +241,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset8:member'
     summary: Purple
+    isPreview: true
     name: Preset8
     fullName: Preset8
     langs:
@@ -223,6 +249,7 @@ items:
     type: field
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.Preset9:member'
     summary: Cranberry
+    isPreview: true
     name: Preset9
     fullName: Preset9
     langs:

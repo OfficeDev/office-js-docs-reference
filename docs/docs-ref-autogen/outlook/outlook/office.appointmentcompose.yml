@@ -245,7 +245,7 @@ items:
       `data:image/svg+xml;base64,<rest of base64 string>`<!-- -->, remove `data:image/svg+xml;base64,`<!-- -->.
 
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -289,6 +289,7 @@ items:
                   });
           });
       ```
+    isPreview: true
     name: 'addFileAttachmentFromBase64Async(base64File, attachmentName, options, callback)'
     fullName: 'addFileAttachmentFromBase64Async(base64File, attachmentName, options, callback)'
     langs:
@@ -347,7 +348,7 @@ items:
       `data:image/svg+xml;base64,<rest of base64 string>`<!-- -->, remove `data:image/svg+xml;base64,`<!-- -->.
 
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -368,6 +369,7 @@ items:
 
 
       - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
+    isPreview: true
     name: 'addFileAttachmentFromBase64Async(base64File, attachmentName, callback)'
     fullName: 'addFileAttachmentFromBase64Async(base64File, attachmentName, callback)'
     langs:
@@ -401,10 +403,14 @@ items:
           type:
             - 'outlook!Office.AppointmentCompose#addFileAttachmentFromBase64Async~2:complex'
   - uid: 'outlook!Office.AppointmentCompose#addHandlerAsync:member(1)'
-    summary: |-
+    summary: >-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
-      To see which event types are supported, see `Office.EventType` for details.
+
+      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
+      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->. In Preview,
+      `Office.EventType.AttachmentsChanged` and `Office.EventType.EnhancedLocationsChanged` are also supported.
+
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -451,10 +457,14 @@ items:
           type:
             - 'outlook!Office.AppointmentCompose#addHandlerAsync~1:complex'
   - uid: 'outlook!Office.AppointmentCompose#addHandlerAsync:member(2)'
-    summary: |-
+    summary: >-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
-      To see which event types are supported, see `Office.EventType` for details.
+
+      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
+      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->. In Preview,
+      `Office.EventType.AttachmentsChanged` and `Office.EventType.EnhancedLocationsChanged` are also supported.
+
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -714,7 +724,7 @@ items:
     summary: |-
       Gets an object that provides methods for managing the item's categories.
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -738,6 +748,7 @@ items:
       });
 
       ```
+    isPreview: true
     name: categories
     fullName: categories
     langs:
@@ -788,9 +799,9 @@ items:
       Gets or sets the date and time that the appointment is to end.
 
 
-      The end property is a [Time](xref:outlook!Office.Time:interface) object expressed as a Coordinated Universal Time
-      (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to
-      the client's local date and time.
+      The end property is an [Office.Time](xref:outlook!Office.Time:interface) object expressed as a Coordinated
+      Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end
+      property value to the client's local date and time.
 
 
       When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to
@@ -846,11 +857,11 @@ items:
   - uid: 'outlook!Office.AppointmentCompose#enhancedLocation:member'
     summary: >-
       Gets or sets the locations of the appointment. The `enhancedLocation` property returns an
-      [EnhancedLocation](xref:outlook!Office.EnhancedLocation:interface) object that provides methods to get, remove, or
-      add locations on an item.
+      [Office.EnhancedLocation](xref:outlook!Office.EnhancedLocation:interface) object that provides methods to get,
+      remove, or add locations on an item.
 
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -902,6 +913,7 @@ items:
       }
 
       ```
+    isPreview: true
     name: enhancedLocation
     fullName: enhancedLocation
     langs:
@@ -916,7 +928,7 @@ items:
     summary: |-
       Gets the item's attachments as an array.
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -924,6 +936,7 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
       Organizer
+    isPreview: true
     name: 'getAttachmentsAsync(options, callback)'
     fullName: 'getAttachmentsAsync(options, callback)'
     langs:
@@ -955,7 +968,7 @@ items:
     summary: |-
       Gets the item's attachments as an array.
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -993,6 +1006,7 @@ items:
       }
 
       ```
+    isPreview: true
     name: getAttachmentsAsync(callback)
     fullName: getAttachmentsAsync(callback)
     langs:
@@ -1119,7 +1133,7 @@ items:
       synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.
 
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -1133,6 +1147,7 @@ items:
 
 
       - `ItemNotSaved`<!-- -->: The id can't be retrieved until the item is saved.
+    isPreview: true
     name: 'getItemIdAsync(options, callback)'
     fullName: 'getItemIdAsync(options, callback)'
     langs:
@@ -1172,7 +1187,7 @@ items:
       synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.
 
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -1186,6 +1201,7 @@ items:
 
 
       - `ItemNotSaved`<!-- -->: The id can't be retrieved until the item is saved.
+    isPreview: true
     name: getItemIdAsync(callback)
     fullName: getItemIdAsync(callback)
     langs:
@@ -1424,9 +1440,9 @@ items:
             - any
   - uid: 'outlook!Office.AppointmentCompose#location:member'
     summary: >-
-      Gets or sets the location of an appointment. The location property returns a
-      [Location](xref:outlook!Office.Location:interface) object that provides methods that are used to get and set the
-      location of the appointment.
+      Gets or sets the [Office.Location](xref:outlook!Office.Location:interface) of an appointment. The location
+      property returns a Location object that provides methods that are used to get and set the location of the
+      appointment.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1509,9 +1525,9 @@ items:
       of the current item.
 
 
-      The optionalAttendees property returns a [Recipients](xref:outlook!Office.Recipients:interface) object that
-      provides methods to get or update the optional attendees for a meeting. By default, the collection is limited to a
-      maximum of 100 members. However, on Windows and Mac, the following limits apply.
+      The optionalAttendees property returns an [Office.Recipients](xref:outlook!Office.Recipients:interface) object
+      that provides methods to get or update the optional attendees for a meeting. By default, the collection is limited
+      to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
 
 
       - Get 500 members maximum.
@@ -1897,9 +1913,9 @@ items:
       of the current item.
 
 
-      The requiredAttendees property returns a [Recipients](xref:outlook!Office.Recipients:interface) object that
-      provides methods to get or update the required attendees for a meeting. By default, the collection is limited to a
-      maximum of 100 members. However, on Windows and Mac, the following limits apply.
+      The requiredAttendees property returns an [Office.Recipients](xref:outlook!Office.Recipients:interface) object
+      that provides methods to get or update the required attendees for a meeting. By default, the collection is limited
+      to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
 
 
       - Get 500 members maximum.
@@ -2310,9 +2326,9 @@ items:
       Gets or sets the date and time that the appointment is to begin.
 
 
-      The start property is a [Time](xref:outlook!Office.Time:interface) object expressed as a Coordinated Universal
-      Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the
-      client's local date and time.
+      The start property is an [Office.Time](xref:outlook!Office.Time:interface) object expressed as a Coordinated
+      Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to
+      the client's local date and time.
 
 
       When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to

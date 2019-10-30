@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a category's details like name and associated color.
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -27,6 +27,7 @@ items:
       ];
 
       ```
+    isPreview: true
     name: Office.CategoryDetails
     fullName: Office.CategoryDetails
     langs:
@@ -38,6 +39,7 @@ items:
       - 'outlook!Office.CategoryDetails#displayName:member'
   - uid: 'outlook!Office.CategoryDetails#color:member'
     summary: The color of the category.
+    isPreview: true
     name: color
     fullName: color
     langs:
@@ -50,6 +52,7 @@ items:
           - 'outlook!Office.CategoryDetails#color~0:complex'
   - uid: 'outlook!Office.CategoryDetails#displayName:member'
     summary: The name of the category. Maximum length is 255 characters.
+    isPreview: true
     name: displayName
     fullName: displayName
     langs:

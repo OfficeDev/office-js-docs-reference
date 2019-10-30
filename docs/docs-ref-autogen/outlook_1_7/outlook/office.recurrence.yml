@@ -224,10 +224,10 @@ items:
           - 'outlook!Office.Recurrence#recurrenceType~0:complex'
   - uid: 'outlook!Office.Recurrence#seriesTime:member'
     summary: >-
-      The [SeriesTime](xref:outlook!Office.SeriesTime:interface) object enables you to manage the start and end dates of
-      the recurring appointment series and the usual start and end times of instances. **This object is not in UTC
-      time.** Instead, it is set in the time zone specified by the recurrenceTimeZone value or defaulted to the item's
-      time zone.
+      The [Office.SeriesTime](xref:outlook!Office.SeriesTime:interface) object enables you to manage the start and end
+      dates of the recurring appointment series and the usual start and end times of instances. **This object is not in
+      UTC time.** Instead, it is set in the time zone specified by the recurrenceTimeZone value or defaulted to the
+      item's time zone.
 
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]

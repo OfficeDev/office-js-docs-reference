@@ -21,13 +21,11 @@ items:
     children:
       - 'outlook!Office.AppointmentRead#attachments:member'
       - 'outlook!Office.AppointmentRead#body:member'
-      - 'outlook!Office.AppointmentRead#categories:member'
       - 'outlook!Office.AppointmentRead#dateTimeCreated:member'
       - 'outlook!Office.AppointmentRead#dateTimeModified:member'
       - 'outlook!Office.AppointmentRead#displayReplyAllForm:member(1)'
       - 'outlook!Office.AppointmentRead#displayReplyForm:member(1)'
       - 'outlook!Office.AppointmentRead#end:member'
-      - 'outlook!Office.AppointmentRead#enhancedLocation:member'
       - 'outlook!Office.AppointmentRead#getEntities:member(1)'
       - 'outlook!Office.AppointmentRead#getEntitiesByType:member(1)'
       - 'outlook!Office.AppointmentRead#getFilteredEntitiesByName:member(1)'
@@ -150,44 +148,6 @@ items:
       return:
         type:
           - 'outlook!Office.Body:interface'
-  - uid: 'outlook!Office.AppointmentRead#categories:member'
-    summary: |-
-      Gets an object that provides methods for managing the item's categories.
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.categories.getAsync(function (asyncResult) {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              console.log("Action failed with error: " + asyncResult.error.message);
-          } else {
-              console.log("Categories: " + JSON.stringify(asyncResult.value));
-          }
-      });
-
-      ```
-    name: categories
-    fullName: categories
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'categories: Categories;'
-      return:
-        type:
-          - 'outlook!Office.Categories:interface'
   - uid: 'outlook!Office.AppointmentRead#dateTimeCreated:member'
     summary: |-
       Gets the date and time that an item was created.
@@ -395,8 +355,8 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or
-            attachment data and a callback function.
+            to 32 KB OR an [Office.ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body
+            or attachment data and a callback function.
           type:
             - 'outlook!Office.AppointmentRead#displayReplyAllForm~0:complex'
         - id: callback
@@ -539,8 +499,8 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or
-            attachment data and a callback function.
+            to 32 KB OR an [Office.ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body
+            or attachment data and a callback function.
           type:
             - 'outlook!Office.AppointmentRead#displayReplyForm~0:complex'
         - id: callback
@@ -592,55 +552,6 @@ items:
       return:
         type:
           - '!Date:interface'
-  - uid: 'outlook!Office.AppointmentRead#enhancedLocation:member'
-    summary: >-
-      Gets the locations of an appointment.
-
-
-      The enhancedLocation property returns an [EnhancedLocation](xref:outlook!Office.EnhancedLocation:interface) object
-      that allows you to get the set of locations (each represented by a
-      [LocationDetails](xref:outlook!Office.LocationDetails:interface) object) associated with the appointment.
-
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
-
-
-      function callbackFunction(asyncResult) {
-          asyncResult.value.forEach(function (place) {
-              console.log("Display name: " + place.displayName);
-              console.log("Type: " + place.locationIdentifier.type);
-              if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
-                  console.log("Email address: " + place.emailAddress);
-              }
-          });
-      }
-
-      ```
-    name: enhancedLocation
-    fullName: enhancedLocation
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'enhancedLocation: EnhancedLocation;'
-      return:
-        type:
-          - 'outlook!Office.EnhancedLocation:interface'
   - uid: 'outlook!Office.AppointmentRead#getEntities:member(1)'
     summary: |-
       Gets the entities found in the selected item's body.
@@ -1254,9 +1165,9 @@ items:
 
 
       The optionalAttendees property returns an array that contains an
-      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each optional attendee to the
-      meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can
-      get 500 members maximum.
+      [Office.EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each optional attendee
+      to the meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac,
+      you can get 500 members maximum.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1332,9 +1243,9 @@ items:
 
 
       The requiredAttendees property returns an array that contains an
-      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each required attendee to the
-      meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can
-      get 500 members maximum.
+      [Office.EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each required attendee
+      to the meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac,
+      you can get 500 members maximum.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1478,8 +1389,6 @@ references:
         fullName: '[]'
   - uid: 'outlook!Office.Body:interface'
     name: Body
-  - uid: 'outlook!Office.Categories:interface'
-    name: Categories
   - uid: '!Date:interface'
     name: Date
   - uid: 'outlook!Office.AppointmentRead#displayReplyAllForm~0:complex'
@@ -1522,8 +1431,6 @@ references:
         fullName: Office.AsyncResult
       - name: <void>) => void
         fullName: <void>) => void
-  - uid: 'outlook!Office.EnhancedLocation:interface'
-    name: EnhancedLocation
   - uid: 'outlook!Office.Entities:interface'
     name: Entities
   - uid: 'outlook!Office.AppointmentRead#getEntitiesByType~0:complex'

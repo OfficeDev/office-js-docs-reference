@@ -4,10 +4,11 @@ items:
     summary: |-
       Specifies whether an attachment was added to or removed from an item.
 
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
+    isPreview: true
     name: Office.MailboxEnums.AttachmentStatus
     fullName: Office.MailboxEnums.AttachmentStatus
     langs:
@@ -19,6 +20,7 @@ items:
       - 'outlook!Office.MailboxEnums.AttachmentStatus.Removed:member'
   - uid: 'outlook!Office.MailboxEnums.AttachmentStatus.Added:member'
     summary: An attachment was added to the item.
+    isPreview: true
     name: Added
     fullName: Added
     langs:
@@ -27,6 +29,7 @@ items:
     numericValue: '"added"'
   - uid: 'outlook!Office.MailboxEnums.AttachmentStatus.Removed:member'
     summary: An attachment was removed from the item.
+    isPreview: true
     name: Removed
     fullName: Removed
     langs:

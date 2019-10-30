@@ -62,7 +62,6 @@ items:
       - 'outlook!Office.AttachmentDetails#isInline:member'
       - 'outlook!Office.AttachmentDetails#name:member'
       - 'outlook!Office.AttachmentDetails#size:member'
-      - 'outlook!Office.AttachmentDetails#url:member'
   - uid: 'outlook!Office.AttachmentDetails#attachmentType:member'
     summary: Gets a value that indicates the type of an attachment.
     name: attachmentType
@@ -135,21 +134,6 @@ items:
       return:
         type:
           - number
-  - uid: 'outlook!Office.AttachmentDetails#url:member'
-    summary: |-
-      Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`<!-- -->.
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    name: url
-    fullName: url
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'url: string;'
-      return:
-        type:
-          - string
 references:
   - uid: 'outlook!Office.AttachmentDetails#attachmentType~0:complex'
     name: MailboxEnums.AttachmentType | string
