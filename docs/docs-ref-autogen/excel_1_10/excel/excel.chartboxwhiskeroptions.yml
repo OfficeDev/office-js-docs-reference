@@ -5,13 +5,16 @@ items:
       Represents the properties of a box and whisker chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartBoxwhiskerOptions
+    name: ChartBoxwhiskerOptions
     fullName: Excel.ChartBoxwhiskerOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartBoxwhiskerOptions#context:member'
@@ -256,10 +259,13 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartBoxwhiskerOptions:class'
-    name: Excel.ChartBoxwhiskerOptions
+    name: ChartBoxwhiskerOptions
+    fullName: Excel.ChartBoxwhiskerOptions
   - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions:interface'
-    name: Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions
+    name: ChartBoxwhiskerOptionsLoadOptions
+    fullName: Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions
   - uid: 'excel!Excel.ChartBoxwhiskerOptions#quartileCalculation~0:complex'
     name: Excel.ChartBoxQuartileCalculation | "Inclusive" | "Exclusive"
     fullName: Excel.ChartBoxQuartileCalculation | "Inclusive" | "Exclusive"
@@ -270,8 +276,10 @@ references:
       - name: ' | "Inclusive" | "Exclusive"'
         fullName: ' | "Inclusive" | "Exclusive"'
   - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData:interface'
-    name: Interfaces.ChartBoxwhiskerOptionsUpdateData
+    name: ChartBoxwhiskerOptionsUpdateData
+    fullName: Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData:interface'
-    name: Excel.Interfaces.ChartBoxwhiskerOptionsData
+    name: ChartBoxwhiskerOptionsData
+    fullName: Excel.Interfaces.ChartBoxwhiskerOptionsData

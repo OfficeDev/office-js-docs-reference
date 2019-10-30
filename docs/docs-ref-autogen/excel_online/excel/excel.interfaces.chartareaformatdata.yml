@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartAreaFormatData:interface'
     summary: An interface describing the data returned by calling `chartAreaFormat.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ChartAreaFormatData
+    name: ChartAreaFormatData
     fullName: Excel.Interfaces.ChartAreaFormatData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -80,7 +81,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartBorderData:interface'
-    name: Excel.Interfaces.ChartBorderData
+    name: ChartBorderData
+    fullName: Excel.Interfaces.ChartBorderData
   - uid: 'excel!Excel.Interfaces.ChartAreaFormatData#colorScheme~0:complex'
     name: >-
       Excel.ChartColorScheme | "ColorfulPalette1" | "ColorfulPalette2" | "ColorfulPalette3" | "ColorfulPalette4" |
@@ -101,4 +103,5 @@ references:
       - name: ' | "ColorfulPalette1" | "ColorfulPalette2" | "ColorfulPalette3" | "ColorfulPalette4" | "MonochromaticPalette1" | "MonochromaticPalette2" | "MonochromaticPalette3" | "MonochromaticPalette4" | "MonochromaticPalette5" | "MonochromaticPalette6" | "MonochromaticPalette7" | "MonochromaticPalette8" | "MonochromaticPalette9" | "MonochromaticPalette10" | "MonochromaticPalette11" | "MonochromaticPalette12" | "MonochromaticPalette13"'
         fullName: ' | "ColorfulPalette1" | "ColorfulPalette2" | "ColorfulPalette3" | "ColorfulPalette4" | "MonochromaticPalette1" | "MonochromaticPalette2" | "MonochromaticPalette3" | "MonochromaticPalette4" | "MonochromaticPalette5" | "MonochromaticPalette6" | "MonochromaticPalette7" | "MonochromaticPalette8" | "MonochromaticPalette9" | "MonochromaticPalette10" | "MonochromaticPalette11" | "MonochromaticPalette12" | "MonochromaticPalette13"'
   - uid: 'excel!Excel.Interfaces.ChartFontData:interface'
-    name: Excel.Interfaces.ChartFontData
+    name: ChartFontData
+    fullName: Excel.Interfaces.ChartFontData

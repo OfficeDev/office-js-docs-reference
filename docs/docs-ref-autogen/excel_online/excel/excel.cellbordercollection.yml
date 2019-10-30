@@ -8,10 +8,11 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.CellBorderCollection
+    name: CellBorderCollection
     fullName: Excel.CellBorderCollection
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:
@@ -145,4 +146,5 @@ items:
           - 'excel!Excel.CellBorder:interface'
 references:
   - uid: 'excel!Excel.CellBorder:interface'
-    name: Excel.CellBorder
+    name: CellBorder
+    fullName: Excel.CellBorder

@@ -5,10 +5,11 @@ items:
       Provides information about the shape that raised the Deactivated event.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ShapeDeactivatedEventArgs
+    name: ShapeDeactivatedEventArgs
     fullName: Excel.ShapeDeactivatedEventArgs
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

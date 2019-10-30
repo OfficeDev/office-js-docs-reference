@@ -5,13 +5,16 @@ items:
       Represents workbook properties.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.DocumentProperties
+    name: DocumentProperties
     fullName: Excel.DocumentProperties
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.DocumentProperties#author:member'
@@ -368,17 +371,23 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: '!Date:interface'
     name: Date
   - uid: 'excel!Excel.CustomPropertyCollection:class'
-    name: Excel.CustomPropertyCollection
+    name: CustomPropertyCollection
+    fullName: Excel.CustomPropertyCollection
   - uid: 'excel!Excel.DocumentProperties:class'
-    name: Excel.DocumentProperties
+    name: DocumentProperties
+    fullName: Excel.DocumentProperties
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
-    name: Excel.Interfaces.DocumentPropertiesLoadOptions
+    name: DocumentPropertiesLoadOptions
+    fullName: Excel.Interfaces.DocumentPropertiesLoadOptions
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
-    name: Interfaces.DocumentPropertiesUpdateData
+    name: DocumentPropertiesUpdateData
+    fullName: Excel.Interfaces.DocumentPropertiesUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
-    name: Excel.Interfaces.DocumentPropertiesData
+    name: DocumentPropertiesData
+    fullName: Excel.Interfaces.DocumentPropertiesData

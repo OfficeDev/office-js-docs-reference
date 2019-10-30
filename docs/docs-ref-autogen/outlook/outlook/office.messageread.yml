@@ -2155,6 +2155,17 @@ references:
   - uid: 'outlook!Office.EmailAddressDetails:interface'
     name: EmailAddressDetails
     fullName: Office.EmailAddressDetails
+  - uid: 'outlook!Office.MessageRead#getAllInternetHeadersAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
   - uid: 'outlook!Office.Entities:interface'
     name: Entities
     fullName: Office.Entities
@@ -2241,9 +2252,6 @@ references:
         fullName: Office.AsyncResult
       - name: <string>) => void
         fullName: <string>) => void
-  - uid: 'outlook!Office.InternetHeaders:interface'
-    name: InternetHeaders
-    fullName: Office.InternetHeaders
   - uid: 'outlook!Office.MessageRead#itemType~0:complex'
     name: MailboxEnums.ItemType | string
     fullName: Office.MailboxEnums.ItemType | string

@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.PivotHierarchyUpdateData:interface'
     summary: 'An interface for updating data on the PivotHierarchy object, for use in `pivotHierarchy.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.PivotHierarchyUpdateData
+    name: PivotHierarchyUpdateData
     fullName: Excel.Interfaces.PivotHierarchyUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

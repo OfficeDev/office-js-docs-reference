@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the ChartLegendEntryCollection object, for use in
       `chartLegendEntryCollection.set({ ... })`<!-- -->.
-    name: Excel.Interfaces.ChartLegendEntryCollectionUpdateData
+    name: ChartLegendEntryCollectionUpdateData
     fullName: Excel.Interfaces.ChartLegendEntryCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

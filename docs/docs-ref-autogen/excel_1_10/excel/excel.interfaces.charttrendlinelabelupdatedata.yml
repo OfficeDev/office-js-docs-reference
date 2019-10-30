@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the ChartTrendlineLabel object, for use in `chartTrendlineLabel.set({ ...
       })`<!-- -->.
-    name: Excel.Interfaces.ChartTrendlineLabelUpdateData
+    name: ChartTrendlineLabelUpdateData
     fullName: Excel.Interfaces.ChartTrendlineLabelUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -203,7 +204,8 @@ items:
           - 'excel!Excel.Interfaces.ChartTrendlineLabelUpdateData#verticalAlignment~0:complex'
 references:
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
+    name: ChartTrendlineLabelFormatUpdateData
+    fullName: Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelUpdateData#horizontalAlignment~0:complex'
     name: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
     fullName: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"

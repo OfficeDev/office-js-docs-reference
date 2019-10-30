@@ -5,10 +5,11 @@ items:
       Represents a collection of TimelineStyles.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.TimelineStyleCollectionLoadOptions
+    name: TimelineStyleCollectionLoadOptions
     fullName: Excel.Interfaces.TimelineStyleCollectionLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

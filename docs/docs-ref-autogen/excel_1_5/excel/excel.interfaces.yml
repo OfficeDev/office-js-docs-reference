@@ -130,6 +130,14 @@ items:
       - 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
       - 'excel!Excel.Interfaces.ColorScaleConditionalFormatData:interface'
       - 'excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData:interface'
+      - 'excel!Excel.Interfaces.CommentCollectionData:interface'
+      - 'excel!Excel.Interfaces.CommentCollectionUpdateData:interface'
+      - 'excel!Excel.Interfaces.CommentData:interface'
+      - 'excel!Excel.Interfaces.CommentReplyCollectionData:interface'
+      - 'excel!Excel.Interfaces.CommentReplyCollectionUpdateData:interface'
+      - 'excel!Excel.Interfaces.CommentReplyData:interface'
+      - 'excel!Excel.Interfaces.CommentReplyUpdateData:interface'
+      - 'excel!Excel.Interfaces.CommentUpdateData:interface'
       - 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatData:interface'
       - 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData:interface'
       - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatData:interface'
@@ -230,6 +238,10 @@ items:
       - 'excel!Excel.Interfaces.PivotTableCollectionUpdateData:interface'
       - 'excel!Excel.Interfaces.PivotTableData:interface'
       - 'excel!Excel.Interfaces.PivotTableLoadOptions:interface'
+      - 'excel!Excel.Interfaces.PivotTableStyleCollectionData:interface'
+      - 'excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData:interface'
+      - 'excel!Excel.Interfaces.PivotTableStyleData:interface'
+      - 'excel!Excel.Interfaces.PivotTableStyleUpdateData:interface'
       - 'excel!Excel.Interfaces.PivotTableUpdateData:interface'
       - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface'
       - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface'
@@ -286,6 +298,18 @@ items:
       - 'excel!Excel.Interfaces.ShapeLineFormatData:interface'
       - 'excel!Excel.Interfaces.ShapeLineFormatUpdateData:interface'
       - 'excel!Excel.Interfaces.ShapeUpdateData:interface'
+      - 'excel!Excel.Interfaces.SlicerCollectionData:interface'
+      - 'excel!Excel.Interfaces.SlicerCollectionUpdateData:interface'
+      - 'excel!Excel.Interfaces.SlicerData:interface'
+      - 'excel!Excel.Interfaces.SlicerItemCollectionData:interface'
+      - 'excel!Excel.Interfaces.SlicerItemCollectionUpdateData:interface'
+      - 'excel!Excel.Interfaces.SlicerItemData:interface'
+      - 'excel!Excel.Interfaces.SlicerItemUpdateData:interface'
+      - 'excel!Excel.Interfaces.SlicerStyleCollectionData:interface'
+      - 'excel!Excel.Interfaces.SlicerStyleCollectionUpdateData:interface'
+      - 'excel!Excel.Interfaces.SlicerStyleData:interface'
+      - 'excel!Excel.Interfaces.SlicerStyleUpdateData:interface'
+      - 'excel!Excel.Interfaces.SlicerUpdateData:interface'
       - 'excel!Excel.Interfaces.StyleCollectionData:interface'
       - 'excel!Excel.Interfaces.StyleCollectionUpdateData:interface'
       - 'excel!Excel.Interfaces.StyleData:interface'
@@ -311,6 +335,10 @@ items:
       - 'excel!Excel.Interfaces.TableScopedCollectionUpdateData:interface'
       - 'excel!Excel.Interfaces.TableSortData:interface'
       - 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
+      - 'excel!Excel.Interfaces.TableStyleCollectionData:interface'
+      - 'excel!Excel.Interfaces.TableStyleCollectionUpdateData:interface'
+      - 'excel!Excel.Interfaces.TableStyleData:interface'
+      - 'excel!Excel.Interfaces.TableStyleUpdateData:interface'
       - 'excel!Excel.Interfaces.TableUpdateData:interface'
       - 'excel!Excel.Interfaces.TextConditionalFormatData:interface'
       - 'excel!Excel.Interfaces.TextConditionalFormatUpdateData:interface'
@@ -318,6 +346,10 @@ items:
       - 'excel!Excel.Interfaces.TextFrameUpdateData:interface'
       - 'excel!Excel.Interfaces.TextRangeData:interface'
       - 'excel!Excel.Interfaces.TextRangeUpdateData:interface'
+      - 'excel!Excel.Interfaces.TimelineStyleCollectionData:interface'
+      - 'excel!Excel.Interfaces.TimelineStyleCollectionUpdateData:interface'
+      - 'excel!Excel.Interfaces.TimelineStyleData:interface'
+      - 'excel!Excel.Interfaces.TimelineStyleUpdateData:interface'
       - 'excel!Excel.Interfaces.TopBottomConditionalFormatData:interface'
       - 'excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData:interface'
       - 'excel!Excel.Interfaces.WorkbookCreatedData:interface'
@@ -700,6 +732,30 @@ references:
   - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData:interface'
     name: ColorScaleConditionalFormatUpdateData
     fullName: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.CommentCollectionData:interface'
+    name: CommentCollectionData
+    fullName: Excel.Interfaces.CommentCollectionData
+  - uid: 'excel!Excel.Interfaces.CommentCollectionUpdateData:interface'
+    name: CommentCollectionUpdateData
+    fullName: Excel.Interfaces.CommentCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.CommentData:interface'
+    name: CommentData
+    fullName: Excel.Interfaces.CommentData
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionData:interface'
+    name: CommentReplyCollectionData
+    fullName: Excel.Interfaces.CommentReplyCollectionData
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionUpdateData:interface'
+    name: CommentReplyCollectionUpdateData
+    fullName: Excel.Interfaces.CommentReplyCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.CommentReplyData:interface'
+    name: CommentReplyData
+    fullName: Excel.Interfaces.CommentReplyData
+  - uid: 'excel!Excel.Interfaces.CommentReplyUpdateData:interface'
+    name: CommentReplyUpdateData
+    fullName: Excel.Interfaces.CommentReplyUpdateData
+  - uid: 'excel!Excel.Interfaces.CommentUpdateData:interface'
+    name: CommentUpdateData
+    fullName: Excel.Interfaces.CommentUpdateData
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatData:interface'
     name: ConditionalDataBarNegativeFormatData
     fullName: Excel.Interfaces.ConditionalDataBarNegativeFormatData
@@ -1000,6 +1056,18 @@ references:
   - uid: 'excel!Excel.Interfaces.PivotTableLoadOptions:interface'
     name: PivotTableLoadOptions
     fullName: Excel.Interfaces.PivotTableLoadOptions
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionData:interface'
+    name: PivotTableStyleCollectionData
+    fullName: Excel.Interfaces.PivotTableStyleCollectionData
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData:interface'
+    name: PivotTableStyleCollectionUpdateData
+    fullName: Excel.Interfaces.PivotTableStyleCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleData:interface'
+    name: PivotTableStyleData
+    fullName: Excel.Interfaces.PivotTableStyleData
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleUpdateData:interface'
+    name: PivotTableStyleUpdateData
+    fullName: Excel.Interfaces.PivotTableStyleUpdateData
   - uid: 'excel!Excel.Interfaces.PivotTableUpdateData:interface'
     name: PivotTableUpdateData
     fullName: Excel.Interfaces.PivotTableUpdateData
@@ -1168,6 +1236,42 @@ references:
   - uid: 'excel!Excel.Interfaces.ShapeUpdateData:interface'
     name: ShapeUpdateData
     fullName: Excel.Interfaces.ShapeUpdateData
+  - uid: 'excel!Excel.Interfaces.SlicerCollectionData:interface'
+    name: SlicerCollectionData
+    fullName: Excel.Interfaces.SlicerCollectionData
+  - uid: 'excel!Excel.Interfaces.SlicerCollectionUpdateData:interface'
+    name: SlicerCollectionUpdateData
+    fullName: Excel.Interfaces.SlicerCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.SlicerData:interface'
+    name: SlicerData
+    fullName: Excel.Interfaces.SlicerData
+  - uid: 'excel!Excel.Interfaces.SlicerItemCollectionData:interface'
+    name: SlicerItemCollectionData
+    fullName: Excel.Interfaces.SlicerItemCollectionData
+  - uid: 'excel!Excel.Interfaces.SlicerItemCollectionUpdateData:interface'
+    name: SlicerItemCollectionUpdateData
+    fullName: Excel.Interfaces.SlicerItemCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.SlicerItemData:interface'
+    name: SlicerItemData
+    fullName: Excel.Interfaces.SlicerItemData
+  - uid: 'excel!Excel.Interfaces.SlicerItemUpdateData:interface'
+    name: SlicerItemUpdateData
+    fullName: Excel.Interfaces.SlicerItemUpdateData
+  - uid: 'excel!Excel.Interfaces.SlicerStyleCollectionData:interface'
+    name: SlicerStyleCollectionData
+    fullName: Excel.Interfaces.SlicerStyleCollectionData
+  - uid: 'excel!Excel.Interfaces.SlicerStyleCollectionUpdateData:interface'
+    name: SlicerStyleCollectionUpdateData
+    fullName: Excel.Interfaces.SlicerStyleCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.SlicerStyleData:interface'
+    name: SlicerStyleData
+    fullName: Excel.Interfaces.SlicerStyleData
+  - uid: 'excel!Excel.Interfaces.SlicerStyleUpdateData:interface'
+    name: SlicerStyleUpdateData
+    fullName: Excel.Interfaces.SlicerStyleUpdateData
+  - uid: 'excel!Excel.Interfaces.SlicerUpdateData:interface'
+    name: SlicerUpdateData
+    fullName: Excel.Interfaces.SlicerUpdateData
   - uid: 'excel!Excel.Interfaces.StyleCollectionData:interface'
     name: StyleCollectionData
     fullName: Excel.Interfaces.StyleCollectionData
@@ -1243,6 +1347,18 @@ references:
   - uid: 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
     name: TableSortLoadOptions
     fullName: Excel.Interfaces.TableSortLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableStyleCollectionData:interface'
+    name: TableStyleCollectionData
+    fullName: Excel.Interfaces.TableStyleCollectionData
+  - uid: 'excel!Excel.Interfaces.TableStyleCollectionUpdateData:interface'
+    name: TableStyleCollectionUpdateData
+    fullName: Excel.Interfaces.TableStyleCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.TableStyleData:interface'
+    name: TableStyleData
+    fullName: Excel.Interfaces.TableStyleData
+  - uid: 'excel!Excel.Interfaces.TableStyleUpdateData:interface'
+    name: TableStyleUpdateData
+    fullName: Excel.Interfaces.TableStyleUpdateData
   - uid: 'excel!Excel.Interfaces.TableUpdateData:interface'
     name: TableUpdateData
     fullName: Excel.Interfaces.TableUpdateData
@@ -1264,6 +1380,18 @@ references:
   - uid: 'excel!Excel.Interfaces.TextRangeUpdateData:interface'
     name: TextRangeUpdateData
     fullName: Excel.Interfaces.TextRangeUpdateData
+  - uid: 'excel!Excel.Interfaces.TimelineStyleCollectionData:interface'
+    name: TimelineStyleCollectionData
+    fullName: Excel.Interfaces.TimelineStyleCollectionData
+  - uid: 'excel!Excel.Interfaces.TimelineStyleCollectionUpdateData:interface'
+    name: TimelineStyleCollectionUpdateData
+    fullName: Excel.Interfaces.TimelineStyleCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.TimelineStyleData:interface'
+    name: TimelineStyleData
+    fullName: Excel.Interfaces.TimelineStyleData
+  - uid: 'excel!Excel.Interfaces.TimelineStyleUpdateData:interface'
+    name: TimelineStyleUpdateData
+    fullName: Excel.Interfaces.TimelineStyleUpdateData
   - uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatData:interface'
     name: TopBottomConditionalFormatData
     fullName: Excel.Interfaces.TopBottomConditionalFormatData

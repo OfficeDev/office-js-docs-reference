@@ -5,10 +5,11 @@ items:
       Represents the quartile calculation type of chart series layout. Only applies to a box and whisker chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartBoxQuartileCalculation
+    name: ChartBoxQuartileCalculation
     fullName: Excel.ChartBoxQuartileCalculation
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

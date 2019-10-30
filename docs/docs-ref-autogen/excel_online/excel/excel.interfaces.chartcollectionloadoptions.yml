@@ -5,10 +5,11 @@ items:
       A collection of all the chart objects on a worksheet.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartCollectionLoadOptions
+    name: ChartCollectionLoadOptions
     fullName: Excel.Interfaces.ChartCollectionLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -428,20 +429,29 @@ items:
           - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartAxesLoadOptions:interface'
-    name: Excel.Interfaces.ChartAxesLoadOptions
+    name: ChartAxesLoadOptions
+    fullName: Excel.Interfaces.ChartAxesLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
-    name: Excel.Interfaces.ChartDataLabelsLoadOptions
+    name: ChartDataLabelsLoadOptions
+    fullName: Excel.Interfaces.ChartDataLabelsLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartAreaFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartAreaFormatLoadOptions
+    name: ChartAreaFormatLoadOptions
+    fullName: Excel.Interfaces.ChartAreaFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions:interface'
-    name: Excel.Interfaces.ChartLegendLoadOptions
+    name: ChartLegendLoadOptions
+    fullName: Excel.Interfaces.ChartLegendLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions:interface'
-    name: Excel.Interfaces.ChartPivotOptionsLoadOptions
+    name: ChartPivotOptionsLoadOptions
+    fullName: Excel.Interfaces.ChartPivotOptionsLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions:interface'
-    name: Excel.Interfaces.ChartPlotAreaLoadOptions
+    name: ChartPlotAreaLoadOptions
+    fullName: Excel.Interfaces.ChartPlotAreaLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface'
-    name: Excel.Interfaces.ChartSeriesCollectionLoadOptions
+    name: ChartSeriesCollectionLoadOptions
+    fullName: Excel.Interfaces.ChartSeriesCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions:interface'
-    name: Excel.Interfaces.ChartTitleLoadOptions
+    name: ChartTitleLoadOptions
+    fullName: Excel.Interfaces.ChartTitleLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
-    name: Excel.Interfaces.WorksheetLoadOptions
+    name: WorksheetLoadOptions
+    fullName: Excel.Interfaces.WorksheetLoadOptions

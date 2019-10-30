@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.RangeUnderlineStyle:enum'
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.RangeUnderlineStyle
+    name: RangeUnderlineStyle
     fullName: Excel.RangeUnderlineStyle
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

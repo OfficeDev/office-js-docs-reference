@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the PageBreakCollection object, for use in `pageBreakCollection.set({ ...
       })`<!-- -->.
-    name: Excel.Interfaces.PageBreakCollectionUpdateData
+    name: PageBreakCollectionUpdateData
     fullName: Excel.Interfaces.PageBreakCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

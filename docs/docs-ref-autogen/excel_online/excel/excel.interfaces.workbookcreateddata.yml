@@ -2,9 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.WorkbookCreatedData:interface'
     summary: An interface describing the data returned by calling `workbookCreated.toJSON()`<!-- -->.
-    name: Excel.Interfaces.WorkbookCreatedData
+    name: WorkbookCreatedData
     fullName: Excel.Interfaces.WorkbookCreatedData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

@@ -5,10 +5,11 @@ items:
       Contains the text that is attached to a shape, in addition to properties and methods for manipulating the text.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.TextRangeLoadOptions
+    name: TextRangeLoadOptions
     fullName: Excel.Interfaces.TextRangeLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -61,4 +62,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions:interface'
-    name: Excel.Interfaces.ShapeFontLoadOptions
+    name: ShapeFontLoadOptions
+    fullName: Excel.Interfaces.ShapeFontLoadOptions

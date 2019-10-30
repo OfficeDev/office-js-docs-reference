@@ -5,10 +5,11 @@ items:
       Represents a collection of comment objects that are part of the workbook.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.CommentCollectionLoadOptions
+    name: CommentCollectionLoadOptions
     fullName: Excel.Interfaces.CommentCollectionLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

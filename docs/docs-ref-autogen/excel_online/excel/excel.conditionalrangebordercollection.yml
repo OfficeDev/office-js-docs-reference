@@ -5,13 +5,16 @@ items:
       Represents the border objects that make up range border.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ConditionalRangeBorderCollection
+    name: ConditionalRangeBorderCollection
     fullName: Excel.ConditionalRangeBorderCollection
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
@@ -278,11 +281,14 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ConditionalRangeBorder:class'
-    name: Excel.ConditionalRangeBorder
+    name: ConditionalRangeBorder
+    fullName: Excel.ConditionalRangeBorder
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ConditionalRangeBorderIndex:enum'
-    name: Excel.ConditionalRangeBorderIndex
+    name: ConditionalRangeBorderIndex
+    fullName: Excel.ConditionalRangeBorderIndex
   - uid: 'excel!Excel.ConditionalRangeBorderCollection#items~0:complex'
     name: 'Excel.ConditionalRangeBorder[]'
     fullName: 'Excel.ConditionalRangeBorder[]'
@@ -293,7 +299,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.ConditionalRangeBorderCollection:class'
-    name: Excel.ConditionalRangeBorderCollection
+    name: ConditionalRangeBorderCollection
+    fullName: Excel.ConditionalRangeBorderCollection
   - uid: 'excel!Excel.ConditionalRangeBorderCollection#load~0:complex'
     name: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -309,4 +316,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionData:interface'
-    name: Excel.Interfaces.ConditionalRangeBorderCollectionData
+    name: ConditionalRangeBorderCollectionData
+    fullName: Excel.Interfaces.ConditionalRangeBorderCollectionData

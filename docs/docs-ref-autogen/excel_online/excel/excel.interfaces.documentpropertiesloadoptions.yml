@@ -5,10 +5,11 @@ items:
       Represents workbook properties.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.DocumentPropertiesLoadOptions
+    name: DocumentPropertiesLoadOptions
     fullName: Excel.Interfaces.DocumentPropertiesLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

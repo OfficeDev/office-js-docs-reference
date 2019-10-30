@@ -5,10 +5,11 @@ items:
       Represents a Top/Bottom conditional format.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.TopBottomConditionalFormatLoadOptions
+    name: TopBottomConditionalFormatLoadOptions
     fullName: Excel.Interfaces.TopBottomConditionalFormatLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -61,4 +62,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface'
-    name: Excel.Interfaces.ConditionalRangeFormatLoadOptions
+    name: ConditionalRangeFormatLoadOptions
+    fullName: Excel.Interfaces.ConditionalRangeFormatLoadOptions

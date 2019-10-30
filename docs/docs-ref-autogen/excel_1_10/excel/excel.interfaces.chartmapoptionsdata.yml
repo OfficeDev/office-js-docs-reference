@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartMapOptionsData:interface'
     summary: An interface describing the data returned by calling `chartMapOptions.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ChartMapOptionsData
+    name: ChartMapOptionsData
     fullName: Excel.Interfaces.ChartMapOptionsData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

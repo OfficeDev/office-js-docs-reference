@@ -5,10 +5,11 @@ items:
       Represents the error alert properties for the data validation.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.DataValidationErrorAlert
+    name: DataValidationErrorAlert
     fullName: Excel.DataValidationErrorAlert
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

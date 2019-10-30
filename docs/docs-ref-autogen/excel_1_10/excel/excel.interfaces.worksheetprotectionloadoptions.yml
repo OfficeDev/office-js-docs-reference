@@ -5,10 +5,11 @@ items:
       Represents the protection of a sheet object.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.WorksheetProtectionLoadOptions
+    name: WorksheetProtectionLoadOptions
     fullName: Excel.Interfaces.WorksheetProtectionLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

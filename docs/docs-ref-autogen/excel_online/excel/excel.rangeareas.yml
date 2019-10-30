@@ -8,13 +8,16 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.RangeAreas
+    name: RangeAreas
     fullName: Excel.RangeAreas
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.RangeAreas#address:member'
@@ -971,13 +974,17 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RangeCollection:class'
-    name: Excel.RangeCollection
+    name: RangeCollection
+    fullName: Excel.RangeCollection
   - uid: 'excel!Excel.ClearApplyTo:enum'
-    name: Excel.ClearApplyTo
+    name: ClearApplyTo
+    fullName: Excel.ClearApplyTo
   - uid: 'excel!Excel.ConditionalFormatCollection:class'
-    name: Excel.ConditionalFormatCollection
+    name: ConditionalFormatCollection
+    fullName: Excel.ConditionalFormatCollection
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.RangeAreas#copyFrom~0:complex'
     name: Range | RangeAreas | string
     fullName: Excel.Range | Excel.RangeAreas | string
@@ -993,7 +1000,8 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.RangeCopyType:enum'
-    name: Excel.RangeCopyType
+    name: RangeCopyType
+    fullName: Excel.RangeCopyType
   - uid: 'excel!Excel.RangeAreas#copyFrom~1:complex'
     name: Range | RangeAreas | string
     fullName: Excel.Range | Excel.RangeAreas | string
@@ -1009,11 +1017,14 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.DataValidation:class'
-    name: Excel.DataValidation
+    name: DataValidation
+    fullName: Excel.DataValidation
   - uid: 'excel!Excel.RangeFormat:class'
-    name: Excel.RangeFormat
+    name: RangeFormat
+    fullName: Excel.RangeFormat
   - uid: 'excel!Excel.RangeAreas:class'
-    name: Excel.RangeAreas
+    name: RangeAreas
+    fullName: Excel.RangeAreas
   - uid: 'excel!Excel.RangeAreas#getIntersection~0:complex'
     name: Range | RangeAreas | string
     fullName: Excel.Range | Excel.RangeAreas | string
@@ -1043,18 +1054,25 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.SpecialCellType:enum'
-    name: Excel.SpecialCellType
+    name: SpecialCellType
+    fullName: Excel.SpecialCellType
   - uid: 'excel!Excel.SpecialCellValueType:enum'
-    name: Excel.SpecialCellValueType
+    name: SpecialCellValueType
+    fullName: Excel.SpecialCellValueType
   - uid: 'excel!Excel.TableScopedCollection:class'
-    name: Excel.TableScopedCollection
+    name: TableScopedCollection
+    fullName: Excel.TableScopedCollection
   - uid: 'excel!Excel.Interfaces.RangeAreasLoadOptions:interface'
-    name: Excel.Interfaces.RangeAreasLoadOptions
+    name: RangeAreasLoadOptions
+    fullName: Excel.Interfaces.RangeAreasLoadOptions
   - uid: 'excel!Excel.Interfaces.RangeAreasUpdateData:interface'
-    name: Interfaces.RangeAreasUpdateData
+    name: RangeAreasUpdateData
+    fullName: Excel.Interfaces.RangeAreasUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.RangeAreasData:interface'
-    name: Excel.Interfaces.RangeAreasData
+    name: RangeAreasData
+    fullName: Excel.Interfaces.RangeAreasData
   - uid: 'excel!Excel.Worksheet:class'
-    name: Excel.Worksheet
+    name: Worksheet
+    fullName: Excel.Worksheet

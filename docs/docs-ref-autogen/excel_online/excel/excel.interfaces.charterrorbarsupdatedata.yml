@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData:interface'
     summary: 'An interface for updating data on the ChartErrorBars object, for use in `chartErrorBars.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.ChartErrorBarsUpdateData
+    name: ChartErrorBarsUpdateData
     fullName: Excel.Interfaces.ChartErrorBarsUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -91,7 +92,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartErrorBarsFormatUpdateData
+    name: ChartErrorBarsFormatUpdateData
+    fullName: Excel.Interfaces.ChartErrorBarsFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#include~0:complex'
     name: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues"
     fullName: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues"

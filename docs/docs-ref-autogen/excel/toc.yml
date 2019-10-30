@@ -211,6 +211,8 @@ items:
                 uid: 'excel!Excel.ChartSeriesBy:enum'
               - name: ChartSeriesCollection
                 uid: 'excel!Excel.ChartSeriesCollection:class'
+              - name: ChartSeriesDimension
+                uid: 'excel!Excel.ChartSeriesDimension:enum'
               - name: ChartSeriesFormat
                 uid: 'excel!Excel.ChartSeriesFormat:class'
               - name: ChartSplitType
@@ -335,6 +337,8 @@ items:
                 uid: 'excel!Excel.ConnectorType:enum'
               - name: ContentType
                 uid: 'excel!Excel.ContentType:enum'
+              - name: CultureInfo
+                uid: 'excel!Excel.CultureInfo:class'
               - name: CustomConditionalFormat
                 uid: 'excel!Excel.CustomConditionalFormat:class'
               - name: CustomDataValidation
@@ -487,6 +491,8 @@ items:
                 uid: 'excel!Excel.NamedItemScope:enum'
               - name: NamedItemType
                 uid: 'excel!Excel.NamedItemType:enum'
+              - name: NumberFormatInfo
+                uid: 'excel!Excel.NumberFormatInfo:class'
               - name: PageBreak
                 uid: 'excel!Excel.PageBreak:class'
               - name: PageBreakCollection
@@ -1253,6 +1259,10 @@ items:
               - name: ConditionalRangeFormatUpdateData
                 uid: >-
                   excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface
+              - name: CultureInfoData
+                uid: 'excel!Excel.Interfaces.CultureInfoData:interface'
+              - name: CultureInfoLoadOptions
+                uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
               - name: CustomConditionalFormatData
                 uid: 'excel!Excel.Interfaces.CustomConditionalFormatData:interface'
               - name: CustomConditionalFormatLoadOptions
@@ -1430,6 +1440,10 @@ items:
                 uid: 'excel!Excel.Interfaces.NamedItemLoadOptions:interface'
               - name: NamedItemUpdateData
                 uid: 'excel!Excel.Interfaces.NamedItemUpdateData:interface'
+              - name: NumberFormatInfoData
+                uid: 'excel!Excel.Interfaces.NumberFormatInfoData:interface'
+              - name: NumberFormatInfoLoadOptions
+                uid: 'excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface'
               - name: PageBreakCollectionData
                 uid: 'excel!Excel.Interfaces.PageBreakCollectionData:interface'
               - name: PageBreakCollectionLoadOptions

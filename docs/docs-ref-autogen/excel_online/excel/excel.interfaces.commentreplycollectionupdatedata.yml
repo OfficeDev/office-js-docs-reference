@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the CommentReplyCollection object, for use in `commentReplyCollection.set({ ...
       })`<!-- -->.
-    name: Excel.Interfaces.CommentReplyCollectionUpdateData
+    name: CommentReplyCollectionUpdateData
     fullName: Excel.Interfaces.CommentReplyCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

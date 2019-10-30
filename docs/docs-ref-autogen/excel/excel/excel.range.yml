@@ -2160,10 +2160,7 @@ items:
     summary: |-
       Groups columns and rows for an outline.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: group(groupOptionString)
     fullName: group(groupOptionString)
     langs:
@@ -2257,10 +2254,7 @@ items:
     summary: |-
       Hide details of the row or column group.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hideGroupDetails(groupOptionString)
     fullName: hideGroupDetails(groupOptionString)
     langs:
@@ -3164,10 +3158,7 @@ items:
     summary: |-
       Show details of the row or column group.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showGroupDetails(groupOptionString)
     fullName: showGroupDetails(groupOptionString)
     langs:
@@ -3376,10 +3367,7 @@ items:
     summary: |-
       Ungroups columns and rows for an outline.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: ungroup(groupOptionString)
     fullName: ungroup(groupOptionString)
     langs:
@@ -3736,6 +3724,15 @@ references:
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions:interface'
     name: RangeLoadOptions
     fullName: Excel.Interfaces.RangeLoadOptions
+  - uid: 'excel!Excel.Range#moveTo~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
   - uid: 'excel!Excel.RemoveDuplicatesResult:class'
     name: RemoveDuplicatesResult
     fullName: Excel.RemoveDuplicatesResult

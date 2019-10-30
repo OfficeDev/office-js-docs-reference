@@ -5,10 +5,11 @@ items:
       Represents the types of conditional format values.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ConditionalFormatIconRuleType
+    name: ConditionalFormatIconRuleType
     fullName: Excel.ConditionalFormatIconRuleType
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

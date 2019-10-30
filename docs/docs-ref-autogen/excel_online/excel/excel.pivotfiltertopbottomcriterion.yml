@@ -5,10 +5,11 @@ items:
       Represents the criteria for the top/bottom values filter.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.PivotFilterTopBottomCriterion
+    name: PivotFilterTopBottomCriterion
     fullName: Excel.PivotFilterTopBottomCriterion
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

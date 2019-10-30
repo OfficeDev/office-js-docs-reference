@@ -3,10 +3,11 @@ items:
   - uid: 'office-runtime!OfficeRuntime.Storage:interface'
     summary: 'Asynchronous, global, and persistent key-value storage.'
     remarks: 'Storage limit is 10 MB per domain, which may be shared by multiple add-ins.'
-    name: OfficeRuntime.Storage
+    name: Storage
     fullName: OfficeRuntime.Storage
     langs:
       - typeScript
+    namespace: 'office-runtime!OfficeRuntime:namespace'
     type: interface
     package: office-runtime!
     children:

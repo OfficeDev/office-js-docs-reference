@@ -5,13 +5,16 @@ items:
       Encapsulates the properties for a region map chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartMapOptions
+    name: ChartMapOptions
     fullName: Excel.ChartMapOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartMapOptions#context:member'
@@ -226,6 +229,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartMapOptions#labelStrategy~0:complex'
     name: Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll"
     fullName: Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll"
@@ -249,9 +253,11 @@ references:
       - name: ' | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" | "World"'
         fullName: ' | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" | "World"'
   - uid: 'excel!Excel.ChartMapOptions:class'
-    name: Excel.ChartMapOptions
+    name: ChartMapOptions
+    fullName: Excel.ChartMapOptions
   - uid: 'excel!Excel.Interfaces.ChartMapOptionsLoadOptions:interface'
-    name: Excel.Interfaces.ChartMapOptionsLoadOptions
+    name: ChartMapOptionsLoadOptions
+    fullName: Excel.Interfaces.ChartMapOptionsLoadOptions
   - uid: 'excel!Excel.ChartMapOptions#projectionType~0:complex'
     name: Excel.ChartMapProjectionType | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"
     fullName: Excel.ChartMapProjectionType | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"
@@ -262,8 +268,10 @@ references:
       - name: ' | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"'
         fullName: ' | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"'
   - uid: 'excel!Excel.Interfaces.ChartMapOptionsUpdateData:interface'
-    name: Interfaces.ChartMapOptionsUpdateData
+    name: ChartMapOptionsUpdateData
+    fullName: Excel.Interfaces.ChartMapOptionsUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartMapOptionsData:interface'
-    name: Excel.Interfaces.ChartMapOptionsData
+    name: ChartMapOptionsData
+    fullName: Excel.Interfaces.ChartMapOptionsData

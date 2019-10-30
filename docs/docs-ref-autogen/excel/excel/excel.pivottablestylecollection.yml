@@ -4,13 +4,13 @@ items:
     summary: |-
       Represents a collection of PivotTable styles.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: PivotTableStyleCollection
+    fullName: Excel.PivotTableStyleCollection
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
+    type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
     inheritance:

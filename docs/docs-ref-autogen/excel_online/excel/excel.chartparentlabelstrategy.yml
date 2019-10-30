@@ -5,10 +5,11 @@ items:
       Represents the parent label strategy of the chart series layout. This only applies to treemap charts
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartParentLabelStrategy
+    name: ChartParentLabelStrategy
     fullName: Excel.ChartParentLabelStrategy
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

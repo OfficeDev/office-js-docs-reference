@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.SlicerUpdateData:interface'
     summary: 'An interface for updating data on the Slicer object, for use in `slicer.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.SlicerUpdateData
+    name: SlicerUpdateData
     fullName: Excel.Interfaces.SlicerUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -177,4 +178,5 @@ references:
       - name: ' | "DataSourceOrder" | "Ascending" | "Descending"'
         fullName: ' | "DataSourceOrder" | "Ascending" | "Descending"'
   - uid: 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
-    name: Excel.Interfaces.WorksheetUpdateData
+    name: WorksheetUpdateData
+    fullName: Excel.Interfaces.WorksheetUpdateData

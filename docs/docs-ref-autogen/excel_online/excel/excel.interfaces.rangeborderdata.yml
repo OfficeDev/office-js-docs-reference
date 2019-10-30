@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.RangeBorderData:interface'
     summary: An interface describing the data returned by calling `rangeBorder.toJSON()`<!-- -->.
-    name: Excel.Interfaces.RangeBorderData
+    name: RangeBorderData
     fullName: Excel.Interfaces.RangeBorderData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

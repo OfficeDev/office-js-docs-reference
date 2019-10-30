@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
     summary: 'An interface for updating data on the ChartFont object, for use in `chartFont.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.ChartFontUpdateData
+    name: ChartFontUpdateData
     fullName: Excel.Interfaces.ChartFontUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

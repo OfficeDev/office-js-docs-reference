@@ -5,10 +5,11 @@ items:
       Represents a rule-type for a Data Bar.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ConditionalDataBarRule
+    name: ConditionalDataBarRule
     fullName: Excel.ConditionalDataBarRule
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

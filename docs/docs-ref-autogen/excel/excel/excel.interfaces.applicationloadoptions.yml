@@ -180,7 +180,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
-    name: Excel.Interfaces.CultureInfoLoadOptions
+    name: CultureInfoLoadOptions
+    fullName: Excel.Interfaces.CultureInfoLoadOptions
   - uid: 'excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface'
     name: IterativeCalculationLoadOptions
     fullName: Excel.Interfaces.IterativeCalculationLoadOptions

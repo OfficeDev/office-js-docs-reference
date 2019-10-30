@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatData:interface'
     summary: An interface describing the data returned by calling `cellValueConditionalFormat.toJSON()`<!-- -->.
-    name: Excel.Interfaces.CellValueConditionalFormatData
+    name: CellValueConditionalFormatData
     fullName: Excel.Interfaces.CellValueConditionalFormatData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -43,6 +44,8 @@ items:
           - 'excel!Excel.ConditionalCellValueRule:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
-    name: Excel.Interfaces.ConditionalRangeFormatData
+    name: ConditionalRangeFormatData
+    fullName: Excel.Interfaces.ConditionalRangeFormatData
   - uid: 'excel!Excel.ConditionalCellValueRule:interface'
-    name: Excel.ConditionalCellValueRule
+    name: ConditionalCellValueRule
+    fullName: Excel.ConditionalCellValueRule

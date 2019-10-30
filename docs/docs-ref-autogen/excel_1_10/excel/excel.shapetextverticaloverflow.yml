@@ -5,10 +5,11 @@ items:
       Specifies the vertical overflow for the text frame in a shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ShapeTextVerticalOverflow
+    name: ShapeTextVerticalOverflow
     fullName: Excel.ShapeTextVerticalOverflow
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

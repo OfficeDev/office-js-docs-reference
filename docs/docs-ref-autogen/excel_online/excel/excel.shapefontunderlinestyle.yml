@@ -5,10 +5,11 @@ items:
       The type of underline applied to a font.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ShapeFontUnderlineStyle
+    name: ShapeFontUnderlineStyle
     fullName: Excel.ShapeFontUnderlineStyle
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

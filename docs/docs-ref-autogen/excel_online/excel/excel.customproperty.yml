@@ -5,13 +5,16 @@ items:
       Represents a custom property.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.CustomProperty
+    name: CustomProperty
     fullName: Excel.CustomProperty
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.CustomProperty#context:member'
@@ -241,16 +244,21 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.CustomProperty:class'
-    name: Excel.CustomProperty
+    name: CustomProperty
+    fullName: Excel.CustomProperty
   - uid: 'excel!Excel.Interfaces.CustomPropertyLoadOptions:interface'
-    name: Excel.Interfaces.CustomPropertyLoadOptions
+    name: CustomPropertyLoadOptions
+    fullName: Excel.Interfaces.CustomPropertyLoadOptions
   - uid: 'excel!Excel.Interfaces.CustomPropertyUpdateData:interface'
-    name: Interfaces.CustomPropertyUpdateData
+    name: CustomPropertyUpdateData
+    fullName: Excel.Interfaces.CustomPropertyUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.CustomPropertyData:interface'
-    name: Excel.Interfaces.CustomPropertyData
+    name: CustomPropertyData
+    fullName: Excel.Interfaces.CustomPropertyData
   - uid: 'excel!Excel.CustomProperty#type~0:complex'
     name: Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float"
     fullName: Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float"

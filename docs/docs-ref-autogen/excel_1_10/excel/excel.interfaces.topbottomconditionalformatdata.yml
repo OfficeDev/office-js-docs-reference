@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatData:interface'
     summary: An interface describing the data returned by calling `topBottomConditionalFormat.toJSON()`<!-- -->.
-    name: Excel.Interfaces.TopBottomConditionalFormatData
+    name: TopBottomConditionalFormatData
     fullName: Excel.Interfaces.TopBottomConditionalFormatData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -45,6 +46,8 @@ items:
           - 'excel!Excel.ConditionalTopBottomRule:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
-    name: Excel.Interfaces.ConditionalRangeFormatData
+    name: ConditionalRangeFormatData
+    fullName: Excel.Interfaces.ConditionalRangeFormatData
   - uid: 'excel!Excel.ConditionalTopBottomRule:interface'
-    name: Excel.ConditionalTopBottomRule
+    name: ConditionalTopBottomRule
+    fullName: Excel.ConditionalTopBottomRule

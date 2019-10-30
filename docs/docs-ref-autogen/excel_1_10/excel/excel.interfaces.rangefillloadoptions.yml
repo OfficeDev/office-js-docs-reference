@@ -5,10 +5,11 @@ items:
       Represents the background of a range object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.RangeFillLoadOptions
+    name: RangeFillLoadOptions
     fullName: Excel.Interfaces.RangeFillLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.NamedItemData:interface'
     summary: An interface describing the data returned by calling `namedItem.toJSON()`<!-- -->.
-    name: Excel.Interfaces.NamedItemData
+    name: NamedItemData
     fullName: Excel.Interfaces.NamedItemData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -143,7 +144,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesData:interface'
-    name: Excel.Interfaces.NamedItemArrayValuesData
+    name: NamedItemArrayValuesData
+    fullName: Excel.Interfaces.NamedItemArrayValuesData
   - uid: 'excel!Excel.Interfaces.NamedItemData#scope~0:complex'
     name: Excel.NamedItemScope | "Worksheet" | "Workbook"
     fullName: Excel.NamedItemScope | "Worksheet" | "Workbook"

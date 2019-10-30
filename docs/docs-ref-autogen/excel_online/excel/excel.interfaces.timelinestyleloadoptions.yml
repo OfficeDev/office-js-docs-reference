@@ -5,10 +5,11 @@ items:
       Represents a Timeline style, which defines style elements by region in the Timeline.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.TimelineStyleLoadOptions
+    name: TimelineStyleLoadOptions
     fullName: Excel.Interfaces.TimelineStyleLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface'
     summary: An interface describing the data returned by calling `presetCriteriaConditionalFormat.toJSON()`<!-- -->.
-    name: Excel.Interfaces.PresetCriteriaConditionalFormatData
+    name: PresetCriteriaConditionalFormatData
     fullName: Excel.Interfaces.PresetCriteriaConditionalFormatData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -43,6 +44,8 @@ items:
           - 'excel!Excel.ConditionalPresetCriteriaRule:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
-    name: Excel.Interfaces.ConditionalRangeFormatData
+    name: ConditionalRangeFormatData
+    fullName: Excel.Interfaces.ConditionalRangeFormatData
   - uid: 'excel!Excel.ConditionalPresetCriteriaRule:interface'
-    name: Excel.ConditionalPresetCriteriaRule
+    name: ConditionalPresetCriteriaRule
+    fullName: Excel.ConditionalPresetCriteriaRule

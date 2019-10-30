@@ -5,10 +5,11 @@ items:
       Represents the operator for each icon criteria.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ConditionalIconCriterionOperator
+    name: ConditionalIconCriterionOperator
     fullName: Excel.ConditionalIconCriterionOperator
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.GroupShapeCollectionData:interface'
     summary: An interface describing the data returned by calling `groupShapeCollection.toJSON()`<!-- -->.
-    name: Excel.Interfaces.GroupShapeCollectionData
+    name: GroupShapeCollectionData
     fullName: Excel.Interfaces.GroupShapeCollectionData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

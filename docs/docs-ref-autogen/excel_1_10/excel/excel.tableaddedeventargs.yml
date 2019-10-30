@@ -5,10 +5,11 @@ items:
       Provides information about the table that raised the OnAdded event.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.TableAddedEventArgs
+    name: TableAddedEventArgs
     fullName: Excel.TableAddedEventArgs
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

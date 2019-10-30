@@ -5,10 +5,11 @@ items:
       Represents the replace criteria to be used.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ReplaceCriteria
+    name: ReplaceCriteria
     fullName: Excel.ReplaceCriteria
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

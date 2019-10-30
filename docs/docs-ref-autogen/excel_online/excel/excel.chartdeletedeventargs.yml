@@ -5,10 +5,11 @@ items:
       Provides information about the chart that raised the Deleted event.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartDeletedEventArgs
+    name: ChartDeletedEventArgs
     fullName: Excel.ChartDeletedEventArgs
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

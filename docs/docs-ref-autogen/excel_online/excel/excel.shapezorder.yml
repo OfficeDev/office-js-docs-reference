@@ -5,10 +5,11 @@ items:
       Specifies where in the z-order a shape should be moved relative to other shapes.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ShapeZOrder
+    name: ShapeZOrder
     fullName: Excel.ShapeZOrder
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

@@ -5,10 +5,11 @@ items:
       Represents Data validation type enum.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.DataValidationType
+    name: DataValidationType
     fullName: Excel.DataValidationType
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

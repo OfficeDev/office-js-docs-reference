@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the RangeBorderCollection object, for use in `rangeBorderCollection.set({ ...
       })`<!-- -->.
-    name: Excel.Interfaces.RangeBorderCollectionUpdateData
+    name: RangeBorderCollectionUpdateData
     fullName: Excel.Interfaces.RangeBorderCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

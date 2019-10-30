@@ -23,6 +23,8 @@ items:
       - 'excel!Excel.Application#calculationMode:member'
       - 'excel!Excel.Application#calculationState:member'
       - 'excel!Excel.Application#context:member'
+      - 'excel!Excel.Application#cultureInfo:member'
+      - 'excel!Excel.Application#decimalSeparator:member'
       - 'excel!Excel.Application#iterativeCalculation:member'
       - 'excel!Excel.Application#load:member(1)'
       - 'excel!Excel.Application#load:member(2)'
@@ -31,7 +33,9 @@ items:
       - 'excel!Excel.Application#set:member(2)'
       - 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
       - 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
+      - 'excel!Excel.Application#thousandsSeparator:member'
       - 'excel!Excel.Application#toJSON:member(1)'
+      - 'excel!Excel.Application#useSystemSeparators:member'
   - uid: 'excel!Excel.Application#calculate:member(1)'
     summary: |-
       Recalculate all currently opened workbooks in Excel.
@@ -153,6 +157,43 @@ items:
       return:
         type:
           - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Application#cultureInfo:member'
+    summary: >-
+      Provides information based on current system culture settings. This includes the culture names, number formatting,
+      and other culturally dependent settings.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: cultureInfo
+    fullName: cultureInfo
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly cultureInfo: Excel.CultureInfo;'
+      return:
+        type:
+          - 'excel!Excel.CultureInfo:class'
+  - uid: 'excel!Excel.Application#decimalSeparator:member'
+    summary: >-
+      Gets the string used as the decimal separator for numeric values. This is based on Excel's local settings.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: decimalSeparator
+    fullName: decimalSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly decimalSeparator: string;'
+      return:
+        type:
+          - string
   - uid: 'excel!Excel.Application#iterativeCalculation:member'
     summary: >-
       Returns the Iterative Calculation settings. In Excel on Windows and Mac, the settings will apply to the Excel
@@ -372,6 +413,25 @@ items:
               console.log(`Ending. Adding ${rowCount * columnCount} cells took ${Date.now() - startTime} milliseconds`);
           });
           ```
+  - uid: 'excel!Excel.Application#thousandsSeparator:member'
+    summary: >-
+      Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on
+      Excel's local settings.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: thousandsSeparator
+    fullName: thousandsSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly thousandsSeparator: string;'
+      return:
+        type:
+          - string
   - uid: 'excel!Excel.Application#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -390,6 +450,25 @@ items:
         type:
           - 'excel!Excel.Interfaces.ApplicationData:interface'
         description: ''
+  - uid: 'excel!Excel.Application#useSystemSeparators:member'
+    summary: >-
+      Specifies whether the system separators of Microsoft Excel are enabled. System separators include the decimal
+      separator and thousands separator.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: useSystemSeparators
+    fullName: useSystemSeparators
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly useSystemSeparators: boolean;'
+      return:
+        type:
+          - boolean
 references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
@@ -417,6 +496,9 @@ references:
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
     fullName: Excel.RequestContext
+  - uid: 'excel!Excel.CultureInfo:class'
+    name: CultureInfo
+    fullName: Excel.CultureInfo
   - uid: 'excel!Excel.IterativeCalculation:class'
     name: IterativeCalculation
     fullName: Excel.IterativeCalculation

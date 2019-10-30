@@ -5,13 +5,16 @@ items:
       Represents an Excel Conditional Data Bar Type.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.DataBarConditionalFormat
+    name: DataBarConditionalFormat
     fullName: Excel.DataBarConditionalFormat
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.DataBarConditionalFormat#axisColor:member'
@@ -346,19 +349,27 @@ references:
         fullName: ' | "Context" | "LeftToRight" | "RightToLeft"'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.DataBarConditionalFormat:class'
-    name: Excel.DataBarConditionalFormat
+    name: DataBarConditionalFormat
+    fullName: Excel.DataBarConditionalFormat
   - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions:interface'
-    name: Excel.Interfaces.DataBarConditionalFormatLoadOptions
+    name: DataBarConditionalFormatLoadOptions
+    fullName: Excel.Interfaces.DataBarConditionalFormatLoadOptions
   - uid: 'excel!Excel.ConditionalDataBarRule:interface'
-    name: Excel.ConditionalDataBarRule
+    name: ConditionalDataBarRule
+    fullName: Excel.ConditionalDataBarRule
   - uid: 'excel!Excel.ConditionalDataBarNegativeFormat:class'
-    name: Excel.ConditionalDataBarNegativeFormat
+    name: ConditionalDataBarNegativeFormat
+    fullName: Excel.ConditionalDataBarNegativeFormat
   - uid: 'excel!Excel.ConditionalDataBarPositiveFormat:class'
-    name: Excel.ConditionalDataBarPositiveFormat
+    name: ConditionalDataBarPositiveFormat
+    fullName: Excel.ConditionalDataBarPositiveFormat
   - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData:interface'
-    name: Interfaces.DataBarConditionalFormatUpdateData
+    name: DataBarConditionalFormatUpdateData
+    fullName: Excel.Interfaces.DataBarConditionalFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData:interface'
-    name: Excel.Interfaces.DataBarConditionalFormatData
+    name: DataBarConditionalFormatData
+    fullName: Excel.Interfaces.DataBarConditionalFormatData

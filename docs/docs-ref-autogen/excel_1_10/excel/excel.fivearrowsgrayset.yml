@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.FiveArrowsGraySet:interface'
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.FiveArrowsGraySet
+    name: FiveArrowsGraySet
     fullName: Excel.FiveArrowsGraySet
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:
@@ -72,3 +73,4 @@ items:
 references:
   - uid: 'excel!Excel.Icon:interface'
     name: Icon
+    fullName: Excel.Icon

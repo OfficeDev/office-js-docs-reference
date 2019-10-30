@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.TableRowUpdateData:interface'
     summary: 'An interface for updating data on the TableRow object, for use in `tableRow.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.TableRowUpdateData
+    name: TableRowUpdateData
     fullName: Excel.Interfaces.TableRowUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

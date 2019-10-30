@@ -5,10 +5,11 @@ items:
       Specifies the close behavior for Workbook.close API.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.CloseBehavior
+    name: CloseBehavior
     fullName: Excel.CloseBehavior
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

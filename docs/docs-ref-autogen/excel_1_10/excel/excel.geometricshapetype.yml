@@ -5,10 +5,11 @@ items:
       Specifies the shape type for a GeometricShape object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.GeometricShapeType
+    name: GeometricShapeType
     fullName: Excel.GeometricShapeType
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

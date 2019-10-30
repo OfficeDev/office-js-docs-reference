@@ -1,13 +1,13 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.GroupOption:enum'
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    summary: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: GroupOption
+    fullName: Excel.GroupOption
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
+    type: enum
     package: excel!
     children:
       - 'excel!Excel.GroupOption.byColumns:member'

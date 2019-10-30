@@ -5,10 +5,11 @@ items:
       Provides information about the worksheet that raised the Deactivated event.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.WorksheetDeactivatedEventArgs
+    name: WorksheetDeactivatedEventArgs
     fullName: Excel.WorksheetDeactivatedEventArgs
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

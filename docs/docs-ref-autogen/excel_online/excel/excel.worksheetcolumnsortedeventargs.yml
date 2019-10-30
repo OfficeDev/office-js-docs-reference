@@ -5,10 +5,11 @@ items:
       Provides information about the column-sorted event and its related worksheet.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.WorksheetColumnSortedEventArgs
+    name: WorksheetColumnSortedEventArgs
     fullName: Excel.WorksheetColumnSortedEventArgs
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

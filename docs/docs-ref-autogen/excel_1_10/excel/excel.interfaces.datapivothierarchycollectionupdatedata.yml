@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the DataPivotHierarchyCollection object, for use in
       `dataPivotHierarchyCollection.set({ ... })`<!-- -->.
-    name: Excel.Interfaces.DataPivotHierarchyCollectionUpdateData
+    name: DataPivotHierarchyCollectionUpdateData
     fullName: Excel.Interfaces.DataPivotHierarchyCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

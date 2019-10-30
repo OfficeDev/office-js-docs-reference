@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartSeriesData:interface'
     summary: An interface describing the data returned by calling `chartSeries.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ChartSeriesData
+    name: ChartSeriesData
     fullName: Excel.Interfaces.ChartSeriesData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -792,9 +793,11 @@ references:
       - name: ' | "Primary" | "Secondary"'
         fullName: ' | "Primary" | "Secondary"'
   - uid: 'excel!Excel.Interfaces.ChartBinOptionsData:interface'
-    name: Excel.Interfaces.ChartBinOptionsData
+    name: ChartBinOptionsData
+    fullName: Excel.Interfaces.ChartBinOptionsData
   - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData:interface'
-    name: Excel.Interfaces.ChartBoxwhiskerOptionsData
+    name: ChartBoxwhiskerOptionsData
+    fullName: Excel.Interfaces.ChartBoxwhiskerOptionsData
   - uid: 'excel!Excel.Interfaces.ChartSeriesData#chartType~0:complex'
     name: >-
       Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" |
@@ -833,9 +836,11 @@ references:
       - name: ' | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"'
         fullName: ' | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"'
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsData:interface'
-    name: Excel.Interfaces.ChartDataLabelsData
+    name: ChartDataLabelsData
+    fullName: Excel.Interfaces.ChartDataLabelsData
   - uid: 'excel!Excel.Interfaces.ChartSeriesFormatData:interface'
-    name: Excel.Interfaces.ChartSeriesFormatData
+    name: ChartSeriesFormatData
+    fullName: Excel.Interfaces.ChartSeriesFormatData
   - uid: 'excel!Excel.Interfaces.ChartSeriesData#gradientMaximumType~0:complex'
     name: Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent"
     fullName: Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent"
@@ -873,7 +878,8 @@ references:
       - name: ' | "TwoPhaseColor" | "ThreePhaseColor"'
         fullName: ' | "TwoPhaseColor" | "ThreePhaseColor"'
   - uid: 'excel!Excel.Interfaces.ChartMapOptionsData:interface'
-    name: Excel.Interfaces.ChartMapOptionsData
+    name: ChartMapOptionsData
+    fullName: Excel.Interfaces.ChartMapOptionsData
   - uid: 'excel!Excel.Interfaces.ChartSeriesData#markerStyle~0:complex'
     name: >-
       Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star" |
@@ -924,4 +930,5 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsData:interface'
-    name: Excel.Interfaces.ChartErrorBarsData
+    name: ChartErrorBarsData
+    fullName: Excel.Interfaces.ChartErrorBarsData

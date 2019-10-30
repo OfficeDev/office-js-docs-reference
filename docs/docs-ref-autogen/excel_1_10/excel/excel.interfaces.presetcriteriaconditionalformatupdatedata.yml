@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the PresetCriteriaConditionalFormat object, for use in
       `presetCriteriaConditionalFormat.set({ ... })`<!-- -->.
-    name: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+    name: PresetCriteriaConditionalFormatUpdateData
     fullName: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -45,6 +46,8 @@ items:
           - 'excel!Excel.ConditionalPresetCriteriaRule:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
-    name: Excel.Interfaces.ConditionalRangeFormatUpdateData
+    name: ConditionalRangeFormatUpdateData
+    fullName: Excel.Interfaces.ConditionalRangeFormatUpdateData
   - uid: 'excel!Excel.ConditionalPresetCriteriaRule:interface'
-    name: Excel.ConditionalPresetCriteriaRule
+    name: ConditionalPresetCriteriaRule
+    fullName: Excel.ConditionalPresetCriteriaRule

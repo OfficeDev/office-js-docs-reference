@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
     summary: An interface describing the data returned by calling `conditionalRangeFormat.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ConditionalRangeFormatData
+    name: ConditionalRangeFormatData
     fullName: Excel.Interfaces.ConditionalRangeFormatData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -84,6 +85,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFillData:interface'
-    name: Excel.Interfaces.ConditionalRangeFillData
+    name: ConditionalRangeFillData
+    fullName: Excel.Interfaces.ConditionalRangeFillData
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFontData:interface'
-    name: Excel.Interfaces.ConditionalRangeFontData
+    name: ConditionalRangeFontData
+    fullName: Excel.Interfaces.ConditionalRangeFontData

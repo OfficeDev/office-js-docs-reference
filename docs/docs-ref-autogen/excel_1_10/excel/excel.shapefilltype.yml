@@ -5,10 +5,11 @@ items:
       Specifies a shape's fill type.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ShapeFillType
+    name: ShapeFillType
     fullName: Excel.ShapeFillType
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

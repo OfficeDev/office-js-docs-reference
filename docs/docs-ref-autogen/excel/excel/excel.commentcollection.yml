@@ -4,13 +4,18 @@ items:
     summary: |-
       Represents a collection of comment objects that are part of the workbook.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: CommentCollection
+    fullName: Excel.CommentCollection
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
+    type: class
+    extends:
+      - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
     children:
       - 'excel!Excel.CommentCollection#add:member(1)'
       - 'excel!Excel.CommentCollection#add:member(2)'

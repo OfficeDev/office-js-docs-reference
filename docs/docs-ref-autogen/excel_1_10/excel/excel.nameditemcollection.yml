@@ -7,13 +7,16 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.NamedItemCollection
+    name: NamedItemCollection
     fullName: Excel.NamedItemCollection
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.NamedItemCollection#add:member(1)'
@@ -311,7 +314,8 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.NamedItem:class'
-    name: Excel.NamedItem
+    name: NamedItem
+    fullName: Excel.NamedItem
   - uid: 'excel!Excel.NamedItemCollection#add~0:complex'
     name: Range | string
     fullName: Excel.Range | string
@@ -323,6 +327,7 @@ references:
         fullName: ' | string'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.NamedItemCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -342,7 +347,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.NamedItemCollection:class'
-    name: Excel.NamedItemCollection
+    name: NamedItemCollection
+    fullName: Excel.NamedItemCollection
   - uid: 'excel!Excel.NamedItemCollection#load~0:complex'
     name: Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -358,4 +364,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.NamedItemCollectionData:interface'
-    name: Excel.Interfaces.NamedItemCollectionData
+    name: NamedItemCollectionData
+    fullName: Excel.Interfaces.NamedItemCollectionData

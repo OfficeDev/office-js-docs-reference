@@ -5,13 +5,16 @@ items:
       Represents the Excel RowColumnPivotHierarchy.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.RowColumnPivotHierarchy
+    name: RowColumnPivotHierarchy
     fullName: Excel.RowColumnPivotHierarchy
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.RowColumnPivotHierarchy#context:member'
@@ -257,15 +260,21 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.PivotFieldCollection:class'
-    name: Excel.PivotFieldCollection
+    name: PivotFieldCollection
+    fullName: Excel.PivotFieldCollection
   - uid: 'excel!Excel.RowColumnPivotHierarchy:class'
-    name: Excel.RowColumnPivotHierarchy
+    name: RowColumnPivotHierarchy
+    fullName: Excel.RowColumnPivotHierarchy
   - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyLoadOptions:interface'
-    name: Excel.Interfaces.RowColumnPivotHierarchyLoadOptions
+    name: RowColumnPivotHierarchyLoadOptions
+    fullName: Excel.Interfaces.RowColumnPivotHierarchyLoadOptions
   - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyUpdateData:interface'
-    name: Interfaces.RowColumnPivotHierarchyUpdateData
+    name: RowColumnPivotHierarchyUpdateData
+    fullName: Excel.Interfaces.RowColumnPivotHierarchyUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface'
-    name: Excel.Interfaces.RowColumnPivotHierarchyData
+    name: RowColumnPivotHierarchyData
+    fullName: Excel.Interfaces.RowColumnPivotHierarchyData

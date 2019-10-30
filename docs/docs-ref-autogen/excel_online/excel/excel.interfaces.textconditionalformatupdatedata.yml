@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the TextConditionalFormat object, for use in `textConditionalFormat.set({ ...
       })`<!-- -->.
-    name: Excel.Interfaces.TextConditionalFormatUpdateData
+    name: TextConditionalFormatUpdateData
     fullName: Excel.Interfaces.TextConditionalFormatUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -45,6 +46,8 @@ items:
           - 'excel!Excel.ConditionalTextComparisonRule:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
-    name: Excel.Interfaces.ConditionalRangeFormatUpdateData
+    name: ConditionalRangeFormatUpdateData
+    fullName: Excel.Interfaces.ConditionalRangeFormatUpdateData
   - uid: 'excel!Excel.ConditionalTextComparisonRule:interface'
-    name: Excel.ConditionalTextComparisonRule
+    name: ConditionalTextComparisonRule
+    fullName: Excel.ConditionalTextComparisonRule

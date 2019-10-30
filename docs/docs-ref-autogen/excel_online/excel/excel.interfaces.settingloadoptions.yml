@@ -9,10 +9,11 @@ items:
 
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.SettingLoadOptions
+    name: SettingLoadOptions
     fullName: Excel.Interfaces.SettingLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

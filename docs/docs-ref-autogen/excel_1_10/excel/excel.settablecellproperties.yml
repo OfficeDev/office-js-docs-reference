@@ -5,10 +5,11 @@ items:
       Represents the input parameter of setCellProperties.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.SettableCellProperties
+    name: SettableCellProperties
     fullName: Excel.SettableCellProperties
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:
@@ -140,6 +141,8 @@ items:
           ```
 references:
   - uid: 'excel!Excel.CellPropertiesFormat:interface'
-    name: Excel.CellPropertiesFormat
+    name: CellPropertiesFormat
+    fullName: Excel.CellPropertiesFormat
   - uid: 'excel!Excel.RangeHyperlink:interface'
-    name: Excel.RangeHyperlink
+    name: RangeHyperlink
+    fullName: Excel.RangeHyperlink

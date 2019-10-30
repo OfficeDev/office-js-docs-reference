@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData:interface'
     summary: 'An interface for updating data on the ChartPlotArea object, for use in `chartPlotArea.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.ChartPlotAreaUpdateData
+    name: ChartPlotAreaUpdateData
     fullName: Excel.Interfaces.ChartPlotAreaUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -171,7 +172,8 @@ items:
           - number
 references:
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartPlotAreaFormatUpdateData
+    name: ChartPlotAreaFormatUpdateData
+    fullName: Excel.Interfaces.ChartPlotAreaFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData#position~0:complex'
     name: Excel.ChartPlotAreaPosition | "Automatic" | "Custom"
     fullName: Excel.ChartPlotAreaPosition | "Automatic" | "Custom"

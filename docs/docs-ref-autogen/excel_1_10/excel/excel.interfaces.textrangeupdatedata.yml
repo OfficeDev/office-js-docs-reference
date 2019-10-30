@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.TextRangeUpdateData:interface'
     summary: 'An interface for updating data on the TextRange object, for use in `textRange.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.TextRangeUpdateData
+    name: TextRangeUpdateData
     fullName: Excel.Interfaces.TextRangeUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -43,4 +44,5 @@ items:
           - string
 references:
   - uid: 'excel!Excel.Interfaces.ShapeFontUpdateData:interface'
-    name: Excel.Interfaces.ShapeFontUpdateData
+    name: ShapeFontUpdateData
+    fullName: Excel.Interfaces.ShapeFontUpdateData

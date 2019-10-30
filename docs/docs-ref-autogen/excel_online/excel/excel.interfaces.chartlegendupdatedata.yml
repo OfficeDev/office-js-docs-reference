@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData:interface'
     summary: 'An interface for updating data on the ChartLegend object, for use in `chartLegend.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.ChartLegendUpdateData
+    name: ChartLegendUpdateData
     fullName: Excel.Interfaces.ChartLegendUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -155,7 +156,8 @@ items:
           - number
 references:
   - uid: 'excel!Excel.Interfaces.ChartLegendFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartLegendFormatUpdateData
+    name: ChartLegendFormatUpdateData
+    fullName: Excel.Interfaces.ChartLegendFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#position~0:complex'
     name: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
     fullName: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"

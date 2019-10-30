@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartDataLabelData:interface'
     summary: An interface describing the data returned by calling `chartDataLabel.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ChartDataLabelData
+    name: ChartDataLabelData
     fullName: Excel.Interfaces.ChartDataLabelData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -365,7 +366,8 @@ items:
           - number
 references:
   - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatData:interface'
-    name: Excel.Interfaces.ChartDataLabelFormatData
+    name: ChartDataLabelFormatData
+    fullName: Excel.Interfaces.ChartDataLabelFormatData
   - uid: 'excel!Excel.Interfaces.ChartDataLabelData#horizontalAlignment~0:complex'
     name: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
     fullName: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"

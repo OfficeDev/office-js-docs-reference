@@ -5,10 +5,11 @@ items:
       Represents the returned format properties of getCellProperties or format input parameter of setCellProperties.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.CellPropertiesFormat
+    name: CellPropertiesFormat
     fullName: Excel.CellPropertiesFormat
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:
@@ -240,11 +241,14 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.CellBorderCollection:interface'
-    name: Excel.CellBorderCollection
+    name: CellBorderCollection
+    fullName: Excel.CellBorderCollection
   - uid: 'excel!Excel.CellPropertiesFill:interface'
-    name: Excel.CellPropertiesFill
+    name: CellPropertiesFill
+    fullName: Excel.CellPropertiesFill
   - uid: 'excel!Excel.CellPropertiesFont:interface'
-    name: Excel.CellPropertiesFont
+    name: CellPropertiesFont
+    fullName: Excel.CellPropertiesFont
   - uid: 'excel!Excel.CellPropertiesFormat#horizontalAlignment~0:complex'
     name: >-
       Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection"
@@ -259,7 +263,8 @@ references:
       - name: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
         fullName: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
   - uid: 'excel!Excel.CellPropertiesProtection:interface'
-    name: Excel.CellPropertiesProtection
+    name: CellPropertiesProtection
+    fullName: Excel.CellPropertiesProtection
   - uid: 'excel!Excel.CellPropertiesFormat#readingOrder~0:complex'
     name: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
     fullName: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"

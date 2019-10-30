@@ -5,13 +5,16 @@ items:
       Represents an IconSet criteria for conditional formatting.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.IconSetConditionalFormat
+    name: IconSetConditionalFormat
     fullName: Excel.IconSetConditionalFormat
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.IconSetConditionalFormat#context:member'
@@ -338,6 +341,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.IconSetConditionalFormat#criteria~0:complex'
     name: 'Excel.ConditionalIconCriterion[]'
     fullName: 'Excel.ConditionalIconCriterion[]'
@@ -348,11 +352,14 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.IconSetConditionalFormat:class'
-    name: Excel.IconSetConditionalFormat
+    name: IconSetConditionalFormat
+    fullName: Excel.IconSetConditionalFormat
   - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface'
-    name: Excel.Interfaces.IconSetConditionalFormatLoadOptions
+    name: IconSetConditionalFormatLoadOptions
+    fullName: Excel.Interfaces.IconSetConditionalFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData:interface'
-    name: Interfaces.IconSetConditionalFormatUpdateData
+    name: IconSetConditionalFormatUpdateData
+    fullName: Excel.Interfaces.IconSetConditionalFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.IconSetConditionalFormat#style~0:complex'
@@ -373,4 +380,5 @@ references:
       - name: ' | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" | "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" | "LinkedEntityMapIcon"'
         fullName: ' | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" | "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" | "LinkedEntityMapIcon"'
   - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatData:interface'
-    name: Excel.Interfaces.IconSetConditionalFormatData
+    name: IconSetConditionalFormatData
+    fullName: Excel.Interfaces.IconSetConditionalFormatData

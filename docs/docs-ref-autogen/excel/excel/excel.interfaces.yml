@@ -193,6 +193,8 @@ items:
       - 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
       - 'excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface'
       - 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
+      - 'excel!Excel.Interfaces.CultureInfoData:interface'
+      - 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
       - 'excel!Excel.Interfaces.CustomConditionalFormatData:interface'
       - 'excel!Excel.Interfaces.CustomConditionalFormatLoadOptions:interface'
       - 'excel!Excel.Interfaces.CustomConditionalFormatUpdateData:interface'
@@ -268,6 +270,8 @@ items:
       - 'excel!Excel.Interfaces.NamedItemData:interface'
       - 'excel!Excel.Interfaces.NamedItemLoadOptions:interface'
       - 'excel!Excel.Interfaces.NamedItemUpdateData:interface'
+      - 'excel!Excel.Interfaces.NumberFormatInfoData:interface'
+      - 'excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface'
       - 'excel!Excel.Interfaces.PageBreakCollectionData:interface'
       - 'excel!Excel.Interfaces.PageBreakCollectionLoadOptions:interface'
       - 'excel!Excel.Interfaces.PageBreakCollectionUpdateData:interface'
@@ -1017,6 +1021,12 @@ references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
     name: ConditionalRangeFormatUpdateData
     fullName: Excel.Interfaces.ConditionalRangeFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.CultureInfoData:interface'
+    name: CultureInfoData
+    fullName: Excel.Interfaces.CultureInfoData
+  - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
+    name: CultureInfoLoadOptions
+    fullName: Excel.Interfaces.CultureInfoLoadOptions
   - uid: 'excel!Excel.Interfaces.CustomConditionalFormatData:interface'
     name: CustomConditionalFormatData
     fullName: Excel.Interfaces.CustomConditionalFormatData
@@ -1242,6 +1252,12 @@ references:
   - uid: 'excel!Excel.Interfaces.NamedItemUpdateData:interface'
     name: NamedItemUpdateData
     fullName: Excel.Interfaces.NamedItemUpdateData
+  - uid: 'excel!Excel.Interfaces.NumberFormatInfoData:interface'
+    name: NumberFormatInfoData
+    fullName: Excel.Interfaces.NumberFormatInfoData
+  - uid: 'excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface'
+    name: NumberFormatInfoLoadOptions
+    fullName: Excel.Interfaces.NumberFormatInfoLoadOptions
   - uid: 'excel!Excel.Interfaces.PageBreakCollectionData:interface'
     name: PageBreakCollectionData
     fullName: Excel.Interfaces.PageBreakCollectionData

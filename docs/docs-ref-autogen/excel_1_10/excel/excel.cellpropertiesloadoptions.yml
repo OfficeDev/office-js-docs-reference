@@ -5,10 +5,11 @@ items:
       Represents which cell properties to load, when used as part of a "range.getCellProperties" method.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.CellPropertiesLoadOptions
+    name: CellPropertiesLoadOptions
     fullName: Excel.CellPropertiesLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:
@@ -140,4 +141,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.CellPropertiesFormatLoadOptions:interface'
-    name: Excel.CellPropertiesFormatLoadOptions
+    name: CellPropertiesFormatLoadOptions
+    fullName: Excel.CellPropertiesFormatLoadOptions

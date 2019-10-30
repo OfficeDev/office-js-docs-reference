@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.ChartUnderlineStyle:enum'
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.ChartUnderlineStyle
+    name: ChartUnderlineStyle
     fullName: Excel.ChartUnderlineStyle
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

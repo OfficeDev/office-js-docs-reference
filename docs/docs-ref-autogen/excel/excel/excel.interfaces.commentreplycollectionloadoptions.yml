@@ -4,14 +4,14 @@ items:
     summary: |-
       Represents a collection of comment reply objects that are part of the comment.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: CommentReplyCollectionLoadOptions
-    package: excel!
+    fullName: Excel.Interfaces.CommentReplyCollectionLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
+    type: interface
+    package: excel!
     children:
       - 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#$all:member'
       - 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#authorEmail:member'
