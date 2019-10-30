@@ -18,5 +18,5 @@
       "dom"
     ]
   },
-  "include": [ "Outlook.d.ts" ]
+  "include": [ "outlook.d.ts" ]
 }

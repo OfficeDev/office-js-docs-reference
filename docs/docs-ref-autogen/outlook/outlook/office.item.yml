@@ -6,6 +6,17 @@ items:
       determine the type of the item by using the `itemType` property.
 
 
+      If you want to see IntelliSense for only a specific type, cast this item to one of the following:
+
+
+      [ItemCompose](xref:outlook!Office.ItemCompose:interface)<!-- -->,
+      [ItemRead](xref:outlook!Office.ItemRead:interface)<!-- -->,
+      [MessageCompose](xref:outlook!Office.MessageCompose:interface)<!-- -->,
+      [MessageRead](xref:outlook!Office.MessageRead:interface)<!-- -->,
+      [AppointmentCompose](xref:outlook!Office.AppointmentCompose:interface)<!-- -->,
+      [AppointmentRead](xref:outlook!Office.AppointmentRead:interface)
+
+
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
@@ -209,7 +220,7 @@ items:
     summary: |-
       Gets an object that provides methods for managing the item's categories.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -237,7 +248,6 @@ items:
       });
 
       ```
-    isPreview: true
     name: categories
     fullName: categories
     langs:
@@ -260,7 +270,7 @@ items:
       the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
 
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -320,7 +330,6 @@ items:
       }
 
       ```
-    isPreview: true
     name: 'getAttachmentContentAsync(attachmentId, options, callback)'
     fullName: 'getAttachmentContentAsync(attachmentId, options, callback)'
     langs:
@@ -364,7 +373,7 @@ items:
       the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
 
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -378,7 +387,6 @@ items:
 
 
       - InvalidAttachmentId: The attachment identifier does not exist.
-    isPreview: true
     name: 'getAttachmentContentAsync(attachmentId, callback)'
     fullName: 'getAttachmentContentAsync(attachmentId, callback)'
     langs:
@@ -527,7 +535,7 @@ items:
     summary: |-
       Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -535,7 +543,6 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
-    isPreview: true
     name: 'getSharedPropertiesAsync(options, callback)'
     fullName: 'getSharedPropertiesAsync(options, callback)'
     langs:
@@ -566,7 +573,7 @@ items:
     summary: |-
       Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -590,7 +597,6 @@ items:
       }
 
       ```
-    isPreview: true
     name: getSharedPropertiesAsync(callback)
     fullName: getSharedPropertiesAsync(callback)
     langs:

@@ -17,8 +17,9 @@ items:
       - 'outlook!Office.AttachmentsChangedEventArgs#type:member'
   - uid: 'outlook!Office.AttachmentsChangedEventArgs#attachmentDetails:member'
     summary: >-
-      Represents the set of attachments that were added or removed. For each such attachment, gets a subset of 
-      properties: `id`<!-- -->, `name`<!-- -->, `size`<!-- -->, and `attachmentType`<!-- -->.
+      Represents the set of attachments that were added or removed. For each such attachment, gets a subset of
+      [AttachmentDetails](xref:outlook!Office.AttachmentDetails:interface) properties: `id`<!-- -->, `name`<!-- -->,
+      `size`<!-- -->, and `attachmentType`<!-- -->.
 
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -33,8 +34,10 @@ items:
         type:
           - 'object[]'
   - uid: 'outlook!Office.AttachmentsChangedEventArgs#attachmentStatus:member'
-    summary: |-
-      Gets whether the attachments were added or removed. See  for details.
+    summary: >-
+      Gets whether the attachments were added or removed. See
+      [MailboxEnums.AttachmentStatus](xref:outlook!Office.MailboxEnums.AttachmentStatus:enum) for details.
+
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     name: attachmentStatus

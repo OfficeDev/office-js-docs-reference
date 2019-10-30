@@ -6,6 +6,17 @@ items:
       determine the type of the item by using the `itemType` property.
 
 
+      If you want to see IntelliSense for only a specific type, cast this item to one of the following:
+
+
+      [ItemCompose](xref:outlook!Office.ItemCompose:interface)<!-- -->,
+      [ItemRead](xref:outlook!Office.ItemRead:interface)<!-- -->,
+      [MessageCompose](xref:outlook!Office.MessageCompose:interface)<!-- -->,
+      [MessageRead](xref:outlook!Office.MessageRead:interface)<!-- -->,
+      [AppointmentCompose](xref:outlook!Office.AppointmentCompose:interface)<!-- -->,
+      [AppointmentRead](xref:outlook!Office.AppointmentRead:interface)
+
+
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
@@ -31,13 +42,10 @@ items:
       - 'outlook!Office.Item#removeHandlerAsync:member(2)'
       - 'outlook!Office.Item#seriesId:member'
   - uid: 'outlook!Office.Item#addHandlerAsync:member(1)'
-    summary: >-
+    summary: |-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
-
-      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
-      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->.
-
+      To see which event types are supported, see `Office.EventType` for details.
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -84,13 +92,10 @@ items:
           type:
             - 'outlook!Office.Item#addHandlerAsync~1:complex'
   - uid: 'outlook!Office.Item#addHandlerAsync:member(2)'
-    summary: >-
+    summary: |-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
-
-      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
-      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->.
-
+      To see which event types are supported, see `Office.EventType` for details.
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
