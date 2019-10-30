@@ -4636,7 +4636,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AttachmentsChangedEventArgs#attachmentDetails:member",
-                  "docComment": "/**\n * Represents the set of attachments that were added or removed. For each such attachment, gets a subset of {@link AttachmentDetails} properties: `id`, `name`, `size`, and `attachmentType`.\n *\n * [Api set: Mailbox 1.8]\n */\n",
+                  "docComment": "/**\n * Represents the set of attachments that were added or removed. For each such attachment, gets a subset of {@link Office.AttachmentDetails | AttachmentDetails} properties: `id`, `name`, `size`, and `attachmentType`.\n *\n * [Api set: Mailbox 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4661,7 +4661,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AttachmentsChangedEventArgs#attachmentStatus:member",
-                  "docComment": "/**\n * Gets whether the attachments were added or removed. See {@link MailboxEnums.AttachmentStatus} for details.\n *\n * [Api set: Mailbox 1.8]\n */\n",
+                  "docComment": "/**\n * Gets whether the attachments were added or removed. See {@link Office.MailboxEnums.AttachmentStatus | MailboxEnums.AttachmentStatus} for details.\n *\n * [Api set: Mailbox 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

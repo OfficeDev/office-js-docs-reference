@@ -1638,6 +1638,14 @@ declare namespace Office {
          */
         AppointmentTimeChanged,
         /**
+         * Triggers when an attachment is added to or removed from an item. Supported with task pane only.
+         * 
+         * The event handler receives an argument of type `Office.AttachmentsChangedEventArgs`.
+         * 
+         * [Api set: Mailbox 1.8]
+         */
+        AttachmentsChanged,
+        /**
          * Occurs when data within the binding is changed. 
          * To add an event handler for the BindingDataChanged event of a binding, use the addHandlerAsync method of the Binding object. 
          * The event handler receives an argument of type {@link Office.BindingDataChangedEventArgs}.
@@ -1672,6 +1680,14 @@ declare namespace Office {
          * **Hosts**: Excel, Word
          */
         DocumentSelectionChanged,
+        /**
+         * Triggers when the appointment location is changed in Outlook. Supported with task pane only.
+         * 
+         * The event handler receives an argument of type `Office.EnhancedLocationsChangedEventArgs`.
+         * 
+         * [Api set: Mailbox 1.8]
+         */
+        EnhancedLocationsChanged,
         /**
          * Triggers when a different Outlook item is selected for viewing while the task pane is pinned. Supported with task pane only.
          * 

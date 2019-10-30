@@ -1716,9 +1716,7 @@ export declare namespace Office {
          * 
          * The event handler receives an argument of type `Office.AttachmentsChangedEventArgs`.
          * 
-         * [Api set: Mailbox Preview]
-         * 
-         * @beta
+         * [Api set: Mailbox 1.8]
          */
         AttachmentsChanged,
         /**
@@ -1761,9 +1759,7 @@ export declare namespace Office {
          * 
          * The event handler receives an argument of type `Office.EnhancedLocationsChangedEventArgs`.
          * 
-         * [Api set: Mailbox Preview]
-         * 
-         * @beta
+         * [Api set: Mailbox 1.8]
          */
         EnhancedLocationsChanged,
         /**
