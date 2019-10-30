@@ -4,8 +4,7 @@ items:
     summary: |-
       Provides information about the attachments that raised the `Office.EventType.AttachmentsChanged` event.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     name: Office.AttachmentsChangedEventArgs
     fullName: Office.AttachmentsChangedEventArgs
     langs:
@@ -22,8 +21,7 @@ items:
       properties: `id`<!-- -->, `name`<!-- -->, `size`<!-- -->, and `attachmentType`<!-- -->.
 
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     name: attachmentDetails
     fullName: attachmentDetails
     langs:
@@ -38,8 +36,7 @@ items:
     summary: |-
       Gets whether the attachments were added or removed. See  for details.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     name: attachmentStatus
     fullName: attachmentStatus
     langs:
@@ -54,8 +51,7 @@ items:
     summary: |-
       Gets the type of the event. See `Office.EventType` for details.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     name: type
     fullName: type
     langs:

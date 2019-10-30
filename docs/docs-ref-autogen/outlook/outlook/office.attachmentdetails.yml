@@ -139,8 +139,7 @@ items:
     summary: |-
       Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`<!-- -->.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     name: url
     fullName: url
     langs:

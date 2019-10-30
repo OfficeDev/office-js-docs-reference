@@ -267,7 +267,7 @@ items:
       `data:image/svg+xml;base64,<rest of base64 string>`<!-- -->, remove `data:image/svg+xml;base64,`<!-- -->.
 
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -312,7 +312,6 @@ items:
                   });
           });
       ```
-    isPreview: true
     name: 'addFileAttachmentFromBase64Async(base64File, attachmentName, options, callback)'
     fullName: 'addFileAttachmentFromBase64Async(base64File, attachmentName, options, callback)'
     langs:
@@ -371,7 +370,7 @@ items:
       `data:image/svg+xml;base64,<rest of base64 string>`<!-- -->, remove `data:image/svg+xml;base64,`<!-- -->.
 
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -392,7 +391,6 @@ items:
 
 
       - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
-    isPreview: true
     name: 'addFileAttachmentFromBase64Async(base64File, attachmentName, callback)'
     fullName: 'addFileAttachmentFromBase64Async(base64File, attachmentName, callback)'
     langs:
@@ -426,14 +424,10 @@ items:
           type:
             - 'outlook!Office.MessageCompose#addFileAttachmentFromBase64Async~2:complex'
   - uid: 'outlook!Office.MessageCompose#addHandlerAsync:member(1)'
-    summary: >-
+    summary: |-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
-
-      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
-      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->. In Preview,
-      `Office.EventType.AttachmentsChanged` and `Office.EventType.EnhancedLocationsChanged` are also supported.
-
+      To see which event types are supported, see `Office.EventType` for details.
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -480,14 +474,10 @@ items:
           type:
             - 'outlook!Office.MessageCompose#addHandlerAsync~1:complex'
   - uid: 'outlook!Office.MessageCompose#addHandlerAsync:member(2)'
-    summary: >-
+    summary: |-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
-
-      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
-      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->. In Preview,
-      `Office.EventType.AttachmentsChanged` and `Office.EventType.EnhancedLocationsChanged` are also supported.
-
+      To see which event types are supported, see `Office.EventType` for details.
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -800,7 +790,7 @@ items:
     summary: |-
       Gets an object that provides methods for managing the item's categories.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -824,7 +814,6 @@ items:
       });
 
       ```
-    isPreview: true
     name: categories
     fullName: categories
     langs:
@@ -841,9 +830,9 @@ items:
       the mode of the current item.
 
 
-      The cc property returns an [Office.Recipients](xref:outlook!Office.Recipients:interface) object that provides
-      methods to get or update the recipients on the Cc line of the message. By default, the collection is limited to a
-      maximum of 100 members. However, on Windows and Mac, the following limits apply.
+      The cc property returns a [Recipients](xref:outlook!Office.Recipients:interface) object that provides methods to
+      get or update the recipients on the Cc line of the message. By default, the collection is limited to a maximum of
+      100 members. However, on Windows and Mac, the following limits apply.
 
 
       - Get 500 members maximum.
@@ -1017,7 +1006,7 @@ items:
     summary: |-
       Gets the item's attachments as an array.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -1025,7 +1014,6 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
       Compose
-    isPreview: true
     name: 'getAttachmentsAsync(options, callback)'
     fullName: 'getAttachmentsAsync(options, callback)'
     langs:
@@ -1057,7 +1045,7 @@ items:
     summary: |-
       Gets the item's attachments as an array.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -1095,7 +1083,6 @@ items:
       }
 
       ```
-    isPreview: true
     name: getAttachmentsAsync(callback)
     fullName: getAttachmentsAsync(callback)
     langs:
@@ -1222,7 +1209,7 @@ items:
       synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.
 
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -1236,7 +1223,6 @@ items:
 
 
       - `ItemNotSaved`<!-- -->: The id can't be retrieved until the item is saved.
-    isPreview: true
     name: 'getItemIdAsync(options, callback)'
     fullName: 'getItemIdAsync(options, callback)'
     langs:
@@ -1276,7 +1262,7 @@ items:
       synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.
 
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -1290,7 +1276,6 @@ items:
 
 
       - `ItemNotSaved`<!-- -->: The id can't be retrieved until the item is saved.
-    isPreview: true
     name: getItemIdAsync(callback)
     fullName: getItemIdAsync(callback)
     langs:
@@ -1445,7 +1430,7 @@ items:
       headers on the message.
 
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -1469,7 +1454,6 @@ items:
       }
 
       ```
-    isPreview: true
     name: internetHeaders
     fullName: internetHeaders
     langs:

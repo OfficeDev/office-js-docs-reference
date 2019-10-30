@@ -8,12 +8,22 @@ items:
         items:
           - name: MailboxEnums
             items:
+              - name: AttachmentContentFormat
+                uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat:enum'
+              - name: AttachmentStatus
+                uid: 'outlook!Office.MailboxEnums.AttachmentStatus:enum'
               - name: AttachmentType
                 uid: 'outlook!Office.MailboxEnums.AttachmentType:enum'
+              - name: CategoryColor
+                uid: 'outlook!Office.MailboxEnums.CategoryColor:enum'
+              - name: DelegatePermissions
+                uid: 'outlook!Office.MailboxEnums.DelegatePermissions:enum'
               - name: EntityType
                 uid: 'outlook!Office.MailboxEnums.EntityType:enum'
               - name: ItemType
                 uid: 'outlook!Office.MailboxEnums.ItemType:enum'
+              - name: LocationType
+                uid: 'outlook!Office.MailboxEnums.LocationType:enum'
               - name: OWAView
                 uid: 'outlook!Office.MailboxEnums.OWAView:enum'
               - name: RecipientType
@@ -24,10 +34,18 @@ items:
             uid: 'outlook!Office.AppointmentCompose:interface'
           - name: AppointmentRead
             uid: 'outlook!Office.AppointmentRead:interface'
+          - name: AttachmentContent
+            uid: 'outlook!Office.AttachmentContent:interface'
           - name: AttachmentDetails
             uid: 'outlook!Office.AttachmentDetails:interface'
+          - name: AttachmentsChangedEventArgs
+            uid: 'outlook!Office.AttachmentsChangedEventArgs:interface'
           - name: Body
             uid: 'outlook!Office.Body:interface'
+          - name: Categories
+            uid: 'outlook!Office.Categories:interface'
+          - name: CategoryDetails
+            uid: 'outlook!Office.CategoryDetails:interface'
           - name: CoercionTypeOptions
             uid: 'outlook!Office.CoercionTypeOptions:interface'
           - name: Contact
@@ -40,16 +58,28 @@ items:
             uid: 'outlook!Office.EmailAddressDetails:interface'
           - name: EmailUser
             uid: 'outlook!Office.EmailUser:interface'
+          - name: EnhancedLocation
+            uid: 'outlook!Office.EnhancedLocation:interface'
+          - name: EnhancedLocationsChangedEventArgs
+            uid: 'outlook!Office.EnhancedLocationsChangedEventArgs:interface'
           - name: Entities
             uid: 'outlook!Office.Entities:interface'
+          - name: InternetHeaders
+            uid: 'outlook!Office.InternetHeaders:interface'
           - name: Item
             uid: 'outlook!Office.Item:interface'
           - name: LocalClientTime
             uid: 'outlook!Office.LocalClientTime:interface'
           - name: Location
             uid: 'outlook!Office.Location:interface'
+          - name: LocationDetails
+            uid: 'outlook!Office.LocationDetails:interface'
+          - name: LocationIdentifier
+            uid: 'outlook!Office.LocationIdentifier:interface'
           - name: Mailbox
             uid: 'outlook!Office.Mailbox:interface'
+          - name: MasterCategories
+            uid: 'outlook!Office.MasterCategories:interface'
           - name: MeetingSuggestion
             uid: 'outlook!Office.MeetingSuggestion:interface'
           - name: MessageCompose
@@ -66,6 +96,8 @@ items:
             uid: 'outlook!Office.ReplyFormData:interface'
           - name: RoamingSettings
             uid: 'outlook!Office.RoamingSettings:interface'
+          - name: SharedProperties
+            uid: 'outlook!Office.SharedProperties:interface'
           - name: SourceProperty
             uid: 'outlook!Office.SourceProperty:enum'
           - name: Subject

@@ -32,6 +32,7 @@ items:
       - 'outlook!Office.MessageRead#displayReplyForm:member(1)'
       - 'outlook!Office.MessageRead#from:member'
       - 'outlook!Office.MessageRead#getAllInternetHeadersAsync:member(1)'
+      - 'outlook!Office.MessageRead#getAllInternetHeadersAsync:member(2)'
       - 'outlook!Office.MessageRead#getEntities:member(1)'
       - 'outlook!Office.MessageRead#getEntitiesByType:member(1)'
       - 'outlook!Office.MessageRead#getFilteredEntitiesByName:member(1)'
@@ -263,7 +264,7 @@ items:
     summary: |-
       Gets an object that provides methods for managing the item's categories.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -286,7 +287,6 @@ items:
       });
 
       ```
-    isPreview: true
     name: categories
     fullName: categories
     langs:
@@ -582,8 +582,8 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR an [Office.ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body
-            or attachment data and a callback function.
+            to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or
+            attachment data and a callback function.
           type:
             - 'outlook!Office.MessageRead#displayReplyAllForm~0:complex'
         - id: callback
@@ -725,8 +725,8 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR an [Office.ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body
-            or attachment data and a callback function.
+            to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or
+            attachment data and a callback function.
           type:
             - 'outlook!Office.MessageRead#displayReplyForm~0:complex'
         - id: callback
@@ -783,7 +783,7 @@ items:
     summary: |-
       Gets all the internet headers for the message as a string.
 
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -815,7 +815,6 @@ items:
       );
 
       ```
-    isPreview: true
     name: 'getAllInternetHeadersAsync(options, callback)'
     fullName: 'getAllInternetHeadersAsync(options, callback)'
     langs:
@@ -845,6 +844,38 @@ items:
             the call fails, the asyncResult.error property will contain an error code with the reason for the failure.
           type:
             - 'outlook!Office.MessageRead#getAllInternetHeadersAsync~0:complex'
+  - uid: 'outlook!Office.MessageRead#getAllInternetHeadersAsync:member(2)'
+    summary: |-
+      Gets all the internet headers for the message as a string.
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message Read
+    name: getAllInternetHeadersAsync(callback)
+    fullName: getAllInternetHeadersAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAllInternetHeadersAsync(callback?: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object. On success, the internet headers data is
+            provided in the asyncResult.value property as a string. Refer to [RFC
+            2183](https://tools.ietf.org/html/rfc2183) for the formatting information of the returned string value. If
+            the call fails, the asyncResult.error property will contain an error code with the reason for the failure.
+          type:
+            - 'outlook!Office.MessageRead#getAllInternetHeadersAsync~1:complex'
   - uid: 'outlook!Office.MessageRead#getEntities:member(1)'
     summary: |-
       Gets the entities found in the selected item's body.
@@ -2140,6 +2171,17 @@ references:
   - uid: 'outlook!Office.EmailAddressDetails:interface'
     name: EmailAddressDetails
   - uid: 'outlook!Office.MessageRead#getAllInternetHeadersAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'outlook!Office.MessageRead#getAllInternetHeadersAsync~1:complex'
     name: '(asyncResult: Office.AsyncResult<string>) => void'
     fullName: '(asyncResult: Office.AsyncResult<string>) => void'
     spec.typeScript:

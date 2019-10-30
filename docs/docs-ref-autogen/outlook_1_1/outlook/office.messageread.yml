@@ -21,6 +21,7 @@ items:
     children:
       - 'outlook!Office.MessageRead#attachments:member'
       - 'outlook!Office.MessageRead#body:member'
+      - 'outlook!Office.MessageRead#categories:member'
       - 'outlook!Office.MessageRead#cc:member'
       - 'outlook!Office.MessageRead#conversationId:member'
       - 'outlook!Office.MessageRead#dateTimeCreated:member'
@@ -28,6 +29,8 @@ items:
       - 'outlook!Office.MessageRead#displayReplyAllForm:member(1)'
       - 'outlook!Office.MessageRead#displayReplyForm:member(1)'
       - 'outlook!Office.MessageRead#from:member'
+      - 'outlook!Office.MessageRead#getAllInternetHeadersAsync:member(1)'
+      - 'outlook!Office.MessageRead#getAllInternetHeadersAsync:member(2)'
       - 'outlook!Office.MessageRead#getEntities:member(1)'
       - 'outlook!Office.MessageRead#getEntitiesByType:member(1)'
       - 'outlook!Office.MessageRead#getFilteredEntitiesByName:member(1)'
@@ -146,6 +149,43 @@ items:
       return:
         type:
           - 'outlook!Office.Body:interface'
+  - uid: 'outlook!Office.MessageRead#categories:member'
+    summary: |-
+      Gets an object that provides methods for managing the item's categories.
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.categories.getAsync(function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.log("Action failed with error: " + asyncResult.error.message);
+          } else {
+              console.log("Categories: " + JSON.stringify(asyncResult.value));
+          }
+      });
+
+      ```
+    name: categories
+    fullName: categories
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'categories: Categories;'
+      return:
+        type:
+          - 'outlook!Office.Categories:interface'
   - uid: 'outlook!Office.MessageRead#cc:member'
     summary: >-
       Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on
@@ -431,8 +471,8 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR an [Office.ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body
-            or attachment data and a callback function.
+            to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or
+            attachment data and a callback function.
           type:
             - 'outlook!Office.MessageRead#displayReplyAllForm~0:complex'
         - id: callback
@@ -574,8 +614,8 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR an [Office.ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body
-            or attachment data and a callback function.
+            to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or
+            attachment data and a callback function.
           type:
             - 'outlook!Office.MessageRead#displayReplyForm~0:complex'
         - id: callback
@@ -628,6 +668,103 @@ items:
       return:
         type:
           - 'outlook!Office.EmailAddressDetails:interface'
+  - uid: 'outlook!Office.MessageRead#getAllInternetHeadersAsync:member(1)'
+    summary: |-
+      Gets all the internet headers for the message as a string.
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Get the internet headers related to the mail.
+
+      Office.context.mailbox.item.getAllInternetHeadersAsync(
+          function(asyncResult) {
+              if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                  console.log(asyncResult.value);
+              } else {
+                  if (asyncResult.error.code == 9020) {
+                      // GenericResponseError returned when there is no context.
+                      // Treat as no context.
+                  } else {
+                      // Handle the error.
+                  }
+              }
+          }
+      );
+
+      ```
+    name: 'getAllInternetHeadersAsync(options, callback)'
+    fullName: 'getAllInternetHeadersAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getAllInternetHeadersAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - 'outlook!Office.AsyncContextOptions:interface'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object. On success, the internet headers data is
+            provided in the asyncResult.value property as a string. Refer to [RFC
+            2183](https://tools.ietf.org/html/rfc2183) for the formatting information of the returned string value. If
+            the call fails, the asyncResult.error property will contain an error code with the reason for the failure.
+          type:
+            - 'outlook!Office.MessageRead#getAllInternetHeadersAsync~0:complex'
+  - uid: 'outlook!Office.MessageRead#getAllInternetHeadersAsync:member(2)'
+    summary: |-
+      Gets all the internet headers for the message as a string.
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message Read
+    name: getAllInternetHeadersAsync(callback)
+    fullName: getAllInternetHeadersAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAllInternetHeadersAsync(callback?: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object. On success, the internet headers data is
+            provided in the asyncResult.value property as a string. Refer to [RFC
+            2183](https://tools.ietf.org/html/rfc2183) for the formatting information of the returned string value. If
+            the call fails, the asyncResult.error property will contain an error code with the reason for the failure.
+          type:
+            - 'outlook!Office.MessageRead#getAllInternetHeadersAsync~1:complex'
   - uid: 'outlook!Office.MessageRead#getEntities:member(1)'
     summary: |-
       Gets the entities found in the selected item's body.
@@ -1373,6 +1510,8 @@ references:
         fullName: '[]'
   - uid: 'outlook!Office.Body:interface'
     name: Body
+  - uid: 'outlook!Office.Categories:interface'
+    name: Categories
   - uid: 'outlook!Office.MessageRead#cc~0:complex'
     name: 'EmailAddressDetails[]'
     fullName: 'Office.EmailAddressDetails[]'
@@ -1426,6 +1565,30 @@ references:
         fullName: <void>) => void
   - uid: 'outlook!Office.EmailAddressDetails:interface'
     name: EmailAddressDetails
+  - uid: 'outlook!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions
+  - uid: 'outlook!Office.MessageRead#getAllInternetHeadersAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
+  - uid: 'outlook!Office.MessageRead#getAllInternetHeadersAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<string>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<string>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <string>) => void
+        fullName: <string>) => void
   - uid: 'outlook!Office.Entities:interface'
     name: Entities
   - uid: 'outlook!Office.MessageRead#getEntitiesByType~0:complex'
