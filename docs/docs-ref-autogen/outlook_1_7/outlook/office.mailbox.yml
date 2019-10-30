@@ -1238,7 +1238,7 @@ items:
     summary: |-
       Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
-      Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->.
+      To see which event types are supported, see `Office.EventType` for details.
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -1280,7 +1280,7 @@ items:
     summary: |-
       Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
-      Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->.
+      To see which event types are supported, see `Office.EventType` for details.
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-

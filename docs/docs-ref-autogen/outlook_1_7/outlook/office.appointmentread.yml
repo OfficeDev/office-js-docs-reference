@@ -1530,13 +1530,10 @@ items:
         type:
           - 'outlook!Office.Recurrence:interface'
   - uid: 'outlook!Office.AppointmentRead#removeHandlerAsync:member(1)'
-    summary: >-
+    summary: |-
       Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
-
-      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
-      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->.
-
+      To see which event types are supported, see `Office.EventType` for details.
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -1577,13 +1574,10 @@ items:
           type:
             - 'outlook!Office.AppointmentRead#removeHandlerAsync~1:complex'
   - uid: 'outlook!Office.AppointmentRead#removeHandlerAsync:member(2)'
-    summary: >-
+    summary: |-
       Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
-
-      Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
-      `Office.EventType.RecipientsChanged`<!-- -->, and `Office.EventType.RecurrenceChanged`<!-- -->.
-
+      To see which event types are supported, see `Office.EventType` for details.
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
