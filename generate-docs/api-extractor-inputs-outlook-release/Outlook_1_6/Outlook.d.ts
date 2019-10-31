@@ -5,6 +5,8 @@ import {Office as CommonAPI} from "../../api-extractor-inputs-office/office"
 
 export declare namespace Office {
     export namespace MailboxEnums {
+        
+        
         /**
          * Specifies an attachment's type.
          *
@@ -28,6 +30,8 @@ export declare namespace Office {
              */
             Cloud = "cloud"
         }
+        
+        
         
         /**
          * Specifies an entity's type.
@@ -110,6 +114,7 @@ export declare namespace Office {
              */
             Appointment = "appointment"
         }
+        
         
         /**
          * Represents the current view of Outlook on the web.
@@ -228,7 +233,7 @@ export declare namespace Office {
         Subject
     }
     /**
-     * The subclass of {@link Office.Item} dealing with appointments.
+     * The subclass of {@link Office.Item | Item} dealing with appointments.
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of Office.context.mailbox.item. Refer to the
@@ -256,10 +261,11 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
          */
         body: Body;
+        
         /**
          * Gets or sets the date and time that the appointment is to end.
          *
-         * The end property is an {@link Office.Time} object expressed as a Coordinated Universal Time (UTC) date and time value. 
+         * The end property is a {@link Office.Time | Time} object expressed as a Coordinated Universal Time (UTC) date and time value. 
          * You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time.
          *
          * When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on 
@@ -274,6 +280,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
          */
         end: Time;
+        
         /**
          * Gets the type of item that an instance represents.
          *
@@ -289,7 +296,7 @@ export declare namespace Office {
          */
         itemType: MailboxEnums.ItemType | string;
         /**
-         * Gets or sets the {@link Office.Location} of an appointment. The location property returns a Location object that provides methods that are 
+         * Gets or sets the location of an appointment. The location property returns a {@link Office.Location | Location} object that provides methods that are 
          * used to get and set the location of the appointment.
          *
          * [Api set: Mailbox 1.0]
@@ -314,8 +321,9 @@ export declare namespace Office {
          */
         notificationMessages: NotificationMessages;
         /**
-         * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item. 
-         * The optionalAttendees property returns an {@link Office.Recipients} object that provides methods to get or update the optional attendees 
+         * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item.
+         * 
+         * The optionalAttendees property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the optional attendees 
          * for a meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
          * 
          * - Get 500 members maximum.
@@ -336,7 +344,7 @@ export declare namespace Office {
         /**
          * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item.
          *
-         * The requiredAttendees property returns an {@link Office.Recipients} object that provides methods to get or update the required attendees 
+         * The requiredAttendees property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the required attendees 
          * for a meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
          *
          * - Get 500 members maximum.
@@ -356,7 +364,7 @@ export declare namespace Office {
         /**
          * Gets or sets the date and time that the appointment is to begin.
          *
-         * The start property is an {@link Office.Time} object expressed as a Coordinated Universal Time (UTC) date and time value. 
+         * The start property is a {@link Office.Time | Time} object expressed as a Coordinated Universal Time (UTC) date and time value. 
          * You can use the convertToLocalClientTime method to convert the value to the client's local date and time.
          *
          * When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to convert the local time on 
@@ -453,6 +461,8 @@ export declare namespace Office {
         addFileAttachmentAsync(uri: string, attachmentName: string, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         
         
+        
+        
         /**
          * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
          *
@@ -539,6 +549,10 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
          */
         close(): void;
+        
+        
+        
+        
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -1029,6 +1043,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Attendee
          */
         body: Body;
+        
         /**
          * Gets the date and time that an item was created.
          *
@@ -1073,6 +1088,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Attendee
          */
         end: Date;
+        
         /**
          * Gets the Exchange Web Services item class of the selected item.
          *
@@ -1188,7 +1204,7 @@ export declare namespace Office {
         /**
          * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item.
          *
-         * The optionalAttendees property returns an array that contains an {@link Office.EmailAddressDetails} object for each optional attendee to 
+         * The optionalAttendees property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for each optional attendee to 
          * the meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.
          *
          * [Api set: Mailbox 1.0]
@@ -1216,7 +1232,7 @@ export declare namespace Office {
         /**
          * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item.
          *
-         * The requiredAttendees property returns an array that contains an {@link Office.EmailAddressDetails} object for each required attendee to 
+         * The requiredAttendees property returns an array that contains an {@link Office.EmailAddressDetails | EmailAddressDetails} object for each required attendee to 
          * the meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.
          *
          * [Api set: Mailbox 1.0]
@@ -1286,7 +1302,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
-         *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+         *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
@@ -1313,7 +1329,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Attendee
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
-         *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+         *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
@@ -1550,6 +1566,8 @@ export declare namespace Office {
         
          
     }
+    
+    
     /**
      * Represents an attachment on an item from the server. Read mode only.
      *
@@ -1588,7 +1606,9 @@ export declare namespace Office {
          * Gets the size of the attachment in bytes.
          */
         size: number;
+        
     }
+    
     /**
      * The body object provides methods for adding and updating the content of the message or appointment. 
      * It is returned in the body property of the selected item.
@@ -1858,10 +1878,12 @@ export declare namespace Office {
          */
         setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
+    
+    
     /**
      * Represents a contact stored on the server. Read mode only.
      *
-     * The list of contacts associated with an email message or appointment is returned in the contacts property of the {@link Office.Entities} object 
+     * The list of contacts associated with an email message or appointment is returned in the contacts property of the {@link Office.Entities | Entities} object 
      * that is returned by the getEntities or getEntitiesByType method of the active item.
      *
      * [Api set: Mailbox 1.0]
@@ -2113,6 +2135,8 @@ export declare namespace Office {
          */
         emailAddress: string;
     }
+    
+    
     /**
      * Represents a collection of entities found in an email message or appointment. Read mode only.
      *
@@ -2175,9 +2199,16 @@ export declare namespace Office {
         urls: string[];
     }
     
+    
     /**
      * The item namespace is used to access the currently selected message, meeting request, or appointment. 
      * You can determine the type of the item by using the `itemType` property.
+     *
+     * If you want to see IntelliSense for only a specific type, cast this item to one of the following:
+     *
+     * {@link Office.ItemCompose | ItemCompose}, {@link Office.ItemRead | ItemRead},
+     * {@link Office.MessageCompose | MessageCompose}, {@link Office.MessageRead | MessageRead},
+     * {@link Office.AppointmentCompose | AppointmentCompose}, {@link Office.AppointmentRead | AppointmentRead}
      *
      * [Api set: Mailbox 1.0]
      *
@@ -2200,6 +2231,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         body: Body;
+        
         /**
          * Gets the type of item that an instance represents.
          *
@@ -2229,6 +2261,10 @@ export declare namespace Office {
         notificationMessages: NotificationMessages;
         
 
+        
+        
+        
+        
         
         
         /**
@@ -2350,6 +2386,8 @@ export declare namespace Office {
          *                 the error.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        
+        
         /**
          * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
          *
@@ -2438,6 +2476,8 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          */
         close(): void;
+        
+        
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -2826,7 +2866,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
-         *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+         *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
@@ -2853,7 +2893,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
-         *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+         *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
@@ -3206,6 +3246,8 @@ export declare namespace Office {
          */
         setAsync(location: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
+    
+    
     /**
      * Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
      *
@@ -3279,11 +3321,15 @@ export declare namespace Office {
          */
         ewsUrl: string;
         /**
-         * The mailbox item.  Depending on the context in which the add-in opened, the item may be of any number of types.
-         * If you want to see IntelliSense for only a specific type, you should cast this item to one of the following:
-         * `ItemCompose`, `ItemRead`, `MessageCompose`, `MessageRead`, `AppointmentCompose`, `AppointmentRead`
+         * The mailbox item. Depending on the context in which the add-in opened, the item may be of any number of types.
+         * If you want to see IntelliSense for only a specific type, cast this item to one of the following:
+         *
+         * {@link Office.ItemCompose | ItemCompose}, {@link Office.ItemRead | ItemRead},
+         * {@link Office.MessageCompose | MessageCompose}, {@link Office.MessageRead | MessageRead},
+         * {@link Office.AppointmentCompose | AppointmentCompose}, {@link Office.AppointmentRead | AppointmentRead}
          */
         item: Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose;
+        
         /**
          * Gets the URL of the REST endpoint for this email account.
          *
@@ -3313,7 +3359,7 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
          *
-         * Currently, the only supported event type is `Office.EventType.ItemChanged`.
+         * To see which event types are supported, see `Office.EventType` for details.
          *
          * [Api set: Mailbox 1.5]
          *
@@ -3334,7 +3380,7 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
          *
-         * Currently, the only supported event type is `Office.EventType.ItemChanged`.
+         * To see which event types are supported, see `Office.EventType` for details.
          *
          * [Api set: Mailbox 1.5]
          *
@@ -3535,13 +3581,13 @@ export declare namespace Office {
          *
          * @param parameters - A dictionary containing all values to be filled in for the user in the new form. All parameters are optional.
          * 
-         *        toRecipients: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails} object 
+         *        toRecipients: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object 
          *        for each of the recipients on the To line. The array is limited to a maximum of 100 entries.
          * 
-         *        ccRecipients: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails} object 
+         *        ccRecipients: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object 
          *        for each of the recipients on the Cc line. The array is limited to a maximum of 100 entries.
          * 
-         *        bccRecipients: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails} object 
+         *        bccRecipients: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails | EmailAddressDetails} object 
          *        for each of the recipients on the Bcc line. The array is limited to a maximum of 100 entries.
          * 
          *        subject: A string containing the subject of the message. The string is limited to a maximum of 255 characters.
@@ -3755,7 +3801,7 @@ export declare namespace Office {
         /**
          * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
          *
-         * Currently, the only supported event type is `Office.EventType.ItemChanged`.
+         * To see which event types are supported, see `Office.EventType` for details.
          *
          * [Api set: Mailbox 1.5]
          *
@@ -3774,7 +3820,7 @@ export declare namespace Office {
         /**
          * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
          *
-         * Currently, the only supported event type is `Office.EventType.ItemChanged`.
+         * To see which event types are supported, see `Office.EventType` for details.
          *
          * [Api set: Mailbox 1.5]
          *
@@ -3790,6 +3836,7 @@ export declare namespace Office {
          */
         removeHandlerAsync(eventType: CommonAPI.EventType | string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
+    
     /**
      * Represents a suggested meeting found in an item. Read mode only.
      *
@@ -3835,7 +3882,7 @@ export declare namespace Office {
         subject: string;
     }
     /**
-     * A subclass of {@link Office.Item} for messages.
+     * A subclass of {@link Office.Item | Item} for messages.
      * 
      * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
      * You should treat this as a mode of Office.context.mailbox.item. Refer to the
@@ -3900,11 +3947,12 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
          */
         body: Body;
+        
         /**
          * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the 
          * current item.
          *
-         * The cc property returns an {@link Office.Recipients} object that provides methods to get or update the recipients on the Cc line of 
+         * The cc property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the recipients on the Cc line of 
          * the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
          * 
          * - Get 500 members maximum.
@@ -3939,6 +3987,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
          */
         conversationId: string;
+        
         
         /**
          * Gets the type of item that an instance represents.
@@ -4073,6 +4122,8 @@ export declare namespace Office {
         addFileAttachmentAsync(uri: string, attachmentName: string, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         
         
+        
+        
         /**
          * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
          *
@@ -4161,6 +4212,8 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
          */
         close(): void;
+        
+        
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -4215,6 +4268,8 @@ export declare namespace Office {
          *                 type Office.AsyncResult.
          */
         getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
+        
+        
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
          *
@@ -4472,6 +4527,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
          */
         body: Body;
+        
         /**
          * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the 
          * current item.
@@ -4742,7 +4798,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
-         *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+         *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
@@ -4769,11 +4825,13 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
-         *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+         *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
         displayReplyForm(formData: string | ReplyFormData, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        
+        
         /**
          * Gets the entities found in the selected item's body.
          *
@@ -5291,9 +5349,9 @@ export declare namespace Office {
          *
          * - Strings containing SMTP email addresses
          *
-         * - {@link Office.EmailUser} objects
+         * - {@link Office.EmailUser | EmailUser} objects
          *
-         * - {@link Office.EmailAddressDetails} objects
+         * - {@link Office.EmailAddressDetails | EmailAddressDetails} objects
          *
          * [Api set: Mailbox 1.1]
          *
@@ -5315,7 +5373,7 @@ export declare namespace Office {
         /**
          * Gets a recipient list for an appointment or message.
          *
-         * When the call completes, the asyncResult.value property will contain an array of {@link Office.EmailAddressDetails} objects.
+         * When the call completes, the asyncResult.value property will contain an array of {@link Office.EmailAddressDetails | EmailAddressDetails} objects.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -5335,7 +5393,7 @@ export declare namespace Office {
         /**
          * Gets a recipient list for an appointment or message.
          *
-         * When the call completes, the asyncResult.value property will contain an array of {@link Office.EmailAddressDetails} objects.
+         * When the call completes, the asyncResult.value property will contain an array of {@link Office.EmailAddressDetails | EmailAddressDetails} objects.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -5359,9 +5417,9 @@ export declare namespace Office {
          *
          * - Strings containing SMTP email addresses
          *
-         * - {@link Office.EmailUser} objects
+         * - {@link Office.EmailUser | EmailUser} objects
          *
-         * - {@link Office.EmailAddressDetails} objects
+         * - {@link Office.EmailAddressDetails | EmailAddressDetails} objects
          *
          * [Api set: Mailbox 1.1]
          *
@@ -5393,9 +5451,9 @@ export declare namespace Office {
          *
          * - Strings containing SMTP email addresses
          *
-         * - {@link Office.EmailUser} objects
+         * - {@link Office.EmailUser | EmailUser} objects
          *
-         * - {@link Office.EmailAddressDetails} objects
+         * - {@link Office.EmailAddressDetails | EmailAddressDetails} objects
          *
          * [Api set: Mailbox 1.1]
          *
@@ -5457,7 +5515,7 @@ export declare namespace Office {
          */
         htmlBody?: string;
         /**
-         * An array of {@link Office.ReplyFormAttachment} that are either file or item attachments.
+         * An array of {@link Office.ReplyFormAttachment | ReplyFormAttachment} that are either file or item attachments.
          */
         attachments?: ReplyFormAttachment[];
         /**
@@ -5564,6 +5622,7 @@ export declare namespace Office {
          */
         set(name: string, value: any): void;
     }
+    
     
     /**
      * Provides methods to get and set the subject of an appointment or message in an Outlook add-in.

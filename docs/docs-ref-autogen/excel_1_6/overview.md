@@ -34,6 +34,7 @@ The following is a list of host-specific requirement sets (and the cross-host Co
 ## Outlook
 
 - [Mailbox Preview](/javascript/api/outlook?view=outlook-js-preview)
+- [Mailbox 1.8](/javascript/api/outlook?view=outlook-js-1.8)
 - [Mailbox 1.7](/javascript/api/outlook?view=outlook-js-1.7)
 - [Mailbox 1.6](/javascript/api/outlook?view=outlook-js-1.6)
 - [Mailbox 1.5](/javascript/api/outlook?view=outlook-js-1.5)

@@ -1,0 +1,125 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'outlook!Office.MailboxEnums.Month:enum'
+    summary: |-
+      Specifies the month.
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+    name: Office.MailboxEnums.Month
+    fullName: Office.MailboxEnums.Month
+    langs:
+      - typeScript
+    type: enum
+    package: outlook!
+    children:
+      - 'outlook!Office.MailboxEnums.Month.Apr:member'
+      - 'outlook!Office.MailboxEnums.Month.Aug:member'
+      - 'outlook!Office.MailboxEnums.Month.Dec:member'
+      - 'outlook!Office.MailboxEnums.Month.Feb:member'
+      - 'outlook!Office.MailboxEnums.Month.Jan:member'
+      - 'outlook!Office.MailboxEnums.Month.Jul:member'
+      - 'outlook!Office.MailboxEnums.Month.Jun:member'
+      - 'outlook!Office.MailboxEnums.Month.Mar:member'
+      - 'outlook!Office.MailboxEnums.Month.May:member'
+      - 'outlook!Office.MailboxEnums.Month.Nov:member'
+      - 'outlook!Office.MailboxEnums.Month.Oct:member'
+      - 'outlook!Office.MailboxEnums.Month.Sep:member'
+  - uid: 'outlook!Office.MailboxEnums.Month.Apr:member'
+    summary: April
+    name: Apr
+    fullName: Apr
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"apr"'
+  - uid: 'outlook!Office.MailboxEnums.Month.Aug:member'
+    summary: August
+    name: Aug
+    fullName: Aug
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"aug"'
+  - uid: 'outlook!Office.MailboxEnums.Month.Dec:member'
+    summary: December
+    name: Dec
+    fullName: Dec
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"dec"'
+  - uid: 'outlook!Office.MailboxEnums.Month.Feb:member'
+    summary: February
+    name: Feb
+    fullName: Feb
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"feb"'
+  - uid: 'outlook!Office.MailboxEnums.Month.Jan:member'
+    summary: January
+    name: Jan
+    fullName: Jan
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"jan"'
+  - uid: 'outlook!Office.MailboxEnums.Month.Jul:member'
+    summary: July
+    name: Jul
+    fullName: Jul
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"jul"'
+  - uid: 'outlook!Office.MailboxEnums.Month.Jun:member'
+    summary: June
+    name: Jun
+    fullName: Jun
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"jun"'
+  - uid: 'outlook!Office.MailboxEnums.Month.Mar:member'
+    summary: March
+    name: Mar
+    fullName: Mar
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"mar"'
+  - uid: 'outlook!Office.MailboxEnums.Month.May:member'
+    summary: May
+    name: May
+    fullName: May
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"may"'
+  - uid: 'outlook!Office.MailboxEnums.Month.Nov:member'
+    summary: November
+    name: Nov
+    fullName: Nov
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"nov"'
+  - uid: 'outlook!Office.MailboxEnums.Month.Oct:member'
+    summary: October
+    name: Oct
+    fullName: Oct
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"oct"'
+  - uid: 'outlook!Office.MailboxEnums.Month.Sep:member'
+    summary: September
+    name: Sep
+    fullName: Sep
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"sep"'

@@ -423,9 +423,9 @@ items:
       Gets or sets the date and time that the appointment is to end.
 
 
-      The end property is an [Office.Time](xref:outlook!Office.Time:interface) object expressed as a Coordinated
-      Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end
-      property value to the client's local date and time.
+      The end property is a [Time](xref:outlook!Office.Time:interface) object expressed as a Coordinated Universal Time
+      (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to
+      the client's local date and time.
 
 
       When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to
@@ -571,9 +571,9 @@ items:
             - any
   - uid: 'outlook!Office.AppointmentCompose#location:member'
     summary: >-
-      Gets or sets the [Office.Location](xref:outlook!Office.Location:interface) of an appointment. The location
-      property returns a Location object that provides methods that are used to get and set the location of the
-      appointment.
+      Gets or sets the location of an appointment. The location property returns a
+      [Location](xref:outlook!Office.Location:interface) object that provides methods that are used to get and set the
+      location of the appointment.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -615,10 +615,12 @@ items:
   - uid: 'outlook!Office.AppointmentCompose#optionalAttendees:member'
     summary: >-
       Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
-      of the current item. The optionalAttendees property returns an
-      [Office.Recipients](xref:outlook!Office.Recipients:interface) object that provides methods to get or update the
-      optional attendees for a meeting. By default, the collection is limited to a maximum of 100 members. However, on
-      Windows and Mac, the following limits apply.
+      of the current item.
+
+
+      The optionalAttendees property returns a [Recipients](xref:outlook!Office.Recipients:interface) object that
+      provides methods to get or update the optional attendees for a meeting. By default, the collection is limited to a
+      maximum of 100 members. However, on Windows and Mac, the following limits apply.
 
 
       - Get 500 members maximum.
@@ -799,9 +801,9 @@ items:
       of the current item.
 
 
-      The requiredAttendees property returns an [Office.Recipients](xref:outlook!Office.Recipients:interface) object
-      that provides methods to get or update the required attendees for a meeting. By default, the collection is limited
-      to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
+      The requiredAttendees property returns a [Recipients](xref:outlook!Office.Recipients:interface) object that
+      provides methods to get or update the required attendees for a meeting. By default, the collection is limited to a
+      maximum of 100 members. However, on Windows and Mac, the following limits apply.
 
 
       - Get 500 members maximum.
@@ -853,9 +855,9 @@ items:
       Gets or sets the date and time that the appointment is to begin.
 
 
-      The start property is an [Office.Time](xref:outlook!Office.Time:interface) object expressed as a Coordinated
-      Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to
-      the client's local date and time.
+      The start property is a [Time](xref:outlook!Office.Time:interface) object expressed as a Coordinated Universal
+      Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the
+      client's local date and time.
 
 
       When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to

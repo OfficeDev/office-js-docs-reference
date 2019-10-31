@@ -38,6 +38,8 @@ items:
             uid: 'outlook!Office.AppointmentCompose:interface'
           - name: AppointmentRead
             uid: 'outlook!Office.AppointmentRead:interface'
+          - name: AppointmentTimeChangedEventArgs
+            uid: 'outlook!Office.AppointmentTimeChangedEventArgs:interface'
           - name: AttachmentDetails
             uid: 'outlook!Office.AttachmentDetails:interface'
           - name: Body
