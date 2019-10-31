@@ -356,8 +356,8 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR an [Office.ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body
-            or attachment data and a callback function.
+            to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or
+            attachment data and a callback function.
           type:
             - 'outlook!Office.AppointmentRead#displayReplyAllForm~0:complex'
         - id: callback
@@ -500,8 +500,8 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR an [Office.ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body
-            or attachment data and a callback function.
+            to 32 KB OR a [ReplyFormData](xref:outlook!Office.ReplyFormData:interface) object that contains body or
+            attachment data and a callback function.
           type:
             - 'outlook!Office.AppointmentRead#displayReplyForm~0:complex'
         - id: callback
@@ -1204,9 +1204,9 @@ items:
 
 
       The optionalAttendees property returns an array that contains an
-      [Office.EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each optional attendee
-      to the meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac,
-      you can get 500 members maximum.
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each optional attendee to the
+      meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can
+      get 500 members maximum.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1282,9 +1282,9 @@ items:
 
 
       The requiredAttendees property returns an array that contains an
-      [Office.EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each required attendee
-      to the meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac,
-      you can get 500 members maximum.
+      [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each required attendee to the
+      meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can
+      get 500 members maximum.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]

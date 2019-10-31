@@ -6,6 +6,17 @@ items:
       determine the type of the item by using the `itemType` property.
 
 
+      If you want to see IntelliSense for only a specific type, cast this item to one of the following:
+
+
+      [ItemCompose](xref:outlook!Office.ItemCompose:interface)<!-- -->,
+      [ItemRead](xref:outlook!Office.ItemRead:interface)<!-- -->,
+      [MessageCompose](xref:outlook!Office.MessageCompose:interface)<!-- -->,
+      [MessageRead](xref:outlook!Office.MessageRead:interface)<!-- -->,
+      [AppointmentCompose](xref:outlook!Office.AppointmentCompose:interface)<!-- -->,
+      [AppointmentRead](xref:outlook!Office.AppointmentRead:interface)
+
+
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission

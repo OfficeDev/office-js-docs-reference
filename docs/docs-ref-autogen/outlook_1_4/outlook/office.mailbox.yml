@@ -718,9 +718,15 @@ items:
   - uid: 'outlook!Office.Mailbox#item:member'
     summary: >-
       The mailbox item. Depending on the context in which the add-in opened, the item may be of any number of types. If
-      you want to see IntelliSense for only a specific type, you should cast this item to one of the following:
-      `ItemCompose`<!-- -->, `ItemRead`<!-- -->, `MessageCompose`<!-- -->, `MessageRead`<!-- -->,
-      `AppointmentCompose`<!-- -->, `AppointmentRead`
+      you want to see IntelliSense for only a specific type, cast this item to one of the following:
+
+
+      [ItemCompose](xref:outlook!Office.ItemCompose:interface)<!-- -->,
+      [ItemRead](xref:outlook!Office.ItemRead:interface)<!-- -->,
+      [MessageCompose](xref:outlook!Office.MessageCompose:interface)<!-- -->,
+      [MessageRead](xref:outlook!Office.MessageRead:interface)<!-- -->,
+      [AppointmentCompose](xref:outlook!Office.AppointmentCompose:interface)<!-- -->,
+      [AppointmentRead](xref:outlook!Office.AppointmentRead:interface)
     name: item
     fullName: item
     langs:
