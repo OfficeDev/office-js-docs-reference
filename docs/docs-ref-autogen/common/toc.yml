@@ -9,7 +9,7 @@ items:
           - name: Office
             items:
               - name: Enums
-                uid: ''
+                uid: officeEnumRoot
                 items:
                   - name: ActiveView
                     uid: 'office!Office.ActiveView:enum'
@@ -194,3 +194,15 @@ items:
                 uid: 'office!OfficeExtension.TrackedObjects:class'
               - name: UpdateOptions
                 uid: 'office!OfficeExtension.UpdateOptions:interface'
+          - name: Office runtime
+            uid: office-runtime!
+            items:
+              - name: OfficeRuntime
+                items:
+                  - name: Dialog
+                    uid: 'office-runtime!OfficeRuntime.Dialog:interface'
+                  - name: DisplayWebDialogOptions
+                    uid: >-
+                      office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface
+                  - name: Storage
+                    uid: 'office-runtime!OfficeRuntime.Storage:interface'

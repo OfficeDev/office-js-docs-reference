@@ -2688,18 +2688,18 @@
         Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 /*64 KB*/ }, 
             function (result) {
                 if (result.status == "succeeded") {
-                // If the getFileAsync call succeeded, then
-                // result.value will return a valid File Object.
-                var myFile = result.value;
-                var sliceCount = myFile.sliceCount;
-                var slicesReceived = 0, gotAllSlices = true, docdataSlices = [];
-                app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
+                    // If the getFileAsync call succeeded, then
+                    // result.value will return a valid File Object.
+                    var myFile = result.value;
+                    var sliceCount = myFile.sliceCount;
+                    var slicesReceived = 0, gotAllSlices = true, docdataSlices = [];
+                    app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
 
-                // Get the file slices.
-                getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
+                    // Get the file slices.
+                    getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
                 }
                 else {
-                app.showNotification("Error:", result.error.message);
+                    app.showNotification("Error:", result.error.message);
                 }
         });
     }
@@ -4621,6 +4621,52 @@
 
     function write(message){
         document.getElementById('message').innerText += message; 
+    }
+'Office.File.getSliceAsync:member(1)':
+  - |-
+    // This sample shows how to get all the slices of a file. 
+    // The asynchronous operation returns a Promise so it can be awaited.
+    private getAllSlices(file: any): Promise<any> {
+        var self = this;
+        var isError = false;
+
+        return new Promise(async (resolve, reject) => {
+            var documentFileData = [];
+            for (var sliceIndex = 0; (sliceIndex < file.sliceCount) && !isError; sliceIndex++) {
+                var sliceReadPromise = new Promise((sliceResolve, sliceReject) => {
+                    file.getSliceAsync(sliceIndex, (asyncResult) => {
+                        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                            documentFileData = documentFileData.concat(asyncResult.value.data);
+                            sliceResolve({
+                                IsSuccess: true,
+                                Data: documentFileData
+                            });
+                        } else {
+                            file.closeAsync();
+                            sliceReject({
+                                IsSuccess: false,
+                                ErrorMessage: `Error in reading the slice: ${sliceIndex} of the document`
+                            });
+                        }
+                    });
+                });
+                await sliceReadPromise.catch((error) => {
+                    isError = true;
+                });
+            }
+
+            if (isError || !documentFileData.length) {
+                reject('Error while reading document. Please try it again.');
+                return;
+            }
+
+            file.closeAsync();
+
+            resolve({
+                IsSuccess: true,
+                Data: documentFileData
+            });
+        });
     }
 'Office.From#getAsync:member(2)':
   - |-

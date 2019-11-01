@@ -7,7 +7,7 @@ items:
         uid: excel!
         items:
           - name: Custom Functions
-            uid: ''
+            uid: cfRoot
             items:
               - name: Custom functions runtime
                 uid: custom-functions-runtime!
@@ -22,7 +22,7 @@ items:
                     uid: >-
                       custom-functions-runtime!CustomFunctions.StreamingInvocation:interface
           - name: Enums
-            uid: ''
+            uid: excelEnumRoot
             items:
               - name: AggregationFunction
                 uid: 'excel!Excel.AggregationFunction:enum'
@@ -313,7 +313,7 @@ items:
               - name: WorksheetPositionType
                 uid: 'excel!Excel.WorksheetPositionType:enum'
           - name: Icon Sets
-            uid: ''
+            uid: excelIconRoot
             items:
               - name: FiveArrowsGraySet
                 uid: 'excel!Excel.FiveArrowsGraySet:interface'
@@ -855,7 +855,7 @@ items:
           - name: Office
             items:
               - name: Enums
-                uid: ''
+                uid: officeEnumRoot
                 items:
                   - name: ActiveView
                     uid: 'office!Office.ActiveView:enum'
@@ -1040,3 +1040,15 @@ items:
                 uid: 'office!OfficeExtension.TrackedObjects:class'
               - name: UpdateOptions
                 uid: 'office!OfficeExtension.UpdateOptions:interface'
+          - name: Office runtime
+            uid: office-runtime!
+            items:
+              - name: OfficeRuntime
+                items:
+                  - name: Dialog
+                    uid: 'office-runtime!OfficeRuntime.Dialog:interface'
+                  - name: DisplayWebDialogOptions
+                    uid: >-
+                      office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface
+                  - name: Storage
+                    uid: 'office-runtime!OfficeRuntime.Storage:interface'

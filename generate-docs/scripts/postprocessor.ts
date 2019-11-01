@@ -207,10 +207,10 @@ function fixToc(tocPath: string, commonToc: INewToc, versionNumber: number): INe
 
     let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
 
-    let customFunctionsRoot = {"name": "Custom Functions", "uid": "", "items": [] as any};
+    let customFunctionsRoot = {"name": "Custom Functions", "uid": "cfRoot", "items": [] as any};
 
     // create folders for OneNote subcategories
-    let oneNoteEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
+    let oneNoteEnumRoot = {"name": "Enums", "uid": "onenoteEnums", "items": [] as any};
     let oneNoteEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-onenote/onenote.d.ts").toString());
 
     // create folders for word subcategories
@@ -281,8 +281,8 @@ function fixToc(tocPath: string, commonToc: INewToc, versionNumber: number): INe
                             return excelFilter.indexOf(item.name) < 0;
                         });
 
-                        let excelEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
-                        let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
+                        let excelEnumRoot = {"name": "Enums", "uid": "excelEnumRoot", "items": enumList};
+                        let excelIconSetRoot = {"name": "Icon Sets", "uid": "excelIconRoot", "items": iconSetList};
                         primaryList.unshift(excelIconSetRoot);
                         primaryList.unshift(excelEnumRoot);
                         if (versionNumber >= OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS) {
@@ -301,7 +301,7 @@ function fixToc(tocPath: string, commonToc: INewToc, versionNumber: number): INe
                             return wordFilter.indexOf(item.name) < 0;
                         });
 
-                        let wordEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
+                        let wordEnumRoot = {"name": "Enums", "uid": "wordEnumRoot", "items": enumList};
                         primaryList.unshift(wordEnumRoot);
                         newToc.items[0].items.push({
                             "name": packageName,
@@ -386,17 +386,15 @@ function fixCommonToc(tocPath: string): INewToc {
     }];
 
     // create folders for common (shared) API subcategories
-    let sharedEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
+    let sharedEnumRoot = {"name": "Enums", "uid": "officeEnumRoot", "items": [] as any};
     let sharedEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-office/office.d.ts").toString());
-
+    let commonAPIRoot;
+    let officeRuntimeRoot;
     // process 'office' (Common "Shared" API) package
     origToc.items.forEach((rootItem, rootIndex) => {
-        console.log("ROOT: " + rootItem.name);
         rootItem.items.forEach((packageItem, packageIndex) => {
-            console.log("PACKAGE: " + packageItem.name);
             if (packageItem.name === 'office') {
                 packageItem.items.forEach((namespaceItem, namespaceIndex) => {
-                    console.log("NAMESPACE: " + namespaceItem.name);
                     if (namespaceItem.name.toLocaleLowerCase() === 'office') {
                         let enumList = namespaceItem.items.filter(item => {
                             return sharedEnumFilter.indexOf(item.name) >= 0;
@@ -409,15 +407,16 @@ function fixCommonToc(tocPath: string): INewToc {
                         namespaceItem.items = primaryList as any;
                     }
                 });
-                newToc.items[0].items.push({
-                    "name": 'Common API',
-                    "uid": packageItem.uid,
-                    "items": packageItem.items
-                });
+                commonAPIRoot = {"name": 'Common API', "uid": packageItem.uid, "items": packageItem.items};
+                newToc.items[0].items.push(commonAPIRoot);
+            } else if (packageItem.name === 'office-runtime') {
+                officeRuntimeRoot = {"name": 'Office runtime', "uid": packageItem.uid,"items": packageItem.items};
             }
         });
     });
 
+    // Add Office runtime under theCommon API folder
+    commonAPIRoot.items.push(officeRuntimeRoot);
 
     // add API reference overview to Common API
     newToc.items[0].items.unshift({

@@ -7,7 +7,7 @@ items:
         uid: excel!
         items:
           - name: Enums
-            uid: ''
+            uid: excelEnumRoot
             items:
               - name: BindingType
                 uid: 'excel!Excel.BindingType:enum'
@@ -52,7 +52,7 @@ items:
               - name: VerticalAlignment
                 uid: 'excel!Excel.VerticalAlignment:enum'
           - name: Icon Sets
-            uid: ''
+            uid: excelIconRoot
             items: []
           - name: Application
             uid: 'excel!Excel.Application:class'
@@ -156,7 +156,7 @@ items:
           - name: Office
             items:
               - name: Enums
-                uid: ''
+                uid: officeEnumRoot
                 items:
                   - name: ActiveView
                     uid: 'office!Office.ActiveView:enum'
@@ -341,3 +341,15 @@ items:
                 uid: 'office!OfficeExtension.TrackedObjects:class'
               - name: UpdateOptions
                 uid: 'office!OfficeExtension.UpdateOptions:interface'
+          - name: Office runtime
+            uid: office-runtime!
+            items:
+              - name: OfficeRuntime
+                items:
+                  - name: Dialog
+                    uid: 'office-runtime!OfficeRuntime.Dialog:interface'
+                  - name: DisplayWebDialogOptions
+                    uid: >-
+                      office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface
+                  - name: Storage
+                    uid: 'office-runtime!OfficeRuntime.Storage:interface'
