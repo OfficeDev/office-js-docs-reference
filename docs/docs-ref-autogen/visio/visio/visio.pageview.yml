@@ -208,27 +208,30 @@ items:
           type:
             - 'string | string[]'
   - uid: 'visio!Visio.PageView#load:member(3)'
-    summary: >-
-      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
-      the properties.
-    name: load(propertyNamesAndPaths)
-    fullName: load(propertyNamesAndPaths)
+    name: load(option)
+    fullName: load(option)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.PageView;'
+      content: |-
+        load(option?: {
+                    select?: string;
+                    expand?: string;
+                }): Visio.PageView;
       return:
         type:
           - 'visio!Visio.PageView:class'
         description: ''
       parameters:
-        - id: propertyNamesAndPaths
-          description: >-
-            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
-            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+        - id: option
+          description: ''
           type:
-            - '{ select?: string; expand?: string; }'
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
   - uid: 'visio!Visio.PageView#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate

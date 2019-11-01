@@ -1836,15 +1836,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -1869,7 +1869,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -5389,15 +5389,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -5422,7 +5422,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -7667,15 +7667,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.CustomProperty#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -7700,7 +7700,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -8723,15 +8723,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -8756,7 +8756,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -9270,15 +9270,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.DocumentCreated#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -9303,7 +9303,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -10107,15 +10107,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.DocumentProperties#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -10140,7 +10140,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -11237,15 +11237,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Font#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -11270,7 +11270,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -13359,15 +13359,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -13392,7 +13392,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -32559,15 +32559,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.List#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -32592,7 +32592,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -34317,15 +34317,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ListItem#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -34350,7 +34350,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -37191,15 +37191,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -37224,7 +37224,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -40553,15 +40553,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -40586,7 +40586,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -42465,15 +42465,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.SearchOptions#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -42498,7 +42498,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -43261,15 +43261,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Section#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -43294,7 +43294,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -48802,15 +48802,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Table#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -48835,7 +48835,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -50077,15 +50077,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableBorder#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -50110,7 +50110,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -51233,15 +51233,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableCell#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -51266,7 +51266,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -53274,15 +53274,15 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableRow#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(propertyNamesAndPaths?: "
+                      "text": "load(option?: "
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -53307,7 +53307,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "propertyNamesAndPaths",
+                      "parameterName": "option",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2

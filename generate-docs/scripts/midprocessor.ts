@@ -94,13 +94,13 @@ tryCatch(async () => {
 
     console.log("Moving Custom Functions APIs to correct versions of Excel");
     const customFunctionsJson = path.resolve("../json/custom-functions-runtime.api.json");
-    const officeRuntimeJson = path.resolve("../json/office-runtime.api.json");
     fsx.copySync(customFunctionsJson, "../json/excel/custom-functions-runtime.api.json");
-    fsx.copySync(officeRuntimeJson, "../json/excel/office-runtime.api.json");
     for (let i = CURRENT_EXCEL_RELEASE; i >= OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS; i--) {
         fsx.copySync(customFunctionsJson, `../json/excel_1_${i}/custom-functions-runtime.api.json`);
-        fsx.copySync(officeRuntimeJson, `../json/excel_1_${i}/office-runtime.api.json`);
     }
+
+    const officeRuntimeJson = path.resolve("../json/office-runtime.api.json");
+    fsx.copySync(officeRuntimeJson, "../json/office/office-runtime.api.json");
 });
 
 async function tryCatch(call: () => Promise<void>) {

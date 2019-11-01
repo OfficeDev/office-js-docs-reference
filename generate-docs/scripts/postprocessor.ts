@@ -391,9 +391,12 @@ function fixCommonToc(tocPath: string): INewToc {
 
     // process 'office' (Common "Shared" API) package
     origToc.items.forEach((rootItem, rootIndex) => {
+        console.log("ROOT: " + rootItem.name);
         rootItem.items.forEach((packageItem, packageIndex) => {
+            console.log("PACKAGE: " + packageItem.name);
             if (packageItem.name === 'office') {
                 packageItem.items.forEach((namespaceItem, namespaceIndex) => {
+                    console.log("NAMESPACE: " + namespaceItem.name);
                     if (namespaceItem.name.toLocaleLowerCase() === 'office') {
                         let enumList = namespaceItem.items.filter(item => {
                             return sharedEnumFilter.indexOf(item.name) >= 0;
