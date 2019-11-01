@@ -655,18 +655,18 @@ items:
           Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 /*64 KB*/ }, 
               function (result) {
                   if (result.status == "succeeded") {
-                  // If the getFileAsync call succeeded, then
-                  // result.value will return a valid File Object.
-                  var myFile = result.value;
-                  var sliceCount = myFile.sliceCount;
-                  var slicesReceived = 0, gotAllSlices = true, docdataSlices = [];
-                  app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
+                      // If the getFileAsync call succeeded, then
+                      // result.value will return a valid File Object.
+                      var myFile = result.value;
+                      var sliceCount = myFile.sliceCount;
+                      var slicesReceived = 0, gotAllSlices = true, docdataSlices = [];
+                      app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
 
-                  // Get the file slices.
-                  getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
+                      // Get the file slices.
+                      getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
                   }
                   else {
-                  app.showNotification("Error:", result.error.message);
+                      app.showNotification("Error:", result.error.message);
                   }
           });
       }
