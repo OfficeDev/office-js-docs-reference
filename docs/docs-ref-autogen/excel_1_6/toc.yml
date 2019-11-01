@@ -7,7 +7,7 @@ items:
         uid: excel!
         items:
           - name: Enums
-            uid: excelEnumRoot
+            uid: ''
             items:
               - name: BindingType
                 uid: 'excel!Excel.BindingType:enum'
@@ -104,7 +104,7 @@ items:
               - name: VerticalAlignment
                 uid: 'excel!Excel.VerticalAlignment:enum'
           - name: Icon Sets
-            uid: excelIconRoot
+            uid: ''
             items:
               - name: FiveArrowsGraySet
                 uid: 'excel!Excel.FiveArrowsGraySet:interface'
@@ -356,7 +356,7 @@ items:
           - name: Office
             items:
               - name: Enums
-                uid: officeEnumRoot
+                uid: ''
                 items:
                   - name: ActiveView
                     uid: 'office!Office.ActiveView:enum'

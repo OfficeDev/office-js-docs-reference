@@ -120,7 +120,7 @@ items:
           - name: Office
             items:
               - name: Enums
-                uid: officeEnumRoot
+                uid: ''
                 items:
                   - name: ActiveView
                     uid: 'office!Office.ActiveView:enum'

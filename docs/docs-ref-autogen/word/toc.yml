@@ -7,7 +7,7 @@ items:
         uid: word!
         items:
           - name: Enums
-            uid: wordEnumRoot
+            uid: ''
             items:
               - name: Alignment
                 uid: 'word!Word.Alignment:enum'
@@ -137,7 +137,7 @@ items:
           - name: Office
             items:
               - name: Enums
-                uid: officeEnumRoot
+                uid: ''
                 items:
                   - name: ActiveView
                     uid: 'office!Office.ActiveView:enum'

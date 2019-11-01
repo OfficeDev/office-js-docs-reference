@@ -7,7 +7,7 @@ items:
         uid: onenote!
         items:
           - name: Enums
-            uid: onenoteEnums
+            uid: ''
             items:
               - name: ErrorCodes
                 uid: 'onenote!OneNote.ErrorCodes:enum'
@@ -107,7 +107,7 @@ items:
           - name: Office
             items:
               - name: Enums
-                uid: officeEnumRoot
+                uid: ''
                 items:
                   - name: ActiveView
                     uid: 'office!Office.ActiveView:enum'

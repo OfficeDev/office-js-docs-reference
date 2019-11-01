@@ -7,7 +7,7 @@ items:
         uid: excel!
         items:
           - name: Custom Functions
-            uid: cfRoot
+            uid: ''
             items:
               - name: Custom functions runtime
                 uid: custom-functions-runtime!
@@ -22,7 +22,7 @@ items:
                     uid: >-
                       custom-functions-runtime!CustomFunctions.StreamingInvocation:interface
           - name: Enums
-            uid: excelEnumRoot
+            uid: ''
             items:
               - name: AggregationFunction
                 uid: 'excel!Excel.AggregationFunction:enum'
@@ -305,7 +305,7 @@ items:
               - name: WorksheetPositionType
                 uid: 'excel!Excel.WorksheetPositionType:enum'
           - name: Icon Sets
-            uid: excelIconRoot
+            uid: ''
             items:
               - name: FiveArrowsGraySet
                 uid: 'excel!Excel.FiveArrowsGraySet:interface'
@@ -835,7 +835,7 @@ items:
           - name: Office
             items:
               - name: Enums
-                uid: officeEnumRoot
+                uid: ''
                 items:
                   - name: ActiveView
                     uid: 'office!Office.ActiveView:enum'
