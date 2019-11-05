@@ -41,6 +41,30 @@ items:
           console.log("Urls: " + JSON.stringify(contact.urls));
       });
 
+
+      /* Example email containing a contact, John Smith:
+
+      Hi there,
+
+      I have received the package.
+
+
+      Thanks.
+
+      John Smith
+
+      Contoso Corporation
+
+      1 Contoso Way, Redmond, WA 98052
+
+      john.smith@contoso.com
+
+      206-111-1111
+
+      https://github.com/contoso/john.smith
+
+      */
+
       ```
     name: Office.Contact
     fullName: Office.Contact
