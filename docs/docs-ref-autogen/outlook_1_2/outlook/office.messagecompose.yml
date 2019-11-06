@@ -643,12 +643,13 @@ items:
           var text = asyncResult.value.data;
           var prop = asyncResult.value.sourceProperty;
 
-          Office.context.mailbox.item.setSelectedDataAsync('Setting ' + prop + ': ' + text, {}, setCallback);
-      }
+          // Handle where Outlook on the web erroneously returns "null" instead of empty string.
+          if (Office.context.mailbox.diagnostics.hostName === 'OutlookWebApp'
+              && asyncResult.value.endPosition === asyncResult.value.startPosition) {
+              text = "";
+          }
 
-
-      function setCallback(asyncResult) {
-          // Check for errors.
+          console.log("Selected text in " + prop + ": " + text);
       }
 
       ```
