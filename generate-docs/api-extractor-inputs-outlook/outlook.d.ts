@@ -1807,16 +1807,13 @@ export declare namespace Office {
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
-         * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. 
+         * If there is no selection but the cursor is in the body or subject, the method returns an empty string for the selected data. 
          * If a field other than the body or subject is selected, the method returns the InvalidSelection error.
          *
          * To access the selected data from the callback method, call asyncResult.value.data. 
          * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
          *
          * **Note**: In Outlook on the web, the method returns the string "null" if no text is selected but the cursor is in the body.
-         * To check for this situation, include code similar to the following:
-         *
-         * `var selectedText = (asyncResult.value.endPosition === asyncResult.value.startPosition) ? "" : asyncResult.value.data;`
          *
          * [Api set: Mailbox 1.2]
          *
@@ -1839,16 +1836,13 @@ export declare namespace Office {
          /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
-         * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. 
+         * If there is no selection but the cursor is in the body or subject, the method returns an empty string for the selected data. 
          * If a field other than the body or subject is selected, the method returns the InvalidSelection error.
          *
          * To access the selected data from the callback method, call asyncResult.value.data. 
          * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
          *
          * **Note**: In Outlook on the web, the method returns the string "null" if no text is selected but the cursor is in the body.
-         * To check for this situation, include code similar to the following:
-         *
-         * `var selectedText = (asyncResult.value.endPosition === asyncResult.value.startPosition) ? "" : asyncResult.value.data;`
          *
          * [Api set: Mailbox 1.2]
          *
@@ -4929,16 +4923,13 @@ export declare namespace Office {
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
-         * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. 
+         * If there is no selection but the cursor is in the body or subject, the method returns an empty string for the selected data. 
          * If a field other than the body or subject is selected, the method returns the InvalidSelection error.
          *
          * To access the selected data from the callback method, call asyncResult.value.data.
          * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
          *
          * **Note**: In Outlook on the web, the method returns the string "null" if no text is selected but the cursor is in the body.
-         * To check for this situation, include code similar to the following:
-         *
-         * `var selectedText = (asyncResult.value.endPosition === asyncResult.value.startPosition) ? "" : asyncResult.value.data;`
          *
          * [Api set: Mailbox 1.2]
          *
@@ -4962,16 +4953,13 @@ export declare namespace Office {
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
-         * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. 
+         * If there is no selection but the cursor is in the body or subject, the method returns an empty string for the selected data. 
          * If a field other than the body or subject is selected, the method returns the InvalidSelection error.
          *
          * To access the selected data from the callback method, call asyncResult.value.data.
          * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
          *
          * **Note**: In Outlook on the web, the method returns the string "null" if no text is selected but the cursor is in the body.
-         * To check for this situation, include code similar to the following:
-         *
-         * `var selectedText = (asyncResult.value.endPosition === asyncResult.value.startPosition) ? "" : asyncResult.value.data;`
          *
          * [Api set: Mailbox 1.2]
          *
@@ -7224,16 +7212,13 @@ export declare namespace Office {
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
-         * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. 
+         * If there is no selection but the cursor is in the body or subject, the method returns an empty string for the selected data. 
          * If a field other than the body or subject is selected, the method returns the InvalidSelection error.
          *
          * To access the selected data from the callback method, call asyncResult.value.data. 
          * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
          *
          * **Note**: In Outlook on the web, the method returns the string "null" if no text is selected but the cursor is in the body.
-         * To check for this situation, include code similar to the following:
-         *
-         * `var selectedText = (asyncResult.value.endPosition === asyncResult.value.startPosition) ? "" : asyncResult.value.data;`
          *
          * [Api set: Mailbox 1.2]
          *
@@ -7257,16 +7242,13 @@ export declare namespace Office {
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
-         * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. 
+         * If there is no selection but the cursor is in the body or subject, the method returns an empty string for the selected data. 
          * If a field other than the body or subject is selected, the method returns the InvalidSelection error.
          *
          * To access the selected data from the callback method, call asyncResult.value.data. 
          * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
          *
          * **Note**: In Outlook on the web, the method returns the string "null" if no text is selected but the cursor is in the body.
-         * To check for this situation, include code similar to the following:
-         *
-         * `var selectedText = (asyncResult.value.endPosition === asyncResult.value.startPosition) ? "" : asyncResult.value.data;`
          *
          * [Api set: Mailbox 1.2]
          *
