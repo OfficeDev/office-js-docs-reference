@@ -724,7 +724,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#getSelectedDataAsync:member(1)",
-                  "docComment": "/**\n * Asynchronously returns selected data from the subject or body of a message.\n *\n * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.\n *\n * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.\n *\n * [Api set: Mailbox 1.2]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.\n *\n * @param options - An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * @returns The selected data as a string with format determined by coercionType.\n */\n",
+                  "docComment": "/**\n * Asynchronously returns selected data from the subject or body of a message.\n *\n * If there is no selection but the cursor is in the body or subject, the method returns an empty string for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.\n *\n * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.\n *\n * **Note**: In Outlook on the web, the method returns the string \"null\" if no text is selected but the cursor is in the body.\n *\n * [Api set: Mailbox 1.2]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.\n *\n * @param options - An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * @returns The selected data as a string with format determined by coercionType.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -812,7 +812,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#getSelectedDataAsync:member(2)",
-                  "docComment": "/**\n * Asynchronously returns selected data from the subject or body of a message.\n *\n * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.\n *\n * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.\n *\n * [Api set: Mailbox 1.2]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * @returns The selected data as a string with format determined by coercionType.\n */\n",
+                  "docComment": "/**\n * Asynchronously returns selected data from the subject or body of a message.\n *\n * If there is no selection but the cursor is in the body or subject, the method returns an empty string for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.\n *\n * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.\n *\n * **Note**: In Outlook on the web, the method returns the string \"null\" if no text is selected but the cursor is in the body.\n *\n * [Api set: Mailbox 1.2]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * @returns The selected data as a string with format determined by coercionType.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1844,8 +1844,13 @@
                       "text": "body: "
                     },
                     {
+                      "kind": "Reference",
+                      "text": "Body",
+                      "canonicalReference": "outlook!Office.Body:interface"
+                    },
+                    {
                       "kind": "Content",
-                      "text": "string"
+                      "text": " | string"
                     },
                     {
                       "kind": "Content",
@@ -1856,7 +1861,7 @@
                   "name": "body",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
-                    "endIndex": 2
+                    "endIndex": 3
                   }
                 },
                 {
@@ -1867,6 +1872,15 @@
                     {
                       "kind": "Content",
                       "text": "end: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Time",
+                      "canonicalReference": "outlook!Office.Time:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
                     },
                     {
                       "kind": "Reference",
@@ -1882,7 +1896,7 @@
                   "name": "end",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
-                    "endIndex": 2
+                    "endIndex": 4
                   }
                 },
                 {
@@ -1895,8 +1909,13 @@
                       "text": "location: "
                     },
                     {
+                      "kind": "Reference",
+                      "text": "Location",
+                      "canonicalReference": "outlook!Office.Location:interface"
+                    },
+                    {
                       "kind": "Content",
-                      "text": "string"
+                      "text": " | string"
                     },
                     {
                       "kind": "Content",
@@ -1907,7 +1926,7 @@
                   "name": "location",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
-                    "endIndex": 2
+                    "endIndex": 3
                   }
                 },
                 {
@@ -2024,6 +2043,15 @@
                     },
                     {
                       "kind": "Reference",
+                      "text": "Time",
+                      "canonicalReference": "outlook!Office.Time:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
                       "text": "Date",
                       "canonicalReference": "!Date:interface"
                     },
@@ -2036,7 +2064,7 @@
                   "name": "start",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
-                    "endIndex": 2
+                    "endIndex": 4
                   }
                 },
                 {
@@ -2049,8 +2077,13 @@
                       "text": "subject: "
                     },
                     {
+                      "kind": "Reference",
+                      "text": "Subject",
+                      "canonicalReference": "outlook!Office.Subject:interface"
+                    },
+                    {
                       "kind": "Content",
-                      "text": "string"
+                      "text": " | string"
                     },
                     {
                       "kind": "Content",
@@ -2061,7 +2094,7 @@
                   "name": "subject",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
-                    "endIndex": 2
+                    "endIndex": 3
                   }
                 }
               ],
@@ -2910,7 +2943,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AppointmentRead#itemId:member",
-                  "docComment": "/**\n * Gets the Exchange Web Services item identifier for the current item.\n *\n * The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in the callback function.\n *\n * **Note**: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Attendee\n */\n",
+                  "docComment": "/**\n * Gets the {@link https://docs.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier} for the current item.\n *\n * The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in the callback function.\n *\n * **Note**: The identifier returned by the itemId property is the same as the {@link https://docs.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Attendee\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4578,7 +4611,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.Contact:interface",
-              "docComment": "/**\n * Represents a contact stored on the server. Read mode only.\n *\n * The list of contacts associated with an email message or appointment is returned in the contacts property of the {@link Office.Entities | Entities} object that is returned by the getEntities or getEntitiesByType method of the active item.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read\n */\n",
+              "docComment": "/**\n * Represents the details about a contact (similar to what's on a physical contact or business card) extracted from the item's body. Read mode only.\n *\n * The list of contacts extracted from the body of an email message or appointment is returned in the contacts property of the {@link Office.Entities | Entities} object returned by the getEntities or getEntitiesByType method of the current item.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -6586,7 +6619,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.ItemCompose#getSelectedDataAsync:member(1)",
-                  "docComment": "/**\n * Asynchronously returns selected data from the subject or body of a message.\n *\n * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.\n *\n * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.\n *\n * [Api set: Mailbox 1.2]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.\n *\n * @param options - An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * @returns The selected data as a string with format determined by coercionType.\n */\n",
+                  "docComment": "/**\n * Asynchronously returns selected data from the subject or body of a message.\n *\n * If there is no selection but the cursor is in the body or subject, the method returns an empty string for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.\n *\n * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.\n *\n * **Note**: In Outlook on the web, the method returns the string \"null\" if no text is selected but the cursor is in the body.\n *\n * [Api set: Mailbox 1.2]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.\n *\n * @param options - An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * @returns The selected data as a string with format determined by coercionType.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6674,7 +6707,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.ItemCompose#getSelectedDataAsync:member(2)",
-                  "docComment": "/**\n * Asynchronously returns selected data from the subject or body of a message.\n *\n * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.\n *\n * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.\n *\n * [Api set: Mailbox 1.2]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * @returns The selected data as a string with format determined by coercionType.\n */\n",
+                  "docComment": "/**\n * Asynchronously returns selected data from the subject or body of a message.\n *\n * If there is no selection but the cursor is in the body or subject, the method returns an empty string for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.\n *\n * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.\n *\n * **Note**: In Outlook on the web, the method returns the string \"null\" if no text is selected but the cursor is in the body.\n *\n * [Api set: Mailbox 1.2]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * @returns The selected data as a string with format determined by coercionType.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7746,7 +7779,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.ItemRead#itemId:member",
-                  "docComment": "/**\n * Gets the Exchange Web Services item identifier for the current item.\n *\n * The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in the callback function.\n *\n * **Note**: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read\n */\n",
+                  "docComment": "/**\n * Gets the {@link https://docs.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier} for the current item.\n *\n * The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in the callback function.\n *\n * **Note**: The identifier returned by the itemId property is the same as the {@link https://docs.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Read\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14909,7 +14942,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageCompose#getSelectedDataAsync:member(1)",
-                  "docComment": "/**\n * Asynchronously returns selected data from the subject or body of a message.\n *\n * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.\n *\n * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.\n *\n * [Api set: Mailbox 1.2]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.\n *\n * @param options - An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * @returns The selected data as a string with format determined by coercionType.\n */\n",
+                  "docComment": "/**\n * Asynchronously returns selected data from the subject or body of a message.\n *\n * If there is no selection but the cursor is in the body or subject, the method returns an empty string for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.\n *\n * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.\n *\n * **Note**: In Outlook on the web, the method returns the string \"null\" if no text is selected but the cursor is in the body.\n *\n * [Api set: Mailbox 1.2]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.\n *\n * @param options - An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * @returns The selected data as a string with format determined by coercionType.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14997,7 +15030,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageCompose#getSelectedDataAsync:member(2)",
-                  "docComment": "/**\n * Asynchronously returns selected data from the subject or body of a message.\n *\n * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.\n *\n * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.\n *\n * [Api set: Mailbox 1.2]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * @returns The selected data as a string with format determined by coercionType.\n */\n",
+                  "docComment": "/**\n * Asynchronously returns selected data from the subject or body of a message.\n *\n * If there is no selection but the cursor is in the body or subject, the method returns an empty string for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.\n *\n * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.\n *\n * **Note**: In Outlook on the web, the method returns the string \"null\" if no text is selected but the cursor is in the body.\n *\n * [Api set: Mailbox 1.2]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * @returns The selected data as a string with format determined by coercionType.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -16406,6 +16439,32 @@
                 },
                 {
                   "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.MessageRead#end:member",
+                  "docComment": "/**\n * Gets the date and time that the appointment is to end.\n *\n * The end property is a Date object expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time.\n *\n * When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "end: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Date",
+                      "canonicalReference": "!Date:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "end",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageRead#from:member",
                   "docComment": "/**\n * Gets the email address of the sender of a message.\n *\n * The from and sender properties represent the same person unless the message is sent by a delegate. In that case, the from property represents the delegator, and the sender property represents the delegate.\n *\n * **Note**: The recipientType property of the EmailAddressDetails object in the from property is undefined.\n *\n * The from property returns an EmailAddressDetails object.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
                   "excerptTokens": [
@@ -16799,7 +16858,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageRead#itemId:member",
-                  "docComment": "/**\n * Gets the Exchange Web Services item identifier for the current item.\n *\n * The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in the callback function.\n *\n * **Note**: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
+                  "docComment": "/**\n * Gets the {@link https://docs.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier} for the current item.\n *\n * The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in the callback function.\n *\n * **Note**: The identifier returned by the itemId property is the same as the {@link https://docs.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange | Exchange Web Services item identifier}. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -16926,6 +16985,31 @@
                     }
                   ],
                   "name": "loadCustomPropertiesAsync"
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.MessageRead#location:member",
+                  "docComment": "/**\n * Gets the location of a meeting request.\n *\n * The location property returns a string that contains the location of the appointment.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "location: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "location",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
                 },
                 {
                   "kind": "PropertySignature",
@@ -17210,6 +17294,32 @@
                   ],
                   "releaseTag": "Public",
                   "name": "seriesId",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.MessageRead#start:member",
+                  "docComment": "/**\n * Gets the date and time that the appointment is to begin.\n *\n * The start property is a Date object expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's local date and time.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "start: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Date",
+                      "canonicalReference": "!Date:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "start",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
