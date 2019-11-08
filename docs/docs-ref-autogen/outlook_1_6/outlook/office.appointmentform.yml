@@ -45,10 +45,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'body: string;'
+      content: 'body: Body | string;'
       return:
         type:
-          - string
+          - 'outlook!Office.AppointmentForm#body~0:complex'
   - uid: 'outlook!Office.AppointmentForm#end:member'
     summary: >-
       Gets or sets the date and time that the appointment is to end.
@@ -88,10 +88,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'end: Date;'
+      content: 'end: Time | Date;'
       return:
         type:
-          - '!Date:interface'
+          - 'outlook!Office.AppointmentForm#end~0:complex'
   - uid: 'outlook!Office.AppointmentForm#location:member'
     summary: >-
       Gets or sets the location of an appointment.
@@ -124,10 +124,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'location: string;'
+      content: 'location: Location | string;'
       return:
         type:
-          - string
+          - 'outlook!Office.AppointmentForm#location~0:complex'
   - uid: 'outlook!Office.AppointmentForm#optionalAttendees:member'
     summary: >-
       Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
@@ -283,10 +283,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'start: Date;'
+      content: 'start: Time | Date;'
       return:
         type:
-          - '!Date:interface'
+          - 'outlook!Office.AppointmentForm#start~0:complex'
   - uid: 'outlook!Office.AppointmentForm#subject:member'
     summary: >-
       Gets or sets the description that appears in the subject field of an item.
@@ -322,13 +322,41 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'subject: string;'
+      content: 'subject: Subject | string;'
       return:
         type:
-          - string
+          - 'outlook!Office.AppointmentForm#subject~0:complex'
 references:
-  - uid: '!Date:interface'
-    name: Date
+  - uid: 'outlook!Office.AppointmentForm#body~0:complex'
+    name: Body | string
+    fullName: Office.Body | string
+    spec.typeScript:
+      - uid: 'outlook!Office.Body:interface'
+        name: Body
+        fullName: Office.Body
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'outlook!Office.AppointmentForm#end~0:complex'
+    name: Time | Date
+    fullName: Office.Time | Date
+    spec.typeScript:
+      - uid: 'outlook!Office.Time:interface'
+        name: Time
+        fullName: Office.Time
+      - name: ' | '
+        fullName: ' | '
+      - uid: '!Date:interface'
+        name: Date
+        fullName: Date
+  - uid: 'outlook!Office.AppointmentForm#location~0:complex'
+    name: Location | string
+    fullName: Office.Location | string
+    spec.typeScript:
+      - uid: 'outlook!Office.Location:interface'
+        name: Location
+        fullName: Office.Location
+      - name: ' | string'
+        fullName: ' | string'
   - uid: 'outlook!Office.AppointmentForm#optionalAttendees~0:complex'
     name: 'Recipients[] | EmailAddressDetails[]'
     fullName: 'Office.Recipients[] | Office.EmailAddressDetails[]'
@@ -357,3 +385,24 @@ references:
         fullName: Office.EmailAddressDetails
       - name: '[]'
         fullName: '[]'
+  - uid: 'outlook!Office.AppointmentForm#start~0:complex'
+    name: Time | Date
+    fullName: Office.Time | Date
+    spec.typeScript:
+      - uid: 'outlook!Office.Time:interface'
+        name: Time
+        fullName: Office.Time
+      - name: ' | '
+        fullName: ' | '
+      - uid: '!Date:interface'
+        name: Date
+        fullName: Date
+  - uid: 'outlook!Office.AppointmentForm#subject~0:complex'
+    name: Subject | string
+    fullName: Office.Subject | string
+    spec.typeScript:
+      - uid: 'outlook!Office.Subject:interface'
+        name: Subject
+        fullName: Office.Subject
+      - name: ' | string'
+        fullName: ' | string'
