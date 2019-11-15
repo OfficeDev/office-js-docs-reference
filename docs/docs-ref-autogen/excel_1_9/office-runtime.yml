@@ -15,7 +15,10 @@ items:
       - 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
       - 'office-runtime!OfficeRuntime.Storage:interface'
   - uid: 'office-runtime!OfficeRuntime.displayWebDialog:function(1)'
-    summary: Method that enables a pop up web dialog box.
+    summary: |-
+      Method that enables a pop up web dialog box.
+
+      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: 'OfficeRuntime.displayWebDialog(url, options)'
     fullName: 'OfficeRuntime.displayWebDialog(url, options)'
     langs:

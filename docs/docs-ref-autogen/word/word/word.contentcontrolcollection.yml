@@ -477,6 +477,7 @@ items:
                   contentControls.items[0].load(  'appearance,' +
                                                   'cannotDelete,' +
                                                   'cannotEdit,' +
+                                                  'color,' +
                                                   'id,' +
                                                   'placeHolderText,' +
                                                   'removeWhenEdited,' +
