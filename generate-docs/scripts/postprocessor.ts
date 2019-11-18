@@ -54,66 +54,6 @@ tryCatch(async () => {
         .filter(filename => filename !== "overview" && filename !== "images")
         .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
 
-    // fix all the individual TOC files
-    const commonTocFolder = path.resolve("../yaml/office");
-    const commonToc = scrubAndWriteToc(commonTocFolder);
-    const hostVersionMap = [{host: "excel", versions: 11},
-                            {host: "onenote", versions: 1},
-                            {host: "outlook", versions: 9},
-                            {host: "powerpoint", versions: 1},
-                            {host: "visio", versions: 1},
-                            {host: "word", versions: 4}];
-
-    hostVersionMap.forEach(category => {
-        scrubAndWriteToc(path.resolve(`../yaml/${category.host}`), commonToc, category.host, category.versions);
-        for (let i = 1; i < category.versions; i++) {
-            scrubAndWriteToc(path.resolve(`../yaml/${category.host}_1_${i}`), commonToc, category.host, i);
-        }
-    });
-
-    // Special case for ExcelApi Online
-    scrubAndWriteToc(path.resolve(`../yaml/excel_online`), commonToc, "excel", 99);
-
-
-    console.log(`Namespace pass on Outlook docs`);
-    // replace Outlook/CommonAPI namespace references with Office
-    fsx.readdirSync(docsSource)
-        .filter(filename => filename.indexOf("outlook") >= 0 && filename.indexOf(".yml") < 0)
-        .forEach(filename => {
-            let subfolder = docsSource + '/' + filename + "/outlook";
-            fsx.readdirSync(subfolder)
-                .forEach(subfilename => {
-                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace(/CommonAPI/g, "Office"));
-                });
-        });
-    console.log(`Namespace pass on Office docs`);
-    const officeFolder = docsSource + "/office/office";
-    fsx.readdirSync(officeFolder)
-        .forEach(filename => {
-            fsx.writeFileSync(officeFolder + '/' + filename, fsx.readFileSync(officeFolder + '/' + filename).toString().replace(/Outlook\.Mailbox/g, "Office.Mailbox").replace(/Outlook\.RoamingSettings/g, "Office.RoamingSettings"));
-        });
-
-    console.log(`Fixing top href`);
-    fsx.readdirSync(docsSource)
-        .filter(filename => filename.indexOf(".yml") < 0)
-        .forEach(filename => {
-            let subfolder = docsSource + '/' + filename;
-            fsx.readdirSync(subfolder)
-                .filter(subfilename => subfilename.indexOf("toc") >= 0)
-                .forEach(subfilename => {
-                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "overview.md"));
-                });
-        });
-
-
-    console.log(`Moving common TOC to its own folder`);
-    fsx.copySync(commonTocFolder + "/toc.yml",  "../yaml/common/toc.yml");
-    fsx.copySync(commonTocFolder + "/overview.md", "../yaml/common/overview.md");
-
-    // remove to prevent build errors
-    fsx.removeSync(commonTocFolder + "/toc.yml");
-    fsx.removeSync(commonTocFolder + "/overview.md");
-
     console.log(`Creating global TOC`);
     let globalToc = <Toc>{items: [{"name": "API reference"}]};
     globalToc.items[0].items = [{"name": "API reference overview", "href": "/javascript/api/overview"},
@@ -136,6 +76,65 @@ tryCatch(async () => {
             docsDestination + '/' + filename
         );
     });
+
+    // fix all the individual TOC files
+    const commonToc = scrubAndWriteToc(docsDestination + "/office");
+    const hostVersionMap = [{host: "excel", versions: 11},
+                            {host: "onenote", versions: 1},
+                            {host: "outlook", versions: 9},
+                            {host: "powerpoint", versions: 1},
+                            {host: "visio", versions: 1},
+                            {host: "word", versions: 4}];
+
+    hostVersionMap.forEach(category => {
+        scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}`), commonToc, category.host, category.versions);
+        for (let i = 1; i < category.versions; i++) {
+            scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}_1_${i}`), commonToc, category.host, i);
+        }
+    });
+
+    // Special case for ExcelApi Online
+    scrubAndWriteToc(path.resolve(`${docsDestination}/excel_online`), commonToc, "excel", 99);
+
+
+    console.log(`Namespace pass on Outlook docs`);
+    // replace Outlook/CommonAPI namespace references with Office
+    fsx.readdirSync(docsDestination)
+        .filter(filename => filename.indexOf("outlook") >= 0 && filename.indexOf(".yml") < 0)
+        .forEach(filename => {
+            let subfolder = docsDestination + '/' + filename + "/outlook";
+            fsx.readdirSync(subfolder)
+                .forEach(subfilename => {
+                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace(/CommonAPI/g, "Office"));
+                });
+        });
+    console.log(`Namespace pass on Office docs`);
+    const officeFolder = docsDestination + "/office/office";
+    fsx.readdirSync(officeFolder)
+        .forEach(filename => {
+            fsx.writeFileSync(officeFolder + '/' + filename, fsx.readFileSync(officeFolder + '/' + filename).toString().replace(/Outlook\.Mailbox/g, "Office.Mailbox").replace(/Outlook\.RoamingSettings/g, "Office.RoamingSettings"));
+        });
+
+    console.log(`Fixing top href`);
+    fsx.readdirSync(docsDestination)
+        .filter(filename => filename.indexOf(".yml") < 0)
+        .forEach(filename => {
+            let subfolder = docsDestination + '/' + filename;
+            fsx.readdirSync(subfolder)
+                .filter(subfilename => subfilename.indexOf("toc") >= 0)
+                .forEach(subfilename => {
+                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "overview.md"));
+                });
+        });
+
+
+    console.log(`Moving common TOC to its own folder`);
+    fsx.copySync(docsDestination + "/office/toc.yml", docsDestination +  "/common/toc.yml");
+    fsx.copySync(docsDestination + "/overview/overview.md", docsDestination + "/common/overview.md");
+
+    // remove to prevent build errors
+    fsx.removeSync(docsDestination + "/office/overview.md");
+    fsx.removeSync(docsDestination + "/office/toc.yml");
 
     console.log("\nPostprocessor script complete!\n");
 
