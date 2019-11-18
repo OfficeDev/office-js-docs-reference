@@ -2,10 +2,11 @@
 items:
   - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionData:interface'
     summary: An interface describing the data returned by calling "paragraphCollection.toJSON()".
-    name: OneNote.Interfaces.ParagraphCollectionData
+    name: ParagraphCollectionData
     fullName: OneNote.Interfaces.ParagraphCollectionData
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:

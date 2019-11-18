@@ -2,9 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.LineUpdateData:interface'
     summary: 'An interface for updating data on the Line object, for use in `line.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.LineUpdateData
+    name: LineUpdateData
     fullName: Excel.Interfaces.LineUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

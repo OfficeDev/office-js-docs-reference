@@ -4,9 +4,10 @@ items:
     summary: >-
       An interface for updating data on the ConditionalRangeFormat object, for use in `conditionalRangeFormat.set({ ...
       })`<!-- -->.
-    name: Excel.Interfaces.ConditionalRangeFormatUpdateData
+    name: ConditionalRangeFormatUpdateData
     fullName: Excel.Interfaces.ConditionalRangeFormatUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

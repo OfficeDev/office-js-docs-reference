@@ -5,10 +5,11 @@ items:
       Represents a collection of RowColumnPivotHierarchy items associated with the PivotTable.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions
+    name: RowColumnPivotHierarchyCollectionLoadOptions
     fullName: Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

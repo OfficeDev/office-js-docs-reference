@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.RangeFontUpdateData:interface'
     summary: 'An interface for updating data on the RangeFont object, for use in `rangeFont.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.RangeFontUpdateData
+    name: RangeFontUpdateData
     fullName: Excel.Interfaces.RangeFontUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

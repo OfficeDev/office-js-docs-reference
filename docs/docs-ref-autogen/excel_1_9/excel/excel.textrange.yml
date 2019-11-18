@@ -5,13 +5,16 @@ items:
       Contains the text that is attached to a shape, in addition to properties and methods for manipulating the text.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.TextRange
+    name: TextRange
     fullName: Excel.TextRange
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TextRange#context:member'
@@ -236,15 +239,21 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ShapeFont:class'
-    name: Excel.ShapeFont
+    name: ShapeFont
+    fullName: Excel.ShapeFont
   - uid: 'excel!Excel.TextRange:class'
-    name: Excel.TextRange
+    name: TextRange
+    fullName: Excel.TextRange
   - uid: 'excel!Excel.Interfaces.TextRangeLoadOptions:interface'
-    name: Excel.Interfaces.TextRangeLoadOptions
+    name: TextRangeLoadOptions
+    fullName: Excel.Interfaces.TextRangeLoadOptions
   - uid: 'excel!Excel.Interfaces.TextRangeUpdateData:interface'
-    name: Interfaces.TextRangeUpdateData
+    name: TextRangeUpdateData
+    fullName: Excel.Interfaces.TextRangeUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.TextRangeData:interface'
-    name: Excel.Interfaces.TextRangeData
+    name: TextRangeData
+    fullName: Excel.Interfaces.TextRangeData

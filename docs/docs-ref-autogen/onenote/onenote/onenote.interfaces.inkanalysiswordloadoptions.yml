@@ -5,10 +5,11 @@ items:
       Represents ink analysis data for an identified word formed by ink strokes.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Interfaces.InkAnalysisWordLoadOptions
+    name: InkAnalysisWordLoadOptions
     fullName: OneNote.Interfaces.InkAnalysisWordLoadOptions
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -106,4 +107,5 @@ items:
           - boolean
 references:
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions:interface'
-    name: OneNote.Interfaces.InkAnalysisLineLoadOptions
+    name: InkAnalysisLineLoadOptions
+    fullName: OneNote.Interfaces.InkAnalysisLineLoadOptions

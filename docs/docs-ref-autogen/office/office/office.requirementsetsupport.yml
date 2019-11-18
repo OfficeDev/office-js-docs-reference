@@ -2,10 +2,11 @@
 items:
   - uid: 'office!Office.RequirementSetSupport:interface'
     summary: Provides information about which Requirement Sets are supported in the current environment.
-    name: Office.RequirementSetSupport
+    name: RequirementSetSupport
     fullName: Office.RequirementSetSupport
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:

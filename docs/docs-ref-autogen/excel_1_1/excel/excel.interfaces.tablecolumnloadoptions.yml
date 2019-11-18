@@ -5,10 +5,11 @@ items:
       Represents a column in a table.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.TableColumnLoadOptions
+    name: TableColumnLoadOptions
     fullName: Excel.Interfaces.TableColumnLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

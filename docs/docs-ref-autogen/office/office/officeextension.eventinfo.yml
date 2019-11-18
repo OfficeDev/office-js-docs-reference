@@ -1,10 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'office!OfficeExtension.EventInfo:interface'
-    name: OfficeExtension.EventInfo
+    name: EventInfo
     fullName: OfficeExtension.EventInfo
     langs:
       - typeScript
+    namespace: 'office!OfficeExtension:namespace'
     type: interface
     syntax:
       typeParameters:

@@ -2,10 +2,11 @@
 items:
   - uid: 'visio!Visio.Interfaces.ApplicationUpdateData:interface'
     summary: 'An interface for updating data on the Application object, for use in "application.set(<!-- -->{ ... }<!-- -->)".'
-    name: Visio.Interfaces.ApplicationUpdateData
+    name: ApplicationUpdateData
     fullName: Visio.Interfaces.ApplicationUpdateData
     langs:
       - typeScript
+    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:

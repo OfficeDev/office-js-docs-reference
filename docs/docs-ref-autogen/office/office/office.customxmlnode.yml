@@ -3,10 +3,11 @@ items:
   - uid: 'office!Office.CustomXmlNode:interface'
     summary: Represents an XML node in a tree in a document.
     remarks: '**Hosts**: Word'
-    name: Office.CustomXmlNode
+    name: CustomXmlNode
     fullName: Office.CustomXmlNode
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:
@@ -764,7 +765,8 @@ items:
             - 'office!Office.CustomXmlNode#setXmlAsync~1:complex'
 references:
   - uid: 'office!Office.AsyncContextOptions:interface'
-    name: Office.AsyncContextOptions
+    name: AsyncContextOptions
+    fullName: Office.AsyncContextOptions
   - uid: 'office!Office.CustomXmlNode#getNodesAsync~0:complex'
     name: '(result: AsyncResult<CustomXmlNode[]>) => void'
     fullName: '(result: Office.AsyncResult<Office.CustomXmlNode[]>) => void'

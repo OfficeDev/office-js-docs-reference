@@ -5,10 +5,11 @@ items:
       Represents a conditional format DataBar Format for the negative side of the data bar.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
+    name: ConditionalDataBarNegativeFormatLoadOptions
     fullName: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

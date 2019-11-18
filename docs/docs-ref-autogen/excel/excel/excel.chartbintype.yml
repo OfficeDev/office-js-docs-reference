@@ -5,10 +5,11 @@ items:
       Specifies the bin's type of a histogram chart or pareto chart series.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartBinType
+    name: ChartBinType
     fullName: Excel.ChartBinType
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

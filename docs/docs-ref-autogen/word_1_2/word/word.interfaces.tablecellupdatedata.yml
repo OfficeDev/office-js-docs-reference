@@ -2,9 +2,10 @@
 items:
   - uid: 'word!Word.Interfaces.TableCellUpdateData:interface'
     summary: 'An interface for updating data on the TableCell object, for use in "tableCell.set(<!-- -->{ ... }<!-- -->)".'
-    name: Word.Interfaces.TableCellUpdateData
+    name: TableCellUpdateData
     fullName: Word.Interfaces.TableCellUpdateData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!

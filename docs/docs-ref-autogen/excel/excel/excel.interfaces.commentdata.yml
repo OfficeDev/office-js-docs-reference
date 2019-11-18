@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.CommentData:interface'
     summary: An interface describing the data returned by calling `comment.toJSON()`<!-- -->.
-    name: Excel.Interfaces.CommentData
+    name: CommentData
     fullName: Excel.Interfaces.CommentData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

@@ -5,13 +5,16 @@ items:
       Represents a collection of PivotTable styles.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.PivotTableStyleCollection
+    name: PivotTableStyleCollection
     fullName: Excel.PivotTableStyleCollection
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PivotTableStyleCollection#add:member(1)'
@@ -260,9 +263,11 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.PivotTableStyle:class'
-    name: Excel.PivotTableStyle
+    name: PivotTableStyle
+    fullName: Excel.PivotTableStyle
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.PivotTableStyleCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -282,7 +287,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.PivotTableStyleCollection:class'
-    name: Excel.PivotTableStyleCollection
+    name: PivotTableStyleCollection
+    fullName: Excel.PivotTableStyleCollection
   - uid: 'excel!Excel.PivotTableStyleCollection#load~0:complex'
     name: Excel.Interfaces.PivotTableStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.PivotTableStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -307,4 +313,5 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionData:interface'
-    name: Excel.Interfaces.PivotTableStyleCollectionData
+    name: PivotTableStyleCollectionData
+    fullName: Excel.Interfaces.PivotTableStyleCollectionData

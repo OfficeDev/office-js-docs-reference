@@ -33,10 +33,11 @@ items:
 
       -
       [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
-    name: Office.Binding
+    name: Binding
     fullName: Office.Binding
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:
@@ -1016,9 +1017,11 @@ items:
           ```
 references:
   - uid: 'office!Office.EventType:enum'
-    name: Office.EventType
+    name: EventType
+    fullName: Office.EventType
   - uid: 'office!Office.AsyncContextOptions:interface'
-    name: Office.AsyncContextOptions
+    name: AsyncContextOptions
+    fullName: Office.AsyncContextOptions
   - uid: 'office!Office.Binding#addHandlerAsync~0:complex'
     name: '(result: Office.AsyncResult<void>) => void'
     fullName: '(result: Office.AsyncResult<void>) => void'
@@ -1042,9 +1045,11 @@ references:
       - name: <void>) => void
         fullName: <void>) => void
   - uid: 'office!Office.Document:interface'
-    name: Office.Document
+    name: Document
+    fullName: Office.Document
   - uid: 'office!Office.GetBindingDataOptions:interface'
     name: GetBindingDataOptions
+    fullName: Office.GetBindingDataOptions
   - uid: 'office!Office.Binding#getDataAsync~0:complex'
     name: '(result: AsyncResult<T>) => void'
     fullName: '(result: Office.AsyncResult<T>) => void'
@@ -1069,6 +1074,7 @@ references:
         fullName: <T>) => void
   - uid: 'office!Office.RemoveHandlerOptions:interface'
     name: RemoveHandlerOptions
+    fullName: Office.RemoveHandlerOptions
   - uid: 'office!Office.Binding#removeHandlerAsync~0:complex'
     name: '(result: AsyncResult<void>) => void'
     fullName: '(result: Office.AsyncResult<void>) => void'
@@ -1102,6 +1108,7 @@ references:
         fullName: ' | any'
   - uid: 'office!Office.SetBindingDataOptions:interface'
     name: SetBindingDataOptions
+    fullName: Office.SetBindingDataOptions
   - uid: 'office!Office.Binding#setDataAsync~1:complex'
     name: '(result: AsyncResult<void>) => void'
     fullName: '(result: Office.AsyncResult<void>) => void'
@@ -1134,4 +1141,5 @@ references:
       - name: <void>) => void
         fullName: <void>) => void
   - uid: 'office!Office.BindingType:enum'
-    name: Office.BindingType
+    name: BindingType
+    fullName: Office.BindingType

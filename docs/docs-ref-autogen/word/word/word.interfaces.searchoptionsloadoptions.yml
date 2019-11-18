@@ -5,10 +5,11 @@ items:
       Specifies the options to be included in a search operation.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.Interfaces.SearchOptionsLoadOptions
+    name: SearchOptionsLoadOptions
     fullName: Word.Interfaces.SearchOptionsLoadOptions
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

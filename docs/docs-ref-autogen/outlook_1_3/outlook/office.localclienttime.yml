@@ -11,10 +11,11 @@ items:
 
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Read
-    name: Office.LocalClientTime
+    name: LocalClientTime
     fullName: Office.LocalClientTime
     langs:
       - typeScript
+    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

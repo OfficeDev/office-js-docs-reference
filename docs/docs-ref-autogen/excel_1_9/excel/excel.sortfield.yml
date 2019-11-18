@@ -5,10 +5,11 @@ items:
       Represents a condition in a sorting operation.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.SortField
+    name: SortField
     fullName: Excel.SortField
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:
@@ -137,7 +138,8 @@ references:
       - name: ' | "Normal" | "TextAsNumber"'
         fullName: ' | "Normal" | "TextAsNumber"'
   - uid: 'excel!Excel.Icon:interface'
-    name: Excel.Icon
+    name: Icon
+    fullName: Excel.Icon
   - uid: 'excel!Excel.SortField#sortOn~0:complex'
     name: Excel.SortOn | "Value" | "CellColor" | "FontColor" | "Icon"
     fullName: Excel.SortOn | "Value" | "CellColor" | "FontColor" | "Icon"

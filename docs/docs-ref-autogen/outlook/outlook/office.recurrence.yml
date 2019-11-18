@@ -28,10 +28,11 @@ items:
       <td>Meeting Request - Read Series</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td> </tr>
       <tr> <td>Meeting Request - Read Instance</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td>
       </tr> </table>
-    name: Office.Recurrence
+    name: Recurrence
     fullName: Office.Recurrence
     langs:
       - typeScript
+    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:
@@ -418,8 +419,10 @@ references:
         fullName: '>) => void'
   - uid: 'outlook!Office.RecurrenceProperties:interface'
     name: RecurrenceProperties
+    fullName: Office.RecurrenceProperties
   - uid: 'outlook!Office.RecurrenceTimeZone:interface'
     name: RecurrenceTimeZone
+    fullName: Office.RecurrenceTimeZone
   - uid: 'outlook!Office.Recurrence#recurrenceType~0:complex'
     name: MailboxEnums.RecurrenceType | string
     fullName: Office.MailboxEnums.RecurrenceType | string
@@ -431,8 +434,10 @@ references:
         fullName: ' | string'
   - uid: 'outlook!Office.SeriesTime:interface'
     name: SeriesTime
+    fullName: Office.SeriesTime
   - uid: 'outlook!Office.Recurrence:interface'
     name: Recurrence
+    fullName: Office.Recurrence
   - uid: 'outlook!Office.Recurrence#setAsync~0:complex'
     name: '(asyncResult: Office.AsyncResult<void>) => void'
     fullName: '(asyncResult: Office.AsyncResult<void>) => void'

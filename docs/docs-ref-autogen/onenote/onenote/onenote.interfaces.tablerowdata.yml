@@ -2,10 +2,11 @@
 items:
   - uid: 'onenote!OneNote.Interfaces.TableRowData:interface'
     summary: An interface describing the data returned by calling "tableRow.toJSON()".
-    name: OneNote.Interfaces.TableRowData
+    name: TableRowData
     fullName: OneNote.Interfaces.TableRowData
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:

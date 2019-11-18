@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the SettingCollection object, for use in `settingCollection.set({ ... })`<!--
       -->.
-    name: Excel.Interfaces.SettingCollectionUpdateData
+    name: SettingCollectionUpdateData
     fullName: Excel.Interfaces.SettingCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

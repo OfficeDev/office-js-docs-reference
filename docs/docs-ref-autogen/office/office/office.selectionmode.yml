@@ -4,10 +4,11 @@ items:
     summary: >-
       Specifies whether to select (highlight) the location to navigate to (when using the
       [Document](xref:office!Office.Document:interface)<!-- -->.goToByIdAsync method).
-    name: Office.SelectionMode
+    name: SelectionMode
     fullName: Office.SelectionMode
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: enum
     package: office!
     children:

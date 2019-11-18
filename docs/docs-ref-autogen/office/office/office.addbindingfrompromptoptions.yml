@@ -2,10 +2,11 @@
 items:
   - uid: 'office!Office.AddBindingFromPromptOptions:interface'
     summary: Provides options for configuring the prompt and identifying the binding that is created.
-    name: Office.AddBindingFromPromptOptions
+    name: AddBindingFromPromptOptions
     fullName: Office.AddBindingFromPromptOptions
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:
@@ -79,4 +80,5 @@ items:
           - 'office!Office.TableData:class'
 references:
   - uid: 'office!Office.TableData:class'
-    name: Office.TableData
+    name: TableData
+    fullName: Office.TableData

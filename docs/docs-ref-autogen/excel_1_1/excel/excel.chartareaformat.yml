@@ -5,13 +5,16 @@ items:
       Encapsulates the format properties for the overall chart area.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartAreaFormat
+    name: ChartAreaFormat
     fullName: Excel.ChartAreaFormat
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartAreaFormat#context:member'
@@ -208,17 +211,24 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartFill:class'
-    name: Excel.ChartFill
+    name: ChartFill
+    fullName: Excel.ChartFill
   - uid: 'excel!Excel.ChartFont:class'
-    name: Excel.ChartFont
+    name: ChartFont
+    fullName: Excel.ChartFont
   - uid: 'excel!Excel.ChartAreaFormat:class'
-    name: Excel.ChartAreaFormat
+    name: ChartAreaFormat
+    fullName: Excel.ChartAreaFormat
   - uid: 'excel!Excel.Interfaces.ChartAreaFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartAreaFormatLoadOptions
+    name: ChartAreaFormatLoadOptions
+    fullName: Excel.Interfaces.ChartAreaFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartAreaFormatUpdateData:interface'
-    name: Interfaces.ChartAreaFormatUpdateData
+    name: ChartAreaFormatUpdateData
+    fullName: Excel.Interfaces.ChartAreaFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartAreaFormatData:interface'
-    name: Excel.Interfaces.ChartAreaFormatData
+    name: ChartAreaFormatData
+    fullName: Excel.Interfaces.ChartAreaFormatData

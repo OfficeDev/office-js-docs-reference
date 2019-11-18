@@ -2,10 +2,11 @@
 items:
   - uid: 'word!Word.Interfaces.TableCellCollectionData:interface'
     summary: An interface describing the data returned by calling "tableCellCollection.toJSON()".
-    name: Word.Interfaces.TableCellCollectionData
+    name: TableCellCollectionData
     fullName: Word.Interfaces.TableCellCollectionData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

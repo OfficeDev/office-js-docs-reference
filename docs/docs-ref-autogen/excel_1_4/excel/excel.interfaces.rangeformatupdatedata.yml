@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData:interface'
     summary: 'An interface for updating data on the RangeFormat object, for use in `rangeFormat.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.RangeFormatUpdateData
+    name: RangeFormatUpdateData
     fullName: Excel.Interfaces.RangeFormatUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -161,11 +162,14 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.RangeBorderCollectionUpdateData:interface'
-    name: Excel.Interfaces.RangeBorderCollectionUpdateData
+    name: RangeBorderCollectionUpdateData
+    fullName: Excel.Interfaces.RangeBorderCollectionUpdateData
   - uid: 'excel!Excel.Interfaces.RangeFillUpdateData:interface'
-    name: Excel.Interfaces.RangeFillUpdateData
+    name: RangeFillUpdateData
+    fullName: Excel.Interfaces.RangeFillUpdateData
   - uid: 'excel!Excel.Interfaces.RangeFontUpdateData:interface'
-    name: Excel.Interfaces.RangeFontUpdateData
+    name: RangeFontUpdateData
+    fullName: Excel.Interfaces.RangeFontUpdateData
   - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData#horizontalAlignment~0:complex'
     name: >-
       Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection"
@@ -180,7 +184,8 @@ references:
       - name: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
         fullName: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
   - uid: 'excel!Excel.Interfaces.FormatProtectionUpdateData:interface'
-    name: Excel.Interfaces.FormatProtectionUpdateData
+    name: FormatProtectionUpdateData
+    fullName: Excel.Interfaces.FormatProtectionUpdateData
   - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData#verticalAlignment~0:complex'
     name: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
     fullName: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"

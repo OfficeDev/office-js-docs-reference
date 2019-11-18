@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.TableCollectionUpdateData:interface'
     summary: 'An interface for updating data on the TableCollection object, for use in `tableCollection.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.TableCollectionUpdateData
+    name: TableCollectionUpdateData
     fullName: Excel.Interfaces.TableCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

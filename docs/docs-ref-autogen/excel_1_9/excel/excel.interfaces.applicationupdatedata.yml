@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ApplicationUpdateData:interface'
     summary: 'An interface for updating data on the Application object, for use in `application.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.ApplicationUpdateData
+    name: ApplicationUpdateData
     fullName: Excel.Interfaces.ApplicationUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -59,4 +60,5 @@ references:
       - name: ' | "Automatic" | "AutomaticExceptTables" | "Manual"'
         fullName: ' | "Automatic" | "AutomaticExceptTables" | "Manual"'
   - uid: 'excel!Excel.Interfaces.IterativeCalculationUpdateData:interface'
-    name: Excel.Interfaces.IterativeCalculationUpdateData
+    name: IterativeCalculationUpdateData
+    fullName: Excel.Interfaces.IterativeCalculationUpdateData

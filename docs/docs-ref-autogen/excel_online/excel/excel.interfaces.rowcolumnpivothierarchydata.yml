@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface'
     summary: An interface describing the data returned by calling `rowColumnPivotHierarchy.toJSON()`<!-- -->.
-    name: Excel.Interfaces.RowColumnPivotHierarchyData
+    name: RowColumnPivotHierarchyData
     fullName: Excel.Interfaces.RowColumnPivotHierarchyData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

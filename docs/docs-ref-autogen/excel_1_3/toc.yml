@@ -256,6 +256,7 @@ items:
         uid: office!
         items:
           - name: Office
+            uid: 'office!Office:namespace'
             items:
               - name: Enums
                 uid: ''
@@ -308,15 +309,6 @@ items:
                 uid: 'office!Office.AddBindingFromPromptOptions:interface'
               - name: AddBindingFromSelectionOptions
                 uid: 'office!Office.AddBindingFromSelectionOptions:interface'
-              - name: AddinCommands
-                items:
-                  - name: Event
-                    uid: 'office!Office.AddinCommands.Event:interface'
-                  - name: EventCompletedOptions
-                    uid: >-
-                      office!Office.AddinCommands.EventCompletedOptions:interface
-                  - name: Source
-                    uid: 'office!Office.AddinCommands.Source:interface'
               - name: AsyncContextOptions
                 uid: 'office!Office.AsyncContextOptions:interface'
               - name: AsyncResult
@@ -407,7 +399,17 @@ items:
                 uid: 'office!Office.TextBinding:interface'
               - name: UI
                 uid: 'office!Office.UI:interface'
+          - name: Office.AddinCommands
+            uid: 'office!Office.AddinCommands:namespace'
+            items:
+              - name: Event
+                uid: 'office!Office.AddinCommands.Event:interface'
+              - name: EventCompletedOptions
+                uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
+              - name: Source
+                uid: 'office!Office.AddinCommands.Source:interface'
           - name: OfficeExtension
+            uid: 'office!OfficeExtension:namespace'
             items:
               - name: ClientObject
                 uid: 'office!OfficeExtension.ClientObject:class'

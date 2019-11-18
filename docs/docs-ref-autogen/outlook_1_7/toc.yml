@@ -6,34 +6,6 @@ items:
       - name: Outlook
         uid: outlook!
         items:
-          - name: MailboxEnums
-            items:
-              - name: AttachmentType
-                uid: 'outlook!Office.MailboxEnums.AttachmentType:enum'
-              - name: Days
-                uid: 'outlook!Office.MailboxEnums.Days:enum'
-              - name: EntityType
-                uid: 'outlook!Office.MailboxEnums.EntityType:enum'
-              - name: ItemNotificationMessageType
-                uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType:enum'
-              - name: ItemType
-                uid: 'outlook!Office.MailboxEnums.ItemType:enum'
-              - name: Month
-                uid: 'outlook!Office.MailboxEnums.Month:enum'
-              - name: OWAView
-                uid: 'outlook!Office.MailboxEnums.OWAView:enum'
-              - name: RecipientType
-                uid: 'outlook!Office.MailboxEnums.RecipientType:enum'
-              - name: RecurrenceTimeZone
-                uid: 'outlook!Office.MailboxEnums.RecurrenceTimeZone:enum'
-              - name: RecurrenceType
-                uid: 'outlook!Office.MailboxEnums.RecurrenceType:enum'
-              - name: ResponseType
-                uid: 'outlook!Office.MailboxEnums.ResponseType:enum'
-              - name: RestVersion
-                uid: 'outlook!Office.MailboxEnums.RestVersion:enum'
-              - name: WeekNumber
-                uid: 'outlook!Office.MailboxEnums.WeekNumber:enum'
           - name: AppointmentCompose
             uid: 'outlook!Office.AppointmentCompose:interface'
           - name: AppointmentRead
@@ -118,6 +90,7 @@ items:
         uid: office!
         items:
           - name: Office
+            uid: 'office!Office:namespace'
             items:
               - name: Enums
                 uid: ''
@@ -170,15 +143,6 @@ items:
                 uid: 'office!Office.AddBindingFromPromptOptions:interface'
               - name: AddBindingFromSelectionOptions
                 uid: 'office!Office.AddBindingFromSelectionOptions:interface'
-              - name: AddinCommands
-                items:
-                  - name: Event
-                    uid: 'office!Office.AddinCommands.Event:interface'
-                  - name: EventCompletedOptions
-                    uid: >-
-                      office!Office.AddinCommands.EventCompletedOptions:interface
-                  - name: Source
-                    uid: 'office!Office.AddinCommands.Source:interface'
               - name: AsyncContextOptions
                 uid: 'office!Office.AsyncContextOptions:interface'
               - name: AsyncResult
@@ -269,7 +233,17 @@ items:
                 uid: 'office!Office.TextBinding:interface'
               - name: UI
                 uid: 'office!Office.UI:interface'
+          - name: Office.AddinCommands
+            uid: 'office!Office.AddinCommands:namespace'
+            items:
+              - name: Event
+                uid: 'office!Office.AddinCommands.Event:interface'
+              - name: EventCompletedOptions
+                uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
+              - name: Source
+                uid: 'office!Office.AddinCommands.Source:interface'
           - name: OfficeExtension
+            uid: 'office!OfficeExtension:namespace'
             items:
               - name: ClientObject
                 uid: 'office!OfficeExtension.ClientObject:class'

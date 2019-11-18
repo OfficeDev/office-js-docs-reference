@@ -2,10 +2,11 @@
 items:
   - uid: 'office-runtime!OfficeRuntime.ApiInformation:interface'
     summary: Interface that contains functions for checking API requirement-set support.
-    name: OfficeRuntime.ApiInformation
+    name: ApiInformation
     fullName: OfficeRuntime.ApiInformation
     langs:
       - typeScript
+    namespace: 'office-runtime!OfficeRuntime:namespace'
     type: interface
     package: office-runtime!
     children:

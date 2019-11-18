@@ -2,10 +2,11 @@
 items:
   - uid: 'office!OfficeExtension.DebugInfo:interface'
     summary: Provides information about an error.
-    name: OfficeExtension.DebugInfo
+    name: DebugInfo
     fullName: OfficeExtension.DebugInfo
     langs:
       - typeScript
+    namespace: 'office!OfficeExtension:namespace'
     type: interface
     package: office!
     children:

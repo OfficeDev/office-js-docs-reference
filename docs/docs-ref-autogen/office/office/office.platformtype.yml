@@ -2,10 +2,11 @@
 items:
   - uid: 'office!Office.PlatformType:enum'
     summary: Specifies the OS or other platform on which the Office host application is running.
-    name: Office.PlatformType
+    name: PlatformType
     fullName: Office.PlatformType
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: enum
     package: office!
     children:

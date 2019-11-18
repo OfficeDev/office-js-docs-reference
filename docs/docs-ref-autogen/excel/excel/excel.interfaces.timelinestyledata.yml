@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.TimelineStyleData:interface'
     summary: An interface describing the data returned by calling `timelineStyle.toJSON()`<!-- -->.
-    name: Excel.Interfaces.TimelineStyleData
+    name: TimelineStyleData
     fullName: Excel.Interfaces.TimelineStyleData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

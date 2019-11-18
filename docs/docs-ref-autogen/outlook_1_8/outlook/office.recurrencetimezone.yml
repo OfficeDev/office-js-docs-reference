@@ -52,10 +52,11 @@ items:
       }
 
       ```
-    name: Office.RecurrenceTimeZone
+    name: RecurrenceTimeZone
     fullName: Office.RecurrenceTimeZone
     langs:
       - typeScript
+    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

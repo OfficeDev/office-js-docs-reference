@@ -5,10 +5,11 @@ items:
       Provides information about the worksheet that raised the SelectionChanged event.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.WorksheetSelectionChangedEventArgs
+    name: WorksheetSelectionChangedEventArgs
     fullName: Excel.WorksheetSelectionChangedEventArgs
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

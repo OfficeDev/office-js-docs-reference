@@ -8,10 +8,11 @@ items:
 
       When the function you pass to the `callback` parameter of an "Async" method executes, it receives an AsyncResult
       object that you can access from the `callback` function's only parameter.
-    name: Office.AsyncResult
+    name: AsyncResult
     fullName: Office.AsyncResult
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     syntax:
       typeParameters:
@@ -237,6 +238,8 @@ items:
           - T
 references:
   - uid: 'office!Office.Error:interface'
-    name: Office.Error
+    name: Error
+    fullName: Office.Error
   - uid: 'office!Office.AsyncResultStatus:enum'
     name: AsyncResultStatus
+    fullName: Office.AsyncResultStatus

@@ -7,10 +7,11 @@ items:
 
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.CommentRichContent
+    name: CommentRichContent
     fullName: Excel.CommentRichContent
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

@@ -2,10 +2,11 @@
 items:
   - uid: 'office!OfficeExtension.RequestContextDebugInfo:interface'
     summary: Contains debug information about the request context.
-    name: OfficeExtension.RequestContextDebugInfo
+    name: RequestContextDebugInfo
     fullName: OfficeExtension.RequestContextDebugInfo
     langs:
       - typeScript
+    namespace: 'office!OfficeExtension:namespace'
     type: interface
     package: office!
     children:

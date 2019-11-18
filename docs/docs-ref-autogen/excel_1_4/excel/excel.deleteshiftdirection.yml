@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.DeleteShiftDirection:enum'
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.DeleteShiftDirection
+    name: DeleteShiftDirection
     fullName: Excel.DeleteShiftDirection
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

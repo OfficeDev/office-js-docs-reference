@@ -2,10 +2,11 @@
 items:
   - uid: 'office!OfficeExtension.RunOptions:interface'
     summary: 'Additional options passed into `{Host}.run(...)`<!-- -->.'
-    name: OfficeExtension.RunOptions
+    name: RunOptions
     fullName: OfficeExtension.RunOptions
     langs:
       - typeScript
+    namespace: 'office!OfficeExtension:namespace'
     type: interface
     syntax:
       typeParameters:

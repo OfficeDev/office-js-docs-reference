@@ -5,10 +5,11 @@ items:
       Represents the Excel PivotItem.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.PivotItemLoadOptions
+    name: PivotItemLoadOptions
     fullName: Excel.Interfaces.PivotItemLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

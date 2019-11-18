@@ -2,10 +2,11 @@
 items:
   - uid: 'onenote!OneNote.Interfaces.TableUpdateData:interface'
     summary: 'An interface for updating data on the Table object, for use in "table.set(<!-- -->{ ... }<!-- -->)".'
-    name: OneNote.Interfaces.TableUpdateData
+    name: TableUpdateData
     fullName: OneNote.Interfaces.TableUpdateData
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:

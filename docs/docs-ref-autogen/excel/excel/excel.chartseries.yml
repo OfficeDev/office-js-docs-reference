@@ -5,13 +5,16 @@ items:
       Represents a series in a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartSeries
+    name: ChartSeries
     fullName: Excel.ChartSeries
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartSeries#axisGroup:member'
@@ -361,6 +364,7 @@ items:
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
     name: getDimensionValues(dimensionString)
     fullName: getDimensionValues(dimensionString)
     langs:
@@ -1288,9 +1292,11 @@ references:
       - name: ' | "Primary" | "Secondary"'
         fullName: ' | "Primary" | "Secondary"'
   - uid: 'excel!Excel.ChartBinOptions:class'
-    name: Excel.ChartBinOptions
+    name: ChartBinOptions
+    fullName: Excel.ChartBinOptions
   - uid: 'excel!Excel.ChartBoxwhiskerOptions:class'
-    name: Excel.ChartBoxwhiskerOptions
+    name: ChartBoxwhiskerOptions
+    fullName: Excel.ChartBoxwhiskerOptions
   - uid: 'excel!Excel.ChartSeries#chartType~0:complex'
     name: >-
       Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" |
@@ -1330,10 +1336,13 @@ references:
         fullName: ' | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartDataLabels:class'
-    name: Excel.ChartDataLabels
+    name: ChartDataLabels
+    fullName: Excel.ChartDataLabels
   - uid: 'excel!Excel.ChartSeriesFormat:class'
-    name: Excel.ChartSeriesFormat
+    name: ChartSeriesFormat
+    fullName: Excel.ChartSeriesFormat
   - uid: 'excel!Excel.ChartSeries#getDimensionValues~0:complex'
     name: 'OfficeExtension.ClientResult<string[]>'
     fullName: 'OfficeExtension.ClientResult<string[]>'
@@ -1344,7 +1353,8 @@ references:
       - name: '<string[]>'
         fullName: '<string[]>'
   - uid: 'excel!Excel.ChartSeriesDimension:enum'
-    name: Excel.ChartSeriesDimension
+    name: ChartSeriesDimension
+    fullName: Excel.ChartSeriesDimension
   - uid: 'excel!Excel.ChartSeries#getDimensionValues~1:complex'
     name: 'OfficeExtension.ClientResult<string[]>'
     fullName: 'OfficeExtension.ClientResult<string[]>'
@@ -1391,11 +1401,14 @@ references:
       - name: ' | "TwoPhaseColor" | "ThreePhaseColor"'
         fullName: ' | "TwoPhaseColor" | "ThreePhaseColor"'
   - uid: 'excel!Excel.ChartSeries:class'
-    name: Excel.ChartSeries
+    name: ChartSeries
+    fullName: Excel.ChartSeries
   - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions:interface'
-    name: Excel.Interfaces.ChartSeriesLoadOptions
+    name: ChartSeriesLoadOptions
+    fullName: Excel.Interfaces.ChartSeriesLoadOptions
   - uid: 'excel!Excel.ChartMapOptions:class'
-    name: Excel.ChartMapOptions
+    name: ChartMapOptions
+    fullName: Excel.ChartMapOptions
   - uid: 'excel!Excel.ChartSeries#markerStyle~0:complex'
     name: >-
       Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star" |
@@ -1419,13 +1432,16 @@ references:
       - name: ' | "None" | "Banner" | "Overlapping"'
         fullName: ' | "None" | "Banner" | "Overlapping"'
   - uid: 'excel!Excel.ChartPointsCollection:class'
-    name: Excel.ChartPointsCollection
+    name: ChartPointsCollection
+    fullName: Excel.ChartPointsCollection
   - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData:interface'
-    name: Interfaces.ChartSeriesUpdateData
+    name: ChartSeriesUpdateData
+    fullName: Excel.Interfaces.ChartSeriesUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Range:class'
     name: Range
+    fullName: Excel.Range
   - uid: 'excel!Excel.ChartSeries#splitType~0:complex'
     name: Excel.ChartSplitType | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"
     fullName: Excel.ChartSplitType | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"
@@ -1436,8 +1452,11 @@ references:
       - name: ' | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"'
         fullName: ' | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"'
   - uid: 'excel!Excel.Interfaces.ChartSeriesData:interface'
-    name: Excel.Interfaces.ChartSeriesData
+    name: ChartSeriesData
+    fullName: Excel.Interfaces.ChartSeriesData
   - uid: 'excel!Excel.ChartTrendlineCollection:class'
-    name: Excel.ChartTrendlineCollection
+    name: ChartTrendlineCollection
+    fullName: Excel.ChartTrendlineCollection
   - uid: 'excel!Excel.ChartErrorBars:class'
-    name: Excel.ChartErrorBars
+    name: ChartErrorBars
+    fullName: Excel.ChartErrorBars

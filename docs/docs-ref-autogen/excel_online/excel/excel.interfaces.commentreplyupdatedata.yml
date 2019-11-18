@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.CommentReplyUpdateData:interface'
     summary: 'An interface for updating data on the CommentReply object, for use in `commentReply.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.CommentReplyUpdateData
+    name: CommentReplyUpdateData
     fullName: Excel.Interfaces.CommentReplyUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

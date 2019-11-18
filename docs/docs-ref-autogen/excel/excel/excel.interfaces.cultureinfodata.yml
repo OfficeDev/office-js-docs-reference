@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.CultureInfoData:interface'
     summary: An interface describing the data returned by calling `cultureInfo.toJSON()`<!-- -->.
-    name: Excel.Interfaces.CultureInfoData
+    name: CultureInfoData
     fullName: Excel.Interfaces.CultureInfoData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -50,4 +51,5 @@ items:
           - 'excel!Excel.Interfaces.NumberFormatInfoData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.NumberFormatInfoData:interface'
-    name: Excel.Interfaces.NumberFormatInfoData
+    name: NumberFormatInfoData
+    fullName: Excel.Interfaces.NumberFormatInfoData

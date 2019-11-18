@@ -65,10 +65,11 @@ items:
       });
 
       ```
-    name: OfficeExtension.LoadOption
+    name: LoadOption
     fullName: OfficeExtension.LoadOption
     langs:
       - typeScript
+    namespace: 'office!OfficeExtension:namespace'
     type: interface
     package: office!
     children:

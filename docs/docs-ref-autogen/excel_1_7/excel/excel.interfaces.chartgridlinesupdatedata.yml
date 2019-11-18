@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartGridlinesUpdateData:interface'
     summary: 'An interface for updating data on the ChartGridlines object, for use in `chartGridlines.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.ChartGridlinesUpdateData
+    name: ChartGridlinesUpdateData
     fullName: Excel.Interfaces.ChartGridlinesUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -43,4 +44,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartGridlinesFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartGridlinesFormatUpdateData
+    name: ChartGridlinesFormatUpdateData
+    fullName: Excel.Interfaces.ChartGridlinesFormatUpdateData

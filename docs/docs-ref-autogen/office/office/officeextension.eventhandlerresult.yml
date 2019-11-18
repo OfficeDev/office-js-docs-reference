@@ -1,10 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'office!OfficeExtension.EventHandlerResult:class'
-    name: OfficeExtension.EventHandlerResult
+    name: EventHandlerResult
     fullName: OfficeExtension.EventHandlerResult
     langs:
       - typeScript
+    namespace: 'office!OfficeExtension:namespace'
     type: class
     package: office!
     children:
@@ -60,6 +61,7 @@ items:
 references:
   - uid: 'office!OfficeExtension.ClientRequestContext:class'
     name: ClientRequestContext
+    fullName: OfficeExtension.ClientRequestContext
   - uid: 'office!OfficeExtension.EventHandlerResult~0:complex'
     name: EventHandlers<T>
     fullName: OfficeExtension.EventHandlers<T>

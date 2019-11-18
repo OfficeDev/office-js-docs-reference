@@ -9,10 +9,11 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: Excel.Interfaces.CultureInfoLoadOptions
+    name: CultureInfoLoadOptions
     fullName: Excel.Interfaces.CultureInfoLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -73,4 +74,5 @@ items:
           - 'excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface'
-    name: Excel.Interfaces.NumberFormatInfoLoadOptions
+    name: NumberFormatInfoLoadOptions
+    fullName: Excel.Interfaces.NumberFormatInfoLoadOptions

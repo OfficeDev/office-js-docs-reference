@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartCollectionData:interface'
     summary: An interface describing the data returned by calling `chartCollection.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ChartCollectionData
+    name: ChartCollectionData
     fullName: Excel.Interfaces.ChartCollectionData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

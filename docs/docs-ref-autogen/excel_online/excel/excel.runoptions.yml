@@ -1,13 +1,16 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.RunOptions:interface'
-    name: Excel.RunOptions
+    name: RunOptions
     fullName: Excel.RunOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     extends:
       - 'excel!Excel.RunOptions~0:complex'
+    inheritance:
+      - type: 'excel!Excel.RunOptions~1:complex'
     package: excel!
     children:
       - 'excel!Excel.RunOptions#delayForCellEdit:member'
@@ -31,6 +34,20 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.RunOptions~0:complex'
+    name: OfficeExtension.RunOptions<Session>
+    fullName: OfficeExtension.RunOptions<Excel.Session>
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.RunOptions:interface'
+        name: OfficeExtension.RunOptions
+        fullName: OfficeExtension.RunOptions
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.Session:class'
+        name: Session
+        fullName: Excel.Session
+      - name: '> '
+        fullName: '> '
+  - uid: 'excel!Excel.RunOptions~1:complex'
     name: OfficeExtension.RunOptions<Session>
     fullName: OfficeExtension.RunOptions<Excel.Session>
     spec.typeScript:

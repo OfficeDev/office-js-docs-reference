@@ -2,10 +2,11 @@
 items:
   - uid: 'word!Word.Interfaces.ContentControlData:interface'
     summary: An interface describing the data returned by calling "contentControl.toJSON()".
-    name: Word.Interfaces.ContentControlData
+    name: ContentControlData
     fullName: Word.Interfaces.ContentControlData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -301,7 +302,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.Interfaces.FontData:interface'
-    name: Word.Interfaces.FontData
+    name: FontData
+    fullName: Word.Interfaces.FontData
   - uid: 'word!Word.Interfaces.ContentControlData#inlinePictures~0:complex'
     name: 'Word.Interfaces.InlinePictureData[]'
     fullName: 'Word.Interfaces.InlinePictureData[]'

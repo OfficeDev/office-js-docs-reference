@@ -49,10 +49,11 @@ items:
       console.log(outputString);
 
       ```
-    name: Office.AttachmentDetails
+    name: AttachmentDetails
     fullName: Office.AttachmentDetails
     langs:
       - typeScript
+    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

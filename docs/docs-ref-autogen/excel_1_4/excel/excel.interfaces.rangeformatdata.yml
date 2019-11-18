@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.RangeFormatData:interface'
     summary: An interface describing the data returned by calling `rangeFormat.toJSON()`<!-- -->.
-    name: Excel.Interfaces.RangeFormatData
+    name: RangeFormatData
     fullName: Excel.Interfaces.RangeFormatData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -170,9 +171,11 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.RangeFillData:interface'
-    name: Excel.Interfaces.RangeFillData
+    name: RangeFillData
+    fullName: Excel.Interfaces.RangeFillData
   - uid: 'excel!Excel.Interfaces.RangeFontData:interface'
-    name: Excel.Interfaces.RangeFontData
+    name: RangeFontData
+    fullName: Excel.Interfaces.RangeFontData
   - uid: 'excel!Excel.Interfaces.RangeFormatData#horizontalAlignment~0:complex'
     name: >-
       Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection"
@@ -187,7 +190,8 @@ references:
       - name: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
         fullName: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
   - uid: 'excel!Excel.Interfaces.FormatProtectionData:interface'
-    name: Excel.Interfaces.FormatProtectionData
+    name: FormatProtectionData
+    fullName: Excel.Interfaces.FormatProtectionData
   - uid: 'excel!Excel.Interfaces.RangeFormatData#verticalAlignment~0:complex'
     name: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
     fullName: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"

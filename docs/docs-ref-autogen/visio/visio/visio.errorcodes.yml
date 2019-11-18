@@ -1,10 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'visio!Visio.ErrorCodes:enum'
-    name: Visio.ErrorCodes
+    name: ErrorCodes
     fullName: Visio.ErrorCodes
     langs:
       - typeScript
+    namespace: 'visio!Visio:namespace'
     type: enum
     package: visio!
     children:

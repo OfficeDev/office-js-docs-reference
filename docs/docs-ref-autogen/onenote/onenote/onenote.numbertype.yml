@@ -2,10 +2,11 @@
 items:
   - uid: 'onenote!OneNote.NumberType:enum'
     summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
-    name: OneNote.NumberType
+    name: NumberType
     fullName: OneNote.NumberType
     langs:
       - typeScript
+    namespace: 'onenote!OneNote:namespace'
     type: enum
     package: onenote!
     children:

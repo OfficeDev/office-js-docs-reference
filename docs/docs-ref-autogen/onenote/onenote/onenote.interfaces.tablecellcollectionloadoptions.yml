@@ -5,10 +5,11 @@ items:
       Contains a collection of TableCell objects.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Interfaces.TableCellCollectionLoadOptions
+    name: TableCellCollectionLoadOptions
     fullName: OneNote.Interfaces.TableCellCollectionLoadOptions
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -122,6 +123,8 @@ items:
           - boolean
 references:
   - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface'
-    name: OneNote.Interfaces.ParagraphCollectionLoadOptions
+    name: ParagraphCollectionLoadOptions
+    fullName: OneNote.Interfaces.ParagraphCollectionLoadOptions
   - uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions:interface'
-    name: OneNote.Interfaces.TableRowLoadOptions
+    name: TableRowLoadOptions
+    fullName: OneNote.Interfaces.TableRowLoadOptions

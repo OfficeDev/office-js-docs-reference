@@ -5,10 +5,11 @@ items:
       Weak reference to an ink stroke object and its content parent.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.InkStrokePointer
+    name: InkStrokePointer
     fullName: OneNote.InkStrokePointer
     langs:
       - typeScript
+    namespace: 'onenote!OneNote:namespace'
     type: interface
     package: onenote!
     children:

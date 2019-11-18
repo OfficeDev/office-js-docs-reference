@@ -2,10 +2,11 @@
 items:
   - uid: 'word!Word.VerticalAlignment:enum'
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    name: Word.VerticalAlignment
+    name: VerticalAlignment
     fullName: Word.VerticalAlignment
     langs:
       - typeScript
+    namespace: 'word!Word:namespace'
     type: enum
     package: word!
     children:

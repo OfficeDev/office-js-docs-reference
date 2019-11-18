@@ -2,9 +2,10 @@
 items:
   - uid: 'word!Word.Interfaces.DocumentPropertiesData:interface'
     summary: An interface describing the data returned by calling "documentProperties.toJSON()".
-    name: Word.Interfaces.DocumentPropertiesData
+    name: DocumentPropertiesData
     fullName: Word.Interfaces.DocumentPropertiesData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!

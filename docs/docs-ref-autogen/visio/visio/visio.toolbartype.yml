@@ -5,10 +5,11 @@ items:
       Toolbar IDs of the app
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: Visio.ToolBarType
+    name: ToolBarType
     fullName: Visio.ToolBarType
     langs:
       - typeScript
+    namespace: 'visio!Visio:namespace'
     type: enum
     package: visio!
     children:

@@ -5,13 +5,16 @@ items:
       A container for the visible content on a page. A Paragraph can contain any one ParagraphType type of content.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Paragraph
+    name: Paragraph
     fullName: OneNote.Paragraph
     langs:
       - typeScript
+    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.Paragraph#addNoteTag:member(1)'
@@ -988,13 +991,17 @@ references:
   - uid: 'onenote!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.NoteTag:class'
-    name: OneNote.NoteTag
+    name: NoteTag
+    fullName: OneNote.NoteTag
   - uid: 'onenote!OneNote.NoteTagType:enum'
-    name: OneNote.NoteTagType
+    name: NoteTagType
+    fullName: OneNote.NoteTagType
   - uid: 'onenote!OneNote.NoteTagStatus:enum'
-    name: OneNote.NoteTagStatus
+    name: NoteTagStatus
+    fullName: OneNote.NoteTagStatus
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
+    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.Paragraph#getParagraphInfo~0:complex'
     name: OfficeExtension.ClientResult<OneNote.ParagraphInfo>
     fullName: OfficeExtension.ClientResult<OneNote.ParagraphInfo>
@@ -1010,31 +1017,43 @@ references:
       - name: '>'
         fullName: '>'
   - uid: 'onenote!OneNote.Image:class'
-    name: OneNote.Image
+    name: Image
+    fullName: OneNote.Image
   - uid: 'onenote!OneNote.InkWordCollection:class'
-    name: OneNote.InkWordCollection
+    name: InkWordCollection
+    fullName: OneNote.InkWordCollection
   - uid: 'onenote!OneNote.InsertLocation:enum'
-    name: OneNote.InsertLocation
+    name: InsertLocation
+    fullName: OneNote.InsertLocation
   - uid: 'onenote!OneNote.RichText:class'
-    name: OneNote.RichText
+    name: RichText
+    fullName: OneNote.RichText
   - uid: 'onenote!OneNote.Table:class'
-    name: OneNote.Table
+    name: Table
+    fullName: OneNote.Table
   - uid: 'onenote!OneNote.Paragraph:class'
-    name: OneNote.Paragraph
+    name: Paragraph
+    fullName: OneNote.Paragraph
   - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
-    name: OneNote.Interfaces.ParagraphLoadOptions
+    name: ParagraphLoadOptions
+    fullName: OneNote.Interfaces.ParagraphLoadOptions
   - uid: 'onenote!OneNote.Outline:class'
-    name: OneNote.Outline
+    name: Outline
+    fullName: OneNote.Outline
   - uid: 'onenote!OneNote.ParagraphCollection:class'
-    name: OneNote.ParagraphCollection
+    name: ParagraphCollection
+    fullName: OneNote.ParagraphCollection
   - uid: 'onenote!OneNote.TableCell:class'
-    name: OneNote.TableCell
+    name: TableCell
+    fullName: OneNote.TableCell
   - uid: 'onenote!OneNote.Interfaces.ParagraphUpdateData:interface'
-    name: Interfaces.ParagraphUpdateData
+    name: ParagraphUpdateData
+    fullName: OneNote.Interfaces.ParagraphUpdateData
   - uid: 'onenote!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'onenote!OneNote.Interfaces.ParagraphData:interface'
-    name: OneNote.Interfaces.ParagraphData
+    name: ParagraphData
+    fullName: OneNote.Interfaces.ParagraphData
   - uid: 'onenote!OneNote.Paragraph#type~0:complex'
     name: OneNote.ParagraphType | "RichText" | "Image" | "Table" | "Ink" | "Other"
     fullName: OneNote.ParagraphType | "RichText" | "Image" | "Table" | "Ink" | "Other"

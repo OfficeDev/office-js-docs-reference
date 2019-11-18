@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the CommentCollection object, for use in "commentCollection.set(<!-- -->{ ...
       }<!-- -->)".
-    name: Visio.Interfaces.CommentCollectionUpdateData
+    name: CommentCollectionUpdateData
     fullName: Visio.Interfaces.CommentCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:

@@ -2,9 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.TextFrameUpdateData:interface'
     summary: 'An interface for updating data on the TextFrame object, for use in `textFrame.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.TextFrameUpdateData
+    name: TextFrameUpdateData
     fullName: Excel.Interfaces.TextFrameUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

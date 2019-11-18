@@ -5,13 +5,16 @@ items:
       Represents the background of a conditional range object.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ConditionalRangeFill
+    name: ConditionalRangeFill
     fullName: Excel.ConditionalRangeFill
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ConditionalRangeFill#clear:member(1)'
@@ -211,13 +214,18 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ConditionalRangeFill:class'
-    name: Excel.ConditionalRangeFill
+    name: ConditionalRangeFill
+    fullName: Excel.ConditionalRangeFill
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFillLoadOptions:interface'
-    name: Excel.Interfaces.ConditionalRangeFillLoadOptions
+    name: ConditionalRangeFillLoadOptions
+    fullName: Excel.Interfaces.ConditionalRangeFillLoadOptions
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFillUpdateData:interface'
-    name: Interfaces.ConditionalRangeFillUpdateData
+    name: ConditionalRangeFillUpdateData
+    fullName: Excel.Interfaces.ConditionalRangeFillUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFillData:interface'
-    name: Excel.Interfaces.ConditionalRangeFillData
+    name: ConditionalRangeFillData
+    fullName: Excel.Interfaces.ConditionalRangeFillData

@@ -7,13 +7,16 @@ items:
 
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.PageContent
+    name: PageContent
     fullName: OneNote.PageContent
     langs:
       - typeScript
+    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.PageContent#context:member'
@@ -399,24 +402,33 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
+    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.Image:class'
-    name: OneNote.Image
+    name: Image
+    fullName: OneNote.Image
   - uid: 'onenote!OneNote.FloatingInk:class'
-    name: OneNote.FloatingInk
+    name: FloatingInk
+    fullName: OneNote.FloatingInk
   - uid: 'onenote!OneNote.PageContent:class'
-    name: OneNote.PageContent
+    name: PageContent
+    fullName: OneNote.PageContent
   - uid: 'onenote!OneNote.Interfaces.PageContentLoadOptions:interface'
-    name: OneNote.Interfaces.PageContentLoadOptions
+    name: PageContentLoadOptions
+    fullName: OneNote.Interfaces.PageContentLoadOptions
   - uid: 'onenote!OneNote.Outline:class'
-    name: OneNote.Outline
+    name: Outline
+    fullName: OneNote.Outline
   - uid: 'onenote!OneNote.Page:class'
-    name: OneNote.Page
+    name: Page
+    fullName: OneNote.Page
   - uid: 'onenote!OneNote.Interfaces.PageContentUpdateData:interface'
-    name: Interfaces.PageContentUpdateData
+    name: PageContentUpdateData
+    fullName: OneNote.Interfaces.PageContentUpdateData
   - uid: 'onenote!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'onenote!OneNote.Interfaces.PageContentData:interface'
-    name: OneNote.Interfaces.PageContentData
+    name: PageContentData
+    fullName: OneNote.Interfaces.PageContentData
   - uid: 'onenote!OneNote.PageContent#type~0:complex'
     name: OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other"
     fullName: OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other"

@@ -2,10 +2,11 @@
 items:
   - uid: 'office!Office.SaveSettingsOptions:interface'
     summary: Provides options for saving settings.
-    name: Office.SaveSettingsOptions
+    name: SaveSettingsOptions
     fullName: Office.SaveSettingsOptions
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:

@@ -2,10 +2,11 @@
 items:
   - uid: 'office!Office.FilterType:enum'
     summary: Specifies whether filtering from the host application is applied when the data is retrieved.
-    name: Office.FilterType
+    name: FilterType
     fullName: Office.FilterType
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: enum
     package: office!
     children:

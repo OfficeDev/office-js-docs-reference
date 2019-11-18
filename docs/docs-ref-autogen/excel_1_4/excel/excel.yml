@@ -1,0 +1,877 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel:namespace'
+    name: Excel
+    fullName: Excel
+    langs:
+      - typeScript
+    type: namespace
+    package: excel!
+    children:
+      - 'excel!Excel.Application:class'
+      - 'excel!Excel.Binding:class'
+      - 'excel!Excel.BindingCollection:class'
+      - 'excel!Excel.BindingDataChangedEventArgs:interface'
+      - 'excel!Excel.BindingSelectionChangedEventArgs:interface'
+      - 'excel!Excel.BindingType:enum'
+      - 'excel!Excel.BorderIndex:enum'
+      - 'excel!Excel.BorderLineStyle:enum'
+      - 'excel!Excel.BorderWeight:enum'
+      - 'excel!Excel.CalculationMode:enum'
+      - 'excel!Excel.CalculationType:enum'
+      - 'excel!Excel.Chart:class'
+      - 'excel!Excel.ChartAreaFormat:class'
+      - 'excel!Excel.ChartAxes:class'
+      - 'excel!Excel.ChartAxis:class'
+      - 'excel!Excel.ChartAxisFormat:class'
+      - 'excel!Excel.ChartAxisTitle:class'
+      - 'excel!Excel.ChartAxisTitleFormat:class'
+      - 'excel!Excel.ChartCollection:class'
+      - 'excel!Excel.ChartDataLabelFormat:class'
+      - 'excel!Excel.ChartDataLabelPosition:enum'
+      - 'excel!Excel.ChartDataLabels:class'
+      - 'excel!Excel.ChartFill:class'
+      - 'excel!Excel.ChartFont:class'
+      - 'excel!Excel.ChartGridlines:class'
+      - 'excel!Excel.ChartGridlinesFormat:class'
+      - 'excel!Excel.ChartLegend:class'
+      - 'excel!Excel.ChartLegendFormat:class'
+      - 'excel!Excel.ChartLegendPosition:enum'
+      - 'excel!Excel.ChartLineFormat:class'
+      - 'excel!Excel.ChartPoint:class'
+      - 'excel!Excel.ChartPointFormat:class'
+      - 'excel!Excel.ChartPointsCollection:class'
+      - 'excel!Excel.ChartSeries:class'
+      - 'excel!Excel.ChartSeriesBy:enum'
+      - 'excel!Excel.ChartSeriesCollection:class'
+      - 'excel!Excel.ChartSeriesFormat:class'
+      - 'excel!Excel.ChartTitle:class'
+      - 'excel!Excel.ChartTitleFormat:class'
+      - 'excel!Excel.ChartType:enum'
+      - 'excel!Excel.ChartUnderlineStyle:enum'
+      - 'excel!Excel.ClearApplyTo:enum'
+      - 'excel!Excel.DeleteShiftDirection:enum'
+      - 'excel!Excel.DynamicFilterCriteria:enum'
+      - 'excel!Excel.ErrorCodes:enum'
+      - 'excel!Excel.Filter:class'
+      - 'excel!Excel.FilterCriteria:interface'
+      - 'excel!Excel.FilterDatetime:interface'
+      - 'excel!Excel.FilterDatetimeSpecificity:enum'
+      - 'excel!Excel.FilterOn:enum'
+      - 'excel!Excel.FilterOperator:enum'
+      - 'excel!Excel.FiveArrowsGraySet:interface'
+      - 'excel!Excel.FiveArrowsSet:interface'
+      - 'excel!Excel.FiveBoxesSet:interface'
+      - 'excel!Excel.FiveQuartersSet:interface'
+      - 'excel!Excel.FiveRatingSet:interface'
+      - 'excel!Excel.FormatProtection:class'
+      - 'excel!Excel.FourArrowsGraySet:interface'
+      - 'excel!Excel.FourArrowsSet:interface'
+      - 'excel!Excel.FourRatingSet:interface'
+      - 'excel!Excel.FourRedToBlackSet:interface'
+      - 'excel!Excel.FourTrafficLightsSet:interface'
+      - 'excel!Excel.FunctionResult:class'
+      - 'excel!Excel.Functions:class'
+      - 'excel!Excel.getDataCommonPostprocess:function(1)'
+      - 'excel!Excel.HorizontalAlignment:enum'
+      - 'excel!Excel.Icon:interface'
+      - 'excel!Excel.IconCollections:interface'
+      - 'excel!Excel.icons:var'
+      - 'excel!Excel.IconSet:enum'
+      - 'excel!Excel.ImageFittingMode:enum'
+      - 'excel!Excel.InsertShiftDirection:enum'
+      - 'excel!Excel.NamedItem:class'
+      - 'excel!Excel.NamedItemCollection:class'
+      - 'excel!Excel.NamedItemScope:enum'
+      - 'excel!Excel.NamedItemType:enum'
+      - 'excel!Excel.PivotTable:class'
+      - 'excel!Excel.PivotTableCollection:class'
+      - 'excel!Excel.postprocessBindingDescriptor:function(1)'
+      - 'excel!Excel.Range:class'
+      - 'excel!Excel.RangeBorder:class'
+      - 'excel!Excel.RangeBorderCollection:class'
+      - 'excel!Excel.RangeFill:class'
+      - 'excel!Excel.RangeFont:class'
+      - 'excel!Excel.RangeFormat:class'
+      - 'excel!Excel.RangeReference:interface'
+      - 'excel!Excel.RangeSort:class'
+      - 'excel!Excel.RangeUnderlineStyle:enum'
+      - 'excel!Excel.RangeValueType:enum'
+      - 'excel!Excel.RangeView:class'
+      - 'excel!Excel.RangeViewCollection:class'
+      - 'excel!Excel.RequestContext:class'
+      - 'excel!Excel.run:function(1)'
+      - 'excel!Excel.run:function(2)'
+      - 'excel!Excel.run:function(3)'
+      - 'excel!Excel.run:function(4)'
+      - 'excel!Excel.run:function(5)'
+      - 'excel!Excel.RunOptions:interface'
+      - 'excel!Excel.SelectionChangedEventArgs:interface'
+      - 'excel!Excel.Session:class'
+      - 'excel!Excel.Setting:class'
+      - 'excel!Excel.SettingCollection:class'
+      - 'excel!Excel.SettingsChangedEventArgs:interface'
+      - 'excel!Excel.SheetVisibility:enum'
+      - 'excel!Excel.SortDataOption:enum'
+      - 'excel!Excel.SortField:interface'
+      - 'excel!Excel.SortMethod:enum'
+      - 'excel!Excel.SortOn:enum'
+      - 'excel!Excel.SortOrientation:enum'
+      - 'excel!Excel.Table:class'
+      - 'excel!Excel.TableCollection:class'
+      - 'excel!Excel.TableColumn:class'
+      - 'excel!Excel.TableColumnCollection:class'
+      - 'excel!Excel.TableRow:class'
+      - 'excel!Excel.TableRowCollection:class'
+      - 'excel!Excel.TableSort:class'
+      - 'excel!Excel.ThreeArrowsGraySet:interface'
+      - 'excel!Excel.ThreeArrowsSet:interface'
+      - 'excel!Excel.ThreeFlagsSet:interface'
+      - 'excel!Excel.ThreeSignsSet:interface'
+      - 'excel!Excel.ThreeStarsSet:interface'
+      - 'excel!Excel.ThreeSymbols2Set:interface'
+      - 'excel!Excel.ThreeSymbolsSet:interface'
+      - 'excel!Excel.ThreeTrafficLights1Set:interface'
+      - 'excel!Excel.ThreeTrafficLights2Set:interface'
+      - 'excel!Excel.ThreeTrianglesSet:interface'
+      - 'excel!Excel.VerticalAlignment:enum'
+      - 'excel!Excel.Workbook:class'
+      - 'excel!Excel.Worksheet:class'
+      - 'excel!Excel.WorksheetCollection:class'
+      - 'excel!Excel.WorksheetProtection:class'
+      - 'excel!Excel.WorksheetProtectionOptions:interface'
+  - uid: 'excel!Excel.getDataCommonPostprocess:function(1)'
+    name: 'getDataCommonPostprocess(response, callArgs)'
+    fullName: 'Excel.getDataCommonPostprocess(response, callArgs)'
+    langs:
+      - typeScript
+    namespace: 'excel!Excel:namespace'
+    type: function
+    syntax:
+      content: 'export function getDataCommonPostprocess(response: any, callArgs: any): any;'
+      return:
+        type:
+          - any
+        description: ''
+      parameters:
+        - id: response
+          description: ''
+          type:
+            - any
+        - id: callArgs
+          description: ''
+          type:
+            - any
+  - uid: 'excel!Excel.icons:var'
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: icons
+    fullName: Excel.icons
+    langs:
+      - typeScript
+    namespace: 'excel!Excel:namespace'
+    type: variable
+    syntax:
+      content: 'icons: IconCollections'
+      return:
+        type:
+          - 'excel!Excel.IconCollections:interface'
+  - uid: 'excel!Excel.postprocessBindingDescriptor:function(1)'
+    name: postprocessBindingDescriptor(response)
+    fullName: Excel.postprocessBindingDescriptor(response)
+    langs:
+      - typeScript
+    namespace: 'excel!Excel:namespace'
+    type: function
+    syntax:
+      content: 'export function postprocessBindingDescriptor(response: any): any;'
+      return:
+        type:
+          - any
+        description: ''
+      parameters:
+        - id: response
+          description: ''
+          type:
+            - any
+  - uid: 'excel!Excel.run:function(1)'
+    summary: >-
+      Executes a batch script that performs actions on the Excel object model, using a new RequestContext. When the
+      promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+    name: run(batch)
+    fullName: Excel.run(batch)
+    langs:
+      - typeScript
+    namespace: 'excel!Excel:namespace'
+    type: function
+    syntax:
+      content: 'export function run<T>(batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;'
+      return:
+        type:
+          - 'excel!Excel.run~0:complex'
+        description: ''
+      parameters:
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type:
+            - 'excel!Excel.run~1:complex'
+      typeParameters:
+        - id: T
+  - uid: 'excel!Excel.run:function(2)'
+    summary: >-
+      Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
+      previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated
+      during execution will be released.
+    name: 'run(object, batch)'
+    fullName: 'Excel.run(object, batch)'
+    langs:
+      - typeScript
+    namespace: 'excel!Excel:namespace'
+    type: function
+    syntax:
+      content: >-
+        export function run<T>(object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) =>
+        Promise<T>): Promise<T>;
+      return:
+        type:
+          - 'excel!Excel.run~2:complex'
+        description: ''
+      parameters:
+        - id: object
+          description: >-
+            A previously-created API object. The batch will use the same RequestContext as the passed-in object, which
+            means that any changes applied to the object will be picked up by "context.sync()".
+          type:
+            - 'excel!OfficeExtension.ClientObject:class'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type:
+            - 'excel!Excel.run~3:complex'
+      typeParameters:
+        - id: T
+  - uid: 'excel!Excel.run:function(3)'
+    summary: >-
+      Executes a batch script that performs actions on the Excel object model, using the RequestContext of
+      previously-created API objects.
+    name: 'run(objects, batch)'
+    fullName: 'Excel.run(objects, batch)'
+    langs:
+      - typeScript
+    namespace: 'excel!Excel:namespace'
+    type: function
+    syntax:
+      content: >-
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) =>
+        Promise<T>): Promise<T>;
+      return:
+        type:
+          - 'excel!Excel.run~4:complex'
+        description: ''
+      parameters:
+        - id: objects
+          description: >-
+            An array of previously-created API objects. The array will be validated to make sure that all of the objects
+            share the same context. The batch will use this shared RequestContext, which means that any changes applied
+            to these objects will be picked up by "context.sync()".
+          type:
+            - 'excel!Excel.run~5:complex'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type:
+            - 'excel!Excel.run~6:complex'
+      typeParameters:
+        - id: T
+  - uid: 'excel!Excel.run:function(4)'
+    summary: >-
+      Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
+      previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated
+      during execution will be released.
+    name: 'run(options, batch)'
+    fullName: 'Excel.run(options, batch)'
+    langs:
+      - typeScript
+    namespace: 'excel!Excel:namespace'
+    type: function
+    syntax:
+      content: >-
+        export function run<T>(options: Excel.RunOptions, batch: (context: Excel.RequestContext) => Promise<T>):
+        Promise<T>;
+      return:
+        type:
+          - 'excel!Excel.run~7:complex'
+        description: ''
+      parameters:
+        - id: options
+          description: >-
+            The additional options for this Excel.run which specify previous objects, whether to delay the request for
+            cell edit, session info, etc.
+          type:
+            - 'excel!Excel.RunOptions:interface'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type:
+            - 'excel!Excel.run~8:complex'
+      typeParameters:
+        - id: T
+  - uid: 'excel!Excel.run:function(5)'
+    summary: >-
+      Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
+      previously-created object. When the promise is resolved, any tracked objects that were automatically allocated
+      during execution will be released.
+    name: 'run(context, batch)'
+    fullName: 'Excel.run(context, batch)'
+    langs:
+      - typeScript
+    namespace: 'excel!Excel:namespace'
+    type: function
+    syntax:
+      content: >-
+        export function run<T>(context: OfficeExtension.ClientRequestContext, batch: (context: Excel.RequestContext) =>
+        Promise<T>): Promise<T>;
+      return:
+        type:
+          - 'excel!Excel.run~9:complex'
+        description: ''
+      parameters:
+        - id: context
+          description: >-
+            A previously-created object. The batch will use the same RequestContext as the passed-in object, which means
+            that any changes applied to the object will be picked up by "context.sync()".
+          type:
+            - 'excel!OfficeExtension.ClientRequestContext:class'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type:
+            - 'excel!Excel.run~10:complex'
+      typeParameters:
+        - id: T
+references:
+  - uid: 'excel!Excel.Application:class'
+    name: Application
+    fullName: Excel.Application
+  - uid: 'excel!Excel.Binding:class'
+    name: Binding
+    fullName: Excel.Binding
+  - uid: 'excel!Excel.BindingCollection:class'
+    name: BindingCollection
+    fullName: Excel.BindingCollection
+  - uid: 'excel!Excel.BindingDataChangedEventArgs:interface'
+    name: BindingDataChangedEventArgs
+    fullName: Excel.BindingDataChangedEventArgs
+  - uid: 'excel!Excel.BindingSelectionChangedEventArgs:interface'
+    name: BindingSelectionChangedEventArgs
+    fullName: Excel.BindingSelectionChangedEventArgs
+  - uid: 'excel!Excel.BindingType:enum'
+    name: BindingType
+    fullName: Excel.BindingType
+  - uid: 'excel!Excel.BorderIndex:enum'
+    name: BorderIndex
+    fullName: Excel.BorderIndex
+  - uid: 'excel!Excel.BorderLineStyle:enum'
+    name: BorderLineStyle
+    fullName: Excel.BorderLineStyle
+  - uid: 'excel!Excel.BorderWeight:enum'
+    name: BorderWeight
+    fullName: Excel.BorderWeight
+  - uid: 'excel!Excel.CalculationMode:enum'
+    name: CalculationMode
+    fullName: Excel.CalculationMode
+  - uid: 'excel!Excel.CalculationType:enum'
+    name: CalculationType
+    fullName: Excel.CalculationType
+  - uid: 'excel!Excel.Chart:class'
+    name: Chart
+    fullName: Excel.Chart
+  - uid: 'excel!Excel.ChartAreaFormat:class'
+    name: ChartAreaFormat
+    fullName: Excel.ChartAreaFormat
+  - uid: 'excel!Excel.ChartAxes:class'
+    name: ChartAxes
+    fullName: Excel.ChartAxes
+  - uid: 'excel!Excel.ChartAxis:class'
+    name: ChartAxis
+    fullName: Excel.ChartAxis
+  - uid: 'excel!Excel.ChartAxisFormat:class'
+    name: ChartAxisFormat
+    fullName: Excel.ChartAxisFormat
+  - uid: 'excel!Excel.ChartAxisTitle:class'
+    name: ChartAxisTitle
+    fullName: Excel.ChartAxisTitle
+  - uid: 'excel!Excel.ChartAxisTitleFormat:class'
+    name: ChartAxisTitleFormat
+    fullName: Excel.ChartAxisTitleFormat
+  - uid: 'excel!Excel.ChartCollection:class'
+    name: ChartCollection
+    fullName: Excel.ChartCollection
+  - uid: 'excel!Excel.ChartDataLabelFormat:class'
+    name: ChartDataLabelFormat
+    fullName: Excel.ChartDataLabelFormat
+  - uid: 'excel!Excel.ChartDataLabelPosition:enum'
+    name: ChartDataLabelPosition
+    fullName: Excel.ChartDataLabelPosition
+  - uid: 'excel!Excel.ChartDataLabels:class'
+    name: ChartDataLabels
+    fullName: Excel.ChartDataLabels
+  - uid: 'excel!Excel.ChartFill:class'
+    name: ChartFill
+    fullName: Excel.ChartFill
+  - uid: 'excel!Excel.ChartFont:class'
+    name: ChartFont
+    fullName: Excel.ChartFont
+  - uid: 'excel!Excel.ChartGridlines:class'
+    name: ChartGridlines
+    fullName: Excel.ChartGridlines
+  - uid: 'excel!Excel.ChartGridlinesFormat:class'
+    name: ChartGridlinesFormat
+    fullName: Excel.ChartGridlinesFormat
+  - uid: 'excel!Excel.ChartLegend:class'
+    name: ChartLegend
+    fullName: Excel.ChartLegend
+  - uid: 'excel!Excel.ChartLegendFormat:class'
+    name: ChartLegendFormat
+    fullName: Excel.ChartLegendFormat
+  - uid: 'excel!Excel.ChartLegendPosition:enum'
+    name: ChartLegendPosition
+    fullName: Excel.ChartLegendPosition
+  - uid: 'excel!Excel.ChartLineFormat:class'
+    name: ChartLineFormat
+    fullName: Excel.ChartLineFormat
+  - uid: 'excel!Excel.ChartPoint:class'
+    name: ChartPoint
+    fullName: Excel.ChartPoint
+  - uid: 'excel!Excel.ChartPointFormat:class'
+    name: ChartPointFormat
+    fullName: Excel.ChartPointFormat
+  - uid: 'excel!Excel.ChartPointsCollection:class'
+    name: ChartPointsCollection
+    fullName: Excel.ChartPointsCollection
+  - uid: 'excel!Excel.ChartSeries:class'
+    name: ChartSeries
+    fullName: Excel.ChartSeries
+  - uid: 'excel!Excel.ChartSeriesBy:enum'
+    name: ChartSeriesBy
+    fullName: Excel.ChartSeriesBy
+  - uid: 'excel!Excel.ChartSeriesCollection:class'
+    name: ChartSeriesCollection
+    fullName: Excel.ChartSeriesCollection
+  - uid: 'excel!Excel.ChartSeriesFormat:class'
+    name: ChartSeriesFormat
+    fullName: Excel.ChartSeriesFormat
+  - uid: 'excel!Excel.ChartTitle:class'
+    name: ChartTitle
+    fullName: Excel.ChartTitle
+  - uid: 'excel!Excel.ChartTitleFormat:class'
+    name: ChartTitleFormat
+    fullName: Excel.ChartTitleFormat
+  - uid: 'excel!Excel.ChartType:enum'
+    name: ChartType
+    fullName: Excel.ChartType
+  - uid: 'excel!Excel.ChartUnderlineStyle:enum'
+    name: ChartUnderlineStyle
+    fullName: Excel.ChartUnderlineStyle
+  - uid: 'excel!Excel.ClearApplyTo:enum'
+    name: ClearApplyTo
+    fullName: Excel.ClearApplyTo
+  - uid: 'excel!Excel.DeleteShiftDirection:enum'
+    name: DeleteShiftDirection
+    fullName: Excel.DeleteShiftDirection
+  - uid: 'excel!Excel.DynamicFilterCriteria:enum'
+    name: DynamicFilterCriteria
+    fullName: Excel.DynamicFilterCriteria
+  - uid: 'excel!Excel.ErrorCodes:enum'
+    name: ErrorCodes
+    fullName: Excel.ErrorCodes
+  - uid: 'excel!Excel.Filter:class'
+    name: Filter
+    fullName: Excel.Filter
+  - uid: 'excel!Excel.FilterCriteria:interface'
+    name: FilterCriteria
+    fullName: Excel.FilterCriteria
+  - uid: 'excel!Excel.FilterDatetime:interface'
+    name: FilterDatetime
+    fullName: Excel.FilterDatetime
+  - uid: 'excel!Excel.FilterDatetimeSpecificity:enum'
+    name: FilterDatetimeSpecificity
+    fullName: Excel.FilterDatetimeSpecificity
+  - uid: 'excel!Excel.FilterOn:enum'
+    name: FilterOn
+    fullName: Excel.FilterOn
+  - uid: 'excel!Excel.FilterOperator:enum'
+    name: FilterOperator
+    fullName: Excel.FilterOperator
+  - uid: 'excel!Excel.FiveArrowsGraySet:interface'
+    name: FiveArrowsGraySet
+    fullName: Excel.FiveArrowsGraySet
+  - uid: 'excel!Excel.FiveArrowsSet:interface'
+    name: FiveArrowsSet
+    fullName: Excel.FiveArrowsSet
+  - uid: 'excel!Excel.FiveBoxesSet:interface'
+    name: FiveBoxesSet
+    fullName: Excel.FiveBoxesSet
+  - uid: 'excel!Excel.FiveQuartersSet:interface'
+    name: FiveQuartersSet
+    fullName: Excel.FiveQuartersSet
+  - uid: 'excel!Excel.FiveRatingSet:interface'
+    name: FiveRatingSet
+    fullName: Excel.FiveRatingSet
+  - uid: 'excel!Excel.FormatProtection:class'
+    name: FormatProtection
+    fullName: Excel.FormatProtection
+  - uid: 'excel!Excel.FourArrowsGraySet:interface'
+    name: FourArrowsGraySet
+    fullName: Excel.FourArrowsGraySet
+  - uid: 'excel!Excel.FourArrowsSet:interface'
+    name: FourArrowsSet
+    fullName: Excel.FourArrowsSet
+  - uid: 'excel!Excel.FourRatingSet:interface'
+    name: FourRatingSet
+    fullName: Excel.FourRatingSet
+  - uid: 'excel!Excel.FourRedToBlackSet:interface'
+    name: FourRedToBlackSet
+    fullName: Excel.FourRedToBlackSet
+  - uid: 'excel!Excel.FourTrafficLightsSet:interface'
+    name: FourTrafficLightsSet
+    fullName: Excel.FourTrafficLightsSet
+  - uid: 'excel!Excel.FunctionResult:class'
+    name: FunctionResult
+    fullName: Excel.FunctionResult
+  - uid: 'excel!Excel.Functions:class'
+    name: Functions
+    fullName: Excel.Functions
+  - uid: 'excel!Excel.HorizontalAlignment:enum'
+    name: HorizontalAlignment
+    fullName: Excel.HorizontalAlignment
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon
+    fullName: Excel.Icon
+  - uid: 'excel!Excel.IconCollections:interface'
+    name: IconCollections
+    fullName: Excel.IconCollections
+  - uid: 'excel!Excel.IconSet:enum'
+    name: IconSet
+    fullName: Excel.IconSet
+  - uid: 'excel!Excel.ImageFittingMode:enum'
+    name: ImageFittingMode
+    fullName: Excel.ImageFittingMode
+  - uid: 'excel!Excel.InsertShiftDirection:enum'
+    name: InsertShiftDirection
+    fullName: Excel.InsertShiftDirection
+  - uid: 'excel!Excel.NamedItem:class'
+    name: NamedItem
+    fullName: Excel.NamedItem
+  - uid: 'excel!Excel.NamedItemCollection:class'
+    name: NamedItemCollection
+    fullName: Excel.NamedItemCollection
+  - uid: 'excel!Excel.NamedItemScope:enum'
+    name: NamedItemScope
+    fullName: Excel.NamedItemScope
+  - uid: 'excel!Excel.NamedItemType:enum'
+    name: NamedItemType
+    fullName: Excel.NamedItemType
+  - uid: 'excel!Excel.PivotTable:class'
+    name: PivotTable
+    fullName: Excel.PivotTable
+  - uid: 'excel!Excel.PivotTableCollection:class'
+    name: PivotTableCollection
+    fullName: Excel.PivotTableCollection
+  - uid: 'excel!Excel.Range:class'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.RangeBorder:class'
+    name: RangeBorder
+    fullName: Excel.RangeBorder
+  - uid: 'excel!Excel.RangeBorderCollection:class'
+    name: RangeBorderCollection
+    fullName: Excel.RangeBorderCollection
+  - uid: 'excel!Excel.RangeFill:class'
+    name: RangeFill
+    fullName: Excel.RangeFill
+  - uid: 'excel!Excel.RangeFont:class'
+    name: RangeFont
+    fullName: Excel.RangeFont
+  - uid: 'excel!Excel.RangeFormat:class'
+    name: RangeFormat
+    fullName: Excel.RangeFormat
+  - uid: 'excel!Excel.RangeReference:interface'
+    name: RangeReference
+    fullName: Excel.RangeReference
+  - uid: 'excel!Excel.RangeSort:class'
+    name: RangeSort
+    fullName: Excel.RangeSort
+  - uid: 'excel!Excel.RangeUnderlineStyle:enum'
+    name: RangeUnderlineStyle
+    fullName: Excel.RangeUnderlineStyle
+  - uid: 'excel!Excel.RangeValueType:enum'
+    name: RangeValueType
+    fullName: Excel.RangeValueType
+  - uid: 'excel!Excel.RangeView:class'
+    name: RangeView
+    fullName: Excel.RangeView
+  - uid: 'excel!Excel.RangeViewCollection:class'
+    name: RangeViewCollection
+    fullName: Excel.RangeViewCollection
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.run~0:complex'
+    name: Promise<T>
+    fullName: Promise<T>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <T>
+        fullName: <T>
+  - uid: 'excel!Excel.run~1:complex'
+    name: '(context: Excel.RequestContext) => Promise<T>'
+    fullName: '(context: Excel.RequestContext) => Promise<T>'
+    spec.typeScript:
+      - name: '(context: '
+        fullName: '(context: '
+      - uid: 'excel!Excel.RequestContext:class'
+        name: Excel.RequestContext
+        fullName: Excel.RequestContext
+      - name: ') => '
+        fullName: ') => '
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <T>
+        fullName: <T>
+  - uid: 'excel!Excel.run~2:complex'
+    name: Promise<T>
+    fullName: Promise<T>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <T>
+        fullName: <T>
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.run~3:complex'
+    name: '(context: Excel.RequestContext) => Promise<T>'
+    fullName: '(context: Excel.RequestContext) => Promise<T>'
+    spec.typeScript:
+      - name: '(context: '
+        fullName: '(context: '
+      - uid: 'excel!Excel.RequestContext:class'
+        name: Excel.RequestContext
+        fullName: Excel.RequestContext
+      - name: ') => '
+        fullName: ') => '
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <T>
+        fullName: <T>
+  - uid: 'excel!Excel.run~4:complex'
+    name: Promise<T>
+    fullName: Promise<T>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <T>
+        fullName: <T>
+  - uid: 'excel!Excel.run~5:complex'
+    name: 'OfficeExtension.ClientObject[]'
+    fullName: 'OfficeExtension.ClientObject[]'
+    spec.typeScript:
+      - uid: 'excel!OfficeExtension.ClientObject:class'
+        name: OfficeExtension.ClientObject
+        fullName: OfficeExtension.ClientObject
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.run~6:complex'
+    name: '(context: Excel.RequestContext) => Promise<T>'
+    fullName: '(context: Excel.RequestContext) => Promise<T>'
+    spec.typeScript:
+      - name: '(context: '
+        fullName: '(context: '
+      - uid: 'excel!Excel.RequestContext:class'
+        name: Excel.RequestContext
+        fullName: Excel.RequestContext
+      - name: ') => '
+        fullName: ') => '
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <T>
+        fullName: <T>
+  - uid: 'excel!Excel.run~7:complex'
+    name: Promise<T>
+    fullName: Promise<T>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <T>
+        fullName: <T>
+  - uid: 'excel!Excel.RunOptions:interface'
+    name: RunOptions
+    fullName: Excel.RunOptions
+  - uid: 'excel!Excel.run~8:complex'
+    name: '(context: Excel.RequestContext) => Promise<T>'
+    fullName: '(context: Excel.RequestContext) => Promise<T>'
+    spec.typeScript:
+      - name: '(context: '
+        fullName: '(context: '
+      - uid: 'excel!Excel.RequestContext:class'
+        name: Excel.RequestContext
+        fullName: Excel.RequestContext
+      - name: ') => '
+        fullName: ') => '
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <T>
+        fullName: <T>
+  - uid: 'excel!Excel.run~9:complex'
+    name: Promise<T>
+    fullName: Promise<T>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <T>
+        fullName: <T>
+  - uid: 'excel!OfficeExtension.ClientRequestContext:class'
+    name: OfficeExtension.ClientRequestContext
+  - uid: 'excel!Excel.run~10:complex'
+    name: '(context: Excel.RequestContext) => Promise<T>'
+    fullName: '(context: Excel.RequestContext) => Promise<T>'
+    spec.typeScript:
+      - name: '(context: '
+        fullName: '(context: '
+      - uid: 'excel!Excel.RequestContext:class'
+        name: Excel.RequestContext
+        fullName: Excel.RequestContext
+      - name: ') => '
+        fullName: ') => '
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <T>
+        fullName: <T>
+  - uid: 'excel!Excel.SelectionChangedEventArgs:interface'
+    name: SelectionChangedEventArgs
+    fullName: Excel.SelectionChangedEventArgs
+  - uid: 'excel!Excel.Session:class'
+    name: Session
+    fullName: Excel.Session
+  - uid: 'excel!Excel.Setting:class'
+    name: Setting
+    fullName: Excel.Setting
+  - uid: 'excel!Excel.SettingCollection:class'
+    name: SettingCollection
+    fullName: Excel.SettingCollection
+  - uid: 'excel!Excel.SettingsChangedEventArgs:interface'
+    name: SettingsChangedEventArgs
+    fullName: Excel.SettingsChangedEventArgs
+  - uid: 'excel!Excel.SheetVisibility:enum'
+    name: SheetVisibility
+    fullName: Excel.SheetVisibility
+  - uid: 'excel!Excel.SortDataOption:enum'
+    name: SortDataOption
+    fullName: Excel.SortDataOption
+  - uid: 'excel!Excel.SortField:interface'
+    name: SortField
+    fullName: Excel.SortField
+  - uid: 'excel!Excel.SortMethod:enum'
+    name: SortMethod
+    fullName: Excel.SortMethod
+  - uid: 'excel!Excel.SortOn:enum'
+    name: SortOn
+    fullName: Excel.SortOn
+  - uid: 'excel!Excel.SortOrientation:enum'
+    name: SortOrientation
+    fullName: Excel.SortOrientation
+  - uid: 'excel!Excel.Table:class'
+    name: Table
+    fullName: Excel.Table
+  - uid: 'excel!Excel.TableCollection:class'
+    name: TableCollection
+    fullName: Excel.TableCollection
+  - uid: 'excel!Excel.TableColumn:class'
+    name: TableColumn
+    fullName: Excel.TableColumn
+  - uid: 'excel!Excel.TableColumnCollection:class'
+    name: TableColumnCollection
+    fullName: Excel.TableColumnCollection
+  - uid: 'excel!Excel.TableRow:class'
+    name: TableRow
+    fullName: Excel.TableRow
+  - uid: 'excel!Excel.TableRowCollection:class'
+    name: TableRowCollection
+    fullName: Excel.TableRowCollection
+  - uid: 'excel!Excel.TableSort:class'
+    name: TableSort
+    fullName: Excel.TableSort
+  - uid: 'excel!Excel.ThreeArrowsGraySet:interface'
+    name: ThreeArrowsGraySet
+    fullName: Excel.ThreeArrowsGraySet
+  - uid: 'excel!Excel.ThreeArrowsSet:interface'
+    name: ThreeArrowsSet
+    fullName: Excel.ThreeArrowsSet
+  - uid: 'excel!Excel.ThreeFlagsSet:interface'
+    name: ThreeFlagsSet
+    fullName: Excel.ThreeFlagsSet
+  - uid: 'excel!Excel.ThreeSignsSet:interface'
+    name: ThreeSignsSet
+    fullName: Excel.ThreeSignsSet
+  - uid: 'excel!Excel.ThreeStarsSet:interface'
+    name: ThreeStarsSet
+    fullName: Excel.ThreeStarsSet
+  - uid: 'excel!Excel.ThreeSymbols2Set:interface'
+    name: ThreeSymbols2Set
+    fullName: Excel.ThreeSymbols2Set
+  - uid: 'excel!Excel.ThreeSymbolsSet:interface'
+    name: ThreeSymbolsSet
+    fullName: Excel.ThreeSymbolsSet
+  - uid: 'excel!Excel.ThreeTrafficLights1Set:interface'
+    name: ThreeTrafficLights1Set
+    fullName: Excel.ThreeTrafficLights1Set
+  - uid: 'excel!Excel.ThreeTrafficLights2Set:interface'
+    name: ThreeTrafficLights2Set
+    fullName: Excel.ThreeTrafficLights2Set
+  - uid: 'excel!Excel.ThreeTrianglesSet:interface'
+    name: ThreeTrianglesSet
+    fullName: Excel.ThreeTrianglesSet
+  - uid: 'excel!Excel.VerticalAlignment:enum'
+    name: VerticalAlignment
+    fullName: Excel.VerticalAlignment
+  - uid: 'excel!Excel.Workbook:class'
+    name: Workbook
+    fullName: Excel.Workbook
+  - uid: 'excel!Excel.Worksheet:class'
+    name: Worksheet
+    fullName: Excel.Worksheet
+  - uid: 'excel!Excel.WorksheetCollection:class'
+    name: WorksheetCollection
+    fullName: Excel.WorksheetCollection
+  - uid: 'excel!Excel.WorksheetProtection:class'
+    name: WorksheetProtection
+    fullName: Excel.WorksheetProtection
+  - uid: 'excel!Excel.WorksheetProtectionOptions:interface'
+    name: WorksheetProtectionOptions
+    fullName: Excel.WorksheetProtectionOptions

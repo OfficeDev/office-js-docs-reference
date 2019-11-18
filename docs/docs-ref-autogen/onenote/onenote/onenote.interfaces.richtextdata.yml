@@ -2,10 +2,11 @@
 items:
   - uid: 'onenote!OneNote.Interfaces.RichTextData:interface'
     summary: An interface describing the data returned by calling "richText.toJSON()".
-    name: OneNote.Interfaces.RichTextData
+    name: RichTextData
     fullName: OneNote.Interfaces.RichTextData
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:

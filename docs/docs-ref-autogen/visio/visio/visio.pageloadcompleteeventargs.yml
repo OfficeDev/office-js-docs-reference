@@ -5,10 +5,11 @@ items:
       Provides information about the page that raised the PageLoadComplete event.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: Visio.PageLoadCompleteEventArgs
+    name: PageLoadCompleteEventArgs
     fullName: Visio.PageLoadCompleteEventArgs
     langs:
       - typeScript
+    namespace: 'visio!Visio:namespace'
     type: interface
     package: visio!
     remarks: |-

@@ -27,10 +27,11 @@ items:
       ];
 
       ```
-    name: Office.CategoryDetails
+    name: CategoryDetails
     fullName: Office.CategoryDetails
     langs:
       - typeScript
+    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

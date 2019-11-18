@@ -2,10 +2,11 @@
 items:
   - uid: 'outlook!Office.ReplyFormAttachment:interface'
     summary: A file or item attachment. Used when displaying a reply form.
-    name: Office.ReplyFormAttachment
+    name: ReplyFormAttachment
     fullName: Office.ReplyFormAttachment
     langs:
       - typeScript
+    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

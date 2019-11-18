@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.TimelineStyleUpdateData:interface'
     summary: 'An interface for updating data on the TimelineStyle object, for use in `timelineStyle.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.TimelineStyleUpdateData
+    name: TimelineStyleUpdateData
     fullName: Excel.Interfaces.TimelineStyleUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

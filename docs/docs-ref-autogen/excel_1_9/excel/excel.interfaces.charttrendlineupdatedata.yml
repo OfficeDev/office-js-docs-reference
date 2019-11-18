@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData:interface'
     summary: 'An interface for updating data on the ChartTrendline object, for use in `chartTrendline.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.ChartTrendlineUpdateData
+    name: ChartTrendlineUpdateData
     fullName: Excel.Interfaces.ChartTrendlineUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -193,9 +194,11 @@ items:
           - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#type~0:complex'
 references:
   - uid: 'excel!Excel.Interfaces.ChartTrendlineFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartTrendlineFormatUpdateData
+    name: ChartTrendlineFormatUpdateData
+    fullName: Excel.Interfaces.ChartTrendlineFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelUpdateData:interface'
-    name: Excel.Interfaces.ChartTrendlineLabelUpdateData
+    name: ChartTrendlineLabelUpdateData
+    fullName: Excel.Interfaces.ChartTrendlineLabelUpdateData
   - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#type~0:complex'
     name: Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"
     fullName: Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"

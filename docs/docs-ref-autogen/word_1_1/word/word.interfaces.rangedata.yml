@@ -2,10 +2,11 @@
 items:
   - uid: 'word!Word.Interfaces.RangeData:interface'
     summary: An interface describing the data returned by calling "range.toJSON()".
-    name: Word.Interfaces.RangeData
+    name: RangeData
     fullName: Word.Interfaces.RangeData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -63,4 +64,5 @@ items:
           - string
 references:
   - uid: 'word!Word.Interfaces.FontData:interface'
-    name: Word.Interfaces.FontData
+    name: FontData
+    fullName: Word.Interfaces.FontData

@@ -5,10 +5,11 @@ items:
       A collection of custom XML parts.
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.CustomXmlPartCollectionLoadOptions
+    name: CustomXmlPartCollectionLoadOptions
     fullName: Excel.Interfaces.CustomXmlPartCollectionLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the GroupShapeCollection object, for use in `groupShapeCollection.set({ ...
       })`<!-- -->.
-    name: Excel.Interfaces.GroupShapeCollectionUpdateData
+    name: GroupShapeCollectionUpdateData
     fullName: Excel.Interfaces.GroupShapeCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

@@ -7,10 +7,11 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ShapeLineFormatLoadOptions
+    name: ShapeLineFormatLoadOptions
     fullName: Excel.Interfaces.ShapeLineFormatLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

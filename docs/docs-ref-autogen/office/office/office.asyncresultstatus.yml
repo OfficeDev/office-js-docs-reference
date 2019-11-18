@@ -3,10 +3,11 @@ items:
   - uid: 'office!Office.AsyncResultStatus:enum'
     summary: Specifies the result of an asynchronous call.
     remarks: 'Returned by the `status` property of the [AsyncResult](xref:office!Office.AsyncResult:interface) object.'
-    name: Office.AsyncResultStatus
+    name: AsyncResultStatus
     fullName: Office.AsyncResultStatus
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: enum
     package: office!
     children:

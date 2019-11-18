@@ -5,10 +5,11 @@ items:
       Encapsulates the format properties for the chart trendline label.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions
+    name: ChartTrendlineLabelFormatLoadOptions
     fullName: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -61,6 +62,8 @@ items:
           - 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
-    name: Excel.Interfaces.ChartBorderLoadOptions
+    name: ChartBorderLoadOptions
+    fullName: Excel.Interfaces.ChartBorderLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
-    name: Excel.Interfaces.ChartFontLoadOptions
+    name: ChartFontLoadOptions
+    fullName: Excel.Interfaces.ChartFontLoadOptions

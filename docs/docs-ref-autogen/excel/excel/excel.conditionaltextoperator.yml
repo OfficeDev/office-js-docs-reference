@@ -5,10 +5,11 @@ items:
       Represents the operator of the text conditional format type.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ConditionalTextOperator
+    name: ConditionalTextOperator
     fullName: Excel.ConditionalTextOperator
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

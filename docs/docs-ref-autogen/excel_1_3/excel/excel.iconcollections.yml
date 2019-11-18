@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.IconCollections:interface'
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.IconCollections
+    name: IconCollections
     fullName: Excel.IconCollections
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:
@@ -252,41 +253,61 @@ items:
 references:
   - uid: 'excel!Excel.FiveArrowsSet:interface'
     name: FiveArrowsSet
+    fullName: Excel.FiveArrowsSet
   - uid: 'excel!Excel.FiveArrowsGraySet:interface'
     name: FiveArrowsGraySet
+    fullName: Excel.FiveArrowsGraySet
   - uid: 'excel!Excel.FiveBoxesSet:interface'
     name: FiveBoxesSet
+    fullName: Excel.FiveBoxesSet
   - uid: 'excel!Excel.FiveQuartersSet:interface'
     name: FiveQuartersSet
+    fullName: Excel.FiveQuartersSet
   - uid: 'excel!Excel.FiveRatingSet:interface'
     name: FiveRatingSet
+    fullName: Excel.FiveRatingSet
   - uid: 'excel!Excel.FourArrowsSet:interface'
     name: FourArrowsSet
+    fullName: Excel.FourArrowsSet
   - uid: 'excel!Excel.FourArrowsGraySet:interface'
     name: FourArrowsGraySet
+    fullName: Excel.FourArrowsGraySet
   - uid: 'excel!Excel.FourRatingSet:interface'
     name: FourRatingSet
+    fullName: Excel.FourRatingSet
   - uid: 'excel!Excel.FourRedToBlackSet:interface'
     name: FourRedToBlackSet
+    fullName: Excel.FourRedToBlackSet
   - uid: 'excel!Excel.FourTrafficLightsSet:interface'
     name: FourTrafficLightsSet
+    fullName: Excel.FourTrafficLightsSet
   - uid: 'excel!Excel.ThreeArrowsSet:interface'
     name: ThreeArrowsSet
+    fullName: Excel.ThreeArrowsSet
   - uid: 'excel!Excel.ThreeArrowsGraySet:interface'
     name: ThreeArrowsGraySet
+    fullName: Excel.ThreeArrowsGraySet
   - uid: 'excel!Excel.ThreeFlagsSet:interface'
     name: ThreeFlagsSet
+    fullName: Excel.ThreeFlagsSet
   - uid: 'excel!Excel.ThreeSignsSet:interface'
     name: ThreeSignsSet
+    fullName: Excel.ThreeSignsSet
   - uid: 'excel!Excel.ThreeStarsSet:interface'
     name: ThreeStarsSet
+    fullName: Excel.ThreeStarsSet
   - uid: 'excel!Excel.ThreeSymbolsSet:interface'
     name: ThreeSymbolsSet
+    fullName: Excel.ThreeSymbolsSet
   - uid: 'excel!Excel.ThreeSymbols2Set:interface'
     name: ThreeSymbols2Set
+    fullName: Excel.ThreeSymbols2Set
   - uid: 'excel!Excel.ThreeTrafficLights1Set:interface'
     name: ThreeTrafficLights1Set
+    fullName: Excel.ThreeTrafficLights1Set
   - uid: 'excel!Excel.ThreeTrafficLights2Set:interface'
     name: ThreeTrafficLights2Set
+    fullName: Excel.ThreeTrafficLights2Set
   - uid: 'excel!Excel.ThreeTrianglesSet:interface'
     name: ThreeTrianglesSet
+    fullName: Excel.ThreeTrianglesSet

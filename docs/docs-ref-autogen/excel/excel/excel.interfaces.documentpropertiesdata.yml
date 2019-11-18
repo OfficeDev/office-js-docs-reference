@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
     summary: An interface describing the data returned by calling `documentProperties.toJSON()`<!-- -->.
-    name: Excel.Interfaces.DocumentPropertiesData
+    name: DocumentPropertiesData
     fullName: Excel.Interfaces.DocumentPropertiesData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

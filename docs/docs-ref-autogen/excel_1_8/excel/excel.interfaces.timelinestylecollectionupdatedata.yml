@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the TimelineStyleCollection object, for use in `timelineStyleCollection.set({
       ... })`<!-- -->.
-    name: Excel.Interfaces.TimelineStyleCollectionUpdateData
+    name: TimelineStyleCollectionUpdateData
     fullName: Excel.Interfaces.TimelineStyleCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

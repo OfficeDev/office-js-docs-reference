@@ -5,10 +5,11 @@ items:
       Represents the direction for a selection.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ConditionalFormatDirection
+    name: ConditionalFormatDirection
     fullName: Excel.ConditionalFormatDirection
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

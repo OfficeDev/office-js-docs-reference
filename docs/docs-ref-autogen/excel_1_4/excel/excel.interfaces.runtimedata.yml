@@ -2,9 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.RuntimeData:interface'
     summary: An interface describing the data returned by calling `runtime.toJSON()`<!-- -->.
-    name: Excel.Interfaces.RuntimeData
+    name: RuntimeData
     fullName: Excel.Interfaces.RuntimeData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

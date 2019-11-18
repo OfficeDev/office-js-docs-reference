@@ -5,10 +5,11 @@ items:
       Represents a cell icon.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Icon
+    name: Icon
     fullName: Excel.Icon
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

@@ -2,10 +2,11 @@
 items:
   - uid: 'word!Word.ImageFormat:enum'
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    name: Word.ImageFormat
+    name: ImageFormat
     fullName: Word.ImageFormat
     langs:
       - typeScript
+    namespace: 'word!Word:namespace'
     type: enum
     package: word!
     children:

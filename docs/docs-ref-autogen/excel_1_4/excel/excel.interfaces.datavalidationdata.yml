@@ -2,9 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.DataValidationData:interface'
     summary: An interface describing the data returned by calling `dataValidation.toJSON()`<!-- -->.
-    name: Excel.Interfaces.DataValidationData
+    name: DataValidationData
     fullName: Excel.Interfaces.DataValidationData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

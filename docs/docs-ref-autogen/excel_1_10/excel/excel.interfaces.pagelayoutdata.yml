@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.PageLayoutData:interface'
     summary: An interface describing the data returned by calling `pageLayout.toJSON()`<!-- -->.
-    name: Excel.Interfaces.PageLayoutData
+    name: PageLayoutData
     fullName: Excel.Interfaces.PageLayoutData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -345,7 +346,8 @@ items:
           - 'excel!Excel.PageLayoutZoomOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.HeaderFooterGroupData:interface'
-    name: Excel.Interfaces.HeaderFooterGroupData
+    name: HeaderFooterGroupData
+    fullName: Excel.Interfaces.HeaderFooterGroupData
   - uid: 'excel!Excel.Interfaces.PageLayoutData#orientation~0:complex'
     name: Excel.PageOrientation | "Portrait" | "Landscape"
     fullName: Excel.PageOrientation | "Portrait" | "Landscape"
@@ -404,4 +406,5 @@ references:
       - name: ' | "DownThenOver" | "OverThenDown"'
         fullName: ' | "DownThenOver" | "OverThenDown"'
   - uid: 'excel!Excel.PageLayoutZoomOptions:interface'
-    name: Excel.PageLayoutZoomOptions
+    name: PageLayoutZoomOptions
+    fullName: Excel.PageLayoutZoomOptions

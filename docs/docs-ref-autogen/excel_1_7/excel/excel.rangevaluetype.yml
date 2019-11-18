@@ -4,10 +4,11 @@ items:
     summary: >-
       \[ [API set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for
       RichValue](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.RangeValueType
+    name: RangeValueType
     fullName: Excel.RangeValueType
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

@@ -5,10 +5,11 @@ items:
       Represents the Horizontal Alignment of the Overlay relative to the shape.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: Visio.OverlayHorizontalAlignment
+    name: OverlayHorizontalAlignment
     fullName: Visio.OverlayHorizontalAlignment
     langs:
       - typeScript
+    namespace: 'visio!Visio:namespace'
     type: enum
     package: visio!
     children:

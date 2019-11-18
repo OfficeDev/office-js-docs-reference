@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.ProtectionSelectionMode:enum'
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: Excel.ProtectionSelectionMode
+    name: ProtectionSelectionMode
     fullName: Excel.ProtectionSelectionMode
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

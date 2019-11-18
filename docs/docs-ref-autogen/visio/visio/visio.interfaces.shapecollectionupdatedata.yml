@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the ShapeCollection object, for use in "shapeCollection.set(<!-- -->{ ... }<!--
       -->)".
-    name: Visio.Interfaces.ShapeCollectionUpdateData
+    name: ShapeCollectionUpdateData
     fullName: Visio.Interfaces.ShapeCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:

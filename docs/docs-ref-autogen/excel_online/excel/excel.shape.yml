@@ -8,13 +8,16 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Shape
+    name: Shape
     fullName: Excel.Shape
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Shape#altTextDescription:member'
@@ -1206,8 +1209,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Shape:class'
-    name: Excel.Shape
+    name: Shape
+    fullName: Excel.Shape
   - uid: 'excel!Excel.Shape#copyTo~0:complex'
     name: Worksheet | string
     fullName: Excel.Worksheet | string
@@ -1218,9 +1223,11 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.ShapeFill:class'
-    name: Excel.ShapeFill
+    name: ShapeFill
+    fullName: Excel.ShapeFill
   - uid: 'excel!Excel.GeometricShape:class'
-    name: Excel.GeometricShape
+    name: GeometricShape
+    fullName: Excel.GeometricShape
   - uid: 'excel!Excel.Shape#geometricShapeType~0:complex'
     name: >-
       Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" |
@@ -1300,7 +1307,8 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'excel!Excel.PictureFormat:enum'
-    name: Excel.PictureFormat
+    name: PictureFormat
+    fullName: Excel.PictureFormat
   - uid: 'excel!Excel.Shape#getAsImage~1:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -1311,15 +1319,20 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'excel!Excel.ShapeGroup:class'
-    name: Excel.ShapeGroup
+    name: ShapeGroup
+    fullName: Excel.ShapeGroup
   - uid: 'excel!Excel.Image:class'
-    name: Excel.Image
+    name: Image
+    fullName: Excel.Image
   - uid: 'excel!Excel.Line:class'
-    name: Excel.Line
+    name: Line
+    fullName: Excel.Line
   - uid: 'excel!Excel.ShapeLineFormat:class'
-    name: Excel.ShapeLineFormat
+    name: ShapeLineFormat
+    fullName: Excel.ShapeLineFormat
   - uid: 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
-    name: Excel.Interfaces.ShapeLoadOptions
+    name: ShapeLoadOptions
+    fullName: Excel.Interfaces.ShapeLoadOptions
   - uid: 'excel!Excel.Shape#onActivated~0:complex'
     name: OfficeExtension.EventHandlers<Excel.ShapeActivatedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.ShapeActivatedEventArgs>
@@ -1358,19 +1371,25 @@ references:
       - name: ' | "TwoCell" | "OneCell" | "Absolute"'
         fullName: ' | "TwoCell" | "OneCell" | "Absolute"'
   - uid: 'excel!Excel.ShapeScaleType:enum'
-    name: Excel.ShapeScaleType
+    name: ShapeScaleType
+    fullName: Excel.ShapeScaleType
   - uid: 'excel!Excel.ShapeScaleFrom:enum'
-    name: Excel.ShapeScaleFrom
+    name: ShapeScaleFrom
+    fullName: Excel.ShapeScaleFrom
   - uid: 'excel!Excel.Interfaces.ShapeUpdateData:interface'
-    name: Interfaces.ShapeUpdateData
+    name: ShapeUpdateData
+    fullName: Excel.Interfaces.ShapeUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.ShapeZOrder:enum'
-    name: Excel.ShapeZOrder
+    name: ShapeZOrder
+    fullName: Excel.ShapeZOrder
   - uid: 'excel!Excel.TextFrame:class'
-    name: Excel.TextFrame
+    name: TextFrame
+    fullName: Excel.TextFrame
   - uid: 'excel!Excel.Interfaces.ShapeData:interface'
-    name: Excel.Interfaces.ShapeData
+    name: ShapeData
+    fullName: Excel.Interfaces.ShapeData
   - uid: 'excel!Excel.Shape#type~0:complex'
     name: Excel.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line"
     fullName: Excel.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line"

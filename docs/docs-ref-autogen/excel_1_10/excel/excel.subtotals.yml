@@ -5,10 +5,11 @@ items:
       Subtotals for the Pivot Field.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Subtotals
+    name: Subtotals
     fullName: Excel.Subtotals
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

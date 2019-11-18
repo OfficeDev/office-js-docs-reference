@@ -39,10 +39,11 @@ items:
       });
 
       ```
-    name: Office.PhoneNumber
+    name: PhoneNumber
     fullName: Office.PhoneNumber
     langs:
       - typeScript
+    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

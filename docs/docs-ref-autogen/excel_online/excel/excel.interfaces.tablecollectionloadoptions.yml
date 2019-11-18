@@ -7,10 +7,11 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.TableCollectionLoadOptions
+    name: TableCollectionLoadOptions
     fullName: Excel.Interfaces.TableCollectionLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -303,12 +304,17 @@ items:
           - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.AutoFilterLoadOptions:interface'
-    name: Excel.Interfaces.AutoFilterLoadOptions
+    name: AutoFilterLoadOptions
+    fullName: Excel.Interfaces.AutoFilterLoadOptions
   - uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
-    name: Excel.Interfaces.TableColumnCollectionLoadOptions
+    name: TableColumnCollectionLoadOptions
+    fullName: Excel.Interfaces.TableColumnCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface'
-    name: Excel.Interfaces.TableRowCollectionLoadOptions
+    name: TableRowCollectionLoadOptions
+    fullName: Excel.Interfaces.TableRowCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
-    name: Excel.Interfaces.TableSortLoadOptions
+    name: TableSortLoadOptions
+    fullName: Excel.Interfaces.TableSortLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
-    name: Excel.Interfaces.WorksheetLoadOptions
+    name: WorksheetLoadOptions
+    fullName: Excel.Interfaces.WorksheetLoadOptions

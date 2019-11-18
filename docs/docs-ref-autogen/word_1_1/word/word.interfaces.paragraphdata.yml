@@ -2,10 +2,11 @@
 items:
   - uid: 'word!Word.Interfaces.ParagraphData:interface'
     summary: An interface describing the data returned by calling "paragraph.toJSON()".
-    name: Word.Interfaces.ParagraphData
+    name: ParagraphData
     fullName: Word.Interfaces.ParagraphData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -254,7 +255,8 @@ references:
       - name: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
         fullName: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
   - uid: 'word!Word.Interfaces.FontData:interface'
-    name: Word.Interfaces.FontData
+    name: FontData
+    fullName: Word.Interfaces.FontData
   - uid: 'word!Word.Interfaces.ParagraphData#inlinePictures~0:complex'
     name: 'Word.Interfaces.InlinePictureData[]'
     fullName: 'Word.Interfaces.InlinePictureData[]'

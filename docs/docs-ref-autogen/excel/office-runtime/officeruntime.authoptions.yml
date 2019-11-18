@@ -5,10 +5,11 @@ items:
       Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with
       the getAccessToken method.
     isPreview: true
-    name: OfficeRuntime.AuthOptions
+    name: AuthOptions
     fullName: OfficeRuntime.AuthOptions
     langs:
       - typeScript
+    namespace: 'office-runtime!OfficeRuntime:namespace'
     type: interface
     package: office-runtime!
     children:

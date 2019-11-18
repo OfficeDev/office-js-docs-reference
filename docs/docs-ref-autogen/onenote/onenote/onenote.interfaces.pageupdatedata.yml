@@ -2,10 +2,11 @@
 items:
   - uid: 'onenote!OneNote.Interfaces.PageUpdateData:interface'
     summary: 'An interface for updating data on the Page object, for use in "page.set(<!-- -->{ ... }<!-- -->)".'
-    name: OneNote.Interfaces.PageUpdateData
+    name: PageUpdateData
     fullName: OneNote.Interfaces.PageUpdateData
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -59,4 +60,5 @@ items:
           - string
 references:
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisUpdateData:interface'
-    name: OneNote.Interfaces.InkAnalysisUpdateData
+    name: InkAnalysisUpdateData
+    fullName: OneNote.Interfaces.InkAnalysisUpdateData

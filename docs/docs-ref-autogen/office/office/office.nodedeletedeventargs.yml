@@ -2,10 +2,11 @@
 items:
   - uid: 'office!Office.NodeDeletedEventArgs:interface'
     summary: Provides information about the deleted node that raised the nodeDeleted event.
-    name: Office.NodeDeletedEventArgs
+    name: NodeDeletedEventArgs
     fullName: Office.NodeDeletedEventArgs
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:
@@ -60,3 +61,4 @@ items:
 references:
   - uid: 'office!Office.CustomXmlNode:interface'
     name: CustomXmlNode
+    fullName: Office.CustomXmlNode

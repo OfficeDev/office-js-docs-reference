@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the ConditionalDataBarNegativeFormat object, for use in
       `conditionalDataBarNegativeFormat.set({ ... })`<!-- -->.
-    name: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
+    name: ConditionalDataBarNegativeFormatUpdateData
     fullName: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

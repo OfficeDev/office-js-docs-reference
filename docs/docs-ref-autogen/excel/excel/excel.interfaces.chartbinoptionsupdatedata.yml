@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData:interface'
     summary: 'An interface for updating data on the ChartBinOptions object, for use in `chartBinOptions.set({ ... })`<!-- -->.'
-    name: Excel.Interfaces.ChartBinOptionsUpdateData
+    name: ChartBinOptionsUpdateData
     fullName: Excel.Interfaces.ChartBinOptionsUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

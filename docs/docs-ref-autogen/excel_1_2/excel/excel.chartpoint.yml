@@ -5,13 +5,16 @@ items:
       Represents a point of a series in a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartPoint
+    name: ChartPoint
     fullName: Excel.ChartPoint
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartPoint#context:member'
@@ -208,15 +211,21 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartPointFormat:class'
-    name: Excel.ChartPointFormat
+    name: ChartPointFormat
+    fullName: Excel.ChartPointFormat
   - uid: 'excel!Excel.ChartPoint:class'
-    name: Excel.ChartPoint
+    name: ChartPoint
+    fullName: Excel.ChartPoint
   - uid: 'excel!Excel.Interfaces.ChartPointLoadOptions:interface'
-    name: Excel.Interfaces.ChartPointLoadOptions
+    name: ChartPointLoadOptions
+    fullName: Excel.Interfaces.ChartPointLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartPointUpdateData:interface'
-    name: Interfaces.ChartPointUpdateData
+    name: ChartPointUpdateData
+    fullName: Excel.Interfaces.ChartPointUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartPointData:interface'
-    name: Excel.Interfaces.ChartPointData
+    name: ChartPointData
+    fullName: Excel.Interfaces.ChartPointData

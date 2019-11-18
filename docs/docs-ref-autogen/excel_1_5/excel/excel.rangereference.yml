@@ -5,10 +5,11 @@ items:
       Represents a string reference of the form SheetName!A1:B5, or a global or local named range.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.RangeReference
+    name: RangeReference
     fullName: Excel.RangeReference
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

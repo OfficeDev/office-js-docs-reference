@@ -5,10 +5,11 @@ items:
       Contains the collection of the document's [Word.Section](xref:word!Word.Section:class) objects.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.Interfaces.SectionCollectionLoadOptions
+    name: SectionCollectionLoadOptions
     fullName: Word.Interfaces.SectionCollectionLoadOptions
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -44,4 +45,5 @@ items:
           - 'word!Word.Interfaces.BodyLoadOptions:interface'
 references:
   - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
-    name: Word.Interfaces.BodyLoadOptions
+    name: BodyLoadOptions
+    fullName: Word.Interfaces.BodyLoadOptions

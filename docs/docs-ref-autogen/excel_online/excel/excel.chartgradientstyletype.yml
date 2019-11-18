@@ -5,10 +5,11 @@ items:
       Represents the gradient style type of a chart series. This is only applicable for region map charts.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ChartGradientStyleType
+    name: ChartGradientStyleType
     fullName: Excel.ChartGradientStyleType
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

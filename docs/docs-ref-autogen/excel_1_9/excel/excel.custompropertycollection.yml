@@ -5,13 +5,16 @@ items:
       Contains the collection of customProperty objects.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.CustomPropertyCollection
+    name: CustomPropertyCollection
     fullName: Excel.CustomPropertyCollection
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.CustomPropertyCollection#add:member(1)'
@@ -238,9 +241,11 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.CustomProperty:class'
-    name: Excel.CustomProperty
+    name: CustomProperty
+    fullName: Excel.CustomProperty
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.CustomPropertyCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -260,7 +265,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.CustomPropertyCollection:class'
-    name: Excel.CustomPropertyCollection
+    name: CustomPropertyCollection
+    fullName: Excel.CustomPropertyCollection
   - uid: 'excel!Excel.CustomPropertyCollection#load~0:complex'
     name: Excel.Interfaces.CustomPropertyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.CustomPropertyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -276,4 +282,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.CustomPropertyCollectionData:interface'
-    name: Excel.Interfaces.CustomPropertyCollectionData
+    name: CustomPropertyCollectionData
+    fullName: Excel.Interfaces.CustomPropertyCollectionData

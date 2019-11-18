@@ -5,10 +5,11 @@ items:
       Provides the current enhanced locations when the `Office.EventType.EnhancedLocationsChanged` event is raised.
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    name: Office.EnhancedLocationsChangedEventArgs
+    name: EnhancedLocationsChangedEventArgs
     fullName: Office.EnhancedLocationsChangedEventArgs
     langs:
       - typeScript
+    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

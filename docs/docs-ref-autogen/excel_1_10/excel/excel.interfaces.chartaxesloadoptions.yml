@@ -5,10 +5,11 @@ items:
       Represents the chart axes.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartAxesLoadOptions
+    name: ChartAxesLoadOptions
     fullName: Excel.Interfaces.ChartAxesLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -77,4 +78,5 @@ items:
           - 'excel!Excel.Interfaces.ChartAxisLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions:interface'
-    name: Excel.Interfaces.ChartAxisLoadOptions
+    name: ChartAxisLoadOptions
+    fullName: Excel.Interfaces.ChartAxisLoadOptions

@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the ContentControl object, for use in "contentControl.set(<!-- -->{ ... }<!--
       -->)".
-    name: Word.Interfaces.ContentControlUpdateData
+    name: ContentControlUpdateData
     fullName: Word.Interfaces.ContentControlUpdateData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -190,4 +191,5 @@ references:
       - name: ' | "BoundingBox" | "Tags" | "Hidden"'
         fullName: ' | "BoundingBox" | "Tags" | "Hidden"'
   - uid: 'word!Word.Interfaces.FontUpdateData:interface'
-    name: Word.Interfaces.FontUpdateData
+    name: FontUpdateData
+    fullName: Word.Interfaces.FontUpdateData

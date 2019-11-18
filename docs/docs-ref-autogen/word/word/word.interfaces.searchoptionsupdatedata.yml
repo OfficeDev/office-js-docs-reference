@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the SearchOptions object, for use in "searchOptions.set(<!-- -->{ ... }<!--
       -->)".
-    name: Word.Interfaces.SearchOptionsUpdateData
+    name: SearchOptionsUpdateData
     fullName: Word.Interfaces.SearchOptionsUpdateData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

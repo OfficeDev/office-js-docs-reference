@@ -2,10 +2,11 @@
 items:
   - uid: 'office!Office.HostType:enum'
     summary: Specifies the host Office application in which the add-in is running.
-    name: Office.HostType
+    name: HostType
     fullName: Office.HostType
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: enum
     package: office!
     children:

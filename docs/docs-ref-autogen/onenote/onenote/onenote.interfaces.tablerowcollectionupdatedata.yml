@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the TableRowCollection object, for use in "tableRowCollection.set(<!-- -->{ ...
       }<!-- -->)".
-    name: OneNote.Interfaces.TableRowCollectionUpdateData
+    name: TableRowCollectionUpdateData
     fullName: OneNote.Interfaces.TableRowCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:

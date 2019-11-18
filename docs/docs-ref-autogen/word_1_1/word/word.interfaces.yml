@@ -1,0 +1,291 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'word!Word.Interfaces:namespace'
+    name: Word.Interfaces
+    fullName: Word.Interfaces
+    langs:
+      - typeScript
+    type: namespace
+    package: word!
+    children:
+      - 'word!Word.Interfaces.BodyData:interface'
+      - 'word!Word.Interfaces.BodyLoadOptions:interface'
+      - 'word!Word.Interfaces.BodyUpdateData:interface'
+      - 'word!Word.Interfaces.CollectionLoadOptions:interface'
+      - 'word!Word.Interfaces.ContentControlCollectionData:interface'
+      - 'word!Word.Interfaces.ContentControlCollectionLoadOptions:interface'
+      - 'word!Word.Interfaces.ContentControlCollectionUpdateData:interface'
+      - 'word!Word.Interfaces.ContentControlData:interface'
+      - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+      - 'word!Word.Interfaces.ContentControlUpdateData:interface'
+      - 'word!Word.Interfaces.CustomPropertyCollectionData:interface'
+      - 'word!Word.Interfaces.CustomPropertyCollectionUpdateData:interface'
+      - 'word!Word.Interfaces.CustomPropertyData:interface'
+      - 'word!Word.Interfaces.CustomPropertyUpdateData:interface'
+      - 'word!Word.Interfaces.DocumentCreatedData:interface'
+      - 'word!Word.Interfaces.DocumentCreatedUpdateData:interface'
+      - 'word!Word.Interfaces.DocumentData:interface'
+      - 'word!Word.Interfaces.DocumentLoadOptions:interface'
+      - 'word!Word.Interfaces.DocumentPropertiesData:interface'
+      - 'word!Word.Interfaces.DocumentPropertiesUpdateData:interface'
+      - 'word!Word.Interfaces.DocumentUpdateData:interface'
+      - 'word!Word.Interfaces.FontData:interface'
+      - 'word!Word.Interfaces.FontLoadOptions:interface'
+      - 'word!Word.Interfaces.FontUpdateData:interface'
+      - 'word!Word.Interfaces.InlinePictureCollectionData:interface'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions:interface'
+      - 'word!Word.Interfaces.InlinePictureCollectionUpdateData:interface'
+      - 'word!Word.Interfaces.InlinePictureData:interface'
+      - 'word!Word.Interfaces.InlinePictureLoadOptions:interface'
+      - 'word!Word.Interfaces.InlinePictureUpdateData:interface'
+      - 'word!Word.Interfaces.ListCollectionData:interface'
+      - 'word!Word.Interfaces.ListCollectionUpdateData:interface'
+      - 'word!Word.Interfaces.ListData:interface'
+      - 'word!Word.Interfaces.ListItemData:interface'
+      - 'word!Word.Interfaces.ListItemUpdateData:interface'
+      - 'word!Word.Interfaces.ParagraphCollectionData:interface'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions:interface'
+      - 'word!Word.Interfaces.ParagraphCollectionUpdateData:interface'
+      - 'word!Word.Interfaces.ParagraphData:interface'
+      - 'word!Word.Interfaces.ParagraphLoadOptions:interface'
+      - 'word!Word.Interfaces.ParagraphUpdateData:interface'
+      - 'word!Word.Interfaces.RangeCollectionData:interface'
+      - 'word!Word.Interfaces.RangeCollectionLoadOptions:interface'
+      - 'word!Word.Interfaces.RangeCollectionUpdateData:interface'
+      - 'word!Word.Interfaces.RangeData:interface'
+      - 'word!Word.Interfaces.RangeLoadOptions:interface'
+      - 'word!Word.Interfaces.RangeUpdateData:interface'
+      - 'word!Word.Interfaces.SearchOptionsData:interface'
+      - 'word!Word.Interfaces.SearchOptionsLoadOptions:interface'
+      - 'word!Word.Interfaces.SearchOptionsUpdateData:interface'
+      - 'word!Word.Interfaces.SectionCollectionData:interface'
+      - 'word!Word.Interfaces.SectionCollectionLoadOptions:interface'
+      - 'word!Word.Interfaces.SectionCollectionUpdateData:interface'
+      - 'word!Word.Interfaces.SectionData:interface'
+      - 'word!Word.Interfaces.SectionLoadOptions:interface'
+      - 'word!Word.Interfaces.SectionUpdateData:interface'
+      - 'word!Word.Interfaces.TableBorderData:interface'
+      - 'word!Word.Interfaces.TableBorderUpdateData:interface'
+      - 'word!Word.Interfaces.TableCellCollectionData:interface'
+      - 'word!Word.Interfaces.TableCellCollectionUpdateData:interface'
+      - 'word!Word.Interfaces.TableCellData:interface'
+      - 'word!Word.Interfaces.TableCellUpdateData:interface'
+      - 'word!Word.Interfaces.TableCollectionData:interface'
+      - 'word!Word.Interfaces.TableCollectionUpdateData:interface'
+      - 'word!Word.Interfaces.TableData:interface'
+      - 'word!Word.Interfaces.TableRowCollectionData:interface'
+      - 'word!Word.Interfaces.TableRowCollectionUpdateData:interface'
+      - 'word!Word.Interfaces.TableRowData:interface'
+      - 'word!Word.Interfaces.TableRowUpdateData:interface'
+      - 'word!Word.Interfaces.TableUpdateData:interface'
+references:
+  - uid: 'word!Word.Interfaces.BodyData:interface'
+    name: BodyData
+    fullName: Word.Interfaces.BodyData
+  - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
+    name: BodyLoadOptions
+    fullName: Word.Interfaces.BodyLoadOptions
+  - uid: 'word!Word.Interfaces.BodyUpdateData:interface'
+    name: BodyUpdateData
+    fullName: Word.Interfaces.BodyUpdateData
+  - uid: 'word!Word.Interfaces.CollectionLoadOptions:interface'
+    name: CollectionLoadOptions
+    fullName: Word.Interfaces.CollectionLoadOptions
+  - uid: 'word!Word.Interfaces.ContentControlCollectionData:interface'
+    name: ContentControlCollectionData
+    fullName: Word.Interfaces.ContentControlCollectionData
+  - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions:interface'
+    name: ContentControlCollectionLoadOptions
+    fullName: Word.Interfaces.ContentControlCollectionLoadOptions
+  - uid: 'word!Word.Interfaces.ContentControlCollectionUpdateData:interface'
+    name: ContentControlCollectionUpdateData
+    fullName: Word.Interfaces.ContentControlCollectionUpdateData
+  - uid: 'word!Word.Interfaces.ContentControlData:interface'
+    name: ContentControlData
+    fullName: Word.Interfaces.ContentControlData
+  - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+    name: ContentControlLoadOptions
+    fullName: Word.Interfaces.ContentControlLoadOptions
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData:interface'
+    name: ContentControlUpdateData
+    fullName: Word.Interfaces.ContentControlUpdateData
+  - uid: 'word!Word.Interfaces.CustomPropertyCollectionData:interface'
+    name: CustomPropertyCollectionData
+    fullName: Word.Interfaces.CustomPropertyCollectionData
+  - uid: 'word!Word.Interfaces.CustomPropertyCollectionUpdateData:interface'
+    name: CustomPropertyCollectionUpdateData
+    fullName: Word.Interfaces.CustomPropertyCollectionUpdateData
+  - uid: 'word!Word.Interfaces.CustomPropertyData:interface'
+    name: CustomPropertyData
+    fullName: Word.Interfaces.CustomPropertyData
+  - uid: 'word!Word.Interfaces.CustomPropertyUpdateData:interface'
+    name: CustomPropertyUpdateData
+    fullName: Word.Interfaces.CustomPropertyUpdateData
+  - uid: 'word!Word.Interfaces.DocumentCreatedData:interface'
+    name: DocumentCreatedData
+    fullName: Word.Interfaces.DocumentCreatedData
+  - uid: 'word!Word.Interfaces.DocumentCreatedUpdateData:interface'
+    name: DocumentCreatedUpdateData
+    fullName: Word.Interfaces.DocumentCreatedUpdateData
+  - uid: 'word!Word.Interfaces.DocumentData:interface'
+    name: DocumentData
+    fullName: Word.Interfaces.DocumentData
+  - uid: 'word!Word.Interfaces.DocumentLoadOptions:interface'
+    name: DocumentLoadOptions
+    fullName: Word.Interfaces.DocumentLoadOptions
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData:interface'
+    name: DocumentPropertiesData
+    fullName: Word.Interfaces.DocumentPropertiesData
+  - uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData:interface'
+    name: DocumentPropertiesUpdateData
+    fullName: Word.Interfaces.DocumentPropertiesUpdateData
+  - uid: 'word!Word.Interfaces.DocumentUpdateData:interface'
+    name: DocumentUpdateData
+    fullName: Word.Interfaces.DocumentUpdateData
+  - uid: 'word!Word.Interfaces.FontData:interface'
+    name: FontData
+    fullName: Word.Interfaces.FontData
+  - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
+    name: FontLoadOptions
+    fullName: Word.Interfaces.FontLoadOptions
+  - uid: 'word!Word.Interfaces.FontUpdateData:interface'
+    name: FontUpdateData
+    fullName: Word.Interfaces.FontUpdateData
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionData:interface'
+    name: InlinePictureCollectionData
+    fullName: Word.Interfaces.InlinePictureCollectionData
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions:interface'
+    name: InlinePictureCollectionLoadOptions
+    fullName: Word.Interfaces.InlinePictureCollectionLoadOptions
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionUpdateData:interface'
+    name: InlinePictureCollectionUpdateData
+    fullName: Word.Interfaces.InlinePictureCollectionUpdateData
+  - uid: 'word!Word.Interfaces.InlinePictureData:interface'
+    name: InlinePictureData
+    fullName: Word.Interfaces.InlinePictureData
+  - uid: 'word!Word.Interfaces.InlinePictureLoadOptions:interface'
+    name: InlinePictureLoadOptions
+    fullName: Word.Interfaces.InlinePictureLoadOptions
+  - uid: 'word!Word.Interfaces.InlinePictureUpdateData:interface'
+    name: InlinePictureUpdateData
+    fullName: Word.Interfaces.InlinePictureUpdateData
+  - uid: 'word!Word.Interfaces.ListCollectionData:interface'
+    name: ListCollectionData
+    fullName: Word.Interfaces.ListCollectionData
+  - uid: 'word!Word.Interfaces.ListCollectionUpdateData:interface'
+    name: ListCollectionUpdateData
+    fullName: Word.Interfaces.ListCollectionUpdateData
+  - uid: 'word!Word.Interfaces.ListData:interface'
+    name: ListData
+    fullName: Word.Interfaces.ListData
+  - uid: 'word!Word.Interfaces.ListItemData:interface'
+    name: ListItemData
+    fullName: Word.Interfaces.ListItemData
+  - uid: 'word!Word.Interfaces.ListItemUpdateData:interface'
+    name: ListItemUpdateData
+    fullName: Word.Interfaces.ListItemUpdateData
+  - uid: 'word!Word.Interfaces.ParagraphCollectionData:interface'
+    name: ParagraphCollectionData
+    fullName: Word.Interfaces.ParagraphCollectionData
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions:interface'
+    name: ParagraphCollectionLoadOptions
+    fullName: Word.Interfaces.ParagraphCollectionLoadOptions
+  - uid: 'word!Word.Interfaces.ParagraphCollectionUpdateData:interface'
+    name: ParagraphCollectionUpdateData
+    fullName: Word.Interfaces.ParagraphCollectionUpdateData
+  - uid: 'word!Word.Interfaces.ParagraphData:interface'
+    name: ParagraphData
+    fullName: Word.Interfaces.ParagraphData
+  - uid: 'word!Word.Interfaces.ParagraphLoadOptions:interface'
+    name: ParagraphLoadOptions
+    fullName: Word.Interfaces.ParagraphLoadOptions
+  - uid: 'word!Word.Interfaces.ParagraphUpdateData:interface'
+    name: ParagraphUpdateData
+    fullName: Word.Interfaces.ParagraphUpdateData
+  - uid: 'word!Word.Interfaces.RangeCollectionData:interface'
+    name: RangeCollectionData
+    fullName: Word.Interfaces.RangeCollectionData
+  - uid: 'word!Word.Interfaces.RangeCollectionLoadOptions:interface'
+    name: RangeCollectionLoadOptions
+    fullName: Word.Interfaces.RangeCollectionLoadOptions
+  - uid: 'word!Word.Interfaces.RangeCollectionUpdateData:interface'
+    name: RangeCollectionUpdateData
+    fullName: Word.Interfaces.RangeCollectionUpdateData
+  - uid: 'word!Word.Interfaces.RangeData:interface'
+    name: RangeData
+    fullName: Word.Interfaces.RangeData
+  - uid: 'word!Word.Interfaces.RangeLoadOptions:interface'
+    name: RangeLoadOptions
+    fullName: Word.Interfaces.RangeLoadOptions
+  - uid: 'word!Word.Interfaces.RangeUpdateData:interface'
+    name: RangeUpdateData
+    fullName: Word.Interfaces.RangeUpdateData
+  - uid: 'word!Word.Interfaces.SearchOptionsData:interface'
+    name: SearchOptionsData
+    fullName: Word.Interfaces.SearchOptionsData
+  - uid: 'word!Word.Interfaces.SearchOptionsLoadOptions:interface'
+    name: SearchOptionsLoadOptions
+    fullName: Word.Interfaces.SearchOptionsLoadOptions
+  - uid: 'word!Word.Interfaces.SearchOptionsUpdateData:interface'
+    name: SearchOptionsUpdateData
+    fullName: Word.Interfaces.SearchOptionsUpdateData
+  - uid: 'word!Word.Interfaces.SectionCollectionData:interface'
+    name: SectionCollectionData
+    fullName: Word.Interfaces.SectionCollectionData
+  - uid: 'word!Word.Interfaces.SectionCollectionLoadOptions:interface'
+    name: SectionCollectionLoadOptions
+    fullName: Word.Interfaces.SectionCollectionLoadOptions
+  - uid: 'word!Word.Interfaces.SectionCollectionUpdateData:interface'
+    name: SectionCollectionUpdateData
+    fullName: Word.Interfaces.SectionCollectionUpdateData
+  - uid: 'word!Word.Interfaces.SectionData:interface'
+    name: SectionData
+    fullName: Word.Interfaces.SectionData
+  - uid: 'word!Word.Interfaces.SectionLoadOptions:interface'
+    name: SectionLoadOptions
+    fullName: Word.Interfaces.SectionLoadOptions
+  - uid: 'word!Word.Interfaces.SectionUpdateData:interface'
+    name: SectionUpdateData
+    fullName: Word.Interfaces.SectionUpdateData
+  - uid: 'word!Word.Interfaces.TableBorderData:interface'
+    name: TableBorderData
+    fullName: Word.Interfaces.TableBorderData
+  - uid: 'word!Word.Interfaces.TableBorderUpdateData:interface'
+    name: TableBorderUpdateData
+    fullName: Word.Interfaces.TableBorderUpdateData
+  - uid: 'word!Word.Interfaces.TableCellCollectionData:interface'
+    name: TableCellCollectionData
+    fullName: Word.Interfaces.TableCellCollectionData
+  - uid: 'word!Word.Interfaces.TableCellCollectionUpdateData:interface'
+    name: TableCellCollectionUpdateData
+    fullName: Word.Interfaces.TableCellCollectionUpdateData
+  - uid: 'word!Word.Interfaces.TableCellData:interface'
+    name: TableCellData
+    fullName: Word.Interfaces.TableCellData
+  - uid: 'word!Word.Interfaces.TableCellUpdateData:interface'
+    name: TableCellUpdateData
+    fullName: Word.Interfaces.TableCellUpdateData
+  - uid: 'word!Word.Interfaces.TableCollectionData:interface'
+    name: TableCollectionData
+    fullName: Word.Interfaces.TableCollectionData
+  - uid: 'word!Word.Interfaces.TableCollectionUpdateData:interface'
+    name: TableCollectionUpdateData
+    fullName: Word.Interfaces.TableCollectionUpdateData
+  - uid: 'word!Word.Interfaces.TableData:interface'
+    name: TableData
+    fullName: Word.Interfaces.TableData
+  - uid: 'word!Word.Interfaces.TableRowCollectionData:interface'
+    name: TableRowCollectionData
+    fullName: Word.Interfaces.TableRowCollectionData
+  - uid: 'word!Word.Interfaces.TableRowCollectionUpdateData:interface'
+    name: TableRowCollectionUpdateData
+    fullName: Word.Interfaces.TableRowCollectionUpdateData
+  - uid: 'word!Word.Interfaces.TableRowData:interface'
+    name: TableRowData
+    fullName: Word.Interfaces.TableRowData
+  - uid: 'word!Word.Interfaces.TableRowUpdateData:interface'
+    name: TableRowUpdateData
+    fullName: Word.Interfaces.TableRowUpdateData
+  - uid: 'word!Word.Interfaces.TableUpdateData:interface'
+    name: TableUpdateData
+    fullName: Word.Interfaces.TableUpdateData

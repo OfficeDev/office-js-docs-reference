@@ -5,10 +5,11 @@ items:
       Represents a chart title object of a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ChartTitleLoadOptions
+    name: ChartTitleLoadOptions
     fullName: Excel.Interfaces.ChartTitleLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -93,4 +94,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartTitleFormatLoadOptions
+    name: ChartTitleFormatLoadOptions
+    fullName: Excel.Interfaces.ChartTitleFormatLoadOptions

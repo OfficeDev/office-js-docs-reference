@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the ParagraphCollection object, for use in "paragraphCollection.set(<!-- -->{
       ... }<!-- -->)".
-    name: Word.Interfaces.ParagraphCollectionUpdateData
+    name: ParagraphCollectionUpdateData
     fullName: Word.Interfaces.ParagraphCollectionUpdateData
     langs:
       - typeScript
+    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

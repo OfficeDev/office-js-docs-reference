@@ -5,13 +5,16 @@ items:
       Specifies the border style.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.TableBorder
+    name: TableBorder
     fullName: Word.TableBorder
     langs:
       - typeScript
+    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.TableBorder#color:member'
@@ -277,16 +280,21 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.TableBorder:class'
-    name: Word.TableBorder
+    name: TableBorder
+    fullName: Word.TableBorder
   - uid: 'word!Word.Interfaces.TableBorderLoadOptions:interface'
-    name: Word.Interfaces.TableBorderLoadOptions
+    name: TableBorderLoadOptions
+    fullName: Word.Interfaces.TableBorderLoadOptions
   - uid: 'word!Word.Interfaces.TableBorderUpdateData:interface'
-    name: Interfaces.TableBorderUpdateData
+    name: TableBorderUpdateData
+    fullName: Word.Interfaces.TableBorderUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.TableBorderData:interface'
-    name: Word.Interfaces.TableBorderData
+    name: TableBorderData
+    fullName: Word.Interfaces.TableBorderData
   - uid: 'word!Word.TableBorder#type~0:complex'
     name: >-
       Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" |

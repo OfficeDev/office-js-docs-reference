@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the TopBottomConditionalFormat object, for use in
       `topBottomConditionalFormat.set({ ... })`<!-- -->.
-    name: Excel.Interfaces.TopBottomConditionalFormatUpdateData
+    name: TopBottomConditionalFormatUpdateData
     fullName: Excel.Interfaces.TopBottomConditionalFormatUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -45,6 +46,8 @@ items:
           - 'excel!Excel.ConditionalTopBottomRule:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
-    name: Excel.Interfaces.ConditionalRangeFormatUpdateData
+    name: ConditionalRangeFormatUpdateData
+    fullName: Excel.Interfaces.ConditionalRangeFormatUpdateData
   - uid: 'excel!Excel.ConditionalTopBottomRule:interface'
-    name: Excel.ConditionalTopBottomRule
+    name: ConditionalTopBottomRule
+    fullName: Excel.ConditionalTopBottomRule

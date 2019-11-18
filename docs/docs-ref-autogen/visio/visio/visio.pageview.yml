@@ -5,13 +5,16 @@ items:
       Represents the PageView class.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: Visio.PageView
+    name: PageView
     fullName: Visio.PageView
     langs:
       - typeScript
+    namespace: 'visio!Visio:namespace'
     type: class
     extends:
       - 'visio!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'visio!OfficeExtension.ClientObject:class'
     package: visio!
     children:
       - 'visio!Visio.PageView#centerViewportOnShape:member(1)'
@@ -353,6 +356,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'visio!Visio.RequestContext:class'
     name: RequestContext
+    fullName: Visio.RequestContext
   - uid: 'visio!Visio.PageView#getPosition~0:complex'
     name: OfficeExtension.ClientResult<Visio.Position>
     fullName: OfficeExtension.ClientResult<Visio.Position>
@@ -368,7 +372,8 @@ references:
       - name: '>'
         fullName: '>'
   - uid: 'visio!Visio.Selection:class'
-    name: Visio.Selection
+    name: Selection
+    fullName: Visio.Selection
   - uid: 'visio!Visio.PageView#isShapeInViewport~0:complex'
     name: OfficeExtension.ClientResult<boolean>
     fullName: OfficeExtension.ClientResult<boolean>
@@ -379,16 +384,22 @@ references:
       - name: <boolean>
         fullName: <boolean>
   - uid: 'visio!Visio.Shape:class'
-    name: Visio.Shape
+    name: Shape
+    fullName: Visio.Shape
   - uid: 'visio!Visio.PageView:class'
-    name: Visio.PageView
+    name: PageView
+    fullName: Visio.PageView
   - uid: 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
-    name: Visio.Interfaces.PageViewLoadOptions
+    name: PageViewLoadOptions
+    fullName: Visio.Interfaces.PageViewLoadOptions
   - uid: 'visio!Visio.Interfaces.PageViewUpdateData:interface'
-    name: Interfaces.PageViewUpdateData
+    name: PageViewUpdateData
+    fullName: Visio.Interfaces.PageViewUpdateData
   - uid: 'visio!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'visio!Visio.Position:interface'
-    name: Visio.Position
+    name: Position
+    fullName: Visio.Position
   - uid: 'visio!Visio.Interfaces.PageViewData:interface'
-    name: Visio.Interfaces.PageViewData
+    name: PageViewData
+    fullName: Visio.Interfaces.PageViewData

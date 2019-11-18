@@ -5,10 +5,11 @@ items:
       Provides updated recurrence object that raised the `Office.EventType.RecurrenceChanged` event.
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    name: Office.RecurrenceChangedEventArgs
+    name: RecurrenceChangedEventArgs
     fullName: Office.RecurrenceChangedEventArgs
     langs:
       - typeScript
+    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:
@@ -47,3 +48,4 @@ items:
 references:
   - uid: 'outlook!Office.Recurrence:interface'
     name: Recurrence
+    fullName: Office.Recurrence

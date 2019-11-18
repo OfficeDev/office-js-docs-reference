@@ -5,10 +5,11 @@ items:
       Provides information about the worksheet format change event.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.WorksheetFormatChangedEventArgs
+    name: WorksheetFormatChangedEventArgs
     fullName: Excel.WorksheetFormatChangedEventArgs
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:
@@ -122,9 +123,11 @@ items:
           - string
 references:
   - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
+    name: Range
+    fullName: Excel.Range
   - uid: 'excel!Excel.RequestContext:class'
-    name: Excel.RequestContext
+    name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.WorksheetFormatChangedEventArgs#source~0:complex'
     name: Excel.EventSource | "Local" | "Remote"
     fullName: Excel.EventSource | "Local" | "Remote"

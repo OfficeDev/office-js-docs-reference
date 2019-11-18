@@ -1,0 +1,23 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.AddinCommands:namespace'
+    name: Office.AddinCommands
+    fullName: Office.AddinCommands
+    langs:
+      - typeScript
+    type: namespace
+    package: office!
+    children:
+      - 'office!Office.AddinCommands.Event:interface'
+      - 'office!Office.AddinCommands.EventCompletedOptions:interface'
+      - 'office!Office.AddinCommands.Source:interface'
+references:
+  - uid: 'office!Office.AddinCommands.Event:interface'
+    name: Event
+    fullName: Office.AddinCommands.Event
+  - uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
+    name: EventCompletedOptions
+    fullName: Office.AddinCommands.EventCompletedOptions
+  - uid: 'office!Office.AddinCommands.Source:interface'
+    name: Source
+    fullName: Office.AddinCommands.Source

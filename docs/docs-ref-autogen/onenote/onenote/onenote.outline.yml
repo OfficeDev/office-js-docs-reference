@@ -5,13 +5,16 @@ items:
       Represents a container for Paragraph objects.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.Outline
+    name: Outline
     fullName: OneNote.Outline
     langs:
       - typeScript
+    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.Outline#appendHtml:member(1)'
@@ -423,13 +426,17 @@ references:
   - uid: 'onenote!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.Image:class'
-    name: OneNote.Image
+    name: Image
+    fullName: OneNote.Image
   - uid: 'onenote!OneNote.RichText:class'
-    name: OneNote.RichText
+    name: RichText
+    fullName: OneNote.RichText
   - uid: 'onenote!OneNote.Table:class'
-    name: OneNote.Table
+    name: Table
+    fullName: OneNote.Table
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
+    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.Outline#isTitle~0:complex'
     name: OfficeExtension.ClientResult<boolean>
     fullName: OfficeExtension.ClientResult<boolean>
@@ -440,12 +447,17 @@ references:
       - name: <boolean>
         fullName: <boolean>
   - uid: 'onenote!OneNote.Outline:class'
-    name: OneNote.Outline
+    name: Outline
+    fullName: OneNote.Outline
   - uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions:interface'
-    name: OneNote.Interfaces.OutlineLoadOptions
+    name: OutlineLoadOptions
+    fullName: OneNote.Interfaces.OutlineLoadOptions
   - uid: 'onenote!OneNote.PageContent:class'
-    name: OneNote.PageContent
+    name: PageContent
+    fullName: OneNote.PageContent
   - uid: 'onenote!OneNote.ParagraphCollection:class'
-    name: OneNote.ParagraphCollection
+    name: ParagraphCollection
+    fullName: OneNote.ParagraphCollection
   - uid: 'onenote!OneNote.Interfaces.OutlineData:interface'
-    name: OneNote.Interfaces.OutlineData
+    name: OutlineData
+    fullName: OneNote.Interfaces.OutlineData

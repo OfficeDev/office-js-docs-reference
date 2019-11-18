@@ -2,10 +2,11 @@
 items:
   - uid: 'visio!Visio.Interfaces.PageData:interface'
     summary: An interface describing the data returned by calling "page.toJSON()".
-    name: Visio.Interfaces.PageData
+    name: PageData
     fullName: Visio.Interfaces.PageData
     langs:
       - typeScript
+    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:
@@ -182,4 +183,5 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'visio!Visio.Interfaces.PageViewData:interface'
-    name: Visio.Interfaces.PageViewData
+    name: PageViewData
+    fullName: Visio.Interfaces.PageViewData

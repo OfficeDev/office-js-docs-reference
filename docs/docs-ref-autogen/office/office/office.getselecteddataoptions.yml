@@ -2,10 +2,11 @@
 items:
   - uid: 'office!Office.GetSelectedDataOptions:interface'
     summary: Provides options for customizing what data is returned and how it is formatted.
-    name: Office.GetSelectedDataOptions
+    name: GetSelectedDataOptions
     fullName: Office.GetSelectedDataOptions
     langs:
       - typeScript
+    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:

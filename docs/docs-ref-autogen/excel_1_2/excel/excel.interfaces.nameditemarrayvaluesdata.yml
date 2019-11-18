@@ -2,9 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesData:interface'
     summary: An interface describing the data returned by calling `namedItemArrayValues.toJSON()`<!-- -->.
-    name: Excel.Interfaces.NamedItemArrayValuesData
+    name: NamedItemArrayValuesData
     fullName: Excel.Interfaces.NamedItemArrayValuesData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

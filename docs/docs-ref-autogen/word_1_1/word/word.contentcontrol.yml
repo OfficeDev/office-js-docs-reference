@@ -8,13 +8,16 @@ items:
 
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Word.ContentControl
+    name: ContentControl
     fullName: Word.ContentControl
     langs:
       - typeScript
+    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.ContentControl#appearance:member'
@@ -1617,11 +1620,14 @@ references:
       - name: ' | "BoundingBox" | "Tags" | "Hidden"'
         fullName: ' | "BoundingBox" | "Tags" | "Hidden"'
   - uid: 'word!Word.ContentControlCollection:class'
-    name: Word.ContentControlCollection
+    name: ContentControlCollection
+    fullName: Word.ContentControlCollection
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.Font:class'
-    name: Word.Font
+    name: Font
+    fullName: Word.Font
   - uid: 'word!Word.ContentControl#getHtml~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -1641,23 +1647,32 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'word!Word.InlinePictureCollection:class'
-    name: Word.InlinePictureCollection
+    name: InlinePictureCollection
+    fullName: Word.InlinePictureCollection
   - uid: 'word!Word.BreakType:enum'
-    name: Word.BreakType
+    name: BreakType
+    fullName: Word.BreakType
   - uid: 'word!Word.InsertLocation:enum'
-    name: Word.InsertLocation
+    name: InsertLocation
+    fullName: Word.InsertLocation
   - uid: 'word!Word.Range:class'
-    name: Word.Range
+    name: Range
+    fullName: Word.Range
   - uid: 'word!Word.Paragraph:class'
-    name: Word.Paragraph
+    name: Paragraph
+    fullName: Word.Paragraph
   - uid: 'word!Word.ContentControl:class'
-    name: Word.ContentControl
+    name: ContentControl
+    fullName: Word.ContentControl
   - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
-    name: Word.Interfaces.ContentControlLoadOptions
+    name: ContentControlLoadOptions
+    fullName: Word.Interfaces.ContentControlLoadOptions
   - uid: 'word!Word.ParagraphCollection:class'
-    name: Word.ParagraphCollection
+    name: ParagraphCollection
+    fullName: Word.ParagraphCollection
   - uid: 'word!Word.RangeCollection:class'
-    name: Word.RangeCollection
+    name: RangeCollection
+    fullName: Word.RangeCollection
   - uid: 'word!Word.ContentControl#search~0:complex'
     name: |-
       Word.SearchOptions | {
@@ -1704,13 +1719,16 @@ references:
                       matchWildcards?: boolean;
                   }
   - uid: 'word!Word.SelectionMode:enum'
-    name: Word.SelectionMode
+    name: SelectionMode
+    fullName: Word.SelectionMode
   - uid: 'word!Word.Interfaces.ContentControlUpdateData:interface'
-    name: Interfaces.ContentControlUpdateData
+    name: ContentControlUpdateData
+    fullName: Word.Interfaces.ContentControlUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.ContentControlData:interface'
-    name: Word.Interfaces.ContentControlData
+    name: ContentControlData
+    fullName: Word.Interfaces.ContentControlData
   - uid: 'word!Word.ContentControl#type~0:complex'
     name: >-
       Word.ContentControlType | "Unknown" | "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" |

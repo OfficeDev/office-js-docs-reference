@@ -5,13 +5,16 @@ items:
       Represents the border of an object.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.ConditionalRangeBorder
+    name: ConditionalRangeBorder
     fullName: Excel.ConditionalRangeBorder
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ConditionalRangeBorder#color:member'
@@ -232,12 +235,16 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ConditionalRangeBorder:class'
-    name: Excel.ConditionalRangeBorder
+    name: ConditionalRangeBorder
+    fullName: Excel.ConditionalRangeBorder
   - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderLoadOptions:interface'
-    name: Excel.Interfaces.ConditionalRangeBorderLoadOptions
+    name: ConditionalRangeBorderLoadOptions
+    fullName: Excel.Interfaces.ConditionalRangeBorderLoadOptions
   - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface'
-    name: Interfaces.ConditionalRangeBorderUpdateData
+    name: ConditionalRangeBorderUpdateData
+    fullName: Excel.Interfaces.ConditionalRangeBorderUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.ConditionalRangeBorder#sideIndex~0:complex'
@@ -259,4 +266,5 @@ references:
       - name: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot"'
         fullName: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot"'
   - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderData:interface'
-    name: Excel.Interfaces.ConditionalRangeBorderData
+    name: ConditionalRangeBorderData
+    fullName: Excel.Interfaces.ConditionalRangeBorderData

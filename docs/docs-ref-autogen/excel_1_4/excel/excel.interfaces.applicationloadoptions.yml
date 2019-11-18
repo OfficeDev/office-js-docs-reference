@@ -5,10 +5,11 @@ items:
       Represents the Excel application that manages the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.Interfaces.ApplicationLoadOptions
+    name: ApplicationLoadOptions
     fullName: Excel.Interfaces.ApplicationLoadOptions
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

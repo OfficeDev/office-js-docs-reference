@@ -9,13 +9,16 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: Excel.CultureInfo
+    name: CultureInfo
     fullName: Excel.CultureInfo
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.CultureInfo#context:member'
@@ -174,11 +177,16 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.CultureInfo:class'
-    name: Excel.CultureInfo
+    name: CultureInfo
+    fullName: Excel.CultureInfo
   - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
-    name: Excel.Interfaces.CultureInfoLoadOptions
+    name: CultureInfoLoadOptions
+    fullName: Excel.Interfaces.CultureInfoLoadOptions
   - uid: 'excel!Excel.NumberFormatInfo:class'
-    name: Excel.NumberFormatInfo
+    name: NumberFormatInfo
+    fullName: Excel.NumberFormatInfo
   - uid: 'excel!Excel.Interfaces.CultureInfoData:interface'
-    name: Excel.Interfaces.CultureInfoData
+    name: CultureInfoData
+    fullName: Excel.Interfaces.CultureInfoData

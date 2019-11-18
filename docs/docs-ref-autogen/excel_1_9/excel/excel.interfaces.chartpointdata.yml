@@ -2,10 +2,11 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartPointData:interface'
     summary: An interface describing the data returned by calling `chartPoint.toJSON()`<!-- -->.
-    name: Excel.Interfaces.ChartPointData
+    name: ChartPointData
     fullName: Excel.Interfaces.ChartPointData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -141,9 +142,11 @@ items:
           - any
 references:
   - uid: 'excel!Excel.Interfaces.ChartDataLabelData:interface'
-    name: Excel.Interfaces.ChartDataLabelData
+    name: ChartDataLabelData
+    fullName: Excel.Interfaces.ChartDataLabelData
   - uid: 'excel!Excel.Interfaces.ChartPointFormatData:interface'
-    name: Excel.Interfaces.ChartPointFormatData
+    name: ChartPointFormatData
+    fullName: Excel.Interfaces.ChartPointFormatData
   - uid: 'excel!Excel.Interfaces.ChartPointData#markerStyle~0:complex'
     name: >-
       Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star" |

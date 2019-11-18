@@ -5,10 +5,11 @@ items:
       Represents the sort direction.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Excel.SortBy
+    name: SortBy
     fullName: Excel.SortBy
     langs:
       - typeScript
+    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

@@ -1,0 +1,120 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-runtime!OfficeRuntime:namespace'
+    summary: Office runtime namespace.
+    name: OfficeRuntime
+    fullName: OfficeRuntime
+    langs:
+      - typeScript
+    type: namespace
+    package: office-runtime!
+    children:
+      - 'office-runtime!OfficeRuntime.ApiInformation:interface'
+      - 'office-runtime!OfficeRuntime.apiInformation:var'
+      - 'office-runtime!OfficeRuntime.Auth:interface'
+      - 'office-runtime!OfficeRuntime.auth:var'
+      - 'office-runtime!OfficeRuntime.AuthOptions:interface'
+      - 'office-runtime!OfficeRuntime.Dialog:interface'
+      - 'office-runtime!OfficeRuntime.displayWebDialog:function(1)'
+      - 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
+      - 'office-runtime!OfficeRuntime.Storage:interface'
+      - 'office-runtime!OfficeRuntime.storage:var'
+  - uid: 'office-runtime!OfficeRuntime.apiInformation:var'
+    summary: Provides information about what Requirement Sets are supported in current environment.
+    name: apiInformation
+    fullName: OfficeRuntime.apiInformation
+    langs:
+      - typeScript
+    namespace: 'office-runtime!OfficeRuntime:namespace'
+    type: variable
+    syntax:
+      content: 'apiInformation: ApiInformation'
+      return:
+        type:
+          - 'office-runtime!OfficeRuntime.ApiInformation:interface'
+  - uid: 'office-runtime!OfficeRuntime.auth:var'
+    summary: Contains authorization related APIs.
+    isPreview: true
+    name: auth
+    fullName: OfficeRuntime.auth
+    langs:
+      - typeScript
+    namespace: 'office-runtime!OfficeRuntime:namespace'
+    type: variable
+    syntax:
+      content: 'auth: Auth'
+      return:
+        type:
+          - 'office-runtime!OfficeRuntime.Auth:interface'
+  - uid: 'office-runtime!OfficeRuntime.displayWebDialog:function(1)'
+    summary: |-
+      Method that enables a pop up web dialog box.
+
+      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    name: 'displayWebDialog(url, options)'
+    fullName: 'OfficeRuntime.displayWebDialog(url, options)'
+    langs:
+      - typeScript
+    namespace: 'office-runtime!OfficeRuntime:namespace'
+    type: function
+    syntax:
+      content: 'export function displayWebDialog(url: string, options?: DisplayWebDialogOptions): Promise<Dialog>;'
+      return:
+        type:
+          - 'office-runtime!OfficeRuntime.displayWebDialog~0:complex'
+        description: ''
+      parameters:
+        - id: url
+          description: Must be a string.
+          type:
+            - string
+        - id: options
+          description: Optional parameter. Must be of type DisplayWebDialogOptions.
+          type:
+            - 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
+  - uid: 'office-runtime!OfficeRuntime.storage:var'
+    summary: 'Asynchronous, global, and persistent key-value storage.'
+    name: storage
+    fullName: OfficeRuntime.storage
+    langs:
+      - typeScript
+    namespace: 'office-runtime!OfficeRuntime:namespace'
+    type: variable
+    syntax:
+      content: 'storage: Storage'
+      return:
+        type:
+          - 'office-runtime!OfficeRuntime.Storage:interface'
+references:
+  - uid: 'office-runtime!OfficeRuntime.ApiInformation:interface'
+    name: ApiInformation
+    fullName: OfficeRuntime.ApiInformation
+  - uid: 'office-runtime!OfficeRuntime.Auth:interface'
+    name: Auth
+    fullName: OfficeRuntime.Auth
+  - uid: 'office-runtime!OfficeRuntime.AuthOptions:interface'
+    name: AuthOptions
+    fullName: OfficeRuntime.AuthOptions
+  - uid: 'office-runtime!OfficeRuntime.Dialog:interface'
+    name: Dialog
+    fullName: OfficeRuntime.Dialog
+  - uid: 'office-runtime!OfficeRuntime.displayWebDialog~0:complex'
+    name: Promise<Dialog>
+    fullName: Promise<OfficeRuntime.Dialog>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <
+        fullName: <
+      - uid: 'office-runtime!OfficeRuntime.Dialog:interface'
+        name: Dialog
+        fullName: OfficeRuntime.Dialog
+      - name: '>'
+        fullName: '>'
+  - uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
+    name: DisplayWebDialogOptions
+    fullName: OfficeRuntime.DisplayWebDialogOptions
+  - uid: 'office-runtime!OfficeRuntime.Storage:interface'
+    name: Storage
+    fullName: OfficeRuntime.Storage

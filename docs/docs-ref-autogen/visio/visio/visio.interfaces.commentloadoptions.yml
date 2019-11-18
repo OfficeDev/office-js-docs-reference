@@ -5,10 +5,11 @@ items:
       Represents the Comment.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: Visio.Interfaces.CommentLoadOptions
+    name: CommentLoadOptions
     fullName: Visio.Interfaces.CommentLoadOptions
     langs:
       - typeScript
+    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:

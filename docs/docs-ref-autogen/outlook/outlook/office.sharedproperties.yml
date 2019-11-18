@@ -12,10 +12,11 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
-    name: Office.SharedProperties
+    name: SharedProperties
     fullName: Office.SharedProperties
     langs:
       - typeScript
+    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:
@@ -81,4 +82,5 @@ items:
           - string
 references:
   - uid: 'outlook!Office.MailboxEnums.DelegatePermissions:enum'
-    name: MailboxEnums.DelegatePermissions
+    name: DelegatePermissions
+    fullName: Office.MailboxEnums.DelegatePermissions

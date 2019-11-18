@@ -5,13 +5,16 @@ items:
       Represents a collection of sections.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: OneNote.SectionCollection
+    name: SectionCollection
     fullName: OneNote.SectionCollection
     langs:
       - typeScript
+    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.SectionCollection#context:member'
@@ -339,10 +342,13 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
+    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.SectionCollection:class'
-    name: OneNote.SectionCollection
+    name: SectionCollection
+    fullName: OneNote.SectionCollection
   - uid: 'onenote!OneNote.Section:class'
-    name: OneNote.Section
+    name: Section
+    fullName: OneNote.Section
   - uid: 'onenote!OneNote.SectionCollection#items~0:complex'
     name: 'OneNote.Section[]'
     fullName: 'OneNote.Section[]'
@@ -367,4 +373,5 @@ references:
   - uid: 'onenote!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'onenote!OneNote.Interfaces.SectionCollectionData:interface'
-    name: OneNote.Interfaces.SectionCollectionData
+    name: SectionCollectionData
+    fullName: OneNote.Interfaces.SectionCollectionData

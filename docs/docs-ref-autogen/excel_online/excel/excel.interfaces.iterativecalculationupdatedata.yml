@@ -4,10 +4,11 @@ items:
     summary: >-
       An interface for updating data on the IterativeCalculation object, for use in `iterativeCalculation.set({ ...
       })`<!-- -->.
-    name: Excel.Interfaces.IterativeCalculationUpdateData
+    name: IterativeCalculationUpdateData
     fullName: Excel.Interfaces.IterativeCalculationUpdateData
     langs:
       - typeScript
+    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
