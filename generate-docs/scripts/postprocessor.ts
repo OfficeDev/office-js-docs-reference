@@ -33,15 +33,6 @@ interface Toc {
     ]
 }
 
-interface IMembers {
-    items: [
-        {
-            name: string,
-            uid?: string
-        }
-    ]
-}
-
 tryCatch(async () => {
     console.log("\nStarting postprocessor script...");
 
@@ -62,7 +53,7 @@ tryCatch(async () => {
                                 {"name": "Outlook", "href": "/javascript/api/outlook?view=outlook-js-preview"},
                                 {"name": "PowerPoint", "href": "/javascript/api/powerpoint?view=powerpoint-js-1.1"},
                                 {"name": "Visio", "href": "/javascript/api/visio?view=visio-js-1.1"},
-                                {"name": "Word", "href": "/javascript/api/word?view=word-js-preview"},
+                                {"name": "Word", "href": "/javascript/api/word?view=word-js-preview"}, 
                                 {"name": "CommonAPI", "href": "/javascript/api/office?view=common-js"}] as any;
     fsx.writeFileSync(docsDestination + "/toc.yml", jsyaml.safeDump(globalToc));
     fsx.writeFileSync(docsDestination + "/overview/toc.yml", jsyaml.safeDump(globalToc));
@@ -155,7 +146,6 @@ function fixToc(tocPath: string, commonToc: Toc, versionNumber: number): Toc {
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as Toc);
     let newToc = <Toc>{};
-    let membersToMove = <IMembers>{};
 
     newToc.items = [{
         "name": "API reference",
@@ -166,37 +156,30 @@ function fixToc(tocPath: string, commonToc: Toc, versionNumber: number): Toc {
         "href": "overview.md"
     }] as any;
 
-
-    // look for existing folders to move
-    let outlookFolders : string[] = ["MailboxEnums"];
-
-    // create folders for Excel subcategories
+    // create filters and folders for Excel
     let excelEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-excel/excel.d.ts").toString());
-
     let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
-
     let customFunctionsRoot = {"name": "Custom Functions", "uid": "", "items": [] as any};
-
-    // create folders for OneNote subcategories
-    let oneNoteEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
-    let oneNoteEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-onenote/onenote.d.ts").toString());
-
-    // create folders for word subcategories
-    let wordEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-word/word.d.ts").toString());
-
-    // create filter lists for types we shouldn't expose
-    let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'ItemCompose', 'ItemRead', 'Message'];
-    outlookFilter = outlookFilter.concat(outlookFolders);
-
     let excelFilter: string[] = ["Interfaces"];
     excelFilter = excelFilter.concat(excelEnumFilter).concat(excelIconSetFilter);
 
-    let wordFilter: string[] = ["Interfaces"];
-    wordFilter = wordFilter.concat(wordEnumFilter);
-
+    // create filters and folders for OneNote
+    let oneNoteEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
+    let oneNoteEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-onenote/onenote.d.ts").toString());
     let oneNoteFilter: string[] = ["Interfaces"];
     oneNoteFilter = oneNoteFilter.concat(oneNoteEnumFilter);
 
+    // create filters and folders for Word
+    let wordEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-word/word.d.ts").toString());
+    let wordFilter: string[] = ["Interfaces"];
+    wordFilter = wordFilter.concat(wordEnumFilter);
+
+    // create filters and folders lists for Outlook
+    let outlookFolders : string[] = ["MailboxEnums"];
+    let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'ItemCompose', 'ItemRead', 'Message'];
+    outlookFilter = outlookFilter.concat(outlookFolders);
+
+    // create filters and folders for Visio
     let visioFilter: string[] = ["Interfaces"];
 
     // process all packages except 'office' (Common "Shared" API)
@@ -213,125 +196,115 @@ function fixToc(tocPath: string, commonToc: Toc, versionNumber: number): Toc {
                     packageName = (packageItem.name.substr(0, 1).toUpperCase() + packageItem.name.substr(1)).replace(/\-/g, ' ');
                 }
 
-                if (packageItem.items.length === 1) {
-                    packageItem.items.forEach((namespaceItem, namespaceIndex) => {
-                        membersToMove.items = namespaceItem.items;
+                let namespaceItems = packageItem.items[0].items;
+
+                if (packageName.toLocaleLowerCase().includes('outlook')) {
+                    let filterToCContent = namespaceItems.filter(item => {
+                        return outlookFilter.indexOf(item.name) < 0;
                     });
-
-                    if (packageName.toLocaleLowerCase().includes('outlook')) {
-                        let filterToCContent = membersToMove.items.filter(item => {
-                            return outlookFilter.indexOf(item.name) < 0;
+                    // move MailboxEnums to top
+                    let folderIndex: number = 0;
+                    while (folderIndex >= 0) {
+                        folderIndex = namespaceItems.findIndex(item => {
+                            return outlookFolders.indexOf(item.name) >= 0;
                         });
-                        // move MailboxEnums to top
-                        let folderIndex: number = 0;
-                        while (folderIndex >= 0) {
-                            folderIndex = membersToMove.items.findIndex(item => {
-                                return outlookFolders.indexOf(item.name) >= 0;
-                            });
-                            if (folderIndex >= 0) {
-                                filterToCContent.unshift(membersToMove.items.splice(folderIndex, 1)[0]);
-                            }
-                        }
-
-                        newToc.items[0].items.push({
-                            "name": packageName,
-                            "uid": packageItem.uid,
-                            "items": filterToCContent as any
-                        });
-                    } else if (packageName.toLocaleLowerCase().includes('excel')) {
-                        let enumList = membersToMove.items.filter(item => {
-                             return excelEnumFilter.indexOf(item.name) >= 0;
-                         });
-                        let iconSetList = membersToMove.items.filter(item => {
-                              return excelIconSetFilter.indexOf(item.name) >= 0;
-                        });
-                        let primaryList = membersToMove.items.filter(item => {
-                            return excelFilter.indexOf(item.name) < 0;
-                        });
-
-                        let excelEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
-                        let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
-                        primaryList.unshift(excelIconSetRoot);
-                        primaryList.unshift(excelEnumRoot);
-                        if (versionNumber >= OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS) {
-                            primaryList.unshift(customFunctionsRoot);
-                        }
-                        newToc.items[0].items.push({
-                            "name": packageName,
-                            "uid": packageItem.uid,
-                            "items": primaryList as any
-                        });
-                    } else if (packageName.toLocaleLowerCase().includes('word')) {
-                        let enumList = membersToMove.items.filter(item => {
-                            return wordEnumFilter.indexOf(item.name) >= 0;
-                        });
-                        let primaryList = membersToMove.items.filter(item => {
-                            return wordFilter.indexOf(item.name) < 0;
-                        });
-
-                        let wordEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
-                        primaryList.unshift(wordEnumRoot);
-                        newToc.items[0].items.push({
-                            "name": packageName,
-                            "uid": packageItem.uid,
-                            "items": primaryList as any
-                        });
-                    } else if (packageName.toLocaleLowerCase().includes('visio')) {
-                        let primaryList = membersToMove.items.filter(item => {
-                            return visioFilter.indexOf(item.name) < 0;
-                        });
-                        newToc.items[0].items.push({
-                            "name": packageName,
-                            "uid": packageItem.uid,
-                            "items":  primaryList as any
-                        });
-                    } else if (packageName.toLocaleLowerCase().includes('onenote')) {
-                        let enumList = membersToMove.items.filter(item => {
-                            return oneNoteEnumFilter.indexOf(item.name) >= 0;
-                        });
-                        let primaryList = membersToMove.items.filter(item => {
-                            return oneNoteFilter.indexOf(item.name) < 0;
-                        });
-                        oneNoteEnumRoot.items = enumList;
-                        primaryList.unshift(oneNoteEnumRoot);
-                        newToc.items[0].items.push({
-                            "name": packageName,
-                            "uid": packageItem.uid,
-                            "items":  primaryList as any
-                        });
-                    } else if (packageName.toLocaleLowerCase().includes('office runtime')) {
-                        customFunctionsRoot.items.push({
-                            "name": packageName,
-                            "uid": packageItem.uid,
-                            "items":  membersToMove.items as any
-                        });
-                    } else if (packageName.toLocaleLowerCase().includes('custom functions runtime')) {
-                        customFunctionsRoot.items.push({
-                            "name": packageName,
-                            "uid": packageItem.uid,
-                            "items":  membersToMove.items as any
-                        });
-                    } else {
-                        if (membersToMove.items) {
-                            newToc.items[0].items.push({
-                                "name": packageName,
-                                "uid": packageItem.uid,
-                                "items": membersToMove.items as any
-                            });
-                        } else {
-                            newToc.items[0].items.push({
-                                "name": packageName,
-                                "uid": packageItem.uid,
-                                "items": [] as any
-                            });
+                        if (folderIndex >= 0) {
+                            filterToCContent.unshift(namespaceItems.splice(folderIndex, 1)[0]);
                         }
                     }
-                } else {
+
                     newToc.items[0].items.push({
                         "name": packageName,
                         "uid": packageItem.uid,
-                        "items": packageItem.items
+                        "items": filterToCContent as any
                     });
+                } else if (packageName.toLocaleLowerCase().includes('excel')) {
+                    let enumList = namespaceItems.filter(item => {
+                        return excelEnumFilter.indexOf(item.name) >= 0;
+                    });
+                    let iconSetList = namespaceItems.filter(item => {
+                        return excelIconSetFilter.indexOf(item.name) >= 0;
+                    });
+                    let primaryList = namespaceItems.filter(item => {
+                        return excelFilter.indexOf(item.name) < 0;
+                    });
+
+                    let excelEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
+                    let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
+                    primaryList.unshift(excelIconSetRoot);
+                    primaryList.unshift(excelEnumRoot);
+                    if (versionNumber >= OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS) {
+                        primaryList.unshift(customFunctionsRoot);
+                    }
+                    newToc.items[0].items.push({
+                        "name": packageName,
+                        "uid": packageItem.uid,
+                        "items": primaryList as any
+                    });
+                } else if (packageName.toLocaleLowerCase().includes('word')) {
+                    let enumList = namespaceItems.filter(item => {
+                        return wordEnumFilter.indexOf(item.name) >= 0;
+                    });
+                    let primaryList = namespaceItems.filter(item => {
+                        return wordFilter.indexOf(item.name) < 0;
+                    });
+
+                    let wordEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
+                    primaryList.unshift(wordEnumRoot);
+                    newToc.items[0].items.push({
+                        "name": packageName,
+                        "uid": packageItem.uid,
+                        "items": primaryList as any
+                    });
+                } else if (packageName.toLocaleLowerCase().includes('visio')) {
+                    let primaryList = namespaceItems.filter(item => {
+                        return visioFilter.indexOf(item.name) < 0;
+                    });
+                    newToc.items[0].items.push({
+                        "name": packageName,
+                        "uid": packageItem.uid,
+                        "items":  primaryList as any
+                    });
+                } else if (packageName.toLocaleLowerCase().includes('onenote')) {
+                    let enumList = namespaceItems.filter(item => {
+                        return oneNoteEnumFilter.indexOf(item.name) >= 0;
+                    });
+                    let primaryList = namespaceItems.filter(item => {
+                        return oneNoteFilter.indexOf(item.name) < 0;
+                    });
+                    oneNoteEnumRoot.items = enumList;
+                    primaryList.unshift(oneNoteEnumRoot);
+                    newToc.items[0].items.push({
+                        "name": packageName,
+                        "uid": packageItem.uid,
+                        "items":  primaryList as any
+                    });
+                } else if (packageName.toLocaleLowerCase().includes('office runtime')) {
+                    customFunctionsRoot.items.push({
+                        "name": packageName,
+                        "uid": packageItem.uid,
+                        "items":  namespaceItems as any
+                    });
+                } else if (packageName.toLocaleLowerCase().includes('custom functions runtime')) {
+                    customFunctionsRoot.items.push({
+                        "name": packageName,
+                        "uid": packageItem.uid,
+                        "items":  namespaceItems as any
+                    });
+                } else {
+                    if (namespaceItems) {
+                        newToc.items[0].items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items": namespaceItems as any
+                        });
+                    } else {
+                        newToc.items[0].items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items": [] as any
+                        });
+                    }
                 }
             }
         });
