@@ -1,7 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'office-runtime!OfficeRuntime.Storage:interface'
-    summary: 'Asynchronous, global, and persistent key-value storage.'
+    summary: |-
+      Asynchronous, global, and persistent key-value storage.
+
+      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     remarks: 'Storage limit is 10 MB per domain, which may be shared by multiple add-ins.'
     name: OfficeRuntime.Storage
     fullName: OfficeRuntime.Storage
@@ -21,6 +24,9 @@ items:
     summary: >-
       Retrieves an item from storage based on its key. Returns a Promise. In the event the Promise does not resolve,
       returns null.
+
+
+      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: getItem(key)
     fullName: getItem(key)
     langs:
@@ -41,6 +47,9 @@ items:
     summary: >-
       Retrieves multiple items from storage based on their key. Returns a Promise. In the event the Promise does not
       resolve, returns null.
+
+
+      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: getItems(keys)
     fullName: getItems(keys)
     langs:
@@ -58,7 +67,10 @@ items:
           type:
             - 'string[]'
   - uid: 'office-runtime!OfficeRuntime.Storage#getKeys:member(1)'
-    summary: Retrieves an array of all keys from storage. Returns a Promise.
+    summary: |-
+      Retrieves an array of all keys from storage. Returns a Promise.
+
+      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: getKeys()
     fullName: getKeys()
     langs:
@@ -71,7 +83,10 @@ items:
           - 'office-runtime!OfficeRuntime.Storage#getKeys~0:complex'
         description: ''
   - uid: 'office-runtime!OfficeRuntime.Storage#removeItem:member(1)'
-    summary: Removes an item from storage based on its key. Returns a Promise.
+    summary: |-
+      Removes an item from storage based on its key. Returns a Promise.
+
+      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: removeItem(key)
     fullName: removeItem(key)
     langs:
@@ -89,7 +104,10 @@ items:
           type:
             - string
   - uid: 'office-runtime!OfficeRuntime.Storage#removeItems:member(1)'
-    summary: Removes multiple items from storage. Returns a Promise.
+    summary: |-
+      Removes multiple items from storage. Returns a Promise.
+
+      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: removeItems(keys)
     fullName: removeItems(keys)
     langs:
@@ -107,7 +125,10 @@ items:
           type:
             - 'string[]'
   - uid: 'office-runtime!OfficeRuntime.Storage#setItem:member(1)'
-    summary: Sets a key-value pair into storage or updates an existing key-value pair. Returns a Promise.
+    summary: |-
+      Sets a key-value pair into storage or updates an existing key-value pair. Returns a Promise.
+
+      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: 'setItem(key, value)'
     fullName: 'setItem(key, value)'
     langs:
@@ -129,7 +150,10 @@ items:
           type:
             - string
   - uid: 'office-runtime!OfficeRuntime.Storage#setItems:member(1)'
-    summary: Sets multiple items into storage or updates multiple items within storage. Returns a Promise.
+    summary: |-
+      Sets multiple items into storage or updates multiple items within storage. Returns a Promise.
+
+      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: setItems(keyValues)
     fullName: setItems(keyValues)
     langs:

@@ -393,7 +393,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Dialog#close:member(1)",
-                  "docComment": "/**\n * Method to close a dialog box. Returns a Promise.\n */\n",
+                  "docComment": "/**\n * Method to close a dialog box. Returns a Promise.\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -428,7 +428,7 @@
             {
               "kind": "Function",
               "canonicalReference": "office-runtime!OfficeRuntime.displayWebDialog:function(1)",
-              "docComment": "/**\n * Method that enables a pop up web dialog box.\n *\n * @param url - Must be a string.\n *\n * @param options - Optional parameter. Must be of type DisplayWebDialogOptions.\n */\n",
+              "docComment": "/**\n * Method that enables a pop up web dialog box.\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n *\n * @param url - Must be a string.\n *\n * @param options - Optional parameter. Must be of type DisplayWebDialogOptions.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -514,7 +514,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#displayInIFrame:member",
-                  "docComment": "/**\n * Optional parameter that determines whether the dialog box displays as a popup (false) or within an IFrame (true). This setting is only applicable to custom functions running on Excel Online.\n */\n",
+                  "docComment": "/**\n * Optional parameter that determines whether the dialog box displays as a popup (false) or within an IFrame (true). This setting is only applicable to custom functions running on Excel Online.\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -539,7 +539,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#height:member",
-                  "docComment": "/**\n * Optional parameter that defines the height of the dialog box as a percentage of the current display. For example, accepts strings such as: '50%', '50'.\n */\n",
+                  "docComment": "/**\n * Optional parameter that defines the height of the dialog box as a percentage of the current display. For example, accepts strings such as: '50%', '50'.\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -564,7 +564,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#onClose:member",
-                  "docComment": "/**\n * Optional callback that runs when the dialog box is closed.\n */\n",
+                  "docComment": "/**\n * Optional callback that runs when the dialog box is closed.\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -589,7 +589,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#onMessage:member",
-                  "docComment": "/**\n * Optional callback that runs when the dialog box sends a message to its parent.\n */\n",
+                  "docComment": "/**\n * Optional callback that runs when the dialog box sends a message to its parent.\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -623,7 +623,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#onRuntimeError:member",
-                  "docComment": "/**\n * Optional callback that runs when the dialog box sends an error.\n */\n",
+                  "docComment": "/**\n * Optional callback that runs when the dialog box sends an error.\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -666,7 +666,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#width:member",
-                  "docComment": "/**\n * Optional parameter that defines the width of dialog as a percentage of window. For example, accepts strings such as: '50%', '50'.\n */\n",
+                  "docComment": "/**\n * Optional parameter that defines the width of dialog as a percentage of window. For example, accepts strings such as: '50%', '50'.\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -694,7 +694,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "office-runtime!OfficeRuntime.Storage:interface",
-              "docComment": "/**\n * Asynchronous, global, and persistent key-value storage.\n *\n * @remarks\n *\n * Storage limit is 10 MB per domain, which may be shared by multiple add-ins.\n */\n",
+              "docComment": "/**\n * Asynchronous, global, and persistent key-value storage.\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n *\n * @remarks\n *\n * Storage limit is 10 MB per domain, which may be shared by multiple add-ins.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -707,7 +707,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#getItem:member(1)",
-                  "docComment": "/**\n * Retrieves an item from storage based on its key. Returns a Promise. In the event the Promise does not resolve, returns null.\n *\n * @param key - Key of item to be retrieved. Must be a string.\n */\n",
+                  "docComment": "/**\n * Retrieves an item from storage based on its key. Returns a Promise. In the event the Promise does not resolve, returns null.\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n *\n * @param key - Key of item to be retrieved. Must be a string.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -755,7 +755,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#getItems:member(1)",
-                  "docComment": "/**\n * Retrieves multiple items from storage based on their key. Returns a Promise. In the event the Promise does not resolve, returns null.\n *\n * @param keys - Keys of items to be removed. Must be an array of strings.\n */\n",
+                  "docComment": "/**\n * Retrieves multiple items from storage based on their key. Returns a Promise. In the event the Promise does not resolve, returns null.\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n *\n * @param keys - Keys of items to be removed. Must be an array of strings.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -803,7 +803,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#getKeys:member(1)",
-                  "docComment": "/**\n * Retrieves an array of all keys from storage. Returns a Promise.\n */\n",
+                  "docComment": "/**\n * Retrieves an array of all keys from storage. Returns a Promise.\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -835,7 +835,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#removeItem:member(1)",
-                  "docComment": "/**\n * Removes an item from storage based on its key. Returns a Promise.\n *\n * @param key - Key of item to be removed. Must be a string.\n */\n",
+                  "docComment": "/**\n * Removes an item from storage based on its key. Returns a Promise.\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n *\n * @param key - Key of item to be removed. Must be a string.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -883,7 +883,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#removeItems:member(1)",
-                  "docComment": "/**\n * Removes multiple items from storage. Returns a Promise.\n *\n * @param keys - Keys of items to be removed. Must be an array of strings.\n */\n",
+                  "docComment": "/**\n * Removes multiple items from storage. Returns a Promise.\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n *\n * @param keys - Keys of items to be removed. Must be an array of strings.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -931,7 +931,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#setItem:member(1)",
-                  "docComment": "/**\n * Sets a key-value pair into storage or updates an existing key-value pair. Returns a Promise.\n *\n * @param key - Key of item to be set. Must be a string.\n *\n * @param value - Must be a string.\n */\n",
+                  "docComment": "/**\n * Sets a key-value pair into storage or updates an existing key-value pair. Returns a Promise.\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n *\n * @param key - Key of item to be set. Must be a string.\n *\n * @param value - Must be a string.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -994,7 +994,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office-runtime!OfficeRuntime.Storage#setItems:member(1)",
-                  "docComment": "/**\n * Sets multiple items into storage or updates multiple items within storage. Returns a Promise.\n *\n * @param keyValues - Key-value pairs to be set. Must be strings.\n */\n",
+                  "docComment": "/**\n * Sets multiple items into storage or updates multiple items within storage. Returns a Promise.\n *\n * [Api set: CustomFunctionsRuntime 1.1]\n *\n * @param keyValues - Key-value pairs to be set. Must be strings.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
