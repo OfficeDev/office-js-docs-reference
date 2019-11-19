@@ -1,7 +1,7 @@
 ---
 title: Office JavaScript API reference 
 description: 'The Office JavaScript APIs per host requirement set'
-ms.date: 10/24/2019
+ms.date: 11/19/2019
 ---
 
 # Office JavaScript API reference
@@ -10,12 +10,15 @@ The JavaScript API for Office enables you to create web applications that intera
 
 The following is a list of host-specific requirement sets (and the cross-host Common APIs). Each item links to a version of the API reference documentation that is supported by that requirement set (e.g. ExcelApi 1.3 shows APIs in ExcelApi 1.1, 1.2, 1.3 as well as the Common API).
 
+`ExcelApiOnline 1.1` is a special requirement set. It contains the latest APIs for Excel on the web, but those APIs may not yet be fully supported across all platforms. See [Excel JavaScript API online-only requirement set](/office/dev/add-ins/reference/requirement-sets/excel-api-online-requirement-set) for more information.
+
 > [!TIP]
 > Choose a link on this page to view reference documentation for APIs supported by the specified requirement set, or use the filter selection drop-down menu above the table of contents to change the requirement set at any time.
 
 ## Excel
 
 - [ExcelApi Preview](/javascript/api/excel?view=excel-js-preview)
+- [ExcelApiOnline 1.1](/javascript/api/excel?view=excel-js-online)
 - [ExcelApi 1.10](/javascript/api/excel?view=excel-js-1.10)
 - [ExcelApi 1.9](/javascript/api/excel?view=excel-js-1.9)
 - [ExcelApi 1.8](/javascript/api/excel?view=excel-js-1.8)
