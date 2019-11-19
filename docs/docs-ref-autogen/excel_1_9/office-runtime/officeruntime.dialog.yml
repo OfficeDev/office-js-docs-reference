@@ -11,7 +11,10 @@ items:
     children:
       - 'office-runtime!OfficeRuntime.Dialog#close:member(1)'
   - uid: 'office-runtime!OfficeRuntime.Dialog#close:member(1)'
-    summary: Method to close a dialog box. Returns a Promise.
+    summary: |-
+      Method to close a dialog box. Returns a Promise.
+
+      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: close()
     fullName: close()
     langs:

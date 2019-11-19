@@ -19,6 +19,9 @@ items:
     summary: >-
       Optional parameter that determines whether the dialog box displays as a popup (false) or within an IFrame (true).
       This setting is only applicable to custom functions running on Excel Online.
+
+
+      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: displayInIFrame
     fullName: displayInIFrame
     langs:
@@ -33,6 +36,9 @@ items:
     summary: >-
       Optional parameter that defines the height of the dialog box as a percentage of the current display. For example,
       accepts strings such as: '50%', '50'.
+
+
+      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: height
     fullName: height
     langs:
@@ -44,7 +50,10 @@ items:
         type:
           - string
   - uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#onClose:member'
-    summary: Optional callback that runs when the dialog box is closed.
+    summary: |-
+      Optional callback that runs when the dialog box is closed.
+
+      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: onClose
     fullName: onClose
     langs:
@@ -56,7 +65,10 @@ items:
         type:
           - () => void
   - uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#onMessage:member'
-    summary: Optional callback that runs when the dialog box sends a message to its parent.
+    summary: |-
+      Optional callback that runs when the dialog box sends a message to its parent.
+
+      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: onMessage
     fullName: onMessage
     langs:
@@ -68,7 +80,10 @@ items:
         type:
           - 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#onMessage~0:complex'
   - uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#onRuntimeError:member'
-    summary: Optional callback that runs when the dialog box sends an error.
+    summary: |-
+      Optional callback that runs when the dialog box sends an error.
+
+      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: onRuntimeError
     fullName: onRuntimeError
     langs:
@@ -83,6 +98,9 @@ items:
     summary: >-
       Optional parameter that defines the width of dialog as a percentage of window. For example, accepts strings such
       as: '50%', '50'.
+
+
+      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: width
     fullName: width
     langs:
