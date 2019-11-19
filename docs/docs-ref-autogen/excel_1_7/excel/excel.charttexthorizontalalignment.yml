@@ -5,11 +5,10 @@ items:
       Represents the horizontal alignment for the specified object.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartTextHorizontalAlignment
+    name: Excel.ChartTextHorizontalAlignment
     fullName: Excel.ChartTextHorizontalAlignment
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

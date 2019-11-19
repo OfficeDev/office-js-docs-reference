@@ -5,11 +5,10 @@ items:
       Specifies the slicer sort behavior for Slicer.sortBy API.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: SlicerSortType
+    name: Excel.SlicerSortType
     fullName: Excel.SlicerSortType
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

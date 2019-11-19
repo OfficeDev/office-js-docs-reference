@@ -5,11 +5,10 @@ items:
       Represents a Cell Value Conditional Format Rule
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ConditionalTextComparisonRule
+    name: Excel.ConditionalTextComparisonRule
     fullName: Excel.ConditionalTextComparisonRule
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

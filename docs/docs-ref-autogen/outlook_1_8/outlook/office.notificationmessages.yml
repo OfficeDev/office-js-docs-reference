@@ -12,11 +12,10 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
-    name: NotificationMessages
+    name: Office.NotificationMessages
     fullName: Office.NotificationMessages
     langs:
       - typeScript
-    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:
@@ -452,7 +451,6 @@ items:
 references:
   - uid: 'outlook!Office.NotificationMessageDetails:interface'
     name: NotificationMessageDetails
-    fullName: Office.NotificationMessageDetails
   - uid: 'outlook!Office.AsyncContextOptions:interface'
     name: Office.AsyncContextOptions
   - uid: 'outlook!Office.NotificationMessages#addAsync~0:complex'

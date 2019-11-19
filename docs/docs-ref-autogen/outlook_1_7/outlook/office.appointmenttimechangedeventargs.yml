@@ -7,11 +7,10 @@ items:
 
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    name: AppointmentTimeChangedEventArgs
+    name: Office.AppointmentTimeChangedEventArgs
     fullName: Office.AppointmentTimeChangedEventArgs
     langs:
       - typeScript
-    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

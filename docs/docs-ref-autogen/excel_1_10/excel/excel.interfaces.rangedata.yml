@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.RangeData:interface'
     summary: An interface describing the data returned by calling `range.toJSON()`<!-- -->.
-    name: RangeData
+    name: Excel.Interfaces.RangeData
     fullName: Excel.Interfaces.RangeData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -534,14 +533,11 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.DataValidationData:interface'
-    name: DataValidationData
-    fullName: Excel.Interfaces.DataValidationData
+    name: Excel.Interfaces.DataValidationData
   - uid: 'excel!Excel.Interfaces.RangeFormatData:interface'
-    name: RangeFormatData
-    fullName: Excel.Interfaces.RangeFormatData
+    name: Excel.Interfaces.RangeFormatData
   - uid: 'excel!Excel.RangeHyperlink:interface'
-    name: RangeHyperlink
-    fullName: Excel.RangeHyperlink
+    name: Excel.RangeHyperlink
   - uid: 'excel!Excel.Interfaces.RangeData#linkedDataTypeState~0:complex'
     name: 'Excel.LinkedDataTypeState[][]'
     fullName: 'Excel.LinkedDataTypeState[][]'

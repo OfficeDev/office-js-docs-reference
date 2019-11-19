@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartData:interface'
     summary: An interface describing the data returned by calling `chart.toJSON()`<!-- -->.
-    name: ChartData
+    name: Excel.Interfaces.ChartData
     fullName: Excel.Interfaces.ChartData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -254,8 +253,7 @@ items:
           - number
 references:
   - uid: 'excel!Excel.Interfaces.ChartAxesData:interface'
-    name: ChartAxesData
-    fullName: Excel.Interfaces.ChartAxesData
+    name: Excel.Interfaces.ChartAxesData
   - uid: 'excel!Excel.Interfaces.ChartData#chartType~0:complex'
     name: >-
       Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" |
@@ -294,14 +292,11 @@ references:
       - name: ' | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"'
         fullName: ' | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"'
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsData:interface'
-    name: ChartDataLabelsData
-    fullName: Excel.Interfaces.ChartDataLabelsData
+    name: Excel.Interfaces.ChartDataLabelsData
   - uid: 'excel!Excel.Interfaces.ChartAreaFormatData:interface'
-    name: ChartAreaFormatData
-    fullName: Excel.Interfaces.ChartAreaFormatData
+    name: Excel.Interfaces.ChartAreaFormatData
   - uid: 'excel!Excel.Interfaces.ChartLegendData:interface'
-    name: ChartLegendData
-    fullName: Excel.Interfaces.ChartLegendData
+    name: Excel.Interfaces.ChartLegendData
   - uid: 'excel!Excel.Interfaces.ChartData#series~0:complex'
     name: 'Excel.Interfaces.ChartSeriesData[]'
     fullName: 'Excel.Interfaces.ChartSeriesData[]'
@@ -312,5 +307,4 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.ChartTitleData:interface'
-    name: ChartTitleData
-    fullName: Excel.Interfaces.ChartTitleData
+    name: Excel.Interfaces.ChartTitleData

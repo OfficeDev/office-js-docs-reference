@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the ChartLegendFormat object, for use in `chartLegendFormat.set({ ... })`<!--
       -->.
-    name: ChartLegendFormatUpdateData
+    name: Excel.Interfaces.ChartLegendFormatUpdateData
     fullName: Excel.Interfaces.ChartLegendFormatUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -30,5 +29,4 @@ items:
           - 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
-    name: ChartFontUpdateData
-    fullName: Excel.Interfaces.ChartFontUpdateData
+    name: Excel.Interfaces.ChartFontUpdateData

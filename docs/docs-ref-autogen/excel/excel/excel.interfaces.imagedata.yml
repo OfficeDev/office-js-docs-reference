@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ImageData:interface'
     summary: An interface describing the data returned by calling `image.toJSON()`<!-- -->.
-    name: ImageData
+    name: Excel.Interfaces.ImageData
     fullName: Excel.Interfaces.ImageData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

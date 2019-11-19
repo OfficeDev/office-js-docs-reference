@@ -5,16 +5,13 @@ items:
       Represents a chart title object of a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartTitle
+    name: Excel.ChartTitle
     fullName: Excel.ChartTitle
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartTitle#context:member'
@@ -511,13 +508,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartTitleFormat:class'
-    name: ChartTitleFormat
-    fullName: Excel.ChartTitleFormat
+    name: Excel.ChartTitleFormat
   - uid: 'excel!Excel.ChartFormatString:class'
-    name: ChartFormatString
-    fullName: Excel.ChartFormatString
+    name: Excel.ChartFormatString
   - uid: 'excel!Excel.ChartTitle#horizontalAlignment~0:complex'
     name: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
     fullName: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
@@ -528,11 +522,9 @@ references:
       - name: ' | "Center" | "Left" | "Right" | "Justify" | "Distributed"'
         fullName: ' | "Center" | "Left" | "Right" | "Justify" | "Distributed"'
   - uid: 'excel!Excel.ChartTitle:class'
-    name: ChartTitle
-    fullName: Excel.ChartTitle
+    name: Excel.ChartTitle
   - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions:interface'
-    name: ChartTitleLoadOptions
-    fullName: Excel.Interfaces.ChartTitleLoadOptions
+    name: Excel.Interfaces.ChartTitleLoadOptions
   - uid: 'excel!Excel.ChartTitle#position~0:complex'
     name: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right"
     fullName: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right"
@@ -543,13 +535,11 @@ references:
       - name: ' | "Automatic" | "Top" | "Bottom" | "Left" | "Right"'
         fullName: ' | "Automatic" | "Top" | "Bottom" | "Left" | "Right"'
   - uid: 'excel!Excel.Interfaces.ChartTitleUpdateData:interface'
-    name: ChartTitleUpdateData
-    fullName: Excel.Interfaces.ChartTitleUpdateData
+    name: Interfaces.ChartTitleUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartTitleData:interface'
-    name: ChartTitleData
-    fullName: Excel.Interfaces.ChartTitleData
+    name: Excel.Interfaces.ChartTitleData
   - uid: 'excel!Excel.ChartTitle#verticalAlignment~0:complex'
     name: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"
     fullName: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"

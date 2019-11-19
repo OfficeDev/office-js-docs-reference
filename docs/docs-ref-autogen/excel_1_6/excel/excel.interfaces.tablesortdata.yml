@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.TableSortData:interface'
     summary: An interface describing the data returned by calling `tableSort.toJSON()`<!-- -->.
-    name: TableSortData
+    name: Excel.Interfaces.TableSortData
     fullName: Excel.Interfaces.TableSortData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

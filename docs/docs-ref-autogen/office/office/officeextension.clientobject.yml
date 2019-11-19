@@ -5,11 +5,10 @@ items:
       An abstract proxy object that represents an object in an Office document. You create proxy objects from the
       context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the
       proxy object state with the document by calling `context.sync()`<!-- -->.
-    name: ClientObject
+    name: OfficeExtension.ClientObject
     fullName: OfficeExtension.ClientObject
     langs:
       - typeScript
-    namespace: 'office!OfficeExtension:namespace'
     type: class
     package: office!
     children:
@@ -44,4 +43,3 @@ items:
 references:
   - uid: 'office!OfficeExtension.ClientRequestContext:class'
     name: ClientRequestContext
-    fullName: OfficeExtension.ClientRequestContext

@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.PageBreakLoadOptions:interface'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: PageBreakLoadOptions
+    name: Excel.Interfaces.PageBreakLoadOptions
     fullName: Excel.Interfaces.PageBreakLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

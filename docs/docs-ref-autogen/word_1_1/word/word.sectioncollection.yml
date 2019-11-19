@@ -5,16 +5,13 @@ items:
       Contains the collection of the document's [Word.Section](xref:word!Word.Section:class) objects.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: SectionCollection
+    name: Word.SectionCollection
     fullName: Word.SectionCollection
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.SectionCollection#context:member'
@@ -186,7 +183,6 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.SectionCollection#items~0:complex'
     name: 'Word.Section[]'
     fullName: 'Word.Section[]'
@@ -197,8 +193,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.SectionCollection:class'
-    name: SectionCollection
-    fullName: Word.SectionCollection
+    name: Word.SectionCollection
   - uid: 'word!Word.SectionCollection#load~0:complex'
     name: Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
     fullName: Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
@@ -214,5 +209,4 @@ references:
   - uid: 'word!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'word!Word.Interfaces.SectionCollectionData:interface'
-    name: SectionCollectionData
-    fullName: Word.Interfaces.SectionCollectionData
+    name: Word.Interfaces.SectionCollectionData

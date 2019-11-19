@@ -5,16 +5,13 @@ items:
       Represents a collection of TimelineStyles.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: TimelineStyleCollection
+    name: Excel.TimelineStyleCollection
     fullName: Excel.TimelineStyleCollection
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TimelineStyleCollection#add:member(1)'
@@ -263,11 +260,9 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.TimelineStyle:class'
-    name: TimelineStyle
-    fullName: Excel.TimelineStyle
+    name: Excel.TimelineStyle
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.TimelineStyleCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -287,8 +282,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.TimelineStyleCollection:class'
-    name: TimelineStyleCollection
-    fullName: Excel.TimelineStyleCollection
+    name: Excel.TimelineStyleCollection
   - uid: 'excel!Excel.TimelineStyleCollection#load~0:complex'
     name: Excel.Interfaces.TimelineStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.TimelineStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -313,5 +307,4 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.Interfaces.TimelineStyleCollectionData:interface'
-    name: TimelineStyleCollectionData
-    fullName: Excel.Interfaces.TimelineStyleCollectionData
+    name: Excel.Interfaces.TimelineStyleCollectionData

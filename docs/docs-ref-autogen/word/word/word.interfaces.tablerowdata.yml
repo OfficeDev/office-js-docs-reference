@@ -2,11 +2,10 @@
 items:
   - uid: 'word!Word.Interfaces.TableRowData:interface'
     summary: An interface describing the data returned by calling "tableRow.toJSON()".
-    name: TableRowData
+    name: Word.Interfaces.TableRowData
     fullName: Word.Interfaces.TableRowData
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -185,8 +184,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.Interfaces.FontData:interface'
-    name: FontData
-    fullName: Word.Interfaces.FontData
+    name: Word.Interfaces.FontData
   - uid: 'word!Word.Interfaces.TableRowData#horizontalAlignment~0:complex'
     name: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
     fullName: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"

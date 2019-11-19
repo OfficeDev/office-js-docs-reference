@@ -5,11 +5,10 @@ items:
       Represents a single CustomXMLPart in an [Office.CustomXmlParts](xref:office!Office.CustomXmlParts:interface)
       collection.
     remarks: '**Hosts**: Word'
-    name: CustomXmlPart
+    name: Office.CustomXmlPart
     fullName: Office.CustomXmlPart
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:
@@ -614,11 +613,9 @@ items:
             - 'office!Office.CustomXmlPart#removeHandlerAsync~1:complex'
 references:
   - uid: 'office!Office.EventType:enum'
-    name: EventType
-    fullName: Office.EventType
+    name: Office.EventType
   - uid: 'office!Office.AsyncContextOptions:interface'
-    name: AsyncContextOptions
-    fullName: Office.AsyncContextOptions
+    name: Office.AsyncContextOptions
   - uid: 'office!Office.CustomXmlPart#addHandlerAsync~0:complex'
     name: '(result: AsyncResult<void>) => void'
     fullName: '(result: Office.AsyncResult<void>) => void'
@@ -719,10 +716,8 @@ references:
         fullName: <string>) => void
   - uid: 'office!Office.CustomXmlPrefixMappings:interface'
     name: CustomXmlPrefixMappings
-    fullName: Office.CustomXmlPrefixMappings
   - uid: 'office!Office.RemoveHandlerOptions:interface'
     name: RemoveHandlerOptions
-    fullName: Office.RemoveHandlerOptions
   - uid: 'office!Office.CustomXmlPart#removeHandlerAsync~0:complex'
     name: '(result: AsyncResult<void>) => void'
     fullName: '(result: Office.AsyncResult<void>) => void'

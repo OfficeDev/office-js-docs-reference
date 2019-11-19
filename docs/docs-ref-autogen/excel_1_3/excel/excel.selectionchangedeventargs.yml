@@ -5,11 +5,10 @@ items:
       Provides information about the document that raised the SelectionChanged event.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: SelectionChangedEventArgs
+    name: Excel.SelectionChangedEventArgs
     fullName: Excel.SelectionChangedEventArgs
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:
@@ -31,5 +30,4 @@ items:
           - 'excel!Excel.Workbook:class'
 references:
   - uid: 'excel!Excel.Workbook:class'
-    name: Workbook
-    fullName: Excel.Workbook
+    name: Excel.Workbook

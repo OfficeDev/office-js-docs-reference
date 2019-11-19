@@ -5,16 +5,13 @@ items:
       Represents a contiguous area in a document.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Range
+    name: Word.Range
     fullName: Word.Range
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.Range#clear:member(1)'
@@ -1258,14 +1255,11 @@ references:
   - uid: 'word!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.ContentControlCollection:class'
-    name: ContentControlCollection
-    fullName: Word.ContentControlCollection
+    name: Word.ContentControlCollection
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.Font:class'
-    name: Font
-    fullName: Word.Font
+    name: Word.Font
   - uid: 'word!Word.Range#getHtml~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -1285,35 +1279,25 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'word!Word.InlinePictureCollection:class'
-    name: InlinePictureCollection
-    fullName: Word.InlinePictureCollection
+    name: Word.InlinePictureCollection
   - uid: 'word!Word.BreakType:enum'
-    name: BreakType
-    fullName: Word.BreakType
+    name: Word.BreakType
   - uid: 'word!Word.InsertLocation:enum'
-    name: InsertLocation
-    fullName: Word.InsertLocation
+    name: Word.InsertLocation
   - uid: 'word!Word.ContentControl:class'
-    name: ContentControl
-    fullName: Word.ContentControl
+    name: Word.ContentControl
   - uid: 'word!Word.Range:class'
-    name: Range
-    fullName: Word.Range
+    name: Word.Range
   - uid: 'word!Word.InlinePicture:class'
-    name: InlinePicture
-    fullName: Word.InlinePicture
+    name: Word.InlinePicture
   - uid: 'word!Word.Paragraph:class'
-    name: Paragraph
-    fullName: Word.Paragraph
+    name: Word.Paragraph
   - uid: 'word!Word.Interfaces.RangeLoadOptions:interface'
-    name: RangeLoadOptions
-    fullName: Word.Interfaces.RangeLoadOptions
+    name: Word.Interfaces.RangeLoadOptions
   - uid: 'word!Word.ParagraphCollection:class'
-    name: ParagraphCollection
-    fullName: Word.ParagraphCollection
+    name: Word.ParagraphCollection
   - uid: 'word!Word.RangeCollection:class'
-    name: RangeCollection
-    fullName: Word.RangeCollection
+    name: Word.RangeCollection
   - uid: 'word!Word.Range#search~0:complex'
     name: |-
       Word.SearchOptions | {
@@ -1360,13 +1344,10 @@ references:
                       matchWildcards?: boolean;
                   }
   - uid: 'word!Word.SelectionMode:enum'
-    name: SelectionMode
-    fullName: Word.SelectionMode
+    name: Word.SelectionMode
   - uid: 'word!Word.Interfaces.RangeUpdateData:interface'
-    name: RangeUpdateData
-    fullName: Word.Interfaces.RangeUpdateData
+    name: Interfaces.RangeUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.RangeData:interface'
-    name: RangeData
-    fullName: Word.Interfaces.RangeData
+    name: Word.Interfaces.RangeData

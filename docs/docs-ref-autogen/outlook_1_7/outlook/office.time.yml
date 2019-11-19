@@ -11,11 +11,10 @@ items:
 
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
-    name: Time
+    name: Office.Time
     fullName: Office.Time
     langs:
       - typeScript
-    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

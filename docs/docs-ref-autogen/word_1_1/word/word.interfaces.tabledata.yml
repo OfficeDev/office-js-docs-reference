@@ -2,10 +2,9 @@
 items:
   - uid: 'word!Word.Interfaces.TableData:interface'
     summary: An interface describing the data returned by calling "table.toJSON()".
-    name: TableData
+    name: Word.Interfaces.TableData
     fullName: Word.Interfaces.TableData
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!

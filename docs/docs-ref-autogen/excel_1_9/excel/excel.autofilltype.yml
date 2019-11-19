@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.AutoFillType:enum'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: AutoFillType
+    name: Excel.AutoFillType
     fullName: Excel.AutoFillType
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

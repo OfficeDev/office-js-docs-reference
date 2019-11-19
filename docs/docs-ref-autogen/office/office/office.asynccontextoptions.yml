@@ -2,11 +2,10 @@
 items:
   - uid: 'office!Office.AsyncContextOptions:interface'
     summary: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
-    name: AsyncContextOptions
+    name: Office.AsyncContextOptions
     fullName: Office.AsyncContextOptions
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:

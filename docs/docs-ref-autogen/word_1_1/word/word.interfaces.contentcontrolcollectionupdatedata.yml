@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the ContentControlCollection object, for use in
       "contentControlCollection.set(<!-- -->{ ... }<!-- -->)".
-    name: ContentControlCollectionUpdateData
+    name: Word.Interfaces.ContentControlCollectionUpdateData
     fullName: Word.Interfaces.ContentControlCollectionUpdateData
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

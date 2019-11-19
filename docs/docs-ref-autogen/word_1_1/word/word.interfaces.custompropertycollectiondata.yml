@@ -2,11 +2,10 @@
 items:
   - uid: 'word!Word.Interfaces.CustomPropertyCollectionData:interface'
     summary: An interface describing the data returned by calling "customPropertyCollection.toJSON()".
-    name: CustomPropertyCollectionData
+    name: Word.Interfaces.CustomPropertyCollectionData
     fullName: Word.Interfaces.CustomPropertyCollectionData
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

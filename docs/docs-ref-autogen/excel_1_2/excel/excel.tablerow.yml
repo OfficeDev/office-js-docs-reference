@@ -11,16 +11,13 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: TableRow
+    name: Excel.TableRow
     fullName: Excel.TableRow
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TableRow#context:member'
@@ -327,21 +324,15 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Range:class'
-    name: Range
-    fullName: Excel.Range
+    name: Excel.Range
   - uid: 'excel!Excel.TableRow:class'
-    name: TableRow
-    fullName: Excel.TableRow
+    name: Excel.TableRow
   - uid: 'excel!Excel.Interfaces.TableRowLoadOptions:interface'
-    name: TableRowLoadOptions
-    fullName: Excel.Interfaces.TableRowLoadOptions
+    name: Excel.Interfaces.TableRowLoadOptions
   - uid: 'excel!Excel.Interfaces.TableRowUpdateData:interface'
-    name: TableRowUpdateData
-    fullName: Excel.Interfaces.TableRowUpdateData
+    name: Interfaces.TableRowUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.TableRowData:interface'
-    name: TableRowData
-    fullName: Excel.Interfaces.TableRowData
+    name: Excel.Interfaces.TableRowData

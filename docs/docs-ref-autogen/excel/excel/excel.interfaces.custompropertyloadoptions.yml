@@ -5,11 +5,10 @@ items:
       Represents a custom property.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: CustomPropertyLoadOptions
+    name: Excel.Interfaces.CustomPropertyLoadOptions
     fullName: Excel.Interfaces.CustomPropertyLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

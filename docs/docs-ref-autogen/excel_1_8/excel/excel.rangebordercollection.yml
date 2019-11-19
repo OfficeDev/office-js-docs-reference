@@ -5,16 +5,13 @@ items:
       Represents the border objects that make up the range border.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: RangeBorderCollection
+    name: Excel.RangeBorderCollection
     fullName: Excel.RangeBorderCollection
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.RangeBorderCollection#context:member'
@@ -313,13 +310,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.RangeBorder:class'
-    name: RangeBorder
-    fullName: Excel.RangeBorder
+    name: Excel.RangeBorder
   - uid: 'excel!Excel.BorderIndex:enum'
-    name: BorderIndex
-    fullName: Excel.BorderIndex
+    name: Excel.BorderIndex
   - uid: 'excel!Excel.RangeBorderCollection#items~0:complex'
     name: 'Excel.RangeBorder[]'
     fullName: 'Excel.RangeBorder[]'
@@ -330,8 +324,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.RangeBorderCollection:class'
-    name: RangeBorderCollection
-    fullName: Excel.RangeBorderCollection
+    name: Excel.RangeBorderCollection
   - uid: 'excel!Excel.RangeBorderCollection#load~0:complex'
     name: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -347,5 +340,4 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.RangeBorderCollectionData:interface'
-    name: RangeBorderCollectionData
-    fullName: Excel.Interfaces.RangeBorderCollectionData
+    name: Excel.Interfaces.RangeBorderCollectionData

@@ -8,11 +8,10 @@ items:
     remarks: >-
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
-    name: WeekNumber
+    name: Office.MailboxEnums.WeekNumber
     fullName: Office.MailboxEnums.WeekNumber
     langs:
       - typeScript
-    namespace: 'outlook!Office.MailboxEnums:namespace'
     type: enum
     package: outlook!
     children:

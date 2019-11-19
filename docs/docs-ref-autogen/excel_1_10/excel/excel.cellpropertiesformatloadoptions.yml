@@ -5,11 +5,10 @@ items:
       Represents which properties to load on the format object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: CellPropertiesFormatLoadOptions
+    name: Excel.CellPropertiesFormatLoadOptions
     fullName: Excel.CellPropertiesFormatLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:
@@ -239,11 +238,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.CellPropertiesBorderLoadOptions:interface'
-    name: CellPropertiesBorderLoadOptions
-    fullName: Excel.CellPropertiesBorderLoadOptions
+    name: Excel.CellPropertiesBorderLoadOptions
   - uid: 'excel!Excel.CellPropertiesFillLoadOptions:interface'
-    name: CellPropertiesFillLoadOptions
-    fullName: Excel.CellPropertiesFillLoadOptions
+    name: Excel.CellPropertiesFillLoadOptions
   - uid: 'excel!Excel.CellPropertiesFontLoadOptions:interface'
-    name: CellPropertiesFontLoadOptions
-    fullName: Excel.CellPropertiesFontLoadOptions
+    name: Excel.CellPropertiesFontLoadOptions

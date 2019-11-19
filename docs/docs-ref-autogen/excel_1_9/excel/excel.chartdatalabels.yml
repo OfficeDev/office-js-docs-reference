@@ -5,16 +5,13 @@ items:
       Represents a collection of all the data labels on a chart point.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartDataLabels
+    name: Excel.ChartDataLabels
     fullName: Excel.ChartDataLabels
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartDataLabels#autoText:member'
@@ -454,10 +451,8 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartDataLabelFormat:class'
-    name: ChartDataLabelFormat
-    fullName: Excel.ChartDataLabelFormat
+    name: Excel.ChartDataLabelFormat
   - uid: 'excel!Excel.ChartDataLabels#horizontalAlignment~0:complex'
     name: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
     fullName: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
@@ -468,11 +463,9 @@ references:
       - name: ' | "Center" | "Left" | "Right" | "Justify" | "Distributed"'
         fullName: ' | "Center" | "Left" | "Right" | "Justify" | "Distributed"'
   - uid: 'excel!Excel.ChartDataLabels:class'
-    name: ChartDataLabels
-    fullName: Excel.ChartDataLabels
+    name: Excel.ChartDataLabels
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
-    name: ChartDataLabelsLoadOptions
-    fullName: Excel.Interfaces.ChartDataLabelsLoadOptions
+    name: Excel.Interfaces.ChartDataLabelsLoadOptions
   - uid: 'excel!Excel.ChartDataLabels#position~0:complex'
     name: >-
       Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left"
@@ -487,13 +480,11 @@ references:
       - name: ' | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"'
         fullName: ' | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"'
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface'
-    name: ChartDataLabelsUpdateData
-    fullName: Excel.Interfaces.ChartDataLabelsUpdateData
+    name: Interfaces.ChartDataLabelsUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsData:interface'
-    name: ChartDataLabelsData
-    fullName: Excel.Interfaces.ChartDataLabelsData
+    name: Excel.Interfaces.ChartDataLabelsData
   - uid: 'excel!Excel.ChartDataLabels#verticalAlignment~0:complex'
     name: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"
     fullName: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"

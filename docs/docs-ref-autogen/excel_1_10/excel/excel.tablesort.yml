@@ -5,16 +5,13 @@ items:
       Manages sorting operations on Table objects.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: TableSort
+    name: Excel.TableSort
     fullName: Excel.TableSort
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TableSort#apply:member(1)'
@@ -303,8 +300,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.SortMethod:enum'
-    name: SortMethod
-    fullName: Excel.SortMethod
+    name: Excel.SortMethod
   - uid: 'excel!Excel.TableSort#apply~1:complex'
     name: 'Excel.SortField[]'
     fullName: 'Excel.SortField[]'
@@ -316,7 +312,6 @@ references:
         fullName: '[]'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.TableSort#fields~0:complex'
     name: 'Excel.SortField[]'
     fullName: 'Excel.SortField[]'
@@ -327,11 +322,9 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.TableSort:class'
-    name: TableSort
-    fullName: Excel.TableSort
+    name: Excel.TableSort
   - uid: 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
-    name: TableSortLoadOptions
-    fullName: Excel.Interfaces.TableSortLoadOptions
+    name: Excel.Interfaces.TableSortLoadOptions
   - uid: 'excel!Excel.TableSort#method~0:complex'
     name: Excel.SortMethod | "PinYin" | "StrokeCount"
     fullName: Excel.SortMethod | "PinYin" | "StrokeCount"
@@ -342,5 +335,4 @@ references:
       - name: ' | "PinYin" | "StrokeCount"'
         fullName: ' | "PinYin" | "StrokeCount"'
   - uid: 'excel!Excel.Interfaces.TableSortData:interface'
-    name: TableSortData
-    fullName: Excel.Interfaces.TableSortData
+    name: Excel.Interfaces.TableSortData

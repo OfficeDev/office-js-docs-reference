@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.SpecialCellValueType:enum'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: SpecialCellValueType
+    name: Excel.SpecialCellValueType
     fullName: Excel.SpecialCellValueType
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

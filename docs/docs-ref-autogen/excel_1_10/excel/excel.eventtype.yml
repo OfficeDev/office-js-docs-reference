@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.EventType:enum'
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: EventType
+    name: Excel.EventType
     fullName: Excel.EventType
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

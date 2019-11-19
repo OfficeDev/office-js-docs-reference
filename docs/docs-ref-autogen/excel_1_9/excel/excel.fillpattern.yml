@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.FillPattern:enum'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: FillPattern
+    name: Excel.FillPattern
     fullName: Excel.FillPattern
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

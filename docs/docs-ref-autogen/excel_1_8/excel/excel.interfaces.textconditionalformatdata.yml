@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.TextConditionalFormatData:interface'
     summary: An interface describing the data returned by calling `textConditionalFormat.toJSON()`<!-- -->.
-    name: TextConditionalFormatData
+    name: Excel.Interfaces.TextConditionalFormatData
     fullName: Excel.Interfaces.TextConditionalFormatData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -46,8 +45,6 @@ items:
           - 'excel!Excel.ConditionalTextComparisonRule:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
-    name: ConditionalRangeFormatData
-    fullName: Excel.Interfaces.ConditionalRangeFormatData
+    name: Excel.Interfaces.ConditionalRangeFormatData
   - uid: 'excel!Excel.ConditionalTextComparisonRule:interface'
-    name: ConditionalTextComparisonRule
-    fullName: Excel.ConditionalTextComparisonRule
+    name: Excel.ConditionalTextComparisonRule

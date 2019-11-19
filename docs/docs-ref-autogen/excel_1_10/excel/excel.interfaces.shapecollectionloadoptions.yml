@@ -5,11 +5,10 @@ items:
       Represents a collection of all the shapes in the worksheet.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ShapeCollectionLoadOptions
+    name: Excel.Interfaces.ShapeCollectionLoadOptions
     fullName: Excel.Interfaces.ShapeCollectionLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -453,26 +452,18 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ShapeFillLoadOptions:interface'
-    name: ShapeFillLoadOptions
-    fullName: Excel.Interfaces.ShapeFillLoadOptions
+    name: Excel.Interfaces.ShapeFillLoadOptions
   - uid: 'excel!Excel.Interfaces.GeometricShapeLoadOptions:interface'
-    name: GeometricShapeLoadOptions
-    fullName: Excel.Interfaces.GeometricShapeLoadOptions
+    name: Excel.Interfaces.GeometricShapeLoadOptions
   - uid: 'excel!Excel.Interfaces.ShapeGroupLoadOptions:interface'
-    name: ShapeGroupLoadOptions
-    fullName: Excel.Interfaces.ShapeGroupLoadOptions
+    name: Excel.Interfaces.ShapeGroupLoadOptions
   - uid: 'excel!Excel.Interfaces.ImageLoadOptions:interface'
-    name: ImageLoadOptions
-    fullName: Excel.Interfaces.ImageLoadOptions
+    name: Excel.Interfaces.ImageLoadOptions
   - uid: 'excel!Excel.Interfaces.LineLoadOptions:interface'
-    name: LineLoadOptions
-    fullName: Excel.Interfaces.LineLoadOptions
+    name: Excel.Interfaces.LineLoadOptions
   - uid: 'excel!Excel.Interfaces.ShapeLineFormatLoadOptions:interface'
-    name: ShapeLineFormatLoadOptions
-    fullName: Excel.Interfaces.ShapeLineFormatLoadOptions
+    name: Excel.Interfaces.ShapeLineFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
-    name: ShapeLoadOptions
-    fullName: Excel.Interfaces.ShapeLoadOptions
+    name: Excel.Interfaces.ShapeLoadOptions
   - uid: 'excel!Excel.Interfaces.TextFrameLoadOptions:interface'
-    name: TextFrameLoadOptions
-    fullName: Excel.Interfaces.TextFrameLoadOptions
+    name: Excel.Interfaces.TextFrameLoadOptions

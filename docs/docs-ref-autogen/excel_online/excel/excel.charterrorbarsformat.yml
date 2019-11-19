@@ -5,16 +5,13 @@ items:
       Encapsulates the format properties for chart error bars.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartErrorBarsFormat
+    name: Excel.ChartErrorBarsFormat
     fullName: Excel.ChartErrorBarsFormat
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartErrorBarsFormat#context:member'
@@ -195,21 +192,15 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartLineFormat:class'
-    name: ChartLineFormat
-    fullName: Excel.ChartLineFormat
+    name: Excel.ChartLineFormat
   - uid: 'excel!Excel.ChartErrorBarsFormat:class'
-    name: ChartErrorBarsFormat
-    fullName: Excel.ChartErrorBarsFormat
+    name: Excel.ChartErrorBarsFormat
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions:interface'
-    name: ChartErrorBarsFormatLoadOptions
-    fullName: Excel.Interfaces.ChartErrorBarsFormatLoadOptions
+    name: Excel.Interfaces.ChartErrorBarsFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatUpdateData:interface'
-    name: ChartErrorBarsFormatUpdateData
-    fullName: Excel.Interfaces.ChartErrorBarsFormatUpdateData
+    name: Interfaces.ChartErrorBarsFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatData:interface'
-    name: ChartErrorBarsFormatData
-    fullName: Excel.Interfaces.ChartErrorBarsFormatData
+    name: Excel.Interfaces.ChartErrorBarsFormatData

@@ -5,11 +5,10 @@ items:
       A collection of all the chart objects on a worksheet.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartCollectionLoadOptions
+    name: Excel.Interfaces.ChartCollectionLoadOptions
     fullName: Excel.Interfaces.ChartCollectionLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -226,23 +225,16 @@ items:
           - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartAxesLoadOptions:interface'
-    name: ChartAxesLoadOptions
-    fullName: Excel.Interfaces.ChartAxesLoadOptions
+    name: Excel.Interfaces.ChartAxesLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
-    name: ChartDataLabelsLoadOptions
-    fullName: Excel.Interfaces.ChartDataLabelsLoadOptions
+    name: Excel.Interfaces.ChartDataLabelsLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartAreaFormatLoadOptions:interface'
-    name: ChartAreaFormatLoadOptions
-    fullName: Excel.Interfaces.ChartAreaFormatLoadOptions
+    name: Excel.Interfaces.ChartAreaFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions:interface'
-    name: ChartLegendLoadOptions
-    fullName: Excel.Interfaces.ChartLegendLoadOptions
+    name: Excel.Interfaces.ChartLegendLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface'
-    name: ChartSeriesCollectionLoadOptions
-    fullName: Excel.Interfaces.ChartSeriesCollectionLoadOptions
+    name: Excel.Interfaces.ChartSeriesCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions:interface'
-    name: ChartTitleLoadOptions
-    fullName: Excel.Interfaces.ChartTitleLoadOptions
+    name: Excel.Interfaces.ChartTitleLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
-    name: WorksheetLoadOptions
-    fullName: Excel.Interfaces.WorksheetLoadOptions
+    name: Excel.Interfaces.WorksheetLoadOptions

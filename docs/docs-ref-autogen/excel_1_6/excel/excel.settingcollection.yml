@@ -7,16 +7,13 @@ items:
 
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: SettingCollection
+    name: Excel.SettingCollection
     fullName: Excel.SettingCollection
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.SettingCollection#add:member(1)'
@@ -289,8 +286,7 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Setting:class'
-    name: Setting
-    fullName: Excel.Setting
+    name: Excel.Setting
   - uid: 'excel!Excel.SettingCollection#add~0:complex'
     name: string | number | boolean | Date | Array<any> | any
     fullName: string | number | boolean | Date | Array<any> | any
@@ -309,7 +305,6 @@ references:
         fullName: <any> | any
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.SettingCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -329,8 +324,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.SettingCollection:class'
-    name: SettingCollection
-    fullName: Excel.SettingCollection
+    name: Excel.SettingCollection
   - uid: 'excel!Excel.SettingCollection#load~0:complex'
     name: Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -360,5 +354,4 @@ references:
       - name: '>'
         fullName: '>'
   - uid: 'excel!Excel.Interfaces.SettingCollectionData:interface'
-    name: SettingCollectionData
-    fullName: Excel.Interfaces.SettingCollectionData
+    name: Excel.Interfaces.SettingCollectionData

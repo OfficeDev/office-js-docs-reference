@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.ConnectorType:enum'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: ConnectorType
+    name: Excel.ConnectorType
     fullName: Excel.ConnectorType
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

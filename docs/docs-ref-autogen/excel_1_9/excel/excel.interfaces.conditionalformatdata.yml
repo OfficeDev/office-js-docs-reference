@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ConditionalFormatData:interface'
     summary: An interface describing the data returned by calling `conditionalFormat.toJSON()`<!-- -->.
-    name: ConditionalFormatData
+    name: Excel.Interfaces.ConditionalFormatData
     fullName: Excel.Interfaces.ConditionalFormatData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -357,29 +356,21 @@ items:
           - 'excel!Excel.Interfaces.ConditionalFormatData#type~0:complex'
 references:
   - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatData:interface'
-    name: CellValueConditionalFormatData
-    fullName: Excel.Interfaces.CellValueConditionalFormatData
+    name: Excel.Interfaces.CellValueConditionalFormatData
   - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatData:interface'
-    name: ColorScaleConditionalFormatData
-    fullName: Excel.Interfaces.ColorScaleConditionalFormatData
+    name: Excel.Interfaces.ColorScaleConditionalFormatData
   - uid: 'excel!Excel.Interfaces.CustomConditionalFormatData:interface'
-    name: CustomConditionalFormatData
-    fullName: Excel.Interfaces.CustomConditionalFormatData
+    name: Excel.Interfaces.CustomConditionalFormatData
   - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData:interface'
-    name: DataBarConditionalFormatData
-    fullName: Excel.Interfaces.DataBarConditionalFormatData
+    name: Excel.Interfaces.DataBarConditionalFormatData
   - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatData:interface'
-    name: IconSetConditionalFormatData
-    fullName: Excel.Interfaces.IconSetConditionalFormatData
+    name: Excel.Interfaces.IconSetConditionalFormatData
   - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface'
-    name: PresetCriteriaConditionalFormatData
-    fullName: Excel.Interfaces.PresetCriteriaConditionalFormatData
+    name: Excel.Interfaces.PresetCriteriaConditionalFormatData
   - uid: 'excel!Excel.Interfaces.TextConditionalFormatData:interface'
-    name: TextConditionalFormatData
-    fullName: Excel.Interfaces.TextConditionalFormatData
+    name: Excel.Interfaces.TextConditionalFormatData
   - uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatData:interface'
-    name: TopBottomConditionalFormatData
-    fullName: Excel.Interfaces.TopBottomConditionalFormatData
+    name: Excel.Interfaces.TopBottomConditionalFormatData
   - uid: 'excel!Excel.Interfaces.ConditionalFormatData#type~0:complex'
     name: >-
       Excel.ConditionalFormatType | "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" |

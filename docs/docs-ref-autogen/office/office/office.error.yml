@@ -5,11 +5,10 @@ items:
     remarks: >-
       The Error object is accessed from the AsyncResult object that is returned in the function passed as the callback
       argument of an asynchronous data operation, such as the `setSelectedDataAsync` method of the Document object.
-    name: Error
+    name: Office.Error
     fullName: Office.Error
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:

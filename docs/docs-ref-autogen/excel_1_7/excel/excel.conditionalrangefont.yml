@@ -5,16 +5,13 @@ items:
       This object represents the font attributes (font style, color, etc.) for an object.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ConditionalRangeFont
+    name: Excel.ConditionalRangeFont
     fullName: Excel.ConditionalRangeFont
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ConditionalRangeFont#bold:member'
@@ -276,21 +273,16 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ConditionalRangeFont:class'
-    name: ConditionalRangeFont
-    fullName: Excel.ConditionalRangeFont
+    name: Excel.ConditionalRangeFont
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions:interface'
-    name: ConditionalRangeFontLoadOptions
-    fullName: Excel.Interfaces.ConditionalRangeFontLoadOptions
+    name: Excel.Interfaces.ConditionalRangeFontLoadOptions
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData:interface'
-    name: ConditionalRangeFontUpdateData
-    fullName: Excel.Interfaces.ConditionalRangeFontUpdateData
+    name: Interfaces.ConditionalRangeFontUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFontData:interface'
-    name: ConditionalRangeFontData
-    fullName: Excel.Interfaces.ConditionalRangeFontData
+    name: Excel.Interfaces.ConditionalRangeFontData
   - uid: 'excel!Excel.ConditionalRangeFont#underline~0:complex'
     name: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double"
     fullName: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double"

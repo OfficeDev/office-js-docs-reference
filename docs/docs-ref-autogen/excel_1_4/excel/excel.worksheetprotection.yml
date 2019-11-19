@@ -5,16 +5,13 @@ items:
       Represents the protection of a sheet object.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: WorksheetProtection
+    name: Excel.WorksheetProtection
     fullName: Excel.WorksheetProtection
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.WorksheetProtection#context:member'
@@ -238,16 +235,11 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.WorksheetProtection:class'
-    name: WorksheetProtection
-    fullName: Excel.WorksheetProtection
+    name: Excel.WorksheetProtection
   - uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
-    name: WorksheetProtectionLoadOptions
-    fullName: Excel.Interfaces.WorksheetProtectionLoadOptions
+    name: Excel.Interfaces.WorksheetProtectionLoadOptions
   - uid: 'excel!Excel.WorksheetProtectionOptions:interface'
-    name: WorksheetProtectionOptions
-    fullName: Excel.WorksheetProtectionOptions
+    name: Excel.WorksheetProtectionOptions
   - uid: 'excel!Excel.Interfaces.WorksheetProtectionData:interface'
-    name: WorksheetProtectionData
-    fullName: Excel.Interfaces.WorksheetProtectionData
+    name: Excel.Interfaces.WorksheetProtectionData

@@ -5,11 +5,10 @@ items:
       Encapsulates the format properties for the chart axis.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartAxisFormatLoadOptions
+    name: Excel.Interfaces.ChartAxisFormatLoadOptions
     fullName: Excel.Interfaces.ChartAxisFormatLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -62,8 +61,6 @@ items:
           - 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
-    name: ChartFontLoadOptions
-    fullName: Excel.Interfaces.ChartFontLoadOptions
+    name: Excel.Interfaces.ChartFontLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
-    name: ChartLineFormatLoadOptions
-    fullName: Excel.Interfaces.ChartLineFormatLoadOptions
+    name: Excel.Interfaces.ChartLineFormatLoadOptions

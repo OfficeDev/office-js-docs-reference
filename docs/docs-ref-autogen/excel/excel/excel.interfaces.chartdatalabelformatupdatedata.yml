@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the ChartDataLabelFormat object, for use in `chartDataLabelFormat.set({ ...
       })`<!-- -->.
-    name: ChartDataLabelFormatUpdateData
+    name: Excel.Interfaces.ChartDataLabelFormatUpdateData
     fullName: Excel.Interfaces.ChartDataLabelFormatUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -46,8 +45,6 @@ items:
           - 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartBorderUpdateData:interface'
-    name: ChartBorderUpdateData
-    fullName: Excel.Interfaces.ChartBorderUpdateData
+    name: Excel.Interfaces.ChartBorderUpdateData
   - uid: 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
-    name: ChartFontUpdateData
-    fullName: Excel.Interfaces.ChartFontUpdateData
+    name: Excel.Interfaces.ChartFontUpdateData

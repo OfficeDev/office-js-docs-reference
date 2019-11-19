@@ -2,11 +2,10 @@
 items:
   - uid: 'word!Word.Interfaces.RangeUpdateData:interface'
     summary: 'An interface for updating data on the Range object, for use in "range.set(<!-- -->{ ... }<!-- -->)".'
-    name: RangeUpdateData
+    name: Word.Interfaces.RangeUpdateData
     fullName: Word.Interfaces.RangeUpdateData
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -114,8 +113,7 @@ items:
           - 'word!Word.Interfaces.RangeUpdateData#styleBuiltIn~0:complex'
 references:
   - uid: 'word!Word.Interfaces.FontUpdateData:interface'
-    name: FontUpdateData
-    fullName: Word.Interfaces.FontUpdateData
+    name: Word.Interfaces.FontUpdateData
   - uid: 'word!Word.Interfaces.RangeUpdateData#styleBuiltIn~0:complex'
     name: >-
       Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" |

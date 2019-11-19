@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the NotebookCollection object, for use in "notebookCollection.set(<!-- -->{ ...
       }<!-- -->)".
-    name: NotebookCollectionUpdateData
+    name: OneNote.Interfaces.NotebookCollectionUpdateData
     fullName: OneNote.Interfaces.NotebookCollectionUpdateData
     langs:
       - typeScript
-    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:

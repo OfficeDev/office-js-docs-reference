@@ -8,16 +8,13 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Worksheet
+    name: Excel.Worksheet
     fullName: Excel.Worksheet
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Worksheet#activate:member(1)'
@@ -1484,41 +1481,29 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.AutoFilter:class'
-    name: AutoFilter
-    fullName: Excel.AutoFilter
+    name: Excel.AutoFilter
   - uid: 'excel!Excel.ChartCollection:class'
-    name: ChartCollection
-    fullName: Excel.ChartCollection
+    name: Excel.ChartCollection
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Worksheet:class'
-    name: Worksheet
-    fullName: Excel.Worksheet
+    name: Excel.Worksheet
   - uid: 'excel!Excel.WorksheetPositionType:enum'
-    name: WorksheetPositionType
-    fullName: Excel.WorksheetPositionType
+    name: Excel.WorksheetPositionType
   - uid: 'excel!Excel.RangeAreas:class'
-    name: RangeAreas
-    fullName: Excel.RangeAreas
+    name: Excel.RangeAreas
   - uid: 'excel!Excel.WorksheetSearchCriteria:interface'
-    name: WorksheetSearchCriteria
-    fullName: Excel.WorksheetSearchCriteria
+    name: Excel.WorksheetSearchCriteria
   - uid: 'excel!Excel.WorksheetFreezePanes:class'
-    name: WorksheetFreezePanes
-    fullName: Excel.WorksheetFreezePanes
+    name: Excel.WorksheetFreezePanes
   - uid: 'excel!Excel.Range:class'
-    name: Range
-    fullName: Excel.Range
+    name: Excel.Range
   - uid: 'excel!Excel.PageBreakCollection:class'
-    name: PageBreakCollection
-    fullName: Excel.PageBreakCollection
+    name: Excel.PageBreakCollection
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
-    name: WorksheetLoadOptions
-    fullName: Excel.Interfaces.WorksheetLoadOptions
+    name: Excel.Interfaces.WorksheetLoadOptions
   - uid: 'excel!Excel.NamedItemCollection:class'
-    name: NamedItemCollection
-    fullName: Excel.NamedItemCollection
+    name: Excel.NamedItemCollection
   - uid: 'excel!Excel.Worksheet#onActivated~0:complex'
     name: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
@@ -1604,14 +1589,11 @@ references:
       - name: '>'
         fullName: '>'
   - uid: 'excel!Excel.PageLayout:class'
-    name: PageLayout
-    fullName: Excel.PageLayout
+    name: Excel.PageLayout
   - uid: 'excel!Excel.PivotTableCollection:class'
-    name: PivotTableCollection
-    fullName: Excel.PivotTableCollection
+    name: Excel.PivotTableCollection
   - uid: 'excel!Excel.WorksheetProtection:class'
-    name: WorksheetProtection
-    fullName: Excel.WorksheetProtection
+    name: Excel.WorksheetProtection
   - uid: 'excel!Excel.Worksheet#replaceAll~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -1622,22 +1604,17 @@ references:
       - name: <number>
         fullName: <number>
   - uid: 'excel!Excel.ReplaceCriteria:interface'
-    name: ReplaceCriteria
-    fullName: Excel.ReplaceCriteria
+    name: Excel.ReplaceCriteria
   - uid: 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
-    name: WorksheetUpdateData
-    fullName: Excel.Interfaces.WorksheetUpdateData
+    name: Interfaces.WorksheetUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.ShapeCollection:class'
-    name: ShapeCollection
-    fullName: Excel.ShapeCollection
+    name: Excel.ShapeCollection
   - uid: 'excel!Excel.TableCollection:class'
-    name: TableCollection
-    fullName: Excel.TableCollection
+    name: Excel.TableCollection
   - uid: 'excel!Excel.Interfaces.WorksheetData:interface'
-    name: WorksheetData
-    fullName: Excel.Interfaces.WorksheetData
+    name: Excel.Interfaces.WorksheetData
   - uid: 'excel!Excel.Worksheet#visibility~0:complex'
     name: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden"
     fullName: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden"

@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.ShapeLineFormatUpdateData:interface'
     summary: 'An interface for updating data on the ShapeLineFormat object, for use in `shapeLineFormat.set({ ... })`<!-- -->.'
-    name: ShapeLineFormatUpdateData
+    name: Excel.Interfaces.ShapeLineFormatUpdateData
     fullName: Excel.Interfaces.ShapeLineFormatUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

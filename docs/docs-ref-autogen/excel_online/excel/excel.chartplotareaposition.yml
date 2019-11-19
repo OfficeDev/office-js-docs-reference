@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.ChartPlotAreaPosition:enum'
     summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: ChartPlotAreaPosition
+    name: Excel.ChartPlotAreaPosition
     fullName: Excel.ChartPlotAreaPosition
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

@@ -5,16 +5,13 @@ items:
       Represents an Image. An Image can be a direct child of a PageContent object or a Paragraph object.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: Image
+    name: OneNote.Image
     fullName: OneNote.Image
     langs:
       - typeScript
-    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.Image#context:member'
@@ -579,7 +576,6 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
-    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.Image#getBase64Image~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -590,25 +586,18 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'onenote!OneNote.Image:class'
-    name: Image
-    fullName: OneNote.Image
+    name: OneNote.Image
   - uid: 'onenote!OneNote.Interfaces.ImageLoadOptions:interface'
-    name: ImageLoadOptions
-    fullName: OneNote.Interfaces.ImageLoadOptions
+    name: OneNote.Interfaces.ImageLoadOptions
   - uid: 'onenote!OneNote.ImageOcrData:interface'
-    name: ImageOcrData
-    fullName: OneNote.ImageOcrData
+    name: OneNote.ImageOcrData
   - uid: 'onenote!OneNote.PageContent:class'
-    name: PageContent
-    fullName: OneNote.PageContent
+    name: OneNote.PageContent
   - uid: 'onenote!OneNote.Paragraph:class'
-    name: Paragraph
-    fullName: OneNote.Paragraph
+    name: OneNote.Paragraph
   - uid: 'onenote!OneNote.Interfaces.ImageUpdateData:interface'
-    name: ImageUpdateData
-    fullName: OneNote.Interfaces.ImageUpdateData
+    name: Interfaces.ImageUpdateData
   - uid: 'onenote!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'onenote!OneNote.Interfaces.ImageData:interface'
-    name: ImageData
-    fullName: OneNote.Interfaces.ImageData
+    name: OneNote.Interfaces.ImageData

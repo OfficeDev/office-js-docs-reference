@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.TableScopedCollectionData:interface'
     summary: An interface describing the data returned by calling `tableScopedCollection.toJSON()`<!-- -->.
-    name: TableScopedCollectionData
+    name: Excel.Interfaces.TableScopedCollectionData
     fullName: Excel.Interfaces.TableScopedCollectionData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

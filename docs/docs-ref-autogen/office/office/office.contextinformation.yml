@@ -2,11 +2,10 @@
 items:
   - uid: 'office!Office.ContextInformation:interface'
     summary: Provides information about the environment in which the add-in is running.
-    name: ContextInformation
+    name: Office.ContextInformation
     fullName: Office.ContextInformation
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:
@@ -51,8 +50,6 @@ items:
           - string
 references:
   - uid: 'office!Office.HostType:enum'
-    name: HostType
-    fullName: Office.HostType
+    name: Office.HostType
   - uid: 'office!Office.PlatformType:enum'
-    name: PlatformType
-    fullName: Office.PlatformType
+    name: Office.PlatformType

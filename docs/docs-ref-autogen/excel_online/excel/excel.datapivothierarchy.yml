@@ -5,16 +5,13 @@ items:
       Represents the Excel DataPivotHierarchy.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: DataPivotHierarchy
+    name: Excel.DataPivotHierarchy
     fullName: Excel.DataPivotHierarchy
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.DataPivotHierarchy#context:member'
@@ -354,24 +351,18 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.PivotField:class'
-    name: PivotField
-    fullName: Excel.PivotField
+    name: Excel.PivotField
   - uid: 'excel!Excel.DataPivotHierarchy:class'
-    name: DataPivotHierarchy
-    fullName: Excel.DataPivotHierarchy
+    name: Excel.DataPivotHierarchy
   - uid: 'excel!Excel.Interfaces.DataPivotHierarchyLoadOptions:interface'
-    name: DataPivotHierarchyLoadOptions
-    fullName: Excel.Interfaces.DataPivotHierarchyLoadOptions
+    name: Excel.Interfaces.DataPivotHierarchyLoadOptions
   - uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData:interface'
-    name: DataPivotHierarchyUpdateData
-    fullName: Excel.Interfaces.DataPivotHierarchyUpdateData
+    name: Interfaces.DataPivotHierarchyUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.ShowAsRule:interface'
-    name: ShowAsRule
-    fullName: Excel.ShowAsRule
+    name: Excel.ShowAsRule
   - uid: 'excel!Excel.DataPivotHierarchy#summarizeBy~0:complex'
     name: >-
       Excel.AggregationFunction | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" | "Product" |
@@ -386,5 +377,4 @@ references:
       - name: ' | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" | "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP"'
         fullName: ' | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" | "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP"'
   - uid: 'excel!Excel.Interfaces.DataPivotHierarchyData:interface'
-    name: DataPivotHierarchyData
-    fullName: Excel.Interfaces.DataPivotHierarchyData
+    name: Excel.Interfaces.DataPivotHierarchyData

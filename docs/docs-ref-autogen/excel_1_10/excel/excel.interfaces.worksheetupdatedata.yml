@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
     summary: 'An interface for updating data on the Worksheet object, for use in `worksheet.set({ ... })`<!-- -->.'
-    name: WorksheetUpdateData
+    name: Excel.Interfaces.WorksheetUpdateData
     fullName: Excel.Interfaces.WorksheetUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -167,8 +166,7 @@ items:
           - 'excel!Excel.Interfaces.WorksheetUpdateData#visibility~0:complex'
 references:
   - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData:interface'
-    name: PageLayoutUpdateData
-    fullName: Excel.Interfaces.PageLayoutUpdateData
+    name: Excel.Interfaces.PageLayoutUpdateData
   - uid: 'excel!Excel.Interfaces.WorksheetUpdateData#visibility~0:complex'
     name: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden"
     fullName: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden"

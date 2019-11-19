@@ -5,16 +5,13 @@ items:
       Represents a line inside a worksheet. To get the corresponding Shape object, use `Line.shape`<!-- -->.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Line
+    name: Excel.Line
     fullName: Excel.Line
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Line#beginArrowheadLength:member'
@@ -591,8 +588,7 @@ references:
       - name: ' | "Narrow" | "Medium" | "Wide"'
         fullName: ' | "Narrow" | "Medium" | "Wide"'
   - uid: 'excel!Excel.Shape:class'
-    name: Shape
-    fullName: Excel.Shape
+    name: Excel.Shape
   - uid: 'excel!Excel.Line#connectorType~0:complex'
     name: Excel.ConnectorType | "Straight" | "Elbow" | "Curve"
     fullName: Excel.ConnectorType | "Straight" | "Elbow" | "Curve"
@@ -604,7 +600,6 @@ references:
         fullName: ' | "Straight" | "Elbow" | "Curve"'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Line#endArrowheadLength~0:complex'
     name: Excel.ArrowheadLength | "Short" | "Medium" | "Long"
     fullName: Excel.ArrowheadLength | "Short" | "Medium" | "Long"
@@ -633,16 +628,12 @@ references:
       - name: ' | "Narrow" | "Medium" | "Wide"'
         fullName: ' | "Narrow" | "Medium" | "Wide"'
   - uid: 'excel!Excel.Line:class'
-    name: Line
-    fullName: Excel.Line
+    name: Excel.Line
   - uid: 'excel!Excel.Interfaces.LineLoadOptions:interface'
-    name: LineLoadOptions
-    fullName: Excel.Interfaces.LineLoadOptions
+    name: Excel.Interfaces.LineLoadOptions
   - uid: 'excel!Excel.Interfaces.LineUpdateData:interface'
-    name: LineUpdateData
-    fullName: Excel.Interfaces.LineUpdateData
+    name: Interfaces.LineUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.LineData:interface'
-    name: LineData
-    fullName: Excel.Interfaces.LineData
+    name: Excel.Interfaces.LineData

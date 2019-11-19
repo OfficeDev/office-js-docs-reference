@@ -5,16 +5,13 @@ items:
       This object represents the attributes for a chart's error bars.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartErrorBars
+    name: Excel.ChartErrorBars
     fullName: Excel.ChartErrorBars
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartErrorBars#context:member'
@@ -259,10 +256,8 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartErrorBarsFormat:class'
-    name: ChartErrorBarsFormat
-    fullName: Excel.ChartErrorBarsFormat
+    name: Excel.ChartErrorBarsFormat
   - uid: 'excel!Excel.ChartErrorBars#include~0:complex'
     name: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues"
     fullName: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues"
@@ -273,19 +268,15 @@ references:
       - name: ' | "Both" | "MinusValues" | "PlusValues"'
         fullName: ' | "Both" | "MinusValues" | "PlusValues"'
   - uid: 'excel!Excel.ChartErrorBars:class'
-    name: ChartErrorBars
-    fullName: Excel.ChartErrorBars
+    name: Excel.ChartErrorBars
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions:interface'
-    name: ChartErrorBarsLoadOptions
-    fullName: Excel.Interfaces.ChartErrorBarsLoadOptions
+    name: Excel.Interfaces.ChartErrorBarsLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData:interface'
-    name: ChartErrorBarsUpdateData
-    fullName: Excel.Interfaces.ChartErrorBarsUpdateData
+    name: Interfaces.ChartErrorBarsUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsData:interface'
-    name: ChartErrorBarsData
-    fullName: Excel.Interfaces.ChartErrorBarsData
+    name: Excel.Interfaces.ChartErrorBarsData
   - uid: 'excel!Excel.ChartErrorBars#type~0:complex'
     name: Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"
     fullName: Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"

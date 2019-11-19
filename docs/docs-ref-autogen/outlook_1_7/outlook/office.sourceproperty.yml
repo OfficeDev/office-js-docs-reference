@@ -1,11 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'outlook!Office.SourceProperty:enum'
-    name: SourceProperty
+    name: Office.SourceProperty
     fullName: Office.SourceProperty
     langs:
       - typeScript
-    namespace: 'outlook!Office:namespace'
     type: enum
     package: outlook!
     children:

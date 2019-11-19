@@ -5,11 +5,10 @@ items:
       Represents the List data validation criteria.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ListDataValidation
+    name: Excel.ListDataValidation
     fullName: Excel.ListDataValidation
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

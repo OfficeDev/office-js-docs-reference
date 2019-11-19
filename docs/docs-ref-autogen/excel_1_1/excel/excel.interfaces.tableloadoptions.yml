@@ -7,11 +7,10 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: TableLoadOptions
+    name: Excel.Interfaces.TableLoadOptions
     fullName: Excel.Interfaces.TableLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -149,8 +148,6 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
-    name: TableColumnCollectionLoadOptions
-    fullName: Excel.Interfaces.TableColumnCollectionLoadOptions
+    name: Excel.Interfaces.TableColumnCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface'
-    name: TableRowCollectionLoadOptions
-    fullName: Excel.Interfaces.TableRowCollectionLoadOptions
+    name: Excel.Interfaces.TableRowCollectionLoadOptions

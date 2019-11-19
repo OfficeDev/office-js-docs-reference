@@ -45,11 +45,10 @@ items:
       });
 
       ```
-    name: MeetingSuggestion
+    name: Office.MeetingSuggestion
     fullName: Office.MeetingSuggestion
     langs:
       - typeScript
-    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

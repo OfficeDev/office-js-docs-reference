@@ -2,11 +2,10 @@
 items:
   - uid: 'word!Word.ListBullet:enum'
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    name: ListBullet
+    name: Word.ListBullet
     fullName: Word.ListBullet
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: enum
     package: word!
     children:

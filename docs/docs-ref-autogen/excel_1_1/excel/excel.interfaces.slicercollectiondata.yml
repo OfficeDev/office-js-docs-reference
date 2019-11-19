@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.SlicerCollectionData:interface'
     summary: An interface describing the data returned by calling `slicerCollection.toJSON()`<!-- -->.
-    name: SlicerCollectionData
+    name: Excel.Interfaces.SlicerCollectionData
     fullName: Excel.Interfaces.SlicerCollectionData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

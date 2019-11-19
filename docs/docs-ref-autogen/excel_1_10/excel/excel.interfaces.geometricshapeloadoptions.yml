@@ -7,11 +7,10 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: GeometricShapeLoadOptions
+    name: Excel.Interfaces.GeometricShapeLoadOptions
     fullName: Excel.Interfaces.GeometricShapeLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -64,5 +63,4 @@ items:
           - 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
-    name: ShapeLoadOptions
-    fullName: Excel.Interfaces.ShapeLoadOptions
+    name: Excel.Interfaces.ShapeLoadOptions

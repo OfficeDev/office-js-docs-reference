@@ -5,11 +5,10 @@ items:
       Represents the filtering criteria applied to a column.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: FilterCriteria
+    name: Excel.FilterCriteria
     fullName: Excel.FilterCriteria
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:
@@ -212,8 +211,7 @@ references:
       - name: ' | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" | "TopItems" | "TopPercent" | "Icon" | "Custom"'
         fullName: ' | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" | "TopItems" | "TopPercent" | "Icon" | "Custom"'
   - uid: 'excel!Excel.Icon:interface'
-    name: Icon
-    fullName: Excel.Icon
+    name: Excel.Icon
   - uid: 'excel!Excel.FilterCriteria#operator~0:complex'
     name: Excel.FilterOperator | "And" | "Or"
     fullName: Excel.FilterOperator | "And" | "Or"

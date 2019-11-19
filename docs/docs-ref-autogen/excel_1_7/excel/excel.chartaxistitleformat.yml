@@ -5,16 +5,13 @@ items:
       Represents the chart axis title formatting.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartAxisTitleFormat
+    name: Excel.ChartAxisTitleFormat
     fullName: Excel.ChartAxisTitleFormat
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartAxisTitleFormat#context:member'
@@ -195,21 +192,15 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartFont:class'
-    name: ChartFont
-    fullName: Excel.ChartFont
+    name: Excel.ChartFont
   - uid: 'excel!Excel.ChartAxisTitleFormat:class'
-    name: ChartAxisTitleFormat
-    fullName: Excel.ChartAxisTitleFormat
+    name: Excel.ChartAxisTitleFormat
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleFormatLoadOptions:interface'
-    name: ChartAxisTitleFormatLoadOptions
-    fullName: Excel.Interfaces.ChartAxisTitleFormatLoadOptions
+    name: Excel.Interfaces.ChartAxisTitleFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData:interface'
-    name: ChartAxisTitleFormatUpdateData
-    fullName: Excel.Interfaces.ChartAxisTitleFormatUpdateData
+    name: Interfaces.ChartAxisTitleFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleFormatData:interface'
-    name: ChartAxisTitleFormatData
-    fullName: Excel.Interfaces.ChartAxisTitleFormatData
+    name: Excel.Interfaces.ChartAxisTitleFormatData

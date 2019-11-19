@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.RangeBorderUpdateData:interface'
     summary: 'An interface for updating data on the RangeBorder object, for use in `rangeBorder.set({ ... })`<!-- -->.'
-    name: RangeBorderUpdateData
+    name: Excel.Interfaces.RangeBorderUpdateData
     fullName: Excel.Interfaces.RangeBorderUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

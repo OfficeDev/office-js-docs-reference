@@ -8,11 +8,10 @@ items:
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    name: ContentControlEventArgs
+    name: Word.ContentControlEventArgs
     fullName: Word.ContentControlEventArgs
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: interface
     package: word!
     children:
@@ -59,8 +58,7 @@ items:
           - 'word!Word.ContentControlEventArgs#eventType~0:complex'
 references:
   - uid: 'word!Word.ContentControl:class'
-    name: ContentControl
-    fullName: Word.ContentControl
+    name: Word.ContentControl
   - uid: 'word!Word.ContentControlEventArgs#eventType~0:complex'
     name: >-
       Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" |

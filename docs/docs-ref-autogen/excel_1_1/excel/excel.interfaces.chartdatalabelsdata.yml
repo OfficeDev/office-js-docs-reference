@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsData:interface'
     summary: An interface describing the data returned by calling `chartDataLabels.toJSON()`<!-- -->.
-    name: ChartDataLabelsData
+    name: Excel.Interfaces.ChartDataLabelsData
     fullName: Excel.Interfaces.ChartDataLabelsData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -160,8 +159,7 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatData:interface'
-    name: ChartDataLabelFormatData
-    fullName: Excel.Interfaces.ChartDataLabelFormatData
+    name: Excel.Interfaces.ChartDataLabelFormatData
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsData#position~0:complex'
     name: >-
       Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left"

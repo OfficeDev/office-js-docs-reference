@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartTitleUpdateData:interface'
     summary: 'An interface for updating data on the ChartTitle object, for use in `chartTitle.set({ ... })`<!-- -->.'
-    name: ChartTitleUpdateData
+    name: Excel.Interfaces.ChartTitleUpdateData
     fullName: Excel.Interfaces.ChartTitleUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -196,8 +195,7 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartTitleFormatUpdateData:interface'
-    name: ChartTitleFormatUpdateData
-    fullName: Excel.Interfaces.ChartTitleFormatUpdateData
+    name: Excel.Interfaces.ChartTitleFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ChartTitleUpdateData#horizontalAlignment~0:complex'
     name: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
     fullName: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"

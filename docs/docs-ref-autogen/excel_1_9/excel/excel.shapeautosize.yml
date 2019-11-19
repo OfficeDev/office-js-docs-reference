@@ -5,11 +5,10 @@ items:
       Determines the type of automatic sizing allowed.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ShapeAutoSize
+    name: Excel.ShapeAutoSize
     fullName: Excel.ShapeAutoSize
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

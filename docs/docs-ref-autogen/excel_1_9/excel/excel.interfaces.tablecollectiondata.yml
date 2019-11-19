@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.TableCollectionData:interface'
     summary: An interface describing the data returned by calling `tableCollection.toJSON()`<!-- -->.
-    name: TableCollectionData
+    name: Excel.Interfaces.TableCollectionData
     fullName: Excel.Interfaces.TableCollectionData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

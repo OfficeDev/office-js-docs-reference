@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.FilterOperator:enum'
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: FilterOperator
+    name: Excel.FilterOperator
     fullName: Excel.FilterOperator
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

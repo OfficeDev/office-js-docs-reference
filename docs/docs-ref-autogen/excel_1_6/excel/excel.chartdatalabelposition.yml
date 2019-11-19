@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.ChartDataLabelPosition:enum'
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: ChartDataLabelPosition
+    name: Excel.ChartDataLabelPosition
     fullName: Excel.ChartDataLabelPosition
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

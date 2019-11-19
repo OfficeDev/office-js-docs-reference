@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.FourArrowsSet:interface'
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: FourArrowsSet
+    name: Excel.FourArrowsSet
     fullName: Excel.FourArrowsSet
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:
@@ -61,4 +60,3 @@ items:
 references:
   - uid: 'excel!Excel.Icon:interface'
     name: Icon
-    fullName: Excel.Icon

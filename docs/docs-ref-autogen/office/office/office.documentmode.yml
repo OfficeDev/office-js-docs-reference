@@ -3,11 +3,10 @@ items:
   - uid: 'office!Office.DocumentMode:enum'
     summary: Specifies whether the document in the associated application is read-only or read-write.
     remarks: 'Returned by the mode property of the [Document](xref:office!Office.Document:interface) object.'
-    name: DocumentMode
+    name: Office.DocumentMode
     fullName: Office.DocumentMode
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: enum
     package: office!
     children:

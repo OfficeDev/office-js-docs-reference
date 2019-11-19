@@ -2,11 +2,10 @@
 items:
   - uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionData:interface'
     summary: An interface describing the data returned by calling "shapeDataItemCollection.toJSON()".
-    name: ShapeDataItemCollectionData
+    name: Visio.Interfaces.ShapeDataItemCollectionData
     fullName: Visio.Interfaces.ShapeDataItemCollectionData
     langs:
       - typeScript
-    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:

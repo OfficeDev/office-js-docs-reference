@@ -5,16 +5,13 @@ items:
       Represents a collection of notebooks.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: NotebookCollection
+    name: OneNote.NotebookCollection
     fullName: OneNote.NotebookCollection
     langs:
       - typeScript
-    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.NotebookCollection#context:member'
@@ -338,13 +335,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
-    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.NotebookCollection:class'
-    name: NotebookCollection
-    fullName: OneNote.NotebookCollection
+    name: OneNote.NotebookCollection
   - uid: 'onenote!OneNote.Notebook:class'
-    name: Notebook
-    fullName: OneNote.Notebook
+    name: OneNote.Notebook
   - uid: 'onenote!OneNote.NotebookCollection#items~0:complex'
     name: 'OneNote.Notebook[]'
     fullName: 'OneNote.Notebook[]'
@@ -369,5 +363,4 @@ references:
   - uid: 'onenote!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'onenote!OneNote.Interfaces.NotebookCollectionData:interface'
-    name: NotebookCollectionData
-    fullName: OneNote.Interfaces.NotebookCollectionData
+    name: OneNote.Interfaces.NotebookCollectionData

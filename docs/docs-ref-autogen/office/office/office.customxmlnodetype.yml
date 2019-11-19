@@ -2,11 +2,10 @@
 items:
   - uid: 'office!Office.CustomXMLNodeType:enum'
     summary: Specifies the type of the XML node.
-    name: CustomXMLNodeType
+    name: Office.CustomXMLNodeType
     fullName: Office.CustomXMLNodeType
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: enum
     package: office!
     children:

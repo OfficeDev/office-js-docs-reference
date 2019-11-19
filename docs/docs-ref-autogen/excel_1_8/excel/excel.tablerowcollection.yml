@@ -11,16 +11,13 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: TableRowCollection
+    name: Excel.TableRowCollection
     fullName: Excel.TableRowCollection
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TableRowCollection#add:member(1)'
@@ -318,8 +315,7 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.TableRow:class'
-    name: TableRow
-    fullName: Excel.TableRow
+    name: Excel.TableRow
   - uid: 'excel!Excel.TableRowCollection#add~0:complex'
     name: Array<Array<boolean | string | number>> | boolean | string | number
     fullName: Array<Array<boolean | string | number>> | boolean | string | number
@@ -336,7 +332,6 @@ references:
         fullName: <boolean | string | number>> | boolean | string | number
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.TableRowCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -356,8 +351,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.TableRowCollection:class'
-    name: TableRowCollection
-    fullName: Excel.TableRowCollection
+    name: Excel.TableRowCollection
   - uid: 'excel!Excel.TableRowCollection#load~0:complex'
     name: Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -373,5 +367,4 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.TableRowCollectionData:interface'
-    name: TableRowCollectionData
-    fullName: Excel.Interfaces.TableRowCollectionData
+    name: Excel.Interfaces.TableRowCollectionData

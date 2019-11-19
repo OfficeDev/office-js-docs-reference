@@ -5,11 +5,10 @@ items:
       Represents the Date data validation criteria.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: DateTimeDataValidation
+    name: Excel.DateTimeDataValidation
     fullName: Excel.DateTimeDataValidation
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

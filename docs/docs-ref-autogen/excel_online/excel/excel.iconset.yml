@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.IconSet:enum'
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: IconSet
+    name: Excel.IconSet
     fullName: Excel.IconSet
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

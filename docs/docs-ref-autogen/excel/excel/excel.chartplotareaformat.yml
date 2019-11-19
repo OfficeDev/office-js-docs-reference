@@ -5,16 +5,13 @@ items:
       Represents the format properties for chart plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartPlotAreaFormat
+    name: Excel.ChartPlotAreaFormat
     fullName: Excel.ChartPlotAreaFormat
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartPlotAreaFormat#border:member'
@@ -210,25 +207,18 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ChartBorder:class'
-    name: ChartBorder
-    fullName: Excel.ChartBorder
+    name: Excel.ChartBorder
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartFill:class'
-    name: ChartFill
-    fullName: Excel.ChartFill
+    name: Excel.ChartFill
   - uid: 'excel!Excel.ChartPlotAreaFormat:class'
-    name: ChartPlotAreaFormat
-    fullName: Excel.ChartPlotAreaFormat
+    name: Excel.ChartPlotAreaFormat
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatLoadOptions:interface'
-    name: ChartPlotAreaFormatLoadOptions
-    fullName: Excel.Interfaces.ChartPlotAreaFormatLoadOptions
+    name: Excel.Interfaces.ChartPlotAreaFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatUpdateData:interface'
-    name: ChartPlotAreaFormatUpdateData
-    fullName: Excel.Interfaces.ChartPlotAreaFormatUpdateData
+    name: Interfaces.ChartPlotAreaFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatData:interface'
-    name: ChartPlotAreaFormatData
-    fullName: Excel.Interfaces.ChartPlotAreaFormatData
+    name: Excel.Interfaces.ChartPlotAreaFormatData

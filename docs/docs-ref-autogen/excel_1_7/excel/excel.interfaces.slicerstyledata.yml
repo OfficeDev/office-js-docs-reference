@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.SlicerStyleData:interface'
     summary: An interface describing the data returned by calling `slicerStyle.toJSON()`<!-- -->.
-    name: SlicerStyleData
+    name: Excel.Interfaces.SlicerStyleData
     fullName: Excel.Interfaces.SlicerStyleData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

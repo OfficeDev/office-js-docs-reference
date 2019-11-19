@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.TableRowData:interface'
     summary: An interface describing the data returned by calling `tableRow.toJSON()`<!-- -->.
-    name: TableRowData
+    name: Excel.Interfaces.TableRowData
     fullName: Excel.Interfaces.TableRowData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

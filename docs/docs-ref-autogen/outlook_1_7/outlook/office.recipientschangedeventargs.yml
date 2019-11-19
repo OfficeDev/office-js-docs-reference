@@ -5,11 +5,10 @@ items:
       Provides change status of recipients fields when the `Office.EventType.RecipientsChanged` event is raised.
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    name: RecipientsChangedEventArgs
+    name: Office.RecipientsChangedEventArgs
     fullName: Office.RecipientsChangedEventArgs
     langs:
       - typeScript
-    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:
@@ -48,4 +47,3 @@ items:
 references:
   - uid: 'outlook!Office.RecipientsChangedFields:interface'
     name: RecipientsChangedFields
-    fullName: Office.RecipientsChangedFields

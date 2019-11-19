@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData:interface'
     summary: 'An interface for updating data on the ChartPlotArea object, for use in `chartPlotArea.set({ ... })`<!-- -->.'
-    name: ChartPlotAreaUpdateData
+    name: Excel.Interfaces.ChartPlotAreaUpdateData
     fullName: Excel.Interfaces.ChartPlotAreaUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

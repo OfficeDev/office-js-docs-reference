@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.PivotTableUpdateData:interface'
     summary: 'An interface for updating data on the PivotTable object, for use in `pivotTable.set({ ... })`<!-- -->.'
-    name: PivotTableUpdateData
+    name: Excel.Interfaces.PivotTableUpdateData
     fullName: Excel.Interfaces.PivotTableUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

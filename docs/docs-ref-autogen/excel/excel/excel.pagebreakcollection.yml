@@ -2,16 +2,13 @@
 items:
   - uid: 'excel!Excel.PageBreakCollection:class'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: PageBreakCollection
+    name: Excel.PageBreakCollection
     fullName: Excel.PageBreakCollection
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PageBreakCollection#add:member(1)'
@@ -221,8 +218,7 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.PageBreak:class'
-    name: PageBreak
-    fullName: Excel.PageBreak
+    name: Excel.PageBreak
   - uid: 'excel!Excel.PageBreakCollection#add~0:complex'
     name: Range | string
     fullName: Excel.Range | string
@@ -234,7 +230,6 @@ references:
         fullName: ' | string'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.PageBreakCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -254,8 +249,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.PageBreakCollection:class'
-    name: PageBreakCollection
-    fullName: Excel.PageBreakCollection
+    name: Excel.PageBreakCollection
   - uid: 'excel!Excel.PageBreakCollection#load~0:complex'
     name: Excel.Interfaces.PageBreakCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.PageBreakCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -271,5 +265,4 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.PageBreakCollectionData:interface'
-    name: PageBreakCollectionData
-    fullName: Excel.Interfaces.PageBreakCollectionData
+    name: Excel.Interfaces.PageBreakCollectionData

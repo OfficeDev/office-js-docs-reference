@@ -5,11 +5,10 @@ items:
       Represents the Iterative Calculation settings.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: IterativeCalculationLoadOptions
+    name: Excel.Interfaces.IterativeCalculationLoadOptions
     fullName: Excel.Interfaces.IterativeCalculationLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

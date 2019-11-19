@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the RangeViewCollection object, for use in `rangeViewCollection.set({ ...
       })`<!-- -->.
-    name: RangeViewCollectionUpdateData
+    name: Excel.Interfaces.RangeViewCollectionUpdateData
     fullName: Excel.Interfaces.RangeViewCollectionUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

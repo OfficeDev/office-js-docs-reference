@@ -2,11 +2,10 @@
 items:
   - uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
     summary: Provides display options and actions a dialog box may take.
-    name: DisplayWebDialogOptions
+    name: OfficeRuntime.DisplayWebDialogOptions
     fullName: OfficeRuntime.DisplayWebDialogOptions
     langs:
       - typeScript
-    namespace: 'office-runtime!OfficeRuntime:namespace'
     type: interface
     package: office-runtime!
     children:

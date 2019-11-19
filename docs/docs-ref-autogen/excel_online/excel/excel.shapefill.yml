@@ -5,16 +5,13 @@ items:
       Represents the fill formatting of a shape object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ShapeFill
+    name: Excel.ShapeFill
     fullName: Excel.ShapeFill
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ShapeFill#clear:member(1)'
@@ -275,21 +272,16 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ShapeFill:class'
-    name: ShapeFill
-    fullName: Excel.ShapeFill
+    name: Excel.ShapeFill
   - uid: 'excel!Excel.Interfaces.ShapeFillLoadOptions:interface'
-    name: ShapeFillLoadOptions
-    fullName: Excel.Interfaces.ShapeFillLoadOptions
+    name: Excel.Interfaces.ShapeFillLoadOptions
   - uid: 'excel!Excel.Interfaces.ShapeFillUpdateData:interface'
-    name: ShapeFillUpdateData
-    fullName: Excel.Interfaces.ShapeFillUpdateData
+    name: Interfaces.ShapeFillUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ShapeFillData:interface'
-    name: ShapeFillData
-    fullName: Excel.Interfaces.ShapeFillData
+    name: Excel.Interfaces.ShapeFillData
   - uid: 'excel!Excel.ShapeFill#type~0:complex'
     name: Excel.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" | "Mixed"
     fullName: Excel.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" | "Mixed"

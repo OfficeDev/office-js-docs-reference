@@ -9,22 +9,14 @@ items:
       treat this as a mode of Office.context.mailbox.item. Refer to the [Object
       Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item)
       page for more information.
-    name: MessageCompose
+    name: Office.MessageCompose
     fullName: Office.MessageCompose
     langs:
       - typeScript
-    namespace: 'outlook!Office:namespace'
     type: interface
     extends:
       - 'outlook!Office.Message:interface'
       - 'outlook!Office.ItemCompose:interface'
-    inheritance:
-      - type: 'outlook!Office.Message:interface'
-        inheritance:
-          - type: 'outlook!Office.Item:interface'
-      - type: 'outlook!Office.ItemCompose:interface'
-        inheritance:
-          - type: 'outlook!Office.Item:interface'
     package: outlook!
     children:
       - 'outlook!Office.MessageCompose#addFileAttachmentAsync:member(1)'
@@ -2280,13 +2272,8 @@ items:
 references:
   - uid: 'outlook!Office.Message:interface'
     name: Message
-    fullName: Office.Message
   - uid: 'outlook!Office.ItemCompose:interface'
     name: ItemCompose
-    fullName: Office.ItemCompose
-  - uid: 'outlook!Office.Item:interface'
-    name: Item
-    fullName: Office.Item
   - uid: 'outlook!Office.MessageCompose#addFileAttachmentAsync~0:complex'
     name: 'Office.AsyncContextOptions & { isInline: boolean }'
     fullName: 'Office.AsyncContextOptions & { isInline: boolean }'
@@ -2415,16 +2402,12 @@ references:
         fullName: <string>) => void
   - uid: 'outlook!Office.Recipients:interface'
     name: Recipients
-    fullName: Office.Recipients
   - uid: 'outlook!Office.Body:interface'
     name: Body
-    fullName: Office.Body
   - uid: 'outlook!Office.Categories:interface'
     name: Categories
-    fullName: Office.Categories
   - uid: 'outlook!Office.From:interface'
     name: From
-    fullName: Office.From
   - uid: 'outlook!Office.MessageCompose#getAttachmentsAsync~0:complex'
     name: '(asyncResult: Office.AsyncResult<AttachmentDetails[]>) => void'
     fullName: '(asyncResult: Office.AsyncResult<Office.AttachmentDetails[]>) => void'
@@ -2543,7 +2526,6 @@ references:
         fullName: <any>) => void
   - uid: 'outlook!Office.InternetHeaders:interface'
     name: InternetHeaders
-    fullName: Office.InternetHeaders
   - uid: 'outlook!Office.MessageCompose#itemType~0:complex'
     name: MailboxEnums.ItemType | string
     fullName: Office.MailboxEnums.ItemType | string
@@ -2571,7 +2553,6 @@ references:
         fullName: '>) => void'
   - uid: 'outlook!Office.NotificationMessages:interface'
     name: NotificationMessages
-    fullName: Office.NotificationMessages
   - uid: 'outlook!Office.MessageCompose#removeAttachmentAsync~0:complex'
     name: '(asyncResult: Office.AsyncResult<void>) => void'
     fullName: '(asyncResult: Office.AsyncResult<void>) => void'
@@ -2692,4 +2673,3 @@ references:
         fullName: <void>) => void
   - uid: 'outlook!Office.Subject:interface'
     name: Subject
-    fullName: Office.Subject

@@ -5,11 +5,10 @@ items:
       Represents the Preset Criteria Conditional Format Rule
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ConditionalPresetCriteriaRule
+    name: Excel.ConditionalPresetCriteriaRule
     fullName: Excel.ConditionalPresetCriteriaRule
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.RangeFormatData:interface'
     summary: An interface describing the data returned by calling `rangeFormat.toJSON()`<!-- -->.
-    name: RangeFormatData
+    name: Excel.Interfaces.RangeFormatData
     fullName: Excel.Interfaces.RangeFormatData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -292,11 +291,9 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.RangeFillData:interface'
-    name: RangeFillData
-    fullName: Excel.Interfaces.RangeFillData
+    name: Excel.Interfaces.RangeFillData
   - uid: 'excel!Excel.Interfaces.RangeFontData:interface'
-    name: RangeFontData
-    fullName: Excel.Interfaces.RangeFontData
+    name: Excel.Interfaces.RangeFontData
   - uid: 'excel!Excel.Interfaces.RangeFormatData#horizontalAlignment~0:complex'
     name: >-
       Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection"
@@ -311,8 +308,7 @@ references:
       - name: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
         fullName: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
   - uid: 'excel!Excel.Interfaces.FormatProtectionData:interface'
-    name: FormatProtectionData
-    fullName: Excel.Interfaces.FormatProtectionData
+    name: Excel.Interfaces.FormatProtectionData
   - uid: 'excel!Excel.Interfaces.RangeFormatData#readingOrder~0:complex'
     name: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
     fullName: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"

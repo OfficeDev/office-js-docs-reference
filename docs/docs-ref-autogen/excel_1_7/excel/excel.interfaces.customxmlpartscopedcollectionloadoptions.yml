@@ -7,11 +7,10 @@ items:
 
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: CustomXmlPartScopedCollectionLoadOptions
+    name: Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions
     fullName: Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

@@ -8,16 +8,13 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Workbook
+    name: Excel.Workbook
     fullName: Excel.Workbook
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Workbook#application:member'
@@ -186,7 +183,6 @@ items:
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: close(closeBehaviorString)
     fullName: close(closeBehaviorString)
     langs:
@@ -770,7 +766,6 @@ items:
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: save(saveBehaviorString)
     fullName: save(saveBehaviorString)
     langs:
@@ -1039,38 +1034,27 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Application:class'
-    name: Application
-    fullName: Excel.Application
+    name: Excel.Application
   - uid: 'excel!Excel.BindingCollection:class'
-    name: BindingCollection
-    fullName: Excel.BindingCollection
+    name: Excel.BindingCollection
   - uid: 'excel!Excel.CloseBehavior:enum'
-    name: CloseBehavior
-    fullName: Excel.CloseBehavior
+    name: Excel.CloseBehavior
   - uid: 'excel!Excel.CommentCollection:class'
-    name: CommentCollection
-    fullName: Excel.CommentCollection
+    name: Excel.CommentCollection
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.CustomXmlPartCollection:class'
-    name: CustomXmlPartCollection
-    fullName: Excel.CustomXmlPartCollection
+    name: Excel.CustomXmlPartCollection
   - uid: 'excel!Excel.DataConnectionCollection:class'
-    name: DataConnectionCollection
-    fullName: Excel.DataConnectionCollection
+    name: Excel.DataConnectionCollection
   - uid: 'excel!Excel.Functions:class'
-    name: Functions
-    fullName: Excel.Functions
+    name: Excel.Functions
   - uid: 'excel!Excel.Range:class'
-    name: Range
-    fullName: Excel.Range
+    name: Excel.Range
   - uid: 'excel!Excel.Chart:class'
-    name: Chart
-    fullName: Excel.Chart
+    name: Excel.Chart
   - uid: 'excel!Excel.Slicer:class'
-    name: Slicer
-    fullName: Excel.Slicer
+    name: Excel.Slicer
   - uid: 'excel!Excel.Workbook#getIsActiveCollabSession~0:complex'
     name: OfficeExtension.ClientResult<boolean>
     fullName: OfficeExtension.ClientResult<boolean>
@@ -1081,17 +1065,13 @@ references:
       - name: <boolean>
         fullName: <boolean>
   - uid: 'excel!Excel.RangeAreas:class'
-    name: RangeAreas
-    fullName: Excel.RangeAreas
+    name: Excel.RangeAreas
   - uid: 'excel!Excel.Workbook:class'
-    name: Workbook
-    fullName: Excel.Workbook
+    name: Excel.Workbook
   - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
-    name: WorkbookLoadOptions
-    fullName: Excel.Interfaces.WorkbookLoadOptions
+    name: Excel.Interfaces.WorkbookLoadOptions
   - uid: 'excel!Excel.NamedItemCollection:class'
-    name: NamedItemCollection
-    fullName: Excel.NamedItemCollection
+    name: Excel.NamedItemCollection
   - uid: 'excel!Excel.Workbook#onAutoSaveSettingChanged~0:complex'
     name: OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>
@@ -1121,49 +1101,34 @@ references:
       - name: '>'
         fullName: '>'
   - uid: 'excel!Excel.PivotTableCollection:class'
-    name: PivotTableCollection
-    fullName: Excel.PivotTableCollection
+    name: Excel.PivotTableCollection
   - uid: 'excel!Excel.PivotTableStyleCollection:class'
-    name: PivotTableStyleCollection
-    fullName: Excel.PivotTableStyleCollection
+    name: Excel.PivotTableStyleCollection
   - uid: 'excel!Excel.DocumentProperties:class'
-    name: DocumentProperties
-    fullName: Excel.DocumentProperties
+    name: Excel.DocumentProperties
   - uid: 'excel!Excel.WorkbookProtection:class'
-    name: WorkbookProtection
-    fullName: Excel.WorkbookProtection
+    name: Excel.WorkbookProtection
   - uid: 'excel!Excel.SaveBehavior:enum'
-    name: SaveBehavior
-    fullName: Excel.SaveBehavior
+    name: Excel.SaveBehavior
   - uid: 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
-    name: WorkbookUpdateData
-    fullName: Excel.Interfaces.WorkbookUpdateData
+    name: Interfaces.WorkbookUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.SettingCollection:class'
-    name: SettingCollection
-    fullName: Excel.SettingCollection
+    name: Excel.SettingCollection
   - uid: 'excel!Excel.SlicerCollection:class'
-    name: SlicerCollection
-    fullName: Excel.SlicerCollection
+    name: Excel.SlicerCollection
   - uid: 'excel!Excel.SlicerStyleCollection:class'
-    name: SlicerStyleCollection
-    fullName: Excel.SlicerStyleCollection
+    name: Excel.SlicerStyleCollection
   - uid: 'excel!Excel.StyleCollection:class'
-    name: StyleCollection
-    fullName: Excel.StyleCollection
+    name: Excel.StyleCollection
   - uid: 'excel!Excel.TableCollection:class'
-    name: TableCollection
-    fullName: Excel.TableCollection
+    name: Excel.TableCollection
   - uid: 'excel!Excel.TableStyleCollection:class'
-    name: TableStyleCollection
-    fullName: Excel.TableStyleCollection
+    name: Excel.TableStyleCollection
   - uid: 'excel!Excel.TimelineStyleCollection:class'
-    name: TimelineStyleCollection
-    fullName: Excel.TimelineStyleCollection
+    name: Excel.TimelineStyleCollection
   - uid: 'excel!Excel.Interfaces.WorkbookData:interface'
-    name: WorkbookData
-    fullName: Excel.Interfaces.WorkbookData
+    name: Excel.Interfaces.WorkbookData
   - uid: 'excel!Excel.WorksheetCollection:class'
-    name: WorksheetCollection
-    fullName: Excel.WorksheetCollection
+    name: Excel.WorksheetCollection

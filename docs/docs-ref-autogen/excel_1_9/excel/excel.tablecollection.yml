@@ -7,16 +7,13 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: TableCollection
+    name: Excel.TableCollection
     fullName: Excel.TableCollection
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TableCollection#add:member(1)'
@@ -426,8 +423,7 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Table:class'
-    name: Table
-    fullName: Excel.Table
+    name: Excel.Table
   - uid: 'excel!Excel.TableCollection#add~0:complex'
     name: Range | string
     fullName: Excel.Range | string
@@ -439,7 +435,6 @@ references:
         fullName: ' | string'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.TableCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -459,8 +454,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.TableCollection:class'
-    name: TableCollection
-    fullName: Excel.TableCollection
+    name: Excel.TableCollection
   - uid: 'excel!Excel.TableCollection#load~0:complex'
     name: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -518,5 +512,4 @@ references:
       - name: '>'
         fullName: '>'
   - uid: 'excel!Excel.Interfaces.TableCollectionData:interface'
-    name: TableCollectionData
-    fullName: Excel.Interfaces.TableCollectionData
+    name: Excel.Interfaces.TableCollectionData

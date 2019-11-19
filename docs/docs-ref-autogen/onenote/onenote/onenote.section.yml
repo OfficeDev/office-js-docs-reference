@@ -5,16 +5,13 @@ items:
       Represents a OneNote section. Sections can contain pages.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: Section
+    name: OneNote.Section
     fullName: OneNote.Section
     langs:
       - typeScript
-    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.Section#addPage:member(1)'
@@ -698,20 +695,15 @@ references:
   - uid: 'onenote!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.Page:class'
-    name: Page
-    fullName: OneNote.Page
+    name: OneNote.Page
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
-    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.Section:class'
-    name: Section
-    fullName: OneNote.Section
+    name: OneNote.Section
   - uid: 'onenote!OneNote.Notebook:class'
-    name: Notebook
-    fullName: OneNote.Notebook
+    name: OneNote.Notebook
   - uid: 'onenote!OneNote.SectionGroup:class'
-    name: SectionGroup
-    fullName: OneNote.SectionGroup
+    name: OneNote.SectionGroup
   - uid: 'onenote!OneNote.Section#getRestApiId~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -722,14 +714,10 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'onenote!OneNote.InsertLocation:enum'
-    name: InsertLocation
-    fullName: OneNote.InsertLocation
+    name: OneNote.InsertLocation
   - uid: 'onenote!OneNote.Interfaces.SectionLoadOptions:interface'
-    name: SectionLoadOptions
-    fullName: OneNote.Interfaces.SectionLoadOptions
+    name: OneNote.Interfaces.SectionLoadOptions
   - uid: 'onenote!OneNote.PageCollection:class'
-    name: PageCollection
-    fullName: OneNote.PageCollection
+    name: OneNote.PageCollection
   - uid: 'onenote!OneNote.Interfaces.SectionData:interface'
-    name: SectionData
-    fullName: OneNote.Interfaces.SectionData
+    name: OneNote.Interfaces.SectionData

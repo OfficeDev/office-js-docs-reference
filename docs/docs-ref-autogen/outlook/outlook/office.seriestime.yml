@@ -14,11 +14,10 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
-    name: SeriesTime
+    name: Office.SeriesTime
     fullName: Office.SeriesTime
     langs:
       - typeScript
-    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

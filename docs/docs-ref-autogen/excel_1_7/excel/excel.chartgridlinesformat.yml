@@ -5,16 +5,13 @@ items:
       Encapsulates the format properties for chart gridlines.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartGridlinesFormat
+    name: Excel.ChartGridlinesFormat
     fullName: Excel.ChartGridlinesFormat
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartGridlinesFormat#context:member'
@@ -195,21 +192,15 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartLineFormat:class'
-    name: ChartLineFormat
-    fullName: Excel.ChartLineFormat
+    name: Excel.ChartLineFormat
   - uid: 'excel!Excel.ChartGridlinesFormat:class'
-    name: ChartGridlinesFormat
-    fullName: Excel.ChartGridlinesFormat
+    name: Excel.ChartGridlinesFormat
   - uid: 'excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions:interface'
-    name: ChartGridlinesFormatLoadOptions
-    fullName: Excel.Interfaces.ChartGridlinesFormatLoadOptions
+    name: Excel.Interfaces.ChartGridlinesFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartGridlinesFormatUpdateData:interface'
-    name: ChartGridlinesFormatUpdateData
-    fullName: Excel.Interfaces.ChartGridlinesFormatUpdateData
+    name: Interfaces.ChartGridlinesFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartGridlinesFormatData:interface'
-    name: ChartGridlinesFormatData
-    fullName: Excel.Interfaces.ChartGridlinesFormatData
+    name: Excel.Interfaces.ChartGridlinesFormatData

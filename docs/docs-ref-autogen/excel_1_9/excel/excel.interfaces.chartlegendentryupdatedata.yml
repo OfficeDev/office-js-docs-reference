@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartLegendEntryUpdateData:interface'
     summary: 'An interface for updating data on the ChartLegendEntry object, for use in `chartLegendEntry.set({ ... })`<!-- -->.'
-    name: ChartLegendEntryUpdateData
+    name: Excel.Interfaces.ChartLegendEntryUpdateData
     fullName: Excel.Interfaces.ChartLegendEntryUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

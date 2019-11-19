@@ -5,16 +5,13 @@ items:
       Represents a slicer item in a slicer.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: SlicerItem
+    name: Excel.SlicerItem
     fullName: Excel.SlicerItem
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.SlicerItem#context:member'
@@ -245,18 +242,13 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.SlicerItem:class'
-    name: SlicerItem
-    fullName: Excel.SlicerItem
+    name: Excel.SlicerItem
   - uid: 'excel!Excel.Interfaces.SlicerItemLoadOptions:interface'
-    name: SlicerItemLoadOptions
-    fullName: Excel.Interfaces.SlicerItemLoadOptions
+    name: Excel.Interfaces.SlicerItemLoadOptions
   - uid: 'excel!Excel.Interfaces.SlicerItemUpdateData:interface'
-    name: SlicerItemUpdateData
-    fullName: Excel.Interfaces.SlicerItemUpdateData
+    name: Interfaces.SlicerItemUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.SlicerItemData:interface'
-    name: SlicerItemData
-    fullName: Excel.Interfaces.SlicerItemData
+    name: Excel.Interfaces.SlicerItemData

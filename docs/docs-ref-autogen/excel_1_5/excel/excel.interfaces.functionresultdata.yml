@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.FunctionResultData:interface'
     summary: An interface describing the data returned by calling `functionResult.toJSON()`<!-- -->.
-    name: FunctionResultData
+    name: Excel.Interfaces.FunctionResultData
     fullName: Excel.Interfaces.FunctionResultData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     syntax:
       typeParameters:

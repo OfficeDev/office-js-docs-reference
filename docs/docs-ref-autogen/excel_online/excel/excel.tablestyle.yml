@@ -5,16 +5,13 @@ items:
       Represents a TableStyle, which defines the style elements by region of the Table.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: TableStyle
+    name: Excel.TableStyle
     fullName: Excel.TableStyle
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TableStyle#context:member'
@@ -245,18 +242,13 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.TableStyle:class'
-    name: TableStyle
-    fullName: Excel.TableStyle
+    name: Excel.TableStyle
   - uid: 'excel!Excel.Interfaces.TableStyleLoadOptions:interface'
-    name: TableStyleLoadOptions
-    fullName: Excel.Interfaces.TableStyleLoadOptions
+    name: Excel.Interfaces.TableStyleLoadOptions
   - uid: 'excel!Excel.Interfaces.TableStyleUpdateData:interface'
-    name: TableStyleUpdateData
-    fullName: Excel.Interfaces.TableStyleUpdateData
+    name: Interfaces.TableStyleUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.TableStyleData:interface'
-    name: TableStyleData
-    fullName: Excel.Interfaces.TableStyleData
+    name: Excel.Interfaces.TableStyleData

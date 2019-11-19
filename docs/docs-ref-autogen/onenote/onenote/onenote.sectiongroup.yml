@@ -5,16 +5,13 @@ items:
       Represents a OneNote section group. Section groups can contain sections and other section groups.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: SectionGroup
+    name: OneNote.SectionGroup
     fullName: OneNote.SectionGroup
     langs:
       - typeScript
-    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.SectionGroup#addSection:member(1)'
@@ -561,14 +558,11 @@ references:
   - uid: 'onenote!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.Section:class'
-    name: Section
-    fullName: OneNote.Section
+    name: OneNote.Section
   - uid: 'onenote!OneNote.SectionGroup:class'
-    name: SectionGroup
-    fullName: OneNote.SectionGroup
+    name: OneNote.SectionGroup
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
-    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.SectionGroup#getRestApiId~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -579,17 +573,12 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'onenote!OneNote.Interfaces.SectionGroupLoadOptions:interface'
-    name: SectionGroupLoadOptions
-    fullName: OneNote.Interfaces.SectionGroupLoadOptions
+    name: OneNote.Interfaces.SectionGroupLoadOptions
   - uid: 'onenote!OneNote.Notebook:class'
-    name: Notebook
-    fullName: OneNote.Notebook
+    name: OneNote.Notebook
   - uid: 'onenote!OneNote.SectionGroupCollection:class'
-    name: SectionGroupCollection
-    fullName: OneNote.SectionGroupCollection
+    name: OneNote.SectionGroupCollection
   - uid: 'onenote!OneNote.SectionCollection:class'
-    name: SectionCollection
-    fullName: OneNote.SectionCollection
+    name: OneNote.SectionCollection
   - uid: 'onenote!OneNote.Interfaces.SectionGroupData:interface'
-    name: SectionGroupData
-    fullName: OneNote.Interfaces.SectionGroupData
+    name: OneNote.Interfaces.SectionGroupData

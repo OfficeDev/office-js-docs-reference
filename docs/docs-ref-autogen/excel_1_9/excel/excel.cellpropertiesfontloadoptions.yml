@@ -5,11 +5,10 @@ items:
       Specifies which properties to load on the `format.font` object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: CellPropertiesFontLoadOptions
+    name: Excel.CellPropertiesFontLoadOptions
     fullName: Excel.CellPropertiesFontLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

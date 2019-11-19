@@ -2,11 +2,10 @@
 items:
   - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionData:interface'
     summary: An interface describing the data returned by calling "inkStrokeCollection.toJSON()".
-    name: InkStrokeCollectionData
+    name: OneNote.Interfaces.InkStrokeCollectionData
     fullName: OneNote.Interfaces.InkStrokeCollectionData
     langs:
       - typeScript
-    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:

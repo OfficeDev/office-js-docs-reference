@@ -5,11 +5,10 @@ items:
       Represents the ShapeView class.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: ShapeViewLoadOptions
+    name: Visio.Interfaces.ShapeViewLoadOptions
     fullName: Visio.Interfaces.ShapeViewLoadOptions
     langs:
       - typeScript
-    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:

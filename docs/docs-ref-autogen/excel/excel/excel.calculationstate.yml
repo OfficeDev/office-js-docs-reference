@@ -5,11 +5,10 @@ items:
       Represents the state of calculation across the entire Excel application.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: CalculationState
+    name: Excel.CalculationState
     fullName: Excel.CalculationState
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

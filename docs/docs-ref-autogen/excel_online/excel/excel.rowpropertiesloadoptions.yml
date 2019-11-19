@@ -5,16 +5,13 @@ items:
       Represents which row properties to load, when used as part of a "range.getRowProperties" method.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: RowPropertiesLoadOptions
+    name: Excel.RowPropertiesLoadOptions
     fullName: Excel.RowPropertiesLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     extends:
       - 'excel!Excel.CellPropertiesLoadOptions:interface'
-    inheritance:
-      - type: 'excel!Excel.CellPropertiesLoadOptions:interface'
     package: excel!
     children:
       - 'excel!Excel.RowPropertiesLoadOptions#format:member'
@@ -71,7 +68,6 @@ items:
 references:
   - uid: 'excel!Excel.CellPropertiesLoadOptions:interface'
     name: CellPropertiesLoadOptions
-    fullName: Excel.CellPropertiesLoadOptions
   - uid: 'excel!Excel.RowPropertiesLoadOptions#format~0:complex'
     name: |-
       Excel.CellPropertiesFormatLoadOptions & {

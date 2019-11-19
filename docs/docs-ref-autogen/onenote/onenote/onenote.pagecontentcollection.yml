@@ -5,16 +5,13 @@ items:
       Represents the contents of a page, as a collection of PageContent objects.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: PageContentCollection
+    name: OneNote.PageContentCollection
     fullName: OneNote.PageContentCollection
     langs:
       - typeScript
-    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.PageContentCollection#context:member'
@@ -328,10 +325,8 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
-    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.PageContent:class'
-    name: PageContent
-    fullName: OneNote.PageContent
+    name: OneNote.PageContent
   - uid: 'onenote!OneNote.PageContentCollection#items~0:complex'
     name: 'OneNote.PageContent[]'
     fullName: 'OneNote.PageContent[]'
@@ -342,8 +337,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'onenote!OneNote.PageContentCollection:class'
-    name: PageContentCollection
-    fullName: OneNote.PageContentCollection
+    name: OneNote.PageContentCollection
   - uid: 'onenote!OneNote.PageContentCollection#load~0:complex'
     name: OneNote.Interfaces.PageContentCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
     fullName: OneNote.Interfaces.PageContentCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
@@ -359,5 +353,4 @@ references:
   - uid: 'onenote!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'onenote!OneNote.Interfaces.PageContentCollectionData:interface'
-    name: PageContentCollectionData
-    fullName: OneNote.Interfaces.PageContentCollectionData
+    name: OneNote.Interfaces.PageContentCollectionData

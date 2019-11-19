@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.NamedItemUpdateData:interface'
     summary: 'An interface for updating data on the NamedItem object, for use in `namedItem.set({ ... })`<!-- -->.'
-    name: NamedItemUpdateData
+    name: Excel.Interfaces.NamedItemUpdateData
     fullName: Excel.Interfaces.NamedItemUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

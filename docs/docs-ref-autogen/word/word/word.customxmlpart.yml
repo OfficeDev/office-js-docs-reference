@@ -8,16 +8,13 @@ items:
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    name: CustomXmlPart
+    name: Word.CustomXmlPart
     fullName: Word.CustomXmlPart
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.CustomXmlPart#context:member'
@@ -540,7 +537,6 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.CustomXmlPart#getXml~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -551,11 +547,9 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'word!Word.CustomXmlPart:class'
-    name: CustomXmlPart
-    fullName: Word.CustomXmlPart
+    name: Word.CustomXmlPart
   - uid: 'word!Word.Interfaces.CustomXmlPartLoadOptions:interface'
-    name: CustomXmlPartLoadOptions
-    fullName: Word.Interfaces.CustomXmlPartLoadOptions
+    name: Word.Interfaces.CustomXmlPartLoadOptions
   - uid: 'word!Word.CustomXmlPart#query~0:complex'
     name: 'OfficeExtension.ClientResult<string[]>'
     fullName: 'OfficeExtension.ClientResult<string[]>'
@@ -566,5 +560,4 @@ references:
       - name: '<string[]>'
         fullName: '<string[]>'
   - uid: 'word!Word.Interfaces.CustomXmlPartData:interface'
-    name: CustomXmlPartData
-    fullName: Word.Interfaces.CustomXmlPartData
+    name: Word.Interfaces.CustomXmlPartData

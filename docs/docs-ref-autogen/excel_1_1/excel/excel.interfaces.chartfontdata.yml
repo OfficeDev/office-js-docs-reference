@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartFontData:interface'
     summary: An interface describing the data returned by calling `chartFont.toJSON()`<!-- -->.
-    name: ChartFontData
+    name: Excel.Interfaces.ChartFontData
     fullName: Excel.Interfaces.ChartFontData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

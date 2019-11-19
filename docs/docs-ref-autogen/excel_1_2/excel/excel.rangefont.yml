@@ -5,16 +5,13 @@ items:
       This object represents the font attributes (font name, font size, color, etc.) for an object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: RangeFont
+    name: Excel.RangeFont
     fullName: Excel.RangeFont
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.RangeFont#bold:member'
@@ -312,21 +309,16 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.RangeFont:class'
-    name: RangeFont
-    fullName: Excel.RangeFont
+    name: Excel.RangeFont
   - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions:interface'
-    name: RangeFontLoadOptions
-    fullName: Excel.Interfaces.RangeFontLoadOptions
+    name: Excel.Interfaces.RangeFontLoadOptions
   - uid: 'excel!Excel.Interfaces.RangeFontUpdateData:interface'
-    name: RangeFontUpdateData
-    fullName: Excel.Interfaces.RangeFontUpdateData
+    name: Interfaces.RangeFontUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.RangeFontData:interface'
-    name: RangeFontData
-    fullName: Excel.Interfaces.RangeFontData
+    name: Excel.Interfaces.RangeFontData
   - uid: 'excel!Excel.RangeFont#underline~0:complex'
     name: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"
     fullName: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"

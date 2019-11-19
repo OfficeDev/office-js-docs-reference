@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.WorkbookData:interface'
     summary: An interface describing the data returned by calling `workbook.toJSON()`<!-- -->.
-    name: WorkbookData
+    name: Excel.Interfaces.WorkbookData
     fullName: Excel.Interfaces.WorkbookData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

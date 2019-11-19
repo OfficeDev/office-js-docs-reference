@@ -2,16 +2,13 @@
 items:
   - uid: 'excel!Excel.HeaderFooterGroup:class'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: HeaderFooterGroup
+    name: Excel.HeaderFooterGroup
     fullName: Excel.HeaderFooterGroup
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.HeaderFooterGroup#context:member'
@@ -292,19 +289,14 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.HeaderFooter:class'
-    name: HeaderFooter
-    fullName: Excel.HeaderFooter
+    name: Excel.HeaderFooter
   - uid: 'excel!Excel.HeaderFooterGroup:class'
-    name: HeaderFooterGroup
-    fullName: Excel.HeaderFooterGroup
+    name: Excel.HeaderFooterGroup
   - uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions:interface'
-    name: HeaderFooterGroupLoadOptions
-    fullName: Excel.Interfaces.HeaderFooterGroupLoadOptions
+    name: Excel.Interfaces.HeaderFooterGroupLoadOptions
   - uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData:interface'
-    name: HeaderFooterGroupUpdateData
-    fullName: Excel.Interfaces.HeaderFooterGroupUpdateData
+    name: Interfaces.HeaderFooterGroupUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.HeaderFooterGroup#state~0:complex'
@@ -317,5 +309,4 @@ references:
       - name: ' | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"'
         fullName: ' | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"'
   - uid: 'excel!Excel.Interfaces.HeaderFooterGroupData:interface'
-    name: HeaderFooterGroupData
-    fullName: Excel.Interfaces.HeaderFooterGroupData
+    name: Excel.Interfaces.HeaderFooterGroupData

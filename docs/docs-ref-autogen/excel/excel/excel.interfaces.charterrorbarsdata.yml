@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsData:interface'
     summary: An interface describing the data returned by calling `chartErrorBars.toJSON()`<!-- -->.
-    name: ChartErrorBarsData
+    name: Excel.Interfaces.ChartErrorBarsData
     fullName: Excel.Interfaces.ChartErrorBarsData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -92,8 +91,7 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatData:interface'
-    name: ChartErrorBarsFormatData
-    fullName: Excel.Interfaces.ChartErrorBarsFormatData
+    name: Excel.Interfaces.ChartErrorBarsFormatData
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsData#include~0:complex'
     name: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues"
     fullName: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues"

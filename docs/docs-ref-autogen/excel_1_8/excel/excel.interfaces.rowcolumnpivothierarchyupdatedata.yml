@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the RowColumnPivotHierarchy object, for use in `rowColumnPivotHierarchy.set({
       ... })`<!-- -->.
-    name: RowColumnPivotHierarchyUpdateData
+    name: Excel.Interfaces.RowColumnPivotHierarchyUpdateData
     fullName: Excel.Interfaces.RowColumnPivotHierarchyUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

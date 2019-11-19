@@ -8,16 +8,13 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: NamedItem
+    name: Excel.NamedItem
     fullName: Excel.NamedItem
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.NamedItem#arrayValues:member'
@@ -494,20 +491,15 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.NamedItemArrayValues:class'
-    name: NamedItemArrayValues
-    fullName: Excel.NamedItemArrayValues
+    name: Excel.NamedItemArrayValues
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Range:class'
-    name: Range
-    fullName: Excel.Range
+    name: Excel.Range
   - uid: 'excel!Excel.NamedItem:class'
-    name: NamedItem
-    fullName: Excel.NamedItem
+    name: Excel.NamedItem
   - uid: 'excel!Excel.Interfaces.NamedItemLoadOptions:interface'
-    name: NamedItemLoadOptions
-    fullName: Excel.Interfaces.NamedItemLoadOptions
+    name: Excel.Interfaces.NamedItemLoadOptions
   - uid: 'excel!Excel.NamedItem#scope~0:complex'
     name: Excel.NamedItemScope | "Worksheet" | "Workbook"
     fullName: Excel.NamedItemScope | "Worksheet" | "Workbook"
@@ -518,13 +510,11 @@ references:
       - name: ' | "Worksheet" | "Workbook"'
         fullName: ' | "Worksheet" | "Workbook"'
   - uid: 'excel!Excel.Interfaces.NamedItemUpdateData:interface'
-    name: NamedItemUpdateData
-    fullName: Excel.Interfaces.NamedItemUpdateData
+    name: Interfaces.NamedItemUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.NamedItemData:interface'
-    name: NamedItemData
-    fullName: Excel.Interfaces.NamedItemData
+    name: Excel.Interfaces.NamedItemData
   - uid: 'excel!Excel.NamedItem#type~0:complex'
     name: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"
     fullName: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"
@@ -535,5 +525,4 @@ references:
       - name: ' | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"'
         fullName: ' | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"'
   - uid: 'excel!Excel.Worksheet:class'
-    name: Worksheet
-    fullName: Excel.Worksheet
+    name: Excel.Worksheet

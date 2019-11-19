@@ -7,11 +7,10 @@ items:
 
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: DocumentCreatedLoadOptions
+    name: Word.Interfaces.DocumentCreatedLoadOptions
     fullName: Word.Interfaces.DocumentCreatedLoadOptions
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -88,8 +87,6 @@ items:
           - boolean
 references:
   - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
-    name: BodyLoadOptions
-    fullName: Word.Interfaces.BodyLoadOptions
+    name: Word.Interfaces.BodyLoadOptions
   - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions:interface'
-    name: DocumentPropertiesLoadOptions
-    fullName: Word.Interfaces.DocumentPropertiesLoadOptions
+    name: Word.Interfaces.DocumentPropertiesLoadOptions

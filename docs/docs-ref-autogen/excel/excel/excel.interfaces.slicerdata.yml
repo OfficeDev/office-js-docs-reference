@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.SlicerData:interface'
     summary: An interface describing the data returned by calling `slicer.toJSON()`<!-- -->.
-    name: SlicerData
+    name: Excel.Interfaces.SlicerData
     fullName: Excel.Interfaces.SlicerData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -254,5 +253,4 @@ references:
       - name: ' | "DataSourceOrder" | "Ascending" | "Descending"'
         fullName: ' | "DataSourceOrder" | "Ascending" | "Descending"'
   - uid: 'excel!Excel.Interfaces.WorksheetData:interface'
-    name: WorksheetData
-    fullName: Excel.Interfaces.WorksheetData
+    name: Excel.Interfaces.WorksheetData

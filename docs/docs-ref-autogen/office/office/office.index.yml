@@ -2,11 +2,10 @@
 items:
   - uid: 'office!Office.Index:enum'
     summary: Specifies the relative PowerPoint slide.
-    name: Index
+    name: Office.Index
     fullName: Office.Index
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: enum
     package: office!
     children:

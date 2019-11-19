@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.CustomPropertyUpdateData:interface'
     summary: 'An interface for updating data on the CustomProperty object, for use in `customProperty.set({ ... })`<!-- -->.'
-    name: CustomPropertyUpdateData
+    name: Excel.Interfaces.CustomPropertyUpdateData
     fullName: Excel.Interfaces.CustomPropertyUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

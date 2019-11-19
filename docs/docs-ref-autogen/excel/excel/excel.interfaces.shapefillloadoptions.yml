@@ -5,11 +5,10 @@ items:
       Represents the fill formatting of a shape object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ShapeFillLoadOptions
+    name: Excel.Interfaces.ShapeFillLoadOptions
     fullName: Excel.Interfaces.ShapeFillLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

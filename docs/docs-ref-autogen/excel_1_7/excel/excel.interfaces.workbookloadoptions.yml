@@ -8,11 +8,10 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: WorkbookLoadOptions
+    name: Excel.Interfaces.WorkbookLoadOptions
     fullName: Excel.Interfaces.WorkbookLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -129,17 +128,12 @@ items:
           - 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
-    name: ApplicationLoadOptions
-    fullName: Excel.Interfaces.ApplicationLoadOptions
+    name: Excel.Interfaces.ApplicationLoadOptions
   - uid: 'excel!Excel.Interfaces.BindingCollectionLoadOptions:interface'
-    name: BindingCollectionLoadOptions
-    fullName: Excel.Interfaces.BindingCollectionLoadOptions
+    name: Excel.Interfaces.BindingCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
-    name: DocumentPropertiesLoadOptions
-    fullName: Excel.Interfaces.DocumentPropertiesLoadOptions
+    name: Excel.Interfaces.DocumentPropertiesLoadOptions
   - uid: 'excel!Excel.Interfaces.WorkbookProtectionLoadOptions:interface'
-    name: WorkbookProtectionLoadOptions
-    fullName: Excel.Interfaces.WorkbookProtectionLoadOptions
+    name: Excel.Interfaces.WorkbookProtectionLoadOptions
   - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
-    name: TableCollectionLoadOptions
-    fullName: Excel.Interfaces.TableCollectionLoadOptions
+    name: Excel.Interfaces.TableCollectionLoadOptions

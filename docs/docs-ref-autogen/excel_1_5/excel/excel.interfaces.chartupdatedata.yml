@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartUpdateData:interface'
     summary: 'An interface for updating data on the Chart object, for use in `chart.set({ ... })`<!-- -->.'
-    name: ChartUpdateData
+    name: Excel.Interfaces.ChartUpdateData
     fullName: Excel.Interfaces.ChartUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -176,17 +175,12 @@ items:
           - number
 references:
   - uid: 'excel!Excel.Interfaces.ChartAxesUpdateData:interface'
-    name: ChartAxesUpdateData
-    fullName: Excel.Interfaces.ChartAxesUpdateData
+    name: Excel.Interfaces.ChartAxesUpdateData
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface'
-    name: ChartDataLabelsUpdateData
-    fullName: Excel.Interfaces.ChartDataLabelsUpdateData
+    name: Excel.Interfaces.ChartDataLabelsUpdateData
   - uid: 'excel!Excel.Interfaces.ChartAreaFormatUpdateData:interface'
-    name: ChartAreaFormatUpdateData
-    fullName: Excel.Interfaces.ChartAreaFormatUpdateData
+    name: Excel.Interfaces.ChartAreaFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData:interface'
-    name: ChartLegendUpdateData
-    fullName: Excel.Interfaces.ChartLegendUpdateData
+    name: Excel.Interfaces.ChartLegendUpdateData
   - uid: 'excel!Excel.Interfaces.ChartTitleUpdateData:interface'
-    name: ChartTitleUpdateData
-    fullName: Excel.Interfaces.ChartTitleUpdateData
+    name: Excel.Interfaces.ChartTitleUpdateData

@@ -7,16 +7,13 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Table
+    name: Excel.Table
     fullName: Excel.Table
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Table#clearFilters:member(1)'
@@ -634,34 +631,24 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.TableColumnCollection:class'
-    name: TableColumnCollection
-    fullName: Excel.TableColumnCollection
+    name: Excel.TableColumnCollection
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Range:class'
-    name: Range
-    fullName: Excel.Range
+    name: Excel.Range
   - uid: 'excel!Excel.Table:class'
-    name: Table
-    fullName: Excel.Table
+    name: Excel.Table
   - uid: 'excel!Excel.Interfaces.TableLoadOptions:interface'
-    name: TableLoadOptions
-    fullName: Excel.Interfaces.TableLoadOptions
+    name: Excel.Interfaces.TableLoadOptions
   - uid: 'excel!Excel.TableRowCollection:class'
-    name: TableRowCollection
-    fullName: Excel.TableRowCollection
+    name: Excel.TableRowCollection
   - uid: 'excel!Excel.Interfaces.TableUpdateData:interface'
-    name: TableUpdateData
-    fullName: Excel.Interfaces.TableUpdateData
+    name: Interfaces.TableUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.TableSort:class'
-    name: TableSort
-    fullName: Excel.TableSort
+    name: Excel.TableSort
   - uid: 'excel!Excel.Interfaces.TableData:interface'
-    name: TableData
-    fullName: Excel.Interfaces.TableData
+    name: Excel.Interfaces.TableData
   - uid: 'excel!Excel.Worksheet:class'
-    name: Worksheet
-    fullName: Excel.Worksheet
+    name: Excel.Worksheet

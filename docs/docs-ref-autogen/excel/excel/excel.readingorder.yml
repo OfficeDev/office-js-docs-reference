@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.ReadingOrder:enum'
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: ReadingOrder
+    name: Excel.ReadingOrder
     fullName: Excel.ReadingOrder
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

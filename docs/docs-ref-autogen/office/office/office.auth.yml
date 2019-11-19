@@ -6,11 +6,10 @@ items:
       token to the add-in's web application. Indirectly, this also enables the add-in to access the signed-in user's
       Microsoft Graph data without requiring the user to sign in a second time.
     isPreview: true
-    name: Auth
+    name: Office.Auth
     fullName: Office.Auth
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:
@@ -122,7 +121,6 @@ items:
 references:
   - uid: 'office!Office.AuthOptions:interface'
     name: AuthOptions
-    fullName: Office.AuthOptions
   - uid: 'office!Office.Auth#getAccessTokenAsync~0:complex'
     name: '(result: AsyncResult<string>) => void'
     fullName: '(result: Office.AsyncResult<string>) => void'

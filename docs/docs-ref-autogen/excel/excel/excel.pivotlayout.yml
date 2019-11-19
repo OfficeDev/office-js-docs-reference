@@ -5,16 +5,13 @@ items:
       Represents the visual layout of the PivotTable.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: PivotLayout
+    name: Excel.PivotLayout
     fullName: Excel.PivotLayout
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PivotLayout#autoFormat:member'
@@ -573,10 +570,8 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Range:class'
-    name: Range
-    fullName: Excel.Range
+    name: Excel.Range
   - uid: 'excel!Excel.PivotLayout#getCell~0:complex'
     name: DataPivotHierarchy | string
     fullName: Excel.DataPivotHierarchy | string
@@ -615,8 +610,7 @@ references:
       - name: ' | string>'
         fullName: ' | string>'
   - uid: 'excel!Excel.DataPivotHierarchy:class'
-    name: DataPivotHierarchy
-    fullName: Excel.DataPivotHierarchy
+    name: Excel.DataPivotHierarchy
   - uid: 'excel!Excel.PivotLayout#getDataHierarchy~0:complex'
     name: Range | string
     fullName: Excel.Range | string
@@ -641,8 +635,7 @@ references:
       - name: '[]>'
         fullName: '[]>'
   - uid: 'excel!Excel.PivotAxis:enum'
-    name: PivotAxis
-    fullName: Excel.PivotAxis
+    name: Excel.PivotAxis
   - uid: 'excel!Excel.PivotLayout#getPivotItems~1:complex'
     name: Range | string
     fullName: Excel.Range | string
@@ -685,14 +678,11 @@ references:
       - name: ' | "Compact" | "Tabular" | "Outline"'
         fullName: ' | "Compact" | "Tabular" | "Outline"'
   - uid: 'excel!Excel.PivotLayout:class'
-    name: PivotLayout
-    fullName: Excel.PivotLayout
+    name: Excel.PivotLayout
   - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions:interface'
-    name: PivotLayoutLoadOptions
-    fullName: Excel.Interfaces.PivotLayoutLoadOptions
+    name: Excel.Interfaces.PivotLayoutLoadOptions
   - uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData:interface'
-    name: PivotLayoutUpdateData
-    fullName: Excel.Interfaces.PivotLayoutUpdateData
+    name: Interfaces.PivotLayoutUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell~0:complex'
@@ -705,8 +695,7 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.SortBy:enum'
-    name: SortBy
-    fullName: Excel.SortBy
+    name: Excel.SortBy
   - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell~1:complex'
     name: Range | string
     fullName: Excel.Range | string
@@ -726,5 +715,4 @@ references:
       - name: ' | "AtTop" | "AtBottom" | "Off"'
         fullName: ' | "AtTop" | "AtBottom" | "Off"'
   - uid: 'excel!Excel.Interfaces.PivotLayoutData:interface'
-    name: PivotLayoutData
-    fullName: Excel.Interfaces.PivotLayoutData
+    name: Excel.Interfaces.PivotLayoutData

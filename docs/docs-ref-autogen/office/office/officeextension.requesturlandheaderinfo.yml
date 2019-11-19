@@ -2,11 +2,10 @@
 items:
   - uid: 'office!OfficeExtension.RequestUrlAndHeaderInfo:interface'
     summary: Request URL and headers
-    name: RequestUrlAndHeaderInfo
+    name: OfficeExtension.RequestUrlAndHeaderInfo
     fullName: OfficeExtension.RequestUrlAndHeaderInfo
     langs:
       - typeScript
-    namespace: 'office!OfficeExtension:namespace'
     type: interface
     package: office!
     children:

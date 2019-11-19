@@ -5,16 +5,13 @@ items:
       Represents a collection of InkAnalysisParagraph objects.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: InkAnalysisParagraphCollection
+    name: OneNote.InkAnalysisParagraphCollection
     fullName: OneNote.InkAnalysisParagraphCollection
     langs:
       - typeScript
-    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.InkAnalysisParagraphCollection#context:member'
@@ -248,10 +245,8 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
-    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.InkAnalysisParagraph:class'
-    name: InkAnalysisParagraph
-    fullName: OneNote.InkAnalysisParagraph
+    name: OneNote.InkAnalysisParagraph
   - uid: 'onenote!OneNote.InkAnalysisParagraphCollection#items~0:complex'
     name: 'OneNote.InkAnalysisParagraph[]'
     fullName: 'OneNote.InkAnalysisParagraph[]'
@@ -262,8 +257,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'onenote!OneNote.InkAnalysisParagraphCollection:class'
-    name: InkAnalysisParagraphCollection
-    fullName: OneNote.InkAnalysisParagraphCollection
+    name: OneNote.InkAnalysisParagraphCollection
   - uid: 'onenote!OneNote.InkAnalysisParagraphCollection#load~0:complex'
     name: OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
     fullName: OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
@@ -279,5 +273,4 @@ references:
   - uid: 'onenote!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionData:interface'
-    name: InkAnalysisParagraphCollectionData
-    fullName: OneNote.Interfaces.InkAnalysisParagraphCollectionData
+    name: OneNote.Interfaces.InkAnalysisParagraphCollectionData

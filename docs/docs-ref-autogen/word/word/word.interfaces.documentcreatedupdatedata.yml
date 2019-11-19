@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the DocumentCreated object, for use in "documentCreated.set(<!-- -->{ ... }<!--
       -->)".
-    name: DocumentCreatedUpdateData
+    name: Word.Interfaces.DocumentCreatedUpdateData
     fullName: Word.Interfaces.DocumentCreatedUpdateData
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -53,8 +52,6 @@ items:
           - 'word!Word.Interfaces.DocumentPropertiesUpdateData:interface'
 references:
   - uid: 'word!Word.Interfaces.BodyUpdateData:interface'
-    name: BodyUpdateData
-    fullName: Word.Interfaces.BodyUpdateData
+    name: Word.Interfaces.BodyUpdateData
   - uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData:interface'
-    name: DocumentPropertiesUpdateData
-    fullName: Word.Interfaces.DocumentPropertiesUpdateData
+    name: Word.Interfaces.DocumentPropertiesUpdateData

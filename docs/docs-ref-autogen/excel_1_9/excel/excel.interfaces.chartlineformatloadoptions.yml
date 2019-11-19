@@ -5,11 +5,10 @@ items:
       Encapsulates the formatting options for line elements.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartLineFormatLoadOptions
+    name: Excel.Interfaces.ChartLineFormatLoadOptions
     fullName: Excel.Interfaces.ChartLineFormatLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

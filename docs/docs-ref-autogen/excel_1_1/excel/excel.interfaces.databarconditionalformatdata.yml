@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData:interface'
     summary: An interface describing the data returned by calling `dataBarConditionalFormat.toJSON()`<!-- -->.
-    name: DataBarConditionalFormatData
+    name: Excel.Interfaces.DataBarConditionalFormatData
     fullName: Excel.Interfaces.DataBarConditionalFormatData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

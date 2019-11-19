@@ -5,16 +5,13 @@ items:
       Represents ink analysis data for an identified word formed by ink strokes.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: InkAnalysisWord
+    name: OneNote.InkAnalysisWord
     fullName: OneNote.InkAnalysisWord
     langs:
       - typeScript
-    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.InkAnalysisWord#context:member'
@@ -346,19 +343,14 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
-    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.InkAnalysisLine:class'
-    name: InkAnalysisLine
-    fullName: OneNote.InkAnalysisLine
+    name: OneNote.InkAnalysisLine
   - uid: 'onenote!OneNote.InkAnalysisWord:class'
-    name: InkAnalysisWord
-    fullName: OneNote.InkAnalysisWord
+    name: OneNote.InkAnalysisWord
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions:interface'
-    name: InkAnalysisWordLoadOptions
-    fullName: OneNote.Interfaces.InkAnalysisWordLoadOptions
+    name: OneNote.Interfaces.InkAnalysisWordLoadOptions
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordUpdateData:interface'
-    name: InkAnalysisWordUpdateData
-    fullName: OneNote.Interfaces.InkAnalysisWordUpdateData
+    name: Interfaces.InkAnalysisWordUpdateData
   - uid: 'onenote!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'onenote!OneNote.InkAnalysisWord#strokePointers~0:complex'
@@ -371,5 +363,4 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordData:interface'
-    name: InkAnalysisWordData
-    fullName: OneNote.Interfaces.InkAnalysisWordData
+    name: OneNote.Interfaces.InkAnalysisWordData

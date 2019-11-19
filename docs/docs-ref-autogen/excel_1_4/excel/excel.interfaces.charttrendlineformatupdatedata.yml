@@ -4,10 +4,9 @@ items:
     summary: >-
       An interface for updating data on the ChartTrendlineFormat object, for use in `chartTrendlineFormat.set({ ...
       })`<!-- -->.
-    name: ChartTrendlineFormatUpdateData
+    name: Excel.Interfaces.ChartTrendlineFormatUpdateData
     fullName: Excel.Interfaces.ChartTrendlineFormatUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

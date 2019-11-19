@@ -5,11 +5,10 @@ items:
       Represents formatting object for chart points.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartPointFormatLoadOptions
+    name: Excel.Interfaces.ChartPointFormatLoadOptions
     fullName: Excel.Interfaces.ChartPointFormatLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -46,5 +45,4 @@ items:
           - 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
-    name: ChartBorderLoadOptions
-    fullName: Excel.Interfaces.ChartBorderLoadOptions
+    name: Excel.Interfaces.ChartBorderLoadOptions

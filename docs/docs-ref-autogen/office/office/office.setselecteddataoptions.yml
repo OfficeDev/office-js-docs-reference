@@ -2,11 +2,10 @@
 items:
   - uid: 'office!Office.SetSelectedDataOptions:interface'
     summary: Provides options for how to insert data to the selection.
-    name: SetSelectedDataOptions
+    name: Office.SetSelectedDataOptions
     fullName: Office.SetSelectedDataOptions
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:

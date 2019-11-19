@@ -10,16 +10,13 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Range
+    name: Excel.Range
     fullName: Excel.Range
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Range#address:member'
@@ -3535,8 +3532,7 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.AutoFillType:enum'
-    name: AutoFillType
-    fullName: Excel.AutoFillType
+    name: Excel.AutoFillType
   - uid: 'excel!Excel.Range#autoFill~1:complex'
     name: Range | string
     fullName: Excel.Range | string
@@ -3547,14 +3543,11 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.ClearApplyTo:enum'
-    name: ClearApplyTo
-    fullName: Excel.ClearApplyTo
+    name: Excel.ClearApplyTo
   - uid: 'excel!Excel.ConditionalFormatCollection:class'
-    name: ConditionalFormatCollection
-    fullName: Excel.ConditionalFormatCollection
+    name: Excel.ConditionalFormatCollection
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Range#copyFrom~0:complex'
     name: Range | RangeAreas | string
     fullName: Excel.Range | Excel.RangeAreas | string
@@ -3570,8 +3563,7 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.RangeCopyType:enum'
-    name: RangeCopyType
-    fullName: Excel.RangeCopyType
+    name: Excel.RangeCopyType
   - uid: 'excel!Excel.Range#copyFrom~1:complex'
     name: Range | RangeAreas | string
     fullName: Excel.Range | Excel.RangeAreas | string
@@ -3587,20 +3579,15 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.DataValidation:class'
-    name: DataValidation
-    fullName: Excel.DataValidation
+    name: Excel.DataValidation
   - uid: 'excel!Excel.DeleteShiftDirection:enum'
-    name: DeleteShiftDirection
-    fullName: Excel.DeleteShiftDirection
+    name: Excel.DeleteShiftDirection
   - uid: 'excel!Excel.Range:class'
-    name: Range
-    fullName: Excel.Range
+    name: Excel.Range
   - uid: 'excel!Excel.SearchCriteria:interface'
-    name: SearchCriteria
-    fullName: Excel.SearchCriteria
+    name: Excel.SearchCriteria
   - uid: 'excel!Excel.RangeFormat:class'
-    name: RangeFormat
-    fullName: Excel.RangeFormat
+    name: Excel.RangeFormat
   - uid: 'excel!Excel.Range#getBoundingRect~0:complex'
     name: Range | string
     fullName: Excel.Range | string
@@ -3626,7 +3613,6 @@ references:
         fullName: '[][]>'
   - uid: 'excel!Excel.CellPropertiesLoadOptions:interface'
     name: CellPropertiesLoadOptions
-    fullName: Excel.CellPropertiesLoadOptions
   - uid: 'excel!Excel.Range#getColumnProperties~0:complex'
     name: 'OfficeExtension.ClientResult<ColumnProperties[]>'
     fullName: 'OfficeExtension.ClientResult<Excel.ColumnProperties[]>'
@@ -3643,7 +3629,6 @@ references:
         fullName: '[]>'
   - uid: 'excel!Excel.ColumnPropertiesLoadOptions:interface'
     name: ColumnPropertiesLoadOptions
-    fullName: Excel.ColumnPropertiesLoadOptions
   - uid: 'excel!Excel.Range#getImage~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -3687,31 +3672,22 @@ references:
         fullName: '[]>'
   - uid: 'excel!Excel.RowPropertiesLoadOptions:interface'
     name: RowPropertiesLoadOptions
-    fullName: Excel.RowPropertiesLoadOptions
   - uid: 'excel!Excel.RangeAreas:class'
-    name: RangeAreas
-    fullName: Excel.RangeAreas
+    name: Excel.RangeAreas
   - uid: 'excel!Excel.SpecialCellType:enum'
-    name: SpecialCellType
-    fullName: Excel.SpecialCellType
+    name: Excel.SpecialCellType
   - uid: 'excel!Excel.SpecialCellValueType:enum'
-    name: SpecialCellValueType
-    fullName: Excel.SpecialCellValueType
+    name: Excel.SpecialCellValueType
   - uid: 'excel!Excel.TableScopedCollection:class'
-    name: TableScopedCollection
-    fullName: Excel.TableScopedCollection
+    name: Excel.TableScopedCollection
   - uid: 'excel!Excel.RangeView:class'
-    name: RangeView
-    fullName: Excel.RangeView
+    name: Excel.RangeView
   - uid: 'excel!Excel.GroupOption:enum'
-    name: GroupOption
-    fullName: Excel.GroupOption
+    name: Excel.GroupOption
   - uid: 'excel!Excel.RangeHyperlink:interface'
-    name: RangeHyperlink
-    fullName: Excel.RangeHyperlink
+    name: Excel.RangeHyperlink
   - uid: 'excel!Excel.InsertShiftDirection:enum'
-    name: InsertShiftDirection
-    fullName: Excel.InsertShiftDirection
+    name: Excel.InsertShiftDirection
   - uid: 'excel!Excel.Range#linkedDataTypeState~0:complex'
     name: 'Excel.LinkedDataTypeState[][]'
     fullName: 'Excel.LinkedDataTypeState[][]'
@@ -3722,8 +3698,7 @@ references:
       - name: '[][]'
         fullName: '[][]'
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions:interface'
-    name: RangeLoadOptions
-    fullName: Excel.Interfaces.RangeLoadOptions
+    name: Excel.Interfaces.RangeLoadOptions
   - uid: 'excel!Excel.Range#moveTo~0:complex'
     name: Range | string
     fullName: Excel.Range | string
@@ -3734,8 +3709,7 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.RemoveDuplicatesResult:class'
-    name: RemoveDuplicatesResult
-    fullName: Excel.RemoveDuplicatesResult
+    name: Excel.RemoveDuplicatesResult
   - uid: 'excel!Excel.Range#replaceAll~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -3746,11 +3720,9 @@ references:
       - name: <number>
         fullName: <number>
   - uid: 'excel!Excel.ReplaceCriteria:interface'
-    name: ReplaceCriteria
-    fullName: Excel.ReplaceCriteria
+    name: Excel.ReplaceCriteria
   - uid: 'excel!Excel.Interfaces.RangeUpdateData:interface'
-    name: RangeUpdateData
-    fullName: Excel.Interfaces.RangeUpdateData
+    name: Interfaces.RangeUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Range#setCellProperties~0:complex'
@@ -3781,11 +3753,9 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.RangeSort:class'
-    name: RangeSort
-    fullName: Excel.RangeSort
+    name: Excel.RangeSort
   - uid: 'excel!Excel.Interfaces.RangeData:interface'
-    name: RangeData
-    fullName: Excel.Interfaces.RangeData
+    name: Excel.Interfaces.RangeData
   - uid: 'excel!Excel.Range#valueTypes~0:complex'
     name: 'Excel.RangeValueType[][]'
     fullName: 'Excel.RangeValueType[][]'
@@ -3796,5 +3766,4 @@ references:
       - name: '[][]'
         fullName: '[][]'
   - uid: 'excel!Excel.Worksheet:class'
-    name: Worksheet
-    fullName: Excel.Worksheet
+    name: Excel.Worksheet

@@ -4,11 +4,10 @@ items:
     summary: >-
       \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
       Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: NamedItemType
+    name: Excel.NamedItemType
     fullName: Excel.NamedItemType
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

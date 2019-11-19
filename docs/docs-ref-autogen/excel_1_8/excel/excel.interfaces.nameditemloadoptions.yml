@@ -8,11 +8,10 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: NamedItemLoadOptions
+    name: Excel.Interfaces.NamedItemLoadOptions
     fullName: Excel.Interfaces.NamedItemLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -201,8 +200,6 @@ items:
           - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions:interface'
-    name: NamedItemArrayValuesLoadOptions
-    fullName: Excel.Interfaces.NamedItemArrayValuesLoadOptions
+    name: Excel.Interfaces.NamedItemArrayValuesLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
-    name: WorksheetLoadOptions
-    fullName: Excel.Interfaces.WorksheetLoadOptions
+    name: Excel.Interfaces.WorksheetLoadOptions

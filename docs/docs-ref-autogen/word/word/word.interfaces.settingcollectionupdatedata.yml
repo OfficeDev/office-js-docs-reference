@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the SettingCollection object, for use in "settingCollection.set(<!-- -->{ ...
       }<!-- -->)".
-    name: SettingCollectionUpdateData
+    name: Word.Interfaces.SettingCollectionUpdateData
     fullName: Word.Interfaces.SettingCollectionUpdateData
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.CustomPropertyData:interface'
     summary: An interface describing the data returned by calling `customProperty.toJSON()`<!-- -->.
-    name: CustomPropertyData
+    name: Excel.Interfaces.CustomPropertyData
     fullName: Excel.Interfaces.CustomPropertyData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

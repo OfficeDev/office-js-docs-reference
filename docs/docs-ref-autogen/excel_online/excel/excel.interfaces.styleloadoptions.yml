@@ -5,11 +5,10 @@ items:
       An object encapsulating a style's format and other properties.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: StyleLoadOptions
+    name: Excel.Interfaces.StyleLoadOptions
     fullName: Excel.Interfaces.StyleLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -404,11 +403,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface'
-    name: RangeBorderCollectionLoadOptions
-    fullName: Excel.Interfaces.RangeBorderCollectionLoadOptions
+    name: Excel.Interfaces.RangeBorderCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.RangeFillLoadOptions:interface'
-    name: RangeFillLoadOptions
-    fullName: Excel.Interfaces.RangeFillLoadOptions
+    name: Excel.Interfaces.RangeFillLoadOptions
   - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions:interface'
-    name: RangeFontLoadOptions
-    fullName: Excel.Interfaces.RangeFontLoadOptions
+    name: Excel.Interfaces.RangeFontLoadOptions

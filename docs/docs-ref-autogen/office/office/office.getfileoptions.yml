@@ -2,11 +2,10 @@
 items:
   - uid: 'office!Office.GetFileOptions:interface'
     summary: Provides options for setting the size of slices that the document will be divided into.
-    name: GetFileOptions
+    name: Office.GetFileOptions
     fullName: Office.GetFileOptions
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:

@@ -7,16 +7,13 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Chart
+    name: Excel.Chart
     fullName: Excel.Chart
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Chart#activate:member(1)'
@@ -961,8 +958,7 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ChartAxes:class'
-    name: ChartAxes
-    fullName: Excel.ChartAxes
+    name: Excel.ChartAxes
   - uid: 'excel!Excel.Chart#chartType~0:complex'
     name: >-
       Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" |
@@ -1002,10 +998,8 @@ references:
         fullName: ' | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartDataLabels:class'
-    name: ChartDataLabels
-    fullName: Excel.ChartDataLabels
+    name: Excel.ChartDataLabels
   - uid: 'excel!Excel.Chart#displayBlanksAs~0:complex'
     name: Excel.ChartDisplayBlanksAs | "NotPlotted" | "Zero" | "Interplotted"
     fullName: Excel.ChartDisplayBlanksAs | "NotPlotted" | "Zero" | "Interplotted"
@@ -1016,8 +1010,7 @@ references:
       - name: ' | "NotPlotted" | "Zero" | "Interplotted"'
         fullName: ' | "NotPlotted" | "Zero" | "Interplotted"'
   - uid: 'excel!Excel.ChartAreaFormat:class'
-    name: ChartAreaFormat
-    fullName: Excel.ChartAreaFormat
+    name: Excel.ChartAreaFormat
   - uid: 'excel!Excel.Chart#getImage~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -1028,8 +1021,7 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'excel!Excel.ImageFittingMode:enum'
-    name: ImageFittingMode
-    fullName: Excel.ImageFittingMode
+    name: Excel.ImageFittingMode
   - uid: 'excel!Excel.Chart#getImage~1:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -1040,14 +1032,11 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'excel!Excel.ChartLegend:class'
-    name: ChartLegend
-    fullName: Excel.ChartLegend
+    name: Excel.ChartLegend
   - uid: 'excel!Excel.Chart:class'
-    name: Chart
-    fullName: Excel.Chart
+    name: Excel.Chart
   - uid: 'excel!Excel.Interfaces.ChartLoadOptions:interface'
-    name: ChartLoadOptions
-    fullName: Excel.Interfaces.ChartLoadOptions
+    name: Excel.Interfaces.ChartLoadOptions
   - uid: 'excel!Excel.Chart#onActivated~0:complex'
     name: OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>
@@ -1077,11 +1066,9 @@ references:
       - name: '>'
         fullName: '>'
   - uid: 'excel!Excel.ChartPivotOptions:class'
-    name: ChartPivotOptions
-    fullName: Excel.ChartPivotOptions
+    name: Excel.ChartPivotOptions
   - uid: 'excel!Excel.ChartPlotArea:class'
-    name: ChartPlotArea
-    fullName: Excel.ChartPlotArea
+    name: Excel.ChartPlotArea
   - uid: 'excel!Excel.Chart#plotBy~0:complex'
     name: Excel.ChartPlotBy | "Rows" | "Columns"
     fullName: Excel.ChartPlotBy | "Rows" | "Columns"
@@ -1092,19 +1079,15 @@ references:
       - name: ' | "Rows" | "Columns"'
         fullName: ' | "Rows" | "Columns"'
   - uid: 'excel!Excel.ChartSeriesCollection:class'
-    name: ChartSeriesCollection
-    fullName: Excel.ChartSeriesCollection
+    name: Excel.ChartSeriesCollection
   - uid: 'excel!Excel.Interfaces.ChartUpdateData:interface'
-    name: ChartUpdateData
-    fullName: Excel.Interfaces.ChartUpdateData
+    name: Interfaces.ChartUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Range:class'
     name: Range
-    fullName: Excel.Range
   - uid: 'excel!Excel.ChartSeriesBy:enum'
-    name: ChartSeriesBy
-    fullName: Excel.ChartSeriesBy
+    name: Excel.ChartSeriesBy
   - uid: 'excel!Excel.Chart#setPosition~0:complex'
     name: Range | string
     fullName: Excel.Range | string
@@ -1124,11 +1107,8 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.ChartTitle:class'
-    name: ChartTitle
-    fullName: Excel.ChartTitle
+    name: Excel.ChartTitle
   - uid: 'excel!Excel.Interfaces.ChartData:interface'
-    name: ChartData
-    fullName: Excel.Interfaces.ChartData
+    name: Excel.Interfaces.ChartData
   - uid: 'excel!Excel.Worksheet:class'
-    name: Worksheet
-    fullName: Excel.Worksheet
+    name: Excel.Worksheet

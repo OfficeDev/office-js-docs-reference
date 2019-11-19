@@ -5,16 +5,13 @@ items:
       Represents the results from the removeDuplicates method on range
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: RemoveDuplicatesResult
+    name: Excel.RemoveDuplicatesResult
     fullName: Excel.RemoveDuplicatesResult
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.RemoveDuplicatesResult#context:member'
@@ -179,13 +176,9 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.RemoveDuplicatesResult:class'
-    name: RemoveDuplicatesResult
-    fullName: Excel.RemoveDuplicatesResult
+    name: Excel.RemoveDuplicatesResult
   - uid: 'excel!Excel.Interfaces.RemoveDuplicatesResultLoadOptions:interface'
-    name: RemoveDuplicatesResultLoadOptions
-    fullName: Excel.Interfaces.RemoveDuplicatesResultLoadOptions
+    name: Excel.Interfaces.RemoveDuplicatesResultLoadOptions
   - uid: 'excel!Excel.Interfaces.RemoveDuplicatesResultData:interface'
-    name: RemoveDuplicatesResultData
-    fullName: Excel.Interfaces.RemoveDuplicatesResultData
+    name: Excel.Interfaces.RemoveDuplicatesResultData

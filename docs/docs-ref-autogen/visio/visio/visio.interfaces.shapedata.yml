@@ -2,11 +2,10 @@
 items:
   - uid: 'visio!Visio.Interfaces.ShapeData:interface'
     summary: An interface describing the data returned by calling "shape.toJSON()".
-    name: ShapeData
+    name: Visio.Interfaces.ShapeData
     fullName: Visio.Interfaces.ShapeData
     langs:
       - typeScript
-    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:
@@ -192,5 +191,4 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'visio!Visio.Interfaces.ShapeViewData:interface'
-    name: ShapeViewData
-    fullName: Visio.Interfaces.ShapeViewData
+    name: Visio.Interfaces.ShapeViewData

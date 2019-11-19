@@ -5,11 +5,10 @@ items:
       Represents the Application.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: ApplicationLoadOptions
+    name: Visio.Interfaces.ApplicationLoadOptions
     fullName: Visio.Interfaces.ApplicationLoadOptions
     langs:
       - typeScript
-    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:

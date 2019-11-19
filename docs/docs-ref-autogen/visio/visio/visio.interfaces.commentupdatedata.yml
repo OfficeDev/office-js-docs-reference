@@ -2,11 +2,10 @@
 items:
   - uid: 'visio!Visio.Interfaces.CommentUpdateData:interface'
     summary: 'An interface for updating data on the Comment object, for use in "comment.set(<!-- -->{ ... }<!-- -->)".'
-    name: CommentUpdateData
+    name: Visio.Interfaces.CommentUpdateData
     fullName: Visio.Interfaces.CommentUpdateData
     langs:
       - typeScript
-    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:

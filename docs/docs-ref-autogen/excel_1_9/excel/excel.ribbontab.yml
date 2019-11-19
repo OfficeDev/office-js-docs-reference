@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.RibbonTab:enum'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: RibbonTab
+    name: Excel.RibbonTab
     fullName: Excel.RibbonTab
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

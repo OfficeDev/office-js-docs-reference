@@ -5,11 +5,10 @@ items:
       This object represents the attributes for a chart's error bars.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartErrorBarsLoadOptions
+    name: Excel.Interfaces.ChartErrorBarsLoadOptions
     fullName: Excel.Interfaces.ChartErrorBarsLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -110,5 +109,4 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions:interface'
-    name: ChartErrorBarsFormatLoadOptions
-    fullName: Excel.Interfaces.ChartErrorBarsFormatLoadOptions
+    name: Excel.Interfaces.ChartErrorBarsFormatLoadOptions

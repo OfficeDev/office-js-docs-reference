@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.NumberFormatInfoData:interface'
     summary: An interface describing the data returned by calling `numberFormatInfo.toJSON()`<!-- -->.
-    name: NumberFormatInfoData
+    name: Excel.Interfaces.NumberFormatInfoData
     fullName: Excel.Interfaces.NumberFormatInfoData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

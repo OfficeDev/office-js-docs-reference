@@ -5,16 +5,13 @@ items:
       Represents the border of an object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: RangeBorder
+    name: Excel.RangeBorder
     fullName: Excel.RangeBorder
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.RangeBorder#color:member'
@@ -297,16 +294,12 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.RangeBorder:class'
-    name: RangeBorder
-    fullName: Excel.RangeBorder
+    name: Excel.RangeBorder
   - uid: 'excel!Excel.Interfaces.RangeBorderLoadOptions:interface'
-    name: RangeBorderLoadOptions
-    fullName: Excel.Interfaces.RangeBorderLoadOptions
+    name: Excel.Interfaces.RangeBorderLoadOptions
   - uid: 'excel!Excel.Interfaces.RangeBorderUpdateData:interface'
-    name: RangeBorderUpdateData
-    fullName: Excel.Interfaces.RangeBorderUpdateData
+    name: Interfaces.RangeBorderUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.RangeBorder#sideIndex~0:complex'
@@ -336,8 +329,7 @@ references:
       - name: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot"'
         fullName: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot"'
   - uid: 'excel!Excel.Interfaces.RangeBorderData:interface'
-    name: RangeBorderData
-    fullName: Excel.Interfaces.RangeBorderData
+    name: Excel.Interfaces.RangeBorderData
   - uid: 'excel!Excel.RangeBorder#weight~0:complex'
     name: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick"
     fullName: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick"

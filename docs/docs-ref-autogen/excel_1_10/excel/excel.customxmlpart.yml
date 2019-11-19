@@ -5,16 +5,13 @@ items:
       Represents a custom XML part object in a workbook.
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: CustomXmlPart
+    name: Excel.CustomXmlPart
     fullName: Excel.CustomXmlPart
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.CustomXmlPart#context:member'
@@ -326,7 +323,6 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.CustomXmlPart#getXml~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -337,11 +333,8 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'excel!Excel.CustomXmlPart:class'
-    name: CustomXmlPart
-    fullName: Excel.CustomXmlPart
+    name: Excel.CustomXmlPart
   - uid: 'excel!Excel.Interfaces.CustomXmlPartLoadOptions:interface'
-    name: CustomXmlPartLoadOptions
-    fullName: Excel.Interfaces.CustomXmlPartLoadOptions
+    name: Excel.Interfaces.CustomXmlPartLoadOptions
   - uid: 'excel!Excel.Interfaces.CustomXmlPartData:interface'
-    name: CustomXmlPartData
-    fullName: Excel.Interfaces.CustomXmlPartData
+    name: Excel.Interfaces.CustomXmlPartData

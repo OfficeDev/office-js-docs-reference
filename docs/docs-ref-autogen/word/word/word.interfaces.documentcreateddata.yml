@@ -2,11 +2,10 @@
 items:
   - uid: 'word!Word.Interfaces.DocumentCreatedData:interface'
     summary: An interface describing the data returned by calling "documentCreated.toJSON()".
-    name: DocumentCreatedData
+    name: Word.Interfaces.DocumentCreatedData
     fullName: Word.Interfaces.DocumentCreatedData
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -148,8 +147,7 @@ items:
           - 'word!Word.Interfaces.DocumentCreatedData#settings~0:complex'
 references:
   - uid: 'word!Word.Interfaces.BodyData:interface'
-    name: BodyData
-    fullName: Word.Interfaces.BodyData
+    name: Word.Interfaces.BodyData
   - uid: 'word!Word.Interfaces.DocumentCreatedData#contentControls~0:complex'
     name: 'Word.Interfaces.ContentControlData[]'
     fullName: 'Word.Interfaces.ContentControlData[]'
@@ -169,8 +167,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.Interfaces.DocumentPropertiesData:interface'
-    name: DocumentPropertiesData
-    fullName: Word.Interfaces.DocumentPropertiesData
+    name: Word.Interfaces.DocumentPropertiesData
   - uid: 'word!Word.Interfaces.DocumentCreatedData#sections~0:complex'
     name: 'Word.Interfaces.SectionData[]'
     fullName: 'Word.Interfaces.SectionData[]'

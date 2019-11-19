@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.RangeAreasUpdateData:interface'
     summary: 'An interface for updating data on the RangeAreas object, for use in `rangeAreas.set({ ... })`<!-- -->.'
-    name: RangeAreasUpdateData
+    name: Excel.Interfaces.RangeAreasUpdateData
     fullName: Excel.Interfaces.RangeAreasUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

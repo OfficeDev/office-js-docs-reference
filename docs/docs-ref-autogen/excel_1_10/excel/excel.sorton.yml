@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.SortOn:enum'
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: SortOn
+    name: Excel.SortOn
     fullName: Excel.SortOn
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

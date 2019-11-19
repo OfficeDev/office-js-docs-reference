@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the PivotFieldCollection object, for use in `pivotFieldCollection.set({ ...
       })`<!-- -->.
-    name: PivotFieldCollectionUpdateData
+    name: Excel.Interfaces.PivotFieldCollectionUpdateData
     fullName: Excel.Interfaces.PivotFieldCollectionUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

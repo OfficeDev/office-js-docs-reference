@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartGridlinesData:interface'
     summary: An interface describing the data returned by calling `chartGridlines.toJSON()`<!-- -->.
-    name: ChartGridlinesData
+    name: Excel.Interfaces.ChartGridlinesData
     fullName: Excel.Interfaces.ChartGridlinesData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -44,5 +43,4 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartGridlinesFormatData:interface'
-    name: ChartGridlinesFormatData
-    fullName: Excel.Interfaces.ChartGridlinesFormatData
+    name: Excel.Interfaces.ChartGridlinesFormatData

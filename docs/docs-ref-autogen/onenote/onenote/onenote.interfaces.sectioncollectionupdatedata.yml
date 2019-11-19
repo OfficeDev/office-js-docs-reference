@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the SectionCollection object, for use in "sectionCollection.set(<!-- -->{ ...
       }<!-- -->)".
-    name: SectionCollectionUpdateData
+    name: OneNote.Interfaces.SectionCollectionUpdateData
     fullName: OneNote.Interfaces.SectionCollectionUpdateData
     langs:
       - typeScript
-    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:

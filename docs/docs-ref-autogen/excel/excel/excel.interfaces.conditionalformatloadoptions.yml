@@ -8,11 +8,10 @@ items:
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ConditionalFormatLoadOptions
+    name: Excel.Interfaces.ConditionalFormatLoadOptions
     fullName: Excel.Interfaces.ConditionalFormatLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -372,26 +371,18 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions:interface'
-    name: CellValueConditionalFormatLoadOptions
-    fullName: Excel.Interfaces.CellValueConditionalFormatLoadOptions
+    name: Excel.Interfaces.CellValueConditionalFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions:interface'
-    name: ColorScaleConditionalFormatLoadOptions
-    fullName: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
+    name: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.CustomConditionalFormatLoadOptions:interface'
-    name: CustomConditionalFormatLoadOptions
-    fullName: Excel.Interfaces.CustomConditionalFormatLoadOptions
+    name: Excel.Interfaces.CustomConditionalFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatLoadOptions:interface'
-    name: DataBarConditionalFormatLoadOptions
-    fullName: Excel.Interfaces.DataBarConditionalFormatLoadOptions
+    name: Excel.Interfaces.DataBarConditionalFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface'
-    name: IconSetConditionalFormatLoadOptions
-    fullName: Excel.Interfaces.IconSetConditionalFormatLoadOptions
+    name: Excel.Interfaces.IconSetConditionalFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions:interface'
-    name: PresetCriteriaConditionalFormatLoadOptions
-    fullName: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
+    name: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.TextConditionalFormatLoadOptions:interface'
-    name: TextConditionalFormatLoadOptions
-    fullName: Excel.Interfaces.TextConditionalFormatLoadOptions
+    name: Excel.Interfaces.TextConditionalFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatLoadOptions:interface'
-    name: TopBottomConditionalFormatLoadOptions
-    fullName: Excel.Interfaces.TopBottomConditionalFormatLoadOptions
+    name: Excel.Interfaces.TopBottomConditionalFormatLoadOptions

@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.StyleCollectionUpdateData:interface'
     summary: 'An interface for updating data on the StyleCollection object, for use in `styleCollection.set({ ... })`<!-- -->.'
-    name: StyleCollectionUpdateData
+    name: Excel.Interfaces.StyleCollectionUpdateData
     fullName: Excel.Interfaces.StyleCollectionUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

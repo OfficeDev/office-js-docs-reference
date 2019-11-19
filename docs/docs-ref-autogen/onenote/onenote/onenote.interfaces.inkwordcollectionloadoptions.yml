@@ -5,11 +5,10 @@ items:
       Represents a collection of InkWord objects.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: InkWordCollectionLoadOptions
+    name: OneNote.Interfaces.InkWordCollectionLoadOptions
     fullName: OneNote.Interfaces.InkWordCollectionLoadOptions
     langs:
       - typeScript
-    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -93,5 +92,4 @@ items:
           - boolean
 references:
   - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
-    name: ParagraphLoadOptions
-    fullName: OneNote.Interfaces.ParagraphLoadOptions
+    name: OneNote.Interfaces.ParagraphLoadOptions

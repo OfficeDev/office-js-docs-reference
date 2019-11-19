@@ -5,11 +5,10 @@ items:
       Provides information about the worksheet that raised the Added event.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: WorksheetAddedEventArgs
+    name: Excel.WorksheetAddedEventArgs
     fullName: Excel.WorksheetAddedEventArgs
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

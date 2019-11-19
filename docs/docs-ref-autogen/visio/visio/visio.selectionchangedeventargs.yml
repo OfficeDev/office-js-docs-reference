@@ -5,11 +5,10 @@ items:
       Provides information about the shape collection that raised the SelectionChanged event.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: SelectionChangedEventArgs
+    name: Visio.SelectionChangedEventArgs
     fullName: Visio.SelectionChangedEventArgs
     langs:
       - typeScript
-    namespace: 'visio!Visio:namespace'
     type: interface
     package: visio!
     remarks: |-

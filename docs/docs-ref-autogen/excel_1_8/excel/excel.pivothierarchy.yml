@@ -5,16 +5,13 @@ items:
       Represents the Excel PivotHierarchy.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: PivotHierarchy
+    name: Excel.PivotHierarchy
     fullName: Excel.PivotHierarchy
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PivotHierarchy#context:member'
@@ -227,21 +224,15 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.PivotFieldCollection:class'
-    name: PivotFieldCollection
-    fullName: Excel.PivotFieldCollection
+    name: Excel.PivotFieldCollection
   - uid: 'excel!Excel.PivotHierarchy:class'
-    name: PivotHierarchy
-    fullName: Excel.PivotHierarchy
+    name: Excel.PivotHierarchy
   - uid: 'excel!Excel.Interfaces.PivotHierarchyLoadOptions:interface'
-    name: PivotHierarchyLoadOptions
-    fullName: Excel.Interfaces.PivotHierarchyLoadOptions
+    name: Excel.Interfaces.PivotHierarchyLoadOptions
   - uid: 'excel!Excel.Interfaces.PivotHierarchyUpdateData:interface'
-    name: PivotHierarchyUpdateData
-    fullName: Excel.Interfaces.PivotHierarchyUpdateData
+    name: Interfaces.PivotHierarchyUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.PivotHierarchyData:interface'
-    name: PivotHierarchyData
-    fullName: Excel.Interfaces.PivotHierarchyData
+    name: Excel.Interfaces.PivotHierarchyData

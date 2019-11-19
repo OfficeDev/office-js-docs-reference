@@ -18,11 +18,10 @@ items:
       In Word: `Office.SelectionMode.Selected` selects all content in the binding. `Office.SelectionMode.None` for text
       bindings, moves the cursor to the beginning of the text; for matrix bindings and table bindings, selects the first
       data cell (not first cell in header row for tables).
-    name: GoToByIdOptions
+    name: Office.GoToByIdOptions
     fullName: Office.GoToByIdOptions
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:

@@ -5,11 +5,10 @@ items:
       Represents the Excel Runtime class.
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: RuntimeLoadOptions
+    name: Excel.Interfaces.RuntimeLoadOptions
     fullName: Excel.Interfaces.RuntimeLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

@@ -5,11 +5,10 @@ items:
       Provides information about the table that raised the Changed event.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: TableChangedEventArgs
+    name: Excel.TableChangedEventArgs
     fullName: Excel.TableChangedEventArgs
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

@@ -5,16 +5,13 @@ items:
       Encapsulates the format properties for the chart data labels.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartDataLabelFormat
+    name: Excel.ChartDataLabelFormat
     fullName: Excel.ChartDataLabelFormat
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartDataLabelFormat#context:member'
@@ -211,24 +208,17 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartFill:class'
-    name: ChartFill
-    fullName: Excel.ChartFill
+    name: Excel.ChartFill
   - uid: 'excel!Excel.ChartFont:class'
-    name: ChartFont
-    fullName: Excel.ChartFont
+    name: Excel.ChartFont
   - uid: 'excel!Excel.ChartDataLabelFormat:class'
-    name: ChartDataLabelFormat
-    fullName: Excel.ChartDataLabelFormat
+    name: Excel.ChartDataLabelFormat
   - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface'
-    name: ChartDataLabelFormatLoadOptions
-    fullName: Excel.Interfaces.ChartDataLabelFormatLoadOptions
+    name: Excel.Interfaces.ChartDataLabelFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatUpdateData:interface'
-    name: ChartDataLabelFormatUpdateData
-    fullName: Excel.Interfaces.ChartDataLabelFormatUpdateData
+    name: Interfaces.ChartDataLabelFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatData:interface'
-    name: ChartDataLabelFormatData
-    fullName: Excel.Interfaces.ChartDataLabelFormatData
+    name: Excel.Interfaces.ChartDataLabelFormatData

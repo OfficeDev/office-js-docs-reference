@@ -4,10 +4,9 @@ items:
     summary: >-
       An interface for updating data on the ChartErrorBarsFormat object, for use in `chartErrorBarsFormat.set({ ...
       })`<!-- -->.
-    name: ChartErrorBarsFormatUpdateData
+    name: Excel.Interfaces.ChartErrorBarsFormatUpdateData
     fullName: Excel.Interfaces.ChartErrorBarsFormatUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

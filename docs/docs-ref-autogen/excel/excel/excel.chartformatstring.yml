@@ -7,16 +7,13 @@ items:
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartFormatString
+    name: Excel.ChartFormatString
     fullName: Excel.ChartFormatString
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartFormatString#context:member'
@@ -197,21 +194,15 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartFont:class'
-    name: ChartFont
-    fullName: Excel.ChartFont
+    name: Excel.ChartFont
   - uid: 'excel!Excel.ChartFormatString:class'
-    name: ChartFormatString
-    fullName: Excel.ChartFormatString
+    name: Excel.ChartFormatString
   - uid: 'excel!Excel.Interfaces.ChartFormatStringLoadOptions:interface'
-    name: ChartFormatStringLoadOptions
-    fullName: Excel.Interfaces.ChartFormatStringLoadOptions
+    name: Excel.Interfaces.ChartFormatStringLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartFormatStringUpdateData:interface'
-    name: ChartFormatStringUpdateData
-    fullName: Excel.Interfaces.ChartFormatStringUpdateData
+    name: Interfaces.ChartFormatStringUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartFormatStringData:interface'
-    name: ChartFormatStringData
-    fullName: Excel.Interfaces.ChartFormatStringData
+    name: Excel.Interfaces.ChartFormatStringData

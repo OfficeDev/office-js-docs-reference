@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.PivotFieldData:interface'
     summary: An interface describing the data returned by calling `pivotField.toJSON()`<!-- -->.
-    name: PivotFieldData
+    name: Excel.Interfaces.PivotFieldData
     fullName: Excel.Interfaces.PivotFieldData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -101,5 +100,4 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Subtotals:interface'
-    name: Subtotals
-    fullName: Excel.Subtotals
+    name: Excel.Subtotals

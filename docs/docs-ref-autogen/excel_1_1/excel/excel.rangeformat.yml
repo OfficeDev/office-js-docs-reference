@@ -5,16 +5,13 @@ items:
       A format object encapsulating the range's font, fill, borders, alignment, and other properties.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: RangeFormat
+    name: Excel.RangeFormat
     fullName: Excel.RangeFormat
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.RangeFormat#borders:member'
@@ -339,17 +336,13 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RangeBorderCollection:class'
-    name: RangeBorderCollection
-    fullName: Excel.RangeBorderCollection
+    name: Excel.RangeBorderCollection
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.RangeFill:class'
-    name: RangeFill
-    fullName: Excel.RangeFill
+    name: Excel.RangeFill
   - uid: 'excel!Excel.RangeFont:class'
-    name: RangeFont
-    fullName: Excel.RangeFont
+    name: Excel.RangeFont
   - uid: 'excel!Excel.RangeFormat#horizontalAlignment~0:complex'
     name: >-
       Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection"
@@ -364,19 +357,15 @@ references:
       - name: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
         fullName: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
   - uid: 'excel!Excel.RangeFormat:class'
-    name: RangeFormat
-    fullName: Excel.RangeFormat
+    name: Excel.RangeFormat
   - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions:interface'
-    name: RangeFormatLoadOptions
-    fullName: Excel.Interfaces.RangeFormatLoadOptions
+    name: Excel.Interfaces.RangeFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData:interface'
-    name: RangeFormatUpdateData
-    fullName: Excel.Interfaces.RangeFormatUpdateData
+    name: Interfaces.RangeFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.RangeFormatData:interface'
-    name: RangeFormatData
-    fullName: Excel.Interfaces.RangeFormatData
+    name: Excel.Interfaces.RangeFormatData
   - uid: 'excel!Excel.RangeFormat#verticalAlignment~0:complex'
     name: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
     fullName: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"

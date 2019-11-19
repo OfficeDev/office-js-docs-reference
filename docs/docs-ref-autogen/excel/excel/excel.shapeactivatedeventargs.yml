@@ -5,11 +5,10 @@ items:
       Provides information about the shape that raised the Activated event.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ShapeActivatedEventArgs
+    name: Excel.ShapeActivatedEventArgs
     fullName: Excel.ShapeActivatedEventArgs
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

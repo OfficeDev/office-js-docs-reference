@@ -5,16 +5,13 @@ items:
       Represents a cell value conditional format.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: CellValueConditionalFormat
+    name: Excel.CellValueConditionalFormat
     fullName: Excel.CellValueConditionalFormat
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.CellValueConditionalFormat#context:member'
@@ -245,24 +242,17 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ConditionalRangeFormat:class'
-    name: ConditionalRangeFormat
-    fullName: Excel.ConditionalRangeFormat
+    name: Excel.ConditionalRangeFormat
   - uid: 'excel!Excel.CellValueConditionalFormat:class'
-    name: CellValueConditionalFormat
-    fullName: Excel.CellValueConditionalFormat
+    name: Excel.CellValueConditionalFormat
   - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions:interface'
-    name: CellValueConditionalFormatLoadOptions
-    fullName: Excel.Interfaces.CellValueConditionalFormatLoadOptions
+    name: Excel.Interfaces.CellValueConditionalFormatLoadOptions
   - uid: 'excel!Excel.ConditionalCellValueRule:interface'
-    name: ConditionalCellValueRule
-    fullName: Excel.ConditionalCellValueRule
+    name: Excel.ConditionalCellValueRule
   - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatUpdateData:interface'
-    name: CellValueConditionalFormatUpdateData
-    fullName: Excel.Interfaces.CellValueConditionalFormatUpdateData
+    name: Interfaces.CellValueConditionalFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatData:interface'
-    name: CellValueConditionalFormatData
-    fullName: Excel.Interfaces.CellValueConditionalFormatData
+    name: Excel.Interfaces.CellValueConditionalFormatData

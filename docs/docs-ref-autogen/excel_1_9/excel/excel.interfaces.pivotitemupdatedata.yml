@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.PivotItemUpdateData:interface'
     summary: 'An interface for updating data on the PivotItem object, for use in `pivotItem.set({ ... })`<!-- -->.'
-    name: PivotItemUpdateData
+    name: Excel.Interfaces.PivotItemUpdateData
     fullName: Excel.Interfaces.PivotItemUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

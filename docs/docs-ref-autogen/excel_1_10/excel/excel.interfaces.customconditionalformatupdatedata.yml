@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the CustomConditionalFormat object, for use in `customConditionalFormat.set({
       ... })`<!-- -->.
-    name: CustomConditionalFormatUpdateData
+    name: Excel.Interfaces.CustomConditionalFormatUpdateData
     fullName: Excel.Interfaces.CustomConditionalFormatUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -46,8 +45,6 @@ items:
           - 'excel!Excel.Interfaces.ConditionalFormatRuleUpdateData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
-    name: ConditionalRangeFormatUpdateData
-    fullName: Excel.Interfaces.ConditionalRangeFormatUpdateData
+    name: Excel.Interfaces.ConditionalRangeFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleUpdateData:interface'
-    name: ConditionalFormatRuleUpdateData
-    fullName: Excel.Interfaces.ConditionalFormatRuleUpdateData
+    name: Excel.Interfaces.ConditionalFormatRuleUpdateData

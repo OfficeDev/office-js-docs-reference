@@ -5,11 +5,10 @@ items:
       Represents the type of the overlay.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: OverlayType
+    name: Visio.OverlayType
     fullName: Visio.OverlayType
     langs:
       - typeScript
-    namespace: 'visio!Visio:namespace'
     type: enum
     package: visio!
     children:

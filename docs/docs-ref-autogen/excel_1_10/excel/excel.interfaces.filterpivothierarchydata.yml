@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyData:interface'
     summary: An interface describing the data returned by calling `filterPivotHierarchy.toJSON()`<!-- -->.
-    name: FilterPivotHierarchyData
+    name: Excel.Interfaces.FilterPivotHierarchyData
     fullName: Excel.Interfaces.FilterPivotHierarchyData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

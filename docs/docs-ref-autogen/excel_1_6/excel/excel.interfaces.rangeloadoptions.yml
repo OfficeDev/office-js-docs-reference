@@ -10,11 +10,10 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: RangeLoadOptions
+    name: Excel.Interfaces.RangeLoadOptions
     fullName: Excel.Interfaces.RangeLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -360,8 +359,6 @@ items:
           - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions:interface'
-    name: RangeFormatLoadOptions
-    fullName: Excel.Interfaces.RangeFormatLoadOptions
+    name: Excel.Interfaces.RangeFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
-    name: WorksheetLoadOptions
-    fullName: Excel.Interfaces.WorksheetLoadOptions
+    name: Excel.Interfaces.WorksheetLoadOptions

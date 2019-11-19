@@ -27,11 +27,10 @@ items:
           $('.body').css('background-color', bodyBackgroundColor);
       }
       ```
-    name: OfficeTheme
+    name: Office.OfficeTheme
     fullName: Office.OfficeTheme
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:

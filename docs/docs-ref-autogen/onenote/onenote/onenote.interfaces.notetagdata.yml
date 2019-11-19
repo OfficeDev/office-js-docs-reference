@@ -2,11 +2,10 @@
 items:
   - uid: 'onenote!OneNote.Interfaces.NoteTagData:interface'
     summary: An interface describing the data returned by calling "noteTag.toJSON()".
-    name: NoteTagData
+    name: OneNote.Interfaces.NoteTagData
     fullName: OneNote.Interfaces.NoteTagData
     langs:
       - typeScript
-    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:

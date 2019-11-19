@@ -5,11 +5,10 @@ items:
       Represents the Basic Type data validation criteria.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: BasicDataValidation
+    name: Excel.BasicDataValidation
     fullName: Excel.BasicDataValidation
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

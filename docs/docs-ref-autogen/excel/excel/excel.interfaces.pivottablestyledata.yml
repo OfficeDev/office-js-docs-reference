@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.PivotTableStyleData:interface'
     summary: An interface describing the data returned by calling `pivotTableStyle.toJSON()`<!-- -->.
-    name: PivotTableStyleData
+    name: Excel.Interfaces.PivotTableStyleData
     fullName: Excel.Interfaces.PivotTableStyleData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

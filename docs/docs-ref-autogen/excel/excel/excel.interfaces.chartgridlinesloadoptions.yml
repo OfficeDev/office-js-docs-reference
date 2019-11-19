@@ -5,11 +5,10 @@ items:
       Represents major or minor gridlines on a chart axis.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartGridlinesLoadOptions
+    name: Excel.Interfaces.ChartGridlinesLoadOptions
     fullName: Excel.Interfaces.ChartGridlinesLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -62,5 +61,4 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions:interface'
-    name: ChartGridlinesFormatLoadOptions
-    fullName: Excel.Interfaces.ChartGridlinesFormatLoadOptions
+    name: Excel.Interfaces.ChartGridlinesFormatLoadOptions

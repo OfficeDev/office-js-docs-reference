@@ -5,11 +5,10 @@ items:
       Represents a collection of FilterPivotHierarchy items associated with the PivotTable.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: FilterPivotHierarchyCollectionLoadOptions
+    name: Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions
     fullName: Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

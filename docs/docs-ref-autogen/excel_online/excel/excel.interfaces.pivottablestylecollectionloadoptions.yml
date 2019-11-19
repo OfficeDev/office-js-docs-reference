@@ -5,11 +5,10 @@ items:
       Represents a collection of PivotTable styles.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: PivotTableStyleCollectionLoadOptions
+    name: Excel.Interfaces.PivotTableStyleCollectionLoadOptions
     fullName: Excel.Interfaces.PivotTableStyleCollectionLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

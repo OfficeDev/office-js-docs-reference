@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ShapeFontUpdateData:interface'
     summary: 'An interface for updating data on the ShapeFont object, for use in `shapeFont.set({ ... })`<!-- -->.'
-    name: ShapeFontUpdateData
+    name: Excel.Interfaces.ShapeFontUpdateData
     fullName: Excel.Interfaces.ShapeFontUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

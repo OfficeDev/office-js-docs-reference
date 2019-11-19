@@ -5,11 +5,10 @@ items:
       Represents an object containing values and types of a named item.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: NamedItemArrayValuesLoadOptions
+    name: Excel.Interfaces.NamedItemArrayValuesLoadOptions
     fullName: Excel.Interfaces.NamedItemArrayValuesLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

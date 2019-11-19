@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartCollectionUpdateData:interface'
     summary: 'An interface for updating data on the ChartCollection object, for use in `chartCollection.set({ ... })`<!-- -->.'
-    name: ChartCollectionUpdateData
+    name: Excel.Interfaces.ChartCollectionUpdateData
     fullName: Excel.Interfaces.ChartCollectionUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

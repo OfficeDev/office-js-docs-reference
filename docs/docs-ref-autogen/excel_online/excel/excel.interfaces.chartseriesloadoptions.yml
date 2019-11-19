@@ -5,11 +5,10 @@ items:
       Represents a series in a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartSeriesLoadOptions
+    name: Excel.Interfaces.ChartSeriesLoadOptions
     fullName: Excel.Interfaces.ChartSeriesLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -768,23 +767,16 @@ items:
           - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions:interface'
-    name: ChartBinOptionsLoadOptions
-    fullName: Excel.Interfaces.ChartBinOptionsLoadOptions
+    name: Excel.Interfaces.ChartBinOptionsLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions:interface'
-    name: ChartBoxwhiskerOptionsLoadOptions
-    fullName: Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions
+    name: Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
-    name: ChartDataLabelsLoadOptions
-    fullName: Excel.Interfaces.ChartDataLabelsLoadOptions
+    name: Excel.Interfaces.ChartDataLabelsLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface'
-    name: ChartSeriesFormatLoadOptions
-    fullName: Excel.Interfaces.ChartSeriesFormatLoadOptions
+    name: Excel.Interfaces.ChartSeriesFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartMapOptionsLoadOptions:interface'
-    name: ChartMapOptionsLoadOptions
-    fullName: Excel.Interfaces.ChartMapOptionsLoadOptions
+    name: Excel.Interfaces.ChartMapOptionsLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface'
-    name: ChartPointsCollectionLoadOptions
-    fullName: Excel.Interfaces.ChartPointsCollectionLoadOptions
+    name: Excel.Interfaces.ChartPointsCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions:interface'
-    name: ChartErrorBarsLoadOptions
-    fullName: Excel.Interfaces.ChartErrorBarsLoadOptions
+    name: Excel.Interfaces.ChartErrorBarsLoadOptions

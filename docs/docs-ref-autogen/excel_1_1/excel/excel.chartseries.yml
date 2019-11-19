@@ -5,16 +5,13 @@ items:
       Represents a series in a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartSeries
+    name: Excel.ChartSeries
     fullName: Excel.ChartSeries
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartSeries#context:member'
@@ -246,24 +243,17 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartSeriesFormat:class'
-    name: ChartSeriesFormat
-    fullName: Excel.ChartSeriesFormat
+    name: Excel.ChartSeriesFormat
   - uid: 'excel!Excel.ChartSeries:class'
-    name: ChartSeries
-    fullName: Excel.ChartSeries
+    name: Excel.ChartSeries
   - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions:interface'
-    name: ChartSeriesLoadOptions
-    fullName: Excel.Interfaces.ChartSeriesLoadOptions
+    name: Excel.Interfaces.ChartSeriesLoadOptions
   - uid: 'excel!Excel.ChartPointsCollection:class'
-    name: ChartPointsCollection
-    fullName: Excel.ChartPointsCollection
+    name: Excel.ChartPointsCollection
   - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData:interface'
-    name: ChartSeriesUpdateData
-    fullName: Excel.Interfaces.ChartSeriesUpdateData
+    name: Interfaces.ChartSeriesUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartSeriesData:interface'
-    name: ChartSeriesData
-    fullName: Excel.Interfaces.ChartSeriesData
+    name: Excel.Interfaces.ChartSeriesData

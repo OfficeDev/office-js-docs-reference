@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.RangeAreasData:interface'
     summary: An interface describing the data returned by calling `rangeAreas.toJSON()`<!-- -->.
-    name: RangeAreasData
+    name: Excel.Interfaces.RangeAreasData
     fullName: Excel.Interfaces.RangeAreasData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -215,8 +214,6 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.DataValidationData:interface'
-    name: DataValidationData
-    fullName: Excel.Interfaces.DataValidationData
+    name: Excel.Interfaces.DataValidationData
   - uid: 'excel!Excel.Interfaces.RangeFormatData:interface'
-    name: RangeFormatData
-    fullName: Excel.Interfaces.RangeFormatData
+    name: Excel.Interfaces.RangeFormatData

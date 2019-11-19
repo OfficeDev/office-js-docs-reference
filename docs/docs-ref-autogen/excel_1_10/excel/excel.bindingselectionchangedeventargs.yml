@@ -5,11 +5,10 @@ items:
       Provides information about the binding that raised the SelectionChanged event.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: BindingSelectionChangedEventArgs
+    name: Excel.BindingSelectionChangedEventArgs
     fullName: Excel.BindingSelectionChangedEventArgs
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:
@@ -95,5 +94,4 @@ items:
           - number
 references:
   - uid: 'excel!Excel.Binding:class'
-    name: Binding
-    fullName: Excel.Binding
+    name: Excel.Binding

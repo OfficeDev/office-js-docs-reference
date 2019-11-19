@@ -5,16 +5,13 @@ items:
       Encapsulates the format properties for the chart trendline label.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartTrendlineLabelFormat
+    name: Excel.ChartTrendlineLabelFormat
     fullName: Excel.ChartTrendlineLabelFormat
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartTrendlineLabelFormat#border:member'
@@ -226,28 +223,20 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ChartBorder:class'
-    name: ChartBorder
-    fullName: Excel.ChartBorder
+    name: Excel.ChartBorder
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartFill:class'
-    name: ChartFill
-    fullName: Excel.ChartFill
+    name: Excel.ChartFill
   - uid: 'excel!Excel.ChartFont:class'
-    name: ChartFont
-    fullName: Excel.ChartFont
+    name: Excel.ChartFont
   - uid: 'excel!Excel.ChartTrendlineLabelFormat:class'
-    name: ChartTrendlineLabelFormat
-    fullName: Excel.ChartTrendlineLabelFormat
+    name: Excel.ChartTrendlineLabelFormat
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions:interface'
-    name: ChartTrendlineLabelFormatLoadOptions
-    fullName: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions
+    name: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatUpdateData:interface'
-    name: ChartTrendlineLabelFormatUpdateData
-    fullName: Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
+    name: Interfaces.ChartTrendlineLabelFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatData:interface'
-    name: ChartTrendlineLabelFormatData
-    fullName: Excel.Interfaces.ChartTrendlineLabelFormatData
+    name: Excel.Interfaces.ChartTrendlineLabelFormatData

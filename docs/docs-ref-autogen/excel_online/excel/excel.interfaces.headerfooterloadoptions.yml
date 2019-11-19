@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions:interface'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: HeaderFooterLoadOptions
+    name: Excel.Interfaces.HeaderFooterLoadOptions
     fullName: Excel.Interfaces.HeaderFooterLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

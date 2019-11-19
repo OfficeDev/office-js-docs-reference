@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.PivotItemCollectionData:interface'
     summary: An interface describing the data returned by calling `pivotItemCollection.toJSON()`<!-- -->.
-    name: PivotItemCollectionData
+    name: Excel.Interfaces.PivotItemCollectionData
     fullName: Excel.Interfaces.PivotItemCollectionData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

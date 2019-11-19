@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ShapeFillData:interface'
     summary: An interface describing the data returned by calling `shapeFill.toJSON()`<!-- -->.
-    name: ShapeFillData
+    name: Excel.Interfaces.ShapeFillData
     fullName: Excel.Interfaces.ShapeFillData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

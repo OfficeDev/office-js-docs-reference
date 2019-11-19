@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the ConditionalFormatCollection object, for use in
       `conditionalFormatCollection.set({ ... })`<!-- -->.
-    name: ConditionalFormatCollectionUpdateData
+    name: Excel.Interfaces.ConditionalFormatCollectionUpdateData
     fullName: Excel.Interfaces.ConditionalFormatCollectionUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

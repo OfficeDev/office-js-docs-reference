@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ApplicationData:interface'
     summary: An interface describing the data returned by calling `application.toJSON()`<!-- -->.
-    name: ApplicationData
+    name: Excel.Interfaces.ApplicationData
     fullName: Excel.Interfaces.ApplicationData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -180,8 +179,6 @@ references:
       - name: ' | "Done" | "Calculating" | "Pending"'
         fullName: ' | "Done" | "Calculating" | "Pending"'
   - uid: 'excel!Excel.Interfaces.CultureInfoData:interface'
-    name: CultureInfoData
-    fullName: Excel.Interfaces.CultureInfoData
+    name: Excel.Interfaces.CultureInfoData
   - uid: 'excel!Excel.Interfaces.IterativeCalculationData:interface'
-    name: IterativeCalculationData
-    fullName: Excel.Interfaces.IterativeCalculationData
+    name: Excel.Interfaces.IterativeCalculationData

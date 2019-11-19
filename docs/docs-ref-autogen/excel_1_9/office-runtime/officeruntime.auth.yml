@@ -3,11 +3,10 @@ items:
   - uid: 'office-runtime!OfficeRuntime.Auth:interface'
     summary: Interface that contains authorization related APIs.
     isPreview: true
-    name: Auth
+    name: OfficeRuntime.Auth
     fullName: OfficeRuntime.Auth
     langs:
       - typeScript
-    namespace: 'office-runtime!OfficeRuntime:namespace'
     type: interface
     package: office-runtime!
     children:
@@ -54,4 +53,3 @@ references:
         fullName: <string>
   - uid: 'office-runtime!OfficeRuntime.AuthOptions:interface'
     name: AuthOptions
-    fullName: OfficeRuntime.AuthOptions

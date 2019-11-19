@@ -5,11 +5,10 @@ items:
       Represents a row in a Word document.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: TableRowLoadOptions
+    name: Word.Interfaces.TableRowLoadOptions
     fullName: Word.Interfaces.TableRowLoadOptions
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -191,8 +190,6 @@ items:
           - boolean
 references:
   - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
-    name: FontLoadOptions
-    fullName: Word.Interfaces.FontLoadOptions
+    name: Word.Interfaces.FontLoadOptions
   - uid: 'word!Word.Interfaces.TableLoadOptions:interface'
-    name: TableLoadOptions
-    fullName: Word.Interfaces.TableLoadOptions
+    name: Word.Interfaces.TableLoadOptions

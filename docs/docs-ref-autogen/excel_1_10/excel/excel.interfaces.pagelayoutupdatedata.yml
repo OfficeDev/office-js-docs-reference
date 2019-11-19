@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData:interface'
     summary: 'An interface for updating data on the PageLayout object, for use in `pageLayout.set({ ... })`<!-- -->.'
-    name: PageLayoutUpdateData
+    name: Excel.Interfaces.PageLayoutUpdateData
     fullName: Excel.Interfaces.PageLayoutUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -346,8 +345,7 @@ items:
           - 'excel!Excel.PageLayoutZoomOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData:interface'
-    name: HeaderFooterGroupUpdateData
-    fullName: Excel.Interfaces.HeaderFooterGroupUpdateData
+    name: Excel.Interfaces.HeaderFooterGroupUpdateData
   - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#orientation~0:complex'
     name: Excel.PageOrientation | "Portrait" | "Landscape"
     fullName: Excel.PageOrientation | "Portrait" | "Landscape"
@@ -406,5 +404,4 @@ references:
       - name: ' | "DownThenOver" | "OverThenDown"'
         fullName: ' | "DownThenOver" | "OverThenDown"'
   - uid: 'excel!Excel.PageLayoutZoomOptions:interface'
-    name: PageLayoutZoomOptions
-    fullName: Excel.PageLayoutZoomOptions
+    name: Excel.PageLayoutZoomOptions

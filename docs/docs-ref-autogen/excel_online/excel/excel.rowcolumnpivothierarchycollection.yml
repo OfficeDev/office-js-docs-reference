@@ -5,16 +5,13 @@ items:
       Represents a collection of RowColumnPivotHierarchy items associated with the PivotTable.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: RowColumnPivotHierarchyCollection
+    name: Excel.RowColumnPivotHierarchyCollection
     fullName: Excel.RowColumnPivotHierarchyCollection
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.RowColumnPivotHierarchyCollection#add:member(1)'
@@ -243,14 +240,11 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RowColumnPivotHierarchy:class'
-    name: RowColumnPivotHierarchy
-    fullName: Excel.RowColumnPivotHierarchy
+    name: Excel.RowColumnPivotHierarchy
   - uid: 'excel!Excel.PivotHierarchy:class'
-    name: PivotHierarchy
-    fullName: Excel.PivotHierarchy
+    name: Excel.PivotHierarchy
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -270,8 +264,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.RowColumnPivotHierarchyCollection:class'
-    name: RowColumnPivotHierarchyCollection
-    fullName: Excel.RowColumnPivotHierarchyCollection
+    name: Excel.RowColumnPivotHierarchyCollection
   - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#load~0:complex'
     name: Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -287,5 +280,4 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionData:interface'
-    name: RowColumnPivotHierarchyCollectionData
-    fullName: Excel.Interfaces.RowColumnPivotHierarchyCollectionData
+    name: Excel.Interfaces.RowColumnPivotHierarchyCollectionData

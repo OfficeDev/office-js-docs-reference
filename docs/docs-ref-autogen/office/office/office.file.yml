@@ -5,11 +5,10 @@ items:
     remarks: >-
       Access the File object with the AsyncResult.value property in the callback function passed to the
       Document.getFileAsync method.
-    name: File
+    name: Office.File
     fullName: Office.File
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:

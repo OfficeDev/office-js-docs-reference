@@ -2,11 +2,10 @@
 items:
   - uid: 'word!Word.Interfaces.ListItemData:interface'
     summary: An interface describing the data returned by calling "listItem.toJSON()".
-    name: ListItemData
+    name: Word.Interfaces.ListItemData
     fullName: Word.Interfaces.ListItemData
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

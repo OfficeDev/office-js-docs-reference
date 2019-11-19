@@ -27,11 +27,10 @@ items:
       ];
 
       ```
-    name: LocationIdentifier
+    name: Office.LocationIdentifier
     fullName: Office.LocationIdentifier
     langs:
       - typeScript
-    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

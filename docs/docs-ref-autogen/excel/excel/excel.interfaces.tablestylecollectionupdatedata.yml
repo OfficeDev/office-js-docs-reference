@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the TableStyleCollection object, for use in `tableStyleCollection.set({ ...
       })`<!-- -->.
-    name: TableStyleCollectionUpdateData
+    name: Excel.Interfaces.TableStyleCollectionUpdateData
     fullName: Excel.Interfaces.TableStyleCollectionUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

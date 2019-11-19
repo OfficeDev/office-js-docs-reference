@@ -7,11 +7,10 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: AutoFilterLoadOptions
+    name: Excel.Interfaces.AutoFilterLoadOptions
     fullName: Excel.Interfaces.AutoFilterLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

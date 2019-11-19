@@ -5,16 +5,13 @@ items:
       Represents an inline picture.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: InlinePicture
+    name: Word.InlinePicture
     fullName: Word.InlinePicture
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.InlinePicture#altTextDescription:member'
@@ -1092,7 +1089,6 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.InlinePicture#getBase64ImageSrc~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -1103,14 +1099,11 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'word!Word.InlinePicture:class'
-    name: InlinePicture
-    fullName: Word.InlinePicture
+    name: Word.InlinePicture
   - uid: 'word!Word.Range:class'
-    name: Range
-    fullName: Word.Range
+    name: Word.Range
   - uid: 'word!Word.RangeLocation:enum'
-    name: RangeLocation
-    fullName: Word.RangeLocation
+    name: Word.RangeLocation
   - uid: 'word!Word.InlinePicture#imageFormat~0:complex'
     name: >-
       Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf"
@@ -1125,34 +1118,24 @@ references:
       - name: ' | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg"'
         fullName: ' | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg"'
   - uid: 'word!Word.BreakType:enum'
-    name: BreakType
-    fullName: Word.BreakType
+    name: Word.BreakType
   - uid: 'word!Word.InsertLocation:enum'
-    name: InsertLocation
-    fullName: Word.InsertLocation
+    name: Word.InsertLocation
   - uid: 'word!Word.ContentControl:class'
-    name: ContentControl
-    fullName: Word.ContentControl
+    name: Word.ContentControl
   - uid: 'word!Word.Paragraph:class'
-    name: Paragraph
-    fullName: Word.Paragraph
+    name: Word.Paragraph
   - uid: 'word!Word.Interfaces.InlinePictureLoadOptions:interface'
-    name: InlinePictureLoadOptions
-    fullName: Word.Interfaces.InlinePictureLoadOptions
+    name: Word.Interfaces.InlinePictureLoadOptions
   - uid: 'word!Word.Table:class'
-    name: Table
-    fullName: Word.Table
+    name: Word.Table
   - uid: 'word!Word.TableCell:class'
-    name: TableCell
-    fullName: Word.TableCell
+    name: Word.TableCell
   - uid: 'word!Word.SelectionMode:enum'
-    name: SelectionMode
-    fullName: Word.SelectionMode
+    name: Word.SelectionMode
   - uid: 'word!Word.Interfaces.InlinePictureUpdateData:interface'
-    name: InlinePictureUpdateData
-    fullName: Word.Interfaces.InlinePictureUpdateData
+    name: Interfaces.InlinePictureUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.InlinePictureData:interface'
-    name: InlinePictureData
-    fullName: Word.Interfaces.InlinePictureData
+    name: Word.Interfaces.InlinePictureData

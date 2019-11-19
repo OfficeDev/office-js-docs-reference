@@ -5,11 +5,10 @@ items:
       Specifies which part of the shape retains its position when the shape is scaled.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ShapeScaleFrom
+    name: Excel.ShapeScaleFrom
     fullName: Excel.ShapeScaleFrom
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

@@ -38,11 +38,10 @@ items:
       });
 
       ```
-    name: TaskSuggestion
+    name: Office.TaskSuggestion
     fullName: Office.TaskSuggestion
     langs:
       - typeScript
-    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

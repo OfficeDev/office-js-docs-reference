@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the CellValueConditionalFormat object, for use in
       `cellValueConditionalFormat.set({ ... })`<!-- -->.
-    name: CellValueConditionalFormatUpdateData
+    name: Excel.Interfaces.CellValueConditionalFormatUpdateData
     fullName: Excel.Interfaces.CellValueConditionalFormatUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -46,8 +45,6 @@ items:
           - 'excel!Excel.ConditionalCellValueRule:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
-    name: ConditionalRangeFormatUpdateData
-    fullName: Excel.Interfaces.ConditionalRangeFormatUpdateData
+    name: Excel.Interfaces.ConditionalRangeFormatUpdateData
   - uid: 'excel!Excel.ConditionalCellValueRule:interface'
-    name: ConditionalCellValueRule
-    fullName: Excel.ConditionalCellValueRule
+    name: Excel.ConditionalCellValueRule

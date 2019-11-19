@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.RangeFillUpdateData:interface'
     summary: 'An interface for updating data on the RangeFill object, for use in `rangeFill.set({ ... })`<!-- -->.'
-    name: RangeFillUpdateData
+    name: Excel.Interfaces.RangeFillUpdateData
     fullName: Excel.Interfaces.RangeFillUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

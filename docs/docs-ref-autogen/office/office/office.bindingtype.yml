@@ -2,11 +2,10 @@
 items:
   - uid: 'office!Office.BindingType:enum'
     summary: Specifies the type of the binding object that should be returned.
-    name: BindingType
+    name: Office.BindingType
     fullName: Office.BindingType
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: enum
     package: office!
     children:

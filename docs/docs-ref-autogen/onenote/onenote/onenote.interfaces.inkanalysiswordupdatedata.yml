@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the InkAnalysisWord object, for use in "inkAnalysisWord.set(<!-- -->{ ... }<!--
       -->)".
-    name: InkAnalysisWordUpdateData
+    name: OneNote.Interfaces.InkAnalysisWordUpdateData
     fullName: OneNote.Interfaces.InkAnalysisWordUpdateData
     langs:
       - typeScript
-    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -30,5 +29,4 @@ items:
           - 'onenote!OneNote.Interfaces.InkAnalysisLineUpdateData:interface'
 references:
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineUpdateData:interface'
-    name: InkAnalysisLineUpdateData
-    fullName: OneNote.Interfaces.InkAnalysisLineUpdateData
+    name: OneNote.Interfaces.InkAnalysisLineUpdateData

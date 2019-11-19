@@ -11,11 +11,10 @@ items:
 
       Only task pane add-ins for Outlook support Mailbox API set event types.
     remarks: '**`BindingDataChanged` and `BindingSelectionChanged` hosts**: Excel, Word.'
-    name: EventType
+    name: Office.EventType
     fullName: Office.EventType
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: enum
     package: office!
     children:

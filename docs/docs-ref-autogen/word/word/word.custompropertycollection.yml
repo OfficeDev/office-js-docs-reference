@@ -5,16 +5,13 @@ items:
       Contains the collection of [Word.CustomProperty](xref:word!Word.CustomProperty:class) objects.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: CustomPropertyCollection
+    name: Word.CustomPropertyCollection
     fullName: Word.CustomPropertyCollection
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.CustomPropertyCollection#add:member(1)'
@@ -328,11 +325,9 @@ references:
   - uid: 'word!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.CustomProperty:class'
-    name: CustomProperty
-    fullName: Word.CustomProperty
+    name: Word.CustomProperty
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.CustomPropertyCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -352,8 +347,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.CustomPropertyCollection:class'
-    name: CustomPropertyCollection
-    fullName: Word.CustomPropertyCollection
+    name: Word.CustomPropertyCollection
   - uid: 'word!Word.CustomPropertyCollection#load~0:complex'
     name: Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
     fullName: Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
@@ -369,5 +363,4 @@ references:
   - uid: 'word!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'word!Word.Interfaces.CustomPropertyCollectionData:interface'
-    name: CustomPropertyCollectionData
-    fullName: Word.Interfaces.CustomPropertyCollectionData
+    name: Word.Interfaces.CustomPropertyCollectionData

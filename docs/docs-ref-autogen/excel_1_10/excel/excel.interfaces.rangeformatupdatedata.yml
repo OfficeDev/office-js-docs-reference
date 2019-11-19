@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData:interface'
     summary: 'An interface for updating data on the RangeFormat object, for use in `rangeFormat.set({ ... })`<!-- -->.'
-    name: RangeFormatUpdateData
+    name: Excel.Interfaces.RangeFormatUpdateData
     fullName: Excel.Interfaces.RangeFormatUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -283,14 +282,11 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.RangeBorderCollectionUpdateData:interface'
-    name: RangeBorderCollectionUpdateData
-    fullName: Excel.Interfaces.RangeBorderCollectionUpdateData
+    name: Excel.Interfaces.RangeBorderCollectionUpdateData
   - uid: 'excel!Excel.Interfaces.RangeFillUpdateData:interface'
-    name: RangeFillUpdateData
-    fullName: Excel.Interfaces.RangeFillUpdateData
+    name: Excel.Interfaces.RangeFillUpdateData
   - uid: 'excel!Excel.Interfaces.RangeFontUpdateData:interface'
-    name: RangeFontUpdateData
-    fullName: Excel.Interfaces.RangeFontUpdateData
+    name: Excel.Interfaces.RangeFontUpdateData
   - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData#horizontalAlignment~0:complex'
     name: >-
       Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection"
@@ -305,8 +301,7 @@ references:
       - name: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
         fullName: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
   - uid: 'excel!Excel.Interfaces.FormatProtectionUpdateData:interface'
-    name: FormatProtectionUpdateData
-    fullName: Excel.Interfaces.FormatProtectionUpdateData
+    name: Excel.Interfaces.FormatProtectionUpdateData
   - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData#readingOrder~0:complex'
     name: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
     fullName: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"

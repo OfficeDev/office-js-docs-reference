@@ -2,11 +2,10 @@
 items:
   - uid: 'visio!Visio.Interfaces.ShapeUpdateData:interface'
     summary: 'An interface for updating data on the Shape object, for use in "shape.set(<!-- -->{ ... }<!-- -->)".'
-    name: ShapeUpdateData
+    name: Visio.Interfaces.ShapeUpdateData
     fullName: Visio.Interfaces.ShapeUpdateData
     langs:
       - typeScript
-    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:
@@ -44,5 +43,4 @@ items:
           - 'visio!Visio.Interfaces.ShapeViewUpdateData:interface'
 references:
   - uid: 'visio!Visio.Interfaces.ShapeViewUpdateData:interface'
-    name: ShapeViewUpdateData
-    fullName: Visio.Interfaces.ShapeViewUpdateData
+    name: Visio.Interfaces.ShapeViewUpdateData

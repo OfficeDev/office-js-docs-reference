@@ -4,11 +4,10 @@ items:
     summary: >-
       An abstract RequestContext object that facilitates requests to the host Office application. The `Excel.run` and
       `Word.run` methods provide a request context.
-    name: ClientRequestContext
+    name: OfficeExtension.ClientRequestContext
     fullName: OfficeExtension.ClientRequestContext
     langs:
       - typeScript
-    namespace: 'office!OfficeExtension:namespace'
     type: class
     package: office!
     children:
@@ -176,10 +175,8 @@ items:
 references:
   - uid: 'office!OfficeExtension.RequestContextDebugInfo:interface'
     name: RequestContextDebugInfo
-    fullName: OfficeExtension.RequestContextDebugInfo
   - uid: 'office!OfficeExtension.ClientObject:class'
     name: ClientObject
-    fullName: OfficeExtension.ClientObject
   - uid: 'office!OfficeExtension.ClientRequestContext#load~0:complex'
     name: 'string | string[] | LoadOption'
     fullName: 'string | string[] | OfficeExtension.LoadOption'
@@ -211,4 +208,3 @@ references:
         fullName: <T>
   - uid: 'office!OfficeExtension.TrackedObjects:class'
     name: TrackedObjects
-    fullName: OfficeExtension.TrackedObjects

@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.FormatProtectionData:interface'
     summary: An interface describing the data returned by calling `formatProtection.toJSON()`<!-- -->.
-    name: FormatProtectionData
+    name: Excel.Interfaces.FormatProtectionData
     fullName: Excel.Interfaces.FormatProtectionData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

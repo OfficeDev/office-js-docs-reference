@@ -2,11 +2,10 @@
 items:
   - uid: 'office!Office.RangeFormatConfiguration:interface'
     summary: Specifies a range and its formatting.
-    name: RangeFormatConfiguration
+    name: Office.RangeFormatConfiguration
     fullName: Office.RangeFormatConfiguration
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:

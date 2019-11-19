@@ -5,11 +5,10 @@ items:
       Represents the properties of a box and whisker chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartBoxwhiskerOptionsLoadOptions
+    name: Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions
     fullName: Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

@@ -2,11 +2,10 @@
 items:
   - uid: 'word!Word.Interfaces.SettingUpdateData:interface'
     summary: 'An interface for updating data on the Setting object, for use in "setting.set(<!-- -->{ ... }<!-- -->)".'
-    name: SettingUpdateData
+    name: Word.Interfaces.SettingUpdateData
     fullName: Word.Interfaces.SettingUpdateData
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

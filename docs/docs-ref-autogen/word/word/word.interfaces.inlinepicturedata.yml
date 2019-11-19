@@ -2,11 +2,10 @@
 items:
   - uid: 'word!Word.Interfaces.InlinePictureData:interface'
     summary: An interface describing the data returned by calling "inlinePicture.toJSON()".
-    name: InlinePictureData
+    name: Word.Interfaces.InlinePictureData
     fullName: Word.Interfaces.InlinePictureData
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

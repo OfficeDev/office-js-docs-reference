@@ -5,16 +5,13 @@ items:
       Encapsulates the formatting options for line elements.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartLineFormat
+    name: Excel.ChartLineFormat
     fullName: Excel.ChartLineFormat
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartLineFormat#clear:member(1)'
@@ -250,18 +247,13 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartLineFormat:class'
-    name: ChartLineFormat
-    fullName: Excel.ChartLineFormat
+    name: Excel.ChartLineFormat
   - uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
-    name: ChartLineFormatLoadOptions
-    fullName: Excel.Interfaces.ChartLineFormatLoadOptions
+    name: Excel.Interfaces.ChartLineFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartLineFormatUpdateData:interface'
-    name: ChartLineFormatUpdateData
-    fullName: Excel.Interfaces.ChartLineFormatUpdateData
+    name: Interfaces.ChartLineFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartLineFormatData:interface'
-    name: ChartLineFormatData
-    fullName: Excel.Interfaces.ChartLineFormatData
+    name: Excel.Interfaces.ChartLineFormatData

@@ -5,16 +5,13 @@ items:
       Represents a RichText object in a Paragraph.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: RichText
+    name: OneNote.RichText
     fullName: OneNote.RichText
     langs:
       - typeScript
-    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.RichText#context:member'
@@ -320,7 +317,6 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
-    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.RichText#getHtml~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -331,14 +327,10 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'onenote!OneNote.RichText:class'
-    name: RichText
-    fullName: OneNote.RichText
+    name: OneNote.RichText
   - uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions:interface'
-    name: RichTextLoadOptions
-    fullName: OneNote.Interfaces.RichTextLoadOptions
+    name: OneNote.Interfaces.RichTextLoadOptions
   - uid: 'onenote!OneNote.Paragraph:class'
-    name: Paragraph
-    fullName: OneNote.Paragraph
+    name: OneNote.Paragraph
   - uid: 'onenote!OneNote.Interfaces.RichTextData:interface'
-    name: RichTextData
-    fullName: OneNote.Interfaces.RichTextData
+    name: OneNote.Interfaces.RichTextData

@@ -8,11 +8,10 @@ items:
       For example, if the valueFormat parameter is specified as "formatted", a number formatted as currency, or a date
       formatted as mm/dd/yy in the host application will have its formatting preserved. If the valueFormat parameter is
       specified as "unformatted", a date will be returned in its underlying sequential serial number form.
-    name: ValueFormat
+    name: Office.ValueFormat
     fullName: Office.ValueFormat
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: enum
     package: office!
     children:

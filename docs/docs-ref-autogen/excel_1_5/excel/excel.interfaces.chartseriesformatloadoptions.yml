@@ -5,11 +5,10 @@ items:
       Encapsulates the format properties for the chart series
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartSeriesFormatLoadOptions
+    name: Excel.Interfaces.ChartSeriesFormatLoadOptions
     fullName: Excel.Interfaces.ChartSeriesFormatLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -46,5 +45,4 @@ items:
           - 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
-    name: ChartLineFormatLoadOptions
-    fullName: Excel.Interfaces.ChartLineFormatLoadOptions
+    name: Excel.Interfaces.ChartLineFormatLoadOptions

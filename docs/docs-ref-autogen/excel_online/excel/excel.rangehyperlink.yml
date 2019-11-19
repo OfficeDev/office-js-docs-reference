@@ -5,11 +5,10 @@ items:
       Represents the necessary strings to get/set a hyperlink (XHL) object.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: RangeHyperlink
+    name: Excel.RangeHyperlink
     fullName: Excel.RangeHyperlink
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

@@ -5,11 +5,10 @@ items:
       Represents the mapping level of a chart series. This only applies to region map charts.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartMapAreaLevel
+    name: Excel.ChartMapAreaLevel
     fullName: Excel.ChartMapAreaLevel
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

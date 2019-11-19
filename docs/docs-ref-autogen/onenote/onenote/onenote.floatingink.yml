@@ -5,16 +5,13 @@ items:
       Represents a group of ink strokes.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: FloatingInk
+    name: OneNote.FloatingInk
     fullName: OneNote.FloatingInk
     langs:
       - typeScript
-    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.FloatingInk#context:member'
@@ -267,19 +264,13 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
-    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.InkStrokeCollection:class'
-    name: InkStrokeCollection
-    fullName: OneNote.InkStrokeCollection
+    name: OneNote.InkStrokeCollection
   - uid: 'onenote!OneNote.FloatingInk:class'
-    name: FloatingInk
-    fullName: OneNote.FloatingInk
+    name: OneNote.FloatingInk
   - uid: 'onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface'
-    name: FloatingInkLoadOptions
-    fullName: OneNote.Interfaces.FloatingInkLoadOptions
+    name: OneNote.Interfaces.FloatingInkLoadOptions
   - uid: 'onenote!OneNote.PageContent:class'
-    name: PageContent
-    fullName: OneNote.PageContent
+    name: OneNote.PageContent
   - uid: 'onenote!OneNote.Interfaces.FloatingInkData:interface'
-    name: FloatingInkData
-    fullName: OneNote.Interfaces.FloatingInkData
+    name: OneNote.Interfaces.FloatingInkData

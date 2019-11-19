@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.StyleUpdateData:interface'
     summary: 'An interface for updating data on the Style object, for use in `style.set({ ... })`<!-- -->.'
-    name: StyleUpdateData
+    name: Excel.Interfaces.StyleUpdateData
     fullName: Excel.Interfaces.StyleUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -324,14 +323,11 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.RangeBorderCollectionUpdateData:interface'
-    name: RangeBorderCollectionUpdateData
-    fullName: Excel.Interfaces.RangeBorderCollectionUpdateData
+    name: Excel.Interfaces.RangeBorderCollectionUpdateData
   - uid: 'excel!Excel.Interfaces.RangeFillUpdateData:interface'
-    name: RangeFillUpdateData
-    fullName: Excel.Interfaces.RangeFillUpdateData
+    name: Excel.Interfaces.RangeFillUpdateData
   - uid: 'excel!Excel.Interfaces.RangeFontUpdateData:interface'
-    name: RangeFontUpdateData
-    fullName: Excel.Interfaces.RangeFontUpdateData
+    name: Excel.Interfaces.RangeFontUpdateData
   - uid: 'excel!Excel.Interfaces.StyleUpdateData#horizontalAlignment~0:complex'
     name: >-
       Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection"

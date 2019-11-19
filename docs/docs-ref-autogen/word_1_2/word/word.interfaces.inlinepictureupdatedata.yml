@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the InlinePicture object, for use in "inlinePicture.set(<!-- -->{ ... }<!--
       -->)".
-    name: InlinePictureUpdateData
+    name: Word.Interfaces.InlinePictureUpdateData
     fullName: Word.Interfaces.InlinePictureUpdateData
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

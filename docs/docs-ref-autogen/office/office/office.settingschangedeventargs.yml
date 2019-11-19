@@ -22,11 +22,10 @@ items:
       with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in
       Excel on the web, and more than one user is editing the spreadsheet (coauthoring). Therefore, effectively the
       settingsChanged event is supported only in Excel on the web in coauthoring scenarios.
-    name: SettingsChangedEventArgs
+    name: Office.SettingsChangedEventArgs
     fullName: Office.SettingsChangedEventArgs
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:
@@ -63,7 +62,5 @@ items:
 references:
   - uid: 'office!Office.Settings:interface'
     name: Settings
-    fullName: Office.Settings
   - uid: 'office!Office.EventType:enum'
     name: EventType
-    fullName: Office.EventType

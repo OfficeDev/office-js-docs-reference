@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartBorderUpdateData:interface'
     summary: 'An interface for updating data on the ChartBorder object, for use in `chartBorder.set({ ... })`<!-- -->.'
-    name: ChartBorderUpdateData
+    name: Excel.Interfaces.ChartBorderUpdateData
     fullName: Excel.Interfaces.ChartBorderUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartPointFormatUpdateData:interface'
     summary: 'An interface for updating data on the ChartPointFormat object, for use in `chartPointFormat.set({ ... })`<!-- -->.'
-    name: ChartPointFormatUpdateData
+    name: Excel.Interfaces.ChartPointFormatUpdateData
     fullName: Excel.Interfaces.ChartPointFormatUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -28,5 +27,4 @@ items:
           - 'excel!Excel.Interfaces.ChartBorderUpdateData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartBorderUpdateData:interface'
-    name: ChartBorderUpdateData
-    fullName: Excel.Interfaces.ChartBorderUpdateData
+    name: Excel.Interfaces.ChartBorderUpdateData

@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.RangeUpdateData:interface'
     summary: 'An interface for updating data on the Range object, for use in `range.set({ ... })`<!-- -->.'
-    name: RangeUpdateData
+    name: Excel.Interfaces.RangeUpdateData
     fullName: Excel.Interfaces.RangeUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -106,5 +105,4 @@ items:
           - 'any[][]'
 references:
   - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData:interface'
-    name: RangeFormatUpdateData
-    fullName: Excel.Interfaces.RangeFormatUpdateData
+    name: Excel.Interfaces.RangeFormatUpdateData

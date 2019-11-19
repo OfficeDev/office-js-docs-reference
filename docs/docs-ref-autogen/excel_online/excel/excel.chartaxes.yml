@@ -5,16 +5,13 @@ items:
       Represents the chart axes.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartAxes
+    name: Excel.ChartAxes
     fullName: Excel.ChartAxes
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartAxes#categoryAxis:member'
@@ -280,28 +277,20 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ChartAxis:class'
-    name: ChartAxis
-    fullName: Excel.ChartAxis
+    name: Excel.ChartAxis
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartAxisType:enum'
-    name: ChartAxisType
-    fullName: Excel.ChartAxisType
+    name: Excel.ChartAxisType
   - uid: 'excel!Excel.ChartAxisGroup:enum'
-    name: ChartAxisGroup
-    fullName: Excel.ChartAxisGroup
+    name: Excel.ChartAxisGroup
   - uid: 'excel!Excel.ChartAxes:class'
-    name: ChartAxes
-    fullName: Excel.ChartAxes
+    name: Excel.ChartAxes
   - uid: 'excel!Excel.Interfaces.ChartAxesLoadOptions:interface'
-    name: ChartAxesLoadOptions
-    fullName: Excel.Interfaces.ChartAxesLoadOptions
+    name: Excel.Interfaces.ChartAxesLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartAxesUpdateData:interface'
-    name: ChartAxesUpdateData
-    fullName: Excel.Interfaces.ChartAxesUpdateData
+    name: Interfaces.ChartAxesUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartAxesData:interface'
-    name: ChartAxesData
-    fullName: Excel.Interfaces.ChartAxesData
+    name: Excel.Interfaces.ChartAxesData

@@ -2,11 +2,10 @@
 items:
   - uid: 'office!Office.DocumentSelectionChangedEventArgs:interface'
     summary: Provides information about the document that raised the SelectionChanged event.
-    name: DocumentSelectionChangedEventArgs
+    name: Office.DocumentSelectionChangedEventArgs
     fullName: Office.DocumentSelectionChangedEventArgs
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:
@@ -43,7 +42,5 @@ items:
 references:
   - uid: 'office!Office.Document:interface'
     name: Document
-    fullName: Office.Document
   - uid: 'office!Office.EventType:enum'
     name: EventType
-    fullName: Office.EventType

@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartTrendlineData:interface'
     summary: An interface describing the data returned by calling `chartTrendline.toJSON()`<!-- -->.
-    name: ChartTrendlineData
+    name: Excel.Interfaces.ChartTrendlineData
     fullName: Excel.Interfaces.ChartTrendlineData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

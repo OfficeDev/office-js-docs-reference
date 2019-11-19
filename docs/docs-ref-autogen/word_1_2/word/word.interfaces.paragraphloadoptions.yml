@@ -5,11 +5,10 @@ items:
       Represents a single paragraph in a selection, range, content control, or document body.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: ParagraphLoadOptions
+    name: Word.Interfaces.ParagraphLoadOptions
     fullName: Word.Interfaces.ParagraphLoadOptions
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -257,8 +256,6 @@ items:
           - boolean
 references:
   - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
-    name: FontLoadOptions
-    fullName: Word.Interfaces.FontLoadOptions
+    name: Word.Interfaces.FontLoadOptions
   - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
-    name: ContentControlLoadOptions
-    fullName: Word.Interfaces.ContentControlLoadOptions
+    name: Word.Interfaces.ContentControlLoadOptions

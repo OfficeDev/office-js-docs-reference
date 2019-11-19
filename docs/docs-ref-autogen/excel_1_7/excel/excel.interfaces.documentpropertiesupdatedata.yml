@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the DocumentProperties object, for use in `documentProperties.set({ ... })`<!--
       -->.
-    name: DocumentPropertiesUpdateData
+    name: Excel.Interfaces.DocumentPropertiesUpdateData
     fullName: Excel.Interfaces.DocumentPropertiesUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

@@ -5,11 +5,10 @@ items:
       A container for the ink in a word in a paragraph.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: InkWordLoadOptions
+    name: OneNote.Interfaces.InkWordLoadOptions
     fullName: OneNote.Interfaces.InkWordLoadOptions
     langs:
       - typeScript
-    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -91,5 +90,4 @@ items:
           - boolean
 references:
   - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
-    name: ParagraphLoadOptions
-    fullName: OneNote.Interfaces.ParagraphLoadOptions
+    name: OneNote.Interfaces.ParagraphLoadOptions

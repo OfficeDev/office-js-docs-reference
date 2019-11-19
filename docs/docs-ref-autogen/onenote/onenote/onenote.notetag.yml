@@ -5,16 +5,13 @@ items:
       A container for the NoteTag in a paragraph.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: NoteTag
+    name: OneNote.NoteTag
     fullName: OneNote.NoteTag
     langs:
       - typeScript
-    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.NoteTag#context:member'
@@ -228,13 +225,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
-    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.NoteTag:class'
-    name: NoteTag
-    fullName: OneNote.NoteTag
+    name: OneNote.NoteTag
   - uid: 'onenote!OneNote.Interfaces.NoteTagLoadOptions:interface'
-    name: NoteTagLoadOptions
-    fullName: OneNote.Interfaces.NoteTagLoadOptions
+    name: OneNote.Interfaces.NoteTagLoadOptions
   - uid: 'onenote!OneNote.NoteTag#status~0:complex'
     name: >-
       OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" |
@@ -249,8 +243,7 @@ references:
       - name: ' | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"'
         fullName: ' | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"'
   - uid: 'onenote!OneNote.Interfaces.NoteTagData:interface'
-    name: NoteTagData
-    fullName: OneNote.Interfaces.NoteTagData
+    name: OneNote.Interfaces.NoteTagData
   - uid: 'onenote!OneNote.NoteTag#type~0:complex'
     name: >-
       OneNote.NoteTagType | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" |

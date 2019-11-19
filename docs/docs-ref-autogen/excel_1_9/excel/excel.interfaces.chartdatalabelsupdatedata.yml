@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface'
     summary: 'An interface for updating data on the ChartDataLabels object, for use in `chartDataLabels.set({ ... })`<!-- -->.'
-    name: ChartDataLabelsUpdateData
+    name: Excel.Interfaces.ChartDataLabelsUpdateData
     fullName: Excel.Interfaces.ChartDataLabelsUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -266,8 +265,7 @@ items:
           - 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#verticalAlignment~0:complex'
 references:
   - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatUpdateData:interface'
-    name: ChartDataLabelFormatUpdateData
-    fullName: Excel.Interfaces.ChartDataLabelFormatUpdateData
+    name: Excel.Interfaces.ChartDataLabelFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData#horizontalAlignment~0:complex'
     name: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
     fullName: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"

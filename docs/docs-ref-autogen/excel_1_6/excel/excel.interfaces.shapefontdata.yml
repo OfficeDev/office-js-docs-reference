@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.ShapeFontData:interface'
     summary: An interface describing the data returned by calling `shapeFont.toJSON()`<!-- -->.
-    name: ShapeFontData
+    name: Excel.Interfaces.ShapeFontData
     fullName: Excel.Interfaces.ShapeFontData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

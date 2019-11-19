@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.BindingData:interface'
     summary: An interface describing the data returned by calling `binding.toJSON()`<!-- -->.
-    name: BindingData
+    name: Excel.Interfaces.BindingData
     fullName: Excel.Interfaces.BindingData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

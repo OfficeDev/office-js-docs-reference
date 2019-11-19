@@ -3,11 +3,10 @@ items:
   - uid: 'office!Office.CustomXmlPrefixMappings:interface'
     summary: Represents a collection of CustomXmlPart objects.
     remarks: '**Hosts**: Word'
-    name: CustomXmlPrefixMappings
+    name: Office.CustomXmlPrefixMappings
     fullName: Office.CustomXmlPrefixMappings
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:
@@ -235,8 +234,7 @@ items:
             - 'office!Office.CustomXmlPrefixMappings#getPrefixAsync~1:complex'
 references:
   - uid: 'office!Office.AsyncContextOptions:interface'
-    name: AsyncContextOptions
-    fullName: Office.AsyncContextOptions
+    name: Office.AsyncContextOptions
   - uid: 'office!Office.CustomXmlPrefixMappings#addNamespaceAsync~0:complex'
     name: '(result: AsyncResult<void>) => void'
     fullName: '(result: Office.AsyncResult<void>) => void'

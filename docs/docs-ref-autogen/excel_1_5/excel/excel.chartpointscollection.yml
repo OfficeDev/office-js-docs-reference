@@ -5,16 +5,13 @@ items:
       A collection of all the chart points within a series inside a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartPointsCollection
+    name: Excel.ChartPointsCollection
     fullName: Excel.ChartPointsCollection
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartPointsCollection#context:member'
@@ -246,7 +243,6 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartPointsCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -257,8 +253,7 @@ references:
       - name: <number>
         fullName: <number>
   - uid: 'excel!Excel.ChartPoint:class'
-    name: ChartPoint
-    fullName: Excel.ChartPoint
+    name: Excel.ChartPoint
   - uid: 'excel!Excel.ChartPointsCollection#items~0:complex'
     name: 'Excel.ChartPoint[]'
     fullName: 'Excel.ChartPoint[]'
@@ -269,8 +264,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.ChartPointsCollection:class'
-    name: ChartPointsCollection
-    fullName: Excel.ChartPointsCollection
+    name: Excel.ChartPointsCollection
   - uid: 'excel!Excel.ChartPointsCollection#load~0:complex'
     name: Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -286,5 +280,4 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.ChartPointsCollectionData:interface'
-    name: ChartPointsCollectionData
-    fullName: Excel.Interfaces.ChartPointsCollectionData
+    name: Excel.Interfaces.ChartPointsCollectionData

@@ -5,16 +5,13 @@ items:
       Represents a collection of worksheet objects that are part of the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: WorksheetCollection
+    name: Excel.WorksheetCollection
     fullName: Excel.WorksheetCollection
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.WorksheetCollection#add:member(1)'
@@ -407,11 +404,9 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Worksheet:class'
-    name: Worksheet
-    fullName: Excel.Worksheet
+    name: Excel.Worksheet
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.WorksheetCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -431,8 +426,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.WorksheetCollection:class'
-    name: WorksheetCollection
-    fullName: Excel.WorksheetCollection
+    name: Excel.WorksheetCollection
   - uid: 'excel!Excel.WorksheetCollection#load~0:complex'
     name: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -448,5 +442,4 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.WorksheetCollectionData:interface'
-    name: WorksheetCollectionData
-    fullName: Excel.Interfaces.WorksheetCollectionData
+    name: Excel.Interfaces.WorksheetCollectionData

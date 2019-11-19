@@ -7,11 +7,10 @@ items:
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: DataValidationRule
+    name: Excel.DataValidationRule
     fullName: Excel.DataValidationRule
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:
@@ -195,14 +194,10 @@ items:
           ```
 references:
   - uid: 'excel!Excel.CustomDataValidation:interface'
-    name: CustomDataValidation
-    fullName: Excel.CustomDataValidation
+    name: Excel.CustomDataValidation
   - uid: 'excel!Excel.DateTimeDataValidation:interface'
-    name: DateTimeDataValidation
-    fullName: Excel.DateTimeDataValidation
+    name: Excel.DateTimeDataValidation
   - uid: 'excel!Excel.BasicDataValidation:interface'
-    name: BasicDataValidation
-    fullName: Excel.BasicDataValidation
+    name: Excel.BasicDataValidation
   - uid: 'excel!Excel.ListDataValidation:interface'
-    name: ListDataValidation
-    fullName: Excel.ListDataValidation
+    name: Excel.ListDataValidation

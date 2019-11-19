@@ -5,16 +5,13 @@ items:
       Represents a collection of Paragraph objects.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: ParagraphCollection
+    name: OneNote.ParagraphCollection
     fullName: OneNote.ParagraphCollection
     langs:
       - typeScript
-    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.ParagraphCollection#context:member'
@@ -375,10 +372,8 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
-    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.Paragraph:class'
-    name: Paragraph
-    fullName: OneNote.Paragraph
+    name: OneNote.Paragraph
   - uid: 'onenote!OneNote.ParagraphCollection#items~0:complex'
     name: 'OneNote.Paragraph[]'
     fullName: 'OneNote.Paragraph[]'
@@ -389,8 +384,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'onenote!OneNote.ParagraphCollection:class'
-    name: ParagraphCollection
-    fullName: OneNote.ParagraphCollection
+    name: OneNote.ParagraphCollection
   - uid: 'onenote!OneNote.ParagraphCollection#load~0:complex'
     name: OneNote.Interfaces.ParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
     fullName: OneNote.Interfaces.ParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
@@ -406,5 +400,4 @@ references:
   - uid: 'onenote!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionData:interface'
-    name: ParagraphCollectionData
-    fullName: OneNote.Interfaces.ParagraphCollectionData
+    name: OneNote.Interfaces.ParagraphCollectionData

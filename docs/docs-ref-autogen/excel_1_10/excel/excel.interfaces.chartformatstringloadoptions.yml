@@ -7,11 +7,10 @@ items:
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartFormatStringLoadOptions
+    name: Excel.Interfaces.ChartFormatStringLoadOptions
     fullName: Excel.Interfaces.ChartFormatStringLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -48,5 +47,4 @@ items:
           - 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
-    name: ChartFontLoadOptions
-    fullName: Excel.Interfaces.ChartFontLoadOptions
+    name: Excel.Interfaces.ChartFontLoadOptions

@@ -5,11 +5,10 @@ items:
     remarks: >-
       `FileType.Text` is only supported in Word, `FileType.Pdf` is only supported in Word on the web, Windows, and Mac,
       and PowerPoint.
-    name: FileType
+    name: Office.FileType
     fullName: Office.FileType
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: enum
     package: office!
     children:

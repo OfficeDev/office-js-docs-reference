@@ -5,16 +5,13 @@ items:
       Represents a collection of SlicerStyle objects.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: SlicerStyleCollection
+    name: Excel.SlicerStyleCollection
     fullName: Excel.SlicerStyleCollection
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.SlicerStyleCollection#add:member(1)'
@@ -263,11 +260,9 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.SlicerStyle:class'
-    name: SlicerStyle
-    fullName: Excel.SlicerStyle
+    name: Excel.SlicerStyle
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.SlicerStyleCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -287,8 +282,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.SlicerStyleCollection:class'
-    name: SlicerStyleCollection
-    fullName: Excel.SlicerStyleCollection
+    name: Excel.SlicerStyleCollection
   - uid: 'excel!Excel.SlicerStyleCollection#load~0:complex'
     name: Excel.Interfaces.SlicerStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.SlicerStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -313,5 +307,4 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.Interfaces.SlicerStyleCollectionData:interface'
-    name: SlicerStyleCollectionData
-    fullName: Excel.Interfaces.SlicerStyleCollectionData
+    name: Excel.Interfaces.SlicerStyleCollectionData

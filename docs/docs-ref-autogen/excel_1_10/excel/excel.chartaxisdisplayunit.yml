@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.ChartAxisDisplayUnit:enum'
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: ChartAxisDisplayUnit
+    name: Excel.ChartAxisDisplayUnit
     fullName: Excel.ChartAxisDisplayUnit
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.NamedItemCollectionData:interface'
     summary: An interface describing the data returned by calling `namedItemCollection.toJSON()`<!-- -->.
-    name: NamedItemCollectionData
+    name: Excel.Interfaces.NamedItemCollectionData
     fullName: Excel.Interfaces.NamedItemCollectionData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

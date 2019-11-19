@@ -7,16 +7,13 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: NamedItemCollection
+    name: Excel.NamedItemCollection
     fullName: Excel.NamedItemCollection
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.NamedItemCollection#context:member'
@@ -201,10 +198,8 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.NamedItem:class'
-    name: NamedItem
-    fullName: Excel.NamedItem
+    name: Excel.NamedItem
   - uid: 'excel!Excel.NamedItemCollection#items~0:complex'
     name: 'Excel.NamedItem[]'
     fullName: 'Excel.NamedItem[]'
@@ -215,8 +210,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.NamedItemCollection:class'
-    name: NamedItemCollection
-    fullName: Excel.NamedItemCollection
+    name: Excel.NamedItemCollection
   - uid: 'excel!Excel.NamedItemCollection#load~0:complex'
     name: Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -232,5 +226,4 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.NamedItemCollectionData:interface'
-    name: NamedItemCollectionData
-    fullName: Excel.Interfaces.NamedItemCollectionData
+    name: Excel.Interfaces.NamedItemCollectionData

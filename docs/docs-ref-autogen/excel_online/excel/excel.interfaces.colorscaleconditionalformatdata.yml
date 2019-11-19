@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatData:interface'
     summary: An interface describing the data returned by calling `colorScaleConditionalFormat.toJSON()`<!-- -->.
-    name: ColorScaleConditionalFormatData
+    name: Excel.Interfaces.ColorScaleConditionalFormatData
     fullName: Excel.Interfaces.ColorScaleConditionalFormatData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -46,5 +45,4 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.ConditionalColorScaleCriteria:interface'
-    name: ConditionalColorScaleCriteria
-    fullName: Excel.ConditionalColorScaleCriteria
+    name: Excel.ConditionalColorScaleCriteria

@@ -5,11 +5,10 @@ items:
       Represents which parts of the error bar to include.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartErrorBarsInclude
+    name: Excel.ChartErrorBarsInclude
     fullName: Excel.ChartErrorBarsInclude
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

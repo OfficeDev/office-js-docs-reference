@@ -2,16 +2,13 @@
 items:
   - uid: 'excel!Excel.PageBreak:class'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: PageBreak
+    name: Excel.PageBreak
     fullName: Excel.PageBreak
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PageBreak#columnIndex:member'
@@ -192,16 +189,11 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Range:class'
-    name: Range
-    fullName: Excel.Range
+    name: Excel.Range
   - uid: 'excel!Excel.PageBreak:class'
-    name: PageBreak
-    fullName: Excel.PageBreak
+    name: Excel.PageBreak
   - uid: 'excel!Excel.Interfaces.PageBreakLoadOptions:interface'
-    name: PageBreakLoadOptions
-    fullName: Excel.Interfaces.PageBreakLoadOptions
+    name: Excel.Interfaces.PageBreakLoadOptions
   - uid: 'excel!Excel.Interfaces.PageBreakData:interface'
-    name: PageBreakData
-    fullName: Excel.Interfaces.PageBreakData
+    name: Excel.Interfaces.PageBreakData

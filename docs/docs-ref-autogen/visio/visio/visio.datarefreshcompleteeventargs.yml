@@ -5,11 +5,10 @@ items:
       Provides information about the document that raised the DataRefreshComplete event.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: DataRefreshCompleteEventArgs
+    name: Visio.DataRefreshCompleteEventArgs
     fullName: Visio.DataRefreshCompleteEventArgs
     langs:
       - typeScript
-    namespace: 'visio!Visio:namespace'
     type: interface
     package: visio!
     remarks: |-
@@ -70,5 +69,4 @@ items:
           - boolean
 references:
   - uid: 'visio!Visio.Document:class'
-    name: Document
-    fullName: Visio.Document
+    name: Visio.Document

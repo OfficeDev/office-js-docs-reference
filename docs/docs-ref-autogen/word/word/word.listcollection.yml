@@ -5,16 +5,13 @@ items:
       Contains a collection of [Word.List](xref:word!Word.List:class) objects.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: ListCollection
+    name: Word.ListCollection
     fullName: Word.ListCollection
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.ListCollection#context:member'
@@ -286,10 +283,8 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.List:class'
-    name: List
-    fullName: Word.List
+    name: Word.List
   - uid: 'word!Word.ListCollection#items~0:complex'
     name: 'Word.List[]'
     fullName: 'Word.List[]'
@@ -300,8 +295,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.ListCollection:class'
-    name: ListCollection
-    fullName: Word.ListCollection
+    name: Word.ListCollection
   - uid: 'word!Word.ListCollection#load~0:complex'
     name: Word.Interfaces.ListCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
     fullName: Word.Interfaces.ListCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
@@ -317,5 +311,4 @@ references:
   - uid: 'word!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'word!Word.Interfaces.ListCollectionData:interface'
-    name: ListCollectionData
-    fullName: Word.Interfaces.ListCollectionData
+    name: Word.Interfaces.ListCollectionData

@@ -9,16 +9,13 @@ items:
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    name: CustomXmlPartScopedCollection
+    name: Word.CustomXmlPartScopedCollection
     fullName: Word.CustomXmlPartScopedCollection
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.CustomXmlPartScopedCollection#context:member'
@@ -309,7 +306,6 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.CustomXmlPartScopedCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -320,8 +316,7 @@ references:
       - name: <number>
         fullName: <number>
   - uid: 'word!Word.CustomXmlPart:class'
-    name: CustomXmlPart
-    fullName: Word.CustomXmlPart
+    name: Word.CustomXmlPart
   - uid: 'word!Word.CustomXmlPartScopedCollection#items~0:complex'
     name: 'Word.CustomXmlPart[]'
     fullName: 'Word.CustomXmlPart[]'
@@ -332,8 +327,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.CustomXmlPartScopedCollection:class'
-    name: CustomXmlPartScopedCollection
-    fullName: Word.CustomXmlPartScopedCollection
+    name: Word.CustomXmlPartScopedCollection
   - uid: 'word!Word.CustomXmlPartScopedCollection#load~0:complex'
     name: Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
     fullName: Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
@@ -349,5 +343,4 @@ references:
   - uid: 'word!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'word!Word.Interfaces.CustomXmlPartScopedCollectionData:interface'
-    name: CustomXmlPartScopedCollectionData
-    fullName: Word.Interfaces.CustomXmlPartScopedCollectionData
+    name: Word.Interfaces.CustomXmlPartScopedCollectionData

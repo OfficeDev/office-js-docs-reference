@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.FilterData:interface'
     summary: An interface describing the data returned by calling `filter.toJSON()`<!-- -->.
-    name: FilterData
+    name: Excel.Interfaces.FilterData
     fullName: Excel.Interfaces.FilterData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -28,5 +27,4 @@ items:
           - 'excel!Excel.FilterCriteria:interface'
 references:
   - uid: 'excel!Excel.FilterCriteria:interface'
-    name: FilterCriteria
-    fullName: Excel.FilterCriteria
+    name: Excel.FilterCriteria

@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the ConditionalRangeBorderCollection object, for use in
       `conditionalRangeBorderCollection.set({ ... })`<!-- -->.
-    name: ConditionalRangeBorderCollectionUpdateData
+    name: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
     fullName: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -90,8 +89,7 @@ items:
           - 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface'
-    name: ConditionalRangeBorderUpdateData
-    fullName: Excel.Interfaces.ConditionalRangeBorderUpdateData
+    name: Excel.Interfaces.ConditionalRangeBorderUpdateData
   - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items~0:complex'
     name: 'Excel.Interfaces.ConditionalRangeBorderData[]'
     fullName: 'Excel.Interfaces.ConditionalRangeBorderData[]'

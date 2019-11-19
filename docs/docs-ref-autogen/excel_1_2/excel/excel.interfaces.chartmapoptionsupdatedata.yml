@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartMapOptionsUpdateData:interface'
     summary: 'An interface for updating data on the ChartMapOptions object, for use in `chartMapOptions.set({ ... })`<!-- -->.'
-    name: ChartMapOptionsUpdateData
+    name: Excel.Interfaces.ChartMapOptionsUpdateData
     fullName: Excel.Interfaces.ChartMapOptionsUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

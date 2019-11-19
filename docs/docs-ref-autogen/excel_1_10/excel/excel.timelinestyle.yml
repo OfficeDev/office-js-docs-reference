@@ -5,16 +5,13 @@ items:
       Represents a Timeline style, which defines style elements by region in the Timeline.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: TimelineStyle
+    name: Excel.TimelineStyle
     fullName: Excel.TimelineStyle
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TimelineStyle#context:member'
@@ -245,18 +242,13 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.TimelineStyle:class'
-    name: TimelineStyle
-    fullName: Excel.TimelineStyle
+    name: Excel.TimelineStyle
   - uid: 'excel!Excel.Interfaces.TimelineStyleLoadOptions:interface'
-    name: TimelineStyleLoadOptions
-    fullName: Excel.Interfaces.TimelineStyleLoadOptions
+    name: Excel.Interfaces.TimelineStyleLoadOptions
   - uid: 'excel!Excel.Interfaces.TimelineStyleUpdateData:interface'
-    name: TimelineStyleUpdateData
-    fullName: Excel.Interfaces.TimelineStyleUpdateData
+    name: Interfaces.TimelineStyleUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.TimelineStyleData:interface'
-    name: TimelineStyleData
-    fullName: Excel.Interfaces.TimelineStyleData
+    name: Excel.Interfaces.TimelineStyleData

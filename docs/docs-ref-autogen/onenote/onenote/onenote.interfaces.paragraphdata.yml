@@ -2,11 +2,10 @@
 items:
   - uid: 'onenote!OneNote.Interfaces.ParagraphData:interface'
     summary: An interface describing the data returned by calling "paragraph.toJSON()".
-    name: ParagraphData
+    name: OneNote.Interfaces.ParagraphData
     fullName: OneNote.Interfaces.ParagraphData
     langs:
       - typeScript
-    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -124,8 +123,7 @@ items:
           - 'onenote!OneNote.Interfaces.ParagraphData#type~0:complex'
 references:
   - uid: 'onenote!OneNote.Interfaces.ImageData:interface'
-    name: ImageData
-    fullName: OneNote.Interfaces.ImageData
+    name: OneNote.Interfaces.ImageData
   - uid: 'onenote!OneNote.Interfaces.ParagraphData#inkWords~0:complex'
     name: 'OneNote.Interfaces.InkWordData[]'
     fullName: 'OneNote.Interfaces.InkWordData[]'
@@ -145,11 +143,9 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'onenote!OneNote.Interfaces.RichTextData:interface'
-    name: RichTextData
-    fullName: OneNote.Interfaces.RichTextData
+    name: OneNote.Interfaces.RichTextData
   - uid: 'onenote!OneNote.Interfaces.TableData:interface'
-    name: TableData
-    fullName: OneNote.Interfaces.TableData
+    name: OneNote.Interfaces.TableData
   - uid: 'onenote!OneNote.Interfaces.ParagraphData#type~0:complex'
     name: OneNote.ParagraphType | "RichText" | "Image" | "Table" | "Ink" | "Other"
     fullName: OneNote.ParagraphType | "RichText" | "Image" | "Table" | "Ink" | "Other"

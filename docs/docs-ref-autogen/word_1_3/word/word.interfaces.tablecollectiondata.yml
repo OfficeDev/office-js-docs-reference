@@ -2,11 +2,10 @@
 items:
   - uid: 'word!Word.Interfaces.TableCollectionData:interface'
     summary: An interface describing the data returned by calling "tableCollection.toJSON()".
-    name: TableCollectionData
+    name: Word.Interfaces.TableCollectionData
     fullName: Word.Interfaces.TableCollectionData
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

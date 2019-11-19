@@ -5,11 +5,10 @@ items:
       Represents the title of a chart axis.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartAxisTitleLoadOptions
+    name: Excel.Interfaces.ChartAxisTitleLoadOptions
     fullName: Excel.Interfaces.ChartAxisTitleLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -78,5 +77,4 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleFormatLoadOptions:interface'
-    name: ChartAxisTitleFormatLoadOptions
-    fullName: Excel.Interfaces.ChartAxisTitleFormatLoadOptions
+    name: Excel.Interfaces.ChartAxisTitleFormatLoadOptions

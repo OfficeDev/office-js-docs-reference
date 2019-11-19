@@ -5,11 +5,10 @@ items:
       Specifies the type of the category axis.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartAxisCategoryType
+    name: Excel.ChartAxisCategoryType
     fullName: Excel.ChartAxisCategoryType
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

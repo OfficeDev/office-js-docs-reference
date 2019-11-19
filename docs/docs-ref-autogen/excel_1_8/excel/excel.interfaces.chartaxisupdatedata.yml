@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData:interface'
     summary: 'An interface for updating data on the ChartAxis object, for use in `chartAxis.set({ ... })`<!-- -->.'
-    name: ChartAxisUpdateData
+    name: Excel.Interfaces.ChartAxisUpdateData
     fullName: Excel.Interfaces.ChartAxisUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -554,11 +553,9 @@ references:
       - name: ' | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"'
         fullName: ' | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"'
   - uid: 'excel!Excel.Interfaces.ChartAxisFormatUpdateData:interface'
-    name: ChartAxisFormatUpdateData
-    fullName: Excel.Interfaces.ChartAxisFormatUpdateData
+    name: Excel.Interfaces.ChartAxisFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ChartGridlinesUpdateData:interface'
-    name: ChartGridlinesUpdateData
-    fullName: Excel.Interfaces.ChartGridlinesUpdateData
+    name: Excel.Interfaces.ChartGridlinesUpdateData
   - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#majorTickMark~0:complex'
     name: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
     fullName: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
@@ -623,5 +620,4 @@ references:
       - name: ' | "NextToAxis" | "High" | "Low" | "None"'
         fullName: ' | "NextToAxis" | "High" | "Low" | "None"'
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleUpdateData:interface'
-    name: ChartAxisTitleUpdateData
-    fullName: Excel.Interfaces.ChartAxisTitleUpdateData
+    name: Excel.Interfaces.ChartAxisTitleUpdateData

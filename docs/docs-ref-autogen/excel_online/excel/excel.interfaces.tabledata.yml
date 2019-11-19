@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.TableData:interface'
     summary: An interface describing the data returned by calling `table.toJSON()`<!-- -->.
-    name: TableData
+    name: Excel.Interfaces.TableData
     fullName: Excel.Interfaces.TableData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -263,8 +262,7 @@ items:
           - string
 references:
   - uid: 'excel!Excel.Interfaces.AutoFilterData:interface'
-    name: AutoFilterData
-    fullName: Excel.Interfaces.AutoFilterData
+    name: Excel.Interfaces.AutoFilterData
   - uid: 'excel!Excel.Interfaces.TableData#columns~0:complex'
     name: 'Excel.Interfaces.TableColumnData[]'
     fullName: 'Excel.Interfaces.TableColumnData[]'
@@ -284,5 +282,4 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.TableSortData:interface'
-    name: TableSortData
-    fullName: Excel.Interfaces.TableSortData
+    name: Excel.Interfaces.TableSortData

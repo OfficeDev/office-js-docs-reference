@@ -2,11 +2,10 @@
 items:
   - uid: 'office!Office.TableData:class'
     summary: 'Represents the data in a table or an [Office.TableBinding](xref:office!Office.TableBinding:interface)<!-- -->.'
-    name: TableData
+    name: Office.TableData
     fullName: Office.TableData
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: class
     package: office!
     children:

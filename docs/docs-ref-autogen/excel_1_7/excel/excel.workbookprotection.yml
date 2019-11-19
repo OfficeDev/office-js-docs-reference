@@ -5,16 +5,13 @@ items:
       Represents the protection of a workbook object.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: WorkbookProtection
+    name: Excel.WorkbookProtection
     fullName: Excel.WorkbookProtection
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.WorkbookProtection#context:member'
@@ -237,13 +234,9 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.WorkbookProtection:class'
-    name: WorkbookProtection
-    fullName: Excel.WorkbookProtection
+    name: Excel.WorkbookProtection
   - uid: 'excel!Excel.Interfaces.WorkbookProtectionLoadOptions:interface'
-    name: WorkbookProtectionLoadOptions
-    fullName: Excel.Interfaces.WorkbookProtectionLoadOptions
+    name: Excel.Interfaces.WorkbookProtectionLoadOptions
   - uid: 'excel!Excel.Interfaces.WorkbookProtectionData:interface'
-    name: WorkbookProtectionData
-    fullName: Excel.Interfaces.WorkbookProtectionData
+    name: Excel.Interfaces.WorkbookProtectionData

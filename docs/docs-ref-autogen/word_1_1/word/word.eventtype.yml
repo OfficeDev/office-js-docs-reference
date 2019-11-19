@@ -7,11 +7,10 @@ items:
 
 
       \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: EventType
+    name: Word.EventType
     fullName: Word.EventType
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: enum
     package: word!
     children:

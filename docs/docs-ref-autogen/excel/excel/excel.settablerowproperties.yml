@@ -5,16 +5,13 @@ items:
       Represents the input parameter of setRowProperties.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: SettableRowProperties
+    name: Excel.SettableRowProperties
     fullName: Excel.SettableRowProperties
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     extends:
       - 'excel!Excel.SettableCellProperties:interface'
-    inheritance:
-      - type: 'excel!Excel.SettableCellProperties:interface'
     package: excel!
     children:
       - 'excel!Excel.SettableRowProperties#format:member'
@@ -55,7 +52,6 @@ items:
 references:
   - uid: 'excel!Excel.SettableCellProperties:interface'
     name: SettableCellProperties
-    fullName: Excel.SettableCellProperties
   - uid: 'excel!Excel.SettableRowProperties#format~0:complex'
     name: |-
       Excel.CellPropertiesFormat & {

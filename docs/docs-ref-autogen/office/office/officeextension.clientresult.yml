@@ -4,11 +4,10 @@ items:
     summary: >-
       Contains the result for methods that return primitive types. The object's value property is retrieved from the
       document after `context.sync()` is invoked.
-    name: ClientResult
+    name: OfficeExtension.ClientResult
     fullName: OfficeExtension.ClientResult
     langs:
       - typeScript
-    namespace: 'office!OfficeExtension:namespace'
     type: class
     package: office!
     children:

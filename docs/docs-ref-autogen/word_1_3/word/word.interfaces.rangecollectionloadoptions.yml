@@ -5,11 +5,10 @@ items:
       Contains a collection of [Word.Range](xref:word!Word.Range:class) objects.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: RangeCollectionLoadOptions
+    name: Word.Interfaces.RangeCollectionLoadOptions
     fullName: Word.Interfaces.RangeCollectionLoadOptions
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -258,17 +257,12 @@ items:
           - boolean
 references:
   - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
-    name: FontLoadOptions
-    fullName: Word.Interfaces.FontLoadOptions
+    name: Word.Interfaces.FontLoadOptions
   - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
-    name: BodyLoadOptions
-    fullName: Word.Interfaces.BodyLoadOptions
+    name: Word.Interfaces.BodyLoadOptions
   - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
-    name: ContentControlLoadOptions
-    fullName: Word.Interfaces.ContentControlLoadOptions
+    name: Word.Interfaces.ContentControlLoadOptions
   - uid: 'word!Word.Interfaces.TableLoadOptions:interface'
-    name: TableLoadOptions
-    fullName: Word.Interfaces.TableLoadOptions
+    name: Word.Interfaces.TableLoadOptions
   - uid: 'word!Word.Interfaces.TableCellLoadOptions:interface'
-    name: TableCellLoadOptions
-    fullName: Word.Interfaces.TableCellLoadOptions
+    name: Word.Interfaces.TableCellLoadOptions

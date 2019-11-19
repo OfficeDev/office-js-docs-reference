@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartPointUpdateData:interface'
     summary: 'An interface for updating data on the ChartPoint object, for use in `chartPoint.set({ ... })`<!-- -->.'
-    name: ChartPointUpdateData
+    name: Excel.Interfaces.ChartPointUpdateData
     fullName: Excel.Interfaces.ChartPointUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -126,11 +125,9 @@ items:
           - 'excel!Excel.Interfaces.ChartPointUpdateData#markerStyle~0:complex'
 references:
   - uid: 'excel!Excel.Interfaces.ChartDataLabelUpdateData:interface'
-    name: ChartDataLabelUpdateData
-    fullName: Excel.Interfaces.ChartDataLabelUpdateData
+    name: Excel.Interfaces.ChartDataLabelUpdateData
   - uid: 'excel!Excel.Interfaces.ChartPointFormatUpdateData:interface'
-    name: ChartPointFormatUpdateData
-    fullName: Excel.Interfaces.ChartPointFormatUpdateData
+    name: Excel.Interfaces.ChartPointFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ChartPointUpdateData#markerStyle~0:complex'
     name: >-
       Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star" |

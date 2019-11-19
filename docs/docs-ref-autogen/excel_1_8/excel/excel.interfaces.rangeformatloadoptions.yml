@@ -5,11 +5,10 @@ items:
       A format object encapsulating the range's font, fill, borders, alignment, and other properties.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: RangeFormatLoadOptions
+    name: Excel.Interfaces.RangeFormatLoadOptions
     fullName: Excel.Interfaces.RangeFormatLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -235,14 +234,10 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface'
-    name: RangeBorderCollectionLoadOptions
-    fullName: Excel.Interfaces.RangeBorderCollectionLoadOptions
+    name: Excel.Interfaces.RangeBorderCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.RangeFillLoadOptions:interface'
-    name: RangeFillLoadOptions
-    fullName: Excel.Interfaces.RangeFillLoadOptions
+    name: Excel.Interfaces.RangeFillLoadOptions
   - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions:interface'
-    name: RangeFontLoadOptions
-    fullName: Excel.Interfaces.RangeFontLoadOptions
+    name: Excel.Interfaces.RangeFontLoadOptions
   - uid: 'excel!Excel.Interfaces.FormatProtectionLoadOptions:interface'
-    name: FormatProtectionLoadOptions
-    fullName: Excel.Interfaces.FormatProtectionLoadOptions
+    name: Excel.Interfaces.FormatProtectionLoadOptions

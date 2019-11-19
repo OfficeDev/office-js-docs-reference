@@ -7,16 +7,13 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: AutoFilter
+    name: Excel.AutoFilter
     fullName: Excel.AutoFilter
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.AutoFilter#apply:member(1)'
@@ -318,11 +315,9 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.FilterCriteria:interface'
-    name: FilterCriteria
-    fullName: Excel.FilterCriteria
+    name: Excel.FilterCriteria
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.AutoFilter#criteria~0:complex'
     name: 'Excel.FilterCriteria[]'
     fullName: 'Excel.FilterCriteria[]'
@@ -333,14 +328,10 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Range:class'
-    name: Range
-    fullName: Excel.Range
+    name: Excel.Range
   - uid: 'excel!Excel.AutoFilter:class'
-    name: AutoFilter
-    fullName: Excel.AutoFilter
+    name: Excel.AutoFilter
   - uid: 'excel!Excel.Interfaces.AutoFilterLoadOptions:interface'
-    name: AutoFilterLoadOptions
-    fullName: Excel.Interfaces.AutoFilterLoadOptions
+    name: Excel.Interfaces.AutoFilterLoadOptions
   - uid: 'excel!Excel.Interfaces.AutoFilterData:interface'
-    name: AutoFilterData
-    fullName: Excel.Interfaces.AutoFilterData
+    name: Excel.Interfaces.AutoFilterData

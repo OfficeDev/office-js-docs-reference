@@ -5,16 +5,13 @@ items:
       Represents an Office.js binding that is defined in the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Binding
+    name: Excel.Binding
     fullName: Excel.Binding
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Binding#context:member'
@@ -336,13 +333,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Range:class'
-    name: Range
-    fullName: Excel.Range
+    name: Excel.Range
   - uid: 'excel!Excel.Table:class'
-    name: Table
-    fullName: Excel.Table
+    name: Excel.Table
   - uid: 'excel!Excel.Binding#getText~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -353,11 +347,9 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'excel!Excel.Binding:class'
-    name: Binding
-    fullName: Excel.Binding
+    name: Excel.Binding
   - uid: 'excel!Excel.Interfaces.BindingLoadOptions:interface'
-    name: BindingLoadOptions
-    fullName: Excel.Interfaces.BindingLoadOptions
+    name: Excel.Interfaces.BindingLoadOptions
   - uid: 'excel!Excel.Binding#onDataChanged~0:complex'
     name: OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>
@@ -387,8 +379,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: 'excel!Excel.Interfaces.BindingData:interface'
-    name: BindingData
-    fullName: Excel.Interfaces.BindingData
+    name: Excel.Interfaces.BindingData
   - uid: 'excel!Excel.Binding#type~0:complex'
     name: Excel.BindingType | "Range" | "Table" | "Text"
     fullName: Excel.BindingType | "Range" | "Table" | "Text"

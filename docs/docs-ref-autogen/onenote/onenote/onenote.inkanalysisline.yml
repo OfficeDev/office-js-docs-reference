@@ -5,16 +5,13 @@ items:
       Represents ink analysis data for an identified text line formed by ink strokes.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: InkAnalysisLine
+    name: OneNote.InkAnalysisLine
     fullName: OneNote.InkAnalysisLine
     langs:
       - typeScript
-    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.InkAnalysisLine#context:member'
@@ -305,24 +302,17 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
-    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.InkAnalysisLine:class'
-    name: InkAnalysisLine
-    fullName: OneNote.InkAnalysisLine
+    name: OneNote.InkAnalysisLine
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions:interface'
-    name: InkAnalysisLineLoadOptions
-    fullName: OneNote.Interfaces.InkAnalysisLineLoadOptions
+    name: OneNote.Interfaces.InkAnalysisLineLoadOptions
   - uid: 'onenote!OneNote.InkAnalysisParagraph:class'
-    name: InkAnalysisParagraph
-    fullName: OneNote.InkAnalysisParagraph
+    name: OneNote.InkAnalysisParagraph
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineUpdateData:interface'
-    name: InkAnalysisLineUpdateData
-    fullName: OneNote.Interfaces.InkAnalysisLineUpdateData
+    name: Interfaces.InkAnalysisLineUpdateData
   - uid: 'onenote!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData:interface'
-    name: InkAnalysisLineData
-    fullName: OneNote.Interfaces.InkAnalysisLineData
+    name: OneNote.Interfaces.InkAnalysisLineData
   - uid: 'onenote!OneNote.InkAnalysisWordCollection:class'
-    name: InkAnalysisWordCollection
-    fullName: OneNote.InkAnalysisWordCollection
+    name: OneNote.InkAnalysisWordCollection

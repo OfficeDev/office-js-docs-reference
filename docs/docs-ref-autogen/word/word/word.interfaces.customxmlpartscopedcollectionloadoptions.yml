@@ -9,11 +9,10 @@ items:
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    name: CustomXmlPartScopedCollectionLoadOptions
+    name: Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions
     fullName: Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

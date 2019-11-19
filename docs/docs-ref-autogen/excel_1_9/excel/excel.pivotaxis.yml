@@ -5,11 +5,10 @@ items:
       The ShowAs Calculation function for the Data Pivot Field.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: PivotAxis
+    name: Excel.PivotAxis
     fullName: Excel.PivotAxis
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

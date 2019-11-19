@@ -7,16 +7,13 @@ items:
 
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: PivotTable
+    name: Excel.PivotTable
     fullName: Excel.PivotTable
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PivotTable#context:member'
@@ -246,21 +243,15 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.PivotTable:class'
-    name: PivotTable
-    fullName: Excel.PivotTable
+    name: Excel.PivotTable
   - uid: 'excel!Excel.Interfaces.PivotTableLoadOptions:interface'
-    name: PivotTableLoadOptions
-    fullName: Excel.Interfaces.PivotTableLoadOptions
+    name: Excel.Interfaces.PivotTableLoadOptions
   - uid: 'excel!Excel.Interfaces.PivotTableUpdateData:interface'
-    name: PivotTableUpdateData
-    fullName: Excel.Interfaces.PivotTableUpdateData
+    name: Interfaces.PivotTableUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.PivotTableData:interface'
-    name: PivotTableData
-    fullName: Excel.Interfaces.PivotTableData
+    name: Excel.Interfaces.PivotTableData
   - uid: 'excel!Excel.Worksheet:class'
-    name: Worksheet
-    fullName: Excel.Worksheet
+    name: Excel.Worksheet

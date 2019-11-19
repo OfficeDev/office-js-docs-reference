@@ -7,16 +7,13 @@ items:
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: PresetCriteriaConditionalFormat
+    name: Excel.PresetCriteriaConditionalFormat
     fullName: Excel.PresetCriteriaConditionalFormat
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PresetCriteriaConditionalFormat#context:member'
@@ -245,24 +242,17 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ConditionalRangeFormat:class'
-    name: ConditionalRangeFormat
-    fullName: Excel.ConditionalRangeFormat
+    name: Excel.ConditionalRangeFormat
   - uid: 'excel!Excel.PresetCriteriaConditionalFormat:class'
-    name: PresetCriteriaConditionalFormat
-    fullName: Excel.PresetCriteriaConditionalFormat
+    name: Excel.PresetCriteriaConditionalFormat
   - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions:interface'
-    name: PresetCriteriaConditionalFormatLoadOptions
-    fullName: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
+    name: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
   - uid: 'excel!Excel.ConditionalPresetCriteriaRule:interface'
-    name: ConditionalPresetCriteriaRule
-    fullName: Excel.ConditionalPresetCriteriaRule
+    name: Excel.ConditionalPresetCriteriaRule
   - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface'
-    name: PresetCriteriaConditionalFormatUpdateData
-    fullName: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+    name: Interfaces.PresetCriteriaConditionalFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface'
-    name: PresetCriteriaConditionalFormatData
-    fullName: Excel.Interfaces.PresetCriteriaConditionalFormatData
+    name: Excel.Interfaces.PresetCriteriaConditionalFormatData

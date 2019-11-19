@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.GroupOption:enum'
     summary: '\[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: GroupOption
+    name: Excel.GroupOption
     fullName: Excel.GroupOption
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

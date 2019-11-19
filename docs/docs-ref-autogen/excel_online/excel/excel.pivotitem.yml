@@ -5,16 +5,13 @@ items:
       Represents the Excel PivotItem.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: PivotItem
+    name: Excel.PivotItem
     fullName: Excel.PivotItem
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PivotItem#context:member'
@@ -243,18 +240,13 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.PivotItem:class'
-    name: PivotItem
-    fullName: Excel.PivotItem
+    name: Excel.PivotItem
   - uid: 'excel!Excel.Interfaces.PivotItemLoadOptions:interface'
-    name: PivotItemLoadOptions
-    fullName: Excel.Interfaces.PivotItemLoadOptions
+    name: Excel.Interfaces.PivotItemLoadOptions
   - uid: 'excel!Excel.Interfaces.PivotItemUpdateData:interface'
-    name: PivotItemUpdateData
-    fullName: Excel.Interfaces.PivotItemUpdateData
+    name: Interfaces.PivotItemUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.PivotItemData:interface'
-    name: PivotItemData
-    fullName: Excel.Interfaces.PivotItemData
+    name: Excel.Interfaces.PivotItemData

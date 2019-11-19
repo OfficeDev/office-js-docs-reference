@@ -2,11 +2,10 @@
 items:
   - uid: 'onenote!OneNote.InsertLocation:enum'
     summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
-    name: InsertLocation
+    name: OneNote.InsertLocation
     fullName: OneNote.InsertLocation
     langs:
       - typeScript
-    namespace: 'onenote!OneNote:namespace'
     type: enum
     package: onenote!
     children:

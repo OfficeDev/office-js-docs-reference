@@ -5,11 +5,10 @@ items:
       Represents the results from the removeDuplicates method on range
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: RemoveDuplicatesResultLoadOptions
+    name: Excel.Interfaces.RemoveDuplicatesResultLoadOptions
     fullName: Excel.Interfaces.RemoveDuplicatesResultLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

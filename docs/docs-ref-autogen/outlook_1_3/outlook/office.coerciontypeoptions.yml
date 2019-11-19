@@ -1,11 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'outlook!Office.CoercionTypeOptions:interface'
-    name: CoercionTypeOptions
+    name: Office.CoercionTypeOptions
     fullName: Office.CoercionTypeOptions
     langs:
       - typeScript
-    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

@@ -7,16 +7,13 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: GeometricShape
+    name: Excel.GeometricShape
     fullName: Excel.GeometricShape
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.GeometricShape#context:member'
@@ -163,16 +160,11 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.GeometricShape:class'
-    name: GeometricShape
-    fullName: Excel.GeometricShape
+    name: Excel.GeometricShape
   - uid: 'excel!Excel.Interfaces.GeometricShapeLoadOptions:interface'
-    name: GeometricShapeLoadOptions
-    fullName: Excel.Interfaces.GeometricShapeLoadOptions
+    name: Excel.Interfaces.GeometricShapeLoadOptions
   - uid: 'excel!Excel.Shape:class'
-    name: Shape
-    fullName: Excel.Shape
+    name: Excel.Shape
   - uid: 'excel!Excel.Interfaces.GeometricShapeData:interface'
-    name: GeometricShapeData
-    fullName: Excel.Interfaces.GeometricShapeData
+    name: Excel.Interfaces.GeometricShapeData

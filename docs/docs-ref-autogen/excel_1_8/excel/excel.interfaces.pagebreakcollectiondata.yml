@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.PageBreakCollectionData:interface'
     summary: An interface describing the data returned by calling `pageBreakCollection.toJSON()`<!-- -->.
-    name: PageBreakCollectionData
+    name: Excel.Interfaces.PageBreakCollectionData
     fullName: Excel.Interfaces.PageBreakCollectionData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

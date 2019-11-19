@@ -1,11 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'office!Office.IPromiseConstructor:interface'
-    name: IPromiseConstructor
+    name: Office.IPromiseConstructor
     fullName: Office.IPromiseConstructor
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:

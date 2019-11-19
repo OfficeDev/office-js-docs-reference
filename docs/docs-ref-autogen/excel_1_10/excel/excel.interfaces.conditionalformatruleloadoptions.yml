@@ -5,11 +5,10 @@ items:
       Represents a rule, for all traditional rule/format pairings.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ConditionalFormatRuleLoadOptions
+    name: Excel.Interfaces.ConditionalFormatRuleLoadOptions
     fullName: Excel.Interfaces.ConditionalFormatRuleLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

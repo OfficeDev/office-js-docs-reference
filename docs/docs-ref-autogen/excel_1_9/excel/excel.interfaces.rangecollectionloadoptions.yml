@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions:interface'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: RangeCollectionLoadOptions
+    name: Excel.Interfaces.RangeCollectionLoadOptions
     fullName: Excel.Interfaces.RangeCollectionLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -482,11 +481,8 @@ items:
           - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions:interface'
-    name: DataValidationLoadOptions
-    fullName: Excel.Interfaces.DataValidationLoadOptions
+    name: Excel.Interfaces.DataValidationLoadOptions
   - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions:interface'
-    name: RangeFormatLoadOptions
-    fullName: Excel.Interfaces.RangeFormatLoadOptions
+    name: Excel.Interfaces.RangeFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
-    name: WorksheetLoadOptions
-    fullName: Excel.Interfaces.WorksheetLoadOptions
+    name: Excel.Interfaces.WorksheetLoadOptions

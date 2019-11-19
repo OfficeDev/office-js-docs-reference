@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartAxisFormatData:interface'
     summary: An interface describing the data returned by calling `chartAxisFormat.toJSON()`<!-- -->.
-    name: ChartAxisFormatData
+    name: Excel.Interfaces.ChartAxisFormatData
     fullName: Excel.Interfaces.ChartAxisFormatData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -44,8 +43,6 @@ items:
           - 'excel!Excel.Interfaces.ChartLineFormatData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartFontData:interface'
-    name: ChartFontData
-    fullName: Excel.Interfaces.ChartFontData
+    name: Excel.Interfaces.ChartFontData
   - uid: 'excel!Excel.Interfaces.ChartLineFormatData:interface'
-    name: ChartLineFormatData
-    fullName: Excel.Interfaces.ChartLineFormatData
+    name: Excel.Interfaces.ChartLineFormatData

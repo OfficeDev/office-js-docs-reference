@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.BorderLineStyle:enum'
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: BorderLineStyle
+    name: Excel.BorderLineStyle
     fullName: Excel.BorderLineStyle
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

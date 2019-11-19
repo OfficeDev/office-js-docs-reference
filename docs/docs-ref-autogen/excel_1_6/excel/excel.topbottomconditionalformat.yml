@@ -5,16 +5,13 @@ items:
       Represents a Top/Bottom conditional format.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: TopBottomConditionalFormat
+    name: Excel.TopBottomConditionalFormat
     fullName: Excel.TopBottomConditionalFormat
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TopBottomConditionalFormat#context:member'
@@ -213,24 +210,17 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ConditionalRangeFormat:class'
-    name: ConditionalRangeFormat
-    fullName: Excel.ConditionalRangeFormat
+    name: Excel.ConditionalRangeFormat
   - uid: 'excel!Excel.TopBottomConditionalFormat:class'
-    name: TopBottomConditionalFormat
-    fullName: Excel.TopBottomConditionalFormat
+    name: Excel.TopBottomConditionalFormat
   - uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatLoadOptions:interface'
-    name: TopBottomConditionalFormatLoadOptions
-    fullName: Excel.Interfaces.TopBottomConditionalFormatLoadOptions
+    name: Excel.Interfaces.TopBottomConditionalFormatLoadOptions
   - uid: 'excel!Excel.ConditionalTopBottomRule:interface'
-    name: ConditionalTopBottomRule
-    fullName: Excel.ConditionalTopBottomRule
+    name: Excel.ConditionalTopBottomRule
   - uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData:interface'
-    name: TopBottomConditionalFormatUpdateData
-    fullName: Excel.Interfaces.TopBottomConditionalFormatUpdateData
+    name: Interfaces.TopBottomConditionalFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatData:interface'
-    name: TopBottomConditionalFormatData
-    fullName: Excel.Interfaces.TopBottomConditionalFormatData
+    name: Excel.Interfaces.TopBottomConditionalFormatData

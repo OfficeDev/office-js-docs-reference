@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFontData:interface'
     summary: An interface describing the data returned by calling `conditionalRangeFont.toJSON()`<!-- -->.
-    name: ConditionalRangeFontData
+    name: Excel.Interfaces.ConditionalRangeFontData
     fullName: Excel.Interfaces.ConditionalRangeFontData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

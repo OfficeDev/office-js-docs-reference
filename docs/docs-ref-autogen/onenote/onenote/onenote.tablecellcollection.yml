@@ -5,16 +5,13 @@ items:
       Contains a collection of TableCell objects.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: TableCellCollection
+    name: OneNote.TableCellCollection
     fullName: OneNote.TableCellCollection
     langs:
       - typeScript
-    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.TableCellCollection#context:member'
@@ -246,10 +243,8 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
-    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.TableCell:class'
-    name: TableCell
-    fullName: OneNote.TableCell
+    name: OneNote.TableCell
   - uid: 'onenote!OneNote.TableCellCollection#items~0:complex'
     name: 'OneNote.TableCell[]'
     fullName: 'OneNote.TableCell[]'
@@ -260,8 +255,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'onenote!OneNote.TableCellCollection:class'
-    name: TableCellCollection
-    fullName: OneNote.TableCellCollection
+    name: OneNote.TableCellCollection
   - uid: 'onenote!OneNote.TableCellCollection#load~0:complex'
     name: OneNote.Interfaces.TableCellCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
     fullName: OneNote.Interfaces.TableCellCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
@@ -277,5 +271,4 @@ references:
   - uid: 'onenote!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'onenote!OneNote.Interfaces.TableCellCollectionData:interface'
-    name: TableCellCollectionData
-    fullName: OneNote.Interfaces.TableCellCollectionData
+    name: OneNote.Interfaces.TableCellCollectionData

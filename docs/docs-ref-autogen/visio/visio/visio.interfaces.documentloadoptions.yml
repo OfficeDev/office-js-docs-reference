@@ -5,11 +5,10 @@ items:
       Represents the Document class.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: DocumentLoadOptions
+    name: Visio.Interfaces.DocumentLoadOptions
     fullName: Visio.Interfaces.DocumentLoadOptions
     langs:
       - typeScript
-    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:
@@ -59,8 +58,6 @@ items:
           - 'visio!Visio.Interfaces.DocumentViewLoadOptions:interface'
 references:
   - uid: 'visio!Visio.Interfaces.ApplicationLoadOptions:interface'
-    name: ApplicationLoadOptions
-    fullName: Visio.Interfaces.ApplicationLoadOptions
+    name: Visio.Interfaces.ApplicationLoadOptions
   - uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions:interface'
-    name: DocumentViewLoadOptions
-    fullName: Visio.Interfaces.DocumentViewLoadOptions
+    name: Visio.Interfaces.DocumentViewLoadOptions

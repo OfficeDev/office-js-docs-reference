@@ -5,16 +5,13 @@ items:
       Specifies the options to be included in a search operation.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: SearchOptions
+    name: Word.SearchOptions
     fullName: Word.SearchOptions
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.SearchOptions#context:member'
@@ -515,20 +512,15 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.SearchOptions:class'
-    name: SearchOptions
-    fullName: Word.SearchOptions
+    name: Word.SearchOptions
   - uid: 'word!Word.Interfaces.SearchOptionsLoadOptions:interface'
-    name: SearchOptionsLoadOptions
-    fullName: Word.Interfaces.SearchOptionsLoadOptions
+    name: Word.Interfaces.SearchOptionsLoadOptions
   - uid: 'word!OfficeExtension.ClientRequestContext:class'
     name: OfficeExtension.ClientRequestContext
   - uid: 'word!Word.Interfaces.SearchOptionsUpdateData:interface'
-    name: SearchOptionsUpdateData
-    fullName: Word.Interfaces.SearchOptionsUpdateData
+    name: Interfaces.SearchOptionsUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.SearchOptionsData:interface'
-    name: SearchOptionsData
-    fullName: Word.Interfaces.SearchOptionsData
+    name: Word.Interfaces.SearchOptionsData

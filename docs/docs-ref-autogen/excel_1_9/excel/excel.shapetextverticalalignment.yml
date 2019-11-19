@@ -5,11 +5,10 @@ items:
       Specifies the vertical alignment for the text frame in a shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ShapeTextVerticalAlignment
+    name: Excel.ShapeTextVerticalAlignment
     fullName: Excel.ShapeTextVerticalAlignment
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

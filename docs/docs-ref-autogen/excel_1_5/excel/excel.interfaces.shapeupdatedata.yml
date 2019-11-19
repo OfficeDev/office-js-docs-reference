@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.ShapeUpdateData:interface'
     summary: 'An interface for updating data on the Shape object, for use in `shape.set({ ... })`<!-- -->.'
-    name: ShapeUpdateData
+    name: Excel.Interfaces.ShapeUpdateData
     fullName: Excel.Interfaces.ShapeUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

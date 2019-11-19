@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.HeaderFooterGroupData:interface'
     summary: An interface describing the data returned by calling `headerFooterGroup.toJSON()`<!-- -->.
-    name: HeaderFooterGroupData
+    name: Excel.Interfaces.HeaderFooterGroupData
     fullName: Excel.Interfaces.HeaderFooterGroupData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -128,8 +127,7 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.HeaderFooterData:interface'
-    name: HeaderFooterData
-    fullName: Excel.Interfaces.HeaderFooterData
+    name: Excel.Interfaces.HeaderFooterData
   - uid: 'excel!Excel.Interfaces.HeaderFooterGroupData#state~0:complex'
     name: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"
     fullName: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"

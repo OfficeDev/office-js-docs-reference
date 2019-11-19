@@ -8,16 +8,13 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Worksheet
+    name: Excel.Worksheet
     fullName: Excel.Worksheet
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Worksheet#activate:member(1)'
@@ -765,40 +762,29 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ChartCollection:class'
-    name: ChartCollection
-    fullName: Excel.ChartCollection
+    name: Excel.ChartCollection
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Range:class'
-    name: Range
-    fullName: Excel.Range
+    name: Excel.Range
   - uid: 'excel!Excel.Worksheet:class'
-    name: Worksheet
-    fullName: Excel.Worksheet
+    name: Excel.Worksheet
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
-    name: WorksheetLoadOptions
-    fullName: Excel.Interfaces.WorksheetLoadOptions
+    name: Excel.Interfaces.WorksheetLoadOptions
   - uid: 'excel!Excel.NamedItemCollection:class'
-    name: NamedItemCollection
-    fullName: Excel.NamedItemCollection
+    name: Excel.NamedItemCollection
   - uid: 'excel!Excel.PivotTableCollection:class'
-    name: PivotTableCollection
-    fullName: Excel.PivotTableCollection
+    name: Excel.PivotTableCollection
   - uid: 'excel!Excel.WorksheetProtection:class'
-    name: WorksheetProtection
-    fullName: Excel.WorksheetProtection
+    name: Excel.WorksheetProtection
   - uid: 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
-    name: WorksheetUpdateData
-    fullName: Excel.Interfaces.WorksheetUpdateData
+    name: Interfaces.WorksheetUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.TableCollection:class'
-    name: TableCollection
-    fullName: Excel.TableCollection
+    name: Excel.TableCollection
   - uid: 'excel!Excel.Interfaces.WorksheetData:interface'
-    name: WorksheetData
-    fullName: Excel.Interfaces.WorksheetData
+    name: Excel.Interfaces.WorksheetData
   - uid: 'excel!Excel.Worksheet#visibility~0:complex'
     name: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden"
     fullName: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden"

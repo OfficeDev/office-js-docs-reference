@@ -5,16 +5,13 @@ items:
       A format object encapsulating the conditional formats range's font, fill, borders, and other properties.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ConditionalRangeFormat
+    name: Excel.ConditionalRangeFormat
     fullName: Excel.ConditionalRangeFormat
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ConditionalRangeFormat#borders:member'
@@ -242,28 +239,20 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ConditionalRangeBorderCollection:class'
-    name: ConditionalRangeBorderCollection
-    fullName: Excel.ConditionalRangeBorderCollection
+    name: Excel.ConditionalRangeBorderCollection
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ConditionalRangeFill:class'
-    name: ConditionalRangeFill
-    fullName: Excel.ConditionalRangeFill
+    name: Excel.ConditionalRangeFill
   - uid: 'excel!Excel.ConditionalRangeFont:class'
-    name: ConditionalRangeFont
-    fullName: Excel.ConditionalRangeFont
+    name: Excel.ConditionalRangeFont
   - uid: 'excel!Excel.ConditionalRangeFormat:class'
-    name: ConditionalRangeFormat
-    fullName: Excel.ConditionalRangeFormat
+    name: Excel.ConditionalRangeFormat
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface'
-    name: ConditionalRangeFormatLoadOptions
-    fullName: Excel.Interfaces.ConditionalRangeFormatLoadOptions
+    name: Excel.Interfaces.ConditionalRangeFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
-    name: ConditionalRangeFormatUpdateData
-    fullName: Excel.Interfaces.ConditionalRangeFormatUpdateData
+    name: Interfaces.ConditionalRangeFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
-    name: ConditionalRangeFormatData
-    fullName: Excel.Interfaces.ConditionalRangeFormatData
+    name: Excel.Interfaces.ConditionalRangeFormatData

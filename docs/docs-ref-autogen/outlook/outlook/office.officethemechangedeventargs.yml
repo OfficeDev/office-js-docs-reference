@@ -6,11 +6,10 @@ items:
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     isPreview: true
-    name: OfficeThemeChangedEventArgs
+    name: Office.OfficeThemeChangedEventArgs
     fullName: Office.OfficeThemeChangedEventArgs
     langs:
       - typeScript
-    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

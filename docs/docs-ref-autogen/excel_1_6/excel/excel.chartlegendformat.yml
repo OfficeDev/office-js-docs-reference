@@ -5,16 +5,13 @@ items:
       Encapsulates the format properties of a chart legend.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartLegendFormat
+    name: Excel.ChartLegendFormat
     fullName: Excel.ChartLegendFormat
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartLegendFormat#context:member'
@@ -235,24 +232,17 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartFill:class'
-    name: ChartFill
-    fullName: Excel.ChartFill
+    name: Excel.ChartFill
   - uid: 'excel!Excel.ChartFont:class'
-    name: ChartFont
-    fullName: Excel.ChartFont
+    name: Excel.ChartFont
   - uid: 'excel!Excel.ChartLegendFormat:class'
-    name: ChartLegendFormat
-    fullName: Excel.ChartLegendFormat
+    name: Excel.ChartLegendFormat
   - uid: 'excel!Excel.Interfaces.ChartLegendFormatLoadOptions:interface'
-    name: ChartLegendFormatLoadOptions
-    fullName: Excel.Interfaces.ChartLegendFormatLoadOptions
+    name: Excel.Interfaces.ChartLegendFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartLegendFormatUpdateData:interface'
-    name: ChartLegendFormatUpdateData
-    fullName: Excel.Interfaces.ChartLegendFormatUpdateData
+    name: Interfaces.ChartLegendFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartLegendFormatData:interface'
-    name: ChartLegendFormatData
-    fullName: Excel.Interfaces.ChartLegendFormatData
+    name: Excel.Interfaces.ChartLegendFormatData

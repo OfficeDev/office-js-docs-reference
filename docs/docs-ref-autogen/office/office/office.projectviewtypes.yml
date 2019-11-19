@@ -7,11 +7,10 @@ items:
     remarks: >-
       The [Document](xref:office!Office.Document:interface)<!-- -->.getSelectedViewAsync method returns the
       ProjectViewTypes constant value and name that corresponds to the active view.
-    name: ProjectViewTypes
+    name: Office.ProjectViewTypes
     fullName: Office.ProjectViewTypes
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: enum
     package: office!
     children:

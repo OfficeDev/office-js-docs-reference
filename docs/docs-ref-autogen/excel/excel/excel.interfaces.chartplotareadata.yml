@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaData:interface'
     summary: An interface describing the data returned by calling `chartPlotArea.toJSON()`<!-- -->.
-    name: ChartPlotAreaData
+    name: Excel.Interfaces.ChartPlotAreaData
     fullName: Excel.Interfaces.ChartPlotAreaData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -172,8 +171,7 @@ items:
           - number
 references:
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatData:interface'
-    name: ChartPlotAreaFormatData
-    fullName: Excel.Interfaces.ChartPlotAreaFormatData
+    name: Excel.Interfaces.ChartPlotAreaFormatData
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaData#position~0:complex'
     name: Excel.ChartPlotAreaPosition | "Automatic" | "Custom"
     fullName: Excel.ChartPlotAreaPosition | "Automatic" | "Custom"

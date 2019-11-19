@@ -5,16 +5,13 @@ items:
       Manages sorting operations on Range objects.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: RangeSort
+    name: Excel.RangeSort
     fullName: Excel.RangeSort
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.RangeSort#apply:member(1)'
@@ -150,11 +147,9 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.SortOrientation:enum'
-    name: SortOrientation
-    fullName: Excel.SortOrientation
+    name: Excel.SortOrientation
   - uid: 'excel!Excel.SortMethod:enum'
-    name: SortMethod
-    fullName: Excel.SortMethod
+    name: Excel.SortMethod
   - uid: 'excel!Excel.RangeSort#apply~1:complex'
     name: 'Excel.SortField[]'
     fullName: 'Excel.SortField[]'
@@ -166,4 +161,3 @@ references:
         fullName: '[]'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext

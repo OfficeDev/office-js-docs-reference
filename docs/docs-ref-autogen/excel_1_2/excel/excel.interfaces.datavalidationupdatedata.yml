@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.DataValidationUpdateData:interface'
     summary: 'An interface for updating data on the DataValidation object, for use in `dataValidation.set({ ... })`<!-- -->.'
-    name: DataValidationUpdateData
+    name: Excel.Interfaces.DataValidationUpdateData
     fullName: Excel.Interfaces.DataValidationUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

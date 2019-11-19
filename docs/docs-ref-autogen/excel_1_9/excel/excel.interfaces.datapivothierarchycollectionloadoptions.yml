@@ -5,11 +5,10 @@ items:
       Represents a collection of DataPivotHierarchy items associated with the PivotTable.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: DataPivotHierarchyCollectionLoadOptions
+    name: Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions
     fullName: Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -144,5 +143,4 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.PivotFieldLoadOptions:interface'
-    name: PivotFieldLoadOptions
-    fullName: Excel.Interfaces.PivotFieldLoadOptions
+    name: Excel.Interfaces.PivotFieldLoadOptions

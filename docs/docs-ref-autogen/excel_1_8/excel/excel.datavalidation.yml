@@ -8,16 +8,13 @@ items:
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: DataValidation
+    name: Excel.DataValidation
     fullName: Excel.DataValidation
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.DataValidation#clear:member(1)'
@@ -400,30 +397,22 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.DataValidationErrorAlert:interface'
-    name: DataValidationErrorAlert
-    fullName: Excel.DataValidationErrorAlert
+    name: Excel.DataValidationErrorAlert
   - uid: 'excel!Excel.DataValidation:class'
-    name: DataValidation
-    fullName: Excel.DataValidation
+    name: Excel.DataValidation
   - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions:interface'
-    name: DataValidationLoadOptions
-    fullName: Excel.Interfaces.DataValidationLoadOptions
+    name: Excel.Interfaces.DataValidationLoadOptions
   - uid: 'excel!Excel.DataValidationPrompt:interface'
-    name: DataValidationPrompt
-    fullName: Excel.DataValidationPrompt
+    name: Excel.DataValidationPrompt
   - uid: 'excel!Excel.DataValidationRule:interface'
-    name: DataValidationRule
-    fullName: Excel.DataValidationRule
+    name: Excel.DataValidationRule
   - uid: 'excel!Excel.Interfaces.DataValidationUpdateData:interface'
-    name: DataValidationUpdateData
-    fullName: Excel.Interfaces.DataValidationUpdateData
+    name: Interfaces.DataValidationUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.DataValidationData:interface'
-    name: DataValidationData
-    fullName: Excel.Interfaces.DataValidationData
+    name: Excel.Interfaces.DataValidationData
   - uid: 'excel!Excel.DataValidation#type~0:complex'
     name: >-
       Excel.DataValidationType | "None" | "WholeNumber" | "Decimal" | "List" | "Date" | "Time" | "TextLength" | "Custom"

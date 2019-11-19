@@ -5,16 +5,13 @@ items:
       Represents the body of a document or a section.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Body
+    name: Word.Body
     fullName: Word.Body
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.Body#clear:member(1)'
@@ -1378,14 +1375,11 @@ references:
   - uid: 'word!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.ContentControlCollection:class'
-    name: ContentControlCollection
-    fullName: Word.ContentControlCollection
+    name: Word.ContentControlCollection
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.Font:class'
-    name: Font
-    fullName: Word.Font
+    name: Word.Font
   - uid: 'word!Word.Body#getHtml~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -1405,35 +1399,25 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'word!Word.InlinePictureCollection:class'
-    name: InlinePictureCollection
-    fullName: Word.InlinePictureCollection
+    name: Word.InlinePictureCollection
   - uid: 'word!Word.BreakType:enum'
-    name: BreakType
-    fullName: Word.BreakType
+    name: Word.BreakType
   - uid: 'word!Word.InsertLocation:enum'
-    name: InsertLocation
-    fullName: Word.InsertLocation
+    name: Word.InsertLocation
   - uid: 'word!Word.ContentControl:class'
-    name: ContentControl
-    fullName: Word.ContentControl
+    name: Word.ContentControl
   - uid: 'word!Word.Range:class'
-    name: Range
-    fullName: Word.Range
+    name: Word.Range
   - uid: 'word!Word.Paragraph:class'
-    name: Paragraph
-    fullName: Word.Paragraph
+    name: Word.Paragraph
   - uid: 'word!Word.Body:class'
-    name: Body
-    fullName: Word.Body
+    name: Word.Body
   - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
-    name: BodyLoadOptions
-    fullName: Word.Interfaces.BodyLoadOptions
+    name: Word.Interfaces.BodyLoadOptions
   - uid: 'word!Word.ParagraphCollection:class'
-    name: ParagraphCollection
-    fullName: Word.ParagraphCollection
+    name: Word.ParagraphCollection
   - uid: 'word!Word.RangeCollection:class'
-    name: RangeCollection
-    fullName: Word.RangeCollection
+    name: Word.RangeCollection
   - uid: 'word!Word.Body#search~0:complex'
     name: |-
       Word.SearchOptions | {
@@ -1480,13 +1464,10 @@ references:
                       matchWildcards?: boolean;
                   }
   - uid: 'word!Word.SelectionMode:enum'
-    name: SelectionMode
-    fullName: Word.SelectionMode
+    name: Word.SelectionMode
   - uid: 'word!Word.Interfaces.BodyUpdateData:interface'
-    name: BodyUpdateData
-    fullName: Word.Interfaces.BodyUpdateData
+    name: Interfaces.BodyUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.BodyData:interface'
-    name: BodyData
-    fullName: Word.Interfaces.BodyData
+    name: Word.Interfaces.BodyData

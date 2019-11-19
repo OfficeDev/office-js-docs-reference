@@ -2,11 +2,10 @@
 items:
   - uid: 'word!Word.Interfaces.BodyUpdateData:interface'
     summary: 'An interface for updating data on the Body object, for use in "body.set(<!-- -->{ ... }<!-- -->)".'
-    name: BodyUpdateData
+    name: Word.Interfaces.BodyUpdateData
     fullName: Word.Interfaces.BodyUpdateData
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -95,8 +94,7 @@ items:
           - 'word!Word.Interfaces.BodyUpdateData#styleBuiltIn~0:complex'
 references:
   - uid: 'word!Word.Interfaces.FontUpdateData:interface'
-    name: FontUpdateData
-    fullName: Word.Interfaces.FontUpdateData
+    name: Word.Interfaces.FontUpdateData
   - uid: 'word!Word.Interfaces.BodyUpdateData#styleBuiltIn~0:complex'
     name: >-
       Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" |

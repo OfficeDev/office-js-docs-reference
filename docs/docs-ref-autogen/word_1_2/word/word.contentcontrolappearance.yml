@@ -5,11 +5,10 @@ items:
       ContentControl appearance
 
       \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: ContentControlAppearance
+    name: Word.ContentControlAppearance
     fullName: Word.ContentControlAppearance
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: enum
     package: word!
     children:

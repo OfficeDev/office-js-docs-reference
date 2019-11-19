@@ -5,11 +5,10 @@ items:
       Represents the region projection type of a chart series layout. This only applies to region map charts.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartMapProjectionType
+    name: Excel.ChartMapProjectionType
     fullName: Excel.ChartMapProjectionType
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

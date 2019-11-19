@@ -5,11 +5,10 @@ items:
       Represents the format options for a Data Bar Axis.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ConditionalDataBarAxisFormat
+    name: Excel.ConditionalDataBarAxisFormat
     fullName: Excel.ConditionalDataBarAxisFormat
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

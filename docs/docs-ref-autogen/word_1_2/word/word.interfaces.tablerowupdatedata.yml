@@ -2,10 +2,9 @@
 items:
   - uid: 'word!Word.Interfaces.TableRowUpdateData:interface'
     summary: 'An interface for updating data on the TableRow object, for use in "tableRow.set(<!-- -->{ ... }<!-- -->)".'
-    name: TableRowUpdateData
+    name: Word.Interfaces.TableRowUpdateData
     fullName: Word.Interfaces.TableRowUpdateData
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!

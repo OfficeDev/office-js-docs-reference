@@ -5,11 +5,10 @@ items:
       Represents the options in page layout margins.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: PageLayoutMarginOptions
+    name: Excel.PageLayoutMarginOptions
     fullName: Excel.PageLayoutMarginOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

@@ -5,11 +5,10 @@ items:
       Represents the border objects that make up range border.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ConditionalRangeBorderCollectionLoadOptions
+    name: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions
     fullName: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

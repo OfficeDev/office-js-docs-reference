@@ -5,16 +5,13 @@ items:
       Represents the legend in a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartLegend
+    name: Excel.ChartLegend
     fullName: Excel.ChartLegend
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartLegend#context:member'
@@ -376,19 +373,14 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartLegendFormat:class'
-    name: ChartLegendFormat
-    fullName: Excel.ChartLegendFormat
+    name: Excel.ChartLegendFormat
   - uid: 'excel!Excel.ChartLegendEntryCollection:class'
-    name: ChartLegendEntryCollection
-    fullName: Excel.ChartLegendEntryCollection
+    name: Excel.ChartLegendEntryCollection
   - uid: 'excel!Excel.ChartLegend:class'
-    name: ChartLegend
-    fullName: Excel.ChartLegend
+    name: Excel.ChartLegend
   - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions:interface'
-    name: ChartLegendLoadOptions
-    fullName: Excel.Interfaces.ChartLegendLoadOptions
+    name: Excel.Interfaces.ChartLegendLoadOptions
   - uid: 'excel!Excel.ChartLegend#position~0:complex'
     name: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
     fullName: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
@@ -399,10 +391,8 @@ references:
       - name: ' | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"'
         fullName: ' | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"'
   - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData:interface'
-    name: ChartLegendUpdateData
-    fullName: Excel.Interfaces.ChartLegendUpdateData
+    name: Interfaces.ChartLegendUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartLegendData:interface'
-    name: ChartLegendData
-    fullName: Excel.Interfaces.ChartLegendData
+    name: Excel.Interfaces.ChartLegendData

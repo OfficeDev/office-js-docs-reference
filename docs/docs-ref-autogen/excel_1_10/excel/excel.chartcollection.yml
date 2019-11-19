@@ -5,16 +5,13 @@ items:
       A collection of all the chart objects on a worksheet.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartCollection
+    name: Excel.ChartCollection
     fullName: Excel.ChartCollection
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartCollection#add:member(1)'
@@ -584,20 +581,15 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Chart:class'
-    name: Chart
-    fullName: Excel.Chart
+    name: Excel.Chart
   - uid: 'excel!Excel.ChartType:enum'
-    name: ChartType
-    fullName: Excel.ChartType
+    name: Excel.ChartType
   - uid: 'excel!Excel.Range:class'
     name: Range
-    fullName: Excel.Range
   - uid: 'excel!Excel.ChartSeriesBy:enum'
-    name: ChartSeriesBy
-    fullName: Excel.ChartSeriesBy
+    name: Excel.ChartSeriesBy
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -617,8 +609,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.ChartCollection:class'
-    name: ChartCollection
-    fullName: Excel.ChartCollection
+    name: Excel.ChartCollection
   - uid: 'excel!Excel.ChartCollection#load~0:complex'
     name: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -690,5 +681,4 @@ references:
       - name: '>'
         fullName: '>'
   - uid: 'excel!Excel.Interfaces.ChartCollectionData:interface'
-    name: ChartCollectionData
-    fullName: Excel.Interfaces.ChartCollectionData
+    name: Excel.Interfaces.ChartCollectionData

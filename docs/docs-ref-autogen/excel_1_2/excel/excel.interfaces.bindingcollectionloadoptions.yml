@@ -5,11 +5,10 @@ items:
       Represents the collection of all the binding objects that are part of the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: BindingCollectionLoadOptions
+    name: Excel.Interfaces.BindingCollectionLoadOptions
     fullName: Excel.Interfaces.BindingCollectionLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

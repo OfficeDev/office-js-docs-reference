@@ -2,11 +2,10 @@
 items:
   - uid: 'onenote!OneNote.Interfaces.NotebookCollectionData:interface'
     summary: An interface describing the data returned by calling "notebookCollection.toJSON()".
-    name: NotebookCollectionData
+    name: OneNote.Interfaces.NotebookCollectionData
     fullName: OneNote.Interfaces.NotebookCollectionData
     langs:
       - typeScript
-    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:

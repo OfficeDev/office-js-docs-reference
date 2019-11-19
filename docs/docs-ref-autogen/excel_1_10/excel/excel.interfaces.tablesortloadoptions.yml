@@ -5,11 +5,10 @@ items:
       Manages sorting operations on Table objects.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: TableSortLoadOptions
+    name: Excel.Interfaces.TableSortLoadOptions
     fullName: Excel.Interfaces.TableSortLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

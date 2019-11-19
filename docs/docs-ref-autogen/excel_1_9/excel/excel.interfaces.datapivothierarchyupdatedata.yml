@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the DataPivotHierarchy object, for use in `dataPivotHierarchy.set({ ... })`<!--
       -->.
-    name: DataPivotHierarchyUpdateData
+    name: Excel.Interfaces.DataPivotHierarchyUpdateData
     fullName: Excel.Interfaces.DataPivotHierarchyUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -112,11 +111,9 @@ items:
           - 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData#summarizeBy~0:complex'
 references:
   - uid: 'excel!Excel.Interfaces.PivotFieldUpdateData:interface'
-    name: PivotFieldUpdateData
-    fullName: Excel.Interfaces.PivotFieldUpdateData
+    name: Excel.Interfaces.PivotFieldUpdateData
   - uid: 'excel!Excel.ShowAsRule:interface'
-    name: ShowAsRule
-    fullName: Excel.ShowAsRule
+    name: Excel.ShowAsRule
   - uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData#summarizeBy~0:complex'
     name: >-
       Excel.AggregationFunction | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" | "Product" |

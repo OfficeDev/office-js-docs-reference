@@ -2,16 +2,13 @@
 items:
   - uid: 'excel!Excel.RangeCollection:class'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: RangeCollection
+    name: Excel.RangeCollection
     fullName: Excel.RangeCollection
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.RangeCollection#context:member'
@@ -172,7 +169,6 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.RangeCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -183,8 +179,7 @@ references:
       - name: <number>
         fullName: <number>
   - uid: 'excel!Excel.Range:class'
-    name: Range
-    fullName: Excel.Range
+    name: Excel.Range
   - uid: 'excel!Excel.RangeCollection#items~0:complex'
     name: 'Excel.Range[]'
     fullName: 'Excel.Range[]'
@@ -195,8 +190,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.RangeCollection:class'
-    name: RangeCollection
-    fullName: Excel.RangeCollection
+    name: Excel.RangeCollection
   - uid: 'excel!Excel.RangeCollection#load~0:complex'
     name: Excel.Interfaces.RangeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.RangeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -212,5 +206,4 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.RangeCollectionData:interface'
-    name: RangeCollectionData
-    fullName: Excel.Interfaces.RangeCollectionData
+    name: Excel.Interfaces.RangeCollectionData

@@ -5,11 +5,10 @@ items:
       Aggregation Function for the Data Pivot Field.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: AggregationFunction
+    name: Excel.AggregationFunction
     fullName: Excel.AggregationFunction
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

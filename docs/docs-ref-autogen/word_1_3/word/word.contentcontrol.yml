@@ -8,16 +8,13 @@ items:
 
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: ContentControl
+    name: Word.ContentControl
     fullName: Word.ContentControl
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.ContentControl#appearance:member'
@@ -2079,14 +2076,11 @@ references:
       - name: ' | "BoundingBox" | "Tags" | "Hidden"'
         fullName: ' | "BoundingBox" | "Tags" | "Hidden"'
   - uid: 'word!Word.ContentControlCollection:class'
-    name: ContentControlCollection
-    fullName: Word.ContentControlCollection
+    name: Word.ContentControlCollection
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.Font:class'
-    name: Font
-    fullName: Word.Font
+    name: Word.Font
   - uid: 'word!Word.ContentControl#getHtml~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -2106,50 +2100,35 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'word!Word.Range:class'
-    name: Range
-    fullName: Word.Range
+    name: Word.Range
   - uid: 'word!Word.RangeLocation:enum'
-    name: RangeLocation
-    fullName: Word.RangeLocation
+    name: Word.RangeLocation
   - uid: 'word!Word.RangeCollection:class'
-    name: RangeCollection
-    fullName: Word.RangeCollection
+    name: Word.RangeCollection
   - uid: 'word!Word.InlinePictureCollection:class'
-    name: InlinePictureCollection
-    fullName: Word.InlinePictureCollection
+    name: Word.InlinePictureCollection
   - uid: 'word!Word.BreakType:enum'
-    name: BreakType
-    fullName: Word.BreakType
+    name: Word.BreakType
   - uid: 'word!Word.InsertLocation:enum'
-    name: InsertLocation
-    fullName: Word.InsertLocation
+    name: Word.InsertLocation
   - uid: 'word!Word.InlinePicture:class'
-    name: InlinePicture
-    fullName: Word.InlinePicture
+    name: Word.InlinePicture
   - uid: 'word!Word.Paragraph:class'
-    name: Paragraph
-    fullName: Word.Paragraph
+    name: Word.Paragraph
   - uid: 'word!Word.Table:class'
-    name: Table
-    fullName: Word.Table
+    name: Word.Table
   - uid: 'word!Word.ListCollection:class'
-    name: ListCollection
-    fullName: Word.ListCollection
+    name: Word.ListCollection
   - uid: 'word!Word.ContentControl:class'
-    name: ContentControl
-    fullName: Word.ContentControl
+    name: Word.ContentControl
   - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
-    name: ContentControlLoadOptions
-    fullName: Word.Interfaces.ContentControlLoadOptions
+    name: Word.Interfaces.ContentControlLoadOptions
   - uid: 'word!Word.ParagraphCollection:class'
-    name: ParagraphCollection
-    fullName: Word.ParagraphCollection
+    name: Word.ParagraphCollection
   - uid: 'word!Word.Body:class'
-    name: Body
-    fullName: Word.Body
+    name: Word.Body
   - uid: 'word!Word.TableCell:class'
-    name: TableCell
-    fullName: Word.TableCell
+    name: Word.TableCell
   - uid: 'word!Word.ContentControl#search~0:complex'
     name: |-
       Word.SearchOptions | {
@@ -2196,11 +2175,9 @@ references:
                       matchWildcards?: boolean;
                   }
   - uid: 'word!Word.SelectionMode:enum'
-    name: SelectionMode
-    fullName: Word.SelectionMode
+    name: Word.SelectionMode
   - uid: 'word!Word.Interfaces.ContentControlUpdateData:interface'
-    name: ContentControlUpdateData
-    fullName: Word.Interfaces.ContentControlUpdateData
+    name: Interfaces.ContentControlUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.ContentControl#styleBuiltIn~0:complex'
@@ -2290,11 +2267,9 @@ references:
       - name: ' | "Unknown" | "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" | "RichText" | "PlainText"'
         fullName: ' | "Unknown" | "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" | "RichText" | "PlainText"'
   - uid: 'word!Word.TableCollection:class'
-    name: TableCollection
-    fullName: Word.TableCollection
+    name: Word.TableCollection
   - uid: 'word!Word.Interfaces.ContentControlData:interface'
-    name: ContentControlData
-    fullName: Word.Interfaces.ContentControlData
+    name: Word.Interfaces.ContentControlData
   - uid: 'word!Word.ContentControl#type~0:complex'
     name: >-
       Word.ContentControlType | "Unknown" | "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" |

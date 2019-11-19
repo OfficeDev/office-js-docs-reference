@@ -5,16 +5,13 @@ items:
       This object represents the attributes for a chart trendline lable object.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartTrendlineLabel
+    name: Excel.ChartTrendlineLabel
     fullName: Excel.ChartTrendlineLabel
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartTrendlineLabel#autoText:member'
@@ -405,10 +402,8 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartTrendlineLabelFormat:class'
-    name: ChartTrendlineLabelFormat
-    fullName: Excel.ChartTrendlineLabelFormat
+    name: Excel.ChartTrendlineLabelFormat
   - uid: 'excel!Excel.ChartTrendlineLabel#horizontalAlignment~0:complex'
     name: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
     fullName: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
@@ -419,19 +414,15 @@ references:
       - name: ' | "Center" | "Left" | "Right" | "Justify" | "Distributed"'
         fullName: ' | "Center" | "Left" | "Right" | "Justify" | "Distributed"'
   - uid: 'excel!Excel.ChartTrendlineLabel:class'
-    name: ChartTrendlineLabel
-    fullName: Excel.ChartTrendlineLabel
+    name: Excel.ChartTrendlineLabel
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions:interface'
-    name: ChartTrendlineLabelLoadOptions
-    fullName: Excel.Interfaces.ChartTrendlineLabelLoadOptions
+    name: Excel.Interfaces.ChartTrendlineLabelLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelUpdateData:interface'
-    name: ChartTrendlineLabelUpdateData
-    fullName: Excel.Interfaces.ChartTrendlineLabelUpdateData
+    name: Interfaces.ChartTrendlineLabelUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData:interface'
-    name: ChartTrendlineLabelData
-    fullName: Excel.Interfaces.ChartTrendlineLabelData
+    name: Excel.Interfaces.ChartTrendlineLabelData
   - uid: 'excel!Excel.ChartTrendlineLabel#verticalAlignment~0:complex'
     name: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"
     fullName: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"

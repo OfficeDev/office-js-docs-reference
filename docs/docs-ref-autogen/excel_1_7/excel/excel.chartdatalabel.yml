@@ -5,16 +5,13 @@ items:
       Represents the data label of a chart point.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartDataLabel
+    name: Excel.ChartDataLabel
     fullName: Excel.ChartDataLabel
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartDataLabel#context:member'
@@ -311,13 +308,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartDataLabel:class'
-    name: ChartDataLabel
-    fullName: Excel.ChartDataLabel
+    name: Excel.ChartDataLabel
   - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions:interface'
-    name: ChartDataLabelLoadOptions
-    fullName: Excel.Interfaces.ChartDataLabelLoadOptions
+    name: Excel.Interfaces.ChartDataLabelLoadOptions
   - uid: 'excel!Excel.ChartDataLabel#position~0:complex'
     name: >-
       Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left"
@@ -332,10 +326,8 @@ references:
       - name: ' | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"'
         fullName: ' | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"'
   - uid: 'excel!Excel.Interfaces.ChartDataLabelUpdateData:interface'
-    name: ChartDataLabelUpdateData
-    fullName: Excel.Interfaces.ChartDataLabelUpdateData
+    name: Interfaces.ChartDataLabelUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartDataLabelData:interface'
-    name: ChartDataLabelData
-    fullName: Excel.Interfaces.ChartDataLabelData
+    name: Excel.Interfaces.ChartDataLabelData

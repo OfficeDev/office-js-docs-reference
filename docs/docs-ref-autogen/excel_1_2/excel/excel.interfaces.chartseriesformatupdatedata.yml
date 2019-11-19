@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the ChartSeriesFormat object, for use in `chartSeriesFormat.set({ ... })`<!--
       -->.
-    name: ChartSeriesFormatUpdateData
+    name: Excel.Interfaces.ChartSeriesFormatUpdateData
     fullName: Excel.Interfaces.ChartSeriesFormatUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -30,5 +29,4 @@ items:
           - 'excel!Excel.Interfaces.ChartLineFormatUpdateData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartLineFormatUpdateData:interface'
-    name: ChartLineFormatUpdateData
-    fullName: Excel.Interfaces.ChartLineFormatUpdateData
+    name: Excel.Interfaces.ChartLineFormatUpdateData

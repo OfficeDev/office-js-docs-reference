@@ -5,16 +5,13 @@ items:
       Contains a collection of [Word.Range](xref:word!Word.Range:class) objects.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: RangeCollection
+    name: Word.RangeCollection
     fullName: Word.RangeCollection
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.RangeCollection#context:member'
@@ -220,10 +217,8 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.Range:class'
-    name: Range
-    fullName: Word.Range
+    name: Word.Range
   - uid: 'word!Word.RangeCollection#items~0:complex'
     name: 'Word.Range[]'
     fullName: 'Word.Range[]'
@@ -234,8 +229,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.RangeCollection:class'
-    name: RangeCollection
-    fullName: Word.RangeCollection
+    name: Word.RangeCollection
   - uid: 'word!Word.RangeCollection#load~0:complex'
     name: Word.Interfaces.RangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
     fullName: Word.Interfaces.RangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
@@ -251,5 +245,4 @@ references:
   - uid: 'word!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'word!Word.Interfaces.RangeCollectionData:interface'
-    name: RangeCollectionData
-    fullName: Word.Interfaces.RangeCollectionData
+    name: Word.Interfaces.RangeCollectionData

@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.ChartType:enum'
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: ChartType
+    name: Excel.ChartType
     fullName: Excel.ChartType
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

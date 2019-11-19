@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the ConditionalRangeFormat object, for use in `conditionalRangeFormat.set({ ...
       })`<!-- -->.
-    name: ConditionalRangeFormatUpdateData
+    name: Excel.Interfaces.ConditionalRangeFormatUpdateData
     fullName: Excel.Interfaces.ConditionalRangeFormatUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -78,11 +77,8 @@ items:
           - any
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData:interface'
-    name: ConditionalRangeBorderCollectionUpdateData
-    fullName: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
+    name: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFillUpdateData:interface'
-    name: ConditionalRangeFillUpdateData
-    fullName: Excel.Interfaces.ConditionalRangeFillUpdateData
+    name: Excel.Interfaces.ConditionalRangeFillUpdateData
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData:interface'
-    name: ConditionalRangeFontUpdateData
-    fullName: Excel.Interfaces.ConditionalRangeFontUpdateData
+    name: Excel.Interfaces.ConditionalRangeFontUpdateData

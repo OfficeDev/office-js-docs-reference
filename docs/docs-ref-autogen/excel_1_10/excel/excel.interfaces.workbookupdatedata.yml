@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
     summary: 'An interface for updating data on the Workbook object, for use in `workbook.set({ ... })`<!-- -->.'
-    name: WorkbookUpdateData
+    name: Excel.Interfaces.WorkbookUpdateData
     fullName: Excel.Interfaces.WorkbookUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -82,5 +81,4 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
-    name: DocumentPropertiesUpdateData
-    fullName: Excel.Interfaces.DocumentPropertiesUpdateData
+    name: Excel.Interfaces.DocumentPropertiesUpdateData

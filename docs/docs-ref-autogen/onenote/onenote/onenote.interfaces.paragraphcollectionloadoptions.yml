@@ -5,11 +5,10 @@ items:
       Represents a collection of Paragraph objects.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: ParagraphCollectionLoadOptions
+    name: OneNote.Interfaces.ParagraphCollectionLoadOptions
     fullName: OneNote.Interfaces.ParagraphCollectionLoadOptions
     langs:
       - typeScript
-    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -233,26 +232,18 @@ items:
           - boolean
 references:
   - uid: 'onenote!OneNote.Interfaces.ImageLoadOptions:interface'
-    name: ImageLoadOptions
-    fullName: OneNote.Interfaces.ImageLoadOptions
+    name: OneNote.Interfaces.ImageLoadOptions
   - uid: 'onenote!OneNote.Interfaces.InkWordCollectionLoadOptions:interface'
-    name: InkWordCollectionLoadOptions
-    fullName: OneNote.Interfaces.InkWordCollectionLoadOptions
+    name: OneNote.Interfaces.InkWordCollectionLoadOptions
   - uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions:interface'
-    name: OutlineLoadOptions
-    fullName: OneNote.Interfaces.OutlineLoadOptions
+    name: OneNote.Interfaces.OutlineLoadOptions
   - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface'
-    name: ParagraphCollectionLoadOptions
-    fullName: OneNote.Interfaces.ParagraphCollectionLoadOptions
+    name: OneNote.Interfaces.ParagraphCollectionLoadOptions
   - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
-    name: ParagraphLoadOptions
-    fullName: OneNote.Interfaces.ParagraphLoadOptions
+    name: OneNote.Interfaces.ParagraphLoadOptions
   - uid: 'onenote!OneNote.Interfaces.TableCellLoadOptions:interface'
-    name: TableCellLoadOptions
-    fullName: OneNote.Interfaces.TableCellLoadOptions
+    name: OneNote.Interfaces.TableCellLoadOptions
   - uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions:interface'
-    name: RichTextLoadOptions
-    fullName: OneNote.Interfaces.RichTextLoadOptions
+    name: OneNote.Interfaces.RichTextLoadOptions
   - uid: 'onenote!OneNote.Interfaces.TableLoadOptions:interface'
-    name: TableLoadOptions
-    fullName: OneNote.Interfaces.TableLoadOptions
+    name: OneNote.Interfaces.TableLoadOptions

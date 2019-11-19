@@ -5,16 +5,13 @@ items:
       Contains the collection of the document's TableCell objects.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: TableCellCollection
+    name: Word.TableCellCollection
     fullName: Word.TableCellCollection
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.TableCellCollection#context:member'
@@ -220,10 +217,8 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.TableCell:class'
-    name: TableCell
-    fullName: Word.TableCell
+    name: Word.TableCell
   - uid: 'word!Word.TableCellCollection#items~0:complex'
     name: 'Word.TableCell[]'
     fullName: 'Word.TableCell[]'
@@ -234,8 +229,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.TableCellCollection:class'
-    name: TableCellCollection
-    fullName: Word.TableCellCollection
+    name: Word.TableCellCollection
   - uid: 'word!Word.TableCellCollection#load~0:complex'
     name: Word.Interfaces.TableCellCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
     fullName: Word.Interfaces.TableCellCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
@@ -251,5 +245,4 @@ references:
   - uid: 'word!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'word!Word.Interfaces.TableCellCollectionData:interface'
-    name: TableCellCollectionData
-    fullName: Word.Interfaces.TableCellCollectionData
+    name: Word.Interfaces.TableCellCollectionData

@@ -4,10 +4,9 @@ items:
     summary: >-
       An interface for updating data on the ChartTrendlineLabel object, for use in `chartTrendlineLabel.set({ ...
       })`<!-- -->.
-    name: ChartTrendlineLabelUpdateData
+    name: Excel.Interfaces.ChartTrendlineLabelUpdateData
     fullName: Excel.Interfaces.ChartTrendlineLabelUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

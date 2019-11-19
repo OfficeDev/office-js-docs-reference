@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartBinOptionsData:interface'
     summary: An interface describing the data returned by calling `chartBinOptions.toJSON()`<!-- -->.
-    name: ChartBinOptionsData
+    name: Excel.Interfaces.ChartBinOptionsData
     fullName: Excel.Interfaces.ChartBinOptionsData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

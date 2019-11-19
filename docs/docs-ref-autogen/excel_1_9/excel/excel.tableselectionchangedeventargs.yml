@@ -5,11 +5,10 @@ items:
       Provides information about the table that raised the SelectionChanged event.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: TableSelectionChangedEventArgs
+    name: Excel.TableSelectionChangedEventArgs
     fullName: Excel.TableSelectionChangedEventArgs
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

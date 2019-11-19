@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.RangeViewUpdateData:interface'
     summary: 'An interface for updating data on the RangeView object, for use in `rangeView.set({ ... })`<!-- -->.'
-    name: RangeViewUpdateData
+    name: Excel.Interfaces.RangeViewUpdateData
     fullName: Excel.Interfaces.RangeViewUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

@@ -8,11 +8,10 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: ChartSeriesDimension
+    name: Excel.ChartSeriesDimension
     fullName: Excel.ChartSeriesDimension
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

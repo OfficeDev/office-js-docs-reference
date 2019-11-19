@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFillData:interface'
     summary: An interface describing the data returned by calling `conditionalRangeFill.toJSON()`<!-- -->.
-    name: ConditionalRangeFillData
+    name: Excel.Interfaces.ConditionalRangeFillData
     fullName: Excel.Interfaces.ConditionalRangeFillData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

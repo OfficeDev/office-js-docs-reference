@@ -5,16 +5,13 @@ items:
       Represents a collection of section groups.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: SectionGroupCollection
+    name: OneNote.SectionGroupCollection
     fullName: OneNote.SectionGroupCollection
     langs:
       - typeScript
-    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.SectionGroupCollection#context:member'
@@ -339,13 +336,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
-    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.SectionGroupCollection:class'
-    name: SectionGroupCollection
-    fullName: OneNote.SectionGroupCollection
+    name: OneNote.SectionGroupCollection
   - uid: 'onenote!OneNote.SectionGroup:class'
-    name: SectionGroup
-    fullName: OneNote.SectionGroup
+    name: OneNote.SectionGroup
   - uid: 'onenote!OneNote.SectionGroupCollection#items~0:complex'
     name: 'OneNote.SectionGroup[]'
     fullName: 'OneNote.SectionGroup[]'
@@ -370,5 +364,4 @@ references:
   - uid: 'onenote!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionData:interface'
-    name: SectionGroupCollectionData
-    fullName: OneNote.Interfaces.SectionGroupCollectionData
+    name: OneNote.Interfaces.SectionGroupCollectionData

@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.SettingUpdateData:interface'
     summary: 'An interface for updating data on the Setting object, for use in `setting.set({ ... })`<!-- -->.'
-    name: SettingUpdateData
+    name: Excel.Interfaces.SettingUpdateData
     fullName: Excel.Interfaces.SettingUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

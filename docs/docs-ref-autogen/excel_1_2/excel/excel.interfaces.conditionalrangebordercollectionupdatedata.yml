@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the ConditionalRangeBorderCollection object, for use in
       `conditionalRangeBorderCollection.set({ ... })`<!-- -->.
-    name: ConditionalRangeBorderCollectionUpdateData
+    name: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
     fullName: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

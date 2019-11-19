@@ -5,16 +5,13 @@ items:
       Represents the format protection of a range object.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: FormatProtection
+    name: Excel.FormatProtection
     fullName: Excel.FormatProtection
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.FormatProtection#context:member'
@@ -215,18 +212,13 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.FormatProtection:class'
-    name: FormatProtection
-    fullName: Excel.FormatProtection
+    name: Excel.FormatProtection
   - uid: 'excel!Excel.Interfaces.FormatProtectionLoadOptions:interface'
-    name: FormatProtectionLoadOptions
-    fullName: Excel.Interfaces.FormatProtectionLoadOptions
+    name: Excel.Interfaces.FormatProtectionLoadOptions
   - uid: 'excel!Excel.Interfaces.FormatProtectionUpdateData:interface'
-    name: FormatProtectionUpdateData
-    fullName: Excel.Interfaces.FormatProtectionUpdateData
+    name: Interfaces.FormatProtectionUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.FormatProtectionData:interface'
-    name: FormatProtectionData
-    fullName: Excel.Interfaces.FormatProtectionData
+    name: Excel.Interfaces.FormatProtectionData

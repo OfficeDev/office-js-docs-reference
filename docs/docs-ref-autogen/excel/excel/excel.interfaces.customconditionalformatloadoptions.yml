@@ -5,11 +5,10 @@ items:
       Represents a custom conditional format type.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: CustomConditionalFormatLoadOptions
+    name: Excel.Interfaces.CustomConditionalFormatLoadOptions
     fullName: Excel.Interfaces.CustomConditionalFormatLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -62,8 +61,6 @@ items:
           - 'excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface'
-    name: ConditionalRangeFormatLoadOptions
-    fullName: Excel.Interfaces.ConditionalRangeFormatLoadOptions
+    name: Excel.Interfaces.ConditionalRangeFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions:interface'
-    name: ConditionalFormatRuleLoadOptions
-    fullName: Excel.Interfaces.ConditionalFormatRuleLoadOptions
+    name: Excel.Interfaces.ConditionalFormatRuleLoadOptions

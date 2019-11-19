@@ -5,11 +5,10 @@ items:
       Represents a OneNote page.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: PageLoadOptions
+    name: OneNote.Interfaces.PageLoadOptions
     fullName: OneNote.Interfaces.PageLoadOptions
     langs:
       - typeScript
-    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -171,11 +170,8 @@ items:
           - boolean
 references:
   - uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions:interface'
-    name: PageContentCollectionLoadOptions
-    fullName: OneNote.Interfaces.PageContentCollectionLoadOptions
+    name: OneNote.Interfaces.PageContentCollectionLoadOptions
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface'
-    name: InkAnalysisLoadOptions
-    fullName: OneNote.Interfaces.InkAnalysisLoadOptions
+    name: OneNote.Interfaces.InkAnalysisLoadOptions
   - uid: 'onenote!OneNote.Interfaces.SectionLoadOptions:interface'
-    name: SectionLoadOptions
-    fullName: OneNote.Interfaces.SectionLoadOptions
+    name: OneNote.Interfaces.SectionLoadOptions

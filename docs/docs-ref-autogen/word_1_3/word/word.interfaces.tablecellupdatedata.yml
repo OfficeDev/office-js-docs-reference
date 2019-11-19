@@ -2,11 +2,10 @@
 items:
   - uid: 'word!Word.Interfaces.TableCellUpdateData:interface'
     summary: 'An interface for updating data on the TableCell object, for use in "tableCell.set(<!-- -->{ ... }<!-- -->)".'
-    name: TableCellUpdateData
+    name: Word.Interfaces.TableCellUpdateData
     fullName: Word.Interfaces.TableCellUpdateData
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -108,8 +107,7 @@ items:
           - 'word!Word.Interfaces.TableCellUpdateData#verticalAlignment~0:complex'
 references:
   - uid: 'word!Word.Interfaces.BodyUpdateData:interface'
-    name: BodyUpdateData
-    fullName: Word.Interfaces.BodyUpdateData
+    name: Word.Interfaces.BodyUpdateData
   - uid: 'word!Word.Interfaces.TableCellUpdateData#horizontalAlignment~0:complex'
     name: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
     fullName: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"

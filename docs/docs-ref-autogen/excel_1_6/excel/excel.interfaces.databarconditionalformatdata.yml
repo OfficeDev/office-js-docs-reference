@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData:interface'
     summary: An interface describing the data returned by calling `dataBarConditionalFormat.toJSON()`<!-- -->.
-    name: DataBarConditionalFormatData
+    name: Excel.Interfaces.DataBarConditionalFormatData
     fullName: Excel.Interfaces.DataBarConditionalFormatData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -166,11 +165,8 @@ references:
       - name: ' | "Context" | "LeftToRight" | "RightToLeft"'
         fullName: ' | "Context" | "LeftToRight" | "RightToLeft"'
   - uid: 'excel!Excel.ConditionalDataBarRule:interface'
-    name: ConditionalDataBarRule
-    fullName: Excel.ConditionalDataBarRule
+    name: Excel.ConditionalDataBarRule
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatData:interface'
-    name: ConditionalDataBarNegativeFormatData
-    fullName: Excel.Interfaces.ConditionalDataBarNegativeFormatData
+    name: Excel.Interfaces.ConditionalDataBarNegativeFormatData
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatData:interface'
-    name: ConditionalDataBarPositiveFormatData
-    fullName: Excel.Interfaces.ConditionalDataBarPositiveFormatData
+    name: Excel.Interfaces.ConditionalDataBarPositiveFormatData

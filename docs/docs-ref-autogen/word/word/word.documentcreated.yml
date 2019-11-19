@@ -7,16 +7,13 @@ items:
 
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: DocumentCreated
+    name: Word.DocumentCreated
     fullName: Word.DocumentCreated
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.DocumentCreated#body:member'
@@ -475,40 +472,28 @@ references:
   - uid: 'word!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.Body:class'
-    name: Body
-    fullName: Word.Body
+    name: Word.Body
   - uid: 'word!Word.ContentControlCollection:class'
-    name: ContentControlCollection
-    fullName: Word.ContentControlCollection
+    name: Word.ContentControlCollection
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.CustomXmlPartCollection:class'
-    name: CustomXmlPartCollection
-    fullName: Word.CustomXmlPartCollection
+    name: Word.CustomXmlPartCollection
   - uid: 'word!Word.Range:class'
-    name: Range
-    fullName: Word.Range
+    name: Word.Range
   - uid: 'word!Word.DocumentCreated:class'
-    name: DocumentCreated
-    fullName: Word.DocumentCreated
+    name: Word.DocumentCreated
   - uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions:interface'
-    name: DocumentCreatedLoadOptions
-    fullName: Word.Interfaces.DocumentCreatedLoadOptions
+    name: Word.Interfaces.DocumentCreatedLoadOptions
   - uid: 'word!Word.DocumentProperties:class'
-    name: DocumentProperties
-    fullName: Word.DocumentProperties
+    name: Word.DocumentProperties
   - uid: 'word!Word.SectionCollection:class'
-    name: SectionCollection
-    fullName: Word.SectionCollection
+    name: Word.SectionCollection
   - uid: 'word!Word.Interfaces.DocumentCreatedUpdateData:interface'
-    name: DocumentCreatedUpdateData
-    fullName: Word.Interfaces.DocumentCreatedUpdateData
+    name: Interfaces.DocumentCreatedUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.SettingCollection:class'
-    name: SettingCollection
-    fullName: Word.SettingCollection
+    name: Word.SettingCollection
   - uid: 'word!Word.Interfaces.DocumentCreatedData:interface'
-    name: DocumentCreatedData
-    fullName: Word.Interfaces.DocumentCreatedData
+    name: Word.Interfaces.DocumentCreatedData

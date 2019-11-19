@@ -5,11 +5,10 @@ items:
       Represents an IconSet criteria for conditional formatting.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: IconSetConditionalFormatLoadOptions
+    name: Excel.Interfaces.IconSetConditionalFormatLoadOptions
     fullName: Excel.Interfaces.IconSetConditionalFormatLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

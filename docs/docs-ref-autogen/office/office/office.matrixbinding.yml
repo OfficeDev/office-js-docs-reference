@@ -5,16 +5,13 @@ items:
     remarks: >-
       The MatrixBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method
       from the Binding object.
-    name: MatrixBinding
+    name: Office.MatrixBinding
     fullName: Office.MatrixBinding
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: interface
     extends:
       - 'office!Office.Binding:interface'
-    inheritance:
-      - type: 'office!Office.Binding:interface'
     package: office!
     children:
       - 'office!Office.MatrixBinding#columnCount:member'
@@ -78,4 +75,3 @@ items:
 references:
   - uid: 'office!Office.Binding:interface'
     name: Binding
-    fullName: Office.Binding

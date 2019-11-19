@@ -5,11 +5,10 @@ items:
       Represents the runtime environment of the add-in and provides access to key objects of the API. The current
       context exists as a property of Office. It is accessed using `Office.context`<!-- -->.
     remarks: '**Hosts**: Excel, Outlook, PowerPoint, Project, Word'
-    name: Context
+    name: Office.Context
     fullName: Office.Context
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:
@@ -423,29 +422,21 @@ items:
 references:
   - uid: 'office!Office.Auth:interface'
     name: Auth
-    fullName: Office.Auth
   - uid: 'office!Office.ContextInformation:interface'
     name: ContextInformation
-    fullName: Office.ContextInformation
   - uid: 'office!Office.Document:interface'
-    name: Document
-    fullName: Office.Document
+    name: Office.Document
   - uid: 'office!Office.HostType:enum'
     name: HostType
-    fullName: Office.HostType
   - uid: 'office!Office.Mailbox:interface'
     name: Office.Mailbox
   - uid: 'office!Office.OfficeTheme:interface'
     name: OfficeTheme
-    fullName: Office.OfficeTheme
   - uid: 'office!Office.PlatformType:enum'
     name: PlatformType
-    fullName: Office.PlatformType
   - uid: 'office!Office.RequirementSetSupport:interface'
     name: RequirementSetSupport
-    fullName: Office.RequirementSetSupport
   - uid: 'office!Office.RoamingSettings:interface'
     name: Office.RoamingSettings
   - uid: 'office!Office.UI:interface'
     name: UI
-    fullName: Office.UI

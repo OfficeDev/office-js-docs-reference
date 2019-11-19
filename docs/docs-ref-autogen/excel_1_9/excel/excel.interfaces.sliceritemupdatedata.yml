@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.SlicerItemUpdateData:interface'
     summary: 'An interface for updating data on the SlicerItem object, for use in `slicerItem.set({ ... })`<!-- -->.'
-    name: SlicerItemUpdateData
+    name: Excel.Interfaces.SlicerItemUpdateData
     fullName: Excel.Interfaces.SlicerItemUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

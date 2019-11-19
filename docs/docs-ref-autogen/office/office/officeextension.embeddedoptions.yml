@@ -1,11 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'office!OfficeExtension.EmbeddedOptions:interface'
-    name: EmbeddedOptions
+    name: OfficeExtension.EmbeddedOptions
     fullName: OfficeExtension.EmbeddedOptions
     langs:
       - typeScript
-    namespace: 'office!OfficeExtension:namespace'
     type: interface
     package: office!
     children:

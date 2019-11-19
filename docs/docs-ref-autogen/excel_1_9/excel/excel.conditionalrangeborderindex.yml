@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.ConditionalRangeBorderIndex:enum'
     summary: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: ConditionalRangeBorderIndex
+    name: Excel.ConditionalRangeBorderIndex
     fullName: Excel.ConditionalRangeBorderIndex
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

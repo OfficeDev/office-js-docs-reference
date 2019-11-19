@@ -5,11 +5,10 @@ items:
       Provides information about the page that raised the PageRenderComplete event.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: PageRenderCompleteEventArgs
+    name: Visio.PageRenderCompleteEventArgs
     fullName: Visio.PageRenderCompleteEventArgs
     langs:
       - typeScript
-    namespace: 'visio!Visio:namespace'
     type: interface
     package: visio!
     children:

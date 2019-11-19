@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData:interface'
     summary: 'An interface for updating data on the HeaderFooter object, for use in `headerFooter.set({ ... })`<!-- -->.'
-    name: HeaderFooterUpdateData
+    name: Excel.Interfaces.HeaderFooterUpdateData
     fullName: Excel.Interfaces.HeaderFooterUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

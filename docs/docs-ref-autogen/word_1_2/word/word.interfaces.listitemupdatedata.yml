@@ -2,10 +2,9 @@
 items:
   - uid: 'word!Word.Interfaces.ListItemUpdateData:interface'
     summary: 'An interface for updating data on the ListItem object, for use in "listItem.set(<!-- -->{ ... }<!-- -->)".'
-    name: ListItemUpdateData
+    name: Word.Interfaces.ListItemUpdateData
     fullName: Word.Interfaces.ListItemUpdateData
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!

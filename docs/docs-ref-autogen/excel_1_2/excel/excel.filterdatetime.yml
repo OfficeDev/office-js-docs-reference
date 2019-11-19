@@ -5,11 +5,10 @@ items:
       Represents how to filter a date when filtering on values.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: FilterDatetime
+    name: Excel.FilterDatetime
     fullName: Excel.FilterDatetime
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

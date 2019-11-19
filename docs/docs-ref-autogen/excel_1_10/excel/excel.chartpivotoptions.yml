@@ -5,16 +5,13 @@ items:
       Encapsulates the options for the pivot chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartPivotOptions
+    name: Excel.ChartPivotOptions
     fullName: Excel.ChartPivotOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartPivotOptions#context:member'
@@ -246,18 +243,13 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartPivotOptions:class'
-    name: ChartPivotOptions
-    fullName: Excel.ChartPivotOptions
+    name: Excel.ChartPivotOptions
   - uid: 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions:interface'
-    name: ChartPivotOptionsLoadOptions
-    fullName: Excel.Interfaces.ChartPivotOptionsLoadOptions
+    name: Excel.Interfaces.ChartPivotOptionsLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartPivotOptionsUpdateData:interface'
-    name: ChartPivotOptionsUpdateData
-    fullName: Excel.Interfaces.ChartPivotOptionsUpdateData
+    name: Interfaces.ChartPivotOptionsUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartPivotOptionsData:interface'
-    name: ChartPivotOptionsData
-    fullName: Excel.Interfaces.ChartPivotOptionsData
+    name: Excel.Interfaces.ChartPivotOptionsData

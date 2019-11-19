@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the ConditionalFormat object, for use in `conditionalFormat.set({ ... })`<!--
       -->.
-    name: ConditionalFormatUpdateData
+    name: Excel.Interfaces.ConditionalFormatUpdateData
     fullName: Excel.Interfaces.ConditionalFormatUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -321,26 +320,18 @@ items:
           - 'excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatUpdateData:interface'
-    name: CellValueConditionalFormatUpdateData
-    fullName: Excel.Interfaces.CellValueConditionalFormatUpdateData
+    name: Excel.Interfaces.CellValueConditionalFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData:interface'
-    name: ColorScaleConditionalFormatUpdateData
-    fullName: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
+    name: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
   - uid: 'excel!Excel.Interfaces.CustomConditionalFormatUpdateData:interface'
-    name: CustomConditionalFormatUpdateData
-    fullName: Excel.Interfaces.CustomConditionalFormatUpdateData
+    name: Excel.Interfaces.CustomConditionalFormatUpdateData
   - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData:interface'
-    name: DataBarConditionalFormatUpdateData
-    fullName: Excel.Interfaces.DataBarConditionalFormatUpdateData
+    name: Excel.Interfaces.DataBarConditionalFormatUpdateData
   - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData:interface'
-    name: IconSetConditionalFormatUpdateData
-    fullName: Excel.Interfaces.IconSetConditionalFormatUpdateData
+    name: Excel.Interfaces.IconSetConditionalFormatUpdateData
   - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface'
-    name: PresetCriteriaConditionalFormatUpdateData
-    fullName: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+    name: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
   - uid: 'excel!Excel.Interfaces.TextConditionalFormatUpdateData:interface'
-    name: TextConditionalFormatUpdateData
-    fullName: Excel.Interfaces.TextConditionalFormatUpdateData
+    name: Excel.Interfaces.TextConditionalFormatUpdateData
   - uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData:interface'
-    name: TopBottomConditionalFormatUpdateData
-    fullName: Excel.Interfaces.TopBottomConditionalFormatUpdateData
+    name: Excel.Interfaces.TopBottomConditionalFormatUpdateData

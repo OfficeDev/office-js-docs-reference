@@ -8,16 +8,13 @@ items:
       \[ [API set: WordApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     isPreview: true
-    name: Setting
+    name: Word.Setting
     fullName: Word.Setting
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.Setting._replaceDateWithStringDate:member(1)'
@@ -356,18 +353,13 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.Setting:class'
-    name: Setting
-    fullName: Word.Setting
+    name: Word.Setting
   - uid: 'word!Word.Interfaces.SettingLoadOptions:interface'
-    name: SettingLoadOptions
-    fullName: Word.Interfaces.SettingLoadOptions
+    name: Word.Interfaces.SettingLoadOptions
   - uid: 'word!Word.Interfaces.SettingUpdateData:interface'
-    name: SettingUpdateData
-    fullName: Word.Interfaces.SettingUpdateData
+    name: Interfaces.SettingUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.SettingData:interface'
-    name: SettingData
-    fullName: Word.Interfaces.SettingData
+    name: Word.Interfaces.SettingData

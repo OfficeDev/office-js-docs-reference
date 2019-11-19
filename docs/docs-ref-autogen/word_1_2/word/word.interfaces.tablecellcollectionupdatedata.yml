@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the TableCellCollection object, for use in "tableCellCollection.set(<!-- -->{
       ... }<!-- -->)".
-    name: TableCellCollectionUpdateData
+    name: Word.Interfaces.TableCellCollectionUpdateData
     fullName: Word.Interfaces.TableCellCollectionUpdateData
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:

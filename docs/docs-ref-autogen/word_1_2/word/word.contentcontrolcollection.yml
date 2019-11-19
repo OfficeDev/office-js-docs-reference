@@ -9,16 +9,13 @@ items:
 
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: ContentControlCollection
+    name: Word.ContentControlCollection
     fullName: Word.ContentControlCollection
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.ContentControlCollection#context:member'
@@ -503,13 +500,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.ContentControl:class'
-    name: ContentControl
-    fullName: Word.ContentControl
+    name: Word.ContentControl
   - uid: 'word!Word.ContentControlCollection:class'
-    name: ContentControlCollection
-    fullName: Word.ContentControlCollection
+    name: Word.ContentControlCollection
   - uid: 'word!Word.ContentControlCollection#items~0:complex'
     name: 'Word.ContentControl[]'
     fullName: 'Word.ContentControl[]'
@@ -534,5 +528,4 @@ references:
   - uid: 'word!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'word!Word.Interfaces.ContentControlCollectionData:interface'
-    name: ContentControlCollectionData
-    fullName: Word.Interfaces.ContentControlCollectionData
+    name: Word.Interfaces.ContentControlCollectionData

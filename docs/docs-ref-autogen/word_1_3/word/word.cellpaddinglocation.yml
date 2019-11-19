@@ -2,11 +2,10 @@
 items:
   - uid: 'word!Word.CellPaddingLocation:enum'
     summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
-    name: CellPaddingLocation
+    name: Word.CellPaddingLocation
     fullName: Word.CellPaddingLocation
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: enum
     package: word!
     children:

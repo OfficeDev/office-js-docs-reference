@@ -5,11 +5,10 @@ items:
       An object containing the result of a function-evaluation operation
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: FunctionResultLoadOptions
+    name: Excel.Interfaces.FunctionResultLoadOptions
     fullName: Excel.Interfaces.FunctionResultLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

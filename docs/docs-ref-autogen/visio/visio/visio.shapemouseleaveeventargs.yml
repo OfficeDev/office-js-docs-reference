@@ -5,11 +5,10 @@ items:
       Provides information about the shape that raised the ShapeMouseLeave event.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: ShapeMouseLeaveEventArgs
+    name: Visio.ShapeMouseLeaveEventArgs
     fullName: Visio.ShapeMouseLeaveEventArgs
     langs:
       - typeScript
-    namespace: 'visio!Visio:namespace'
     type: interface
     package: visio!
     remarks: |-

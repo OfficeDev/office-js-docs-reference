@@ -5,11 +5,10 @@ items:
       Represents the Shape Collection.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: ShapeCollectionLoadOptions
+    name: Visio.Interfaces.ShapeCollectionLoadOptions
     fullName: Visio.Interfaces.ShapeCollectionLoadOptions
     langs:
       - typeScript
-    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:
@@ -109,5 +108,4 @@ items:
           - 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'
 references:
   - uid: 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'
-    name: ShapeViewLoadOptions
-    fullName: Visio.Interfaces.ShapeViewLoadOptions
+    name: Visio.Interfaces.ShapeViewLoadOptions

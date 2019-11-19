@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.CustomConditionalFormatData:interface'
     summary: An interface describing the data returned by calling `customConditionalFormat.toJSON()`<!-- -->.
-    name: CustomConditionalFormatData
+    name: Excel.Interfaces.CustomConditionalFormatData
     fullName: Excel.Interfaces.CustomConditionalFormatData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -46,8 +45,6 @@ items:
           - 'excel!Excel.Interfaces.ConditionalFormatRuleData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
-    name: ConditionalRangeFormatData
-    fullName: Excel.Interfaces.ConditionalRangeFormatData
+    name: Excel.Interfaces.ConditionalRangeFormatData
   - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleData:interface'
-    name: ConditionalFormatRuleData
-    fullName: Excel.Interfaces.ConditionalFormatRuleData
+    name: Excel.Interfaces.ConditionalFormatRuleData

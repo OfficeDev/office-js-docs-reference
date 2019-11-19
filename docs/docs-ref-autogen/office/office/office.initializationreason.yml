@@ -2,11 +2,10 @@
 items:
   - uid: 'office!Office.InitializationReason:enum'
     summary: Specifies whether the add-in was just inserted or was already contained in the document.
-    name: InitializationReason
+    name: Office.InitializationReason
     fullName: Office.InitializationReason
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: enum
     package: office!
     children:

@@ -2,11 +2,10 @@
 items:
   - uid: 'word!Word.Interfaces.SectionUpdateData:interface'
     summary: 'An interface for updating data on the Section object, for use in "section.set(<!-- -->{ ... }<!-- -->)".'
-    name: SectionUpdateData
+    name: Word.Interfaces.SectionUpdateData
     fullName: Word.Interfaces.SectionUpdateData
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -28,5 +27,4 @@ items:
           - 'word!Word.Interfaces.BodyUpdateData:interface'
 references:
   - uid: 'word!Word.Interfaces.BodyUpdateData:interface'
-    name: BodyUpdateData
-    fullName: Word.Interfaces.BodyUpdateData
+    name: Word.Interfaces.BodyUpdateData

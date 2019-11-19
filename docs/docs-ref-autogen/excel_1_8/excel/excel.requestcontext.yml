@@ -5,16 +5,13 @@ items:
       The RequestContext object facilitates requests to the Excel application. Since the Office add-in and the Excel
       application run in two different processes, the request context is required to get access to the Excel object
       model from the add-in.
-    name: RequestContext
+    name: Excel.RequestContext
     fullName: Excel.RequestContext
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientRequestContext:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientRequestContext:class'
     package: excel!
     children:
       - 'excel!Excel.RequestContext:constructor(1)'
@@ -83,10 +80,7 @@ references:
         fullName: Excel.Session
   - uid: 'excel!Excel.Application:class'
     name: Application
-    fullName: Excel.Application
   - uid: 'excel!Excel.Runtime:class'
     name: Runtime
-    fullName: Excel.Runtime
   - uid: 'excel!Excel.Workbook:class'
     name: Workbook
-    fullName: Excel.Workbook

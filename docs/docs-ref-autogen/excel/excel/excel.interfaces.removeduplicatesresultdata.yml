@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.RemoveDuplicatesResultData:interface'
     summary: An interface describing the data returned by calling `removeDuplicatesResult.toJSON()`<!-- -->.
-    name: RemoveDuplicatesResultData
+    name: Excel.Interfaces.RemoveDuplicatesResultData
     fullName: Excel.Interfaces.RemoveDuplicatesResultData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

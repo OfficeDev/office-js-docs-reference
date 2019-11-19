@@ -51,11 +51,10 @@ items:
       }
 
       ```
-    name: RecurrenceProperties
+    name: Office.RecurrenceProperties
     fullName: Office.RecurrenceProperties
     langs:
       - typeScript
-    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

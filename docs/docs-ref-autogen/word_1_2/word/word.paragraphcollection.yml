@@ -5,16 +5,13 @@ items:
       Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class) objects.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: ParagraphCollection
+    name: Word.ParagraphCollection
     fullName: Word.ParagraphCollection
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.ParagraphCollection#context:member'
@@ -227,7 +224,6 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.ParagraphCollection#items~0:complex'
     name: 'Word.Paragraph[]'
     fullName: 'Word.Paragraph[]'
@@ -238,8 +234,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.ParagraphCollection:class'
-    name: ParagraphCollection
-    fullName: Word.ParagraphCollection
+    name: Word.ParagraphCollection
   - uid: 'word!Word.ParagraphCollection#load~0:complex'
     name: Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
     fullName: Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
@@ -255,5 +250,4 @@ references:
   - uid: 'word!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'word!Word.Interfaces.ParagraphCollectionData:interface'
-    name: ParagraphCollectionData
-    fullName: Word.Interfaces.ParagraphCollectionData
+    name: Word.Interfaces.ParagraphCollectionData

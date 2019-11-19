@@ -5,16 +5,13 @@ items:
       Represents a Slicer Style, which defines style elements by region of the slicer.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: SlicerStyle
+    name: Excel.SlicerStyle
     fullName: Excel.SlicerStyle
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.SlicerStyle#context:member'
@@ -245,18 +242,13 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.SlicerStyle:class'
-    name: SlicerStyle
-    fullName: Excel.SlicerStyle
+    name: Excel.SlicerStyle
   - uid: 'excel!Excel.Interfaces.SlicerStyleLoadOptions:interface'
-    name: SlicerStyleLoadOptions
-    fullName: Excel.Interfaces.SlicerStyleLoadOptions
+    name: Excel.Interfaces.SlicerStyleLoadOptions
   - uid: 'excel!Excel.Interfaces.SlicerStyleUpdateData:interface'
-    name: SlicerStyleUpdateData
-    fullName: Excel.Interfaces.SlicerStyleUpdateData
+    name: Interfaces.SlicerStyleUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.SlicerStyleData:interface'
-    name: SlicerStyleData
-    fullName: Excel.Interfaces.SlicerStyleData
+    name: Excel.Interfaces.SlicerStyleData

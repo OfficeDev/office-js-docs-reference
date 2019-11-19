@@ -5,16 +5,13 @@ items:
       Represents a section in a Word document.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Section
+    name: Word.Section
     fullName: Word.Section
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.Section#body:member'
@@ -439,25 +436,18 @@ references:
   - uid: 'word!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.Body:class'
-    name: Body
-    fullName: Word.Body
+    name: Word.Body
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.HeaderFooterType:enum'
-    name: HeaderFooterType
-    fullName: Word.HeaderFooterType
+    name: Word.HeaderFooterType
   - uid: 'word!Word.Section:class'
-    name: Section
-    fullName: Word.Section
+    name: Word.Section
   - uid: 'word!Word.Interfaces.SectionLoadOptions:interface'
-    name: SectionLoadOptions
-    fullName: Word.Interfaces.SectionLoadOptions
+    name: Word.Interfaces.SectionLoadOptions
   - uid: 'word!Word.Interfaces.SectionUpdateData:interface'
-    name: SectionUpdateData
-    fullName: Word.Interfaces.SectionUpdateData
+    name: Interfaces.SectionUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.SectionData:interface'
-    name: SectionData
-    fullName: Word.Interfaces.SectionData
+    name: Word.Interfaces.SectionData

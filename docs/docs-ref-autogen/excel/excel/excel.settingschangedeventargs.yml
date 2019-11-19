@@ -5,11 +5,10 @@ items:
       Provides information about the setting that raised the SettingsChanged event
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: SettingsChangedEventArgs
+    name: Excel.SettingsChangedEventArgs
     fullName: Excel.SettingsChangedEventArgs
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:
@@ -31,5 +30,4 @@ items:
           - 'excel!Excel.SettingCollection:class'
 references:
   - uid: 'excel!Excel.SettingCollection:class'
-    name: SettingCollection
-    fullName: Excel.SettingCollection
+    name: Excel.SettingCollection

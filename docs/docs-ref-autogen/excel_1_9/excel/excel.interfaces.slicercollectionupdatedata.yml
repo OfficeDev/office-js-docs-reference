@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.SlicerCollectionUpdateData:interface'
     summary: 'An interface for updating data on the SlicerCollection object, for use in `slicerCollection.set({ ... })`<!-- -->.'
-    name: SlicerCollectionUpdateData
+    name: Excel.Interfaces.SlicerCollectionUpdateData
     fullName: Excel.Interfaces.SlicerCollectionUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

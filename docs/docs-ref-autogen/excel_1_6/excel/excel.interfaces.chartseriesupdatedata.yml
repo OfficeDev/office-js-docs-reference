@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData:interface'
     summary: 'An interface for updating data on the ChartSeries object, for use in `chartSeries.set({ ... })`<!-- -->.'
-    name: ChartSeriesUpdateData
+    name: Excel.Interfaces.ChartSeriesUpdateData
     fullName: Excel.Interfaces.ChartSeriesUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -44,5 +43,4 @@ items:
           - string
 references:
   - uid: 'excel!Excel.Interfaces.ChartSeriesFormatUpdateData:interface'
-    name: ChartSeriesFormatUpdateData
-    fullName: Excel.Interfaces.ChartSeriesFormatUpdateData
+    name: Excel.Interfaces.ChartSeriesFormatUpdateData

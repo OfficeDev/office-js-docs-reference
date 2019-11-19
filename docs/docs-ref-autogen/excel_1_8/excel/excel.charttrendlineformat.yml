@@ -5,16 +5,13 @@ items:
       Represents the format properties for chart trendline.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartTrendlineFormat
+    name: Excel.ChartTrendlineFormat
     fullName: Excel.ChartTrendlineFormat
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartTrendlineFormat#context:member'
@@ -233,21 +230,15 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartLineFormat:class'
-    name: ChartLineFormat
-    fullName: Excel.ChartLineFormat
+    name: Excel.ChartLineFormat
   - uid: 'excel!Excel.ChartTrendlineFormat:class'
-    name: ChartTrendlineFormat
-    fullName: Excel.ChartTrendlineFormat
+    name: Excel.ChartTrendlineFormat
   - uid: 'excel!Excel.Interfaces.ChartTrendlineFormatLoadOptions:interface'
-    name: ChartTrendlineFormatLoadOptions
-    fullName: Excel.Interfaces.ChartTrendlineFormatLoadOptions
+    name: Excel.Interfaces.ChartTrendlineFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartTrendlineFormatUpdateData:interface'
-    name: ChartTrendlineFormatUpdateData
-    fullName: Excel.Interfaces.ChartTrendlineFormatUpdateData
+    name: Interfaces.ChartTrendlineFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartTrendlineFormatData:interface'
-    name: ChartTrendlineFormatData
-    fullName: Excel.Interfaces.ChartTrendlineFormatData
+    name: Excel.Interfaces.ChartTrendlineFormatData

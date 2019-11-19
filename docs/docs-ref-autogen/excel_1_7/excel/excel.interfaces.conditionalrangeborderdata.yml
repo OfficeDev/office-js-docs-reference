@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderData:interface'
     summary: An interface describing the data returned by calling `conditionalRangeBorder.toJSON()`<!-- -->.
-    name: ConditionalRangeBorderData
+    name: Excel.Interfaces.ConditionalRangeBorderData
     fullName: Excel.Interfaces.ConditionalRangeBorderData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.PivotFieldUpdateData:interface'
     summary: 'An interface for updating data on the PivotField object, for use in `pivotField.set({ ... })`<!-- -->.'
-    name: PivotFieldUpdateData
+    name: Excel.Interfaces.PivotFieldUpdateData
     fullName: Excel.Interfaces.PivotFieldUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -60,5 +59,4 @@ items:
           - 'excel!Excel.Subtotals:interface'
 references:
   - uid: 'excel!Excel.Subtotals:interface'
-    name: Subtotals
-    fullName: Excel.Subtotals
+    name: Excel.Subtotals

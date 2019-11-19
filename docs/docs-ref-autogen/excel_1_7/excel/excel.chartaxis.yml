@@ -5,16 +5,13 @@ items:
       Represents a single axis in a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartAxis
+    name: Excel.ChartAxis
     fullName: Excel.ChartAxis
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartAxis#axisGroup:member'
@@ -830,7 +827,6 @@ references:
         fullName: ' | "Automatic" | "TextAxis" | "DateAxis"'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartAxis#displayUnit~0:complex'
     name: >-
       Excel.ChartAxisDisplayUnit | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" | "Millions"
@@ -845,17 +841,13 @@ references:
       - name: ' | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"'
         fullName: ' | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"'
   - uid: 'excel!Excel.ChartAxisFormat:class'
-    name: ChartAxisFormat
-    fullName: Excel.ChartAxisFormat
+    name: Excel.ChartAxisFormat
   - uid: 'excel!Excel.ChartAxis:class'
-    name: ChartAxis
-    fullName: Excel.ChartAxis
+    name: Excel.ChartAxis
   - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions:interface'
-    name: ChartAxisLoadOptions
-    fullName: Excel.Interfaces.ChartAxisLoadOptions
+    name: Excel.Interfaces.ChartAxisLoadOptions
   - uid: 'excel!Excel.ChartGridlines:class'
-    name: ChartGridlines
-    fullName: Excel.ChartGridlines
+    name: Excel.ChartGridlines
   - uid: 'excel!Excel.ChartAxis#majorTickMark~0:complex'
     name: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
     fullName: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
@@ -902,13 +894,11 @@ references:
       - name: ' | "Linear" | "Logarithmic"'
         fullName: ' | "Linear" | "Logarithmic"'
   - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData:interface'
-    name: ChartAxisUpdateData
-    fullName: Excel.Interfaces.ChartAxisUpdateData
+    name: Interfaces.ChartAxisUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Range:class'
     name: Range
-    fullName: Excel.Range
   - uid: 'excel!Excel.ChartAxis#tickLabelPosition~0:complex'
     name: Excel.ChartAxisTickLabelPosition | "NextToAxis" | "High" | "Low" | "None"
     fullName: Excel.ChartAxisTickLabelPosition | "NextToAxis" | "High" | "Low" | "None"
@@ -919,11 +909,9 @@ references:
       - name: ' | "NextToAxis" | "High" | "Low" | "None"'
         fullName: ' | "NextToAxis" | "High" | "Low" | "None"'
   - uid: 'excel!Excel.ChartAxisTitle:class'
-    name: ChartAxisTitle
-    fullName: Excel.ChartAxisTitle
+    name: Excel.ChartAxisTitle
   - uid: 'excel!Excel.Interfaces.ChartAxisData:interface'
-    name: ChartAxisData
-    fullName: Excel.Interfaces.ChartAxisData
+    name: Excel.Interfaces.ChartAxisData
   - uid: 'excel!Excel.ChartAxis#type~0:complex'
     name: Excel.ChartAxisType | "Invalid" | "Category" | "Value" | "Series"
     fullName: Excel.ChartAxisType | "Invalid" | "Category" | "Value" | "Series"

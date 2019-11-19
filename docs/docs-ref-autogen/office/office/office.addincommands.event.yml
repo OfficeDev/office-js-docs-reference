@@ -17,11 +17,10 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
-    name: Event
+    name: Office.AddinCommands.Event
     fullName: Office.AddinCommands.Event
     langs:
       - typeScript
-    namespace: 'office!Office.AddinCommands:namespace'
     type: interface
     package: office!
     children:
@@ -212,7 +211,5 @@ items:
 references:
   - uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
     name: EventCompletedOptions
-    fullName: Office.AddinCommands.EventCompletedOptions
   - uid: 'office!Office.AddinCommands.Source:interface'
     name: Source
-    fullName: Office.AddinCommands.Source

@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the TableColumnCollection object, for use in `tableColumnCollection.set({ ...
       })`<!-- -->.
-    name: TableColumnCollectionUpdateData
+    name: Excel.Interfaces.TableColumnCollectionUpdateData
     fullName: Excel.Interfaces.TableColumnCollectionUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

@@ -5,16 +5,13 @@ items:
       Represents which column properties to load, when used as part of a "range.getColumnProperties" method.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ColumnPropertiesLoadOptions
+    name: Excel.ColumnPropertiesLoadOptions
     fullName: Excel.ColumnPropertiesLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     extends:
       - 'excel!Excel.CellPropertiesLoadOptions:interface'
-    inheritance:
-      - type: 'excel!Excel.CellPropertiesLoadOptions:interface'
     package: excel!
     children:
       - 'excel!Excel.ColumnPropertiesLoadOptions#columnHidden:member'
@@ -71,7 +68,6 @@ items:
 references:
   - uid: 'excel!Excel.CellPropertiesLoadOptions:interface'
     name: CellPropertiesLoadOptions
-    fullName: Excel.CellPropertiesLoadOptions
   - uid: 'excel!Excel.ColumnPropertiesLoadOptions#format~0:complex'
     name: |-
       Excel.CellPropertiesFormatLoadOptions & {

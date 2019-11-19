@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.ShowAsRule:interface'
     summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: ShowAsRule
+    name: Excel.ShowAsRule
     fullName: Excel.ShowAsRule
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:
@@ -95,11 +94,9 @@ items:
           - 'excel!Excel.ShowAsRule#calculation~0:complex'
 references:
   - uid: 'excel!Excel.PivotField:class'
-    name: PivotField
-    fullName: Excel.PivotField
+    name: Excel.PivotField
   - uid: 'excel!Excel.PivotItem:class'
-    name: PivotItem
-    fullName: Excel.PivotItem
+    name: Excel.PivotItem
   - uid: 'excel!Excel.ShowAsRule#calculation~0:complex'
     name: >-
       Excel.ShowAsCalculation | "Unknown" | "None" | "PercentOfGrandTotal" | "PercentOfRowTotal" |

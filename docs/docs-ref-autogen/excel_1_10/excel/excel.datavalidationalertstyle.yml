@@ -5,11 +5,10 @@ items:
       Represents Data validation error alert style. The default is "Stop".
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: DataValidationAlertStyle
+    name: Excel.DataValidationAlertStyle
     fullName: Excel.DataValidationAlertStyle
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

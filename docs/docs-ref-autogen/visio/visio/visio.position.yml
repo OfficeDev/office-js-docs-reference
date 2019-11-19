@@ -5,11 +5,10 @@ items:
       Represents the Position of the object in the view.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: Position
+    name: Visio.Position
     fullName: Visio.Position
     langs:
       - typeScript
-    namespace: 'visio!Visio:namespace'
     type: interface
     package: visio!
     children:

@@ -4,11 +4,10 @@ items:
     summary: >-
       Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more
       information.
-    name: TrackedObjects
+    name: OfficeExtension.TrackedObjects
     fullName: OfficeExtension.TrackedObjects
     langs:
       - typeScript
-    namespace: 'office!OfficeExtension:namespace'
     type: class
     package: office!
     children:
@@ -117,7 +116,6 @@ items:
 references:
   - uid: 'office!OfficeExtension.ClientObject:class'
     name: ClientObject
-    fullName: OfficeExtension.ClientObject
   - uid: 'office!OfficeExtension.TrackedObjects#add~0:complex'
     name: 'ClientObject[]'
     fullName: 'OfficeExtension.ClientObject[]'

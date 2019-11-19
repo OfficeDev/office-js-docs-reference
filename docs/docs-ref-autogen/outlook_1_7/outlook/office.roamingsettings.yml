@@ -53,11 +53,10 @@ items:
       Office.context.roamingSettings.saveAsync();
 
       ```
-    name: RoamingSettings
+    name: Office.RoamingSettings
     fullName: Office.RoamingSettings
     langs:
       - typeScript
-    namespace: 'outlook!Office:namespace'
     type: interface
     package: outlook!
     children:

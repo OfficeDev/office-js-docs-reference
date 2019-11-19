@@ -7,11 +7,10 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: PageLayoutLoadOptions
+    name: Excel.Interfaces.PageLayoutLoadOptions
     fullName: Excel.Interfaces.PageLayoutLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -360,5 +359,4 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.HeaderFooterGroupLoadOptions:interface'
-    name: HeaderFooterGroupLoadOptions
-    fullName: Excel.Interfaces.HeaderFooterGroupLoadOptions
+    name: Excel.Interfaces.HeaderFooterGroupLoadOptions

@@ -2,11 +2,10 @@
 items:
   - uid: 'onenote!OneNote.Interfaces.SectionData:interface'
     summary: An interface describing the data returned by calling "section.toJSON()".
-    name: SectionData
+    name: OneNote.Interfaces.SectionData
     fullName: OneNote.Interfaces.SectionData
     langs:
       - typeScript
-    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:

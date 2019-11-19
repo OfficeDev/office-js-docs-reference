@@ -2,11 +2,10 @@
 items:
   - uid: 'visio!Visio.Interfaces.SelectionData:interface'
     summary: An interface describing the data returned by calling "selection.toJSON()".
-    name: SelectionData
+    name: Visio.Interfaces.SelectionData
     fullName: Visio.Interfaces.SelectionData
     langs:
       - typeScript
-    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:

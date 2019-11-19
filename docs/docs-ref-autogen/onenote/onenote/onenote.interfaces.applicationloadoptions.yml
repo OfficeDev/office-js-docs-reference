@@ -7,11 +7,10 @@ items:
 
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: ApplicationLoadOptions
+    name: OneNote.Interfaces.ApplicationLoadOptions
     fullName: OneNote.Interfaces.ApplicationLoadOptions
     langs:
       - typeScript
-    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -47,5 +46,4 @@ items:
           - 'onenote!OneNote.Interfaces.NotebookCollectionLoadOptions:interface'
 references:
   - uid: 'onenote!OneNote.Interfaces.NotebookCollectionLoadOptions:interface'
-    name: NotebookCollectionLoadOptions
-    fullName: OneNote.Interfaces.NotebookCollectionLoadOptions
+    name: OneNote.Interfaces.NotebookCollectionLoadOptions

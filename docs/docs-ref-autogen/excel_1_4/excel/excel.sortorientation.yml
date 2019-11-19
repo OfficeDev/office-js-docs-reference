@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.SortOrientation:enum'
     summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
-    name: SortOrientation
+    name: Excel.SortOrientation
     fullName: Excel.SortOrientation
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

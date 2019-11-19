@@ -5,16 +5,13 @@ items:
       Represents the paragraph list item format.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: ListItem
+    name: Word.ListItem
     fullName: Word.ListItem
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.ListItem#context:member'
@@ -350,24 +347,17 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.Paragraph:class'
-    name: Paragraph
-    fullName: Word.Paragraph
+    name: Word.Paragraph
   - uid: 'word!Word.ParagraphCollection:class'
-    name: ParagraphCollection
-    fullName: Word.ParagraphCollection
+    name: Word.ParagraphCollection
   - uid: 'word!Word.ListItem:class'
-    name: ListItem
-    fullName: Word.ListItem
+    name: Word.ListItem
   - uid: 'word!Word.Interfaces.ListItemLoadOptions:interface'
-    name: ListItemLoadOptions
-    fullName: Word.Interfaces.ListItemLoadOptions
+    name: Word.Interfaces.ListItemLoadOptions
   - uid: 'word!Word.Interfaces.ListItemUpdateData:interface'
-    name: ListItemUpdateData
-    fullName: Word.Interfaces.ListItemUpdateData
+    name: Interfaces.ListItemUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.ListItemData:interface'
-    name: ListItemData
-    fullName: Word.Interfaces.ListItemData
+    name: Word.Interfaces.ListItemData

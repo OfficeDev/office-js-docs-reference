@@ -5,11 +5,10 @@ items:
       Represents the Hyperlink Collection.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: HyperlinkCollectionLoadOptions
+    name: Visio.Interfaces.HyperlinkCollectionLoadOptions
     fullName: Visio.Interfaces.HyperlinkCollectionLoadOptions
     langs:
       - typeScript
-    namespace: 'visio!Visio.Interfaces:namespace'
     type: interface
     package: visio!
     children:

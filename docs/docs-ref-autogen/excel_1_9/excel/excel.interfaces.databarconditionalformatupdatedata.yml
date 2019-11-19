@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the DataBarConditionalFormat object, for use in `dataBarConditionalFormat.set({
       ... })`<!-- -->.
-    name: DataBarConditionalFormatUpdateData
+    name: Excel.Interfaces.DataBarConditionalFormatUpdateData
     fullName: Excel.Interfaces.DataBarConditionalFormatUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -168,11 +167,8 @@ references:
       - name: ' | "Context" | "LeftToRight" | "RightToLeft"'
         fullName: ' | "Context" | "LeftToRight" | "RightToLeft"'
   - uid: 'excel!Excel.ConditionalDataBarRule:interface'
-    name: ConditionalDataBarRule
-    fullName: Excel.ConditionalDataBarRule
+    name: Excel.ConditionalDataBarRule
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData:interface'
-    name: ConditionalDataBarNegativeFormatUpdateData
-    fullName: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
+    name: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData:interface'
-    name: ConditionalDataBarPositiveFormatUpdateData
-    fullName: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
+    name: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData

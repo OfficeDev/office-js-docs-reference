@@ -5,16 +5,13 @@ items:
       Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class) objects.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: List
+    name: Word.List
     fullName: Word.List
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.List#context:member'
@@ -594,10 +591,8 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.ParagraphCollection:class'
-    name: ParagraphCollection
-    fullName: Word.ParagraphCollection
+    name: Word.ParagraphCollection
   - uid: 'word!Word.List#getLevelString~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -608,11 +603,9 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'word!Word.Paragraph:class'
-    name: Paragraph
-    fullName: Word.Paragraph
+    name: Word.Paragraph
   - uid: 'word!Word.InsertLocation:enum'
-    name: InsertLocation
-    fullName: Word.InsertLocation
+    name: Word.InsertLocation
   - uid: 'word!Word.List#levelTypes~0:complex'
     name: 'Word.ListLevelType[]'
     fullName: 'Word.ListLevelType[]'
@@ -623,20 +616,15 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.List:class'
-    name: List
-    fullName: Word.List
+    name: Word.List
   - uid: 'word!Word.Interfaces.ListLoadOptions:interface'
-    name: ListLoadOptions
-    fullName: Word.Interfaces.ListLoadOptions
+    name: Word.Interfaces.ListLoadOptions
   - uid: 'word!Word.Alignment:enum'
-    name: Alignment
-    fullName: Word.Alignment
+    name: Word.Alignment
   - uid: 'word!Word.ListBullet:enum'
-    name: ListBullet
-    fullName: Word.ListBullet
+    name: Word.ListBullet
   - uid: 'word!Word.ListNumbering:enum'
-    name: ListNumbering
-    fullName: Word.ListNumbering
+    name: Word.ListNumbering
   - uid: 'word!Word.List#setLevelNumbering~0:complex'
     name: Array<string | number>
     fullName: Array<string | number>
@@ -656,5 +644,4 @@ references:
       - name: <string | number>
         fullName: <string | number>
   - uid: 'word!Word.Interfaces.ListData:interface'
-    name: ListData
-    fullName: Word.Interfaces.ListData
+    name: Word.Interfaces.ListData

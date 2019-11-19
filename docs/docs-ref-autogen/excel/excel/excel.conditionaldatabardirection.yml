@@ -5,11 +5,10 @@ items:
       Represents the Data Bar direction within a cell.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ConditionalDataBarDirection
+    name: Excel.ConditionalDataBarDirection
     fullName: Excel.ConditionalDataBarDirection
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: enum
     package: excel!
     children:

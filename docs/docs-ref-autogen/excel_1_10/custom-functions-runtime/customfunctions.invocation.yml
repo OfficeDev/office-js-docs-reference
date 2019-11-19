@@ -2,11 +2,10 @@
 items:
   - uid: 'custom-functions-runtime!CustomFunctions.Invocation:interface'
     summary: Provides information about the invocation of a custom function.
-    name: Invocation
+    name: CustomFunctions.Invocation
     fullName: CustomFunctions.Invocation
     langs:
       - typeScript
-    namespace: 'custom-functions-runtime!CustomFunctions:namespace'
     type: interface
     package: custom-functions-runtime!
     children:

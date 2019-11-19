@@ -5,16 +5,13 @@ items:
       Represents the Excel application that manages the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: Application
+    name: Excel.Application
     fullName: Excel.Application
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Application#calculate:member(1)'
@@ -394,8 +391,7 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.CalculationType:enum'
-    name: CalculationType
-    fullName: Excel.CalculationType
+    name: Excel.CalculationType
   - uid: 'excel!Excel.Application#calculationMode~0:complex'
     name: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual"
     fullName: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual"
@@ -416,21 +412,15 @@ references:
         fullName: ' | "Done" | "Calculating" | "Pending"'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.IterativeCalculation:class'
-    name: IterativeCalculation
-    fullName: Excel.IterativeCalculation
+    name: Excel.IterativeCalculation
   - uid: 'excel!Excel.Application:class'
-    name: Application
-    fullName: Excel.Application
+    name: Excel.Application
   - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
-    name: ApplicationLoadOptions
-    fullName: Excel.Interfaces.ApplicationLoadOptions
+    name: Excel.Interfaces.ApplicationLoadOptions
   - uid: 'excel!Excel.Interfaces.ApplicationUpdateData:interface'
-    name: ApplicationUpdateData
-    fullName: Excel.Interfaces.ApplicationUpdateData
+    name: Interfaces.ApplicationUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ApplicationData:interface'
-    name: ApplicationData
-    fullName: Excel.Interfaces.ApplicationData
+    name: Excel.Interfaces.ApplicationData

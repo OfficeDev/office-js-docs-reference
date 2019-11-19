@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.ShapeFillUpdateData:interface'
     summary: 'An interface for updating data on the ShapeFill object, for use in `shapeFill.set({ ... })`<!-- -->.'
-    name: ShapeFillUpdateData
+    name: Excel.Interfaces.ShapeFillUpdateData
     fullName: Excel.Interfaces.ShapeFillUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

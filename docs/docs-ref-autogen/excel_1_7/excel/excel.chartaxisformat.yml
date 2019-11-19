@@ -5,16 +5,13 @@ items:
       Encapsulates the format properties for the chart axis.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartAxisFormat
+    name: Excel.ChartAxisFormat
     fullName: Excel.ChartAxisFormat
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartAxisFormat#context:member'
@@ -211,24 +208,17 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartFont:class'
-    name: ChartFont
-    fullName: Excel.ChartFont
+    name: Excel.ChartFont
   - uid: 'excel!Excel.ChartLineFormat:class'
-    name: ChartLineFormat
-    fullName: Excel.ChartLineFormat
+    name: Excel.ChartLineFormat
   - uid: 'excel!Excel.ChartAxisFormat:class'
-    name: ChartAxisFormat
-    fullName: Excel.ChartAxisFormat
+    name: Excel.ChartAxisFormat
   - uid: 'excel!Excel.Interfaces.ChartAxisFormatLoadOptions:interface'
-    name: ChartAxisFormatLoadOptions
-    fullName: Excel.Interfaces.ChartAxisFormatLoadOptions
+    name: Excel.Interfaces.ChartAxisFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartAxisFormatUpdateData:interface'
-    name: ChartAxisFormatUpdateData
-    fullName: Excel.Interfaces.ChartAxisFormatUpdateData
+    name: Interfaces.ChartAxisFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartAxisFormatData:interface'
-    name: ChartAxisFormatData
-    fullName: Excel.Interfaces.ChartAxisFormatData
+    name: Excel.Interfaces.ChartAxisFormatData

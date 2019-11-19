@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatData:interface'
     summary: An interface describing the data returned by calling `chartErrorBarsFormat.toJSON()`<!-- -->.
-    name: ChartErrorBarsFormatData
+    name: Excel.Interfaces.ChartErrorBarsFormatData
     fullName: Excel.Interfaces.ChartErrorBarsFormatData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

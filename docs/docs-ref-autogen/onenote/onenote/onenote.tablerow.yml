@@ -5,16 +5,13 @@ items:
       Represents a row in a table.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: TableRow
+    name: OneNote.TableRow
     fullName: OneNote.TableRow
     langs:
       - typeScript
-    namespace: 'onenote!OneNote:namespace'
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.TableRow#cellCount:member'
@@ -482,23 +479,16 @@ references:
   - uid: 'onenote!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.TableCellCollection:class'
-    name: TableCellCollection
-    fullName: OneNote.TableCellCollection
+    name: OneNote.TableCellCollection
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
-    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.TableRow:class'
-    name: TableRow
-    fullName: OneNote.TableRow
+    name: OneNote.TableRow
   - uid: 'onenote!OneNote.InsertLocation:enum'
-    name: InsertLocation
-    fullName: OneNote.InsertLocation
+    name: OneNote.InsertLocation
   - uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions:interface'
-    name: TableRowLoadOptions
-    fullName: OneNote.Interfaces.TableRowLoadOptions
+    name: OneNote.Interfaces.TableRowLoadOptions
   - uid: 'onenote!OneNote.Table:class'
-    name: Table
-    fullName: OneNote.Table
+    name: OneNote.Table
   - uid: 'onenote!OneNote.Interfaces.TableRowData:interface'
-    name: TableRowData
-    fullName: OneNote.Interfaces.TableRowData
+    name: OneNote.Interfaces.TableRowData

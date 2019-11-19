@@ -5,16 +5,13 @@ items:
       Represents an inline picture.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: InlinePicture
+    name: Word.InlinePicture
     fullName: Word.InlinePicture
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.InlinePicture#altTextDescription:member'
@@ -392,7 +389,6 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.InlinePicture#getBase64ImageSrc~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -403,19 +399,14 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'word!Word.ContentControl:class'
-    name: ContentControl
-    fullName: Word.ContentControl
+    name: Word.ContentControl
   - uid: 'word!Word.InlinePicture:class'
-    name: InlinePicture
-    fullName: Word.InlinePicture
+    name: Word.InlinePicture
   - uid: 'word!Word.Interfaces.InlinePictureLoadOptions:interface'
-    name: InlinePictureLoadOptions
-    fullName: Word.Interfaces.InlinePictureLoadOptions
+    name: Word.Interfaces.InlinePictureLoadOptions
   - uid: 'word!Word.Interfaces.InlinePictureUpdateData:interface'
-    name: InlinePictureUpdateData
-    fullName: Word.Interfaces.InlinePictureUpdateData
+    name: Interfaces.InlinePictureUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.InlinePictureData:interface'
-    name: InlinePictureData
-    fullName: Word.Interfaces.InlinePictureData
+    name: Word.Interfaces.InlinePictureData

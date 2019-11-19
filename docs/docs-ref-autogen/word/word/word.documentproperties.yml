@@ -5,16 +5,13 @@ items:
       Represents document properties.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: DocumentProperties
+    name: Word.DocumentProperties
     fullName: Word.DocumentProperties
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.DocumentProperties#applicationName:member'
@@ -521,23 +518,17 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: '!Date:interface'
     name: Date
   - uid: 'word!Word.CustomPropertyCollection:class'
-    name: CustomPropertyCollection
-    fullName: Word.CustomPropertyCollection
+    name: Word.CustomPropertyCollection
   - uid: 'word!Word.DocumentProperties:class'
-    name: DocumentProperties
-    fullName: Word.DocumentProperties
+    name: Word.DocumentProperties
   - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions:interface'
-    name: DocumentPropertiesLoadOptions
-    fullName: Word.Interfaces.DocumentPropertiesLoadOptions
+    name: Word.Interfaces.DocumentPropertiesLoadOptions
   - uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData:interface'
-    name: DocumentPropertiesUpdateData
-    fullName: Word.Interfaces.DocumentPropertiesUpdateData
+    name: Interfaces.DocumentPropertiesUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.DocumentPropertiesData:interface'
-    name: DocumentPropertiesData
-    fullName: Word.Interfaces.DocumentPropertiesData
+    name: Word.Interfaces.DocumentPropertiesData

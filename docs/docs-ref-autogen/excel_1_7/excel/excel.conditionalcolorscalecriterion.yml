@@ -5,11 +5,10 @@ items:
       Represents a Color Scale Criterion which contains a type, value, and a color.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ConditionalColorScaleCriterion
+    name: Excel.ConditionalColorScaleCriterion
     fullName: Excel.ConditionalColorScaleCriterion
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:

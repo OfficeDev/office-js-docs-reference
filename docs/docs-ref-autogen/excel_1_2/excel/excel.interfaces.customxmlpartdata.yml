@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.CustomXmlPartData:interface'
     summary: An interface describing the data returned by calling `customXmlPart.toJSON()`<!-- -->.
-    name: CustomXmlPartData
+    name: Excel.Interfaces.CustomXmlPartData
     fullName: Excel.Interfaces.CustomXmlPartData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.TextConditionalFormatData:interface'
     summary: An interface describing the data returned by calling `textConditionalFormat.toJSON()`<!-- -->.
-    name: TextConditionalFormatData
+    name: Excel.Interfaces.TextConditionalFormatData
     fullName: Excel.Interfaces.TextConditionalFormatData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

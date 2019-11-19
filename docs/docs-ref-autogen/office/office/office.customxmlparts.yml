@@ -3,11 +3,10 @@ items:
   - uid: 'office!Office.CustomXmlParts:interface'
     summary: Represents a collection of CustomXmlPart objects.
     remarks: '**Hosts**: Word'
-    name: CustomXmlParts
+    name: Office.CustomXmlParts
     fullName: Office.CustomXmlParts
     langs:
       - typeScript
-    namespace: 'office!Office:namespace'
     type: interface
     package: office!
     children:
@@ -286,8 +285,7 @@ items:
             - 'office!Office.CustomXmlParts#getByNamespaceAsync~1:complex'
 references:
   - uid: 'office!Office.AsyncContextOptions:interface'
-    name: AsyncContextOptions
-    fullName: Office.AsyncContextOptions
+    name: Office.AsyncContextOptions
   - uid: 'office!Office.CustomXmlParts#addAsync~0:complex'
     name: '(result: AsyncResult<CustomXmlPart>) => void'
     fullName: '(result: Office.AsyncResult<Office.CustomXmlPart>) => void'

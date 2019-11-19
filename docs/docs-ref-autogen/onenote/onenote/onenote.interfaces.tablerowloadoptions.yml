@@ -5,11 +5,10 @@ items:
       Represents a row in a table.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: TableRowLoadOptions
+    name: OneNote.Interfaces.TableRowLoadOptions
     fullName: OneNote.Interfaces.TableRowLoadOptions
     langs:
       - typeScript
-    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -107,8 +106,6 @@ items:
           - boolean
 references:
   - uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions:interface'
-    name: TableCellCollectionLoadOptions
-    fullName: OneNote.Interfaces.TableCellCollectionLoadOptions
+    name: OneNote.Interfaces.TableCellCollectionLoadOptions
   - uid: 'onenote!OneNote.Interfaces.TableLoadOptions:interface'
-    name: TableLoadOptions
-    fullName: OneNote.Interfaces.TableLoadOptions
+    name: OneNote.Interfaces.TableLoadOptions

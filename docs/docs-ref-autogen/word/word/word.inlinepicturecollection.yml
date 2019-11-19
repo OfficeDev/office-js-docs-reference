@@ -5,16 +5,13 @@ items:
       Contains a collection of [Word.InlinePicture](xref:word!Word.InlinePicture:class) objects.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: InlinePictureCollection
+    name: Word.InlinePictureCollection
     fullName: Word.InlinePictureCollection
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.InlinePictureCollection#context:member'
@@ -220,10 +217,8 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.InlinePicture:class'
-    name: InlinePicture
-    fullName: Word.InlinePicture
+    name: Word.InlinePicture
   - uid: 'word!Word.InlinePictureCollection#items~0:complex'
     name: 'Word.InlinePicture[]'
     fullName: 'Word.InlinePicture[]'
@@ -234,8 +229,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.InlinePictureCollection:class'
-    name: InlinePictureCollection
-    fullName: Word.InlinePictureCollection
+    name: Word.InlinePictureCollection
   - uid: 'word!Word.InlinePictureCollection#load~0:complex'
     name: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
     fullName: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
@@ -251,5 +245,4 @@ references:
   - uid: 'word!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'word!Word.Interfaces.InlinePictureCollectionData:interface'
-    name: InlinePictureCollectionData
-    fullName: Word.Interfaces.InlinePictureCollectionData
+    name: Word.Interfaces.InlinePictureCollectionData

@@ -4,10 +4,9 @@ items:
     summary: >-
       An interface for updating data on the ConditionalRangeFill object, for use in `conditionalRangeFill.set({ ...
       })`<!-- -->.
-    name: ConditionalRangeFillUpdateData
+    name: Excel.Interfaces.ConditionalRangeFillUpdateData
     fullName: Excel.Interfaces.ConditionalRangeFillUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

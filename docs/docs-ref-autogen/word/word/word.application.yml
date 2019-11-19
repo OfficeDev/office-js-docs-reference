@@ -5,16 +5,13 @@ items:
       Represents the application object.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: Application
+    name: Word.Application
     fullName: Word.Application
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.Application#context:member'
@@ -103,12 +100,9 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
-    fullName: Word.RequestContext
   - uid: 'word!Word.DocumentCreated:class'
-    name: DocumentCreated
-    fullName: Word.DocumentCreated
+    name: Word.DocumentCreated
   - uid: 'word!Word.Application:class'
-    name: Application
-    fullName: Word.Application
+    name: Word.Application
   - uid: 'word!OfficeExtension.ClientRequestContext:class'
     name: OfficeExtension.ClientRequestContext

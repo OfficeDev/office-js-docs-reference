@@ -5,11 +5,10 @@ items:
       Represents a single axis in a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartAxisLoadOptions
+    name: Excel.Interfaces.ChartAxisLoadOptions
     fullName: Excel.Interfaces.ChartAxisLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -569,11 +568,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartAxisFormatLoadOptions:interface'
-    name: ChartAxisFormatLoadOptions
-    fullName: Excel.Interfaces.ChartAxisFormatLoadOptions
+    name: Excel.Interfaces.ChartAxisFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartGridlinesLoadOptions:interface'
-    name: ChartGridlinesLoadOptions
-    fullName: Excel.Interfaces.ChartGridlinesLoadOptions
+    name: Excel.Interfaces.ChartGridlinesLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions:interface'
-    name: ChartAxisTitleLoadOptions
-    fullName: Excel.Interfaces.ChartAxisTitleLoadOptions
+    name: Excel.Interfaces.ChartAxisTitleLoadOptions

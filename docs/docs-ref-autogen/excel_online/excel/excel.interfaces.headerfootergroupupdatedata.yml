@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the HeaderFooterGroup object, for use in `headerFooterGroup.set({ ... })`<!--
       -->.
-    name: HeaderFooterGroupUpdateData
+    name: Excel.Interfaces.HeaderFooterGroupUpdateData
     fullName: Excel.Interfaces.HeaderFooterGroupUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -130,8 +129,7 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData:interface'
-    name: HeaderFooterUpdateData
-    fullName: Excel.Interfaces.HeaderFooterUpdateData
+    name: Excel.Interfaces.HeaderFooterUpdateData
   - uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#state~0:complex'
     name: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"
     fullName: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"

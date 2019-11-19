@@ -5,16 +5,13 @@ items:
       This object represents the font attributes (font name, font size, color, etc.) for a chart object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: ChartFont
+    name: Excel.ChartFont
     fullName: Excel.ChartFont
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
-    inheritance:
-      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     remarks: |-
 
@@ -298,21 +295,16 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
-    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartFont:class'
-    name: ChartFont
-    fullName: Excel.ChartFont
+    name: Excel.ChartFont
   - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
-    name: ChartFontLoadOptions
-    fullName: Excel.Interfaces.ChartFontLoadOptions
+    name: Excel.Interfaces.ChartFontLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
-    name: ChartFontUpdateData
-    fullName: Excel.Interfaces.ChartFontUpdateData
+    name: Interfaces.ChartFontUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartFontData:interface'
-    name: ChartFontData
-    fullName: Excel.Interfaces.ChartFontData
+    name: Excel.Interfaces.ChartFontData
   - uid: 'excel!Excel.ChartFont#underline~0:complex'
     name: Excel.ChartUnderlineStyle | "None" | "Single"
     fullName: Excel.ChartUnderlineStyle | "None" | "Single"

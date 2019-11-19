@@ -5,11 +5,10 @@ items:
       Represents a table cell in a Word document.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: TableCellLoadOptions
+    name: Word.Interfaces.TableCellLoadOptions
     fullName: Word.Interfaces.TableCellLoadOptions
     langs:
       - typeScript
-    namespace: 'word!Word.Interfaces:namespace'
     type: interface
     package: word!
     children:
@@ -203,11 +202,8 @@ items:
           - boolean
 references:
   - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
-    name: BodyLoadOptions
-    fullName: Word.Interfaces.BodyLoadOptions
+    name: Word.Interfaces.BodyLoadOptions
   - uid: 'word!Word.Interfaces.TableRowLoadOptions:interface'
-    name: TableRowLoadOptions
-    fullName: Word.Interfaces.TableRowLoadOptions
+    name: Word.Interfaces.TableRowLoadOptions
   - uid: 'word!Word.Interfaces.TableLoadOptions:interface'
-    name: TableLoadOptions
-    fullName: Word.Interfaces.TableLoadOptions
+    name: Word.Interfaces.TableLoadOptions

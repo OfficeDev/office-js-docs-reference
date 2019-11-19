@@ -8,11 +8,10 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: WorksheetLoadOptions
+    name: Excel.Interfaces.WorksheetLoadOptions
     fullName: Excel.Interfaces.WorksheetLoadOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -149,11 +148,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions:interface'
-    name: ChartCollectionLoadOptions
-    fullName: Excel.Interfaces.ChartCollectionLoadOptions
+    name: Excel.Interfaces.ChartCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
-    name: WorksheetProtectionLoadOptions
-    fullName: Excel.Interfaces.WorksheetProtectionLoadOptions
+    name: Excel.Interfaces.WorksheetProtectionLoadOptions
   - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
-    name: TableCollectionLoadOptions
-    fullName: Excel.Interfaces.TableCollectionLoadOptions
+    name: Excel.Interfaces.TableCollectionLoadOptions

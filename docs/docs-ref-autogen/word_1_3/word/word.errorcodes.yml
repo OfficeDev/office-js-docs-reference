@@ -1,11 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'word!Word.ErrorCodes:enum'
-    name: ErrorCodes
+    name: Word.ErrorCodes
     fullName: Word.ErrorCodes
     langs:
       - typeScript
-    namespace: 'word!Word:namespace'
     type: enum
     package: word!
     children:

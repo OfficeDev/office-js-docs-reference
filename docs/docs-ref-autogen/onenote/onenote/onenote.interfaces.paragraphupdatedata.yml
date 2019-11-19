@@ -2,11 +2,10 @@
 items:
   - uid: 'onenote!OneNote.Interfaces.ParagraphUpdateData:interface'
     summary: 'An interface for updating data on the Paragraph object, for use in "paragraph.set(<!-- -->{ ... }<!-- -->)".'
-    name: ParagraphUpdateData
+    name: OneNote.Interfaces.ParagraphUpdateData
     fullName: OneNote.Interfaces.ParagraphUpdateData
     langs:
       - typeScript
-    namespace: 'onenote!OneNote.Interfaces:namespace'
     type: interface
     package: onenote!
     children:
@@ -44,8 +43,6 @@ items:
           - 'onenote!OneNote.Interfaces.TableUpdateData:interface'
 references:
   - uid: 'onenote!OneNote.Interfaces.ImageUpdateData:interface'
-    name: ImageUpdateData
-    fullName: OneNote.Interfaces.ImageUpdateData
+    name: OneNote.Interfaces.ImageUpdateData
   - uid: 'onenote!OneNote.Interfaces.TableUpdateData:interface'
-    name: TableUpdateData
-    fullName: OneNote.Interfaces.TableUpdateData
+    name: OneNote.Interfaces.TableUpdateData

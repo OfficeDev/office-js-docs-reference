@@ -2,11 +2,10 @@
 items:
   - uid: 'excel!Excel.Interfaces.ChartAxisData:interface'
     summary: An interface describing the data returned by calling `chartAxis.toJSON()`<!-- -->.
-    name: ChartAxisData
+    name: Excel.Interfaces.ChartAxisData
     fullName: Excel.Interfaces.ChartAxisData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:
@@ -556,11 +555,9 @@ references:
       - name: ' | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"'
         fullName: ' | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"'
   - uid: 'excel!Excel.Interfaces.ChartAxisFormatData:interface'
-    name: ChartAxisFormatData
-    fullName: Excel.Interfaces.ChartAxisFormatData
+    name: Excel.Interfaces.ChartAxisFormatData
   - uid: 'excel!Excel.Interfaces.ChartGridlinesData:interface'
-    name: ChartGridlinesData
-    fullName: Excel.Interfaces.ChartGridlinesData
+    name: Excel.Interfaces.ChartGridlinesData
   - uid: 'excel!Excel.Interfaces.ChartAxisData#majorTickMark~0:complex'
     name: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
     fullName: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
@@ -616,8 +613,7 @@ references:
       - name: ' | "NextToAxis" | "High" | "Low" | "None"'
         fullName: ' | "NextToAxis" | "High" | "Low" | "None"'
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleData:interface'
-    name: ChartAxisTitleData
-    fullName: Excel.Interfaces.ChartAxisTitleData
+    name: Excel.Interfaces.ChartAxisTitleData
   - uid: 'excel!Excel.Interfaces.ChartAxisData#type~0:complex'
     name: Excel.ChartAxisType | "Invalid" | "Category" | "Value" | "Series"
     fullName: Excel.ChartAxisType | "Invalid" | "Category" | "Value" | "Series"

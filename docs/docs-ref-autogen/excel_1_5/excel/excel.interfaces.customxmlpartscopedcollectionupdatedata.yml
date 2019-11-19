@@ -4,11 +4,10 @@ items:
     summary: >-
       An interface for updating data on the CustomXmlPartScopedCollection object, for use in
       `customXmlPartScopedCollection.set({ ... })`<!-- -->.
-    name: CustomXmlPartScopedCollectionUpdateData
+    name: Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
     fullName: Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!
     children:

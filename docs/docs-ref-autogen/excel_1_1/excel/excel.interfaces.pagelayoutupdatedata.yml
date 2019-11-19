@@ -2,10 +2,9 @@
 items:
   - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData:interface'
     summary: 'An interface for updating data on the PageLayout object, for use in `pageLayout.set({ ... })`<!-- -->.'
-    name: PageLayoutUpdateData
+    name: Excel.Interfaces.PageLayoutUpdateData
     fullName: Excel.Interfaces.PageLayoutUpdateData
     langs:
       - typeScript
-    namespace: 'excel!Excel.Interfaces:namespace'
     type: interface
     package: excel!

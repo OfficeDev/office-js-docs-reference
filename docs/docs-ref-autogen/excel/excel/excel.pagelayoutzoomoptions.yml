@@ -5,11 +5,10 @@ items:
       Represents page zoom properties.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: PageLayoutZoomOptions
+    name: Excel.PageLayoutZoomOptions
     fullName: Excel.PageLayoutZoomOptions
     langs:
       - typeScript
-    namespace: 'excel!Excel:namespace'
     type: interface
     package: excel!
     children:
