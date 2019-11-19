@@ -12,12 +12,14 @@ tryCatch(async () => {
     console.log("Copying snippets file to subfolders");
     const snippets = path.resolve("../json/snippets.yaml");
     let allSnippets: Object = yaml.safeLoad(fsx.readFileSync(snippets).toString(), {strict: true});
+    let commonSnippetKeys = [];
     let excelSnippetKeys = [];
     let onenoteSnippetKeys = [];
-    let outlookAndCommonSnippetKeys = [];
+    let outlookSnippetKeys = [];
     let powerpointSnippetKeys = [];
     let visioSnippetKeys = [];
     let wordSnippetKeys = [];
+    let outlookText = fsx.readFileSync(path.resolve("../json/outlook/outlook.api.json"));
     for (const key of Object.keys(allSnippets)) {
         if (key.startsWith("Excel")) {
             excelSnippetKeys.push(key);
@@ -30,19 +32,28 @@ tryCatch(async () => {
         } else if (key.startsWith("Word")) {
             wordSnippetKeys.push(key);
         } else if (key.startsWith("Office")) {
-            outlookAndCommonSnippetKeys.push(key);
+            if (outlookText.indexOf(key) >= 0) {
+                outlookSnippetKeys.push(key);
+            } else {
+                commonSnippetKeys.push(key);
+            }
         } else {
             console.error(colors.red("Unknown snippet key prefix: " + key));
         }
     }
 
+    let commonSnippets = {};
     let excelSnippets = {};
     let onenoteSnippets = {};
-    let outlookAndCommonSnippets = {};
+    let outlookSnippets = {};
     let powerpointSnippets = {};
     let visioSnippets = {};
     let wordSnippets = {};
 
+    commonSnippetKeys.forEach(key => {
+        commonSnippets[key] = allSnippets[key];
+        delete allSnippets[key];
+    });
     excelSnippetKeys.forEach(key => {
         excelSnippets[key] = allSnippets[key];
         delete allSnippets[key];
@@ -51,8 +62,8 @@ tryCatch(async () => {
         onenoteSnippets[key] = allSnippets[key];
         delete allSnippets[key];
     });
-    outlookAndCommonSnippetKeys.forEach(key => {
-        outlookAndCommonSnippets[key] = allSnippets[key];
+    outlookSnippetKeys.forEach(key => {
+        outlookSnippets[key] = allSnippets[key];
         delete allSnippets[key];
     });
     powerpointSnippetKeys.forEach(key => {
@@ -74,13 +85,13 @@ tryCatch(async () => {
         fsx.writeFileSync(`../json/excel_1_${i}/snippets.yaml`, yaml.safeDump(excelSnippets));
     }
 
-    fsx.writeFileSync("../json/office/snippets.yaml", yaml.safeDump(outlookAndCommonSnippets));
+    fsx.writeFileSync("../json/office/snippets.yaml", yaml.safeDump(commonSnippets));
 
     fsx.writeFileSync("../json/onenote/snippets.yaml", yaml.safeDump(onenoteSnippets));
 
-    fsx.writeFileSync("../json/outlook/snippets.yaml", yaml.safeDump(outlookAndCommonSnippets));
+    fsx.writeFileSync("../json/outlook/snippets.yaml", yaml.safeDump(outlookSnippets));
     for (let i = CURRENT_OUTLOOK_RELEASE; i > 0; i--) {
-        fsx.writeFileSync(`../json/outlook_1_${i}/snippets.yaml`, yaml.safeDump(outlookAndCommonSnippets));
+        fsx.writeFileSync(`../json/outlook_1_${i}/snippets.yaml`, yaml.safeDump(outlookSnippets));
     }
 
     fsx.writeFileSync("../json/powerpoint/snippets.yaml", yaml.safeDump(powerpointSnippets));
@@ -101,6 +112,8 @@ tryCatch(async () => {
         fsx.copySync(customFunctionsJson, `../json/excel_1_${i}/custom-functions-runtime.api.json`);
         fsx.copySync(officeRuntimeJson, `../json/excel_1_${i}/office-runtime.api.json`);
     }
+    fsx.copySync(customFunctionsJson, `../json/excel_online}/custom-functions-runtime.api.json`);
+    fsx.copySync(officeRuntimeJson, `../json/excel_online/office-runtime.api.json`);
 });
 
 async function tryCatch(call: () => Promise<void>) {
