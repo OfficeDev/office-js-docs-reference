@@ -10755,7 +10755,7 @@ Office.RecurrenceTimeZone:interface:
         "seriesTime": {seriesTimeObject},
         "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
     }
-Office.RoamingSettings:interface:
+Office.RoamingSettings#set:member(1):
   - |-
     // Get the current value of the 'myKey' setting.
     var value = Office.context.roamingSettings.get('myKey');
