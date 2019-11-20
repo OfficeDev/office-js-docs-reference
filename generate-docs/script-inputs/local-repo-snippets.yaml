@@ -5440,7 +5440,7 @@ Office.Document#setTaskFieldAsync:member(2):
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.File.getSliceAsync:member(1):
+Office.File#getSliceAsync:member(1):
   - |-
     // This sample shows how to get all the slices of a file. 
     // The asynchronous operation returns a Promise so it can be awaited.
@@ -10747,7 +10747,7 @@ Office.RecurrenceTimeZone:interface:
         "seriesTime": {seriesTimeObject},
         "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
     }
-Office.RoamingSettings:interface:
+Office.RoamingSettings#set:member(1):
   - |-
     // Get the current value of the 'myKey' setting.
     var value = Office.context.roamingSettings.get('myKey');
