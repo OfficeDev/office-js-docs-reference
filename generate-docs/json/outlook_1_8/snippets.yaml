@@ -765,46 +765,6 @@
             // current item, which can be a message or appointment.
         });
     };
-'Office.AsyncResult:interface':
-  - >-
-    // The following is an example applicable to content and task pane add-ins.
-
-    // The example shows a call to the getSelectedDataAsync method of the
-    Document object.
-
-    Office.context.document.getSelectedDataAsync("text", {
-            valueFormat: "unformatted",
-            filterType: "all"
-        },
-        function (result) {
-            if (result.status === Office.AsyncResultStatus.Succeeded) {
-                var dataValue = result.value; // Get selected data.
-                console.log('Selected data is ' + dataValue);
-            } else {
-                var err = result.error;
-                console.log(err.name + ": " + err.message);
-            }
-        });
-    // The anonymous function passed as the callback argument ( function
-    (result){...}) has a single 
-
-    // parameter named result that provides access to an AsyncResult object when
-    the function executes.
-
-    // When the call to the getSelectedDataAsync method completes, the callback
-    function executes, 
-
-    // and the following line of code accesses the value property of the
-    AsyncResult object to 
-
-    // return the data selected in the document:
-
-    var dataValue = result.value;
-
-    // Note that other lines of code in the function use the result parameter of
-    the callback function 
-
-    // to access the status and error properties of the AsyncResult object.
 'Office.AttachmentContent#format:member':
   - |-
     var item = Office.context.mailbox.item;
@@ -2318,6 +2278,16 @@
     var fruits = selectedMatches.fruits;
 
     var veggies = selectedMatches.veggies;
+'Office.MessageRead#internetHeaders:member':
+  - >-
+    Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"],
+    callback);
+
+
+    function callback(asyncResult) {
+        var dictionary = asyncResult.value;
+        var header1_value = dictionary["header1"];
+    }
 'Office.MessageRead#internetMessageId:member':
   - |-
     var internetMessageId = Office.context.mailbox.item.internetMessageId;
@@ -2441,18 +2411,6 @@
         icon : "iconid",
         persistent: false
     });
-'Office.OfficeTheme:interface':
-  - |-
-    function applyOfficeTheme(){
-        // Get office theme colors.
-        var bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
-        var bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
-        var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
-        var controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
-
-        // Apply body background color to a CSS class.
-        $('.body').css('background-color', bodyBackgroundColor);
-    }
 'Office.Organizer#getAsync:member(2)':
   - |-
     Office.context.mailbox.item.organizer.getAsync(
@@ -2677,14 +2635,6 @@
         "seriesTime": {seriesTimeObject},
         "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
     }
-'Office.RoamingSettings:interface':
-  - |-
-    // Get the current value of the 'myKey' setting.
-    var value = Office.context.roamingSettings.get('myKey');
-    // Update the value of the 'myKey' setting.
-    Office.context.roamingSettings.set('myKey', 'Hello World!');
-    // Persist the change.
-    Office.context.roamingSettings.saveAsync();
 'Office.SeriesTime#getDuration:member(1)':
   - >-
     // This example gets the duration of a usual instance in a recurring

@@ -19,7 +19,7 @@ tryCatch(async () => {
     let powerpointSnippetKeys = [];
     let visioSnippetKeys = [];
     let wordSnippetKeys = [];
-    let outlookText = fsx.readFileSync(path.resolve("../json/outlook/outlook.api.json"));
+    let commonText = fsx.readFileSync(path.resolve("../json/office/office.api.json"));
     for (const key of Object.keys(allSnippets)) {
         if (key.startsWith("Excel")) {
             excelSnippetKeys.push(key);
@@ -32,10 +32,10 @@ tryCatch(async () => {
         } else if (key.startsWith("Word")) {
             wordSnippetKeys.push(key);
         } else if (key.startsWith("Office")) {
-            if (outlookText.indexOf(key) >= 0) {
-                outlookSnippetKeys.push(key);
-            } else {
+            if (commonText.indexOf(key) >= 0) {
                 commonSnippetKeys.push(key);
+            } else {
+                outlookSnippetKeys.push(key);
             }
         } else {
             console.error(colors.red("Unknown snippet key prefix: " + key));
