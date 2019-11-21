@@ -71,6 +71,61 @@ items:
       </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation
       failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in
       the AsyncResult object without being altered.</td> </tr> </table>
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // This sample shows how to get all the slices of a file. 
+
+      // The asynchronous operation returns a Promise so it can be awaited.
+
+      private getAllSlices(file: any): Promise<any> {
+          var self = this;
+          var isError = false;
+
+          return new Promise(async (resolve, reject) => {
+              var documentFileData = [];
+              for (var sliceIndex = 0; (sliceIndex < file.sliceCount) && !isError; sliceIndex++) {
+                  var sliceReadPromise = new Promise((sliceResolve, sliceReject) => {
+                      file.getSliceAsync(sliceIndex, (asyncResult) => {
+                          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                              documentFileData = documentFileData.concat(asyncResult.value.data);
+                              sliceResolve({
+                                  IsSuccess: true,
+                                  Data: documentFileData
+                              });
+                          } else {
+                              file.closeAsync();
+                              sliceReject({
+                                  IsSuccess: false,
+                                  ErrorMessage: `Error in reading the slice: ${sliceIndex} of the document`
+                              });
+                          }
+                      });
+                  });
+                  await sliceReadPromise.catch((error) => {
+                      isError = true;
+                  });
+              }
+
+              if (isError || !documentFileData.length) {
+                  reject('Error while reading document. Please try it again.');
+                  return;
+              }
+
+              file.closeAsync();
+
+              resolve({
+                  IsSuccess: true,
+                  Data: documentFileData
+              });
+          });
+      }
+
+      ```
     name: 'getSliceAsync(sliceIndex, callback)'
     fullName: 'getSliceAsync(sliceIndex, callback)'
     langs:

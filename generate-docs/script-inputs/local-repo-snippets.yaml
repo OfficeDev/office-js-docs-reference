@@ -5440,7 +5440,7 @@ Office.Document#setTaskFieldAsync:member(2):
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.File.getSliceAsync:member(1):
+Office.File#getSliceAsync:member(1):
   - |-
     // This sample shows how to get all the slices of a file. 
     // The asynchronous operation returns a Promise so it can be awaited.
@@ -10450,14 +10450,6 @@ Office.MessageRead#getSelectedRegExMatches:member(1):
     var selectedMatches = Office.context.mailbox.item.getSelectedRegExMatches();
     var fruits = selectedMatches.fruits;
     var veggies = selectedMatches.veggies;
-Office.MessageRead#internetHeaders:member:
-  - |-
-    Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"], callback);
-
-    function callback(asyncResult) {
-        var dictionary = asyncResult.value;
-        var header1_value = dictionary["header1"];
-    }
 Office.MessageRead#internetMessageId:member:
   - |-
     var internetMessageId = Office.context.mailbox.item.internetMessageId;
@@ -10755,7 +10747,7 @@ Office.RecurrenceTimeZone:interface:
         "seriesTime": {seriesTimeObject},
         "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
     }
-Office.RoamingSettings:interface:
+Office.RoamingSettings#set:member(1):
   - |-
     // Get the current value of the 'myKey' setting.
     var value = Office.context.roamingSettings.get('myKey');
@@ -12440,6 +12432,7 @@ Word.ContentControlCollection#load:member(1):
                 contentControls.items[0].load(  'appearance,' +
                                                 'cannotDelete,' +
                                                 'cannotEdit,' +
+                                                'color,' +
                                                 'id,' +
                                                 'placeHolderText,' +
                                                 'removeWhenEdited,' +
