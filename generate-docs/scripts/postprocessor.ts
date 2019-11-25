@@ -170,9 +170,9 @@ function fixToc(tocPath: string, commonToc: Toc, versionNumber: number): Toc {
     wordFilter = wordFilter.concat(wordEnumFilter);
 
     // create filters and folders lists for Outlook
-    let outlookFolders : string[] = ["MailboxEnums"];
+    let outlookEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-outlook/outlook.d.ts").toString());
     let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'ItemCompose', 'ItemRead', 'Message'];
-    outlookFilter = outlookFilter.concat(outlookFolders);
+    outlookFilter = outlookFilter.concat(outlookEnumFilter);
 
     // create filters and folders for Visio
     let visioFilter: string[] = ["Interfaces"];
@@ -194,24 +194,18 @@ function fixToc(tocPath: string, commonToc: Toc, versionNumber: number): Toc {
                 let namespaceItems = packageItem.items;
 
                 if (packageName.toLocaleLowerCase().includes('outlook')) {
-                    let filterToCContent = namespaceItems.filter(item => {
+                    let enumList = namespaceItems.filter(item => {
+                        return outlookEnumFilter.indexOf(item.name) >= 0;
+                    });
+                    let primaryList = namespaceItems.filter(item => {
                         return outlookFilter.indexOf(item.name) < 0;
                     });
-                    // move MailboxEnums to top
-                    let folderIndex: number = 0;
-                    while (folderIndex >= 0) {
-                        folderIndex = namespaceItems.findIndex(item => {
-                            return outlookFolders.indexOf(item.name) >= 0;
-                        });
-                        if (folderIndex >= 0) {
-                            filterToCContent.unshift(namespaceItems.splice(folderIndex, 1)[0]);
-                        }
-                    }
-
+                    let outlookEnumRoot = {"name": "MailboxEnums", "items": enumList};
+                    primaryList.unshift(outlookEnumRoot);
                     newToc.items[0].items.push({
                         "name": packageName,
                         "uid": packageItem.uid,
-                        "items": filterToCContent as any
+                        "items": primaryList as any
                     });
                 } else if (packageName.toLocaleLowerCase().includes('excel')) {
                     let enumList = namespaceItems.filter(item => {

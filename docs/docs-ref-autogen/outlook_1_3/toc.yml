@@ -6,6 +6,26 @@ items:
       - name: Outlook
         uid: outlook!
         items:
+          - name: MailboxEnums
+            items:
+              - name: AttachmentType
+                uid: 'outlook!Office.MailboxEnums.AttachmentType:enum'
+              - name: EntityType
+                uid: 'outlook!Office.MailboxEnums.EntityType:enum'
+              - name: ItemNotificationMessageType
+                uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType:enum'
+              - name: ItemType
+                uid: 'outlook!Office.MailboxEnums.ItemType:enum'
+              - name: OWAView
+                uid: 'outlook!Office.MailboxEnums.OWAView:enum'
+              - name: RecipientType
+                uid: 'outlook!Office.MailboxEnums.RecipientType:enum'
+              - name: ResponseType
+                uid: 'outlook!Office.MailboxEnums.ResponseType:enum'
+              - name: RestVersion
+                uid: 'outlook!Office.MailboxEnums.RestVersion:enum'
+              - name: SourceProperty
+                uid: 'outlook!Office.SourceProperty:enum'
           - name: AppointmentCompose
             uid: 'outlook!Office.AppointmentCompose:interface'
           - name: AppointmentRead
@@ -36,22 +56,6 @@ items:
             uid: 'outlook!Office.Location:interface'
           - name: Mailbox
             uid: 'outlook!Office.Mailbox:interface'
-          - name: AttachmentType
-            uid: 'outlook!Office.MailboxEnums.AttachmentType:enum'
-          - name: EntityType
-            uid: 'outlook!Office.MailboxEnums.EntityType:enum'
-          - name: ItemNotificationMessageType
-            uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType:enum'
-          - name: ItemType
-            uid: 'outlook!Office.MailboxEnums.ItemType:enum'
-          - name: OWAView
-            uid: 'outlook!Office.MailboxEnums.OWAView:enum'
-          - name: RecipientType
-            uid: 'outlook!Office.MailboxEnums.RecipientType:enum'
-          - name: ResponseType
-            uid: 'outlook!Office.MailboxEnums.ResponseType:enum'
-          - name: RestVersion
-            uid: 'outlook!Office.MailboxEnums.RestVersion:enum'
           - name: MeetingSuggestion
             uid: 'outlook!Office.MeetingSuggestion:interface'
           - name: MessageCompose
@@ -72,8 +76,6 @@ items:
             uid: 'outlook!Office.ReplyFormData:interface'
           - name: RoamingSettings
             uid: 'outlook!Office.RoamingSettings:interface'
-          - name: SourceProperty
-            uid: 'outlook!Office.SourceProperty:enum'
           - name: Subject
             uid: 'outlook!Office.Subject:interface'
           - name: TaskSuggestion
