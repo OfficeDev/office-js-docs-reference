@@ -43,4 +43,5 @@ items:
           - string
 references:
   - uid: 'excel!Excel.Interfaces.ChartSeriesFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartSeriesFormatUpdateData
+    name: ChartSeriesFormatUpdateData
+    fullName: Excel.Interfaces.ChartSeriesFormatUpdateData

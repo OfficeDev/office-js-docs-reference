@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.CustomProperty#context:member'
@@ -291,16 +293,21 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.CustomProperty:class'
-    name: Word.CustomProperty
+    name: CustomProperty
+    fullName: Word.CustomProperty
   - uid: 'word!Word.Interfaces.CustomPropertyLoadOptions:interface'
-    name: Word.Interfaces.CustomPropertyLoadOptions
+    name: CustomPropertyLoadOptions
+    fullName: Word.Interfaces.CustomPropertyLoadOptions
   - uid: 'word!Word.Interfaces.CustomPropertyUpdateData:interface'
-    name: Interfaces.CustomPropertyUpdateData
+    name: CustomPropertyUpdateData
+    fullName: Word.Interfaces.CustomPropertyUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.CustomPropertyData:interface'
-    name: Word.Interfaces.CustomPropertyData
+    name: CustomPropertyData
+    fullName: Word.Interfaces.CustomPropertyData
   - uid: 'word!Word.CustomProperty#type~0:complex'
     name: Word.DocumentPropertyType | "String" | "Number" | "Date" | "Boolean"
     fullName: Word.DocumentPropertyType | "String" | "Number" | "Date" | "Boolean"

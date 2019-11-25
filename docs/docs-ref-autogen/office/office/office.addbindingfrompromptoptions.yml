@@ -79,4 +79,5 @@ items:
           - 'office!Office.TableData:class'
 references:
   - uid: 'office!Office.TableData:class'
-    name: Office.TableData
+    name: TableData
+    fullName: Office.TableData

@@ -16,6 +16,8 @@ items:
     type: interface
     extends:
       - 'outlook!Office.Item:interface'
+    inheritance:
+      - type: 'outlook!Office.Item:interface'
     package: outlook!
     children:
       - 'outlook!Office.ItemRead#attachments:member'
@@ -653,6 +655,7 @@ items:
 references:
   - uid: 'outlook!Office.Item:interface'
     name: Item
+    fullName: Office.Item
   - uid: 'outlook!Office.ItemRead#attachments~0:complex'
     name: 'AttachmentDetails[]'
     fullName: 'Office.AttachmentDetails[]'
@@ -704,6 +707,7 @@ references:
         fullName: <void>) => void
   - uid: 'outlook!Office.Entities:interface'
     name: Entities
+    fullName: Office.Entities
   - uid: 'outlook!Office.ItemRead#getEntitiesByType~0:complex'
     name: '(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[]'
     fullName: '(string | Office.Contact | Office.MeetingSuggestion | Office.PhoneNumber | Office.TaskSuggestion)[]'

@@ -16,6 +16,8 @@ items:
     type: interface
     extends:
       - 'outlook!Office.Item:interface'
+    inheritance:
+      - type: 'outlook!Office.Item:interface'
     package: outlook!
     children:
       - 'outlook!Office.ItemCompose#addFileAttachmentAsync:member(1)'
@@ -1054,6 +1056,7 @@ items:
 references:
   - uid: 'outlook!Office.Item:interface'
     name: Item
+    fullName: Office.Item
   - uid: 'outlook!Office.ItemCompose#addFileAttachmentAsync~0:complex'
     name: 'Office.AsyncContextOptions & { isInline: boolean }'
     fullName: 'Office.AsyncContextOptions & { isInline: boolean }'
@@ -1292,3 +1295,4 @@ references:
         fullName: <void>) => void
   - uid: 'outlook!Office.Subject:interface'
     name: Subject
+    fullName: Office.Subject

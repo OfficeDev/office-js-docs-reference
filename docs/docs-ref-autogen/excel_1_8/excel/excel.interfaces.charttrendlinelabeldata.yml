@@ -219,7 +219,8 @@ items:
           - number
 references:
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatData:interface'
-    name: Excel.Interfaces.ChartTrendlineLabelFormatData
+    name: ChartTrendlineLabelFormatData
+    fullName: Excel.Interfaces.ChartTrendlineLabelFormatData
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#horizontalAlignment~0:complex'
     name: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
     fullName: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"

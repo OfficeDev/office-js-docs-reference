@@ -45,4 +45,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.ConditionalColorScaleCriteria:interface'
-    name: Excel.ConditionalColorScaleCriteria
+    name: ConditionalColorScaleCriteria
+    fullName: Excel.ConditionalColorScaleCriteria

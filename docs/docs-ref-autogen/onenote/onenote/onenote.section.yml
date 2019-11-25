@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.Section#addPage:member(1)'
@@ -695,15 +697,20 @@ references:
   - uid: 'onenote!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.Page:class'
-    name: OneNote.Page
+    name: Page
+    fullName: OneNote.Page
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
+    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.Section:class'
-    name: OneNote.Section
+    name: Section
+    fullName: OneNote.Section
   - uid: 'onenote!OneNote.Notebook:class'
-    name: OneNote.Notebook
+    name: Notebook
+    fullName: OneNote.Notebook
   - uid: 'onenote!OneNote.SectionGroup:class'
-    name: OneNote.SectionGroup
+    name: SectionGroup
+    fullName: OneNote.SectionGroup
   - uid: 'onenote!OneNote.Section#getRestApiId~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -714,10 +721,14 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'onenote!OneNote.InsertLocation:enum'
-    name: OneNote.InsertLocation
+    name: InsertLocation
+    fullName: OneNote.InsertLocation
   - uid: 'onenote!OneNote.Interfaces.SectionLoadOptions:interface'
-    name: OneNote.Interfaces.SectionLoadOptions
+    name: SectionLoadOptions
+    fullName: OneNote.Interfaces.SectionLoadOptions
   - uid: 'onenote!OneNote.PageCollection:class'
-    name: OneNote.PageCollection
+    name: PageCollection
+    fullName: OneNote.PageCollection
   - uid: 'onenote!OneNote.Interfaces.SectionData:interface'
-    name: OneNote.Interfaces.SectionData
+    name: SectionData
+    fullName: OneNote.Interfaces.SectionData

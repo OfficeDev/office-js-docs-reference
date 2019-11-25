@@ -61,6 +61,8 @@ items:
           - 'excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface'
-    name: Excel.Interfaces.ConditionalRangeFormatLoadOptions
+    name: ConditionalRangeFormatLoadOptions
+    fullName: Excel.Interfaces.ConditionalRangeFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleLoadOptions:interface'
-    name: Excel.Interfaces.ConditionalFormatRuleLoadOptions
+    name: ConditionalFormatRuleLoadOptions
+    fullName: Excel.Interfaces.ConditionalFormatRuleLoadOptions

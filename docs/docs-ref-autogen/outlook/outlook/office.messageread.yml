@@ -17,6 +17,13 @@ items:
     extends:
       - 'outlook!Office.Message:interface'
       - 'outlook!Office.ItemRead:interface'
+    inheritance:
+      - type: 'outlook!Office.Message:interface'
+        inheritance:
+          - type: 'outlook!Office.Item:interface'
+      - type: 'outlook!Office.ItemRead:interface'
+        inheritance:
+          - type: 'outlook!Office.Item:interface'
     package: outlook!
     children:
       - 'outlook!Office.MessageRead#addHandlerAsync:member(1)'
@@ -2129,8 +2136,13 @@ items:
 references:
   - uid: 'outlook!Office.Message:interface'
     name: Message
+    fullName: Office.Message
   - uid: 'outlook!Office.ItemRead:interface'
     name: ItemRead
+    fullName: Office.ItemRead
+  - uid: 'outlook!Office.Item:interface'
+    name: Item
+    fullName: Office.Item
   - uid: 'outlook!Office.MessageRead#addHandlerAsync~0:complex'
     name: Office.EventType | string
     fullName: Office.EventType | string
@@ -2184,8 +2196,10 @@ references:
         fullName: '[]'
   - uid: 'outlook!Office.Body:interface'
     name: Body
+    fullName: Office.Body
   - uid: 'outlook!Office.Categories:interface'
     name: Categories
+    fullName: Office.Categories
   - uid: 'outlook!Office.MessageRead#cc~0:complex'
     name: 'EmailAddressDetails[]'
     fullName: 'Office.EmailAddressDetails[]'
@@ -2239,6 +2253,7 @@ references:
         fullName: <void>) => void
   - uid: 'outlook!Office.EmailAddressDetails:interface'
     name: EmailAddressDetails
+    fullName: Office.EmailAddressDetails
   - uid: 'outlook!Office.MessageRead#getAllInternetHeadersAsync~0:complex'
     name: '(asyncResult: Office.AsyncResult<string>) => void'
     fullName: '(asyncResult: Office.AsyncResult<string>) => void'
@@ -2263,6 +2278,7 @@ references:
         fullName: <string>) => void
   - uid: 'outlook!Office.Entities:interface'
     name: Entities
+    fullName: Office.Entities
   - uid: 'outlook!Office.MessageRead#getEntitiesByType~0:complex'
     name: '(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[]'
     fullName: '(string | Office.Contact | Office.MeetingSuggestion | Office.PhoneNumber | Office.TaskSuggestion)[]'
@@ -2373,8 +2389,10 @@ references:
         fullName: '>) => void'
   - uid: 'outlook!Office.NotificationMessages:interface'
     name: NotificationMessages
+    fullName: Office.NotificationMessages
   - uid: 'outlook!Office.Recurrence:interface'
     name: Recurrence
+    fullName: Office.Recurrence
   - uid: 'outlook!Office.MessageRead#removeHandlerAsync~0:complex'
     name: Office.EventType | string
     fullName: Office.EventType | string

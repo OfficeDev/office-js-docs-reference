@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.IterativeCalculation#context:member'
@@ -224,13 +226,18 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.IterativeCalculation:class'
-    name: Excel.IterativeCalculation
+    name: IterativeCalculation
+    fullName: Excel.IterativeCalculation
   - uid: 'excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface'
-    name: Excel.Interfaces.IterativeCalculationLoadOptions
+    name: IterativeCalculationLoadOptions
+    fullName: Excel.Interfaces.IterativeCalculationLoadOptions
   - uid: 'excel!Excel.Interfaces.IterativeCalculationUpdateData:interface'
-    name: Interfaces.IterativeCalculationUpdateData
+    name: IterativeCalculationUpdateData
+    fullName: Excel.Interfaces.IterativeCalculationUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.IterativeCalculationData:interface'
-    name: Excel.Interfaces.IterativeCalculationData
+    name: IterativeCalculationData
+    fullName: Excel.Interfaces.IterativeCalculationData

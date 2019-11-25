@@ -62,5 +62,7 @@ items:
 references:
   - uid: 'office!Office.Settings:interface'
     name: Settings
+    fullName: Office.Settings
   - uid: 'office!Office.EventType:enum'
     name: EventType
+    fullName: Office.EventType

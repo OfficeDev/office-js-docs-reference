@@ -45,4 +45,5 @@ items:
           - 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
-    name: Excel.Interfaces.ChartBorderLoadOptions
+    name: ChartBorderLoadOptions
+    fullName: Excel.Interfaces.ChartBorderLoadOptions

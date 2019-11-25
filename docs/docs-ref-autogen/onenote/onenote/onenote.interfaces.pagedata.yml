@@ -148,4 +148,5 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisData:interface'
-    name: OneNote.Interfaces.InkAnalysisData
+    name: InkAnalysisData
+    fullName: OneNote.Interfaces.InkAnalysisData

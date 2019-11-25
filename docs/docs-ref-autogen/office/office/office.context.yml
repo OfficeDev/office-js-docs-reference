@@ -422,21 +422,29 @@ items:
 references:
   - uid: 'office!Office.Auth:interface'
     name: Auth
+    fullName: Office.Auth
   - uid: 'office!Office.ContextInformation:interface'
     name: ContextInformation
+    fullName: Office.ContextInformation
   - uid: 'office!Office.Document:interface'
-    name: Office.Document
+    name: Document
+    fullName: Office.Document
   - uid: 'office!Office.HostType:enum'
     name: HostType
+    fullName: Office.HostType
   - uid: 'office!Office.Mailbox:interface'
     name: Office.Mailbox
   - uid: 'office!Office.OfficeTheme:interface'
     name: OfficeTheme
+    fullName: Office.OfficeTheme
   - uid: 'office!Office.PlatformType:enum'
     name: PlatformType
+    fullName: Office.PlatformType
   - uid: 'office!Office.RequirementSetSupport:interface'
     name: RequirementSetSupport
+    fullName: Office.RequirementSetSupport
   - uid: 'office!Office.RoamingSettings:interface'
     name: Office.RoamingSettings
   - uid: 'office!Office.UI:interface'
     name: UI
+    fullName: Office.UI

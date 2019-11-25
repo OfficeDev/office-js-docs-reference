@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ShapeFont#bold:member'
@@ -285,16 +287,21 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ShapeFont:class'
-    name: Excel.ShapeFont
+    name: ShapeFont
+    fullName: Excel.ShapeFont
   - uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions:interface'
-    name: Excel.Interfaces.ShapeFontLoadOptions
+    name: ShapeFontLoadOptions
+    fullName: Excel.Interfaces.ShapeFontLoadOptions
   - uid: 'excel!Excel.Interfaces.ShapeFontUpdateData:interface'
-    name: Interfaces.ShapeFontUpdateData
+    name: ShapeFontUpdateData
+    fullName: Excel.Interfaces.ShapeFontUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ShapeFontData:interface'
-    name: Excel.Interfaces.ShapeFontData
+    name: ShapeFontData
+    fullName: Excel.Interfaces.ShapeFontData
   - uid: 'excel!Excel.ShapeFont#underline~0:complex'
     name: >-
       Excel.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" |

@@ -14,6 +14,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TableScopedCollection#context:member'
@@ -193,6 +195,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.TableScopedCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -203,7 +206,8 @@ references:
       - name: <number>
         fullName: <number>
   - uid: 'excel!Excel.Table:class'
-    name: Excel.Table
+    name: Table
+    fullName: Excel.Table
   - uid: 'excel!Excel.TableScopedCollection#items~0:complex'
     name: 'Excel.Table[]'
     fullName: 'Excel.Table[]'
@@ -214,7 +218,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.TableScopedCollection:class'
-    name: Excel.TableScopedCollection
+    name: TableScopedCollection
+    fullName: Excel.TableScopedCollection
   - uid: 'excel!Excel.TableScopedCollection#load~0:complex'
     name: Excel.Interfaces.TableScopedCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.TableScopedCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -230,4 +235,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.TableScopedCollectionData:interface'
-    name: Excel.Interfaces.TableScopedCollectionData
+    name: TableScopedCollectionData
+    fullName: Excel.Interfaces.TableScopedCollectionData

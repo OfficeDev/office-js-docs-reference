@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartPlotArea#context:member'
@@ -336,12 +338,16 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartPlotAreaFormat:class'
-    name: Excel.ChartPlotAreaFormat
+    name: ChartPlotAreaFormat
+    fullName: Excel.ChartPlotAreaFormat
   - uid: 'excel!Excel.ChartPlotArea:class'
-    name: Excel.ChartPlotArea
+    name: ChartPlotArea
+    fullName: Excel.ChartPlotArea
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions:interface'
-    name: Excel.Interfaces.ChartPlotAreaLoadOptions
+    name: ChartPlotAreaLoadOptions
+    fullName: Excel.Interfaces.ChartPlotAreaLoadOptions
   - uid: 'excel!Excel.ChartPlotArea#position~0:complex'
     name: Excel.ChartPlotAreaPosition | "Automatic" | "Custom"
     fullName: Excel.ChartPlotAreaPosition | "Automatic" | "Custom"
@@ -352,8 +358,10 @@ references:
       - name: ' | "Automatic" | "Custom"'
         fullName: ' | "Automatic" | "Custom"'
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData:interface'
-    name: Interfaces.ChartPlotAreaUpdateData
+    name: ChartPlotAreaUpdateData
+    fullName: Excel.Interfaces.ChartPlotAreaUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaData:interface'
-    name: Excel.Interfaces.ChartPlotAreaData
+    name: ChartPlotAreaData
+    fullName: Excel.Interfaces.ChartPlotAreaData

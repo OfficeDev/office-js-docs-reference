@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ConditionalRangeFont#bold:member'
@@ -273,16 +275,21 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ConditionalRangeFont:class'
-    name: Excel.ConditionalRangeFont
+    name: ConditionalRangeFont
+    fullName: Excel.ConditionalRangeFont
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions:interface'
-    name: Excel.Interfaces.ConditionalRangeFontLoadOptions
+    name: ConditionalRangeFontLoadOptions
+    fullName: Excel.Interfaces.ConditionalRangeFontLoadOptions
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData:interface'
-    name: Interfaces.ConditionalRangeFontUpdateData
+    name: ConditionalRangeFontUpdateData
+    fullName: Excel.Interfaces.ConditionalRangeFontUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFontData:interface'
-    name: Excel.Interfaces.ConditionalRangeFontData
+    name: ConditionalRangeFontData
+    fullName: Excel.Interfaces.ConditionalRangeFontData
   - uid: 'excel!Excel.ConditionalRangeFont#underline~0:complex'
     name: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double"
     fullName: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double"

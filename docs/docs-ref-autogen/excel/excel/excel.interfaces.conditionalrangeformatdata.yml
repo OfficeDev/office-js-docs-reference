@@ -84,6 +84,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFillData:interface'
-    name: Excel.Interfaces.ConditionalRangeFillData
+    name: ConditionalRangeFillData
+    fullName: Excel.Interfaces.ConditionalRangeFillData
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFontData:interface'
-    name: Excel.Interfaces.ConditionalRangeFontData
+    name: ConditionalRangeFontData
+    fullName: Excel.Interfaces.ConditionalRangeFontData

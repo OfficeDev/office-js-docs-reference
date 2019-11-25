@@ -14,6 +14,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PageLayout#blackAndWhite:member'
@@ -810,16 +812,22 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.RangeAreas:class'
-    name: Excel.RangeAreas
+    name: RangeAreas
+    fullName: Excel.RangeAreas
   - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
+    name: Range
+    fullName: Excel.Range
   - uid: 'excel!Excel.HeaderFooterGroup:class'
-    name: Excel.HeaderFooterGroup
+    name: HeaderFooterGroup
+    fullName: Excel.HeaderFooterGroup
   - uid: 'excel!Excel.PageLayout:class'
-    name: Excel.PageLayout
+    name: PageLayout
+    fullName: Excel.PageLayout
   - uid: 'excel!Excel.Interfaces.PageLayoutLoadOptions:interface'
-    name: Excel.Interfaces.PageLayoutLoadOptions
+    name: PageLayoutLoadOptions
+    fullName: Excel.Interfaces.PageLayoutLoadOptions
   - uid: 'excel!Excel.PageLayout#orientation~0:complex'
     name: Excel.PageOrientation | "Portrait" | "Landscape"
     fullName: Excel.PageOrientation | "Portrait" | "Landscape"
@@ -878,7 +886,8 @@ references:
       - name: ' | "DownThenOver" | "OverThenDown"'
         fullName: ' | "DownThenOver" | "OverThenDown"'
   - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData:interface'
-    name: Interfaces.PageLayoutUpdateData
+    name: PageLayoutUpdateData
+    fullName: Excel.Interfaces.PageLayoutUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.PageLayout#setPrintArea~0:complex'
@@ -896,9 +905,11 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.PrintMarginUnit:enum'
-    name: Excel.PrintMarginUnit
+    name: PrintMarginUnit
+    fullName: Excel.PrintMarginUnit
   - uid: 'excel!Excel.PageLayoutMarginOptions:interface'
-    name: Excel.PageLayoutMarginOptions
+    name: PageLayoutMarginOptions
+    fullName: Excel.PageLayoutMarginOptions
   - uid: 'excel!Excel.PageLayout#setPrintTitleColumns~0:complex'
     name: Range | string
     fullName: Excel.Range | string
@@ -918,6 +929,8 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.Interfaces.PageLayoutData:interface'
-    name: Excel.Interfaces.PageLayoutData
+    name: PageLayoutData
+    fullName: Excel.Interfaces.PageLayoutData
   - uid: 'excel!Excel.PageLayoutZoomOptions:interface'
-    name: Excel.PageLayoutZoomOptions
+    name: PageLayoutZoomOptions
+    fullName: Excel.PageLayoutZoomOptions

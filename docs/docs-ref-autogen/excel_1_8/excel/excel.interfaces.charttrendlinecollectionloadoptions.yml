@@ -213,6 +213,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartTrendlineFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartTrendlineFormatLoadOptions
+    name: ChartTrendlineFormatLoadOptions
+    fullName: Excel.Interfaces.ChartTrendlineFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions:interface'
-    name: Excel.Interfaces.ChartTrendlineLabelLoadOptions
+    name: ChartTrendlineLabelLoadOptions
+    fullName: Excel.Interfaces.ChartTrendlineLabelLoadOptions

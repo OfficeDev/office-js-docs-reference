@@ -116,6 +116,7 @@ items:
 references:
   - uid: 'office!OfficeExtension.ClientObject:class'
     name: ClientObject
+    fullName: OfficeExtension.ClientObject
   - uid: 'office!OfficeExtension.TrackedObjects#add~0:complex'
     name: 'ClientObject[]'
     fullName: 'OfficeExtension.ClientObject[]'

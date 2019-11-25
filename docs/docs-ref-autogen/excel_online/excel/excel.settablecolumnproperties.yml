@@ -12,6 +12,8 @@ items:
     type: interface
     extends:
       - 'excel!Excel.SettableCellProperties:interface'
+    inheritance:
+      - type: 'excel!Excel.SettableCellProperties:interface'
     package: excel!
     children:
       - 'excel!Excel.SettableColumnProperties#columnHidden:member'
@@ -52,6 +54,7 @@ items:
 references:
   - uid: 'excel!Excel.SettableCellProperties:interface'
     name: SettableCellProperties
+    fullName: Excel.SettableCellProperties
   - uid: 'excel!Excel.SettableColumnProperties#format~0:complex'
     name: |-
       Excel.CellPropertiesFormat & {

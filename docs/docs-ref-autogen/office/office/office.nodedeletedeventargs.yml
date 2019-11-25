@@ -60,3 +60,4 @@ items:
 references:
   - uid: 'office!Office.CustomXmlNode:interface'
     name: CustomXmlNode
+    fullName: Office.CustomXmlNode

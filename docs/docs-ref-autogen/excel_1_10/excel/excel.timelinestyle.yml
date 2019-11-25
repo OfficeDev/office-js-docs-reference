@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TimelineStyle#context:member'
@@ -242,13 +244,18 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.TimelineStyle:class'
-    name: Excel.TimelineStyle
+    name: TimelineStyle
+    fullName: Excel.TimelineStyle
   - uid: 'excel!Excel.Interfaces.TimelineStyleLoadOptions:interface'
-    name: Excel.Interfaces.TimelineStyleLoadOptions
+    name: TimelineStyleLoadOptions
+    fullName: Excel.Interfaces.TimelineStyleLoadOptions
   - uid: 'excel!Excel.Interfaces.TimelineStyleUpdateData:interface'
-    name: Interfaces.TimelineStyleUpdateData
+    name: TimelineStyleUpdateData
+    fullName: Excel.Interfaces.TimelineStyleUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.TimelineStyleData:interface'
-    name: Excel.Interfaces.TimelineStyleData
+    name: TimelineStyleData
+    fullName: Excel.Interfaces.TimelineStyleData

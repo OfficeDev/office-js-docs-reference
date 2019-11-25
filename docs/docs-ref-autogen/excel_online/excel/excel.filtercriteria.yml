@@ -211,7 +211,8 @@ references:
       - name: ' | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" | "TopItems" | "TopPercent" | "Icon" | "Custom"'
         fullName: ' | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" | "TopItems" | "TopPercent" | "Icon" | "Custom"'
   - uid: 'excel!Excel.Icon:interface'
-    name: Excel.Icon
+    name: Icon
+    fullName: Excel.Icon
   - uid: 'excel!Excel.FilterCriteria#operator~0:complex'
     name: Excel.FilterOperator | "And" | "Or"
     fullName: Excel.FilterOperator | "And" | "Or"

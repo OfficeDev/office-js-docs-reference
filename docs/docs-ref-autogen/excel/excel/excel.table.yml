@@ -14,6 +14,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Table#autoFilter:member'
@@ -848,17 +850,23 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.AutoFilter:class'
-    name: Excel.AutoFilter
+    name: AutoFilter
+    fullName: Excel.AutoFilter
   - uid: 'excel!Excel.TableColumnCollection:class'
-    name: Excel.TableColumnCollection
+    name: TableColumnCollection
+    fullName: Excel.TableColumnCollection
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
+    name: Range
+    fullName: Excel.Range
   - uid: 'excel!Excel.Table:class'
-    name: Excel.Table
+    name: Table
+    fullName: Excel.Table
   - uid: 'excel!Excel.Interfaces.TableLoadOptions:interface'
-    name: Excel.Interfaces.TableLoadOptions
+    name: TableLoadOptions
+    fullName: Excel.Interfaces.TableLoadOptions
   - uid: 'excel!Excel.Table#onChanged~0:complex'
     name: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
@@ -902,14 +910,19 @@ references:
       - name: '>'
         fullName: '>'
   - uid: 'excel!Excel.TableRowCollection:class'
-    name: Excel.TableRowCollection
+    name: TableRowCollection
+    fullName: Excel.TableRowCollection
   - uid: 'excel!Excel.Interfaces.TableUpdateData:interface'
-    name: Interfaces.TableUpdateData
+    name: TableUpdateData
+    fullName: Excel.Interfaces.TableUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.TableSort:class'
-    name: Excel.TableSort
+    name: TableSort
+    fullName: Excel.TableSort
   - uid: 'excel!Excel.Interfaces.TableData:interface'
-    name: Excel.Interfaces.TableData
+    name: TableData
+    fullName: Excel.Interfaces.TableData
   - uid: 'excel!Excel.Worksheet:class'
-    name: Excel.Worksheet
+    name: Worksheet
+    fullName: Excel.Worksheet

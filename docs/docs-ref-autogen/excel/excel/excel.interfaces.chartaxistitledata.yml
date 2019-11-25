@@ -59,4 +59,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleFormatData:interface'
-    name: Excel.Interfaces.ChartAxisTitleFormatData
+    name: ChartAxisTitleFormatData
+    fullName: Excel.Interfaces.ChartAxisTitleFormatData

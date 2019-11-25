@@ -273,4 +273,5 @@ items:
           - 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
-    name: Excel.Interfaces.ShapeLoadOptions
+    name: ShapeLoadOptions
+    fullName: Excel.Interfaces.ShapeLoadOptions

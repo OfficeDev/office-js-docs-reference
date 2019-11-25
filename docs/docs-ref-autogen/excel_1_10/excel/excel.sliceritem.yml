@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.SlicerItem#context:member'
@@ -242,13 +244,18 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.SlicerItem:class'
-    name: Excel.SlicerItem
+    name: SlicerItem
+    fullName: Excel.SlicerItem
   - uid: 'excel!Excel.Interfaces.SlicerItemLoadOptions:interface'
-    name: Excel.Interfaces.SlicerItemLoadOptions
+    name: SlicerItemLoadOptions
+    fullName: Excel.Interfaces.SlicerItemLoadOptions
   - uid: 'excel!Excel.Interfaces.SlicerItemUpdateData:interface'
-    name: Interfaces.SlicerItemUpdateData
+    name: SlicerItemUpdateData
+    fullName: Excel.Interfaces.SlicerItemUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.SlicerItemData:interface'
-    name: Excel.Interfaces.SlicerItemData
+    name: SlicerItemData
+    fullName: Excel.Interfaces.SlicerItemData

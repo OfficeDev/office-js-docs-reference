@@ -100,4 +100,5 @@ references:
       - name: ' | "Done" | "Calculating" | "Pending"'
         fullName: ' | "Done" | "Calculating" | "Pending"'
   - uid: 'excel!Excel.Interfaces.IterativeCalculationData:interface'
-    name: Excel.Interfaces.IterativeCalculationData
+    name: IterativeCalculationData
+    fullName: Excel.Interfaces.IterativeCalculationData

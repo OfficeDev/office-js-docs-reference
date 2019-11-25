@@ -177,4 +177,5 @@ references:
       - name: ' | "DataSourceOrder" | "Ascending" | "Descending"'
         fullName: ' | "DataSourceOrder" | "Ascending" | "Descending"'
   - uid: 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
-    name: Excel.Interfaces.WorksheetUpdateData
+    name: WorksheetUpdateData
+    fullName: Excel.Interfaces.WorksheetUpdateData

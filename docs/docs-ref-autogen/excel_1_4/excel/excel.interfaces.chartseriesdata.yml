@@ -59,7 +59,8 @@ items:
           - 'excel!Excel.Interfaces.ChartSeriesData#points~0:complex'
 references:
   - uid: 'excel!Excel.Interfaces.ChartSeriesFormatData:interface'
-    name: Excel.Interfaces.ChartSeriesFormatData
+    name: ChartSeriesFormatData
+    fullName: Excel.Interfaces.ChartSeriesFormatData
   - uid: 'excel!Excel.Interfaces.ChartSeriesData#points~0:complex'
     name: 'Excel.Interfaces.ChartPointData[]'
     fullName: 'Excel.Interfaces.ChartPointData[]'

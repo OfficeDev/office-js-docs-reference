@@ -191,13 +191,17 @@ items:
           - number
 references:
   - uid: 'excel!Excel.Interfaces.ChartAxesData:interface'
-    name: Excel.Interfaces.ChartAxesData
+    name: ChartAxesData
+    fullName: Excel.Interfaces.ChartAxesData
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsData:interface'
-    name: Excel.Interfaces.ChartDataLabelsData
+    name: ChartDataLabelsData
+    fullName: Excel.Interfaces.ChartDataLabelsData
   - uid: 'excel!Excel.Interfaces.ChartAreaFormatData:interface'
-    name: Excel.Interfaces.ChartAreaFormatData
+    name: ChartAreaFormatData
+    fullName: Excel.Interfaces.ChartAreaFormatData
   - uid: 'excel!Excel.Interfaces.ChartLegendData:interface'
-    name: Excel.Interfaces.ChartLegendData
+    name: ChartLegendData
+    fullName: Excel.Interfaces.ChartLegendData
   - uid: 'excel!Excel.Interfaces.ChartData#series~0:complex'
     name: 'Excel.Interfaces.ChartSeriesData[]'
     fullName: 'Excel.Interfaces.ChartSeriesData[]'
@@ -208,4 +212,5 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.ChartTitleData:interface'
-    name: Excel.Interfaces.ChartTitleData
+    name: ChartTitleData
+    fullName: Excel.Interfaces.ChartTitleData

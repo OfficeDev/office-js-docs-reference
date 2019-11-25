@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartSeriesCollection#context:member'
@@ -227,8 +229,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartSeries:class'
-    name: Excel.ChartSeries
+    name: ChartSeries
+    fullName: Excel.ChartSeries
   - uid: 'excel!Excel.ChartSeriesCollection#items~0:complex'
     name: 'Excel.ChartSeries[]'
     fullName: 'Excel.ChartSeries[]'
@@ -239,7 +243,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.ChartSeriesCollection:class'
-    name: Excel.ChartSeriesCollection
+    name: ChartSeriesCollection
+    fullName: Excel.ChartSeriesCollection
   - uid: 'excel!Excel.ChartSeriesCollection#load~0:complex'
     name: Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -255,4 +260,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionData:interface'
-    name: Excel.Interfaces.ChartSeriesCollectionData
+    name: ChartSeriesCollectionData
+    fullName: Excel.Interfaces.ChartSeriesCollectionData

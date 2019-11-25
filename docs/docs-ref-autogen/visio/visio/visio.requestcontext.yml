@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'visio!OfficeExtension.ClientRequestContext:class'
+    inheritance:
+      - type: 'visio!OfficeExtension.ClientRequestContext:class'
     package: visio!
     children:
       - 'visio!Visio.RequestContext:constructor(1)'
@@ -55,3 +57,4 @@ references:
         fullName: OfficeExtension.EmbeddedSession
   - uid: 'visio!Visio.Document:class'
     name: Document
+    fullName: Visio.Document

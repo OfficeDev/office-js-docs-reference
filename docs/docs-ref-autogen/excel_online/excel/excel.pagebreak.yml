@@ -9,6 +9,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PageBreak#columnIndex:member'
@@ -189,11 +191,16 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
+    name: Range
+    fullName: Excel.Range
   - uid: 'excel!Excel.PageBreak:class'
-    name: Excel.PageBreak
+    name: PageBreak
+    fullName: Excel.PageBreak
   - uid: 'excel!Excel.Interfaces.PageBreakLoadOptions:interface'
-    name: Excel.Interfaces.PageBreakLoadOptions
+    name: PageBreakLoadOptions
+    fullName: Excel.Interfaces.PageBreakLoadOptions
   - uid: 'excel!Excel.Interfaces.PageBreakData:interface'
-    name: Excel.Interfaces.PageBreakData
+    name: PageBreakData
+    fullName: Excel.Interfaces.PageBreakData

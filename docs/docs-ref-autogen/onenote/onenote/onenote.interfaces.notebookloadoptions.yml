@@ -138,6 +138,8 @@ items:
           - 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions:interface'
 references:
   - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions:interface'
-    name: OneNote.Interfaces.SectionGroupCollectionLoadOptions
+    name: SectionGroupCollectionLoadOptions
+    fullName: OneNote.Interfaces.SectionGroupCollectionLoadOptions
   - uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions:interface'
-    name: OneNote.Interfaces.SectionCollectionLoadOptions
+    name: SectionCollectionLoadOptions
+    fullName: OneNote.Interfaces.SectionCollectionLoadOptions

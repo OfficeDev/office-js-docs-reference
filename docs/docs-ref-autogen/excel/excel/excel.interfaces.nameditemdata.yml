@@ -143,7 +143,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesData:interface'
-    name: Excel.Interfaces.NamedItemArrayValuesData
+    name: NamedItemArrayValuesData
+    fullName: Excel.Interfaces.NamedItemArrayValuesData
   - uid: 'excel!Excel.Interfaces.NamedItemData#scope~0:complex'
     name: Excel.NamedItemScope | "Worksheet" | "Workbook"
     fullName: Excel.NamedItemScope | "Worksheet" | "Workbook"

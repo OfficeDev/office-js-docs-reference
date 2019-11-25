@@ -234,7 +234,8 @@ items:
             - 'office!Office.CustomXmlPrefixMappings#getPrefixAsync~1:complex'
 references:
   - uid: 'office!Office.AsyncContextOptions:interface'
-    name: Office.AsyncContextOptions
+    name: AsyncContextOptions
+    fullName: Office.AsyncContextOptions
   - uid: 'office!Office.CustomXmlPrefixMappings#addNamespaceAsync~0:complex'
     name: '(result: AsyncResult<void>) => void'
     fullName: '(result: Office.AsyncResult<void>) => void'

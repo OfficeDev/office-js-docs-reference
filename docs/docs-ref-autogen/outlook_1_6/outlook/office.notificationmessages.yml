@@ -451,6 +451,7 @@ items:
 references:
   - uid: 'outlook!Office.NotificationMessageDetails:interface'
     name: NotificationMessageDetails
+    fullName: Office.NotificationMessageDetails
   - uid: 'outlook!Office.AsyncContextOptions:interface'
     name: Office.AsyncContextOptions
   - uid: 'outlook!Office.NotificationMessages#addAsync~0:complex'

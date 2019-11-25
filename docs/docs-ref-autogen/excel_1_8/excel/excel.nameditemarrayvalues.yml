@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.NamedItemArrayValues#context:member'
@@ -158,12 +160,16 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.NamedItemArrayValues:class'
-    name: Excel.NamedItemArrayValues
+    name: NamedItemArrayValues
+    fullName: Excel.NamedItemArrayValues
   - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions:interface'
-    name: Excel.Interfaces.NamedItemArrayValuesLoadOptions
+    name: NamedItemArrayValuesLoadOptions
+    fullName: Excel.Interfaces.NamedItemArrayValuesLoadOptions
   - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesData:interface'
-    name: Excel.Interfaces.NamedItemArrayValuesData
+    name: NamedItemArrayValuesData
+    fullName: Excel.Interfaces.NamedItemArrayValuesData
   - uid: 'excel!Excel.NamedItemArrayValues#types~0:complex'
     name: 'Excel.RangeValueType[][]'
     fullName: 'Excel.RangeValueType[][]'

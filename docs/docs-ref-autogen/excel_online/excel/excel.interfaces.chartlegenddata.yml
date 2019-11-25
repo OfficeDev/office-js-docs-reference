@@ -171,7 +171,8 @@ items:
           - number
 references:
   - uid: 'excel!Excel.Interfaces.ChartLegendFormatData:interface'
-    name: Excel.Interfaces.ChartLegendFormatData
+    name: ChartLegendFormatData
+    fullName: Excel.Interfaces.ChartLegendFormatData
   - uid: 'excel!Excel.Interfaces.ChartLegendData#legendEntries~0:complex'
     name: 'Excel.Interfaces.ChartLegendEntryData[]'
     fullName: 'Excel.Interfaces.ChartLegendEntryData[]'

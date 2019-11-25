@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PivotItemCollection#context:member'
@@ -194,6 +196,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.PivotItemCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -204,7 +207,8 @@ references:
       - name: <number>
         fullName: <number>
   - uid: 'excel!Excel.PivotItem:class'
-    name: Excel.PivotItem
+    name: PivotItem
+    fullName: Excel.PivotItem
   - uid: 'excel!Excel.PivotItemCollection#items~0:complex'
     name: 'Excel.PivotItem[]'
     fullName: 'Excel.PivotItem[]'
@@ -215,7 +219,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.PivotItemCollection:class'
-    name: Excel.PivotItemCollection
+    name: PivotItemCollection
+    fullName: Excel.PivotItemCollection
   - uid: 'excel!Excel.PivotItemCollection#load~0:complex'
     name: Excel.Interfaces.PivotItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.PivotItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -231,4 +236,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.PivotItemCollectionData:interface'
-    name: Excel.Interfaces.PivotItemCollectionData
+    name: PivotItemCollectionData
+    fullName: Excel.Interfaces.PivotItemCollectionData

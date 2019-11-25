@@ -273,6 +273,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartSeriesFormatLoadOptions
+    name: ChartSeriesFormatLoadOptions
+    fullName: Excel.Interfaces.ChartSeriesFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface'
-    name: Excel.Interfaces.ChartPointsCollectionLoadOptions
+    name: ChartPointsCollectionLoadOptions
+    fullName: Excel.Interfaces.ChartPointsCollectionLoadOptions

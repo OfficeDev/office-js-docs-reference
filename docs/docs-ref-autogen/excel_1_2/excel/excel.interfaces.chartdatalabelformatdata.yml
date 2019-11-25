@@ -27,4 +27,5 @@ items:
           - 'excel!Excel.Interfaces.ChartFontData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartFontData:interface'
-    name: Excel.Interfaces.ChartFontData
+    name: ChartFontData
+    fullName: Excel.Interfaces.ChartFontData

@@ -193,9 +193,11 @@ items:
           - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#type~0:complex'
 references:
   - uid: 'excel!Excel.Interfaces.ChartTrendlineFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartTrendlineFormatUpdateData
+    name: ChartTrendlineFormatUpdateData
+    fullName: Excel.Interfaces.ChartTrendlineFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelUpdateData:interface'
-    name: Excel.Interfaces.ChartTrendlineLabelUpdateData
+    name: ChartTrendlineLabelUpdateData
+    fullName: Excel.Interfaces.ChartTrendlineLabelUpdateData
   - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#type~0:complex'
     name: Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"
     fullName: Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"

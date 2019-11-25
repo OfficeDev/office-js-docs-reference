@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartTrendlineCollection#add:member(1)'
@@ -233,11 +235,14 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ChartTrendline:class'
-    name: Excel.ChartTrendline
+    name: ChartTrendline
+    fullName: Excel.ChartTrendline
   - uid: 'excel!Excel.ChartTrendlineType:enum'
-    name: Excel.ChartTrendlineType
+    name: ChartTrendlineType
+    fullName: Excel.ChartTrendlineType
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartTrendlineCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -257,7 +262,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.ChartTrendlineCollection:class'
-    name: Excel.ChartTrendlineCollection
+    name: ChartTrendlineCollection
+    fullName: Excel.ChartTrendlineCollection
   - uid: 'excel!Excel.ChartTrendlineCollection#load~0:complex'
     name: Excel.Interfaces.ChartTrendlineCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.ChartTrendlineCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -273,4 +279,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.ChartTrendlineCollectionData:interface'
-    name: Excel.Interfaces.ChartTrendlineCollectionData
+    name: ChartTrendlineCollectionData
+    fullName: Excel.Interfaces.ChartTrendlineCollectionData

@@ -698,9 +698,11 @@ references:
       - name: ' | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"'
         fullName: ' | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"'
   - uid: 'excel!Excel.Interfaces.ChartAxisFormatData:interface'
-    name: Excel.Interfaces.ChartAxisFormatData
+    name: ChartAxisFormatData
+    fullName: Excel.Interfaces.ChartAxisFormatData
   - uid: 'excel!Excel.Interfaces.ChartGridlinesData:interface'
-    name: Excel.Interfaces.ChartGridlinesData
+    name: ChartGridlinesData
+    fullName: Excel.Interfaces.ChartGridlinesData
   - uid: 'excel!Excel.Interfaces.ChartAxisData#majorTickMark~0:complex'
     name: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
     fullName: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
@@ -765,7 +767,8 @@ references:
       - name: ' | "NextToAxis" | "High" | "Low" | "None"'
         fullName: ' | "NextToAxis" | "High" | "Low" | "None"'
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleData:interface'
-    name: Excel.Interfaces.ChartAxisTitleData
+    name: ChartAxisTitleData
+    fullName: Excel.Interfaces.ChartAxisTitleData
   - uid: 'excel!Excel.Interfaces.ChartAxisData#type~0:complex'
     name: Excel.ChartAxisType | "Invalid" | "Category" | "Value" | "Series"
     fullName: Excel.ChartAxisType | "Invalid" | "Category" | "Value" | "Series"

@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.InkAnalysisLineCollection#context:member'
@@ -243,8 +245,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
+    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.InkAnalysisLine:class'
-    name: OneNote.InkAnalysisLine
+    name: InkAnalysisLine
+    fullName: OneNote.InkAnalysisLine
   - uid: 'onenote!OneNote.InkAnalysisLineCollection#items~0:complex'
     name: 'OneNote.InkAnalysisLine[]'
     fullName: 'OneNote.InkAnalysisLine[]'
@@ -255,7 +259,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'onenote!OneNote.InkAnalysisLineCollection:class'
-    name: OneNote.InkAnalysisLineCollection
+    name: InkAnalysisLineCollection
+    fullName: OneNote.InkAnalysisLineCollection
   - uid: 'onenote!OneNote.InkAnalysisLineCollection#load~0:complex'
     name: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
     fullName: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
@@ -271,4 +276,5 @@ references:
   - uid: 'onenote!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionData:interface'
-    name: OneNote.Interfaces.InkAnalysisLineCollectionData
+    name: InkAnalysisLineCollectionData
+    fullName: OneNote.Interfaces.InkAnalysisLineCollectionData

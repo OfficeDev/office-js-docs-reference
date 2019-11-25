@@ -50,6 +50,8 @@ items:
           - 'word!Word.Interfaces.DocumentPropertiesUpdateData:interface'
 references:
   - uid: 'word!Word.Interfaces.BodyUpdateData:interface'
-    name: Word.Interfaces.BodyUpdateData
+    name: BodyUpdateData
+    fullName: Word.Interfaces.BodyUpdateData
   - uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData:interface'
-    name: Word.Interfaces.DocumentPropertiesUpdateData
+    name: DocumentPropertiesUpdateData
+    fullName: Word.Interfaces.DocumentPropertiesUpdateData

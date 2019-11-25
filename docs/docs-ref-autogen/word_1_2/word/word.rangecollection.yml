@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.RangeCollection#context:member'
@@ -183,6 +185,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.RangeCollection#items~0:complex'
     name: 'Word.Range[]'
     fullName: 'Word.Range[]'
@@ -193,7 +196,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.RangeCollection:class'
-    name: Word.RangeCollection
+    name: RangeCollection
+    fullName: Word.RangeCollection
   - uid: 'word!Word.RangeCollection#load~0:complex'
     name: Word.Interfaces.RangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
     fullName: Word.Interfaces.RangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
@@ -209,4 +213,5 @@ references:
   - uid: 'word!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'word!Word.Interfaces.RangeCollectionData:interface'
-    name: Word.Interfaces.RangeCollectionData
+    name: RangeCollectionData
+    fullName: Word.Interfaces.RangeCollectionData

@@ -227,7 +227,8 @@ items:
           - number
 references:
   - uid: 'excel!Excel.Interfaces.ChartTitleFormatData:interface'
-    name: Excel.Interfaces.ChartTitleFormatData
+    name: ChartTitleFormatData
+    fullName: Excel.Interfaces.ChartTitleFormatData
   - uid: 'excel!Excel.Interfaces.ChartTitleData#horizontalAlignment~0:complex'
     name: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
     fullName: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"

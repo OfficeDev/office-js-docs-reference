@@ -61,4 +61,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartPointFormatLoadOptions
+    name: ChartPointFormatLoadOptions
+    fullName: Excel.Interfaces.ChartPointFormatLoadOptions

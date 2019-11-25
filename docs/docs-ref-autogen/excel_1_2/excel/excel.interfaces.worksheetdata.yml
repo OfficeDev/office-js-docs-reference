@@ -136,7 +136,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.WorksheetProtectionData:interface'
-    name: Excel.Interfaces.WorksheetProtectionData
+    name: WorksheetProtectionData
+    fullName: Excel.Interfaces.WorksheetProtectionData
   - uid: 'excel!Excel.Interfaces.WorksheetData#tables~0:complex'
     name: 'Excel.Interfaces.TableData[]'
     fullName: 'Excel.Interfaces.TableData[]'

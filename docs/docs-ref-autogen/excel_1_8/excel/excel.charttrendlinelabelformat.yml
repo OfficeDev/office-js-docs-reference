@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartTrendlineLabelFormat#border:member'
@@ -223,20 +225,28 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ChartBorder:class'
-    name: Excel.ChartBorder
+    name: ChartBorder
+    fullName: Excel.ChartBorder
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartFill:class'
-    name: Excel.ChartFill
+    name: ChartFill
+    fullName: Excel.ChartFill
   - uid: 'excel!Excel.ChartFont:class'
-    name: Excel.ChartFont
+    name: ChartFont
+    fullName: Excel.ChartFont
   - uid: 'excel!Excel.ChartTrendlineLabelFormat:class'
-    name: Excel.ChartTrendlineLabelFormat
+    name: ChartTrendlineLabelFormat
+    fullName: Excel.ChartTrendlineLabelFormat
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions
+    name: ChartTrendlineLabelFormatLoadOptions
+    fullName: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatUpdateData:interface'
-    name: Interfaces.ChartTrendlineLabelFormatUpdateData
+    name: ChartTrendlineLabelFormatUpdateData
+    fullName: Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatData:interface'
-    name: Excel.Interfaces.ChartTrendlineLabelFormatData
+    name: ChartTrendlineLabelFormatData
+    fullName: Excel.Interfaces.ChartTrendlineLabelFormatData

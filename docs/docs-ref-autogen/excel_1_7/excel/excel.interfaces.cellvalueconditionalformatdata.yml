@@ -43,6 +43,8 @@ items:
           - 'excel!Excel.ConditionalCellValueRule:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
-    name: Excel.Interfaces.ConditionalRangeFormatData
+    name: ConditionalRangeFormatData
+    fullName: Excel.Interfaces.ConditionalRangeFormatData
   - uid: 'excel!Excel.ConditionalCellValueRule:interface'
-    name: Excel.ConditionalCellValueRule
+    name: ConditionalCellValueRule
+    fullName: Excel.ConditionalCellValueRule

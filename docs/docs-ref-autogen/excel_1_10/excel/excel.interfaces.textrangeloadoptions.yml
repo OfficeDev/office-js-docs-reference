@@ -61,4 +61,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ShapeFontLoadOptions:interface'
-    name: Excel.Interfaces.ShapeFontLoadOptions
+    name: ShapeFontLoadOptions
+    fullName: Excel.Interfaces.ShapeFontLoadOptions

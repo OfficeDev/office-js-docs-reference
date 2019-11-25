@@ -16,6 +16,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Setting#context:member'
@@ -251,13 +253,18 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Setting:class'
-    name: Excel.Setting
+    name: Setting
+    fullName: Excel.Setting
   - uid: 'excel!Excel.Interfaces.SettingLoadOptions:interface'
-    name: Excel.Interfaces.SettingLoadOptions
+    name: SettingLoadOptions
+    fullName: Excel.Interfaces.SettingLoadOptions
   - uid: 'excel!Excel.Interfaces.SettingUpdateData:interface'
-    name: Interfaces.SettingUpdateData
+    name: SettingUpdateData
+    fullName: Excel.Interfaces.SettingUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.SettingData:interface'
-    name: Excel.Interfaces.SettingData
+    name: SettingData
+    fullName: Excel.Interfaces.SettingData

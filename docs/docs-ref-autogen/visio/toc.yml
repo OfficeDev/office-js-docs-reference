@@ -30,6 +30,97 @@ items:
             uid: 'visio!Visio.Hyperlink:class'
           - name: HyperlinkCollection
             uid: 'visio!Visio.HyperlinkCollection:class'
+          - name: ApplicationData
+            uid: 'visio!Visio.Interfaces.ApplicationData:interface'
+          - name: ApplicationLoadOptions
+            uid: 'visio!Visio.Interfaces.ApplicationLoadOptions:interface'
+          - name: ApplicationUpdateData
+            uid: 'visio!Visio.Interfaces.ApplicationUpdateData:interface'
+          - name: CollectionLoadOptions
+            uid: 'visio!Visio.Interfaces.CollectionLoadOptions:interface'
+          - name: CommentCollectionData
+            uid: 'visio!Visio.Interfaces.CommentCollectionData:interface'
+          - name: CommentCollectionLoadOptions
+            uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions:interface'
+          - name: CommentCollectionUpdateData
+            uid: 'visio!Visio.Interfaces.CommentCollectionUpdateData:interface'
+          - name: CommentData
+            uid: 'visio!Visio.Interfaces.CommentData:interface'
+          - name: CommentLoadOptions
+            uid: 'visio!Visio.Interfaces.CommentLoadOptions:interface'
+          - name: CommentUpdateData
+            uid: 'visio!Visio.Interfaces.CommentUpdateData:interface'
+          - name: DocumentData
+            uid: 'visio!Visio.Interfaces.DocumentData:interface'
+          - name: DocumentLoadOptions
+            uid: 'visio!Visio.Interfaces.DocumentLoadOptions:interface'
+          - name: DocumentUpdateData
+            uid: 'visio!Visio.Interfaces.DocumentUpdateData:interface'
+          - name: DocumentViewData
+            uid: 'visio!Visio.Interfaces.DocumentViewData:interface'
+          - name: DocumentViewLoadOptions
+            uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions:interface'
+          - name: DocumentViewUpdateData
+            uid: 'visio!Visio.Interfaces.DocumentViewUpdateData:interface'
+          - name: HyperlinkCollectionData
+            uid: 'visio!Visio.Interfaces.HyperlinkCollectionData:interface'
+          - name: HyperlinkCollectionLoadOptions
+            uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions:interface'
+          - name: HyperlinkCollectionUpdateData
+            uid: 'visio!Visio.Interfaces.HyperlinkCollectionUpdateData:interface'
+          - name: HyperlinkData
+            uid: 'visio!Visio.Interfaces.HyperlinkData:interface'
+          - name: HyperlinkLoadOptions
+            uid: 'visio!Visio.Interfaces.HyperlinkLoadOptions:interface'
+          - name: PageCollectionData
+            uid: 'visio!Visio.Interfaces.PageCollectionData:interface'
+          - name: PageCollectionLoadOptions
+            uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions:interface'
+          - name: PageCollectionUpdateData
+            uid: 'visio!Visio.Interfaces.PageCollectionUpdateData:interface'
+          - name: PageData
+            uid: 'visio!Visio.Interfaces.PageData:interface'
+          - name: PageLoadOptions
+            uid: 'visio!Visio.Interfaces.PageLoadOptions:interface'
+          - name: PageUpdateData
+            uid: 'visio!Visio.Interfaces.PageUpdateData:interface'
+          - name: PageViewData
+            uid: 'visio!Visio.Interfaces.PageViewData:interface'
+          - name: PageViewLoadOptions
+            uid: 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
+          - name: PageViewUpdateData
+            uid: 'visio!Visio.Interfaces.PageViewUpdateData:interface'
+          - name: SelectionData
+            uid: 'visio!Visio.Interfaces.SelectionData:interface'
+          - name: ShapeCollectionData
+            uid: 'visio!Visio.Interfaces.ShapeCollectionData:interface'
+          - name: ShapeCollectionLoadOptions
+            uid: 'visio!Visio.Interfaces.ShapeCollectionLoadOptions:interface'
+          - name: ShapeCollectionUpdateData
+            uid: 'visio!Visio.Interfaces.ShapeCollectionUpdateData:interface'
+          - name: ShapeData
+            uid: 'visio!Visio.Interfaces.ShapeData:interface'
+          - name: ShapeDataItemCollectionData
+            uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionData:interface'
+          - name: ShapeDataItemCollectionLoadOptions
+            uid: >-
+              visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions:interface
+          - name: ShapeDataItemCollectionUpdateData
+            uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionUpdateData:interface'
+          - name: ShapeDataItemData
+            uid: 'visio!Visio.Interfaces.ShapeDataItemData:interface'
+          - name: ShapeDataItemLoadOptions
+            uid: 'visio!Visio.Interfaces.ShapeDataItemLoadOptions:interface'
+          - name: ShapeLoadOptions
+            uid: 'visio!Visio.Interfaces.ShapeLoadOptions:interface'
+          - name: ShapeUpdateData
+            uid: 'visio!Visio.Interfaces.ShapeUpdateData:interface'
+          - name: ShapeViewData
+            uid: 'visio!Visio.Interfaces.ShapeViewData:interface'
+          - name: ShapeViewLoadOptions
+            uid: 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'
+          - name: ShapeViewUpdateData
+            uid: 'visio!Visio.Interfaces.ShapeViewUpdateData:interface'
           - name: OverlayHorizontalAlignment
             uid: 'visio!Visio.OverlayHorizontalAlignment:enum'
           - name: OverlayType
@@ -73,191 +164,184 @@ items:
       - name: Common API
         uid: office!
         items:
-          - name: Office
+          - name: Enums
+            uid: ''
             items:
-              - name: Enums
-                uid: ''
-                items:
-                  - name: ActiveView
-                    uid: 'office!Office.ActiveView:enum'
-                  - name: AsyncResultStatus
-                    uid: 'office!Office.AsyncResultStatus:enum'
-                  - name: BindingType
-                    uid: 'office!Office.BindingType:enum'
-                  - name: CoercionType
-                    uid: 'office!Office.CoercionType:enum'
-                  - name: CustomXMLNodeType
-                    uid: 'office!Office.CustomXMLNodeType:enum'
-                  - name: DocumentMode
-                    uid: 'office!Office.DocumentMode:enum'
-                  - name: EventType
-                    uid: 'office!Office.EventType:enum'
-                  - name: FileType
-                    uid: 'office!Office.FileType:enum'
-                  - name: FilterType
-                    uid: 'office!Office.FilterType:enum'
-                  - name: GoToType
-                    uid: 'office!Office.GoToType:enum'
-                  - name: HostType
-                    uid: 'office!Office.HostType:enum'
-                  - name: Index
-                    uid: 'office!Office.Index:enum'
-                  - name: InitializationReason
-                    uid: 'office!Office.InitializationReason:enum'
-                  - name: PlatformType
-                    uid: 'office!Office.PlatformType:enum'
-                  - name: ProjectProjectFields
-                    uid: 'office!Office.ProjectProjectFields:enum'
-                  - name: ProjectResourceFields
-                    uid: 'office!Office.ProjectResourceFields:enum'
-                  - name: ProjectTaskFields
-                    uid: 'office!Office.ProjectTaskFields:enum'
-                  - name: ProjectViewTypes
-                    uid: 'office!Office.ProjectViewTypes:enum'
-                  - name: SelectionMode
-                    uid: 'office!Office.SelectionMode:enum'
-                  - name: Table
-                    uid: 'office!Office.Table:enum'
-                  - name: ValueFormat
-                    uid: 'office!Office.ValueFormat:enum'
-              - name: AddBindingFromNamedItemOptions
-                uid: 'office!Office.AddBindingFromNamedItemOptions:interface'
-              - name: AddBindingFromPromptOptions
-                uid: 'office!Office.AddBindingFromPromptOptions:interface'
-              - name: AddBindingFromSelectionOptions
-                uid: 'office!Office.AddBindingFromSelectionOptions:interface'
-              - name: AddinCommands
-                items:
-                  - name: Event
-                    uid: 'office!Office.AddinCommands.Event:interface'
-                  - name: EventCompletedOptions
-                    uid: >-
-                      office!Office.AddinCommands.EventCompletedOptions:interface
-                  - name: Source
-                    uid: 'office!Office.AddinCommands.Source:interface'
-              - name: AsyncContextOptions
-                uid: 'office!Office.AsyncContextOptions:interface'
-              - name: AsyncResult
-                uid: 'office!Office.AsyncResult:interface'
-              - name: Auth
-                uid: 'office!Office.Auth:interface'
-              - name: AuthOptions
-                uid: 'office!Office.AuthOptions:interface'
-              - name: Binding
-                uid: 'office!Office.Binding:interface'
-              - name: BindingDataChangedEventArgs
-                uid: 'office!Office.BindingDataChangedEventArgs:interface'
-              - name: Bindings
-                uid: 'office!Office.Bindings:interface'
-              - name: BindingSelectionChangedEventArgs
-                uid: 'office!Office.BindingSelectionChangedEventArgs:interface'
-              - name: Context
-                uid: 'office!Office.Context:interface'
-              - name: ContextInformation
-                uid: 'office!Office.ContextInformation:interface'
-              - name: CustomXmlNode
-                uid: 'office!Office.CustomXmlNode:interface'
-              - name: CustomXmlPart
-                uid: 'office!Office.CustomXmlPart:interface'
-              - name: CustomXmlParts
-                uid: 'office!Office.CustomXmlParts:interface'
-              - name: CustomXmlPrefixMappings
-                uid: 'office!Office.CustomXmlPrefixMappings:interface'
-              - name: Dialog
-                uid: 'office!Office.Dialog:interface'
-              - name: DialogOptions
-                uid: 'office!Office.DialogOptions:interface'
-              - name: Document
-                uid: 'office!Office.Document:interface'
-              - name: DocumentSelectionChangedEventArgs
-                uid: 'office!Office.DocumentSelectionChangedEventArgs:interface'
-              - name: Error
-                uid: 'office!Office.Error:interface'
-              - name: File
-                uid: 'office!Office.File:interface'
-              - name: FileProperties
-                uid: 'office!Office.FileProperties:interface'
-              - name: GetBindingDataOptions
-                uid: 'office!Office.GetBindingDataOptions:interface'
-              - name: GetFileOptions
-                uid: 'office!Office.GetFileOptions:interface'
-              - name: GetSelectedDataOptions
-                uid: 'office!Office.GetSelectedDataOptions:interface'
-              - name: GoToByIdOptions
-                uid: 'office!Office.GoToByIdOptions:interface'
-              - name: IPromiseConstructor
-                uid: 'office!Office.IPromiseConstructor:interface'
-              - name: MatrixBinding
-                uid: 'office!Office.MatrixBinding:interface'
-              - name: NodeDeletedEventArgs
-                uid: 'office!Office.NodeDeletedEventArgs:interface'
-              - name: NodeInsertedEventArgs
-                uid: 'office!Office.NodeInsertedEventArgs:interface'
-              - name: NodeReplacedEventArgs
-                uid: 'office!Office.NodeReplacedEventArgs:interface'
-              - name: OfficeTheme
-                uid: 'office!Office.OfficeTheme:interface'
-              - name: RangeCoordinates
-                uid: 'office!Office.RangeCoordinates:interface'
-              - name: RangeFormatConfiguration
-                uid: 'office!Office.RangeFormatConfiguration:interface'
-              - name: RemoveHandlerOptions
-                uid: 'office!Office.RemoveHandlerOptions:interface'
-              - name: RequirementSetSupport
-                uid: 'office!Office.RequirementSetSupport:interface'
-              - name: SaveSettingsOptions
-                uid: 'office!Office.SaveSettingsOptions:interface'
-              - name: SetBindingDataOptions
-                uid: 'office!Office.SetBindingDataOptions:interface'
-              - name: SetSelectedDataOptions
-                uid: 'office!Office.SetSelectedDataOptions:interface'
-              - name: Settings
-                uid: 'office!Office.Settings:interface'
-              - name: SettingsChangedEventArgs
-                uid: 'office!Office.SettingsChangedEventArgs:interface'
-              - name: Slice
-                uid: 'office!Office.Slice:interface'
-              - name: TableBinding
-                uid: 'office!Office.TableBinding:interface'
-              - name: TableData
-                uid: 'office!Office.TableData:class'
-              - name: TextBinding
-                uid: 'office!Office.TextBinding:interface'
-              - name: UI
-                uid: 'office!Office.UI:interface'
-          - name: OfficeExtension
-            items:
-              - name: ClientObject
-                uid: 'office!OfficeExtension.ClientObject:class'
-              - name: ClientRequestContext
-                uid: 'office!OfficeExtension.ClientRequestContext:class'
-              - name: ClientResult
-                uid: 'office!OfficeExtension.ClientResult:class'
-              - name: DebugInfo
-                uid: 'office!OfficeExtension.DebugInfo:interface'
-              - name: EmbeddedOptions
-                uid: 'office!OfficeExtension.EmbeddedOptions:interface'
-              - name: EmbeddedSession
-                uid: 'office!OfficeExtension.EmbeddedSession:class'
-              - name: Error
-                uid: 'office!OfficeExtension.Error:class'
-              - name: ErrorCodes
-                uid: 'office!OfficeExtension.ErrorCodes:class'
-              - name: EventHandlerResult
-                uid: 'office!OfficeExtension.EventHandlerResult:class'
-              - name: EventHandlers
-                uid: 'office!OfficeExtension.EventHandlers:class'
-              - name: EventInfo
-                uid: 'office!OfficeExtension.EventInfo:interface'
-              - name: LoadOption
-                uid: 'office!OfficeExtension.LoadOption:interface'
-              - name: RequestContextDebugInfo
-                uid: 'office!OfficeExtension.RequestContextDebugInfo:interface'
-              - name: RequestUrlAndHeaderInfo
-                uid: 'office!OfficeExtension.RequestUrlAndHeaderInfo:interface'
-              - name: RunOptions
-                uid: 'office!OfficeExtension.RunOptions:interface'
-              - name: TrackedObjects
-                uid: 'office!OfficeExtension.TrackedObjects:class'
-              - name: UpdateOptions
-                uid: 'office!OfficeExtension.UpdateOptions:interface'
+              - name: ActiveView
+                uid: 'office!Office.ActiveView:enum'
+              - name: AsyncResultStatus
+                uid: 'office!Office.AsyncResultStatus:enum'
+              - name: BindingType
+                uid: 'office!Office.BindingType:enum'
+              - name: CoercionType
+                uid: 'office!Office.CoercionType:enum'
+              - name: CustomXMLNodeType
+                uid: 'office!Office.CustomXMLNodeType:enum'
+              - name: DocumentMode
+                uid: 'office!Office.DocumentMode:enum'
+              - name: EventType
+                uid: 'office!Office.EventType:enum'
+              - name: FileType
+                uid: 'office!Office.FileType:enum'
+              - name: FilterType
+                uid: 'office!Office.FilterType:enum'
+              - name: GoToType
+                uid: 'office!Office.GoToType:enum'
+              - name: HostType
+                uid: 'office!Office.HostType:enum'
+              - name: Index
+                uid: 'office!Office.Index:enum'
+              - name: InitializationReason
+                uid: 'office!Office.InitializationReason:enum'
+              - name: PlatformType
+                uid: 'office!Office.PlatformType:enum'
+              - name: ProjectProjectFields
+                uid: 'office!Office.ProjectProjectFields:enum'
+              - name: ProjectResourceFields
+                uid: 'office!Office.ProjectResourceFields:enum'
+              - name: ProjectTaskFields
+                uid: 'office!Office.ProjectTaskFields:enum'
+              - name: ProjectViewTypes
+                uid: 'office!Office.ProjectViewTypes:enum'
+              - name: SelectionMode
+                uid: 'office!Office.SelectionMode:enum'
+              - name: Table
+                uid: 'office!Office.Table:enum'
+              - name: ValueFormat
+                uid: 'office!Office.ValueFormat:enum'
+          - name: AddBindingFromNamedItemOptions
+            uid: 'office!Office.AddBindingFromNamedItemOptions:interface'
+          - name: AddBindingFromPromptOptions
+            uid: 'office!Office.AddBindingFromPromptOptions:interface'
+          - name: AddBindingFromSelectionOptions
+            uid: 'office!Office.AddBindingFromSelectionOptions:interface'
+          - name: Event
+            uid: 'office!Office.AddinCommands.Event:interface'
+          - name: EventCompletedOptions
+            uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
+          - name: Source
+            uid: 'office!Office.AddinCommands.Source:interface'
+          - name: AsyncContextOptions
+            uid: 'office!Office.AsyncContextOptions:interface'
+          - name: AsyncResult
+            uid: 'office!Office.AsyncResult:interface'
+          - name: Auth
+            uid: 'office!Office.Auth:interface'
+          - name: AuthOptions
+            uid: 'office!Office.AuthOptions:interface'
+          - name: Binding
+            uid: 'office!Office.Binding:interface'
+          - name: BindingDataChangedEventArgs
+            uid: 'office!Office.BindingDataChangedEventArgs:interface'
+          - name: Bindings
+            uid: 'office!Office.Bindings:interface'
+          - name: BindingSelectionChangedEventArgs
+            uid: 'office!Office.BindingSelectionChangedEventArgs:interface'
+          - name: Context
+            uid: 'office!Office.Context:interface'
+          - name: ContextInformation
+            uid: 'office!Office.ContextInformation:interface'
+          - name: CustomXmlNode
+            uid: 'office!Office.CustomXmlNode:interface'
+          - name: CustomXmlPart
+            uid: 'office!Office.CustomXmlPart:interface'
+          - name: CustomXmlParts
+            uid: 'office!Office.CustomXmlParts:interface'
+          - name: CustomXmlPrefixMappings
+            uid: 'office!Office.CustomXmlPrefixMappings:interface'
+          - name: Dialog
+            uid: 'office!Office.Dialog:interface'
+          - name: DialogOptions
+            uid: 'office!Office.DialogOptions:interface'
+          - name: Document
+            uid: 'office!Office.Document:interface'
+          - name: DocumentSelectionChangedEventArgs
+            uid: 'office!Office.DocumentSelectionChangedEventArgs:interface'
+          - name: Error
+            uid: 'office!Office.Error:interface'
+          - name: File
+            uid: 'office!Office.File:interface'
+          - name: FileProperties
+            uid: 'office!Office.FileProperties:interface'
+          - name: GetBindingDataOptions
+            uid: 'office!Office.GetBindingDataOptions:interface'
+          - name: GetFileOptions
+            uid: 'office!Office.GetFileOptions:interface'
+          - name: GetSelectedDataOptions
+            uid: 'office!Office.GetSelectedDataOptions:interface'
+          - name: GoToByIdOptions
+            uid: 'office!Office.GoToByIdOptions:interface'
+          - name: IPromiseConstructor
+            uid: 'office!Office.IPromiseConstructor:interface'
+          - name: MatrixBinding
+            uid: 'office!Office.MatrixBinding:interface'
+          - name: NodeDeletedEventArgs
+            uid: 'office!Office.NodeDeletedEventArgs:interface'
+          - name: NodeInsertedEventArgs
+            uid: 'office!Office.NodeInsertedEventArgs:interface'
+          - name: NodeReplacedEventArgs
+            uid: 'office!Office.NodeReplacedEventArgs:interface'
+          - name: OfficeTheme
+            uid: 'office!Office.OfficeTheme:interface'
+          - name: RangeCoordinates
+            uid: 'office!Office.RangeCoordinates:interface'
+          - name: RangeFormatConfiguration
+            uid: 'office!Office.RangeFormatConfiguration:interface'
+          - name: RemoveHandlerOptions
+            uid: 'office!Office.RemoveHandlerOptions:interface'
+          - name: RequirementSetSupport
+            uid: 'office!Office.RequirementSetSupport:interface'
+          - name: SaveSettingsOptions
+            uid: 'office!Office.SaveSettingsOptions:interface'
+          - name: SetBindingDataOptions
+            uid: 'office!Office.SetBindingDataOptions:interface'
+          - name: SetSelectedDataOptions
+            uid: 'office!Office.SetSelectedDataOptions:interface'
+          - name: Settings
+            uid: 'office!Office.Settings:interface'
+          - name: SettingsChangedEventArgs
+            uid: 'office!Office.SettingsChangedEventArgs:interface'
+          - name: Slice
+            uid: 'office!Office.Slice:interface'
+          - name: TableBinding
+            uid: 'office!Office.TableBinding:interface'
+          - name: TableData
+            uid: 'office!Office.TableData:class'
+          - name: TextBinding
+            uid: 'office!Office.TextBinding:interface'
+          - name: UI
+            uid: 'office!Office.UI:interface'
+          - name: ClientObject
+            uid: 'office!OfficeExtension.ClientObject:class'
+          - name: ClientRequestContext
+            uid: 'office!OfficeExtension.ClientRequestContext:class'
+          - name: ClientResult
+            uid: 'office!OfficeExtension.ClientResult:class'
+          - name: DebugInfo
+            uid: 'office!OfficeExtension.DebugInfo:interface'
+          - name: EmbeddedOptions
+            uid: 'office!OfficeExtension.EmbeddedOptions:interface'
+          - name: EmbeddedSession
+            uid: 'office!OfficeExtension.EmbeddedSession:class'
+          - name: Error
+            uid: 'office!OfficeExtension.Error:class'
+          - name: ErrorCodes
+            uid: 'office!OfficeExtension.ErrorCodes:class'
+          - name: EventHandlerResult
+            uid: 'office!OfficeExtension.EventHandlerResult:class'
+          - name: EventHandlers
+            uid: 'office!OfficeExtension.EventHandlers:class'
+          - name: EventInfo
+            uid: 'office!OfficeExtension.EventInfo:interface'
+          - name: LoadOption
+            uid: 'office!OfficeExtension.LoadOption:interface'
+          - name: RequestContextDebugInfo
+            uid: 'office!OfficeExtension.RequestContextDebugInfo:interface'
+          - name: RequestUrlAndHeaderInfo
+            uid: 'office!OfficeExtension.RequestUrlAndHeaderInfo:interface'
+          - name: RunOptions
+            uid: 'office!OfficeExtension.RunOptions:interface'
+          - name: TrackedObjects
+            uid: 'office!OfficeExtension.TrackedObjects:class'
+          - name: UpdateOptions
+            uid: 'office!OfficeExtension.UpdateOptions:interface'

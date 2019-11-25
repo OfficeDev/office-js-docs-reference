@@ -61,6 +61,8 @@ items:
           - 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
-    name: Excel.Interfaces.ChartFontLoadOptions
+    name: ChartFontLoadOptions
+    fullName: Excel.Interfaces.ChartFontLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartLineFormatLoadOptions
+    name: ChartLineFormatLoadOptions
+    fullName: Excel.Interfaces.ChartLineFormatLoadOptions

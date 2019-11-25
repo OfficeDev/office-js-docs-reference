@@ -189,4 +189,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartPlotAreaFormatLoadOptions
+    name: ChartPlotAreaFormatLoadOptions
+    fullName: Excel.Interfaces.ChartPlotAreaFormatLoadOptions

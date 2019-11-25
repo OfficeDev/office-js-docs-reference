@@ -43,4 +43,5 @@ items:
           - any
 references:
   - uid: 'excel!Excel.Interfaces.ChartPointFormatData:interface'
-    name: Excel.Interfaces.ChartPointFormatData
+    name: ChartPointFormatData
+    fullName: Excel.Interfaces.ChartPointFormatData

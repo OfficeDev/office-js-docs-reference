@@ -58,4 +58,5 @@ items:
           - 'onenote!OneNote.Interfaces.PageLoadOptions:interface'
 references:
   - uid: 'onenote!OneNote.Interfaces.PageLoadOptions:interface'
-    name: OneNote.Interfaces.PageLoadOptions
+    name: PageLoadOptions
+    fullName: OneNote.Interfaces.PageLoadOptions

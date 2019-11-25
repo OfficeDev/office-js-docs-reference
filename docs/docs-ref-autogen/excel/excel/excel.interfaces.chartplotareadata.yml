@@ -171,7 +171,8 @@ items:
           - number
 references:
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatData:interface'
-    name: Excel.Interfaces.ChartPlotAreaFormatData
+    name: ChartPlotAreaFormatData
+    fullName: Excel.Interfaces.ChartPlotAreaFormatData
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaData#position~0:complex'
     name: Excel.ChartPlotAreaPosition | "Automatic" | "Custom"
     fullName: Excel.ChartPlotAreaPosition | "Automatic" | "Custom"

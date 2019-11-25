@@ -143,4 +143,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.PivotFieldLoadOptions:interface'
-    name: Excel.Interfaces.PivotFieldLoadOptions
+    name: PivotFieldLoadOptions
+    fullName: Excel.Interfaces.PivotFieldLoadOptions

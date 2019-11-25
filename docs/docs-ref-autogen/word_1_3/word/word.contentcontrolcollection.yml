@@ -16,6 +16,8 @@ items:
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.ContentControlCollection#context:member'
@@ -477,6 +479,7 @@ items:
                   contentControls.items[0].load(  'appearance,' +
                                                   'cannotDelete,' +
                                                   'cannotEdit,' +
+                                                  'color,' +
                                                   'id,' +
                                                   'placeHolderText,' +
                                                   'removeWhenEdited,' +
@@ -642,10 +645,13 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.ContentControl:class'
-    name: Word.ContentControl
+    name: ContentControl
+    fullName: Word.ContentControl
   - uid: 'word!Word.ContentControlCollection:class'
-    name: Word.ContentControlCollection
+    name: ContentControlCollection
+    fullName: Word.ContentControlCollection
   - uid: 'word!Word.ContentControlCollection#getByTypes~0:complex'
     name: 'Word.ContentControlType[]'
     fullName: 'Word.ContentControlType[]'
@@ -679,4 +685,5 @@ references:
   - uid: 'word!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'word!Word.Interfaces.ContentControlCollectionData:interface'
-    name: Word.Interfaces.ContentControlCollectionData
+    name: ContentControlCollectionData
+    fullName: Word.Interfaces.ContentControlCollectionData

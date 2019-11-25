@@ -211,5 +211,7 @@ items:
 references:
   - uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
     name: EventCompletedOptions
+    fullName: Office.AddinCommands.EventCompletedOptions
   - uid: 'office!Office.AddinCommands.Source:interface'
     name: Source
+    fullName: Office.AddinCommands.Source

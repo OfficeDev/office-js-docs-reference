@@ -43,6 +43,8 @@ items:
           - 'onenote!OneNote.Interfaces.TableUpdateData:interface'
 references:
   - uid: 'onenote!OneNote.Interfaces.ImageUpdateData:interface'
-    name: OneNote.Interfaces.ImageUpdateData
+    name: ImageUpdateData
+    fullName: OneNote.Interfaces.ImageUpdateData
   - uid: 'onenote!OneNote.Interfaces.TableUpdateData:interface'
-    name: OneNote.Interfaces.TableUpdateData
+    name: TableUpdateData
+    fullName: OneNote.Interfaces.TableUpdateData

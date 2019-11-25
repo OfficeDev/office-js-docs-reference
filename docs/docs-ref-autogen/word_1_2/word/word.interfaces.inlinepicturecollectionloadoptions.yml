@@ -162,6 +162,8 @@ items:
           - boolean
 references:
   - uid: 'word!Word.Interfaces.ParagraphLoadOptions:interface'
-    name: Word.Interfaces.ParagraphLoadOptions
+    name: ParagraphLoadOptions
+    fullName: Word.Interfaces.ParagraphLoadOptions
   - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
-    name: Word.Interfaces.ContentControlLoadOptions
+    name: ContentControlLoadOptions
+    fullName: Word.Interfaces.ContentControlLoadOptions

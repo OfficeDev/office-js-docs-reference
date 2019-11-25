@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Style#borders:member'
@@ -613,13 +615,17 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RangeBorderCollection:class'
-    name: Excel.RangeBorderCollection
+    name: RangeBorderCollection
+    fullName: Excel.RangeBorderCollection
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.RangeFill:class'
-    name: Excel.RangeFill
+    name: RangeFill
+    fullName: Excel.RangeFill
   - uid: 'excel!Excel.RangeFont:class'
-    name: Excel.RangeFont
+    name: RangeFont
+    fullName: Excel.RangeFont
   - uid: 'excel!Excel.Style#horizontalAlignment~0:complex'
     name: >-
       Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection"
@@ -634,9 +640,11 @@ references:
       - name: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
         fullName: ' | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed"'
   - uid: 'excel!Excel.Style:class'
-    name: Excel.Style
+    name: Style
+    fullName: Excel.Style
   - uid: 'excel!Excel.Interfaces.StyleLoadOptions:interface'
-    name: Excel.Interfaces.StyleLoadOptions
+    name: StyleLoadOptions
+    fullName: Excel.Interfaces.StyleLoadOptions
   - uid: 'excel!Excel.Style#readingOrder~0:complex'
     name: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
     fullName: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
@@ -647,11 +655,13 @@ references:
       - name: ' | "Context" | "LeftToRight" | "RightToLeft"'
         fullName: ' | "Context" | "LeftToRight" | "RightToLeft"'
   - uid: 'excel!Excel.Interfaces.StyleUpdateData:interface'
-    name: Interfaces.StyleUpdateData
+    name: StyleUpdateData
+    fullName: Excel.Interfaces.StyleUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.StyleData:interface'
-    name: Excel.Interfaces.StyleData
+    name: StyleData
+    fullName: Excel.Interfaces.StyleData
   - uid: 'excel!Excel.Style#verticalAlignment~0:complex'
     name: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
     fullName: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"

@@ -61,4 +61,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface'
-    name: Excel.Interfaces.ConditionalRangeFormatLoadOptions
+    name: ConditionalRangeFormatLoadOptions
+    fullName: Excel.Interfaces.ConditionalRangeFormatLoadOptions

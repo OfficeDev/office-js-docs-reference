@@ -228,8 +228,11 @@ items:
           - 'any[][]'
 references:
   - uid: 'excel!Excel.Interfaces.DataValidationUpdateData:interface'
-    name: Excel.Interfaces.DataValidationUpdateData
+    name: DataValidationUpdateData
+    fullName: Excel.Interfaces.DataValidationUpdateData
   - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData:interface'
-    name: Excel.Interfaces.RangeFormatUpdateData
+    name: RangeFormatUpdateData
+    fullName: Excel.Interfaces.RangeFormatUpdateData
   - uid: 'excel!Excel.RangeHyperlink:interface'
-    name: Excel.RangeHyperlink
+    name: RangeHyperlink
+    fullName: Excel.RangeHyperlink

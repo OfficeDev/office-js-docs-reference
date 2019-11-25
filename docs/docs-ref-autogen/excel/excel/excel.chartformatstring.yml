@@ -14,6 +14,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartFormatString#context:member'
@@ -194,15 +196,21 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartFont:class'
-    name: Excel.ChartFont
+    name: ChartFont
+    fullName: Excel.ChartFont
   - uid: 'excel!Excel.ChartFormatString:class'
-    name: Excel.ChartFormatString
+    name: ChartFormatString
+    fullName: Excel.ChartFormatString
   - uid: 'excel!Excel.Interfaces.ChartFormatStringLoadOptions:interface'
-    name: Excel.Interfaces.ChartFormatStringLoadOptions
+    name: ChartFormatStringLoadOptions
+    fullName: Excel.Interfaces.ChartFormatStringLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartFormatStringUpdateData:interface'
-    name: Interfaces.ChartFormatStringUpdateData
+    name: ChartFormatStringUpdateData
+    fullName: Excel.Interfaces.ChartFormatStringUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartFormatStringData:interface'
-    name: Excel.Interfaces.ChartFormatStringData
+    name: ChartFormatStringData
+    fullName: Excel.Interfaces.ChartFormatStringData

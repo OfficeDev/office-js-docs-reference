@@ -43,4 +43,5 @@ items:
           - 'onenote!OneNote.Interfaces.PageData:interface'
 references:
   - uid: 'onenote!OneNote.Interfaces.PageData:interface'
-    name: OneNote.Interfaces.PageData
+    name: PageData
+    fullName: OneNote.Interfaces.PageData

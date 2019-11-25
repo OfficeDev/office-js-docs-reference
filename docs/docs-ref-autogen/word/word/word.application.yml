@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.Application#context:member'
@@ -100,9 +102,12 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.DocumentCreated:class'
-    name: Word.DocumentCreated
+    name: DocumentCreated
+    fullName: Word.DocumentCreated
   - uid: 'word!Word.Application:class'
-    name: Word.Application
+    name: Application
+    fullName: Word.Application
   - uid: 'word!OfficeExtension.ClientRequestContext:class'
     name: OfficeExtension.ClientRequestContext

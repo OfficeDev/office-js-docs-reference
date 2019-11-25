@@ -141,9 +141,11 @@ items:
           - any
 references:
   - uid: 'excel!Excel.Interfaces.ChartDataLabelData:interface'
-    name: Excel.Interfaces.ChartDataLabelData
+    name: ChartDataLabelData
+    fullName: Excel.Interfaces.ChartDataLabelData
   - uid: 'excel!Excel.Interfaces.ChartPointFormatData:interface'
-    name: Excel.Interfaces.ChartPointFormatData
+    name: ChartPointFormatData
+    fullName: Excel.Interfaces.ChartPointFormatData
   - uid: 'excel!Excel.Interfaces.ChartPointData#markerStyle~0:complex'
     name: >-
       Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star" |

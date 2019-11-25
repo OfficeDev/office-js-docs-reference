@@ -45,6 +45,8 @@ items:
           - 'excel!Excel.ConditionalPresetCriteriaRule:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
-    name: Excel.Interfaces.ConditionalRangeFormatUpdateData
+    name: ConditionalRangeFormatUpdateData
+    fullName: Excel.Interfaces.ConditionalRangeFormatUpdateData
   - uid: 'excel!Excel.ConditionalPresetCriteriaRule:interface'
-    name: Excel.ConditionalPresetCriteriaRule
+    name: ConditionalPresetCriteriaRule
+    fullName: Excel.ConditionalPresetCriteriaRule

@@ -30,4 +30,5 @@ items:
           - 'excel!Excel.Binding:class'
 references:
   - uid: 'excel!Excel.Binding:class'
-    name: Excel.Binding
+    name: Binding
+    fullName: Excel.Binding

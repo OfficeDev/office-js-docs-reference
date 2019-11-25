@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartBinOptions#allowOverflow:member'
@@ -288,16 +290,21 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartBinOptions:class'
-    name: Excel.ChartBinOptions
+    name: ChartBinOptions
+    fullName: Excel.ChartBinOptions
   - uid: 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions:interface'
-    name: Excel.Interfaces.ChartBinOptionsLoadOptions
+    name: ChartBinOptionsLoadOptions
+    fullName: Excel.Interfaces.ChartBinOptionsLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData:interface'
-    name: Interfaces.ChartBinOptionsUpdateData
+    name: ChartBinOptionsUpdateData
+    fullName: Excel.Interfaces.ChartBinOptionsUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartBinOptionsData:interface'
-    name: Excel.Interfaces.ChartBinOptionsData
+    name: ChartBinOptionsData
+    fullName: Excel.Interfaces.ChartBinOptionsData
   - uid: 'excel!Excel.ChartBinOptions#type~0:complex'
     name: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount"
     fullName: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount"

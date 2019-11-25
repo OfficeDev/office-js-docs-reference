@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.TableCollection#context:member'
@@ -217,8 +219,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.Table:class'
-    name: Word.Table
+    name: Table
+    fullName: Word.Table
   - uid: 'word!Word.TableCollection#items~0:complex'
     name: 'Word.Table[]'
     fullName: 'Word.Table[]'
@@ -229,7 +233,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.TableCollection:class'
-    name: Word.TableCollection
+    name: TableCollection
+    fullName: Word.TableCollection
   - uid: 'word!Word.TableCollection#load~0:complex'
     name: Word.Interfaces.TableCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
     fullName: Word.Interfaces.TableCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
@@ -245,4 +250,5 @@ references:
   - uid: 'word!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'word!Word.Interfaces.TableCollectionData:interface'
-    name: Word.Interfaces.TableCollectionData
+    name: TableCollectionData
+    fullName: Word.Interfaces.TableCollectionData

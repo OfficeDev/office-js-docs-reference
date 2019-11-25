@@ -14,6 +14,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PivotTable#context:member'
@@ -243,15 +245,21 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.PivotTable:class'
-    name: Excel.PivotTable
+    name: PivotTable
+    fullName: Excel.PivotTable
   - uid: 'excel!Excel.Interfaces.PivotTableLoadOptions:interface'
-    name: Excel.Interfaces.PivotTableLoadOptions
+    name: PivotTableLoadOptions
+    fullName: Excel.Interfaces.PivotTableLoadOptions
   - uid: 'excel!Excel.Interfaces.PivotTableUpdateData:interface'
-    name: Interfaces.PivotTableUpdateData
+    name: PivotTableUpdateData
+    fullName: Excel.Interfaces.PivotTableUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.PivotTableData:interface'
-    name: Excel.Interfaces.PivotTableData
+    name: PivotTableData
+    fullName: Excel.Interfaces.PivotTableData
   - uid: 'excel!Excel.Worksheet:class'
-    name: Excel.Worksheet
+    name: Worksheet
+    fullName: Excel.Worksheet

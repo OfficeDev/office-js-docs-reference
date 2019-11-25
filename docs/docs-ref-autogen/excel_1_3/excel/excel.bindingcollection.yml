@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.BindingCollection#add:member(1)'
@@ -477,7 +479,8 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Binding:class'
-    name: Excel.Binding
+    name: Binding
+    fullName: Excel.Binding
   - uid: 'excel!Excel.BindingCollection#add~0:complex'
     name: Range | string
     fullName: Excel.Range | string
@@ -488,7 +491,8 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.BindingType:enum'
-    name: Excel.BindingType
+    name: BindingType
+    fullName: Excel.BindingType
   - uid: 'excel!Excel.BindingCollection#add~1:complex'
     name: Range | string
     fullName: Excel.Range | string
@@ -500,6 +504,7 @@ references:
         fullName: ' | string'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.BindingCollection#items~0:complex'
     name: 'Excel.Binding[]'
     fullName: 'Excel.Binding[]'
@@ -510,7 +515,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.BindingCollection:class'
-    name: Excel.BindingCollection
+    name: BindingCollection
+    fullName: Excel.BindingCollection
   - uid: 'excel!Excel.BindingCollection#load~0:complex'
     name: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -526,4 +532,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.BindingCollectionData:interface'
-    name: Excel.Interfaces.BindingCollectionData
+    name: BindingCollectionData
+    fullName: Excel.Interfaces.BindingCollectionData

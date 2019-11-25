@@ -46,4 +46,5 @@ items:
           - 'onenote!OneNote.Interfaces.NotebookCollectionLoadOptions:interface'
 references:
   - uid: 'onenote!OneNote.Interfaces.NotebookCollectionLoadOptions:interface'
-    name: OneNote.Interfaces.NotebookCollectionLoadOptions
+    name: NotebookCollectionLoadOptions
+    fullName: OneNote.Interfaces.NotebookCollectionLoadOptions

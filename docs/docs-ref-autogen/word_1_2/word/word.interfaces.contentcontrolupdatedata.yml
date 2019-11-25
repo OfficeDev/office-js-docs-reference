@@ -190,4 +190,5 @@ references:
       - name: ' | "BoundingBox" | "Tags" | "Hidden"'
         fullName: ' | "BoundingBox" | "Tags" | "Hidden"'
   - uid: 'word!Word.Interfaces.FontUpdateData:interface'
-    name: Word.Interfaces.FontUpdateData
+    name: FontUpdateData
+    fullName: Word.Interfaces.FontUpdateData

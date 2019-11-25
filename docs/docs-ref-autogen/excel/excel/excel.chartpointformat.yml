@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartPointFormat#border:member'
@@ -209,18 +211,25 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ChartBorder:class'
-    name: Excel.ChartBorder
+    name: ChartBorder
+    fullName: Excel.ChartBorder
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartFill:class'
-    name: Excel.ChartFill
+    name: ChartFill
+    fullName: Excel.ChartFill
   - uid: 'excel!Excel.ChartPointFormat:class'
-    name: Excel.ChartPointFormat
+    name: ChartPointFormat
+    fullName: Excel.ChartPointFormat
   - uid: 'excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartPointFormatLoadOptions
+    name: ChartPointFormatLoadOptions
+    fullName: Excel.Interfaces.ChartPointFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartPointFormatUpdateData:interface'
-    name: Interfaces.ChartPointFormatUpdateData
+    name: ChartPointFormatUpdateData
+    fullName: Excel.Interfaces.ChartPointFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartPointFormatData:interface'
-    name: Excel.Interfaces.ChartPointFormatData
+    name: ChartPointFormatData
+    fullName: Excel.Interfaces.ChartPointFormatData

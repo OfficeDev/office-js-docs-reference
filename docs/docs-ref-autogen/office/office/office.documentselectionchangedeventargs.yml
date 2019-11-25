@@ -42,5 +42,7 @@ items:
 references:
   - uid: 'office!Office.Document:interface'
     name: Document
+    fullName: Office.Document
   - uid: 'office!Office.EventType:enum'
     name: EventType
+    fullName: Office.EventType

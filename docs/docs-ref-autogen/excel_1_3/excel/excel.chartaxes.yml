@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartAxes#categoryAxis:member'
@@ -223,16 +225,22 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ChartAxis:class'
-    name: Excel.ChartAxis
+    name: ChartAxis
+    fullName: Excel.ChartAxis
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartAxes:class'
-    name: Excel.ChartAxes
+    name: ChartAxes
+    fullName: Excel.ChartAxes
   - uid: 'excel!Excel.Interfaces.ChartAxesLoadOptions:interface'
-    name: Excel.Interfaces.ChartAxesLoadOptions
+    name: ChartAxesLoadOptions
+    fullName: Excel.Interfaces.ChartAxesLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartAxesUpdateData:interface'
-    name: Interfaces.ChartAxesUpdateData
+    name: ChartAxesUpdateData
+    fullName: Excel.Interfaces.ChartAxesUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartAxesData:interface'
-    name: Excel.Interfaces.ChartAxesData
+    name: ChartAxesData
+    fullName: Excel.Interfaces.ChartAxesData

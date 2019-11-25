@@ -613,9 +613,11 @@ items:
             - 'office!Office.CustomXmlPart#removeHandlerAsync~1:complex'
 references:
   - uid: 'office!Office.EventType:enum'
-    name: Office.EventType
+    name: EventType
+    fullName: Office.EventType
   - uid: 'office!Office.AsyncContextOptions:interface'
-    name: Office.AsyncContextOptions
+    name: AsyncContextOptions
+    fullName: Office.AsyncContextOptions
   - uid: 'office!Office.CustomXmlPart#addHandlerAsync~0:complex'
     name: '(result: AsyncResult<void>) => void'
     fullName: '(result: Office.AsyncResult<void>) => void'
@@ -716,8 +718,10 @@ references:
         fullName: <string>) => void
   - uid: 'office!Office.CustomXmlPrefixMappings:interface'
     name: CustomXmlPrefixMappings
+    fullName: Office.CustomXmlPrefixMappings
   - uid: 'office!Office.RemoveHandlerOptions:interface'
     name: RemoveHandlerOptions
+    fullName: Office.RemoveHandlerOptions
   - uid: 'office!Office.CustomXmlPart#removeHandlerAsync~0:complex'
     name: '(result: AsyncResult<void>) => void'
     fullName: '(result: Office.AsyncResult<void>) => void'

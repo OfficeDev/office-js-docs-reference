@@ -27,4 +27,5 @@ items:
           - 'onenote!OneNote.Interfaces.PageUpdateData:interface'
 references:
   - uid: 'onenote!OneNote.Interfaces.PageUpdateData:interface'
-    name: OneNote.Interfaces.PageUpdateData
+    name: PageUpdateData
+    fullName: OneNote.Interfaces.PageUpdateData

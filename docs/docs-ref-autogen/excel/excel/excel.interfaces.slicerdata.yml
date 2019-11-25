@@ -253,4 +253,5 @@ references:
       - name: ' | "DataSourceOrder" | "Ascending" | "Descending"'
         fullName: ' | "DataSourceOrder" | "Ascending" | "Descending"'
   - uid: 'excel!Excel.Interfaces.WorksheetData:interface'
-    name: Excel.Interfaces.WorksheetData
+    name: WorksheetData
+    fullName: Excel.Interfaces.WorksheetData

@@ -127,6 +127,8 @@ items:
           - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.PivotLayoutLoadOptions:interface'
-    name: Excel.Interfaces.PivotLayoutLoadOptions
+    name: PivotLayoutLoadOptions
+    fullName: Excel.Interfaces.PivotLayoutLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
-    name: Excel.Interfaces.WorksheetLoadOptions
+    name: WorksheetLoadOptions
+    fullName: Excel.Interfaces.WorksheetLoadOptions

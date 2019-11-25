@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.ParagraphCollection#context:member'
@@ -292,8 +294,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.Paragraph:class'
-    name: Word.Paragraph
+    name: Paragraph
+    fullName: Word.Paragraph
   - uid: 'word!Word.ParagraphCollection#items~0:complex'
     name: 'Word.Paragraph[]'
     fullName: 'Word.Paragraph[]'
@@ -304,7 +308,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.ParagraphCollection:class'
-    name: Word.ParagraphCollection
+    name: ParagraphCollection
+    fullName: Word.ParagraphCollection
   - uid: 'word!Word.ParagraphCollection#load~0:complex'
     name: Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
     fullName: Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
@@ -320,4 +325,5 @@ references:
   - uid: 'word!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'word!Word.Interfaces.ParagraphCollectionData:interface'
-    name: Word.Interfaces.ParagraphCollectionData
+    name: ParagraphCollectionData
+    fullName: Word.Interfaces.ParagraphCollectionData

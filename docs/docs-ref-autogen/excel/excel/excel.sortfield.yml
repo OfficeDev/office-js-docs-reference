@@ -137,7 +137,8 @@ references:
       - name: ' | "Normal" | "TextAsNumber"'
         fullName: ' | "Normal" | "TextAsNumber"'
   - uid: 'excel!Excel.Icon:interface'
-    name: Excel.Icon
+    name: Icon
+    fullName: Excel.Icon
   - uid: 'excel!Excel.SortField#sortOn~0:complex'
     name: Excel.SortOn | "Value" | "CellColor" | "FontColor" | "Icon"
     fullName: Excel.SortOn | "Value" | "CellColor" | "FontColor" | "Icon"

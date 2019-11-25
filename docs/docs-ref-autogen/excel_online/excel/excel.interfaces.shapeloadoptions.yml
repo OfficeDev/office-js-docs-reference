@@ -449,18 +449,26 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ShapeFillLoadOptions:interface'
-    name: Excel.Interfaces.ShapeFillLoadOptions
+    name: ShapeFillLoadOptions
+    fullName: Excel.Interfaces.ShapeFillLoadOptions
   - uid: 'excel!Excel.Interfaces.GeometricShapeLoadOptions:interface'
-    name: Excel.Interfaces.GeometricShapeLoadOptions
+    name: GeometricShapeLoadOptions
+    fullName: Excel.Interfaces.GeometricShapeLoadOptions
   - uid: 'excel!Excel.Interfaces.ShapeGroupLoadOptions:interface'
-    name: Excel.Interfaces.ShapeGroupLoadOptions
+    name: ShapeGroupLoadOptions
+    fullName: Excel.Interfaces.ShapeGroupLoadOptions
   - uid: 'excel!Excel.Interfaces.ImageLoadOptions:interface'
-    name: Excel.Interfaces.ImageLoadOptions
+    name: ImageLoadOptions
+    fullName: Excel.Interfaces.ImageLoadOptions
   - uid: 'excel!Excel.Interfaces.LineLoadOptions:interface'
-    name: Excel.Interfaces.LineLoadOptions
+    name: LineLoadOptions
+    fullName: Excel.Interfaces.LineLoadOptions
   - uid: 'excel!Excel.Interfaces.ShapeLineFormatLoadOptions:interface'
-    name: Excel.Interfaces.ShapeLineFormatLoadOptions
+    name: ShapeLineFormatLoadOptions
+    fullName: Excel.Interfaces.ShapeLineFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
-    name: Excel.Interfaces.ShapeLoadOptions
+    name: ShapeLoadOptions
+    fullName: Excel.Interfaces.ShapeLoadOptions
   - uid: 'excel!Excel.Interfaces.TextFrameLoadOptions:interface'
-    name: Excel.Interfaces.TextFrameLoadOptions
+    name: TextFrameLoadOptions
+    fullName: Excel.Interfaces.TextFrameLoadOptions

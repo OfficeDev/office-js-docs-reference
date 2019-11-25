@@ -14,6 +14,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.WorkbookCreated#context:member'
@@ -107,7 +109,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.WorkbookCreated:class'
-    name: Excel.WorkbookCreated
+    name: WorkbookCreated
+    fullName: Excel.WorkbookCreated
   - uid: 'excel!Excel.Interfaces.WorkbookCreatedData:interface'
-    name: Excel.Interfaces.WorkbookCreatedData
+    name: WorkbookCreatedData
+    fullName: Excel.Interfaces.WorkbookCreatedData

@@ -15,6 +15,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.NamedItem#comment:member'
@@ -434,12 +436,16 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
+    name: Range
+    fullName: Excel.Range
   - uid: 'excel!Excel.NamedItem:class'
-    name: Excel.NamedItem
+    name: NamedItem
+    fullName: Excel.NamedItem
   - uid: 'excel!Excel.Interfaces.NamedItemLoadOptions:interface'
-    name: Excel.Interfaces.NamedItemLoadOptions
+    name: NamedItemLoadOptions
+    fullName: Excel.Interfaces.NamedItemLoadOptions
   - uid: 'excel!Excel.NamedItem#scope~0:complex'
     name: Excel.NamedItemScope | "Worksheet" | "Workbook"
     fullName: Excel.NamedItemScope | "Worksheet" | "Workbook"
@@ -450,11 +456,13 @@ references:
       - name: ' | "Worksheet" | "Workbook"'
         fullName: ' | "Worksheet" | "Workbook"'
   - uid: 'excel!Excel.Interfaces.NamedItemUpdateData:interface'
-    name: Interfaces.NamedItemUpdateData
+    name: NamedItemUpdateData
+    fullName: Excel.Interfaces.NamedItemUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.NamedItemData:interface'
-    name: Excel.Interfaces.NamedItemData
+    name: NamedItemData
+    fullName: Excel.Interfaces.NamedItemData
   - uid: 'excel!Excel.NamedItem#type~0:complex'
     name: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"
     fullName: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"
@@ -465,4 +473,5 @@ references:
       - name: ' | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"'
         fullName: ' | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"'
   - uid: 'excel!Excel.Worksheet:class'
-    name: Excel.Worksheet
+    name: Worksheet
+    fullName: Excel.Worksheet

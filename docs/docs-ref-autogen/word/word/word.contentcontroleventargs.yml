@@ -58,7 +58,8 @@ items:
           - 'word!Word.ContentControlEventArgs#eventType~0:complex'
 references:
   - uid: 'word!Word.ContentControl:class'
-    name: Word.ContentControl
+    name: ContentControl
+    fullName: Word.ContentControl
   - uid: 'word!Word.ContentControlEventArgs#eventType~0:complex'
     name: >-
       Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" |

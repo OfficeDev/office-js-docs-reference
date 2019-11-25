@@ -210,8 +210,11 @@ items:
           - boolean
 references:
   - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
-    name: Word.Interfaces.BodyLoadOptions
+    name: BodyLoadOptions
+    fullName: Word.Interfaces.BodyLoadOptions
   - uid: 'word!Word.Interfaces.TableRowLoadOptions:interface'
-    name: Word.Interfaces.TableRowLoadOptions
+    name: TableRowLoadOptions
+    fullName: Word.Interfaces.TableRowLoadOptions
   - uid: 'word!Word.Interfaces.TableLoadOptions:interface'
-    name: Word.Interfaces.TableLoadOptions
+    name: TableLoadOptions
+    fullName: Word.Interfaces.TableLoadOptions

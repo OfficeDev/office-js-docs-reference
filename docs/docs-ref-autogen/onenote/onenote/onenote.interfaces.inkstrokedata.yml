@@ -43,4 +43,5 @@ items:
           - string
 references:
   - uid: 'onenote!OneNote.Interfaces.FloatingInkData:interface'
-    name: OneNote.Interfaces.FloatingInkData
+    name: FloatingInkData
+    fullName: OneNote.Interfaces.FloatingInkData

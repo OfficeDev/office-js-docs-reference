@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Image#context:member'
@@ -190,6 +192,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Image#format~0:complex'
     name: Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"
     fullName: Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"
@@ -200,10 +203,14 @@ references:
       - name: ' | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"'
         fullName: ' | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"'
   - uid: 'excel!Excel.Image:class'
-    name: Excel.Image
+    name: Image
+    fullName: Excel.Image
   - uid: 'excel!Excel.Interfaces.ImageLoadOptions:interface'
-    name: Excel.Interfaces.ImageLoadOptions
+    name: ImageLoadOptions
+    fullName: Excel.Interfaces.ImageLoadOptions
   - uid: 'excel!Excel.Shape:class'
-    name: Excel.Shape
+    name: Shape
+    fullName: Excel.Shape
   - uid: 'excel!Excel.Interfaces.ImageData:interface'
-    name: Excel.Interfaces.ImageData
+    name: ImageData
+    fullName: Excel.Interfaces.ImageData

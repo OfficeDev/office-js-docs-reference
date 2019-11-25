@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TextConditionalFormat#context:member'
@@ -244,17 +246,24 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ConditionalRangeFormat:class'
-    name: Excel.ConditionalRangeFormat
+    name: ConditionalRangeFormat
+    fullName: Excel.ConditionalRangeFormat
   - uid: 'excel!Excel.TextConditionalFormat:class'
-    name: Excel.TextConditionalFormat
+    name: TextConditionalFormat
+    fullName: Excel.TextConditionalFormat
   - uid: 'excel!Excel.Interfaces.TextConditionalFormatLoadOptions:interface'
-    name: Excel.Interfaces.TextConditionalFormatLoadOptions
+    name: TextConditionalFormatLoadOptions
+    fullName: Excel.Interfaces.TextConditionalFormatLoadOptions
   - uid: 'excel!Excel.ConditionalTextComparisonRule:interface'
-    name: Excel.ConditionalTextComparisonRule
+    name: ConditionalTextComparisonRule
+    fullName: Excel.ConditionalTextComparisonRule
   - uid: 'excel!Excel.Interfaces.TextConditionalFormatUpdateData:interface'
-    name: Interfaces.TextConditionalFormatUpdateData
+    name: TextConditionalFormatUpdateData
+    fullName: Excel.Interfaces.TextConditionalFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.TextConditionalFormatData:interface'
-    name: Excel.Interfaces.TextConditionalFormatData
+    name: TextConditionalFormatData
+    fullName: Excel.Interfaces.TextConditionalFormatData

@@ -113,4 +113,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.FilterLoadOptions:interface'
-    name: Excel.Interfaces.FilterLoadOptions
+    name: FilterLoadOptions
+    fullName: Excel.Interfaces.FilterLoadOptions

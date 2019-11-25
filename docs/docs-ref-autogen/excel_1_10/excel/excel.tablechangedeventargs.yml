@@ -244,11 +244,14 @@ references:
       - name: ' | "Unknown" | "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" | "ColumnDeleted" | "CellInserted" | "CellDeleted"'
         fullName: ' | "Unknown" | "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" | "ColumnDeleted" | "CellInserted" | "CellDeleted"'
   - uid: 'excel!Excel.ChangedEventDetail:interface'
-    name: Excel.ChangedEventDetail
+    name: ChangedEventDetail
+    fullName: Excel.ChangedEventDetail
   - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
+    name: Range
+    fullName: Excel.Range
   - uid: 'excel!Excel.RequestContext:class'
-    name: Excel.RequestContext
+    name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.TableChangedEventArgs#source~0:complex'
     name: Excel.EventSource | "Local" | "Remote"
     fullName: Excel.EventSource | "Local" | "Remote"

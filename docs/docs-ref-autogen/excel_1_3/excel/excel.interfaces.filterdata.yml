@@ -27,4 +27,5 @@ items:
           - 'excel!Excel.FilterCriteria:interface'
 references:
   - uid: 'excel!Excel.FilterCriteria:interface'
-    name: Excel.FilterCriteria
+    name: FilterCriteria
+    fullName: Excel.FilterCriteria

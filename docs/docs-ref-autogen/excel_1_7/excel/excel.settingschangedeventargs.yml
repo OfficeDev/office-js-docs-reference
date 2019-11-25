@@ -30,4 +30,5 @@ items:
           - 'excel!Excel.SettingCollection:class'
 references:
   - uid: 'excel!Excel.SettingCollection:class'
-    name: Excel.SettingCollection
+    name: SettingCollection
+    fullName: Excel.SettingCollection

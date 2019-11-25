@@ -58,6 +58,8 @@ items:
           - 'visio!Visio.Interfaces.DocumentViewLoadOptions:interface'
 references:
   - uid: 'visio!Visio.Interfaces.ApplicationLoadOptions:interface'
-    name: Visio.Interfaces.ApplicationLoadOptions
+    name: ApplicationLoadOptions
+    fullName: Visio.Interfaces.ApplicationLoadOptions
   - uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions:interface'
-    name: Visio.Interfaces.DocumentViewLoadOptions
+    name: DocumentViewLoadOptions
+    fullName: Visio.Interfaces.DocumentViewLoadOptions

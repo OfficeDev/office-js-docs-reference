@@ -43,6 +43,8 @@ items:
           - 'visio!Visio.Interfaces.DocumentViewUpdateData:interface'
 references:
   - uid: 'visio!Visio.Interfaces.ApplicationUpdateData:interface'
-    name: Visio.Interfaces.ApplicationUpdateData
+    name: ApplicationUpdateData
+    fullName: Visio.Interfaces.ApplicationUpdateData
   - uid: 'visio!Visio.Interfaces.DocumentViewUpdateData:interface'
-    name: Visio.Interfaces.DocumentViewUpdateData
+    name: DocumentViewUpdateData
+    fullName: Visio.Interfaces.DocumentViewUpdateData

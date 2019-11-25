@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.WorksheetCollection#add:member(1)'
@@ -510,9 +512,11 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Worksheet:class'
-    name: Excel.Worksheet
+    name: Worksheet
+    fullName: Excel.Worksheet
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.WorksheetCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -532,7 +536,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.WorksheetCollection:class'
-    name: Excel.WorksheetCollection
+    name: WorksheetCollection
+    fullName: Excel.WorksheetCollection
   - uid: 'excel!Excel.WorksheetCollection#load~0:complex'
     name: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -604,4 +609,5 @@ references:
       - name: '>'
         fullName: '>'
   - uid: 'excel!Excel.Interfaces.WorksheetCollectionData:interface'
-    name: Excel.Interfaces.WorksheetCollectionData
+    name: WorksheetCollectionData
+    fullName: Excel.Interfaces.WorksheetCollectionData

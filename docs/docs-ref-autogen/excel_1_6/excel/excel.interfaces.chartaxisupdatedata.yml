@@ -147,8 +147,11 @@ items:
           - 'excel!Excel.Interfaces.ChartAxisTitleUpdateData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartAxisFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartAxisFormatUpdateData
+    name: ChartAxisFormatUpdateData
+    fullName: Excel.Interfaces.ChartAxisFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ChartGridlinesUpdateData:interface'
-    name: Excel.Interfaces.ChartGridlinesUpdateData
+    name: ChartGridlinesUpdateData
+    fullName: Excel.Interfaces.ChartGridlinesUpdateData
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleUpdateData:interface'
-    name: Excel.Interfaces.ChartAxisTitleUpdateData
+    name: ChartAxisTitleUpdateData
+    fullName: Excel.Interfaces.ChartAxisTitleUpdateData

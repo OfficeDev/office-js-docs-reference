@@ -27,4 +27,5 @@ items:
           - 'excel!Excel.Interfaces.ChartBorderData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartBorderData:interface'
-    name: Excel.Interfaces.ChartBorderData
+    name: ChartBorderData
+    fullName: Excel.Interfaces.ChartBorderData

@@ -248,4 +248,5 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.TableSortData:interface'
-    name: Excel.Interfaces.TableSortData
+    name: TableSortData
+    fullName: Excel.Interfaces.TableSortData

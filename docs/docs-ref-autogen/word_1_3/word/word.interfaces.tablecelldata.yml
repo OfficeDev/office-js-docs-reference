@@ -155,7 +155,8 @@ items:
           - number
 references:
   - uid: 'word!Word.Interfaces.BodyData:interface'
-    name: Word.Interfaces.BodyData
+    name: BodyData
+    fullName: Word.Interfaces.BodyData
   - uid: 'word!Word.Interfaces.TableCellData#horizontalAlignment~0:complex'
     name: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
     fullName: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"

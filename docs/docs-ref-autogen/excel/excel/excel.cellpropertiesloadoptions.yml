@@ -140,4 +140,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.CellPropertiesFormatLoadOptions:interface'
-    name: Excel.CellPropertiesFormatLoadOptions
+    name: CellPropertiesFormatLoadOptions
+    fullName: Excel.CellPropertiesFormatLoadOptions

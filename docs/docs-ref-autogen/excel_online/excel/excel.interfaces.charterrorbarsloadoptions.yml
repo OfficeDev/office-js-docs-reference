@@ -109,4 +109,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartErrorBarsFormatLoadOptions
+    name: ChartErrorBarsFormatLoadOptions
+    fullName: Excel.Interfaces.ChartErrorBarsFormatLoadOptions

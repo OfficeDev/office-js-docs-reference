@@ -14,6 +14,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TableCollection#add:member(1)'
@@ -361,7 +363,8 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Table:class'
-    name: Excel.Table
+    name: Table
+    fullName: Excel.Table
   - uid: 'excel!Excel.TableCollection#add~0:complex'
     name: Range | string
     fullName: Excel.Range | string
@@ -373,6 +376,7 @@ references:
         fullName: ' | string'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.TableCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -392,7 +396,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.TableCollection:class'
-    name: Excel.TableCollection
+    name: TableCollection
+    fullName: Excel.TableCollection
   - uid: 'excel!Excel.TableCollection#load~0:complex'
     name: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -408,4 +413,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.TableCollectionData:interface'
-    name: Excel.Interfaces.TableCollectionData
+    name: TableCollectionData
+    fullName: Excel.Interfaces.TableCollectionData

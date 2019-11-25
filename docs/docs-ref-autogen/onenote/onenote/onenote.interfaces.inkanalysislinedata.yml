@@ -59,7 +59,8 @@ items:
           - 'onenote!OneNote.Interfaces.InkAnalysisLineData#words~0:complex'
 references:
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface'
-    name: OneNote.Interfaces.InkAnalysisParagraphData
+    name: InkAnalysisParagraphData
+    fullName: OneNote.Interfaces.InkAnalysisParagraphData
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData#words~0:complex'
     name: 'OneNote.Interfaces.InkAnalysisWordData[]'
     fullName: 'OneNote.Interfaces.InkAnalysisWordData[]'

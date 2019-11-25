@@ -59,4 +59,5 @@ references:
       - name: ' | "Automatic" | "AutomaticExceptTables" | "Manual"'
         fullName: ' | "Automatic" | "AutomaticExceptTables" | "Manual"'
   - uid: 'excel!Excel.Interfaces.IterativeCalculationUpdateData:interface'
-    name: Excel.Interfaces.IterativeCalculationUpdateData
+    name: IterativeCalculationUpdateData
+    fullName: Excel.Interfaces.IterativeCalculationUpdateData

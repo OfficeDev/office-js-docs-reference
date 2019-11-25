@@ -58,4 +58,5 @@ items:
           - boolean
 references:
   - uid: 'onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface'
-    name: OneNote.Interfaces.FloatingInkLoadOptions
+    name: FloatingInkLoadOptions
+    fullName: OneNote.Interfaces.FloatingInkLoadOptions

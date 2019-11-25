@@ -15,6 +15,8 @@ items:
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.SettingCollection#add:member(1)'
@@ -465,9 +467,11 @@ references:
   - uid: 'word!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.Setting:class'
-    name: Word.Setting
+    name: Setting
+    fullName: Word.Setting
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.SettingCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -487,7 +491,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.SettingCollection:class'
-    name: Word.SettingCollection
+    name: SettingCollection
+    fullName: Word.SettingCollection
   - uid: 'word!Word.SettingCollection#load~0:complex'
     name: Word.Interfaces.SettingCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
     fullName: Word.Interfaces.SettingCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
@@ -503,4 +508,5 @@ references:
   - uid: 'word!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'word!Word.Interfaces.SettingCollectionData:interface'
-    name: Word.Interfaces.SettingCollectionData
+    name: SettingCollectionData
+    fullName: Word.Interfaces.SettingCollectionData

@@ -77,4 +77,5 @@ items:
           - 'excel!Excel.Interfaces.ChartAxisLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions:interface'
-    name: Excel.Interfaces.ChartAxisLoadOptions
+    name: ChartAxisLoadOptions
+    fullName: Excel.Interfaces.ChartAxisLoadOptions

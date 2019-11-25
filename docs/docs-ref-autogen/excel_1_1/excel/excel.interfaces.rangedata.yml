@@ -255,7 +255,8 @@ items:
           - 'excel!Excel.Interfaces.RangeData#valueTypes~0:complex'
 references:
   - uid: 'excel!Excel.Interfaces.RangeFormatData:interface'
-    name: Excel.Interfaces.RangeFormatData
+    name: RangeFormatData
+    fullName: Excel.Interfaces.RangeFormatData
   - uid: 'excel!Excel.Interfaces.RangeData#valueTypes~0:complex'
     name: 'Excel.RangeValueType[][]'
     fullName: 'Excel.RangeValueType[][]'

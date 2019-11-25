@@ -383,7 +383,8 @@ references:
       - name: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
         fullName: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
   - uid: 'word!Word.Interfaces.FontData:interface'
-    name: Word.Interfaces.FontData
+    name: FontData
+    fullName: Word.Interfaces.FontData
   - uid: 'word!Word.Interfaces.ParagraphData#inlinePictures~0:complex'
     name: 'Word.Interfaces.InlinePictureData[]'
     fullName: 'Word.Interfaces.InlinePictureData[]'
@@ -394,7 +395,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.Interfaces.ListItemData:interface'
-    name: Word.Interfaces.ListItemData
+    name: ListItemData
+    fullName: Word.Interfaces.ListItemData
   - uid: 'word!Word.Interfaces.ParagraphData#styleBuiltIn~0:complex'
     name: >-
       Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" |

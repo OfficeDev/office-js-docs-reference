@@ -14,6 +14,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ShapeLineFormat#color:member'
@@ -288,6 +290,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ShapeLineFormat#dashStyle~0:complex'
     name: >-
       Excel.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" |
@@ -302,11 +305,14 @@ references:
       - name: ' | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot"'
         fullName: ' | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot"'
   - uid: 'excel!Excel.ShapeLineFormat:class'
-    name: Excel.ShapeLineFormat
+    name: ShapeLineFormat
+    fullName: Excel.ShapeLineFormat
   - uid: 'excel!Excel.Interfaces.ShapeLineFormatLoadOptions:interface'
-    name: Excel.Interfaces.ShapeLineFormatLoadOptions
+    name: ShapeLineFormatLoadOptions
+    fullName: Excel.Interfaces.ShapeLineFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ShapeLineFormatUpdateData:interface'
-    name: Interfaces.ShapeLineFormatUpdateData
+    name: ShapeLineFormatUpdateData
+    fullName: Excel.Interfaces.ShapeLineFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.ShapeLineFormat#style~0:complex'
@@ -319,4 +325,5 @@ references:
       - name: ' | "Single" | "ThickBetweenThin" | "ThickThin" | "ThinThick" | "ThinThin"'
         fullName: ' | "Single" | "ThickBetweenThin" | "ThickThin" | "ThinThick" | "ThinThin"'
   - uid: 'excel!Excel.Interfaces.ShapeLineFormatData:interface'
-    name: Excel.Interfaces.ShapeLineFormatData
+    name: ShapeLineFormatData
+    fullName: Excel.Interfaces.ShapeLineFormatData

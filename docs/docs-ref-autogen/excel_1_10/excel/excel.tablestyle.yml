@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TableStyle#context:member'
@@ -242,13 +244,18 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.TableStyle:class'
-    name: Excel.TableStyle
+    name: TableStyle
+    fullName: Excel.TableStyle
   - uid: 'excel!Excel.Interfaces.TableStyleLoadOptions:interface'
-    name: Excel.Interfaces.TableStyleLoadOptions
+    name: TableStyleLoadOptions
+    fullName: Excel.Interfaces.TableStyleLoadOptions
   - uid: 'excel!Excel.Interfaces.TableStyleUpdateData:interface'
-    name: Interfaces.TableStyleUpdateData
+    name: TableStyleUpdateData
+    fullName: Excel.Interfaces.TableStyleUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.TableStyleData:interface'
-    name: Excel.Interfaces.TableStyleData
+    name: TableStyleData
+    fullName: Excel.Interfaces.TableStyleData

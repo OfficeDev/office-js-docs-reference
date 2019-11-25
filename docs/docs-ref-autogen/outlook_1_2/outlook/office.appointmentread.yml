@@ -17,6 +17,13 @@ items:
     extends:
       - 'outlook!Office.Appointment:interface'
       - 'outlook!Office.ItemRead:interface'
+    inheritance:
+      - type: 'outlook!Office.Appointment:interface'
+        inheritance:
+          - type: 'outlook!Office.Item:interface'
+      - type: 'outlook!Office.ItemRead:interface'
+        inheritance:
+          - type: 'outlook!Office.Item:interface'
     package: outlook!
     children:
       - 'outlook!Office.AppointmentRead#attachments:member'
@@ -1379,8 +1386,13 @@ items:
 references:
   - uid: 'outlook!Office.Appointment:interface'
     name: Appointment
+    fullName: Office.Appointment
   - uid: 'outlook!Office.ItemRead:interface'
     name: ItemRead
+    fullName: Office.ItemRead
+  - uid: 'outlook!Office.Item:interface'
+    name: Item
+    fullName: Office.Item
   - uid: 'outlook!Office.AppointmentRead#attachments~0:complex'
     name: 'AttachmentDetails[]'
     fullName: 'Office.AttachmentDetails[]'
@@ -1392,6 +1404,7 @@ references:
         fullName: '[]'
   - uid: 'outlook!Office.Body:interface'
     name: Body
+    fullName: Office.Body
   - uid: '!Date:interface'
     name: Date
   - uid: 'outlook!Office.AppointmentRead#displayReplyAllForm~0:complex'
@@ -1436,6 +1449,7 @@ references:
         fullName: <void>) => void
   - uid: 'outlook!Office.Entities:interface'
     name: Entities
+    fullName: Office.Entities
   - uid: 'outlook!Office.AppointmentRead#getEntitiesByType~0:complex'
     name: '(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[]'
     fullName: '(string | Office.Contact | Office.MeetingSuggestion | Office.PhoneNumber | Office.TaskSuggestion)[]'
@@ -1533,6 +1547,7 @@ references:
         fullName: '[]'
   - uid: 'outlook!Office.EmailAddressDetails:interface'
     name: EmailAddressDetails
+    fullName: Office.EmailAddressDetails
   - uid: 'outlook!Office.AppointmentRead#requiredAttendees~0:complex'
     name: 'EmailAddressDetails[]'
     fullName: 'Office.EmailAddressDetails[]'

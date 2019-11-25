@@ -74,6 +74,8 @@ items:
           - 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions:interface'
 references:
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface'
-    name: OneNote.Interfaces.InkAnalysisLoadOptions
+    name: InkAnalysisLoadOptions
+    fullName: OneNote.Interfaces.InkAnalysisLoadOptions
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions:interface'
-    name: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions
+    name: InkAnalysisLineCollectionLoadOptions
+    fullName: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions

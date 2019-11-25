@@ -157,6 +157,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartDataLabelLoadOptions:interface'
-    name: Excel.Interfaces.ChartDataLabelLoadOptions
+    name: ChartDataLabelLoadOptions
+    fullName: Excel.Interfaces.ChartDataLabelLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartPointFormatLoadOptions
+    name: ChartPointFormatLoadOptions
+    fullName: Excel.Interfaces.ChartPointFormatLoadOptions

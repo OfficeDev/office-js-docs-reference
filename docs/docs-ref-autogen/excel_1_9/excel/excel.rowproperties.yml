@@ -12,6 +12,10 @@ items:
     type: interface
     extends:
       - 'excel!Excel.SettableRowProperties:interface'
+    inheritance:
+      - type: 'excel!Excel.SettableRowProperties:interface'
+        inheritance:
+          - type: 'excel!Excel.SettableCellProperties:interface'
     package: excel!
     children:
       - 'excel!Excel.RowProperties#address:member'
@@ -65,3 +69,7 @@ items:
 references:
   - uid: 'excel!Excel.SettableRowProperties:interface'
     name: SettableRowProperties
+    fullName: Excel.SettableRowProperties
+  - uid: 'excel!Excel.SettableCellProperties:interface'
+    name: SettableCellProperties
+    fullName: Excel.SettableCellProperties

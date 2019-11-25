@@ -27,4 +27,5 @@ items:
           - 'visio!Visio.Highlight:interface'
 references:
   - uid: 'visio!Visio.Highlight:interface'
-    name: Visio.Highlight
+    name: Highlight
+    fullName: Visio.Highlight

@@ -122,9 +122,11 @@ items:
           - string
 references:
   - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
+    name: Range
+    fullName: Excel.Range
   - uid: 'excel!Excel.RequestContext:class'
-    name: Excel.RequestContext
+    name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.WorksheetFormatChangedEventArgs#source~0:complex'
     name: Excel.EventSource | "Local" | "Remote"
     fullName: Excel.EventSource | "Local" | "Remote"

@@ -15,6 +15,8 @@ items:
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.CustomXmlPart#context:member'
@@ -537,6 +539,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.CustomXmlPart#getXml~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -547,9 +550,11 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'word!Word.CustomXmlPart:class'
-    name: Word.CustomXmlPart
+    name: CustomXmlPart
+    fullName: Word.CustomXmlPart
   - uid: 'word!Word.Interfaces.CustomXmlPartLoadOptions:interface'
-    name: Word.Interfaces.CustomXmlPartLoadOptions
+    name: CustomXmlPartLoadOptions
+    fullName: Word.Interfaces.CustomXmlPartLoadOptions
   - uid: 'word!Word.CustomXmlPart#query~0:complex'
     name: 'OfficeExtension.ClientResult<string[]>'
     fullName: 'OfficeExtension.ClientResult<string[]>'
@@ -560,4 +565,5 @@ references:
       - name: '<string[]>'
         fullName: '<string[]>'
   - uid: 'word!Word.Interfaces.CustomXmlPartData:interface'
-    name: Word.Interfaces.CustomXmlPartData
+    name: CustomXmlPartData
+    fullName: Word.Interfaces.CustomXmlPartData

@@ -297,7 +297,8 @@ references:
       - name: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
         fullName: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
   - uid: 'word!Word.Interfaces.FontUpdateData:interface'
-    name: Word.Interfaces.FontUpdateData
+    name: FontUpdateData
+    fullName: Word.Interfaces.FontUpdateData
   - uid: 'word!Word.Interfaces.TableUpdateData#horizontalAlignment~0:complex'
     name: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
     fullName: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"

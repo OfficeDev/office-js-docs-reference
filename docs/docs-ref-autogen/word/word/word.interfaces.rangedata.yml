@@ -163,7 +163,8 @@ items:
           - string
 references:
   - uid: 'word!Word.Interfaces.FontData:interface'
-    name: Word.Interfaces.FontData
+    name: FontData
+    fullName: Word.Interfaces.FontData
   - uid: 'word!Word.Interfaces.RangeData#inlinePictures~0:complex'
     name: 'Word.Interfaces.InlinePictureData[]'
     fullName: 'Word.Interfaces.InlinePictureData[]'

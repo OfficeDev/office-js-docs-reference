@@ -59,4 +59,5 @@ items:
           - 'excel!Excel.Interfaces.ChartAxisData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartAxisData:interface'
-    name: Excel.Interfaces.ChartAxisData
+    name: ChartAxisData
+    fullName: Excel.Interfaces.ChartAxisData

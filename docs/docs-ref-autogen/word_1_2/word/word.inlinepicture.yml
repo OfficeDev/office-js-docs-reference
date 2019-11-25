@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.InlinePicture#altTextDescription:member'
@@ -840,6 +842,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.InlinePicture#getBase64ImageSrc~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -850,24 +853,34 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'word!Word.BreakType:enum'
-    name: Word.BreakType
+    name: BreakType
+    fullName: Word.BreakType
   - uid: 'word!Word.InsertLocation:enum'
-    name: Word.InsertLocation
+    name: InsertLocation
+    fullName: Word.InsertLocation
   - uid: 'word!Word.ContentControl:class'
-    name: Word.ContentControl
+    name: ContentControl
+    fullName: Word.ContentControl
   - uid: 'word!Word.Range:class'
-    name: Word.Range
+    name: Range
+    fullName: Word.Range
   - uid: 'word!Word.InlinePicture:class'
-    name: Word.InlinePicture
+    name: InlinePicture
+    fullName: Word.InlinePicture
   - uid: 'word!Word.Paragraph:class'
-    name: Word.Paragraph
+    name: Paragraph
+    fullName: Word.Paragraph
   - uid: 'word!Word.Interfaces.InlinePictureLoadOptions:interface'
-    name: Word.Interfaces.InlinePictureLoadOptions
+    name: InlinePictureLoadOptions
+    fullName: Word.Interfaces.InlinePictureLoadOptions
   - uid: 'word!Word.SelectionMode:enum'
-    name: Word.SelectionMode
+    name: SelectionMode
+    fullName: Word.SelectionMode
   - uid: 'word!Word.Interfaces.InlinePictureUpdateData:interface'
-    name: Interfaces.InlinePictureUpdateData
+    name: InlinePictureUpdateData
+    fullName: Word.Interfaces.InlinePictureUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.InlinePictureData:interface'
-    name: Word.Interfaces.InlinePictureData
+    name: InlinePictureData
+    fullName: Word.Interfaces.InlinePictureData

@@ -510,16 +510,23 @@ items:
           - boolean
 references:
   - uid: 'word!Word.Interfaces.FontLoadOptions:interface'
-    name: Word.Interfaces.FontLoadOptions
+    name: FontLoadOptions
+    fullName: Word.Interfaces.FontLoadOptions
   - uid: 'word!Word.Interfaces.ListLoadOptions:interface'
-    name: Word.Interfaces.ListLoadOptions
+    name: ListLoadOptions
+    fullName: Word.Interfaces.ListLoadOptions
   - uid: 'word!Word.Interfaces.ListItemLoadOptions:interface'
-    name: Word.Interfaces.ListItemLoadOptions
+    name: ListItemLoadOptions
+    fullName: Word.Interfaces.ListItemLoadOptions
   - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
-    name: Word.Interfaces.BodyLoadOptions
+    name: BodyLoadOptions
+    fullName: Word.Interfaces.BodyLoadOptions
   - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
-    name: Word.Interfaces.ContentControlLoadOptions
+    name: ContentControlLoadOptions
+    fullName: Word.Interfaces.ContentControlLoadOptions
   - uid: 'word!Word.Interfaces.TableLoadOptions:interface'
-    name: Word.Interfaces.TableLoadOptions
+    name: TableLoadOptions
+    fullName: Word.Interfaces.TableLoadOptions
   - uid: 'word!Word.Interfaces.TableCellLoadOptions:interface'
-    name: Word.Interfaces.TableCellLoadOptions
+    name: TableCellLoadOptions
+    fullName: Word.Interfaces.TableCellLoadOptions

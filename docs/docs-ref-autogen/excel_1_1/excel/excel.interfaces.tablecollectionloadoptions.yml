@@ -153,6 +153,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
-    name: Excel.Interfaces.TableColumnCollectionLoadOptions
+    name: TableColumnCollectionLoadOptions
+    fullName: Excel.Interfaces.TableColumnCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface'
-    name: Excel.Interfaces.TableRowCollectionLoadOptions
+    name: TableRowCollectionLoadOptions
+    fullName: Excel.Interfaces.TableRowCollectionLoadOptions

@@ -204,6 +204,8 @@ items:
           - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions:interface'
-    name: Excel.Interfaces.NamedItemArrayValuesLoadOptions
+    name: NamedItemArrayValuesLoadOptions
+    fullName: Excel.Interfaces.NamedItemArrayValuesLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
-    name: Excel.Interfaces.WorksheetLoadOptions
+    name: WorksheetLoadOptions
+    fullName: Excel.Interfaces.WorksheetLoadOptions

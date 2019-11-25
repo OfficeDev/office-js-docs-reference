@@ -93,4 +93,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartTitleFormatLoadOptions
+    name: ChartTitleFormatLoadOptions
+    fullName: Excel.Interfaces.ChartTitleFormatLoadOptions

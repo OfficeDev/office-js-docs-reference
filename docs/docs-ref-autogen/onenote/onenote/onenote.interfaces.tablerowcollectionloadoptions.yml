@@ -106,6 +106,8 @@ items:
           - boolean
 references:
   - uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions:interface'
-    name: OneNote.Interfaces.TableCellCollectionLoadOptions
+    name: TableCellCollectionLoadOptions
+    fullName: OneNote.Interfaces.TableCellCollectionLoadOptions
   - uid: 'onenote!OneNote.Interfaces.TableLoadOptions:interface'
-    name: OneNote.Interfaces.TableLoadOptions
+    name: TableLoadOptions
+    fullName: OneNote.Interfaces.TableLoadOptions

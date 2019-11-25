@@ -27,4 +27,5 @@ items:
           - 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
-    name: Excel.Interfaces.DocumentPropertiesUpdateData
+    name: DocumentPropertiesUpdateData
+    fullName: Excel.Interfaces.DocumentPropertiesUpdateData

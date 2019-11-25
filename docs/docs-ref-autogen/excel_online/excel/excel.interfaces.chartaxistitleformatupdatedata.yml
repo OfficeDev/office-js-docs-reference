@@ -45,6 +45,8 @@ items:
           - 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartBorderUpdateData:interface'
-    name: Excel.Interfaces.ChartBorderUpdateData
+    name: ChartBorderUpdateData
+    fullName: Excel.Interfaces.ChartBorderUpdateData
   - uid: 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
-    name: Excel.Interfaces.ChartFontUpdateData
+    name: ChartFontUpdateData
+    fullName: Excel.Interfaces.ChartFontUpdateData

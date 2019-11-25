@@ -74,6 +74,8 @@ items:
           - 'onenote!OneNote.Interfaces.PageContentLoadOptions:interface'
 references:
   - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions:interface'
-    name: OneNote.Interfaces.InkStrokeCollectionLoadOptions
+    name: InkStrokeCollectionLoadOptions
+    fullName: OneNote.Interfaces.InkStrokeCollectionLoadOptions
   - uid: 'onenote!OneNote.Interfaces.PageContentLoadOptions:interface'
-    name: OneNote.Interfaces.PageContentLoadOptions
+    name: PageContentLoadOptions
+    fullName: OneNote.Interfaces.PageContentLoadOptions

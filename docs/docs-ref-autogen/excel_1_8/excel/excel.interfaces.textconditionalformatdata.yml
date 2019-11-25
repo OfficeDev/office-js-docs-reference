@@ -45,6 +45,8 @@ items:
           - 'excel!Excel.ConditionalTextComparisonRule:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
-    name: Excel.Interfaces.ConditionalRangeFormatData
+    name: ConditionalRangeFormatData
+    fullName: Excel.Interfaces.ConditionalRangeFormatData
   - uid: 'excel!Excel.ConditionalTextComparisonRule:interface'
-    name: Excel.ConditionalTextComparisonRule
+    name: ConditionalTextComparisonRule
+    fullName: Excel.ConditionalTextComparisonRule

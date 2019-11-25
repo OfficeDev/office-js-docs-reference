@@ -252,10 +252,14 @@ items:
           - boolean
 references:
   - uid: 'word!Word.Interfaces.ParagraphLoadOptions:interface'
-    name: Word.Interfaces.ParagraphLoadOptions
+    name: ParagraphLoadOptions
+    fullName: Word.Interfaces.ParagraphLoadOptions
   - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
-    name: Word.Interfaces.ContentControlLoadOptions
+    name: ContentControlLoadOptions
+    fullName: Word.Interfaces.ContentControlLoadOptions
   - uid: 'word!Word.Interfaces.TableLoadOptions:interface'
-    name: Word.Interfaces.TableLoadOptions
+    name: TableLoadOptions
+    fullName: Word.Interfaces.TableLoadOptions
   - uid: 'word!Word.Interfaces.TableCellLoadOptions:interface'
-    name: Word.Interfaces.TableCellLoadOptions
+    name: TableCellLoadOptions
+    fullName: Word.Interfaces.TableCellLoadOptions

@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.InlinePictureCollection#context:member'
@@ -217,8 +219,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.InlinePicture:class'
-    name: Word.InlinePicture
+    name: InlinePicture
+    fullName: Word.InlinePicture
   - uid: 'word!Word.InlinePictureCollection#items~0:complex'
     name: 'Word.InlinePicture[]'
     fullName: 'Word.InlinePicture[]'
@@ -229,7 +233,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.InlinePictureCollection:class'
-    name: Word.InlinePictureCollection
+    name: InlinePictureCollection
+    fullName: Word.InlinePictureCollection
   - uid: 'word!Word.InlinePictureCollection#load~0:complex'
     name: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
     fullName: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
@@ -245,4 +250,5 @@ references:
   - uid: 'word!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'word!Word.Interfaces.InlinePictureCollectionData:interface'
-    name: Word.Interfaces.InlinePictureCollectionData
+    name: InlinePictureCollectionData
+    fullName: Word.Interfaces.InlinePictureCollectionData

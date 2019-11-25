@@ -320,18 +320,26 @@ items:
           - 'excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatUpdateData:interface'
-    name: Excel.Interfaces.CellValueConditionalFormatUpdateData
+    name: CellValueConditionalFormatUpdateData
+    fullName: Excel.Interfaces.CellValueConditionalFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData:interface'
-    name: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
+    name: ColorScaleConditionalFormatUpdateData
+    fullName: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
   - uid: 'excel!Excel.Interfaces.CustomConditionalFormatUpdateData:interface'
-    name: Excel.Interfaces.CustomConditionalFormatUpdateData
+    name: CustomConditionalFormatUpdateData
+    fullName: Excel.Interfaces.CustomConditionalFormatUpdateData
   - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData:interface'
-    name: Excel.Interfaces.DataBarConditionalFormatUpdateData
+    name: DataBarConditionalFormatUpdateData
+    fullName: Excel.Interfaces.DataBarConditionalFormatUpdateData
   - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData:interface'
-    name: Excel.Interfaces.IconSetConditionalFormatUpdateData
+    name: IconSetConditionalFormatUpdateData
+    fullName: Excel.Interfaces.IconSetConditionalFormatUpdateData
   - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface'
-    name: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+    name: PresetCriteriaConditionalFormatUpdateData
+    fullName: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
   - uid: 'excel!Excel.Interfaces.TextConditionalFormatUpdateData:interface'
-    name: Excel.Interfaces.TextConditionalFormatUpdateData
+    name: TextConditionalFormatUpdateData
+    fullName: Excel.Interfaces.TextConditionalFormatUpdateData
   - uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData:interface'
-    name: Excel.Interfaces.TopBottomConditionalFormatUpdateData
+    name: TopBottomConditionalFormatUpdateData
+    fullName: Excel.Interfaces.TopBottomConditionalFormatUpdateData

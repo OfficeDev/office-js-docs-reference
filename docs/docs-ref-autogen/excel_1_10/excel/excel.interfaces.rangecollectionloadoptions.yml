@@ -553,8 +553,11 @@ items:
           - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions:interface'
-    name: Excel.Interfaces.DataValidationLoadOptions
+    name: DataValidationLoadOptions
+    fullName: Excel.Interfaces.DataValidationLoadOptions
   - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions:interface'
-    name: Excel.Interfaces.RangeFormatLoadOptions
+    name: RangeFormatLoadOptions
+    fullName: Excel.Interfaces.RangeFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
-    name: Excel.Interfaces.WorksheetLoadOptions
+    name: WorksheetLoadOptions
+    fullName: Excel.Interfaces.WorksheetLoadOptions

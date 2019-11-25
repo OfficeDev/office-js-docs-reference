@@ -17,6 +17,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Range#address:member'
@@ -1755,15 +1757,20 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ClearApplyTo:enum'
-    name: Excel.ClearApplyTo
+    name: ClearApplyTo
+    fullName: Excel.ClearApplyTo
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.DeleteShiftDirection:enum'
-    name: Excel.DeleteShiftDirection
+    name: DeleteShiftDirection
+    fullName: Excel.DeleteShiftDirection
   - uid: 'excel!Excel.RangeFormat:class'
-    name: Excel.RangeFormat
+    name: RangeFormat
+    fullName: Excel.RangeFormat
   - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
+    name: Range
+    fullName: Excel.Range
   - uid: 'excel!Excel.Range#getBoundingRect~0:complex'
     name: Range | string
     fullName: Excel.Range | string
@@ -1783,19 +1790,25 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.RangeView:class'
-    name: Excel.RangeView
+    name: RangeView
+    fullName: Excel.RangeView
   - uid: 'excel!Excel.InsertShiftDirection:enum'
-    name: Excel.InsertShiftDirection
+    name: InsertShiftDirection
+    fullName: Excel.InsertShiftDirection
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions:interface'
-    name: Excel.Interfaces.RangeLoadOptions
+    name: RangeLoadOptions
+    fullName: Excel.Interfaces.RangeLoadOptions
   - uid: 'excel!Excel.Interfaces.RangeUpdateData:interface'
-    name: Interfaces.RangeUpdateData
+    name: RangeUpdateData
+    fullName: Excel.Interfaces.RangeUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.RangeSort:class'
-    name: Excel.RangeSort
+    name: RangeSort
+    fullName: Excel.RangeSort
   - uid: 'excel!Excel.Interfaces.RangeData:interface'
-    name: Excel.Interfaces.RangeData
+    name: RangeData
+    fullName: Excel.Interfaces.RangeData
   - uid: 'excel!Excel.Range#valueTypes~0:complex'
     name: 'Excel.RangeValueType[][]'
     fullName: 'Excel.RangeValueType[][]'
@@ -1806,4 +1819,5 @@ references:
       - name: '[][]'
         fullName: '[][]'
   - uid: 'excel!Excel.Worksheet:class'
-    name: Excel.Worksheet
+    name: Worksheet
+    fullName: Excel.Worksheet

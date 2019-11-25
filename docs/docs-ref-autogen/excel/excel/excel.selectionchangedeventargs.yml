@@ -30,4 +30,5 @@ items:
           - 'excel!Excel.Workbook:class'
 references:
   - uid: 'excel!Excel.Workbook:class'
-    name: Excel.Workbook
+    name: Workbook
+    fullName: Excel.Workbook

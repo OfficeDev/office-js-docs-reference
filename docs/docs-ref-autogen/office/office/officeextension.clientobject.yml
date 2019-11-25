@@ -43,3 +43,4 @@ items:
 references:
   - uid: 'office!OfficeExtension.ClientRequestContext:class'
     name: ClientRequestContext
+    fullName: OfficeExtension.ClientRequestContext

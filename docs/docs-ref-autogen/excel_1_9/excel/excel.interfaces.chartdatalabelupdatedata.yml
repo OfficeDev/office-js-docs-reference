@@ -333,7 +333,8 @@ items:
           - 'excel!Excel.Interfaces.ChartDataLabelUpdateData#verticalAlignment~0:complex'
 references:
   - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartDataLabelFormatUpdateData
+    name: ChartDataLabelFormatUpdateData
+    fullName: Excel.Interfaces.ChartDataLabelFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ChartDataLabelUpdateData#horizontalAlignment~0:complex'
     name: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
     fullName: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"

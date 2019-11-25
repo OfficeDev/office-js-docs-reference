@@ -15,6 +15,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.NumberFormatInfo#context:member'
@@ -173,9 +175,13 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.NumberFormatInfo:class'
-    name: Excel.NumberFormatInfo
+    name: NumberFormatInfo
+    fullName: Excel.NumberFormatInfo
   - uid: 'excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface'
-    name: Excel.Interfaces.NumberFormatInfoLoadOptions
+    name: NumberFormatInfoLoadOptions
+    fullName: Excel.Interfaces.NumberFormatInfoLoadOptions
   - uid: 'excel!Excel.Interfaces.NumberFormatInfoData:interface'
-    name: Excel.Interfaces.NumberFormatInfoData
+    name: NumberFormatInfoData
+    fullName: Excel.Interfaces.NumberFormatInfoData

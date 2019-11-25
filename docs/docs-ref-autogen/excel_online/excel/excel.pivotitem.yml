@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PivotItem#context:member'
@@ -240,13 +242,18 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.PivotItem:class'
-    name: Excel.PivotItem
+    name: PivotItem
+    fullName: Excel.PivotItem
   - uid: 'excel!Excel.Interfaces.PivotItemLoadOptions:interface'
-    name: Excel.Interfaces.PivotItemLoadOptions
+    name: PivotItemLoadOptions
+    fullName: Excel.Interfaces.PivotItemLoadOptions
   - uid: 'excel!Excel.Interfaces.PivotItemUpdateData:interface'
-    name: Interfaces.PivotItemUpdateData
+    name: PivotItemUpdateData
+    fullName: Excel.Interfaces.PivotItemUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.PivotItemData:interface'
-    name: Excel.Interfaces.PivotItemData
+    name: PivotItemData
+    fullName: Excel.Interfaces.PivotItemData

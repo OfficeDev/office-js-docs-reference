@@ -347,7 +347,8 @@ items:
           - number
 references:
   - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatData:interface'
-    name: Excel.Interfaces.ChartDataLabelFormatData
+    name: ChartDataLabelFormatData
+    fullName: Excel.Interfaces.ChartDataLabelFormatData
   - uid: 'excel!Excel.Interfaces.ChartDataLabelData#horizontalAlignment~0:complex'
     name: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
     fullName: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"

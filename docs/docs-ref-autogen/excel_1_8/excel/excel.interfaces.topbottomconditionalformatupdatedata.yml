@@ -45,6 +45,8 @@ items:
           - 'excel!Excel.ConditionalTopBottomRule:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
-    name: Excel.Interfaces.ConditionalRangeFormatUpdateData
+    name: ConditionalRangeFormatUpdateData
+    fullName: Excel.Interfaces.ConditionalRangeFormatUpdateData
   - uid: 'excel!Excel.ConditionalTopBottomRule:interface'
-    name: Excel.ConditionalTopBottomRule
+    name: ConditionalTopBottomRule
+    fullName: Excel.ConditionalTopBottomRule

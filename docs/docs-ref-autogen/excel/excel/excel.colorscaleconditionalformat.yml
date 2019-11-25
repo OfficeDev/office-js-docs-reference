@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ColorScaleConditionalFormat#context:member'
@@ -233,15 +235,21 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ConditionalColorScaleCriteria:interface'
-    name: Excel.ConditionalColorScaleCriteria
+    name: ConditionalColorScaleCriteria
+    fullName: Excel.ConditionalColorScaleCriteria
   - uid: 'excel!Excel.ColorScaleConditionalFormat:class'
-    name: Excel.ColorScaleConditionalFormat
+    name: ColorScaleConditionalFormat
+    fullName: Excel.ColorScaleConditionalFormat
   - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions:interface'
-    name: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
+    name: ColorScaleConditionalFormatLoadOptions
+    fullName: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData:interface'
-    name: Interfaces.ColorScaleConditionalFormatUpdateData
+    name: ColorScaleConditionalFormatUpdateData
+    fullName: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatData:interface'
-    name: Excel.Interfaces.ColorScaleConditionalFormatData
+    name: ColorScaleConditionalFormatData
+    fullName: Excel.Interfaces.ColorScaleConditionalFormatData

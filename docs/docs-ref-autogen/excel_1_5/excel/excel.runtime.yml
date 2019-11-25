@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Runtime#context:member'
@@ -176,13 +178,18 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Runtime:class'
-    name: Excel.Runtime
+    name: Runtime
+    fullName: Excel.Runtime
   - uid: 'excel!Excel.Interfaces.RuntimeLoadOptions:interface'
-    name: Excel.Interfaces.RuntimeLoadOptions
+    name: RuntimeLoadOptions
+    fullName: Excel.Interfaces.RuntimeLoadOptions
   - uid: 'excel!Excel.Interfaces.RuntimeUpdateData:interface'
-    name: Interfaces.RuntimeUpdateData
+    name: RuntimeUpdateData
+    fullName: Excel.Interfaces.RuntimeUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.RuntimeData:interface'
-    name: Excel.Interfaces.RuntimeData
+    name: RuntimeData
+    fullName: Excel.Interfaces.RuntimeData

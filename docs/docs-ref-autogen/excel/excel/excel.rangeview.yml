@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.RangeView#cellAddresses:member'
@@ -391,20 +393,27 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
+    name: Range
+    fullName: Excel.Range
   - uid: 'excel!Excel.RangeView:class'
-    name: Excel.RangeView
+    name: RangeView
+    fullName: Excel.RangeView
   - uid: 'excel!Excel.Interfaces.RangeViewLoadOptions:interface'
-    name: Excel.Interfaces.RangeViewLoadOptions
+    name: RangeViewLoadOptions
+    fullName: Excel.Interfaces.RangeViewLoadOptions
   - uid: 'excel!Excel.RangeViewCollection:class'
-    name: Excel.RangeViewCollection
+    name: RangeViewCollection
+    fullName: Excel.RangeViewCollection
   - uid: 'excel!Excel.Interfaces.RangeViewUpdateData:interface'
-    name: Interfaces.RangeViewUpdateData
+    name: RangeViewUpdateData
+    fullName: Excel.Interfaces.RangeViewUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.RangeViewData:interface'
-    name: Excel.Interfaces.RangeViewData
+    name: RangeViewData
+    fullName: Excel.Interfaces.RangeViewData
   - uid: 'excel!Excel.RangeView#valueTypes~0:complex'
     name: 'Excel.RangeValueType[][]'
     fullName: 'Excel.RangeValueType[][]'

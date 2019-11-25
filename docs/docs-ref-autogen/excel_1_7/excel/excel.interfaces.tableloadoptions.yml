@@ -266,10 +266,14 @@ items:
           - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
-    name: Excel.Interfaces.TableColumnCollectionLoadOptions
+    name: TableColumnCollectionLoadOptions
+    fullName: Excel.Interfaces.TableColumnCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface'
-    name: Excel.Interfaces.TableRowCollectionLoadOptions
+    name: TableRowCollectionLoadOptions
+    fullName: Excel.Interfaces.TableRowCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
-    name: Excel.Interfaces.TableSortLoadOptions
+    name: TableSortLoadOptions
+    fullName: Excel.Interfaces.TableSortLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
-    name: Excel.Interfaces.WorksheetLoadOptions
+    name: WorksheetLoadOptions
+    fullName: Excel.Interfaces.WorksheetLoadOptions

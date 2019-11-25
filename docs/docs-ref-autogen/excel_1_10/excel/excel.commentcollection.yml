@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.CommentCollection#add:member(1)'
@@ -337,7 +339,8 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Comment:class'
-    name: Excel.Comment
+    name: Comment
+    fullName: Excel.Comment
   - uid: 'excel!Excel.CommentCollection#add~0:complex'
     name: Range | string
     fullName: Excel.Range | string
@@ -357,7 +360,8 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.ContentType:enum'
-    name: Excel.ContentType
+    name: ContentType
+    fullName: Excel.ContentType
   - uid: 'excel!Excel.CommentCollection#add~2:complex'
     name: Range | string
     fullName: Excel.Range | string
@@ -378,6 +382,7 @@ references:
         fullName: ' | string'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.CommentCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -406,7 +411,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.CommentCollection:class'
-    name: Excel.CommentCollection
+    name: CommentCollection
+    fullName: Excel.CommentCollection
   - uid: 'excel!Excel.CommentCollection#load~0:complex'
     name: Excel.Interfaces.CommentCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.CommentCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -422,4 +428,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.CommentCollectionData:interface'
-    name: Excel.Interfaces.CommentCollectionData
+    name: CommentCollectionData
+    fullName: Excel.Interfaces.CommentCollectionData

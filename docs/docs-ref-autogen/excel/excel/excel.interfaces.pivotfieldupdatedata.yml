@@ -59,4 +59,5 @@ items:
           - 'excel!Excel.Subtotals:interface'
 references:
   - uid: 'excel!Excel.Subtotals:interface'
-    name: Excel.Subtotals
+    name: Subtotals
+    fullName: Excel.Subtotals

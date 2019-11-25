@@ -172,8 +172,11 @@ items:
           - boolean
 references:
   - uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions:interface'
-    name: OneNote.Interfaces.PageContentCollectionLoadOptions
+    name: PageContentCollectionLoadOptions
+    fullName: OneNote.Interfaces.PageContentCollectionLoadOptions
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface'
-    name: OneNote.Interfaces.InkAnalysisLoadOptions
+    name: InkAnalysisLoadOptions
+    fullName: OneNote.Interfaces.InkAnalysisLoadOptions
   - uid: 'onenote!OneNote.Interfaces.SectionLoadOptions:interface'
-    name: OneNote.Interfaces.SectionLoadOptions
+    name: SectionLoadOptions
+    fullName: OneNote.Interfaces.SectionLoadOptions

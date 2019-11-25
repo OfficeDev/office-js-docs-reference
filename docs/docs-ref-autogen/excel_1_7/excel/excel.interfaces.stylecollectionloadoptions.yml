@@ -381,8 +381,11 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface'
-    name: Excel.Interfaces.RangeBorderCollectionLoadOptions
+    name: RangeBorderCollectionLoadOptions
+    fullName: Excel.Interfaces.RangeBorderCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.RangeFillLoadOptions:interface'
-    name: Excel.Interfaces.RangeFillLoadOptions
+    name: RangeFillLoadOptions
+    fullName: Excel.Interfaces.RangeFillLoadOptions
   - uid: 'excel!Excel.Interfaces.RangeFontLoadOptions:interface'
-    name: Excel.Interfaces.RangeFontLoadOptions
+    name: RangeFontLoadOptions
+    fullName: Excel.Interfaces.RangeFontLoadOptions

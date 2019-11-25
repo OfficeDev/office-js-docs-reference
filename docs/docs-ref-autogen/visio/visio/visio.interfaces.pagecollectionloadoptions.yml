@@ -122,4 +122,5 @@ items:
           - boolean
 references:
   - uid: 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
-    name: Visio.Interfaces.PageViewLoadOptions
+    name: PageViewLoadOptions
+    fullName: Visio.Interfaces.PageViewLoadOptions

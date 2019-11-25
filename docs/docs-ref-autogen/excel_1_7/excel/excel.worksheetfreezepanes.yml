@@ -9,6 +9,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.WorksheetFreezePanes#context:member'
@@ -252,6 +254,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.WorksheetFreezePanes#freezeAt~0:complex'
     name: Range | string
     fullName: Excel.Range | string
@@ -262,4 +265,5 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
+    name: Range
+    fullName: Excel.Range

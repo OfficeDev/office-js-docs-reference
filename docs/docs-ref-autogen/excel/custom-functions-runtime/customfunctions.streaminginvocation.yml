@@ -14,6 +14,10 @@ items:
     type: interface
     extends:
       - 'custom-functions-runtime!CustomFunctions.CancelableInvocation:interface'
+    inheritance:
+      - type: 'custom-functions-runtime!CustomFunctions.CancelableInvocation:interface'
+        inheritance:
+          - type: 'custom-functions-runtime!CustomFunctions.Invocation:interface'
     syntax:
       typeParameters:
         - id: ResultType
@@ -35,6 +39,10 @@ items:
 references:
   - uid: 'custom-functions-runtime!CustomFunctions.CancelableInvocation:interface'
     name: CancelableInvocation
+    fullName: CustomFunctions.CancelableInvocation
+  - uid: 'custom-functions-runtime!CustomFunctions.Invocation:interface'
+    name: Invocation
+    fullName: CustomFunctions.Invocation
   - uid: 'custom-functions-runtime!CustomFunctions.StreamingInvocation#setResult~0:complex'
     name: '(value: ResultType | Error) => void'
     fullName: '(value: ResultType | Error) => void'

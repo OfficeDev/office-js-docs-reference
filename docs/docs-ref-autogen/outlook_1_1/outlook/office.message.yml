@@ -16,6 +16,8 @@ items:
     type: interface
     extends:
       - 'outlook!Office.Item:interface'
+    inheritance:
+      - type: 'outlook!Office.Item:interface'
     package: outlook!
     children:
       - 'outlook!Office.Message#conversationId:member'
@@ -54,3 +56,4 @@ items:
 references:
   - uid: 'outlook!Office.Item:interface'
     name: Item
+    fullName: Office.Item

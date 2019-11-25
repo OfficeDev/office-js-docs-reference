@@ -50,6 +50,8 @@ items:
           - string
 references:
   - uid: 'office!Office.HostType:enum'
-    name: Office.HostType
+    name: HostType
+    fullName: Office.HostType
   - uid: 'office!Office.PlatformType:enum'
-    name: Office.PlatformType
+    name: PlatformType
+    fullName: Office.PlatformType

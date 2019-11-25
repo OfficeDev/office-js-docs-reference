@@ -173,4 +173,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartLegendFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartLegendFormatLoadOptions
+    name: ChartLegendFormatLoadOptions
+    fullName: Excel.Interfaces.ChartLegendFormatLoadOptions

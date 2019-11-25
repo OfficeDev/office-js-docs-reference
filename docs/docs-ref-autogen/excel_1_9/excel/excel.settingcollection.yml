@@ -14,6 +14,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.SettingCollection#add:member(1)'
@@ -286,7 +288,8 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Setting:class'
-    name: Excel.Setting
+    name: Setting
+    fullName: Excel.Setting
   - uid: 'excel!Excel.SettingCollection#add~0:complex'
     name: string | number | boolean | Date | Array<any> | any
     fullName: string | number | boolean | Date | Array<any> | any
@@ -305,6 +308,7 @@ references:
         fullName: <any> | any
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.SettingCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -324,7 +328,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.SettingCollection:class'
-    name: Excel.SettingCollection
+    name: SettingCollection
+    fullName: Excel.SettingCollection
   - uid: 'excel!Excel.SettingCollection#load~0:complex'
     name: Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -354,4 +359,5 @@ references:
       - name: '>'
         fullName: '>'
   - uid: 'excel!Excel.Interfaces.SettingCollectionData:interface'
-    name: Excel.Interfaces.SettingCollectionData
+    name: SettingCollectionData
+    fullName: Excel.Interfaces.SettingCollectionData

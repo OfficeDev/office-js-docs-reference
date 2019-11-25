@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartDataLabelFormat#border:member'
@@ -223,20 +225,28 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ChartBorder:class'
-    name: Excel.ChartBorder
+    name: ChartBorder
+    fullName: Excel.ChartBorder
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartFill:class'
-    name: Excel.ChartFill
+    name: ChartFill
+    fullName: Excel.ChartFill
   - uid: 'excel!Excel.ChartFont:class'
-    name: Excel.ChartFont
+    name: ChartFont
+    fullName: Excel.ChartFont
   - uid: 'excel!Excel.ChartDataLabelFormat:class'
-    name: Excel.ChartDataLabelFormat
+    name: ChartDataLabelFormat
+    fullName: Excel.ChartDataLabelFormat
   - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartDataLabelFormatLoadOptions
+    name: ChartDataLabelFormatLoadOptions
+    fullName: Excel.Interfaces.ChartDataLabelFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatUpdateData:interface'
-    name: Interfaces.ChartDataLabelFormatUpdateData
+    name: ChartDataLabelFormatUpdateData
+    fullName: Excel.Interfaces.ChartDataLabelFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatData:interface'
-    name: Excel.Interfaces.ChartDataLabelFormatData
+    name: ChartDataLabelFormatData
+    fullName: Excel.Interfaces.ChartDataLabelFormatData

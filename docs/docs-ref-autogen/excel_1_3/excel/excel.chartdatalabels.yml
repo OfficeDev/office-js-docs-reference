@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartDataLabels#context:member'
@@ -345,12 +347,16 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartDataLabelFormat:class'
-    name: Excel.ChartDataLabelFormat
+    name: ChartDataLabelFormat
+    fullName: Excel.ChartDataLabelFormat
   - uid: 'excel!Excel.ChartDataLabels:class'
-    name: Excel.ChartDataLabels
+    name: ChartDataLabels
+    fullName: Excel.ChartDataLabels
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
-    name: Excel.Interfaces.ChartDataLabelsLoadOptions
+    name: ChartDataLabelsLoadOptions
+    fullName: Excel.Interfaces.ChartDataLabelsLoadOptions
   - uid: 'excel!Excel.ChartDataLabels#position~0:complex'
     name: >-
       Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left"
@@ -365,8 +371,10 @@ references:
       - name: ' | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"'
         fullName: ' | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"'
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface'
-    name: Interfaces.ChartDataLabelsUpdateData
+    name: ChartDataLabelsUpdateData
+    fullName: Excel.Interfaces.ChartDataLabelsUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsData:interface'
-    name: Excel.Interfaces.ChartDataLabelsData
+    name: ChartDataLabelsData
+    fullName: Excel.Interfaces.ChartDataLabelsData

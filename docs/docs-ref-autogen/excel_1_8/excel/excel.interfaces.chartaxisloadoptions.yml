@@ -702,8 +702,11 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartAxisFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartAxisFormatLoadOptions
+    name: ChartAxisFormatLoadOptions
+    fullName: Excel.Interfaces.ChartAxisFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartGridlinesLoadOptions:interface'
-    name: Excel.Interfaces.ChartGridlinesLoadOptions
+    name: ChartGridlinesLoadOptions
+    fullName: Excel.Interfaces.ChartGridlinesLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions:interface'
-    name: Excel.Interfaces.ChartAxisTitleLoadOptions
+    name: ChartAxisTitleLoadOptions
+    fullName: Excel.Interfaces.ChartAxisTitleLoadOptions

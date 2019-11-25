@@ -15,6 +15,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.DataValidation#clear:member(1)'
@@ -435,24 +437,33 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.DataValidationErrorAlert:interface'
-    name: Excel.DataValidationErrorAlert
+    name: DataValidationErrorAlert
+    fullName: Excel.DataValidationErrorAlert
   - uid: 'excel!Excel.RangeAreas:class'
-    name: Excel.RangeAreas
+    name: RangeAreas
+    fullName: Excel.RangeAreas
   - uid: 'excel!Excel.DataValidation:class'
-    name: Excel.DataValidation
+    name: DataValidation
+    fullName: Excel.DataValidation
   - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions:interface'
-    name: Excel.Interfaces.DataValidationLoadOptions
+    name: DataValidationLoadOptions
+    fullName: Excel.Interfaces.DataValidationLoadOptions
   - uid: 'excel!Excel.DataValidationPrompt:interface'
-    name: Excel.DataValidationPrompt
+    name: DataValidationPrompt
+    fullName: Excel.DataValidationPrompt
   - uid: 'excel!Excel.DataValidationRule:interface'
-    name: Excel.DataValidationRule
+    name: DataValidationRule
+    fullName: Excel.DataValidationRule
   - uid: 'excel!Excel.Interfaces.DataValidationUpdateData:interface'
-    name: Interfaces.DataValidationUpdateData
+    name: DataValidationUpdateData
+    fullName: Excel.Interfaces.DataValidationUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.DataValidationData:interface'
-    name: Excel.Interfaces.DataValidationData
+    name: DataValidationData
+    fullName: Excel.Interfaces.DataValidationData
   - uid: 'excel!Excel.DataValidation#type~0:complex'
     name: >-
       Excel.DataValidationType | "None" | "WholeNumber" | "Decimal" | "List" | "Date" | "Time" | "TextLength" | "Custom"

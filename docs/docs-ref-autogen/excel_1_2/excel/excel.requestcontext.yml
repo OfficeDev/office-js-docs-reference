@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientRequestContext:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientRequestContext:class'
     package: excel!
     children:
       - 'excel!Excel.RequestContext:constructor(1)'
@@ -67,5 +69,7 @@ references:
         fullName: Excel.Session
   - uid: 'excel!Excel.Application:class'
     name: Application
+    fullName: Excel.Application
   - uid: 'excel!Excel.Workbook:class'
     name: Workbook
+    fullName: Excel.Workbook

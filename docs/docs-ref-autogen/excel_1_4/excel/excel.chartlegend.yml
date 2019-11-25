@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartLegend#context:member'
@@ -277,12 +279,16 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartLegendFormat:class'
-    name: Excel.ChartLegendFormat
+    name: ChartLegendFormat
+    fullName: Excel.ChartLegendFormat
   - uid: 'excel!Excel.ChartLegend:class'
-    name: Excel.ChartLegend
+    name: ChartLegend
+    fullName: Excel.ChartLegend
   - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions:interface'
-    name: Excel.Interfaces.ChartLegendLoadOptions
+    name: ChartLegendLoadOptions
+    fullName: Excel.Interfaces.ChartLegendLoadOptions
   - uid: 'excel!Excel.ChartLegend#position~0:complex'
     name: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
     fullName: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
@@ -293,8 +299,10 @@ references:
       - name: ' | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"'
         fullName: ' | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"'
   - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData:interface'
-    name: Interfaces.ChartLegendUpdateData
+    name: ChartLegendUpdateData
+    fullName: Excel.Interfaces.ChartLegendUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartLegendData:interface'
-    name: Excel.Interfaces.ChartLegendData
+    name: ChartLegendData
+    fullName: Excel.Interfaces.ChartLegendData

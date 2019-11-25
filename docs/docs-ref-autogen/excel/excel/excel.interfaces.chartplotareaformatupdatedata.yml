@@ -29,4 +29,5 @@ items:
           - 'excel!Excel.Interfaces.ChartBorderUpdateData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartBorderUpdateData:interface'
-    name: Excel.Interfaces.ChartBorderUpdateData
+    name: ChartBorderUpdateData
+    fullName: Excel.Interfaces.ChartBorderUpdateData

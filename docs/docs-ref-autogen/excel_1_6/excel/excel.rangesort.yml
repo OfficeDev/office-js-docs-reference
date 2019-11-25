@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.RangeSort#apply:member(1)'
@@ -147,9 +149,11 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.SortOrientation:enum'
-    name: Excel.SortOrientation
+    name: SortOrientation
+    fullName: Excel.SortOrientation
   - uid: 'excel!Excel.SortMethod:enum'
-    name: Excel.SortMethod
+    name: SortMethod
+    fullName: Excel.SortMethod
   - uid: 'excel!Excel.RangeSort#apply~1:complex'
     name: 'Excel.SortField[]'
     fullName: 'Excel.SortField[]'
@@ -161,3 +165,4 @@ references:
         fullName: '[]'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext

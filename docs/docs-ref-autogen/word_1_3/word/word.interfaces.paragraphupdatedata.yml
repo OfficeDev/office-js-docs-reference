@@ -299,9 +299,11 @@ references:
       - name: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
         fullName: ' | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
   - uid: 'word!Word.Interfaces.FontUpdateData:interface'
-    name: Word.Interfaces.FontUpdateData
+    name: FontUpdateData
+    fullName: Word.Interfaces.FontUpdateData
   - uid: 'word!Word.Interfaces.ListItemUpdateData:interface'
-    name: Word.Interfaces.ListItemUpdateData
+    name: ListItemUpdateData
+    fullName: Word.Interfaces.ListItemUpdateData
   - uid: 'word!Word.Interfaces.ParagraphUpdateData#styleBuiltIn~0:complex'
     name: >-
       Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" |

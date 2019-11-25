@@ -43,6 +43,8 @@ items:
           - 'excel!Excel.Interfaces.ChartLineFormatData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartFontData:interface'
-    name: Excel.Interfaces.ChartFontData
+    name: ChartFontData
+    fullName: Excel.Interfaces.ChartFontData
   - uid: 'excel!Excel.Interfaces.ChartLineFormatData:interface'
-    name: Excel.Interfaces.ChartLineFormatData
+    name: ChartLineFormatData
+    fullName: Excel.Interfaces.ChartLineFormatData

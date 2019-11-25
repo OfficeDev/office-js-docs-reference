@@ -533,11 +533,14 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.DataValidationData:interface'
-    name: Excel.Interfaces.DataValidationData
+    name: DataValidationData
+    fullName: Excel.Interfaces.DataValidationData
   - uid: 'excel!Excel.Interfaces.RangeFormatData:interface'
-    name: Excel.Interfaces.RangeFormatData
+    name: RangeFormatData
+    fullName: Excel.Interfaces.RangeFormatData
   - uid: 'excel!Excel.RangeHyperlink:interface'
-    name: Excel.RangeHyperlink
+    name: RangeHyperlink
+    fullName: Excel.RangeHyperlink
   - uid: 'excel!Excel.Interfaces.RangeData#linkedDataTypeState~0:complex'
     name: 'Excel.LinkedDataTypeState[][]'
     fullName: 'Excel.LinkedDataTypeState[][]'

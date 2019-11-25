@@ -26,6 +26,7 @@ items:
       - 'office!Office.BindingType:enum'
       - 'office!Office.CoercionType:enum'
       - 'office!Office.Context:interface'
+      - 'office!Office.context:var'
       - 'office!Office.ContextInformation:interface'
       - 'office!Office.CustomXmlNode:interface'
       - 'office!Office.CustomXMLNodeType:enum'
@@ -64,6 +65,7 @@ items:
       - 'office!Office.ProjectResourceFields:enum'
       - 'office!Office.ProjectTaskFields:enum'
       - 'office!Office.ProjectViewTypes:enum'
+      - 'office!Office.Promise:var'
       - 'office!Office.RangeCoordinates:interface'
       - 'office!Office.RangeFormatConfiguration:interface'
       - 'office!Office.RemoveHandlerOptions:interface'
@@ -86,6 +88,7 @@ items:
       - 'office!OfficeExtension.ClientObject:class'
       - 'office!OfficeExtension.ClientRequestContext:class'
       - 'office!OfficeExtension.ClientResult:class'
+      - 'office!OfficeExtension.config:var'
       - 'office!OfficeExtension.DebugInfo:interface'
       - 'office!OfficeExtension.EmbeddedOptions:interface'
       - 'office!OfficeExtension.EmbeddedSession:class'
@@ -94,12 +97,47 @@ items:
       - 'office!OfficeExtension.EventHandlerResult:class'
       - 'office!OfficeExtension.EventHandlers:class'
       - 'office!OfficeExtension.EventInfo:interface'
+      - 'office!OfficeExtension.IPromise:type'
       - 'office!OfficeExtension.LoadOption:interface'
+      - 'office!OfficeExtension.Promise:var'
       - 'office!OfficeExtension.RequestContextDebugInfo:interface'
       - 'office!OfficeExtension.RequestUrlAndHeaderInfo:interface'
       - 'office!OfficeExtension.RunOptions:interface'
       - 'office!OfficeExtension.TrackedObjects:class'
       - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!Office.context:var'
+    summary: >-
+      Gets the Context object that represents the runtime environment of the add-in and provides access to the top-level
+      objects of the API.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
+      </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr> <tr><td><strong>
+      Excel </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Outlook
+      </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint
+      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Project
+      </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y
+      </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> </table>
+    name: Office.context
+    fullName: Office.context
+    langs:
+      - typeScript
+    type: variable
+    syntax:
+      content: 'context: Context'
+      return:
+        type:
+          - 'office!Office.Context:interface'
   - uid: 'office!Office.initialize:function(1)'
     summary: >-
       Occurs when the runtime environment is loaded and the add-in is ready to start interacting with the application
@@ -217,6 +255,21 @@ items:
             callback, an add-in may simply wait for the Promise returned by the function to resolve.
           type:
             - 'office!Office.onReady~1:complex'
+  - uid: 'office!Office.Promise:var'
+    summary: >-
+      A Promise object. Promises can be chained via ".then", and errors can be caught via ".catch". When a
+      browser-provided native Promise implementation is available, Office.Promise will switch to use the native Promise
+      instead.
+    name: Office.Promise
+    fullName: Office.Promise
+    langs:
+      - typeScript
+    type: variable
+    syntax:
+      content: 'Promise: IPromiseConstructor'
+      return:
+        type:
+          - 'office!Office.IPromiseConstructor:interface'
   - uid: 'office!Office.select:function(1)'
     summary: Returns a promise of an object described in the expression. Callback is invoked only if method fails.
     remarks: >-
@@ -352,6 +405,54 @@ items:
           description: True to use the shortcut alias; otherwise false to disable it. The default is true.
           type:
             - boolean
+  - uid: 'office!OfficeExtension.config:var'
+    summary: Configuration
+    name: OfficeExtension.config
+    fullName: OfficeExtension.config
+    langs:
+      - typeScript
+    type: variable
+    syntax:
+      content: |-
+        config: {
+                extendedErrorLogging: boolean;
+            }
+      return:
+        type:
+          - |-
+            {
+                    extendedErrorLogging: boolean;
+                }
+  - uid: 'office!OfficeExtension.IPromise:type'
+    name: OfficeExtension.IPromise
+    fullName: OfficeExtension.IPromise
+    langs:
+      - typeScript
+    type: typealias
+    syntax:
+      content: type IPromise<T> = Promise<T>;
+      typeParameters:
+        - id: T
+      return:
+        type:
+          - 'office!OfficeExtension.IPromise~0:complex'
+  - uid: 'office!OfficeExtension.Promise:var'
+    summary: >-
+      A Promise object that represents a deferred interaction with the host Office application. The publicly-consumable
+      OfficeExtension.Promise is available starting in ExcelAPI 1.2 and WordApi 1.2. Promises can be chained via
+      ".then", and errors can be caught via ".catch". Remember to always use a ".catch" on the outer promise, and to
+      return intermediary promises so as not to break the promise chain. When a browser-provided native Promise
+      implementation is available, OfficeExtension.Promise will switch to use the native Promise instead.
+    name: OfficeExtension.Promise
+    fullName: OfficeExtension.Promise
+    langs:
+      - typeScript
+    type: variable
+    syntax:
+      content: 'Promise: Office.IPromiseConstructor'
+      return:
+        type:
+          - 'office!Office.IPromiseConstructor:interface'
 references:
   - uid: 'office!Office.ActiveView:enum'
     name: Office.ActiveView
@@ -565,6 +666,15 @@ references:
     name: OfficeExtension.EventHandlers
   - uid: 'office!OfficeExtension.EventInfo:interface'
     name: OfficeExtension.EventInfo
+  - uid: 'office!OfficeExtension.IPromise~0:complex'
+    name: Promise<T>
+    fullName: Promise<T>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <T>
+        fullName: <T>
   - uid: 'office!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'office!OfficeExtension.RequestContextDebugInfo:interface'

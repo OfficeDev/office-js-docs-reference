@@ -43,4 +43,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.WorksheetProtectionOptions:interface'
-    name: Excel.WorksheetProtectionOptions
+    name: WorksheetProtectionOptions
+    fullName: Excel.WorksheetProtectionOptions

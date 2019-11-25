@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartLegendEntry#context:member'
@@ -272,13 +274,18 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartLegendEntry:class'
-    name: Excel.ChartLegendEntry
+    name: ChartLegendEntry
+    fullName: Excel.ChartLegendEntry
   - uid: 'excel!Excel.Interfaces.ChartLegendEntryLoadOptions:interface'
-    name: Excel.Interfaces.ChartLegendEntryLoadOptions
+    name: ChartLegendEntryLoadOptions
+    fullName: Excel.Interfaces.ChartLegendEntryLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartLegendEntryUpdateData:interface'
-    name: Interfaces.ChartLegendEntryUpdateData
+    name: ChartLegendEntryUpdateData
+    fullName: Excel.Interfaces.ChartLegendEntryUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartLegendEntryData:interface'
-    name: Excel.Interfaces.ChartLegendEntryData
+    name: ChartLegendEntryData
+    fullName: Excel.Interfaces.ChartLegendEntryData

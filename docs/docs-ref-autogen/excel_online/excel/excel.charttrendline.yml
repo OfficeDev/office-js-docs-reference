@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartTrendline#backwardPeriod:member'
@@ -395,20 +397,27 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartTrendlineFormat:class'
-    name: Excel.ChartTrendlineFormat
+    name: ChartTrendlineFormat
+    fullName: Excel.ChartTrendlineFormat
   - uid: 'excel!Excel.ChartTrendlineLabel:class'
-    name: Excel.ChartTrendlineLabel
+    name: ChartTrendlineLabel
+    fullName: Excel.ChartTrendlineLabel
   - uid: 'excel!Excel.ChartTrendline:class'
-    name: Excel.ChartTrendline
+    name: ChartTrendline
+    fullName: Excel.ChartTrendline
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLoadOptions:interface'
-    name: Excel.Interfaces.ChartTrendlineLoadOptions
+    name: ChartTrendlineLoadOptions
+    fullName: Excel.Interfaces.ChartTrendlineLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData:interface'
-    name: Interfaces.ChartTrendlineUpdateData
+    name: ChartTrendlineUpdateData
+    fullName: Excel.Interfaces.ChartTrendlineUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartTrendlineData:interface'
-    name: Excel.Interfaces.ChartTrendlineData
+    name: ChartTrendlineData
+    fullName: Excel.Interfaces.ChartTrendlineData
   - uid: 'excel!Excel.ChartTrendline#type~0:complex'
     name: Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"
     fullName: Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"

@@ -89,7 +89,8 @@ items:
           - 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface'
-    name: Excel.Interfaces.ConditionalRangeBorderUpdateData
+    name: ConditionalRangeBorderUpdateData
+    fullName: Excel.Interfaces.ConditionalRangeBorderUpdateData
   - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items~0:complex'
     name: 'Excel.Interfaces.ConditionalRangeBorderData[]'
     fullName: 'Excel.Interfaces.ConditionalRangeBorderData[]'

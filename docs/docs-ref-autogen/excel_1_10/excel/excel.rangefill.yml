@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.RangeFill#clear:member(1)'
@@ -345,10 +347,13 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.RangeFill:class'
-    name: Excel.RangeFill
+    name: RangeFill
+    fullName: Excel.RangeFill
   - uid: 'excel!Excel.Interfaces.RangeFillLoadOptions:interface'
-    name: Excel.Interfaces.RangeFillLoadOptions
+    name: RangeFillLoadOptions
+    fullName: Excel.Interfaces.RangeFillLoadOptions
   - uid: 'excel!Excel.RangeFill#pattern~0:complex'
     name: >-
       Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up"
@@ -365,8 +370,10 @@ references:
       - name: ' | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"'
         fullName: ' | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"'
   - uid: 'excel!Excel.Interfaces.RangeFillUpdateData:interface'
-    name: Interfaces.RangeFillUpdateData
+    name: RangeFillUpdateData
+    fullName: Excel.Interfaces.RangeFillUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.RangeFillData:interface'
-    name: Excel.Interfaces.RangeFillData
+    name: RangeFillData
+    fullName: Excel.Interfaces.RangeFillData

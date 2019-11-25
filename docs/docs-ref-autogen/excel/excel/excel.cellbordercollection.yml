@@ -145,4 +145,5 @@ items:
           - 'excel!Excel.CellBorder:interface'
 references:
   - uid: 'excel!Excel.CellBorder:interface'
-    name: Excel.CellBorder
+    name: CellBorder
+    fullName: Excel.CellBorder

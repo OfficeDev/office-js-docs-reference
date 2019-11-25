@@ -15,6 +15,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Workbook#application:member'
@@ -899,25 +901,35 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Application:class'
-    name: Excel.Application
+    name: Application
+    fullName: Excel.Application
   - uid: 'excel!Excel.BindingCollection:class'
-    name: Excel.BindingCollection
+    name: BindingCollection
+    fullName: Excel.BindingCollection
   - uid: 'excel!Excel.CommentCollection:class'
-    name: Excel.CommentCollection
+    name: CommentCollection
+    fullName: Excel.CommentCollection
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.CustomXmlPartCollection:class'
-    name: Excel.CustomXmlPartCollection
+    name: CustomXmlPartCollection
+    fullName: Excel.CustomXmlPartCollection
   - uid: 'excel!Excel.DataConnectionCollection:class'
-    name: Excel.DataConnectionCollection
+    name: DataConnectionCollection
+    fullName: Excel.DataConnectionCollection
   - uid: 'excel!Excel.Functions:class'
-    name: Excel.Functions
+    name: Functions
+    fullName: Excel.Functions
   - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
+    name: Range
+    fullName: Excel.Range
   - uid: 'excel!Excel.Chart:class'
-    name: Excel.Chart
+    name: Chart
+    fullName: Excel.Chart
   - uid: 'excel!Excel.Slicer:class'
-    name: Excel.Slicer
+    name: Slicer
+    fullName: Excel.Slicer
   - uid: 'excel!Excel.Workbook#getIsActiveCollabSession~0:complex'
     name: OfficeExtension.ClientResult<boolean>
     fullName: OfficeExtension.ClientResult<boolean>
@@ -928,13 +940,17 @@ references:
       - name: <boolean>
         fullName: <boolean>
   - uid: 'excel!Excel.RangeAreas:class'
-    name: Excel.RangeAreas
+    name: RangeAreas
+    fullName: Excel.RangeAreas
   - uid: 'excel!Excel.Workbook:class'
-    name: Excel.Workbook
+    name: Workbook
+    fullName: Excel.Workbook
   - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
-    name: Excel.Interfaces.WorkbookLoadOptions
+    name: WorkbookLoadOptions
+    fullName: Excel.Interfaces.WorkbookLoadOptions
   - uid: 'excel!Excel.NamedItemCollection:class'
-    name: Excel.NamedItemCollection
+    name: NamedItemCollection
+    fullName: Excel.NamedItemCollection
   - uid: 'excel!Excel.Workbook#onAutoSaveSettingChanged~0:complex'
     name: OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>
@@ -964,32 +980,46 @@ references:
       - name: '>'
         fullName: '>'
   - uid: 'excel!Excel.PivotTableCollection:class'
-    name: Excel.PivotTableCollection
+    name: PivotTableCollection
+    fullName: Excel.PivotTableCollection
   - uid: 'excel!Excel.PivotTableStyleCollection:class'
-    name: Excel.PivotTableStyleCollection
+    name: PivotTableStyleCollection
+    fullName: Excel.PivotTableStyleCollection
   - uid: 'excel!Excel.DocumentProperties:class'
-    name: Excel.DocumentProperties
+    name: DocumentProperties
+    fullName: Excel.DocumentProperties
   - uid: 'excel!Excel.WorkbookProtection:class'
-    name: Excel.WorkbookProtection
+    name: WorkbookProtection
+    fullName: Excel.WorkbookProtection
   - uid: 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
-    name: Interfaces.WorkbookUpdateData
+    name: WorkbookUpdateData
+    fullName: Excel.Interfaces.WorkbookUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.SettingCollection:class'
-    name: Excel.SettingCollection
+    name: SettingCollection
+    fullName: Excel.SettingCollection
   - uid: 'excel!Excel.SlicerCollection:class'
-    name: Excel.SlicerCollection
+    name: SlicerCollection
+    fullName: Excel.SlicerCollection
   - uid: 'excel!Excel.SlicerStyleCollection:class'
-    name: Excel.SlicerStyleCollection
+    name: SlicerStyleCollection
+    fullName: Excel.SlicerStyleCollection
   - uid: 'excel!Excel.StyleCollection:class'
-    name: Excel.StyleCollection
+    name: StyleCollection
+    fullName: Excel.StyleCollection
   - uid: 'excel!Excel.TableCollection:class'
-    name: Excel.TableCollection
+    name: TableCollection
+    fullName: Excel.TableCollection
   - uid: 'excel!Excel.TableStyleCollection:class'
-    name: Excel.TableStyleCollection
+    name: TableStyleCollection
+    fullName: Excel.TableStyleCollection
   - uid: 'excel!Excel.TimelineStyleCollection:class'
-    name: Excel.TimelineStyleCollection
+    name: TimelineStyleCollection
+    fullName: Excel.TimelineStyleCollection
   - uid: 'excel!Excel.Interfaces.WorkbookData:interface'
-    name: Excel.Interfaces.WorkbookData
+    name: WorkbookData
+    fullName: Excel.Interfaces.WorkbookData
   - uid: 'excel!Excel.WorksheetCollection:class'
-    name: Excel.WorksheetCollection
+    name: WorksheetCollection
+    fullName: Excel.WorksheetCollection

@@ -80,8 +80,11 @@ items:
           - 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
-    name: Excel.Interfaces.ApplicationLoadOptions
+    name: ApplicationLoadOptions
+    fullName: Excel.Interfaces.ApplicationLoadOptions
   - uid: 'excel!Excel.Interfaces.BindingCollectionLoadOptions:interface'
-    name: Excel.Interfaces.BindingCollectionLoadOptions
+    name: BindingCollectionLoadOptions
+    fullName: Excel.Interfaces.BindingCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
-    name: Excel.Interfaces.TableCollectionLoadOptions
+    name: TableCollectionLoadOptions
+    fullName: Excel.Interfaces.TableCollectionLoadOptions

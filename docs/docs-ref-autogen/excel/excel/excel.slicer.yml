@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Slicer#caption:member'
@@ -520,6 +522,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Slicer#getSelectedItems~0:complex'
     name: 'OfficeExtension.ClientResult<string[]>'
     fullName: 'OfficeExtension.ClientResult<string[]>'
@@ -530,15 +533,19 @@ references:
       - name: '<string[]>'
         fullName: '<string[]>'
   - uid: 'excel!Excel.Slicer:class'
-    name: Excel.Slicer
+    name: Slicer
+    fullName: Excel.Slicer
   - uid: 'excel!Excel.Interfaces.SlicerLoadOptions:interface'
-    name: Excel.Interfaces.SlicerLoadOptions
+    name: SlicerLoadOptions
+    fullName: Excel.Interfaces.SlicerLoadOptions
   - uid: 'excel!Excel.Interfaces.SlicerUpdateData:interface'
-    name: Interfaces.SlicerUpdateData
+    name: SlicerUpdateData
+    fullName: Excel.Interfaces.SlicerUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.SlicerItemCollection:class'
-    name: Excel.SlicerItemCollection
+    name: SlicerItemCollection
+    fullName: Excel.SlicerItemCollection
   - uid: 'excel!Excel.Slicer#sortBy~0:complex'
     name: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"
     fullName: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"
@@ -549,6 +556,8 @@ references:
       - name: ' | "DataSourceOrder" | "Ascending" | "Descending"'
         fullName: ' | "DataSourceOrder" | "Ascending" | "Descending"'
   - uid: 'excel!Excel.Interfaces.SlicerData:interface'
-    name: Excel.Interfaces.SlicerData
+    name: SlicerData
+    fullName: Excel.Interfaces.SlicerData
   - uid: 'excel!Excel.Worksheet:class'
-    name: Excel.Worksheet
+    name: Worksheet
+    fullName: Excel.Worksheet

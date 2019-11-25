@@ -17,6 +17,13 @@ items:
     extends:
       - 'outlook!Office.Appointment:interface'
       - 'outlook!Office.ItemCompose:interface'
+    inheritance:
+      - type: 'outlook!Office.Appointment:interface'
+        inheritance:
+          - type: 'outlook!Office.Item:interface'
+      - type: 'outlook!Office.ItemCompose:interface'
+        inheritance:
+          - type: 'outlook!Office.Item:interface'
     package: outlook!
     children:
       - 'outlook!Office.AppointmentCompose#addFileAttachmentAsync:member(1)'
@@ -954,8 +961,13 @@ items:
 references:
   - uid: 'outlook!Office.Appointment:interface'
     name: Appointment
+    fullName: Office.Appointment
   - uid: 'outlook!Office.ItemCompose:interface'
     name: ItemCompose
+    fullName: Office.ItemCompose
+  - uid: 'outlook!Office.Item:interface'
+    name: Item
+    fullName: Office.Item
   - uid: 'outlook!Office.AppointmentCompose#addFileAttachmentAsync~0:complex'
     name: 'Office.AsyncContextOptions & { isInline: boolean }'
     fullName: 'Office.AsyncContextOptions & { isInline: boolean }'
@@ -1013,8 +1025,10 @@ references:
         fullName: <string>) => void
   - uid: 'outlook!Office.Body:interface'
     name: Body
+    fullName: Office.Body
   - uid: 'outlook!Office.Time:interface'
     name: Time
+    fullName: Office.Time
   - uid: 'outlook!Office.AppointmentCompose#itemType~0:complex'
     name: MailboxEnums.ItemType | string
     fullName: Office.MailboxEnums.ItemType | string
@@ -1042,8 +1056,10 @@ references:
         fullName: '>) => void'
   - uid: 'outlook!Office.Location:interface'
     name: Location
+    fullName: Office.Location
   - uid: 'outlook!Office.Recipients:interface'
     name: Recipients
+    fullName: Office.Recipients
   - uid: 'outlook!Office.AppointmentCompose#removeAttachmentAsync~0:complex'
     name: '(asyncResult: Office.AsyncResult<void>) => void'
     fullName: '(asyncResult: Office.AsyncResult<void>) => void'
@@ -1068,3 +1084,4 @@ references:
         fullName: <void>) => void
   - uid: 'outlook!Office.Subject:interface'
     name: Subject
+    fullName: Office.Subject

@@ -14,6 +14,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.GeometricShape#context:member'
@@ -160,11 +162,16 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.GeometricShape:class'
-    name: Excel.GeometricShape
+    name: GeometricShape
+    fullName: Excel.GeometricShape
   - uid: 'excel!Excel.Interfaces.GeometricShapeLoadOptions:interface'
-    name: Excel.Interfaces.GeometricShapeLoadOptions
+    name: GeometricShapeLoadOptions
+    fullName: Excel.Interfaces.GeometricShapeLoadOptions
   - uid: 'excel!Excel.Shape:class'
-    name: Excel.Shape
+    name: Shape
+    fullName: Excel.Shape
   - uid: 'excel!Excel.Interfaces.GeometricShapeData:interface'
-    name: Excel.Interfaces.GeometricShapeData
+    name: GeometricShapeData
+    fullName: Excel.Interfaces.GeometricShapeData

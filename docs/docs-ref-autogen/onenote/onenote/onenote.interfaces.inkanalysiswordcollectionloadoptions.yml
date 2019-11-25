@@ -110,4 +110,5 @@ items:
           - boolean
 references:
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions:interface'
-    name: OneNote.Interfaces.InkAnalysisLineLoadOptions
+    name: InkAnalysisLineLoadOptions
+    fullName: OneNote.Interfaces.InkAnalysisLineLoadOptions

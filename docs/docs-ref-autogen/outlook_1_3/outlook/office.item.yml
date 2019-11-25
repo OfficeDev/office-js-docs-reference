@@ -260,6 +260,7 @@ items:
 references:
   - uid: 'outlook!Office.Body:interface'
     name: Body
+    fullName: Office.Body
   - uid: 'outlook!Office.Item#itemType~0:complex'
     name: MailboxEnums.ItemType | string
     fullName: Office.MailboxEnums.ItemType | string
@@ -287,3 +288,4 @@ references:
         fullName: '>) => void'
   - uid: 'outlook!Office.NotificationMessages:interface'
     name: NotificationMessages
+    fullName: Office.NotificationMessages

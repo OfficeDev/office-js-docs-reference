@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.SectionCollection#context:member'
@@ -217,8 +219,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.Section:class'
-    name: Word.Section
+    name: Section
+    fullName: Word.Section
   - uid: 'word!Word.SectionCollection#items~0:complex'
     name: 'Word.Section[]'
     fullName: 'Word.Section[]'
@@ -229,7 +233,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.SectionCollection:class'
-    name: Word.SectionCollection
+    name: SectionCollection
+    fullName: Word.SectionCollection
   - uid: 'word!Word.SectionCollection#load~0:complex'
     name: Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
     fullName: Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
@@ -245,4 +250,5 @@ references:
   - uid: 'word!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'word!Word.Interfaces.SectionCollectionData:interface'
-    name: Word.Interfaces.SectionCollectionData
+    name: SectionCollectionData
+    fullName: Word.Interfaces.SectionCollectionData

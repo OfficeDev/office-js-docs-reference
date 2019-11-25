@@ -15,7 +15,10 @@ items:
     type: interface
     extends:
       - 'office!Office.Binding:interface'
+    inheritance:
+      - type: 'office!Office.Binding:interface'
     package: office!
 references:
   - uid: 'office!Office.Binding:interface'
     name: Binding
+    fullName: Office.Binding

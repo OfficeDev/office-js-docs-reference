@@ -1522,7 +1522,8 @@ references:
       - name: <T>
         fullName: <T>
   - uid: 'excel!Excel.RunOptions:interface'
-    name: Excel.RunOptions
+    name: RunOptions
+    fullName: Excel.RunOptions
   - uid: 'excel!Excel.run~8:complex'
     name: '(context: Excel.RequestContext) => Promise<T>'
     fullName: '(context: Excel.RequestContext) => Promise<T>'

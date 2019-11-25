@@ -12,6 +12,8 @@ items:
     type: interface
     extends:
       - 'excel!Excel.SettableCellProperties:interface'
+    inheritance:
+      - type: 'excel!Excel.SettableCellProperties:interface'
     package: excel!
     children:
       - 'excel!Excel.CellProperties#address:member'
@@ -65,3 +67,4 @@ items:
 references:
   - uid: 'excel!Excel.SettableCellProperties:interface'
     name: SettableCellProperties
+    fullName: Excel.SettableCellProperties

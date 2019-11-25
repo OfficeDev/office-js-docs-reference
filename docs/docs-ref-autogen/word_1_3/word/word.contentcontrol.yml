@@ -15,6 +15,8 @@ items:
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.ContentControl#appearance:member'
@@ -2076,11 +2078,14 @@ references:
       - name: ' | "BoundingBox" | "Tags" | "Hidden"'
         fullName: ' | "BoundingBox" | "Tags" | "Hidden"'
   - uid: 'word!Word.ContentControlCollection:class'
-    name: Word.ContentControlCollection
+    name: ContentControlCollection
+    fullName: Word.ContentControlCollection
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.Font:class'
-    name: Word.Font
+    name: Font
+    fullName: Word.Font
   - uid: 'word!Word.ContentControl#getHtml~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -2100,35 +2105,50 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'word!Word.Range:class'
-    name: Word.Range
+    name: Range
+    fullName: Word.Range
   - uid: 'word!Word.RangeLocation:enum'
-    name: Word.RangeLocation
+    name: RangeLocation
+    fullName: Word.RangeLocation
   - uid: 'word!Word.RangeCollection:class'
-    name: Word.RangeCollection
+    name: RangeCollection
+    fullName: Word.RangeCollection
   - uid: 'word!Word.InlinePictureCollection:class'
-    name: Word.InlinePictureCollection
+    name: InlinePictureCollection
+    fullName: Word.InlinePictureCollection
   - uid: 'word!Word.BreakType:enum'
-    name: Word.BreakType
+    name: BreakType
+    fullName: Word.BreakType
   - uid: 'word!Word.InsertLocation:enum'
-    name: Word.InsertLocation
+    name: InsertLocation
+    fullName: Word.InsertLocation
   - uid: 'word!Word.InlinePicture:class'
-    name: Word.InlinePicture
+    name: InlinePicture
+    fullName: Word.InlinePicture
   - uid: 'word!Word.Paragraph:class'
-    name: Word.Paragraph
+    name: Paragraph
+    fullName: Word.Paragraph
   - uid: 'word!Word.Table:class'
-    name: Word.Table
+    name: Table
+    fullName: Word.Table
   - uid: 'word!Word.ListCollection:class'
-    name: Word.ListCollection
+    name: ListCollection
+    fullName: Word.ListCollection
   - uid: 'word!Word.ContentControl:class'
-    name: Word.ContentControl
+    name: ContentControl
+    fullName: Word.ContentControl
   - uid: 'word!Word.Interfaces.ContentControlLoadOptions:interface'
-    name: Word.Interfaces.ContentControlLoadOptions
+    name: ContentControlLoadOptions
+    fullName: Word.Interfaces.ContentControlLoadOptions
   - uid: 'word!Word.ParagraphCollection:class'
-    name: Word.ParagraphCollection
+    name: ParagraphCollection
+    fullName: Word.ParagraphCollection
   - uid: 'word!Word.Body:class'
-    name: Word.Body
+    name: Body
+    fullName: Word.Body
   - uid: 'word!Word.TableCell:class'
-    name: Word.TableCell
+    name: TableCell
+    fullName: Word.TableCell
   - uid: 'word!Word.ContentControl#search~0:complex'
     name: |-
       Word.SearchOptions | {
@@ -2175,9 +2195,11 @@ references:
                       matchWildcards?: boolean;
                   }
   - uid: 'word!Word.SelectionMode:enum'
-    name: Word.SelectionMode
+    name: SelectionMode
+    fullName: Word.SelectionMode
   - uid: 'word!Word.Interfaces.ContentControlUpdateData:interface'
-    name: Interfaces.ContentControlUpdateData
+    name: ContentControlUpdateData
+    fullName: Word.Interfaces.ContentControlUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.ContentControl#styleBuiltIn~0:complex'
@@ -2267,9 +2289,11 @@ references:
       - name: ' | "Unknown" | "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" | "RichText" | "PlainText"'
         fullName: ' | "Unknown" | "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" | "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" | "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" | "RichText" | "PlainText"'
   - uid: 'word!Word.TableCollection:class'
-    name: Word.TableCollection
+    name: TableCollection
+    fullName: Word.TableCollection
   - uid: 'word!Word.Interfaces.ContentControlData:interface'
-    name: Word.Interfaces.ContentControlData
+    name: ContentControlData
+    fullName: Word.Interfaces.ContentControlData
   - uid: 'word!Word.ContentControl#type~0:complex'
     name: >-
       Word.ContentControlType | "Unknown" | "RichTextInline" | "RichTextParagraphs" | "RichTextTableCell" |

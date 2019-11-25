@@ -94,9 +94,11 @@ items:
           - 'excel!Excel.ShowAsRule#calculation~0:complex'
 references:
   - uid: 'excel!Excel.PivotField:class'
-    name: Excel.PivotField
+    name: PivotField
+    fullName: Excel.PivotField
   - uid: 'excel!Excel.PivotItem:class'
-    name: Excel.PivotItem
+    name: PivotItem
+    fullName: Excel.PivotItem
   - uid: 'excel!Excel.ShowAsRule#calculation~0:complex'
     name: >-
       Excel.ShowAsCalculation | "Unknown" | "None" | "PercentOfGrandTotal" | "PercentOfRowTotal" |

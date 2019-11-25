@@ -191,4 +191,5 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'visio!Visio.Interfaces.ShapeViewData:interface'
-    name: Visio.Interfaces.ShapeViewData
+    name: ShapeViewData
+    fullName: Visio.Interfaces.ShapeViewData

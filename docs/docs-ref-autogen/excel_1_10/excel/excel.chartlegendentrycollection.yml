@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartLegendEntryCollection#context:member'
@@ -172,6 +174,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartLegendEntryCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -182,7 +185,8 @@ references:
       - name: <number>
         fullName: <number>
   - uid: 'excel!Excel.ChartLegendEntry:class'
-    name: Excel.ChartLegendEntry
+    name: ChartLegendEntry
+    fullName: Excel.ChartLegendEntry
   - uid: 'excel!Excel.ChartLegendEntryCollection#items~0:complex'
     name: 'Excel.ChartLegendEntry[]'
     fullName: 'Excel.ChartLegendEntry[]'
@@ -193,7 +197,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.ChartLegendEntryCollection:class'
-    name: Excel.ChartLegendEntryCollection
+    name: ChartLegendEntryCollection
+    fullName: Excel.ChartLegendEntryCollection
   - uid: 'excel!Excel.ChartLegendEntryCollection#load~0:complex'
     name: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -209,4 +214,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionData:interface'
-    name: Excel.Interfaces.ChartLegendEntryCollectionData
+    name: ChartLegendEntryCollectionData
+    fullName: Excel.Interfaces.ChartLegendEntryCollectionData

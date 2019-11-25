@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.RangeBorder#color:member'
@@ -294,12 +296,16 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.RangeBorder:class'
-    name: Excel.RangeBorder
+    name: RangeBorder
+    fullName: Excel.RangeBorder
   - uid: 'excel!Excel.Interfaces.RangeBorderLoadOptions:interface'
-    name: Excel.Interfaces.RangeBorderLoadOptions
+    name: RangeBorderLoadOptions
+    fullName: Excel.Interfaces.RangeBorderLoadOptions
   - uid: 'excel!Excel.Interfaces.RangeBorderUpdateData:interface'
-    name: Interfaces.RangeBorderUpdateData
+    name: RangeBorderUpdateData
+    fullName: Excel.Interfaces.RangeBorderUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.RangeBorder#sideIndex~0:complex'
@@ -329,7 +335,8 @@ references:
       - name: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot"'
         fullName: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot"'
   - uid: 'excel!Excel.Interfaces.RangeBorderData:interface'
-    name: Excel.Interfaces.RangeBorderData
+    name: RangeBorderData
+    fullName: Excel.Interfaces.RangeBorderData
   - uid: 'excel!Excel.RangeBorder#weight~0:complex'
     name: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick"
     fullName: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick"

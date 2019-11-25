@@ -43,4 +43,5 @@ items:
           - string
 references:
   - uid: 'excel!Excel.Interfaces.ShapeFontData:interface'
-    name: Excel.Interfaces.ShapeFontData
+    name: ShapeFontData
+    fullName: Excel.Interfaces.ShapeFontData

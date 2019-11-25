@@ -122,6 +122,8 @@ items:
           - 'onenote!OneNote.Interfaces.TableRowCollectionLoadOptions:interface'
 references:
   - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
-    name: OneNote.Interfaces.ParagraphLoadOptions
+    name: ParagraphLoadOptions
+    fullName: OneNote.Interfaces.ParagraphLoadOptions
   - uid: 'onenote!OneNote.Interfaces.TableRowCollectionLoadOptions:interface'
-    name: OneNote.Interfaces.TableRowCollectionLoadOptions
+    name: TableRowCollectionLoadOptions
+    fullName: OneNote.Interfaces.TableRowCollectionLoadOptions

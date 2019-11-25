@@ -43,6 +43,7 @@ items:
 references:
   - uid: 'office!OfficeExtension.EmbeddedOptions:interface'
     name: EmbeddedOptions
+    fullName: OfficeExtension.EmbeddedOptions
   - uid: 'office!OfficeExtension.EmbeddedSession#init~0:complex'
     name: Promise<any>
     fullName: Promise<any>

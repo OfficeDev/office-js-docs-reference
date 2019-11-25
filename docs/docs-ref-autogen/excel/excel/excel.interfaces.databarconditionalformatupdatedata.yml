@@ -167,8 +167,11 @@ references:
       - name: ' | "Context" | "LeftToRight" | "RightToLeft"'
         fullName: ' | "Context" | "LeftToRight" | "RightToLeft"'
   - uid: 'excel!Excel.ConditionalDataBarRule:interface'
-    name: Excel.ConditionalDataBarRule
+    name: ConditionalDataBarRule
+    fullName: Excel.ConditionalDataBarRule
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData:interface'
-    name: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
+    name: ConditionalDataBarNegativeFormatUpdateData
+    fullName: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData:interface'
-    name: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
+    name: ConditionalDataBarPositiveFormatUpdateData
+    fullName: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData

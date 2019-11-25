@@ -286,5 +286,7 @@ items:
 references:
   - uid: 'office!Office.Binding:interface'
     name: Binding
+    fullName: Office.Binding
   - uid: 'office!Office.EventType:enum'
     name: EventType
+    fullName: Office.EventType

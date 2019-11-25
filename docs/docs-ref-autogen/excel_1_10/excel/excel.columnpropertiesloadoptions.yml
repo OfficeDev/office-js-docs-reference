@@ -12,6 +12,8 @@ items:
     type: interface
     extends:
       - 'excel!Excel.CellPropertiesLoadOptions:interface'
+    inheritance:
+      - type: 'excel!Excel.CellPropertiesLoadOptions:interface'
     package: excel!
     children:
       - 'excel!Excel.ColumnPropertiesLoadOptions#columnHidden:member'
@@ -68,6 +70,7 @@ items:
 references:
   - uid: 'excel!Excel.CellPropertiesLoadOptions:interface'
     name: CellPropertiesLoadOptions
+    fullName: Excel.CellPropertiesLoadOptions
   - uid: 'excel!Excel.ColumnPropertiesLoadOptions#format~0:complex'
     name: |-
       Excel.CellPropertiesFormatLoadOptions & {

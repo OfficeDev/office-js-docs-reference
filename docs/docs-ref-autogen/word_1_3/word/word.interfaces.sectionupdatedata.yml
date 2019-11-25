@@ -27,4 +27,5 @@ items:
           - 'word!Word.Interfaces.BodyUpdateData:interface'
 references:
   - uid: 'word!Word.Interfaces.BodyUpdateData:interface'
-    name: Word.Interfaces.BodyUpdateData
+    name: BodyUpdateData
+    fullName: Word.Interfaces.BodyUpdateData

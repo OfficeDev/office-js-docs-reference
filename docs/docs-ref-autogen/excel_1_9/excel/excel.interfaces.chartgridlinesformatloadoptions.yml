@@ -45,4 +45,5 @@ items:
           - 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartLineFormatLoadOptions
+    name: ChartLineFormatLoadOptions
+    fullName: Excel.Interfaces.ChartLineFormatLoadOptions

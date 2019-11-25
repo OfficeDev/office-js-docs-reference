@@ -63,4 +63,5 @@ items:
           - string
 references:
   - uid: 'word!Word.Interfaces.FontData:interface'
-    name: Word.Interfaces.FontData
+    name: FontData
+    fullName: Word.Interfaces.FontData

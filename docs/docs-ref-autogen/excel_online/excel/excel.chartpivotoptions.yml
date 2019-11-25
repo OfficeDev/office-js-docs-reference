@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartPivotOptions#context:member'
@@ -243,13 +245,18 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartPivotOptions:class'
-    name: Excel.ChartPivotOptions
+    name: ChartPivotOptions
+    fullName: Excel.ChartPivotOptions
   - uid: 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions:interface'
-    name: Excel.Interfaces.ChartPivotOptionsLoadOptions
+    name: ChartPivotOptionsLoadOptions
+    fullName: Excel.Interfaces.ChartPivotOptionsLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartPivotOptionsUpdateData:interface'
-    name: Interfaces.ChartPivotOptionsUpdateData
+    name: ChartPivotOptionsUpdateData
+    fullName: Excel.Interfaces.ChartPivotOptionsUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartPivotOptionsData:interface'
-    name: Excel.Interfaces.ChartPivotOptionsData
+    name: ChartPivotOptionsData
+    fullName: Excel.Interfaces.ChartPivotOptionsData

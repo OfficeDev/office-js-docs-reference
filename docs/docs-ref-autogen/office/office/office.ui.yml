@@ -318,6 +318,7 @@ items:
 references:
   - uid: 'office!Office.DialogOptions:interface'
     name: DialogOptions
+    fullName: Office.DialogOptions
   - uid: 'office!Office.UI#displayDialogAsync~0:complex'
     name: '(result: AsyncResult<Dialog>) => void'
     fullName: '(result: Office.AsyncResult<Office.Dialog>) => void'

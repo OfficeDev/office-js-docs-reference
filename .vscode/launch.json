@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Test",
-            "program": "${workspaceRoot}/generate-docs/scripts/preprocessor.js",
+            "program": "${workspaceRoot}/generate-docs/scripts/postprocessor.js",
             "args": [],
             "sourceMaps": true,
             "outFiles": [],

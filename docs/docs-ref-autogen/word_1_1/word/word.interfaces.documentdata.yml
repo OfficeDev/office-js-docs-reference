@@ -81,7 +81,8 @@ items:
           - 'word!Word.Interfaces.DocumentData#sections~0:complex'
 references:
   - uid: 'word!Word.Interfaces.BodyData:interface'
-    name: Word.Interfaces.BodyData
+    name: BodyData
+    fullName: Word.Interfaces.BodyData
   - uid: 'word!Word.Interfaces.DocumentData#contentControls~0:complex'
     name: 'Word.Interfaces.ContentControlData[]'
     fullName: 'Word.Interfaces.ContentControlData[]'

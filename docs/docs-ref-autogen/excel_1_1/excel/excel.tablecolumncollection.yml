@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TableColumnCollection#add:member(1)'
@@ -306,7 +308,8 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.TableColumn:class'
-    name: Excel.TableColumn
+    name: TableColumn
+    fullName: Excel.TableColumn
   - uid: 'excel!Excel.TableColumnCollection#add~0:complex'
     name: Array<Array<boolean | string | number>> | boolean | string | number
     fullName: Array<Array<boolean | string | number>> | boolean | string | number
@@ -323,6 +326,7 @@ references:
         fullName: <boolean | string | number>> | boolean | string | number
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.TableColumnCollection#items~0:complex'
     name: 'Excel.TableColumn[]'
     fullName: 'Excel.TableColumn[]'
@@ -333,7 +337,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.TableColumnCollection:class'
-    name: Excel.TableColumnCollection
+    name: TableColumnCollection
+    fullName: Excel.TableColumnCollection
   - uid: 'excel!Excel.TableColumnCollection#load~0:complex'
     name: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -349,4 +354,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.TableColumnCollectionData:interface'
-    name: Excel.Interfaces.TableColumnCollectionData
+    name: TableColumnCollectionData
+    fullName: Excel.Interfaces.TableColumnCollectionData

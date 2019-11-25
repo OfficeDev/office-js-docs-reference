@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartBorder#clear:member(1)'
@@ -243,6 +245,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartBorder#lineStyle~0:complex'
     name: >-
       Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" |
@@ -257,12 +260,16 @@ references:
       - name: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"'
         fullName: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"'
   - uid: 'excel!Excel.ChartBorder:class'
-    name: Excel.ChartBorder
+    name: ChartBorder
+    fullName: Excel.ChartBorder
   - uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
-    name: Excel.Interfaces.ChartBorderLoadOptions
+    name: ChartBorderLoadOptions
+    fullName: Excel.Interfaces.ChartBorderLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartBorderUpdateData:interface'
-    name: Interfaces.ChartBorderUpdateData
+    name: ChartBorderUpdateData
+    fullName: Excel.Interfaces.ChartBorderUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartBorderData:interface'
-    name: Excel.Interfaces.ChartBorderData
+    name: ChartBorderData
+    fullName: Excel.Interfaces.ChartBorderData

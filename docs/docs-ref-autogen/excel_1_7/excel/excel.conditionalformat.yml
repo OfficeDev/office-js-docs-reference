@@ -15,6 +15,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ConditionalFormat#cellValue:member'
@@ -790,35 +792,49 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.CellValueConditionalFormat:class'
-    name: Excel.CellValueConditionalFormat
+    name: CellValueConditionalFormat
+    fullName: Excel.CellValueConditionalFormat
   - uid: 'excel!Excel.ColorScaleConditionalFormat:class'
-    name: Excel.ColorScaleConditionalFormat
+    name: ColorScaleConditionalFormat
+    fullName: Excel.ColorScaleConditionalFormat
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.CustomConditionalFormat:class'
-    name: Excel.CustomConditionalFormat
+    name: CustomConditionalFormat
+    fullName: Excel.CustomConditionalFormat
   - uid: 'excel!Excel.DataBarConditionalFormat:class'
-    name: Excel.DataBarConditionalFormat
+    name: DataBarConditionalFormat
+    fullName: Excel.DataBarConditionalFormat
   - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
+    name: Range
+    fullName: Excel.Range
   - uid: 'excel!Excel.IconSetConditionalFormat:class'
-    name: Excel.IconSetConditionalFormat
+    name: IconSetConditionalFormat
+    fullName: Excel.IconSetConditionalFormat
   - uid: 'excel!Excel.ConditionalFormat:class'
-    name: Excel.ConditionalFormat
+    name: ConditionalFormat
+    fullName: Excel.ConditionalFormat
   - uid: 'excel!Excel.Interfaces.ConditionalFormatLoadOptions:interface'
-    name: Excel.Interfaces.ConditionalFormatLoadOptions
+    name: ConditionalFormatLoadOptions
+    fullName: Excel.Interfaces.ConditionalFormatLoadOptions
   - uid: 'excel!Excel.PresetCriteriaConditionalFormat:class'
-    name: Excel.PresetCriteriaConditionalFormat
+    name: PresetCriteriaConditionalFormat
+    fullName: Excel.PresetCriteriaConditionalFormat
   - uid: 'excel!Excel.Interfaces.ConditionalFormatUpdateData:interface'
-    name: Interfaces.ConditionalFormatUpdateData
+    name: ConditionalFormatUpdateData
+    fullName: Excel.Interfaces.ConditionalFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.TextConditionalFormat:class'
-    name: Excel.TextConditionalFormat
+    name: TextConditionalFormat
+    fullName: Excel.TextConditionalFormat
   - uid: 'excel!Excel.Interfaces.ConditionalFormatData:interface'
-    name: Excel.Interfaces.ConditionalFormatData
+    name: ConditionalFormatData
+    fullName: Excel.Interfaces.ConditionalFormatData
   - uid: 'excel!Excel.TopBottomConditionalFormat:class'
-    name: Excel.TopBottomConditionalFormat
+    name: TopBottomConditionalFormat
+    fullName: Excel.TopBottomConditionalFormat
   - uid: 'excel!Excel.ConditionalFormat#type~0:complex'
     name: >-
       Excel.ConditionalFormatType | "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" |

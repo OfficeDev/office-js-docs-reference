@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.FilterPivotHierarchyCollection#add:member(1)'
@@ -239,11 +241,14 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.FilterPivotHierarchy:class'
-    name: Excel.FilterPivotHierarchy
+    name: FilterPivotHierarchy
+    fullName: Excel.FilterPivotHierarchy
   - uid: 'excel!Excel.PivotHierarchy:class'
-    name: Excel.PivotHierarchy
+    name: PivotHierarchy
+    fullName: Excel.PivotHierarchy
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.FilterPivotHierarchyCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -263,7 +268,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.FilterPivotHierarchyCollection:class'
-    name: Excel.FilterPivotHierarchyCollection
+    name: FilterPivotHierarchyCollection
+    fullName: Excel.FilterPivotHierarchyCollection
   - uid: 'excel!Excel.FilterPivotHierarchyCollection#load~0:complex'
     name: Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -279,4 +285,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyCollectionData:interface'
-    name: Excel.Interfaces.FilterPivotHierarchyCollectionData
+    name: FilterPivotHierarchyCollectionData
+    fullName: Excel.Interfaces.FilterPivotHierarchyCollectionData

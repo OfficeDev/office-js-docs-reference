@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartPointsCollection#context:member'
@@ -243,6 +245,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartPointsCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -253,7 +256,8 @@ references:
       - name: <number>
         fullName: <number>
   - uid: 'excel!Excel.ChartPoint:class'
-    name: Excel.ChartPoint
+    name: ChartPoint
+    fullName: Excel.ChartPoint
   - uid: 'excel!Excel.ChartPointsCollection#items~0:complex'
     name: 'Excel.ChartPoint[]'
     fullName: 'Excel.ChartPoint[]'
@@ -264,7 +268,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.ChartPointsCollection:class'
-    name: Excel.ChartPointsCollection
+    name: ChartPointsCollection
+    fullName: Excel.ChartPointsCollection
   - uid: 'excel!Excel.ChartPointsCollection#load~0:complex'
     name: Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -280,4 +285,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.ChartPointsCollectionData:interface'
-    name: Excel.Interfaces.ChartPointsCollectionData
+    name: ChartPointsCollectionData
+    fullName: Excel.Interfaces.ChartPointsCollectionData

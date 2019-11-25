@@ -127,7 +127,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.HeaderFooterData:interface'
-    name: Excel.Interfaces.HeaderFooterData
+    name: HeaderFooterData
+    fullName: Excel.Interfaces.HeaderFooterData
   - uid: 'excel!Excel.Interfaces.HeaderFooterGroupData#state~0:complex'
     name: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"
     fullName: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"

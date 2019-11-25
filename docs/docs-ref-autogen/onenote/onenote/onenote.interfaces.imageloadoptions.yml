@@ -156,6 +156,8 @@ items:
           - boolean
 references:
   - uid: 'onenote!OneNote.Interfaces.PageContentLoadOptions:interface'
-    name: OneNote.Interfaces.PageContentLoadOptions
+    name: PageContentLoadOptions
+    fullName: OneNote.Interfaces.PageContentLoadOptions
   - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
-    name: OneNote.Interfaces.ParagraphLoadOptions
+    name: ParagraphLoadOptions
+    fullName: OneNote.Interfaces.ParagraphLoadOptions

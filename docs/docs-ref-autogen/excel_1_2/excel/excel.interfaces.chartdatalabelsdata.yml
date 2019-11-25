@@ -159,7 +159,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatData:interface'
-    name: Excel.Interfaces.ChartDataLabelFormatData
+    name: ChartDataLabelFormatData
+    fullName: Excel.Interfaces.ChartDataLabelFormatData
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsData#position~0:complex'
     name: >-
       Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left"

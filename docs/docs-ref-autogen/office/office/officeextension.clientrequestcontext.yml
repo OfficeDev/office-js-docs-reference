@@ -175,8 +175,10 @@ items:
 references:
   - uid: 'office!OfficeExtension.RequestContextDebugInfo:interface'
     name: RequestContextDebugInfo
+    fullName: OfficeExtension.RequestContextDebugInfo
   - uid: 'office!OfficeExtension.ClientObject:class'
     name: ClientObject
+    fullName: OfficeExtension.ClientObject
   - uid: 'office!OfficeExtension.ClientRequestContext#load~0:complex'
     name: 'string | string[] | LoadOption'
     fullName: 'string | string[] | OfficeExtension.LoadOption'
@@ -208,3 +210,4 @@ references:
         fullName: <T>
   - uid: 'office!OfficeExtension.TrackedObjects:class'
     name: TrackedObjects
+    fullName: OfficeExtension.TrackedObjects

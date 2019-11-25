@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.CommentReplyCollection#add:member(1)'
@@ -266,7 +268,8 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.CommentReply:class'
-    name: Excel.CommentReply
+    name: CommentReply
+    fullName: Excel.CommentReply
   - uid: 'excel!Excel.CommentReplyCollection#add~0:complex'
     name: CommentRichContent | string
     fullName: Excel.CommentRichContent | string
@@ -277,7 +280,8 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.ContentType:enum'
-    name: Excel.ContentType
+    name: ContentType
+    fullName: Excel.ContentType
   - uid: 'excel!Excel.CommentReplyCollection#add~1:complex'
     name: CommentRichContent | string
     fullName: Excel.CommentRichContent | string
@@ -289,6 +293,7 @@ references:
         fullName: ' | string'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.CommentReplyCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -308,7 +313,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.CommentReplyCollection:class'
-    name: Excel.CommentReplyCollection
+    name: CommentReplyCollection
+    fullName: Excel.CommentReplyCollection
   - uid: 'excel!Excel.CommentReplyCollection#load~0:complex'
     name: Excel.Interfaces.CommentReplyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.CommentReplyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -324,4 +330,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.CommentReplyCollectionData:interface'
-    name: Excel.Interfaces.CommentReplyCollectionData
+    name: CommentReplyCollectionData
+    fullName: Excel.Interfaces.CommentReplyCollectionData

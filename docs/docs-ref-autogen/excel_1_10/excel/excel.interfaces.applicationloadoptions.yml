@@ -100,4 +100,5 @@ items:
           - 'excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface'
-    name: Excel.Interfaces.IterativeCalculationLoadOptions
+    name: IterativeCalculationLoadOptions
+    fullName: Excel.Interfaces.IterativeCalculationLoadOptions

@@ -243,4 +243,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.TextRangeLoadOptions:interface'
-    name: Excel.Interfaces.TextRangeLoadOptions
+    name: TextRangeLoadOptions
+    fullName: Excel.Interfaces.TextRangeLoadOptions

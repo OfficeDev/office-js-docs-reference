@@ -27,4 +27,5 @@ items:
           - 'visio!Visio.Interfaces.PageViewUpdateData:interface'
 references:
   - uid: 'visio!Visio.Interfaces.PageViewUpdateData:interface'
-    name: Visio.Interfaces.PageViewUpdateData
+    name: PageViewUpdateData
+    fullName: Visio.Interfaces.PageViewUpdateData

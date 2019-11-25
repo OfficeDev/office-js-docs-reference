@@ -553,9 +553,11 @@ references:
       - name: ' | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"'
         fullName: ' | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"'
   - uid: 'excel!Excel.Interfaces.ChartAxisFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartAxisFormatUpdateData
+    name: ChartAxisFormatUpdateData
+    fullName: Excel.Interfaces.ChartAxisFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ChartGridlinesUpdateData:interface'
-    name: Excel.Interfaces.ChartGridlinesUpdateData
+    name: ChartGridlinesUpdateData
+    fullName: Excel.Interfaces.ChartGridlinesUpdateData
   - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#majorTickMark~0:complex'
     name: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
     fullName: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
@@ -620,4 +622,5 @@ references:
       - name: ' | "NextToAxis" | "High" | "Low" | "None"'
         fullName: ' | "NextToAxis" | "High" | "Low" | "None"'
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleUpdateData:interface'
-    name: Excel.Interfaces.ChartAxisTitleUpdateData
+    name: ChartAxisTitleUpdateData
+    fullName: Excel.Interfaces.ChartAxisTitleUpdateData

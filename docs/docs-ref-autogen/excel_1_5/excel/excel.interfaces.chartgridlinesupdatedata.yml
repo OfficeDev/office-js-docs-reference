@@ -43,4 +43,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartGridlinesFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartGridlinesFormatUpdateData
+    name: ChartGridlinesFormatUpdateData
+    fullName: Excel.Interfaces.ChartGridlinesFormatUpdateData

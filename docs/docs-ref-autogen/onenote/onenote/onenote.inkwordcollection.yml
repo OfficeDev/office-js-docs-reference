@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.InkWordCollection#context:member'
@@ -243,8 +245,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
+    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.InkWord:class'
-    name: OneNote.InkWord
+    name: InkWord
+    fullName: OneNote.InkWord
   - uid: 'onenote!OneNote.InkWordCollection#items~0:complex'
     name: 'OneNote.InkWord[]'
     fullName: 'OneNote.InkWord[]'
@@ -255,7 +259,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'onenote!OneNote.InkWordCollection:class'
-    name: OneNote.InkWordCollection
+    name: InkWordCollection
+    fullName: OneNote.InkWordCollection
   - uid: 'onenote!OneNote.InkWordCollection#load~0:complex'
     name: OneNote.Interfaces.InkWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
     fullName: OneNote.Interfaces.InkWordCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
@@ -271,4 +276,5 @@ references:
   - uid: 'onenote!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'onenote!OneNote.Interfaces.InkWordCollectionData:interface'
-    name: OneNote.Interfaces.InkWordCollectionData
+    name: InkWordCollectionData
+    fullName: OneNote.Interfaces.InkWordCollectionData

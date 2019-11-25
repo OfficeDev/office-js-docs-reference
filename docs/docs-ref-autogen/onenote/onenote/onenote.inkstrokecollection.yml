@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.InkStrokeCollection#context:member'
@@ -243,8 +245,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
+    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.InkStroke:class'
-    name: OneNote.InkStroke
+    name: InkStroke
+    fullName: OneNote.InkStroke
   - uid: 'onenote!OneNote.InkStrokeCollection#items~0:complex'
     name: 'OneNote.InkStroke[]'
     fullName: 'OneNote.InkStroke[]'
@@ -255,7 +259,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'onenote!OneNote.InkStrokeCollection:class'
-    name: OneNote.InkStrokeCollection
+    name: InkStrokeCollection
+    fullName: OneNote.InkStrokeCollection
   - uid: 'onenote!OneNote.InkStrokeCollection#load~0:complex'
     name: OneNote.Interfaces.InkStrokeCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
     fullName: OneNote.Interfaces.InkStrokeCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
@@ -271,4 +276,5 @@ references:
   - uid: 'onenote!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionData:interface'
-    name: OneNote.Interfaces.InkStrokeCollectionData
+    name: InkStrokeCollectionData
+    fullName: OneNote.Interfaces.InkStrokeCollectionData

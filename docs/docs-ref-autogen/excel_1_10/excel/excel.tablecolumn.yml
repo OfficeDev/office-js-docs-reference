@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TableColumn#context:member'
@@ -478,17 +480,24 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Filter:class'
-    name: Excel.Filter
+    name: Filter
+    fullName: Excel.Filter
   - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
+    name: Range
+    fullName: Excel.Range
   - uid: 'excel!Excel.TableColumn:class'
-    name: Excel.TableColumn
+    name: TableColumn
+    fullName: Excel.TableColumn
   - uid: 'excel!Excel.Interfaces.TableColumnLoadOptions:interface'
-    name: Excel.Interfaces.TableColumnLoadOptions
+    name: TableColumnLoadOptions
+    fullName: Excel.Interfaces.TableColumnLoadOptions
   - uid: 'excel!Excel.Interfaces.TableColumnUpdateData:interface'
-    name: Interfaces.TableColumnUpdateData
+    name: TableColumnUpdateData
+    fullName: Excel.Interfaces.TableColumnUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.TableColumnData:interface'
-    name: Excel.Interfaces.TableColumnData
+    name: TableColumnData
+    fullName: Excel.Interfaces.TableColumnData

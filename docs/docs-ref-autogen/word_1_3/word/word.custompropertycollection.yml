@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.CustomPropertyCollection#add:member(1)'
@@ -325,9 +327,11 @@ references:
   - uid: 'word!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.CustomProperty:class'
-    name: Word.CustomProperty
+    name: CustomProperty
+    fullName: Word.CustomProperty
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.CustomPropertyCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -347,7 +351,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.CustomPropertyCollection:class'
-    name: Word.CustomPropertyCollection
+    name: CustomPropertyCollection
+    fullName: Word.CustomPropertyCollection
   - uid: 'word!Word.CustomPropertyCollection#load~0:complex'
     name: Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
     fullName: Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
@@ -363,4 +368,5 @@ references:
   - uid: 'word!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'word!Word.Interfaces.CustomPropertyCollectionData:interface'
-    name: Word.Interfaces.CustomPropertyCollectionData
+    name: CustomPropertyCollectionData
+    fullName: Word.Interfaces.CustomPropertyCollectionData

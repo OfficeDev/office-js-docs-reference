@@ -238,8 +238,11 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.CellPropertiesBorderLoadOptions:interface'
-    name: Excel.CellPropertiesBorderLoadOptions
+    name: CellPropertiesBorderLoadOptions
+    fullName: Excel.CellPropertiesBorderLoadOptions
   - uid: 'excel!Excel.CellPropertiesFillLoadOptions:interface'
-    name: Excel.CellPropertiesFillLoadOptions
+    name: CellPropertiesFillLoadOptions
+    fullName: Excel.CellPropertiesFillLoadOptions
   - uid: 'excel!Excel.CellPropertiesFontLoadOptions:interface'
-    name: Excel.CellPropertiesFontLoadOptions
+    name: CellPropertiesFontLoadOptions
+    fullName: Excel.CellPropertiesFontLoadOptions

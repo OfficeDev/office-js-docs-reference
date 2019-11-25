@@ -14,6 +14,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ShapeGroup#context:member'
@@ -208,13 +210,19 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ShapeGroup:class'
-    name: Excel.ShapeGroup
+    name: ShapeGroup
+    fullName: Excel.ShapeGroup
   - uid: 'excel!Excel.Interfaces.ShapeGroupLoadOptions:interface'
-    name: Excel.Interfaces.ShapeGroupLoadOptions
+    name: ShapeGroupLoadOptions
+    fullName: Excel.Interfaces.ShapeGroupLoadOptions
   - uid: 'excel!Excel.Shape:class'
-    name: Excel.Shape
+    name: Shape
+    fullName: Excel.Shape
   - uid: 'excel!Excel.GroupShapeCollection:class'
-    name: Excel.GroupShapeCollection
+    name: GroupShapeCollection
+    fullName: Excel.GroupShapeCollection
   - uid: 'excel!Excel.Interfaces.ShapeGroupData:interface'
-    name: Excel.Interfaces.ShapeGroupData
+    name: ShapeGroupData
+    fullName: Excel.Interfaces.ShapeGroupData

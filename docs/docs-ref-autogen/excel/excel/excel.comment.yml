@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Comment#authorEmail:member'
@@ -442,14 +444,18 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: '!Date:interface'
     name: Date
   - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
+    name: Range
+    fullName: Excel.Range
   - uid: 'excel!Excel.Comment:class'
-    name: Excel.Comment
+    name: Comment
+    fullName: Excel.Comment
   - uid: 'excel!Excel.Interfaces.CommentLoadOptions:interface'
-    name: Excel.Interfaces.CommentLoadOptions
+    name: CommentLoadOptions
+    fullName: Excel.Interfaces.CommentLoadOptions
   - uid: 'excel!Excel.Comment#mentions~0:complex'
     name: 'Excel.CommentMention[]'
     fullName: 'Excel.CommentMention[]'
@@ -460,12 +466,16 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.CommentReplyCollection:class'
-    name: Excel.CommentReplyCollection
+    name: CommentReplyCollection
+    fullName: Excel.CommentReplyCollection
   - uid: 'excel!Excel.Interfaces.CommentUpdateData:interface'
-    name: Interfaces.CommentUpdateData
+    name: CommentUpdateData
+    fullName: Excel.Interfaces.CommentUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.CommentData:interface'
-    name: Excel.Interfaces.CommentData
+    name: CommentData
+    fullName: Excel.Interfaces.CommentData
   - uid: 'excel!Excel.CommentRichContent:interface'
-    name: Excel.CommentRichContent
+    name: CommentRichContent
+    fullName: Excel.CommentRichContent

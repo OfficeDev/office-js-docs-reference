@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.Section#body:member'
@@ -470,18 +472,25 @@ references:
   - uid: 'word!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.Body:class'
-    name: Word.Body
+    name: Body
+    fullName: Word.Body
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.HeaderFooterType:enum'
-    name: Word.HeaderFooterType
+    name: HeaderFooterType
+    fullName: Word.HeaderFooterType
   - uid: 'word!Word.Section:class'
-    name: Word.Section
+    name: Section
+    fullName: Word.Section
   - uid: 'word!Word.Interfaces.SectionLoadOptions:interface'
-    name: Word.Interfaces.SectionLoadOptions
+    name: SectionLoadOptions
+    fullName: Word.Interfaces.SectionLoadOptions
   - uid: 'word!Word.Interfaces.SectionUpdateData:interface'
-    name: Interfaces.SectionUpdateData
+    name: SectionUpdateData
+    fullName: Word.Interfaces.SectionUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.SectionData:interface'
-    name: Word.Interfaces.SectionData
+    name: SectionData
+    fullName: Word.Interfaces.SectionData

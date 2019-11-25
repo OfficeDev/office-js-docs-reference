@@ -19,12 +19,7 @@ interface Toc {
                     items: [
                         {
                             name: string,
-                            items: [
-                                {
-                                    name: string,
-                                    uid?: string
-                                }
-                            ]
+                            uid?: string
                         }
                     ]
                 }
@@ -53,7 +48,7 @@ tryCatch(async () => {
                                 {"name": "Outlook", "href": "/javascript/api/outlook?view=outlook-js-preview"},
                                 {"name": "PowerPoint", "href": "/javascript/api/powerpoint?view=powerpoint-js-1.1"},
                                 {"name": "Visio", "href": "/javascript/api/visio?view=visio-js-1.1"},
-                                {"name": "Word", "href": "/javascript/api/word?view=word-js-preview"}, 
+                                {"name": "Word", "href": "/javascript/api/word?view=word-js-preview"},
                                 {"name": "CommonAPI", "href": "/javascript/api/office?view=common-js"}] as any;
     fsx.writeFileSync(docsDestination + "/toc.yml", jsyaml.safeDump(globalToc));
     fsx.writeFileSync(docsDestination + "/overview/toc.yml", jsyaml.safeDump(globalToc));
@@ -196,7 +191,7 @@ function fixToc(tocPath: string, commonToc: Toc, versionNumber: number): Toc {
                     packageName = (packageItem.name.substr(0, 1).toUpperCase() + packageItem.name.substr(1)).replace(/\-/g, ' ');
                 }
 
-                let namespaceItems = packageItem.items[0].items;
+                let namespaceItems = packageItem.items;
 
                 if (packageName.toLocaleLowerCase().includes('outlook')) {
                     let filterToCContent = namespaceItems.filter(item => {
@@ -229,8 +224,8 @@ function fixToc(tocPath: string, commonToc: Toc, versionNumber: number): Toc {
                         return excelFilter.indexOf(item.name) < 0;
                     });
 
-                    let excelEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
-                    let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
+                    let excelEnumRoot = {"name": "Enums", "items": enumList};
+                    let excelIconSetRoot = {"name": "Icon Sets", "items": iconSetList};
                     primaryList.unshift(excelIconSetRoot);
                     primaryList.unshift(excelEnumRoot);
                     if (versionNumber >= OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS) {
@@ -334,19 +329,16 @@ function fixCommonToc(tocPath: string): Toc {
     origToc.items.forEach((rootItem, rootIndex) => {
         rootItem.items.forEach((packageItem, packageIndex) => {
             if (packageItem.name === 'office') {
-                packageItem.items.forEach((namespaceItem, namespaceIndex) => {
-                    if (namespaceItem.name.toLocaleLowerCase() === 'office') {
-                        let enumList = namespaceItem.items.filter(item => {
-                            return sharedEnumFilter.indexOf(item.name) >= 0;
-                        });
-                        let primaryList = namespaceItem.items.filter(item => {
-                            return sharedEnumFilter.indexOf(item.name) < 0;
-                        });
-                        sharedEnumRoot.items = enumList;
-                        primaryList.unshift(sharedEnumRoot);
-                        namespaceItem.items = primaryList as any;
-                    }
+                let enumList = packageItem.items.filter(item => {
+                    return sharedEnumFilter.indexOf(item.name) >= 0;
                 });
+                        
+                let primaryList = packageItem.items.filter(item => {
+                    return sharedEnumFilter.indexOf(item.name) < 0;
+                });
+                sharedEnumRoot.items = enumList;
+                primaryList.unshift(sharedEnumRoot);
+                packageItem.items = primaryList as any;
                 newToc.items[0].items.push({
                     "name": 'Common API',
                     "uid": packageItem.uid,

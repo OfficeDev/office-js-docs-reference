@@ -47,3 +47,4 @@ items:
 references:
   - uid: 'outlook!Office.RecipientsChangedFields:interface'
     name: RecipientsChangedFields
+    fullName: Office.RecipientsChangedFields

@@ -111,9 +111,11 @@ items:
           - 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData#summarizeBy~0:complex'
 references:
   - uid: 'excel!Excel.Interfaces.PivotFieldUpdateData:interface'
-    name: Excel.Interfaces.PivotFieldUpdateData
+    name: PivotFieldUpdateData
+    fullName: Excel.Interfaces.PivotFieldUpdateData
   - uid: 'excel!Excel.ShowAsRule:interface'
-    name: Excel.ShowAsRule
+    name: ShowAsRule
+    fullName: Excel.ShowAsRule
   - uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData#summarizeBy~0:complex'
     name: >-
       Excel.AggregationFunction | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" | "Product" |

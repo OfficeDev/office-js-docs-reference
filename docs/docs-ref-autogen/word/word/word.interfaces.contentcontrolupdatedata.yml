@@ -239,7 +239,8 @@ references:
       - name: ' | "BoundingBox" | "Tags" | "Hidden"'
         fullName: ' | "BoundingBox" | "Tags" | "Hidden"'
   - uid: 'word!Word.Interfaces.FontUpdateData:interface'
-    name: Word.Interfaces.FontUpdateData
+    name: FontUpdateData
+    fullName: Word.Interfaces.FontUpdateData
   - uid: 'word!Word.Interfaces.ContentControlUpdateData#styleBuiltIn~0:complex'
     name: >-
       Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" |

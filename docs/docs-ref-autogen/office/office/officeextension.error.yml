@@ -192,5 +192,7 @@ items:
 references:
   - uid: 'office!OfficeExtension.DebugInfo:interface'
     name: DebugInfo
+    fullName: OfficeExtension.DebugInfo
   - uid: 'office!OfficeExtension.Error:class'
     name: Error
+    fullName: OfficeExtension.Error

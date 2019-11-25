@@ -285,7 +285,8 @@ items:
             - 'office!Office.CustomXmlParts#getByNamespaceAsync~1:complex'
 references:
   - uid: 'office!Office.AsyncContextOptions:interface'
-    name: Office.AsyncContextOptions
+    name: AsyncContextOptions
+    fullName: Office.AsyncContextOptions
   - uid: 'office!Office.CustomXmlParts#addAsync~0:complex'
     name: '(result: AsyncResult<CustomXmlPart>) => void'
     fullName: '(result: Office.AsyncResult<Office.CustomXmlPart>) => void'

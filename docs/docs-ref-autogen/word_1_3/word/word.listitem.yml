@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.ListItem#context:member'
@@ -347,17 +349,24 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.Paragraph:class'
-    name: Word.Paragraph
+    name: Paragraph
+    fullName: Word.Paragraph
   - uid: 'word!Word.ParagraphCollection:class'
-    name: Word.ParagraphCollection
+    name: ParagraphCollection
+    fullName: Word.ParagraphCollection
   - uid: 'word!Word.ListItem:class'
-    name: Word.ListItem
+    name: ListItem
+    fullName: Word.ListItem
   - uid: 'word!Word.Interfaces.ListItemLoadOptions:interface'
-    name: Word.Interfaces.ListItemLoadOptions
+    name: ListItemLoadOptions
+    fullName: Word.Interfaces.ListItemLoadOptions
   - uid: 'word!Word.Interfaces.ListItemUpdateData:interface'
-    name: Interfaces.ListItemUpdateData
+    name: ListItemUpdateData
+    fullName: Word.Interfaces.ListItemUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.ListItemData:interface'
-    name: Word.Interfaces.ListItemData
+    name: ListItemData
+    fullName: Word.Interfaces.ListItemData

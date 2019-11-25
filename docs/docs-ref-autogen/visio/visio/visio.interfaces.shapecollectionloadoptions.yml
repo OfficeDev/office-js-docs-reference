@@ -108,4 +108,5 @@ items:
           - 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'
 references:
   - uid: 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'
-    name: Visio.Interfaces.ShapeViewLoadOptions
+    name: ShapeViewLoadOptions
+    fullName: Visio.Interfaces.ShapeViewLoadOptions

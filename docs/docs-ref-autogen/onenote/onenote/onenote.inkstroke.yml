@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'onenote!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'onenote!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.InkStroke#context:member'
@@ -205,11 +207,16 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
+    fullName: OneNote.RequestContext
   - uid: 'onenote!OneNote.FloatingInk:class'
-    name: OneNote.FloatingInk
+    name: FloatingInk
+    fullName: OneNote.FloatingInk
   - uid: 'onenote!OneNote.InkStroke:class'
-    name: OneNote.InkStroke
+    name: InkStroke
+    fullName: OneNote.InkStroke
   - uid: 'onenote!OneNote.Interfaces.InkStrokeLoadOptions:interface'
-    name: OneNote.Interfaces.InkStrokeLoadOptions
+    name: InkStrokeLoadOptions
+    fullName: OneNote.Interfaces.InkStrokeLoadOptions
   - uid: 'onenote!OneNote.Interfaces.InkStrokeData:interface'
-    name: OneNote.Interfaces.InkStrokeData
+    name: InkStrokeData
+    fullName: OneNote.Interfaces.InkStrokeData

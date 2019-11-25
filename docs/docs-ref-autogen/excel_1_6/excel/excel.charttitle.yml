@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartTitle#context:member'
@@ -280,15 +282,21 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartTitleFormat:class'
-    name: Excel.ChartTitleFormat
+    name: ChartTitleFormat
+    fullName: Excel.ChartTitleFormat
   - uid: 'excel!Excel.ChartTitle:class'
-    name: Excel.ChartTitle
+    name: ChartTitle
+    fullName: Excel.ChartTitle
   - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions:interface'
-    name: Excel.Interfaces.ChartTitleLoadOptions
+    name: ChartTitleLoadOptions
+    fullName: Excel.Interfaces.ChartTitleLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartTitleUpdateData:interface'
-    name: Interfaces.ChartTitleUpdateData
+    name: ChartTitleUpdateData
+    fullName: Excel.Interfaces.ChartTitleUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartTitleData:interface'
-    name: Excel.Interfaces.ChartTitleData
+    name: ChartTitleData
+    fullName: Excel.Interfaces.ChartTitleData

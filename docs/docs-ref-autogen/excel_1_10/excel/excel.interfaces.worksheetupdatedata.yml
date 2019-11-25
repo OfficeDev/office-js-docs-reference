@@ -166,7 +166,8 @@ items:
           - 'excel!Excel.Interfaces.WorksheetUpdateData#visibility~0:complex'
 references:
   - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData:interface'
-    name: Excel.Interfaces.PageLayoutUpdateData
+    name: PageLayoutUpdateData
+    fullName: Excel.Interfaces.PageLayoutUpdateData
   - uid: 'excel!Excel.Interfaces.WorksheetUpdateData#visibility~0:complex'
     name: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden"
     fullName: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden"

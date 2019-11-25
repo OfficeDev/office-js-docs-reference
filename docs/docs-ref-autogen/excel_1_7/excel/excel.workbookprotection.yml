@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.WorkbookProtection#context:member'
@@ -234,9 +236,13 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.WorkbookProtection:class'
-    name: Excel.WorkbookProtection
+    name: WorkbookProtection
+    fullName: Excel.WorkbookProtection
   - uid: 'excel!Excel.Interfaces.WorkbookProtectionLoadOptions:interface'
-    name: Excel.Interfaces.WorkbookProtectionLoadOptions
+    name: WorkbookProtectionLoadOptions
+    fullName: Excel.Interfaces.WorkbookProtectionLoadOptions
   - uid: 'excel!Excel.Interfaces.WorkbookProtectionData:interface'
-    name: Excel.Interfaces.WorkbookProtectionData
+    name: WorkbookProtectionData
+    fullName: Excel.Interfaces.WorkbookProtectionData

@@ -140,6 +140,8 @@ items:
           ```
 references:
   - uid: 'excel!Excel.CellPropertiesFormat:interface'
-    name: Excel.CellPropertiesFormat
+    name: CellPropertiesFormat
+    fullName: Excel.CellPropertiesFormat
   - uid: 'excel!Excel.RangeHyperlink:interface'
-    name: Excel.RangeHyperlink
+    name: RangeHyperlink
+    fullName: Excel.RangeHyperlink

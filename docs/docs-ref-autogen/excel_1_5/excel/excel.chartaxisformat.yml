@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartAxisFormat#context:member'
@@ -208,17 +210,24 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartFont:class'
-    name: Excel.ChartFont
+    name: ChartFont
+    fullName: Excel.ChartFont
   - uid: 'excel!Excel.ChartLineFormat:class'
-    name: Excel.ChartLineFormat
+    name: ChartLineFormat
+    fullName: Excel.ChartLineFormat
   - uid: 'excel!Excel.ChartAxisFormat:class'
-    name: Excel.ChartAxisFormat
+    name: ChartAxisFormat
+    fullName: Excel.ChartAxisFormat
   - uid: 'excel!Excel.Interfaces.ChartAxisFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartAxisFormatLoadOptions
+    name: ChartAxisFormatLoadOptions
+    fullName: Excel.Interfaces.ChartAxisFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartAxisFormatUpdateData:interface'
-    name: Interfaces.ChartAxisFormatUpdateData
+    name: ChartAxisFormatUpdateData
+    fullName: Excel.Interfaces.ChartAxisFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartAxisFormatData:interface'
-    name: Excel.Interfaces.ChartAxisFormatData
+    name: ChartAxisFormatData
+    fullName: Excel.Interfaces.ChartAxisFormatData

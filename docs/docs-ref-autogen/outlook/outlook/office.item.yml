@@ -970,8 +970,10 @@ references:
         fullName: <void>) => void
   - uid: 'outlook!Office.Body:interface'
     name: Body
+    fullName: Office.Body
   - uid: 'outlook!Office.Categories:interface'
     name: Categories
+    fullName: Office.Categories
   - uid: 'outlook!Office.Item#getAttachmentContentAsync~0:complex'
     name: '(asyncResult: Office.AsyncResult<AttachmentContent>) => void'
     fullName: '(asyncResult: Office.AsyncResult<Office.AttachmentContent>) => void'
@@ -1085,6 +1087,7 @@ references:
         fullName: '>) => void'
   - uid: 'outlook!Office.NotificationMessages:interface'
     name: NotificationMessages
+    fullName: Office.NotificationMessages
   - uid: 'outlook!Office.Item#removeHandlerAsync~0:complex'
     name: Office.EventType | string
     fullName: Office.EventType | string

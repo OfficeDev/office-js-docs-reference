@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartPlotAreaFormat#border:member'
@@ -207,18 +209,25 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ChartBorder:class'
-    name: Excel.ChartBorder
+    name: ChartBorder
+    fullName: Excel.ChartBorder
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartFill:class'
-    name: Excel.ChartFill
+    name: ChartFill
+    fullName: Excel.ChartFill
   - uid: 'excel!Excel.ChartPlotAreaFormat:class'
-    name: Excel.ChartPlotAreaFormat
+    name: ChartPlotAreaFormat
+    fullName: Excel.ChartPlotAreaFormat
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartPlotAreaFormatLoadOptions
+    name: ChartPlotAreaFormatLoadOptions
+    fullName: Excel.Interfaces.ChartPlotAreaFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatUpdateData:interface'
-    name: Interfaces.ChartPlotAreaFormatUpdateData
+    name: ChartPlotAreaFormatUpdateData
+    fullName: Excel.Interfaces.ChartPlotAreaFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatData:interface'
-    name: Excel.Interfaces.ChartPlotAreaFormatData
+    name: ChartPlotAreaFormatData
+    fullName: Excel.Interfaces.ChartPlotAreaFormatData

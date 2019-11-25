@@ -60,3 +60,4 @@ items:
 references:
   - uid: 'excel!Excel.Icon:interface'
     name: Icon
+    fullName: Excel.Icon

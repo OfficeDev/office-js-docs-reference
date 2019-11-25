@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.SlicerItemCollection#context:member'
@@ -216,6 +218,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.SlicerItemCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -226,7 +229,8 @@ references:
       - name: <number>
         fullName: <number>
   - uid: 'excel!Excel.SlicerItem:class'
-    name: Excel.SlicerItem
+    name: SlicerItem
+    fullName: Excel.SlicerItem
   - uid: 'excel!Excel.SlicerItemCollection#items~0:complex'
     name: 'Excel.SlicerItem[]'
     fullName: 'Excel.SlicerItem[]'
@@ -237,7 +241,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.SlicerItemCollection:class'
-    name: Excel.SlicerItemCollection
+    name: SlicerItemCollection
+    fullName: Excel.SlicerItemCollection
   - uid: 'excel!Excel.SlicerItemCollection#load~0:complex'
     name: Excel.Interfaces.SlicerItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.SlicerItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -253,4 +258,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.SlicerItemCollectionData:interface'
-    name: Excel.Interfaces.SlicerItemCollectionData
+    name: SlicerItemCollectionData
+    fullName: Excel.Interfaces.SlicerItemCollectionData

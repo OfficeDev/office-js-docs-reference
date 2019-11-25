@@ -7,7 +7,6 @@ items:
         uid: excel!
         items:
           - name: Enums
-            uid: ''
             items:
               - name: BindingType
                 uid: 'excel!Excel.BindingType:enum'
@@ -72,7 +71,6 @@ items:
               - name: VerticalAlignment
                 uid: 'excel!Excel.VerticalAlignment:enum'
           - name: Icon Sets
-            uid: ''
             items:
               - name: FiveArrowsGraySet
                 uid: 'excel!Excel.FiveArrowsGraySet:interface'
@@ -190,6 +188,726 @@ items:
             uid: 'excel!Excel.Functions:class'
           - name: Icon
             uid: 'excel!Excel.Icon:interface'
+          - name: ApplicationData
+            uid: 'excel!Excel.Interfaces.ApplicationData:interface'
+          - name: ApplicationLoadOptions
+            uid: 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
+          - name: ApplicationUpdateData
+            uid: 'excel!Excel.Interfaces.ApplicationUpdateData:interface'
+          - name: AutoFilterData
+            uid: 'excel!Excel.Interfaces.AutoFilterData:interface'
+          - name: BindingCollectionData
+            uid: 'excel!Excel.Interfaces.BindingCollectionData:interface'
+          - name: BindingCollectionLoadOptions
+            uid: 'excel!Excel.Interfaces.BindingCollectionLoadOptions:interface'
+          - name: BindingCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.BindingCollectionUpdateData:interface'
+          - name: BindingData
+            uid: 'excel!Excel.Interfaces.BindingData:interface'
+          - name: BindingLoadOptions
+            uid: 'excel!Excel.Interfaces.BindingLoadOptions:interface'
+          - name: CellValueConditionalFormatData
+            uid: 'excel!Excel.Interfaces.CellValueConditionalFormatData:interface'
+          - name: CellValueConditionalFormatUpdateData
+            uid: >-
+              excel!Excel.Interfaces.CellValueConditionalFormatUpdateData:interface
+          - name: ChartAreaFormatData
+            uid: 'excel!Excel.Interfaces.ChartAreaFormatData:interface'
+          - name: ChartAreaFormatLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartAreaFormatLoadOptions:interface'
+          - name: ChartAreaFormatUpdateData
+            uid: 'excel!Excel.Interfaces.ChartAreaFormatUpdateData:interface'
+          - name: ChartAxesData
+            uid: 'excel!Excel.Interfaces.ChartAxesData:interface'
+          - name: ChartAxesLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartAxesLoadOptions:interface'
+          - name: ChartAxesUpdateData
+            uid: 'excel!Excel.Interfaces.ChartAxesUpdateData:interface'
+          - name: ChartAxisData
+            uid: 'excel!Excel.Interfaces.ChartAxisData:interface'
+          - name: ChartAxisFormatData
+            uid: 'excel!Excel.Interfaces.ChartAxisFormatData:interface'
+          - name: ChartAxisFormatLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartAxisFormatLoadOptions:interface'
+          - name: ChartAxisFormatUpdateData
+            uid: 'excel!Excel.Interfaces.ChartAxisFormatUpdateData:interface'
+          - name: ChartAxisLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions:interface'
+          - name: ChartAxisTitleData
+            uid: 'excel!Excel.Interfaces.ChartAxisTitleData:interface'
+          - name: ChartAxisTitleFormatData
+            uid: 'excel!Excel.Interfaces.ChartAxisTitleFormatData:interface'
+          - name: ChartAxisTitleFormatLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartAxisTitleFormatLoadOptions:interface'
+          - name: ChartAxisTitleFormatUpdateData
+            uid: 'excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData:interface'
+          - name: ChartAxisTitleLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions:interface'
+          - name: ChartAxisTitleUpdateData
+            uid: 'excel!Excel.Interfaces.ChartAxisTitleUpdateData:interface'
+          - name: ChartAxisUpdateData
+            uid: 'excel!Excel.Interfaces.ChartAxisUpdateData:interface'
+          - name: ChartBinOptionsData
+            uid: 'excel!Excel.Interfaces.ChartBinOptionsData:interface'
+          - name: ChartBinOptionsUpdateData
+            uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData:interface'
+          - name: ChartBorderData
+            uid: 'excel!Excel.Interfaces.ChartBorderData:interface'
+          - name: ChartBorderUpdateData
+            uid: 'excel!Excel.Interfaces.ChartBorderUpdateData:interface'
+          - name: ChartBoxwhiskerOptionsData
+            uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData:interface'
+          - name: ChartBoxwhiskerOptionsUpdateData
+            uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData:interface'
+          - name: ChartCollectionData
+            uid: 'excel!Excel.Interfaces.ChartCollectionData:interface'
+          - name: ChartCollectionLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions:interface'
+          - name: ChartCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.ChartCollectionUpdateData:interface'
+          - name: ChartData
+            uid: 'excel!Excel.Interfaces.ChartData:interface'
+          - name: ChartDataLabelData
+            uid: 'excel!Excel.Interfaces.ChartDataLabelData:interface'
+          - name: ChartDataLabelFormatData
+            uid: 'excel!Excel.Interfaces.ChartDataLabelFormatData:interface'
+          - name: ChartDataLabelFormatLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface'
+          - name: ChartDataLabelFormatUpdateData
+            uid: 'excel!Excel.Interfaces.ChartDataLabelFormatUpdateData:interface'
+          - name: ChartDataLabelsData
+            uid: 'excel!Excel.Interfaces.ChartDataLabelsData:interface'
+          - name: ChartDataLabelsLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
+          - name: ChartDataLabelsUpdateData
+            uid: 'excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface'
+          - name: ChartDataLabelUpdateData
+            uid: 'excel!Excel.Interfaces.ChartDataLabelUpdateData:interface'
+          - name: ChartErrorBarsData
+            uid: 'excel!Excel.Interfaces.ChartErrorBarsData:interface'
+          - name: ChartErrorBarsFormatData
+            uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatData:interface'
+          - name: ChartErrorBarsFormatUpdateData
+            uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatUpdateData:interface'
+          - name: ChartErrorBarsUpdateData
+            uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData:interface'
+          - name: ChartFontData
+            uid: 'excel!Excel.Interfaces.ChartFontData:interface'
+          - name: ChartFontLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
+          - name: ChartFontUpdateData
+            uid: 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
+          - name: ChartFormatStringData
+            uid: 'excel!Excel.Interfaces.ChartFormatStringData:interface'
+          - name: ChartFormatStringUpdateData
+            uid: 'excel!Excel.Interfaces.ChartFormatStringUpdateData:interface'
+          - name: ChartGridlinesData
+            uid: 'excel!Excel.Interfaces.ChartGridlinesData:interface'
+          - name: ChartGridlinesFormatData
+            uid: 'excel!Excel.Interfaces.ChartGridlinesFormatData:interface'
+          - name: ChartGridlinesFormatLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions:interface'
+          - name: ChartGridlinesFormatUpdateData
+            uid: 'excel!Excel.Interfaces.ChartGridlinesFormatUpdateData:interface'
+          - name: ChartGridlinesLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartGridlinesLoadOptions:interface'
+          - name: ChartGridlinesUpdateData
+            uid: 'excel!Excel.Interfaces.ChartGridlinesUpdateData:interface'
+          - name: ChartLegendData
+            uid: 'excel!Excel.Interfaces.ChartLegendData:interface'
+          - name: ChartLegendEntryCollectionData
+            uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionData:interface'
+          - name: ChartLegendEntryCollectionUpdateData
+            uid: >-
+              excel!Excel.Interfaces.ChartLegendEntryCollectionUpdateData:interface
+          - name: ChartLegendEntryData
+            uid: 'excel!Excel.Interfaces.ChartLegendEntryData:interface'
+          - name: ChartLegendEntryUpdateData
+            uid: 'excel!Excel.Interfaces.ChartLegendEntryUpdateData:interface'
+          - name: ChartLegendFormatData
+            uid: 'excel!Excel.Interfaces.ChartLegendFormatData:interface'
+          - name: ChartLegendFormatLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartLegendFormatLoadOptions:interface'
+          - name: ChartLegendFormatUpdateData
+            uid: 'excel!Excel.Interfaces.ChartLegendFormatUpdateData:interface'
+          - name: ChartLegendLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions:interface'
+          - name: ChartLegendUpdateData
+            uid: 'excel!Excel.Interfaces.ChartLegendUpdateData:interface'
+          - name: ChartLineFormatData
+            uid: 'excel!Excel.Interfaces.ChartLineFormatData:interface'
+          - name: ChartLineFormatLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
+          - name: ChartLineFormatUpdateData
+            uid: 'excel!Excel.Interfaces.ChartLineFormatUpdateData:interface'
+          - name: ChartLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartLoadOptions:interface'
+          - name: ChartMapOptionsData
+            uid: 'excel!Excel.Interfaces.ChartMapOptionsData:interface'
+          - name: ChartMapOptionsUpdateData
+            uid: 'excel!Excel.Interfaces.ChartMapOptionsUpdateData:interface'
+          - name: ChartPivotOptionsData
+            uid: 'excel!Excel.Interfaces.ChartPivotOptionsData:interface'
+          - name: ChartPivotOptionsUpdateData
+            uid: 'excel!Excel.Interfaces.ChartPivotOptionsUpdateData:interface'
+          - name: ChartPlotAreaData
+            uid: 'excel!Excel.Interfaces.ChartPlotAreaData:interface'
+          - name: ChartPlotAreaFormatData
+            uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatData:interface'
+          - name: ChartPlotAreaFormatUpdateData
+            uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatUpdateData:interface'
+          - name: ChartPlotAreaUpdateData
+            uid: 'excel!Excel.Interfaces.ChartPlotAreaUpdateData:interface'
+          - name: ChartPointData
+            uid: 'excel!Excel.Interfaces.ChartPointData:interface'
+          - name: ChartPointFormatData
+            uid: 'excel!Excel.Interfaces.ChartPointFormatData:interface'
+          - name: ChartPointFormatLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface'
+          - name: ChartPointFormatUpdateData
+            uid: 'excel!Excel.Interfaces.ChartPointFormatUpdateData:interface'
+          - name: ChartPointLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartPointLoadOptions:interface'
+          - name: ChartPointsCollectionData
+            uid: 'excel!Excel.Interfaces.ChartPointsCollectionData:interface'
+          - name: ChartPointsCollectionLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface'
+          - name: ChartPointsCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.ChartPointsCollectionUpdateData:interface'
+          - name: ChartPointUpdateData
+            uid: 'excel!Excel.Interfaces.ChartPointUpdateData:interface'
+          - name: ChartSeriesCollectionData
+            uid: 'excel!Excel.Interfaces.ChartSeriesCollectionData:interface'
+          - name: ChartSeriesCollectionLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface'
+          - name: ChartSeriesCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.ChartSeriesCollectionUpdateData:interface'
+          - name: ChartSeriesData
+            uid: 'excel!Excel.Interfaces.ChartSeriesData:interface'
+          - name: ChartSeriesFormatData
+            uid: 'excel!Excel.Interfaces.ChartSeriesFormatData:interface'
+          - name: ChartSeriesFormatLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface'
+          - name: ChartSeriesFormatUpdateData
+            uid: 'excel!Excel.Interfaces.ChartSeriesFormatUpdateData:interface'
+          - name: ChartSeriesLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions:interface'
+          - name: ChartSeriesUpdateData
+            uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData:interface'
+          - name: ChartTitleData
+            uid: 'excel!Excel.Interfaces.ChartTitleData:interface'
+          - name: ChartTitleFormatData
+            uid: 'excel!Excel.Interfaces.ChartTitleFormatData:interface'
+          - name: ChartTitleFormatLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions:interface'
+          - name: ChartTitleFormatUpdateData
+            uid: 'excel!Excel.Interfaces.ChartTitleFormatUpdateData:interface'
+          - name: ChartTitleLoadOptions
+            uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions:interface'
+          - name: ChartTitleUpdateData
+            uid: 'excel!Excel.Interfaces.ChartTitleUpdateData:interface'
+          - name: ChartTrendlineCollectionData
+            uid: 'excel!Excel.Interfaces.ChartTrendlineCollectionData:interface'
+          - name: ChartTrendlineCollectionUpdateData
+            uid: >-
+              excel!Excel.Interfaces.ChartTrendlineCollectionUpdateData:interface
+          - name: ChartTrendlineData
+            uid: 'excel!Excel.Interfaces.ChartTrendlineData:interface'
+          - name: ChartTrendlineFormatData
+            uid: 'excel!Excel.Interfaces.ChartTrendlineFormatData:interface'
+          - name: ChartTrendlineFormatUpdateData
+            uid: 'excel!Excel.Interfaces.ChartTrendlineFormatUpdateData:interface'
+          - name: ChartTrendlineLabelData
+            uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData:interface'
+          - name: ChartTrendlineLabelFormatData
+            uid: 'excel!Excel.Interfaces.ChartTrendlineLabelFormatData:interface'
+          - name: ChartTrendlineLabelFormatUpdateData
+            uid: >-
+              excel!Excel.Interfaces.ChartTrendlineLabelFormatUpdateData:interface
+          - name: ChartTrendlineLabelUpdateData
+            uid: 'excel!Excel.Interfaces.ChartTrendlineLabelUpdateData:interface'
+          - name: ChartTrendlineUpdateData
+            uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData:interface'
+          - name: ChartUpdateData
+            uid: 'excel!Excel.Interfaces.ChartUpdateData:interface'
+          - name: CollectionLoadOptions
+            uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+          - name: ColorScaleConditionalFormatData
+            uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatData:interface'
+          - name: ColorScaleConditionalFormatUpdateData
+            uid: >-
+              excel!Excel.Interfaces.ColorScaleConditionalFormatUpdateData:interface
+          - name: CommentCollectionData
+            uid: 'excel!Excel.Interfaces.CommentCollectionData:interface'
+          - name: CommentCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.CommentCollectionUpdateData:interface'
+          - name: CommentData
+            uid: 'excel!Excel.Interfaces.CommentData:interface'
+          - name: CommentReplyCollectionData
+            uid: 'excel!Excel.Interfaces.CommentReplyCollectionData:interface'
+          - name: CommentReplyCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.CommentReplyCollectionUpdateData:interface'
+          - name: CommentReplyData
+            uid: 'excel!Excel.Interfaces.CommentReplyData:interface'
+          - name: CommentReplyUpdateData
+            uid: 'excel!Excel.Interfaces.CommentReplyUpdateData:interface'
+          - name: CommentUpdateData
+            uid: 'excel!Excel.Interfaces.CommentUpdateData:interface'
+          - name: ConditionalDataBarNegativeFormatData
+            uid: >-
+              excel!Excel.Interfaces.ConditionalDataBarNegativeFormatData:interface
+          - name: ConditionalDataBarNegativeFormatUpdateData
+            uid: >-
+              excel!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData:interface
+          - name: ConditionalDataBarPositiveFormatData
+            uid: >-
+              excel!Excel.Interfaces.ConditionalDataBarPositiveFormatData:interface
+          - name: ConditionalDataBarPositiveFormatUpdateData
+            uid: >-
+              excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData:interface
+          - name: ConditionalFormatCollectionData
+            uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionData:interface'
+          - name: ConditionalFormatCollectionUpdateData
+            uid: >-
+              excel!Excel.Interfaces.ConditionalFormatCollectionUpdateData:interface
+          - name: ConditionalFormatData
+            uid: 'excel!Excel.Interfaces.ConditionalFormatData:interface'
+          - name: ConditionalFormatRuleData
+            uid: 'excel!Excel.Interfaces.ConditionalFormatRuleData:interface'
+          - name: ConditionalFormatRuleUpdateData
+            uid: 'excel!Excel.Interfaces.ConditionalFormatRuleUpdateData:interface'
+          - name: ConditionalFormatUpdateData
+            uid: 'excel!Excel.Interfaces.ConditionalFormatUpdateData:interface'
+          - name: ConditionalRangeBorderCollectionData
+            uid: >-
+              excel!Excel.Interfaces.ConditionalRangeBorderCollectionData:interface
+          - name: ConditionalRangeBorderCollectionUpdateData
+            uid: >-
+              excel!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData:interface
+          - name: ConditionalRangeBorderData
+            uid: 'excel!Excel.Interfaces.ConditionalRangeBorderData:interface'
+          - name: ConditionalRangeBorderUpdateData
+            uid: 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface'
+          - name: ConditionalRangeFillData
+            uid: 'excel!Excel.Interfaces.ConditionalRangeFillData:interface'
+          - name: ConditionalRangeFillUpdateData
+            uid: 'excel!Excel.Interfaces.ConditionalRangeFillUpdateData:interface'
+          - name: ConditionalRangeFontData
+            uid: 'excel!Excel.Interfaces.ConditionalRangeFontData:interface'
+          - name: ConditionalRangeFontUpdateData
+            uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData:interface'
+          - name: ConditionalRangeFormatData
+            uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
+          - name: ConditionalRangeFormatUpdateData
+            uid: 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
+          - name: CustomConditionalFormatData
+            uid: 'excel!Excel.Interfaces.CustomConditionalFormatData:interface'
+          - name: CustomConditionalFormatUpdateData
+            uid: 'excel!Excel.Interfaces.CustomConditionalFormatUpdateData:interface'
+          - name: CustomPropertyCollectionData
+            uid: 'excel!Excel.Interfaces.CustomPropertyCollectionData:interface'
+          - name: CustomPropertyCollectionUpdateData
+            uid: >-
+              excel!Excel.Interfaces.CustomPropertyCollectionUpdateData:interface
+          - name: CustomPropertyData
+            uid: 'excel!Excel.Interfaces.CustomPropertyData:interface'
+          - name: CustomPropertyUpdateData
+            uid: 'excel!Excel.Interfaces.CustomPropertyUpdateData:interface'
+          - name: CustomXmlPartCollectionData
+            uid: 'excel!Excel.Interfaces.CustomXmlPartCollectionData:interface'
+          - name: CustomXmlPartCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.CustomXmlPartCollectionUpdateData:interface'
+          - name: CustomXmlPartData
+            uid: 'excel!Excel.Interfaces.CustomXmlPartData:interface'
+          - name: CustomXmlPartScopedCollectionData
+            uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionData:interface'
+          - name: CustomXmlPartScopedCollectionUpdateData
+            uid: >-
+              excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface
+          - name: DataBarConditionalFormatData
+            uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData:interface'
+          - name: DataBarConditionalFormatUpdateData
+            uid: >-
+              excel!Excel.Interfaces.DataBarConditionalFormatUpdateData:interface
+          - name: DataPivotHierarchyCollectionData
+            uid: 'excel!Excel.Interfaces.DataPivotHierarchyCollectionData:interface'
+          - name: DataPivotHierarchyCollectionUpdateData
+            uid: >-
+              excel!Excel.Interfaces.DataPivotHierarchyCollectionUpdateData:interface
+          - name: DataPivotHierarchyData
+            uid: 'excel!Excel.Interfaces.DataPivotHierarchyData:interface'
+          - name: DataPivotHierarchyUpdateData
+            uid: 'excel!Excel.Interfaces.DataPivotHierarchyUpdateData:interface'
+          - name: DataValidationData
+            uid: 'excel!Excel.Interfaces.DataValidationData:interface'
+          - name: DataValidationUpdateData
+            uid: 'excel!Excel.Interfaces.DataValidationUpdateData:interface'
+          - name: DocumentPropertiesData
+            uid: 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
+          - name: DocumentPropertiesUpdateData
+            uid: 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
+          - name: FilterData
+            uid: 'excel!Excel.Interfaces.FilterData:interface'
+          - name: FilterLoadOptions
+            uid: 'excel!Excel.Interfaces.FilterLoadOptions:interface'
+          - name: FilterPivotHierarchyCollectionData
+            uid: >-
+              excel!Excel.Interfaces.FilterPivotHierarchyCollectionData:interface
+          - name: FilterPivotHierarchyCollectionUpdateData
+            uid: >-
+              excel!Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData:interface
+          - name: FilterPivotHierarchyData
+            uid: 'excel!Excel.Interfaces.FilterPivotHierarchyData:interface'
+          - name: FilterPivotHierarchyUpdateData
+            uid: 'excel!Excel.Interfaces.FilterPivotHierarchyUpdateData:interface'
+          - name: FormatProtectionData
+            uid: 'excel!Excel.Interfaces.FormatProtectionData:interface'
+          - name: FormatProtectionLoadOptions
+            uid: 'excel!Excel.Interfaces.FormatProtectionLoadOptions:interface'
+          - name: FormatProtectionUpdateData
+            uid: 'excel!Excel.Interfaces.FormatProtectionUpdateData:interface'
+          - name: FunctionResultData
+            uid: 'excel!Excel.Interfaces.FunctionResultData:interface'
+          - name: FunctionResultLoadOptions
+            uid: 'excel!Excel.Interfaces.FunctionResultLoadOptions:interface'
+          - name: GeometricShapeData
+            uid: 'excel!Excel.Interfaces.GeometricShapeData:interface'
+          - name: GroupShapeCollectionData
+            uid: 'excel!Excel.Interfaces.GroupShapeCollectionData:interface'
+          - name: GroupShapeCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.GroupShapeCollectionUpdateData:interface'
+          - name: HeaderFooterData
+            uid: 'excel!Excel.Interfaces.HeaderFooterData:interface'
+          - name: HeaderFooterGroupData
+            uid: 'excel!Excel.Interfaces.HeaderFooterGroupData:interface'
+          - name: HeaderFooterGroupUpdateData
+            uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData:interface'
+          - name: HeaderFooterUpdateData
+            uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData:interface'
+          - name: IconSetConditionalFormatData
+            uid: 'excel!Excel.Interfaces.IconSetConditionalFormatData:interface'
+          - name: IconSetConditionalFormatUpdateData
+            uid: >-
+              excel!Excel.Interfaces.IconSetConditionalFormatUpdateData:interface
+          - name: ImageData
+            uid: 'excel!Excel.Interfaces.ImageData:interface'
+          - name: IterativeCalculationData
+            uid: 'excel!Excel.Interfaces.IterativeCalculationData:interface'
+          - name: IterativeCalculationUpdateData
+            uid: 'excel!Excel.Interfaces.IterativeCalculationUpdateData:interface'
+          - name: LineData
+            uid: 'excel!Excel.Interfaces.LineData:interface'
+          - name: LineUpdateData
+            uid: 'excel!Excel.Interfaces.LineUpdateData:interface'
+          - name: NamedItemArrayValuesData
+            uid: 'excel!Excel.Interfaces.NamedItemArrayValuesData:interface'
+          - name: NamedItemCollectionData
+            uid: 'excel!Excel.Interfaces.NamedItemCollectionData:interface'
+          - name: NamedItemCollectionLoadOptions
+            uid: 'excel!Excel.Interfaces.NamedItemCollectionLoadOptions:interface'
+          - name: NamedItemCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.NamedItemCollectionUpdateData:interface'
+          - name: NamedItemData
+            uid: 'excel!Excel.Interfaces.NamedItemData:interface'
+          - name: NamedItemLoadOptions
+            uid: 'excel!Excel.Interfaces.NamedItemLoadOptions:interface'
+          - name: NamedItemUpdateData
+            uid: 'excel!Excel.Interfaces.NamedItemUpdateData:interface'
+          - name: PageBreakCollectionData
+            uid: 'excel!Excel.Interfaces.PageBreakCollectionData:interface'
+          - name: PageBreakCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.PageBreakCollectionUpdateData:interface'
+          - name: PageBreakData
+            uid: 'excel!Excel.Interfaces.PageBreakData:interface'
+          - name: PageLayoutData
+            uid: 'excel!Excel.Interfaces.PageLayoutData:interface'
+          - name: PageLayoutUpdateData
+            uid: 'excel!Excel.Interfaces.PageLayoutUpdateData:interface'
+          - name: PivotFieldCollectionData
+            uid: 'excel!Excel.Interfaces.PivotFieldCollectionData:interface'
+          - name: PivotFieldCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.PivotFieldCollectionUpdateData:interface'
+          - name: PivotFieldData
+            uid: 'excel!Excel.Interfaces.PivotFieldData:interface'
+          - name: PivotFieldUpdateData
+            uid: 'excel!Excel.Interfaces.PivotFieldUpdateData:interface'
+          - name: PivotHierarchyCollectionData
+            uid: 'excel!Excel.Interfaces.PivotHierarchyCollectionData:interface'
+          - name: PivotHierarchyCollectionUpdateData
+            uid: >-
+              excel!Excel.Interfaces.PivotHierarchyCollectionUpdateData:interface
+          - name: PivotHierarchyData
+            uid: 'excel!Excel.Interfaces.PivotHierarchyData:interface'
+          - name: PivotHierarchyUpdateData
+            uid: 'excel!Excel.Interfaces.PivotHierarchyUpdateData:interface'
+          - name: PivotItemCollectionData
+            uid: 'excel!Excel.Interfaces.PivotItemCollectionData:interface'
+          - name: PivotItemCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.PivotItemCollectionUpdateData:interface'
+          - name: PivotItemData
+            uid: 'excel!Excel.Interfaces.PivotItemData:interface'
+          - name: PivotItemUpdateData
+            uid: 'excel!Excel.Interfaces.PivotItemUpdateData:interface'
+          - name: PivotLayoutData
+            uid: 'excel!Excel.Interfaces.PivotLayoutData:interface'
+          - name: PivotLayoutUpdateData
+            uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData:interface'
+          - name: PivotTableCollectionData
+            uid: 'excel!Excel.Interfaces.PivotTableCollectionData:interface'
+          - name: PivotTableCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.PivotTableCollectionUpdateData:interface'
+          - name: PivotTableData
+            uid: 'excel!Excel.Interfaces.PivotTableData:interface'
+          - name: PivotTableStyleCollectionData
+            uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionData:interface'
+          - name: PivotTableStyleCollectionUpdateData
+            uid: >-
+              excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData:interface
+          - name: PivotTableStyleData
+            uid: 'excel!Excel.Interfaces.PivotTableStyleData:interface'
+          - name: PivotTableStyleUpdateData
+            uid: 'excel!Excel.Interfaces.PivotTableStyleUpdateData:interface'
+          - name: PivotTableUpdateData
+            uid: 'excel!Excel.Interfaces.PivotTableUpdateData:interface'
+          - name: PresetCriteriaConditionalFormatData
+            uid: >-
+              excel!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface
+          - name: PresetCriteriaConditionalFormatUpdateData
+            uid: >-
+              excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface
+          - name: RangeAreasData
+            uid: 'excel!Excel.Interfaces.RangeAreasData:interface'
+          - name: RangeAreasUpdateData
+            uid: 'excel!Excel.Interfaces.RangeAreasUpdateData:interface'
+          - name: RangeBorderCollectionData
+            uid: 'excel!Excel.Interfaces.RangeBorderCollectionData:interface'
+          - name: RangeBorderCollectionLoadOptions
+            uid: 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface'
+          - name: RangeBorderCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.RangeBorderCollectionUpdateData:interface'
+          - name: RangeBorderData
+            uid: 'excel!Excel.Interfaces.RangeBorderData:interface'
+          - name: RangeBorderLoadOptions
+            uid: 'excel!Excel.Interfaces.RangeBorderLoadOptions:interface'
+          - name: RangeBorderUpdateData
+            uid: 'excel!Excel.Interfaces.RangeBorderUpdateData:interface'
+          - name: RangeCollectionData
+            uid: 'excel!Excel.Interfaces.RangeCollectionData:interface'
+          - name: RangeCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.RangeCollectionUpdateData:interface'
+          - name: RangeData
+            uid: 'excel!Excel.Interfaces.RangeData:interface'
+          - name: RangeFillData
+            uid: 'excel!Excel.Interfaces.RangeFillData:interface'
+          - name: RangeFillLoadOptions
+            uid: 'excel!Excel.Interfaces.RangeFillLoadOptions:interface'
+          - name: RangeFillUpdateData
+            uid: 'excel!Excel.Interfaces.RangeFillUpdateData:interface'
+          - name: RangeFontData
+            uid: 'excel!Excel.Interfaces.RangeFontData:interface'
+          - name: RangeFontLoadOptions
+            uid: 'excel!Excel.Interfaces.RangeFontLoadOptions:interface'
+          - name: RangeFontUpdateData
+            uid: 'excel!Excel.Interfaces.RangeFontUpdateData:interface'
+          - name: RangeFormatData
+            uid: 'excel!Excel.Interfaces.RangeFormatData:interface'
+          - name: RangeFormatLoadOptions
+            uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions:interface'
+          - name: RangeFormatUpdateData
+            uid: 'excel!Excel.Interfaces.RangeFormatUpdateData:interface'
+          - name: RangeLoadOptions
+            uid: 'excel!Excel.Interfaces.RangeLoadOptions:interface'
+          - name: RangeUpdateData
+            uid: 'excel!Excel.Interfaces.RangeUpdateData:interface'
+          - name: RangeViewCollectionData
+            uid: 'excel!Excel.Interfaces.RangeViewCollectionData:interface'
+          - name: RangeViewCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.RangeViewCollectionUpdateData:interface'
+          - name: RangeViewData
+            uid: 'excel!Excel.Interfaces.RangeViewData:interface'
+          - name: RangeViewUpdateData
+            uid: 'excel!Excel.Interfaces.RangeViewUpdateData:interface'
+          - name: RemoveDuplicatesResultData
+            uid: 'excel!Excel.Interfaces.RemoveDuplicatesResultData:interface'
+          - name: RowColumnPivotHierarchyCollectionData
+            uid: >-
+              excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionData:interface
+          - name: RowColumnPivotHierarchyCollectionUpdateData
+            uid: >-
+              excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData:interface
+          - name: RowColumnPivotHierarchyData
+            uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface'
+          - name: RowColumnPivotHierarchyUpdateData
+            uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyUpdateData:interface'
+          - name: RuntimeData
+            uid: 'excel!Excel.Interfaces.RuntimeData:interface'
+          - name: RuntimeUpdateData
+            uid: 'excel!Excel.Interfaces.RuntimeUpdateData:interface'
+          - name: SettingCollectionData
+            uid: 'excel!Excel.Interfaces.SettingCollectionData:interface'
+          - name: SettingCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.SettingCollectionUpdateData:interface'
+          - name: SettingData
+            uid: 'excel!Excel.Interfaces.SettingData:interface'
+          - name: SettingUpdateData
+            uid: 'excel!Excel.Interfaces.SettingUpdateData:interface'
+          - name: ShapeCollectionData
+            uid: 'excel!Excel.Interfaces.ShapeCollectionData:interface'
+          - name: ShapeCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.ShapeCollectionUpdateData:interface'
+          - name: ShapeData
+            uid: 'excel!Excel.Interfaces.ShapeData:interface'
+          - name: ShapeFillData
+            uid: 'excel!Excel.Interfaces.ShapeFillData:interface'
+          - name: ShapeFillUpdateData
+            uid: 'excel!Excel.Interfaces.ShapeFillUpdateData:interface'
+          - name: ShapeFontData
+            uid: 'excel!Excel.Interfaces.ShapeFontData:interface'
+          - name: ShapeFontUpdateData
+            uid: 'excel!Excel.Interfaces.ShapeFontUpdateData:interface'
+          - name: ShapeGroupData
+            uid: 'excel!Excel.Interfaces.ShapeGroupData:interface'
+          - name: ShapeLineFormatData
+            uid: 'excel!Excel.Interfaces.ShapeLineFormatData:interface'
+          - name: ShapeLineFormatUpdateData
+            uid: 'excel!Excel.Interfaces.ShapeLineFormatUpdateData:interface'
+          - name: ShapeUpdateData
+            uid: 'excel!Excel.Interfaces.ShapeUpdateData:interface'
+          - name: SlicerCollectionData
+            uid: 'excel!Excel.Interfaces.SlicerCollectionData:interface'
+          - name: SlicerCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.SlicerCollectionUpdateData:interface'
+          - name: SlicerData
+            uid: 'excel!Excel.Interfaces.SlicerData:interface'
+          - name: SlicerItemCollectionData
+            uid: 'excel!Excel.Interfaces.SlicerItemCollectionData:interface'
+          - name: SlicerItemCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.SlicerItemCollectionUpdateData:interface'
+          - name: SlicerItemData
+            uid: 'excel!Excel.Interfaces.SlicerItemData:interface'
+          - name: SlicerItemUpdateData
+            uid: 'excel!Excel.Interfaces.SlicerItemUpdateData:interface'
+          - name: SlicerStyleCollectionData
+            uid: 'excel!Excel.Interfaces.SlicerStyleCollectionData:interface'
+          - name: SlicerStyleCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.SlicerStyleCollectionUpdateData:interface'
+          - name: SlicerStyleData
+            uid: 'excel!Excel.Interfaces.SlicerStyleData:interface'
+          - name: SlicerStyleUpdateData
+            uid: 'excel!Excel.Interfaces.SlicerStyleUpdateData:interface'
+          - name: SlicerUpdateData
+            uid: 'excel!Excel.Interfaces.SlicerUpdateData:interface'
+          - name: StyleCollectionData
+            uid: 'excel!Excel.Interfaces.StyleCollectionData:interface'
+          - name: StyleCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.StyleCollectionUpdateData:interface'
+          - name: StyleData
+            uid: 'excel!Excel.Interfaces.StyleData:interface'
+          - name: StyleUpdateData
+            uid: 'excel!Excel.Interfaces.StyleUpdateData:interface'
+          - name: TableCollectionData
+            uid: 'excel!Excel.Interfaces.TableCollectionData:interface'
+          - name: TableCollectionLoadOptions
+            uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
+          - name: TableCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.TableCollectionUpdateData:interface'
+          - name: TableColumnCollectionData
+            uid: 'excel!Excel.Interfaces.TableColumnCollectionData:interface'
+          - name: TableColumnCollectionLoadOptions
+            uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
+          - name: TableColumnCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.TableColumnCollectionUpdateData:interface'
+          - name: TableColumnData
+            uid: 'excel!Excel.Interfaces.TableColumnData:interface'
+          - name: TableColumnLoadOptions
+            uid: 'excel!Excel.Interfaces.TableColumnLoadOptions:interface'
+          - name: TableColumnUpdateData
+            uid: 'excel!Excel.Interfaces.TableColumnUpdateData:interface'
+          - name: TableData
+            uid: 'excel!Excel.Interfaces.TableData:interface'
+          - name: TableLoadOptions
+            uid: 'excel!Excel.Interfaces.TableLoadOptions:interface'
+          - name: TableRowCollectionData
+            uid: 'excel!Excel.Interfaces.TableRowCollectionData:interface'
+          - name: TableRowCollectionLoadOptions
+            uid: 'excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface'
+          - name: TableRowCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.TableRowCollectionUpdateData:interface'
+          - name: TableRowData
+            uid: 'excel!Excel.Interfaces.TableRowData:interface'
+          - name: TableRowLoadOptions
+            uid: 'excel!Excel.Interfaces.TableRowLoadOptions:interface'
+          - name: TableRowUpdateData
+            uid: 'excel!Excel.Interfaces.TableRowUpdateData:interface'
+          - name: TableScopedCollectionData
+            uid: 'excel!Excel.Interfaces.TableScopedCollectionData:interface'
+          - name: TableScopedCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.TableScopedCollectionUpdateData:interface'
+          - name: TableSortData
+            uid: 'excel!Excel.Interfaces.TableSortData:interface'
+          - name: TableSortLoadOptions
+            uid: 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
+          - name: TableStyleCollectionData
+            uid: 'excel!Excel.Interfaces.TableStyleCollectionData:interface'
+          - name: TableStyleCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.TableStyleCollectionUpdateData:interface'
+          - name: TableStyleData
+            uid: 'excel!Excel.Interfaces.TableStyleData:interface'
+          - name: TableStyleUpdateData
+            uid: 'excel!Excel.Interfaces.TableStyleUpdateData:interface'
+          - name: TableUpdateData
+            uid: 'excel!Excel.Interfaces.TableUpdateData:interface'
+          - name: TextConditionalFormatData
+            uid: 'excel!Excel.Interfaces.TextConditionalFormatData:interface'
+          - name: TextConditionalFormatUpdateData
+            uid: 'excel!Excel.Interfaces.TextConditionalFormatUpdateData:interface'
+          - name: TextFrameData
+            uid: 'excel!Excel.Interfaces.TextFrameData:interface'
+          - name: TextFrameUpdateData
+            uid: 'excel!Excel.Interfaces.TextFrameUpdateData:interface'
+          - name: TextRangeData
+            uid: 'excel!Excel.Interfaces.TextRangeData:interface'
+          - name: TextRangeUpdateData
+            uid: 'excel!Excel.Interfaces.TextRangeUpdateData:interface'
+          - name: TimelineStyleCollectionData
+            uid: 'excel!Excel.Interfaces.TimelineStyleCollectionData:interface'
+          - name: TimelineStyleCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.TimelineStyleCollectionUpdateData:interface'
+          - name: TimelineStyleData
+            uid: 'excel!Excel.Interfaces.TimelineStyleData:interface'
+          - name: TimelineStyleUpdateData
+            uid: 'excel!Excel.Interfaces.TimelineStyleUpdateData:interface'
+          - name: TopBottomConditionalFormatData
+            uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatData:interface'
+          - name: TopBottomConditionalFormatUpdateData
+            uid: >-
+              excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData:interface
+          - name: WorkbookCreatedData
+            uid: 'excel!Excel.Interfaces.WorkbookCreatedData:interface'
+          - name: WorkbookData
+            uid: 'excel!Excel.Interfaces.WorkbookData:interface'
+          - name: WorkbookLoadOptions
+            uid: 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
+          - name: WorkbookProtectionData
+            uid: 'excel!Excel.Interfaces.WorkbookProtectionData:interface'
+          - name: WorkbookUpdateData
+            uid: 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
+          - name: WorksheetCollectionData
+            uid: 'excel!Excel.Interfaces.WorksheetCollectionData:interface'
+          - name: WorksheetCollectionLoadOptions
+            uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions:interface'
+          - name: WorksheetCollectionUpdateData
+            uid: 'excel!Excel.Interfaces.WorksheetCollectionUpdateData:interface'
+          - name: WorksheetData
+            uid: 'excel!Excel.Interfaces.WorksheetData:interface'
+          - name: WorksheetLoadOptions
+            uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+          - name: WorksheetProtectionData
+            uid: 'excel!Excel.Interfaces.WorksheetProtectionData:interface'
+          - name: WorksheetProtectionLoadOptions
+            uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
+          - name: WorksheetUpdateData
+            uid: 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
           - name: NamedItem
             uid: 'excel!Excel.NamedItem:class'
           - name: NamedItemCollection
@@ -247,191 +965,184 @@ items:
       - name: Common API
         uid: office!
         items:
-          - name: Office
+          - name: Enums
+            uid: ''
             items:
-              - name: Enums
-                uid: ''
-                items:
-                  - name: ActiveView
-                    uid: 'office!Office.ActiveView:enum'
-                  - name: AsyncResultStatus
-                    uid: 'office!Office.AsyncResultStatus:enum'
-                  - name: BindingType
-                    uid: 'office!Office.BindingType:enum'
-                  - name: CoercionType
-                    uid: 'office!Office.CoercionType:enum'
-                  - name: CustomXMLNodeType
-                    uid: 'office!Office.CustomXMLNodeType:enum'
-                  - name: DocumentMode
-                    uid: 'office!Office.DocumentMode:enum'
-                  - name: EventType
-                    uid: 'office!Office.EventType:enum'
-                  - name: FileType
-                    uid: 'office!Office.FileType:enum'
-                  - name: FilterType
-                    uid: 'office!Office.FilterType:enum'
-                  - name: GoToType
-                    uid: 'office!Office.GoToType:enum'
-                  - name: HostType
-                    uid: 'office!Office.HostType:enum'
-                  - name: Index
-                    uid: 'office!Office.Index:enum'
-                  - name: InitializationReason
-                    uid: 'office!Office.InitializationReason:enum'
-                  - name: PlatformType
-                    uid: 'office!Office.PlatformType:enum'
-                  - name: ProjectProjectFields
-                    uid: 'office!Office.ProjectProjectFields:enum'
-                  - name: ProjectResourceFields
-                    uid: 'office!Office.ProjectResourceFields:enum'
-                  - name: ProjectTaskFields
-                    uid: 'office!Office.ProjectTaskFields:enum'
-                  - name: ProjectViewTypes
-                    uid: 'office!Office.ProjectViewTypes:enum'
-                  - name: SelectionMode
-                    uid: 'office!Office.SelectionMode:enum'
-                  - name: Table
-                    uid: 'office!Office.Table:enum'
-                  - name: ValueFormat
-                    uid: 'office!Office.ValueFormat:enum'
-              - name: AddBindingFromNamedItemOptions
-                uid: 'office!Office.AddBindingFromNamedItemOptions:interface'
-              - name: AddBindingFromPromptOptions
-                uid: 'office!Office.AddBindingFromPromptOptions:interface'
-              - name: AddBindingFromSelectionOptions
-                uid: 'office!Office.AddBindingFromSelectionOptions:interface'
-              - name: AddinCommands
-                items:
-                  - name: Event
-                    uid: 'office!Office.AddinCommands.Event:interface'
-                  - name: EventCompletedOptions
-                    uid: >-
-                      office!Office.AddinCommands.EventCompletedOptions:interface
-                  - name: Source
-                    uid: 'office!Office.AddinCommands.Source:interface'
-              - name: AsyncContextOptions
-                uid: 'office!Office.AsyncContextOptions:interface'
-              - name: AsyncResult
-                uid: 'office!Office.AsyncResult:interface'
-              - name: Auth
-                uid: 'office!Office.Auth:interface'
-              - name: AuthOptions
-                uid: 'office!Office.AuthOptions:interface'
-              - name: Binding
-                uid: 'office!Office.Binding:interface'
-              - name: BindingDataChangedEventArgs
-                uid: 'office!Office.BindingDataChangedEventArgs:interface'
-              - name: Bindings
-                uid: 'office!Office.Bindings:interface'
-              - name: BindingSelectionChangedEventArgs
-                uid: 'office!Office.BindingSelectionChangedEventArgs:interface'
-              - name: Context
-                uid: 'office!Office.Context:interface'
-              - name: ContextInformation
-                uid: 'office!Office.ContextInformation:interface'
-              - name: CustomXmlNode
-                uid: 'office!Office.CustomXmlNode:interface'
-              - name: CustomXmlPart
-                uid: 'office!Office.CustomXmlPart:interface'
-              - name: CustomXmlParts
-                uid: 'office!Office.CustomXmlParts:interface'
-              - name: CustomXmlPrefixMappings
-                uid: 'office!Office.CustomXmlPrefixMappings:interface'
-              - name: Dialog
-                uid: 'office!Office.Dialog:interface'
-              - name: DialogOptions
-                uid: 'office!Office.DialogOptions:interface'
-              - name: Document
-                uid: 'office!Office.Document:interface'
-              - name: DocumentSelectionChangedEventArgs
-                uid: 'office!Office.DocumentSelectionChangedEventArgs:interface'
-              - name: Error
-                uid: 'office!Office.Error:interface'
-              - name: File
-                uid: 'office!Office.File:interface'
-              - name: FileProperties
-                uid: 'office!Office.FileProperties:interface'
-              - name: GetBindingDataOptions
-                uid: 'office!Office.GetBindingDataOptions:interface'
-              - name: GetFileOptions
-                uid: 'office!Office.GetFileOptions:interface'
-              - name: GetSelectedDataOptions
-                uid: 'office!Office.GetSelectedDataOptions:interface'
-              - name: GoToByIdOptions
-                uid: 'office!Office.GoToByIdOptions:interface'
-              - name: IPromiseConstructor
-                uid: 'office!Office.IPromiseConstructor:interface'
-              - name: MatrixBinding
-                uid: 'office!Office.MatrixBinding:interface'
-              - name: NodeDeletedEventArgs
-                uid: 'office!Office.NodeDeletedEventArgs:interface'
-              - name: NodeInsertedEventArgs
-                uid: 'office!Office.NodeInsertedEventArgs:interface'
-              - name: NodeReplacedEventArgs
-                uid: 'office!Office.NodeReplacedEventArgs:interface'
-              - name: OfficeTheme
-                uid: 'office!Office.OfficeTheme:interface'
-              - name: RangeCoordinates
-                uid: 'office!Office.RangeCoordinates:interface'
-              - name: RangeFormatConfiguration
-                uid: 'office!Office.RangeFormatConfiguration:interface'
-              - name: RemoveHandlerOptions
-                uid: 'office!Office.RemoveHandlerOptions:interface'
-              - name: RequirementSetSupport
-                uid: 'office!Office.RequirementSetSupport:interface'
-              - name: SaveSettingsOptions
-                uid: 'office!Office.SaveSettingsOptions:interface'
-              - name: SetBindingDataOptions
-                uid: 'office!Office.SetBindingDataOptions:interface'
-              - name: SetSelectedDataOptions
-                uid: 'office!Office.SetSelectedDataOptions:interface'
-              - name: Settings
-                uid: 'office!Office.Settings:interface'
-              - name: SettingsChangedEventArgs
-                uid: 'office!Office.SettingsChangedEventArgs:interface'
-              - name: Slice
-                uid: 'office!Office.Slice:interface'
-              - name: TableBinding
-                uid: 'office!Office.TableBinding:interface'
-              - name: TableData
-                uid: 'office!Office.TableData:class'
-              - name: TextBinding
-                uid: 'office!Office.TextBinding:interface'
-              - name: UI
-                uid: 'office!Office.UI:interface'
-          - name: OfficeExtension
-            items:
-              - name: ClientObject
-                uid: 'office!OfficeExtension.ClientObject:class'
-              - name: ClientRequestContext
-                uid: 'office!OfficeExtension.ClientRequestContext:class'
-              - name: ClientResult
-                uid: 'office!OfficeExtension.ClientResult:class'
-              - name: DebugInfo
-                uid: 'office!OfficeExtension.DebugInfo:interface'
-              - name: EmbeddedOptions
-                uid: 'office!OfficeExtension.EmbeddedOptions:interface'
-              - name: EmbeddedSession
-                uid: 'office!OfficeExtension.EmbeddedSession:class'
-              - name: Error
-                uid: 'office!OfficeExtension.Error:class'
-              - name: ErrorCodes
-                uid: 'office!OfficeExtension.ErrorCodes:class'
-              - name: EventHandlerResult
-                uid: 'office!OfficeExtension.EventHandlerResult:class'
-              - name: EventHandlers
-                uid: 'office!OfficeExtension.EventHandlers:class'
-              - name: EventInfo
-                uid: 'office!OfficeExtension.EventInfo:interface'
-              - name: LoadOption
-                uid: 'office!OfficeExtension.LoadOption:interface'
-              - name: RequestContextDebugInfo
-                uid: 'office!OfficeExtension.RequestContextDebugInfo:interface'
-              - name: RequestUrlAndHeaderInfo
-                uid: 'office!OfficeExtension.RequestUrlAndHeaderInfo:interface'
-              - name: RunOptions
-                uid: 'office!OfficeExtension.RunOptions:interface'
-              - name: TrackedObjects
-                uid: 'office!OfficeExtension.TrackedObjects:class'
-              - name: UpdateOptions
-                uid: 'office!OfficeExtension.UpdateOptions:interface'
+              - name: ActiveView
+                uid: 'office!Office.ActiveView:enum'
+              - name: AsyncResultStatus
+                uid: 'office!Office.AsyncResultStatus:enum'
+              - name: BindingType
+                uid: 'office!Office.BindingType:enum'
+              - name: CoercionType
+                uid: 'office!Office.CoercionType:enum'
+              - name: CustomXMLNodeType
+                uid: 'office!Office.CustomXMLNodeType:enum'
+              - name: DocumentMode
+                uid: 'office!Office.DocumentMode:enum'
+              - name: EventType
+                uid: 'office!Office.EventType:enum'
+              - name: FileType
+                uid: 'office!Office.FileType:enum'
+              - name: FilterType
+                uid: 'office!Office.FilterType:enum'
+              - name: GoToType
+                uid: 'office!Office.GoToType:enum'
+              - name: HostType
+                uid: 'office!Office.HostType:enum'
+              - name: Index
+                uid: 'office!Office.Index:enum'
+              - name: InitializationReason
+                uid: 'office!Office.InitializationReason:enum'
+              - name: PlatformType
+                uid: 'office!Office.PlatformType:enum'
+              - name: ProjectProjectFields
+                uid: 'office!Office.ProjectProjectFields:enum'
+              - name: ProjectResourceFields
+                uid: 'office!Office.ProjectResourceFields:enum'
+              - name: ProjectTaskFields
+                uid: 'office!Office.ProjectTaskFields:enum'
+              - name: ProjectViewTypes
+                uid: 'office!Office.ProjectViewTypes:enum'
+              - name: SelectionMode
+                uid: 'office!Office.SelectionMode:enum'
+              - name: Table
+                uid: 'office!Office.Table:enum'
+              - name: ValueFormat
+                uid: 'office!Office.ValueFormat:enum'
+          - name: AddBindingFromNamedItemOptions
+            uid: 'office!Office.AddBindingFromNamedItemOptions:interface'
+          - name: AddBindingFromPromptOptions
+            uid: 'office!Office.AddBindingFromPromptOptions:interface'
+          - name: AddBindingFromSelectionOptions
+            uid: 'office!Office.AddBindingFromSelectionOptions:interface'
+          - name: Event
+            uid: 'office!Office.AddinCommands.Event:interface'
+          - name: EventCompletedOptions
+            uid: 'office!Office.AddinCommands.EventCompletedOptions:interface'
+          - name: Source
+            uid: 'office!Office.AddinCommands.Source:interface'
+          - name: AsyncContextOptions
+            uid: 'office!Office.AsyncContextOptions:interface'
+          - name: AsyncResult
+            uid: 'office!Office.AsyncResult:interface'
+          - name: Auth
+            uid: 'office!Office.Auth:interface'
+          - name: AuthOptions
+            uid: 'office!Office.AuthOptions:interface'
+          - name: Binding
+            uid: 'office!Office.Binding:interface'
+          - name: BindingDataChangedEventArgs
+            uid: 'office!Office.BindingDataChangedEventArgs:interface'
+          - name: Bindings
+            uid: 'office!Office.Bindings:interface'
+          - name: BindingSelectionChangedEventArgs
+            uid: 'office!Office.BindingSelectionChangedEventArgs:interface'
+          - name: Context
+            uid: 'office!Office.Context:interface'
+          - name: ContextInformation
+            uid: 'office!Office.ContextInformation:interface'
+          - name: CustomXmlNode
+            uid: 'office!Office.CustomXmlNode:interface'
+          - name: CustomXmlPart
+            uid: 'office!Office.CustomXmlPart:interface'
+          - name: CustomXmlParts
+            uid: 'office!Office.CustomXmlParts:interface'
+          - name: CustomXmlPrefixMappings
+            uid: 'office!Office.CustomXmlPrefixMappings:interface'
+          - name: Dialog
+            uid: 'office!Office.Dialog:interface'
+          - name: DialogOptions
+            uid: 'office!Office.DialogOptions:interface'
+          - name: Document
+            uid: 'office!Office.Document:interface'
+          - name: DocumentSelectionChangedEventArgs
+            uid: 'office!Office.DocumentSelectionChangedEventArgs:interface'
+          - name: Error
+            uid: 'office!Office.Error:interface'
+          - name: File
+            uid: 'office!Office.File:interface'
+          - name: FileProperties
+            uid: 'office!Office.FileProperties:interface'
+          - name: GetBindingDataOptions
+            uid: 'office!Office.GetBindingDataOptions:interface'
+          - name: GetFileOptions
+            uid: 'office!Office.GetFileOptions:interface'
+          - name: GetSelectedDataOptions
+            uid: 'office!Office.GetSelectedDataOptions:interface'
+          - name: GoToByIdOptions
+            uid: 'office!Office.GoToByIdOptions:interface'
+          - name: IPromiseConstructor
+            uid: 'office!Office.IPromiseConstructor:interface'
+          - name: MatrixBinding
+            uid: 'office!Office.MatrixBinding:interface'
+          - name: NodeDeletedEventArgs
+            uid: 'office!Office.NodeDeletedEventArgs:interface'
+          - name: NodeInsertedEventArgs
+            uid: 'office!Office.NodeInsertedEventArgs:interface'
+          - name: NodeReplacedEventArgs
+            uid: 'office!Office.NodeReplacedEventArgs:interface'
+          - name: OfficeTheme
+            uid: 'office!Office.OfficeTheme:interface'
+          - name: RangeCoordinates
+            uid: 'office!Office.RangeCoordinates:interface'
+          - name: RangeFormatConfiguration
+            uid: 'office!Office.RangeFormatConfiguration:interface'
+          - name: RemoveHandlerOptions
+            uid: 'office!Office.RemoveHandlerOptions:interface'
+          - name: RequirementSetSupport
+            uid: 'office!Office.RequirementSetSupport:interface'
+          - name: SaveSettingsOptions
+            uid: 'office!Office.SaveSettingsOptions:interface'
+          - name: SetBindingDataOptions
+            uid: 'office!Office.SetBindingDataOptions:interface'
+          - name: SetSelectedDataOptions
+            uid: 'office!Office.SetSelectedDataOptions:interface'
+          - name: Settings
+            uid: 'office!Office.Settings:interface'
+          - name: SettingsChangedEventArgs
+            uid: 'office!Office.SettingsChangedEventArgs:interface'
+          - name: Slice
+            uid: 'office!Office.Slice:interface'
+          - name: TableBinding
+            uid: 'office!Office.TableBinding:interface'
+          - name: TableData
+            uid: 'office!Office.TableData:class'
+          - name: TextBinding
+            uid: 'office!Office.TextBinding:interface'
+          - name: UI
+            uid: 'office!Office.UI:interface'
+          - name: ClientObject
+            uid: 'office!OfficeExtension.ClientObject:class'
+          - name: ClientRequestContext
+            uid: 'office!OfficeExtension.ClientRequestContext:class'
+          - name: ClientResult
+            uid: 'office!OfficeExtension.ClientResult:class'
+          - name: DebugInfo
+            uid: 'office!OfficeExtension.DebugInfo:interface'
+          - name: EmbeddedOptions
+            uid: 'office!OfficeExtension.EmbeddedOptions:interface'
+          - name: EmbeddedSession
+            uid: 'office!OfficeExtension.EmbeddedSession:class'
+          - name: Error
+            uid: 'office!OfficeExtension.Error:class'
+          - name: ErrorCodes
+            uid: 'office!OfficeExtension.ErrorCodes:class'
+          - name: EventHandlerResult
+            uid: 'office!OfficeExtension.EventHandlerResult:class'
+          - name: EventHandlers
+            uid: 'office!OfficeExtension.EventHandlers:class'
+          - name: EventInfo
+            uid: 'office!OfficeExtension.EventInfo:interface'
+          - name: LoadOption
+            uid: 'office!OfficeExtension.LoadOption:interface'
+          - name: RequestContextDebugInfo
+            uid: 'office!OfficeExtension.RequestContextDebugInfo:interface'
+          - name: RequestUrlAndHeaderInfo
+            uid: 'office!OfficeExtension.RequestUrlAndHeaderInfo:interface'
+          - name: RunOptions
+            uid: 'office!OfficeExtension.RunOptions:interface'
+          - name: TrackedObjects
+            uid: 'office!OfficeExtension.TrackedObjects:class'
+          - name: UpdateOptions
+            uid: 'office!OfficeExtension.UpdateOptions:interface'

@@ -91,7 +91,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartErrorBarsFormatUpdateData
+    name: ChartErrorBarsFormatUpdateData
+    fullName: Excel.Interfaces.ChartErrorBarsFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#include~0:complex'
     name: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues"
     fullName: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues"

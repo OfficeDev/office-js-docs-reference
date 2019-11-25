@@ -344,7 +344,8 @@ items:
           - 'excel!Excel.Interfaces.WorksheetData#visibility~0:complex'
 references:
   - uid: 'excel!Excel.Interfaces.AutoFilterData:interface'
-    name: Excel.Interfaces.AutoFilterData
+    name: AutoFilterData
+    fullName: Excel.Interfaces.AutoFilterData
   - uid: 'excel!Excel.Interfaces.WorksheetData#charts~0:complex'
     name: 'Excel.Interfaces.ChartData[]'
     fullName: 'Excel.Interfaces.ChartData[]'
@@ -373,7 +374,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.PageLayoutData:interface'
-    name: Excel.Interfaces.PageLayoutData
+    name: PageLayoutData
+    fullName: Excel.Interfaces.PageLayoutData
   - uid: 'excel!Excel.Interfaces.WorksheetData#pivotTables~0:complex'
     name: 'Excel.Interfaces.PivotTableData[]'
     fullName: 'Excel.Interfaces.PivotTableData[]'
@@ -384,7 +386,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.WorksheetProtectionData:interface'
-    name: Excel.Interfaces.WorksheetProtectionData
+    name: WorksheetProtectionData
+    fullName: Excel.Interfaces.WorksheetProtectionData
   - uid: 'excel!Excel.Interfaces.WorksheetData#shapes~0:complex'
     name: 'Excel.Interfaces.ShapeData[]'
     fullName: 'Excel.Interfaces.ShapeData[]'

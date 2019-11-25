@@ -142,4 +142,5 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions:interface'
-    name: Excel.Interfaces.HeaderFooterLoadOptions
+    name: HeaderFooterLoadOptions
+    fullName: Excel.Interfaces.HeaderFooterLoadOptions

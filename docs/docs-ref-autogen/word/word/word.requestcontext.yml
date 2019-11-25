@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'word!OfficeExtension.ClientRequestContext:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientRequestContext:class'
     package: word!
     remarks: >-
 
@@ -152,5 +154,7 @@ references:
     name: OfficeExtension.ClientRequestContext
   - uid: 'word!Word.Application:class'
     name: Application
+    fullName: Word.Application
   - uid: 'word!Word.Document:class'
     name: Document
+    fullName: Word.Document

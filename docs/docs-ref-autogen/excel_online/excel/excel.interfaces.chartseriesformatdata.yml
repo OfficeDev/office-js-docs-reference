@@ -27,4 +27,5 @@ items:
           - 'excel!Excel.Interfaces.ChartLineFormatData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartLineFormatData:interface'
-    name: Excel.Interfaces.ChartLineFormatData
+    name: ChartLineFormatData
+    fullName: Excel.Interfaces.ChartLineFormatData

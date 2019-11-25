@@ -14,6 +14,8 @@ items:
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.DocumentCreated#body:member'
@@ -353,22 +355,31 @@ references:
   - uid: 'word!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.Body:class'
-    name: Word.Body
+    name: Body
+    fullName: Word.Body
   - uid: 'word!Word.ContentControlCollection:class'
-    name: Word.ContentControlCollection
+    name: ContentControlCollection
+    fullName: Word.ContentControlCollection
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.DocumentCreated:class'
-    name: Word.DocumentCreated
+    name: DocumentCreated
+    fullName: Word.DocumentCreated
   - uid: 'word!Word.Interfaces.DocumentCreatedLoadOptions:interface'
-    name: Word.Interfaces.DocumentCreatedLoadOptions
+    name: DocumentCreatedLoadOptions
+    fullName: Word.Interfaces.DocumentCreatedLoadOptions
   - uid: 'word!Word.DocumentProperties:class'
-    name: Word.DocumentProperties
+    name: DocumentProperties
+    fullName: Word.DocumentProperties
   - uid: 'word!Word.SectionCollection:class'
-    name: Word.SectionCollection
+    name: SectionCollection
+    fullName: Word.SectionCollection
   - uid: 'word!Word.Interfaces.DocumentCreatedUpdateData:interface'
-    name: Interfaces.DocumentCreatedUpdateData
+    name: DocumentCreatedUpdateData
+    fullName: Word.Interfaces.DocumentCreatedUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.DocumentCreatedData:interface'
-    name: Word.Interfaces.DocumentCreatedData
+    name: DocumentCreatedData
+    fullName: Word.Interfaces.DocumentCreatedData

@@ -61,6 +61,8 @@ items:
           - 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
-    name: Excel.Interfaces.ChartBorderLoadOptions
+    name: ChartBorderLoadOptions
+    fullName: Excel.Interfaces.ChartBorderLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'
-    name: Excel.Interfaces.ChartFontLoadOptions
+    name: ChartFontLoadOptions
+    fullName: Excel.Interfaces.ChartFontLoadOptions

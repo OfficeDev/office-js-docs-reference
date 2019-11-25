@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Filter#apply:member(1)'
@@ -476,13 +478,17 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.FilterCriteria:interface'
-    name: Excel.FilterCriteria
+    name: FilterCriteria
+    fullName: Excel.FilterCriteria
   - uid: 'excel!Excel.FilterOperator:enum'
-    name: Excel.FilterOperator
+    name: FilterOperator
+    fullName: Excel.FilterOperator
   - uid: 'excel!Excel.DynamicFilterCriteria:enum'
-    name: Excel.DynamicFilterCriteria
+    name: DynamicFilterCriteria
+    fullName: Excel.DynamicFilterCriteria
   - uid: 'excel!Excel.Icon:interface'
-    name: Excel.Icon
+    name: Icon
+    fullName: Excel.Icon
   - uid: 'excel!Excel.Filter#applyValuesFilter~0:complex'
     name: Array<string | FilterDatetime>
     fullName: Array<string | Excel.FilterDatetime>
@@ -499,9 +505,13 @@ references:
         fullName: '>'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Filter:class'
-    name: Excel.Filter
+    name: Filter
+    fullName: Excel.Filter
   - uid: 'excel!Excel.Interfaces.FilterLoadOptions:interface'
-    name: Excel.Interfaces.FilterLoadOptions
+    name: FilterLoadOptions
+    fullName: Excel.Interfaces.FilterLoadOptions
   - uid: 'excel!Excel.Interfaces.FilterData:interface'
-    name: Excel.Interfaces.FilterData
+    name: FilterData
+    fullName: Excel.Interfaces.FilterData

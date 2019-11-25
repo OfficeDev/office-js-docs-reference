@@ -47,3 +47,4 @@ items:
 references:
   - uid: 'outlook!Office.Recurrence:interface'
     name: Recurrence
+    fullName: Office.Recurrence

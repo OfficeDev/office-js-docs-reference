@@ -474,9 +474,11 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
-    name: Excel.Interfaces.DocumentPropertiesData
+    name: DocumentPropertiesData
+    fullName: Excel.Interfaces.DocumentPropertiesData
   - uid: 'excel!Excel.Interfaces.WorkbookProtectionData:interface'
-    name: Excel.Interfaces.WorkbookProtectionData
+    name: WorkbookProtectionData
+    fullName: Excel.Interfaces.WorkbookProtectionData
   - uid: 'excel!Excel.Interfaces.WorkbookData#settings~0:complex'
     name: 'Excel.Interfaces.SettingData[]'
     fullName: 'Excel.Interfaces.SettingData[]'

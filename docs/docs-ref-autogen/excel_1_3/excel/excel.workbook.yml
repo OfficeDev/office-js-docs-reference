@@ -15,6 +15,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Workbook#application:member'
@@ -343,21 +345,29 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Application:class'
-    name: Excel.Application
+    name: Application
+    fullName: Excel.Application
   - uid: 'excel!Excel.BindingCollection:class'
-    name: Excel.BindingCollection
+    name: BindingCollection
+    fullName: Excel.BindingCollection
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.Functions:class'
-    name: Excel.Functions
+    name: Functions
+    fullName: Excel.Functions
   - uid: 'excel!Excel.Range:class'
-    name: Excel.Range
+    name: Range
+    fullName: Excel.Range
   - uid: 'excel!Excel.Workbook:class'
-    name: Excel.Workbook
+    name: Workbook
+    fullName: Excel.Workbook
   - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
-    name: Excel.Interfaces.WorkbookLoadOptions
+    name: WorkbookLoadOptions
+    fullName: Excel.Interfaces.WorkbookLoadOptions
   - uid: 'excel!Excel.NamedItemCollection:class'
-    name: Excel.NamedItemCollection
+    name: NamedItemCollection
+    fullName: Excel.NamedItemCollection
   - uid: 'excel!Excel.Workbook#onSelectionChanged~0:complex'
     name: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>
@@ -373,14 +383,19 @@ references:
       - name: '>'
         fullName: '>'
   - uid: 'excel!Excel.PivotTableCollection:class'
-    name: Excel.PivotTableCollection
+    name: PivotTableCollection
+    fullName: Excel.PivotTableCollection
   - uid: 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
-    name: Interfaces.WorkbookUpdateData
+    name: WorkbookUpdateData
+    fullName: Excel.Interfaces.WorkbookUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.TableCollection:class'
-    name: Excel.TableCollection
+    name: TableCollection
+    fullName: Excel.TableCollection
   - uid: 'excel!Excel.Interfaces.WorkbookData:interface'
-    name: Excel.Interfaces.WorkbookData
+    name: WorkbookData
+    fullName: Excel.Interfaces.WorkbookData
   - uid: 'excel!Excel.WorksheetCollection:class'
-    name: Excel.WorksheetCollection
+    name: WorksheetCollection
+    fullName: Excel.WorksheetCollection

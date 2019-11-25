@@ -195,7 +195,8 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartTitleFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartTitleFormatUpdateData
+    name: ChartTitleFormatUpdateData
+    fullName: Excel.Interfaces.ChartTitleFormatUpdateData
   - uid: 'excel!Excel.Interfaces.ChartTitleUpdateData#horizontalAlignment~0:complex'
     name: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
     fullName: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"

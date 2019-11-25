@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TableSort#apply:member(1)'
@@ -300,7 +302,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.SortMethod:enum'
-    name: Excel.SortMethod
+    name: SortMethod
+    fullName: Excel.SortMethod
   - uid: 'excel!Excel.TableSort#apply~1:complex'
     name: 'Excel.SortField[]'
     fullName: 'Excel.SortField[]'
@@ -312,6 +315,7 @@ references:
         fullName: '[]'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.TableSort#fields~0:complex'
     name: 'Excel.SortField[]'
     fullName: 'Excel.SortField[]'
@@ -322,9 +326,11 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.TableSort:class'
-    name: Excel.TableSort
+    name: TableSort
+    fullName: Excel.TableSort
   - uid: 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
-    name: Excel.Interfaces.TableSortLoadOptions
+    name: TableSortLoadOptions
+    fullName: Excel.Interfaces.TableSortLoadOptions
   - uid: 'excel!Excel.TableSort#method~0:complex'
     name: Excel.SortMethod | "PinYin" | "StrokeCount"
     fullName: Excel.SortMethod | "PinYin" | "StrokeCount"
@@ -335,4 +341,5 @@ references:
       - name: ' | "PinYin" | "StrokeCount"'
         fullName: ' | "PinYin" | "StrokeCount"'
   - uid: 'excel!Excel.Interfaces.TableSortData:interface'
-    name: Excel.Interfaces.TableSortData
+    name: TableSortData
+    fullName: Excel.Interfaces.TableSortData

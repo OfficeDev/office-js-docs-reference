@@ -69,4 +69,5 @@ items:
           - boolean
 references:
   - uid: 'visio!Visio.Document:class'
-    name: Visio.Document
+    name: Document
+    fullName: Visio.Document

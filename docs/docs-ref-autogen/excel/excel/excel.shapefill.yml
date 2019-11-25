@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ShapeFill#clear:member(1)'
@@ -272,16 +274,21 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ShapeFill:class'
-    name: Excel.ShapeFill
+    name: ShapeFill
+    fullName: Excel.ShapeFill
   - uid: 'excel!Excel.Interfaces.ShapeFillLoadOptions:interface'
-    name: Excel.Interfaces.ShapeFillLoadOptions
+    name: ShapeFillLoadOptions
+    fullName: Excel.Interfaces.ShapeFillLoadOptions
   - uid: 'excel!Excel.Interfaces.ShapeFillUpdateData:interface'
-    name: Interfaces.ShapeFillUpdateData
+    name: ShapeFillUpdateData
+    fullName: Excel.Interfaces.ShapeFillUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ShapeFillData:interface'
-    name: Excel.Interfaces.ShapeFillData
+    name: ShapeFillData
+    fullName: Excel.Interfaces.ShapeFillData
   - uid: 'excel!Excel.ShapeFill#type~0:complex'
     name: Excel.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" | "Mixed"
     fullName: Excel.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" | "Mixed"

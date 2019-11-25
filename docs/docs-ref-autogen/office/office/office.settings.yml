@@ -593,9 +593,11 @@ items:
             - any
 references:
   - uid: 'office!Office.EventType:enum'
-    name: Office.EventType
+    name: EventType
+    fullName: Office.EventType
   - uid: 'office!Office.AsyncContextOptions:interface'
-    name: Office.AsyncContextOptions
+    name: AsyncContextOptions
+    fullName: Office.AsyncContextOptions
   - uid: 'office!Office.Settings#addHandlerAsync~0:complex'
     name: '(result: AsyncResult<void>) => void'
     fullName: '(result: Office.AsyncResult<void>) => void'
@@ -636,6 +638,7 @@ references:
         fullName: '>) => void'
   - uid: 'office!Office.RemoveHandlerOptions:interface'
     name: RemoveHandlerOptions
+    fullName: Office.RemoveHandlerOptions
   - uid: 'office!Office.Settings#removeHandlerAsync~0:complex'
     name: '(result: AsyncResult<void>) => void'
     fullName: '(result: Office.AsyncResult<void>) => void'
@@ -660,6 +663,7 @@ references:
         fullName: <void>) => void
   - uid: 'office!Office.SaveSettingsOptions:interface'
     name: SaveSettingsOptions
+    fullName: Office.SaveSettingsOptions
   - uid: 'office!Office.Settings#saveAsync~0:complex'
     name: '(result: AsyncResult<void>) => void'
     fullName: '(result: Office.AsyncResult<void>) => void'

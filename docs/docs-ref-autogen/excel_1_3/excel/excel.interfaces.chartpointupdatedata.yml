@@ -27,4 +27,5 @@ items:
           - 'excel!Excel.Interfaces.ChartPointFormatUpdateData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ChartPointFormatUpdateData:interface'
-    name: Excel.Interfaces.ChartPointFormatUpdateData
+    name: ChartPointFormatUpdateData
+    fullName: Excel.Interfaces.ChartPointFormatUpdateData

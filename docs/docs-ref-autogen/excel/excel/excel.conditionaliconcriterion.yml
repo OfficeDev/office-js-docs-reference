@@ -227,7 +227,8 @@ items:
           ```
 references:
   - uid: 'excel!Excel.Icon:interface'
-    name: Excel.Icon
+    name: Icon
+    fullName: Excel.Icon
   - uid: 'excel!Excel.ConditionalIconCriterion#operator~0:complex'
     name: Excel.ConditionalIconCriterionOperator | "Invalid" | "GreaterThan" | "GreaterThanOrEqual"
     fullName: Excel.ConditionalIconCriterionOperator | "Invalid" | "GreaterThan" | "GreaterThanOrEqual"

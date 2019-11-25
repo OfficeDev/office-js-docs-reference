@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.GroupShapeCollection#context:member'
@@ -194,6 +196,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.GroupShapeCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -204,7 +207,8 @@ references:
       - name: <number>
         fullName: <number>
   - uid: 'excel!Excel.Shape:class'
-    name: Excel.Shape
+    name: Shape
+    fullName: Excel.Shape
   - uid: 'excel!Excel.GroupShapeCollection#items~0:complex'
     name: 'Excel.Shape[]'
     fullName: 'Excel.Shape[]'
@@ -215,7 +219,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.GroupShapeCollection:class'
-    name: Excel.GroupShapeCollection
+    name: GroupShapeCollection
+    fullName: Excel.GroupShapeCollection
   - uid: 'excel!Excel.GroupShapeCollection#load~0:complex'
     name: Excel.Interfaces.GroupShapeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.GroupShapeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -231,4 +236,5 @@ references:
   - uid: 'excel!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.GroupShapeCollectionData:interface'
-    name: Excel.Interfaces.GroupShapeCollectionData
+    name: GroupShapeCollectionData
+    fullName: Excel.Interfaces.GroupShapeCollectionData

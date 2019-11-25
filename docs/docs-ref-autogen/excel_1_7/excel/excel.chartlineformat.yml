@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartLineFormat#clear:member(1)'
@@ -281,6 +283,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.ChartLineFormat#lineStyle~0:complex'
     name: >-
       Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" |
@@ -295,12 +298,16 @@ references:
       - name: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"'
         fullName: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"'
   - uid: 'excel!Excel.ChartLineFormat:class'
-    name: Excel.ChartLineFormat
+    name: ChartLineFormat
+    fullName: Excel.ChartLineFormat
   - uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
-    name: Excel.Interfaces.ChartLineFormatLoadOptions
+    name: ChartLineFormatLoadOptions
+    fullName: Excel.Interfaces.ChartLineFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartLineFormatUpdateData:interface'
-    name: Interfaces.ChartLineFormatUpdateData
+    name: ChartLineFormatUpdateData
+    fullName: Excel.Interfaces.ChartLineFormatUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartLineFormatData:interface'
-    name: Excel.Interfaces.ChartLineFormatData
+    name: ChartLineFormatData
+    fullName: Excel.Interfaces.ChartLineFormatData

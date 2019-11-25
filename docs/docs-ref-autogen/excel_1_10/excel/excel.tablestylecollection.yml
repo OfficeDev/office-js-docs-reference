@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TableStyleCollection#add:member(1)'
@@ -260,9 +262,11 @@ references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.TableStyle:class'
-    name: Excel.TableStyle
+    name: TableStyle
+    fullName: Excel.TableStyle
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.TableStyleCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
@@ -282,7 +286,8 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.TableStyleCollection:class'
-    name: Excel.TableStyleCollection
+    name: TableStyleCollection
+    fullName: Excel.TableStyleCollection
   - uid: 'excel!Excel.TableStyleCollection#load~0:complex'
     name: Excel.Interfaces.TableStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
     fullName: Excel.Interfaces.TableStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
@@ -307,4 +312,5 @@ references:
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.Interfaces.TableStyleCollectionData:interface'
-    name: Excel.Interfaces.TableStyleCollectionData
+    name: TableStyleCollectionData
+    fullName: Excel.Interfaces.TableStyleCollectionData

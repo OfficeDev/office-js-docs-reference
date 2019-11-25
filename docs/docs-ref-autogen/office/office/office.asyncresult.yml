@@ -237,6 +237,8 @@ items:
           - T
 references:
   - uid: 'office!Office.Error:interface'
-    name: Office.Error
+    name: Error
+    fullName: Office.Error
   - uid: 'office!Office.AsyncResultStatus:enum'
     name: AsyncResultStatus
+    fullName: Office.AsyncResultStatus

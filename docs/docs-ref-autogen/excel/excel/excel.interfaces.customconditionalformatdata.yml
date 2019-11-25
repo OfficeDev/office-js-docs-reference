@@ -45,6 +45,8 @@ items:
           - 'excel!Excel.Interfaces.ConditionalFormatRuleData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
-    name: Excel.Interfaces.ConditionalRangeFormatData
+    name: ConditionalRangeFormatData
+    fullName: Excel.Interfaces.ConditionalRangeFormatData
   - uid: 'excel!Excel.Interfaces.ConditionalFormatRuleData:interface'
-    name: Excel.Interfaces.ConditionalFormatRuleData
+    name: ConditionalFormatRuleData
+    fullName: Excel.Interfaces.ConditionalFormatRuleData

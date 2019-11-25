@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.DocumentProperties#applicationName:member'
@@ -518,17 +520,23 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: '!Date:interface'
     name: Date
   - uid: 'word!Word.CustomPropertyCollection:class'
-    name: Word.CustomPropertyCollection
+    name: CustomPropertyCollection
+    fullName: Word.CustomPropertyCollection
   - uid: 'word!Word.DocumentProperties:class'
-    name: Word.DocumentProperties
+    name: DocumentProperties
+    fullName: Word.DocumentProperties
   - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions:interface'
-    name: Word.Interfaces.DocumentPropertiesLoadOptions
+    name: DocumentPropertiesLoadOptions
+    fullName: Word.Interfaces.DocumentPropertiesLoadOptions
   - uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData:interface'
-    name: Interfaces.DocumentPropertiesUpdateData
+    name: DocumentPropertiesUpdateData
+    fullName: Word.Interfaces.DocumentPropertiesUpdateData
   - uid: 'word!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.DocumentPropertiesData:interface'
-    name: Word.Interfaces.DocumentPropertiesData
+    name: DocumentPropertiesData
+    fullName: Word.Interfaces.DocumentPropertiesData

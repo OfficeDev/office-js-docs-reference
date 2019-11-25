@@ -29,4 +29,5 @@ items:
           - 'word!Word.Interfaces.BodyData:interface'
 references:
   - uid: 'word!Word.Interfaces.BodyData:interface'
-    name: Word.Interfaces.BodyData
+    name: BodyData
+    fullName: Word.Interfaces.BodyData

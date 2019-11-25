@@ -74,6 +74,8 @@ items:
           - 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions:interface'
 references:
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions:interface'
-    name: OneNote.Interfaces.InkAnalysisParagraphLoadOptions
+    name: InkAnalysisParagraphLoadOptions
+    fullName: OneNote.Interfaces.InkAnalysisParagraphLoadOptions
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions:interface'
-    name: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
+    name: InkAnalysisWordCollectionLoadOptions
+    fullName: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions

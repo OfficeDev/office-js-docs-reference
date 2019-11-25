@@ -203,8 +203,11 @@ items:
           - boolean
 references:
   - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions:interface'
-    name: Excel.Interfaces.ChartCollectionLoadOptions
+    name: ChartCollectionLoadOptions
+    fullName: Excel.Interfaces.ChartCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
-    name: Excel.Interfaces.WorksheetProtectionLoadOptions
+    name: WorksheetProtectionLoadOptions
+    fullName: Excel.Interfaces.WorksheetProtectionLoadOptions
   - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
-    name: Excel.Interfaces.TableCollectionLoadOptions
+    name: TableCollectionLoadOptions
+    fullName: Excel.Interfaces.TableCollectionLoadOptions

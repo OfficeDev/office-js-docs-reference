@@ -262,7 +262,8 @@ items:
           - string
 references:
   - uid: 'excel!Excel.Interfaces.AutoFilterData:interface'
-    name: Excel.Interfaces.AutoFilterData
+    name: AutoFilterData
+    fullName: Excel.Interfaces.AutoFilterData
   - uid: 'excel!Excel.Interfaces.TableData#columns~0:complex'
     name: 'Excel.Interfaces.TableColumnData[]'
     fullName: 'Excel.Interfaces.TableColumnData[]'
@@ -282,4 +283,5 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.TableSortData:interface'
-    name: Excel.Interfaces.TableSortData
+    name: TableSortData
+    fullName: Excel.Interfaces.TableSortData

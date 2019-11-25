@@ -44,4 +44,5 @@ items:
           - 'word!Word.Interfaces.BodyLoadOptions:interface'
 references:
   - uid: 'word!Word.Interfaces.BodyLoadOptions:interface'
-    name: Word.Interfaces.BodyLoadOptions
+    name: BodyLoadOptions
+    fullName: Word.Interfaces.BodyLoadOptions

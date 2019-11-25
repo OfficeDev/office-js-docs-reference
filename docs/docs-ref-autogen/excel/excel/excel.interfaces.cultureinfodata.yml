@@ -50,4 +50,5 @@ items:
           - 'excel!Excel.Interfaces.NumberFormatInfoData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.NumberFormatInfoData:interface'
-    name: Excel.Interfaces.NumberFormatInfoData
+    name: NumberFormatInfoData
+    fullName: Excel.Interfaces.NumberFormatInfoData

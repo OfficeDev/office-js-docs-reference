@@ -123,11 +123,14 @@ items:
           - 'onenote!OneNote.Interfaces.PageContentData#type~0:complex'
 references:
   - uid: 'onenote!OneNote.Interfaces.ImageData:interface'
-    name: OneNote.Interfaces.ImageData
+    name: ImageData
+    fullName: OneNote.Interfaces.ImageData
   - uid: 'onenote!OneNote.Interfaces.FloatingInkData:interface'
-    name: OneNote.Interfaces.FloatingInkData
+    name: FloatingInkData
+    fullName: OneNote.Interfaces.FloatingInkData
   - uid: 'onenote!OneNote.Interfaces.OutlineData:interface'
-    name: OneNote.Interfaces.OutlineData
+    name: OutlineData
+    fullName: OneNote.Interfaces.OutlineData
   - uid: 'onenote!OneNote.Interfaces.PageContentData#type~0:complex'
     name: OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other"
     fullName: OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other"

@@ -123,7 +123,8 @@ items:
           - 'onenote!OneNote.Interfaces.ParagraphData#type~0:complex'
 references:
   - uid: 'onenote!OneNote.Interfaces.ImageData:interface'
-    name: OneNote.Interfaces.ImageData
+    name: ImageData
+    fullName: OneNote.Interfaces.ImageData
   - uid: 'onenote!OneNote.Interfaces.ParagraphData#inkWords~0:complex'
     name: 'OneNote.Interfaces.InkWordData[]'
     fullName: 'OneNote.Interfaces.InkWordData[]'
@@ -143,9 +144,11 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'onenote!OneNote.Interfaces.RichTextData:interface'
-    name: OneNote.Interfaces.RichTextData
+    name: RichTextData
+    fullName: OneNote.Interfaces.RichTextData
   - uid: 'onenote!OneNote.Interfaces.TableData:interface'
-    name: OneNote.Interfaces.TableData
+    name: TableData
+    fullName: OneNote.Interfaces.TableData
   - uid: 'onenote!OneNote.Interfaces.ParagraphData#type~0:complex'
     name: OneNote.ParagraphType | "RichText" | "Image" | "Table" | "Ink" | "Other"
     fullName: OneNote.ParagraphType | "RichText" | "Image" | "Table" | "Ink" | "Other"

@@ -75,8 +75,11 @@ items:
           - 'excel!Excel.DataValidationRule:interface'
 references:
   - uid: 'excel!Excel.DataValidationErrorAlert:interface'
-    name: Excel.DataValidationErrorAlert
+    name: DataValidationErrorAlert
+    fullName: Excel.DataValidationErrorAlert
   - uid: 'excel!Excel.DataValidationPrompt:interface'
-    name: Excel.DataValidationPrompt
+    name: DataValidationPrompt
+    fullName: Excel.DataValidationPrompt
   - uid: 'excel!Excel.DataValidationRule:interface'
-    name: Excel.DataValidationRule
+    name: DataValidationRule
+    fullName: Excel.DataValidationRule

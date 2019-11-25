@@ -182,4 +182,5 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'visio!Visio.Interfaces.PageViewData:interface'
-    name: Visio.Interfaces.PageViewData
+    name: PageViewData
+    fullName: Visio.Interfaces.PageViewData

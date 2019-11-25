@@ -29,4 +29,5 @@ items:
           - 'onenote!OneNote.Interfaces.InkAnalysisUpdateData:interface'
 references:
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisUpdateData:interface'
-    name: OneNote.Interfaces.InkAnalysisUpdateData
+    name: InkAnalysisUpdateData
+    fullName: OneNote.Interfaces.InkAnalysisUpdateData

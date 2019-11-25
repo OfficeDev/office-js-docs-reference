@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'word!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'word!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.List#context:member'
@@ -591,8 +593,10 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
+    fullName: Word.RequestContext
   - uid: 'word!Word.ParagraphCollection:class'
-    name: Word.ParagraphCollection
+    name: ParagraphCollection
+    fullName: Word.ParagraphCollection
   - uid: 'word!Word.List#getLevelString~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -603,9 +607,11 @@ references:
       - name: <string>
         fullName: <string>
   - uid: 'word!Word.Paragraph:class'
-    name: Word.Paragraph
+    name: Paragraph
+    fullName: Word.Paragraph
   - uid: 'word!Word.InsertLocation:enum'
-    name: Word.InsertLocation
+    name: InsertLocation
+    fullName: Word.InsertLocation
   - uid: 'word!Word.List#levelTypes~0:complex'
     name: 'Word.ListLevelType[]'
     fullName: 'Word.ListLevelType[]'
@@ -616,15 +622,20 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'word!Word.List:class'
-    name: Word.List
+    name: List
+    fullName: Word.List
   - uid: 'word!Word.Interfaces.ListLoadOptions:interface'
-    name: Word.Interfaces.ListLoadOptions
+    name: ListLoadOptions
+    fullName: Word.Interfaces.ListLoadOptions
   - uid: 'word!Word.Alignment:enum'
-    name: Word.Alignment
+    name: Alignment
+    fullName: Word.Alignment
   - uid: 'word!Word.ListBullet:enum'
-    name: Word.ListBullet
+    name: ListBullet
+    fullName: Word.ListBullet
   - uid: 'word!Word.ListNumbering:enum'
-    name: Word.ListNumbering
+    name: ListNumbering
+    fullName: Word.ListNumbering
   - uid: 'word!Word.List#setLevelNumbering~0:complex'
     name: Array<string | number>
     fullName: Array<string | number>
@@ -644,4 +655,5 @@ references:
       - name: <string | number>
         fullName: <string | number>
   - uid: 'word!Word.Interfaces.ListData:interface'
-    name: Word.Interfaces.ListData
+    name: ListData
+    fullName: Word.Interfaces.ListData

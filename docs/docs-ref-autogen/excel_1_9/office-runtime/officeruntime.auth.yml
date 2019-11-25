@@ -53,3 +53,4 @@ references:
         fullName: <string>
   - uid: 'office-runtime!OfficeRuntime.AuthOptions:interface'
     name: AuthOptions
+    fullName: OfficeRuntime.AuthOptions

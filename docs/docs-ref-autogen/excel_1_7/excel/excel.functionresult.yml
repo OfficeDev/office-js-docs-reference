@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.FunctionResult#context:member'
@@ -162,6 +164,7 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.FunctionResult#load~0:complex'
     name: FunctionResult<T>
     fullName: Excel.FunctionResult<T>
@@ -172,7 +175,8 @@ references:
       - name: <T>
         fullName: <T>
   - uid: 'excel!Excel.Interfaces.FunctionResultLoadOptions:interface'
-    name: Excel.Interfaces.FunctionResultLoadOptions
+    name: FunctionResultLoadOptions
+    fullName: Excel.Interfaces.FunctionResultLoadOptions
   - uid: 'excel!Excel.FunctionResult#load~1:complex'
     name: FunctionResult<T>
     fullName: Excel.FunctionResult<T>

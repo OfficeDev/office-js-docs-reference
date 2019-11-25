@@ -59,4 +59,5 @@ items:
           - number
 references:
   - uid: 'onenote!OneNote.Interfaces.ImageUpdateData:interface'
-    name: OneNote.Interfaces.ImageUpdateData
+    name: ImageUpdateData
+    fullName: OneNote.Interfaces.ImageUpdateData

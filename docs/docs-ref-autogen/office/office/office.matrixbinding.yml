@@ -12,6 +12,8 @@ items:
     type: interface
     extends:
       - 'office!Office.Binding:interface'
+    inheritance:
+      - type: 'office!Office.Binding:interface'
     package: office!
     children:
       - 'office!Office.MatrixBinding#columnCount:member'
@@ -75,3 +77,4 @@ items:
 references:
   - uid: 'office!Office.Binding:interface'
     name: Binding
+    fullName: Office.Binding

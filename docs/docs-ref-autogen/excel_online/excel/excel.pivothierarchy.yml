@@ -12,6 +12,8 @@ items:
     type: class
     extends:
       - 'excel!OfficeExtension.ClientObject:class'
+    inheritance:
+      - type: 'excel!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PivotHierarchy#context:member'
@@ -224,15 +226,21 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+    fullName: Excel.RequestContext
   - uid: 'excel!Excel.PivotFieldCollection:class'
-    name: Excel.PivotFieldCollection
+    name: PivotFieldCollection
+    fullName: Excel.PivotFieldCollection
   - uid: 'excel!Excel.PivotHierarchy:class'
-    name: Excel.PivotHierarchy
+    name: PivotHierarchy
+    fullName: Excel.PivotHierarchy
   - uid: 'excel!Excel.Interfaces.PivotHierarchyLoadOptions:interface'
-    name: Excel.Interfaces.PivotHierarchyLoadOptions
+    name: PivotHierarchyLoadOptions
+    fullName: Excel.Interfaces.PivotHierarchyLoadOptions
   - uid: 'excel!Excel.Interfaces.PivotHierarchyUpdateData:interface'
-    name: Interfaces.PivotHierarchyUpdateData
+    name: PivotHierarchyUpdateData
+    fullName: Excel.Interfaces.PivotHierarchyUpdateData
   - uid: 'excel!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.PivotHierarchyData:interface'
-    name: Excel.Interfaces.PivotHierarchyData
+    name: PivotHierarchyData
+    fullName: Excel.Interfaces.PivotHierarchyData

@@ -105,4 +105,5 @@ items:
           - 'any[][]'
 references:
   - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData:interface'
-    name: Excel.Interfaces.RangeFormatUpdateData
+    name: RangeFormatUpdateData
+    fullName: Excel.Interfaces.RangeFormatUpdateData

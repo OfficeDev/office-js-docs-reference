@@ -59,7 +59,8 @@ items:
           - 'visio!Visio.Interfaces.DocumentViewData:interface'
 references:
   - uid: 'visio!Visio.Interfaces.ApplicationData:interface'
-    name: Visio.Interfaces.ApplicationData
+    name: ApplicationData
+    fullName: Visio.Interfaces.ApplicationData
   - uid: 'visio!Visio.Interfaces.DocumentData#pages~0:complex'
     name: 'Visio.Interfaces.PageData[]'
     fullName: 'Visio.Interfaces.PageData[]'
@@ -70,4 +71,5 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'visio!Visio.Interfaces.DocumentViewData:interface'
-    name: Visio.Interfaces.DocumentViewData
+    name: DocumentViewData
+    fullName: Visio.Interfaces.DocumentViewData
