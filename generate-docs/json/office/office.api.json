@@ -3428,7 +3428,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.Context#mailbox:member",
-                  "docComment": "/**\n * Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * **Namespaces**:\n *\n * - `diagnostics`: Provides diagnostic information to an Outlook add-in.\n *\n * - `item`: Provides methods and properties for accessing a message or appointment in an Outlook add-in.\n *\n * - `userProfile`: Provides information about the user in an Outlook add-in.\n */\n",
+                  "docComment": "/**\n * Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * **Namespaces**:\n *\n * - `diagnostics`: Provides diagnostic information to an Outlook add-in.\n *\n * - `item`: Provides methods and properties for accessing a message or appointment in an Outlook add-in.\n *\n * - `userProfile`: Provides information about the user in an Outlook add-in.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -3532,7 +3532,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.Context#roamingSettings:member",
-                  "docComment": "/**\n * Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.\n *\n * The RoamingSettings object lets you store and access data for a mail add-in that is stored in a user's mailbox, so that is available to that add-in when it is running from any host client application used to access that mailbox.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
+                  "docComment": "/**\n * Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.\n *\n * The RoamingSettings object lets you store and access data for a mail add-in that is stored in a user's mailbox, so that is available to that add-in when it is running from any host client application used to access that mailbox.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

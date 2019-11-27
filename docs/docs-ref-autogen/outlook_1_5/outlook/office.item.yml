@@ -15,9 +15,6 @@ items:
       [MessageRead](xref:outlook!Office.MessageRead:interface)<!-- -->,
       [AppointmentCompose](xref:outlook!Office.AppointmentCompose:interface)<!-- -->,
       [AppointmentRead](xref:outlook!Office.AppointmentRead:interface)
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: Restricted
@@ -90,9 +87,6 @@ items:
 
       The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance
       is a message or an appointment.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -138,9 +132,6 @@ items:
       The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can
       be used to get, set, and remove custom properties from the item and save changes to the custom property set back
       to the server.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
