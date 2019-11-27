@@ -571,8 +571,6 @@ export declare namespace Office {
         /**
          * Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
          *
-         * [Api set: Mailbox 1.0]
-         *
          * @remarks
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
@@ -605,8 +603,6 @@ export declare namespace Office {
          *
          * The RoamingSettings object lets you store and access data for a mail add-in that is stored in a user's mailbox, so that is available to 
          * that add-in when it is running from any host client application used to access that mailbox.
-         *
-         * [Api set: Mailbox 1.0]
          *
          * @remarks
          * 
