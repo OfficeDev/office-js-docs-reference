@@ -1152,12 +1152,6 @@ items:
           var text = asyncResult.value.data;
           var prop = asyncResult.value.sourceProperty;
 
-          // Handle where Outlook on the web erroneously returns "null" instead of empty string.
-          if (Office.context.mailbox.diagnostics.hostName === 'OutlookWebApp'
-              && asyncResult.value.endPosition === asyncResult.value.startPosition) {
-              text = "";
-          }
-
           console.log("Selected text in " + prop + ": " + text);
       }
 

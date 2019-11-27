@@ -164,12 +164,6 @@
         var text = asyncResult.value.data;
         var prop = asyncResult.value.sourceProperty;
 
-        // Handle where Outlook on the web erroneously returns "null" instead of empty string.
-        if (Office.context.mailbox.diagnostics.hostName === 'OutlookWebApp'
-            && asyncResult.value.endPosition === asyncResult.value.startPosition) {
-            text = "";
-        }
-
         console.log("Selected text in " + prop + ": " + text);
     }
 'Office.AppointmentCompose#itemType:member':
@@ -768,7 +762,6 @@
 'Office.AttachmentContent#format:member':
   - |-
     var item = Office.context.mailbox.item;
-    var listOfAttachments = [];
     var options = {asyncContext: {currentItem: item}};
     item.getAttachmentsAsync(options, callback);
 
@@ -1206,7 +1199,6 @@
 'Office.Item#getAttachmentContentAsync:member(1)':
   - |-
     var item = Office.context.mailbox.item;
-    var listOfAttachments = [];
     var options = {asyncContext: {currentItem: item}};
     item.getAttachmentsAsync(options, callback);
 
@@ -1799,12 +1791,6 @@
     function getCallback(asyncResult) {
         var text = asyncResult.value.data;
         var prop = asyncResult.value.sourceProperty;
-
-        // Handle where Outlook on the web erroneously returns "null" instead of empty string.
-        if (Office.context.mailbox.diagnostics.hostName === 'OutlookWebApp'
-            && asyncResult.value.endPosition === asyncResult.value.startPosition) {
-            text = "";
-        }
 
         console.log("Selected text in " + prop + ": " + text);
     }

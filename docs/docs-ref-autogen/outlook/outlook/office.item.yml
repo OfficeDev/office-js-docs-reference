@@ -285,8 +285,6 @@ items:
 
       var item = Office.context.mailbox.item;
 
-      var listOfAttachments = [];
-
       var options = {asyncContext: {currentItem: item}};
 
       item.getAttachmentsAsync(options, callback);
