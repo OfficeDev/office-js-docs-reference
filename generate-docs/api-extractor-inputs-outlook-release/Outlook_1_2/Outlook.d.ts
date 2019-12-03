@@ -466,8 +466,6 @@ export declare namespace Office {
          * To access the selected data from the callback method, call asyncResult.value.data. 
          * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
          *
-         * **Note**: In Outlook on the web, the method returns the string "null" if no text is selected but the cursor is in the body.
-         *
          * [Api set: Mailbox 1.2]
          *
          * @returns
@@ -494,8 +492,6 @@ export declare namespace Office {
          *
          * To access the selected data from the callback method, call asyncResult.value.data. 
          * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
-         *
-         * **Note**: In Outlook on the web, the method returns the string "null" if no text is selected but the cursor is in the body.
          *
          * [Api set: Mailbox 1.2]
          *
@@ -2038,8 +2034,6 @@ export declare namespace Office {
          * To access the selected data from the callback method, call asyncResult.value.data.
          * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
          *
-         * **Note**: In Outlook on the web, the method returns the string "null" if no text is selected but the cursor is in the body.
-         *
          * [Api set: Mailbox 1.2]
          *
          * @returns
@@ -2067,8 +2061,6 @@ export declare namespace Office {
          *
          * To access the selected data from the callback method, call asyncResult.value.data.
          * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
-         *
-         * **Note**: In Outlook on the web, the method returns the string "null" if no text is selected but the cursor is in the body.
          *
          * [Api set: Mailbox 1.2]
          *
@@ -3332,8 +3324,6 @@ export declare namespace Office {
          * To access the selected data from the callback method, call asyncResult.value.data. 
          * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
          *
-         * **Note**: In Outlook on the web, the method returns the string "null" if no text is selected but the cursor is in the body.
-         *
          * [Api set: Mailbox 1.2]
          *
          * @returns
@@ -3361,8 +3351,6 @@ export declare namespace Office {
          *
          * To access the selected data from the callback method, call asyncResult.value.data. 
          * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
-         *
-         * **Note**: In Outlook on the web, the method returns the string "null" if no text is selected but the cursor is in the body.
          *
          * [Api set: Mailbox 1.2]
          *
