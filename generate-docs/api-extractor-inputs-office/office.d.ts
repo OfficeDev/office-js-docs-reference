@@ -752,7 +752,7 @@ export declare namespace Office {
         * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to 
         * other domains.
         *
-        * Any page calling `office.context.ui.messageParent` must also be on the same domain as the parent page.
+        * Any page calling `Office.context.ui.messageParent` must also be on the same domain as the parent page.
         * 
         * **Design considerations**:
         *
@@ -857,7 +857,7 @@ export declare namespace Office {
         * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to 
         * other domains.
         *
-        * Any page calling `office.context.ui.messageParent` must also be on the same domain as the parent page.
+        * Any page calling `Office.context.ui.messageParent` must also be on the same domain as the parent page.
         * 
         * **Design considerations**:
         *
