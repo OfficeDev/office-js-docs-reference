@@ -1,10 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'outlook!Office.Diagnostics:interface'
-    summary: |-
-      Provides diagnostic information to an Outlook add-in.
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Provides diagnostic information to an Outlook add-in.
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -29,8 +26,6 @@ items:
       A string that can be one of the following values: "Outlook", "OutlookWebApp", "OutlookIOS", or "OutlookAndroid".
 
       **Note**: The "Outlook" value is returned for Outlook on desktop clients (i.e., Windows and Mac).
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -57,9 +52,6 @@ items:
       If the mail add-in is running in Outlook on a desktop or mobile client, the hostVersion property returns the
       version of the host application, Outlook. In Outlook on the web, the property returns the version of the Exchange
       Server.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -101,9 +93,6 @@ items:
 
       - "ThreeColumns", which is displayed when the screen is wide. For example, Outlook on the web uses this view in a
       full screen window on a desktop computer.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem

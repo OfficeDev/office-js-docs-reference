@@ -11,9 +11,6 @@ items:
 
       Because Outlook on Mac doesn't cache custom properties, if the user's network goes down, mail add-ins cannot
       access their custom properties.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -51,10 +48,7 @@ items:
       return:
         type:
           - any
-        description: |-
-          The value of the specified custom property.
-
-          \[Api set: Mailbox 1.0\]
+        description: The value of the specified custom property.
       parameters:
         - id: name
           description: The name of the custom property to be returned.
@@ -85,10 +79,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: |-
-            The name of the property to be removed.
-
-            \[Api set: Mailbox 1.0\]
+          description: The name of the property to be removed.
           type:
             - string
   - uid: 'outlook!Office.CustomProperties#saveAsync:member(1)'
@@ -191,10 +182,7 @@ items:
           type:
             - 'outlook!Office.CustomProperties#saveAsync~0:complex'
         - id: asyncContext
-          description: |-
-            Optional. Any state data that is passed to the callback method.
-
-            \[Api set: Mailbox 1.0\]
+          description: Optional. Any state data that is passed to the callback method.
           type:
             - any
   - uid: 'outlook!Office.CustomProperties#set:member(1)'
@@ -209,9 +197,6 @@ items:
       The set method creates a new property if the specified property does not already exist; otherwise, the existing
       value is replaced with the new value. The value parameter can be of any type; however, it is always passed to the
       server as a string.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem

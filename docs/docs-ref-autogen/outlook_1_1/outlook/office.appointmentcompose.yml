@@ -430,9 +430,6 @@ items:
 
       When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to
       convert the local time on the client to UTC for the server.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -485,9 +482,6 @@ items:
 
       The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance
       is a message or an appointment.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -533,9 +527,6 @@ items:
       The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can
       be used to get, set, and remove custom properties from the item and save changes to the custom property set back
       to the server.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -574,9 +565,6 @@ items:
       Gets or sets the location of an appointment. The location property returns a
       [Location](xref:outlook!Office.Location:interface) object that provides methods that are used to get and set the
       location of the appointment.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -627,9 +615,6 @@ items:
 
 
       - Set a maximum of 100 members per call, up to 500 members total.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -810,9 +795,6 @@ items:
 
 
       - Set a maximum of 100 members per call, up to 500 members total.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -862,9 +844,6 @@ items:
 
       When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to
       convert the local time on the client to UTC for the server.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -917,8 +896,6 @@ items:
       The subject property gets or sets the entire subject of the item, as sent by the email server.
 
       The subject property returns a Subject object that provides methods to get and set the subject.
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem

@@ -9,9 +9,6 @@ items:
       The list of contacts extracted from the body of an email message or appointment is returned in the contacts
       property of the [Entities](xref:outlook!Office.Entities:interface) object returned by the getEntities or
       getEntitiesByType method of the current item.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: Restricted
