@@ -20,8 +20,6 @@ items:
       - 'excel!Excel.IconSet.fourRedToBlack:member'
       - 'excel!Excel.IconSet.fourTrafficLights:member'
       - 'excel!Excel.IconSet.invalid:member'
-      - 'excel!Excel.IconSet.linkedEntityFinanceIcon:member'
-      - 'excel!Excel.IconSet.linkedEntityMapIcon:member'
       - 'excel!Excel.IconSet.threeArrows:member'
       - 'excel!Excel.IconSet.threeArrowsGray:member'
       - 'excel!Excel.IconSet.threeFlags:member'
@@ -109,20 +107,6 @@ items:
       - typeScript
     type: field
     numericValue: '"Invalid"'
-  - uid: 'excel!Excel.IconSet.linkedEntityFinanceIcon:member'
-    name: linkedEntityFinanceIcon
-    fullName: linkedEntityFinanceIcon
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LinkedEntityFinanceIcon"'
-  - uid: 'excel!Excel.IconSet.linkedEntityMapIcon:member'
-    name: linkedEntityMapIcon
-    fullName: linkedEntityMapIcon
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"LinkedEntityMapIcon"'
   - uid: 'excel!Excel.IconSet.threeArrows:member'
     name: threeArrows
     fullName: threeArrows

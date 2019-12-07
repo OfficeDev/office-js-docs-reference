@@ -1,0 +1,180 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.WorksheetCustomProperty:class'
+    summary: >-
+      Represents a worksheet-level custom property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.WorksheetCustomProperty
+    fullName: Excel.WorksheetCustomProperty
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'excel!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.WorksheetCustomProperty#context:member'
+      - 'excel!Excel.WorksheetCustomProperty#key:member'
+      - 'excel!Excel.WorksheetCustomProperty#load:member(1)'
+      - 'excel!Excel.WorksheetCustomProperty#load:member(2)'
+      - 'excel!Excel.WorksheetCustomProperty#load:member(3)'
+      - 'excel!Excel.WorksheetCustomProperty#toJSON:member(1)'
+      - 'excel!Excel.WorksheetCustomProperty#value:member'
+  - uid: 'excel!Excel.WorksheetCustomProperty#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    isPreview: true
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.WorksheetCustomProperty#key:member'
+    summary: >-
+      Gets the key of the custom property. Read only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly key: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.WorksheetCustomProperty#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(options?: Excel.Interfaces.WorksheetCustomPropertyLoadOptions): Excel.WorksheetCustomProperty;'
+      return:
+        type:
+          - 'excel!Excel.WorksheetCustomProperty:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.Interfaces.WorksheetCustomPropertyLoadOptions:interface'
+  - uid: 'excel!Excel.WorksheetCustomProperty#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.WorksheetCustomProperty;'
+      return:
+        type:
+          - 'excel!Excel.WorksheetCustomProperty:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.WorksheetCustomProperty#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.WorksheetCustomProperty;
+      return:
+        type:
+          - 'excel!Excel.WorksheetCustomProperty:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.WorksheetCustomProperty#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.WorksheetCustomProperty object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCustomPropertyData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
+    isPreview: true
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.WorksheetCustomPropertyData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.WorksheetCustomPropertyData:interface'
+        description: ''
+  - uid: 'excel!Excel.WorksheetCustomProperty#value:member'
+    summary: >-
+      Gets the value of the custom property. Read only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly value: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'excel!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.WorksheetCustomProperty:class'
+    name: Excel.WorksheetCustomProperty
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyLoadOptions:interface'
+    name: Excel.Interfaces.WorksheetCustomPropertyLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyData:interface'
+    name: Excel.Interfaces.WorksheetCustomPropertyData

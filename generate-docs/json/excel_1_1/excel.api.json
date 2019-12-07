@@ -14757,6 +14757,168 @@
               ]
             },
             {
+              "kind": "Interface",
+              "canonicalReference": "excel!Excel.CommentMention:interface",
+              "docComment": "/**\n * Represents the entity that is mentioned in comments.\n *\n * [Api set: ExcelApiOnline 1.1]\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface CommentMention "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "CommentMention",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "excel!Excel.CommentMention#email:member",
+                  "docComment": "/**\n * Gets or sets the email address of the entity that is mentioned in comment.\n *\n * [Api set: ExcelApiOnline 1.1]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "email: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "email",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "excel!Excel.CommentMention#id:member",
+                  "docComment": "/**\n * Gets or sets the id of the entity. This matches one of the ids in `CommentRichContent.richContent`.\n *\n * [Api set: ExcelApiOnline 1.1]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "id: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "number"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "id",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "excel!Excel.CommentMention#name:member",
+                  "docComment": "/**\n * Gets or sets the name of the entity that is mentioned in comment.\n *\n * [Api set: ExcelApiOnline 1.1]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "name: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "name",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "excel!Excel.CommentRichContent:interface",
+              "docComment": "/**\n * Represents the content contained within a comment or comment reply. Rich content incudes the text string and any other objects contained within the comment body, such as mentions.\n *\n * [Api set: ExcelApiOnline 1.1]\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface CommentRichContent "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "CommentRichContent",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "excel!Excel.CommentRichContent#mentions:member",
+                  "docComment": "/**\n * An array containing all the entities (e.g. people) mentioned within the comment.\n *\n * [Api set: ExcelApiOnline 1.1]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "mentions?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Excel.CommentMention",
+                      "canonicalReference": "excel!Excel.CommentMention:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "mentions",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "excel!Excel.CommentRichContent#richContent:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "richContent: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "richContent",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
               "kind": "Enum",
               "canonicalReference": "excel!Excel.DeleteShiftDirection:enum",
               "docComment": "/**\n * [Api set: ExcelApi 1.1]\n */\n",
@@ -24194,7 +24356,63 @@
                   ],
                   "releaseTag": "Public",
                   "name": "CommentData",
-                  "members": [],
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.CommentData#mentions:member",
+                      "docComment": "/**\n * Gets the entities (e.g. people) that are mentioned in comments.\n *\n * [Api set: ExcelApiOnline 1.1]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "mentions?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.CommentMention",
+                          "canonicalReference": "excel!Excel.CommentMention:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "mentions",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.CommentData#richContent:member",
+                      "docComment": "/**\n * Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.\n *\n * [Api set: ExcelApiOnline 1.1]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "richContent?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "string"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "richContent",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
                   "extendsTokenRanges": []
                 },
                 {
@@ -24301,7 +24519,63 @@
                   ],
                   "releaseTag": "Public",
                   "name": "CommentReplyData",
-                  "members": [],
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.CommentReplyData#mentions:member",
+                      "docComment": "/**\n * Gets the entities (e.g. people) that are mentioned in comments.\n *\n * [Api set: ExcelApiOnline 1.1]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "mentions?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel.CommentMention",
+                          "canonicalReference": "excel!Excel.CommentMention:interface"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "mentions",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "excel!Excel.Interfaces.CommentReplyData#richContent:member",
+                      "docComment": "/**\n * Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.\n *\n * [Api set: ExcelApiOnline 1.1]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "richContent?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "string"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "richContent",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
                   "extendsTokenRanges": []
                 },
                 {
@@ -36590,6 +36864,55 @@
                   "name": "load"
                 },
                 {
+                  "kind": "Method",
+                  "canonicalReference": "excel!Excel.Range#moveTo:member(1)",
+                  "docComment": "/**\n * Moves cell values, formatting, and formulas from current range to the destination range, replacing the old information in those cells. The destination range will be expanded automatically if it is smaller than the current range. Any cells in the destination range that are outside of the original range's area are not changed.\n *\n * [Api set: ExcelApiOnline 1.1]\n *\n * @param destinationRange - destinationRange Specifies the range to where the information in this range will be moved.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "moveTo(destinationRange: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Range",
+                      "canonicalReference": "excel!Excel.Range:class"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "destinationRange",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "name": "moveTo"
+                },
+                {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Range#numberFormat:member",
                   "docComment": "/**\n * Represents Excel's number format code for the given range. When setting number format to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
@@ -38766,6 +39089,50 @@
               "releaseTag": "Public",
               "name": "RangeFormat",
               "members": [
+                {
+                  "kind": "Method",
+                  "canonicalReference": "excel!Excel.RangeFormat#adjustIndent:member(1)",
+                  "docComment": "/**\n * Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in characters..\n *\n * [Api set: ExcelApiOnline 1.1]\n *\n * @param amount - The number of character spaces by which the current indent is adjusted. This value should be between -250 and 250. *Note**: If the amount would raise the indent level above 250, the indent level stays with 250. Similarly, if the amount would lower the indent level below 0, the indent level stays 0.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "adjustIndent(amount: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "number"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "isStatic": false,
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "amount",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "adjustIndent"
+                },
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.RangeFormat#borders:member",

@@ -131,6 +131,7 @@ items:
       - 'excel!Excel.ColumnPropertiesLoadOptions:interface'
       - 'excel!Excel.Comment:class'
       - 'excel!Excel.CommentCollection:class'
+      - 'excel!Excel.CommentMention:interface'
       - 'excel!Excel.CommentReply:class'
       - 'excel!Excel.CommentReplyCollection:class'
       - 'excel!Excel.CommentRichContent:interface'
@@ -1362,6 +1363,8 @@ references:
     name: Excel.Comment
   - uid: 'excel!Excel.CommentCollection:class'
     name: Excel.CommentCollection
+  - uid: 'excel!Excel.CommentMention:interface'
+    name: Excel.CommentMention
   - uid: 'excel!Excel.CommentReply:class'
     name: Excel.CommentReply
   - uid: 'excel!Excel.CommentReplyCollection:class'
