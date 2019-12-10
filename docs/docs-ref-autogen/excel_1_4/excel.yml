@@ -49,6 +49,8 @@ items:
       - 'excel!Excel.ChartType:enum'
       - 'excel!Excel.ChartUnderlineStyle:enum'
       - 'excel!Excel.ClearApplyTo:enum'
+      - 'excel!Excel.CommentMention:interface'
+      - 'excel!Excel.CommentRichContent:interface'
       - 'excel!Excel.DeleteShiftDirection:enum'
       - 'excel!Excel.DynamicFilterCriteria:enum'
       - 'excel!Excel.ErrorCodes:enum'
@@ -780,6 +782,10 @@ references:
     name: Excel.ChartUnderlineStyle
   - uid: 'excel!Excel.ClearApplyTo:enum'
     name: Excel.ClearApplyTo
+  - uid: 'excel!Excel.CommentMention:interface'
+    name: Excel.CommentMention
+  - uid: 'excel!Excel.CommentRichContent:interface'
+    name: Excel.CommentRichContent
   - uid: 'excel!Excel.DeleteShiftDirection:enum'
     name: Excel.DeleteShiftDirection
   - uid: 'excel!Excel.DynamicFilterCriteria:enum'

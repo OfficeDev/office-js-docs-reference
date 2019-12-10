@@ -72,13 +72,14 @@ items:
           description: >-
             The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain
             text. CommentRichContent objects allow for other comment features, such as mentions. \[Api set: ExcelApi
-            1.10 for string, ExcelApi Preview for CommentRichContent object\]
+            1.10 for string, ExcelApiOnline 1.1 for CommentRichContent object\]
           type:
             - 'excel!Excel.CommentCollection#add~1:complex'
         - id: contentType
           description: >-
             Optional. The type of content contained within the comment. The default value is enum
-            `ContentType.plain`<!-- -->.
+            `ContentType.Plain`<!-- -->. \[Api set: ExcelApi 1.10 for Enum ContentType.Plain, ExcelApiOnline 1.1 for
+            Enum ContentType.Mention\]
           type:
             - 'excel!Excel.ContentType:enum'
   - uid: 'excel!Excel.CommentCollection#add:member(2)'
@@ -113,13 +114,14 @@ items:
           description: >-
             The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain
             text. CommentRichContent objects allow for other comment features, such as mentions. \[Api set: ExcelApi
-            1.10 for string, ExcelApi Preview for CommentRichContent object\]
+            1.10 for string, ExcelApiOnline 1.1 for CommentRichContent object\]
           type:
             - 'excel!Excel.CommentCollection#add~3:complex'
         - id: contentTypeString
           description: >-
             Optional. The type of content contained within the comment. The default value is enum
-            `ContentType.plain`<!-- -->.
+            `ContentType.Plain`<!-- -->. \[Api set: ExcelApi 1.10 for Enum ContentType.Plain, ExcelApiOnline 1.1 for
+            Enum ContentType.Mention\]
           type:
             - '"Plain" | "Mention"'
   - uid: 'excel!Excel.CommentCollection#context:member'

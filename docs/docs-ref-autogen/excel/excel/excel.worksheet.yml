@@ -25,6 +25,7 @@ items:
       - 'excel!Excel.Worksheet#context:member'
       - 'excel!Excel.Worksheet#copy:member(1)'
       - 'excel!Excel.Worksheet#copy:member(2)'
+      - 'excel!Excel.Worksheet#customProperties:member'
       - 'excel!Excel.Worksheet#delete:member(1)'
       - 'excel!Excel.Worksheet#enableCalculation:member'
       - 'excel!Excel.Worksheet#findAll:member(1)'
@@ -284,6 +285,24 @@ items:
             `positionType` is "Before" or "After".
           type:
             - 'excel!Excel.Worksheet:class'
+  - uid: 'excel!Excel.Worksheet#customProperties:member'
+    summary: >-
+      Returns a collection of worksheet-level custom properties.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: customProperties
+    fullName: customProperties
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly customProperties: Excel.WorksheetCustomPropertyCollection;'
+      return:
+        type:
+          - 'excel!Excel.WorksheetCustomPropertyCollection:class'
   - uid: 'excel!Excel.Worksheet#delete:member(1)'
     summary: >-
       Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the
@@ -1760,6 +1779,8 @@ references:
     name: Excel.Worksheet
   - uid: 'excel!Excel.WorksheetPositionType:enum'
     name: Excel.WorksheetPositionType
+  - uid: 'excel!Excel.WorksheetCustomPropertyCollection:class'
+    name: Excel.WorksheetCustomPropertyCollection
   - uid: 'excel!Excel.RangeAreas:class'
     name: Excel.RangeAreas
   - uid: 'excel!Excel.WorksheetSearchCriteria:interface'

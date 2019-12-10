@@ -1489,6 +1489,16 @@ export declare namespace Excel {
          * @param across - Optional. Set true to merge cells in each row of the specified range as separate merged cells. The default value is false.
          */
         merge(across?: boolean): void;
+        /**
+         *
+         * Moves cell values, formatting, and formulas from current range to the destination range, replacing the old information in those cells.
+            The destination range will be expanded automatically if it is smaller than the current range. Any cells in the destination range that are outside of the original range's area are not changed.
+         *
+         * [Api set: ExcelApiOnline 1.1]
+         *
+         * @param destinationRange - destinationRange Specifies the range to where the information in this range will be moved.
+         */
+        moveTo(destinationRange: Range | string): void;
         
         
         /**
@@ -2529,7 +2539,8 @@ export declare namespace Excel {
         
         /**
          *
-         * Name of the table.
+         * The name of the table.
+         * When setting the name of the table, you must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -3150,6 +3161,17 @@ export declare namespace Excel {
         set(properties: Interfaces.RangeFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.RangeFormat): void;
+        /**
+         *
+         * Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in characters..
+         *
+         * [Api set: ExcelApiOnline 1.1]
+         *
+         * @param amount - The number of character spaces by which the current indent is adjusted. This value should be between -250 and 250.
+            **Note**: If the amount would raise the indent level above 250, the indent level stays with 250.
+            Similarly, if the amount would lower the indent level below 0, the indent level stays 0.
+         */
+        adjustIndent(amount: number): void;
         /**
          *
          * Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.
@@ -6075,7 +6097,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          */
-        set: Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" | "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" | "LinkedEntityMapIcon";
+        set: Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" | "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes";
     }
     
     
@@ -6298,7 +6320,51 @@ export declare namespace Excel {
     
     
     
-    
+    /**
+     *
+     * Represents the entity that is mentioned in comments.
+     *
+     * [Api set: ExcelApiOnline 1.1]
+     */
+    export interface CommentMention {
+        /**
+         *
+         * Gets or sets the email address of the entity that is mentioned in comment.
+         *
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        email: string;
+        /**
+         *
+         * Gets or sets the id of the entity. This matches one of the ids in `CommentRichContent.richContent`.
+         *
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        id: number;
+        /**
+         *
+         * Gets or sets the name of the entity that is mentioned in comment.
+         *
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        name: string;
+    }
+    /**
+     *
+     * Represents the content contained within a comment or comment reply. Rich content incudes the text string and any other objects contained within the comment body, such as mentions.
+     *
+     * [Api set: ExcelApiOnline 1.1]
+     */
+    export interface CommentRichContent {
+        /**
+         *
+         * An array containing all the entities (e.g. people) mentioned within the comment.
+         *
+         * [Api set: ExcelApiOnline 1.1]
+         */
+        mentions?: Excel.CommentMention[];
+        richContent: string;
+    }
     
     
     
@@ -6756,9 +6822,7 @@ export declare namespace Excel {
         fiveQuarters = "FiveQuarters",
         threeStars = "ThreeStars",
         threeTriangles = "ThreeTriangles",
-        fiveBoxes = "FiveBoxes",
-        linkedEntityFinanceIcon = "LinkedEntityFinanceIcon",
-        linkedEntityMapIcon = "LinkedEntityMapIcon"
+        fiveBoxes = "FiveBoxes"
     }
     /**
      * [Api set: ExcelApi 1.2]
@@ -14635,6 +14699,20 @@ export declare namespace Excel {
             
             
             
+            /**
+             *
+             * Gets the entities (e.g. people) that are mentioned in comments.
+             *
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            mentions?: Excel.CommentMention[];
+            /**
+             *
+             * Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+             *
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            richContent?: string;
         }
         /** An interface describing the data returned by calling `commentReplyCollection.toJSON()`. */
         export interface CommentReplyCollectionData {
@@ -14647,6 +14725,20 @@ export declare namespace Excel {
             
             
             
+            /**
+             *
+             * Gets the entities (e.g. people) that are mentioned in comments.
+             *
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            mentions?: Excel.CommentMention[];
+            /**
+             *
+             * Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+             *
+             * [Api set: ExcelApiOnline 1.1]
+             */
+            richContent?: string;
         }
         /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
         export interface ShapeCollectionData {

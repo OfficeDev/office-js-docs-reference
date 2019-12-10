@@ -42,12 +42,11 @@ items:
       - 'excel!Excel.RangeFormat#wrapText:member'
   - uid: 'excel!Excel.RangeFormat#adjustIndent:member(1)'
     summary: >-
-      Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250.
+      Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in
+      characters..
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: adjustIndent(amount)
     fullName: adjustIndent(amount)
     langs:

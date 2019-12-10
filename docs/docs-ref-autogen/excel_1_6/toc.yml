@@ -212,6 +212,10 @@ items:
             uid: 'excel!Excel.ChartTitleFormat:class'
           - name: ColorScaleConditionalFormat
             uid: 'excel!Excel.ColorScaleConditionalFormat:class'
+          - name: CommentMention
+            uid: 'excel!Excel.CommentMention:interface'
+          - name: CommentRichContent
+            uid: 'excel!Excel.CommentRichContent:interface'
           - name: ConditionalCellValueRule
             uid: 'excel!Excel.ConditionalCellValueRule:interface'
           - name: ConditionalColorScaleCriteria
