@@ -1063,6 +1063,10 @@ items:
 
       // item identifier from the asynchronous result.
 
+      // Important: saveAsync was introduced with requirement set 1.3
+
+      // so you can't get the itemId in Compose mode in earlier sets.
+
       var itemId = Office.context.mailbox.item.itemId;
 
       if (itemId === null || itemId == undefined) {
