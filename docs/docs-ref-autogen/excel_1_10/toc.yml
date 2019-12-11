@@ -511,6 +511,8 @@ items:
             uid: 'excel!Excel.Comment:class'
           - name: CommentCollection
             uid: 'excel!Excel.CommentCollection:class'
+          - name: CommentMention
+            uid: 'excel!Excel.CommentMention:interface'
           - name: CommentReply
             uid: 'excel!Excel.CommentReply:class'
           - name: CommentReplyCollection

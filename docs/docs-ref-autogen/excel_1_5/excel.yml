@@ -49,6 +49,8 @@ items:
       - 'excel!Excel.ChartType:enum'
       - 'excel!Excel.ChartUnderlineStyle:enum'
       - 'excel!Excel.ClearApplyTo:enum'
+      - 'excel!Excel.CommentMention:interface'
+      - 'excel!Excel.CommentRichContent:interface'
       - 'excel!Excel.CustomXmlPart:class'
       - 'excel!Excel.CustomXmlPartCollection:class'
       - 'excel!Excel.CustomXmlPartScopedCollection:class'
@@ -788,6 +790,10 @@ references:
     name: Excel.ChartUnderlineStyle
   - uid: 'excel!Excel.ClearApplyTo:enum'
     name: Excel.ClearApplyTo
+  - uid: 'excel!Excel.CommentMention:interface'
+    name: Excel.CommentMention
+  - uid: 'excel!Excel.CommentRichContent:interface'
+    name: Excel.CommentRichContent
   - uid: 'excel!Excel.CustomXmlPart:class'
     name: Excel.CustomXmlPart
   - uid: 'excel!Excel.CustomXmlPartCollection:class'

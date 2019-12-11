@@ -96,13 +96,10 @@ items:
         type:
           - string
   - uid: 'excel!Excel.Interfaces.CommentData#mentions:member'
-    summary: >-
+    summary: |-
       Gets the entities (e.g. people) that are mentioned in comments.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: mentions
     fullName: mentions
     langs:
@@ -152,9 +149,7 @@ items:
       Your add-in should only use this to parse rich comment content.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: richContent
     fullName: richContent
     langs:

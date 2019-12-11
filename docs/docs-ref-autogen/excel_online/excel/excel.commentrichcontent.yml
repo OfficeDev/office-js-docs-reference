@@ -6,10 +6,75 @@ items:
       other objects contained within the comment body, such as mentions.
 
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CommentRichContent
     fullName: Excel.CommentRichContent
     langs:
       - typeScript
     type: interface
     package: excel!
+    children:
+      - 'excel!Excel.CommentRichContent#mentions:member'
+      - 'excel!Excel.CommentRichContent#richContent:member'
+  - uid: 'excel!Excel.CommentRichContent#mentions:member'
+    summary: |-
+      An array containing all the entities (e.g. people) mentioned within the comment.
+
+      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: mentions
+    fullName: mentions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'mentions?: Excel.CommentMention[];'
+      return:
+        type:
+          - 'excel!Excel.CommentRichContent#mentions~0:complex'
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Comments");
+              const mention = {
+                  email: "kakri@contoso.com",
+                  id: 0,
+                  name: "Kate Kristensen"
+              };
+
+              // This will tag the mention's name using the '@' syntax.
+              // They will be notified via email.
+              const commentBody = {
+                  mentions: [mention],
+                  richContent: '<at id="0">' + mention.name + "</at> -  Can you take a look?"
+              };
+
+              // Note that an InvalidArgument error will be thrown if multiple cells passed to `comment.add`.
+              sheet.comments.add("A1", commentBody, Excel.ContentType.mention);
+              await context.sync();
+          });
+          ```
+  - uid: 'excel!Excel.CommentRichContent#richContent:member'
+    name: richContent
+    fullName: richContent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'richContent: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'excel!Excel.CommentRichContent#mentions~0:complex'
+    name: 'Excel.CommentMention[]'
+    fullName: 'Excel.CommentMention[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.CommentMention:interface'
+        name: Excel.CommentMention
+        fullName: Excel.CommentMention
+      - name: '[]'
+        fullName: '[]'

@@ -1488,7 +1488,7 @@ items:
                   ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getOffsetRange(-1,4);
               range.load('address');
               return ctx.sync().then(function() {
-                  console.log(range.address); // prints Sheet1!H3:K5
+                  console.log(range.address); // prints Sheet1!H3:J5
               });
           }).catch(function(error) {
               console.log("Error: " + error);
@@ -2634,9 +2634,7 @@ items:
       range. Any cells in the destination range that are outside of the original range's area are not changed.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: moveTo(destinationRange)
     fullName: moveTo(destinationRange)
     langs:
