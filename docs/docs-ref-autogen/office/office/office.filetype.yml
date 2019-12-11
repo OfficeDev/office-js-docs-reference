@@ -2,9 +2,6 @@
 items:
   - uid: 'office!Office.FileType:enum'
     summary: Specifies the format in which to return the document.
-    remarks: >-
-      `FileType.Text` is only supported in Word, `FileType.Pdf` is only supported in Word on the web, Windows, and Mac,
-      and PowerPoint.
     name: Office.FileType
     fullName: Office.FileType
     langs:
@@ -30,7 +27,7 @@ items:
       - typeScript
     type: field
   - uid: 'office!Office.FileType.Text:member'
-    summary: Returns only the text of the document as a string. (Word only)
+    summary: Returns only the text of the document as a string.
     name: Text
     fullName: Text
     langs:
