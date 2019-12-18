@@ -9,6 +9,15 @@ items:
       treat this as a mode of Office.context.mailbox.item. Refer to the [Object
       Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office.context.mailbox.item)
       page for more information.
+
+
+      Child interfaces:
+
+
+      - [AppointmentCompose](xref:outlook!Office.AppointmentCompose:interface)
+
+
+      - [AppointmentRead](xref:outlook!Office.AppointmentRead:interface)
     name: Office.Appointment
     fullName: Office.Appointment
     langs:

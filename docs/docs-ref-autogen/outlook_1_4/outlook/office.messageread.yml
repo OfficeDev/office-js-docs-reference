@@ -9,6 +9,15 @@ items:
       treat this as a mode of Office.context.mailbox.item. Refer to the [Object
       Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.4/office.context.mailbox.item)
       page for more information.
+
+
+      Parent interfaces:
+
+
+      - [ItemRead](xref:outlook!Office.ItemRead:interface)
+
+
+      - [Message](xref:outlook!Office.Message:interface)
     name: Office.MessageRead
     fullName: Office.MessageRead
     langs:

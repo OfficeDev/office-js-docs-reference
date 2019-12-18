@@ -9,6 +9,15 @@ items:
       treat this as a mode of Office.context.mailbox.item. Refer to the [Object
       Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.8/office.context.mailbox.item)
       page for more information.
+
+
+      Parent interfaces:
+
+
+      - [ItemCompose](xref:outlook!Office.ItemCompose:interface)
+
+
+      - [Message](xref:outlook!Office.Message:interface)
     name: Office.MessageCompose
     fullName: Office.MessageCompose
     langs:
@@ -34,12 +43,16 @@ items:
       - 'outlook!Office.MessageCompose#close:member(1)'
       - 'outlook!Office.MessageCompose#conversationId:member'
       - 'outlook!Office.MessageCompose#from:member'
+      - 'outlook!Office.MessageCompose#getAttachmentContentAsync:member(1)'
+      - 'outlook!Office.MessageCompose#getAttachmentContentAsync:member(2)'
       - 'outlook!Office.MessageCompose#getAttachmentsAsync:member(1)'
       - 'outlook!Office.MessageCompose#getAttachmentsAsync:member(2)'
       - 'outlook!Office.MessageCompose#getItemIdAsync:member(1)'
       - 'outlook!Office.MessageCompose#getItemIdAsync:member(2)'
       - 'outlook!Office.MessageCompose#getSelectedDataAsync:member(1)'
       - 'outlook!Office.MessageCompose#getSelectedDataAsync:member(2)'
+      - 'outlook!Office.MessageCompose#getSharedPropertiesAsync:member(1)'
+      - 'outlook!Office.MessageCompose#getSharedPropertiesAsync:member(2)'
       - 'outlook!Office.MessageCompose#internetHeaders:member'
       - 'outlook!Office.MessageCompose#itemType:member'
       - 'outlook!Office.MessageCompose#loadCustomPropertiesAsync:member(1)'
@@ -994,6 +1007,114 @@ items:
       return:
         type:
           - 'outlook!Office.From:interface'
+  - uid: 'outlook!Office.MessageCompose#getAttachmentContentAsync:member(1)'
+    summary: >-
+      Gets an attachment from a message or appointment and returns it as an **AttachmentContent** object.
+
+
+      The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
+      practice, you should use the identifier to retrieve an attachment in the same session that the attachmentIds were
+      retrieved with the `getAttachmentsAsync` or `item.attachments` call. In Outlook on the web and mobile devices, the
+      attachment identifier is valid only within the same session. A session is over when the user closes the app, or if
+      the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
+
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
+      Compose
+
+
+      **Errors**:
+
+
+      - InvalidAttachmentId: The attachment identifier does not exist.
+    name: 'getAttachmentContentAsync(attachmentId, options, callback)'
+    fullName: 'getAttachmentContentAsync(attachmentId, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getAttachmentContentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<AttachmentContent>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: attachmentId
+          description: The identifier of the attachment you want to get.
+          type:
+            - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - 'outlook!Office.AsyncContextOptions:interface'
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object. If the call fails, the asyncResult.error
+            property will contain and error code with the reason for the failure.
+          type:
+            - 'outlook!Office.MessageCompose#getAttachmentContentAsync~0:complex'
+  - uid: 'outlook!Office.MessageCompose#getAttachmentContentAsync:member(2)'
+    summary: >-
+      Gets an attachment from a message or appointment and returns it as an **AttachmentContent** object.
+
+
+      The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
+      practice, you should use the identifier to retrieve an attachment in the same session that the attachmentIds were
+      retrieved with the `getAttachmentsAsync` or `item.attachments` call. In Outlook on the web and mobile devices, the
+      attachment identifier is valid only within the same session. A session is over when the user closes the app, or if
+      the user starts composing an inline form then subsequently pops out the form to continue in a separate window.
+
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
+      Compose
+
+
+      **Errors**:
+
+
+      - InvalidAttachmentId: The attachment identifier does not exist.
+    name: 'getAttachmentContentAsync(attachmentId, callback)'
+    fullName: 'getAttachmentContentAsync(attachmentId, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getAttachmentContentAsync(attachmentId: string, callback?: (asyncResult:
+        Office.AsyncResult<AttachmentContent>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: attachmentId
+          description: The identifier of the attachment you want to get.
+          type:
+            - string
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object. If the call fails, the asyncResult.error
+            property will contain and error code with the reason for the failure.
+          type:
+            - 'outlook!Office.MessageCompose#getAttachmentContentAsync~1:complex'
   - uid: 'outlook!Office.MessageCompose#getAttachmentsAsync:member(1)'
     summary: |-
       Gets the item's attachments as an array.
@@ -1316,6 +1437,74 @@ items:
             of type Office.AsyncResult.
           type:
             - 'outlook!Office.MessageCompose#getSelectedDataAsync~3:complex'
+  - uid: 'outlook!Office.MessageCompose#getSharedPropertiesAsync:member(1)'
+    summary: |-
+      Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
+      Compose
+    name: 'getSharedPropertiesAsync(options, callback)'
+    fullName: 'getSharedPropertiesAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getSharedPropertiesAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<SharedProperties>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method.
+          type:
+            - 'outlook!Office.AsyncContextOptions:interface'
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult. The `value` property of the result is the properties of the shared item.
+          type:
+            - 'outlook!Office.MessageCompose#getSharedPropertiesAsync~0:complex'
+  - uid: 'outlook!Office.MessageCompose#getSharedPropertiesAsync:member(2)'
+    summary: |-
+      Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
+      Compose
+    name: getSharedPropertiesAsync(callback)
+    fullName: getSharedPropertiesAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSharedPropertiesAsync(callback: (asyncResult: Office.AsyncResult<SharedProperties>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult. The `value` property of the result is the properties of the shared item.
+          type:
+            - 'outlook!Office.MessageCompose#getSharedPropertiesAsync~1:complex'
   - uid: 'outlook!Office.MessageCompose#internetHeaders:member'
     summary: >-
       Gets or sets the custom internet headers of a message.
@@ -2281,6 +2470,38 @@ references:
     name: Categories
   - uid: 'outlook!Office.From:interface'
     name: From
+  - uid: 'outlook!Office.MessageCompose#getAttachmentContentAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<AttachmentContent>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<Office.AttachmentContent>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'outlook!Office.AttachmentContent:interface'
+        name: AttachmentContent
+        fullName: Office.AttachmentContent
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'outlook!Office.MessageCompose#getAttachmentContentAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<AttachmentContent>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<Office.AttachmentContent>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'outlook!Office.AttachmentContent:interface'
+        name: AttachmentContent
+        fullName: Office.AttachmentContent
+      - name: '>) => void'
+        fullName: '>) => void'
   - uid: 'outlook!Office.MessageCompose#getAttachmentsAsync~0:complex'
     name: '(asyncResult: Office.AsyncResult<AttachmentDetails[]>) => void'
     fullName: '(asyncResult: Office.AsyncResult<Office.AttachmentDetails[]>) => void'
@@ -2375,6 +2596,38 @@ references:
         fullName: Office.AsyncResult
       - name: <any>) => void
         fullName: <any>) => void
+  - uid: 'outlook!Office.MessageCompose#getSharedPropertiesAsync~0:complex'
+    name: '(asyncResult: Office.AsyncResult<SharedProperties>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<Office.SharedProperties>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'outlook!Office.SharedProperties:interface'
+        name: SharedProperties
+        fullName: Office.SharedProperties
+      - name: '>) => void'
+        fullName: '>) => void'
+  - uid: 'outlook!Office.MessageCompose#getSharedPropertiesAsync~1:complex'
+    name: '(asyncResult: Office.AsyncResult<SharedProperties>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<Office.SharedProperties>) => void'
+    spec.typeScript:
+      - name: '(asyncResult: '
+        fullName: '(asyncResult: '
+      - uid: 'outlook!Office.AsyncResult:interface'
+        name: Office.AsyncResult
+        fullName: Office.AsyncResult
+      - name: <
+        fullName: <
+      - uid: 'outlook!Office.SharedProperties:interface'
+        name: SharedProperties
+        fullName: Office.SharedProperties
+      - name: '>) => void'
+        fullName: '>) => void'
   - uid: 'outlook!Office.InternetHeaders:interface'
     name: InternetHeaders
   - uid: 'outlook!Office.MessageCompose#itemType~0:complex'
