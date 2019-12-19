@@ -124,6 +124,39 @@ Office.AppointmentCompose#enhancedLocation:member:
             Office.context.mailbox.item.enhancedLocation.removeAsync([currentValue.locationIdentifier]);
         });
     }
+Office.AppointmentCompose#getAttachmentContentAsync:member(1):
+  - |-
+    var item = Office.context.mailbox.item;
+    var options = {asyncContext: {currentItem: item}};
+    item.getAttachmentsAsync(options, callback);
+
+    function callback(result) {
+        if (result.value.length > 0) {
+            for (i = 0 ; i < result.value.length ; i++) {
+                result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
+            }
+        }
+    }
+
+    function handleAttachmentsCallback(result) {
+        // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
+        switch (result.value.format) {
+            case Office.MailboxEnums.AttachmentContentFormat.Base64:
+                // Handle file attachment.
+                break;
+            case Office.MailboxEnums.AttachmentContentFormat.Eml:
+                // Handle email item attachment.
+                break;
+            case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
+                // Handle .icalender attachment.
+                break;
+            case Office.MailboxEnums.AttachmentContentFormat.Url:
+                // Handle cloud attachment.
+                break;
+            default:
+                // Handle attachment formats that are not supported.
+        }
+    }
 Office.AppointmentCompose#getAttachmentsAsync:member(2):
   - |-
     var item = Office.context.mailbox.item;
@@ -156,6 +189,14 @@ Office.AppointmentCompose#getSelectedDataAsync:member(1):
         var prop = asyncResult.value.sourceProperty;
 
         console.log("Selected text in " + prop + ": " + text);
+    }
+Office.AppointmentCompose#getSharedPropertiesAsync:member(2):
+  - |-
+    Office.context.mailbox.item.getSharedPropertiesAsync(callback);
+
+    function callback (asyncResult) {
+        var context = asyncResult.context;
+        var sharedProperties = asyncResult.value;
     }
 Office.AppointmentCompose#itemType:member:
   - |-
@@ -500,6 +541,39 @@ Office.AppointmentRead#enhancedLocation:member:
             }
         });
     }
+Office.AppointmentRead#getAttachmentContentAsync:member(1):
+  - |-
+    var item = Office.context.mailbox.item;
+    var options = {asyncContext: {currentItem: item}};
+    item.getAttachmentsAsync(options, callback);
+
+    function callback(result) {
+        if (result.value.length > 0) {
+            for (i = 0 ; i < result.value.length ; i++) {
+                result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
+            }
+        }
+    }
+
+    function handleAttachmentsCallback(result) {
+        // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
+        switch (result.value.format) {
+            case Office.MailboxEnums.AttachmentContentFormat.Base64:
+                // Handle file attachment.
+                break;
+            case Office.MailboxEnums.AttachmentContentFormat.Eml:
+                // Handle email item attachment.
+                break;
+            case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
+                // Handle .icalender attachment.
+                break;
+            case Office.MailboxEnums.AttachmentContentFormat.Url:
+                // Handle cloud attachment.
+                break;
+            default:
+                // Handle attachment formats that are not supported.
+        }
+    }
 Office.AppointmentRead#getEntities:member(1):
   - |-
     // The following example accesses the contacts entities in the current item's body.
@@ -576,6 +650,14 @@ Office.AppointmentRead#getSelectedRegExMatches:member(1):
     var selectedMatches = Office.context.mailbox.item.getSelectedRegExMatches();
     var fruits = selectedMatches.fruits;
     var veggies = selectedMatches.veggies;
+Office.AppointmentRead#getSharedPropertiesAsync:member(2):
+  - |-
+    Office.context.mailbox.item.getSharedPropertiesAsync(callback);
+
+    function callback (asyncResult) {
+        var context = asyncResult.context;
+        var sharedProperties = asyncResult.value;
+    }
 Office.AppointmentRead#itemClass:member:
   - |-
     var itemClass = Office.context.mailbox.item.itemClass;
@@ -1558,6 +1640,39 @@ Office.MessageCompose#from:member:
     function callback(asyncResult) {
         var from = asyncResult.value;
     }
+Office.MessageCompose#getAttachmentContentAsync:member(1):
+  - |-
+    var item = Office.context.mailbox.item;
+    var options = {asyncContext: {currentItem: item}};
+    item.getAttachmentsAsync(options, callback);
+
+    function callback(result) {
+        if (result.value.length > 0) {
+            for (i = 0 ; i < result.value.length ; i++) {
+                result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
+            }
+        }
+    }
+
+    function handleAttachmentsCallback(result) {
+        // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
+        switch (result.value.format) {
+            case Office.MailboxEnums.AttachmentContentFormat.Base64:
+                // Handle file attachment.
+                break;
+            case Office.MailboxEnums.AttachmentContentFormat.Eml:
+                // Handle email item attachment.
+                break;
+            case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
+                // Handle .icalender attachment.
+                break;
+            case Office.MailboxEnums.AttachmentContentFormat.Url:
+                // Handle cloud attachment.
+                break;
+            default:
+                // Handle attachment formats that are not supported.
+        }
+    }
 Office.MessageCompose#getAttachmentsAsync:member(2):
   - |-
     var item = Office.context.mailbox.item;
@@ -1590,6 +1705,14 @@ Office.MessageCompose#getSelectedDataAsync:member(1):
         var prop = asyncResult.value.sourceProperty;
 
         console.log("Selected text in " + prop + ": " + text);
+    }
+Office.MessageCompose#getSharedPropertiesAsync:member(2):
+  - |-
+    Office.context.mailbox.item.getSharedPropertiesAsync(callback);
+
+    function callback (asyncResult) {
+        var context = asyncResult.context;
+        var sharedProperties = asyncResult.value;
     }
 Office.MessageCompose#internetHeaders:member:
   - |-
@@ -1885,6 +2008,39 @@ Office.MessageRead#getAllInternetHeadersAsync:member(1):
             }
         }
     );
+Office.MessageRead#getAttachmentContentAsync:member(1):
+  - |-
+    var item = Office.context.mailbox.item;
+    var options = {asyncContext: {currentItem: item}};
+    item.getAttachmentsAsync(options, callback);
+
+    function callback(result) {
+        if (result.value.length > 0) {
+            for (i = 0 ; i < result.value.length ; i++) {
+                result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
+            }
+        }
+    }
+
+    function handleAttachmentsCallback(result) {
+        // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
+        switch (result.value.format) {
+            case Office.MailboxEnums.AttachmentContentFormat.Base64:
+                // Handle file attachment.
+                break;
+            case Office.MailboxEnums.AttachmentContentFormat.Eml:
+                // Handle email item attachment.
+                break;
+            case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
+                // Handle .icalender attachment.
+                break;
+            case Office.MailboxEnums.AttachmentContentFormat.Url:
+                // Handle cloud attachment.
+                break;
+            default:
+                // Handle attachment formats that are not supported.
+        }
+    }
 Office.MessageRead#getEntities:member(1):
   - |-
     // The following example accesses the contacts entities in the current item's body.
@@ -1976,6 +2132,14 @@ Office.MessageRead#getSelectedRegExMatches:member(1):
     var selectedMatches = Office.context.mailbox.item.getSelectedRegExMatches();
     var fruits = selectedMatches.fruits;
     var veggies = selectedMatches.veggies;
+Office.MessageRead#getSharedPropertiesAsync:member(2):
+  - |-
+    Office.context.mailbox.item.getSharedPropertiesAsync(callback);
+
+    function callback (asyncResult) {
+        var context = asyncResult.context;
+        var sharedProperties = asyncResult.value;
+    }
 Office.MessageRead#internetMessageId:member:
   - |-
     var internetMessageId = Office.context.mailbox.item.internetMessageId;
