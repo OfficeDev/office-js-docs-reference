@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'office!Office.AddBindingFromSelectionOptions:interface'
-    summary: Provides options for configuring the prompt and identifying the binding that is created.
+    summary: Provides options for identifying the binding that is created.
     name: Office.AddBindingFromSelectionOptions
     fullName: Office.AddBindingFromSelectionOptions
     langs:
