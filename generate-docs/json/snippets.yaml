@@ -2910,8 +2910,8 @@
         sheet.getRange("F2").values = [["Copied Formula"]];
         sheet.getRange("F2").format.autofitColumns();
 
-        // copy a range preserving the formulas
-        // note: non-formula values are copied over as is
+        // Copy a range preserving the formulas.
+        // Note: non-formula values are copied over as is.
         sheet.getRange("G2").copyFrom("A1:E1", Excel.RangeCopyType.formulas);
         await context.sync();
     });
@@ -3498,6 +3498,17 @@
         if (error instanceof OfficeExtension.Error) {
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
+    });
+'Excel.Range#moveTo:member(1)':
+  - |-
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        sheet.getRange("F12").values = [["Moved Range"]];
+        sheet.getRange("F12").format.autofitColumns();
+
+        // Move a range to the specified location.
+        sheet.getRange("A1:E1").moveTo("G12");
+        await context.sync();
     });
 'Excel.Range#removeDuplicates:member(1)':
   - |-
@@ -6328,6 +6339,19 @@
                 function (asyncResult) {
                 });
         });
+'Office.AppointmentCompose#addHandlerAsync:member(2)':
+  - >-
+    function myHandlerFunction(eventarg) {
+        if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+            var attachment = eventarg.attachmentDetails;
+            console.log("Event Fired and Attachment Added!");
+            getAttachmentContentAsync(attachment.id, options, callback);
+        }
+    }
+
+
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged,
+    myHandlerFunction, myCallback);
 'Office.AppointmentCompose#addItemAttachmentAsync:member(1)':
   - |-
     // The following example adds an existing Outlook item as an attachment
@@ -6482,6 +6506,29 @@
             }
         }
     }
+'Office.AppointmentCompose#getInitializationContextAsync:member(2)':
+  - |-
+    // Get the initialization context (if present).
+    Office.context.mailbox.item.getInitializationContextAsync(
+        function(asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                if (asyncResult.value != null && asyncResult.value.length > 0) {
+                    // The value is a string, parse to an object.
+                    var context = JSON.parse(asyncResult.value);
+                    // Do something with context.
+                } else {
+                    // Empty context, treat as no context.
+                }
+            } else {
+                if (asyncResult.error.code == 9020) {
+                    // GenericResponseError returned when there is no context.
+                    // Treat as no context.
+                } else {
+                    // Handle the error.
+                }
+            }
+        }
+    );
 'Office.AppointmentCompose#getSelectedDataAsync:member(1)':
   - |-
     // Get selected data.
@@ -6510,6 +6557,50 @@
         // Do something.
     } else {
         // Do something else.
+    }
+'Office.AppointmentCompose#loadCustomPropertiesAsync:member(1)':
+  - >-
+    // The following example shows how to use the loadCustomPropertiesAsync
+    method
+
+    // to asynchronously load custom properties that are specific to the current
+    item.
+
+    // The example also shows how to use the saveAsync method to save these
+    properties
+
+    // back to the server. After loading the custom properties, the example uses
+    the
+
+    // get method to read the custom property myProp, the set method to write
+    the
+
+    // custom property otherProp, and then finally calls the saveAsync method to
+    save
+
+    // the custom properties.
+
+    Office.initialize = function () {
+        // Checks for the DOM to load using the jQuery ready function.
+        $(document).ready(function () {
+            // After the DOM is loaded, add-in-specific code can run.
+            var mailbox = Office.context.mailbox;
+            mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
+        });
+    };
+
+
+    function customPropsCallback(asyncResult) {
+        var customProps = asyncResult.value;
+        var myProp = customProps.get("myProp");
+
+        customProps.set("otherProp", "value");
+        customProps.saveAsync(saveCallback);
+    }
+
+
+    function saveCallback(asyncResult) {
+
     }
 'Office.AppointmentCompose#location:member':
   - >-
@@ -6676,6 +6767,19 @@
     function callback(asyncResult) {
         var subject = asyncResult.value;
     }
+'Office.AppointmentRead#addHandlerAsync:member(2)':
+  - >-
+    function myHandlerFunction(eventarg) {
+        if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+            var attachment = eventarg.attachmentDetails;
+            console.log("Event Fired and Attachment Added!");
+            getAttachmentContentAsync(attachment.id, options, callback);
+        }
+    }
+
+
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged,
+    myHandlerFunction, myCallback);
 'Office.AppointmentRead#attachments:member':
   - >-
     // The following code builds an HTML string with details of all attachments
@@ -6944,6 +7048,29 @@
             // Continue processing the array of addresses.
         });
     };
+'Office.AppointmentRead#getInitializationContextAsync:member(2)':
+  - |-
+    // Get the initialization context (if present).
+    Office.context.mailbox.item.getInitializationContextAsync(
+        function(asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                if (asyncResult.value != null && asyncResult.value.length > 0) {
+                    // The value is a string, parse to an object.
+                    var context = JSON.parse(asyncResult.value);
+                    // Do something with context.
+                } else {
+                    // Empty context, treat as no context.
+                }
+            } else {
+                if (asyncResult.error.code == 9020) {
+                    // GenericResponseError returned when there is no context.
+                    // Treat as no context.
+                } else {
+                    // Handle the error.
+                }
+            }
+        }
+    );
 'Office.AppointmentRead#getRegExMatches:member(1)':
   - >-
     // Consider an add-in manifest has the following `Rule` element:
@@ -7074,6 +7201,50 @@
         // Do something.
     } else {
         // Do something else.
+    }
+'Office.AppointmentRead#loadCustomPropertiesAsync:member(1)':
+  - >-
+    // The following example shows how to use the loadCustomPropertiesAsync
+    method
+
+    // to asynchronously load custom properties that are specific to the current
+    item.
+
+    // The example also shows how to use the saveAsync method to save these
+    properties
+
+    // back to the server. After loading the custom properties, the example uses
+    the
+
+    // get method to read the custom property myProp, the set method to write
+    the
+
+    // custom property otherProp, and then finally calls the saveAsync method to
+    save
+
+    // the custom properties.
+
+    Office.initialize = function () {
+        // Checks for the DOM to load using the jQuery ready function.
+        $(document).ready(function () {
+            // After the DOM is loaded, add-in-specific code can run.
+            var mailbox = Office.context.mailbox;
+            mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
+        });
+    };
+
+
+    function customPropsCallback(asyncResult) {
+        var customProps = asyncResult.value;
+        var myProp = customProps.get("myProp");
+
+        customProps.set("otherProp", "value");
+        customProps.saveAsync(saveCallback);
+    }
+
+
+    function saveCallback(asyncResult) {
+
     }
 'Office.AppointmentRead#location:member':
   - |-
@@ -11473,6 +11644,19 @@
                     // Do something here.
                 });
         });
+'Office.MessageCompose#addHandlerAsync:member(2)':
+  - >-
+    function myHandlerFunction(eventarg) {
+        if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+            var attachment = eventarg.attachmentDetails;
+            console.log("Event Fired and Attachment Added!");
+            getAttachmentContentAsync(attachment.id, options, callback);
+        }
+    }
+
+
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged,
+    myHandlerFunction, myCallback);
 'Office.MessageCompose#addItemAttachmentAsync:member(1)':
   - |-
     // The following example adds an existing Outlook item as an attachment
@@ -11612,6 +11796,29 @@
             }
         }
     }
+'Office.MessageCompose#getInitializationContextAsync:member(2)':
+  - |-
+    // Get the initialization context (if present).
+    Office.context.mailbox.item.getInitializationContextAsync(
+        function(asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                if (asyncResult.value != null && asyncResult.value.length > 0) {
+                    // The value is a string, parse to an object.
+                    var context = JSON.parse(asyncResult.value);
+                    // Do something with context.
+                } else {
+                    // Empty context, treat as no context.
+                }
+            } else {
+                if (asyncResult.error.code == 9020) {
+                    // GenericResponseError returned when there is no context.
+                    // Treat as no context.
+                } else {
+                    // Handle the error.
+                }
+            }
+        }
+    );
 'Office.MessageCompose#getSelectedDataAsync:member(1)':
   - |-
     // Get selected data.
@@ -11650,6 +11857,50 @@
         // Do something.
     } else {
         // Do something else.
+    }
+'Office.MessageCompose#loadCustomPropertiesAsync:member(1)':
+  - >-
+    // The following example shows how to use the loadCustomPropertiesAsync
+    method
+
+    // to asynchronously load custom properties that are specific to the current
+    item.
+
+    // The example also shows how to use the saveAsync method to save these
+    properties
+
+    // back to the server. After loading the custom properties, the example uses
+    the
+
+    // get method to read the custom property myProp, the set method to write
+    the
+
+    // custom property otherProp, and then finally calls the saveAsync method to
+    save
+
+    // the custom properties.
+
+    Office.initialize = function () {
+        // Checks for the DOM to load using the jQuery ready function.
+        $(document).ready(function () {
+            // After the DOM is loaded, add-in-specific code can run.
+            var mailbox = Office.context.mailbox;
+            mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
+        });
+    };
+
+
+    function customPropsCallback(asyncResult) {
+        var customProps = asyncResult.value;
+        var myProp = customProps.get("myProp");
+
+        customProps.set("otherProp", "value");
+        customProps.saveAsync(saveCallback);
+    }
+
+
+    function saveCallback(asyncResult) {
+
     }
 'Office.MessageCompose#notificationMessages:member':
   - |-
@@ -11723,6 +11974,19 @@
     function callback(asyncResult) {
         var arrayOfToRecipients = asyncResult.value;
     }
+'Office.MessageRead#addHandlerAsync:member(2)':
+  - >-
+    function myHandlerFunction(eventarg) {
+        if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+            var attachment = eventarg.attachmentDetails;
+            console.log("Event Fired and Attachment Added!");
+            getAttachmentContentAsync(attachment.id, options, callback);
+        }
+    }
+
+
+    Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged,
+    myHandlerFunction, myCallback);
 'Office.MessageRead#attachments:member':
   - >-
     // The following code builds an HTML string with details of all attachments
@@ -12001,6 +12265,29 @@
             // Continue processing the array of addresses.
         });
     };
+'Office.MessageRead#getInitializationContextAsync:member(2)':
+  - |-
+    // Get the initialization context (if present).
+    Office.context.mailbox.item.getInitializationContextAsync(
+        function(asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                if (asyncResult.value != null && asyncResult.value.length > 0) {
+                    // The value is a string, parse to an object.
+                    var context = JSON.parse(asyncResult.value);
+                    // Do something with context.
+                } else {
+                    // Empty context, treat as no context.
+                }
+            } else {
+                if (asyncResult.error.code == 9020) {
+                    // GenericResponseError returned when there is no context.
+                    // Treat as no context.
+                } else {
+                    // Handle the error.
+                }
+            }
+        }
+    );
 'Office.MessageRead#getRegExMatches:member(1)':
   - >-
     // Consider an add-in manifest has the following `Rule` element:
@@ -12173,6 +12460,50 @@
         // Do something.
     } else {
         // Do something else.
+    }
+'Office.MessageRead#loadCustomPropertiesAsync:member(1)':
+  - >-
+    // The following example shows how to use the loadCustomPropertiesAsync
+    method
+
+    // to asynchronously load custom properties that are specific to the current
+    item.
+
+    // The example also shows how to use the saveAsync method to save these
+    properties
+
+    // back to the server. After loading the custom properties, the example uses
+    the
+
+    // get method to read the custom property myProp, the set method to write
+    the
+
+    // custom property otherProp, and then finally calls the saveAsync method to
+    save
+
+    // the custom properties.
+
+    Office.initialize = function () {
+        // Checks for the DOM to load using the jQuery ready function.
+        $(document).ready(function () {
+            // After the DOM is loaded, add-in-specific code can run.
+            var mailbox = Office.context.mailbox;
+            mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
+        });
+    };
+
+
+    function customPropsCallback(asyncResult) {
+        var customProps = asyncResult.value;
+        var myProp = customProps.get("myProp");
+
+        customProps.set("otherProp", "value");
+        customProps.saveAsync(saveCallback);
+    }
+
+
+    function saveCallback(asyncResult) {
+
     }
 'Office.MessageRead#normalizedSubject:member':
   - |-

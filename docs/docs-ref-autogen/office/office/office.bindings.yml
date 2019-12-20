@@ -410,7 +410,7 @@ items:
           type:
             - 'office!Office.BindingType:enum'
         - id: options
-          description: Provides options for configuring the prompt and identifying the binding that is created.
+          description: Provides options for identifying the binding that is created.
           type:
             - 'office!Office.AddBindingFromSelectionOptions:interface'
         - id: callback
