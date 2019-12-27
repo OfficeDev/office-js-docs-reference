@@ -16,6 +16,7 @@ items:
     children:
       - 'excel!Excel.CommentCollection#add:member(1)'
       - 'excel!Excel.CommentCollection#add:member(2)'
+      - 'excel!Excel.CommentCollection#add:member(3)'
       - 'excel!Excel.CommentCollection#context:member'
       - 'excel!Excel.CommentCollection#getCount:member(1)'
       - 'excel!Excel.CommentCollection#getItem:member(1)'
@@ -33,7 +34,7 @@ items:
       provided range is larger than one cell.
 
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(cellAddress, content, contentType)'
     fullName: 'add(cellAddress, content, contentType)'
     langs:
@@ -71,15 +72,13 @@ items:
         - id: content
           description: >-
             The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain
-            text. CommentRichContent objects allow for other comment features, such as mentions. \[Api set: ExcelApi
-            1.10 for string, ExcelApiOnline 1.1 for CommentRichContent object\]
+            text. CommentRichContent objects allow for other comment features, such as mentions.
           type:
             - 'excel!Excel.CommentCollection#add~1:complex'
         - id: contentType
           description: >-
             Optional. The type of content contained within the comment. The default value is enum
-            `ContentType.Plain`<!-- -->. \[Api set: ExcelApi 1.10 for Enum ContentType.Plain, ExcelApiOnline 1.1 for
-            Enum ContentType.Mention\]
+            `ContentType.Plain`<!-- -->.
           type:
             - 'excel!Excel.ContentType:enum'
   - uid: 'excel!Excel.CommentCollection#add:member(2)'
@@ -88,7 +87,7 @@ items:
       provided range is larger than one cell.
 
 
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(cellAddress, content, contentTypeString)'
     fullName: 'add(cellAddress, content, contentTypeString)'
     langs:
@@ -113,17 +112,45 @@ items:
         - id: content
           description: >-
             The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain
-            text. CommentRichContent objects allow for other comment features, such as mentions. \[Api set: ExcelApi
-            1.10 for string, ExcelApiOnline 1.1 for CommentRichContent object\]
+            text. CommentRichContent objects allow for other comment features, such as mentions.
           type:
             - 'excel!Excel.CommentCollection#add~3:complex'
         - id: contentTypeString
           description: >-
             Optional. The type of content contained within the comment. The default value is enum
-            `ContentType.Plain`<!-- -->. \[Api set: ExcelApi 1.10 for Enum ContentType.Plain, ExcelApiOnline 1.1 for
-            Enum ContentType.Mention\]
+            `ContentType.Plain`<!-- -->.
           type:
             - '"Plain" | "Mention"'
+  - uid: 'excel!Excel.CommentCollection#add:member(3)'
+    summary: >-
+      Creates a new comment with the given content on the given cell. An `InvalidArgument` error is thrown if the
+      provided range is larger than one cell.
+
+
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'add(cellAddress, content)'
+    fullName: 'add(cellAddress, content)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(cellAddress: Range | string, content: string): Excel.Comment;'
+      return:
+        type:
+          - 'excel!Excel.Comment:class'
+        description: ''
+      parameters:
+        - id: cellAddress
+          description: >-
+            The cell to which the comment is added. This can be a Range object or a string. If it's a string, it must
+            contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided
+            range is larger than one cell.
+          type:
+            - 'excel!Excel.CommentCollection#add~4:complex'
+        - id: content
+          description: 'The comment''s content, as a string representing plain text.'
+          type:
+            - string
   - uid: 'excel!Excel.CommentCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -376,6 +403,15 @@ references:
       - uid: 'excel!Excel.CommentRichContent:interface'
         name: CommentRichContent
         fullName: Excel.CommentRichContent
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.CommentCollection#add~4:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
       - name: ' | string'
         fullName: ' | string'
   - uid: 'excel!Excel.RequestContext:class'
