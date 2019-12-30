@@ -9,6 +9,18 @@ items:
           - name: Custom Functions
             uid: ''
             items:
+              - name: Custom functions runtime
+                uid: custom-functions-runtime!
+                items:
+                  - name: CancelableInvocation
+                    uid: >-
+                      custom-functions-runtime!CustomFunctions.CancelableInvocation:interface
+                  - name: Invocation
+                    uid: >-
+                      custom-functions-runtime!CustomFunctions.Invocation:interface
+                  - name: StreamingInvocation
+                    uid: >-
+                      custom-functions-runtime!CustomFunctions.StreamingInvocation:interface
               - name: Office runtime
                 uid: office-runtime!
                 items:
