@@ -165,37 +165,36 @@ function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber
         "name": "API reference overview",
         "href": "overview.md"
     }] as any;
-
     
-    // look for existing folders to move
-    let outlookFolders : string[] = ["MailboxEnums"];
+    let foldersToMove : string[] = [];
+    let enumFilter: string[] = [];
+    if (hostName === "outlook") {
+        foldersToMove.push("MailboxEnums");
+    } else {
+        enumFilter = generateEnumList(fsx.readFileSync(`../api-extractor-inputs-${hostName}/${hostName}.d.ts`).toString());
+    }
 
     // create custom folders
     let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
     
     let customFunctionsRoot = {"name": "Custom Functions", "uid": "", "items": [] as any};
 
-    // create enum filters
-    let excelEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-excel/excel.d.ts").toString());
-    let oneNoteEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-onenote/onenote.d.ts").toString());
-    let visioEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-visio/visio.d.ts").toString());
-    let wordEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-word/word.d.ts").toString());
 
     // create filter lists for types we shouldn't expose
     let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'ItemCompose', 'ItemRead', 'Message'];
-    outlookFilter = outlookFilter.concat(outlookFolders);
+    outlookFilter = outlookFilter.concat(foldersToMove);
 
     let excelFilter: string[] = ["Interfaces"];
-    excelFilter = excelFilter.concat(excelEnumFilter).concat(excelIconSetFilter);
+    excelFilter = excelFilter.concat(enumFilter).concat(excelIconSetFilter);
 
     let wordFilter: string[] = ["Interfaces"];
-    wordFilter = wordFilter.concat(wordEnumFilter);
+    wordFilter = wordFilter.concat(enumFilter);
 
     let oneNoteFilter: string[] = ["Interfaces"];
-    oneNoteFilter = oneNoteFilter.concat(oneNoteEnumFilter);
+    oneNoteFilter = oneNoteFilter.concat(enumFilter);
 
     let visioFilter: string[] = ["Interfaces"];
-    visioFilter = visioFilter.concat(visioEnumFilter);
+    visioFilter = visioFilter.concat(enumFilter);
 
     // process all packages except 'office' (Common "Shared" API)
     origToc.items.forEach((rootItem, rootIndex) => {
@@ -224,7 +223,7 @@ function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber
                         let folderIndex: number = 0;
                         while (folderIndex >= 0) {
                             folderIndex = membersToMove.items.findIndex(item => {
-                                return outlookFolders.indexOf(item.name) >= 0;
+                                return foldersToMove.indexOf(item.name) >= 0;
                             });
                             if (folderIndex >= 0) {
                                 filterToCContent.unshift(membersToMove.items.splice(folderIndex, 1)[0]);
@@ -238,7 +237,7 @@ function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber
                         });
                     } else if (packageName.toLocaleLowerCase().includes('excel')) {
                         let enumList = membersToMove.items.filter(item => {
-                             return excelEnumFilter.indexOf(item.name) >= 0;
+                             return enumFilter.indexOf(item.name) >= 0;
                          });
                         let iconSetList = membersToMove.items.filter(item => {
                               return excelIconSetFilter.indexOf(item.name) >= 0;
@@ -261,7 +260,7 @@ function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber
                         });
                     } else if (packageName.toLocaleLowerCase().includes('word')) {
                         let enumList = membersToMove.items.filter(item => {
-                            return wordEnumFilter.indexOf(item.name) >= 0;
+                            return enumFilter.indexOf(item.name) >= 0;
                         });
                         let primaryList = membersToMove.items.filter(item => {
                             return wordFilter.indexOf(item.name) < 0;
@@ -276,7 +275,7 @@ function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber
                         });
                     } else if (packageName.toLocaleLowerCase().includes('visio')) {
                         let enumList = membersToMove.items.filter(item => {
-                            return visioEnumFilter.indexOf(item.name) >= 0;
+                            return enumFilter.indexOf(item.name) >= 0;
                         });
                         let primaryList = membersToMove.items.filter(item => {
                             return visioFilter.indexOf(item.name) < 0;
@@ -291,7 +290,7 @@ function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber
                         });
                     } else if (packageName.toLocaleLowerCase().includes('onenote')) {
                         let enumList = membersToMove.items.filter(item => {
-                            return oneNoteEnumFilter.indexOf(item.name) >= 0;
+                            return enumFilter.indexOf(item.name) >= 0;
                         });
                         let primaryList = membersToMove.items.filter(item => {
                             return oneNoteFilter.indexOf(item.name) < 0;
