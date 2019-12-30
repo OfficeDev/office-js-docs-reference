@@ -150,7 +150,7 @@ async function tryCatch(call: () => Promise<void>) {
     }
 }
 
-function fixToc(tocPath: string, commonToc: Toc, versionNumber: number): Toc {
+function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber: number): Toc {
     console.log(`Updating the structure of the TOC file: ${tocPath}`);
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as Toc);
@@ -166,22 +166,19 @@ function fixToc(tocPath: string, commonToc: Toc, versionNumber: number): Toc {
         "href": "overview.md"
     }] as any;
 
-
+    
     // look for existing folders to move
     let outlookFolders : string[] = ["MailboxEnums"];
 
-    // create folders for Excel subcategories
-    let excelEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-excel/excel.d.ts").toString());
-
+    // create custom folders
     let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
-
+    
     let customFunctionsRoot = {"name": "Custom Functions", "uid": "", "items": [] as any};
 
-    // create folders for OneNote subcategories
-    let oneNoteEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
+    // create enum filters
+    let excelEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-excel/excel.d.ts").toString());
     let oneNoteEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-onenote/onenote.d.ts").toString());
-
-    // create folders for word subcategories
+    let visioEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-visio/visio.d.ts").toString());
     let wordEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-word/word.d.ts").toString());
 
     // create filter lists for types we shouldn't expose
@@ -198,6 +195,7 @@ function fixToc(tocPath: string, commonToc: Toc, versionNumber: number): Toc {
     oneNoteFilter = oneNoteFilter.concat(oneNoteEnumFilter);
 
     let visioFilter: string[] = ["Interfaces"];
+    visioFilter = visioFilter.concat(visioEnumFilter);
 
     // process all packages except 'office' (Common "Shared" API)
     origToc.items.forEach((rootItem, rootIndex) => {
@@ -277,9 +275,15 @@ function fixToc(tocPath: string, commonToc: Toc, versionNumber: number): Toc {
                             "items": primaryList as any
                         });
                     } else if (packageName.toLocaleLowerCase().includes('visio')) {
+                        let enumList = membersToMove.items.filter(item => {
+                            return visioEnumFilter.indexOf(item.name) >= 0;
+                        });
                         let primaryList = membersToMove.items.filter(item => {
                             return visioFilter.indexOf(item.name) < 0;
                         });
+
+                        let visioEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
+                        primaryList.unshift(visioEnumRoot);
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
@@ -292,7 +296,8 @@ function fixToc(tocPath: string, commonToc: Toc, versionNumber: number): Toc {
                         let primaryList = membersToMove.items.filter(item => {
                             return oneNoteFilter.indexOf(item.name) < 0;
                         });
-                        oneNoteEnumRoot.items = enumList;
+
+                        let oneNoteEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
                         primaryList.unshift(oneNoteEnumRoot);
                         newToc.items[0].items.push({
                             "name": packageName,
@@ -399,7 +404,7 @@ function scrubAndWriteToc(versionFolder: string, commonToc?: Toc, hostName?: str
     if (!commonToc) {
         latestToc = fixCommonToc(tocPath);
     } else {
-        latestToc = fixToc(tocPath, commonToc, versionNumber);
+        latestToc = fixToc(tocPath, commonToc, hostName, versionNumber);
     }
 
     fsx.writeFileSync(tocPath, jsyaml.safeDump(latestToc));
