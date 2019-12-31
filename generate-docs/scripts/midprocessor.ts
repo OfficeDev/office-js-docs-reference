@@ -112,7 +112,7 @@ tryCatch(async () => {
         fsx.copySync(customFunctionsJson, `../json/excel_1_${i}/custom-functions-runtime.api.json`);
         fsx.copySync(officeRuntimeJson, `../json/excel_1_${i}/office-runtime.api.json`);
     }
-    fsx.copySync(customFunctionsJson, `../json/excel_online}/custom-functions-runtime.api.json`);
+    fsx.copySync(customFunctionsJson, `../json/excel_online/custom-functions-runtime.api.json`);
     fsx.copySync(officeRuntimeJson, `../json/excel_online/office-runtime.api.json`);
 });
 

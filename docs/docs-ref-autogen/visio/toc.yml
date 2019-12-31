@@ -6,6 +6,19 @@ items:
       - name: Visio
         uid: visio!
         items:
+          - name: Enums
+            uid: ''
+            items:
+              - name: ErrorCodes
+                uid: 'visio!Visio.ErrorCodes:enum'
+              - name: OverlayHorizontalAlignment
+                uid: 'visio!Visio.OverlayHorizontalAlignment:enum'
+              - name: OverlayType
+                uid: 'visio!Visio.OverlayType:enum'
+              - name: OverlayVerticalAlignment
+                uid: 'visio!Visio.OverlayVerticalAlignment:enum'
+              - name: ToolBarType
+                uid: 'visio!Visio.ToolBarType:enum'
           - name: Application
             uid: 'visio!Visio.Application:class'
           - name: BoundingBox
@@ -22,20 +35,12 @@ items:
             uid: 'visio!Visio.DocumentLoadCompleteEventArgs:interface'
           - name: DocumentView
             uid: 'visio!Visio.DocumentView:class'
-          - name: ErrorCodes
-            uid: 'visio!Visio.ErrorCodes:enum'
           - name: Highlight
             uid: 'visio!Visio.Highlight:interface'
           - name: Hyperlink
             uid: 'visio!Visio.Hyperlink:class'
           - name: HyperlinkCollection
             uid: 'visio!Visio.HyperlinkCollection:class'
-          - name: OverlayHorizontalAlignment
-            uid: 'visio!Visio.OverlayHorizontalAlignment:enum'
-          - name: OverlayType
-            uid: 'visio!Visio.OverlayType:enum'
-          - name: OverlayVerticalAlignment
-            uid: 'visio!Visio.OverlayVerticalAlignment:enum'
           - name: Page
             uid: 'visio!Visio.Page:class'
           - name: PageCollection
@@ -68,8 +73,6 @@ items:
             uid: 'visio!Visio.ShapeMouseLeaveEventArgs:interface'
           - name: ShapeView
             uid: 'visio!Visio.ShapeView:class'
-          - name: ToolBarType
-            uid: 'visio!Visio.ToolBarType:enum'
       - name: Common API
         uid: office!
         items:
