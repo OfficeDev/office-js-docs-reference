@@ -1,3 +1,4 @@
+import { fetchAndThrowOnError } from './util';
 import * as fsx from 'fs-extra';
 import * as path from "path";
 import yaml = require('js-yaml');
@@ -9,9 +10,65 @@ const CURRENT_OUTLOOK_RELEASE = 8;
 const CURRENT_WORD_RELEASE = 3;
 
 tryCatch(async () => {
+     // ----
+    // Process Snippets
+    // ----
+    console.log("\nRemoving old snippets input files...");
+
+    const scriptInputsPath = path.resolve("../script-inputs");
+    fsx.readdirSync(scriptInputsPath)
+        .filter(filename => filename.indexOf("snippets") > 0)
+        .forEach(filename => fsx.removeSync(scriptInputsPath + '/' + filename));
+
+    console.log("\nCreating snippets file...");
+
+    console.log("\nReading from: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/snippet-extractor-output/snippets.yaml");
+    fsx.writeFileSync("../script-inputs/script-lab-snippets.yaml", await fetchAndThrowOnError("https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/snippet-extractor-output/snippets.yaml", "text"));
+
+    console.log("\nReading from files: " + path.resolve("../../docs/code-snippets"));
+
+    const snippetsSourcePath = path.resolve("../../docs/code-snippets");
+    let localCodeSnippetsString : string = "";
+    fsx.readdirSync(path.resolve(snippetsSourcePath))
+        .filter(name => name.endsWith('.yaml') || name.endsWith('.yml'))
+        .forEach((filename, index) => {
+            localCodeSnippetsString += fsx.readFileSync(`${snippetsSourcePath}/${filename}`).toString() + "\r\n";
+        });
+
+    fsx.writeFileSync("../script-inputs/local-repo-snippets.yaml", localCodeSnippetsString);
+
+    // Parse the YAML into an object/hash set.
+    let allSnippets: Object = yaml.load(localCodeSnippetsString);
+
+    // If a duplicate key exists, merge the Script Lab example(s) into the item with the existing key.
+    let scriptLabSnippets: Object = yaml.load(fsx.readFileSync(`../script-inputs/script-lab-snippets.yaml`).toString());
+    for (const key of Object.keys(scriptLabSnippets)) {
+        if (allSnippets[key]) {
+            console.log("Combining local and Script Lab snippets for: " + key);
+            allSnippets[key] =allSnippets[key].concat(scriptLabSnippets[key]);
+        } else {
+            allSnippets[key] = scriptLabSnippets[key];
+        }
+    }
+
+    console.log("\nWriting snippets to: " + path.resolve("../json/snippets.yaml"));
+
+    fsx.writeFileSync("../json/snippets.yaml", yaml.safeDump(
+        allSnippets,
+        {sortKeys: <any>((a: string, b: string) => {
+            if (a < b) {
+                return -1;
+            } else if (a > b) {
+                return 1;
+            } else {
+                return 0;
+            }
+        })}
+    ));
+
     console.log("Copying snippets file to subfolders");
-    const snippets = path.resolve("../json/snippets.yaml");
-    let allSnippets: Object = yaml.safeLoad(fsx.readFileSync(snippets).toString(), {strict: true});
+    const snippetPath = path.resolve("../json/snippets.yaml");
+    allSnippets = yaml.safeLoad(fsx.readFileSync(snippetPath).toString(), {strict: true});
     let commonSnippetKeys = [];
     let excelSnippetKeys = [];
     let onenoteSnippetKeys = [];
