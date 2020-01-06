@@ -1,6 +1,10 @@
-// usage: node version-remover [source d.ts] [API set name] [output file name]
-// example: node version-remover excel.d.ts "ExcelApi 1.8" excel_1_7.d.ts
 import * as fsx from "fs-extra";
+
+if (process.argv.length != 5 || process.argv.find((x: string) => {return x === "-?"})) {
+    console.log("usage: node version-remover [source d.ts] [API set name] [output file name]");
+    console.log("example: node version-remover excel.d.ts \"ExcelApi 1.8\" excel_1_7.d.ts");
+    process.exit(0);
+}
 
 console.log("Version Remover - Creating " + process.argv[4]);
 let wholeDTS = fsx.readFileSync(process.argv[2]).toString();
