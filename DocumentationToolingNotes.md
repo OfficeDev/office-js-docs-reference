@@ -44,21 +44,24 @@ The Script Lab snippets are pulled from working samples. Currently, Excel and Wo
 
 ## Tooling pipeline
 
-![An image showing the control flow from Definitely Typed, to the preprocessor, API Extractor, API Documenter, and through to the postprocessor.](ToolingPipeline.png)
+![An image showing the control flow from Definitely Typed, to the preprocessor, API Extractor, midprocessor, API Documenter, and through to the postprocessor.](ToolingPipeline.png)
 
-Between the content sources and the final pages, the documentation content goes through four tooling steps:
+Between the content sources and the final pages, the documentation content goes through five tooling steps:
 
 1. [Preprocessor script](https://github.com/OfficeDev/office-js-docs-reference/blob/master/generate-docs/scripts/preprocessor.ts)
 1. [API Extractor](https://api-extractor.com/)
-1. [API Documenter](https://github.com/microsoft/web-build-tools/blob/master/apps/api-documenter/README.md)
+1. [Midprocessor script](https://github.com/OfficeDev/office-js-docs-reference/blob/master/generate-docs/scripts/midprocessor.ts)
+1. [API Documenter](https://github.com/microsoft/rushstack/blob/master/apps/api-documenter/README.md)
 1. [Postprocessor script](https://github.com/OfficeDev/office-js-docs-reference/blob/master/generate-docs/scripts/postprocessor.ts)
 
 The preprocessor takes the d.ts files and splits them into host-specific sections. It performs any cleanup necessary for the subsequent tools to properly process the data.
 
 API Extractor converts the d.ts files into JSON data. This tokenizes all the type data, allowing for easier parsing.
 
+The midprocessor retrieves the code snippets and pairs them with the proper hosts.
+
 API Documenter converts the JSON data into .yml files. The .yml files are converted to markdown by the Open Publishing System that publishes our docs to docs.microsoft.com. API Documenter also contains an Office-specific extension that inserts our code snippets.
 
 The postprocessor cleans up the table of contents and moves the .yml files into the [publishing folder](https://github.com/OfficeDev/office-js-docs-reference/tree/master/docs/docs-ref-autogen).
 
-All four of these steps are performed when [GenerateDocs.cmd](https://github.com/OfficeDev/office-js-docs-reference/blob/master/generate-docs/GenerateDocs.cmd) is run. That script also handles node module installation and cleans out old file sets.
+All five of these steps are performed when [GenerateDocs.cmd](https://github.com/OfficeDev/office-js-docs-reference/blob/master/generate-docs/GenerateDocs.cmd) is run. That script also handles node module installation, cleans out old file sets, and versions Type Definition files for each requirement set.
