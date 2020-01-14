@@ -1201,7 +1201,7 @@
     });
 
 
-    /* Example email containing a contact, John Smith:
+    /* Example email that includes contact details of sender, John Smith:
 
     Hi there,
 
@@ -1212,15 +1212,17 @@
 
     John Smith
 
+    Account Manager
+
     Contoso Corporation
 
     1 Contoso Way, Redmond, WA 98052
 
     john.smith@contoso.com
 
-    206-111-1111
+    111-111-1111
 
-    https://github.com/contoso/john.smith
+    https://contoso.com/john.smith
 
     */
 'Office.CustomProperties#saveAsync:member(1)':
