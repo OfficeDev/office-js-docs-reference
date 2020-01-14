@@ -8281,7 +8281,7 @@
     // are specific to the current item, and the saveAsync method to save
     // these properties back to the server. After loading the custom properties,
     // the code sample uses the get method to read the custom property myProp,
-    // the set method to write the custom property otherProp, and then finally
+    // the set method to write the custom property myProp, and then finally
     // calls the saveAsync method to save the custom properties.
 
     // The initialize function is required for all add-ins.
@@ -8297,24 +8297,21 @@
     function customPropsCallback(asyncResult) {
         var customProps = asyncResult.value;
         var myProp = customProps.get("myProp");
+        console.log("myProp: " + myProp); // First run on current item will return `undefined`.
 
-        customProps.set("otherProp", "value");
+        // Set myProp custom property.
+        customProps.set("myProp", "value");
         customProps.saveAsync(saveCallback);
     }
 
     function saveCallback(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-            write(asyncResult.error.message);
+            console.error(asyncResult.error.message);
         }
         else {
             // Async call to save custom properties completed.
             // Proceed to do the appropriate for your add-in.
         }
-    }
-
-    // Writes to a div with id='message' on the page.
-    function write(message) {
-        document.getElementById('message').innerText += message;
     }
 'Office.CustomXmlNode#baseName:member':
   - |-
