@@ -1631,6 +1631,8 @@ items:
     summary: |-
       Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
 
+      **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
+
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
@@ -1668,6 +1670,8 @@ items:
   - uid: 'outlook!Office.MessageCompose#getSharedPropertiesAsync:member(2)'
     summary: |-
       Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+
+      **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
