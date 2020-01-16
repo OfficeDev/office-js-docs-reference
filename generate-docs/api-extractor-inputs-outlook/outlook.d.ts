@@ -1409,6 +1409,10 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
+         * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
+         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * introduced with requirement set 1.8.
+         *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
@@ -1441,6 +1445,10 @@ export declare namespace Office {
          * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
+         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * introduced with requirement set 1.8.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -5572,6 +5580,10 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
+         * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
+         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * introduced with requirement set 1.8.
+         *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
@@ -5606,6 +5618,10 @@ export declare namespace Office {
          * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
+         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * introduced with requirement set 1.8.
          *
          * [Api set: Mailbox 1.1]
          *
