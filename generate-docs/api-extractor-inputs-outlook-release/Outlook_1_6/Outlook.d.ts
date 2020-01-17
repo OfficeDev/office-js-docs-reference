@@ -393,6 +393,10 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
+         * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
+         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * introduced with requirement set 1.8.
+         *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
@@ -425,6 +429,10 @@ export declare namespace Office {
          * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
+         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * introduced with requirement set 1.8.
          *
          * [Api set: Mailbox 1.1]
          *
@@ -1864,7 +1872,7 @@ export declare namespace Office {
      * The CustomProperties object represents custom properties that are specific to a particular item and specific to a mail add-in for Outlook. 
      * For example, there might be a need for a mail add-in to save some data that is specific to the current email message that activated the add-in. 
      * If the user revisits the same message in the future and activates the mail add-in again, the add-in will be able to retrieve the data that had 
-     * been saved as custom properties.
+     * been saved as custom properties. **Important**: The maximum length of a CustomProperties JSON object is 2500 characters.
      *
      * Because Outlook on Mac doesn't cache custom properties, if the user's network goes down, mail add-ins cannot access their custom properties.
      *
@@ -3094,6 +3102,10 @@ export declare namespace Office {
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
          *
+         * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
+         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * introduced with requirement set 1.8.
+         *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
@@ -3128,6 +3140,10 @@ export declare namespace Office {
          * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
          *
          * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
+         * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+         * introduced with requirement set 1.8.
          *
          * [Api set: Mailbox 1.1]
          *

@@ -83,6 +83,11 @@ items:
       session.
 
 
+      **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an
+      `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this
+      issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
+
+
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
@@ -205,6 +210,11 @@ items:
 
       You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same
       session.
+
+
+      **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an
+      `Authorization: Bearer` header to this action (whether using this API or the Outlook UI). To work around this
+      issue, you can try using the `addFileAttachmentFromBase64` API introduced with requirement set 1.8.
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1631,6 +1641,8 @@ items:
     summary: |-
       Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
 
+      **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
+
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
@@ -1668,6 +1680,8 @@ items:
   - uid: 'outlook!Office.MessageCompose#getSharedPropertiesAsync:member(2)'
     summary: |-
       Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+
+      **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
