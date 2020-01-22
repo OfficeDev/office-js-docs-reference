@@ -66,8 +66,6 @@ items:
             uid: 'outlook!Office.ReplyFormData:interface'
           - name: RoamingSettings
             uid: 'outlook!Office.RoamingSettings:interface'
-          - name: SourceProperty
-            uid: 'outlook!Office.SourceProperty:enum'
           - name: Subject
             uid: 'outlook!Office.Subject:interface'
           - name: TaskSuggestion

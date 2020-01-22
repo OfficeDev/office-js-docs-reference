@@ -166,19 +166,10 @@ export declare namespace Office {
         }
         
         
+        
     }
     export interface CoercionTypeOptions {
         coercionType?: CommonAPI.CoercionType | string;
-    }
-    enum SourceProperty {
-        /**
-         * The source of the data is from the body of the message.
-         */
-        Body,
-        /**
-         * The source of the data is from the subject of the message.
-         */
-        Subject
     }
     /**
      * The subclass of {@link Office.Item | Item} dealing with appointments.

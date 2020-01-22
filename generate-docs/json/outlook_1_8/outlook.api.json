@@ -15644,6 +15644,63 @@
                 },
                 {
                   "kind": "Enum",
+                  "canonicalReference": "outlook!Office.MailboxEnums.SourceProperty:enum",
+                  "docComment": "/**\n * Specifies the source of the selected data in an item (see `Office.mailbox.item.getSelectedDataAsync` for details).\n *\n * [Api set: Mailbox 1.2]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "enum SourceProperty "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "SourceProperty",
+                  "members": [
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "outlook!Office.MailboxEnums.SourceProperty.Body:member",
+                      "docComment": "/**\n * The source of the data is from the body of the item.\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "Body = "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "\"body\""
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "Body",
+                      "initializerTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "outlook!Office.MailboxEnums.SourceProperty.Subject:member",
+                      "docComment": "/**\n * The source of the data is from the subject of the item.\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "Subject = "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "\"subject\""
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "Subject",
+                      "initializerTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "Enum",
                   "canonicalReference": "outlook!Office.MailboxEnums.WeekNumber:enum",
                   "docComment": "/**\n * Specifies the week of the month.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
                   "excerptTokens": [
@@ -24487,55 +24544,6 @@
                 }
               ],
               "extendsTokenRanges": []
-            },
-            {
-              "kind": "Enum",
-              "canonicalReference": "outlook!Office.SourceProperty:enum",
-              "docComment": "",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "enum SourceProperty "
-                }
-              ],
-              "releaseTag": "Public",
-              "name": "SourceProperty",
-              "members": [
-                {
-                  "kind": "EnumMember",
-                  "canonicalReference": "outlook!Office.SourceProperty.Body:member",
-                  "docComment": "/**\n * The source of the data is from the body of the message.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "Body"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "Body",
-                  "initializerTokenRange": {
-                    "startIndex": 0,
-                    "endIndex": 0
-                  }
-                },
-                {
-                  "kind": "EnumMember",
-                  "canonicalReference": "outlook!Office.SourceProperty.Subject:member",
-                  "docComment": "/**\n * The source of the data is from the subject of the message.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "Subject"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "Subject",
-                  "initializerTokenRange": {
-                    "startIndex": 0,
-                    "endIndex": 0
-                  }
-                }
-              ]
             },
             {
               "kind": "Interface",

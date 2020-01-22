@@ -8575,55 +8575,6 @@
               "extendsTokenRanges": []
             },
             {
-              "kind": "Enum",
-              "canonicalReference": "outlook!Office.SourceProperty:enum",
-              "docComment": "",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "enum SourceProperty "
-                }
-              ],
-              "releaseTag": "Public",
-              "name": "SourceProperty",
-              "members": [
-                {
-                  "kind": "EnumMember",
-                  "canonicalReference": "outlook!Office.SourceProperty.Body:member",
-                  "docComment": "/**\n * The source of the data is from the body of the message.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "Body"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "Body",
-                  "initializerTokenRange": {
-                    "startIndex": 0,
-                    "endIndex": 0
-                  }
-                },
-                {
-                  "kind": "EnumMember",
-                  "canonicalReference": "outlook!Office.SourceProperty.Subject:member",
-                  "docComment": "/**\n * The source of the data is from the subject of the message.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "Subject"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "Subject",
-                  "initializerTokenRange": {
-                    "startIndex": 0,
-                    "endIndex": 0
-                  }
-                }
-              ]
-            },
-            {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.Subject:interface",
               "docComment": "/**\n * Provides methods to get and set the subject of an appointment or message in an Outlook add-in.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose\n */\n",

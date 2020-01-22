@@ -40,6 +40,7 @@ items:
       - 'outlook!Office.MailboxEnums.RecurrenceType:enum'
       - 'outlook!Office.MailboxEnums.ResponseType:enum'
       - 'outlook!Office.MailboxEnums.RestVersion:enum'
+      - 'outlook!Office.MailboxEnums.SourceProperty:enum'
       - 'outlook!Office.MailboxEnums.WeekNumber:enum'
       - 'outlook!Office.MeetingSuggestion:interface'
       - 'outlook!Office.Message:interface'
@@ -60,7 +61,6 @@ items:
       - 'outlook!Office.ReplyFormData:interface'
       - 'outlook!Office.RoamingSettings:interface'
       - 'outlook!Office.SeriesTime:interface'
-      - 'outlook!Office.SourceProperty:enum'
       - 'outlook!Office.Subject:interface'
       - 'outlook!Office.TaskSuggestion:interface'
       - 'outlook!Office.Time:interface'
@@ -132,6 +132,8 @@ references:
     name: Office.MailboxEnums.ResponseType
   - uid: 'outlook!Office.MailboxEnums.RestVersion:enum'
     name: Office.MailboxEnums.RestVersion
+  - uid: 'outlook!Office.MailboxEnums.SourceProperty:enum'
+    name: Office.MailboxEnums.SourceProperty
   - uid: 'outlook!Office.MailboxEnums.WeekNumber:enum'
     name: Office.MailboxEnums.WeekNumber
   - uid: 'outlook!Office.MeetingSuggestion:interface'
@@ -172,8 +174,6 @@ references:
     name: Office.RoamingSettings
   - uid: 'outlook!Office.SeriesTime:interface'
     name: Office.SeriesTime
-  - uid: 'outlook!Office.SourceProperty:enum'
-    name: Office.SourceProperty
   - uid: 'outlook!Office.Subject:interface'
     name: Office.Subject
   - uid: 'outlook!Office.TaskSuggestion:interface'
