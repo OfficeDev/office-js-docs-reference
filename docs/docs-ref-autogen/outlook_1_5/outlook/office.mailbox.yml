@@ -936,12 +936,13 @@ items:
             - any
   - uid: 'outlook!Office.Mailbox#item:member'
     summary: >-
-      The mailbox item. Depending on the context in which the add-in opened, the item may be of any number of types. If
-      you want to see IntelliSense for only a specific type, cast this item to one of the following:
+      The mailbox item. Depending on the context in which the add-in opened, the item type may vary. If you want to see
+      IntelliSense for only a specific type or mode, cast this item to one of the following:
 
 
       [ItemCompose](xref:outlook!Office.ItemCompose:interface)<!-- -->,
-      [ItemRead](xref:outlook!Office.ItemRead:interface)<!-- -->,
+      [ItemRead](xref:outlook!Office.ItemRead:interface)<!-- -->, [Message](xref:outlook!Office.Message:interface)<!--
+      -->, [Appointment](xref:outlook!Office.Appointment:interface)<!-- -->,
       [MessageCompose](xref:outlook!Office.MessageCompose:interface)<!-- -->,
       [MessageRead](xref:outlook!Office.MessageRead:interface)<!-- -->,
       [AppointmentCompose](xref:outlook!Office.AppointmentCompose:interface)<!-- -->,
@@ -952,7 +953,9 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'item: Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose;'
+      content: >-
+        item: Item & ItemCompose & ItemRead & Message & MessageCompose & MessageRead & Appointment & AppointmentCompose
+        & AppointmentRead;
       return:
         type:
           - 'outlook!Office.Mailbox#item~0:complex'
@@ -1363,10 +1366,12 @@ references:
       - name: <string>) => void
         fullName: <string>) => void
   - uid: 'outlook!Office.Mailbox#item~0:complex'
-    name: Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose
+    name: >-
+      Item & ItemCompose & ItemRead & Message & MessageCompose & MessageRead & Appointment & AppointmentCompose &
+      AppointmentRead
     fullName: >-
-      Office.Item & Office.ItemCompose & Office.ItemRead & Office.MessageRead & Office.MessageCompose &
-      Office.AppointmentRead & Office.AppointmentCompose
+      Office.Item & Office.ItemCompose & Office.ItemRead & Office.Message & Office.MessageCompose & Office.MessageRead &
+      Office.Appointment & Office.AppointmentCompose & Office.AppointmentRead
     spec.typeScript:
       - uid: 'outlook!Office.Item:interface'
         name: Item
@@ -1383,9 +1388,9 @@ references:
         fullName: Office.ItemRead
       - name: ' & '
         fullName: ' & '
-      - uid: 'outlook!Office.MessageRead:interface'
-        name: MessageRead
-        fullName: Office.MessageRead
+      - uid: 'outlook!Office.Message:interface'
+        name: Message
+        fullName: Office.Message
       - name: ' & '
         fullName: ' & '
       - uid: 'outlook!Office.MessageCompose:interface'
@@ -1393,14 +1398,24 @@ references:
         fullName: Office.MessageCompose
       - name: ' & '
         fullName: ' & '
-      - uid: 'outlook!Office.AppointmentRead:interface'
-        name: AppointmentRead
-        fullName: Office.AppointmentRead
+      - uid: 'outlook!Office.MessageRead:interface'
+        name: MessageRead
+        fullName: Office.MessageRead
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'outlook!Office.Appointment:interface'
+        name: Appointment
+        fullName: Office.Appointment
       - name: ' & '
         fullName: ' & '
       - uid: 'outlook!Office.AppointmentCompose:interface'
         name: AppointmentCompose
         fullName: Office.AppointmentCompose
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'outlook!Office.AppointmentRead:interface'
+        name: AppointmentRead
+        fullName: Office.AppointmentRead
   - uid: 'outlook!Office.Mailbox#makeEwsRequestAsync~0:complex'
     name: '(asyncResult: Office.AsyncResult<string>) => void'
     fullName: '(asyncResult: Office.AsyncResult<string>) => void'

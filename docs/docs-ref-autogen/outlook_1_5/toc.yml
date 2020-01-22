@@ -24,6 +24,8 @@ items:
                 uid: 'outlook!Office.MailboxEnums.ResponseType:enum'
               - name: RestVersion
                 uid: 'outlook!Office.MailboxEnums.RestVersion:enum'
+              - name: SourceProperty
+                uid: 'outlook!Office.MailboxEnums.SourceProperty:enum'
           - name: AppointmentCompose
             uid: 'outlook!Office.AppointmentCompose:interface'
           - name: AppointmentRead
@@ -74,8 +76,6 @@ items:
             uid: 'outlook!Office.ReplyFormData:interface'
           - name: RoamingSettings
             uid: 'outlook!Office.RoamingSettings:interface'
-          - name: SourceProperty
-            uid: 'outlook!Office.SourceProperty:enum'
           - name: Subject
             uid: 'outlook!Office.Subject:interface'
           - name: TaskSuggestion

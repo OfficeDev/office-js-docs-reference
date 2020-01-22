@@ -32,6 +32,7 @@ items:
       - 'outlook!Office.MailboxEnums.OWAView:enum'
       - 'outlook!Office.MailboxEnums.RecipientType:enum'
       - 'outlook!Office.MailboxEnums.ResponseType:enum'
+      - 'outlook!Office.MailboxEnums.SourceProperty:enum'
       - 'outlook!Office.MeetingSuggestion:interface'
       - 'outlook!Office.Message:interface'
       - 'outlook!Office.MessageCompose:interface'
@@ -41,7 +42,6 @@ items:
       - 'outlook!Office.ReplyFormAttachment:interface'
       - 'outlook!Office.ReplyFormData:interface'
       - 'outlook!Office.RoamingSettings:interface'
-      - 'outlook!Office.SourceProperty:enum'
       - 'outlook!Office.Subject:interface'
       - 'outlook!Office.TaskSuggestion:interface'
       - 'outlook!Office.Time:interface'
@@ -97,6 +97,8 @@ references:
     name: Office.MailboxEnums.RecipientType
   - uid: 'outlook!Office.MailboxEnums.ResponseType:enum'
     name: Office.MailboxEnums.ResponseType
+  - uid: 'outlook!Office.MailboxEnums.SourceProperty:enum'
+    name: Office.MailboxEnums.SourceProperty
   - uid: 'outlook!Office.MeetingSuggestion:interface'
     name: Office.MeetingSuggestion
   - uid: 'outlook!Office.Message:interface'
@@ -115,8 +117,6 @@ references:
     name: Office.ReplyFormData
   - uid: 'outlook!Office.RoamingSettings:interface'
     name: Office.RoamingSettings
-  - uid: 'outlook!Office.SourceProperty:enum'
-    name: Office.SourceProperty
   - uid: 'outlook!Office.Subject:interface'
     name: Office.Subject
   - uid: 'outlook!Office.TaskSuggestion:interface'
