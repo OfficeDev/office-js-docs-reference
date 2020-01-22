@@ -5002,7 +5002,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.Mailbox#item:member",
-                  "docComment": "/**\n * The mailbox item. Depending on the context in which the add-in opened, the item may be of any number of types. If you want to see IntelliSense for only a specific type, cast this item to one of the following:\n *\n * {@link Office.ItemCompose | ItemCompose}, {@link Office.ItemRead | ItemRead}, {@link Office.MessageCompose | MessageCompose}, {@link Office.MessageRead | MessageRead}, {@link Office.AppointmentCompose | AppointmentCompose}, {@link Office.AppointmentRead | AppointmentRead}\n */\n",
+                  "docComment": "/**\n * The mailbox item. Depending on the context in which the add-in opened, the item type may vary. If you want to see IntelliSense for only a specific type or mode, cast this item to one of the following:\n *\n * {@link Office.ItemCompose | ItemCompose}, {@link Office.ItemRead | ItemRead}, {@link Office.Message | Message}, {@link Office.Appointment | Appointment}, {@link Office.MessageCompose | MessageCompose}, {@link Office.MessageRead | MessageRead}, {@link Office.AppointmentCompose | AppointmentCompose}, {@link Office.AppointmentRead | AppointmentRead}\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5037,8 +5037,8 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "MessageRead",
-                      "canonicalReference": "outlook!Office.MessageRead:interface"
+                      "text": "Message",
+                      "canonicalReference": "outlook!Office.Message:interface"
                     },
                     {
                       "kind": "Content",
@@ -5055,8 +5055,17 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "AppointmentRead",
-                      "canonicalReference": "outlook!Office.AppointmentRead:interface"
+                      "text": "MessageRead",
+                      "canonicalReference": "outlook!Office.MessageRead:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " & "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Appointment",
+                      "canonicalReference": "outlook!Office.Appointment:interface"
                     },
                     {
                       "kind": "Content",
@@ -5069,6 +5078,15 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " & "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AppointmentRead",
+                      "canonicalReference": "outlook!Office.AppointmentRead:interface"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ";"
                     }
                   ],
@@ -5076,7 +5094,7 @@
                   "name": "item",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
-                    "endIndex": 14
+                    "endIndex": 18
                   }
                 },
                 {
