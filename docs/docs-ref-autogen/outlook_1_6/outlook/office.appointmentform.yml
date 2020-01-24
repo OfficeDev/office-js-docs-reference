@@ -42,10 +42,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'body: Body | string;'
+      content: 'body: Body;'
       return:
         type:
-          - 'outlook!Office.AppointmentForm#body~0:complex'
+          - 'outlook!Office.Body:interface'
   - uid: 'outlook!Office.AppointmentForm#end:member'
     summary: >-
       Gets or sets the date and time that the appointment is to end.
@@ -303,15 +303,8 @@ items:
         type:
           - 'outlook!Office.AppointmentForm#subject~0:complex'
 references:
-  - uid: 'outlook!Office.AppointmentForm#body~0:complex'
-    name: Body | string
-    fullName: Office.Body | string
-    spec.typeScript:
-      - uid: 'outlook!Office.Body:interface'
-        name: Body
-        fullName: Office.Body
-      - name: ' | string'
-        fullName: ' | string'
+  - uid: 'outlook!Office.Body:interface'
+    name: Body
   - uid: 'outlook!Office.AppointmentForm#end~0:complex'
     name: Time | Date
     fullName: Office.Time | Date

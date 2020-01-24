@@ -26,6 +26,153 @@ items:
     extends:
       - 'outlook!Office.Item:interface'
     package: outlook!
+    children:
+      - 'outlook!Office.Message#cc:member'
+      - 'outlook!Office.Message#conversationId:member'
+      - 'outlook!Office.Message#to:member'
+  - uid: 'outlook!Office.Message#cc:member'
+    summary: >-
+      Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on
+      the mode of the current item.
+
+
+      *Read mode*
+
+
+      The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc
+      line of the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and
+      Mac, you can get 500 members maximum.
+
+
+      *Compose mode*
+
+
+      The cc property returns a [Recipients](xref:outlook!Office.Recipients:interface) object that provides methods to
+      get or update the recipients on the Cc line of the message. By default, the collection is limited to a maximum of
+      100 members. However, on Windows and Mac, the following limits apply.
+
+
+      - Get 500 members maximum.
+
+
+      - Set a maximum of 100 members per call, up to 500 members total.
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
+      Compose or Message Read
+    name: cc
+    fullName: cc
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cc: Recipients | EmailAddressDetails[];'
+      return:
+        type:
+          - 'outlook!Office.Message#cc~0:complex'
+  - uid: 'outlook!Office.Message#conversationId:member'
+    summary: >-
+      Gets an identifier for the email conversation that contains a particular message.
+
+
+      You can get an integer for this property if your mail app is activated in read forms or responses in compose
+      forms. If subsequently the user changes the subject of the reply message, upon sending the reply, the conversation
+      ID for that message will change and that value you obtained earlier will no longer apply.
+
+
+      You get null for this property for a new item in a compose form. If the user sets a subject and saves the item,
+      the conversationId property will return a value.
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
+      Compose or Message Read
+    name: conversationId
+    fullName: conversationId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'conversationId: string;'
+      return:
+        type:
+          - string
+  - uid: 'outlook!Office.Message#to:member'
+    summary: >-
+      Provides access to the recipients on the To line of a message. The type of object and level of access depends on
+      the mode of the current item.
+
+
+      **Read mode**
+
+
+      The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To
+      line of the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and
+      Mac, you can get 500 members maximum.
+
+
+      **Compose mode**
+
+
+      The to property returns a Recipients object that provides methods to get or update the recipients on the To line
+      of the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac,
+      the following limits apply.
+
+
+      - Get 500 members maximum.
+
+
+      - Set a maximum of 100 members per call, up to 500 members total.
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
+      Compose or Message Read
+    name: to
+    fullName: to
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'to: Recipients | EmailAddressDetails[];'
+      return:
+        type:
+          - 'outlook!Office.Message#to~0:complex'
 references:
   - uid: 'outlook!Office.Item:interface'
     name: Item
+  - uid: 'outlook!Office.Message#cc~0:complex'
+    name: 'Recipients | EmailAddressDetails[]'
+    fullName: 'Office.Recipients | Office.EmailAddressDetails[]'
+    spec.typeScript:
+      - uid: 'outlook!Office.Recipients:interface'
+        name: Recipients
+        fullName: Office.Recipients
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'outlook!Office.EmailAddressDetails:interface'
+        name: EmailAddressDetails
+        fullName: Office.EmailAddressDetails
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'outlook!Office.Message#to~0:complex'
+    name: 'Recipients | EmailAddressDetails[]'
+    fullName: 'Office.Recipients | Office.EmailAddressDetails[]'
+    spec.typeScript:
+      - uid: 'outlook!Office.Recipients:interface'
+        name: Recipients
+        fullName: Office.Recipients
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'outlook!Office.EmailAddressDetails:interface'
+        name: EmailAddressDetails
+        fullName: Office.EmailAddressDetails
+      - name: '[]'
+        fullName: '[]'
