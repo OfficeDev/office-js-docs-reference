@@ -16910,12 +16910,12 @@
               "members": [
                 {
                   "kind": "PropertySignature",
-                  "canonicalReference": "outlook!Office.RecipientsChangedEventArgs#changedRecipientsFields:member",
+                  "canonicalReference": "outlook!Office.RecipientsChangedEventArgs#changedRecipientFields:member",
                   "docComment": "/**\n * Gets an object that indicates change state of recipients fields.\n *\n * [Api set: Mailbox 1.7]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "changedRecipientsFields: "
+                      "text": "changedRecipientFields: "
                     },
                     {
                       "kind": "Reference",
@@ -16928,7 +16928,7 @@
                     }
                   ],
                   "releaseTag": "Public",
-                  "name": "changedRecipientsFields",
+                  "name": "changedRecipientFields",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
@@ -16965,7 +16965,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.RecipientsChangedFields:interface",
-              "docComment": "/**\n * Represents `RecipientsChangedEventArgs.changedRecipientsFields` object.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+              "docComment": "/**\n * Represents `RecipientsChangedEventArgs.changedRecipientFields` object.\n *\n * [Api set: Mailbox 1.7]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -16975,6 +16975,52 @@
               "releaseTag": "Public",
               "name": "RecipientsChangedFields",
               "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.RecipientsChangedFields#bcc:member",
+                  "docComment": "/**\n * Gets if recipients in the **bcc** field were changed.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "bcc: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "bcc",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.RecipientsChangedFields#cc:member",
+                  "docComment": "/**\n * Gets if recipients in the **cc** field were changed.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "cc: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "cc",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.RecipientsChangedFields#optionalAttendees:member",
@@ -17045,6 +17091,31 @@
                   ],
                   "releaseTag": "Public",
                   "name": "resources",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.RecipientsChangedFields#to:member",
+                  "docComment": "/**\n * Gets if recipients in the **to** field were changed.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "to: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "to",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
@@ -19535,7 +19606,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.UserProfile#emailAddress:member",
-                  "docComment": "/**\n * Gets the user's display name.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
+                  "docComment": "/**\n * Gets the user's SMTP email address.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19560,7 +19631,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.UserProfile#timeZone:member",
-                  "docComment": "/**\n * Gets the user's SMTP email address.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
+                  "docComment": "/**\n * Gets the user's time zone.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

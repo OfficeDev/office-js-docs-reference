@@ -12,20 +12,20 @@ items:
     type: interface
     package: outlook!
     children:
-      - 'outlook!Office.RecipientsChangedEventArgs#changedRecipientsFields:member'
+      - 'outlook!Office.RecipientsChangedEventArgs#changedRecipientFields:member'
       - 'outlook!Office.RecipientsChangedEventArgs#type:member'
-  - uid: 'outlook!Office.RecipientsChangedEventArgs#changedRecipientsFields:member'
+  - uid: 'outlook!Office.RecipientsChangedEventArgs#changedRecipientFields:member'
     summary: |-
       Gets an object that indicates change state of recipients fields.
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    name: changedRecipientsFields
-    fullName: changedRecipientsFields
+    name: changedRecipientFields
+    fullName: changedRecipientFields
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'changedRecipientsFields: RecipientsChangedFields;'
+      content: 'changedRecipientFields: RecipientsChangedFields;'
       return:
         type:
           - 'outlook!Office.RecipientsChangedFields:interface'

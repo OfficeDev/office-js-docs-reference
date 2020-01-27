@@ -2,7 +2,7 @@
 items:
   - uid: 'outlook!Office.RecipientsChangedFields:interface'
     summary: |-
-      Represents `RecipientsChangedEventArgs.changedRecipientsFields` object.
+      Represents `RecipientsChangedEventArgs.changedRecipientFields` object.
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     name: Office.RecipientsChangedFields
@@ -12,9 +12,42 @@ items:
     type: interface
     package: outlook!
     children:
+      - 'outlook!Office.RecipientsChangedFields#bcc:member'
+      - 'outlook!Office.RecipientsChangedFields#cc:member'
       - 'outlook!Office.RecipientsChangedFields#optionalAttendees:member'
       - 'outlook!Office.RecipientsChangedFields#requiredAttendees:member'
       - 'outlook!Office.RecipientsChangedFields#resources:member'
+      - 'outlook!Office.RecipientsChangedFields#to:member'
+  - uid: 'outlook!Office.RecipientsChangedFields#bcc:member'
+    summary: |-
+      Gets if recipients in the **bcc** field were changed.
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    name: bcc
+    fullName: bcc
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bcc: boolean'
+      return:
+        type:
+          - boolean
+  - uid: 'outlook!Office.RecipientsChangedFields#cc:member'
+    summary: |-
+      Gets if recipients in the **cc** field were changed.
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    name: cc
+    fullName: cc
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cc: boolean;'
+      return:
+        type:
+          - boolean
   - uid: 'outlook!Office.RecipientsChangedFields#optionalAttendees:member'
     summary: |-
       Gets if optional attendees were changed.
@@ -57,6 +90,21 @@ items:
     type: property
     syntax:
       content: 'resources: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'outlook!Office.RecipientsChangedFields#to:member'
+    summary: |-
+      Gets if recipients in the **to** field were changed.
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    name: to
+    fullName: to
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'to: boolean;'
       return:
         type:
           - boolean
