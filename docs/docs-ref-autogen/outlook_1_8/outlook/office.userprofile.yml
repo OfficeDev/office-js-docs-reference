@@ -98,7 +98,7 @@ items:
         type:
           - string
   - uid: 'outlook!Office.UserProfile#emailAddress:member'
-    summary: Gets the user's display name.
+    summary: Gets the user's SMTP email address.
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -129,7 +129,7 @@ items:
         type:
           - string
   - uid: 'outlook!Office.UserProfile#timeZone:member'
-    summary: Gets the user's SMTP email address.
+    summary: Gets the user's time zone.
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
