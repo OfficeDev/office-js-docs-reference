@@ -104,13 +104,13 @@ tryCatch(async () => {
     console.log("create file: outlook.d.ts (preview)");
     fsx.writeFileSync(
         '../api-extractor-inputs-outlook/outlook.d.ts',
-        handleCommonImports(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook")
+        handleCommonImports(outlookSpecificCleanup(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Exchange APIs", "End Exchange APIs")), "Outlook")
     );
 
     console.log("create file: outlook.d.ts (release)");
     fsx.writeFileSync(
         '../api-extractor-inputs-outlook-release/outlook_1_8/outlook.d.ts',
-        handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook", true)
+        handleCommonImports(outlookSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Exchange APIs", "End Exchange APIs")), "Outlook", true)
     );
 
     console.log("create file: powerpoint.d.ts");
@@ -176,6 +176,473 @@ function excelSpecificCleanup(dtsContent: string) {
     return dtsContent.replace(/export interface .*Set {\r?\n.*Icon;/gm, `/** [Api set: ExcelApi 1.2] */\n\t$&`)
         .replace("export interface IconCollections {", "/** [Api set: ExcelApi 1.2] */\n\texport interface IconCollections {")
         .replace("var icons: IconCollections;", "/** [Api set: ExcelApi 1.2] */\n\tvar icons: IconCollections;");
+}
+
+function outlookSpecificCleanup(dtsContent: string) {
+    // Use dtsContent to handle Item then merge in other updated objects.
+    let dtsContentForAppointment: string = dtsContent;
+    let dtsContentForMessage: string = dtsContent;
+    let dtsContentForItemCompose: string = dtsContent;
+    let dtsContentForItemRead: string = dtsContent;
+    let dtsContentForAppointmentCompose: string = dtsContent;
+    let dtsContentForAppointmentRead: string = dtsContent;
+    let dtsContentForMessageCompose: string = dtsContent;
+    let dtsContentForMessageRead: string = dtsContent;
+
+    /** ITEM */
+    // Initial Item details.
+    let itemInterface = dtsContent.indexOf("interface Item ");
+    let itemStart = dtsContent.indexOf("{", itemInterface);
+    let itemEnd = dtsContent.indexOf("    }", itemStart);
+
+    // Copy contents of Appointment interface to Item.
+    let appointmentInterface = dtsContent.indexOf("interface Appointment ");
+    let appointmentStart = dtsContent.indexOf("{", appointmentInterface);
+    let appointmentEnd = dtsContent.indexOf("    }", appointmentStart);
+    let appointment = dtsContent.substring(appointmentStart + 1, appointmentEnd - 1);
+
+    dtsContent = dtsContent.substring(0, itemEnd - 1) + appointment + dtsContent.substring(itemEnd);
+
+    // Copy contents of Message interface to Item.
+    itemEnd = dtsContent.indexOf("    }", itemStart);
+
+    let messageInterface = dtsContent.indexOf("interface Message ");
+    let messageStart = dtsContent.indexOf("{", messageInterface);
+    let messageEnd = dtsContent.indexOf("    }", messageStart);
+    let message = dtsContent.substring(messageStart + 1, messageEnd - 1);
+
+    dtsContent = dtsContent.substring(0, itemEnd - 1) + message + dtsContent.substring(itemEnd);
+
+    // Copy contents of ItemCompose interface to Item.
+    itemEnd = dtsContent.indexOf("    }", itemStart);
+
+    let itemComposeInterface = dtsContent.indexOf("interface ItemCompose ");
+    let itemComposeStart = dtsContent.indexOf("{", itemComposeInterface);
+    let itemComposeEnd = dtsContent.indexOf("    }", itemComposeStart);
+    let itemCompose = dtsContent.substring(itemComposeStart + 1, itemComposeEnd - 1);
+
+    dtsContent = dtsContent.substring(0, itemEnd - 1) + itemCompose + dtsContent.substring(itemEnd);
+
+    // Copy contents of ItemRead interface to Item.
+    itemEnd = dtsContent.indexOf("    }", itemStart);
+
+    let itemReadInterface = dtsContent.indexOf("interface ItemRead ");
+    let itemReadStart = dtsContent.indexOf("{", itemReadInterface);
+    let itemReadEnd = dtsContent.indexOf("    }", itemReadStart);
+    let itemRead = dtsContent.substring(itemReadStart + 1, itemReadEnd - 1);
+
+    dtsContent = dtsContent.substring(0, itemEnd - 1) + itemRead + dtsContent.substring(itemEnd);
+
+    // Copy contents of AppointmentCompose interface to Item.
+    itemEnd = dtsContent.indexOf("    }", itemStart);
+
+    let appointmentComposeInterface = dtsContent.indexOf("interface AppointmentCompose ");
+    let appointmentComposeStart = dtsContent.indexOf("{", appointmentComposeInterface);
+    let appointmentComposeEnd = dtsContent.indexOf("    }", appointmentComposeStart);
+    let appointmentCompose = dtsContent.substring(appointmentComposeStart + 1, appointmentComposeEnd - 1);
+
+    dtsContent = dtsContent.substring(0, itemEnd - 1) + appointmentCompose + dtsContent.substring(itemEnd);
+
+    // Copy contents of AppointmentRead interface to Item.
+    itemEnd = dtsContent.indexOf("    }", itemStart);
+
+    let appointmentReadInterface = dtsContent.indexOf("interface AppointmentRead ");
+    let appointmentReadStart = dtsContent.indexOf("{", appointmentReadInterface);
+    let appointmentReadEnd = dtsContent.indexOf("    }", appointmentReadStart);
+    let appointmentRead = dtsContent.substring(appointmentReadStart + 1, appointmentReadEnd - 1);
+
+    dtsContent = dtsContent.substring(0, itemEnd - 1) + appointmentRead + dtsContent.substring(itemEnd);
+
+    // Copy contents of MessageCompose interface to Item.
+    itemEnd = dtsContent.indexOf("    }", itemStart);
+
+    let messageComposeInterface = dtsContent.indexOf("interface MessageCompose ");
+    let messageComposeStart = dtsContent.indexOf("{", messageComposeInterface);
+    let messageComposeEnd = dtsContent.indexOf("    }", messageComposeStart);
+    let messageCompose = dtsContent.substring(messageComposeStart + 1, messageComposeEnd - 1);
+
+    dtsContent = dtsContent.substring(0, itemEnd - 1) + messageCompose + dtsContent.substring(itemEnd);
+
+    // Copy contents of MessageRead interface to Item.
+    itemEnd = dtsContent.indexOf("    }", itemStart);
+
+    let messageReadInterface = dtsContent.indexOf("interface MessageRead ");
+    let messageReadStart = dtsContent.indexOf("{", messageReadInterface);
+    let messageReadEnd = dtsContent.indexOf("    }", messageReadStart);
+    let messageRead = dtsContent.substring(messageReadStart + 1, messageReadEnd - 1);
+
+    dtsContent = dtsContent.substring(0, itemEnd - 1) + messageRead + dtsContent.substring(itemEnd);
+
+    /** APPOINTMENT */
+    // Initial Appointment details.
+    appointmentInterface = dtsContentForAppointment.indexOf("interface Appointment ");
+    appointmentStart = dtsContentForAppointment.indexOf("{", appointmentInterface);
+    appointmentEnd = dtsContentForAppointment.indexOf("    }", appointmentStart);
+
+    // Copy original contents of Item Interface to Appointment.
+    itemInterface = dtsContentForAppointment.indexOf("interface Item ");
+    itemStart = dtsContentForAppointment.indexOf("{", itemInterface);
+    itemEnd = dtsContentForAppointment.indexOf("    }", itemStart);
+    let item = dtsContentForAppointment.substring(itemStart + 1, itemEnd - 1);
+
+    dtsContentForAppointment = dtsContentForAppointment.substring(0, appointmentEnd - 1) + item + dtsContentForAppointment.substring(appointmentEnd);
+
+    // Copy contents of AppointmentCompose to Appointment.
+    /*appointmentEnd = dtsContentForAppointment.indexOf("    }", appointmentStart);
+
+    appointmentComposeInterface = dtsContentForAppointment.indexOf("interface AppointmentCompose ");
+    appointmentComposeStart = dtsContentForAppointment.indexOf("{", appointmentComposeInterface);
+    appointmentComposeEnd = dtsContentForAppointment.indexOf("    }", appointmentComposeStart);
+    appointmentCompose = dtsContentForAppointment.substring(appointmentComposeStart + 1, appointmentComposeEnd - 1);
+
+    dtsContentForAppointment = dtsContentForAppointment.substring(0, appointmentEnd - 1) + appointmentCompose + dtsContentForAppointment.substring(appointmentEnd);
+
+    // Copy contents of AppointmentRead to Appointment.
+    appointmentEnd = dtsContentForAppointment.indexOf("    }", appointmentStart);
+
+    appointmentReadInterface = dtsContentForAppointment.indexOf("interface AppointmentRead ");
+    appointmentReadStart = dtsContentForAppointment.indexOf("{", appointmentReadInterface);
+    appointmentReadEnd = dtsContentForAppointment.indexOf("    }", appointmentReadStart);
+    appointmentRead = dtsContentForAppointment.substring(appointmentReadStart + 1, appointmentReadEnd - 1);
+
+    dtsContentForAppointment = dtsContentForAppointment.substring(0, appointmentEnd - 1) + appointmentRead + dtsContentForAppointment.substring(appointmentEnd);*/
+
+    // Copy updated Appointment to dtsContent.
+    let appointmentInterfaceFinal = dtsContentForAppointment.indexOf("interface Appointment ");
+    let appointmentStartFinal = dtsContentForAppointment.indexOf("{", appointmentInterfaceFinal);
+    let appointmentEndFinal = dtsContentForAppointment.indexOf("    }", appointmentStartFinal);
+    let appointmentFinal = dtsContentForAppointment.substring(appointmentStartFinal + 1, appointmentEndFinal - 1);
+
+    appointmentInterface = dtsContent.indexOf("interface Appointment ");
+    appointmentStart = dtsContent.indexOf("{", appointmentInterface);
+    appointmentEnd = dtsContent.indexOf("    }", appointmentStart);
+
+    dtsContent = dtsContent.substring(0, appointmentStart + 1) + appointmentFinal + dtsContent.substring(appointmentEnd);
+
+    /** APPOINTMENTCOMPOSE */
+    // Initial AppointmentCompose details.
+    appointmentComposeInterface = dtsContentForAppointmentCompose.indexOf("interface AppointmentCompose ");
+    appointmentComposeStart = dtsContentForAppointmentCompose.indexOf("{", appointmentComposeInterface);
+    appointmentComposeEnd = dtsContentForAppointmentCompose.indexOf("    }", appointmentComposeStart);
+
+    // Copy original contents of Item Interface to AppointmentCompose.
+    itemInterface = dtsContentForAppointmentCompose.indexOf("interface Item ");
+    itemStart = dtsContentForAppointmentCompose.indexOf("{", itemInterface);
+    itemEnd = dtsContentForAppointmentCompose.indexOf("    }", itemStart);
+    item = dtsContentForAppointmentCompose.substring(itemStart + 1, itemEnd - 1);
+
+    dtsContentForAppointmentCompose = dtsContentForAppointmentCompose.substring(0, appointmentComposeEnd - 1) + item + dtsContentForAppointmentCompose.substring(appointmentComposeEnd);
+
+    // Copy contents of Appointment to AppointmentCompose.
+    appointmentComposeEnd = dtsContentForAppointmentCompose.indexOf("    }", appointmentComposeStart);
+
+    appointmentInterface = dtsContentForAppointmentCompose.indexOf("interface Appointment ");
+    appointmentStart = dtsContentForAppointmentCompose.indexOf("{", appointmentInterface);
+    appointmentEnd = dtsContentForAppointmentCompose.indexOf("    }", appointmentStart);
+    appointment = dtsContentForAppointmentCompose.substring(appointmentStart + 1, appointmentEnd - 1);
+
+    dtsContentForAppointmentCompose = dtsContentForAppointmentCompose.substring(0, appointmentComposeEnd - 1) + appointment + dtsContentForAppointmentCompose.substring(appointmentComposeEnd);
+
+    // Copy contents of ItemCompose to AppointmentCompose.
+    appointmentComposeEnd = dtsContentForAppointmentCompose.indexOf("    }", appointmentComposeStart);
+
+    itemComposeInterface = dtsContentForAppointmentCompose.indexOf("interface ItemCompose ");
+    itemComposeStart = dtsContentForAppointmentCompose.indexOf("{", itemComposeInterface);
+    itemComposeEnd = dtsContentForAppointmentCompose.indexOf("    }", itemComposeStart);
+    itemCompose = dtsContentForAppointmentCompose.substring(itemComposeStart + 1, itemComposeEnd - 1);
+
+    dtsContentForAppointmentCompose = dtsContentForAppointmentCompose.substring(0, appointmentComposeEnd - 1) + itemCompose + dtsContentForAppointmentCompose.substring(appointmentComposeEnd);
+
+    // Copy updated AppointmentCompose to dtsContent.
+    let appointmentComposeInterfaceFinal = dtsContentForAppointmentCompose.indexOf("interface AppointmentCompose ");
+    let appointmentComposeStartFinal = dtsContentForAppointmentCompose.indexOf("{", appointmentComposeInterfaceFinal);
+    let appointmentComposeEndFinal = dtsContentForAppointmentCompose.indexOf("    }", appointmentComposeStartFinal);
+    let appointmentComposeFinal = dtsContentForAppointmentCompose.substring(appointmentComposeStartFinal + 1, appointmentComposeEndFinal - 1);
+
+    appointmentComposeInterface = dtsContent.indexOf("interface AppointmentCompose ");
+    appointmentComposeStart = dtsContent.indexOf("{", appointmentComposeInterface);
+    appointmentComposeEnd = dtsContent.indexOf("    }", appointmentComposeStart);
+
+    dtsContent = dtsContent.substring(0, appointmentComposeStart + 1) + appointmentComposeFinal + dtsContent.substring(appointmentComposeEnd);
+
+    /** APPOINTMENTREAD */
+    // Initial AppointmentRead details.
+    appointmentReadInterface = dtsContentForAppointmentRead.indexOf("interface AppointmentRead ");
+    appointmentReadStart = dtsContentForAppointmentRead.indexOf("{", appointmentReadInterface);
+    appointmentReadEnd = dtsContentForAppointmentRead.indexOf("    }", appointmentReadStart);
+
+    // Copy original contents of Item Interface to AppointmentRead.
+    itemInterface = dtsContentForAppointmentRead.indexOf("interface Item ");
+    itemStart = dtsContentForAppointmentRead.indexOf("{", itemInterface);
+    itemEnd = dtsContentForAppointmentRead.indexOf("    }", itemStart);
+    item = dtsContentForAppointmentRead.substring(itemStart + 1, itemEnd - 1);
+
+    dtsContentForAppointmentRead = dtsContentForAppointmentRead.substring(0, appointmentReadEnd - 1) + item + dtsContentForAppointmentRead.substring(appointmentReadEnd);
+
+    // Copy contents of Appointment to AppointmentRead.
+    appointmentReadEnd = dtsContentForAppointmentRead.indexOf("    }", appointmentReadStart);
+
+    appointmentInterface = dtsContentForAppointmentRead.indexOf("interface Appointment ");
+    appointmentStart = dtsContentForAppointmentRead.indexOf("{", appointmentInterface);
+    appointmentEnd = dtsContentForAppointmentRead.indexOf("    }", appointmentStart);
+    appointment = dtsContentForAppointmentRead.substring(appointmentStart + 1, appointmentEnd - 1);
+
+    dtsContentForAppointmentRead = dtsContentForAppointmentRead.substring(0, appointmentReadEnd - 1) + appointment + dtsContentForAppointmentRead.substring(appointmentReadEnd);
+
+    // Copy contents of ItemRead to AppointmentRead.
+    appointmentReadEnd = dtsContentForAppointmentRead.indexOf("    }", appointmentReadStart);
+
+    itemReadInterface = dtsContentForAppointmentRead.indexOf("interface ItemRead ");
+    itemReadStart = dtsContentForAppointmentRead.indexOf("{", itemReadInterface);
+    itemReadEnd = dtsContentForAppointmentRead.indexOf("    }", itemReadStart);
+    itemRead = dtsContentForAppointmentRead.substring(itemReadStart + 1, itemReadEnd - 1);
+
+    dtsContentForAppointmentRead = dtsContentForAppointmentRead.substring(0, appointmentReadEnd - 1) + itemRead + dtsContentForAppointmentRead.substring(appointmentReadEnd);
+
+    // Copy updated AppointmentRead to dtsContent.
+    let appointmentReadInterfaceFinal = dtsContentForAppointmentRead.indexOf("interface AppointmentRead ");
+    let appointmentReadStartFinal = dtsContentForAppointmentRead.indexOf("{", appointmentReadInterfaceFinal);
+    let appointmentReadEndFinal = dtsContentForAppointmentRead.indexOf("    }", appointmentReadStartFinal);
+    let appointmentReadFinal = dtsContentForAppointmentRead.substring(appointmentReadStartFinal + 1, appointmentReadEndFinal - 1);
+
+    appointmentReadInterface = dtsContent.indexOf("interface AppointmentRead ");
+    appointmentReadStart = dtsContent.indexOf("{", appointmentReadInterface);
+    appointmentReadEnd = dtsContent.indexOf("    }", appointmentReadStart);
+
+    dtsContent = dtsContent.substring(0, appointmentReadStart + 1) + appointmentReadFinal + dtsContent.substring(appointmentReadEnd);
+
+    /** MESSAGE */
+    // Initial Message details.
+    messageInterface = dtsContentForMessage.indexOf("interface Message ");
+    messageStart = dtsContentForMessage.indexOf("{", messageInterface);
+    messageEnd = dtsContentForMessage.indexOf("    }", messageStart);
+
+    // Copy original contents of Item Interface to Message.
+    itemInterface = dtsContentForMessage.indexOf("interface Item ");
+    itemStart = dtsContentForMessage.indexOf("{", itemInterface);
+    itemEnd = dtsContentForMessage.indexOf("    }", itemStart);
+    item = dtsContentForMessage.substring(itemStart + 1, itemEnd - 1);
+
+    dtsContentForMessage = dtsContentForMessage.substring(0, messageEnd - 1) + item + dtsContentForMessage.substring(messageEnd);
+
+    // Copy contents of MessageCompose to Message.
+    /*messageEnd = dtsContentForMessage.indexOf("    }", messageStart);
+
+    messageComposeInterface = dtsContentForMessage.indexOf("interface MessageCompose ");
+    messageComposeStart = dtsContentForMessage.indexOf("{", messageComposeInterface);
+    messageComposeEnd = dtsContentForMessage.indexOf("    }", messageComposeStart);
+    messageCompose = dtsContentForMessage.substring(messageComposeStart + 1, messageComposeEnd - 1);
+
+    dtsContentForMessage = dtsContentForMessage.substring(0, messageEnd - 1) + messageCompose + dtsContentForMessage.substring(messageEnd);
+
+    // Copy contents of MessageRead to Message.
+    messageEnd = dtsContentForMessage.indexOf("    }", messageStart);
+
+    messageReadInterface = dtsContentForMessage.indexOf("interface MessageRead ");
+    messageReadStart = dtsContentForMessage.indexOf("{", messageReadInterface);
+    messageReadEnd = dtsContentForMessage.indexOf("    }", messageReadStart);
+    messageRead = dtsContentForMessage.substring(messageReadStart + 1, messageReadEnd - 1);
+
+    dtsContentForMessage = dtsContentForMessage.substring(0, messageEnd - 1) + messageRead + dtsContentForMessage.substring(messageEnd);*/
+
+    // Copy updated Message to dtsContent.
+    let messageInterfaceFinal = dtsContentForMessage.indexOf("interface Message ");
+    let messageStartFinal = dtsContentForMessage.indexOf("{", messageInterfaceFinal);
+    let messageEndFinal = dtsContentForMessage.indexOf("    }", messageStartFinal);
+    let messageFinal = dtsContentForMessage.substring(messageStartFinal + 1, messageEndFinal - 1);
+
+    messageInterface = dtsContent.indexOf("interface Message ");
+    messageStart = dtsContent.indexOf("{", messageInterface);
+    messageEnd = dtsContent.indexOf("    }", messageStart);
+
+    dtsContent = dtsContent.substring(0, messageStart + 1) + messageFinal + dtsContent.substring(messageEnd);
+
+    /** MESSAGECOMPOSE */
+    // Initial MessageCompose details.
+    messageComposeInterface = dtsContentForMessageCompose.indexOf("interface MessageCompose ");
+    messageComposeStart = dtsContentForMessageCompose.indexOf("{", messageComposeInterface);
+    messageComposeEnd = dtsContentForMessageCompose.indexOf("    }", messageComposeStart);
+
+    // Copy original contents of Item Interface to MessageCompose.
+    itemInterface = dtsContentForMessageCompose.indexOf("interface Item ");
+    itemStart = dtsContentForMessageCompose.indexOf("{", itemInterface);
+    itemEnd = dtsContentForMessageCompose.indexOf("    }", itemStart);
+    item = dtsContentForMessageCompose.substring(itemStart + 1, itemEnd - 1);
+
+    dtsContentForMessageCompose = dtsContentForMessageCompose.substring(0, messageComposeEnd - 1) + item + dtsContentForMessageCompose.substring(messageComposeEnd);
+
+    // Copy contents of Message to MessageCompose.
+    messageComposeEnd = dtsContentForMessageCompose.indexOf("    }", messageComposeStart);
+
+    messageInterface = dtsContentForMessageCompose.indexOf("interface Message ");
+    messageStart = dtsContentForMessageCompose.indexOf("{", messageInterface);
+    messageEnd = dtsContentForMessageCompose.indexOf("    }", messageStart);
+    message = dtsContentForMessageCompose.substring(messageStart + 1, messageEnd - 1);
+
+    dtsContentForMessageCompose = dtsContentForMessageCompose.substring(0, messageComposeEnd - 1) + message + dtsContentForMessageCompose.substring(messageComposeEnd);
+
+    // Copy contents of ItemCompose to MessageCompose.
+    messageComposeEnd = dtsContentForMessageCompose.indexOf("    }", messageComposeStart);
+
+    itemComposeInterface = dtsContentForMessageCompose.indexOf("interface ItemCompose ");
+    itemComposeStart = dtsContentForMessageCompose.indexOf("{", itemComposeInterface);
+    itemComposeEnd = dtsContentForMessageCompose.indexOf("    }", itemComposeStart);
+    itemCompose = dtsContentForMessageCompose.substring(itemComposeStart + 1, itemComposeEnd - 1);
+
+    dtsContentForMessageCompose = dtsContentForMessageCompose.substring(0, messageComposeEnd - 1) + itemCompose + dtsContentForMessageCompose.substring(messageComposeEnd);
+
+    // Copy updated MessageCompose to dtsContent.
+    let messageComposeInterfaceFinal = dtsContentForMessageCompose.indexOf("interface MessageCompose ");
+    let messageComposeStartFinal = dtsContentForMessageCompose.indexOf("{", messageComposeInterfaceFinal);
+    let messageComposeEndFinal = dtsContentForMessageCompose.indexOf("    }", messageComposeStartFinal);
+    let messageComposeFinal = dtsContentForMessageCompose.substring(messageComposeStartFinal + 1, messageComposeEndFinal - 1);
+
+    messageComposeInterface = dtsContent.indexOf("interface MessageCompose ");
+    messageComposeStart = dtsContent.indexOf("{", messageComposeInterface);
+    messageComposeEnd = dtsContent.indexOf("    }", messageComposeStart);
+
+    dtsContent = dtsContent.substring(0, messageComposeStart + 1) + messageComposeFinal + dtsContent.substring(messageComposeEnd);
+
+    /** MESSAGEREAD */
+    // Initial MessageRead details.
+    messageReadInterface = dtsContentForMessageRead.indexOf("interface MessageRead ");
+    messageReadStart = dtsContentForMessageRead.indexOf("{", messageReadInterface);
+    messageReadEnd = dtsContentForMessageRead.indexOf("    }", messageReadStart);
+
+    // Copy original contents of Item Interface to MessageRead.
+    itemInterface = dtsContentForMessageRead.indexOf("interface Item ");
+    itemStart = dtsContentForMessageRead.indexOf("{", itemInterface);
+    itemEnd = dtsContentForMessageRead.indexOf("    }", itemStart);
+    item = dtsContentForMessageRead.substring(itemStart + 1, itemEnd - 1);
+
+    dtsContentForMessageRead = dtsContentForMessageRead.substring(0, messageReadEnd - 1) + item + dtsContentForMessageRead.substring(messageReadEnd);
+
+    // Copy contents of Message to MessageRead.
+    messageReadEnd = dtsContentForMessageRead.indexOf("    }", messageReadStart);
+
+    messageInterface = dtsContentForMessageRead.indexOf("interface Message ");
+    messageStart = dtsContentForMessageRead.indexOf("{", messageInterface);
+    messageEnd = dtsContentForMessageRead.indexOf("    }", messageStart);
+    message = dtsContentForMessageRead.substring(messageStart + 1, messageEnd - 1);
+
+    dtsContentForMessageRead = dtsContentForMessageRead.substring(0, messageReadEnd - 1) + message + dtsContentForMessageRead.substring(messageReadEnd);
+
+    // Copy contents of ItemRead to MessageRead.
+    messageReadEnd = dtsContentForMessageRead.indexOf("    }", messageReadStart);
+
+    itemReadInterface = dtsContentForMessageRead.indexOf("interface ItemRead ");
+    itemReadStart = dtsContentForMessageRead.indexOf("{", itemReadInterface);
+    itemReadEnd = dtsContentForMessageRead.indexOf("    }", itemReadStart);
+    itemRead = dtsContentForMessageRead.substring(itemReadStart + 1, itemReadEnd - 1);
+
+    dtsContentForMessageRead = dtsContentForMessageRead.substring(0, messageReadEnd - 1) + itemRead + dtsContentForMessageRead.substring(messageReadEnd);
+
+    // Copy updated MessageRead to dtsContent.
+    let messageReadInterfaceFinal = dtsContentForMessageRead.indexOf("interface MessageRead ");
+    let messageReadStartFinal = dtsContentForMessageRead.indexOf("{", messageReadInterfaceFinal);
+    let messageReadEndFinal = dtsContentForMessageRead.indexOf("    }", messageReadStartFinal);
+    let messageReadFinal = dtsContentForMessageRead.substring(messageReadStartFinal + 1, messageReadEndFinal - 1);
+
+    messageReadInterface = dtsContent.indexOf("interface MessageRead ");
+    messageReadStart = dtsContent.indexOf("{", messageReadInterface);
+    messageReadEnd = dtsContent.indexOf("    }", messageReadStart);
+
+    dtsContent = dtsContent.substring(0, messageReadStart + 1) + messageReadFinal + dtsContent.substring(messageReadEnd);
+
+    /** ITEMCOMPOSE */
+    // Initial ItemCompose details.
+    itemComposeInterface = dtsContentForItemCompose.indexOf("interface ItemCompose ");
+    itemComposeStart = dtsContentForItemCompose.indexOf("{", itemComposeInterface);
+    itemComposeEnd = dtsContentForItemCompose.indexOf("    }", itemComposeStart);
+
+    // Copy original contents of Item Interface to ItemCompose.
+    itemInterface = dtsContentForItemCompose.indexOf("interface Item ");
+    itemStart = dtsContentForItemCompose.indexOf("{", itemInterface);
+    itemEnd = dtsContentForItemCompose.indexOf("    }", itemStart);
+    item = dtsContentForItemCompose.substring(itemStart + 1, itemEnd - 1);
+
+    dtsContentForItemCompose = dtsContentForItemCompose.substring(0, itemComposeEnd - 1) + item + dtsContentForItemCompose.substring(itemComposeEnd);
+
+    // Copy contents of AppointmentCompose to ItemCompose.
+    /*itemComposeEnd = dtsContentForItemCompose.indexOf("    }", itemComposeStart);
+
+    appointmentComposeInterface = dtsContentForItemCompose.indexOf("interface AppointmentCompose ");
+    appointmentComposeStart = dtsContentForItemCompose.indexOf("{", appointmentComposeInterface);
+    appointmentComposeEnd = dtsContentForItemCompose.indexOf("    }", appointmentComposeStart);
+    appointmentCompose = dtsContentForItemCompose.substring(appointmentComposeStart + 1, appointmentComposeEnd - 1);
+
+    dtsContentForItemCompose = dtsContentForItemCompose.substring(0, itemComposeEnd - 1) + appointmentCompose + dtsContentForItemCompose.substring(itemComposeEnd);
+
+    // Copy contents of MessageCompose to ItemCompose.
+    itemComposeEnd = dtsContentForItemCompose.indexOf("    }", itemComposeStart);
+
+    messageComposeInterface = dtsContentForItemCompose.indexOf("interface MessageCompose ");
+    messageComposeStart = dtsContentForItemCompose.indexOf("{", messageComposeInterface);
+    messageComposeEnd = dtsContentForItemCompose.indexOf("    }", messageComposeStart);
+    messageCompose = dtsContentForItemCompose.substring(messageComposeStart + 1, messageComposeEnd - 1);
+
+    dtsContentForItemCompose = dtsContentForItemCompose.substring(0, itemComposeEnd - 1) + messageCompose + dtsContentForItemCompose.substring(itemComposeEnd);*/
+
+    // Copy updated ItemCompose to dtsContent.
+    let itemComposeInterfaceFinal = dtsContentForItemCompose.indexOf("interface ItemCompose ");
+    let itemComposeStartFinal = dtsContentForItemCompose.indexOf("{", itemComposeInterfaceFinal);
+    let itemComposeEndFinal = dtsContentForItemCompose.indexOf("    }", itemComposeStartFinal);
+    let itemComposeFinal = dtsContentForItemCompose.substring(itemComposeStartFinal + 1, itemComposeEndFinal - 1);
+
+    itemComposeInterface = dtsContent.indexOf("interface ItemCompose ");
+    itemComposeStart = dtsContent.indexOf("{", itemComposeInterface);
+    itemComposeEnd = dtsContent.indexOf("    }", itemComposeStart);
+
+    dtsContent = dtsContent.substring(0, itemComposeStart + 1) + itemComposeFinal + dtsContent.substring(itemComposeEnd);
+
+    /** ITEMREAD */
+    // Initial ItemRead details.
+    itemReadInterface = dtsContentForItemRead.indexOf("interface ItemRead ");
+    itemReadStart = dtsContentForItemRead.indexOf("{", itemReadInterface);
+    itemReadEnd = dtsContentForItemRead.indexOf("    }", itemReadStart);
+
+    // Copy original contents of Item Interface to ItemRead.
+    itemInterface = dtsContentForItemRead.indexOf("interface Item ");
+    itemStart = dtsContentForItemRead.indexOf("{", itemInterface);
+    itemEnd = dtsContentForItemRead.indexOf("    }", itemStart);
+    item = dtsContentForItemRead.substring(itemStart + 1, itemEnd - 1);
+
+    dtsContentForItemRead = dtsContentForItemRead.substring(0, itemReadEnd - 1) + item + dtsContentForItemRead.substring(itemReadEnd);
+
+    // Copy contents of AppointmentRead to ItemRead.
+    /*itemReadEnd = dtsContentForItemRead.indexOf("    }", itemReadStart);
+
+    appointmentReadInterface = dtsContentForItemRead.indexOf("interface AppointmentRead ");
+    appointmentReadStart = dtsContentForItemRead.indexOf("{", appointmentReadInterface);
+    appointmentReadEnd = dtsContentForItemRead.indexOf("    }", appointmentReadStart);
+    appointmentRead = dtsContentForItemRead.substring(appointmentReadStart + 1, appointmentReadEnd - 1);
+
+    dtsContentForItemRead = dtsContentForItemRead.substring(0, itemReadEnd - 1) + appointmentRead + dtsContentForItemRead.substring(itemReadEnd);
+
+    // Copy contents of MessageRead to ItemRead.
+    itemReadEnd = dtsContentForItemRead.indexOf("    }", itemReadStart);
+
+    messageReadInterface = dtsContentForItemRead.indexOf("interface MessageRead ");
+    messageReadStart = dtsContentForItemRead.indexOf("{", messageReadInterface);
+    messageReadEnd = dtsContentForItemRead.indexOf("    }", messageReadStart);
+    messageRead = dtsContentForItemRead.substring(messageReadStart + 1, messageReadEnd - 1);
+
+    dtsContentForItemRead = dtsContentForItemRead.substring(0, itemReadEnd - 1) + messageRead + dtsContentForItemRead.substring(itemReadEnd);*/
+
+    // Copy updated ItemRead to dtsContent.
+    let itemReadInterfaceFinal = dtsContentForItemRead.indexOf("interface ItemRead ");
+    let itemReadStartFinal = dtsContentForItemRead.indexOf("{", itemReadInterfaceFinal);
+    let itemReadEndFinal = dtsContentForItemRead.indexOf("    }", itemReadStartFinal);
+    let itemReadFinal = dtsContentForItemRead.substring(itemReadStartFinal + 1, itemReadEndFinal - 1);
+
+    itemReadInterface = dtsContent.indexOf("interface ItemRead ");
+    itemReadStart = dtsContent.indexOf("{", itemReadInterface);
+    itemReadEnd = dtsContent.indexOf("    }", itemReadStart);
+
+    dtsContent = dtsContent.substring(0, itemReadStart + 1) + itemReadFinal + dtsContent.substring(itemReadEnd);
+
+
+    return dtsContent;
 }
 
 function wordSpecificCleanup(dtsContent: string) {
