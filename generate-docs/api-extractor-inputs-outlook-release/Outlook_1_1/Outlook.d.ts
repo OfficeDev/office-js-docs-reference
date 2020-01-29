@@ -3795,7 +3795,7 @@ export declare namespace Office {
          */
         emailAddress: string;
         /**
-         * Gets the user's time zone.
+         * Gets the user's time zone in Windows format.
          *
          * @remarks
          * 

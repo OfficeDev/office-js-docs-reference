@@ -15,7 +15,7 @@ items:
       - 'excel!Excel.WorkbookAutoSaveSettingChangedEventArgs#type:member'
   - uid: 'excel!Excel.WorkbookAutoSaveSettingChangedEventArgs#type:member'
     summary: |-
-      Represents the type of the event. See Excel.EventType for details.
+      Gets the type of the event. See Excel.EventType for details.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
