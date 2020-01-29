@@ -230,11 +230,10 @@ export declare namespace Visio {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Visio.Application;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Application;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.Application;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Visio.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
@@ -329,11 +328,10 @@ export declare namespace Visio {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Visio.Document;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Document;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.Document;
         /**
          *
          * Occurs when the data is refreshed in the diagram.
@@ -473,11 +471,10 @@ export declare namespace Visio {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Visio.DocumentView;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.DocumentView;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.DocumentView;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Visio.DocumentView object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.DocumentViewData`) that contains shallow copies of any loaded child properties from the original object.
@@ -598,11 +595,10 @@ export declare namespace Visio {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Visio.Page;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Page;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.Page;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Visio.Page object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.PageData`) that contains shallow copies of any loaded child properties from the original object.
@@ -708,11 +704,10 @@ export declare namespace Visio {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Visio.PageView;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.PageView;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.PageView;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Visio.PageView object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.PageViewData`) that contains shallow copies of any loaded child properties from the original object.
@@ -943,11 +938,10 @@ export declare namespace Visio {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Visio.Shape;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Shape;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.Shape;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Visio.Shape object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ShapeData`) that contains shallow copies of any loaded child properties from the original object.
@@ -1052,11 +1046,10 @@ export declare namespace Visio {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Visio.ShapeView;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.ShapeView;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.ShapeView;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Visio.ShapeView object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ShapeViewData`) that contains shallow copies of any loaded child properties from the original object.
@@ -1256,11 +1249,10 @@ export declare namespace Visio {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Visio.ShapeDataItem;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.ShapeDataItem;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.ShapeDataItem;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Visio.ShapeDataItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ShapeDataItemData`) that contains shallow copies of any loaded child properties from the original object.
@@ -1380,11 +1372,10 @@ export declare namespace Visio {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Visio.Hyperlink;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Hyperlink;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.Hyperlink;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Visio.Hyperlink object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.HyperlinkData`) that contains shallow copies of any loaded child properties from the original object.
@@ -1511,11 +1502,10 @@ export declare namespace Visio {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Visio.Comment;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Comment;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.Comment;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Visio.Comment object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.CommentData`) that contains shallow copies of any loaded child properties from the original object.
@@ -1558,11 +1548,10 @@ export declare namespace Visio {
          * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
          */
         load(propertyNames?: string | string[]): Visio.Selection;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
-         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
-         */
-        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Selection;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.Selection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Visio.Selection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.SelectionData`) that contains shallow copies of any loaded child properties from the original object.

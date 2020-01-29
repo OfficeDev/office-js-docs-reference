@@ -129,7 +129,7 @@ items:
         type:
           - string
   - uid: 'outlook!Office.UserProfile#timeZone:member'
-    summary: Gets the user's time zone.
+    summary: Gets the user's time zone in Windows format.
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
