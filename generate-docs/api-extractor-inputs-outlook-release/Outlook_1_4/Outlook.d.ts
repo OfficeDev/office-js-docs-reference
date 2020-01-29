@@ -3615,7 +3615,7 @@ export declare namespace Office {
          */
         displayName: string;
         /**
-         * Gets the user's display name.
+         * Gets the user's SMTP email address.
          *
          * @remarks
          * 
@@ -3625,7 +3625,7 @@ export declare namespace Office {
          */
         emailAddress: string;
         /**
-         * Gets the user's SMTP email address.
+         * Gets the user's time zone.
          *
          * @remarks
          * 

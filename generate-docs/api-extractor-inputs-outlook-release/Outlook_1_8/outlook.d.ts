@@ -5715,7 +5715,7 @@ export declare namespace Office {
          * 
          * [Api set: Mailbox 1.7] 
          */ 
-        changedRecipientsFields: RecipientsChangedFields; 
+        changedRecipientFields: RecipientsChangedFields; 
         /** 
          * Gets the type of the event. See `Office.EventType` for details. 
          * 
@@ -5724,29 +5724,47 @@ export declare namespace Office {
         type: "olkRecipientsChanged"; 
     } 
     /**
-     * Represents `RecipientsChangedEventArgs.changedRecipientsFields` object. 
-     * 
-     * [Api set: Mailbox 1.7] 
-     */ 
-    export interface RecipientsChangedFields { 
-        /** 
-         * Gets if optional attendees were changed. 
-         * 
-         * [Api set: Mailbox 1.7] 
-         */ 
-        optionalAttendees: boolean; 
-        /** 
-         * Gets if required attendees were changed. 
-         * 
-         * [Api set: Mailbox 1.7] 
-         */ 
-        requiredAttendees: boolean; 
-        /** 
-         * Gets if resources were changed. 
-         * 
-         * [Api set: Mailbox 1.7] 
-         */ 
-        resources: boolean; 
+     * Represents `RecipientsChangedEventArgs.changedRecipientFields` object.
+     *
+     * [Api set: Mailbox 1.7]
+     */
+    export interface RecipientsChangedFields {
+        /**
+         * Gets if recipients in the **bcc** field were changed.
+         *
+         * [Api set: Mailbox 1.7]
+         */
+        bcc: boolean
+        /**
+         * Gets if recipients in the **cc** field were changed.
+         *
+         * [Api set: Mailbox 1.7]
+         */
+        cc: boolean;
+        /**
+         * Gets if optional attendees were changed.
+         *
+         * [Api set: Mailbox 1.7]
+         */
+        optionalAttendees: boolean;
+        /**
+         * Gets if required attendees were changed.
+         *
+         * [Api set: Mailbox 1.7]
+         */
+        requiredAttendees: boolean;
+        /**
+         * Gets if resources were changed.
+         *
+         * [Api set: Mailbox 1.7]
+         */
+        resources: boolean;
+        /**
+         * Gets if recipients in the **to** field were changed.
+         *
+         * [Api set: Mailbox 1.7]
+         */
+        to: boolean;
     }
     /**
      * The recurrence object provides methods to get and set the recurrence pattern of appointments but only get the recurrence pattern of 
@@ -6654,7 +6672,7 @@ export declare namespace Office {
          */
         displayName: string;
         /**
-         * Gets the user's display name.
+         * Gets the user's SMTP email address.
          *
          * @remarks
          * 
@@ -6664,7 +6682,7 @@ export declare namespace Office {
          */
         emailAddress: string;
         /**
-         * Gets the user's SMTP email address.
+         * Gets the user's time zone.
          *
          * @remarks
          * 
