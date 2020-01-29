@@ -16,7 +16,6 @@ items:
     children:
       - 'excel!Excel.CommentReplyCollection#add:member(1)'
       - 'excel!Excel.CommentReplyCollection#add:member(2)'
-      - 'excel!Excel.CommentReplyCollection#add:member(3)'
       - 'excel!Excel.CommentReplyCollection#context:member'
       - 'excel!Excel.CommentReplyCollection#getCount:member(1)'
       - 'excel!Excel.CommentReplyCollection#getItem:member(1)'
@@ -30,7 +29,7 @@ items:
     summary: |-
       Creates a comment reply for comment.
 
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(content, contentType)'
     fullName: 'add(content, contentType)'
     langs:
@@ -59,20 +58,21 @@ items:
         - id: content
           description: >-
             The comment's content. This can be either a string or Interface CommentRichContent (e.g. for comments with
-            mentions).
+            mentions). \[Api set: ExcelApi 1.10 for string, ExcelApiOnline 1.1 for CommentRichContent object\]
           type:
             - 'excel!Excel.CommentReplyCollection#add~0:complex'
         - id: contentType
           description: >-
             Optional. The type of content contained within the comment. The default value is enum
-            `ContentType.Plain`<!-- -->.
+            `ContentType.Plain`<!-- -->. \[Api set: ExcelApi 1.10 for Enum ContentType.Plain, ExcelApiOnline 1.1 for
+            Enum ContentType.Mention\]
           type:
             - 'excel!Excel.ContentType:enum'
   - uid: 'excel!Excel.CommentReplyCollection#add:member(2)'
     summary: |-
       Creates a comment reply for comment.
 
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(content, contentTypeString)'
     fullName: 'add(content, contentTypeString)'
     langs:
@@ -88,36 +88,16 @@ items:
         - id: content
           description: >-
             The comment's content. This can be either a string or Interface CommentRichContent (e.g. for comments with
-            mentions).
+            mentions). \[Api set: ExcelApi 1.10 for string, ExcelApiOnline 1.1 for CommentRichContent object\]
           type:
             - 'excel!Excel.CommentReplyCollection#add~1:complex'
         - id: contentTypeString
           description: >-
             Optional. The type of content contained within the comment. The default value is enum
-            `ContentType.Plain`<!-- -->.
+            `ContentType.Plain`<!-- -->. \[Api set: ExcelApi 1.10 for Enum ContentType.Plain, ExcelApiOnline 1.1 for
+            Enum ContentType.Mention\]
           type:
             - '"Plain" | "Mention"'
-  - uid: 'excel!Excel.CommentReplyCollection#add:member(3)'
-    summary: |-
-      Creates a comment reply for comment.
-
-      \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: add(content)
-    fullName: add(content)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'add(content: string): Excel.CommentReply;'
-      return:
-        type:
-          - 'excel!Excel.CommentReply:class'
-        description: ''
-      parameters:
-        - id: content
-          description: The comment's plain text content.
-          type:
-            - string
   - uid: 'excel!Excel.CommentReplyCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host

@@ -43,7 +43,7 @@ items:
   - uid: 'excel!Excel.RangeFormat#adjustIndent:member(1)'
     summary: >-
       Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in
-      characters..
+      characters.
 
 
       \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

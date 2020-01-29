@@ -14797,7 +14797,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "excel!Excel.CommentMention#id:member",
-                  "docComment": "/**\n * Gets or sets the id of the entity. This matches one of the ids in `CommentRichContent.richContent`.\n *\n * [Api set: ExcelApiOnline 1.1]\n */\n",
+                  "docComment": "/**\n * Gets or sets the id of the entity. The id matches one of the ids in `CommentRichContent.richContent`.\n *\n * [Api set: ExcelApiOnline 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -31581,7 +31581,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableCollectionLoadOptions#name:member",
-                      "docComment": "/**\n * For EACH ITEM in the collection: Name of the table.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * For EACH ITEM in the collection: Name of the table.\n *\n * The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -32380,7 +32380,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableData#name:member",
-                      "docComment": "/**\n * Name of the table.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Name of the table.\n *\n * The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -32602,7 +32602,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableLoadOptions#name:member",
-                      "docComment": "/**\n * Name of the table.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Name of the table.\n *\n * The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -33354,7 +33354,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.TableUpdateData#name:member",
-                      "docComment": "/**\n * Name of the table.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * Name of the table.\n *\n * The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -39092,7 +39092,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "excel!Excel.RangeFormat#adjustIndent:member(1)",
-                  "docComment": "/**\n * Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in characters..\n *\n * [Api set: ExcelApiOnline 1.1]\n *\n * @param amount - The number of character spaces by which the current indent is adjusted. This value should be between -250 and 250. *Note**: If the amount would raise the indent level above 250, the indent level stays with 250. Similarly, if the amount would lower the indent level below 0, the indent level stays 0.\n */\n",
+                  "docComment": "/**\n * Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in characters.\n *\n * [Api set: ExcelApiOnline 1.1]\n *\n * @param amount - The number of character spaces by which the current indent is adjusted. This value should be between -250 and 250. *Note**: If the amount would raise the indent level above 250, the indent level stays with 250. Similarly, if the amount would lower the indent level below 0, the indent level stays 0.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -41127,7 +41127,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.Table#name:member",
-                  "docComment": "/**\n * The name of the table. When setting the name of the table, you must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * Name of the table.\n *\n * The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

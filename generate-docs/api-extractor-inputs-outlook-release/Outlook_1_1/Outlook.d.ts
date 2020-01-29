@@ -299,7 +299,8 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer, Appointment Attendee, or Message Read (meeting request)
          */
-        start: Time | Date;
+        start: Time | Date;
+
          /**
          * Gets an object that provides methods for manipulating the body of an item.
          *
@@ -393,7 +394,8 @@ export declare namespace Office {
      * - {@link Office.Appointment | Appointment}
      */
     export interface AppointmentCompose extends Appointment, ItemCompose {
-        
+        
+
          /**
          * Gets an object that provides methods for manipulating the body of an item.
          *
@@ -986,7 +988,8 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Attendee
          */
-        organizer: EmailAddressDetails;
+        organizer: EmailAddressDetails;
+
          /**
          * Gets an object that provides methods for manipulating the body of an item.
          *
@@ -2098,7 +2101,8 @@ export declare namespace Office {
          */
         loadCustomPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<CustomProperties>) => void, userContext?: any): void;
         
-        
+        
+
         /**
          * Gets or sets the date and time that the appointment is to end.
          *
@@ -2913,7 +2917,8 @@ export declare namespace Office {
         start: Date;
 
         
-            }
+        
+    }
     /**
      * The compose mode of {@link Office.Item | Office.context.mailbox.item}.
      * 
@@ -3133,7 +3138,8 @@ export declare namespace Office {
         
         
         
-        
+        
+
          /**
          * Gets an object that provides methods for manipulating the body of an item.
          *
@@ -3533,7 +3539,8 @@ export declare namespace Office {
          */
         getRegExMatchesByName(name: string): string[];
         
-        
+        
+
          /**
          * Gets an object that provides methods for manipulating the body of an item.
          *
@@ -4211,7 +4218,8 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose or Message Read
          */
-        to: Recipients | EmailAddressDetails[];
+        to: Recipients | EmailAddressDetails[];
+
          /**
          * Gets an object that provides methods for manipulating the body of an item.
          *
@@ -4324,7 +4332,8 @@ export declare namespace Office {
          */
         bcc: Recipients;
         
-        
+        
+
          /**
          * Gets an object that provides methods for manipulating the body of an item.
          *
@@ -4777,7 +4786,8 @@ export declare namespace Office {
         start: Date;
 
         
-        
+        
+
          /**
          * Gets an object that provides methods for manipulating the body of an item.
          *

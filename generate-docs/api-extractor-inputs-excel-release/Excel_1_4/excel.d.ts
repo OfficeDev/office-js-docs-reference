@@ -2534,8 +2534,9 @@ export declare namespace Excel {
         
         /**
          *
-         * The name of the table.
-         * When setting the name of the table, you must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+         * Name of the table.
+            
+             The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -3158,7 +3159,7 @@ export declare namespace Excel {
         set(properties: Excel.RangeFormat): void;
         /**
          *
-         * Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in characters..
+         * Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in characters.
          *
          * [Api set: ExcelApiOnline 1.1]
          *
@@ -6331,7 +6332,7 @@ export declare namespace Excel {
         email: string;
         /**
          *
-         * Gets or sets the id of the entity. This matches one of the ids in `CommentRichContent.richContent`.
+         * Gets or sets the id of the entity. The id matches one of the ids in `CommentRichContent.richContent`.
          *
          * [Api set: ExcelApiOnline 1.1]
          */
@@ -11042,6 +11043,8 @@ export declare namespace Excel {
             /**
              *
              * Name of the table.
+            
+             The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -13132,6 +13135,8 @@ export declare namespace Excel {
             /**
              *
              * Name of the table.
+            
+             The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -15756,6 +15761,8 @@ export declare namespace Excel {
             /**
              *
              * For EACH ITEM in the collection: Name of the table.
+            
+             The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -15870,6 +15877,8 @@ export declare namespace Excel {
             /**
              *
              * Name of the table.
+            
+             The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
              *
              * [Api set: ExcelApi 1.1]
              */

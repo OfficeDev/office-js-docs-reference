@@ -1340,7 +1340,8 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer, Appointment Attendee, or Message Read (meeting request)
          */
-        start: Time | Date;
+        start: Time | Date;
+
          /**
          * Gets an object that provides methods for manipulating the body of an item.
          *
@@ -1657,7 +1658,8 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
          */
-        organizer: Organizer;
+        organizer: Organizer;
+
          /**
          * Gets an object that provides methods for manipulating the body of an item.
          *
@@ -2852,7 +2854,8 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Attendee
          */
-        organizer: EmailAddressDetails;
+        organizer: EmailAddressDetails;
+
          /**
          * Gets an object that provides methods for manipulating the body of an item.
          *
@@ -5138,7 +5141,8 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
-        removeHandlerAsync(eventType: CommonAPI.EventType | string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: CommonAPI.EventType | string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+
         /**
          * Gets or sets the date and time that the appointment is to end.
          *
@@ -6488,7 +6492,8 @@ export declare namespace Office {
          *                Refer to {@link https://tools.ietf.org/html/rfc2183 | RFC 2183} for the formatting information of the returned string value. 
          *                If the call fails, the asyncResult.error property will contain an error code with the reason for the failure.
          */
-        getAllInternetHeadersAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;    }
+        getAllInternetHeadersAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+    }
     /**
      * The compose mode of {@link Office.Item | Office.context.mailbox.item}.
      * 
@@ -7060,7 +7065,8 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
          */
-        setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        setSelectedDataAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+
          /**
          * Gets an object that provides methods for manipulating the body of an item.
          *
@@ -7714,7 +7720,8 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Attendee or Message Read
          */
-        getSelectedRegExMatches(): any;
+        getSelectedRegExMatches(): any;
+
          /**
          * Gets an object that provides methods for manipulating the body of an item.
          *
@@ -9034,7 +9041,8 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose or Message Read
          */
-        to: Recipients | EmailAddressDetails[];
+        to: Recipients | EmailAddressDetails[];
+
          /**
          * Gets an object that provides methods for manipulating the body of an item.
          *
@@ -9386,7 +9394,8 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
          */
-        internetHeaders: InternetHeaders;
+        internetHeaders: InternetHeaders;
+
          /**
          * Gets an object that provides methods for manipulating the body of an item.
          *
@@ -10458,7 +10467,8 @@ export declare namespace Office {
          *                Refer to {@link https://tools.ietf.org/html/rfc2183 | RFC 2183} for the formatting information of the returned string value. 
          *                If the call fails, the asyncResult.error property will contain an error code with the reason for the failure.
          */
-        getAllInternetHeadersAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        getAllInternetHeadersAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+
          /**
          * Gets an object that provides methods for manipulating the body of an item.
          *

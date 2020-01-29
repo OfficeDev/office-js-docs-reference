@@ -245,7 +245,7 @@ items:
                       }
   - uid: 'excel!Excel.TextFrame#orientation:member'
     summary: |-
-      Represents the text orientation of the text frame. See Excel.ShapeTextOrientation for details.
+      Represents the angle to which the text is oriented for the text frame. See Excel.ShapeTextOrientation for details.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: orientation
