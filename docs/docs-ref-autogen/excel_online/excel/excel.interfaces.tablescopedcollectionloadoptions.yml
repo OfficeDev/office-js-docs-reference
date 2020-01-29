@@ -138,8 +138,13 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#name:member'
-    summary: |-
+    summary: >-
       For EACH ITEM in the collection: Name of the table.
+
+
+      The set name of the table must follow the guidelines specified in the [Rename an Excel
+      table](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114) article.
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
