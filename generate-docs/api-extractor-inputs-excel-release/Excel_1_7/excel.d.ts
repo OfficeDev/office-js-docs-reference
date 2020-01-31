@@ -1828,7 +1828,6 @@ export declare namespace Excel {
         /**
          *
          * Represents the formula in A1-style notation.
-            When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -1836,7 +1835,6 @@ export declare namespace Excel {
         /**
          *
          * Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
-            When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -1844,7 +1842,6 @@ export declare namespace Excel {
         /**
          *
          * Represents the formula in R1C1-style notation.
-            When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -1883,7 +1880,6 @@ export declare namespace Excel {
         /**
          *
          * Represents Excel's number format code for the given range.
-            When setting number format to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -1891,8 +1887,6 @@ export declare namespace Excel {
         /**
          *
          * Represents Excel's number format code for the given range, based on the language settings of the user.​
-            When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array.
-            If the argument is a single value, it will be applied to all cells in the range.​
             Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
             Any returned text uses the locally-formatted strings based on the language specified in the system settings.
          *
@@ -1947,7 +1941,6 @@ export declare namespace Excel {
         /**
          *
          * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
-            When setting values to a range, the value argument can be either a single value (string, number or boolean) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -3413,8 +3406,9 @@ export declare namespace Excel {
         
         /**
          *
-         * The name of the table.
-         * When setting the name of the table, you must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+         * Name of the table.
+            
+             The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -4079,7 +4073,7 @@ export declare namespace Excel {
         set(properties: Excel.RangeFormat): void;
         /**
          *
-         * Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in characters..
+         * Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in characters.
          *
          * [Api set: ExcelApiOnline 1.1]
          *
@@ -6867,7 +6861,7 @@ export declare namespace Excel {
         text: string;
         /**
          *
-         * Represents the text orientation of chart title. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.
+         * Represents the angle to which the text is oriented for the chart title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -10796,7 +10790,7 @@ export declare namespace Excel {
         email: string;
         /**
          *
-         * Gets or sets the id of the entity. This matches one of the ids in `CommentRichContent.richContent`.
+         * Gets or sets the id of the entity. The id matches one of the ids in `CommentRichContent.richContent`.
          *
          * [Api set: ExcelApiOnline 1.1]
          */
@@ -16196,7 +16190,6 @@ export declare namespace Excel {
             /**
              *
              * Represents the formula in A1-style notation.
-            When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -16204,7 +16197,6 @@ export declare namespace Excel {
             /**
              *
              * Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
-            When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -16212,7 +16204,6 @@ export declare namespace Excel {
             /**
              *
              * Represents the formula in R1C1-style notation.
-            When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -16227,7 +16218,6 @@ export declare namespace Excel {
             /**
              *
              * Represents Excel's number format code for the given range.
-            When setting number format to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -16235,8 +16225,6 @@ export declare namespace Excel {
             /**
              *
              * Represents Excel's number format code for the given range, based on the language settings of the user.​
-            When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array.
-            If the argument is a single value, it will be applied to all cells in the range.​
             Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
             Any returned text uses the locally-formatted strings based on the language specified in the system settings.
              *
@@ -16262,7 +16250,6 @@ export declare namespace Excel {
             /**
              *
              * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
-            When setting values to a range, the value argument can be either a single value (string, number or boolean) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -16389,6 +16376,8 @@ export declare namespace Excel {
             /**
              *
              * Name of the table.
+            
+             The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -17616,7 +17605,7 @@ export declare namespace Excel {
             text?: string;
             /**
              *
-             * Represents the text orientation of chart title. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.
+             * Represents the angle to which the text is oriented for the chart title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -19249,7 +19238,6 @@ export declare namespace Excel {
             /**
              *
              * Represents the formula in A1-style notation.
-            When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -19257,7 +19245,6 @@ export declare namespace Excel {
             /**
              *
              * Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
-            When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -19265,7 +19252,6 @@ export declare namespace Excel {
             /**
              *
              * Represents the formula in R1C1-style notation.
-            When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -19304,7 +19290,6 @@ export declare namespace Excel {
             /**
              *
              * Represents Excel's number format code for the given range.
-            When setting number format to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -19312,8 +19297,6 @@ export declare namespace Excel {
             /**
              *
              * Represents Excel's number format code for the given range, based on the language settings of the user.​
-            When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array.
-            If the argument is a single value, it will be applied to all cells in the range.​
             Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
             Any returned text uses the locally-formatted strings based on the language specified in the system settings.
              *
@@ -19368,7 +19351,6 @@ export declare namespace Excel {
             /**
              *
              * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
-            When setting values to a range, the value argument can be either a single value (string, number or boolean) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -19659,6 +19641,8 @@ export declare namespace Excel {
             /**
              *
              * Name of the table.
+            
+             The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -21033,7 +21017,7 @@ export declare namespace Excel {
             text?: string;
             /**
              *
-             * Represents the text orientation of chart title. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.
+             * Represents the angle to which the text is oriented for the chart title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -22983,7 +22967,6 @@ export declare namespace Excel {
             /**
              *
              * Represents the formula in A1-style notation.
-            When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -22991,7 +22974,6 @@ export declare namespace Excel {
             /**
              *
              * Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
-            When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -22999,7 +22981,6 @@ export declare namespace Excel {
             /**
              *
              * Represents the formula in R1C1-style notation.
-            When setting formulas to a range, the value argument can be either a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -23038,7 +23019,6 @@ export declare namespace Excel {
             /**
              *
              * Represents Excel's number format code for the given range.
-            When setting number format to a range, the value argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -23046,8 +23026,6 @@ export declare namespace Excel {
             /**
              *
              * Represents Excel's number format code for the given range, based on the language settings of the user.​
-            When setting number format local to a range, the value argument can be either a single value (string) or a two-dimensional array.
-            If the argument is a single value, it will be applied to all cells in the range.​
             Excel does not perform any language or format coercion when getting or setting the `numberFormatLocal` property.
             Any returned text uses the locally-formatted strings based on the language specified in the system settings.
              *
@@ -23102,7 +23080,6 @@ export declare namespace Excel {
             /**
              *
              * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
-            When setting values to a range, the value argument can be either a single value (string, number or boolean) or a two-dimensional array. If the argument is a single value, it will be applied to all cells in the range.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -23647,6 +23624,8 @@ export declare namespace Excel {
             /**
              *
              * For EACH ITEM in the collection: Name of the table.
+            
+             The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -23761,6 +23740,8 @@ export declare namespace Excel {
             /**
              *
              * Name of the table.
+            
+             The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -25816,7 +25797,7 @@ export declare namespace Excel {
             text?: boolean;
             /**
              *
-             * Represents the text orientation of chart title. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.
+             * Represents the angle to which the text is oriented for the chart title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
              *
              * [Api set: ExcelApi 1.7]
              */
