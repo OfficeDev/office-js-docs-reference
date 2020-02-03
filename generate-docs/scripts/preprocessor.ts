@@ -16,7 +16,7 @@ tryCatch(async () => {
         message: `What is the source of the Office-js TypeScript definition files that should be used to generate the docs?`,
         choices: [
             { name: "DefinitelyTyped", value: "DT" },
-            { name: "CDN", value: "CDN" },
+            { name: "CDN (if available)", value: "CDN" },
             { name: "Local files [generate-docs\\script-inputs\\*.d.ts]", value: "Local" }
         ]
     });
