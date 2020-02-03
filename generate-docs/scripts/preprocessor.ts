@@ -17,7 +17,7 @@ tryCatch(async () => {
         choices: [
             { name: "DefinitelyTyped", value: "DT" },
             { name: "CDN", value: "CDN" },
-            { name: "Local file [generate-docs\\script-inputs\\*.d.ts]", value: "Local" }
+            { name: "Local files [generate-docs\\script-inputs\\*.d.ts]", value: "Local" }
         ]
     });
 
