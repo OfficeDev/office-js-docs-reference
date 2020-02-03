@@ -33,7 +33,7 @@ Older versions of the APIs have their own d.ts files. These are preserved when a
 
 #### Locally testing type definition file changes
 
-Any documentation changes for the Office JavaScript API are done by editing the four d.ts files mentioned above. However, you are able to test a change before submitting a PR to DefinitelyTyped (if you need to, for example, test how your formatting will translate into markdown) by editing the corresponding file in [generate-docs/script-inputs](https://github.com/OfficeDev/office-js-docs-reference/tree/master/generate-docs/script-inputs) and running [GenerateDocs.cmd](https://github.com/OfficeDev/office-js-docs-reference/blob/master/generate-docs/GenerateDocs.cmd). When prompted, selected the "Local files" option.
+Any documentation changes for the Office JavaScript API are done by editing the four d.ts files mentioned above. However, you can test a change before submitting a PR to DefinitelyTyped (if you need to, for example, test how your formatting will translate into markdown) by editing the corresponding file in [generate-docs/script-inputs](https://github.com/OfficeDev/office-js-docs-reference/tree/master/generate-docs/script-inputs) and running [GenerateDocs.cmd](https://github.com/OfficeDev/office-js-docs-reference/blob/master/generate-docs/GenerateDocs.cmd). When prompted, select the "Local files" option.
 
 Pushing changes to a remote branch of this repo causes the docs.microsoft.com platform to build a test branch. This branch is rendered on review.docs.microsoft.com, which is only accessible by internal Microsoft personnel. Anyone reviewing your PR will check the review site for accuracy.
 
