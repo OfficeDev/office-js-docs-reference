@@ -10,60 +10,56 @@ tryCatch(async () => {
     // Display prompts
     // ----
     console.log('\n\n');
-    const urlToCopyOfficeJsFrom = await promptFromList({
-        message: `What is the source of the Office-js TypeScript definition file that should be used to generate the RELEASE docs?`,
-        choices: [
-            { name: "DefinitelyTyped", value: "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts" },
-            { name: "Prod CDN", value: "https://appsforoffice.officeapps.live.com/lib/1.1/hosted/office.d.ts" },
-            { name: "Local file [generate-docs\\script-inputs\\office.d.ts]", value: "" }
-        ]
 
+    console.log('\n');
+    const sourceChoice = await promptFromList({
+        message: `What is the source of the Office-js TypeScript definition files that should be used to generate the docs?`,
+        choices: [
+            { name: "DefinitelyTyped", value: "DT" },
+            { name: "CDN (if available)", value: "CDN" },
+            { name: "Local files [generate-docs\\script-inputs\\*.d.ts]", value: "Local" }
+        ]
+    });
+
+
+    let urlToCopyOfficeJsFrom = "";
+    let urlToCopyPreviewOfficeJsFrom = "";
+    let urlToCopyCustomFunctionsRuntimeFrom = "";
+    let urlToCopyOfficeRuntimeFrom = "";
+    
+    switch (sourceChoice) {
+        case "DT":
+            urlToCopyOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts"
+            urlToCopyPreviewOfficeJsFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js-preview/index.d.ts"
+            urlToCopyCustomFunctionsRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/custom-functions-runtime/index.d.ts"
+            urlToCopyOfficeRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-runtime/index.d.ts"
+            break;
+        case "CDN":
+            urlToCopyOfficeJsFrom = "https://appsforoffice.officeapps.live.com/lib/1.1/hosted/office.d.ts"
+            urlToCopyPreviewOfficeJsFrom = "https://appsforoffice.officeapps.live.com/lib/beta/hosted/office.d.ts"
+            urlToCopyCustomFunctionsRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/custom-functions-runtime/index.d.ts"
+            urlToCopyOfficeRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-runtime/index.d.ts"
+            break;
         // Note: using "appsforoffice.officeapps.live.com" instead of "appsforoffice.microsoft.com"
         //     to avoid being redirected to the EDOG environment on corpnet.
         // If we ever want to generate not just public d.ts but also "office-with-first-party.d.ts",
         //     replace the filename.
-    });
+    }
 
-    console.log('\n');
-    const urlToCopyPreviewOfficeJsFrom = await promptFromList({
-        message: `What is the source of the Office-js TypeScript definition file that should be used to generate the PREVIEW docs?`,
-        choices: [
-            { name: "DefinitelyTyped (preview)", value: "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js-preview/index.d.ts" },
-            { name: "Beta CDN", value: "https://appsforoffice.officeapps.live.com/lib/beta/hosted/office.d.ts" },
-            { name: "Local file [generate-docs\\script-inputs\\office_preview.d.ts]", value: "" }
-        ]
-    });
-
-    console.log('\n');
-    const urlToCopyCustomFunctionsRuntimeFrom = await promptFromList({
-        message: `What is the source of the Custom Functions Runtime TypeScript definition file that should be used to generate the docs?`,
-        choices: [
-            { name: "DefinitelyTyped", value: "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/custom-functions-runtime/index.d.ts" },
-            { name: "Local file [generate-docs\\script-inputs\\custom-functions-runtime.d.ts]", value: "" }
-        ]
-    });
-
-    console.log('\n');
-    const urlToCopyOfficeRuntimeFrom = await promptFromList({
-        message: `What is the source of the Office Runtime TypeScript definition file that should be used to generate the docs?`,
-        choices: [
-            { name: "DefinitelyTyped", value: "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-runtime/index.d.ts" },
-            { name: "Local file [generate-docs\\script-inputs\\office-runtime.d.ts]", value: "" }
-        ]
-    });
-
-    console.log("\nStarting preprocessor script...");
+    console.log("\nStarting preprocessor script...\n");
 
     // ----
     // Process office.d.ts
     // ----
     const localReleaseDtsPath = "../script-inputs/office.d.ts";
     if (urlToCopyOfficeJsFrom.length > 0) {
+        console.log(`Pulling Office.js TypeScript definition file from: ${urlToCopyOfficeJsFrom}`);
         fsx.writeFileSync(localReleaseDtsPath, await fetchAndThrowOnError(urlToCopyOfficeJsFrom, "text"));
     }
 
     const localPreviewDtsPath = "../script-inputs/office_preview.d.ts";
     if (urlToCopyPreviewOfficeJsFrom.length > 0) {
+        console.log(`Pulling Office.js (preview) TypeScript definition file from: ${urlToCopyPreviewOfficeJsFrom}`);
         fsx.writeFileSync(localPreviewDtsPath, await fetchAndThrowOnError(urlToCopyPreviewOfficeJsFrom, "text"));
     }
 
@@ -141,6 +137,7 @@ tryCatch(async () => {
     // Process Custom Functions d.ts
     // ----
     if (urlToCopyCustomFunctionsRuntimeFrom.length > 0) {
+        console.log(`Pulling Custom Functions TypeScript definition file from: ${urlToCopyCustomFunctionsRuntimeFrom}`);
         fsx.writeFileSync("../script-inputs/custom-functions-runtime.d.ts", await fetchAndThrowOnError(urlToCopyCustomFunctionsRuntimeFrom, "text"));
     }
     console.log(`\nReading from ${path.resolve("../script-inputs/custom-functions-runtime.d.ts")}`);
@@ -156,6 +153,7 @@ tryCatch(async () => {
     // Process Office Runtime d.ts
     // ----
     if (urlToCopyOfficeRuntimeFrom.length > 0) {
+        console.log(`Pulling Office Runtime TypeScript definition file from: ${urlToCopyOfficeRuntimeFrom}`);
         fsx.writeFileSync("../script-inputs/office-runtime.d.ts", await fetchAndThrowOnError(urlToCopyOfficeRuntimeFrom, "text"));
     }
     console.log(`\nReading from ${path.resolve("../script-inputs/office-runtime.d.ts")}`);
