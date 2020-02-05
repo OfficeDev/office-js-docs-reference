@@ -24,12 +24,18 @@ There are four relevant d.ts files that provide source content for different sub
   - [Outlook (Preview)](https://docs.microsoft.com/javascript/api/outlook)
   - [Word (Preview)](https://docs.microsoft.com/javascript/api/word)
   - [Common API](https://docs.microsoft.com/javascript/api/office)
-- [custom-functions-runtime](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/custom-functions-runtime/index.d.ts)(The Excel Custom Functions runtime definitions.)
+- [custom-functions-runtime/index.d.ts](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/custom-functions-runtime/index.d.ts)(The Excel Custom Functions runtime definitions.)
   - [Custom Functions](https://docs.microsoft.com/javascript/api/custom-functions-runtime)
-- [office-runtime](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/office-runtime/index.d.ts)(The office runtime definitions for the Custom Functions platform.)
+- [office-runtime/index.d.ts](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/office-runtime/index.d.ts)(The office runtime definitions for the Custom Functions platform.)
   - [Office Runtime](https://docs.microsoft.com/javascript/api/office-runtime)
 
 Older versions of the APIs have their own d.ts files. These are preserved when a new API requirement set is released. They can also be generated using the [Version Remover tool](https://github.com/OfficeDev/office-js-docs-reference/blob/master/generate-docs/tools/VersionRemover.ts). These old d.ts files are maintained so that in the event APIs are patched or altered, the original behavior is still documented. This is useful if you have to target an older version of the API.
+
+#### Testing type definition file changes
+
+Any documentation changes for the Office JavaScript API are done by editing the four d.ts files mentioned above. However, you can test a change before submitting a PR to DefinitelyTyped (if you need to, for example, test how your formatting will translate into markdown) by editing the corresponding file in [generate-docs/script-inputs](https://github.com/OfficeDev/office-js-docs-reference/tree/master/generate-docs/script-inputs) and running [GenerateDocs.cmd](https://github.com/OfficeDev/office-js-docs-reference/blob/master/generate-docs/GenerateDocs.cmd). When prompted, select the "Local files" option.
+
+Pushing changes to a remote branch of this repo causes the docs.microsoft.com platform to build a test branch. This branch is rendered on review.docs.microsoft.com, which is only accessible by internal Microsoft personnel. Anyone reviewing your PR will check the review site for accuracy.
 
 ### Code snippets
 

@@ -932,8 +932,8 @@ items:
       **Errors**:
 
 
-      - AttachmentTypeNotSupported: The attachment is an embedded image in Rich Text Format, or it isn't an email or
-      calendar item (such as a contact or task item).
+      - AttachmentTypeNotSupported: The attachment type isn't supported. Unsupported types include embedded images in
+      Rich Text Format, or item attachment types other than email or calendar items (such as a contact or task item).
 
 
       - InvalidAttachmentId: The attachment identifier does not exist.
@@ -1036,8 +1036,8 @@ items:
       **Errors**:
 
 
-      - AttachmentTypeNotSupported: The attachment is an embedded image in Rich Text Format, or it isn't an email or
-      calendar item (such as a contact or task item).
+      - AttachmentTypeNotSupported: The attachment type isn't supported. Unsupported types include embedded images in
+      Rich Text Format, or item attachment types other than email or calendar items (such as a contact or task item).
 
 
       - InvalidAttachmentId: The attachment identifier does not exist.

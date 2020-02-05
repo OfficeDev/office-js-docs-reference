@@ -1834,27 +1834,19 @@ export declare namespace Office {
      *
      * If you want to see IntelliSense for only a specific type or mode, cast this item to one of the following:
      *
-     * - {@link Office.Appointment | Appointment}
-     * 
      * - {@link Office.AppointmentCompose | AppointmentCompose}
      * 
      * - {@link Office.AppointmentRead | AppointmentRead}
      * 
-     * - {@link Office.Message | Message}
-     * 
      * - {@link Office.MessageCompose | MessageCompose}
      * 
      * - {@link Office.MessageRead | MessageRead}
-     * 
-     * - {@link Office.ItemCompose | ItemCompose}
-     * 
-     * - {@link Office.ItemRead | ItemRead}
      *
      * @remarks
      * 
      * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
      * 
-     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer, Appointment Attendee, Message Compose, Message Read
      */
     export interface Item {
     }
