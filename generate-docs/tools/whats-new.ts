@@ -1,4 +1,3 @@
-import { readFileSync } from "fs";
 import { promptFromList } from '../scripts/simple-prompts';
 import { fetchAndThrowOnError, DtsBuilder} from '../scripts/util';
 import * as fsx from "fs-extra";
@@ -39,7 +38,7 @@ tryCatch(async () => {
         choices: [
             { name: "Excel", value: "Excel" },
             { name: "OneNote", value: "OneNote" },
-            { name: "Outlook", value: "Mailbox" },
+            { name: "Outlook", value: "Exchange" },
             { name: "Visio", value: "Visio" },
             { name: "Word", value: "Word" }
         ]
@@ -57,8 +56,8 @@ tryCatch(async () => {
         dtsBuilder.extractDtsSection(wholePreview, "Begin " + hostName + " APIs", "End " + hostName + " APIs")
     );
 
-    const releaseAPI: APISet = parseDTS("Release", readFileSync(releaseHostFileName).toString());
-    const previewAPI: APISet = parseDTS("Preview", readFileSync(previewHostFileName).toString());
+    const releaseAPI: APISet = parseDTS("Release", fsx.readFileSync(releaseHostFileName).toString());
+    const previewAPI: APISet = parseDTS("Preview", fsx.readFileSync(previewHostFileName).toString());
     const diffAPI: APISet = previewAPI.diff(releaseAPI);
 
     const relativePath: string = "javascript/api/" + hostName.toLowerCase() + "/" + hostName.toLowerCase() + ".";
