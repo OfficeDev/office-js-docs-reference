@@ -6,6 +6,11 @@ items:
       determine the type of the item by using the `itemType` property.
 
 
+      To see the full member list, refer to the [Object
+      Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item)
+      page.
+
+
       If you want to see IntelliSense for only a specific type or mode, cast this item to one of the following:
 
 
