@@ -27,7 +27,7 @@ items:
       - 'excel!Excel.PivotTableCollection#toJSON:member(1)'
   - uid: 'excel!Excel.PivotTableCollection#add:member(1)'
     summary: |-
-      Add a Pivottable based on the specified source data and insert it at the top left cell of the destination range.
+      Add a PivotTable based on the specified source data and insert it at the top-left cell of the destination range.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(name, source, destination)'
