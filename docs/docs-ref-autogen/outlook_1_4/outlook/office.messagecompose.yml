@@ -138,6 +138,17 @@ items:
                   });
           });
       ```
+
+      ```javascript
+
+      var attachmentUrl = $("#attachmentUrl").val();
+
+      Office.context.mailbox.item.addFileAttachmentAsync(
+          attachmentUrl,
+          getFileName(attachmentUrl),
+          { "asyncContext" : { var1: 1, var2: true } },
+          function(result) { console.log(result); });
+      ```
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     fullName: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     langs:
@@ -317,6 +328,17 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      var attachmentItemId = $("#attachmentItemId").val();
+
+      Office.context.mailbox.item.addItemAttachmentAsync(
+          attachmentItemId,
+          "My attachment",
+          { "asyncContext" : { var3: 3, var4: false } },
+          function(result) { console.log(result); });
+      ```
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     fullName: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     langs:
@@ -464,6 +486,22 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.bcc.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var msgBcc = asyncResult.value;
+          console.log("Message being bcc'd to:");
+          for (var i = 0; i < msgBcc.length; i++) {
+            console.log(msgBcc[i].displayName + " (" + msgBcc[i].emailAddress + ")");
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: bcc
     fullName: bcc
     langs:
@@ -562,6 +600,22 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.cc.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var msgCc = asyncResult.value;
+          console.log("Message being copied to:");
+          for (var i = 0; i < msgCc.length; i++) {
+            console.log(msgCc[i].displayName + " (" + msgCc[i].emailAddress + ")");
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: cc
     fullName: cc
     langs:
@@ -596,6 +650,16 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
       Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.close();
+
+      ```
     name: close()
     fullName: close()
     langs:
@@ -746,6 +810,24 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
       Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var text = asyncResult.value.data;
+          var prop = asyncResult.value.sourceProperty;
+          console.log("Selected text in " + prop + ": " + text);
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: 'getSelectedDataAsync(coercionType, callback)'
     fullName: 'getSelectedDataAsync(coercionType, callback)'
     langs:
@@ -876,6 +958,27 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
+        if (result.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Loaded following custom properties:");
+          customProps = result.value;
+          var dataKey = Object.keys(customProps)[0];
+          var data = customProps[dataKey];
+          for (var propertyName in data)
+          {
+            var propertyValue = data[propertyName];
+            console.log(`${propertyName}: ${propertyValue}`);
+          }              
+        }
+        else {
+          console.error(`loadCustomPropertiesAsync failed with message ${result.error.message}`);
+        }
+      });
+
+      ```
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: 'loadCustomPropertiesAsync(callback, userContext)'
     langs:
@@ -930,6 +1033,78 @@ items:
       );
 
       ```
+
+      ```javascript
+
+      var id = $("#nofiticationId").val();
+
+      var details =
+        {
+          type: "progressIndicator",
+          message: "Progress indicator with id = " + id
+        };
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+      ```
+
+      ```javascript
+
+      var id = $("#nofiticationId").val();
+
+      var details =
+        {
+          type: "informationalMessage",
+          message: "Non-persistent informational notification message with id = " + id,
+          icon: "icon1",
+          persistent: false
+        };
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+      ```
+
+      ```javascript
+
+      var id = $("#nofiticationId").val();
+
+      var details =
+        {
+          type: "informationalMessage",
+          message: "Persistent informational notification message with id = " + id,
+          icon: "icon1",
+          persistent: true
+        };
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+
+      ```
+
+      ```javascript
+
+      var id = $("#nofiticationId").val();
+
+      Office.context.mailbox.item.notificationMessages.replaceAsync(
+        id,
+        {
+          type: "informationalMessage",
+          message: "Notification message with id = " + id + " has been replaced with an informational message.",
+          icon: "icon2",
+          persistent: false
+        },
+        handleResult);
+      ```
+
+      ```javascript
+
+      var id = $("#nofiticationId").val();
+
+      Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
+
+      ```
     name: notificationMessages
     fullName: notificationMessages
     langs:
@@ -982,6 +1157,23 @@ items:
           function (asyncResult)
           {
               console.log(asyncResult.status);
+          }
+      );
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.removeAttachmentAsync(
+          $("#attachmentId").val(),
+          { asyncContext : null },
+          function(result)
+          {
+              if (result.status !== Office.AsyncResultStatus.Succeeded) {
+                  console.error(`${result.error.message}`);
+              } else {
+                  console.log(`Attachment removed successfully.`);
+              }
           }
       );
 
@@ -1318,6 +1510,18 @@ items:
       Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.setSelectedDataAsync("Replaced", function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Selected text has been updated successfully.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: 'setSelectedDataAsync(data, callback)'
     fullName: 'setSelectedDataAsync(data, callback)'
     langs:
@@ -1420,6 +1624,22 @@ items:
       function callback(asyncResult) {
           var arrayOfToRecipients = asyncResult.value;
       }
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.to.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var msgTo = asyncResult.value;
+          console.log("Message being sent to:");
+          for (var i = 0; i < msgTo.length; i++) {
+            console.log(msgTo[i].displayName + " (" + msgTo[i].emailAddress + ")");
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
 
       ```
     name: to

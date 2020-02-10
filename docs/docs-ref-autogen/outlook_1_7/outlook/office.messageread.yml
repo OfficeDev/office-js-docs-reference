@@ -219,6 +219,14 @@ items:
       console.log(outputString);
 
       ```
+
+      ```javascript
+
+      var attachments = Office.context.mailbox.item.attachments;
+
+      console.log(attachments);
+
+      ```
     name: attachments
     fullName: attachments
     langs:
@@ -298,6 +306,18 @@ items:
       ```javascript
 
       console.log(JSON.stringify(Office.context.mailbox.item.cc));
+
+      ```
+
+      ```javascript
+
+      var msgCc = Office.context.mailbox.item.cc;
+
+      console.log("Message copied to:");
+
+      for (var i = 0; i < msgCc.length; i++) {
+        console.log(msgCc[i].displayName + " (" + msgCc[i].emailAddress + ")");
+      }
 
       ```
     name: cc
@@ -528,6 +548,14 @@ items:
       });
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.displayReplyAllForm(
+        "This is a reply ALL with <b>some bold text</b>."
+      );
+
+      ```
     name: 'displayReplyAllForm(formData, callback)'
     fullName: 'displayReplyAllForm(formData, callback)'
     langs:
@@ -668,6 +696,37 @@ items:
       });
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.displayReplyForm(
+        "This is a reply with <i>some text in italics</i>."
+      );
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.displayReplyForm(
+
+      {
+          htmlBody : "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
+          attachments :
+          [
+              { type: "file", url: "http://i.imgur.com/9S36xvA.jpg", name: "dog.jpg", isInline: true },
+              { type: "item", itemId : Office.context.mailbox.item.itemId, name: "test_email.msg" }
+          ],
+          options : { asyncContext: null },
+          callback : function (result)
+          {
+              if (result.status !== Office.AsyncResultStatus.Succeeded)
+              {
+                  console.error(`Action failed with message ${result.error.message}`);
+              }
+          }
+      });
+
+      ```
     name: 'displayReplyForm(formData, callback)'
     fullName: 'displayReplyForm(formData, callback)'
     langs:
@@ -753,6 +812,14 @@ items:
       console.log("From " + from);
 
       ```
+
+      ```javascript
+
+      var msgFrom = Office.context.mailbox.item.from;
+
+      console.log("Message received from: " + msgFrom.displayName + " (" + msgFrom.emailAddress + ")");
+
+      ```
     name: from
     fullName: from
     langs:
@@ -785,6 +852,62 @@ items:
 
 
       var contacts = Office.context.mailbox.item.getEntities().contacts;
+
+      ```
+
+      ```javascript
+
+      var entities = Office.context.mailbox.item.getEntities();
+
+      var entityTypesFound = 0;
+
+      if (entities.addresses.length > 0) {
+          console.warn("physical addresses: ");
+          console.log(entities.addresses);
+          entityTypesFound++;
+      }
+
+      if (entities.contacts.length > 0) {
+          console.warn("contacts: ");
+          entities.contacts.forEach(function (contact) { console.log(contact.personName); })
+          entityTypesFound++;
+      }
+
+      if (entities.emailAddresses.length > 0) {
+          console.warn("email addresses: ");
+          console.log(entities.emailAddresses);
+          entityTypesFound++;
+      }
+
+      if (entities.meetingSuggestions.length > 0) {
+          console.warn("meetings suggestions: ");
+          entities.meetingSuggestions.forEach(function (meetingSuggestion) { console.log(meetingSuggestion.meetingString); })
+          entityTypesFound++;
+      }
+
+      if (entities.phoneNumbers.length > 0) {
+          console.warn("phone numbers: ");
+          entities.phoneNumbers.forEach(function (phoneNumber) { console.log(phoneNumber.originalPhoneString); })
+          entityTypesFound++;
+      }
+
+      if (entities.taskSuggestions.length > 0) {
+          console.warn("task suggestions: ");
+          entities.taskSuggestions.forEach(function (taskSuggestion) { console.log(taskSuggestion.taskString); })
+          entityTypesFound++;
+      }
+
+      if (entities.urls.length > 0) {
+          console.warn("URLs: ");
+          console.log(entities.urls);
+          entityTypesFound++;
+      }
+
+      if (entityTypesFound == 0)
+
+      {
+          console.log("No entities found on this item.");
+      }
 
       ```
     name: getEntities()
@@ -847,6 +970,12 @@ items:
       };
 
       ```
+
+      ```javascript
+
+      console.log(Office.context.mailbox.item.getEntitiesByType(Office.MailboxEnums.EntityType.Address));
+
+      ```
     name: getEntitiesByType(entityType)
     fullName: getEntitiesByType(entityType)
     langs:
@@ -885,6 +1014,18 @@ items:
 
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // This API would only work when you click on highlighted physical address that has the word "Way" in it.
+
+      console.log(Office.context.mailbox.item.getFilteredEntitiesByName("sampleFilterName"));
+
+      ```
     name: getFilteredEntitiesByName(name)
     fullName: getFilteredEntitiesByName(name)
     langs:
@@ -980,6 +1121,14 @@ items:
       var veggies = allMatches.veggies;
 
       ```
+
+      ```javascript
+
+      // This API would only work when you click on highlighted word "ScriptLab".
+
+      console.log(Office.context.mailbox.item.getRegExMatches());
+
+      ```
     name: getRegExMatches()
     fullName: getRegExMatches()
     langs:
@@ -1058,6 +1207,14 @@ items:
       var veggies = Office.context.mailbox.item.getRegExMatchesByName("veggies");
 
       ```
+
+      ```javascript
+
+      // This API would only work when you click on highlighted word "ScriptLab".
+
+      console.log(Office.context.mailbox.item.getRegExMatchesByName("sampleRegexName"));
+
+      ```
     name: getRegExMatchesByName(name)
     fullName: getRegExMatchesByName(name)
     langs:
@@ -1102,6 +1259,62 @@ items:
       // match selected by the user.
 
       var addresses = Office.context.mailbox.item.getSelectedEntities().addresses;
+
+      ```
+
+      ```javascript
+
+      var entities = Office.context.mailbox.item.getSelectedEntities();
+
+      var entityTypesFound = 0;
+
+      if (entities.addresses.length > 0) {
+          console.warn("physical addresses: ");
+          console.log(entities.addresses);
+          entityTypesFound++;
+      }
+
+      if (entities.contacts.length > 0) {
+          console.warn("contacts: ");
+          entities.contacts.forEach(function (contact) { console.log(contact.personName); })
+          entityTypesFound++;
+      }
+
+      if (entities.emailAddresses.length > 0) {
+          console.warn("email addresses: ");
+          console.log(entities.emailAddresses);
+          entityTypesFound++;
+      }
+
+      if (entities.meetingSuggestions.length > 0) {
+          console.warn("meetings suggestions: ");
+          entities.meetingSuggestions.forEach(function (meetingSuggestion) { console.log(meetingSuggestion.meetingString); })
+          entityTypesFound++;
+      }
+
+      if (entities.phoneNumbers.length > 0) {
+          console.warn("phone numbers: ");
+          entities.phoneNumbers.forEach(function (phoneNumber) { console.log(phoneNumber.originalPhoneString); })
+          entityTypesFound++;
+      }
+
+      if (entities.taskSuggestions.length > 0) {
+          console.warn("task suggestions: ");
+          entities.taskSuggestions.forEach(function (taskSuggestion) { console.log(taskSuggestion.taskString); })
+          entityTypesFound++;
+      }
+
+      if (entities.urls.length > 0) {
+          console.warn("URLs: ");
+          console.log(entities.urls);
+          entityTypesFound++;
+      }
+
+      if (entityTypesFound == 0)
+
+      {
+          console.error("Open add-in by clicking on a highlighted entity, for this API to return something useful.");
+      }
 
       ```
     name: getSelectedEntities()
@@ -1191,6 +1404,20 @@ items:
       var fruits = selectedMatches.fruits;
 
       var veggies = selectedMatches.veggies;
+
+      ```
+
+      ```javascript
+
+      var matches = Office.context.mailbox.item.getSelectedRegExMatches();
+
+      if (matches) {
+          console.log(matches);
+      }
+
+      else {
+          console.error("Open add-in by clicking on a highlighted regex match, for this API to return something useful.");
+      }
 
       ```
     name: getSelectedRegExMatches()
@@ -1449,6 +1676,27 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
+        if (result.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Loaded following custom properties:");
+          customProps = result.value;
+          var dataKey = Object.keys(customProps)[0];
+          var data = customProps[dataKey];
+          for (var propertyName in data)
+          {
+            var propertyValue = data[propertyName];
+            console.log(`${propertyName}: ${propertyValue}`);
+          }              
+        }
+        else {
+          console.error(`loadCustomPropertiesAsync failed with message ${result.error.message}`);
+        }
+      });
+
+      ```
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: 'loadCustomPropertiesAsync(callback, userContext)'
     langs:
@@ -1558,6 +1806,78 @@ items:
       );
 
       ```
+
+      ```javascript
+
+      var id = $("#nofiticationId").val();
+
+      var details =
+        {
+          type: "progressIndicator",
+          message: "Progress indicator with id = " + id
+        };
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+      ```
+
+      ```javascript
+
+      var id = $("#nofiticationId").val();
+
+      var details =
+        {
+          type: "informationalMessage",
+          message: "Non-persistent informational notification message with id = " + id,
+          icon: "icon1",
+          persistent: false
+        };
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+      ```
+
+      ```javascript
+
+      var id = $("#nofiticationId").val();
+
+      var details =
+        {
+          type: "informationalMessage",
+          message: "Persistent informational notification message with id = " + id,
+          icon: "icon1",
+          persistent: true
+        };
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+
+      ```
+
+      ```javascript
+
+      var id = $("#nofiticationId").val();
+
+      Office.context.mailbox.item.notificationMessages.replaceAsync(
+        id,
+        {
+          type: "informationalMessage",
+          message: "Notification message with id = " + id + " has been replaced with an informational message.",
+          icon: "icon2",
+          persistent: false
+        },
+        handleResult);
+      ```
+
+      ```javascript
+
+      var id = $("#nofiticationId").val();
+
+      Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
+
+      ```
     name: notificationMessages
     fullName: notificationMessages
     langs:
@@ -1603,6 +1923,21 @@ items:
       var recurrence = Office.context.mailbox.item.recurrence;
 
       console.log("Recurrence: " + JSON.stringify(recurrence));
+
+      ```
+
+      ```javascript
+
+      var recurrence = Office.context.mailbox.item.recurrence;
+
+
+      if (recurrence === undefined) {
+        console.log("This item is a message but not a meeting request.");
+      } else if (recurrence === null) {
+        console.log("This is a single appointment.");
+      } else {
+        console.log(recurrence);
+      }
 
       ```
     name: recurrence
@@ -1725,6 +2060,14 @@ items:
       console.log("Sender: " + senderName + " (" + senderAddress + ")");
 
       ```
+
+      ```javascript
+
+      var msgSender = Office.context.mailbox.item.sender;
+
+      console.log("Sender: " + msgSender.displayName + " (" + msgSender.emailAddress + ")");
+
+      ```
     name: sender
     fullName: sender
     langs:
@@ -1785,6 +2128,21 @@ items:
 
       console.log("SeriesId is " + seriesId 
           + " and isSeriesInstance is " + isSeriesInstance);
+      ```
+
+      ```javascript
+
+      var seriesId = Office.context.mailbox.item.seriesId;
+
+
+      if (seriesId === undefined) {
+        console.log("This is a message that's not a meeting request.");
+      } else if (seriesId === null) {
+        console.log("This is a single appointment, a parent series, or a meeting request for a series or single meeting.");
+      } else {
+        console.log("This is an instance belonging to series with ID " + seriesId);
+      }
+
       ```
     name: seriesId
     fullName: seriesId
@@ -1894,6 +2252,18 @@ items:
       ```javascript
 
       console.log(JSON.stringify(Office.context.mailbox.item.to));
+
+      ```
+
+      ```javascript
+
+      var msgTo = Office.context.mailbox.item.to;
+
+      console.log("Message sent to:");
+
+      for (var i = 0; i < msgTo.length; i++) {
+        console.log(msgTo[i].displayName + " (" + msgTo[i].emailAddress + ")");
+      }
 
       ```
     name: to

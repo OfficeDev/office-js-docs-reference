@@ -50,6 +50,22 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      var settingName = $("#settingName").val();
+
+      var settingValue = Office.context.roamingSettings.get(settingName);
+
+      $("#settingValue").val(settingValue);
+
+      console.log(`The value of setting "${settingName}" is "${settingValue}".`);
+
+      ```
     name: get(name)
     fullName: get(name)
     langs:
@@ -107,6 +123,24 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Save settings in the mailbox to make it available in future sessions.
+
+      Office.context.roamingSettings.saveAsync(function(result) {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Action failed with message ${result.error.message}`);
+        } else {
+          console.log(`Settings saved with status: ${result.status}`);
+        }
+      });
+
+      ```
     name: saveAsync(callback)
     fullName: saveAsync(callback)
     langs:
@@ -165,6 +199,18 @@ items:
       // Persist the change.
 
       Office.context.roamingSettings.saveAsync();
+
+      ```
+
+      ```javascript
+
+      var settingName = $("#settingName").val();
+
+      var settingValue = $("#settingValue").val();
+
+      Office.context.roamingSettings.set(settingName, settingValue);
+
+      console.log(`Setting "${settingName}" set to value "${settingValue}".`);
 
       ```
     name: 'set(name, value)'

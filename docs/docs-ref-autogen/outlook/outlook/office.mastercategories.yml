@@ -226,6 +226,23 @@ items:
       });
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var categories = asyncResult.value;
+          if (categories) {
+            console.log(categories);
+          } else {
+            console.log("There are no categories in the master list.");
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: getAsync(callback)
     fullName: getAsync(callback)
     langs:

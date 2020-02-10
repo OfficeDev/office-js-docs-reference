@@ -111,6 +111,17 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      var attachmentUrl = $("#attachmentUrl").val();
+
+      Office.context.mailbox.item.addFileAttachmentAsync(
+          attachmentUrl,
+          getFileName(attachmentUrl),
+          { "asyncContext" : { var1: 1, var2: true } },
+          function(result) { console.log(result); });
+      ```
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     fullName: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     langs:
@@ -289,6 +300,17 @@ items:
           Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
       }
 
+      ```
+
+      ```javascript
+
+      var attachmentItemId = $("#attachmentItemId").val();
+
+      Office.context.mailbox.item.addItemAttachmentAsync(
+          attachmentItemId,
+          "My attachment",
+          { "asyncContext" : { var3: 3, var4: false } },
+          function(result) { console.log(result); });
       ```
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     fullName: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
@@ -596,6 +618,24 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
       Organizer
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var text = asyncResult.value.data;
+          var prop = asyncResult.value.sourceProperty;
+          console.log("Selected text in " + prop + ": " + text);
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: 'getSelectedDataAsync(coercionType, callback)'
     fullName: 'getSelectedDataAsync(coercionType, callback)'
     langs:
@@ -726,6 +766,27 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
+        if (result.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Loaded following custom properties:");
+          customProps = result.value;
+          var dataKey = Object.keys(customProps)[0];
+          var data = customProps[dataKey];
+          for (var propertyName in data)
+          {
+            var propertyValue = data[propertyName];
+            console.log(`${propertyName}: ${propertyValue}`);
+          }              
+        }
+        else {
+          console.error(`loadCustomPropertiesAsync failed with message ${result.error.message}`);
+        }
+      });
+
+      ```
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: 'loadCustomPropertiesAsync(callback, userContext)'
     langs:
@@ -833,6 +894,28 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.optionalAttendees.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var apptOptionalAttendees = asyncResult.value;
+          for (var i = 0; i < apptOptionalAttendees.length; i++) {
+            console.log(
+              "Optional attendees: " +
+                apptOptionalAttendees[i].displayName +
+                " (" +
+                apptOptionalAttendees[i].emailAddress +
+                ") - response: " +
+                apptOptionalAttendees[i].appointmentResponse
+            );
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: optionalAttendees
     fullName: optionalAttendees
     langs:
@@ -885,6 +968,23 @@ items:
           function (asyncResult)
           {
               console.log(asyncResult.status);
+          }
+      );
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.removeAttachmentAsync(
+          $("#attachmentId").val(),
+          { asyncContext : null },
+          function(result)
+          {
+              if (result.status !== Office.AsyncResultStatus.Succeeded) {
+                  console.error(`${result.error.message}`);
+              } else {
+                  console.log(`Attachment removed successfully.`);
+              }
           }
       );
 
@@ -1014,6 +1114,28 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.requiredAttendees.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var apptRequiredAttendees = asyncResult.value;
+          for (var i = 0; i < apptRequiredAttendees.length; i++) {
+            console.log(
+              "Required attendees: " +
+                apptRequiredAttendees[i].displayName +
+                " (" +
+                apptRequiredAttendees[i].emailAddress +
+                ") - response: " +
+                apptRequiredAttendees[i].appointmentResponse
+            );
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: requiredAttendees
     fullName: requiredAttendees
     langs:
@@ -1129,6 +1251,18 @@ items:
       ```javascript
 
       Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.setSelectedDataAsync("Replaced", function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Selected text has been updated successfully.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
 
       ```
     name: 'setSelectedDataAsync(data, callback)'
