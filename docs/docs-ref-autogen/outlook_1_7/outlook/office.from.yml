@@ -101,6 +101,19 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.from.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var msgFrom = asyncResult.value;
+          console.log("Message from: " + msgFrom.displayName + " (" + msgFrom.emailAddress + ")");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: getAsync(callback)
     fullName: getAsync(callback)
     langs:

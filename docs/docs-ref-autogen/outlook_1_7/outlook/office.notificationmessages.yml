@@ -123,6 +123,62 @@ items:
       });
 
       ```
+
+      ```javascript
+
+      var id = $("#notificationId").val();
+
+      var details =
+        {
+          type: "progressIndicator",
+          message: "Progress indicator with id = " + id
+        };
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+      ```
+
+      ```javascript
+
+      var id = $("#notificationId").val();
+
+      var details =
+        {
+          type: "informationalMessage",
+          message: "Non-persistent informational notification message with id = " + id,
+          icon: "icon1",
+          persistent: false
+        };
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+      ```
+
+      ```javascript
+
+      var id = $("#notificationId").val();
+
+      var details =
+        {
+          type: "informationalMessage",
+          message: "Persistent informational notification message with id = " + id,
+          icon: "icon1",
+          persistent: true
+        };
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+      ```
+
+      ```javascript
+
+      var id = $("#notificationId").val();
+
+      var details =
+        {
+          type: "errorMessage",
+          message: "Error notification message with id = " + id
+        };
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+      ```
     name: 'addAsync(key, JSONmessage, callback)'
     fullName: 'addAsync(key, JSONmessage, callback)'
     langs:
@@ -230,6 +286,12 @@ items:
       });
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+
+      ```
     name: getAllAsync(callback)
     fullName: getAllAsync(callback)
     langs:
@@ -313,6 +375,14 @@ items:
       // Remove a notification.
 
       Office.context.mailbox.item.notificationMessages.removeAsync("progress");
+
+      ```
+
+      ```javascript
+
+      var id = $("#notificationId").val();
+
+      Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
 
       ```
     name: 'removeAsync(key, callback)'
@@ -417,6 +487,21 @@ items:
           persistent: false
       });
 
+      ```
+
+      ```javascript
+
+      var id = $("#notificationId").val();
+
+      Office.context.mailbox.item.notificationMessages.replaceAsync(
+        id,
+        {
+          type: "informationalMessage",
+          message: "Notification message with id = " + id + " has been replaced with an informational message.",
+          icon: "icon2",
+          persistent: false
+        },
+        handleResult);
       ```
     name: 'replaceAsync(key, JSONmessage, callback)'
     fullName: 'replaceAsync(key, JSONmessage, callback)'

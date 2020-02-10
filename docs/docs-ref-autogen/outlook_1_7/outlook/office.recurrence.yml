@@ -137,6 +137,23 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.recurrence.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var recurrence = asyncResult.value;
+          if (recurrence === null) {
+            console.log("This is a single appointment.");
+          } else {
+            console.log(recurrence);
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: getAsync(callback)
     fullName: getAsync(callback)
     langs:
