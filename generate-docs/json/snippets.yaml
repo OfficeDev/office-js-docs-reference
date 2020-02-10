@@ -6804,7 +6804,7 @@
         }
     );
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     var details =
       {
@@ -6814,7 +6814,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     var details =
       {
@@ -6826,7 +6826,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     var details =
       {
@@ -6840,7 +6840,7 @@
   - >-
     Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
   - |-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
       {
@@ -6851,7 +6851,7 @@
       },
       handleResult);
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
     handleResult);
@@ -7853,7 +7853,7 @@
         }
     );
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     var details =
       {
@@ -7863,7 +7863,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     var details =
       {
@@ -7875,7 +7875,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     var details =
       {
@@ -7889,7 +7889,7 @@
   - >-
     Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
   - |-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
       {
@@ -7900,7 +7900,7 @@
       },
       handleResult);
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
     handleResult);
@@ -12943,7 +12943,7 @@
         }
     );
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     var details =
       {
@@ -12953,7 +12953,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     var details =
       {
@@ -12965,7 +12965,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     var details =
       {
@@ -12979,7 +12979,7 @@
   - >-
     Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
   - |-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
       {
@@ -12990,7 +12990,7 @@
       },
       handleResult);
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
     handleResult);
@@ -13912,7 +13912,7 @@
         }
     );
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     var details =
       {
@@ -13922,7 +13922,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     var details =
       {
@@ -13934,7 +13934,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     var details =
       {
@@ -13948,7 +13948,7 @@
   - >-
     Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
   - |-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
       {
@@ -13959,7 +13959,7 @@
       },
       handleResult);
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
     handleResult);
@@ -14050,7 +14050,7 @@
         message : "The add-in failed to process this message."
     });
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     var details =
       {
@@ -14060,7 +14060,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     var details =
       {
@@ -14072,7 +14072,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     var details =
       {
@@ -14084,7 +14084,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     var details =
       {
@@ -14115,7 +14115,7 @@
     // Remove a notification.
     Office.context.mailbox.item.notificationMessages.removeAsync("progress");
   - >-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
     handleResult);
@@ -14129,7 +14129,7 @@
         persistent: false
     });
   - |-
-    var id = $("#nofiticationId").val();
+    var id = $("#notificationId").val();
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
       {

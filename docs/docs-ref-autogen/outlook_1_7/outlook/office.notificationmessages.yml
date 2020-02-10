@@ -126,7 +126,7 @@ items:
 
       ```javascript
 
-      var id = $("#nofiticationId").val();
+      var id = $("#notificationId").val();
 
       var details =
         {
@@ -139,7 +139,7 @@ items:
 
       ```javascript
 
-      var id = $("#nofiticationId").val();
+      var id = $("#notificationId").val();
 
       var details =
         {
@@ -154,7 +154,7 @@ items:
 
       ```javascript
 
-      var id = $("#nofiticationId").val();
+      var id = $("#notificationId").val();
 
       var details =
         {
@@ -169,7 +169,7 @@ items:
 
       ```javascript
 
-      var id = $("#nofiticationId").val();
+      var id = $("#notificationId").val();
 
       var details =
         {
@@ -380,7 +380,7 @@ items:
 
       ```javascript
 
-      var id = $("#nofiticationId").val();
+      var id = $("#notificationId").val();
 
       Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
 
@@ -491,7 +491,7 @@ items:
 
       ```javascript
 
-      var id = $("#nofiticationId").val();
+      var id = $("#notificationId").val();
 
       Office.context.mailbox.item.notificationMessages.replaceAsync(
         id,
