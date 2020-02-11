@@ -1238,6 +1238,22 @@ items:
       return:
         type:
           - 'excel!Excel.Worksheet#onRowHiddenChanged~0:complex'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context) {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              sheet.onRowHiddenChanged.add(function (event)   {
+              return Excel.run(async (context) => {
+                  console.log(`Row ${event.address} is now ${event.changeType}`);
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: 'excel!Excel.Worksheet#onRowSorted:member'
     summary: |-
       Occurs when one or more rows have been sorted. This happens as the result of a top-to-bottom sort operation.

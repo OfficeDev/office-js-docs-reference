@@ -2316,6 +2316,17 @@ Excel.Worksheet#onDeactivated:member:
         });
         return context.sync();
     });
+Excel.Worksheet#onRowHiddenChanged:member:
+  - |-
+    Excel.run(function (context) {
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+        sheet.onRowHiddenChanged.add(function (event)   {
+        return Excel.run(async (context) => {
+            console.log(`Row ${event.address} is now ${event.changeType}`);
+            });
+        });
+        return context.sync();
+    });
 Excel.Worksheet#onSelectionChanged:member:
   - |-
     Excel.run(function (context) {
