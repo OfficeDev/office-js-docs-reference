@@ -455,7 +455,7 @@ items:
           Excel.run(function (context){
               context.workbook.worksheets.getActiveWorksheet()
                   .charts.onActivated.add(function (event) {
-                  return Excel.run((context) => {
+                  return Excel.run(function (context) {
                       console.log("The ID of the active chart is: " + event.chartId)
                       return context.sync();
                   });
@@ -487,7 +487,7 @@ items:
           Excel.run(function (context){
               context.workbook.worksheets.getActiveWorksheet()
                   .charts.onAdded.add(function (event) {
-                  return Excel.run((context) => {
+                  return Excel.run(function (context) {
                       console.log("A chart has been added with ID: " + event.chartId);
                       return context.sync();
                   });
@@ -519,7 +519,7 @@ items:
           Excel.run(function (context){
               context.workbook.worksheets.getActiveWorksheet()
                   .charts.onDeactivated.add(function (event) {
-                  return Excel.run((context) => {
+                  return Excel.run(function (context) {
                       console.log("The chart with this ID was deactivated: " + event.chartId);
                       return context.sync();
                   });
@@ -551,7 +551,7 @@ items:
           Excel.run(function (context){
               context.workbook.worksheets.getActiveWorksheet()
                   .charts.onDeleted.add(function (event) {
-                  return Excel.run((context) => {
+                  return Excel.run(function (context) {
                       console.log("The chart with this ID was deleted: " + event.chartId);
                       return context.sync();
                   });

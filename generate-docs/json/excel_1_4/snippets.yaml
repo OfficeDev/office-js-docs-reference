@@ -534,7 +534,7 @@
     Excel.run(function (context){
         var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
         pieChart.onActivated.add(function (event) {
-            return Excel.run((context) => {
+            return Excel.run(function (context) {
                 console.log("The pie chart is the active chart. ID: " + event.chartId);
                 return context.sync();
             });
@@ -546,7 +546,7 @@
     Excel.run(function (context){
         var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
         pieChart.onDeactivated.add(function (event) {
-            return Excel.run((context) => {
+            return Excel.run(function (context) {
                 console.log("The pie chart is NOT active.");
                 return context.sync();
             });
@@ -784,7 +784,7 @@
     Excel.run(function (context){
         context.workbook.worksheets.getActiveWorksheet()
             .charts.onActivated.add(function (event) {
-            return Excel.run((context) => {
+            return Excel.run(function (context) {
                 console.log("The ID of the active chart is: " + event.chartId)
                 return context.sync();
             });
@@ -796,7 +796,7 @@
     Excel.run(function (context){
         context.workbook.worksheets.getActiveWorksheet()
             .charts.onAdded.add(function (event) {
-            return Excel.run((context) => {
+            return Excel.run(function (context) {
                 console.log("A chart has been added with ID: " + event.chartId);
                 return context.sync();
             });
@@ -808,7 +808,7 @@
     Excel.run(function (context){
         context.workbook.worksheets.getActiveWorksheet()
             .charts.onDeactivated.add(function (event) {
-            return Excel.run((context) => {
+            return Excel.run(function (context) {
                 console.log("The chart with this ID was deactivated: " + event.chartId);
                 return context.sync();
             });
@@ -820,7 +820,7 @@
     Excel.run(function (context){
         context.workbook.worksheets.getActiveWorksheet()
             .charts.onDeleted.add(function (event) {
-            return Excel.run((context) => {
+            return Excel.run(function (context) {
                 console.log("The chart with this ID was deleted: " + event.chartId);
                 return context.sync();
             });
@@ -5643,7 +5643,7 @@
     Excel.run(function (context) {
         var sheet = context.workbook.worksheets.getItem("Sample");
         sheet.onActivated.add(function (event) {
-            return Excel.run((context) => {
+            return Excel.run(function (context) {
                 console.log("The activated worksheet ID is: " + event.worksheetId);
                 return context.sync();
             });
@@ -5655,7 +5655,7 @@
     Excel.run(function (context) {
         var sheet = context.workbook.worksheets.getItem("Sample");
         sheet.onCalculated.add(function (event) {
-            return Excel.run((context) => {
+            return Excel.run(function (context) {
                 console.log("The worksheet has recalculated.");
                 return context.sync();
             });
@@ -5698,7 +5698,7 @@
     Excel.run(function (context) {
         var sheet = context.workbook.worksheets.getItem("Sample");
         sheet.onDeactivated.add(function (event) {
-            return Excel.run((context) => {
+            return Excel.run(function (context) {
                 console.log("The deactivated worksheet is: " + event.worksheetId);
                 return context.sync();
             });
@@ -5710,8 +5710,9 @@
     Excel.run(function (context) {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
         sheet.onRowHiddenChanged.add(function (event)   {
-        return Excel.run(async (context) => {
-            console.log(`Row ${event.address} is now ${event.changeType}`);
+            return Excel.run(function (context) {
+                console.log(`Row ${event.address} is now ${event.changeType}`);
+                return context.sync();
             });
         });
         return context.sync();
@@ -5743,7 +5744,7 @@
     Excel.run(function (context) {
         var sheet = context.workbook.worksheets.getItem("Sample");
         sheet.onSelectionChanged.add(function (event) {
-            return Excel.run((context) => {
+            return Excel.run(function (context) {
                 console.log("The selected range has changed to: " + event.address);
                 return context.sync();
             });

@@ -801,7 +801,7 @@ items:
           Excel.run(function (context) {
               var sheet = context.workbook.worksheets.getItem("Sample");
               sheet.onActivated.add(function (event) {
-                  return Excel.run((context) => {
+                  return Excel.run(function (context) {
                       console.log("The activated worksheet ID is: " + event.worksheetId);
                       return context.sync();
                   });
@@ -862,7 +862,7 @@ items:
           Excel.run(function (context) {
               var sheet = context.workbook.worksheets.getItem("Sample");
               sheet.onDeactivated.add(function (event) {
-                  return Excel.run((context) => {
+                  return Excel.run(function (context) {
                       console.log("The deactivated worksheet is: " + event.worksheetId);
                       return context.sync();
                   });
@@ -894,7 +894,7 @@ items:
           Excel.run(function (context) {
               var sheet = context.workbook.worksheets.getItem("Sample");
               sheet.onSelectionChanged.add(function (event) {
-                  return Excel.run((context) => {
+                  return Excel.run(function (context) {
                       console.log("The selected range has changed to: " + event.address);
                       return context.sync();
                   });
