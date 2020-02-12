@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-runtime!OfficeRuntime.Tab:interface'
+    summary: Represents an individual tab and the state it should have.
+    isPreview: true
+    name: OfficeRuntime.Tab
+    fullName: OfficeRuntime.Tab
+    langs:
+      - typeScript
+    type: interface
+    package: office-runtime!
+    children:
+      - 'office-runtime!OfficeRuntime.Tab#controls:member'
+      - 'office-runtime!OfficeRuntime.Tab#id:member'
+  - uid: 'office-runtime!OfficeRuntime.Tab#controls:member'
+    summary: Represents an array of controls in the tab whose state is set with the call to `requestUpdate`<!-- -->.
+    isPreview: true
+    name: controls
+    fullName: controls
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'controls?: Control[];'
+      return:
+        type:
+          - 'office-runtime!OfficeRuntime.Tab#controls~0:complex'
+  - uid: 'office-runtime!OfficeRuntime.Tab#id:member'
+    summary: Identifier of the tab as specified in the manifest.
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'office-runtime!OfficeRuntime.Tab#controls~0:complex'
+    name: 'Control[]'
+    fullName: 'OfficeRuntime.Control[]'
+    spec.typeScript:
+      - uid: 'office-runtime!OfficeRuntime.Control:interface'
+        name: Control
+        fullName: OfficeRuntime.Control
+      - name: '[]'
+        fullName: '[]'

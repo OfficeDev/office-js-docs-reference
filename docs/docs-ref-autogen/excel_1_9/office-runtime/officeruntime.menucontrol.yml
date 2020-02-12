@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-runtime!OfficeRuntime.MenuControl:interface'
+    summary: Represents an individual menu item whose state is set with the call to `requestUpdate`<!-- -->.
+    isPreview: true
+    name: OfficeRuntime.MenuControl
+    fullName: OfficeRuntime.MenuControl
+    langs:
+      - typeScript
+    type: interface
+    package: office-runtime!
+    children:
+      - 'office-runtime!OfficeRuntime.MenuControl#enabled:member'
+      - 'office-runtime!OfficeRuntime.MenuControl#id:member'
+      - 'office-runtime!OfficeRuntime.MenuControl#position:member'
+  - uid: 'office-runtime!OfficeRuntime.MenuControl#enabled:member'
+    summary: Indicates whether the menu item should be enabled (default) or disabled.
+    isPreview: true
+    name: enabled
+    fullName: enabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enabled?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'office-runtime!OfficeRuntime.MenuControl#id:member'
+    summary: Identifier of the menu item as specified in the manifest.
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: 'office-runtime!OfficeRuntime.MenuControl#position:member'
+    summary: The position of the item in the menu.
+    isPreview: true
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position?: number;'
+      return:
+        type:
+          - number

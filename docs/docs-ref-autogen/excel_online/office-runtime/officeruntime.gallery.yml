@@ -1,0 +1,33 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-runtime!OfficeRuntime.Gallery:interface'
+    summary: Represent an individual gallery control.
+    isPreview: true
+    name: OfficeRuntime.Gallery
+    fullName: OfficeRuntime.Gallery
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'office-runtime!OfficeRuntime.Control:interface'
+    package: office-runtime!
+    children:
+      - 'office-runtime!OfficeRuntime.Gallery#refreshData:member'
+  - uid: 'office-runtime!OfficeRuntime.Gallery#refreshData:member'
+    summary: >-
+      Used to refresh a gallery control including optional data to be passed to the gallery control at the time of
+      refresh action.
+    isPreview: true
+    name: refreshData
+    fullName: refreshData
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'refreshData?: {};'
+      return:
+        type:
+          - '{}'
+references:
+  - uid: 'office-runtime!OfficeRuntime.Control:interface'
+    name: Control
