@@ -19538,7 +19538,7 @@
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-'Word.Font#load:member(1)':
+'Word.Font#name:member':
   - |-
     // Change the font name
     // Run a batch operation against the Word object model.
