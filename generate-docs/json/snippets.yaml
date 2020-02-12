@@ -601,7 +601,7 @@
 
         console.log("The vertical axis display unit is: " + valueAxis.displayUnit);
     });
-'Excel.ChartAxis#load:member(2)':
+'Excel.ChartAxes#valueAxis:member':
   - |-
     // Get the maximum of Chart Axis from Chart1
     Excel.run(function (ctx) { 
@@ -697,36 +697,12 @@
 'Excel.ChartCollection#getItem:member(1)':
   - |-
     Excel.run(function (ctx) { 
-        var chartname = 'Chart1';
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem(chartname);
+        // Get the height of SampleChart.
+        var chartName = 'SampleChart';
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem(chartName);
+        chart.load('height');
         return ctx.sync().then(function() {
-                console.log(chart.height);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    Excel.run(function (ctx) { 
-        var chartId = 'SampleChartId';
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem(chartId);
-        return ctx.sync().then(function() {
-                console.log(chart.height);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    Excel.run(function (ctx) { 
-        var lastPosition = ctx.workbook.worksheets.getItem("Sheet1").charts.count - 1;
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
-        return ctx.sync().then(function() {
-                console.log(chart.name);
+            console.log(chart.height);
         });
     }).catch(function(error) {
         console.log("Error: " + error);
@@ -1252,8 +1228,7 @@
         var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
         seriesCollection.load('items');
         return ctx.sync().then(function() {
-            for (var i = 0; i < seriesCollection.items.length; i++)
-            {
+            for (var i = 0; i < seriesCollection.items.length; i++) {
                 console.log(seriesCollection.items[i].name);
             }
         });

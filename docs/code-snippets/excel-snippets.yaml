@@ -209,6 +209,23 @@ Excel.Chart#getImage:member(1):
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+Excel.Chart#legend:member:
+  - |-
+    // Set to show legend of Chart1 and make it on top of the chart.
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        chart.legend.visible = true;
+        chart.legend.position = "top"; 
+        chart.legend.overlay = false; 
+        return ctx.sync().then(function() {
+                console.log("Legend Shown ");
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
 Excel.Chart#name:member:
   - |-
     // Rename the chart to new name, resize the chart to 200 points in both height and weight. 
@@ -274,6 +291,24 @@ Excel.Chart#load:member(2):
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+Excel.ChartAxes#valueAxis:member:
+  - |-
+    // Set the maximum, minimum, majorUnit, minorUnit of valueAxis. 
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        chart.axes.valueAxis.maximum = 5;
+        chart.axes.valueAxis.minimum = 0;
+        chart.axes.valueAxis.majorUnit = 1;
+        chart.axes.valueAxis.minorUnit = 0.2;
+        return ctx.sync().then(function() {
+                console.log("Axis Settings Changed");
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
 Excel.ChartAxis#load:member(2):
   - |-
     // Get the maximum of Chart Axis from Chart1
@@ -290,39 +325,7 @@ Excel.ChartAxis#load:member(2):
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
-    // Set the maximum, minimum, majorunit, minorunit of valueaxis. 
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-        chart.axes.valueAxis.maximum = 5;
-        chart.axes.valueAxis.minimum = 0;
-        chart.axes.valueAxis.majorUnit = 1;
-        chart.axes.valueAxis.minorUnit = 0.2;
-        return ctx.sync().then(function() {
-                console.log("Axis Settings Changed");
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
 Excel.ChartAxisTitle#load:member(2):
-  - |-
-    // Get the text of Chart Axis Title from the value axis of Chart1.
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 
-        var title = chart.axes.valueAxis.title;
-        title.load('text');
-        return ctx.sync().then(function() {
-                console.log(title.text);
-        });
-    }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
-    });
   - |-
     // Add "Values" as the title for the value Axis 
     Excel.run(function (ctx) { 
@@ -381,37 +384,12 @@ Excel.ChartCollection#add:member(1):
     });
 Excel.ChartCollection#getItem:member(1):
   - |-
+    // Get the number of charts
     Excel.run(function (ctx) { 
-        var chartname = 'Chart1';
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem(chartname);
+        var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
+        charts.load('count');
         return ctx.sync().then(function() {
-                console.log(chart.height);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    Excel.run(function (ctx) { 
-        var chartId = 'SampleChartId';
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem(chartId);
-        return ctx.sync().then(function() {
-                console.log(chart.height);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    Excel.run(function (ctx) { 
-        var lastPosition = ctx.workbook.worksheets.getItem("Sheet1").charts.count - 1;
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
-        return ctx.sync().then(function() {
-                console.log(chart.name);
+            console.log("charts: Count= " + charts.count);
         });
     }).catch(function(error) {
         console.log("Error: " + error);
@@ -439,24 +417,9 @@ Excel.ChartCollection#load:member(2):
         var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
         charts.load('items');
         return ctx.sync().then(function() {
-            for (var i = 0; i < charts.items.length; i++)
-            {
+            for (var i = 0; i < charts.items.length; i++) {
                 console.log(charts.items[i].name);
             }
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    // Get the number of charts
-    Excel.run(function (ctx) { 
-        var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
-        charts.load('count');
-        return ctx.sync().then(function() {
-            console.log("charts: Count= " + charts.count);
         });
     }).catch(function(error) {
         console.log("Error: " + error);
@@ -544,22 +507,6 @@ Excel.ChartFill#clear:member(1):
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartFill#setSolidColor:member(1):
-  - |-
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-    
-        chart.format.fill.setSolidColor("#FF0000");
-    
-        return ctx.sync().then(function() {
-                console.log("Chart1 Background Color Changed.");
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
 Excel.ChartFont:class:
   - |-
     // Set chart title to be Calbri, size 10, bold and in red. 
@@ -579,21 +526,6 @@ Excel.ChartFont:class:
         }
     });
 Excel.ChartGridlines#load:member(2):
-  - |-
-    // Get the visible of Major Gridlines on value axis of Chart1
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-        var majGridlines = chart.axes.valueaxis.majorGridlines;
-        majGridlines.load('visible');
-        return ctx.sync().then(function() {
-                console.log(majGridlines.visible);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
   - |-
     // Set to show major gridlines on valueAxis of Chart1
     Excel.run(function (ctx) { 
@@ -617,22 +549,6 @@ Excel.ChartLegend#load:member(2):
         legend.load('position');
         return ctx.sync().then(function() {
                 console.log(legend.position);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    // Set to show legend of Chart1 and make it on top of the chart.
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-        chart.legend.visible = true;
-        chart.legend.position = "top"; 
-        chart.legend.overlay = false; 
-        return ctx.sync().then(function() {
-                console.log("Legend Shown ");
         });
     }).catch(function(error) {
         console.log("Error: " + error);
