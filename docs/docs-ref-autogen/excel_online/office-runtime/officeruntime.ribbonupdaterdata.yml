@@ -1,0 +1,36 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-runtime!OfficeRuntime.RibbonUpdaterData:interface'
+    summary: Represents the parts of the ribbon that the call to `requestUpdate` will change.
+    isPreview: true
+    name: OfficeRuntime.RibbonUpdaterData
+    fullName: OfficeRuntime.RibbonUpdaterData
+    langs:
+      - typeScript
+    type: interface
+    package: office-runtime!
+    children:
+      - 'office-runtime!OfficeRuntime.RibbonUpdaterData#tabs:member'
+  - uid: 'office-runtime!OfficeRuntime.RibbonUpdaterData#tabs:member'
+    summary: Array of the tabs whose state is set with a call to `requestUpdate`<!-- -->.
+    isPreview: true
+    name: tabs
+    fullName: tabs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tabs?: Tab [];'
+      return:
+        type:
+          - 'office-runtime!OfficeRuntime.RibbonUpdaterData#tabs~0:complex'
+references:
+  - uid: 'office-runtime!OfficeRuntime.RibbonUpdaterData#tabs~0:complex'
+    name: 'Tab []'
+    fullName: 'OfficeRuntime.Tab []'
+    spec.typeScript:
+      - uid: 'office-runtime!OfficeRuntime.Tab:interface'
+        name: Tab
+        fullName: OfficeRuntime.Tab
+      - name: ' []'
+        fullName: ' []'
