@@ -21,7 +21,7 @@ items:
       This setting is only applicable to custom functions running on Excel Online.
 
 
-      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: displayInIFrame
     fullName: displayInIFrame
     langs:
@@ -38,7 +38,7 @@ items:
       accepts strings such as: '50%', '50'.
 
 
-      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: height
     fullName: height
     langs:
@@ -53,7 +53,7 @@ items:
     summary: |-
       Optional callback that runs when the dialog box is closed.
 
-      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: onClose
     fullName: onClose
     langs:
@@ -68,7 +68,7 @@ items:
     summary: |-
       Optional callback that runs when the dialog box sends a message to its parent.
 
-      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: onMessage
     fullName: onMessage
     langs:
@@ -83,7 +83,7 @@ items:
     summary: |-
       Optional callback that runs when the dialog box sends an error.
 
-      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: onRuntimeError
     fullName: onRuntimeError
     langs:
@@ -100,7 +100,7 @@ items:
       as: '50%', '50'.
 
 
-      \[ [API set: CustomFunctionsRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
+      \[ [API set: SharedRuntime 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: width
     fullName: width
     langs:

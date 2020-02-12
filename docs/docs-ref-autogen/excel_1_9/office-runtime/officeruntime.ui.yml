@@ -1,0 +1,42 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-runtime!OfficeRuntime.UI:interface'
+    summary: Encapsulates methods that interact with the Office UI.
+    isPreview: true
+    name: OfficeRuntime.UI
+    fullName: OfficeRuntime.UI
+    langs:
+      - typeScript
+    type: interface
+    package: office-runtime!
+    children:
+      - 'office-runtime!OfficeRuntime.UI#getRibbon:member(1)'
+  - uid: 'office-runtime!OfficeRuntime.UI#getRibbon:member(1)'
+    summary: Get the ribbon of the Office application.
+    isPreview: true
+    name: getRibbon()
+    fullName: getRibbon()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRibbon(): Promise<Ribbon>;'
+      return:
+        type:
+          - 'office-runtime!OfficeRuntime.UI#getRibbon~0:complex'
+        description: ''
+references:
+  - uid: 'office-runtime!OfficeRuntime.UI#getRibbon~0:complex'
+    name: Promise<Ribbon>
+    fullName: Promise<OfficeRuntime.Ribbon>
+    spec.typeScript:
+      - uid: '!Promise:interface'
+        name: Promise
+        fullName: Promise
+      - name: <
+        fullName: <
+      - uid: 'office-runtime!OfficeRuntime.Ribbon:interface'
+        name: Ribbon
+        fullName: OfficeRuntime.Ribbon
+      - name: '>'
+        fullName: '>'

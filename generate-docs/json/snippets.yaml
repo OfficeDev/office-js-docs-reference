@@ -5709,7 +5709,7 @@
   - |-
     Excel.run(function (context) {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
-        sheet.onRowHiddenChanged.add(function (event)   {
+        sheet.onRowHiddenChanged.add(function (event) {
             return Excel.run(function (context) {
                 console.log(`Row ${event.address} is now ${event.changeType}`);
                 return context.sync();
