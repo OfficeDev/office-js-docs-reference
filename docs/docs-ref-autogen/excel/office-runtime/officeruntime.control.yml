@@ -1,0 +1,40 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'office-runtime!OfficeRuntime.Control:interface'
+    summary: Represent an individual control or command whose state is set with the call to `requestUpdate`<!-- -->.
+    isPreview: true
+    name: OfficeRuntime.Control
+    fullName: OfficeRuntime.Control
+    langs:
+      - typeScript
+    type: interface
+    package: office-runtime!
+    children:
+      - 'office-runtime!OfficeRuntime.Control#enabled:member'
+      - 'office-runtime!OfficeRuntime.Control#id:member'
+  - uid: 'office-runtime!OfficeRuntime.Control#enabled:member'
+    summary: Indicates whether the control should be enabled (default) or disabled.
+    isPreview: true
+    name: enabled
+    fullName: enabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enabled?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'office-runtime!OfficeRuntime.Control#id:member'
+    summary: Identifier of the control as specified in the manifest.
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string

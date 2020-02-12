@@ -160,23 +160,6 @@ items:
               }
           });
           ```
-          ```javascript
-          // Set to show legend of Chart1 and make it on top of the chart.
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              chart.legend.visible = true;
-              chart.legend.position = "top"; 
-              chart.legend.overlay = false; 
-              return ctx.sync().then(function() {
-                      console.log("Legend Shown ");
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.

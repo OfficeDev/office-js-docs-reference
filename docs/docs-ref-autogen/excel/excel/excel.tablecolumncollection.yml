@@ -149,10 +149,10 @@ items:
 
           ```javascript
           Excel.run(function (ctx) { 
-              var tablecolumn = ctx.workbook.tables.getItem('Table1').columns.getItem(0);
-              tablecolumn.load('name');
+              var tableColumn = ctx.workbook.tables.getItem('Table1').columns.getItem(0);
+              tableColumn.load('name');
               return ctx.sync().then(function() {
-                      console.log(tablecolumn.name);
+                      console.log(tableColumn.name);
               });
           }).catch(function(error) {
               console.log("Error: " + error);
@@ -188,10 +188,10 @@ items:
 
           ```javascript
           Excel.run(function (ctx) { 
-              var tablecolumn = ctx.workbook.tables.getItem['Table1'].columns.getItemAt(0);
-              tablecolumn.load('name');
+              var tableColumn = ctx.workbook.tables.getItem['Table1'].columns.getItemAt(0);
+              tableColumn.load('name');
               return ctx.sync().then(function() {
-                      console.log(tablecolumn.name);
+                      console.log(tableColumn.name);
               });
           }).catch(function(error) {
               console.log("Error: " + error);
@@ -281,12 +281,12 @@ items:
 
           ```javascript
           Excel.run(function (ctx) { 
-              var tablecolumns = ctx.workbook.tables.getItem('Table1').columns;
-              tablecolumns.load('items');
+              var tableColumns = ctx.workbook.tables.getItem('Table1').columns;
+              tableColumns.load('items');
               return ctx.sync().then(function() {
-                  console.log("tablecolumns Count: " + tablecolumns.count);
-                  for (var i = 0; i < tablecolumns.items.length; i++) {
-                      console.log(tablecolumns.items[i].name);
+                  console.log("tableColumns Count: " + tableColumns.count);
+                  for (var i = 0; i < tableColumns.items.length; i++) {
+                      console.log(tableColumns.items[i].name);
                   }
               });
           }).catch(function(error) {

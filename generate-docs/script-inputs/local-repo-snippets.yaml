@@ -209,6 +209,23 @@ Excel.Chart#getImage:member(1):
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+Excel.Chart#legend:member:
+  - |-
+    // Set to show legend of Chart1 and make it on top of the chart.
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        chart.legend.visible = true;
+        chart.legend.position = "top"; 
+        chart.legend.overlay = false; 
+        return ctx.sync().then(function() {
+                console.log("Legend Shown ");
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
 Excel.Chart#name:member:
   - |-
     // Rename the chart to new name, resize the chart to 200 points in both height and weight. 
@@ -274,6 +291,24 @@ Excel.Chart#load:member(2):
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+Excel.ChartAxes#valueAxis:member:
+  - |-
+    // Set the maximum, minimum, majorUnit, minorUnit of valueAxis. 
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        chart.axes.valueAxis.maximum = 5;
+        chart.axes.valueAxis.minimum = 0;
+        chart.axes.valueAxis.majorUnit = 1;
+        chart.axes.valueAxis.minorUnit = 0.2;
+        return ctx.sync().then(function() {
+                console.log("Axis Settings Changed");
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
 Excel.ChartAxis#load:member(2):
   - |-
     // Get the maximum of Chart Axis from Chart1
@@ -290,39 +325,7 @@ Excel.ChartAxis#load:member(2):
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
-    // Set the maximum, minimum, majorunit, minorunit of valueaxis. 
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-        chart.axes.valueAxis.maximum = 5;
-        chart.axes.valueAxis.minimum = 0;
-        chart.axes.valueAxis.majorUnit = 1;
-        chart.axes.valueAxis.minorUnit = 0.2;
-        return ctx.sync().then(function() {
-                console.log("Axis Settings Changed");
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
 Excel.ChartAxisTitle#load:member(2):
-  - |-
-    // Get the text of Chart Axis Title from the value axis of Chart1.
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 
-        var title = chart.axes.valueAxis.title;
-        title.load('text');
-        return ctx.sync().then(function() {
-                console.log(title.text);
-        });
-    }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
-    });
   - |-
     // Add "Values" as the title for the value Axis 
     Excel.run(function (ctx) { 
@@ -381,37 +384,12 @@ Excel.ChartCollection#add:member(1):
     });
 Excel.ChartCollection#getItem:member(1):
   - |-
+    // Get the number of charts
     Excel.run(function (ctx) { 
-        var chartname = 'Chart1';
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem(chartname);
+        var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
+        charts.load('count');
         return ctx.sync().then(function() {
-                console.log(chart.height);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    Excel.run(function (ctx) { 
-        var chartId = 'SampleChartId';
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem(chartId);
-        return ctx.sync().then(function() {
-                console.log(chart.height);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    Excel.run(function (ctx) { 
-        var lastPosition = ctx.workbook.worksheets.getItem("Sheet1").charts.count - 1;
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
-        return ctx.sync().then(function() {
-                console.log(chart.name);
+            console.log("charts: Count= " + charts.count);
         });
     }).catch(function(error) {
         console.log("Error: " + error);
@@ -439,24 +417,9 @@ Excel.ChartCollection#load:member(2):
         var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
         charts.load('items');
         return ctx.sync().then(function() {
-            for (var i = 0; i < charts.items.length; i++)
-            {
+            for (var i = 0; i < charts.items.length; i++) {
                 console.log(charts.items[i].name);
             }
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    // Get the number of charts
-    Excel.run(function (ctx) { 
-        var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
-        charts.load('count');
-        return ctx.sync().then(function() {
-            console.log("charts: Count= " + charts.count);
         });
     }).catch(function(error) {
         console.log("Error: " + error);
@@ -544,22 +507,6 @@ Excel.ChartFill#clear:member(1):
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartFill#setSolidColor:member(1):
-  - |-
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-    
-        chart.format.fill.setSolidColor("#FF0000");
-    
-        return ctx.sync().then(function() {
-                console.log("Chart1 Background Color Changed.");
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
 Excel.ChartFont:class:
   - |-
     // Set chart title to be Calbri, size 10, bold and in red. 
@@ -579,21 +526,6 @@ Excel.ChartFont:class:
         }
     });
 Excel.ChartGridlines#load:member(2):
-  - |-
-    // Get the visible of Major Gridlines on value axis of Chart1
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-        var majGridlines = chart.axes.valueaxis.majorGridlines;
-        majGridlines.load('visible');
-        return ctx.sync().then(function() {
-                console.log(majGridlines.visible);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
   - |-
     // Set to show major gridlines on valueAxis of Chart1
     Excel.run(function (ctx) { 
@@ -617,22 +549,6 @@ Excel.ChartLegend#load:member(2):
         legend.load('position');
         return ctx.sync().then(function() {
                 console.log(legend.position);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    // Set to show legend of Chart1 and make it on top of the chart.
-    Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-        chart.legend.visible = true;
-        chart.legend.position = "top"; 
-        chart.legend.overlay = false; 
-        return ctx.sync().then(function() {
-                console.log("Legend Shown ");
         });
     }).catch(function(error) {
         console.log("Error: " + error);
@@ -813,40 +729,6 @@ Excel.ChartTitle#load:member(2):
             }
         });
     });
-Excel.ConditionalFormatCollection#add:member(1):
-  - |-
-    Excel.run(function (ctx) {
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:C3";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        var conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.iconSet);
-        conditionalFormat.iconOrNull.style = "YellowThreeArrows";
-        return ctx.sync().then(function () {
-            console.log("Added new yellow three arrow icon set.");
-        });
-    }).catch(function (error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-Excel.ConditionalFormatCollection#clearAll:member(1):
-  - |-
-    Excel.run(function (ctx) {
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:C3";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        var conditionalFormats = range.conditionalFormats;
-        var conditionalFormat = conditionalFormats.clearAll();
-        return ctx.sync().then(function () {
-            console.log("Cleared all conditional formats from this range.");
-        });
-    }).catch(function (error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
 Excel.ConditionalFormatCollection#getCount:member(1):
   - |-
     Excel.run(function (ctx) {
@@ -867,23 +749,6 @@ Excel.ConditionalFormatCollection#getCount:member(1):
         }
     });
 Excel.ConditionalFormatCollection#getItem:member(1):
-  - |-
-    Excel.run(function (ctx) {
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:C3";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        var conditionalFormats = range.conditionalFormats;
-        var conditionalFormat = conditionalFormats.getItemAt(3);
-        return ctx.sync().then(function () {
-            console.log("Conditional Format at Item 3 Loaded");
-        });
-    }).catch(function (error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-Excel.ConditionalFormatCollection#getItemAt:member(1):
   - |-
     Excel.run(function (ctx) {
         var sheetName = "Sheet1";
@@ -1202,16 +1067,22 @@ Excel.Range#getRow:member(1):
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range#getUsedRange:member(1):
+Excel.Range#numberFormat:member:
   - |-
+    // The example below sets number-format, values and formulas on a grid that contains 2x3 grid.
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
-        var rangeAddress = "D:F";
+        var rangeAddress = "F5:G7";
+        var numberFormat = [[null, "d-mmm"], [null, "d-mmm"], [null, null]]
+        var values = [["Today", 42147], ["Tomorrow", "5/24"], ["Difference in days", null]];
+        var formulas = [[null,null], [null,null], [null,"=G6-G5"]];
         var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        var rangeUR = range.getUsedRange();
-        rangeUR.load('address');
+        range.numberFormat = numberFormat;
+        range.values = values;
+        range.formulas= formulas;
+        range.load('text');
         return ctx.sync().then(function() {
-            console.log(rangeUR.address);
+            console.log(range.text);
         });
     }).catch(function(error) {
         console.log("Error: " + error);
@@ -1241,19 +1112,6 @@ Excel.Range#merge:member(1):
         var rangeAddress = "A1:C3";
         var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         range.merge(true);
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    Excel.run(function (ctx) { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:C3";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        range.unmerge();
         return ctx.sync(); 
     }).catch(function(error) {
         console.log("Error: " + error);
@@ -1326,65 +1184,7 @@ Excel.Range#load:member(2):
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
-    // Below example uses a named-range to get the range object.
-    Excel.run(function (ctx) { 
-        var rangeName = 'MyRange';
-        var range = ctx.workbook.names.getItem(rangeName).range;
-        range.load('cellCount');
-        return ctx.sync().then(function() {
-            console.log(range.cellCount);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    // The example below sets number-format, values and formulas on a grid that contains 2x3 grid.
-    Excel.run(function (ctx) { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "F5:G7";
-        var numberFormat = [[null, "d-mmm"], [null, "d-mmm"], [null, null]]
-        var values = [["Today", 42147], ["Tomorrow", "5/24"], ["Difference in days", null]];
-        var formulas = [[null,null], [null,null], [null,"=G6-G5"]];
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        range.numberFormat = numberFormat;
-        range.values = values;
-        range.formulas= formulas;
-        range.load('text');
-        return ctx.sync().then(function() {
-            console.log(range.text);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-Excel.RangeBorder#load:member(2):
-  - |-
-    Excel.run(function (ctx) { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:F8";
-        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
-        var range = worksheet.getRange(rangeAddress);
-        var borders = range.format.borders;
-        borders.load('items');
-        return ctx.sync().then(function() {
-            console.log(borders.count);
-            for (var i = 0; i < borders.items.length; i++)
-            {
-                console.log(borders.items[i].sideIndex);
-            }
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
+Excel.RangeBorder#style:member:
   - |-
     // The example below adds grid border around the range.
     Excel.run(function (ctx) { 
@@ -1452,30 +1252,10 @@ Excel.RangeBorderCollection#load:member(2):
         border.load('items');
         return ctx.sync().then(function() {
             console.log(borders.count);
-            for (var i = 0; i < borders.items.length; i++)
-            {
+            for (var i = 0; i < borders.items.length; i++) {
                 console.log(borders.items[i].sideIndex);
             }
         });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    // The example below adds grid border around the range.
-    Excel.run(function (ctx) { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:F8";
-        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-        range.format.borders.getItem('InsideHorizontal').style = 'Continuous';
-        range.format.borders.getItem('InsideVertical').style = 'Continuous';
-        range.format.borders.getItem('EdgeBottom').style = 'Continuous';
-        range.format.borders.getItem('EdgeLeft').style = 'Continuous';
-        range.format.borders.getItem('EdgeRight').style = 'Continuous';
-        range.format.borders.getItem('EdgeTop').style = 'Continuous';
-        return ctx.sync(); 
     }).catch(function(error) {
         console.log("Error: " + error);
         if (error instanceof OfficeExtension.Error) {
@@ -1738,6 +1518,7 @@ Excel.Table#load:member(2):
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+Excel.Table#style:member:
   - |-
     // Set table style. 
     Excel.run(function (ctx) { 
@@ -1922,23 +1703,6 @@ Excel.TableColumn#load:member(2):
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
-    Excel.run(function (ctx) { 
-        var tableName = 'Table1';
-        var tables = ctx.workbook.tables;
-        var newValues = [["New"], ["Values"], ["For"], ["New"], ["Column"]];
-        var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(2);
-        column.values = newValues;
-        column.load('values');
-        return ctx.sync().then(function() {
-            console.log(column.values);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
 Excel.TableColumnCollection#add:member(1):
   - |-
     Excel.run(function (ctx) { 
@@ -1958,10 +1722,10 @@ Excel.TableColumnCollection#add:member(1):
 Excel.TableColumnCollection#getItem:member(1):
   - |-
     Excel.run(function (ctx) { 
-        var tablecolumn = ctx.workbook.tables.getItem('Table1').columns.getItem(0);
-        tablecolumn.load('name');
+        var tableColumn = ctx.workbook.tables.getItem('Table1').columns.getItem(0);
+        tableColumn.load('name');
         return ctx.sync().then(function() {
-                console.log(tablecolumn.name);
+                console.log(tableColumn.name);
         });
     }).catch(function(error) {
         console.log("Error: " + error);
@@ -1972,10 +1736,10 @@ Excel.TableColumnCollection#getItem:member(1):
 Excel.TableColumnCollection#getItemAt:member(1):
   - |-
     Excel.run(function (ctx) { 
-        var tablecolumn = ctx.workbook.tables.getItem['Table1'].columns.getItemAt(0);
-        tablecolumn.load('name');
+        var tableColumn = ctx.workbook.tables.getItem['Table1'].columns.getItemAt(0);
+        tableColumn.load('name');
         return ctx.sync().then(function() {
-                console.log(tablecolumn.name);
+                console.log(tableColumn.name);
         });
     }).catch(function(error) {
         console.log("Error: " + error);
@@ -1986,12 +1750,12 @@ Excel.TableColumnCollection#getItemAt:member(1):
 Excel.TableColumnCollection#load:member(2):
   - |-
     Excel.run(function (ctx) { 
-        var tablecolumns = ctx.workbook.tables.getItem('Table1').columns;
-        tablecolumns.load('items');
+        var tableColumns = ctx.workbook.tables.getItem('Table1').columns;
+        tableColumns.load('items');
         return ctx.sync().then(function() {
-            console.log("tablecolumns Count: " + tablecolumns.count);
-            for (var i = 0; i < tablecolumns.items.length; i++) {
-                console.log(tablecolumns.items[i].name);
+            console.log("tableColumns Count: " + tableColumns.count);
+            for (var i = 0; i < tableColumns.items.length; i++) {
+                console.log(tableColumns.items[i].name);
             }
         });
     }).catch(function(error) {
@@ -2044,23 +1808,6 @@ Excel.TableRow#load:member(2):
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
-    Excel.run(function (ctx) { 
-        var tables = ctx.workbook.tables;
-        var newValues = [["New", "Values", "For", "New", "Row"]];
-        var tableName = 'Table1';
-        var row = ctx.workbook.tables.getItem(tableName).rows.getItemAt(2);
-        row.values = newValues;
-        row.load('values');
-        return ctx.sync().then(function() {
-            console.log(row.values);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
 Excel.TableRowCollection#add:member(1):
   - |-
     Excel.run(function (ctx) { 
@@ -2098,8 +1845,7 @@ Excel.TableRowCollection#load:member(2):
         tablerows.load('items');
         return ctx.sync().then(function() {
             console.log("tablerows Count: " + tablerows.count);
-            for (var i = 0; i < tablerows.items.length; i++)
-            {
+            for (var i = 0; i < tablerows.items.length; i++) {
                 console.log(tablerows.items[i].index);
             }
         });
@@ -2115,8 +1861,7 @@ Excel.TableRowCollection#load:member(2):
         var table = ctx.workbook.tables.getItem("Table1");
         var tableRows = table.rows.load({"select" : "index, values","top": 100, "skip": 0 })
         return ctx.sync().then(function() {
-            for (var i = 0; i < tableRows.items.length; i++)
-            {
+            for (var i = 0; i < tableRows.items.length; i++) {
                 console.log(tableRows.items[i].index);
                 console.log(tableRows.items[i].values);
             }
@@ -2267,19 +2012,6 @@ Excel.Worksheet#load:member(2):
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
-    // Set worksheet position. 
-    Excel.run(function (ctx) { 
-        var wSheetName = 'Sheet1';
-        var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
-        worksheet.position = 2;
-        return ctx.sync(); 
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
 Excel.Worksheet#onActivated:member:
   - |-
     Excel.run(function (context) {
@@ -2320,7 +2052,7 @@ Excel.Worksheet#onRowHiddenChanged:member:
   - |-
     Excel.run(function (context) {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
-        sheet.onRowHiddenChanged.add(function (event)   {
+        sheet.onRowHiddenChanged.add(function (event) {
             return Excel.run(function (context) {
                 console.log(`Row ${event.address} is now ${event.changeType}`);
                 return context.sync();
@@ -2339,6 +2071,20 @@ Excel.Worksheet#onSelectionChanged:member:
             });
         });
         return context.sync();
+    });
+Excel.Worksheet#position:member:
+  - |-
+    // Set worksheet position. 
+    Excel.run(function (ctx) { 
+        var wSheetName = 'Sheet1';
+        var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+        worksheet.position = 2;
+        return ctx.sync(); 
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
 Excel.WorksheetChangedEventArgs#details:member:
   - |-
@@ -2401,7 +2147,7 @@ Excel.WorksheetCollection#load:member(2):
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.WorksheetProtection#protect:member(1):
+Excel.Worksheet#protection:member:
   - |-
     Excel.run(function(ctx) {
       // get a reference to Sheet1
@@ -2412,22 +2158,6 @@ Excel.WorksheetProtection#protect:member(1):
         allowInsertRows: false,
         allowDeleteRows: false
       });
-    
-      return ctx.sync();
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-Excel.WorksheetProtection#unprotect:member(1):
-  - |-
-    Excel.run(function(ctx) {
-      // get a reference to Sheet1
-      var sheet = ctx.workbook.worksheets.getItem("Sheet1");
-    
-      // Remove all protects applied to Sheet1
-      sheet.protection.unprotect();
     
       return ctx.sync();
     }).catch(function(error) {
