@@ -220,6 +220,14 @@ items:
       Office.context.mailbox.displayAppointmentForm(appointmentId);
 
       ```
+
+      ```javascript
+
+      var itemId = $("#itemId").val();
+
+      Office.context.mailbox.displayAppointmentForm(itemId);
+
+      ```
     name: displayAppointmentForm(itemId)
     fullName: displayAppointmentForm(itemId)
     langs:
@@ -274,6 +282,14 @@ items:
       ```javascript
 
       Office.context.mailbox.displayMessageForm(messageId);
+
+      ```
+
+      ```javascript
+
+      var itemId = $("#itemId").val();
+
+      Office.context.mailbox.displayMessageForm(itemId);
 
       ```
     name: displayMessageForm(itemId)
@@ -351,6 +367,30 @@ items:
       });
 
       ```
+
+      ```javascript
+
+      var start = new Date();
+
+      var end = new Date();
+
+      end.setHours(start.getHours() + 1);
+
+
+      Office.context.mailbox.displayNewAppointmentForm(
+
+      {
+          requiredAttendees: ['bob@contoso.com'],
+          optionalAttendees: ['sam@contoso.com'],
+          start: start,
+          end: end,
+          location: 'Home',
+          subject: 'meeting',
+          resources: ['projector@contoso.com'],
+          body: 'Hello World!'
+      });
+
+      ```
     name: displayNewAppointmentForm(parameters)
     fullName: displayNewAppointmentForm(parameters)
     langs:
@@ -392,6 +432,32 @@ items:
 
 
       **Note**: This member is not supported in Outlook on iOS or Android.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
+
+      var ewsId = Office.context.mailbox.item.itemId;
+
+      console.log("EWS item ID: " + Office.context.mailbox.item.itemId);
+
+
+      console.log("REST URL: " + Office.context.mailbox.restUrl);
+
+      var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+
+      console.log("REST item ID: " + restId);
+
+
+      var ewsId2 = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
+
+      console.log("EWS ID (from REST ID): " + ewsId2);
+
+      ```
     name: ewsUrl
     fullName: ewsUrl
     langs:
@@ -475,6 +541,25 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function (result) {
+          var ewsId = Office.context.mailbox.item.itemId;
+          var token = result.value;
+          var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+          var getMessageUrl = Office.context.mailbox.restUrl + '/v2.0/me/messages/' + restId;
+                  
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', getMessageUrl);
+          xhr.setRequestHeader("Authorization", "Bearer " + token);
+          xhr.onload = function (e) {
+              console.log(this.response);
+          }
+          xhr.send();
+      });
+
+      ```
     name: 'getCallbackTokenAsync(callback, userContext)'
     fullName: 'getCallbackTokenAsync(callback, userContext)'
     langs:
@@ -544,6 +629,18 @@ items:
       function cb(asyncResult) {
           var token = asyncResult.value;
       }
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.getUserIdentityTokenAsync(function (result) {
+          if (result.status !== Office.AsyncResultStatus.Succeeded) {
+              console.error(`Token retrieval failed with message: ${result.error.message}`);
+          } else {
+              console.log(result.value);
+          }
+      });
 
       ```
     name: 'getUserIdentityTokenAsync(callback, userContext)'
@@ -708,6 +805,62 @@ items:
 
           // Process the returned response here.
       }
+
+      ```
+
+      ```javascript
+
+      var ewsId = Office.context.mailbox.item.itemId;
+
+      var request = '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
+      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+      xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">' +
+          '  <soap:Header><t:RequestServerVersion Version="Exchange2013" /></soap:Header>' +
+          '  <soap:Body>' +
+          '    <m:GetItem>' +
+          '      <m:ItemShape>' +
+          '        <t:BaseShape>IdOnly</t:BaseShape>' +
+          '      </m:ItemShape >' +
+          '      <m:ItemIds>' +
+          '        <t:ItemId Id="' + ewsId + '" />' +
+          '      </m:ItemIds>' +
+          '    </m:GetItem>' +
+          '  </soap:Body>' +
+          '</soap:Envelope>';
+
+      Office.context.mailbox.makeEwsRequestAsync(request, function (result) {
+          console.log(result);
+      });
+
+      ```
+
+      ```javascript
+
+      var request = '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
+      xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types"
+      xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">'+
+          '  <soap:Header><t:RequestServerVersion Version="Exchange2010" /></soap:Header>'+
+          '  <soap:Body>'+
+          '    <m:CreateItem MessageDisposition="SendAndSaveCopy">'+
+          '      <m:SavedItemFolderId><t:DistinguishedFolderId Id="sentitems" /></m:SavedItemFolderId>'+
+          '      <m:Items>'+
+          '        <t:Message>'+
+          '          <t:Subject>Hello, Outlook!</t:Subject>'+
+          '          <t:Body BodyType="HTML">This message was sent from a ScriptLab code sample, used from ' + Office.context.mailbox.diagnostics.hostName + ', version ' + Office.context.mailbox.diagnostics.hostVersion + '!</t:Body>'+
+          '          <t:ToRecipients>'+
+          '            <t:Mailbox><t:EmailAddress>' + Office.context.mailbox.userProfile.emailAddress + '</t:EmailAddress></t:Mailbox>'+
+          '          </t:ToRecipients>'+
+          '        </t:Message>'+
+          '      </m:Items>'+
+          '    </m:CreateItem>'+
+          '  </soap:Body>'+
+          '</soap:Envelope>';
+
+      Office.context.mailbox.makeEwsRequestAsync(request, function (result) {
+          console.log(result);
+      });
 
       ```
     name: 'makeEwsRequestAsync(data, callback, userContext)'

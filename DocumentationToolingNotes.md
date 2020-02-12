@@ -24,9 +24,9 @@ There are four relevant d.ts files that provide source content for different sub
   - [Outlook (Preview)](https://docs.microsoft.com/javascript/api/outlook)
   - [Word (Preview)](https://docs.microsoft.com/javascript/api/word)
   - [Common API](https://docs.microsoft.com/javascript/api/office)
-- [custom-functions-runtime/index.d.ts](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/custom-functions-runtime/index.d.ts)(The Excel Custom Functions runtime definitions.)
+- [custom-functions-runtime/index.d.ts](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/custom-functions-runtime/index.d.ts) (The Excel Custom Functions runtime definitions.)
   - [Custom Functions](https://docs.microsoft.com/javascript/api/custom-functions-runtime)
-- [office-runtime/index.d.ts](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/office-runtime/index.d.ts)(The office runtime definitions for the Custom Functions platform.)
+- [office-runtime/index.d.ts](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/office-runtime/index.d.ts) (The office runtime definitions for the Custom Functions platform.)
   - [Office Runtime](https://docs.microsoft.com/javascript/api/office-runtime)
 
 Older versions of the APIs have their own d.ts files. These are preserved when a new API requirement set is released. They can also be generated using the [Version Remover tool](https://github.com/OfficeDev/office-js-docs-reference/blob/master/generate-docs/tools/VersionRemover.ts). These old d.ts files are maintained so that in the event APIs are patched or altered, the original behavior is still documented. This is useful if you have to target an older version of the API.

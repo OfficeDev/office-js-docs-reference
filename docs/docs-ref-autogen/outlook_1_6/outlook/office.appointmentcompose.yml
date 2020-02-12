@@ -115,6 +115,17 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      var attachmentUrl = $("#attachmentUrl").val();
+
+      Office.context.mailbox.item.addFileAttachmentAsync(
+          attachmentUrl,
+          getFileName(attachmentUrl),
+          { "asyncContext" : { var1: 1, var2: true } },
+          function(result) { console.log(result); });
+      ```
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     fullName: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     langs:
@@ -294,6 +305,17 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      var attachmentItemId = $("#attachmentItemId").val();
+
+      Office.context.mailbox.item.addItemAttachmentAsync(
+          attachmentItemId,
+          "My attachment",
+          { "asyncContext" : { var3: 3, var4: false } },
+          function(result) { console.log(result); });
+      ```
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     fullName: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     langs:
@@ -469,6 +491,16 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
       Organizer
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.close();
+
+      ```
     name: close()
     fullName: close()
     langs:
@@ -635,6 +667,24 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
       Organizer
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var text = asyncResult.value.data;
+          var prop = asyncResult.value.sourceProperty;
+          console.log("Selected text in " + prop + ": " + text);
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: 'getSelectedDataAsync(coercionType, callback)'
     fullName: 'getSelectedDataAsync(coercionType, callback)'
     langs:
@@ -765,6 +815,27 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
+        if (result.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Loaded following custom properties:");
+          customProps = result.value;
+          var dataKey = Object.keys(customProps)[0];
+          var data = customProps[dataKey];
+          for (var propertyName in data)
+          {
+            var propertyValue = data[propertyName];
+            console.log(`${propertyName}: ${propertyValue}`);
+          }              
+        }
+        else {
+          console.error(`loadCustomPropertiesAsync failed with message ${result.error.message}`);
+        }
+      });
+
+      ```
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: 'loadCustomPropertiesAsync(callback, userContext)'
     langs:
@@ -859,6 +930,78 @@ items:
       );
 
       ```
+
+      ```javascript
+
+      var id = $("#notificationId").val();
+
+      var details =
+        {
+          type: "progressIndicator",
+          message: "Progress indicator with id = " + id
+        };
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+      ```
+
+      ```javascript
+
+      var id = $("#notificationId").val();
+
+      var details =
+        {
+          type: "informationalMessage",
+          message: "Non-persistent informational notification message with id = " + id,
+          icon: "icon1",
+          persistent: false
+        };
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+      ```
+
+      ```javascript
+
+      var id = $("#notificationId").val();
+
+      var details =
+        {
+          type: "informationalMessage",
+          message: "Persistent informational notification message with id = " + id,
+          icon: "icon1",
+          persistent: true
+        };
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+
+      ```
+
+      ```javascript
+
+      var id = $("#notificationId").val();
+
+      Office.context.mailbox.item.notificationMessages.replaceAsync(
+        id,
+        {
+          type: "informationalMessage",
+          message: "Notification message with id = " + id + " has been replaced with an informational message.",
+          icon: "icon2",
+          persistent: false
+        },
+        handleResult);
+      ```
+
+      ```javascript
+
+      var id = $("#notificationId").val();
+
+      Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
+
+      ```
     name: notificationMessages
     fullName: notificationMessages
     langs:
@@ -908,6 +1051,28 @@ items:
       function callback(asyncResult) {
           var arrayOfOptionalAttendeesRecipients = asyncResult.value;
       }
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.optionalAttendees.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var apptOptionalAttendees = asyncResult.value;
+          for (var i = 0; i < apptOptionalAttendees.length; i++) {
+            console.log(
+              "Optional attendees: " +
+                apptOptionalAttendees[i].displayName +
+                " (" +
+                apptOptionalAttendees[i].emailAddress +
+                ") - response: " +
+                apptOptionalAttendees[i].appointmentResponse
+            );
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
 
       ```
     name: optionalAttendees
@@ -962,6 +1127,23 @@ items:
           function (asyncResult)
           {
               console.log(asyncResult.status);
+          }
+      );
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.removeAttachmentAsync(
+          $("#attachmentId").val(),
+          { asyncContext : null },
+          function(result)
+          {
+              if (result.status !== Office.AsyncResultStatus.Succeeded) {
+                  console.error(`${result.error.message}`);
+              } else {
+                  console.log(`Attachment removed successfully.`);
+              }
           }
       );
 
@@ -1091,6 +1273,28 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.requiredAttendees.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var apptRequiredAttendees = asyncResult.value;
+          for (var i = 0; i < apptRequiredAttendees.length; i++) {
+            console.log(
+              "Required attendees: " +
+                apptRequiredAttendees[i].displayName +
+                " (" +
+                apptRequiredAttendees[i].emailAddress +
+                ") - response: " +
+                apptRequiredAttendees[i].appointmentResponse
+            );
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: requiredAttendees
     fullName: requiredAttendees
     langs:
@@ -1124,9 +1328,10 @@ items:
       **Note**: The following clients have different behavior for saveAsync on appointments in compose mode:
 
 
-      - Outlook on Mac does not support saving a meeting. The saveAsync method fails when called from a meeting in
-      compose mode. See [Cannot save a meeting as a draft in Outlook for Mac by using Office JS
-      API](https://support.microsoft.com/help/4505745) for a workaround.
+      - In Outlook on Mac, only preview build 16.35.205.0 or later with an Office 365 subscription supports saving a
+      meeting. Otherwise, the saveAsync method fails when called from a meeting in compose mode. For a workaround, see
+      [Cannot save a meeting as a draft in Outlook for Mac by using Office JS
+      API](https://support.microsoft.com/help/4505745)<!-- -->.
 
 
       - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose
@@ -1148,6 +1353,23 @@ items:
 
 
       - InvalidAttachmentId: The attachment identifier does not exist.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.saveAsync(function (result) {
+        if (result.status === Office.AsyncResultStatus.Succeeded) {
+          console.log(`saveAsync succeeded, itemId is ${result.value}`);
+        }
+        else {
+          console.error(`saveAsync failed with message ${result.error.message}`);
+        }
+      });
+
+      ```
     name: 'saveAsync(options, callback)'
     fullName: 'saveAsync(options, callback)'
     langs:
@@ -1197,9 +1419,10 @@ items:
       **Note**: The following clients have different behavior for saveAsync on appointments in compose mode:
 
 
-      - Outlook on Mac does not support saving a meeting. The saveAsync method fails when called from a meeting in
-      compose mode. See [Cannot save a meeting as a draft in Outlook for Mac by using Office JS
-      API](https://support.microsoft.com/help/4505745) for a workaround.
+      - In Outlook on Mac, only preview build 16.35.205.0 or later with an Office 365 subscription supports saving a
+      meeting. Otherwise, the saveAsync method fails when called from a meeting in compose mode. For a workaround, see
+      [Cannot save a meeting as a draft in Outlook for Mac by using Office JS
+      API](https://support.microsoft.com/help/4505745)<!-- -->.
 
 
       - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose
@@ -1372,6 +1595,18 @@ items:
       ```javascript
 
       Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.setSelectedDataAsync("Replaced", function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Selected text has been updated successfully.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
 
       ```
     name: 'setSelectedDataAsync(data, callback)'

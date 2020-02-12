@@ -1044,7 +1044,7 @@ items:
           Excel.run(function (context) {
               var sheet = context.workbook.worksheets.getItem("Sample");
               sheet.onActivated.add(function (event) {
-                  return Excel.run((context) => {
+                  return Excel.run(function (context) {
                       console.log("The activated worksheet ID is: " + event.worksheetId);
                       return context.sync();
                   });
@@ -1076,7 +1076,7 @@ items:
           Excel.run(function (context) {
               var sheet = context.workbook.worksheets.getItem("Sample");
               sheet.onCalculated.add(function (event) {
-                  return Excel.run((context) => {
+                  return Excel.run(function (context) {
                       console.log("The worksheet has recalculated.");
                       return context.sync();
                   });
@@ -1179,7 +1179,7 @@ items:
           Excel.run(function (context) {
               var sheet = context.workbook.worksheets.getItem("Sample");
               sheet.onDeactivated.add(function (event) {
-                  return Excel.run((context) => {
+                  return Excel.run(function (context) {
                       console.log("The deactivated worksheet is: " + event.worksheetId);
                       return context.sync();
                   });
@@ -1238,6 +1238,23 @@ items:
       return:
         type:
           - 'excel!Excel.Worksheet#onRowHiddenChanged~0:complex'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context) {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              sheet.onRowHiddenChanged.add(function (event)   {
+                  return Excel.run(function (context) {
+                      console.log(`Row ${event.address} is now ${event.changeType}`);
+                      return context.sync();
+                  });
+              });
+              return context.sync();
+          });
+          ```
   - uid: 'excel!Excel.Worksheet#onRowSorted:member'
     summary: |-
       Occurs when one or more rows have been sorted. This happens as the result of a top-to-bottom sort operation.
@@ -1304,7 +1321,7 @@ items:
           Excel.run(function (context) {
               var sheet = context.workbook.worksheets.getItem("Sample");
               sheet.onSelectionChanged.add(function (event) {
-                  return Excel.run((context) => {
+                  return Excel.run(function (context) {
                       console.log("The selected range has changed to: " + event.address);
                       return context.sync();
                   });

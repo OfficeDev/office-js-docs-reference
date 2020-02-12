@@ -158,6 +158,17 @@ items:
                   });
           });
       ```
+
+      ```javascript
+
+      var attachmentUrl = $("#attachmentUrl").val();
+
+      Office.context.mailbox.item.addFileAttachmentAsync(
+          attachmentUrl,
+          getFileName(attachmentUrl),
+          { "asyncContext" : { var1: 1, var2: true } },
+          function(result) { console.log(result); });
+      ```
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     fullName: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     langs:
@@ -334,6 +345,18 @@ items:
                       // Do something here.
                   });
           });
+      ```
+
+      ```javascript
+
+      base64String =
+      "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAACRUlEQVRYw82XzXHbMBCFP2F8tzsQc8Ixyh0zoiuIXIGdCsxUYKqC0B04FdiuwMoM7mGOOIXqQGoAymXhgSX+itJM9kIRFLAP+3YXD5Pdbscx5oxaAIW8Ztr6l2PWmQwF4IyaieP53qdfAqQ8CwBn1JU4vpWhrbxXQA5MZfynANmcDIAzKgcy4FKGXsVJFf3nLgKyBQptfT4KQMRz2N0fcbxqmRMDWXflx0VPnrdArq0vekQ1Dv0UeHZGNebHhwjU8AzwKM43RyZnbAf58Q6ghudeWd0Aus0+5EcMIIRi3beua0D3Nm39BEAx3i7HTK4DEBJn5YxKOnaRA5+ErpMBWMpzDvx1RuXCcxOISlufAjfC7zgAsqsvUvMAD0ApPaEtGi9AIlUzKgJo60tt/SyKRkzLrAXERluf7W1gOICWaMyB386oooOWsIHvXbSoHuUSFovtHqicUVnH3EJoeT0aQEf5/XBGlc6otIOWBXAtPeZkAIJ9Bt6cUU9tZautX2nrk3MACHYr1ZKProKRtDw4o8pzAPjWo+NtpXTTvoteDDg8noDAcwbcRedAkGdFXyk2GEDcegVAFp2gyVDHjRQ4o6q2smoqtR5Hd+qMqtoALCWUUymr1m43QMZfOaMK4C0SrMsDANJ2E5FNcbdbjHC+ENl+H0myJFbLtaq4Rt8dyPBYRQV1E40nMv9rl7xrOw3DGb+Whcqu3i/OM6CUOWvgRlufNmnLYy4m77uJI7AXtdNcTDrU71LEyv7v01/N/ovL6bmu5/8A1tNWZldH0W4AAAAASUVORK5CYII=";
+
+      Office.context.mailbox.item.addFileAttachmentFromBase64Async(
+          base64String,
+          "logo.png",
+          { isInline: false },
+          function(result) { console.log(result); });
       ```
     name: 'addFileAttachmentFromBase64Async(base64File, attachmentName, options, callback)'
     fullName: 'addFileAttachmentFromBase64Async(base64File, attachmentName, options, callback)'
@@ -624,6 +647,17 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      var attachmentItemId = $("#attachmentItemId").val();
+
+      Office.context.mailbox.item.addItemAttachmentAsync(
+          attachmentItemId,
+          "My attachment",
+          { "asyncContext" : { var3: 3, var4: false } },
+          function(result) { console.log(result); });
+      ```
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     fullName: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     langs:
@@ -771,6 +805,22 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.bcc.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var msgBcc = asyncResult.value;
+          console.log("Message being bcc'd to:");
+          for (var i = 0; i < msgBcc.length; i++) {
+            console.log(msgBcc[i].displayName + " (" + msgBcc[i].emailAddress + ")");
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: bcc
     fullName: bcc
     langs:
@@ -856,6 +906,23 @@ items:
       });
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var categories = asyncResult.value;
+          if (categories) {
+            console.log(categories);
+          } else {
+            console.log("There are no categories.");
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: categories
     fullName: categories
     langs:
@@ -907,6 +974,22 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.cc.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var msgCc = asyncResult.value;
+          console.log("Message being copied to:");
+          for (var i = 0; i < msgCc.length; i++) {
+            console.log(msgCc[i].displayName + " (" + msgCc[i].emailAddress + ")");
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: cc
     fullName: cc
     langs:
@@ -941,6 +1024,16 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
       Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.close();
+
+      ```
     name: close()
     fullName: close()
     langs:
@@ -1026,6 +1119,19 @@ items:
       function callback(asyncResult) {
           var from = asyncResult.value;
       }
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.from.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var msgFrom = asyncResult.value;
+          console.log("Message from: " + msgFrom.displayName + " (" + msgFrom.emailAddress + ")");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
 
       ```
     name: from
@@ -1173,6 +1279,54 @@ items:
 
 
       - InvalidAttachmentId: The attachment identifier does not exist.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      var item = Office.context.mailbox.item;
+
+      var options = {asyncContext: {currentItem: item}};
+
+      item.getAttachmentsAsync(options, callback);
+
+
+      function callback(result) {
+          if (result.value.length > 0) {
+              for (i = 0 ; i < result.value.length ; i++) {
+                  result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
+              }
+          }
+      }
+
+
+      function handleAttachmentsCallback(result) {
+          // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
+          switch (result.value.format) {
+              case Office.MailboxEnums.AttachmentContentFormat.Base64:
+                  // Handle file attachment.
+                  console.log(result.value.content);
+                  break;
+              case Office.MailboxEnums.AttachmentContentFormat.Eml:
+                  // Handle email item attachment.
+                  console.log("Attachment is a message.");
+                  break;
+              case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
+                  // Handle .icalender attachment.
+                  console.log("Attachment is a calendar item.");
+                  break;
+              case Office.MailboxEnums.AttachmentContentFormat.Url:
+                  // Handle cloud attachment.
+                  console.log("Attachment is a cloud attachment.");
+                  break;
+              default:
+                  // Handle attachment formats that are not supported.
+          }
+      }
+
+      ```
     name: 'getAttachmentContentAsync(attachmentId, callback)'
     fullName: 'getAttachmentContentAsync(attachmentId, callback)'
     langs:
@@ -1277,6 +1431,26 @@ items:
               }
           }
       }
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.getAttachmentsAsync(function (result) {
+          if (result.status !== Office.AsyncResultStatus.Succeeded) {
+              console.error(result.error.message);
+          } else {
+              if (result.value.length > 0) {
+                  for (var i = 0; i < result.value.length; i++) {
+                      var attachment = result.value[i];
+                      console.log(`${attachment.id}. Name: ${attachment.name}, size: ${attachment.size}, isInline: ${attachment.isInline}`);
+                  }
+              }
+              else {
+                  console.log("No attachments on this message.");
+              }
+          }
+      });
 
       ```
     name: getAttachmentsAsync(callback)
@@ -1503,6 +1677,22 @@ items:
 
 
       - `ItemNotSaved`<!-- -->: The id can't be retrieved until the item is saved.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.getItemIdAsync(function (result) {
+          if (result.status !== Office.AsyncResultStatus.Succeeded) {
+              console.error(`getItemIdAsync failed with message: ${result.error.message}`);
+          } else {
+              console.log(result.value);
+          }
+      });
+
+      ```
     name: getItemIdAsync(callback)
     fullName: getItemIdAsync(callback)
     langs:
@@ -1619,6 +1809,24 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
       Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var text = asyncResult.value.data;
+          var prop = asyncResult.value.sourceProperty;
+          console.log("Selected text in " + prop + ": " + text);
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: 'getSelectedDataAsync(coercionType, callback)'
     fullName: 'getSelectedDataAsync(coercionType, callback)'
     langs:
@@ -1659,6 +1867,55 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
       Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
+        console.error("Try this sample on a message from a shared folder.");
+        return;
+      }
+
+
+      Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function(result) {
+        if (result.status === Office.AsyncResultStatus.Succeeded && result.value !== "") {
+          Office.context.mailbox.item.getSharedPropertiesAsync(
+            {
+              // Pass auth token along.
+              asyncContext: result.value
+            },
+            function(result2) {
+              let sharedProperties = result2.value;
+              let delegatePermissions = sharedProperties.delegatePermissions;
+
+              // Determine if user can do the expected operation, e.g., do they have Write permission?
+              if ((delegatePermissions & Office.MailboxEnums.DelegatePermissions.Read) != 0) {
+                var ewsId = Office.context.mailbox.item.itemId;
+                var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+                let rest_url =
+                  sharedProperties.targetRestUrl + "/v2.0/users/" + sharedProperties.targetMailbox + "/messages/" + restId;
+
+                $.ajax({
+                  url: rest_url,
+                  dataType: "json",
+                  headers: { Authorization: "Bearer " + result2.asyncContext }
+                })
+                  .done(function(response) {
+                    console.log(response);
+                  })
+                  .fail(function(error) {
+                    console.error(error);
+                  });
+              }
+            }
+          );
+        }
+      });
+
+      ```
     name: 'getSharedPropertiesAsync(options, callback)'
     fullName: 'getSharedPropertiesAsync(options, callback)'
     langs:
@@ -1713,6 +1970,20 @@ items:
           var context = asyncResult.context;
           var sharedProperties = asyncResult.value;
       }
+
+      ```
+
+      ```javascript
+
+      if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
+        console.error("Try this sample on a message from a shared folder.");
+        return;
+      }
+
+
+      Office.context.mailbox.item.getSharedPropertiesAsync(function(result) {
+        console.log(result.value);
+      });
 
       ```
     name: getSharedPropertiesAsync(callback)
@@ -1880,6 +2151,27 @@ items:
       }
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
+        if (result.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Loaded following custom properties:");
+          customProps = result.value;
+          var dataKey = Object.keys(customProps)[0];
+          var data = customProps[dataKey];
+          for (var propertyName in data)
+          {
+            var propertyValue = data[propertyName];
+            console.log(`${propertyName}: ${propertyValue}`);
+          }              
+        }
+        else {
+          console.error(`loadCustomPropertiesAsync failed with message ${result.error.message}`);
+        }
+      });
+
+      ```
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: 'loadCustomPropertiesAsync(callback, userContext)'
     langs:
@@ -1934,6 +2226,78 @@ items:
       );
 
       ```
+
+      ```javascript
+
+      var id = $("#notificationId").val();
+
+      var details =
+        {
+          type: "progressIndicator",
+          message: "Progress indicator with id = " + id
+        };
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+      ```
+
+      ```javascript
+
+      var id = $("#notificationId").val();
+
+      var details =
+        {
+          type: "informationalMessage",
+          message: "Non-persistent informational notification message with id = " + id,
+          icon: "icon1",
+          persistent: false
+        };
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+      ```
+
+      ```javascript
+
+      var id = $("#notificationId").val();
+
+      var details =
+        {
+          type: "informationalMessage",
+          message: "Persistent informational notification message with id = " + id,
+          icon: "icon1",
+          persistent: true
+        };
+      Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
+
+      ```
+
+      ```javascript
+
+      var id = $("#notificationId").val();
+
+      Office.context.mailbox.item.notificationMessages.replaceAsync(
+        id,
+        {
+          type: "informationalMessage",
+          message: "Notification message with id = " + id + " has been replaced with an informational message.",
+          icon: "icon2",
+          persistent: false
+        },
+        handleResult);
+      ```
+
+      ```javascript
+
+      var id = $("#notificationId").val();
+
+      Office.context.mailbox.item.notificationMessages.removeAsync(id, handleResult);
+
+      ```
     name: notificationMessages
     fullName: notificationMessages
     langs:
@@ -1986,6 +2350,23 @@ items:
           function (asyncResult)
           {
               console.log(asyncResult.status);
+          }
+      );
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.removeAttachmentAsync(
+          $("#attachmentId").val(),
+          { asyncContext : null },
+          function(result)
+          {
+              if (result.status !== Office.AsyncResultStatus.Succeeded) {
+                  console.error(`${result.error.message}`);
+              } else {
+                  console.log(`Attachment removed successfully.`);
+              }
           }
       );
 
@@ -2175,18 +2556,6 @@ items:
       synced to the server. Until the item is synced, using the itemId will return an error.
 
 
-      **Note**: The following clients have different behavior for saveAsync on appointments in compose mode:
-
-
-      - Outlook on Mac does not support saving a meeting. The saveAsync method fails when called from a meeting in
-      compose mode. See [Cannot save a meeting as a draft in Outlook for Mac by using Office JS
-      API](https://support.microsoft.com/help/4505745) for a workaround.
-
-
-      - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose
-      mode.
-
-
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
@@ -2246,18 +2615,6 @@ items:
       **Note**: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or
       the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually
       synced to the server. Until the item is synced, using the itemId will return an error.
-
-
-      **Note**: The following clients have different behavior for saveAsync on appointments in compose mode:
-
-
-      - Outlook on Mac does not support saving a meeting. The saveAsync method fails when called from a meeting in
-      compose mode. See [Cannot save a meeting as a draft in Outlook for Mac by using Office JS
-      API](https://support.microsoft.com/help/4505745) for a workaround.
-
-
-      - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose
-      mode.
 
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -2372,6 +2729,21 @@ items:
 
       console.log("SeriesId is " + seriesId 
           + " and isSeriesInstance is " + isSeriesInstance);
+      ```
+
+      ```javascript
+
+      var seriesId = Office.context.mailbox.item.seriesId;
+
+
+      if (seriesId === undefined) {
+        console.log("This is a message that's not a meeting request.");
+      } else if (seriesId === null) {
+        console.log("This is a single appointment, a parent series, or a meeting request for a series or single meeting.");
+      } else {
+        console.log("This is an instance belonging to series with ID " + seriesId);
+      }
+
       ```
     name: seriesId
     fullName: seriesId
@@ -2490,6 +2862,18 @@ items:
       Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.setSelectedDataAsync("Replaced", function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Selected text has been updated successfully.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: 'setSelectedDataAsync(data, callback)'
     fullName: 'setSelectedDataAsync(data, callback)'
     langs:
@@ -2592,6 +2976,22 @@ items:
       function callback(asyncResult) {
           var arrayOfToRecipients = asyncResult.value;
       }
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.to.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var msgTo = asyncResult.value;
+          console.log("Message being sent to:");
+          for (var i = 0; i < msgTo.length; i++) {
+            console.log(msgTo[i].displayName + " (" + msgTo[i].emailAddress + ")");
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
 
       ```
     name: to
