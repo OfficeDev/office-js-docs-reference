@@ -235,8 +235,7 @@ items:
               tablerows.load('items');
               return ctx.sync().then(function() {
                   console.log("tablerows Count: " + tablerows.count);
-                  for (var i = 0; i < tablerows.items.length; i++)
-                  {
+                  for (var i = 0; i < tablerows.items.length; i++) {
                       console.log(tablerows.items[i].index);
                   }
               });
@@ -253,8 +252,7 @@ items:
               var table = ctx.workbook.tables.getItem("Table1");
               var tableRows = table.rows.load({"select" : "index, values","top": 100, "skip": 0 })
               return ctx.sync().then(function() {
-                  for (var i = 0; i < tableRows.items.length; i++)
-                  {
+                  for (var i = 0; i < tableRows.items.length; i++) {
                       console.log(tableRows.items[i].index);
                       console.log(tableRows.items[i].values);
                   }

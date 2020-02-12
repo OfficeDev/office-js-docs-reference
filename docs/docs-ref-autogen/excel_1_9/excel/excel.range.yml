@@ -1849,23 +1849,6 @@ items:
 
           #### Examples
 
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "D:F";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              var rangeUR = range.getUsedRange();
-              rangeUR.load('address');
-              return ctx.sync().then(function() {
-                  console.log(rangeUR.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
           ```typescript
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
@@ -2232,45 +2215,6 @@ items:
               }
           });
           ```
-          ```javascript
-          // Below example uses a named-range to get the range object.
-          Excel.run(function (ctx) { 
-              var rangeName = 'MyRange';
-              var range = ctx.workbook.names.getItem(rangeName).range;
-              range.load('cellCount');
-              return ctx.sync().then(function() {
-                  console.log(range.cellCount);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // The example below sets number-format, values and formulas on a grid that contains 2x3 grid.
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "F5:G7";
-              var numberFormat = [[null, "d-mmm"], [null, "d-mmm"], [null, null]]
-              var values = [["Today", 42147], ["Tomorrow", "5/24"], ["Difference in days", null]];
-              var formulas = [[null,null], [null,null], [null,"=G6-G5"]];
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              range.numberFormat = numberFormat;
-              range.values = values;
-              range.formulas= formulas;
-              range.load('text');
-              return ctx.sync().then(function() {
-                  console.log(range.text);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
@@ -2340,20 +2284,6 @@ items:
               }
           });
           ```
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:C3";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              range.unmerge();
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
       parameters:
         - id: across
           description: >-
@@ -2415,6 +2345,34 @@ items:
       return:
         type:
           - 'any[][]'
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // The example below sets number-format, values and formulas on a grid that contains 2x3 grid.
+          Excel.run(function (ctx) { 
+              var sheetName = "Sheet1";
+              var rangeAddress = "F5:G7";
+              var numberFormat = [[null, "d-mmm"], [null, "d-mmm"], [null, null]]
+              var values = [["Today", 42147], ["Tomorrow", "5/24"], ["Difference in days", null]];
+              var formulas = [[null,null], [null,null], [null,"=G6-G5"]];
+              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+              range.numberFormat = numberFormat;
+              range.values = values;
+              range.formulas= formulas;
+              range.load('text');
+              return ctx.sync().then(function() {
+                  console.log(range.text);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
   - uid: 'excel!Excel.Range#numberFormatLocal:member'
     summary: >-
       Represents Excel's number format code for the given range, based on the language settings of the user.​ Excel does
