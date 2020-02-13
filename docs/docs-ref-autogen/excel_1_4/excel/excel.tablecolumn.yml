@@ -320,24 +320,6 @@ items:
               }
           });
           ```
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tableName = 'Table1';
-              var tables = ctx.workbook.tables;
-              var newValues = [["New"], ["Values"], ["For"], ["New"], ["Column"]];
-              var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(2);
-              column.values = newValues;
-              column.load('values');
-              return ctx.sync().then(function() {
-                  console.log(column.values);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
