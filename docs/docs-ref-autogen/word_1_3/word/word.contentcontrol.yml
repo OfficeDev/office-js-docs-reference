@@ -1899,42 +1899,6 @@ items:
           #### Examples
 
 
-          ```javascript
-
-          // Run a batch operation against the Word object model.
-
-          Word.run(function (context) {
-              
-              // Create a proxy range object for the current selection.
-              var range = context.document.getSelection();
-              
-              // Queue a command to create the content control.
-              var myContentControl = range.insertContentControl();
-              myContentControl.tag = 'Customer-Address';
-              myContentControl.title = ' has t';
-              myContentControl.style = 'Heading 2';
-              myContentControl.insertText('One Microsoft Way, Redmond, WA 98052', 'Replace');
-              myContentControl.cannotEdit = true;
-              
-              // Queue a command to load the id property for the content control you created.
-              context.load(myContentControl, 'id');
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('Created content control with id: ' + myContentControl.id);
-              });  
-          })
-
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-
-          ```
-
           ```typescript
 
           // Traverses each paragraph of the document and wraps a content control on each with either a even or odd
