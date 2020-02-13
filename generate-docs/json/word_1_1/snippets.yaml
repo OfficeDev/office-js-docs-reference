@@ -383,53 +383,6 @@
       });
     });
 'Word.Body#search:member(1)':
-  - >-
-    // Run a batch operation against the Word object model.
-
-    Word.run(function (context) {
-
-        // Create a proxy object for the document body.
-        var body = context.document.body;
-
-        // Queue a command to search the document.
-        var searchResults = context.document.body.search('video', {matchCase: false});
-
-        // Queue a command to load the results.
-        context.load(searchResults, 'text, font');
-
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-            var results = 'Found count: ' + searchResults.items.length +
-                          '; we highlighted the results.';
-
-            // Queue a command to change the font for each found item.
-            for (var i = 0; i < searchResults.items.length; i++) {
-              searchResults.items[i].font.color = '#FF0000'    // Change color to Red
-              searchResults.items[i].font.highlightColor = '#FFFF00';
-              searchResults.items[i].font.bold = true;
-            }
-
-            // Synchronize the document state by executing the queued commands,
-            // and return a promise to indicate task completion.
-            return context.sync().then(function () {
-                console.log(results);
-            });
-        });
-    })
-
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-        }
-    });
-
-
-    // The Word-Add-in-DocumentAssembly sample provides another example of how
-    to search a document.
-
-    // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
   - |-
     await Word.run(async (context) => {
       let results = context.document.body.search("Online");
@@ -1032,36 +985,6 @@
       await context.sync();
     });
 'Word.ContentControl#tag:member':
-  - |-
-    // Run a batch operation against the Word object model.
-    Word.run(function (context) {
-        
-        // Create a proxy range object for the current selection.
-        var range = context.document.getSelection();
-        
-        // Queue a command to create the content control.
-        var myContentControl = range.insertContentControl();
-        myContentControl.tag = 'Customer-Address';
-        myContentControl.title = ' has t';
-        myContentControl.style = 'Heading 2';
-        myContentControl.insertText('One Microsoft Way, Redmond, WA 98052', 'Replace');
-        myContentControl.cannotEdit = true;
-        
-        // Queue a command to load the id property for the content control you created.
-        context.load(myContentControl, 'id');
-        
-        // Synchronize the document state by executing the queued commands, 
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-            console.log('Created content control with id: ' + myContentControl.id);
-        });  
-    })
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-        }
-    });
   - >-
     // Traverses each paragraph of the document and wraps a content control on
     each with either a even or odd tags.
@@ -1108,32 +1031,6 @@
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
-    // Run a batch operation against the Word object model.
-    Word.run(function (context) {
-
-        // Create a proxy object for the content control that contains a specific id.
-        var contentControl = context.document.contentControls.getByIdOrNullObject(30086310);
-
-        // Queue a command to load the text property for a content control.
-        context.load(contentControl, 'text');
-
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-            if (contentControl.isNullObject) {
-                console.log('There is no content control with that ID.')
-            } else {
-                console.log('The content control with that ID has been found in this document.');
-            }
-        });
-    })
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-        }
-    });
 'Word.ContentControlCollection#getByIdOrNullObject:member(1)':
   - |-
     // Run a batch operation against the Word object model.
@@ -1162,43 +1059,6 @@
         }
     });
 'Word.ContentControlCollection#getByTag:member(1)':
-  - >-
-    // Run a batch operation against the Word object model.
-
-    Word.run(function (context) {
-
-        // Create a proxy object for the content controls collection that contains a specific tag.
-        var contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
-
-        // Queue a command to load the text property for all of content controls with a specific tag.
-        context.load(contentControlsWithTag, 'text');
-
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-            if (contentControlsWithTag.items.length === 0) {
-                console.log("There isn't a content control with a tag of Customer-Address in this document.");
-            } else {
-                console.log(
-                    'The first content control with the tag of Customer-Address has this text: ' + 
-                    contentControlsWithTag.items[0].text);
-            }
-
-        });
-    })
-
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-        }
-    });
-
-
-    // The Word-Add-in-DocumentAssembly sample has another example of using the
-    getByTag method.
-
-    // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
   - |-
     await Word.run(async (context) => {
         let contentControls = context.document.contentControls.getByTag("customer");
@@ -1476,99 +1336,7 @@
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-'Word.Font#load:member(1)':
-  - |-
-    // Change the font name
-    // Run a batch operation against the Word object model.
-    Word.run(function (context) {
-
-        // Create a range proxy object for the current selection.
-        var selection = context.document.getSelection();
-
-        // Queue a command to change the current selection's font name.
-        selection.font.name = 'Arial';
-
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-            console.log('The font name has changed.');
-        });
-    })
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    // Change the font color
-    // Run a batch operation against the Word object model.
-    Word.run(function (context) {
-
-        // Create a range proxy object for the current selection.
-        var selection = context.document.getSelection();
-
-        // Queue a command to change the font color of the current selection.
-        selection.font.color = 'blue';
-
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-            console.log('The font color of the selection has been changed.');
-        });
-    })
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    // Change the font size
-    // Run a batch operation against the Word object model.
-    Word.run(function (context) {
-
-        // Create a range proxy object for the current selection.
-        var selection = context.document.getSelection();
-
-        // Queue a command to change the current selection's font size.
-        selection.font.size = 20;
-
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-            console.log('The font size has changed.');
-        });
-    })
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    // Highlight selected text
-    // Run a batch operation against the Word object model.
-    Word.run(function (context) {
-
-        // Create a range proxy object for the current selection.
-        var selection = context.document.getSelection();
-
-        // Queue a command to highlight the current selection.
-        selection.font.highlightColor = '#FFFF00'; // Yellow
-
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-            console.log('The selection has been highlighted.');
-        });
-    })
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-        }
-    });
+'Word.Font#bold:member':
   - |-
     // Bold format text
     // Run a batch operation against the Word object model.
@@ -1592,21 +1360,22 @@
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+'Word.Font#color:member':
   - |-
-    // Underline format text
+    // Change the font color
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
 
         // Create a range proxy object for the current selection.
         var selection = context.document.getSelection();
 
-        // Queue a command to underline the current selection.
-        selection.font.underline = Word.UnderlineType.single;
+        // Queue a command to change the font color of the current selection.
+        selection.font.color = 'blue';
 
         // Synchronize the document state by executing the queued commands,
         // and return a promise to indicate task completion.
         return context.sync().then(function () {
-            console.log('The selection now has an underline style.');
+            console.log('The font color of the selection has been changed.');
         });
     })
     .catch(function (error) {
@@ -1615,6 +1384,79 @@
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+'Word.Font#highlightColor:member':
+  - |-
+    // Highlight selected text
+    // Run a batch operation against the Word object model.
+    Word.run(function (context) {
+
+        // Create a range proxy object for the current selection.
+        var selection = context.document.getSelection();
+
+        // Queue a command to highlight the current selection.
+        selection.font.highlightColor = '#FFFF00'; // Yellow
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        return context.sync().then(function () {
+            console.log('The selection has been highlighted.');
+        });
+    })
+    .catch(function (error) {
+        console.log('Error: ' + JSON.stringify(error));
+        if (error instanceof OfficeExtension.Error) {
+            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+        }
+    });
+'Word.Font#name:member':
+  - |-
+    // Change the font name
+    // Run a batch operation against the Word object model.
+    Word.run(function (context) {
+
+        // Create a range proxy object for the current selection.
+        var selection = context.document.getSelection();
+
+        // Queue a command to change the current selection's font name.
+        selection.font.name = 'Arial';
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        return context.sync().then(function () {
+            console.log('The font name has changed.');
+        });
+    })
+    .catch(function (error) {
+        console.log('Error: ' + JSON.stringify(error));
+        if (error instanceof OfficeExtension.Error) {
+            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+        }
+    });
+'Word.Font#size:member':
+  - |-
+    // Change the font size
+    // Run a batch operation against the Word object model.
+    Word.run(function (context) {
+
+        // Create a range proxy object for the current selection.
+        var selection = context.document.getSelection();
+
+        // Queue a command to change the current selection's font size.
+        selection.font.size = 20;
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        return context.sync().then(function () {
+            console.log('The font size has changed.');
+        });
+    })
+    .catch(function (error) {
+        console.log('Error: ' + JSON.stringify(error));
+        if (error instanceof OfficeExtension.Error) {
+            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+        }
+    });
+'Word.Font#strikeThrough:member':
   - |-
     // Strike format text
     // Run a batch operation against the Word object model.
@@ -1630,6 +1472,30 @@
         // and return a promise to indicate task completion.
         return context.sync().then(function () {
             console.log('The selection now has a strikethrough.');
+        });
+    })
+    .catch(function (error) {
+        console.log('Error: ' + JSON.stringify(error));
+        if (error instanceof OfficeExtension.Error) {
+            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+        }
+    });
+'Word.Font#underline:member':
+  - |-
+    // Underline format text
+    // Run a batch operation against the Word object model.
+    Word.run(function (context) {
+
+        // Create a range proxy object for the current selection.
+        var selection = context.document.getSelection();
+
+        // Queue a command to underline the current selection.
+        selection.font.underline = Word.UnderlineType.single;
+
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        return context.sync().then(function () {
+            console.log('The selection now has an underline style.');
         });
     })
     .catch(function (error) {
@@ -2044,40 +1910,6 @@
     });
 'Word.Paragraph#insertParagraph:member(1)':
   - |-
-    // Run a batch operation against the Word object model.
-    Word.run(function (context) {
-
-        // Create a proxy object for the paragraphs collection.
-        var paragraphs = context.document.body.paragraphs;
-
-        // Queue a command to load the style property for the top 2 paragraphs.
-        // We never perform an empty load. We always must request a property.
-        context.load(paragraphs, {select: 'style', top: 2} );
-
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-
-            // Queue a command to get the first paragraph.
-            var paragraph = paragraphs.items[0];
-
-            // Queue a command to insert the paragraph after the current paragraph.
-            paragraph.insertParagraph('Content of a new paragraph', Word.InsertLocation.after);
-
-            // Synchronize the document state by executing the queued commands,
-            // and return a promise to indicate task completion.
-            return context.sync().then(function () {
-                console.log('Inserted a new paragraph at the end of the first paragraph.');
-            });
-        });
-    })
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
     await Word.run(async (context) => {
       // Second sentence, let's insert it as a paragraph after the previously inserted one.
       let secondSentence = context.document.body.insertParagraph(
@@ -2095,40 +1927,6 @@
       await context.sync();
     });
 'Word.Paragraph#insertText:member(1)':
-  - |-
-    // Run a batch operation against the Word object model.
-    Word.run(function (context) {
-
-        // Create a proxy object for the paragraphs collection.
-        var paragraphs = context.document.body.paragraphs;
-
-        // Queue a command to load the style property for the top 2 paragraphs.
-        // We never perform an empty load. We always must request a property.
-        context.load(paragraphs, {select: 'style', top: 2} );
-
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-
-            // Queue a command to get the first paragraph.
-            var paragraph = paragraphs.items[0];
-
-            // Queue a command to insert text into the end of the paragraph.
-            paragraph.insertText('New text inserted into the paragraph.', Word.InsertLocation.end);
-
-            // Synchronize the document state by executing the queued commands,
-            // and return a promise to indicate task completion.
-            return context.sync().then(function () {
-                console.log('Inserted text at the end of the first paragraph.');
-            });
-        });
-    })
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-        }
-    });
   - |-
     await Word.run(async (context) => {
       // Replace the last paragraph.
@@ -2155,41 +1953,6 @@
       await context.sync();
     });
 'Word.Paragraph#select:member(1)':
-  - |-
-    // Run a batch operation against the Word object model.
-    Word.run(function (context) {
-
-        // Create a proxy object for the paragraphs collection.
-        var paragraphs = context.document.body.paragraphs;
-
-        // Queue a command to load the style property for all of the paragraphs.
-        context.load(paragraphs, 'style');
-
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-
-            // Queue a command to get the last paragraph a create a
-            // proxy paragraph object.
-            var paragraph = paragraphs.items[paragraphs.items.length - 1];
-
-            // Queue a command to select the paragraph. The Word UI will
-            // move to the selected paragraph.
-            paragraph.select();
-
-            // Synchronize the document state by executing the queued commands,
-            // and return a promise to indicate task completion.
-            return context.sync().then(function () {
-                console.log('Selected the last paragraph.');
-            });
-        });
-    })
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-        }
-    });
   - |-
     await Word.run(async (context) => {
       // If select is called with no parameters, it selects the object.
@@ -2468,36 +2231,6 @@
     });
 'Word.Range#insertContentControl:member(1)':
   - |-
-    // Run a batch operation against the Word object model.
-    Word.run(function (context) {
-
-        // Queue a command to get the current selection and then
-        // create a proxy range object with the results.
-        var range = context.document.getSelection();
-
-        // Queue a command to insert a content control around the selected text,
-        // and create a proxy content control object. We'll update the properties
-        // on the content control.
-        var myContentControl = range.insertContentControl();
-        myContentControl.tag = "Customer-Address";
-        myContentControl.title = "Enter Customer Address Here:";
-        myContentControl.style = "Normal";
-        myContentControl.insertText("One Microsoft Way, Redmond, WA 98052", 'Replace');
-        myContentControl.cannotEdit = true;
-
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-            console.log('Wrapped a content control around the selected text.');
-        });
-    })
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
     await Word.run(async (context) => {
         let results = context.document.body.search("Contractor");
         results.load("font/bold");
@@ -2668,89 +2401,6 @@
             console.log('Selected the range.');
         });
     })
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-        }
-    });
-'Word.RequestContext:class':
-  - >-
-    // The following example shows how the request context is used to load the
-    text property on a paragraph collection.
-
-    // Run a batch operation against the Word object model.
-
-    Word.run(function (context) {
-
-        // Create a proxy object for the paragraphs collection.
-        var paragraphs = context.document.body.paragraphs;
-
-        // Queue a command to load the text property for all of the paragraphs.
-        context.load(paragraphs, 'text');
-
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-
-            // Queue a a set of commands to get the HTML of the first paragraph.
-            var html = paragraphs.items[0].getHtml();
-
-            // Synchronize the document state by executing the queued commands,
-            // and return a promise to indicate task completion.
-            return context.sync().then(function () {
-                console.log('Paragraph HTML: ' + html.value);
-            });
-        });
-    })
-
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-        }
-    });
-
-    // Note: You must call load() after adding tracked objects.    
-  - >-
-    // The following example shows the sync method used twice: 
-
-    //   1) load the content controls collection with the text property for each
-    content control, and
-
-    //   2) clearing the contents of the first content control in the
-    collection.
-
-    // Run a batch operation against the Word object model.
-
-    Word.run(function (context) {
-
-        // Create a proxy object for the content controls collection.
-        var contentControls = context.document.contentControls;
-
-        // Queue a command to load the content controls collection.
-        contentControls.load('text');
-
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-
-            if (contentControls.items.length === 0) {
-                console.log("There isn't a content control in this document.");
-            } else {
-
-                // Queue a command to clear the contents of the first content control.
-                contentControls.items[0].clear();
-                // Synchronize the document state by executing the queued commands,
-                // and return a promise to indicate task completion.
-                return context.sync().then(function () {
-                    console.log('Content control cleared of contents.');
-                });
-            }
-
-        });
-    })
-
     .catch(function (error) {
         console.log('Error: ' + JSON.stringify(error));
         if (error instanceof OfficeExtension.Error) {
@@ -3125,6 +2775,7 @@
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+'Word.SettingCollection#getItemOrNullObject:member(1)':
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {

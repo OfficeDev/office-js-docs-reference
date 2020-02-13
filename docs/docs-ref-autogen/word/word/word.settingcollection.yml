@@ -243,6 +243,34 @@ items:
               }
           });
           ```
+      parameters:
+        - id: key
+          description: The key that identifies the setting object.
+          type:
+            - string
+  - uid: 'word!Word.SettingCollection#getItemOrNullObject:member(1)'
+    summary: >-
+      Gets a setting object by its key, which is case-sensitive. Returns a null object if the setting does not exist.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): Word.Setting;'
+      return:
+        type:
+          - 'word!Word.Setting:class'
+        description: |-
+
+
+          #### Examples
+
           ```javascript
           // Run a batch operation against the Word object model.
           Word.run(function (context) {
@@ -283,30 +311,6 @@ items:
               }
           });
           ```
-      parameters:
-        - id: key
-          description: The key that identifies the setting object.
-          type:
-            - string
-  - uid: 'word!Word.SettingCollection#getItemOrNullObject:member(1)'
-    summary: >-
-      Gets a setting object by its key, which is case-sensitive. Returns a null object if the setting does not exist.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    isPreview: true
-    name: getItemOrNullObject(key)
-    fullName: getItemOrNullObject(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemOrNullObject(key: string): Word.Setting;'
-      return:
-        type:
-          - 'word!Word.Setting:class'
-        description: ''
       parameters:
         - id: key
           description: Required. The key that identifies the setting object.
