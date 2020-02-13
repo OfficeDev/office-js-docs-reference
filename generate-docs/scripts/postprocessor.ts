@@ -19,6 +19,7 @@ interface Toc {
                     items: [
                         {
                             name: string,
+                            uid?: string,
                             items: [
                                 {
                                     name: string,
@@ -218,13 +219,7 @@ function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber
                 membersToMove.items = namespaceItem.items;
             });
             
-            if (packageName.toLocaleLowerCase().includes('office runtime')) {
-                customFunctionsRoot.items.push({
-                    "name": packageName,
-                    "uid": packageItem.uid,
-                    "items":  membersToMove.items as any
-                });
-            } else if (packageName.toLocaleLowerCase().includes('custom functions runtime')) {
+            if (packageName.toLocaleLowerCase().includes('custom functions runtime')) {
                 customFunctionsRoot.items.push({
                     "name": packageName,
                     "uid": packageItem.uid,
@@ -322,6 +317,12 @@ function fixCommonToc(tocPath: string): Toc {
                     "name": 'Common API',
                     "uid": packageItem.uid,
                     "items": packageItem.items
+                });
+            } else if (packageItem.name === 'office-runtime') {
+                newToc.items[0].items[0].items.push({
+                    "name": 'OfficeRuntime',
+                    "uid": "office-runtime!",
+                    "items": packageItem.items[0].items
                 });
             }
         });
