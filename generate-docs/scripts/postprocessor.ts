@@ -19,6 +19,7 @@ interface Toc {
                     items: [
                         {
                             name: string,
+                            uid?: string,
                             items: [
                                 {
                                     name: string,
@@ -320,6 +321,7 @@ function fixCommonToc(tocPath: string): Toc {
             } else if (packageItem.name === 'office-runtime') {
                 newToc.items[0].items[0].items.push({
                     "name": 'OfficeRuntime',
+                    "uid": "office-runtime!",
                     "items": packageItem.items[0].items
                 });
             }

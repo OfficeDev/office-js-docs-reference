@@ -346,6 +346,7 @@ items:
               - name: UpdateOptions
                 uid: 'office!OfficeExtension.UpdateOptions:interface'
           - name: OfficeRuntime
+            uid: office-runtime!
             items:
               - name: ApiInformation
                 uid: 'office-runtime!OfficeRuntime.ApiInformation:interface'
