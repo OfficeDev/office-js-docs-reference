@@ -405,14 +405,6 @@ items:
             console.log("success");
           });
           ```
-          ```typescript
-          await Word.run(async (context) => {
-            context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.page, "After");
-
-            await context.sync();
-            console.log("success");
-          });
-          ```
       parameters:
         - id: breakType
           description: Required. The break type to add to the document.
