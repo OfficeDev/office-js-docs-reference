@@ -89,33 +89,6 @@ items:
               }
           });
           ```
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a proxy object for the content control that contains a specific id.
-              var contentControl = context.document.contentControls.getByIdOrNullObject(30086310);
-
-              // Queue a command to load the text property for a content control.
-              context.load(contentControl, 'text');
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControl.isNullObject) {
-                      console.log('There is no content control with that ID.')
-                  } else {
-                      console.log('The content control with that ID has been found in this document.');
-                  }
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
       parameters:
         - id: id
           description: Required. A content control identifier.
@@ -141,39 +114,6 @@ items:
 
           #### Examples
 
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a proxy object for the content controls collection that contains a specific tag.
-              var contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
-
-              // Queue a command to load the text property for all of content controls with a specific tag.
-              context.load(contentControlsWithTag, 'text');
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControlsWithTag.items.length === 0) {
-                      console.log("There isn't a content control with a tag of Customer-Address in this document.");
-                  } else {
-                      console.log(
-                          'The first content control with the tag of Customer-Address has this text: ' + 
-                          contentControlsWithTag.items[0].text);
-                  }
-
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-
-          // The Word-Add-in-DocumentAssembly sample has another example of using the getByTag method.
-          // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
-          ```
           ```typescript
           await Word.run(async (context) => {
               let contentControls = context.document.contentControls.getByTag("customer");

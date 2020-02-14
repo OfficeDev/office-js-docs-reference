@@ -1201,8 +1201,13 @@ items:
           });
           ```
   - uid: 'excel!Excel.Range#getImage:member(1)'
-    summary: |-
+    summary: >-
       Renders the range as a base64-encoded png image.
+
+
+      **Important**: This API is currently unsupported in Excel for Mac. Visit \[OfficeDev/office-js Issue
+      \#235\](https://github.com/OfficeDev/office-js/issues/235) for the current status.
+
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getImage()
