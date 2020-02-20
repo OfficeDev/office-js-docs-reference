@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.VisibilityModeChangedMessage:interface'
+    summary: Message used in the `onVisibilityModeChanged` invocation.
+    name: Office.VisibilityModeChangedMessage
+    fullName: Office.VisibilityModeChangedMessage
+    langs:
+      - typeScript
+    type: interface
+    package: office!
+    children:
+      - 'office!Office.VisibilityModeChangedMessage#visibilityMode:member'
+  - uid: 'office!Office.VisibilityModeChangedMessage#visibilityMode:member'
+    summary: Visibility changed state.
+    name: visibilityMode
+    fullName: visibilityMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visibilityMode: Office.VisibilityMode;'
+      return:
+        type:
+          - 'office!Office.VisibilityMode:enum'
+references:
+  - uid: 'office!Office.VisibilityMode:enum'
+    name: Office.VisibilityMode
