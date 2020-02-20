@@ -1,0 +1,60 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.Tab:interface'
+    summary: Represents an individual tab and the state it should have.
+    name: Office.Tab
+    fullName: Office.Tab
+    langs:
+      - typeScript
+    type: interface
+    package: office!
+    children:
+      - 'office!Office.Tab#controls:member'
+      - 'office!Office.Tab#id:member'
+      - 'office!Office.Tab#visible:member'
+  - uid: 'office!Office.Tab#controls:member'
+    summary: 'Specifies the controls in the tab, such as menu items, buttons, etc.'
+    name: controls
+    fullName: controls
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'controls?: Control[];'
+      return:
+        type:
+          - 'office!Office.Tab#controls~0:complex'
+  - uid: 'office!Office.Tab#id:member'
+    summary: Identifier of the tab as specified in the manifest.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: 'office!Office.Tab#visible:member'
+    summary: Specifies whether the tab is visible. The default is true.
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'office!Office.Tab#controls~0:complex'
+    name: 'Control[]'
+    fullName: 'Office.Control[]'
+    spec.typeScript:
+      - uid: 'office!Office.Control:interface'
+        name: Control
+        fullName: Office.Control
+      - name: '[]'
+        fullName: '[]'

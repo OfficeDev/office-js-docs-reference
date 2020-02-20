@@ -502,16 +502,22 @@ items:
                     uid: 'office!Office.ProjectViewTypes:enum'
                   - name: SelectionMode
                     uid: 'office!Office.SelectionMode:enum'
+                  - name: StartupBehavior
+                    uid: 'office!Office.StartupBehavior:enum'
                   - name: Table
                     uid: 'office!Office.Table:enum'
                   - name: ValueFormat
                     uid: 'office!Office.ValueFormat:enum'
+                  - name: VisibilityMode
+                    uid: 'office!Office.VisibilityMode:enum'
               - name: AddBindingFromNamedItemOptions
                 uid: 'office!Office.AddBindingFromNamedItemOptions:interface'
               - name: AddBindingFromPromptOptions
                 uid: 'office!Office.AddBindingFromPromptOptions:interface'
               - name: AddBindingFromSelectionOptions
                 uid: 'office!Office.AddBindingFromSelectionOptions:interface'
+              - name: Addin
+                uid: 'office!Office.Addin:interface'
               - name: AddinCommands
                 items:
                   - name: Event
@@ -541,6 +547,8 @@ items:
                 uid: 'office!Office.Context:interface'
               - name: ContextInformation
                 uid: 'office!Office.ContextInformation:interface'
+              - name: Control
+                uid: 'office!Office.Control:interface'
               - name: CustomXmlNode
                 uid: 'office!Office.CustomXmlNode:interface'
               - name: CustomXmlPart
@@ -563,6 +571,8 @@ items:
                 uid: 'office!Office.File:interface'
               - name: FileProperties
                 uid: 'office!Office.FileProperties:interface'
+              - name: Gallery
+                uid: 'office!Office.Gallery:interface'
               - name: GetBindingDataOptions
                 uid: 'office!Office.GetBindingDataOptions:interface'
               - name: GetFileOptions
@@ -591,6 +601,10 @@ items:
                 uid: 'office!Office.RemoveHandlerOptions:interface'
               - name: RequirementSetSupport
                 uid: 'office!Office.RequirementSetSupport:interface'
+              - name: Ribbon
+                uid: 'office!Office.Ribbon:interface'
+              - name: RibbonUpdaterData
+                uid: 'office!Office.RibbonUpdaterData:interface'
               - name: SaveSettingsOptions
                 uid: 'office!Office.SaveSettingsOptions:interface'
               - name: SetBindingDataOptions
@@ -603,6 +617,8 @@ items:
                 uid: 'office!Office.SettingsChangedEventArgs:interface'
               - name: Slice
                 uid: 'office!Office.Slice:interface'
+              - name: Tab
+                uid: 'office!Office.Tab:interface'
               - name: TableBinding
                 uid: 'office!Office.TableBinding:interface'
               - name: TableData
@@ -611,6 +627,8 @@ items:
                 uid: 'office!Office.TextBinding:interface'
               - name: UI
                 uid: 'office!Office.UI:interface'
+              - name: VisibilityModeChangedMessage
+                uid: 'office!Office.VisibilityModeChangedMessage:interface'
           - name: OfficeExtension
             items:
               - name: ClientObject

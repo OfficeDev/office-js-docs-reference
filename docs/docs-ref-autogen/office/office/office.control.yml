@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'office!Office.Control:interface'
+    summary: Represents an individual control or command and the state it should have.
+    name: Office.Control
+    fullName: Office.Control
+    langs:
+      - typeScript
+    type: interface
+    package: office!
+    children:
+      - 'office!Office.Control#enabled:member'
+      - 'office!Office.Control#id:member'
+      - 'office!Office.Control#visible:member'
+  - uid: 'office!Office.Control#enabled:member'
+    summary: Indicates whether the control should be enabled or disabled. The default is true.
+    name: enabled
+    fullName: enabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enabled?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'office!Office.Control#id:member'
+    summary: Identifier of the control as specified in the manifest.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: 'office!Office.Control#visible:member'
+    summary: Indicates whether the control should be visible or hidden. The default is true.
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean

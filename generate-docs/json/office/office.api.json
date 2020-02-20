@@ -316,6 +316,264 @@
               "extendsTokenRanges": []
             },
             {
+              "kind": "Interface",
+              "canonicalReference": "office!Office.Addin:interface",
+              "docComment": "/**\n * Represents add-in level functionality for operating or configuring various aspects of the add-in.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface Addin "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Addin",
+              "members": [
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office!Office.Addin#getStartupBehavior:member(1)",
+                  "docComment": "/**\n * Get the current startup behavior for the add-in.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getStartupBehavior(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Office.StartupBehavior",
+                      "canonicalReference": "office!Office.StartupBehavior:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "name": "getStartupBehavior"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office!Office.Addin#hide:member(1)",
+                  "docComment": "/**\n * Hides the task pane.\n *\n * @returns A promise that is resolved when the UI is hidden.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "hide(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "name": "hide"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office!Office.Addin#onVisibilityModeChanged:member(1)",
+                  "docComment": "/**\n * Adds a listener for the `onVisbilityModeChanged` event.\n *\n * @param listener - The listener function that is called when the event is emitted. This function takes in a message for the receiving component.\n *\n * @returns A promise that resolves when the listener is added.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "onVisibilityModeChanged(\n            listener: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(message: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "VisibilityModeChangedMessage",
+                      "canonicalReference": "office!Office.VisibilityModeChangedMessage:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ") => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ",\n        ): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RemoveEventListener",
+                      "canonicalReference": "office!Office.RemoveEventListener:type"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "listener",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 4
+                      }
+                    }
+                  ],
+                  "name": "onVisibilityModeChanged"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office!Office.Addin#setStartupBehavior:member(1)",
+                  "docComment": "/**\n * Set the startup behavior for the add-in for when the document is opened next time.\n *\n * @param  - - behavior Specifies startup behavior of the add-in.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "setStartupBehavior(behavior: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Office.StartupBehavior",
+                      "canonicalReference": "office!Office.StartupBehavior:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "behavior",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "setStartupBehavior"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office!Office.Addin#showAsTaskpane:member(1)",
+                  "docComment": "/**\n * Shows the task pane associated with the add-in.\n *\n * @returns A promise that is resolved when the UI is shown.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "showAsTaskpane(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "name": "showAsTaskpane"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Variable",
+              "canonicalReference": "office!Office.addin:var",
+              "docComment": "/**\n * Represents the add-in.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "addin: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Addin",
+                  "canonicalReference": "office!Office.Addin:interface"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "addin",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
               "kind": "Namespace",
               "canonicalReference": "office!Office.AddinCommands:namespace",
               "docComment": "",
@@ -3716,6 +3974,97 @@
                   ],
                   "releaseTag": "Public",
                   "name": "version",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "office!Office.Control:interface",
+              "docComment": "/**\n * Represents an individual control or command and the state it should have.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface Control "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Control",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.Control#enabled:member",
+                  "docComment": "/**\n * Indicates whether the control should be enabled or disabled. The default is true.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "enabled?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "enabled",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.Control#id:member",
+                  "docComment": "/**\n * Identifier of the control as specified in the manifest.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "id: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "id",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.Control#visible:member",
+                  "docComment": "/**\n * Indicates whether the control should be visible or hidden. The default is true.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "visible?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "visible",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
@@ -11532,6 +11881,61 @@
             },
             {
               "kind": "Interface",
+              "canonicalReference": "office!Office.Gallery:interface",
+              "docComment": "/**\n * Represents a gallery that displays a collection of related items or controls in the ribbon.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface Gallery extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Control",
+                  "canonicalReference": "office!Office.Control:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Gallery",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.Gallery#refreshData:member",
+                  "docComment": "/**\n * Used to refresh the gallery control including optional data to be passed to the gallery control at the time of refresh action.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "refreshData?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "{ [key: string]: string | null }"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "refreshData",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "extendsTokenRanges": [
+                {
+                  "startIndex": 1,
+                  "endIndex": 3
+                }
+              ]
+            },
+            {
+              "kind": "Interface",
               "canonicalReference": "office!Office.GetBindingDataOptions:interface",
               "docComment": "/**\n * Provides options for how to get the data in a binding.\n *\n * @remarks\n *\n * If the rows option is used, the value must be \"thisRow\".\n */\n",
               "excerptTokens": [
@@ -15878,6 +16282,64 @@
                 }
               ],
               "extendsTokenRanges": []
+            },
+            {
+              "kind": "Function",
+              "canonicalReference": "office!Office.isSetSupported:function(1)",
+              "docComment": "/**\n * Checks if the specified requirement set is supported by the host Office application.\n *\n * @param name - Set name; e.g., \"MatrixBindings\".\n *\n * @param minVersion - The minimum required version; e.g., \"1.4\".\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export function isSetSupported(name: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", minVersion?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "name",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "minVersion",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "isSetSupported"
             },
             {
               "kind": "Interface",
@@ -25442,6 +25904,40 @@
               "extendsTokenRanges": []
             },
             {
+              "kind": "TypeAlias",
+              "canonicalReference": "office!Office.RemoveEventListener:type",
+              "docComment": "/**\n * Function type to turn off the event.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "type RemoveEventListener = "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<void>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "RemoveEventListener",
+              "typeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 4
+              }
+            },
+            {
               "kind": "Interface",
               "canonicalReference": "office!Office.RemoveHandlerOptions:interface",
               "docComment": "/**\n * Provides options to determine which event handler or handlers are removed.\n */\n",
@@ -25627,6 +26123,139 @@
                     }
                   ],
                   "name": "isSetSupported"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "office!Office.Ribbon:interface",
+              "docComment": "/**\n * An interface that contains all the functionality provided to manage the state of the OFfice ribbon.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface Ribbon "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Ribbon",
+              "members": [
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office!Office.Ribbon#requestUpdate:member(1)",
+                  "docComment": "/**\n * Sends a request to Office to update the ribbon. Note that this API is only to request an update. The actual UI update to the ribbon is controlled by the Office application and hence the exact timing of the ribbon update (or refresh) cannot be determined by the completion of this API.\n *\n * @param input - Represents the updates to be made to the ribbon. Note that only the changes specified in the input parameter are made.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "requestUpdate(input: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RibbonUpdaterData",
+                      "canonicalReference": "office!Office.RibbonUpdaterData:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise",
+                      "canonicalReference": "!Promise:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "input",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "requestUpdate"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Variable",
+              "canonicalReference": "office!Office.ribbon:var",
+              "docComment": "/**\n * Represents the ribbon associated with the Office application.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "ribbon: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Ribbon",
+                  "canonicalReference": "office!Office.Ribbon:interface"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "ribbon",
+              "variableTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "office!Office.RibbonUpdaterData:interface",
+              "docComment": "/**\n * Specifies changes to the ribbon, such as the enabled or disabled status of a button.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface RibbonUpdaterData "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "RibbonUpdaterData",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.RibbonUpdaterData#tabs:member",
+                  "docComment": "/**\n * Collection of tabs whose state is set with the call of `requestUpdate`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "tabs: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Tab",
+                      "canonicalReference": "office!Office.Tab:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "tabs",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
                 }
               ],
               "extendsTokenRanges": []
@@ -27037,6 +27666,159 @@
                   ],
                   "releaseTag": "Public",
                   "name": "size",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Enum",
+              "canonicalReference": "office!Office.StartupBehavior:enum",
+              "docComment": "/**\n * Provides options to determine the startup behavior of the add-in upon next start-up.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "enum StartupBehavior "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "StartupBehavior",
+              "members": [
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "office!Office.StartupBehavior.load:member",
+                  "docComment": "/**\n * Load the add-in but do not show UI.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "load = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "'Load'"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "load",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "office!Office.StartupBehavior.none:member",
+                  "docComment": "/**\n * The add-in does not load until opened by the user.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "none = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "'None'"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "none",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "office!Office.Tab:interface",
+              "docComment": "/**\n * Represents an individual tab and the state it should have.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface Tab "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Tab",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.Tab#controls:member",
+                  "docComment": "/**\n * Specifies the controls in the tab, such as menu items, buttons, etc.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "controls?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Control",
+                      "canonicalReference": "office!Office.Control:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "controls",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.Tab#id:member",
+                  "docComment": "/**\n * Identifier of the tab as specified in the manifest.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "id: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "id",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.Tab#visible:member",
+                  "docComment": "/**\n * Specifies whether the tab is visible. The default is true.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "visible?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "visible",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
@@ -28757,6 +29539,105 @@
                   }
                 }
               ]
+            },
+            {
+              "kind": "Enum",
+              "canonicalReference": "office!Office.VisibilityMode:enum",
+              "docComment": "/**\n * Visibility mode of the add-in.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "enum VisibilityMode "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "VisibilityMode",
+              "members": [
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "office!Office.VisibilityMode.hidden:member",
+                  "docComment": "/**\n * UI is Hidden\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "hidden = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "'Hidden'"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "hidden",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "office!Office.VisibilityMode.taskpane:member",
+                  "docComment": "/**\n * Displayed as taskpane\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "taskpane = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "'Taskpane'"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "taskpane",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "office!Office.VisibilityModeChangedMessage:interface",
+              "docComment": "/**\n * Message used in the `onVisibilityModeChanged` invocation.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface VisibilityModeChangedMessage "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "VisibilityModeChangedMessage",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.VisibilityModeChangedMessage#visibilityMode:member",
+                  "docComment": "/**\n * Visibility changed state.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "visibilityMode: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Office.VisibilityMode",
+                      "canonicalReference": "office!Office.VisibilityMode:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "visibilityMode",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
             }
           ]
         },
