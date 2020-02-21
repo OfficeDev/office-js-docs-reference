@@ -851,6 +851,9 @@ items:
 
       In compose mode you must call the saveAsync method before you can use the ewsUrl member. Your app must have
       ReadWriteItem permissions to call the saveAsync method.
+
+
+      **Note**: This member is not supported in Outlook on iOS or Android.
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
@@ -863,9 +866,6 @@ items:
       The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can
       create a remote service to [get attachments from the selected
       item](https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item)<!-- -->.
-
-
-      **Note**: This member is not supported in Outlook on iOS or Android.
 
 
       #### Examples
