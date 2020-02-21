@@ -464,16 +464,16 @@ items:
         type:
           - '!Date:interface'
   - uid: 'outlook!Office.MessageRead#dateTimeModified:member'
-    summary: Gets the date and time that an item was last modified.
+    summary: |-
+      Gets the date and time that an item was last modified.
+
+      **Note**: This member is not supported in Outlook on iOS or Android.
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
 
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message Read
-
-
-      **Note**: This member is not supported in Outlook on iOS or Android.
 
 
       #### Examples
