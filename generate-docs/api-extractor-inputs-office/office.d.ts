@@ -314,7 +314,47 @@ export declare namespace Office {
      * @param useShortNamespace - True to use the shortcut alias; otherwise false to disable it. The default is true.
      */
     export function useShortNamespace(useShortNamespace: boolean): void;
+    /**
+     * Represents the add-in.
+     */
+    const addin: Addin;
+    /**
+     * Represents the ribbon associated with the Office application.
+     */
+    const ribbon: Ribbon;
+    /**
+     * Checks if the specified requirement set is supported by the host Office application.
+     * @param name - Set name; e.g., "MatrixBindings".
+     * @param minVersion - The minimum required version; e.g., "1.4".
+     */
+    export function isSetSupported(name: string, minVersion?: string): boolean;
     // Enumerations
+    /**
+     * Provides options to determine the startup behavior of the add-in upon next start-up. 
+     */
+    enum StartupBehavior {
+        /**
+         * The add-in does not load until opened by the user.
+         */
+        none = 'None',
+        /**
+         * Load the add-in but do not show UI.
+         */
+        load = 'Load',
+    }
+    /**
+     * Visibility mode of the add-in.
+     */
+    enum VisibilityMode {
+        /**
+         * UI is Hidden
+         */
+        hidden = 'Hidden',
+        /**
+         * Displayed as taskpane
+         */
+        taskpane = 'Taskpane',
+    }
     /**
      * Specifies the result of an asynchronous call.
      * 
@@ -465,6 +505,114 @@ export declare namespace Office {
         */
         value: T;
     }
+    /**
+     * Message used in the `onVisibilityModeChanged` invocation.
+     */
+    export interface VisibilityModeChangedMessage {
+        /**
+         * Visibility changed state.
+         */
+        visibilityMode: Office.VisibilityMode;
+    }
+    /**
+     * Function type to turn off the event.
+     */
+    type RemoveEventListener = () => Promise<void>;
+    /**
+     * Represents add-in level functionality for operating or configuring various aspects of the add-in.
+     */
+    export interface Addin {
+        /**
+         * Set the startup behavior for the add-in for when the document is opened next time.
+         * @param - behavior Specifies startup behavior of the add-in.
+         */
+        setStartupBehavior(behavior: Office.StartupBehavior): Promise<void>;
+        /**
+         * Get the current startup behavior for the add-in.
+         */
+        getStartupBehavior(): Promise<Office.StartupBehavior>;
+        /**
+         * Shows the task pane associated with the add-in.
+         * @returns A promise that is resolved when the UI is shown.
+         */
+        showAsTaskpane(): Promise<void>;
+        /**
+         * Hides the task pane.
+         * @returns A promise that is resolved when the UI is hidden.
+         */
+        hide(): Promise<void>;
+        /**
+         * Adds a listener for the `onVisbilityModeChanged` event.
+         * @param listener - The listener function that is called when the event is emitted. This function takes in a message for the receiving component.
+         * @returns A promise that resolves when the listener is added.
+         */
+        onVisibilityModeChanged(
+            listener: (message: VisibilityModeChangedMessage) => void,
+        ): Promise<RemoveEventListener>;
+    }
+    /**
+     * An interface that contains all the functionality provided to manage the state of the OFfice ribbon.
+     */
+    export interface Ribbon {
+        /**
+         * Sends a request to Office to update the ribbon.
+         * Note that this API is only to request an update. The actual UI update to the ribbon is controlled by the Office application and hence the exact timing of the ribbon update (or refresh) cannot be determined by the completion of this API.
+         * @param input - Represents the updates to be made to the ribbon. Note that only the changes specified in the input parameter are made.
+         */
+        requestUpdate(input: RibbonUpdaterData): Promise<void>;
+    }
+    /**
+     * Specifies changes to the ribbon, such as the enabled or disabled status of a button.
+     */
+    export interface RibbonUpdaterData {
+        /**
+         * Collection of tabs whose state is set with the call of `requestUpdate`.
+         */
+        tabs: Tab[];
+    }
+    /**
+     * Represents an individual tab and the state it should have.
+     */
+    export interface Tab {
+        /**
+         * Identifier of the tab as specified in the manifest.
+         */
+        id: string;
+        /**
+         * Specifies whether the tab is visible. The default is true.
+         */
+        visible?: boolean;
+        /**
+         * Specifies the controls in the tab, such as menu items, buttons, etc.
+         */
+        controls?: Control[];
+    }
+    /**
+     * Represents an individual control or command and the state it should have.
+     */
+    export interface Control {
+        /**
+         * Identifier of the control as specified in the manifest.
+         */
+        id: string;
+        /**
+         * Indicates whether the control should be visible or hidden. The default is true.
+         */
+        visible?: boolean;
+        /**
+         * Indicates whether the control should be enabled or disabled. The default is true.
+         */
+        enabled?: boolean;
+    }
+    /**
+     * Represents a gallery that displays a collection of related items or controls in the ribbon.
+     */
+    export interface Gallery extends Control {
+        /**
+         * Used to refresh the gallery control including optional data to be passed to the gallery control at the time of refresh action.
+         */
+        refreshData?: { [key: string]: string | null };
+    }    
     /**
      * Represents the runtime environment of the add-in and provides access to key objects of the API. 
      * The current context exists as a property of Office. It is accessed using `Office.context`.
