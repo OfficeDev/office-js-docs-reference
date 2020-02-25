@@ -12533,6 +12533,16 @@ declare namespace Office {
          *
          * The add-in should use the `restUrl` property to determine the correct URL to use when making REST API calls.
          *
+         * This API works for the following scopes:
+         * 
+         * - `Mail.ReadWrite`
+         * 
+         * - `Mail.Send`
+         * 
+         * - `Calendars.ReadWrite`
+         * 
+         * - `Contacts.ReadWrite`
+         *
          * *EWS Tokens*
          *
          * When an EWS token is requested (`options.isRest = false`), the resulting token will not work to authenticate REST API calls.
@@ -15838,6 +15848,9 @@ declare namespace Office {
     }
     /**
      * Represents the properties of an appointment or message in a shared folder, mailbox, or calendar.
+     *
+     * For more information on how this object is used, see the
+     * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
      *
      * [Api set: Mailbox 1.8]
      *
