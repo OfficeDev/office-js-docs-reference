@@ -2,16 +2,18 @@
 items:
   - uid: 'outlook!Office.NotificationMessages:interface'
     summary: |-
-      The NotificationMessages object is returned as the notificationMessages property of an item.
+      The `NotificationMessages` object is returned as the `notificationMessages` property of an item.
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: Office.NotificationMessages
     fullName: Office.NotificationMessages
     langs:
@@ -33,14 +35,19 @@ items:
 
 
       There are a maximum of 5 notifications per message. Setting more will return a
-      NumberOfNotificationMessagesExceeded error.
+      `NumberOfNotificationMessagesExceeded` error.
+
+
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: 'addAsync(key, JSONmessage, options, callback)'
     fullName: 'addAsync(key, JSONmessage, options, callback)'
     langs:
@@ -64,22 +71,19 @@ items:
         - id: JSONmessage
           description: >-
             A JSON object that contains the notification message to be added to the item. It contains a
-            NotificationMessageDetails object.
+            `NotificationMessageDetails` object.
           type:
             - 'outlook!Office.NotificationMessageDetails:interface'
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type:
             - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult.
-
-
-            \[Api set: Mailbox 1.3\]
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->.
           type:
             - 'outlook!Office.NotificationMessages#addAsync~0:complex'
   - uid: 'outlook!Office.NotificationMessages#addAsync:member(2)'
@@ -88,14 +92,19 @@ items:
 
 
       There are a maximum of 5 notifications per message. Setting more will return a
-      NumberOfNotificationMessagesExceeded error.
+      `NumberOfNotificationMessagesExceeded` error.
+
+
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -202,16 +211,13 @@ items:
         - id: JSONmessage
           description: >-
             A JSON object that contains the notification message to be added to the item. It contains a
-            NotificationMessageDetails object.
+            `NotificationMessageDetails` object.
           type:
             - 'outlook!Office.NotificationMessageDetails:interface'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult.
-
-
-            \[Api set: Mailbox 1.3\]
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->.
           type:
             - 'outlook!Office.NotificationMessages#addAsync~1:complex'
   - uid: 'outlook!Office.NotificationMessages#getAllAsync:member(1)'
@@ -221,11 +227,13 @@ items:
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: 'getAllAsync(options, callback)'
     fullName: 'getAllAsync(options, callback)'
     langs:
@@ -242,15 +250,15 @@ items:
       parameters:
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type:
             - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. The `value` property of the result is an array of
-            NotificationMessageDetails objects.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. The `value` property of the result is an array of
+            `NotificationMessageDetails` objects.
           type:
             - 'outlook!Office.NotificationMessages#getAllAsync~0:complex'
   - uid: 'outlook!Office.NotificationMessages#getAllAsync:member(2)'
@@ -260,11 +268,13 @@ items:
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -306,9 +316,9 @@ items:
       parameters:
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. The `value` property of the result is an array of
-            NotificationMessageDetails objects.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. The `value` property of the result is an array of
+            `NotificationMessageDetails` objects.
           type:
             - 'outlook!Office.NotificationMessages#getAllAsync~1:complex'
   - uid: 'outlook!Office.NotificationMessages#removeAsync:member(1)'
@@ -318,11 +328,13 @@ items:
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: 'removeAsync(key, options, callback)'
     fullName: 'removeAsync(key, options, callback)'
     langs:
@@ -343,14 +355,14 @@ items:
             - string
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type:
             - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->.
           type:
             - 'outlook!Office.NotificationMessages#removeAsync~0:complex'
   - uid: 'outlook!Office.NotificationMessages#removeAsync:member(2)'
@@ -360,11 +372,13 @@ items:
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -403,24 +417,26 @@ items:
             - string
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->.
           type:
             - 'outlook!Office.NotificationMessages#removeAsync~1:complex'
   - uid: 'outlook!Office.NotificationMessages#replaceAsync:member(1)'
     summary: |-
       Replaces a notification message that has a given key with another message.
 
-      If a notification message with the specified key doesn't exist, replaceAsync will add the notification.
+      If a notification message with the specified key doesn't exist, `replaceAsync` will add the notification.
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: 'replaceAsync(key, JSONmessage, options, callback)'
     fullName: 'replaceAsync(key, JSONmessage, options, callback)'
     langs:
@@ -442,35 +458,37 @@ items:
         - id: JSONmessage
           description: >-
             A JSON object that contains the new notification message to replace the existing message. It contains a
-            NotificationMessageDetails object.
+            `NotificationMessageDetails` object.
           type:
             - 'outlook!Office.NotificationMessageDetails:interface'
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type:
             - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->.
           type:
             - 'outlook!Office.NotificationMessages#replaceAsync~0:complex'
   - uid: 'outlook!Office.NotificationMessages#replaceAsync:member(2)'
     summary: |-
       Replaces a notification message that has a given key with another message.
 
-      If a notification message with the specified key doesn't exist, replaceAsync will add the notification.
+      If a notification message with the specified key doesn't exist, `replaceAsync` will add the notification.
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -524,13 +542,13 @@ items:
         - id: JSONmessage
           description: >-
             A JSON object that contains the new notification message to replace the existing message. It contains a
-            NotificationMessageDetails object.
+            `NotificationMessageDetails` object.
           type:
             - 'outlook!Office.NotificationMessageDetails:interface'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->.
           type:
             - 'outlook!Office.NotificationMessages#replaceAsync~1:complex'
 references:

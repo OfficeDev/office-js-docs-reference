@@ -5,15 +5,18 @@ items:
       Represents a suggested task identified in an item. Read mode only.
 
 
-      The list of tasks suggested in an email message is returned in the taskSuggestions property of the
-      [Entities](xref:outlook!Office.Entities:interface) object that is returned when the getEntities or
-      getEntitiesByType method is called on the active item.
+      The list of tasks suggested in an email message is returned in the `taskSuggestions` property of the
+      [Entities](xref:outlook!Office.Entities:interface) object that is returned when the `getEntities` or
+      `getEntitiesByType` method is called on the active item.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Read
 
 
       #### Examples

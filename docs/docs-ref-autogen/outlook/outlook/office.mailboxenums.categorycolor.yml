@@ -11,8 +11,9 @@ items:
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: Office.MailboxEnums.CategoryColor
     fullName: Office.MailboxEnums.CategoryColor
     langs:
@@ -47,7 +48,7 @@ items:
       - 'outlook!Office.MailboxEnums.CategoryColor.Preset8:member'
       - 'outlook!Office.MailboxEnums.CategoryColor.Preset9:member'
   - uid: 'outlook!Office.MailboxEnums.CategoryColor.None:member'
-    summary: Default color or no color mapped
+    summary: Default color or no color mapped.
     name: None
     fullName: None
     langs:

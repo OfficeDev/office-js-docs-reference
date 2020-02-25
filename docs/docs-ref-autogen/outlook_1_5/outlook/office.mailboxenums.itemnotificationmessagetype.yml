@@ -6,8 +6,9 @@ items:
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: Office.MailboxEnums.ItemNotificationMessageType
     fullName: Office.MailboxEnums.ItemNotificationMessageType
     langs:
@@ -19,7 +20,7 @@ items:
       - 'outlook!Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage:member'
       - 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator:member'
   - uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage:member'
-    summary: The notificationMessage is an error message.
+    summary: The notification message is an error message.
     name: ErrorMessage
     fullName: ErrorMessage
     langs:
@@ -27,7 +28,7 @@ items:
     type: field
     numericValue: '"errorMessage"'
   - uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage:member'
-    summary: The notificationMessage is an informational message.
+    summary: The notification message is an informational message.
     name: InformationalMessage
     fullName: InformationalMessage
     langs:
@@ -35,7 +36,7 @@ items:
     type: field
     numericValue: '"informationalMessage"'
   - uid: 'outlook!Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator:member'
-    summary: The notificationMessage is a progress indicator.
+    summary: The notification message is a progress indicator.
     name: ProgressIndicator
     fullName: ProgressIndicator
     langs:

@@ -6,7 +6,7 @@ items:
 
 
       **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
-      treat this as a mode of Office.context.mailbox.item. Refer to the [Object
+      treat this as a mode of `Office.context.mailbox.item`<!-- -->. Refer to the [Object
       Model](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item)
       page for more information.
 
@@ -77,11 +77,13 @@ items:
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     langs:
@@ -103,19 +105,19 @@ items:
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
-            The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
+            The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`<!-- -->.
           type:
             - any
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type:
             - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an Office.AsyncResult object.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type:
             - 'outlook!Office.AppointmentRead#addHandlerAsync~1:complex'
   - uid: 'outlook!Office.AppointmentRead#addHandlerAsync:member(2)'
@@ -127,11 +129,13 @@ items:
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -172,24 +176,26 @@ items:
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
-            The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
+            The type property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`<!-- -->.
           type:
             - any
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an Office.AsyncResult object.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type:
             - 'outlook!Office.AppointmentRead#addHandlerAsync~3:complex'
   - uid: 'outlook!Office.AppointmentRead#attachments:member'
     summary: Gets the item's attachments as an array.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
@@ -252,11 +258,13 @@ items:
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -299,11 +307,13 @@ items:
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -351,11 +361,13 @@ items:
     summary: Gets the date and time that an item was created.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -385,11 +397,13 @@ items:
       **Note**: This member is not supported in Outlook on iOS or Android.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -422,10 +436,10 @@ items:
       2- or 1-column view.
 
 
-      If any of the string parameters exceed their limits, displayReplyAllForm throws an exception.
+      If any of the string parameters exceed their limits, `displayReplyAllForm` throws an exception.
 
 
-      When attachments are specified in the formData.attachments parameter, Outlook on the web and desktop clients
+      When attachments are specified in the `formData.attachments` parameter, Outlook on the web and desktop clients
       attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an
       error is shown in the form UI. If this isn't possible, then no error message is thrown.
 
@@ -433,11 +447,13 @@ items:
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -559,8 +575,8 @@ items:
             - 'outlook!Office.AppointmentRead#displayReplyAllForm~0:complex'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an Office.AsyncResult object.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type:
             - 'outlook!Office.AppointmentRead#displayReplyAllForm~1:complex'
   - uid: 'outlook!Office.AppointmentRead#displayReplyForm:member(1)'
@@ -573,10 +589,10 @@ items:
       2- or 1-column view.
 
 
-      If any of the string parameters exceed their limits, displayReplyForm throws an exception.
+      If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
 
 
-      When attachments are specified in the formData.attachments parameter, Outlook on the web and desktop clients
+      When attachments are specified in the `formData.attachments` parameter, Outlook on the web and desktop clients
       attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an
       error is shown in the form UI. If this isn't possible, then no error message is thrown.
 
@@ -584,11 +600,13 @@ items:
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -731,8 +749,8 @@ items:
             - 'outlook!Office.AppointmentRead#displayReplyForm~0:complex'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an Office.AsyncResult object.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type:
             - 'outlook!Office.AppointmentRead#displayReplyForm~1:complex'
   - uid: 'outlook!Office.AppointmentRead#end:member'
@@ -740,19 +758,21 @@ items:
       Gets the date and time that the appointment is to end.
 
 
-      The end property is a Date object expressed as a Coordinated Universal Time (UTC) date and time value. You can use
-      the convertToLocalClientTime method to convert the end property value to the client's local date and time.
+      The `end` property is a `Date` object expressed as a Coordinated Universal Time (UTC) date and time value. You can
+      use the `convertToLocalClientTime` method to convert the `end` property value to the client's local date and time.
 
 
-      When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to
+      When you use the `Time.setAsync` method to set the end time, you should use the `convertToUtcClientTime` method to
       convert the local time on the client to UTC for the server.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -780,19 +800,21 @@ items:
       Gets the locations of an appointment.
 
 
-      The enhancedLocation property returns an [EnhancedLocation](xref:outlook!Office.EnhancedLocation:interface) object
-      that allows you to get the set of locations (each represented by a
+      The `enhancedLocation` property returns an [EnhancedLocation](xref:outlook!Office.EnhancedLocation:interface)
+      object that allows you to get the set of locations (each represented by a
       [LocationDetails](xref:outlook!Office.LocationDetails:interface) object) associated with the appointment.
 
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -826,7 +848,7 @@ items:
           - 'outlook!Office.EnhancedLocation:interface'
   - uid: 'outlook!Office.AppointmentRead#getAttachmentContentAsync:member(1)'
     summary: >-
-      Gets an attachment from a message or appointment and returns it as an **AttachmentContent** object.
+      Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
 
 
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
@@ -839,21 +861,24 @@ items:
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       **Errors**:
 
 
-      - AttachmentTypeNotSupported: The attachment type isn't supported. Unsupported types include embedded images in
-      Rich Text Format, or item attachment types other than email or calendar items (such as a contact or task item).
+      - `AttachmentTypeNotSupported`<!-- -->: The attachment type isn't supported. Unsupported types include embedded
+      images in Rich Text Format, or item attachment types other than email or calendar items (such as a contact or task
+      item).
 
 
-      - InvalidAttachmentId: The attachment identifier does not exist.
+      - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
 
 
       #### Examples
@@ -918,20 +943,20 @@ items:
             - string
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type:
             - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an Office.AsyncResult object. If the call fails, the asyncResult.error
-            property will contain and error code with the reason for the failure.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. If the call fails, the
+            `asyncResult.error` property will contain an error code with the reason for the failure.
           type:
             - 'outlook!Office.AppointmentRead#getAttachmentContentAsync~0:complex'
   - uid: 'outlook!Office.AppointmentRead#getAttachmentContentAsync:member(2)'
     summary: >-
-      Gets an attachment from a message or appointment and returns it as an **AttachmentContent** object.
+      Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
 
 
       The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best
@@ -944,21 +969,24 @@ items:
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       **Errors**:
 
 
-      - AttachmentTypeNotSupported: The attachment type isn't supported. Unsupported types include embedded images in
-      Rich Text Format, or item attachment types other than email or calendar items (such as a contact or task item).
+      - `AttachmentTypeNotSupported`<!-- -->: The attachment type isn't supported. Unsupported types include embedded
+      images in Rich Text Format, or item attachment types other than email or calendar items (such as a contact or task
+      item).
 
 
-      - InvalidAttachmentId: The attachment identifier does not exist.
+      - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
 
 
       #### Examples
@@ -1027,9 +1055,9 @@ items:
             - string
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an Office.AsyncResult object. If the call fails, the asyncResult.error
-            property will contain and error code with the reason for the failure.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. If the call fails, the
+            `asyncResult.error` property will contain an error code with the reason for the failure.
           type:
             - 'outlook!Office.AppointmentRead#getAttachmentContentAsync~1:complex'
   - uid: 'outlook!Office.AppointmentRead#getEntities:member(1)'
@@ -1039,11 +1067,13 @@ items:
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -1131,23 +1161,13 @@ items:
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: Restricted
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `Restricted`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
-
-
-      While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access,
-      as specified in the following table.
-
-
-      <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required Permission
-      Level</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td>
-      <td>Contact</td> <td>ReadItem</td> </tr> <tr> <td>EmailAddress</td> <td>String</td> <td>ReadItem</td> </tr> <tr>
-      <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td>
-      <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td>
-      <td>ReadItem</td> </tr> <tr> <td>URL</td> <td>String</td> <td>Restricted</td> </tr> </table>
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -1193,13 +1213,26 @@ items:
         type:
           - 'outlook!Office.AppointmentRead#getEntitiesByType~0:complex'
         description: >-
-          If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns
+          If the value passed in `entityType` is not a valid member of the `EntityType` enumeration, the method returns
           null. If no entities of the specified type are present in the item's body, the method returns an empty array.
           Otherwise, the type of the objects in the returned array depends on the type of entity requested in the
-          entityType parameter.
+          `entityType` parameter.
       parameters:
         - id: entityType
-          description: One of the EntityType enumeration values.
+          description: >-
+            One of the `EntityType` enumeration values.
+
+
+            While the minimum permission level to use this method is `Restricted`<!-- -->, some entity types require
+            `ReadItem` to access, as specified in the following table.
+
+
+            <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required Permission
+            Level</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td>
+            <td>Contact</td> <td>ReadItem</td> </tr> <tr> <td>EmailAddress</td> <td>String</td> <td>ReadItem</td> </tr>
+            <tr> <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td>
+            <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td>
+            <td>ReadItem</td> </tr> <tr> <td>URL</td> <td>String</td> <td>Restricted</td> </tr> </table>
           type:
             - 'outlook!Office.AppointmentRead#getEntitiesByType~1:complex'
   - uid: 'outlook!Office.AppointmentRead#getFilteredEntitiesByName:member(1)'
@@ -1207,18 +1240,20 @@ items:
       Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
 
 
-      The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the
-      ItemHasKnownEntity rule element in the manifest XML file with the specified FilterName element value.
+      The `getFilteredEntitiesByName` method returns the entities that match the regular expression defined in the
+      `ItemHasKnownEntity` rule element in the manifest XML file with the specified `FilterName` element value.
 
 
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -1244,12 +1279,13 @@ items:
         type:
           - 'outlook!Office.AppointmentRead#getFilteredEntitiesByName~0:complex'
         description: >-
-          If there is no ItemHasKnownEntity element in the manifest with a FilterName element value that matches the
-          name parameter, the method returns null. If the name parameter does match an ItemHasKnownEntity element in the
-          manifest, but there are no entities in the current item that match, the method return an empty array.
+          If there is no `ItemHasKnownEntity` element in the manifest with a `FilterName` element value that matches the
+          `name` parameter, the method returns `null`<!-- -->. If the `name` parameter matches an `ItemHasKnownEntity`
+          element in the manifest, but there are no entities in the current item that match, the method return an empty
+          array.
       parameters:
         - id: name
-          description: The name of the ItemHasKnownEntity rule element that defines the filter to match.
+          description: The name of the `ItemHasKnownEntity` rule element that defines the filter to match.
           type:
             - string
   - uid: 'outlook!Office.AppointmentRead#getInitializationContextAsync:member(1)'
@@ -1265,11 +1301,13 @@ items:
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
     isPreview: true
     name: 'getInitializationContextAsync(options, callback)'
     fullName: 'getInitializationContextAsync(options, callback)'
@@ -1287,17 +1325,17 @@ items:
       parameters:
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type:
             - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an Office.AsyncResult object. On success, the initialization data is
-            provided in the asyncResult.value property as a string. If there is no initialization context, the
-            asyncResult object will contain an Error object with its code property set to 9020 and its name property set
-            to GenericResponseError.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. On success, the initialization
+            data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the
+            `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name`
+            property set to `GenericResponseError`<!-- -->.
           type:
             - 'outlook!Office.AppointmentRead#getInitializationContextAsync~0:complex'
   - uid: 'outlook!Office.AppointmentRead#getInitializationContextAsync:member(2)'
@@ -1313,11 +1351,13 @@ items:
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -1365,10 +1405,10 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an Office.AsyncResult object. On success, the initialization data is
-            provided in the asyncResult.value property as a string. If there is no initialization context, the
-            asyncResult object will contain an Error object with its code property set to 9020 and its name property set
-            to GenericResponseError.
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. On success, the initialization
+            data is provided in the `asyncResult.value` property as a string. If there is no initialization context, the
+            `asyncResult` object will contain an `Error` object with its `code` property set to 9020 and its `name`
+            property set to `GenericResponseError`<!-- -->.
           type:
             - 'outlook!Office.AppointmentRead#getInitializationContextAsync~1:complex'
   - uid: 'outlook!Office.AppointmentRead#getRegExMatches:member(1)'
@@ -1376,26 +1416,28 @@ items:
       Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
 
 
-      The getRegExMatches method returns the strings that match the regular expression defined in each
-      ItemHasRegularExpressionMatch or ItemHasKnownEntity rule element in the manifest XML file. For an
-      ItemHasRegularExpressionMatch rule, a matching string has to occur in the property of the item that is specified
-      by that rule. The PropertyName simple type defines the supported properties.
+      The `getRegExMatches` method returns the strings that match the regular expression defined in each
+      `ItemHasRegularExpressionMatch` or `ItemHasKnownEntity` rule element in the manifest XML file. For an
+      `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that is specified
+      by that rule. The `PropertyName` simple type defines the supported properties.
 
 
-      If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression
+      If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
       should further filter the body and should not attempt to return the entire body of the item. Using a regular
       expression such as .* to obtain the entire body of an item does not always return the expected results. Instead,
-      use the Body.getAsync method to retrieve the entire body.
+      use the `Body.getAsync` method to retrieve the entire body.
 
 
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -1467,18 +1509,19 @@ items:
         description: >-
           An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
           The name of each array is equal to the corresponding value of the RegExName attribute of the matching
-          ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.
+          `ItemHasRegularExpressionMatch` rule or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule.
   - uid: 'outlook!Office.AppointmentRead#getRegExMatchesByName:member(1)'
     summary: >-
       Returns string values in the selected item that match the named regular expression defined in the manifest XML
       file.
 
 
-      The getRegExMatchesByName method returns the strings that match the regular expression defined in the
-      ItemHasRegularExpressionMatch rule element in the manifest XML file with the specified RegExName element value.
+      The `getRegExMatchesByName` method returns the strings that match the regular expression defined in the
+      `ItemHasRegularExpressionMatch` rule element in the manifest XML file with the specified `RegExName` element
+      value.
 
 
-      If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression
+      If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
       should further filter the body and should not attempt to return the entire body of the item. Using a regular
       expression such as .* to obtain the entire body of an item does not always return the expected results.
 
@@ -1486,11 +1529,13 @@ items:
       **Note**: This method is not supported in Outlook on iOS or Android.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -1554,7 +1599,7 @@ items:
         description: An array that contains the strings that match the regular expression defined in the manifest XML file.
       parameters:
         - id: name
-          description: The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
+          description: The name of the `ItemHasRegularExpressionMatch` rule element that defines the filter to match.
           type:
             - string
   - uid: 'outlook!Office.AppointmentRead#getSelectedEntities:member(1)'
@@ -1569,11 +1614,13 @@ items:
       \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -1661,16 +1708,16 @@ items:
       Highlighted matches apply to contextual add-ins.
 
 
-      The getSelectedRegExMatches method returns the strings that match the regular expression defined in each
-      ItemHasRegularExpressionMatch or ItemHasKnownEntity rule element in the manifest XML file. For an
-      ItemHasRegularExpressionMatch rule, a matching string has to occur in the property of the item that is specified
-      by that rule. The PropertyName simple type defines the supported properties.
+      The `getSelectedRegExMatches` method returns the strings that match the regular expression defined in each
+      `ItemHasRegularExpressionMatch` or `ItemHasKnownEntity` rule element in the manifest XML file. For an
+      `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that is specified
+      by that rule. The `PropertyName` simple type defines the supported properties.
 
 
-      If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression
+      If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression
       should further filter the body and should not attempt to return the entire body of the item. Using a regular
       expression such as .* to obtain the entire body of an item does not always return the expected results. Instead,
-      use the Body.getAsync method to retrieve the entire body.
+      use the `Body.getAsync` method to retrieve the entire body
 
 
       **Note**: This method is not supported in Outlook on iOS or Android.
@@ -1679,11 +1726,13 @@ items:
       \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -1730,8 +1779,8 @@ items:
           - any
         description: >-
           An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
-          The name of each array is equal to the corresponding value of the RegExName attribute of the matching
-          ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.
+          The name of each array is equal to the corresponding value of the `RegExName` attribute of the matching
+          `ItemHasRegularExpressionMatch` rule or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule.
   - uid: 'outlook!Office.AppointmentRead#getSharedPropertiesAsync:member(1)'
     summary: |-
       Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
@@ -1741,11 +1790,13 @@ items:
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -1811,14 +1862,15 @@ items:
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. asyncContext: Developers can
-            provide any object they wish to access in the callback method.
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
           type:
             - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. The `value` property of the result is the properties of the shared item.
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. The `value` property of the result is the properties of the shared
+            item.
           type:
             - 'outlook!Office.AppointmentRead#getSharedPropertiesAsync~0:complex'
   - uid: 'outlook!Office.AppointmentRead#getSharedPropertiesAsync:member(2)'
@@ -1830,11 +1882,13 @@ items:
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -1880,7 +1934,8 @@ items:
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. The `value` property of the result is the properties of the shared item.
+            of type `Office.AsyncResult`<!-- -->. The `value` property of the result is the properties of the shared
+            item.
           type:
             - 'outlook!Office.AppointmentRead#getSharedPropertiesAsync~1:complex'
   - uid: 'outlook!Office.AppointmentRead#itemClass:member'
@@ -1889,17 +1944,19 @@ items:
 
 
       You can create custom message classes that extends a default message class, for example, a custom appointment
-      message class IPM.Appointment.Contoso.
+      message class `IPM.Appointment.Contoso`<!-- -->.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
-      The itemClass property specifies the message class of the selected item. The following are the default message
+      The `itemClass` property specifies the message class of the selected item. The following are the default message
       classes for the message or appointment item.
 
 
@@ -1939,24 +1996,26 @@ items:
       for the current item.
 
 
-      The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can
-      be used to save the item to the store, which will return the item identifier in the asyncResult.value parameter in
-      the callback function.
+      The `itemId` property is not available in compose mode. If an item identifier is required, the `saveAsync` method
+      can be used to save the item to the store, which will return the item identifier in the `asyncResult.value`
+      parameter in the callback function.
 
 
-      **Note**: The identifier returned by the itemId property is the same as the [Exchange Web Services item
+      **Note**: The identifier returned by the `itemId` property is the same as the [Exchange Web Services item
       identifier](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/ews-identifiers-in-exchange)<!--
-      -->. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before
-      making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For
-      more details, see [Use the Outlook REST APIs from an Outlook
-      add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id)<!-- -->.
+      -->. The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before
+      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
+      -->. For more details, see [Use the Outlook REST APIs from an Outlook
+      add-in](https://docs.microsoft.com/office/dev/add-ins/outlook/use-rest-api#get-the-item-id)<!-- -->.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -2000,15 +2059,17 @@ items:
       Gets the type of item that an instance represents.
 
 
-      The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance
-      is a message or an appointment.
+      The `itemType` property returns one of the `ItemType` enumeration values, indicating whether the item object
+      instance is a message or an appointment.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -2039,21 +2100,23 @@ items:
 
 
       Custom properties are stored as key/value pairs on a per-app, per-item basis. This method returns a
-      CustomProperties object in the callback, which provides methods to access the custom properties specific to the
+      `CustomProperties` object in the callback, which provides methods to access the custom properties specific to the
       current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used
       as secure storage.
 
 
-      The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can
-      be used to get, set, and remove custom properties from the item and save changes to the custom property set back
-      to the server.
+      The custom properties are provided as a `CustomProperties` object in the asyncResult.value property. This object
+      can be used to get, set, and remove custom properties from the item and save changes to the custom property set
+      back to the server.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -2136,28 +2199,30 @@ items:
       parameters:
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult.
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->.
           type:
             - 'outlook!Office.AppointmentRead#loadCustomPropertiesAsync~0:complex'
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
-            accessed by the asyncResult.asyncContext property in the callback function.
+            accessed by the `asyncResult.asyncContext` property in the callback function.
           type:
             - any
   - uid: 'outlook!Office.AppointmentRead#location:member'
     summary: |-
       Gets the location of an appointment.
 
-      The location property returns a string that contains the location of the appointment.
+      The `location` property returns a string that contains the location of the appointment.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -2185,15 +2250,18 @@ items:
       Gets the subject of an item, with all prefixes removed (including RE: and FWD:).
 
 
-      The normalizedSubject property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that
-      are added by email programs. To get the subject of the item with the prefixes intact, use the subject property.
+      The `normalizedSubject` property gets the subject of the item, with any standard prefixes (such as RE: and FW:)
+      that are added by email programs. To get the subject of the item with the prefixes intact, use the `subject`
+      property.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -2223,11 +2291,13 @@ items:
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -2332,17 +2402,19 @@ items:
       of the current item.
 
 
-      The optionalAttendees property returns an array that contains an
+      The `optionalAttendees` property returns an array that contains an
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each optional attendee to the
       meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can
       get 500 members maximum.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -2387,11 +2459,13 @@ items:
     summary: Gets the email address of the meeting organizer for a specified meeting.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -2429,12 +2503,12 @@ items:
       Gets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request.
 
 
-      The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is
-      a series or an instance in a series. `null` is returned for single appointments and meeting requests of single
-      appointments.
+      The `recurrence` property returns a [Recurrence](xref:outlook!Office.Recurrence:interface) object for recurring
+      appointments or meetings requests if an item is a series or an instance in a series. `null` is returned for single
+      appointments and meeting requests of single appointments.
 
 
-      **Note**: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
+      **Note**: Meeting requests have an `itemClass` value of `IPM.Schedule.Meeting.Request`<!-- -->.
 
 
       **Note**: If the recurrence object is null, this indicates that the object is a single appointment or a meeting
@@ -2444,11 +2518,13 @@ items:
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -2495,11 +2571,13 @@ items:
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
     name: 'removeHandlerAsync(eventType, options, callback)'
     fullName: 'removeHandlerAsync(eventType, options, callback)'
     langs:
@@ -2520,14 +2598,14 @@ items:
             - 'outlook!Office.AppointmentRead#removeHandlerAsync~0:complex'
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type:
             - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an Office.AsyncResult object.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type:
             - 'outlook!Office.AppointmentRead#removeHandlerAsync~1:complex'
   - uid: 'outlook!Office.AppointmentRead#removeHandlerAsync:member(2)'
@@ -2539,11 +2617,13 @@ items:
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
     name: 'removeHandlerAsync(eventType, callback)'
     fullName: 'removeHandlerAsync(eventType, callback)'
     langs:
@@ -2565,7 +2645,7 @@ items:
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an Office.AsyncResult object.
+            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
           type:
             - 'outlook!Office.AppointmentRead#removeHandlerAsync~3:complex'
   - uid: 'outlook!Office.AppointmentRead#requiredAttendees:member'
@@ -2574,17 +2654,19 @@ items:
       of the current item.
 
 
-      The requiredAttendees property returns an array that contains an
+      The `requiredAttendees` property returns an array that contains an
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) object for each required attendee to the
       meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can
       get 500 members maximum.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -2627,33 +2709,35 @@ items:
           - 'outlook!Office.AppointmentRead#requiredAttendees~0:complex'
   - uid: 'outlook!Office.AppointmentRead#seriesId:member'
     summary: >-
-      Gets the id of the series that an instance belongs to.
+      Gets the ID of the series that an instance belongs to.
 
 
-      In Outlook on the web and desktop clients, the seriesId returns the Exchange Web Services (EWS) ID of the parent
+      In Outlook on the web and desktop clients, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent
       (series) item that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the
       parent item.
 
 
-      **Note**: The identifier returned by the seriesId property is the same as the Exchange Web Services item
-      identifier. The seriesId property is not identical to the Outlook IDs used by the Outlook REST API. Before making
-      REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more
-      details, see [Use the Outlook REST APIs from an Outlook
-      add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api)<!-- -->.
+      **Note**: The identifier returned by the `seriesId` property is the same as the Exchange Web Services item
+      identifier. The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API. Before
+      making REST API calls using this value, it should be converted using `Office.context.mailbox.convertToRestId`<!--
+      -->. For more details, see [Use the Outlook REST APIs from an Outlook
+      add-in](https://docs.microsoft.com/office/dev/add-ins/outlook/use-rest-api)<!-- -->.
 
 
-      The seriesId property returns null for items that do not have parent items such as single appointments, series
-      items, or meeting requests and returns undefined for any other items that are not meeting requests.
+      The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series
+      items, or meeting requests and returns `undefined` for any other items that are not meeting requests.
 
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -2707,15 +2791,17 @@ items:
       Gets the date and time that the appointment is to begin.
 
 
-      The start property is a Date object expressed as a Coordinated Universal Time (UTC) date and time value. You can
-      use the convertToLocalClientTime method to convert the value to the client's local date and time.
+      The `start` property is a `Date` object expressed as a Coordinated Universal Time (UTC) date and time value. You
+      can use the `convertToLocalClientTime` method to convert the value to the client's local date and time.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples
@@ -2743,18 +2829,20 @@ items:
       Gets the description that appears in the subject field of an item.
 
 
-      The subject property gets or sets the entire subject of the item, as sent by the email server.
+      The `subject` property gets or sets the entire subject of the item, as sent by the email server.
 
 
-      The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading
+      The `subject` property returns a string. Use the `normalizedSubject` property to get the subject minus any leading
       prefixes such as RE: and FW:.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Attendee
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Appointment Attendee
 
 
       #### Examples

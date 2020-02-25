@@ -78,7 +78,7 @@ items:
         description: ''
       parameters:
         - id: behavior
-          description: ''
+          description: Specifies startup behavior of the add-in.
           type:
             - 'office!Office.StartupBehavior:enum'
   - uid: 'office!Office.Addin#showAsTaskpane:member(1)'

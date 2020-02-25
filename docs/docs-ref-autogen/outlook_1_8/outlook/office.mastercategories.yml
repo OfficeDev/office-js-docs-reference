@@ -12,12 +12,13 @@ items:
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**:
-      ReadWriteMailbox
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteMailbox`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: Office.MasterCategories
     fullName: Office.MasterCategories
     langs:
@@ -35,23 +36,27 @@ items:
     summary: >-
       Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can
       use the same color.
+
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**:
-      ReadWriteMailbox
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteMailbox`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       **Errors**:
 
 
-      - DuplicateCategory: One of the categories provided is already in the master category list.
+      - `DuplicateCategory`<!-- -->: One of the categories provided is already in the master category list.
 
 
-      - PermissionDenied: The user does not have permission to perform this action.
+      - `PermissionDenied`<!-- -->: The user does not have permission to perform this action.
     name: 'addAsync(categories, options, callback)'
     fullName: 'addAsync(categories, options, callback)'
     langs:
@@ -72,40 +77,41 @@ items:
             - 'outlook!Office.MasterCategories#addAsync~0:complex'
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type:
             - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult.
-
-
-            \[Api set: Mailbox 1.8\]
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->.
           type:
             - 'outlook!Office.MasterCategories#addAsync~1:complex'
   - uid: 'outlook!Office.MasterCategories#addAsync:member(2)'
     summary: >-
       Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can
       use the same color.
+
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**:
-      ReadWriteMailbox
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteMailbox`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       **Errors**:
 
 
-      - DuplicateCategory: One of the categories provided is already in the master category list.
+      - `DuplicateCategory`<!-- -->: One of the categories provided is already in the master category list.
 
 
-      - PermissionDenied: The user does not have permission to perform this action.
+      - `PermissionDenied`<!-- -->: The user does not have permission to perform this action.
 
 
       #### Examples
@@ -148,24 +154,25 @@ items:
             - 'outlook!Office.MasterCategories#addAsync~2:complex'
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. If adding categories fails, the asyncResult.error property will contain an error
-            code.
-
-
-            \[Api set: Mailbox 1.8\]
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. If adding categories fails, the `asyncResult.error` property will
+            contain an error code.
           type:
             - 'outlook!Office.MasterCategories#addAsync~3:complex'
   - uid: 'outlook!Office.MasterCategories#getAsync:member(1)'
-    summary: Gets the master list of categories on a mailbox.
+    summary: |-
+      Gets the master list of categories on a mailbox.
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**:
-      ReadWriteMailbox
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteMailbox`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: 'getAsync(options, callback)'
     fullName: 'getAsync(options, callback)'
     langs:
@@ -182,30 +189,31 @@ items:
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. asyncContext: Developers can
-            provide any object they wish to access in the callback method.
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
           type:
             - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. If adding categories fails, the asyncResult.error property will contain an error
-            code.
-
-
-            \[Api set: Mailbox 1.8\]
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. If adding categories fails, the `asyncResult.error` property will
+            contain an error code.
           type:
             - 'outlook!Office.MasterCategories#getAsync~0:complex'
   - uid: 'outlook!Office.MasterCategories#getAsync:member(2)'
-    summary: Gets the master list of categories on a mailbox.
+    summary: |-
+      Gets the master list of categories on a mailbox.
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**:
-      ReadWriteMailbox
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteMailbox`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -257,29 +265,30 @@ items:
       parameters:
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult.
-
-
-            \[Api set: Mailbox 1.8\]
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->.
           type:
             - 'outlook!Office.MasterCategories#getAsync~1:complex'
   - uid: 'outlook!Office.MasterCategories#removeAsync:member(1)'
-    summary: Removes categories from the master list on a mailbox.
+    summary: |-
+      Removes categories from the master list on a mailbox.
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**:
-      ReadWriteMailbox
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteMailbox`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       **Errors**:
 
 
-      - PermissionDenied: The user does not have permission to perform this action.
+      - `PermissionDenied`<!-- -->: The user does not have permission to perform this action.
     name: 'removeAsync(categories, options, callback)'
     fullName: 'removeAsync(categories, options, callback)'
     langs:
@@ -300,36 +309,37 @@ items:
             - 'string[]'
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type:
             - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. If removing categories fails, the asyncResult.error property will
-            contain an error code.
-
-
-            \[Api set: Mailbox 1.8\]
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. If removing categories fails, the `asyncResult.error`
+            property will contain an error code.
           type:
             - 'outlook!Office.MasterCategories#removeAsync~0:complex'
   - uid: 'outlook!Office.MasterCategories#removeAsync:member(2)'
-    summary: Removes categories from the master list on a mailbox.
+    summary: |-
+      Removes categories from the master list on a mailbox.
+
+      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**:
-      ReadWriteMailbox
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteMailbox`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       **Errors**:
 
 
-      - PermissionDenied: The user does not have permission to perform this action.
+      - `PermissionDenied`<!-- -->: The user does not have permission to perform this action.
 
 
       #### Examples
@@ -367,12 +377,9 @@ items:
             - 'string[]'
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. If removing categories fails, the asyncResult.error property will contain an
-            error code.
-
-
-            \[Api set: Mailbox 1.8\]
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. If removing categories fails, the `asyncResult.error` property will
+            contain an error code.
           type:
             - 'outlook!Office.MasterCategories#removeAsync~1:complex'
 references:
