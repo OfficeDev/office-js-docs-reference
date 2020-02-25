@@ -2,16 +2,18 @@
 items:
   - uid: 'outlook!Office.LocationIdentifier:interface'
     summary: |-
-      Represents the id of a location.
+      Represents the ID of a location.
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -38,11 +40,11 @@ items:
       - 'outlook!Office.LocationIdentifier#type:member'
   - uid: 'outlook!Office.LocationIdentifier#id:member'
     summary: |-
-      The location's unique id.
+      The location's unique ID.
 
-      For **Room** type, it's the room's email address.
+      For `Room` type, it's the room's email address.
 
-      For **Custom** type, it's the displayName.
+      For `Custom` type, it's the `displayName`<!-- -->.
     name: id
     fullName: id
     langs:

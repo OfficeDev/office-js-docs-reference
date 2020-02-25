@@ -1,18 +1,19 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'outlook!Office.AttachmentDetails:interface'
-    summary: >-
+    summary: |-
       Represents an attachment on an item from the server. Read mode only.
 
-
-      An array of **AttachmentDetails** objects is returned as the attachments property of an appointment or message
-      item.
+      An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Read
 
 
       #### Examples

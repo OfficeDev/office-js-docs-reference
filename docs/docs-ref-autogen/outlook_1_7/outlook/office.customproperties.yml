@@ -2,22 +2,24 @@
 items:
   - uid: 'outlook!Office.CustomProperties:interface'
     summary: >-
-      The CustomProperties object represents custom properties that are specific to a particular item and specific to a
-      mail add-in for Outlook. For example, there might be a need for a mail add-in to save some data that is specific
+      The `CustomProperties` object represents custom properties that are specific to a particular item and specific to
+      a mail add-in for Outlook. For example, there might be a need for a mail add-in to save some data that is specific
       to the current email message that activated the add-in. If the user revisits the same message in the future and
       activates the mail add-in again, the add-in will be able to retrieve the data that had been saved as custom
-      properties. **Important**: The maximum length of a CustomProperties JSON object is 2500 characters.
+      properties. **Important**: The maximum length of a `CustomProperties` JSON object is 2500 characters.
 
 
       Because Outlook on Mac doesn't cache custom properties, if the user's network goes down, mail add-ins cannot
       access their custom properties.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: Office.CustomProperties
     fullName: Office.CustomProperties
     langs:
@@ -33,11 +35,13 @@ items:
     summary: Returns the value of the specified custom property.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -71,17 +75,21 @@ items:
           type:
             - string
   - uid: 'outlook!Office.CustomProperties#remove:member(1)'
-    summary: |-
+    summary: >-
       Removes the specified property from the custom property collection.
 
-      To make the removal of the property permanent, you must call the saveAsync method of the CustomProperties object.
+
+      To make the removal of the property permanent, you must call the `saveAsync` method of the `CustomProperties`
+      object.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -109,7 +117,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: The name of the property to be removed.
+          description: The `name` of the property to be removed.
           type:
             - string
   - uid: 'outlook!Office.CustomProperties#saveAsync:member(1)'
@@ -117,21 +125,23 @@ items:
       Saves item-specific custom properties to the server.
 
 
-      You must call the saveAsync method to persist any changes made with the set method or the remove method of the
-      CustomProperties object. The saving action is asynchronous.
+      You must call the `saveAsync` method to persist any changes made with the `set` method or the `remove` method of
+      the `CustomProperties` object. The saving action is asynchronous.
 
 
-      It's a good practice to have your callback function check for and handle errors from saveAsync. In particular, a
-      read add-in can be activated while the user is in a connected state in a read form, and subsequently the user
-      becomes disconnected. If the add-in calls saveAsync while in the disconnected state, saveAsync would return an
-      error. Your callback method should handle this error accordingly.
+      It's a good practice to have your callback function check for and handle errors from `saveAsync`<!-- -->. In
+      particular, a read add-in can be activated while the user is in a connected state in a read form, and subsequently
+      the user becomes disconnected. If the add-in calls `saveAsync` while in the disconnected state, `saveAsync` would
+      return an error. Your callback method should handle this error accordingly.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
@@ -202,8 +212,8 @@ items:
       parameters:
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->.
           type:
             - 'outlook!Office.CustomProperties#saveAsync~0:complex'
         - id: asyncContext
@@ -215,20 +225,22 @@ items:
       Sets the specified property to the specified value.
 
 
-      The set method sets the specified property to the specified value. You must use the saveAsync method to save the
-      property to the server.
+      The `set` method sets the specified property to the specified value. You must use the `saveAsync` method to save
+      the property to the server.
 
 
-      The set method creates a new property if the specified property does not already exist; otherwise, the existing
-      value is replaced with the new value. The value parameter can be of any type; however, it is always passed to the
-      server as a string.
+      The `set` method creates a new property if the specified property does not already exist; otherwise, the existing
+      value is replaced with the new value. The `value` parameter can be of any type; however, it is always passed to
+      the server as a string.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
 
 
       #### Examples
