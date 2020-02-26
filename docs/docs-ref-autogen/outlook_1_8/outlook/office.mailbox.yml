@@ -954,7 +954,7 @@ items:
       *REST Tokens*
 
 
-      When a REST token is requested (`options.isRest = true`<!-- -->), the resulting token will not work to
+      When a REST token is requested (`options.isRest` = `true`<!-- -->), the resulting token will not work to
       authenticate Exchange Web Services calls. The token will be limited in scope to read-only access to the current
       item and its attachments, unless the add-in has specified the `ReadWriteMailbox` permission in its manifest. If
       the `ReadWriteMailbox` permission is specified, the resulting token will grant read/write access to mail,
@@ -982,7 +982,7 @@ items:
       *EWS Tokens*
 
 
-      When an EWS token is requested (`options.isRest = false`<!-- -->), the resulting token will not work to
+      When an EWS token is requested (`options.isRest` = `false`<!-- -->), the resulting token will not work to
       authenticate REST API calls. The token will be limited in scope to accessing the current item.
 
 

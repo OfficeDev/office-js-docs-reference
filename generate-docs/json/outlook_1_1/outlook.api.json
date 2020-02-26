@@ -2752,7 +2752,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.CoercionTypeOptions:interface",
-              "docComment": "",
+              "docComment": "/**\n * Provides an option for the data format.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -2765,7 +2765,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.CoercionTypeOptions#coercionType:member",
-                  "docComment": "",
+                  "docComment": "/**\n * The desired data format.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

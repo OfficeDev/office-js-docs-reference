@@ -168,7 +168,13 @@ export declare namespace Office {
         
         
     }
+    /**
+     * Provides an option for the data format.
+     */
     export interface CoercionTypeOptions {
+        /**
+         * The desired data format.
+         */
         coercionType?: CommonAPI.CoercionType | string;
     }
     /**

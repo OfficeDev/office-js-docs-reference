@@ -230,7 +230,13 @@ export declare namespace Office {
         }
         
     }
+    /**
+     * Provides an option for the data format.
+     */
     export interface CoercionTypeOptions {
+        /**
+         * The desired data format.
+         */
         coercionType?: CommonAPI.CoercionType | string;
     }
     /**
@@ -2717,7 +2723,7 @@ export declare namespace Office {
          *
          * *REST Tokens*
          *
-         * When a REST token is requested (`options.isRest = true`), the resulting token will not work to authenticate Exchange Web Services calls.
+         * When a REST token is requested (`options.isRest` = `true`), the resulting token will not work to authenticate Exchange Web Services calls.
          * The token will be limited in scope to read-only access to the current item and its attachments, unless the add-in has specified the
          * `ReadWriteMailbox` permission in its manifest.
          * If the `ReadWriteMailbox` permission is specified, the resulting token will grant read/write access to mail, calendar, and contacts,
@@ -2737,7 +2743,7 @@ export declare namespace Office {
          *
          * *EWS Tokens*
          *
-         * When an EWS token is requested (`options.isRest = false`), the resulting token will not work to authenticate REST API calls.
+         * When an EWS token is requested (`options.isRest` = `false`), the resulting token will not work to authenticate REST API calls.
          * The token will be limited in scope to accessing the current item.
          *
          * The add-in should use the `ewsUrl` property to determine the correct URL to use when making EWS calls.
