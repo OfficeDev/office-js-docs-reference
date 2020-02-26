@@ -12,7 +12,7 @@ items:
       - 'office!Office.AddinCommands.Source#id:member'
   - uid: 'office!Office.AddinCommands.Source#id:member'
     summary: >-
-      The id of the control that triggered calling this function. The id comes from the manifest and is the unique ID of
+      The ID of the control that triggered calling this function. The ID comes from the manifest and is the unique ID of
       your Office Add-in as a GUID.
     name: id
     fullName: id

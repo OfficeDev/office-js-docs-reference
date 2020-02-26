@@ -524,7 +524,7 @@ export declare namespace Office {
     export interface Addin {
         /**
          * Set the startup behavior for the add-in for when the document is opened next time.
-         * @param - behavior Specifies startup behavior of the add-in.
+         * @param behavior - Specifies startup behavior of the add-in.
          */
         setStartupBehavior(behavior: Office.StartupBehavior): Promise<void>;
         /**
@@ -717,15 +717,15 @@ export declare namespace Office {
         */
         license: string;
         /**
-         * Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
+         * Provides access to the Microsoft Outlook add-in object model.
          *
          * @remarks
          * 
-         * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
          * 
-         * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          *
-         * **Namespaces**:
+         * **Key properties**:
          *
          * - `diagnostics`: Provides diagnostic information to an Outlook add-in.
          *
@@ -749,14 +749,14 @@ export declare namespace Office {
         /**
          * Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.
          *
-         * The RoamingSettings object lets you store and access data for a mail add-in that is stored in a user's mailbox, so that is available to 
+         * The `RoamingSettings` object lets you store and access data for a mail add-in that is stored in a user's mailbox, so it's available to 
          * that add-in when it is running from any host client application used to access that mailbox.
          *
          * @remarks
          * 
-         * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
          * 
-         * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         roamingSettings: Outlook.RoamingSettings;
         /**
@@ -802,16 +802,16 @@ export declare namespace Office {
     }
     export namespace AddinCommands {
         /**
-         * The event object is passed as a parameter to add-in functions invoked by UI-less command buttons. The object allows the add-in to identify 
+         * The `Event` object is passed as a parameter to add-in functions invoked by UI-less command buttons. The object allows the add-in to identify 
          * which button was clicked and to signal the host that it has completed its processing.
          * 
          * @remarks
          * 
          * See {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/add-in-commands-requirement-sets | Add-in commands requirement sets} for more support information.
          * 
-         * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level (Outlook)}**: Restricted
          * 
-         * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         export interface Event {
             /**
@@ -819,7 +819,7 @@ export declare namespace Office {
              * 
              * @remarks
              * 
-             * This property is only supported in Outlook in {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets | requirement set} Mailbox 1.3 and later.
+             * This property is supported in Outlook only in {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets | requirement set} Mailbox 1.3 and later.
              */
             source:Source;
             
@@ -828,7 +828,7 @@ export declare namespace Office {
              * 
              * This method must be called at the end of a function which was invoked by the following.
              * 
-             * - A UI-less button (i.e., an add-in command defined with an Action element where the xsi:type attribute is set to ExecuteFunction)
+             * - A UI-less button (i.e., an add-in command defined with an `Action` element where the `xsi:type` attribute is set to `ExecuteFunction`)
              * 
              * - An {@link https://docs.microsoft.com/office/dev/add-ins/reference/manifest/event | event} defined in the
              * {@link https://docs.microsoft.com/office/dev/add-ins/reference/manifest/extensionpoint#events | Events extension point},
@@ -838,11 +838,11 @@ export declare namespace Office {
              *
              * @remarks
              * 
-             * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
+             * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
              * 
-             * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+             * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
              * 
-             * The `options` parameter was introduced in Mailbox 1.8.
+             * **Note**: The `options` parameter was introduced in Mailbox 1.8.
              * 
              * @param options - Optional. An object that specifies behavior options for when the event is completed.
              */
@@ -867,7 +867,7 @@ export declare namespace Office {
         export interface Source {
 
             /**
-             * The id of the control that triggered calling this function. The id comes from the manifest and is the unique ID of your Office Add-in 
+             * The ID of the control that triggered calling this function. The ID comes from the manifest and is the unique ID of your Office Add-in 
              * as a GUID.
              */
             id: string;
@@ -1826,7 +1826,7 @@ export declare namespace Office {
         Text,
     }
     /**
-     * Specifies the kind of event that was raised. Returned by the `type` property of an *EventArgs object.
+     * Specifies the kind of event that was raised. Returned by the `type` property of an `*EventArgs` object.
      * 
      * Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and 
      * `Office.EventType.ViewSelectionChanged` event types.

@@ -7,10 +7,13 @@ items:
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
     name: Office.Subject
     fullName: Office.Subject
     langs:
@@ -27,17 +30,20 @@ items:
       Gets the subject of an appointment or message.
 
 
-      The getAsync method starts an asynchronous call to the Exchange server to get the subject of an appointment or
+      The `getAsync` method starts an asynchronous call to the Exchange server to get the subject of an appointment or
       message.
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
     name: 'getAsync(options, callback)'
     fullName: 'getAsync(options, callback)'
     langs:
@@ -54,14 +60,14 @@ items:
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. asyncContext: Developers can
-            provide any object they wish to access in the callback method.
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
           type:
             - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. The `value` property of the result is the subject of the item.
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. The `value` property of the result is the subject of the item.
           type:
             - 'outlook!Office.Subject#getAsync~0:complex'
   - uid: 'outlook!Office.Subject#getAsync:member(2)'
@@ -76,10 +82,13 @@ items:
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       #### Examples
@@ -109,8 +118,8 @@ items:
       parameters:
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. The `value` property of the result is the subject of the item.
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. The `value` property of the result is the subject of the item.
           type:
             - 'outlook!Office.Subject#getAsync~1:complex'
   - uid: 'outlook!Office.Subject#setAsync:member(1)'
@@ -118,7 +127,7 @@ items:
       Sets the subject of an appointment or message.
 
 
-      The setAsync method starts an asynchronous call to the Exchange server to set the subject of an appointment or
+      The `setAsync` method starts an asynchronous call to the Exchange server to set the subject of an appointment or
       message. Setting the subject overwrites the current subject, but leaves any prefixes, such as "Fwd:" or "Re:" in
       place.
 
@@ -126,16 +135,19 @@ items:
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       **Errors**:
 
 
-      - DataExceedsMaximumSize: The subject parameter is longer than 255 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The subject parameter is longer than 255 characters.
     name: 'setAsync(subject, options, callback)'
     fullName: 'setAsync(subject, options, callback)'
     langs:
@@ -156,15 +168,15 @@ items:
             - string
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type:
             - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. If setting the subject fails, the asyncResult.error property will
-            contain an error code.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. If setting the subject fails, the `asyncResult.error`
+            property will contain an error code.
           type:
             - 'outlook!Office.Subject#setAsync~0:complex'
   - uid: 'outlook!Office.Subject#setAsync:member(2)'
@@ -172,7 +184,7 @@ items:
       Sets the subject of an appointment or message.
 
 
-      The setAsync method starts an asynchronous call to the Exchange server to set the subject of an appointment or
+      The `setAsync` method starts an asynchronous call to the Exchange server to set the subject of an appointment or
       message. Setting the subject overwrites the current subject, but leaves any prefixes, such as "Fwd:" or "Re:" in
       place.
 
@@ -180,16 +192,19 @@ items:
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       **Errors**:
 
 
-      - DataExceedsMaximumSize: The subject parameter is longer than 255 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The subject parameter is longer than 255 characters.
 
 
       #### Examples
@@ -222,9 +237,9 @@ items:
             - string
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. If setting the subject fails, the asyncResult.error property will
-            contain an error code.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. If setting the subject fails, the `asyncResult.error`
+            property will contain an error code.
           type:
             - 'outlook!Office.Subject#setAsync~1:complex'
 references:

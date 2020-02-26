@@ -1,14 +1,16 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'outlook!Office.AppointmentForm:interface'
-    summary: The AppointmentForm namespace is used to access the currently selected appointment.
+    summary: The `AppointmentForm` object is used to access the currently selected appointment.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: Restricted
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `Restricted`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: Office.AppointmentForm
     fullName: Office.AppointmentForm
     langs:
@@ -31,11 +33,13 @@ items:
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: body
     fullName: body
     langs:
@@ -51,31 +55,33 @@ items:
       Gets or sets the date and time that the appointment is to end.
 
 
-      The end property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the
-      convertToLocalClientTime method to convert the end property value to the client's local date and time.
+      The `end` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the
+      `convertToLocalClientTime` method to convert the `end` property value to the client's local date and time.
 
 
       *Read mode*
 
 
-      The end property returns a Date object.
+      The `end` property returns a `Date` object.
 
 
       *Compose mode*
 
 
-      The end property returns a Time object.
+      The `end` property returns a `Time` object.
 
 
-      When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to
+      When you use the `Time.setAsync` method to set the end time, you should use the `convertToUtcClientTime` method to
       convert the local time on the client to UTC for the server.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: end
     fullName: end
     langs:
@@ -94,21 +100,23 @@ items:
       *Read mode*
 
 
-      The location property returns a string that contains the location of the appointment.
+      The `location` property returns a string that contains the location of the appointment.
 
 
       *Compose mode*
 
 
-      The location property returns a Location object that provides methods that are used to get and set the location of
-      the appointment.
+      The `location` property returns a `Location` object that provides methods that are used to get and set the
+      location of the appointment.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: location
     fullName: location
     langs:
@@ -128,7 +136,7 @@ items:
       *Read mode*
 
 
-      The optionalAttendees property returns an array that contains an EmailAddressDetails object for each optional
+      The `optionalAttendees` property returns an array that contains an `EmailAddressDetails` object for each optional
       attendee to the meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows
       and Mac, you can get 500 members maximum.
 
@@ -136,7 +144,7 @@ items:
       *Compose mode*
 
 
-      The optionalAttendees property returns a Recipients object that provides methods to get or update the optional
+      The `optionalAttendees` property returns a `Recipients` object that provides methods to get or update the optional
       attendees for a meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows
       and Mac, the following limits apply.
 
@@ -147,11 +155,13 @@ items:
       - Set a maximum of 100 members per call, up to 500 members total.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: optionalAttendees
     fullName: optionalAttendees
     langs:
@@ -171,7 +181,7 @@ items:
       *Read mode*
 
 
-      The requiredAttendees property returns an array that contains an EmailAddressDetails object for each required
+      The `requiredAttendees` property returns an array that contains an `EmailAddressDetails` object for each required
       attendee to the meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows
       and Mac, you can get 500 members maximum.
 
@@ -179,7 +189,7 @@ items:
       *Compose mode*
 
 
-      The requiredAttendees property returns a Recipients object that provides methods to get or update the required
+      The `requiredAttendees` property returns a `Recipients` object that provides methods to get or update the required
       attendees for a meeting. By default, the collection is limited to a maximum of 100 members. However, on Windows
       and Mac, the following limits apply.
 
@@ -190,11 +200,13 @@ items:
       - Set a maximum of 100 members per call, up to 500 members total.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: requiredAttendees
     fullName: requiredAttendees
     langs:
@@ -211,11 +223,13 @@ items:
       the appointment.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: resources
     fullName: resources
     langs:
@@ -231,31 +245,33 @@ items:
       Gets or sets the date and time that the appointment is to begin.
 
 
-      The start property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the
-      convertToLocalClientTime method to convert the value to the client's local date and time.
+      The `start` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the
+      `convertToLocalClientTime` method to convert the value to the client's local date and time.
 
 
       *Read mode*
 
 
-      The start property returns a Date object.
+      The `start` property returns a `Date` object.
 
 
       *Compose mode*
 
 
-      The start property returns a Time object.
+      The `start` property returns a `Time` object.
 
 
-      When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to
-      convert the local time on the client to UTC for the server.
+      When you use the `Time.setAsync` method to set the start time, you should use the `convertToUtcClientTime` method
+      to convert the local time on the client to UTC for the server.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: start
     fullName: start
     langs:
@@ -271,27 +287,29 @@ items:
       Gets or sets the description that appears in the subject field of an item.
 
 
-      The subject property gets or sets the entire subject of the item, as sent by the email server.
+      The `subject` property gets or sets the entire subject of the item, as sent by the email server.
 
 
       *Read mode*
 
 
-      The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading
+      The `subject` property returns a string. Use the `normalizedSubject` property to get the subject minus any leading
       prefixes such as RE: and FW:.
 
 
       *Compose mode*
 
 
-      The subject property returns a Subject object that provides methods to get and set the subject.
+      The `subject` property returns a `Subject` object that provides methods to get and set the subject.
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: subject
     fullName: subject
     langs:

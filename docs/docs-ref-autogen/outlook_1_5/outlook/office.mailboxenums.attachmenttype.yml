@@ -3,8 +3,9 @@ items:
   - uid: 'outlook!Office.MailboxEnums.AttachmentType:enum'
     summary: Specifies an attachment's type.
     remarks: >-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose or Read
     name: Office.MailboxEnums.AttachmentType
     fullName: Office.MailboxEnums.AttachmentType
     langs:
@@ -17,7 +18,7 @@ items:
       - 'outlook!Office.MailboxEnums.AttachmentType.Item:member'
   - uid: 'outlook!Office.MailboxEnums.AttachmentType.Cloud:member'
     summary: >-
-      The attachment is stored in a cloud location, such as OneDrive. The id property of the attachment contains a URL
+      The attachment is stored in a cloud location, such as OneDrive. The `id` property of the attachment contains a URL
       to the file.
     name: Cloud
     fullName: Cloud
@@ -26,7 +27,7 @@ items:
     type: field
     numericValue: '"cloud"'
   - uid: 'outlook!Office.MailboxEnums.AttachmentType.File:member'
-    summary: The attachment is a file
+    summary: The attachment is a file.
     name: File
     fullName: File
     langs:
@@ -34,7 +35,7 @@ items:
     type: field
     numericValue: '"file"'
   - uid: 'outlook!Office.MailboxEnums.AttachmentType.Item:member'
-    summary: The attachment is an Exchange item
+    summary: The attachment is an Exchange item.
     name: Item
     fullName: Item
     langs:

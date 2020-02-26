@@ -1,13 +1,19 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'outlook!Office.Recipients:interface'
-    summary: '\[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
+    summary: |-
+      Represents recipients of an item. Compose mode only.
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
     name: Office.Recipients
     fullName: Office.Recipients
     langs:
@@ -29,24 +35,26 @@ items:
 
       - Strings containing SMTP email addresses
 
-      - EmailUser objects
+      - [EmailUser](xref:outlook!Office.EmailUser:interface) objects
 
-      - EmailAddressDetails objects
+      - [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**:
-      ReadWriteItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       **Errors**:
 
 
-      - NumberOfRecipientsExceeded: The number of recipients exceeded 100 entries.
+      - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
     name: 'addAsync(recipients, options, callback)'
     fullName: 'addAsync(recipients, options, callback)'
     langs:
@@ -67,15 +75,15 @@ items:
             - 'outlook!Office.Recipients#addAsync~0:complex'
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
+            Developers can provide any object they wish to access in the callback method.
           type:
             - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. If adding the recipients fails, the asyncResult.error property will
-            contain an error code.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. If adding the recipients fails, the `asyncResult.error`
+            property will contain an error code.
           type:
             - 'outlook!Office.Recipients#addAsync~1:complex'
   - uid: 'outlook!Office.Recipients#addAsync:member(2)'
@@ -93,17 +101,19 @@ items:
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**:
-      ReadWriteItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       **Errors**:
 
 
-      - NumberOfRecipientsExceeded: The number of recipients exceeded 100 entries.
+      - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
 
 
       #### Examples
@@ -156,9 +166,9 @@ items:
             - 'outlook!Office.Recipients#addAsync~2:complex'
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult. If adding the recipients fails, the asyncResult.error property will
-            contain an error code.
+            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
+            parameter of type `Office.AsyncResult`<!-- -->. If adding the recipients fails, the `asyncResult.error`
+            property will contain an error code.
           type:
             - 'outlook!Office.Recipients#addAsync~3:complex'
   - uid: 'outlook!Office.Recipients#getAsync:member(1)'
@@ -166,17 +176,20 @@ items:
       Gets a recipient list for an appointment or message.
 
 
-      When the call completes, the asyncResult.value property will contain an array of
+      When the call completes, the `asyncResult.value` property will contain an array of
       [EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects.
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
     name: 'getAsync(options, callback)'
     fullName: 'getAsync(options, callback)'
     langs:
@@ -193,14 +206,15 @@ items:
       parameters:
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. asyncContext: Developers can
-            provide any object they wish to access in the callback method.
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
           type:
             - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. The `value` property of the result is an array of EmailAddressDetails objects.
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. The `value` property of the result is an array of
+            `EmailAddressDetails` objects.
           type:
             - 'outlook!Office.Recipients#getAsync~0:complex'
   - uid: 'outlook!Office.Recipients#getAsync:member(2)'
@@ -215,10 +229,13 @@ items:
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       #### Examples
@@ -347,15 +364,16 @@ items:
       parameters:
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. The `value` property of the result is an array of EmailAddressDetails objects.
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. The `value` property of the result is an array of
+            `EmailAddressDetails` objects.
           type:
             - 'outlook!Office.Recipients#getAsync~1:complex'
   - uid: 'outlook!Office.Recipients#setAsync:member(1)'
     summary: |-
       Sets a recipient list for an appointment or message.
 
-      The setAsync method overwrites the current recipient list.
+      The `setAsync` method overwrites the current recipient list.
 
       The recipients parameter can be an array of one of the following:
 
@@ -368,17 +386,19 @@ items:
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**:
-      ReadWriteItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       **Errors**:
 
 
-      - NumberOfRecipientsExceeded: The number of recipients exceeded 100 entries.
+      - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
     name: 'setAsync(recipients, options, callback)'
     fullName: 'setAsync(recipients, options, callback)'
     langs:
@@ -399,22 +419,22 @@ items:
             - 'outlook!Office.Recipients#setAsync~0:complex'
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. asyncContext: Developers can
-            provide any object they wish to access in the callback method.
+            An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
+            can provide any object they wish to access in the callback method.
           type:
             - 'outlook!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. If setting the recipients fails the asyncResult.error property will contain a
-            code that indicates any error that occurred while adding the data.
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. If setting the recipients fails the `asyncResult.error` property will
+            contain a code that indicates any error that occurred while adding the data.
           type:
             - 'outlook!Office.Recipients#setAsync~1:complex'
   - uid: 'outlook!Office.Recipients#setAsync:member(2)'
     summary: |-
       Sets a recipient list for an appointment or message.
 
-      The setAsync method overwrites the current recipient list.
+      The `setAsync` method overwrites the current recipient list.
 
       The recipients parameter can be an array of one of the following:
 
@@ -427,17 +447,19 @@ items:
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**:
-      ReadWriteItem
+      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
+      `ReadWriteItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+      Compose
 
 
       **Errors**:
 
 
-      - NumberOfRecipientsExceeded: The number of recipients exceeded 100 entries.
+      - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
 
 
       #### Examples
@@ -490,9 +512,9 @@ items:
             - 'outlook!Office.Recipients#setAsync~2:complex'
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. If setting the recipients fails the asyncResult.error property will contain a
-            code that indicates any error that occurred while adding the data.
+            When the method completes, the function passed in the `callback` parameter is called with a single parameter
+            of type `Office.AsyncResult`<!-- -->. If setting the recipients fails the `asyncResult.error` property will
+            contain a code that indicates any error that occurred while adding the data.
           type:
             - 'outlook!Office.Recipients#setAsync~3:complex'
 references:
