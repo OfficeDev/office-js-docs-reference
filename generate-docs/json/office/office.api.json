@@ -331,7 +331,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Addin#getStartupBehavior:member(1)",
-                  "docComment": "/**\n * Get the current startup behavior for the add-in.\n */\n",
+                  "docComment": "/**\n * Gets the current startup behavior for the add-in.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -470,7 +470,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Addin#setStartupBehavior:member(1)",
-                  "docComment": "/**\n * Set the startup behavior for the add-in for when the document is opened next time.\n *\n * @param behavior - Specifies startup behavior of the add-in.\n */\n",
+                  "docComment": "/**\n * Sets the startup behavior for the add-in for when the document is opened next time.\n *\n * @param behavior - Specifies startup behavior of the add-in.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

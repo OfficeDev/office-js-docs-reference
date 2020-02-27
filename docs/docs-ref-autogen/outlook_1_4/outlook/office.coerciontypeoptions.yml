@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'outlook!Office.CoercionTypeOptions:interface'
+    summary: Provides an option for the data format.
     name: Office.CoercionTypeOptions
     fullName: Office.CoercionTypeOptions
     langs:
@@ -10,6 +11,7 @@ items:
     children:
       - 'outlook!Office.CoercionTypeOptions#coercionType:member'
   - uid: 'outlook!Office.CoercionTypeOptions#coercionType:member'
+    summary: The desired data format.
     name: coercionType
     fullName: coercionType
     langs:

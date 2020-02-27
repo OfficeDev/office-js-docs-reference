@@ -819,7 +819,7 @@ items:
       *REST Tokens*
 
 
-      When a REST token is requested (`options.isRest = true`<!-- -->), the resulting token will not work to
+      When a REST token is requested (`options.isRest` = `true`<!-- -->), the resulting token will not work to
       authenticate Exchange Web Services calls. The token will be limited in scope to read-only access to the current
       item and its attachments, unless the add-in has specified the `ReadWriteMailbox` permission in its manifest. If
       the `ReadWriteMailbox` permission is specified, the resulting token will grant read/write access to mail,
@@ -847,7 +847,7 @@ items:
       *EWS Tokens*
 
 
-      When an EWS token is requested (`options.isRest = false`<!-- -->), the resulting token will not work to
+      When an EWS token is requested (`options.isRest` = `false`<!-- -->), the resulting token will not work to
       authenticate REST API calls. The token will be limited in scope to accessing the current item.
 
 
@@ -1469,8 +1469,13 @@ items:
       Your app must have the `ReadItem` permission specified in its manifest to call the `restUrl` member in read mode.
 
 
-      In compose mode you must call the saveAsync method before you can use the `restUrl` member. Your app must have
+      In compose mode you must call the `saveAsync` method before you can use the `restUrl` member. Your app must have
       `ReadWriteItem` permissions to call the `saveAsync` method.
+
+
+      However, in delegate or shared scenarios, you should instead use the `targetRestUrl` property of the  object
+      (introduced in requirement set 1.8). For more information, see the [delegate
+      access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]

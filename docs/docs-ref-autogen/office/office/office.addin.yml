@@ -15,7 +15,7 @@ items:
       - 'office!Office.Addin#setStartupBehavior:member(1)'
       - 'office!Office.Addin#showAsTaskpane:member(1)'
   - uid: 'office!Office.Addin#getStartupBehavior:member(1)'
-    summary: Get the current startup behavior for the add-in.
+    summary: Gets the current startup behavior for the add-in.
     name: getStartupBehavior()
     fullName: getStartupBehavior()
     langs:
@@ -64,7 +64,7 @@ items:
           type:
             - 'office!Office.Addin#onVisibilityModeChanged~1:complex'
   - uid: 'office!Office.Addin#setStartupBehavior:member(1)'
-    summary: Set the startup behavior for the add-in for when the document is opened next time.
+    summary: Sets the startup behavior for the add-in for when the document is opened next time.
     name: setStartupBehavior(behavior)
     fullName: setStartupBehavior(behavior)
     langs:
