@@ -523,12 +523,12 @@ export declare namespace Office {
      */
     export interface Addin {
         /**
-         * Set the startup behavior for the add-in for when the document is opened next time.
+         * Sets the startup behavior for the add-in for when the document is opened next time.
          * @param behavior - Specifies startup behavior of the add-in.
          */
         setStartupBehavior(behavior: Office.StartupBehavior): Promise<void>;
         /**
-         * Get the current startup behavior for the add-in.
+         * Gets the current startup behavior for the add-in.
          */
         getStartupBehavior(): Promise<Office.StartupBehavior>;
         /**
