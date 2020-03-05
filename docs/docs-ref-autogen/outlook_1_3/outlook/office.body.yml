@@ -414,7 +414,7 @@ items:
       - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 1,000,000 characters.
 
 
-      - `InvalidFormatError`<!-- -->: The options.coercionType parameter is set to `Office.CoercionType.Html` and the
+      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the
       message body is in plain text.
 
 

@@ -90,7 +90,7 @@ items:
     type: method
     syntax:
       content: >-
-        appendOnSendAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback:
+        appendOnSendAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
         (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
@@ -550,7 +550,7 @@ items:
       - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 1,000,000 characters.
 
 
-      - `InvalidFormatError`<!-- -->: The options.coercionType parameter is set to `Office.CoercionType.Html` and the
+      - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the
       message body is in plain text.
 
 

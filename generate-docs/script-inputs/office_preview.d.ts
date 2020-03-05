@@ -11241,7 +11241,7 @@ declare namespace Office {
          * 
          * @beta
          */
-        appendOnSendAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback: (asyncResult: Office.AsyncResult<void>) => void): void;
+        appendOnSendAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
         /**
          * Appends on send the specified content to the end of the item body, after any signature.
          * 
@@ -11425,7 +11425,7 @@ declare namespace Office {
          * 
          * - `DataExceedsMaximumSize`: The data parameter is longer than 1,000,000 characters.
          * 
-         * - `InvalidFormatError`: The options.coercionType parameter is set to `Office.CoercionType.Html` and the message body is in plain text.
+         * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the message body is in plain text.
          * 
          * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
          * @param options - Optional. An object literal that contains one or more of the following properties.
