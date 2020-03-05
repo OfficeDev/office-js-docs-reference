@@ -37,7 +37,7 @@ items:
       - 'outlook!Office.Body#setSelectedDataAsync:member(2)'
   - uid: 'outlook!Office.Body#appendOnSendAsync:member(1)'
     summary: >-
-      On send, adds the specified content to the end of the item body, after any signature.
+      Appends on send the specified content to the end of the item body, after any signature.
 
 
       **Important**: To use `appendOnSendAsync`<!-- -->, the `AppendOnSend` extended permission must be included in the
@@ -59,11 +59,11 @@ items:
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 1,000,000 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 5,000 characters.
 
 
       - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` but the
-      `data` parameter is in plain text.
+      message body is in plain text.
 
 
       #### Examples
@@ -98,7 +98,7 @@ items:
         description: ''
       parameters:
         - id: data
-          description: 'The string to be added to the end of the body. The string is limited to 1,000,000 characters.'
+          description: 'The string to be added to the end of the body. The string is limited to 5,000 characters.'
           type:
             - string
         - id: options
@@ -118,7 +118,7 @@ items:
             - 'outlook!Office.Body#appendOnSendAsync~1:complex'
   - uid: 'outlook!Office.Body#appendOnSendAsync:member(2)'
     summary: >-
-      On send, adds the specified content to the end of the item body, after any signature.
+      Appends on send the specified content to the end of the item body, after any signature.
 
 
       **Important**: To use `appendOnSendAsync`<!-- -->, the `AppendOnSend` extended permission must be included in the
@@ -140,11 +140,11 @@ items:
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 1,000,000 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 5,000 characters.
 
 
       - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` but the
-      `data` parameter is in plain text.
+      message body is in plain text.
     isPreview: true
     name: 'appendOnSendAsync(data, callback)'
     fullName: 'appendOnSendAsync(data, callback)'
@@ -159,7 +159,7 @@ items:
         description: ''
       parameters:
         - id: data
-          description: 'The string to be added to the end of the body. The string is limited to 1,000,000 characters.'
+          description: 'The string to be added to the end of the body. The string is limited to 5,000 characters.'
           type:
             - string
         - id: callback
