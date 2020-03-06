@@ -25,6 +25,7 @@ items:
       - 'office!Office.EventType.BindingSelectionChanged:member'
       - 'office!Office.EventType.DialogEventReceived:member'
       - 'office!Office.EventType.DialogMessageReceived:member'
+      - 'office!Office.EventType.DialogParentMessageReceived:member'
       - 'office!Office.EventType.DocumentSelectionChanged:member'
       - 'office!Office.EventType.EnhancedLocationsChanged:member'
       - 'office!Office.EventType.ItemChanged:member'
@@ -104,9 +105,17 @@ items:
       - typeScript
     type: field
   - uid: 'office!Office.EventType.DialogMessageReceived:member'
-    summary: Triggers when Dialog sends a message via MessageParent.
+    summary: Triggers when a dialog sends a message via `messageParent`<!-- -->.
     name: DialogMessageReceived
     fullName: DialogMessageReceived
+    langs:
+      - typeScript
+    type: field
+  - uid: 'office!Office.EventType.DialogParentMessageReceived:member'
+    summary: Triggers when a host page sends a message to a child dialog box with `messageChild`<!-- -->.
+    isPreview: true
+    name: DialogParentMessageReceived
+    fullName: DialogParentMessageReceived
     langs:
       - typeScript
     type: field
