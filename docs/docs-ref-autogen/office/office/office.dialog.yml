@@ -16,6 +16,7 @@ items:
     children:
       - 'office!Office.Dialog#addEventHandler:member(1)'
       - 'office!Office.Dialog#close:member(1)'
+      - 'office!Office.Dialog#messageChild:member(1)'
       - 'office!Office.Dialog#sendMessage:member(1)'
   - uid: 'office!Office.Dialog#addEventHandler:member(1)'
     summary: |-
@@ -57,6 +58,30 @@ items:
         type:
           - void
         description: ''
+  - uid: 'office!Office.Dialog#messageChild:member(1)'
+    summary: >-
+      Delivers a message from the host page, such as a task pane or a UI-less function file, to a dialog that was opened
+      from the page.
+    remarks: '**Requirement set**: TBD'
+    isPreview: true
+    name: messageChild(message)
+    fullName: messageChild(message)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'messageChild(message: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: message
+          description: >-
+            Accepts a message from the host page to deliver to the dialog. Anything that can be serialized to a string,
+            including JSON and XML, can be sent.
+          type:
+            - string
   - uid: 'office!Office.Dialog#sendMessage:member(1)'
     summary: FOR INTERNAL USE ONLY. DO NOT CALL IN YOUR CODE.
     name: sendMessage(name)
