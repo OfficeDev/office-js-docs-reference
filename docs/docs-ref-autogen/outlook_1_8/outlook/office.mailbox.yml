@@ -1670,9 +1670,8 @@ items:
 
 
       However, in delegate or shared scenarios, you should instead use the `targetRestUrl` property of the
-      [SharedProperties](xref:outlook!Office.SharedProperties:interface) object (introduced in requirement set 1.8). For
-      more information, see the [delegate access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access)
-      article.
+      `SharedProperties` object (introduced in requirement set 1.8). For more information, see the [delegate
+      access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]

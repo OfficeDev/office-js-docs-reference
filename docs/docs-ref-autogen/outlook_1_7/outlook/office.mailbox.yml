@@ -1607,8 +1607,8 @@ items:
       `ReadWriteItem` permissions to call the `saveAsync` method.
 
 
-      However, in delegate or shared scenarios, you should instead use the `targetRestUrl` property of the  object
-      (introduced in requirement set 1.8). For more information, see the [delegate
+      However, in delegate or shared scenarios, you should instead use the `targetRestUrl` property of the
+      `SharedProperties` object (introduced in requirement set 1.8). For more information, see the [delegate
       access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
 
