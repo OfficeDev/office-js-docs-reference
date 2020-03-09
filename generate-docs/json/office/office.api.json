@@ -7258,6 +7258,49 @@
                 },
                 {
                   "kind": "MethodSignature",
+                  "canonicalReference": "office!Office.Dialog#messageChild:member(1)",
+                  "docComment": "/**\n * Delivers a message from the host page, such as a task pane or a UI-less function file, to a dialog that was opened from the page.\n *\n * @remarks\n *\n * **Requirement set**: TBD\n *\n * @param message - Accepts a message from the host page to deliver to the dialog. Anything that can be serialized to a string, including JSON and XML, can be sent.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "messageChild(message: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "message",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ],
+                  "name": "messageChild"
+                },
+                {
+                  "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Dialog#sendMessage:member(1)",
                   "docComment": "/**\n * FOR INTERNAL USE ONLY. DO NOT CALL IN YOUR CODE.\n */\n",
                   "excerptTokens": [
@@ -11296,7 +11339,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "office!Office.EventType.DialogMessageReceived:member",
-                  "docComment": "/**\n * Triggers when Dialog sends a message via MessageParent.\n */\n",
+                  "docComment": "/**\n * Triggers when a dialog sends a message via `messageParent`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11305,6 +11348,23 @@
                   ],
                   "releaseTag": "Public",
                   "name": "DialogMessageReceived",
+                  "initializerTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "office!Office.EventType.DialogParentMessageReceived:member",
+                  "docComment": "/**\n * Triggers when a host page sends a message to a child dialog box with `messageChild`.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "DialogParentMessageReceived"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "DialogParentMessageReceived",
                   "initializerTokenRange": {
                     "startIndex": 0,
                     "endIndex": 0
@@ -29207,6 +29267,105 @@
               "releaseTag": "Public",
               "name": "UI",
               "members": [
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "office!Office.UI#addHandlerAsync:member(1)",
+                  "docComment": "/**\n * Adds an event handler to the object using the specified event type.\n *\n * @remarks\n *\n * **Requirement set**: TBD\n *\n * You can add multiple event handlers for the specified event type as long as the name of each event handler function is unique.\n *\n * @param eventType - Specifies the type of event to add. This must be `Office.EventType.DialogParentMessageReceived`.\n *\n * @param handler - The event handler function to add, whose only parameter is of type {@link Office.DialogParentMessageReceivedEventArgs}.\n *\n * @param options - Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.\n *\n * @param callback - Optional. A function that is invoked when the handler registration returns, whose only parameter is of type {@link Office.AsyncResult}.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "addHandlerAsync(eventType: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Office.EventType",
+                      "canonicalReference": "office!Office.EventType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", handler: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(result: any) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", options?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Office.AsyncContextOptions",
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(result: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncResult",
+                      "canonicalReference": "office!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 11,
+                    "endIndex": 12
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "eventType",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "handler",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 4
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 5,
+                        "endIndex": 6
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 7,
+                        "endIndex": 10
+                      }
+                    }
+                  ],
+                  "name": "addHandlerAsync"
+                },
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.UI#closeContainer:member(1)",
