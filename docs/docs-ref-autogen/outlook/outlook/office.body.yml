@@ -44,6 +44,10 @@ items:
       `ExtendedPermissions` node of the manifest.
 
 
+      **Note**: To clear data from a previous `appendOnSendAsync` call, you can call it again with the `data` parameter
+      set to `null`<!-- -->.
+
+
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
@@ -59,7 +63,7 @@ items:
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 5,000 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 5,000 characters.
 
 
       - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` but the
@@ -125,6 +129,10 @@ items:
       `ExtendedPermissions` node of the manifest.
 
 
+      **Note**: To clear data from a previous `appendOnSendAsync` call, you can call it again with the `data` parameter
+      set to `null`<!-- -->.
+
+
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
@@ -140,7 +148,7 @@ items:
       **Errors**:
 
 
-      - `DataExceedsMaximumSize`<!-- -->: The data parameter is longer than 5,000 characters.
+      - `DataExceedsMaximumSize`<!-- -->: The `data` parameter is longer than 5,000 characters.
 
 
       - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` but the
