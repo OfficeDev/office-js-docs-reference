@@ -12,6 +12,7 @@ items:
       - 'excel!Excel.Interfaces.PivotLayoutData#autoFormat:member'
       - 'excel!Excel.Interfaces.PivotLayoutData#enableFieldList:member'
       - 'excel!Excel.Interfaces.PivotLayoutData#layoutType:member'
+      - 'excel!Excel.Interfaces.PivotLayoutData#pivotStyle:member'
       - 'excel!Excel.Interfaces.PivotLayoutData#preserveFormatting:member'
       - 'excel!Excel.Interfaces.PivotLayoutData#showColumnGrandTotals:member'
       - 'excel!Excel.Interfaces.PivotLayoutData#showRowGrandTotals:member'
@@ -63,6 +64,24 @@ items:
       return:
         type:
           - 'excel!Excel.Interfaces.PivotLayoutData#layoutType~0:complex'
+  - uid: 'excel!Excel.Interfaces.PivotLayoutData#pivotStyle:member'
+    summary: >-
+      The style applied to the PivotTable.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: pivotStyle
+    fullName: pivotStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pivotStyle?: Excel.Interfaces.PivotTableStyleData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.PivotTableStyleData:interface'
   - uid: 'excel!Excel.Interfaces.PivotLayoutData#preserveFormatting:member'
     summary: >-
       Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as
@@ -137,6 +156,8 @@ references:
         fullName: Excel.PivotLayoutType
       - name: ' | "Compact" | "Tabular" | "Outline"'
         fullName: ' | "Compact" | "Tabular" | "Outline"'
+  - uid: 'excel!Excel.Interfaces.PivotTableStyleData:interface'
+    name: Excel.Interfaces.PivotTableStyleData
   - uid: 'excel!Excel.Interfaces.PivotLayoutData#subtotalLocation~0:complex'
     name: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off"
     fullName: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off"

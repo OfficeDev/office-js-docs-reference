@@ -30,6 +30,7 @@ items:
       - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#showTotals:member'
       - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#sort:member'
       - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#style:member'
+      - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#tableStyle:member'
       - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#worksheet:member'
   - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#$all:member'
     summary: >-
@@ -138,8 +139,13 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#name:member'
-    summary: |-
+    summary: >-
       For EACH ITEM in the collection: Name of the table.
+
+
+      The set name of the table must follow the guidelines specified in the [Rename an Excel
+      table](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114) article.
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -286,6 +292,24 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#tableStyle:member'
+    summary: >-
+      For EACH ITEM in the collection: The style applied to the Table.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: tableStyle
+    fullName: tableStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tableStyle?: Excel.Interfaces.TableStyleLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.TableStyleLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#worksheet:member'
     summary: |-
       For EACH ITEM in the collection: The worksheet containing the current table.
@@ -310,5 +334,7 @@ references:
     name: Excel.Interfaces.TableRowCollectionLoadOptions
   - uid: 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
     name: Excel.Interfaces.TableSortLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableStyleLoadOptions:interface'
+    name: Excel.Interfaces.TableStyleLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
     name: Excel.Interfaces.WorksheetLoadOptions

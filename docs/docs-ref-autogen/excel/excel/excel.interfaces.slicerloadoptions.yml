@@ -20,6 +20,7 @@ items:
       - 'excel!Excel.Interfaces.SlicerLoadOptions#left:member'
       - 'excel!Excel.Interfaces.SlicerLoadOptions#name:member'
       - 'excel!Excel.Interfaces.SlicerLoadOptions#nameInFormula:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#slicerStyle:member'
       - 'excel!Excel.Interfaces.SlicerLoadOptions#sortBy:member'
       - 'excel!Excel.Interfaces.SlicerLoadOptions#style:member'
       - 'excel!Excel.Interfaces.SlicerLoadOptions#top:member'
@@ -151,6 +152,24 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#slicerStyle:member'
+    summary: >-
+      The style applied to the Slicer.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: slicerStyle
+    fullName: slicerStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'slicerStyle?: Excel.Interfaces.SlicerStyleLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.SlicerStyleLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#sortBy:member'
     summary: >-
       Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending",
@@ -236,5 +255,7 @@ items:
         type:
           - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
 references:
+  - uid: 'excel!Excel.Interfaces.SlicerStyleLoadOptions:interface'
+    name: Excel.Interfaces.SlicerStyleLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
     name: Excel.Interfaces.WorksheetLoadOptions

@@ -165,7 +165,6 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.Application): void;
         /**
-         *
          * Recalculate all currently opened workbooks in Excel.
          *
          * [Api set: ExcelApi 1.1]
@@ -174,7 +173,6 @@ export declare namespace Excel {
          */
         calculate(calculationType: Excel.CalculationType): void;
         /**
-         *
          * Recalculate all currently opened workbooks in Excel.
          *
          * [Api set: ExcelApi 1.1]
@@ -215,7 +213,7 @@ export declare namespace Excel {
     /**
      *
      * Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
-            To learn more about the workbook object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.
+                To learn more about the workbook object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.
      *
      * [Api set: ExcelApi 1.1]
      */
@@ -300,7 +298,6 @@ export declare namespace Excel {
         
         
         /**
-         *
          * Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method will throw an error.
          *
          * [Api set: ExcelApi 1.1]
@@ -341,7 +338,7 @@ export declare namespace Excel {
     /**
      *
      * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
-            To learn more about the worksheet object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
+                To learn more about the worksheet object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
      *
      * [Api set: ExcelApi 1.1]
      */
@@ -422,7 +419,6 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.Worksheet): void;
         /**
-         *
          * Activate the worksheet in the Excel UI.
          *
          * [Api set: ExcelApi 1.1]
@@ -432,7 +428,6 @@ export declare namespace Excel {
         
         
         /**
-         *
          * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden or visible before deleting it.
          *
          * [Api set: ExcelApi 1.1]
@@ -441,7 +436,6 @@ export declare namespace Excel {
         
         
         /**
-         *
          * Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it stays within the worksheet grid.
          *
          * [Api set: ExcelApi 1.1]
@@ -455,7 +449,6 @@ export declare namespace Excel {
         
         
         /**
-         *
          * Gets the range object, representing a single rectangular block of cells, specified by the address or name.
          *
          * [Api set: ExcelApi 1.1]
@@ -517,7 +510,6 @@ export declare namespace Excel {
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Worksheet[];
         /**
-         *
          * Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish to activate the newly added worksheet, call ".activate() on it.
          *
          * [Api set: ExcelApi 1.1]
@@ -526,7 +518,6 @@ export declare namespace Excel {
          */
         add(name?: string): Excel.Worksheet;
         /**
-         *
          * Gets the currently active worksheet in the workbook.
          *
          * [Api set: ExcelApi 1.1]
@@ -535,7 +526,6 @@ export declare namespace Excel {
         
         
         /**
-         *
          * Gets a worksheet object using its Name or ID.
          *
          * [Api set: ExcelApi 1.1]
@@ -586,8 +576,8 @@ export declare namespace Excel {
     /**
      *
      * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
-            To learn more about how ranges are used throughout the API, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | Work with ranges using the Excel JavaScript API}
-            and {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced | Work with ranges using the Excel JavaScript API (advanced)}.
+                To learn more about how ranges are used throughout the API, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | Work with ranges using the Excel JavaScript API}
+                and {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced | Work with ranges using the Excel JavaScript API (advanced)}.
      *
      * [Api set: ExcelApi 1.1]
      */
@@ -734,7 +724,6 @@ export declare namespace Excel {
         
         
         /**
-         *
          * Clear range values, format, fill, border, etc.
          *
          * [Api set: ExcelApi 1.1]
@@ -743,7 +732,6 @@ export declare namespace Excel {
          */
         clear(applyTo?: Excel.ClearApplyTo): void;
         /**
-         *
          * Clear range values, format, fill, border, etc.
          *
          * [Api set: ExcelApi 1.1]
@@ -756,7 +744,6 @@ export declare namespace Excel {
         
         
         /**
-         *
          * Deletes the cells associated with the range.
          *
          * [Api set: ExcelApi 1.1]
@@ -765,7 +752,6 @@ export declare namespace Excel {
          */
         delete(shift: Excel.DeleteShiftDirection): void;
         /**
-         *
          * Deletes the cells associated with the range.
          *
          * [Api set: ExcelApi 1.1]
@@ -778,7 +764,6 @@ export declare namespace Excel {
         
         
         /**
-         *
          * Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and "D10:E15" is "B2:E15".
          *
          * [Api set: ExcelApi 1.1]
@@ -787,7 +772,6 @@ export declare namespace Excel {
          */
         getBoundingRect(anotherRange: Range | string): Excel.Range;
         /**
-         *
          * Gets the range object containing the single cell based on row and column numbers. The cell can be outside the bounds of its parent range, so long as it stays within the worksheet grid. The returned cell is located relative to the top left cell of the range.
          *
          * [Api set: ExcelApi 1.1]
@@ -798,7 +782,6 @@ export declare namespace Excel {
         getCell(row: number, column: number): Excel.Range;
         
         /**
-         *
          * Gets a column contained in the range.
          *
          * [Api set: ExcelApi 1.1]
@@ -810,14 +793,12 @@ export declare namespace Excel {
         
         
         /**
-         *
          * Gets an object that represents the entire column of the range (for example, if the current range represents cells "B4:E11", its `getEntireColumn` is a range that represents columns "B:E").
          *
          * [Api set: ExcelApi 1.1]
          */
         getEntireColumn(): Excel.Range;
         /**
-         *
          * Gets an object that represents the entire row of the range (for example, if the current range represents cells "B4:E11", its `GetEntireRow` is a range that represents rows "4:11").
          *
          * [Api set: ExcelApi 1.1]
@@ -825,7 +806,6 @@ export declare namespace Excel {
         getEntireRow(): Excel.Range;
         
         /**
-         *
          * Gets the range object that represents the rectangular intersection of the given ranges.
          *
          * [Api set: ExcelApi 1.1]
@@ -835,28 +815,24 @@ export declare namespace Excel {
         getIntersection(anotherRange: Range | string): Excel.Range;
         
         /**
-         *
          * Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".
          *
          * [Api set: ExcelApi 1.1]
          */
         getLastCell(): Excel.Range;
         /**
-         *
          * Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".
          *
          * [Api set: ExcelApi 1.1]
          */
         getLastColumn(): Excel.Range;
         /**
-         *
          * Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
          *
          * [Api set: ExcelApi 1.1]
          */
         getLastRow(): Excel.Range;
         /**
-         *
          * Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an error will be thrown.
          *
          * [Api set: ExcelApi 1.1]
@@ -867,7 +843,6 @@ export declare namespace Excel {
         getOffsetRange(rowOffset: number, columnOffset: number): Excel.Range;
         
         /**
-         *
          * Gets a row contained in the range.
          *
          * [Api set: ExcelApi 1.1]
@@ -892,7 +867,6 @@ export declare namespace Excel {
         
         
         /**
-         *
          * Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.
          *
          * [Api set: ExcelApi 1.1]
@@ -901,7 +875,6 @@ export declare namespace Excel {
          */
         insert(shift: Excel.InsertShiftDirection): Excel.Range;
         /**
-         *
          * Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.
          *
          * [Api set: ExcelApi 1.1]
@@ -911,9 +884,8 @@ export declare namespace Excel {
         insert(shiftString: "Down" | "Right"): Excel.Range;
         
         /**
-         *
          * Moves cell values, formatting, and formulas from current range to the destination range, replacing the old information in those cells.
-            The destination range will be expanded automatically if it is smaller than the current range. Any cells in the destination range that are outside of the original range's area are not changed.
+                    The destination range will be expanded automatically if it is smaller than the current range. Any cells in the destination range that are outside of the original range's area are not changed.
          *
          * [Api set: ExcelApiOnline 1.1]
          *
@@ -923,7 +895,6 @@ export declare namespace Excel {
         
         
         /**
-         *
          * Selects the specified range in the Excel UI.
          *
          * [Api set: ExcelApi 1.1]
@@ -1007,7 +978,6 @@ export declare namespace Excel {
         
         
         /**
-         *
          * Gets a NamedItem object using its name.
          *
          * [Api set: ExcelApi 1.1]
@@ -1099,7 +1069,6 @@ export declare namespace Excel {
         set(properties: Excel.NamedItem): void;
         
         /**
-         *
          * Returns the range object that is associated with the name. Throws an error if the named item's type is not a range.
          *
          * [Api set: ExcelApi 1.1]
@@ -1159,21 +1128,18 @@ export declare namespace Excel {
         readonly type: Excel.BindingType | "Range" | "Table" | "Text";
         
         /**
-         *
          * Returns the range represented by the binding. Will throw an error if binding is not of the correct type.
          *
          * [Api set: ExcelApi 1.1]
          */
         getRange(): Excel.Range;
         /**
-         *
          * Returns the table represented by the binding. Will throw an error if binding is not of the correct type.
          *
          * [Api set: ExcelApi 1.1]
          */
         getTable(): Excel.Table;
         /**
-         *
          * Returns the text represented by the binding. Will throw an error if binding is not of the correct type.
          *
          * [Api set: ExcelApi 1.1]
@@ -1234,7 +1200,6 @@ export declare namespace Excel {
         
         
         /**
-         *
          * Gets a binding object by ID.
          *
          * [Api set: ExcelApi 1.1]
@@ -1243,7 +1208,6 @@ export declare namespace Excel {
          */
         getItem(id: string): Excel.Binding;
         /**
-         *
          * Gets a binding object based on its position in the items array.
          *
          * [Api set: ExcelApi 1.1]
@@ -1295,7 +1259,6 @@ export declare namespace Excel {
          */
         readonly count: number;
         /**
-         *
          * Create a new table. The range object or source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.
          *
          * [Api set: ExcelApi 1.1]
@@ -1306,7 +1269,6 @@ export declare namespace Excel {
         add(address: Range | string, hasHeaders: boolean): Excel.Table;
         
         /**
-         *
          * Gets a table by Name or ID.
          *
          * [Api set: ExcelApi 1.1]
@@ -1315,7 +1277,6 @@ export declare namespace Excel {
          */
         getItem(key: string): Excel.Table;
         /**
-         *
          * Gets a table based on its position in the collection.
          *
          * [Api set: ExcelApi 1.1]
@@ -1355,7 +1316,7 @@ export declare namespace Excel {
     /**
      *
      * Represents an Excel table.
-            To learn more about the table object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.
+                To learn more about the table object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.
      *
      * [Api set: ExcelApi 1.1]
      */
@@ -1392,8 +1353,8 @@ export declare namespace Excel {
         /**
          *
          * Name of the table.
-            
-             The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                    
+                     The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -1439,35 +1400,30 @@ export declare namespace Excel {
         
         
         /**
-         *
          * Deletes the table.
          *
          * [Api set: ExcelApi 1.1]
          */
         delete(): void;
         /**
-         *
          * Gets the range object associated with the data body of the table.
          *
          * [Api set: ExcelApi 1.1]
          */
         getDataBodyRange(): Excel.Range;
         /**
-         *
          * Gets the range object associated with header row of the table.
          *
          * [Api set: ExcelApi 1.1]
          */
         getHeaderRowRange(): Excel.Range;
         /**
-         *
          * Gets the range object associated with the entire table.
          *
          * [Api set: ExcelApi 1.1]
          */
         getRange(): Excel.Range;
         /**
-         *
          * Gets the range object associated with totals row of the table.
          *
          * [Api set: ExcelApi 1.1]
@@ -1522,7 +1478,6 @@ export declare namespace Excel {
          */
         readonly count: number;
         /**
-         *
          * Adds a new column to the table.
          *
          * [Api set: ExcelApi 1.1 requires an index smaller than the total column count; 1.4 allows index to be optional (null or -1) and will append a column at the end; 1.4 allows name parameter at creation time.]
@@ -1534,7 +1489,6 @@ export declare namespace Excel {
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, name?: string): Excel.TableColumn;
         
         /**
-         *
          * Gets a column object by Name or ID.
          *
          * [Api set: ExcelApi 1.1]
@@ -1543,7 +1497,6 @@ export declare namespace Excel {
          */
         getItem(key: number | string): Excel.TableColumn;
         /**
-         *
          * Gets a column based on its position in the collection.
          *
          * [Api set: ExcelApi 1.1]
@@ -1629,35 +1582,30 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.TableColumn): void;
         /**
-         *
          * Deletes the column from the table.
          *
          * [Api set: ExcelApi 1.1]
          */
         delete(): void;
         /**
-         *
          * Gets the range object associated with the data body of the column.
          *
          * [Api set: ExcelApi 1.1]
          */
         getDataBodyRange(): Excel.Range;
         /**
-         *
          * Gets the range object associated with the header row of the column.
          *
          * [Api set: ExcelApi 1.1]
          */
         getHeaderRowRange(): Excel.Range;
         /**
-         *
          * Gets the range object associated with the entire column.
          *
          * [Api set: ExcelApi 1.1]
          */
         getRange(): Excel.Range;
         /**
-         *
          * Gets the range object associated with the totals row of the column.
          *
          * [Api set: ExcelApi 1.1]
@@ -1693,11 +1641,11 @@ export declare namespace Excel {
     /**
      *
      * Represents a collection of all the rows that are part of the table.
-            
-             Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
-             a TableRow object represent the physical location of the table row, but not the data.
-             That is, if the data is sorted or if new rows are added, a table row will continue
-             to point at the index for which it was created.
+                
+                 Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
+                 a TableRow object represent the physical location of the table row, but not the data.
+                 That is, if the data is sorted or if new rows are added, a table row will continue
+                 to point at the index for which it was created.
      *
      * [Api set: ExcelApi 1.1]
      */
@@ -1714,13 +1662,12 @@ export declare namespace Excel {
          */
         readonly count: number;
         /**
-         *
          * Adds one or more rows to the table. The return object will be the top of the newly added row(s).
-            
-             Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
-             a TableRow object represent the physical location of the table row, but not the data.
-             That is, if the data is sorted or if new rows are added, a table row will continue
-             to point at the index for which it was created.
+                    
+                     Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
+                     a TableRow object represent the physical location of the table row, but not the data.
+                     That is, if the data is sorted or if new rows are added, a table row will continue
+                     to point at the index for which it was created.
          *
          * [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows.]
          *
@@ -1730,13 +1677,12 @@ export declare namespace Excel {
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number): Excel.TableRow;
         
         /**
-         *
          * Gets a row based on its position in the collection.
-            
-             Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
-             a TableRow object represent the physical location of the table row, but not the data.
-             That is, if the data is sorted or if new rows are added, a table row will continue
-             to point at the index for which it was created.
+                    
+                     Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
+                     a TableRow object represent the physical location of the table row, but not the data.
+                     That is, if the data is sorted or if new rows are added, a table row will continue
+                     to point at the index for which it was created.
          *
          * [Api set: ExcelApi 1.1]
          *
@@ -1770,11 +1716,11 @@ export declare namespace Excel {
     /**
      *
      * Represents a row in a table.
-            
-             Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
-             a TableRow object represent the physical location of the table row, but not the data.
-             That is, if the data is sorted or if new rows are added, a table row will continue
-             to point at the index for which it was created.
+                
+                 Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
+                 a TableRow object represent the physical location of the table row, but not the data.
+                 That is, if the data is sorted or if new rows are added, a table row will continue
+                 to point at the index for which it was created.
      *
      * [Api set: ExcelApi 1.1]
      */
@@ -1810,14 +1756,12 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.TableRow): void;
         /**
-         *
          * Deletes the row from the table.
          *
          * [Api set: ExcelApi 1.1]
          */
         delete(): void;
         /**
-         *
          * Returns the range object associated with the entire row.
          *
          * [Api set: ExcelApi 1.1]
@@ -1935,14 +1879,13 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.RangeFormat): void;
         /**
-         *
          * Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in characters.
          *
          * [Api set: ExcelApiOnline 1.1]
          *
          * @param amount - The number of character spaces by which the current indent is adjusted. This value should be between -250 and 250.
-            **Note**: If the amount would raise the indent level above 250, the indent level stays with 250.
-            Similarly, if the amount would lower the indent level below 0, the indent level stays 0.
+                    **Note**: If the amount would raise the indent level above 250, the indent level stays with 250.
+                    Similarly, if the amount would lower the indent level below 0, the indent level stays 0.
          */
         adjustIndent(amount: number): void;
         
@@ -2010,7 +1953,6 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.RangeFill): void;
         /**
-         *
          * Resets the range background.
          *
          * [Api set: ExcelApi 1.1]
@@ -2142,7 +2084,6 @@ export declare namespace Excel {
         readonly count: number;
         
         /**
-         *
          * Gets a border object using its name.
          *
          * [Api set: ExcelApi 1.1]
@@ -2151,7 +2092,6 @@ export declare namespace Excel {
          */
         getItem(index: Excel.BorderIndex): Excel.RangeBorder;
         /**
-         *
          * Gets a border object using its name.
          *
          * [Api set: ExcelApi 1.1]
@@ -2160,7 +2100,6 @@ export declare namespace Excel {
          */
         getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
         /**
-         *
          * Gets a border object using its index.
          *
          * [Api set: ExcelApi 1.1]
@@ -2307,7 +2246,6 @@ export declare namespace Excel {
          */
         readonly count: number;
         /**
-         *
          * Creates a new chart.
          *
          * [Api set: ExcelApi 1.1]
@@ -2318,7 +2256,6 @@ export declare namespace Excel {
          */
         add(type: Excel.ChartType, sourceData: Range, seriesBy?: Excel.ChartSeriesBy): Excel.Chart;
         /**
-         *
          * Creates a new chart.
          *
          * [Api set: ExcelApi 1.1]
@@ -2330,7 +2267,6 @@ export declare namespace Excel {
         add(typeString: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel", sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
         
         /**
-         *
          * Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.
          *
          * [Api set: ExcelApi 1.1]
@@ -2339,7 +2275,6 @@ export declare namespace Excel {
          */
         getItem(name: string): Excel.Chart;
         /**
-         *
          * Gets a chart based on its position in the collection.
          *
          * [Api set: ExcelApi 1.1]
@@ -2379,7 +2314,7 @@ export declare namespace Excel {
     /**
      *
      * Represents a chart object in a workbook.
-            To learn more about the Chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.
+                To learn more about the Chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.
      *
      * [Api set: ExcelApi 1.1]
      */
@@ -2492,7 +2427,6 @@ export declare namespace Excel {
         set(properties: Excel.Chart): void;
         
         /**
-         *
          * Deletes the chart object.
          *
          * [Api set: ExcelApi 1.1]
@@ -2501,7 +2435,6 @@ export declare namespace Excel {
         
         
         /**
-         *
          * Resets the source data for the chart.
          *
          * [Api set: ExcelApi 1.1]
@@ -2511,7 +2444,6 @@ export declare namespace Excel {
          */
         setData(sourceData: Range, seriesBy?: Excel.ChartSeriesBy): void;
         /**
-         *
          * Resets the source data for the chart.
          *
          * [Api set: ExcelApi 1.1]
@@ -2521,7 +2453,6 @@ export declare namespace Excel {
          */
         setData(sourceData: Range, seriesByString?: "Auto" | "Columns" | "Rows"): void;
         /**
-         *
          * Positions the chart relative to cells on the worksheet.
          *
          * [Api set: ExcelApi 1.1]
@@ -2648,7 +2579,6 @@ export declare namespace Excel {
         
         
         /**
-         *
          * Retrieves a series based on its position in the collection.
          *
          * [Api set: ExcelApi 1.1]
@@ -2882,7 +2812,6 @@ export declare namespace Excel {
         readonly count: number;
         
         /**
-         *
          * Retrieve a point based on its position within the series.
          *
          * [Api set: ExcelApi 1.1]
@@ -4076,18 +4005,12 @@ export declare namespace Excel {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         */
-        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartFill;
-        /**
-         *
          * Clear the fill color of a chart element.
          *
          * [Api set: ExcelApi 1.1]
          */
         clear(): void;
         /**
-         *
          * Sets the fill formatting of a chart element to a uniform color.
          *
          * [Api set: ExcelApi 1.1]
@@ -4139,7 +4062,6 @@ export declare namespace Excel {
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Excel.ChartLineFormat): void;
         /**
-         *
          * Clear the line format of a chart element.
          *
          * [Api set: ExcelApi 1.1]
@@ -4478,7 +4400,6 @@ export declare namespace Excel {
      */
     enum ChartSeriesBy {
         /**
-         *
          * On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; in Excel on the web, "auto" will simply default to "columns".
          *
          */
@@ -4648,19 +4569,16 @@ export declare namespace Excel {
      */
     enum CalculationMode {
         /**
-         *
          * The default recalculation behavior where Excel calculates new formula results every time the relevant data is changed.
          *
          */
         automatic = "Automatic",
         /**
-         *
          * Calculates new formula results every time the relevant data is changed, unless the formula is in a data table.
          *
          */
         automaticExceptTables = "AutomaticExceptTables",
         /**
-         *
          * Calculations only occur when the user or add-in requests them.
          *
          */
@@ -4671,19 +4589,16 @@ export declare namespace Excel {
      */
     enum CalculationType {
         /**
-         *
          * Recalculates all cells that Excel has marked as dirty, that is, dependents of volatile or changed data, and cells programmatically marked as dirty.
          *
          */
         recalculate = "Recalculate",
         /**
-         *
          * This will mark all cells as dirty and then recalculate them.
          *
          */
         full = "Full",
         /**
-         *
          * This will rebuild the full dependency chain, mark all cells as dirty and then recalculate them.
          *
          */
@@ -4695,25 +4610,21 @@ export declare namespace Excel {
     enum ClearApplyTo {
         all = "All",
         /**
-         *
          * Clears all formatting for the range.
          *
          */
         formats = "Formats",
         /**
-         *
          * Clears the contents of the range.
          *
          */
         contents = "Contents",
         /**
-         *
          * Clears all hyperlinks, but leaves all content and formatting intact.
          *
          */
         hyperlinks = "Hyperlinks",
         /**
-         *
          * Removes hyperlinks and formatting for the cell but leaves content, conditional formats, and data validation intact.
          *
          */
@@ -5073,8 +4984,8 @@ export declare namespace Excel {
             /**
              *
              * Name of the table.
-            
-             The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                        
+                         The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -6931,8 +6842,8 @@ export declare namespace Excel {
             /**
              *
              * Name of the table.
-            
-             The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                        
+                         The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -8607,7 +8518,7 @@ export declare namespace Excel {
         /**
          *
          * Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
-            To learn more about the workbook object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.
+                    To learn more about the workbook object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -8652,7 +8563,7 @@ export declare namespace Excel {
         /**
          *
          * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
-            To learn more about the worksheet object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
+                    To learn more about the worksheet object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -8780,8 +8691,8 @@ export declare namespace Excel {
         /**
          *
          * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
-            To learn more about how ranges are used throughout the API, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | Work with ranges using the Excel JavaScript API}
-            and {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced | Work with ranges using the Excel JavaScript API (advanced)}.
+                    To learn more about how ranges are used throughout the API, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | Work with ranges using the Excel JavaScript API}
+                    and {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced | Work with ranges using the Excel JavaScript API (advanced)}.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -9102,8 +9013,8 @@ export declare namespace Excel {
             /**
              *
              * For EACH ITEM in the collection: Name of the table.
-            
-             The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                        
+                         The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -9137,7 +9048,7 @@ export declare namespace Excel {
         /**
          *
          * Represents an Excel table.
-            To learn more about the table object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.
+                    To learn more about the table object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -9176,8 +9087,8 @@ export declare namespace Excel {
             /**
              *
              * Name of the table.
-            
-             The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
+                        
+                         The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -9292,11 +9203,11 @@ export declare namespace Excel {
         /**
          *
          * Represents a collection of all the rows that are part of the table.
-            
-             Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
-             a TableRow object represent the physical location of the table row, but not the data.
-             That is, if the data is sorted or if new rows are added, a table row will continue
-             to point at the index for which it was created.
+                    
+                     Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
+                     a TableRow object represent the physical location of the table row, but not the data.
+                     That is, if the data is sorted or if new rows are added, a table row will continue
+                     to point at the index for which it was created.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -9323,11 +9234,11 @@ export declare namespace Excel {
         /**
          *
          * Represents a row in a table.
-            
-             Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
-             a TableRow object represent the physical location of the table row, but not the data.
-             That is, if the data is sorted or if new rows are added, a table row will continue
-             to point at the index for which it was created.
+                    
+                     Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
+                     a TableRow object represent the physical location of the table row, but not the data.
+                     That is, if the data is sorted or if new rows are added, a table row will continue
+                     to point at the index for which it was created.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -9686,7 +9597,7 @@ export declare namespace Excel {
         /**
          *
          * Represents a chart object in a workbook.
-            To learn more about the Chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.
+                    To learn more about the Chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.
          *
          * [Api set: ExcelApi 1.1]
          */

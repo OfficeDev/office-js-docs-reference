@@ -16,6 +16,7 @@ items:
       - 'excel!Excel.Interfaces.CommentReplyLoadOptions#authorEmail:member'
       - 'excel!Excel.Interfaces.CommentReplyLoadOptions#authorName:member'
       - 'excel!Excel.Interfaces.CommentReplyLoadOptions#content:member'
+      - 'excel!Excel.Interfaces.CommentReplyLoadOptions#contentType:member'
       - 'excel!Excel.Interfaces.CommentReplyLoadOptions#creationDate:member'
       - 'excel!Excel.Interfaces.CommentReplyLoadOptions#id:member'
       - 'excel!Excel.Interfaces.CommentReplyLoadOptions#mentions:member'
@@ -77,6 +78,24 @@ items:
     type: property
     syntax:
       content: 'content?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.CommentReplyLoadOptions#contentType:member'
+    summary: >-
+      Gets the content type of the comment.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: contentType
+    fullName: contentType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'contentType?: boolean;'
       return:
         type:
           - boolean

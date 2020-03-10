@@ -17,6 +17,7 @@ items:
       - 'excel!Excel.Comment#authorEmail:member'
       - 'excel!Excel.Comment#authorName:member'
       - 'excel!Excel.Comment#content:member'
+      - 'excel!Excel.Comment#contentType:member'
       - 'excel!Excel.Comment#context:member'
       - 'excel!Excel.Comment#creationDate:member'
       - 'excel!Excel.Comment#delete:member(1)'
@@ -91,6 +92,24 @@ items:
               await context.sync();
           });
           ```
+  - uid: 'excel!Excel.Comment#contentType:member'
+    summary: >-
+      Gets the content type of the comment.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: contentType
+    fullName: contentType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly contentType: Excel.ContentType | "Plain" | "Mention";'
+      return:
+        type:
+          - 'excel!Excel.Comment#contentType~0:complex'
   - uid: 'excel!Excel.Comment#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -432,6 +451,15 @@ items:
 references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.Comment#contentType~0:complex'
+    name: Excel.ContentType | "Plain" | "Mention"
+    fullName: Excel.ContentType | "Plain" | "Mention"
+    spec.typeScript:
+      - uid: 'excel!Excel.ContentType:enum'
+        name: Excel.ContentType
+        fullName: Excel.ContentType
+      - name: ' | "Plain" | "Mention"'
+        fullName: ' | "Plain" | "Mention"'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
   - uid: '!Date:interface'

@@ -30,6 +30,7 @@ items:
       - 'excel!Excel.Interfaces.RangeData#left:member'
       - 'excel!Excel.Interfaces.RangeData#linkedDataTypeState:member'
       - 'excel!Excel.Interfaces.RangeData#numberFormat:member'
+      - 'excel!Excel.Interfaces.RangeData#numberFormatCategories:member'
       - 'excel!Excel.Interfaces.RangeData#numberFormatLocal:member'
       - 'excel!Excel.Interfaces.RangeData#rowCount:member'
       - 'excel!Excel.Interfaces.RangeData#rowHidden:member'
@@ -368,6 +369,24 @@ items:
       return:
         type:
           - 'any[][]'
+  - uid: 'excel!Excel.Interfaces.RangeData#numberFormatCategories:member'
+    summary: >-
+      Represents the category of number format of each cell. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: numberFormatCategories
+    fullName: numberFormatCategories
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormatCategories?: Excel.NumberFormatCategory[][];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.RangeData#numberFormatCategories~0:complex'
   - uid: 'excel!Excel.Interfaces.RangeData#numberFormatLocal:member'
     summary: >-
       Represents Excel's number format code for the given range, based on the language settings of the user.​ Excel does
@@ -571,6 +590,15 @@ references:
       - uid: 'excel!Excel.LinkedDataTypeState:enum'
         name: Excel.LinkedDataTypeState
         fullName: Excel.LinkedDataTypeState
+      - name: '[][]'
+        fullName: '[][]'
+  - uid: 'excel!Excel.Interfaces.RangeData#numberFormatCategories~0:complex'
+    name: 'Excel.NumberFormatCategory[][]'
+    fullName: 'Excel.NumberFormatCategory[][]'
+    spec.typeScript:
+      - uid: 'excel!Excel.NumberFormatCategory:enum'
+        name: Excel.NumberFormatCategory
+        fullName: Excel.NumberFormatCategory
       - name: '[][]'
         fullName: '[][]'
   - uid: 'excel!Excel.Interfaces.RangeData#valueTypes~0:complex'
