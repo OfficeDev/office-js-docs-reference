@@ -18,7 +18,7 @@ items:
     children:
       - 'excel!Excel.Interfaces.CultureInfoLoadOptions#$all:member'
       - 'excel!Excel.Interfaces.CultureInfoLoadOptions#name:member'
-      - 'excel!Excel.Interfaces.CultureInfoLoadOptions#numberFormatInfo:member'
+      - 'excel!Excel.Interfaces.CultureInfoLoadOptions#numberFormat:member'
   - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions#$all:member'
     summary: >-
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
@@ -53,7 +53,7 @@ items:
       return:
         type:
           - boolean
-  - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions#numberFormatInfo:member'
+  - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions#numberFormat:member'
     summary: >-
       Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
 
@@ -61,13 +61,13 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: numberFormatInfo
-    fullName: numberFormatInfo
+    name: numberFormat
+    fullName: numberFormat
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'numberFormatInfo?: Excel.Interfaces.NumberFormatInfoLoadOptions;'
+      content: 'numberFormat?: Excel.Interfaces.NumberFormatInfoLoadOptions;'
       return:
         type:
           - 'excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface'

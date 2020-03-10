@@ -30,6 +30,7 @@ items:
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#left:member'
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#linkedDataTypeState:member'
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#numberFormat:member'
+      - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#numberFormatCategories:member'
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#numberFormatLocal:member'
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#rowCount:member'
       - 'excel!Excel.Interfaces.RangeCollectionLoadOptions#rowHidden:member'
@@ -375,6 +376,24 @@ items:
     type: property
     syntax:
       content: 'numberFormat?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#numberFormatCategories:member'
+    summary: >-
+      For EACH ITEM in the collection: Represents the category of number format of each cell. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: numberFormatCategories
+    fullName: numberFormatCategories
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormatCategories?: boolean;'
       return:
         type:
           - boolean
