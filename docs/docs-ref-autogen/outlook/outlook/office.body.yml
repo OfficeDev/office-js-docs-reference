@@ -40,6 +40,11 @@ items:
       Appends on send the specified content to the end of the item body, after any signature.
 
 
+      If the user is running add-ins that implement the [on-send feature using \`ItemSend\` in the
+      manifest](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins?tabs=windows)<!-- -->,
+      append on send runs before on-send functionality.
+
+
       **Important**: To use `appendOnSendAsync`<!-- -->, the `AppendOnSend` extended permission must be included in the
       `ExtendedPermissions` node of the manifest.
 
@@ -123,6 +128,11 @@ items:
   - uid: 'outlook!Office.Body#appendOnSendAsync:member(2)'
     summary: >-
       Appends on send the specified content to the end of the item body, after any signature.
+
+
+      If the user is running add-ins that implement the [on-send feature using \`ItemSend\` in the
+      manifest](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins?tabs=windows)<!-- -->,
+      append on send runs before on-send functionality.
 
 
       **Important**: To use `appendOnSendAsync`<!-- -->, the `AppendOnSend` extended permission must be included in the

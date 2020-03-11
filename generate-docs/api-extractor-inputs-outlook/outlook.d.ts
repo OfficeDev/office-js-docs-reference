@@ -3377,6 +3377,10 @@ export declare namespace Office {
         /**
          * Appends on send the specified content to the end of the item body, after any signature.
          * 
+         * If the user is running add-ins that implement the
+         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins?tabs=windows | on-send feature using `ItemSend` in the manifest},
+         * append on send runs before on-send functionality.
+         * 
          * **Important**: To use `appendOnSendAsync`, the `AppendOnSend` extended permission must be included in the `ExtendedPermissions` node of the manifest.
          * 
          * **Note**: To clear data from a previous `appendOnSendAsync` call, you can call it again with the `data` parameter set to `null`.
@@ -3407,6 +3411,10 @@ export declare namespace Office {
         appendOnSendAsync(data: string, options?: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Appends on send the specified content to the end of the item body, after any signature.
+         * 
+         * If the user is running add-ins that implement the
+         * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins?tabs=windows | on-send feature using `ItemSend` in the manifest},
+         * append on send runs before on-send functionality.
          * 
          * **Important**: To use `appendOnSendAsync`, the `AppendOnSend` extended permission must be included in the `ExtendedPermissions` node of the manifest.
          * 
