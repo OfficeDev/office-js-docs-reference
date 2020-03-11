@@ -24,6 +24,7 @@ items:
       - 'excel!Excel.Interfaces.TableData#showTotals:member'
       - 'excel!Excel.Interfaces.TableData#sort:member'
       - 'excel!Excel.Interfaces.TableData#style:member'
+      - 'excel!Excel.Interfaces.TableData#tableStyle:member'
   - uid: 'excel!Excel.Interfaces.TableData#autoFilter:member'
     summary: |-
       Represents the AutoFilter object of the table. Read-Only.
@@ -117,8 +118,13 @@ items:
         type:
           - string
   - uid: 'excel!Excel.Interfaces.TableData#name:member'
-    summary: |-
+    summary: >-
       Name of the table.
+
+
+      The set name of the table must follow the guidelines specified in the [Rename an Excel
+      table](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114) article.
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -260,6 +266,24 @@ items:
       return:
         type:
           - string
+  - uid: 'excel!Excel.Interfaces.TableData#tableStyle:member'
+    summary: >-
+      The style applied to the Table.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: tableStyle
+    fullName: tableStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tableStyle?: Excel.Interfaces.TableStyleData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.TableStyleData:interface'
 references:
   - uid: 'excel!Excel.Interfaces.AutoFilterData:interface'
     name: Excel.Interfaces.AutoFilterData
@@ -283,3 +307,5 @@ references:
         fullName: '[]'
   - uid: 'excel!Excel.Interfaces.TableSortData:interface'
     name: Excel.Interfaces.TableSortData
+  - uid: 'excel!Excel.Interfaces.TableStyleData:interface'
+    name: Excel.Interfaces.TableStyleData

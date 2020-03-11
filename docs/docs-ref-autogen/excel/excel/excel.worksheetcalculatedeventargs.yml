@@ -17,7 +17,7 @@ items:
       - 'excel!Excel.WorksheetCalculatedEventArgs#worksheetId:member'
   - uid: 'excel!Excel.WorksheetCalculatedEventArgs#address:member'
     summary: >-
-      The address of the ranges that completed calculation. If multiple ranges completed calculation, the string is a
+      The address of the range that completed calculation. If multiple ranges completed calculation, the string is a
       comma-separated list of those range addresses.
 
 

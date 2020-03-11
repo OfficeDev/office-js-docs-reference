@@ -42,8 +42,14 @@ items:
                 uid: 'excel!Excel.BorderLineStyle:enum'
               - name: BorderWeight
                 uid: 'excel!Excel.BorderWeight:enum'
+              - name: BuiltInPivotTableStyle
+                uid: 'excel!Excel.BuiltInPivotTableStyle:enum'
+              - name: BuiltInSlicerStyle
+                uid: 'excel!Excel.BuiltInSlicerStyle:enum'
               - name: BuiltInStyle
                 uid: 'excel!Excel.BuiltInStyle:enum'
+              - name: BuiltInTableStyle
+                uid: 'excel!Excel.BuiltInTableStyle:enum'
               - name: CalculationMode
                 uid: 'excel!Excel.CalculationMode:enum'
               - name: CalculationState
@@ -216,6 +222,8 @@ items:
                 uid: 'excel!Excel.NamedItemScope:enum'
               - name: NamedItemType
                 uid: 'excel!Excel.NamedItemType:enum'
+              - name: NumberFormatCategory
+                uid: 'excel!Excel.NumberFormatCategory:enum'
               - name: PageOrientation
                 uid: 'excel!Excel.PageOrientation:enum'
               - name: PaperType

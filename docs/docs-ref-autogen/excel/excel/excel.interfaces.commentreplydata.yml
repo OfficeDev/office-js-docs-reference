@@ -12,6 +12,7 @@ items:
       - 'excel!Excel.Interfaces.CommentReplyData#authorEmail:member'
       - 'excel!Excel.Interfaces.CommentReplyData#authorName:member'
       - 'excel!Excel.Interfaces.CommentReplyData#content:member'
+      - 'excel!Excel.Interfaces.CommentReplyData#contentType:member'
       - 'excel!Excel.Interfaces.CommentReplyData#creationDate:member'
       - 'excel!Excel.Interfaces.CommentReplyData#id:member'
       - 'excel!Excel.Interfaces.CommentReplyData#mentions:member'
@@ -62,6 +63,24 @@ items:
       return:
         type:
           - string
+  - uid: 'excel!Excel.Interfaces.CommentReplyData#contentType:member'
+    summary: >-
+      Gets the content type of the comment.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: contentType
+    fullName: contentType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'contentType?: Excel.ContentType | "Plain" | "Mention";'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.CommentReplyData#contentType~0:complex'
   - uid: 'excel!Excel.Interfaces.CommentReplyData#creationDate:member'
     summary: |-
       Gets the creation time of the comment reply.
@@ -143,6 +162,15 @@ items:
         type:
           - string
 references:
+  - uid: 'excel!Excel.Interfaces.CommentReplyData#contentType~0:complex'
+    name: Excel.ContentType | "Plain" | "Mention"
+    fullName: Excel.ContentType | "Plain" | "Mention"
+    spec.typeScript:
+      - uid: 'excel!Excel.ContentType:enum'
+        name: Excel.ContentType
+        fullName: Excel.ContentType
+      - name: ' | "Plain" | "Mention"'
+        fullName: ' | "Plain" | "Mention"'
   - uid: '!Date:interface'
     name: Date
   - uid: 'excel!Excel.Interfaces.CommentReplyData#mentions~0:complex'
