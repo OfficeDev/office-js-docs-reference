@@ -1748,6 +1748,17 @@
     }
 
     console.log(outputString);
+'Office.Body#appendOnSendAsync:member(1)':
+  - |-
+    Office.context.mailbox.item.body.appendOnSendAsync(
+        "P.S. This text was appended on send.",
+        {coercionType: Office.CoercionType.Html},
+        function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log("Action failed with error: " + asyncResult.error.message);
+            }
+        }
+    );
 'Office.Body#getAsync:member(1)':
   - >-
     // This example gets the body of the item as plain text.
