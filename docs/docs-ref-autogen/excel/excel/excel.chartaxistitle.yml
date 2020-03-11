@@ -23,6 +23,7 @@ items:
       - 'excel!Excel.ChartAxisTitle#set:member(2)'
       - 'excel!Excel.ChartAxisTitle#setFormula:member(1)'
       - 'excel!Excel.ChartAxisTitle#text:member'
+      - 'excel!Excel.ChartAxisTitle#textOrientation:member'
       - 'excel!Excel.ChartAxisTitle#toJSON:member(1)'
       - 'excel!Excel.ChartAxisTitle#visible:member'
   - uid: 'excel!Excel.ChartAxisTitle#context:member'
@@ -227,6 +228,25 @@ items:
       return:
         type:
           - string
+  - uid: 'excel!Excel.ChartAxisTitle#textOrientation:member'
+    summary: >-
+      Represents the angle to which the text is oriented for the chart axis title. The value should either be an integer
+      from -90 to 90 or the integer 180 for vertically-oriented text.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation: number;'
+      return:
+        type:
+          - number
   - uid: 'excel!Excel.ChartAxisTitle#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

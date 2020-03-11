@@ -54,8 +54,9 @@ items:
           - 'excel!Excel.WorksheetChangedEventArgs#changeType~0:complex'
   - uid: 'excel!Excel.WorksheetChangedEventArgs#details:member'
     summary: >-
-      Gets the information about the change detail. This property can be retrieved when the Changed event is triggered
-      on a single cell. If the Changed event is triggered on multiple cells, this property cannot be retrieved.
+      Represents the information about the change detail. This property can be retrieved when the Changed event is
+      triggered on a single cell. If the Changed event is triggered on multiple cells, this property cannot be
+      retrieved.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

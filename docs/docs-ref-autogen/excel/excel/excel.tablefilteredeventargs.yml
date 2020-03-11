@@ -20,7 +20,7 @@ items:
       - 'excel!Excel.TableFilteredEventArgs#worksheetId:member'
   - uid: 'excel!Excel.TableFilteredEventArgs#tableId:member'
     summary: >-
-      Represents the id of the table in which the filter is applied.
+      Gets the id of the table in which the filter is applied.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -38,7 +38,7 @@ items:
           - string
   - uid: 'excel!Excel.TableFilteredEventArgs#type:member'
     summary: >-
-      Represents the type of the event. See Excel.EventType for details.
+      Gets the type of the event. See Excel.EventType for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -56,7 +56,7 @@ items:
           - '"TableFiltered"'
   - uid: 'excel!Excel.TableFilteredEventArgs#worksheetId:member'
     summary: >-
-      Represents the id of the worksheet which contains the table.
+      Gets the id of the worksheet which contains the table.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

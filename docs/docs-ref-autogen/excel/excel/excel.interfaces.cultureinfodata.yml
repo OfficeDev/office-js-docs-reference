@@ -10,7 +10,7 @@ items:
     package: excel!
     children:
       - 'excel!Excel.Interfaces.CultureInfoData#name:member'
-      - 'excel!Excel.Interfaces.CultureInfoData#numberFormatInfo:member'
+      - 'excel!Excel.Interfaces.CultureInfoData#numberFormat:member'
   - uid: 'excel!Excel.Interfaces.CultureInfoData#name:member'
     summary: >-
       Gets the culture name in the format languagecode2-country/regioncode2 (e.g. "zh-cn" or "en-us"). This is based on
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - string
-  - uid: 'excel!Excel.Interfaces.CultureInfoData#numberFormatInfo:member'
+  - uid: 'excel!Excel.Interfaces.CultureInfoData#numberFormat:member'
     summary: >-
       Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
 
@@ -38,13 +38,13 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: numberFormatInfo
-    fullName: numberFormatInfo
+    name: numberFormat
+    fullName: numberFormat
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'numberFormatInfo?: Excel.Interfaces.NumberFormatInfoData;'
+      content: 'numberFormat?: Excel.Interfaces.NumberFormatInfoData;'
       return:
         type:
           - 'excel!Excel.Interfaces.NumberFormatInfoData:interface'

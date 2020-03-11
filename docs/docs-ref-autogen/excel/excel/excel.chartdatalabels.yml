@@ -396,8 +396,8 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartDataLabels#textOrientation:member'
     summary: >-
-      Represents the angle to which the text is oriented for the data labels. The value should be an integer either from
-      -90 to 90, or 180 for vertically-oriented text.
+      Represents the angle to which the text is oriented for data labels. The value should either be an integer from -90
+      to 90 or the integer 180 for vertically-oriented text.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

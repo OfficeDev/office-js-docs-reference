@@ -38,6 +38,7 @@ items:
       - 'excel!Excel.Interfaces.RangeLoadOptions#left:member'
       - 'excel!Excel.Interfaces.RangeLoadOptions#linkedDataTypeState:member'
       - 'excel!Excel.Interfaces.RangeLoadOptions#numberFormat:member'
+      - 'excel!Excel.Interfaces.RangeLoadOptions#numberFormatCategories:member'
       - 'excel!Excel.Interfaces.RangeLoadOptions#numberFormatLocal:member'
       - 'excel!Excel.Interfaces.RangeLoadOptions#rowCount:member'
       - 'excel!Excel.Interfaces.RangeLoadOptions#rowHidden:member'
@@ -371,6 +372,24 @@ items:
     type: property
     syntax:
       content: 'numberFormat?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.RangeLoadOptions#numberFormatCategories:member'
+    summary: >-
+      Represents the category of number format of each cell. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: numberFormatCategories
+    fullName: numberFormatCategories
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormatCategories?: boolean;'
       return:
         type:
           - boolean

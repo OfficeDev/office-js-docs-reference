@@ -23,7 +23,7 @@ items:
       - 'excel!Excel.CultureInfo#load:member(2)'
       - 'excel!Excel.CultureInfo#load:member(3)'
       - 'excel!Excel.CultureInfo#name:member'
-      - 'excel!Excel.CultureInfo#numberFormatInfo:member'
+      - 'excel!Excel.CultureInfo#numberFormat:member'
       - 'excel!Excel.CultureInfo#toJSON:member(1)'
   - uid: 'excel!Excel.CultureInfo#context:member'
     summary: >-
@@ -132,7 +132,7 @@ items:
       return:
         type:
           - string
-  - uid: 'excel!Excel.CultureInfo#numberFormatInfo:member'
+  - uid: 'excel!Excel.CultureInfo#numberFormat:member'
     summary: >-
       Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
 
@@ -140,13 +140,13 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: numberFormatInfo
-    fullName: numberFormatInfo
+    name: numberFormat
+    fullName: numberFormat
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'readonly numberFormatInfo: Excel.NumberFormatInfo;'
+      content: 'readonly numberFormat: Excel.NumberFormatInfo;'
       return:
         type:
           - 'excel!Excel.NumberFormatInfo:class'

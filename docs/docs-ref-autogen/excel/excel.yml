@@ -23,7 +23,10 @@ items:
       - 'excel!Excel.BorderIndex:enum'
       - 'excel!Excel.BorderLineStyle:enum'
       - 'excel!Excel.BorderWeight:enum'
+      - 'excel!Excel.BuiltInPivotTableStyle:enum'
+      - 'excel!Excel.BuiltInSlicerStyle:enum'
       - 'excel!Excel.BuiltInStyle:enum'
+      - 'excel!Excel.BuiltInTableStyle:enum'
       - 'excel!Excel.CalculationMode:enum'
       - 'excel!Excel.CalculationState:enum'
       - 'excel!Excel.CalculationType:enum'
@@ -712,6 +715,7 @@ items:
       - 'excel!Excel.NamedItemCollection:class'
       - 'excel!Excel.NamedItemScope:enum'
       - 'excel!Excel.NamedItemType:enum'
+      - 'excel!Excel.NumberFormatCategory:enum'
       - 'excel!Excel.NumberFormatInfo:class'
       - 'excel!Excel.PageBreak:class'
       - 'excel!Excel.PageBreakCollection:class'
@@ -1167,8 +1171,14 @@ references:
     name: Excel.BorderLineStyle
   - uid: 'excel!Excel.BorderWeight:enum'
     name: Excel.BorderWeight
+  - uid: 'excel!Excel.BuiltInPivotTableStyle:enum'
+    name: Excel.BuiltInPivotTableStyle
+  - uid: 'excel!Excel.BuiltInSlicerStyle:enum'
+    name: Excel.BuiltInSlicerStyle
   - uid: 'excel!Excel.BuiltInStyle:enum'
     name: Excel.BuiltInStyle
+  - uid: 'excel!Excel.BuiltInTableStyle:enum'
+    name: Excel.BuiltInTableStyle
   - uid: 'excel!Excel.CalculationMode:enum'
     name: Excel.CalculationMode
   - uid: 'excel!Excel.CalculationState:enum'
@@ -2550,6 +2560,8 @@ references:
     name: Excel.NamedItemScope
   - uid: 'excel!Excel.NamedItemType:enum'
     name: Excel.NamedItemType
+  - uid: 'excel!Excel.NumberFormatCategory:enum'
+    name: Excel.NumberFormatCategory
   - uid: 'excel!Excel.NumberFormatInfo:class'
     name: Excel.NumberFormatInfo
   - uid: 'excel!Excel.PageBreak:class'
