@@ -45,7 +45,6 @@ items:
       - 'office!Office.FileProperties:interface'
       - 'office!Office.FileType:enum'
       - 'office!Office.FilterType:enum'
-      - 'office!Office.Gallery:interface'
       - 'office!Office.GetBindingDataOptions:interface'
       - 'office!Office.GetFileOptions:interface'
       - 'office!Office.GetSelectedDataOptions:interface'
@@ -461,8 +460,6 @@ references:
     name: Office.FileType
   - uid: 'office!Office.FilterType:enum'
     name: Office.FilterType
-  - uid: 'office!Office.Gallery:interface'
-    name: Office.Gallery
   - uid: 'office!Office.GetBindingDataOptions:interface'
     name: Office.GetBindingDataOptions
   - uid: 'office!Office.GetFileOptions:interface'

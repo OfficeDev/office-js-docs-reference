@@ -74,7 +74,10 @@ items:
         type:
           - 'outlook!Office.AttachmentDetails#attachmentType~0:complex'
   - uid: 'outlook!Office.AttachmentDetails#contentType:member'
-    summary: Gets the MIME content type of the attachment.
+    summary: |-
+      Gets the MIME content type of the attachment.
+
+      This property is only available in Read mode.
     name: contentType
     fullName: contentType
     langs:
