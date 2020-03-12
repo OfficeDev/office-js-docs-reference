@@ -5115,7 +5115,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AttachmentDetails#contentType:member",
-                  "docComment": "/**\n * Gets the MIME content type of the attachment.\n */\n",
+                  "docComment": "/**\n * Gets the MIME content type of the attachment.\n *\n * This property is only available in Read mode.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

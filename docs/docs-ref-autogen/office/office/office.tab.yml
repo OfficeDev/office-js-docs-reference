@@ -11,7 +11,6 @@ items:
     children:
       - 'office!Office.Tab#controls:member'
       - 'office!Office.Tab#id:member'
-      - 'office!Office.Tab#visible:member'
   - uid: 'office!Office.Tab#controls:member'
     summary: 'Specifies the controls in the tab, such as menu items, buttons, etc.'
     name: controls
@@ -36,18 +35,6 @@ items:
       return:
         type:
           - string
-  - uid: 'office!Office.Tab#visible:member'
-    summary: Specifies whether the tab is visible. The default is true.
-    name: visible
-    fullName: visible
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'visible?: boolean;'
-      return:
-        type:
-          - boolean
 references:
   - uid: 'office!Office.Tab#controls~0:complex'
     name: 'Control[]'
