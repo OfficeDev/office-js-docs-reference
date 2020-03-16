@@ -197,7 +197,9 @@ items:
       - 'excel!Excel.DataValidationPrompt:interface'
       - 'excel!Excel.DataValidationRule:interface'
       - 'excel!Excel.DataValidationType:enum'
+      - 'excel!Excel.DateFilterCondition:enum'
       - 'excel!Excel.DateTimeDataValidation:interface'
+      - 'excel!Excel.DatetimeFormatInfo:class'
       - 'excel!Excel.DeleteShiftDirection:enum'
       - 'excel!Excel.DocumentProperties:class'
       - 'excel!Excel.DocumentPropertyItem:enum'
@@ -460,6 +462,8 @@ items:
       - 'excel!Excel.Interfaces.DataValidationData:interface'
       - 'excel!Excel.Interfaces.DataValidationLoadOptions:interface'
       - 'excel!Excel.Interfaces.DataValidationUpdateData:interface'
+      - 'excel!Excel.Interfaces.DatetimeFormatInfoData:interface'
+      - 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions:interface'
       - 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
       - 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
       - 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
@@ -542,6 +546,9 @@ items:
       - 'excel!Excel.Interfaces.PivotTableCollectionUpdateData:interface'
       - 'excel!Excel.Interfaces.PivotTableData:interface'
       - 'excel!Excel.Interfaces.PivotTableLoadOptions:interface'
+      - 'excel!Excel.Interfaces.PivotTableScopedCollectionData:interface'
+      - 'excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions:interface'
+      - 'excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData:interface'
       - 'excel!Excel.Interfaces.PivotTableStyleCollectionData:interface'
       - 'excel!Excel.Interfaces.PivotTableStyleCollectionLoadOptions:interface'
       - 'excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData:interface'
@@ -707,6 +714,7 @@ items:
       - 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
       - 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
       - 'excel!Excel.IterativeCalculation:class'
+      - 'excel!Excel.LabelFilterCondition:enum'
       - 'excel!Excel.Line:class'
       - 'excel!Excel.LinkedDataTypeState:enum'
       - 'excel!Excel.ListDataValidation:interface'
@@ -726,19 +734,26 @@ items:
       - 'excel!Excel.PaperType:enum'
       - 'excel!Excel.PictureFormat:enum'
       - 'excel!Excel.PivotAxis:enum'
+      - 'excel!Excel.PivotDateFilter:interface'
       - 'excel!Excel.PivotField:class'
       - 'excel!Excel.PivotFieldCollection:class'
+      - 'excel!Excel.PivotFilters:interface'
       - 'excel!Excel.PivotFilterTopBottomCriterion:enum'
+      - 'excel!Excel.PivotFilterType:enum'
       - 'excel!Excel.PivotHierarchy:class'
       - 'excel!Excel.PivotHierarchyCollection:class'
       - 'excel!Excel.PivotItem:class'
       - 'excel!Excel.PivotItemCollection:class'
+      - 'excel!Excel.PivotLabelFilter:interface'
       - 'excel!Excel.PivotLayout:class'
       - 'excel!Excel.PivotLayoutType:enum'
+      - 'excel!Excel.PivotManualFilter:interface'
       - 'excel!Excel.PivotTable:class'
       - 'excel!Excel.PivotTableCollection:class'
+      - 'excel!Excel.PivotTableScopedCollection:class'
       - 'excel!Excel.PivotTableStyle:class'
       - 'excel!Excel.PivotTableStyleCollection:class'
+      - 'excel!Excel.PivotValueFilter:interface'
       - 'excel!Excel.Placement:enum'
       - 'excel!Excel.postprocessBindingDescriptor:function(1)'
       - 'excel!Excel.PresetCriteriaConditionalFormat:class'
@@ -867,6 +882,8 @@ items:
       - 'excel!Excel.TimelineStyle:class'
       - 'excel!Excel.TimelineStyleCollection:class'
       - 'excel!Excel.TopBottomConditionalFormat:class'
+      - 'excel!Excel.TopBottomSelectionType:enum'
+      - 'excel!Excel.ValueFilterCondition:enum'
       - 'excel!Excel.VerticalAlignment:enum'
       - 'excel!Excel.Workbook:class'
       - 'excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface'
@@ -1526,8 +1543,12 @@ references:
     name: Excel.DataValidationRule
   - uid: 'excel!Excel.DataValidationType:enum'
     name: Excel.DataValidationType
+  - uid: 'excel!Excel.DateFilterCondition:enum'
+    name: Excel.DateFilterCondition
   - uid: 'excel!Excel.DateTimeDataValidation:interface'
     name: Excel.DateTimeDataValidation
+  - uid: 'excel!Excel.DatetimeFormatInfo:class'
+    name: Excel.DatetimeFormatInfo
   - uid: 'excel!Excel.DeleteShiftDirection:enum'
     name: Excel.DeleteShiftDirection
   - uid: 'excel!Excel.DocumentProperties:class'
@@ -2050,6 +2071,10 @@ references:
     name: Excel.Interfaces.DataValidationLoadOptions
   - uid: 'excel!Excel.Interfaces.DataValidationUpdateData:interface'
     name: Excel.Interfaces.DataValidationUpdateData
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoData:interface'
+    name: Excel.Interfaces.DatetimeFormatInfoData
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions:interface'
+    name: Excel.Interfaces.DatetimeFormatInfoLoadOptions
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
     name: Excel.Interfaces.DocumentPropertiesData
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
@@ -2214,6 +2239,12 @@ references:
     name: Excel.Interfaces.PivotTableData
   - uid: 'excel!Excel.Interfaces.PivotTableLoadOptions:interface'
     name: Excel.Interfaces.PivotTableLoadOptions
+  - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionData:interface'
+    name: Excel.Interfaces.PivotTableScopedCollectionData
+  - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions:interface'
+    name: Excel.Interfaces.PivotTableScopedCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData:interface'
+    name: Excel.Interfaces.PivotTableScopedCollectionUpdateData
   - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionData:interface'
     name: Excel.Interfaces.PivotTableStyleCollectionData
   - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionLoadOptions:interface'
@@ -2544,6 +2575,8 @@ references:
     name: Excel.Interfaces.WorksheetUpdateData
   - uid: 'excel!Excel.IterativeCalculation:class'
     name: Excel.IterativeCalculation
+  - uid: 'excel!Excel.LabelFilterCondition:enum'
+    name: Excel.LabelFilterCondition
   - uid: 'excel!Excel.Line:class'
     name: Excel.Line
   - uid: 'excel!Excel.LinkedDataTypeState:enum'
@@ -2582,12 +2615,18 @@ references:
     name: Excel.PictureFormat
   - uid: 'excel!Excel.PivotAxis:enum'
     name: Excel.PivotAxis
+  - uid: 'excel!Excel.PivotDateFilter:interface'
+    name: Excel.PivotDateFilter
   - uid: 'excel!Excel.PivotField:class'
     name: Excel.PivotField
   - uid: 'excel!Excel.PivotFieldCollection:class'
     name: Excel.PivotFieldCollection
+  - uid: 'excel!Excel.PivotFilters:interface'
+    name: Excel.PivotFilters
   - uid: 'excel!Excel.PivotFilterTopBottomCriterion:enum'
     name: Excel.PivotFilterTopBottomCriterion
+  - uid: 'excel!Excel.PivotFilterType:enum'
+    name: Excel.PivotFilterType
   - uid: 'excel!Excel.PivotHierarchy:class'
     name: Excel.PivotHierarchy
   - uid: 'excel!Excel.PivotHierarchyCollection:class'
@@ -2596,18 +2635,26 @@ references:
     name: Excel.PivotItem
   - uid: 'excel!Excel.PivotItemCollection:class'
     name: Excel.PivotItemCollection
+  - uid: 'excel!Excel.PivotLabelFilter:interface'
+    name: Excel.PivotLabelFilter
   - uid: 'excel!Excel.PivotLayout:class'
     name: Excel.PivotLayout
   - uid: 'excel!Excel.PivotLayoutType:enum'
     name: Excel.PivotLayoutType
+  - uid: 'excel!Excel.PivotManualFilter:interface'
+    name: Excel.PivotManualFilter
   - uid: 'excel!Excel.PivotTable:class'
     name: Excel.PivotTable
   - uid: 'excel!Excel.PivotTableCollection:class'
     name: Excel.PivotTableCollection
+  - uid: 'excel!Excel.PivotTableScopedCollection:class'
+    name: Excel.PivotTableScopedCollection
   - uid: 'excel!Excel.PivotTableStyle:class'
     name: Excel.PivotTableStyle
   - uid: 'excel!Excel.PivotTableStyleCollection:class'
     name: Excel.PivotTableStyleCollection
+  - uid: 'excel!Excel.PivotValueFilter:interface'
+    name: Excel.PivotValueFilter
   - uid: 'excel!Excel.Placement:enum'
     name: Excel.Placement
   - uid: 'excel!Excel.PresetCriteriaConditionalFormat:class'
@@ -2990,6 +3037,10 @@ references:
     name: Excel.TimelineStyleCollection
   - uid: 'excel!Excel.TopBottomConditionalFormat:class'
     name: Excel.TopBottomConditionalFormat
+  - uid: 'excel!Excel.TopBottomSelectionType:enum'
+    name: Excel.TopBottomSelectionType
+  - uid: 'excel!Excel.ValueFilterCondition:enum'
+    name: Excel.ValueFilterCondition
   - uid: 'excel!Excel.VerticalAlignment:enum'
     name: Excel.VerticalAlignment
   - uid: 'excel!Excel.Workbook:class'

@@ -1,0 +1,430 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.DateFilterCondition:enum'
+    summary: >-
+      Enum representing all accepted conditions by which a date filter can be applied. Used to configure the type of
+      PivotFilter that is applied to the field.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.DateFilterCondition
+    fullName: Excel.DateFilterCondition
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.DateFilterCondition.after:member'
+      - 'excel!Excel.DateFilterCondition.afterOrEqualTo:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodApril:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodAugust:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodDecember:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodFebruary:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodJanuary:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodJuly:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodJune:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodMarch:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodMay:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodNovember:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodOctober:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter1:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter2:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter3:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter4:member'
+      - 'excel!Excel.DateFilterCondition.allDatesInPeriodSeptember:member'
+      - 'excel!Excel.DateFilterCondition.before:member'
+      - 'excel!Excel.DateFilterCondition.beforeOrEqualTo:member'
+      - 'excel!Excel.DateFilterCondition.between:member'
+      - 'excel!Excel.DateFilterCondition.equals:member'
+      - 'excel!Excel.DateFilterCondition.lastMonth:member'
+      - 'excel!Excel.DateFilterCondition.lastQuarter:member'
+      - 'excel!Excel.DateFilterCondition.lastWeek:member'
+      - 'excel!Excel.DateFilterCondition.lastYear:member'
+      - 'excel!Excel.DateFilterCondition.nextMonth:member'
+      - 'excel!Excel.DateFilterCondition.nextQuarter:member'
+      - 'excel!Excel.DateFilterCondition.nextWeek:member'
+      - 'excel!Excel.DateFilterCondition.nextYear:member'
+      - 'excel!Excel.DateFilterCondition.thisMonth:member'
+      - 'excel!Excel.DateFilterCondition.thisQuarter:member'
+      - 'excel!Excel.DateFilterCondition.thisWeek:member'
+      - 'excel!Excel.DateFilterCondition.thisYear:member'
+      - 'excel!Excel.DateFilterCondition.today:member'
+      - 'excel!Excel.DateFilterCondition.tomorrow:member'
+      - 'excel!Excel.DateFilterCondition.unknown:member'
+      - 'excel!Excel.DateFilterCondition.yearToDate:member'
+      - 'excel!Excel.DateFilterCondition.yesterday:member'
+  - uid: 'excel!Excel.DateFilterCondition.after:member'
+    summary: |-
+      Date is after comparator date.
+
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
+    isPreview: true
+    name: after
+    fullName: after
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"After"'
+  - uid: 'excel!Excel.DateFilterCondition.afterOrEqualTo:member'
+    summary: |-
+      Date is after or equal to comparator date.
+
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
+    isPreview: true
+    name: afterOrEqualTo
+    fullName: afterOrEqualTo
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AfterOrEqualTo"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodApril:member'
+    summary: Date is in April.
+    isPreview: true
+    name: allDatesInPeriodApril
+    fullName: allDatesInPeriodApril
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodApril"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodAugust:member'
+    summary: Date is in August.
+    isPreview: true
+    name: allDatesInPeriodAugust
+    fullName: allDatesInPeriodAugust
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodAugust"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodDecember:member'
+    summary: Date is in December.
+    isPreview: true
+    name: allDatesInPeriodDecember
+    fullName: allDatesInPeriodDecember
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodDecember"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodFebruary:member'
+    summary: Date is in February.
+    isPreview: true
+    name: allDatesInPeriodFebruary
+    fullName: allDatesInPeriodFebruary
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodFebruary"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodJanuary:member'
+    summary: Date is in January.
+    isPreview: true
+    name: allDatesInPeriodJanuary
+    fullName: allDatesInPeriodJanuary
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodJanuary"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodJuly:member'
+    summary: Date is in July.
+    isPreview: true
+    name: allDatesInPeriodJuly
+    fullName: allDatesInPeriodJuly
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodJuly"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodJune:member'
+    summary: Date is in June.
+    isPreview: true
+    name: allDatesInPeriodJune
+    fullName: allDatesInPeriodJune
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodJune"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodMarch:member'
+    summary: Date is in March.
+    isPreview: true
+    name: allDatesInPeriodMarch
+    fullName: allDatesInPeriodMarch
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodMarch"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodMay:member'
+    summary: Date is in May.
+    isPreview: true
+    name: allDatesInPeriodMay
+    fullName: allDatesInPeriodMay
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodMay"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodNovember:member'
+    summary: Date is in November.
+    isPreview: true
+    name: allDatesInPeriodNovember
+    fullName: allDatesInPeriodNovember
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodNovember"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodOctober:member'
+    summary: Date is in October.
+    isPreview: true
+    name: allDatesInPeriodOctober
+    fullName: allDatesInPeriodOctober
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodOctober"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter1:member'
+    summary: Date is in Quarter 1.
+    isPreview: true
+    name: allDatesInPeriodQuarter1
+    fullName: allDatesInPeriodQuarter1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodQuarter1"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter2:member'
+    summary: Date is in Quarter 2.
+    isPreview: true
+    name: allDatesInPeriodQuarter2
+    fullName: allDatesInPeriodQuarter2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodQuarter2"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter3:member'
+    summary: Date is in Quarter 3.
+    isPreview: true
+    name: allDatesInPeriodQuarter3
+    fullName: allDatesInPeriodQuarter3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodQuarter3"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodQuarter4:member'
+    summary: Date is in Quarter 4.
+    isPreview: true
+    name: allDatesInPeriodQuarter4
+    fullName: allDatesInPeriodQuarter4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodQuarter4"'
+  - uid: 'excel!Excel.DateFilterCondition.allDatesInPeriodSeptember:member'
+    summary: Date is in September.
+    isPreview: true
+    name: allDatesInPeriodSeptember
+    fullName: allDatesInPeriodSeptember
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodSeptember"'
+  - uid: 'excel!Excel.DateFilterCondition.before:member'
+    summary: |-
+      Date is before comparator date.
+
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
+    isPreview: true
+    name: before
+    fullName: before
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Before"'
+  - uid: 'excel!Excel.DateFilterCondition.beforeOrEqualTo:member'
+    summary: |-
+      Date is before or equal to comparator date.
+
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
+    isPreview: true
+    name: beforeOrEqualTo
+    fullName: beforeOrEqualTo
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BeforeOrEqualTo"'
+  - uid: 'excel!Excel.DateFilterCondition.between:member'
+    summary: >-
+      Between `lowerBound` and `upperBound` dates.
+
+
+      Required Criteria: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->,
+      `exclusive`<!-- -->}<!-- -->.
+    isPreview: true
+    name: between
+    fullName: between
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Between"'
+  - uid: 'excel!Excel.DateFilterCondition.equals:member'
+    summary: >-
+      Equals comparator criterion.
+
+
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->, `exclusive`<!--
+      -->}<!-- -->.
+    isPreview: true
+    name: equals
+    fullName: equals
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Equals"'
+  - uid: 'excel!Excel.DateFilterCondition.lastMonth:member'
+    summary: Date is last month.
+    isPreview: true
+    name: lastMonth
+    fullName: lastMonth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastMonth"'
+  - uid: 'excel!Excel.DateFilterCondition.lastQuarter:member'
+    summary: Date is last quarter.
+    isPreview: true
+    name: lastQuarter
+    fullName: lastQuarter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastQuarter"'
+  - uid: 'excel!Excel.DateFilterCondition.lastWeek:member'
+    summary: Date is last week.
+    isPreview: true
+    name: lastWeek
+    fullName: lastWeek
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastWeek"'
+  - uid: 'excel!Excel.DateFilterCondition.lastYear:member'
+    summary: Date is last year.
+    isPreview: true
+    name: lastYear
+    fullName: lastYear
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastYear"'
+  - uid: 'excel!Excel.DateFilterCondition.nextMonth:member'
+    summary: Date is next month.
+    isPreview: true
+    name: nextMonth
+    fullName: nextMonth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextMonth"'
+  - uid: 'excel!Excel.DateFilterCondition.nextQuarter:member'
+    summary: Date is next quarter.
+    isPreview: true
+    name: nextQuarter
+    fullName: nextQuarter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextQuarter"'
+  - uid: 'excel!Excel.DateFilterCondition.nextWeek:member'
+    summary: Date is next week.
+    isPreview: true
+    name: nextWeek
+    fullName: nextWeek
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextWeek"'
+  - uid: 'excel!Excel.DateFilterCondition.nextYear:member'
+    summary: Date is next year.
+    isPreview: true
+    name: nextYear
+    fullName: nextYear
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextYear"'
+  - uid: 'excel!Excel.DateFilterCondition.thisMonth:member'
+    summary: Date is this month.
+    isPreview: true
+    name: thisMonth
+    fullName: thisMonth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThisMonth"'
+  - uid: 'excel!Excel.DateFilterCondition.thisQuarter:member'
+    summary: Date is this quarter.
+    isPreview: true
+    name: thisQuarter
+    fullName: thisQuarter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThisQuarter"'
+  - uid: 'excel!Excel.DateFilterCondition.thisWeek:member'
+    summary: Date is this week.
+    isPreview: true
+    name: thisWeek
+    fullName: thisWeek
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThisWeek"'
+  - uid: 'excel!Excel.DateFilterCondition.thisYear:member'
+    summary: Date is this year.
+    isPreview: true
+    name: thisYear
+    fullName: thisYear
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThisYear"'
+  - uid: 'excel!Excel.DateFilterCondition.today:member'
+    summary: Date is today.
+    isPreview: true
+    name: today
+    fullName: today
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Today"'
+  - uid: 'excel!Excel.DateFilterCondition.tomorrow:member'
+    summary: Date is tomorrow.
+    isPreview: true
+    name: tomorrow
+    fullName: tomorrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Tomorrow"'
+  - uid: 'excel!Excel.DateFilterCondition.unknown:member'
+    summary: DateFilterCondition is unknown or unsupported.
+    isPreview: true
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'
+  - uid: 'excel!Excel.DateFilterCondition.yearToDate:member'
+    summary: Date is in the same year to date.
+    isPreview: true
+    name: yearToDate
+    fullName: yearToDate
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"YearToDate"'
+  - uid: 'excel!Excel.DateFilterCondition.yesterday:member'
+    summary: Date is yesterday.
+    isPreview: true
+    name: yesterday
+    fullName: yesterday
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Yesterday"'

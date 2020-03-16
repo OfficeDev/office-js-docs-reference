@@ -19,6 +19,7 @@ items:
     package: excel!
     children:
       - 'excel!Excel.CultureInfo#context:member'
+      - 'excel!Excel.CultureInfo#datetimeFormat:member'
       - 'excel!Excel.CultureInfo#load:member(1)'
       - 'excel!Excel.CultureInfo#load:member(2)'
       - 'excel!Excel.CultureInfo#load:member(3)'
@@ -40,6 +41,25 @@ items:
       return:
         type:
           - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.CultureInfo#datetimeFormat:member'
+    summary: >-
+      Defines the culturally appropriate format of displaying date and time. This is based on current system culture
+      settings.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: datetimeFormat
+    fullName: datetimeFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly datetimeFormat: Excel.DatetimeFormatInfo;'
+      return:
+        type:
+          - 'excel!Excel.DatetimeFormatInfo:class'
   - uid: 'excel!Excel.CultureInfo#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -174,6 +194,8 @@ references:
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
+  - uid: 'excel!Excel.DatetimeFormatInfo:class'
+    name: Excel.DatetimeFormatInfo
   - uid: 'excel!Excel.CultureInfo:class'
     name: Excel.CultureInfo
   - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'

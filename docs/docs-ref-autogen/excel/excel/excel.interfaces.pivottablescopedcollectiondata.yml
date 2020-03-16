@@ -1,0 +1,33 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionData:interface'
+    summary: An interface describing the data returned by calling `pivotTableScopedCollection.toJSON()`<!-- -->.
+    name: Excel.Interfaces.PivotTableScopedCollectionData
+    fullName: Excel.Interfaces.PivotTableScopedCollectionData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.PivotTableScopedCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionData#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.PivotTableData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.PivotTableScopedCollectionData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionData#items~0:complex'
+    name: 'Excel.Interfaces.PivotTableData[]'
+    fullName: 'Excel.Interfaces.PivotTableData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PivotTableData:interface'
+        name: Excel.Interfaces.PivotTableData
+        fullName: Excel.Interfaces.PivotTableData
+      - name: '[]'
+        fullName: '[]'
