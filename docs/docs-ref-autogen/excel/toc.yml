@@ -180,6 +180,8 @@ items:
                 uid: 'excel!Excel.DataValidationOperator:enum'
               - name: DataValidationType
                 uid: 'excel!Excel.DataValidationType:enum'
+              - name: DateFilterCondition
+                uid: 'excel!Excel.DateFilterCondition:enum'
               - name: DeleteShiftDirection
                 uid: 'excel!Excel.DeleteShiftDirection:enum'
               - name: DocumentPropertyItem
@@ -216,6 +218,8 @@ items:
                 uid: 'excel!Excel.ImageFittingMode:enum'
               - name: InsertShiftDirection
                 uid: 'excel!Excel.InsertShiftDirection:enum'
+              - name: LabelFilterCondition
+                uid: 'excel!Excel.LabelFilterCondition:enum'
               - name: LinkedDataTypeState
                 uid: 'excel!Excel.LinkedDataTypeState:enum'
               - name: NamedItemScope
@@ -234,6 +238,8 @@ items:
                 uid: 'excel!Excel.PivotAxis:enum'
               - name: PivotFilterTopBottomCriterion
                 uid: 'excel!Excel.PivotFilterTopBottomCriterion:enum'
+              - name: PivotFilterType
+                uid: 'excel!Excel.PivotFilterType:enum'
               - name: PivotLayoutType
                 uid: 'excel!Excel.PivotLayoutType:enum'
               - name: Placement
@@ -316,6 +322,10 @@ items:
                 uid: 'excel!Excel.SpecialCellValueType:enum'
               - name: SubtotalLocationType
                 uid: 'excel!Excel.SubtotalLocationType:enum'
+              - name: TopBottomSelectionType
+                uid: 'excel!Excel.TopBottomSelectionType:enum'
+              - name: ValueFilterCondition
+                uid: 'excel!Excel.ValueFilterCondition:enum'
               - name: VerticalAlignment
                 uid: 'excel!Excel.VerticalAlignment:enum'
               - name: WorksheetPositionType
@@ -589,6 +599,8 @@ items:
             uid: 'excel!Excel.DataValidationRule:interface'
           - name: DateTimeDataValidation
             uid: 'excel!Excel.DateTimeDataValidation:interface'
+          - name: DatetimeFormatInfo
+            uid: 'excel!Excel.DatetimeFormatInfo:class'
           - name: DocumentProperties
             uid: 'excel!Excel.DocumentProperties:class'
           - name: Filter
@@ -645,10 +657,14 @@ items:
             uid: 'excel!Excel.PageLayoutMarginOptions:interface'
           - name: PageLayoutZoomOptions
             uid: 'excel!Excel.PageLayoutZoomOptions:interface'
+          - name: PivotDateFilter
+            uid: 'excel!Excel.PivotDateFilter:interface'
           - name: PivotField
             uid: 'excel!Excel.PivotField:class'
           - name: PivotFieldCollection
             uid: 'excel!Excel.PivotFieldCollection:class'
+          - name: PivotFilters
+            uid: 'excel!Excel.PivotFilters:interface'
           - name: PivotHierarchy
             uid: 'excel!Excel.PivotHierarchy:class'
           - name: PivotHierarchyCollection
@@ -657,16 +673,24 @@ items:
             uid: 'excel!Excel.PivotItem:class'
           - name: PivotItemCollection
             uid: 'excel!Excel.PivotItemCollection:class'
+          - name: PivotLabelFilter
+            uid: 'excel!Excel.PivotLabelFilter:interface'
           - name: PivotLayout
             uid: 'excel!Excel.PivotLayout:class'
+          - name: PivotManualFilter
+            uid: 'excel!Excel.PivotManualFilter:interface'
           - name: PivotTable
             uid: 'excel!Excel.PivotTable:class'
           - name: PivotTableCollection
             uid: 'excel!Excel.PivotTableCollection:class'
+          - name: PivotTableScopedCollection
+            uid: 'excel!Excel.PivotTableScopedCollection:class'
           - name: PivotTableStyle
             uid: 'excel!Excel.PivotTableStyle:class'
           - name: PivotTableStyleCollection
             uid: 'excel!Excel.PivotTableStyleCollection:class'
+          - name: PivotValueFilter
+            uid: 'excel!Excel.PivotValueFilter:interface'
           - name: PresetCriteriaConditionalFormat
             uid: 'excel!Excel.PresetCriteriaConditionalFormat:class'
           - name: Range

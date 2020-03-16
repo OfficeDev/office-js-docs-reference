@@ -13,6 +13,7 @@ items:
     package: excel!
     children:
       - 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#allowMultipleFiltersPerField:member'
       - 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#enableDataValueEditing:member'
       - 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#id:member'
       - 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#layout:member'
@@ -30,6 +31,25 @@ items:
     type: property
     syntax:
       content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#allowMultipleFiltersPerField:member'
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the PivotTable allows the application of multiple PivotFilters
+      on a given PivotField in the table.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: allowMultipleFiltersPerField
+    fullName: allowMultipleFiltersPerField
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowMultipleFiltersPerField?: boolean;'
       return:
         type:
           - boolean

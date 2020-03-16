@@ -132,6 +132,18 @@
     });
 'Office.AppointmentCompose#close:member(1)':
   - Office.context.mailbox.item.close();
+'Office.AppointmentCompose#disableClientSignatureAsync:member(2)':
+  - >-
+    // Disable the client signature.
+
+    Office.context.mailbox.item.disableClientSignatureAsync(function(asyncResult)
+    {
+      if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+        console.log("disableClientSignatureAsync succeeded");
+      } else {
+        console.error(asyncResult.error);
+      }
+    });
 'Office.AppointmentCompose#end:member':
   - >-
     // The following example sets the end time of an appointment in compose mode
@@ -406,6 +418,18 @@
 
     Office.context.mailbox.item.getSharedPropertiesAsync(function(result) {
       console.log(result.value);
+    });
+'Office.AppointmentCompose#isClientSignatureEnabledAsync:member(2)':
+  - >-
+    // Check if the client signature is currently enabled.
+
+    Office.context.mailbox.item.isClientSignatureEnabledAsync(function(asyncResult)
+    {
+      if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+        console.log("isClientSignatureEnabledAsync succeeded with result: " + asyncResult.value);
+      } else {
+        console.error(asyncResult.error);
+      }
     });
 'Office.AppointmentCompose#itemType:member':
   - >-
@@ -1829,6 +1853,22 @@
         '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
         {coercionType: Office.CoercionType.Html},
         callback);
+'Office.Body#setSignatureAsync:member(2)':
+  - >-
+    // Set the signature for the current item.
+
+    var signature = $("#signature").val();
+
+    console.log(`Setting signature to "${signature}".`);
+
+    Office.context.mailbox.item.body.setSignatureAsync(signature,
+    function(asyncResult) {
+      if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+        console.log("setSignatureAsync succeeded");
+      } else {
+        console.error(asyncResult.error);
+      }
+    });
 'Office.Categories#addAsync:member(2)':
   - >-
     // Note: In order for you to successfully add a category,
@@ -2902,6 +2942,18 @@
   - |-
     var conversationId = Office.context.mailbox.item.conversationId;
     console.log("conversationId: " + conversationId);
+'Office.MessageCompose#disableClientSignatureAsync:member(2)':
+  - >-
+    // Disable the client signature.
+
+    Office.context.mailbox.item.disableClientSignatureAsync(function(asyncResult)
+    {
+      if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+        console.log("disableClientSignatureAsync succeeded");
+      } else {
+        console.error(asyncResult.error);
+      }
+    });
 'Office.MessageCompose#from:member':
   - |-
     Office.context.mailbox.item.from.getAsync(callback);
@@ -3023,6 +3075,21 @@
                 console.log("No attachments on this message.");
             }
         }
+    });
+'Office.MessageCompose#getComposeTypeAsync:member(2)':
+  - |-
+    // Get the compose type of the current item (mail only).
+    Office.context.mailbox.item.getComposeTypeAsync(function(asyncResult) {
+      if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+        console.log(
+          "getComposeTypeAsync succeeded with composeType: " +
+            asyncResult.value.composeType +
+            " and coercionType: " +
+            asyncResult.value.coercionType
+        );
+      } else {
+        console.error(asyncResult.error);
+      }
     });
 'Office.MessageCompose#getInitializationContextAsync:member(2)':
   - |-
@@ -3151,6 +3218,18 @@
         var dictionary = asyncResult.value;
         var header1_value = dictionary["header1"];
     }
+'Office.MessageCompose#isClientSignatureEnabledAsync:member(2)':
+  - >-
+    // Check if the client signature is currently enabled.
+
+    Office.context.mailbox.item.isClientSignatureEnabledAsync(function(asyncResult)
+    {
+      if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+        console.log("isClientSignatureEnabledAsync succeeded with result: " + asyncResult.value);
+      } else {
+        console.error(asyncResult.error);
+      }
+    });
 'Office.MessageCompose#itemType:member':
   - >-
     if (Office.context.mailbox.item.itemType ===

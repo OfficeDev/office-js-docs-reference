@@ -9,8 +9,28 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.Interfaces.CultureInfoData#datetimeFormat:member'
       - 'excel!Excel.Interfaces.CultureInfoData#name:member'
       - 'excel!Excel.Interfaces.CultureInfoData#numberFormat:member'
+  - uid: 'excel!Excel.Interfaces.CultureInfoData#datetimeFormat:member'
+    summary: >-
+      Defines the culturally appropriate format of displaying date and time. This is based on current system culture
+      settings.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: datetimeFormat
+    fullName: datetimeFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'datetimeFormat?: Excel.Interfaces.DatetimeFormatInfoData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.DatetimeFormatInfoData:interface'
   - uid: 'excel!Excel.Interfaces.CultureInfoData#name:member'
     summary: >-
       Gets the culture name in the format languagecode2-country/regioncode2 (e.g. "zh-cn" or "en-us"). This is based on
@@ -49,5 +69,7 @@ items:
         type:
           - 'excel!Excel.Interfaces.NumberFormatInfoData:interface'
 references:
+  - uid: 'excel!Excel.Interfaces.DatetimeFormatInfoData:interface'
+    name: Excel.Interfaces.DatetimeFormatInfoData
   - uid: 'excel!Excel.Interfaces.NumberFormatInfoData:interface'
     name: Excel.Interfaces.NumberFormatInfoData
