@@ -1295,10 +1295,8 @@ export declare namespace Office {
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, 
-         *                `asyncResult`, which is an `Office.AsyncResult` object.
          */
-        displayReplyAllForm(formData: string | ReplyFormData, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        displayReplyAllForm(formData: string | ReplyFormData): void;
         /**
          * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
          *
@@ -1320,10 +1318,8 @@ export declare namespace Office {
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, 
-         *                `asyncResult`, which is an `Office.AsyncResult` object.
          */
-        displayReplyForm(formData: string | ReplyFormData, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        displayReplyForm(formData: string | ReplyFormData): void;
         
         
         /**
@@ -3816,10 +3812,8 @@ export declare namespace Office {
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, 
-         *                `asyncResult`, which is an `Office.AsyncResult` object.
          */
-        displayReplyAllForm(formData: string | ReplyFormData, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        displayReplyAllForm(formData: string | ReplyFormData): void;
         /**
          * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
          *
@@ -3841,10 +3835,8 @@ export declare namespace Office {
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
          *                   OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.
-         * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter,
-         *                `asyncResult`, which is an `Office.AsyncResult` object.
          */
-        displayReplyForm(formData: string | ReplyFormData, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        displayReplyForm(formData: string | ReplyFormData): void;
         
         
         
@@ -4482,9 +4474,14 @@ export declare namespace Office {
         attachments?: ReplyFormAttachment[];
         /**
          * When the reply display call completes, the function passed in the callback parameter is called with a single parameter, 
-         * asyncResult, which is an Office.AsyncResult object.
+         * `asyncResult`, which is an `Office.AsyncResult` object.
          */
         callback?: (asyncResult: CommonAPI.AsyncResult<any>) => void;
+        /**
+         * An object literal that contains the following property.
+         * `asyncContext`: Developers can provide any object they wish to access in the callback method.
+         */
+        options?: CommonAPI.AsyncContextOptions;
     }
     /**
      * The settings created by using the methods of the `RoamingSettings` object are saved per add-in and per user. 

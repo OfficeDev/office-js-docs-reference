@@ -457,15 +457,13 @@ items:
       );
 
       ```
-    name: 'displayReplyAllForm(formData, callback)'
-    fullName: 'displayReplyAllForm(formData, callback)'
+    name: displayReplyAllForm(formData)
+    fullName: displayReplyAllForm(formData)
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        displayReplyAllForm(formData: string | ReplyFormData, callback?: (asyncResult: Office.AsyncResult<void>) =>
-        void): void;
+      content: 'displayReplyAllForm(formData: string | ReplyFormData): void;'
       return:
         type:
           - void
@@ -478,12 +476,6 @@ items:
             attachment data and a callback function.
           type:
             - 'outlook!Office.MessageRead#displayReplyAllForm~0:complex'
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type:
-            - 'outlook!Office.MessageRead#displayReplyAllForm~1:complex'
   - uid: 'outlook!Office.MessageRead#displayReplyForm:member(1)'
     summary: >-
       Displays a reply form that includes only the sender of the selected message or the organizer of the selected
@@ -631,15 +623,13 @@ items:
       });
 
       ```
-    name: 'displayReplyForm(formData, callback)'
-    fullName: 'displayReplyForm(formData, callback)'
+    name: displayReplyForm(formData)
+    fullName: displayReplyForm(formData)
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        displayReplyForm(formData: string | ReplyFormData, callback?: (asyncResult: Office.AsyncResult<void>) =>
-        void): void;
+      content: 'displayReplyForm(formData: string | ReplyFormData): void;'
       return:
         type:
           - void
@@ -652,12 +642,6 @@ items:
             attachment data and a callback function.
           type:
             - 'outlook!Office.MessageRead#displayReplyForm~0:complex'
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the `callback` parameter is called with a single
-            parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type:
-            - 'outlook!Office.MessageRead#displayReplyForm~1:complex'
   - uid: 'outlook!Office.MessageRead#end:member'
     summary: >-
       Gets the date and time that the appointment is to end.
@@ -1744,17 +1728,6 @@ references:
       - uid: 'outlook!Office.ReplyFormData:interface'
         name: ReplyFormData
         fullName: Office.ReplyFormData
-  - uid: 'outlook!Office.MessageRead#displayReplyAllForm~1:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
   - uid: 'outlook!Office.MessageRead#displayReplyForm~0:complex'
     name: string | ReplyFormData
     fullName: string | Office.ReplyFormData
@@ -1764,17 +1737,6 @@ references:
       - uid: 'outlook!Office.ReplyFormData:interface'
         name: ReplyFormData
         fullName: Office.ReplyFormData
-  - uid: 'outlook!Office.MessageRead#displayReplyForm~1:complex'
-    name: '(asyncResult: Office.AsyncResult<void>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<void>) => void'
-    spec.typeScript:
-      - name: '(asyncResult: '
-        fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
-        name: Office.AsyncResult
-        fullName: Office.AsyncResult
-      - name: <void>) => void
-        fullName: <void>) => void
   - uid: 'outlook!Office.EmailAddressDetails:interface'
     name: EmailAddressDetails
   - uid: 'outlook!Office.Entities:interface'

@@ -14,6 +14,7 @@ items:
       - 'outlook!Office.ReplyFormData#attachments:member'
       - 'outlook!Office.ReplyFormData#callback:member'
       - 'outlook!Office.ReplyFormData#htmlBody:member'
+      - 'outlook!Office.ReplyFormData#options:member'
   - uid: 'outlook!Office.ReplyFormData#attachments:member'
     summary: >-
       An array of [ReplyFormAttachment](xref:outlook!Office.ReplyFormAttachment:interface) that are either file or item
@@ -31,7 +32,7 @@ items:
   - uid: 'outlook!Office.ReplyFormData#callback:member'
     summary: >-
       When the reply display call completes, the function passed in the callback parameter is called with a single
-      parameter, asyncResult, which is an Office.AsyncResult object.
+      parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
     name: callback
     fullName: callback
     langs:
@@ -56,6 +57,20 @@ items:
       return:
         type:
           - string
+  - uid: 'outlook!Office.ReplyFormData#options:member'
+    summary: >-
+      An object literal that contains the following property. `asyncContext`<!-- -->: Developers can provide any object
+      they wish to access in the callback method.
+    name: options
+    fullName: options
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'options?: Office.AsyncContextOptions;'
+      return:
+        type:
+          - 'outlook!Office.AsyncContextOptions:interface'
 references:
   - uid: 'outlook!Office.ReplyFormData#attachments~0:complex'
     name: 'ReplyFormAttachment[]'
@@ -77,3 +92,5 @@ references:
         fullName: Office.AsyncResult
       - name: <any>) => void
         fullName: <any>) => void
+  - uid: 'outlook!Office.AsyncContextOptions:interface'
+    name: Office.AsyncContextOptions

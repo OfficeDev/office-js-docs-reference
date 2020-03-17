@@ -1261,7 +1261,8 @@ export declare namespace Office {
      */
     export interface AsyncContextOptions {
         /**
-         * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
+         * A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult` object
+         * that is passed to a callback.
          */
         asyncContext?: any
     }
