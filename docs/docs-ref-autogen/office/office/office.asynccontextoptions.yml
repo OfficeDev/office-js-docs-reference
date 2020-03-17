@@ -12,7 +12,7 @@ items:
       - 'office!Office.AsyncContextOptions#asyncContext:member'
   - uid: 'office!Office.AsyncContextOptions#asyncContext:member'
     summary: >-
-      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
+      A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult`
       object that is passed to a callback.
     name: asyncContext
     fullName: asyncContext
