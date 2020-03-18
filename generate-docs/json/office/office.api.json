@@ -772,7 +772,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "office!Office.AsyncContextOptions#asyncContext:member",
-                  "docComment": "/**\n * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.\n */\n",
+                  "docComment": "/**\n * A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult` object that is passed to a callback.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

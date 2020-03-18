@@ -1815,7 +1815,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentRead#displayReplyAllForm:member(1)",
-                  "docComment": "/**\n * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.\n *\n * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, `displayReplyAllForm` throws an exception.\n *\n * When attachments are specified in the `formData.attachments` parameter, Outlook on the web and desktop clients attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.\n *\n * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, `displayReplyAllForm` throws an exception.\n *\n * When attachments are specified in the `formData.attachments` parameter, Outlook on the web and desktop clients attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1832,23 +1832,6 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", callback?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "(asyncResult: "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "<void>) => void"
-                    },
-                    {
-                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -1861,8 +1844,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 8,
-                    "endIndex": 9
+                    "startIndex": 4,
+                    "endIndex": 5
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -1873,13 +1856,6 @@
                         "startIndex": 1,
                         "endIndex": 3
                       }
-                    },
-                    {
-                      "parameterName": "callback",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 4,
-                        "endIndex": 7
-                      }
                     }
                   ],
                   "name": "displayReplyAllForm"
@@ -1887,7 +1863,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentRead#displayReplyForm:member(1)",
-                  "docComment": "/**\n * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.\n *\n * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.\n *\n * When attachments are specified in the `formData.attachments` parameter, Outlook on the web and desktop clients attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.\n *\n * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.\n *\n * When attachments are specified in the `formData.attachments` parameter, Outlook on the web and desktop clients attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1904,23 +1880,6 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", callback?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "(asyncResult: "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "<void>) => void"
-                    },
-                    {
-                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -1933,8 +1892,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 8,
-                    "endIndex": 9
+                    "startIndex": 4,
+                    "endIndex": 5
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -1944,13 +1903,6 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 3
-                      }
-                    },
-                    {
-                      "parameterName": "callback",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 4,
-                        "endIndex": 7
                       }
                     }
                   ],
@@ -8846,7 +8798,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageRead#displayReplyAllForm:member(1)",
-                  "docComment": "/**\n * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.\n *\n * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, `displayReplyAllForm` throws an exception.\n *\n * When attachments are specified in the `formData.attachments` parameter, Outlook on the web and desktop clients attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.\n *\n * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, `displayReplyAllForm` throws an exception.\n *\n * When attachments are specified in the `formData.attachments` parameter, Outlook on the web and desktop clients attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8863,23 +8815,6 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", callback?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "(asyncResult: "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "<void>) => void"
-                    },
-                    {
-                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -8892,8 +8827,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 8,
-                    "endIndex": 9
+                    "startIndex": 4,
+                    "endIndex": 5
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -8904,13 +8839,6 @@
                         "startIndex": 1,
                         "endIndex": 3
                       }
-                    },
-                    {
-                      "parameterName": "callback",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 4,
-                        "endIndex": 7
-                      }
                     }
                   ],
                   "name": "displayReplyAllForm"
@@ -8918,7 +8846,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.MessageRead#displayReplyForm:member(1)",
-                  "docComment": "/**\n * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.\n *\n * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.\n *\n * When attachments are specified in the `formData.attachments` parameter, Outlook on the web and desktop clients attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
+                  "docComment": "/**\n * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.\n *\n * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.\n *\n * If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.\n *\n * When attachments are specified in the `formData.attachments` parameter, Outlook on the web and desktop clients attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.\n *\n * **Note**: This method is not supported in Outlook on iOS or Android.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n *\n * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR a {@link Office.ReplyFormData | ReplyFormData} object that contains body or attachment data and a callback function.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8935,23 +8863,6 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ", callback?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "(asyncResult: "
-                    },
-                    {
-                      "kind": "Reference",
-                      "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "<void>) => void"
-                    },
-                    {
-                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -8964,8 +8875,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 8,
-                    "endIndex": 9
+                    "startIndex": 4,
+                    "endIndex": 5
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -8975,13 +8886,6 @@
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 3
-                      }
-                    },
-                    {
-                      "parameterName": "callback",
-                      "parameterTypeTokenRange": {
-                        "startIndex": 4,
-                        "endIndex": 7
                       }
                     }
                   ],
@@ -11295,7 +11199,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.ReplyFormData#callback:member",
-                  "docComment": "/**\n * When the reply display call completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an Office.AsyncResult object.\n */\n",
+                  "docComment": "/**\n * When the reply display call completes, the function passed in the callback parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11346,6 +11250,32 @@
                   ],
                   "releaseTag": "Public",
                   "name": "htmlBody",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.ReplyFormData#options:member",
+                  "docComment": "/**\n * An object literal that contains the following property. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "options?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncContextOptions",
+                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "options",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
