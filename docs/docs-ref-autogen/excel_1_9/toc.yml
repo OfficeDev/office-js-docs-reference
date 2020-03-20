@@ -892,6 +892,8 @@ items:
                 uid: 'office!Office.Dialog:interface'
               - name: DialogOptions
                 uid: 'office!Office.DialogOptions:interface'
+              - name: DialogParentMessageReceivedEventArgs
+                uid: 'office!Office.DialogParentMessageReceivedEventArgs:interface'
               - name: Document
                 uid: 'office!Office.Document:interface'
               - name: DocumentSelectionChangedEventArgs

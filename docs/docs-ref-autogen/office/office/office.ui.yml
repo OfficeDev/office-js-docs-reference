@@ -49,7 +49,10 @@ items:
           type:
             - 'office!Office.EventType:enum'
         - id: handler
-          description: 'The event handler function to add, whose only parameter is of type .'
+          description: >-
+            The event handler function to add, whose only parameter is of type
+            [Office.DialogParentMessageReceivedEventArgs](xref:office!Office.DialogParentMessageReceivedEventArgs:interface)<!--
+            -->.
           type:
             - '(result: any) => void'
         - id: options

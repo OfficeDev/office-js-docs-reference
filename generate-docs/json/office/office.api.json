@@ -7480,6 +7480,73 @@
             },
             {
               "kind": "Interface",
+              "canonicalReference": "office!Office.DialogParentMessageReceivedEventArgs:interface",
+              "docComment": "/**\n * Provides information about the message from the parent page that raised the `DialogParentMessageReceived` event.\n *\n * To add an event handler for the `DialogParentMessageReceived` event, use the `addHandlerAsync` method of the {@link Office.UI} object.\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface DialogParentMessageReceivedEventArgs "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "DialogParentMessageReceivedEventArgs",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.DialogParentMessageReceivedEventArgs#message:member",
+                  "docComment": "/**\n * Gets the content of the message sent from the parent page, which can be any string or stringified data.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "message: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "message",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "office!Office.DialogParentMessageReceivedEventArgs#type:member",
+                  "docComment": "/**\n * Get an {@link Office.EventType} enumeration value that identifies the kind of event that was raised.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "type: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "EventType",
+                      "canonicalReference": "office!Office.EventType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "type",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
               "canonicalReference": "office!Office.Document:interface",
               "docComment": "/**\n * An abstract class that represents the document the add-in is interacting with.\n *\n * @remarks\n *\n * **Hosts**: Excel, PowerPoint, Project, Word\n */\n",
               "excerptTokens": [
