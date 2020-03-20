@@ -202,18 +202,26 @@ export declare namespace Office {
          * @remarks
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+         * 
+         * @beta
          */
         enum ComposeType {
             /**
              * Reply.
+             * 
+             * [Api set: Mailbox Preview]
              */
             Reply = "reply",
             /**
              * New mail.
+             * 
+             * [Api set: Mailbox Preview]
              */
             NewMail = "newMail",
             /**
              * Forward.
+             * 
+             * [Api set: Mailbox Preview]
              */
             Forward = "forward"
         }
@@ -1733,6 +1741,8 @@ export declare namespace Office {
          * If the signature is selected, this API call should disable it. 
          *
          * [Api set: Mailbox Preview]
+         * 
+         * @remarks
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          *
@@ -1742,6 +1752,8 @@ export declare namespace Office {
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
+         * 
+         * @beta
          */
         disableClientSignatureAsync(options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;        
         /**
@@ -1753,6 +1765,8 @@ export declare namespace Office {
          * If the signature is selected, this API call should disable it. 
          *
          * [Api set: Mailbox Preview]
+         * 
+         * @remarks
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          *
@@ -1760,6 +1774,8 @@ export declare namespace Office {
          *
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
+         * 
+         * @beta
          */
         disableClientSignatureAsync(callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;        
         /**
@@ -2074,6 +2090,8 @@ export declare namespace Office {
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                   type `Office.AsyncResult`.
+         * 
+         * @beta
          */
         isClientSignatureEnabledAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<boolean>) => void): void;        
         /**
@@ -2094,6 +2112,8 @@ export declare namespace Office {
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                   type `Office.AsyncResult`.
+         * 
+         * @beta
          */
         isClientSignatureEnabledAsync(callback: (asyncResult: CommonAPI.AsyncResult<boolean>) => void): void;        
         /**
@@ -3823,6 +3843,8 @@ export declare namespace Office {
          *                        removing any HTML tags present. If Html, the method sets the signature to HTML.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type `Office.AsyncResult`.
+         * 
+         * @beta
          */
         setSignatureAsync(data: string, options?: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
@@ -3845,6 +3867,8 @@ export declare namespace Office {
          * @param data - The string that represents the signature to be set in the body of the mail. This string is limited to 30,000 characters.
          * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
          *                             of type `Office.AsyncResult`.
+         * 
+         * @beta
          */
         setSignatureAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
@@ -6153,6 +6177,8 @@ export declare namespace Office {
          * If the signature is selected, this API call should disable it. 
          *
          * [Api set: Mailbox Preview]
+         * 
+         * @remarks
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          *
@@ -6162,6 +6188,8 @@ export declare namespace Office {
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
+         * 
+         * @beta
          */
         disableClientSignatureAsync(options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;        
         /**
@@ -6173,6 +6201,8 @@ export declare namespace Office {
          * If the signature is selected, this API call should disable it. 
          *
          * [Api set: Mailbox Preview]
+         * 
+         * @remarks
          *
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
          *
@@ -6180,6 +6210,8 @@ export declare namespace Office {
          *
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
          *                `asyncResult`, which is an `Office.AsyncResult` object.
+         * 
+         * @beta
          */
         disableClientSignatureAsync(callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;        
         /**
@@ -6281,36 +6313,31 @@ export declare namespace Office {
         /**
          * Specifies the type of message compose and its coercion type. The message can be new, or a reply or forward.
          * The coercion type can be HTML or plain text.
+         *
+         * [Api set: Mailbox Preview]
+         *
+         * @remarks
          * 
-         * @returns
-         * An object with `ComposeType` and `CoercionType` enum values for the message item.
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         * 
+         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points | Applicable Outlook mode}**: Message Compose
          * 
          * @param options - An object literal that contains one or more of the following properties.
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of 
          *                 type `Office.AsyncResult`. On success, the `asyncResult.value` property contains an object with the item's compose type
          *                 and coercion type.
-         *
-         * [Api set: Mailbox Preview]
-         *
-         * @remarks
          * 
-         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+         * @returns
+         * An object with `ComposeType` and `CoercionType` enum values for the message item.
          * 
-         * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points | Applicable Outlook mode}**: Message Compose
+         * @beta
          */
         getComposeTypeAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
         /**
          * Specifies the type of message compose and its coercion type. The message can be new, or a reply or forward.
          * The coercion type can be HTML or plain text.
          * 
-         * @returns
-         * An object with `ComposeType` and `CoercionType` enum values for the message item.
-         * 
-         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of 
-         *                 type `Office.AsyncResult`. On success, the `asyncResult.value` property contains an object with the item's compose type
-         *                 and coercion type.
-         *
          * [Api set: Mailbox Preview]
          *
          * @remarks
@@ -6318,6 +6345,15 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points | Applicable Outlook mode}**: Message Compose
+         * 
+         * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of 
+         *                 type `Office.AsyncResult`. On success, the `asyncResult.value` property contains an object with the item's compose type
+         *                 and coercion type.
+         * 
+         * @returns
+         * An object with `ComposeType` and `CoercionType` enum values for the message item.
+         * 
+         * @beta
          */
         getComposeTypeAsync(callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
         /**
@@ -6532,6 +6568,8 @@ export declare namespace Office {
          *        `asyncContext`: Developers can provide any object they wish to access in the callback method.
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                   type `Office.AsyncResult`.
+         * 
+         * @beta
          */
         isClientSignatureEnabledAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<boolean>) => void): void;        
         /**
@@ -6552,6 +6590,8 @@ export declare namespace Office {
          *
          * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
          *                   type `Office.AsyncResult`.
+         * 
+         * @beta
          */
         isClientSignatureEnabledAsync(callback: (asyncResult: CommonAPI.AsyncResult<boolean>) => void): void;        
         /**

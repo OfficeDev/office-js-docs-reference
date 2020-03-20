@@ -1129,8 +1129,7 @@ items:
 
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-
-
+    remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -1138,6 +1137,7 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points)<!-- -->**:
       Message Compose
+    isPreview: true
     name: 'disableClientSignatureAsync(options, callback)'
     fullName: 'disableClientSignatureAsync(options, callback)'
     langs:
@@ -1176,8 +1176,7 @@ items:
 
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-
-
+    remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -1185,6 +1184,25 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points)<!-- -->**:
       Message Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Disable the client signature.
+
+      Office.context.mailbox.item.disableClientSignatureAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("disableClientSignatureAsync succeeded");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+    isPreview: true
     name: disableClientSignatureAsync(callback)
     fullName: disableClientSignatureAsync(callback)
     langs:
@@ -1195,21 +1213,7 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Disable the client signature.
-          Office.context.mailbox.item.disableClientSignatureAsync(function(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-              console.log("disableClientSignatureAsync succeeded");
-            } else {
-              console.error(asyncResult.error);
-            }
-          });
-          ```
+        description: ''
       parameters:
         - id: callback
           description: >-
@@ -1619,6 +1623,9 @@ items:
     summary: >-
       Specifies the type of message compose and its coercion type. The message can be new, or a reply or forward. The
       coercion type can be HTML or plain text.
+
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -1627,6 +1634,7 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points)<!-- -->**:
       Message Compose
+    isPreview: true
     name: 'getComposeTypeAsync(options, callback)'
     fullName: 'getComposeTypeAsync(options, callback)'
     langs:
@@ -1652,15 +1660,15 @@ items:
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
             of type `Office.AsyncResult`<!-- -->. On success, the `asyncResult.value` property contains an object with
             the item's compose type and coercion type.
-
-
-            \[Api set: Mailbox Preview\]
           type:
             - 'outlook!Office.MessageCompose#getComposeTypeAsync~0:complex'
   - uid: 'outlook!Office.MessageCompose#getComposeTypeAsync:member(2)'
     summary: >-
       Specifies the type of message compose and its coercion type. The message can be new, or a reply or forward. The
       coercion type can be HTML or plain text.
+
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -1692,6 +1700,7 @@ items:
       });
 
       ```
+    isPreview: true
     name: getComposeTypeAsync(callback)
     fullName: getComposeTypeAsync(callback)
     langs:
@@ -1709,9 +1718,6 @@ items:
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
             of type `Office.AsyncResult`<!-- -->. On success, the `asyncResult.value` property contains an object with
             the item's compose type and coercion type.
-
-
-            \[Api set: Mailbox Preview\]
           type:
             - 'outlook!Office.MessageCompose#getComposeTypeAsync~1:complex'
   - uid: 'outlook!Office.MessageCompose#getInitializationContextAsync:member(1)'
@@ -2334,6 +2340,7 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points)<!-- -->**:
       Message Compose
+    isPreview: true
     name: 'isClientSignatureEnabledAsync(options, callback)'
     fullName: 'isClientSignatureEnabledAsync(options, callback)'
     langs:
@@ -2399,6 +2406,7 @@ items:
       });
 
       ```
+    isPreview: true
     name: isClientSignatureEnabledAsync(callback)
     fullName: isClientSignatureEnabledAsync(callback)
     langs:

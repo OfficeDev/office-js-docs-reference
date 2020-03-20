@@ -858,6 +858,7 @@ items:
 
       - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the
       message body is in plain text.
+    isPreview: true
     name: 'setSignatureAsync(data, options, callback)'
     fullName: 'setSignatureAsync(data, options, callback)'
     langs:
@@ -937,6 +938,7 @@ items:
       });
 
       ```
+    isPreview: true
     name: 'setSignatureAsync(data, callback)'
     fullName: 'setSignatureAsync(data, callback)'
     langs:

@@ -921,8 +921,7 @@ items:
 
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-
-
+    remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -930,6 +929,7 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points)<!-- -->**:
       Appointment Organizer
+    isPreview: true
     name: 'disableClientSignatureAsync(options, callback)'
     fullName: 'disableClientSignatureAsync(options, callback)'
     langs:
@@ -968,8 +968,7 @@ items:
 
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-
-
+    remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
       `ReadWriteItem`
@@ -977,6 +976,25 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points)<!-- -->**:
       Appointment Organizer
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Disable the client signature.
+
+      Office.context.mailbox.item.disableClientSignatureAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("disableClientSignatureAsync succeeded");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+    isPreview: true
     name: disableClientSignatureAsync(callback)
     fullName: disableClientSignatureAsync(callback)
     langs:
@@ -987,21 +1005,7 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Disable the client signature.
-          Office.context.mailbox.item.disableClientSignatureAsync(function(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-              console.log("disableClientSignatureAsync succeeded");
-            } else {
-              console.error(asyncResult.error);
-            }
-          });
-          ```
+        description: ''
       parameters:
         - id: callback
           description: >-
@@ -2052,6 +2056,7 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points)<!-- -->**:
       Appointment Organizer
+    isPreview: true
     name: 'isClientSignatureEnabledAsync(options, callback)'
     fullName: 'isClientSignatureEnabledAsync(options, callback)'
     langs:
@@ -2117,6 +2122,7 @@ items:
       });
 
       ```
+    isPreview: true
     name: isClientSignatureEnabledAsync(callback)
     fullName: isClientSignatureEnabledAsync(callback)
     langs:

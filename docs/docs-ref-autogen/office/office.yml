@@ -36,6 +36,7 @@ items:
       - 'office!Office.CustomXmlPrefixMappings:interface'
       - 'office!Office.Dialog:interface'
       - 'office!Office.DialogOptions:interface'
+      - 'office!Office.DialogParentMessageReceivedEventArgs:interface'
       - 'office!Office.Document:interface'
       - 'office!Office.DocumentMode:enum'
       - 'office!Office.DocumentSelectionChangedEventArgs:interface'
@@ -442,6 +443,8 @@ references:
     name: Office.Dialog
   - uid: 'office!Office.DialogOptions:interface'
     name: Office.DialogOptions
+  - uid: 'office!Office.DialogParentMessageReceivedEventArgs:interface'
+    name: Office.DialogParentMessageReceivedEventArgs
   - uid: 'office!Office.Document:interface'
     name: Office.Document
   - uid: 'office!Office.DocumentMode:enum'
