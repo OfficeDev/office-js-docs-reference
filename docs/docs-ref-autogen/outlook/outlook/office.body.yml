@@ -837,7 +837,9 @@ items:
             - 'outlook!Office.Body#setSelectedDataAsync~2:complex'
   - uid: 'outlook!Office.Body#setSignatureAsync:member(1)'
     summary: |-
-      Adds or replaces the signature of the email body.
+      Adds or replaces the signature of the item body.
+
+      **Important**: In Outlook on the web, `setSignatureAsync` only works on messages.
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -858,6 +860,7 @@ items:
 
       - `InvalidFormatError`<!-- -->: The `options.coercionType` parameter is set to `Office.CoercionType.Html` and the
       message body is in plain text.
+    isPreview: true
     name: 'setSignatureAsync(data, options, callback)'
     fullName: 'setSignatureAsync(data, options, callback)'
     langs:
@@ -894,7 +897,9 @@ items:
             - 'outlook!Office.Body#setSignatureAsync~1:complex'
   - uid: 'outlook!Office.Body#setSignatureAsync:member(2)'
     summary: |-
-      Adds or replaces the signature of the email body.
+      Adds or replaces the signature of the item body.
+
+      **Important**: In Outlook on the web, `setSignatureAsync` only works on messages.
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -937,6 +942,7 @@ items:
       });
 
       ```
+    isPreview: true
     name: 'setSignatureAsync(data, callback)'
     fullName: 'setSignatureAsync(data, callback)'
     langs:
