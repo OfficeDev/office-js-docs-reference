@@ -29,6 +29,7 @@ items:
       - 'outlook!Office.Entities:interface'
       - 'outlook!Office.From:interface'
       - 'outlook!Office.InternetHeaders:interface'
+      - 'outlook!Office.IsAllDayEvent:interface'
       - 'outlook!Office.Item:interface'
       - 'outlook!Office.ItemCompose:interface'
       - 'outlook!Office.ItemRead:interface'
@@ -37,6 +38,7 @@ items:
       - 'outlook!Office.LocationDetails:interface'
       - 'outlook!Office.LocationIdentifier:interface'
       - 'outlook!Office.Mailbox:interface'
+      - 'outlook!Office.MailboxEnums.AppointmentSensitivityType:enum'
       - 'outlook!Office.MailboxEnums.AttachmentContentFormat:enum'
       - 'outlook!Office.MailboxEnums.AttachmentStatus:enum'
       - 'outlook!Office.MailboxEnums.AttachmentType:enum'
@@ -77,6 +79,7 @@ items:
       - 'outlook!Office.ReplyFormAttachment:interface'
       - 'outlook!Office.ReplyFormData:interface'
       - 'outlook!Office.RoamingSettings:interface'
+      - 'outlook!Office.Sensitivity:interface'
       - 'outlook!Office.SeriesTime:interface'
       - 'outlook!Office.SharedProperties:interface'
       - 'outlook!Office.Subject:interface'
@@ -128,6 +131,8 @@ references:
     name: Office.From
   - uid: 'outlook!Office.InternetHeaders:interface'
     name: Office.InternetHeaders
+  - uid: 'outlook!Office.IsAllDayEvent:interface'
+    name: Office.IsAllDayEvent
   - uid: 'outlook!Office.Item:interface'
     name: Office.Item
   - uid: 'outlook!Office.ItemCompose:interface'
@@ -144,6 +149,8 @@ references:
     name: Office.LocationIdentifier
   - uid: 'outlook!Office.Mailbox:interface'
     name: Office.Mailbox
+  - uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType:enum'
+    name: Office.MailboxEnums.AppointmentSensitivityType
   - uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat:enum'
     name: Office.MailboxEnums.AttachmentContentFormat
   - uid: 'outlook!Office.MailboxEnums.AttachmentStatus:enum'
@@ -224,6 +231,8 @@ references:
     name: Office.ReplyFormData
   - uid: 'outlook!Office.RoamingSettings:interface'
     name: Office.RoamingSettings
+  - uid: 'outlook!Office.Sensitivity:interface'
+    name: Office.Sensitivity
   - uid: 'outlook!Office.SeriesTime:interface'
     name: Office.SeriesTime
   - uid: 'outlook!Office.SharedProperties:interface'
