@@ -8,6 +8,8 @@ items:
         items:
           - name: MailboxEnums
             items:
+              - name: AppointmentSensitivityType
+                uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType:enum'
               - name: AttachmentContentFormat
                 uid: 'outlook!Office.MailboxEnums.AttachmentContentFormat:enum'
               - name: AttachmentStatus
@@ -88,6 +90,8 @@ items:
             uid: 'outlook!Office.From:interface'
           - name: InternetHeaders
             uid: 'outlook!Office.InternetHeaders:interface'
+          - name: IsAllDayEvent
+            uid: 'outlook!Office.IsAllDayEvent:interface'
           - name: Item
             uid: 'outlook!Office.Item:interface'
           - name: LocalClientTime
@@ -138,6 +142,8 @@ items:
             uid: 'outlook!Office.ReplyFormData:interface'
           - name: RoamingSettings
             uid: 'outlook!Office.RoamingSettings:interface'
+          - name: Sensitivity
+            uid: 'outlook!Office.Sensitivity:interface'
           - name: SeriesTime
             uid: 'outlook!Office.SeriesTime:interface'
           - name: SharedProperties

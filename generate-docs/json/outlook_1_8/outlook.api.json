@@ -5867,7 +5867,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.Categories:interface",
-              "docComment": "/**\n * Represents the categories on an item.\n *\n * In Outlook, a user can group messages and appointments by using a category to color-code them. The user defines {@link Office.MasterCategories | categories in a master list} on their mailbox. They can then apply one or more categories to an item.\n *\n * **Important**: In Outlook on the web, you can't use the API to manage categories on a message in Read mode.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
+              "docComment": "/**\n * Represents the categories on an item.\n *\n * In Outlook, a user can tag messages and appointments by using a category to color-code them. The user defines {@link Office.MasterCategories | categories in a master list} on their mailbox. They can then apply one or more categories to an item.\n *\n * **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message in Compose mode.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -15794,7 +15794,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.MasterCategories:interface",
-              "docComment": "/**\n * Represents the categories master list on the mailbox.\n *\n * In Outlook, a user can group messages and appointments by using a category to color-code them. The user defines categories in a master list on their mailbox. They can then apply one or more categories to an item.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
+              "docComment": "/**\n * Represents the categories master list on the mailbox.\n *\n * In Outlook, a user can tag messages and appointments by using a category to color-code them. The user defines categories in a master list on their mailbox. They can then apply one or more categories to an item.\n *\n * **Important**: In delegate or shared scenarios, the delegate can get the categories in the master list but can't add or remove categories.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -17279,7 +17279,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageCompose#categories:member",
-                  "docComment": "/**\n * Gets an object that provides methods for managing the item's categories.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
+                  "docComment": "/**\n * Gets an object that provides methods for managing the item's categories.\n *\n * **Important**: In Outlook on the web, you can't use the API to manage categories on a message in Compose mode.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19246,7 +19246,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageRead#categories:member",
-                  "docComment": "/**\n * Gets an object that provides methods for managing the item's categories.\n *\n * **Important**: In Outlook on the web, you can't use the API to manage categories on a message in Read mode.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
+                  "docComment": "/**\n * Gets an object that provides methods for managing the item's categories.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
