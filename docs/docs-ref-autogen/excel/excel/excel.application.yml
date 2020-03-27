@@ -422,6 +422,8 @@ items:
               console.log("Starting...");
 
               if (pauseScreenPainting) {
+                  // Note: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop).
+                  // Repeated calls will cause the Excel window to flicker. 
                   context.application.suspendScreenUpdatingUntilNextSync();
               }
 

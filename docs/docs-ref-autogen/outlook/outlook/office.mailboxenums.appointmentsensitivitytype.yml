@@ -23,7 +23,7 @@ items:
       - 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Private:member'
   - uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Confidential:member'
     summary: |-
-      Confidential.
+      Treat the item as confidential.
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     isPreview: true
@@ -35,7 +35,7 @@ items:
     numericValue: '"confidential"'
   - uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Normal:member'
     summary: |-
-      Normal.
+      The item needs no special treatment.
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     isPreview: true
@@ -47,7 +47,7 @@ items:
     numericValue: '"normal"'
   - uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Personal:member'
     summary: |-
-      Personal.
+      Treat the item as personal.
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     isPreview: true
@@ -59,7 +59,7 @@ items:
     numericValue: '"personal"'
   - uid: 'outlook!Office.MailboxEnums.AppointmentSensitivityType.Private:member'
     summary: |-
-      Private.
+      Treat the item as private.
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     isPreview: true

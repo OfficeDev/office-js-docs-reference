@@ -11771,7 +11771,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType.Confidential:member",
-                      "docComment": "/**\n * Confidential.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                      "docComment": "/**\n * Treat the item as confidential.\n *\n * [Api set: Mailbox Preview]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11792,7 +11792,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType.Normal:member",
-                      "docComment": "/**\n * Normal.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                      "docComment": "/**\n * The item needs no special treatment.\n *\n * [Api set: Mailbox Preview]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11813,7 +11813,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType.Personal:member",
-                      "docComment": "/**\n * Personal.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                      "docComment": "/**\n * Treat the item as personal.\n *\n * [Api set: Mailbox Preview]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11834,7 +11834,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType.Private:member",
-                      "docComment": "/**\n * Private.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                      "docComment": "/**\n * Treat the item as private.\n *\n * [Api set: Mailbox Preview]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
