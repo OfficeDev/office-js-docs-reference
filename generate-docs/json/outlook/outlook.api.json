@@ -1922,6 +1922,32 @@
                   "name": "getSharedPropertiesAsync"
                 },
                 {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.AppointmentCompose#isAllDayEvent:member",
+                  "docComment": "/**\n * Gets or sets the {@link Office.IsAllDayEvent} property of an appointment.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "isAllDayEvent: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "IsAllDayEvent",
+                      "canonicalReference": "outlook!Office.IsAllDayEvent:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "isAllDayEvent",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#isClientSignatureEnabledAsync:member(1)",
                   "docComment": "/**\n * Gets if the client signature is enabled.\n *\n * For Windows and Mac rich clients, the API call should return `true` if the default signature for new messages, replies, or forwards is set to a template for the sending Outlook account. For Outlook on the web, the API call should return `true` if the signature is enabled for compose types `newMail`, `reply`, or `forward`. If the settings are set to \"(none)\" in Mac or Windows rich clients or disabled in Outlook on the Web, the API call should return `false`.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @beta\n */\n",
@@ -2732,6 +2758,32 @@
                     }
                   ],
                   "name": "saveAsync"
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.AppointmentCompose#sensitivity:member",
+                  "docComment": "/**\n * Gets or sets the {@link Office.Sensitivity | sensitivity} of an appointment.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "sensitivity: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Sensitivity",
+                      "canonicalReference": "outlook!Office.Sensitivity:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "sensitivity",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
                 },
                 {
                   "kind": "PropertySignature",
@@ -4507,6 +4559,31 @@
                 },
                 {
                   "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.AppointmentRead#isAllDayEvent:member",
+                  "docComment": "/**\n * Returns a boolean value indicating whether the event is all day.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "isAllDayEvent: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "isAllDayEvent",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AppointmentRead#itemClass:member",
                   "docComment": "/**\n * Gets the Exchange Web Services item class of the selected item.\n *\n * You can create custom message classes that extends a default message class, for example, a custom appointment message class `IPM.Appointment.Contoso`.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * The `itemClass` property specifies the message class of the selected item. The following are the default message classes for the message or appointment item.\n *\n * <table> <tr> <th>Type</th> <th>Description</th> <th>Item Class</th> </tr> <tr> <td>Appointment items</td> <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence.</td> <td>IPM.Appointment,IPM.Appointment.Occurrence</td> </tr> <tr> <td>Message items</td> <td>These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.</td> <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td> </tr> </table>\n */\n",
                   "excerptTokens": [
@@ -5007,6 +5084,32 @@
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.AppointmentRead#sensitivity:member",
+                  "docComment": "/**\n * Provides the sensitivity value of the appointment.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permission | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "sensitivity: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "MailboxEnums.AppointmentSensitivityType",
+                      "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "sensitivity",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
                   }
                 },
                 {
@@ -6665,7 +6768,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.Categories:interface",
-              "docComment": "/**\n * Represents the categories on an item.\n *\n * In Outlook, a user can group messages and appointments by using a category to color-code them. The user defines {@link Office.MasterCategories | categories in a master list} on their mailbox. They can then apply one or more categories to an item.\n *\n * **Important**: In Outlook on the web, you can't use the API to manage categories on a message in Read mode.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
+              "docComment": "/**\n * Represents the categories on an item.\n *\n * In Outlook, a user can tag messages and appointments by using a category to color-code them. The user defines {@link Office.MasterCategories | categories in a master list} on their mailbox. They can then apply one or more categories to an item.\n *\n * **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message in Compose mode.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -9330,6 +9433,292 @@
             },
             {
               "kind": "Interface",
+              "canonicalReference": "outlook!Office.IsAllDayEvent:interface",
+              "docComment": "/**\n * Provides methods to get and set the all-day event status of a meeting in an Outlook add-in.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface IsAllDayEvent "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "IsAllDayEvent",
+              "members": [
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.IsAllDayEvent#getAsync:member(1)",
+                  "docComment": "/**\n * Gets the boolean value indicating whether the event is all day or not.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getAsync(options: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncContextOptions",
+                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<boolean>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
+                      }
+                    }
+                  ],
+                  "name": "getAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.IsAllDayEvent#getAsync:member(2)",
+                  "docComment": "/**\n * Gets the boolean value indicating whether the event is all day or not.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getAsync(callback: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<boolean>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 4
+                      }
+                    }
+                  ],
+                  "name": "getAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.IsAllDayEvent#setAsync:member(1)",
+                  "docComment": "/**\n * Sets the all-day event status of an appointment.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * If an appointment is marked as an all-day event: - Start and end time will be marked as 12:00 AM (just like in the Outlook UI). Start time will return 12:00 AM and end time will be 12:00 AM the next day.\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param isAllDayEvent - boolean value to set the all day event status.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "setAsync(isAllDayEvent: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", options?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncContextOptions",
+                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "isAllDayEvent",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 4
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 5,
+                        "endIndex": 8
+                      }
+                    }
+                  ],
+                  "name": "setAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.IsAllDayEvent#setAsync:member(2)",
+                  "docComment": "/**\n * Sets the all-day event status of an appointment.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * If an appointment is marked as an all-day event: - Start and end time will be marked as 12:00 AM (just like in the Outlook UI). Start time will return 12:00 AM and end time will be 12:00 AM the next day.\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param isAllDayEvent - boolean value to set the all day event status.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "setAsync(isAllDayEvent: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "isAllDayEvent",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 6
+                      }
+                    }
+                  ],
+                  "name": "setAsync"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
               "canonicalReference": "outlook!Office.Item:interface",
               "docComment": "/**\n * The item namespace is used to access the currently selected message, meeting request, or appointment. You can determine the type of the item by using the `itemType` property.\n *\n * To see the full member list, refer to the {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page.\n *\n * If you want to see IntelliSense for only a specific type or mode, cast this item to one of the following:\n *\n * - {@link Office.AppointmentCompose | AppointmentCompose}\n *\n * - {@link Office.AppointmentRead | AppointmentRead}\n *\n * - {@link Office.MessageCompose | MessageCompose}\n *\n * - {@link Office.MessageRead | MessageRead}\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer, Appointment Attendee, Message Compose, Message Read\n */\n",
               "excerptTokens": [
@@ -11366,6 +11755,105 @@
               "releaseTag": "Public",
               "name": "MailboxEnums",
               "members": [
+                {
+                  "kind": "Enum",
+                  "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType:enum",
+                  "docComment": "/**\n * Specifies the sensitivity type of an appointment.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "enum AppointmentSensitivityType "
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "AppointmentSensitivityType",
+                  "members": [
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType.Confidential:member",
+                      "docComment": "/**\n * Treat the item as confidential.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "Confidential = "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "\"confidential\""
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Confidential",
+                      "initializerTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType.Normal:member",
+                      "docComment": "/**\n * The item needs no special treatment.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "Normal = "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "\"normal\""
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Normal",
+                      "initializerTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType.Personal:member",
+                      "docComment": "/**\n * Treat the item as personal.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "Personal = "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "\"personal\""
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Personal",
+                      "initializerTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType.Private:member",
+                      "docComment": "/**\n * Treat the item as private.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Content",
+                          "text": "Private = "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "\"private\""
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Private",
+                      "initializerTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    }
+                  ]
+                },
                 {
                   "kind": "Enum",
                   "canonicalReference": "outlook!Office.MailboxEnums.AttachmentContentFormat:enum",
@@ -16670,7 +17158,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.MasterCategories:interface",
-              "docComment": "/**\n * Represents the categories master list on the mailbox.\n *\n * In Outlook, a user can group messages and appointments by using a category to color-code them. The user defines categories in a master list on their mailbox. They can then apply one or more categories to an item.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
+              "docComment": "/**\n * Represents the categories master list on the mailbox.\n *\n * In Outlook, a user can tag messages and appointments by using a category to color-code them. The user defines categories in a master list on their mailbox. They can then apply one or more categories to an item.\n *\n * **Important**: In delegate or shared scenarios, the delegate can get the categories in the master list but can't add or remove categories.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -18155,7 +18643,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageCompose#categories:member",
-                  "docComment": "/**\n * Gets an object that provides methods for managing the item's categories.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
+                  "docComment": "/**\n * Gets an object that provides methods for managing the item's categories.\n *\n * **Important**: In Outlook on the web, you can't use the API to manage categories on a message in Compose mode.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -20602,7 +21090,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageRead#categories:member",
-                  "docComment": "/**\n * Gets an object that provides methods for managing the item's categories.\n *\n * **Important**: In Outlook on the web, you can't use the API to manage categories on a message in Read mode.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
+                  "docComment": "/**\n * Gets an object that provides methods for managing the item's categories.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -25459,6 +25947,320 @@
                     }
                   ],
                   "name": "set"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "outlook!Office.Sensitivity:interface",
+              "docComment": "/**\n * Provides methods to get and set the appointment sensitivity of a meeting in an Outlook add-in.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface Sensitivity "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "Sensitivity",
+              "members": [
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.Sensitivity#getAsync:member(1)",
+                  "docComment": "/**\n * Gets the value of the appointment sensitivity.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getAsync(options: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncContextOptions",
+                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "MailboxEnums.AppointmentSensitivityType",
+                      "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 2
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 3,
+                        "endIndex": 8
+                      }
+                    }
+                  ],
+                  "name": "getAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.Sensitivity#getAsync:member(2)",
+                  "docComment": "/**\n * Gets the value of the appointment sensitivity.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getAsync(callback: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "MailboxEnums.AppointmentSensitivityType",
+                      "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ">) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 6
+                      }
+                    }
+                  ],
+                  "name": "getAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.Sensitivity#setAsync:member(1)",
+                  "docComment": "/**\n * Sets the value of the appointment sensitivity.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param sensitivity - The sensitivity value as enum or string.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "setAsync(sensitivity: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "MailboxEnums.AppointmentSensitivityType",
+                      "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", options?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncContextOptions",
+                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 10,
+                    "endIndex": 11
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "sensitivity",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 6,
+                        "endIndex": 9
+                      }
+                    }
+                  ],
+                  "name": "setAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.Sensitivity#setAsync:member(2)",
+                  "docComment": "/**\n * Sets the value of the appointment sensitivity.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n *\n * @param sensitivity - The sensitivity value as enum or string.\n *\n * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an `Office.AsyncResult` object.\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "setAsync(sensitivity: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "MailboxEnums.AppointmentSensitivityType",
+                      "canonicalReference": "outlook!Office.MailboxEnums.AppointmentSensitivityType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", callback?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(asyncResult: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI.AsyncResult",
+                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "sensitivity",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 1,
+                        "endIndex": 3
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "setAsync"
                 }
               ],
               "extendsTokenRanges": []

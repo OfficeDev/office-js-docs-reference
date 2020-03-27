@@ -5,12 +5,13 @@ items:
       Represents the categories on an item.
 
 
-      In Outlook, a user can group messages and appointments by using a category to color-code them. The user defines
+      In Outlook, a user can tag messages and appointments by using a category to color-code them. The user defines
       [categories in a master list](xref:outlook!Office.MasterCategories:interface) on their mailbox. They can then
       apply one or more categories to an item.
 
 
-      **Important**: In Outlook on the web, you can't use the API to manage categories on a message in Read mode.
+      **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message in Compose
+      mode.
 
 
       \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
