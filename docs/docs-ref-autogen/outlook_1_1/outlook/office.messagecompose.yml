@@ -1075,6 +1075,23 @@ items:
       });
 
       ```
+
+      ```javascript
+
+      var email = $("#emailTo")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.to.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting To field.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: to
     fullName: to
     langs:
