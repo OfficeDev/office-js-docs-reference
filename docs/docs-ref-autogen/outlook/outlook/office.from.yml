@@ -101,18 +101,6 @@ items:
 
       ```javascript
 
-      Office.context.mailbox.item.from.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          var from = asyncResult.value;
-          console.log("From " + from);
-      }
-
-      ```
-
-      ```javascript
-
       Office.context.mailbox.item.from.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           var msgFrom = asyncResult.value;

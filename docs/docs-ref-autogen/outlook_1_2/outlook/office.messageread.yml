@@ -194,12 +194,6 @@ items:
 
       ```javascript
 
-      console.log(JSON.stringify(Office.context.mailbox.item.cc));
-
-      ```
-
-      ```javascript
-
       var msgCc = Office.context.mailbox.item.cc;
 
       console.log("Message copied to:");
@@ -701,14 +695,6 @@ items:
 
       ```javascript
 
-      var from = Office.context.mailbox.item.from;
-
-      console.log("From " + from);
-
-      ```
-
-      ```javascript
-
       var msgFrom = Office.context.mailbox.item.from;
 
       console.log("Message received from: " + msgFrom.displayName + " (" + msgFrom.emailAddress + ")");
@@ -742,15 +728,6 @@ items:
 
       #### Examples
 
-
-      ```javascript
-
-      // The following example accesses the contacts entities in the current item's body.
-
-
-      var contacts = Office.context.mailbox.item.getEntities().contacts;
-
-      ```
 
       ```javascript
 
@@ -836,28 +813,6 @@ items:
 
       #### Examples
 
-
-      ```javascript
-
-      // The following example shows how to access an array of strings that represent postal addresses
-
-      // in the current item's body.
-
-
-      // The initialize function is required for all apps.
-
-      Office.initialize = function () {
-          // Checks for the DOM to load using the jQuery ready function.
-          $(document).ready(function () {
-              // After the DOM is loaded, app-specific code can run.
-              var item = Office.context.mailbox.item;
-              // Get an array of strings that represent postal addresses in the current item's body.
-              var addresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.Address);
-              // Continue processing the array of addresses.
-          });
-      };
-
-      ```
 
       ```javascript
 
@@ -1536,16 +1491,6 @@ items:
 
       ```javascript
 
-      var senderName = Office.context.mailbox.item.sender.displayName;
-
-      var senderAddress = Office.context.mailbox.item.sender.emailAddress;
-
-      console.log("Sender: " + senderName + " (" + senderAddress + ")");
-
-      ```
-
-      ```javascript
-
       var msgSender = Office.context.mailbox.item.sender;
 
       console.log("Sender: " + msgSender.displayName + " (" + msgSender.emailAddress + ")");
@@ -1664,12 +1609,6 @@ items:
 
       #### Examples
 
-
-      ```javascript
-
-      console.log(JSON.stringify(Office.context.mailbox.item.to));
-
-      ```
 
       ```javascript
 

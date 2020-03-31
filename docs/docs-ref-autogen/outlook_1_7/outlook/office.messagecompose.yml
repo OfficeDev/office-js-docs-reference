@@ -914,17 +914,6 @@ items:
 
       ```javascript
 
-      Office.context.mailbox.item.from.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          var from = asyncResult.value;
-      }
-
-      ```
-
-      ```javascript
-
       Office.context.mailbox.item.from.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           var msgFrom = asyncResult.value;
@@ -1268,18 +1257,6 @@ items:
 
       #### Examples
 
-
-      ```javascript
-
-      // Get all notifications.
-
-      Office.context.mailbox.item.notificationMessages.getAllAsync(
-          function (asyncResult) {
-              console.log(JSON.stringify(asyncResult));
-          }
-      );
-
-      ```
 
       ```javascript
 
@@ -1775,25 +1752,6 @@ items:
 
       #### Examples
 
-
-      ```javascript
-
-      var seriesId = Office.context.mailbox.item.seriesId;
-
-
-      // The seriesId property returns null for items that do
-
-      // not have parent items (such as single appointments,
-
-      // series items, or meeting requests) and returns
-
-      // undefined for messages that are not meeting requests.
-
-      var isSeriesInstance = (seriesId != null);
-
-      console.log("SeriesId is " + seriesId 
-          + " and isSeriesInstance is " + isSeriesInstance);
-      ```
 
       ```javascript
 

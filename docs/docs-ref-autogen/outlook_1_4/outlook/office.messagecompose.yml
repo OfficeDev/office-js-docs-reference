@@ -1088,18 +1088,6 @@ items:
 
       ```javascript
 
-      // Get all notifications.
-
-      Office.context.mailbox.item.notificationMessages.getAllAsync(
-          function (asyncResult) {
-              console.log(JSON.stringify(asyncResult));
-          }
-      );
-
-      ```
-
-      ```javascript
-
       var id = $("#notificationId").val();
 
       var details =

@@ -112,29 +112,6 @@ items:
 
       ```javascript
 
-      // Create three notifications, each with a different key.
-
-      Office.context.mailbox.item.notificationMessages.addAsync("progress", {
-          type: "progressIndicator",
-          message : "An add-in is processing this message."
-      });
-
-      Office.context.mailbox.item.notificationMessages.addAsync("information", {
-          type: "informationalMessage",
-          message : "The add-in processed this message.",
-          icon : "iconid",
-          persistent: false
-      });
-
-      Office.context.mailbox.item.notificationMessages.addAsync("error", {
-          type: "errorMessage",
-          message : "The add-in failed to process this message."
-      });
-
-      ```
-
-      ```javascript
-
       var id = $("#notificationId").val();
 
       var details =
@@ -383,14 +360,6 @@ items:
 
       #### Examples
 
-
-      ```javascript
-
-      // Remove a notification.
-
-      Office.context.mailbox.item.notificationMessages.removeAsync("progress");
-
-      ```
 
       ```javascript
 

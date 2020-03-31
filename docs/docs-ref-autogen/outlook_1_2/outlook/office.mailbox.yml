@@ -227,12 +227,6 @@ items:
 
       ```javascript
 
-      Office.context.mailbox.displayAppointmentForm(appointmentId);
-
-      ```
-
-      ```javascript
-
       var itemId = $("#itemId").val();
 
       Office.context.mailbox.displayAppointmentForm(itemId);
@@ -290,12 +284,6 @@ items:
 
       #### Examples
 
-
-      ```javascript
-
-      Office.context.mailbox.displayMessageForm(messageId);
-
-      ```
 
       ```javascript
 
@@ -359,30 +347,6 @@ items:
 
       #### Examples
 
-
-      ```javascript
-
-      var start = new Date();
-
-      var end = new Date();
-
-      end.setHours(start.getHours() + 1);
-
-
-      Office.context.mailbox.displayNewAppointmentForm(
-
-      {
-          requiredAttendees: ['bob@contoso.com'],
-          optionalAttendees: ['sam@contoso.com'],
-          start: start,
-          end: end,
-          location: 'Home',
-          resources: ['projector@contoso.com'],
-          subject: 'meeting',
-          body: 'Hello World!'
-      });
-
-      ```
 
       ```javascript
 
@@ -547,24 +511,6 @@ items:
 
       ```javascript
 
-      function getCallbackToken() {
-          var options = {
-              isRest: true,
-              asyncContext: { message: 'Hello World!' }
-          };
-
-          Office.context.mailbox.getCallbackTokenAsync(options, cb);
-      }
-
-
-      function cb(asyncResult) {
-          var token = asyncResult.value;
-      }
-
-      ```
-
-      ```javascript
-
       Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function (result) {
           var ewsId = Office.context.mailbox.item.itemId;
           var token = result.value;
@@ -642,19 +588,6 @@ items:
 
       #### Examples
 
-
-      ```javascript
-
-      function getIdentityToken() {
-          Office.context.mailbox.getUserIdentityTokenAsync(cb);
-      }
-
-
-      function cb(asyncResult) {
-          var token = asyncResult.value;
-      }
-
-      ```
 
       ```javascript
 
