@@ -323,18 +323,6 @@ items:
 
       ```javascript
 
-      Office.context.mailbox.item.categories.getAsync(function (asyncResult) {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              console.log("Action failed with error: " + asyncResult.error.message);
-          } else {
-              console.log("Categories: " + JSON.stringify(asyncResult.value));
-          }
-      });
-
-      ```
-
-      ```javascript
-
       Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           var categories = asyncResult.value;
@@ -949,15 +937,19 @@ items:
           switch (result.value.format) {
               case Office.MailboxEnums.AttachmentContentFormat.Base64:
                   // Handle file attachment.
+                  console.log(result.value.content);
                   break;
               case Office.MailboxEnums.AttachmentContentFormat.Eml:
                   // Handle email item attachment.
+                  console.log("Attachment is a message.");
                   break;
               case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
                   // Handle .icalender attachment.
+                  console.log("Attachment is a calendar item.");
                   break;
               case Office.MailboxEnums.AttachmentContentFormat.Url:
                   // Handle cloud attachment.
+                  console.log("Attachment is a cloud attachment.");
                   break;
               default:
                   // Handle attachment formats that are not supported.
@@ -1029,54 +1021,6 @@ items:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      var item = Office.context.mailbox.item;
-
-      var options = {asyncContext: {currentItem: item}};
-
-      item.getAttachmentsAsync(options, callback);
-
-
-      function callback(result) {
-          if (result.value.length > 0) {
-              for (i = 0 ; i < result.value.length ; i++) {
-                  result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
-              }
-          }
-      }
-
-
-      function handleAttachmentsCallback(result) {
-          // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
-          switch (result.value.format) {
-              case Office.MailboxEnums.AttachmentContentFormat.Base64:
-                  // Handle file attachment.
-                  console.log(result.value.content);
-                  break;
-              case Office.MailboxEnums.AttachmentContentFormat.Eml:
-                  // Handle email item attachment.
-                  console.log("Attachment is a message.");
-                  break;
-              case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
-                  // Handle .icalender attachment.
-                  console.log("Attachment is a calendar item.");
-                  break;
-              case Office.MailboxEnums.AttachmentContentFormat.Url:
-                  // Handle cloud attachment.
-                  console.log("Attachment is a cloud attachment.");
-                  break;
-              default:
-                  // Handle attachment formats that are not supported.
-          }
-      }
-
-      ```
     name: 'getAttachmentContentAsync(attachmentId, callback)'
     fullName: 'getAttachmentContentAsync(attachmentId, callback)'
     langs:
@@ -1120,15 +1064,6 @@ items:
 
       #### Examples
 
-
-      ```javascript
-
-      // The following example accesses the contacts entities in the current item's body.
-
-
-      var contacts = Office.context.mailbox.item.getEntities().contacts;
-
-      ```
 
       ```javascript
 
@@ -1214,28 +1149,6 @@ items:
 
       #### Examples
 
-
-      ```javascript
-
-      // The following example shows how to access an array of strings that represent
-
-      // postal addresses in the current item's body.
-
-
-      // The initialize function is required for all apps.
-
-      Office.initialize = function () {
-          // Checks for the DOM to load using the jQuery ready function.
-          $(document).ready(function () {
-              // After the DOM is loaded, app-specific code can run.
-              var item = Office.context.mailbox.item;
-              // Get an array of strings that represent postal addresses in the current item's body.
-              var addresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.Address);
-              // Continue processing the array of addresses.
-          });
-      };
-
-      ```
 
       ```javascript
 
@@ -1670,16 +1583,6 @@ items:
 
       ```javascript
 
-      // The following example accesses the addresses entities in the highlighted
-
-      // match selected by the user.
-
-      var addresses = Office.context.mailbox.item.getSelectedEntities().addresses;
-
-      ```
-
-      ```javascript
-
       var entities = Office.context.mailbox.item.getSelectedEntities();
 
       var entityTypesFound = 0;
@@ -1781,6 +1684,36 @@ items:
 
 
       ```javascript
+
+      // Consider an add-in manifest has the following `Rule` element:
+
+      //<Rule xsi:type="RuleCollection" Mode="And">
+
+      //  <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
+
+      //  <Rule xsi:type="RuleCollection" Mode="Or">
+
+      //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut"
+      PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+
+      //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies"
+      RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+
+      //  </Rule>
+
+      //</Rule>
+
+
+      // The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
+
+      //{
+
+      //'fruits': ['apple','banana','Banana','coconut'],
+
+      //'veggies': ['tomato','onion','spinach','broccoli']
+
+      //}
+
 
       // The following example shows how to access the array of matches for the
 
@@ -1935,18 +1868,6 @@ items:
 
       #### Examples
 
-
-      ```javascript
-
-      Office.context.mailbox.item.getSharedPropertiesAsync(callback);
-
-
-      function callback (asyncResult) {
-          var context = asyncResult.context;
-          var sharedProperties = asyncResult.value;
-      }
-
-      ```
 
       ```javascript
 
@@ -2384,18 +2305,6 @@ items:
 
       ```javascript
 
-      // Get all notifications.
-
-      Office.context.mailbox.item.notificationMessages.getAllAsync(
-          function (asyncResult) {
-              console.log(JSON.stringify(asyncResult));
-          }
-      );
-
-      ```
-
-      ```javascript
-
       var id = $("#notificationId").val();
 
       var details =
@@ -2501,14 +2410,6 @@ items:
 
       ```javascript
 
-      var optionalAttendees = Office.context.mailbox.item.optionalAttendees;
-
-      console.log("Optional attendees: " + JSON.stringify(optionalAttendees));
-
-      ```
-
-      ```javascript
-
       var apptOptionalAttendees = Office.context.mailbox.item.optionalAttendees;
 
       console.log("Optional attendees:");
@@ -2549,16 +2450,6 @@ items:
 
       #### Examples
 
-
-      ```javascript
-
-      var organizerName = Office.context.mailbox.item.organizer.displayName;
-
-      var organizerAddress = Office.context.mailbox.item.organizer.emailAddress;
-
-      console.log("Organizer: " + organizerName + " (" + organizerAddress + ")");
-
-      ```
 
       ```javascript
 
@@ -2608,14 +2499,6 @@ items:
 
       #### Examples
 
-
-      ```javascript
-
-      var recurrence = Office.context.mailbox.item.recurrence;
-
-      console.log("Recurrence: " + JSON.stringify(recurrence));
-
-      ```
 
       ```javascript
 
@@ -2753,14 +2636,6 @@ items:
 
       ```javascript
 
-      var requiredAttendees = Office.context.mailbox.item.requiredAttendees;
-
-      console.log("Required attendees: " + JSON.stringify(requiredAttendees));
-
-      ```
-
-      ```javascript
-
       var apptRequiredAttendees = Office.context.mailbox.item.requiredAttendees;
 
       console.log("Required attendees:");
@@ -2858,25 +2733,6 @@ items:
 
       #### Examples
 
-
-      ```javascript
-
-      var seriesId = Office.context.mailbox.item.seriesId;
-
-
-      // The seriesId property returns null for items that do
-
-      // not have parent items (such as single appointments,
-
-      // series items, or meeting requests) and returns
-
-      // undefined for messages that are not meeting requests.
-
-      var isSeriesInstance = (seriesId != null);
-
-      console.log("SeriesId is " + seriesId 
-          + " and isSeriesInstance is " + isSeriesInstance);
-      ```
 
       ```javascript
 

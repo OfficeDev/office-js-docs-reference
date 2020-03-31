@@ -243,24 +243,6 @@ items:
 
       ```javascript
 
-      // The following example gets the optional attendees of a meeting.
-
-      Office.context.mailbox.item.optionalAttendees.getAsync(function(result) {
-          if (result.error) {
-              console.log(result.error);
-          } else {
-              var msg = "";
-              result.value.forEach(function(recip, index) {
-                  msg = msg + recip.displayName + " (" + recip.emailAddress + ");";
-              });
-              console.log(msg);
-          }
-      });
-
-      ```
-
-      ```javascript
-
       Office.context.mailbox.item.bcc.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           var msgBcc = asyncResult.value;
