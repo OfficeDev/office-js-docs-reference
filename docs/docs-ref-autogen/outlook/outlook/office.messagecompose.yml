@@ -339,26 +339,6 @@ items:
 
       ```javascript
 
-      Office.context.mailbox.item.addFileAttachmentFromBase64Async(
-          base64String,
-          "cute_bird.png",
-          {
-              isInline: true
-          },
-          function (asyncResult) {
-              Office.context.mailbox.item.body.setAsync(
-                  "<p>Here's a cute bird!</p><img src='cid:cute_bird.png'>",
-                  {
-                      "coercionType": "html"
-                  },
-                  function (asyncResult) {
-                      // Do something here.
-                  });
-          });
-      ```
-
-      ```javascript
-
       base64String =
       "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAACRUlEQVRYw82XzXHbMBCFP2F8tzsQc8Ixyh0zoiuIXIGdCsxUYKqC0B04FdiuwMoM7mGOOIXqQGoAymXhgSX+itJM9kIRFLAP+3YXD5Pdbscx5oxaAIW8Ztr6l2PWmQwF4IyaieP53qdfAqQ8CwBn1JU4vpWhrbxXQA5MZfynANmcDIAzKgcy4FKGXsVJFf3nLgKyBQptfT4KQMRz2N0fcbxqmRMDWXflx0VPnrdArq0vekQ1Dv0UeHZGNebHhwjU8AzwKM43RyZnbAf58Q6ghudeWd0Aus0+5EcMIIRi3beua0D3Nm39BEAx3i7HTK4DEBJn5YxKOnaRA5+ErpMBWMpzDvx1RuXCcxOISlufAjfC7zgAsqsvUvMAD0ApPaEtGi9AIlUzKgJo60tt/SyKRkzLrAXERluf7W1gOICWaMyB386oooOWsIHvXbSoHuUSFovtHqicUVnH3EJoeT0aQEf5/XBGlc6otIOWBXAtPeZkAIJ9Bt6cUU9tZautX2nrk3MACHYr1ZKProKRtDw4o8pzAPjWo+NtpXTTvoteDDg8noDAcwbcRedAkGdFXyk2GEDcegVAFp2gyVDHjRQ4o6q2smoqtR5Hd+qMqtoALCWUUymr1m43QMZfOaMK4C0SrMsDANJ2E5FNcbdbjHC+ENl+H0myJFbLtaq4Rt8dyPBYRQV1E40nMv9rl7xrOw3DGb+Whcqu3i/OM6CUOWvgRlufNmnLYy4m77uJI7AXtdNcTDrU71LEyv7v01/N/ovL6bmu5/8A1tNWZldH0W4AAAAASUVORK5CYII=";
 
@@ -831,10 +811,27 @@ items:
       Office.context.mailbox.item.bcc.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           var msgBcc = asyncResult.value;
-          console.log("Message being bcc'd to:");
+          console.log("Message being blind-copied to:");
           for (var i = 0; i < msgBcc.length; i++) {
             console.log(msgBcc[i].displayName + " (" + msgBcc[i].emailAddress + ")");
           }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      var email = $("#emailBcc")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.bcc.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting Bcc field.");
         } else {
           console.error(asyncResult.error);
         }
@@ -923,12 +920,48 @@ items:
 
       ```javascript
 
-      Office.context.mailbox.item.categories.getAsync(function (asyncResult) {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              console.log("Action failed with error: " + asyncResult.error.message);
+      Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var categories = asyncResult.value;
+          if (categories && categories.length > 0) {
+            console.log("Categories assigned to this item:");
+            console.log(JSON.stringify(categories));
           } else {
-              console.log("Categories: " + JSON.stringify(asyncResult.value));
+            console.log("There are no categories assigned to this item.");
           }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      // Note: In order for you to successfully add a category,
+
+      // it must be in the mailbox categories master list.
+
+
+      Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          var masterCategories = asyncResult.value;
+          if (masterCategories && masterCategories.length > 0) {
+            // Grab the first category from the master list.
+            var categoryToAdd = [masterCategories[0].displayName];
+            Office.context.mailbox.item.categories.addAsync(categoryToAdd, function(asyncResult) {
+              if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                console.log(`Successfully assigned category '${categoryToAdd}' to item.`);
+              } else {
+                console.log("categories.addAsync call failed with error: " + asyncResult.error.message);
+              }
+            });
+          } else {
+            console.log("There are no categories in the master list on this mailbox. You can add categories using Office.context.mailbox.masterCategories.addAsync.");
+          }
+        } else {
+          console.error(asyncResult.error);
+        }
       });
 
       ```
@@ -938,10 +971,18 @@ items:
       Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           var categories = asyncResult.value;
-          if (categories) {
-            console.log(categories);
+          if (categories && categories.length > 0) {
+            // Grab the first category assigned to this item.
+            var categoryToRemove = [categories[0].displayName];
+            Office.context.mailbox.item.categories.removeAsync(categoryToRemove, function(asyncResult) {
+              if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+                console.log(`Successfully unassigned category '${categoryToRemove}' from this item.`);
+              } else {
+                console.log("categories.removeAsync call failed with error: " + asyncResult.error.message);
+              }
+            });
           } else {
-            console.log("There are no categories.");
+            console.log("There are no categories assigned to this item.");
           }
         } else {
           console.error(asyncResult.error);
@@ -1012,6 +1053,23 @@ items:
           for (var i = 0; i < msgCc.length; i++) {
             console.log(msgCc[i].displayName + " (" + msgCc[i].emailAddress + ")");
           }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      var email = $("#emailCc")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.cc.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting Cc field.");
         } else {
           console.error(asyncResult.error);
         }
@@ -1252,17 +1310,6 @@ items:
 
       ```javascript
 
-      Office.context.mailbox.item.from.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          var from = asyncResult.value;
-      }
-
-      ```
-
-      ```javascript
-
       Office.context.mailbox.item.from.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           var msgFrom = asyncResult.value;
@@ -1344,15 +1391,19 @@ items:
           switch (result.value.format) {
               case Office.MailboxEnums.AttachmentContentFormat.Base64:
                   // Handle file attachment.
+                  console.log(result.value.content);
                   break;
               case Office.MailboxEnums.AttachmentContentFormat.Eml:
                   // Handle email item attachment.
+                  console.log("Attachment is a message.");
                   break;
               case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
                   // Handle .icalender attachment.
+                  console.log("Attachment is a calendar item.");
                   break;
               case Office.MailboxEnums.AttachmentContentFormat.Url:
                   // Handle cloud attachment.
+                  console.log("Attachment is a cloud attachment.");
                   break;
               default:
                   // Handle attachment formats that are not supported.
@@ -1424,54 +1475,6 @@ items:
 
 
       - `InvalidAttachmentId`<!-- -->: The attachment identifier does not exist.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      var item = Office.context.mailbox.item;
-
-      var options = {asyncContext: {currentItem: item}};
-
-      item.getAttachmentsAsync(options, callback);
-
-
-      function callback(result) {
-          if (result.value.length > 0) {
-              for (i = 0 ; i < result.value.length ; i++) {
-                  result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
-              }
-          }
-      }
-
-
-      function handleAttachmentsCallback(result) {
-          // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
-          switch (result.value.format) {
-              case Office.MailboxEnums.AttachmentContentFormat.Base64:
-                  // Handle file attachment.
-                  console.log(result.value.content);
-                  break;
-              case Office.MailboxEnums.AttachmentContentFormat.Eml:
-                  // Handle email item attachment.
-                  console.log("Attachment is a message.");
-                  break;
-              case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
-                  // Handle .icalender attachment.
-                  console.log("Attachment is a calendar item.");
-                  break;
-              case Office.MailboxEnums.AttachmentContentFormat.Url:
-                  // Handle cloud attachment.
-                  console.log("Attachment is a cloud attachment.");
-                  break;
-              default:
-                  // Handle attachment formats that are not supported.
-          }
-      }
-
-      ```
     name: 'getAttachmentContentAsync(attachmentId, callback)'
     fullName: 'getAttachmentContentAsync(attachmentId, callback)'
     langs:
@@ -1556,32 +1559,6 @@ items:
 
       #### Examples
 
-
-      ```javascript
-
-      var item = Office.context.mailbox.item;
-
-      var outputString = "";
-
-      item.getAttachmentsAsync(callback);
-
-
-      function callback(result) {
-          if (result.value.length > 0) {
-              for (i = 0 ; i < result.value.length ; i++) {
-                  var attachment = result.value [i];
-                  outputString += "<BR>" + i + ". Name: ";
-                  outputString += attachment.name;
-                  outputString += "<BR>ID: " + attachment.id;
-                  outputString += "<BR>contentType: " + attachment.contentType;
-                  outputString += "<BR>size: " + attachment.size;
-                  outputString += "<BR>attachmentType: " + attachment.attachmentType;
-                  outputString += "<BR>isInline: " + attachment.isInline;
-              }
-          }
-      }
-
-      ```
 
       ```javascript
 
@@ -2234,18 +2211,6 @@ items:
 
       ```javascript
 
-      Office.context.mailbox.item.getSharedPropertiesAsync(callback);
-
-
-      function callback (asyncResult) {
-          var context = asyncResult.context;
-          var sharedProperties = asyncResult.value;
-      }
-
-      ```
-
-      ```javascript
-
       if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
         console.error("Try this sample on a message from a shared folder.");
         return;
@@ -2600,18 +2565,6 @@ items:
 
       #### Examples
 
-
-      ```javascript
-
-      // Get all notifications.
-
-      Office.context.mailbox.item.notificationMessages.getAllAsync(
-          function (asyncResult) {
-              console.log(JSON.stringify(asyncResult));
-          }
-      );
-
-      ```
 
       ```javascript
 
@@ -3113,25 +3066,6 @@ items:
       var seriesId = Office.context.mailbox.item.seriesId;
 
 
-      // The seriesId property returns null for items that do
-
-      // not have parent items (such as single appointments,
-
-      // series items, or meeting requests) and returns
-
-      // undefined for messages that are not meeting requests.
-
-      var isSeriesInstance = (seriesId != null);
-
-      console.log("SeriesId is " + seriesId 
-          + " and isSeriesInstance is " + isSeriesInstance);
-      ```
-
-      ```javascript
-
-      var seriesId = Office.context.mailbox.item.seriesId;
-
-
       if (seriesId === undefined) {
         console.log("This is a message that's not a meeting request.");
       } else if (seriesId === null) {
@@ -3391,6 +3325,23 @@ items:
           for (var i = 0; i < msgTo.length; i++) {
             console.log(msgTo[i].displayName + " (" + msgTo[i].emailAddress + ")");
           }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      var email = $("#emailTo")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.to.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting To field.");
         } else {
           console.error(asyncResult.error);
         }

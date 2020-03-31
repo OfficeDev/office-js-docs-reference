@@ -1073,18 +1073,6 @@ items:
 
       ```javascript
 
-      // Get all notifications.
-
-      Office.context.mailbox.item.notificationMessages.getAllAsync(
-          function (asyncResult) {
-              console.log(JSON.stringify(asyncResult));
-          }
-      );
-
-      ```
-
-      ```javascript
-
       var id = $("#notificationId").val();
 
       var details =
@@ -1229,6 +1217,23 @@ items:
       });
 
       ```
+
+      ```javascript
+
+      var email = $("#emailOptional")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.optionalAttendees.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting optional attendees field.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: optionalAttendees
     fullName: optionalAttendees
     langs:
@@ -1262,16 +1267,6 @@ items:
 
       #### Examples
 
-
-      ```javascript
-
-      Office.context.mailbox.item.organizer.getAsync(
-          function(asyncResult) {
-              console.log(JSON.stringify(asyncResult));
-          }
-      );
-
-      ```
 
       ```javascript
 
@@ -1688,6 +1683,23 @@ items:
       });
 
       ```
+
+      ```javascript
+
+      var email = $("#emailRequired")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.requiredAttendees.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting required attendees field.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
     name: requiredAttendees
     fullName: requiredAttendees
     langs:
@@ -1920,25 +1932,6 @@ items:
 
       #### Examples
 
-
-      ```javascript
-
-      var seriesId = Office.context.mailbox.item.seriesId;
-
-
-      // The seriesId property returns null for items that do
-
-      // not have parent items (such as single appointments,
-
-      // series items, or meeting requests) and returns
-
-      // undefined for messages that are not meeting requests.
-
-      var isSeriesInstance = (seriesId != null);
-
-      console.log("SeriesId is " + seriesId 
-          + " and isSeriesInstance is " + isSeriesInstance);
-      ```
 
       ```javascript
 

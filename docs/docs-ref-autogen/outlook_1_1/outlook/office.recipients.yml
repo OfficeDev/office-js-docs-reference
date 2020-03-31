@@ -243,28 +243,10 @@ items:
 
       ```javascript
 
-      // The following example gets the optional attendees of a meeting.
-
-      Office.context.mailbox.item.optionalAttendees.getAsync(function(result) {
-          if (result.error) {
-              console.log(result.error);
-          } else {
-              var msg = "";
-              result.value.forEach(function(recip, index) {
-                  msg = msg + recip.displayName + " (" + recip.emailAddress + ");";
-              });
-              console.log(msg);
-          }
-      });
-
-      ```
-
-      ```javascript
-
       Office.context.mailbox.item.bcc.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           var msgBcc = asyncResult.value;
-          console.log("Message being bcc'd to:");
+          console.log("Message being blind-copied to:");
           for (var i = 0; i < msgBcc.length; i++) {
             console.log(msgBcc[i].displayName + " (" + msgBcc[i].emailAddress + ")");
           }
@@ -489,6 +471,91 @@ items:
           } else {
               console.log("Recipients overwritten");
           }
+      });
+
+      ```
+
+      ```javascript
+
+      var email = $("#emailBcc")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.bcc.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting Bcc field.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      var email = $("#emailCc")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.cc.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting Cc field.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      var email = $("#emailOptional")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.optionalAttendees.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting optional attendees field.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      var email = $("#emailRequired")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.requiredAttendees.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting required attendees field.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      var email = $("#emailTo")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.to.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting To field.");
+        } else {
+          console.error(asyncResult.error);
+        }
       });
 
       ```

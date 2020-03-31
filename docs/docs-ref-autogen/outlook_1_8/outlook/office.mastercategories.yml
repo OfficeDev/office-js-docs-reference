@@ -124,19 +124,19 @@ items:
       ```javascript
 
       var masterCategoriesToAdd = [
-          {
-              "displayName": "Urgent!",
-              "color": Office.MailboxEnums.CategoryColor.Preset0
-          }
+        {
+          displayName: "TestCategory",
+          color: Office.MailboxEnums.CategoryColor.Preset0
+        }
       ];
 
 
-      Office.context.mailbox.masterCategories.addAsync(masterCategoriesToAdd, function (asyncResult) {
-          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-              console.log("Successfully added categories to master list");
-          } else {
-              console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
-          }
+      Office.context.mailbox.masterCategories.addAsync(masterCategoriesToAdd, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Successfully added categories to master list");
+        } else {
+          console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
+        }
       });
 
       ```
@@ -225,27 +225,12 @@ items:
 
       ```javascript
 
-      Office.context.mailbox.masterCategories.getAsync(function (asyncResult) {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              console.log("Action failed with error: " + asyncResult.error.message);
-          } else {
-              var masterCategories = asyncResult.value;
-              console.log("Master categories:");
-              masterCategories.forEach(function (item) {
-                  console.log("-- " + JSON.stringify(item));
-              });
-          }
-      });
-
-      ```
-
-      ```javascript
-
       Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           var categories = asyncResult.value;
-          if (categories) {
-            console.log(categories);
+          if (categories && categories.length > 0) {
+            console.log("Master categories:");
+            console.log(JSON.stringify(categories));
           } else {
             console.log("There are no categories in the master list.");
           }
@@ -351,15 +336,15 @@ items:
 
       ```javascript
 
-      var masterCategoriesToRemove = ["Urgent!"];
+      var masterCategoriesToRemove = ["TestCategory"];
 
 
-      Office.context.mailbox.masterCategories.removeAsync(masterCategoriesToRemove, function (asyncResult) {
-          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-              console.log("Successfully removed categories from master list");
-          } else {
-              console.log("masterCategories.removeAsync call failed with error: " + asyncResult.error.message);
-          }
+      Office.context.mailbox.masterCategories.removeAsync(masterCategoriesToRemove, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Successfully removed categories from master list");
+        } else {
+          console.log("masterCategories.removeAsync call failed with error: " + asyncResult.error.message);
+        }
       });
 
       ```

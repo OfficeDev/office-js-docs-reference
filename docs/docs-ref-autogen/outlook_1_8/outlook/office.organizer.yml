@@ -92,16 +92,6 @@ items:
 
       ```javascript
 
-      Office.context.mailbox.item.organizer.getAsync(
-          function(asyncResult) {
-              console.log(JSON.stringify(asyncResult));
-          }
-      );
-
-      ```
-
-      ```javascript
-
       Office.context.mailbox.item.organizer.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           var apptOrganizer = asyncResult.value;
