@@ -495,10 +495,27 @@ items:
       Office.context.mailbox.item.bcc.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           var msgBcc = asyncResult.value;
-          console.log("Message being bcc'd to:");
+          console.log("Message being blind-copied to:");
           for (var i = 0; i < msgBcc.length; i++) {
             console.log(msgBcc[i].displayName + " (" + msgBcc[i].emailAddress + ")");
           }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      var email = $("#emailBcc")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.bcc.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting Bcc field.");
         } else {
           console.error(asyncResult.error);
         }
@@ -617,6 +634,23 @@ items:
           for (var i = 0; i < msgCc.length; i++) {
             console.log(msgCc[i].displayName + " (" + msgCc[i].emailAddress + ")");
           }
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      var email = $("#emailCc")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.cc.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting Cc field.");
         } else {
           console.error(asyncResult.error);
         }
