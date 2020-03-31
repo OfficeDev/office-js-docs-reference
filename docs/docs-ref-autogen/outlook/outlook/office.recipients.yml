@@ -264,7 +264,7 @@ items:
       Office.context.mailbox.item.bcc.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           var msgBcc = asyncResult.value;
-          console.log("Message being bcc'd to:");
+          console.log("Message being blind-copied to:");
           for (var i = 0; i < msgBcc.length; i++) {
             console.log(msgBcc[i].displayName + " (" + msgBcc[i].emailAddress + ")");
           }
@@ -489,6 +489,74 @@ items:
           } else {
               console.log("Recipients overwritten");
           }
+      });
+
+      ```
+
+      ```javascript
+
+      var email = $("#emailBcc")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.bcc.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting Bcc field.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      var email = $("#emailCc")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.cc.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting Cc field.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      var email = $("#emailOptional")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.optionalAttendees.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting optional attendees field.");
+        } else {
+          console.error(asyncResult.error);
+        }
+      });
+
+      ```
+
+      ```javascript
+
+      var email = $("#emailRequired")
+        .val()
+        .toString();
+      var emailArray = [email];
+
+      Office.context.mailbox.item.requiredAttendees.setAsync(emailArray, function(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+          console.log("Succeeded in setting required attendees field.");
+        } else {
+          console.error(asyncResult.error);
+        }
       });
 
       ```
