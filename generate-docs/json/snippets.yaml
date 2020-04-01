@@ -6559,13 +6559,7 @@
       }
     });
 'Office.AppointmentCompose#itemType:member':
-  - >-
-    if (Office.context.mailbox.item.itemType ===
-    Office.MailboxEnums.ItemType.Appointment) {
-        // Do something.
-    } else {
-        // Do something else.
-    }
+  - 'console.log(`Item type: ${Office.context.mailbox.item.itemType}`);'
 'Office.AppointmentCompose#loadCustomPropertiesAsync:member(1)':
   - >-
     // The following example shows how to use the loadCustomPropertiesAsync
@@ -6944,35 +6938,42 @@
       }
     });
 'Office.AppointmentCompose#start:member':
-  - >-
-    // The following example sets the start time of an appointment in compose
-    mode by
-
-    // using the `setAsync` method of the `Time` object.
-
-    var startTime = new Date("3/14/2015");
-
-    var options = {
-        // Pass information that can be used in the callback.
-        asyncContext: {verb: "Set"}
-    };
-
-    Office.context.mailbox.item.start.setAsync(startTime, options,
-    function(result) {
-        if (result.error) {
-            console.debug(result.error);
-        } else {
-            // Access the asyncContext that was passed to the setAsync function.
-            console.debug("Start Time " + result.asyncContext.verb);
-        }
+  - |-
+    Office.context.mailbox.item.start.getAsync((result) => {
+      if (result.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Action failed with message ${result.error.message}`);
+        return;
+      }
+      console.log(`Appointment starts: ${result.value}`);
+    });
+  - |-
+    var start = new Date(); // Represents current date and time.
+    start.setDate(start.getDate() + 2); // Add 2 days to current date.
+    Office.context.mailbox.item.start.setAsync(start, (result) => {
+      if (result.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Action failed with message ${result.error.message}`);
+        return;
+      }
+      console.log(`Successfully set start date and time to ${start}`);
     });
 'Office.AppointmentCompose#subject:member':
   - |-
-    Office.context.mailbox.item.subject.getAsync(callback);
-
-    function callback(asyncResult) {
-        var subject = asyncResult.value;
-    }
+    Office.context.mailbox.item.subject.getAsync((result) => {
+      if (result.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Action failed with message ${result.error.message}`);
+        return;
+      }
+      console.log(`Subject: ${result.value}`);
+    });
+  - |-
+    let subject = "Hello World!";
+    Office.context.mailbox.item.subject.setAsync(subject, (result) => {
+      if (result.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Action failed with message ${result.error.message}`);
+        return;
+      }
+      console.log(`Successfully set subject to ${subject}`);
+    });
 'Office.AppointmentRead#addHandlerAsync:member(2)':
   - >-
     function myHandlerFunction(eventarg) {
@@ -7632,9 +7633,7 @@
     var isAllDayEvent = Office.context.mailbox.item.isAllDayEvent;
     console.log("Is this an all-day event? " + isAllDayEvent);
 'Office.AppointmentRead#itemClass:member':
-  - |-
-    var itemClass = Office.context.mailbox.item.itemClass;
-    console.log("Item class: " + itemClass);
+  - 'console.log(`Item class: ${Office.context.mailbox.item.itemClass}`);'
 'Office.AppointmentRead#itemId:member':
   - |-
     // The following code checks for the presence of an item
@@ -7650,13 +7649,7 @@
         });
     }
 'Office.AppointmentRead#itemType:member':
-  - >-
-    if (Office.context.mailbox.item.itemType ===
-    Office.MailboxEnums.ItemType.Appointment) {
-        // Do something.
-    } else {
-        // Do something else.
-    }
+  - 'console.log(`Item type: ${Office.context.mailbox.item.itemType}`);'
 'Office.AppointmentRead#loadCustomPropertiesAsync:member(1)':
   - >-
     // The following example shows how to use the loadCustomPropertiesAsync
@@ -7838,25 +7831,9 @@
       console.log("This is an instance belonging to series with ID " + seriesId);
     }
 'Office.AppointmentRead#start:member':
-  - |-
-    var start = Office.context.mailbox.item.start;
-    console.log("Appointment start: " + JSON.stringify(start));
+  - 'console.log(`Appointment starts: ${Office.context.mailbox.item.start}`);'
 'Office.AppointmentRead#subject:member':
-  - |-
-    // The following JavaScript code example shows how to access the
-    // `subject` property of the current item in Outlook.
-
-    // The initialize function is required for all apps.
-    Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
-        $(document).ready(function () {
-            // After the DOM is loaded, app-specific code can run.
-            var item = Office.context.mailbox.item;
-            var subject = item.subject;
-            // Continue with processing the subject of the
-            // current item, which can be a message or appointment.
-        });
-    };
+  - 'console.log(`Subject: ${Office.context.mailbox.item.subject}`);'
 'Office.AsyncResult#asyncContext:member':
   - |-
     function getDataWithContext() {
@@ -12712,13 +12689,7 @@
       }
     });
 'Office.MessageCompose#itemType:member':
-  - >-
-    if (Office.context.mailbox.item.itemType ===
-    Office.MailboxEnums.ItemType.Message) {
-        // Do something.
-    } else {
-        // Do something else.
-    }
+  - 'console.log(`Item type: ${Office.context.mailbox.item.itemType}`);'
 'Office.MessageCompose#loadCustomPropertiesAsync:member(1)':
   - >-
     // The following example shows how to use the loadCustomPropertiesAsync
@@ -12901,11 +12872,22 @@
     });
 'Office.MessageCompose#subject:member':
   - |-
-    Office.context.mailbox.item.subject.getAsync(callback);
-
-    function callback(asyncResult) {
-        var subject = asyncResult.value;
-    }
+    Office.context.mailbox.item.subject.getAsync((result) => {
+      if (result.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Action failed with message ${result.error.message}`);
+        return;
+      }
+      console.log(`Subject: ${result.value}`);
+    });
+  - |-
+    let subject = "Hello World!";
+    Office.context.mailbox.item.subject.setAsync(subject, (result) => {
+      if (result.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Action failed with message ${result.error.message}`);
+        return;
+      }
+      console.log(`Successfully set subject to ${subject}`);
+    });
 'Office.MessageCompose#to:member':
   - >-
     Office.context.mailbox.item.to.setAsync( ['alice@contoso.com',
@@ -13615,13 +13597,11 @@
       console.log(result.value);
     });
 'Office.MessageRead#internetMessageId:member':
-  - |-
-    var internetMessageId = Office.context.mailbox.item.internetMessageId;
-    console.log("internetMessageId: " + internetMessageId);
+  - >-
+    console.log(`Internet message ID:
+    ${Office.context.mailbox.item.internetMessageId}`);
 'Office.MessageRead#itemClass:member':
-  - |-
-    var itemClass = Office.context.mailbox.item.itemClass;
-    console.log("Item class: " + itemClass);
+  - 'console.log(`Item class: ${Office.context.mailbox.item.itemClass}`);'
 'Office.MessageRead#itemId:member':
   - |-
     // The following code checks for the presence of an item
@@ -13637,13 +13617,7 @@
         });
     }
 'Office.MessageRead#itemType:member':
-  - >-
-    if (Office.context.mailbox.item.itemType ===
-    Office.MailboxEnums.ItemType.Message) {
-        // Do something.
-    } else {
-        // Do something else.
-    }
+  - 'console.log(`Item type: ${Office.context.mailbox.item.itemType}`);'
 'Office.MessageRead#loadCustomPropertiesAsync:member(1)':
   - >-
     // The following example shows how to use the loadCustomPropertiesAsync
@@ -13790,22 +13764,10 @@
     } else {
       console.log("This is an instance belonging to series with ID " + seriesId);
     }
+'Office.MessageRead#start:member':
+  - 'console.log(`Appointment starts: ${Office.context.mailbox.item.start}`);'
 'Office.MessageRead#subject:member':
-  - |-
-    // The following JavaScript code example shows how to access the
-    // `subject` property of the current item in Outlook.
-
-    // The initialize function is required for all apps.
-    Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
-        $(document).ready(function () {
-            // After the DOM is loaded, app-specific code can run.
-            var item = Office.context.mailbox.item;
-            var subject = item.subject;
-            // Continue with processing the subject of the current item,
-            // which can be a message or appointment.
-        });
-    };
+  - 'console.log(`Subject: ${Office.context.mailbox.item.subject}`);'
 'Office.MessageRead#to:member':
   - |-
     var msgTo = Office.context.mailbox.item.to;
@@ -14722,13 +14684,12 @@
     });
 'Office.Time#getAsync:member(2)':
   - |-
-    Office.context.mailbox.item.start.getAsync(function (asyncResult) {
-        if (asyncResult.status === "failed") {
-            console.log("Action failed with error: " + asyncResult.error.message);
-        }
-        else {
-            console.log("Start date and time: " + asyncResult.value);
-        }
+    Office.context.mailbox.item.start.getAsync((result) => {
+      if (result.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Action failed with message ${result.error.message}`);
+        return;
+      }
+      console.log(`Appointment starts: ${result.value}`);
     });
 'Office.Time#setAsync:member(1)':
   - >-
@@ -14747,6 +14708,17 @@
             // Access the asyncContext that was passed to the setAsync function.
             console.debug("Start Time " + result.asyncContext.verb);
         }
+    });
+'Office.Time#setAsync:member(2)':
+  - |-
+    var start = new Date(); // Represents current date and time.
+    start.setDate(start.getDate() + 2); // Add 2 days to current date.
+    Office.context.mailbox.item.start.setAsync(start, (result) => {
+      if (result.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Action failed with message ${result.error.message}`);
+        return;
+      }
+      console.log(`Successfully set start date and time to ${start}`);
     });
 'Office.UserProfile#accountType:member':
   - console.log(Office.context.mailbox.userProfile.accountType);
