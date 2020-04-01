@@ -98,13 +98,12 @@ items:
 
       ```javascript
 
-      Office.context.mailbox.item.start.getAsync(function (asyncResult) {
-          if (asyncResult.status === "failed") {
-              console.log("Action failed with error: " + asyncResult.error.message);
-          }
-          else {
-              console.log("Start date and time: " + asyncResult.value);
-          }
+      Office.context.mailbox.item.start.getAsync((result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Action failed with message ${result.error.message}`);
+          return;
+        }
+        console.log(`Appointment starts: ${result.value}`);
       });
 
       ```
@@ -239,6 +238,26 @@ items:
 
 
       - `InvalidEndTime`<!-- -->: The appointment end time is before the appointment start time.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      var start = new Date(); // Represents current date and time.
+
+      start.setDate(start.getDate() + 2); // Add 2 days to current date.
+
+      Office.context.mailbox.item.start.setAsync(start, (result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Action failed with message ${result.error.message}`);
+          return;
+        }
+        console.log(`Successfully set start date and time to ${start}`);
+      });
+
+      ```
     name: 'setAsync(dateTime, callback)'
     fullName: 'setAsync(dateTime, callback)'
     langs:
