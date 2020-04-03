@@ -8371,13 +8371,6 @@ Office.AppointmentCompose#isAllDayEvent:member:
                 console.log("Failed to get if this is an all-day event. Error: " + JSON.stringify(asyncResult.error));
             }
         });
-Office.AppointmentCompose#itemType:member:
-  - |-
-    if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Appointment) {
-        // Do something.
-    } else {
-        // Do something else.
-    }
 Office.AppointmentCompose#loadCustomPropertiesAsync:member(1):
   - |-
     // The following example shows how to use the loadCustomPropertiesAsync method
@@ -8514,30 +8507,6 @@ Office.AppointmentCompose#setSelectedDataAsync:member(1):
 Office.AppointmentCompose#setSelectedDataAsync:member(2):
   - |-
     Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
-Office.AppointmentCompose#start:member:
-  - |-
-    // The following example sets the start time of an appointment in compose mode by
-    // using the `setAsync` method of the `Time` object.
-    var startTime = new Date("3/14/2015");
-    var options = {
-        // Pass information that can be used in the callback.
-        asyncContext: {verb: "Set"}
-    };
-    Office.context.mailbox.item.start.setAsync(startTime, options, function(result) {
-        if (result.error) {
-            console.debug(result.error);
-        } else {
-            // Access the asyncContext that was passed to the setAsync function.
-            console.debug("Start Time " + result.asyncContext.verb);
-        }
-    });
-Office.AppointmentCompose#subject:member:
-  - |-
-    Office.context.mailbox.item.subject.getAsync(callback);
-
-    function callback(asyncResult) {
-        var subject = asyncResult.value;
-    }
 Office.AppointmentRead#addHandlerAsync:member(2):
   - |-
     function myHandlerFunction(eventarg) {
@@ -8832,10 +8801,6 @@ Office.AppointmentRead#isAllDayEvent:member:
   - |-
     var isAllDayEvent = Office.context.mailbox.item.isAllDayEvent;
     console.log("Is this an all-day event? " + isAllDayEvent);
-Office.AppointmentRead#itemClass:member:
-  - |-
-    var itemClass = Office.context.mailbox.item.itemClass;
-    console.log("Item class: " + itemClass);
 Office.AppointmentRead#itemId:member:
   - |-
     // The following code checks for the presence of an item
@@ -8849,13 +8814,6 @@ Office.AppointmentRead#itemId:member:
         Office.context.mailbox.item.saveAsync(function(result) {
             itemId = result.value;
         });
-    }
-Office.AppointmentRead#itemType:member:
-  - |-
-    if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Appointment) {
-        // Do something.
-    } else {
-        // Do something else.
     }
 Office.AppointmentRead#loadCustomPropertiesAsync:member(1):
   - |-
@@ -8897,26 +8855,6 @@ Office.AppointmentRead#sensitivity:member:
   - |-
     var sensitivity = Office.context.mailbox.item.sensitivity;
     console.log("Sensitivity: " + sensitivity);
-Office.AppointmentRead#start:member:
-  - |-
-    var start = Office.context.mailbox.item.start;
-    console.log("Appointment start: " + JSON.stringify(start));
-Office.AppointmentRead#subject:member:
-  - |-
-    // The following JavaScript code example shows how to access the
-    // `subject` property of the current item in Outlook.
-
-    // The initialize function is required for all apps.
-    Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
-        $(document).ready(function () {
-            // After the DOM is loaded, app-specific code can run.
-            var item = Office.context.mailbox.item;
-            var subject = item.subject;
-            // Continue with processing the subject of the
-            // current item, which can be a message or appointment.
-        });
-    };
 Office.AttachmentContent#format:member:
   - |-
     var item = Office.context.mailbox.item;
@@ -9519,13 +9457,6 @@ Office.MessageCompose#internetHeaders:member:
         var dictionary = asyncResult.value;
         var header1_value = dictionary["header1"];
     }
-Office.MessageCompose#itemType:member:
-  - |-
-    if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Message) {
-        // Do something.
-    } else {
-        // Do something else.
-    }
 Office.MessageCompose#loadCustomPropertiesAsync:member(1):
   - |-
     // The following example shows how to use the loadCustomPropertiesAsync method
@@ -9587,13 +9518,6 @@ Office.MessageCompose#setSelectedDataAsync:member(1):
 Office.MessageCompose#setSelectedDataAsync:member(2):
   - |-
     Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
-Office.MessageCompose#subject:member:
-  - |-
-    Office.context.mailbox.item.subject.getAsync(callback);
-
-    function callback(asyncResult) {
-        var subject = asyncResult.value;
-    }
 Office.MessageCompose#to:member:
   - |-
     Office.context.mailbox.item.to.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
@@ -9897,14 +9821,6 @@ Office.MessageRead#getSelectedRegExMatches:member(1):
     var selectedMatches = Office.context.mailbox.item.getSelectedRegExMatches();
     var fruits = selectedMatches.fruits;
     var veggies = selectedMatches.veggies;
-Office.MessageRead#internetMessageId:member:
-  - |-
-    var internetMessageId = Office.context.mailbox.item.internetMessageId;
-    console.log("internetMessageId: " + internetMessageId);
-Office.MessageRead#itemClass:member:
-  - |-
-    var itemClass = Office.context.mailbox.item.itemClass;
-    console.log("Item class: " + itemClass);
 Office.MessageRead#itemId:member:
   - |-
     // The following code checks for the presence of an item
@@ -9918,13 +9834,6 @@ Office.MessageRead#itemId:member:
         Office.context.mailbox.item.saveAsync(function(result) {
             itemId = result.value;
         });
-    }
-Office.MessageRead#itemType:member:
-  - |-
-    if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Message) {
-        // Do something.
-    } else {
-        // Do something else.
     }
 Office.MessageRead#loadCustomPropertiesAsync:member(1):
   - |-
@@ -9958,22 +9867,6 @@ Office.MessageRead#normalizedSubject:member:
   - |-
     var normalizedSubject = Office.context.mailbox.item.normalizedSubject;
     console.log("Normalized subject: " + normalizedSubject);
-Office.MessageRead#subject:member:
-  - |-
-    // The following JavaScript code example shows how to access the
-    // `subject` property of the current item in Outlook.
-
-    // The initialize function is required for all apps.
-    Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
-        $(document).ready(function () {
-            // After the DOM is loaded, app-specific code can run.
-            var item = Office.context.mailbox.item;
-            var subject = item.subject;
-            // Continue with processing the subject of the current item,
-            // which can be a message or appointment.
-        });
-    };
 Office.NotificationMessages#getAllAsync:member(2):
   - |-
     // Get all notifications.
@@ -10304,16 +10197,6 @@ Office.TaskSuggestion:interface:
     taskSuggestions.forEach(function (taskSuggestion) {
         console.log("Assignees: " + JSON.stringify(taskSuggestion.assignees));
         console.log("Task: " + JSON.stringify(taskSuggestion.taskString));
-    });
-Office.Time#getAsync:member(2):
-  - |-
-    Office.context.mailbox.item.start.getAsync(function (asyncResult) {
-        if (asyncResult.status === "failed") {
-            console.log("Action failed with error: " + asyncResult.error.message);
-        }
-        else {
-            console.log("Start date and time: " + asyncResult.value);
-        }
     });
 Office.Time#setAsync:member(1):
   - |-

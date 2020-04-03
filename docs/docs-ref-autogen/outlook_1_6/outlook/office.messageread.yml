@@ -1318,9 +1318,7 @@ items:
 
       ```javascript
 
-      var internetMessageId = Office.context.mailbox.item.internetMessageId;
-
-      console.log("internetMessageId: " + internetMessageId);
+      console.log(`Internet message ID: ${Office.context.mailbox.item.internetMessageId}`);
 
       ```
     name: internetMessageId
@@ -1369,9 +1367,7 @@ items:
 
       ```javascript
 
-      var itemClass = Office.context.mailbox.item.itemClass;
-
-      console.log("Item class: " + itemClass);
+      console.log(`Item class: ${Office.context.mailbox.item.itemClass}`);
 
       ```
     name: itemClass
@@ -1472,11 +1468,7 @@ items:
 
       ```javascript
 
-      if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Message) {
-          // Do something.
-      } else {
-          // Do something else.
-      }
+      console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
 
       ```
     name: itemType
@@ -1824,6 +1816,16 @@ items:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Message Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      console.log(`Appointment starts: ${Office.context.mailbox.item.start}`);
+
+      ```
     name: start
     fullName: start
     langs:
@@ -1860,23 +1862,7 @@ items:
 
       ```javascript
 
-      // The following JavaScript code example shows how to access the
-
-      // `subject` property of the current item in Outlook.
-
-
-      // The initialize function is required for all apps.
-
-      Office.initialize = function () {
-          // Checks for the DOM to load using the jQuery ready function.
-          $(document).ready(function () {
-              // After the DOM is loaded, app-specific code can run.
-              var item = Office.context.mailbox.item;
-              var subject = item.subject;
-              // Continue with processing the subject of the current item,
-              // which can be a message or appointment.
-          });
-      };
+      console.log(`Subject: ${Office.context.mailbox.item.subject}`);
 
       ```
     name: subject
