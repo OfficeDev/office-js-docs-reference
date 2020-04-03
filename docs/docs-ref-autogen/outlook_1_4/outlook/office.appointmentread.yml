@@ -185,9 +185,7 @@ items:
 
       ```javascript
 
-      var dateTimeCreated = Office.context.mailbox.item.dateTimeCreated;
-
-      console.log("Date and time created: " + dateTimeCreated);
+      console.log(`Creation date and time: ${Office.context.mailbox.item.dateTimeCreated}`);
 
       ```
     name: dateTimeCreated
@@ -221,9 +219,7 @@ items:
 
       ```javascript
 
-      var dateTimeModified = Office.context.mailbox.item.dateTimeModified;
-
-      console.log("Date and time modified: " + dateTimeModified);
+      console.log(`Date and time item last modified: ${Office.context.mailbox.item.dateTimeModified}`);
 
       ```
     name: dateTimeModified
@@ -574,9 +570,7 @@ items:
 
       ```javascript
 
-      var end = Office.context.mailbox.item.end;
-
-      console.log("Appointment end: " + end);
+      console.log(`Appointment ends: ${Office.context.mailbox.item.end}`);
 
       ```
     name: end
@@ -1268,6 +1262,12 @@ items:
       console.log("location: " + location);
 
       ```
+
+      ```javascript
+
+      console.log(`Appointment location: ${Office.context.mailbox.item.location}`);
+
+      ```
     name: location
     fullName: location
     langs:
@@ -1302,9 +1302,7 @@ items:
 
       ```javascript
 
-      var normalizedSubject = Office.context.mailbox.item.normalizedSubject;
-
-      console.log("Normalized subject: " + normalizedSubject);
+      console.log(`Normalized subject: ${Office.context.mailbox.item.normalizedSubject}`);
 
       ```
     name: normalizedSubject

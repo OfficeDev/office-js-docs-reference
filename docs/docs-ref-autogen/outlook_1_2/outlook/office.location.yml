@@ -107,6 +107,22 @@ items:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.location.getAsync((result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Action failed with message ${result.error.message}`);
+          return;
+        }
+        console.log(`Appointment location: ${result.value}`);
+      });
+
+      ```
     name: getAsync(callback)
     fullName: getAsync(callback)
     langs:
@@ -213,14 +229,15 @@ items:
 
       ```javascript
 
-      Office.context.mailbox.item.location.setAsync(
-          "Room 1",
-          function (asyncResult) {
-              if (asyncResult.status === "failed") {
-                  console.log("Action failed with error: " + asyncResult.error.message);
-              }
-          }
-      );
+      var location = "my office";
+
+      Office.context.mailbox.item.location.setAsync(location, (result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Action failed with message ${result.error.message}`);
+          return;
+        }
+        console.log(`Successfully set location to ${location}`);
+      });
 
       ```
     name: 'setAsync(location, callback)'
