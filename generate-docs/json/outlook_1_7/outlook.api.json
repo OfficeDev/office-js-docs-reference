@@ -17186,7 +17186,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "recurrenceProperties: "
+                      "text": "recurrenceProperties?: "
                     },
                     {
                       "kind": "Reference",
@@ -17212,7 +17212,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "recurrenceTimeZone: "
+                      "text": "recurrenceTimeZone?: "
                     },
                     {
                       "kind": "Reference",
@@ -17529,7 +17529,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "dayOfMonth: "
+                      "text": "dayOfMonth?: "
                     },
                     {
                       "kind": "Content",
@@ -17554,7 +17554,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "dayOfWeek: "
+                      "text": "dayOfWeek?: "
                     },
                     {
                       "kind": "Reference",
@@ -17584,7 +17584,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "days: "
+                      "text": "days?: "
                     },
                     {
                       "kind": "Reference",
@@ -17614,7 +17614,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "firstDayOfWeek: "
+                      "text": "firstDayOfWeek?: "
                     },
                     {
                       "kind": "Reference",
@@ -17669,7 +17669,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "month: "
+                      "text": "month?: "
                     },
                     {
                       "kind": "Reference",
@@ -17699,7 +17699,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "weekNumber: "
+                      "text": "weekNumber?: "
                     },
                     {
                       "kind": "Reference",
@@ -17775,7 +17775,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "offset: "
+                      "text": "offset?: "
                     },
                     {
                       "kind": "Content",

@@ -6331,35 +6331,90 @@
             console.debug("End Time " + result.asyncContext.verb);
         }
     });
+  - |-
+    Office.context.mailbox.item.end.getAsync((result) => {
+      if (result.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Action failed with message ${result.error.message}`);
+        return;
+      }
+      console.log(`Appointment ends: ${result.value}`);
+    });
+  - |-
+    Office.context.mailbox.item.start.getAsync((result) => {
+      if (result.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Get start date failed with message ${result.error.message}`);
+        return;
+      }
+
+      var end = result.value; // Set end to current start date and time.
+      end.setDate(end.getDate() + 1); // Set end as 1 day later than start date.
+      Office.context.mailbox.item.end.setAsync(end, (result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Set end date failed with message ${result.error.message}`);
+          return;
+        }
+        console.log(`Successfully set end date and time to ${end}`);
+      });
+    });
 'Office.AppointmentCompose#enhancedLocation:member':
   - |-
+    Office.context.mailbox.item.enhancedLocation.getAsync((result) => {
+      if (result.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Failed to get locations. Error message: ${result.error.message}`);
+        return;
+      }
+      var places = result.value;
+      if (places && places.length > 0) {
+        result.value.forEach(function(place) {
+          console.log(`Location: ${place.displayName} (type: ${place.locationIdentifier.type})`);
+          if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
+            console.log("Email address: " + place.emailAddress);
+          }
+        });
+      } else {
+        console.log("There are no locations.");
+      }
+    });
+  - >-
     var locations = [
-        {
-            "id": "Contoso",
-            "type": Office.MailboxEnums.LocationType.Custom
-        }
+      {
+        id: "Contoso",
+        type: Office.MailboxEnums.LocationType.Custom
+      },
+      {
+        id: "room500@test.com",
+        type: Office.MailboxEnums.LocationType.Room
+      }
     ];
-    Office.context.mailbox.item.enhancedLocation.addAsync(locations);
 
-    Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
+    Office.context.mailbox.item.enhancedLocation.addAsync(locations, (result) =>
+    {
+      if (result.status === Office.AsyncResultStatus.Succeeded) {
+        console.log(`Successfully added locations ${JSON.stringify(locations)}`);
+      } else {
+        console.error(`Failed to add locations. Error message: ${result.error.message}`);
+      }
+    });
+  - >-
+    var locations = [
+      {
+        id: "Contoso",
+        type: Office.MailboxEnums.LocationType.Custom
+      },
+      {
+        id: "room500@test.com",
+        type: Office.MailboxEnums.LocationType.Room
+      }
+    ];
 
-    function callbackFunction(asyncResult) {
-        asyncResult.value.forEach(function (place) {
-            console.log("Display name: " + place.displayName);
-            console.log("Type: " + place.locationIdentifier.type);
-            if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
-                console.log("Email address: " + place.emailAddress);
-            }
-        });
-    }
-  - |-
-    Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
-
-    function callbackFunction(asyncResult) {
-        asyncResult.value.forEach(function (currentValue) {
-            Office.context.mailbox.item.enhancedLocation.removeAsync([currentValue.locationIdentifier]);
-        });
-    }
+    Office.context.mailbox.item.enhancedLocation.removeAsync(locations, (result)
+    => {
+      if (result.status === Office.AsyncResultStatus.Succeeded) {
+        console.log(`Successfully removed locations ${JSON.stringify(locations)}`);
+      } else {
+        console.error(`Failed to remove locations. Error message: ${result.error.message}`);
+      }
+    });
 'Office.AppointmentCompose#getAttachmentContentAsync:member(1)':
   - |-
     var item = Office.context.mailbox.item;
@@ -6633,6 +6688,23 @@
         var context = asyncResult.context;
         var location = asyncResult.value;
     }
+  - |-
+    Office.context.mailbox.item.location.getAsync((result) => {
+      if (result.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Action failed with message ${result.error.message}`);
+        return;
+      }
+      console.log(`Appointment location: ${result.value}`);
+    });
+  - |-
+    var location = "my office";
+    Office.context.mailbox.item.location.setAsync(location, (result) => {
+      if (result.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Action failed with message ${result.error.message}`);
+        return;
+      }
+      console.log(`Successfully set location to ${location}`);
+    });
 'Office.AppointmentCompose#notificationMessages:member':
   - >-
     var id = $("#notificationId").val();
@@ -6744,40 +6816,6 @@
       }
     });
 'Office.AppointmentCompose#recurrence:member':
-  - >-
-    // This example gets the Recurrence object of an appointment item.
-
-    Office.context.mailbox.item.recurrence.getAsync(callback);
-
-
-    function callback(asyncResult) {
-        var context = asyncResult.context;
-        var recurrence = asyncResult.value;
-        if (!recurrence) {
-            console.log("One-time appointment or meeting");
-        } else {
-            console.log(JSON.stringify(recurrence));
-        }
-    }
-
-
-    // The following example shows the results of the getAsync call that
-    retrieves the recurrence for a series.
-
-    // NOTE: In this example, seriesTimeObject is a placeholder for the JSON
-    representing the
-
-    // recurrence.seriesTime property. You should use the SeriesTime object's
-    methods to get the
-
-    // recurrence date and time properties.
-
-    Recurrence = {
-        "recurrenceType": "weekly",
-        "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
-        "seriesTime": {seriesTimeObject},
-        "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
-    }
   - |-
     Office.context.mailbox.item.recurrence.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -6785,11 +6823,47 @@
         if (recurrence === null) {
           console.log("This is a single appointment.");
         } else {
-          console.log(recurrence);
+          console.log(`Recurrence pattern: ${JSON.stringify(recurrence)}`);
         }
       } else {
         console.error(asyncResult.error);
       }
+    });
+  - |-
+    // Important: Can only set the recurrence pattern of an appointment series.
+
+    var currentDate = new Date();
+    let seriesTimeObject : Office.SeriesTime;
+    // Set series start date to tomorrow.
+    seriesTimeObject.setStartDate(
+      currentDate.getFullYear(),
+      currentDate.getMonth(),
+      currentDate.getDay() + 1
+    );
+    // Set series end date to 1 month from now.
+    seriesTimeObject.setEndDate(
+      currentDate.getFullYear(),
+      currentDate.getMonth() + 1,
+      currentDate.getDay()
+    );
+    // Set start time to 1:30 PM.
+    seriesTimeObject.setStartTime(13, 30);
+    // Set duration to 30 minutes.
+    seriesTimeObject.setDuration(30);
+
+    let pattern : Office.Recurrence = {
+      seriesTime: seriesTimeObject,
+      recurrenceType: "weekly",
+      recurrenceProperties: { interval: 1, days: ["tue", "thu"], firstDayOfWeek: "sun" },
+      recurrenceTimeZone: { name: "Pacific Standard Time" }
+    };
+
+    Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
+      if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
+        return;
+      }
+      console.log(`Succeeded in setting recurrence pattern ${JSON.stringify(pattern)}`);
     });
 'Office.AppointmentCompose#removeAttachmentAsync:member(1)':
   - |-
@@ -7095,13 +7169,13 @@
       }
     });
 'Office.AppointmentRead#dateTimeCreated:member':
-  - |-
-    var dateTimeCreated = Office.context.mailbox.item.dateTimeCreated;
-    console.log("Date and time created: " + dateTimeCreated);
+  - >-
+    console.log(`Creation date and time:
+    ${Office.context.mailbox.item.dateTimeCreated}`);
 'Office.AppointmentRead#dateTimeModified:member':
-  - |-
-    var dateTimeModified = Office.context.mailbox.item.dateTimeModified;
-    console.log("Date and time modified: " + dateTimeModified);
+  - >-
+    console.log(`Date and time item last modified:
+    ${Office.context.mailbox.item.dateTimeModified}`);
 'Office.AppointmentRead#displayReplyAllForm:member(1)':
   - |-
     // The following code passes a string to the `displayReplyAllForm` function.
@@ -7259,22 +7333,26 @@
         }
     });
 'Office.AppointmentRead#end:member':
-  - |-
-    var end = Office.context.mailbox.item.end;
-    console.log("Appointment end: " + end);
+  - 'console.log(`Appointment ends: ${Office.context.mailbox.item.end}`);'
 'Office.AppointmentRead#enhancedLocation:member':
   - |-
-    Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
-
-    function callbackFunction(asyncResult) {
-        asyncResult.value.forEach(function (place) {
-            console.log("Display name: " + place.displayName);
-            console.log("Type: " + place.locationIdentifier.type);
-            if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
-                console.log("Email address: " + place.emailAddress);
-            }
+    Office.context.mailbox.item.enhancedLocation.getAsync((result) => {
+      if (result.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Failed to get locations. Error message: ${result.error.message}`);
+        return;
+      }
+      var places = result.value;
+      if (places && places.length > 0) {
+        result.value.forEach(function(place) {
+          console.log(`Location: ${place.displayName} (type: ${place.locationIdentifier.type})`);
+          if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
+            console.log("Email address: " + place.emailAddress);
+          }
         });
-    }
+      } else {
+        console.log("There are no locations.");
+      }
+    });
 'Office.AppointmentRead#getAttachmentContentAsync:member(1)':
   - |-
     var item = Office.context.mailbox.item;
@@ -7715,10 +7793,13 @@
   - |-
     var location = Office.context.mailbox.item.location;
     console.log("location: " + location);
+  - >-
+    console.log(`Appointment location:
+    ${Office.context.mailbox.item.location}`);
 'Office.AppointmentRead#normalizedSubject:member':
-  - |-
-    var normalizedSubject = Office.context.mailbox.item.normalizedSubject;
-    console.log("Normalized subject: " + normalizedSubject);
+  - >-
+    console.log(`Normalized subject:
+    ${Office.context.mailbox.item.normalizedSubject}`);
 'Office.AppointmentRead#notificationMessages:member':
   - >-
     var id = $("#notificationId").val();
@@ -7800,7 +7881,7 @@
     } else if (recurrence === null) {
       console.log("This is a single appointment.");
     } else {
-      console.log(recurrence);
+      console.log(JSON.stringify(recurrence));
     }
 'Office.AppointmentRead#requiredAttendees:member':
   - |-
@@ -11489,36 +11570,66 @@
         console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.recipientType);
     });
 'Office.EnhancedLocation#addAsync:member(2)':
-  - |-
+  - >-
     var locations = [
-        {
-            "id": "Contoso",
-            "type": Office.MailboxEnums.LocationType.Custom
-        }
+      {
+        id: "Contoso",
+        type: Office.MailboxEnums.LocationType.Custom
+      },
+      {
+        id: "room500@test.com",
+        type: Office.MailboxEnums.LocationType.Room
+      }
     ];
-    Office.context.mailbox.item.enhancedLocation.addAsync(locations);
+
+    Office.context.mailbox.item.enhancedLocation.addAsync(locations, (result) =>
+    {
+      if (result.status === Office.AsyncResultStatus.Succeeded) {
+        console.log(`Successfully added locations ${JSON.stringify(locations)}`);
+      } else {
+        console.error(`Failed to add locations. Error message: ${result.error.message}`);
+      }
+    });
 'Office.EnhancedLocation#getAsync:member(2)':
   - |-
-    Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
-
-    function callbackFunction(asyncResult) {
-        asyncResult.value.forEach(function (place) {
-            console.log("Display name: " + place.displayName);
-            console.log("Type: " + place.locationIdentifier.type);
-            if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
-                console.log("Email address: " + place.emailAddress);
-            }
+    Office.context.mailbox.item.enhancedLocation.getAsync((result) => {
+      if (result.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Failed to get locations. Error message: ${result.error.message}`);
+        return;
+      }
+      var places = result.value;
+      if (places && places.length > 0) {
+        result.value.forEach(function(place) {
+          console.log(`Location: ${place.displayName} (type: ${place.locationIdentifier.type})`);
+          if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
+            console.log("Email address: " + place.emailAddress);
+          }
         });
-    }
+      } else {
+        console.log("There are no locations.");
+      }
+    });
 'Office.EnhancedLocation#removeAsync:member(2)':
-  - |-
-    Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
+  - >-
+    var locations = [
+      {
+        id: "Contoso",
+        type: Office.MailboxEnums.LocationType.Custom
+      },
+      {
+        id: "room500@test.com",
+        type: Office.MailboxEnums.LocationType.Room
+      }
+    ];
 
-    function callbackFunction(asyncResult) {
-        asyncResult.value.forEach(function (currentValue) {
-            Office.context.mailbox.item.enhancedLocation.removeAsync([currentValue.locationIdentifier]);
-        });
-    }
+    Office.context.mailbox.item.enhancedLocation.removeAsync(locations, (result)
+    => {
+      if (result.status === Office.AsyncResultStatus.Succeeded) {
+        console.log(`Successfully removed locations ${JSON.stringify(locations)}`);
+      } else {
+        console.error(`Failed to remove locations. Error message: ${result.error.message}`);
+      }
+    });
 'Office.Entities#addresses:member':
   - >-
     var item = Office.context.mailbox.item;
@@ -11728,16 +11839,25 @@
         var context = asyncResult.context;
         var location = asyncResult.value;
     }
+'Office.Location#getAsync:member(2)':
+  - |-
+    Office.context.mailbox.item.location.getAsync((result) => {
+      if (result.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Action failed with message ${result.error.message}`);
+        return;
+      }
+      console.log(`Appointment location: ${result.value}`);
+    });
 'Office.Location#setAsync:member(2)':
   - |-
-    Office.context.mailbox.item.location.setAsync(
-        "Room 1",
-        function (asyncResult) {
-            if (asyncResult.status === "failed") {
-                console.log("Action failed with error: " + asyncResult.error.message);
-            }
-        }
-    );
+    var location = "my office";
+    Office.context.mailbox.item.location.setAsync(location, (result) => {
+      if (result.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Action failed with message ${result.error.message}`);
+        return;
+      }
+      console.log(`Successfully set location to ${location}`);
+    });
 'Office.LocationDetails:interface':
   - |-
     Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
@@ -12462,9 +12582,9 @@
 'Office.MessageCompose#close:member(1)':
   - Office.context.mailbox.item.close();
 'Office.MessageCompose#conversationId:member':
-  - |-
-    var conversationId = Office.context.mailbox.item.conversationId;
-    console.log("conversationId: " + conversationId);
+  - >-
+    console.log(`Conversation ID:
+    ${Office.context.mailbox.item.conversationId}`);
 'Office.MessageCompose#disableClientSignatureAsync:member(2)':
   - >-
     // Disable the client signature.
@@ -13053,17 +13173,17 @@
       console.log(msgCc[i].displayName + " (" + msgCc[i].emailAddress + ")");
     }
 'Office.MessageRead#conversationId:member':
-  - |-
-    var conversationId = Office.context.mailbox.item.conversationId;
-    console.log("conversationId: " + conversationId);
+  - >-
+    console.log(`Conversation ID:
+    ${Office.context.mailbox.item.conversationId}`);
 'Office.MessageRead#dateTimeCreated:member':
-  - |-
-    var dateTimeCreated = Office.context.mailbox.item.dateTimeCreated;
-    console.log("Date and time created: " + dateTimeCreated);
+  - >-
+    console.log(`Creation date and time:
+    ${Office.context.mailbox.item.dateTimeCreated}`);
 'Office.MessageRead#dateTimeModified:member':
-  - |-
-    var dateTimeModified = Office.context.mailbox.item.dateTimeModified;
-    console.log("Date and time modified: " + dateTimeModified);
+  - >-
+    console.log(`Date and time item last modified:
+    ${Office.context.mailbox.item.dateTimeModified}`);
 'Office.MessageRead#displayReplyAllForm:member(1)':
   - |-
     // The following code passes a string to the `displayReplyAllForm` function.
@@ -13220,6 +13340,8 @@
             }
         }
     });
+'Office.MessageRead#end:member':
+  - 'console.log(`Appointment ends: ${Office.context.mailbox.item.end}`);'
 'Office.MessageRead#from:member':
   - >-
     var msgFrom = Office.context.mailbox.item.from;
@@ -13679,10 +13801,14 @@
         console.error(`loadCustomPropertiesAsync failed with message ${result.error.message}`);
       }
     });
+'Office.MessageRead#location:member':
+  - >-
+    console.log(`Appointment location:
+    ${Office.context.mailbox.item.location}`);
 'Office.MessageRead#normalizedSubject:member':
-  - |-
-    var normalizedSubject = Office.context.mailbox.item.normalizedSubject;
-    console.log("Normalized subject: " + normalizedSubject);
+  - >-
+    console.log(`Normalized subject:
+    ${Office.context.mailbox.item.normalizedSubject}`);
 'Office.MessageRead#notificationMessages:member':
   - >-
     var id = $("#notificationId").val();
@@ -13745,7 +13871,7 @@
     } else if (recurrence === null) {
       console.log("This is a single appointment.");
     } else {
-      console.log(recurrence);
+      console.log(JSON.stringify(recurrence));
     }
 'Office.MessageRead#sender:member':
   - >-
@@ -14086,40 +14212,6 @@
       }
     });
 'Office.Recurrence#getAsync:member(2)':
-  - >-
-    // This example gets the Recurrence object of an appointment item.
-
-    Office.context.mailbox.item.recurrence.getAsync(callback);
-
-
-    function callback(asyncResult) {
-        var context = asyncResult.context;
-        var recurrence = asyncResult.value;
-        if (!recurrence) {
-            console.log("One-time appointment or meeting");
-        } else {
-            console.log(JSON.stringify(recurrence));
-        }
-    }
-
-
-    // The following example shows the results of the getAsync call that
-    retrieves the recurrence for a series.
-
-    // NOTE: In this example, seriesTimeObject is a placeholder for the JSON
-    representing the
-
-    // recurrence.seriesTime property. You should use the SeriesTime object's
-    methods to get the
-
-    // recurrence date and time properties.
-
-    Recurrence = {
-        "recurrenceType": "weekly",
-        "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
-        "seriesTime": {seriesTimeObject},
-        "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
-    }
   - |-
     Office.context.mailbox.item.recurrence.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -14127,48 +14219,49 @@
         if (recurrence === null) {
           console.log("This is a single appointment.");
         } else {
-          console.log(recurrence);
+          console.log(`Recurrence pattern: ${JSON.stringify(recurrence)}`);
         }
       } else {
         console.error(asyncResult.error);
       }
     });
 'Office.Recurrence#setAsync:member(2)':
-  - >-
-    // The following example sets the recurrence pattern of an appointment
-    series.
+  - |-
+    // Important: Can only set the recurrence pattern of an appointment series.
 
-    var seriesTimeObject = new Office.SeriesTime();
-
-    seriesTimeObject.setStartDate(2019,10,2);
-
-    seriesTimeObject.setEndDate(2019,11,2);
-
-    seriesTimeObject.setStartTime(10,30);
-
+    var currentDate = new Date();
+    let seriesTimeObject : Office.SeriesTime;
+    // Set series start date to tomorrow.
+    seriesTimeObject.setStartDate(
+      currentDate.getFullYear(),
+      currentDate.getMonth(),
+      currentDate.getDay() + 1
+    );
+    // Set series end date to 1 month from now.
+    seriesTimeObject.setEndDate(
+      currentDate.getFullYear(),
+      currentDate.getMonth() + 1,
+      currentDate.getDay()
+    );
+    // Set start time to 1:30 PM.
+    seriesTimeObject.setStartTime(13, 30);
+    // Set duration to 30 minutes.
     seriesTimeObject.setDuration(30);
 
+    let pattern : Office.Recurrence = {
+      seriesTime: seriesTimeObject,
+      recurrenceType: "weekly",
+      recurrenceProperties: { interval: 1, days: ["tue", "thu"], firstDayOfWeek: "sun" },
+      recurrenceTimeZone: { name: "Pacific Standard Time" }
+    };
 
-    var pattern = {
-        "seriesTime": seriesTimeObject,
-        "recurrenceType": "weekly",
-        "recurrenceProperties": {"interval": 1, "days": ["tue", "thu"], "firstDayOfWeek": "sun"},
-        "recurrenceTimeZone": {"name": "Pacific Standard Time"}};
-
-    Office.context.mailbox.item.recurrence.setAsync(pattern, callback);
-
-
-    function callback(asyncResult)
-
-    {
-        console.log(JSON.stringify(asyncResult));
-    }
-
-
-    // Result: This created a recurring event from November 2, 2019 to December
-    2, 2019
-
-    //         at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
+    Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
+      if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Failed to set recurrence. Error: ${asyncResult.error.message}`);
+        return;
+      }
+      console.log(`Succeeded in setting recurrence pattern ${JSON.stringify(pattern)}`);
+    });
 'Office.RecurrenceProperties:interface':
   - >-
     // This example gets the Recurrence object of an appointment item.
@@ -14719,6 +14812,23 @@
         return;
       }
       console.log(`Successfully set start date and time to ${start}`);
+    });
+  - |-
+    Office.context.mailbox.item.start.getAsync((result) => {
+      if (result.status !== Office.AsyncResultStatus.Succeeded) {
+        console.error(`Get start date failed with message ${result.error.message}`);
+        return;
+      }
+
+      var end = result.value; // Set end to current start date and time.
+      end.setDate(end.getDate() + 1); // Set end as 1 day later than start date.
+      Office.context.mailbox.item.end.setAsync(end, (result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Set end date failed with message ${result.error.message}`);
+          return;
+        }
+        console.log(`Successfully set end date and time to ${end}`);
+      });
     });
 'Office.UserProfile#accountType:member':
   - console.log(Office.context.mailbox.userProfile.accountType);
