@@ -439,26 +439,22 @@
     });
 'Office.AppointmentCompose#isAllDayEvent:member':
   - |-
-    // Set isAllDayEvent property.
-    Office.context.mailbox.item.isAllDayEvent.setAsync(
-        true,
-        function (asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                console.log("Failed to set all-day event: " + JSON.stringify(asyncResult.error));
-            } else {
-                console.log("Appointment set to all-day event.");
-            }
-        });
-
-    // Get isAllDayEvent property.
-    console.log(Office.context.mailbox.item.isAllDayEvent.getAsync(
-        function(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                console.log("Is an all-day event? " + asyncResult.value);
-            } else {
-                console.log("Failed to get if this is an all-day event. Error: " + JSON.stringify(asyncResult.error));
-            }
-        });
+    Office.context.mailbox.item.isAllDayEvent.getAsync(function(asyncResult) {
+      if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+        console.log("Is this an all-day event? " + asyncResult.value);
+      } else {
+        console.log("Failed to get if this is an all-day event. Error: " + JSON.stringify(asyncResult.error));
+      }
+    });
+  - >-
+    Office.context.mailbox.item.isAllDayEvent.setAsync(true,
+    function(asyncResult) {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+        console.log("Failed to set all-day event: " + JSON.stringify(asyncResult.error));
+      } else {
+        console.log("Appointment set to all-day event.");
+      }
+    });
 'Office.AppointmentCompose#isClientSignatureEnabledAsync:member(2)':
   - >-
     // Check if the client signature is currently enabled.
@@ -823,26 +819,24 @@
     }
 'Office.AppointmentCompose#sensitivity:member':
   - |-
-    // Set sensitivity property.
+    Office.context.mailbox.item.sensitivity.getAsync(function(asyncResult) {
+      if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+        console.log("Sensitivity: " + asyncResult.value);
+      } else {
+        console.log("Failed to get sensitivity: " + JSON.stringify(asyncResult.error));
+      }
+    });
+  - |-
     Office.context.mailbox.item.sensitivity.setAsync(
-        Office.MailboxEnums.AppointmentSensitivityType.Confidential,
-        function callback(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                console.log("Failed to set appointment sensitivity: " + JSON.stringify(asyncResult.error));
-            } else {
-                console.log("Successfully set appointment sensitivity.");
-            }
-        });
-
-    // Get sensitivity property.
-    console.log(Office.context.mailbox.item.sensitivity.getAsync(
-        function(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                console.log("Sensitivity: " + asyncResult.value);
-            } else {
-                console.log("Failed to get sensitivity: " + JSON.stringify(asyncResult.error));
-            }
-        });
+      Office.MailboxEnums.AppointmentSensitivityType.Confidential,
+      function callback(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+          console.log("Failed to set appointment sensitivity: " + JSON.stringify(asyncResult.error));
+        } else {
+          console.log("Successfully set appointment sensitivity.");
+        }
+      }
+    );
 'Office.AppointmentCompose#seriesId:member':
   - |-
     var seriesId = Office.context.mailbox.item.seriesId;
@@ -2268,27 +2262,23 @@
     "header2": "value2"});
 'Office.IsAllDayEvent#getAsync:member(2)':
   - |-
-    // Get isAllDayEvent property.
-    console.log(Office.context.mailbox.item.isAllDayEvent.getAsync(
-        function(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                console.log("Is an all-day event? " + asyncResult.value);
-            } else {
-                console.log("Failed to get if this is an all-day event. Error: " + JSON.stringify(asyncResult.error));
-            }
-        });
+    Office.context.mailbox.item.isAllDayEvent.getAsync(function(asyncResult) {
+      if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+        console.log("Is this an all-day event? " + asyncResult.value);
+      } else {
+        console.log("Failed to get if this is an all-day event. Error: " + JSON.stringify(asyncResult.error));
+      }
+    });
 'Office.IsAllDayEvent#setAsync:member(2)':
-  - |-
-    // Set isAllDayEvent property.
-    Office.context.mailbox.item.isAllDayEvent.setAsync(
-        true,
-        function (asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                console.log("Failed to set all-day event: " + JSON.stringify(asyncResult.error));
-            } else {
-                console.log("Appointment set to all-day event.");
-            }
-        });
+  - >-
+    Office.context.mailbox.item.isAllDayEvent.setAsync(true,
+    function(asyncResult) {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+        console.log("Failed to set all-day event: " + JSON.stringify(asyncResult.error));
+      } else {
+        console.log("Appointment set to all-day event.");
+      }
+    });
 'Office.Location#getAsync:member(1)':
   - >-
     var userContext = { value : 1 };
@@ -4792,27 +4782,25 @@
     console.log(`Setting "${settingName}" set to value "${settingValue}".`);
 'Office.Sensitivity#getAsync:member(2)':
   - |-
-    // Get sensitivity property.
-    console.log(Office.context.mailbox.item.sensitivity.getAsync(
-        function(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                console.log("Sensitivity: " + asyncResult.value);
-            } else {
-                console.log("Failed to get sensitivity: " + JSON.stringify(asyncResult.error));
-            }
-        });
+    Office.context.mailbox.item.sensitivity.getAsync(function(asyncResult) {
+      if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+        console.log("Sensitivity: " + asyncResult.value);
+      } else {
+        console.log("Failed to get sensitivity: " + JSON.stringify(asyncResult.error));
+      }
+    });
 'Office.Sensitivity#setAsync:member(2)':
   - |-
-    // Set sensitivity property.
     Office.context.mailbox.item.sensitivity.setAsync(
-        Office.MailboxEnums.AppointmentSensitivityType.Confidential,
-        function callback(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                console.log("Failed to set appointment sensitivity: " + JSON.stringify(asyncResult.error));
-            } else {
-                console.log("Successfully set appointment sensitivity.");
-            }
-        });
+      Office.MailboxEnums.AppointmentSensitivityType.Confidential,
+      function callback(asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+          console.log("Failed to set appointment sensitivity: " + JSON.stringify(asyncResult.error));
+        } else {
+          console.log("Successfully set appointment sensitivity.");
+        }
+      }
+    );
 'Office.SeriesTime#getDuration:member(1)':
   - >-
     // This example gets the duration of a usual instance in a recurring
