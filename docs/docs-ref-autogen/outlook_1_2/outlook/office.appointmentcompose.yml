@@ -519,6 +519,39 @@ items:
       });
 
       ```
+
+      ```javascript
+
+      Office.context.mailbox.item.end.getAsync((result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Action failed with message ${result.error.message}`);
+          return;
+        }
+        console.log(`Appointment ends: ${result.value}`);
+      });
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.start.getAsync((result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Get start date failed with message ${result.error.message}`);
+          return;
+        }
+
+        var end = result.value; // Set end to current start date and time.
+        end.setDate(end.getDate() + 1); // Set end as 1 day later than start date.
+        Office.context.mailbox.item.end.setAsync(end, (result) => {
+          if (result.status !== Office.AsyncResultStatus.Succeeded) {
+            console.error(`Set end date failed with message ${result.error.message}`);
+            return;
+          }
+          console.log(`Successfully set end date and time to ${end}`);
+        });
+      });
+
+      ```
     name: end
     fullName: end
     langs:
@@ -860,6 +893,32 @@ items:
           var context = asyncResult.context;
           var location = asyncResult.value;
       }
+
+      ```
+
+      ```javascript
+
+      Office.context.mailbox.item.location.getAsync((result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Action failed with message ${result.error.message}`);
+          return;
+        }
+        console.log(`Appointment location: ${result.value}`);
+      });
+
+      ```
+
+      ```javascript
+
+      var location = "my office";
+
+      Office.context.mailbox.item.location.setAsync(location, (result) => {
+        if (result.status !== Office.AsyncResultStatus.Succeeded) {
+          console.error(`Action failed with message ${result.error.message}`);
+          return;
+        }
+        console.log(`Successfully set location to ${location}`);
+      });
 
       ```
     name: location

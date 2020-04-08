@@ -8284,35 +8284,6 @@ Office.AppointmentCompose#end:member:
             console.debug("End Time " + result.asyncContext.verb);
         }
     });
-Office.AppointmentCompose#enhancedLocation:member:
-  - |-
-    var locations = [
-        {
-            "id": "Contoso",
-            "type": Office.MailboxEnums.LocationType.Custom
-        }
-    ];
-    Office.context.mailbox.item.enhancedLocation.addAsync(locations);
-
-    Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
-
-    function callbackFunction(asyncResult) {
-        asyncResult.value.forEach(function (place) {
-            console.log("Display name: " + place.displayName);
-            console.log("Type: " + place.locationIdentifier.type);
-            if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
-                console.log("Email address: " + place.emailAddress);
-            }
-        });
-    }
-  - |-
-    Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
-
-    function callbackFunction(asyncResult) {
-        asyncResult.value.forEach(function (currentValue) {
-            Office.context.mailbox.item.enhancedLocation.removeAsync([currentValue.locationIdentifier]);
-        });
-    }
 Office.AppointmentCompose#getInitializationContextAsync:member(2):
   - |-
     // Get the initialization context (if present).
@@ -8349,28 +8320,6 @@ Office.AppointmentCompose#getSelectedDataAsync:member(1):
 
         console.log("Selected text in " + prop + ": " + text);
     }
-Office.AppointmentCompose#isAllDayEvent:member:
-  - |-
-    // Set isAllDayEvent property.
-    Office.context.mailbox.item.isAllDayEvent.setAsync(
-        true,
-        function (asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                console.log("Failed to set all-day event: " + JSON.stringify(asyncResult.error));
-            } else {
-                console.log("Appointment set to all-day event.");
-            }
-        });
-
-    // Get isAllDayEvent property.
-    console.log(Office.context.mailbox.item.isAllDayEvent.getAsync(
-        function(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                console.log("Is an all-day event? " + asyncResult.value);
-            } else {
-                console.log("Failed to get if this is an all-day event. Error: " + JSON.stringify(asyncResult.error));
-            }
-        });
 Office.AppointmentCompose#loadCustomPropertiesAsync:member(1):
   - |-
     // The following example shows how to use the loadCustomPropertiesAsync method
@@ -8417,31 +8366,6 @@ Office.AppointmentCompose#optionalAttendees:member:
     function callback(asyncResult) {
         var arrayOfOptionalAttendeesRecipients = asyncResult.value;
     }
-Office.AppointmentCompose#recurrence:member:
-  - |-
-    // This example gets the Recurrence object of an appointment item.
-    Office.context.mailbox.item.recurrence.getAsync(callback);
-
-    function callback(asyncResult) {
-        var context = asyncResult.context;
-        var recurrence = asyncResult.value;
-        if (!recurrence) {
-            console.log("One-time appointment or meeting");
-        } else {
-            console.log(JSON.stringify(recurrence));
-        }
-    }
-
-    // The following example shows the results of the getAsync call that retrieves the recurrence for a series.
-    // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the
-    // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the
-    // recurrence date and time properties.
-    Recurrence = {
-        "recurrenceType": "weekly",
-        "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
-        "seriesTime": {seriesTimeObject},
-        "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
-    }
 Office.AppointmentCompose#removeAttachmentAsync:member(1):
   - |-
     // The following code removes an attachment with an identifier of '0'.
@@ -8479,28 +8403,6 @@ Office.AppointmentCompose#saveAsync:member(2):
         "value": "AAMkADI5...AAA=",
         "status": "succeeded"
     }
-Office.AppointmentCompose#sensitivity:member:
-  - |-
-    // Set sensitivity property.
-    Office.context.mailbox.item.sensitivity.setAsync(
-        Office.MailboxEnums.AppointmentSensitivityType.Confidential,
-        function callback(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                console.log("Failed to set appointment sensitivity: " + JSON.stringify(asyncResult.error));
-            } else {
-                console.log("Successfully set appointment sensitivity.");
-            }
-        });
-    
-    // Get sensitivity property.
-    console.log(Office.context.mailbox.item.sensitivity.getAsync(
-        function(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                console.log("Sensitivity: " + asyncResult.value);
-            } else {
-                console.log("Failed to get sensitivity: " + JSON.stringify(asyncResult.error));
-            }
-        });
 Office.AppointmentCompose#setSelectedDataAsync:member(1):
   - |-
     Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
@@ -8554,14 +8456,6 @@ Office.AppointmentRead#body:member:
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
-Office.AppointmentRead#dateTimeCreated:member:
-  - |-
-    var dateTimeCreated = Office.context.mailbox.item.dateTimeCreated;
-    console.log("Date and time created: " + dateTimeCreated);
-Office.AppointmentRead#dateTimeModified:member:
-  - |-
-    var dateTimeModified = Office.context.mailbox.item.dateTimeModified;
-    console.log("Date and time modified: " + dateTimeModified);
 Office.AppointmentRead#displayReplyAllForm:member(1):
   - |-
     // The following code passes a string to the `displayReplyAllForm` function.
@@ -8692,23 +8586,6 @@ Office.AppointmentRead#displayReplyForm:member(1):
             console.log(asyncResult.value);
         }
     });
-Office.AppointmentRead#end:member:
-  - |-
-    var end = Office.context.mailbox.item.end;
-    console.log("Appointment end: " + end);
-Office.AppointmentRead#enhancedLocation:member:
-  - |-
-    Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
-
-    function callbackFunction(asyncResult) {
-        asyncResult.value.forEach(function (place) {
-            console.log("Display name: " + place.displayName);
-            console.log("Type: " + place.locationIdentifier.type);
-            if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
-                console.log("Email address: " + place.emailAddress);
-            }
-        });
-    }
 Office.AppointmentRead#getInitializationContextAsync:member(2):
   - |-
     // Get the initialization context (if present).
@@ -8847,10 +8724,6 @@ Office.AppointmentRead#location:member:
   - |-
     var location = Office.context.mailbox.item.location;
     console.log("location: " + location);
-Office.AppointmentRead#normalizedSubject:member:
-  - |-
-    var normalizedSubject = Office.context.mailbox.item.normalizedSubject;
-    console.log("Normalized subject: " + normalizedSubject);
 Office.AppointmentRead#sensitivity:member:
   - |-
     var sensitivity = Office.context.mailbox.item.sensitivity;
@@ -9081,37 +8954,6 @@ Office.EmailAddressDetails#recipientType:member:
     requiredAttendees.forEach(function (requiredAttendee) {
         console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.recipientType);
     });
-Office.EnhancedLocation#addAsync:member(2):
-  - |-
-    var locations = [
-        {
-            "id": "Contoso",
-            "type": Office.MailboxEnums.LocationType.Custom
-        }
-    ];
-    Office.context.mailbox.item.enhancedLocation.addAsync(locations);
-Office.EnhancedLocation#getAsync:member(2):
-  - |-
-    Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
-
-    function callbackFunction(asyncResult) {
-        asyncResult.value.forEach(function (place) {
-            console.log("Display name: " + place.displayName);
-            console.log("Type: " + place.locationIdentifier.type);
-            if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
-                console.log("Email address: " + place.emailAddress);
-            }
-        });
-    }
-Office.EnhancedLocation#removeAsync:member(2):
-  - |-
-    Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
-
-    function callbackFunction(asyncResult) {
-        asyncResult.value.forEach(function (currentValue) {
-            Office.context.mailbox.item.enhancedLocation.removeAsync([currentValue.locationIdentifier]);
-        });
-    }
 Office.Entities#addresses:member:
   - |-
     var item = Office.context.mailbox.item;
@@ -9154,29 +8996,6 @@ Office.InternetHeaders#removeAsync:member(2):
 Office.InternetHeaders#setAsync:member(2):
   - |-
     Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1", "header2": "value2"});
-Office.IsAllDayEvent#getAsync:member(2):
-  - |-
-    // Get isAllDayEvent property.
-    console.log(Office.context.mailbox.item.isAllDayEvent.getAsync(
-        function(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                console.log("Is an all-day event? " + asyncResult.value);
-            } else {
-                console.log("Failed to get if this is an all-day event. Error: " + JSON.stringify(asyncResult.error));
-            }
-        });
-Office.IsAllDayEvent#setAsync:member(2):
-  - |-
-    // Set isAllDayEvent property.
-    Office.context.mailbox.item.isAllDayEvent.setAsync(
-        true,
-        function (asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                console.log("Failed to set all-day event: " + JSON.stringify(asyncResult.error));
-            } else {
-                console.log("Appointment set to all-day event.");
-            }
-        });
 Office.Location#getAsync:member(1):
   - |-
     var userContext = { value : 1 };
@@ -9186,16 +9005,6 @@ Office.Location#getAsync:member(1):
         var context = asyncResult.context;
         var location = asyncResult.value;
     }
-Office.Location#setAsync:member(2):
-  - |-
-    Office.context.mailbox.item.location.setAsync(
-        "Room 1",
-        function (asyncResult) {
-            if (asyncResult.status === "failed") {
-                console.log("Action failed with error: " + asyncResult.error.message);
-            }
-        }
-    );
 Office.LocationDetails:interface:
   - |-
     Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
@@ -9409,10 +9218,6 @@ Office.MessageCompose#cc:member:
     function callback(asyncResult) {
         var arrayOfCcRecipients = asyncResult.value;
     }
-Office.MessageCompose#conversationId:member:
-  - |-
-    var conversationId = Office.context.mailbox.item.conversationId;
-    console.log("conversationId: " + conversationId);
 Office.MessageCompose#getInitializationContextAsync:member(2):
   - |-
     // Get the initialization context (if present).
@@ -9574,18 +9379,6 @@ Office.MessageRead#body:member:
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
-Office.MessageRead#conversationId:member:
-  - |-
-    var conversationId = Office.context.mailbox.item.conversationId;
-    console.log("conversationId: " + conversationId);
-Office.MessageRead#dateTimeCreated:member:
-  - |-
-    var dateTimeCreated = Office.context.mailbox.item.dateTimeCreated;
-    console.log("Date and time created: " + dateTimeCreated);
-Office.MessageRead#dateTimeModified:member:
-  - |-
-    var dateTimeModified = Office.context.mailbox.item.dateTimeModified;
-    console.log("Date and time modified: " + dateTimeModified);
 Office.MessageRead#displayReplyAllForm:member(1):
   - |-
     // The following code passes a string to the `displayReplyAllForm` function.
@@ -9863,10 +9656,6 @@ Office.MessageRead#loadCustomPropertiesAsync:member(1):
 
     function saveCallback(asyncResult) {
     }
-Office.MessageRead#normalizedSubject:member:
-  - |-
-    var normalizedSubject = Office.context.mailbox.item.normalizedSubject;
-    console.log("Normalized subject: " + normalizedSubject);
 Office.NotificationMessages#getAllAsync:member(2):
   - |-
     // Get all notifications.
@@ -9944,55 +9733,6 @@ Office.Recipients#setAsync:member(2):
             console.log("Recipients overwritten");
         }
     });
-Office.Recurrence#getAsync:member(2):
-  - |-
-    // This example gets the Recurrence object of an appointment item.
-    Office.context.mailbox.item.recurrence.getAsync(callback);
-
-    function callback(asyncResult) {
-        var context = asyncResult.context;
-        var recurrence = asyncResult.value;
-        if (!recurrence) {
-            console.log("One-time appointment or meeting");
-        } else {
-            console.log(JSON.stringify(recurrence));
-        }
-    }
-
-    // The following example shows the results of the getAsync call that retrieves the recurrence for a series.
-    // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the
-    // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the
-    // recurrence date and time properties.
-    Recurrence = {
-        "recurrenceType": "weekly",
-        "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
-        "seriesTime": {seriesTimeObject},
-        "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
-    }
-Office.Recurrence#setAsync:member(2):
-  - |-
-    // The following example sets the recurrence pattern of an appointment series.
-    var seriesTimeObject = new Office.SeriesTime();
-    seriesTimeObject.setStartDate(2019,10,2);
-    seriesTimeObject.setEndDate(2019,11,2);
-    seriesTimeObject.setStartTime(10,30);
-    seriesTimeObject.setDuration(30);
-
-    var pattern = {
-        "seriesTime": seriesTimeObject,
-        "recurrenceType": "weekly",
-        "recurrenceProperties": {"interval": 1, "days": ["tue", "thu"], "firstDayOfWeek": "sun"},
-        "recurrenceTimeZone": {"name": "Pacific Standard Time"}};
-
-    Office.context.mailbox.item.recurrence.setAsync(pattern, callback);
-
-    function callback(asyncResult)
-    {
-        console.log(JSON.stringify(asyncResult));
-    }
-
-    // Result: This created a recurring event from November 2, 2019 to December 2, 2019
-    //         at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
 Office.RecurrenceProperties:interface:
   - |-
     // This example gets the Recurrence object of an appointment item.
@@ -10052,29 +9792,6 @@ Office.RoamingSettings#set:member(1):
     Office.context.roamingSettings.set('myKey', 'Hello World!');
     // Persist the change.
     Office.context.roamingSettings.saveAsync();
-Office.Sensitivity#getAsync:member(2):
-  - |-
-    // Get sensitivity property.
-    console.log(Office.context.mailbox.item.sensitivity.getAsync(
-        function(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-                console.log("Sensitivity: " + asyncResult.value);
-            } else {
-                console.log("Failed to get sensitivity: " + JSON.stringify(asyncResult.error));
-            }
-        });
-Office.Sensitivity#setAsync:member(2):
-  - |-
-    // Set sensitivity property.
-    Office.context.mailbox.item.sensitivity.setAsync(
-        Office.MailboxEnums.AppointmentSensitivityType.Confidential,
-        function callback(asyncResult) {
-            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-                console.log("Failed to set appointment sensitivity: " + JSON.stringify(asyncResult.error));
-            } else {
-                console.log("Successfully set appointment sensitivity.");
-            }
-        });
 Office.SeriesTime#getDuration:member(1):
   - |-
     // This example gets the duration of a usual instance in a recurring appointment series.

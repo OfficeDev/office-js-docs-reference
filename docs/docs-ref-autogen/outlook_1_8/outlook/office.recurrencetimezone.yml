@@ -85,7 +85,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'offset: number;'
+      content: 'offset?: number;'
       return:
         type:
           - number

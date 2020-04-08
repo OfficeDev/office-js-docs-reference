@@ -695,9 +695,7 @@ items:
 
       ```javascript
 
-      var conversationId = Office.context.mailbox.item.conversationId;
-
-      console.log("conversationId: " + conversationId);
+      console.log(`Conversation ID: ${Office.context.mailbox.item.conversationId}`);
 
       ```
     name: conversationId
