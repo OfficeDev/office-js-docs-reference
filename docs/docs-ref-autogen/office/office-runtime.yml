@@ -10,17 +10,10 @@ items:
       - 'office-runtime!OfficeRuntime.ApiInformation:interface'
       - 'office-runtime!OfficeRuntime.Auth:interface'
       - 'office-runtime!OfficeRuntime.AuthOptions:interface'
-      - 'office-runtime!OfficeRuntime.Control:interface'
       - 'office-runtime!OfficeRuntime.Dialog:interface'
       - 'office-runtime!OfficeRuntime.displayWebDialog:function(1)'
       - 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
-      - 'office-runtime!OfficeRuntime.Gallery:interface'
-      - 'office-runtime!OfficeRuntime.MenuControl:interface'
-      - 'office-runtime!OfficeRuntime.Ribbon:interface'
-      - 'office-runtime!OfficeRuntime.RibbonUpdaterData:interface'
       - 'office-runtime!OfficeRuntime.Storage:interface'
-      - 'office-runtime!OfficeRuntime.Tab:interface'
-      - 'office-runtime!OfficeRuntime.UI:interface'
   - uid: 'office-runtime!OfficeRuntime.displayWebDialog:function(1)'
     summary: |-
       Method that enables a pop up web dialog box.
@@ -53,8 +46,6 @@ references:
     name: OfficeRuntime.Auth
   - uid: 'office-runtime!OfficeRuntime.AuthOptions:interface'
     name: OfficeRuntime.AuthOptions
-  - uid: 'office-runtime!OfficeRuntime.Control:interface'
-    name: OfficeRuntime.Control
   - uid: 'office-runtime!OfficeRuntime.Dialog:interface'
     name: OfficeRuntime.Dialog
   - uid: 'office-runtime!OfficeRuntime.displayWebDialog~0:complex'
@@ -73,17 +64,5 @@ references:
         fullName: '>'
   - uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
     name: DisplayWebDialogOptions
-  - uid: 'office-runtime!OfficeRuntime.Gallery:interface'
-    name: OfficeRuntime.Gallery
-  - uid: 'office-runtime!OfficeRuntime.MenuControl:interface'
-    name: OfficeRuntime.MenuControl
-  - uid: 'office-runtime!OfficeRuntime.Ribbon:interface'
-    name: OfficeRuntime.Ribbon
-  - uid: 'office-runtime!OfficeRuntime.RibbonUpdaterData:interface'
-    name: OfficeRuntime.RibbonUpdaterData
   - uid: 'office-runtime!OfficeRuntime.Storage:interface'
     name: OfficeRuntime.Storage
-  - uid: 'office-runtime!OfficeRuntime.Tab:interface'
-    name: OfficeRuntime.Tab
-  - uid: 'office-runtime!OfficeRuntime.UI:interface'
-    name: OfficeRuntime.UI

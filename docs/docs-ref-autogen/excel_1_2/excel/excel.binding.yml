@@ -281,8 +281,13 @@ items:
           });
           ```
   - uid: 'excel!Excel.Binding#onSelectionChanged:member'
-    summary: |-
+    summary: >-
       Occurs when the selected content in the binding is changed.
+
+
+      **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column
+      information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onSelectionChanged
