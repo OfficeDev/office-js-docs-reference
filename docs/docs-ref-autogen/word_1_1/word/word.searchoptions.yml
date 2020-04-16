@@ -1,8 +1,13 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'word!Word.SearchOptions:class'
-    summary: |-
+    summary: >-
       Specifies the options to be included in a search operation.
+
+
+      To learn more about how to use search options in the Word JavaScript APIs, read [Use search options to find text
+      in your Word add-in](https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance)<!-- -->.
+
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.SearchOptions
