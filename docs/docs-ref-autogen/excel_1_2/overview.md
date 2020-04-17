@@ -1,7 +1,7 @@
 ---
 title: Office JavaScript API reference 
-description: 'The Office JavaScript APIs per host requirement set'
-ms.date: 11/19/2019
+description: 'The Office JavaScript APIs requirement sets by host.'
+ms.date: 04/17/2020
 ---
 
 # Office JavaScript API reference
@@ -70,3 +70,4 @@ The following is a list of host-specific requirement sets (and the cross-host Co
 - [About Office Add-ins](/office/dev/add-ins/overview)
 - [Office Add-in host and platform availability](/office/dev/add-ins/overview/office-add-in-availability)
 - [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets)
+- [Explore Office JavaScript API using Script Lab](/office/dev/add-ins/overview/explore-with-script-lab)
