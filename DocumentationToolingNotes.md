@@ -46,7 +46,7 @@ Code example snippets are added to the reference pages from two sources:
 
 The local snippets are in host-specific yaml files. Their content is organized by class and field, so it can be mapped to the appropriate place in a reference page. The language of the snippet (JavaScript or TypeScript) is inferred by the use of await statements.
 
-The Script Lab snippets are pulled from working samples. Currently, Excel and Word samples are mapped to reference document sections through a [pair of mapping files](https://github.com/OfficeDev/office-js-snippets/tree/master/snippet-extractor-metadata). These match individual sample methods to properties or methods in the API. When the office-js-snippets repository's `yarn start` runs, [a yaml file](https://github.com/OfficeDev/office-js-snippets/blob/master/snippet-extractor-output/snippets.yaml) containing all the mapped snippets is created. This yaml file is the input into the reference documentation tooling.
+The Script Lab snippets are pulled from working samples. Currently, Excel, Outlook, and Word samples are mapped to reference document sections through [mapping files](https://github.com/OfficeDev/office-js-snippets/tree/master/snippet-extractor-metadata). These match individual sample methods to properties or methods in the API. When the office-js-snippets repository's `yarn start` runs, [a yaml file](https://github.com/OfficeDev/office-js-snippets/blob/master/snippet-extractor-output/snippets.yaml) containing all the mapped snippets is created. This yaml file is the input into the reference documentation tooling.
 
 ## Tooling pipeline
 
@@ -64,7 +64,7 @@ The preprocessor takes the d.ts files and splits them into host-specific section
 
 API Extractor converts the d.ts files into JSON data. This tokenizes all the type data, allowing for easier parsing.
 
-The midprocessor retrieves the code snippets and pairs them with the proper hosts.
+The midprocessor retrieves the code snippets and pairs them with the proper hosts, and cleans up the crosslinking between Outlook and Common API objects.
 
 API Documenter converts the JSON data into .yml files. The .yml files are converted to markdown by the Open Publishing System that publishes our docs to docs.microsoft.com. API Documenter also contains an Office-specific extension that inserts our code snippets.
 
