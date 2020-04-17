@@ -52,12 +52,17 @@ items:
       return:
         type:
           - 'excel!Excel.ConditionalRangeFormat:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B21:E23");
@@ -68,6 +73,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.CellValueConditionalFormat#load:member(1)'
     summary: >-
@@ -154,12 +160,17 @@ items:
       return:
         type:
           - 'excel!Excel.ConditionalCellValueRule:interface'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B21:E23");
@@ -170,6 +181,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.CellValueConditionalFormat#set:member(1)'
     summary: >-

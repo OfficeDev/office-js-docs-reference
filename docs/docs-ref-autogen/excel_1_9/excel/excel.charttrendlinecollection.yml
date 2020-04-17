@@ -39,12 +39,17 @@ items:
       return:
         type:
           - 'excel!Excel.ChartTrendline:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-trendlines.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -55,6 +60,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: type

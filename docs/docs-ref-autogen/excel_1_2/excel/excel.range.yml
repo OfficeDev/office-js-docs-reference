@@ -972,12 +972,17 @@ items:
       return:
         type:
           - 'excel!Excel.Range:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-relationships.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const salesTable = sheet.tables.getItem("SalesTable");
@@ -1032,6 +1037,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: valuesOnly
@@ -1269,12 +1275,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-copyfrom.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               // Place a label in front of the moved data.
@@ -1284,6 +1295,7 @@ items:
               sheet.getRange("A1:E1").moveTo("G12");
               await context.sync();
           });
+
           ```
       parameters:
         - id: destinationRange
@@ -1416,14 +1428,21 @@ items:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
+    remarks: >-
       This method has the following additional signature:
+
 
       `set(properties: Excel.Range): void`
 
+
       #### Examples
 
+
       ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/90-scenarios/multiple-property-set.yaml
+
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -1442,8 +1461,14 @@ items:
           range.format.autofitColumns();
           await context.sync();
       });
+
       ```
+
       ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/90-scenarios/multiple-property-set.yaml
+
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -1458,6 +1483,7 @@ items:
           targetRange.format.autofitColumns();
           await context.sync();
       });
+
       ```
     name: 'set(properties, options)'
     fullName: 'set(properties, options)'
@@ -1514,12 +1540,17 @@ items:
       return:
         type:
           - 'excel!Excel.RangeSort:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-column-and-row-sort.yaml
+
           async function sortTopToBottom(criteria: string) {
               await Excel.run(async (context) => {
                   const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -1544,6 +1575,7 @@ items:
                   await context.sync();
               });
           }
+
           ```
   - uid: 'excel!Excel.Range#text:member'
     summary: >-

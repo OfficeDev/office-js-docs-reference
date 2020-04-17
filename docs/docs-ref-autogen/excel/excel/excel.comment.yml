@@ -79,18 +79,24 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-basics.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Comments");
               const comment = sheet.comments.getItemAt(0);
               comment.content = "PLEASE add headers here.";
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Comment#contentType:member'
     summary: >-
@@ -156,16 +162,22 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-basics.yaml
+
           await Excel.run(async (context) => {
               context.workbook.comments.getItemByCell("Comments!A2").delete();
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Comment#getLocation:member(1)'
     summary: |-
@@ -232,12 +244,17 @@ items:
       return:
         type:
           - 'excel!Excel.Comment:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-basics.yaml
+
           await Excel.run(async (context) => {
               const comment = context.workbook.comments.getItemByCell("Comments!A2");
               comment.load(["authorEmail", "authorName", "creationDate"]);
@@ -246,6 +263,7 @@ items:
               console.log(`${comment.creationDate.toDateString()}: ${comment.authorName} (${comment.authorEmail})`);
               await context.sync();
           });
+
           ```
       parameters:
         - id: propertyNames
@@ -330,17 +348,23 @@ items:
       return:
         type:
           - boolean
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/comment-resolution.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Comments");
               sheet.comments.getItemAt(0).resolved = true;
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Comment#richContent:member'
     summary: >-

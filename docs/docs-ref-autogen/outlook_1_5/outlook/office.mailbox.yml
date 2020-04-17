@@ -197,6 +197,9 @@ items:
 
       ```javascript
 
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
+
       console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
       var ewsId = Office.context.mailbox.item.itemId;
@@ -306,6 +309,9 @@ items:
 
       ```javascript
 
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
+
       Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function (result) {
           var ewsId = Office.context.mailbox.item.itemId;
           var token = result.value;
@@ -324,6 +330,9 @@ items:
       ```
 
       ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
 
       console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
@@ -512,6 +521,9 @@ items:
 
       ```javascript
 
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-existing-appointment.yaml
+
       var itemId = $("#itemId").val();
 
       Office.context.mailbox.displayAppointmentForm(itemId);
@@ -571,6 +583,9 @@ items:
 
 
       ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-existing-message.yaml
 
       var itemId = $("#itemId").val();
 
@@ -634,6 +649,9 @@ items:
 
 
       ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-new-appointment.yaml
 
       var start = new Date();
 
@@ -705,6 +723,9 @@ items:
 
 
       ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
 
       console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
@@ -836,6 +857,9 @@ items:
 
       ```javascript
 
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
+
       Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function (result) {
           var ewsId = Office.context.mailbox.item.itemId;
           var token = result.value;
@@ -942,6 +966,9 @@ items:
 
       ```javascript
 
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/user-callback-token.yaml
+
       Office.context.mailbox.getCallbackTokenAsync(function (result) {
           if (result.status !== Office.AsyncResultStatus.Succeeded) {
               console.error(`Token retrieval failed with message: ${result.error.message}`);
@@ -1014,6 +1041,9 @@ items:
 
 
       ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/user-identity-token.yaml
 
       Office.context.mailbox.getUserIdentityTokenAsync(function (result) {
           if (result.status !== Office.AsyncResultStatus.Succeeded) {
@@ -1189,6 +1219,9 @@ items:
 
       ```javascript
 
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/make-ews-request-async.yaml
+
       var ewsId = Office.context.mailbox.item.itemId;
 
       var request = '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -1215,6 +1248,9 @@ items:
       ```
 
       ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/send-message-using-make-ews-request-async.yaml
 
       var request = '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
@@ -1393,6 +1429,9 @@ items:
 
       ```javascript
 
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
+
       Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function (result) {
           var ewsId = Office.context.mailbox.item.itemId;
           var token = result.value;
@@ -1411,6 +1450,9 @@ items:
       ```
 
       ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
 
       console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 

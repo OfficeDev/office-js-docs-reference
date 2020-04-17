@@ -31,12 +31,17 @@ items:
       return:
         type:
           - 'excel!Excel.CommentRichContent#mentions~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/comment-mentions.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Comments");
               const mention = {
@@ -56,6 +61,7 @@ items:
               sheet.comments.add("A1", commentBody, Excel.ContentType.mention);
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.CommentRichContent#richContent:member'
     name: richContent

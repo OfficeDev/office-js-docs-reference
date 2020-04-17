@@ -80,12 +80,17 @@ items:
       return:
         type:
           - 'excel!Excel.ChartFormatString:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-title-format.yaml
+
           await Excel.run(async (context) => {
               let sheet = context.workbook.worksheets.getItem("Sample");
               let chart = sheet.charts.getItemAt(0);
@@ -94,6 +99,7 @@ items:
               chart.title.getSubstring(0, 7).font.color = "Yellow";
               await context.sync();
           });
+
           ```
       parameters:
         - id: start
@@ -409,12 +415,17 @@ items:
       return:
         type:
           - number
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-title-format.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const title = sheet.charts.getItemAt(0).title;
@@ -422,6 +433,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.ChartTitle#toJSON:member(1)'
     summary: >-

@@ -167,12 +167,17 @@ items:
       return:
         type:
           - 'word!Word.ContentControlCollection:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/90-scenarios/doc-assembly.yaml
+
           await Word.run(async (context) => {
               let contentControls = context.document.contentControls.getByTag("customer");
               contentControls.load("text");
@@ -185,6 +190,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: tag

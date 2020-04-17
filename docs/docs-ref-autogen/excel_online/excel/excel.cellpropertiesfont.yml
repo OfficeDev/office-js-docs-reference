@@ -55,12 +55,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getActiveWorksheet();
 
@@ -132,6 +137,7 @@ items:
               sheet.getUsedRange().format.autofitColumns();
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.CellPropertiesFont#italic:member'
     summary: |-

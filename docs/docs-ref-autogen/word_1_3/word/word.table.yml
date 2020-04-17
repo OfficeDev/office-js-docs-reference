@@ -429,12 +429,17 @@ items:
       return:
         type:
           - 'word!Word.TableCell:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/40-tables/table-cell-access.yaml
+
           await Word.run(async (context) => {
             let firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
             firstCell.load("text");
@@ -442,6 +447,7 @@ items:
             await context.sync();
             console.log("First cell text is " + firstCell.text);
           });
+
           ```
       parameters:
         - id: rowIndex

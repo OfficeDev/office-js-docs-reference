@@ -51,12 +51,17 @@ items:
       return:
         type:
           - 'excel!Excel.Image#format~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-images.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
               const image = sheet.shapes.getItem("Image").image;
@@ -66,6 +71,7 @@ items:
               console.log("The image's format is: " + image.format);
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Image#id:member'
     summary: |-

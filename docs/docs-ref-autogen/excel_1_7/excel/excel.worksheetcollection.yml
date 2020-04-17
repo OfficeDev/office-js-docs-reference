@@ -159,12 +159,17 @@ items:
       return:
         type:
           - 'excel!Excel.Worksheet:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+
           await Excel.run(async (context) => {
               const sheets = context.workbook.worksheets;
 
@@ -189,6 +194,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: visibleOnly
@@ -252,12 +258,17 @@ items:
       return:
         type:
           - 'excel!Excel.Worksheet:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+
           await Excel.run(async (context) => {
               const sheets = context.workbook.worksheets;
 
@@ -282,6 +293,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: visibleOnly
@@ -401,12 +413,17 @@ items:
       return:
         type:
           - 'excel!Excel.WorksheetCollection#onActivated~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
           await Excel.run(async (context) => {
               let sheets = context.workbook.worksheets;
               sheets.onActivated.add(onActivate);
@@ -414,6 +431,7 @@ items:
               await context.sync();
               console.log("A handler has been registered for the OnActivate event.");
           });
+
           ```
   - uid: 'excel!Excel.WorksheetCollection#onAdded:member'
     summary: |-
@@ -430,12 +448,17 @@ items:
       return:
         type:
           - 'excel!Excel.WorksheetCollection#onAdded~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
           await Excel.run(async (context) => {
               let sheet = context.workbook.worksheets;
               sheet.onAdded.add(onWorksheetAdd);
@@ -443,6 +466,7 @@ items:
               await context.sync();
               console.log("A handler has been registered for the OnAdded event.");
           });
+
           ```
   - uid: 'excel!Excel.WorksheetCollection#onDeactivated:member'
     summary: |-
@@ -459,12 +483,17 @@ items:
       return:
         type:
           - 'excel!Excel.WorksheetCollection#onDeactivated~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
           await Excel.run(async (context) => {
               let sheets = context.workbook.worksheets;
               sheets.onDeactivated.add(onDeactivate);
@@ -472,6 +501,7 @@ items:
               await context.sync();
               console.log("A handler has been registered for the OnDeactivate event.");
           });
+
           ```
   - uid: 'excel!Excel.WorksheetCollection#onDeleted:member'
     summary: |-

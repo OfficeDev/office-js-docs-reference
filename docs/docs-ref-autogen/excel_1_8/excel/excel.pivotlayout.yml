@@ -75,12 +75,17 @@ items:
       return:
         type:
           - 'excel!Excel.Range:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml
+
           await Excel.run(async (context) => {
               const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
 
@@ -97,6 +102,7 @@ items:
               masterTotalRange.formulas = [["All Crates", "=SUM(" + grandTotalRange.address + ")"]];
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.PivotLayout#getFilterAxisRange:member(1)'
     summary: |-

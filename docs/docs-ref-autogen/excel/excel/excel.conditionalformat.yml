@@ -65,12 +65,17 @@ items:
       return:
         type:
           - 'excel!Excel.CellValueConditionalFormat:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B21:E23");
@@ -81,6 +86,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.ConditionalFormat#cellValueOrNullObject:member'
     summary: >-
@@ -116,12 +122,17 @@ items:
       return:
         type:
           - 'excel!Excel.ColorScaleConditionalFormat:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B2:M5");
@@ -136,6 +147,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.ConditionalFormat#colorScaleOrNullObject:member'
     summary: >-
@@ -183,12 +195,17 @@ items:
       return:
         type:
           - 'excel!Excel.CustomConditionalFormat:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B8:E13");
@@ -198,6 +215,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.ConditionalFormat#customOrNullObject:member'
     summary: |-
@@ -229,12 +247,17 @@ items:
       return:
         type:
           - 'excel!Excel.DataBarConditionalFormat:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B8:E13");
@@ -244,6 +267,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.ConditionalFormat#dataBarOrNullObject:member'
     summary: |-
@@ -293,12 +317,17 @@ items:
       return:
         type:
           - 'excel!Excel.Range:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const worksheetRange = sheet.getRange();
@@ -324,6 +353,7 @@ items:
                   console.log("No conditional formats applied.");
               }
           });
+
           ```
   - uid: 'excel!Excel.ConditionalFormat#getRangeOrNullObject:member(1)'
     summary: >-
@@ -374,12 +404,17 @@ items:
       return:
         type:
           - 'excel!Excel.IconSetConditionalFormat:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B8:E13");
@@ -418,6 +453,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.ConditionalFormat#iconSetOrNullObject:member'
     summary: |-
@@ -534,12 +570,17 @@ items:
       return:
         type:
           - 'excel!Excel.PresetCriteriaConditionalFormat:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B2:M5");
@@ -550,6 +591,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.ConditionalFormat#presetOrNullObject:member'
     summary: |-
@@ -668,12 +710,17 @@ items:
       return:
         type:
           - 'excel!Excel.TextConditionalFormat:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B16:D18");
@@ -684,6 +731,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.ConditionalFormat#textComparisonOrNullObject:member'
     summary: >-
@@ -771,12 +819,17 @@ items:
       return:
         type:
           - 'excel!Excel.ConditionalFormat#type~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const worksheetRange = sheet.getRange();
@@ -802,6 +855,7 @@ items:
                   console.log("No conditional formats applied.");
               }
           });
+
           ```
 references:
   - uid: 'excel!OfficeExtension.ClientObject:class'
