@@ -102,12 +102,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+
           await Excel.run(async (context) => {
               let style = context.workbook.styles.getItem("Diagonal Orientation Style");
 
@@ -119,6 +124,7 @@ items:
 
               console.log("Successfully deleted the diagonal orientation style from the Home tab ribbon.");
           });
+
           ```
   - uid: 'excel!Excel.Style#fill:member'
     summary: |-
@@ -150,12 +156,17 @@ items:
       return:
         type:
           - 'excel!Excel.RangeFont:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+
           await Excel.run(async (context) => {
               let style = context.workbook.styles.getItem("Normal");
               style.font.load("bold, color, italic, name, size");
@@ -170,6 +181,7 @@ items:
               console.log("Size: " + style.font.size);
               console.log("Fill color: " + style.fill.color);
           });
+
           ```
   - uid: 'excel!Excel.Style#formulaHidden:member'
     summary: |-
@@ -203,12 +215,17 @@ items:
       return:
         type:
           - 'excel!Excel.Style#horizontalAlignment~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+
           await Excel.run(async (context) => {
               let worksheet = context.workbook.worksheets.getItem("Sample");
               let range = worksheet.getRange("A1:E1");
@@ -220,6 +237,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Style#includeAlignment:member'
     summary: >-
@@ -346,12 +364,17 @@ items:
       return:
         type:
           - 'excel!Excel.Style:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+
           await Excel.run(async (context) => {
               let style = context.workbook.styles.getItem("Diagonal Orientation Style");            
               style.load("textOrientation, horizontalAlignment, autoIndent, readingOrder, wrapText, includeProtection, shrinkToFit, locked");
@@ -367,6 +390,7 @@ items:
               console.log("Shrink to fit: " + style.shrinkToFit);
               console.log("Style locked: " + style.locked);
           });
+
           ```
       parameters:
         - id: options

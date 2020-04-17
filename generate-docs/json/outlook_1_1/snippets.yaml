@@ -15,8 +15,12 @@
         var attachmentURL = "https://contoso.com/rtm/icon.png";
         Office.context.mailbox.item.addFileAttachmentAsync(attachmentURL, attachmentURL, options, callback);
     }
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
+
     var attachmentUrl = $("#attachmentUrl").val();
+
     Office.context.mailbox.item.addFileAttachmentAsync(
         attachmentUrl,
         getFileName(attachmentUrl),
@@ -24,6 +28,9 @@
         function(result) { console.log(result); });
 'Office.AppointmentCompose#addFileAttachmentFromBase64Async:member(1)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
+
     base64String =
     "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAACRUlEQVRYw82XzXHbMBCFP2F8tzsQc8Ixyh0zoiuIXIGdCsxUYKqC0B04FdiuwMoM7mGOOIXqQGoAymXhgSX+itJM9kIRFLAP+3YXD5Pdbscx5oxaAIW8Ztr6l2PWmQwF4IyaieP53qdfAqQ8CwBn1JU4vpWhrbxXQA5MZfynANmcDIAzKgcy4FKGXsVJFf3nLgKyBQptfT4KQMRz2N0fcbxqmRMDWXflx0VPnrdArq0vekQ1Dv0UeHZGNebHhwjU8AzwKM43RyZnbAf58Q6ghudeWd0Aus0+5EcMIIRi3beua0D3Nm39BEAx3i7HTK4DEBJn5YxKOnaRA5+ErpMBWMpzDvx1RuXCcxOISlufAjfC7zgAsqsvUvMAD0ApPaEtGi9AIlUzKgJo60tt/SyKRkzLrAXERluf7W1gOICWaMyB386oooOWsIHvXbSoHuUSFovtHqicUVnH3EJoeT0aQEf5/XBGlc6otIOWBXAtPeZkAIJ9Bt6cUU9tZautX2nrk3MACHYr1ZKProKRtDw4o8pzAPjWo+NtpXTTvoteDDg8noDAcwbcRedAkGdFXyk2GEDcegVAFp2gyVDHjRQ4o6q2smoqtR5Hd+qMqtoALCWUUymr1m43QMZfOaMK4C0SrMsDANJ2E5FNcbdbjHC+ENl+H0myJFbLtaq4Rt8dyPBYRQV1E40nMv9rl7xrOw3DGb+Whcqu3i/OM6CUOWvgRlufNmnLYy4m77uJI7AXtdNcTDrU71LEyv7v01/N/ovL6bmu5/8A1tNWZldH0W4AAAAASUVORK5CYII=";
 
@@ -66,8 +73,12 @@
 
         Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
     }
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
+
     var attachmentItemId = $("#attachmentItemId").val();
+
     Office.context.mailbox.item.addItemAttachmentAsync(
         attachmentItemId,
         "My attachment",
@@ -93,7 +104,10 @@
         "asyncContext": "This is passed to the callback"
     }
 'Office.AppointmentCompose#categories:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
+
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var categories = asyncResult.value;
@@ -107,9 +121,14 @@
         console.error(asyncResult.error);
       }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
+
     // Note: In order for you to successfully add a category,
+
     // it must be in the mailbox categories master list.
+
 
     Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -131,7 +150,10 @@
         console.error(asyncResult.error);
       }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
+
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var categories = asyncResult.value;
@@ -153,9 +175,16 @@
       }
     });
 'Office.AppointmentCompose#close:member(1)':
-  - Office.context.mailbox.item.close();
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/25-item-save-and-close/close.yaml
+
+    Office.context.mailbox.item.close();
 'Office.AppointmentCompose#disableClientSignatureAsync:member(2)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
+
     // Disable the client signature.
 
     Office.context.mailbox.item.disableClientSignatureAsync(function(asyncResult)
@@ -189,7 +218,10 @@
             console.debug("End Time " + result.asyncContext.verb);
         }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-end-appointment-organizer.yaml
+
     Office.context.mailbox.item.end.getAsync((result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Action failed with message ${result.error.message}`);
@@ -197,7 +229,10 @@
       }
       console.log(`Appointment ends: ${result.value}`);
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-end-appointment-organizer.yaml
+
     Office.context.mailbox.item.start.getAsync((result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Get start date failed with message ${result.error.message}`);
@@ -215,7 +250,10 @@
       });
     });
 'Office.AppointmentCompose#enhancedLocation:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
+
     Office.context.mailbox.item.enhancedLocation.getAsync((result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Failed to get locations. Error message: ${result.error.message}`);
@@ -234,6 +272,9 @@
       }
     });
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
+
     var locations = [
       {
         id: "Contoso",
@@ -254,6 +295,9 @@
       }
     });
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
+
     var locations = [
       {
         id: "Contoso",
@@ -274,10 +318,16 @@
       }
     });
 'Office.AppointmentCompose#getAttachmentContentAsync:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/get-attachment-content.yaml
+
     var item = Office.context.mailbox.item;
+
     var options = {asyncContext: {currentItem: item}};
+
     item.getAttachmentsAsync(options, callback);
+
 
     function callback(result) {
         if (result.value.length > 0) {
@@ -286,6 +336,7 @@
             }
         }
     }
+
 
     function handleAttachmentsCallback(result) {
         // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
@@ -311,7 +362,10 @@
         }
     }
 'Office.AppointmentCompose#getAttachmentsAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
+
     Office.context.mailbox.item.getAttachmentsAsync(function (result) {
         if (result.status !== Office.AsyncResultStatus.Succeeded) {
             console.error(result.error.message);
@@ -351,7 +405,10 @@
         }
     );
 'Office.AppointmentCompose#getItemIdAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/item-id-compose.yaml
+
     Office.context.mailbox.item.getItemIdAsync(function (result) {
         if (result.status !== Office.AsyncResultStatus.Succeeded) {
             console.error(`getItemIdAsync failed with message: ${result.error.message}`);
@@ -374,6 +431,9 @@
     }
 'Office.AppointmentCompose#getSelectedDataAsync:member(2)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/20-item-body/get-selected-data.yaml
+
     Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text,
     function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -386,6 +446,9 @@
     });
 'Office.AppointmentCompose#getSharedPropertiesAsync:member(1)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
+
     if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
       console.error("Try this sample on a message from a shared folder.");
       return;
@@ -428,17 +491,24 @@
       }
     });
 'Office.AppointmentCompose#getSharedPropertiesAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
+
     if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
       console.error("Try this sample on a message from a shared folder.");
       return;
     }
 
+
     Office.context.mailbox.item.getSharedPropertiesAsync(function(result) {
       console.log(result.value);
     });
 'Office.AppointmentCompose#isAllDayEvent:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
+
     Office.context.mailbox.item.isAllDayEvent.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         console.log("Is this an all-day event? " + asyncResult.value);
@@ -447,6 +517,9 @@
       }
     });
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
+
     Office.context.mailbox.item.isAllDayEvent.setAsync(true,
     function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Failed) {
@@ -457,6 +530,9 @@
     });
 'Office.AppointmentCompose#isClientSignatureEnabledAsync:member(2)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
+
     // Check if the client signature is currently enabled.
 
     Office.context.mailbox.item.isClientSignatureEnabledAsync(function(asyncResult)
@@ -468,7 +544,11 @@
       }
     });
 'Office.AppointmentCompose#itemType:member':
-  - 'console.log(`Item type: ${Office.context.mailbox.item.itemType}`);'
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-item-type.yaml
+
+    console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
 'Office.AppointmentCompose#loadCustomPropertiesAsync:member(1)':
   - >-
     // The following example shows how to use the loadCustomPropertiesAsync
@@ -513,7 +593,10 @@
     function saveCallback(asyncResult) {
 
     }
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
+
     Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
       if (result.status === Office.AsyncResultStatus.Succeeded) {
         console.log("Loaded following custom properties:");
@@ -542,7 +625,10 @@
         var context = asyncResult.context;
         var location = asyncResult.value;
     }
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
+
     Office.context.mailbox.item.location.getAsync((result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Action failed with message ${result.error.message}`);
@@ -550,8 +636,12 @@
       }
       console.log(`Appointment location: ${result.value}`);
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
+
     var location = "my office";
+
     Office.context.mailbox.item.location.setAsync(location, (result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Action failed with message ${result.error.message}`);
@@ -561,6 +651,9 @@
     });
 'Office.AppointmentCompose#notificationMessages:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     var details =
@@ -571,6 +664,9 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     var details =
@@ -583,6 +679,9 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     var details =
@@ -595,9 +694,16 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
+
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
       {
@@ -608,6 +714,9 @@
       },
       handleResult);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
@@ -627,6 +736,9 @@
         var arrayOfOptionalAttendeesRecipients = asyncResult.value;
     }
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-optional-attendees-appointment-organizer.yaml
+
     Office.context.mailbox.item.optionalAttendees.getAsync(function(asyncResult)
     {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -646,6 +758,9 @@
       }
     });
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-optional-attendees-appointment-organizer.yaml
+
     var email = $("#emailOptional")
       .val()
       .toString();
@@ -660,7 +775,10 @@
       }
     });
 'Office.AppointmentCompose#organizer:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-organizer-appointment-organizer.yaml
+
     Office.context.mailbox.item.organizer.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var apptOrganizer = asyncResult.value;
@@ -670,7 +788,10 @@
       }
     });
 'Office.AppointmentCompose#recurrence:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
+
     Office.context.mailbox.item.recurrence.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var recurrence = asyncResult.value;
@@ -683,27 +804,41 @@
         console.error(asyncResult.error);
       }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
+
     // Important: Can only set the recurrence pattern of an appointment series.
 
+
     var currentDate = new Date();
+
     let seriesTimeObject : Office.SeriesTime;
+
     // Set series start date to tomorrow.
+
     seriesTimeObject.setStartDate(
       currentDate.getFullYear(),
       currentDate.getMonth(),
       currentDate.getDay() + 1
     );
+
     // Set series end date to 1 month from now.
+
     seriesTimeObject.setEndDate(
       currentDate.getFullYear(),
       currentDate.getMonth() + 1,
       currentDate.getDay()
     );
+
     // Set start time to 1:30 PM.
+
     seriesTimeObject.setStartTime(13, 30);
+
     // Set duration to 30 minutes.
+
     seriesTimeObject.setDuration(30);
+
 
     let pattern : Office.Recurrence = {
       seriesTime: seriesTimeObject,
@@ -711,6 +846,7 @@
       recurrenceProperties: { interval: 1, days: ["tue", "thu"], firstDayOfWeek: "sun" },
       recurrenceTimeZone: { name: "Pacific Standard Time" }
     };
+
 
     Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
       if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
@@ -730,7 +866,10 @@
             console.log(asyncResult.status);
         }
     );
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
+
     Office.context.mailbox.item.removeAttachmentAsync(
         $("#attachmentId").val(),
         { asyncContext : null },
@@ -759,6 +898,9 @@
         console.log(JSON.stringify(arrayOfRequiredAttendeesRecipients));
     }
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-required-attendees-appointment-organizer.yaml
+
     Office.context.mailbox.item.requiredAttendees.getAsync(function(asyncResult)
     {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -778,6 +920,9 @@
       }
     });
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-required-attendees-appointment-organizer.yaml
+
     var email = $("#emailRequired")
       .val()
       .toString();
@@ -792,7 +937,10 @@
       }
     });
 'Office.AppointmentCompose#saveAsync:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/25-item-save-and-close/save.yaml
+
     Office.context.mailbox.item.saveAsync(function (result) {
       if (result.status === Office.AsyncResultStatus.Succeeded) {
         console.log(`saveAsync succeeded, itemId is ${result.value}`);
@@ -818,7 +966,10 @@
         "status": "succeeded"
     }
 'Office.AppointmentCompose#sensitivity:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
+
     Office.context.mailbox.item.sensitivity.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         console.log("Sensitivity: " + asyncResult.value);
@@ -826,7 +977,10 @@
         console.log("Failed to get sensitivity: " + JSON.stringify(asyncResult.error));
       }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
+
     Office.context.mailbox.item.sensitivity.setAsync(
       Office.MailboxEnums.AppointmentSensitivityType.Confidential,
       function callback(asyncResult) {
@@ -838,8 +992,12 @@
       }
     );
 'Office.AppointmentCompose#seriesId:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-series-id.yaml
+
     var seriesId = Office.context.mailbox.item.seriesId;
+
 
     if (seriesId === undefined) {
       console.log("This is a message that's not a meeting request.");
@@ -855,6 +1013,9 @@
 'Office.AppointmentCompose#setSelectedDataAsync:member(2)':
   - Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/20-item-body/set-selected-data.yaml
+
     Office.context.mailbox.item.setSelectedDataAsync("Replaced",
     function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -864,7 +1025,10 @@
       }
     });
 'Office.AppointmentCompose#start:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
+
     Office.context.mailbox.item.start.getAsync((result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Action failed with message ${result.error.message}`);
@@ -872,9 +1036,14 @@
       }
       console.log(`Appointment starts: ${result.value}`);
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
+
     var start = new Date(); // Represents current date and time.
+
     start.setDate(start.getDate() + 2); // Add 2 days to current date.
+
     Office.context.mailbox.item.start.setAsync(start, (result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Action failed with message ${result.error.message}`);
@@ -883,7 +1052,10 @@
       console.log(`Successfully set start date and time to ${start}`);
     });
 'Office.AppointmentCompose#subject:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
+
     Office.context.mailbox.item.subject.getAsync((result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Action failed with message ${result.error.message}`);
@@ -891,8 +1063,12 @@
       }
       console.log(`Subject: ${result.value}`);
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
+
     let subject = "Hello World!";
+
     Office.context.mailbox.item.subject.setAsync(subject, (result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Action failed with message ${result.error.message}`);
@@ -938,8 +1114,12 @@
 
 
     console.log(outputString);
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/get-attachments-read.yaml
+
     var attachments = Office.context.mailbox.item.attachments;
+
     console.log(attachments);
 'Office.AppointmentRead#body:member':
   - >-
@@ -961,7 +1141,10 @@
         "asyncContext": "This is passed to the callback"
     }
 'Office.AppointmentRead#categories:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
+
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var categories = asyncResult.value;
@@ -975,9 +1158,14 @@
         console.error(asyncResult.error);
       }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
+
     // Note: In order for you to successfully add a category,
+
     // it must be in the mailbox categories master list.
+
 
     Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -999,7 +1187,10 @@
         console.error(asyncResult.error);
       }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
+
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var categories = asyncResult.value;
@@ -1022,10 +1213,16 @@
     });
 'Office.AppointmentRead#dateTimeCreated:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-date-time-created-read.yaml
+
     console.log(`Creation date and time:
     ${Office.context.mailbox.item.dateTimeCreated}`);
 'Office.AppointmentRead#dateTimeModified:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-date-time-modified-read.yaml
+
     console.log(`Date and time item last modified:
     ${Office.context.mailbox.item.dateTimeModified}`);
 'Office.AppointmentRead#displayReplyAllForm:member(1)':
@@ -1093,7 +1290,10 @@
             console.log(asyncResult.value);
         }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
+
     Office.context.mailbox.item.displayReplyAllForm(
       "This is a reply ALL with <b>some bold text</b>."
     );
@@ -1162,12 +1362,19 @@
             console.log(asyncResult.value);
         }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
+
     Office.context.mailbox.item.displayReplyForm(
       "This is a reply with <i>some text in italics</i>."
     );
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-with-attachments.yaml
+
     Office.context.mailbox.item.displayReplyForm(
+
     {
         htmlBody : "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
         attachments :
@@ -1185,9 +1392,16 @@
         }
     });
 'Office.AppointmentRead#end:member':
-  - 'console.log(`Appointment ends: ${Office.context.mailbox.item.end}`);'
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-end-read.yaml
+
+    console.log(`Appointment ends: ${Office.context.mailbox.item.end}`);
 'Office.AppointmentRead#enhancedLocation:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
+
     Office.context.mailbox.item.enhancedLocation.getAsync((result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Failed to get locations. Error message: ${result.error.message}`);
@@ -1206,10 +1420,16 @@
       }
     });
 'Office.AppointmentRead#getAttachmentContentAsync:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/get-attachment-content.yaml
+
     var item = Office.context.mailbox.item;
+
     var options = {asyncContext: {currentItem: item}};
+
     item.getAttachmentsAsync(options, callback);
+
 
     function callback(result) {
         if (result.value.length > 0) {
@@ -1218,6 +1438,7 @@
             }
         }
     }
+
 
     function handleAttachmentsCallback(result) {
         // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
@@ -1243,53 +1464,72 @@
         }
     }
 'Office.AppointmentRead#getEntities:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
+
     var entities = Office.context.mailbox.item.getEntities();
+
     var entityTypesFound = 0;
+
     if (entities.addresses.length > 0) {
         console.warn("physical addresses: ");
         console.log(entities.addresses);
         entityTypesFound++;
     }
+
     if (entities.contacts.length > 0) {
         console.warn("contacts: ");
         entities.contacts.forEach(function (contact) { console.log(contact.personName); })
         entityTypesFound++;
     }
+
     if (entities.emailAddresses.length > 0) {
         console.warn("email addresses: ");
         console.log(entities.emailAddresses);
         entityTypesFound++;
     }
+
     if (entities.meetingSuggestions.length > 0) {
         console.warn("meetings suggestions: ");
         entities.meetingSuggestions.forEach(function (meetingSuggestion) { console.log(meetingSuggestion.meetingString); })
         entityTypesFound++;
     }
+
     if (entities.phoneNumbers.length > 0) {
         console.warn("phone numbers: ");
         entities.phoneNumbers.forEach(function (phoneNumber) { console.log(phoneNumber.originalPhoneString); })
         entityTypesFound++;
     }
+
     if (entities.taskSuggestions.length > 0) {
         console.warn("task suggestions: ");
         entities.taskSuggestions.forEach(function (taskSuggestion) { console.log(taskSuggestion.taskString); })
         entityTypesFound++;
     }
+
     if (entities.urls.length > 0) {
         console.warn("URLs: ");
         console.log(entities.urls);
         entityTypesFound++;
     }
+
     if (entityTypesFound == 0)
+
     {
         console.log("No entities found on this item.");
     }
 'Office.AppointmentRead#getEntitiesByType:member(1)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
+
     console.log(Office.context.mailbox.item.getEntitiesByType(Office.MailboxEnums.EntityType.Address));
 'Office.AppointmentRead#getFilteredEntitiesByName:member(1)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/contextual.yaml
+
     // This API would only work when you click on highlighted physical address
     that has the word "Way" in it.
 
@@ -1363,8 +1603,12 @@
     var fruits = allMatches.fruits;
 
     var veggies = allMatches.veggies;
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/contextual.yaml
+
     // This API would only work when you click on highlighted word "ScriptLab".
+
     console.log(Office.context.mailbox.item.getRegExMatches());
 'Office.AppointmentRead#getRegExMatchesByName:member(1)':
   - >-
@@ -1405,49 +1649,65 @@
 
     var veggies = Office.context.mailbox.item.getRegExMatchesByName("veggies");
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/contextual.yaml
+
     // This API would only work when you click on highlighted word "ScriptLab".
 
     console.log(Office.context.mailbox.item.getRegExMatchesByName("sampleRegexName"));
 'Office.AppointmentRead#getSelectedEntities:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/selected.yaml
+
     var entities = Office.context.mailbox.item.getSelectedEntities();
+
     var entityTypesFound = 0;
+
     if (entities.addresses.length > 0) {
         console.warn("physical addresses: ");
         console.log(entities.addresses);
         entityTypesFound++;
     }
+
     if (entities.contacts.length > 0) {
         console.warn("contacts: ");
         entities.contacts.forEach(function (contact) { console.log(contact.personName); })
         entityTypesFound++;
     }
+
     if (entities.emailAddresses.length > 0) {
         console.warn("email addresses: ");
         console.log(entities.emailAddresses);
         entityTypesFound++;
     }
+
     if (entities.meetingSuggestions.length > 0) {
         console.warn("meetings suggestions: ");
         entities.meetingSuggestions.forEach(function (meetingSuggestion) { console.log(meetingSuggestion.meetingString); })
         entityTypesFound++;
     }
+
     if (entities.phoneNumbers.length > 0) {
         console.warn("phone numbers: ");
         entities.phoneNumbers.forEach(function (phoneNumber) { console.log(phoneNumber.originalPhoneString); })
         entityTypesFound++;
     }
+
     if (entities.taskSuggestions.length > 0) {
         console.warn("task suggestions: ");
         entities.taskSuggestions.forEach(function (taskSuggestion) { console.log(taskSuggestion.taskString); })
         entityTypesFound++;
     }
+
     if (entities.urls.length > 0) {
         console.warn("URLs: ");
         console.log(entities.urls);
         entityTypesFound++;
     }
+
     if (entityTypesFound == 0)
+
     {
         console.error("Open add-in by clicking on a highlighted entity, for this API to return something useful.");
     }
@@ -1497,16 +1757,24 @@
     var fruits = selectedMatches.fruits;
 
     var veggies = selectedMatches.veggies;
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/selected.yaml
+
     var matches = Office.context.mailbox.item.getSelectedRegExMatches();
+
     if (matches) {
         console.log(matches);
     }
+
     else {
         console.error("Open add-in by clicking on a highlighted regex match, for this API to return something useful.");
     }
 'Office.AppointmentRead#getSharedPropertiesAsync:member(1)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
+
     if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
       console.error("Try this sample on a message from a shared folder.");
       return;
@@ -1549,11 +1817,15 @@
       }
     });
 'Office.AppointmentRead#getSharedPropertiesAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
+
     if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
       console.error("Try this sample on a message from a shared folder.");
       return;
     }
+
 
     Office.context.mailbox.item.getSharedPropertiesAsync(function(result) {
       console.log(result.value);
@@ -1563,7 +1835,11 @@
     var isAllDayEvent = Office.context.mailbox.item.isAllDayEvent;
     console.log("Is this an all-day event? " + isAllDayEvent);
 'Office.AppointmentRead#itemClass:member':
-  - 'console.log(`Item class: ${Office.context.mailbox.item.itemClass}`);'
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-item-class-read.yaml
+
+    console.log(`Item class: ${Office.context.mailbox.item.itemClass}`);
 'Office.AppointmentRead#itemId:member':
   - |-
     // The following code checks for the presence of an item
@@ -1579,7 +1855,11 @@
         });
     }
 'Office.AppointmentRead#itemType:member':
-  - 'console.log(`Item type: ${Office.context.mailbox.item.itemType}`);'
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-item-type.yaml
+
+    console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
 'Office.AppointmentRead#loadCustomPropertiesAsync:member(1)':
   - >-
     // The following example shows how to use the loadCustomPropertiesAsync
@@ -1624,7 +1904,10 @@
     function saveCallback(asyncResult) {
 
     }
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
+
     Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
       if (result.status === Office.AsyncResultStatus.Succeeded) {
         console.log("Loaded following custom properties:");
@@ -1646,14 +1929,23 @@
     var location = Office.context.mailbox.item.location;
     console.log("location: " + location);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-location-read.yaml
+
     console.log(`Appointment location:
     ${Office.context.mailbox.item.location}`);
 'Office.AppointmentRead#normalizedSubject:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-normalized-subject-read.yaml
+
     console.log(`Normalized subject:
     ${Office.context.mailbox.item.normalizedSubject}`);
 'Office.AppointmentRead#notificationMessages:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     var details =
@@ -1664,6 +1956,9 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     var details =
@@ -1676,6 +1971,9 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     var details =
@@ -1688,9 +1986,16 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
+
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
       {
@@ -1701,14 +2006,22 @@
       },
       handleResult);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
     handleResult);
 'Office.AppointmentRead#optionalAttendees:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-optional-attendees-appointment-attendee.yaml
+
     var apptOptionalAttendees = Office.context.mailbox.item.optionalAttendees;
+
     console.log("Optional attendees:");
+
     for (var i = 0; i < apptOptionalAttendees.length; i++) {
       console.log(
         apptOptionalAttendees[i].displayName +
@@ -1720,13 +2033,20 @@
     }
 'Office.AppointmentRead#organizer:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-organizer-appointment-attendee.yaml
+
     var apptOrganizer = Office.context.mailbox.item.organizer;
 
     console.log("Organizer: " + apptOrganizer.displayName + " (" +
     apptOrganizer.emailAddress + ")");
 'Office.AppointmentRead#recurrence:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-recurrence-read.yaml
+
     var recurrence = Office.context.mailbox.item.recurrence;
+
 
     if (recurrence === undefined) {
       console.log("This item is a message but not a meeting request.");
@@ -1736,9 +2056,14 @@
       console.log(JSON.stringify(recurrence));
     }
 'Office.AppointmentRead#requiredAttendees:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-required-attendees-appointment-attendee.yaml
+
     var apptRequiredAttendees = Office.context.mailbox.item.requiredAttendees;
+
     console.log("Required attendees:");
+
     for (var i = 0; i < apptRequiredAttendees.length; i++) {
       console.log(
         apptRequiredAttendees[i].displayName +
@@ -1753,8 +2078,12 @@
     var sensitivity = Office.context.mailbox.item.sensitivity;
     console.log("Sensitivity: " + sensitivity);
 'Office.AppointmentRead#seriesId:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-series-id.yaml
+
     var seriesId = Office.context.mailbox.item.seriesId;
+
 
     if (seriesId === undefined) {
       console.log("This is a message that's not a meeting request.");
@@ -1764,9 +2093,17 @@
       console.log("This is an instance belonging to series with ID " + seriesId);
     }
 'Office.AppointmentRead#start:member':
-  - 'console.log(`Appointment starts: ${Office.context.mailbox.item.start}`);'
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-start-read.yaml
+
+    console.log(`Appointment starts: ${Office.context.mailbox.item.start}`);
 'Office.AppointmentRead#subject:member':
-  - 'console.log(`Subject: ${Office.context.mailbox.item.subject}`);'
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-subject-read.yaml
+
+    console.log(`Subject: ${Office.context.mailbox.item.subject}`);
 'Office.AttachmentContent#format:member':
   - |-
     var item = Office.context.mailbox.item;
@@ -1904,6 +2241,9 @@
         callback);
 'Office.Body#setSignatureAsync:member(2)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
+
     // Set the signature for the current item.
 
     var signature = $("#signature").val();
@@ -1919,9 +2259,14 @@
       }
     });
 'Office.Categories#addAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
+
     // Note: In order for you to successfully add a category,
+
     // it must be in the mailbox categories master list.
+
 
     Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -1944,7 +2289,10 @@
       }
     });
 'Office.Categories#getAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
+
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var categories = asyncResult.value;
@@ -1959,7 +2307,10 @@
       }
     });
 'Office.Categories#removeAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
+
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var categories = asyncResult.value;
@@ -2036,6 +2387,9 @@
     */
 'Office.CustomProperties#get:member(1)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
+
     var propertyName = $("#propertyName").val();
 
     var propertyValue = customProps.get(propertyName);
@@ -2045,9 +2399,14 @@
     console.log(`The value of custom property "${propertyName}" is
     "${propertyValue}".`);
 'Office.CustomProperties#remove:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
+
     var propertyName = $("#propertyName").val();
+
     customProps.remove(propertyName);
+
     console.log(`Custom property "${propertyName}" removed.`);
 'Office.CustomProperties#saveAsync:member(1)':
   - |-
@@ -2090,6 +2449,9 @@
     }
 'Office.CustomProperties#set:member(1)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
+
     var propertyName = $("#propertyName").val();
 
     var propertyValue = $("#propertyValue").val();
@@ -2133,6 +2495,9 @@
     });
 'Office.EnhancedLocation#addAsync:member(2)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
+
     var locations = [
       {
         id: "Contoso",
@@ -2153,7 +2518,10 @@
       }
     });
 'Office.EnhancedLocation#getAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
+
     Office.context.mailbox.item.enhancedLocation.getAsync((result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Failed to get locations. Error message: ${result.error.message}`);
@@ -2173,6 +2541,9 @@
     });
 'Office.EnhancedLocation#removeAsync:member(2)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
+
     var locations = [
       {
         id: "Contoso",
@@ -2233,7 +2604,10 @@
     var item = Office.context.mailbox.item;
     var urls = item.getEntitiesByType(Office.MailboxEnums.EntityType.Url);
 'Office.From#getAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-from-message-compose.yaml
+
     Office.context.mailbox.item.from.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var msgFrom = asyncResult.value;
@@ -2261,7 +2635,10 @@
     Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1",
     "header2": "value2"});
 'Office.IsAllDayEvent#getAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
+
     Office.context.mailbox.item.isAllDayEvent.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         console.log("Is this an all-day event? " + asyncResult.value);
@@ -2271,6 +2648,9 @@
     });
 'Office.IsAllDayEvent#setAsync:member(2)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
+
     Office.context.mailbox.item.isAllDayEvent.setAsync(true,
     function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Failed) {
@@ -2292,7 +2672,10 @@
         var location = asyncResult.value;
     }
 'Office.Location#getAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
+
     Office.context.mailbox.item.location.getAsync((result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Action failed with message ${result.error.message}`);
@@ -2301,8 +2684,12 @@
       console.log(`Appointment location: ${result.value}`);
     });
 'Office.Location#setAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
+
     var location = "my office";
+
     Office.context.mailbox.item.location.setAsync(location, (result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Action failed with message ${result.error.message}`);
@@ -2349,6 +2736,9 @@
     }
 'Office.Mailbox#convertToEwsId:member(1)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
+
     console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
     var ewsId = Office.context.mailbox.item.itemId;
@@ -2370,6 +2760,9 @@
     console.log("EWS ID (from REST ID): " + ewsId2);
 'Office.Mailbox#convertToRestId:member(1)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
+
     Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function
     (result) {
         var ewsId = Office.context.mailbox.item.itemId;
@@ -2386,6 +2779,9 @@
         xhr.send();
     });
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
+
     console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
     var ewsId = Office.context.mailbox.item.itemId;
@@ -2425,20 +2821,35 @@
     // Output should be "2019-08-26T22:37:02.002Z".
     console.log(result.toISOString());
 'Office.Mailbox#displayAppointmentForm:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-existing-appointment.yaml
+
     var itemId = $("#itemId").val();
+
     Office.context.mailbox.displayAppointmentForm(itemId);
 'Office.Mailbox#displayMessageForm:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-existing-message.yaml
+
     var itemId = $("#itemId").val();
+
     Office.context.mailbox.displayMessageForm(itemId);
 'Office.Mailbox#displayNewAppointmentForm:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-new-appointment.yaml
+
     var start = new Date();
+
     var end = new Date();
+
     end.setHours(start.getHours() + 1);
 
+
     Office.context.mailbox.displayNewAppointmentForm(
+
     {
         requiredAttendees: ['bob@contoso.com'],
         optionalAttendees: ['sam@contoso.com'],
@@ -2450,8 +2861,12 @@
         body: 'Hello World!'
     });
 'Office.Mailbox#displayNewMessageForm:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-new-message.yaml
+
     Office.context.mailbox.displayNewMessageForm(
+
     {
         toRecipients: Office.context.mailbox.item.to, // Copies the To line from current item
         ccRecipients: ['sam@contoso.com'],
@@ -2469,6 +2884,9 @@
     });
 'Office.Mailbox#ewsUrl:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
+
     console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
     var ewsId = Office.context.mailbox.item.itemId;
@@ -2490,6 +2908,9 @@
     console.log("EWS ID (from REST ID): " + ewsId2);
 'Office.Mailbox#getCallbackTokenAsync:member(1)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
+
     Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function
     (result) {
         var ewsId = Office.context.mailbox.item.itemId;
@@ -2506,7 +2927,10 @@
         xhr.send();
     });
 'Office.Mailbox#getCallbackTokenAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/user-callback-token.yaml
+
     Office.context.mailbox.getCallbackTokenAsync(function (result) {
         if (result.status !== Office.AsyncResultStatus.Succeeded) {
             console.error(`Token retrieval failed with message: ${result.error.message}`);
@@ -2515,7 +2939,10 @@
         }
     });
 'Office.Mailbox#getUserIdentityTokenAsync:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/user-identity-token.yaml
+
     Office.context.mailbox.getUserIdentityTokenAsync(function (result) {
         if (result.status !== Office.AsyncResultStatus.Succeeded) {
             console.error(`Token retrieval failed with message: ${result.error.message}`);
@@ -2565,6 +2992,9 @@
         // Process the returned response here.
     }
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/make-ews-request-async.yaml
+
     var ewsId = Office.context.mailbox.item.itemId;
 
     var request = '<soap:Envelope
@@ -2589,6 +3019,9 @@
         console.log(result);
     });
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/send-message-using-make-ews-request-async.yaml
+
     var request = '<soap:Envelope
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages"
@@ -2615,7 +3048,10 @@
         console.log(result);
     });
 'Office.Mailbox#masterCategories:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-master-categories.yaml
+
     Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var categories = asyncResult.value;
@@ -2630,6 +3066,9 @@
       }
     });
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-master-categories.yaml
+
     var masterCategoriesToAdd = [
       {
         displayName: "TestCategory",
@@ -2647,6 +3086,9 @@
       }
     });
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-master-categories.yaml
+
     var masterCategoriesToRemove = ["TestCategory"];
 
 
@@ -2660,6 +3102,9 @@
     });
 'Office.Mailbox#restUrl:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
+
     Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function
     (result) {
         var ewsId = Office.context.mailbox.item.itemId;
@@ -2676,6 +3121,9 @@
         xhr.send();
     });
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
+
     console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
 
     var ewsId = Office.context.mailbox.item.itemId;
@@ -2697,6 +3145,9 @@
     console.log("EWS ID (from REST ID): " + ewsId2);
 'Office.MasterCategories#addAsync:member(2)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-master-categories.yaml
+
     var masterCategoriesToAdd = [
       {
         displayName: "TestCategory",
@@ -2714,7 +3165,10 @@
       }
     });
 'Office.MasterCategories#getAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-master-categories.yaml
+
     Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var categories = asyncResult.value;
@@ -2730,6 +3184,9 @@
     });
 'Office.MasterCategories#removeAsync:member(2)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-master-categories.yaml
+
     var masterCategoriesToRemove = ["TestCategory"];
 
 
@@ -2798,8 +3255,12 @@
                     // Do something here.
                 });
         });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
+
     var attachmentUrl = $("#attachmentUrl").val();
+
     Office.context.mailbox.item.addFileAttachmentAsync(
         attachmentUrl,
         getFileName(attachmentUrl),
@@ -2807,6 +3268,9 @@
         function(result) { console.log(result); });
 'Office.MessageCompose#addFileAttachmentFromBase64Async:member(1)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
+
     base64String =
     "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsSAAALEgHS3X78AAACRUlEQVRYw82XzXHbMBCFP2F8tzsQc8Ixyh0zoiuIXIGdCsxUYKqC0B04FdiuwMoM7mGOOIXqQGoAymXhgSX+itJM9kIRFLAP+3YXD5Pdbscx5oxaAIW8Ztr6l2PWmQwF4IyaieP53qdfAqQ8CwBn1JU4vpWhrbxXQA5MZfynANmcDIAzKgcy4FKGXsVJFf3nLgKyBQptfT4KQMRz2N0fcbxqmRMDWXflx0VPnrdArq0vekQ1Dv0UeHZGNebHhwjU8AzwKM43RyZnbAf58Q6ghudeWd0Aus0+5EcMIIRi3beua0D3Nm39BEAx3i7HTK4DEBJn5YxKOnaRA5+ErpMBWMpzDvx1RuXCcxOISlufAjfC7zgAsqsvUvMAD0ApPaEtGi9AIlUzKgJo60tt/SyKRkzLrAXERluf7W1gOICWaMyB386oooOWsIHvXbSoHuUSFovtHqicUVnH3EJoeT0aQEf5/XBGlc6otIOWBXAtPeZkAIJ9Bt6cUU9tZautX2nrk3MACHYr1ZKProKRtDw4o8pzAPjWo+NtpXTTvoteDDg8noDAcwbcRedAkGdFXyk2GEDcegVAFp2gyVDHjRQ4o6q2smoqtR5Hd+qMqtoALCWUUymr1m43QMZfOaMK4C0SrMsDANJ2E5FNcbdbjHC+ENl+H0myJFbLtaq4Rt8dyPBYRQV1E40nMv9rl7xrOw3DGb+Whcqu3i/OM6CUOWvgRlufNmnLYy4m77uJI7AXtdNcTDrU71LEyv7v01/N/ovL6bmu5/8A1tNWZldH0W4AAAAASUVORK5CYII=";
 
@@ -2849,8 +3313,12 @@
 
         Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
     }
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
+
     var attachmentItemId = $("#attachmentItemId").val();
+
     Office.context.mailbox.item.addItemAttachmentAsync(
         attachmentItemId,
         "My attachment",
@@ -2869,7 +3337,10 @@
     function callback(asyncResult) {
         var arrayOfBccRecipients = asyncResult.value;
     }
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
+
     Office.context.mailbox.item.bcc.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var msgBcc = asyncResult.value;
@@ -2881,11 +3352,15 @@
         console.error(asyncResult.error);
       }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
+
     var email = $("#emailBcc")
       .val()
       .toString();
     var emailArray = [email];
+
     Office.context.mailbox.item.bcc.setAsync(emailArray, function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         console.log("Succeeded in setting Bcc field.");
@@ -2913,7 +3388,10 @@
         "asyncContext": "This is passed to the callback"
     }
 'Office.MessageCompose#categories:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
+
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var categories = asyncResult.value;
@@ -2927,9 +3405,14 @@
         console.error(asyncResult.error);
       }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
+
     // Note: In order for you to successfully add a category,
+
     // it must be in the mailbox categories master list.
+
 
     Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -2951,7 +3434,10 @@
         console.error(asyncResult.error);
       }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
+
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var categories = asyncResult.value;
@@ -2985,7 +3471,10 @@
     function callback(asyncResult) {
         var arrayOfCcRecipients = asyncResult.value;
     }
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
+
     Office.context.mailbox.item.cc.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var msgCc = asyncResult.value;
@@ -2997,11 +3486,15 @@
         console.error(asyncResult.error);
       }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
+
     var email = $("#emailCc")
       .val()
       .toString();
     var emailArray = [email];
+
     Office.context.mailbox.item.cc.setAsync(emailArray, function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         console.log("Succeeded in setting Cc field.");
@@ -3010,13 +3503,23 @@
       }
     });
 'Office.MessageCompose#close:member(1)':
-  - Office.context.mailbox.item.close();
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/25-item-save-and-close/close.yaml
+
+    Office.context.mailbox.item.close();
 'Office.MessageCompose#conversationId:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-conversation-id-message.yaml
+
     console.log(`Conversation ID:
     ${Office.context.mailbox.item.conversationId}`);
 'Office.MessageCompose#disableClientSignatureAsync:member(2)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
+
     // Disable the client signature.
 
     Office.context.mailbox.item.disableClientSignatureAsync(function(asyncResult)
@@ -3028,7 +3531,10 @@
       }
     });
 'Office.MessageCompose#from:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-from-message-compose.yaml
+
     Office.context.mailbox.item.from.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var msgFrom = asyncResult.value;
@@ -3038,10 +3544,16 @@
       }
     });
 'Office.MessageCompose#getAttachmentContentAsync:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/get-attachment-content.yaml
+
     var item = Office.context.mailbox.item;
+
     var options = {asyncContext: {currentItem: item}};
+
     item.getAttachmentsAsync(options, callback);
+
 
     function callback(result) {
         if (result.value.length > 0) {
@@ -3050,6 +3562,7 @@
             }
         }
     }
+
 
     function handleAttachmentsCallback(result) {
         // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
@@ -3075,7 +3588,10 @@
         }
     }
 'Office.MessageCompose#getAttachmentsAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
+
     Office.context.mailbox.item.getAttachmentsAsync(function (result) {
         if (result.status !== Office.AsyncResultStatus.Succeeded) {
             console.error(result.error.message);
@@ -3092,8 +3608,12 @@
         }
     });
 'Office.MessageCompose#getComposeTypeAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
+
     // Get the compose type of the current item (mail only).
+
     Office.context.mailbox.item.getComposeTypeAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         console.log(
@@ -3130,7 +3650,10 @@
         }
     );
 'Office.MessageCompose#getItemIdAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/item-id-compose.yaml
+
     Office.context.mailbox.item.getItemIdAsync(function (result) {
         if (result.status !== Office.AsyncResultStatus.Succeeded) {
             console.error(`getItemIdAsync failed with message: ${result.error.message}`);
@@ -3153,6 +3676,9 @@
     }
 'Office.MessageCompose#getSelectedDataAsync:member(2)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/20-item-body/get-selected-data.yaml
+
     Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text,
     function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -3165,6 +3691,9 @@
     });
 'Office.MessageCompose#getSharedPropertiesAsync:member(1)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
+
     if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
       console.error("Try this sample on a message from a shared folder.");
       return;
@@ -3207,11 +3736,15 @@
       }
     });
 'Office.MessageCompose#getSharedPropertiesAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
+
     if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
       console.error("Try this sample on a message from a shared folder.");
       return;
     }
+
 
     Office.context.mailbox.item.getSharedPropertiesAsync(function(result) {
       console.log(result.value);
@@ -3228,6 +3761,9 @@
     }
 'Office.MessageCompose#isClientSignatureEnabledAsync:member(2)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
+
     // Check if the client signature is currently enabled.
 
     Office.context.mailbox.item.isClientSignatureEnabledAsync(function(asyncResult)
@@ -3239,7 +3775,11 @@
       }
     });
 'Office.MessageCompose#itemType:member':
-  - 'console.log(`Item type: ${Office.context.mailbox.item.itemType}`);'
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-item-type.yaml
+
+    console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
 'Office.MessageCompose#loadCustomPropertiesAsync:member(1)':
   - >-
     // The following example shows how to use the loadCustomPropertiesAsync
@@ -3284,7 +3824,10 @@
     function saveCallback(asyncResult) {
 
     }
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
+
     Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
       if (result.status === Office.AsyncResultStatus.Succeeded) {
         console.log("Loaded following custom properties:");
@@ -3303,6 +3846,9 @@
     });
 'Office.MessageCompose#notificationMessages:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     var details =
@@ -3313,6 +3859,9 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     var details =
@@ -3325,6 +3874,9 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     var details =
@@ -3337,9 +3889,16 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
+
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
       {
@@ -3350,6 +3909,9 @@
       },
       handleResult);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
@@ -3365,7 +3927,10 @@
             console.log(asyncResult.status);
         }
     );
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
+
     Office.context.mailbox.item.removeAttachmentAsync(
         $("#attachmentId").val(),
         { asyncContext : null },
@@ -3395,8 +3960,12 @@
         "status": "succeeded"
     }
 'Office.MessageCompose#seriesId:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-series-id.yaml
+
     var seriesId = Office.context.mailbox.item.seriesId;
+
 
     if (seriesId === undefined) {
       console.log("This is a message that's not a meeting request.");
@@ -3412,6 +3981,9 @@
 'Office.MessageCompose#setSelectedDataAsync:member(2)':
   - Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/20-item-body/set-selected-data.yaml
+
     Office.context.mailbox.item.setSelectedDataAsync("Replaced",
     function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -3421,7 +3993,10 @@
       }
     });
 'Office.MessageCompose#subject:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
+
     Office.context.mailbox.item.subject.getAsync((result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Action failed with message ${result.error.message}`);
@@ -3429,8 +4004,12 @@
       }
       console.log(`Subject: ${result.value}`);
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
+
     let subject = "Hello World!";
+
     Office.context.mailbox.item.subject.setAsync(subject, (result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Action failed with message ${result.error.message}`);
@@ -3451,7 +4030,10 @@
     function callback(asyncResult) {
         var arrayOfToRecipients = asyncResult.value;
     }
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
+
     Office.context.mailbox.item.to.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var msgTo = asyncResult.value;
@@ -3463,11 +4045,15 @@
         console.error(asyncResult.error);
       }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
+
     var email = $("#emailTo")
       .val()
       .toString();
     var emailArray = [email];
+
     Office.context.mailbox.item.to.setAsync(emailArray, function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         console.log("Succeeded in setting To field.");
@@ -3513,8 +4099,12 @@
 
 
     console.log(outputString);
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/get-attachments-read.yaml
+
     var attachments = Office.context.mailbox.item.attachments;
+
     console.log(attachments);
 'Office.MessageRead#body:member':
   - >-
@@ -3536,7 +4126,10 @@
         "asyncContext": "This is passed to the callback"
     }
 'Office.MessageRead#categories:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
+
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var categories = asyncResult.value;
@@ -3550,9 +4143,14 @@
         console.error(asyncResult.error);
       }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
+
     // Note: In order for you to successfully add a category,
+
     // it must be in the mailbox categories master list.
+
 
     Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -3574,7 +4172,10 @@
         console.error(asyncResult.error);
       }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
+
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var categories = asyncResult.value;
@@ -3596,22 +4197,36 @@
       }
     });
 'Office.MessageRead#cc:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-cc-message-read.yaml
+
     var msgCc = Office.context.mailbox.item.cc;
+
     console.log("Message copied to:");
+
     for (var i = 0; i < msgCc.length; i++) {
       console.log(msgCc[i].displayName + " (" + msgCc[i].emailAddress + ")");
     }
 'Office.MessageRead#conversationId:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-conversation-id-message.yaml
+
     console.log(`Conversation ID:
     ${Office.context.mailbox.item.conversationId}`);
 'Office.MessageRead#dateTimeCreated:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-date-time-created-read.yaml
+
     console.log(`Creation date and time:
     ${Office.context.mailbox.item.dateTimeCreated}`);
 'Office.MessageRead#dateTimeModified:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-date-time-modified-read.yaml
+
     console.log(`Date and time item last modified:
     ${Office.context.mailbox.item.dateTimeModified}`);
 'Office.MessageRead#displayReplyAllForm:member(1)':
@@ -3679,7 +4294,10 @@
             console.log(asyncResult.value);
         }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
+
     Office.context.mailbox.item.displayReplyAllForm(
       "This is a reply ALL with <b>some bold text</b>."
     );
@@ -3748,12 +4366,19 @@
             console.log(asyncResult.value);
         }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
+
     Office.context.mailbox.item.displayReplyForm(
       "This is a reply with <i>some text in italics</i>."
     );
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-with-attachments.yaml
+
     Office.context.mailbox.item.displayReplyForm(
+
     {
         htmlBody : "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
         attachments :
@@ -3771,9 +4396,16 @@
         }
     });
 'Office.MessageRead#end:member':
-  - 'console.log(`Appointment ends: ${Office.context.mailbox.item.end}`);'
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-end-read.yaml
+
+    console.log(`Appointment ends: ${Office.context.mailbox.item.end}`);
 'Office.MessageRead#from:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-from-message-read.yaml
+
     var msgFrom = Office.context.mailbox.item.from;
 
     console.log("Message received from: " + msgFrom.displayName + " (" +
@@ -3796,10 +4428,16 @@
         }
     );
 'Office.MessageRead#getAttachmentContentAsync:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/get-attachment-content.yaml
+
     var item = Office.context.mailbox.item;
+
     var options = {asyncContext: {currentItem: item}};
+
     item.getAttachmentsAsync(options, callback);
+
 
     function callback(result) {
         if (result.value.length > 0) {
@@ -3808,6 +4446,7 @@
             }
         }
     }
+
 
     function handleAttachmentsCallback(result) {
         // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
@@ -3833,53 +4472,72 @@
         }
     }
 'Office.MessageRead#getEntities:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
+
     var entities = Office.context.mailbox.item.getEntities();
+
     var entityTypesFound = 0;
+
     if (entities.addresses.length > 0) {
         console.warn("physical addresses: ");
         console.log(entities.addresses);
         entityTypesFound++;
     }
+
     if (entities.contacts.length > 0) {
         console.warn("contacts: ");
         entities.contacts.forEach(function (contact) { console.log(contact.personName); })
         entityTypesFound++;
     }
+
     if (entities.emailAddresses.length > 0) {
         console.warn("email addresses: ");
         console.log(entities.emailAddresses);
         entityTypesFound++;
     }
+
     if (entities.meetingSuggestions.length > 0) {
         console.warn("meetings suggestions: ");
         entities.meetingSuggestions.forEach(function (meetingSuggestion) { console.log(meetingSuggestion.meetingString); })
         entityTypesFound++;
     }
+
     if (entities.phoneNumbers.length > 0) {
         console.warn("phone numbers: ");
         entities.phoneNumbers.forEach(function (phoneNumber) { console.log(phoneNumber.originalPhoneString); })
         entityTypesFound++;
     }
+
     if (entities.taskSuggestions.length > 0) {
         console.warn("task suggestions: ");
         entities.taskSuggestions.forEach(function (taskSuggestion) { console.log(taskSuggestion.taskString); })
         entityTypesFound++;
     }
+
     if (entities.urls.length > 0) {
         console.warn("URLs: ");
         console.log(entities.urls);
         entityTypesFound++;
     }
+
     if (entityTypesFound == 0)
+
     {
         console.log("No entities found on this item.");
     }
 'Office.MessageRead#getEntitiesByType:member(1)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
+
     console.log(Office.context.mailbox.item.getEntitiesByType(Office.MailboxEnums.EntityType.Address));
 'Office.MessageRead#getFilteredEntitiesByName:member(1)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/contextual.yaml
+
     // This API would only work when you click on highlighted physical address
     that has the word "Way" in it.
 
@@ -3953,8 +4611,12 @@
     var fruits = allMatches.fruits;
 
     var veggies = allMatches.veggies;
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/contextual.yaml
+
     // This API would only work when you click on highlighted word "ScriptLab".
+
     console.log(Office.context.mailbox.item.getRegExMatches());
 'Office.MessageRead#getRegExMatchesByName:member(1)':
   - >-
@@ -3995,49 +4657,65 @@
 
     var veggies = Office.context.mailbox.item.getRegExMatchesByName("veggies");
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/contextual.yaml
+
     // This API would only work when you click on highlighted word "ScriptLab".
 
     console.log(Office.context.mailbox.item.getRegExMatchesByName("sampleRegexName"));
 'Office.MessageRead#getSelectedEntities:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/selected.yaml
+
     var entities = Office.context.mailbox.item.getSelectedEntities();
+
     var entityTypesFound = 0;
+
     if (entities.addresses.length > 0) {
         console.warn("physical addresses: ");
         console.log(entities.addresses);
         entityTypesFound++;
     }
+
     if (entities.contacts.length > 0) {
         console.warn("contacts: ");
         entities.contacts.forEach(function (contact) { console.log(contact.personName); })
         entityTypesFound++;
     }
+
     if (entities.emailAddresses.length > 0) {
         console.warn("email addresses: ");
         console.log(entities.emailAddresses);
         entityTypesFound++;
     }
+
     if (entities.meetingSuggestions.length > 0) {
         console.warn("meetings suggestions: ");
         entities.meetingSuggestions.forEach(function (meetingSuggestion) { console.log(meetingSuggestion.meetingString); })
         entityTypesFound++;
     }
+
     if (entities.phoneNumbers.length > 0) {
         console.warn("phone numbers: ");
         entities.phoneNumbers.forEach(function (phoneNumber) { console.log(phoneNumber.originalPhoneString); })
         entityTypesFound++;
     }
+
     if (entities.taskSuggestions.length > 0) {
         console.warn("task suggestions: ");
         entities.taskSuggestions.forEach(function (taskSuggestion) { console.log(taskSuggestion.taskString); })
         entityTypesFound++;
     }
+
     if (entities.urls.length > 0) {
         console.warn("URLs: ");
         console.log(entities.urls);
         entityTypesFound++;
     }
+
     if (entityTypesFound == 0)
+
     {
         console.error("Open add-in by clicking on a highlighted entity, for this API to return something useful.");
     }
@@ -4087,16 +4765,24 @@
     var fruits = selectedMatches.fruits;
 
     var veggies = selectedMatches.veggies;
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/selected.yaml
+
     var matches = Office.context.mailbox.item.getSelectedRegExMatches();
+
     if (matches) {
         console.log(matches);
     }
+
     else {
         console.error("Open add-in by clicking on a highlighted regex match, for this API to return something useful.");
     }
 'Office.MessageRead#getSharedPropertiesAsync:member(1)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
+
     if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
       console.error("Try this sample on a message from a shared folder.");
       return;
@@ -4139,21 +4825,32 @@
       }
     });
 'Office.MessageRead#getSharedPropertiesAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
+
     if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
       console.error("Try this sample on a message from a shared folder.");
       return;
     }
+
 
     Office.context.mailbox.item.getSharedPropertiesAsync(function(result) {
       console.log(result.value);
     });
 'Office.MessageRead#internetMessageId:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-internet-message-id-read.yaml
+
     console.log(`Internet message ID:
     ${Office.context.mailbox.item.internetMessageId}`);
 'Office.MessageRead#itemClass:member':
-  - 'console.log(`Item class: ${Office.context.mailbox.item.itemClass}`);'
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-item-class-read.yaml
+
+    console.log(`Item class: ${Office.context.mailbox.item.itemClass}`);
 'Office.MessageRead#itemId:member':
   - |-
     // The following code checks for the presence of an item
@@ -4169,7 +4866,11 @@
         });
     }
 'Office.MessageRead#itemType:member':
-  - 'console.log(`Item type: ${Office.context.mailbox.item.itemType}`);'
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-item-type.yaml
+
+    console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
 'Office.MessageRead#loadCustomPropertiesAsync:member(1)':
   - >-
     // The following example shows how to use the loadCustomPropertiesAsync
@@ -4214,7 +4915,10 @@
     function saveCallback(asyncResult) {
 
     }
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
+
     Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
       if (result.status === Office.AsyncResultStatus.Succeeded) {
         console.log("Loaded following custom properties:");
@@ -4233,14 +4937,23 @@
     });
 'Office.MessageRead#location:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-location-read.yaml
+
     console.log(`Appointment location:
     ${Office.context.mailbox.item.location}`);
 'Office.MessageRead#normalizedSubject:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-normalized-subject-read.yaml
+
     console.log(`Normalized subject:
     ${Office.context.mailbox.item.normalizedSubject}`);
 'Office.MessageRead#notificationMessages:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     var details =
@@ -4251,6 +4964,9 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     var details =
@@ -4263,6 +4979,9 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     var details =
@@ -4275,9 +4994,16 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
+
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
       {
@@ -4288,13 +5014,20 @@
       },
       handleResult);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
     handleResult);
 'Office.MessageRead#recurrence:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-recurrence-read.yaml
+
     var recurrence = Office.context.mailbox.item.recurrence;
+
 
     if (recurrence === undefined) {
       console.log("This item is a message but not a meeting request.");
@@ -4305,13 +5038,20 @@
     }
 'Office.MessageRead#sender:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-sender-message-read.yaml
+
     var msgSender = Office.context.mailbox.item.sender;
 
     console.log("Sender: " + msgSender.displayName + " (" +
     msgSender.emailAddress + ")");
 'Office.MessageRead#seriesId:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-series-id.yaml
+
     var seriesId = Office.context.mailbox.item.seriesId;
+
 
     if (seriesId === undefined) {
       console.log("This is a message that's not a meeting request.");
@@ -4321,18 +5061,34 @@
       console.log("This is an instance belonging to series with ID " + seriesId);
     }
 'Office.MessageRead#start:member':
-  - 'console.log(`Appointment starts: ${Office.context.mailbox.item.start}`);'
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-start-read.yaml
+
+    console.log(`Appointment starts: ${Office.context.mailbox.item.start}`);
 'Office.MessageRead#subject:member':
-  - 'console.log(`Subject: ${Office.context.mailbox.item.subject}`);'
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-subject-read.yaml
+
+    console.log(`Subject: ${Office.context.mailbox.item.subject}`);
 'Office.MessageRead#to:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-to-message-read.yaml
+
     var msgTo = Office.context.mailbox.item.to;
+
     console.log("Message sent to:");
+
     for (var i = 0; i < msgTo.length; i++) {
       console.log(msgTo[i].displayName + " (" + msgTo[i].emailAddress + ")");
     }
 'Office.NotificationMessages#addAsync:member(2)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     var details =
@@ -4343,6 +5099,9 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     var details =
@@ -4355,6 +5114,9 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     var details =
@@ -4367,6 +5129,9 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     var details =
@@ -4392,9 +5157,15 @@
         }
     });
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
 'Office.NotificationMessages#removeAsync:member(2)':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
 
     Office.context.mailbox.item.notificationMessages.removeAsync(id,
@@ -4408,8 +5179,12 @@
         icon : "iconid",
         persistent: false
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
+
     var id = $("#notificationId").val();
+
     Office.context.mailbox.item.notificationMessages.replaceAsync(
       id,
       {
@@ -4420,7 +5195,10 @@
       },
       handleResult);
 'Office.Organizer#getAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-organizer-appointment-organizer.yaml
+
     Office.context.mailbox.item.organizer.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var apptOrganizer = asyncResult.value;
@@ -4469,7 +5247,10 @@
         }
     });
 'Office.Recipients#getAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
+
     Office.context.mailbox.item.bcc.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var msgBcc = asyncResult.value;
@@ -4481,7 +5262,10 @@
         console.error(asyncResult.error);
       }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
+
     Office.context.mailbox.item.cc.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var msgCc = asyncResult.value;
@@ -4494,6 +5278,9 @@
       }
     });
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-optional-attendees-appointment-organizer.yaml
+
     Office.context.mailbox.item.optionalAttendees.getAsync(function(asyncResult)
     {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -4513,6 +5300,9 @@
       }
     });
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-required-attendees-appointment-organizer.yaml
+
     Office.context.mailbox.item.requiredAttendees.getAsync(function(asyncResult)
     {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -4531,7 +5321,10 @@
         console.error(asyncResult.error);
       }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
+
     Office.context.mailbox.item.to.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var msgTo = asyncResult.value;
@@ -4565,11 +5358,15 @@
             console.log("Recipients overwritten");
         }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
+
     var email = $("#emailBcc")
       .val()
       .toString();
     var emailArray = [email];
+
     Office.context.mailbox.item.bcc.setAsync(emailArray, function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         console.log("Succeeded in setting Bcc field.");
@@ -4577,11 +5374,15 @@
         console.error(asyncResult.error);
       }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
+
     var email = $("#emailCc")
       .val()
       .toString();
     var emailArray = [email];
+
     Office.context.mailbox.item.cc.setAsync(emailArray, function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         console.log("Succeeded in setting Cc field.");
@@ -4590,6 +5391,9 @@
       }
     });
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-optional-attendees-appointment-organizer.yaml
+
     var email = $("#emailOptional")
       .val()
       .toString();
@@ -4604,6 +5408,9 @@
       }
     });
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-required-attendees-appointment-organizer.yaml
+
     var email = $("#emailRequired")
       .val()
       .toString();
@@ -4617,11 +5424,15 @@
         console.error(asyncResult.error);
       }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
+
     var email = $("#emailTo")
       .val()
       .toString();
     var emailArray = [email];
+
     Office.context.mailbox.item.to.setAsync(emailArray, function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         console.log("Succeeded in setting To field.");
@@ -4630,7 +5441,10 @@
       }
     });
 'Office.Recurrence#getAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
+
     Office.context.mailbox.item.recurrence.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         var recurrence = asyncResult.value;
@@ -4644,27 +5458,41 @@
       }
     });
 'Office.Recurrence#setAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
+
     // Important: Can only set the recurrence pattern of an appointment series.
 
+
     var currentDate = new Date();
+
     let seriesTimeObject : Office.SeriesTime;
+
     // Set series start date to tomorrow.
+
     seriesTimeObject.setStartDate(
       currentDate.getFullYear(),
       currentDate.getMonth(),
       currentDate.getDay() + 1
     );
+
     // Set series end date to 1 month from now.
+
     seriesTimeObject.setEndDate(
       currentDate.getFullYear(),
       currentDate.getMonth() + 1,
       currentDate.getDay()
     );
+
     // Set start time to 1:30 PM.
+
     seriesTimeObject.setStartTime(13, 30);
+
     // Set duration to 30 minutes.
+
     seriesTimeObject.setDuration(30);
+
 
     let pattern : Office.Recurrence = {
       seriesTime: seriesTimeObject,
@@ -4672,6 +5500,7 @@
       recurrenceProperties: { interval: 1, days: ["tue", "thu"], firstDayOfWeek: "sun" },
       recurrenceTimeZone: { name: "Pacific Standard Time" }
     };
+
 
     Office.context.mailbox.item.recurrence.setAsync(pattern, (asyncResult) => {
       if (asyncResult.status !== Office.AsyncResultStatus.Succeeded) {
@@ -4752,14 +5581,24 @@
         "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
     }
 'Office.RoamingSettings#get:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/10-roaming-settings/roaming-settings.yaml
+
     var settingName = $("#settingName").val();
+
     var settingValue = Office.context.roamingSettings.get(settingName);
+
     $("#settingValue").val(settingValue);
+
     console.log(`The value of setting "${settingName}" is "${settingValue}".`);
 'Office.RoamingSettings#saveAsync:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/10-roaming-settings/roaming-settings.yaml
+
     // Save settings in the mailbox to make it available in future sessions.
+
     Office.context.roamingSettings.saveAsync(function(result) {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Action failed with message ${result.error.message}`);
@@ -4775,13 +5614,22 @@
     Office.context.roamingSettings.set('myKey', 'Hello World!');
     // Persist the change.
     Office.context.roamingSettings.saveAsync();
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/10-roaming-settings/roaming-settings.yaml
+
     var settingName = $("#settingName").val();
+
     var settingValue = $("#settingValue").val();
+
     Office.context.roamingSettings.set(settingName, settingValue);
+
     console.log(`Setting "${settingName}" set to value "${settingValue}".`);
 'Office.Sensitivity#getAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
+
     Office.context.mailbox.item.sensitivity.getAsync(function(asyncResult) {
       if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
         console.log("Sensitivity: " + asyncResult.value);
@@ -4790,7 +5638,10 @@
       }
     });
 'Office.Sensitivity#setAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
+
     Office.context.mailbox.item.sensitivity.setAsync(
       Office.MailboxEnums.AppointmentSensitivityType.Confidential,
       function callback(asyncResult) {
@@ -4938,7 +5789,10 @@
         console.log("Task: " + JSON.stringify(taskSuggestion.taskString));
     });
 'Office.Time#getAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
+
     Office.context.mailbox.item.start.getAsync((result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Action failed with message ${result.error.message}`);
@@ -4965,9 +5819,14 @@
         }
     });
 'Office.Time#setAsync:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
+
     var start = new Date(); // Represents current date and time.
+
     start.setDate(start.getDate() + 2); // Add 2 days to current date.
+
     Office.context.mailbox.item.start.setAsync(start, (result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Action failed with message ${result.error.message}`);
@@ -4975,7 +5834,10 @@
       }
       console.log(`Successfully set start date and time to ${start}`);
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-end-appointment-organizer.yaml
+
     Office.context.mailbox.item.start.getAsync((result) => {
       if (result.status !== Office.AsyncResultStatus.Succeeded) {
         console.error(`Get start date failed with message ${result.error.message}`);

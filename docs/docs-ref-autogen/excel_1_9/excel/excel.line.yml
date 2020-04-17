@@ -132,12 +132,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+
           await Excel.run(async (context) => {
               const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
               const line = shapes.getItem("StraightLine").line;
@@ -145,6 +150,7 @@ items:
               line.connectEndShape(shapes.getItem("Right"), 0);
               await context.sync();
           });
+
           ```
       parameters:
         - id: shape
@@ -172,12 +178,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+
           await Excel.run(async (context) => {
               const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
               const line = shapes.getItem("StraightLine").line;
@@ -185,6 +196,7 @@ items:
               line.connectEndShape(shapes.getItem("Right"), 0);
               await context.sync();
           });
+
           ```
       parameters:
         - id: shape
@@ -241,12 +253,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+
           await Excel.run(async (context) => {
               const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
               const line = shapes.getItem("StraightLine").line;
@@ -254,6 +271,7 @@ items:
               line.disconnectEndShape();
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Line#disconnectEndShape:member(1)'
     summary: |-
@@ -270,12 +288,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+
           await Excel.run(async (context) => {
               const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
               const line = shapes.getItem("StraightLine").line;
@@ -283,6 +306,7 @@ items:
               line.disconnectEndShape();
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Line#endArrowheadLength:member'
     summary: |-

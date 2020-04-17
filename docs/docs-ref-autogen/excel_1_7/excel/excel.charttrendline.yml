@@ -290,12 +290,17 @@ items:
       return:
         type:
           - 'excel!Excel.ChartTrendline#type~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-trendlines.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -309,6 +314,7 @@ items:
 
               console.log("The trendline type is:" + trendline.type);  
           });
+
           ```
 references:
   - uid: 'excel!OfficeExtension.ClientObject:class'

@@ -379,12 +379,17 @@ items:
       return:
         type:
           - 'word!Word.DocumentProperties:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/30-properties/get-built-in-properties.yaml
+
           await Word.run(async (context) => {
               let builtInProperties = context.document.properties;
               builtInProperties.load("*"); // Let's get all!
@@ -392,6 +397,7 @@ items:
               await context.sync();
               console.log(JSON.stringify(builtInProperties, null, 4));
           });
+
           ```
   - uid: 'word!Word.Document#save:member(1)'
     summary: |-

@@ -81,12 +81,17 @@ items:
       return:
         type:
           - 'excel!Excel.ListDataValidation:interface'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/22-data-validation/data-validation.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Decision");
               const nameRange = 
@@ -108,6 +113,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.DataValidationRule#textLength:member'
     summary: |-
@@ -154,12 +160,17 @@ items:
       return:
         type:
           - 'excel!Excel.BasicDataValidation:interface'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/22-data-validation/data-validation.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Decision");
               const rankingRange = sheet.tables.getItem("NameOptionsTable").columns.getItem("Ranking").getDataBodyRange();
@@ -191,6 +202,7 @@ items:
 
               await context.sync();
           });
+
           ```
 references:
   - uid: 'excel!Excel.CustomDataValidation:interface'

@@ -153,12 +153,18 @@ items:
       return:
         type:
           - 'excel!Excel.Worksheet:class'
-        description: |-
+        description: >-
           The newly created worksheet.
+
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-copy.yaml
+
           await Excel.run(async (context) => {
 
               let myWorkbook = context.workbook;
@@ -172,6 +178,7 @@ items:
 
               console.log("'" + sampleSheet.name + "' was copied to '" + copiedSheet.name + "'")
           });
+
           ```
       parameters:
         - id: positionType
@@ -332,12 +339,17 @@ items:
       return:
         type:
           - 'excel!Excel.Worksheet:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+
           await Excel.run(async (context) => {
               const sheets = context.workbook.worksheets;
 
@@ -362,6 +374,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: visibleOnly
@@ -406,12 +419,17 @@ items:
       return:
         type:
           - 'excel!Excel.Worksheet:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+
           await Excel.run(async (context) => {
               const sheets = context.workbook.worksheets;
               const currentSheet = sheets.getActiveWorksheet();
@@ -432,6 +450,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: visibleOnly
@@ -810,12 +829,17 @@ items:
       return:
         type:
           - 'excel!Excel.Worksheet#onChanged~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-worksheet.yaml
+
           await Excel.run(async (context) => {
               let sheet = context.workbook.worksheets.getItem("Sample");
               sheet.onChanged.add(onChange);
@@ -823,6 +847,7 @@ items:
 
               console.log("Added a worksheet-level data-changed event handler.");
           });
+
           ```
   - uid: 'excel!Excel.Worksheet#onDeactivated:member'
     summary: |-
@@ -1089,18 +1114,24 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/tab-color.yaml
+
           await Excel.run(async (context) => {
               const activeSheet = context.workbook.worksheets.getActiveWorksheet();
               activeSheet.tabColor = "#FF0000";
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Worksheet#tables:member'
     summary: |-

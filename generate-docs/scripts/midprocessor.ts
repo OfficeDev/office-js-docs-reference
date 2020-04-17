@@ -50,8 +50,8 @@ tryCatch(async () => {
 
     console.log("\nCreating snippets file...");
 
-    console.log("\nReading from: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/snippet-extractor-output/snippets.yaml");
-    fsx.writeFileSync("../script-inputs/script-lab-snippets.yaml", await fetchAndThrowOnError("https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/snippet-extractor-output/snippets.yaml", "text"));
+    console.log("\nReading from: https://raw.githubusercontent.com/ElizabethSamuel-MSFT/office-js-snippets/abs-link/snippet-extractor-output/snippets.yaml");
+    fsx.writeFileSync("../script-inputs/script-lab-snippets.yaml", await fetchAndThrowOnError("https://raw.githubusercontent.com/ElizabethSamuel-MSFT/office-js-snippets/abs-link/snippet-extractor-output/snippets.yaml", "text"));
 
     console.log("\nReading from files: " + path.resolve("../../docs/code-snippets"));
 

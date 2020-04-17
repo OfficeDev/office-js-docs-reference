@@ -82,12 +82,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-point.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -99,6 +104,7 @@ items:
 
               await context.sync();        
           });
+
           ```
       parameters:
         - id: color

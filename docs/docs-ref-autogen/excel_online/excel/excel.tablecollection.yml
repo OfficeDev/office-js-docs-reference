@@ -372,12 +372,17 @@ items:
       return:
         type:
           - 'excel!Excel.TableCollection#onChanged~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-tablecollection-changed.yaml
+
           await Excel.run(async (context) => {
               let tables = context.workbook.tables;
               tables.onChanged.add(onChange);
@@ -385,6 +390,7 @@ items:
               await context.sync();
               console.log("A handler has been registered for the table collection onChanged event");
           });
+
           ```
   - uid: 'excel!Excel.TableCollection#onDeleted:member'
     summary: |-

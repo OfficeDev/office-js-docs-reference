@@ -74,18 +74,24 @@ items:
       return:
         type:
           - 'word!Word.Body:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-header-and-footer.yaml
+
           await Word.run(async (context) => {
             context.document.sections.getFirst().getFooter("Primary")
               .insertParagraph("This is a footer", "End");
 
             await context.sync();
           });
+
           ```
       parameters:
         - id: type
@@ -170,18 +176,24 @@ items:
       return:
         type:
           - 'word!Word.Body:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-header-and-footer.yaml
+
           await Word.run(async (context) => {
             context.document.sections.getFirst().getHeader("Primary")
               .insertParagraph("This is a header", "End");
 
             await context.sync();
           });
+
           ```
       parameters:
         - id: type

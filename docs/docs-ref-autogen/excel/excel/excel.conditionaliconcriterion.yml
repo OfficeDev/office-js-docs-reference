@@ -48,12 +48,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B8:E13");
@@ -92,6 +97,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.ConditionalIconCriterion#operator:member'
     summary: |-
@@ -108,12 +114,17 @@ items:
       return:
         type:
           - 'excel!Excel.ConditionalIconCriterion#operator~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B8:E13");
@@ -152,8 +163,14 @@ items:
 
               await context.sync();
           });
+
           ```
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B16:D18");
@@ -164,6 +181,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.ConditionalIconCriterion#type:member'
     summary: |-
@@ -180,12 +198,17 @@ items:
       return:
         type:
           - 'excel!Excel.ConditionalIconCriterion#type~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B8:E13");
@@ -224,6 +247,7 @@ items:
 
               await context.sync();
           });
+
           ```
 references:
   - uid: 'excel!Excel.Icon:interface'

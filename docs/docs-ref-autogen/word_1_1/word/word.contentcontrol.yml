@@ -1321,15 +1321,23 @@ items:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
+    remarks: >-
       This method has the following additional signature:
+
 
       `set(properties: Word.ContentControl): void`
 
+
       #### Examples
 
+
       ```typescript
+
+      //// Full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/10-content-controls/insert-and-change-content-controls.yaml
+
       // Adds title and colors to odd and even content controls and changes their appearance.
+
       await Word.run(async (context) => {
         // Gets the complete sentence (as range) associated with the insertion point.
         let evenContentControls = context.document.contentControls.getByTag("even");
@@ -1361,6 +1369,7 @@ items:
 
         await context.sync();
       });
+
       ```
     name: 'set(properties, options)'
     fullName: 'set(properties, options)'
@@ -1441,6 +1450,9 @@ items:
 
 
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/10-content-controls/insert-and-change-content-controls.yaml
 
           // Traverses each paragraph of the document and wraps a content control on each with either a even or odd
           tags.

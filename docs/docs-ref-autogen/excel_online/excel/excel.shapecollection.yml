@@ -45,12 +45,17 @@ items:
       return:
         type:
           - 'excel!Excel.Shape:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-create-and-delete.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
               const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.hexagon);
@@ -60,6 +65,7 @@ items:
               shape.width = 200;
               await context.sync();
           });
+
           ```
       parameters:
         - id: geometricShapeType
@@ -167,12 +173,17 @@ items:
       return:
         type:
           - 'excel!Excel.Shape:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-groups.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
               const square = sheet.shapes.getItem("Square");
@@ -185,6 +196,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: values
@@ -208,14 +220,21 @@ items:
       return:
         type:
           - 'excel!Excel.Shape:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```javascript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-images.yaml
+
           const myFile = <HTMLInputElement>document.getElementById("selectedFile");
+
           const reader = new FileReader();
+
 
           reader.onload = (event) => {
               Excel.run((context) => {
@@ -228,8 +247,11 @@ items:
               });
           };
 
+
           // Read in the image file as a data URL.
+
           reader.readAsDataURL(myFile.files[0]);
+
           ```
       parameters:
         - id: base64ImageString
@@ -253,18 +275,24 @@ items:
       return:
         type:
           - 'excel!Excel.Shape:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+
           await Excel.run(async (context) => {
               const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
               const line = shapes.addLine(200, 50, 300, 150, Excel.ConnectorType.straight);
               line.name = "StraightLine";
               await context.sync();
           });
+
           ```
       parameters:
         - id: startLeft
@@ -343,12 +371,17 @@ items:
       return:
         type:
           - 'excel!Excel.Shape:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-textboxes.yaml
+
           await Excel.run(async (context) => {
               const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
               const textbox = shapes.addTextBox("A box with text");
@@ -359,6 +392,7 @@ items:
               textbox.name = "Textbox";
               await context.sync();
           });
+
           ```
       parameters:
         - id: text

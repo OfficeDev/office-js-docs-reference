@@ -227,12 +227,17 @@ items:
       return:
         type:
           - 'excel!Excel.Worksheet:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+
           await Excel.run(async (context) => {
               const sheets = context.workbook.worksheets;
 
@@ -257,6 +262,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: visibleOnly
@@ -301,12 +307,17 @@ items:
       return:
         type:
           - 'excel!Excel.Worksheet:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+
           await Excel.run(async (context) => {
               const sheets = context.workbook.worksheets;
               const currentSheet = sheets.getActiveWorksheet();
@@ -327,6 +338,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: visibleOnly

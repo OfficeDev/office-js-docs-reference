@@ -96,12 +96,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/34-named-item/create-and-remove-named-item.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const totalName = sheet.names.getItemOrNullObject("TotalAmount");
@@ -119,6 +124,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.NamedItem#formula:member'
     summary: |-
@@ -135,12 +141,17 @@ items:
       return:
         type:
           - any
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/34-named-item/update-named-item.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -160,6 +171,7 @@ items:
                   console.log(`Just updated the named item "${myNamedItem.name}" -- it's now located here: ${myNamedItem.formula}`);
               }
           });
+
           ```
   - uid: 'excel!Excel.NamedItem#getRange:member(1)'
     summary: >-

@@ -42,12 +42,17 @@ items:
       return:
         type:
           - 'excel!Excel.PivotItem:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-calculations.yaml
+
           await Excel.run(async (context) => {
               const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
               const farmDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold at Farm");
@@ -72,6 +77,7 @@ items:
               wholesaleDataHierarchy.showAs = wholesaleShowAs;
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.ShowAsRule#calculation:member'
     summary: |-

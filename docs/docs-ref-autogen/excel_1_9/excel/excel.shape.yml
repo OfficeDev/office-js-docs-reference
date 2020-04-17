@@ -136,12 +136,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-create-and-delete.yaml
+
           await Excel.run(async (context) => {
               context.workbook.worksheets.getItemOrNullObject("Shapes").delete();
               const sheet = context.workbook.worksheets.add("Shapes");
@@ -155,6 +160,7 @@ items:
               shapes.items.forEach((shape) => shape.delete());
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Shape#fill:member'
     summary: |-
@@ -171,12 +177,17 @@ items:
       return:
         type:
           - 'excel!Excel.ShapeFill:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-create-and-delete.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
               const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.smileyFace);
@@ -187,6 +198,7 @@ items:
               shape.fill.foregroundColor = "yellow"
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Shape#geometricShape:member'
     summary: >-
@@ -271,12 +283,17 @@ items:
       return:
         type:
           - 'excel!Excel.Shape#getAsImage~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-images.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
               const shape = sheet.shapes.getItem("Image");
@@ -287,6 +304,7 @@ items:
               // Your add-in would save this string as a .png file.
               console.log("The image's base64-encoded string: " + imageString);
           });
+
           ```
       parameters:
         - id: format
@@ -334,12 +352,17 @@ items:
       return:
         type:
           - 'excel!Excel.ShapeGroup:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-groups.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
 
@@ -349,6 +372,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Shape#height:member'
     summary: >-
@@ -412,18 +436,24 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
               const shape = sheet.shapes.getItem("Square")
               shape.incrementLeft(-25);
               await context.sync();
           });
+
           ```
       parameters:
         - id: increment
@@ -450,18 +480,24 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-images.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
               const shape = sheet.shapes.getItem("Image");
               shape.incrementRotation(180);
               await context.sync();
           });
+
           ```
       parameters:
         - id: increment
@@ -485,18 +521,24 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
               const shape = sheet.shapes.getItem("Pentagon")
               shape.incrementTop(25);
               await context.sync();
           });
+
           ```
       parameters:
         - id: increment
@@ -555,12 +597,17 @@ items:
       return:
         type:
           - 'excel!Excel.Line:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+
           await Excel.run(async (context) => {
               const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
               const line = shapes.getItem("StraightLine").line;
@@ -574,6 +621,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Shape#lineFormat:member'
     summary: |-
@@ -675,12 +723,17 @@ items:
       return:
         type:
           - boolean
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
               const shape = sheet.shapes.getItem("Octagon")
@@ -688,6 +741,7 @@ items:
               shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Shape#name:member'
     summary: |-
@@ -764,12 +818,17 @@ items:
       return:
         type:
           - number
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-create-and-delete.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
               const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.triangle);
@@ -781,6 +840,7 @@ items:
               shape.fill.clear();
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Shape#scaleHeight:member(1)'
     summary: >-
@@ -800,12 +860,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
               const shape = sheet.shapes.getItem("Octagon")
@@ -813,6 +878,7 @@ items:
               shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
               await context.sync();
           });
+
           ```
       parameters:
         - id: scaleFactor
@@ -1006,18 +1072,24 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
               const shape = sheet.shapes.getItem("Octagon")
               shape.setZOrder(Excel.ShapeZOrder.sendBackward);
               await context.sync();
           });
+
           ```
       parameters:
         - id: position

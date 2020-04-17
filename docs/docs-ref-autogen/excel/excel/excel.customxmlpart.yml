@@ -53,12 +53,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
+
           await Excel.run(async (context) => {
               const settings = context.workbook.settings;
               const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
@@ -86,6 +91,7 @@ items:
                   await context.sync();
               }
           });
+
           ```
   - uid: 'excel!Excel.CustomXmlPart#getXml:member(1)'
     summary: |-
@@ -102,12 +108,17 @@ items:
       return:
         type:
           - 'excel!Excel.CustomXmlPart#getXml~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
+
           await Excel.run(async (context) => {
               // You must have the xmlns attribute to populate the 
               // CustomXml.namespaceUri property.
@@ -127,6 +138,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.CustomXmlPart#id:member'
     summary: |-
@@ -143,12 +155,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
+
           await Excel.run(async (context) => {
               // You must have the xmlns attribute to populate the 
               // CustomXml.namespaceUri property.
@@ -168,6 +185,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.CustomXmlPart#load:member(1)'
     summary: >-
@@ -269,12 +287,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
+
           await Excel.run(async (context) => {
               const settings = context.workbook.settings;
               const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
@@ -294,6 +317,7 @@ items:
                   await context.sync();
               }
           });
+
           ```
       parameters:
         - id: xml

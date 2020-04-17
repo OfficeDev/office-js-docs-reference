@@ -187,12 +187,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-groups.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
 
@@ -202,6 +207,7 @@ items:
 
               await context.sync();
           });
+
           ```
 references:
   - uid: 'excel!OfficeExtension.ClientObject:class'

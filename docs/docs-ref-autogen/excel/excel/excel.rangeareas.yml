@@ -377,12 +377,17 @@ items:
       return:
         type:
           - 'excel!Excel.RangeFormat:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-areas.yaml
+
           await Excel.run(async (context) => {
 
               const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -394,6 +399,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.RangeAreas#getEntireColumn:member(1)'
     summary: >-

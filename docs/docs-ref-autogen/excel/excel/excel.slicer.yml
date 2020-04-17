@@ -70,17 +70,23 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
+
           await Excel.run(async (context) => {
               const slicer = context.workbook.slicers.getItem("Fruit Slicer");
               slicer.clearFilters();
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Slicer#context:member'
     summary: >-
@@ -111,17 +117,23 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getActiveWorksheet();
               sheet.slicers.getItemAt(0).delete();
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Slicer#getSelectedItems:member(1)'
     summary: |-
@@ -323,17 +335,23 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
+
           await Excel.run(async (context) => {
               const slicer = context.workbook.slicers.getItem("Fruit Slicer");
               slicer.selectItems(["Lemon", "Lime", "Orange"]);
               await context.sync();
           });
+
           ```
       parameters:
         - id: items
@@ -482,17 +500,23 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
+
           await Excel.run(async (context) => {
               const slicer = context.workbook.slicers.getItem("Fruit Slicer");
               slicer.style = "SlicerStyleLight6";
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Slicer#toJSON:member(1)'
     summary: >-

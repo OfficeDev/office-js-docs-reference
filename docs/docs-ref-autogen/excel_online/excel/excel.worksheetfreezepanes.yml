@@ -50,12 +50,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -64,6 +69,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: frozenRange
@@ -85,12 +91,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -99,6 +110,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: count
@@ -120,12 +132,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -134,6 +151,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: count
@@ -175,12 +193,17 @@ items:
       return:
         type:
           - 'excel!Excel.Range:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const frozenRange = sheet.freezePanes.getLocationOrNullObject();
@@ -194,6 +217,7 @@ items:
                   console.log(`The address of the frozen range (cells that are frozen in the top-and-left-most pane) is "${frozenRange.address}"`);
               }
           });
+
           ```
   - uid: 'excel!Excel.WorksheetFreezePanes#toJSON:member(1)'
     summary: >-
@@ -234,18 +258,24 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               sheet.freezePanes.unfreeze();
 
               await context.sync();
           });
+
           ```
 references:
   - uid: 'excel!OfficeExtension.ClientObject:class'

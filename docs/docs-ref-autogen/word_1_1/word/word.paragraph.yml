@@ -76,18 +76,24 @@ items:
       return:
         type:
           - 'word!Word.Paragraph#alignment~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/paragraph-properties.yaml
+
           await Word.run(async (context) => {
             // Centers last paragraph alignment.
             context.document.body.paragraphs.getLast().alignment = "Centered";
 
             await context.sync();
           });
+
           ```
   - uid: 'word!Word.Paragraph#clear:member(1)'
     summary: |-
@@ -392,18 +398,24 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-line-and-page-breaks.yaml
+
           Word.run(async (context) => {
             context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.line, "After");
 
             await context.sync();
             console.log("success");
           });
+
           ```
       parameters:
         - id: breakType
@@ -835,12 +847,17 @@ items:
       return:
         type:
           - 'word!Word.Paragraph:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-formatted-text.yaml
+
           await Word.run(async (context) => {
             // Second sentence, let's insert it as a paragraph after the previously inserted one.
             let secondSentence = context.document.body.insertParagraph(
@@ -857,6 +874,7 @@ items:
 
             await context.sync();
           });
+
           ```
       parameters:
         - id: paragraphText
@@ -909,12 +927,17 @@ items:
       return:
         type:
           - 'word!Word.Range:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-in-different-locations.yaml
+
           await Word.run(async (context) => {
             // Replace the last paragraph.
             let range = context.document.body.paragraphs.getLast().insertText("Just replaced the last paragraph!", "Replace");
@@ -923,6 +946,7 @@ items:
 
             await context.sync();
           });
+
           ```
       parameters:
         - id: text
@@ -973,18 +997,24 @@ items:
       return:
         type:
           - number
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/paragraph-properties.yaml
+
           await Word.run(async (context) => {
             // Indents the first paragraph.
             context.document.body.paragraphs.getFirst().leftIndent = 75; //units = points
 
             return context.sync();
           });
+
           ```
   - uid: 'word!Word.Paragraph#lineSpacing:member'
     summary: >-
@@ -1003,18 +1033,24 @@ items:
       return:
         type:
           - number
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/paragraph-properties.yaml
+
           await Word.run(async (context) => {
             // Adjusts line spacing.
             context.document.body.paragraphs.getFirst().lineSpacing = 20;
 
             await context.sync();
           });
+
           ```
   - uid: 'word!Word.Paragraph#lineUnitAfter:member'
     summary: |-
@@ -1224,26 +1260,38 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/35-ranges/scroll-to-range.yaml
+
           await Word.run(async (context) => {
             // If select is called with no parameters, it selects the object.
             context.document.body.paragraphs.getLast().select();
 
             await context.sync();
           });
+
           ```
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/35-ranges/scroll-to-range.yaml
+
           await Word.run(async (context) => {
             // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
             context.document.body.paragraphs.getLast().select("End");
 
             await context.sync();
           });
+
           ```
       parameters:
         - id: selectionMode
@@ -1275,14 +1323,21 @@ items:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
+    remarks: >-
       This method has the following additional signature:
+
 
       `set(properties: Word.Paragraph): void`
 
+
       #### Examples
 
+
       ```typescript
+
+      //// Full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/90-scenarios/multiple-property-set.yaml
+
       await Word.run(async (context) => {
         const paragraph = context.document.body.paragraphs.getFirst();
         paragraph.set({
@@ -1295,8 +1350,14 @@ items:
 
         await context.sync();
       });
+
       ```
+
       ```typescript
+
+      //// Full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/90-scenarios/multiple-property-set.yaml
+
       await Word.run(async (context) => {
         const firstParagraph = context.document.body.paragraphs.getFirst();
         const secondParagraph = firstParagraph.getNext();
@@ -1308,6 +1369,7 @@ items:
 
         await context.sync();
       });
+
       ```
     name: 'set(properties, options)'
     fullName: 'set(properties, options)'
@@ -1364,18 +1426,24 @@ items:
       return:
         type:
           - number
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/paragraph-properties.yaml
+
           await Word.run(async (context) => {
             // Adjust space between paragraphs.
             context.document.body.paragraphs.getFirst().spaceAfter = 20;
 
             await context.sync();
           });
+
           ```
   - uid: 'word!Word.Paragraph#spaceBefore:member'
     summary: |-
@@ -1424,12 +1492,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+
           await Word.run(async (context) => {
             // The collection of paragraphs of the current selection returns the full paragraphs contained in it.
             let paragraph = context.document.getSelection().paragraphs.getFirst();
@@ -1438,6 +1511,7 @@ items:
             await context.sync();
             console.log(paragraph.text);
           });
+
           ```
   - uid: 'word!Word.Paragraph#toJSON:member(1)'
     summary: >-

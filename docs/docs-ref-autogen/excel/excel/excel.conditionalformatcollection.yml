@@ -41,12 +41,17 @@ items:
       return:
         type:
           - 'excel!Excel.ConditionalFormat:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B2:M5");
@@ -61,6 +66,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: type
@@ -107,12 +113,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange();
@@ -122,6 +133,7 @@ items:
 
               $(".conditional-formats").hide();
           });
+
           ```
   - uid: 'excel!Excel.ConditionalFormatCollection#context:member'
     summary: >-
@@ -233,12 +245,17 @@ items:
       return:
         type:
           - 'excel!Excel.ConditionalFormat:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const worksheetRange = sheet.getRange();
@@ -264,6 +281,7 @@ items:
                   console.log("No conditional formats applied.");
               }
           });
+
           ```
       parameters:
         - id: index

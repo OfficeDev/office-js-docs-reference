@@ -57,12 +57,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/create-get-change-delete-settings.yaml
+
           await Excel.run(async (context) => {
               const settings = context.workbook.settings;
               let needsReview = settings.getItem("NeedsReview");
@@ -79,6 +84,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Setting#key:member'
     summary: |-

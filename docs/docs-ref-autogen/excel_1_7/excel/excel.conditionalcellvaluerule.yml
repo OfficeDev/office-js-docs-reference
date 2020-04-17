@@ -30,12 +30,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B21:E23");
@@ -46,6 +51,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.ConditionalCellValueRule#formula2:member'
     summary: |-
@@ -79,12 +85,17 @@ items:
       return:
         type:
           - 'excel!Excel.ConditionalCellValueRule#operator~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B21:E23");
@@ -95,6 +106,7 @@ items:
 
               await context.sync();
           });
+
           ```
 references:
   - uid: 'excel!Excel.ConditionalCellValueRule#operator~0:complex'

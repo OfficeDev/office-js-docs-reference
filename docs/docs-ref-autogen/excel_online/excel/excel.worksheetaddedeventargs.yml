@@ -60,12 +60,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
           async function onWorksheetAdd(event) {
               await Excel.run(async (context) => {
                   console.log(
@@ -74,6 +79,7 @@ items:
                   );
               });
           }
+
           ```
 references:
   - uid: 'excel!Excel.WorksheetAddedEventArgs#source~0:complex'

@@ -111,6 +111,9 @@ items:
 
       ```javascript
 
+      //// Full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
+
       Office.context.mailbox.item.recurrence.getAsync(function(asyncResult) {
         if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
           var recurrence = asyncResult.value;
@@ -324,6 +327,9 @@ items:
 
 
       ```javascript
+
+      //// Full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
 
       // Important: Can only set the recurrence pattern of an appointment series.
 

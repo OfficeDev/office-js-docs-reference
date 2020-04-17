@@ -10,7 +10,10 @@
         }
     });
 'Excel.Application#decimalSeparator:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/culture-info.yaml
+
     await Excel.run(async (context) => {
       context.application.load("decimalSeparator,thousandsSeparator");
       context.application.cultureInfo.numberFormat.load("numberDecimalSeparator,numberGroupSeparator");
@@ -49,7 +52,10 @@
         }
     });
 'Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/90-scenarios/performance-optimization.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
         const rowCount = 500;
@@ -79,7 +85,10 @@
         console.log(`Ending. Adding ${rowCount * columnCount} cells took ${Date.now() - startTime} milliseconds`);
     });
 'Excel.AutoFilter#apply:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
         const farmData = sheet.getUsedRange();
@@ -148,7 +157,10 @@
         }
     });
 'Excel.Binding#onDataChanged:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/data-changed.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");    
         const salesTable = sheet.tables.getItem("SalesTable");
@@ -252,7 +264,10 @@
         }
     });
 'Excel.CellPropertiesFill#color:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
 
@@ -325,7 +340,10 @@
         await context.sync();
     });
 'Excel.CellPropertiesFillLoadOptions#color:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
+
     await Excel.run(async (context) => {
         const cell = context.workbook.getActiveCell();
 
@@ -350,7 +368,10 @@
             `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
     });
 'Excel.CellPropertiesFont#color:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
 
@@ -423,7 +444,10 @@
         await context.sync();
     });
 'Excel.CellPropertiesFontLoadOptions#color:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
+
     await Excel.run(async (context) => {
         const cell = context.workbook.getActiveCell();
 
@@ -448,7 +472,10 @@
             `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
     });
 'Excel.CellPropertiesLoadOptions#address:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
+
     await Excel.run(async (context) => {
         const cell = context.workbook.getActiveCell();
 
@@ -473,7 +500,10 @@
             `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
     });
 'Excel.CellValueConditionalFormat#format:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B21:E23");
@@ -485,7 +515,10 @@
         await context.sync();
     });
 'Excel.CellValueConditionalFormat#rule:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B21:E23");
@@ -648,7 +681,10 @@
         }
     });
 'Excel.ChartAxis#displayUnit:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-axis.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -680,7 +716,10 @@
         }
     });
 'Excel.ChartAxis#showDisplayUnitLabel:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-axis.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         let chart = sheet.charts.getItemAt(0);
@@ -854,7 +893,10 @@
         }
     });
 'Excel.ChartFill#setSolidColor:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-point.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -916,7 +958,10 @@
         }
     });
 'Excel.ChartLegendFormat#font:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-legend.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -1011,7 +1056,10 @@
         }
     });
 'Excel.ChartSeries#delete:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-series.yaml
+
     await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Sample");
       const seriesCollection = sheet.charts.getItemAt(0).series;
@@ -1043,7 +1091,10 @@
         }
     });
 'Excel.ChartSeries#markerBackgroundColor:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-series-markers.yaml
+
     await Excel.run(async (context) => {
         let sheet = context.workbook.worksheets.getItem("Sample");
         let salesTable = sheet.tables.getItem("SalesTable");
@@ -1072,7 +1123,10 @@
         await context.sync();
     });
 'Excel.ChartSeries#markerForegroundColor:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-series-markers.yaml
+
     await Excel.run(async (context) => {
         let sheet = context.workbook.worksheets.getItem("Sample");
         let salesTable = sheet.tables.getItem("SalesTable");
@@ -1101,7 +1155,10 @@
         await context.sync();
     });
 'Excel.ChartSeries#markerSize:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-series-markers.yaml
+
     await Excel.run(async (context) => {
         let sheet = context.workbook.worksheets.getItem("Sample");
         let salesTable = sheet.tables.getItem("SalesTable");
@@ -1130,7 +1187,10 @@
         await context.sync();
     });
 'Excel.ChartSeries#markerStyle:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-series-markers.yaml
+
     await Excel.run(async (context) => {
         let sheet = context.workbook.worksheets.getItem("Sample");
         let salesTable = sheet.tables.getItem("SalesTable");
@@ -1159,7 +1219,10 @@
         await context.sync();
     });
 'Excel.ChartSeries#setValues:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-series.yaml
+
     await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -1222,7 +1285,10 @@
         }
     });
 'Excel.ChartTitle#getSubstring:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-title-format.yaml
+
     await Excel.run(async (context) => {
         let sheet = context.workbook.worksheets.getItem("Sample");
         let chart = sheet.charts.getItemAt(0);
@@ -1269,7 +1335,10 @@
         });
     });
 'Excel.ChartTitle#textOrientation:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-title-format.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const title = sheet.charts.getItemAt(0).title;
@@ -1278,7 +1347,10 @@
         await context.sync();
     });
 'Excel.ChartTrendline#type:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-trendlines.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -1293,7 +1365,10 @@
         console.log("The trendline type is:" + trendline.type);  
     });
 'Excel.ChartTrendlineCollection#add:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-trendlines.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -1305,7 +1380,10 @@
         await context.sync();
     });
 'Excel.ChartTrendlineFormat#line:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-trendlines.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -1320,7 +1398,10 @@
 
         console.log("The trendline color is:" + line.color);
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-trendlines.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -1336,7 +1417,10 @@
         console.log("The trendline color has been set to:" + line.color);
     });
 'Excel.ColorScaleConditionalFormat#criteria:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B2:M5");
@@ -1352,7 +1436,10 @@
         await context.sync();
     });
 'Excel.Comment#content:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-basics.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Comments");
         const comment = sheet.comments.getItemAt(0);
@@ -1360,13 +1447,19 @@
         await context.sync();
     });
 'Excel.Comment#delete:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-basics.yaml
+
     await Excel.run(async (context) => {
         context.workbook.comments.getItemByCell("Comments!A2").delete();
         await context.sync();
     });
 'Excel.Comment#load:member(2)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-basics.yaml
+
     await Excel.run(async (context) => {
         const comment = context.workbook.comments.getItemByCell("Comments!A2");
         comment.load(["authorEmail", "authorName", "creationDate"]);
@@ -1376,14 +1469,20 @@
         await context.sync();
     });
 'Excel.Comment#resolved:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/comment-resolution.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Comments");
         sheet.comments.getItemAt(0).resolved = true;
         await context.sync();
     });
 'Excel.CommentCollection#add:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-basics.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Comments");
 
@@ -1392,7 +1491,10 @@
         await context.sync();
     });
 'Excel.CommentReply#content:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-replies.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Comments");
         const comment = sheet.comments.getItemAt(0);
@@ -1406,7 +1508,10 @@
         await context.sync();
     });
 'Excel.CommentReply#delete:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-replies.yaml
+
     await Excel.run(async (context) => {
         // Remove the first comment reply from this worksheet's first comment.
         const sheet = context.workbook.worksheets.getItem("Comments");
@@ -1415,7 +1520,10 @@
         await context.sync();
     });
 'Excel.CommentReplyCollection#add:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-replies.yaml
+
     await Excel.run(async (context) => {
         // Adds a reply to the first comment in this worksheet.
         const sheet = context.workbook.worksheets.getItem("Comments");
@@ -1424,7 +1532,10 @@
         await context.sync();
     });
 'Excel.CommentRichContent#mentions:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/comment-mentions.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Comments");
         const mention = {
@@ -1445,7 +1556,10 @@
         await context.sync();
     });
 'Excel.ConditionalCellValueRule#formula1:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B21:E23");
@@ -1457,7 +1571,10 @@
         await context.sync();
     });
 'Excel.ConditionalCellValueRule#operator:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B21:E23");
@@ -1469,7 +1586,10 @@
         await context.sync();
     });
 'Excel.ConditionalFormat#cellValue:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B21:E23");
@@ -1481,7 +1601,10 @@
         await context.sync();
     });
 'Excel.ConditionalFormat#colorScale:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B2:M5");
@@ -1497,7 +1620,10 @@
         await context.sync();
     });
 'Excel.ConditionalFormat#custom:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B8:E13");
@@ -1508,7 +1634,10 @@
         await context.sync();
     });
 'Excel.ConditionalFormat#dataBar:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B8:E13");
@@ -1519,7 +1648,10 @@
         await context.sync();
     });
 'Excel.ConditionalFormat#getRange:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const worksheetRange = sheet.getRange();
@@ -1546,7 +1678,10 @@
         }
     });
 'Excel.ConditionalFormat#iconSet:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B8:E13");
@@ -1586,7 +1721,10 @@
         await context.sync();
     });
 'Excel.ConditionalFormat#preset:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B2:M5");
@@ -1598,7 +1736,10 @@
         await context.sync();
     });
 'Excel.ConditionalFormat#textComparison:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B16:D18");
@@ -1610,7 +1751,10 @@
         await context.sync();
     });
 'Excel.ConditionalFormat#type:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const worksheetRange = sheet.getRange();
@@ -1637,7 +1781,10 @@
         }
     });
 'Excel.ConditionalFormatCollection#add:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B2:M5");
@@ -1653,7 +1800,10 @@
         await context.sync();
     });
 'Excel.ConditionalFormatCollection#clearAll:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange();
@@ -1700,7 +1850,10 @@
         }
     });
 'Excel.ConditionalFormatCollection#getItemAt:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const worksheetRange = sheet.getRange();
@@ -1727,7 +1880,10 @@
         }
     });
 'Excel.ConditionalFormatRule#formula:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B8:E13");
@@ -1738,7 +1894,10 @@
         await context.sync();
     });
 'Excel.ConditionalIconCriterion#formula:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B8:E13");
@@ -1778,7 +1937,10 @@
         await context.sync();
     });
 'Excel.ConditionalIconCriterion#operator:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B8:E13");
@@ -1817,7 +1979,10 @@
 
         await context.sync();
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B16:D18");
@@ -1829,7 +1994,10 @@
         await context.sync();
     });
 'Excel.ConditionalIconCriterion#type:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B8:E13");
@@ -1869,7 +2037,10 @@
         await context.sync();
     });
 'Excel.ConditionalPresetCriteriaRule#criterion:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B2:M5");
@@ -1881,7 +2052,10 @@
         await context.sync();
     });
 'Excel.ConditionalTextComparisonRule#text:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B16:D18");
@@ -1893,7 +2067,10 @@
         await context.sync();
     });
 'Excel.CustomConditionalFormat#format:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B8:E13");
@@ -1923,7 +2100,10 @@
         }
     });
 'Excel.CustomXmlPart#delete:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
+
     await Excel.run(async (context) => {
         const settings = context.workbook.settings;
         const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
@@ -1952,7 +2132,10 @@
         }
     });
 'Excel.CustomXmlPart#getXml:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
+
     await Excel.run(async (context) => {
         // You must have the xmlns attribute to populate the 
         // CustomXml.namespaceUri property.
@@ -1973,7 +2156,10 @@
         await context.sync();
     });
 'Excel.CustomXmlPart#id:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
+
     await Excel.run(async (context) => {
         // You must have the xmlns attribute to populate the 
         // CustomXml.namespaceUri property.
@@ -1994,7 +2180,10 @@
         await context.sync();
     });
 'Excel.CustomXmlPart#setXml:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
+
     await Excel.run(async (context) => {
         const settings = context.workbook.settings;
         const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
@@ -2015,7 +2204,10 @@
         }
     });
 'Excel.CustomXmlPartCollection#add:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
+
     await Excel.run(async (context) => {
         // You must have the xmlns attribute to populate the 
         // CustomXml.namespaceUri property.
@@ -2036,7 +2228,10 @@
         await context.sync();
     });
 'Excel.CustomXmlPartCollection#getByNamespace:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/test-xml-for-unique-namespace.yaml
+
     await Excel.run(async (context) => {
         $("#display-xml").text("");
         const contosoNamespace = "http://schemas.contoso.com/review/1.0";
@@ -2065,7 +2260,10 @@
         await context.sync();
     });
 'Excel.CustomXmlPartCollection#getItem:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
+
     await Excel.run(async (context) => {
         const settings = context.workbook.settings;
         const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
@@ -2086,7 +2284,10 @@
         }
     });
 'Excel.CustomXmlPartScopedCollection#getCount:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/test-xml-for-unique-namespace.yaml
+
     await Excel.run(async (context) => {
         $("#display-xml").text("");
         const contosoNamespace = "http://schemas.contoso.com/review/1.0";
@@ -2115,7 +2316,10 @@
         await context.sync();
     });
 'Excel.CustomXmlPartScopedCollection#getItemOrNullObject:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
+
     await Excel.run(async (context) => {
         const settings = context.workbook.settings;
         const xmlPartIDSetting = settings.getItemOrNullObject("ContosoReviewXmlPartId").load("value");
@@ -2144,7 +2348,10 @@
         }
     });
 'Excel.CustomXmlPartScopedCollection#getOnlyItem:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/test-xml-for-unique-namespace.yaml
+
     await Excel.run(async (context) => {
         $("#display-xml").text("");
         const contosoNamespace = "http://schemas.contoso.com/review/1.0";
@@ -2173,7 +2380,10 @@
         await context.sync();
     });
 'Excel.DataBarConditionalFormat#barDirection:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B8:E13");
@@ -2184,7 +2394,10 @@
         await context.sync();
     });
 'Excel.DataPivotHierarchy#name:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
+
     await Excel.run(async (context) => {
         const dataHierarchies = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales").dataHierarchies
         dataHierarchies.load("no-properties-needed");
@@ -2195,7 +2408,10 @@
         await context.sync();
     });
 'Excel.DataPivotHierarchy#showAs:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-calculations.yaml
+
     await Excel.run(async (context) => {
         const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
         const farmDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold at Farm");        
@@ -2218,7 +2434,10 @@
         await context.sync();
     });
 'Excel.DataValidation#errorAlert:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/22-data-validation/data-validation.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Decision");
         const commentsRange = 
@@ -2247,7 +2466,10 @@
         await context.sync();
     });
 'Excel.DataValidation#prompt:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/22-data-validation/data-validation.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Decision");
         const rankingRange = sheet.tables.getItem("NameOptionsTable").columns.getItem("Ranking").getDataBodyRange();
@@ -2280,7 +2502,10 @@
         await context.sync();
     });
 'Excel.DataValidation#rule:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/22-data-validation/data-validation.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Decision");
         const nameRange = 
@@ -2303,7 +2528,10 @@
         await context.sync();
     });
 'Excel.DataValidationRule#list:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/22-data-validation/data-validation.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Decision");
         const nameRange = 
@@ -2326,7 +2554,10 @@
         await context.sync();
     });
 'Excel.DataValidationRule#wholeNumber:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/22-data-validation/data-validation.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Decision");
         const rankingRange = sheet.tables.getItem("NameOptionsTable").columns.getItem("Ranking").getDataBodyRange();
@@ -2359,7 +2590,10 @@
         await context.sync();
     });
 'Excel.IconSetConditionalFormat#criteria:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B8:E13");
@@ -2399,7 +2633,10 @@
         await context.sync();
     });
 'Excel.IconSetConditionalFormat#style:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B8:E13");
@@ -2439,7 +2676,10 @@
         await context.sync();
     });
 'Excel.Image#format:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-images.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
         const image = sheet.shapes.getItem("Image").image;
@@ -2450,7 +2690,10 @@
         await context.sync();
     });
 'Excel.Line#connectBeginShape:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+
     await Excel.run(async (context) => {
         const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
         const line = shapes.getItem("StraightLine").line;
@@ -2459,7 +2702,10 @@
         await context.sync();
     });
 'Excel.Line#connectEndShape:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+
     await Excel.run(async (context) => {
         const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
         const line = shapes.getItem("StraightLine").line;
@@ -2468,7 +2714,10 @@
         await context.sync();
     });
 'Excel.Line#disconnectBeginShape:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+
     await Excel.run(async (context) => {
         const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
         const line = shapes.getItem("StraightLine").line;
@@ -2477,7 +2726,10 @@
         await context.sync();
     });
 'Excel.Line#disconnectEndShape:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+
     await Excel.run(async (context) => {
         const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
         const line = shapes.getItem("StraightLine").line;
@@ -2486,7 +2738,10 @@
         await context.sync();
     });
 'Excel.NamedItem#delete:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/34-named-item/create-and-remove-named-item.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const totalName = sheet.names.getItemOrNullObject("TotalAmount");
@@ -2505,7 +2760,10 @@
         await context.sync();
     });
 'Excel.NamedItem#formula:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/34-named-item/update-named-item.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -2559,7 +2817,10 @@
             }
     });
 'Excel.NamedItemCollection#add:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/34-named-item/create-and-remove-named-item.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const headerRange = sheet.getRange("A1:D1");
@@ -2604,6 +2865,9 @@
     });
 'Excel.NumberFormatInfo#numberDecimalSeparator:member':
   - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/culture-info.yaml
+
     // This will convert a number like "14,37" to "14.37"
 
     // (assuming the system decimal separator is ".").
@@ -2641,7 +2905,10 @@
     await context.sync();
       });
 'Excel.NumberFormatInfo#numberGroupSeparator:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/culture-info.yaml
+
     await Excel.run(async (context) => {
       // This will convert a number like "123-456-789" to "123,456,789"
       // (assuming the system thousands separator is ",").
@@ -2663,14 +2930,20 @@
       await context.sync();
     });
 'Excel.PageBreakCollection#add:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-page-layout.yaml
+
     await Excel.run(async (context) => {
         const farmSheet = context.workbook.worksheets.getItem("Print");
         farmSheet.horizontalPageBreaks.add("A21:E21");
         await context.sync();
     });
 'Excel.PageLayout#centerHorizontally:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-page-layout.yaml
+
     await Excel.run(async (context) => {
         const farmSheet = context.workbook.worksheets.getItem("Print");
         farmSheet.pageLayout.centerHorizontally = true;
@@ -2678,7 +2951,10 @@
         await context.sync();
     });
 'Excel.PageLayout#centerVertically:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-page-layout.yaml
+
     await Excel.run(async (context) => {
         const farmSheet = context.workbook.worksheets.getItem("Print");
         farmSheet.pageLayout.centerHorizontally = true;
@@ -2686,35 +2962,50 @@
         await context.sync();
     });
 'Excel.PageLayout#orientation:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-page-layout.yaml
+
     await Excel.run(async (context) => {
         const farmSheet = context.workbook.worksheets.getItem("Print");
         farmSheet.pageLayout.orientation = Excel.PageOrientation.landscape;
         await context.sync();
     });
 'Excel.PageLayout#setPrintArea:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-page-layout.yaml
+
     await Excel.run(async (context) => {
         const farmSheet = context.workbook.worksheets.getItem("Print");
         farmSheet.pageLayout.setPrintArea("A1:D41");
         await context.sync();
     });
 'Excel.PageLayout#setPrintTitleRows:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-page-layout.yaml
+
     await Excel.run(async (context) => {
         const farmSheet = context.workbook.worksheets.getItem("Print");
         farmSheet.pageLayout.setPrintTitleRows("$1:$1");
         await context.sync();
     });
 'Excel.PageLayout#zoom:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-page-layout.yaml
+
     await Excel.run(async (context) => {
         const farmSheet = context.workbook.worksheets.getItem("Print");
         farmSheet.pageLayout.zoom = { scale: 200 };
         await context.sync();
     });
 'Excel.PivotLayout#getDataBodyRange:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml
+
     await Excel.run(async (context) => {
         const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
 
@@ -2732,7 +3023,10 @@
         await context.sync();
     });
 'Excel.PivotTable#columnHierarchies:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
+
     await Excel.run(async (context) => {
         const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");       
 
@@ -2751,7 +3045,10 @@
         await context.sync();
     });
 'Excel.PivotTable#dataHierarchies:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
+
     await Excel.run(async (context) => {
         const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
         pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem("Crates Sold at Farm"));
@@ -2760,14 +3057,20 @@
         await context.sync();
     });
 'Excel.PivotTable#delete:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
+
     await Excel.run(async (context) => {
         context.workbook.worksheets.getItem("Pivot").pivotTables.getItem("Farm Sales").delete();
 
         await context.sync();
     });
 'Excel.PivotTable#filterHierarchies:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml
+
     async function filter(functionType: Excel.AggregationFunction) {
         await Excel.run(async (context) => {
             const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
@@ -2784,7 +3087,10 @@
         });
     }
 'Excel.PivotTable#layout:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
+
     await Excel.run(async (context) => {
         const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
         pivotTable.layout.load("layoutType");
@@ -2802,7 +3108,10 @@
         console.log("Pivot layout is now " + pivotTable.layout.layoutType);
     });
 'Excel.PivotTableCollection#add:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
+
     await Excel.run(async (context) => {
         const rangeToAnalyze = context.workbook.worksheets.getItem("Data").getRange("A1:E21");
         const rangeToPlacePivot = context.workbook.worksheets.getItem("Pivot").getRange("A2");
@@ -2811,7 +3120,10 @@
         await context.sync();
     });
 'Excel.PresetCriteriaConditionalFormat#rule:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B2:M5");
@@ -2822,7 +3134,10 @@
 
         await context.sync();
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B8:E13");
@@ -2833,7 +3148,10 @@
         await context.sync();
     });
 'Excel.Range#autoFill:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-auto-fill.yaml
+
     await Excel.run(async (context) => {
       const sheet = context.workbook.worksheets.getActiveWorksheet();
       const sumCell = sheet.getRange("P4");
@@ -2859,7 +3177,10 @@
         }
     });
 'Excel.Range#copyFrom:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-copyfrom.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         // Place a label in front of the copied data.
@@ -2885,7 +3206,10 @@
         }
     });
 'Excel.Range#find:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-find.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const table = sheet.tables.getItem("ExpensesTable");
@@ -2906,7 +3230,10 @@
         console.log(foundRange.address);
     });
 'Excel.Range#findOrNullObject:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-find.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const table = sheet.tables.getItem("ExpensesTable");
@@ -2962,7 +3289,10 @@
         }
     });
 'Excel.Range#getCellProperties:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
+
     await Excel.run(async (context) => {
         const cell = context.workbook.getActiveCell();
 
@@ -3059,7 +3389,10 @@
         }
     });
 'Excel.Range#getIntersectionOrNullObject:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-relationships.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const salesTable = sheet.tables.getItem("SalesTable");
@@ -3196,7 +3529,10 @@
         }
     });
 'Excel.Range#getSpecialCells:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-areas.yaml
+
     await Excel.run(async (context) => {
 
         const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -3209,7 +3545,10 @@
         return context.sync();
     });
 'Excel.Range#getUsedRange:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-relationships.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const salesTable = sheet.tables.getItem("SalesTable");
@@ -3265,7 +3604,10 @@
         await context.sync();
     });
 'Excel.Range#getUsedRangeOrNullObject:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/used-range.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const salesTable = sheet.tables.getItem("SalesTable");
@@ -3299,7 +3641,10 @@
         await context.sync();
     });
 'Excel.Range#group:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/outline.yaml
+
     Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
         
@@ -3314,7 +3659,10 @@
         await context.sync();
     });
 'Excel.Range#hyperlink:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-hyperlink.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Orders");
 
@@ -3387,7 +3735,10 @@
         }
     });
 'Excel.Range#moveTo:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-copyfrom.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         // Place a label in front of the moved data.
@@ -3423,7 +3774,10 @@
         }
     });
 'Excel.Range#removeDuplicates:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-remove-duplicates.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B2:D11");
@@ -3450,7 +3804,10 @@
         }
     });
 'Excel.Range#set:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/90-scenarios/multiple-property-set.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -3469,7 +3826,10 @@
         range.format.autofitColumns();
         await context.sync();
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/90-scenarios/multiple-property-set.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -3485,7 +3845,10 @@
         await context.sync();
     });
 'Excel.Range#setCellProperties:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
 
@@ -3558,7 +3921,10 @@
         await context.sync();
     });
 'Excel.Range#sort:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-column-and-row-sort.yaml
+
     async function sortTopToBottom(criteria: string) {
         await Excel.run(async (context) => {
             const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -3584,7 +3950,10 @@
         });
     }
 'Excel.Range#style:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+
     await Excel.run(async (context) => {
         let worksheet = context.workbook.worksheets.getItem("Sample");
         let range = worksheet.getRange("A1:E1");
@@ -3597,7 +3966,10 @@
         await context.sync();
     });
 'Excel.Range#ungroup:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/outline.yaml
+
     Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
         
@@ -3643,7 +4015,10 @@
         await context.sync();
     });
 'Excel.RangeAreas#format:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-areas.yaml
+
     await Excel.run(async (context) => {
 
         const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -3869,7 +4244,10 @@
         }
     });
 'Excel.RangeFormat#textOrientation:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-text-orientation.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B2:E2");
@@ -3881,7 +4259,10 @@
         await context.sync();
     });
 'Excel.RangeHyperlink#address:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-hyperlink.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Orders");
 
@@ -3907,7 +4288,10 @@
         await context.sync();
     });
 'Excel.RangeHyperlink#documentReference:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-hyperlink.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Orders");
 
@@ -3933,7 +4317,10 @@
         await context.sync();
     });
 'Excel.RangeHyperlink#screenTip:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-hyperlink.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Orders");
 
@@ -3959,7 +4346,10 @@
         await context.sync();
     });
 'Excel.RangeHyperlink#textToDisplay:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-hyperlink.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Orders");
 
@@ -3985,7 +4375,10 @@
         await context.sync();
     });
 'Excel.RemoveDuplicatesResult#uniqueRemaining:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-remove-duplicates.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B2:D11");
@@ -3998,7 +4391,10 @@
         console.log(deleteResult.uniqueRemaining + " entries with unique names remain in the range.");
     });
 'Excel.Runtime#enableEvents:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-disable-events.yaml
+
     await Excel.run(async (context) => {
         context.runtime.load("enableEvents");
         await context.sync();
@@ -4015,7 +4411,10 @@
         await context.sync();
     });
 'Excel.SettableCellProperties#style:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
 
@@ -4088,7 +4487,10 @@
         await context.sync();
     });
 'Excel.Setting#delete:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/create-get-change-delete-settings.yaml
+
     await Excel.run(async (context) => {
         const settings = context.workbook.settings;
         let needsReview = settings.getItem("NeedsReview");
@@ -4106,7 +4508,10 @@
         await context.sync();
     });
 'Excel.SettingCollection#add:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
     await Excel.run(async (context) => {
         const settings = context.workbook.settings; 
         settings.onSettingsChanged.add(onChangedSetting);
@@ -4115,7 +4520,10 @@
         console.log("Settings changed handler registered.");
     });
 'Excel.SettingCollection#getItemOrNullObject:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/create-get-change-delete-settings.yaml
+
     await Excel.run(async (context) => {
         const settings = context.workbook.settings;
         let needsReview = settings.getItem("NeedsReview");
@@ -4133,7 +4541,10 @@
         await context.sync();
     });
 'Excel.SettingCollection#onSettingsChanged:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
     await Excel.run(async (context) => {
         const settings = context.workbook.settings; 
         settings.onSettingsChanged.add(onChangedSetting);
@@ -4142,7 +4553,10 @@
         console.log("Settings changed handler registered.");
     });
 'Excel.Shape#delete:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-create-and-delete.yaml
+
     await Excel.run(async (context) => {
         context.workbook.worksheets.getItemOrNullObject("Shapes").delete();
         const sheet = context.workbook.worksheets.add("Shapes");
@@ -4157,7 +4571,10 @@
         await context.sync();
     });
 'Excel.Shape#fill:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-create-and-delete.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
         const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.smileyFace);
@@ -4169,7 +4586,10 @@
         await context.sync();
     });
 'Excel.Shape#getAsImage:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-images.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
         const shape = sheet.shapes.getItem("Image");
@@ -4181,7 +4601,10 @@
         console.log("The image's base64-encoded string: " + imageString);
     });
 'Excel.Shape#group:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-groups.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
 
@@ -4192,7 +4615,10 @@
         await context.sync();
     });
 'Excel.Shape#incrementLeft:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
         const shape = sheet.shapes.getItem("Square")
@@ -4200,7 +4626,10 @@
         await context.sync();
     });
 'Excel.Shape#incrementRotation:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-images.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
         const shape = sheet.shapes.getItem("Image");
@@ -4208,7 +4637,10 @@
         await context.sync();
     });
 'Excel.Shape#incrementTop:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
         const shape = sheet.shapes.getItem("Pentagon")
@@ -4216,7 +4648,10 @@
         await context.sync();
     });
 'Excel.Shape#line:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+
     await Excel.run(async (context) => {
         const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
         const line = shapes.getItem("StraightLine").line;
@@ -4231,7 +4666,10 @@
         await context.sync();
     });
 'Excel.Shape#lockAspectRatio:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
         const shape = sheet.shapes.getItem("Octagon")
@@ -4240,7 +4678,10 @@
         await context.sync();
     });
 'Excel.Shape#rotation:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-create-and-delete.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
         const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.triangle);
@@ -4253,7 +4694,10 @@
         await context.sync();
     });
 'Excel.Shape#scaleHeight:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
         const shape = sheet.shapes.getItem("Octagon")
@@ -4262,7 +4706,10 @@
         await context.sync();
     });
 'Excel.Shape#setZOrder:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
         const shape = sheet.shapes.getItem("Octagon")
@@ -4270,7 +4717,10 @@
         await context.sync();
     });
 'Excel.ShapeCollection#addGeometricShape:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-create-and-delete.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
         const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.hexagon);
@@ -4281,7 +4731,10 @@
         await context.sync();
     });
 'Excel.ShapeCollection#addGroup:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-groups.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
         const square = sheet.shapes.getItem("Square");
@@ -4295,9 +4748,14 @@
         await context.sync();
     });
 'Excel.ShapeCollection#addImage:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-images.yaml
+
     const myFile = <HTMLInputElement>document.getElementById("selectedFile");
+
     const reader = new FileReader();
+
 
     reader.onload = (event) => {
         Excel.run((context) => {
@@ -4310,10 +4768,15 @@
         });
     };
 
+
     // Read in the image file as a data URL.
+
     reader.readAsDataURL(myFile.files[0]);
 'Excel.ShapeCollection#addLine:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
+
     await Excel.run(async (context) => {
         const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
         const line = shapes.addLine(200, 50, 300, 150, Excel.ConnectorType.straight);
@@ -4321,7 +4784,10 @@
         await context.sync();
     });
 'Excel.ShapeCollection#addTextBox:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-textboxes.yaml
+
     await Excel.run(async (context) => {
         const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
         const textbox = shapes.addTextBox("A box with text");
@@ -4333,7 +4799,10 @@
         await context.sync();
     });
 'Excel.ShapeGroup#ungroup:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-groups.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
 
@@ -4344,7 +4813,10 @@
         await context.sync();
     });
 'Excel.ShowAsRule#baseItem:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-calculations.yaml
+
     await Excel.run(async (context) => {
         const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
         const farmDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold at Farm");
@@ -4370,35 +4842,50 @@
         await context.sync();
     });
 'Excel.Slicer#clearFilters:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
+
     await Excel.run(async (context) => {
         const slicer = context.workbook.slicers.getItem("Fruit Slicer");
         slicer.clearFilters();
         await context.sync();
     });
 'Excel.Slicer#delete:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
         sheet.slicers.getItemAt(0).delete();
         await context.sync();
     });
 'Excel.Slicer#selectItems:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
+
     await Excel.run(async (context) => {
         const slicer = context.workbook.slicers.getItem("Fruit Slicer");
         slicer.selectItems(["Lemon", "Lime", "Orange"]);
         await context.sync();
     });
 'Excel.Slicer#style:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
+
     await Excel.run(async (context) => {
         const slicer = context.workbook.slicers.getItem("Fruit Slicer");
         slicer.style = "SlicerStyleLight6";
         await context.sync();
     });
 'Excel.SlicerCollection#add:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Pivot");
         const slicer = sheet.slicers.add(
@@ -4409,7 +4896,10 @@
         await context.sync();
     });
 'Excel.SlicerCollection#getItem:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
+
     await Excel.run(async (context) => {
         const slicer = context.workbook.slicers.getItem("Fruit Slicer");
         slicer.caption = "Fruit Types";
@@ -4420,7 +4910,10 @@
         await context.sync();
     });
 'Excel.Style#delete:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+
     await Excel.run(async (context) => {
         let style = context.workbook.styles.getItem("Diagonal Orientation Style");
 
@@ -4433,7 +4926,10 @@
         console.log("Successfully deleted the diagonal orientation style from the Home tab ribbon.");
     });
 'Excel.Style#font:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+
     await Excel.run(async (context) => {
         let style = context.workbook.styles.getItem("Normal");
         style.font.load("bold, color, italic, name, size");
@@ -4449,7 +4945,10 @@
         console.log("Fill color: " + style.fill.color);
     });
 'Excel.Style#horizontalAlignment:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+
     await Excel.run(async (context) => {
         let worksheet = context.workbook.worksheets.getItem("Sample");
         let range = worksheet.getRange("A1:E1");
@@ -4462,7 +4961,10 @@
         await context.sync();
     });
 'Excel.Style#load:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+
     await Excel.run(async (context) => {
         let style = context.workbook.styles.getItem("Diagonal Orientation Style");            
         style.load("textOrientation, horizontalAlignment, autoIndent, readingOrder, wrapText, includeProtection, shrinkToFit, locked");
@@ -4479,7 +4981,10 @@
         console.log("Style locked: " + style.locked);
     });
 'Excel.StyleCollection#add:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+
     await Excel.run(async (context) => {
         let styles = context.workbook.styles;
 
@@ -4501,7 +5006,10 @@
         console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
     });
 'Excel.StyleCollection#getItem:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+
     await Excel.run(async (context) => {
         let styles = context.workbook.styles;
 
@@ -4644,7 +5152,10 @@
         }
     });
 'Excel.Table#onChanged:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-table-changed.yaml
+
     await Excel.run(async (context) => {
         let table = context.workbook.tables.getItemAt(0);
         table.onChanged.add(onChange);
@@ -4653,7 +5164,10 @@
         console.log("A handler has been registered for the onChanged event");
     });
 'Excel.Table#onSelectionChanged:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-table-changed.yaml
+
     await Excel.run(async (context) => {
         let table = context.workbook.tables.getItemAt(0);
         table.onSelectionChanged.add(onSelectionChange);
@@ -4681,7 +5195,10 @@
         }
     });
 'Excel.TableChangedEventArgs#details:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/data-change-event-details.yaml
+
     async function onTableChanged(eventArgs: Excel.TableChangedEventArgs) {
         await Excel.run(async (context) => {
             const details = eventArgs.details;
@@ -4692,7 +5209,10 @@
         });
     }
 'Excel.TableChangedEventArgs#tableId:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-tablecollection-changed.yaml
+
     async function onChange(event) {
         await Excel.run(async (context) => {
             let table = context.workbook.tables.getItem(event.tableId);
@@ -4707,7 +5227,10 @@
         });
     }
 'Excel.TableChangedEventArgs#worksheetId:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-tablecollection-changed.yaml
+
     async function onChange(event) {
         await Excel.run(async (context) => {
             let table = context.workbook.tables.getItem(event.tableId);
@@ -4797,7 +5320,10 @@
         }
     });
 'Excel.TableCollection#onChanged:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-tablecollection-changed.yaml
+
     await Excel.run(async (context) => {
         let tables = context.workbook.tables;
         tables.onChanged.add(onChange);
@@ -5066,7 +5592,10 @@
             }
     });
 'Excel.TableSelectionChangedEventArgs#address:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-table-changed.yaml
+
     async function onSelectionChange(args) {
         await Excel.run(async (context) => {
             console.log("Handler for table onSelectionChanged event has been triggered. The new selection is: " + args.address);
@@ -5091,7 +5620,10 @@
         }
     });
 'Excel.TextConditionalFormat#format:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B16:D18");
@@ -5103,7 +5635,10 @@
         await context.sync();
     });
 'Excel.TextConditionalFormat#rule:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const range = sheet.getRange("B16:D18");
@@ -5115,7 +5650,10 @@
         await context.sync();
     });
 'Excel.TextFrame#deleteText:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-textboxes.yaml
+
     await Excel.run(async (context) => {
         const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
         const textbox = shapes.getItem("Textbox");
@@ -5123,12 +5661,18 @@
         await context.sync();
     });
 'Excel.Workbook#close:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/workbook-save-and-close.yaml
+
     await Excel.run(async (context) => {
         context.workbook.close(Excel.CloseBehavior.save);
     });
 'Excel.Workbook#getActiveCell:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/workbook-get-active-cell.yaml
+
     await Excel.run(async (context) => {
 
         let myWorkbook = context.workbook;
@@ -5154,7 +5698,10 @@
         }
     });
 'Excel.Workbook#getSelectedRanges:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-areas.yaml
+
     await Excel.run(async (context) => {
 
         const selectedRanges = context.workbook.getSelectedRanges();
@@ -5163,7 +5710,10 @@
         await context.sync();
     })
 'Excel.Workbook#properties:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/26-document/properties.yaml
+
     await Excel.run(async (context) => {
         let titleValue = "Excel document properties API";
         let subjectValue = "Set and get document properties";
@@ -5189,12 +5739,18 @@
         console.log("Set the following document properties: title, subject, keywords, comments, category, manager, company.");
     });
 'Excel.Workbook#save:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/workbook-save-and-close.yaml
+
     await Excel.run(async (context) => {
         context.workbook.save(Excel.SaveBehavior.save);
     });
 'Excel.Workbook#styles:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+
     await Excel.run(async (context) => {
         let styles = context.workbook.styles;
 
@@ -5216,7 +5772,10 @@
         console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
     });
 'Excel.WorkbookProtection#protect:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/data-protection.yaml
+
     await Excel.run(async (context) => {
         let workbook = context.workbook;
         workbook.load("protection/protected");
@@ -5227,9 +5786,14 @@
             workbook.protection.protect();
         }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/data-protection.yaml
+
     let password = await passwordHandler();
+
     passwordHelper(password);
+
     await Excel.run(async (context) => {
         let workbook = context.workbook;
         workbook.load("protection/protected");
@@ -5241,14 +5805,22 @@
         }
     });
 'Excel.WorkbookProtection#unprotect:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/data-protection.yaml
+
     await Excel.run(async (context) => {
         let workbook = context.workbook;
         workbook.protection.unprotect();
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/data-protection.yaml
+
     let password = await passwordHandler();
+
     passwordHelper(password);
+
     await Excel.run(async (context) => {
         let workbook = context.workbook;
         workbook.protection.unprotect(password);
@@ -5267,7 +5839,10 @@
         }
     });
 'Excel.Worksheet#autoFilter:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
         const farmData = sheet.getUsedRange();
@@ -5277,7 +5852,10 @@
         await context.sync();
     });
 'Excel.Worksheet#copy:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-copy.yaml
+
     await Excel.run(async (context) => {
 
         let myWorkbook = context.workbook;
@@ -5305,7 +5883,10 @@
         }
     });
 'Excel.Worksheet#findAllOrNullObject:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-find-all.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const foundRanges = sheet.findAllOrNullObject("Complete", {
@@ -5338,7 +5919,10 @@
         }
     });
 'Excel.Worksheet#getNext:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+
     await Excel.run(async (context) => {
         const sheets = context.workbook.worksheets;
 
@@ -5364,7 +5948,10 @@
         await context.sync();
     });
 'Excel.Worksheet#getPrevious:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+
     await Excel.run(async (context) => {
         const sheets = context.workbook.worksheets;
         const currentSheet = sheets.getActiveWorksheet();
@@ -5420,7 +6007,10 @@
         }
     });
 'Excel.Worksheet#getRanges:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-areas.yaml
+
     await Excel.run(async (context) => {
 
         const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -5486,7 +6076,10 @@
         return context.sync();
     });
 'Excel.Worksheet#onChanged:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-worksheet.yaml
+
     await Excel.run(async (context) => {
         let sheet = context.workbook.worksheets.getItem("Sample");
         sheet.onChanged.add(onChange);
@@ -5495,7 +6088,10 @@
         console.log("Added a worksheet-level data-changed event handler.");
     });
 'Excel.Worksheet#onColumnSorted:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-column-and-row-sort.yaml
+
     await Excel.run(async (context) => {
         console.log("Adding column handler");
         const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -5541,7 +6137,10 @@
         return context.sync();
     });
 'Excel.Worksheet#onRowSorted:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-column-and-row-sort.yaml
+
     await Excel.run(async (context) => {
         console.log("Adding row handler");
         const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -5575,7 +6174,10 @@
         return context.sync();
     });
 'Excel.Worksheet#onSingleClicked:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-worksheet-single-click.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
         sheet.onSingleClicked.add((event) => {
@@ -5635,7 +6237,10 @@
       });
     });
 'Excel.Worksheet#showGridlines:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/gridlines.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
         sheet.showGridlines = true;
@@ -5643,7 +6248,10 @@
         await context.sync();
     });
 'Excel.Worksheet#showOutlineLevels:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/outline.yaml
+
     Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
 
@@ -5651,7 +6259,10 @@
         sheet.showOutlineLevels(1, 1);
         await context.sync();
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/outline.yaml
+
     Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
 
@@ -5660,7 +6271,10 @@
         await context.sync();
     });
 'Excel.Worksheet#slicers:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Pivot");
         const slicer = sheet.slicers.add(
@@ -5671,7 +6285,10 @@
         await context.sync();
     });
 'Excel.Worksheet#tabColor:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/tab-color.yaml
+
     await Excel.run(async (context) => {
         const activeSheet = context.workbook.worksheets.getActiveWorksheet();
         activeSheet.tabColor = "#FF0000";
@@ -5679,7 +6296,10 @@
         await context.sync();
     });
 'Excel.WorksheetAddedEventArgs#worksheetId:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
     async function onWorksheetAdd(event) {
         await Excel.run(async (context) => {
             console.log(
@@ -5720,9 +6340,14 @@
         }
     });
 'Excel.WorksheetCollection#addFromBase64:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/workbook-insert-external-worksheets.yaml
+
     const myFile = <HTMLInputElement>document.getElementById("file");
+
     const reader = new FileReader();
+
 
     reader.onload = (event) => {
         Excel.run((context) => {
@@ -5740,7 +6365,9 @@
         });
     };
 
+
     // read in the file as a data URL so we can parse the base64-encoded string
+
     reader.readAsDataURL(myFile.files[0]);
 'Excel.WorksheetCollection#getActiveWorksheet:member(1)':
   - |-
@@ -5757,7 +6384,10 @@
         }
     });
 'Excel.WorksheetCollection#getFirst:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+
     await Excel.run(async (context) => {
         const sheets = context.workbook.worksheets;
 
@@ -5783,7 +6413,10 @@
         await context.sync();
     });
 'Excel.WorksheetCollection#getLast:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+
     await Excel.run(async (context) => {
         const sheets = context.workbook.worksheets;
 
@@ -5827,7 +6460,10 @@
         }
     });
 'Excel.WorksheetCollection#onActivated:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
     await Excel.run(async (context) => {
         let sheets = context.workbook.worksheets;
         sheets.onActivated.add(onActivate);
@@ -5836,7 +6472,10 @@
         console.log("A handler has been registered for the OnActivate event.");
     });
 'Excel.WorksheetCollection#onAdded:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
     await Excel.run(async (context) => {
         let sheet = context.workbook.worksheets;
         sheet.onAdded.add(onWorksheetAdd);
@@ -5845,7 +6484,10 @@
         console.log("A handler has been registered for the OnAdded event.");
     });
 'Excel.WorksheetCollection#onDeactivated:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
+
     await Excel.run(async (context) => {
         let sheets = context.workbook.worksheets;
         sheets.onDeactivated.add(onDeactivate);
@@ -5854,7 +6496,10 @@
         console.log("A handler has been registered for the OnDeactivate event.");
     });
 'Excel.WorksheetFreezePanes#freezeAt:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -5864,7 +6509,10 @@
         await context.sync();
     });
 'Excel.WorksheetFreezePanes#freezeColumns:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -5874,7 +6522,10 @@
         await context.sync();
     });
 'Excel.WorksheetFreezePanes#freezeRows:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -5884,7 +6535,10 @@
         await context.sync();
     });
 'Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         const frozenRange = sheet.freezePanes.getLocationOrNullObject();
@@ -5899,7 +6553,10 @@
         }
     });
 'Excel.WorksheetFreezePanes#unfreeze:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         sheet.freezePanes.unfreeze();
@@ -5907,7 +6564,10 @@
         await context.sync();
     });
 'Excel.WorksheetProtection#protect:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/data-protection.yaml
+
     await Excel.run(async (context) => {
         let activeSheet = context.workbook.worksheets.getActiveWorksheet();
         activeSheet.load("protection/protected");
@@ -5918,9 +6578,14 @@
             activeSheet.protection.protect();
         }
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/data-protection.yaml
+
     let password = await passwordHandler();
+
     passwordHelper(password);
+
     await Excel.run(async (context) => {
         let activeSheet = context.workbook.worksheets.getActiveWorksheet();
         activeSheet.load("protection/protected");
@@ -5932,20 +6597,31 @@
         }
     });
 'Excel.WorksheetProtection#unprotect:member(1)':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/data-protection.yaml
+
     await Excel.run(async (context) => {
         let activeSheet = context.workbook.worksheets.getActiveWorksheet();
         activeSheet.protection.unprotect();
     });
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/data-protection.yaml
+
     let password = await passwordHandler();
+
     passwordHelper(password);
+
     await Excel.run(async (context) => {
         let activeSheet = context.workbook.worksheets.getActiveWorksheet();
         activeSheet.protection.unprotect(password);
     });
 'Excel.WorksheetSingleClickedEventArgs#address:member':
-  - |-
+  - >-
+    //// Full sample:
+    https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-worksheet-single-click.yaml
+
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
         sheet.onSingleClicked.add((event) => {

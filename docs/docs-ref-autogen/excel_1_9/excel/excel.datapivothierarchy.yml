@@ -158,12 +158,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
+
           await Excel.run(async (context) => {
               const dataHierarchies = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales").dataHierarchies
               dataHierarchies.load("no-properties-needed");
@@ -173,6 +178,7 @@ items:
               dataHierarchies.items[1].name = "Wholesale";
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.DataPivotHierarchy#numberFormat:member'
     summary: |-
@@ -283,12 +289,17 @@ items:
       return:
         type:
           - 'excel!Excel.ShowAsRule:interface'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-calculations.yaml
+
           await Excel.run(async (context) => {
               const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
               const farmDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold at Farm");        
@@ -310,6 +321,7 @@ items:
               wholesaleDataHierarchy.showAs = wholesaleShowAs;
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.DataPivotHierarchy#summarizeBy:member'
     summary: |-

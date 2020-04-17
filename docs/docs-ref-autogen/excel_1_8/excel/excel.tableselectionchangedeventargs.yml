@@ -32,17 +32,23 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-table-changed.yaml
+
           async function onSelectionChange(args) {
               await Excel.run(async (context) => {
                   console.log("Handler for table onSelectionChanged event has been triggered. The new selection is: " + args.address);
               });
           }
+
           ```
   - uid: 'excel!Excel.TableSelectionChangedEventArgs#isInsideTable:member'
     summary: |-

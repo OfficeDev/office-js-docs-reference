@@ -54,12 +54,17 @@ items:
       return:
         type:
           - 'excel!Excel.ConditionalRangeFormat:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B16:D18");
@@ -70,6 +75,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.TextConditionalFormat#load:member(1)'
     summary: >-
@@ -156,12 +162,17 @@ items:
       return:
         type:
           - 'excel!Excel.ConditionalTextComparisonRule:interface'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B16:D18");
@@ -172,6 +183,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.TextConditionalFormat#set:member(1)'
     summary: >-

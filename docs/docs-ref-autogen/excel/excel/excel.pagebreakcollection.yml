@@ -36,17 +36,23 @@ items:
       return:
         type:
           - 'excel!Excel.PageBreak:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-page-layout.yaml
+
           await Excel.run(async (context) => {
               const farmSheet = context.workbook.worksheets.getItem("Print");
               farmSheet.horizontalPageBreaks.add("A21:E21");
               await context.sync();
           });
+
           ```
       parameters:
         - id: pageBreakRange

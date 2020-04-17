@@ -61,6 +61,9 @@ items:
 
       ```javascript
 
+      //// Full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/10-roaming-settings/roaming-settings.yaml
+
       var settingName = $("#settingName").val();
 
       var settingValue = Office.context.roamingSettings.get(settingName);
@@ -138,6 +141,9 @@ items:
 
       ```javascript
 
+      //// Full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/10-roaming-settings/roaming-settings.yaml
+
       // Save settings in the mailbox to make it available in future sessions.
 
       Office.context.roamingSettings.saveAsync(function(result) {
@@ -213,6 +219,9 @@ items:
       ```
 
       ```javascript
+
+      //// Full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/10-roaming-settings/roaming-settings.yaml
 
       var settingName = $("#settingName").val();
 

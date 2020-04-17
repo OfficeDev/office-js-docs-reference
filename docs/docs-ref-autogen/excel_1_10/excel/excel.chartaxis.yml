@@ -171,12 +171,17 @@ items:
       return:
         type:
           - 'excel!Excel.ChartAxis#displayUnit~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-axis.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -191,6 +196,7 @@ items:
 
               console.log("The vertical axis display unit is: " + valueAxis.displayUnit);
           });
+
           ```
   - uid: 'excel!Excel.ChartAxis#format:member'
     summary: |-
@@ -773,12 +779,17 @@ items:
       return:
         type:
           - boolean
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-axis.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               let chart = sheet.charts.getItemAt(0);
@@ -789,6 +800,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.ChartAxis#textOrientation:member'
     summary: >-

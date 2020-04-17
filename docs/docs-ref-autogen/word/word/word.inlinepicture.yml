@@ -135,12 +135,17 @@ items:
       return:
         type:
           - 'word!Word.InlinePicture#getBase64ImageSrc~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/15-images/insert-and-get-pictures.yaml
+
           await Word.run(async (context) => {
             const firstPicture = context.document.body.inlinePictures.getFirst();
             firstPicture.load("width, height");
@@ -153,6 +158,7 @@ items:
             await context.sync();
             console.log(base64.value);
           });
+
           ```
   - uid: 'word!Word.InlinePicture#getNext:member(1)'
     summary: |-

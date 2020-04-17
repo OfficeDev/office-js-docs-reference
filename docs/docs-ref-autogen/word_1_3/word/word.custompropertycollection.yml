@@ -42,26 +42,38 @@ items:
       return:
         type:
           - 'word!Word.CustomProperty:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/30-properties/read-write-custom-document-properties.yaml
+
           await Word.run(async (context) => {
               context.document.properties.customProperties.add("Numeric Property", 1234);
 
               await context.sync();
               console.log("Property added");
           });
+
           ```
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/30-properties/read-write-custom-document-properties.yaml
+
           await Word.run(async (context) => {
               context.document.properties.customProperties.add("String Property", "Hello World!");
 
               await context.sync();
               console.log("Property added");
           });
+
           ```
       parameters:
         - id: key
@@ -176,12 +188,17 @@ items:
       return:
         type:
           - 'word!Word.CustomPropertyCollection#items~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/30-properties/read-write-custom-document-properties.yaml
+
           await Word.run(async (context) => {
               let properties = context.document.properties.customProperties;
               properties.load("key,type,value");
@@ -190,6 +207,7 @@ items:
               for (var i = 0; i < properties.items.length; i++)
                   console.log("Property Name:" + properties.items[i].key + "; Type=" + properties.items[i].type + "; Property Value=" + properties.items[i].value);
           });
+
           ```
   - uid: 'word!Word.CustomPropertyCollection#load:member(1)'
     summary: >-

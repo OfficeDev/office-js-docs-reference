@@ -40,12 +40,18 @@ items:
       return:
         type:
           - 'excel!Excel.PivotTable:class'
-        description: |-
+        description: >-
           Returns the newly inserted PivotTable.
+
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
+
           await Excel.run(async (context) => {
               const rangeToAnalyze = context.workbook.worksheets.getItem("Data").getRange("A1:E21");
               const rangeToPlacePivot = context.workbook.worksheets.getItem("Pivot").getRange("A2");
@@ -53,6 +59,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: name

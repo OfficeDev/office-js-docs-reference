@@ -42,12 +42,18 @@ items:
       return:
         type:
           - 'excel!Excel.Slicer:class'
-        description: |-
+        description: >-
           The new slicer.
+
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Pivot");
               const slicer = sheet.slicers.add(
@@ -57,6 +63,7 @@ items:
               slicer.name = "Fruit Slicer";
               await context.sync();
           });
+
           ```
       parameters:
         - id: slicerSource
@@ -124,12 +131,17 @@ items:
       return:
         type:
           - 'excel!Excel.Slicer:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
+
           await Excel.run(async (context) => {
               const slicer = context.workbook.slicers.getItem("Fruit Slicer");
               slicer.caption = "Fruit Types";
@@ -139,6 +151,7 @@ items:
               slicer.width = 150;
               await context.sync();
           });
+
           ```
       parameters:
         - id: key

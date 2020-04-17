@@ -39,12 +39,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+
           await Excel.run(async (context) => {
               let styles = context.workbook.styles;
 
@@ -65,6 +70,7 @@ items:
 
               console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
           });
+
           ```
       parameters:
         - id: name
@@ -116,12 +122,17 @@ items:
       return:
         type:
           - 'excel!Excel.Style:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+
           await Excel.run(async (context) => {
               let styles = context.workbook.styles;
 
@@ -142,6 +153,7 @@ items:
 
               console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
           });
+
           ```
       parameters:
         - id: name

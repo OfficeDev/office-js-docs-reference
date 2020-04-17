@@ -98,18 +98,24 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-textboxes.yaml
+
           await Excel.run(async (context) => {
               const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
               const textbox = shapes.getItem("Textbox");
               textbox.textFrame.deleteText();
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.TextFrame#hasText:member'
     summary: |-

@@ -54,12 +54,17 @@ items:
       return:
         type:
           - 'excel!Excel.ConditionalRangeFormat:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          //// Full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B8:E13");
@@ -69,6 +74,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.CustomConditionalFormat#load:member(1)'
     summary: >-
