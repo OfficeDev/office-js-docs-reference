@@ -82,7 +82,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-header-and-footer.yaml
 
           await Word.run(async (context) => {
@@ -184,7 +184,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-header-and-footer.yaml
 
           await Word.run(async (context) => {

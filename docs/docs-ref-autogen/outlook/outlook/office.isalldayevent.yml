@@ -88,7 +88,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
 
       Office.context.mailbox.item.isAllDayEvent.getAsync(function(asyncResult) {
@@ -193,7 +193,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
 
       Office.context.mailbox.item.isAllDayEvent.setAsync(true, function(asyncResult) {

@@ -98,7 +98,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
 
       Office.context.mailbox.item.start.getAsync((result) => {
@@ -248,7 +248,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
 
       var start = new Date(); // Represents current date and time.
@@ -267,7 +267,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-end-appointment-organizer.yaml
 
       Office.context.mailbox.item.start.getAsync((result) => {

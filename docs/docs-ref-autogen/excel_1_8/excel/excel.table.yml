@@ -514,7 +514,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-table-changed.yaml
 
           await Excel.run(async (context) => {
@@ -549,7 +549,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-table-changed.yaml
 
           await Excel.run(async (context) => {

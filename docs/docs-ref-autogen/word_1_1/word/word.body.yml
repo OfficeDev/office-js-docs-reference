@@ -883,7 +883,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/get-word-count.yaml
 
           await Word.run(async (context) => {
@@ -983,7 +983,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/search.yaml
 
           await Word.run(async (context) => {
@@ -1004,7 +1004,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/search.yaml
 
           await Word.run(async (context) => {
@@ -1028,7 +1028,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/get-word-count.yaml
 
           await Word.run(async (context) => {

@@ -61,7 +61,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/10-roaming-settings/roaming-settings.yaml
 
       var settingName = $("#settingName").val();
@@ -141,7 +141,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/10-roaming-settings/roaming-settings.yaml
 
       // Save settings in the mailbox to make it available in future sessions.
@@ -220,7 +220,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/10-roaming-settings/roaming-settings.yaml
 
       var settingName = $("#settingName").val();

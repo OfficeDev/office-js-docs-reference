@@ -437,7 +437,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/40-tables/table-cell-access.yaml
 
           await Word.run(async (context) => {

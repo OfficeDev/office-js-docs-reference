@@ -123,7 +123,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-master-categories.yaml
 
       var masterCategoriesToAdd = [
@@ -228,7 +228,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-master-categories.yaml
 
       Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
@@ -342,7 +342,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-master-categories.yaml
 
       var masterCategoriesToRemove = ["TestCategory"];

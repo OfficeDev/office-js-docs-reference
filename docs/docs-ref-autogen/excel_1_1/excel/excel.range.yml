@@ -968,7 +968,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-copyfrom.yaml
 
           await Excel.run(async (context) => {
@@ -1110,7 +1110,7 @@ items:
 
       ```typescript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/90-scenarios/multiple-property-set.yaml
 
       await Excel.run(async (context) => {
@@ -1136,7 +1136,7 @@ items:
 
       ```typescript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/90-scenarios/multiple-property-set.yaml
 
       await Excel.run(async (context) => {

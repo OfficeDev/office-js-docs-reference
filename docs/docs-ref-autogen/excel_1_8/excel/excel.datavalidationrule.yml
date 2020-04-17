@@ -89,7 +89,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/22-data-validation/data-validation.yaml
 
           await Excel.run(async (context) => {
@@ -168,7 +168,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/22-data-validation/data-validation.yaml
 
           await Excel.run(async (context) => {

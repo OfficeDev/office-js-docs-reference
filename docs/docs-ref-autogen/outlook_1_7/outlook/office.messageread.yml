@@ -231,7 +231,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/get-attachments-read.yaml
 
       var attachments = Office.context.mailbox.item.attachments;
@@ -323,7 +323,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-cc-message-read.yaml
 
       var msgCc = Office.context.mailbox.item.cc;
@@ -373,7 +373,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-conversation-id-message.yaml
 
       console.log(`Conversation ID: ${Office.context.mailbox.item.conversationId}`);
@@ -407,7 +407,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-date-time-created-read.yaml
 
       console.log(`Creation date and time: ${Office.context.mailbox.item.dateTimeCreated}`);
@@ -444,7 +444,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-date-time-modified-read.yaml
 
       console.log(`Date and time item last modified: ${Office.context.mailbox.item.dateTimeModified}`);
@@ -581,7 +581,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
 
       Office.context.mailbox.item.displayReplyAllForm(
@@ -727,7 +727,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
 
       Office.context.mailbox.item.displayReplyForm(
@@ -738,7 +738,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-with-attachments.yaml
 
       Office.context.mailbox.item.displayReplyForm(
@@ -807,7 +807,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-end-read.yaml
 
       console.log(`Appointment ends: ${Office.context.mailbox.item.end}`);
@@ -852,7 +852,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-from-message-read.yaml
 
       var msgFrom = Office.context.mailbox.item.from;
@@ -891,7 +891,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
 
       var entities = Office.context.mailbox.item.getEntities();
@@ -979,7 +979,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
 
       console.log(Office.context.mailbox.item.getEntitiesByType(Office.MailboxEnums.EntityType.Address));
@@ -1046,7 +1046,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/contextual.yaml
 
       // This API would only work when you click on highlighted physical address that has the word "Way" in it.
@@ -1156,7 +1156,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/contextual.yaml
 
       // This API would only work when you click on highlighted word "ScriptLab".
@@ -1249,7 +1249,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/contextual.yaml
 
       // This API would only work when you click on highlighted word "ScriptLab".
@@ -1299,7 +1299,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/selected.yaml
 
       var entities = Office.context.mailbox.item.getSelectedEntities();
@@ -1450,7 +1450,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/selected.yaml
 
       var matches = Office.context.mailbox.item.getSelectedRegExMatches();
@@ -1496,7 +1496,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-internet-message-id-read.yaml
 
       console.log(`Internet message ID: ${Office.context.mailbox.item.internetMessageId}`);
@@ -1548,7 +1548,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-item-class-read.yaml
 
       console.log(`Item class: ${Office.context.mailbox.item.itemClass}`);
@@ -1652,7 +1652,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-item-type.yaml
 
       console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
@@ -1739,7 +1739,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
       Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
@@ -1807,7 +1807,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-location-read.yaml
 
       console.log(`Appointment location: ${Office.context.mailbox.item.location}`);
@@ -1847,7 +1847,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-normalized-subject-read.yaml
 
       console.log(`Normalized subject: ${Office.context.mailbox.item.normalizedSubject}`);
@@ -1884,7 +1884,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
       var id = $("#notificationId").val();
@@ -1900,7 +1900,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
       var id = $("#notificationId").val();
@@ -1918,7 +1918,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
       var id = $("#notificationId").val();
@@ -1936,7 +1936,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
       Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
@@ -1945,7 +1945,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
       var id = $("#notificationId").val();
@@ -1963,7 +1963,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
       var id = $("#notificationId").val();
@@ -2016,7 +2016,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-recurrence-read.yaml
 
       var recurrence = Office.context.mailbox.item.recurrence;
@@ -2153,7 +2153,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-sender-message-read.yaml
 
       var msgSender = Office.context.mailbox.item.sender;
@@ -2209,7 +2209,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-series-id.yaml
 
       var seriesId = Office.context.mailbox.item.seriesId;
@@ -2257,7 +2257,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-start-read.yaml
 
       console.log(`Appointment starts: ${Office.context.mailbox.item.start}`);
@@ -2299,7 +2299,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-subject-read.yaml
 
       console.log(`Subject: ${Office.context.mailbox.item.subject}`);
@@ -2340,7 +2340,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-to-message-read.yaml
 
       var msgTo = Office.context.mailbox.item.to;

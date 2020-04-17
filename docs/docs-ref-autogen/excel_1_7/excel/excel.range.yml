@@ -792,7 +792,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-relationships.yaml
 
           await Excel.run(async (context) => {
@@ -1180,7 +1180,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-relationships.yaml
 
           await Excel.run(async (context) => {
@@ -1269,7 +1269,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/used-range.yaml
 
           await Excel.run(async (context) => {
@@ -1365,7 +1365,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-hyperlink.yaml
 
           await Excel.run(async (context) => {
@@ -1648,7 +1648,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-copyfrom.yaml
 
           await Excel.run(async (context) => {
@@ -1823,7 +1823,7 @@ items:
 
       ```typescript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/90-scenarios/multiple-property-set.yaml
 
       await Excel.run(async (context) => {
@@ -1849,7 +1849,7 @@ items:
 
       ```typescript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/90-scenarios/multiple-property-set.yaml
 
       await Excel.run(async (context) => {
@@ -1947,7 +1947,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-column-and-row-sort.yaml
 
           async function sortTopToBottom(criteria: string) {
@@ -2002,7 +2002,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
 
           await Excel.run(async (context) => {

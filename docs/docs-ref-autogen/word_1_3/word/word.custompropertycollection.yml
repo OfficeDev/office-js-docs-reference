@@ -50,7 +50,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/30-properties/read-write-custom-document-properties.yaml
 
           await Word.run(async (context) => {
@@ -64,7 +64,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/30-properties/read-write-custom-document-properties.yaml
 
           await Word.run(async (context) => {
@@ -196,7 +196,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/30-properties/read-write-custom-document-properties.yaml
 
           await Word.run(async (context) => {

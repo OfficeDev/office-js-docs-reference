@@ -1393,7 +1393,7 @@ items:
 
       ```typescript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/10-content-controls/insert-and-change-content-controls.yaml
 
       // Adds title and colors to odd and even content controls and changes their appearance.
@@ -1511,7 +1511,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/10-content-controls/insert-and-change-content-controls.yaml
 
           // Traverses each paragraph of the document and wraps a content control on each with either a even or odd

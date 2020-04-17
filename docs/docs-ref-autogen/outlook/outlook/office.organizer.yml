@@ -92,7 +92,7 @@ items:
 
       ```javascript
 
-      //// Full sample:
+      // Link to full sample:
       https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-organizer-appointment-organizer.yaml
 
       Office.context.mailbox.item.organizer.getAsync(function(asyncResult) {

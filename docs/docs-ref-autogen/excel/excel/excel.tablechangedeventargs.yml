@@ -78,7 +78,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/data-change-event-details.yaml
 
           async function onTableChanged(eventArgs: Excel.TableChangedEventArgs) {
@@ -172,7 +172,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-tablecollection-changed.yaml
 
           async function onChange(event) {
@@ -228,7 +228,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-tablecollection-changed.yaml
 
           async function onChange(event) {

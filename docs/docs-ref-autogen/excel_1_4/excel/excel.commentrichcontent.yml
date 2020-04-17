@@ -39,7 +39,7 @@ items:
 
           ```typescript
 
-          //// Full sample:
+          // Link to full sample:
           https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/comment-mentions.yaml
 
           await Excel.run(async (context) => {

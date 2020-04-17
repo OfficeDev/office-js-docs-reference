@@ -11,7 +11,7 @@
     });
 'Excel.Application#decimalSeparator:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/culture-info.yaml
 
     await Excel.run(async (context) => {
@@ -53,7 +53,7 @@
     });
 'Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/90-scenarios/performance-optimization.yaml
 
     await Excel.run(async (context) => {
@@ -86,7 +86,7 @@
     });
 'Excel.AutoFilter#apply:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
     await Excel.run(async (context) => {
@@ -158,7 +158,7 @@
     });
 'Excel.Binding#onDataChanged:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/data-changed.yaml
 
     await Excel.run(async (context) => {
@@ -265,7 +265,7 @@
     });
 'Excel.CellPropertiesFill#color:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
 
     await Excel.run(async (context) => {
@@ -341,7 +341,7 @@
     });
 'Excel.CellPropertiesFillLoadOptions#color:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
 
     await Excel.run(async (context) => {
@@ -369,7 +369,7 @@
     });
 'Excel.CellPropertiesFont#color:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
 
     await Excel.run(async (context) => {
@@ -445,7 +445,7 @@
     });
 'Excel.CellPropertiesFontLoadOptions#color:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
 
     await Excel.run(async (context) => {
@@ -473,7 +473,7 @@
     });
 'Excel.CellPropertiesLoadOptions#address:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
 
     await Excel.run(async (context) => {
@@ -501,7 +501,7 @@
     });
 'Excel.CellValueConditionalFormat#format:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -516,7 +516,7 @@
     });
 'Excel.CellValueConditionalFormat#rule:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -682,7 +682,7 @@
     });
 'Excel.ChartAxis#displayUnit:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-axis.yaml
 
     await Excel.run(async (context) => {
@@ -717,7 +717,7 @@
     });
 'Excel.ChartAxis#showDisplayUnitLabel:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-axis.yaml
 
     await Excel.run(async (context) => {
@@ -894,7 +894,7 @@
     });
 'Excel.ChartFill#setSolidColor:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-point.yaml
 
     await Excel.run(async (context) => {
@@ -959,7 +959,7 @@
     });
 'Excel.ChartLegendFormat#font:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-legend.yaml
 
     await Excel.run(async (context) => {
@@ -1057,7 +1057,7 @@
     });
 'Excel.ChartSeries#delete:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-series.yaml
 
     await Excel.run(async (context) => {
@@ -1092,7 +1092,7 @@
     });
 'Excel.ChartSeries#markerBackgroundColor:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-series-markers.yaml
 
     await Excel.run(async (context) => {
@@ -1124,7 +1124,7 @@
     });
 'Excel.ChartSeries#markerForegroundColor:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-series-markers.yaml
 
     await Excel.run(async (context) => {
@@ -1156,7 +1156,7 @@
     });
 'Excel.ChartSeries#markerSize:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-series-markers.yaml
 
     await Excel.run(async (context) => {
@@ -1188,7 +1188,7 @@
     });
 'Excel.ChartSeries#markerStyle:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-series-markers.yaml
 
     await Excel.run(async (context) => {
@@ -1220,7 +1220,7 @@
     });
 'Excel.ChartSeries#setValues:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-series.yaml
 
     await Excel.run(async (context) => {
@@ -1286,7 +1286,7 @@
     });
 'Excel.ChartTitle#getSubstring:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-title-format.yaml
 
     await Excel.run(async (context) => {
@@ -1336,7 +1336,7 @@
     });
 'Excel.ChartTitle#textOrientation:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-title-format.yaml
 
     await Excel.run(async (context) => {
@@ -1348,7 +1348,7 @@
     });
 'Excel.ChartTrendline#type:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-trendlines.yaml
 
     await Excel.run(async (context) => {
@@ -1366,7 +1366,7 @@
     });
 'Excel.ChartTrendlineCollection#add:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-trendlines.yaml
 
     await Excel.run(async (context) => {
@@ -1381,7 +1381,7 @@
     });
 'Excel.ChartTrendlineFormat#line:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-trendlines.yaml
 
     await Excel.run(async (context) => {
@@ -1399,7 +1399,7 @@
         console.log("The trendline color is:" + line.color);
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-trendlines.yaml
 
     await Excel.run(async (context) => {
@@ -1418,7 +1418,7 @@
     });
 'Excel.ColorScaleConditionalFormat#criteria:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -1437,7 +1437,7 @@
     });
 'Excel.Comment#content:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-basics.yaml
 
     await Excel.run(async (context) => {
@@ -1448,7 +1448,7 @@
     });
 'Excel.Comment#delete:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-basics.yaml
 
     await Excel.run(async (context) => {
@@ -1457,7 +1457,7 @@
     });
 'Excel.Comment#load:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-basics.yaml
 
     await Excel.run(async (context) => {
@@ -1470,7 +1470,7 @@
     });
 'Excel.Comment#resolved:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/comment-resolution.yaml
 
     await Excel.run(async (context) => {
@@ -1480,7 +1480,7 @@
     });
 'Excel.CommentCollection#add:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-basics.yaml
 
     await Excel.run(async (context) => {
@@ -1492,7 +1492,7 @@
     });
 'Excel.CommentReply#content:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-replies.yaml
 
     await Excel.run(async (context) => {
@@ -1509,7 +1509,7 @@
     });
 'Excel.CommentReply#delete:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-replies.yaml
 
     await Excel.run(async (context) => {
@@ -1521,7 +1521,7 @@
     });
 'Excel.CommentReplyCollection#add:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-replies.yaml
 
     await Excel.run(async (context) => {
@@ -1533,7 +1533,7 @@
     });
 'Excel.CommentRichContent#mentions:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/comment-mentions.yaml
 
     await Excel.run(async (context) => {
@@ -1557,7 +1557,7 @@
     });
 'Excel.ConditionalCellValueRule#formula1:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -1572,7 +1572,7 @@
     });
 'Excel.ConditionalCellValueRule#operator:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -1587,7 +1587,7 @@
     });
 'Excel.ConditionalFormat#cellValue:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -1602,7 +1602,7 @@
     });
 'Excel.ConditionalFormat#colorScale:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -1621,7 +1621,7 @@
     });
 'Excel.ConditionalFormat#custom:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -1635,7 +1635,7 @@
     });
 'Excel.ConditionalFormat#dataBar:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -1649,7 +1649,7 @@
     });
 'Excel.ConditionalFormat#getRange:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -1679,7 +1679,7 @@
     });
 'Excel.ConditionalFormat#iconSet:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -1722,7 +1722,7 @@
     });
 'Excel.ConditionalFormat#preset:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -1737,7 +1737,7 @@
     });
 'Excel.ConditionalFormat#textComparison:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -1752,7 +1752,7 @@
     });
 'Excel.ConditionalFormat#type:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -1782,7 +1782,7 @@
     });
 'Excel.ConditionalFormatCollection#add:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -1801,7 +1801,7 @@
     });
 'Excel.ConditionalFormatCollection#clearAll:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -1851,7 +1851,7 @@
     });
 'Excel.ConditionalFormatCollection#getItemAt:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -1881,7 +1881,7 @@
     });
 'Excel.ConditionalFormatRule#formula:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -1895,7 +1895,7 @@
     });
 'Excel.ConditionalIconCriterion#formula:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -1938,7 +1938,7 @@
     });
 'Excel.ConditionalIconCriterion#operator:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -1980,7 +1980,7 @@
         await context.sync();
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -1995,7 +1995,7 @@
     });
 'Excel.ConditionalIconCriterion#type:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -2038,7 +2038,7 @@
     });
 'Excel.ConditionalPresetCriteriaRule#criterion:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -2053,7 +2053,7 @@
     });
 'Excel.ConditionalTextComparisonRule#text:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -2068,7 +2068,7 @@
     });
 'Excel.CustomConditionalFormat#format:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -2101,7 +2101,7 @@
     });
 'Excel.CustomXmlPart#delete:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
 
     await Excel.run(async (context) => {
@@ -2133,7 +2133,7 @@
     });
 'Excel.CustomXmlPart#getXml:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
 
     await Excel.run(async (context) => {
@@ -2157,7 +2157,7 @@
     });
 'Excel.CustomXmlPart#id:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
 
     await Excel.run(async (context) => {
@@ -2181,7 +2181,7 @@
     });
 'Excel.CustomXmlPart#setXml:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
 
     await Excel.run(async (context) => {
@@ -2205,7 +2205,7 @@
     });
 'Excel.CustomXmlPartCollection#add:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
 
     await Excel.run(async (context) => {
@@ -2229,7 +2229,7 @@
     });
 'Excel.CustomXmlPartCollection#getByNamespace:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/test-xml-for-unique-namespace.yaml
 
     await Excel.run(async (context) => {
@@ -2261,7 +2261,7 @@
     });
 'Excel.CustomXmlPartCollection#getItem:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
 
     await Excel.run(async (context) => {
@@ -2285,7 +2285,7 @@
     });
 'Excel.CustomXmlPartScopedCollection#getCount:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/test-xml-for-unique-namespace.yaml
 
     await Excel.run(async (context) => {
@@ -2317,7 +2317,7 @@
     });
 'Excel.CustomXmlPartScopedCollection#getItemOrNullObject:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/create-set-get-and-delete-custom-xml-parts.yaml
 
     await Excel.run(async (context) => {
@@ -2349,7 +2349,7 @@
     });
 'Excel.CustomXmlPartScopedCollection#getOnlyItem:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/18-custom-xml-parts/test-xml-for-unique-namespace.yaml
 
     await Excel.run(async (context) => {
@@ -2381,7 +2381,7 @@
     });
 'Excel.DataBarConditionalFormat#barDirection:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -2395,7 +2395,7 @@
     });
 'Excel.DataPivotHierarchy#name:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
 
     await Excel.run(async (context) => {
@@ -2409,7 +2409,7 @@
     });
 'Excel.DataPivotHierarchy#showAs:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-calculations.yaml
 
     await Excel.run(async (context) => {
@@ -2435,7 +2435,7 @@
     });
 'Excel.DataValidation#errorAlert:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/22-data-validation/data-validation.yaml
 
     await Excel.run(async (context) => {
@@ -2467,7 +2467,7 @@
     });
 'Excel.DataValidation#prompt:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/22-data-validation/data-validation.yaml
 
     await Excel.run(async (context) => {
@@ -2503,7 +2503,7 @@
     });
 'Excel.DataValidation#rule:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/22-data-validation/data-validation.yaml
 
     await Excel.run(async (context) => {
@@ -2529,7 +2529,7 @@
     });
 'Excel.DataValidationRule#list:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/22-data-validation/data-validation.yaml
 
     await Excel.run(async (context) => {
@@ -2555,7 +2555,7 @@
     });
 'Excel.DataValidationRule#wholeNumber:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/22-data-validation/data-validation.yaml
 
     await Excel.run(async (context) => {
@@ -2591,7 +2591,7 @@
     });
 'Excel.IconSetConditionalFormat#criteria:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -2634,7 +2634,7 @@
     });
 'Excel.IconSetConditionalFormat#style:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -2677,7 +2677,7 @@
     });
 'Excel.Image#format:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-images.yaml
 
     await Excel.run(async (context) => {
@@ -2691,7 +2691,7 @@
     });
 'Excel.Line#connectBeginShape:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
 
     await Excel.run(async (context) => {
@@ -2703,7 +2703,7 @@
     });
 'Excel.Line#connectEndShape:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
 
     await Excel.run(async (context) => {
@@ -2715,7 +2715,7 @@
     });
 'Excel.Line#disconnectBeginShape:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
 
     await Excel.run(async (context) => {
@@ -2727,7 +2727,7 @@
     });
 'Excel.Line#disconnectEndShape:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
 
     await Excel.run(async (context) => {
@@ -2739,7 +2739,7 @@
     });
 'Excel.NamedItem#delete:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/34-named-item/create-and-remove-named-item.yaml
 
     await Excel.run(async (context) => {
@@ -2761,7 +2761,7 @@
     });
 'Excel.NamedItem#formula:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/34-named-item/update-named-item.yaml
 
     await Excel.run(async (context) => {
@@ -2818,7 +2818,7 @@
     });
 'Excel.NamedItemCollection#add:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/34-named-item/create-and-remove-named-item.yaml
 
     await Excel.run(async (context) => {
@@ -2865,7 +2865,7 @@
     });
 'Excel.NumberFormatInfo#numberDecimalSeparator:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/culture-info.yaml
 
     // This will convert a number like "14,37" to "14.37"
@@ -2906,7 +2906,7 @@
       });
 'Excel.NumberFormatInfo#numberGroupSeparator:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/culture-info.yaml
 
     await Excel.run(async (context) => {
@@ -2931,7 +2931,7 @@
     });
 'Excel.PageBreakCollection#add:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-page-layout.yaml
 
     await Excel.run(async (context) => {
@@ -2941,7 +2941,7 @@
     });
 'Excel.PageLayout#centerHorizontally:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-page-layout.yaml
 
     await Excel.run(async (context) => {
@@ -2952,7 +2952,7 @@
     });
 'Excel.PageLayout#centerVertically:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-page-layout.yaml
 
     await Excel.run(async (context) => {
@@ -2963,7 +2963,7 @@
     });
 'Excel.PageLayout#orientation:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-page-layout.yaml
 
     await Excel.run(async (context) => {
@@ -2973,7 +2973,7 @@
     });
 'Excel.PageLayout#setPrintArea:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-page-layout.yaml
 
     await Excel.run(async (context) => {
@@ -2983,7 +2983,7 @@
     });
 'Excel.PageLayout#setPrintTitleRows:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-page-layout.yaml
 
     await Excel.run(async (context) => {
@@ -2993,7 +2993,7 @@
     });
 'Excel.PageLayout#zoom:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-page-layout.yaml
 
     await Excel.run(async (context) => {
@@ -3003,7 +3003,7 @@
     });
 'Excel.PivotLayout#getDataBodyRange:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml
 
     await Excel.run(async (context) => {
@@ -3024,7 +3024,7 @@
     });
 'Excel.PivotTable#columnHierarchies:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
 
     await Excel.run(async (context) => {
@@ -3046,7 +3046,7 @@
     });
 'Excel.PivotTable#dataHierarchies:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
 
     await Excel.run(async (context) => {
@@ -3058,7 +3058,7 @@
     });
 'Excel.PivotTable#delete:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
 
     await Excel.run(async (context) => {
@@ -3068,7 +3068,7 @@
     });
 'Excel.PivotTable#filterHierarchies:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml
 
     async function filter(functionType: Excel.AggregationFunction) {
@@ -3088,7 +3088,7 @@
     }
 'Excel.PivotTable#layout:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
 
     await Excel.run(async (context) => {
@@ -3109,7 +3109,7 @@
     });
 'Excel.PivotTableCollection#add:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-create-and-modify.yaml
 
     await Excel.run(async (context) => {
@@ -3121,7 +3121,7 @@
     });
 'Excel.PresetCriteriaConditionalFormat#rule:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -3135,7 +3135,7 @@
         await context.sync();
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -3149,7 +3149,7 @@
     });
 'Excel.Range#autoFill:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-auto-fill.yaml
 
     await Excel.run(async (context) => {
@@ -3178,7 +3178,7 @@
     });
 'Excel.Range#copyFrom:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-copyfrom.yaml
 
     await Excel.run(async (context) => {
@@ -3207,7 +3207,7 @@
     });
 'Excel.Range#find:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-find.yaml
 
     await Excel.run(async (context) => {
@@ -3231,7 +3231,7 @@
     });
 'Excel.Range#findOrNullObject:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-find.yaml
 
     await Excel.run(async (context) => {
@@ -3290,7 +3290,7 @@
     });
 'Excel.Range#getCellProperties:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
 
     await Excel.run(async (context) => {
@@ -3390,7 +3390,7 @@
     });
 'Excel.Range#getIntersectionOrNullObject:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-relationships.yaml
 
     await Excel.run(async (context) => {
@@ -3530,7 +3530,7 @@
     });
 'Excel.Range#getSpecialCells:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-areas.yaml
 
     await Excel.run(async (context) => {
@@ -3546,7 +3546,7 @@
     });
 'Excel.Range#getUsedRange:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-relationships.yaml
 
     await Excel.run(async (context) => {
@@ -3605,7 +3605,7 @@
     });
 'Excel.Range#getUsedRangeOrNullObject:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/used-range.yaml
 
     await Excel.run(async (context) => {
@@ -3642,7 +3642,7 @@
     });
 'Excel.Range#group:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/outline.yaml
 
     Excel.run(async (context) => {
@@ -3660,7 +3660,7 @@
     });
 'Excel.Range#hyperlink:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-hyperlink.yaml
 
     await Excel.run(async (context) => {
@@ -3736,7 +3736,7 @@
     });
 'Excel.Range#moveTo:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-copyfrom.yaml
 
     await Excel.run(async (context) => {
@@ -3775,7 +3775,7 @@
     });
 'Excel.Range#removeDuplicates:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-remove-duplicates.yaml
 
     await Excel.run(async (context) => {
@@ -3805,7 +3805,7 @@
     });
 'Excel.Range#set:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/90-scenarios/multiple-property-set.yaml
 
     await Excel.run(async (context) => {
@@ -3827,7 +3827,7 @@
         await context.sync();
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/90-scenarios/multiple-property-set.yaml
 
     await Excel.run(async (context) => {
@@ -3846,7 +3846,7 @@
     });
 'Excel.Range#setCellProperties:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
 
     await Excel.run(async (context) => {
@@ -3922,7 +3922,7 @@
     });
 'Excel.Range#sort:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-column-and-row-sort.yaml
 
     async function sortTopToBottom(criteria: string) {
@@ -3951,7 +3951,7 @@
     }
 'Excel.Range#style:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
 
     await Excel.run(async (context) => {
@@ -3967,7 +3967,7 @@
     });
 'Excel.Range#ungroup:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/outline.yaml
 
     Excel.run(async (context) => {
@@ -4016,7 +4016,7 @@
     });
 'Excel.RangeAreas#format:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-areas.yaml
 
     await Excel.run(async (context) => {
@@ -4245,7 +4245,7 @@
     });
 'Excel.RangeFormat#textOrientation:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-text-orientation.yaml
 
     await Excel.run(async (context) => {
@@ -4260,7 +4260,7 @@
     });
 'Excel.RangeHyperlink#address:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-hyperlink.yaml
 
     await Excel.run(async (context) => {
@@ -4289,7 +4289,7 @@
     });
 'Excel.RangeHyperlink#documentReference:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-hyperlink.yaml
 
     await Excel.run(async (context) => {
@@ -4318,7 +4318,7 @@
     });
 'Excel.RangeHyperlink#screenTip:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-hyperlink.yaml
 
     await Excel.run(async (context) => {
@@ -4347,7 +4347,7 @@
     });
 'Excel.RangeHyperlink#textToDisplay:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-hyperlink.yaml
 
     await Excel.run(async (context) => {
@@ -4376,7 +4376,7 @@
     });
 'Excel.RemoveDuplicatesResult#uniqueRemaining:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-remove-duplicates.yaml
 
     await Excel.run(async (context) => {
@@ -4392,7 +4392,7 @@
     });
 'Excel.Runtime#enableEvents:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-disable-events.yaml
 
     await Excel.run(async (context) => {
@@ -4412,7 +4412,7 @@
     });
 'Excel.SettableCellProperties#style:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
 
     await Excel.run(async (context) => {
@@ -4488,7 +4488,7 @@
     });
 'Excel.Setting#delete:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/create-get-change-delete-settings.yaml
 
     await Excel.run(async (context) => {
@@ -4509,7 +4509,7 @@
     });
 'Excel.SettingCollection#add:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
 
     await Excel.run(async (context) => {
@@ -4521,7 +4521,7 @@
     });
 'Excel.SettingCollection#getItemOrNullObject:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/create-get-change-delete-settings.yaml
 
     await Excel.run(async (context) => {
@@ -4542,7 +4542,7 @@
     });
 'Excel.SettingCollection#onSettingsChanged:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
 
     await Excel.run(async (context) => {
@@ -4554,7 +4554,7 @@
     });
 'Excel.Shape#delete:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-create-and-delete.yaml
 
     await Excel.run(async (context) => {
@@ -4572,7 +4572,7 @@
     });
 'Excel.Shape#fill:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-create-and-delete.yaml
 
     await Excel.run(async (context) => {
@@ -4587,7 +4587,7 @@
     });
 'Excel.Shape#getAsImage:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-images.yaml
 
     await Excel.run(async (context) => {
@@ -4602,7 +4602,7 @@
     });
 'Excel.Shape#group:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-groups.yaml
 
     await Excel.run(async (context) => {
@@ -4616,7 +4616,7 @@
     });
 'Excel.Shape#incrementLeft:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
 
     await Excel.run(async (context) => {
@@ -4627,7 +4627,7 @@
     });
 'Excel.Shape#incrementRotation:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-images.yaml
 
     await Excel.run(async (context) => {
@@ -4638,7 +4638,7 @@
     });
 'Excel.Shape#incrementTop:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
 
     await Excel.run(async (context) => {
@@ -4649,7 +4649,7 @@
     });
 'Excel.Shape#line:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
 
     await Excel.run(async (context) => {
@@ -4667,7 +4667,7 @@
     });
 'Excel.Shape#lockAspectRatio:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
 
     await Excel.run(async (context) => {
@@ -4679,7 +4679,7 @@
     });
 'Excel.Shape#rotation:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-create-and-delete.yaml
 
     await Excel.run(async (context) => {
@@ -4695,7 +4695,7 @@
     });
 'Excel.Shape#scaleHeight:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
 
     await Excel.run(async (context) => {
@@ -4707,7 +4707,7 @@
     });
 'Excel.Shape#setZOrder:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-move-and-order.yaml
 
     await Excel.run(async (context) => {
@@ -4718,7 +4718,7 @@
     });
 'Excel.ShapeCollection#addGeometricShape:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-create-and-delete.yaml
 
     await Excel.run(async (context) => {
@@ -4732,7 +4732,7 @@
     });
 'Excel.ShapeCollection#addGroup:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-groups.yaml
 
     await Excel.run(async (context) => {
@@ -4749,7 +4749,7 @@
     });
 'Excel.ShapeCollection#addImage:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-images.yaml
 
     const myFile = <HTMLInputElement>document.getElementById("selectedFile");
@@ -4774,7 +4774,7 @@
     reader.readAsDataURL(myFile.files[0]);
 'Excel.ShapeCollection#addLine:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-lines.yaml
 
     await Excel.run(async (context) => {
@@ -4785,7 +4785,7 @@
     });
 'Excel.ShapeCollection#addTextBox:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-textboxes.yaml
 
     await Excel.run(async (context) => {
@@ -4800,7 +4800,7 @@
     });
 'Excel.ShapeGroup#ungroup:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-groups.yaml
 
     await Excel.run(async (context) => {
@@ -4814,7 +4814,7 @@
     });
 'Excel.ShowAsRule#baseItem:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-calculations.yaml
 
     await Excel.run(async (context) => {
@@ -4843,7 +4843,7 @@
     });
 'Excel.Slicer#clearFilters:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
 
     await Excel.run(async (context) => {
@@ -4853,7 +4853,7 @@
     });
 'Excel.Slicer#delete:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
 
     await Excel.run(async (context) => {
@@ -4863,7 +4863,7 @@
     });
 'Excel.Slicer#selectItems:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
 
     await Excel.run(async (context) => {
@@ -4873,7 +4873,7 @@
     });
 'Excel.Slicer#style:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
 
     await Excel.run(async (context) => {
@@ -4883,7 +4883,7 @@
     });
 'Excel.SlicerCollection#add:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
 
     await Excel.run(async (context) => {
@@ -4897,7 +4897,7 @@
     });
 'Excel.SlicerCollection#getItem:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
 
     await Excel.run(async (context) => {
@@ -4911,7 +4911,7 @@
     });
 'Excel.Style#delete:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
 
     await Excel.run(async (context) => {
@@ -4927,7 +4927,7 @@
     });
 'Excel.Style#font:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
 
     await Excel.run(async (context) => {
@@ -4946,7 +4946,7 @@
     });
 'Excel.Style#horizontalAlignment:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
 
     await Excel.run(async (context) => {
@@ -4962,7 +4962,7 @@
     });
 'Excel.Style#load:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
 
     await Excel.run(async (context) => {
@@ -4982,7 +4982,7 @@
     });
 'Excel.StyleCollection#add:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
 
     await Excel.run(async (context) => {
@@ -5007,7 +5007,7 @@
     });
 'Excel.StyleCollection#getItem:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
 
     await Excel.run(async (context) => {
@@ -5153,7 +5153,7 @@
     });
 'Excel.Table#onChanged:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-table-changed.yaml
 
     await Excel.run(async (context) => {
@@ -5165,7 +5165,7 @@
     });
 'Excel.Table#onSelectionChanged:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-table-changed.yaml
 
     await Excel.run(async (context) => {
@@ -5196,7 +5196,7 @@
     });
 'Excel.TableChangedEventArgs#details:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/data-change-event-details.yaml
 
     async function onTableChanged(eventArgs: Excel.TableChangedEventArgs) {
@@ -5210,7 +5210,7 @@
     }
 'Excel.TableChangedEventArgs#tableId:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-tablecollection-changed.yaml
 
     async function onChange(event) {
@@ -5228,7 +5228,7 @@
     }
 'Excel.TableChangedEventArgs#worksheetId:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-tablecollection-changed.yaml
 
     async function onChange(event) {
@@ -5321,7 +5321,7 @@
     });
 'Excel.TableCollection#onChanged:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-tablecollection-changed.yaml
 
     await Excel.run(async (context) => {
@@ -5593,7 +5593,7 @@
     });
 'Excel.TableSelectionChangedEventArgs#address:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-table-changed.yaml
 
     async function onSelectionChange(args) {
@@ -5621,7 +5621,7 @@
     });
 'Excel.TextConditionalFormat#format:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -5636,7 +5636,7 @@
     });
 'Excel.TextConditionalFormat#rule:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
 
     await Excel.run(async (context) => {
@@ -5651,7 +5651,7 @@
     });
 'Excel.TextFrame#deleteText:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/44-shape/shape-textboxes.yaml
 
     await Excel.run(async (context) => {
@@ -5662,7 +5662,7 @@
     });
 'Excel.Workbook#close:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/workbook-save-and-close.yaml
 
     await Excel.run(async (context) => {
@@ -5670,7 +5670,7 @@
     });
 'Excel.Workbook#getActiveCell:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/workbook-get-active-cell.yaml
 
     await Excel.run(async (context) => {
@@ -5699,7 +5699,7 @@
     });
 'Excel.Workbook#getSelectedRanges:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-areas.yaml
 
     await Excel.run(async (context) => {
@@ -5711,7 +5711,7 @@
     })
 'Excel.Workbook#properties:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/26-document/properties.yaml
 
     await Excel.run(async (context) => {
@@ -5740,7 +5740,7 @@
     });
 'Excel.Workbook#save:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/workbook-save-and-close.yaml
 
     await Excel.run(async (context) => {
@@ -5748,7 +5748,7 @@
     });
 'Excel.Workbook#styles:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
 
     await Excel.run(async (context) => {
@@ -5773,7 +5773,7 @@
     });
 'Excel.WorkbookProtection#protect:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/data-protection.yaml
 
     await Excel.run(async (context) => {
@@ -5787,7 +5787,7 @@
         }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/data-protection.yaml
 
     let password = await passwordHandler();
@@ -5806,7 +5806,7 @@
     });
 'Excel.WorkbookProtection#unprotect:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/data-protection.yaml
 
     await Excel.run(async (context) => {
@@ -5814,7 +5814,7 @@
         workbook.protection.unprotect();
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/data-protection.yaml
 
     let password = await passwordHandler();
@@ -5840,7 +5840,7 @@
     });
 'Excel.Worksheet#autoFilter:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-auto-filter.yaml
 
     await Excel.run(async (context) => {
@@ -5853,7 +5853,7 @@
     });
 'Excel.Worksheet#copy:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-copy.yaml
 
     await Excel.run(async (context) => {
@@ -5884,7 +5884,7 @@
     });
 'Excel.Worksheet#findAllOrNullObject:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-find-all.yaml
 
     await Excel.run(async (context) => {
@@ -5920,7 +5920,7 @@
     });
 'Excel.Worksheet#getNext:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
 
     await Excel.run(async (context) => {
@@ -5949,7 +5949,7 @@
     });
 'Excel.Worksheet#getPrevious:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
 
     await Excel.run(async (context) => {
@@ -6008,7 +6008,7 @@
     });
 'Excel.Worksheet#getRanges:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-areas.yaml
 
     await Excel.run(async (context) => {
@@ -6077,7 +6077,7 @@
     });
 'Excel.Worksheet#onChanged:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-worksheet.yaml
 
     await Excel.run(async (context) => {
@@ -6089,7 +6089,7 @@
     });
 'Excel.Worksheet#onColumnSorted:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-column-and-row-sort.yaml
 
     await Excel.run(async (context) => {
@@ -6138,7 +6138,7 @@
     });
 'Excel.Worksheet#onRowSorted:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-column-and-row-sort.yaml
 
     await Excel.run(async (context) => {
@@ -6175,7 +6175,7 @@
     });
 'Excel.Worksheet#onSingleClicked:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-worksheet-single-click.yaml
 
     await Excel.run(async (context) => {
@@ -6238,7 +6238,7 @@
     });
 'Excel.Worksheet#showGridlines:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/gridlines.yaml
 
     await Excel.run(async (context) => {
@@ -6249,7 +6249,7 @@
     });
 'Excel.Worksheet#showOutlineLevels:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/outline.yaml
 
     Excel.run(async (context) => {
@@ -6260,7 +6260,7 @@
         await context.sync();
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/outline.yaml
 
     Excel.run(async (context) => {
@@ -6272,7 +6272,7 @@
     });
 'Excel.Worksheet#slicers:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
 
     await Excel.run(async (context) => {
@@ -6286,7 +6286,7 @@
     });
 'Excel.Worksheet#tabColor:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/tab-color.yaml
 
     await Excel.run(async (context) => {
@@ -6297,7 +6297,7 @@
     });
 'Excel.WorksheetAddedEventArgs#worksheetId:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
 
     async function onWorksheetAdd(event) {
@@ -6341,7 +6341,7 @@
     });
 'Excel.WorksheetCollection#addFromBase64:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/workbook-insert-external-worksheets.yaml
 
     const myFile = <HTMLInputElement>document.getElementById("file");
@@ -6385,7 +6385,7 @@
     });
 'Excel.WorksheetCollection#getFirst:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
 
     await Excel.run(async (context) => {
@@ -6414,7 +6414,7 @@
     });
 'Excel.WorksheetCollection#getLast:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
 
     await Excel.run(async (context) => {
@@ -6461,7 +6461,7 @@
     });
 'Excel.WorksheetCollection#onActivated:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
 
     await Excel.run(async (context) => {
@@ -6473,7 +6473,7 @@
     });
 'Excel.WorksheetCollection#onAdded:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
 
     await Excel.run(async (context) => {
@@ -6485,7 +6485,7 @@
     });
 'Excel.WorksheetCollection#onDeactivated:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-workbook-and-worksheet-collection.yaml
 
     await Excel.run(async (context) => {
@@ -6497,7 +6497,7 @@
     });
 'Excel.WorksheetFreezePanes#freezeAt:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
 
     await Excel.run(async (context) => {
@@ -6510,7 +6510,7 @@
     });
 'Excel.WorksheetFreezePanes#freezeColumns:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
 
     await Excel.run(async (context) => {
@@ -6523,7 +6523,7 @@
     });
 'Excel.WorksheetFreezePanes#freezeRows:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
 
     await Excel.run(async (context) => {
@@ -6536,7 +6536,7 @@
     });
 'Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
 
     await Excel.run(async (context) => {
@@ -6554,7 +6554,7 @@
     });
 'Excel.WorksheetFreezePanes#unfreeze:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-freeze-panes.yaml
 
     await Excel.run(async (context) => {
@@ -6565,7 +6565,7 @@
     });
 'Excel.WorksheetProtection#protect:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/data-protection.yaml
 
     await Excel.run(async (context) => {
@@ -6579,7 +6579,7 @@
         }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/data-protection.yaml
 
     let password = await passwordHandler();
@@ -6598,7 +6598,7 @@
     });
 'Excel.WorksheetProtection#unprotect:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/data-protection.yaml
 
     await Excel.run(async (context) => {
@@ -6606,7 +6606,7 @@
         activeSheet.protection.unprotect();
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/data-protection.yaml
 
     let password = await passwordHandler();
@@ -6619,7 +6619,7 @@
     });
 'Excel.WorksheetSingleClickedEventArgs#address:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-worksheet-single-click.yaml
 
     await Excel.run(async (context) => {
@@ -6834,7 +6834,7 @@
         Office.context.mailbox.item.addFileAttachmentAsync(attachmentURL, attachmentURL, options, callback);
     }
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
 
     var attachmentUrl = $("#attachmentUrl").val();
@@ -6846,7 +6846,7 @@
         function(result) { console.log(result); });
 'Office.AppointmentCompose#addFileAttachmentFromBase64Async:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
 
     base64String =
@@ -6892,7 +6892,7 @@
         Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
     }
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
 
     var attachmentItemId = $("#attachmentItemId").val();
@@ -6923,7 +6923,7 @@
     }
 'Office.AppointmentCompose#categories:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
@@ -6940,7 +6940,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
 
     // Note: In order for you to successfully add a category,
@@ -6969,7 +6969,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
@@ -6994,13 +6994,13 @@
     });
 'Office.AppointmentCompose#close:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/25-item-save-and-close/close.yaml
 
     Office.context.mailbox.item.close();
 'Office.AppointmentCompose#disableClientSignatureAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
 
     // Disable the client signature.
@@ -7037,7 +7037,7 @@
         }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-end-appointment-organizer.yaml
 
     Office.context.mailbox.item.end.getAsync((result) => {
@@ -7048,7 +7048,7 @@
       console.log(`Appointment ends: ${result.value}`);
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-end-appointment-organizer.yaml
 
     Office.context.mailbox.item.start.getAsync((result) => {
@@ -7069,7 +7069,7 @@
     });
 'Office.AppointmentCompose#enhancedLocation:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
 
     Office.context.mailbox.item.enhancedLocation.getAsync((result) => {
@@ -7090,7 +7090,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
 
     var locations = [
@@ -7113,7 +7113,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
 
     var locations = [
@@ -7137,7 +7137,7 @@
     });
 'Office.AppointmentCompose#getAttachmentContentAsync:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/get-attachment-content.yaml
 
     var item = Office.context.mailbox.item;
@@ -7181,7 +7181,7 @@
     }
 'Office.AppointmentCompose#getAttachmentsAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
 
     Office.context.mailbox.item.getAttachmentsAsync(function (result) {
@@ -7224,7 +7224,7 @@
     );
 'Office.AppointmentCompose#getItemIdAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/item-id-compose.yaml
 
     Office.context.mailbox.item.getItemIdAsync(function (result) {
@@ -7249,7 +7249,7 @@
     }
 'Office.AppointmentCompose#getSelectedDataAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/20-item-body/get-selected-data.yaml
 
     Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text,
@@ -7264,7 +7264,7 @@
     });
 'Office.AppointmentCompose#getSharedPropertiesAsync:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
 
     if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
@@ -7310,7 +7310,7 @@
     });
 'Office.AppointmentCompose#getSharedPropertiesAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
 
     if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
@@ -7324,7 +7324,7 @@
     });
 'Office.AppointmentCompose#isAllDayEvent:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
 
     Office.context.mailbox.item.isAllDayEvent.getAsync(function(asyncResult) {
@@ -7335,7 +7335,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
 
     Office.context.mailbox.item.isAllDayEvent.setAsync(true,
@@ -7348,7 +7348,7 @@
     });
 'Office.AppointmentCompose#isClientSignatureEnabledAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
 
     // Check if the client signature is currently enabled.
@@ -7363,7 +7363,7 @@
     });
 'Office.AppointmentCompose#itemType:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-item-type.yaml
 
     console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
@@ -7412,7 +7412,7 @@
 
     }
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
     Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
@@ -7444,7 +7444,7 @@
         var location = asyncResult.value;
     }
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
 
     Office.context.mailbox.item.location.getAsync((result) => {
@@ -7455,7 +7455,7 @@
       console.log(`Appointment location: ${result.value}`);
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
 
     var location = "my office";
@@ -7469,7 +7469,7 @@
     });
 'Office.AppointmentCompose#notificationMessages:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -7482,7 +7482,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -7497,7 +7497,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -7512,12 +7512,12 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -7532,7 +7532,7 @@
       },
       handleResult);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -7554,7 +7554,7 @@
         var arrayOfOptionalAttendeesRecipients = asyncResult.value;
     }
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-optional-attendees-appointment-organizer.yaml
 
     Office.context.mailbox.item.optionalAttendees.getAsync(function(asyncResult)
@@ -7576,7 +7576,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-optional-attendees-appointment-organizer.yaml
 
     var email = $("#emailOptional")
@@ -7594,7 +7594,7 @@
     });
 'Office.AppointmentCompose#organizer:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-organizer-appointment-organizer.yaml
 
     Office.context.mailbox.item.organizer.getAsync(function(asyncResult) {
@@ -7607,7 +7607,7 @@
     });
 'Office.AppointmentCompose#recurrence:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
 
     Office.context.mailbox.item.recurrence.getAsync(function(asyncResult) {
@@ -7623,7 +7623,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
 
     // Important: Can only set the recurrence pattern of an appointment series.
@@ -7685,7 +7685,7 @@
         }
     );
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
 
     Office.context.mailbox.item.removeAttachmentAsync(
@@ -7716,7 +7716,7 @@
         console.log(JSON.stringify(arrayOfRequiredAttendeesRecipients));
     }
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-required-attendees-appointment-organizer.yaml
 
     Office.context.mailbox.item.requiredAttendees.getAsync(function(asyncResult)
@@ -7738,7 +7738,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-required-attendees-appointment-organizer.yaml
 
     var email = $("#emailRequired")
@@ -7756,7 +7756,7 @@
     });
 'Office.AppointmentCompose#saveAsync:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/25-item-save-and-close/save.yaml
 
     Office.context.mailbox.item.saveAsync(function (result) {
@@ -7785,7 +7785,7 @@
     }
 'Office.AppointmentCompose#sensitivity:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
 
     Office.context.mailbox.item.sensitivity.getAsync(function(asyncResult) {
@@ -7796,7 +7796,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
 
     Office.context.mailbox.item.sensitivity.setAsync(
@@ -7811,7 +7811,7 @@
     );
 'Office.AppointmentCompose#seriesId:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-series-id.yaml
 
     var seriesId = Office.context.mailbox.item.seriesId;
@@ -7831,7 +7831,7 @@
 'Office.AppointmentCompose#setSelectedDataAsync:member(2)':
   - Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/20-item-body/set-selected-data.yaml
 
     Office.context.mailbox.item.setSelectedDataAsync("Replaced",
@@ -7844,7 +7844,7 @@
     });
 'Office.AppointmentCompose#start:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
 
     Office.context.mailbox.item.start.getAsync((result) => {
@@ -7855,7 +7855,7 @@
       console.log(`Appointment starts: ${result.value}`);
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
 
     var start = new Date(); // Represents current date and time.
@@ -7871,7 +7871,7 @@
     });
 'Office.AppointmentCompose#subject:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
 
     Office.context.mailbox.item.subject.getAsync((result) => {
@@ -7882,7 +7882,7 @@
       console.log(`Subject: ${result.value}`);
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
 
     let subject = "Hello World!";
@@ -7933,7 +7933,7 @@
 
     console.log(outputString);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/get-attachments-read.yaml
 
     var attachments = Office.context.mailbox.item.attachments;
@@ -7960,7 +7960,7 @@
     }
 'Office.AppointmentRead#categories:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
@@ -7977,7 +7977,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
 
     // Note: In order for you to successfully add a category,
@@ -8006,7 +8006,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
@@ -8031,14 +8031,14 @@
     });
 'Office.AppointmentRead#dateTimeCreated:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-date-time-created-read.yaml
 
     console.log(`Creation date and time:
     ${Office.context.mailbox.item.dateTimeCreated}`);
 'Office.AppointmentRead#dateTimeModified:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-date-time-modified-read.yaml
 
     console.log(`Date and time item last modified:
@@ -8109,7 +8109,7 @@
         }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
 
     Office.context.mailbox.item.displayReplyAllForm(
@@ -8181,14 +8181,14 @@
         }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
 
     Office.context.mailbox.item.displayReplyForm(
       "This is a reply with <i>some text in italics</i>."
     );
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-with-attachments.yaml
 
     Office.context.mailbox.item.displayReplyForm(
@@ -8211,13 +8211,13 @@
     });
 'Office.AppointmentRead#end:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-end-read.yaml
 
     console.log(`Appointment ends: ${Office.context.mailbox.item.end}`);
 'Office.AppointmentRead#enhancedLocation:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
 
     Office.context.mailbox.item.enhancedLocation.getAsync((result) => {
@@ -8239,7 +8239,7 @@
     });
 'Office.AppointmentRead#getAttachmentContentAsync:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/get-attachment-content.yaml
 
     var item = Office.context.mailbox.item;
@@ -8283,7 +8283,7 @@
     }
 'Office.AppointmentRead#getEntities:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
 
     var entities = Office.context.mailbox.item.getEntities();
@@ -8339,13 +8339,13 @@
     }
 'Office.AppointmentRead#getEntitiesByType:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
 
     console.log(Office.context.mailbox.item.getEntitiesByType(Office.MailboxEnums.EntityType.Address));
 'Office.AppointmentRead#getFilteredEntitiesByName:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/contextual.yaml
 
     // This API would only work when you click on highlighted physical address
@@ -8422,7 +8422,7 @@
 
     var veggies = allMatches.veggies;
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/contextual.yaml
 
     // This API would only work when you click on highlighted word "ScriptLab".
@@ -8467,7 +8467,7 @@
 
     var veggies = Office.context.mailbox.item.getRegExMatchesByName("veggies");
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/contextual.yaml
 
     // This API would only work when you click on highlighted word "ScriptLab".
@@ -8475,7 +8475,7 @@
     console.log(Office.context.mailbox.item.getRegExMatchesByName("sampleRegexName"));
 'Office.AppointmentRead#getSelectedEntities:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/selected.yaml
 
     var entities = Office.context.mailbox.item.getSelectedEntities();
@@ -8576,7 +8576,7 @@
 
     var veggies = selectedMatches.veggies;
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/selected.yaml
 
     var matches = Office.context.mailbox.item.getSelectedRegExMatches();
@@ -8590,7 +8590,7 @@
     }
 'Office.AppointmentRead#getSharedPropertiesAsync:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
 
     if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
@@ -8636,7 +8636,7 @@
     });
 'Office.AppointmentRead#getSharedPropertiesAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
 
     if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
@@ -8654,7 +8654,7 @@
     console.log("Is this an all-day event? " + isAllDayEvent);
 'Office.AppointmentRead#itemClass:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-item-class-read.yaml
 
     console.log(`Item class: ${Office.context.mailbox.item.itemClass}`);
@@ -8674,7 +8674,7 @@
     }
 'Office.AppointmentRead#itemType:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-item-type.yaml
 
     console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
@@ -8723,7 +8723,7 @@
 
     }
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
     Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
@@ -8747,21 +8747,21 @@
     var location = Office.context.mailbox.item.location;
     console.log("location: " + location);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-location-read.yaml
 
     console.log(`Appointment location:
     ${Office.context.mailbox.item.location}`);
 'Office.AppointmentRead#normalizedSubject:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-normalized-subject-read.yaml
 
     console.log(`Normalized subject:
     ${Office.context.mailbox.item.normalizedSubject}`);
 'Office.AppointmentRead#notificationMessages:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -8774,7 +8774,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -8789,7 +8789,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -8804,12 +8804,12 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -8824,7 +8824,7 @@
       },
       handleResult);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -8833,7 +8833,7 @@
     handleResult);
 'Office.AppointmentRead#optionalAttendees:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-optional-attendees-appointment-attendee.yaml
 
     var apptOptionalAttendees = Office.context.mailbox.item.optionalAttendees;
@@ -8851,7 +8851,7 @@
     }
 'Office.AppointmentRead#organizer:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-organizer-appointment-attendee.yaml
 
     var apptOrganizer = Office.context.mailbox.item.organizer;
@@ -8860,7 +8860,7 @@
     apptOrganizer.emailAddress + ")");
 'Office.AppointmentRead#recurrence:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-recurrence-read.yaml
 
     var recurrence = Office.context.mailbox.item.recurrence;
@@ -8875,7 +8875,7 @@
     }
 'Office.AppointmentRead#requiredAttendees:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-required-attendees-appointment-attendee.yaml
 
     var apptRequiredAttendees = Office.context.mailbox.item.requiredAttendees;
@@ -8897,7 +8897,7 @@
     console.log("Sensitivity: " + sensitivity);
 'Office.AppointmentRead#seriesId:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-series-id.yaml
 
     var seriesId = Office.context.mailbox.item.seriesId;
@@ -8912,13 +8912,13 @@
     }
 'Office.AppointmentRead#start:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-start-read.yaml
 
     console.log(`Appointment starts: ${Office.context.mailbox.item.start}`);
 'Office.AppointmentRead#subject:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-subject-read.yaml
 
     console.log(`Subject: ${Office.context.mailbox.item.subject}`);
@@ -9735,7 +9735,7 @@
         callback);
 'Office.Body#setSignatureAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
 
     // Set the signature for the current item.
@@ -9754,7 +9754,7 @@
     });
 'Office.Categories#addAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
 
     // Note: In order for you to successfully add a category,
@@ -9784,7 +9784,7 @@
     });
 'Office.Categories#getAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
@@ -9802,7 +9802,7 @@
     });
 'Office.Categories#removeAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
@@ -9947,7 +9947,7 @@
     }
 'Office.CustomProperties#get:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
     var propertyName = $("#propertyName").val();
@@ -9960,7 +9960,7 @@
     "${propertyValue}".`);
 'Office.CustomProperties#remove:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
     var propertyName = $("#propertyName").val();
@@ -10009,7 +10009,7 @@
     }
 'Office.CustomProperties#set:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
     var propertyName = $("#propertyName").val();
@@ -12603,7 +12603,7 @@
     });
 'Office.EnhancedLocation#addAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
 
     var locations = [
@@ -12627,7 +12627,7 @@
     });
 'Office.EnhancedLocation#getAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
 
     Office.context.mailbox.item.enhancedLocation.getAsync((result) => {
@@ -12649,7 +12649,7 @@
     });
 'Office.EnhancedLocation#removeAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-add-remove-enhancedlocation-appointment.yaml
 
     var locations = [
@@ -12819,7 +12819,7 @@
     }
 'Office.From#getAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-from-message-compose.yaml
 
     Office.context.mailbox.item.from.getAsync(function(asyncResult) {
@@ -12850,7 +12850,7 @@
     "header2": "value2"});
 'Office.IsAllDayEvent#getAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
 
     Office.context.mailbox.item.isAllDayEvent.getAsync(function(asyncResult) {
@@ -12862,7 +12862,7 @@
     });
 'Office.IsAllDayEvent#setAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
 
     Office.context.mailbox.item.isAllDayEvent.setAsync(true,
@@ -12887,7 +12887,7 @@
     }
 'Office.Location#getAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
 
     Office.context.mailbox.item.location.getAsync((result) => {
@@ -12899,7 +12899,7 @@
     });
 'Office.Location#setAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-location-appointment-organizer.yaml
 
     var location = "my office";
@@ -12950,7 +12950,7 @@
     }
 'Office.Mailbox#convertToEwsId:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
 
     console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
@@ -12974,7 +12974,7 @@
     console.log("EWS ID (from REST ID): " + ewsId2);
 'Office.Mailbox#convertToRestId:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
 
     Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function
@@ -12993,7 +12993,7 @@
         xhr.send();
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
 
     console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
@@ -13036,7 +13036,7 @@
     console.log(result.toISOString());
 'Office.Mailbox#displayAppointmentForm:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-existing-appointment.yaml
 
     var itemId = $("#itemId").val();
@@ -13044,7 +13044,7 @@
     Office.context.mailbox.displayAppointmentForm(itemId);
 'Office.Mailbox#displayMessageForm:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-existing-message.yaml
 
     var itemId = $("#itemId").val();
@@ -13052,7 +13052,7 @@
     Office.context.mailbox.displayMessageForm(itemId);
 'Office.Mailbox#displayNewAppointmentForm:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-new-appointment.yaml
 
     var start = new Date();
@@ -13076,7 +13076,7 @@
     });
 'Office.Mailbox#displayNewMessageForm:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-new-message.yaml
 
     Office.context.mailbox.displayNewMessageForm(
@@ -13098,7 +13098,7 @@
     });
 'Office.Mailbox#ewsUrl:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
 
     console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
@@ -13122,7 +13122,7 @@
     console.log("EWS ID (from REST ID): " + ewsId2);
 'Office.Mailbox#getCallbackTokenAsync:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
 
     Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function
@@ -13142,7 +13142,7 @@
     });
 'Office.Mailbox#getCallbackTokenAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/user-callback-token.yaml
 
     Office.context.mailbox.getCallbackTokenAsync(function (result) {
@@ -13154,7 +13154,7 @@
     });
 'Office.Mailbox#getUserIdentityTokenAsync:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/user-identity-token.yaml
 
     Office.context.mailbox.getUserIdentityTokenAsync(function (result) {
@@ -13206,7 +13206,7 @@
         // Process the returned response here.
     }
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/make-ews-request-async.yaml
 
     var ewsId = Office.context.mailbox.item.itemId;
@@ -13233,7 +13233,7 @@
         console.log(result);
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/send-message-using-make-ews-request-async.yaml
 
     var request = '<soap:Envelope
@@ -13263,7 +13263,7 @@
     });
 'Office.Mailbox#masterCategories:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-master-categories.yaml
 
     Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
@@ -13280,7 +13280,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-master-categories.yaml
 
     var masterCategoriesToAdd = [
@@ -13300,7 +13300,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-master-categories.yaml
 
     var masterCategoriesToRemove = ["TestCategory"];
@@ -13316,7 +13316,7 @@
     });
 'Office.Mailbox#restUrl:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/basic-rest-cors.yaml
 
     Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function
@@ -13335,7 +13335,7 @@
         xhr.send();
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/ids-and-urls.yaml
 
     console.log("EWS URL: " + Office.context.mailbox.ewsUrl);
@@ -13359,7 +13359,7 @@
     console.log("EWS ID (from REST ID): " + ewsId2);
 'Office.MasterCategories#addAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-master-categories.yaml
 
     var masterCategoriesToAdd = [
@@ -13380,7 +13380,7 @@
     });
 'Office.MasterCategories#getAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-master-categories.yaml
 
     Office.context.mailbox.masterCategories.getAsync(function(asyncResult) {
@@ -13398,7 +13398,7 @@
     });
 'Office.MasterCategories#removeAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-master-categories.yaml
 
     var masterCategoriesToRemove = ["TestCategory"];
@@ -13492,7 +13492,7 @@
                 });
         });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
 
     var attachmentUrl = $("#attachmentUrl").val();
@@ -13504,7 +13504,7 @@
         function(result) { console.log(result); });
 'Office.MessageCompose#addFileAttachmentFromBase64Async:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
 
     base64String =
@@ -13550,7 +13550,7 @@
         Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
     }
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
 
     var attachmentItemId = $("#attachmentItemId").val();
@@ -13574,7 +13574,7 @@
         var arrayOfBccRecipients = asyncResult.value;
     }
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
 
     Office.context.mailbox.item.bcc.getAsync(function(asyncResult) {
@@ -13589,7 +13589,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
 
     var email = $("#emailBcc")
@@ -13625,7 +13625,7 @@
     }
 'Office.MessageCompose#categories:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
@@ -13642,7 +13642,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
 
     // Note: In order for you to successfully add a category,
@@ -13671,7 +13671,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
@@ -13708,7 +13708,7 @@
         var arrayOfCcRecipients = asyncResult.value;
     }
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
 
     Office.context.mailbox.item.cc.getAsync(function(asyncResult) {
@@ -13723,7 +13723,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
 
     var email = $("#emailCc")
@@ -13740,20 +13740,20 @@
     });
 'Office.MessageCompose#close:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/25-item-save-and-close/close.yaml
 
     Office.context.mailbox.item.close();
 'Office.MessageCompose#conversationId:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-conversation-id-message.yaml
 
     console.log(`Conversation ID:
     ${Office.context.mailbox.item.conversationId}`);
 'Office.MessageCompose#disableClientSignatureAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
 
     // Disable the client signature.
@@ -13768,7 +13768,7 @@
     });
 'Office.MessageCompose#from:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-from-message-compose.yaml
 
     Office.context.mailbox.item.from.getAsync(function(asyncResult) {
@@ -13781,7 +13781,7 @@
     });
 'Office.MessageCompose#getAttachmentContentAsync:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/get-attachment-content.yaml
 
     var item = Office.context.mailbox.item;
@@ -13825,7 +13825,7 @@
     }
 'Office.MessageCompose#getAttachmentsAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
 
     Office.context.mailbox.item.getAttachmentsAsync(function (result) {
@@ -13845,7 +13845,7 @@
     });
 'Office.MessageCompose#getComposeTypeAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
 
     // Get the compose type of the current item (mail only).
@@ -13887,7 +13887,7 @@
     );
 'Office.MessageCompose#getItemIdAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/85-tokens-and-service-calls/item-id-compose.yaml
 
     Office.context.mailbox.item.getItemIdAsync(function (result) {
@@ -13912,7 +13912,7 @@
     }
 'Office.MessageCompose#getSelectedDataAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/20-item-body/get-selected-data.yaml
 
     Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text,
@@ -13927,7 +13927,7 @@
     });
 'Office.MessageCompose#getSharedPropertiesAsync:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
 
     if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
@@ -13973,7 +13973,7 @@
     });
 'Office.MessageCompose#getSharedPropertiesAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
 
     if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
@@ -13997,7 +13997,7 @@
     }
 'Office.MessageCompose#isClientSignatureEnabledAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/work-with-client-signatures.yaml
 
     // Check if the client signature is currently enabled.
@@ -14012,7 +14012,7 @@
     });
 'Office.MessageCompose#itemType:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-item-type.yaml
 
     console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
@@ -14061,7 +14061,7 @@
 
     }
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
     Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
@@ -14082,7 +14082,7 @@
     });
 'Office.MessageCompose#notificationMessages:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -14095,7 +14095,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -14110,7 +14110,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -14125,12 +14125,12 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -14145,7 +14145,7 @@
       },
       handleResult);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -14164,7 +14164,7 @@
         }
     );
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/attachments-compose.yaml
 
     Office.context.mailbox.item.removeAttachmentAsync(
@@ -14197,7 +14197,7 @@
     }
 'Office.MessageCompose#seriesId:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-series-id.yaml
 
     var seriesId = Office.context.mailbox.item.seriesId;
@@ -14217,7 +14217,7 @@
 'Office.MessageCompose#setSelectedDataAsync:member(2)':
   - Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/20-item-body/set-selected-data.yaml
 
     Office.context.mailbox.item.setSelectedDataAsync("Replaced",
@@ -14230,7 +14230,7 @@
     });
 'Office.MessageCompose#subject:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
 
     Office.context.mailbox.item.subject.getAsync((result) => {
@@ -14241,7 +14241,7 @@
       console.log(`Subject: ${result.value}`);
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-subject-compose.yaml
 
     let subject = "Hello World!";
@@ -14267,7 +14267,7 @@
         var arrayOfToRecipients = asyncResult.value;
     }
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
 
     Office.context.mailbox.item.to.getAsync(function(asyncResult) {
@@ -14282,7 +14282,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
 
     var email = $("#emailTo")
@@ -14336,7 +14336,7 @@
 
     console.log(outputString);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/get-attachments-read.yaml
 
     var attachments = Office.context.mailbox.item.attachments;
@@ -14363,7 +14363,7 @@
     }
 'Office.MessageRead#categories:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
@@ -14380,7 +14380,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
 
     // Note: In order for you to successfully add a category,
@@ -14409,7 +14409,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/45-categories/work-with-categories.yaml
 
     Office.context.mailbox.item.categories.getAsync(function(asyncResult) {
@@ -14434,7 +14434,7 @@
     });
 'Office.MessageRead#cc:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-cc-message-read.yaml
 
     var msgCc = Office.context.mailbox.item.cc;
@@ -14446,21 +14446,21 @@
     }
 'Office.MessageRead#conversationId:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-conversation-id-message.yaml
 
     console.log(`Conversation ID:
     ${Office.context.mailbox.item.conversationId}`);
 'Office.MessageRead#dateTimeCreated:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-date-time-created-read.yaml
 
     console.log(`Creation date and time:
     ${Office.context.mailbox.item.dateTimeCreated}`);
 'Office.MessageRead#dateTimeModified:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-date-time-modified-read.yaml
 
     console.log(`Date and time item last modified:
@@ -14531,7 +14531,7 @@
         }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
 
     Office.context.mailbox.item.displayReplyAllForm(
@@ -14603,14 +14603,14 @@
         }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
 
     Office.context.mailbox.item.displayReplyForm(
       "This is a reply with <i>some text in italics</i>."
     );
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-with-attachments.yaml
 
     Office.context.mailbox.item.displayReplyForm(
@@ -14633,13 +14633,13 @@
     });
 'Office.MessageRead#end:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-end-read.yaml
 
     console.log(`Appointment ends: ${Office.context.mailbox.item.end}`);
 'Office.MessageRead#from:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-from-message-read.yaml
 
     var msgFrom = Office.context.mailbox.item.from;
@@ -14665,7 +14665,7 @@
     );
 'Office.MessageRead#getAttachmentContentAsync:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/40-attachments/get-attachment-content.yaml
 
     var item = Office.context.mailbox.item;
@@ -14709,7 +14709,7 @@
     }
 'Office.MessageRead#getEntities:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
 
     var entities = Office.context.mailbox.item.getEntities();
@@ -14765,13 +14765,13 @@
     }
 'Office.MessageRead#getEntitiesByType:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/basic-entities.yaml
 
     console.log(Office.context.mailbox.item.getEntitiesByType(Office.MailboxEnums.EntityType.Address));
 'Office.MessageRead#getFilteredEntitiesByName:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/contextual.yaml
 
     // This API would only work when you click on highlighted physical address
@@ -14848,7 +14848,7 @@
 
     var veggies = allMatches.veggies;
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/contextual.yaml
 
     // This API would only work when you click on highlighted word "ScriptLab".
@@ -14893,7 +14893,7 @@
 
     var veggies = Office.context.mailbox.item.getRegExMatchesByName("veggies");
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/contextual.yaml
 
     // This API would only work when you click on highlighted word "ScriptLab".
@@ -14901,7 +14901,7 @@
     console.log(Office.context.mailbox.item.getRegExMatchesByName("sampleRegexName"));
 'Office.MessageRead#getSelectedEntities:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/selected.yaml
 
     var entities = Office.context.mailbox.item.getSelectedEntities();
@@ -15002,7 +15002,7 @@
 
     var veggies = selectedMatches.veggies;
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/75-entities-and-regex-matches/selected.yaml
 
     var matches = Office.context.mailbox.item.getSelectedRegExMatches();
@@ -15016,7 +15016,7 @@
     }
 'Office.MessageRead#getSharedPropertiesAsync:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
 
     if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
@@ -15062,7 +15062,7 @@
     });
 'Office.MessageRead#getSharedPropertiesAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/65-delegates-and-shared-folders/get-shared-properties.yaml
 
     if (!Office.context.mailbox.item.getSharedPropertiesAsync) {
@@ -15076,14 +15076,14 @@
     });
 'Office.MessageRead#internetMessageId:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-internet-message-id-read.yaml
 
     console.log(`Internet message ID:
     ${Office.context.mailbox.item.internetMessageId}`);
 'Office.MessageRead#itemClass:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-item-class-read.yaml
 
     console.log(`Item class: ${Office.context.mailbox.item.itemClass}`);
@@ -15103,7 +15103,7 @@
     }
 'Office.MessageRead#itemType:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-item-type.yaml
 
     console.log(`Item type: ${Office.context.mailbox.item.itemType}`);
@@ -15152,7 +15152,7 @@
 
     }
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/15-item-custom-properties/load-set-get-save.yaml
 
     Office.context.mailbox.item.loadCustomPropertiesAsync(function (result) {
@@ -15173,21 +15173,21 @@
     });
 'Office.MessageRead#location:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-location-read.yaml
 
     console.log(`Appointment location:
     ${Office.context.mailbox.item.location}`);
 'Office.MessageRead#normalizedSubject:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-normalized-subject-read.yaml
 
     console.log(`Normalized subject:
     ${Office.context.mailbox.item.normalizedSubject}`);
 'Office.MessageRead#notificationMessages:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -15200,7 +15200,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -15215,7 +15215,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -15230,12 +15230,12 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -15250,7 +15250,7 @@
       },
       handleResult);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -15259,7 +15259,7 @@
     handleResult);
 'Office.MessageRead#recurrence:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-recurrence-read.yaml
 
     var recurrence = Office.context.mailbox.item.recurrence;
@@ -15274,7 +15274,7 @@
     }
 'Office.MessageRead#sender:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-sender-message-read.yaml
 
     var msgSender = Office.context.mailbox.item.sender;
@@ -15283,7 +15283,7 @@
     msgSender.emailAddress + ")");
 'Office.MessageRead#seriesId:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-series-id.yaml
 
     var seriesId = Office.context.mailbox.item.seriesId;
@@ -15298,19 +15298,19 @@
     }
 'Office.MessageRead#start:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-start-read.yaml
 
     console.log(`Appointment starts: ${Office.context.mailbox.item.start}`);
 'Office.MessageRead#subject:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-subject-read.yaml
 
     console.log(`Subject: ${Office.context.mailbox.item.subject}`);
 'Office.MessageRead#to:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-to-message-read.yaml
 
     var msgTo = Office.context.mailbox.item.to;
@@ -15322,7 +15322,7 @@
     }
 'Office.NotificationMessages#addAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -15335,7 +15335,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -15350,7 +15350,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -15365,7 +15365,7 @@
     Office.context.mailbox.item.notificationMessages.addAsync(id, details,
     handleResult);
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -15393,13 +15393,13 @@
         }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     Office.context.mailbox.item.notificationMessages.getAllAsync(handleResult);          
 'Office.NotificationMessages#removeAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -15416,7 +15416,7 @@
         persistent: false
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/35-notifications/add-getall-remove.yaml
 
     var id = $("#notificationId").val();
@@ -15444,7 +15444,7 @@
     }
 'Office.Organizer#getAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-organizer-appointment-organizer.yaml
 
     Office.context.mailbox.item.organizer.getAsync(function(asyncResult) {
@@ -15496,7 +15496,7 @@
     });
 'Office.Recipients#getAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
 
     Office.context.mailbox.item.bcc.getAsync(function(asyncResult) {
@@ -15511,7 +15511,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
 
     Office.context.mailbox.item.cc.getAsync(function(asyncResult) {
@@ -15526,7 +15526,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-optional-attendees-appointment-organizer.yaml
 
     Office.context.mailbox.item.optionalAttendees.getAsync(function(asyncResult)
@@ -15548,7 +15548,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-required-attendees-appointment-organizer.yaml
 
     Office.context.mailbox.item.requiredAttendees.getAsync(function(asyncResult)
@@ -15570,7 +15570,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
 
     Office.context.mailbox.item.to.getAsync(function(asyncResult) {
@@ -15607,7 +15607,7 @@
         }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-bcc-message-compose.yaml
 
     var email = $("#emailBcc")
@@ -15623,7 +15623,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-cc-message-compose.yaml
 
     var email = $("#emailCc")
@@ -15639,7 +15639,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-optional-attendees-appointment-organizer.yaml
 
     var email = $("#emailOptional")
@@ -15656,7 +15656,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-required-attendees-appointment-organizer.yaml
 
     var email = $("#emailRequired")
@@ -15673,7 +15673,7 @@
       }
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/30-recipients-and-attendees/get-set-to-message-compose.yaml
 
     var email = $("#emailTo")
@@ -15690,7 +15690,7 @@
     });
 'Office.Recurrence#getAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
 
     Office.context.mailbox.item.recurrence.getAsync(function(asyncResult) {
@@ -15707,7 +15707,7 @@
     });
 'Office.Recurrence#setAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/50-recurrence/get-set-recurrence-appointment-organizer.yaml
 
     // Important: Can only set the recurrence pattern of an appointment series.
@@ -15830,7 +15830,7 @@
     }
 'Office.RoamingSettings#get:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/10-roaming-settings/roaming-settings.yaml
 
     var settingName = $("#settingName").val();
@@ -15842,7 +15842,7 @@
     console.log(`The value of setting "${settingName}" is "${settingValue}".`);
 'Office.RoamingSettings#saveAsync:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/10-roaming-settings/roaming-settings.yaml
 
     // Save settings in the mailbox to make it available in future sessions.
@@ -15863,7 +15863,7 @@
     // Persist the change.
     Office.context.roamingSettings.saveAsync();
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/10-roaming-settings/roaming-settings.yaml
 
     var settingName = $("#settingName").val();
@@ -15875,7 +15875,7 @@
     console.log(`Setting "${settingName}" set to value "${settingValue}".`);
 'Office.Sensitivity#getAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
 
     Office.context.mailbox.item.sensitivity.getAsync(function(asyncResult) {
@@ -15887,7 +15887,7 @@
     });
 'Office.Sensitivity#setAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
 
     Office.context.mailbox.item.sensitivity.setAsync(
@@ -16292,7 +16292,7 @@
     });
 'Office.Time#getAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
 
     Office.context.mailbox.item.start.getAsync((result) => {
@@ -16322,7 +16322,7 @@
     });
 'Office.Time#setAsync:member(2)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-start-appointment-organizer.yaml
 
     var start = new Date(); // Represents current date and time.
@@ -16337,7 +16337,7 @@
       console.log(`Successfully set start date and time to ${start}`);
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/90-other-item-apis/get-set-end-appointment-organizer.yaml
 
     Office.context.mailbox.item.start.getAsync((result) => {
@@ -20023,7 +20023,7 @@
     // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
 'Word.Body#insertTable:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/40-tables/table-cell-access.yaml
 
     await Word.run(async (context) => {
@@ -20063,7 +20063,7 @@
     });
 'Word.Body#paragraphs:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/get-word-count.yaml
 
     await Word.run(async (context) => {
@@ -20112,7 +20112,7 @@
     });
 'Word.Body#search:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/search.yaml
 
     await Word.run(async (context) => {
@@ -20129,7 +20129,7 @@
       await context.sync();
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/search.yaml
 
     await Word.run(async (context) => {
@@ -20149,7 +20149,7 @@
       await context.sync();
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/get-word-count.yaml
 
     await Word.run(async (context) => {
@@ -20687,7 +20687,7 @@
     });
 'Word.ContentControl#set:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/10-content-controls/insert-and-change-content-controls.yaml
 
     // Adds title and colors to odd and even content controls and changes their
@@ -20726,7 +20726,7 @@
     });
 'Word.ContentControl#tag:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/10-content-controls/insert-and-change-content-controls.yaml
 
     // Traverses each paragraph of the document and wraps a content control on
@@ -20803,7 +20803,7 @@
     });
 'Word.ContentControlCollection#getByTag:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/90-scenarios/doc-assembly.yaml
 
     await Word.run(async (context) => {
@@ -20955,7 +20955,7 @@
     // https://aka.ms/sillystorywordaddin
 'Word.CustomPropertyCollection#add:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/30-properties/read-write-custom-document-properties.yaml
 
     await Word.run(async (context) => {
@@ -20965,7 +20965,7 @@
         console.log("Property added");
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/30-properties/read-write-custom-document-properties.yaml
 
     await Word.run(async (context) => {
@@ -20976,7 +20976,7 @@
     });
 'Word.CustomPropertyCollection#items:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/30-properties/read-write-custom-document-properties.yaml
 
     await Word.run(async (context) => {
@@ -21049,7 +21049,7 @@
     });
 'Word.Document#properties:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/30-properties/get-built-in-properties.yaml
 
     await Word.run(async (context) => {
@@ -21264,7 +21264,7 @@
     });
 'Word.InlinePicture#getBase64ImageSrc:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/15-images/insert-and-get-pictures.yaml
 
     await Word.run(async (context) => {
@@ -21345,7 +21345,7 @@
     });
 'Word.Paragraph#alignment:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/paragraph-properties.yaml
 
     await Word.run(async (context) => {
@@ -21518,7 +21518,7 @@
     });
 'Word.Paragraph#insertBreak:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-line-and-page-breaks.yaml
 
     Word.run(async (context) => {
@@ -21670,7 +21670,7 @@
     });
 'Word.Paragraph#insertParagraph:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-formatted-text.yaml
 
     await Word.run(async (context) => {
@@ -21691,7 +21691,7 @@
     });
 'Word.Paragraph#insertText:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-in-different-locations.yaml
 
     await Word.run(async (context) => {
@@ -21704,7 +21704,7 @@
     });
 'Word.Paragraph#leftIndent:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/paragraph-properties.yaml
 
     await Word.run(async (context) => {
@@ -21715,7 +21715,7 @@
     });
 'Word.Paragraph#lineSpacing:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/paragraph-properties.yaml
 
     await Word.run(async (context) => {
@@ -21726,7 +21726,7 @@
     });
 'Word.Paragraph#select:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/35-ranges/scroll-to-range.yaml
 
     await Word.run(async (context) => {
@@ -21736,7 +21736,7 @@
       await context.sync();
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/35-ranges/scroll-to-range.yaml
 
     await Word.run(async (context) => {
@@ -21747,7 +21747,7 @@
     });
 'Word.Paragraph#set:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/90-scenarios/multiple-property-set.yaml
 
     await Word.run(async (context) => {
@@ -21763,7 +21763,7 @@
       await context.sync();
     });
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/90-scenarios/multiple-property-set.yaml
 
     await Word.run(async (context) => {
@@ -21779,7 +21779,7 @@
     });
 'Word.Paragraph#spaceAfter:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/paragraph-properties.yaml
 
     await Word.run(async (context) => {
@@ -21790,7 +21790,7 @@
     });
 'Word.Paragraph#split:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/35-ranges/split-words-of-first-paragraph.yaml
 
     await Word.run(async (context) => {
@@ -21812,7 +21812,7 @@
     });
 'Word.Paragraph#startNewList:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/20-lists/insert-list.yaml
 
     // This example starts a new list stating with the second paragraph.
@@ -21839,7 +21839,7 @@
     });
 'Word.Paragraph#text:member':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
     await Word.run(async (context) => {
@@ -21977,7 +21977,7 @@
     });
 'Word.Range#getTextRanges:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
 
     await Word.run(async (context) => {
@@ -22031,7 +22031,7 @@
     });
 'Word.Range#insertContentControl:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/90-scenarios/doc-assembly.yaml
 
     await Word.run(async (context) => {
@@ -22350,7 +22350,7 @@
     });
 'Word.Section#getFooter:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-header-and-footer.yaml
 
     await Word.run(async (context) => {
@@ -22399,7 +22399,7 @@
     });
 'Word.Section#getHeader:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/insert-header-and-footer.yaml
 
     await Word.run(async (context) => {
@@ -22626,7 +22626,7 @@
     });
 'Word.Table#getCell:member(1)':
   - >-
-    //// Full sample:
+    // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/40-tables/table-cell-access.yaml
 
     await Word.run(async (context) => {
