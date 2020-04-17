@@ -70,7 +70,7 @@ items:
       content: 'options?: Office.AsyncContextOptions;'
       return:
         type:
-          - 'outlook!Office.AsyncContextOptions:interface'
+          - 'office!Office.AsyncContextOptions:interface'
 references:
   - uid: 'outlook!Office.ReplyFormData#attachments~0:complex'
     name: 'ReplyFormAttachment[]'
@@ -87,10 +87,10 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <any>) => void
         fullName: <any>) => void
-  - uid: 'outlook!Office.AsyncContextOptions:interface'
+  - uid: 'office!Office.AsyncContextOptions:interface'
     name: Office.AsyncContextOptions

@@ -80,7 +80,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
             Developers can provide any object they wish to access in the callback method.
           type:
-            - 'outlook!Office.AsyncContextOptions:interface'
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -289,7 +289,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
             Developers can provide any object they wish to access in the callback method.
           type:
-            - 'outlook!Office.AsyncContextOptions:interface'
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -397,7 +397,7 @@ items:
           type:
             - 'outlook!Office.Recurrence#setAsync~1:complex'
 references:
-  - uid: 'outlook!Office.AsyncContextOptions:interface'
+  - uid: 'office!Office.AsyncContextOptions:interface'
     name: Office.AsyncContextOptions
   - uid: 'outlook!Office.Recurrence#getAsync~0:complex'
     name: '(asyncResult: Office.AsyncResult<Recurrence>) => void'
@@ -405,7 +405,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <
@@ -421,7 +421,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <
@@ -454,7 +454,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <void>) => void
@@ -465,7 +465,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <void>) => void
