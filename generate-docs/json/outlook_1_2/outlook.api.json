@@ -116,7 +116,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -133,7 +133,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -222,7 +222,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -300,7 +300,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -313,7 +313,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -402,7 +402,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -516,7 +516,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.CoercionType",
-                      "canonicalReference": "outlook!Office.CoercionType:enum"
+                      "canonicalReference": "office!Office.CoercionType:enum"
                     },
                     {
                       "kind": "Content",
@@ -529,7 +529,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -542,7 +542,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -604,7 +604,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.CoercionType",
-                      "canonicalReference": "outlook!Office.CoercionType:enum"
+                      "canonicalReference": "office!Office.CoercionType:enum"
                     },
                     {
                       "kind": "Content",
@@ -621,7 +621,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -710,7 +710,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -842,7 +842,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -855,7 +855,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -929,7 +929,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -1018,7 +1018,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -1040,7 +1040,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -1114,7 +1114,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -2118,7 +2118,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -2573,7 +2573,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -2586,7 +2586,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -2595,7 +2595,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.CoercionType",
-                      "canonicalReference": "outlook!Office.CoercionType:enum"
+                      "canonicalReference": "office!Office.CoercionType:enum"
                     },
                     {
                       "kind": "Content",
@@ -2654,7 +2654,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -2663,7 +2663,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.CoercionType",
-                      "canonicalReference": "outlook!Office.CoercionType:enum"
+                      "canonicalReference": "office!Office.CoercionType:enum"
                     },
                     {
                       "kind": "Content",
@@ -2719,7 +2719,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -2741,7 +2741,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -2815,7 +2815,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -2878,7 +2878,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -2900,7 +2900,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -2974,7 +2974,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -3045,7 +3045,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.CoercionType",
-                      "canonicalReference": "outlook!Office.CoercionType:enum"
+                      "canonicalReference": "office!Office.CoercionType:enum"
                     },
                     {
                       "kind": "Content",
@@ -3352,7 +3352,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -4272,7 +4272,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -4285,7 +4285,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -4344,7 +4344,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -4400,7 +4400,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -4413,7 +4413,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -4487,7 +4487,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -4833,7 +4833,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -4900,7 +4900,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -5073,7 +5073,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -6085,7 +6085,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -6102,7 +6102,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -6191,7 +6191,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -6269,7 +6269,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -6282,7 +6282,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -6371,7 +6371,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -6536,7 +6536,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.CoercionType",
-                      "canonicalReference": "outlook!Office.CoercionType:enum"
+                      "canonicalReference": "office!Office.CoercionType:enum"
                     },
                     {
                       "kind": "Content",
@@ -6549,7 +6549,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -6562,7 +6562,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -6624,7 +6624,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.CoercionType",
-                      "canonicalReference": "outlook!Office.CoercionType:enum"
+                      "canonicalReference": "office!Office.CoercionType:enum"
                     },
                     {
                       "kind": "Content",
@@ -6641,7 +6641,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -6730,7 +6730,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -6810,7 +6810,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -6823,7 +6823,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -6897,7 +6897,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -6960,7 +6960,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -6982,7 +6982,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -7056,7 +7056,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -7887,7 +7887,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -8258,7 +8258,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -8271,7 +8271,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -8363,7 +8363,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -8418,7 +8418,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -8431,7 +8431,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -8499,7 +8499,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -8582,7 +8582,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -8595,7 +8595,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -8687,7 +8687,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -8933,7 +8933,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -8988,7 +8988,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -9120,7 +9120,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -9242,7 +9242,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -9255,7 +9255,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -9314,7 +9314,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -9370,7 +9370,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -9383,7 +9383,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -9457,7 +9457,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -9599,7 +9599,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -9612,7 +9612,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -9680,7 +9680,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -9746,7 +9746,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncContextOptions",
-                      "canonicalReference": "outlook!Office.AsyncContextOptions:interface"
+                      "canonicalReference": "office!Office.AsyncContextOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -9759,7 +9759,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
@@ -9834,7 +9834,7 @@
                     {
                       "kind": "Reference",
                       "text": "CommonAPI.AsyncResult",
-                      "canonicalReference": "outlook!Office.AsyncResult:interface"
+                      "canonicalReference": "office!Office.AsyncResult:interface"
                     },
                     {
                       "kind": "Content",
