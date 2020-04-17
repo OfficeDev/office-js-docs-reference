@@ -498,7 +498,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
             Developers can provide any object they wish to access in the callback method.
           type:
-            - 'outlook!Office.AsyncContextOptions:interface'
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -676,7 +676,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
             Developers can provide any object they wish to access in the callback method.
           type:
-            - 'outlook!Office.AsyncContextOptions:interface'
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -1320,7 +1320,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
             Developers can provide any object they wish to access in the callback method.
           type:
-            - 'outlook!Office.AsyncContextOptions:interface'
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -1419,7 +1419,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
             Developers can provide any object they wish to access in the callback method.
           type:
-            - 'outlook!Office.AsyncContextOptions:interface'
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -1532,7 +1532,7 @@ items:
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - 'outlook!Office.AsyncContextOptions:interface'
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -1675,7 +1675,7 @@ items:
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - 'outlook!Office.AsyncContextOptions:interface'
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -1836,7 +1836,7 @@ items:
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - 'outlook!Office.AsyncContextOptions:interface'
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -2280,7 +2280,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
             Developers can provide any object they wish to access in the callback method.
           type:
-            - 'outlook!Office.AsyncContextOptions:interface'
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -2380,7 +2380,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
             Developers can provide any object they wish to access in the callback method.
           type:
-            - 'outlook!Office.AsyncContextOptions:interface'
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -2482,7 +2482,7 @@ items:
             An object literal that contains one or more of the following properties. `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - 'outlook!Office.AsyncContextOptions:interface'
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
@@ -2928,7 +2928,7 @@ references:
     name: 'Office.AsyncContextOptions & { isInline: boolean }'
     fullName: 'Office.AsyncContextOptions & { isInline: boolean }'
     spec.typeScript:
-      - uid: 'outlook!Office.AsyncContextOptions:interface'
+      - uid: 'office!Office.AsyncContextOptions:interface'
         name: Office.AsyncContextOptions
         fullName: Office.AsyncContextOptions
       - name: ' & { isInline: boolean }'
@@ -2939,7 +2939,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <string>) => void
@@ -2950,7 +2950,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <string>) => void
@@ -2959,7 +2959,7 @@ references:
     name: 'Office.AsyncContextOptions & { isInline: boolean }'
     fullName: 'Office.AsyncContextOptions & { isInline: boolean }'
     spec.typeScript:
-      - uid: 'outlook!Office.AsyncContextOptions:interface'
+      - uid: 'office!Office.AsyncContextOptions:interface'
         name: Office.AsyncContextOptions
         fullName: Office.AsyncContextOptions
       - name: ' & { isInline: boolean }'
@@ -2970,7 +2970,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <string>) => void
@@ -2981,7 +2981,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <string>) => void
@@ -2990,12 +2990,12 @@ references:
     name: Office.EventType | string
     fullName: Office.EventType | string
     spec.typeScript:
-      - uid: 'outlook!Office.EventType:enum'
+      - uid: 'office!Office.EventType:enum'
         name: Office.EventType
         fullName: Office.EventType
       - name: ' | string'
         fullName: ' | string'
-  - uid: 'outlook!Office.AsyncContextOptions:interface'
+  - uid: 'office!Office.AsyncContextOptions:interface'
     name: Office.AsyncContextOptions
   - uid: 'outlook!Office.MessageCompose#addHandlerAsync~1:complex'
     name: '(asyncResult: Office.AsyncResult<void>) => void'
@@ -3003,7 +3003,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <void>) => void
@@ -3012,7 +3012,7 @@ references:
     name: Office.EventType | string
     fullName: Office.EventType | string
     spec.typeScript:
-      - uid: 'outlook!Office.EventType:enum'
+      - uid: 'office!Office.EventType:enum'
         name: Office.EventType
         fullName: Office.EventType
       - name: ' | string'
@@ -3023,7 +3023,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <void>) => void
@@ -3034,7 +3034,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <string>) => void
@@ -3045,7 +3045,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <string>) => void
@@ -3064,7 +3064,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <
@@ -3080,7 +3080,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <
@@ -3096,7 +3096,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <
@@ -3112,7 +3112,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <
@@ -3128,7 +3128,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <string>) => void
@@ -3139,7 +3139,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <string>) => void
@@ -3148,7 +3148,7 @@ references:
     name: Office.CoercionType | string
     fullName: Office.CoercionType | string
     spec.typeScript:
-      - uid: 'outlook!Office.CoercionType:enum'
+      - uid: 'office!Office.CoercionType:enum'
         name: Office.CoercionType
         fullName: Office.CoercionType
       - name: ' | string'
@@ -3159,7 +3159,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <any>) => void
@@ -3168,7 +3168,7 @@ references:
     name: Office.CoercionType | string
     fullName: Office.CoercionType | string
     spec.typeScript:
-      - uid: 'outlook!Office.CoercionType:enum'
+      - uid: 'office!Office.CoercionType:enum'
         name: Office.CoercionType
         fullName: Office.CoercionType
       - name: ' | string'
@@ -3179,7 +3179,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <any>) => void
@@ -3190,7 +3190,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <
@@ -3206,7 +3206,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <
@@ -3233,7 +3233,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <
@@ -3251,7 +3251,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <void>) => void
@@ -3262,7 +3262,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <void>) => void
@@ -3271,7 +3271,7 @@ references:
     name: Office.EventType | string
     fullName: Office.EventType | string
     spec.typeScript:
-      - uid: 'outlook!Office.EventType:enum'
+      - uid: 'office!Office.EventType:enum'
         name: Office.EventType
         fullName: Office.EventType
       - name: ' | string'
@@ -3282,7 +3282,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <void>) => void
@@ -3291,7 +3291,7 @@ references:
     name: Office.EventType | string
     fullName: Office.EventType | string
     spec.typeScript:
-      - uid: 'outlook!Office.EventType:enum'
+      - uid: 'office!Office.EventType:enum'
         name: Office.EventType
         fullName: Office.EventType
       - name: ' | string'
@@ -3302,7 +3302,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <void>) => void
@@ -3313,7 +3313,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <string>) => void
@@ -3324,7 +3324,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <string>) => void
@@ -3333,7 +3333,7 @@ references:
     name: Office.AsyncContextOptions & CoercionTypeOptions
     fullName: Office.AsyncContextOptions & Office.CoercionTypeOptions
     spec.typeScript:
-      - uid: 'outlook!Office.AsyncContextOptions:interface'
+      - uid: 'office!Office.AsyncContextOptions:interface'
         name: Office.AsyncContextOptions
         fullName: Office.AsyncContextOptions
       - name: ' & '
@@ -3347,7 +3347,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <void>) => void
@@ -3358,7 +3358,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <void>) => void

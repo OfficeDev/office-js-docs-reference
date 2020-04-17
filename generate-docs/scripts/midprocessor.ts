@@ -10,7 +10,35 @@ const CURRENT_OUTLOOK_RELEASE = 8;
 const CURRENT_WORD_RELEASE = 3;
 
 tryCatch(async () => {
-     // ----
+    // ----
+    // Clean up Office and Outlook json cross-referencing.
+    // ----
+    console.log("\nCleaning up Office json cross-referencing...");
+
+    const officeJsonPath = path.resolve("../json/office");
+    const officeFilename = "office.api.json";
+    fsx.writeFileSync(officeJsonPath + '/' + officeFilename, fsx.readFileSync(officeJsonPath + '/' + officeFilename).toString().replace("office!Office.Mailbox", "outlook!Office.Mailbox").replace("office!Office.RoamingSettings", "outlook!Office.RoamingSettings"));
+
+    console.log("\nCompleted Office json cross-referencing cleanup");
+
+    console.log("\nCleaning up Outlook json cross-referencing...");
+
+    const outlookJsonPath = path.resolve("../json/outlook");
+    const outlookFilename = "outlook.api.json";
+    console.log("\nStarting outlook...");
+    let outlookJson = fsx.readFileSync(`${outlookJsonPath}/${outlookFilename}`).toString();
+    fsx.writeFileSync(`${outlookJsonPath}/${outlookFilename}`, cleanUpOutlookJson(outlookJson));
+    console.log("\Completed outlook");
+    for (let i = CURRENT_OUTLOOK_RELEASE; i > 0; i--) {
+        console.log(`\nStarting outlook_1_${i}...`);
+        outlookJson = fsx.readFileSync(`${outlookJsonPath}_1_${i}/${outlookFilename}`).toString();
+        fsx.writeFileSync(`${outlookJsonPath}_1_${i}/${outlookFilename}`, cleanUpOutlookJson(outlookJson));
+        console.log(`\Completed outlook_1_${i}`);
+    }
+
+    console.log("\nCompleted Outlook json cross-referencing cleanup");
+
+    // ----
     // Process Snippets
     // ----
     console.log("\nRemoving old snippets input files...");
@@ -45,7 +73,7 @@ tryCatch(async () => {
     for (const key of Object.keys(scriptLabSnippets)) {
         if (allSnippets[key]) {
             console.log("Combining local and Script Lab snippets for: " + key);
-            allSnippets[key] =allSnippets[key].concat(scriptLabSnippets[key]);
+            allSnippets[key] = allSnippets[key].concat(scriptLabSnippets[key]);
         } else {
             allSnippets[key] = scriptLabSnippets[key];
         }
@@ -172,6 +200,18 @@ tryCatch(async () => {
     console.log("Moving Office Runtime APIs to Common API");
     fsx.copySync(officeRuntimeJson, `../json/office/office-runtime.api.json`);
 });
+
+function cleanUpOutlookJson(jsonString : string) {
+    const outlookSearchString = "outlook!";
+    const commonApiSearchString = "CommonAPI";
+    let startSearchIndex = jsonString.indexOf(commonApiSearchString);
+    do {
+        let outlookIndex = jsonString.indexOf(outlookSearchString, startSearchIndex);
+        jsonString = jsonString.substring(0, outlookIndex) + "office!" + jsonString.substring(outlookIndex + 8);
+        startSearchIndex = jsonString.indexOf(commonApiSearchString, outlookIndex + 8);
+    } while (startSearchIndex >= 0);
+    return jsonString;
+}
 
 async function tryCatch(call: () => Promise<void>) {
     try {

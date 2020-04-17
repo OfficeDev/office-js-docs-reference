@@ -302,7 +302,7 @@ items:
       content: 'mailbox: Office.Mailbox;'
       return:
         type:
-          - 'office!Office.Mailbox:interface'
+          - 'outlook!Office.Mailbox:interface'
   - uid: 'office!Office.Context#officeTheme:member'
     summary: Provides access to the properties for Office theme colors.
     name: officeTheme
@@ -381,7 +381,7 @@ items:
       content: 'roamingSettings: Office.RoamingSettings;'
       return:
         type:
-          - 'office!Office.RoamingSettings:interface'
+          - 'outlook!Office.RoamingSettings:interface'
   - uid: 'office!Office.Context#touchEnabled:member'
     summary: >-
       Specifies whether the platform and device allows touch interaction. True if the add-in is running on a touch
@@ -426,7 +426,7 @@ references:
     name: Office.Document
   - uid: 'office!Office.HostType:enum'
     name: HostType
-  - uid: 'office!Office.Mailbox:interface'
+  - uid: 'outlook!Office.Mailbox:interface'
     name: Office.Mailbox
   - uid: 'office!Office.OfficeTheme:interface'
     name: OfficeTheme
@@ -434,7 +434,7 @@ references:
     name: PlatformType
   - uid: 'office!Office.RequirementSetSupport:interface'
     name: RequirementSetSupport
-  - uid: 'office!Office.RoamingSettings:interface'
+  - uid: 'outlook!Office.RoamingSettings:interface'
     name: Office.RoamingSettings
   - uid: 'office!Office.UI:interface'
     name: UI

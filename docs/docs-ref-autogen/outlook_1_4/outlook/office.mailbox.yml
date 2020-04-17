@@ -1056,7 +1056,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <string>) => void
@@ -1067,7 +1067,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <string>) => void
@@ -1129,7 +1129,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <string>) => void

@@ -30,7 +30,7 @@ items:
       content: 'officeTheme: Office.OfficeTheme;'
       return:
         type:
-          - 'outlook!Office.OfficeTheme:interface'
+          - 'office!Office.OfficeTheme:interface'
   - uid: 'outlook!Office.OfficeThemeChangedEventArgs#type:member'
     summary: |-
       Gets the type of the event. See `Office.EventType` for details.
@@ -48,5 +48,5 @@ items:
         type:
           - '"officeThemeChanged"'
 references:
-  - uid: 'outlook!Office.OfficeTheme:interface'
+  - uid: 'office!Office.OfficeTheme:interface'
     name: Office.OfficeTheme

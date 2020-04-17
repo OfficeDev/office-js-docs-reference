@@ -62,7 +62,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. `asyncContext`<!-- -->:
             Developers can provide any object they wish to access in the callback method.
           type:
-            - 'outlook!Office.AsyncContextOptions:interface'
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
@@ -390,7 +390,7 @@ items:
           type:
             - 'outlook!Office.Body#setSelectedDataAsync~2:complex'
 references:
-  - uid: 'outlook!Office.AsyncContextOptions:interface'
+  - uid: 'office!Office.AsyncContextOptions:interface'
     name: Office.AsyncContextOptions
   - uid: 'outlook!Office.Body#getTypeAsync~0:complex'
     name: '(asyncResult: Office.AsyncResult<Office.CoercionType>) => void'
@@ -398,12 +398,12 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <
         fullName: <
-      - uid: 'outlook!Office.CoercionType:enum'
+      - uid: 'office!Office.CoercionType:enum'
         name: Office.CoercionType
         fullName: Office.CoercionType
       - name: '>) => void'
@@ -414,12 +414,12 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <
         fullName: <
-      - uid: 'outlook!Office.CoercionType:enum'
+      - uid: 'office!Office.CoercionType:enum'
         name: Office.CoercionType
         fullName: Office.CoercionType
       - name: '>) => void'
@@ -428,7 +428,7 @@ references:
     name: Office.AsyncContextOptions & CoercionTypeOptions
     fullName: Office.AsyncContextOptions & Office.CoercionTypeOptions
     spec.typeScript:
-      - uid: 'outlook!Office.AsyncContextOptions:interface'
+      - uid: 'office!Office.AsyncContextOptions:interface'
         name: Office.AsyncContextOptions
         fullName: Office.AsyncContextOptions
       - name: ' & '
@@ -442,7 +442,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <void>) => void
@@ -453,7 +453,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <void>) => void
@@ -462,7 +462,7 @@ references:
     name: Office.AsyncContextOptions & CoercionTypeOptions
     fullName: Office.AsyncContextOptions & Office.CoercionTypeOptions
     spec.typeScript:
-      - uid: 'outlook!Office.AsyncContextOptions:interface'
+      - uid: 'office!Office.AsyncContextOptions:interface'
         name: Office.AsyncContextOptions
         fullName: Office.AsyncContextOptions
       - name: ' & '
@@ -476,7 +476,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <void>) => void
@@ -487,7 +487,7 @@ references:
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
-      - uid: 'outlook!Office.AsyncResult:interface'
+      - uid: 'office!Office.AsyncResult:interface'
         name: Office.AsyncResult
         fullName: Office.AsyncResult
       - name: <void>) => void

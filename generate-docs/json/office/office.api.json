@@ -3695,7 +3695,7 @@
                     {
                       "kind": "Reference",
                       "text": "Outlook.Mailbox",
-                      "canonicalReference": "office!Office.Mailbox:interface"
+                      "canonicalReference": "outlook!Office.Mailbox:interface"
                     },
                     {
                       "kind": "Content",
@@ -3799,7 +3799,7 @@
                     {
                       "kind": "Reference",
                       "text": "Outlook.RoamingSettings",
-                      "canonicalReference": "office!Office.RoamingSettings:interface"
+                      "canonicalReference": "outlook!Office.RoamingSettings:interface"
                     },
                     {
                       "kind": "Content",
