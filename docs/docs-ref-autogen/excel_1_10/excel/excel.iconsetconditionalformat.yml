@@ -57,12 +57,17 @@ items:
       return:
         type:
           - 'excel!Excel.IconSetConditionalFormat#criteria~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B8:E13");
@@ -101,6 +106,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.IconSetConditionalFormat#load:member(1)'
     summary: >-
@@ -269,12 +275,17 @@ items:
       return:
         type:
           - 'excel!Excel.IconSetConditionalFormat#style~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B8:E13");
@@ -313,6 +324,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.IconSetConditionalFormat#toJSON:member(1)'
     summary: >-

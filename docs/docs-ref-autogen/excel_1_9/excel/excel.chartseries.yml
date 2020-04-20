@@ -206,12 +206,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-series.yaml
+
           await Excel.run(async (context) => {
             const sheet = context.workbook.worksheets.getItem("Sample");
             const seriesCollection = sheet.charts.getItemAt(0).series;
@@ -227,6 +232,7 @@ items:
 
             await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.ChartSeries#doughnutHoleSize:member'
     summary: >-
@@ -640,12 +646,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-series-markers.yaml
+
           await Excel.run(async (context) => {
               let sheet = context.workbook.worksheets.getItem("Sample");
               let salesTable = sheet.tables.getItem("SalesTable");
@@ -673,6 +684,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.ChartSeries#markerForegroundColor:member'
     summary: |-
@@ -689,12 +701,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-series-markers.yaml
+
           await Excel.run(async (context) => {
               let sheet = context.workbook.worksheets.getItem("Sample");
               let salesTable = sheet.tables.getItem("SalesTable");
@@ -722,6 +739,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.ChartSeries#markerSize:member'
     summary: |-
@@ -738,12 +756,17 @@ items:
       return:
         type:
           - number
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-series-markers.yaml
+
           await Excel.run(async (context) => {
               let sheet = context.workbook.worksheets.getItem("Sample");
               let salesTable = sheet.tables.getItem("SalesTable");
@@ -771,6 +794,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.ChartSeries#markerStyle:member'
     summary: |-
@@ -789,12 +813,17 @@ items:
       return:
         type:
           - 'excel!Excel.ChartSeries#markerStyle~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-series-markers.yaml
+
           await Excel.run(async (context) => {
               let sheet = context.workbook.worksheets.getItem("Sample");
               let salesTable = sheet.tables.getItem("SalesTable");
@@ -822,6 +851,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.ChartSeries#name:member'
     summary: |-
@@ -1001,12 +1031,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-series.yaml
+
           await Excel.run(async (context) => {
             const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -1021,6 +1056,7 @@ items:
 
             await context.sync();
           });
+
           ```
       parameters:
         - id: sourceData

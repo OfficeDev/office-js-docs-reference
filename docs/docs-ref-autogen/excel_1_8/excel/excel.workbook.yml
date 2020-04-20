@@ -146,12 +146,17 @@ items:
       return:
         type:
           - 'excel!Excel.Range:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/workbook-get-active-cell.yaml
+
           await Excel.run(async (context) => {
 
               let myWorkbook = context.workbook;
@@ -162,6 +167,7 @@ items:
               
               console.log("The active cell is " + activeCell.address);
           });
+
           ```
   - uid: 'excel!Excel.Workbook#getSelectedRange:member(1)'
     summary: >-
@@ -344,12 +350,17 @@ items:
       return:
         type:
           - 'excel!Excel.DocumentProperties:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/26-document/properties.yaml
+
           await Excel.run(async (context) => {
               let titleValue = "Excel document properties API";
               let subjectValue = "Set and get document properties";
@@ -374,6 +385,7 @@ items:
 
               console.log("Set the following document properties: title, subject, keywords, comments, category, manager, company.");
           });
+
           ```
   - uid: 'excel!Excel.Workbook#protection:member'
     summary: |-
@@ -483,12 +495,17 @@ items:
       return:
         type:
           - 'excel!Excel.StyleCollection:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+
           await Excel.run(async (context) => {
               let styles = context.workbook.styles;
 
@@ -509,6 +526,7 @@ items:
 
               console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
           });
+
           ```
   - uid: 'excel!Excel.Workbook#tables:member'
     summary: |-

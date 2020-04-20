@@ -33,12 +33,17 @@ items:
       return:
         type:
           - boolean
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
+
           await Excel.run(async (context) => {
               const cell = context.workbook.getActiveCell();
 
@@ -62,6 +67,7 @@ items:
               console.log(
                   `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
           });
+
           ```
   - uid: 'excel!Excel.CellPropertiesLoadOptions#addressLocal:member'
     summary: |-

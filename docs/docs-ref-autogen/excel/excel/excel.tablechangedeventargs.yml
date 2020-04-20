@@ -70,12 +70,17 @@ items:
       return:
         type:
           - 'excel!Excel.ChangedEventDetail:interface'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/data-change-event-details.yaml
+
           async function onTableChanged(eventArgs: Excel.TableChangedEventArgs) {
               await Excel.run(async (context) => {
                   const details = eventArgs.details;
@@ -85,6 +90,7 @@ items:
                     + ` now is ${details.valueAfter}(${details.valueTypeAfter})`);
               });
           }
+
           ```
   - uid: 'excel!Excel.TableChangedEventArgs#getRange:member(1)'
     summary: |-
@@ -158,12 +164,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-tablecollection-changed.yaml
+
           async function onChange(event) {
               await Excel.run(async (context) => {
                   let table = context.workbook.tables.getItem(event.tableId);
@@ -177,6 +188,7 @@ items:
                   console.log("Worksheet Id : " + worksheet.name);
               });
           }
+
           ```
   - uid: 'excel!Excel.TableChangedEventArgs#type:member'
     summary: |-
@@ -208,12 +220,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-tablecollection-changed.yaml
+
           async function onChange(event) {
               await Excel.run(async (context) => {
                   let table = context.workbook.tables.getItem(event.tableId);
@@ -227,6 +244,7 @@ items:
                   console.log("Worksheet Id : " + worksheet.name);
               });
           }
+
           ```
 references:
   - uid: 'excel!Excel.TableChangedEventArgs#changeType~0:complex'

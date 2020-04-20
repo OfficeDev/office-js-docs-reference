@@ -130,30 +130,48 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/culture-info.yaml
+
           // This will convert a number like "14,37" to "14.37"
+
           // (assuming the system decimal separator is ".").
             await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
+
           const decimalSource = sheet.getRange("B2");
+
           decimalSource.load("values");
+
           context.application.cultureInfo.numberFormat.load("numberDecimalSeparator");
+
           await context.sync();
 
+
           const systemDecimalSeparator = context.application.cultureInfo.numberFormat.numberDecimalSeparator;
+
           const oldDecimalString: string = decimalSource.values[0][0];
 
+
           // This assumes the input column is standardized to use "," as the decimal separator. 
+
           const newDecimalString = oldDecimalString.replace(",", systemDecimalSeparator);
 
+
           const resultRange = sheet.getRange("C2");
+
           resultRange.values = [[newDecimalString]];
+
           resultRange.format.autofitColumns();
+
           await context.sync();
             });
           ```
@@ -176,12 +194,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/culture-info.yaml
+
           await Excel.run(async (context) => {
             // This will convert a number like "123-456-789" to "123,456,789"
             // (assuming the system thousands separator is ",").
@@ -202,6 +225,7 @@ items:
             resultRange.format.autofitColumns();
             await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.NumberFormatInfo#toJSON:member(1)'
     summary: >-

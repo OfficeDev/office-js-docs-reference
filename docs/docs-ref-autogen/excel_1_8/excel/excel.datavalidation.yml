@@ -76,12 +76,17 @@ items:
       return:
         type:
           - 'excel!Excel.DataValidationErrorAlert:interface'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/22-data-validation/data-validation.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Decision");
               const commentsRange = 
@@ -109,6 +114,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.DataValidation#ignoreBlanks:member'
     summary: |-
@@ -210,12 +216,17 @@ items:
       return:
         type:
           - 'excel!Excel.DataValidationPrompt:interface'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/22-data-validation/data-validation.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Decision");
               const rankingRange = sheet.tables.getItem("NameOptionsTable").columns.getItem("Ranking").getDataBodyRange();
@@ -247,6 +258,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.DataValidation#rule:member'
     summary: |-
@@ -263,12 +275,17 @@ items:
       return:
         type:
           - 'excel!Excel.DataValidationRule:interface'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/22-data-validation/data-validation.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Decision");
               const nameRange = 
@@ -290,6 +307,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.DataValidation#set:member(1)'
     summary: >-

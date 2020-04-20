@@ -170,12 +170,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-auto-fill.yaml
+
           await Excel.run(async (context) => {
             const sheet = context.workbook.worksheets.getActiveWorksheet();
             const sumCell = sheet.getRange("P4");
@@ -185,6 +190,7 @@ items:
             sumCell.format.autofitColumns();
             await context.sync();
           });
+
           ```
       parameters:
         - id: destinationRange
@@ -469,12 +475,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-copyfrom.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               // Place a label in front of the copied data.
@@ -485,6 +496,7 @@ items:
               sheet.getRange("G2").copyFrom("A1:E1", Excel.RangeCopyType.formulas);
               await context.sync();
           });
+
           ```
       parameters:
         - id: sourceRange
@@ -637,12 +649,18 @@ items:
       return:
         type:
           - 'excel!Excel.Range:class'
-        description: |-
+        description: >-
           The Range object representing the first cell that contains a value matching the search text and criteria.
+
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-find.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const table = sheet.tables.getItem("ExpensesTable");
@@ -662,6 +680,7 @@ items:
 
               console.log(foundRange.address);
           });
+
           ```
       parameters:
         - id: text
@@ -692,12 +711,18 @@ items:
       return:
         type:
           - 'excel!Excel.Range:class'
-        description: |-
+        description: >-
           The Range which matched the search criteria.
+
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-find.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const table = sheet.tables.getItem("ExpensesTable");
@@ -717,6 +742,7 @@ items:
                   console.log(foundRange.address);
               }
           });
+
           ```
       parameters:
         - id: text
@@ -949,12 +975,18 @@ items:
       return:
         type:
           - 'excel!Excel.Range#getCellProperties~0:complex'
-        description: |-
+        description: >-
           A 2D array where each item represents the requested properties of the corresponding cell.
+
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
+
           await Excel.run(async (context) => {
               const cell = context.workbook.getActiveCell();
 
@@ -978,6 +1010,7 @@ items:
               console.log(
                   `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
           });
+
           ```
       parameters:
         - id: cellPropertiesLoadOptions
@@ -1262,12 +1295,17 @@ items:
       return:
         type:
           - 'excel!Excel.Range:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-relationships.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const salesTable = sheet.tables.getItem("SalesTable");
@@ -1322,6 +1360,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: anotherRange
@@ -1652,12 +1691,17 @@ items:
       return:
         type:
           - 'excel!Excel.RangeAreas:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-areas.yaml
+
           await Excel.run(async (context) => {
 
               const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -1669,6 +1713,7 @@ items:
 
               return context.sync();
           });
+
           ```
       parameters:
         - id: cellType
@@ -1849,12 +1894,17 @@ items:
       return:
         type:
           - 'excel!Excel.Range:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-relationships.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const salesTable = sheet.tables.getItem("SalesTable");
@@ -1909,6 +1959,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: valuesOnly
@@ -1932,12 +1983,17 @@ items:
       return:
         type:
           - 'excel!Excel.Range:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/used-range.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const salesTable = sheet.tables.getItem("SalesTable");
@@ -1970,6 +2026,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: valuesOnly
@@ -2022,12 +2079,17 @@ items:
       return:
         type:
           - 'excel!Excel.RangeHyperlink:interface'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-hyperlink.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Orders");
 
@@ -2052,6 +2114,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Range#insert:member(1)'
     summary: >-
@@ -2314,12 +2377,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-copyfrom.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               // Place a label in front of the moved data.
@@ -2329,6 +2397,7 @@ items:
               sheet.getRange("A1:E1").moveTo("G12");
               await context.sync();
           });
+
           ```
       parameters:
         - id: destinationRange
@@ -2411,12 +2480,18 @@ items:
       return:
         type:
           - 'excel!Excel.RemoveDuplicatesResult:class'
-        description: |-
+        description: >-
           The resulting object that contains the number of rows removed and the number of remaining unique rows.
+
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-remove-duplicates.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const range = sheet.getRange("B2:D11");
@@ -2428,6 +2503,7 @@ items:
               console.log(deleteResult.removed + " entries with duplicate names removed.");
               console.log(deleteResult.uniqueRemaining + " entries with unique names remain in the range.");
           });
+
           ```
       parameters:
         - id: columns
@@ -2554,14 +2630,21 @@ items:
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
-    remarks: |-
+    remarks: >-
       This method has the following additional signature:
+
 
       `set(properties: Excel.Range): void`
 
+
       #### Examples
 
+
       ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/90-scenarios/multiple-property-set.yaml
+
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -2580,8 +2663,14 @@ items:
           range.format.autofitColumns();
           await context.sync();
       });
+
       ```
+
       ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/90-scenarios/multiple-property-set.yaml
+
       await Excel.run(async (context) => {
           const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -2596,6 +2685,7 @@ items:
           targetRange.format.autofitColumns();
           await context.sync();
       });
+
       ```
     name: 'set(properties, options)'
     fullName: 'set(properties, options)'
@@ -2654,12 +2744,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/cell-properties.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getActiveWorksheet();
 
@@ -2731,6 +2826,7 @@ items:
               sheet.getUsedRange().format.autofitColumns();
               await context.sync();
           });
+
           ```
       parameters:
         - id: cellPropertiesData
@@ -2830,12 +2926,17 @@ items:
       return:
         type:
           - 'excel!Excel.RangeSort:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-column-and-row-sort.yaml
+
           async function sortTopToBottom(criteria: string) {
               await Excel.run(async (context) => {
                   const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -2860,6 +2961,7 @@ items:
                   await context.sync();
               });
           }
+
           ```
   - uid: 'excel!Excel.Range#style:member'
     summary: >-
@@ -2879,12 +2981,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/style.yaml
+
           await Excel.run(async (context) => {
               let worksheet = context.workbook.worksheets.getItem("Sample");
               let range = worksheet.getRange("A1:E1");
@@ -2896,6 +3003,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Range#text:member'
     summary: >-

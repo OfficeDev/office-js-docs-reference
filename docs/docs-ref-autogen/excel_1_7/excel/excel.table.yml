@@ -490,12 +490,17 @@ items:
       return:
         type:
           - 'excel!Excel.Table#onChanged~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-table-changed.yaml
+
           await Excel.run(async (context) => {
               let table = context.workbook.tables.getItemAt(0);
               table.onChanged.add(onChange);
@@ -503,6 +508,7 @@ items:
               await context.sync();
               console.log("A handler has been registered for the onChanged event");
           });
+
           ```
   - uid: 'excel!Excel.Table#onSelectionChanged:member'
     summary: |-
@@ -519,12 +525,17 @@ items:
       return:
         type:
           - 'excel!Excel.Table#onSelectionChanged~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-table-changed.yaml
+
           await Excel.run(async (context) => {
               let table = context.workbook.tables.getItemAt(0);
               table.onSelectionChanged.add(onSelectionChange);
@@ -532,6 +543,7 @@ items:
               await context.sync();
               console.log("A handler has been registered for table onSelectionChanged event");
           });
+
           ```
   - uid: 'excel!Excel.Table#reapplyFilters:member(1)'
     summary: |-

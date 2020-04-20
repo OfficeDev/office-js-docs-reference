@@ -79,12 +79,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-replies.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Comments");
               const comment = sheet.comments.getItemAt(0);
@@ -97,6 +102,7 @@ items:
               reply.content += " Please!";
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.CommentReply#contentType:member'
     summary: >-
@@ -160,12 +166,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-replies.yaml
+
           await Excel.run(async (context) => {
               // Remove the first comment reply from this worksheet's first comment.
               const sheet = context.workbook.worksheets.getItem("Comments");
@@ -173,6 +184,7 @@ items:
               comment.replies.getItemAt(0).delete();
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.CommentReply#getLocation:member(1)'
     summary: |-

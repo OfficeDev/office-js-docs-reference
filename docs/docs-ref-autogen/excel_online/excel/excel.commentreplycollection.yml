@@ -40,12 +40,17 @@ items:
       return:
         type:
           - 'excel!Excel.CommentReply:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/12-comment/comment-replies.yaml
+
           await Excel.run(async (context) => {
               // Adds a reply to the first comment in this worksheet.
               const sheet = context.workbook.worksheets.getItem("Comments");
@@ -53,6 +58,7 @@ items:
               comment.replies.add("Add content to this worksheet.");
               await context.sync();
           });
+
           ```
       parameters:
         - id: content

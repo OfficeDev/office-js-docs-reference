@@ -31,12 +31,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-hyperlink.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Orders");
 
@@ -61,6 +66,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.RangeHyperlink#documentReference:member'
     summary: |-
@@ -77,12 +83,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-hyperlink.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Orders");
 
@@ -107,6 +118,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.RangeHyperlink#screenTip:member'
     summary: |-
@@ -123,12 +135,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-hyperlink.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Orders");
 
@@ -153,6 +170,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.RangeHyperlink#textToDisplay:member'
     summary: |-
@@ -169,12 +187,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-hyperlink.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Orders");
 
@@ -199,4 +222,5 @@ items:
 
               await context.sync();
           });
+
           ```

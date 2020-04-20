@@ -126,12 +126,17 @@ items:
       return:
         type:
           - 'excel!Excel.AutoFilter:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getActiveWorksheet();
               const farmData = sheet.getUsedRange();
@@ -140,6 +145,7 @@ items:
               sheet.autoFilter.apply(farmData, 3, { criterion1: "25", filterOn: Excel.FilterOn.topPercent });
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Worksheet#calculate:member(1)'
     summary: |-
@@ -221,12 +227,18 @@ items:
       return:
         type:
           - 'excel!Excel.Worksheet:class'
-        description: |-
+        description: >-
           The newly created worksheet.
+
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-copy.yaml
+
           await Excel.run(async (context) => {
 
               let myWorkbook = context.workbook;
@@ -240,6 +252,7 @@ items:
 
               console.log("'" + sampleSheet.name + "' was copied to '" + copiedSheet.name + "'")
           });
+
           ```
       parameters:
         - id: positionType
@@ -414,6 +427,9 @@ items:
 
           ```typescript
 
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-find-all.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
               const foundRanges = sheet.findAllOrNullObject("Complete", {
@@ -521,12 +537,17 @@ items:
       return:
         type:
           - 'excel!Excel.Worksheet:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+
           await Excel.run(async (context) => {
               const sheets = context.workbook.worksheets;
 
@@ -551,6 +572,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: visibleOnly
@@ -595,12 +617,17 @@ items:
       return:
         type:
           - 'excel!Excel.Worksheet:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/reference-worksheets-by-relative-position.yaml
+
           await Excel.run(async (context) => {
               const sheets = context.workbook.worksheets;
               const currentSheet = sheets.getActiveWorksheet();
@@ -621,6 +648,7 @@ items:
 
               await context.sync();
           });
+
           ```
       parameters:
         - id: visibleOnly
@@ -764,12 +792,17 @@ items:
       return:
         type:
           - 'excel!Excel.RangeAreas:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-areas.yaml
+
           await Excel.run(async (context) => {
 
               const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -778,6 +811,7 @@ items:
 
               await context.sync();
           })
+
           ```
       parameters:
         - id: address
@@ -1085,12 +1119,17 @@ items:
       return:
         type:
           - 'excel!Excel.Worksheet#onChanged~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-worksheet.yaml
+
           await Excel.run(async (context) => {
               let sheet = context.workbook.worksheets.getItem("Sample");
               sheet.onChanged.add(onChange);
@@ -1098,6 +1137,7 @@ items:
 
               console.log("Added a worksheet-level data-changed event handler.");
           });
+
           ```
   - uid: 'excel!Excel.Worksheet#onColumnSorted:member'
     summary: |-
@@ -1114,12 +1154,17 @@ items:
       return:
         type:
           - 'excel!Excel.Worksheet#onColumnSorted~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-column-and-row-sort.yaml
+
           await Excel.run(async (context) => {
               console.log("Adding column handler");
               const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -1140,6 +1185,7 @@ items:
                   });
               });
           });
+
           ```
   - uid: 'excel!Excel.Worksheet#onDeactivated:member'
     summary: |-
@@ -1256,12 +1302,17 @@ items:
       return:
         type:
           - 'excel!Excel.Worksheet#onRowSorted~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-column-and-row-sort.yaml
+
           await Excel.run(async (context) => {
               console.log("Adding row handler");
               const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -1282,6 +1333,7 @@ items:
                   });
               });
           });
+
           ```
   - uid: 'excel!Excel.Worksheet#onSelectionChanged:member'
     summary: |-
@@ -1338,12 +1390,17 @@ items:
       return:
         type:
           - 'excel!Excel.Worksheet#onSingleClicked~0:complex'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/event-worksheet-single-click.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getActiveWorksheet();
               sheet.onSingleClicked.add((event) => {
@@ -1357,6 +1414,7 @@ items:
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Worksheet#pageLayout:member'
     summary: |-
@@ -1583,18 +1641,24 @@ items:
       return:
         type:
           - boolean
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/gridlines.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getActiveWorksheet();
               sheet.showGridlines = true;
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Worksheet#showHeadings:member'
     summary: |-
@@ -1630,12 +1694,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/outline.yaml
+
           Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getActiveWorksheet();
 
@@ -1643,8 +1712,14 @@ items:
               sheet.showOutlineLevels(1, 1);
               await context.sync();
           });
+
           ```
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/outline.yaml
+
           Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getActiveWorksheet();
 
@@ -1652,6 +1727,7 @@ items:
               sheet.showOutlineLevels(3, 3);
               await context.sync();
           });
+
           ```
       parameters:
         - id: rowLevels
@@ -1677,12 +1753,17 @@ items:
       return:
         type:
           - 'excel!Excel.SlicerCollection:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/38-pivottable/pivottable-slicer.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Pivot");
               const slicer = sheet.slicers.add(
@@ -1692,6 +1773,7 @@ items:
               slicer.name = "Fruit Slicer";
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Worksheet#standardHeight:member'
     summary: |-
@@ -1745,18 +1827,24 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/tab-color.yaml
+
           await Excel.run(async (context) => {
               const activeSheet = context.workbook.worksheets.getActiveWorksheet();
               activeSheet.tabColor = "#FF0000";
 
               await context.sync();
           });
+
           ```
   - uid: 'excel!Excel.Worksheet#tables:member'
     summary: |-

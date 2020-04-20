@@ -51,12 +51,17 @@ items:
       return:
         type:
           - 'excel!Excel.ChartLineFormat:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-trendlines.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -71,8 +76,14 @@ items:
 
               console.log("The trendline color is:" + line.color);
           });
+
           ```
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/10-chart/chart-trendlines.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Sample");
 
@@ -87,6 +98,7 @@ items:
 
               console.log("The trendline color has been set to:" + line.color);
           });
+
           ```
   - uid: 'excel!Excel.ChartTrendlineFormat#load:member(1)'
     summary: >-

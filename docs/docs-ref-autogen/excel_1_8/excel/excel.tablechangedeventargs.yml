@@ -124,12 +124,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-tablecollection-changed.yaml
+
           async function onChange(event) {
               await Excel.run(async (context) => {
                   let table = context.workbook.tables.getItem(event.tableId);
@@ -143,6 +148,7 @@ items:
                   console.log("Worksheet Id : " + worksheet.name);
               });
           }
+
           ```
   - uid: 'excel!Excel.TableChangedEventArgs#type:member'
     summary: |-
@@ -174,12 +180,17 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/30-events/events-tablecollection-changed.yaml
+
           async function onChange(event) {
               await Excel.run(async (context) => {
                   let table = context.workbook.tables.getItem(event.tableId);
@@ -193,6 +204,7 @@ items:
                   console.log("Worksheet Id : " + worksheet.name);
               });
           }
+
           ```
 references:
   - uid: 'excel!Excel.TableChangedEventArgs#changeType~0:complex'

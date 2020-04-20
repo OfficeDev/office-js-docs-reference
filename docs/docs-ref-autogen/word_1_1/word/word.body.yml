@@ -875,12 +875,17 @@ items:
       return:
         type:
           - 'word!Word.ParagraphCollection:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/get-word-count.yaml
+
           await Word.run(async (context) => {
             let paragraphs = context.document.body.paragraphs;
             paragraphs.load("text");
@@ -925,6 +930,7 @@ items:
               console.log("Search term: " + result.searchTerm + " => Count: " + length);
             });
           });
+
           ```
   - uid: 'word!Word.Body#parentContentControl:member'
     summary: >-
@@ -969,12 +975,17 @@ items:
       return:
         type:
           - 'word!Word.RangeCollection:class'
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/search.yaml
+
           await Word.run(async (context) => {
             let results = context.document.body.search("Online");
             results.load("length");
@@ -988,8 +999,14 @@ items:
 
             await context.sync();
           });
+
           ```
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/search.yaml
+
           await Word.run(async (context) => {
             // Check out how wildcard expression are built, also use the second parameter of the search method to include search modes
             // (i.e. use wildcards).
@@ -1006,8 +1023,14 @@ items:
 
             await context.sync();
           });
+
           ```
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/word/25-paragraph/get-word-count.yaml
+
           await Word.run(async (context) => {
             let paragraphs = context.document.body.paragraphs;
             paragraphs.load("text");
@@ -1052,6 +1075,7 @@ items:
               console.log("Search term: " + result.searchTerm + " => Count: " + length);
             });
           });
+
           ```
       parameters:
         - id: searchText

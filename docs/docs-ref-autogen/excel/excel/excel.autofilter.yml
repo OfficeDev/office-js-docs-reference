@@ -45,12 +45,17 @@ items:
       return:
         type:
           - void
-        description: |-
+        description: >-
 
 
           #### Examples
 
+
           ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-auto-filter.yaml
+
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getActiveWorksheet();
               const farmData = sheet.getUsedRange();
@@ -59,6 +64,7 @@ items:
               sheet.autoFilter.apply(farmData, 3, { criterion1: "25", filterOn: Excel.FilterOn.topPercent });
               await context.sync();
           });
+
           ```
       parameters:
         - id: range
