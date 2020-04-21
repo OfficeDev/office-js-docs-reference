@@ -11321,7 +11321,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "office!Office.EventType.AppointmentTimeChanged:member",
-                  "docComment": "/**\n * Triggers when any date or time of the selected appointment or series is changed in Outlook. Supported with task pane only.\n *\n * The event handler receives an argument of type `Office.AppointmentTimeChangedEventArgs`.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "docComment": "/**\n * Triggers when any date or time of the selected appointment or series is changed in Outlook. Supported with task pane only.\n *\n * The event handler receives an argument of type {@link https://docs.microsoft.com/javascript/api/outlook/office.appointmenttimechangedeventargs?view=outlook-js-1.7 | Office.AppointmentTimeChangedEventArgs}.\n *\n * [Api set: Mailbox 1.7]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11338,7 +11338,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "office!Office.EventType.AttachmentsChanged:member",
-                  "docComment": "/**\n * Triggers when an attachment is added to or removed from an item. Supported with task pane only.\n *\n * The event handler receives an argument of type `Office.AttachmentsChangedEventArgs`.\n *\n * [Api set: Mailbox 1.8]\n */\n",
+                  "docComment": "/**\n * Triggers when an attachment is added to or removed from an item. Supported with task pane only.\n *\n * The event handler receives an argument of type {@link https://docs.microsoft.com/javascript/api/outlook/office.attachmentschangedeventargs?view=outlook-js-1.8 | Office.AttachmentsChangedEventArgs}.\n *\n * [Api set: Mailbox 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11457,7 +11457,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "office!Office.EventType.EnhancedLocationsChanged:member",
-                  "docComment": "/**\n * Triggers when the appointment location is changed in Outlook. Supported with task pane only.\n *\n * The event handler receives an argument of type `Office.EnhancedLocationsChangedEventArgs`.\n *\n * [Api set: Mailbox 1.8]\n */\n",
+                  "docComment": "/**\n * Triggers when the appointment location is changed in Outlook. Supported with task pane only.\n *\n * The event handler receives an argument of type {@link https://docs.microsoft.com/javascript/api/outlook/office.enhancedlocationschangedeventargs?view=outlook-js-1.8 | Office.EnhancedLocationsChangedEventArgs}.\n *\n * [Api set: Mailbox 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11542,7 +11542,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "office!Office.EventType.OfficeThemeChanged:member",
-                  "docComment": "/**\n * Triggers when the OfficeTheme is changed in Outlook. Supported with task pane only.\n *\n * The event handler receives an argument of type `Office.OfficeThemeChangedEventArgs`.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Triggers when the OfficeTheme is changed in Outlook. Supported with task pane only.\n *\n * The event handler receives an argument of type {@link https://docs.microsoft.com/javascript/api/outlook/office.officethemechangedeventargs?view=outlook-js-preview | Office.OfficeThemeChangedEventArgs}.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11559,7 +11559,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "office!Office.EventType.RecipientsChanged:member",
-                  "docComment": "/**\n * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook. Supported with task pane only.\n *\n * The event handler receives an argument of type `Office.RecipientsChangedEventArgs`.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "docComment": "/**\n * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook. Supported with task pane only.\n *\n * The event handler receives an argument of type {@link https://docs.microsoft.com/javascript/api/outlook/office.recipientschangedeventargs?view=outlook-js-1.7 | Office.RecipientsChangedEventArgs}.\n *\n * [Api set: Mailbox 1.7]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11576,7 +11576,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "office!Office.EventType.RecurrenceChanged:member",
-                  "docComment": "/**\n * Triggers when the recurrence pattern of the selected series is changed in Outlook. Supported with task pane only.\n *\n * The event handler receives an argument of type `Office.RecurrenceChangedEventArgs`.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "docComment": "/**\n * Triggers when the recurrence pattern of the selected series is changed in Outlook. Supported with task pane only.\n *\n * The event handler receives an argument of type {@link https://docs.microsoft.com/javascript/api/outlook/office.recurrencechangedeventargs?view=outlook-js-1.7 | Office.RecurrenceChangedEventArgs}.\n *\n * [Api set: Mailbox 1.7]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
