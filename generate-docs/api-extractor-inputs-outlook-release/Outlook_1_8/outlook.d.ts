@@ -4184,6 +4184,14 @@ export declare namespace Office {
      *
      * @remarks
      * 
+     * Currently, the underlying infrastructure for this feature limits the cumulative number of named properties on a user's mailbox. When the quota
+     * is exhausted, you can't create any more named properties on that mailbox, which can result in unexpected behavior from clients that rely on
+     * named properties to function. Due to this limitation, we recommend the following guidelines as you design and implement your add-in.
+     * 
+     * - Create the minimum number of headers required for your scenarios.
+     * 
+     * - Name headers such that you can reuse and update their values later.
+     * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
      * 
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
