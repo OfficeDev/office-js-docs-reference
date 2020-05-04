@@ -34,7 +34,7 @@ references:
     name: OfficeExtension.RunOptions<Session>
     fullName: OfficeExtension.RunOptions<Excel.Session>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.RunOptions:interface'
+      - uid: 'office!OfficeExtension.RunOptions:interface'
         name: OfficeExtension.RunOptions
         fullName: OfficeExtension.RunOptions
       - name: <

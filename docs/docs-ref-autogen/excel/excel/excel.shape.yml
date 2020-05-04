@@ -14,7 +14,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Shape#altTextDescription:member'
@@ -1076,7 +1076,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.Shape#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -1274,7 +1274,7 @@ items:
         type:
           - number
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -1366,7 +1366,7 @@ references:
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <string>
@@ -1377,7 +1377,7 @@ references:
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <string>
@@ -1396,7 +1396,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.ShapeActivatedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.ShapeActivatedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -1410,7 +1410,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.ShapeDeactivatedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.ShapeDeactivatedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -1435,7 +1435,7 @@ references:
     name: Excel.ShapeScaleFrom
   - uid: 'excel!Excel.Interfaces.ShapeUpdateData:interface'
     name: Interfaces.ShapeUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.ShapeZOrder:enum'
     name: Excel.ShapeZOrder

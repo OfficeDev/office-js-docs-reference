@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TableSort#apply:member(1)'
@@ -288,7 +288,7 @@ items:
           - 'excel!Excel.Interfaces.TableSortData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.TableSort#apply~0:complex'
     name: 'Excel.SortField[]'

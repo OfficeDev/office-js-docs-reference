@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartCollection#add:member(1)'
@@ -383,7 +383,7 @@ items:
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type:
-            - 'excel!OfficeExtension.LoadOption:interface'
+            - 'office!OfficeExtension.LoadOption:interface'
   - uid: 'excel!Excel.ChartCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -403,7 +403,7 @@ items:
           - 'excel!Excel.Interfaces.ChartCollectionData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Chart:class'
     name: Excel.Chart
@@ -419,7 +419,7 @@ references:
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <number>
@@ -447,7 +447,7 @@ references:
       - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
         name: Excel.Interfaces.CollectionLoadOptions
         fullName: Excel.Interfaces.CollectionLoadOptions
-  - uid: 'excel!OfficeExtension.LoadOption:interface'
+  - uid: 'office!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.ChartCollectionData:interface'
     name: Excel.Interfaces.ChartCollectionData

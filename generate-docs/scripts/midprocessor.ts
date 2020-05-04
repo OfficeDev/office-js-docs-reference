@@ -38,6 +38,26 @@ tryCatch(async () => {
 
     console.log("\nCompleted Outlook json cross-referencing cleanup");
 
+    console.log("\nCleaning up Excel json cross-referencing...");
+
+    const excelJsonPath = path.resolve("../json/excel");
+    const excelFilename = "excel.api.json";
+    console.log("\nStarting excel...");
+    let excelJson = fsx.readFileSync(`${excelJsonPath}/${excelFilename}`).toString();
+    fsx.writeFileSync(`${excelJsonPath}/${excelFilename}`, cleanUpExcelJson(excelJson));
+    excelJson = fsx.readFileSync(`${excelJsonPath}_online/${excelFilename}`).toString();
+    fsx.writeFileSync(`${excelJsonPath}_online/${excelFilename}`, cleanUpExcelJson(excelJson));
+    console.log("\Completed excel");
+    for (let i = CURRENT_OUTLOOK_RELEASE; i > 0; i--) {
+        console.log(`\nStarting excel${i}...`);
+        excelJson = fsx.readFileSync(`${excelJsonPath}_1_${i}/${excelFilename}`).toString();
+        fsx.writeFileSync(`${excelJsonPath}_1_${i}/${excelFilename}`, cleanUpExcelJson(excelJson));
+        console.log(`\Completed excel${i}`);
+    }
+
+    console.log("\nCompleted Excel json cross-referencing cleanup");
+
+
     // ----
     // Process Snippets
     // ----
@@ -211,6 +231,10 @@ function cleanUpOutlookJson(jsonString : string) {
         startSearchIndex = jsonString.indexOf(commonApiSearchString, outlookIndex + 8);
     } while (startSearchIndex >= 0);
     return jsonString;
+}
+
+function cleanUpExcelJson(jsonString : string) {
+    return jsonString.replace(/excel\!OfficeExtension/g, "office!OfficeExtension");
 }
 
 async function tryCatch(call: () => Promise<void>) {

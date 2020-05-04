@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartSeries#axisGroup:member'
@@ -1029,7 +1029,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.ChartSeries#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -1312,7 +1312,7 @@ items:
         type:
           - 'excel!Excel.ChartErrorBars:class'
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ChartSeries#axisGroup~0:complex'
     name: Excel.ChartAxisGroup | "Primary" | "Secondary"
@@ -1374,7 +1374,7 @@ references:
     name: 'OfficeExtension.ClientResult<string[]>'
     fullName: 'OfficeExtension.ClientResult<string[]>'
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: '<string[]>'
@@ -1385,7 +1385,7 @@ references:
     name: 'OfficeExtension.ClientResult<string[]>'
     fullName: 'OfficeExtension.ClientResult<string[]>'
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: '<string[]>'
@@ -1458,7 +1458,7 @@ references:
     name: Excel.ChartPointsCollection
   - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData:interface'
     name: Interfaces.ChartSeriesUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Range:class'
     name: Range

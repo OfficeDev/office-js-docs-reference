@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Filter#apply:member(1)'
@@ -473,7 +473,7 @@ items:
           - 'excel!Excel.Interfaces.FilterData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.FilterCriteria:interface'
     name: Excel.FilterCriteria

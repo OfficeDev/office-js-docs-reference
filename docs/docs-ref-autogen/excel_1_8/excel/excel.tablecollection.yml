@@ -13,7 +13,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TableCollection#add:member(1)'
@@ -339,7 +339,7 @@ items:
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type:
-            - 'excel!OfficeExtension.LoadOption:interface'
+            - 'office!OfficeExtension.LoadOption:interface'
   - uid: 'excel!Excel.TableCollection#onChanged:member'
     summary: |-
       Occurs when data changes on any table in a workbook, or a worksheet.
@@ -394,7 +394,7 @@ items:
           - 'excel!Excel.Interfaces.TableCollectionData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Table:class'
     name: Excel.Table
@@ -413,7 +413,7 @@ references:
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <number>
@@ -441,13 +441,13 @@ references:
       - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
         name: Excel.Interfaces.CollectionLoadOptions
         fullName: Excel.Interfaces.CollectionLoadOptions
-  - uid: 'excel!OfficeExtension.LoadOption:interface'
+  - uid: 'office!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.TableCollection#onChanged~0:complex'
     name: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
