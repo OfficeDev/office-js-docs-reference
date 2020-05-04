@@ -14,7 +14,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Worksheet#activate:member(1)'
@@ -1352,7 +1352,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.Worksheet#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -1572,7 +1572,7 @@ items:
         type:
           - 'excel!Excel.Worksheet#visibility~0:complex'
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.AutoFilter:class'
     name: Excel.AutoFilter
@@ -1602,7 +1602,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -1616,7 +1616,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -1630,7 +1630,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -1644,7 +1644,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -1658,7 +1658,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -1672,7 +1672,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -1692,7 +1692,7 @@ references:
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <number>
@@ -1701,7 +1701,7 @@ references:
     name: Excel.ReplaceCriteria
   - uid: 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
     name: Interfaces.WorksheetUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.ShapeCollection:class'
     name: Excel.ShapeCollection

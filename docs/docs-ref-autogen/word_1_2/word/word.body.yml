@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'word!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.Body#clear:member(1)'
@@ -1274,7 +1274,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'word!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'word!Word.Body#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -1408,7 +1408,7 @@ items:
           - 'word!Word.Body:class'
         description: ''
 references:
-  - uid: 'word!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.ContentControlCollection:class'
     name: Word.ContentControlCollection
@@ -1420,7 +1420,7 @@ references:
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
     spec.typeScript:
-      - uid: 'word!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <string>
@@ -1429,7 +1429,7 @@ references:
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
     spec.typeScript:
-      - uid: 'word!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <string>
@@ -1505,7 +1505,7 @@ references:
     name: Word.SelectionMode
   - uid: 'word!Word.Interfaces.BodyUpdateData:interface'
     name: Interfaces.BodyUpdateData
-  - uid: 'word!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.BodyData:interface'
     name: Word.Interfaces.BodyData

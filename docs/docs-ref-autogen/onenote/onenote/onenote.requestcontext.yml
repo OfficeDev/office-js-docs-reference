@@ -7,7 +7,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'onenote!OfficeExtension.ClientRequestContext:class'
+      - 'office!OfficeExtension.ClientRequestContext:class'
     package: onenote!
     children:
       - 'onenote!OneNote.RequestContext:constructor(1)'
@@ -38,7 +38,7 @@ items:
         type:
           - 'onenote!OneNote.Application:class'
 references:
-  - uid: 'onenote!OfficeExtension.ClientRequestContext:class'
+  - uid: 'office!OfficeExtension.ClientRequestContext:class'
     name: OfficeExtension.ClientRequestContext
   - uid: 'onenote!OneNote.Application:class'
     name: Application

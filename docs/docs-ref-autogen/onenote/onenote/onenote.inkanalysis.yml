@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'onenote!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.InkAnalysis#context:member'
@@ -204,7 +204,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'onenote!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'onenote!OneNote.InkAnalysis#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -277,7 +277,7 @@ items:
           - 'onenote!OneNote.InkAnalysis:class'
         description: ''
 references:
-  - uid: 'onenote!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
@@ -289,7 +289,7 @@ references:
     name: OneNote.Page
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisUpdateData:interface'
     name: Interfaces.InkAnalysisUpdateData
-  - uid: 'onenote!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'onenote!OneNote.Interfaces.InkAnalysisData:interface'
     name: OneNote.Interfaces.InkAnalysisData

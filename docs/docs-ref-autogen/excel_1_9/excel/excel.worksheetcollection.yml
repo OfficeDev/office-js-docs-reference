@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.WorksheetCollection#add:member(1)'
@@ -401,7 +401,7 @@ items:
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type:
-            - 'excel!OfficeExtension.LoadOption:interface'
+            - 'office!OfficeExtension.LoadOption:interface'
   - uid: 'excel!Excel.WorksheetCollection#onActivated:member'
     summary: |-
       Occurs when any worksheet in the workbook is activated.
@@ -601,7 +601,7 @@ items:
           - 'excel!Excel.Interfaces.WorksheetCollectionData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Worksheet:class'
     name: Excel.Worksheet
@@ -611,7 +611,7 @@ references:
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <number>
@@ -639,13 +639,13 @@ references:
       - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
         name: Excel.Interfaces.CollectionLoadOptions
         fullName: Excel.Interfaces.CollectionLoadOptions
-  - uid: 'excel!OfficeExtension.LoadOption:interface'
+  - uid: 'office!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.WorksheetCollection#onActivated~0:complex'
     name: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -659,7 +659,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetAddedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetAddedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -673,7 +673,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -687,7 +687,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -701,7 +701,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -715,7 +715,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -729,7 +729,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -743,7 +743,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <

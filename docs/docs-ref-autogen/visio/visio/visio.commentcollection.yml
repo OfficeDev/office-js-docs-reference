@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'visio!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: visio!
     children:
       - 'visio!Visio.CommentCollection#context:member'
@@ -191,7 +191,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'visio!OfficeExtension.LoadOption:interface'
+            - 'office!OfficeExtension.LoadOption:interface'
   - uid: 'visio!Visio.CommentCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -211,7 +211,7 @@ items:
           - 'visio!Visio.Interfaces.CommentCollectionData:interface'
         description: ''
 references:
-  - uid: 'visio!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'visio!Visio.RequestContext:class'
     name: RequestContext
@@ -219,7 +219,7 @@ references:
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
     spec.typeScript:
-      - uid: 'visio!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <number>
@@ -249,7 +249,7 @@ references:
       - uid: 'visio!Visio.Interfaces.CollectionLoadOptions:interface'
         name: Visio.Interfaces.CollectionLoadOptions
         fullName: Visio.Interfaces.CollectionLoadOptions
-  - uid: 'visio!OfficeExtension.LoadOption:interface'
+  - uid: 'office!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'visio!Visio.Interfaces.CommentCollectionData:interface'
     name: Visio.Interfaces.CommentCollectionData

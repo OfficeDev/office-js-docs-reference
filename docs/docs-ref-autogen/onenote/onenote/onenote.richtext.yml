@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'onenote!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.RichText#context:member'
@@ -313,7 +313,7 @@ items:
           - 'onenote!OneNote.RichText:class'
         description: ''
 references:
-  - uid: 'onenote!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
@@ -321,7 +321,7 @@ references:
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
     spec.typeScript:
-      - uid: 'onenote!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <string>

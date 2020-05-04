@@ -16,7 +16,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Range#address:member'
@@ -2708,7 +2708,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.Range#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -3180,7 +3180,7 @@ items:
         type:
           - 'excel!Excel.Worksheet:class'
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Range#autoFill~0:complex'
     name: Range | string
@@ -3261,7 +3261,7 @@ references:
     name: 'OfficeExtension.ClientResult<CellProperties[][]>'
     fullName: 'OfficeExtension.ClientResult<Excel.CellProperties[][]>'
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <
@@ -3277,7 +3277,7 @@ references:
     name: 'OfficeExtension.ClientResult<ColumnProperties[]>'
     fullName: 'OfficeExtension.ClientResult<Excel.ColumnProperties[]>'
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <
@@ -3293,7 +3293,7 @@ references:
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <string>
@@ -3320,7 +3320,7 @@ references:
     name: 'OfficeExtension.ClientResult<RowProperties[]>'
     fullName: 'OfficeExtension.ClientResult<Excel.RowProperties[]>'
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <
@@ -3372,7 +3372,7 @@ references:
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <number>
@@ -3381,7 +3381,7 @@ references:
     name: Excel.ReplaceCriteria
   - uid: 'excel!Excel.Interfaces.RangeUpdateData:interface'
     name: Interfaces.RangeUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Range#setCellProperties~0:complex'
     name: 'SettableCellProperties[][]'

@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'word!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.Range#clear:member(1)'
@@ -1655,7 +1655,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'word!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'word!Word.Range#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -1865,13 +1865,13 @@ items:
           - 'word!Word.Range:class'
         description: ''
 references:
-  - uid: 'word!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.Range#compareLocationWith~0:complex'
     name: OfficeExtension.ClientResult<Word.LocationRelation>
     fullName: OfficeExtension.ClientResult<Word.LocationRelation>
     spec.typeScript:
-      - uid: 'word!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <
@@ -1893,7 +1893,7 @@ references:
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
     spec.typeScript:
-      - uid: 'word!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <string>
@@ -1904,7 +1904,7 @@ references:
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
     spec.typeScript:
-      - uid: 'word!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <string>
@@ -1984,7 +1984,7 @@ references:
     name: Word.SelectionMode
   - uid: 'word!Word.Interfaces.RangeUpdateData:interface'
     name: Interfaces.RangeUpdateData
-  - uid: 'word!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Range#styleBuiltIn~0:complex'
     name: >-

@@ -14,7 +14,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'word!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.CustomXmlPartCollection#add:member(1)'
@@ -252,7 +252,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'word!OfficeExtension.LoadOption:interface'
+            - 'office!OfficeExtension.LoadOption:interface'
   - uid: 'word!Word.CustomXmlPartCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -310,7 +310,7 @@ items:
           - 'word!Word.CustomXmlPartCollection:class'
         description: ''
 references:
-  - uid: 'word!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.CustomXmlPart:class'
     name: Word.CustomXmlPart
@@ -322,7 +322,7 @@ references:
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
     spec.typeScript:
-      - uid: 'word!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <number>
@@ -350,7 +350,7 @@ references:
       - uid: 'word!Word.Interfaces.CollectionLoadOptions:interface'
         name: Word.Interfaces.CollectionLoadOptions
         fullName: Word.Interfaces.CollectionLoadOptions
-  - uid: 'word!OfficeExtension.LoadOption:interface'
+  - uid: 'office!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'word!Word.Interfaces.CustomXmlPartCollectionData:interface'
     name: Word.Interfaces.CustomXmlPartCollectionData

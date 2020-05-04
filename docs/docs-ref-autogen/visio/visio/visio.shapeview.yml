@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'visio!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: visio!
     children:
       - 'visio!Visio.ShapeView#addOverlay:member(1)'
@@ -325,7 +325,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'visio!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'visio!Visio.ShapeView#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -388,13 +388,13 @@ items:
           - 'visio!Visio.Interfaces.ShapeViewData:interface'
         description: ''
 references:
-  - uid: 'visio!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'visio!Visio.ShapeView#addOverlay~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
     spec.typeScript:
-      - uid: 'visio!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <number>
@@ -409,7 +409,7 @@ references:
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
     spec.typeScript:
-      - uid: 'visio!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <number>
@@ -424,7 +424,7 @@ references:
     name: Visio.Interfaces.ShapeViewLoadOptions
   - uid: 'visio!Visio.Interfaces.ShapeViewUpdateData:interface'
     name: Interfaces.ShapeViewUpdateData
-  - uid: 'visio!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'visio!Visio.Interfaces.ShapeViewData:interface'
     name: Visio.Interfaces.ShapeViewData
