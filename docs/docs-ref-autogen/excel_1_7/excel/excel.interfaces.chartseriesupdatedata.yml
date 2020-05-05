@@ -71,7 +71,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#filtered:member'
     summary: |-
-      Boolean value representing if the series is filtered or not. Not applicable for surface charts.
+      Specifies if the series is filtered. Not applicable for surface charts.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: filtered
@@ -118,7 +118,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#hasDataLabels:member'
     summary: |-
-      Boolean value representing if the series has data labels or not.
+      Specifies if the series has data labels.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hasDataLabels
@@ -133,7 +133,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerBackgroundColor:member'
     summary: |-
-      Represents markers background color of a chart series.
+      Specifies the markers background color of a chart series.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerBackgroundColor
@@ -148,7 +148,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerForegroundColor:member'
     summary: |-
-      Represents markers foreground color of a chart series.
+      Specifies the markers foreground color of a chart series.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerForegroundColor
@@ -163,7 +163,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerSize:member'
     summary: |-
-      Represents marker size of a chart series.
+      Specifies the marker size of a chart series.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerSize
@@ -178,7 +178,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerStyle:member'
     summary: |-
-      Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
+      Specifies the marker style of a chart series. See Excel.ChartMarkerStyle for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerStyle
@@ -195,7 +195,7 @@ items:
           - 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerStyle~0:complex'
   - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#name:member'
     summary: |-
-      Represents the name of a series in a chart.
+      Specifies the name of a series in a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -210,7 +210,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#plotOrder:member'
     summary: |-
-      Represents the plot order of a chart series within the chart group.
+      Specifies the plot order of a chart series within the chart group.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: plotOrder
@@ -225,7 +225,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#showShadow:member'
     summary: |-
-      Boolean value representing if the series has a shadow or not.
+      Specifies if the series has a shadow.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showShadow
@@ -240,7 +240,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#smooth:member'
     summary: |-
-      Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
+      Specifies if the series is smooth. Only applicable to line and scatter charts.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: smooth

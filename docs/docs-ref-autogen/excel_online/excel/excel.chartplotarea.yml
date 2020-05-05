@@ -47,7 +47,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartPlotArea#format:member'
     summary: |-
-      Represents the formatting of a chart plotArea.
+      Specifies the formatting of a chart plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -62,7 +62,7 @@ items:
           - 'excel!Excel.ChartPlotAreaFormat:class'
   - uid: 'excel!Excel.ChartPlotArea#height:member'
     summary: |-
-      Represents the height value of plotArea.
+      Specifies the height value of plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -77,7 +77,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartPlotArea#insideHeight:member'
     summary: |-
-      Represents the insideHeight value of plotArea.
+      Specifies the insideHeight value of plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideHeight
@@ -92,7 +92,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartPlotArea#insideLeft:member'
     summary: |-
-      Represents the insideLeft value of plotArea.
+      Specifies the insideLeft value of plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideLeft
@@ -107,7 +107,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartPlotArea#insideTop:member'
     summary: |-
-      Represents the insideTop value of plotArea.
+      Specifies the insideTop value of plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideTop
@@ -122,7 +122,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartPlotArea#insideWidth:member'
     summary: |-
-      Represents the insideWidth value of plotArea.
+      Specifies the insideWidth value of plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideWidth
@@ -137,7 +137,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartPlotArea#left:member'
     summary: |-
-      Represents the left value of plotArea.
+      Specifies the left value of plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
@@ -222,7 +222,7 @@ items:
                       }
   - uid: 'excel!Excel.ChartPlotArea#position:member'
     summary: |-
-      Represents the position of plotArea.
+      Specifies the position of plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
@@ -303,7 +303,7 @@ items:
         description: ''
   - uid: 'excel!Excel.ChartPlotArea#top:member'
     summary: |-
-      Represents the top value of plotArea.
+      Specifies the top value of plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
@@ -318,7 +318,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartPlotArea#width:member'
     summary: |-
-      Represents the width value of plotArea.
+      Specifies the width value of plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width

@@ -32,4 +32,12 @@ while (indexOfApiSetTag >= 0) {
     indexOfApiSetTag = wholeDTS.indexOf("Api set: " + process.argv[3]);
 }
 
+/* Add necessary custom logic here*/
+
+if (process.argv[3] === "ExcelApi 1.11") {
+    console.log("Address CommentRichContent reference for when removing ExcelApi 1.11");
+    wholeDTS = wholeDTS.replace(/add\(content: CommentRichContent \| string,/g, "add(content: string,").
+                replace(/add\(cellAddress: Range \| string, content: CommentRichContent \| string,/g, "add(cellAddress: Range | string, content: string,");
+}
+
 fsx.writeFileSync(process.argv[4], wholeDTS);

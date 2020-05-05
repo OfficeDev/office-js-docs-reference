@@ -22,7 +22,7 @@ items:
       - 'excel!Excel.Interfaces.ChartData#width:member'
   - uid: 'excel!Excel.Interfaces.ChartData#axes:member'
     summary: |-
-      Represents chart axes. Read-only.
+      Represents chart axes.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: axes
@@ -37,7 +37,7 @@ items:
           - 'excel!Excel.Interfaces.ChartAxesData:interface'
   - uid: 'excel!Excel.Interfaces.ChartData#dataLabels:member'
     summary: |-
-      Represents the datalabels on the chart. Read-only.
+      Represents the datalabels on the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataLabels
@@ -52,7 +52,7 @@ items:
           - 'excel!Excel.Interfaces.ChartDataLabelsData:interface'
   - uid: 'excel!Excel.Interfaces.ChartData#format:member'
     summary: |-
-      Encapsulates the format properties for the chart area. Read-only.
+      Encapsulates the format properties for the chart area.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -67,7 +67,7 @@ items:
           - 'excel!Excel.Interfaces.ChartAreaFormatData:interface'
   - uid: 'excel!Excel.Interfaces.ChartData#height:member'
     summary: |-
-      Represents the height, in points, of the chart object.
+      Specifies the height, in points, of the chart object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -97,7 +97,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ChartData#legend:member'
     summary: |-
-      Represents the legend for the chart. Read-only.
+      Represents the legend for the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: legend
@@ -112,7 +112,7 @@ items:
           - 'excel!Excel.Interfaces.ChartLegendData:interface'
   - uid: 'excel!Excel.Interfaces.ChartData#name:member'
     summary: |-
-      Represents the name of a chart object.
+      Specifies the name of a chart object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -127,7 +127,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.ChartData#series:member'
     summary: |-
-      Represents either a single series or collection of series in the chart. Read-only.
+      Represents either a single series or collection of series in the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: series
@@ -141,10 +141,8 @@ items:
         type:
           - 'excel!Excel.Interfaces.ChartData#series~0:complex'
   - uid: 'excel!Excel.Interfaces.ChartData#title:member'
-    summary: >-
-      Represents the title of the specified chart, including the text, visibility, position, and formatting of the
-      title. Read-only.
-
+    summary: |-
+      Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title
@@ -159,8 +157,8 @@ items:
           - 'excel!Excel.Interfaces.ChartTitleData:interface'
   - uid: 'excel!Excel.Interfaces.ChartData#top:member'
     summary: >-
-      Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the
-      top of the chart area (on a chart).
+      Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top
+      of the chart area (on a chart).
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -176,7 +174,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ChartData#width:member'
     summary: |-
-      Represents the width, in points, of the chart object.
+      Specifies the width, in points, of the chart object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width

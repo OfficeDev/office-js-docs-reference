@@ -35,7 +35,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionLoadOptions#key:member'
     summary: >-
-      For EACH ITEM in the collection: Gets the key of the custom property. Read only.
+      For EACH ITEM in the collection: Gets the key of the custom property. Custom property keys are case-insensitive.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -53,7 +53,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionLoadOptions#value:member'
     summary: >-
-      For EACH ITEM in the collection: Gets the value of the custom property. Read only.
+      For EACH ITEM in the collection: Gets or sets the value of the custom property.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

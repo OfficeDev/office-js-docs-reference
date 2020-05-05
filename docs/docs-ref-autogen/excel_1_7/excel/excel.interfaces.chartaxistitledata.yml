@@ -14,7 +14,7 @@ items:
       - 'excel!Excel.Interfaces.ChartAxisTitleData#visible:member'
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleData#format:member'
     summary: |-
-      Represents the formatting of chart axis title. Read-only.
+      Specifies the formatting of chart axis title.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -29,7 +29,7 @@ items:
           - 'excel!Excel.Interfaces.ChartAxisTitleFormatData:interface'
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleData#text:member'
     summary: |-
-      Represents the axis title.
+      Specifies the axis title.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
@@ -44,7 +44,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleData#visible:member'
     summary: |-
-      A boolean that specifies the visibility of an axis title.
+      Specifies if the axis title is visibile.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible

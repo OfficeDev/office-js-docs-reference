@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ThreeSignsSet:interface'
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ThreeSignsSet
+    fullName: Excel.ThreeSignsSet
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ThreeSignsSet#greenCircle:member'
+      - 'excel!Excel.ThreeSignsSet#redDiamond:member'
+      - 'excel!Excel.ThreeSignsSet#yellowTriangle:member'
+  - uid: 'excel!Excel.ThreeSignsSet#greenCircle:member'
+    name: greenCircle
+    fullName: greenCircle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenCircle: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeSignsSet#redDiamond:member'
+    name: redDiamond
+    fullName: redDiamond
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redDiamond: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeSignsSet#yellowTriangle:member'
+    name: yellowTriangle
+    fullName: yellowTriangle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowTriangle: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+references:
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon

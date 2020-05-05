@@ -27,7 +27,7 @@ items:
       - 'excel!Excel.ConditionalRangeFormat#toJSON:member(1)'
   - uid: 'excel!Excel.ConditionalRangeFormat#borders:member'
     summary: |-
-      Collection of border objects that apply to the overall conditional format range. Read-only.
+      Collection of border objects that apply to the overall conditional format range.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: borders
@@ -56,7 +56,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ConditionalRangeFormat#fill:member'
     summary: |-
-      Returns the fill object defined on the overall conditional format range. Read-only.
+      Returns the fill object defined on the overall conditional format range.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
@@ -71,7 +71,7 @@ items:
           - 'excel!Excel.ConditionalRangeFill:class'
   - uid: 'excel!Excel.ConditionalRangeFormat#font:member'
     summary: |-
-      Returns the font object defined on the overall conditional format range. Read-only.
+      Returns the font object defined on the overall conditional format range.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font

@@ -35,7 +35,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyLoadOptions#key:member'
     summary: >-
-      Gets the key of the custom property. Read only.
+      Gets the key of the custom property. Custom property keys are case-insensitive.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -53,7 +53,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyLoadOptions#value:member'
     summary: >-
-      Gets the value of the custom property. Read only.
+      Gets or sets the value of the custom property.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

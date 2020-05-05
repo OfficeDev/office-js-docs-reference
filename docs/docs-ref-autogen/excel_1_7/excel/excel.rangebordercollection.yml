@@ -40,7 +40,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.RangeBorderCollection#count:member'
     summary: |-
-      Number of border objects in the collection. Read-only.
+      Number of border objects in the collection.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count

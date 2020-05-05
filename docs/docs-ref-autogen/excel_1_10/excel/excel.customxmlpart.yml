@@ -142,7 +142,7 @@ items:
           ```
   - uid: 'excel!Excel.CustomXmlPart#id:member'
     summary: |-
-      The custom XML part's ID. Read-only.
+      The custom XML part's ID.
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -259,7 +259,7 @@ items:
                       }
   - uid: 'excel!Excel.CustomXmlPart#namespaceUri:member'
     summary: |-
-      The custom XML part's namespace URI. Read-only.
+      The custom XML part's namespace URI.
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: namespaceUri

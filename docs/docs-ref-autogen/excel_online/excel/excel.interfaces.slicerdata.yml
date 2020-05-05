@@ -55,7 +55,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.SlicerData#id:member'
     summary: |-
-      Represents the unique id of slicer. Read-only.
+      Represents the unique id of slicer.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -117,7 +117,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.SlicerData#slicerItems:member'
     summary: |-
-      Represents the collection of SlicerItems that are part of the slicer. Read-only.
+      Represents the collection of SlicerItems that are part of the slicer.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: slicerItems
@@ -201,7 +201,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.SlicerData#worksheet:member'
     summary: |-
-      Represents the worksheet containing the slicer. Read-only.
+      Represents the worksheet containing the slicer.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet

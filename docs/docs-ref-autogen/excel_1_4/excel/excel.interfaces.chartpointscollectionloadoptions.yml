@@ -46,7 +46,7 @@ items:
           - 'excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions#value:member'
     summary: |-
-      For EACH ITEM in the collection: Returns the value of a chart point. Read-only.
+      For EACH ITEM in the collection: Returns the value of a chart point.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value

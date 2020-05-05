@@ -84,8 +84,8 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions#markerBackgroundColor:member'
     summary: >-
-      For EACH ITEM in the collection: HTML color code representation of the marker background color of data point. E.g.
-      \#FF0000 represents Red.
+      For EACH ITEM in the collection: HTML color code representation of the marker background color of data point.
+      e.g., \#FF0000 represents Red.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -101,8 +101,8 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions#markerForegroundColor:member'
     summary: >-
-      For EACH ITEM in the collection: HTML color code representation of the marker foreground color of data point. E.g.
-      \#FF0000 represents Red.
+      For EACH ITEM in the collection: HTML color code representation of the marker foreground color of data point.
+      e.g., \#FF0000 represents Red.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -150,7 +150,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions#value:member'
     summary: |-
-      For EACH ITEM in the collection: Returns the value of a chart point. Read-only.
+      For EACH ITEM in the collection: Returns the value of a chart point.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value

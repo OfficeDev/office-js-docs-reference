@@ -32,7 +32,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.TableSortLoadOptions#fields:member'
     summary: |-
-      Represents the current conditions used to last sort the table. Read-only.
+      Specifies the current conditions used to last sort the table.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fields
@@ -47,7 +47,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.TableSortLoadOptions#matchCase:member'
     summary: |-
-      Represents whether the casing impacted the last sort of the table. Read-only.
+      Specifies if the casing impacts the last sort of the table.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: matchCase
@@ -62,7 +62,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.TableSortLoadOptions#method:member'
     summary: |-
-      Represents Chinese character ordering method last used to sort the table. Read-only.
+      Represents Chinese character ordering method last used to sort the table.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: method

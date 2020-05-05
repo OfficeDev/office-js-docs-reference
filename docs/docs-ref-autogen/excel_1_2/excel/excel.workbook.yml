@@ -34,7 +34,7 @@ items:
       - 'excel!Excel.Workbook#worksheets:member'
   - uid: 'excel!Excel.Workbook#application:member'
     summary: |-
-      Represents the Excel application instance that contains this workbook. Read-only.
+      Represents the Excel application instance that contains this workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: application
@@ -49,7 +49,7 @@ items:
           - 'excel!Excel.Application:class'
   - uid: 'excel!Excel.Workbook#bindings:member'
     summary: |-
-      Represents a collection of bindings that are part of the workbook. Read-only.
+      Represents a collection of bindings that are part of the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bindings
@@ -78,7 +78,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.Workbook#functions:member'
     summary: |-
-      Represents a collection of worksheet functions that can be used for computation. Read-only.
+      Represents a collection of worksheet functions that can be used for computation.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: functions
@@ -199,7 +199,7 @@ items:
                       }
   - uid: 'excel!Excel.Workbook#names:member'
     summary: |-
-      Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
+      Represents a collection of workbook scoped named items (named ranges and constants).
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: names
@@ -277,7 +277,7 @@ items:
             - 'excel!Excel.Workbook:class'
   - uid: 'excel!Excel.Workbook#tables:member'
     summary: |-
-      Represents a collection of tables associated with the workbook. Read-only.
+      Represents a collection of tables associated with the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tables
@@ -310,7 +310,7 @@ items:
         description: ''
   - uid: 'excel!Excel.Workbook#worksheets:member'
     summary: |-
-      Represents a collection of worksheets associated with the workbook. Read-only.
+      Represents a collection of worksheets associated with the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheets

@@ -144,7 +144,7 @@ items:
         type:
           - 'outlook!Office.RecurrenceProperties#month~0:complex'
   - uid: 'outlook!Office.RecurrenceProperties#weekNumber:member'
-    summary: Represents the number of the week in the selected month e.g. 'first' for first week of the month.
+    summary: 'Represents the number of the week in the selected month e.g., ''first'' for first week of the month.'
     name: weekNumber
     fullName: weekNumber
     langs:

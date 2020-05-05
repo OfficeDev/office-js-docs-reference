@@ -58,8 +58,8 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ShapeFill#foregroundColor:member'
     summary: >-
-      Represents the shape fill foreground color in HTML color format, of the form \#RRGGBB (e.g. "FFA500") or as a
-      named HTML color (e.g. "orange")
+      Represents the shape fill foreground color in HTML color format, of the form \#RRGGBB (e.g., "FFA500") or as a
+      named HTML color (e.g., "orange")
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -210,8 +210,8 @@ items:
       parameters:
         - id: color
           description: >-
-            A string that represents the fill color in HTML color format, of the form \#RRGGBB (e.g. "FFA500") or as a
-            named HTML color (e.g. "orange").
+            A string that represents the fill color in HTML color format, of the form \#RRGGBB (e.g., "FFA500") or as a
+            named HTML color (e.g., "orange").
           type:
             - string
   - uid: 'excel!Excel.ShapeFill#toJSON:member(1)'
@@ -234,9 +234,9 @@ items:
         description: ''
   - uid: 'excel!Excel.ShapeFill#transparency:member'
     summary: >-
-      Returns or sets the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns
-      null if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with
-      a gradient fill type.
+      Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns null
+      if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a
+      gradient fill type.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -252,7 +252,7 @@ items:
           - number
   - uid: 'excel!Excel.ShapeFill#type:member'
     summary: |-
-      Returns the fill type of the shape. Read-only. See Excel.ShapeFillType for details.
+      Returns the fill type of the shape. See Excel.ShapeFillType for details.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type

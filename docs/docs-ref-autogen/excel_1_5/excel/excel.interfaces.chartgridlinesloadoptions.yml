@@ -46,7 +46,7 @@ items:
           - 'excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.ChartGridlinesLoadOptions#visible:member'
     summary: |-
-      Boolean value representing if the axis gridlines are visible or not.
+      Specifies if the axis gridlines are visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible

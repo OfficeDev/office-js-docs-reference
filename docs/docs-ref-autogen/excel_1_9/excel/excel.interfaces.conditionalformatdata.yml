@@ -32,7 +32,7 @@ items:
   - uid: 'excel!Excel.Interfaces.ConditionalFormatData#cellValue:member'
     summary: >-
       Returns the cell value conditional format properties if the current conditional format is a CellValue type. For
-      example to format all cells between 5 and 10. Read-only.
+      example to format all cells between 5 and 10.
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -49,7 +49,7 @@ items:
   - uid: 'excel!Excel.Interfaces.ConditionalFormatData#cellValueOrNullObject:member'
     summary: >-
       Returns the cell value conditional format properties if the current conditional format is a CellValue type. For
-      example to format all cells between 5 and 10. Read-only.
+      example to format all cells between 5 and 10.
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -64,10 +64,8 @@ items:
         type:
           - 'excel!Excel.Interfaces.CellValueConditionalFormatData:interface'
   - uid: 'excel!Excel.Interfaces.ConditionalFormatData#colorScale:member'
-    summary: >-
+    summary: |-
       Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
-      Read-only.
-
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: colorScale
@@ -81,10 +79,8 @@ items:
         type:
           - 'excel!Excel.Interfaces.ColorScaleConditionalFormatData:interface'
   - uid: 'excel!Excel.Interfaces.ConditionalFormatData#colorScaleOrNullObject:member'
-    summary: >-
+    summary: |-
       Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
-      Read-only.
-
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: colorScaleOrNullObject
@@ -99,7 +95,7 @@ items:
           - 'excel!Excel.Interfaces.ColorScaleConditionalFormatData:interface'
   - uid: 'excel!Excel.Interfaces.ConditionalFormatData#custom:member'
     summary: |-
-      Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
+      Returns the custom conditional format properties if the current conditional format is a custom type.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: custom
@@ -114,7 +110,7 @@ items:
           - 'excel!Excel.Interfaces.CustomConditionalFormatData:interface'
   - uid: 'excel!Excel.Interfaces.ConditionalFormatData#customOrNullObject:member'
     summary: |-
-      Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
+      Returns the custom conditional format properties if the current conditional format is a custom type.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: customOrNullObject
@@ -129,7 +125,7 @@ items:
           - 'excel!Excel.Interfaces.CustomConditionalFormatData:interface'
   - uid: 'excel!Excel.Interfaces.ConditionalFormatData#dataBar:member'
     summary: |-
-      Returns the data bar properties if the current conditional format is a data bar. Read-only.
+      Returns the data bar properties if the current conditional format is a data bar.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataBar
@@ -144,7 +140,7 @@ items:
           - 'excel!Excel.Interfaces.DataBarConditionalFormatData:interface'
   - uid: 'excel!Excel.Interfaces.ConditionalFormatData#dataBarOrNullObject:member'
     summary: |-
-      Returns the data bar properties if the current conditional format is a data bar. Read-only.
+      Returns the data bar properties if the current conditional format is a data bar.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataBarOrNullObject
@@ -159,7 +155,7 @@ items:
           - 'excel!Excel.Interfaces.DataBarConditionalFormatData:interface'
   - uid: 'excel!Excel.Interfaces.ConditionalFormatData#iconSet:member'
     summary: |-
-      Returns the IconSet conditional format properties if the current conditional format is an IconSet type. Read-only.
+      Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: iconSet
@@ -174,7 +170,7 @@ items:
           - 'excel!Excel.Interfaces.IconSetConditionalFormatData:interface'
   - uid: 'excel!Excel.Interfaces.ConditionalFormatData#iconSetOrNullObject:member'
     summary: |-
-      Returns the IconSet conditional format properties if the current conditional format is an IconSet type. Read-only.
+      Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: iconSetOrNullObject
@@ -189,7 +185,7 @@ items:
           - 'excel!Excel.Interfaces.IconSetConditionalFormatData:interface'
   - uid: 'excel!Excel.Interfaces.ConditionalFormatData#id:member'
     summary: |-
-      The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only.
+      The Priority of the Conditional Format within the current ConditionalFormatCollection.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -238,7 +234,7 @@ items:
       Changing this also changes other conditional formats' priorities, to allow for a contiguous priority order. Use a
       negative priority to begin from the back. Priorities greater than than bounds will get and set to the maximum (or
       minimum if negative) priority. Also note that if you change the priority, you have to re-fetch a new copy of the
-      object at that new priority location if you want to make further changes to it. Read-only.
+      object at that new priority location if you want to make further changes to it.
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -272,7 +268,7 @@ items:
   - uid: 'excel!Excel.Interfaces.ConditionalFormatData#textComparison:member'
     summary: >-
       Returns the specific text conditional format properties if the current conditional format is a text type. For
-      example to format cells matching the word "Text". Read-only.
+      example to format cells matching the word "Text".
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -289,7 +285,7 @@ items:
   - uid: 'excel!Excel.Interfaces.ConditionalFormatData#textComparisonOrNullObject:member'
     summary: >-
       Returns the specific text conditional format properties if the current conditional format is a text type. For
-      example to format cells matching the word "Text". Read-only.
+      example to format cells matching the word "Text".
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -306,7 +302,7 @@ items:
   - uid: 'excel!Excel.Interfaces.ConditionalFormatData#topBottom:member'
     summary: >-
       Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type. For
-      example to format the top 10% or bottom 10 items. Read-only.
+      example to format the top 10% or bottom 10 items.
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -323,7 +319,7 @@ items:
   - uid: 'excel!Excel.Interfaces.ConditionalFormatData#topBottomOrNullObject:member'
     summary: >-
       Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type. For
-      example to format the top 10% or bottom 10 items. Read-only.
+      example to format the top 10% or bottom 10 items.
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -339,7 +335,7 @@ items:
           - 'excel!Excel.Interfaces.TopBottomConditionalFormatData:interface'
   - uid: 'excel!Excel.Interfaces.ConditionalFormatData#type:member'
     summary: |-
-      A type of conditional format. Only one can be set at a time. Read-only.
+      A type of conditional format. Only one can be set at a time.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type

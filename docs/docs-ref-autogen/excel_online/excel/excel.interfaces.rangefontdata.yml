@@ -36,7 +36,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeFontData#color:member'
     summary: |-
-      HTML color code representation of the text color. E.g. \#FF0000 represents Red.
+      HTML color code representation of the text color. e.g., \#FF0000 represents Red.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
@@ -51,7 +51,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.RangeFontData#italic:member'
     summary: |-
-      Represents the italic status of the font.
+      Specifies the italic status of the font.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: italic
@@ -66,7 +66,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeFontData#name:member'
     summary: |-
-      Font name (e.g. "Calibri")
+      Font name (e.g., "Calibri")
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -96,7 +96,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.RangeFontData#strikethrough:member'
     summary: >-
-      Represents the strikethrough status of font. A null value indicates that the entire range doesn't have uniform
+      Specifies the strikethrough status of font. A null value indicates that the entire range doesn't have uniform
       Strikethrough setting.
 
 
@@ -113,9 +113,8 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeFontData#subscript:member'
     summary: >-
-      Represents the Subscript status of font. Returns True if all the fonts of the range are Subscript. Returns False
-      if all the fonts of the range are Superscript or normal (neither Superscript, nor Subscript). Returns Null
-      otherwise.
+      Specifies the Subscript status of font. Returns True if all the fonts of the range are Subscript. Returns False if
+      all the fonts of the range are Superscript or normal (neither Superscript, nor Subscript). Returns Null otherwise.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -131,7 +130,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeFontData#superscript:member'
     summary: >-
-      Represents the Superscript status of font. Returns True if all the fonts of the range are Superscript. Returns
+      Specifies the Superscript status of font. Returns True if all the fonts of the range are Superscript. Returns
       False if all the fonts of the range are Subscript or normal (neither Superscript, nor Subscript). Returns Null
       otherwise.
 
@@ -149,7 +148,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeFontData#tintAndShade:member'
     summary: >-
-      Returns or sets a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1
+      Specifies a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1
       (brightest), with 0 for the original color. A null value indicates that the entire range doesn't have uniform font
       tintAndShade setting.
 

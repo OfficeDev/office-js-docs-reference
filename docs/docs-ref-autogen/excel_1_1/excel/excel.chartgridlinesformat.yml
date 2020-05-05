@@ -38,7 +38,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartGridlinesFormat#line:member'
     summary: |-
-      Represents chart line formatting. Read-only.
+      Represents chart line formatting.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line

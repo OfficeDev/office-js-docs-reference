@@ -45,7 +45,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartAxis#format:member'
     summary: |-
-      Represents the formatting of a chart object, which includes line and font formatting. Read-only.
+      Represents the formatting of a chart object, which includes line and font formatting.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -150,7 +150,7 @@ items:
                       }
   - uid: 'excel!Excel.ChartAxis#majorGridlines:member'
     summary: |-
-      Returns a Gridlines object that represents the major gridlines for the specified axis. Read-only.
+      Returns a Gridlines object that represents the major gridlines for the specified axis.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: majorGridlines
@@ -216,7 +216,7 @@ items:
           - any
   - uid: 'excel!Excel.ChartAxis#minorGridlines:member'
     summary: |-
-      Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.
+      Returns a Gridlines object that represents the minor gridlines for the specified axis.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minorGridlines
@@ -296,7 +296,7 @@ items:
             - 'excel!Excel.ChartAxis:class'
   - uid: 'excel!Excel.ChartAxis#title:member'
     summary: |-
-      Represents the axis title. Read-only.
+      Represents the axis title.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title

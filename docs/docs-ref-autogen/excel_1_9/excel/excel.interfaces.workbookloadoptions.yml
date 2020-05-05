@@ -60,7 +60,7 @@ items:
           - 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#autoSave:member'
     summary: |-
-      Specifies whether or not the workbook is in autosave mode. Read-Only.
+      Specifies if the workbook is in autosave mode.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoSave
@@ -90,7 +90,7 @@ items:
           - 'excel!Excel.Interfaces.BindingCollectionLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#calculationEngineVersion:member'
     summary: |-
-      Returns a number about the version of Excel Calculation Engine. Read-Only.
+      Returns a number about the version of Excel Calculation Engine.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculationEngineVersion
@@ -122,8 +122,8 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#isDirty:member'
     summary: >-
-      Specifies whether or not changes have been made since the workbook was last saved. You can set this property to
-      true if you want to close a modified workbook without either saving it or being prompted to save it.
+      Specifies if changes have been made since the workbook was last saved. You can set this property to true if you
+      want to close a modified workbook without either saving it or being prompted to save it.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -139,7 +139,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#name:member'
     summary: |-
-      Gets the workbook name. Read-only.
+      Gets the workbook name.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -154,7 +154,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#previouslySaved:member'
     summary: |-
-      Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
+      Specifies if the workbook has ever been saved locally or online.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: previouslySaved
@@ -199,7 +199,7 @@ items:
           - 'excel!Excel.Interfaces.WorkbookProtectionLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#readOnly:member'
     summary: |-
-      True if the workbook is open in Read-only mode. Read-only.
+      True if the workbook is open in Read-only mode.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readOnly

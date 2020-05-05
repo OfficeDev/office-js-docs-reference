@@ -52,8 +52,8 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#address:member'
     summary: >-
-      For EACH ITEM in the collection: Represents the range reference in A1-style. Address value will contain the Sheet
-      reference (e.g. "Sheet1!A1:B4"). Read-only.
+      For EACH ITEM in the collection: Specifies the range reference in A1-style. Address value will contain the Sheet
+      reference (e.g., "Sheet1!A1:B4").
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -69,8 +69,8 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#addressLocal:member'
     summary: >-
-      For EACH ITEM in the collection: Represents range reference for the specified range in the language of the user.
-      Read-only.
+      For EACH ITEM in the collection: Specifies the range reference for the specified range in the language of the
+      user.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -86,8 +86,8 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#cellCount:member'
     summary: >-
-      For EACH ITEM in the collection: Number of cells in the range. This API will return -1 if the cell count exceeds
-      2^31-1 (2,147,483,647). Read-only.
+      For EACH ITEM in the collection: Specifies the number of cells in the range. This API will return -1 if the cell
+      count exceeds 2^31-1 (2,147,483,647).
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -103,7 +103,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#columnCount:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the total number of columns in the range. Read-only.
+      For EACH ITEM in the collection: Specifies the total number of columns in the range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnCount
@@ -132,10 +132,8 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#columnIndex:member'
-    summary: >-
-      For EACH ITEM in the collection: Represents the column number of the first cell in the range. Zero-indexed.
-      Read-only.
-
+    summary: |-
+      For EACH ITEM in the collection: Specifies the column number of the first cell in the range. Zero-indexed.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnIndex
@@ -230,7 +228,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#hidden:member'
     summary: |-
-      For EACH ITEM in the collection: Represents if all cells of the current range are hidden. Read-only.
+      For EACH ITEM in the collection: Represents if all cells of the current range are hidden.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hidden
@@ -260,7 +258,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#isEntireColumn:member'
     summary: |-
-      For EACH ITEM in the collection: Represents if the current range is an entire column. Read-only.
+      For EACH ITEM in the collection: Represents if the current range is an entire column.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireColumn
@@ -275,7 +273,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#isEntireRow:member'
     summary: |-
-      For EACH ITEM in the collection: Represents if the current range is an entire row. Read-only.
+      For EACH ITEM in the collection: Represents if the current range is an entire row.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireRow
@@ -290,7 +288,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#linkedDataTypeState:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the data type state of each cell. Read-only.
+      For EACH ITEM in the collection: Represents the data type state of each cell.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: linkedDataTypeState
@@ -339,7 +337,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#rowCount:member'
     summary: |-
-      For EACH ITEM in the collection: Returns the total number of rows in the range. Read-only.
+      For EACH ITEM in the collection: Returns the total number of rows in the range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowCount
@@ -369,7 +367,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#rowIndex:member'
     summary: |-
-      For EACH ITEM in the collection: Returns the row number of the first cell in the range. Zero-indexed. Read-only.
+      For EACH ITEM in the collection: Returns the row number of the first cell in the range. Zero-indexed.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowIndex
@@ -404,7 +402,6 @@ items:
     summary: >-
       For EACH ITEM in the collection: Text values of the specified range. The Text value will not depend on the cell
       width. The \# sign substitution that happens in Excel UI will not affect the text value returned by the API.
-      Read-only.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -437,7 +434,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeCollectionLoadOptions#valueTypes:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the type of data of each cell. Read-only.
+      For EACH ITEM in the collection: Specifies the type of data in each cell.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valueTypes

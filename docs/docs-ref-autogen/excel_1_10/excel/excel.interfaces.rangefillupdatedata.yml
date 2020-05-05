@@ -16,8 +16,8 @@ items:
       - 'excel!Excel.Interfaces.RangeFillUpdateData#tintAndShade:member'
   - uid: 'excel!Excel.Interfaces.RangeFillUpdateData#color:member'
     summary: >-
-      HTML color code representing the color of the background, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange")
+      HTML color code representing the color of the background, of the form \#RRGGBB (e.g., "FFA500") or as a named HTML
+      color (e.g., "orange")
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -33,8 +33,8 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.RangeFillUpdateData#pattern:member'
     summary: >-
-      Gets or sets the pattern of a Range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are
-      not supported. A null value indicates that the entire range doesn't have uniform pattern setting.
+      The pattern of a range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are not
+      supported. A null value indicates that the entire range doesn't have uniform pattern setting.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -52,11 +52,8 @@ items:
         type:
           - 'excel!Excel.Interfaces.RangeFillUpdateData#pattern~0:complex'
   - uid: 'excel!Excel.Interfaces.RangeFillUpdateData#patternColor:member'
-    summary: >-
-      Sets HTML color code representing the color of the Range pattern, of the form \#RRGGBB (e.g. "FFA500") or as a
-      named HTML color (e.g. "orange"). Gets HTML color code representing the color of the Range pattern, of the form
-      \#RRGGBB (e.g. "FFA500").
-
+    summary: |-
+      The HTML color code representing the color of the range pattern, of the form \#RRGGBB (e.g., "FFA500").
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: patternColor
@@ -71,9 +68,8 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.RangeFillUpdateData#patternTintAndShade:member'
     summary: >-
-      Returns or sets a double that lightens or darkens a pattern color for Range Fill, the value is between -1
-      (darkest) and 1 (brightest), with 0 for the original color. If the pattern tintAndShades are not uniform, null
-      will be returned.
+      Specifies a double that lightens or darkens a pattern color for Range Fill, the value is between -1 (darkest) and
+      1 (brightest), with 0 for the original color. If the pattern tintAndShades are not uniform, null will be returned.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -89,7 +85,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.RangeFillUpdateData#tintAndShade:member'
     summary: >-
-      Returns or sets a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1
+      Specifies a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1
       (brightest), with 0 for the original color. If the tintAndShades are not uniform, null will be returned.
 
 

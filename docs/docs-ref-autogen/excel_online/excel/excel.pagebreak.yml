@@ -22,7 +22,7 @@ items:
       - 'excel!Excel.PageBreak#toJSON:member(1)'
   - uid: 'excel!Excel.PageBreak#columnIndex:member'
     summary: |-
-      Represents the column index for the page break
+      Specifies the column index for the page break
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnIndex
@@ -153,7 +153,7 @@ items:
                       }
   - uid: 'excel!Excel.PageBreak#rowIndex:member'
     summary: |-
-      Represents the row index for the page break
+      Specifies the row index for the page break
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowIndex

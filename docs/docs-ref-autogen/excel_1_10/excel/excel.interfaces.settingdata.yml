@@ -13,7 +13,7 @@ items:
       - 'excel!Excel.Interfaces.SettingData#value:member'
   - uid: 'excel!Excel.Interfaces.SettingData#key:member'
     summary: |-
-      Returns the key that represents the id of the Setting. Read-only.
+      The key that represents the id of the Setting.
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: key

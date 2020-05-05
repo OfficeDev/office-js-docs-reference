@@ -17,8 +17,8 @@ items:
       - 'excel!Excel.Interfaces.ShapeLineFormatData#weight:member'
   - uid: 'excel!Excel.Interfaces.ShapeLineFormatData#color:member'
     summary: >-
-      Represents the line color in HTML color format, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML color
-      (e.g. "orange").
+      Represents the line color in HTML color format, of the form \#RRGGBB (e.g., "FFA500") or as a named HTML color
+      (e.g., "orange").
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -87,8 +87,8 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ShapeLineFormatData#visible:member'
     summary: >-
-      Represents whether or not the line formatting of a shape element is visible. Returns null when the shape has
-      inconsistent visibilities.
+      Specifies if the line formatting of a shape element is visible. Returns null when the shape has inconsistent
+      visibilities.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

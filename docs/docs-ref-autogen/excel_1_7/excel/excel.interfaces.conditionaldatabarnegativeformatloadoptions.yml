@@ -33,8 +33,8 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions#borderColor:member'
     summary: >-
-      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange"). "Empty String" if no border is present or set.
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g., "FFA500") or as a named
+      HTML color (e.g., "orange"). "Empty String" if no border is present or set.
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -50,7 +50,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions#fillColor:member'
     summary: >-
-      HTML color code representing the fill color, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML color (e.g.
+      HTML color code representing the fill color, of the form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g.,
       "orange").
 
 
@@ -67,7 +67,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions#matchPositiveBorderColor:member'
     summary: |-
-      Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar.
+      Specifies if the negative DataBar has the same border color as the positive DataBar.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: matchPositiveBorderColor
@@ -82,7 +82,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions#matchPositiveFillColor:member'
     summary: |-
-      Boolean representation of whether or not the negative DataBar has the same fill color as the positive DataBar.
+      Specified if the negative DataBar has the same fill color as the positive DataBar.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: matchPositiveFillColor

@@ -39,7 +39,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartSeriesFormat#fill:member'
     summary: |-
-      Represents the fill format of a chart series, which includes background formatting information. Read-only.
+      Represents the fill format of a chart series, which includes background formatting information.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
@@ -54,7 +54,7 @@ items:
           - 'excel!Excel.ChartFill:class'
   - uid: 'excel!Excel.ChartSeriesFormat#line:member'
     summary: |-
-      Represents line formatting. Read-only.
+      Represents line formatting.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line

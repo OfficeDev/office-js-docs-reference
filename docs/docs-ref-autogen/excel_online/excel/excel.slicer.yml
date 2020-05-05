@@ -134,7 +134,7 @@ items:
           ```
   - uid: 'excel!Excel.Slicer#getSelectedItems:member(1)'
     summary: |-
-      Returns an array of selected items' keys. Read-only.
+      Returns an array of selected items' keys.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getSelectedItems()
@@ -167,7 +167,7 @@ items:
           - number
   - uid: 'excel!Excel.Slicer#id:member'
     summary: |-
-      Represents the unique id of slicer. Read-only.
+      Represents the unique id of slicer.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -387,7 +387,7 @@ items:
             - 'excel!Excel.Slicer:class'
   - uid: 'excel!Excel.Slicer#slicerItems:member'
     summary: |-
-      Represents the collection of SlicerItems that are part of the slicer. Read-only.
+      Represents the collection of SlicerItems that are part of the slicer.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: slicerItems
@@ -507,7 +507,7 @@ items:
           - number
   - uid: 'excel!Excel.Slicer#worksheet:member'
     summary: |-
-      Represents the worksheet containing the slicer. Read-only.
+      Represents the worksheet containing the slicer.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet

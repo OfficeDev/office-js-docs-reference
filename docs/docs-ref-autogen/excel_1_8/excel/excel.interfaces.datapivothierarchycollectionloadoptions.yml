@@ -110,10 +110,8 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions#showAs:member'
-    summary: >-
-      For EACH ITEM in the collection: Determines whether the data should be shown as a specific summary calculation or
-      not.
-
+    summary: |-
+      For EACH ITEM in the collection: Specifies if the data should be shown as a specific summary calculation.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAs
@@ -128,7 +126,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions#summarizeBy:member'
     summary: |-
-      For EACH ITEM in the collection: Determines whether to show all items of the DataPivotHierarchy.
+      For EACH ITEM in the collection: Specifies if all items of the DataPivotHierarchy are shown.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: summarizeBy

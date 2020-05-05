@@ -14,7 +14,7 @@ items:
       - 'excel!Excel.Interfaces.ChartSeriesData#points:member'
   - uid: 'excel!Excel.Interfaces.ChartSeriesData#format:member'
     summary: |-
-      Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
+      Represents the formatting of a chart series, which includes fill and line formatting.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -29,7 +29,7 @@ items:
           - 'excel!Excel.Interfaces.ChartSeriesFormatData:interface'
   - uid: 'excel!Excel.Interfaces.ChartSeriesData#name:member'
     summary: |-
-      Represents the name of a series in a chart.
+      Specifies the name of a series in a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -44,7 +44,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.ChartSeriesData#points:member'
     summary: |-
-      Represents a collection of all points in the series. Read-only.
+      Returns a collection of all points in the series.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: points

@@ -34,7 +34,7 @@ items:
       - 'excel!Excel.Interfaces.ChartAxisUpdateData#visible:member'
   - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#baseTimeUnit:member'
     summary: |-
-      Returns or sets the base unit for the specified category axis.
+      Specifies the base unit for the specified category axis.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: baseTimeUnit
@@ -49,7 +49,7 @@ items:
           - 'excel!Excel.Interfaces.ChartAxisUpdateData#baseTimeUnit~0:complex'
   - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#categoryType:member'
     summary: |-
-      Returns or sets the category axis type.
+      Specifies the category axis type.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: categoryType
@@ -96,7 +96,7 @@ items:
           - 'excel!Excel.Interfaces.ChartAxisFormatUpdateData:interface'
   - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#logBase:member'
     summary: |-
-      Represents the base of the logarithm when using logarithmic scales.
+      Specifies the base of the logarithm when using logarithmic scales.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: logBase
@@ -126,7 +126,7 @@ items:
           - 'excel!Excel.Interfaces.ChartGridlinesUpdateData:interface'
   - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#majorTickMark:member'
     summary: |-
-      Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+      Specifies the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: majorTickMark
@@ -140,10 +140,8 @@ items:
         type:
           - 'excel!Excel.Interfaces.ChartAxisUpdateData#majorTickMark~0:complex'
   - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#majorTimeUnitScale:member'
-    summary: >-
-      Returns or sets the major unit scale value for the category axis when the CategoryType property is set to
-      TimeScale.
-
+    summary: |-
+      Specifies the major unit scale value for the category axis when the CategoryType property is set to TimeScale.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: majorTimeUnitScale
@@ -224,7 +222,7 @@ items:
           - 'excel!Excel.Interfaces.ChartGridlinesUpdateData:interface'
   - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#minorTickMark:member'
     summary: |-
-      Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+      Specifies the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minorTickMark
@@ -238,10 +236,8 @@ items:
         type:
           - 'excel!Excel.Interfaces.ChartAxisUpdateData#minorTickMark~0:complex'
   - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#minorTimeUnitScale:member'
-    summary: >-
-      Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to
-      TimeScale.
-
+    summary: |-
+      Specifies the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minorTimeUnitScale
@@ -273,7 +269,7 @@ items:
           - any
   - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#reversePlotOrder:member'
     summary: |-
-      Represents whether Microsoft Excel plots data points from last to first.
+      Specifies if Excel plots data points from last to first.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: reversePlotOrder
@@ -288,7 +284,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#scaleType:member'
     summary: |-
-      Represents the value axis scale type. See Excel.ChartAxisScaleType for details.
+      Specifies the value axis scale type. See Excel.ChartAxisScaleType for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: scaleType
@@ -303,7 +299,7 @@ items:
           - 'excel!Excel.Interfaces.ChartAxisUpdateData#scaleType~0:complex'
   - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#showDisplayUnitLabel:member'
     summary: |-
-      Represents whether the axis display unit label is visible.
+      Specifies if the axis display unit label is visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showDisplayUnitLabel
@@ -318,7 +314,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#tickLabelPosition:member'
     summary: >-
-      Represents the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for
+      Specifies the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for
       details.
 
 
@@ -335,7 +331,7 @@ items:
           - 'excel!Excel.Interfaces.ChartAxisUpdateData#tickLabelPosition~0:complex'
   - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#tickLabelSpacing:member'
     summary: >-
-      Represents the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an
+      Specifies the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an
       empty string for automatic setting. The returned value is always a number.
 
 
@@ -352,7 +348,7 @@ items:
           - any
   - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#tickMarkSpacing:member'
     summary: |-
-      Represents the number of categories or series between tick marks.
+      Specifies the number of categories or series between tick marks.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tickMarkSpacing
@@ -382,7 +378,7 @@ items:
           - 'excel!Excel.Interfaces.ChartAxisTitleUpdateData:interface'
   - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#visible:member'
     summary: |-
-      A boolean value represents the visibility of the axis.
+      Specifies if the axis is visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible

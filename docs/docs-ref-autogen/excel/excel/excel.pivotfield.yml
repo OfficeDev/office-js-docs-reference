@@ -51,9 +51,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        applyFilter(filter: PivotValueFilter | PivotLabelFilter | PivotManualFilter | PivotDateFilter | PivotFilters):
-        void;
+      content: 'applyFilter(filter: Excel.PivotFilters): void;'
       return:
         type:
           - void
@@ -62,7 +60,7 @@ items:
         - id: filter
           description: A configured specific PivotFilter or a PivotFilters interface containing multiple configured filters.
           type:
-            - 'excel!Excel.PivotField#applyFilter~0:complex'
+            - 'excel!Excel.PivotFilters:interface'
   - uid: 'excel!Excel.PivotField#clearAllFilters:member(1)'
     summary: >-
       Clears all criteria from all of the field's filters. This removes any active filtering on the field.
@@ -413,7 +411,7 @@ items:
         description: ''
       parameters:
         - id: sortBy
-          description: Represents whether the sorting is done in an ascending or descending order.
+          description: Specifies if the sorting is done in ascending or descending order.
           type:
             - 'excel!Excel.SortBy:enum'
   - uid: 'excel!Excel.PivotField#sortByValues:member(1)'
@@ -438,7 +436,7 @@ items:
         description: ''
       parameters:
         - id: sortBy
-          description: Represents whether the sorting is done in an ascending or descending order.
+          description: Specifies if the sorting is done in ascending or descending order.
           type:
             - 'excel!Excel.SortBy:enum'
         - id: valuesHierarchy
@@ -475,7 +473,7 @@ items:
         description: ''
       parameters:
         - id: sortByString
-          description: Represents whether the sorting is done in an ascending or descending order.
+          description: Specifies if the sorting is done in ascending or descending order.
           type:
             - '"Ascending" | "Descending"'
         - id: valuesHierarchy
@@ -526,35 +524,8 @@ items:
 references:
   - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
-  - uid: 'excel!Excel.PivotField#applyFilter~0:complex'
-    name: PivotValueFilter | PivotLabelFilter | PivotManualFilter | PivotDateFilter | PivotFilters
-    fullName: >-
-      Excel.PivotValueFilter | Excel.PivotLabelFilter | Excel.PivotManualFilter | Excel.PivotDateFilter |
-      Excel.PivotFilters
-    spec.typeScript:
-      - uid: 'excel!Excel.PivotValueFilter:interface'
-        name: PivotValueFilter
-        fullName: Excel.PivotValueFilter
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'excel!Excel.PivotLabelFilter:interface'
-        name: PivotLabelFilter
-        fullName: Excel.PivotLabelFilter
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'excel!Excel.PivotManualFilter:interface'
-        name: PivotManualFilter
-        fullName: Excel.PivotManualFilter
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'excel!Excel.PivotDateFilter:interface'
-        name: PivotDateFilter
-        fullName: Excel.PivotDateFilter
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'excel!Excel.PivotFilters:interface'
-        name: PivotFilters
-        fullName: Excel.PivotFilters
+  - uid: 'excel!Excel.PivotFilters:interface'
+    name: Excel.PivotFilters
   - uid: 'excel!Excel.PivotFilterType:enum'
     name: Excel.PivotFilterType
   - uid: 'excel!Excel.RequestContext:class'

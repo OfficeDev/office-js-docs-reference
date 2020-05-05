@@ -415,7 +415,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ShapeCollection#getCount:member(1)'
     summary: |-
-      Returns the number of shapes in the worksheet. Read-only.
+      Returns the number of shapes in the worksheet.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()

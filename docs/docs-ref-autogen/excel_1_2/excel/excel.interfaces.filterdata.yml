@@ -12,7 +12,7 @@ items:
       - 'excel!Excel.Interfaces.FilterData#criteria:member'
   - uid: 'excel!Excel.Interfaces.FilterData#criteria:member'
     summary: |-
-      The currently applied filter on the given column. Read-only.
+      The currently applied filter on the given column.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criteria

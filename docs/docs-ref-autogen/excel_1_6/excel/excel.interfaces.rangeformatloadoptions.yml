@@ -52,10 +52,8 @@ items:
         type:
           - 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions#columnWidth:member'
-    summary: >-
-      Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be
-      returned.
-
+    summary: |-
+      Specifies the width of all colums within the range. If the column widths are not uniform, null will be returned.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnWidth
@@ -130,7 +128,7 @@ items:
           - 'excel!Excel.Interfaces.FormatProtectionLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions#rowHeight:member'
     summary: |-
-      Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
+      The height of all rows in the range. If the row heights are not uniform, null will be returned.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowHeight
@@ -160,7 +158,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions#wrapText:member'
     summary: >-
-      Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
+      Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
       wrap setting
 
 

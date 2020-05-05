@@ -14,6 +14,10 @@ items:
       - 'excel!Excel.EventType.chartAdded:member'
       - 'excel!Excel.EventType.chartDeactivated:member'
       - 'excel!Excel.EventType.chartDeleted:member'
+      - 'excel!Excel.EventType.commentAdded:member'
+      - 'excel!Excel.EventType.commentChanged:member'
+      - 'excel!Excel.EventType.commentDeleted:member'
+      - 'excel!Excel.EventType.linkedDataTypeRefreshRequestCompleted:member'
       - 'excel!Excel.EventType.ribbonCommandExecuted:member'
       - 'excel!Excel.EventType.shapeActivated:member'
       - 'excel!Excel.EventType.shapeDeactivated:member'
@@ -89,6 +93,46 @@ items:
       - typeScript
     type: field
     numericValue: '"ChartDeleted"'
+  - uid: 'excel!Excel.EventType.commentAdded:member'
+    summary: >-
+      CommentAdded represents the type of event that is registered on commentCollection, and occurs when comment(s)
+      is(are) added.
+    name: commentAdded
+    fullName: commentAdded
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CommentAdded"'
+  - uid: 'excel!Excel.EventType.commentChanged:member'
+    summary: >-
+      CommentChanged represents the type of event that is registered on commentCollection, and occurs when comment(s)
+      is(are) changed.
+    name: commentChanged
+    fullName: commentChanged
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CommentChanged"'
+  - uid: 'excel!Excel.EventType.commentDeleted:member'
+    summary: >-
+      CommentDeleted represents the type of event that is registered on commentCollection, and occurs when comment(s)
+      is(are) deleted.
+    name: commentDeleted
+    fullName: commentDeleted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CommentDeleted"'
+  - uid: 'excel!Excel.EventType.linkedDataTypeRefreshRequestCompleted:member'
+    summary: >-
+      RefreshRequestCompleted represents the type of event registered on LinkedDataType, and occurs when a request to
+      refresh a data source is completed.
+    name: linkedDataTypeRefreshRequestCompleted
+    fullName: linkedDataTypeRefreshRequestCompleted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LinkedDataTypeRefreshRequestCompleted"'
   - uid: 'excel!Excel.EventType.ribbonCommandExecuted:member'
     summary: 'RibbonCommandExecuted represents the type of event registered on ribbon, and occurs when user click on ribbon'
     name: ribbonCommandExecuted

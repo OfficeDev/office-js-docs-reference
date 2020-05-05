@@ -39,7 +39,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartAxisFormat#font:member'
     summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.
+      Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
@@ -54,7 +54,7 @@ items:
           - 'excel!Excel.ChartFont:class'
   - uid: 'excel!Excel.ChartAxisFormat#line:member'
     summary: |-
-      Represents chart line formatting. Read-only.
+      Specifies chart line formatting.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line

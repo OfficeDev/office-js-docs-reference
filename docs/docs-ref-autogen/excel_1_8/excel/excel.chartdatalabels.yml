@@ -37,7 +37,7 @@ items:
       - 'excel!Excel.ChartDataLabels#verticalAlignment:member'
   - uid: 'excel!Excel.ChartDataLabels#autoText:member'
     summary: |-
-      Represents whether data labels automatically generate appropriate text based on context.
+      Specifies if data labels automatically generate appropriate text based on context.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoText
@@ -66,7 +66,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartDataLabels#format:member'
     summary: |-
-      Represents the format of chart data labels, which includes fill and font formatting. Read-only.
+      Specifies the format of chart data labels, which includes fill and font formatting.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -81,7 +81,7 @@ items:
           - 'excel!Excel.ChartDataLabelFormat:class'
   - uid: 'excel!Excel.ChartDataLabels#horizontalAlignment:member'
     summary: >-
-      Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details. This
+      Specifies the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details. This
       property is valid only when TextOrientation of data label is 0.
 
 
@@ -191,7 +191,7 @@ items:
                       }
   - uid: 'excel!Excel.ChartDataLabels#numberFormat:member'
     summary: |-
-      Represents the format code for data labels.
+      Specifies the format code for data labels.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
@@ -288,7 +288,7 @@ items:
             - 'excel!Excel.ChartDataLabels:class'
   - uid: 'excel!Excel.ChartDataLabels#showBubbleSize:member'
     summary: |-
-      Boolean value representing if the data label bubble size is visible or not.
+      Specifies if the data label bubble size is visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showBubbleSize
@@ -303,7 +303,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartDataLabels#showCategoryName:member'
     summary: |-
-      Boolean value representing if the data label category name is visible or not.
+      Specifies if the data label category name is visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showCategoryName
@@ -318,7 +318,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartDataLabels#showLegendKey:member'
     summary: |-
-      Boolean value representing if the data label legend key is visible or not.
+      Specifies if the data label legend key is visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showLegendKey
@@ -333,7 +333,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartDataLabels#showPercentage:member'
     summary: |-
-      Boolean value representing if the data label percentage is visible or not.
+      Specifies if the data label percentage is visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showPercentage
@@ -348,7 +348,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartDataLabels#showSeriesName:member'
     summary: |-
-      Boolean value representing if the data label series name is visible or not.
+      Specifies if the data label series name is visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showSeriesName
@@ -363,7 +363,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartDataLabels#showValue:member'
     summary: |-
-      Boolean value representing if the data label value is visible or not.
+      Specifies if the data label value is visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showValue

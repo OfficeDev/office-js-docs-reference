@@ -1075,7 +1075,7 @@ export declare namespace Excel {
         comparator?: Excel.FilterDatetime;
         /**
          *
-         * Indicates the condition for the filter, which defines the necessary filtering criteria.
+         * Specifies the condition for the filter, which defines the necessary filtering criteria.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -1211,7 +1211,7 @@ export declare namespace Excel {
         comparator?: string;
         /**
          *
-         * Indicates the condition for the filter, which defines the necessary filtering criteria.
+         * Specifies the condition for the filter, which defines the necessary filtering criteria.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -1290,7 +1290,7 @@ export declare namespace Excel {
         comparator?: number;
         /**
          *
-         * Indicates the condition for the filter, which defines the necessary filtering criteria.
+         * Specifies the condition for the filter, which defines the necessary filtering criteria.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -1314,7 +1314,7 @@ export declare namespace Excel {
         lowerBound?: number;
         /**
          *
-         * Indicates whether the filter is for the top/bottom N items, top/bottom N percent, or top/bottom N sum.
+         * Specifies if the filter is for the top/bottom N items, top/bottom N percent, or top/bottom N sum.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -2555,48 +2555,42 @@ export declare namespace Excel {
      *
      * Provides information about the worksheet's row hidden change event.
      *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.11]
      */
     export interface WorksheetRowHiddenChangedEventArgs {
         /**
          *
          * Gets the range address that represents the changed area of a specific worksheet.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.11]
          */
         address: string;
         /**
          *
          * Gets the type of change that represents how the event was triggered. See `Excel.RowHiddenChangeType` for details.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.11]
          */
         changeType: Excel.RowHiddenChangeType | "Unhidden" | "Hidden";
         /**
          *
          * Gets the source of the event. See Excel.EventSource for details.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.11]
          */
         source: Excel.EventSource | "Local" | "Remote";
         /**
          *
          * Gets the type of the event. See Excel.EventType for details.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.11]
          */
         type: "WorksheetRowHiddenChanged";
         /**
          *
          * Gets the id of the worksheet in which the data changed.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.11]
          */
         worksheetId: string;
     }
@@ -2933,7 +2927,7 @@ export declare namespace Excel {
         address: string;
         /**
          *
-         * Indicates if the selection is inside a table, address will be useless if IsInsideTable is false.
+         * Specifies if the selection is inside a table, address will be useless if IsInsideTable is false.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -2947,7 +2941,7 @@ export declare namespace Excel {
         tableId: string;
         /**
          *
-         * Gets the type of the event. See Excel.EventType for details. Read-only.
+         * Gets the type of the event. See Excel.EventType for details.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -3160,7 +3154,7 @@ export declare namespace Excel {
          * The address of the range that completed calculation.
                     If multiple ranges completed calculation, the string is a comma-separated list of those range addresses.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.11]
          */
         address: string;
         /**
@@ -3385,8 +3379,7 @@ export declare namespace Excel {
          *
          * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.11]
          */
         readonly cultureInfo: Excel.CultureInfo;
         /**
@@ -3400,7 +3393,7 @@ export declare namespace Excel {
         readonly iterativeCalculation: Excel.IterativeCalculation;
         /**
          *
-         * Returns the Excel calculation engine version used for the last full recalculation. Read-only.
+         * Returns the Excel calculation engine version used for the last full recalculation.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -3414,7 +3407,7 @@ export declare namespace Excel {
         calculationMode: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual";
         /**
          *
-         * Returns the calculation state of the application. See Excel.CalculationState for details. Read-only.
+         * Returns the calculation state of the application. See Excel.CalculationState for details.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -3423,25 +3416,22 @@ export declare namespace Excel {
          *
          * Gets the string used as the decimal separator for numeric values. This is based on Excel's local settings.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.11]
          */
         readonly decimalSeparator: string;
         /**
          *
          * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on Excel's local settings.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.11]
          */
         readonly thousandsSeparator: string;
         /**
          *
-         * Specifies whether the system separators of Microsoft Excel are enabled.
+         * Specifies if the system separators of Excel are enabled.
                     System separators include the decimal separator and thousands separator.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.11]
          */
         readonly useSystemSeparators: boolean;
         /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
@@ -3482,8 +3472,8 @@ export declare namespace Excel {
         suspendApiCalculationUntilNextSync(): void;
         /**
          * Suspends screen updating until the next `context.sync()` is called.
-         * 
-         * **Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will cause the Excel window to flicker.
+                    
+                     **Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will cause the Excel window to flicker.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -3533,14 +3523,14 @@ export declare namespace Excel {
         enabled: boolean;
         /**
          *
-         * Returns or sets the maximum amount of change between each iteration as Excel resolves circular references.
+         * Specifies the maximum amount of change between each iteration as Excel resolves circular references.
          *
          * [Api set: ExcelApi 1.9]
          */
         maxChange: number;
         /**
          *
-         * Returns or sets the maximum number of iterations that Excel can use to resolve a circular reference.
+         * Specifies the maximum number of iterations that Excel can use to resolve a circular reference.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -3598,147 +3588,147 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the Excel application instance that contains this workbook. Read-only.
+         * Represents the Excel application instance that contains this workbook.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly application: Excel.Application;
         /**
          *
-         * Represents a collection of bindings that are part of the workbook. Read-only.
+         * Represents a collection of bindings that are part of the workbook.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly bindings: Excel.BindingCollection;
         /**
          *
-         * Represents a collection of Comments associated with the workbook. Read-only.
+         * Represents a collection of Comments associated with the workbook.
          *
          * [Api set: ExcelApi 1.10]
          */
         readonly comments: Excel.CommentCollection;
         /**
          *
-         * Represents the collection of custom XML parts contained by this workbook. Read-only.
+         * Represents the collection of custom XML parts contained by this workbook.
          *
          * [Api set: ExcelApi 1.5]
          */
         readonly customXmlParts: Excel.CustomXmlPartCollection;
         /**
          *
-         * Represents all data connections in the workbook. Read-only.
+         * Represents all data connections in the workbook.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly dataConnections: Excel.DataConnectionCollection;
         /**
          *
-         * Represents a collection of worksheet functions that can be used for computation. Read-only.
+         * Represents a collection of worksheet functions that can be used for computation.
          *
          * [Api set: ExcelApi 1.2]
          */
         readonly functions: Excel.Functions;
         /**
          *
-         * Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
+         * Represents a collection of workbook scoped named items (named ranges and constants).
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly names: Excel.NamedItemCollection;
         /**
          *
-         * Represents a collection of PivotTableStyles associated with the workbook. Read-only.
+         * Represents a collection of PivotTableStyles associated with the workbook.
          *
          * [Api set: ExcelApi 1.10]
          */
         readonly pivotTableStyles: Excel.PivotTableStyleCollection;
         /**
          *
-         * Represents a collection of PivotTables associated with the workbook. Read-only.
+         * Represents a collection of PivotTables associated with the workbook.
          *
          * [Api set: ExcelApi 1.3]
          */
         readonly pivotTables: Excel.PivotTableCollection;
         /**
          *
-         * Gets the workbook properties. Read-only.
+         * Gets the workbook properties.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly properties: Excel.DocumentProperties;
         /**
          *
-         * Returns workbook protection object for a workbook. Read-only.
+         * Returns workbook protection object for a workbook.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly protection: Excel.WorkbookProtection;
         /**
          *
-         * Represents a collection of Settings associated with the workbook. Read-only.
+         * Represents a collection of Settings associated with the workbook.
          *
          * [Api set: ExcelApi 1.4]
          */
         readonly settings: Excel.SettingCollection;
         /**
          *
-         * Represents a collection of SlicerStyles associated with the workbook. Read-only.
+         * Represents a collection of SlicerStyles associated with the workbook.
          *
          * [Api set: ExcelApi 1.10]
          */
         readonly slicerStyles: Excel.SlicerStyleCollection;
         /**
          *
-         * Represents a collection of Slicers associated with the workbook. Read-only.
+         * Represents a collection of Slicers associated with the workbook.
          *
          * [Api set: ExcelApi 1.10]
          */
         readonly slicers: Excel.SlicerCollection;
         /**
          *
-         * Represents a collection of styles associated with the workbook. Read-only.
+         * Represents a collection of styles associated with the workbook.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly styles: Excel.StyleCollection;
         /**
          *
-         * Represents a collection of TableStyles associated with the workbook. Read-only.
+         * Represents a collection of TableStyles associated with the workbook.
          *
          * [Api set: ExcelApi 1.10]
          */
         readonly tableStyles: Excel.TableStyleCollection;
         /**
          *
-         * Represents a collection of tables associated with the workbook. Read-only.
+         * Represents a collection of tables associated with the workbook.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly tables: Excel.TableCollection;
         /**
          *
-         * Represents a collection of TimelineStyles associated with the workbook. Read-only.
+         * Represents a collection of TimelineStyles associated with the workbook.
          *
          * [Api set: ExcelApi 1.10]
          */
         readonly timelineStyles: Excel.TimelineStyleCollection;
         /**
          *
-         * Represents a collection of worksheets associated with the workbook. Read-only.
+         * Represents a collection of worksheets associated with the workbook.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly worksheets: Excel.WorksheetCollection;
         /**
          *
-         * Specifies whether or not the workbook is in autosave mode. Read-Only.
+         * Specifies if the workbook is in autosave mode.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly autoSave: boolean;
         /**
          *
-         * Returns a number about the version of Excel Calculation Engine. Read-Only.
+         * Returns a number about the version of Excel Calculation Engine.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -3753,7 +3743,7 @@ export declare namespace Excel {
         chartDataPointTrack: boolean;
         /**
          *
-         * Specifies whether or not changes have been made since the workbook was last saved.
+         * Specifies if changes have been made since the workbook was last saved.
                     You can set this property to true if you want to close a modified workbook without either saving it or being prompted to save it.
          *
          * [Api set: ExcelApi 1.9]
@@ -3761,25 +3751,33 @@ export declare namespace Excel {
         isDirty: boolean;
         /**
          *
-         * Gets the workbook name. Read-only.
+         * Gets the workbook name.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly name: string;
         /**
          *
-         * Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
+         * Specifies if the workbook has ever been saved locally or online.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly previouslySaved: boolean;
         /**
          *
-         * True if the workbook is open in Read-only mode. Read-only.
+         * True if the workbook is open in Read-only mode.
          *
          * [Api set: ExcelApi 1.8]
          */
         readonly readOnly: boolean;
+        /**
+         *
+         * Specifies whether the PivotTable's field list pane is shown at the workbook level.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        showPivotFieldList: boolean;
         /**
          *
          * True if the workbook uses the 1904 date system.
@@ -3813,8 +3811,7 @@ export declare namespace Excel {
         /**
          * Close current workbook.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.11]
          *
          * @param closeBehavior - workbook close behavior.
          */
@@ -3822,7 +3819,7 @@ export declare namespace Excel {
         /**
          * Close current workbook.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.11]
          *
          * @param closeBehaviorString - workbook close behavior.
          */
@@ -3879,8 +3876,7 @@ export declare namespace Excel {
         /**
          * Save current workbook.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.11]
          *
          * @param saveBehavior - workbook save behavior.
          */
@@ -3888,7 +3884,7 @@ export declare namespace Excel {
         /**
          * Save current workbook.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.11]
          *
          * @param saveBehaviorString - workbook save behavior.
          */
@@ -3949,7 +3945,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Indicates if the workbook is protected. Read-Only.
+         * Specifies if the workbook is protected.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -4039,28 +4035,28 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the AutoFilter object of the worksheet. Read-Only.
+         * Represents the AutoFilter object of the worksheet.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly autoFilter: Excel.AutoFilter;
         /**
          *
-         * Returns a collection of charts that are part of the worksheet. Read-only.
+         * Returns a collection of charts that are part of the worksheet.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly charts: Excel.ChartCollection;
         /**
          *
-         * Returns a collection of all the Comments objects on the worksheet. Read-only.
+         * Returns a collection of all the Comments objects on the worksheet.
          *
          * [Api set: ExcelApi 1.10]
          */
         readonly comments: Excel.CommentCollection;
         /**
          *
-         * Returns a collection of worksheet-level custom properties.
+         * Gets a collection of worksheet-level custom properties.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -4068,7 +4064,7 @@ export declare namespace Excel {
         readonly customProperties: Excel.WorksheetCustomPropertyCollection;
         /**
          *
-         * Gets an object that can be used to manipulate frozen panes on the worksheet. Read-only.
+         * Gets an object that can be used to manipulate frozen panes on the worksheet.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -4082,7 +4078,7 @@ export declare namespace Excel {
         readonly horizontalPageBreaks: Excel.PageBreakCollection;
         /**
          *
-         * Collection of names scoped to the current worksheet. Read-only.
+         * Collection of names scoped to the current worksheet.
          *
          * [Api set: ExcelApi 1.4]
          */
@@ -4096,35 +4092,35 @@ export declare namespace Excel {
         readonly pageLayout: Excel.PageLayout;
         /**
          *
-         * Collection of PivotTables that are part of the worksheet. Read-only.
+         * Collection of PivotTables that are part of the worksheet.
          *
          * [Api set: ExcelApi 1.3]
          */
         readonly pivotTables: Excel.PivotTableCollection;
         /**
          *
-         * Returns sheet protection object for a worksheet. Read-only.
+         * Returns sheet protection object for a worksheet.
          *
          * [Api set: ExcelApi 1.2]
          */
         readonly protection: Excel.WorksheetProtection;
         /**
          *
-         * Returns the collection of all the Shape objects on the worksheet. Read-only.
+         * Returns the collection of all the Shape objects on the worksheet.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly shapes: Excel.ShapeCollection;
         /**
          *
-         * Returns a collection of slicers that are part of the worksheet. Read-only.
+         * Returns a collection of slicers that are part of the worksheet.
          *
          * [Api set: ExcelApi 1.10]
          */
         readonly slicers: Excel.SlicerCollection;
         /**
          *
-         * Collection of tables that are part of the worksheet. Read-only.
+         * Collection of tables that are part of the worksheet.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -4138,7 +4134,7 @@ export declare namespace Excel {
         readonly verticalPageBreaks: Excel.PageBreakCollection;
         /**
          *
-         * Gets or sets the enableCalculation property of the worksheet.
+         * Determines if Excel should recalculate the worksheet when necessary.
                     True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
          *
          * [Api set: ExcelApi 1.9]
@@ -4146,7 +4142,7 @@ export declare namespace Excel {
         enableCalculation: boolean;
         /**
          *
-         * Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
+         * Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -4167,30 +4163,28 @@ export declare namespace Excel {
         position: number;
         /**
          *
-         * Gets or sets the worksheet's gridlines flag.
-                    This flag determines whether gridlines are visible to the user.
+         * Specifies if gridlines are visible to the user.
          *
          * [Api set: ExcelApi 1.8]
          */
         showGridlines: boolean;
         /**
          *
-         * Gets or sets the worksheet's headings flag.
-                    This flag determines whether headings are visible to the user.
+         * Specifies if headings are visible to the user.
          *
          * [Api set: ExcelApi 1.8]
          */
         showHeadings: boolean;
         /**
          *
-         * Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
+         * Returns the standard (default) height of all the rows in the worksheet, in points.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly standardHeight: number;
         /**
          *
-         * Returns or sets the standard (default) width of all the columns in the worksheet.
+         * Specifies the standard (default) width of all the columns in the worksheet.
                     One unit of column width is equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is used.
          *
          * [Api set: ExcelApi 1.7]
@@ -4198,7 +4192,7 @@ export declare namespace Excel {
         standardWidth: number;
         /**
          *
-         * Gets or sets the worksheet tab color.
+         * The tab color of the worksheet.
                     When retrieving the tab color, if the worksheet is invisible, the value will be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned. Otherwise, the property will be set to a color, in the form "#123456"
                     When setting the color, use an empty-string to set an "auto" color, or a real color otherwise.
          *
@@ -4483,10 +4477,9 @@ export declare namespace Excel {
          *
          * Occurs when the hidden state of one or more rows has changed on a specific worksheet.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.11]
          *
          * @eventproperty
-         * @beta
          */
         readonly onRowHiddenChanged: OfficeExtension.EventHandlers<Excel.WorksheetRowHiddenChangedEventArgs>;
         /**
@@ -4724,10 +4717,9 @@ export declare namespace Excel {
          *
          * Occurs when the hidden state of one or more rows has changed on a specific worksheet.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * [Api set: ExcelApi 1.11]
          *
          * @eventproperty
-         * @beta
          */
         readonly onRowHiddenChanged: OfficeExtension.EventHandlers<Excel.WorksheetRowHiddenChangedEventArgs>;
         /**
@@ -4776,14 +4768,14 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Sheet protection options. Read-only.
+         * Specifies the protection options for the worksheet.
          *
          * [Api set: ExcelApi 1.2]
          */
         readonly options: Excel.WorksheetProtectionOptions;
         /**
          *
-         * Indicates if the worksheet is protected. Read-only.
+         * Specifies if the worksheet is protected.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -5011,7 +5003,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Collection of ConditionalFormats that intersect the range. Read-only.
+         * The collection of ConditionalFormats that intersect the range.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -5025,49 +5017,49 @@ export declare namespace Excel {
         readonly dataValidation: Excel.DataValidation;
         /**
          *
-         * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties. Read-only.
+         * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly format: Excel.RangeFormat;
         /**
          *
-         * Represents the range sort of the current range. Read-only.
+         * Represents the range sort of the current range.
          *
          * [Api set: ExcelApi 1.2]
          */
         readonly sort: Excel.RangeSort;
         /**
          *
-         * The worksheet containing the current range. Read-only.
+         * The worksheet containing the current range.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly worksheet: Excel.Worksheet;
         /**
          *
-         * Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4"). Read-only.
+         * Specifies the range reference in A1-style. Address value will contain the Sheet reference (e.g., "Sheet1!A1:B4").
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly address: string;
         /**
          *
-         * Represents range reference for the specified range in the language of the user. Read-only.
+         * Specifies the range reference for the specified range in the language of the user.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly addressLocal: string;
         /**
          *
-         * Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
+         * Specifies the number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647).
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly cellCount: number;
         /**
          *
-         * Represents the total number of columns in the range. Read-only.
+         * Specifies the total number of columns in the range.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -5081,7 +5073,7 @@ export declare namespace Excel {
         columnHidden: boolean;
         /**
          *
-         * Represents the column number of the first cell in the range. Zero-indexed. Read-only.
+         * Specifies the column number of the first cell in the range. Zero-indexed.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -5119,14 +5111,14 @@ export declare namespace Excel {
         readonly hasSpill: boolean;
         /**
          *
-         * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
+         * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range.
          *
          * [Api set: ExcelApi 1.10]
          */
         readonly height: number;
         /**
          *
-         * Represents if all cells of the current range are hidden. Read-only.
+         * Represents if all cells of the current range are hidden.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -5140,28 +5132,28 @@ export declare namespace Excel {
         hyperlink: Excel.RangeHyperlink;
         /**
          *
-         * Represents if the current range is an entire column. Read-only.
+         * Represents if the current range is an entire column.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly isEntireColumn: boolean;
         /**
          *
-         * Represents if the current range is an entire row. Read-only.
+         * Represents if the current range is an entire row.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly isEntireRow: boolean;
         /**
          *
-         * Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range. Read-only.
+         * Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range.
          *
          * [Api set: ExcelApi 1.10]
          */
         readonly left: number;
         /**
          *
-         * Represents the data type state of each cell. Read-only.
+         * Represents the data type state of each cell.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -5175,7 +5167,7 @@ export declare namespace Excel {
         numberFormat: any[][];
         /**
          *
-         * Represents the category of number format of each cell. Read-only.
+         * Represents the category of number format of each cell.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -5192,7 +5184,7 @@ export declare namespace Excel {
         numberFormatLocal: any[][];
         /**
          *
-         * Returns the total number of rows in the range. Read-only.
+         * Returns the total number of rows in the range.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -5206,7 +5198,7 @@ export declare namespace Excel {
         rowHidden: boolean;
         /**
          *
-         * Returns the row number of the first cell in the range. Zero-indexed. Read-only.
+         * Returns the row number of the first cell in the range. Zero-indexed.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -5232,21 +5224,21 @@ export declare namespace Excel {
         style: string;
         /**
          *
-         * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
+         * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly text: string[][];
         /**
          *
-         * Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
+         * Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range.
          *
          * [Api set: ExcelApi 1.10]
          */
         readonly top: number;
         /**
          *
-         * Represents the type of data of each cell. Read-only.
+         * Specifies the type of data in each cell.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -5260,7 +5252,7 @@ export declare namespace Excel {
         values: any[][];
         /**
          *
-         * Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
+         * Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range.
          *
          * [Api set: ExcelApi 1.10]
          */
@@ -5545,8 +5537,7 @@ export declare namespace Excel {
         /**
          * Gets a scoped collection of PivotTables that overlap with the range.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param fullyContained - If true, returns only PivotTables that are fully contained within the range bounds. The default value is false.
          * @returns
@@ -5635,14 +5626,14 @@ export declare namespace Excel {
          */
         getSpecialCellsOrNullObject(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
         /**
-         * Gets the range object containing the anchor cell for a cell getting spilled into. Fails if applied to a range with more than one cell. Read-only.
+         * Gets the range object containing the anchor cell for a cell getting spilled into. Fails if applied to a range with more than one cell.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
         getSpillParent(): Excel.Range;
         /**
-         * Gets the range object containing the anchor cell for a cell getting spilled into. Read-only.
+         * Gets the range object containing the anchor cell for a cell getting spilled into.
                     If it is not a spill cell or more than once cells are give, a null object will be returned.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -5650,14 +5641,14 @@ export declare namespace Excel {
          */
         getSpillParentOrNullObject(): Excel.Range;
         /**
-         * Gets the range object containing the spill range when called on an anchor cell. Fails if applied to a range with more than one cell. Read-only.
+         * Gets the range object containing the spill range when called on an anchor cell. Fails if applied to a range with more than one cell.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
         getSpillingToRange(): Excel.Range;
         /**
-         * Gets the range object containing the spill range when called on an anchor cell. Read-only.
+         * Gets the range object containing the spill range when called on an anchor cell.
                     If the range is not an anchor cell or spill range can't be found, a null object will be returned.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -5766,7 +5757,7 @@ export declare namespace Excel {
          * Moves cell values, formatting, and formulas from current range to the destination range, replacing the old information in those cells.
                     The destination range will be expanded automatically if it is smaller than the current range. Any cells in the destination range that are outside of the original range's area are not changed.
          *
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.11]
          *
          * @param destinationRange - destinationRange Specifies the range to where the information in this range will be moved.
          */
@@ -5916,7 +5907,7 @@ export declare namespace Excel {
     export interface RangeReference {
         /**
          *
-         * Gets or sets the address of the range; for example 'SheetName!A1:B5'.
+         * The address of the range; for example 'SheetName!A1:B5'.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -5977,7 +5968,7 @@ export declare namespace Excel {
         readonly areas: Excel.RangeCollection;
         /**
          *
-         * Returns a collection of ConditionalFormats that intersect with any cells in this RangeAreas object. Read-only.
+         * Returns a collection of ConditionalFormats that intersect with any cells in this RangeAreas object.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -5991,28 +5982,28 @@ export declare namespace Excel {
         readonly dataValidation: Excel.DataValidation;
         /**
          *
-         * Returns a rangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the RangeAreas object. Read-only.
+         * Returns a RangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the RangeAreas object.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly format: Excel.RangeFormat;
         /**
          *
-         * Returns the worksheet for the current RangeAreas. Read-only.
+         * Returns the worksheet for the current RangeAreas.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly worksheet: Excel.Worksheet;
         /**
          *
-         * Returns the RageAreas reference in A1-style. Address value will contain the worksheet name for each rectangular block of cells (e.g. "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
+         * Returns the RangeAreas reference in A1-style. Address value will contain the worksheet name for each rectangular block of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4").
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly address: string;
         /**
          *
-         * Returns the RageAreas reference in the user locale. Read-only.
+         * Returns the RangeAreas reference in the user locale.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -6026,21 +6017,21 @@ export declare namespace Excel {
         readonly areaCount: number;
         /**
          *
-         * Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
+         * Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647).
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly cellCount: number;
         /**
          *
-         * Indicates whether all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z"). Read-only.
+         * Specifies if all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z").
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly isEntireColumn: boolean;
         /**
          *
-         * Indicates whether all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7"). Read-only.
+         * Specifies if all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7").
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -6278,7 +6269,7 @@ export declare namespace Excel {
     export interface SearchCriteria {
         /**
          *
-         * Specifies whether the match needs to be complete or partial.
+         * Specifies if the match needs to be complete or partial.
                     A complete match matches the entire contents of the cell. A partial match matches a substring within the content of the cell (e.g., `cat` partially matches `caterpillar` and `scatter`).
                     Default is false (partial).
          *
@@ -6287,7 +6278,7 @@ export declare namespace Excel {
         completeMatch?: boolean;
         /**
          *
-         * Specifies whether the match is case sensitive. Default is false (insensitive).
+         * Specifies if the match is case sensitive. Default is false (insensitive).
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -6309,7 +6300,7 @@ export declare namespace Excel {
     export interface WorksheetSearchCriteria {
         /**
          *
-         * Specifies whether the match needs to be complete or partial.
+         * Specifies if the match needs to be complete or partial.
                     A complete match matches the entire contents of the cell. A partial match matches a substring within the content of the cell (e.g., `cat` partially matches `caterpillar` and `scatter`).
                     Default is false (partial).
          *
@@ -6318,7 +6309,7 @@ export declare namespace Excel {
         completeMatch?: boolean;
         /**
          *
-         * Specifies whether the match is case sensitive. Default is false (insensitive).
+         * Specifies if the match is case sensitive. Default is false (insensitive).
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -6333,7 +6324,7 @@ export declare namespace Excel {
     export interface ReplaceCriteria {
         /**
          *
-         * Specifies whether the match needs to be complete or partial.
+         * Specifies if the match needs to be complete or partial.
                     A complete match matches the entire contents of the cell. A partial match matches a substring within the content of the cell (e.g., `cat` partially matches `caterpillar` and `scatter`).
                     Default is false (partial).
          *
@@ -6342,7 +6333,7 @@ export declare namespace Excel {
         completeMatch?: boolean;
         /**
          *
-         * Specifies whether the match is case sensitive. Default is false (insensitive).
+         * Specifies if the match is case sensitive. Default is false (insensitive).
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -6357,35 +6348,35 @@ export declare namespace Excel {
     export interface CellPropertiesFillLoadOptions {
         /**
          *
-         * Specifies whether to load on the `color` property.
+         * Specifies whether to load the `color` property.
          *
          * [Api set: ExcelApi 1.9]
          */
         color?: boolean;
         /**
          *
-         * Specifies whether to load on the `pattern` property.
+         * Specifies whether to load the `pattern` property.
          *
          * [Api set: ExcelApi 1.9]
          */
         pattern?: boolean;
         /**
          *
-         * Specifies whether to load on the `patternColor` property.
+         * Specifies whether to load the `patternColor` property.
          *
          * [Api set: ExcelApi 1.9]
          */
         patternColor?: boolean;
         /**
          *
-         * Specifies whether to load on the `patternTintAndShade` property.
+         * Specifies whether to load the `patternTintAndShade` property.
          *
          * [Api set: ExcelApi 1.9]
          */
         patternTintAndShade?: boolean;
         /**
          *
-         * Specifies whether to load on the `tintAndShade` property.
+         * Specifies whether to load the `tintAndShade` property.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -6759,21 +6750,21 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents a collection of range views associated with the range. Read-only.
+         * Represents a collection of range views associated with the range.
          *
          * [Api set: ExcelApi 1.3]
          */
         readonly rows: Excel.RangeViewCollection;
         /**
          *
-         * Represents the cell addresses of the RangeView. Read-only.
+         * Represents the cell addresses of the RangeView.
          *
          * [Api set: ExcelApi 1.3]
          */
         readonly cellAddresses: any[][];
         /**
          *
-         * Returns the number of visible columns. Read-only.
+         * The number of visible columns.
          *
          * [Api set: ExcelApi 1.3]
          */
@@ -6801,7 +6792,7 @@ export declare namespace Excel {
         formulasR1C1: any[][];
         /**
          *
-         * Returns a value that represents the index of the RangeView. Read-only.
+         * Returns a value that represents the index of the RangeView.
          *
          * [Api set: ExcelApi 1.3]
          */
@@ -6815,21 +6806,21 @@ export declare namespace Excel {
         numberFormat: any[][];
         /**
          *
-         * Returns the number of visible rows. Read-only.
+         * The number of visible rows.
          *
          * [Api set: ExcelApi 1.3]
          */
         readonly rowCount: number;
         /**
          *
-         * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
+         * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.
          *
          * [Api set: ExcelApi 1.3]
          */
         readonly text: string[][];
         /**
          *
-         * Represents the type of data of each cell. Read-only.
+         * Represents the type of data of each cell.
          *
          * [Api set: ExcelApi 1.3]
          */
@@ -7023,7 +7014,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Returns the key that represents the id of the Setting. Read-only.
+         * The key that represents the id of the Setting.
          *
          * [Api set: ExcelApi 1.4]
          */
@@ -7172,7 +7163,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Returns an object containing values and types of the named item. Read-only.
+         * Returns an object containing values and types of the named item.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -7193,49 +7184,49 @@ export declare namespace Excel {
         readonly worksheetOrNullObject: Excel.Worksheet;
         /**
          *
-         * Represents the comment associated with this name.
+         * Specifies the comment associated with this name.
          *
          * [Api set: ExcelApi 1.4]
          */
         comment: string;
         /**
          *
-         * Gets or sets the formula of the named item.  Formula always starts with a '=' sign.
+         * The formula of the named item. Formula always starts with a '=' sign.
          *
          * [Api set: ExcelApi 1.7]
          */
         formula: any;
         /**
          *
-         * The name of the object. Read-only.
+         * The name of the object.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly name: string;
         /**
          *
-         * Indicates whether the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet, Workbook. Read-only.
+         * Specifies if the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet, Workbook.
          *
          * [Api set: ExcelApi 1.4]
          */
         readonly scope: Excel.NamedItemScope | "Worksheet" | "Workbook";
         /**
          *
-         * Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
+         * Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.
          *
          * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
          */
         readonly type: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array";
         /**
          *
-         * Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
+         * Represents the value computed by the name's formula. For a named range, will return the range address.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly value: any;
         /**
          *
-         * Specifies whether the object is visible or not.
+         * Specifies if the object is visible.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -7360,14 +7351,14 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents binding identifier. Read-only.
+         * Represents binding identifier.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly id: string;
         /**
          *
-         * Returns the type of the binding. See Excel.BindingType for details. Read-only.
+         * Returns the type of the binding. See Excel.BindingType for details.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -7458,7 +7449,7 @@ export declare namespace Excel {
         readonly items: Excel.Binding[];
         /**
          *
-         * Returns the number of bindings in the collection. Read-only.
+         * Returns the number of bindings in the collection.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -7592,7 +7583,7 @@ export declare namespace Excel {
         readonly items: Excel.Table[];
         /**
          *
-         * Returns the number of tables in the workbook. Read-only.
+         * Returns the number of tables in the workbook.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -7764,28 +7755,28 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the AutoFilter object of the table. Read-Only.
+         * Represents the AutoFilter object of the table.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly autoFilter: Excel.AutoFilter;
         /**
          *
-         * Represents a collection of all the columns in the table. Read-only.
+         * Represents a collection of all the columns in the table.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly columns: Excel.TableColumnCollection;
         /**
          *
-         * Represents a collection of all the rows in the table. Read-only.
+         * Represents a collection of all the rows in the table.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly rows: Excel.TableRowCollection;
         /**
          *
-         * Represents the sorting for the table. Read-only.
+         * Represents the sorting for the table.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -7800,28 +7791,28 @@ export declare namespace Excel {
         readonly tableStyle: Excel.TableStyle;
         /**
          *
-         * The worksheet containing the current table. Read-only.
+         * The worksheet containing the current table.
          *
          * [Api set: ExcelApi 1.2]
          */
         readonly worksheet: Excel.Worksheet;
         /**
          *
-         * Indicates whether the first column contains special formatting.
+         * Specifies if the first column contains special formatting.
          *
          * [Api set: ExcelApi 1.3]
          */
         highlightFirstColumn: boolean;
         /**
          *
-         * Indicates whether the last column contains special formatting.
+         * Specifies if the last column contains special formatting.
          *
          * [Api set: ExcelApi 1.3]
          */
         highlightLastColumn: boolean;
         /**
          *
-         * Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed. Read-only.
+         * Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -7844,35 +7835,35 @@ export declare namespace Excel {
         name: string;
         /**
          *
-         * Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
+         * Specifies if the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
          *
          * [Api set: ExcelApi 1.3]
          */
         showBandedColumns: boolean;
         /**
          *
-         * Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
+         * Specifies if the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
          *
          * [Api set: ExcelApi 1.3]
          */
         showBandedRows: boolean;
         /**
          *
-         * Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
+         * Specifies if the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
          *
          * [Api set: ExcelApi 1.3]
          */
         showFilterButton: boolean;
         /**
          *
-         * Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+         * Specifies if the header row is visible. This value can be set to show or remove the header row.
          *
          * [Api set: ExcelApi 1.1]
          */
         showHeaders: boolean;
         /**
          *
-         * Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+         * Specifies if the total row is visible. This value can be set to show or remove the total row.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -8030,7 +8021,7 @@ export declare namespace Excel {
         readonly items: Excel.TableColumn[];
         /**
          *
-         * Returns the number of columns in the table. Read-only.
+         * Returns the number of columns in the table.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -8110,28 +8101,28 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Retrieve the filter applied to the column. Read-only.
+         * Retrieve the filter applied to the column.
          *
          * [Api set: ExcelApi 1.2]
          */
         readonly filter: Excel.Filter;
         /**
          *
-         * Returns a unique key that identifies the column within the table. Read-only.
+         * Returns a unique key that identifies the column within the table.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly id: number;
         /**
          *
-         * Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
+         * Returns the index number of the column within the columns collection of the table. Zero-indexed.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly index: number;
         /**
          *
-         * Represents the name of the table column.
+         * Specifies the name of the table column.
          *
          * [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
          */
@@ -8232,7 +8223,7 @@ export declare namespace Excel {
         readonly items: Excel.TableRow[];
         /**
          *
-         * Returns the number of rows in the table. Read-only.
+         * Returns the number of rows in the table.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -8310,7 +8301,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
+         * Returns the index number of the row within the rows collection of the table. Zero-indexed.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -8394,7 +8385,7 @@ export declare namespace Excel {
         errorAlert: Excel.DataValidationErrorAlert;
         /**
          *
-         * Ignore blanks: no data validation will be performed on blank cells, it defaults to true.
+         * Specifies if data validation will be performed on blank cells, it defaults to true.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -8716,14 +8707,14 @@ export declare namespace Excel {
         message: string;
         /**
          *
-         * Determines whether to show an error alert dialog or not when a user enters invalid data. The default is true.
+         * Specifies whether to show an error alert dialog when a user enters invalid data. The default is true.
          *
          * [Api set: ExcelApi 1.8]
          */
         showAlert: boolean;
         /**
          *
-         * Represents data validation alert type, please see Excel.DataValidationAlertStyle for details.
+         * The data validation alert type, please see Excel.DataValidationAlertStyle for details.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -8745,21 +8736,21 @@ export declare namespace Excel {
     export interface DataValidationPrompt {
         /**
          *
-         * Represents the message of the prompt.
+         * Specifies the message of the prompt.
          *
          * [Api set: ExcelApi 1.8]
          */
         message: string;
         /**
          *
-         * Determines whether or not to show the prompt when user selects a cell with data validation.
+         * Specifies if a prompt is shown when a user selects a cell with data validation.
          *
          * [Api set: ExcelApi 1.8]
          */
         showPrompt: boolean;
         /**
          *
-         * Represents the title for the prompt.
+         * Specifies the title for the prompt.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -8776,42 +8767,42 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Collection of border objects that apply to the overall range. Read-only.
+         * Collection of border objects that apply to the overall range.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly borders: Excel.RangeBorderCollection;
         /**
          *
-         * Returns the fill object defined on the overall range. Read-only.
+         * Returns the fill object defined on the overall range.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly fill: Excel.RangeFill;
         /**
          *
-         * Returns the font object defined on the overall range. Read-only.
+         * Returns the font object defined on the overall range.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly font: Excel.RangeFont;
         /**
          *
-         * Returns the format protection object for a range. Read-only.
+         * Returns the format protection object for a range.
          *
          * [Api set: ExcelApi 1.2]
          */
         readonly protection: Excel.FormatProtection;
         /**
          *
-         * Indicates if text is automatically indented when text alignment is set to equal distribution.
+         * Specifies if text is automatically indented when text alignment is set to equal distribution.
          *
          * [Api set: ExcelApi 1.9]
          */
         autoIndent: boolean;
         /**
          *
-         * Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.
+         * Specifies the width of all colums within the range. If the column widths are not uniform, null will be returned.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -8839,21 +8830,21 @@ export declare namespace Excel {
         readingOrder: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft";
         /**
          *
-         * Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
+         * The height of all rows in the range. If the row heights are not uniform, null will be returned.
          *
          * [Api set: ExcelApi 1.2]
          */
         rowHeight: number;
         /**
          *
-         * Indicates if text automatically shrinks to fit in the available column width.
+         * Specifies if text automatically shrinks to fit in the available column width.
          *
          * [Api set: ExcelApi 1.9]
          */
         shrinkToFit: boolean;
         /**
          *
-         * Gets or sets the text orientation of all the cells within the range.
+         * The text orientation of all the cells within the range.
                     The text orientation should be an integer either from -90 to 90, or 180 for vertically-oriented text.
                     If the orientation within a range are not uniform, then null will be returned.
          *
@@ -8872,7 +8863,7 @@ export declare namespace Excel {
         useStandardHeight: boolean;
         /**
          *
-         * Indicates whether the column width of the Range object equals the standard width of the sheet.
+         * Specifies if the column width of the Range object equals the standard width of the sheet.
                     Returns True if the column width of the Range object equals the standard width of the sheet.
                     Returns Null if the range contains more than one column and the columns aren't all the same height.
                     Returns False otherwise.
@@ -8889,7 +8880,7 @@ export declare namespace Excel {
         verticalAlignment: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed";
         /**
          *
-         * Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
+         * Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -8911,7 +8902,7 @@ export declare namespace Excel {
         /**
          * Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in characters.
          *
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.11]
          *
          * @param amount - The number of character spaces by which the current indent is adjusted. This value should be between -250 and 250.
                     **Note**: If the amount would raise the indent level above 250, the indent level stays with 250.
@@ -8968,14 +8959,14 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
+         * Specifies if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
          *
          * [Api set: ExcelApi 1.2]
          */
         formulaHidden: boolean;
         /**
          *
-         * Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.
+         * Specifies if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -9032,14 +9023,14 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * HTML color code representing the color of the background, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
+         * HTML color code representing the color of the background, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange")
          *
          * [Api set: ExcelApi 1.1]
          */
         color: string;
         /**
          *
-         * Gets or sets the pattern of a Range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are not supported.
+         * The pattern of a range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are not supported.
                     A null value indicates that the entire range doesn't have uniform pattern setting.
          *
          * [Api set: ExcelApi 1.9]
@@ -9047,15 +9038,14 @@ export declare namespace Excel {
         pattern: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
         /**
          *
-         * Sets HTML color code representing the color of the Range pattern, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-                    Gets HTML color code representing the color of the Range pattern, of the form #RRGGBB (e.g. "FFA500").
+         * The HTML color code representing the color of the range pattern, of the form #RRGGBB (e.g., "FFA500").
          *
          * [Api set: ExcelApi 1.9]
          */
         patternColor: string;
         /**
          *
-         * Returns or sets a double that lightens or darkens a pattern color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+         * Specifies a double that lightens or darkens a pattern color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
                     If the pattern tintAndShades are not uniform, null will be returned.
          *
          * [Api set: ExcelApi 1.9]
@@ -9063,7 +9053,7 @@ export declare namespace Excel {
         patternTintAndShade: number;
         /**
          *
-         * Returns or sets a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+         * Specifies a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
                     If the tintAndShades are not uniform, null will be returned.
          *
          * [Api set: ExcelApi 1.9]
@@ -9127,14 +9117,14 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+         * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
          *
          * [Api set: ExcelApi 1.1]
          */
         color: string;
         /**
          *
-         * Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
+         * Constant value that indicates the specific side of the border. See Excel.BorderIndex for details.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -9148,7 +9138,7 @@ export declare namespace Excel {
         style: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot";
         /**
          *
-         * Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+         * Specifies a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
                     A null value indicates that the border doesn't have uniform tintAndShade setting.
          *
          * [Api set: ExcelApi 1.9]
@@ -9215,14 +9205,14 @@ export declare namespace Excel {
         readonly items: Excel.RangeBorder[];
         /**
          *
-         * Number of border objects in the collection. Read-only.
+         * Number of border objects in the collection.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly count: number;
         /**
          *
-         * Returns or sets a double that lightens or darkens a color for Range Borders, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+         * Specifies a double that lightens or darkens a color for Range Borders, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
                     A null value indicates that the entire border collections don't have uniform tintAndShade setting.
          *
          * [Api set: ExcelApi 1.9]
@@ -9294,21 +9284,21 @@ export declare namespace Excel {
         bold: boolean;
         /**
          *
-         * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+         * HTML color code representation of the text color. e.g., #FF0000 represents Red.
          *
          * [Api set: ExcelApi 1.1]
          */
         color: string;
         /**
          *
-         * Represents the italic status of the font.
+         * Specifies the italic status of the font.
          *
          * [Api set: ExcelApi 1.1]
          */
         italic: boolean;
         /**
          *
-         * Font name (e.g. "Calibri")
+         * Font name (e.g., "Calibri")
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -9322,14 +9312,14 @@ export declare namespace Excel {
         size: number;
         /**
          *
-         * Represents the strikethrough status of font. A null value indicates that the entire range doesn't have uniform Strikethrough setting.
+         * Specifies the strikethrough status of font. A null value indicates that the entire range doesn't have uniform Strikethrough setting.
          *
          * [Api set: ExcelApi 1.9]
          */
         strikethrough: boolean;
         /**
          *
-         * Represents the Subscript status of font.
+         * Specifies the Subscript status of font.
                     Returns True if all the fonts of the range are Subscript.
                     Returns False if all the fonts of the range are Superscript or normal (neither Superscript, nor Subscript).
                     Returns Null otherwise.
@@ -9339,7 +9329,7 @@ export declare namespace Excel {
         subscript: boolean;
         /**
          *
-         * Represents the Superscript status of font.
+         * Specifies the Superscript status of font.
                     Returns True if all the fonts of the range are Superscript.
                     Returns False if all the fonts of the range are Subscript or normal (neither Superscript, nor Subscript).
                     Returns Null otherwise.
@@ -9349,7 +9339,7 @@ export declare namespace Excel {
         superscript: boolean;
         /**
          *
-         * Returns or sets a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+         * Specifies a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
                     A null value indicates that the entire range doesn't have uniform font tintAndShade setting.
          *
          * [Api set: ExcelApi 1.9]
@@ -9416,7 +9406,7 @@ export declare namespace Excel {
         readonly items: Excel.Chart[];
         /**
          *
-         * Returns the number of charts in the worksheet. Read-only.
+         * Returns the number of charts in the worksheet.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -9544,35 +9534,35 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents chart axes. Read-only.
+         * Represents chart axes.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly axes: Excel.ChartAxes;
         /**
          *
-         * Represents the datalabels on the chart. Read-only.
+         * Represents the datalabels on the chart.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly dataLabels: Excel.ChartDataLabels;
         /**
          *
-         * Encapsulates the format properties for the chart area. Read-only.
+         * Encapsulates the format properties for the chart area.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly format: Excel.ChartAreaFormat;
         /**
          *
-         * Represents the legend for the chart. Read-only.
+         * Represents the legend for the chart.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly legend: Excel.ChartLegend;
         /**
          *
-         * Encapsulates the options for a pivot chart. Read-only.
+         * Encapsulates the options for a pivot chart.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -9586,28 +9576,28 @@ export declare namespace Excel {
         readonly plotArea: Excel.ChartPlotArea;
         /**
          *
-         * Represents either a single series or collection of series in the chart. Read-only.
+         * Represents either a single series or collection of series in the chart.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly series: Excel.ChartSeriesCollection;
         /**
          *
-         * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title. Read-only.
+         * Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly title: Excel.ChartTitle;
         /**
          *
-         * The worksheet containing the current chart. Read-only.
+         * The worksheet containing the current chart.
          *
          * [Api set: ExcelApi 1.2]
          */
         readonly worksheet: Excel.Worksheet;
         /**
          *
-         * Returns or sets a ChartCategoryLabelLevel enumeration constant referring to
+         * Specifies a ChartCategoryLabelLevel enumeration constant referring to
                     the level of where the category labels are being sourced from. Read/Write.
          *
          * [Api set: ExcelApi 1.8]
@@ -9615,28 +9605,28 @@ export declare namespace Excel {
         categoryLabelLevel: number;
         /**
          *
-         * Represents the type of the chart. See Excel.ChartType for details.
+         * Specifies the type of the chart. See Excel.ChartType for details.
          *
          * [Api set: ExcelApi 1.7]
          */
         chartType: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
         /**
          *
-         * Returns or sets the way that blank cells are plotted on a chart. Read/Write.
+         * Specifies the way that blank cells are plotted on a chart.
          *
          * [Api set: ExcelApi 1.8]
          */
         displayBlanksAs: Excel.ChartDisplayBlanksAs | "NotPlotted" | "Zero" | "Interplotted";
         /**
          *
-         * Represents the height, in points, of the chart object.
+         * Specifies the height, in points, of the chart object.
          *
          * [Api set: ExcelApi 1.1]
          */
         height: number;
         /**
          *
-         * The unique id of chart. Read-only.
+         * The unique id of chart.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -9650,43 +9640,43 @@ export declare namespace Excel {
         left: number;
         /**
          *
-         * Represents the name of a chart object.
+         * Specifies the name of a chart object.
          *
          * [Api set: ExcelApi 1.1]
          */
         name: string;
         /**
          *
-         * Returns or sets the way columns or rows are used as data series on the chart. Read/Write.
+         * Specifies the way columns or rows are used as data series on the chart.
          *
          * [Api set: ExcelApi 1.8]
          */
         plotBy: Excel.ChartPlotBy | "Rows" | "Columns";
         /**
          *
-         * True if only visible cells are plotted. False if both visible and hidden cells are plotted. Read/Write.
+         * True if only visible cells are plotted. False if both visible and hidden cells are plotted.
          *
          * [Api set: ExcelApi 1.8]
          */
         plotVisibleOnly: boolean;
         /**
          *
-         * Returns or sets a ChartSeriesNameLevel enumeration constant referring to
-                    the level of where the series names are being sourced from. Read/Write.
+         * Specifies a ChartSeriesNameLevel enumeration constant referring to
+                    the level of where the series names are being sourced from.
          *
          * [Api set: ExcelApi 1.8]
          */
         seriesNameLevel: number;
         /**
          *
-         * Represents whether to display all field buttons on a PivotChart.
+         * Specifies whether to display all field buttons on a PivotChart.
          *
          * [Api set: ExcelApi 1.7]
          */
         showAllFieldButtons: boolean;
         /**
          *
-         * Represents whether to show the data labels when the value is greater than the maximum value on the value axis.
+         * Specifies whether to show the data labels when the value is greater than the maximum value on the value axis.
                     If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
                     This property applies to 2-D charts only.
          *
@@ -9695,21 +9685,21 @@ export declare namespace Excel {
         showDataLabelsOverMaximum: boolean;
         /**
          *
-         * Returns or sets the chart style for the chart. Read/Write.
+         * Specifies the chart style for the chart.
          *
          * [Api set: ExcelApi 1.8]
          */
         style: number;
         /**
          *
-         * Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
+         * Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
          *
          * [Api set: ExcelApi 1.1]
          */
         top: number;
         /**
          *
-         * Represents the width, in points, of the chart object.
+         * Specifies the width, in points, of the chart object.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -9845,28 +9835,28 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Specifies whether or not to display the axis field buttons on a PivotChart. The ShowAxisFieldButtons property corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab, which is available when a PivotChart is selected.
+         * Specifies whether to display the axis field buttons on a PivotChart. The ShowAxisFieldButtons property corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab, which is available when a PivotChart is selected.
          *
          * [Api set: ExcelApi 1.9]
          */
         showAxisFieldButtons: boolean;
         /**
          *
-         * Specifies whether or not to display the legend field buttons on a PivotChart.
+         * Specifies whether to display the legend field buttons on a PivotChart.
          *
          * [Api set: ExcelApi 1.9]
          */
         showLegendFieldButtons: boolean;
         /**
          *
-         * Specifies whether or not to display the report filter field buttons on a PivotChart.
+         * Specifies whether to display the report filter field buttons on a PivotChart.
          *
          * [Api set: ExcelApi 1.9]
          */
         showReportFilterFieldButtons: boolean;
         /**
          *
-         * Specifies whether or not to display the show value field buttons on a PivotChart.
+         * Specifies whether to display the show value field buttons on a PivotChart.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -9923,35 +9913,35 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the border format of chart area, which includes color, linestyle, and weight. Read-only.
+         * Represents the border format of chart area, which includes color, linestyle, and weight.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly border: Excel.ChartBorder;
         /**
          *
-         * Represents the fill format of an object, which includes background formatting information. Read-only.
+         * Represents the fill format of an object, which includes background formatting information.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly fill: Excel.ChartFill;
         /**
          *
-         * Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.
+         * Represents the font attributes (font name, font size, color, etc.) for the current object.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly font: Excel.ChartFont;
         /**
          *
-         * Returns or sets color scheme of the chart. Read/Write.
+         * Specifies the color scheme of the chart.
          *
          * [Api set: ExcelApi 1.9]
          */
         colorScheme: Excel.ChartColorScheme | "ColorfulPalette1" | "ColorfulPalette2" | "ColorfulPalette3" | "ColorfulPalette4" | "MonochromaticPalette1" | "MonochromaticPalette2" | "MonochromaticPalette3" | "MonochromaticPalette4" | "MonochromaticPalette5" | "MonochromaticPalette6" | "MonochromaticPalette7" | "MonochromaticPalette8" | "MonochromaticPalette9" | "MonochromaticPalette10" | "MonochromaticPalette11" | "MonochromaticPalette12" | "MonochromaticPalette13";
         /**
          *
-         * Specifies whether or not chart area of the chart has rounded corners. Read/Write.
+         * Specifies if the chart area of the chart has rounded corners.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -10010,7 +10000,7 @@ export declare namespace Excel {
         readonly items: Excel.ChartSeries[];
         /**
          *
-         * Returns the number of series in the collection. Read-only.
+         * Returns the number of series in the collection.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -10073,14 +10063,14 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Encapsulates the bin options for histogram charts and pareto charts. Read-only.
+         * Encapsulates the bin options for histogram charts and pareto charts.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly binOptions: Excel.ChartBinOptions;
         /**
          *
-         * Encapsulates the options for the box and whisker charts. Read-only.
+         * Encapsulates the options for the box and whisker charts.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -10094,28 +10084,28 @@ export declare namespace Excel {
         readonly dataLabels: Excel.ChartDataLabels;
         /**
          *
-         * Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
+         * Represents the formatting of a chart series, which includes fill and line formatting.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly format: Excel.ChartSeriesFormat;
         /**
          *
-         * Encapsulates the options for a region map chart. Read-only.
+         * Encapsulates the options for a region map chart.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly mapOptions: Excel.ChartMapOptions;
         /**
          *
-         * Represents a collection of all points in the series. Read-only.
+         * Returns a collection of all points in the series.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly points: Excel.ChartPointsCollection;
         /**
          *
-         * Represents a collection of trendlines in the series. Read-only.
+         * The collection of trendlines in the series.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -10136,14 +10126,14 @@ export declare namespace Excel {
         readonly yErrorBars: Excel.ChartErrorBars;
         /**
          *
-         * Returns or sets the group for the specified series. Read/Write
+         * Specifies the group for the specified series.
          *
          * [Api set: ExcelApi 1.8]
          */
         axisGroup: Excel.ChartAxisGroup | "Primary" | "Secondary";
         /**
          *
-         * This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property only applies to bubble charts. Read/Write.
+         * This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property only applies to bubble charts.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -10165,21 +10155,21 @@ export declare namespace Excel {
         doughnutHoleSize: number;
         /**
          *
-         * Returns or sets the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie). Read/Write.
+         * Specifies the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie).
          *
          * [Api set: ExcelApi 1.8]
          */
         explosion: number;
         /**
          *
-         * Boolean value representing if the series is filtered or not. Not applicable for surface charts.
+         * Specifies if the series is filtered. Not applicable for surface charts.
          *
          * [Api set: ExcelApi 1.7]
          */
         filtered: boolean;
         /**
          *
-         * Returns or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
+         * Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -10194,203 +10184,203 @@ export declare namespace Excel {
         gapWidth: number;
         /**
          *
-         * Returns or sets the color for maximum value of a region map chart series. Read/Write.
+         * Specifies the color for maximum value of a region map chart series.
          *
          * [Api set: ExcelApi 1.9]
          */
         gradientMaximumColor: string;
         /**
          *
-         * Returns or sets the type for maximum value of a region map chart series. Read/Write.
+         * Specifies the type for maximum value of a region map chart series.
          *
          * [Api set: ExcelApi 1.9]
          */
         gradientMaximumType: Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent";
         /**
          *
-         * Returns or sets the maximum value of a region map chart series. Read/Write.
+         * Specifies the maximum value of a region map chart series.
          *
          * [Api set: ExcelApi 1.9]
          */
         gradientMaximumValue: number;
         /**
          *
-         * Returns or sets the color for midpoint value of a region map chart series. Read/Write.
+         * Specifies the color for midpoint value of a region map chart series.
          *
          * [Api set: ExcelApi 1.9]
          */
         gradientMidpointColor: string;
         /**
          *
-         * Returns or sets the type for midpoint value of a region map chart series. Read/Write.
+         * Specifies the type for midpoint value of a region map chart series.
          *
          * [Api set: ExcelApi 1.9]
          */
         gradientMidpointType: Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent";
         /**
          *
-         * Returns or sets the midpoint value of a region map chart series. Read/Write.
+         * Specifies the midpoint value of a region map chart series.
          *
          * [Api set: ExcelApi 1.9]
          */
         gradientMidpointValue: number;
         /**
          *
-         * Returns or sets the color for minimum value of a region map chart series. Read/Write.
+         * Specifies the color for minimum value of a region map chart series.
          *
          * [Api set: ExcelApi 1.9]
          */
         gradientMinimumColor: string;
         /**
          *
-         * Returns or sets the type for minimum value of a region map chart series. Read/Write.
+         * Specifies the type for minimum value of a region map chart series.
          *
          * [Api set: ExcelApi 1.9]
          */
         gradientMinimumType: Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent";
         /**
          *
-         * Returns or sets the minimum value of a region map chart series. Read/Write.
+         * Specifies the minimum value of a region map chart series.
          *
          * [Api set: ExcelApi 1.9]
          */
         gradientMinimumValue: number;
         /**
          *
-         * Returns or sets series gradient style of a region map chart. Read/Write.
+         * Specifies the series gradient style of a region map chart.
          *
          * [Api set: ExcelApi 1.9]
          */
         gradientStyle: Excel.ChartGradientStyle | "TwoPhaseColor" | "ThreePhaseColor";
         /**
          *
-         * Boolean value representing if the series has data labels or not.
+         * Specifies if the series has data labels.
          *
          * [Api set: ExcelApi 1.7]
          */
         hasDataLabels: boolean;
         /**
          *
-         * Returns or sets the fill color for negative data points in a series. Read/Write.
+         * Specifies the fill color for negative data points in a series.
          *
          * [Api set: ExcelApi 1.9]
          */
         invertColor: string;
         /**
          *
-         * True if Microsoft Excel inverts the pattern in the item when it corresponds to a negative number. Read/Write.
+         * True if Excel inverts the pattern in the item when it corresponds to a negative number.
          *
          * [Api set: ExcelApi 1.8]
          */
         invertIfNegative: boolean;
         /**
          *
-         * Represents markers background color of a chart series.
+         * Specifies the markers background color of a chart series.
          *
          * [Api set: ExcelApi 1.7]
          */
         markerBackgroundColor: string;
         /**
          *
-         * Represents markers foreground color of a chart series.
+         * Specifies the markers foreground color of a chart series.
          *
          * [Api set: ExcelApi 1.7]
          */
         markerForegroundColor: string;
         /**
          *
-         * Represents marker size of a chart series.
+         * Specifies the marker size of a chart series.
          *
          * [Api set: ExcelApi 1.7]
          */
         markerSize: number;
         /**
          *
-         * Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
+         * Specifies the marker style of a chart series. See Excel.ChartMarkerStyle for details.
          *
          * [Api set: ExcelApi 1.7]
          */
         markerStyle: Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture";
         /**
          *
-         * Represents the name of a series in a chart.
+         * Specifies the name of a series in a chart.
          *
          * [Api set: ExcelApi 1.1]
          */
         name: string;
         /**
          *
-         * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write.
+         * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
          *
          * [Api set: ExcelApi 1.8]
          */
         overlap: number;
         /**
          *
-         * Returns or sets the series parent label strategy area for a treemap chart. Read/Write.
+         * Specifies the series parent label strategy area for a treemap chart.
          *
          * [Api set: ExcelApi 1.9]
          */
         parentLabelStrategy: Excel.ChartParentLabelStrategy | "None" | "Banner" | "Overlapping";
         /**
          *
-         * Represents the plot order of a chart series within the chart group.
+         * Specifies the plot order of a chart series within the chart group.
          *
          * [Api set: ExcelApi 1.7]
          */
         plotOrder: number;
         /**
          *
-         * Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write.
+         * Specifies the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
          *
          * [Api set: ExcelApi 1.8]
          */
         secondPlotSize: number;
         /**
          *
-         * Specifies whether or not connector lines are shown in waterfall charts. Read/Write.
+         * Specifies whether connector lines are shown in waterfall charts.
          *
          * [Api set: ExcelApi 1.9]
          */
         showConnectorLines: boolean;
         /**
          *
-         * Specifies whether or not leader lines are displayed for each data label in the series. Read/Write.
+         * Specifies whether leader lines are displayed for each data label in the series.
          *
          * [Api set: ExcelApi 1.9]
          */
         showLeaderLines: boolean;
         /**
          *
-         * Boolean value representing if the series has a shadow or not.
+         * Specifies if the series has a shadow.
          *
          * [Api set: ExcelApi 1.7]
          */
         showShadow: boolean;
         /**
          *
-         * Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
+         * Specifies if the series is smooth. Only applicable to line and scatter charts.
          *
          * [Api set: ExcelApi 1.7]
          */
         smooth: boolean;
         /**
          *
-         * Returns or sets the way the two sections of either a pie of pie chart or a bar of pie chart are split. Read/Write.
+         * Specifies the way the two sections of either a pie of pie chart or a bar of pie chart are split.
          *
          * [Api set: ExcelApi 1.8]
          */
         splitType: Excel.ChartSplitType | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit";
         /**
          *
-         * Returns or sets the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie chart. Read/Write.
+         * Specifies the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie chart.
          *
          * [Api set: ExcelApi 1.9]
          */
         splitValue: number;
         /**
          *
-         * True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one series. Read/Write.
+         * True if Excel assigns a different color or pattern to each data marker. The chart must contain only one series.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -10433,7 +10423,7 @@ export declare namespace Excel {
          */
         getDimensionValues(dimensionString: "Categories" | "Values" | "XValues" | "YValues"): OfficeExtension.ClientResult<string[]>;
         /**
-         * Set bubble sizes for a chart series. Only works for bubble charts.
+         * Sets the bubble sizes for a chart series. Only works for bubble charts.
          *
          * [Api set: ExcelApi 1.7]
          *
@@ -10441,7 +10431,7 @@ export declare namespace Excel {
          */
         setBubbleSizes(sourceData: Range): void;
         /**
-         * Set values for a chart series. For scatter chart, it means Y axis values.
+         * Sets the values for a chart series. For scatter chart, it means Y axis values.
          *
          * [Api set: ExcelApi 1.7]
          *
@@ -10449,7 +10439,7 @@ export declare namespace Excel {
          */
         setValues(sourceData: Range): void;
         /**
-         * Set values of X axis for a chart series. Only works for scatter charts.
+         * Sets the values of the X axis for a chart series. Only works for scatter charts.
          *
          * [Api set: ExcelApi 1.7]
          *
@@ -10494,14 +10484,14 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the fill format of a chart series, which includes background formatting information. Read-only.
+         * Represents the fill format of a chart series, which includes background formatting information.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly fill: Excel.ChartFill;
         /**
          *
-         * Represents line formatting. Read-only.
+         * Represents line formatting.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -10560,7 +10550,7 @@ export declare namespace Excel {
         readonly items: Excel.ChartPoint[];
         /**
          *
-         * Returns the number of chart points in the series. Read-only.
+         * Returns the number of chart points in the series.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -10614,14 +10604,14 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Returns the data label of a chart point. Read-only.
+         * Returns the data label of a chart point.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly dataLabel: Excel.ChartDataLabel;
         /**
          *
-         * Encapsulates the format properties chart point. Read-only.
+         * Encapsulates the format properties chart point.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -10635,14 +10625,14 @@ export declare namespace Excel {
         hasDataLabel: boolean;
         /**
          *
-         * HTML color code representation of the marker background color of data point. E.g. #FF0000 represents Red.
+         * HTML color code representation of the marker background color of data point. e.g., #FF0000 represents Red.
          *
          * [Api set: ExcelApi 1.7]
          */
         markerBackgroundColor: string;
         /**
          *
-         * HTML color code representation of the marker foreground color of data point. E.g. #FF0000 represents Red.
+         * HTML color code representation of the marker foreground color of data point. e.g., #FF0000 represents Red.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -10663,7 +10653,7 @@ export declare namespace Excel {
         markerStyle: Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture";
         /**
          *
-         * Returns the value of a chart point. Read-only.
+         * Returns the value of a chart point.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -10720,14 +10710,14 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the border format of a chart data point, which includes color, style, and weight information. Read-only.
+         * Represents the border format of a chart data point, which includes color, style, and weight information.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly border: Excel.ChartBorder;
         /**
          *
-         * Represents the fill format of a chart, which includes background formatting information. Read-only.
+         * Represents the fill format of a chart, which includes background formatting information.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -10784,21 +10774,21 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the category axis in a chart. Read-only.
+         * Represents the category axis in a chart.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly categoryAxis: Excel.ChartAxis;
         /**
          *
-         * Represents the series axis of a 3-dimensional chart. Read-only.
+         * Represents the series axis of a 3-dimensional chart.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly seriesAxis: Excel.ChartAxis;
         /**
          *
-         * Represents the value axis in an axis. Read-only.
+         * Represents the value axis in an axis.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -10873,63 +10863,63 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the formatting of a chart object, which includes line and font formatting. Read-only.
+         * Represents the formatting of a chart object, which includes line and font formatting.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly format: Excel.ChartAxisFormat;
         /**
          *
-         * Returns a Gridlines object that represents the major gridlines for the specified axis. Read-only.
+         * Returns a Gridlines object that represents the major gridlines for the specified axis.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly majorGridlines: Excel.ChartGridlines;
         /**
          *
-         * Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.
+         * Returns a Gridlines object that represents the minor gridlines for the specified axis.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly minorGridlines: Excel.ChartGridlines;
         /**
          *
-         * Represents the axis title. Read-only.
+         * Represents the axis title.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly title: Excel.ChartAxisTitle;
         /**
          *
-         * Represents the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail.
+         * Specifies the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail.
          *
          * [Api set: ExcelApi 1.8]
          */
         alignment: Excel.ChartTickLabelAlignment | "Center" | "Left" | "Right";
         /**
          *
-         * Represents the group for the specified axis. See Excel.ChartAxisGroup for details. Read-only.
+         * Specifies the group for the specified axis. See Excel.ChartAxisGroup for details.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly axisGroup: Excel.ChartAxisGroup | "Primary" | "Secondary";
         /**
          *
-         * Returns or sets the base unit for the specified category axis.
+         * Specifies the base unit for the specified category axis.
          *
          * [Api set: ExcelApi 1.7]
          */
         baseTimeUnit: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";
         /**
          *
-         * Returns or sets the category axis type.
+         * Specifies the category axis type.
          *
          * [Api set: ExcelApi 1.7]
          */
         categoryType: Excel.ChartAxisCategoryType | "Automatic" | "TextAxis" | "DateAxis";
         /**
          *
-         * Represents the custom axis display unit value. Read-only. To set this property, please use the SetCustomDisplayUnit(double) method.
+         * Specifies the custom axis display unit value. To set this property, please use the SetCustomDisplayUnit(double) method.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -10943,49 +10933,49 @@ export declare namespace Excel {
         displayUnit: Excel.ChartAxisDisplayUnit | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom";
         /**
          *
-         * Represents the height, in points, of the chart axis. Null if the axis is not visible. Read-only.
+         * Specifies the height, in points, of the chart axis. Null if the axis is not visible.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly height: number;
         /**
          *
-         * Represents whether value axis crosses the category axis between categories.
+         * Specifies if the value axis crosses the category axis between categories.
          *
          * [Api set: ExcelApi 1.8]
          */
         isBetweenCategories: boolean;
         /**
          *
-         * Represents the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis is not visible. Read-only.
+         * Specifies the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis is not visible.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly left: number;
         /**
          *
-         * Represents whether or not the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells.
+         * Specifies if the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells.
          *
          * [Api set: ExcelApi 1.9]
          */
         linkNumberFormat: boolean;
         /**
          *
-         * Represents the base of the logarithm when using logarithmic scales.
+         * Specifies the base of the logarithm when using logarithmic scales.
          *
          * [Api set: ExcelApi 1.7]
          */
         logBase: number;
         /**
          *
-         * Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+         * Specifies the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
          *
          * [Api set: ExcelApi 1.7]
          */
         majorTickMark: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside";
         /**
          *
-         * Returns or sets the major unit scale value for the category axis when the CategoryType property is set to TimeScale.
+         * Specifies the major unit scale value for the category axis when the CategoryType property is set to TimeScale.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -11013,14 +11003,14 @@ export declare namespace Excel {
         minimum: any;
         /**
          *
-         * Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+         * Specifies the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
          *
          * [Api set: ExcelApi 1.7]
          */
         minorTickMark: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside";
         /**
          *
-         * Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.
+         * Specifies the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -11034,112 +11024,112 @@ export declare namespace Excel {
         minorUnit: any;
         /**
          *
-         * Represents whether an axis is multilevel or not.
+         * Specifies if an axis is multilevel.
          *
          * [Api set: ExcelApi 1.8]
          */
         multiLevel: boolean;
         /**
          *
-         * Represents the format code for the axis tick label.
+         * Specifies the format code for the axis tick label.
          *
          * [Api set: ExcelApi 1.8]
          */
         numberFormat: string;
         /**
          *
-         * Represents the distance between the levels of labels, and the distance between the first level and the axis line. The value should be an integer from 0 to 1000.
+         * Specifies the distance between the levels of labels, and the distance between the first level and the axis line. The value should be an integer from 0 to 1000.
          *
          * [Api set: ExcelApi 1.8]
          */
         offset: number;
         /**
          *
-         * Represents the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details.
+         * Specifies the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details.
          *
          * [Api set: ExcelApi 1.8]
          */
         position: Excel.ChartAxisPosition | "Automatic" | "Maximum" | "Minimum" | "Custom";
         /**
          *
-         * Represents the specified axis position where the other axis crosses at. You should use the SetPositionAt(double) method to set this property.
+         * Specifies the specified axis position where the other axis crosses at. You should use the SetPositionAt(double) method to set this property.
          *
          * [Api set: ExcelApi 1.8]
          */
         readonly positionAt: number;
         /**
          *
-         * Represents whether Microsoft Excel plots data points from last to first.
+         * Specifies if Excel plots data points from last to first.
          *
          * [Api set: ExcelApi 1.7]
          */
         reversePlotOrder: boolean;
         /**
          *
-         * Represents the value axis scale type. See Excel.ChartAxisScaleType for details.
+         * Specifies the value axis scale type. See Excel.ChartAxisScaleType for details.
          *
          * [Api set: ExcelApi 1.7]
          */
         scaleType: Excel.ChartAxisScaleType | "Linear" | "Logarithmic";
         /**
          *
-         * Represents whether the axis display unit label is visible.
+         * Specifies if the axis display unit label is visible.
          *
          * [Api set: ExcelApi 1.7]
          */
         showDisplayUnitLabel: boolean;
         /**
          *
-         * Represents the angle to which the text is oriented for the chart axis tick label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+         * Specifies the angle to which the text is oriented for the chart axis tick label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
          *
          * [Api set: ExcelApi 1.8]
          */
         textOrientation: any;
         /**
          *
-         * Represents the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for details.
+         * Specifies the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for details.
          *
          * [Api set: ExcelApi 1.7]
          */
         tickLabelPosition: Excel.ChartAxisTickLabelPosition | "NextToAxis" | "High" | "Low" | "None";
         /**
          *
-         * Represents the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an empty string for automatic setting. The returned value is always a number.
+         * Specifies the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an empty string for automatic setting. The returned value is always a number.
          *
          * [Api set: ExcelApi 1.7]
          */
         tickLabelSpacing: any;
         /**
          *
-         * Represents the number of categories or series between tick marks.
+         * Specifies the number of categories or series between tick marks.
          *
          * [Api set: ExcelApi 1.7]
          */
         tickMarkSpacing: number;
         /**
          *
-         * Represents the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis is not visible. Read-only.
+         * Specifies the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis is not visible.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly top: number;
         /**
          *
-         * Represents the axis type. See Excel.ChartAxisType for details.
+         * Specifies the axis type. See Excel.ChartAxisType for details.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly type: Excel.ChartAxisType | "Invalid" | "Category" | "Value" | "Series";
         /**
          *
-         * A boolean value represents the visibility of the axis.
+         * Specifies if the axis is visible.
          *
          * [Api set: ExcelApi 1.7]
          */
         visible: boolean;
         /**
          *
-         * Represents the width, in points, of the chart axis. Null if the axis is not visible. Read-only.
+         * Specifies the width, in points, of the chart axis. Null if the axis is not visible.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -11175,7 +11165,7 @@ export declare namespace Excel {
          */
         setCustomDisplayUnit(value: number): void;
         /**
-         * Set the specified axis position where the other axis crosses at.
+         * Sets the specified axis position where the other axis crosses at.
          *
          * [Api set: ExcelApi 1.8]
          *
@@ -11220,21 +11210,21 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents chart fill formatting. Read-only.
+         * Specifies chart fill formatting.
          *
          * [Api set: ExcelApi 1.8]
          */
         readonly fill: Excel.ChartFill;
         /**
          *
-         * Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.
+         * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly font: Excel.ChartFont;
         /**
          *
-         * Represents chart line formatting. Read-only.
+         * Specifies chart line formatting.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -11291,29 +11281,28 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the formatting of chart axis title. Read-only.
+         * Specifies the formatting of chart axis title.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly format: Excel.ChartAxisTitleFormat;
         /**
          *
-         * Represents the axis title.
+         * Specifies the axis title.
          *
          * [Api set: ExcelApi 1.1]
          */
         text: string;
         /**
          *
-         * Represents the angle to which the text is oriented for the chart axis title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+         * Specifies the angle to which the text is oriented for the chart axis title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         textOrientation: number;
         /**
          *
-         * A boolean that specifies the visibility of an axis title.
+         * Specifies if the axis title is visibile.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -11378,21 +11367,21 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the border format, which includes color, linestyle, and weight.
+         * Specifies the chart axis title's border format, which includes color, linestyle, and weight.
          *
          * [Api set: ExcelApi 1.8]
          */
         readonly border: Excel.ChartBorder;
         /**
          *
-         * Represents chart fill formatting.
+         * Specifies the chart axis title's fill formatting.
          *
          * [Api set: ExcelApi 1.8]
          */
         readonly fill: Excel.ChartFill;
         /**
          *
-         * Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.
+         * Specifies the chart axis title's font attributes, such as font name, font size, color, etc. of chart axis title object.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -11449,21 +11438,21 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the format of chart data labels, which includes fill and font formatting. Read-only.
+         * Specifies the format of chart data labels, which includes fill and font formatting.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly format: Excel.ChartDataLabelFormat;
         /**
          *
-         * Represents whether data labels automatically generate appropriate text based on context.
+         * Specifies if data labels automatically generate appropriate text based on context.
          *
          * [Api set: ExcelApi 1.8]
          */
         autoText: boolean;
         /**
          *
-         * Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details.
+         * Specifies the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details.
                     This property is valid only when TextOrientation of data label is 0.
          *
          * [Api set: ExcelApi 1.8]
@@ -11471,14 +11460,14 @@ export declare namespace Excel {
         horizontalAlignment: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed";
         /**
          *
-         * Represents whether or not the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells
+         * Specifies if the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells
          *
          * [Api set: ExcelApi 1.9]
          */
         linkNumberFormat: boolean;
         /**
          *
-         * Represents the format code for data labels.
+         * Specifies the format code for data labels.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -11499,42 +11488,42 @@ export declare namespace Excel {
         separator: string;
         /**
          *
-         * Boolean value representing if the data label bubble size is visible or not.
+         * Specifies if the data label bubble size is visible.
          *
          * [Api set: ExcelApi 1.1]
          */
         showBubbleSize: boolean;
         /**
          *
-         * Boolean value representing if the data label category name is visible or not.
+         * Specifies if the data label category name is visible.
          *
          * [Api set: ExcelApi 1.1]
          */
         showCategoryName: boolean;
         /**
          *
-         * Boolean value representing if the data label legend key is visible or not.
+         * Specifies if the data label legend key is visible.
          *
          * [Api set: ExcelApi 1.1]
          */
         showLegendKey: boolean;
         /**
          *
-         * Boolean value representing if the data label percentage is visible or not.
+         * Specifies if the data label percentage is visible.
          *
          * [Api set: ExcelApi 1.1]
          */
         showPercentage: boolean;
         /**
          *
-         * Boolean value representing if the data label series name is visible or not.
+         * Specifies if the data label series name is visible.
          *
          * [Api set: ExcelApi 1.1]
          */
         showSeriesName: boolean;
         /**
          *
-         * Boolean value representing if the data label value is visible or not.
+         * Specifies if the data label value is visible.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -11613,7 +11602,7 @@ export declare namespace Excel {
         readonly format: Excel.ChartDataLabelFormat;
         /**
          *
-         * Boolean value representing if data label automatically generates appropriate text based on context.
+         * Specifies if the data label automatically generates appropriate text based on context.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -11627,7 +11616,7 @@ export declare namespace Excel {
         formula: string;
         /**
          *
-         * Returns the height, in points, of the chart data label. Read-only. Null if chart data label is not visible.
+         * Returns the height, in points, of the chart data label. Null if chart data label is not visible.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -11649,7 +11638,7 @@ export declare namespace Excel {
         left: number;
         /**
          *
-         * Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+         * Specifies if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -11677,42 +11666,42 @@ export declare namespace Excel {
         separator: string;
         /**
          *
-         * Boolean value representing if the data label bubble size is visible or not.
+         * Specifies if the data label bubble size is visible.
          *
          * [Api set: ExcelApi 1.7]
          */
         showBubbleSize: boolean;
         /**
          *
-         * Boolean value representing if the data label category name is visible or not.
+         * Specifies if the data label category name is visible.
          *
          * [Api set: ExcelApi 1.7]
          */
         showCategoryName: boolean;
         /**
          *
-         * Boolean value representing if the data label legend key is visible or not.
+         * Specifies if the data label legend key is visible.
          *
          * [Api set: ExcelApi 1.7]
          */
         showLegendKey: boolean;
         /**
          *
-         * Boolean value representing if the data label percentage is visible or not.
+         * Specifies if the data label percentage is visible.
          *
          * [Api set: ExcelApi 1.7]
          */
         showPercentage: boolean;
         /**
          *
-         * Boolean value representing if the data label series name is visible or not.
+         * Specifies if the data label series name is visible.
          *
          * [Api set: ExcelApi 1.7]
          */
         showSeriesName: boolean;
         /**
          *
-         * Boolean value representing if the data label value is visible or not.
+         * Specifies if the data label value is visible.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -11748,7 +11737,7 @@ export declare namespace Excel {
         verticalAlignment: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";
         /**
          *
-         * Returns the width, in points, of the chart data label. Read-only. Null if chart data label is not visible.
+         * Returns the width, in points, of the chart data label. Null if chart data label is not visible.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -11805,21 +11794,21 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the border format, which includes color, linestyle, and weight. Read-only.
+         * Represents the border format, which includes color, linestyle, and weight.
          *
          * [Api set: ExcelApi 1.8]
          */
         readonly border: Excel.ChartBorder;
         /**
          *
-         * Represents the fill format of the current chart data label. Read-only.
+         * Represents the fill format of the current chart data label.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly fill: Excel.ChartFill;
         /**
          *
-         * Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.
+         * Represents the font attributes (font name, font size, color, etc.) for a chart data label.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -11883,7 +11872,7 @@ export declare namespace Excel {
         readonly format: Excel.ChartErrorBarsFormat;
         /**
          *
-         * Specifies whether or not the error bars have an end style cap.
+         * Specifies if error bars have an end style cap.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -11904,7 +11893,7 @@ export declare namespace Excel {
         type: Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom";
         /**
          *
-         * Specifies whether or not the error bars are displayed.
+         * Specifies whether the error bars are displayed.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -12018,14 +12007,14 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the formatting of chart gridlines. Read-only.
+         * Represents the formatting of chart gridlines.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly format: Excel.ChartGridlinesFormat;
         /**
          *
-         * Boolean value representing if the axis gridlines are visible or not.
+         * Specifies if the axis gridlines are visible.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -12082,7 +12071,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents chart line formatting. Read-only.
+         * Represents chart line formatting.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -12139,70 +12128,70 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
+         * Represents the formatting of a chart legend, which includes fill and font formatting.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly format: Excel.ChartLegendFormat;
         /**
          *
-         * Represents a collection of legendEntries in the legend. Read-only.
+         * Represents a collection of legendEntries in the legend.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly legendEntries: Excel.ChartLegendEntryCollection;
         /**
          *
-         * Represents the height, in points, of the legend on the chart. Null if legend is not visible.
+         * Specifies the height, in points, of the legend on the chart. Null if legend is not visible.
          *
          * [Api set: ExcelApi 1.7]
          */
         height: number;
         /**
          *
-         * Represents the left, in points, of a chart legend. Null if legend is not visible.
+         * Specifies the left, in points, of the legend on the chart. Null if legend is not visible.
          *
          * [Api set: ExcelApi 1.7]
          */
         left: number;
         /**
          *
-         * Boolean value for whether the chart legend should overlap with the main body of the chart.
+         * Specifies if the chart legend should overlap with the main body of the chart.
          *
          * [Api set: ExcelApi 1.1]
          */
         overlay: boolean;
         /**
          *
-         * Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
+         * Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.
          *
          * [Api set: ExcelApi 1.1]
          */
         position: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom";
         /**
          *
-         * Represents if the legend has a shadow on the chart.
+         * Specifies if the legend has a shadow on the chart.
          *
          * [Api set: ExcelApi 1.7]
          */
         showShadow: boolean;
         /**
          *
-         * Represents the top of a chart legend.
+         * Specifies the top of a chart legend.
          *
          * [Api set: ExcelApi 1.7]
          */
         top: number;
         /**
          *
-         * A boolean value the represents the visibility of a ChartLegend object.
+         * Specifies if the ChartLegend is visible.
          *
          * [Api set: ExcelApi 1.1]
          */
         visible: boolean;
         /**
          *
-         * Represents the width, in points, of the legend on the chart. Null if legend is not visible.
+         * Specifies the width, in points, of the legend on the chart. Null if legend is not visible.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -12259,28 +12248,28 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the height of the legendEntry on the chart legend.
+         * Specifies the height of the legendEntry on the chart legend.
          *
          * [Api set: ExcelApi 1.8]
          */
         readonly height: number;
         /**
          *
-         * Represents the index of the legendEntry in the chart legend.
+         * Specifies the index of the legendEntry in the chart legend.
          *
          * [Api set: ExcelApi 1.8]
          */
         readonly index: number;
         /**
          *
-         * Represents the left of a chart legendEntry.
+         * Specifies the left of a chart legendEntry.
          *
          * [Api set: ExcelApi 1.8]
          */
         readonly left: number;
         /**
          *
-         * Represents the top of a chart legendEntry.
+         * Specifies the top of a chart legendEntry.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -12400,21 +12389,21 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the border format, which includes color, linestyle, and weight. Read-only.
+         * Represents the border format, which includes color, linestyle, and weight.
          *
          * [Api set: ExcelApi 1.8]
          */
         readonly border: Excel.ChartBorder;
         /**
          *
-         * Represents the fill format of an object, which includes background formatting information. Read-only.
+         * Represents the fill format of an object, which includes background formatting information.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly fill: Excel.ChartFill;
         /**
          *
-         * Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.
+         * Represents the font attributes such as font name, font size, color, etc. of a chart legend.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -12471,21 +12460,21 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Returns or sets the series map labels strategy of a region map chart. Read/Write.
+         * Specifies the series map labels strategy of a region map chart.
          *
          * [Api set: ExcelApi 1.9]
          */
         labelStrategy: Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll";
         /**
          *
-         * Returns or sets the series mapping level of a region map chart. Read/Write.
+         * Specifies the series mapping level of a region map chart.
          *
          * [Api set: ExcelApi 1.9]
          */
         level: Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" | "World";
         /**
          *
-         * Returns or sets the series projection type of a region map chart. Read/Write.
+         * Specifies the series projection type of a region map chart.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -12542,35 +12531,35 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the formatting of a chart title, which includes fill and font formatting. Read-only.
+         * Represents the formatting of a chart title, which includes fill and font formatting.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly format: Excel.ChartTitleFormat;
         /**
          *
-         * Returns the height, in points, of the chart title. Null if chart title is not visible. Read-only.
+         * Returns the height, in points, of the chart title. Null if chart title is not visible.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly height: number;
         /**
          *
-         * Represents the horizontal alignment for chart title.
+         * Specifies the horizontal alignment for chart title.
          *
          * [Api set: ExcelApi 1.7]
          */
         horizontalAlignment: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed";
         /**
          *
-         * Represents the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart title is not visible.
+         * Specifies the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart title is not visible.
          *
          * [Api set: ExcelApi 1.7]
          */
         left: number;
         /**
          *
-         * Boolean value representing if the chart title will overlay the chart or not.
+         * Specifies if the chart title will overlay the chart.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -12591,42 +12580,42 @@ export declare namespace Excel {
         showShadow: boolean;
         /**
          *
-         * Represents the title text of a chart.
+         * Specifies the chart's title text.
          *
          * [Api set: ExcelApi 1.1]
          */
         text: string;
         /**
          *
-         * Represents the angle to which the text is oriented for the chart title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+         * Specifies the angle to which the text is oriented for the chart title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
          *
          * [Api set: ExcelApi 1.7]
          */
         textOrientation: number;
         /**
          *
-         * Represents the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title is not visible.
+         * Specifies the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title is not visible.
          *
          * [Api set: ExcelApi 1.7]
          */
         top: number;
         /**
          *
-         * Represents the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
+         * Specifies the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
          *
          * [Api set: ExcelApi 1.7]
          */
         verticalAlignment: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";
         /**
          *
-         * A boolean value the represents the visibility of a chart title object.
+         * Specifies if the chart title is visibile.
          *
          * [Api set: ExcelApi 1.1]
          */
         visible: boolean;
         /**
          *
-         * Returns the width, in points, of the chart title. Null if chart title is not visible. Read-only.
+         * Specifies the width, in points, of the chart title. Null if chart title is not visible.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -12757,21 +12746,21 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the border format of chart title, which includes color, linestyle, and weight. Read-only.
+         * Represents the border format of chart title, which includes color, linestyle, and weight.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly border: Excel.ChartBorder;
         /**
          *
-         * Represents the fill format of an object, which includes background formatting information. Read-only.
+         * Represents the fill format of an object, which includes background formatting information.
          *
          * [Api set: ExcelApi 1.1]
          */
         readonly fill: Excel.ChartFill;
         /**
          *
-         * Represents the font attributes (font name, font size, color, etc.) for an object. Read-only.
+         * Represents the font attributes (font name, font size, color, etc.) for an object.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -12837,7 +12826,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param color - HTML color code representing the color of the background, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+         * @param color - HTML color code representing the color of the background, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
          */
         setSolidColor(color: string): void;
         /**
@@ -12936,49 +12925,49 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Specifies whether or not the bin overflow is enabled in a histogram chart or pareto chart. Read/Write.
+         * Specifies if bin overflow is enabled in a histogram chart or pareto chart.
          *
          * [Api set: ExcelApi 1.9]
          */
         allowOverflow: boolean;
         /**
          *
-         * Specifies whether or not the bin underflow is enabled in a histogram chart or pareto chart. Read/Write.
+         * Specifies if bin underflow is enabled in a histogram chart or pareto chart.
          *
          * [Api set: ExcelApi 1.9]
          */
         allowUnderflow: boolean;
         /**
          *
-         * Returns or sets the bin count of a histogram chart or pareto chart. Read/Write.
+         * Specifies the bin count of a histogram chart or pareto chart.
          *
          * [Api set: ExcelApi 1.9]
          */
         count: number;
         /**
          *
-         * Returns or sets the bin overflow value of a histogram chart or pareto chart. Read/Write.
+         * Specifies the bin overflow value of a histogram chart or pareto chart.
          *
          * [Api set: ExcelApi 1.9]
          */
         overflowValue: number;
         /**
          *
-         * Returns or sets the bin's type for a histogram chart or pareto chart. Read/Write.
+         * Specifies the bin's type for a histogram chart or pareto chart.
          *
          * [Api set: ExcelApi 1.9]
          */
         type: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount";
         /**
          *
-         * Returns or sets the bin underflow value of a histogram chart or pareto chart. Read/Write.
+         * Specifies the bin underflow value of a histogram chart or pareto chart.
          *
          * [Api set: ExcelApi 1.9]
          */
         underflowValue: number;
         /**
          *
-         * Returns or sets the bin width value of a histogram chart or pareto chart. Read/Write.
+         * Specifies the bin width value of a histogram chart or pareto chart.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -13035,35 +13024,35 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Returns or sets the quartile calculation type of a box and whisker chart. Read/Write.
+         * Specifies if the quartile calculation type of a box and whisker chart.
          *
          * [Api set: ExcelApi 1.9]
          */
         quartileCalculation: Excel.ChartBoxQuartileCalculation | "Inclusive" | "Exclusive";
         /**
          *
-         * Specifies whether or not the inner points are shown in a box and whisker chart. Read/Write.
+         * Specifies if inner points are shown in a box and whisker chart.
          *
          * [Api set: ExcelApi 1.9]
          */
         showInnerPoints: boolean;
         /**
          *
-         * Specifies whether or not the mean line is shown in a box and whisker chart. Read/Write.
+         * Specifies if the mean line is shown in a box and whisker chart.
          *
          * [Api set: ExcelApi 1.9]
          */
         showMeanLine: boolean;
         /**
          *
-         * Specifies whether or not the mean marker is shown in a box and whisker chart. Read/Write.
+         * Specifies if the mean marker is shown in a box and whisker chart.
          *
          * [Api set: ExcelApi 1.9]
          */
         showMeanMarker: boolean;
         /**
          *
-         * Specifies whether or not outlier points are shown in a box and whisker chart. Read/Write.
+         * Specifies if outlier points are shown in a box and whisker chart.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -13204,7 +13193,7 @@ export declare namespace Excel {
         bold: boolean;
         /**
          *
-         * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+         * HTML color code representation of the text color. e.g., #FF0000 represents Red.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -13218,14 +13207,14 @@ export declare namespace Excel {
         italic: boolean;
         /**
          *
-         * Font name (e.g. "Calibri")
+         * Font name (e.g., "Calibri")
          *
          * [Api set: ExcelApi 1.1]
          */
         name: string;
         /**
          *
-         * Size of the font (e.g. 11)
+         * Size of the font (e.g., 11)
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -13487,7 +13476,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents chart line formatting. Read-only.
+         * Represents chart line formatting.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -13544,14 +13533,14 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the format of chart trendline label.
+         * The format of chart trendline label.
          *
          * [Api set: ExcelApi 1.8]
          */
         readonly format: Excel.ChartTrendlineLabelFormat;
         /**
          *
-         * Boolean value representing if trendline label automatically generates appropriate text based on context.
+         * Specifies if trendline label automatically generate appropriate text based on context.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -13565,7 +13554,7 @@ export declare namespace Excel {
         formula: string;
         /**
          *
-         * Returns the height, in points, of the chart trendline label. Read-only. Null if chart trendline label is not visible.
+         * Returns the height, in points, of the chart trendline label. Null if chart trendline label is not visible.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -13587,7 +13576,7 @@ export declare namespace Excel {
         left: number;
         /**
          *
-         * Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+         * Specifies if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -13630,7 +13619,7 @@ export declare namespace Excel {
         verticalAlignment: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";
         /**
          *
-         * Returns the width, in points, of the chart trendline label. Read-only. Null if chart trendline label is not visible.
+         * Returns the width, in points, of the chart trendline label. Null if chart trendline label is not visible.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -13687,21 +13676,21 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the border format, which includes color, linestyle, and weight.
+         * Specifies the border format, which includes color, linestyle, and weight.
          *
          * [Api set: ExcelApi 1.8]
          */
         readonly border: Excel.ChartBorder;
         /**
          *
-         * Represents the fill format of the current chart trendline label.
+         * Specifies the fill format of the current chart trendline label.
          *
          * [Api set: ExcelApi 1.8]
          */
         readonly fill: Excel.ChartFill;
         /**
          *
-         * Represents the font attributes (font name, font size, color, etc.) for a chart trendline label.
+         * Specifies the font attributes (font name, font size, color, etc.) for a chart trendline label.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -13758,70 +13747,70 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the formatting of a chart plotArea.
+         * Specifies the formatting of a chart plotArea.
          *
          * [Api set: ExcelApi 1.8]
          */
         readonly format: Excel.ChartPlotAreaFormat;
         /**
          *
-         * Represents the height value of plotArea.
+         * Specifies the height value of plotArea.
          *
          * [Api set: ExcelApi 1.8]
          */
         height: number;
         /**
          *
-         * Represents the insideHeight value of plotArea.
+         * Specifies the insideHeight value of plotArea.
          *
          * [Api set: ExcelApi 1.8]
          */
         insideHeight: number;
         /**
          *
-         * Represents the insideLeft value of plotArea.
+         * Specifies the insideLeft value of plotArea.
          *
          * [Api set: ExcelApi 1.8]
          */
         insideLeft: number;
         /**
          *
-         * Represents the insideTop value of plotArea.
+         * Specifies the insideTop value of plotArea.
          *
          * [Api set: ExcelApi 1.8]
          */
         insideTop: number;
         /**
          *
-         * Represents the insideWidth value of plotArea.
+         * Specifies the insideWidth value of plotArea.
          *
          * [Api set: ExcelApi 1.8]
          */
         insideWidth: number;
         /**
          *
-         * Represents the left value of plotArea.
+         * Specifies the left value of plotArea.
          *
          * [Api set: ExcelApi 1.8]
          */
         left: number;
         /**
          *
-         * Represents the position of plotArea.
+         * Specifies the position of plotArea.
          *
          * [Api set: ExcelApi 1.8]
          */
         position: Excel.ChartPlotAreaPosition | "Automatic" | "Custom";
         /**
          *
-         * Represents the top value of plotArea.
+         * Specifies the top value of plotArea.
          *
          * [Api set: ExcelApi 1.8]
          */
         top: number;
         /**
          *
-         * Represents the width value of plotArea.
+         * Specifies the width value of plotArea.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -13878,14 +13867,14 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the border attributes of a chart plotArea.
+         * Specifies the border attributes of a chart plotArea.
          *
          * [Api set: ExcelApi 1.8]
          */
         readonly border: Excel.ChartBorder;
         /**
          *
-         * Represents the fill format of an object, which includes background formatting information.
+         * Specifies the fill format of an object, which includes background formatting information.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -13983,21 +13972,21 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the current conditions used to last sort the table. Read-only.
+         * Specifies the current conditions used to last sort the table.
          *
          * [Api set: ExcelApi 1.2]
          */
         readonly fields: Excel.SortField[];
         /**
          *
-         * Represents whether the casing impacted the last sort of the table. Read-only.
+         * Specifies if the casing impacts the last sort of the table.
          *
          * [Api set: ExcelApi 1.2]
          */
         readonly matchCase: boolean;
         /**
          *
-         * Represents Chinese character ordering method last used to sort the table. Read-only.
+         * Represents Chinese character ordering method last used to sort the table.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -14070,14 +14059,14 @@ export declare namespace Excel {
     export interface SortField {
         /**
          *
-         * Represents whether the sorting is done in an ascending fashion.
+         * Specifies if the sorting is done in an ascending fashion.
          *
          * [Api set: ExcelApi 1.2]
          */
         ascending?: boolean;
         /**
          *
-         * Represents the color that is the target of the condition if the sorting is on font or cell color.
+         * Specifies the color that is the target of the condition if the sorting is on font or cell color.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -14091,28 +14080,28 @@ export declare namespace Excel {
         dataOption?: Excel.SortDataOption | "Normal" | "TextAsNumber";
         /**
          *
-         * Represents the icon that is the target of the condition if the sorting is on the cell's icon.
+         * Specifies the icon that is the target of the condition if the sorting is on the cell's icon.
          *
          * [Api set: ExcelApi 1.2]
          */
         icon?: Excel.Icon;
         /**
          *
-         * Represents the column (or row, depending on the sort orientation) that the condition is on. Represented as an offset from the first column (or row).
+         * Specifies the column (or row, depending on the sort orientation) that the condition is on. Represented as an offset from the first column (or row).
          *
          * [Api set: ExcelApi 1.2]
          */
         key: number;
         /**
          *
-         * Represents the type of sorting of this condition.
+         * Specifies the type of sorting of this condition.
          *
          * [Api set: ExcelApi 1.2]
          */
         sortOn?: Excel.SortOn | "Value" | "CellColor" | "FontColor" | "Icon";
         /**
          *
-         * Represents the subfield that is the target property name of a rich value to sort on.
+         * Specifies the subfield that is the target property name of a rich value to sort on.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -14129,7 +14118,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * The currently applied filter on the given column. Read-only.
+         * The currently applied filter on the given column.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -14294,7 +14283,7 @@ export declare namespace Excel {
          * The first criterion used to filter data. Used as an operator in the case of "custom" filtering.
                      For example ">50" for number greater than 50 or "=*s" for values ending in "s".
                     
-                     Used as a number in the case of top/bottom items/percents. E.g. "5" for the top 5 items if filterOn is set to "topItems"
+                     Used as a number in the case of top/bottom items/percents. e.g., "5" for the top 5 items if filterOn is set to "topItems"
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -14383,21 +14372,21 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * An array that holds all the filter criteria in the autofiltered range. Read-Only.
+         * An array that holds all the filter criteria in the autofiltered range.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly criteria: Excel.FilterCriteria[];
         /**
          *
-         * Indicates if the AutoFilter is enabled or not. Read-Only.
+         * Specifies if the AutoFilter is enabled.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly enabled: boolean;
         /**
          *
-         * Indicates if the AutoFilter has filter criteria. Read-Only.
+         * Specifies if the AutoFilter has filter criteria.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -14474,8 +14463,7 @@ export declare namespace Excel {
      *
      * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
      *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.11]
      */
     export class CultureInfo extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -14492,16 +14480,14 @@ export declare namespace Excel {
          *
          * Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.11]
          */
         readonly numberFormat: Excel.NumberFormatInfo;
         /**
          *
-         * Gets the culture name in the format languagecode2-country/regioncode2 (e.g. "zh-cn" or "en-us"). This is based on current system settings.
+         * Gets the culture name in the format languagecode2-country/regioncode2 (e.g., "zh-cn" or "en-us"). This is based on current system settings.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.11]
          */
         readonly name: string;
         /**
@@ -14535,8 +14521,7 @@ export declare namespace Excel {
      *
      * Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
      *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.11]
      */
     export class NumberFormatInfo extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -14545,16 +14530,14 @@ export declare namespace Excel {
          *
          * Gets the string used as the decimal separator for numeric values. This is based on current system settings.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.11]
          */
         readonly numberDecimalSeparator: string;
         /**
          *
          * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on current system settings.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.11]
          */
         readonly numberGroupSeparator: string;
         /**
@@ -14670,14 +14653,14 @@ export declare namespace Excel {
     export interface Icon {
         /**
          *
-         * Represents the index of the icon in the given set.
+         * Specifies the index of the icon in the given set.
          *
          * [Api set: ExcelApi 1.2]
          */
         index: number;
         /**
          *
-         * Represents the set that the icon is part of.
+         * Specifies the set that the icon is part of.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -14686,7 +14669,7 @@ export declare namespace Excel {
     /**
      *
      * A scoped collection of custom XML parts.
-                A scoped collection is the result of some operation, e.g. filtering by namespace.
+                A scoped collection is the result of some operation, e.g., filtering by namespace.
                 A scoped collection cannot be scoped any further.
      *
      * [Api set: ExcelApi 1.5]
@@ -14842,14 +14825,14 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * The custom XML part's ID. Read-only.
+         * The custom XML part's ID.
          *
          * [Api set: ExcelApi 1.5]
          */
         readonly id: string;
         /**
          *
-         * The custom XML part's namespace URI. Read-only.
+         * The custom XML part's namespace URI.
          *
          * [Api set: ExcelApi 1.5]
          */
@@ -14905,8 +14888,7 @@ export declare namespace Excel {
      *
      * Represents a scoped collection of PivotTables. The PivotTables are sorted based on the location of the PivotTable's top-left corner. They are ordered top to bottom and then left to right.
      *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApiOnline 1.1]
      */
     export class PivotTableScopedCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -14916,22 +14898,19 @@ export declare namespace Excel {
         /**
          * Gets the number of PivotTables in the collection.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          * Gets the first PivotTable in the collection. The PivotTables in the collection are sorted top to bottom and left to right, such that top-left table is the first PivotTable in the collection.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         getFirst(): Excel.PivotTable;
         /**
          * Gets a PivotTable by name.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param key - Name of the PivotTable to be retrieved.
          */
@@ -14939,8 +14918,7 @@ export declare namespace Excel {
         /**
          * Gets a PivotTable by name. If the PivotTable does not exist, will return a null object.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          *
          * @param name - Name of the PivotTable to be retrieved.
          */
@@ -15104,7 +15082,7 @@ export declare namespace Excel {
         readonly worksheet: Excel.Worksheet;
         /**
          *
-         * Specifies whether the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
+         * Specifies if the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -15112,14 +15090,14 @@ export declare namespace Excel {
         allowMultipleFiltersPerField: boolean;
         /**
          *
-         * Specifies whether the PivotTable allows values in the data body to be edited by the user.
+         * Specifies if the PivotTable allows values in the data body to be edited by the user.
          *
          * [Api set: ExcelApi 1.9]
          */
         enableDataValueEditing: boolean;
         /**
          *
-         * Id of the PivotTable. Read-only.
+         * Id of the PivotTable.
          *
          * [Api set: ExcelApi 1.5]
          */
@@ -15133,7 +15111,7 @@ export declare namespace Excel {
         name: string;
         /**
          *
-         * Specifies whether the PivotTable uses custom lists when sorting.
+         * Specifies if the PivotTable uses custom lists when sorting.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -15210,14 +15188,14 @@ export declare namespace Excel {
         readonly pivotStyle: Excel.PivotTableStyle;
         /**
          *
-         * Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
+         * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved
          *
          * [Api set: ExcelApi 1.9]
          */
         autoFormat: boolean;
         /**
          *
-         * Specifies whether the field list can be shown in the UI.
+         * Specifies if the field list can be shown in the UI.
          *
          * [Api set: ExcelApi 1.10]
          */
@@ -15231,21 +15209,21 @@ export declare namespace Excel {
         layoutType: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";
         /**
          *
-         * Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
+         * Specifies if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
          *
          * [Api set: ExcelApi 1.9]
          */
         preserveFormatting: boolean;
         /**
          *
-         * Specifies whether the PivotTable report shows grand totals for columns.
+         * Specifies if the PivotTable report shows grand totals for columns.
          *
          * [Api set: ExcelApi 1.8]
          */
         showColumnGrandTotals: boolean;
         /**
          *
-         * Specifies whether the PivotTable report shows grand totals for rows.
+         * Specifies if the PivotTable report shows grand totals for rows.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -15954,14 +15932,14 @@ export declare namespace Excel {
         position: number;
         /**
          *
-         * Determines whether the data should be shown as a specific summary calculation or not.
+         * Specifies if the data should be shown as a specific summary calculation.
          *
          * [Api set: ExcelApi 1.8]
          */
         showAs: Excel.ShowAsRule;
         /**
          *
-         * Determines whether to show all items of the DataPivotHierarchy.
+         * Specifies if all items of the DataPivotHierarchy are shown.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -16163,7 +16141,7 @@ export declare namespace Excel {
          *
          * @param filter - A configured specific PivotFilter or a PivotFilters interface containing multiple configured filters.
          */
-        applyFilter(filter: PivotValueFilter | PivotLabelFilter | PivotManualFilter | PivotDateFilter | PivotFilters): void;
+        applyFilter(filter: Excel.PivotFilters): void;
         /**
          * Clears all criteria from all of the field's filters. This removes any active filtering on the field.
          *
@@ -16220,7 +16198,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param sortBy - Represents whether the sorting is done in an ascending or descending order.
+         * @param sortBy - Specifies if the sorting is done in ascending or descending order.
          */
         sortByLabels(sortBy: SortBy): void;
         /**
@@ -16229,7 +16207,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.9]
          *
-         * @param sortBy - Represents whether the sorting is done in an ascending or descending order.
+         * @param sortBy - Specifies if the sorting is done in ascending or descending order.
          * @param valuesHierarchy - Specifies the values hierarchy on the data axis to be used for sorting.
          * @param pivotItemScope - The items that should be used for the scope of the sorting. These will be the
                     items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
@@ -16243,7 +16221,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.9]
          *
-         * @param sortByString - Represents whether the sorting is done in an ascending or descending order.
+         * @param sortByString - Specifies if the sorting is done in ascending or descending order.
          * @param valuesHierarchy - Specifies the values hierarchy on the data axis to be used for sorting.
          * @param pivotItemScope - The items that should be used for the scope of the sorting. These will be the
                     items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
@@ -16367,7 +16345,7 @@ export declare namespace Excel {
         name: string;
         /**
          *
-         * Determines whether the PivotItem is visible or not.
+         * Specifies if the PivotItem is visible.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -16636,7 +16614,7 @@ export declare namespace Excel {
     }
     /**
      *
-     * The ShowAs Calculation function for the Data Pivot Field.
+     * Represents the axis from which to get the PivotItems.
      *
      * [Api set: ExcelApi 1.9]
      */
@@ -16679,7 +16657,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Gets the key of the custom property. Read only.
+         * Gets the key of the custom property. Custom property keys are case-insensitive.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -16687,12 +16665,33 @@ export declare namespace Excel {
         readonly key: string;
         /**
          *
-         * Gets the value of the custom property. Read only.
+         * Gets or sets the value of the custom property.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        readonly value: string;
+        value: string;
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Excel.WorksheetCustomProperty): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.WorksheetCustomPropertyUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Excel.WorksheetCustomProperty): void;
+        /**
+         * Deletes the custom property.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
          *
@@ -16733,6 +16732,16 @@ export declare namespace Excel {
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.WorksheetCustomProperty[];
         /**
+         * Adds a new custom property that maps to the provided key. This overwrites existing custom properties with that key.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param key - The key that identifies the custom property object. It is case-insensitive.
+         * @param value - The value of this custom property.
+         */
+        add(key: string, value: string): Excel.WorksheetCustomProperty;
+        /**
          * Gets the number of custom properties on this worksheet.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -16745,7 +16754,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param key - The key that identifies the custom property object.
+         * @param key - The key that identifies the custom property object. It is case-insensitive.
          */
         getItem(key: string): Excel.WorksheetCustomProperty;
         /**
@@ -16754,7 +16763,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param key - The key that identifies the custom property object.
+         * @param key - The key that identifies the custom property object. It is case-insensitive.
          */
         getItemOrNullObject(key: string): Excel.WorksheetCustomProperty;
         /**
@@ -16799,28 +16808,28 @@ export declare namespace Excel {
         readonly custom: Excel.CustomPropertyCollection;
         /**
          *
-         * Gets or sets the author of the workbook.
+         * The author of the workbook.
          *
          * [Api set: ExcelApi 1.7]
          */
         author: string;
         /**
          *
-         * Gets or sets the category of the workbook.
+         * The category of the workbook.
          *
          * [Api set: ExcelApi 1.7]
          */
         category: string;
         /**
          *
-         * Gets or sets the comments of the workbook.
+         * The comments of the workbook.
          *
          * [Api set: ExcelApi 1.7]
          */
         comments: string;
         /**
          *
-         * Gets or sets the company of the workbook.
+         * The company of the workbook.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -16834,7 +16843,7 @@ export declare namespace Excel {
         readonly creationDate: Date;
         /**
          *
-         * Gets or sets the keywords of the workbook.
+         * The keywords of the workbook.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -16848,7 +16857,7 @@ export declare namespace Excel {
         readonly lastAuthor: string;
         /**
          *
-         * Gets or sets the manager of the workbook.
+         * The manager of the workbook.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -16862,14 +16871,14 @@ export declare namespace Excel {
         revisionNumber: number;
         /**
          *
-         * Gets or sets the subject of the workbook.
+         * The subject of the workbook.
          *
          * [Api set: ExcelApi 1.7]
          */
         subject: string;
         /**
          *
-         * Gets or sets the title of the workbook.
+         * The title of the workbook.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -16926,21 +16935,21 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Gets the key of the custom property. Read only.
+         * The key of the custom property.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly key: string;
         /**
          *
-         * Gets the value type of the custom property. Read only.
+         * The type of the value used for the custom property.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly type: Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float";
         /**
          *
-         * Gets or sets the value of the custom property.
+         * The value of the custom property.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -17098,7 +17107,7 @@ export declare namespace Excel {
          */
         clearAll(): void;
         /**
-         * Returns the number of conditional formats in the workbook. Read-only.
+         * Returns the number of conditional formats in the workbook.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -17157,7 +17166,7 @@ export declare namespace Excel {
         /**
          *
          * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
-                    For example to format all cells between 5 and 10. Read-only.
+                    For example to format all cells between 5 and 10.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -17165,63 +17174,63 @@ export declare namespace Excel {
         /**
          *
          * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
-                    For example to format all cells between 5 and 10. Read-only.
+                    For example to format all cells between 5 and 10.
          *
          * [Api set: ExcelApi 1.6]
          */
         readonly cellValueOrNullObject: Excel.CellValueConditionalFormat;
         /**
          *
-         * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type. Read-only.
+         * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
          *
          * [Api set: ExcelApi 1.6]
          */
         readonly colorScale: Excel.ColorScaleConditionalFormat;
         /**
          *
-         * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type. Read-only.
+         * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
          *
          * [Api set: ExcelApi 1.6]
          */
         readonly colorScaleOrNullObject: Excel.ColorScaleConditionalFormat;
         /**
          *
-         * Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
+         * Returns the custom conditional format properties if the current conditional format is a custom type.
          *
          * [Api set: ExcelApi 1.6]
          */
         readonly custom: Excel.CustomConditionalFormat;
         /**
          *
-         * Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
+         * Returns the custom conditional format properties if the current conditional format is a custom type.
          *
          * [Api set: ExcelApi 1.6]
          */
         readonly customOrNullObject: Excel.CustomConditionalFormat;
         /**
          *
-         * Returns the data bar properties if the current conditional format is a data bar. Read-only.
+         * Returns the data bar properties if the current conditional format is a data bar.
          *
          * [Api set: ExcelApi 1.6]
          */
         readonly dataBar: Excel.DataBarConditionalFormat;
         /**
          *
-         * Returns the data bar properties if the current conditional format is a data bar. Read-only.
+         * Returns the data bar properties if the current conditional format is a data bar.
          *
          * [Api set: ExcelApi 1.6]
          */
         readonly dataBarOrNullObject: Excel.DataBarConditionalFormat;
         /**
          *
-         * Returns the IconSet conditional format properties if the current conditional format is an IconSet type. Read-only.
+         * Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
          *
          * [Api set: ExcelApi 1.6]
          */
         readonly iconSet: Excel.IconSetConditionalFormat;
         /**
          *
-         * Returns the IconSet conditional format properties if the current conditional format is an IconSet type. Read-only.
+         * Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -17243,7 +17252,7 @@ export declare namespace Excel {
         /**
          *
          * Returns the specific text conditional format properties if the current conditional format is a text type.
-                    For example to format cells matching the word "Text". Read-only.
+                    For example to format cells matching the word "Text".
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -17251,7 +17260,7 @@ export declare namespace Excel {
         /**
          *
          * Returns the specific text conditional format properties if the current conditional format is a text type.
-                    For example to format cells matching the word "Text". Read-only.
+                    For example to format cells matching the word "Text".
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -17259,7 +17268,7 @@ export declare namespace Excel {
         /**
          *
          * Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
-                    For example to format the top 10% or bottom 10 items. Read-only.
+                    For example to format the top 10% or bottom 10 items.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -17267,14 +17276,14 @@ export declare namespace Excel {
         /**
          *
          * Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
-                    For example to format the top 10% or bottom 10 items. Read-only.
+                    For example to format the top 10% or bottom 10 items.
          *
          * [Api set: ExcelApi 1.6]
          */
         readonly topBottomOrNullObject: Excel.TopBottomConditionalFormat;
         /**
          *
-         * The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only.
+         * The Priority of the Conditional Format within the current ConditionalFormatCollection.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -17285,7 +17294,7 @@ export declare namespace Excel {
                     changes other conditional formats' priorities, to allow for a contiguous priority order.
                     Use a negative priority to begin from the back.
                     Priorities greater than than bounds will get and set to the maximum (or minimum if negative) priority.
-                    Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it. Read-only.
+                    Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -17300,7 +17309,7 @@ export declare namespace Excel {
         stopIfTrue: boolean;
         /**
          *
-         * A type of conditional format. Only one can be set at a time. Read-only.
+         * A type of conditional format. Only one can be set at a time.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -17326,19 +17335,19 @@ export declare namespace Excel {
          */
         delete(): void;
         /**
-         * Returns the range the conditonal format is applied to. Throws an error if the conditional format is applied to multiple ranges. Read-only.
+         * Returns the range the conditonal format is applied to. Throws an error if the conditional format is applied to multiple ranges.
          *
          * [Api set: ExcelApi 1.6]
          */
         getRange(): Excel.Range;
         /**
-         * Returns the range the conditonal format is applied to, or a null object if the conditional format is applied to multiple ranges. Read-only.
+         * Returns the range the conditonal format is applied to, or a null object if the conditional format is applied to multiple ranges.
          *
          * [Api set: ExcelApi 1.6]
          */
         getRangeOrNullObject(): Excel.Range;
         /**
-         * Returns the RangeAreas, comprising one or more rectangular ranges, the conditonal format is applied to. Read-only.
+         * Returns the RangeAreas, comprising one or more rectangular ranges, the conditonal format is applied to.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -17381,21 +17390,21 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Representation of all values to the left of the axis in an Excel data bar. Read-only.
+         * Representation of all values to the left of the axis in an Excel data bar.
          *
          * [Api set: ExcelApi 1.6]
          */
         readonly negativeFormat: Excel.ConditionalDataBarNegativeFormat;
         /**
          *
-         * Representation of all values to the right of the axis in an Excel data bar. Read-only.
+         * Representation of all values to the right of the axis in an Excel data bar.
          *
          * [Api set: ExcelApi 1.6]
          */
         readonly positiveFormat: Excel.ConditionalDataBarPositiveFormat;
         /**
          *
-         * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+         * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
                     "" (empty string) if no axis is present or set.
          *
          * [Api set: ExcelApi 1.6]
@@ -17410,7 +17419,7 @@ export declare namespace Excel {
         axisFormat: Excel.ConditionalDataBarAxisFormat | "Automatic" | "None" | "CellMidPoint";
         /**
          *
-         * Represents the direction that the data bar graphic should be based on.
+         * Specifies the direction that the data bar graphic should be based on.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -17490,7 +17499,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+         * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
                     "" (empty string) if no border is present or set.
          *
          * [Api set: ExcelApi 1.6]
@@ -17498,14 +17507,14 @@ export declare namespace Excel {
         borderColor: string;
         /**
          *
-         * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+         * HTML color code representing the fill color, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
          *
          * [Api set: ExcelApi 1.6]
          */
         fillColor: string;
         /**
          *
-         * Boolean representation of whether or not the DataBar has a gradient.
+         * specifies if the DataBar has a gradient.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -17562,7 +17571,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+         * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
                     "Empty String" if no border is present or set.
          *
          * [Api set: ExcelApi 1.6]
@@ -17570,21 +17579,21 @@ export declare namespace Excel {
         borderColor: string;
         /**
          *
-         * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+         * HTML color code representing the fill color, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
          *
          * [Api set: ExcelApi 1.6]
          */
         fillColor: string;
         /**
          *
-         * Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar.
+         * Specifies if the negative DataBar has the same border color as the positive DataBar.
          *
          * [Api set: ExcelApi 1.6]
          */
         matchPositiveBorderColor: boolean;
         /**
          *
-         * Boolean representation of whether or not the negative DataBar has the same fill color as the positive DataBar.
+         * Specified if the negative DataBar has the same fill color as the positive DataBar.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -17663,14 +17672,14 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
+         * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
          *
          * [Api set: ExcelApi 1.6]
          */
         readonly format: Excel.ConditionalRangeFormat;
         /**
          *
-         * Represents the Rule object on this conditional format. Read-only.
+         * Specifies the Rule object on this conditional format.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -17903,7 +17912,7 @@ export declare namespace Excel {
     }
     /**
      *
-     * Represents an IconSet criteria for conditional formatting.
+     * Represents ColorScale criteria for conditional formatting.
      *
      * [Api set: ExcelApi 1.6]
      */
@@ -18003,7 +18012,7 @@ export declare namespace Excel {
     export interface ConditionalColorScaleCriterion {
         /**
          *
-         * HTML color code representation of the color scale color. E.g. #FF0000 represents Red.
+         * HTML color code representation of the color scale color. e.g., #FF0000 represents Red.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -18034,7 +18043,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
+         * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -18199,7 +18208,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
+         * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -18292,7 +18301,7 @@ export declare namespace Excel {
         readonly format: Excel.ConditionalRangeFormat;
         /**
          *
-         * Represents the Rule object on this conditional format.
+         * Specifies the Rule object on this conditional format.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -18361,7 +18370,7 @@ export declare namespace Excel {
         formula2?: string;
         /**
          *
-         * The operator of the text conditional format.
+         * The operator of the cell value conditional format.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -18378,21 +18387,21 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Collection of border objects that apply to the overall conditional format range. Read-only.
+         * Collection of border objects that apply to the overall conditional format range.
          *
          * [Api set: ExcelApi 1.6]
          */
         readonly borders: Excel.ConditionalRangeBorderCollection;
         /**
          *
-         * Returns the fill object defined on the overall conditional format range. Read-only.
+         * Returns the fill object defined on the overall conditional format range.
          *
          * [Api set: ExcelApi 1.6]
          */
         readonly fill: Excel.ConditionalRangeFill;
         /**
          *
-         * Returns the font object defined on the overall conditional format range. Read-only.
+         * Returns the font object defined on the overall conditional format range.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -18456,35 +18465,35 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the bold status of font.
+         * Specifies if the font is bold.
          *
          * [Api set: ExcelApi 1.6]
          */
         bold: boolean;
         /**
          *
-         * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+         * HTML color code representation of the text color. e.g., #FF0000 represents Red.
          *
          * [Api set: ExcelApi 1.6]
          */
         color: string;
         /**
          *
-         * Represents the italic status of the font.
+         * Specifies if the font is italic.
          *
          * [Api set: ExcelApi 1.6]
          */
         italic: boolean;
         /**
          *
-         * Represents the strikethrough status of the font.
+         * Specifies the strikethrough status of the font.
          *
          * [Api set: ExcelApi 1.6]
          */
         strikethrough: boolean;
         /**
          *
-         * Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
+         * The type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -18547,7 +18556,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * HTML color code representing the color of the fill, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+         * HTML color code representing the color of the fill, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -18610,14 +18619,14 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+         * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
          *
          * [Api set: ExcelApi 1.6]
          */
         color: string;
         /**
          *
-         * Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details. Read-only.
+         * Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -18681,28 +18690,28 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Gets the bottom border. Read-only.
+         * Gets the bottom border.
          *
          * [Api set: ExcelApi 1.6]
          */
         readonly bottom: Excel.ConditionalRangeBorder;
         /**
          *
-         * Gets the left border. Read-only.
+         * Gets the left border.
          *
          * [Api set: ExcelApi 1.6]
          */
         readonly left: Excel.ConditionalRangeBorder;
         /**
          *
-         * Gets the right border. Read-only.
+         * Gets the right border.
          *
          * [Api set: ExcelApi 1.6]
          */
         readonly right: Excel.ConditionalRangeBorder;
         /**
          *
-         * Gets the top border. Read-only.
+         * Gets the top border.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -18711,7 +18720,7 @@ export declare namespace Excel {
         readonly items: Excel.ConditionalRangeBorder[];
         /**
          *
-         * Number of border objects in the collection. Read-only.
+         * Number of border objects in the collection.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -18796,21 +18805,21 @@ export declare namespace Excel {
         readonly font: Excel.RangeFont;
         /**
          *
-         * Indicates if text is automatically indented when the text alignment in a cell is set to equal distribution.
+         * Specifies if text is automatically indented when the text alignment in a cell is set to equal distribution.
          *
          * [Api set: ExcelApi 1.8]
          */
         autoIndent: boolean;
         /**
          *
-         * Indicates if the style is a built-in style.
+         * Specifies if the style is a built-in style.
          *
          * [Api set: ExcelApi 1.7]
          */
         readonly builtIn: boolean;
         /**
          *
-         * Indicates if the formula will be hidden when the worksheet is protected.
+         * Specifies if the formula will be hidden when the worksheet is protected.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -18824,42 +18833,42 @@ export declare namespace Excel {
         horizontalAlignment: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed";
         /**
          *
-         * Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
+         * Specifies if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
          *
          * [Api set: ExcelApi 1.7]
          */
         includeAlignment: boolean;
         /**
          *
-         * Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
+         * Specifies if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
          *
          * [Api set: ExcelApi 1.7]
          */
         includeBorder: boolean;
         /**
          *
-         * Indicates if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
+         * Specifies if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
          *
          * [Api set: ExcelApi 1.7]
          */
         includeFont: boolean;
         /**
          *
-         * Indicates if the style includes the NumberFormat property.
+         * Specifies if the style includes the NumberFormat property.
          *
          * [Api set: ExcelApi 1.7]
          */
         includeNumber: boolean;
         /**
          *
-         * Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and PatternColorIndex interior properties.
+         * Specifies if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and PatternColorIndex interior properties.
          *
          * [Api set: ExcelApi 1.7]
          */
         includePatterns: boolean;
         /**
          *
-         * Indicates if the style includes the FormulaHidden and Locked protection properties.
+         * Specifies if the style includes the FormulaHidden and Locked protection properties.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -18873,7 +18882,7 @@ export declare namespace Excel {
         indentLevel: number;
         /**
          *
-         * Indicates if the object is locked when the worksheet is protected.
+         * Specifies if the object is locked when the worksheet is protected.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -18908,7 +18917,7 @@ export declare namespace Excel {
         readingOrder: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft";
         /**
          *
-         * Indicates if text automatically shrinks to fit in the available column width.
+         * Specifies if text automatically shrinks to fit in the available column width.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -18922,14 +18931,14 @@ export declare namespace Excel {
         textOrientation: number;
         /**
          *
-         * Represents the vertical alignment for the style. See Excel.VerticalAlignment for details.
+         * Specifies the vertical alignment for the style. See Excel.VerticalAlignment for details.
          *
          * [Api set: ExcelApi 1.7]
          */
         verticalAlignment: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed";
         /**
          *
-         * Indicates if Microsoft Excel wraps the text in the object.
+         * Specifies if Excel wraps the text in the object.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -19148,7 +19157,7 @@ export declare namespace Excel {
         name: string;
         /**
          *
-         * Specifies whether this TableStyle object is read-only. Read-only.
+         * Specifies if this TableStyle object is read-only.
          *
          * [Api set: ExcelApi 1.10]
          */
@@ -19309,7 +19318,7 @@ export declare namespace Excel {
         name: string;
         /**
          *
-         * Specifies whether this PivotTableStyle object is read-only. Read-only.
+         * Specifies if this PivotTableStyle object is read-only.
          *
          * [Api set: ExcelApi 1.10]
          */
@@ -19470,7 +19479,7 @@ export declare namespace Excel {
         name: string;
         /**
          *
-         * Specifies whether this SlicerStyle object is read-only. Read-only.
+         * Specifies if this SlicerStyle object is read-only.
          *
          * [Api set: ExcelApi 1.10]
          */
@@ -19631,7 +19640,7 @@ export declare namespace Excel {
         name: string;
         /**
          *
-         * Specifies whether this TimelineStyle object is read-only. Read-only.
+         * Specifies if this TimelineStyle object is read-only.
          *
          * [Api set: ExcelApi 1.10]
          */
@@ -19690,7 +19699,6 @@ export declare namespace Excel {
         */
         toJSON(): Excel.Interfaces.TimelineStyleData;
     }
-    var EndIgnoreIntelliSenseInternalTestClass: any;
     /**
      *
      * Represents layout and print settings that are not dependent any printer-specific implementation. These settings include margins, orientation, page numbering, title rows, and print area.
@@ -19709,133 +19717,133 @@ export declare namespace Excel {
         readonly headersFooters: Excel.HeaderFooterGroup;
         /**
          *
-         * Gets or sets the worksheet's black and white print option.
+         * The worksheet's black and white print option.
          *
          * [Api set: ExcelApi 1.9]
          */
         blackAndWhite: boolean;
         /**
          *
-         * Gets or sets the worksheet's bottom page margin to use for printing in points.
+         * The worksheet's bottom page margin to use for printing in points.
          *
          * [Api set: ExcelApi 1.9]
          */
         bottomMargin: number;
         /**
          *
-         * Gets or sets the worksheet's center horizontally flag. This flag determines whether the worksheet will be centered horizontally when it's printed.
+         * The worksheet's center horizontally flag. This flag determines whether the worksheet will be centered horizontally when it's printed.
          *
          * [Api set: ExcelApi 1.9]
          */
         centerHorizontally: boolean;
         /**
          *
-         * Gets or sets the worksheet's center vertically flag. This flag determines whether the worksheet will be centered vertically when it's printed.
+         * The worksheet's center vertically flag. This flag determines whether the worksheet will be centered vertically when it's printed.
          *
          * [Api set: ExcelApi 1.9]
          */
         centerVertically: boolean;
         /**
          *
-         * Gets or sets the worksheet's draft mode option. If true the sheet will be printed without graphics.
+         * The worksheet's draft mode option. If true the sheet will be printed without graphics.
          *
          * [Api set: ExcelApi 1.9]
          */
         draftMode: boolean;
         /**
          *
-         * Gets or sets the worksheet's first page number to print. Null value represents "auto" page numbering.
+         * The worksheet's first page number to print. Null value represents "auto" page numbering.
          *
          * [Api set: ExcelApi 1.9]
          */
         firstPageNumber: number | "";
         /**
          *
-         * Gets or sets the worksheet's footer margin, in points, for use when printing.
+         * The worksheet's footer margin, in points, for use when printing.
          *
          * [Api set: ExcelApi 1.9]
          */
         footerMargin: number;
         /**
          *
-         * Gets or sets the worksheet's header margin, in points, for use when printing.
+         * The worksheet's header margin, in points, for use when printing.
          *
          * [Api set: ExcelApi 1.9]
          */
         headerMargin: number;
         /**
          *
-         * Gets or sets the worksheet's left margin, in points, for use when printing.
+         * The worksheet's left margin, in points, for use when printing.
          *
          * [Api set: ExcelApi 1.9]
          */
         leftMargin: number;
         /**
          *
-         * Gets or sets the worksheet's orientation of the page.
+         * The worksheet's orientation of the page.
          *
          * [Api set: ExcelApi 1.9]
          */
         orientation: Excel.PageOrientation | "Portrait" | "Landscape";
         /**
          *
-         * Gets or sets the worksheet's paper size of the page.
+         * The worksheet's paper size of the page.
          *
          * [Api set: ExcelApi 1.9]
          */
         paperSize: Excel.PaperType | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" | "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" | "Esheet" | "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" | "FanfoldStdGerman" | "FanfoldLegalGerman";
         /**
          *
-         * Gets or sets whether the worksheet's comments should be displayed when printing.
+         * Specifies if the worksheet's comments should be displayed when printing.
          *
          * [Api set: ExcelApi 1.9]
          */
         printComments: Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace";
         /**
          *
-         * Gets or sets the worksheet's print errors option.
+         * The worksheet's print errors option.
          *
          * [Api set: ExcelApi 1.9]
          */
         printErrors: Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable";
         /**
          *
-         * Gets or sets the worksheet's print gridlines flag. This flag determines whether gridlines will be printed or not.
+         * Specifies if the worksheet's gridlines will be printed.
          *
          * [Api set: ExcelApi 1.9]
          */
         printGridlines: boolean;
         /**
          *
-         * Gets or sets the worksheet's print headings flag. This flag determines whether headings will be printed or not.
+         * Specifies if the worksheet's headings will be printed.
          *
          * [Api set: ExcelApi 1.9]
          */
         printHeadings: boolean;
         /**
          *
-         * Gets or sets the worksheet's page print order option. This specifies the order to use for processing the page number printed.
+         * The worksheet's page print order option. This specifies the order to use for processing the page number printed.
          *
          * [Api set: ExcelApi 1.9]
          */
         printOrder: Excel.PrintOrder | "DownThenOver" | "OverThenDown";
         /**
          *
-         * Gets or sets the worksheet's right margin, in points, for use when printing.
+         * The worksheet's right margin, in points, for use when printing.
          *
          * [Api set: ExcelApi 1.9]
          */
         rightMargin: number;
         /**
          *
-         * Gets or sets the worksheet's top margin, in points, for use when printing.
+         * The worksheet's top margin, in points, for use when printing.
          *
          * [Api set: ExcelApi 1.9]
          */
         topMargin: number;
         /**
          *
-         * Gets or sets the worksheet's print zoom options.
+         * The worksheet's print zoom options.
                     The `PageLayoutZoomOptions` object must be set as a JSON object (use `x.zoom = {...}` instead of `x.zoom.scale = ...`).
          *
          * [Api set: ExcelApi 1.9]
@@ -19998,42 +20006,42 @@ export declare namespace Excel {
     export interface PageLayoutMarginOptions {
         /**
          *
-         * Represents the page layout bottom margin in the unit specified to use for printing.
+         * Specifies the page layout bottom margin in the unit specified to use for printing.
          *
          * [Api set: ExcelApi 1.9]
          */
         bottom?: number;
         /**
          *
-         * Represents the page layout footer margin in the unit specified to use for printing.
+         * Specifies the page layout footer margin in the unit specified to use for printing.
          *
          * [Api set: ExcelApi 1.9]
          */
         footer?: number;
         /**
          *
-         * Represents the page layout header margin in the unit specified to use for printing.
+         * Specifies the page layout header margin in the unit specified to use for printing.
          *
          * [Api set: ExcelApi 1.9]
          */
         header?: number;
         /**
          *
-         * Represents the page layout left margin in the unit specified to use for printing.
+         * Specifies the page layout left margin in the unit specified to use for printing.
          *
          * [Api set: ExcelApi 1.9]
          */
         left?: number;
         /**
          *
-         * Represents the page layout right margin in the unit specified to use for printing.
+         * Specifies the page layout right margin in the unit specified to use for printing.
          *
          * [Api set: ExcelApi 1.9]
          */
         right?: number;
         /**
          *
-         * Represents the page layout top margin in the unit specified to use for printing.
+         * Specifies the page layout top margin in the unit specified to use for printing.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -20047,7 +20055,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Gets or sets the center footer of the worksheet.
+         * The center footer of the worksheet.
                     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
          *
          * [Api set: ExcelApi 1.9]
@@ -20055,7 +20063,7 @@ export declare namespace Excel {
         centerFooter: string;
         /**
          *
-         * Gets or sets the center header of the worksheet.
+         * The center header of the worksheet.
                     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
          *
          * [Api set: ExcelApi 1.9]
@@ -20063,7 +20071,7 @@ export declare namespace Excel {
         centerHeader: string;
         /**
          *
-         * Gets or sets the left footer of the worksheet.
+         * The left footer of the worksheet.
                     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
          *
          * [Api set: ExcelApi 1.9]
@@ -20071,7 +20079,7 @@ export declare namespace Excel {
         leftFooter: string;
         /**
          *
-         * Gets or sets the left header of the worksheet.
+         * The left header of the worksheet.
                     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
          *
          * [Api set: ExcelApi 1.9]
@@ -20079,7 +20087,7 @@ export declare namespace Excel {
         leftHeader: string;
         /**
          *
-         * Gets or sets the right footer of the worksheet.
+         * The right footer of the worksheet.
                     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
          *
          * [Api set: ExcelApi 1.9]
@@ -20087,7 +20095,7 @@ export declare namespace Excel {
         rightFooter: string;
         /**
          *
-         * Gets or sets the right header of the worksheet.
+         * The right header of the worksheet.
                     To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
          *
          * [Api set: ExcelApi 1.9]
@@ -20170,7 +20178,7 @@ export declare namespace Excel {
         readonly oddPages: Excel.HeaderFooter;
         /**
          *
-         * Gets or sets the state of which headers/footers are set. See Excel.HeaderFooterState for details.
+         * The state by which headers/footers are set. See Excel.HeaderFooterState for details.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -20238,14 +20246,14 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the column index for the page break
+         * Specifies the column index for the page break
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly columnIndex: number;
         /**
          *
-         * Represents the row index for the page break
+         * Specifies the row index for the page break
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -20422,28 +20430,28 @@ export declare namespace Excel {
      *
      * Represents the entity that is mentioned in comments.
      *
-     * [Api set: ExcelApiOnline 1.1]
+     * [Api set: ExcelApi 1.11]
      */
     export interface CommentMention {
         /**
          *
-         * Gets or sets the email address of the entity that is mentioned in comment.
+         * The email address of the entity that is mentioned in comment.
          *
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.11]
          */
         email: string;
         /**
          *
-         * Gets or sets the id of the entity. The id matches one of the ids in `CommentRichContent.richContent`.
+         * The id of the entity. The id matches one of the ids in `CommentRichContent.richContent`.
          *
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.11]
          */
         id: number;
         /**
          *
-         * Gets or sets the name of the entity that is mentioned in comment.
+         * The name of the entity that is mentioned in comment.
          *
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.11]
          */
         name: string;
     }
@@ -20451,16 +20459,22 @@ export declare namespace Excel {
      *
      * Represents the content contained within a comment or comment reply. Rich content incudes the text string and any other objects contained within the comment body, such as mentions.
      *
-     * [Api set: ExcelApiOnline 1.1]
+     * [Api set: ExcelApi 1.11]
      */
     export interface CommentRichContent {
         /**
          *
-         * An array containing all the entities (e.g. people) mentioned within the comment.
+         * An array containing all the entities (e.g., people) mentioned within the comment.
          *
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.11]
          */
         mentions?: Excel.CommentMention[];
+        /**
+         *
+         * Specifies the rich content of the comment (e.g., comment content with mentions, the first mentioned entity has an id attribute of 0, and the second mentioned entity has an id attribute of 1.
+         *
+         * [Api set: ExcelApi 1.11]
+         */
         richContent: string;
     }
     /**
@@ -20480,8 +20494,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.10]
          *
          * @param cellAddress - The cell to which the comment is added. This can be a Range object or a string. If it's a string, it must contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
-         * @param content - The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain text. CommentRichContent objects allow for other comment features, such as mentions. [Api set: ExcelApi 1.10 for string, ExcelApiOnline 1.1 for CommentRichContent object]
-         * @param contentType - Optional. The type of content contained within the comment. The default value is enum `ContentType.Plain`. [Api set: ExcelApi 1.10 for Enum ContentType.Plain, ExcelApiOnline 1.1 for Enum ContentType.Mention]
+         * @param content - The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain text. CommentRichContent objects allow for other comment features, such as mentions. [Api set: ExcelApi 1.10 for string, 1.11 for CommentRichContent object]
+         * @param contentType - Optional. The type of content contained within the comment. The default value is enum `ContentType.Plain`. [Api set: ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum ContentType.Mention]
          */
         add(cellAddress: Range | string, content: CommentRichContent | string, contentType?: Excel.ContentType): Excel.Comment;
         /**
@@ -20490,8 +20504,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.10]
          *
          * @param cellAddress - The cell to which the comment is added. This can be a Range object or a string. If it's a string, it must contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
-         * @param content - The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain text. CommentRichContent objects allow for other comment features, such as mentions. [Api set: ExcelApi 1.10 for string, ExcelApiOnline 1.1 for CommentRichContent object]
-         * @param contentTypeString - Optional. The type of content contained within the comment. The default value is enum `ContentType.Plain`. [Api set: ExcelApi 1.10 for Enum ContentType.Plain, ExcelApiOnline 1.1 for Enum ContentType.Mention]
+         * @param content - The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain text. CommentRichContent objects allow for other comment features, such as mentions. [Api set: ExcelApi 1.10 for string, 1.11 for CommentRichContent object]
+         * @param contentTypeString - Optional. The type of content contained within the comment. The default value is enum `ContentType.Plain`. [Api set: ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum ContentType.Mention]
          */
         add(cellAddress: Range | string, content: CommentRichContent | string, contentTypeString?: "Plain" | "Mention"): Excel.Comment;
         /**
@@ -20501,7 +20515,7 @@ export declare namespace Excel {
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
-         * Gets a comment from the collection based on its ID. Read-only.
+         * Gets a comment from the collection based on its ID.
          *
          * [Api set: ExcelApi 1.10]
          *
@@ -20567,7 +20581,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents a collection of reply objects associated with the comment. Read-only.
+         * Represents a collection of reply objects associated with the comment.
          *
          * [Api set: ExcelApi 1.10]
          */
@@ -20588,7 +20602,7 @@ export declare namespace Excel {
         readonly authorName: string;
         /**
          *
-         * Gets or sets the comment's content. The string is plain text.
+         * The comment's content. The string is plain text.
          *
          * [Api set: ExcelApi 1.10]
          */
@@ -20610,31 +20624,30 @@ export declare namespace Excel {
         readonly creationDate: Date;
         /**
          *
-         * Represents the comment identifier. Read-only.
+         * Specifies the comment identifier.
          *
          * [Api set: ExcelApi 1.10]
          */
         readonly id: string;
         /**
          *
-         * Gets the entities (e.g. people) that are mentioned in comments.
+         * Gets the entities (e.g., people) that are mentioned in comments.
          *
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.11]
          */
         readonly mentions: Excel.CommentMention[];
         /**
          *
-         * Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
+         * The comment thread status. A value of "true" means the comment thread is resolved.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.11]
          */
         resolved: boolean;
         /**
          *
-         * Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+         * Gets the rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
          *
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.11]
          */
         readonly richContent: string;
         /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
@@ -20666,7 +20679,7 @@ export declare namespace Excel {
         /**
          * Updates the comment content with a specially formatted string and a list of mentions.
          *
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.11]
          *
          * @param contentWithMentions - The content for the comment. This contains a specially formatted string and a list of mentions that will be parsed into the string when displayed by Excel.
          */
@@ -20714,8 +20727,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.10]
          *
-         * @param content - The comment's content. This can be either a string or Interface CommentRichContent (e.g. for comments with mentions). [Api set: ExcelApi 1.10 for string, ExcelApiOnline 1.1 for CommentRichContent object]
-         * @param contentType - Optional. The type of content contained within the comment. The default value is enum `ContentType.Plain`. [Api set: ExcelApi 1.10 for Enum ContentType.Plain, ExcelApiOnline 1.1 for Enum ContentType.Mention]
+         * @param content - The comment's content. This can be either a string or Interface CommentRichContent (e.g., for comments with mentions). [Api set: ExcelApi 1.10 for string, 1.11 for CommentRichContent object]
+         * @param contentType - Optional. The type of content contained within the comment. The default value is enum `ContentType.Plain`. [Api set: ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum ContentType.Mention]
          */
         add(content: CommentRichContent | string, contentType?: Excel.ContentType): Excel.CommentReply;
         /**
@@ -20723,8 +20736,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.10]
          *
-         * @param content - The comment's content. This can be either a string or Interface CommentRichContent (e.g. for comments with mentions). [Api set: ExcelApi 1.10 for string, ExcelApiOnline 1.1 for CommentRichContent object]
-         * @param contentTypeString - Optional. The type of content contained within the comment. The default value is enum `ContentType.Plain`. [Api set: ExcelApi 1.10 for Enum ContentType.Plain, ExcelApiOnline 1.1 for Enum ContentType.Mention]
+         * @param content - The comment's content. This can be either a string or Interface CommentRichContent (e.g., for comments with mentions). [Api set: ExcelApi 1.10 for string, 1.11 for CommentRichContent object]
+         * @param contentTypeString - Optional. The type of content contained within the comment. The default value is enum `ContentType.Plain`. [Api set: ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum ContentType.Mention]
          */
         add(content: CommentRichContent | string, contentTypeString?: "Plain" | "Mention"): Excel.CommentReply;
         /**
@@ -20734,7 +20747,7 @@ export declare namespace Excel {
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
-         * Returns a comment reply identified by its ID. Read-only.
+         * Returns a comment reply identified by its ID.
          *
          * [Api set: ExcelApi 1.10]
          *
@@ -20798,14 +20811,14 @@ export declare namespace Excel {
         readonly authorName: string;
         /**
          *
-         * Gets or sets the comment reply's content. The string is plain text.
+         * The comment reply's content. The string is plain text.
          *
          * [Api set: ExcelApi 1.10]
          */
         content: string;
         /**
          *
-         * Gets the content type of the comment.
+         * The content type of the reply.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -20820,31 +20833,30 @@ export declare namespace Excel {
         readonly creationDate: Date;
         /**
          *
-         * Represents the comment reply identifier. Read-only.
+         * Specifies the comment reply identifier.
          *
          * [Api set: ExcelApi 1.10]
          */
         readonly id: string;
         /**
          *
-         * Gets the entities (e.g. people) that are mentioned in comments.
+         * The entities (e.g., people) that are mentioned in comments.
          *
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.11]
          */
         readonly mentions: Excel.CommentMention[];
         /**
          *
-         * Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
+         * The comment reply status. A value of "true" means the reply is in the resolved state.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.11]
          */
         readonly resolved: boolean;
         /**
          *
-         * Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+         * The rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
          *
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.11]
          */
         readonly richContent: string;
         /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
@@ -20882,7 +20894,7 @@ export declare namespace Excel {
         /**
          * Updates the comment content with a specially formatted string and a list of mentions.
          *
-         * [Api set: ExcelApiOnline 1.1]
+         * [Api set: ExcelApi 1.11]
          *
          * @param contentWithMentions - The content for the comment. This contains a specially formatted string and a list of mentions that will be parsed into the string when displayed by Excel.
          */
@@ -20999,7 +21011,7 @@ export declare namespace Excel {
          */
         addTextBox(text?: string): Excel.Shape;
         /**
-         * Returns the number of shapes in the worksheet. Read-only.
+         * Returns the number of shapes in the worksheet.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -21056,7 +21068,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Returns the fill formatting of this shape. Read-only.
+         * Returns the fill formatting of this shape.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -21091,14 +21103,14 @@ export declare namespace Excel {
         readonly line: Excel.Line;
         /**
          *
-         * Returns the line formatting of this shape. Read-only.
+         * Returns the line formatting of this shape.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly lineFormat: Excel.ShapeLineFormat;
         /**
          *
-         * Represents the parent group of this shape.
+         * Specifies the parent group of this shape.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -21112,35 +21124,35 @@ export declare namespace Excel {
         readonly textFrame: Excel.TextFrame;
         /**
          *
-         * Returns or sets the alternative description text for a Shape object.
+         * Specifies the alternative description text for a Shape object.
          *
          * [Api set: ExcelApi 1.9]
          */
         altTextDescription: string;
         /**
          *
-         * Returns or sets the alternative title text for a Shape object.
+         * Specifies the alternative title text for a Shape object.
          *
          * [Api set: ExcelApi 1.9]
          */
         altTextTitle: string;
         /**
          *
-         * Returns the number of connection sites on this shape. Read-only.
+         * Returns the number of connection sites on this shape.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly connectionSiteCount: number;
         /**
          *
-         * Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
+         * Specifies the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
          *
          * [Api set: ExcelApi 1.9]
          */
         geometricShapeType: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
         /**
          *
-         * Represents the height, in points, of the shape.
+         * Specifies the height, in points, of the shape.
                     Throws an invalid argument exception when set with a negative value or zero as input.
          *
          * [Api set: ExcelApi 1.9]
@@ -21148,7 +21160,7 @@ export declare namespace Excel {
         height: number;
         /**
          *
-         * Represents the shape identifier. Read-only.
+         * Specifies the shape identifier.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -21163,21 +21175,21 @@ export declare namespace Excel {
         left: number;
         /**
          *
-         * Represents the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
+         * Specifies the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly level: number;
         /**
          *
-         * Specifies whether or not the aspect ratio of this shape is locked.
+         * Specifies if the aspect ratio of this shape is locked.
          *
          * [Api set: ExcelApi 1.9]
          */
         lockAspectRatio: boolean;
         /**
          *
-         * Represents the name of the shape.
+         * Specifies the name of the shape.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -21191,7 +21203,7 @@ export declare namespace Excel {
         placement: Excel.Placement | "TwoCell" | "OneCell" | "Absolute";
         /**
          *
-         * Represents the rotation, in degrees, of the shape.
+         * Specifies the rotation, in degrees, of the shape.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -21206,21 +21218,21 @@ export declare namespace Excel {
         top: number;
         /**
          *
-         * Returns the type of this shape. See Excel.ShapeType for details. Read-only.
+         * Returns the type of this shape. See Excel.ShapeType for details.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly type: Excel.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";
         /**
          *
-         * Represents the visibility of this shape.
+         * Specifies if the shape is visible.
          *
          * [Api set: ExcelApi 1.9]
          */
         visible: boolean;
         /**
          *
-         * Represents the width, in points, of the shape.
+         * Specifies the width, in points, of the shape.
                     Throws an invalid argument exception when set with a negative value or zero as input.
          *
          * [Api set: ExcelApi 1.9]
@@ -21228,7 +21240,7 @@ export declare namespace Excel {
         width: number;
         /**
          *
-         * Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack. Read-only.
+         * Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -21415,14 +21427,14 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Returns the Shape object for the geometric shape. Read-only.
+         * Returns the Shape object for the geometric shape.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly shape: Excel.Shape;
         /**
          *
-         * Returns the shape identifier. Read-only.
+         * Returns the shape identifier.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -21465,21 +21477,21 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Returns the Shape object associated with the image. Read-only.
+         * Returns the Shape object associated with the image.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly shape: Excel.Shape;
         /**
          *
-         * Represents the shape identifier for the image object. Read-only.
+         * Specifies the shape identifier for the image object.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly id: string;
         /**
          *
-         * Returns the format of the image. Read-only.
+         * Returns the format of the image.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -21522,21 +21534,21 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Returns the Shape object associated with the group. Read-only.
+         * Returns the Shape object associated with the group.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly shape: Excel.Shape;
         /**
          *
-         * Returns the collection of Shape objects. Read-only.
+         * Returns the collection of Shape objects.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly shapes: Excel.GroupShapeCollection;
         /**
          *
-         * Represents the shape identifier. Read-only.
+         * Specifies the shape identifier.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -21586,7 +21598,7 @@ export declare namespace Excel {
         /** Gets the loaded child items in this collection. */
         readonly items: Excel.Shape[];
         /**
-         * Returns the number of shapes in the shape group. Read-only.
+         * Returns the number of shapes in the shape group.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -21642,21 +21654,21 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the shape to which the beginning of the specified line is attached. Read-only.
+         * Represents the shape to which the beginning of the specified line is attached.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly beginConnectedShape: Excel.Shape;
         /**
          *
-         * Represents the shape to which the end of the specified line is attached. Read-only.
+         * Represents the shape to which the end of the specified line is attached.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly endConnectedShape: Excel.Shape;
         /**
          *
-         * Returns the Shape object associated with the line. Read-only.
+         * Returns the Shape object associated with the line.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -21684,7 +21696,7 @@ export declare namespace Excel {
         beginArrowheadWidth: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide";
         /**
          *
-         * Represents the connection site to which the beginning of a connector is connected. Read-only. Returns null when the beginning of the line is not attached to any shape.
+         * Represents the connection site to which the beginning of a connector is connected. Returns null when the beginning of the line is not attached to any shape.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -21712,28 +21724,28 @@ export declare namespace Excel {
         endArrowheadWidth: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide";
         /**
          *
-         * Represents the connection site to which the end of a connector is connected. Read-only. Returns null when the end of the line is not attached to any shape.
+         * Represents the connection site to which the end of a connector is connected. Returns null when the end of the line is not attached to any shape.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly endConnectedSite: number;
         /**
          *
-         * Represents the shape identifier. Read-only.
+         * Specifies the shape identifier.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly id: string;
         /**
          *
-         * Specifies whether or not the beginning of the specified line is connected to a shape. Read-only.
+         * Specifies if the beginning of the specified line is connected to a shape.
          *
          * [Api set: ExcelApi 1.9]
          */
         readonly isBeginConnected: boolean;
         /**
          *
-         * Specifies whether or not the end of the specified line is connected to a shape. Read-only.
+         * Specifies if the end of the specified line is connected to a shape.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -21827,21 +21839,21 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the shape fill foreground color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
+         * Represents the shape fill foreground color in HTML color format, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange")
          *
          * [Api set: ExcelApi 1.9]
          */
         foregroundColor: string;
         /**
          *
-         * Returns or sets the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns null if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
+         * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns null if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
          *
          * [Api set: ExcelApi 1.9]
          */
         transparency: number;
         /**
          *
-         * Returns the fill type of the shape. Read-only. See Excel.ShapeFillType for details.
+         * Returns the fill type of the shape. See Excel.ShapeFillType for details.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -21871,7 +21883,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.9]
          *
-         * @param color - A string that represents the fill color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+         * @param color - A string that represents the fill color in HTML color format, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
          */
         setSolidColor(color: string): void;
         /**
@@ -21912,7 +21924,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the line color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+         * Represents the line color in HTML color format, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -21940,7 +21952,7 @@ export declare namespace Excel {
         transparency: number;
         /**
          *
-         * Represents whether or not the line formatting of a shape element is visible. Returns null when the shape has inconsistent visibilities.
+         * Specifies if the line formatting of a shape element is visible. Returns null when the shape has inconsistent visibilities.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -22011,7 +22023,7 @@ export declare namespace Excel {
         readonly textRange: Excel.TextRange;
         /**
          *
-         * Gets or sets the automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
+         * The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -22025,7 +22037,7 @@ export declare namespace Excel {
         bottomMargin: number;
         /**
          *
-         * Specifies whether the text frame contains text.
+         * Specifies if the text frame contains text.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -22151,7 +22163,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Returns a ShapeFont object that represents the font attributes for the text range. Read-only.
+         * Returns a ShapeFont object that represents the font attributes for the text range.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -22231,7 +22243,7 @@ export declare namespace Excel {
         bold: boolean;
         /**
          *
-         * The HTML color code representation of the text color (e.g. "#FF0000" represents red). Returns null if the TextRange includes text fragments with different colors.
+         * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns null if the TextRange includes text fragments with different colors.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -22245,14 +22257,14 @@ export declare namespace Excel {
         italic: boolean;
         /**
          *
-         * Represents font name (e.g. "Calibri"). If the text is Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
+         * Represents font name (e.g., "Calibri"). If the text is Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
          *
          * [Api set: ExcelApi 1.9]
          */
         name: string;
         /**
          *
-         * Represents font size in points (e.g. 11). Returns null if the TextRange includes text fragments with different font sizes.
+         * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -22316,7 +22328,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * Represents the collection of SlicerItems that are part of the slicer. Read-only.
+         * Represents the collection of SlicerItems that are part of the slicer.
          *
          * [Api set: ExcelApi 1.10]
          */
@@ -22331,7 +22343,7 @@ export declare namespace Excel {
         readonly slicerStyle: Excel.SlicerStyle;
         /**
          *
-         * Represents the worksheet containing the slicer. Read-only.
+         * Represents the worksheet containing the slicer.
          *
          * [Api set: ExcelApi 1.10]
          */
@@ -22353,7 +22365,7 @@ export declare namespace Excel {
         height: number;
         /**
          *
-         * Represents the unique id of slicer. Read-only.
+         * Represents the unique id of slicer.
          *
          * [Api set: ExcelApi 1.10]
          */
@@ -22385,7 +22397,7 @@ export declare namespace Excel {
          * Represents the slicer name used in the formula.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+             * @beta
          */
         nameInFormula: string;
         /**
@@ -22445,7 +22457,7 @@ export declare namespace Excel {
          */
         delete(): void;
         /**
-         * Returns an array of selected items' keys. Read-only.
+         * Returns an array of selected items' keys.
          *
          * [Api set: ExcelApi 1.10]
          */
@@ -23691,7 +23703,7 @@ export declare namespace Excel {
     }
     /**
      *
-     * Represents the types of conditional format values.
+     * Represents the types of icon conditional format.
      *
      * [Api set: ExcelApi 1.6]
      */
@@ -23704,7 +23716,7 @@ export declare namespace Excel {
     }
     /**
      *
-     * Represents the types of conditional format values.
+     * Represents the types of color criterion for conditional formatting.
      *
      * [Api set: ExcelApi 1.6]
      */
@@ -23833,23 +23845,6 @@ export declare namespace Excel {
         none = "None",
         single = "Single",
         double = "Double"
-    }
-    /**
-     * [Api set: CustomFunctions 1.1]
-     * @beta
-     */
-    enum CustomFunctionType {
-        invalid = "Invalid",
-        script = "Script",
-        webService = "WebService"
-    }
-    /**
-     * [Api set: CustomFunctions 1.1]
-     * @beta
-     */
-    enum CustomFunctionMetadataFormat {
-        invalid = "Invalid",
-        openApi = "OpenApi"
     }
     /**
      *
@@ -24249,8 +24244,7 @@ export declare namespace Excel {
         cellDeleted = "CellDeleted"
     }
     /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: ExcelApi 1.11]
      */
     enum RowHiddenChangeType {
         /**
@@ -24413,7 +24407,27 @@ export declare namespace Excel {
          * WorksheetRowHiddenChanged represents the type of event registered on worksheet, and occurs when a row's hidden state is changed.
          *
          */
-        worksheetRowHiddenChanged = "WorksheetRowHiddenChanged"
+        worksheetRowHiddenChanged = "WorksheetRowHiddenChanged",
+        /**
+         * CommentAdded represents the type of event that is registered on commentCollection, and occurs when comment(s) is(are) added.
+         *
+         */
+        commentAdded = "CommentAdded",
+        /**
+         * CommentDeleted represents the type of event that is registered on commentCollection, and occurs when comment(s) is(are) deleted.
+         *
+         */
+        commentDeleted = "CommentDeleted",
+        /**
+         * CommentChanged represents the type of event that is registered on commentCollection, and occurs when comment(s) is(are) changed.
+         *
+         */
+        commentChanged = "CommentChanged",
+        /**
+         * RefreshRequestCompleted represents the type of event registered on LinkedDataType, and occurs when a request to refresh a data source is completed.
+         *
+         */
+        linkedDataTypeRefreshRequestCompleted = "LinkedDataTypeRefreshRequestCompleted"
     }
     /**
      * [Api set: ExcelApi 1.7]
@@ -28932,14 +28946,14 @@ export declare namespace Excel {
             enabled?: boolean;
             /**
              *
-             * Returns or sets the maximum amount of change between each iteration as Excel resolves circular references.
+             * Specifies the maximum amount of change between each iteration as Excel resolves circular references.
              *
              * [Api set: ExcelApi 1.9]
              */
             maxChange?: number;
             /**
              *
-             * Returns or sets the maximum number of iterations that Excel can use to resolve a circular reference.
+             * Specifies the maximum number of iterations that Excel can use to resolve a circular reference.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -28964,12 +28978,20 @@ export declare namespace Excel {
             chartDataPointTrack?: boolean;
             /**
              *
-             * Specifies whether or not changes have been made since the workbook was last saved.
+             * Specifies if changes have been made since the workbook was last saved.
                         You can set this property to true if you want to close a modified workbook without either saving it or being prompted to save it.
              *
              * [Api set: ExcelApi 1.9]
              */
             isDirty?: boolean;
+            /**
+             *
+             * Specifies whether the PivotTable's field list pane is shown at the workbook level.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showPivotFieldList?: boolean;
             /**
              *
              * True if the workbook uses the 1904 date system.
@@ -28998,7 +29020,7 @@ export declare namespace Excel {
             pageLayout?: Excel.Interfaces.PageLayoutUpdateData;
             /**
              *
-             * Gets or sets the enableCalculation property of the worksheet.
+             * Determines if Excel should recalculate the worksheet when necessary.
                         True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
              *
              * [Api set: ExcelApi 1.9]
@@ -29020,23 +29042,21 @@ export declare namespace Excel {
             position?: number;
             /**
              *
-             * Gets or sets the worksheet's gridlines flag.
-                        This flag determines whether gridlines are visible to the user.
+             * Specifies if gridlines are visible to the user.
              *
              * [Api set: ExcelApi 1.8]
              */
             showGridlines?: boolean;
             /**
              *
-             * Gets or sets the worksheet's headings flag.
-                        This flag determines whether headings are visible to the user.
+             * Specifies if headings are visible to the user.
              *
              * [Api set: ExcelApi 1.8]
              */
             showHeadings?: boolean;
             /**
              *
-             * Returns or sets the standard (default) width of all the columns in the worksheet.
+             * Specifies the standard (default) width of all the columns in the worksheet.
                         One unit of column width is equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is used.
              *
              * [Api set: ExcelApi 1.7]
@@ -29044,7 +29064,7 @@ export declare namespace Excel {
             standardWidth?: number;
             /**
              *
-             * Gets or sets the worksheet tab color.
+             * The tab color of the worksheet.
                         When retrieving the tab color, if the worksheet is invisible, the value will be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned. Otherwise, the property will be set to a color, in the form "#123456"
                         When setting the color, use an empty-string to set an "auto" color, or a real color otherwise.
              *
@@ -29165,7 +29185,7 @@ export declare namespace Excel {
             dataValidation?: Excel.Interfaces.DataValidationUpdateData;
             /**
             *
-            * Returns a rangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the RangeAreas object.
+            * Returns a RangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the RangeAreas object.
             *
             * [Api set: ExcelApi 1.9]
             */
@@ -29244,21 +29264,21 @@ export declare namespace Excel {
         export interface NamedItemUpdateData {
             /**
              *
-             * Represents the comment associated with this name.
+             * Specifies the comment associated with this name.
              *
              * [Api set: ExcelApi 1.4]
              */
             comment?: string;
             /**
              *
-             * Gets or sets the formula of the named item.  Formula always starts with a '=' sign.
+             * The formula of the named item. Formula always starts with a '=' sign.
              *
              * [Api set: ExcelApi 1.7]
              */
             formula?: any;
             /**
              *
-             * Specifies whether the object is visible or not.
+             * Specifies if the object is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -29288,14 +29308,14 @@ export declare namespace Excel {
             tableStyle?: Excel.Interfaces.TableStyleUpdateData;
             /**
              *
-             * Indicates whether the first column contains special formatting.
+             * Specifies if the first column contains special formatting.
              *
              * [Api set: ExcelApi 1.3]
              */
             highlightFirstColumn?: boolean;
             /**
              *
-             * Indicates whether the last column contains special formatting.
+             * Specifies if the last column contains special formatting.
              *
              * [Api set: ExcelApi 1.3]
              */
@@ -29311,35 +29331,35 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
+             * Specifies if the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
              *
              * [Api set: ExcelApi 1.3]
              */
             showBandedColumns?: boolean;
             /**
              *
-             * Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
+             * Specifies if the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
              *
              * [Api set: ExcelApi 1.3]
              */
             showBandedRows?: boolean;
             /**
              *
-             * Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
+             * Specifies if the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
              *
              * [Api set: ExcelApi 1.3]
              */
             showFilterButton?: boolean;
             /**
              *
-             * Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+             * Specifies if the header row is visible. This value can be set to show or remove the header row.
              *
              * [Api set: ExcelApi 1.1]
              */
             showHeaders?: boolean;
             /**
              *
-             * Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+             * Specifies if the total row is visible. This value can be set to show or remove the total row.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -29360,7 +29380,7 @@ export declare namespace Excel {
         export interface TableColumnUpdateData {
             /**
              *
-             * Represents the name of the table column.
+             * Specifies the name of the table column.
              *
              * [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
              */
@@ -29398,7 +29418,7 @@ export declare namespace Excel {
             errorAlert?: Excel.DataValidationErrorAlert;
             /**
              *
-             * Ignore blanks: no data validation will be performed on blank cells, it defaults to true.
+             * Specifies if data validation will be performed on blank cells, it defaults to true.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -29450,14 +29470,14 @@ export declare namespace Excel {
             protection?: Excel.Interfaces.FormatProtectionUpdateData;
             /**
              *
-             * Indicates if text is automatically indented when text alignment is set to equal distribution.
+             * Specifies if text is automatically indented when text alignment is set to equal distribution.
              *
              * [Api set: ExcelApi 1.9]
              */
             autoIndent?: boolean;
             /**
              *
-             * Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.
+             * Specifies the width of all colums within the range. If the column widths are not uniform, null will be returned.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -29485,21 +29505,21 @@ export declare namespace Excel {
             readingOrder?: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft";
             /**
              *
-             * Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
+             * The height of all rows in the range. If the row heights are not uniform, null will be returned.
              *
              * [Api set: ExcelApi 1.2]
              */
             rowHeight?: number;
             /**
              *
-             * Indicates if text automatically shrinks to fit in the available column width.
+             * Specifies if text automatically shrinks to fit in the available column width.
              *
              * [Api set: ExcelApi 1.9]
              */
             shrinkToFit?: boolean;
             /**
              *
-             * Gets or sets the text orientation of all the cells within the range.
+             * The text orientation of all the cells within the range.
                         The text orientation should be an integer either from -90 to 90, or 180 for vertically-oriented text.
                         If the orientation within a range are not uniform, then null will be returned.
              *
@@ -29518,7 +29538,7 @@ export declare namespace Excel {
             useStandardHeight?: boolean;
             /**
              *
-             * Indicates whether the column width of the Range object equals the standard width of the sheet.
+             * Specifies if the column width of the Range object equals the standard width of the sheet.
                         Returns True if the column width of the Range object equals the standard width of the sheet.
                         Returns Null if the range contains more than one column and the columns aren't all the same height.
                         Returns False otherwise.
@@ -29535,7 +29555,7 @@ export declare namespace Excel {
             verticalAlignment?: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed";
             /**
              *
-             * Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
+             * Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -29545,14 +29565,14 @@ export declare namespace Excel {
         export interface FormatProtectionUpdateData {
             /**
              *
-             * Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
+             * Specifies if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
              *
              * [Api set: ExcelApi 1.2]
              */
             formulaHidden?: boolean;
             /**
              *
-             * Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.
+             * Specifies if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -29562,14 +29582,14 @@ export declare namespace Excel {
         export interface RangeFillUpdateData {
             /**
              *
-             * HTML color code representing the color of the background, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
+             * HTML color code representing the color of the background, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange")
              *
              * [Api set: ExcelApi 1.1]
              */
             color?: string;
             /**
              *
-             * Gets or sets the pattern of a Range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are not supported.
+             * The pattern of a range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are not supported.
                         A null value indicates that the entire range doesn't have uniform pattern setting.
              *
              * [Api set: ExcelApi 1.9]
@@ -29577,15 +29597,14 @@ export declare namespace Excel {
             pattern?: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
             /**
              *
-             * Sets HTML color code representing the color of the Range pattern, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-                        Gets HTML color code representing the color of the Range pattern, of the form #RRGGBB (e.g. "FFA500").
+             * The HTML color code representing the color of the range pattern, of the form #RRGGBB (e.g., "FFA500").
              *
              * [Api set: ExcelApi 1.9]
              */
             patternColor?: string;
             /**
              *
-             * Returns or sets a double that lightens or darkens a pattern color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+             * Specifies a double that lightens or darkens a pattern color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
                         If the pattern tintAndShades are not uniform, null will be returned.
              *
              * [Api set: ExcelApi 1.9]
@@ -29593,7 +29612,7 @@ export declare namespace Excel {
             patternTintAndShade?: number;
             /**
              *
-             * Returns or sets a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+             * Specifies a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
                         If the tintAndShades are not uniform, null will be returned.
              *
              * [Api set: ExcelApi 1.9]
@@ -29604,7 +29623,7 @@ export declare namespace Excel {
         export interface RangeBorderUpdateData {
             /**
              *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -29618,7 +29637,7 @@ export declare namespace Excel {
             style?: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot";
             /**
              *
-             * Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+             * Specifies a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
                         A null value indicates that the border doesn't have uniform tintAndShade setting.
              *
              * [Api set: ExcelApi 1.9]
@@ -29636,7 +29655,7 @@ export declare namespace Excel {
         export interface RangeBorderCollectionUpdateData {
             /**
              *
-             * Returns or sets a double that lightens or darkens a color for Range Borders, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+             * Specifies a double that lightens or darkens a color for Range Borders, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
                         A null value indicates that the entire border collections don't have uniform tintAndShade setting.
              *
              * [Api set: ExcelApi 1.9]
@@ -29655,21 +29674,21 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
              *
              * [Api set: ExcelApi 1.1]
              */
             color?: string;
             /**
              *
-             * Represents the italic status of the font.
+             * Specifies the italic status of the font.
              *
              * [Api set: ExcelApi 1.1]
              */
             italic?: boolean;
             /**
              *
-             * Font name (e.g. "Calibri")
+             * Font name (e.g., "Calibri")
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -29683,14 +29702,14 @@ export declare namespace Excel {
             size?: number;
             /**
              *
-             * Represents the strikethrough status of font. A null value indicates that the entire range doesn't have uniform Strikethrough setting.
+             * Specifies the strikethrough status of font. A null value indicates that the entire range doesn't have uniform Strikethrough setting.
              *
              * [Api set: ExcelApi 1.9]
              */
             strikethrough?: boolean;
             /**
              *
-             * Represents the Subscript status of font.
+             * Specifies the Subscript status of font.
                         Returns True if all the fonts of the range are Subscript.
                         Returns False if all the fonts of the range are Superscript or normal (neither Superscript, nor Subscript).
                         Returns Null otherwise.
@@ -29700,7 +29719,7 @@ export declare namespace Excel {
             subscript?: boolean;
             /**
              *
-             * Represents the Superscript status of font.
+             * Specifies the Superscript status of font.
                         Returns True if all the fonts of the range are Superscript.
                         Returns False if all the fonts of the range are Subscript or normal (neither Superscript, nor Subscript).
                         Returns Null otherwise.
@@ -29710,7 +29729,7 @@ export declare namespace Excel {
             superscript?: boolean;
             /**
              *
-             * Returns or sets a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+             * Specifies a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
                         A null value indicates that the entire range doesn't have uniform font tintAndShade setting.
              *
              * [Api set: ExcelApi 1.9]
@@ -29774,14 +29793,14 @@ export declare namespace Excel {
             plotArea?: Excel.Interfaces.ChartPlotAreaUpdateData;
             /**
             *
-            * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
+            * Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
             *
             * [Api set: ExcelApi 1.1]
             */
             title?: Excel.Interfaces.ChartTitleUpdateData;
             /**
              *
-             * Returns or sets a ChartCategoryLabelLevel enumeration constant referring to
+             * Specifies a ChartCategoryLabelLevel enumeration constant referring to
                         the level of where the category labels are being sourced from. Read/Write.
              *
              * [Api set: ExcelApi 1.8]
@@ -29789,21 +29808,21 @@ export declare namespace Excel {
             categoryLabelLevel?: number;
             /**
              *
-             * Represents the type of the chart. See Excel.ChartType for details.
+             * Specifies the type of the chart. See Excel.ChartType for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
             /**
              *
-             * Returns or sets the way that blank cells are plotted on a chart. Read/Write.
+             * Specifies the way that blank cells are plotted on a chart.
              *
              * [Api set: ExcelApi 1.8]
              */
             displayBlanksAs?: Excel.ChartDisplayBlanksAs | "NotPlotted" | "Zero" | "Interplotted";
             /**
              *
-             * Represents the height, in points, of the chart object.
+             * Specifies the height, in points, of the chart object.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -29817,43 +29836,43 @@ export declare namespace Excel {
             left?: number;
             /**
              *
-             * Represents the name of a chart object.
+             * Specifies the name of a chart object.
              *
              * [Api set: ExcelApi 1.1]
              */
             name?: string;
             /**
              *
-             * Returns or sets the way columns or rows are used as data series on the chart. Read/Write.
+             * Specifies the way columns or rows are used as data series on the chart.
              *
              * [Api set: ExcelApi 1.8]
              */
             plotBy?: Excel.ChartPlotBy | "Rows" | "Columns";
             /**
              *
-             * True if only visible cells are plotted. False if both visible and hidden cells are plotted. Read/Write.
+             * True if only visible cells are plotted. False if both visible and hidden cells are plotted.
              *
              * [Api set: ExcelApi 1.8]
              */
             plotVisibleOnly?: boolean;
             /**
              *
-             * Returns or sets a ChartSeriesNameLevel enumeration constant referring to
-                        the level of where the series names are being sourced from. Read/Write.
+             * Specifies a ChartSeriesNameLevel enumeration constant referring to
+                        the level of where the series names are being sourced from.
              *
              * [Api set: ExcelApi 1.8]
              */
             seriesNameLevel?: number;
             /**
              *
-             * Represents whether to display all field buttons on a PivotChart.
+             * Specifies whether to display all field buttons on a PivotChart.
              *
              * [Api set: ExcelApi 1.7]
              */
             showAllFieldButtons?: boolean;
             /**
              *
-             * Represents whether to show the data labels when the value is greater than the maximum value on the value axis.
+             * Specifies whether to show the data labels when the value is greater than the maximum value on the value axis.
                         If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
                         This property applies to 2-D charts only.
              *
@@ -29862,21 +29881,21 @@ export declare namespace Excel {
             showDataLabelsOverMaximum?: boolean;
             /**
              *
-             * Returns or sets the chart style for the chart. Read/Write.
+             * Specifies the chart style for the chart.
              *
              * [Api set: ExcelApi 1.8]
              */
             style?: number;
             /**
              *
-             * Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
+             * Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
              *
              * [Api set: ExcelApi 1.1]
              */
             top?: number;
             /**
              *
-             * Represents the width, in points, of the chart object.
+             * Specifies the width, in points, of the chart object.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -29886,28 +29905,28 @@ export declare namespace Excel {
         export interface ChartPivotOptionsUpdateData {
             /**
              *
-             * Specifies whether or not to display the axis field buttons on a PivotChart. The ShowAxisFieldButtons property corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab, which is available when a PivotChart is selected.
+             * Specifies whether to display the axis field buttons on a PivotChart. The ShowAxisFieldButtons property corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab, which is available when a PivotChart is selected.
              *
              * [Api set: ExcelApi 1.9]
              */
             showAxisFieldButtons?: boolean;
             /**
              *
-             * Specifies whether or not to display the legend field buttons on a PivotChart.
+             * Specifies whether to display the legend field buttons on a PivotChart.
              *
              * [Api set: ExcelApi 1.9]
              */
             showLegendFieldButtons?: boolean;
             /**
              *
-             * Specifies whether or not to display the report filter field buttons on a PivotChart.
+             * Specifies whether to display the report filter field buttons on a PivotChart.
              *
              * [Api set: ExcelApi 1.9]
              */
             showReportFilterFieldButtons?: boolean;
             /**
              *
-             * Specifies whether or not to display the show value field buttons on a PivotChart.
+             * Specifies whether to display the show value field buttons on a PivotChart.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -29931,14 +29950,14 @@ export declare namespace Excel {
             font?: Excel.Interfaces.ChartFontUpdateData;
             /**
              *
-             * Returns or sets color scheme of the chart. Read/Write.
+             * Specifies the color scheme of the chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             colorScheme?: Excel.ChartColorScheme | "ColorfulPalette1" | "ColorfulPalette2" | "ColorfulPalette3" | "ColorfulPalette4" | "MonochromaticPalette1" | "MonochromaticPalette2" | "MonochromaticPalette3" | "MonochromaticPalette4" | "MonochromaticPalette5" | "MonochromaticPalette6" | "MonochromaticPalette7" | "MonochromaticPalette8" | "MonochromaticPalette9" | "MonochromaticPalette10" | "MonochromaticPalette11" | "MonochromaticPalette12" | "MonochromaticPalette13";
             /**
              *
-             * Specifies whether or not chart area of the chart has rounded corners. Read/Write.
+             * Specifies if the chart area of the chart has rounded corners.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -30001,14 +30020,14 @@ export declare namespace Excel {
             yErrorBars?: Excel.Interfaces.ChartErrorBarsUpdateData;
             /**
              *
-             * Returns or sets the group for the specified series. Read/Write
+             * Specifies the group for the specified series.
              *
              * [Api set: ExcelApi 1.8]
              */
             axisGroup?: Excel.ChartAxisGroup | "Primary" | "Secondary";
             /**
              *
-             * This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property only applies to bubble charts. Read/Write.
+             * This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property only applies to bubble charts.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -30030,21 +30049,21 @@ export declare namespace Excel {
             doughnutHoleSize?: number;
             /**
              *
-             * Returns or sets the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie). Read/Write.
+             * Specifies the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie).
              *
              * [Api set: ExcelApi 1.8]
              */
             explosion?: number;
             /**
              *
-             * Boolean value representing if the series is filtered or not. Not applicable for surface charts.
+             * Specifies if the series is filtered. Not applicable for surface charts.
              *
              * [Api set: ExcelApi 1.7]
              */
             filtered?: boolean;
             /**
              *
-             * Returns or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
+             * Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -30059,203 +30078,203 @@ export declare namespace Excel {
             gapWidth?: number;
             /**
              *
-             * Returns or sets the color for maximum value of a region map chart series. Read/Write.
+             * Specifies the color for maximum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMaximumColor?: string;
             /**
              *
-             * Returns or sets the type for maximum value of a region map chart series. Read/Write.
+             * Specifies the type for maximum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMaximumType?: Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent";
             /**
              *
-             * Returns or sets the maximum value of a region map chart series. Read/Write.
+             * Specifies the maximum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMaximumValue?: number;
             /**
              *
-             * Returns or sets the color for midpoint value of a region map chart series. Read/Write.
+             * Specifies the color for midpoint value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMidpointColor?: string;
             /**
              *
-             * Returns or sets the type for midpoint value of a region map chart series. Read/Write.
+             * Specifies the type for midpoint value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMidpointType?: Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent";
             /**
              *
-             * Returns or sets the midpoint value of a region map chart series. Read/Write.
+             * Specifies the midpoint value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMidpointValue?: number;
             /**
              *
-             * Returns or sets the color for minimum value of a region map chart series. Read/Write.
+             * Specifies the color for minimum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMinimumColor?: string;
             /**
              *
-             * Returns or sets the type for minimum value of a region map chart series. Read/Write.
+             * Specifies the type for minimum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMinimumType?: Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent";
             /**
              *
-             * Returns or sets the minimum value of a region map chart series. Read/Write.
+             * Specifies the minimum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMinimumValue?: number;
             /**
              *
-             * Returns or sets series gradient style of a region map chart. Read/Write.
+             * Specifies the series gradient style of a region map chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientStyle?: Excel.ChartGradientStyle | "TwoPhaseColor" | "ThreePhaseColor";
             /**
              *
-             * Boolean value representing if the series has data labels or not.
+             * Specifies if the series has data labels.
              *
              * [Api set: ExcelApi 1.7]
              */
             hasDataLabels?: boolean;
             /**
              *
-             * Returns or sets the fill color for negative data points in a series. Read/Write.
+             * Specifies the fill color for negative data points in a series.
              *
              * [Api set: ExcelApi 1.9]
              */
             invertColor?: string;
             /**
              *
-             * True if Microsoft Excel inverts the pattern in the item when it corresponds to a negative number. Read/Write.
+             * True if Excel inverts the pattern in the item when it corresponds to a negative number.
              *
              * [Api set: ExcelApi 1.8]
              */
             invertIfNegative?: boolean;
             /**
              *
-             * Represents markers background color of a chart series.
+             * Specifies the markers background color of a chart series.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerBackgroundColor?: string;
             /**
              *
-             * Represents markers foreground color of a chart series.
+             * Specifies the markers foreground color of a chart series.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerForegroundColor?: string;
             /**
              *
-             * Represents marker size of a chart series.
+             * Specifies the marker size of a chart series.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerSize?: number;
             /**
              *
-             * Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
+             * Specifies the marker style of a chart series. See Excel.ChartMarkerStyle for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerStyle?: Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture";
             /**
              *
-             * Represents the name of a series in a chart.
+             * Specifies the name of a series in a chart.
              *
              * [Api set: ExcelApi 1.1]
              */
             name?: string;
             /**
              *
-             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write.
+             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
              *
              * [Api set: ExcelApi 1.8]
              */
             overlap?: number;
             /**
              *
-             * Returns or sets the series parent label strategy area for a treemap chart. Read/Write.
+             * Specifies the series parent label strategy area for a treemap chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             parentLabelStrategy?: Excel.ChartParentLabelStrategy | "None" | "Banner" | "Overlapping";
             /**
              *
-             * Represents the plot order of a chart series within the chart group.
+             * Specifies the plot order of a chart series within the chart group.
              *
              * [Api set: ExcelApi 1.7]
              */
             plotOrder?: number;
             /**
              *
-             * Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write.
+             * Specifies the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
              *
              * [Api set: ExcelApi 1.8]
              */
             secondPlotSize?: number;
             /**
              *
-             * Specifies whether or not connector lines are shown in waterfall charts. Read/Write.
+             * Specifies whether connector lines are shown in waterfall charts.
              *
              * [Api set: ExcelApi 1.9]
              */
             showConnectorLines?: boolean;
             /**
              *
-             * Specifies whether or not leader lines are displayed for each data label in the series. Read/Write.
+             * Specifies whether leader lines are displayed for each data label in the series.
              *
              * [Api set: ExcelApi 1.9]
              */
             showLeaderLines?: boolean;
             /**
              *
-             * Boolean value representing if the series has a shadow or not.
+             * Specifies if the series has a shadow.
              *
              * [Api set: ExcelApi 1.7]
              */
             showShadow?: boolean;
             /**
              *
-             * Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
+             * Specifies if the series is smooth. Only applicable to line and scatter charts.
              *
              * [Api set: ExcelApi 1.7]
              */
             smooth?: boolean;
             /**
              *
-             * Returns or sets the way the two sections of either a pie of pie chart or a bar of pie chart are split. Read/Write.
+             * Specifies the way the two sections of either a pie of pie chart or a bar of pie chart are split.
              *
              * [Api set: ExcelApi 1.8]
              */
             splitType?: Excel.ChartSplitType | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit";
             /**
              *
-             * Returns or sets the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie chart. Read/Write.
+             * Specifies the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             splitValue?: number;
             /**
              *
-             * True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one series. Read/Write.
+             * True if Excel assigns a different color or pattern to each data marker. The chart must contain only one series.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -30300,14 +30319,14 @@ export declare namespace Excel {
             hasDataLabel?: boolean;
             /**
              *
-             * HTML color code representation of the marker background color of data point. E.g. #FF0000 represents Red.
+             * HTML color code representation of the marker background color of data point. e.g., #FF0000 represents Red.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerBackgroundColor?: string;
             /**
              *
-             * HTML color code representation of the marker foreground color of data point. E.g. #FF0000 represents Red.
+             * HTML color code representation of the marker foreground color of data point. e.g., #FF0000 represents Red.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -30393,21 +30412,21 @@ export declare namespace Excel {
             title?: Excel.Interfaces.ChartAxisTitleUpdateData;
             /**
              *
-             * Represents the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail.
+             * Specifies the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail.
              *
              * [Api set: ExcelApi 1.8]
              */
             alignment?: Excel.ChartTickLabelAlignment | "Center" | "Left" | "Right";
             /**
              *
-             * Returns or sets the base unit for the specified category axis.
+             * Specifies the base unit for the specified category axis.
              *
              * [Api set: ExcelApi 1.7]
              */
             baseTimeUnit?: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";
             /**
              *
-             * Returns or sets the category axis type.
+             * Specifies the category axis type.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -30421,35 +30440,35 @@ export declare namespace Excel {
             displayUnit?: Excel.ChartAxisDisplayUnit | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom";
             /**
              *
-             * Represents whether value axis crosses the category axis between categories.
+             * Specifies if the value axis crosses the category axis between categories.
              *
              * [Api set: ExcelApi 1.8]
              */
             isBetweenCategories?: boolean;
             /**
              *
-             * Represents whether or not the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells.
+             * Specifies if the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells.
              *
              * [Api set: ExcelApi 1.9]
              */
             linkNumberFormat?: boolean;
             /**
              *
-             * Represents the base of the logarithm when using logarithmic scales.
+             * Specifies the base of the logarithm when using logarithmic scales.
              *
              * [Api set: ExcelApi 1.7]
              */
             logBase?: number;
             /**
              *
-             * Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+             * Specifies the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             majorTickMark?: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside";
             /**
              *
-             * Returns or sets the major unit scale value for the category axis when the CategoryType property is set to TimeScale.
+             * Specifies the major unit scale value for the category axis when the CategoryType property is set to TimeScale.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -30477,14 +30496,14 @@ export declare namespace Excel {
             minimum?: any;
             /**
              *
-             * Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+             * Specifies the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             minorTickMark?: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside";
             /**
              *
-             * Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.
+             * Specifies the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -30498,84 +30517,84 @@ export declare namespace Excel {
             minorUnit?: any;
             /**
              *
-             * Represents whether an axis is multilevel or not.
+             * Specifies if an axis is multilevel.
              *
              * [Api set: ExcelApi 1.8]
              */
             multiLevel?: boolean;
             /**
              *
-             * Represents the format code for the axis tick label.
+             * Specifies the format code for the axis tick label.
              *
              * [Api set: ExcelApi 1.8]
              */
             numberFormat?: string;
             /**
              *
-             * Represents the distance between the levels of labels, and the distance between the first level and the axis line. The value should be an integer from 0 to 1000.
+             * Specifies the distance between the levels of labels, and the distance between the first level and the axis line. The value should be an integer from 0 to 1000.
              *
              * [Api set: ExcelApi 1.8]
              */
             offset?: number;
             /**
              *
-             * Represents the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details.
+             * Specifies the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details.
              *
              * [Api set: ExcelApi 1.8]
              */
             position?: Excel.ChartAxisPosition | "Automatic" | "Maximum" | "Minimum" | "Custom";
             /**
              *
-             * Represents whether Microsoft Excel plots data points from last to first.
+             * Specifies if Excel plots data points from last to first.
              *
              * [Api set: ExcelApi 1.7]
              */
             reversePlotOrder?: boolean;
             /**
              *
-             * Represents the value axis scale type. See Excel.ChartAxisScaleType for details.
+             * Specifies the value axis scale type. See Excel.ChartAxisScaleType for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             scaleType?: Excel.ChartAxisScaleType | "Linear" | "Logarithmic";
             /**
              *
-             * Represents whether the axis display unit label is visible.
+             * Specifies if the axis display unit label is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             showDisplayUnitLabel?: boolean;
             /**
              *
-             * Represents the angle to which the text is oriented for the chart axis tick label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+             * Specifies the angle to which the text is oriented for the chart axis tick label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
              *
              * [Api set: ExcelApi 1.8]
              */
             textOrientation?: any;
             /**
              *
-             * Represents the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for details.
+             * Specifies the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             tickLabelPosition?: Excel.ChartAxisTickLabelPosition | "NextToAxis" | "High" | "Low" | "None";
             /**
              *
-             * Represents the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an empty string for automatic setting. The returned value is always a number.
+             * Specifies the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an empty string for automatic setting. The returned value is always a number.
              *
              * [Api set: ExcelApi 1.7]
              */
             tickLabelSpacing?: any;
             /**
              *
-             * Represents the number of categories or series between tick marks.
+             * Specifies the number of categories or series between tick marks.
              *
              * [Api set: ExcelApi 1.7]
              */
             tickMarkSpacing?: number;
             /**
              *
-             * A boolean value represents the visibility of the axis.
+             * Specifies if the axis is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -30585,14 +30604,14 @@ export declare namespace Excel {
         export interface ChartAxisFormatUpdateData {
             /**
             *
-            * Represents the font attributes (font name, font size, color, etc.) for a chart axis element.
+            * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
             *
             * [Api set: ExcelApi 1.1]
             */
             font?: Excel.Interfaces.ChartFontUpdateData;
             /**
             *
-            * Represents chart line formatting.
+            * Specifies chart line formatting.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -30602,29 +30621,28 @@ export declare namespace Excel {
         export interface ChartAxisTitleUpdateData {
             /**
             *
-            * Represents the formatting of chart axis title.
+            * Specifies the formatting of chart axis title.
             *
             * [Api set: ExcelApi 1.1]
             */
             format?: Excel.Interfaces.ChartAxisTitleFormatUpdateData;
             /**
              *
-             * Represents the axis title.
+             * Specifies the axis title.
              *
              * [Api set: ExcelApi 1.1]
              */
             text?: string;
             /**
              *
-             * Represents the angle to which the text is oriented for the chart axis title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+             * Specifies the angle to which the text is oriented for the chart axis title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             textOrientation?: number;
             /**
              *
-             * A boolean that specifies the visibility of an axis title.
+             * Specifies if the axis title is visibile.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -30634,14 +30652,14 @@ export declare namespace Excel {
         export interface ChartAxisTitleFormatUpdateData {
             /**
             *
-            * Represents the border format, which includes color, linestyle, and weight.
+            * Specifies the chart axis title's border format, which includes color, linestyle, and weight.
             *
             * [Api set: ExcelApi 1.8]
             */
             border?: Excel.Interfaces.ChartBorderUpdateData;
             /**
             *
-            * Represents the font attributes, such as font name, font size, color, etc. of chart axis title object.
+            * Specifies the chart axis title's font attributes, such as font name, font size, color, etc. of chart axis title object.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -30651,21 +30669,21 @@ export declare namespace Excel {
         export interface ChartDataLabelsUpdateData {
             /**
             *
-            * Represents the format of chart data labels, which includes fill and font formatting.
+            * Specifies the format of chart data labels, which includes fill and font formatting.
             *
             * [Api set: ExcelApi 1.1]
             */
             format?: Excel.Interfaces.ChartDataLabelFormatUpdateData;
             /**
              *
-             * Represents whether data labels automatically generate appropriate text based on context.
+             * Specifies if data labels automatically generate appropriate text based on context.
              *
              * [Api set: ExcelApi 1.8]
              */
             autoText?: boolean;
             /**
              *
-             * Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details.
+             * Specifies the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details.
                         This property is valid only when TextOrientation of data label is 0.
              *
              * [Api set: ExcelApi 1.8]
@@ -30673,14 +30691,14 @@ export declare namespace Excel {
             horizontalAlignment?: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed";
             /**
              *
-             * Represents whether or not the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells
+             * Specifies if the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells
              *
              * [Api set: ExcelApi 1.9]
              */
             linkNumberFormat?: boolean;
             /**
              *
-             * Represents the format code for data labels.
+             * Specifies the format code for data labels.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -30701,42 +30719,42 @@ export declare namespace Excel {
             separator?: string;
             /**
              *
-             * Boolean value representing if the data label bubble size is visible or not.
+             * Specifies if the data label bubble size is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
             showBubbleSize?: boolean;
             /**
              *
-             * Boolean value representing if the data label category name is visible or not.
+             * Specifies if the data label category name is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
             showCategoryName?: boolean;
             /**
              *
-             * Boolean value representing if the data label legend key is visible or not.
+             * Specifies if the data label legend key is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
             showLegendKey?: boolean;
             /**
              *
-             * Boolean value representing if the data label percentage is visible or not.
+             * Specifies if the data label percentage is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
             showPercentage?: boolean;
             /**
              *
-             * Boolean value representing if the data label series name is visible or not.
+             * Specifies if the data label series name is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
             showSeriesName?: boolean;
             /**
              *
-             * Boolean value representing if the data label value is visible or not.
+             * Specifies if the data label value is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -30768,7 +30786,7 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ChartDataLabelFormatUpdateData;
             /**
              *
-             * Boolean value representing if data label automatically generates appropriate text based on context.
+             * Specifies if the data label automatically generates appropriate text based on context.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -30797,7 +30815,7 @@ export declare namespace Excel {
             left?: number;
             /**
              *
-             * Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+             * Specifies if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -30825,42 +30843,42 @@ export declare namespace Excel {
             separator?: string;
             /**
              *
-             * Boolean value representing if the data label bubble size is visible or not.
+             * Specifies if the data label bubble size is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             showBubbleSize?: boolean;
             /**
              *
-             * Boolean value representing if the data label category name is visible or not.
+             * Specifies if the data label category name is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             showCategoryName?: boolean;
             /**
              *
-             * Boolean value representing if the data label legend key is visible or not.
+             * Specifies if the data label legend key is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             showLegendKey?: boolean;
             /**
              *
-             * Boolean value representing if the data label percentage is visible or not.
+             * Specifies if the data label percentage is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             showPercentage?: boolean;
             /**
              *
-             * Boolean value representing if the data label series name is visible or not.
+             * Specifies if the data label series name is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             showSeriesName?: boolean;
             /**
              *
-             * Boolean value representing if the data label value is visible or not.
+             * Specifies if the data label value is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -30923,7 +30941,7 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ChartErrorBarsFormatUpdateData;
             /**
              *
-             * Specifies whether or not the error bars have an end style cap.
+             * Specifies if error bars have an end style cap.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -30944,7 +30962,7 @@ export declare namespace Excel {
             type?: Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom";
             /**
              *
-             * Specifies whether or not the error bars are displayed.
+             * Specifies whether the error bars are displayed.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -30971,7 +30989,7 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ChartGridlinesFormatUpdateData;
             /**
              *
-             * Boolean value representing if the axis gridlines are visible or not.
+             * Specifies if the axis gridlines are visible.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -30998,56 +31016,56 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ChartLegendFormatUpdateData;
             /**
              *
-             * Represents the height, in points, of the legend on the chart. Null if legend is not visible.
+             * Specifies the height, in points, of the legend on the chart. Null if legend is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             height?: number;
             /**
              *
-             * Represents the left, in points, of a chart legend. Null if legend is not visible.
+             * Specifies the left, in points, of the legend on the chart. Null if legend is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             left?: number;
             /**
              *
-             * Boolean value for whether the chart legend should overlap with the main body of the chart.
+             * Specifies if the chart legend should overlap with the main body of the chart.
              *
              * [Api set: ExcelApi 1.1]
              */
             overlay?: boolean;
             /**
              *
-             * Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
+             * Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.
              *
              * [Api set: ExcelApi 1.1]
              */
             position?: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom";
             /**
              *
-             * Represents if the legend has a shadow on the chart.
+             * Specifies if the legend has a shadow on the chart.
              *
              * [Api set: ExcelApi 1.7]
              */
             showShadow?: boolean;
             /**
              *
-             * Represents the top of a chart legend.
+             * Specifies the top of a chart legend.
              *
              * [Api set: ExcelApi 1.7]
              */
             top?: number;
             /**
              *
-             * A boolean value the represents the visibility of a ChartLegend object.
+             * Specifies if the ChartLegend is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
             visible?: boolean;
             /**
              *
-             * Represents the width, in points, of the legend on the chart. Null if legend is not visible.
+             * Specifies the width, in points, of the legend on the chart. Null if legend is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -31088,21 +31106,21 @@ export declare namespace Excel {
         export interface ChartMapOptionsUpdateData {
             /**
              *
-             * Returns or sets the series map labels strategy of a region map chart. Read/Write.
+             * Specifies the series map labels strategy of a region map chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             labelStrategy?: Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll";
             /**
              *
-             * Returns or sets the series mapping level of a region map chart. Read/Write.
+             * Specifies the series mapping level of a region map chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             level?: Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" | "World";
             /**
              *
-             * Returns or sets the series projection type of a region map chart. Read/Write.
+             * Specifies the series projection type of a region map chart.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -31119,21 +31137,21 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ChartTitleFormatUpdateData;
             /**
              *
-             * Represents the horizontal alignment for chart title.
+             * Specifies the horizontal alignment for chart title.
              *
              * [Api set: ExcelApi 1.7]
              */
             horizontalAlignment?: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed";
             /**
              *
-             * Represents the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart title is not visible.
+             * Specifies the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart title is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             left?: number;
             /**
              *
-             * Boolean value representing if the chart title will overlay the chart or not.
+             * Specifies if the chart title will overlay the chart.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -31154,35 +31172,35 @@ export declare namespace Excel {
             showShadow?: boolean;
             /**
              *
-             * Represents the title text of a chart.
+             * Specifies the chart's title text.
              *
              * [Api set: ExcelApi 1.1]
              */
             text?: string;
             /**
              *
-             * Represents the angle to which the text is oriented for the chart title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+             * Specifies the angle to which the text is oriented for the chart title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
              *
              * [Api set: ExcelApi 1.7]
              */
             textOrientation?: number;
             /**
              *
-             * Represents the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title is not visible.
+             * Specifies the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             top?: number;
             /**
              *
-             * Represents the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
+             * Specifies the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";
             /**
              *
-             * A boolean value the represents the visibility of a chart title object.
+             * Specifies if the chart title is visibile.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -31243,49 +31261,49 @@ export declare namespace Excel {
         export interface ChartBinOptionsUpdateData {
             /**
              *
-             * Specifies whether or not the bin overflow is enabled in a histogram chart or pareto chart. Read/Write.
+             * Specifies if bin overflow is enabled in a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             allowOverflow?: boolean;
             /**
              *
-             * Specifies whether or not the bin underflow is enabled in a histogram chart or pareto chart. Read/Write.
+             * Specifies if bin underflow is enabled in a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             allowUnderflow?: boolean;
             /**
              *
-             * Returns or sets the bin count of a histogram chart or pareto chart. Read/Write.
+             * Specifies the bin count of a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             count?: number;
             /**
              *
-             * Returns or sets the bin overflow value of a histogram chart or pareto chart. Read/Write.
+             * Specifies the bin overflow value of a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             overflowValue?: number;
             /**
              *
-             * Returns or sets the bin's type for a histogram chart or pareto chart. Read/Write.
+             * Specifies the bin's type for a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             type?: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount";
             /**
              *
-             * Returns or sets the bin underflow value of a histogram chart or pareto chart. Read/Write.
+             * Specifies the bin underflow value of a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             underflowValue?: number;
             /**
              *
-             * Returns or sets the bin width value of a histogram chart or pareto chart. Read/Write.
+             * Specifies the bin width value of a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -31295,35 +31313,35 @@ export declare namespace Excel {
         export interface ChartBoxwhiskerOptionsUpdateData {
             /**
              *
-             * Returns or sets the quartile calculation type of a box and whisker chart. Read/Write.
+             * Specifies if the quartile calculation type of a box and whisker chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             quartileCalculation?: Excel.ChartBoxQuartileCalculation | "Inclusive" | "Exclusive";
             /**
              *
-             * Specifies whether or not the inner points are shown in a box and whisker chart. Read/Write.
+             * Specifies if inner points are shown in a box and whisker chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             showInnerPoints?: boolean;
             /**
              *
-             * Specifies whether or not the mean line is shown in a box and whisker chart. Read/Write.
+             * Specifies if the mean line is shown in a box and whisker chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             showMeanLine?: boolean;
             /**
              *
-             * Specifies whether or not the mean marker is shown in a box and whisker chart. Read/Write.
+             * Specifies if the mean marker is shown in a box and whisker chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             showMeanMarker?: boolean;
             /**
              *
-             * Specifies whether or not outlier points are shown in a box and whisker chart. Read/Write.
+             * Specifies if outlier points are shown in a box and whisker chart.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -31364,7 +31382,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -31378,14 +31396,14 @@ export declare namespace Excel {
             italic?: boolean;
             /**
              *
-             * Font name (e.g. "Calibri")
+             * Font name (e.g., "Calibri")
              *
              * [Api set: ExcelApi 1.1]
              */
             name?: string;
             /**
              *
-             * Size of the font (e.g. 11)
+             * Size of the font (e.g., 11)
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -31496,14 +31514,14 @@ export declare namespace Excel {
         export interface ChartTrendlineLabelUpdateData {
             /**
             *
-            * Represents the format of chart trendline label.
+            * The format of chart trendline label.
             *
             * [Api set: ExcelApi 1.8]
             */
             format?: Excel.Interfaces.ChartTrendlineLabelFormatUpdateData;
             /**
              *
-             * Boolean value representing if trendline label automatically generates appropriate text based on context.
+             * Specifies if trendline label automatically generate appropriate text based on context.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -31532,7 +31550,7 @@ export declare namespace Excel {
             left?: number;
             /**
              *
-             * Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+             * Specifies if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -31578,14 +31596,14 @@ export declare namespace Excel {
         export interface ChartTrendlineLabelFormatUpdateData {
             /**
             *
-            * Represents the border format, which includes color, linestyle, and weight.
+            * Specifies the border format, which includes color, linestyle, and weight.
             *
             * [Api set: ExcelApi 1.8]
             */
             border?: Excel.Interfaces.ChartBorderUpdateData;
             /**
             *
-            * Represents the font attributes (font name, font size, color, etc.) for a chart trendline label.
+            * Specifies the font attributes (font name, font size, color, etc.) for a chart trendline label.
             *
             * [Api set: ExcelApi 1.8]
             */
@@ -31595,70 +31613,70 @@ export declare namespace Excel {
         export interface ChartPlotAreaUpdateData {
             /**
             *
-            * Represents the formatting of a chart plotArea.
+            * Specifies the formatting of a chart plotArea.
             *
             * [Api set: ExcelApi 1.8]
             */
             format?: Excel.Interfaces.ChartPlotAreaFormatUpdateData;
             /**
              *
-             * Represents the height value of plotArea.
+             * Specifies the height value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             height?: number;
             /**
              *
-             * Represents the insideHeight value of plotArea.
+             * Specifies the insideHeight value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             insideHeight?: number;
             /**
              *
-             * Represents the insideLeft value of plotArea.
+             * Specifies the insideLeft value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             insideLeft?: number;
             /**
              *
-             * Represents the insideTop value of plotArea.
+             * Specifies the insideTop value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             insideTop?: number;
             /**
              *
-             * Represents the insideWidth value of plotArea.
+             * Specifies the insideWidth value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             insideWidth?: number;
             /**
              *
-             * Represents the left value of plotArea.
+             * Specifies the left value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             left?: number;
             /**
              *
-             * Represents the position of plotArea.
+             * Specifies the position of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             position?: Excel.ChartPlotAreaPosition | "Automatic" | "Custom";
             /**
              *
-             * Represents the top value of plotArea.
+             * Specifies the top value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             top?: number;
             /**
              *
-             * Represents the width value of plotArea.
+             * Specifies the width value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -31668,7 +31686,7 @@ export declare namespace Excel {
         export interface ChartPlotAreaFormatUpdateData {
             /**
             *
-            * Represents the border attributes of a chart plotArea.
+            * Specifies the border attributes of a chart plotArea.
             *
             * [Api set: ExcelApi 1.8]
             */
@@ -31694,7 +31712,7 @@ export declare namespace Excel {
         export interface PivotTableUpdateData {
             /**
              *
-             * Specifies whether the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
+             * Specifies if the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -31702,7 +31720,7 @@ export declare namespace Excel {
             allowMultipleFiltersPerField?: boolean;
             /**
              *
-             * Specifies whether the PivotTable allows values in the data body to be edited by the user.
+             * Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -31716,7 +31734,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Specifies whether the PivotTable uses custom lists when sorting.
+             * Specifies if the PivotTable uses custom lists when sorting.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -31734,14 +31752,14 @@ export declare namespace Excel {
             pivotStyle?: Excel.Interfaces.PivotTableStyleUpdateData;
             /**
              *
-             * Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
+             * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved
              *
              * [Api set: ExcelApi 1.9]
              */
             autoFormat?: boolean;
             /**
              *
-             * Specifies whether the field list can be shown in the UI.
+             * Specifies if the field list can be shown in the UI.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -31755,21 +31773,21 @@ export declare namespace Excel {
             layoutType?: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";
             /**
              *
-             * Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
+             * Specifies if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
              *
              * [Api set: ExcelApi 1.9]
              */
             preserveFormatting?: boolean;
             /**
              *
-             * Specifies whether the PivotTable report shows grand totals for columns.
+             * Specifies if the PivotTable report shows grand totals for columns.
              *
              * [Api set: ExcelApi 1.8]
              */
             showColumnGrandTotals?: boolean;
             /**
              *
-             * Specifies whether the PivotTable report shows grand totals for rows.
+             * Specifies if the PivotTable report shows grand totals for rows.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -31881,14 +31899,14 @@ export declare namespace Excel {
             position?: number;
             /**
              *
-             * Determines whether the data should be shown as a specific summary calculation or not.
+             * Specifies if the data should be shown as a specific summary calculation.
              *
              * [Api set: ExcelApi 1.8]
              */
             showAs?: Excel.ShowAsRule;
             /**
              *
-             * Determines whether to show all items of the DataPivotHierarchy.
+             * Specifies if all items of the DataPivotHierarchy are shown.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -31944,11 +31962,22 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Determines whether the PivotItem is visible or not.
+             * Specifies if the PivotItem is visible.
              *
              * [Api set: ExcelApi 1.8]
              */
             visible?: boolean;
+        }
+        /** An interface for updating data on the WorksheetCustomProperty object, for use in `worksheetCustomProperty.set({ ... })`. */
+        export interface WorksheetCustomPropertyUpdateData {
+            /**
+             *
+             * Gets or sets the value of the custom property.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            value?: string;
         }
         /** An interface for updating data on the WorksheetCustomPropertyCollection object, for use in `worksheetCustomPropertyCollection.set({ ... })`. */
         export interface WorksheetCustomPropertyCollectionUpdateData {
@@ -31958,42 +31987,42 @@ export declare namespace Excel {
         export interface DocumentPropertiesUpdateData {
             /**
              *
-             * Gets or sets the author of the workbook.
+             * The author of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
             author?: string;
             /**
              *
-             * Gets or sets the category of the workbook.
+             * The category of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
             category?: string;
             /**
              *
-             * Gets or sets the comments of the workbook.
+             * The comments of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
             comments?: string;
             /**
              *
-             * Gets or sets the company of the workbook.
+             * The company of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
             company?: string;
             /**
              *
-             * Gets or sets the keywords of the workbook.
+             * The keywords of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
             keywords?: string;
             /**
              *
-             * Gets or sets the manager of the workbook.
+             * The manager of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -32007,14 +32036,14 @@ export declare namespace Excel {
             revisionNumber?: number;
             /**
              *
-             * Gets or sets the subject of the workbook.
+             * The subject of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
             subject?: string;
             /**
              *
-             * Gets or sets the title of the workbook.
+             * The title of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -32024,7 +32053,7 @@ export declare namespace Excel {
         export interface CustomPropertyUpdateData {
             /**
              *
-             * Gets or sets the value of the custom property.
+             * The value of the custom property.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -32164,7 +32193,7 @@ export declare namespace Excel {
                         changes other conditional formats' priorities, to allow for a contiguous priority order.
                         Use a negative priority to begin from the back.
                         Priorities greater than than bounds will get and set to the maximum (or minimum if negative) priority.
-                        Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it. Read-only.
+                        Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -32196,7 +32225,7 @@ export declare namespace Excel {
             positiveFormat?: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData;
             /**
              *
-             * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
                         "" (empty string) if no axis is present or set.
              *
              * [Api set: ExcelApi 1.6]
@@ -32211,7 +32240,7 @@ export declare namespace Excel {
             axisFormat?: Excel.ConditionalDataBarAxisFormat | "Automatic" | "None" | "CellMidPoint";
             /**
              *
-             * Represents the direction that the data bar graphic should be based on.
+             * Specifies the direction that the data bar graphic should be based on.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -32244,7 +32273,7 @@ export declare namespace Excel {
         export interface ConditionalDataBarPositiveFormatUpdateData {
             /**
              *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
                         "" (empty string) if no border is present or set.
              *
              * [Api set: ExcelApi 1.6]
@@ -32252,14 +32281,14 @@ export declare namespace Excel {
             borderColor?: string;
             /**
              *
-             * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the fill color, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.6]
              */
             fillColor?: string;
             /**
              *
-             * Boolean representation of whether or not the DataBar has a gradient.
+             * specifies if the DataBar has a gradient.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -32269,7 +32298,7 @@ export declare namespace Excel {
         export interface ConditionalDataBarNegativeFormatUpdateData {
             /**
              *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
                         "Empty String" if no border is present or set.
              *
              * [Api set: ExcelApi 1.6]
@@ -32277,21 +32306,21 @@ export declare namespace Excel {
             borderColor?: string;
             /**
              *
-             * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the fill color, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.6]
              */
             fillColor?: string;
             /**
              *
-             * Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar.
+             * Specifies if the negative DataBar has the same border color as the positive DataBar.
              *
              * [Api set: ExcelApi 1.6]
              */
             matchPositiveBorderColor?: boolean;
             /**
              *
-             * Boolean representation of whether or not the negative DataBar has the same fill color as the positive DataBar.
+             * Specified if the negative DataBar has the same fill color as the positive DataBar.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -32308,7 +32337,7 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;
             /**
             *
-            * Represents the Rule object on this conditional format.
+            * Specifies the Rule object on this conditional format.
             *
             * [Api set: ExcelApi 1.6]
             */
@@ -32441,7 +32470,7 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;
             /**
              *
-             * Represents the Rule object on this conditional format.
+             * Specifies the Rule object on this conditional format.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -32482,35 +32511,35 @@ export declare namespace Excel {
         export interface ConditionalRangeFontUpdateData {
             /**
              *
-             * Represents the bold status of font.
+             * Specifies if the font is bold.
              *
              * [Api set: ExcelApi 1.6]
              */
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
              *
              * [Api set: ExcelApi 1.6]
              */
             color?: string;
             /**
              *
-             * Represents the italic status of the font.
+             * Specifies if the font is italic.
              *
              * [Api set: ExcelApi 1.6]
              */
             italic?: boolean;
             /**
              *
-             * Represents the strikethrough status of the font.
+             * Specifies the strikethrough status of the font.
              *
              * [Api set: ExcelApi 1.6]
              */
             strikethrough?: boolean;
             /**
              *
-             * Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
+             * The type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -32520,7 +32549,7 @@ export declare namespace Excel {
         export interface ConditionalRangeFillUpdateData {
             /**
              *
-             * HTML color code representing the color of the fill, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the color of the fill, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -32530,7 +32559,7 @@ export declare namespace Excel {
         export interface ConditionalRangeBorderUpdateData {
             /**
              *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -32600,14 +32629,14 @@ export declare namespace Excel {
             font?: Excel.Interfaces.RangeFontUpdateData;
             /**
              *
-             * Indicates if text is automatically indented when the text alignment in a cell is set to equal distribution.
+             * Specifies if text is automatically indented when the text alignment in a cell is set to equal distribution.
              *
              * [Api set: ExcelApi 1.8]
              */
             autoIndent?: boolean;
             /**
              *
-             * Indicates if the formula will be hidden when the worksheet is protected.
+             * Specifies if the formula will be hidden when the worksheet is protected.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -32621,42 +32650,42 @@ export declare namespace Excel {
             horizontalAlignment?: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed";
             /**
              *
-             * Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
+             * Specifies if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
              *
              * [Api set: ExcelApi 1.7]
              */
             includeAlignment?: boolean;
             /**
              *
-             * Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
+             * Specifies if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
              *
              * [Api set: ExcelApi 1.7]
              */
             includeBorder?: boolean;
             /**
              *
-             * Indicates if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
+             * Specifies if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
              *
              * [Api set: ExcelApi 1.7]
              */
             includeFont?: boolean;
             /**
              *
-             * Indicates if the style includes the NumberFormat property.
+             * Specifies if the style includes the NumberFormat property.
              *
              * [Api set: ExcelApi 1.7]
              */
             includeNumber?: boolean;
             /**
              *
-             * Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and PatternColorIndex interior properties.
+             * Specifies if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and PatternColorIndex interior properties.
              *
              * [Api set: ExcelApi 1.7]
              */
             includePatterns?: boolean;
             /**
              *
-             * Indicates if the style includes the FormulaHidden and Locked protection properties.
+             * Specifies if the style includes the FormulaHidden and Locked protection properties.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -32670,7 +32699,7 @@ export declare namespace Excel {
             indentLevel?: number;
             /**
              *
-             * Indicates if the object is locked when the worksheet is protected.
+             * Specifies if the object is locked when the worksheet is protected.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -32698,7 +32727,7 @@ export declare namespace Excel {
             readingOrder?: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft";
             /**
              *
-             * Indicates if text automatically shrinks to fit in the available column width.
+             * Specifies if text automatically shrinks to fit in the available column width.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -32712,14 +32741,14 @@ export declare namespace Excel {
             textOrientation?: number;
             /**
              *
-             * Represents the vertical alignment for the style. See Excel.VerticalAlignment for details.
+             * Specifies the vertical alignment for the style. See Excel.VerticalAlignment for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             verticalAlignment?: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed";
             /**
              *
-             * Indicates if Microsoft Excel wraps the text in the object.
+             * Specifies if Excel wraps the text in the object.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -32796,133 +32825,133 @@ export declare namespace Excel {
             headersFooters?: Excel.Interfaces.HeaderFooterGroupUpdateData;
             /**
              *
-             * Gets or sets the worksheet's black and white print option.
+             * The worksheet's black and white print option.
              *
              * [Api set: ExcelApi 1.9]
              */
             blackAndWhite?: boolean;
             /**
              *
-             * Gets or sets the worksheet's bottom page margin to use for printing in points.
+             * The worksheet's bottom page margin to use for printing in points.
              *
              * [Api set: ExcelApi 1.9]
              */
             bottomMargin?: number;
             /**
              *
-             * Gets or sets the worksheet's center horizontally flag. This flag determines whether the worksheet will be centered horizontally when it's printed.
+             * The worksheet's center horizontally flag. This flag determines whether the worksheet will be centered horizontally when it's printed.
              *
              * [Api set: ExcelApi 1.9]
              */
             centerHorizontally?: boolean;
             /**
              *
-             * Gets or sets the worksheet's center vertically flag. This flag determines whether the worksheet will be centered vertically when it's printed.
+             * The worksheet's center vertically flag. This flag determines whether the worksheet will be centered vertically when it's printed.
              *
              * [Api set: ExcelApi 1.9]
              */
             centerVertically?: boolean;
             /**
              *
-             * Gets or sets the worksheet's draft mode option. If true the sheet will be printed without graphics.
+             * The worksheet's draft mode option. If true the sheet will be printed without graphics.
              *
              * [Api set: ExcelApi 1.9]
              */
             draftMode?: boolean;
             /**
              *
-             * Gets or sets the worksheet's first page number to print. Null value represents "auto" page numbering.
+             * The worksheet's first page number to print. Null value represents "auto" page numbering.
              *
              * [Api set: ExcelApi 1.9]
              */
             firstPageNumber?: number | "";
             /**
              *
-             * Gets or sets the worksheet's footer margin, in points, for use when printing.
+             * The worksheet's footer margin, in points, for use when printing.
              *
              * [Api set: ExcelApi 1.9]
              */
             footerMargin?: number;
             /**
              *
-             * Gets or sets the worksheet's header margin, in points, for use when printing.
+             * The worksheet's header margin, in points, for use when printing.
              *
              * [Api set: ExcelApi 1.9]
              */
             headerMargin?: number;
             /**
              *
-             * Gets or sets the worksheet's left margin, in points, for use when printing.
+             * The worksheet's left margin, in points, for use when printing.
              *
              * [Api set: ExcelApi 1.9]
              */
             leftMargin?: number;
             /**
              *
-             * Gets or sets the worksheet's orientation of the page.
+             * The worksheet's orientation of the page.
              *
              * [Api set: ExcelApi 1.9]
              */
             orientation?: Excel.PageOrientation | "Portrait" | "Landscape";
             /**
              *
-             * Gets or sets the worksheet's paper size of the page.
+             * The worksheet's paper size of the page.
              *
              * [Api set: ExcelApi 1.9]
              */
             paperSize?: Excel.PaperType | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" | "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" | "Esheet" | "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" | "FanfoldStdGerman" | "FanfoldLegalGerman";
             /**
              *
-             * Gets or sets whether the worksheet's comments should be displayed when printing.
+             * Specifies if the worksheet's comments should be displayed when printing.
              *
              * [Api set: ExcelApi 1.9]
              */
             printComments?: Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace";
             /**
              *
-             * Gets or sets the worksheet's print errors option.
+             * The worksheet's print errors option.
              *
              * [Api set: ExcelApi 1.9]
              */
             printErrors?: Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable";
             /**
              *
-             * Gets or sets the worksheet's print gridlines flag. This flag determines whether gridlines will be printed or not.
+             * Specifies if the worksheet's gridlines will be printed.
              *
              * [Api set: ExcelApi 1.9]
              */
             printGridlines?: boolean;
             /**
              *
-             * Gets or sets the worksheet's print headings flag. This flag determines whether headings will be printed or not.
+             * Specifies if the worksheet's headings will be printed.
              *
              * [Api set: ExcelApi 1.9]
              */
             printHeadings?: boolean;
             /**
              *
-             * Gets or sets the worksheet's page print order option. This specifies the order to use for processing the page number printed.
+             * The worksheet's page print order option. This specifies the order to use for processing the page number printed.
              *
              * [Api set: ExcelApi 1.9]
              */
             printOrder?: Excel.PrintOrder | "DownThenOver" | "OverThenDown";
             /**
              *
-             * Gets or sets the worksheet's right margin, in points, for use when printing.
+             * The worksheet's right margin, in points, for use when printing.
              *
              * [Api set: ExcelApi 1.9]
              */
             rightMargin?: number;
             /**
              *
-             * Gets or sets the worksheet's top margin, in points, for use when printing.
+             * The worksheet's top margin, in points, for use when printing.
              *
              * [Api set: ExcelApi 1.9]
              */
             topMargin?: number;
             /**
              *
-             * Gets or sets the worksheet's print zoom options.
+             * The worksheet's print zoom options.
                         The `PageLayoutZoomOptions` object must be set as a JSON object (use `x.zoom = {...}` instead of `x.zoom.scale = ...`).
              *
              * [Api set: ExcelApi 1.9]
@@ -32933,7 +32962,7 @@ export declare namespace Excel {
         export interface HeaderFooterUpdateData {
             /**
              *
-             * Gets or sets the center footer of the worksheet.
+             * The center footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
              *
              * [Api set: ExcelApi 1.9]
@@ -32941,7 +32970,7 @@ export declare namespace Excel {
             centerFooter?: string;
             /**
              *
-             * Gets or sets the center header of the worksheet.
+             * The center header of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
              *
              * [Api set: ExcelApi 1.9]
@@ -32949,7 +32978,7 @@ export declare namespace Excel {
             centerHeader?: string;
             /**
              *
-             * Gets or sets the left footer of the worksheet.
+             * The left footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
              *
              * [Api set: ExcelApi 1.9]
@@ -32957,7 +32986,7 @@ export declare namespace Excel {
             leftFooter?: string;
             /**
              *
-             * Gets or sets the left header of the worksheet.
+             * The left header of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
              *
              * [Api set: ExcelApi 1.9]
@@ -32965,7 +32994,7 @@ export declare namespace Excel {
             leftHeader?: string;
             /**
              *
-             * Gets or sets the right footer of the worksheet.
+             * The right footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
              *
              * [Api set: ExcelApi 1.9]
@@ -32973,7 +33002,7 @@ export declare namespace Excel {
             rightFooter?: string;
             /**
              *
-             * Gets or sets the right header of the worksheet.
+             * The right header of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
              *
              * [Api set: ExcelApi 1.9]
@@ -33012,7 +33041,7 @@ export declare namespace Excel {
             oddPages?: Excel.Interfaces.HeaderFooterUpdateData;
             /**
              *
-             * Gets or sets the state of which headers/footers are set. See Excel.HeaderFooterState for details.
+             * The state by which headers/footers are set. See Excel.HeaderFooterState for details.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -33048,17 +33077,16 @@ export declare namespace Excel {
         export interface CommentUpdateData {
             /**
              *
-             * Gets or sets the comment's content. The string is plain text.
+             * The comment's content. The string is plain text.
              *
              * [Api set: ExcelApi 1.10]
              */
             content?: string;
             /**
              *
-             * Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
+             * The comment thread status. A value of "true" means the comment thread is resolved.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.11]
              */
             resolved?: boolean;
         }
@@ -33070,7 +33098,7 @@ export declare namespace Excel {
         export interface CommentReplyUpdateData {
             /**
              *
-             * Gets or sets the comment reply's content. The string is plain text.
+             * The comment reply's content. The string is plain text.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -33098,28 +33126,28 @@ export declare namespace Excel {
             lineFormat?: Excel.Interfaces.ShapeLineFormatUpdateData;
             /**
              *
-             * Returns or sets the alternative description text for a Shape object.
+             * Specifies the alternative description text for a Shape object.
              *
              * [Api set: ExcelApi 1.9]
              */
             altTextDescription?: string;
             /**
              *
-             * Returns or sets the alternative title text for a Shape object.
+             * Specifies the alternative title text for a Shape object.
              *
              * [Api set: ExcelApi 1.9]
              */
             altTextTitle?: string;
             /**
              *
-             * Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
+             * Specifies the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
              *
              * [Api set: ExcelApi 1.9]
              */
             geometricShapeType?: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
             /**
              *
-             * Represents the height, in points, of the shape.
+             * Specifies the height, in points, of the shape.
                         Throws an invalid argument exception when set with a negative value or zero as input.
              *
              * [Api set: ExcelApi 1.9]
@@ -33135,14 +33163,14 @@ export declare namespace Excel {
             left?: number;
             /**
              *
-             * Specifies whether or not the aspect ratio of this shape is locked.
+             * Specifies if the aspect ratio of this shape is locked.
              *
              * [Api set: ExcelApi 1.9]
              */
             lockAspectRatio?: boolean;
             /**
              *
-             * Represents the name of the shape.
+             * Specifies the name of the shape.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -33156,7 +33184,7 @@ export declare namespace Excel {
             placement?: Excel.Placement | "TwoCell" | "OneCell" | "Absolute";
             /**
              *
-             * Represents the rotation, in degrees, of the shape.
+             * Specifies the rotation, in degrees, of the shape.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -33171,14 +33199,14 @@ export declare namespace Excel {
             top?: number;
             /**
              *
-             * Represents the visibility of this shape.
+             * Specifies if the shape is visible.
              *
              * [Api set: ExcelApi 1.9]
              */
             visible?: boolean;
             /**
              *
-             * Represents the width, in points, of the shape.
+             * Specifies the width, in points, of the shape.
                         Throws an invalid argument exception when set with a negative value or zero as input.
              *
              * [Api set: ExcelApi 1.9]
@@ -33245,14 +33273,14 @@ export declare namespace Excel {
         export interface ShapeFillUpdateData {
             /**
              *
-             * Represents the shape fill foreground color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
+             * Represents the shape fill foreground color in HTML color format, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange")
              *
              * [Api set: ExcelApi 1.9]
              */
             foregroundColor?: string;
             /**
              *
-             * Returns or sets the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns null if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
+             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns null if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -33262,7 +33290,7 @@ export declare namespace Excel {
         export interface ShapeLineFormatUpdateData {
             /**
              *
-             * Represents the line color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * Represents the line color in HTML color format, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -33290,7 +33318,7 @@ export declare namespace Excel {
             transparency?: number;
             /**
              *
-             * Represents whether or not the line formatting of a shape element is visible. Returns null when the shape has inconsistent visibilities.
+             * Specifies if the line formatting of a shape element is visible. Returns null when the shape has inconsistent visibilities.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -33307,7 +33335,7 @@ export declare namespace Excel {
         export interface TextFrameUpdateData {
             /**
              *
-             * Gets or sets the automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
+             * The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -33411,7 +33439,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * The HTML color code representation of the text color (e.g. "#FF0000" represents red). Returns null if the TextRange includes text fragments with different colors.
+             * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns null if the TextRange includes text fragments with different colors.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -33425,14 +33453,14 @@ export declare namespace Excel {
             italic?: boolean;
             /**
              *
-             * Represents font name (e.g. "Calibri"). If the text is Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
+             * Represents font name (e.g., "Calibri"). If the text is Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
              *
              * [Api set: ExcelApi 1.9]
              */
             name?: string;
             /**
              *
-             * Represents font size in points (e.g. 11). Returns null if the TextRange includes text fragments with different font sizes.
+             * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -33567,8 +33595,7 @@ export declare namespace Excel {
             *
             * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
             *
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.11]
             */
             cultureInfo?: Excel.Interfaces.CultureInfoData;
             /**
@@ -33582,7 +33609,7 @@ export declare namespace Excel {
             iterativeCalculation?: Excel.Interfaces.IterativeCalculationData;
             /**
              *
-             * Returns the Excel calculation engine version used for the last full recalculation. Read-only.
+             * Returns the Excel calculation engine version used for the last full recalculation.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -33596,7 +33623,7 @@ export declare namespace Excel {
             calculationMode?: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual";
             /**
              *
-             * Returns the calculation state of the application. See Excel.CalculationState for details. Read-only.
+             * Returns the calculation state of the application. See Excel.CalculationState for details.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -33605,25 +33632,22 @@ export declare namespace Excel {
              *
              * Gets the string used as the decimal separator for numeric values. This is based on Excel's local settings.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.11]
              */
             decimalSeparator?: string;
             /**
              *
              * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on Excel's local settings.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.11]
              */
             thousandsSeparator?: string;
             /**
              *
-             * Specifies whether the system separators of Microsoft Excel are enabled.
+             * Specifies if the system separators of Excel are enabled.
                         System separators include the decimal separator and thousands separator.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.11]
              */
             useSystemSeparators?: boolean;
         }
@@ -33638,14 +33662,14 @@ export declare namespace Excel {
             enabled?: boolean;
             /**
              *
-             * Returns or sets the maximum amount of change between each iteration as Excel resolves circular references.
+             * Specifies the maximum amount of change between each iteration as Excel resolves circular references.
              *
              * [Api set: ExcelApi 1.9]
              */
             maxChange?: number;
             /**
              *
-             * Returns or sets the maximum number of iterations that Excel can use to resolve a circular reference.
+             * Specifies the maximum number of iterations that Excel can use to resolve a circular reference.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -33655,126 +33679,126 @@ export declare namespace Excel {
         export interface WorkbookData {
             /**
             *
-            * Represents a collection of bindings that are part of the workbook. Read-only.
+            * Represents a collection of bindings that are part of the workbook.
             *
             * [Api set: ExcelApi 1.1]
             */
             bindings?: Excel.Interfaces.BindingData[];
             /**
             *
-            * Represents a collection of Comments associated with the workbook. Read-only.
+            * Represents a collection of Comments associated with the workbook.
             *
             * [Api set: ExcelApi 1.10]
             */
             comments?: Excel.Interfaces.CommentData[];
             /**
             *
-            * Represents the collection of custom XML parts contained by this workbook. Read-only.
+            * Represents the collection of custom XML parts contained by this workbook.
             *
             * [Api set: ExcelApi 1.5]
             */
             customXmlParts?: Excel.Interfaces.CustomXmlPartData[];
             /**
             *
-            * Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
+            * Represents a collection of workbook scoped named items (named ranges and constants).
             *
             * [Api set: ExcelApi 1.1]
             */
             names?: Excel.Interfaces.NamedItemData[];
             /**
             *
-            * Represents a collection of PivotTableStyles associated with the workbook. Read-only.
+            * Represents a collection of PivotTableStyles associated with the workbook.
             *
             * [Api set: ExcelApi 1.10]
             */
             pivotTableStyles?: Excel.Interfaces.PivotTableStyleData[];
             /**
             *
-            * Represents a collection of PivotTables associated with the workbook. Read-only.
+            * Represents a collection of PivotTables associated with the workbook.
             *
             * [Api set: ExcelApi 1.3]
             */
             pivotTables?: Excel.Interfaces.PivotTableData[];
             /**
             *
-            * Gets the workbook properties. Read-only.
+            * Gets the workbook properties.
             *
             * [Api set: ExcelApi 1.7]
             */
             properties?: Excel.Interfaces.DocumentPropertiesData;
             /**
             *
-            * Returns workbook protection object for a workbook. Read-only.
+            * Returns workbook protection object for a workbook.
             *
             * [Api set: ExcelApi 1.7]
             */
             protection?: Excel.Interfaces.WorkbookProtectionData;
             /**
             *
-            * Represents a collection of Settings associated with the workbook. Read-only.
+            * Represents a collection of Settings associated with the workbook.
             *
             * [Api set: ExcelApi 1.4]
             */
             settings?: Excel.Interfaces.SettingData[];
             /**
             *
-            * Represents a collection of SlicerStyles associated with the workbook. Read-only.
+            * Represents a collection of SlicerStyles associated with the workbook.
             *
             * [Api set: ExcelApi 1.10]
             */
             slicerStyles?: Excel.Interfaces.SlicerStyleData[];
             /**
             *
-            * Represents a collection of Slicers associated with the workbook. Read-only.
+            * Represents a collection of Slicers associated with the workbook.
             *
             * [Api set: ExcelApi 1.10]
             */
             slicers?: Excel.Interfaces.SlicerData[];
             /**
             *
-            * Represents a collection of styles associated with the workbook. Read-only.
+            * Represents a collection of styles associated with the workbook.
             *
             * [Api set: ExcelApi 1.7]
             */
             styles?: Excel.Interfaces.StyleData[];
             /**
             *
-            * Represents a collection of TableStyles associated with the workbook. Read-only.
+            * Represents a collection of TableStyles associated with the workbook.
             *
             * [Api set: ExcelApi 1.10]
             */
             tableStyles?: Excel.Interfaces.TableStyleData[];
             /**
             *
-            * Represents a collection of tables associated with the workbook. Read-only.
+            * Represents a collection of tables associated with the workbook.
             *
             * [Api set: ExcelApi 1.1]
             */
             tables?: Excel.Interfaces.TableData[];
             /**
             *
-            * Represents a collection of TimelineStyles associated with the workbook. Read-only.
+            * Represents a collection of TimelineStyles associated with the workbook.
             *
             * [Api set: ExcelApi 1.10]
             */
             timelineStyles?: Excel.Interfaces.TimelineStyleData[];
             /**
             *
-            * Represents a collection of worksheets associated with the workbook. Read-only.
+            * Represents a collection of worksheets associated with the workbook.
             *
             * [Api set: ExcelApi 1.1]
             */
             worksheets?: Excel.Interfaces.WorksheetData[];
             /**
              *
-             * Specifies whether or not the workbook is in autosave mode. Read-Only.
+             * Specifies if the workbook is in autosave mode.
              *
              * [Api set: ExcelApi 1.9]
              */
             autoSave?: boolean;
             /**
              *
-             * Returns a number about the version of Excel Calculation Engine. Read-Only.
+             * Returns a number about the version of Excel Calculation Engine.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -33789,7 +33813,7 @@ export declare namespace Excel {
             chartDataPointTrack?: boolean;
             /**
              *
-             * Specifies whether or not changes have been made since the workbook was last saved.
+             * Specifies if changes have been made since the workbook was last saved.
                         You can set this property to true if you want to close a modified workbook without either saving it or being prompted to save it.
              *
              * [Api set: ExcelApi 1.9]
@@ -33797,25 +33821,33 @@ export declare namespace Excel {
             isDirty?: boolean;
             /**
              *
-             * Gets the workbook name. Read-only.
+             * Gets the workbook name.
              *
              * [Api set: ExcelApi 1.7]
              */
             name?: string;
             /**
              *
-             * Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
+             * Specifies if the workbook has ever been saved locally or online.
              *
              * [Api set: ExcelApi 1.9]
              */
             previouslySaved?: boolean;
             /**
              *
-             * True if the workbook is open in Read-only mode. Read-only.
+             * True if the workbook is open in Read-only mode.
              *
              * [Api set: ExcelApi 1.8]
              */
             readOnly?: boolean;
+            /**
+             *
+             * Specifies whether the PivotTable's field list pane is shown at the workbook level.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showPivotFieldList?: boolean;
             /**
              *
              * True if the workbook uses the 1904 date system.
@@ -33837,7 +33869,7 @@ export declare namespace Excel {
         export interface WorkbookProtectionData {
             /**
              *
-             * Indicates if the workbook is protected. Read-Only.
+             * Specifies if the workbook is protected.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -33850,28 +33882,28 @@ export declare namespace Excel {
         export interface WorksheetData {
             /**
             *
-            * Represents the AutoFilter object of the worksheet. Read-Only.
+            * Represents the AutoFilter object of the worksheet.
             *
             * [Api set: ExcelApi 1.9]
             */
             autoFilter?: Excel.Interfaces.AutoFilterData;
             /**
             *
-            * Returns a collection of charts that are part of the worksheet. Read-only.
+            * Returns a collection of charts that are part of the worksheet.
             *
             * [Api set: ExcelApi 1.1]
             */
             charts?: Excel.Interfaces.ChartData[];
             /**
             *
-            * Returns a collection of all the Comments objects on the worksheet. Read-only.
+            * Returns a collection of all the Comments objects on the worksheet.
             *
             * [Api set: ExcelApi 1.10]
             */
             comments?: Excel.Interfaces.CommentData[];
             /**
             *
-            * Returns a collection of worksheet-level custom properties.
+            * Gets a collection of worksheet-level custom properties.
             *
             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
             * @beta
@@ -33886,7 +33918,7 @@ export declare namespace Excel {
             horizontalPageBreaks?: Excel.Interfaces.PageBreakData[];
             /**
             *
-            * Collection of names scoped to the current worksheet. Read-only.
+            * Collection of names scoped to the current worksheet.
             *
             * [Api set: ExcelApi 1.4]
             */
@@ -33900,35 +33932,35 @@ export declare namespace Excel {
             pageLayout?: Excel.Interfaces.PageLayoutData;
             /**
             *
-            * Collection of PivotTables that are part of the worksheet. Read-only.
+            * Collection of PivotTables that are part of the worksheet.
             *
             * [Api set: ExcelApi 1.3]
             */
             pivotTables?: Excel.Interfaces.PivotTableData[];
             /**
             *
-            * Returns sheet protection object for a worksheet. Read-only.
+            * Returns sheet protection object for a worksheet.
             *
             * [Api set: ExcelApi 1.2]
             */
             protection?: Excel.Interfaces.WorksheetProtectionData;
             /**
             *
-            * Returns the collection of all the Shape objects on the worksheet. Read-only.
+            * Returns the collection of all the Shape objects on the worksheet.
             *
             * [Api set: ExcelApi 1.9]
             */
             shapes?: Excel.Interfaces.ShapeData[];
             /**
             *
-            * Returns a collection of slicers that are part of the worksheet. Read-only.
+            * Returns a collection of slicers that are part of the worksheet.
             *
             * [Api set: ExcelApi 1.10]
             */
             slicers?: Excel.Interfaces.SlicerData[];
             /**
             *
-            * Collection of tables that are part of the worksheet. Read-only.
+            * Collection of tables that are part of the worksheet.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -33942,7 +33974,7 @@ export declare namespace Excel {
             verticalPageBreaks?: Excel.Interfaces.PageBreakData[];
             /**
              *
-             * Gets or sets the enableCalculation property of the worksheet.
+             * Determines if Excel should recalculate the worksheet when necessary.
                         True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
              *
              * [Api set: ExcelApi 1.9]
@@ -33950,7 +33982,7 @@ export declare namespace Excel {
             enableCalculation?: boolean;
             /**
              *
-             * Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
+             * Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -33971,30 +34003,28 @@ export declare namespace Excel {
             position?: number;
             /**
              *
-             * Gets or sets the worksheet's gridlines flag.
-                        This flag determines whether gridlines are visible to the user.
+             * Specifies if gridlines are visible to the user.
              *
              * [Api set: ExcelApi 1.8]
              */
             showGridlines?: boolean;
             /**
              *
-             * Gets or sets the worksheet's headings flag.
-                        This flag determines whether headings are visible to the user.
+             * Specifies if headings are visible to the user.
              *
              * [Api set: ExcelApi 1.8]
              */
             showHeadings?: boolean;
             /**
              *
-             * Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
+             * Returns the standard (default) height of all the rows in the worksheet, in points.
              *
              * [Api set: ExcelApi 1.7]
              */
             standardHeight?: number;
             /**
              *
-             * Returns or sets the standard (default) width of all the columns in the worksheet.
+             * Specifies the standard (default) width of all the columns in the worksheet.
                         One unit of column width is equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is used.
              *
              * [Api set: ExcelApi 1.7]
@@ -34002,7 +34032,7 @@ export declare namespace Excel {
             standardWidth?: number;
             /**
              *
-             * Gets or sets the worksheet tab color.
+             * The tab color of the worksheet.
                         When retrieving the tab color, if the worksheet is invisible, the value will be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned. Otherwise, the property will be set to a color, in the form "#123456"
                         When setting the color, use an empty-string to set an "auto" color, or a real color otherwise.
              *
@@ -34025,14 +34055,14 @@ export declare namespace Excel {
         export interface WorksheetProtectionData {
             /**
              *
-             * Sheet protection options. Read-only.
+             * Specifies the protection options for the worksheet.
              *
              * [Api set: ExcelApi 1.2]
              */
             options?: Excel.WorksheetProtectionOptions;
             /**
              *
-             * Indicates if the worksheet is protected. Read-only.
+             * Specifies if the worksheet is protected.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -34042,7 +34072,7 @@ export declare namespace Excel {
         export interface RangeData {
             /**
             *
-            * Collection of ConditionalFormats that intersect the range. Read-only.
+            * The collection of ConditionalFormats that intersect the range.
             *
             * [Api set: ExcelApi 1.6]
             */
@@ -34056,35 +34086,35 @@ export declare namespace Excel {
             dataValidation?: Excel.Interfaces.DataValidationData;
             /**
             *
-            * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties. Read-only.
+            * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
             *
             * [Api set: ExcelApi 1.1]
             */
             format?: Excel.Interfaces.RangeFormatData;
             /**
              *
-             * Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4"). Read-only.
+             * Specifies the range reference in A1-style. Address value will contain the Sheet reference (e.g., "Sheet1!A1:B4").
              *
              * [Api set: ExcelApi 1.1]
              */
             address?: string;
             /**
              *
-             * Represents range reference for the specified range in the language of the user. Read-only.
+             * Specifies the range reference for the specified range in the language of the user.
              *
              * [Api set: ExcelApi 1.1]
              */
             addressLocal?: string;
             /**
              *
-             * Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
+             * Specifies the number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647).
              *
              * [Api set: ExcelApi 1.1]
              */
             cellCount?: number;
             /**
              *
-             * Represents the total number of columns in the range. Read-only.
+             * Specifies the total number of columns in the range.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -34098,7 +34128,7 @@ export declare namespace Excel {
             columnHidden?: boolean;
             /**
              *
-             * Represents the column number of the first cell in the range. Zero-indexed. Read-only.
+             * Specifies the column number of the first cell in the range. Zero-indexed.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -34136,14 +34166,14 @@ export declare namespace Excel {
             hasSpill?: boolean;
             /**
              *
-             * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
+             * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range.
              *
              * [Api set: ExcelApi 1.10]
              */
             height?: number;
             /**
              *
-             * Represents if all cells of the current range are hidden. Read-only.
+             * Represents if all cells of the current range are hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -34157,28 +34187,28 @@ export declare namespace Excel {
             hyperlink?: Excel.RangeHyperlink;
             /**
              *
-             * Represents if the current range is an entire column. Read-only.
+             * Represents if the current range is an entire column.
              *
              * [Api set: ExcelApi 1.7]
              */
             isEntireColumn?: boolean;
             /**
              *
-             * Represents if the current range is an entire row. Read-only.
+             * Represents if the current range is an entire row.
              *
              * [Api set: ExcelApi 1.7]
              */
             isEntireRow?: boolean;
             /**
              *
-             * Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range. Read-only.
+             * Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range.
              *
              * [Api set: ExcelApi 1.10]
              */
             left?: number;
             /**
              *
-             * Represents the data type state of each cell. Read-only.
+             * Represents the data type state of each cell.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -34192,7 +34222,7 @@ export declare namespace Excel {
             numberFormat?: any[][];
             /**
              *
-             * Represents the category of number format of each cell. Read-only.
+             * Represents the category of number format of each cell.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -34209,7 +34239,7 @@ export declare namespace Excel {
             numberFormatLocal?: any[][];
             /**
              *
-             * Returns the total number of rows in the range. Read-only.
+             * Returns the total number of rows in the range.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -34223,7 +34253,7 @@ export declare namespace Excel {
             rowHidden?: boolean;
             /**
              *
-             * Returns the row number of the first cell in the range. Zero-indexed. Read-only.
+             * Returns the row number of the first cell in the range. Zero-indexed.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -34249,21 +34279,21 @@ export declare namespace Excel {
             style?: string;
             /**
              *
-             * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
+             * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.
              *
              * [Api set: ExcelApi 1.1]
              */
             text?: string[][];
             /**
              *
-             * Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
+             * Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range.
              *
              * [Api set: ExcelApi 1.10]
              */
             top?: number;
             /**
              *
-             * Represents the type of data of each cell. Read-only.
+             * Specifies the type of data in each cell.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -34277,7 +34307,7 @@ export declare namespace Excel {
             values?: any[][];
             /**
              *
-             * Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
+             * Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -34294,7 +34324,7 @@ export declare namespace Excel {
             areas?: Excel.Interfaces.RangeData[];
             /**
             *
-            * Returns a collection of ConditionalFormats that intersect with any cells in this RangeAreas object. Read-only.
+            * Returns a collection of ConditionalFormats that intersect with any cells in this RangeAreas object.
             *
             * [Api set: ExcelApi 1.9]
             */
@@ -34308,21 +34338,21 @@ export declare namespace Excel {
             dataValidation?: Excel.Interfaces.DataValidationData;
             /**
             *
-            * Returns a rangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the RangeAreas object. Read-only.
+            * Returns a RangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the RangeAreas object.
             *
             * [Api set: ExcelApi 1.9]
             */
             format?: Excel.Interfaces.RangeFormatData;
             /**
              *
-             * Returns the RageAreas reference in A1-style. Address value will contain the worksheet name for each rectangular block of cells (e.g. "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
+             * Returns the RangeAreas reference in A1-style. Address value will contain the worksheet name for each rectangular block of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4").
              *
              * [Api set: ExcelApi 1.9]
              */
             address?: string;
             /**
              *
-             * Returns the RageAreas reference in the user locale. Read-only.
+             * Returns the RangeAreas reference in the user locale.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -34336,21 +34366,21 @@ export declare namespace Excel {
             areaCount?: number;
             /**
              *
-             * Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
+             * Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647).
              *
              * [Api set: ExcelApi 1.9]
              */
             cellCount?: number;
             /**
              *
-             * Indicates whether all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z"). Read-only.
+             * Specifies if all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z").
              *
              * [Api set: ExcelApi 1.9]
              */
             isEntireColumn?: boolean;
             /**
              *
-             * Indicates whether all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7"). Read-only.
+             * Specifies if all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7").
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -34369,21 +34399,21 @@ export declare namespace Excel {
         export interface RangeViewData {
             /**
             *
-            * Represents a collection of range views associated with the range. Read-only.
+            * Represents a collection of range views associated with the range.
             *
             * [Api set: ExcelApi 1.3]
             */
             rows?: Excel.Interfaces.RangeViewData[];
             /**
              *
-             * Represents the cell addresses of the RangeView. Read-only.
+             * Represents the cell addresses of the RangeView.
              *
              * [Api set: ExcelApi 1.3]
              */
             cellAddresses?: any[][];
             /**
              *
-             * Returns the number of visible columns. Read-only.
+             * The number of visible columns.
              *
              * [Api set: ExcelApi 1.3]
              */
@@ -34411,7 +34441,7 @@ export declare namespace Excel {
             formulasR1C1?: any[][];
             /**
              *
-             * Returns a value that represents the index of the RangeView. Read-only.
+             * Returns a value that represents the index of the RangeView.
              *
              * [Api set: ExcelApi 1.3]
              */
@@ -34425,21 +34455,21 @@ export declare namespace Excel {
             numberFormat?: any[][];
             /**
              *
-             * Returns the number of visible rows. Read-only.
+             * The number of visible rows.
              *
              * [Api set: ExcelApi 1.3]
              */
             rowCount?: number;
             /**
              *
-             * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
+             * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.
              *
              * [Api set: ExcelApi 1.3]
              */
             text?: string[][];
             /**
              *
-             * Represents the type of data of each cell. Read-only.
+             * Represents the type of data of each cell.
              *
              * [Api set: ExcelApi 1.3]
              */
@@ -34464,7 +34494,7 @@ export declare namespace Excel {
         export interface SettingData {
             /**
              *
-             * Returns the key that represents the id of the Setting. Read-only.
+             * The key that represents the id of the Setting.
              *
              * [Api set: ExcelApi 1.4]
              */
@@ -34485,56 +34515,56 @@ export declare namespace Excel {
         export interface NamedItemData {
             /**
             *
-            * Returns an object containing values and types of the named item. Read-only.
+            * Returns an object containing values and types of the named item.
             *
             * [Api set: ExcelApi 1.7]
             */
             arrayValues?: Excel.Interfaces.NamedItemArrayValuesData;
             /**
              *
-             * Represents the comment associated with this name.
+             * Specifies the comment associated with this name.
              *
              * [Api set: ExcelApi 1.4]
              */
             comment?: string;
             /**
              *
-             * Gets or sets the formula of the named item.  Formula always starts with a '=' sign.
+             * The formula of the named item. Formula always starts with a '=' sign.
              *
              * [Api set: ExcelApi 1.7]
              */
             formula?: any;
             /**
              *
-             * The name of the object. Read-only.
+             * The name of the object.
              *
              * [Api set: ExcelApi 1.1]
              */
             name?: string;
             /**
              *
-             * Indicates whether the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet, Workbook. Read-only.
+             * Specifies if the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet, Workbook.
              *
              * [Api set: ExcelApi 1.4]
              */
             scope?: Excel.NamedItemScope | "Worksheet" | "Workbook";
             /**
              *
-             * Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
+             * Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.
              *
              * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
              */
             type?: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array";
             /**
              *
-             * Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
+             * Represents the value computed by the name's formula. For a named range, will return the range address.
              *
              * [Api set: ExcelApi 1.1]
              */
             value?: any;
             /**
              *
-             * Specifies whether the object is visible or not.
+             * Specifies if the object is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -34561,14 +34591,14 @@ export declare namespace Excel {
         export interface BindingData {
             /**
              *
-             * Represents binding identifier. Read-only.
+             * Represents binding identifier.
              *
              * [Api set: ExcelApi 1.1]
              */
             id?: string;
             /**
              *
-             * Returns the type of the binding. See Excel.BindingType for details. Read-only.
+             * Returns the type of the binding. See Excel.BindingType for details.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -34590,28 +34620,28 @@ export declare namespace Excel {
         export interface TableData {
             /**
             *
-            * Represents the AutoFilter object of the table. Read-Only.
+            * Represents the AutoFilter object of the table.
             *
             * [Api set: ExcelApi 1.9]
             */
             autoFilter?: Excel.Interfaces.AutoFilterData;
             /**
             *
-            * Represents a collection of all the columns in the table. Read-only.
+            * Represents a collection of all the columns in the table.
             *
             * [Api set: ExcelApi 1.1]
             */
             columns?: Excel.Interfaces.TableColumnData[];
             /**
             *
-            * Represents a collection of all the rows in the table. Read-only.
+            * Represents a collection of all the rows in the table.
             *
             * [Api set: ExcelApi 1.1]
             */
             rows?: Excel.Interfaces.TableRowData[];
             /**
             *
-            * Represents the sorting for the table. Read-only.
+            * Represents the sorting for the table.
             *
             * [Api set: ExcelApi 1.2]
             */
@@ -34626,21 +34656,21 @@ export declare namespace Excel {
             tableStyle?: Excel.Interfaces.TableStyleData;
             /**
              *
-             * Indicates whether the first column contains special formatting.
+             * Specifies if the first column contains special formatting.
              *
              * [Api set: ExcelApi 1.3]
              */
             highlightFirstColumn?: boolean;
             /**
              *
-             * Indicates whether the last column contains special formatting.
+             * Specifies if the last column contains special formatting.
              *
              * [Api set: ExcelApi 1.3]
              */
             highlightLastColumn?: boolean;
             /**
              *
-             * Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed. Read-only.
+             * Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -34663,35 +34693,35 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
+             * Specifies if the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
              *
              * [Api set: ExcelApi 1.3]
              */
             showBandedColumns?: boolean;
             /**
              *
-             * Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
+             * Specifies if the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
              *
              * [Api set: ExcelApi 1.3]
              */
             showBandedRows?: boolean;
             /**
              *
-             * Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
+             * Specifies if the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
              *
              * [Api set: ExcelApi 1.3]
              */
             showFilterButton?: boolean;
             /**
              *
-             * Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+             * Specifies if the header row is visible. This value can be set to show or remove the header row.
              *
              * [Api set: ExcelApi 1.1]
              */
             showHeaders?: boolean;
             /**
              *
-             * Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+             * Specifies if the total row is visible. This value can be set to show or remove the total row.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -34712,28 +34742,28 @@ export declare namespace Excel {
         export interface TableColumnData {
             /**
             *
-            * Retrieve the filter applied to the column. Read-only.
+            * Retrieve the filter applied to the column.
             *
             * [Api set: ExcelApi 1.2]
             */
             filter?: Excel.Interfaces.FilterData;
             /**
              *
-             * Returns a unique key that identifies the column within the table. Read-only.
+             * Returns a unique key that identifies the column within the table.
              *
              * [Api set: ExcelApi 1.1]
              */
             id?: number;
             /**
              *
-             * Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
+             * Returns the index number of the column within the columns collection of the table. Zero-indexed.
              *
              * [Api set: ExcelApi 1.1]
              */
             index?: number;
             /**
              *
-             * Represents the name of the table column.
+             * Specifies the name of the table column.
              *
              * [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
              */
@@ -34754,7 +34784,7 @@ export declare namespace Excel {
         export interface TableRowData {
             /**
              *
-             * Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
+             * Returns the index number of the row within the rows collection of the table. Zero-indexed.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -34778,7 +34808,7 @@ export declare namespace Excel {
             errorAlert?: Excel.DataValidationErrorAlert;
             /**
              *
-             * Ignore blanks: no data validation will be performed on blank cells, it defaults to true.
+             * Specifies if data validation will be performed on blank cells, it defaults to true.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -34835,42 +34865,42 @@ export declare namespace Excel {
         export interface RangeFormatData {
             /**
             *
-            * Collection of border objects that apply to the overall range. Read-only.
+            * Collection of border objects that apply to the overall range.
             *
             * [Api set: ExcelApi 1.1]
             */
             borders?: Excel.Interfaces.RangeBorderData[];
             /**
             *
-            * Returns the fill object defined on the overall range. Read-only.
+            * Returns the fill object defined on the overall range.
             *
             * [Api set: ExcelApi 1.1]
             */
             fill?: Excel.Interfaces.RangeFillData;
             /**
             *
-            * Returns the font object defined on the overall range. Read-only.
+            * Returns the font object defined on the overall range.
             *
             * [Api set: ExcelApi 1.1]
             */
             font?: Excel.Interfaces.RangeFontData;
             /**
             *
-            * Returns the format protection object for a range. Read-only.
+            * Returns the format protection object for a range.
             *
             * [Api set: ExcelApi 1.2]
             */
             protection?: Excel.Interfaces.FormatProtectionData;
             /**
              *
-             * Indicates if text is automatically indented when text alignment is set to equal distribution.
+             * Specifies if text is automatically indented when text alignment is set to equal distribution.
              *
              * [Api set: ExcelApi 1.9]
              */
             autoIndent?: boolean;
             /**
              *
-             * Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.
+             * Specifies the width of all colums within the range. If the column widths are not uniform, null will be returned.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -34898,21 +34928,21 @@ export declare namespace Excel {
             readingOrder?: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft";
             /**
              *
-             * Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
+             * The height of all rows in the range. If the row heights are not uniform, null will be returned.
              *
              * [Api set: ExcelApi 1.2]
              */
             rowHeight?: number;
             /**
              *
-             * Indicates if text automatically shrinks to fit in the available column width.
+             * Specifies if text automatically shrinks to fit in the available column width.
              *
              * [Api set: ExcelApi 1.9]
              */
             shrinkToFit?: boolean;
             /**
              *
-             * Gets or sets the text orientation of all the cells within the range.
+             * The text orientation of all the cells within the range.
                         The text orientation should be an integer either from -90 to 90, or 180 for vertically-oriented text.
                         If the orientation within a range are not uniform, then null will be returned.
              *
@@ -34931,7 +34961,7 @@ export declare namespace Excel {
             useStandardHeight?: boolean;
             /**
              *
-             * Indicates whether the column width of the Range object equals the standard width of the sheet.
+             * Specifies if the column width of the Range object equals the standard width of the sheet.
                         Returns True if the column width of the Range object equals the standard width of the sheet.
                         Returns Null if the range contains more than one column and the columns aren't all the same height.
                         Returns False otherwise.
@@ -34948,7 +34978,7 @@ export declare namespace Excel {
             verticalAlignment?: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed";
             /**
              *
-             * Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
+             * Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -34958,14 +34988,14 @@ export declare namespace Excel {
         export interface FormatProtectionData {
             /**
              *
-             * Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
+             * Specifies if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
              *
              * [Api set: ExcelApi 1.2]
              */
             formulaHidden?: boolean;
             /**
              *
-             * Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.
+             * Specifies if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -34975,14 +35005,14 @@ export declare namespace Excel {
         export interface RangeFillData {
             /**
              *
-             * HTML color code representing the color of the background, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
+             * HTML color code representing the color of the background, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange")
              *
              * [Api set: ExcelApi 1.1]
              */
             color?: string;
             /**
              *
-             * Gets or sets the pattern of a Range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are not supported.
+             * The pattern of a range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are not supported.
                         A null value indicates that the entire range doesn't have uniform pattern setting.
              *
              * [Api set: ExcelApi 1.9]
@@ -34990,15 +35020,14 @@ export declare namespace Excel {
             pattern?: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
             /**
              *
-             * Sets HTML color code representing the color of the Range pattern, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-                        Gets HTML color code representing the color of the Range pattern, of the form #RRGGBB (e.g. "FFA500").
+             * The HTML color code representing the color of the range pattern, of the form #RRGGBB (e.g., "FFA500").
              *
              * [Api set: ExcelApi 1.9]
              */
             patternColor?: string;
             /**
              *
-             * Returns or sets a double that lightens or darkens a pattern color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+             * Specifies a double that lightens or darkens a pattern color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
                         If the pattern tintAndShades are not uniform, null will be returned.
              *
              * [Api set: ExcelApi 1.9]
@@ -35006,7 +35035,7 @@ export declare namespace Excel {
             patternTintAndShade?: number;
             /**
              *
-             * Returns or sets a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+             * Specifies a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
                         If the tintAndShades are not uniform, null will be returned.
              *
              * [Api set: ExcelApi 1.9]
@@ -35017,14 +35046,14 @@ export declare namespace Excel {
         export interface RangeBorderData {
             /**
              *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.1]
              */
             color?: string;
             /**
              *
-             * Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
+             * Constant value that indicates the specific side of the border. See Excel.BorderIndex for details.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -35038,7 +35067,7 @@ export declare namespace Excel {
             style?: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot";
             /**
              *
-             * Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+             * Specifies a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
                         A null value indicates that the border doesn't have uniform tintAndShade setting.
              *
              * [Api set: ExcelApi 1.9]
@@ -35067,21 +35096,21 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
              *
              * [Api set: ExcelApi 1.1]
              */
             color?: string;
             /**
              *
-             * Represents the italic status of the font.
+             * Specifies the italic status of the font.
              *
              * [Api set: ExcelApi 1.1]
              */
             italic?: boolean;
             /**
              *
-             * Font name (e.g. "Calibri")
+             * Font name (e.g., "Calibri")
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -35095,14 +35124,14 @@ export declare namespace Excel {
             size?: number;
             /**
              *
-             * Represents the strikethrough status of font. A null value indicates that the entire range doesn't have uniform Strikethrough setting.
+             * Specifies the strikethrough status of font. A null value indicates that the entire range doesn't have uniform Strikethrough setting.
              *
              * [Api set: ExcelApi 1.9]
              */
             strikethrough?: boolean;
             /**
              *
-             * Represents the Subscript status of font.
+             * Specifies the Subscript status of font.
                         Returns True if all the fonts of the range are Subscript.
                         Returns False if all the fonts of the range are Superscript or normal (neither Superscript, nor Subscript).
                         Returns Null otherwise.
@@ -35112,7 +35141,7 @@ export declare namespace Excel {
             subscript?: boolean;
             /**
              *
-             * Represents the Superscript status of font.
+             * Specifies the Superscript status of font.
                         Returns True if all the fonts of the range are Superscript.
                         Returns False if all the fonts of the range are Subscript or normal (neither Superscript, nor Subscript).
                         Returns Null otherwise.
@@ -35122,7 +35151,7 @@ export declare namespace Excel {
             superscript?: boolean;
             /**
              *
-             * Returns or sets a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+             * Specifies a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
                         A null value indicates that the entire range doesn't have uniform font tintAndShade setting.
              *
              * [Api set: ExcelApi 1.9]
@@ -35144,35 +35173,35 @@ export declare namespace Excel {
         export interface ChartData {
             /**
             *
-            * Represents chart axes. Read-only.
+            * Represents chart axes.
             *
             * [Api set: ExcelApi 1.1]
             */
             axes?: Excel.Interfaces.ChartAxesData;
             /**
             *
-            * Represents the datalabels on the chart. Read-only.
+            * Represents the datalabels on the chart.
             *
             * [Api set: ExcelApi 1.1]
             */
             dataLabels?: Excel.Interfaces.ChartDataLabelsData;
             /**
             *
-            * Encapsulates the format properties for the chart area. Read-only.
+            * Encapsulates the format properties for the chart area.
             *
             * [Api set: ExcelApi 1.1]
             */
             format?: Excel.Interfaces.ChartAreaFormatData;
             /**
             *
-            * Represents the legend for the chart. Read-only.
+            * Represents the legend for the chart.
             *
             * [Api set: ExcelApi 1.1]
             */
             legend?: Excel.Interfaces.ChartLegendData;
             /**
             *
-            * Encapsulates the options for a pivot chart. Read-only.
+            * Encapsulates the options for a pivot chart.
             *
             * [Api set: ExcelApi 1.9]
             */
@@ -35186,21 +35215,21 @@ export declare namespace Excel {
             plotArea?: Excel.Interfaces.ChartPlotAreaData;
             /**
             *
-            * Represents either a single series or collection of series in the chart. Read-only.
+            * Represents either a single series or collection of series in the chart.
             *
             * [Api set: ExcelApi 1.1]
             */
             series?: Excel.Interfaces.ChartSeriesData[];
             /**
             *
-            * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title. Read-only.
+            * Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
             *
             * [Api set: ExcelApi 1.1]
             */
             title?: Excel.Interfaces.ChartTitleData;
             /**
              *
-             * Returns or sets a ChartCategoryLabelLevel enumeration constant referring to
+             * Specifies a ChartCategoryLabelLevel enumeration constant referring to
                         the level of where the category labels are being sourced from. Read/Write.
              *
              * [Api set: ExcelApi 1.8]
@@ -35208,28 +35237,28 @@ export declare namespace Excel {
             categoryLabelLevel?: number;
             /**
              *
-             * Represents the type of the chart. See Excel.ChartType for details.
+             * Specifies the type of the chart. See Excel.ChartType for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
             /**
              *
-             * Returns or sets the way that blank cells are plotted on a chart. Read/Write.
+             * Specifies the way that blank cells are plotted on a chart.
              *
              * [Api set: ExcelApi 1.8]
              */
             displayBlanksAs?: Excel.ChartDisplayBlanksAs | "NotPlotted" | "Zero" | "Interplotted";
             /**
              *
-             * Represents the height, in points, of the chart object.
+             * Specifies the height, in points, of the chart object.
              *
              * [Api set: ExcelApi 1.1]
              */
             height?: number;
             /**
              *
-             * The unique id of chart. Read-only.
+             * The unique id of chart.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -35243,43 +35272,43 @@ export declare namespace Excel {
             left?: number;
             /**
              *
-             * Represents the name of a chart object.
+             * Specifies the name of a chart object.
              *
              * [Api set: ExcelApi 1.1]
              */
             name?: string;
             /**
              *
-             * Returns or sets the way columns or rows are used as data series on the chart. Read/Write.
+             * Specifies the way columns or rows are used as data series on the chart.
              *
              * [Api set: ExcelApi 1.8]
              */
             plotBy?: Excel.ChartPlotBy | "Rows" | "Columns";
             /**
              *
-             * True if only visible cells are plotted. False if both visible and hidden cells are plotted. Read/Write.
+             * True if only visible cells are plotted. False if both visible and hidden cells are plotted.
              *
              * [Api set: ExcelApi 1.8]
              */
             plotVisibleOnly?: boolean;
             /**
              *
-             * Returns or sets a ChartSeriesNameLevel enumeration constant referring to
-                        the level of where the series names are being sourced from. Read/Write.
+             * Specifies a ChartSeriesNameLevel enumeration constant referring to
+                        the level of where the series names are being sourced from.
              *
              * [Api set: ExcelApi 1.8]
              */
             seriesNameLevel?: number;
             /**
              *
-             * Represents whether to display all field buttons on a PivotChart.
+             * Specifies whether to display all field buttons on a PivotChart.
              *
              * [Api set: ExcelApi 1.7]
              */
             showAllFieldButtons?: boolean;
             /**
              *
-             * Represents whether to show the data labels when the value is greater than the maximum value on the value axis.
+             * Specifies whether to show the data labels when the value is greater than the maximum value on the value axis.
                         If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
                         This property applies to 2-D charts only.
              *
@@ -35288,21 +35317,21 @@ export declare namespace Excel {
             showDataLabelsOverMaximum?: boolean;
             /**
              *
-             * Returns or sets the chart style for the chart. Read/Write.
+             * Specifies the chart style for the chart.
              *
              * [Api set: ExcelApi 1.8]
              */
             style?: number;
             /**
              *
-             * Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
+             * Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
              *
              * [Api set: ExcelApi 1.1]
              */
             top?: number;
             /**
              *
-             * Represents the width, in points, of the chart object.
+             * Specifies the width, in points, of the chart object.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -35312,28 +35341,28 @@ export declare namespace Excel {
         export interface ChartPivotOptionsData {
             /**
              *
-             * Specifies whether or not to display the axis field buttons on a PivotChart. The ShowAxisFieldButtons property corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab, which is available when a PivotChart is selected.
+             * Specifies whether to display the axis field buttons on a PivotChart. The ShowAxisFieldButtons property corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab, which is available when a PivotChart is selected.
              *
              * [Api set: ExcelApi 1.9]
              */
             showAxisFieldButtons?: boolean;
             /**
              *
-             * Specifies whether or not to display the legend field buttons on a PivotChart.
+             * Specifies whether to display the legend field buttons on a PivotChart.
              *
              * [Api set: ExcelApi 1.9]
              */
             showLegendFieldButtons?: boolean;
             /**
              *
-             * Specifies whether or not to display the report filter field buttons on a PivotChart.
+             * Specifies whether to display the report filter field buttons on a PivotChart.
              *
              * [Api set: ExcelApi 1.9]
              */
             showReportFilterFieldButtons?: boolean;
             /**
              *
-             * Specifies whether or not to display the show value field buttons on a PivotChart.
+             * Specifies whether to display the show value field buttons on a PivotChart.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -35343,28 +35372,28 @@ export declare namespace Excel {
         export interface ChartAreaFormatData {
             /**
             *
-            * Represents the border format of chart area, which includes color, linestyle, and weight. Read-only.
+            * Represents the border format of chart area, which includes color, linestyle, and weight.
             *
             * [Api set: ExcelApi 1.7]
             */
             border?: Excel.Interfaces.ChartBorderData;
             /**
             *
-            * Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.
+            * Represents the font attributes (font name, font size, color, etc.) for the current object.
             *
             * [Api set: ExcelApi 1.1]
             */
             font?: Excel.Interfaces.ChartFontData;
             /**
              *
-             * Returns or sets color scheme of the chart. Read/Write.
+             * Specifies the color scheme of the chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             colorScheme?: Excel.ChartColorScheme | "ColorfulPalette1" | "ColorfulPalette2" | "ColorfulPalette3" | "ColorfulPalette4" | "MonochromaticPalette1" | "MonochromaticPalette2" | "MonochromaticPalette3" | "MonochromaticPalette4" | "MonochromaticPalette5" | "MonochromaticPalette6" | "MonochromaticPalette7" | "MonochromaticPalette8" | "MonochromaticPalette9" | "MonochromaticPalette10" | "MonochromaticPalette11" | "MonochromaticPalette12" | "MonochromaticPalette13";
             /**
              *
-             * Specifies whether or not chart area of the chart has rounded corners. Read/Write.
+             * Specifies if the chart area of the chart has rounded corners.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -35378,14 +35407,14 @@ export declare namespace Excel {
         export interface ChartSeriesData {
             /**
             *
-            * Encapsulates the bin options for histogram charts and pareto charts. Read-only.
+            * Encapsulates the bin options for histogram charts and pareto charts.
             *
             * [Api set: ExcelApi 1.9]
             */
             binOptions?: Excel.Interfaces.ChartBinOptionsData;
             /**
             *
-            * Encapsulates the options for the box and whisker charts. Read-only.
+            * Encapsulates the options for the box and whisker charts.
             *
             * [Api set: ExcelApi 1.9]
             */
@@ -35399,28 +35428,28 @@ export declare namespace Excel {
             dataLabels?: Excel.Interfaces.ChartDataLabelsData;
             /**
             *
-            * Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
+            * Represents the formatting of a chart series, which includes fill and line formatting.
             *
             * [Api set: ExcelApi 1.1]
             */
             format?: Excel.Interfaces.ChartSeriesFormatData;
             /**
             *
-            * Encapsulates the options for a region map chart. Read-only.
+            * Encapsulates the options for a region map chart.
             *
             * [Api set: ExcelApi 1.9]
             */
             mapOptions?: Excel.Interfaces.ChartMapOptionsData;
             /**
             *
-            * Represents a collection of all points in the series. Read-only.
+            * Returns a collection of all points in the series.
             *
             * [Api set: ExcelApi 1.1]
             */
             points?: Excel.Interfaces.ChartPointData[];
             /**
             *
-            * Represents a collection of trendlines in the series. Read-only.
+            * The collection of trendlines in the series.
             *
             * [Api set: ExcelApi 1.7]
             */
@@ -35441,14 +35470,14 @@ export declare namespace Excel {
             yErrorBars?: Excel.Interfaces.ChartErrorBarsData;
             /**
              *
-             * Returns or sets the group for the specified series. Read/Write
+             * Specifies the group for the specified series.
              *
              * [Api set: ExcelApi 1.8]
              */
             axisGroup?: Excel.ChartAxisGroup | "Primary" | "Secondary";
             /**
              *
-             * This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property only applies to bubble charts. Read/Write.
+             * This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property only applies to bubble charts.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -35470,21 +35499,21 @@ export declare namespace Excel {
             doughnutHoleSize?: number;
             /**
              *
-             * Returns or sets the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie). Read/Write.
+             * Specifies the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie).
              *
              * [Api set: ExcelApi 1.8]
              */
             explosion?: number;
             /**
              *
-             * Boolean value representing if the series is filtered or not. Not applicable for surface charts.
+             * Specifies if the series is filtered. Not applicable for surface charts.
              *
              * [Api set: ExcelApi 1.7]
              */
             filtered?: boolean;
             /**
              *
-             * Returns or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
+             * Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -35499,203 +35528,203 @@ export declare namespace Excel {
             gapWidth?: number;
             /**
              *
-             * Returns or sets the color for maximum value of a region map chart series. Read/Write.
+             * Specifies the color for maximum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMaximumColor?: string;
             /**
              *
-             * Returns or sets the type for maximum value of a region map chart series. Read/Write.
+             * Specifies the type for maximum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMaximumType?: Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent";
             /**
              *
-             * Returns or sets the maximum value of a region map chart series. Read/Write.
+             * Specifies the maximum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMaximumValue?: number;
             /**
              *
-             * Returns or sets the color for midpoint value of a region map chart series. Read/Write.
+             * Specifies the color for midpoint value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMidpointColor?: string;
             /**
              *
-             * Returns or sets the type for midpoint value of a region map chart series. Read/Write.
+             * Specifies the type for midpoint value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMidpointType?: Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent";
             /**
              *
-             * Returns or sets the midpoint value of a region map chart series. Read/Write.
+             * Specifies the midpoint value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMidpointValue?: number;
             /**
              *
-             * Returns or sets the color for minimum value of a region map chart series. Read/Write.
+             * Specifies the color for minimum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMinimumColor?: string;
             /**
              *
-             * Returns or sets the type for minimum value of a region map chart series. Read/Write.
+             * Specifies the type for minimum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMinimumType?: Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent";
             /**
              *
-             * Returns or sets the minimum value of a region map chart series. Read/Write.
+             * Specifies the minimum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMinimumValue?: number;
             /**
              *
-             * Returns or sets series gradient style of a region map chart. Read/Write.
+             * Specifies the series gradient style of a region map chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientStyle?: Excel.ChartGradientStyle | "TwoPhaseColor" | "ThreePhaseColor";
             /**
              *
-             * Boolean value representing if the series has data labels or not.
+             * Specifies if the series has data labels.
              *
              * [Api set: ExcelApi 1.7]
              */
             hasDataLabels?: boolean;
             /**
              *
-             * Returns or sets the fill color for negative data points in a series. Read/Write.
+             * Specifies the fill color for negative data points in a series.
              *
              * [Api set: ExcelApi 1.9]
              */
             invertColor?: string;
             /**
              *
-             * True if Microsoft Excel inverts the pattern in the item when it corresponds to a negative number. Read/Write.
+             * True if Excel inverts the pattern in the item when it corresponds to a negative number.
              *
              * [Api set: ExcelApi 1.8]
              */
             invertIfNegative?: boolean;
             /**
              *
-             * Represents markers background color of a chart series.
+             * Specifies the markers background color of a chart series.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerBackgroundColor?: string;
             /**
              *
-             * Represents markers foreground color of a chart series.
+             * Specifies the markers foreground color of a chart series.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerForegroundColor?: string;
             /**
              *
-             * Represents marker size of a chart series.
+             * Specifies the marker size of a chart series.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerSize?: number;
             /**
              *
-             * Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
+             * Specifies the marker style of a chart series. See Excel.ChartMarkerStyle for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerStyle?: Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture";
             /**
              *
-             * Represents the name of a series in a chart.
+             * Specifies the name of a series in a chart.
              *
              * [Api set: ExcelApi 1.1]
              */
             name?: string;
             /**
              *
-             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write.
+             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
              *
              * [Api set: ExcelApi 1.8]
              */
             overlap?: number;
             /**
              *
-             * Returns or sets the series parent label strategy area for a treemap chart. Read/Write.
+             * Specifies the series parent label strategy area for a treemap chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             parentLabelStrategy?: Excel.ChartParentLabelStrategy | "None" | "Banner" | "Overlapping";
             /**
              *
-             * Represents the plot order of a chart series within the chart group.
+             * Specifies the plot order of a chart series within the chart group.
              *
              * [Api set: ExcelApi 1.7]
              */
             plotOrder?: number;
             /**
              *
-             * Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write.
+             * Specifies the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
              *
              * [Api set: ExcelApi 1.8]
              */
             secondPlotSize?: number;
             /**
              *
-             * Specifies whether or not connector lines are shown in waterfall charts. Read/Write.
+             * Specifies whether connector lines are shown in waterfall charts.
              *
              * [Api set: ExcelApi 1.9]
              */
             showConnectorLines?: boolean;
             /**
              *
-             * Specifies whether or not leader lines are displayed for each data label in the series. Read/Write.
+             * Specifies whether leader lines are displayed for each data label in the series.
              *
              * [Api set: ExcelApi 1.9]
              */
             showLeaderLines?: boolean;
             /**
              *
-             * Boolean value representing if the series has a shadow or not.
+             * Specifies if the series has a shadow.
              *
              * [Api set: ExcelApi 1.7]
              */
             showShadow?: boolean;
             /**
              *
-             * Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
+             * Specifies if the series is smooth. Only applicable to line and scatter charts.
              *
              * [Api set: ExcelApi 1.7]
              */
             smooth?: boolean;
             /**
              *
-             * Returns or sets the way the two sections of either a pie of pie chart or a bar of pie chart are split. Read/Write.
+             * Specifies the way the two sections of either a pie of pie chart or a bar of pie chart are split.
              *
              * [Api set: ExcelApi 1.8]
              */
             splitType?: Excel.ChartSplitType | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit";
             /**
              *
-             * Returns or sets the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie chart. Read/Write.
+             * Specifies the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             splitValue?: number;
             /**
              *
-             * True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one series. Read/Write.
+             * True if Excel assigns a different color or pattern to each data marker. The chart must contain only one series.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -35705,7 +35734,7 @@ export declare namespace Excel {
         export interface ChartSeriesFormatData {
             /**
             *
-            * Represents line formatting. Read-only.
+            * Represents line formatting.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -35719,14 +35748,14 @@ export declare namespace Excel {
         export interface ChartPointData {
             /**
             *
-            * Returns the data label of a chart point. Read-only.
+            * Returns the data label of a chart point.
             *
             * [Api set: ExcelApi 1.7]
             */
             dataLabel?: Excel.Interfaces.ChartDataLabelData;
             /**
             *
-            * Encapsulates the format properties chart point. Read-only.
+            * Encapsulates the format properties chart point.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -35740,14 +35769,14 @@ export declare namespace Excel {
             hasDataLabel?: boolean;
             /**
              *
-             * HTML color code representation of the marker background color of data point. E.g. #FF0000 represents Red.
+             * HTML color code representation of the marker background color of data point. e.g., #FF0000 represents Red.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerBackgroundColor?: string;
             /**
              *
-             * HTML color code representation of the marker foreground color of data point. E.g. #FF0000 represents Red.
+             * HTML color code representation of the marker foreground color of data point. e.g., #FF0000 represents Red.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -35768,7 +35797,7 @@ export declare namespace Excel {
             markerStyle?: Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture";
             /**
              *
-             * Returns the value of a chart point. Read-only.
+             * Returns the value of a chart point.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -35778,7 +35807,7 @@ export declare namespace Excel {
         export interface ChartPointFormatData {
             /**
             *
-            * Represents the border format of a chart data point, which includes color, style, and weight information. Read-only.
+            * Represents the border format of a chart data point, which includes color, style, and weight information.
             *
             * [Api set: ExcelApi 1.7]
             */
@@ -35788,21 +35817,21 @@ export declare namespace Excel {
         export interface ChartAxesData {
             /**
             *
-            * Represents the category axis in a chart. Read-only.
+            * Represents the category axis in a chart.
             *
             * [Api set: ExcelApi 1.1]
             */
             categoryAxis?: Excel.Interfaces.ChartAxisData;
             /**
             *
-            * Represents the series axis of a 3-dimensional chart. Read-only.
+            * Represents the series axis of a 3-dimensional chart.
             *
             * [Api set: ExcelApi 1.1]
             */
             seriesAxis?: Excel.Interfaces.ChartAxisData;
             /**
             *
-            * Represents the value axis in an axis. Read-only.
+            * Represents the value axis in an axis.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -35812,63 +35841,63 @@ export declare namespace Excel {
         export interface ChartAxisData {
             /**
             *
-            * Represents the formatting of a chart object, which includes line and font formatting. Read-only.
+            * Represents the formatting of a chart object, which includes line and font formatting.
             *
             * [Api set: ExcelApi 1.1]
             */
             format?: Excel.Interfaces.ChartAxisFormatData;
             /**
             *
-            * Returns a Gridlines object that represents the major gridlines for the specified axis. Read-only.
+            * Returns a Gridlines object that represents the major gridlines for the specified axis.
             *
             * [Api set: ExcelApi 1.1]
             */
             majorGridlines?: Excel.Interfaces.ChartGridlinesData;
             /**
             *
-            * Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.
+            * Returns a Gridlines object that represents the minor gridlines for the specified axis.
             *
             * [Api set: ExcelApi 1.1]
             */
             minorGridlines?: Excel.Interfaces.ChartGridlinesData;
             /**
             *
-            * Represents the axis title. Read-only.
+            * Represents the axis title.
             *
             * [Api set: ExcelApi 1.1]
             */
             title?: Excel.Interfaces.ChartAxisTitleData;
             /**
              *
-             * Represents the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail.
+             * Specifies the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail.
              *
              * [Api set: ExcelApi 1.8]
              */
             alignment?: Excel.ChartTickLabelAlignment | "Center" | "Left" | "Right";
             /**
              *
-             * Represents the group for the specified axis. See Excel.ChartAxisGroup for details. Read-only.
+             * Specifies the group for the specified axis. See Excel.ChartAxisGroup for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             axisGroup?: Excel.ChartAxisGroup | "Primary" | "Secondary";
             /**
              *
-             * Returns or sets the base unit for the specified category axis.
+             * Specifies the base unit for the specified category axis.
              *
              * [Api set: ExcelApi 1.7]
              */
             baseTimeUnit?: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";
             /**
              *
-             * Returns or sets the category axis type.
+             * Specifies the category axis type.
              *
              * [Api set: ExcelApi 1.7]
              */
             categoryType?: Excel.ChartAxisCategoryType | "Automatic" | "TextAxis" | "DateAxis";
             /**
              *
-             * Represents the custom axis display unit value. Read-only. To set this property, please use the SetCustomDisplayUnit(double) method.
+             * Specifies the custom axis display unit value. To set this property, please use the SetCustomDisplayUnit(double) method.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -35882,49 +35911,49 @@ export declare namespace Excel {
             displayUnit?: Excel.ChartAxisDisplayUnit | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom";
             /**
              *
-             * Represents the height, in points, of the chart axis. Null if the axis is not visible. Read-only.
+             * Specifies the height, in points, of the chart axis. Null if the axis is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             height?: number;
             /**
              *
-             * Represents whether value axis crosses the category axis between categories.
+             * Specifies if the value axis crosses the category axis between categories.
              *
              * [Api set: ExcelApi 1.8]
              */
             isBetweenCategories?: boolean;
             /**
              *
-             * Represents the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis is not visible. Read-only.
+             * Specifies the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             left?: number;
             /**
              *
-             * Represents whether or not the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells.
+             * Specifies if the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells.
              *
              * [Api set: ExcelApi 1.9]
              */
             linkNumberFormat?: boolean;
             /**
              *
-             * Represents the base of the logarithm when using logarithmic scales.
+             * Specifies the base of the logarithm when using logarithmic scales.
              *
              * [Api set: ExcelApi 1.7]
              */
             logBase?: number;
             /**
              *
-             * Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+             * Specifies the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             majorTickMark?: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside";
             /**
              *
-             * Returns or sets the major unit scale value for the category axis when the CategoryType property is set to TimeScale.
+             * Specifies the major unit scale value for the category axis when the CategoryType property is set to TimeScale.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -35952,14 +35981,14 @@ export declare namespace Excel {
             minimum?: any;
             /**
              *
-             * Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+             * Specifies the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             minorTickMark?: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside";
             /**
              *
-             * Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.
+             * Specifies the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -35973,112 +36002,112 @@ export declare namespace Excel {
             minorUnit?: any;
             /**
              *
-             * Represents whether an axis is multilevel or not.
+             * Specifies if an axis is multilevel.
              *
              * [Api set: ExcelApi 1.8]
              */
             multiLevel?: boolean;
             /**
              *
-             * Represents the format code for the axis tick label.
+             * Specifies the format code for the axis tick label.
              *
              * [Api set: ExcelApi 1.8]
              */
             numberFormat?: string;
             /**
              *
-             * Represents the distance between the levels of labels, and the distance between the first level and the axis line. The value should be an integer from 0 to 1000.
+             * Specifies the distance between the levels of labels, and the distance between the first level and the axis line. The value should be an integer from 0 to 1000.
              *
              * [Api set: ExcelApi 1.8]
              */
             offset?: number;
             /**
              *
-             * Represents the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details.
+             * Specifies the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details.
              *
              * [Api set: ExcelApi 1.8]
              */
             position?: Excel.ChartAxisPosition | "Automatic" | "Maximum" | "Minimum" | "Custom";
             /**
              *
-             * Represents the specified axis position where the other axis crosses at. You should use the SetPositionAt(double) method to set this property.
+             * Specifies the specified axis position where the other axis crosses at. You should use the SetPositionAt(double) method to set this property.
              *
              * [Api set: ExcelApi 1.8]
              */
             positionAt?: number;
             /**
              *
-             * Represents whether Microsoft Excel plots data points from last to first.
+             * Specifies if Excel plots data points from last to first.
              *
              * [Api set: ExcelApi 1.7]
              */
             reversePlotOrder?: boolean;
             /**
              *
-             * Represents the value axis scale type. See Excel.ChartAxisScaleType for details.
+             * Specifies the value axis scale type. See Excel.ChartAxisScaleType for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             scaleType?: Excel.ChartAxisScaleType | "Linear" | "Logarithmic";
             /**
              *
-             * Represents whether the axis display unit label is visible.
+             * Specifies if the axis display unit label is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             showDisplayUnitLabel?: boolean;
             /**
              *
-             * Represents the angle to which the text is oriented for the chart axis tick label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+             * Specifies the angle to which the text is oriented for the chart axis tick label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
              *
              * [Api set: ExcelApi 1.8]
              */
             textOrientation?: any;
             /**
              *
-             * Represents the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for details.
+             * Specifies the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             tickLabelPosition?: Excel.ChartAxisTickLabelPosition | "NextToAxis" | "High" | "Low" | "None";
             /**
              *
-             * Represents the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an empty string for automatic setting. The returned value is always a number.
+             * Specifies the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an empty string for automatic setting. The returned value is always a number.
              *
              * [Api set: ExcelApi 1.7]
              */
             tickLabelSpacing?: any;
             /**
              *
-             * Represents the number of categories or series between tick marks.
+             * Specifies the number of categories or series between tick marks.
              *
              * [Api set: ExcelApi 1.7]
              */
             tickMarkSpacing?: number;
             /**
              *
-             * Represents the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis is not visible. Read-only.
+             * Specifies the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             top?: number;
             /**
              *
-             * Represents the axis type. See Excel.ChartAxisType for details.
+             * Specifies the axis type. See Excel.ChartAxisType for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             type?: Excel.ChartAxisType | "Invalid" | "Category" | "Value" | "Series";
             /**
              *
-             * A boolean value represents the visibility of the axis.
+             * Specifies if the axis is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             visible?: boolean;
             /**
              *
-             * Represents the width, in points, of the chart axis. Null if the axis is not visible. Read-only.
+             * Specifies the width, in points, of the chart axis. Null if the axis is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -36088,14 +36117,14 @@ export declare namespace Excel {
         export interface ChartAxisFormatData {
             /**
             *
-            * Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.
+            * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
             *
             * [Api set: ExcelApi 1.1]
             */
             font?: Excel.Interfaces.ChartFontData;
             /**
             *
-            * Represents chart line formatting. Read-only.
+            * Specifies chart line formatting.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -36105,29 +36134,28 @@ export declare namespace Excel {
         export interface ChartAxisTitleData {
             /**
             *
-            * Represents the formatting of chart axis title. Read-only.
+            * Specifies the formatting of chart axis title.
             *
             * [Api set: ExcelApi 1.1]
             */
             format?: Excel.Interfaces.ChartAxisTitleFormatData;
             /**
              *
-             * Represents the axis title.
+             * Specifies the axis title.
              *
              * [Api set: ExcelApi 1.1]
              */
             text?: string;
             /**
              *
-             * Represents the angle to which the text is oriented for the chart axis title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+             * Specifies the angle to which the text is oriented for the chart axis title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             textOrientation?: number;
             /**
              *
-             * A boolean that specifies the visibility of an axis title.
+             * Specifies if the axis title is visibile.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -36137,14 +36165,14 @@ export declare namespace Excel {
         export interface ChartAxisTitleFormatData {
             /**
             *
-            * Represents the border format, which includes color, linestyle, and weight.
+            * Specifies the chart axis title's border format, which includes color, linestyle, and weight.
             *
             * [Api set: ExcelApi 1.8]
             */
             border?: Excel.Interfaces.ChartBorderData;
             /**
             *
-            * Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.
+            * Specifies the chart axis title's font attributes, such as font name, font size, color, etc. of chart axis title object.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -36154,21 +36182,21 @@ export declare namespace Excel {
         export interface ChartDataLabelsData {
             /**
             *
-            * Represents the format of chart data labels, which includes fill and font formatting. Read-only.
+            * Specifies the format of chart data labels, which includes fill and font formatting.
             *
             * [Api set: ExcelApi 1.1]
             */
             format?: Excel.Interfaces.ChartDataLabelFormatData;
             /**
              *
-             * Represents whether data labels automatically generate appropriate text based on context.
+             * Specifies if data labels automatically generate appropriate text based on context.
              *
              * [Api set: ExcelApi 1.8]
              */
             autoText?: boolean;
             /**
              *
-             * Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details.
+             * Specifies the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details.
                         This property is valid only when TextOrientation of data label is 0.
              *
              * [Api set: ExcelApi 1.8]
@@ -36176,14 +36204,14 @@ export declare namespace Excel {
             horizontalAlignment?: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed";
             /**
              *
-             * Represents whether or not the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells
+             * Specifies if the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells
              *
              * [Api set: ExcelApi 1.9]
              */
             linkNumberFormat?: boolean;
             /**
              *
-             * Represents the format code for data labels.
+             * Specifies the format code for data labels.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -36204,42 +36232,42 @@ export declare namespace Excel {
             separator?: string;
             /**
              *
-             * Boolean value representing if the data label bubble size is visible or not.
+             * Specifies if the data label bubble size is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
             showBubbleSize?: boolean;
             /**
              *
-             * Boolean value representing if the data label category name is visible or not.
+             * Specifies if the data label category name is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
             showCategoryName?: boolean;
             /**
              *
-             * Boolean value representing if the data label legend key is visible or not.
+             * Specifies if the data label legend key is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
             showLegendKey?: boolean;
             /**
              *
-             * Boolean value representing if the data label percentage is visible or not.
+             * Specifies if the data label percentage is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
             showPercentage?: boolean;
             /**
              *
-             * Boolean value representing if the data label series name is visible or not.
+             * Specifies if the data label series name is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
             showSeriesName?: boolean;
             /**
              *
-             * Boolean value representing if the data label value is visible or not.
+             * Specifies if the data label value is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -36271,7 +36299,7 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ChartDataLabelFormatData;
             /**
              *
-             * Boolean value representing if data label automatically generates appropriate text based on context.
+             * Specifies if the data label automatically generates appropriate text based on context.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -36285,7 +36313,7 @@ export declare namespace Excel {
             formula?: string;
             /**
              *
-             * Returns the height, in points, of the chart data label. Read-only. Null if chart data label is not visible.
+             * Returns the height, in points, of the chart data label. Null if chart data label is not visible.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -36307,7 +36335,7 @@ export declare namespace Excel {
             left?: number;
             /**
              *
-             * Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+             * Specifies if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -36335,42 +36363,42 @@ export declare namespace Excel {
             separator?: string;
             /**
              *
-             * Boolean value representing if the data label bubble size is visible or not.
+             * Specifies if the data label bubble size is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             showBubbleSize?: boolean;
             /**
              *
-             * Boolean value representing if the data label category name is visible or not.
+             * Specifies if the data label category name is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             showCategoryName?: boolean;
             /**
              *
-             * Boolean value representing if the data label legend key is visible or not.
+             * Specifies if the data label legend key is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             showLegendKey?: boolean;
             /**
              *
-             * Boolean value representing if the data label percentage is visible or not.
+             * Specifies if the data label percentage is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             showPercentage?: boolean;
             /**
              *
-             * Boolean value representing if the data label series name is visible or not.
+             * Specifies if the data label series name is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             showSeriesName?: boolean;
             /**
              *
-             * Boolean value representing if the data label value is visible or not.
+             * Specifies if the data label value is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -36406,7 +36434,7 @@ export declare namespace Excel {
             verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";
             /**
              *
-             * Returns the width, in points, of the chart data label. Read-only. Null if chart data label is not visible.
+             * Returns the width, in points, of the chart data label. Null if chart data label is not visible.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -36416,14 +36444,14 @@ export declare namespace Excel {
         export interface ChartDataLabelFormatData {
             /**
             *
-            * Represents the border format, which includes color, linestyle, and weight. Read-only.
+            * Represents the border format, which includes color, linestyle, and weight.
             *
             * [Api set: ExcelApi 1.8]
             */
             border?: Excel.Interfaces.ChartBorderData;
             /**
             *
-            * Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.
+            * Represents the font attributes (font name, font size, color, etc.) for a chart data label.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -36440,7 +36468,7 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ChartErrorBarsFormatData;
             /**
              *
-             * Specifies whether or not the error bars have an end style cap.
+             * Specifies if error bars have an end style cap.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -36461,7 +36489,7 @@ export declare namespace Excel {
             type?: Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom";
             /**
              *
-             * Specifies whether or not the error bars are displayed.
+             * Specifies whether the error bars are displayed.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -36481,14 +36509,14 @@ export declare namespace Excel {
         export interface ChartGridlinesData {
             /**
             *
-            * Represents the formatting of chart gridlines. Read-only.
+            * Represents the formatting of chart gridlines.
             *
             * [Api set: ExcelApi 1.1]
             */
             format?: Excel.Interfaces.ChartGridlinesFormatData;
             /**
              *
-             * Boolean value representing if the axis gridlines are visible or not.
+             * Specifies if the axis gridlines are visible.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -36498,7 +36526,7 @@ export declare namespace Excel {
         export interface ChartGridlinesFormatData {
             /**
             *
-            * Represents chart line formatting. Read-only.
+            * Represents chart line formatting.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -36508,70 +36536,70 @@ export declare namespace Excel {
         export interface ChartLegendData {
             /**
             *
-            * Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
+            * Represents the formatting of a chart legend, which includes fill and font formatting.
             *
             * [Api set: ExcelApi 1.1]
             */
             format?: Excel.Interfaces.ChartLegendFormatData;
             /**
             *
-            * Represents a collection of legendEntries in the legend. Read-only.
+            * Represents a collection of legendEntries in the legend.
             *
             * [Api set: ExcelApi 1.7]
             */
             legendEntries?: Excel.Interfaces.ChartLegendEntryData[];
             /**
              *
-             * Represents the height, in points, of the legend on the chart. Null if legend is not visible.
+             * Specifies the height, in points, of the legend on the chart. Null if legend is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             height?: number;
             /**
              *
-             * Represents the left, in points, of a chart legend. Null if legend is not visible.
+             * Specifies the left, in points, of the legend on the chart. Null if legend is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             left?: number;
             /**
              *
-             * Boolean value for whether the chart legend should overlap with the main body of the chart.
+             * Specifies if the chart legend should overlap with the main body of the chart.
              *
              * [Api set: ExcelApi 1.1]
              */
             overlay?: boolean;
             /**
              *
-             * Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
+             * Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.
              *
              * [Api set: ExcelApi 1.1]
              */
             position?: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom";
             /**
              *
-             * Represents if the legend has a shadow on the chart.
+             * Specifies if the legend has a shadow on the chart.
              *
              * [Api set: ExcelApi 1.7]
              */
             showShadow?: boolean;
             /**
              *
-             * Represents the top of a chart legend.
+             * Specifies the top of a chart legend.
              *
              * [Api set: ExcelApi 1.7]
              */
             top?: number;
             /**
              *
-             * A boolean value the represents the visibility of a ChartLegend object.
+             * Specifies if the ChartLegend is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
             visible?: boolean;
             /**
              *
-             * Represents the width, in points, of the legend on the chart. Null if legend is not visible.
+             * Specifies the width, in points, of the legend on the chart. Null if legend is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -36581,28 +36609,28 @@ export declare namespace Excel {
         export interface ChartLegendEntryData {
             /**
              *
-             * Represents the height of the legendEntry on the chart legend.
+             * Specifies the height of the legendEntry on the chart legend.
              *
              * [Api set: ExcelApi 1.8]
              */
             height?: number;
             /**
              *
-             * Represents the index of the legendEntry in the chart legend.
+             * Specifies the index of the legendEntry in the chart legend.
              *
              * [Api set: ExcelApi 1.8]
              */
             index?: number;
             /**
              *
-             * Represents the left of a chart legendEntry.
+             * Specifies the left of a chart legendEntry.
              *
              * [Api set: ExcelApi 1.8]
              */
             left?: number;
             /**
              *
-             * Represents the top of a chart legendEntry.
+             * Specifies the top of a chart legendEntry.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -36630,14 +36658,14 @@ export declare namespace Excel {
         export interface ChartLegendFormatData {
             /**
             *
-            * Represents the border format, which includes color, linestyle, and weight. Read-only.
+            * Represents the border format, which includes color, linestyle, and weight.
             *
             * [Api set: ExcelApi 1.8]
             */
             border?: Excel.Interfaces.ChartBorderData;
             /**
             *
-            * Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.
+            * Represents the font attributes such as font name, font size, color, etc. of a chart legend.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -36647,21 +36675,21 @@ export declare namespace Excel {
         export interface ChartMapOptionsData {
             /**
              *
-             * Returns or sets the series map labels strategy of a region map chart. Read/Write.
+             * Specifies the series map labels strategy of a region map chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             labelStrategy?: Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll";
             /**
              *
-             * Returns or sets the series mapping level of a region map chart. Read/Write.
+             * Specifies the series mapping level of a region map chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             level?: Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" | "World";
             /**
              *
-             * Returns or sets the series projection type of a region map chart. Read/Write.
+             * Specifies the series projection type of a region map chart.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -36671,35 +36699,35 @@ export declare namespace Excel {
         export interface ChartTitleData {
             /**
             *
-            * Represents the formatting of a chart title, which includes fill and font formatting. Read-only.
+            * Represents the formatting of a chart title, which includes fill and font formatting.
             *
             * [Api set: ExcelApi 1.1]
             */
             format?: Excel.Interfaces.ChartTitleFormatData;
             /**
              *
-             * Returns the height, in points, of the chart title. Null if chart title is not visible. Read-only.
+             * Returns the height, in points, of the chart title. Null if chart title is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             height?: number;
             /**
              *
-             * Represents the horizontal alignment for chart title.
+             * Specifies the horizontal alignment for chart title.
              *
              * [Api set: ExcelApi 1.7]
              */
             horizontalAlignment?: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed";
             /**
              *
-             * Represents the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart title is not visible.
+             * Specifies the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart title is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             left?: number;
             /**
              *
-             * Boolean value representing if the chart title will overlay the chart or not.
+             * Specifies if the chart title will overlay the chart.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -36720,42 +36748,42 @@ export declare namespace Excel {
             showShadow?: boolean;
             /**
              *
-             * Represents the title text of a chart.
+             * Specifies the chart's title text.
              *
              * [Api set: ExcelApi 1.1]
              */
             text?: string;
             /**
              *
-             * Represents the angle to which the text is oriented for the chart title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+             * Specifies the angle to which the text is oriented for the chart title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
              *
              * [Api set: ExcelApi 1.7]
              */
             textOrientation?: number;
             /**
              *
-             * Represents the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title is not visible.
+             * Specifies the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             top?: number;
             /**
              *
-             * Represents the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
+             * Specifies the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";
             /**
              *
-             * A boolean value the represents the visibility of a chart title object.
+             * Specifies if the chart title is visibile.
              *
              * [Api set: ExcelApi 1.1]
              */
             visible?: boolean;
             /**
              *
-             * Returns the width, in points, of the chart title. Null if chart title is not visible. Read-only.
+             * Specifies the width, in points, of the chart title. Null if chart title is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -36775,14 +36803,14 @@ export declare namespace Excel {
         export interface ChartTitleFormatData {
             /**
             *
-            * Represents the border format of chart title, which includes color, linestyle, and weight. Read-only.
+            * Represents the border format of chart title, which includes color, linestyle, and weight.
             *
             * [Api set: ExcelApi 1.7]
             */
             border?: Excel.Interfaces.ChartBorderData;
             /**
             *
-            * Represents the font attributes (font name, font size, color, etc.) for an object. Read-only.
+            * Represents the font attributes (font name, font size, color, etc.) for an object.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -36816,49 +36844,49 @@ export declare namespace Excel {
         export interface ChartBinOptionsData {
             /**
              *
-             * Specifies whether or not the bin overflow is enabled in a histogram chart or pareto chart. Read/Write.
+             * Specifies if bin overflow is enabled in a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             allowOverflow?: boolean;
             /**
              *
-             * Specifies whether or not the bin underflow is enabled in a histogram chart or pareto chart. Read/Write.
+             * Specifies if bin underflow is enabled in a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             allowUnderflow?: boolean;
             /**
              *
-             * Returns or sets the bin count of a histogram chart or pareto chart. Read/Write.
+             * Specifies the bin count of a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             count?: number;
             /**
              *
-             * Returns or sets the bin overflow value of a histogram chart or pareto chart. Read/Write.
+             * Specifies the bin overflow value of a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             overflowValue?: number;
             /**
              *
-             * Returns or sets the bin's type for a histogram chart or pareto chart. Read/Write.
+             * Specifies the bin's type for a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             type?: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount";
             /**
              *
-             * Returns or sets the bin underflow value of a histogram chart or pareto chart. Read/Write.
+             * Specifies the bin underflow value of a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             underflowValue?: number;
             /**
              *
-             * Returns or sets the bin width value of a histogram chart or pareto chart. Read/Write.
+             * Specifies the bin width value of a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -36868,35 +36896,35 @@ export declare namespace Excel {
         export interface ChartBoxwhiskerOptionsData {
             /**
              *
-             * Returns or sets the quartile calculation type of a box and whisker chart. Read/Write.
+             * Specifies if the quartile calculation type of a box and whisker chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             quartileCalculation?: Excel.ChartBoxQuartileCalculation | "Inclusive" | "Exclusive";
             /**
              *
-             * Specifies whether or not the inner points are shown in a box and whisker chart. Read/Write.
+             * Specifies if inner points are shown in a box and whisker chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             showInnerPoints?: boolean;
             /**
              *
-             * Specifies whether or not the mean line is shown in a box and whisker chart. Read/Write.
+             * Specifies if the mean line is shown in a box and whisker chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             showMeanLine?: boolean;
             /**
              *
-             * Specifies whether or not the mean marker is shown in a box and whisker chart. Read/Write.
+             * Specifies if the mean marker is shown in a box and whisker chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             showMeanMarker?: boolean;
             /**
              *
-             * Specifies whether or not outlier points are shown in a box and whisker chart. Read/Write.
+             * Specifies if outlier points are shown in a box and whisker chart.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -36937,7 +36965,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -36951,14 +36979,14 @@ export declare namespace Excel {
             italic?: boolean;
             /**
              *
-             * Font name (e.g. "Calibri")
+             * Font name (e.g., "Calibri")
              *
              * [Api set: ExcelApi 1.1]
              */
             name?: string;
             /**
              *
-             * Size of the font (e.g. 11)
+             * Size of the font (e.g., 11)
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -37059,7 +37087,7 @@ export declare namespace Excel {
         export interface ChartTrendlineFormatData {
             /**
             *
-            * Represents chart line formatting. Read-only.
+            * Represents chart line formatting.
             *
             * [Api set: ExcelApi 1.7]
             */
@@ -37069,14 +37097,14 @@ export declare namespace Excel {
         export interface ChartTrendlineLabelData {
             /**
             *
-            * Represents the format of chart trendline label.
+            * The format of chart trendline label.
             *
             * [Api set: ExcelApi 1.8]
             */
             format?: Excel.Interfaces.ChartTrendlineLabelFormatData;
             /**
              *
-             * Boolean value representing if trendline label automatically generates appropriate text based on context.
+             * Specifies if trendline label automatically generate appropriate text based on context.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -37090,7 +37118,7 @@ export declare namespace Excel {
             formula?: string;
             /**
              *
-             * Returns the height, in points, of the chart trendline label. Read-only. Null if chart trendline label is not visible.
+             * Returns the height, in points, of the chart trendline label. Null if chart trendline label is not visible.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -37112,7 +37140,7 @@ export declare namespace Excel {
             left?: number;
             /**
              *
-             * Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+             * Specifies if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -37155,7 +37183,7 @@ export declare namespace Excel {
             verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";
             /**
              *
-             * Returns the width, in points, of the chart trendline label. Read-only. Null if chart trendline label is not visible.
+             * Returns the width, in points, of the chart trendline label. Null if chart trendline label is not visible.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -37165,14 +37193,14 @@ export declare namespace Excel {
         export interface ChartTrendlineLabelFormatData {
             /**
             *
-            * Represents the border format, which includes color, linestyle, and weight.
+            * Specifies the border format, which includes color, linestyle, and weight.
             *
             * [Api set: ExcelApi 1.8]
             */
             border?: Excel.Interfaces.ChartBorderData;
             /**
             *
-            * Represents the font attributes (font name, font size, color, etc.) for a chart trendline label.
+            * Specifies the font attributes (font name, font size, color, etc.) for a chart trendline label.
             *
             * [Api set: ExcelApi 1.8]
             */
@@ -37182,70 +37210,70 @@ export declare namespace Excel {
         export interface ChartPlotAreaData {
             /**
             *
-            * Represents the formatting of a chart plotArea.
+            * Specifies the formatting of a chart plotArea.
             *
             * [Api set: ExcelApi 1.8]
             */
             format?: Excel.Interfaces.ChartPlotAreaFormatData;
             /**
              *
-             * Represents the height value of plotArea.
+             * Specifies the height value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             height?: number;
             /**
              *
-             * Represents the insideHeight value of plotArea.
+             * Specifies the insideHeight value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             insideHeight?: number;
             /**
              *
-             * Represents the insideLeft value of plotArea.
+             * Specifies the insideLeft value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             insideLeft?: number;
             /**
              *
-             * Represents the insideTop value of plotArea.
+             * Specifies the insideTop value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             insideTop?: number;
             /**
              *
-             * Represents the insideWidth value of plotArea.
+             * Specifies the insideWidth value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             insideWidth?: number;
             /**
              *
-             * Represents the left value of plotArea.
+             * Specifies the left value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             left?: number;
             /**
              *
-             * Represents the position of plotArea.
+             * Specifies the position of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             position?: Excel.ChartPlotAreaPosition | "Automatic" | "Custom";
             /**
              *
-             * Represents the top value of plotArea.
+             * Specifies the top value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             top?: number;
             /**
              *
-             * Represents the width value of plotArea.
+             * Specifies the width value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -37255,7 +37283,7 @@ export declare namespace Excel {
         export interface ChartPlotAreaFormatData {
             /**
             *
-            * Represents the border attributes of a chart plotArea.
+            * Specifies the border attributes of a chart plotArea.
             *
             * [Api set: ExcelApi 1.8]
             */
@@ -37265,21 +37293,21 @@ export declare namespace Excel {
         export interface TableSortData {
             /**
              *
-             * Represents the current conditions used to last sort the table. Read-only.
+             * Specifies the current conditions used to last sort the table.
              *
              * [Api set: ExcelApi 1.2]
              */
             fields?: Excel.SortField[];
             /**
              *
-             * Represents whether the casing impacted the last sort of the table. Read-only.
+             * Specifies if the casing impacts the last sort of the table.
              *
              * [Api set: ExcelApi 1.2]
              */
             matchCase?: boolean;
             /**
              *
-             * Represents Chinese character ordering method last used to sort the table. Read-only.
+             * Represents Chinese character ordering method last used to sort the table.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -37289,7 +37317,7 @@ export declare namespace Excel {
         export interface FilterData {
             /**
              *
-             * The currently applied filter on the given column. Read-only.
+             * The currently applied filter on the given column.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -37299,21 +37327,21 @@ export declare namespace Excel {
         export interface AutoFilterData {
             /**
              *
-             * An array that holds all the filter criteria in the autofiltered range. Read-Only.
+             * An array that holds all the filter criteria in the autofiltered range.
              *
              * [Api set: ExcelApi 1.9]
              */
             criteria?: Excel.FilterCriteria[];
             /**
              *
-             * Indicates if the AutoFilter is enabled or not. Read-Only.
+             * Specifies if the AutoFilter is enabled.
              *
              * [Api set: ExcelApi 1.9]
              */
             enabled?: boolean;
             /**
              *
-             * Indicates if the AutoFilter has filter criteria. Read-Only.
+             * Specifies if the AutoFilter has filter criteria.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -37333,16 +37361,14 @@ export declare namespace Excel {
             *
             * Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
             *
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.11]
             */
             numberFormat?: Excel.Interfaces.NumberFormatInfoData;
             /**
              *
-             * Gets the culture name in the format languagecode2-country/regioncode2 (e.g. "zh-cn" or "en-us"). This is based on current system settings.
+             * Gets the culture name in the format languagecode2-country/regioncode2 (e.g., "zh-cn" or "en-us"). This is based on current system settings.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.11]
              */
             name?: string;
         }
@@ -37352,16 +37378,14 @@ export declare namespace Excel {
              *
              * Gets the string used as the decimal separator for numeric values. This is based on current system settings.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.11]
              */
             numberDecimalSeparator?: string;
             /**
              *
              * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on current system settings.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.11]
              */
             numberGroupSeparator?: string;
         }
@@ -37420,14 +37444,14 @@ export declare namespace Excel {
         export interface CustomXmlPartData {
             /**
              *
-             * The custom XML part's ID. Read-only.
+             * The custom XML part's ID.
              *
              * [Api set: ExcelApi 1.5]
              */
             id?: string;
             /**
              *
-             * The custom XML part's namespace URI. Read-only.
+             * The custom XML part's namespace URI.
              *
              * [Api set: ExcelApi 1.5]
              */
@@ -37480,7 +37504,7 @@ export declare namespace Excel {
             rowHierarchies?: Excel.Interfaces.RowColumnPivotHierarchyData[];
             /**
              *
-             * Specifies whether the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
+             * Specifies if the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -37488,14 +37512,14 @@ export declare namespace Excel {
             allowMultipleFiltersPerField?: boolean;
             /**
              *
-             * Specifies whether the PivotTable allows values in the data body to be edited by the user.
+             * Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
              * [Api set: ExcelApi 1.9]
              */
             enableDataValueEditing?: boolean;
             /**
              *
-             * Id of the PivotTable. Read-only.
+             * Id of the PivotTable.
              *
              * [Api set: ExcelApi 1.5]
              */
@@ -37509,7 +37533,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Specifies whether the PivotTable uses custom lists when sorting.
+             * Specifies if the PivotTable uses custom lists when sorting.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -37527,14 +37551,14 @@ export declare namespace Excel {
             pivotStyle?: Excel.Interfaces.PivotTableStyleData;
             /**
              *
-             * Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
+             * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved
              *
              * [Api set: ExcelApi 1.9]
              */
             autoFormat?: boolean;
             /**
              *
-             * Specifies whether the field list can be shown in the UI.
+             * Specifies if the field list can be shown in the UI.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -37548,21 +37572,21 @@ export declare namespace Excel {
             layoutType?: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";
             /**
              *
-             * Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
+             * Specifies if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
              *
              * [Api set: ExcelApi 1.9]
              */
             preserveFormatting?: boolean;
             /**
              *
-             * Specifies whether the PivotTable report shows grand totals for columns.
+             * Specifies if the PivotTable report shows grand totals for columns.
              *
              * [Api set: ExcelApi 1.8]
              */
             showColumnGrandTotals?: boolean;
             /**
              *
-             * Specifies whether the PivotTable report shows grand totals for rows.
+             * Specifies if the PivotTable report shows grand totals for rows.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -37723,14 +37747,14 @@ export declare namespace Excel {
             position?: number;
             /**
              *
-             * Determines whether the data should be shown as a specific summary calculation or not.
+             * Specifies if the data should be shown as a specific summary calculation.
              *
              * [Api set: ExcelApi 1.8]
              */
             showAs?: Excel.ShowAsRule;
             /**
              *
-             * Determines whether to show all items of the DataPivotHierarchy.
+             * Specifies if all items of the DataPivotHierarchy are shown.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -37807,7 +37831,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Determines whether the PivotItem is visible or not.
+             * Specifies if the PivotItem is visible.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -37817,7 +37841,7 @@ export declare namespace Excel {
         export interface WorksheetCustomPropertyData {
             /**
              *
-             * Gets the key of the custom property. Read only.
+             * Gets the key of the custom property. Custom property keys are case-insensitive.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -37825,7 +37849,7 @@ export declare namespace Excel {
             key?: string;
             /**
              *
-             * Gets the value of the custom property. Read only.
+             * Gets or sets the value of the custom property.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -37847,28 +37871,28 @@ export declare namespace Excel {
             custom?: Excel.Interfaces.CustomPropertyData[];
             /**
              *
-             * Gets or sets the author of the workbook.
+             * The author of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
             author?: string;
             /**
              *
-             * Gets or sets the category of the workbook.
+             * The category of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
             category?: string;
             /**
              *
-             * Gets or sets the comments of the workbook.
+             * The comments of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
             comments?: string;
             /**
              *
-             * Gets or sets the company of the workbook.
+             * The company of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -37882,7 +37906,7 @@ export declare namespace Excel {
             creationDate?: Date;
             /**
              *
-             * Gets or sets the keywords of the workbook.
+             * The keywords of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -37896,7 +37920,7 @@ export declare namespace Excel {
             lastAuthor?: string;
             /**
              *
-             * Gets or sets the manager of the workbook.
+             * The manager of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -37910,14 +37934,14 @@ export declare namespace Excel {
             revisionNumber?: number;
             /**
              *
-             * Gets or sets the subject of the workbook.
+             * The subject of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
             subject?: string;
             /**
              *
-             * Gets or sets the title of the workbook.
+             * The title of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -37927,21 +37951,21 @@ export declare namespace Excel {
         export interface CustomPropertyData {
             /**
              *
-             * Gets the key of the custom property. Read only.
+             * The key of the custom property.
              *
              * [Api set: ExcelApi 1.7]
              */
             key?: string;
             /**
              *
-             * Gets the value type of the custom property. Read only.
+             * The type of the value used for the custom property.
              *
              * [Api set: ExcelApi 1.7]
              */
             type?: Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float";
             /**
              *
-             * Gets or sets the value of the custom property.
+             * The value of the custom property.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -37960,7 +37984,7 @@ export declare namespace Excel {
             /**
             *
             * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
-            For example to format all cells between 5 and 10. Read-only.
+            For example to format all cells between 5 and 10.
             *
             * [Api set: ExcelApi 1.6]
             */
@@ -37968,63 +37992,63 @@ export declare namespace Excel {
             /**
             *
             * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
-            For example to format all cells between 5 and 10. Read-only.
+            For example to format all cells between 5 and 10.
             *
             * [Api set: ExcelApi 1.6]
             */
             cellValueOrNullObject?: Excel.Interfaces.CellValueConditionalFormatData;
             /**
             *
-            * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type. Read-only.
+            * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
             *
             * [Api set: ExcelApi 1.6]
             */
             colorScale?: Excel.Interfaces.ColorScaleConditionalFormatData;
             /**
             *
-            * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type. Read-only.
+            * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
             *
             * [Api set: ExcelApi 1.6]
             */
             colorScaleOrNullObject?: Excel.Interfaces.ColorScaleConditionalFormatData;
             /**
             *
-            * Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
+            * Returns the custom conditional format properties if the current conditional format is a custom type.
             *
             * [Api set: ExcelApi 1.6]
             */
             custom?: Excel.Interfaces.CustomConditionalFormatData;
             /**
             *
-            * Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
+            * Returns the custom conditional format properties if the current conditional format is a custom type.
             *
             * [Api set: ExcelApi 1.6]
             */
             customOrNullObject?: Excel.Interfaces.CustomConditionalFormatData;
             /**
             *
-            * Returns the data bar properties if the current conditional format is a data bar. Read-only.
+            * Returns the data bar properties if the current conditional format is a data bar.
             *
             * [Api set: ExcelApi 1.6]
             */
             dataBar?: Excel.Interfaces.DataBarConditionalFormatData;
             /**
             *
-            * Returns the data bar properties if the current conditional format is a data bar. Read-only.
+            * Returns the data bar properties if the current conditional format is a data bar.
             *
             * [Api set: ExcelApi 1.6]
             */
             dataBarOrNullObject?: Excel.Interfaces.DataBarConditionalFormatData;
             /**
             *
-            * Returns the IconSet conditional format properties if the current conditional format is an IconSet type. Read-only.
+            * Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
             *
             * [Api set: ExcelApi 1.6]
             */
             iconSet?: Excel.Interfaces.IconSetConditionalFormatData;
             /**
             *
-            * Returns the IconSet conditional format properties if the current conditional format is an IconSet type. Read-only.
+            * Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
             *
             * [Api set: ExcelApi 1.6]
             */
@@ -38046,7 +38070,7 @@ export declare namespace Excel {
             /**
             *
             * Returns the specific text conditional format properties if the current conditional format is a text type.
-            For example to format cells matching the word "Text". Read-only.
+            For example to format cells matching the word "Text".
             *
             * [Api set: ExcelApi 1.6]
             */
@@ -38054,7 +38078,7 @@ export declare namespace Excel {
             /**
             *
             * Returns the specific text conditional format properties if the current conditional format is a text type.
-            For example to format cells matching the word "Text". Read-only.
+            For example to format cells matching the word "Text".
             *
             * [Api set: ExcelApi 1.6]
             */
@@ -38062,7 +38086,7 @@ export declare namespace Excel {
             /**
             *
             * Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
-            For example to format the top 10% or bottom 10 items. Read-only.
+            For example to format the top 10% or bottom 10 items.
             *
             * [Api set: ExcelApi 1.6]
             */
@@ -38070,14 +38094,14 @@ export declare namespace Excel {
             /**
             *
             * Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
-            For example to format the top 10% or bottom 10 items. Read-only.
+            For example to format the top 10% or bottom 10 items.
             *
             * [Api set: ExcelApi 1.6]
             */
             topBottomOrNullObject?: Excel.Interfaces.TopBottomConditionalFormatData;
             /**
              *
-             * The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only.
+             * The Priority of the Conditional Format within the current ConditionalFormatCollection.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -38088,7 +38112,7 @@ export declare namespace Excel {
                         changes other conditional formats' priorities, to allow for a contiguous priority order.
                         Use a negative priority to begin from the back.
                         Priorities greater than than bounds will get and set to the maximum (or minimum if negative) priority.
-                        Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it. Read-only.
+                        Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -38103,7 +38127,7 @@ export declare namespace Excel {
             stopIfTrue?: boolean;
             /**
              *
-             * A type of conditional format. Only one can be set at a time. Read-only.
+             * A type of conditional format. Only one can be set at a time.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -38113,21 +38137,21 @@ export declare namespace Excel {
         export interface DataBarConditionalFormatData {
             /**
             *
-            * Representation of all values to the left of the axis in an Excel data bar. Read-only.
+            * Representation of all values to the left of the axis in an Excel data bar.
             *
             * [Api set: ExcelApi 1.6]
             */
             negativeFormat?: Excel.Interfaces.ConditionalDataBarNegativeFormatData;
             /**
             *
-            * Representation of all values to the right of the axis in an Excel data bar. Read-only.
+            * Representation of all values to the right of the axis in an Excel data bar.
             *
             * [Api set: ExcelApi 1.6]
             */
             positiveFormat?: Excel.Interfaces.ConditionalDataBarPositiveFormatData;
             /**
              *
-             * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
                         "" (empty string) if no axis is present or set.
              *
              * [Api set: ExcelApi 1.6]
@@ -38142,7 +38166,7 @@ export declare namespace Excel {
             axisFormat?: Excel.ConditionalDataBarAxisFormat | "Automatic" | "None" | "CellMidPoint";
             /**
              *
-             * Represents the direction that the data bar graphic should be based on.
+             * Specifies the direction that the data bar graphic should be based on.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -38175,7 +38199,7 @@ export declare namespace Excel {
         export interface ConditionalDataBarPositiveFormatData {
             /**
              *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
                         "" (empty string) if no border is present or set.
              *
              * [Api set: ExcelApi 1.6]
@@ -38183,14 +38207,14 @@ export declare namespace Excel {
             borderColor?: string;
             /**
              *
-             * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the fill color, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.6]
              */
             fillColor?: string;
             /**
              *
-             * Boolean representation of whether or not the DataBar has a gradient.
+             * specifies if the DataBar has a gradient.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -38200,7 +38224,7 @@ export declare namespace Excel {
         export interface ConditionalDataBarNegativeFormatData {
             /**
              *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
                         "Empty String" if no border is present or set.
              *
              * [Api set: ExcelApi 1.6]
@@ -38208,21 +38232,21 @@ export declare namespace Excel {
             borderColor?: string;
             /**
              *
-             * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the fill color, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.6]
              */
             fillColor?: string;
             /**
              *
-             * Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar.
+             * Specifies if the negative DataBar has the same border color as the positive DataBar.
              *
              * [Api set: ExcelApi 1.6]
              */
             matchPositiveBorderColor?: boolean;
             /**
              *
-             * Boolean representation of whether or not the negative DataBar has the same fill color as the positive DataBar.
+             * Specified if the negative DataBar has the same fill color as the positive DataBar.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -38232,14 +38256,14 @@ export declare namespace Excel {
         export interface CustomConditionalFormatData {
             /**
             *
-            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
             *
             * [Api set: ExcelApi 1.6]
             */
             format?: Excel.Interfaces.ConditionalRangeFormatData;
             /**
             *
-            * Represents the Rule object on this conditional format. Read-only.
+            * Specifies the Rule object on this conditional format.
             *
             * [Api set: ExcelApi 1.6]
             */
@@ -38321,7 +38345,7 @@ export declare namespace Excel {
         export interface TopBottomConditionalFormatData {
             /**
             *
-            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
             *
             * [Api set: ExcelApi 1.6]
             */
@@ -38355,7 +38379,7 @@ export declare namespace Excel {
         export interface TextConditionalFormatData {
             /**
             *
-            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
+            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
             *
             * [Api set: ExcelApi 1.6]
             */
@@ -38379,7 +38403,7 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ConditionalRangeFormatData;
             /**
              *
-             * Represents the Rule object on this conditional format.
+             * Specifies the Rule object on this conditional format.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -38389,21 +38413,21 @@ export declare namespace Excel {
         export interface ConditionalRangeFormatData {
             /**
             *
-            * Collection of border objects that apply to the overall conditional format range. Read-only.
+            * Collection of border objects that apply to the overall conditional format range.
             *
             * [Api set: ExcelApi 1.6]
             */
             borders?: Excel.Interfaces.ConditionalRangeBorderData[];
             /**
             *
-            * Returns the fill object defined on the overall conditional format range. Read-only.
+            * Returns the fill object defined on the overall conditional format range.
             *
             * [Api set: ExcelApi 1.6]
             */
             fill?: Excel.Interfaces.ConditionalRangeFillData;
             /**
             *
-            * Returns the font object defined on the overall conditional format range. Read-only.
+            * Returns the font object defined on the overall conditional format range.
             *
             * [Api set: ExcelApi 1.6]
             */
@@ -38420,35 +38444,35 @@ export declare namespace Excel {
         export interface ConditionalRangeFontData {
             /**
              *
-             * Represents the bold status of font.
+             * Specifies if the font is bold.
              *
              * [Api set: ExcelApi 1.6]
              */
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
              *
              * [Api set: ExcelApi 1.6]
              */
             color?: string;
             /**
              *
-             * Represents the italic status of the font.
+             * Specifies if the font is italic.
              *
              * [Api set: ExcelApi 1.6]
              */
             italic?: boolean;
             /**
              *
-             * Represents the strikethrough status of the font.
+             * Specifies the strikethrough status of the font.
              *
              * [Api set: ExcelApi 1.6]
              */
             strikethrough?: boolean;
             /**
              *
-             * Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
+             * The type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -38458,7 +38482,7 @@ export declare namespace Excel {
         export interface ConditionalRangeFillData {
             /**
              *
-             * HTML color code representing the color of the fill, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the color of the fill, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -38468,14 +38492,14 @@ export declare namespace Excel {
         export interface ConditionalRangeBorderData {
             /**
              *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.6]
              */
             color?: string;
             /**
              *
-             * Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details. Read-only.
+             * Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -38517,21 +38541,21 @@ export declare namespace Excel {
             font?: Excel.Interfaces.RangeFontData;
             /**
              *
-             * Indicates if text is automatically indented when the text alignment in a cell is set to equal distribution.
+             * Specifies if text is automatically indented when the text alignment in a cell is set to equal distribution.
              *
              * [Api set: ExcelApi 1.8]
              */
             autoIndent?: boolean;
             /**
              *
-             * Indicates if the style is a built-in style.
+             * Specifies if the style is a built-in style.
              *
              * [Api set: ExcelApi 1.7]
              */
             builtIn?: boolean;
             /**
              *
-             * Indicates if the formula will be hidden when the worksheet is protected.
+             * Specifies if the formula will be hidden when the worksheet is protected.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -38545,42 +38569,42 @@ export declare namespace Excel {
             horizontalAlignment?: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" | "CenterAcrossSelection" | "Distributed";
             /**
              *
-             * Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
+             * Specifies if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
              *
              * [Api set: ExcelApi 1.7]
              */
             includeAlignment?: boolean;
             /**
              *
-             * Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
+             * Specifies if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
              *
              * [Api set: ExcelApi 1.7]
              */
             includeBorder?: boolean;
             /**
              *
-             * Indicates if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
+             * Specifies if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
              *
              * [Api set: ExcelApi 1.7]
              */
             includeFont?: boolean;
             /**
              *
-             * Indicates if the style includes the NumberFormat property.
+             * Specifies if the style includes the NumberFormat property.
              *
              * [Api set: ExcelApi 1.7]
              */
             includeNumber?: boolean;
             /**
              *
-             * Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and PatternColorIndex interior properties.
+             * Specifies if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and PatternColorIndex interior properties.
              *
              * [Api set: ExcelApi 1.7]
              */
             includePatterns?: boolean;
             /**
              *
-             * Indicates if the style includes the FormulaHidden and Locked protection properties.
+             * Specifies if the style includes the FormulaHidden and Locked protection properties.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -38594,7 +38618,7 @@ export declare namespace Excel {
             indentLevel?: number;
             /**
              *
-             * Indicates if the object is locked when the worksheet is protected.
+             * Specifies if the object is locked when the worksheet is protected.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -38629,7 +38653,7 @@ export declare namespace Excel {
             readingOrder?: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft";
             /**
              *
-             * Indicates if text automatically shrinks to fit in the available column width.
+             * Specifies if text automatically shrinks to fit in the available column width.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -38643,14 +38667,14 @@ export declare namespace Excel {
             textOrientation?: number;
             /**
              *
-             * Represents the vertical alignment for the style. See Excel.VerticalAlignment for details.
+             * Specifies the vertical alignment for the style. See Excel.VerticalAlignment for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             verticalAlignment?: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed";
             /**
              *
-             * Indicates if Microsoft Excel wraps the text in the object.
+             * Specifies if Excel wraps the text in the object.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -38675,7 +38699,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Specifies whether this TableStyle object is read-only. Read-only.
+             * Specifies if this TableStyle object is read-only.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -38696,7 +38720,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Specifies whether this PivotTableStyle object is read-only. Read-only.
+             * Specifies if this PivotTableStyle object is read-only.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -38717,7 +38741,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Specifies whether this SlicerStyle object is read-only. Read-only.
+             * Specifies if this SlicerStyle object is read-only.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -38738,7 +38762,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Specifies whether this TimelineStyle object is read-only. Read-only.
+             * Specifies if this TimelineStyle object is read-only.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -38755,133 +38779,133 @@ export declare namespace Excel {
             headersFooters?: Excel.Interfaces.HeaderFooterGroupData;
             /**
              *
-             * Gets or sets the worksheet's black and white print option.
+             * The worksheet's black and white print option.
              *
              * [Api set: ExcelApi 1.9]
              */
             blackAndWhite?: boolean;
             /**
              *
-             * Gets or sets the worksheet's bottom page margin to use for printing in points.
+             * The worksheet's bottom page margin to use for printing in points.
              *
              * [Api set: ExcelApi 1.9]
              */
             bottomMargin?: number;
             /**
              *
-             * Gets or sets the worksheet's center horizontally flag. This flag determines whether the worksheet will be centered horizontally when it's printed.
+             * The worksheet's center horizontally flag. This flag determines whether the worksheet will be centered horizontally when it's printed.
              *
              * [Api set: ExcelApi 1.9]
              */
             centerHorizontally?: boolean;
             /**
              *
-             * Gets or sets the worksheet's center vertically flag. This flag determines whether the worksheet will be centered vertically when it's printed.
+             * The worksheet's center vertically flag. This flag determines whether the worksheet will be centered vertically when it's printed.
              *
              * [Api set: ExcelApi 1.9]
              */
             centerVertically?: boolean;
             /**
              *
-             * Gets or sets the worksheet's draft mode option. If true the sheet will be printed without graphics.
+             * The worksheet's draft mode option. If true the sheet will be printed without graphics.
              *
              * [Api set: ExcelApi 1.9]
              */
             draftMode?: boolean;
             /**
              *
-             * Gets or sets the worksheet's first page number to print. Null value represents "auto" page numbering.
+             * The worksheet's first page number to print. Null value represents "auto" page numbering.
              *
              * [Api set: ExcelApi 1.9]
              */
             firstPageNumber?: number | "";
             /**
              *
-             * Gets or sets the worksheet's footer margin, in points, for use when printing.
+             * The worksheet's footer margin, in points, for use when printing.
              *
              * [Api set: ExcelApi 1.9]
              */
             footerMargin?: number;
             /**
              *
-             * Gets or sets the worksheet's header margin, in points, for use when printing.
+             * The worksheet's header margin, in points, for use when printing.
              *
              * [Api set: ExcelApi 1.9]
              */
             headerMargin?: number;
             /**
              *
-             * Gets or sets the worksheet's left margin, in points, for use when printing.
+             * The worksheet's left margin, in points, for use when printing.
              *
              * [Api set: ExcelApi 1.9]
              */
             leftMargin?: number;
             /**
              *
-             * Gets or sets the worksheet's orientation of the page.
+             * The worksheet's orientation of the page.
              *
              * [Api set: ExcelApi 1.9]
              */
             orientation?: Excel.PageOrientation | "Portrait" | "Landscape";
             /**
              *
-             * Gets or sets the worksheet's paper size of the page.
+             * The worksheet's paper size of the page.
              *
              * [Api set: ExcelApi 1.9]
              */
             paperSize?: Excel.PaperType | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" | "A3" | "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" | "Note" | "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" | "Esheet" | "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" | "FanfoldStdGerman" | "FanfoldLegalGerman";
             /**
              *
-             * Gets or sets whether the worksheet's comments should be displayed when printing.
+             * Specifies if the worksheet's comments should be displayed when printing.
              *
              * [Api set: ExcelApi 1.9]
              */
             printComments?: Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace";
             /**
              *
-             * Gets or sets the worksheet's print errors option.
+             * The worksheet's print errors option.
              *
              * [Api set: ExcelApi 1.9]
              */
             printErrors?: Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable";
             /**
              *
-             * Gets or sets the worksheet's print gridlines flag. This flag determines whether gridlines will be printed or not.
+             * Specifies if the worksheet's gridlines will be printed.
              *
              * [Api set: ExcelApi 1.9]
              */
             printGridlines?: boolean;
             /**
              *
-             * Gets or sets the worksheet's print headings flag. This flag determines whether headings will be printed or not.
+             * Specifies if the worksheet's headings will be printed.
              *
              * [Api set: ExcelApi 1.9]
              */
             printHeadings?: boolean;
             /**
              *
-             * Gets or sets the worksheet's page print order option. This specifies the order to use for processing the page number printed.
+             * The worksheet's page print order option. This specifies the order to use for processing the page number printed.
              *
              * [Api set: ExcelApi 1.9]
              */
             printOrder?: Excel.PrintOrder | "DownThenOver" | "OverThenDown";
             /**
              *
-             * Gets or sets the worksheet's right margin, in points, for use when printing.
+             * The worksheet's right margin, in points, for use when printing.
              *
              * [Api set: ExcelApi 1.9]
              */
             rightMargin?: number;
             /**
              *
-             * Gets or sets the worksheet's top margin, in points, for use when printing.
+             * The worksheet's top margin, in points, for use when printing.
              *
              * [Api set: ExcelApi 1.9]
              */
             topMargin?: number;
             /**
              *
-             * Gets or sets the worksheet's print zoom options.
+             * The worksheet's print zoom options.
                         The `PageLayoutZoomOptions` object must be set as a JSON object (use `x.zoom = {...}` instead of `x.zoom.scale = ...`).
              *
              * [Api set: ExcelApi 1.9]
@@ -38892,7 +38916,7 @@ export declare namespace Excel {
         export interface HeaderFooterData {
             /**
              *
-             * Gets or sets the center footer of the worksheet.
+             * The center footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
              *
              * [Api set: ExcelApi 1.9]
@@ -38900,7 +38924,7 @@ export declare namespace Excel {
             centerFooter?: string;
             /**
              *
-             * Gets or sets the center header of the worksheet.
+             * The center header of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
              *
              * [Api set: ExcelApi 1.9]
@@ -38908,7 +38932,7 @@ export declare namespace Excel {
             centerHeader?: string;
             /**
              *
-             * Gets or sets the left footer of the worksheet.
+             * The left footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
              *
              * [Api set: ExcelApi 1.9]
@@ -38916,7 +38940,7 @@ export declare namespace Excel {
             leftFooter?: string;
             /**
              *
-             * Gets or sets the left header of the worksheet.
+             * The left header of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
              *
              * [Api set: ExcelApi 1.9]
@@ -38924,7 +38948,7 @@ export declare namespace Excel {
             leftHeader?: string;
             /**
              *
-             * Gets or sets the right footer of the worksheet.
+             * The right footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
              *
              * [Api set: ExcelApi 1.9]
@@ -38932,7 +38956,7 @@ export declare namespace Excel {
             rightFooter?: string;
             /**
              *
-             * Gets or sets the right header of the worksheet.
+             * The right header of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
              *
              * [Api set: ExcelApi 1.9]
@@ -38971,7 +38995,7 @@ export declare namespace Excel {
             oddPages?: Excel.Interfaces.HeaderFooterData;
             /**
              *
-             * Gets or sets the state of which headers/footers are set. See Excel.HeaderFooterState for details.
+             * The state by which headers/footers are set. See Excel.HeaderFooterState for details.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -38995,14 +39019,14 @@ export declare namespace Excel {
         export interface PageBreakData {
             /**
              *
-             * Represents the column index for the page break
+             * Specifies the column index for the page break
              *
              * [Api set: ExcelApi 1.9]
              */
             columnIndex?: number;
             /**
              *
-             * Represents the row index for the page break
+             * Specifies the row index for the page break
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39024,7 +39048,7 @@ export declare namespace Excel {
         export interface CommentData {
             /**
             *
-            * Represents a collection of reply objects associated with the comment. Read-only.
+            * Represents a collection of reply objects associated with the comment.
             *
             * [Api set: ExcelApi 1.10]
             */
@@ -39045,7 +39069,7 @@ export declare namespace Excel {
             authorName?: string;
             /**
              *
-             * Gets or sets the comment's content. The string is plain text.
+             * The comment's content. The string is plain text.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -39067,31 +39091,30 @@ export declare namespace Excel {
             creationDate?: Date;
             /**
              *
-             * Represents the comment identifier. Read-only.
+             * Specifies the comment identifier.
              *
              * [Api set: ExcelApi 1.10]
              */
             id?: string;
             /**
              *
-             * Gets the entities (e.g. people) that are mentioned in comments.
+             * Gets the entities (e.g., people) that are mentioned in comments.
              *
-             * [Api set: ExcelApiOnline 1.1]
+             * [Api set: ExcelApi 1.11]
              */
             mentions?: Excel.CommentMention[];
             /**
              *
-             * Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
+             * The comment thread status. A value of "true" means the comment thread is resolved.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.11]
              */
             resolved?: boolean;
             /**
              *
-             * Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+             * Gets the rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
              *
-             * [Api set: ExcelApiOnline 1.1]
+             * [Api set: ExcelApi 1.11]
              */
             richContent?: string;
         }
@@ -39117,14 +39140,14 @@ export declare namespace Excel {
             authorName?: string;
             /**
              *
-             * Gets or sets the comment reply's content. The string is plain text.
+             * The comment reply's content. The string is plain text.
              *
              * [Api set: ExcelApi 1.10]
              */
             content?: string;
             /**
              *
-             * Gets the content type of the comment.
+             * The content type of the reply.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -39139,31 +39162,30 @@ export declare namespace Excel {
             creationDate?: Date;
             /**
              *
-             * Represents the comment reply identifier. Read-only.
+             * Specifies the comment reply identifier.
              *
              * [Api set: ExcelApi 1.10]
              */
             id?: string;
             /**
              *
-             * Gets the entities (e.g. people) that are mentioned in comments.
+             * The entities (e.g., people) that are mentioned in comments.
              *
-             * [Api set: ExcelApiOnline 1.1]
+             * [Api set: ExcelApi 1.11]
              */
             mentions?: Excel.CommentMention[];
             /**
              *
-             * Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
+             * The comment reply status. A value of "true" means the reply is in the resolved state.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.11]
              */
             resolved?: boolean;
             /**
              *
-             * Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+             * The rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
              *
-             * [Api set: ExcelApiOnline 1.1]
+             * [Api set: ExcelApi 1.11]
              */
             richContent?: string;
         }
@@ -39175,49 +39197,49 @@ export declare namespace Excel {
         export interface ShapeData {
             /**
             *
-            * Returns the fill formatting of this shape. Read-only.
+            * Returns the fill formatting of this shape.
             *
             * [Api set: ExcelApi 1.9]
             */
             fill?: Excel.Interfaces.ShapeFillData;
             /**
             *
-            * Returns the line formatting of this shape. Read-only.
+            * Returns the line formatting of this shape.
             *
             * [Api set: ExcelApi 1.9]
             */
             lineFormat?: Excel.Interfaces.ShapeLineFormatData;
             /**
              *
-             * Returns or sets the alternative description text for a Shape object.
+             * Specifies the alternative description text for a Shape object.
              *
              * [Api set: ExcelApi 1.9]
              */
             altTextDescription?: string;
             /**
              *
-             * Returns or sets the alternative title text for a Shape object.
+             * Specifies the alternative title text for a Shape object.
              *
              * [Api set: ExcelApi 1.9]
              */
             altTextTitle?: string;
             /**
              *
-             * Returns the number of connection sites on this shape. Read-only.
+             * Returns the number of connection sites on this shape.
              *
              * [Api set: ExcelApi 1.9]
              */
             connectionSiteCount?: number;
             /**
              *
-             * Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
+             * Specifies the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
              *
              * [Api set: ExcelApi 1.9]
              */
             geometricShapeType?: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
             /**
              *
-             * Represents the height, in points, of the shape.
+             * Specifies the height, in points, of the shape.
                         Throws an invalid argument exception when set with a negative value or zero as input.
              *
              * [Api set: ExcelApi 1.9]
@@ -39225,7 +39247,7 @@ export declare namespace Excel {
             height?: number;
             /**
              *
-             * Represents the shape identifier. Read-only.
+             * Specifies the shape identifier.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39240,21 +39262,21 @@ export declare namespace Excel {
             left?: number;
             /**
              *
-             * Represents the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
+             * Specifies the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
              *
              * [Api set: ExcelApi 1.9]
              */
             level?: number;
             /**
              *
-             * Specifies whether or not the aspect ratio of this shape is locked.
+             * Specifies if the aspect ratio of this shape is locked.
              *
              * [Api set: ExcelApi 1.9]
              */
             lockAspectRatio?: boolean;
             /**
              *
-             * Represents the name of the shape.
+             * Specifies the name of the shape.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39268,7 +39290,7 @@ export declare namespace Excel {
             placement?: Excel.Placement | "TwoCell" | "OneCell" | "Absolute";
             /**
              *
-             * Represents the rotation, in degrees, of the shape.
+             * Specifies the rotation, in degrees, of the shape.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39283,21 +39305,21 @@ export declare namespace Excel {
             top?: number;
             /**
              *
-             * Returns the type of this shape. See Excel.ShapeType for details. Read-only.
+             * Returns the type of this shape. See Excel.ShapeType for details.
              *
              * [Api set: ExcelApi 1.9]
              */
             type?: Excel.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";
             /**
              *
-             * Represents the visibility of this shape.
+             * Specifies if the shape is visible.
              *
              * [Api set: ExcelApi 1.9]
              */
             visible?: boolean;
             /**
              *
-             * Represents the width, in points, of the shape.
+             * Specifies the width, in points, of the shape.
                         Throws an invalid argument exception when set with a negative value or zero as input.
              *
              * [Api set: ExcelApi 1.9]
@@ -39305,7 +39327,7 @@ export declare namespace Excel {
             width?: number;
             /**
              *
-             * Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack. Read-only.
+             * Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39315,7 +39337,7 @@ export declare namespace Excel {
         export interface GeometricShapeData {
             /**
              *
-             * Returns the shape identifier. Read-only.
+             * Returns the shape identifier.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39325,14 +39347,14 @@ export declare namespace Excel {
         export interface ImageData {
             /**
              *
-             * Represents the shape identifier for the image object. Read-only.
+             * Specifies the shape identifier for the image object.
              *
              * [Api set: ExcelApi 1.9]
              */
             id?: string;
             /**
              *
-             * Returns the format of the image. Read-only.
+             * Returns the format of the image.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39342,14 +39364,14 @@ export declare namespace Excel {
         export interface ShapeGroupData {
             /**
             *
-            * Returns the collection of Shape objects. Read-only.
+            * Returns the collection of Shape objects.
             *
             * [Api set: ExcelApi 1.9]
             */
             shapes?: Excel.Interfaces.ShapeData[];
             /**
              *
-             * Represents the shape identifier. Read-only.
+             * Specifies the shape identifier.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39384,7 +39406,7 @@ export declare namespace Excel {
             beginArrowheadWidth?: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide";
             /**
              *
-             * Represents the connection site to which the beginning of a connector is connected. Read-only. Returns null when the beginning of the line is not attached to any shape.
+             * Represents the connection site to which the beginning of a connector is connected. Returns null when the beginning of the line is not attached to any shape.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39412,28 +39434,28 @@ export declare namespace Excel {
             endArrowheadWidth?: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide";
             /**
              *
-             * Represents the connection site to which the end of a connector is connected. Read-only. Returns null when the end of the line is not attached to any shape.
+             * Represents the connection site to which the end of a connector is connected. Returns null when the end of the line is not attached to any shape.
              *
              * [Api set: ExcelApi 1.9]
              */
             endConnectedSite?: number;
             /**
              *
-             * Represents the shape identifier. Read-only.
+             * Specifies the shape identifier.
              *
              * [Api set: ExcelApi 1.9]
              */
             id?: string;
             /**
              *
-             * Specifies whether or not the beginning of the specified line is connected to a shape. Read-only.
+             * Specifies if the beginning of the specified line is connected to a shape.
              *
              * [Api set: ExcelApi 1.9]
              */
             isBeginConnected?: boolean;
             /**
              *
-             * Specifies whether or not the end of the specified line is connected to a shape. Read-only.
+             * Specifies if the end of the specified line is connected to a shape.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39450,21 +39472,21 @@ export declare namespace Excel {
         export interface ShapeFillData {
             /**
              *
-             * Represents the shape fill foreground color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
+             * Represents the shape fill foreground color in HTML color format, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange")
              *
              * [Api set: ExcelApi 1.9]
              */
             foregroundColor?: string;
             /**
              *
-             * Returns or sets the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns null if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
+             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns null if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
              *
              * [Api set: ExcelApi 1.9]
              */
             transparency?: number;
             /**
              *
-             * Returns the fill type of the shape. Read-only. See Excel.ShapeFillType for details.
+             * Returns the fill type of the shape. See Excel.ShapeFillType for details.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39474,7 +39496,7 @@ export declare namespace Excel {
         export interface ShapeLineFormatData {
             /**
              *
-             * Represents the line color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * Represents the line color in HTML color format, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39502,7 +39524,7 @@ export declare namespace Excel {
             transparency?: number;
             /**
              *
-             * Represents whether or not the line formatting of a shape element is visible. Returns null when the shape has inconsistent visibilities.
+             * Specifies if the line formatting of a shape element is visible. Returns null when the shape has inconsistent visibilities.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39519,7 +39541,7 @@ export declare namespace Excel {
         export interface TextFrameData {
             /**
              *
-             * Gets or sets the automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
+             * The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39533,7 +39555,7 @@ export declare namespace Excel {
             bottomMargin?: number;
             /**
              *
-             * Specifies whether the text frame contains text.
+             * Specifies if the text frame contains text.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39606,7 +39628,7 @@ export declare namespace Excel {
         export interface TextRangeData {
             /**
             *
-            * Returns a ShapeFont object that represents the font attributes for the text range. Read-only.
+            * Returns a ShapeFont object that represents the font attributes for the text range.
             *
             * [Api set: ExcelApi 1.9]
             */
@@ -39630,7 +39652,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * The HTML color code representation of the text color (e.g. "#FF0000" represents red). Returns null if the TextRange includes text fragments with different colors.
+             * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns null if the TextRange includes text fragments with different colors.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39644,14 +39666,14 @@ export declare namespace Excel {
             italic?: boolean;
             /**
              *
-             * Represents font name (e.g. "Calibri"). If the text is Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
+             * Represents font name (e.g., "Calibri"). If the text is Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
              *
              * [Api set: ExcelApi 1.9]
              */
             name?: string;
             /**
              *
-             * Represents font size in points (e.g. 11). Returns null if the TextRange includes text fragments with different font sizes.
+             * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39668,7 +39690,7 @@ export declare namespace Excel {
         export interface SlicerData {
             /**
             *
-            * Represents the collection of SlicerItems that are part of the slicer. Read-only.
+            * Represents the collection of SlicerItems that are part of the slicer.
             *
             * [Api set: ExcelApi 1.10]
             */
@@ -39683,7 +39705,7 @@ export declare namespace Excel {
             slicerStyle?: Excel.Interfaces.SlicerStyleData;
             /**
             *
-            * Represents the worksheet containing the slicer. Read-only.
+            * Represents the worksheet containing the slicer.
             *
             * [Api set: ExcelApi 1.10]
             */
@@ -39705,7 +39727,7 @@ export declare namespace Excel {
             height?: number;
             /**
              *
-             * Represents the unique id of slicer. Read-only.
+             * Represents the unique id of slicer.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -39863,8 +39885,7 @@ export declare namespace Excel {
             *
             * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
             *
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.11]
             */
             cultureInfo?: Excel.Interfaces.CultureInfoLoadOptions;
             /**
@@ -39878,7 +39899,7 @@ export declare namespace Excel {
             iterativeCalculation?: Excel.Interfaces.IterativeCalculationLoadOptions;
             /**
              *
-             * Returns the Excel calculation engine version used for the last full recalculation. Read-only.
+             * Returns the Excel calculation engine version used for the last full recalculation.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39892,7 +39913,7 @@ export declare namespace Excel {
             calculationMode?: boolean;
             /**
              *
-             * Returns the calculation state of the application. See Excel.CalculationState for details. Read-only.
+             * Returns the calculation state of the application. See Excel.CalculationState for details.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39901,25 +39922,22 @@ export declare namespace Excel {
              *
              * Gets the string used as the decimal separator for numeric values. This is based on Excel's local settings.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.11]
              */
             decimalSeparator?: boolean;
             /**
              *
              * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on Excel's local settings.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.11]
              */
             thousandsSeparator?: boolean;
             /**
              *
-             * Specifies whether the system separators of Microsoft Excel are enabled.
+             * Specifies if the system separators of Excel are enabled.
                         System separators include the decimal separator and thousands separator.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.11]
              */
             useSystemSeparators?: boolean;
         }
@@ -39943,14 +39961,14 @@ export declare namespace Excel {
             enabled?: boolean;
             /**
              *
-             * Returns or sets the maximum amount of change between each iteration as Excel resolves circular references.
+             * Specifies the maximum amount of change between each iteration as Excel resolves circular references.
              *
              * [Api set: ExcelApi 1.9]
              */
             maxChange?: boolean;
             /**
              *
-             * Returns or sets the maximum number of iterations that Excel can use to resolve a circular reference.
+             * Specifies the maximum number of iterations that Excel can use to resolve a circular reference.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -40005,14 +40023,14 @@ export declare namespace Excel {
             tables?: Excel.Interfaces.TableCollectionLoadOptions;
             /**
              *
-             * Specifies whether or not the workbook is in autosave mode. Read-Only.
+             * Specifies if the workbook is in autosave mode.
              *
              * [Api set: ExcelApi 1.9]
              */
             autoSave?: boolean;
             /**
              *
-             * Returns a number about the version of Excel Calculation Engine. Read-Only.
+             * Returns a number about the version of Excel Calculation Engine.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -40027,7 +40045,7 @@ export declare namespace Excel {
             chartDataPointTrack?: boolean;
             /**
              *
-             * Specifies whether or not changes have been made since the workbook was last saved.
+             * Specifies if changes have been made since the workbook was last saved.
                         You can set this property to true if you want to close a modified workbook without either saving it or being prompted to save it.
              *
              * [Api set: ExcelApi 1.9]
@@ -40035,25 +40053,33 @@ export declare namespace Excel {
             isDirty?: boolean;
             /**
              *
-             * Gets the workbook name. Read-only.
+             * Gets the workbook name.
              *
              * [Api set: ExcelApi 1.7]
              */
             name?: boolean;
             /**
              *
-             * Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
+             * Specifies if the workbook has ever been saved locally or online.
              *
              * [Api set: ExcelApi 1.9]
              */
             previouslySaved?: boolean;
             /**
              *
-             * True if the workbook is open in Read-only mode. Read-only.
+             * True if the workbook is open in Read-only mode.
              *
              * [Api set: ExcelApi 1.8]
              */
             readOnly?: boolean;
+            /**
+             *
+             * Specifies whether the PivotTable's field list pane is shown at the workbook level.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            showPivotFieldList?: boolean;
             /**
              *
              * True if the workbook uses the 1904 date system.
@@ -40084,7 +40110,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Indicates if the workbook is protected. Read-Only.
+             * Specifies if the workbook is protected.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -40139,7 +40165,7 @@ export declare namespace Excel {
             tables?: Excel.Interfaces.TableCollectionLoadOptions;
             /**
              *
-             * Gets or sets the enableCalculation property of the worksheet.
+             * Determines if Excel should recalculate the worksheet when necessary.
                         True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
              *
              * [Api set: ExcelApi 1.9]
@@ -40147,7 +40173,7 @@ export declare namespace Excel {
             enableCalculation?: boolean;
             /**
              *
-             * Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
+             * Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -40168,30 +40194,28 @@ export declare namespace Excel {
             position?: boolean;
             /**
              *
-             * Gets or sets the worksheet's gridlines flag.
-                        This flag determines whether gridlines are visible to the user.
+             * Specifies if gridlines are visible to the user.
              *
              * [Api set: ExcelApi 1.8]
              */
             showGridlines?: boolean;
             /**
              *
-             * Gets or sets the worksheet's headings flag.
-                        This flag determines whether headings are visible to the user.
+             * Specifies if headings are visible to the user.
              *
              * [Api set: ExcelApi 1.8]
              */
             showHeadings?: boolean;
             /**
              *
-             * Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
+             * Returns the standard (default) height of all the rows in the worksheet, in points.
              *
              * [Api set: ExcelApi 1.7]
              */
             standardHeight?: boolean;
             /**
              *
-             * Returns or sets the standard (default) width of all the columns in the worksheet.
+             * Specifies the standard (default) width of all the columns in the worksheet.
                         One unit of column width is equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is used.
              *
              * [Api set: ExcelApi 1.7]
@@ -40199,7 +40223,7 @@ export declare namespace Excel {
             standardWidth?: boolean;
             /**
              *
-             * Gets or sets the worksheet tab color.
+             * The tab color of the worksheet.
                         When retrieving the tab color, if the worksheet is invisible, the value will be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned. Otherwise, the property will be set to a color, in the form "#123456"
                         When setting the color, use an empty-string to set an "auto" color, or a real color otherwise.
              *
@@ -40262,7 +40286,7 @@ export declare namespace Excel {
             tables?: Excel.Interfaces.TableCollectionLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the enableCalculation property of the worksheet.
+             * For EACH ITEM in the collection: Determines if Excel should recalculate the worksheet when necessary.
                         True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
              *
              * [Api set: ExcelApi 1.9]
@@ -40270,7 +40294,7 @@ export declare namespace Excel {
             enableCalculation?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
+             * For EACH ITEM in the collection: Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -40291,30 +40315,28 @@ export declare namespace Excel {
             position?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the worksheet's gridlines flag.
-                        This flag determines whether gridlines are visible to the user.
+             * For EACH ITEM in the collection: Specifies if gridlines are visible to the user.
              *
              * [Api set: ExcelApi 1.8]
              */
             showGridlines?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the worksheet's headings flag.
-                        This flag determines whether headings are visible to the user.
+             * For EACH ITEM in the collection: Specifies if headings are visible to the user.
              *
              * [Api set: ExcelApi 1.8]
              */
             showHeadings?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
+             * For EACH ITEM in the collection: Returns the standard (default) height of all the rows in the worksheet, in points.
              *
              * [Api set: ExcelApi 1.7]
              */
             standardHeight?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the standard (default) width of all the columns in the worksheet.
+             * For EACH ITEM in the collection: Specifies the standard (default) width of all the columns in the worksheet.
                         One unit of column width is equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is used.
              *
              * [Api set: ExcelApi 1.7]
@@ -40322,7 +40344,7 @@ export declare namespace Excel {
             standardWidth?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the worksheet tab color.
+             * For EACH ITEM in the collection: The tab color of the worksheet.
                         When retrieving the tab color, if the worksheet is invisible, the value will be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned. Otherwise, the property will be set to a color, in the form "#123456"
                         When setting the color, use an empty-string to set an "auto" color, or a real color otherwise.
              *
@@ -40350,14 +40372,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Sheet protection options. Read-only.
+             * Specifies the protection options for the worksheet.
              *
              * [Api set: ExcelApi 1.2]
              */
             options?: boolean;
             /**
              *
-             * Indicates if the worksheet is protected. Read-only.
+             * Specifies if the worksheet is protected.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -40399,28 +40421,28 @@ export declare namespace Excel {
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
              *
-             * Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4"). Read-only.
+             * Specifies the range reference in A1-style. Address value will contain the Sheet reference (e.g., "Sheet1!A1:B4").
              *
              * [Api set: ExcelApi 1.1]
              */
             address?: boolean;
             /**
              *
-             * Represents range reference for the specified range in the language of the user. Read-only.
+             * Specifies the range reference for the specified range in the language of the user.
              *
              * [Api set: ExcelApi 1.1]
              */
             addressLocal?: boolean;
             /**
              *
-             * Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
+             * Specifies the number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647).
              *
              * [Api set: ExcelApi 1.1]
              */
             cellCount?: boolean;
             /**
              *
-             * Represents the total number of columns in the range. Read-only.
+             * Specifies the total number of columns in the range.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -40434,7 +40456,7 @@ export declare namespace Excel {
             columnHidden?: boolean;
             /**
              *
-             * Represents the column number of the first cell in the range. Zero-indexed. Read-only.
+             * Specifies the column number of the first cell in the range. Zero-indexed.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -40472,14 +40494,14 @@ export declare namespace Excel {
             hasSpill?: boolean;
             /**
              *
-             * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
+             * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range.
              *
              * [Api set: ExcelApi 1.10]
              */
             height?: boolean;
             /**
              *
-             * Represents if all cells of the current range are hidden. Read-only.
+             * Represents if all cells of the current range are hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -40493,28 +40515,28 @@ export declare namespace Excel {
             hyperlink?: boolean;
             /**
              *
-             * Represents if the current range is an entire column. Read-only.
+             * Represents if the current range is an entire column.
              *
              * [Api set: ExcelApi 1.7]
              */
             isEntireColumn?: boolean;
             /**
              *
-             * Represents if the current range is an entire row. Read-only.
+             * Represents if the current range is an entire row.
              *
              * [Api set: ExcelApi 1.7]
              */
             isEntireRow?: boolean;
             /**
              *
-             * Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range. Read-only.
+             * Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range.
              *
              * [Api set: ExcelApi 1.10]
              */
             left?: boolean;
             /**
              *
-             * Represents the data type state of each cell. Read-only.
+             * Represents the data type state of each cell.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -40528,7 +40550,7 @@ export declare namespace Excel {
             numberFormat?: boolean;
             /**
              *
-             * Represents the category of number format of each cell. Read-only.
+             * Represents the category of number format of each cell.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -40545,7 +40567,7 @@ export declare namespace Excel {
             numberFormatLocal?: boolean;
             /**
              *
-             * Returns the total number of rows in the range. Read-only.
+             * Returns the total number of rows in the range.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -40559,7 +40581,7 @@ export declare namespace Excel {
             rowHidden?: boolean;
             /**
              *
-             * Returns the row number of the first cell in the range. Zero-indexed. Read-only.
+             * Returns the row number of the first cell in the range. Zero-indexed.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -40585,21 +40607,21 @@ export declare namespace Excel {
             style?: boolean;
             /**
              *
-             * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
+             * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.
              *
              * [Api set: ExcelApi 1.1]
              */
             text?: boolean;
             /**
              *
-             * Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
+             * Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range.
              *
              * [Api set: ExcelApi 1.10]
              */
             top?: boolean;
             /**
              *
-             * Represents the type of data of each cell. Read-only.
+             * Specifies the type of data in each cell.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -40613,7 +40635,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              *
-             * Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
+             * Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -40640,7 +40662,7 @@ export declare namespace Excel {
             dataValidation?: Excel.Interfaces.DataValidationLoadOptions;
             /**
             *
-            * Returns a rangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the RangeAreas object.
+            * Returns a RangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the RangeAreas object.
             *
             * [Api set: ExcelApi 1.9]
             */
@@ -40654,14 +40676,14 @@ export declare namespace Excel {
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
              *
-             * Returns the RageAreas reference in A1-style. Address value will contain the worksheet name for each rectangular block of cells (e.g. "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
+             * Returns the RangeAreas reference in A1-style. Address value will contain the worksheet name for each rectangular block of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4").
              *
              * [Api set: ExcelApi 1.9]
              */
             address?: boolean;
             /**
              *
-             * Returns the RageAreas reference in the user locale. Read-only.
+             * Returns the RangeAreas reference in the user locale.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -40675,21 +40697,21 @@ export declare namespace Excel {
             areaCount?: boolean;
             /**
              *
-             * Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
+             * Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647).
              *
              * [Api set: ExcelApi 1.9]
              */
             cellCount?: boolean;
             /**
              *
-             * Indicates whether all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z"). Read-only.
+             * Specifies if all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z").
              *
              * [Api set: ExcelApi 1.9]
              */
             isEntireColumn?: boolean;
             /**
              *
-             * Indicates whether all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7"). Read-only.
+             * Specifies if all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7").
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -40717,14 +40739,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Represents the cell addresses of the RangeView. Read-only.
+             * Represents the cell addresses of the RangeView.
              *
              * [Api set: ExcelApi 1.3]
              */
             cellAddresses?: boolean;
             /**
              *
-             * Returns the number of visible columns. Read-only.
+             * The number of visible columns.
              *
              * [Api set: ExcelApi 1.3]
              */
@@ -40752,7 +40774,7 @@ export declare namespace Excel {
             formulasR1C1?: boolean;
             /**
              *
-             * Returns a value that represents the index of the RangeView. Read-only.
+             * Returns a value that represents the index of the RangeView.
              *
              * [Api set: ExcelApi 1.3]
              */
@@ -40766,21 +40788,21 @@ export declare namespace Excel {
             numberFormat?: boolean;
             /**
              *
-             * Returns the number of visible rows. Read-only.
+             * The number of visible rows.
              *
              * [Api set: ExcelApi 1.3]
              */
             rowCount?: boolean;
             /**
              *
-             * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
+             * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.
              *
              * [Api set: ExcelApi 1.3]
              */
             text?: boolean;
             /**
              *
-             * Represents the type of data of each cell. Read-only.
+             * Represents the type of data of each cell.
              *
              * [Api set: ExcelApi 1.3]
              */
@@ -40806,14 +40828,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the cell addresses of the RangeView. Read-only.
+             * For EACH ITEM in the collection: Represents the cell addresses of the RangeView.
              *
              * [Api set: ExcelApi 1.3]
              */
             cellAddresses?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the number of visible columns. Read-only.
+             * For EACH ITEM in the collection: The number of visible columns.
              *
              * [Api set: ExcelApi 1.3]
              */
@@ -40841,7 +40863,7 @@ export declare namespace Excel {
             formulasR1C1?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns a value that represents the index of the RangeView. Read-only.
+             * For EACH ITEM in the collection: Returns a value that represents the index of the RangeView.
              *
              * [Api set: ExcelApi 1.3]
              */
@@ -40855,21 +40877,21 @@ export declare namespace Excel {
             numberFormat?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the number of visible rows. Read-only.
+             * For EACH ITEM in the collection: The number of visible rows.
              *
              * [Api set: ExcelApi 1.3]
              */
             rowCount?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
+             * For EACH ITEM in the collection: Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.
              *
              * [Api set: ExcelApi 1.3]
              */
             text?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the type of data of each cell. Read-only.
+             * For EACH ITEM in the collection: Represents the type of data of each cell.
              *
              * [Api set: ExcelApi 1.3]
              */
@@ -40895,7 +40917,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the key that represents the id of the Setting. Read-only.
+             * For EACH ITEM in the collection: The key that represents the id of the Setting.
              *
              * [Api set: ExcelApi 1.4]
              */
@@ -40921,7 +40943,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Returns the key that represents the id of the Setting. Read-only.
+             * The key that represents the id of the Setting.
              *
              * [Api set: ExcelApi 1.4]
              */
@@ -40968,49 +40990,49 @@ export declare namespace Excel {
             worksheetOrNullObject?: Excel.Interfaces.WorksheetLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Represents the comment associated with this name.
+             * For EACH ITEM in the collection: Specifies the comment associated with this name.
              *
              * [Api set: ExcelApi 1.4]
              */
             comment?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the formula of the named item.  Formula always starts with a '=' sign.
+             * For EACH ITEM in the collection: The formula of the named item. Formula always starts with a '=' sign.
              *
              * [Api set: ExcelApi 1.7]
              */
             formula?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: The name of the object. Read-only.
+             * For EACH ITEM in the collection: The name of the object.
              *
              * [Api set: ExcelApi 1.1]
              */
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates whether the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet, Workbook. Read-only.
+             * For EACH ITEM in the collection: Specifies if the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet, Workbook.
              *
              * [Api set: ExcelApi 1.4]
              */
             scope?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
+             * For EACH ITEM in the collection: Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.
              *
              * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
              */
             type?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
+             * For EACH ITEM in the collection: Represents the value computed by the name's formula. For a named range, will return the range address.
              *
              * [Api set: ExcelApi 1.1]
              */
             value?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies whether the object is visible or not.
+             * For EACH ITEM in the collection: Specifies if the object is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -41050,49 +41072,49 @@ export declare namespace Excel {
             worksheetOrNullObject?: Excel.Interfaces.WorksheetLoadOptions;
             /**
              *
-             * Represents the comment associated with this name.
+             * Specifies the comment associated with this name.
              *
              * [Api set: ExcelApi 1.4]
              */
             comment?: boolean;
             /**
              *
-             * Gets or sets the formula of the named item.  Formula always starts with a '=' sign.
+             * The formula of the named item. Formula always starts with a '=' sign.
              *
              * [Api set: ExcelApi 1.7]
              */
             formula?: boolean;
             /**
              *
-             * The name of the object. Read-only.
+             * The name of the object.
              *
              * [Api set: ExcelApi 1.1]
              */
             name?: boolean;
             /**
              *
-             * Indicates whether the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet, Workbook. Read-only.
+             * Specifies if the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet, Workbook.
              *
              * [Api set: ExcelApi 1.4]
              */
             scope?: boolean;
             /**
              *
-             * Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
+             * Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.
              *
              * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
              */
             type?: boolean;
             /**
              *
-             * Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
+             * Represents the value computed by the name's formula. For a named range, will return the range address.
              *
              * [Api set: ExcelApi 1.1]
              */
             value?: boolean;
             /**
              *
-             * Specifies whether the object is visible or not.
+             * Specifies if the object is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -41137,14 +41159,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Represents binding identifier. Read-only.
+             * Represents binding identifier.
              *
              * [Api set: ExcelApi 1.1]
              */
             id?: boolean;
             /**
              *
-             * Returns the type of the binding. See Excel.BindingType for details. Read-only.
+             * Returns the type of the binding. See Excel.BindingType for details.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -41163,14 +41185,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents binding identifier. Read-only.
+             * For EACH ITEM in the collection: Represents binding identifier.
              *
              * [Api set: ExcelApi 1.1]
              */
             id?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the type of the binding. See Excel.BindingType for details. Read-only.
+             * For EACH ITEM in the collection: Returns the type of the binding. See Excel.BindingType for details.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -41232,21 +41254,21 @@ export declare namespace Excel {
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Indicates whether the first column contains special formatting.
+             * For EACH ITEM in the collection: Specifies if the first column contains special formatting.
              *
              * [Api set: ExcelApi 1.3]
              */
             highlightFirstColumn?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates whether the last column contains special formatting.
+             * For EACH ITEM in the collection: Specifies if the last column contains special formatting.
              *
              * [Api set: ExcelApi 1.3]
              */
             highlightLastColumn?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed. Read-only.
+             * For EACH ITEM in the collection: Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -41269,35 +41291,35 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
+             * For EACH ITEM in the collection: Specifies if the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
              *
              * [Api set: ExcelApi 1.3]
              */
             showBandedColumns?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
+             * For EACH ITEM in the collection: Specifies if the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
              *
              * [Api set: ExcelApi 1.3]
              */
             showBandedRows?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
+             * For EACH ITEM in the collection: Specifies if the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
              *
              * [Api set: ExcelApi 1.3]
              */
             showFilterButton?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+             * For EACH ITEM in the collection: Specifies if the header row is visible. This value can be set to show or remove the header row.
              *
              * [Api set: ExcelApi 1.1]
              */
             showHeaders?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+             * For EACH ITEM in the collection: Specifies if the total row is visible. This value can be set to show or remove the total row.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -41366,21 +41388,21 @@ export declare namespace Excel {
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Indicates whether the first column contains special formatting.
+             * For EACH ITEM in the collection: Specifies if the first column contains special formatting.
              *
              * [Api set: ExcelApi 1.3]
              */
             highlightFirstColumn?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates whether the last column contains special formatting.
+             * For EACH ITEM in the collection: Specifies if the last column contains special formatting.
              *
              * [Api set: ExcelApi 1.3]
              */
             highlightLastColumn?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed. Read-only.
+             * For EACH ITEM in the collection: Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -41403,35 +41425,35 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
+             * For EACH ITEM in the collection: Specifies if the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
              *
              * [Api set: ExcelApi 1.3]
              */
             showBandedColumns?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
+             * For EACH ITEM in the collection: Specifies if the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
              *
              * [Api set: ExcelApi 1.3]
              */
             showBandedRows?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
+             * For EACH ITEM in the collection: Specifies if the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
              *
              * [Api set: ExcelApi 1.3]
              */
             showFilterButton?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+             * For EACH ITEM in the collection: Specifies if the header row is visible. This value can be set to show or remove the header row.
              *
              * [Api set: ExcelApi 1.1]
              */
             showHeaders?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+             * For EACH ITEM in the collection: Specifies if the total row is visible. This value can be set to show or remove the total row.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -41501,21 +41523,21 @@ export declare namespace Excel {
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
              *
-             * Indicates whether the first column contains special formatting.
+             * Specifies if the first column contains special formatting.
              *
              * [Api set: ExcelApi 1.3]
              */
             highlightFirstColumn?: boolean;
             /**
              *
-             * Indicates whether the last column contains special formatting.
+             * Specifies if the last column contains special formatting.
              *
              * [Api set: ExcelApi 1.3]
              */
             highlightLastColumn?: boolean;
             /**
              *
-             * Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed. Read-only.
+             * Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -41538,35 +41560,35 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
+             * Specifies if the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
              *
              * [Api set: ExcelApi 1.3]
              */
             showBandedColumns?: boolean;
             /**
              *
-             * Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
+             * Specifies if the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
              *
              * [Api set: ExcelApi 1.3]
              */
             showBandedRows?: boolean;
             /**
              *
-             * Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
+             * Specifies if the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
              *
              * [Api set: ExcelApi 1.3]
              */
             showFilterButton?: boolean;
             /**
              *
-             * Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+             * Specifies if the header row is visible. This value can be set to show or remove the header row.
              *
              * [Api set: ExcelApi 1.1]
              */
             showHeaders?: boolean;
             /**
              *
-             * Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+             * Specifies if the total row is visible. This value can be set to show or remove the total row.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -41599,21 +41621,21 @@ export declare namespace Excel {
             filter?: Excel.Interfaces.FilterLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Returns a unique key that identifies the column within the table. Read-only.
+             * For EACH ITEM in the collection: Returns a unique key that identifies the column within the table.
              *
              * [Api set: ExcelApi 1.1]
              */
             id?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
+             * For EACH ITEM in the collection: Returns the index number of the column within the columns collection of the table. Zero-indexed.
              *
              * [Api set: ExcelApi 1.1]
              */
             index?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the name of the table column.
+             * For EACH ITEM in the collection: Specifies the name of the table column.
              *
              * [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
              */
@@ -41646,21 +41668,21 @@ export declare namespace Excel {
             filter?: Excel.Interfaces.FilterLoadOptions;
             /**
              *
-             * Returns a unique key that identifies the column within the table. Read-only.
+             * Returns a unique key that identifies the column within the table.
              *
              * [Api set: ExcelApi 1.1]
              */
             id?: boolean;
             /**
              *
-             * Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
+             * Returns the index number of the column within the columns collection of the table. Zero-indexed.
              *
              * [Api set: ExcelApi 1.1]
              */
             index?: boolean;
             /**
              *
-             * Represents the name of the table column.
+             * Specifies the name of the table column.
              *
              * [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
              */
@@ -41691,7 +41713,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
+             * For EACH ITEM in the collection: Returns the index number of the row within the rows collection of the table. Zero-indexed.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -41722,7 +41744,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
+             * Returns the index number of the row within the rows collection of the table. Zero-indexed.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -41756,7 +41778,7 @@ export declare namespace Excel {
             errorAlert?: boolean;
             /**
              *
-             * Ignore blanks: no data validation will be performed on blank cells, it defaults to true.
+             * Specifies if data validation will be performed on blank cells, it defaults to true.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -41859,14 +41881,14 @@ export declare namespace Excel {
             protection?: Excel.Interfaces.FormatProtectionLoadOptions;
             /**
              *
-             * Indicates if text is automatically indented when text alignment is set to equal distribution.
+             * Specifies if text is automatically indented when text alignment is set to equal distribution.
              *
              * [Api set: ExcelApi 1.9]
              */
             autoIndent?: boolean;
             /**
              *
-             * Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.
+             * Specifies the width of all colums within the range. If the column widths are not uniform, null will be returned.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -41894,21 +41916,21 @@ export declare namespace Excel {
             readingOrder?: boolean;
             /**
              *
-             * Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
+             * The height of all rows in the range. If the row heights are not uniform, null will be returned.
              *
              * [Api set: ExcelApi 1.2]
              */
             rowHeight?: boolean;
             /**
              *
-             * Indicates if text automatically shrinks to fit in the available column width.
+             * Specifies if text automatically shrinks to fit in the available column width.
              *
              * [Api set: ExcelApi 1.9]
              */
             shrinkToFit?: boolean;
             /**
              *
-             * Gets or sets the text orientation of all the cells within the range.
+             * The text orientation of all the cells within the range.
                         The text orientation should be an integer either from -90 to 90, or 180 for vertically-oriented text.
                         If the orientation within a range are not uniform, then null will be returned.
              *
@@ -41927,7 +41949,7 @@ export declare namespace Excel {
             useStandardHeight?: boolean;
             /**
              *
-             * Indicates whether the column width of the Range object equals the standard width of the sheet.
+             * Specifies if the column width of the Range object equals the standard width of the sheet.
                         Returns True if the column width of the Range object equals the standard width of the sheet.
                         Returns Null if the range contains more than one column and the columns aren't all the same height.
                         Returns False otherwise.
@@ -41944,7 +41966,7 @@ export declare namespace Excel {
             verticalAlignment?: boolean;
             /**
              *
-             * Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
+             * Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -41963,14 +41985,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
+             * Specifies if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
              *
              * [Api set: ExcelApi 1.2]
              */
             formulaHidden?: boolean;
             /**
              *
-             * Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.
+             * Specifies if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -41989,14 +42011,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * HTML color code representing the color of the background, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
+             * HTML color code representing the color of the background, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange")
              *
              * [Api set: ExcelApi 1.1]
              */
             color?: boolean;
             /**
              *
-             * Gets or sets the pattern of a Range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are not supported.
+             * The pattern of a range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are not supported.
                         A null value indicates that the entire range doesn't have uniform pattern setting.
              *
              * [Api set: ExcelApi 1.9]
@@ -42004,15 +42026,14 @@ export declare namespace Excel {
             pattern?: boolean;
             /**
              *
-             * Sets HTML color code representing the color of the Range pattern, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-                        Gets HTML color code representing the color of the Range pattern, of the form #RRGGBB (e.g. "FFA500").
+             * The HTML color code representing the color of the range pattern, of the form #RRGGBB (e.g., "FFA500").
              *
              * [Api set: ExcelApi 1.9]
              */
             patternColor?: boolean;
             /**
              *
-             * Returns or sets a double that lightens or darkens a pattern color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+             * Specifies a double that lightens or darkens a pattern color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
                         If the pattern tintAndShades are not uniform, null will be returned.
              *
              * [Api set: ExcelApi 1.9]
@@ -42020,7 +42041,7 @@ export declare namespace Excel {
             patternTintAndShade?: boolean;
             /**
              *
-             * Returns or sets a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+             * Specifies a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
                         If the tintAndShades are not uniform, null will be returned.
              *
              * [Api set: ExcelApi 1.9]
@@ -42040,14 +42061,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.1]
              */
             color?: boolean;
             /**
              *
-             * Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
+             * Constant value that indicates the specific side of the border. See Excel.BorderIndex for details.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -42061,7 +42082,7 @@ export declare namespace Excel {
             style?: boolean;
             /**
              *
-             * Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+             * Specifies a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
                         A null value indicates that the border doesn't have uniform tintAndShade setting.
              *
              * [Api set: ExcelApi 1.9]
@@ -42088,14 +42109,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * For EACH ITEM in the collection: HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.1]
              */
             color?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
+             * For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See Excel.BorderIndex for details.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -42109,7 +42130,7 @@ export declare namespace Excel {
             style?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+             * For EACH ITEM in the collection: Specifies a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
                         A null value indicates that the border doesn't have uniform tintAndShade setting.
              *
              * [Api set: ExcelApi 1.9]
@@ -42143,21 +42164,21 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
              *
              * [Api set: ExcelApi 1.1]
              */
             color?: boolean;
             /**
              *
-             * Represents the italic status of the font.
+             * Specifies the italic status of the font.
              *
              * [Api set: ExcelApi 1.1]
              */
             italic?: boolean;
             /**
              *
-             * Font name (e.g. "Calibri")
+             * Font name (e.g., "Calibri")
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -42171,14 +42192,14 @@ export declare namespace Excel {
             size?: boolean;
             /**
              *
-             * Represents the strikethrough status of font. A null value indicates that the entire range doesn't have uniform Strikethrough setting.
+             * Specifies the strikethrough status of font. A null value indicates that the entire range doesn't have uniform Strikethrough setting.
              *
              * [Api set: ExcelApi 1.9]
              */
             strikethrough?: boolean;
             /**
              *
-             * Represents the Subscript status of font.
+             * Specifies the Subscript status of font.
                         Returns True if all the fonts of the range are Subscript.
                         Returns False if all the fonts of the range are Superscript or normal (neither Superscript, nor Subscript).
                         Returns Null otherwise.
@@ -42188,7 +42209,7 @@ export declare namespace Excel {
             subscript?: boolean;
             /**
              *
-             * Represents the Superscript status of font.
+             * Specifies the Superscript status of font.
                         Returns True if all the fonts of the range are Superscript.
                         Returns False if all the fonts of the range are Subscript or normal (neither Superscript, nor Subscript).
                         Returns Null otherwise.
@@ -42198,7 +42219,7 @@ export declare namespace Excel {
             superscript?: boolean;
             /**
              *
-             * Returns or sets a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+             * Specifies a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
                         A null value indicates that the entire range doesn't have uniform font tintAndShade setting.
              *
              * [Api set: ExcelApi 1.9]
@@ -42274,7 +42295,7 @@ export declare namespace Excel {
             series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
+            * For EACH ITEM in the collection: Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -42288,7 +42309,7 @@ export declare namespace Excel {
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets a ChartCategoryLabelLevel enumeration constant referring to
+             * For EACH ITEM in the collection: Specifies a ChartCategoryLabelLevel enumeration constant referring to
                         the level of where the category labels are being sourced from. Read/Write.
              *
              * [Api set: ExcelApi 1.8]
@@ -42296,28 +42317,28 @@ export declare namespace Excel {
             categoryLabelLevel?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the type of the chart. See Excel.ChartType for details.
+             * For EACH ITEM in the collection: Specifies the type of the chart. See Excel.ChartType for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             chartType?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the way that blank cells are plotted on a chart. Read/Write.
+             * For EACH ITEM in the collection: Specifies the way that blank cells are plotted on a chart.
              *
              * [Api set: ExcelApi 1.8]
              */
             displayBlanksAs?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the height, in points, of the chart object.
+             * For EACH ITEM in the collection: Specifies the height, in points, of the chart object.
              *
              * [Api set: ExcelApi 1.1]
              */
             height?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: The unique id of chart. Read-only.
+             * For EACH ITEM in the collection: The unique id of chart.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -42331,43 +42352,43 @@ export declare namespace Excel {
             left?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the name of a chart object.
+             * For EACH ITEM in the collection: Specifies the name of a chart object.
              *
              * [Api set: ExcelApi 1.1]
              */
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the way columns or rows are used as data series on the chart. Read/Write.
+             * For EACH ITEM in the collection: Specifies the way columns or rows are used as data series on the chart.
              *
              * [Api set: ExcelApi 1.8]
              */
             plotBy?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: True if only visible cells are plotted. False if both visible and hidden cells are plotted. Read/Write.
+             * For EACH ITEM in the collection: True if only visible cells are plotted. False if both visible and hidden cells are plotted.
              *
              * [Api set: ExcelApi 1.8]
              */
             plotVisibleOnly?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets a ChartSeriesNameLevel enumeration constant referring to
-                        the level of where the series names are being sourced from. Read/Write.
+             * For EACH ITEM in the collection: Specifies a ChartSeriesNameLevel enumeration constant referring to
+                        the level of where the series names are being sourced from.
              *
              * [Api set: ExcelApi 1.8]
              */
             seriesNameLevel?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents whether to display all field buttons on a PivotChart.
+             * For EACH ITEM in the collection: Specifies whether to display all field buttons on a PivotChart.
              *
              * [Api set: ExcelApi 1.7]
              */
             showAllFieldButtons?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents whether to show the data labels when the value is greater than the maximum value on the value axis.
+             * For EACH ITEM in the collection: Specifies whether to show the data labels when the value is greater than the maximum value on the value axis.
                         If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
                         This property applies to 2-D charts only.
              *
@@ -42376,21 +42397,21 @@ export declare namespace Excel {
             showDataLabelsOverMaximum?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the chart style for the chart. Read/Write.
+             * For EACH ITEM in the collection: Specifies the chart style for the chart.
              *
              * [Api set: ExcelApi 1.8]
              */
             style?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
+             * For EACH ITEM in the collection: Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
              *
              * [Api set: ExcelApi 1.1]
              */
             top?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the width, in points, of the chart object.
+             * For EACH ITEM in the collection: Specifies the width, in points, of the chart object.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -42459,7 +42480,7 @@ export declare namespace Excel {
             series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;
             /**
             *
-            * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
+            * Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -42473,7 +42494,7 @@ export declare namespace Excel {
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
              *
-             * Returns or sets a ChartCategoryLabelLevel enumeration constant referring to
+             * Specifies a ChartCategoryLabelLevel enumeration constant referring to
                         the level of where the category labels are being sourced from. Read/Write.
              *
              * [Api set: ExcelApi 1.8]
@@ -42481,28 +42502,28 @@ export declare namespace Excel {
             categoryLabelLevel?: boolean;
             /**
              *
-             * Represents the type of the chart. See Excel.ChartType for details.
+             * Specifies the type of the chart. See Excel.ChartType for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             chartType?: boolean;
             /**
              *
-             * Returns or sets the way that blank cells are plotted on a chart. Read/Write.
+             * Specifies the way that blank cells are plotted on a chart.
              *
              * [Api set: ExcelApi 1.8]
              */
             displayBlanksAs?: boolean;
             /**
              *
-             * Represents the height, in points, of the chart object.
+             * Specifies the height, in points, of the chart object.
              *
              * [Api set: ExcelApi 1.1]
              */
             height?: boolean;
             /**
              *
-             * The unique id of chart. Read-only.
+             * The unique id of chart.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -42516,43 +42537,43 @@ export declare namespace Excel {
             left?: boolean;
             /**
              *
-             * Represents the name of a chart object.
+             * Specifies the name of a chart object.
              *
              * [Api set: ExcelApi 1.1]
              */
             name?: boolean;
             /**
              *
-             * Returns or sets the way columns or rows are used as data series on the chart. Read/Write.
+             * Specifies the way columns or rows are used as data series on the chart.
              *
              * [Api set: ExcelApi 1.8]
              */
             plotBy?: boolean;
             /**
              *
-             * True if only visible cells are plotted. False if both visible and hidden cells are plotted. Read/Write.
+             * True if only visible cells are plotted. False if both visible and hidden cells are plotted.
              *
              * [Api set: ExcelApi 1.8]
              */
             plotVisibleOnly?: boolean;
             /**
              *
-             * Returns or sets a ChartSeriesNameLevel enumeration constant referring to
-                        the level of where the series names are being sourced from. Read/Write.
+             * Specifies a ChartSeriesNameLevel enumeration constant referring to
+                        the level of where the series names are being sourced from.
              *
              * [Api set: ExcelApi 1.8]
              */
             seriesNameLevel?: boolean;
             /**
              *
-             * Represents whether to display all field buttons on a PivotChart.
+             * Specifies whether to display all field buttons on a PivotChart.
              *
              * [Api set: ExcelApi 1.7]
              */
             showAllFieldButtons?: boolean;
             /**
              *
-             * Represents whether to show the data labels when the value is greater than the maximum value on the value axis.
+             * Specifies whether to show the data labels when the value is greater than the maximum value on the value axis.
                         If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
                         This property applies to 2-D charts only.
              *
@@ -42561,21 +42582,21 @@ export declare namespace Excel {
             showDataLabelsOverMaximum?: boolean;
             /**
              *
-             * Returns or sets the chart style for the chart. Read/Write.
+             * Specifies the chart style for the chart.
              *
              * [Api set: ExcelApi 1.8]
              */
             style?: boolean;
             /**
              *
-             * Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
+             * Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
              *
              * [Api set: ExcelApi 1.1]
              */
             top?: boolean;
             /**
              *
-             * Represents the width, in points, of the chart object.
+             * Specifies the width, in points, of the chart object.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -42594,28 +42615,28 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Specifies whether or not to display the axis field buttons on a PivotChart. The ShowAxisFieldButtons property corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab, which is available when a PivotChart is selected.
+             * Specifies whether to display the axis field buttons on a PivotChart. The ShowAxisFieldButtons property corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab, which is available when a PivotChart is selected.
              *
              * [Api set: ExcelApi 1.9]
              */
             showAxisFieldButtons?: boolean;
             /**
              *
-             * Specifies whether or not to display the legend field buttons on a PivotChart.
+             * Specifies whether to display the legend field buttons on a PivotChart.
              *
              * [Api set: ExcelApi 1.9]
              */
             showLegendFieldButtons?: boolean;
             /**
              *
-             * Specifies whether or not to display the report filter field buttons on a PivotChart.
+             * Specifies whether to display the report filter field buttons on a PivotChart.
              *
              * [Api set: ExcelApi 1.9]
              */
             showReportFilterFieldButtons?: boolean;
             /**
              *
-             * Specifies whether or not to display the show value field buttons on a PivotChart.
+             * Specifies whether to display the show value field buttons on a PivotChart.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -42648,14 +42669,14 @@ export declare namespace Excel {
             font?: Excel.Interfaces.ChartFontLoadOptions;
             /**
              *
-             * Returns or sets color scheme of the chart. Read/Write.
+             * Specifies the color scheme of the chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             colorScheme?: boolean;
             /**
              *
-             * Specifies whether or not chart area of the chart has rounded corners. Read/Write.
+             * Specifies if the chart area of the chart has rounded corners.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -42709,7 +42730,7 @@ export declare namespace Excel {
             mapOptions?: Excel.Interfaces.ChartMapOptionsLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Represents a collection of all points in the series.
+            * For EACH ITEM in the collection: Returns a collection of all points in the series.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -42730,14 +42751,14 @@ export declare namespace Excel {
             yErrorBars?: Excel.Interfaces.ChartErrorBarsLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the group for the specified series. Read/Write
+             * For EACH ITEM in the collection: Specifies the group for the specified series.
              *
              * [Api set: ExcelApi 1.8]
              */
             axisGroup?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property only applies to bubble charts. Read/Write.
+             * For EACH ITEM in the collection: This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property only applies to bubble charts.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -42759,21 +42780,21 @@ export declare namespace Excel {
             doughnutHoleSize?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie). Read/Write.
+             * For EACH ITEM in the collection: Specifies the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie).
              *
              * [Api set: ExcelApi 1.8]
              */
             explosion?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Boolean value representing if the series is filtered or not. Not applicable for surface charts.
+             * For EACH ITEM in the collection: Specifies if the series is filtered. Not applicable for surface charts.
              *
              * [Api set: ExcelApi 1.7]
              */
             filtered?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
+             * For EACH ITEM in the collection: Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -42788,203 +42809,203 @@ export declare namespace Excel {
             gapWidth?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the color for maximum value of a region map chart series. Read/Write.
+             * For EACH ITEM in the collection: Specifies the color for maximum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMaximumColor?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the type for maximum value of a region map chart series. Read/Write.
+             * For EACH ITEM in the collection: Specifies the type for maximum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMaximumType?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the maximum value of a region map chart series. Read/Write.
+             * For EACH ITEM in the collection: Specifies the maximum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMaximumValue?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the color for midpoint value of a region map chart series. Read/Write.
+             * For EACH ITEM in the collection: Specifies the color for midpoint value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMidpointColor?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the type for midpoint value of a region map chart series. Read/Write.
+             * For EACH ITEM in the collection: Specifies the type for midpoint value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMidpointType?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the midpoint value of a region map chart series. Read/Write.
+             * For EACH ITEM in the collection: Specifies the midpoint value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMidpointValue?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the color for minimum value of a region map chart series. Read/Write.
+             * For EACH ITEM in the collection: Specifies the color for minimum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMinimumColor?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the type for minimum value of a region map chart series. Read/Write.
+             * For EACH ITEM in the collection: Specifies the type for minimum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMinimumType?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the minimum value of a region map chart series. Read/Write.
+             * For EACH ITEM in the collection: Specifies the minimum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMinimumValue?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets series gradient style of a region map chart. Read/Write.
+             * For EACH ITEM in the collection: Specifies the series gradient style of a region map chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientStyle?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Boolean value representing if the series has data labels or not.
+             * For EACH ITEM in the collection: Specifies if the series has data labels.
              *
              * [Api set: ExcelApi 1.7]
              */
             hasDataLabels?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the fill color for negative data points in a series. Read/Write.
+             * For EACH ITEM in the collection: Specifies the fill color for negative data points in a series.
              *
              * [Api set: ExcelApi 1.9]
              */
             invertColor?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: True if Microsoft Excel inverts the pattern in the item when it corresponds to a negative number. Read/Write.
+             * For EACH ITEM in the collection: True if Excel inverts the pattern in the item when it corresponds to a negative number.
              *
              * [Api set: ExcelApi 1.8]
              */
             invertIfNegative?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents markers background color of a chart series.
+             * For EACH ITEM in the collection: Specifies the markers background color of a chart series.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerBackgroundColor?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents markers foreground color of a chart series.
+             * For EACH ITEM in the collection: Specifies the markers foreground color of a chart series.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerForegroundColor?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents marker size of a chart series.
+             * For EACH ITEM in the collection: Specifies the marker size of a chart series.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerSize?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
+             * For EACH ITEM in the collection: Specifies the marker style of a chart series. See Excel.ChartMarkerStyle for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerStyle?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the name of a series in a chart.
+             * For EACH ITEM in the collection: Specifies the name of a series in a chart.
              *
              * [Api set: ExcelApi 1.1]
              */
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write.
+             * For EACH ITEM in the collection: Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
              *
              * [Api set: ExcelApi 1.8]
              */
             overlap?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the series parent label strategy area for a treemap chart. Read/Write.
+             * For EACH ITEM in the collection: Specifies the series parent label strategy area for a treemap chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             parentLabelStrategy?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the plot order of a chart series within the chart group.
+             * For EACH ITEM in the collection: Specifies the plot order of a chart series within the chart group.
              *
              * [Api set: ExcelApi 1.7]
              */
             plotOrder?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write.
+             * For EACH ITEM in the collection: Specifies the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
              *
              * [Api set: ExcelApi 1.8]
              */
             secondPlotSize?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies whether or not connector lines are shown in waterfall charts. Read/Write.
+             * For EACH ITEM in the collection: Specifies whether connector lines are shown in waterfall charts.
              *
              * [Api set: ExcelApi 1.9]
              */
             showConnectorLines?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies whether or not leader lines are displayed for each data label in the series. Read/Write.
+             * For EACH ITEM in the collection: Specifies whether leader lines are displayed for each data label in the series.
              *
              * [Api set: ExcelApi 1.9]
              */
             showLeaderLines?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Boolean value representing if the series has a shadow or not.
+             * For EACH ITEM in the collection: Specifies if the series has a shadow.
              *
              * [Api set: ExcelApi 1.7]
              */
             showShadow?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
+             * For EACH ITEM in the collection: Specifies if the series is smooth. Only applicable to line and scatter charts.
              *
              * [Api set: ExcelApi 1.7]
              */
             smooth?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the way the two sections of either a pie of pie chart or a bar of pie chart are split. Read/Write.
+             * For EACH ITEM in the collection: Specifies the way the two sections of either a pie of pie chart or a bar of pie chart are split.
              *
              * [Api set: ExcelApi 1.8]
              */
             splitType?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie chart. Read/Write.
+             * For EACH ITEM in the collection: Specifies the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             splitValue?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one series. Read/Write.
+             * For EACH ITEM in the collection: True if Excel assigns a different color or pattern to each data marker. The chart must contain only one series.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -43038,7 +43059,7 @@ export declare namespace Excel {
             mapOptions?: Excel.Interfaces.ChartMapOptionsLoadOptions;
             /**
             *
-            * Represents a collection of all points in the series.
+            * Returns a collection of all points in the series.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -43059,14 +43080,14 @@ export declare namespace Excel {
             yErrorBars?: Excel.Interfaces.ChartErrorBarsLoadOptions;
             /**
              *
-             * Returns or sets the group for the specified series. Read/Write
+             * Specifies the group for the specified series.
              *
              * [Api set: ExcelApi 1.8]
              */
             axisGroup?: boolean;
             /**
              *
-             * This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property only applies to bubble charts. Read/Write.
+             * This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property only applies to bubble charts.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -43088,21 +43109,21 @@ export declare namespace Excel {
             doughnutHoleSize?: boolean;
             /**
              *
-             * Returns or sets the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie). Read/Write.
+             * Specifies the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie).
              *
              * [Api set: ExcelApi 1.8]
              */
             explosion?: boolean;
             /**
              *
-             * Boolean value representing if the series is filtered or not. Not applicable for surface charts.
+             * Specifies if the series is filtered. Not applicable for surface charts.
              *
              * [Api set: ExcelApi 1.7]
              */
             filtered?: boolean;
             /**
              *
-             * Returns or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
+             * Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -43117,203 +43138,203 @@ export declare namespace Excel {
             gapWidth?: boolean;
             /**
              *
-             * Returns or sets the color for maximum value of a region map chart series. Read/Write.
+             * Specifies the color for maximum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMaximumColor?: boolean;
             /**
              *
-             * Returns or sets the type for maximum value of a region map chart series. Read/Write.
+             * Specifies the type for maximum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMaximumType?: boolean;
             /**
              *
-             * Returns or sets the maximum value of a region map chart series. Read/Write.
+             * Specifies the maximum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMaximumValue?: boolean;
             /**
              *
-             * Returns or sets the color for midpoint value of a region map chart series. Read/Write.
+             * Specifies the color for midpoint value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMidpointColor?: boolean;
             /**
              *
-             * Returns or sets the type for midpoint value of a region map chart series. Read/Write.
+             * Specifies the type for midpoint value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMidpointType?: boolean;
             /**
              *
-             * Returns or sets the midpoint value of a region map chart series. Read/Write.
+             * Specifies the midpoint value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMidpointValue?: boolean;
             /**
              *
-             * Returns or sets the color for minimum value of a region map chart series. Read/Write.
+             * Specifies the color for minimum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMinimumColor?: boolean;
             /**
              *
-             * Returns or sets the type for minimum value of a region map chart series. Read/Write.
+             * Specifies the type for minimum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMinimumType?: boolean;
             /**
              *
-             * Returns or sets the minimum value of a region map chart series. Read/Write.
+             * Specifies the minimum value of a region map chart series.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientMinimumValue?: boolean;
             /**
              *
-             * Returns or sets series gradient style of a region map chart. Read/Write.
+             * Specifies the series gradient style of a region map chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             gradientStyle?: boolean;
             /**
              *
-             * Boolean value representing if the series has data labels or not.
+             * Specifies if the series has data labels.
              *
              * [Api set: ExcelApi 1.7]
              */
             hasDataLabels?: boolean;
             /**
              *
-             * Returns or sets the fill color for negative data points in a series. Read/Write.
+             * Specifies the fill color for negative data points in a series.
              *
              * [Api set: ExcelApi 1.9]
              */
             invertColor?: boolean;
             /**
              *
-             * True if Microsoft Excel inverts the pattern in the item when it corresponds to a negative number. Read/Write.
+             * True if Excel inverts the pattern in the item when it corresponds to a negative number.
              *
              * [Api set: ExcelApi 1.8]
              */
             invertIfNegative?: boolean;
             /**
              *
-             * Represents markers background color of a chart series.
+             * Specifies the markers background color of a chart series.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerBackgroundColor?: boolean;
             /**
              *
-             * Represents markers foreground color of a chart series.
+             * Specifies the markers foreground color of a chart series.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerForegroundColor?: boolean;
             /**
              *
-             * Represents marker size of a chart series.
+             * Specifies the marker size of a chart series.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerSize?: boolean;
             /**
              *
-             * Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
+             * Specifies the marker style of a chart series. See Excel.ChartMarkerStyle for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerStyle?: boolean;
             /**
              *
-             * Represents the name of a series in a chart.
+             * Specifies the name of a series in a chart.
              *
              * [Api set: ExcelApi 1.1]
              */
             name?: boolean;
             /**
              *
-             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write.
+             * Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts.
              *
              * [Api set: ExcelApi 1.8]
              */
             overlap?: boolean;
             /**
              *
-             * Returns or sets the series parent label strategy area for a treemap chart. Read/Write.
+             * Specifies the series parent label strategy area for a treemap chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             parentLabelStrategy?: boolean;
             /**
              *
-             * Represents the plot order of a chart series within the chart group.
+             * Specifies the plot order of a chart series within the chart group.
              *
              * [Api set: ExcelApi 1.7]
              */
             plotOrder?: boolean;
             /**
              *
-             * Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write.
+             * Specifies the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
              *
              * [Api set: ExcelApi 1.8]
              */
             secondPlotSize?: boolean;
             /**
              *
-             * Specifies whether or not connector lines are shown in waterfall charts. Read/Write.
+             * Specifies whether connector lines are shown in waterfall charts.
              *
              * [Api set: ExcelApi 1.9]
              */
             showConnectorLines?: boolean;
             /**
              *
-             * Specifies whether or not leader lines are displayed for each data label in the series. Read/Write.
+             * Specifies whether leader lines are displayed for each data label in the series.
              *
              * [Api set: ExcelApi 1.9]
              */
             showLeaderLines?: boolean;
             /**
              *
-             * Boolean value representing if the series has a shadow or not.
+             * Specifies if the series has a shadow.
              *
              * [Api set: ExcelApi 1.7]
              */
             showShadow?: boolean;
             /**
              *
-             * Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
+             * Specifies if the series is smooth. Only applicable to line and scatter charts.
              *
              * [Api set: ExcelApi 1.7]
              */
             smooth?: boolean;
             /**
              *
-             * Returns or sets the way the two sections of either a pie of pie chart or a bar of pie chart are split. Read/Write.
+             * Specifies the way the two sections of either a pie of pie chart or a bar of pie chart are split.
              *
              * [Api set: ExcelApi 1.8]
              */
             splitType?: boolean;
             /**
              *
-             * Returns or sets the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie chart. Read/Write.
+             * Specifies the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             splitValue?: boolean;
             /**
              *
-             * True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one series. Read/Write.
+             * True if Excel assigns a different color or pattern to each data marker. The chart must contain only one series.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -43372,14 +43393,14 @@ export declare namespace Excel {
             hasDataLabel?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: HTML color code representation of the marker background color of data point. E.g. #FF0000 represents Red.
+             * For EACH ITEM in the collection: HTML color code representation of the marker background color of data point. e.g., #FF0000 represents Red.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerBackgroundColor?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: HTML color code representation of the marker foreground color of data point. E.g. #FF0000 represents Red.
+             * For EACH ITEM in the collection: HTML color code representation of the marker foreground color of data point. e.g., #FF0000 represents Red.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -43400,7 +43421,7 @@ export declare namespace Excel {
             markerStyle?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the value of a chart point. Read-only.
+             * For EACH ITEM in the collection: Returns the value of a chart point.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -43440,14 +43461,14 @@ export declare namespace Excel {
             hasDataLabel?: boolean;
             /**
              *
-             * HTML color code representation of the marker background color of data point. E.g. #FF0000 represents Red.
+             * HTML color code representation of the marker background color of data point. e.g., #FF0000 represents Red.
              *
              * [Api set: ExcelApi 1.7]
              */
             markerBackgroundColor?: boolean;
             /**
              *
-             * HTML color code representation of the marker foreground color of data point. E.g. #FF0000 represents Red.
+             * HTML color code representation of the marker foreground color of data point. e.g., #FF0000 represents Red.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -43468,7 +43489,7 @@ export declare namespace Excel {
             markerStyle?: boolean;
             /**
              *
-             * Returns the value of a chart point. Read-only.
+             * Returns the value of a chart point.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -43567,49 +43588,49 @@ export declare namespace Excel {
             title?: Excel.Interfaces.ChartAxisTitleLoadOptions;
             /**
              *
-             * Represents the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail.
+             * Specifies the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail.
              *
              * [Api set: ExcelApi 1.8]
              */
             alignment?: boolean;
             /**
              *
-             * Represents the group for the specified axis. See Excel.ChartAxisGroup for details. Read-only.
+             * Specifies the group for the specified axis. See Excel.ChartAxisGroup for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             axisGroup?: boolean;
             /**
              *
-             * Returns or sets the base unit for the specified category axis.
+             * Specifies the base unit for the specified category axis.
              *
              * [Api set: ExcelApi 1.7]
              */
             baseTimeUnit?: boolean;
             /**
              *
-             * Returns or sets the category axis type.
+             * Specifies the category axis type.
              *
              * [Api set: ExcelApi 1.7]
              */
             categoryType?: boolean;
             /**
              * [DEPRECATED; kept for back-compat with existing first-party solutions]. Please use `Position` instead.
-             * Represents the specified axis where the other axis crosses. See Excel.ChartAxisPosition for details.
+             * Specifies the specified axis where the other axis crosses. See Excel.ChartAxisPosition for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             crosses?: boolean;
             /**
              * [DEPRECATED; kept for back-compat with existing first-party solutions]. Please use `PositionAt` instead.
-             * Represents the specified axis where the other axis crosses at. Read Only. Set to this property should use SetCrossesAt(double) method.
+             * Specifies the specified axis where the other axis crosses at. Set to this property should use SetCrossesAt(double) method.
              *
              * [Api set: ExcelApi 1.7]
              */
             crossesAt?: boolean;
             /**
              *
-             * Represents the custom axis display unit value. Read-only. To set this property, please use the SetCustomDisplayUnit(double) method.
+             * Specifies the custom axis display unit value. To set this property, please use the SetCustomDisplayUnit(double) method.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -43623,49 +43644,49 @@ export declare namespace Excel {
             displayUnit?: boolean;
             /**
              *
-             * Represents the height, in points, of the chart axis. Null if the axis is not visible. Read-only.
+             * Specifies the height, in points, of the chart axis. Null if the axis is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             height?: boolean;
             /**
              *
-             * Represents whether value axis crosses the category axis between categories.
+             * Specifies if the value axis crosses the category axis between categories.
              *
              * [Api set: ExcelApi 1.8]
              */
             isBetweenCategories?: boolean;
             /**
              *
-             * Represents the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis is not visible. Read-only.
+             * Specifies the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             left?: boolean;
             /**
              *
-             * Represents whether or not the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells.
+             * Specifies if the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells.
              *
              * [Api set: ExcelApi 1.9]
              */
             linkNumberFormat?: boolean;
             /**
              *
-             * Represents the base of the logarithm when using logarithmic scales.
+             * Specifies the base of the logarithm when using logarithmic scales.
              *
              * [Api set: ExcelApi 1.7]
              */
             logBase?: boolean;
             /**
              *
-             * Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+             * Specifies the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             majorTickMark?: boolean;
             /**
              *
-             * Returns or sets the major unit scale value for the category axis when the CategoryType property is set to TimeScale.
+             * Specifies the major unit scale value for the category axis when the CategoryType property is set to TimeScale.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -43693,14 +43714,14 @@ export declare namespace Excel {
             minimum?: boolean;
             /**
              *
-             * Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+             * Specifies the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             minorTickMark?: boolean;
             /**
              *
-             * Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.
+             * Specifies the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -43714,112 +43735,112 @@ export declare namespace Excel {
             minorUnit?: boolean;
             /**
              *
-             * Represents whether an axis is multilevel or not.
+             * Specifies if an axis is multilevel.
              *
              * [Api set: ExcelApi 1.8]
              */
             multiLevel?: boolean;
             /**
              *
-             * Represents the format code for the axis tick label.
+             * Specifies the format code for the axis tick label.
              *
              * [Api set: ExcelApi 1.8]
              */
             numberFormat?: boolean;
             /**
              *
-             * Represents the distance between the levels of labels, and the distance between the first level and the axis line. The value should be an integer from 0 to 1000.
+             * Specifies the distance between the levels of labels, and the distance between the first level and the axis line. The value should be an integer from 0 to 1000.
              *
              * [Api set: ExcelApi 1.8]
              */
             offset?: boolean;
             /**
              *
-             * Represents the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details.
+             * Specifies the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details.
              *
              * [Api set: ExcelApi 1.8]
              */
             position?: boolean;
             /**
              *
-             * Represents the specified axis position where the other axis crosses at. You should use the SetPositionAt(double) method to set this property.
+             * Specifies the specified axis position where the other axis crosses at. You should use the SetPositionAt(double) method to set this property.
              *
              * [Api set: ExcelApi 1.8]
              */
             positionAt?: boolean;
             /**
              *
-             * Represents whether Microsoft Excel plots data points from last to first.
+             * Specifies if Excel plots data points from last to first.
              *
              * [Api set: ExcelApi 1.7]
              */
             reversePlotOrder?: boolean;
             /**
              *
-             * Represents the value axis scale type. See Excel.ChartAxisScaleType for details.
+             * Specifies the value axis scale type. See Excel.ChartAxisScaleType for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             scaleType?: boolean;
             /**
              *
-             * Represents whether the axis display unit label is visible.
+             * Specifies if the axis display unit label is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             showDisplayUnitLabel?: boolean;
             /**
              *
-             * Represents the angle to which the text is oriented for the chart axis tick label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+             * Specifies the angle to which the text is oriented for the chart axis tick label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
              *
              * [Api set: ExcelApi 1.8]
              */
             textOrientation?: boolean;
             /**
              *
-             * Represents the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for details.
+             * Specifies the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             tickLabelPosition?: boolean;
             /**
              *
-             * Represents the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an empty string for automatic setting. The returned value is always a number.
+             * Specifies the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an empty string for automatic setting. The returned value is always a number.
              *
              * [Api set: ExcelApi 1.7]
              */
             tickLabelSpacing?: boolean;
             /**
              *
-             * Represents the number of categories or series between tick marks.
+             * Specifies the number of categories or series between tick marks.
              *
              * [Api set: ExcelApi 1.7]
              */
             tickMarkSpacing?: boolean;
             /**
              *
-             * Represents the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis is not visible. Read-only.
+             * Specifies the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             top?: boolean;
             /**
              *
-             * Represents the axis type. See Excel.ChartAxisType for details.
+             * Specifies the axis type. See Excel.ChartAxisType for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             type?: boolean;
             /**
              *
-             * A boolean value represents the visibility of the axis.
+             * Specifies if the axis is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             visible?: boolean;
             /**
              *
-             * Represents the width, in points, of the chart axis. Null if the axis is not visible. Read-only.
+             * Specifies the width, in points, of the chart axis. Null if the axis is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -43838,14 +43859,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
             *
-            * Represents the font attributes (font name, font size, color, etc.) for a chart axis element.
+            * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
             *
             * [Api set: ExcelApi 1.1]
             */
             font?: Excel.Interfaces.ChartFontLoadOptions;
             /**
             *
-            * Represents chart line formatting.
+            * Specifies chart line formatting.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -43864,29 +43885,28 @@ export declare namespace Excel {
             $all?: boolean;
             /**
             *
-            * Represents the formatting of chart axis title.
+            * Specifies the formatting of chart axis title.
             *
             * [Api set: ExcelApi 1.1]
             */
             format?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions;
             /**
              *
-             * Represents the axis title.
+             * Specifies the axis title.
              *
              * [Api set: ExcelApi 1.1]
              */
             text?: boolean;
             /**
              *
-             * Represents the angle to which the text is oriented for the chart axis title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+             * Specifies the angle to which the text is oriented for the chart axis title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApiOnline 1.1]
              */
             textOrientation?: boolean;
             /**
              *
-             * A boolean that specifies the visibility of an axis title.
+             * Specifies if the axis title is visibile.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -43905,14 +43925,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
             *
-            * Represents the border format, which includes color, linestyle, and weight.
+            * Specifies the chart axis title's border format, which includes color, linestyle, and weight.
             *
             * [Api set: ExcelApi 1.8]
             */
             border?: Excel.Interfaces.ChartBorderLoadOptions;
             /**
             *
-            * Represents the font attributes, such as font name, font size, color, etc. of chart axis title object.
+            * Specifies the chart axis title's font attributes, such as font name, font size, color, etc. of chart axis title object.
             *
             * [Api set: ExcelApi 1.1]
             */
@@ -43931,21 +43951,21 @@ export declare namespace Excel {
             $all?: boolean;
             /**
             *
-            * Represents the format of chart data labels, which includes fill and font formatting.
+            * Specifies the format of chart data labels, which includes fill and font formatting.
             *
             * [Api set: ExcelApi 1.1]
             */
             format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;
             /**
              *
-             * Represents whether data labels automatically generate appropriate text based on context.
+             * Specifies if data labels automatically generate appropriate text based on context.
              *
              * [Api set: ExcelApi 1.8]
              */
             autoText?: boolean;
             /**
              *
-             * Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details.
+             * Specifies the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details.
                         This property is valid only when TextOrientation of data label is 0.
              *
              * [Api set: ExcelApi 1.8]
@@ -43953,14 +43973,14 @@ export declare namespace Excel {
             horizontalAlignment?: boolean;
             /**
              *
-             * Represents whether or not the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells
+             * Specifies if the number format is linked to the cells. If true, the number format will change in the labels when it changes in the cells
              *
              * [Api set: ExcelApi 1.9]
              */
             linkNumberFormat?: boolean;
             /**
              *
-             * Represents the format code for data labels.
+             * Specifies the format code for data labels.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -43981,42 +44001,42 @@ export declare namespace Excel {
             separator?: boolean;
             /**
              *
-             * Boolean value representing if the data label bubble size is visible or not.
+             * Specifies if the data label bubble size is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
             showBubbleSize?: boolean;
             /**
              *
-             * Boolean value representing if the data label category name is visible or not.
+             * Specifies if the data label category name is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
             showCategoryName?: boolean;
             /**
              *
-             * Boolean value representing if the data label legend key is visible or not.
+             * Specifies if the data label legend key is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
             showLegendKey?: boolean;
             /**
              *
-             * Boolean value representing if the data label percentage is visible or not.
+             * Specifies if the data label percentage is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
             showPercentage?: boolean;
             /**
              *
-             * Boolean value representing if the data label series name is visible or not.
+             * Specifies if the data label series name is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
             showSeriesName?: boolean;
             /**
              *
-             * Boolean value representing if the data label value is visible or not.
+             * Specifies if the data label value is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -44057,7 +44077,7 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;
             /**
              *
-             * Boolean value representing if data label automatically generates appropriate text based on context.
+             * Specifies if the data label automatically generates appropriate text based on context.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -44071,7 +44091,7 @@ export declare namespace Excel {
             formula?: boolean;
             /**
              *
-             * Returns the height, in points, of the chart data label. Read-only. Null if chart data label is not visible.
+             * Returns the height, in points, of the chart data label. Null if chart data label is not visible.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -44093,7 +44113,7 @@ export declare namespace Excel {
             left?: boolean;
             /**
              *
-             * Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+             * Specifies if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -44121,42 +44141,42 @@ export declare namespace Excel {
             separator?: boolean;
             /**
              *
-             * Boolean value representing if the data label bubble size is visible or not.
+             * Specifies if the data label bubble size is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             showBubbleSize?: boolean;
             /**
              *
-             * Boolean value representing if the data label category name is visible or not.
+             * Specifies if the data label category name is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             showCategoryName?: boolean;
             /**
              *
-             * Boolean value representing if the data label legend key is visible or not.
+             * Specifies if the data label legend key is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             showLegendKey?: boolean;
             /**
              *
-             * Boolean value representing if the data label percentage is visible or not.
+             * Specifies if the data label percentage is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             showPercentage?: boolean;
             /**
              *
-             * Boolean value representing if the data label series name is visible or not.
+             * Specifies if the data label series name is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             showSeriesName?: boolean;
             /**
              *
-             * Boolean value representing if the data label value is visible or not.
+             * Specifies if the data label value is visible.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -44192,7 +44212,7 @@ export declare namespace Excel {
             verticalAlignment?: boolean;
             /**
              *
-             * Returns the width, in points, of the chart data label. Read-only. Null if chart data label is not visible.
+             * Returns the width, in points, of the chart data label. Null if chart data label is not visible.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -44244,7 +44264,7 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ChartErrorBarsFormatLoadOptions;
             /**
              *
-             * Specifies whether or not the error bars have an end style cap.
+             * Specifies if error bars have an end style cap.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -44265,7 +44285,7 @@ export declare namespace Excel {
             type?: boolean;
             /**
              *
-             * Specifies whether or not the error bars are displayed.
+             * Specifies whether the error bars are displayed.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -44310,7 +44330,7 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ChartGridlinesFormatLoadOptions;
             /**
              *
-             * Boolean value representing if the axis gridlines are visible or not.
+             * Specifies if the axis gridlines are visible.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -44355,56 +44375,56 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ChartLegendFormatLoadOptions;
             /**
              *
-             * Represents the height, in points, of the legend on the chart. Null if legend is not visible.
+             * Specifies the height, in points, of the legend on the chart. Null if legend is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             height?: boolean;
             /**
              *
-             * Represents the left, in points, of a chart legend. Null if legend is not visible.
+             * Specifies the left, in points, of the legend on the chart. Null if legend is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             left?: boolean;
             /**
              *
-             * Boolean value for whether the chart legend should overlap with the main body of the chart.
+             * Specifies if the chart legend should overlap with the main body of the chart.
              *
              * [Api set: ExcelApi 1.1]
              */
             overlay?: boolean;
             /**
              *
-             * Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
+             * Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.
              *
              * [Api set: ExcelApi 1.1]
              */
             position?: boolean;
             /**
              *
-             * Represents if the legend has a shadow on the chart.
+             * Specifies if the legend has a shadow on the chart.
              *
              * [Api set: ExcelApi 1.7]
              */
             showShadow?: boolean;
             /**
              *
-             * Represents the top of a chart legend.
+             * Specifies the top of a chart legend.
              *
              * [Api set: ExcelApi 1.7]
              */
             top?: boolean;
             /**
              *
-             * A boolean value the represents the visibility of a ChartLegend object.
+             * Specifies if the ChartLegend is visible.
              *
              * [Api set: ExcelApi 1.1]
              */
             visible?: boolean;
             /**
              *
-             * Represents the width, in points, of the legend on the chart. Null if legend is not visible.
+             * Specifies the width, in points, of the legend on the chart. Null if legend is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -44423,28 +44443,28 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Represents the height of the legendEntry on the chart legend.
+             * Specifies the height of the legendEntry on the chart legend.
              *
              * [Api set: ExcelApi 1.8]
              */
             height?: boolean;
             /**
              *
-             * Represents the index of the legendEntry in the chart legend.
+             * Specifies the index of the legendEntry in the chart legend.
              *
              * [Api set: ExcelApi 1.8]
              */
             index?: boolean;
             /**
              *
-             * Represents the left of a chart legendEntry.
+             * Specifies the left of a chart legendEntry.
              *
              * [Api set: ExcelApi 1.8]
              */
             left?: boolean;
             /**
              *
-             * Represents the top of a chart legendEntry.
+             * Specifies the top of a chart legendEntry.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -44477,28 +44497,28 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the height of the legendEntry on the chart legend.
+             * For EACH ITEM in the collection: Specifies the height of the legendEntry on the chart legend.
              *
              * [Api set: ExcelApi 1.8]
              */
             height?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the index of the legendEntry in the chart legend.
+             * For EACH ITEM in the collection: Specifies the index of the legendEntry in the chart legend.
              *
              * [Api set: ExcelApi 1.8]
              */
             index?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the left of a chart legendEntry.
+             * For EACH ITEM in the collection: Specifies the left of a chart legendEntry.
              *
              * [Api set: ExcelApi 1.8]
              */
             left?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the top of a chart legendEntry.
+             * For EACH ITEM in the collection: Specifies the top of a chart legendEntry.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -44557,21 +44577,21 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Returns or sets the series map labels strategy of a region map chart. Read/Write.
+             * Specifies the series map labels strategy of a region map chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             labelStrategy?: boolean;
             /**
              *
-             * Returns or sets the series mapping level of a region map chart. Read/Write.
+             * Specifies the series mapping level of a region map chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             level?: boolean;
             /**
              *
-             * Returns or sets the series projection type of a region map chart. Read/Write.
+             * Specifies the series projection type of a region map chart.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -44597,28 +44617,28 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ChartTitleFormatLoadOptions;
             /**
              *
-             * Returns the height, in points, of the chart title. Null if chart title is not visible. Read-only.
+             * Returns the height, in points, of the chart title. Null if chart title is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             height?: boolean;
             /**
              *
-             * Represents the horizontal alignment for chart title.
+             * Specifies the horizontal alignment for chart title.
              *
              * [Api set: ExcelApi 1.7]
              */
             horizontalAlignment?: boolean;
             /**
              *
-             * Represents the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart title is not visible.
+             * Specifies the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart title is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             left?: boolean;
             /**
              *
-             * Boolean value representing if the chart title will overlay the chart or not.
+             * Specifies if the chart title will overlay the chart.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -44639,42 +44659,42 @@ export declare namespace Excel {
             showShadow?: boolean;
             /**
              *
-             * Represents the title text of a chart.
+             * Specifies the chart's title text.
              *
              * [Api set: ExcelApi 1.1]
              */
             text?: boolean;
             /**
              *
-             * Represents the angle to which the text is oriented for the chart title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+             * Specifies the angle to which the text is oriented for the chart title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
              *
              * [Api set: ExcelApi 1.7]
              */
             textOrientation?: boolean;
             /**
              *
-             * Represents the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title is not visible.
+             * Specifies the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
             top?: boolean;
             /**
              *
-             * Represents the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
+             * Specifies the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             verticalAlignment?: boolean;
             /**
              *
-             * A boolean value the represents the visibility of a chart title object.
+             * Specifies if the chart title is visibile.
              *
              * [Api set: ExcelApi 1.1]
              */
             visible?: boolean;
             /**
              *
-             * Returns the width, in points, of the chart title. Null if chart title is not visible. Read-only.
+             * Specifies the width, in points, of the chart title. Null if chart title is not visible.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -44771,49 +44791,49 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Specifies whether or not the bin overflow is enabled in a histogram chart or pareto chart. Read/Write.
+             * Specifies if bin overflow is enabled in a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             allowOverflow?: boolean;
             /**
              *
-             * Specifies whether or not the bin underflow is enabled in a histogram chart or pareto chart. Read/Write.
+             * Specifies if bin underflow is enabled in a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             allowUnderflow?: boolean;
             /**
              *
-             * Returns or sets the bin count of a histogram chart or pareto chart. Read/Write.
+             * Specifies the bin count of a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             count?: boolean;
             /**
              *
-             * Returns or sets the bin overflow value of a histogram chart or pareto chart. Read/Write.
+             * Specifies the bin overflow value of a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             overflowValue?: boolean;
             /**
              *
-             * Returns or sets the bin's type for a histogram chart or pareto chart. Read/Write.
+             * Specifies the bin's type for a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             type?: boolean;
             /**
              *
-             * Returns or sets the bin underflow value of a histogram chart or pareto chart. Read/Write.
+             * Specifies the bin underflow value of a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             underflowValue?: boolean;
             /**
              *
-             * Returns or sets the bin width value of a histogram chart or pareto chart. Read/Write.
+             * Specifies the bin width value of a histogram chart or pareto chart.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -44832,35 +44852,35 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Returns or sets the quartile calculation type of a box and whisker chart. Read/Write.
+             * Specifies if the quartile calculation type of a box and whisker chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             quartileCalculation?: boolean;
             /**
              *
-             * Specifies whether or not the inner points are shown in a box and whisker chart. Read/Write.
+             * Specifies if inner points are shown in a box and whisker chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             showInnerPoints?: boolean;
             /**
              *
-             * Specifies whether or not the mean line is shown in a box and whisker chart. Read/Write.
+             * Specifies if the mean line is shown in a box and whisker chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             showMeanLine?: boolean;
             /**
              *
-             * Specifies whether or not the mean marker is shown in a box and whisker chart. Read/Write.
+             * Specifies if the mean marker is shown in a box and whisker chart.
              *
              * [Api set: ExcelApi 1.9]
              */
             showMeanMarker?: boolean;
             /**
              *
-             * Specifies whether or not outlier points are shown in a box and whisker chart. Read/Write.
+             * Specifies if outlier points are shown in a box and whisker chart.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -44919,7 +44939,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -44933,14 +44953,14 @@ export declare namespace Excel {
             italic?: boolean;
             /**
              *
-             * Font name (e.g. "Calibri")
+             * Font name (e.g., "Calibri")
              *
              * [Api set: ExcelApi 1.1]
              */
             name?: boolean;
             /**
              *
-             * Size of the font (e.g. 11)
+             * Size of the font (e.g., 11)
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -45163,14 +45183,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
             *
-            * Represents the format of chart trendline label.
+            * The format of chart trendline label.
             *
             * [Api set: ExcelApi 1.8]
             */
             format?: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions;
             /**
              *
-             * Boolean value representing if trendline label automatically generates appropriate text based on context.
+             * Specifies if trendline label automatically generate appropriate text based on context.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -45184,7 +45204,7 @@ export declare namespace Excel {
             formula?: boolean;
             /**
              *
-             * Returns the height, in points, of the chart trendline label. Read-only. Null if chart trendline label is not visible.
+             * Returns the height, in points, of the chart trendline label. Null if chart trendline label is not visible.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -45206,7 +45226,7 @@ export declare namespace Excel {
             left?: boolean;
             /**
              *
-             * Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
+             * Specifies if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -45249,7 +45269,7 @@ export declare namespace Excel {
             verticalAlignment?: boolean;
             /**
              *
-             * Returns the width, in points, of the chart trendline label. Read-only. Null if chart trendline label is not visible.
+             * Returns the width, in points, of the chart trendline label. Null if chart trendline label is not visible.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -45268,14 +45288,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
             *
-            * Represents the border format, which includes color, linestyle, and weight.
+            * Specifies the border format, which includes color, linestyle, and weight.
             *
             * [Api set: ExcelApi 1.8]
             */
             border?: Excel.Interfaces.ChartBorderLoadOptions;
             /**
             *
-            * Represents the font attributes (font name, font size, color, etc.) for a chart trendline label.
+            * Specifies the font attributes (font name, font size, color, etc.) for a chart trendline label.
             *
             * [Api set: ExcelApi 1.8]
             */
@@ -45294,70 +45314,70 @@ export declare namespace Excel {
             $all?: boolean;
             /**
             *
-            * Represents the formatting of a chart plotArea.
+            * Specifies the formatting of a chart plotArea.
             *
             * [Api set: ExcelApi 1.8]
             */
             format?: Excel.Interfaces.ChartPlotAreaFormatLoadOptions;
             /**
              *
-             * Represents the height value of plotArea.
+             * Specifies the height value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             height?: boolean;
             /**
              *
-             * Represents the insideHeight value of plotArea.
+             * Specifies the insideHeight value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             insideHeight?: boolean;
             /**
              *
-             * Represents the insideLeft value of plotArea.
+             * Specifies the insideLeft value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             insideLeft?: boolean;
             /**
              *
-             * Represents the insideTop value of plotArea.
+             * Specifies the insideTop value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             insideTop?: boolean;
             /**
              *
-             * Represents the insideWidth value of plotArea.
+             * Specifies the insideWidth value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             insideWidth?: boolean;
             /**
              *
-             * Represents the left value of plotArea.
+             * Specifies the left value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             left?: boolean;
             /**
              *
-             * Represents the position of plotArea.
+             * Specifies the position of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             position?: boolean;
             /**
              *
-             * Represents the top value of plotArea.
+             * Specifies the top value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
             top?: boolean;
             /**
              *
-             * Represents the width value of plotArea.
+             * Specifies the width value of plotArea.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -45376,7 +45396,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
             *
-            * Represents the border attributes of a chart plotArea.
+            * Specifies the border attributes of a chart plotArea.
             *
             * [Api set: ExcelApi 1.8]
             */
@@ -45395,21 +45415,21 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Represents the current conditions used to last sort the table. Read-only.
+             * Specifies the current conditions used to last sort the table.
              *
              * [Api set: ExcelApi 1.2]
              */
             fields?: boolean;
             /**
              *
-             * Represents whether the casing impacted the last sort of the table. Read-only.
+             * Specifies if the casing impacts the last sort of the table.
              *
              * [Api set: ExcelApi 1.2]
              */
             matchCase?: boolean;
             /**
              *
-             * Represents Chinese character ordering method last used to sort the table. Read-only.
+             * Represents Chinese character ordering method last used to sort the table.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -45428,7 +45448,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * The currently applied filter on the given column. Read-only.
+             * The currently applied filter on the given column.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -45448,21 +45468,21 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * An array that holds all the filter criteria in the autofiltered range. Read-Only.
+             * An array that holds all the filter criteria in the autofiltered range.
              *
              * [Api set: ExcelApi 1.9]
              */
             criteria?: boolean;
             /**
              *
-             * Indicates if the AutoFilter is enabled or not. Read-Only.
+             * Specifies if the AutoFilter is enabled.
              *
              * [Api set: ExcelApi 1.9]
              */
             enabled?: boolean;
             /**
              *
-             * Indicates if the AutoFilter has filter criteria. Read-Only.
+             * Specifies if the AutoFilter has filter criteria.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -45472,8 +45492,7 @@ export declare namespace Excel {
          *
          * Provides information based on current system culture settings. This includes the culture names, number formatting, and other culturally dependent settings.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.11]
          */
         export interface CultureInfoLoadOptions {
             /**
@@ -45492,16 +45511,14 @@ export declare namespace Excel {
             *
             * Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
             *
-            * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: ExcelApi 1.11]
             */
             numberFormat?: Excel.Interfaces.NumberFormatInfoLoadOptions;
             /**
              *
-             * Gets the culture name in the format languagecode2-country/regioncode2 (e.g. "zh-cn" or "en-us"). This is based on current system settings.
+             * Gets the culture name in the format languagecode2-country/regioncode2 (e.g., "zh-cn" or "en-us"). This is based on current system settings.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.11]
              */
             name?: boolean;
         }
@@ -45509,8 +45526,7 @@ export declare namespace Excel {
          *
          * Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApi 1.11]
          */
         export interface NumberFormatInfoLoadOptions {
             /**
@@ -45521,16 +45537,14 @@ export declare namespace Excel {
              *
              * Gets the string used as the decimal separator for numeric values. This is based on current system settings.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.11]
              */
             numberDecimalSeparator?: boolean;
             /**
              *
              * Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on current system settings.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.11]
              */
             numberGroupSeparator?: boolean;
         }
@@ -45590,7 +45604,7 @@ export declare namespace Excel {
         /**
          *
          * A scoped collection of custom XML parts.
-                    A scoped collection is the result of some operation, e.g. filtering by namespace.
+                    A scoped collection is the result of some operation, e.g., filtering by namespace.
                     A scoped collection cannot be scoped any further.
          *
          * [Api set: ExcelApi 1.5]
@@ -45602,14 +45616,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: The custom XML part's ID. Read-only.
+             * For EACH ITEM in the collection: The custom XML part's ID.
              *
              * [Api set: ExcelApi 1.5]
              */
             id?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: The custom XML part's namespace URI. Read-only.
+             * For EACH ITEM in the collection: The custom XML part's namespace URI.
              *
              * [Api set: ExcelApi 1.5]
              */
@@ -45628,14 +45642,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: The custom XML part's ID. Read-only.
+             * For EACH ITEM in the collection: The custom XML part's ID.
              *
              * [Api set: ExcelApi 1.5]
              */
             id?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: The custom XML part's namespace URI. Read-only.
+             * For EACH ITEM in the collection: The custom XML part's namespace URI.
              *
              * [Api set: ExcelApi 1.5]
              */
@@ -45654,14 +45668,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * The custom XML part's ID. Read-only.
+             * The custom XML part's ID.
              *
              * [Api set: ExcelApi 1.5]
              */
             id?: boolean;
             /**
              *
-             * The custom XML part's namespace URI. Read-only.
+             * The custom XML part's namespace URI.
              *
              * [Api set: ExcelApi 1.5]
              */
@@ -45671,8 +45685,7 @@ export declare namespace Excel {
          *
          * Represents a scoped collection of PivotTables. The PivotTables are sorted based on the location of the PivotTable's top-left corner. They are ordered top to bottom and then left to right.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: ExcelApiOnline 1.1]
          */
         export interface PivotTableScopedCollectionLoadOptions {
             /**
@@ -45695,7 +45708,7 @@ export declare namespace Excel {
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Specifies whether the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
+             * For EACH ITEM in the collection: Specifies if the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -45703,14 +45716,14 @@ export declare namespace Excel {
             allowMultipleFiltersPerField?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies whether the PivotTable allows values in the data body to be edited by the user.
+             * For EACH ITEM in the collection: Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
              * [Api set: ExcelApi 1.9]
              */
             enableDataValueEditing?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Id of the PivotTable. Read-only.
+             * For EACH ITEM in the collection: Id of the PivotTable.
              *
              * [Api set: ExcelApi 1.5]
              */
@@ -45724,7 +45737,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies whether the PivotTable uses custom lists when sorting.
+             * For EACH ITEM in the collection: Specifies if the PivotTable uses custom lists when sorting.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -45757,7 +45770,7 @@ export declare namespace Excel {
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Specifies whether the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
+             * For EACH ITEM in the collection: Specifies if the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -45765,14 +45778,14 @@ export declare namespace Excel {
             allowMultipleFiltersPerField?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies whether the PivotTable allows values in the data body to be edited by the user.
+             * For EACH ITEM in the collection: Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
              * [Api set: ExcelApi 1.9]
              */
             enableDataValueEditing?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Id of the PivotTable. Read-only.
+             * For EACH ITEM in the collection: Id of the PivotTable.
              *
              * [Api set: ExcelApi 1.5]
              */
@@ -45786,7 +45799,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies whether the PivotTable uses custom lists when sorting.
+             * For EACH ITEM in the collection: Specifies if the PivotTable uses custom lists when sorting.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -45820,7 +45833,7 @@ export declare namespace Excel {
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
              *
-             * Specifies whether the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
+             * Specifies if the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -45828,14 +45841,14 @@ export declare namespace Excel {
             allowMultipleFiltersPerField?: boolean;
             /**
              *
-             * Specifies whether the PivotTable allows values in the data body to be edited by the user.
+             * Specifies if the PivotTable allows values in the data body to be edited by the user.
              *
              * [Api set: ExcelApi 1.9]
              */
             enableDataValueEditing?: boolean;
             /**
              *
-             * Id of the PivotTable. Read-only.
+             * Id of the PivotTable.
              *
              * [Api set: ExcelApi 1.5]
              */
@@ -45849,7 +45862,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * Specifies whether the PivotTable uses custom lists when sorting.
+             * Specifies if the PivotTable uses custom lists when sorting.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -45876,14 +45889,14 @@ export declare namespace Excel {
             pivotStyle?: Excel.Interfaces.PivotTableStyleLoadOptions;
             /**
              *
-             * Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
+             * Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved
              *
              * [Api set: ExcelApi 1.9]
              */
             autoFormat?: boolean;
             /**
              *
-             * Specifies whether the field list can be shown in the UI.
+             * Specifies if the field list can be shown in the UI.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -45897,21 +45910,21 @@ export declare namespace Excel {
             layoutType?: boolean;
             /**
              *
-             * Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
+             * Specifies if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
              *
              * [Api set: ExcelApi 1.9]
              */
             preserveFormatting?: boolean;
             /**
              *
-             * Specifies whether the PivotTable report shows grand totals for columns.
+             * Specifies if the PivotTable report shows grand totals for columns.
              *
              * [Api set: ExcelApi 1.8]
              */
             showColumnGrandTotals?: boolean;
             /**
              *
-             * Specifies whether the PivotTable report shows grand totals for rows.
+             * Specifies if the PivotTable report shows grand totals for rows.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -46170,14 +46183,14 @@ export declare namespace Excel {
             position?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Determines whether the data should be shown as a specific summary calculation or not.
+             * For EACH ITEM in the collection: Specifies if the data should be shown as a specific summary calculation.
              *
              * [Api set: ExcelApi 1.8]
              */
             showAs?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Determines whether to show all items of the DataPivotHierarchy.
+             * For EACH ITEM in the collection: Specifies if all items of the DataPivotHierarchy are shown.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -46231,14 +46244,14 @@ export declare namespace Excel {
             position?: boolean;
             /**
              *
-             * Determines whether the data should be shown as a specific summary calculation or not.
+             * Specifies if the data should be shown as a specific summary calculation.
              *
              * [Api set: ExcelApi 1.8]
              */
             showAs?: boolean;
             /**
              *
-             * Determines whether to show all items of the DataPivotHierarchy.
+             * Specifies if all items of the DataPivotHierarchy are shown.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -46358,7 +46371,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Determines whether the PivotItem is visible or not.
+             * For EACH ITEM in the collection: Specifies if the PivotItem is visible.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -46398,7 +46411,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * Determines whether the PivotItem is visible or not.
+             * Specifies if the PivotItem is visible.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -46418,7 +46431,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Gets the key of the custom property. Read only.
+             * Gets the key of the custom property. Custom property keys are case-insensitive.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46426,7 +46439,7 @@ export declare namespace Excel {
             key?: boolean;
             /**
              *
-             * Gets the value of the custom property. Read only.
+             * Gets or sets the value of the custom property.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46447,7 +46460,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the key of the custom property. Read only.
+             * For EACH ITEM in the collection: Gets the key of the custom property. Custom property keys are case-insensitive.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46455,7 +46468,7 @@ export declare namespace Excel {
             key?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the value of the custom property. Read only.
+             * For EACH ITEM in the collection: Gets or sets the value of the custom property.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46475,28 +46488,28 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Gets or sets the author of the workbook.
+             * The author of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
             author?: boolean;
             /**
              *
-             * Gets or sets the category of the workbook.
+             * The category of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
             category?: boolean;
             /**
              *
-             * Gets or sets the comments of the workbook.
+             * The comments of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
             comments?: boolean;
             /**
              *
-             * Gets or sets the company of the workbook.
+             * The company of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -46510,7 +46523,7 @@ export declare namespace Excel {
             creationDate?: boolean;
             /**
              *
-             * Gets or sets the keywords of the workbook.
+             * The keywords of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -46524,7 +46537,7 @@ export declare namespace Excel {
             lastAuthor?: boolean;
             /**
              *
-             * Gets or sets the manager of the workbook.
+             * The manager of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -46538,14 +46551,14 @@ export declare namespace Excel {
             revisionNumber?: boolean;
             /**
              *
-             * Gets or sets the subject of the workbook.
+             * The subject of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
             subject?: boolean;
             /**
              *
-             * Gets or sets the title of the workbook.
+             * The title of the workbook.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -46564,21 +46577,21 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Gets the key of the custom property. Read only.
+             * The key of the custom property.
              *
              * [Api set: ExcelApi 1.7]
              */
             key?: boolean;
             /**
              *
-             * Gets the value type of the custom property. Read only.
+             * The type of the value used for the custom property.
              *
              * [Api set: ExcelApi 1.7]
              */
             type?: boolean;
             /**
              *
-             * Gets or sets the value of the custom property.
+             * The value of the custom property.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -46597,21 +46610,21 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the key of the custom property. Read only.
+             * For EACH ITEM in the collection: The key of the custom property.
              *
              * [Api set: ExcelApi 1.7]
              */
             key?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the value type of the custom property. Read only.
+             * For EACH ITEM in the collection: The type of the value used for the custom property.
              *
              * [Api set: ExcelApi 1.7]
              */
             type?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the value of the custom property.
+             * For EACH ITEM in the collection: The value of the custom property.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -46748,7 +46761,7 @@ export declare namespace Excel {
             topBottomOrNullObject?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only.
+             * For EACH ITEM in the collection: The Priority of the Conditional Format within the current ConditionalFormatCollection.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -46759,7 +46772,7 @@ export declare namespace Excel {
                         changes other conditional formats' priorities, to allow for a contiguous priority order.
                         Use a negative priority to begin from the back.
                         Priorities greater than than bounds will get and set to the maximum (or minimum if negative) priority.
-                        Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it. Read-only.
+                        Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -46774,7 +46787,7 @@ export declare namespace Excel {
             stopIfTrue?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: A type of conditional format. Only one can be set at a time. Read-only.
+             * For EACH ITEM in the collection: A type of conditional format. Only one can be set at a time.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -46912,7 +46925,7 @@ export declare namespace Excel {
             topBottomOrNullObject?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions;
             /**
              *
-             * The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only.
+             * The Priority of the Conditional Format within the current ConditionalFormatCollection.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -46923,7 +46936,7 @@ export declare namespace Excel {
                         changes other conditional formats' priorities, to allow for a contiguous priority order.
                         Use a negative priority to begin from the back.
                         Priorities greater than than bounds will get and set to the maximum (or minimum if negative) priority.
-                        Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it. Read-only.
+                        Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -46938,7 +46951,7 @@ export declare namespace Excel {
             stopIfTrue?: boolean;
             /**
              *
-             * A type of conditional format. Only one can be set at a time. Read-only.
+             * A type of conditional format. Only one can be set at a time.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -46971,7 +46984,7 @@ export declare namespace Excel {
             positiveFormat?: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions;
             /**
              *
-             * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
                         "" (empty string) if no axis is present or set.
              *
              * [Api set: ExcelApi 1.6]
@@ -46986,7 +46999,7 @@ export declare namespace Excel {
             axisFormat?: boolean;
             /**
              *
-             * Represents the direction that the data bar graphic should be based on.
+             * Specifies the direction that the data bar graphic should be based on.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -47028,7 +47041,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
                         "" (empty string) if no border is present or set.
              *
              * [Api set: ExcelApi 1.6]
@@ -47036,14 +47049,14 @@ export declare namespace Excel {
             borderColor?: boolean;
             /**
              *
-             * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the fill color, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.6]
              */
             fillColor?: boolean;
             /**
              *
-             * Boolean representation of whether or not the DataBar has a gradient.
+             * specifies if the DataBar has a gradient.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -47062,7 +47075,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
                         "Empty String" if no border is present or set.
              *
              * [Api set: ExcelApi 1.6]
@@ -47070,21 +47083,21 @@ export declare namespace Excel {
             borderColor?: boolean;
             /**
              *
-             * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the fill color, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.6]
              */
             fillColor?: boolean;
             /**
              *
-             * Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar.
+             * Specifies if the negative DataBar has the same border color as the positive DataBar.
              *
              * [Api set: ExcelApi 1.6]
              */
             matchPositiveBorderColor?: boolean;
             /**
              *
-             * Boolean representation of whether or not the negative DataBar has the same fill color as the positive DataBar.
+             * Specified if the negative DataBar has the same fill color as the positive DataBar.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -47110,7 +47123,7 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
             /**
             *
-            * Represents the Rule object on this conditional format.
+            * Specifies the Rule object on this conditional format.
             *
             * [Api set: ExcelApi 1.6]
             */
@@ -47191,7 +47204,7 @@ export declare namespace Excel {
         }
         /**
          *
-         * Represents an IconSet criteria for conditional formatting.
+         * Represents ColorScale criteria for conditional formatting.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -47313,7 +47326,7 @@ export declare namespace Excel {
             format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
             /**
              *
-             * Represents the Rule object on this conditional format.
+             * Specifies the Rule object on this conditional format.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -47372,35 +47385,35 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Represents the bold status of font.
+             * Specifies if the font is bold.
              *
              * [Api set: ExcelApi 1.6]
              */
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
              *
              * [Api set: ExcelApi 1.6]
              */
             color?: boolean;
             /**
              *
-             * Represents the italic status of the font.
+             * Specifies if the font is italic.
              *
              * [Api set: ExcelApi 1.6]
              */
             italic?: boolean;
             /**
              *
-             * Represents the strikethrough status of the font.
+             * Specifies the strikethrough status of the font.
              *
              * [Api set: ExcelApi 1.6]
              */
             strikethrough?: boolean;
             /**
              *
-             * Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
+             * The type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -47419,7 +47432,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * HTML color code representing the color of the fill, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the color of the fill, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -47438,14 +47451,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.6]
              */
             color?: boolean;
             /**
              *
-             * Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details. Read-only.
+             * Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -47471,14 +47484,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * For EACH ITEM in the collection: HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.6]
              */
             color?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details. Read-only.
+             * For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -47525,21 +47538,21 @@ export declare namespace Excel {
             font?: Excel.Interfaces.RangeFontLoadOptions;
             /**
              *
-             * Indicates if text is automatically indented when the text alignment in a cell is set to equal distribution.
+             * Specifies if text is automatically indented when the text alignment in a cell is set to equal distribution.
              *
              * [Api set: ExcelApi 1.8]
              */
             autoIndent?: boolean;
             /**
              *
-             * Indicates if the style is a built-in style.
+             * Specifies if the style is a built-in style.
              *
              * [Api set: ExcelApi 1.7]
              */
             builtIn?: boolean;
             /**
              *
-             * Indicates if the formula will be hidden when the worksheet is protected.
+             * Specifies if the formula will be hidden when the worksheet is protected.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -47553,42 +47566,42 @@ export declare namespace Excel {
             horizontalAlignment?: boolean;
             /**
              *
-             * Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
+             * Specifies if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
              *
              * [Api set: ExcelApi 1.7]
              */
             includeAlignment?: boolean;
             /**
              *
-             * Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
+             * Specifies if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
              *
              * [Api set: ExcelApi 1.7]
              */
             includeBorder?: boolean;
             /**
              *
-             * Indicates if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
+             * Specifies if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
              *
              * [Api set: ExcelApi 1.7]
              */
             includeFont?: boolean;
             /**
              *
-             * Indicates if the style includes the NumberFormat property.
+             * Specifies if the style includes the NumberFormat property.
              *
              * [Api set: ExcelApi 1.7]
              */
             includeNumber?: boolean;
             /**
              *
-             * Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and PatternColorIndex interior properties.
+             * Specifies if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and PatternColorIndex interior properties.
              *
              * [Api set: ExcelApi 1.7]
              */
             includePatterns?: boolean;
             /**
              *
-             * Indicates if the style includes the FormulaHidden and Locked protection properties.
+             * Specifies if the style includes the FormulaHidden and Locked protection properties.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -47602,7 +47615,7 @@ export declare namespace Excel {
             indentLevel?: boolean;
             /**
              *
-             * Indicates if the object is locked when the worksheet is protected.
+             * Specifies if the object is locked when the worksheet is protected.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -47637,7 +47650,7 @@ export declare namespace Excel {
             readingOrder?: boolean;
             /**
              *
-             * Indicates if text automatically shrinks to fit in the available column width.
+             * Specifies if text automatically shrinks to fit in the available column width.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -47651,14 +47664,14 @@ export declare namespace Excel {
             textOrientation?: boolean;
             /**
              *
-             * Represents the vertical alignment for the style. See Excel.VerticalAlignment for details.
+             * Specifies the vertical alignment for the style. See Excel.VerticalAlignment for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             verticalAlignment?: boolean;
             /**
              *
-             * Indicates if Microsoft Excel wraps the text in the object.
+             * Specifies if Excel wraps the text in the object.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -47698,21 +47711,21 @@ export declare namespace Excel {
             font?: Excel.Interfaces.RangeFontLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Indicates if text is automatically indented when the text alignment in a cell is set to equal distribution.
+             * For EACH ITEM in the collection: Specifies if text is automatically indented when the text alignment in a cell is set to equal distribution.
              *
              * [Api set: ExcelApi 1.8]
              */
             autoIndent?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates if the style is a built-in style.
+             * For EACH ITEM in the collection: Specifies if the style is a built-in style.
              *
              * [Api set: ExcelApi 1.7]
              */
             builtIn?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates if the formula will be hidden when the worksheet is protected.
+             * For EACH ITEM in the collection: Specifies if the formula will be hidden when the worksheet is protected.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -47726,42 +47739,42 @@ export declare namespace Excel {
             horizontalAlignment?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
+             * For EACH ITEM in the collection: Specifies if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
              *
              * [Api set: ExcelApi 1.7]
              */
             includeAlignment?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
+             * For EACH ITEM in the collection: Specifies if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
              *
              * [Api set: ExcelApi 1.7]
              */
             includeBorder?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
+             * For EACH ITEM in the collection: Specifies if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
              *
              * [Api set: ExcelApi 1.7]
              */
             includeFont?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates if the style includes the NumberFormat property.
+             * For EACH ITEM in the collection: Specifies if the style includes the NumberFormat property.
              *
              * [Api set: ExcelApi 1.7]
              */
             includeNumber?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and PatternColorIndex interior properties.
+             * For EACH ITEM in the collection: Specifies if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and PatternColorIndex interior properties.
              *
              * [Api set: ExcelApi 1.7]
              */
             includePatterns?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates if the style includes the FormulaHidden and Locked protection properties.
+             * For EACH ITEM in the collection: Specifies if the style includes the FormulaHidden and Locked protection properties.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -47775,7 +47788,7 @@ export declare namespace Excel {
             indentLevel?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates if the object is locked when the worksheet is protected.
+             * For EACH ITEM in the collection: Specifies if the object is locked when the worksheet is protected.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -47810,7 +47823,7 @@ export declare namespace Excel {
             readingOrder?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates if text automatically shrinks to fit in the available column width.
+             * For EACH ITEM in the collection: Specifies if text automatically shrinks to fit in the available column width.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -47824,14 +47837,14 @@ export declare namespace Excel {
             textOrientation?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the vertical alignment for the style. See Excel.VerticalAlignment for details.
+             * For EACH ITEM in the collection: Specifies the vertical alignment for the style. See Excel.VerticalAlignment for details.
              *
              * [Api set: ExcelApi 1.7]
              */
             verticalAlignment?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Indicates if Microsoft Excel wraps the text in the object.
+             * For EACH ITEM in the collection: Specifies if Excel wraps the text in the object.
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -47857,7 +47870,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies whether this TableStyle object is read-only. Read-only.
+             * For EACH ITEM in the collection: Specifies if this TableStyle object is read-only.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -47883,7 +47896,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * Specifies whether this TableStyle object is read-only. Read-only.
+             * Specifies if this TableStyle object is read-only.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -47909,7 +47922,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies whether this PivotTableStyle object is read-only. Read-only.
+             * For EACH ITEM in the collection: Specifies if this PivotTableStyle object is read-only.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -47935,7 +47948,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * Specifies whether this PivotTableStyle object is read-only. Read-only.
+             * Specifies if this PivotTableStyle object is read-only.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -47961,7 +47974,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies whether this SlicerStyle object is read-only. Read-only.
+             * For EACH ITEM in the collection: Specifies if this SlicerStyle object is read-only.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -47987,7 +48000,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * Specifies whether this SlicerStyle object is read-only. Read-only.
+             * Specifies if this SlicerStyle object is read-only.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -48013,7 +48026,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies whether this TimelineStyle object is read-only. Read-only.
+             * For EACH ITEM in the collection: Specifies if this TimelineStyle object is read-only.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -48039,7 +48052,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * Specifies whether this TimelineStyle object is read-only. Read-only.
+             * Specifies if this TimelineStyle object is read-only.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -48065,133 +48078,133 @@ export declare namespace Excel {
             headersFooters?: Excel.Interfaces.HeaderFooterGroupLoadOptions;
             /**
              *
-             * Gets or sets the worksheet's black and white print option.
+             * The worksheet's black and white print option.
              *
              * [Api set: ExcelApi 1.9]
              */
             blackAndWhite?: boolean;
             /**
              *
-             * Gets or sets the worksheet's bottom page margin to use for printing in points.
+             * The worksheet's bottom page margin to use for printing in points.
              *
              * [Api set: ExcelApi 1.9]
              */
             bottomMargin?: boolean;
             /**
              *
-             * Gets or sets the worksheet's center horizontally flag. This flag determines whether the worksheet will be centered horizontally when it's printed.
+             * The worksheet's center horizontally flag. This flag determines whether the worksheet will be centered horizontally when it's printed.
              *
              * [Api set: ExcelApi 1.9]
              */
             centerHorizontally?: boolean;
             /**
              *
-             * Gets or sets the worksheet's center vertically flag. This flag determines whether the worksheet will be centered vertically when it's printed.
+             * The worksheet's center vertically flag. This flag determines whether the worksheet will be centered vertically when it's printed.
              *
              * [Api set: ExcelApi 1.9]
              */
             centerVertically?: boolean;
             /**
              *
-             * Gets or sets the worksheet's draft mode option. If true the sheet will be printed without graphics.
+             * The worksheet's draft mode option. If true the sheet will be printed without graphics.
              *
              * [Api set: ExcelApi 1.9]
              */
             draftMode?: boolean;
             /**
              *
-             * Gets or sets the worksheet's first page number to print. Null value represents "auto" page numbering.
+             * The worksheet's first page number to print. Null value represents "auto" page numbering.
              *
              * [Api set: ExcelApi 1.9]
              */
             firstPageNumber?: boolean;
             /**
              *
-             * Gets or sets the worksheet's footer margin, in points, for use when printing.
+             * The worksheet's footer margin, in points, for use when printing.
              *
              * [Api set: ExcelApi 1.9]
              */
             footerMargin?: boolean;
             /**
              *
-             * Gets or sets the worksheet's header margin, in points, for use when printing.
+             * The worksheet's header margin, in points, for use when printing.
              *
              * [Api set: ExcelApi 1.9]
              */
             headerMargin?: boolean;
             /**
              *
-             * Gets or sets the worksheet's left margin, in points, for use when printing.
+             * The worksheet's left margin, in points, for use when printing.
              *
              * [Api set: ExcelApi 1.9]
              */
             leftMargin?: boolean;
             /**
              *
-             * Gets or sets the worksheet's orientation of the page.
+             * The worksheet's orientation of the page.
              *
              * [Api set: ExcelApi 1.9]
              */
             orientation?: boolean;
             /**
              *
-             * Gets or sets the worksheet's paper size of the page.
+             * The worksheet's paper size of the page.
              *
              * [Api set: ExcelApi 1.9]
              */
             paperSize?: boolean;
             /**
              *
-             * Gets or sets whether the worksheet's comments should be displayed when printing.
+             * Specifies if the worksheet's comments should be displayed when printing.
              *
              * [Api set: ExcelApi 1.9]
              */
             printComments?: boolean;
             /**
              *
-             * Gets or sets the worksheet's print errors option.
+             * The worksheet's print errors option.
              *
              * [Api set: ExcelApi 1.9]
              */
             printErrors?: boolean;
             /**
              *
-             * Gets or sets the worksheet's print gridlines flag. This flag determines whether gridlines will be printed or not.
+             * Specifies if the worksheet's gridlines will be printed.
              *
              * [Api set: ExcelApi 1.9]
              */
             printGridlines?: boolean;
             /**
              *
-             * Gets or sets the worksheet's print headings flag. This flag determines whether headings will be printed or not.
+             * Specifies if the worksheet's headings will be printed.
              *
              * [Api set: ExcelApi 1.9]
              */
             printHeadings?: boolean;
             /**
              *
-             * Gets or sets the worksheet's page print order option. This specifies the order to use for processing the page number printed.
+             * The worksheet's page print order option. This specifies the order to use for processing the page number printed.
              *
              * [Api set: ExcelApi 1.9]
              */
             printOrder?: boolean;
             /**
              *
-             * Gets or sets the worksheet's right margin, in points, for use when printing.
+             * The worksheet's right margin, in points, for use when printing.
              *
              * [Api set: ExcelApi 1.9]
              */
             rightMargin?: boolean;
             /**
              *
-             * Gets or sets the worksheet's top margin, in points, for use when printing.
+             * The worksheet's top margin, in points, for use when printing.
              *
              * [Api set: ExcelApi 1.9]
              */
             topMargin?: boolean;
             /**
              *
-             * Gets or sets the worksheet's print zoom options.
+             * The worksheet's print zoom options.
                         The `PageLayoutZoomOptions` object must be set as a JSON object (use `x.zoom = {...}` instead of `x.zoom.scale = ...`).
              *
              * [Api set: ExcelApi 1.9]
@@ -48208,7 +48221,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Gets or sets the center footer of the worksheet.
+             * The center footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
              *
              * [Api set: ExcelApi 1.9]
@@ -48216,7 +48229,7 @@ export declare namespace Excel {
             centerFooter?: boolean;
             /**
              *
-             * Gets or sets the center header of the worksheet.
+             * The center header of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
              *
              * [Api set: ExcelApi 1.9]
@@ -48224,7 +48237,7 @@ export declare namespace Excel {
             centerHeader?: boolean;
             /**
              *
-             * Gets or sets the left footer of the worksheet.
+             * The left footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
              *
              * [Api set: ExcelApi 1.9]
@@ -48232,7 +48245,7 @@ export declare namespace Excel {
             leftFooter?: boolean;
             /**
              *
-             * Gets or sets the left header of the worksheet.
+             * The left header of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
              *
              * [Api set: ExcelApi 1.9]
@@ -48240,7 +48253,7 @@ export declare namespace Excel {
             leftHeader?: boolean;
             /**
              *
-             * Gets or sets the right footer of the worksheet.
+             * The right footer of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
              *
              * [Api set: ExcelApi 1.9]
@@ -48248,7 +48261,7 @@ export declare namespace Excel {
             rightFooter?: boolean;
             /**
              *
-             * Gets or sets the right header of the worksheet.
+             * The right header of the worksheet.
                         To apply font formatting or insert a variable value, use format codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
              *
              * [Api set: ExcelApi 1.9]
@@ -48293,7 +48306,7 @@ export declare namespace Excel {
             oddPages?: Excel.Interfaces.HeaderFooterLoadOptions;
             /**
              *
-             * Gets or sets the state of which headers/footers are set. See Excel.HeaderFooterState for details.
+             * The state by which headers/footers are set. See Excel.HeaderFooterState for details.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -48323,14 +48336,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Represents the column index for the page break
+             * Specifies the column index for the page break
              *
              * [Api set: ExcelApi 1.9]
              */
             columnIndex?: boolean;
             /**
              *
-             * Represents the row index for the page break
+             * Specifies the row index for the page break
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -48346,14 +48359,14 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the column index for the page break
+             * For EACH ITEM in the collection: Specifies the column index for the page break
              *
              * [Api set: ExcelApi 1.9]
              */
             columnIndex?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the row index for the page break
+             * For EACH ITEM in the collection: Specifies the row index for the page break
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -48390,28 +48403,28 @@ export declare namespace Excel {
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4"). Read-only.
+             * For EACH ITEM in the collection: Specifies the range reference in A1-style. Address value will contain the Sheet reference (e.g., "Sheet1!A1:B4").
              *
              * [Api set: ExcelApi 1.1]
              */
             address?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents range reference for the specified range in the language of the user. Read-only.
+             * For EACH ITEM in the collection: Specifies the range reference for the specified range in the language of the user.
              *
              * [Api set: ExcelApi 1.1]
              */
             addressLocal?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
+             * For EACH ITEM in the collection: Specifies the number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647).
              *
              * [Api set: ExcelApi 1.1]
              */
             cellCount?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the total number of columns in the range. Read-only.
+             * For EACH ITEM in the collection: Specifies the total number of columns in the range.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -48425,7 +48438,7 @@ export declare namespace Excel {
             columnHidden?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the column number of the first cell in the range. Zero-indexed. Read-only.
+             * For EACH ITEM in the collection: Specifies the column number of the first cell in the range. Zero-indexed.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -48463,14 +48476,14 @@ export declare namespace Excel {
             hasSpill?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
+             * For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range.
              *
              * [Api set: ExcelApi 1.10]
              */
             height?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents if all cells of the current range are hidden. Read-only.
+             * For EACH ITEM in the collection: Represents if all cells of the current range are hidden.
              *
              * [Api set: ExcelApi 1.2]
              */
@@ -48484,28 +48497,28 @@ export declare namespace Excel {
             hyperlink?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents if the current range is an entire column. Read-only.
+             * For EACH ITEM in the collection: Represents if the current range is an entire column.
              *
              * [Api set: ExcelApi 1.7]
              */
             isEntireColumn?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents if the current range is an entire row. Read-only.
+             * For EACH ITEM in the collection: Represents if the current range is an entire row.
              *
              * [Api set: ExcelApi 1.7]
              */
             isEntireRow?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range. Read-only.
+             * For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range.
              *
              * [Api set: ExcelApi 1.10]
              */
             left?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the data type state of each cell. Read-only.
+             * For EACH ITEM in the collection: Represents the data type state of each cell.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -48519,7 +48532,7 @@ export declare namespace Excel {
             numberFormat?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the category of number format of each cell. Read-only.
+             * For EACH ITEM in the collection: Represents the category of number format of each cell.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -48536,7 +48549,7 @@ export declare namespace Excel {
             numberFormatLocal?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the total number of rows in the range. Read-only.
+             * For EACH ITEM in the collection: Returns the total number of rows in the range.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -48550,7 +48563,7 @@ export declare namespace Excel {
             rowHidden?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the row number of the first cell in the range. Zero-indexed. Read-only.
+             * For EACH ITEM in the collection: Returns the row number of the first cell in the range. Zero-indexed.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -48576,21 +48589,21 @@ export declare namespace Excel {
             style?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
+             * For EACH ITEM in the collection: Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API.
              *
              * [Api set: ExcelApi 1.1]
              */
             text?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
+             * For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range.
              *
              * [Api set: ExcelApi 1.10]
              */
             top?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the type of data of each cell. Read-only.
+             * For EACH ITEM in the collection: Specifies the type of data in each cell.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -48604,7 +48617,7 @@ export declare namespace Excel {
             values?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
+             * For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -48637,7 +48650,7 @@ export declare namespace Excel {
             authorName?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the comment's content. The string is plain text.
+             * For EACH ITEM in the collection: The comment's content. The string is plain text.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -48659,31 +48672,30 @@ export declare namespace Excel {
             creationDate?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the comment identifier. Read-only.
+             * For EACH ITEM in the collection: Specifies the comment identifier.
              *
              * [Api set: ExcelApi 1.10]
              */
             id?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the entities (e.g. people) that are mentioned in comments.
+             * For EACH ITEM in the collection: Gets the entities (e.g., people) that are mentioned in comments.
              *
-             * [Api set: ExcelApiOnline 1.1]
+             * [Api set: ExcelApi 1.11]
              */
             mentions?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
+             * For EACH ITEM in the collection: The comment thread status. A value of "true" means the comment thread is resolved.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.11]
              */
             resolved?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+             * For EACH ITEM in the collection: Gets the rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
              *
-             * [Api set: ExcelApiOnline 1.1]
+             * [Api set: ExcelApi 1.11]
              */
             richContent?: boolean;
         }
@@ -48714,7 +48726,7 @@ export declare namespace Excel {
             authorName?: boolean;
             /**
              *
-             * Gets or sets the comment's content. The string is plain text.
+             * The comment's content. The string is plain text.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -48736,31 +48748,30 @@ export declare namespace Excel {
             creationDate?: boolean;
             /**
              *
-             * Represents the comment identifier. Read-only.
+             * Specifies the comment identifier.
              *
              * [Api set: ExcelApi 1.10]
              */
             id?: boolean;
             /**
              *
-             * Gets the entities (e.g. people) that are mentioned in comments.
+             * Gets the entities (e.g., people) that are mentioned in comments.
              *
-             * [Api set: ExcelApiOnline 1.1]
+             * [Api set: ExcelApi 1.11]
              */
             mentions?: boolean;
             /**
              *
-             * Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
+             * The comment thread status. A value of "true" means the comment thread is resolved.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.11]
              */
             resolved?: boolean;
             /**
              *
-             * Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+             * Gets the rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
              *
-             * [Api set: ExcelApiOnline 1.1]
+             * [Api set: ExcelApi 1.11]
              */
             richContent?: boolean;
         }
@@ -48791,14 +48802,14 @@ export declare namespace Excel {
             authorName?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the comment reply's content. The string is plain text.
+             * For EACH ITEM in the collection: The comment reply's content. The string is plain text.
              *
              * [Api set: ExcelApi 1.10]
              */
             content?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the content type of the comment.
+             * For EACH ITEM in the collection: The content type of the reply.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -48813,31 +48824,30 @@ export declare namespace Excel {
             creationDate?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the comment reply identifier. Read-only.
+             * For EACH ITEM in the collection: Specifies the comment reply identifier.
              *
              * [Api set: ExcelApi 1.10]
              */
             id?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the entities (e.g. people) that are mentioned in comments.
+             * For EACH ITEM in the collection: The entities (e.g., people) that are mentioned in comments.
              *
-             * [Api set: ExcelApiOnline 1.1]
+             * [Api set: ExcelApi 1.11]
              */
             mentions?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
+             * For EACH ITEM in the collection: The comment reply status. A value of "true" means the reply is in the resolved state.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.11]
              */
             resolved?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+             * For EACH ITEM in the collection: The rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
              *
-             * [Api set: ExcelApiOnline 1.1]
+             * [Api set: ExcelApi 1.11]
              */
             richContent?: boolean;
         }
@@ -48868,14 +48878,14 @@ export declare namespace Excel {
             authorName?: boolean;
             /**
              *
-             * Gets or sets the comment reply's content. The string is plain text.
+             * The comment reply's content. The string is plain text.
              *
              * [Api set: ExcelApi 1.10]
              */
             content?: boolean;
             /**
              *
-             * Gets the content type of the comment.
+             * The content type of the reply.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -48890,31 +48900,30 @@ export declare namespace Excel {
             creationDate?: boolean;
             /**
              *
-             * Represents the comment reply identifier. Read-only.
+             * Specifies the comment reply identifier.
              *
              * [Api set: ExcelApi 1.10]
              */
             id?: boolean;
             /**
              *
-             * Gets the entities (e.g. people) that are mentioned in comments.
+             * The entities (e.g., people) that are mentioned in comments.
              *
-             * [Api set: ExcelApiOnline 1.1]
+             * [Api set: ExcelApi 1.11]
              */
             mentions?: boolean;
             /**
              *
-             * Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
+             * The comment reply status. A value of "true" means the reply is in the resolved state.
              *
-             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: ExcelApi 1.11]
              */
             resolved?: boolean;
             /**
              *
-             * Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
+             * The rich comment content (e.g., mentions in comments). This string is not meant to be displayed to end-users. Your add-in should only use this to parse rich comment content.
              *
-             * [Api set: ExcelApiOnline 1.1]
+             * [Api set: ExcelApi 1.11]
              */
             richContent?: boolean;
         }
@@ -48973,7 +48982,7 @@ export declare namespace Excel {
             lineFormat?: Excel.Interfaces.ShapeLineFormatLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Represents the parent group of this shape.
+            * For EACH ITEM in the collection: Specifies the parent group of this shape.
             *
             * [Api set: ExcelApi 1.9]
             */
@@ -48987,35 +48996,35 @@ export declare namespace Excel {
             textFrame?: Excel.Interfaces.TextFrameLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the alternative description text for a Shape object.
+             * For EACH ITEM in the collection: Specifies the alternative description text for a Shape object.
              *
              * [Api set: ExcelApi 1.9]
              */
             altTextDescription?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the alternative title text for a Shape object.
+             * For EACH ITEM in the collection: Specifies the alternative title text for a Shape object.
              *
              * [Api set: ExcelApi 1.9]
              */
             altTextTitle?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the number of connection sites on this shape. Read-only.
+             * For EACH ITEM in the collection: Returns the number of connection sites on this shape.
              *
              * [Api set: ExcelApi 1.9]
              */
             connectionSiteCount?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
+             * For EACH ITEM in the collection: Specifies the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
              *
              * [Api set: ExcelApi 1.9]
              */
             geometricShapeType?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the height, in points, of the shape.
+             * For EACH ITEM in the collection: Specifies the height, in points, of the shape.
                         Throws an invalid argument exception when set with a negative value or zero as input.
              *
              * [Api set: ExcelApi 1.9]
@@ -49023,7 +49032,7 @@ export declare namespace Excel {
             height?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the shape identifier. Read-only.
+             * For EACH ITEM in the collection: Specifies the shape identifier.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49038,21 +49047,21 @@ export declare namespace Excel {
             left?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
+             * For EACH ITEM in the collection: Specifies the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
              *
              * [Api set: ExcelApi 1.9]
              */
             level?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies whether or not the aspect ratio of this shape is locked.
+             * For EACH ITEM in the collection: Specifies if the aspect ratio of this shape is locked.
              *
              * [Api set: ExcelApi 1.9]
              */
             lockAspectRatio?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the name of the shape.
+             * For EACH ITEM in the collection: Specifies the name of the shape.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49066,7 +49075,7 @@ export declare namespace Excel {
             placement?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the rotation, in degrees, of the shape.
+             * For EACH ITEM in the collection: Specifies the rotation, in degrees, of the shape.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49081,21 +49090,21 @@ export declare namespace Excel {
             top?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the type of this shape. See Excel.ShapeType for details. Read-only.
+             * For EACH ITEM in the collection: Returns the type of this shape. See Excel.ShapeType for details.
              *
              * [Api set: ExcelApi 1.9]
              */
             type?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the visibility of this shape.
+             * For EACH ITEM in the collection: Specifies if the shape is visible.
              *
              * [Api set: ExcelApi 1.9]
              */
             visible?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the width, in points, of the shape.
+             * For EACH ITEM in the collection: Specifies the width, in points, of the shape.
                         Throws an invalid argument exception when set with a negative value or zero as input.
              *
              * [Api set: ExcelApi 1.9]
@@ -49103,7 +49112,7 @@ export declare namespace Excel {
             width?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack. Read-only.
+             * For EACH ITEM in the collection: Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49165,7 +49174,7 @@ export declare namespace Excel {
             lineFormat?: Excel.Interfaces.ShapeLineFormatLoadOptions;
             /**
             *
-            * Represents the parent group of this shape.
+            * Specifies the parent group of this shape.
             *
             * [Api set: ExcelApi 1.9]
             */
@@ -49179,35 +49188,35 @@ export declare namespace Excel {
             textFrame?: Excel.Interfaces.TextFrameLoadOptions;
             /**
              *
-             * Returns or sets the alternative description text for a Shape object.
+             * Specifies the alternative description text for a Shape object.
              *
              * [Api set: ExcelApi 1.9]
              */
             altTextDescription?: boolean;
             /**
              *
-             * Returns or sets the alternative title text for a Shape object.
+             * Specifies the alternative title text for a Shape object.
              *
              * [Api set: ExcelApi 1.9]
              */
             altTextTitle?: boolean;
             /**
              *
-             * Returns the number of connection sites on this shape. Read-only.
+             * Returns the number of connection sites on this shape.
              *
              * [Api set: ExcelApi 1.9]
              */
             connectionSiteCount?: boolean;
             /**
              *
-             * Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
+             * Specifies the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
              *
              * [Api set: ExcelApi 1.9]
              */
             geometricShapeType?: boolean;
             /**
              *
-             * Represents the height, in points, of the shape.
+             * Specifies the height, in points, of the shape.
                         Throws an invalid argument exception when set with a negative value or zero as input.
              *
              * [Api set: ExcelApi 1.9]
@@ -49215,7 +49224,7 @@ export declare namespace Excel {
             height?: boolean;
             /**
              *
-             * Represents the shape identifier. Read-only.
+             * Specifies the shape identifier.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49230,21 +49239,21 @@ export declare namespace Excel {
             left?: boolean;
             /**
              *
-             * Represents the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
+             * Specifies the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
              *
              * [Api set: ExcelApi 1.9]
              */
             level?: boolean;
             /**
              *
-             * Specifies whether or not the aspect ratio of this shape is locked.
+             * Specifies if the aspect ratio of this shape is locked.
              *
              * [Api set: ExcelApi 1.9]
              */
             lockAspectRatio?: boolean;
             /**
              *
-             * Represents the name of the shape.
+             * Specifies the name of the shape.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49258,7 +49267,7 @@ export declare namespace Excel {
             placement?: boolean;
             /**
              *
-             * Represents the rotation, in degrees, of the shape.
+             * Specifies the rotation, in degrees, of the shape.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49273,21 +49282,21 @@ export declare namespace Excel {
             top?: boolean;
             /**
              *
-             * Returns the type of this shape. See Excel.ShapeType for details. Read-only.
+             * Returns the type of this shape. See Excel.ShapeType for details.
              *
              * [Api set: ExcelApi 1.9]
              */
             type?: boolean;
             /**
              *
-             * Represents the visibility of this shape.
+             * Specifies if the shape is visible.
              *
              * [Api set: ExcelApi 1.9]
              */
             visible?: boolean;
             /**
              *
-             * Represents the width, in points, of the shape.
+             * Specifies the width, in points, of the shape.
                         Throws an invalid argument exception when set with a negative value or zero as input.
              *
              * [Api set: ExcelApi 1.9]
@@ -49295,7 +49304,7 @@ export declare namespace Excel {
             width?: boolean;
             /**
              *
-             * Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack. Read-only.
+             * Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49321,7 +49330,7 @@ export declare namespace Excel {
             shape?: Excel.Interfaces.ShapeLoadOptions;
             /**
              *
-             * Returns the shape identifier. Read-only.
+             * Returns the shape identifier.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49347,14 +49356,14 @@ export declare namespace Excel {
             shape?: Excel.Interfaces.ShapeLoadOptions;
             /**
              *
-             * Represents the shape identifier for the image object. Read-only.
+             * Specifies the shape identifier for the image object.
              *
              * [Api set: ExcelApi 1.9]
              */
             id?: boolean;
             /**
              *
-             * Returns the format of the image. Read-only.
+             * Returns the format of the image.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49380,7 +49389,7 @@ export declare namespace Excel {
             shape?: Excel.Interfaces.ShapeLoadOptions;
             /**
              *
-             * Represents the shape identifier. Read-only.
+             * Specifies the shape identifier.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49441,7 +49450,7 @@ export declare namespace Excel {
             lineFormat?: Excel.Interfaces.ShapeLineFormatLoadOptions;
             /**
             *
-            * For EACH ITEM in the collection: Represents the parent group of this shape.
+            * For EACH ITEM in the collection: Specifies the parent group of this shape.
             *
             * [Api set: ExcelApi 1.9]
             */
@@ -49455,35 +49464,35 @@ export declare namespace Excel {
             textFrame?: Excel.Interfaces.TextFrameLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the alternative description text for a Shape object.
+             * For EACH ITEM in the collection: Specifies the alternative description text for a Shape object.
              *
              * [Api set: ExcelApi 1.9]
              */
             altTextDescription?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns or sets the alternative title text for a Shape object.
+             * For EACH ITEM in the collection: Specifies the alternative title text for a Shape object.
              *
              * [Api set: ExcelApi 1.9]
              */
             altTextTitle?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the number of connection sites on this shape. Read-only.
+             * For EACH ITEM in the collection: Returns the number of connection sites on this shape.
              *
              * [Api set: ExcelApi 1.9]
              */
             connectionSiteCount?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
+             * For EACH ITEM in the collection: Specifies the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
              *
              * [Api set: ExcelApi 1.9]
              */
             geometricShapeType?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the height, in points, of the shape.
+             * For EACH ITEM in the collection: Specifies the height, in points, of the shape.
                         Throws an invalid argument exception when set with a negative value or zero as input.
              *
              * [Api set: ExcelApi 1.9]
@@ -49491,7 +49500,7 @@ export declare namespace Excel {
             height?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the shape identifier. Read-only.
+             * For EACH ITEM in the collection: Specifies the shape identifier.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49506,21 +49515,21 @@ export declare namespace Excel {
             left?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
+             * For EACH ITEM in the collection: Specifies the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
              *
              * [Api set: ExcelApi 1.9]
              */
             level?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies whether or not the aspect ratio of this shape is locked.
+             * For EACH ITEM in the collection: Specifies if the aspect ratio of this shape is locked.
              *
              * [Api set: ExcelApi 1.9]
              */
             lockAspectRatio?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the name of the shape.
+             * For EACH ITEM in the collection: Specifies the name of the shape.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49534,7 +49543,7 @@ export declare namespace Excel {
             placement?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the rotation, in degrees, of the shape.
+             * For EACH ITEM in the collection: Specifies the rotation, in degrees, of the shape.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49549,21 +49558,21 @@ export declare namespace Excel {
             top?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the type of this shape. See Excel.ShapeType for details. Read-only.
+             * For EACH ITEM in the collection: Returns the type of this shape. See Excel.ShapeType for details.
              *
              * [Api set: ExcelApi 1.9]
              */
             type?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the visibility of this shape.
+             * For EACH ITEM in the collection: Specifies if the shape is visible.
              *
              * [Api set: ExcelApi 1.9]
              */
             visible?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the width, in points, of the shape.
+             * For EACH ITEM in the collection: Specifies the width, in points, of the shape.
                         Throws an invalid argument exception when set with a negative value or zero as input.
              *
              * [Api set: ExcelApi 1.9]
@@ -49571,7 +49580,7 @@ export declare namespace Excel {
             width?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack. Read-only.
+             * For EACH ITEM in the collection: Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49632,7 +49641,7 @@ export declare namespace Excel {
             beginArrowheadWidth?: boolean;
             /**
              *
-             * Represents the connection site to which the beginning of a connector is connected. Read-only. Returns null when the beginning of the line is not attached to any shape.
+             * Represents the connection site to which the beginning of a connector is connected. Returns null when the beginning of the line is not attached to any shape.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49660,28 +49669,28 @@ export declare namespace Excel {
             endArrowheadWidth?: boolean;
             /**
              *
-             * Represents the connection site to which the end of a connector is connected. Read-only. Returns null when the end of the line is not attached to any shape.
+             * Represents the connection site to which the end of a connector is connected. Returns null when the end of the line is not attached to any shape.
              *
              * [Api set: ExcelApi 1.9]
              */
             endConnectedSite?: boolean;
             /**
              *
-             * Represents the shape identifier. Read-only.
+             * Specifies the shape identifier.
              *
              * [Api set: ExcelApi 1.9]
              */
             id?: boolean;
             /**
              *
-             * Specifies whether or not the beginning of the specified line is connected to a shape. Read-only.
+             * Specifies if the beginning of the specified line is connected to a shape.
              *
              * [Api set: ExcelApi 1.9]
              */
             isBeginConnected?: boolean;
             /**
              *
-             * Specifies whether or not the end of the specified line is connected to a shape. Read-only.
+             * Specifies if the end of the specified line is connected to a shape.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49707,21 +49716,21 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Represents the shape fill foreground color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
+             * Represents the shape fill foreground color in HTML color format, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange")
              *
              * [Api set: ExcelApi 1.9]
              */
             foregroundColor?: boolean;
             /**
              *
-             * Returns or sets the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns null if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
+             * Specifies the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns null if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
              *
              * [Api set: ExcelApi 1.9]
              */
             transparency?: boolean;
             /**
              *
-             * Returns the fill type of the shape. Read-only. See Excel.ShapeFillType for details.
+             * Returns the fill type of the shape. See Excel.ShapeFillType for details.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49740,7 +49749,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Represents the line color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+             * Represents the line color in HTML color format, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49768,7 +49777,7 @@ export declare namespace Excel {
             transparency?: boolean;
             /**
              *
-             * Represents whether or not the line formatting of a shape element is visible. Returns null when the shape has inconsistent visibilities.
+             * Specifies if the line formatting of a shape element is visible. Returns null when the shape has inconsistent visibilities.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49801,7 +49810,7 @@ export declare namespace Excel {
             textRange?: Excel.Interfaces.TextRangeLoadOptions;
             /**
              *
-             * Gets or sets the automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
+             * The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49815,7 +49824,7 @@ export declare namespace Excel {
             bottomMargin?: boolean;
             /**
              *
-             * Specifies whether the text frame contains text.
+             * Specifies if the text frame contains text.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49930,7 +49939,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * The HTML color code representation of the text color (e.g. "#FF0000" represents red). Returns null if the TextRange includes text fragments with different colors.
+             * HTML color code representation of the text color (e.g., "#FF0000" represents red). Returns null if the TextRange includes text fragments with different colors.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -49944,14 +49953,14 @@ export declare namespace Excel {
             italic?: boolean;
             /**
              *
-             * Represents font name (e.g. "Calibri"). If the text is Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
+             * Represents font name (e.g., "Calibri"). If the text is Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
              *
              * [Api set: ExcelApi 1.9]
              */
             name?: boolean;
             /**
              *
-             * Represents font size in points (e.g. 11). Returns null if the TextRange includes text fragments with different font sizes.
+             * Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different font sizes.
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -50007,7 +50016,7 @@ export declare namespace Excel {
             height?: boolean;
             /**
              *
-             * Represents the unique id of slicer. Read-only.
+             * Represents the unique id of slicer.
              *
              * [Api set: ExcelApi 1.10]
              */
@@ -50116,7 +50125,7 @@ export declare namespace Excel {
             height?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the unique id of slicer. Read-only.
+             * For EACH ITEM in the collection: Represents the unique id of slicer.
              *
              * [Api set: ExcelApi 1.10]
              */

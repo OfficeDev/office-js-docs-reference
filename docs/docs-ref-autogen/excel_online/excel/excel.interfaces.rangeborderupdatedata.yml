@@ -15,8 +15,8 @@ items:
       - 'excel!Excel.Interfaces.RangeBorderUpdateData#weight:member'
   - uid: 'excel!Excel.Interfaces.RangeBorderUpdateData#color:member'
     summary: >-
-      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange").
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g., "FFA500") or as a named
+      HTML color (e.g., "orange").
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -51,8 +51,8 @@ items:
           - 'excel!Excel.Interfaces.RangeBorderUpdateData#style~0:complex'
   - uid: 'excel!Excel.Interfaces.RangeBorderUpdateData#tintAndShade:member'
     summary: >-
-      Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and
-      1 (brightest), with 0 for the original color. A null value indicates that the border doesn't have uniform
+      Specifies a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1
+      (brightest), with 0 for the original color. A null value indicates that the border doesn't have uniform
       tintAndShade setting.
 
 

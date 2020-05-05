@@ -39,7 +39,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.GroupShapeCollection#getCount:member(1)'
     summary: |-
-      Returns the number of shapes in the shape group. Read-only.
+      Returns the number of shapes in the shape group.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()

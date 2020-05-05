@@ -14,7 +14,6 @@ items:
       - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
-      - 'excel!Excel.RangeFormat#adjustIndent:member(1)'
       - 'excel!Excel.RangeFormat#borders:member'
       - 'excel!Excel.RangeFormat#context:member'
       - 'excel!Excel.RangeFormat#fill:member'
@@ -28,35 +27,9 @@ items:
       - 'excel!Excel.RangeFormat#toJSON:member(1)'
       - 'excel!Excel.RangeFormat#verticalAlignment:member'
       - 'excel!Excel.RangeFormat#wrapText:member'
-  - uid: 'excel!Excel.RangeFormat#adjustIndent:member(1)'
-    summary: >-
-      Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in
-      characters.
-
-
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: adjustIndent(amount)
-    fullName: adjustIndent(amount)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'adjustIndent(amount: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: amount
-          description: >-
-            The number of character spaces by which the current indent is adjusted. This value should be between -250
-            and 250. *Note**: If the amount would raise the indent level above 250, the indent level stays with 250.
-            Similarly, if the amount would lower the indent level below 0, the indent level stays 0.
-          type:
-            - number
   - uid: 'excel!Excel.RangeFormat#borders:member'
     summary: |-
-      Collection of border objects that apply to the overall range. Read-only.
+      Collection of border objects that apply to the overall range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: borders
@@ -85,7 +58,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.RangeFormat#fill:member'
     summary: |-
-      Returns the fill object defined on the overall range. Read-only.
+      Returns the fill object defined on the overall range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
@@ -100,7 +73,7 @@ items:
           - 'excel!Excel.RangeFill:class'
   - uid: 'excel!Excel.RangeFormat#font:member'
     summary: |-
-      Returns the font object defined on the overall range. Read-only.
+      Returns the font object defined on the overall range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
@@ -344,7 +317,7 @@ items:
           - 'excel!Excel.RangeFormat#verticalAlignment~0:complex'
   - uid: 'excel!Excel.RangeFormat#wrapText:member'
     summary: >-
-      Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
+      Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
       wrap setting
 
 

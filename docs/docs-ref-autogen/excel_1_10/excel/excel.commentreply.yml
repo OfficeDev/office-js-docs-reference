@@ -26,12 +26,9 @@ items:
       - 'excel!Excel.CommentReply#load:member(1)'
       - 'excel!Excel.CommentReply#load:member(2)'
       - 'excel!Excel.CommentReply#load:member(3)'
-      - 'excel!Excel.CommentReply#mentions:member'
-      - 'excel!Excel.CommentReply#richContent:member'
       - 'excel!Excel.CommentReply#set:member(1)'
       - 'excel!Excel.CommentReply#set:member(2)'
       - 'excel!Excel.CommentReply#toJSON:member(1)'
-      - 'excel!Excel.CommentReply#updateMentions:member(1)'
   - uid: 'excel!Excel.CommentReply#authorEmail:member'
     summary: |-
       Gets the email of the comment reply's author.
@@ -64,7 +61,7 @@ items:
           - string
   - uid: 'excel!Excel.CommentReply#content:member'
     summary: |-
-      Gets or sets the comment reply's content. The string is plain text.
+      The comment reply's content. The string is plain text.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: content
@@ -200,7 +197,7 @@ items:
         description: ''
   - uid: 'excel!Excel.CommentReply#id:member'
     summary: |-
-      Represents the comment reply identifier. Read-only.
+      Specifies the comment reply identifier.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -283,38 +280,6 @@ items:
                           select?: string;
                           expand?: string;
                       }
-  - uid: 'excel!Excel.CommentReply#mentions:member'
-    summary: |-
-      Gets the entities (e.g. people) that are mentioned in comments.
-
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: mentions
-    fullName: mentions
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly mentions: Excel.CommentMention[];'
-      return:
-        type:
-          - 'excel!Excel.CommentReply#mentions~0:complex'
-  - uid: 'excel!Excel.CommentReply#richContent:member'
-    summary: >-
-      Gets the rich comment content (e.g. mentions in comments). This string is not meant to be displayed to end-users.
-      Your add-in should only use this to parse rich comment content.
-
-
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: richContent
-    fullName: richContent
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly richContent: string;'
-      return:
-        type:
-          - string
   - uid: 'excel!Excel.CommentReply#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -381,29 +346,6 @@ items:
         type:
           - 'excel!Excel.Interfaces.CommentReplyData:interface'
         description: ''
-  - uid: 'excel!Excel.CommentReply#updateMentions:member(1)'
-    summary: |-
-      Updates the comment content with a specially formatted string and a list of mentions.
-
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: updateMentions(contentWithMentions)
-    fullName: updateMentions(contentWithMentions)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'updateMentions(contentWithMentions: Excel.CommentRichContent): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: contentWithMentions
-          description: >-
-            The content for the comment. This contains a specially formatted string and a list of mentions that will be
-            parsed into the string when displayed by Excel.
-          type:
-            - 'excel!Excel.CommentRichContent:interface'
 references:
   - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
@@ -419,20 +361,9 @@ references:
     name: Excel.CommentReply
   - uid: 'excel!Excel.Interfaces.CommentReplyLoadOptions:interface'
     name: Excel.Interfaces.CommentReplyLoadOptions
-  - uid: 'excel!Excel.CommentReply#mentions~0:complex'
-    name: 'Excel.CommentMention[]'
-    fullName: 'Excel.CommentMention[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.CommentMention:interface'
-        name: Excel.CommentMention
-        fullName: Excel.CommentMention
-      - name: '[]'
-        fullName: '[]'
   - uid: 'excel!Excel.Interfaces.CommentReplyUpdateData:interface'
     name: Interfaces.CommentReplyUpdateData
   - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.CommentReplyData:interface'
     name: Excel.Interfaces.CommentReplyData
-  - uid: 'excel!Excel.CommentRichContent:interface'
-    name: Excel.CommentRichContent

@@ -13,7 +13,7 @@ items:
       - 'excel!Excel.Interfaces.ChartAxisFormatData#line:member'
   - uid: 'excel!Excel.Interfaces.ChartAxisFormatData#font:member'
     summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.
+      Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
@@ -28,7 +28,7 @@ items:
           - 'excel!Excel.Interfaces.ChartFontData:interface'
   - uid: 'excel!Excel.Interfaces.ChartAxisFormatData#line:member'
     summary: |-
-      Represents chart line formatting. Read-only.
+      Specifies chart line formatting.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line

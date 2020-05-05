@@ -33,9 +33,9 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions#showAxisFieldButtons:member'
     summary: >-
-      Specifies whether or not to display the axis field buttons on a PivotChart. The ShowAxisFieldButtons property
-      corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab,
-      which is available when a PivotChart is selected.
+      Specifies whether to display the axis field buttons on a PivotChart. The ShowAxisFieldButtons property corresponds
+      to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab, which is
+      available when a PivotChart is selected.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -51,7 +51,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions#showLegendFieldButtons:member'
     summary: |-
-      Specifies whether or not to display the legend field buttons on a PivotChart.
+      Specifies whether to display the legend field buttons on a PivotChart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showLegendFieldButtons
@@ -66,7 +66,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions#showReportFilterFieldButtons:member'
     summary: |-
-      Specifies whether or not to display the report filter field buttons on a PivotChart.
+      Specifies whether to display the report filter field buttons on a PivotChart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showReportFilterFieldButtons
@@ -81,7 +81,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions#showValueFieldButtons:member'
     summary: |-
-      Specifies whether or not to display the show value field buttons on a PivotChart.
+      Specifies whether to display the show value field buttons on a PivotChart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showValueFieldButtons

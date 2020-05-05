@@ -31,7 +31,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.BindingCollectionLoadOptions#id:member'
     summary: |-
-      For EACH ITEM in the collection: Represents binding identifier. Read-only.
+      For EACH ITEM in the collection: Represents binding identifier.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -46,7 +46,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.BindingCollectionLoadOptions#type:member'
     summary: |-
-      For EACH ITEM in the collection: Returns the type of the binding. See Excel.BindingType for details. Read-only.
+      For EACH ITEM in the collection: Returns the type of the binding. See Excel.BindingType for details.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type

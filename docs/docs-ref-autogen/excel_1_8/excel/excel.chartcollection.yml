@@ -161,7 +161,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartCollection#count:member'
     summary: |-
-      Returns the number of charts in the worksheet. Read-only.
+      Returns the number of charts in the worksheet.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count

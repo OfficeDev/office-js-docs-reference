@@ -39,7 +39,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.FormatProtection#formulaHidden:member'
     summary: >-
-      Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range
+      Specifies if Excel hides the formula for the cells in the range. A null value indicates that the entire range
       doesn't have uniform formula hidden setting.
 
 
@@ -126,7 +126,7 @@ items:
                       }
   - uid: 'excel!Excel.FormatProtection#locked:member'
     summary: >-
-      Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have
+      Specifies if Excel locks the cells in the object. A null value indicates that the entire range doesn't have
       uniform lock setting.
 
 

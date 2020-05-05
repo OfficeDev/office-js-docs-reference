@@ -46,7 +46,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.TimelineStyleCollectionLoadOptions#readOnly:member'
     summary: |-
-      For EACH ITEM in the collection: Specifies whether this TimelineStyle object is read-only. Read-only.
+      For EACH ITEM in the collection: Specifies if this TimelineStyle object is read-only.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readOnly

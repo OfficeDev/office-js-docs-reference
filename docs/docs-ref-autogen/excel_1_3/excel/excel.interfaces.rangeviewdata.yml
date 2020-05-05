@@ -23,7 +23,7 @@ items:
       - 'excel!Excel.Interfaces.RangeViewData#valueTypes:member'
   - uid: 'excel!Excel.Interfaces.RangeViewData#cellAddresses:member'
     summary: |-
-      Represents the cell addresses of the RangeView. Read-only.
+      Represents the cell addresses of the RangeView.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cellAddresses
@@ -38,7 +38,7 @@ items:
           - 'any[][]'
   - uid: 'excel!Excel.Interfaces.RangeViewData#columnCount:member'
     summary: |-
-      Returns the number of visible columns. Read-only.
+      The number of visible columns.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnCount
@@ -100,7 +100,7 @@ items:
           - 'any[][]'
   - uid: 'excel!Excel.Interfaces.RangeViewData#index:member'
     summary: |-
-      Returns a value that represents the index of the RangeView. Read-only.
+      Returns a value that represents the index of the RangeView.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
@@ -130,7 +130,7 @@ items:
           - 'any[][]'
   - uid: 'excel!Excel.Interfaces.RangeViewData#rowCount:member'
     summary: |-
-      Returns the number of visible rows. Read-only.
+      The number of visible rows.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowCount
@@ -145,7 +145,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.RangeViewData#rows:member'
     summary: |-
-      Represents a collection of range views associated with the range. Read-only.
+      Represents a collection of range views associated with the range.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rows
@@ -161,7 +161,7 @@ items:
   - uid: 'excel!Excel.Interfaces.RangeViewData#text:member'
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
-      that happens in Excel UI will not affect the text value returned by the API. Read-only.
+      that happens in Excel UI will not affect the text value returned by the API.
 
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -194,7 +194,7 @@ items:
           - 'any[][]'
   - uid: 'excel!Excel.Interfaces.RangeViewData#valueTypes:member'
     summary: |-
-      Represents the type of data of each cell. Read-only.
+      Represents the type of data of each cell.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valueTypes

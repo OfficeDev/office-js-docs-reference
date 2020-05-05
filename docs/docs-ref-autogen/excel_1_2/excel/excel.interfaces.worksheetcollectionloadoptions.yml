@@ -52,7 +52,7 @@ items:
   - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#id:member'
     summary: >-
       For EACH ITEM in the collection: Returns a value that uniquely identifies the worksheet in a given workbook. The
-      value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
+      value of the identifier remains the same even when the worksheet is renamed or moved.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

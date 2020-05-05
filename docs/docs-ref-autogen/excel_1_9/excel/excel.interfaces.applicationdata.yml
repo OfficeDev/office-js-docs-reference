@@ -15,7 +15,7 @@ items:
       - 'excel!Excel.Interfaces.ApplicationData#iterativeCalculation:member'
   - uid: 'excel!Excel.Interfaces.ApplicationData#calculationEngineVersion:member'
     summary: |-
-      Returns the Excel calculation engine version used for the last full recalculation. Read-only.
+      Returns the Excel calculation engine version used for the last full recalculation.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculationEngineVersion
@@ -50,7 +50,7 @@ items:
           - 'excel!Excel.Interfaces.ApplicationData#calculationMode~0:complex'
   - uid: 'excel!Excel.Interfaces.ApplicationData#calculationState:member'
     summary: |-
-      Returns the calculation state of the application. See Excel.CalculationState for details. Read-only.
+      Returns the calculation state of the application. See Excel.CalculationState for details.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculationState

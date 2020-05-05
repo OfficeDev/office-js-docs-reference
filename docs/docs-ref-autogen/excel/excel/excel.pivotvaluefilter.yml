@@ -46,7 +46,7 @@ items:
           - number
   - uid: 'excel!Excel.PivotValueFilter#condition:member'
     summary: >-
-      Indicates the condition for the filter, which defines the necessary filtering criteria.
+      Specifies the condition for the filter, which defines the necessary filtering criteria.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -103,7 +103,7 @@ items:
           - number
   - uid: 'excel!Excel.PivotValueFilter#selectionType:member'
     summary: >-
-      Indicates whether the filter is for the top/bottom N items, top/bottom N percent, or top/bottom N sum.
+      Specifies if the filter is for the top/bottom N items, top/bottom N percent, or top/bottom N sum.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

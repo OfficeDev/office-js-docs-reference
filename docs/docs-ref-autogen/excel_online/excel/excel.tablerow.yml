@@ -116,7 +116,7 @@ items:
           ```
   - uid: 'excel!Excel.TableRow#index:member'
     summary: |-
-      Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
+      Returns the index number of the row within the rows collection of the table. Zero-indexed.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index

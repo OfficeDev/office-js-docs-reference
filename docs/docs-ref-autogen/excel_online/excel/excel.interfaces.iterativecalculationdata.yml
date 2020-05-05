@@ -29,7 +29,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.IterativeCalculationData#maxChange:member'
     summary: |-
-      Returns or sets the maximum amount of change between each iteration as Excel resolves circular references.
+      Specifies the maximum amount of change between each iteration as Excel resolves circular references.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: maxChange
@@ -44,7 +44,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.IterativeCalculationData#maxIteration:member'
     summary: |-
-      Returns or sets the maximum number of iterations that Excel can use to resolve a circular reference.
+      Specifies the maximum number of iterations that Excel can use to resolve a circular reference.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: maxIteration

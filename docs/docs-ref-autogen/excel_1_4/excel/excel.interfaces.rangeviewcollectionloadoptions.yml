@@ -40,7 +40,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeViewCollectionLoadOptions#cellAddresses:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the cell addresses of the RangeView. Read-only.
+      For EACH ITEM in the collection: Represents the cell addresses of the RangeView.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cellAddresses
@@ -55,7 +55,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeViewCollectionLoadOptions#columnCount:member'
     summary: |-
-      For EACH ITEM in the collection: Returns the number of visible columns. Read-only.
+      For EACH ITEM in the collection: The number of visible columns.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnCount
@@ -118,7 +118,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeViewCollectionLoadOptions#index:member'
     summary: |-
-      For EACH ITEM in the collection: Returns a value that represents the index of the RangeView. Read-only.
+      For EACH ITEM in the collection: Returns a value that represents the index of the RangeView.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
@@ -148,7 +148,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeViewCollectionLoadOptions#rowCount:member'
     summary: |-
-      For EACH ITEM in the collection: Returns the number of visible rows. Read-only.
+      For EACH ITEM in the collection: The number of visible rows.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowCount
@@ -165,7 +165,6 @@ items:
     summary: >-
       For EACH ITEM in the collection: Text values of the specified range. The Text value will not depend on the cell
       width. The \# sign substitution that happens in Excel UI will not affect the text value returned by the API.
-      Read-only.
 
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -198,7 +197,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeViewCollectionLoadOptions#valueTypes:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the type of data of each cell. Read-only.
+      For EACH ITEM in the collection: Represents the type of data of each cell.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valueTypes

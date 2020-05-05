@@ -21,7 +21,7 @@ items:
       - 'excel!Excel.SortField#subField:member'
   - uid: 'excel!Excel.SortField#ascending:member'
     summary: |-
-      Represents whether the sorting is done in an ascending fashion.
+      Specifies if the sorting is done in an ascending fashion.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: ascending
@@ -36,7 +36,7 @@ items:
           - boolean
   - uid: 'excel!Excel.SortField#color:member'
     summary: |-
-      Represents the color that is the target of the condition if the sorting is on font or cell color.
+      Specifies the color that is the target of the condition if the sorting is on font or cell color.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
@@ -66,7 +66,7 @@ items:
           - 'excel!Excel.SortField#dataOption~0:complex'
   - uid: 'excel!Excel.SortField#icon:member'
     summary: |-
-      Represents the icon that is the target of the condition if the sorting is on the cell's icon.
+      Specifies the icon that is the target of the condition if the sorting is on the cell's icon.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: icon
@@ -81,7 +81,7 @@ items:
           - 'excel!Excel.Icon:interface'
   - uid: 'excel!Excel.SortField#key:member'
     summary: >-
-      Represents the column (or row, depending on the sort orientation) that the condition is on. Represented as an
+      Specifies the column (or row, depending on the sort orientation) that the condition is on. Represented as an
       offset from the first column (or row).
 
 
@@ -98,7 +98,7 @@ items:
           - number
   - uid: 'excel!Excel.SortField#sortOn:member'
     summary: |-
-      Represents the type of sorting of this condition.
+      Specifies the type of sorting of this condition.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sortOn
@@ -113,7 +113,7 @@ items:
           - 'excel!Excel.SortField#sortOn~0:complex'
   - uid: 'excel!Excel.SortField#subField:member'
     summary: |-
-      Represents the subfield that is the target property name of a rich value to sort on.
+      Specifies the subfield that is the target property name of a rich value to sort on.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subField

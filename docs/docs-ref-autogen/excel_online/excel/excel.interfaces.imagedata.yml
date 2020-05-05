@@ -13,7 +13,7 @@ items:
       - 'excel!Excel.Interfaces.ImageData#id:member'
   - uid: 'excel!Excel.Interfaces.ImageData#format:member'
     summary: |-
-      Returns the format of the image. Read-only.
+      Returns the format of the image.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -28,7 +28,7 @@ items:
           - 'excel!Excel.Interfaces.ImageData#format~0:complex'
   - uid: 'excel!Excel.Interfaces.ImageData#id:member'
     summary: |-
-      Represents the shape identifier for the image object. Read-only.
+      Specifies the shape identifier for the image object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id

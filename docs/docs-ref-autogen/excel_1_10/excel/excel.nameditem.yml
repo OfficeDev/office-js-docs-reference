@@ -39,7 +39,7 @@ items:
       - 'excel!Excel.NamedItem#worksheetOrNullObject:member'
   - uid: 'excel!Excel.NamedItem#arrayValues:member'
     summary: |-
-      Returns an object containing values and types of the named item. Read-only.
+      Returns an object containing values and types of the named item.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: arrayValues
@@ -54,7 +54,7 @@ items:
           - 'excel!Excel.NamedItemArrayValues:class'
   - uid: 'excel!Excel.NamedItem#comment:member'
     summary: |-
-      Represents the comment associated with this name.
+      Specifies the comment associated with this name.
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: comment
@@ -128,7 +128,7 @@ items:
           ```
   - uid: 'excel!Excel.NamedItem#formula:member'
     summary: |-
-      Gets or sets the formula of the named item. Formula always starts with a '=' sign.
+      The formula of the named item. Formula always starts with a '=' sign.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
@@ -322,7 +322,7 @@ items:
                       }
   - uid: 'excel!Excel.NamedItem#name:member'
     summary: |-
-      The name of the object. Read-only.
+      The name of the object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -337,8 +337,8 @@ items:
           - string
   - uid: 'excel!Excel.NamedItem#scope:member'
     summary: >-
-      Indicates whether the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet,
-      Workbook. Read-only.
+      Specifies if the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet,
+      Workbook.
 
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -420,7 +420,7 @@ items:
         description: ''
   - uid: 'excel!Excel.NamedItem#type:member'
     summary: >-
-      Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
+      Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.
 
 
       \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
@@ -437,7 +437,7 @@ items:
           - 'excel!Excel.NamedItem#type~0:complex'
   - uid: 'excel!Excel.NamedItem#value:member'
     summary: |-
-      Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
+      Represents the value computed by the name's formula. For a named range, will return the range address.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
@@ -452,7 +452,7 @@ items:
           - any
   - uid: 'excel!Excel.NamedItem#visible:member'
     summary: |-
-      Specifies whether the object is visible or not.
+      Specifies if the object is visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible

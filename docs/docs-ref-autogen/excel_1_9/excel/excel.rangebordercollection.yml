@@ -41,7 +41,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.RangeBorderCollection#count:member'
     summary: |-
-      Number of border objects in the collection. Read-only.
+      Number of border objects in the collection.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
@@ -269,8 +269,8 @@ items:
             - 'office!OfficeExtension.LoadOption:interface'
   - uid: 'excel!Excel.RangeBorderCollection#tintAndShade:member'
     summary: >-
-      Returns or sets a double that lightens or darkens a color for Range Borders, the value is between -1 (darkest) and
-      1 (brightest), with 0 for the original color. A null value indicates that the entire border collections don't have
+      Specifies a double that lightens or darkens a color for Range Borders, the value is between -1 (darkest) and 1
+      (brightest), with 0 for the original color. A null value indicates that the entire border collections don't have
       uniform tintAndShade setting.
 
 

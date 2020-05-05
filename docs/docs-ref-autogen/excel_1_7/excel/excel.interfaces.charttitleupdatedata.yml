@@ -37,7 +37,7 @@ items:
           - 'excel!Excel.Interfaces.ChartTitleFormatUpdateData:interface'
   - uid: 'excel!Excel.Interfaces.ChartTitleUpdateData#horizontalAlignment:member'
     summary: |-
-      Represents the horizontal alignment for chart title.
+      Specifies the horizontal alignment for chart title.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
@@ -54,8 +54,8 @@ items:
           - 'excel!Excel.Interfaces.ChartTitleUpdateData#horizontalAlignment~0:complex'
   - uid: 'excel!Excel.Interfaces.ChartTitleUpdateData#left:member'
     summary: >-
-      Represents the distance, in points, from the left edge of chart title to the left edge of chart area. Null if
-      chart title is not visible.
+      Specifies the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart
+      title is not visible.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -71,7 +71,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ChartTitleUpdateData#overlay:member'
     summary: |-
-      Boolean value representing if the chart title will overlay the chart or not.
+      Specifies if the chart title will overlay the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overlay
@@ -116,7 +116,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartTitleUpdateData#text:member'
     summary: |-
-      Represents the title text of a chart.
+      Specifies the chart's title text.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
@@ -131,7 +131,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.ChartTitleUpdateData#textOrientation:member'
     summary: >-
-      Represents the angle to which the text is oriented for the chart title. The value should either be an integer from
+      Specifies the angle to which the text is oriented for the chart title. The value should either be an integer from
       -90 to 90 or the integer 180 for vertically-oriented text.
 
 
@@ -148,7 +148,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ChartTitleUpdateData#top:member'
     summary: >-
-      Represents the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title
+      Specifies the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title
       is not visible.
 
 
@@ -165,7 +165,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ChartTitleUpdateData#verticalAlignment:member'
     summary: |-
-      Represents the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
+      Specifies the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
@@ -180,7 +180,7 @@ items:
           - 'excel!Excel.Interfaces.ChartTitleUpdateData#verticalAlignment~0:complex'
   - uid: 'excel!Excel.Interfaces.ChartTitleUpdateData#visible:member'
     summary: |-
-      A boolean value the represents the visibility of a chart title object.
+      Specifies if the chart title is visibile.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible

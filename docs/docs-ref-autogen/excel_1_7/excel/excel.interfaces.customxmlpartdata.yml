@@ -13,7 +13,7 @@ items:
       - 'excel!Excel.Interfaces.CustomXmlPartData#namespaceUri:member'
   - uid: 'excel!Excel.Interfaces.CustomXmlPartData#id:member'
     summary: |-
-      The custom XML part's ID. Read-only.
+      The custom XML part's ID.
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -28,7 +28,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.CustomXmlPartData#namespaceUri:member'
     summary: |-
-      The custom XML part's namespace URI. Read-only.
+      The custom XML part's namespace URI.
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: namespaceUri

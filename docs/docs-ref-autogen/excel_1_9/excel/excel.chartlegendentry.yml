@@ -43,7 +43,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartLegendEntry#height:member'
     summary: |-
-      Represents the height of the legendEntry on the chart legend.
+      Specifies the height of the legendEntry on the chart legend.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -58,7 +58,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartLegendEntry#index:member'
     summary: |-
-      Represents the index of the legendEntry in the chart legend.
+      Specifies the index of the legendEntry in the chart legend.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
@@ -73,7 +73,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartLegendEntry#left:member'
     summary: |-
-      Represents the left of a chart legendEntry.
+      Specifies the left of a chart legendEntry.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
@@ -224,7 +224,7 @@ items:
         description: ''
   - uid: 'excel!Excel.ChartLegendEntry#top:member'
     summary: |-
-      Represents the top of a chart legendEntry.
+      Specifies the top of a chart legendEntry.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top

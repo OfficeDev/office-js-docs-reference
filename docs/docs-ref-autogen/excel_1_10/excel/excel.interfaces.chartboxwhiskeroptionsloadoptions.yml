@@ -34,7 +34,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions#quartileCalculation:member'
     summary: |-
-      Returns or sets the quartile calculation type of a box and whisker chart. Read/Write.
+      Specifies if the quartile calculation type of a box and whisker chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: quartileCalculation
@@ -49,7 +49,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions#showInnerPoints:member'
     summary: |-
-      Specifies whether or not the inner points are shown in a box and whisker chart. Read/Write.
+      Specifies if inner points are shown in a box and whisker chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showInnerPoints
@@ -64,7 +64,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions#showMeanLine:member'
     summary: |-
-      Specifies whether or not the mean line is shown in a box and whisker chart. Read/Write.
+      Specifies if the mean line is shown in a box and whisker chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showMeanLine
@@ -79,7 +79,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions#showMeanMarker:member'
     summary: |-
-      Specifies whether or not the mean marker is shown in a box and whisker chart. Read/Write.
+      Specifies if the mean marker is shown in a box and whisker chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showMeanMarker
@@ -94,7 +94,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions#showOutlierPoints:member'
     summary: |-
-      Specifies whether or not outlier points are shown in a box and whisker chart. Read/Write.
+      Specifies if outlier points are shown in a box and whisker chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showOutlierPoints

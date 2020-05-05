@@ -28,7 +28,7 @@ items:
       - 'excel!Excel.ChartAreaFormat#toJSON:member(1)'
   - uid: 'excel!Excel.ChartAreaFormat#border:member'
     summary: |-
-      Represents the border format of chart area, which includes color, linestyle, and weight. Read-only.
+      Represents the border format of chart area, which includes color, linestyle, and weight.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
@@ -43,7 +43,7 @@ items:
           - 'excel!Excel.ChartBorder:class'
   - uid: 'excel!Excel.ChartAreaFormat#colorScheme:member'
     summary: |-
-      Returns or sets color scheme of the chart. Read/Write.
+      Specifies the color scheme of the chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: colorScheme
@@ -77,7 +77,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartAreaFormat#fill:member'
     summary: |-
-      Represents the fill format of an object, which includes background formatting information. Read-only.
+      Represents the fill format of an object, which includes background formatting information.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
@@ -92,7 +92,7 @@ items:
           - 'excel!Excel.ChartFill:class'
   - uid: 'excel!Excel.ChartAreaFormat#font:member'
     summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.
+      Represents the font attributes (font name, font size, color, etc.) for the current object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
@@ -177,7 +177,7 @@ items:
                       }
   - uid: 'excel!Excel.ChartAreaFormat#roundedCorners:member'
     summary: |-
-      Specifies whether or not chart area of the chart has rounded corners. Read/Write.
+      Specifies if the chart area of the chart has rounded corners.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: roundedCorners

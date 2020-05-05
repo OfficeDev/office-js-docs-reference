@@ -39,7 +39,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#format:member'
     summary: |-
-      Represents the formatting of a chart plotArea.
+      Specifies the formatting of a chart plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -54,7 +54,7 @@ items:
           - 'excel!Excel.Interfaces.ChartPlotAreaFormatLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#height:member'
     summary: |-
-      Represents the height value of plotArea.
+      Specifies the height value of plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -69,7 +69,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#insideHeight:member'
     summary: |-
-      Represents the insideHeight value of plotArea.
+      Specifies the insideHeight value of plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideHeight
@@ -84,7 +84,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#insideLeft:member'
     summary: |-
-      Represents the insideLeft value of plotArea.
+      Specifies the insideLeft value of plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideLeft
@@ -99,7 +99,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#insideTop:member'
     summary: |-
-      Represents the insideTop value of plotArea.
+      Specifies the insideTop value of plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideTop
@@ -114,7 +114,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#insideWidth:member'
     summary: |-
-      Represents the insideWidth value of plotArea.
+      Specifies the insideWidth value of plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: insideWidth
@@ -129,7 +129,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#left:member'
     summary: |-
-      Represents the left value of plotArea.
+      Specifies the left value of plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
@@ -144,7 +144,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#position:member'
     summary: |-
-      Represents the position of plotArea.
+      Specifies the position of plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
@@ -159,7 +159,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#top:member'
     summary: |-
-      Represents the top value of plotArea.
+      Specifies the top value of plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
@@ -174,7 +174,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions#width:member'
     summary: |-
-      Represents the width value of plotArea.
+      Specifies the width value of plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width

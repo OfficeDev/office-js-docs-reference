@@ -52,7 +52,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#autoIndent:member'
     summary: >-
-      For EACH ITEM in the collection: Indicates if text is automatically indented when the text alignment in a cell is
+      For EACH ITEM in the collection: Specifies if text is automatically indented when the text alignment in a cell is
       set to equal distribution.
 
 
@@ -86,7 +86,7 @@ items:
           - 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#builtIn:member'
     summary: |-
-      For EACH ITEM in the collection: Indicates if the style is a built-in style.
+      For EACH ITEM in the collection: Specifies if the style is a built-in style.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: builtIn
@@ -131,7 +131,7 @@ items:
           - 'excel!Excel.Interfaces.RangeFontLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#formulaHidden:member'
     summary: |-
-      For EACH ITEM in the collection: Indicates if the formula will be hidden when the worksheet is protected.
+      For EACH ITEM in the collection: Specifies if the formula will be hidden when the worksheet is protected.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaHidden
@@ -163,7 +163,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#includeAlignment:member'
     summary: >-
-      For EACH ITEM in the collection: Indicates if the style includes the AutoIndent, HorizontalAlignment,
+      For EACH ITEM in the collection: Specifies if the style includes the AutoIndent, HorizontalAlignment,
       VerticalAlignment, WrapText, IndentLevel, and TextOrientation properties.
 
 
@@ -180,7 +180,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#includeBorder:member'
     summary: >-
-      For EACH ITEM in the collection: Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight
+      For EACH ITEM in the collection: Specifies if the style includes the Color, ColorIndex, LineStyle, and Weight
       border properties.
 
 
@@ -197,7 +197,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#includeFont:member'
     summary: >-
-      For EACH ITEM in the collection: Indicates if the style includes the Background, Bold, Color, ColorIndex,
+      For EACH ITEM in the collection: Specifies if the style includes the Background, Bold, Color, ColorIndex,
       FontStyle, Italic, Name, Size, Strikethrough, Subscript, Superscript, and Underline font properties.
 
 
@@ -214,7 +214,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#includeNumber:member'
     summary: |-
-      For EACH ITEM in the collection: Indicates if the style includes the NumberFormat property.
+      For EACH ITEM in the collection: Specifies if the style includes the NumberFormat property.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: includeNumber
@@ -229,7 +229,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#includePatterns:member'
     summary: >-
-      For EACH ITEM in the collection: Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern,
+      For EACH ITEM in the collection: Specifies if the style includes the Color, ColorIndex, InvertIfNegative, Pattern,
       PatternColor, and PatternColorIndex interior properties.
 
 
@@ -246,7 +246,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#includeProtection:member'
     summary: >-
-      For EACH ITEM in the collection: Indicates if the style includes the FormulaHidden and Locked protection
+      For EACH ITEM in the collection: Specifies if the style includes the FormulaHidden and Locked protection
       properties.
 
 
@@ -278,7 +278,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#locked:member'
     summary: |-
-      For EACH ITEM in the collection: Indicates if the object is locked when the worksheet is protected.
+      For EACH ITEM in the collection: Specifies if the object is locked when the worksheet is protected.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: locked
@@ -353,7 +353,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#shrinkToFit:member'
     summary: |-
-      For EACH ITEM in the collection: Indicates if text automatically shrinks to fit in the available column width.
+      For EACH ITEM in the collection: Specifies if text automatically shrinks to fit in the available column width.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shrinkToFit
@@ -383,7 +383,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#verticalAlignment:member'
     summary: >-
-      For EACH ITEM in the collection: Represents the vertical alignment for the style. See Excel.VerticalAlignment for
+      For EACH ITEM in the collection: Specifies the vertical alignment for the style. See Excel.VerticalAlignment for
       details.
 
 
@@ -400,7 +400,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleCollectionLoadOptions#wrapText:member'
     summary: |-
-      For EACH ITEM in the collection: Indicates if Microsoft Excel wraps the text in the object.
+      For EACH ITEM in the collection: Specifies if Excel wraps the text in the object.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: wrapText

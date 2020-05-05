@@ -168,10 +168,6 @@ items:
                 uid: 'excel!Excel.ConnectorType:enum'
               - name: ContentType
                 uid: 'excel!Excel.ContentType:enum'
-              - name: CustomFunctionMetadataFormat
-                uid: 'excel!Excel.CustomFunctionMetadataFormat:enum'
-              - name: CustomFunctionType
-                uid: 'excel!Excel.CustomFunctionType:enum'
               - name: DataChangeType
                 uid: 'excel!Excel.DataChangeType:enum'
               - name: DataValidationAlertStyle

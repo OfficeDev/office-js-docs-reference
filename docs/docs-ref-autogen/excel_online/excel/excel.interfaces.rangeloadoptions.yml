@@ -63,10 +63,8 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions#address:member'
-    summary: >-
-      Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4").
-      Read-only.
-
+    summary: |-
+      Specifies the range reference in A1-style. Address value will contain the Sheet reference (e.g., "Sheet1!A1:B4").
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
@@ -81,7 +79,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions#addressLocal:member'
     summary: |-
-      Represents range reference for the specified range in the language of the user. Read-only.
+      Specifies the range reference for the specified range in the language of the user.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addressLocal
@@ -95,8 +93,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions#cellCount:member'
-    summary: |-
-      Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
+    summary: >-
+      Specifies the number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1
+      (2,147,483,647).
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cellCount
@@ -111,7 +111,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions#columnCount:member'
     summary: |-
-      Represents the total number of columns in the range. Read-only.
+      Specifies the total number of columns in the range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnCount
@@ -141,7 +141,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions#columnIndex:member'
     summary: |-
-      Represents the column number of the first cell in the range. Zero-indexed. Read-only.
+      Specifies the column number of the first cell in the range. Zero-indexed.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnIndex
@@ -233,7 +233,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions#height:member'
     summary: |-
-      Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
+      Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -248,7 +248,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions#hidden:member'
     summary: |-
-      Represents if all cells of the current range are hidden. Read-only.
+      Represents if all cells of the current range are hidden.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hidden
@@ -278,7 +278,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions#isEntireColumn:member'
     summary: |-
-      Represents if the current range is an entire column. Read-only.
+      Represents if the current range is an entire column.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireColumn
@@ -293,7 +293,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions#isEntireRow:member'
     summary: |-
-      Represents if the current range is an entire row. Read-only.
+      Represents if the current range is an entire row.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireRow
@@ -307,10 +307,8 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions#left:member'
-    summary: >-
+    summary: |-
       Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range.
-      Read-only.
-
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
@@ -325,7 +323,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions#linkedDataTypeState:member'
     summary: |-
-      Represents the data type state of each cell. Read-only.
+      Represents the data type state of each cell.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: linkedDataTypeState
@@ -373,7 +371,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions#rowCount:member'
     summary: |-
-      Returns the total number of rows in the range. Read-only.
+      Returns the total number of rows in the range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowCount
@@ -403,7 +401,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions#rowIndex:member'
     summary: |-
-      Returns the row number of the first cell in the range. Zero-indexed. Read-only.
+      Returns the row number of the first cell in the range. Zero-indexed.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowIndex
@@ -437,7 +435,7 @@ items:
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions#text:member'
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
-      that happens in Excel UI will not affect the text value returned by the API. Read-only.
+      that happens in Excel UI will not affect the text value returned by the API.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -453,7 +451,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions#top:member'
     summary: |-
-      Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
+      Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
@@ -485,7 +483,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions#valueTypes:member'
     summary: |-
-      Represents the type of data of each cell. Read-only.
+      Specifies the type of data in each cell.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valueTypes
@@ -500,7 +498,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions#width:member'
     summary: |-
-      Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
+      Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width

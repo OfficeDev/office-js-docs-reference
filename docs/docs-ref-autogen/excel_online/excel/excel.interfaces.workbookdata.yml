@@ -35,7 +35,7 @@ items:
       - 'excel!Excel.Interfaces.WorkbookData#worksheets:member'
   - uid: 'excel!Excel.Interfaces.WorkbookData#autoSave:member'
     summary: |-
-      Specifies whether or not the workbook is in autosave mode. Read-Only.
+      Specifies if the workbook is in autosave mode.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoSave
@@ -50,7 +50,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorkbookData#bindings:member'
     summary: |-
-      Represents a collection of bindings that are part of the workbook. Read-only.
+      Represents a collection of bindings that are part of the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bindings
@@ -65,7 +65,7 @@ items:
           - 'excel!Excel.Interfaces.WorkbookData#bindings~0:complex'
   - uid: 'excel!Excel.Interfaces.WorkbookData#calculationEngineVersion:member'
     summary: |-
-      Returns a number about the version of Excel Calculation Engine. Read-Only.
+      Returns a number about the version of Excel Calculation Engine.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculationEngineVersion
@@ -97,7 +97,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorkbookData#comments:member'
     summary: |-
-      Represents a collection of Comments associated with the workbook. Read-only.
+      Represents a collection of Comments associated with the workbook.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: comments
@@ -112,7 +112,7 @@ items:
           - 'excel!Excel.Interfaces.WorkbookData#comments~0:complex'
   - uid: 'excel!Excel.Interfaces.WorkbookData#customXmlParts:member'
     summary: |-
-      Represents the collection of custom XML parts contained by this workbook. Read-only.
+      Represents the collection of custom XML parts contained by this workbook.
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: customXmlParts
@@ -127,8 +127,8 @@ items:
           - 'excel!Excel.Interfaces.WorkbookData#customXmlParts~0:complex'
   - uid: 'excel!Excel.Interfaces.WorkbookData#isDirty:member'
     summary: >-
-      Specifies whether or not changes have been made since the workbook was last saved. You can set this property to
-      true if you want to close a modified workbook without either saving it or being prompted to save it.
+      Specifies if changes have been made since the workbook was last saved. You can set this property to true if you
+      want to close a modified workbook without either saving it or being prompted to save it.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -144,7 +144,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorkbookData#name:member'
     summary: |-
-      Gets the workbook name. Read-only.
+      Gets the workbook name.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -159,7 +159,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.WorkbookData#names:member'
     summary: |-
-      Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
+      Represents a collection of workbook scoped named items (named ranges and constants).
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: names
@@ -174,7 +174,7 @@ items:
           - 'excel!Excel.Interfaces.WorkbookData#names~0:complex'
   - uid: 'excel!Excel.Interfaces.WorkbookData#pivotTables:member'
     summary: |-
-      Represents a collection of PivotTables associated with the workbook. Read-only.
+      Represents a collection of PivotTables associated with the workbook.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pivotTables
@@ -189,7 +189,7 @@ items:
           - 'excel!Excel.Interfaces.WorkbookData#pivotTables~0:complex'
   - uid: 'excel!Excel.Interfaces.WorkbookData#pivotTableStyles:member'
     summary: |-
-      Represents a collection of PivotTableStyles associated with the workbook. Read-only.
+      Represents a collection of PivotTableStyles associated with the workbook.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pivotTableStyles
@@ -204,7 +204,7 @@ items:
           - 'excel!Excel.Interfaces.WorkbookData#pivotTableStyles~0:complex'
   - uid: 'excel!Excel.Interfaces.WorkbookData#previouslySaved:member'
     summary: |-
-      Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
+      Specifies if the workbook has ever been saved locally or online.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: previouslySaved
@@ -219,7 +219,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorkbookData#properties:member'
     summary: |-
-      Gets the workbook properties. Read-only.
+      Gets the workbook properties.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: properties
@@ -234,7 +234,7 @@ items:
           - 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
   - uid: 'excel!Excel.Interfaces.WorkbookData#protection:member'
     summary: |-
-      Returns workbook protection object for a workbook. Read-only.
+      Returns workbook protection object for a workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protection
@@ -249,7 +249,7 @@ items:
           - 'excel!Excel.Interfaces.WorkbookProtectionData:interface'
   - uid: 'excel!Excel.Interfaces.WorkbookData#readOnly:member'
     summary: |-
-      True if the workbook is open in Read-only mode. Read-only.
+      True if the workbook is open in Read-only mode.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readOnly
@@ -264,7 +264,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorkbookData#settings:member'
     summary: |-
-      Represents a collection of Settings associated with the workbook. Read-only.
+      Represents a collection of Settings associated with the workbook.
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: settings
@@ -279,7 +279,7 @@ items:
           - 'excel!Excel.Interfaces.WorkbookData#settings~0:complex'
   - uid: 'excel!Excel.Interfaces.WorkbookData#slicers:member'
     summary: |-
-      Represents a collection of Slicers associated with the workbook. Read-only.
+      Represents a collection of Slicers associated with the workbook.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: slicers
@@ -294,7 +294,7 @@ items:
           - 'excel!Excel.Interfaces.WorkbookData#slicers~0:complex'
   - uid: 'excel!Excel.Interfaces.WorkbookData#slicerStyles:member'
     summary: |-
-      Represents a collection of SlicerStyles associated with the workbook. Read-only.
+      Represents a collection of SlicerStyles associated with the workbook.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: slicerStyles
@@ -309,7 +309,7 @@ items:
           - 'excel!Excel.Interfaces.WorkbookData#slicerStyles~0:complex'
   - uid: 'excel!Excel.Interfaces.WorkbookData#styles:member'
     summary: |-
-      Represents a collection of styles associated with the workbook. Read-only.
+      Represents a collection of styles associated with the workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: styles
@@ -324,7 +324,7 @@ items:
           - 'excel!Excel.Interfaces.WorkbookData#styles~0:complex'
   - uid: 'excel!Excel.Interfaces.WorkbookData#tables:member'
     summary: |-
-      Represents a collection of tables associated with the workbook. Read-only.
+      Represents a collection of tables associated with the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tables
@@ -339,7 +339,7 @@ items:
           - 'excel!Excel.Interfaces.WorkbookData#tables~0:complex'
   - uid: 'excel!Excel.Interfaces.WorkbookData#tableStyles:member'
     summary: |-
-      Represents a collection of TableStyles associated with the workbook. Read-only.
+      Represents a collection of TableStyles associated with the workbook.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tableStyles
@@ -354,7 +354,7 @@ items:
           - 'excel!Excel.Interfaces.WorkbookData#tableStyles~0:complex'
   - uid: 'excel!Excel.Interfaces.WorkbookData#timelineStyles:member'
     summary: |-
-      Represents a collection of TimelineStyles associated with the workbook. Read-only.
+      Represents a collection of TimelineStyles associated with the workbook.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: timelineStyles
@@ -386,7 +386,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorkbookData#worksheets:member'
     summary: |-
-      Represents a collection of worksheets associated with the workbook. Read-only.
+      Represents a collection of worksheets associated with the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheets

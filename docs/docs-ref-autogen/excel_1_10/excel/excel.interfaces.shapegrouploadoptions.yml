@@ -33,7 +33,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ShapeGroupLoadOptions#id:member'
     summary: |-
-      Represents the shape identifier. Read-only.
+      Specifies the shape identifier.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id

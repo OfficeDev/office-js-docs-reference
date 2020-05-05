@@ -96,7 +96,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.TableColumnCollection#count:member'
     summary: |-
-      Returns the number of columns in the table. Read-only.
+      Returns the number of columns in the table.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count

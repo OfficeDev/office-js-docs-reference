@@ -13,7 +13,7 @@ items:
       - 'excel!Excel.Interfaces.ChartLegendFormatData#font:member'
   - uid: 'excel!Excel.Interfaces.ChartLegendFormatData#border:member'
     summary: |-
-      Represents the border format, which includes color, linestyle, and weight. Read-only.
+      Represents the border format, which includes color, linestyle, and weight.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
@@ -28,7 +28,7 @@ items:
           - 'excel!Excel.Interfaces.ChartBorderData:interface'
   - uid: 'excel!Excel.Interfaces.ChartLegendFormatData#font:member'
     summary: |-
-      Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.
+      Represents the font attributes such as font name, font size, color, etc. of a chart legend.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font

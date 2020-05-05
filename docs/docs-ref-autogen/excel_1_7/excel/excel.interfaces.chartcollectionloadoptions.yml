@@ -59,7 +59,7 @@ items:
           - 'excel!Excel.Interfaces.ChartAxesLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#chartType:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the type of the chart. See Excel.ChartType for details.
+      For EACH ITEM in the collection: Specifies the type of the chart. See Excel.ChartType for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: chartType
@@ -104,7 +104,7 @@ items:
           - 'excel!Excel.Interfaces.ChartAreaFormatLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#height:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the height, in points, of the chart object.
+      For EACH ITEM in the collection: Specifies the height, in points, of the chart object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -119,7 +119,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#id:member'
     summary: |-
-      For EACH ITEM in the collection: The unique id of chart. Read-only.
+      For EACH ITEM in the collection: The unique id of chart.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -164,7 +164,7 @@ items:
           - 'excel!Excel.Interfaces.ChartLegendLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#name:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the name of a chart object.
+      For EACH ITEM in the collection: Specifies the name of a chart object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -194,7 +194,7 @@ items:
           - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#showAllFieldButtons:member'
     summary: |-
-      For EACH ITEM in the collection: Represents whether to display all field buttons on a PivotChart.
+      For EACH ITEM in the collection: Specifies whether to display all field buttons on a PivotChart.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAllFieldButtons
@@ -209,7 +209,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#title:member'
     summary: >-
-      For EACH ITEM in the collection: Represents the title of the specified chart, including the text, visibility,
+      For EACH ITEM in the collection: Specifies the title of the specified chart, including the text, visibility,
       position, and formatting of the title.
 
 
@@ -226,7 +226,7 @@ items:
           - 'excel!Excel.Interfaces.ChartTitleLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#top:member'
     summary: >-
-      For EACH ITEM in the collection: Represents the distance, in points, from the top edge of the object to the top of
+      For EACH ITEM in the collection: Specifies the distance, in points, from the top edge of the object to the top of
       row 1 (on a worksheet) or the top of the chart area (on a chart).
 
 
@@ -243,7 +243,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartCollectionLoadOptions#width:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the width, in points, of the chart object.
+      For EACH ITEM in the collection: Specifies the width, in points, of the chart object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width

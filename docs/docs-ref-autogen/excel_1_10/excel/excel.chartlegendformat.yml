@@ -26,7 +26,7 @@ items:
       - 'excel!Excel.ChartLegendFormat#toJSON:member(1)'
   - uid: 'excel!Excel.ChartLegendFormat#border:member'
     summary: |-
-      Represents the border format, which includes color, linestyle, and weight. Read-only.
+      Represents the border format, which includes color, linestyle, and weight.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
@@ -55,7 +55,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartLegendFormat#fill:member'
     summary: |-
-      Represents the fill format of an object, which includes background formatting information. Read-only.
+      Represents the fill format of an object, which includes background formatting information.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
@@ -70,7 +70,7 @@ items:
           - 'excel!Excel.ChartFill:class'
   - uid: 'excel!Excel.ChartLegendFormat#font:member'
     summary: |-
-      Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.
+      Represents the font attributes such as font name, font size, color, etc. of a chart legend.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font

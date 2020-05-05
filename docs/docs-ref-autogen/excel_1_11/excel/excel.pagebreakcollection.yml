@@ -1,0 +1,274 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PageBreakCollection:class'
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.PageBreakCollection
+    fullName: Excel.PageBreakCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientObject:class'
+    package: excel!
+    children:
+      - 'excel!Excel.PageBreakCollection#add:member(1)'
+      - 'excel!Excel.PageBreakCollection#context:member'
+      - 'excel!Excel.PageBreakCollection#getCount:member(1)'
+      - 'excel!Excel.PageBreakCollection#getItem:member(1)'
+      - 'excel!Excel.PageBreakCollection#items:member'
+      - 'excel!Excel.PageBreakCollection#load:member(1)'
+      - 'excel!Excel.PageBreakCollection#load:member(2)'
+      - 'excel!Excel.PageBreakCollection#load:member(3)'
+      - 'excel!Excel.PageBreakCollection#removePageBreaks:member(1)'
+      - 'excel!Excel.PageBreakCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.PageBreakCollection#add:member(1)'
+    summary: |-
+      Adds a page break before the top-left cell of the range specified.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: add(pageBreakRange)
+    fullName: add(pageBreakRange)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(pageBreakRange: Range | string): Excel.PageBreak;'
+      return:
+        type:
+          - 'excel!Excel.PageBreak:class'
+        description: >-
+
+
+          #### Examples
+
+
+          ```typescript
+
+          // Link to full sample:
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/54-worksheet/worksheet-page-layout.yaml
+
+          await Excel.run(async (context) => {
+              const farmSheet = context.workbook.worksheets.getItem("Print");
+              farmSheet.horizontalPageBreaks.add("A21:E21");
+              await context.sync();
+          });
+
+          ```
+      parameters:
+        - id: pageBreakRange
+          description: The range immediately after the page break to be added.
+          type:
+            - 'excel!Excel.PageBreakCollection#add~0:complex'
+  - uid: 'excel!Excel.PageBreakCollection#context:member'
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PageBreakCollection#getCount:member(1)'
+    summary: |-
+      Gets the number of page breaks in the collection.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.PageBreakCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.PageBreakCollection#getItem:member(1)'
+    summary: |-
+      Gets a page break object via the index.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(index)
+    fullName: getItem(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number): Excel.PageBreak;'
+      return:
+        type:
+          - 'excel!Excel.PageBreak:class'
+        description: ''
+      parameters:
+        - id: index
+          description: Index of the page break.
+          type:
+            - number
+  - uid: 'excel!Excel.PageBreakCollection#items:member'
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.PageBreak[];'
+      return:
+        type:
+          - 'excel!Excel.PageBreakCollection#items~0:complex'
+  - uid: 'excel!Excel.PageBreakCollection#load:member(1)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(options)
+    fullName: load(options)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(options?: Excel.Interfaces.PageBreakCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.PageBreakCollection;
+      return:
+        type:
+          - 'excel!Excel.PageBreakCollection:class'
+        description: ''
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type:
+            - 'excel!Excel.PageBreakCollection#load~0:complex'
+  - uid: 'excel!Excel.PageBreakCollection#load:member(2)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.PageBreakCollection;'
+      return:
+        type:
+          - 'excel!Excel.PageBreakCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PageBreakCollection#load:member(3)'
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Excel.PageBreakCollection;'
+      return:
+        type:
+          - 'excel!Excel.PageBreakCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - 'office!OfficeExtension.LoadOption:interface'
+  - uid: 'excel!Excel.PageBreakCollection#removePageBreaks:member(1)'
+    summary: |-
+      Resets all manual page breaks in the collection.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: removePageBreaks()
+    fullName: removePageBreaks()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removePageBreaks(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.PageBreakCollection#toJSON:member(1)'
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.PageBreakCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.PageBreakCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.PageBreakCollectionData;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.PageBreakCollectionData:interface'
+        description: ''
+references:
+  - uid: 'office!OfficeExtension.ClientObject:class'
+    name: OfficeExtension.ClientObject
+  - uid: 'excel!Excel.PageBreak:class'
+    name: Excel.PageBreak
+  - uid: 'excel!Excel.PageBreakCollection#add~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:class'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+  - uid: 'excel!Excel.PageBreakCollection#getCount~0:complex'
+    name: OfficeExtension.ClientResult<number>
+    fullName: OfficeExtension.ClientResult<number>
+    spec.typeScript:
+      - uid: 'office!OfficeExtension.ClientResult:class'
+        name: OfficeExtension.ClientResult
+        fullName: OfficeExtension.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.PageBreakCollection#items~0:complex'
+    name: 'Excel.PageBreak[]'
+    fullName: 'Excel.PageBreak[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.PageBreak:class'
+        name: Excel.PageBreak
+        fullName: Excel.PageBreak
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.PageBreakCollection:class'
+    name: Excel.PageBreakCollection
+  - uid: 'excel!Excel.PageBreakCollection#load~0:complex'
+    name: Excel.Interfaces.PageBreakCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    fullName: Excel.Interfaces.PageBreakCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PageBreakCollectionLoadOptions:interface'
+        name: Excel.Interfaces.PageBreakCollectionLoadOptions
+        fullName: Excel.Interfaces.PageBreakCollectionLoadOptions
+      - name: ' & '
+        fullName: ' & '
+      - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
+        name: Excel.Interfaces.CollectionLoadOptions
+        fullName: Excel.Interfaces.CollectionLoadOptions
+  - uid: 'office!OfficeExtension.LoadOption:interface'
+    name: OfficeExtension.LoadOption
+  - uid: 'excel!Excel.Interfaces.PageBreakCollectionData:interface'
+    name: Excel.Interfaces.PageBreakCollectionData

@@ -45,7 +45,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartPoint#dataLabel:member'
     summary: |-
-      Returns the data label of a chart point. Read-only.
+      Returns the data label of a chart point.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataLabel
@@ -60,7 +60,7 @@ items:
           - 'excel!Excel.ChartDataLabel:class'
   - uid: 'excel!Excel.ChartPoint#format:member'
     summary: |-
-      Encapsulates the format properties chart point. Read-only.
+      Encapsulates the format properties chart point.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -160,7 +160,7 @@ items:
                       }
   - uid: 'excel!Excel.ChartPoint#markerBackgroundColor:member'
     summary: |-
-      HTML color code representation of the marker background color of data point. E.g. \#FF0000 represents Red.
+      HTML color code representation of the marker background color of data point. e.g., \#FF0000 represents Red.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerBackgroundColor
@@ -175,7 +175,7 @@ items:
           - string
   - uid: 'excel!Excel.ChartPoint#markerForegroundColor:member'
     summary: |-
-      HTML color code representation of the marker foreground color of data point. E.g. \#FF0000 represents Red.
+      HTML color code representation of the marker foreground color of data point. e.g., \#FF0000 represents Red.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerForegroundColor
@@ -288,7 +288,7 @@ items:
         description: ''
   - uid: 'excel!Excel.ChartPoint#value:member'
     summary: |-
-      Returns the value of a chart point. Read-only.
+      Returns the value of a chart point.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value

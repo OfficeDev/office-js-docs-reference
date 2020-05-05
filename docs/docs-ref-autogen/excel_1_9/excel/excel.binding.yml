@@ -164,7 +164,7 @@ items:
           ```
   - uid: 'excel!Excel.Binding#id:member'
     summary: |-
-      Represents binding identifier. Read-only.
+      Represents binding identifier.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -343,7 +343,7 @@ items:
         description: ''
   - uid: 'excel!Excel.Binding#type:member'
     summary: |-
-      Returns the type of the binding. See Excel.BindingType for details. Read-only.
+      Returns the type of the binding. See Excel.BindingType for details.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type

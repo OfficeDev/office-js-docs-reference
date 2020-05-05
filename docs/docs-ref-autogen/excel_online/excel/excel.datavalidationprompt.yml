@@ -17,7 +17,7 @@ items:
       - 'excel!Excel.DataValidationPrompt#title:member'
   - uid: 'excel!Excel.DataValidationPrompt#message:member'
     summary: |-
-      Represents the message of the prompt.
+      Specifies the message of the prompt.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: message
@@ -32,7 +32,7 @@ items:
           - string
   - uid: 'excel!Excel.DataValidationPrompt#showPrompt:member'
     summary: |-
-      Determines whether or not to show the prompt when user selects a cell with data validation.
+      Specifies if a prompt is shown when a user selects a cell with data validation.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showPrompt
@@ -47,7 +47,7 @@ items:
           - boolean
   - uid: 'excel!Excel.DataValidationPrompt#title:member'
     summary: |-
-      Represents the title for the prompt.
+      Specifies the title for the prompt.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title

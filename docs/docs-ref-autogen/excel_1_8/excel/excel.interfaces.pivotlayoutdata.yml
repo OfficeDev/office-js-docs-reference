@@ -32,7 +32,7 @@ items:
           - 'excel!Excel.Interfaces.PivotLayoutData#layoutType~0:complex'
   - uid: 'excel!Excel.Interfaces.PivotLayoutData#showColumnGrandTotals:member'
     summary: |-
-      Specifies whether the PivotTable report shows grand totals for columns.
+      Specifies if the PivotTable report shows grand totals for columns.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showColumnGrandTotals
@@ -47,7 +47,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.PivotLayoutData#showRowGrandTotals:member'
     summary: |-
-      Specifies whether the PivotTable report shows grand totals for rows.
+      Specifies if the PivotTable report shows grand totals for rows.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showRowGrandTotals

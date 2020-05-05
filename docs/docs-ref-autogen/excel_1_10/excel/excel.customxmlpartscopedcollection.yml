@@ -2,7 +2,7 @@
 items:
   - uid: 'excel!Excel.CustomXmlPartScopedCollection:class'
     summary: >-
-      A scoped collection of custom XML parts. A scoped collection is the result of some operation, e.g. filtering by
+      A scoped collection of custom XML parts. A scoped collection is the result of some operation, e.g., filtering by
       namespace. A scoped collection cannot be scoped any further.
 
 

@@ -1,0 +1,291 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.DynamicFilterCriteria:enum'
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.DynamicFilterCriteria
+    fullName: Excel.DynamicFilterCriteria
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.DynamicFilterCriteria.aboveAverage:member'
+      - 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodApril:member'
+      - 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodAugust:member'
+      - 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodDecember:member'
+      - 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodFebruray:member'
+      - 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodJanuary:member'
+      - 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodJuly:member'
+      - 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodJune:member'
+      - 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodMarch:member'
+      - 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodMay:member'
+      - 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodNovember:member'
+      - 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodOctober:member'
+      - 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodQuarter1:member'
+      - 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodQuarter2:member'
+      - 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodQuarter3:member'
+      - 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodQuarter4:member'
+      - 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodSeptember:member'
+      - 'excel!Excel.DynamicFilterCriteria.belowAverage:member'
+      - 'excel!Excel.DynamicFilterCriteria.lastMonth:member'
+      - 'excel!Excel.DynamicFilterCriteria.lastQuarter:member'
+      - 'excel!Excel.DynamicFilterCriteria.lastWeek:member'
+      - 'excel!Excel.DynamicFilterCriteria.lastYear:member'
+      - 'excel!Excel.DynamicFilterCriteria.nextMonth:member'
+      - 'excel!Excel.DynamicFilterCriteria.nextQuarter:member'
+      - 'excel!Excel.DynamicFilterCriteria.nextWeek:member'
+      - 'excel!Excel.DynamicFilterCriteria.nextYear:member'
+      - 'excel!Excel.DynamicFilterCriteria.thisMonth:member'
+      - 'excel!Excel.DynamicFilterCriteria.thisQuarter:member'
+      - 'excel!Excel.DynamicFilterCriteria.thisWeek:member'
+      - 'excel!Excel.DynamicFilterCriteria.thisYear:member'
+      - 'excel!Excel.DynamicFilterCriteria.today:member'
+      - 'excel!Excel.DynamicFilterCriteria.tomorrow:member'
+      - 'excel!Excel.DynamicFilterCriteria.unknown:member'
+      - 'excel!Excel.DynamicFilterCriteria.yearToDate:member'
+      - 'excel!Excel.DynamicFilterCriteria.yesterday:member'
+  - uid: 'excel!Excel.DynamicFilterCriteria.aboveAverage:member'
+    name: aboveAverage
+    fullName: aboveAverage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AboveAverage"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodApril:member'
+    name: allDatesInPeriodApril
+    fullName: allDatesInPeriodApril
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodApril"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodAugust:member'
+    name: allDatesInPeriodAugust
+    fullName: allDatesInPeriodAugust
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodAugust"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodDecember:member'
+    name: allDatesInPeriodDecember
+    fullName: allDatesInPeriodDecember
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodDecember"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodFebruray:member'
+    name: allDatesInPeriodFebruray
+    fullName: allDatesInPeriodFebruray
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodFebruray"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodJanuary:member'
+    name: allDatesInPeriodJanuary
+    fullName: allDatesInPeriodJanuary
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodJanuary"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodJuly:member'
+    name: allDatesInPeriodJuly
+    fullName: allDatesInPeriodJuly
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodJuly"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodJune:member'
+    name: allDatesInPeriodJune
+    fullName: allDatesInPeriodJune
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodJune"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodMarch:member'
+    name: allDatesInPeriodMarch
+    fullName: allDatesInPeriodMarch
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodMarch"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodMay:member'
+    name: allDatesInPeriodMay
+    fullName: allDatesInPeriodMay
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodMay"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodNovember:member'
+    name: allDatesInPeriodNovember
+    fullName: allDatesInPeriodNovember
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodNovember"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodOctober:member'
+    name: allDatesInPeriodOctober
+    fullName: allDatesInPeriodOctober
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodOctober"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodQuarter1:member'
+    name: allDatesInPeriodQuarter1
+    fullName: allDatesInPeriodQuarter1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodQuarter1"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodQuarter2:member'
+    name: allDatesInPeriodQuarter2
+    fullName: allDatesInPeriodQuarter2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodQuarter2"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodQuarter3:member'
+    name: allDatesInPeriodQuarter3
+    fullName: allDatesInPeriodQuarter3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodQuarter3"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodQuarter4:member'
+    name: allDatesInPeriodQuarter4
+    fullName: allDatesInPeriodQuarter4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodQuarter4"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.allDatesInPeriodSeptember:member'
+    name: allDatesInPeriodSeptember
+    fullName: allDatesInPeriodSeptember
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AllDatesInPeriodSeptember"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.belowAverage:member'
+    name: belowAverage
+    fullName: belowAverage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BelowAverage"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.lastMonth:member'
+    name: lastMonth
+    fullName: lastMonth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastMonth"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.lastQuarter:member'
+    name: lastQuarter
+    fullName: lastQuarter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastQuarter"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.lastWeek:member'
+    name: lastWeek
+    fullName: lastWeek
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastWeek"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.lastYear:member'
+    name: lastYear
+    fullName: lastYear
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LastYear"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.nextMonth:member'
+    name: nextMonth
+    fullName: nextMonth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextMonth"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.nextQuarter:member'
+    name: nextQuarter
+    fullName: nextQuarter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextQuarter"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.nextWeek:member'
+    name: nextWeek
+    fullName: nextWeek
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextWeek"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.nextYear:member'
+    name: nextYear
+    fullName: nextYear
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NextYear"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.thisMonth:member'
+    name: thisMonth
+    fullName: thisMonth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThisMonth"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.thisQuarter:member'
+    name: thisQuarter
+    fullName: thisQuarter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThisQuarter"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.thisWeek:member'
+    name: thisWeek
+    fullName: thisWeek
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThisWeek"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.thisYear:member'
+    name: thisYear
+    fullName: thisYear
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThisYear"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.today:member'
+    name: today
+    fullName: today
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Today"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.tomorrow:member'
+    name: tomorrow
+    fullName: tomorrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Tomorrow"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.unknown:member'
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.yearToDate:member'
+    name: yearToDate
+    fullName: yearToDate
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"YearToDate"'
+  - uid: 'excel!Excel.DynamicFilterCriteria.yesterday:member'
+    name: yesterday
+    fullName: yesterday
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Yesterday"'

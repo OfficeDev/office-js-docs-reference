@@ -12,7 +12,7 @@ items:
       - 'excel!Excel.Interfaces.ChartDataLabelFormatData#font:member'
   - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatData#font:member'
     summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.
+      Represents the font attributes (font name, font size, color, etc.) for a chart data label.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font

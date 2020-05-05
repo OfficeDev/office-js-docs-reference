@@ -80,7 +80,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.PivotItemCollectionLoadOptions#visible:member'
     summary: |-
-      For EACH ITEM in the collection: Determines whether the PivotItem is visible or not.
+      For EACH ITEM in the collection: Specifies if the PivotItem is visible.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible

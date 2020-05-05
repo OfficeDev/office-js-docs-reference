@@ -35,7 +35,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.TableUpdateData#showHeaders:member'
     summary: |-
-      Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+      Specifies if the header row is visible. This value can be set to show or remove the header row.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showHeaders
@@ -50,7 +50,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.TableUpdateData#showTotals:member'
     summary: |-
-      Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+      Specifies if the total row is visible. This value can be set to show or remove the total row.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showTotals

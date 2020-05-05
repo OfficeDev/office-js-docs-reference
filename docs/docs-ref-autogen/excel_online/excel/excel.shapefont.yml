@@ -44,8 +44,8 @@ items:
           - boolean
   - uid: 'excel!Excel.ShapeFont#color:member'
     summary: >-
-      The HTML color code representation of the text color (e.g. "\#FF0000" represents red). Returns null if the
-      TextRange includes text fragments with different colors.
+      HTML color code representation of the text color (e.g., "\#FF0000" represents red). Returns null if the TextRange
+      includes text fragments with different colors.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -162,7 +162,7 @@ items:
                       }
   - uid: 'excel!Excel.ShapeFont#name:member'
     summary: >-
-      Represents font name (e.g. "Calibri"). If the text is Complex Script or East Asian language, this is the
+      Represents font name (e.g., "Calibri"). If the text is Complex Script or East Asian language, this is the
       corresponding font name; otherwise it is the Latin font name.
 
 
@@ -227,7 +227,7 @@ items:
             - 'excel!Excel.ShapeFont:class'
   - uid: 'excel!Excel.ShapeFont#size:member'
     summary: >-
-      Represents font size in points (e.g. 11). Returns null if the TextRange includes text fragments with different
+      Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different
       font sizes.
 
 

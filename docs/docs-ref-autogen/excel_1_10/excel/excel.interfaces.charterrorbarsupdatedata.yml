@@ -16,7 +16,7 @@ items:
       - 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#visible:member'
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#endStyleCap:member'
     summary: |-
-      Specifies whether or not the error bars have an end style cap.
+      Specifies if error bars have an end style cap.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: endStyleCap
@@ -76,7 +76,7 @@ items:
           - 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#type~0:complex'
   - uid: 'excel!Excel.Interfaces.ChartErrorBarsUpdateData#visible:member'
     summary: |-
-      Specifies whether or not the error bars are displayed.
+      Specifies whether the error bars are displayed.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible

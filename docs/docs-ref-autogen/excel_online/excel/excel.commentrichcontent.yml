@@ -6,7 +6,7 @@ items:
       other objects contained within the comment body, such as mentions.
 
 
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CommentRichContent
     fullName: Excel.CommentRichContent
     langs:
@@ -18,9 +18,9 @@ items:
       - 'excel!Excel.CommentRichContent#richContent:member'
   - uid: 'excel!Excel.CommentRichContent#mentions:member'
     summary: |-
-      An array containing all the entities (e.g. people) mentioned within the comment.
+      An array containing all the entities (e.g., people) mentioned within the comment.
 
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: mentions
     fullName: mentions
     langs:
@@ -64,6 +64,12 @@ items:
 
           ```
   - uid: 'excel!Excel.CommentRichContent#richContent:member'
+    summary: >-
+      Specifies the rich content of the comment (e.g., comment content with mentions, the first mentioned entity has an
+      id attribute of 0, and the second mentioned entity has an id attribute of 1.
+
+
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: richContent
     fullName: richContent
     langs:

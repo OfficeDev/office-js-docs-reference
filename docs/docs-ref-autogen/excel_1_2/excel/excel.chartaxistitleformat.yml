@@ -37,8 +37,10 @@ items:
         type:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartAxisTitleFormat#font:member'
-    summary: |-
-      Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.
+    summary: >-
+      Specifies the chart axis title's font attributes, such as font name, font size, color, etc. of chart axis title
+      object.
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font

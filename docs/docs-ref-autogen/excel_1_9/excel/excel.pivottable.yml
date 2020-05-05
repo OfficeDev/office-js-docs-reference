@@ -165,7 +165,7 @@ items:
           ```
   - uid: 'excel!Excel.PivotTable#enableDataValueEditing:member'
     summary: |-
-      Specifies whether the PivotTable allows values in the data body to be edited by the user.
+      Specifies if the PivotTable allows values in the data body to be edited by the user.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableDataValueEditing
@@ -238,7 +238,7 @@ items:
           - 'excel!Excel.PivotHierarchyCollection:class'
   - uid: 'excel!Excel.PivotTable#id:member'
     summary: |-
-      Id of the PivotTable. Read-only.
+      Id of the PivotTable.
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -479,7 +479,7 @@ items:
         description: ''
   - uid: 'excel!Excel.PivotTable#useCustomSortLists:member'
     summary: |-
-      Specifies whether the PivotTable uses custom lists when sorting.
+      Specifies if the PivotTable uses custom lists when sorting.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: useCustomSortLists
