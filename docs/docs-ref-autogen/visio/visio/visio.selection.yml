@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'visio!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: visio!
     children:
       - 'visio!Visio.Selection#context:member'
@@ -109,7 +109,7 @@ items:
           - 'visio!Visio.Interfaces.SelectionData:interface'
         description: ''
 references:
-  - uid: 'visio!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'visio!Visio.RequestContext:class'
     name: RequestContext

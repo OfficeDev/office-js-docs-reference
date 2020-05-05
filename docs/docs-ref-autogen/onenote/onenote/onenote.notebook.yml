@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'onenote!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.Notebook#addSection:member(1)'
@@ -550,7 +550,7 @@ items:
           - 'onenote!OneNote.Notebook:class'
         description: ''
 references:
-  - uid: 'onenote!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.Section:class'
     name: OneNote.Section
@@ -562,7 +562,7 @@ references:
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
     spec.typeScript:
-      - uid: 'onenote!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <string>

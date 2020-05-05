@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'visio!OfficeExtension.ClientRequestContext:class'
+      - 'office!OfficeExtension.ClientRequestContext:class'
     package: visio!
     children:
       - 'visio!Visio.RequestContext:constructor(1)'
@@ -42,7 +42,7 @@ items:
         type:
           - 'visio!Visio.Document:class'
 references:
-  - uid: 'visio!OfficeExtension.ClientRequestContext:class'
+  - uid: 'office!OfficeExtension.ClientRequestContext:class'
     name: OfficeExtension.ClientRequestContext
   - uid: 'visio!Visio.RequestContext~0:complex'
     name: string | OfficeExtension.EmbeddedSession
@@ -50,7 +50,7 @@ references:
     spec.typeScript:
       - name: 'string | '
         fullName: 'string | '
-      - uid: 'visio!OfficeExtension.EmbeddedSession:class'
+      - uid: 'office!OfficeExtension.EmbeddedSession:class'
         name: OfficeExtension.EmbeddedSession
         fullName: OfficeExtension.EmbeddedSession
   - uid: 'visio!Visio.Document:class'

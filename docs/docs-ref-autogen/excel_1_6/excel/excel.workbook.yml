@@ -14,7 +14,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Workbook#application:member'
@@ -289,7 +289,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.Workbook#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -372,7 +372,7 @@ items:
         type:
           - 'excel!Excel.WorksheetCollection:class'
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Application:class'
     name: Excel.Application
@@ -396,7 +396,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -410,7 +410,7 @@ references:
     name: Excel.PivotTableCollection
   - uid: 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
     name: Interfaces.WorkbookUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.SettingCollection:class'
     name: Excel.SettingCollection

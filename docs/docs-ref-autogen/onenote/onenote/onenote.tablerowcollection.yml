@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'onenote!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.TableRowCollection#context:member'
@@ -184,7 +184,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'onenote!OfficeExtension.LoadOption:interface'
+            - 'office!OfficeExtension.LoadOption:interface'
   - uid: 'onenote!OneNote.TableRowCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -239,7 +239,7 @@ items:
           - 'onenote!OneNote.TableRowCollection:class'
         description: ''
 references:
-  - uid: 'onenote!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext
@@ -268,7 +268,7 @@ references:
       - uid: 'onenote!OneNote.Interfaces.CollectionLoadOptions:interface'
         name: OneNote.Interfaces.CollectionLoadOptions
         fullName: OneNote.Interfaces.CollectionLoadOptions
-  - uid: 'onenote!OfficeExtension.LoadOption:interface'
+  - uid: 'office!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'onenote!OneNote.Interfaces.TableRowCollectionData:interface'
     name: OneNote.Interfaces.TableRowCollectionData

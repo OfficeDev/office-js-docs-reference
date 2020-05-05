@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'visio!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: visio!
     children:
       - 'visio!Visio.PageView#centerViewportOnShape:member(1)'
@@ -258,7 +258,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'visio!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'visio!Visio.PageView#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -349,7 +349,7 @@ items:
           });
           ```
 references:
-  - uid: 'visio!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'visio!Visio.RequestContext:class'
     name: RequestContext
@@ -357,7 +357,7 @@ references:
     name: OfficeExtension.ClientResult<Visio.Position>
     fullName: OfficeExtension.ClientResult<Visio.Position>
     spec.typeScript:
-      - uid: 'visio!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <
@@ -373,7 +373,7 @@ references:
     name: OfficeExtension.ClientResult<boolean>
     fullName: OfficeExtension.ClientResult<boolean>
     spec.typeScript:
-      - uid: 'visio!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <boolean>
@@ -386,7 +386,7 @@ references:
     name: Visio.Interfaces.PageViewLoadOptions
   - uid: 'visio!Visio.Interfaces.PageViewUpdateData:interface'
     name: Interfaces.PageViewUpdateData
-  - uid: 'visio!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'visio!Visio.Position:interface'
     name: Visio.Position

@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'onenote!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.NoteTag#context:member'
@@ -221,7 +221,7 @@ items:
           - 'onenote!OneNote.NoteTag:class'
         description: ''
 references:
-  - uid: 'onenote!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.RequestContext:class'
     name: RequestContext

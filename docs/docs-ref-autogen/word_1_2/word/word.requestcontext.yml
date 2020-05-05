@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'word!OfficeExtension.ClientRequestContext:class'
+      - 'office!OfficeExtension.ClientRequestContext:class'
     package: word!
     children:
       - 'word!Word.RequestContext:constructor(1)'
@@ -42,7 +42,7 @@ items:
         type:
           - 'word!Word.Document:class'
 references:
-  - uid: 'word!OfficeExtension.ClientRequestContext:class'
+  - uid: 'office!OfficeExtension.ClientRequestContext:class'
     name: OfficeExtension.ClientRequestContext
   - uid: 'word!Word.Document:class'
     name: Document
