@@ -765,7 +765,7 @@ export declare namespace Excel {
         unknown = "Unknown",
         /**
          * Equals comparator criterion.
-                    
+
                     Required Criteria: {`comparator`}.
                     Optional Criteria: {`wholeDays`, `exclusive`}.
          *
@@ -773,7 +773,7 @@ export declare namespace Excel {
         equals = "Equals",
         /**
          * Date is before comparator date.
-                    
+
                     Required Criteria: {`comparator`}.
                     Optional Criteria: {`wholeDays`}.
          *
@@ -781,7 +781,7 @@ export declare namespace Excel {
         before = "Before",
         /**
          * Date is before or equal to comparator date.
-                    
+
                     Required Criteria: {`comparator`}.
                     Optional Criteria: {`wholeDays`}.
          *
@@ -789,7 +789,7 @@ export declare namespace Excel {
         beforeOrEqualTo = "BeforeOrEqualTo",
         /**
          * Date is after comparator date.
-                    
+
                     Required Criteria: {`comparator`}.
                     Optional Criteria: {`wholeDays`}.
          *
@@ -797,7 +797,7 @@ export declare namespace Excel {
         after = "After",
         /**
          * Date is after or equal to comparator date.
-                    
+
                     Required Criteria: {`comparator`}.
                     Optional Criteria: {`wholeDays`}.
          *
@@ -805,7 +805,7 @@ export declare namespace Excel {
         afterOrEqualTo = "AfterOrEqualTo",
         /**
          * Between `lowerBound` and `upperBound` dates.
-                    
+
                     Required Criteria: {`lowerBound`, `upperBound`}.
                     Optional Criteria: {`wholeDays`, `exclusive`}.
          *
@@ -989,7 +989,7 @@ export declare namespace Excel {
         unknown = "Unknown",
         /**
          * Equals comparator criterion.
-                    
+
                     Required Criteria: {`comparator`}.
                     Optional Criteria: {`exclusive`}.
          *
@@ -997,7 +997,7 @@ export declare namespace Excel {
         equals = "Equals",
         /**
          * Label begins with substring criterion.
-                    
+
                     Required Criteria: {`substring`}.
                     Optional Criteria: {`exclusive`}.
          *
@@ -1005,7 +1005,7 @@ export declare namespace Excel {
         beginsWith = "BeginsWith",
         /**
          * Label ends with substring criterion.
-                    
+
                     Required Criteria: {`substring`}.
                     Optional Criteria: {`exclusive`}.
          *
@@ -1013,7 +1013,7 @@ export declare namespace Excel {
         endsWith = "EndsWith",
         /**
          * Label contains substring criterion.
-                    
+
                     Required Criteria: {`substring`}.
                     Optional Criteria: {`exclusive`}.
          *
@@ -1021,35 +1021,35 @@ export declare namespace Excel {
         contains = "Contains",
         /**
          * Greater than comparator criterion.
-                    
+
                     Required Criteria: {`comparator`}.
          *
          */
         greaterThan = "GreaterThan",
         /**
          * Greater than or equal to comparator criterion.
-                    
+
                     Required Criteria: {`comparator`}.
          *
          */
         greaterThanOrEqualTo = "GreaterThanOrEqualTo",
         /**
          * Less than comparator criterion.
-                    
+
                     Required Criteria: {`comparator`}.
          *
          */
         lessThan = "LessThan",
         /**
          * Less than or equal to comparator criterion.
-                    
+
                     Required Criteria: {`comparator`}.
          *
          */
         lessThanOrEqualTo = "LessThanOrEqualTo",
         /**
          * Between `lowerBound` and `upperBound` criteria.
-                    
+
                     Required Criteria: {`lowerBound`, `upperBound`}.
                     Optional Criteria: {`exclusive`}.
          *
@@ -1386,7 +1386,7 @@ export declare namespace Excel {
         unknown = "Unknown",
         /**
          * Equals comparator criterion.
-                    
+
                     Required Criteria: {`value`, `comparator`}.
                     Optional Criteria: {`exclusive`}.
          *
@@ -1394,35 +1394,35 @@ export declare namespace Excel {
         equals = "Equals",
         /**
          * Greater than comparator criterion.
-                    
+
                     Required Criteria: {`value`, `comparator`}.
          *
          */
         greaterThan = "GreaterThan",
         /**
          * Greater than or equal to comparator criterion.
-                    
+
                     Required Criteria: {`value`, `comparator`}.
          *
          */
         greaterThanOrEqualTo = "GreaterThanOrEqualTo",
         /**
          * Less than comparator criterion.
-                    
+
                     Required Criteria: {`value`, `comparator`}.
          *
          */
         lessThan = "LessThan",
         /**
          * Less than or equal to comparator criterion.
-                    
+
                     Required Criteria: {`value`, `comparator`}.
          *
          */
         lessThanOrEqualTo = "LessThanOrEqualTo",
         /**
          * Between `lowerBound` and `upperBound` criteria.
-                    
+
                     Required Criteria: {`value`, `lowerBound`, `upperBound`}.
                     Optional Criteria: {`exclusive`}.
          *
@@ -1430,14 +1430,14 @@ export declare namespace Excel {
         between = "Between",
         /**
          * In top N (`threshold`) [items, percent, sum] of value category.
-                    
+
                     Required Criteria: {`value`, `threshold`, `selectionType`}.
          *
          */
         topN = "TopN",
         /**
          * In bottom N (`threshold`) [items, percent, sum] of value category.
-                    
+
                     Required Criteria: {`value`, `threshold`, `selectionType`}.
          *
          */
@@ -2297,8 +2297,8 @@ export declare namespace Excel {
     /**
      *
      * Provides information about the selection that raised the "SelectionChanged" event.
-     * 
-     * **Note**: If multiple, discontiguous cells are selected, 
+     *
+     * **Note**: If multiple, discontiguous cells are selected,
      * `Binding.onSelectionChanged` only reports row and column information for one selection.
      * Use `Worksheet.onSelectionChanged` for multiple selected ranges.
      *
@@ -3472,7 +3472,7 @@ export declare namespace Excel {
         suspendApiCalculationUntilNextSync(): void;
         /**
          * Suspends screen updating until the next `context.sync()` is called.
-                    
+
                      **Note**: Don't call `suspendScreenUpdatingUntilNextSync` repeatedly (such as in a loop). Repeated calls will cause the Excel window to flicker.
          *
          * [Api set: ExcelApi 1.9]
@@ -4540,7 +4540,7 @@ export declare namespace Excel {
         add(name?: string): Excel.Worksheet;
         /**
          * Inserts the specified worksheets of a workbook into the current workbook.
-                    
+
                      **Note**: This API is currently only supported for Office on Windows and Mac.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -4555,7 +4555,7 @@ export declare namespace Excel {
         addFromBase64(base64File: string, sheetNamesToInsert?: string[], positionType?: Excel.WorksheetPositionType, relativeTo?: Worksheet | string): OfficeExtension.ClientResult<string[]>;
         /**
          * Inserts the specified worksheets of a workbook into the current workbook.
-                    
+
                      **Note**: This API is currently only supported for Office on Windows and Mac.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -5275,7 +5275,7 @@ export declare namespace Excel {
          * Fills range from the current range to the destination range using the specified AutoFill logic.
                      The destination range can be null, or can extend the source either horizontally or vertically.
                      Discontiguous ranges are not supported.
-                    
+
                      For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
@@ -5288,7 +5288,7 @@ export declare namespace Excel {
          * Fills range from the current range to the destination range using the specified AutoFill logic.
                      The destination range can be null, or can extend the source either horizontally or vertically.
                      Discontiguous ranges are not supported.
-                    
+
                      For more information, read {@link https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464 | Use AutoFill and Flash Fill}.
          *
          * [Api set: ExcelApi 1.9, ExcelApi Preview for null `destinationRange`]
@@ -5485,7 +5485,7 @@ export declare namespace Excel {
         getEntireRow(): Excel.Range;
         /**
          * Renders the range as a base64-encoded png image.
-         * 
+         *
          * **Important**: This API is currently unsupported in Excel for Mac. Visit [OfficeDev/office-js Issue #235](https://github.com/OfficeDev/office-js/issues/235) for the current status.
          *
          * [Api set: ExcelApi 1.7]
@@ -7420,9 +7420,9 @@ export declare namespace Excel {
         /**
          *
          * Occurs when the selected content in the binding is changed.
-         * 
-         * **Note**: If multiple, discontiguous cells are selected, 
-         * `Binding.onSelectionChanged` only reports row and column information for one selection. 
+         *
+         * **Note**: If multiple, discontiguous cells are selected,
+         * `Binding.onSelectionChanged` only reports row and column information for one selection.
          * Use `Worksheet.onSelectionChanged` for multiple selected ranges.
          *
          * [Api set: ExcelApi 1.2]
@@ -7827,7 +7827,7 @@ export declare namespace Excel {
         /**
          *
          * Name of the table.
-                    
+
                      The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
          *
          * [Api set: ExcelApi 1.1]
@@ -8208,7 +8208,7 @@ export declare namespace Excel {
     /**
      *
      * Represents a collection of all the rows that are part of the table.
-                
+
                  Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
                  a TableRow object represent the physical location of the table row, but not the data.
                  That is, if the data is sorted or if new rows are added, a table row will continue
@@ -8230,7 +8230,7 @@ export declare namespace Excel {
         readonly count: number;
         /**
          * Adds one or more rows to the table. The return object will be the top of the newly added row(s).
-                    
+
                      Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
                      a TableRow object represent the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -8250,7 +8250,7 @@ export declare namespace Excel {
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          * Gets a row based on its position in the collection.
-                    
+
                      Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
                      a TableRow object represent the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -8288,7 +8288,7 @@ export declare namespace Excel {
     /**
      *
      * Represents a row in a table.
-                
+
                  Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
                  a TableRow object represent the physical location of the table row, but not the data.
                  That is, if the data is sorted or if new rows are added, a table row will continue
@@ -14282,7 +14282,7 @@ export declare namespace Excel {
          *
          * The first criterion used to filter data. Used as an operator in the case of "custom" filtering.
                      For example ">50" for number greater than 50 or "=*s" for values ending in "s".
-                    
+
                      Used as a number in the case of top/bottom items/percents. e.g., "5" for the top 5 items if filterOn is set to "topItems"
          *
          * [Api set: ExcelApi 1.2]
@@ -29323,7 +29323,7 @@ export declare namespace Excel {
             /**
              *
              * Name of the table.
-                        
+
                          The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
              *
              * [Api set: ExcelApi 1.1]
@@ -34685,7 +34685,7 @@ export declare namespace Excel {
             /**
              *
              * Name of the table.
-                        
+
                          The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
              *
              * [Api set: ExcelApi 1.1]
@@ -41283,7 +41283,7 @@ export declare namespace Excel {
             /**
              *
              * For EACH ITEM in the collection: Name of the table.
-                        
+
                          The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
              *
              * [Api set: ExcelApi 1.1]
@@ -41417,7 +41417,7 @@ export declare namespace Excel {
             /**
              *
              * For EACH ITEM in the collection: Name of the table.
-                        
+
                          The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
              *
              * [Api set: ExcelApi 1.1]
@@ -41552,7 +41552,7 @@ export declare namespace Excel {
             /**
              *
              * Name of the table.
-                        
+
                          The set name of the table must follow the guidelines specified in the {@link https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114 | Rename an Excel table} article.
              *
              * [Api set: ExcelApi 1.1]
@@ -41698,7 +41698,7 @@ export declare namespace Excel {
         /**
          *
          * Represents a collection of all the rows that are part of the table.
-                    
+
                      Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
                      a TableRow object represent the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
@@ -41729,7 +41729,7 @@ export declare namespace Excel {
         /**
          *
          * Represents a row in a table.
-                    
+
                      Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
                      a TableRow object represent the physical location of the table row, but not the data.
                      That is, if the data is sorted or if new rows are added, a table row will continue
