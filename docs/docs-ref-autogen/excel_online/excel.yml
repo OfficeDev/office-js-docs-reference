@@ -171,6 +171,7 @@ items:
       - 'excel!Excel.ConnectorType:enum'
       - 'excel!Excel.ContentType:enum'
       - 'excel!Excel.createWorkbook:function(1)'
+      - 'excel!Excel.CultureInfo:class'
       - 'excel!Excel.CustomConditionalFormat:class'
       - 'excel!Excel.CustomDataValidation:interface'
       - 'excel!Excel.CustomProperty:class'
@@ -422,6 +423,8 @@ items:
       - 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
       - 'excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface'
       - 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
+      - 'excel!Excel.Interfaces.CultureInfoData:interface'
+      - 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
       - 'excel!Excel.Interfaces.CustomConditionalFormatData:interface'
       - 'excel!Excel.Interfaces.CustomConditionalFormatLoadOptions:interface'
       - 'excel!Excel.Interfaces.CustomConditionalFormatUpdateData:interface'
@@ -497,6 +500,8 @@ items:
       - 'excel!Excel.Interfaces.NamedItemData:interface'
       - 'excel!Excel.Interfaces.NamedItemLoadOptions:interface'
       - 'excel!Excel.Interfaces.NamedItemUpdateData:interface'
+      - 'excel!Excel.Interfaces.NumberFormatInfoData:interface'
+      - 'excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface'
       - 'excel!Excel.Interfaces.PageBreakCollectionData:interface'
       - 'excel!Excel.Interfaces.PageBreakCollectionLoadOptions:interface'
       - 'excel!Excel.Interfaces.PageBreakCollectionUpdateData:interface'
@@ -531,6 +536,9 @@ items:
       - 'excel!Excel.Interfaces.PivotTableCollectionUpdateData:interface'
       - 'excel!Excel.Interfaces.PivotTableData:interface'
       - 'excel!Excel.Interfaces.PivotTableLoadOptions:interface'
+      - 'excel!Excel.Interfaces.PivotTableScopedCollectionData:interface'
+      - 'excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions:interface'
+      - 'excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData:interface'
       - 'excel!Excel.Interfaces.PivotTableStyleCollectionData:interface'
       - 'excel!Excel.Interfaces.PivotTableStyleCollectionLoadOptions:interface'
       - 'excel!Excel.Interfaces.PivotTableStyleCollectionUpdateData:interface'
@@ -699,6 +707,7 @@ items:
       - 'excel!Excel.NamedItemCollection:class'
       - 'excel!Excel.NamedItemScope:enum'
       - 'excel!Excel.NamedItemType:enum'
+      - 'excel!Excel.NumberFormatInfo:class'
       - 'excel!Excel.PageBreak:class'
       - 'excel!Excel.PageBreakCollection:class'
       - 'excel!Excel.PageLayout:class'
@@ -719,6 +728,7 @@ items:
       - 'excel!Excel.PivotLayoutType:enum'
       - 'excel!Excel.PivotTable:class'
       - 'excel!Excel.PivotTableCollection:class'
+      - 'excel!Excel.PivotTableScopedCollection:class'
       - 'excel!Excel.PivotTableStyle:class'
       - 'excel!Excel.PivotTableStyleCollection:class'
       - 'excel!Excel.Placement:enum'
@@ -752,6 +762,7 @@ items:
       - 'excel!Excel.RibbonTab:enum'
       - 'excel!Excel.RowColumnPivotHierarchy:class'
       - 'excel!Excel.RowColumnPivotHierarchyCollection:class'
+      - 'excel!Excel.RowHiddenChangeType:enum'
       - 'excel!Excel.RowProperties:interface'
       - 'excel!Excel.RowPropertiesLoadOptions:interface'
       - 'excel!Excel.run:function(1)'
@@ -866,6 +877,7 @@ items:
       - 'excel!Excel.WorksheetPositionType:enum'
       - 'excel!Excel.WorksheetProtection:class'
       - 'excel!Excel.WorksheetProtectionOptions:interface'
+      - 'excel!Excel.WorksheetRowHiddenChangedEventArgs:interface'
       - 'excel!Excel.WorksheetRowSortedEventArgs:interface'
       - 'excel!Excel.WorksheetSearchCriteria:interface'
       - 'excel!Excel.WorksheetSelectionChangedEventArgs:interface'
@@ -1450,6 +1462,8 @@ references:
         fullName: Promise
       - name: <void>
         fullName: <void>
+  - uid: 'excel!Excel.CultureInfo:class'
+    name: Excel.CultureInfo
   - uid: 'excel!Excel.CustomConditionalFormat:class'
     name: Excel.CustomConditionalFormat
   - uid: 'excel!Excel.CustomDataValidation:interface'
@@ -1950,6 +1964,10 @@ references:
     name: Excel.Interfaces.ConditionalRangeFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
     name: Excel.Interfaces.ConditionalRangeFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.CultureInfoData:interface'
+    name: Excel.Interfaces.CultureInfoData
+  - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
+    name: Excel.Interfaces.CultureInfoLoadOptions
   - uid: 'excel!Excel.Interfaces.CustomConditionalFormatData:interface'
     name: Excel.Interfaces.CustomConditionalFormatData
   - uid: 'excel!Excel.Interfaces.CustomConditionalFormatLoadOptions:interface'
@@ -2100,6 +2118,10 @@ references:
     name: Excel.Interfaces.NamedItemLoadOptions
   - uid: 'excel!Excel.Interfaces.NamedItemUpdateData:interface'
     name: Excel.Interfaces.NamedItemUpdateData
+  - uid: 'excel!Excel.Interfaces.NumberFormatInfoData:interface'
+    name: Excel.Interfaces.NumberFormatInfoData
+  - uid: 'excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface'
+    name: Excel.Interfaces.NumberFormatInfoLoadOptions
   - uid: 'excel!Excel.Interfaces.PageBreakCollectionData:interface'
     name: Excel.Interfaces.PageBreakCollectionData
   - uid: 'excel!Excel.Interfaces.PageBreakCollectionLoadOptions:interface'
@@ -2168,6 +2190,12 @@ references:
     name: Excel.Interfaces.PivotTableData
   - uid: 'excel!Excel.Interfaces.PivotTableLoadOptions:interface'
     name: Excel.Interfaces.PivotTableLoadOptions
+  - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionData:interface'
+    name: Excel.Interfaces.PivotTableScopedCollectionData
+  - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions:interface'
+    name: Excel.Interfaces.PivotTableScopedCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData:interface'
+    name: Excel.Interfaces.PivotTableScopedCollectionUpdateData
   - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionData:interface'
     name: Excel.Interfaces.PivotTableStyleCollectionData
   - uid: 'excel!Excel.Interfaces.PivotTableStyleCollectionLoadOptions:interface'
@@ -2504,6 +2532,8 @@ references:
     name: Excel.NamedItemScope
   - uid: 'excel!Excel.NamedItemType:enum'
     name: Excel.NamedItemType
+  - uid: 'excel!Excel.NumberFormatInfo:class'
+    name: Excel.NumberFormatInfo
   - uid: 'excel!Excel.PageBreak:class'
     name: Excel.PageBreak
   - uid: 'excel!Excel.PageBreakCollection:class'
@@ -2544,6 +2574,8 @@ references:
     name: Excel.PivotTable
   - uid: 'excel!Excel.PivotTableCollection:class'
     name: Excel.PivotTableCollection
+  - uid: 'excel!Excel.PivotTableScopedCollection:class'
+    name: Excel.PivotTableScopedCollection
   - uid: 'excel!Excel.PivotTableStyle:class'
     name: Excel.PivotTableStyle
   - uid: 'excel!Excel.PivotTableStyleCollection:class'
@@ -2608,6 +2640,8 @@ references:
     name: Excel.RowColumnPivotHierarchy
   - uid: 'excel!Excel.RowColumnPivotHierarchyCollection:class'
     name: Excel.RowColumnPivotHierarchyCollection
+  - uid: 'excel!Excel.RowHiddenChangeType:enum'
+    name: Excel.RowHiddenChangeType
   - uid: 'excel!Excel.RowProperties:interface'
     name: Excel.RowProperties
   - uid: 'excel!Excel.RowPropertiesLoadOptions:interface'
@@ -2964,6 +2998,8 @@ references:
     name: Excel.WorksheetProtection
   - uid: 'excel!Excel.WorksheetProtectionOptions:interface'
     name: Excel.WorksheetProtectionOptions
+  - uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs:interface'
+    name: Excel.WorksheetRowHiddenChangedEventArgs
   - uid: 'excel!Excel.WorksheetRowSortedEventArgs:interface'
     name: Excel.WorksheetRowSortedEventArgs
   - uid: 'excel!Excel.WorksheetSearchCriteria:interface'

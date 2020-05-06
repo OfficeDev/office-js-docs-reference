@@ -18,10 +18,13 @@ items:
     package: excel!
     children:
       - 'excel!Excel.WorksheetCustomProperty#context:member'
+      - 'excel!Excel.WorksheetCustomProperty#delete:member(1)'
       - 'excel!Excel.WorksheetCustomProperty#key:member'
       - 'excel!Excel.WorksheetCustomProperty#load:member(1)'
       - 'excel!Excel.WorksheetCustomProperty#load:member(2)'
       - 'excel!Excel.WorksheetCustomProperty#load:member(3)'
+      - 'excel!Excel.WorksheetCustomProperty#set:member(1)'
+      - 'excel!Excel.WorksheetCustomProperty#set:member(2)'
       - 'excel!Excel.WorksheetCustomProperty#toJSON:member(1)'
       - 'excel!Excel.WorksheetCustomProperty#value:member'
   - uid: 'excel!Excel.WorksheetCustomProperty#context:member'
@@ -39,9 +42,28 @@ items:
       return:
         type:
           - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.WorksheetCustomProperty#delete:member(1)'
+    summary: >-
+      Deletes the custom property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: 'excel!Excel.WorksheetCustomProperty#key:member'
     summary: >-
-      Gets the key of the custom property. Read only.
+      Gets the key of the custom property. Custom property keys are case-insensitive.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -130,6 +152,56 @@ items:
                           select?: string;
                           expand?: string;
                       }
+  - uid: 'excel!Excel.WorksheetCustomProperty#set:member(1)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.WorksheetCustomProperty): void`
+    isPreview: true
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.WorksheetCustomPropertyUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData:interface'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - 'office!OfficeExtension.UpdateOptions:interface'
+  - uid: 'excel!Excel.WorksheetCustomProperty#set:member(2)'
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    isPreview: true
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.WorksheetCustomProperty): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.WorksheetCustomProperty:class'
   - uid: 'excel!Excel.WorksheetCustomProperty#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -151,7 +223,7 @@ items:
         description: ''
   - uid: 'excel!Excel.WorksheetCustomProperty#value:member'
     summary: >-
-      Gets the value of the custom property. Read only.
+      Gets or sets the value of the custom property.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -163,7 +235,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly value: string;'
+      content: 'value: string;'
       return:
         type:
           - string
@@ -176,5 +248,9 @@ references:
     name: Excel.WorksheetCustomProperty
   - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyLoadOptions:interface'
     name: Excel.Interfaces.WorksheetCustomPropertyLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData:interface'
+    name: Interfaces.WorksheetCustomPropertyUpdateData
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
+    name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyData:interface'
     name: Excel.Interfaces.WorksheetCustomPropertyData

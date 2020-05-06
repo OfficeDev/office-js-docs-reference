@@ -12,7 +12,7 @@ items:
       - 'excel!Excel.Interfaces.WorkbookProtectionData#protected:member'
   - uid: 'excel!Excel.Interfaces.WorkbookProtectionData#protected:member'
     summary: |-
-      Indicates if the workbook is protected. Read-Only.
+      Specifies if the workbook is protected.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protected

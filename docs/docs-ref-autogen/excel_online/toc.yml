@@ -244,6 +244,8 @@ items:
                 uid: 'excel!Excel.ReadingOrder:enum'
               - name: RibbonTab
                 uid: 'excel!Excel.RibbonTab:enum'
+              - name: RowHiddenChangeType
+                uid: 'excel!Excel.RowHiddenChangeType:enum'
               - name: SaveBehavior
                 uid: 'excel!Excel.SaveBehavior:enum'
               - name: SearchDirection
@@ -539,6 +541,8 @@ items:
             uid: 'excel!Excel.ConditionalTextComparisonRule:interface'
           - name: ConditionalTopBottomRule
             uid: 'excel!Excel.ConditionalTopBottomRule:interface'
+          - name: CultureInfo
+            uid: 'excel!Excel.CultureInfo:class'
           - name: CustomConditionalFormat
             uid: 'excel!Excel.CustomConditionalFormat:class'
           - name: CustomDataValidation
@@ -615,6 +619,8 @@ items:
             uid: 'excel!Excel.NamedItemArrayValues:class'
           - name: NamedItemCollection
             uid: 'excel!Excel.NamedItemCollection:class'
+          - name: NumberFormatInfo
+            uid: 'excel!Excel.NumberFormatInfo:class'
           - name: PageBreak
             uid: 'excel!Excel.PageBreak:class'
           - name: PageBreakCollection
@@ -643,6 +649,8 @@ items:
             uid: 'excel!Excel.PivotTable:class'
           - name: PivotTableCollection
             uid: 'excel!Excel.PivotTableCollection:class'
+          - name: PivotTableScopedCollection
+            uid: 'excel!Excel.PivotTableScopedCollection:class'
           - name: PivotTableStyle
             uid: 'excel!Excel.PivotTableStyle:class'
           - name: PivotTableStyleCollection
@@ -823,6 +831,8 @@ items:
             uid: 'excel!Excel.WorksheetProtection:class'
           - name: WorksheetProtectionOptions
             uid: 'excel!Excel.WorksheetProtectionOptions:interface'
+          - name: WorksheetRowHiddenChangedEventArgs
+            uid: 'excel!Excel.WorksheetRowHiddenChangedEventArgs:interface'
           - name: WorksheetRowSortedEventArgs
             uid: 'excel!Excel.WorksheetRowSortedEventArgs:interface'
           - name: WorksheetSearchCriteria

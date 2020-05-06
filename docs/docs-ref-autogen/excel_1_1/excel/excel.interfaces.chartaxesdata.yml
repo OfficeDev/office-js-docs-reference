@@ -14,7 +14,7 @@ items:
       - 'excel!Excel.Interfaces.ChartAxesData#valueAxis:member'
   - uid: 'excel!Excel.Interfaces.ChartAxesData#categoryAxis:member'
     summary: |-
-      Represents the category axis in a chart. Read-only.
+      Represents the category axis in a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: categoryAxis
@@ -29,7 +29,7 @@ items:
           - 'excel!Excel.Interfaces.ChartAxisData:interface'
   - uid: 'excel!Excel.Interfaces.ChartAxesData#seriesAxis:member'
     summary: |-
-      Represents the series axis of a 3-dimensional chart. Read-only.
+      Represents the series axis of a 3-dimensional chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: seriesAxis
@@ -44,7 +44,7 @@ items:
           - 'excel!Excel.Interfaces.ChartAxisData:interface'
   - uid: 'excel!Excel.Interfaces.ChartAxesData#valueAxis:member'
     summary: |-
-      Represents the value axis in an axis. Read-only.
+      Represents the value axis in an axis.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valueAxis

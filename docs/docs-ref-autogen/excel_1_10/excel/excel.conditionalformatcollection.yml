@@ -151,7 +151,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ConditionalFormatCollection#getCount:member(1)'
     summary: |-
-      Returns the number of conditional formats in the workbook. Read-only.
+      Returns the number of conditional formats in the workbook.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()

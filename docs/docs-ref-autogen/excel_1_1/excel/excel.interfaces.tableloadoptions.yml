@@ -54,7 +54,7 @@ items:
   - uid: 'excel!Excel.Interfaces.TableLoadOptions#id:member'
     summary: >-
       Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the
-      same even when the table is renamed. Read-only.
+      same even when the table is renamed.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -105,7 +105,7 @@ items:
           - 'excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.TableLoadOptions#showHeaders:member'
     summary: |-
-      Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+      Specifies if the header row is visible. This value can be set to show or remove the header row.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showHeaders
@@ -120,7 +120,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.TableLoadOptions#showTotals:member'
     summary: |-
-      Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+      Specifies if the total row is visible. This value can be set to show or remove the total row.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showTotals

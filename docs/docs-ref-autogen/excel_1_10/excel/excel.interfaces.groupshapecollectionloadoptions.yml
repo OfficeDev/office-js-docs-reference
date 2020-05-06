@@ -54,7 +54,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#altTextDescription:member'
     summary: |-
-      For EACH ITEM in the collection: Returns or sets the alternative description text for a Shape object.
+      For EACH ITEM in the collection: Specifies the alternative description text for a Shape object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: altTextDescription
@@ -69,7 +69,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#altTextTitle:member'
     summary: |-
-      For EACH ITEM in the collection: Returns or sets the alternative title text for a Shape object.
+      For EACH ITEM in the collection: Specifies the alternative title text for a Shape object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: altTextTitle
@@ -84,7 +84,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#connectionSiteCount:member'
     summary: |-
-      For EACH ITEM in the collection: Returns the number of connection sites on this shape. Read-only.
+      For EACH ITEM in the collection: Returns the number of connection sites on this shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: connectionSiteCount
@@ -131,7 +131,7 @@ items:
           - 'excel!Excel.Interfaces.GeometricShapeLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#geometricShapeType:member'
     summary: >-
-      For EACH ITEM in the collection: Represents the geometric shape type of this geometric shape. See
+      For EACH ITEM in the collection: Specifies the geometric shape type of this geometric shape. See
       Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
 
 
@@ -165,7 +165,7 @@ items:
           - 'excel!Excel.Interfaces.ShapeGroupLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#height:member'
     summary: >-
-      For EACH ITEM in the collection: Represents the height, in points, of the shape. Throws an invalid argument
+      For EACH ITEM in the collection: Specifies the height, in points, of the shape. Throws an invalid argument
       exception when set with a negative value or zero as input.
 
 
@@ -182,7 +182,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#id:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the shape identifier. Read-only.
+      For EACH ITEM in the collection: Specifies the shape identifier.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -231,7 +231,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#level:member'
     summary: >-
-      For EACH ITEM in the collection: Represents the level of the specified shape. For example, a level of 0 means that
+      For EACH ITEM in the collection: Specifies the level of the specified shape. For example, a level of 0 means that
       the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2
       means the shape is part of a sub-group of the top level.
 
@@ -281,7 +281,7 @@ items:
           - 'excel!Excel.Interfaces.ShapeLineFormatLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#lockAspectRatio:member'
     summary: |-
-      For EACH ITEM in the collection: Specifies whether or not the aspect ratio of this shape is locked.
+      For EACH ITEM in the collection: Specifies if the aspect ratio of this shape is locked.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lockAspectRatio
@@ -296,7 +296,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#name:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the name of the shape.
+      For EACH ITEM in the collection: Specifies the name of the shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -311,7 +311,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#parentGroup:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the parent group of this shape.
+      For EACH ITEM in the collection: Specifies the parent group of this shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: parentGroup
@@ -341,7 +341,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#rotation:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the rotation, in degrees, of the shape.
+      For EACH ITEM in the collection: Specifies the rotation, in degrees, of the shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rotation
@@ -388,7 +388,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#type:member'
     summary: |-
-      For EACH ITEM in the collection: Returns the type of this shape. See Excel.ShapeType for details. Read-only.
+      For EACH ITEM in the collection: Returns the type of this shape. See Excel.ShapeType for details.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
@@ -403,7 +403,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#visible:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the visibility of this shape.
+      For EACH ITEM in the collection: Specifies if the shape is visible.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
@@ -418,7 +418,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#width:member'
     summary: >-
-      For EACH ITEM in the collection: Represents the width, in points, of the shape. Throws an invalid argument
+      For EACH ITEM in the collection: Specifies the width, in points, of the shape. Throws an invalid argument
       exception when set with a negative value or zero as input.
 
 
@@ -436,7 +436,7 @@ items:
   - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#zOrderPosition:member'
     summary: >-
       For EACH ITEM in the collection: Returns the position of the specified shape in the z-order, with 0 representing
-      the bottom of the order stack. Read-only.
+      the bottom of the order stack.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

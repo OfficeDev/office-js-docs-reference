@@ -6188,7 +6188,7 @@ export declare namespace Office {
          */
         days?: MailboxEnums.Days[] | string[];
         /**
-         * Represents the number of the week in the selected month e.g. 'first' for first week of the month.
+         * Represents the number of the week in the selected month e.g., 'first' for first week of the month.
          */
         weekNumber?: MailboxEnums.WeekNumber | string;
         /**

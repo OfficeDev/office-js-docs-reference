@@ -2,7 +2,7 @@
 items:
   - uid: 'excel!Excel.ColorScaleConditionalFormat:class'
     summary: |-
-      Represents an IconSet criteria for conditional formatting.
+      Represents ColorScale criteria for conditional formatting.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ColorScaleConditionalFormat

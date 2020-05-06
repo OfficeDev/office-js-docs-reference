@@ -35,7 +35,7 @@ items:
       - 'excel!Excel.DocumentProperties#toJSON:member(1)'
   - uid: 'excel!Excel.DocumentProperties#author:member'
     summary: |-
-      Gets or sets the author of the workbook.
+      The author of the workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: author
@@ -50,7 +50,7 @@ items:
           - string
   - uid: 'excel!Excel.DocumentProperties#category:member'
     summary: |-
-      Gets or sets the category of the workbook.
+      The category of the workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: category
@@ -65,7 +65,7 @@ items:
           - string
   - uid: 'excel!Excel.DocumentProperties#comments:member'
     summary: |-
-      Gets or sets the comments of the workbook.
+      The comments of the workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: comments
@@ -80,7 +80,7 @@ items:
           - string
   - uid: 'excel!Excel.DocumentProperties#company:member'
     summary: |-
-      Gets or sets the company of the workbook.
+      The company of the workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: company
@@ -139,7 +139,7 @@ items:
           - 'excel!Excel.CustomPropertyCollection:class'
   - uid: 'excel!Excel.DocumentProperties#keywords:member'
     summary: |-
-      Gets or sets the keywords of the workbook.
+      The keywords of the workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: keywords
@@ -239,7 +239,7 @@ items:
                       }
   - uid: 'excel!Excel.DocumentProperties#manager:member'
     summary: |-
-      Gets or sets the manager of the workbook.
+      The manager of the workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: manager
@@ -317,7 +317,7 @@ items:
             - 'excel!Excel.DocumentProperties:class'
   - uid: 'excel!Excel.DocumentProperties#subject:member'
     summary: |-
-      Gets or sets the subject of the workbook.
+      The subject of the workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subject
@@ -332,7 +332,7 @@ items:
           - string
   - uid: 'excel!Excel.DocumentProperties#title:member'
     summary: |-
-      Gets or sets the title of the workbook.
+      The title of the workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title

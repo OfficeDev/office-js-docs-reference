@@ -46,7 +46,7 @@ items:
           - 'excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions#rule:member'
     summary: |-
-      Represents the Rule object on this conditional format.
+      Specifies the Rule object on this conditional format.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rule

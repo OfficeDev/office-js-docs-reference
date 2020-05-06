@@ -80,7 +80,7 @@ tryCatch(async () => {
 
     // fix all the individual TOC files
     const commonToc = scrubAndWriteToc(docsDestination + "/office");
-    const hostVersionMap = [{host: "excel", versions: 11},
+    const hostVersionMap = [{host: "excel", versions: 12}, /*not including online*/
                             {host: "onenote", versions: 1},
                             {host: "outlook", versions: 9},
                             {host: "powerpoint", versions: 1},

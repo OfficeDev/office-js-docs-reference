@@ -53,7 +53,7 @@ items:
           - 'excel!Excel.Interfaces.ChartLegendFormatLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#height:member'
     summary: |-
-      Represents the height, in points, of the legend on the chart. Null if legend is not visible.
+      Specifies the height, in points, of the legend on the chart. Null if legend is not visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -68,7 +68,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#left:member'
     summary: |-
-      Represents the left, in points, of a chart legend. Null if legend is not visible.
+      Specifies the left, in points, of the legend on the chart. Null if legend is not visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
@@ -83,7 +83,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#overlay:member'
     summary: |-
-      Boolean value for whether the chart legend should overlap with the main body of the chart.
+      Specifies if the chart legend should overlap with the main body of the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overlay
@@ -98,7 +98,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#position:member'
     summary: |-
-      Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
+      Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
@@ -113,7 +113,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#showShadow:member'
     summary: |-
-      Represents if the legend has a shadow on the chart.
+      Specifies if the legend has a shadow on the chart.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showShadow
@@ -128,7 +128,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#top:member'
     summary: |-
-      Represents the top of a chart legend.
+      Specifies the top of a chart legend.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
@@ -143,7 +143,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#visible:member'
     summary: |-
-      A boolean value the represents the visibility of a ChartLegend object.
+      Specifies if the ChartLegend is visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
@@ -158,7 +158,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#width:member'
     summary: |-
-      Represents the width, in points, of the legend on the chart. Null if legend is not visible.
+      Specifies the width, in points, of the legend on the chart. Null if legend is not visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width

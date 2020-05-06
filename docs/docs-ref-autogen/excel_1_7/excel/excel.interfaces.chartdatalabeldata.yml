@@ -53,7 +53,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.ChartDataLabelData#showBubbleSize:member'
     summary: |-
-      Boolean value representing if the data label bubble size is visible or not.
+      Specifies if the data label bubble size is visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showBubbleSize
@@ -68,7 +68,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartDataLabelData#showCategoryName:member'
     summary: |-
-      Boolean value representing if the data label category name is visible or not.
+      Specifies if the data label category name is visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showCategoryName
@@ -83,7 +83,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartDataLabelData#showLegendKey:member'
     summary: |-
-      Boolean value representing if the data label legend key is visible or not.
+      Specifies if the data label legend key is visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showLegendKey
@@ -98,7 +98,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartDataLabelData#showPercentage:member'
     summary: |-
-      Boolean value representing if the data label percentage is visible or not.
+      Specifies if the data label percentage is visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showPercentage
@@ -113,7 +113,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartDataLabelData#showSeriesName:member'
     summary: |-
-      Boolean value representing if the data label series name is visible or not.
+      Specifies if the data label series name is visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showSeriesName
@@ -128,7 +128,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartDataLabelData#showValue:member'
     summary: |-
-      Boolean value representing if the data label value is visible or not.
+      Specifies if the data label value is visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showValue

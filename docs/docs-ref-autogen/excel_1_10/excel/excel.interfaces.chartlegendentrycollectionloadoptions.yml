@@ -35,7 +35,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#height:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the height of the legendEntry on the chart legend.
+      For EACH ITEM in the collection: Specifies the height of the legendEntry on the chart legend.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -50,7 +50,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#index:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the index of the legendEntry in the chart legend.
+      For EACH ITEM in the collection: Specifies the index of the legendEntry in the chart legend.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
@@ -65,7 +65,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#left:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the left of a chart legendEntry.
+      For EACH ITEM in the collection: Specifies the left of a chart legendEntry.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
@@ -80,7 +80,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#top:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the top of a chart legendEntry.
+      For EACH ITEM in the collection: Specifies the top of a chart legendEntry.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top

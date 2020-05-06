@@ -46,7 +46,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.SlicerStyleLoadOptions#readOnly:member'
     summary: |-
-      Specifies whether this SlicerStyle object is read-only. Read-only.
+      Specifies if this SlicerStyle object is read-only.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readOnly

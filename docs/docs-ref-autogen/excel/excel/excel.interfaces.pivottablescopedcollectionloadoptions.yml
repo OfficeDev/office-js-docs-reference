@@ -6,9 +6,7 @@ items:
       PivotTable's top-left corner. They are ordered top to bottom and then left to right.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.PivotTableScopedCollectionLoadOptions
     fullName: Excel.Interfaces.PivotTableScopedCollectionLoadOptions
     langs:
@@ -28,7 +26,6 @@ items:
     summary: >-
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    isPreview: true
     name: $all
     fullName: $all
     langs:
@@ -41,8 +38,8 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions#allowMultipleFiltersPerField:member'
     summary: >-
-      For EACH ITEM in the collection: Specifies whether the PivotTable allows the application of multiple PivotFilters
-      on a given PivotField in the table.
+      For EACH ITEM in the collection: Specifies if the PivotTable allows the application of multiple PivotFilters on a
+      given PivotField in the table.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -60,12 +57,11 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions#enableDataValueEditing:member'
     summary: >-
-      For EACH ITEM in the collection: Specifies whether the PivotTable allows values in the data body to be edited by
-      the user.
+      For EACH ITEM in the collection: Specifies if the PivotTable allows values in the data body to be edited by the
+      user.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: enableDataValueEditing
     fullName: enableDataValueEditing
     langs:
@@ -78,10 +74,9 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions#id:member'
     summary: |-
-      For EACH ITEM in the collection: Id of the PivotTable. Read-only.
+      For EACH ITEM in the collection: Id of the PivotTable.
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: id
     fullName: id
     langs:
@@ -97,7 +92,6 @@ items:
       For EACH ITEM in the collection: The PivotLayout describing the layout and visual structure of the PivotTable.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: layout
     fullName: layout
     langs:
@@ -113,7 +107,6 @@ items:
       For EACH ITEM in the collection: Name of the PivotTable.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: name
     fullName: name
     langs:
@@ -126,10 +119,9 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionLoadOptions#useCustomSortLists:member'
     summary: |-
-      For EACH ITEM in the collection: Specifies whether the PivotTable uses custom lists when sorting.
+      For EACH ITEM in the collection: Specifies if the PivotTable uses custom lists when sorting.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: useCustomSortLists
     fullName: useCustomSortLists
     langs:
@@ -145,7 +137,6 @@ items:
       For EACH ITEM in the collection: The worksheet containing the current PivotTable.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: worksheet
     fullName: worksheet
     langs:

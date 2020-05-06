@@ -36,10 +36,8 @@ items:
       - 'excel!Excel.Interfaces.RangeData#values:member'
       - 'excel!Excel.Interfaces.RangeData#valueTypes:member'
   - uid: 'excel!Excel.Interfaces.RangeData#address:member'
-    summary: >-
-      Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4").
-      Read-only.
-
+    summary: |-
+      Specifies the range reference in A1-style. Address value will contain the Sheet reference (e.g., "Sheet1!A1:B4").
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
@@ -54,7 +52,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.RangeData#addressLocal:member'
     summary: |-
-      Represents range reference for the specified range in the language of the user. Read-only.
+      Specifies the range reference for the specified range in the language of the user.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addressLocal
@@ -68,8 +66,10 @@ items:
         type:
           - string
   - uid: 'excel!Excel.Interfaces.RangeData#cellCount:member'
-    summary: |-
-      Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
+    summary: >-
+      Specifies the number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1
+      (2,147,483,647).
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cellCount
@@ -84,7 +84,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.RangeData#columnCount:member'
     summary: |-
-      Represents the total number of columns in the range. Read-only.
+      Specifies the total number of columns in the range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnCount
@@ -114,7 +114,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeData#columnIndex:member'
     summary: |-
-      Represents the column number of the first cell in the range. Zero-indexed. Read-only.
+      Specifies the column number of the first cell in the range. Zero-indexed.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnIndex
@@ -129,7 +129,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.RangeData#conditionalFormats:member'
     summary: |-
-      Collection of ConditionalFormats that intersect the range. Read-only.
+      The collection of ConditionalFormats that intersect the range.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: conditionalFormats
@@ -158,10 +158,8 @@ items:
         type:
           - 'excel!Excel.Interfaces.DataValidationData:interface'
   - uid: 'excel!Excel.Interfaces.RangeData#format:member'
-    summary: >-
+    summary: |-
       Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
-      Read-only.
-
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -223,7 +221,7 @@ items:
           - 'any[][]'
   - uid: 'excel!Excel.Interfaces.RangeData#hidden:member'
     summary: |-
-      Represents if all cells of the current range are hidden. Read-only.
+      Represents if all cells of the current range are hidden.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hidden
@@ -253,7 +251,7 @@ items:
           - 'excel!Excel.RangeHyperlink:interface'
   - uid: 'excel!Excel.Interfaces.RangeData#isEntireColumn:member'
     summary: |-
-      Represents if the current range is an entire column. Read-only.
+      Represents if the current range is an entire column.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireColumn
@@ -268,7 +266,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeData#isEntireRow:member'
     summary: |-
-      Represents if the current range is an entire row. Read-only.
+      Represents if the current range is an entire row.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireRow
@@ -283,7 +281,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeData#linkedDataTypeState:member'
     summary: |-
-      Represents the data type state of each cell. Read-only.
+      Represents the data type state of each cell.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: linkedDataTypeState
@@ -331,7 +329,7 @@ items:
           - 'any[][]'
   - uid: 'excel!Excel.Interfaces.RangeData#rowCount:member'
     summary: |-
-      Returns the total number of rows in the range. Read-only.
+      Returns the total number of rows in the range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowCount
@@ -361,7 +359,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeData#rowIndex:member'
     summary: |-
-      Returns the row number of the first cell in the range. Zero-indexed. Read-only.
+      Returns the row number of the first cell in the range. Zero-indexed.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowIndex
@@ -395,7 +393,7 @@ items:
   - uid: 'excel!Excel.Interfaces.RangeData#text:member'
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
-      that happens in Excel UI will not affect the text value returned by the API. Read-only.
+      that happens in Excel UI will not affect the text value returned by the API.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -428,7 +426,7 @@ items:
           - 'any[][]'
   - uid: 'excel!Excel.Interfaces.RangeData#valueTypes:member'
     summary: |-
-      Represents the type of data of each cell. Read-only.
+      Specifies the type of data in each cell.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valueTypes

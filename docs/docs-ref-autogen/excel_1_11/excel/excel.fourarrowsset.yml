@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.FourArrowsSet:interface'
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.FourArrowsSet
+    fullName: Excel.FourArrowsSet
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.FourArrowsSet#greenUpArrow:member'
+      - 'excel!Excel.FourArrowsSet#redDownArrow:member'
+      - 'excel!Excel.FourArrowsSet#yellowDownInclineArrow:member'
+      - 'excel!Excel.FourArrowsSet#yellowUpInclineArrow:member'
+  - uid: 'excel!Excel.FourArrowsSet#greenUpArrow:member'
+    name: greenUpArrow
+    fullName: greenUpArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenUpArrow: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourArrowsSet#redDownArrow:member'
+    name: redDownArrow
+    fullName: redDownArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redDownArrow: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourArrowsSet#yellowDownInclineArrow:member'
+    name: yellowDownInclineArrow
+    fullName: yellowDownInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowDownInclineArrow: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourArrowsSet#yellowUpInclineArrow:member'
+    name: yellowUpInclineArrow
+    fullName: yellowUpInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowUpInclineArrow: Icon;'
+      return:
+        type:
+          - 'excel!Excel.Icon:interface'
+references:
+  - uid: 'excel!Excel.Icon:interface'
+    name: Icon

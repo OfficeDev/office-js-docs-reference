@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxisCategoryType:enum'
+    summary: |-
+      Specifies the type of the category axis.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartAxisCategoryType
+    fullName: Excel.ChartAxisCategoryType
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.ChartAxisCategoryType.automatic:member'
+      - 'excel!Excel.ChartAxisCategoryType.dateAxis:member'
+      - 'excel!Excel.ChartAxisCategoryType.textAxis:member'
+  - uid: 'excel!Excel.ChartAxisCategoryType.automatic:member'
+    summary: Excel controls the axis type.
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Automatic"'
+  - uid: 'excel!Excel.ChartAxisCategoryType.dateAxis:member'
+    summary: Axis groups data on a time scale.
+    name: dateAxis
+    fullName: dateAxis
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DateAxis"'
+  - uid: 'excel!Excel.ChartAxisCategoryType.textAxis:member'
+    summary: Axis groups data by an arbitrary set of categories.
+    name: textAxis
+    fullName: textAxis
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TextAxis"'

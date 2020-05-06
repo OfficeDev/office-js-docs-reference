@@ -28,7 +28,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.PageBreakCollectionLoadOptions#columnIndex:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the column index for the page break
+      For EACH ITEM in the collection: Specifies the column index for the page break
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnIndex
@@ -43,7 +43,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.PageBreakCollectionLoadOptions#rowIndex:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the row index for the page break
+      For EACH ITEM in the collection: Specifies the row index for the page break
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowIndex

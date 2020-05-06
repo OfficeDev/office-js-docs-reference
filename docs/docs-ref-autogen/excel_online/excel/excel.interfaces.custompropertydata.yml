@@ -14,7 +14,7 @@ items:
       - 'excel!Excel.Interfaces.CustomPropertyData#value:member'
   - uid: 'excel!Excel.Interfaces.CustomPropertyData#key:member'
     summary: |-
-      Gets the key of the custom property. Read only.
+      The key of the custom property.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: key
@@ -29,7 +29,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.CustomPropertyData#type:member'
     summary: |-
-      Gets the value type of the custom property. Read only.
+      The type of the value used for the custom property.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
@@ -44,7 +44,7 @@ items:
           - 'excel!Excel.Interfaces.CustomPropertyData#type~0:complex'
   - uid: 'excel!Excel.Interfaces.CustomPropertyData#value:member'
     summary: |-
-      Gets or sets the value of the custom property.
+      The value of the custom property.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value

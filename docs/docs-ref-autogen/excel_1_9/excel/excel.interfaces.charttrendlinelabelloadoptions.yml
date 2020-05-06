@@ -42,7 +42,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#autoText:member'
     summary: |-
-      Boolean value representing if trendline label automatically generates appropriate text based on context.
+      Specifies if trendline label automatically generate appropriate text based on context.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoText
@@ -57,7 +57,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#format:member'
     summary: |-
-      Represents the format of chart trendline label.
+      The format of chart trendline label.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -86,10 +86,8 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#height:member'
-    summary: >-
-      Returns the height, in points, of the chart trendline label. Read-only. Null if chart trendline label is not
-      visible.
-
+    summary: |-
+      Returns the height, in points, of the chart trendline label. Null if chart trendline label is not visible.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -138,8 +136,8 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#linkNumberFormat:member'
     summary: >-
-      Boolean value representing if the number format is linked to the cells (so that the number format changes in the
-      labels when it changes in the cells).
+      Specifies if the number format is linked to the cells (so that the number format changes in the labels when it
+      changes in the cells).
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -235,10 +233,8 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelLoadOptions#width:member'
-    summary: >-
-      Returns the width, in points, of the chart trendline label. Read-only. Null if chart trendline label is not
-      visible.
-
+    summary: |-
+      Returns the width, in points, of the chart trendline label. Null if chart trendline label is not visible.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width

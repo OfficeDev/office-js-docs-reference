@@ -34,7 +34,7 @@ items:
   - uid: 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions#color:member'
     summary: >-
       For EACH ITEM in the collection: HTML color code representing the color of the border line, of the form \#RRGGBB
-      (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+      (e.g., "FFA500") or as a named HTML color (e.g., "orange").
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -51,7 +51,7 @@ items:
   - uid: 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions#sideIndex:member'
     summary: >-
       For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See
-      Excel.BorderIndex for details. Read-only.
+      Excel.BorderIndex for details.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

@@ -87,7 +87,7 @@ items:
           - 'excel!Excel.Line#beginArrowheadWidth~0:complex'
   - uid: 'excel!Excel.Line#beginConnectedShape:member'
     summary: |-
-      Represents the shape to which the beginning of the specified line is attached. Read-only.
+      Represents the shape to which the beginning of the specified line is attached.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: beginConnectedShape
@@ -102,8 +102,8 @@ items:
           - 'excel!Excel.Shape:class'
   - uid: 'excel!Excel.Line#beginConnectedSite:member'
     summary: >-
-      Represents the connection site to which the beginning of a connector is connected. Read-only. Returns null when
-      the beginning of the line is not attached to any shape.
+      Represents the connection site to which the beginning of a connector is connected. Returns null when the beginning
+      of the line is not attached to any shape.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -355,7 +355,7 @@ items:
           - 'excel!Excel.Line#endArrowheadWidth~0:complex'
   - uid: 'excel!Excel.Line#endConnectedShape:member'
     summary: |-
-      Represents the shape to which the end of the specified line is attached. Read-only.
+      Represents the shape to which the end of the specified line is attached.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: endConnectedShape
@@ -370,8 +370,8 @@ items:
           - 'excel!Excel.Shape:class'
   - uid: 'excel!Excel.Line#endConnectedSite:member'
     summary: >-
-      Represents the connection site to which the end of a connector is connected. Read-only. Returns null when the end
-      of the line is not attached to any shape.
+      Represents the connection site to which the end of a connector is connected. Returns null when the end of the line
+      is not attached to any shape.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -387,7 +387,7 @@ items:
           - number
   - uid: 'excel!Excel.Line#id:member'
     summary: |-
-      Represents the shape identifier. Read-only.
+      Specifies the shape identifier.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -402,7 +402,7 @@ items:
           - string
   - uid: 'excel!Excel.Line#isBeginConnected:member'
     summary: |-
-      Specifies whether or not the beginning of the specified line is connected to a shape. Read-only.
+      Specifies if the beginning of the specified line is connected to a shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isBeginConnected
@@ -417,7 +417,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Line#isEndConnected:member'
     summary: |-
-      Specifies whether or not the end of the specified line is connected to a shape. Read-only.
+      Specifies if the end of the specified line is connected to a shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isEndConnected
@@ -550,7 +550,7 @@ items:
             - 'excel!Excel.Line:class'
   - uid: 'excel!Excel.Line#shape:member'
     summary: |-
-      Returns the Shape object associated with the line. Read-only.
+      Returns the Shape object associated with the line.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shape

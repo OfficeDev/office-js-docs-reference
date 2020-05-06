@@ -12,7 +12,7 @@ items:
       - 'excel!Excel.Interfaces.ChartAreaFormatData#font:member'
   - uid: 'excel!Excel.Interfaces.ChartAreaFormatData#font:member'
     summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.
+      Represents the font attributes (font name, font size, color, etc.) for the current object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font

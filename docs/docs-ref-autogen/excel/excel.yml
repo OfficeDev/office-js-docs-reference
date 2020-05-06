@@ -178,8 +178,6 @@ items:
       - 'excel!Excel.CultureInfo:class'
       - 'excel!Excel.CustomConditionalFormat:class'
       - 'excel!Excel.CustomDataValidation:interface'
-      - 'excel!Excel.CustomFunctionMetadataFormat:enum'
-      - 'excel!Excel.CustomFunctionType:enum'
       - 'excel!Excel.CustomProperty:class'
       - 'excel!Excel.CustomPropertyCollection:class'
       - 'excel!Excel.CustomXmlPart:class'
@@ -708,6 +706,7 @@ items:
       - 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData:interface'
       - 'excel!Excel.Interfaces.WorksheetCustomPropertyData:interface'
       - 'excel!Excel.Interfaces.WorksheetCustomPropertyLoadOptions:interface'
+      - 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData:interface'
       - 'excel!Excel.Interfaces.WorksheetData:interface'
       - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
       - 'excel!Excel.Interfaces.WorksheetProtectionData:interface'
@@ -1505,10 +1504,6 @@ references:
     name: Excel.CustomConditionalFormat
   - uid: 'excel!Excel.CustomDataValidation:interface'
     name: Excel.CustomDataValidation
-  - uid: 'excel!Excel.CustomFunctionMetadataFormat:enum'
-    name: Excel.CustomFunctionMetadataFormat
-  - uid: 'excel!Excel.CustomFunctionType:enum'
-    name: Excel.CustomFunctionType
   - uid: 'excel!Excel.CustomProperty:class'
     name: Excel.CustomProperty
   - uid: 'excel!Excel.CustomPropertyCollection:class'
@@ -2563,6 +2558,8 @@ references:
     name: Excel.Interfaces.WorksheetCustomPropertyData
   - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyLoadOptions:interface'
     name: Excel.Interfaces.WorksheetCustomPropertyLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData:interface'
+    name: Excel.Interfaces.WorksheetCustomPropertyUpdateData
   - uid: 'excel!Excel.Interfaces.WorksheetData:interface'
     name: Excel.Interfaces.WorksheetData
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'

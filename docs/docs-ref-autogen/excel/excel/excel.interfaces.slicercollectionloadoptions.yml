@@ -74,7 +74,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.SlicerCollectionLoadOptions#id:member'
     summary: |-
-      For EACH ITEM in the collection: Represents the unique id of slicer. Read-only.
+      For EACH ITEM in the collection: Represents the unique id of slicer.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id

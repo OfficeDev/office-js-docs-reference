@@ -68,7 +68,7 @@ items:
           - 'excel!Excel.Interfaces.BindingCollectionLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#name:member'
     summary: |-
-      Gets the workbook name. Read-only.
+      Gets the workbook name.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -98,7 +98,7 @@ items:
           - 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#protection:member'
     summary: |-
-      Returns workbook protection object for a workbook.
+      Returns the protection object for a workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protection

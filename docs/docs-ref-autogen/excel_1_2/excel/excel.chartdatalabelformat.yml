@@ -39,7 +39,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartDataLabelFormat#fill:member'
     summary: |-
-      Represents the fill format of the current chart data label. Read-only.
+      Represents the fill format of the current chart data label.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
@@ -54,7 +54,7 @@ items:
           - 'excel!Excel.ChartFill:class'
   - uid: 'excel!Excel.ChartDataLabelFormat#font:member'
     summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.
+      Represents the font attributes (font name, font size, color, etc.) for a chart data label.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font

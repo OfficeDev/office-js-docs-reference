@@ -23,6 +23,7 @@ items:
       - 'excel!Excel.ChartAxisTitle#set:member(2)'
       - 'excel!Excel.ChartAxisTitle#setFormula:member(1)'
       - 'excel!Excel.ChartAxisTitle#text:member'
+      - 'excel!Excel.ChartAxisTitle#textOrientation:member'
       - 'excel!Excel.ChartAxisTitle#toJSON:member(1)'
       - 'excel!Excel.ChartAxisTitle#visible:member'
   - uid: 'excel!Excel.ChartAxisTitle#context:member'
@@ -41,7 +42,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartAxisTitle#format:member'
     summary: |-
-      Represents the formatting of chart axis title. Read-only.
+      Specifies the formatting of chart axis title.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -214,7 +215,7 @@ items:
             - string
   - uid: 'excel!Excel.ChartAxisTitle#text:member'
     summary: |-
-      Represents the axis title.
+      Specifies the axis title.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
@@ -227,6 +228,23 @@ items:
       return:
         type:
           - string
+  - uid: 'excel!Excel.ChartAxisTitle#textOrientation:member'
+    summary: >-
+      Specifies the angle to which the text is oriented for the chart axis title. The value should either be an integer
+      from -90 to 90 or the integer 180 for vertically-oriented text.
+
+
+      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation: number;'
+      return:
+        type:
+          - number
   - uid: 'excel!Excel.ChartAxisTitle#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -247,7 +265,7 @@ items:
         description: ''
   - uid: 'excel!Excel.ChartAxisTitle#visible:member'
     summary: |-
-      A boolean that specifies the visibility of an axis title.
+      Specifies if the axis title is visibile.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible

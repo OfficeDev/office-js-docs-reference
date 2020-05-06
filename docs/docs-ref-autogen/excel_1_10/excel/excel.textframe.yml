@@ -37,8 +37,8 @@ items:
       - 'excel!Excel.TextFrame#verticalOverflow:member'
   - uid: 'excel!Excel.TextFrame#autoSizeSetting:member'
     summary: >-
-      Gets or sets the automatic sizing settings for the text frame. A text frame can be set to automatically fit the
-      text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
+      The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the
+      text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -119,7 +119,7 @@ items:
           ```
   - uid: 'excel!Excel.TextFrame#hasText:member'
     summary: |-
-      Specifies whether the text frame contains text.
+      Specifies if the text frame contains text.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hasText

@@ -14,7 +14,7 @@ items:
       - 'excel!Excel.Interfaces.ChartPlotAreaFormatUpdateData#border:member'
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatUpdateData#border:member'
     summary: |-
-      Represents the border attributes of a chart plotArea.
+      Specifies the border attributes of a chart plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border

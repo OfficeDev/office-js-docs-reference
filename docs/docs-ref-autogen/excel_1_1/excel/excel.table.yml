@@ -37,7 +37,7 @@ items:
       - 'excel!Excel.Table#toJSON:member(1)'
   - uid: 'excel!Excel.Table#columns:member'
     summary: |-
-      Represents a collection of all the columns in the table. Read-only.
+      Represents a collection of all the columns in the table.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columns
@@ -244,7 +244,7 @@ items:
   - uid: 'excel!Excel.Table#id:member'
     summary: >-
       Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the
-      same even when the table is renamed. Read-only.
+      same even when the table is renamed.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -386,7 +386,7 @@ items:
           - string
   - uid: 'excel!Excel.Table#rows:member'
     summary: |-
-      Represents a collection of all the rows in the table. Read-only.
+      Represents a collection of all the rows in the table.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rows
@@ -449,7 +449,7 @@ items:
             - 'excel!Excel.Table:class'
   - uid: 'excel!Excel.Table#showHeaders:member'
     summary: |-
-      Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+      Specifies if the header row is visible. This value can be set to show or remove the header row.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showHeaders
@@ -464,7 +464,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Table#showTotals:member'
     summary: |-
-      Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+      Specifies if the total row is visible. This value can be set to show or remove the total row.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showTotals

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the entity that is mentioned in comments.
 
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CommentMention
     fullName: Excel.CommentMention
     langs:
@@ -17,9 +17,9 @@ items:
       - 'excel!Excel.CommentMention#name:member'
   - uid: 'excel!Excel.CommentMention#email:member'
     summary: |-
-      Gets or sets the email address of the entity that is mentioned in comment.
+      The email address of the entity that is mentioned in comment.
 
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: email
     fullName: email
     langs:
@@ -32,9 +32,9 @@ items:
           - string
   - uid: 'excel!Excel.CommentMention#id:member'
     summary: |-
-      Gets or sets the id of the entity. The id matches one of the ids in `CommentRichContent.richContent`<!-- -->.
+      The id of the entity. The id matches one of the ids in `CommentRichContent.richContent`<!-- -->.
 
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -47,9 +47,9 @@ items:
           - number
   - uid: 'excel!Excel.CommentMention#name:member'
     summary: |-
-      Gets or sets the name of the entity that is mentioned in comment.
+      The name of the entity that is mentioned in comment.
 
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:

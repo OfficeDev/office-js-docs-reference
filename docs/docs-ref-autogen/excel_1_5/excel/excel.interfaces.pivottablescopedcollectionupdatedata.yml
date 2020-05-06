@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the PivotTableScopedCollection object, for use in
+      `pivotTableScopedCollection.set({ ... })`<!-- -->.
+    name: Excel.Interfaces.PivotTableScopedCollectionUpdateData
+    fullName: Excel.Interfaces.PivotTableScopedCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.PivotTableData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.PivotTableScopedCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.PivotTableData[]'
+    fullName: 'Excel.Interfaces.PivotTableData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.PivotTableData:interface'
+        name: Excel.Interfaces.PivotTableData
+        fullName: Excel.Interfaces.PivotTableData
+      - name: '[]'
+        fullName: '[]'

@@ -222,7 +222,7 @@ items:
           ```
   - uid: 'excel!Excel.TableColumn#id:member'
     summary: |-
-      Returns a unique key that identifies the column within the table. Read-only.
+      Returns a unique key that identifies the column within the table.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -237,7 +237,7 @@ items:
           - number
   - uid: 'excel!Excel.TableColumn#index:member'
     summary: |-
-      Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
+      Returns the index number of the column within the columns collection of the table. Zero-indexed.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
@@ -341,7 +341,7 @@ items:
                       }
   - uid: 'excel!Excel.TableColumn#name:member'
     summary: >-
-      Represents the name of the table column.
+      Specifies the name of the table column.
 
 
       \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting

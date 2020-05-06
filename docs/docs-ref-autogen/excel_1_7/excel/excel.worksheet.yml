@@ -111,7 +111,7 @@ items:
             - boolean
   - uid: 'excel!Excel.Worksheet#charts:member'
     summary: |-
-      Returns a collection of charts that are part of the worksheet. Read-only.
+      Returns a collection of charts that are part of the worksheet.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: charts
@@ -262,7 +262,7 @@ items:
           ```
   - uid: 'excel!Excel.Worksheet#freezePanes:member'
     summary: |-
-      Gets an object that can be used to manipulate frozen panes on the worksheet. Read-only.
+      Gets an object that can be used to manipulate frozen panes on the worksheet.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: freezePanes
@@ -648,7 +648,7 @@ items:
   - uid: 'excel!Excel.Worksheet#id:member'
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
-      the same even when the worksheet is renamed or moved. Read-only.
+      the same even when the worksheet is renamed or moved.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -769,7 +769,7 @@ items:
           - string
   - uid: 'excel!Excel.Worksheet#names:member'
     summary: |-
-      Collection of names scoped to the current worksheet. Read-only.
+      Collection of names scoped to the current worksheet.
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: names
@@ -915,7 +915,7 @@ items:
           ```
   - uid: 'excel!Excel.Worksheet#pivotTables:member'
     summary: |-
-      Collection of PivotTables that are part of the worksheet. Read-only.
+      Collection of PivotTables that are part of the worksheet.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pivotTables
@@ -964,7 +964,7 @@ items:
           ```
   - uid: 'excel!Excel.Worksheet#protection:member'
     summary: |-
-      Returns sheet protection object for a worksheet. Read-only.
+      Returns sheet protection object for a worksheet.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protection
@@ -1064,7 +1064,7 @@ items:
             - 'excel!Excel.Worksheet:class'
   - uid: 'excel!Excel.Worksheet#standardHeight:member'
     summary: |-
-      Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
+      Returns the standard (default) height of all the rows in the worksheet, in points.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: standardHeight
@@ -1079,9 +1079,9 @@ items:
           - number
   - uid: 'excel!Excel.Worksheet#standardWidth:member'
     summary: >-
-      Returns or sets the standard (default) width of all the columns in the worksheet. One unit of column width is
-      equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0
-      (zero) is used.
+      Specifies the standard (default) width of all the columns in the worksheet. One unit of column width is equal to
+      the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is
+      used.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -1097,10 +1097,10 @@ items:
           - number
   - uid: 'excel!Excel.Worksheet#tabColor:member'
     summary: >-
-      Gets or sets the worksheet tab color. When retrieving the tab color, if the worksheet is invisible, the value will
-      be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned.
-      Otherwise, the property will be set to a color, in the form "\#123456" When setting the color, use an empty-string
-      to set an "auto" color, or a real color otherwise.
+      The tab color of the worksheet. When retrieving the tab color, if the worksheet is invisible, the value will be
+      null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned. Otherwise,
+      the property will be set to a color, in the form "\#123456" When setting the color, use an empty-string to set an
+      "auto" color, or a real color otherwise.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -1135,7 +1135,7 @@ items:
           ```
   - uid: 'excel!Excel.Worksheet#tables:member'
     summary: |-
-      Collection of tables that are part of the worksheet. Read-only.
+      Collection of tables that are part of the worksheet.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tables

@@ -15,8 +15,8 @@ items:
       - 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData#style:member'
   - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderUpdateData#color:member'
     summary: >-
-      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange").
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g., "FFA500") or as a named
+      HTML color (e.g., "orange").
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

@@ -64,7 +64,7 @@ items:
       - 'excel!Excel.ChartAxis#width:member'
   - uid: 'excel!Excel.ChartAxis#alignment:member'
     summary: |-
-      Represents the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail.
+      Specifies the alignment for the specified axis tick label. See Excel.ChartTextHorizontalAlignment for detail.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: alignment
@@ -79,7 +79,7 @@ items:
           - 'excel!Excel.ChartAxis#alignment~0:complex'
   - uid: 'excel!Excel.ChartAxis#axisGroup:member'
     summary: |-
-      Represents the group for the specified axis. See Excel.ChartAxisGroup for details. Read-only.
+      Specifies the group for the specified axis. See Excel.ChartAxisGroup for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: axisGroup
@@ -94,7 +94,7 @@ items:
           - 'excel!Excel.ChartAxis#axisGroup~0:complex'
   - uid: 'excel!Excel.ChartAxis#baseTimeUnit:member'
     summary: |-
-      Returns or sets the base unit for the specified category axis.
+      Specifies the base unit for the specified category axis.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: baseTimeUnit
@@ -109,7 +109,7 @@ items:
           - 'excel!Excel.ChartAxis#baseTimeUnit~0:complex'
   - uid: 'excel!Excel.ChartAxis#categoryType:member'
     summary: |-
-      Returns or sets the category axis type.
+      Specifies the category axis type.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: categoryType
@@ -138,8 +138,8 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartAxis#customDisplayUnit:member'
     summary: >-
-      Represents the custom axis display unit value. Read-only. To set this property, please use the
-      SetCustomDisplayUnit(double) method.
+      Specifies the custom axis display unit value. To set this property, please use the SetCustomDisplayUnit(double)
+      method.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -199,7 +199,7 @@ items:
           ```
   - uid: 'excel!Excel.ChartAxis#format:member'
     summary: |-
-      Represents the formatting of a chart object, which includes line and font formatting. Read-only.
+      Represents the formatting of a chart object, which includes line and font formatting.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -214,7 +214,7 @@ items:
           - 'excel!Excel.ChartAxisFormat:class'
   - uid: 'excel!Excel.ChartAxis#height:member'
     summary: |-
-      Represents the height, in points, of the chart axis. Null if the axis is not visible. Read-only.
+      Specifies the height, in points, of the chart axis. Null if the axis is not visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -229,7 +229,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartAxis#isBetweenCategories:member'
     summary: |-
-      Represents whether value axis crosses the category axis between categories.
+      Specifies if the value axis crosses the category axis between categories.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isBetweenCategories
@@ -244,8 +244,8 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartAxis#left:member'
     summary: >-
-      Represents the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis is
-      not visible. Read-only.
+      Specifies the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis is
+      not visible.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -351,7 +351,7 @@ items:
                       }
   - uid: 'excel!Excel.ChartAxis#logBase:member'
     summary: |-
-      Represents the base of the logarithm when using logarithmic scales.
+      Specifies the base of the logarithm when using logarithmic scales.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: logBase
@@ -366,7 +366,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartAxis#majorGridlines:member'
     summary: |-
-      Returns a Gridlines object that represents the major gridlines for the specified axis. Read-only.
+      Returns a Gridlines object that represents the major gridlines for the specified axis.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: majorGridlines
@@ -381,7 +381,7 @@ items:
           - 'excel!Excel.ChartGridlines:class'
   - uid: 'excel!Excel.ChartAxis#majorTickMark:member'
     summary: |-
-      Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+      Specifies the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: majorTickMark
@@ -395,10 +395,8 @@ items:
         type:
           - 'excel!Excel.ChartAxis#majorTickMark~0:complex'
   - uid: 'excel!Excel.ChartAxis#majorTimeUnitScale:member'
-    summary: >-
-      Returns or sets the major unit scale value for the category axis when the CategoryType property is set to
-      TimeScale.
-
+    summary: |-
+      Specifies the major unit scale value for the category axis when the CategoryType property is set to TimeScale.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: majorTimeUnitScale
@@ -464,7 +462,7 @@ items:
           - any
   - uid: 'excel!Excel.ChartAxis#minorGridlines:member'
     summary: |-
-      Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.
+      Returns a Gridlines object that represents the minor gridlines for the specified axis.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minorGridlines
@@ -479,7 +477,7 @@ items:
           - 'excel!Excel.ChartGridlines:class'
   - uid: 'excel!Excel.ChartAxis#minorTickMark:member'
     summary: |-
-      Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+      Specifies the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minorTickMark
@@ -493,10 +491,8 @@ items:
         type:
           - 'excel!Excel.ChartAxis#minorTickMark~0:complex'
   - uid: 'excel!Excel.ChartAxis#minorTimeUnitScale:member'
-    summary: >-
-      Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to
-      TimeScale.
-
+    summary: |-
+      Specifies the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: minorTimeUnitScale
@@ -528,7 +524,7 @@ items:
           - any
   - uid: 'excel!Excel.ChartAxis#multiLevel:member'
     summary: |-
-      Represents whether an axis is multilevel or not.
+      Specifies if an axis is multilevel.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: multiLevel
@@ -543,7 +539,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartAxis#numberFormat:member'
     summary: |-
-      Represents the format code for the axis tick label.
+      Specifies the format code for the axis tick label.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
@@ -558,7 +554,7 @@ items:
           - string
   - uid: 'excel!Excel.ChartAxis#offset:member'
     summary: >-
-      Represents the distance between the levels of labels, and the distance between the first level and the axis line.
+      Specifies the distance between the levels of labels, and the distance between the first level and the axis line.
       The value should be an integer from 0 to 1000.
 
 
@@ -575,7 +571,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartAxis#position:member'
     summary: |-
-      Represents the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details.
+      Specifies the specified axis position where the other axis crosses. See Excel.ChartAxisPosition for details.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
@@ -590,7 +586,7 @@ items:
           - 'excel!Excel.ChartAxis#position~0:complex'
   - uid: 'excel!Excel.ChartAxis#positionAt:member'
     summary: >-
-      Represents the specified axis position where the other axis crosses at. You should use the SetPositionAt(double)
+      Specifies the specified axis position where the other axis crosses at. You should use the SetPositionAt(double)
       method to set this property.
 
 
@@ -607,7 +603,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartAxis#reversePlotOrder:member'
     summary: |-
-      Represents whether Microsoft Excel plots data points from last to first.
+      Specifies if Excel plots data points from last to first.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: reversePlotOrder
@@ -622,7 +618,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartAxis#scaleType:member'
     summary: |-
-      Represents the value axis scale type. See Excel.ChartAxisScaleType for details.
+      Specifies the value axis scale type. See Excel.ChartAxisScaleType for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: scaleType
@@ -727,7 +723,7 @@ items:
             - number
   - uid: 'excel!Excel.ChartAxis#setPositionAt:member(1)'
     summary: |-
-      Set the specified axis position where the other axis crosses at.
+      Sets the specified axis position where the other axis crosses at.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setPositionAt(value)
@@ -748,7 +744,7 @@ items:
             - number
   - uid: 'excel!Excel.ChartAxis#showDisplayUnitLabel:member'
     summary: |-
-      Represents whether the axis display unit label is visible.
+      Specifies if the axis display unit label is visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showDisplayUnitLabel
@@ -786,7 +782,7 @@ items:
           ```
   - uid: 'excel!Excel.ChartAxis#textOrientation:member'
     summary: >-
-      Represents the angle to which the text is oriented for the chart axis tick label. The value should either be an
+      Specifies the angle to which the text is oriented for the chart axis tick label. The value should either be an
       integer from -90 to 90 or the integer 180 for vertically-oriented text.
 
 
@@ -803,7 +799,7 @@ items:
           - any
   - uid: 'excel!Excel.ChartAxis#tickLabelPosition:member'
     summary: >-
-      Represents the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for
+      Specifies the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for
       details.
 
 
@@ -820,7 +816,7 @@ items:
           - 'excel!Excel.ChartAxis#tickLabelPosition~0:complex'
   - uid: 'excel!Excel.ChartAxis#tickLabelSpacing:member'
     summary: >-
-      Represents the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an
+      Specifies the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an
       empty string for automatic setting. The returned value is always a number.
 
 
@@ -837,7 +833,7 @@ items:
           - any
   - uid: 'excel!Excel.ChartAxis#tickMarkSpacing:member'
     summary: |-
-      Represents the number of categories or series between tick marks.
+      Specifies the number of categories or series between tick marks.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tickMarkSpacing
@@ -852,7 +848,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartAxis#title:member'
     summary: |-
-      Represents the axis title. Read-only.
+      Represents the axis title.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title
@@ -885,8 +881,8 @@ items:
         description: ''
   - uid: 'excel!Excel.ChartAxis#top:member'
     summary: >-
-      Represents the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis is
-      not visible. Read-only.
+      Specifies the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis is not
+      visible.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -902,7 +898,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartAxis#type:member'
     summary: |-
-      Represents the axis type. See Excel.ChartAxisType for details.
+      Specifies the axis type. See Excel.ChartAxisType for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
@@ -917,7 +913,7 @@ items:
           - 'excel!Excel.ChartAxis#type~0:complex'
   - uid: 'excel!Excel.ChartAxis#visible:member'
     summary: |-
-      A boolean value represents the visibility of the axis.
+      Specifies if the axis is visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
@@ -932,7 +928,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartAxis#width:member'
     summary: |-
-      Represents the width, in points, of the chart axis. Null if the axis is not visible. Read-only.
+      Specifies the width, in points, of the chart axis. Null if the axis is not visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width

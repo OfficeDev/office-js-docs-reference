@@ -21,7 +21,7 @@ items:
       - 'excel!Excel.Interfaces.ChartLegendData#width:member'
   - uid: 'excel!Excel.Interfaces.ChartLegendData#format:member'
     summary: |-
-      Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
+      Represents the formatting of a chart legend, which includes fill and font formatting.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -36,7 +36,7 @@ items:
           - 'excel!Excel.Interfaces.ChartLegendFormatData:interface'
   - uid: 'excel!Excel.Interfaces.ChartLegendData#height:member'
     summary: |-
-      Represents the height, in points, of the legend on the chart. Null if legend is not visible.
+      Specifies the height, in points, of the legend on the chart. Null if legend is not visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -51,7 +51,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ChartLegendData#left:member'
     summary: |-
-      Represents the left, in points, of a chart legend. Null if legend is not visible.
+      Specifies the left, in points, of the legend on the chart. Null if legend is not visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
@@ -66,7 +66,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ChartLegendData#legendEntries:member'
     summary: |-
-      Represents a collection of legendEntries in the legend. Read-only.
+      Represents a collection of legendEntries in the legend.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: legendEntries
@@ -81,7 +81,7 @@ items:
           - 'excel!Excel.Interfaces.ChartLegendData#legendEntries~0:complex'
   - uid: 'excel!Excel.Interfaces.ChartLegendData#overlay:member'
     summary: |-
-      Boolean value for whether the chart legend should overlap with the main body of the chart.
+      Specifies if the chart legend should overlap with the main body of the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overlay
@@ -96,7 +96,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartLegendData#position:member'
     summary: |-
-      Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
+      Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
@@ -111,7 +111,7 @@ items:
           - 'excel!Excel.Interfaces.ChartLegendData#position~0:complex'
   - uid: 'excel!Excel.Interfaces.ChartLegendData#showShadow:member'
     summary: |-
-      Represents if the legend has a shadow on the chart.
+      Specifies if the legend has a shadow on the chart.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showShadow
@@ -126,7 +126,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartLegendData#top:member'
     summary: |-
-      Represents the top of a chart legend.
+      Specifies the top of a chart legend.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
@@ -141,7 +141,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ChartLegendData#visible:member'
     summary: |-
-      A boolean value the represents the visibility of a ChartLegend object.
+      Specifies if the ChartLegend is visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
@@ -156,7 +156,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartLegendData#width:member'
     summary: |-
-      Represents the width, in points, of the legend on the chart. Null if legend is not visible.
+      Specifies the width, in points, of the legend on the chart. Null if legend is not visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width

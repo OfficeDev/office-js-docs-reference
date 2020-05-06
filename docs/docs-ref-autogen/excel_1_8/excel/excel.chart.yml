@@ -56,7 +56,7 @@ items:
       - 'excel!Excel.Chart#worksheet:member'
   - uid: 'excel!Excel.Chart#axes:member'
     summary: |-
-      Represents chart axes. Read-only.
+      Represents chart axes.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: axes
@@ -71,8 +71,8 @@ items:
           - 'excel!Excel.ChartAxes:class'
   - uid: 'excel!Excel.Chart#categoryLabelLevel:member'
     summary: >-
-      Returns or sets a ChartCategoryLabelLevel enumeration constant referring to the level of where the category labels
-      are being sourced from. Read/Write.
+      Specifies a ChartCategoryLabelLevel enumeration constant referring to the level of where the category labels are
+      being sourced from.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -88,7 +88,7 @@ items:
           - number
   - uid: 'excel!Excel.Chart#chartType:member'
     summary: |-
-      Represents the type of the chart. See Excel.ChartType for details.
+      Specifies the type of the chart. See Excel.ChartType for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: chartType
@@ -131,7 +131,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.Chart#dataLabels:member'
     summary: |-
-      Represents the datalabels on the chart. Read-only.
+      Represents the datalabels on the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataLabels
@@ -178,7 +178,7 @@ items:
           ```
   - uid: 'excel!Excel.Chart#displayBlanksAs:member'
     summary: |-
-      Returns or sets the way that blank cells are plotted on a chart. Read/Write.
+      Specifies the way that blank cells are plotted on a chart.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: displayBlanksAs
@@ -193,7 +193,7 @@ items:
           - 'excel!Excel.Chart#displayBlanksAs~0:complex'
   - uid: 'excel!Excel.Chart#format:member'
     summary: |-
-      Encapsulates the format properties for the chart area. Read-only.
+      Encapsulates the format properties for the chart area.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -294,7 +294,7 @@ items:
             - '"Fit" | "FitAndCenter" | "Fill"'
   - uid: 'excel!Excel.Chart#height:member'
     summary: |-
-      Represents the height, in points, of the chart object.
+      Specifies the height, in points, of the chart object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -309,7 +309,7 @@ items:
           - number
   - uid: 'excel!Excel.Chart#id:member'
     summary: |-
-      The unique id of chart. Read-only.
+      The unique id of chart.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -339,7 +339,7 @@ items:
           - number
   - uid: 'excel!Excel.Chart#legend:member'
     summary: |-
-      Represents the legend for the chart. Read-only.
+      Represents the legend for the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: legend
@@ -465,7 +465,7 @@ items:
                       }
   - uid: 'excel!Excel.Chart#name:member'
     summary: |-
-      Represents the name of a chart object.
+      Specifies the name of a chart object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -582,7 +582,7 @@ items:
           - 'excel!Excel.ChartPlotArea:class'
   - uid: 'excel!Excel.Chart#plotBy:member'
     summary: |-
-      Returns or sets the way columns or rows are used as data series on the chart. Read/Write.
+      Specifies the way columns or rows are used as data series on the chart.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: plotBy
@@ -597,7 +597,7 @@ items:
           - 'excel!Excel.Chart#plotBy~0:complex'
   - uid: 'excel!Excel.Chart#plotVisibleOnly:member'
     summary: |-
-      True if only visible cells are plotted. False if both visible and hidden cells are plotted. Read/Write.
+      True if only visible cells are plotted. False if both visible and hidden cells are plotted.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: plotVisibleOnly
@@ -612,7 +612,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Chart#series:member'
     summary: |-
-      Represents either a single series or collection of series in the chart. Read-only.
+      Represents either a single series or collection of series in the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: series
@@ -627,8 +627,8 @@ items:
           - 'excel!Excel.ChartSeriesCollection:class'
   - uid: 'excel!Excel.Chart#seriesNameLevel:member'
     summary: >-
-      Returns or sets a ChartSeriesNameLevel enumeration constant referring to the level of where the series names are
-      being sourced from. Read/Write.
+      Specifies a ChartSeriesNameLevel enumeration constant referring to the level of where the series names are being
+      sourced from.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -815,7 +815,7 @@ items:
             - 'excel!Excel.Chart#setPosition~1:complex'
   - uid: 'excel!Excel.Chart#showAllFieldButtons:member'
     summary: |-
-      Represents whether to display all field buttons on a PivotChart.
+      Specifies whether to display all field buttons on a PivotChart.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAllFieldButtons
@@ -830,7 +830,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Chart#showDataLabelsOverMaximum:member'
     summary: >-
-      Represents whether to show the data labels when the value is greater than the maximum value on the value axis. If
+      Specifies whether to show the data labels when the value is greater than the maximum value on the value axis. If
       value axis became smaller than the size of data points, you can use this property to set whether to show the data
       labels. This property applies to 2-D charts only.
 
@@ -848,7 +848,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Chart#style:member'
     summary: |-
-      Returns or sets the chart style for the chart. Read/Write.
+      Specifies the chart style for the chart.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
@@ -862,10 +862,8 @@ items:
         type:
           - number
   - uid: 'excel!Excel.Chart#title:member'
-    summary: >-
-      Represents the title of the specified chart, including the text, visibility, position, and formatting of the
-      title. Read-only.
-
+    summary: |-
+      Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title
@@ -898,8 +896,8 @@ items:
         description: ''
   - uid: 'excel!Excel.Chart#top:member'
     summary: >-
-      Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the
-      top of the chart area (on a chart).
+      Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top
+      of the chart area (on a chart).
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -915,7 +913,7 @@ items:
           - number
   - uid: 'excel!Excel.Chart#width:member'
     summary: |-
-      Represents the width, in points, of the chart object.
+      Specifies the width, in points, of the chart object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
@@ -930,7 +928,7 @@ items:
           - number
   - uid: 'excel!Excel.Chart#worksheet:member'
     summary: |-
-      The worksheet containing the current chart. Read-only.
+      The worksheet containing the current chart.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet

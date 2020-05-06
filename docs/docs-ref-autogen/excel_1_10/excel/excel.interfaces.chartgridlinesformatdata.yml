@@ -12,7 +12,7 @@ items:
       - 'excel!Excel.Interfaces.ChartGridlinesFormatData#line:member'
   - uid: 'excel!Excel.Interfaces.ChartGridlinesFormatData#line:member'
     summary: |-
-      Represents chart line formatting. Read-only.
+      Represents chart line formatting.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line

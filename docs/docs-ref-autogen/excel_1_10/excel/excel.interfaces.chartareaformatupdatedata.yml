@@ -30,7 +30,7 @@ items:
           - 'excel!Excel.Interfaces.ChartBorderUpdateData:interface'
   - uid: 'excel!Excel.Interfaces.ChartAreaFormatUpdateData#colorScheme:member'
     summary: |-
-      Returns or sets color scheme of the chart. Read/Write.
+      Specifies the color scheme of the chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: colorScheme
@@ -65,7 +65,7 @@ items:
           - 'excel!Excel.Interfaces.ChartFontUpdateData:interface'
   - uid: 'excel!Excel.Interfaces.ChartAreaFormatUpdateData#roundedCorners:member'
     summary: |-
-      Specifies whether or not chart area of the chart has rounded corners. Read/Write.
+      Specifies if the chart area of the chart has rounded corners.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: roundedCorners

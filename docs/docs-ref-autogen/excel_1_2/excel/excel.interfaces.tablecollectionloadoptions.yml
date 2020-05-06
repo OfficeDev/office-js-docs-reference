@@ -56,7 +56,7 @@ items:
   - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#id:member'
     summary: >-
       For EACH ITEM in the collection: Returns a value that uniquely identifies the table in a given workbook. The value
-      of the identifier remains the same even when the table is renamed. Read-only.
+      of the identifier remains the same even when the table is renamed.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -107,8 +107,8 @@ items:
           - 'excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#showHeaders:member'
     summary: >-
-      For EACH ITEM in the collection: Indicates whether the header row is visible or not. This value can be set to show
-      or remove the header row.
+      For EACH ITEM in the collection: Specifies if the header row is visible. This value can be set to show or remove
+      the header row.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -124,8 +124,8 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#showTotals:member'
     summary: >-
-      For EACH ITEM in the collection: Indicates whether the total row is visible or not. This value can be set to show
-      or remove the total row.
+      For EACH ITEM in the collection: Specifies if the total row is visible. This value can be set to show or remove
+      the total row.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

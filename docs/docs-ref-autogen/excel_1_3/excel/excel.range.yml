@@ -59,7 +59,6 @@ items:
       - 'excel!Excel.Range#load:member(2)'
       - 'excel!Excel.Range#load:member(3)'
       - 'excel!Excel.Range#merge:member(1)'
-      - 'excel!Excel.Range#moveTo:member(1)'
       - 'excel!Excel.Range#numberFormat:member'
       - 'excel!Excel.Range#rowCount:member'
       - 'excel!Excel.Range#rowHidden:member'
@@ -77,10 +76,8 @@ items:
       - 'excel!Excel.Range#valueTypes:member'
       - 'excel!Excel.Range#worksheet:member'
   - uid: 'excel!Excel.Range#address:member'
-    summary: >-
-      Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4").
-      Read-only.
-
+    summary: |-
+      Specifies the range reference in A1-style. Address value will contain the Sheet reference (e.g., "Sheet1!A1:B4").
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
@@ -95,7 +92,7 @@ items:
           - string
   - uid: 'excel!Excel.Range#addressLocal:member'
     summary: |-
-      Represents range reference for the specified range in the language of the user. Read-only.
+      Specifies the range reference for the specified range in the language of the user.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addressLocal
@@ -109,8 +106,10 @@ items:
         type:
           - string
   - uid: 'excel!Excel.Range#cellCount:member'
-    summary: |-
-      Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
+    summary: >-
+      Specifies the number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1
+      (2,147,483,647).
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cellCount
@@ -186,7 +185,7 @@ items:
             - '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
   - uid: 'excel!Excel.Range#columnCount:member'
     summary: |-
-      Represents the total number of columns in the range. Read-only.
+      Specifies the total number of columns in the range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnCount
@@ -216,7 +215,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Range#columnIndex:member'
     summary: |-
-      Represents the column number of the first cell in the range. Zero-indexed. Read-only.
+      Specifies the column number of the first cell in the range. Zero-indexed.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnIndex
@@ -304,10 +303,8 @@ items:
           type:
             - '"Up" | "Left"'
   - uid: 'excel!Excel.Range#format:member'
-    summary: >-
+    summary: |-
       Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
-      Read-only.
-
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -1063,7 +1060,7 @@ items:
         description: ''
   - uid: 'excel!Excel.Range#hidden:member'
     summary: |-
-      Represents if all cells of the current range are hidden. Read-only.
+      Represents if all cells of the current range are hidden.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hidden
@@ -1274,51 +1271,6 @@ items:
             value is false.
           type:
             - boolean
-  - uid: 'excel!Excel.Range#moveTo:member(1)'
-    summary: >-
-      Moves cell values, formatting, and formulas from current range to the destination range, replacing the old
-      information in those cells. The destination range will be expanded automatically if it is smaller than the current
-      range. Any cells in the destination range that are outside of the original range's area are not changed.
-
-
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: moveTo(destinationRange)
-    fullName: moveTo(destinationRange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'moveTo(destinationRange: Range | string): void;'
-      return:
-        type:
-          - void
-        description: >-
-
-
-          #### Examples
-
-
-          ```typescript
-
-          // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/42-range/range-copyfrom.yaml
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              // Place a label in front of the moved data.
-              sheet.getRange("F12").values = [["Moved Range:"]];
-
-              // Move the range from A1:E1 to G12:K12.
-              sheet.getRange("A1:E1").moveTo("G12");
-              await context.sync();
-          });
-
-          ```
-      parameters:
-        - id: destinationRange
-          description: destinationRange Specifies the range to where the information in this range will be moved.
-          type:
-            - 'excel!Excel.Range#moveTo~0:complex'
   - uid: 'excel!Excel.Range#numberFormat:member'
     summary: |-
       Represents Excel's number format code for the given range.
@@ -1364,7 +1316,7 @@ items:
           ```
   - uid: 'excel!Excel.Range#rowCount:member'
     summary: |-
-      Returns the total number of rows in the range. Read-only.
+      Returns the total number of rows in the range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowCount
@@ -1394,7 +1346,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Range#rowIndex:member'
     summary: |-
-      Returns the row number of the first cell in the range. Zero-indexed. Read-only.
+      Returns the row number of the first cell in the range. Zero-indexed.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowIndex
@@ -1544,7 +1496,7 @@ items:
             - 'excel!Excel.Range:class'
   - uid: 'excel!Excel.Range#sort:member'
     summary: |-
-      Represents the range sort of the current range. Read-only.
+      Represents the range sort of the current range.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sort
@@ -1597,7 +1549,7 @@ items:
   - uid: 'excel!Excel.Range#text:member'
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
-      that happens in Excel UI will not affect the text value returned by the API. Read-only.
+      that happens in Excel UI will not affect the text value returned by the API.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -1740,7 +1692,7 @@ items:
           - 'any[][]'
   - uid: 'excel!Excel.Range#valueTypes:member'
     summary: |-
-      Represents the type of data of each cell. Read-only.
+      Specifies the type of data in each cell.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valueTypes
@@ -1755,7 +1707,7 @@ items:
           - 'excel!Excel.Range#valueTypes~0:complex'
   - uid: 'excel!Excel.Range#worksheet:member'
     summary: |-
-      The worksheet containing the current range. Read-only.
+      The worksheet containing the current range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
@@ -1805,15 +1757,6 @@ references:
     name: Excel.InsertShiftDirection
   - uid: 'excel!Excel.Interfaces.RangeLoadOptions:interface'
     name: Excel.Interfaces.RangeLoadOptions
-  - uid: 'excel!Excel.Range#moveTo~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:class'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
   - uid: 'excel!Excel.Interfaces.RangeUpdateData:interface'
     name: Interfaces.RangeUpdateData
   - uid: 'office!OfficeExtension.UpdateOptions:interface'

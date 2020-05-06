@@ -39,7 +39,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartPoint#format:member'
     summary: |-
-      Encapsulates the format properties chart point. Read-only.
+      Encapsulates the format properties chart point.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -190,7 +190,7 @@ items:
         description: ''
   - uid: 'excel!Excel.ChartPoint#value:member'
     summary: |-
-      Returns the value of a chart point. Read-only.
+      Returns the value of a chart point.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value

@@ -18,7 +18,7 @@ items:
       - 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#underline:member'
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#bold:member'
     summary: |-
-      Represents the bold status of font.
+      Specifies if the font is bold.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bold
@@ -33,7 +33,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#color:member'
     summary: |-
-      HTML color code representation of the text color. E.g. \#FF0000 represents Red.
+      HTML color code representation of the text color (e.g., \#FF0000 represents Red).
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
@@ -48,7 +48,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#italic:member'
     summary: |-
-      Represents the italic status of the font.
+      Specifies if the font is italic.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: italic
@@ -63,7 +63,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#strikethrough:member'
     summary: |-
-      Represents the strikethrough status of the font.
+      Specifies the strikethrough status of the font.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: strikethrough
@@ -78,7 +78,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#underline:member'
     summary: |-
-      Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
+      The type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: underline

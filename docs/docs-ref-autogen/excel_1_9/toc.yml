@@ -485,10 +485,6 @@ items:
             uid: 'excel!Excel.ColumnProperties:interface'
           - name: ColumnPropertiesLoadOptions
             uid: 'excel!Excel.ColumnPropertiesLoadOptions:interface'
-          - name: CommentMention
-            uid: 'excel!Excel.CommentMention:interface'
-          - name: CommentRichContent
-            uid: 'excel!Excel.CommentRichContent:interface'
           - name: ConditionalCellValueRule
             uid: 'excel!Excel.ConditionalCellValueRule:interface'
           - name: ConditionalColorScaleCriteria

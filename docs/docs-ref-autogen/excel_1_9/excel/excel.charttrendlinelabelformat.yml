@@ -26,7 +26,7 @@ items:
       - 'excel!Excel.ChartTrendlineLabelFormat#toJSON:member(1)'
   - uid: 'excel!Excel.ChartTrendlineLabelFormat#border:member'
     summary: |-
-      Represents the border format, which includes color, linestyle, and weight.
+      Specifies the border format, which includes color, linestyle, and weight.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
@@ -55,7 +55,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartTrendlineLabelFormat#fill:member'
     summary: |-
-      Represents the fill format of the current chart trendline label.
+      Specifies the fill format of the current chart trendline label.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
@@ -70,7 +70,7 @@ items:
           - 'excel!Excel.ChartFill:class'
   - uid: 'excel!Excel.ChartTrendlineLabelFormat#font:member'
     summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for a chart trendline label.
+      Specifies the font attributes (font name, font size, color, etc.) for a chart trendline label.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font

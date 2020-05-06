@@ -2,7 +2,7 @@
 items:
   - uid: 'excel!Excel.ConditionalFormatColorCriterionType:enum'
     summary: |-
-      Represents the types of conditional format values.
+      Represents the types of color criterion for conditional formatting.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalFormatColorCriterionType

@@ -15,7 +15,7 @@ items:
       - 'excel!Excel.Interfaces.WorkbookData#worksheets:member'
   - uid: 'excel!Excel.Interfaces.WorkbookData#bindings:member'
     summary: |-
-      Represents a collection of bindings that are part of the workbook. Read-only.
+      Represents a collection of bindings that are part of the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bindings
@@ -30,7 +30,7 @@ items:
           - 'excel!Excel.Interfaces.WorkbookData#bindings~0:complex'
   - uid: 'excel!Excel.Interfaces.WorkbookData#names:member'
     summary: |-
-      Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
+      Represents a collection of workbook scoped named items (named ranges and constants).
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: names
@@ -45,7 +45,7 @@ items:
           - 'excel!Excel.Interfaces.WorkbookData#names~0:complex'
   - uid: 'excel!Excel.Interfaces.WorkbookData#tables:member'
     summary: |-
-      Represents a collection of tables associated with the workbook. Read-only.
+      Represents a collection of tables associated with the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tables
@@ -60,7 +60,7 @@ items:
           - 'excel!Excel.Interfaces.WorkbookData#tables~0:complex'
   - uid: 'excel!Excel.Interfaces.WorkbookData#worksheets:member'
     summary: |-
-      Represents a collection of worksheets associated with the workbook. Read-only.
+      Represents a collection of worksheets associated with the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheets

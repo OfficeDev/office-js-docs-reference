@@ -34,7 +34,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.AutoFilterLoadOptions#criteria:member'
     summary: |-
-      An array that holds all the filter criteria in the autofiltered range. Read-Only.
+      An array that holds all the filter criteria in the autofiltered range.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criteria
@@ -49,7 +49,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.AutoFilterLoadOptions#enabled:member'
     summary: |-
-      Indicates if the AutoFilter is enabled or not. Read-Only.
+      Specifies if the AutoFilter is enabled.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enabled
@@ -64,7 +64,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.AutoFilterLoadOptions#isDataFiltered:member'
     summary: |-
-      Indicates if the AutoFilter has filter criteria. Read-Only.
+      Specifies if the AutoFilter has filter criteria.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isDataFiltered

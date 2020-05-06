@@ -57,7 +57,7 @@ items:
           - 'excel!Excel.Interfaces.NamedItemArrayValuesLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.NamedItemLoadOptions#comment:member'
     summary: |-
-      Represents the comment associated with this name.
+      Specifies the comment associated with this name.
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: comment
@@ -72,7 +72,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.NamedItemLoadOptions#formula:member'
     summary: |-
-      Gets or sets the formula of the named item. Formula always starts with a '=' sign.
+      The formula of the named item. Formula always starts with a '=' sign.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formula
@@ -87,7 +87,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.NamedItemLoadOptions#name:member'
     summary: |-
-      The name of the object. Read-only.
+      The name of the object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -102,8 +102,8 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.NamedItemLoadOptions#scope:member'
     summary: >-
-      Indicates whether the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet,
-      Workbook. Read-only.
+      Specifies if the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet,
+      Workbook.
 
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -119,7 +119,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.NamedItemLoadOptions#type:member'
     summary: >-
-      Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
+      Specifies the type of the value returned by the name's formula. See Excel.NamedItemType for details.
 
 
       \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
@@ -136,7 +136,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.NamedItemLoadOptions#value:member'
     summary: |-
-      Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
+      Represents the value computed by the name's formula. For a named range, will return the range address.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value
@@ -151,7 +151,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.NamedItemLoadOptions#visible:member'
     summary: |-
-      Specifies whether the object is visible or not.
+      Specifies if the object is visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible

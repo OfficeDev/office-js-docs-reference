@@ -71,7 +71,7 @@ items:
           ```
   - uid: 'excel!Excel.Worksheet#charts:member'
     summary: |-
-      Returns a collection of charts that are part of the worksheet. Read-only.
+      Returns a collection of charts that are part of the worksheet.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: charts
@@ -291,7 +291,7 @@ items:
   - uid: 'excel!Excel.Worksheet#id:member'
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
-      the same even when the worksheet is renamed or moved. Read-only.
+      the same even when the worksheet is renamed or moved.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -446,7 +446,7 @@ items:
           ```
   - uid: 'excel!Excel.Worksheet#protection:member'
     summary: |-
-      Returns sheet protection object for a worksheet. Read-only.
+      Returns sheet protection object for a worksheet.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protection
@@ -546,7 +546,7 @@ items:
             - 'excel!Excel.Worksheet:class'
   - uid: 'excel!Excel.Worksheet#tables:member'
     summary: |-
-      Collection of tables that are part of the worksheet. Read-only.
+      Collection of tables that are part of the worksheet.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tables

@@ -70,7 +70,7 @@ items:
           - string
   - uid: 'excel!Excel.ConditionalCellValueRule#operator:member'
     summary: |-
-      The operator of the text conditional format.
+      The operator of the cell value conditional format.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: operator

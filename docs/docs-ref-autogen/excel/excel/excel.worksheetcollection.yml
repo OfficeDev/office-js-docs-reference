@@ -739,13 +739,10 @@ items:
         type:
           - 'excel!Excel.WorksheetCollection#onFormatChanged~0:complex'
   - uid: 'excel!Excel.WorksheetCollection#onRowHiddenChanged:member'
-    summary: >-
+    summary: |-
       Occurs when the hidden state of one or more rows has changed on a specific worksheet.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onRowHiddenChanged
     fullName: onRowHiddenChanged
     langs:

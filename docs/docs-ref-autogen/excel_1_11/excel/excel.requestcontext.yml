@@ -1,0 +1,86 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RequestContext:class'
+    summary: >-
+      The RequestContext object facilitates requests to the Excel application. Since the Office add-in and the Excel
+      application run in two different processes, the request context is required to get access to the Excel object
+      model from the add-in.
+    name: Excel.RequestContext
+    fullName: Excel.RequestContext
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'office!OfficeExtension.ClientRequestContext:class'
+    package: excel!
+    children:
+      - 'excel!Excel.RequestContext:constructor(1)'
+      - 'excel!Excel.RequestContext#application:member'
+      - 'excel!Excel.RequestContext#runtime:member'
+      - 'excel!Excel.RequestContext#workbook:member'
+  - uid: 'excel!Excel.RequestContext:constructor(1)'
+    summary: Constructs a new instance of the `RequestContext` class
+    name: (constructor)(url)
+    fullName: (constructor)(url)
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(url?: string | Session);'
+      parameters:
+        - id: url
+          description: ''
+          type:
+            - 'excel!Excel.RequestContext~0:complex'
+  - uid: 'excel!Excel.RequestContext#application:member'
+    name: application
+    fullName: application
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly application: Application;'
+      return:
+        type:
+          - 'excel!Excel.Application:class'
+  - uid: 'excel!Excel.RequestContext#runtime:member'
+    summary: '\[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: runtime
+    fullName: runtime
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly runtime: Runtime;'
+      return:
+        type:
+          - 'excel!Excel.Runtime:class'
+  - uid: 'excel!Excel.RequestContext#workbook:member'
+    name: workbook
+    fullName: workbook
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly workbook: Workbook;'
+      return:
+        type:
+          - 'excel!Excel.Workbook:class'
+references:
+  - uid: 'office!OfficeExtension.ClientRequestContext:class'
+    name: OfficeExtension.ClientRequestContext
+  - uid: 'excel!Excel.RequestContext~0:complex'
+    name: string | Session
+    fullName: string | Excel.Session
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'excel!Excel.Session:class'
+        name: Session
+        fullName: Excel.Session
+  - uid: 'excel!Excel.Application:class'
+    name: Application
+  - uid: 'excel!Excel.Runtime:class'
+    name: Runtime
+  - uid: 'excel!Excel.Workbook:class'
+    name: Workbook

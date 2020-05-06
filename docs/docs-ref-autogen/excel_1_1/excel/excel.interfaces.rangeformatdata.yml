@@ -17,7 +17,7 @@ items:
       - 'excel!Excel.Interfaces.RangeFormatData#wrapText:member'
   - uid: 'excel!Excel.Interfaces.RangeFormatData#borders:member'
     summary: |-
-      Collection of border objects that apply to the overall range. Read-only.
+      Collection of border objects that apply to the overall range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: borders
@@ -32,7 +32,7 @@ items:
           - 'excel!Excel.Interfaces.RangeFormatData#borders~0:complex'
   - uid: 'excel!Excel.Interfaces.RangeFormatData#fill:member'
     summary: |-
-      Returns the fill object defined on the overall range. Read-only.
+      Returns the fill object defined on the overall range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
@@ -47,7 +47,7 @@ items:
           - 'excel!Excel.Interfaces.RangeFillData:interface'
   - uid: 'excel!Excel.Interfaces.RangeFormatData#font:member'
     summary: |-
-      Returns the font object defined on the overall range. Read-only.
+      Returns the font object defined on the overall range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
@@ -94,7 +94,7 @@ items:
           - 'excel!Excel.Interfaces.RangeFormatData#verticalAlignment~0:complex'
   - uid: 'excel!Excel.Interfaces.RangeFormatData#wrapText:member'
     summary: >-
-      Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
+      Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
       wrap setting
 
 

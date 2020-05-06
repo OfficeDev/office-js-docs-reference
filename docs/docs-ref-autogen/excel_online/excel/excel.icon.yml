@@ -16,7 +16,7 @@ items:
       - 'excel!Excel.Icon#set:member'
   - uid: 'excel!Excel.Icon#index:member'
     summary: |-
-      Represents the index of the icon in the given set.
+      Specifies the index of the icon in the given set.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
@@ -31,7 +31,7 @@ items:
           - number
   - uid: 'excel!Excel.Icon#set:member'
     summary: |-
-      Represents the set that the icon is part of.
+      Specifies the set that the icon is part of.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: set

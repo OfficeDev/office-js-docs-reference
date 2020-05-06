@@ -46,8 +46,8 @@ items:
           - 'excel!Excel.Interfaces.ChartAxesUpdateData:interface'
   - uid: 'excel!Excel.Interfaces.ChartUpdateData#categoryLabelLevel:member'
     summary: >-
-      Returns or sets a ChartCategoryLabelLevel enumeration constant referring to the level of where the category labels
-      are being sourced from. Read/Write.
+      Specifies a ChartCategoryLabelLevel enumeration constant referring to the level of where the category labels are
+      being sourced from.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -63,7 +63,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ChartUpdateData#chartType:member'
     summary: |-
-      Represents the type of the chart. See Excel.ChartType for details.
+      Specifies the type of the chart. See Excel.ChartType for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: chartType
@@ -107,7 +107,7 @@ items:
           - 'excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface'
   - uid: 'excel!Excel.Interfaces.ChartUpdateData#displayBlanksAs:member'
     summary: |-
-      Returns or sets the way that blank cells are plotted on a chart. Read/Write.
+      Specifies the way that blank cells are plotted on a chart.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: displayBlanksAs
@@ -137,7 +137,7 @@ items:
           - 'excel!Excel.Interfaces.ChartAreaFormatUpdateData:interface'
   - uid: 'excel!Excel.Interfaces.ChartUpdateData#height:member'
     summary: |-
-      Represents the height, in points, of the chart object.
+      Specifies the height, in points, of the chart object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -182,7 +182,7 @@ items:
           - 'excel!Excel.Interfaces.ChartLegendUpdateData:interface'
   - uid: 'excel!Excel.Interfaces.ChartUpdateData#name:member'
     summary: |-
-      Represents the name of a chart object.
+      Specifies the name of a chart object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -212,7 +212,7 @@ items:
           - 'excel!Excel.Interfaces.ChartPlotAreaUpdateData:interface'
   - uid: 'excel!Excel.Interfaces.ChartUpdateData#plotBy:member'
     summary: |-
-      Returns or sets the way columns or rows are used as data series on the chart. Read/Write.
+      Specifies the way columns or rows are used as data series on the chart.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: plotBy
@@ -227,7 +227,7 @@ items:
           - 'excel!Excel.Interfaces.ChartUpdateData#plotBy~0:complex'
   - uid: 'excel!Excel.Interfaces.ChartUpdateData#plotVisibleOnly:member'
     summary: |-
-      True if only visible cells are plotted. False if both visible and hidden cells are plotted. Read/Write.
+      True if only visible cells are plotted. False if both visible and hidden cells are plotted.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: plotVisibleOnly
@@ -242,8 +242,8 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartUpdateData#seriesNameLevel:member'
     summary: >-
-      Returns or sets a ChartSeriesNameLevel enumeration constant referring to the level of where the series names are
-      being sourced from. Read/Write.
+      Specifies a ChartSeriesNameLevel enumeration constant referring to the level of where the series names are being
+      sourced from.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -259,7 +259,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ChartUpdateData#showAllFieldButtons:member'
     summary: |-
-      Represents whether to display all field buttons on a PivotChart.
+      Specifies whether to display all field buttons on a PivotChart.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAllFieldButtons
@@ -274,7 +274,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartUpdateData#showDataLabelsOverMaximum:member'
     summary: >-
-      Represents whether to show the data labels when the value is greater than the maximum value on the value axis. If
+      Specifies whether to show the data labels when the value is greater than the maximum value on the value axis. If
       value axis became smaller than the size of data points, you can use this property to set whether to show the data
       labels. This property applies to 2-D charts only.
 
@@ -292,7 +292,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartUpdateData#style:member'
     summary: |-
-      Returns or sets the chart style for the chart. Read/Write.
+      Specifies the chart style for the chart.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
@@ -306,10 +306,8 @@ items:
         type:
           - number
   - uid: 'excel!Excel.Interfaces.ChartUpdateData#title:member'
-    summary: >-
-      Represents the title of the specified chart, including the text, visibility, position, and formatting of the
-      title.
-
+    summary: |-
+      Specifies the title of the specified chart, including the text, visibility, position, and formatting of the title.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title
@@ -324,8 +322,8 @@ items:
           - 'excel!Excel.Interfaces.ChartTitleUpdateData:interface'
   - uid: 'excel!Excel.Interfaces.ChartUpdateData#top:member'
     summary: >-
-      Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the
-      top of the chart area (on a chart).
+      Specifies the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top
+      of the chart area (on a chart).
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -341,7 +339,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ChartUpdateData#width:member'
     summary: |-
-      Represents the width, in points, of the chart object.
+      Specifies the width, in points, of the chart object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width

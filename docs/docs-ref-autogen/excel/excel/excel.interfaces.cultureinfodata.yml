@@ -33,13 +33,11 @@ items:
           - 'excel!Excel.Interfaces.DatetimeFormatInfoData:interface'
   - uid: 'excel!Excel.Interfaces.CultureInfoData#name:member'
     summary: >-
-      Gets the culture name in the format languagecode2-country/regioncode2 (e.g. "zh-cn" or "en-us"). This is based on
+      Gets the culture name in the format languagecode2-country/regioncode2 (e.g., "zh-cn" or "en-us"). This is based on
       current system settings.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -51,13 +49,10 @@ items:
         type:
           - string
   - uid: 'excel!Excel.Interfaces.CultureInfoData#numberFormat:member'
-    summary: >-
+    summary: |-
       Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
     fullName: numberFormat
     langs:

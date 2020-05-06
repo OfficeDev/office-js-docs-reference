@@ -78,14 +78,14 @@ items:
           description: >-
             The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain
             text. CommentRichContent objects allow for other comment features, such as mentions. \[Api set: ExcelApi
-            1.10 for string, ExcelApiOnline 1.1 for CommentRichContent object\]
+            1.10 for string, 1.11 for CommentRichContent object\]
           type:
             - 'excel!Excel.CommentCollection#add~1:complex'
         - id: contentType
           description: >-
             Optional. The type of content contained within the comment. The default value is enum
-            `ContentType.Plain`<!-- -->. \[Api set: ExcelApi 1.10 for Enum ContentType.Plain, ExcelApiOnline 1.1 for
-            Enum ContentType.Mention\]
+            `ContentType.Plain`<!-- -->. \[Api set: ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum
+            ContentType.Mention\]
           type:
             - 'excel!Excel.ContentType:enum'
   - uid: 'excel!Excel.CommentCollection#add:member(2)'
@@ -120,14 +120,14 @@ items:
           description: >-
             The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain
             text. CommentRichContent objects allow for other comment features, such as mentions. \[Api set: ExcelApi
-            1.10 for string, ExcelApiOnline 1.1 for CommentRichContent object\]
+            1.10 for string, 1.11 for CommentRichContent object\]
           type:
             - 'excel!Excel.CommentCollection#add~3:complex'
         - id: contentTypeString
           description: >-
             Optional. The type of content contained within the comment. The default value is enum
-            `ContentType.Plain`<!-- -->. \[Api set: ExcelApi 1.10 for Enum ContentType.Plain, ExcelApiOnline 1.1 for
-            Enum ContentType.Mention\]
+            `ContentType.Plain`<!-- -->. \[Api set: ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum
+            ContentType.Mention\]
           type:
             - '"Plain" | "Mention"'
   - uid: 'excel!Excel.CommentCollection#context:member'
@@ -162,7 +162,7 @@ items:
         description: ''
   - uid: 'excel!Excel.CommentCollection#getItem:member(1)'
     summary: |-
-      Gets a comment from the collection based on its ID. Read-only.
+      Gets a comment from the collection based on its ID.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(commentId)

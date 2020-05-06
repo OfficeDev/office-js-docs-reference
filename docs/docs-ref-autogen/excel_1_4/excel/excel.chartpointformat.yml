@@ -38,7 +38,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartPointFormat#fill:member'
     summary: |-
-      Represents the fill format of a chart, which includes background formatting information. Read-only.
+      Represents the fill format of a chart, which includes background formatting information.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill

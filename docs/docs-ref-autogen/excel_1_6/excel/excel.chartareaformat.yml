@@ -39,7 +39,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartAreaFormat#fill:member'
     summary: |-
-      Represents the fill format of an object, which includes background formatting information. Read-only.
+      Represents the fill format of an object, which includes background formatting information.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
@@ -54,7 +54,7 @@ items:
           - 'excel!Excel.ChartFill:class'
   - uid: 'excel!Excel.ChartAreaFormat#font:member'
     summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.
+      Represents the font attributes (font name, font size, color, etc.) for the current object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font

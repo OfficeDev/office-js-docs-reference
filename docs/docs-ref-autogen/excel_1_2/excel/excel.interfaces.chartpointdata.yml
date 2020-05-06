@@ -13,7 +13,7 @@ items:
       - 'excel!Excel.Interfaces.ChartPointData#value:member'
   - uid: 'excel!Excel.Interfaces.ChartPointData#format:member'
     summary: |-
-      Encapsulates the format properties chart point. Read-only.
+      Encapsulates the format properties chart point.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -28,7 +28,7 @@ items:
           - 'excel!Excel.Interfaces.ChartPointFormatData:interface'
   - uid: 'excel!Excel.Interfaces.ChartPointData#value:member'
     summary: |-
-      Returns the value of a chart point. Read-only.
+      Returns the value of a chart point.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value

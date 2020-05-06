@@ -41,7 +41,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartLegend#format:member'
     summary: |-
-      Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
+      Represents the formatting of a chart legend, which includes fill and font formatting.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -146,7 +146,7 @@ items:
                       }
   - uid: 'excel!Excel.ChartLegend#overlay:member'
     summary: |-
-      Boolean value for whether the chart legend should overlap with the main body of the chart.
+      Specifies if the chart legend should overlap with the main body of the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overlay
@@ -161,7 +161,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartLegend#position:member'
     summary: |-
-      Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
+      Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
@@ -242,7 +242,7 @@ items:
         description: ''
   - uid: 'excel!Excel.ChartLegend#visible:member'
     summary: |-
-      A boolean value the represents the visibility of a ChartLegend object.
+      Specifies if the ChartLegend is visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible

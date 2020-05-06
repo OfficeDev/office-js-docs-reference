@@ -216,7 +216,7 @@ items:
   - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#id:member'
     summary: >-
       For EACH ITEM in the collection: The Priority of the Conditional Format within the current
-      ConditionalFormatCollection. Read-only.
+      ConditionalFormatCollection.
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -271,7 +271,7 @@ items:
       for a contiguous priority order. Use a negative priority to begin from the back. Priorities greater than than
       bounds will get and set to the maximum (or minimum if negative) priority. Also note that if you change the
       priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further
-      changes to it. Read-only.
+      changes to it.
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -373,7 +373,7 @@ items:
           - 'excel!Excel.Interfaces.TopBottomConditionalFormatLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.ConditionalFormatCollectionLoadOptions#type:member'
     summary: |-
-      For EACH ITEM in the collection: A type of conditional format. Only one can be set at a time. Read-only.
+      For EACH ITEM in the collection: A type of conditional format. Only one can be set at a time.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type

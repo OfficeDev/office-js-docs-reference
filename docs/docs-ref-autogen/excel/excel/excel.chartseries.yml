@@ -75,7 +75,7 @@ items:
       - 'excel!Excel.ChartSeries#yErrorBars:member'
   - uid: 'excel!Excel.ChartSeries#axisGroup:member'
     summary: |-
-      Returns or sets the group for the specified series. Read/Write
+      Specifies the group for the specified series.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: axisGroup
@@ -90,7 +90,7 @@ items:
           - 'excel!Excel.ChartSeries#axisGroup~0:complex'
   - uid: 'excel!Excel.ChartSeries#binOptions:member'
     summary: |-
-      Encapsulates the bin options for histogram charts and pareto charts. Read-only.
+      Encapsulates the bin options for histogram charts and pareto charts.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: binOptions
@@ -105,7 +105,7 @@ items:
           - 'excel!Excel.ChartBinOptions:class'
   - uid: 'excel!Excel.ChartSeries#boxwhiskerOptions:member'
     summary: |-
-      Encapsulates the options for the box and whisker charts. Read-only.
+      Encapsulates the options for the box and whisker charts.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: boxwhiskerOptions
@@ -121,7 +121,7 @@ items:
   - uid: 'excel!Excel.ChartSeries#bubbleScale:member'
     summary: >-
       This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property
-      only applies to bubble charts. Read/Write.
+      only applies to bubble charts.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -255,8 +255,8 @@ items:
           - number
   - uid: 'excel!Excel.ChartSeries#explosion:member'
     summary: >-
-      Returns or sets the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no
-      explosion (the tip of the slice is in the center of the pie). Read/Write.
+      Specifies the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion
+      (the tip of the slice is in the center of the pie).
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -272,7 +272,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartSeries#filtered:member'
     summary: |-
-      Boolean value representing if the series is filtered or not. Not applicable for surface charts.
+      Specifies if the series is filtered. Not applicable for surface charts.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: filtered
@@ -287,8 +287,9 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartSeries#firstSliceAngle:member'
     summary: >-
-      Returns or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical).
-      Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
+      Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies
+      only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360.Specifies if the negative DataBar has
+      the same fill color as the positive DataBar.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -304,7 +305,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartSeries#format:member'
     summary: |-
-      Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
+      Represents the formatting of a chart series, which includes fill and line formatting.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -387,7 +388,7 @@ items:
             - '"Categories" | "Values" | "XValues" | "YValues"'
   - uid: 'excel!Excel.ChartSeries#gradientMaximumColor:member'
     summary: |-
-      Returns or sets the color for maximum value of a region map chart series. Read/Write.
+      Specifies the color for maximum value of a region map chart series.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMaximumColor
@@ -402,7 +403,7 @@ items:
           - string
   - uid: 'excel!Excel.ChartSeries#gradientMaximumType:member'
     summary: |-
-      Returns or sets the type for maximum value of a region map chart series. Read/Write.
+      Specifies the type for maximum value of a region map chart series.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMaximumType
@@ -417,7 +418,7 @@ items:
           - 'excel!Excel.ChartSeries#gradientMaximumType~0:complex'
   - uid: 'excel!Excel.ChartSeries#gradientMaximumValue:member'
     summary: |-
-      Returns or sets the maximum value of a region map chart series. Read/Write.
+      Specifies the maximum value of a region map chart series.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMaximumValue
@@ -432,7 +433,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartSeries#gradientMidpointColor:member'
     summary: |-
-      Returns or sets the color for midpoint value of a region map chart series. Read/Write.
+      Specifies the color for midpoint value of a region map chart series.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMidpointColor
@@ -447,7 +448,7 @@ items:
           - string
   - uid: 'excel!Excel.ChartSeries#gradientMidpointType:member'
     summary: |-
-      Returns or sets the type for midpoint value of a region map chart series. Read/Write.
+      Specifies the type for midpoint value of a region map chart series.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMidpointType
@@ -462,7 +463,7 @@ items:
           - 'excel!Excel.ChartSeries#gradientMidpointType~0:complex'
   - uid: 'excel!Excel.ChartSeries#gradientMidpointValue:member'
     summary: |-
-      Returns or sets the midpoint value of a region map chart series. Read/Write.
+      Specifies the midpoint value of a region map chart series.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMidpointValue
@@ -477,7 +478,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartSeries#gradientMinimumColor:member'
     summary: |-
-      Returns or sets the color for minimum value of a region map chart series. Read/Write.
+      Specifies the color for minimum value of a region map chart series.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMinimumColor
@@ -492,7 +493,7 @@ items:
           - string
   - uid: 'excel!Excel.ChartSeries#gradientMinimumType:member'
     summary: |-
-      Returns or sets the type for minimum value of a region map chart series. Read/Write.
+      Specifies the type for minimum value of a region map chart series.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMinimumType
@@ -507,7 +508,7 @@ items:
           - 'excel!Excel.ChartSeries#gradientMinimumType~0:complex'
   - uid: 'excel!Excel.ChartSeries#gradientMinimumValue:member'
     summary: |-
-      Returns or sets the minimum value of a region map chart series. Read/Write.
+      Specifies the minimum value of a region map chart series.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMinimumValue
@@ -522,7 +523,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartSeries#gradientStyle:member'
     summary: |-
-      Returns or sets series gradient style of a region map chart. Read/Write.
+      Specifies the series gradient style of a region map chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientStyle
@@ -537,7 +538,7 @@ items:
           - 'excel!Excel.ChartSeries#gradientStyle~0:complex'
   - uid: 'excel!Excel.ChartSeries#hasDataLabels:member'
     summary: |-
-      Boolean value representing if the series has data labels or not.
+      Specifies if the series has data labels.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hasDataLabels
@@ -552,7 +553,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartSeries#invertColor:member'
     summary: |-
-      Returns or sets the fill color for negative data points in a series. Read/Write.
+      Specifies the fill color for negative data points in a series.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: invertColor
@@ -567,7 +568,7 @@ items:
           - string
   - uid: 'excel!Excel.ChartSeries#invertIfNegative:member'
     summary: |-
-      True if Microsoft Excel inverts the pattern in the item when it corresponds to a negative number. Read/Write.
+      True if Excel inverts the pattern in the item when it corresponds to a negative number.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: invertIfNegative
@@ -671,7 +672,7 @@ items:
                       }
   - uid: 'excel!Excel.ChartSeries#mapOptions:member'
     summary: |-
-      Encapsulates the options for a region map chart. Read-only.
+      Encapsulates the options for a region map chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: mapOptions
@@ -686,7 +687,7 @@ items:
           - 'excel!Excel.ChartMapOptions:class'
   - uid: 'excel!Excel.ChartSeries#markerBackgroundColor:member'
     summary: |-
-      Represents markers background color of a chart series.
+      Specifies the markers background color of a chart series.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerBackgroundColor
@@ -741,7 +742,7 @@ items:
           ```
   - uid: 'excel!Excel.ChartSeries#markerForegroundColor:member'
     summary: |-
-      Represents markers foreground color of a chart series.
+      Specifies the markers foreground color of a chart series.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerForegroundColor
@@ -796,7 +797,7 @@ items:
           ```
   - uid: 'excel!Excel.ChartSeries#markerSize:member'
     summary: |-
-      Represents marker size of a chart series.
+      Specifies the marker size of a chart series.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerSize
@@ -851,7 +852,7 @@ items:
           ```
   - uid: 'excel!Excel.ChartSeries#markerStyle:member'
     summary: |-
-      Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
+      Specifies the marker style of a chart series. See Excel.ChartMarkerStyle for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerStyle
@@ -908,7 +909,7 @@ items:
           ```
   - uid: 'excel!Excel.ChartSeries#name:member'
     summary: |-
-      Represents the name of a series in a chart.
+      Specifies the name of a series in a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -924,7 +925,7 @@ items:
   - uid: 'excel!Excel.ChartSeries#overlap:member'
     summary: >-
       Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and
-      2-D column charts. Read/Write.
+      2-D column charts.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -940,7 +941,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartSeries#parentLabelStrategy:member'
     summary: |-
-      Returns or sets the series parent label strategy area for a treemap chart. Read/Write.
+      Specifies the series parent label strategy area for a treemap chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: parentLabelStrategy
@@ -955,7 +956,7 @@ items:
           - 'excel!Excel.ChartSeries#parentLabelStrategy~0:complex'
   - uid: 'excel!Excel.ChartSeries#plotOrder:member'
     summary: |-
-      Represents the plot order of a chart series within the chart group.
+      Specifies the plot order of a chart series within the chart group.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: plotOrder
@@ -970,7 +971,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartSeries#points:member'
     summary: |-
-      Represents a collection of all points in the series. Read-only.
+      Returns a collection of all points in the series.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: points
@@ -985,8 +986,8 @@ items:
           - 'excel!Excel.ChartPointsCollection:class'
   - uid: 'excel!Excel.ChartSeries#secondPlotSize:member'
     summary: >-
-      Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a
-      percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write.
+      Specifies the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of
+      the size of the primary pie. Can be a value from 5 to 200.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -1050,7 +1051,7 @@ items:
             - 'excel!Excel.ChartSeries:class'
   - uid: 'excel!Excel.ChartSeries#setBubbleSizes:member(1)'
     summary: |-
-      Set bubble sizes for a chart series. Only works for bubble charts.
+      Sets the bubble sizes for a chart series. Only works for bubble charts.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setBubbleSizes(sourceData)
@@ -1071,7 +1072,7 @@ items:
             - 'excel!Excel.Range:class'
   - uid: 'excel!Excel.ChartSeries#setValues:member(1)'
     summary: |-
-      Set values for a chart series. For scatter chart, it means Y axis values.
+      Sets the values for a chart series. For scatter chart, it means Y axis values.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setValues(sourceData)
@@ -1118,7 +1119,7 @@ items:
             - 'excel!Excel.Range:class'
   - uid: 'excel!Excel.ChartSeries#setXAxisValues:member(1)'
     summary: |-
-      Set values of X axis for a chart series. Only works for scatter charts.
+      Sets the values of the X axis for a chart series. Only works for scatter charts.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setXAxisValues(sourceData)
@@ -1139,7 +1140,7 @@ items:
             - 'excel!Excel.Range:class'
   - uid: 'excel!Excel.ChartSeries#showConnectorLines:member'
     summary: |-
-      Specifies whether or not connector lines are shown in waterfall charts. Read/Write.
+      Specifies whether connector lines are shown in waterfall charts.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showConnectorLines
@@ -1154,7 +1155,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartSeries#showLeaderLines:member'
     summary: |-
-      Specifies whether or not leader lines are displayed for each data label in the series. Read/Write.
+      Specifies whether leader lines are displayed for each data label in the series.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showLeaderLines
@@ -1169,7 +1170,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartSeries#showShadow:member'
     summary: |-
-      Boolean value representing if the series has a shadow or not.
+      Specifies if the series has a shadow.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showShadow
@@ -1184,7 +1185,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartSeries#smooth:member'
     summary: |-
-      Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
+      Specifies if the series is smooth. Only applicable to line and scatter charts.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: smooth
@@ -1199,7 +1200,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartSeries#splitType:member'
     summary: |-
-      Returns or sets the way the two sections of either a pie of pie chart or a bar of pie chart are split. Read/Write.
+      Specifies the way the two sections of either a pie-of-pie chart or a bar-of-pie chart are split.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: splitType
@@ -1215,10 +1216,8 @@ items:
         type:
           - 'excel!Excel.ChartSeries#splitType~0:complex'
   - uid: 'excel!Excel.ChartSeries#splitValue:member'
-    summary: >-
-      Returns or sets the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie
-      chart. Read/Write.
-
+    summary: |-
+      Specifies the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: splitValue
@@ -1251,7 +1250,7 @@ items:
         description: ''
   - uid: 'excel!Excel.ChartSeries#trendlines:member'
     summary: |-
-      Represents a collection of trendlines in the series. Read-only.
+      The collection of trendlines in the series.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: trendlines
@@ -1265,10 +1264,8 @@ items:
         type:
           - 'excel!Excel.ChartTrendlineCollection:class'
   - uid: 'excel!Excel.ChartSeries#varyByCategories:member'
-    summary: >-
-      True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one
-      series. Read/Write.
-
+    summary: |-
+      True if Excel assigns a different color or pattern to each data marker. The chart must contain only one series.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: varyByCategories

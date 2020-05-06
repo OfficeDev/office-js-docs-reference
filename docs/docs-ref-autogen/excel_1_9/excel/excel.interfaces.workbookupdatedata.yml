@@ -32,8 +32,8 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorkbookUpdateData#isDirty:member'
     summary: >-
-      Specifies whether or not changes have been made since the workbook was last saved. You can set this property to
-      true if you want to close a modified workbook without either saving it or being prompted to save it.
+      Specifies if changes have been made since the workbook was last saved. You can set this property to true if you
+      want to close a modified workbook without either saving it or being prompted to save it.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

@@ -34,7 +34,7 @@ items:
       - 'excel!Excel.Interfaces.WorksheetData#visibility:member'
   - uid: 'excel!Excel.Interfaces.WorksheetData#autoFilter:member'
     summary: |-
-      Represents the AutoFilter object of the worksheet. Read-Only.
+      Represents the AutoFilter object of the worksheet.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoFilter
@@ -49,7 +49,7 @@ items:
           - 'excel!Excel.Interfaces.AutoFilterData:interface'
   - uid: 'excel!Excel.Interfaces.WorksheetData#charts:member'
     summary: |-
-      Returns a collection of charts that are part of the worksheet. Read-only.
+      Returns a collection of charts that are part of the worksheet.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: charts
@@ -64,7 +64,7 @@ items:
           - 'excel!Excel.Interfaces.WorksheetData#charts~0:complex'
   - uid: 'excel!Excel.Interfaces.WorksheetData#comments:member'
     summary: |-
-      Returns a collection of all the Comments objects on the worksheet. Read-only.
+      Returns a collection of all the Comments objects on the worksheet.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: comments
@@ -79,7 +79,7 @@ items:
           - 'excel!Excel.Interfaces.WorksheetData#comments~0:complex'
   - uid: 'excel!Excel.Interfaces.WorksheetData#customProperties:member'
     summary: >-
-      Returns a collection of worksheet-level custom properties.
+      Gets a collection of worksheet-level custom properties.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -97,7 +97,7 @@ items:
           - 'excel!Excel.Interfaces.WorksheetData#customProperties~0:complex'
   - uid: 'excel!Excel.Interfaces.WorksheetData#enableCalculation:member'
     summary: >-
-      Gets or sets the enableCalculation property of the worksheet. True if Excel recalculates the worksheet when
+      Determines if Excel should recalculate the worksheet when necessary. True if Excel recalculates the worksheet when
       necessary. False if Excel doesn't recalculate the sheet.
 
 
@@ -130,7 +130,7 @@ items:
   - uid: 'excel!Excel.Interfaces.WorksheetData#id:member'
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
-      the same even when the worksheet is renamed or moved. Read-only.
+      the same even when the worksheet is renamed or moved.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -161,7 +161,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.WorksheetData#names:member'
     summary: |-
-      Collection of names scoped to the current worksheet. Read-only.
+      Collection of names scoped to the current worksheet.
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: names
@@ -191,7 +191,7 @@ items:
           - 'excel!Excel.Interfaces.PageLayoutData:interface'
   - uid: 'excel!Excel.Interfaces.WorksheetData#pivotTables:member'
     summary: |-
-      Collection of PivotTables that are part of the worksheet. Read-only.
+      Collection of PivotTables that are part of the worksheet.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pivotTables
@@ -221,7 +221,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.WorksheetData#protection:member'
     summary: |-
-      Returns sheet protection object for a worksheet. Read-only.
+      Returns sheet protection object for a worksheet.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protection
@@ -236,7 +236,7 @@ items:
           - 'excel!Excel.Interfaces.WorksheetProtectionData:interface'
   - uid: 'excel!Excel.Interfaces.WorksheetData#shapes:member'
     summary: |-
-      Returns the collection of all the Shape objects on the worksheet. Read-only.
+      Returns the collection of all the Shape objects on the worksheet.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shapes
@@ -251,7 +251,7 @@ items:
           - 'excel!Excel.Interfaces.WorksheetData#shapes~0:complex'
   - uid: 'excel!Excel.Interfaces.WorksheetData#showGridlines:member'
     summary: |-
-      Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.
+      Specifies if gridlines are visible to the user.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showGridlines
@@ -266,7 +266,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorksheetData#showHeadings:member'
     summary: |-
-      Gets or sets the worksheet's headings flag. This flag determines whether headings are visible to the user.
+      Specifies if headings are visible to the user.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showHeadings
@@ -281,7 +281,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorksheetData#slicers:member'
     summary: |-
-      Returns a collection of slicers that are part of the worksheet. Read-only.
+      Returns a collection of slicers that are part of the worksheet.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: slicers
@@ -296,7 +296,7 @@ items:
           - 'excel!Excel.Interfaces.WorksheetData#slicers~0:complex'
   - uid: 'excel!Excel.Interfaces.WorksheetData#standardHeight:member'
     summary: |-
-      Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
+      Returns the standard (default) height of all the rows in the worksheet, in points.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: standardHeight
@@ -311,9 +311,9 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.WorksheetData#standardWidth:member'
     summary: >-
-      Returns or sets the standard (default) width of all the columns in the worksheet. One unit of column width is
-      equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0
-      (zero) is used.
+      Specifies the standard (default) width of all the columns in the worksheet. One unit of column width is equal to
+      the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is
+      used.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -329,10 +329,10 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.WorksheetData#tabColor:member'
     summary: >-
-      Gets or sets the worksheet tab color. When retrieving the tab color, if the worksheet is invisible, the value will
-      be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned.
-      Otherwise, the property will be set to a color, in the form "\#123456" When setting the color, use an empty-string
-      to set an "auto" color, or a real color otherwise.
+      The tab color of the worksheet. When retrieving the tab color, if the worksheet is invisible, the value will be
+      null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned. Otherwise,
+      the property will be set to a color, in the form "\#123456" When setting the color, use an empty-string to set an
+      "auto" color, or a real color otherwise.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -348,7 +348,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.WorksheetData#tables:member'
     summary: |-
-      Collection of tables that are part of the worksheet. Read-only.
+      Collection of tables that are part of the worksheet.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tables

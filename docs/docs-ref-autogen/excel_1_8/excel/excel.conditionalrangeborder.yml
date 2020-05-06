@@ -26,8 +26,8 @@ items:
       - 'excel!Excel.ConditionalRangeBorder#toJSON:member(1)'
   - uid: 'excel!Excel.ConditionalRangeBorder#color:member'
     summary: >-
-      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange").
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g., "FFA500") or as a named
+      HTML color (e.g., "orange").
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -174,10 +174,8 @@ items:
           type:
             - 'excel!Excel.ConditionalRangeBorder:class'
   - uid: 'excel!Excel.ConditionalRangeBorder#sideIndex:member'
-    summary: >-
+    summary: |-
       Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details.
-      Read-only.
-
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sideIndex

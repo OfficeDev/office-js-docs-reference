@@ -23,7 +23,7 @@ items:
       - 'excel!Excel.Interfaces.ChartTrendlineLabelData#width:member'
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#autoText:member'
     summary: |-
-      Boolean value representing if trendline label automatically generates appropriate text based on context.
+      Specifies if trendline label automatically generate appropriate text based on context.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoText
@@ -38,7 +38,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#format:member'
     summary: |-
-      Represents the format of chart trendline label.
+      The format of chart trendline label.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -67,10 +67,8 @@ items:
         type:
           - string
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#height:member'
-    summary: >-
-      Returns the height, in points, of the chart trendline label. Read-only. Null if chart trendline label is not
-      visible.
-
+    summary: |-
+      Returns the height, in points, of the chart trendline label. Null if chart trendline label is not visible.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -201,10 +199,8 @@ items:
         type:
           - 'excel!Excel.Interfaces.ChartTrendlineLabelData#verticalAlignment~0:complex'
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#width:member'
-    summary: >-
-      Returns the width, in points, of the chart trendline label. Read-only. Null if chart trendline label is not
-      visible.
-
+    summary: |-
+      Returns the width, in points, of the chart trendline label. Null if chart trendline label is not visible.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width

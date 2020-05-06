@@ -25,7 +25,7 @@ items:
       - 'excel!Excel.ChartPlotAreaFormat#toJSON:member(1)'
   - uid: 'excel!Excel.ChartPlotAreaFormat#border:member'
     summary: |-
-      Represents the border attributes of a chart plotArea.
+      Specifies the border attributes of a chart plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
@@ -54,7 +54,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartPlotAreaFormat#fill:member'
     summary: |-
-      Represents the fill format of an object, which includes background formatting information.
+      Specifies the fill format of an object, which includes background formatting information.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill

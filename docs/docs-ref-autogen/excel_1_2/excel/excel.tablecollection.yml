@@ -95,7 +95,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.TableCollection#count:member'
     summary: |-
-      Returns the number of tables in the workbook. Read-only.
+      Returns the number of tables in the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count

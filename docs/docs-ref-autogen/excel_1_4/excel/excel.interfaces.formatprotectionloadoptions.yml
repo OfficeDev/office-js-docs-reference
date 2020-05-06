@@ -31,7 +31,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.FormatProtectionLoadOptions#formulaHidden:member'
     summary: >-
-      Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range
+      Specifies if Excel hides the formula for the cells in the range. A null value indicates that the entire range
       doesn't have uniform formula hidden setting.
 
 
@@ -48,7 +48,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.FormatProtectionLoadOptions#locked:member'
     summary: >-
-      Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have
+      Specifies if Excel locks the cells in the object. A null value indicates that the entire range doesn't have
       uniform lock setting.
 
 

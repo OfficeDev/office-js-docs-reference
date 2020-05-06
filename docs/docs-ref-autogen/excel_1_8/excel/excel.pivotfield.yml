@@ -239,7 +239,7 @@ items:
         description: ''
       parameters:
         - id: sortBy
-          description: Represents whether the sorting is done in an ascending or descending order.
+          description: Specifies if the sorting is done in ascending or descending order.
           type:
             - 'excel!Excel.SortBy:enum'
   - uid: 'excel!Excel.PivotField#subtotals:member'

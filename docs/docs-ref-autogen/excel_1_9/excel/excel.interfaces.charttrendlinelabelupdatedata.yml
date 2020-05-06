@@ -24,7 +24,7 @@ items:
       - 'excel!Excel.Interfaces.ChartTrendlineLabelUpdateData#verticalAlignment:member'
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelUpdateData#autoText:member'
     summary: |-
-      Boolean value representing if trendline label automatically generates appropriate text based on context.
+      Specifies if trendline label automatically generate appropriate text based on context.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoText
@@ -39,7 +39,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelUpdateData#format:member'
     summary: |-
-      Represents the format of chart trendline label.
+      The format of chart trendline label.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -105,8 +105,8 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelUpdateData#linkNumberFormat:member'
     summary: >-
-      Boolean value representing if the number format is linked to the cells (so that the number format changes in the
-      labels when it changes in the cells).
+      Specifies if the number format is linked to the cells (so that the number format changes in the labels when it
+      changes in the cells).
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
