@@ -29,7 +29,7 @@ items:
       - 'excel!Excel.Interfaces.ShapeData#zOrderPosition:member'
   - uid: 'excel!Excel.Interfaces.ShapeData#altTextDescription:member'
     summary: |-
-      Returns or sets the alternative description text for a Shape object.
+      Specifies the alternative description text for a Shape object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: altTextDescription
@@ -44,7 +44,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.ShapeData#altTextTitle:member'
     summary: |-
-      Returns or sets the alternative title text for a Shape object.
+      Specifies the alternative title text for a Shape object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: altTextTitle
@@ -59,7 +59,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.ShapeData#connectionSiteCount:member'
     summary: |-
-      Returns the number of connection sites on this shape. Read-only.
+      Returns the number of connection sites on this shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: connectionSiteCount
@@ -74,7 +74,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ShapeData#fill:member'
     summary: |-
-      Returns the fill formatting of this shape. Read-only.
+      Returns the fill formatting of this shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
@@ -89,8 +89,8 @@ items:
           - 'excel!Excel.Interfaces.ShapeFillData:interface'
   - uid: 'excel!Excel.Interfaces.ShapeData#geometricShapeType:member'
     summary: >-
-      Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns
-      null if the shape type is not "GeometricShape".
+      Specifies the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null
+      if the shape type is not "GeometricShape".
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -137,8 +137,8 @@ items:
           - 'excel!Excel.Interfaces.ShapeData#geometricShapeType~0:complex'
   - uid: 'excel!Excel.Interfaces.ShapeData#height:member'
     summary: >-
-      Represents the height, in points, of the shape. Throws an invalid argument exception when set with a negative
-      value or zero as input.
+      Specifies the height, in points, of the shape. Throws an invalid argument exception when set with a negative value
+      or zero as input.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -154,7 +154,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ShapeData#id:member'
     summary: |-
-      Represents the shape identifier. Read-only.
+      Specifies the shape identifier.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -186,7 +186,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ShapeData#level:member'
     summary: >-
-      Represents the level of the specified shape. For example, a level of 0 means that the shape is not part of any
+      Specifies the level of the specified shape. For example, a level of 0 means that the shape is not part of any
       groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a
       sub-group of the top level.
 
@@ -204,7 +204,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ShapeData#lineFormat:member'
     summary: |-
-      Returns the line formatting of this shape. Read-only.
+      Returns the line formatting of this shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lineFormat
@@ -219,7 +219,7 @@ items:
           - 'excel!Excel.Interfaces.ShapeLineFormatData:interface'
   - uid: 'excel!Excel.Interfaces.ShapeData#lockAspectRatio:member'
     summary: |-
-      Specifies whether or not the aspect ratio of this shape is locked.
+      Specifies if the aspect ratio of this shape is locked.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lockAspectRatio
@@ -234,7 +234,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ShapeData#name:member'
     summary: |-
-      Represents the name of the shape.
+      Specifies the name of the shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -249,7 +249,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.ShapeData#rotation:member'
     summary: |-
-      Represents the rotation, in degrees, of the shape.
+      Specifies the rotation, in degrees, of the shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rotation
@@ -281,7 +281,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ShapeData#type:member'
     summary: |-
-      Returns the type of this shape. See Excel.ShapeType for details. Read-only.
+      Returns the type of this shape. See Excel.ShapeType for details.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
@@ -296,7 +296,7 @@ items:
           - 'excel!Excel.Interfaces.ShapeData#type~0:complex'
   - uid: 'excel!Excel.Interfaces.ShapeData#visible:member'
     summary: |-
-      Represents the visibility of this shape.
+      Specifies if the shape is visible.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
@@ -311,7 +311,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ShapeData#width:member'
     summary: >-
-      Represents the width, in points, of the shape. Throws an invalid argument exception when set with a negative value
+      Specifies the width, in points, of the shape. Throws an invalid argument exception when set with a negative value
       or zero as input.
 
 
@@ -327,10 +327,8 @@ items:
         type:
           - number
   - uid: 'excel!Excel.Interfaces.ShapeData#zOrderPosition:member'
-    summary: >-
+    summary: |-
       Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
-      Read-only.
-
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: zOrderPosition

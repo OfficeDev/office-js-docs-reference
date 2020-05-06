@@ -2,7 +2,7 @@
 items:
   - uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions:interface'
     summary: >-
-      A scoped collection of custom XML parts. A scoped collection is the result of some operation, e.g. filtering by
+      A scoped collection of custom XML parts. A scoped collection is the result of some operation, e.g., filtering by
       namespace. A scoped collection cannot be scoped any further.
 
 
@@ -33,7 +33,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions#id:member'
     summary: |-
-      For EACH ITEM in the collection: The custom XML part's ID. Read-only.
+      For EACH ITEM in the collection: The custom XML part's ID.
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -48,7 +48,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions#namespaceUri:member'
     summary: |-
-      For EACH ITEM in the collection: The custom XML part's namespace URI. Read-only.
+      For EACH ITEM in the collection: The custom XML part's namespace URI.
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: namespaceUri

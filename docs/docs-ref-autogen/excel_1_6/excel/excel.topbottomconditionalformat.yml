@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TopBottomConditionalFormat#context:member'
@@ -38,10 +38,8 @@ items:
         type:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.TopBottomConditionalFormat#format:member'
-    summary: >-
+    summary: |-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-      Read-only.
-
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -168,7 +166,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.TopBottomConditionalFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -206,7 +204,7 @@ items:
           - 'excel!Excel.Interfaces.TopBottomConditionalFormatData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -220,7 +218,7 @@ references:
     name: Excel.ConditionalTopBottomRule
   - uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatUpdateData:interface'
     name: Interfaces.TopBottomConditionalFormatUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatData:interface'
     name: Excel.Interfaces.TopBottomConditionalFormatData

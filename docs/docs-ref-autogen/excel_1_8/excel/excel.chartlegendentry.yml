@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartLegendEntry#context:member'
@@ -43,7 +43,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartLegendEntry#height:member'
     summary: |-
-      Represents the height of the legendEntry on the chart legend.
+      Specifies the height of the legendEntry on the chart legend.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -58,7 +58,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartLegendEntry#index:member'
     summary: |-
-      Represents the index of the legendEntry in the chart legend.
+      Specifies the index of the legendEntry in the chart legend.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: index
@@ -73,7 +73,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartLegendEntry#left:member'
     summary: |-
-      Represents the left of a chart legendEntry.
+      Specifies the left of a chart legendEntry.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
@@ -185,7 +185,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.ChartLegendEntry#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -224,7 +224,7 @@ items:
         description: ''
   - uid: 'excel!Excel.ChartLegendEntry#top:member'
     summary: |-
-      Represents the top of a chart legendEntry.
+      Specifies the top of a chart legendEntry.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
@@ -268,7 +268,7 @@ items:
         type:
           - number
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -278,7 +278,7 @@ references:
     name: Excel.Interfaces.ChartLegendEntryLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartLegendEntryUpdateData:interface'
     name: Interfaces.ChartLegendEntryUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartLegendEntryData:interface'
     name: Excel.Interfaces.ChartLegendEntryData

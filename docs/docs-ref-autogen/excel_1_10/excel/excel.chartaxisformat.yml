@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartAxisFormat#context:member'
@@ -40,7 +40,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartAxisFormat#fill:member'
     summary: |-
-      Represents chart fill formatting. Read-only.
+      Specifies chart fill formatting.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
@@ -55,7 +55,7 @@ items:
           - 'excel!Excel.ChartFill:class'
   - uid: 'excel!Excel.ChartAxisFormat#font:member'
     summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.
+      Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
@@ -70,7 +70,7 @@ items:
           - 'excel!Excel.ChartFont:class'
   - uid: 'excel!Excel.ChartAxisFormat#line:member'
     summary: |-
-      Represents chart line formatting. Read-only.
+      Specifies chart line formatting.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
@@ -182,7 +182,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.ChartAxisFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -220,7 +220,7 @@ items:
           - 'excel!Excel.Interfaces.ChartAxisFormatData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -236,7 +236,7 @@ references:
     name: Excel.Interfaces.ChartAxisFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartAxisFormatUpdateData:interface'
     name: Interfaces.ChartAxisFormatUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartAxisFormatData:interface'
     name: Excel.Interfaces.ChartAxisFormatData

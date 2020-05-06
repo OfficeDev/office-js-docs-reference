@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.VerticalAlignment:enum'
+    summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.VerticalAlignment
+    fullName: Excel.VerticalAlignment
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.VerticalAlignment.bottom:member'
+      - 'excel!Excel.VerticalAlignment.center:member'
+      - 'excel!Excel.VerticalAlignment.distributed:member'
+      - 'excel!Excel.VerticalAlignment.justify:member'
+      - 'excel!Excel.VerticalAlignment.top:member'
+  - uid: 'excel!Excel.VerticalAlignment.bottom:member'
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bottom"'
+  - uid: 'excel!Excel.VerticalAlignment.center:member'
+    name: center
+    fullName: center
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Center"'
+  - uid: 'excel!Excel.VerticalAlignment.distributed:member'
+    name: distributed
+    fullName: distributed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Distributed"'
+  - uid: 'excel!Excel.VerticalAlignment.justify:member'
+    name: justify
+    fullName: justify
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Justify"'
+  - uid: 'excel!Excel.VerticalAlignment.top:member'
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Top"'

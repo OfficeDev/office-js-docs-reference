@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PivotField#context:member'
@@ -185,7 +185,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.PivotField#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -239,7 +239,7 @@ items:
         description: ''
       parameters:
         - id: sortBy
-          description: Represents whether the sorting is done in an ascending or descending order.
+          description: Specifies if the sorting is done in ascending or descending order.
           type:
             - 'excel!Excel.SortBy:enum'
   - uid: 'excel!Excel.PivotField#subtotals:member'
@@ -276,7 +276,7 @@ items:
           - 'excel!Excel.Interfaces.PivotFieldData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -288,7 +288,7 @@ references:
     name: Excel.Interfaces.PivotFieldLoadOptions
   - uid: 'excel!Excel.Interfaces.PivotFieldUpdateData:interface'
     name: Interfaces.PivotFieldUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.SortBy:enum'
     name: SortBy

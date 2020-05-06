@@ -14,7 +14,7 @@ items:
       - 'excel!Excel.Interfaces.ChartMapOptionsData#projectionType:member'
   - uid: 'excel!Excel.Interfaces.ChartMapOptionsData#labelStrategy:member'
     summary: |-
-      Returns or sets the series map labels strategy of a region map chart. Read/Write.
+      Specifies the series map labels strategy of a region map chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: labelStrategy
@@ -29,7 +29,7 @@ items:
           - 'excel!Excel.Interfaces.ChartMapOptionsData#labelStrategy~0:complex'
   - uid: 'excel!Excel.Interfaces.ChartMapOptionsData#level:member'
     summary: |-
-      Returns or sets the series mapping level of a region map chart. Read/Write.
+      Specifies the series mapping level of a region map chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: level
@@ -46,7 +46,7 @@ items:
           - 'excel!Excel.Interfaces.ChartMapOptionsData#level~0:complex'
   - uid: 'excel!Excel.Interfaces.ChartMapOptionsData#projectionType:member'
     summary: |-
-      Returns or sets the series projection type of a region map chart. Read/Write.
+      Specifies the series projection type of a region map chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: projectionType

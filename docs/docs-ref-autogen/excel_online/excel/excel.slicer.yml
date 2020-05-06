@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Slicer#caption:member'
@@ -134,7 +134,7 @@ items:
           ```
   - uid: 'excel!Excel.Slicer#getSelectedItems:member(1)'
     summary: |-
-      Returns an array of selected items' keys. Read-only.
+      Returns an array of selected items' keys.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getSelectedItems()
@@ -167,7 +167,7 @@ items:
           - number
   - uid: 'excel!Excel.Slicer#id:member'
     summary: |-
-      Represents the unique id of slicer. Read-only.
+      Represents the unique id of slicer.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -366,7 +366,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.Slicer#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -387,7 +387,7 @@ items:
             - 'excel!Excel.Slicer:class'
   - uid: 'excel!Excel.Slicer#slicerItems:member'
     summary: |-
-      Represents the collection of SlicerItems that are part of the slicer. Read-only.
+      Represents the collection of SlicerItems that are part of the slicer.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: slicerItems
@@ -507,7 +507,7 @@ items:
           - number
   - uid: 'excel!Excel.Slicer#worksheet:member'
     summary: |-
-      Represents the worksheet containing the slicer. Read-only.
+      Represents the worksheet containing the slicer.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
@@ -521,7 +521,7 @@ items:
         type:
           - 'excel!Excel.Worksheet:class'
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -529,7 +529,7 @@ references:
     name: 'OfficeExtension.ClientResult<string[]>'
     fullName: 'OfficeExtension.ClientResult<string[]>'
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: '<string[]>'
@@ -540,7 +540,7 @@ references:
     name: Excel.Interfaces.SlicerLoadOptions
   - uid: 'excel!Excel.Interfaces.SlicerUpdateData:interface'
     name: Interfaces.SlicerUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.SlicerItemCollection:class'
     name: Excel.SlicerItemCollection

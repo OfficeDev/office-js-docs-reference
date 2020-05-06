@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.CommentCollection#add:member(1)'
@@ -40,9 +40,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        add(cellAddress: Range | string, content: CommentRichContent | string, contentType?: Excel.ContentType):
-        Excel.Comment;
+      content: 'add(cellAddress: Range | string, content: string, contentType?: Excel.ContentType): Excel.Comment;'
       return:
         type:
           - 'excel!Excel.Comment:class'
@@ -78,14 +76,14 @@ items:
           description: >-
             The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain
             text. CommentRichContent objects allow for other comment features, such as mentions. \[Api set: ExcelApi
-            1.10 for string, ExcelApiOnline 1.1 for CommentRichContent object\]
+            1.10 for string, 1.11 for CommentRichContent object\]
           type:
-            - 'excel!Excel.CommentCollection#add~1:complex'
+            - string
         - id: contentType
           description: >-
             Optional. The type of content contained within the comment. The default value is enum
-            `ContentType.Plain`<!-- -->. \[Api set: ExcelApi 1.10 for Enum ContentType.Plain, ExcelApiOnline 1.1 for
-            Enum ContentType.Mention\]
+            `ContentType.Plain`<!-- -->. \[Api set: ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum
+            ContentType.Mention\]
           type:
             - 'excel!Excel.ContentType:enum'
   - uid: 'excel!Excel.CommentCollection#add:member(2)'
@@ -101,9 +99,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        add(cellAddress: Range | string, content: CommentRichContent | string, contentTypeString?: "Plain" | "Mention"):
-        Excel.Comment;
+      content: 'add(cellAddress: Range | string, content: string, contentTypeString?: "Plain" | "Mention"): Excel.Comment;'
       return:
         type:
           - 'excel!Excel.Comment:class'
@@ -115,19 +111,19 @@ items:
             contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided
             range is larger than one cell.
           type:
-            - 'excel!Excel.CommentCollection#add~2:complex'
+            - 'excel!Excel.CommentCollection#add~1:complex'
         - id: content
           description: >-
             The comment's content. This can be either a string or CommentRichContent object. Strings are used for plain
             text. CommentRichContent objects allow for other comment features, such as mentions. \[Api set: ExcelApi
-            1.10 for string, ExcelApiOnline 1.1 for CommentRichContent object\]
+            1.10 for string, 1.11 for CommentRichContent object\]
           type:
-            - 'excel!Excel.CommentCollection#add~3:complex'
+            - string
         - id: contentTypeString
           description: >-
             Optional. The type of content contained within the comment. The default value is enum
-            `ContentType.Plain`<!-- -->. \[Api set: ExcelApi 1.10 for Enum ContentType.Plain, ExcelApiOnline 1.1 for
-            Enum ContentType.Mention\]
+            `ContentType.Plain`<!-- -->. \[Api set: ExcelApi 1.10 for Enum ContentType.Plain, 1.11 for Enum
+            ContentType.Mention\]
           type:
             - '"Plain" | "Mention"'
   - uid: 'excel!Excel.CommentCollection#context:member'
@@ -162,7 +158,7 @@ items:
         description: ''
   - uid: 'excel!Excel.CommentCollection#getItem:member(1)'
     summary: |-
-      Gets a comment from the collection based on its ID. Read-only.
+      Gets a comment from the collection based on its ID.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(commentId)
@@ -322,7 +318,7 @@ items:
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type:
-            - 'excel!OfficeExtension.LoadOption:interface'
+            - 'office!OfficeExtension.LoadOption:interface'
   - uid: 'excel!Excel.CommentCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -342,7 +338,7 @@ items:
           - 'excel!Excel.Interfaces.CommentCollectionData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Comment:class'
     name: Excel.Comment
@@ -355,18 +351,9 @@ references:
         fullName: Excel.Range
       - name: ' | string'
         fullName: ' | string'
-  - uid: 'excel!Excel.CommentCollection#add~1:complex'
-    name: CommentRichContent | string
-    fullName: Excel.CommentRichContent | string
-    spec.typeScript:
-      - uid: 'excel!Excel.CommentRichContent:interface'
-        name: CommentRichContent
-        fullName: Excel.CommentRichContent
-      - name: ' | string'
-        fullName: ' | string'
   - uid: 'excel!Excel.ContentType:enum'
     name: Excel.ContentType
-  - uid: 'excel!Excel.CommentCollection#add~2:complex'
+  - uid: 'excel!Excel.CommentCollection#add~1:complex'
     name: Range | string
     fullName: Excel.Range | string
     spec.typeScript:
@@ -375,22 +362,13 @@ references:
         fullName: Excel.Range
       - name: ' | string'
         fullName: ' | string'
-  - uid: 'excel!Excel.CommentCollection#add~3:complex'
-    name: CommentRichContent | string
-    fullName: Excel.CommentRichContent | string
-    spec.typeScript:
-      - uid: 'excel!Excel.CommentRichContent:interface'
-        name: CommentRichContent
-        fullName: Excel.CommentRichContent
-      - name: ' | string'
-        fullName: ' | string'
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
   - uid: 'excel!Excel.CommentCollection#getCount~0:complex'
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <number>
@@ -427,7 +405,7 @@ references:
       - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
         name: Excel.Interfaces.CollectionLoadOptions
         fullName: Excel.Interfaces.CollectionLoadOptions
-  - uid: 'excel!OfficeExtension.LoadOption:interface'
+  - uid: 'office!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.CommentCollectionData:interface'
     name: Excel.Interfaces.CommentCollectionData

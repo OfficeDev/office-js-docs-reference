@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartAreaFormat#border:member'
@@ -26,7 +26,7 @@ items:
       - 'excel!Excel.ChartAreaFormat#toJSON:member(1)'
   - uid: 'excel!Excel.ChartAreaFormat#border:member'
     summary: |-
-      Represents the border format of chart area, which includes color, linestyle, and weight. Read-only.
+      Represents the border format of chart area, which includes color, linestyle, and weight.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
@@ -55,7 +55,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartAreaFormat#fill:member'
     summary: |-
-      Represents the fill format of an object, which includes background formatting information. Read-only.
+      Represents the fill format of an object, which includes background formatting information.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
@@ -70,7 +70,7 @@ items:
           - 'excel!Excel.ChartFill:class'
   - uid: 'excel!Excel.ChartAreaFormat#font:member'
     summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.
+      Represents the font attributes (font name, font size, color, etc.) for the current object.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
@@ -182,7 +182,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.ChartAreaFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -220,7 +220,7 @@ items:
           - 'excel!Excel.Interfaces.ChartAreaFormatData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ChartBorder:class'
     name: Excel.ChartBorder
@@ -236,7 +236,7 @@ references:
     name: Excel.Interfaces.ChartAreaFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartAreaFormatUpdateData:interface'
     name: Interfaces.ChartAreaFormatUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartAreaFormatData:interface'
     name: Excel.Interfaces.ChartAreaFormatData

@@ -33,7 +33,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.PivotTableCollectionLoadOptions#id:member'
     summary: |-
-      For EACH ITEM in the collection: Id of the PivotTable. Read-only.
+      For EACH ITEM in the collection: Id of the PivotTable.
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id

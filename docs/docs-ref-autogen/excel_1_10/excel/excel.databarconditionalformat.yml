@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.DataBarConditionalFormat#axisColor:member'
@@ -31,8 +31,8 @@ items:
       - 'excel!Excel.DataBarConditionalFormat#upperBoundRule:member'
   - uid: 'excel!Excel.DataBarConditionalFormat#axisColor:member'
     summary: >-
-      HTML color code representing the color of the Axis line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange"). "" (empty string) if no axis is present or set.
+      HTML color code representing the color of the Axis line, of the form \#RRGGBB (e.g., "FFA500") or as a named HTML
+      color (e.g., "orange"). "" (empty string) if no axis is present or set.
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -63,7 +63,7 @@ items:
           - 'excel!Excel.DataBarConditionalFormat#axisFormat~0:complex'
   - uid: 'excel!Excel.DataBarConditionalFormat#barDirection:member'
     summary: |-
-      Represents the direction that the data bar graphic should be based on.
+      Specifies the direction that the data bar graphic should be based on.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: barDirection
@@ -202,7 +202,7 @@ items:
           - 'excel!Excel.ConditionalDataBarRule:interface'
   - uid: 'excel!Excel.DataBarConditionalFormat#negativeFormat:member'
     summary: |-
-      Representation of all values to the left of the axis in an Excel data bar. Read-only.
+      Representation of all values to the left of the axis in an Excel data bar.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: negativeFormat
@@ -217,7 +217,7 @@ items:
           - 'excel!Excel.ConditionalDataBarNegativeFormat:class'
   - uid: 'excel!Excel.DataBarConditionalFormat#positiveFormat:member'
     summary: |-
-      Representation of all values to the right of the axis in an Excel data bar. Read-only.
+      Representation of all values to the right of the axis in an Excel data bar.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: positiveFormat
@@ -259,7 +259,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.DataBarConditionalFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -330,7 +330,7 @@ items:
         type:
           - 'excel!Excel.ConditionalDataBarRule:interface'
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.DataBarConditionalFormat#axisFormat~0:complex'
     name: Excel.ConditionalDataBarAxisFormat | "Automatic" | "None" | "CellMidPoint"
@@ -364,7 +364,7 @@ references:
     name: Excel.ConditionalDataBarPositiveFormat
   - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatUpdateData:interface'
     name: Interfaces.DataBarConditionalFormatUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.DataBarConditionalFormatData:interface'
     name: Excel.Interfaces.DataBarConditionalFormatData

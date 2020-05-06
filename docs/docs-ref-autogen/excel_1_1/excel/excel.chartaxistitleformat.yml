@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartAxisTitleFormat#context:member'
@@ -37,8 +37,10 @@ items:
         type:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartAxisTitleFormat#font:member'
-    summary: |-
-      Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.
+    summary: >-
+      Specifies the chart axis title's font attributes, such as font name, font size, color, etc. of chart axis title
+      object.
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
@@ -150,7 +152,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.ChartAxisTitleFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -188,7 +190,7 @@ items:
           - 'excel!Excel.Interfaces.ChartAxisTitleFormatData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -200,7 +202,7 @@ references:
     name: Excel.Interfaces.ChartAxisTitleFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData:interface'
     name: Interfaces.ChartAxisTitleFormatUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleFormatData:interface'
     name: Excel.Interfaces.ChartAxisTitleFormatData

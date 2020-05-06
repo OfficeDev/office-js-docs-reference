@@ -13,7 +13,7 @@ items:
       - 'excel!Excel.Interfaces.PivotTableData#name:member'
   - uid: 'excel!Excel.Interfaces.PivotTableData#id:member'
     summary: |-
-      Id of the PivotTable. Read-only.
+      Id of the PivotTable.
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id

@@ -60,7 +60,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.PivotItemData#visible:member'
     summary: |-
-      Determines whether the PivotItem is visible or not.
+      Specifies if the PivotItem is visible.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible

@@ -2,7 +2,7 @@
 items:
   - uid: 'excel!Excel.PivotAxis:enum'
     summary: |-
-      The ShowAs Calculation function for the Data Pivot Field.
+      Represents the axis from which to get the PivotItems.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotAxis

@@ -16,7 +16,11 @@ items:
       - 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationEngineVersion:member'
       - 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationMode:member'
       - 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationState:member'
+      - 'excel!Excel.Interfaces.ApplicationLoadOptions#cultureInfo:member'
+      - 'excel!Excel.Interfaces.ApplicationLoadOptions#decimalSeparator:member'
       - 'excel!Excel.Interfaces.ApplicationLoadOptions#iterativeCalculation:member'
+      - 'excel!Excel.Interfaces.ApplicationLoadOptions#thousandsSeparator:member'
+      - 'excel!Excel.Interfaces.ApplicationLoadOptions#useSystemSeparators:member'
   - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#$all:member'
     summary: >-
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
@@ -33,7 +37,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationEngineVersion:member'
     summary: |-
-      Returns the Excel calculation engine version used for the last full recalculation. Read-only.
+      Returns the Excel calculation engine version used for the last full recalculation.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculationEngineVersion
@@ -68,7 +72,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#calculationState:member'
     summary: |-
-      Returns the calculation state of the application. See Excel.CalculationState for details. Read-only.
+      Returns the calculation state of the application. See Excel.CalculationState for details.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculationState
@@ -78,6 +82,38 @@ items:
     type: property
     syntax:
       content: 'calculationState?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#cultureInfo:member'
+    summary: >-
+      Provides information based on current system culture settings. This includes the culture names, number formatting,
+      and other culturally dependent settings.
+
+
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: cultureInfo
+    fullName: cultureInfo
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cultureInfo?: Excel.Interfaces.CultureInfoLoadOptions;'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#decimalSeparator:member'
+    summary: |-
+      Gets the string used as the decimal separator for numeric values. This is based on Excel's local settings.
+
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: decimalSeparator
+    fullName: decimalSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'decimalSeparator?: boolean;'
       return:
         type:
           - boolean
@@ -98,6 +134,42 @@ items:
       return:
         type:
           - 'excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#thousandsSeparator:member'
+    summary: >-
+      Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on
+      Excel's local settings.
+
+
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: thousandsSeparator
+    fullName: thousandsSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'thousandsSeparator?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Interfaces.ApplicationLoadOptions#useSystemSeparators:member'
+    summary: >-
+      Specifies if the system separators of Excel are enabled. System separators include the decimal separator and
+      thousands separator.
+
+
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: useSystemSeparators
+    fullName: useSystemSeparators
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useSystemSeparators?: boolean;'
+      return:
+        type:
+          - boolean
 references:
+  - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions:interface'
+    name: Excel.Interfaces.CultureInfoLoadOptions
   - uid: 'excel!Excel.Interfaces.IterativeCalculationLoadOptions:interface'
     name: Excel.Interfaces.IterativeCalculationLoadOptions

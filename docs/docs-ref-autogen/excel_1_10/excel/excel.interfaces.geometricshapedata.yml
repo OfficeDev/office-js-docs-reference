@@ -12,7 +12,7 @@ items:
       - 'excel!Excel.Interfaces.GeometricShapeData#id:member'
   - uid: 'excel!Excel.Interfaces.GeometricShapeData#id:member'
     summary: |-
-      Returns the shape identifier. Read-only.
+      Returns the shape identifier.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id

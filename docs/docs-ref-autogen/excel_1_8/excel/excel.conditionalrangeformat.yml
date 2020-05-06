@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ConditionalRangeFormat#borders:member'
@@ -27,7 +27,7 @@ items:
       - 'excel!Excel.ConditionalRangeFormat#toJSON:member(1)'
   - uid: 'excel!Excel.ConditionalRangeFormat#borders:member'
     summary: |-
-      Collection of border objects that apply to the overall conditional format range. Read-only.
+      Collection of border objects that apply to the overall conditional format range.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: borders
@@ -56,7 +56,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ConditionalRangeFormat#fill:member'
     summary: |-
-      Returns the fill object defined on the overall conditional format range. Read-only.
+      Returns the fill object defined on the overall conditional format range.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
@@ -71,7 +71,7 @@ items:
           - 'excel!Excel.ConditionalRangeFill:class'
   - uid: 'excel!Excel.ConditionalRangeFormat#font:member'
     summary: |-
-      Returns the font object defined on the overall conditional format range. Read-only.
+      Returns the font object defined on the overall conditional format range.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
@@ -198,7 +198,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.ConditionalRangeFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -236,7 +236,7 @@ items:
           - 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ConditionalRangeBorderCollection:class'
     name: Excel.ConditionalRangeBorderCollection
@@ -252,7 +252,7 @@ references:
     name: Excel.Interfaces.ConditionalRangeFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
     name: Interfaces.ConditionalRangeFormatUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
     name: Excel.Interfaces.ConditionalRangeFormatData

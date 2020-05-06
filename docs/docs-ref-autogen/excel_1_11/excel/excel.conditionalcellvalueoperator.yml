@@ -1,0 +1,86 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalCellValueOperator:enum'
+    summary: |-
+      Represents the operator of the text conditional format type.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalCellValueOperator
+    fullName: Excel.ConditionalCellValueOperator
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalCellValueOperator.between:member'
+      - 'excel!Excel.ConditionalCellValueOperator.equalTo:member'
+      - 'excel!Excel.ConditionalCellValueOperator.greaterThan:member'
+      - 'excel!Excel.ConditionalCellValueOperator.greaterThanOrEqual:member'
+      - 'excel!Excel.ConditionalCellValueOperator.invalid:member'
+      - 'excel!Excel.ConditionalCellValueOperator.lessThan:member'
+      - 'excel!Excel.ConditionalCellValueOperator.lessThanOrEqual:member'
+      - 'excel!Excel.ConditionalCellValueOperator.notBetween:member'
+      - 'excel!Excel.ConditionalCellValueOperator.notEqualTo:member'
+  - uid: 'excel!Excel.ConditionalCellValueOperator.between:member'
+    name: between
+    fullName: between
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Between"'
+  - uid: 'excel!Excel.ConditionalCellValueOperator.equalTo:member'
+    name: equalTo
+    fullName: equalTo
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EqualTo"'
+  - uid: 'excel!Excel.ConditionalCellValueOperator.greaterThan:member'
+    name: greaterThan
+    fullName: greaterThan
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GreaterThan"'
+  - uid: 'excel!Excel.ConditionalCellValueOperator.greaterThanOrEqual:member'
+    name: greaterThanOrEqual
+    fullName: greaterThanOrEqual
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GreaterThanOrEqual"'
+  - uid: 'excel!Excel.ConditionalCellValueOperator.invalid:member'
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: 'excel!Excel.ConditionalCellValueOperator.lessThan:member'
+    name: lessThan
+    fullName: lessThan
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LessThan"'
+  - uid: 'excel!Excel.ConditionalCellValueOperator.lessThanOrEqual:member'
+    name: lessThanOrEqual
+    fullName: lessThanOrEqual
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LessThanOrEqual"'
+  - uid: 'excel!Excel.ConditionalCellValueOperator.notBetween:member'
+    name: notBetween
+    fullName: notBetween
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NotBetween"'
+  - uid: 'excel!Excel.ConditionalCellValueOperator.notEqualTo:member'
+    name: notEqualTo
+    fullName: notEqualTo
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NotEqualTo"'

@@ -43,7 +43,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#autoText:member'
     summary: |-
-      Represents whether data labels automatically generate appropriate text based on context.
+      Specifies if data labels automatically generate appropriate text based on context.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoText
@@ -58,7 +58,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#format:member'
     summary: |-
-      Represents the format of chart data labels, which includes fill and font formatting.
+      Specifies the format of chart data labels, which includes fill and font formatting.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -73,7 +73,7 @@ items:
           - 'excel!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#horizontalAlignment:member'
     summary: >-
-      Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details. This
+      Specifies the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details. This
       property is valid only when TextOrientation of data label is 0.
 
 
@@ -90,7 +90,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#numberFormat:member'
     summary: |-
-      Represents the format code for data labels.
+      Specifies the format code for data labels.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
@@ -137,7 +137,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showBubbleSize:member'
     summary: |-
-      Boolean value representing if the data label bubble size is visible or not.
+      Specifies if the data label bubble size is visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showBubbleSize
@@ -152,7 +152,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showCategoryName:member'
     summary: |-
-      Boolean value representing if the data label category name is visible or not.
+      Specifies if the data label category name is visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showCategoryName
@@ -167,7 +167,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showLegendKey:member'
     summary: |-
-      Boolean value representing if the data label legend key is visible or not.
+      Specifies if the data label legend key is visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showLegendKey
@@ -182,7 +182,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showPercentage:member'
     summary: |-
-      Boolean value representing if the data label percentage is visible or not.
+      Specifies if the data label percentage is visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showPercentage
@@ -197,7 +197,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showSeriesName:member'
     summary: |-
-      Boolean value representing if the data label series name is visible or not.
+      Specifies if the data label series name is visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showSeriesName
@@ -212,7 +212,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions#showValue:member'
     summary: |-
-      Boolean value representing if the data label value is visible or not.
+      Specifies if the data label value is visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showValue

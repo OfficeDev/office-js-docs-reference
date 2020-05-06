@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartPlotAreaFormat#border:member'
@@ -25,7 +25,7 @@ items:
       - 'excel!Excel.ChartPlotAreaFormat#toJSON:member(1)'
   - uid: 'excel!Excel.ChartPlotAreaFormat#border:member'
     summary: |-
-      Represents the border attributes of a chart plotArea.
+      Specifies the border attributes of a chart plotArea.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
@@ -54,7 +54,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartPlotAreaFormat#fill:member'
     summary: |-
-      Represents the fill format of an object, which includes background formatting information.
+      Specifies the fill format of an object, which includes background formatting information.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
@@ -166,7 +166,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.ChartPlotAreaFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -204,7 +204,7 @@ items:
           - 'excel!Excel.Interfaces.ChartPlotAreaFormatData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ChartBorder:class'
     name: Excel.ChartBorder
@@ -218,7 +218,7 @@ references:
     name: Excel.Interfaces.ChartPlotAreaFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatUpdateData:interface'
     name: Interfaces.ChartPlotAreaFormatUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatData:interface'
     name: Excel.Interfaces.ChartPlotAreaFormatData

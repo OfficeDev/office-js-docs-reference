@@ -16,7 +16,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Range#address:member'
@@ -135,10 +135,8 @@ items:
       - 'excel!Excel.Range#width:member'
       - 'excel!Excel.Range#worksheet:member'
   - uid: 'excel!Excel.Range#address:member'
-    summary: >-
-      Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4").
-      Read-only.
-
+    summary: |-
+      Specifies the range reference in A1-style. Address value will contain the Sheet reference (e.g., "Sheet1!A1:B4").
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
@@ -153,7 +151,7 @@ items:
           - string
   - uid: 'excel!Excel.Range#addressLocal:member'
     summary: |-
-      Represents range reference for the specified range in the language of the user. Read-only.
+      Specifies the range reference for the specified range in the language of the user.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addressLocal
@@ -285,8 +283,10 @@ items:
           - void
         description: ''
   - uid: 'excel!Excel.Range#cellCount:member'
-    summary: |-
-      Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
+    summary: >-
+      Specifies the number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1
+      (2,147,483,647).
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cellCount
@@ -362,7 +362,7 @@ items:
             - '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
   - uid: 'excel!Excel.Range#columnCount:member'
     summary: |-
-      Represents the total number of columns in the range. Read-only.
+      Specifies the total number of columns in the range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnCount
@@ -392,7 +392,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Range#columnIndex:member'
     summary: |-
-      Represents the column number of the first cell in the range. Zero-indexed. Read-only.
+      Specifies the column number of the first cell in the range. Zero-indexed.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnIndex
@@ -407,7 +407,7 @@ items:
           - number
   - uid: 'excel!Excel.Range#conditionalFormats:member'
     summary: |-
-      Collection of ConditionalFormats that intersect the range. Read-only.
+      The collection of ConditionalFormats that intersect the range.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: conditionalFormats
@@ -794,10 +794,8 @@ items:
           - void
         description: ''
   - uid: 'excel!Excel.Range#format:member'
-    summary: >-
+    summary: |-
       Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
-      Read-only.
-
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -1549,13 +1547,10 @@ items:
           type:
             - number
   - uid: 'excel!Excel.Range#getPivotTables:member(1)'
-    summary: >-
+    summary: |-
       Gets a scoped collection of PivotTables that overlap with the range.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getPivotTables(fullyContained)
     fullName: getPivotTables(fullyContained)
     langs:
@@ -1887,7 +1882,7 @@ items:
   - uid: 'excel!Excel.Range#getSpillingToRange:member(1)'
     summary: >-
       Gets the range object containing the spill range when called on an anchor cell. Fails if applied to a range with
-      more than one cell. Read-only.
+      more than one cell.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -1906,8 +1901,8 @@ items:
         description: ''
   - uid: 'excel!Excel.Range#getSpillingToRangeOrNullObject:member(1)'
     summary: >-
-      Gets the range object containing the spill range when called on an anchor cell. Read-only. If the range is not an
-      anchor cell or spill range can't be found, a null object will be returned.
+      Gets the range object containing the spill range when called on an anchor cell. If the range is not an anchor cell
+      or spill range can't be found, a null object will be returned.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -1927,7 +1922,7 @@ items:
   - uid: 'excel!Excel.Range#getSpillParent:member(1)'
     summary: >-
       Gets the range object containing the anchor cell for a cell getting spilled into. Fails if applied to a range with
-      more than one cell. Read-only.
+      more than one cell.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -1946,8 +1941,8 @@ items:
         description: ''
   - uid: 'excel!Excel.Range#getSpillParentOrNullObject:member(1)'
     summary: >-
-      Gets the range object containing the anchor cell for a cell getting spilled into. Read-only. If it is not a spill
-      cell or more than once cells are give, a null object will be returned.
+      Gets the range object containing the anchor cell for a cell getting spilled into. If it is not a spill cell or
+      more than once cells are give, a null object will be returned.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -2269,7 +2264,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Range#height:member'
     summary: |-
-      Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
+      Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -2284,7 +2279,7 @@ items:
           - number
   - uid: 'excel!Excel.Range#hidden:member'
     summary: |-
-      Represents if all cells of the current range are hidden. Read-only.
+      Represents if all cells of the current range are hidden.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hidden
@@ -2458,7 +2453,7 @@ items:
             - '"Down" | "Right"'
   - uid: 'excel!Excel.Range#isEntireColumn:member'
     summary: |-
-      Represents if the current range is an entire column. Read-only.
+      Represents if the current range is an entire column.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireColumn
@@ -2473,7 +2468,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Range#isEntireRow:member'
     summary: |-
-      Represents if the current range is an entire row. Read-only.
+      Represents if the current range is an entire row.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireRow
@@ -2487,10 +2482,8 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Range#left:member'
-    summary: >-
+    summary: |-
       Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range.
-      Read-only.
-
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
@@ -2505,7 +2498,7 @@ items:
           - number
   - uid: 'excel!Excel.Range#linkedDataTypeState:member'
     summary: |-
-      Represents the data type state of each cell. Read-only.
+      Represents the data type state of each cell.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: linkedDataTypeState
@@ -2658,7 +2651,7 @@ items:
       range. Any cells in the destination range that are outside of the original range's area are not changed.
 
 
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: moveTo(destinationRange)
     fullName: moveTo(destinationRange)
     langs:
@@ -2741,7 +2734,7 @@ items:
           ```
   - uid: 'excel!Excel.Range#numberFormatCategories:member'
     summary: >-
-      Represents the category of number format of each cell. Read-only.
+      Represents the category of number format of each cell.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -2859,7 +2852,7 @@ items:
             - 'excel!Excel.ReplaceCriteria:interface'
   - uid: 'excel!Excel.Range#rowCount:member'
     summary: |-
-      Returns the total number of rows in the range. Read-only.
+      Returns the total number of rows in the range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowCount
@@ -2889,7 +2882,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Range#rowIndex:member'
     summary: |-
-      Returns the row number of the first cell in the range. Zero-indexed. Read-only.
+      Returns the row number of the first cell in the range. Zero-indexed.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowIndex
@@ -3038,7 +3031,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.Range#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -3285,7 +3278,7 @@ items:
             - '"ByRows" | "ByColumns"'
   - uid: 'excel!Excel.Range#sort:member'
     summary: |-
-      Represents the range sort of the current range. Read-only.
+      Represents the range sort of the current range.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sort
@@ -3380,7 +3373,7 @@ items:
   - uid: 'excel!Excel.Range#text:member'
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
-      that happens in Excel UI will not affect the text value returned by the API. Read-only.
+      that happens in Excel UI will not affect the text value returned by the API.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -3414,7 +3407,7 @@ items:
         description: ''
   - uid: 'excel!Excel.Range#top:member'
     summary: |-
-      Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
+      Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
@@ -3603,7 +3596,7 @@ items:
           - 'any[][]'
   - uid: 'excel!Excel.Range#valueTypes:member'
     summary: |-
-      Represents the type of data of each cell. Read-only.
+      Specifies the type of data in each cell.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valueTypes
@@ -3618,7 +3611,7 @@ items:
           - 'excel!Excel.Range#valueTypes~0:complex'
   - uid: 'excel!Excel.Range#width:member'
     summary: |-
-      Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
+      Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
@@ -3633,7 +3626,7 @@ items:
           - number
   - uid: 'excel!Excel.Range#worksheet:member'
     summary: |-
-      The worksheet containing the current range. Read-only.
+      The worksheet containing the current range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
@@ -3647,7 +3640,7 @@ items:
         type:
           - 'excel!Excel.Worksheet:class'
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.Range#autoFill~0:complex'
     name: Range | string
@@ -3728,7 +3721,7 @@ references:
     name: 'OfficeExtension.ClientResult<CellProperties[][]>'
     fullName: 'OfficeExtension.ClientResult<Excel.CellProperties[][]>'
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <
@@ -3744,7 +3737,7 @@ references:
     name: 'OfficeExtension.ClientResult<ColumnProperties[]>'
     fullName: 'OfficeExtension.ClientResult<Excel.ColumnProperties[]>'
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <
@@ -3760,7 +3753,7 @@ references:
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <string>
@@ -3789,7 +3782,7 @@ references:
     name: 'OfficeExtension.ClientResult<RowProperties[]>'
     fullName: 'OfficeExtension.ClientResult<Excel.RowProperties[]>'
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <
@@ -3852,7 +3845,7 @@ references:
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <number>
@@ -3861,7 +3854,7 @@ references:
     name: Excel.ReplaceCriteria
   - uid: 'excel!Excel.Interfaces.RangeUpdateData:interface'
     name: Interfaces.RangeUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Range#setCellProperties~0:complex'
     name: 'SettableCellProperties[][]'

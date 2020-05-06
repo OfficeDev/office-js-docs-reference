@@ -21,8 +21,7 @@ items:
       - 'excel!Excel.Interfaces.PivotTableData#useCustomSortLists:member'
   - uid: 'excel!Excel.Interfaces.PivotTableData#allowMultipleFiltersPerField:member'
     summary: >-
-      Specifies whether the PivotTable allows the application of multiple PivotFilters on a given PivotField in the
-      table.
+      Specifies if the PivotTable allows the application of multiple PivotFilters on a given PivotField in the table.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -70,7 +69,7 @@ items:
           - 'excel!Excel.Interfaces.PivotTableData#dataHierarchies~0:complex'
   - uid: 'excel!Excel.Interfaces.PivotTableData#enableDataValueEditing:member'
     summary: |-
-      Specifies whether the PivotTable allows values in the data body to be edited by the user.
+      Specifies if the PivotTable allows values in the data body to be edited by the user.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableDataValueEditing
@@ -115,7 +114,7 @@ items:
           - 'excel!Excel.Interfaces.PivotTableData#hierarchies~0:complex'
   - uid: 'excel!Excel.Interfaces.PivotTableData#id:member'
     summary: |-
-      Id of the PivotTable. Read-only.
+      Id of the PivotTable.
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -160,7 +159,7 @@ items:
           - 'excel!Excel.Interfaces.PivotTableData#rowHierarchies~0:complex'
   - uid: 'excel!Excel.Interfaces.PivotTableData#useCustomSortLists:member'
     summary: |-
-      Specifies whether the PivotTable uses custom lists when sorting.
+      Specifies if the PivotTable uses custom lists when sorting.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: useCustomSortLists

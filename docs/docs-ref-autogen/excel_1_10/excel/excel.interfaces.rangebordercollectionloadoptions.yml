@@ -35,7 +35,7 @@ items:
   - uid: 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions#color:member'
     summary: >-
       For EACH ITEM in the collection: HTML color code representing the color of the border line, of the form \#RRGGBB
-      (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+      (e.g., "FFA500") or as a named HTML color (e.g., "orange").
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -52,7 +52,7 @@ items:
   - uid: 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions#sideIndex:member'
     summary: >-
       For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See
-      Excel.BorderIndex for details. Read-only.
+      Excel.BorderIndex for details.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -85,9 +85,9 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions#tintAndShade:member'
     summary: >-
-      For EACH ITEM in the collection: Returns or sets a double that lightens or darkens a color for Range Border, the
-      value is between -1 (darkest) and 1 (brightest), with 0 for the original color. A null value indicates that the
-      border doesn't have uniform tintAndShade setting.
+      For EACH ITEM in the collection: Specifies a double that lightens or darkens a color for Range Border, the value
+      is between -1 (darkest) and 1 (brightest), with 0 for the original color. A null value indicates that the border
+      doesn't have uniform tintAndShade setting.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

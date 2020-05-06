@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.RangeBorder#color:member'
@@ -28,8 +28,8 @@ items:
       - 'excel!Excel.RangeBorder#weight:member'
   - uid: 'excel!Excel.RangeBorder#color:member'
     summary: >-
-      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange").
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g., "FFA500") or as a named
+      HTML color (e.g., "orange").
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -156,7 +156,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.RangeBorder#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -177,7 +177,7 @@ items:
             - 'excel!Excel.RangeBorder:class'
   - uid: 'excel!Excel.RangeBorder#sideIndex:member'
     summary: |-
-      Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
+      Constant value that indicates the specific side of the border. See Excel.BorderIndex for details.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sideIndex
@@ -238,8 +238,8 @@ items:
           ```
   - uid: 'excel!Excel.RangeBorder#tintAndShade:member'
     summary: >-
-      Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and
-      1 (brightest), with 0 for the original color. A null value indicates that the border doesn't have uniform
+      Specifies a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1
+      (brightest), with 0 for the original color. A null value indicates that the border doesn't have uniform
       tintAndShade setting.
 
 
@@ -288,7 +288,7 @@ items:
         type:
           - 'excel!Excel.RangeBorder#weight~0:complex'
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -298,7 +298,7 @@ references:
     name: Excel.Interfaces.RangeBorderLoadOptions
   - uid: 'excel!Excel.Interfaces.RangeBorderUpdateData:interface'
     name: Interfaces.RangeBorderUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.RangeBorder#sideIndex~0:complex'
     name: >-

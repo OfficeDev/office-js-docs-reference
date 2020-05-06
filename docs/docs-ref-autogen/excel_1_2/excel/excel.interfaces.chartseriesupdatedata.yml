@@ -28,7 +28,7 @@ items:
           - 'excel!Excel.Interfaces.ChartSeriesFormatUpdateData:interface'
   - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#name:member'
     summary: |-
-      Represents the name of a series in a chart.
+      Specifies the name of a series in a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name

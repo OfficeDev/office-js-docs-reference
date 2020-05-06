@@ -178,8 +178,6 @@ items:
       - 'excel!Excel.CultureInfo:class'
       - 'excel!Excel.CustomConditionalFormat:class'
       - 'excel!Excel.CustomDataValidation:interface'
-      - 'excel!Excel.CustomFunctionMetadataFormat:enum'
-      - 'excel!Excel.CustomFunctionType:enum'
       - 'excel!Excel.CustomProperty:class'
       - 'excel!Excel.CustomPropertyCollection:class'
       - 'excel!Excel.CustomXmlPart:class'
@@ -708,6 +706,7 @@ items:
       - 'excel!Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData:interface'
       - 'excel!Excel.Interfaces.WorksheetCustomPropertyData:interface'
       - 'excel!Excel.Interfaces.WorksheetCustomPropertyLoadOptions:interface'
+      - 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData:interface'
       - 'excel!Excel.Interfaces.WorksheetData:interface'
       - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
       - 'excel!Excel.Interfaces.WorksheetProtectionData:interface'
@@ -1039,7 +1038,7 @@ items:
             A previously-created API object. The batch will use the same RequestContext as the passed-in object, which
             means that any changes applied to the object will be picked up by "context.sync()".
           type:
-            - 'excel!OfficeExtension.ClientObject:class'
+            - 'office!OfficeExtension.ClientObject:class'
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise (typically, just the result of
@@ -1144,7 +1143,7 @@ items:
             A previously-created object. The batch will use the same RequestContext as the passed-in object, which means
             that any changes applied to the object will be picked up by "context.sync()".
           type:
-            - 'excel!OfficeExtension.ClientRequestContext:class'
+            - 'office!OfficeExtension.ClientRequestContext:class'
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise (typically, just the result of
@@ -1505,10 +1504,6 @@ references:
     name: Excel.CustomConditionalFormat
   - uid: 'excel!Excel.CustomDataValidation:interface'
     name: Excel.CustomDataValidation
-  - uid: 'excel!Excel.CustomFunctionMetadataFormat:enum'
-    name: Excel.CustomFunctionMetadataFormat
-  - uid: 'excel!Excel.CustomFunctionType:enum'
-    name: Excel.CustomFunctionType
   - uid: 'excel!Excel.CustomProperty:class'
     name: Excel.CustomProperty
   - uid: 'excel!Excel.CustomPropertyCollection:class'
@@ -2563,6 +2558,8 @@ references:
     name: Excel.Interfaces.WorksheetCustomPropertyData
   - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyLoadOptions:interface'
     name: Excel.Interfaces.WorksheetCustomPropertyLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyUpdateData:interface'
+    name: Excel.Interfaces.WorksheetCustomPropertyUpdateData
   - uid: 'excel!Excel.Interfaces.WorksheetData:interface'
     name: Excel.Interfaces.WorksheetData
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
@@ -2755,7 +2752,7 @@ references:
         fullName: Promise
       - name: <T>
         fullName: <T>
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.run~3:complex'
     name: '(context: Excel.RequestContext) => Promise<T>'
@@ -2786,7 +2783,7 @@ references:
     name: 'OfficeExtension.ClientObject[]'
     fullName: 'OfficeExtension.ClientObject[]'
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientObject:class'
+      - uid: 'office!OfficeExtension.ClientObject:class'
         name: OfficeExtension.ClientObject
         fullName: OfficeExtension.ClientObject
       - name: '[]'
@@ -2843,7 +2840,7 @@ references:
         fullName: Promise
       - name: <T>
         fullName: <T>
-  - uid: 'excel!OfficeExtension.ClientRequestContext:class'
+  - uid: 'office!OfficeExtension.ClientRequestContext:class'
     name: OfficeExtension.ClientRequestContext
   - uid: 'excel!Excel.run~10:complex'
     name: '(context: Excel.RequestContext) => Promise<T>'

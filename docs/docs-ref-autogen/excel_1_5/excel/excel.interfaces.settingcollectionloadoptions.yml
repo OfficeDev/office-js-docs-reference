@@ -33,7 +33,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.SettingCollectionLoadOptions#key:member'
     summary: |-
-      For EACH ITEM in the collection: Returns the key that represents the id of the Setting. Read-only.
+      For EACH ITEM in the collection: The key that represents the id of the Setting.
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: key

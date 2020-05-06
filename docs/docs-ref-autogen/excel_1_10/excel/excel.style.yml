@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Style#autoIndent:member'
@@ -47,7 +47,7 @@ items:
       - 'excel!Excel.Style#wrapText:member'
   - uid: 'excel!Excel.Style#autoIndent:member'
     summary: |-
-      Indicates if text is automatically indented when the text alignment in a cell is set to equal distribution.
+      Specifies if text is automatically indented when the text alignment in a cell is set to equal distribution.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoIndent
@@ -77,7 +77,7 @@ items:
           - 'excel!Excel.RangeBorderCollection:class'
   - uid: 'excel!Excel.Style#builtIn:member'
     summary: |-
-      Indicates if the style is a built-in style.
+      Specifies if the style is a built-in style.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: builtIn
@@ -202,7 +202,7 @@ items:
           ```
   - uid: 'excel!Excel.Style#formulaHidden:member'
     summary: |-
-      Indicates if the formula will be hidden when the worksheet is protected.
+      Specifies if the formula will be hidden when the worksheet is protected.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaHidden
@@ -258,7 +258,7 @@ items:
           ```
   - uid: 'excel!Excel.Style#includeAlignment:member'
     summary: >-
-      Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and
+      Specifies if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and
       TextOrientation properties.
 
 
@@ -275,7 +275,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Style#includeBorder:member'
     summary: |-
-      Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
+      Specifies if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: includeBorder
@@ -290,7 +290,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Style#includeFont:member'
     summary: >-
-      Indicates if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size,
+      Specifies if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size,
       Strikethrough, Subscript, Superscript, and Underline font properties.
 
 
@@ -307,7 +307,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Style#includeNumber:member'
     summary: |-
-      Indicates if the style includes the NumberFormat property.
+      Specifies if the style includes the NumberFormat property.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: includeNumber
@@ -322,7 +322,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Style#includePatterns:member'
     summary: >-
-      Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and
+      Specifies if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and
       PatternColorIndex interior properties.
 
 
@@ -339,7 +339,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Style#includeProtection:member'
     summary: |-
-      Indicates if the style includes the FormulaHidden and Locked protection properties.
+      Specifies if the style includes the FormulaHidden and Locked protection properties.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: includeProtection
@@ -466,7 +466,7 @@ items:
                       }
   - uid: 'excel!Excel.Style#locked:member'
     summary: |-
-      Indicates if the object is locked when the worksheet is protected.
+      Specifies if the object is locked when the worksheet is protected.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: locked
@@ -568,7 +568,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.Style#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -589,7 +589,7 @@ items:
             - 'excel!Excel.Style:class'
   - uid: 'excel!Excel.Style#shrinkToFit:member'
     summary: |-
-      Indicates if text automatically shrinks to fit in the available column width.
+      Specifies if text automatically shrinks to fit in the available column width.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shrinkToFit
@@ -637,7 +637,7 @@ items:
         description: ''
   - uid: 'excel!Excel.Style#verticalAlignment:member'
     summary: |-
-      Represents the vertical alignment for the style. See Excel.VerticalAlignment for details.
+      Specifies the vertical alignment for the style. See Excel.VerticalAlignment for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
@@ -652,7 +652,7 @@ items:
           - 'excel!Excel.Style#verticalAlignment~0:complex'
   - uid: 'excel!Excel.Style#wrapText:member'
     summary: |-
-      Indicates if Microsoft Excel wraps the text in the object.
+      Specifies if Excel wraps the text in the object.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: wrapText
@@ -666,7 +666,7 @@ items:
         type:
           - boolean
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RangeBorderCollection:class'
     name: Excel.RangeBorderCollection
@@ -704,7 +704,7 @@ references:
         fullName: ' | "Context" | "LeftToRight" | "RightToLeft"'
   - uid: 'excel!Excel.Interfaces.StyleUpdateData:interface'
     name: Interfaces.StyleUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.StyleData:interface'
     name: Excel.Interfaces.StyleData

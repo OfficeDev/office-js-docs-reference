@@ -6,9 +6,7 @@ items:
       and other culturally dependent settings.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.CultureInfoLoadOptions
     fullName: Excel.Interfaces.CultureInfoLoadOptions
     langs:
@@ -24,7 +22,6 @@ items:
     summary: >-
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
-    isPreview: true
     name: $all
     fullName: $all
     langs:
@@ -56,13 +53,11 @@ items:
           - 'excel!Excel.Interfaces.DatetimeFormatInfoLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions#name:member'
     summary: >-
-      Gets the culture name in the format languagecode2-country/regioncode2 (e.g. "zh-cn" or "en-us"). This is based on
+      Gets the culture name in the format languagecode2-country/regioncode2 (e.g., "zh-cn" or "en-us"). This is based on
       current system settings.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -74,13 +69,10 @@ items:
         type:
           - boolean
   - uid: 'excel!Excel.Interfaces.CultureInfoLoadOptions#numberFormat:member'
-    summary: >-
+    summary: |-
       Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.11](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
     fullName: numberFormat
     langs:

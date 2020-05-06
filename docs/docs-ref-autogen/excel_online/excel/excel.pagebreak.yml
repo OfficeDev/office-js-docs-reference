@@ -8,7 +8,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PageBreak#columnIndex:member'
@@ -22,7 +22,7 @@ items:
       - 'excel!Excel.PageBreak#toJSON:member(1)'
   - uid: 'excel!Excel.PageBreak#columnIndex:member'
     summary: |-
-      Represents the column index for the page break
+      Specifies the column index for the page break
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnIndex
@@ -153,7 +153,7 @@ items:
                       }
   - uid: 'excel!Excel.PageBreak#rowIndex:member'
     summary: |-
-      Represents the row index for the page break
+      Specifies the row index for the page break
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowIndex
@@ -185,7 +185,7 @@ items:
           - 'excel!Excel.Interfaces.PageBreakData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext

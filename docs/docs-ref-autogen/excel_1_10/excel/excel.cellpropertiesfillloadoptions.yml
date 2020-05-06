@@ -19,7 +19,7 @@ items:
       - 'excel!Excel.CellPropertiesFillLoadOptions#tintAndShade:member'
   - uid: 'excel!Excel.CellPropertiesFillLoadOptions#color:member'
     summary: |-
-      Specifies whether to load on the `color` property.
+      Specifies whether to load the `color` property.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
@@ -70,7 +70,7 @@ items:
           ```
   - uid: 'excel!Excel.CellPropertiesFillLoadOptions#pattern:member'
     summary: |-
-      Specifies whether to load on the `pattern` property.
+      Specifies whether to load the `pattern` property.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pattern
@@ -85,7 +85,7 @@ items:
           - boolean
   - uid: 'excel!Excel.CellPropertiesFillLoadOptions#patternColor:member'
     summary: |-
-      Specifies whether to load on the `patternColor` property.
+      Specifies whether to load the `patternColor` property.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: patternColor
@@ -100,7 +100,7 @@ items:
           - boolean
   - uid: 'excel!Excel.CellPropertiesFillLoadOptions#patternTintAndShade:member'
     summary: |-
-      Specifies whether to load on the `patternTintAndShade` property.
+      Specifies whether to load the `patternTintAndShade` property.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: patternTintAndShade
@@ -115,7 +115,7 @@ items:
           - boolean
   - uid: 'excel!Excel.CellPropertiesFillLoadOptions#tintAndShade:member'
     summary: |-
-      Specifies whether to load on the `tintAndShade` property.
+      Specifies whether to load the `tintAndShade` property.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tintAndShade

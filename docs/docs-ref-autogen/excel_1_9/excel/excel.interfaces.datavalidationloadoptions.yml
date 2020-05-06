@@ -53,7 +53,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.DataValidationLoadOptions#ignoreBlanks:member'
     summary: |-
-      Ignore blanks: no data validation will be performed on blank cells, it defaults to true.
+      Specifies if data validation will be performed on blank cells, it defaults to true.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: ignoreBlanks

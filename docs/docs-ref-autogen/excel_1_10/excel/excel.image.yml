@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Image#context:member'
@@ -38,7 +38,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.Image#format:member'
     summary: |-
-      Returns the format of the image. Read-only.
+      Returns the format of the image.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -75,7 +75,7 @@ items:
           ```
   - uid: 'excel!Excel.Image#id:member'
     summary: |-
-      Represents the shape identifier for the image object. Read-only.
+      Specifies the shape identifier for the image object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -160,7 +160,7 @@ items:
                       }
   - uid: 'excel!Excel.Image#shape:member'
     summary: |-
-      Returns the Shape object associated with the image. Read-only.
+      Returns the Shape object associated with the image.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shape
@@ -192,7 +192,7 @@ items:
           - 'excel!Excel.Interfaces.ImageData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext

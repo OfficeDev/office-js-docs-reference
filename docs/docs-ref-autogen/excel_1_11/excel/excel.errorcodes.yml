@@ -1,0 +1,154 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ErrorCodes:enum'
+    name: Excel.ErrorCodes
+    fullName: Excel.ErrorCodes
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.ErrorCodes.accessDenied:member'
+      - 'excel!Excel.ErrorCodes.apiNotFound:member'
+      - 'excel!Excel.ErrorCodes.conflict:member'
+      - 'excel!Excel.ErrorCodes.generalException:member'
+      - 'excel!Excel.ErrorCodes.insertDeleteConflict:member'
+      - 'excel!Excel.ErrorCodes.invalidArgument:member'
+      - 'excel!Excel.ErrorCodes.invalidBinding:member'
+      - 'excel!Excel.ErrorCodes.invalidOperation:member'
+      - 'excel!Excel.ErrorCodes.invalidOperationInCellEditMode:member'
+      - 'excel!Excel.ErrorCodes.invalidReference:member'
+      - 'excel!Excel.ErrorCodes.invalidSelection:member'
+      - 'excel!Excel.ErrorCodes.itemAlreadyExists:member'
+      - 'excel!Excel.ErrorCodes.itemNotFound:member'
+      - 'excel!Excel.ErrorCodes.nonBlankCellOffSheet:member'
+      - 'excel!Excel.ErrorCodes.notImplemented:member'
+      - 'excel!Excel.ErrorCodes.rangeExceedsLimit:member'
+      - 'excel!Excel.ErrorCodes.requestAborted:member'
+      - 'excel!Excel.ErrorCodes.unsupportedOperation:member'
+  - uid: 'excel!Excel.ErrorCodes.accessDenied:member'
+    name: accessDenied
+    fullName: accessDenied
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AccessDenied"'
+  - uid: 'excel!Excel.ErrorCodes.apiNotFound:member'
+    name: apiNotFound
+    fullName: apiNotFound
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ApiNotFound"'
+  - uid: 'excel!Excel.ErrorCodes.conflict:member'
+    name: conflict
+    fullName: conflict
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Conflict"'
+  - uid: 'excel!Excel.ErrorCodes.generalException:member'
+    name: generalException
+    fullName: generalException
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GeneralException"'
+  - uid: 'excel!Excel.ErrorCodes.insertDeleteConflict:member'
+    name: insertDeleteConflict
+    fullName: insertDeleteConflict
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InsertDeleteConflict"'
+  - uid: 'excel!Excel.ErrorCodes.invalidArgument:member'
+    name: invalidArgument
+    fullName: invalidArgument
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidArgument"'
+  - uid: 'excel!Excel.ErrorCodes.invalidBinding:member'
+    name: invalidBinding
+    fullName: invalidBinding
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidBinding"'
+  - uid: 'excel!Excel.ErrorCodes.invalidOperation:member'
+    name: invalidOperation
+    fullName: invalidOperation
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidOperation"'
+  - uid: 'excel!Excel.ErrorCodes.invalidOperationInCellEditMode:member'
+    name: invalidOperationInCellEditMode
+    fullName: invalidOperationInCellEditMode
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidOperationInCellEditMode"'
+  - uid: 'excel!Excel.ErrorCodes.invalidReference:member'
+    name: invalidReference
+    fullName: invalidReference
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidReference"'
+  - uid: 'excel!Excel.ErrorCodes.invalidSelection:member'
+    name: invalidSelection
+    fullName: invalidSelection
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidSelection"'
+  - uid: 'excel!Excel.ErrorCodes.itemAlreadyExists:member'
+    name: itemAlreadyExists
+    fullName: itemAlreadyExists
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ItemAlreadyExists"'
+  - uid: 'excel!Excel.ErrorCodes.itemNotFound:member'
+    name: itemNotFound
+    fullName: itemNotFound
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ItemNotFound"'
+  - uid: 'excel!Excel.ErrorCodes.nonBlankCellOffSheet:member'
+    name: nonBlankCellOffSheet
+    fullName: nonBlankCellOffSheet
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NonBlankCellOffSheet"'
+  - uid: 'excel!Excel.ErrorCodes.notImplemented:member'
+    name: notImplemented
+    fullName: notImplemented
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NotImplemented"'
+  - uid: 'excel!Excel.ErrorCodes.rangeExceedsLimit:member'
+    name: rangeExceedsLimit
+    fullName: rangeExceedsLimit
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RangeExceedsLimit"'
+  - uid: 'excel!Excel.ErrorCodes.requestAborted:member'
+    name: requestAborted
+    fullName: requestAborted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RequestAborted"'
+  - uid: 'excel!Excel.ErrorCodes.unsupportedOperation:member'
+    name: unsupportedOperation
+    fullName: unsupportedOperation
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UnsupportedOperation"'

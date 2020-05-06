@@ -8,7 +8,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.HeaderFooter#centerFooter:member'
@@ -26,8 +26,8 @@ items:
       - 'excel!Excel.HeaderFooter#toJSON:member(1)'
   - uid: 'excel!Excel.HeaderFooter#centerFooter:member'
     summary: >-
-      Gets or sets the center footer of the worksheet. To apply font formatting or insert a variable value, use format
-      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+      The center footer of the worksheet. To apply font formatting or insert a variable value, use format codes
+      specified here: https://msdn.microsoft.com/library/bb225426.aspx.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -43,8 +43,8 @@ items:
           - string
   - uid: 'excel!Excel.HeaderFooter#centerHeader:member'
     summary: >-
-      Gets or sets the center header of the worksheet. To apply font formatting or insert a variable value, use format
-      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+      The center header of the worksheet. To apply font formatting or insert a variable value, use format codes
+      specified here: https://msdn.microsoft.com/library/bb225426.aspx.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -74,8 +74,8 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.HeaderFooter#leftFooter:member'
     summary: >-
-      Gets or sets the left footer of the worksheet. To apply font formatting or insert a variable value, use format
-      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+      The left footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified
+      here: https://msdn.microsoft.com/library/bb225426.aspx.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -91,8 +91,8 @@ items:
           - string
   - uid: 'excel!Excel.HeaderFooter#leftHeader:member'
     summary: >-
-      Gets or sets the left header of the worksheet. To apply font formatting or insert a variable value, use format
-      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+      The left header of the worksheet. To apply font formatting or insert a variable value, use format codes specified
+      here: https://msdn.microsoft.com/library/bb225426.aspx.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -178,8 +178,8 @@ items:
                       }
   - uid: 'excel!Excel.HeaderFooter#rightFooter:member'
     summary: >-
-      Gets or sets the right footer of the worksheet. To apply font formatting or insert a variable value, use format
-      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+      The right footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified
+      here: https://msdn.microsoft.com/library/bb225426.aspx.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -195,8 +195,8 @@ items:
           - string
   - uid: 'excel!Excel.HeaderFooter#rightHeader:member'
     summary: >-
-      Gets or sets the right header of the worksheet. To apply font formatting or insert a variable value, use format
-      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+      The right header of the worksheet. To apply font formatting or insert a variable value, use format codes specified
+      here: https://msdn.microsoft.com/library/bb225426.aspx.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -239,7 +239,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.HeaderFooter#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -277,7 +277,7 @@ items:
           - 'excel!Excel.Interfaces.HeaderFooterData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -287,7 +287,7 @@ references:
     name: Excel.Interfaces.HeaderFooterLoadOptions
   - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData:interface'
     name: Interfaces.HeaderFooterUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.HeaderFooterData:interface'
     name: Excel.Interfaces.HeaderFooterData

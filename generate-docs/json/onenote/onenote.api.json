@@ -40,7 +40,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -379,7 +379,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "onenote!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -456,7 +456,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "onenote!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -814,7 +814,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -1173,7 +1173,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -1248,7 +1248,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "onenote!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -1585,7 +1585,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "onenote!OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -1868,7 +1868,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -2115,7 +2115,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "onenote!OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -2306,7 +2306,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -2553,7 +2553,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "onenote!OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -2771,7 +2771,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -3067,7 +3067,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "onenote!OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -3207,7 +3207,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -3481,7 +3481,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "onenote!OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -3672,7 +3672,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -3968,7 +3968,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "onenote!OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -4108,7 +4108,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -4381,7 +4381,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "onenote!OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -4629,7 +4629,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -4925,7 +4925,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "onenote!OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -5065,7 +5065,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -5397,7 +5397,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -5693,7 +5693,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "onenote!OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -5899,7 +5899,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -6283,7 +6283,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -6579,7 +6579,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "onenote!OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -17786,7 +17786,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -17977,7 +17977,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "onenote!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -18372,7 +18372,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -18713,7 +18713,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "onenote!OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -18853,7 +18853,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -20966,7 +20966,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -21280,7 +21280,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "onenote!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -21597,7 +21597,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -21694,7 +21694,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "onenote!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -21969,7 +21969,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "onenote!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -22002,7 +22002,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "onenote!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -22407,7 +22407,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "onenote!OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -22650,7 +22650,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -22991,7 +22991,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "onenote!OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -23131,7 +23131,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -23513,7 +23513,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "onenote!OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -23761,7 +23761,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -24057,7 +24057,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "onenote!OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -24296,7 +24296,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -24495,7 +24495,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "onenote!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -25553,7 +25553,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "onenote!OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -25802,7 +25802,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -26098,7 +26098,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "onenote!OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -26484,7 +26484,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientRequestContext",
-                  "canonicalReference": "onenote!OfficeExtension.ClientRequestContext:class"
+                  "canonicalReference": "office!OfficeExtension.ClientRequestContext:class"
                 },
                 {
                   "kind": "Content",
@@ -26570,7 +26570,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -26619,7 +26619,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "onenote!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -27066,7 +27066,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -27161,7 +27161,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -27260,7 +27260,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -27472,7 +27472,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "onenote!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -28094,7 +28094,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -28435,7 +28435,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "onenote!OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -28575,7 +28575,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -28740,7 +28740,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.ClientResult",
-                      "canonicalReference": "onenote!OfficeExtension.ClientResult:class"
+                      "canonicalReference": "office!OfficeExtension.ClientResult:class"
                     },
                     {
                       "kind": "Content",
@@ -29190,7 +29190,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -29531,7 +29531,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "onenote!OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -29671,7 +29671,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -30319,7 +30319,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "onenote!OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -30554,7 +30554,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -31147,7 +31147,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.UpdateOptions",
-                      "canonicalReference": "onenote!OfficeExtension.UpdateOptions:interface"
+                      "canonicalReference": "office!OfficeExtension.UpdateOptions:interface"
                     },
                     {
                       "kind": "Content",
@@ -31364,7 +31364,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -31660,7 +31660,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "onenote!OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",
@@ -31800,7 +31800,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -32404,7 +32404,7 @@
                 {
                   "kind": "Reference",
                   "text": "OfficeExtension.ClientObject",
-                  "canonicalReference": "onenote!OfficeExtension.ClientObject:class"
+                  "canonicalReference": "office!OfficeExtension.ClientObject:class"
                 },
                 {
                   "kind": "Content",
@@ -32700,7 +32700,7 @@
                     {
                       "kind": "Reference",
                       "text": "OfficeExtension.LoadOption",
-                      "canonicalReference": "onenote!OfficeExtension.LoadOption:interface"
+                      "canonicalReference": "office!OfficeExtension.LoadOption:interface"
                     },
                     {
                       "kind": "Content",

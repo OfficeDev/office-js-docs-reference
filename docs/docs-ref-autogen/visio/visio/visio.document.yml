@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'visio!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: visio!
     children:
       - 'visio!Visio.Document#application:member'
@@ -330,7 +330,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'visio!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'visio!Visio.Document#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -453,7 +453,7 @@ items:
         type:
           - 'visio!Visio.DocumentView:class'
 references:
-  - uid: 'visio!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'visio!Visio.Application:class'
     name: Visio.Application
@@ -469,7 +469,7 @@ references:
     name: OfficeExtension.EventHandlers<Visio.DataRefreshCompleteEventArgs>
     fullName: OfficeExtension.EventHandlers<Visio.DataRefreshCompleteEventArgs>
     spec.typeScript:
-      - uid: 'visio!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -483,7 +483,7 @@ references:
     name: OfficeExtension.EventHandlers<Visio.DocumentLoadCompleteEventArgs>
     fullName: OfficeExtension.EventHandlers<Visio.DocumentLoadCompleteEventArgs>
     spec.typeScript:
-      - uid: 'visio!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -497,7 +497,7 @@ references:
     name: OfficeExtension.EventHandlers<Visio.PageLoadCompleteEventArgs>
     fullName: OfficeExtension.EventHandlers<Visio.PageLoadCompleteEventArgs>
     spec.typeScript:
-      - uid: 'visio!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -511,7 +511,7 @@ references:
     name: OfficeExtension.EventHandlers<Visio.SelectionChangedEventArgs>
     fullName: OfficeExtension.EventHandlers<Visio.SelectionChangedEventArgs>
     spec.typeScript:
-      - uid: 'visio!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -525,7 +525,7 @@ references:
     name: OfficeExtension.EventHandlers<Visio.ShapeMouseEnterEventArgs>
     fullName: OfficeExtension.EventHandlers<Visio.ShapeMouseEnterEventArgs>
     spec.typeScript:
-      - uid: 'visio!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -539,7 +539,7 @@ references:
     name: OfficeExtension.EventHandlers<Visio.ShapeMouseLeaveEventArgs>
     fullName: OfficeExtension.EventHandlers<Visio.ShapeMouseLeaveEventArgs>
     spec.typeScript:
-      - uid: 'visio!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -553,7 +553,7 @@ references:
     name: Visio.PageCollection
   - uid: 'visio!Visio.Interfaces.DocumentUpdateData:interface'
     name: Interfaces.DocumentUpdateData
-  - uid: 'visio!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'visio!Visio.Interfaces.DocumentData:interface'
     name: Visio.Interfaces.DocumentData

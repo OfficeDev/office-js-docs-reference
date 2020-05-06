@@ -65,7 +65,7 @@ items:
           - 'excel!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.StyleLoadOptions#builtIn:member'
     summary: |-
-      Indicates if the style is a built-in style.
+      Specifies if the style is a built-in style.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: builtIn
@@ -110,7 +110,7 @@ items:
           - 'excel!Excel.Interfaces.RangeFontLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.StyleLoadOptions#formulaHidden:member'
     summary: |-
-      Indicates if the formula will be hidden when the worksheet is protected.
+      Specifies if the formula will be hidden when the worksheet is protected.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaHidden
@@ -140,7 +140,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleLoadOptions#includeAlignment:member'
     summary: >-
-      Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and
+      Specifies if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and
       TextOrientation properties.
 
 
@@ -157,7 +157,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleLoadOptions#includeBorder:member'
     summary: |-
-      Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
+      Specifies if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: includeBorder
@@ -172,7 +172,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleLoadOptions#includeFont:member'
     summary: >-
-      Indicates if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size,
+      Specifies if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size,
       Strikethrough, Subscript, Superscript, and Underline font properties.
 
 
@@ -189,7 +189,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleLoadOptions#includeNumber:member'
     summary: |-
-      Indicates if the style includes the NumberFormat property.
+      Specifies if the style includes the NumberFormat property.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: includeNumber
@@ -204,7 +204,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleLoadOptions#includePatterns:member'
     summary: >-
-      Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and
+      Specifies if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and
       PatternColorIndex interior properties.
 
 
@@ -221,7 +221,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleLoadOptions#includeProtection:member'
     summary: |-
-      Indicates if the style includes the FormulaHidden and Locked protection properties.
+      Specifies if the style includes the FormulaHidden and Locked protection properties.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: includeProtection
@@ -251,7 +251,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleLoadOptions#locked:member'
     summary: |-
-      Indicates if the object is locked when the worksheet is protected.
+      Specifies if the object is locked when the worksheet is protected.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: locked
@@ -326,7 +326,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleLoadOptions#shrinkToFit:member'
     summary: |-
-      Indicates if text automatically shrinks to fit in the available column width.
+      Specifies if text automatically shrinks to fit in the available column width.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shrinkToFit
@@ -341,7 +341,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleLoadOptions#verticalAlignment:member'
     summary: |-
-      Represents the vertical alignment for the style. See Excel.VerticalAlignment for details.
+      Specifies the vertical alignment for the style. See Excel.VerticalAlignment for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
@@ -356,7 +356,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.StyleLoadOptions#wrapText:member'
     summary: |-
-      Indicates if Microsoft Excel wraps the text in the object.
+      Specifies if Excel wraps the text in the object.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: wrapText

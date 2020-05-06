@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartMapOptions#context:member'
@@ -40,7 +40,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartMapOptions#labelStrategy:member'
     summary: |-
-      Returns or sets the series map labels strategy of a region map chart. Read/Write.
+      Specifies the series map labels strategy of a region map chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: labelStrategy
@@ -55,7 +55,7 @@ items:
           - 'excel!Excel.ChartMapOptions#labelStrategy~0:complex'
   - uid: 'excel!Excel.ChartMapOptions#level:member'
     summary: |-
-      Returns or sets the series mapping level of a region map chart. Read/Write.
+      Specifies the series mapping level of a region map chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: level
@@ -142,7 +142,7 @@ items:
                       }
   - uid: 'excel!Excel.ChartMapOptions#projectionType:member'
     summary: |-
-      Returns or sets the series projection type of a region map chart. Read/Write.
+      Specifies the series projection type of a region map chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: projectionType
@@ -184,7 +184,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.ChartMapOptions#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -222,7 +222,7 @@ items:
           - 'excel!Excel.Interfaces.ChartMapOptionsData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -263,7 +263,7 @@ references:
         fullName: ' | "Automatic" | "Mercator" | "Miller" | "Robinson" | "Albers"'
   - uid: 'excel!Excel.Interfaces.ChartMapOptionsUpdateData:interface'
     name: Interfaces.ChartMapOptionsUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartMapOptionsData:interface'
     name: Excel.Interfaces.ChartMapOptionsData

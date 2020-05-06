@@ -29,7 +29,7 @@ items:
           - 'excel!Excel.Interfaces.DataValidationUpdateData:interface'
   - uid: 'excel!Excel.Interfaces.RangeAreasUpdateData#format:member'
     summary: >-
-      Returns a rangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all
+      Returns a RangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all
       ranges in the RangeAreas object.
 
 

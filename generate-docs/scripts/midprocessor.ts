@@ -4,7 +4,7 @@ import * as path from "path";
 import yaml = require('js-yaml');
 import * as colors from 'colors';
 
-const CURRENT_EXCEL_RELEASE = 10;
+const CURRENT_EXCEL_RELEASE = 11;
 const OLDEST_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
 const CURRENT_OUTLOOK_RELEASE = 8;
 const CURRENT_WORD_RELEASE = 3;
@@ -33,10 +33,67 @@ tryCatch(async () => {
         console.log(`\nStarting outlook_1_${i}...`);
         outlookJson = fsx.readFileSync(`${outlookJsonPath}_1_${i}/${outlookFilename}`).toString();
         fsx.writeFileSync(`${outlookJsonPath}_1_${i}/${outlookFilename}`, cleanUpOutlookJson(outlookJson));
-        console.log(`\Completed outlook_1_${i}`);
+        console.log(`Completed outlook_1_${i}`);
     }
 
     console.log("\nCompleted Outlook json cross-referencing cleanup");
+
+    console.log("\nCleaning up Excel json cross-referencing...");
+
+    const excelJsonPath = path.resolve("../json/excel");
+    const excelFilename = "excel.api.json";
+    console.log("\nStarting excel...");
+    let excelJson = fsx.readFileSync(`${excelJsonPath}/${excelFilename}`).toString();
+    fsx.writeFileSync(`${excelJsonPath}/${excelFilename}`, cleanUpRichApiJson(excelJson));
+    excelJson = fsx.readFileSync(`${excelJsonPath}_online/${excelFilename}`).toString();
+    fsx.writeFileSync(`${excelJsonPath}_online/${excelFilename}`, cleanUpRichApiJson(excelJson));
+    console.log("Completed excel");
+    for (let i = CURRENT_EXCEL_RELEASE; i > 0; i--) {
+        console.log(`\nStarting excel${i}...`);
+        excelJson = fsx.readFileSync(`${excelJsonPath}_1_${i}/${excelFilename}`).toString();
+        fsx.writeFileSync(`${excelJsonPath}_1_${i}/${excelFilename}`, cleanUpRichApiJson(excelJson));
+        console.log(`Completed excel${i}`);
+    }
+
+    console.log("\nCompleted Excel json cross-referencing cleanup");
+
+    console.log("\nCleaning up Word json cross-referencing...");
+
+    const wordJsonPath = path.resolve("../json/word");
+    const wordFilename = "word.api.json";
+    console.log("\nStarting word...");
+    let wordJson = fsx.readFileSync(`${wordJsonPath}/${wordFilename}`).toString();
+    fsx.writeFileSync(`${wordJsonPath}/${wordFilename}`, cleanUpRichApiJson(wordJson));
+    console.log("Completed word");
+    for (let i = CURRENT_WORD_RELEASE; i > 0; i--) {
+        console.log(`\nStarting word_1_${i}...`);
+        wordJson = fsx.readFileSync(`${wordJsonPath}_1_${i}/${wordFilename}`).toString();
+        fsx.writeFileSync(`${wordJsonPath}_1_${i}/${wordFilename}`, cleanUpRichApiJson(wordJson));
+        console.log(`Completed word_1_${i}`);
+    }
+
+    console.log("\nCompleted Word json cross-referencing cleanup");
+
+    console.log("\nCleaning up Visio json cross-referencing...");
+
+    const visioJsonPath = path.resolve("../json/visio");
+    const visioFilename = "visio.api.json";
+    console.log("\nStarting visio...");
+    let visioJson = fsx.readFileSync(`${visioJsonPath}/${visioFilename}`).toString();
+    fsx.writeFileSync(`${visioJsonPath}/${visioFilename}`, cleanUpRichApiJson(visioJson));
+    console.log("Completed visio");
+
+    console.log("\nCompleted Visio json cross-referencing cleanup");
+
+    console.log("\nCleaning up OneNote json cross-referencing...");
+
+    const onenoteJsonPath = path.resolve("../json/onenote");
+    const onenoteFilename = "onenote.api.json";
+    console.log("\nStarting onenote...");
+    let onenoteJson = fsx.readFileSync(`${onenoteJsonPath}/${onenoteFilename}`).toString();
+    fsx.writeFileSync(`${onenoteJsonPath}/${onenoteFilename}`, cleanUpRichApiJson(onenoteJson));
+    console.log("Completed onenote");
+    console.log("\nCompleted OneNote json cross-referencing cleanup");
 
     // ----
     // Process Snippets
@@ -211,6 +268,10 @@ function cleanUpOutlookJson(jsonString : string) {
         startSearchIndex = jsonString.indexOf(commonApiSearchString, outlookIndex + 8);
     } while (startSearchIndex >= 0);
     return jsonString;
+}
+
+function cleanUpRichApiJson(jsonString : string) {
+    return jsonString.replace(/(excel|word|visio|onenote)\!OfficeExtension/g, "office!OfficeExtension");
 }
 
 async function tryCatch(call: () => Promise<void>) {

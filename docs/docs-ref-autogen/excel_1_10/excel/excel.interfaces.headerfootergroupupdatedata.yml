@@ -80,7 +80,7 @@ items:
           - 'excel!Excel.Interfaces.HeaderFooterUpdateData:interface'
   - uid: 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData#state:member'
     summary: |-
-      Gets or sets the state of which headers/footers are set. See Excel.HeaderFooterState for details.
+      The state by which headers/footers are set. See Excel.HeaderFooterState for details.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: state

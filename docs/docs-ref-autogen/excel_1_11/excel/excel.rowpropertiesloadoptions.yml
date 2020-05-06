@@ -1,0 +1,91 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RowPropertiesLoadOptions:interface'
+    summary: |-
+      Represents which row properties to load, when used as part of a "range.getRowProperties" method.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.RowPropertiesLoadOptions
+    fullName: Excel.RowPropertiesLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'excel!Excel.CellPropertiesLoadOptions:interface'
+    package: excel!
+    children:
+      - 'excel!Excel.RowPropertiesLoadOptions#format:member'
+      - 'excel!Excel.RowPropertiesLoadOptions#rowHidden:member'
+      - 'excel!Excel.RowPropertiesLoadOptions#rowIndex:member'
+  - uid: 'excel!Excel.RowPropertiesLoadOptions#format:member'
+    summary: |-
+      Specifies whether to load on the `format` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        format?: Excel.CellPropertiesFormatLoadOptions & {
+                    rowHeight?: boolean;
+                };
+      return:
+        type:
+          - 'excel!Excel.RowPropertiesLoadOptions#format~0:complex'
+  - uid: 'excel!Excel.RowPropertiesLoadOptions#rowHidden:member'
+    summary: |-
+      Specifies whether to load on the `rowHidden` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowHidden
+    fullName: rowHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowHidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.RowPropertiesLoadOptions#rowIndex:member'
+    summary: |-
+      Specifies whether to load on the `rowIndex` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowIndex
+    fullName: rowIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowIndex?: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.CellPropertiesLoadOptions:interface'
+    name: CellPropertiesLoadOptions
+  - uid: 'excel!Excel.RowPropertiesLoadOptions#format~0:complex'
+    name: |-
+      Excel.CellPropertiesFormatLoadOptions & {
+                  rowHeight?: boolean;
+              }
+    fullName: |-
+      Excel.CellPropertiesFormatLoadOptions & {
+                  rowHeight?: boolean;
+              }
+    spec.typeScript:
+      - uid: 'excel!Excel.CellPropertiesFormatLoadOptions:interface'
+        name: Excel.CellPropertiesFormatLoadOptions
+        fullName: Excel.CellPropertiesFormatLoadOptions
+      - name: |2-
+           & {
+                      rowHeight?: boolean;
+                  }
+        fullName: |2-
+           & {
+                      rowHeight?: boolean;
+                  }

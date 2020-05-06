@@ -23,7 +23,7 @@ items:
       - 'excel!Excel.Interfaces.RangeFormatData#wrapText:member'
   - uid: 'excel!Excel.Interfaces.RangeFormatData#borders:member'
     summary: |-
-      Collection of border objects that apply to the overall range. Read-only.
+      Collection of border objects that apply to the overall range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: borders
@@ -37,10 +37,8 @@ items:
         type:
           - 'excel!Excel.Interfaces.RangeFormatData#borders~0:complex'
   - uid: 'excel!Excel.Interfaces.RangeFormatData#columnWidth:member'
-    summary: >-
-      Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be
-      returned.
-
+    summary: |-
+      Specifies the width of all colums within the range. If the column widths are not uniform, null will be returned.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnWidth
@@ -55,7 +53,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.RangeFormatData#fill:member'
     summary: |-
-      Returns the fill object defined on the overall range. Read-only.
+      Returns the fill object defined on the overall range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
@@ -70,7 +68,7 @@ items:
           - 'excel!Excel.Interfaces.RangeFillData:interface'
   - uid: 'excel!Excel.Interfaces.RangeFormatData#font:member'
     summary: |-
-      Returns the font object defined on the overall range. Read-only.
+      Returns the font object defined on the overall range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
@@ -102,7 +100,7 @@ items:
           - 'excel!Excel.Interfaces.RangeFormatData#horizontalAlignment~0:complex'
   - uid: 'excel!Excel.Interfaces.RangeFormatData#protection:member'
     summary: |-
-      Returns the format protection object for a range. Read-only.
+      Returns the format protection object for a range.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protection
@@ -117,7 +115,7 @@ items:
           - 'excel!Excel.Interfaces.FormatProtectionData:interface'
   - uid: 'excel!Excel.Interfaces.RangeFormatData#rowHeight:member'
     summary: |-
-      Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
+      The height of all rows in the range. If the row heights are not uniform, null will be returned.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowHeight
@@ -132,9 +130,9 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.RangeFormatData#textOrientation:member'
     summary: >-
-      Gets or sets the text orientation of all the cells within the range. The text orientation should be an integer
-      either from -90 to 90, or 180 for vertically-oriented text. If the orientation within a range are not uniform,
-      then null will be returned.
+      The text orientation of all the cells within the range. The text orientation should be an integer either from -90
+      to 90, or 180 for vertically-oriented text. If the orientation within a range are not uniform, then null will be
+      returned.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -168,7 +166,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeFormatData#useStandardWidth:member'
     summary: >-
-      Indicates whether the column width of the Range object equals the standard width of the sheet. Returns True if the
+      Specifies if the column width of the Range object equals the standard width of the sheet. Returns True if the
       column width of the Range object equals the standard width of the sheet. Returns Null if the range contains more
       than one column and the columns aren't all the same height. Returns False otherwise.
 
@@ -201,7 +199,7 @@ items:
           - 'excel!Excel.Interfaces.RangeFormatData#verticalAlignment~0:complex'
   - uid: 'excel!Excel.Interfaces.RangeFormatData#wrapText:member'
     summary: >-
-      Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
+      Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
       wrap setting
 
 

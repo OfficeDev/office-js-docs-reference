@@ -12,7 +12,7 @@ items:
       - 'excel!Excel.Interfaces.CommentUpdateData#content:member'
   - uid: 'excel!Excel.Interfaces.CommentUpdateData#content:member'
     summary: |-
-      Gets or sets the comment's content. The string is plain text.
+      The comment's content. The string is plain text.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: content

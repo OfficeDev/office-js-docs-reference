@@ -14,7 +14,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ConditionalFormat#cellValue:member'
@@ -51,7 +51,7 @@ items:
   - uid: 'excel!Excel.ConditionalFormat#cellValue:member'
     summary: >-
       Returns the cell value conditional format properties if the current conditional format is a CellValue type. For
-      example to format all cells between 5 and 10. Read-only.
+      example to format all cells between 5 and 10.
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -91,7 +91,7 @@ items:
   - uid: 'excel!Excel.ConditionalFormat#cellValueOrNullObject:member'
     summary: >-
       Returns the cell value conditional format properties if the current conditional format is a CellValue type. For
-      example to format all cells between 5 and 10. Read-only.
+      example to format all cells between 5 and 10.
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -106,10 +106,8 @@ items:
         type:
           - 'excel!Excel.CellValueConditionalFormat:class'
   - uid: 'excel!Excel.ConditionalFormat#colorScale:member'
-    summary: >-
+    summary: |-
       Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
-      Read-only.
-
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: colorScale
@@ -150,10 +148,8 @@ items:
 
           ```
   - uid: 'excel!Excel.ConditionalFormat#colorScaleOrNullObject:member'
-    summary: >-
+    summary: |-
       Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
-      Read-only.
-
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: colorScaleOrNullObject
@@ -182,7 +178,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ConditionalFormat#custom:member'
     summary: |-
-      Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
+      Returns the custom conditional format properties if the current conditional format is a custom type.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: custom
@@ -219,7 +215,7 @@ items:
           ```
   - uid: 'excel!Excel.ConditionalFormat#customOrNullObject:member'
     summary: |-
-      Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
+      Returns the custom conditional format properties if the current conditional format is a custom type.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: customOrNullObject
@@ -234,7 +230,7 @@ items:
           - 'excel!Excel.CustomConditionalFormat:class'
   - uid: 'excel!Excel.ConditionalFormat#dataBar:member'
     summary: |-
-      Returns the data bar properties if the current conditional format is a data bar. Read-only.
+      Returns the data bar properties if the current conditional format is a data bar.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataBar
@@ -271,7 +267,7 @@ items:
           ```
   - uid: 'excel!Excel.ConditionalFormat#dataBarOrNullObject:member'
     summary: |-
-      Returns the data bar properties if the current conditional format is a data bar. Read-only.
+      Returns the data bar properties if the current conditional format is a data bar.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataBarOrNullObject
@@ -303,7 +299,7 @@ items:
   - uid: 'excel!Excel.ConditionalFormat#getRange:member(1)'
     summary: >-
       Returns the range the conditonal format is applied to. Throws an error if the conditional format is applied to
-      multiple ranges. Read-only.
+      multiple ranges.
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -358,7 +354,7 @@ items:
   - uid: 'excel!Excel.ConditionalFormat#getRangeOrNullObject:member(1)'
     summary: >-
       Returns the range the conditonal format is applied to, or a null object if the conditional format is applied to
-      multiple ranges. Read-only.
+      multiple ranges.
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -375,7 +371,7 @@ items:
         description: ''
   - uid: 'excel!Excel.ConditionalFormat#getRanges:member(1)'
     summary: |-
-      Returns the RangeAreas, comprising one or more rectangular ranges, the conditonal format is applied to. Read-only.
+      Returns the RangeAreas, comprising one or more rectangular ranges, the conditonal format is applied to.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRanges()
@@ -391,7 +387,7 @@ items:
         description: ''
   - uid: 'excel!Excel.ConditionalFormat#iconSet:member'
     summary: |-
-      Returns the IconSet conditional format properties if the current conditional format is an IconSet type. Read-only.
+      Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: iconSet
@@ -457,7 +453,7 @@ items:
           ```
   - uid: 'excel!Excel.ConditionalFormat#iconSetOrNullObject:member'
     summary: |-
-      Returns the IconSet conditional format properties if the current conditional format is an IconSet type. Read-only.
+      Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: iconSetOrNullObject
@@ -472,7 +468,7 @@ items:
           - 'excel!Excel.IconSetConditionalFormat:class'
   - uid: 'excel!Excel.ConditionalFormat#id:member'
     summary: |-
-      The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only.
+      The Priority of the Conditional Format within the current ConditionalFormatCollection.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -614,7 +610,7 @@ items:
       Changing this also changes other conditional formats' priorities, to allow for a contiguous priority order. Use a
       negative priority to begin from the back. Priorities greater than than bounds will get and set to the maximum (or
       minimum if negative) priority. Also note that if you change the priority, you have to re-fetch a new copy of the
-      object at that new priority location if you want to make further changes to it. Read-only.
+      object at that new priority location if you want to make further changes to it.
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -657,7 +653,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.ConditionalFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -696,7 +692,7 @@ items:
   - uid: 'excel!Excel.ConditionalFormat#textComparison:member'
     summary: >-
       Returns the specific text conditional format properties if the current conditional format is a text type. For
-      example to format cells matching the word "Text". Read-only.
+      example to format cells matching the word "Text".
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -736,7 +732,7 @@ items:
   - uid: 'excel!Excel.ConditionalFormat#textComparisonOrNullObject:member'
     summary: >-
       Returns the specific text conditional format properties if the current conditional format is a text type. For
-      example to format cells matching the word "Text". Read-only.
+      example to format cells matching the word "Text".
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -771,7 +767,7 @@ items:
   - uid: 'excel!Excel.ConditionalFormat#topBottom:member'
     summary: >-
       Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type. For
-      example to format the top 10% or bottom 10 items. Read-only.
+      example to format the top 10% or bottom 10 items.
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -788,7 +784,7 @@ items:
   - uid: 'excel!Excel.ConditionalFormat#topBottomOrNullObject:member'
     summary: >-
       Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type. For
-      example to format the top 10% or bottom 10 items. Read-only.
+      example to format the top 10% or bottom 10 items.
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -804,7 +800,7 @@ items:
           - 'excel!Excel.TopBottomConditionalFormat:class'
   - uid: 'excel!Excel.ConditionalFormat#type:member'
     summary: |-
-      A type of conditional format. Only one can be set at a time. Read-only.
+      A type of conditional format. Only one can be set at a time.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
@@ -858,7 +854,7 @@ items:
 
           ```
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.CellValueConditionalFormat:class'
     name: Excel.CellValueConditionalFormat
@@ -884,7 +880,7 @@ references:
     name: Excel.PresetCriteriaConditionalFormat
   - uid: 'excel!Excel.Interfaces.ConditionalFormatUpdateData:interface'
     name: Interfaces.ConditionalFormatUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.TextConditionalFormat:class'
     name: Excel.TextConditionalFormat

@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'onenote!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: onenote!
     children:
       - 'onenote!OneNote.Paragraph#addNoteTag:member(1)'
@@ -882,7 +882,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'onenote!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'onenote!OneNote.Paragraph#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -985,7 +985,7 @@ items:
           - 'onenote!OneNote.Paragraph:class'
         description: ''
 references:
-  - uid: 'onenote!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'onenote!OneNote.NoteTag:class'
     name: OneNote.NoteTag
@@ -999,7 +999,7 @@ references:
     name: OfficeExtension.ClientResult<OneNote.ParagraphInfo>
     fullName: OfficeExtension.ClientResult<OneNote.ParagraphInfo>
     spec.typeScript:
-      - uid: 'onenote!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <
@@ -1031,7 +1031,7 @@ references:
     name: OneNote.TableCell
   - uid: 'onenote!OneNote.Interfaces.ParagraphUpdateData:interface'
     name: Interfaces.ParagraphUpdateData
-  - uid: 'onenote!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'onenote!OneNote.Interfaces.ParagraphData:interface'
     name: OneNote.Interfaces.ParagraphData

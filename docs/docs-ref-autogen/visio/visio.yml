@@ -219,7 +219,7 @@ items:
             having a new context created). This means that the batch will be able to pick up changes made to existing
             API objects, if those objects were derived from this same context.
           type:
-            - 'visio!OfficeExtension.ClientRequestContext:class'
+            - 'office!OfficeExtension.ClientRequestContext:class'
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise (typically, just the result of
@@ -403,12 +403,12 @@ references:
     name: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession
     fullName: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession
     spec.typeScript:
-      - uid: 'visio!OfficeExtension.ClientObject:class'
+      - uid: 'office!OfficeExtension.ClientObject:class'
         name: OfficeExtension.ClientObject
         fullName: OfficeExtension.ClientObject
       - name: ' | '
         fullName: ' | '
-      - uid: 'visio!OfficeExtension.EmbeddedSession:class'
+      - uid: 'office!OfficeExtension.EmbeddedSession:class'
         name: OfficeExtension.EmbeddedSession
         fullName: OfficeExtension.EmbeddedSession
   - uid: 'visio!Visio.run~4:complex'
@@ -440,7 +440,7 @@ references:
     name: 'OfficeExtension.ClientObject[]'
     fullName: 'OfficeExtension.ClientObject[]'
     spec.typeScript:
-      - uid: 'visio!OfficeExtension.ClientObject:class'
+      - uid: 'office!OfficeExtension.ClientObject:class'
         name: OfficeExtension.ClientObject
         fullName: OfficeExtension.ClientObject
       - name: '[]'
@@ -470,7 +470,7 @@ references:
         fullName: Promise
       - name: <T>
         fullName: <T>
-  - uid: 'visio!OfficeExtension.ClientRequestContext:class'
+  - uid: 'office!OfficeExtension.ClientRequestContext:class'
     name: OfficeExtension.ClientRequestContext
   - uid: 'visio!Visio.run~9:complex'
     name: '(context: Visio.RequestContext) => Promise<T>'

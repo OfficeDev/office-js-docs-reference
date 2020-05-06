@@ -11,10 +11,11 @@ items:
     children:
       - 'excel!Excel.Interfaces.ChartAxisTitleData#format:member'
       - 'excel!Excel.Interfaces.ChartAxisTitleData#text:member'
+      - 'excel!Excel.Interfaces.ChartAxisTitleData#textOrientation:member'
       - 'excel!Excel.Interfaces.ChartAxisTitleData#visible:member'
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleData#format:member'
     summary: |-
-      Represents the formatting of chart axis title. Read-only.
+      Specifies the formatting of chart axis title.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -29,7 +30,7 @@ items:
           - 'excel!Excel.Interfaces.ChartAxisTitleFormatData:interface'
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleData#text:member'
     summary: |-
-      Represents the axis title.
+      Specifies the axis title.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
@@ -42,9 +43,26 @@ items:
       return:
         type:
           - string
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleData#textOrientation:member'
+    summary: >-
+      Specifies the angle to which the text is oriented for the chart axis title. The value should either be an integer
+      from -90 to 90 or the integer 180 for vertically-oriented text.
+
+
+      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textOrientation
+    fullName: textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation?: number;'
+      return:
+        type:
+          - number
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleData#visible:member'
     summary: |-
-      A boolean that specifies the visibility of an axis title.
+      Specifies if the axis title is visibile.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible

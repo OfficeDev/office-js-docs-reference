@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartFill#clear:member(1)'
@@ -109,8 +109,8 @@ items:
       parameters:
         - id: color
           description: >-
-            HTML color code representing the color of the background, of the form \#RRGGBB (e.g. "FFA500") or as a named
-            HTML color (e.g. "orange").
+            HTML color code representing the color of the background, of the form \#RRGGBB (e.g., "FFA500") or as a
+            named HTML color (e.g., "orange").
           type:
             - string
   - uid: 'excel!Excel.ChartFill#toJSON:member(1)'
@@ -138,7 +138,7 @@ items:
                     }
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext

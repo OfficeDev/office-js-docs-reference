@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartBinOptions#allowOverflow:member'
@@ -30,7 +30,7 @@ items:
       - 'excel!Excel.ChartBinOptions#width:member'
   - uid: 'excel!Excel.ChartBinOptions#allowOverflow:member'
     summary: |-
-      Specifies whether or not the bin overflow is enabled in a histogram chart or pareto chart. Read/Write.
+      Specifies if bin overflow is enabled in a histogram chart or pareto chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowOverflow
@@ -45,7 +45,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartBinOptions#allowUnderflow:member'
     summary: |-
-      Specifies whether or not the bin underflow is enabled in a histogram chart or pareto chart. Read/Write.
+      Specifies if bin underflow is enabled in a histogram chart or pareto chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowUnderflow
@@ -74,7 +74,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartBinOptions#count:member'
     summary: |-
-      Returns or sets the bin count of a histogram chart or pareto chart. Read/Write.
+      Specifies the bin count of a histogram chart or pareto chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
@@ -159,7 +159,7 @@ items:
                       }
   - uid: 'excel!Excel.ChartBinOptions#overflowValue:member'
     summary: |-
-      Returns or sets the bin overflow value of a histogram chart or pareto chart. Read/Write.
+      Specifies the bin overflow value of a histogram chart or pareto chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overflowValue
@@ -201,7 +201,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.ChartBinOptions#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -240,7 +240,7 @@ items:
         description: ''
   - uid: 'excel!Excel.ChartBinOptions#type:member'
     summary: |-
-      Returns or sets the bin's type for a histogram chart or pareto chart. Read/Write.
+      Specifies the bin's type for a histogram chart or pareto chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
@@ -255,7 +255,7 @@ items:
           - 'excel!Excel.ChartBinOptions#type~0:complex'
   - uid: 'excel!Excel.ChartBinOptions#underflowValue:member'
     summary: |-
-      Returns or sets the bin underflow value of a histogram chart or pareto chart. Read/Write.
+      Specifies the bin underflow value of a histogram chart or pareto chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: underflowValue
@@ -270,7 +270,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartBinOptions#width:member'
     summary: |-
-      Returns or sets the bin width value of a histogram chart or pareto chart. Read/Write.
+      Specifies the bin width value of a histogram chart or pareto chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
@@ -284,7 +284,7 @@ items:
         type:
           - number
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -294,7 +294,7 @@ references:
     name: Excel.Interfaces.ChartBinOptionsLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartBinOptionsUpdateData:interface'
     name: Interfaces.ChartBinOptionsUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartBinOptionsData:interface'
     name: Excel.Interfaces.ChartBinOptionsData

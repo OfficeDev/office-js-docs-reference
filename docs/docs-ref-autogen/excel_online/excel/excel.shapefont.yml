@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ShapeFont#bold:member'
@@ -44,8 +44,8 @@ items:
           - boolean
   - uid: 'excel!Excel.ShapeFont#color:member'
     summary: >-
-      The HTML color code representation of the text color (e.g. "\#FF0000" represents red). Returns null if the
-      TextRange includes text fragments with different colors.
+      HTML color code representation of the text color (e.g., "\#FF0000" represents red). Returns null if the TextRange
+      includes text fragments with different colors.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -162,7 +162,7 @@ items:
                       }
   - uid: 'excel!Excel.ShapeFont#name:member'
     summary: >-
-      Represents font name (e.g. "Calibri"). If the text is Complex Script or East Asian language, this is the
+      Represents font name (e.g., "Calibri"). If the text is Complex Script or East Asian language, this is the
       corresponding font name; otherwise it is the Latin font name.
 
 
@@ -206,7 +206,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.ShapeFont#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -227,7 +227,7 @@ items:
             - 'excel!Excel.ShapeFont:class'
   - uid: 'excel!Excel.ShapeFont#size:member'
     summary: >-
-      Represents font size in points (e.g. 11). Returns null if the TextRange includes text fragments with different
+      Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different
       font sizes.
 
 
@@ -281,7 +281,7 @@ items:
         type:
           - 'excel!Excel.ShapeFont#underline~0:complex'
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -291,7 +291,7 @@ references:
     name: Excel.Interfaces.ShapeFontLoadOptions
   - uid: 'excel!Excel.Interfaces.ShapeFontUpdateData:interface'
     name: Interfaces.ShapeFontUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ShapeFontData:interface'
     name: Excel.Interfaces.ShapeFontData

@@ -11,10 +11,9 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
-      - 'excel!Excel.RangeFormat#adjustIndent:member(1)'
       - 'excel!Excel.RangeFormat#autofitColumns:member(1)'
       - 'excel!Excel.RangeFormat#autofitRows:member(1)'
       - 'excel!Excel.RangeFormat#borders:member'
@@ -33,32 +32,6 @@ items:
       - 'excel!Excel.RangeFormat#toJSON:member(1)'
       - 'excel!Excel.RangeFormat#verticalAlignment:member'
       - 'excel!Excel.RangeFormat#wrapText:member'
-  - uid: 'excel!Excel.RangeFormat#adjustIndent:member(1)'
-    summary: >-
-      Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in
-      characters.
-
-
-      \[ [API set: ExcelApiOnline 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: adjustIndent(amount)
-    fullName: adjustIndent(amount)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'adjustIndent(amount: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: amount
-          description: >-
-            The number of character spaces by which the current indent is adjusted. This value should be between -250
-            and 250. *Note**: If the amount would raise the indent level above 250, the indent level stays with 250.
-            Similarly, if the amount would lower the indent level below 0, the indent level stays 0.
-          type:
-            - number
   - uid: 'excel!Excel.RangeFormat#autofitColumns:member(1)'
     summary: >-
       Changes the width of the columns of the current range to achieve the best fit, based on the current data in the
@@ -97,7 +70,7 @@ items:
         description: ''
   - uid: 'excel!Excel.RangeFormat#borders:member'
     summary: |-
-      Collection of border objects that apply to the overall range. Read-only.
+      Collection of border objects that apply to the overall range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: borders
@@ -111,10 +84,8 @@ items:
         type:
           - 'excel!Excel.RangeBorderCollection:class'
   - uid: 'excel!Excel.RangeFormat#columnWidth:member'
-    summary: >-
-      Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be
-      returned.
-
+    summary: |-
+      Specifies the width of all colums within the range. If the column widths are not uniform, null will be returned.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnWidth
@@ -143,7 +114,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.RangeFormat#fill:member'
     summary: |-
-      Returns the fill object defined on the overall range. Read-only.
+      Returns the fill object defined on the overall range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
@@ -158,7 +129,7 @@ items:
           - 'excel!Excel.RangeFill:class'
   - uid: 'excel!Excel.RangeFormat#font:member'
     summary: |-
-      Returns the font object defined on the overall range. Read-only.
+      Returns the font object defined on the overall range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
@@ -321,7 +292,7 @@ items:
                       }
   - uid: 'excel!Excel.RangeFormat#protection:member'
     summary: |-
-      Returns the format protection object for a range. Read-only.
+      Returns the format protection object for a range.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protection
@@ -336,7 +307,7 @@ items:
           - 'excel!Excel.FormatProtection:class'
   - uid: 'excel!Excel.RangeFormat#rowHeight:member'
     summary: |-
-      Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
+      The height of all rows in the range. If the row heights are not uniform, null will be returned.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowHeight
@@ -378,7 +349,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.RangeFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -432,7 +403,7 @@ items:
           - 'excel!Excel.RangeFormat#verticalAlignment~0:complex'
   - uid: 'excel!Excel.RangeFormat#wrapText:member'
     summary: >-
-      Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
+      Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
       wrap setting
 
 
@@ -448,7 +419,7 @@ items:
         type:
           - boolean
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RangeBorderCollection:class'
     name: Excel.RangeBorderCollection
@@ -479,7 +450,7 @@ references:
     name: Excel.FormatProtection
   - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData:interface'
     name: Interfaces.RangeFormatUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.RangeFormatData:interface'
     name: Excel.Interfaces.RangeFormatData

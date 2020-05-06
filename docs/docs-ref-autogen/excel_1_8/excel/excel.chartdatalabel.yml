@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartDataLabel#autoText:member'
@@ -43,7 +43,7 @@ items:
       - 'excel!Excel.ChartDataLabel#width:member'
   - uid: 'excel!Excel.ChartDataLabel#autoText:member'
     summary: |-
-      Boolean value representing if data label automatically generates appropriate text based on context.
+      Specifies if the data label automatically generates appropriate text based on context.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoText
@@ -102,7 +102,7 @@ items:
           - string
   - uid: 'excel!Excel.ChartDataLabel#height:member'
     summary: |-
-      Returns the height, in points, of the chart data label. Read-only. Null if chart data label is not visible.
+      Returns the height, in points, of the chart data label. Null if chart data label is not visible.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -299,7 +299,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.ChartDataLabel#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -320,7 +320,7 @@ items:
             - 'excel!Excel.ChartDataLabel:class'
   - uid: 'excel!Excel.ChartDataLabel#showBubbleSize:member'
     summary: |-
-      Boolean value representing if the data label bubble size is visible or not.
+      Specifies if the data label bubble size is visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showBubbleSize
@@ -335,7 +335,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartDataLabel#showCategoryName:member'
     summary: |-
-      Boolean value representing if the data label category name is visible or not.
+      Specifies if the data label category name is visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showCategoryName
@@ -350,7 +350,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartDataLabel#showLegendKey:member'
     summary: |-
-      Boolean value representing if the data label legend key is visible or not.
+      Specifies if the data label legend key is visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showLegendKey
@@ -365,7 +365,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartDataLabel#showPercentage:member'
     summary: |-
-      Boolean value representing if the data label percentage is visible or not.
+      Specifies if the data label percentage is visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showPercentage
@@ -380,7 +380,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartDataLabel#showSeriesName:member'
     summary: |-
-      Boolean value representing if the data label series name is visible or not.
+      Specifies if the data label series name is visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showSeriesName
@@ -395,7 +395,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartDataLabel#showValue:member'
     summary: |-
-      Boolean value representing if the data label value is visible or not.
+      Specifies if the data label value is visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showValue
@@ -494,7 +494,7 @@ items:
           - 'excel!Excel.ChartDataLabel#verticalAlignment~0:complex'
   - uid: 'excel!Excel.ChartDataLabel#width:member'
     summary: |-
-      Returns the width, in points, of the chart data label. Read-only. Null if chart data label is not visible.
+      Returns the width, in points, of the chart data label. Null if chart data label is not visible.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
@@ -508,7 +508,7 @@ items:
         type:
           - number
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -542,7 +542,7 @@ references:
         fullName: ' | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"'
   - uid: 'excel!Excel.Interfaces.ChartDataLabelUpdateData:interface'
     name: Interfaces.ChartDataLabelUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartDataLabelData:interface'
     name: Excel.Interfaces.ChartDataLabelData

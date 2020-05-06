@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.RangeFont#bold:member'
@@ -48,7 +48,7 @@ items:
           - boolean
   - uid: 'excel!Excel.RangeFont#color:member'
     summary: |-
-      HTML color code representation of the text color. E.g. \#FF0000 represents Red.
+      HTML color code representation of the text color (e.g., \#FF0000 represents Red).
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
@@ -77,7 +77,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.RangeFont#italic:member'
     summary: |-
-      Represents the italic status of the font.
+      Specifies the italic status of the font.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: italic
@@ -199,7 +199,7 @@ items:
                       }
   - uid: 'excel!Excel.RangeFont#name:member'
     summary: |-
-      Font name (e.g. "Calibri")
+      Font name (e.g., "Calibri")
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -241,7 +241,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.RangeFont#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -277,7 +277,7 @@ items:
           - number
   - uid: 'excel!Excel.RangeFont#strikethrough:member'
     summary: >-
-      Represents the strikethrough status of font. A null value indicates that the entire range doesn't have uniform
+      Specifies the strikethrough status of font. A null value indicates that the entire range doesn't have uniform
       Strikethrough setting.
 
 
@@ -294,9 +294,8 @@ items:
           - boolean
   - uid: 'excel!Excel.RangeFont#subscript:member'
     summary: >-
-      Represents the Subscript status of font. Returns True if all the fonts of the range are Subscript. Returns False
-      if all the fonts of the range are Superscript or normal (neither Superscript, nor Subscript). Returns Null
-      otherwise.
+      Specifies the Subscript status of font. Returns True if all the fonts of the range are Subscript. Returns False if
+      all the fonts of the range are Superscript or normal (neither Superscript, nor Subscript). Returns Null otherwise.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -312,7 +311,7 @@ items:
           - boolean
   - uid: 'excel!Excel.RangeFont#superscript:member'
     summary: >-
-      Represents the Superscript status of font. Returns True if all the fonts of the range are Superscript. Returns
+      Specifies the Superscript status of font. Returns True if all the fonts of the range are Superscript. Returns
       False if all the fonts of the range are Subscript or normal (neither Superscript, nor Subscript). Returns Null
       otherwise.
 
@@ -330,7 +329,7 @@ items:
           - boolean
   - uid: 'excel!Excel.RangeFont#tintAndShade:member'
     summary: >-
-      Returns or sets a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1
+      Specifies a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1
       (brightest), with 0 for the original color. A null value indicates that the entire range doesn't have uniform font
       tintAndShade setting.
 
@@ -380,7 +379,7 @@ items:
         type:
           - 'excel!Excel.RangeFont#underline~0:complex'
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -390,7 +389,7 @@ references:
     name: Excel.Interfaces.RangeFontLoadOptions
   - uid: 'excel!Excel.Interfaces.RangeFontUpdateData:interface'
     name: Interfaces.RangeFontUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.RangeFontData:interface'
     name: Excel.Interfaces.RangeFontData

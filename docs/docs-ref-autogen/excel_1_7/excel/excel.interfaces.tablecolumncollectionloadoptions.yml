@@ -49,7 +49,7 @@ items:
           - 'excel!Excel.Interfaces.FilterLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#id:member'
     summary: |-
-      For EACH ITEM in the collection: Returns a unique key that identifies the column within the table. Read-only.
+      For EACH ITEM in the collection: Returns a unique key that identifies the column within the table.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -65,7 +65,7 @@ items:
   - uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#index:member'
     summary: >-
       For EACH ITEM in the collection: Returns the index number of the column within the columns collection of the
-      table. Zero-indexed. Read-only.
+      table. Zero-indexed.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -81,7 +81,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions#name:member'
     summary: >-
-      For EACH ITEM in the collection: Represents the name of the table column.
+      For EACH ITEM in the collection: Specifies the name of the table column.
 
 
       \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting

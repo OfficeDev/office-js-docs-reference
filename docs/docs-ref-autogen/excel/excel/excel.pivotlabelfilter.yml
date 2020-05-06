@@ -43,7 +43,7 @@ items:
           - string
   - uid: 'excel!Excel.PivotLabelFilter#condition:member'
     summary: >-
-      Indicates the condition for the filter, which defines the necessary filtering criteria.
+      Specifies the condition for the filter, which defines the necessary filtering criteria.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

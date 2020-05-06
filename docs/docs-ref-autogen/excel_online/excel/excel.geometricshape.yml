@@ -13,7 +13,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.GeometricShape#context:member'
@@ -39,7 +39,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.GeometricShape#id:member'
     summary: |-
-      Returns the shape identifier. Read-only.
+      Returns the shape identifier.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -124,7 +124,7 @@ items:
                       }
   - uid: 'excel!Excel.GeometricShape#shape:member'
     summary: |-
-      Returns the Shape object for the geometric shape. Read-only.
+      Returns the Shape object for the geometric shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shape
@@ -156,7 +156,7 @@ items:
           - 'excel!Excel.Interfaces.GeometricShapeData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext

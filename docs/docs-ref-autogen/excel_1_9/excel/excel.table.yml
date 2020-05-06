@@ -13,7 +13,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Table#autoFilter:member'
@@ -51,7 +51,7 @@ items:
       - 'excel!Excel.Table#worksheet:member'
   - uid: 'excel!Excel.Table#autoFilter:member'
     summary: |-
-      Represents the AutoFilter object of the table. Read-Only.
+      Represents the AutoFilter object of the table.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoFilter
@@ -82,7 +82,7 @@ items:
         description: ''
   - uid: 'excel!Excel.Table#columns:member'
     summary: |-
-      Represents a collection of all the columns in the table. Read-only.
+      Represents a collection of all the columns in the table.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columns
@@ -321,7 +321,7 @@ items:
           ```
   - uid: 'excel!Excel.Table#highlightFirstColumn:member'
     summary: |-
-      Indicates whether the first column contains special formatting.
+      Specifies if the first column contains special formatting.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: highlightFirstColumn
@@ -336,7 +336,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Table#highlightLastColumn:member'
     summary: |-
-      Indicates whether the last column contains special formatting.
+      Specifies if the last column contains special formatting.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: highlightLastColumn
@@ -352,7 +352,7 @@ items:
   - uid: 'excel!Excel.Table#id:member'
     summary: >-
       Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the
-      same even when the table is renamed. Read-only.
+      same even when the table is renamed.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -595,7 +595,7 @@ items:
         description: ''
   - uid: 'excel!Excel.Table#rows:member'
     summary: |-
-      Represents a collection of all the rows in the table. Read-only.
+      Represents a collection of all the rows in the table.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rows
@@ -637,7 +637,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.Table#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -658,8 +658,8 @@ items:
             - 'excel!Excel.Table:class'
   - uid: 'excel!Excel.Table#showBandedColumns:member'
     summary: >-
-      Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even
-      ones to make reading the table easier.
+      Specifies if the columns show banded formatting in which odd columns are highlighted differently from even ones to
+      make reading the table easier.
 
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -675,8 +675,8 @@ items:
           - boolean
   - uid: 'excel!Excel.Table#showBandedRows:member'
     summary: >-
-      Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to
-      make reading the table easier.
+      Specifies if the rows show banded formatting in which odd rows are highlighted differently from even ones to make
+      reading the table easier.
 
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -692,8 +692,8 @@ items:
           - boolean
   - uid: 'excel!Excel.Table#showFilterButton:member'
     summary: >-
-      Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if
-      the table contains a header row.
+      Specifies if the filter buttons are visible at the top of each column header. Setting this is only allowed if the
+      table contains a header row.
 
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -709,7 +709,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Table#showHeaders:member'
     summary: |-
-      Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
+      Specifies if the header row is visible. This value can be set to show or remove the header row.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showHeaders
@@ -724,7 +724,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Table#showTotals:member'
     summary: |-
-      Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
+      Specifies if the total row is visible. This value can be set to show or remove the total row.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showTotals
@@ -739,7 +739,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Table#sort:member'
     summary: |-
-      Represents the sorting for the table. Read-only.
+      Represents the sorting for the table.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: sort
@@ -814,7 +814,7 @@ items:
         description: ''
   - uid: 'excel!Excel.Table#worksheet:member'
     summary: |-
-      The worksheet containing the current table. Read-only.
+      The worksheet containing the current table.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
@@ -828,7 +828,7 @@ items:
         type:
           - 'excel!Excel.Worksheet:class'
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.AutoFilter:class'
     name: Excel.AutoFilter
@@ -846,7 +846,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -860,7 +860,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.TableSelectionChangedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.TableSelectionChangedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -874,7 +874,7 @@ references:
     name: Excel.TableRowCollection
   - uid: 'excel!Excel.Interfaces.TableUpdateData:interface'
     name: Interfaces.TableUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.TableSort:class'
     name: Excel.TableSort

@@ -27,7 +27,7 @@ items:
       - 'excel!Excel.Interfaces.RangeFormatUpdateData#wrapText:member'
   - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData#autoIndent:member'
     summary: |-
-      Indicates if text is automatically indented when text alignment is set to equal distribution.
+      Specifies if text is automatically indented when text alignment is set to equal distribution.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoIndent
@@ -56,10 +56,8 @@ items:
         type:
           - 'excel!Excel.Interfaces.RangeBorderCollectionUpdateData:interface'
   - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData#columnWidth:member'
-    summary: >-
-      Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be
-      returned.
-
+    summary: |-
+      Specifies the width of all colums within the range. If the column widths are not uniform, null will be returned.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnWidth
@@ -166,7 +164,7 @@ items:
           - 'excel!Excel.Interfaces.RangeFormatUpdateData#readingOrder~0:complex'
   - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData#rowHeight:member'
     summary: |-
-      Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
+      The height of all rows in the range. If the row heights are not uniform, null will be returned.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowHeight
@@ -181,7 +179,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData#shrinkToFit:member'
     summary: |-
-      Indicates if text automatically shrinks to fit in the available column width.
+      Specifies if text automatically shrinks to fit in the available column width.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shrinkToFit
@@ -196,9 +194,9 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData#textOrientation:member'
     summary: >-
-      Gets or sets the text orientation of all the cells within the range. The text orientation should be an integer
-      either from -90 to 90, or 180 for vertically-oriented text. If the orientation within a range are not uniform,
-      then null will be returned.
+      The text orientation of all the cells within the range. The text orientation should be an integer either from -90
+      to 90, or 180 for vertically-oriented text. If the orientation within a range are not uniform, then null will be
+      returned.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -232,7 +230,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData#useStandardWidth:member'
     summary: >-
-      Indicates whether the column width of the Range object equals the standard width of the sheet. Returns True if the
+      Specifies if the column width of the Range object equals the standard width of the sheet. Returns True if the
       column width of the Range object equals the standard width of the sheet. Returns Null if the range contains more
       than one column and the columns aren't all the same height. Returns False otherwise.
 
@@ -265,7 +263,7 @@ items:
           - 'excel!Excel.Interfaces.RangeFormatUpdateData#verticalAlignment~0:complex'
   - uid: 'excel!Excel.Interfaces.RangeFormatUpdateData#wrapText:member'
     summary: >-
-      Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
+      Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
       wrap setting
 
 

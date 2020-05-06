@@ -17695,7 +17695,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.RecurrenceProperties#weekNumber:member",
-                  "docComment": "/**\n * Represents the number of the week in the selected month e.g. 'first' for first week of the month.\n */\n",
+                  "docComment": "/**\n * Represents the number of the week in the selected month e.g., 'first' for first week of the month.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

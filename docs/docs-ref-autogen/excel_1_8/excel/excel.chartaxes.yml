@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartAxes#categoryAxis:member'
@@ -28,7 +28,7 @@ items:
       - 'excel!Excel.ChartAxes#valueAxis:member'
   - uid: 'excel!Excel.ChartAxes#categoryAxis:member'
     summary: |-
-      Represents the category axis in a chart. Read-only.
+      Represents the category axis in a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: categoryAxis
@@ -179,7 +179,7 @@ items:
                       }
   - uid: 'excel!Excel.ChartAxes#seriesAxis:member'
     summary: |-
-      Represents the series axis of a 3-dimensional chart. Read-only.
+      Represents the series axis of a 3-dimensional chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: seriesAxis
@@ -221,7 +221,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.ChartAxes#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -260,7 +260,7 @@ items:
         description: ''
   - uid: 'excel!Excel.ChartAxes#valueAxis:member'
     summary: |-
-      Represents the value axis in an axis. Read-only.
+      Represents the value axis in an axis.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: valueAxis
@@ -297,7 +297,7 @@ items:
           });
           ```
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ChartAxis:class'
     name: Excel.ChartAxis
@@ -313,7 +313,7 @@ references:
     name: Excel.Interfaces.ChartAxesLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartAxesUpdateData:interface'
     name: Interfaces.ChartAxesUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartAxesData:interface'
     name: Excel.Interfaces.ChartAxesData

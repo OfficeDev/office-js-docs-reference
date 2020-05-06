@@ -52,7 +52,7 @@ items:
           ```
   - uid: 'excel!Excel.TableSelectionChangedEventArgs#isInsideTable:member'
     summary: |-
-      Indicates if the selection is inside a table, address will be useless if IsInsideTable is false.
+      Specifies if the selection is inside a table, address will be useless if IsInsideTable is false.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isInsideTable
@@ -82,7 +82,7 @@ items:
           - string
   - uid: 'excel!Excel.TableSelectionChangedEventArgs#type:member'
     summary: |-
-      Gets the type of the event. See Excel.EventType for details. Read-only.
+      Gets the type of the event. See Excel.EventType for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type

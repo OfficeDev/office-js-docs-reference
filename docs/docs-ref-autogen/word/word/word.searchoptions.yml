@@ -16,7 +16,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'word!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.SearchOptions#context:member'
@@ -445,7 +445,7 @@ items:
         - id: context
           description: ''
           type:
-            - 'word!OfficeExtension.ClientRequestContext:class'
+            - 'office!OfficeExtension.ClientRequestContext:class'
   - uid: 'word!Word.SearchOptions#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -475,7 +475,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'word!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'word!Word.SearchOptions#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -513,7 +513,7 @@ items:
           - 'word!Word.Interfaces.SearchOptionsData:interface'
         description: ''
 references:
-  - uid: 'word!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.RequestContext:class'
     name: RequestContext
@@ -521,11 +521,11 @@ references:
     name: Word.SearchOptions
   - uid: 'word!Word.Interfaces.SearchOptionsLoadOptions:interface'
     name: Word.Interfaces.SearchOptionsLoadOptions
-  - uid: 'word!OfficeExtension.ClientRequestContext:class'
+  - uid: 'office!OfficeExtension.ClientRequestContext:class'
     name: OfficeExtension.ClientRequestContext
   - uid: 'word!Word.Interfaces.SearchOptionsUpdateData:interface'
     name: Interfaces.SearchOptionsUpdateData
-  - uid: 'word!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.Interfaces.SearchOptionsData:interface'
     name: Word.Interfaces.SearchOptionsData

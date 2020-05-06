@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartLegend#context:member'
@@ -41,7 +41,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartLegend#format:member'
     summary: |-
-      Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
+      Represents the formatting of a chart legend, which includes fill and font formatting.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -146,7 +146,7 @@ items:
                       }
   - uid: 'excel!Excel.ChartLegend#overlay:member'
     summary: |-
-      Boolean value for whether the chart legend should overlap with the main body of the chart.
+      Specifies if the chart legend should overlap with the main body of the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overlay
@@ -161,7 +161,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartLegend#position:member'
     summary: |-
-      Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
+      Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: position
@@ -203,7 +203,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.ChartLegend#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -242,7 +242,7 @@ items:
         description: ''
   - uid: 'excel!Excel.ChartLegend#visible:member'
     summary: |-
-      A boolean value the represents the visibility of a ChartLegend object.
+      Specifies if the ChartLegend is visible.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
@@ -256,7 +256,7 @@ items:
         type:
           - boolean
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -277,7 +277,7 @@ references:
         fullName: ' | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"'
   - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData:interface'
     name: Interfaces.ChartLegendUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartLegendData:interface'
     name: Excel.Interfaces.ChartLegendData

@@ -13,7 +13,7 @@ items:
       - 'excel!Excel.Interfaces.WorksheetCustomPropertyData#value:member'
   - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyData#key:member'
     summary: >-
-      Gets the key of the custom property. Read only.
+      Gets the key of the custom property. Custom property keys are case-insensitive.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -31,7 +31,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.WorksheetCustomPropertyData#value:member'
     summary: >-
-      Gets the value of the custom property. Read only.
+      Gets or sets the value of the custom property.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

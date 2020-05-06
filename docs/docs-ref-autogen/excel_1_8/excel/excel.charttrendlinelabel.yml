@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartTrendlineLabel#autoText:member'
@@ -35,7 +35,7 @@ items:
       - 'excel!Excel.ChartTrendlineLabel#width:member'
   - uid: 'excel!Excel.ChartTrendlineLabel#autoText:member'
     summary: |-
-      Boolean value representing if trendline label automatically generates appropriate text based on context.
+      Specifies if trendline label automatically generate appropriate text based on context.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoText
@@ -64,7 +64,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartTrendlineLabel#format:member'
     summary: |-
-      Represents the format of chart trendline label.
+      The format of chart trendline label.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -93,10 +93,8 @@ items:
         type:
           - string
   - uid: 'excel!Excel.ChartTrendlineLabel#height:member'
-    summary: >-
-      Returns the height, in points, of the chart trendline label. Read-only. Null if chart trendline label is not
-      visible.
-
+    summary: |-
+      Returns the height, in points, of the chart trendline label. Null if chart trendline label is not visible.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -259,7 +257,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.ChartTrendlineLabel#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -363,10 +361,8 @@ items:
         type:
           - 'excel!Excel.ChartTrendlineLabel#verticalAlignment~0:complex'
   - uid: 'excel!Excel.ChartTrendlineLabel#width:member'
-    summary: >-
-      Returns the width, in points, of the chart trendline label. Read-only. Null if chart trendline label is not
-      visible.
-
+    summary: |-
+      Returns the width, in points, of the chart trendline label. Null if chart trendline label is not visible.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
@@ -380,7 +376,7 @@ items:
         type:
           - number
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -401,7 +397,7 @@ references:
     name: Excel.Interfaces.ChartTrendlineLabelLoadOptions
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelUpdateData:interface'
     name: Interfaces.ChartTrendlineLabelUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData:interface'
     name: Excel.Interfaces.ChartTrendlineLabelData

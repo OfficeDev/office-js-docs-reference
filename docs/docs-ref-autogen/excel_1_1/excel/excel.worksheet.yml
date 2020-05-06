@@ -14,7 +14,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Worksheet#activate:member(1)'
@@ -69,7 +69,7 @@ items:
           ```
   - uid: 'excel!Excel.Worksheet#charts:member'
     summary: |-
-      Returns a collection of charts that are part of the worksheet. Read-only.
+      Returns a collection of charts that are part of the worksheet.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: charts
@@ -244,7 +244,7 @@ items:
   - uid: 'excel!Excel.Worksheet#id:member'
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
-      the same even when the worksheet is renamed or moved. Read-only.
+      the same even when the worksheet is renamed or moved.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -426,7 +426,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.Worksheet#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -447,7 +447,7 @@ items:
             - 'excel!Excel.Worksheet:class'
   - uid: 'excel!Excel.Worksheet#tables:member'
     summary: |-
-      Collection of tables that are part of the worksheet. Read-only.
+      Collection of tables that are part of the worksheet.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tables
@@ -496,7 +496,7 @@ items:
         type:
           - 'excel!Excel.Worksheet#visibility~0:complex'
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ChartCollection:class'
     name: Excel.ChartCollection
@@ -510,7 +510,7 @@ references:
     name: Excel.Interfaces.WorksheetLoadOptions
   - uid: 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
     name: Interfaces.WorksheetUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.TableCollection:class'
     name: Excel.TableCollection

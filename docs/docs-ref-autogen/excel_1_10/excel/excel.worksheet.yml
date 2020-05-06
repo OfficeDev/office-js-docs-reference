@@ -14,7 +14,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Worksheet#activate:member(1)'
@@ -110,7 +110,7 @@ items:
           ```
   - uid: 'excel!Excel.Worksheet#autoFilter:member'
     summary: |-
-      Represents the AutoFilter object of the worksheet. Read-Only.
+      Represents the AutoFilter object of the worksheet.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoFilter
@@ -167,7 +167,7 @@ items:
             - boolean
   - uid: 'excel!Excel.Worksheet#charts:member'
     summary: |-
-      Returns a collection of charts that are part of the worksheet. Read-only.
+      Returns a collection of charts that are part of the worksheet.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: charts
@@ -182,7 +182,7 @@ items:
           - 'excel!Excel.ChartCollection:class'
   - uid: 'excel!Excel.Worksheet#comments:member'
     summary: |-
-      Returns a collection of all the Comments objects on the worksheet. Read-only.
+      Returns a collection of all the Comments objects on the worksheet.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: comments
@@ -333,7 +333,7 @@ items:
           ```
   - uid: 'excel!Excel.Worksheet#enableCalculation:member'
     summary: >-
-      Gets or sets the enableCalculation property of the worksheet. True if Excel recalculates the worksheet when
+      Determines if Excel should recalculate the worksheet when necessary. True if Excel recalculates the worksheet when
       necessary. False if Excel doesn't recalculate the sheet.
 
 
@@ -439,7 +439,7 @@ items:
             - 'excel!Excel.WorksheetSearchCriteria:interface'
   - uid: 'excel!Excel.Worksheet#freezePanes:member'
     summary: |-
-      Gets an object that can be used to manipulate frozen panes on the worksheet. Read-only.
+      Gets an object that can be used to manipulate frozen panes on the worksheet.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: freezePanes
@@ -885,7 +885,7 @@ items:
   - uid: 'excel!Excel.Worksheet#id:member'
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
-      the same even when the worksheet is renamed or moved. Read-only.
+      the same even when the worksheet is renamed or moved.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -1006,7 +1006,7 @@ items:
           - string
   - uid: 'excel!Excel.Worksheet#names:member'
     summary: |-
-      Collection of names scoped to the current worksheet. Read-only.
+      Collection of names scoped to the current worksheet.
 
       \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: names
@@ -1359,7 +1359,7 @@ items:
           - 'excel!Excel.PageLayout:class'
   - uid: 'excel!Excel.Worksheet#pivotTables:member'
     summary: |-
-      Collection of PivotTables that are part of the worksheet. Read-only.
+      Collection of PivotTables that are part of the worksheet.
 
       \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pivotTables
@@ -1408,7 +1408,7 @@ items:
           ```
   - uid: 'excel!Excel.Worksheet#protection:member'
     summary: |-
-      Returns sheet protection object for a worksheet. Read-only.
+      Returns sheet protection object for a worksheet.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protection
@@ -1518,7 +1518,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.Worksheet#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -1539,7 +1539,7 @@ items:
             - 'excel!Excel.Worksheet:class'
   - uid: 'excel!Excel.Worksheet#shapes:member'
     summary: |-
-      Returns the collection of all the Shape objects on the worksheet. Read-only.
+      Returns the collection of all the Shape objects on the worksheet.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shapes
@@ -1554,7 +1554,7 @@ items:
           - 'excel!Excel.ShapeCollection:class'
   - uid: 'excel!Excel.Worksheet#showGridlines:member'
     summary: |-
-      Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.
+      Specifies if gridlines are visible to the user.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showGridlines
@@ -1588,7 +1588,7 @@ items:
           ```
   - uid: 'excel!Excel.Worksheet#showHeadings:member'
     summary: |-
-      Gets or sets the worksheet's headings flag. This flag determines whether headings are visible to the user.
+      Specifies if headings are visible to the user.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showHeadings
@@ -1666,7 +1666,7 @@ items:
             - number
   - uid: 'excel!Excel.Worksheet#slicers:member'
     summary: |-
-      Returns a collection of slicers that are part of the worksheet. Read-only.
+      Returns a collection of slicers that are part of the worksheet.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: slicers
@@ -1703,7 +1703,7 @@ items:
           ```
   - uid: 'excel!Excel.Worksheet#standardHeight:member'
     summary: |-
-      Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
+      Returns the standard (default) height of all the rows in the worksheet, in points.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: standardHeight
@@ -1718,9 +1718,9 @@ items:
           - number
   - uid: 'excel!Excel.Worksheet#standardWidth:member'
     summary: >-
-      Returns or sets the standard (default) width of all the columns in the worksheet. One unit of column width is
-      equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0
-      (zero) is used.
+      Specifies the standard (default) width of all the columns in the worksheet. One unit of column width is equal to
+      the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is
+      used.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -1736,10 +1736,10 @@ items:
           - number
   - uid: 'excel!Excel.Worksheet#tabColor:member'
     summary: >-
-      Gets or sets the worksheet tab color. When retrieving the tab color, if the worksheet is invisible, the value will
-      be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned.
-      Otherwise, the property will be set to a color, in the form "\#123456" When setting the color, use an empty-string
-      to set an "auto" color, or a real color otherwise.
+      The tab color of the worksheet. When retrieving the tab color, if the worksheet is invisible, the value will be
+      null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned. Otherwise,
+      the property will be set to a color, in the form "\#123456" When setting the color, use an empty-string to set an
+      "auto" color, or a real color otherwise.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -1774,7 +1774,7 @@ items:
           ```
   - uid: 'excel!Excel.Worksheet#tables:member'
     summary: |-
-      Collection of tables that are part of the worksheet. Read-only.
+      Collection of tables that are part of the worksheet.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tables
@@ -1838,7 +1838,7 @@ items:
         type:
           - 'excel!Excel.Worksheet#visibility~0:complex'
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.AutoFilter:class'
     name: Excel.AutoFilter
@@ -1870,7 +1870,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -1884,7 +1884,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -1898,7 +1898,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -1912,7 +1912,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetColumnSortedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetColumnSortedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -1926,7 +1926,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -1940,7 +1940,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -1954,7 +1954,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -1968,7 +1968,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -1982,7 +1982,7 @@ references:
     name: OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>
     fullName: OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -2002,7 +2002,7 @@ references:
     name: OfficeExtension.ClientResult<number>
     fullName: OfficeExtension.ClientResult<number>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <number>
@@ -2011,7 +2011,7 @@ references:
     name: Excel.ReplaceCriteria
   - uid: 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
     name: Interfaces.WorksheetUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.ShapeCollection:class'
     name: Excel.ShapeCollection

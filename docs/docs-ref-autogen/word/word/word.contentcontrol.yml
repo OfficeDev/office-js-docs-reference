@@ -14,7 +14,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'word!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: word!
     children:
       - 'word!Word.ContentControl#appearance:member'
@@ -1784,7 +1784,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'word!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'word!Word.ContentControl#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -2099,7 +2099,7 @@ items:
           - 'word!Word.ContentControl:class'
         description: ''
 references:
-  - uid: 'word!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'word!Word.ContentControl#appearance~0:complex'
     name: Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden"
@@ -2120,7 +2120,7 @@ references:
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
     spec.typeScript:
-      - uid: 'word!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <string>
@@ -2129,7 +2129,7 @@ references:
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
     spec.typeScript:
-      - uid: 'word!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <string>
@@ -2162,7 +2162,7 @@ references:
     name: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>
     fullName: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>
     spec.typeScript:
-      - uid: 'word!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -2176,7 +2176,7 @@ references:
     name: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>
     fullName: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>
     spec.typeScript:
-      - uid: 'word!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -2190,7 +2190,7 @@ references:
     name: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>
     fullName: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>
     spec.typeScript:
-      - uid: 'word!OfficeExtension.EventHandlers:class'
+      - uid: 'office!OfficeExtension.EventHandlers:class'
         name: OfficeExtension.EventHandlers
         fullName: OfficeExtension.EventHandlers
       - name: <
@@ -2255,7 +2255,7 @@ references:
     name: Word.SelectionMode
   - uid: 'word!Word.Interfaces.ContentControlUpdateData:interface'
     name: Interfaces.ContentControlUpdateData
-  - uid: 'word!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'word!Word.ContentControl#styleBuiltIn~0:complex'
     name: >-

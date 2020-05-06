@@ -13,7 +13,7 @@ items:
       - 'excel!Excel.Interfaces.WorksheetProtectionData#protected:member'
   - uid: 'excel!Excel.Interfaces.WorksheetProtectionData#options:member'
     summary: |-
-      Sheet protection options. Read-only.
+      Specifies the protection options for the worksheet.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: options
@@ -28,7 +28,7 @@ items:
           - 'excel!Excel.WorksheetProtectionOptions:interface'
   - uid: 'excel!Excel.Interfaces.WorksheetProtectionData#protected:member'
     summary: |-
-      Indicates if the worksheet is protected. Read-only.
+      Specifies if the worksheet is protected.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protected

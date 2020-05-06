@@ -28,7 +28,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.TableStyleData#readOnly:member'
     summary: |-
-      Specifies whether this TableStyle object is read-only. Read-only.
+      Specifies if this TableStyle object is read-only.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readOnly

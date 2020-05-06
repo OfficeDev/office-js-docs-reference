@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.TableStyle#context:member'
@@ -158,7 +158,7 @@ items:
           - string
   - uid: 'excel!Excel.TableStyle#readOnly:member'
     summary: |-
-      Specifies whether this TableStyle object is read-only. Read-only.
+      Specifies if this TableStyle object is read-only.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readOnly
@@ -200,7 +200,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.TableStyle#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -238,7 +238,7 @@ items:
           - 'excel!Excel.Interfaces.TableStyleData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -248,7 +248,7 @@ references:
     name: Excel.Interfaces.TableStyleLoadOptions
   - uid: 'excel!Excel.Interfaces.TableStyleUpdateData:interface'
     name: Interfaces.TableStyleUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.TableStyleData:interface'
     name: Excel.Interfaces.TableStyleData

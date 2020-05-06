@@ -40,7 +40,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#author:member'
     summary: |-
-      Gets or sets the author of the workbook.
+      The author of the workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: author
@@ -55,7 +55,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#category:member'
     summary: |-
-      Gets or sets the category of the workbook.
+      The category of the workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: category
@@ -70,7 +70,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#comments:member'
     summary: |-
-      Gets or sets the comments of the workbook.
+      The comments of the workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: comments
@@ -85,7 +85,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#company:member'
     summary: |-
-      Gets or sets the company of the workbook.
+      The company of the workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: company
@@ -115,7 +115,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#keywords:member'
     summary: |-
-      Gets or sets the keywords of the workbook.
+      The keywords of the workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: keywords
@@ -145,7 +145,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#manager:member'
     summary: |-
-      Gets or sets the manager of the workbook.
+      The manager of the workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: manager
@@ -175,7 +175,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#subject:member'
     summary: |-
-      Gets or sets the subject of the workbook.
+      The subject of the workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subject
@@ -190,7 +190,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.DocumentPropertiesLoadOptions#title:member'
     summary: |-
-      Gets or sets the title of the workbook.
+      The title of the workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: title

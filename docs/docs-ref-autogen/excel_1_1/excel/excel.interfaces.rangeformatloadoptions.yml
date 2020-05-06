@@ -110,7 +110,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.RangeFormatLoadOptions#wrapText:member'
     summary: >-
-      Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
+      Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
       wrap setting
 
 

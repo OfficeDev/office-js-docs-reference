@@ -28,7 +28,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.TimelineStyleData#readOnly:member'
     summary: |-
-      Specifies whether this TimelineStyle object is read-only. Read-only.
+      Specifies if this TimelineStyle object is read-only.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readOnly

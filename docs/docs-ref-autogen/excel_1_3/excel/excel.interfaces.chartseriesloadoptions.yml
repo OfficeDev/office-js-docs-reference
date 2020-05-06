@@ -47,7 +47,7 @@ items:
           - 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#name:member'
     summary: |-
-      Represents the name of a series in a chart.
+      Specifies the name of a series in a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -62,7 +62,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartSeriesLoadOptions#points:member'
     summary: |-
-      Represents a collection of all points in the series.
+      Returns a collection of all points in the series.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: points

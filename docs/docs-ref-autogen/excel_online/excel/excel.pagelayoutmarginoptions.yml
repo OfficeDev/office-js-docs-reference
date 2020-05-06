@@ -20,7 +20,7 @@ items:
       - 'excel!Excel.PageLayoutMarginOptions#top:member'
   - uid: 'excel!Excel.PageLayoutMarginOptions#bottom:member'
     summary: |-
-      Represents the page layout bottom margin in the unit specified to use for printing.
+      Specifies the page layout bottom margin in the unit specified to use for printing.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bottom
@@ -35,7 +35,7 @@ items:
           - number
   - uid: 'excel!Excel.PageLayoutMarginOptions#footer:member'
     summary: |-
-      Represents the page layout footer margin in the unit specified to use for printing.
+      Specifies the page layout footer margin in the unit specified to use for printing.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: footer
@@ -50,7 +50,7 @@ items:
           - number
   - uid: 'excel!Excel.PageLayoutMarginOptions#header:member'
     summary: |-
-      Represents the page layout header margin in the unit specified to use for printing.
+      Specifies the page layout header margin in the unit specified to use for printing.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: header
@@ -65,7 +65,7 @@ items:
           - number
   - uid: 'excel!Excel.PageLayoutMarginOptions#left:member'
     summary: |-
-      Represents the page layout left margin in the unit specified to use for printing.
+      Specifies the page layout left margin in the unit specified to use for printing.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
@@ -80,7 +80,7 @@ items:
           - number
   - uid: 'excel!Excel.PageLayoutMarginOptions#right:member'
     summary: |-
-      Represents the page layout right margin in the unit specified to use for printing.
+      Specifies the page layout right margin in the unit specified to use for printing.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: right
@@ -95,7 +95,7 @@ items:
           - number
   - uid: 'excel!Excel.PageLayoutMarginOptions#top:member'
     summary: |-
-      Represents the page layout top margin in the unit specified to use for printing.
+      Specifies the page layout top margin in the unit specified to use for printing.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top

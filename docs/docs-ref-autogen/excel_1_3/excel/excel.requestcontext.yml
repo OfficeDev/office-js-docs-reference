@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientRequestContext:class'
+      - 'office!OfficeExtension.ClientRequestContext:class'
     package: excel!
     children:
       - 'excel!Excel.RequestContext:constructor(1)'
@@ -54,7 +54,7 @@ items:
         type:
           - 'excel!Excel.Workbook:class'
 references:
-  - uid: 'excel!OfficeExtension.ClientRequestContext:class'
+  - uid: 'office!OfficeExtension.ClientRequestContext:class'
     name: OfficeExtension.ClientRequestContext
   - uid: 'excel!Excel.RequestContext~0:complex'
     name: string | Session

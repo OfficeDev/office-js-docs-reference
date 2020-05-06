@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ConditionalDataBarPositiveFormat#borderColor:member'
@@ -26,8 +26,8 @@ items:
       - 'excel!Excel.ConditionalDataBarPositiveFormat#toJSON:member(1)'
   - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#borderColor:member'
     summary: >-
-      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange"). "" (empty string) if no border is present or set.
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g., "FFA500") or as a named
+      HTML color (e.g., "orange"). "" (empty string) if no border is present or set.
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -57,7 +57,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#fillColor:member'
     summary: >-
-      HTML color code representing the fill color, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML color (e.g.
+      HTML color code representing the fill color, of the form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g.,
       "orange").
 
 
@@ -74,7 +74,7 @@ items:
           - string
   - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#gradientFill:member'
     summary: |-
-      Boolean representation of whether or not the DataBar has a gradient.
+      Specifies if the DataBar has a gradient.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientFill
@@ -190,7 +190,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -228,7 +228,7 @@ items:
           - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -238,7 +238,7 @@ references:
     name: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData:interface'
     name: Interfaces.ConditionalDataBarPositiveFormatUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatData:interface'
     name: Excel.Interfaces.ConditionalDataBarPositiveFormatData

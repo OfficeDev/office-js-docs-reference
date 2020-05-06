@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.PivotLayout#autoFormat:member'
@@ -40,7 +40,7 @@ items:
       - 'excel!Excel.PivotLayout#toJSON:member(1)'
   - uid: 'excel!Excel.PivotLayout#autoFormat:member'
     summary: |-
-      Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
+      Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoFormat
@@ -69,7 +69,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.PivotLayout#enableFieldList:member'
     summary: |-
-      Specifies whether the field list can be shown in the UI.
+      Specifies if the field list can be shown in the UI.
 
       \[ [API set: ExcelApi 1.10](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableFieldList
@@ -352,8 +352,8 @@ items:
                       }
   - uid: 'excel!Excel.PivotLayout#preserveFormatting:member'
     summary: >-
-      Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as
-      pivoting, sorting, or changing page field items.
+      Specifies if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting,
+      sorting, or changing page field items.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -396,7 +396,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.PivotLayout#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -471,7 +471,7 @@ items:
             - '"Ascending" | "Descending"'
   - uid: 'excel!Excel.PivotLayout#showColumnGrandTotals:member'
     summary: |-
-      Specifies whether the PivotTable report shows grand totals for columns.
+      Specifies if the PivotTable report shows grand totals for columns.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showColumnGrandTotals
@@ -486,7 +486,7 @@ items:
           - boolean
   - uid: 'excel!Excel.PivotLayout#showRowGrandTotals:member'
     summary: |-
-      Specifies whether the PivotTable report shows grand totals for rows.
+      Specifies if the PivotTable report shows grand totals for rows.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showRowGrandTotals
@@ -535,7 +535,7 @@ items:
           - 'excel!Excel.Interfaces.PivotLayoutData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -556,7 +556,7 @@ references:
     name: 'OfficeExtension.ClientResult<Excel.PivotItem[]>'
     fullName: 'OfficeExtension.ClientResult<Excel.PivotItem[]>'
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <
@@ -581,7 +581,7 @@ references:
     name: 'OfficeExtension.ClientResult<Excel.PivotItem[]>'
     fullName: 'OfficeExtension.ClientResult<Excel.PivotItem[]>'
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <
@@ -615,7 +615,7 @@ references:
     name: Excel.Interfaces.PivotLayoutLoadOptions
   - uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData:interface'
     name: Interfaces.PivotLayoutUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.PivotLayout#setAutoSortOnCell~0:complex'
     name: Range | string

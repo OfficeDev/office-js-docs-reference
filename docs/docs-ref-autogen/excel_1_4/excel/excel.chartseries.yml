@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartSeries#context:member'
@@ -40,7 +40,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartSeries#format:member'
     summary: |-
-      Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
+      Represents the formatting of a chart series, which includes fill and line formatting.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -144,7 +144,7 @@ items:
                       }
   - uid: 'excel!Excel.ChartSeries#name:member'
     summary: |-
-      Represents the name of a series in a chart.
+      Specifies the name of a series in a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -159,7 +159,7 @@ items:
           - string
   - uid: 'excel!Excel.ChartSeries#points:member'
     summary: |-
-      Represents a collection of all points in the series. Read-only.
+      Returns a collection of all points in the series.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: points
@@ -201,7 +201,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.ChartSeries#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -239,7 +239,7 @@ items:
           - 'excel!Excel.Interfaces.ChartSeriesData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -253,7 +253,7 @@ references:
     name: Excel.ChartPointsCollection
   - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData:interface'
     name: Interfaces.ChartSeriesUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartSeriesData:interface'
     name: Excel.Interfaces.ChartSeriesData

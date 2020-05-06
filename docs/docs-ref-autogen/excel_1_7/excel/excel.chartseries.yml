@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartSeries#chartType:member'
@@ -146,7 +146,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartSeries#filtered:member'
     summary: |-
-      Boolean value representing if the series is filtered or not. Not applicable for surface charts.
+      Specifies if the series is filtered. Not applicable for surface charts.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: filtered
@@ -161,7 +161,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartSeries#format:member'
     summary: |-
-      Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
+      Represents the formatting of a chart series, which includes fill and line formatting.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -193,7 +193,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartSeries#hasDataLabels:member'
     summary: |-
-      Boolean value representing if the series has data labels or not.
+      Specifies if the series has data labels.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hasDataLabels
@@ -297,7 +297,7 @@ items:
                       }
   - uid: 'excel!Excel.ChartSeries#markerBackgroundColor:member'
     summary: |-
-      Represents markers background color of a chart series.
+      Specifies the markers background color of a chart series.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerBackgroundColor
@@ -352,7 +352,7 @@ items:
           ```
   - uid: 'excel!Excel.ChartSeries#markerForegroundColor:member'
     summary: |-
-      Represents markers foreground color of a chart series.
+      Specifies the markers foreground color of a chart series.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerForegroundColor
@@ -407,7 +407,7 @@ items:
           ```
   - uid: 'excel!Excel.ChartSeries#markerSize:member'
     summary: |-
-      Represents marker size of a chart series.
+      Specifies the marker size of a chart series.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerSize
@@ -462,7 +462,7 @@ items:
           ```
   - uid: 'excel!Excel.ChartSeries#markerStyle:member'
     summary: |-
-      Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
+      Specifies the marker style of a chart series. See Excel.ChartMarkerStyle for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: markerStyle
@@ -519,7 +519,7 @@ items:
           ```
   - uid: 'excel!Excel.ChartSeries#name:member'
     summary: |-
-      Represents the name of a series in a chart.
+      Specifies the name of a series in a chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -534,7 +534,7 @@ items:
           - string
   - uid: 'excel!Excel.ChartSeries#plotOrder:member'
     summary: |-
-      Represents the plot order of a chart series within the chart group.
+      Specifies the plot order of a chart series within the chart group.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: plotOrder
@@ -549,7 +549,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartSeries#points:member'
     summary: |-
-      Represents a collection of all points in the series. Read-only.
+      Returns a collection of all points in the series.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: points
@@ -591,7 +591,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.ChartSeries#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -612,7 +612,7 @@ items:
             - 'excel!Excel.ChartSeries:class'
   - uid: 'excel!Excel.ChartSeries#setBubbleSizes:member(1)'
     summary: |-
-      Set bubble sizes for a chart series. Only works for bubble charts.
+      Sets the bubble sizes for a chart series. Only works for bubble charts.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setBubbleSizes(sourceData)
@@ -633,7 +633,7 @@ items:
             - 'excel!Excel.Range:class'
   - uid: 'excel!Excel.ChartSeries#setValues:member(1)'
     summary: |-
-      Set values for a chart series. For scatter chart, it means Y axis values.
+      Sets the values for a chart series. For scatter chart, it means Y axis values.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setValues(sourceData)
@@ -680,7 +680,7 @@ items:
             - 'excel!Excel.Range:class'
   - uid: 'excel!Excel.ChartSeries#setXAxisValues:member(1)'
     summary: |-
-      Set values of X axis for a chart series. Only works for scatter charts.
+      Sets the values of the X axis for a chart series. Only works for scatter charts.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setXAxisValues(sourceData)
@@ -701,7 +701,7 @@ items:
             - 'excel!Excel.Range:class'
   - uid: 'excel!Excel.ChartSeries#showShadow:member'
     summary: |-
-      Boolean value representing if the series has a shadow or not.
+      Specifies if the series has a shadow.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showShadow
@@ -716,7 +716,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartSeries#smooth:member'
     summary: |-
-      Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
+      Specifies if the series is smooth. Only applicable to line and scatter charts.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: smooth
@@ -749,7 +749,7 @@ items:
         description: ''
   - uid: 'excel!Excel.ChartSeries#trendlines:member'
     summary: |-
-      Represents a collection of trendlines in the series. Read-only.
+      The collection of trendlines in the series.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: trendlines
@@ -763,7 +763,7 @@ items:
         type:
           - 'excel!Excel.ChartTrendlineCollection:class'
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ChartSeries#chartType~0:complex'
     name: >-
@@ -827,7 +827,7 @@ references:
     name: Excel.ChartPointsCollection
   - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData:interface'
     name: Interfaces.ChartSeriesUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Range:class'
     name: Range

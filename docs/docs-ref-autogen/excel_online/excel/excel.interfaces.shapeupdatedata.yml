@@ -25,7 +25,7 @@ items:
       - 'excel!Excel.Interfaces.ShapeUpdateData#width:member'
   - uid: 'excel!Excel.Interfaces.ShapeUpdateData#altTextDescription:member'
     summary: |-
-      Returns or sets the alternative description text for a Shape object.
+      Specifies the alternative description text for a Shape object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: altTextDescription
@@ -40,7 +40,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.ShapeUpdateData#altTextTitle:member'
     summary: |-
-      Returns or sets the alternative title text for a Shape object.
+      Specifies the alternative title text for a Shape object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: altTextTitle
@@ -70,8 +70,8 @@ items:
           - 'excel!Excel.Interfaces.ShapeFillUpdateData:interface'
   - uid: 'excel!Excel.Interfaces.ShapeUpdateData#geometricShapeType:member'
     summary: >-
-      Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns
-      null if the shape type is not "GeometricShape".
+      Specifies the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null
+      if the shape type is not "GeometricShape".
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -118,8 +118,8 @@ items:
           - 'excel!Excel.Interfaces.ShapeUpdateData#geometricShapeType~0:complex'
   - uid: 'excel!Excel.Interfaces.ShapeUpdateData#height:member'
     summary: >-
-      Represents the height, in points, of the shape. Throws an invalid argument exception when set with a negative
-      value or zero as input.
+      Specifies the height, in points, of the shape. Throws an invalid argument exception when set with a negative value
+      or zero as input.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -167,7 +167,7 @@ items:
           - 'excel!Excel.Interfaces.ShapeLineFormatUpdateData:interface'
   - uid: 'excel!Excel.Interfaces.ShapeUpdateData#lockAspectRatio:member'
     summary: |-
-      Specifies whether or not the aspect ratio of this shape is locked.
+      Specifies if the aspect ratio of this shape is locked.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lockAspectRatio
@@ -182,7 +182,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ShapeUpdateData#name:member'
     summary: |-
-      Represents the name of the shape.
+      Specifies the name of the shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
@@ -212,7 +212,7 @@ items:
           - 'excel!Excel.Interfaces.ShapeUpdateData#placement~0:complex'
   - uid: 'excel!Excel.Interfaces.ShapeUpdateData#rotation:member'
     summary: |-
-      Represents the rotation, in degrees, of the shape.
+      Specifies the rotation, in degrees, of the shape.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rotation
@@ -244,7 +244,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.ShapeUpdateData#visible:member'
     summary: |-
-      Represents the visibility of this shape.
+      Specifies if the shape is visible.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
@@ -259,7 +259,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ShapeUpdateData#width:member'
     summary: >-
-      Represents the width, in points, of the shape. Throws an invalid argument exception when set with a negative value
+      Specifies the width, in points, of the shape. Throws an invalid argument exception when set with a negative value
       or zero as input.
 
 

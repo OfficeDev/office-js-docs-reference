@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.CultureInfoData:interface'
+    summary: An interface describing the data returned by calling `cultureInfo.toJSON()`<!-- -->.
+    name: Excel.Interfaces.CultureInfoData
+    fullName: Excel.Interfaces.CultureInfoData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!

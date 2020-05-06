@@ -13,7 +13,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.AutoFilter#apply:member(1)'
@@ -111,7 +111,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.AutoFilter#criteria:member'
     summary: |-
-      An array that holds all the filter criteria in the autofiltered range. Read-Only.
+      An array that holds all the filter criteria in the autofiltered range.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criteria
@@ -126,7 +126,7 @@ items:
           - 'excel!Excel.AutoFilter#criteria~0:complex'
   - uid: 'excel!Excel.AutoFilter#enabled:member'
     summary: |-
-      Indicates if the AutoFilter is enabled or not. Read-Only.
+      Specifies if the AutoFilter is enabled.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enabled
@@ -175,7 +175,7 @@ items:
         description: ''
   - uid: 'excel!Excel.AutoFilter#isDataFiltered:member'
     summary: |-
-      Indicates if the AutoFilter has filter criteria. Read-Only.
+      Specifies if the AutoFilter has filter criteria.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isDataFiltered
@@ -309,7 +309,7 @@ items:
           - 'excel!Excel.Interfaces.AutoFilterData:interface'
         description: ''
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.AutoFilter#apply~0:complex'
     name: Range | string

@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ChartTitle#context:member'
@@ -52,7 +52,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ChartTitle#format:member'
     summary: |-
-      Represents the formatting of a chart title, which includes fill and font formatting. Read-only.
+      Represents the formatting of a chart title, which includes fill and font formatting.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -112,7 +112,7 @@ items:
             - number
   - uid: 'excel!Excel.ChartTitle#height:member'
     summary: |-
-      Returns the height, in points, of the chart title. Null if chart title is not visible. Read-only.
+      Returns the height, in points, of the chart title. Null if chart title is not visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
@@ -127,7 +127,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartTitle#horizontalAlignment:member'
     summary: |-
-      Represents the horizontal alignment for chart title.
+      Specifies the horizontal alignment for chart title.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
@@ -144,8 +144,8 @@ items:
           - 'excel!Excel.ChartTitle#horizontalAlignment~0:complex'
   - uid: 'excel!Excel.ChartTitle#left:member'
     summary: >-
-      Represents the distance, in points, from the left edge of chart title to the left edge of chart area. Null if
-      chart title is not visible.
+      Specifies the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart
+      title is not visible.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -271,7 +271,7 @@ items:
                       }
   - uid: 'excel!Excel.ChartTitle#overlay:member'
     summary: |-
-      Boolean value representing if the chart title will overlay the chart or not.
+      Specifies if the chart title will overlay the chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overlay
@@ -328,7 +328,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - 'excel!OfficeExtension.UpdateOptions:interface'
+            - 'office!OfficeExtension.UpdateOptions:interface'
   - uid: 'excel!Excel.ChartTitle#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -385,7 +385,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartTitle#text:member'
     summary: |-
-      Represents the title text of a chart.
+      Specifies the chart's title text.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: text
@@ -400,7 +400,7 @@ items:
           - string
   - uid: 'excel!Excel.ChartTitle#textOrientation:member'
     summary: >-
-      Represents the angle to which the text is oriented for the chart title. The value should either be an integer from
+      Specifies the angle to which the text is oriented for the chart title. The value should either be an integer from
       -90 to 90 or the integer 180 for vertically-oriented text.
 
 
@@ -455,7 +455,7 @@ items:
         description: ''
   - uid: 'excel!Excel.ChartTitle#top:member'
     summary: >-
-      Represents the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title
+      Specifies the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title
       is not visible.
 
 
@@ -472,7 +472,7 @@ items:
           - number
   - uid: 'excel!Excel.ChartTitle#verticalAlignment:member'
     summary: |-
-      Represents the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
+      Specifies the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
@@ -487,7 +487,7 @@ items:
           - 'excel!Excel.ChartTitle#verticalAlignment~0:complex'
   - uid: 'excel!Excel.ChartTitle#visible:member'
     summary: |-
-      A boolean value the represents the visibility of a chart title object.
+      Specifies if the chart title is visibile.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
@@ -502,7 +502,7 @@ items:
           - boolean
   - uid: 'excel!Excel.ChartTitle#width:member'
     summary: |-
-      Returns the width, in points, of the chart title. Null if chart title is not visible. Read-only.
+      Specifies the width, in points, of the chart title. Null if chart title is not visible.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
@@ -516,7 +516,7 @@ items:
         type:
           - number
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -548,7 +548,7 @@ references:
         fullName: ' | "Automatic" | "Top" | "Bottom" | "Left" | "Right"'
   - uid: 'excel!Excel.Interfaces.ChartTitleUpdateData:interface'
     name: Interfaces.ChartTitleUpdateData
-  - uid: 'excel!OfficeExtension.UpdateOptions:interface'
+  - uid: 'office!OfficeExtension.UpdateOptions:interface'
     name: OfficeExtension.UpdateOptions
   - uid: 'excel!Excel.Interfaces.ChartTitleData:interface'
     name: Excel.Interfaces.ChartTitleData

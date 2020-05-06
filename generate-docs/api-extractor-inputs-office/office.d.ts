@@ -1187,7 +1187,7 @@ export declare namespace Office {
          * 
          * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/en-us/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}
+         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}
          *
          * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign-in with Organizational 
          * Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.
@@ -1210,7 +1210,7 @@ export declare namespace Office {
          * 
          * **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
          * 
-         * **Requirement set**: {@link https://docs.microsoft.com/en-us/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}
+         * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets | IdentityAPI}
          *
          * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign-in with Organizational 
          * Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.
@@ -1614,19 +1614,19 @@ export declare namespace Office {
      */
     export interface OfficeTheme {
         /**
-         * Gets the Office theme body background color as a hexadecimal color triplet (e.g. "FFA500").
+         * Gets the Office theme body background color as a hexadecimal color triplet (e.g., "FFA500").
          */
         bodyBackgroundColor: string;
         /**
-         * Gets the Office theme body foreground color as a hexadecimal color triplet (e.g. "FFA500").
+         * Gets the Office theme body foreground color as a hexadecimal color triplet (e.g., "FFA500").
          */
         bodyForegroundColor: string;
         /**
-         * Gets the Office theme control background color as a hexadecimal color triplet (e.g. "FFA500").
+         * Gets the Office theme control background color as a hexadecimal color triplet (e.g., "FFA500").
          */
         controlBackgroundColor: string;
         /**
-         * Gets the Office theme control foreground color as a hexadecimal color triplet (e.g. "FFA500").
+         * Gets the Office theme control foreground color as a hexadecimal color triplet (e.g., "FFA500").
          */
         controlForegroundColor: string;
     }

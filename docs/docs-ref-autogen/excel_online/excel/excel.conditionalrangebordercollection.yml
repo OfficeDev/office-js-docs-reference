@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
@@ -30,7 +30,7 @@ items:
       - 'excel!Excel.ConditionalRangeBorderCollection#top:member'
   - uid: 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
     summary: |-
-      Gets the bottom border. Read-only.
+      Gets the bottom border.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bottom
@@ -59,7 +59,7 @@ items:
           - 'excel!Excel.RequestContext:class'
   - uid: 'excel!Excel.ConditionalRangeBorderCollection#count:member'
     summary: |-
-      Number of border objects in the collection. Read-only.
+      Number of border objects in the collection.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
@@ -149,7 +149,7 @@ items:
           - 'excel!Excel.ConditionalRangeBorderCollection#items~0:complex'
   - uid: 'excel!Excel.ConditionalRangeBorderCollection#left:member'
     summary: |-
-      Gets the left border. Read-only.
+      Gets the left border.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
@@ -225,10 +225,10 @@ items:
             `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
             `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type:
-            - 'excel!OfficeExtension.LoadOption:interface'
+            - 'office!OfficeExtension.LoadOption:interface'
   - uid: 'excel!Excel.ConditionalRangeBorderCollection#right:member'
     summary: |-
-      Gets the right border. Read-only.
+      Gets the right border.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: right
@@ -261,7 +261,7 @@ items:
         description: ''
   - uid: 'excel!Excel.ConditionalRangeBorderCollection#top:member'
     summary: |-
-      Gets the top border. Read-only.
+      Gets the top border.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
@@ -275,7 +275,7 @@ items:
         type:
           - 'excel!Excel.ConditionalRangeBorder:class'
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.ConditionalRangeBorder:class'
     name: Excel.ConditionalRangeBorder
@@ -306,7 +306,7 @@ references:
       - uid: 'excel!Excel.Interfaces.CollectionLoadOptions:interface'
         name: Excel.Interfaces.CollectionLoadOptions
         fullName: Excel.Interfaces.CollectionLoadOptions
-  - uid: 'excel!OfficeExtension.LoadOption:interface'
+  - uid: 'office!OfficeExtension.LoadOption:interface'
     name: OfficeExtension.LoadOption
   - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionData:interface'
     name: Excel.Interfaces.ConditionalRangeBorderCollectionData

@@ -13,7 +13,7 @@ items:
       - 'excel!Excel.Interfaces.ShapeGroupData#shapes:member'
   - uid: 'excel!Excel.Interfaces.ShapeGroupData#id:member'
     summary: |-
-      Represents the shape identifier. Read-only.
+      Specifies the shape identifier.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -28,7 +28,7 @@ items:
           - string
   - uid: 'excel!Excel.Interfaces.ShapeGroupData#shapes:member'
     summary: |-
-      Returns the collection of Shape objects. Read-only.
+      Returns the collection of Shape objects.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shapes

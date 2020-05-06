@@ -1,0 +1,32 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CustomDataValidation:interface'
+    summary: |-
+      Represents the Custom data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.CustomDataValidation
+    fullName: Excel.CustomDataValidation
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CustomDataValidation#formula:member'
+  - uid: 'excel!Excel.CustomDataValidation#formula:member'
+    summary: >-
+      A custom data validation formula. This creates special input rules, such as preventing duplicates, or limiting the
+      total in a range of cells.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula: string;'
+      return:
+        type:
+          - string

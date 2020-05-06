@@ -93,7 +93,7 @@ items:
           - number
   - uid: 'excel!Excel.Interfaces.DataPivotHierarchyData#showAs:member'
     summary: |-
-      Determines whether the data should be shown as a specific summary calculation or not.
+      Specifies if the data should be shown as a specific summary calculation.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAs
@@ -108,7 +108,7 @@ items:
           - 'excel!Excel.ShowAsRule:interface'
   - uid: 'excel!Excel.Interfaces.DataPivotHierarchyData#summarizeBy:member'
     summary: |-
-      Determines whether to show all items of the DataPivotHierarchy.
+      Specifies if all items of the DataPivotHierarchy are shown.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: summarizeBy

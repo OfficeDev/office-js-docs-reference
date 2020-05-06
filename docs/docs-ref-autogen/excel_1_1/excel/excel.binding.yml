@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.Binding#context:member'
@@ -145,7 +145,7 @@ items:
           ```
   - uid: 'excel!Excel.Binding#id:member'
     summary: |-
-      Represents binding identifier. Read-only.
+      Represents binding identifier.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -266,7 +266,7 @@ items:
         description: ''
   - uid: 'excel!Excel.Binding#type:member'
     summary: |-
-      Returns the type of the binding. See Excel.BindingType for details. Read-only.
+      Returns the type of the binding. See Excel.BindingType for details.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
@@ -280,7 +280,7 @@ items:
         type:
           - 'excel!Excel.Binding#type~0:complex'
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
@@ -292,7 +292,7 @@ references:
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
     spec.typeScript:
-      - uid: 'excel!OfficeExtension.ClientResult:class'
+      - uid: 'office!OfficeExtension.ClientResult:class'
         name: OfficeExtension.ClientResult
         fullName: OfficeExtension.ClientResult
       - name: <string>

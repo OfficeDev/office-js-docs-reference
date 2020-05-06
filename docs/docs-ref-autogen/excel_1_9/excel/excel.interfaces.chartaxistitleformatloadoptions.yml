@@ -31,7 +31,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleFormatLoadOptions#border:member'
     summary: |-
-      Represents the border format, which includes color, linestyle, and weight.
+      Specifies the chart axis title's border format, which includes color, linestyle, and weight.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: border
@@ -45,8 +45,10 @@ items:
         type:
           - 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.ChartAxisTitleFormatLoadOptions#font:member'
-    summary: |-
-      Represents the font attributes, such as font name, font size, color, etc. of chart axis title object.
+    summary: >-
+      Specifies the chart axis title's font attributes, such as font name, font size, color, etc. of chart axis title
+      object.
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font

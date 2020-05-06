@@ -206,7 +206,7 @@ items:
           - 'excel!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.ConditionalFormatLoadOptions#id:member'
     summary: |-
-      The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only.
+      The Priority of the Conditional Format within the current ConditionalFormatCollection.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
@@ -255,7 +255,7 @@ items:
       Changing this also changes other conditional formats' priorities, to allow for a contiguous priority order. Use a
       negative priority to begin from the back. Priorities greater than than bounds will get and set to the maximum (or
       minimum if negative) priority. Also note that if you change the priority, you have to re-fetch a new copy of the
-      object at that new priority location if you want to make further changes to it. Read-only.
+      object at that new priority location if you want to make further changes to it.
 
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -356,7 +356,7 @@ items:
           - 'excel!Excel.Interfaces.TopBottomConditionalFormatLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.ConditionalFormatLoadOptions#type:member'
     summary: |-
-      A type of conditional format. Only one can be set at a time. Read-only.
+      A type of conditional format. Only one can be set at a time.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type

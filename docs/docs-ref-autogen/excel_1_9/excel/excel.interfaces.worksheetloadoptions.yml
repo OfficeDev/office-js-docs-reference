@@ -77,7 +77,7 @@ items:
           - 'excel!Excel.Interfaces.ChartCollectionLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#enableCalculation:member'
     summary: >-
-      Gets or sets the enableCalculation property of the worksheet. True if Excel recalculates the worksheet when
+      Determines if Excel should recalculate the worksheet when necessary. True if Excel recalculates the worksheet when
       necessary. False if Excel doesn't recalculate the sheet.
 
 
@@ -95,7 +95,7 @@ items:
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#id:member'
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
-      the same even when the worksheet is renamed or moved. Read-only.
+      the same even when the worksheet is renamed or moved.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -171,7 +171,7 @@ items:
           - 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#showGridlines:member'
     summary: |-
-      Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.
+      Specifies if gridlines are visible to the user.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showGridlines
@@ -186,7 +186,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#showHeadings:member'
     summary: |-
-      Gets or sets the worksheet's headings flag. This flag determines whether headings are visible to the user.
+      Specifies if headings are visible to the user.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showHeadings
@@ -201,7 +201,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#standardHeight:member'
     summary: |-
-      Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
+      Returns the standard (default) height of all the rows in the worksheet, in points.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: standardHeight
@@ -216,9 +216,9 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#standardWidth:member'
     summary: >-
-      Returns or sets the standard (default) width of all the columns in the worksheet. One unit of column width is
-      equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0
-      (zero) is used.
+      Specifies the standard (default) width of all the columns in the worksheet. One unit of column width is equal to
+      the width of one character in the Normal style. For proportional fonts, the width of the character 0 (zero) is
+      used.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -234,10 +234,10 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions#tabColor:member'
     summary: >-
-      Gets or sets the worksheet tab color. When retrieving the tab color, if the worksheet is invisible, the value will
-      be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned.
-      Otherwise, the property will be set to a color, in the form "\#123456" When setting the color, use an empty-string
-      to set an "auto" color, or a real color otherwise.
+      The tab color of the worksheet. When retrieving the tab color, if the worksheet is invisible, the value will be
+      null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned. Otherwise,
+      the property will be set to a color, in the form "\#123456" When setting the color, use an empty-string to set an
+      "auto" color, or a real color otherwise.
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

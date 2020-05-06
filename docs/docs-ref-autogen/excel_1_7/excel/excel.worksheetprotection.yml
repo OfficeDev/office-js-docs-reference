@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'excel!OfficeExtension.ClientObject:class'
+      - 'office!OfficeExtension.ClientObject:class'
     package: excel!
     children:
       - 'excel!Excel.WorksheetProtection#context:member'
@@ -109,7 +109,7 @@ items:
                       }
   - uid: 'excel!Excel.WorksheetProtection#options:member'
     summary: |-
-      Sheet protection options. Read-only.
+      Specifies the protection options for the worksheet.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: options
@@ -195,7 +195,7 @@ items:
             - string
   - uid: 'excel!Excel.WorksheetProtection#protected:member'
     summary: |-
-      Indicates if the worksheet is protected. Read-only.
+      Specifies if the worksheet is protected.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protected
@@ -282,7 +282,7 @@ items:
           type:
             - string
 references:
-  - uid: 'excel!OfficeExtension.ClientObject:class'
+  - uid: 'office!OfficeExtension.ClientObject:class'
     name: OfficeExtension.ClientObject
   - uid: 'excel!Excel.RequestContext:class'
     name: RequestContext
