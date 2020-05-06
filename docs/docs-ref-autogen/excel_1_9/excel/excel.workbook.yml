@@ -583,7 +583,7 @@ items:
           ```
   - uid: 'excel!Excel.Workbook#protection:member'
     summary: |-
-      Returns workbook protection object for a workbook.
+      Returns the protection object for a workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protection

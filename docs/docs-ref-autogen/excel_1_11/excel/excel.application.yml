@@ -195,7 +195,7 @@ items:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/culture-info.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/culture-info.yaml
 
           await Excel.run(async (context) => {
             context.application.load("decimalSeparator,thousandsSeparator");

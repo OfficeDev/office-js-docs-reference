@@ -166,7 +166,7 @@ items:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/workbook-save-and-close.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/workbook-save-and-close.yaml
 
           await Excel.run(async (context) => {
               context.workbook.close(Excel.CloseBehavior.save);
@@ -716,7 +716,7 @@ items:
           ```
   - uid: 'excel!Excel.Workbook#protection:member'
     summary: |-
-      Returns workbook protection object for a workbook.
+      Returns the protection object for a workbook.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protection
@@ -768,7 +768,7 @@ items:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/workbook-save-and-close.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/workbook-save-and-close.yaml
 
           await Excel.run(async (context) => {
               context.workbook.save(Excel.SaveBehavior.save);

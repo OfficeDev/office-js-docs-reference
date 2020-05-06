@@ -143,7 +143,8 @@ items:
   - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#firstSliceAngle:member'
     summary: >-
       Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies
-      only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
+      only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360.Specifies if the negative DataBar has
+      the same fill color as the positive DataBar.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -377,7 +378,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#splitType:member'
     summary: |-
-      Specifies the way the two sections of either a pie of pie chart or a bar of pie chart are split.
+      Specifies the way the two sections of either a pie-of-pie chart or a bar-of-pie chart are split.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: splitType

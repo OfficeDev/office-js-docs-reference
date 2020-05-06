@@ -7181,7 +7181,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.ChartFont#color:member",
-                  "docComment": "/**\n * HTML color code representation of the text color. e.g., #FF0000 represents Red.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * HTML color code representation of the text color (e.g., #FF0000 represents Red).\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19687,7 +19687,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartFontData#color:member",
-                      "docComment": "/**\n * HTML color code representation of the text color. e.g., #FF0000 represents Red.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * HTML color code representation of the text color (e.g., #FF0000 represents Red).\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -19883,7 +19883,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartFontLoadOptions#color:member",
-                      "docComment": "/**\n * HTML color code representation of the text color. e.g., #FF0000 represents Red.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * HTML color code representation of the text color (e.g., #FF0000 represents Red).\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -20049,7 +20049,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.ChartFontUpdateData#color:member",
-                      "docComment": "/**\n * HTML color code representation of the text color. e.g., #FF0000 represents Red.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * HTML color code representation of the text color (e.g., #FF0000 represents Red).\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28507,7 +28507,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFontData#color:member",
-                      "docComment": "/**\n * HTML color code representation of the text color. e.g., #FF0000 represents Red.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * HTML color code representation of the text color (e.g., #FF0000 represents Red).\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28703,7 +28703,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFontLoadOptions#color:member",
-                      "docComment": "/**\n * HTML color code representation of the text color. e.g., #FF0000 represents Red.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * HTML color code representation of the text color (e.g., #FF0000 represents Red).\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -28869,7 +28869,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "excel!Excel.Interfaces.RangeFontUpdateData#color:member",
-                      "docComment": "/**\n * HTML color code representation of the text color. e.g., #FF0000 represents Red.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * HTML color code representation of the text color (e.g., #FF0000 represents Red).\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -38379,7 +38379,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "excel!Excel.RangeFont#color:member",
-                  "docComment": "/**\n * HTML color code representation of the text color. e.g., #FF0000 represents Red.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * HTML color code representation of the text color (e.g., #FF0000 represents Red).\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

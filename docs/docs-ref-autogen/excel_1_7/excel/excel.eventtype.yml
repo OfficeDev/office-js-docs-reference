@@ -96,8 +96,8 @@ items:
     numericValue: '"ChartDeleted"'
   - uid: 'excel!Excel.EventType.commentAdded:member'
     summary: >-
-      CommentAdded represents the type of event that is registered on commentCollection, and occurs when comment(s)
-      is(are) added.
+      CommentAdded represents the type of event that is registered on commentCollection, and occurs when comments are
+      added.
     name: commentAdded
     fullName: commentAdded
     langs:
@@ -106,8 +106,8 @@ items:
     numericValue: '"CommentAdded"'
   - uid: 'excel!Excel.EventType.commentChanged:member'
     summary: >-
-      CommentChanged represents the type of event that is registered on commentCollection, and occurs when comment(s)
-      is(are) changed.
+      CommentChanged represents the type of event that is registered on commentCollection, and occurs when comments are
+      changed.
     name: commentChanged
     fullName: commentChanged
     langs:
@@ -116,8 +116,8 @@ items:
     numericValue: '"CommentChanged"'
   - uid: 'excel!Excel.EventType.commentDeleted:member'
     summary: >-
-      CommentDeleted represents the type of event that is registered on commentCollection, and occurs when comment(s)
-      is(are) deleted.
+      CommentDeleted represents the type of event that is registered on commentCollection, and occurs when comments are
+      deleted.
     name: commentDeleted
     fullName: commentDeleted
     langs:

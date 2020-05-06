@@ -66,7 +66,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#gradientFill:member'
     summary: |-
-      specifies if the DataBar has a gradient.
+      Specifies if the DataBar has a gradient.
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientFill

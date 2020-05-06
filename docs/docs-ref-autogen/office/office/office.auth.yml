@@ -30,7 +30,7 @@ items:
 
 
       **Requirement set**:
-      [IdentityAPI](https://docs.microsoft.com/en-us/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets)
+      [IdentityAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets)
 
 
       This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users
@@ -92,7 +92,7 @@ items:
 
 
       **Requirement set**:
-      [IdentityAPI](https://docs.microsoft.com/en-us/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets)
+      [IdentityAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets)
 
 
       This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users

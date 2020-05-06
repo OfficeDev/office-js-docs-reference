@@ -854,7 +854,7 @@ export declare namespace Excel {
         readonly properties: Excel.DocumentProperties;
         /**
          *
-         * Returns workbook protection object for a workbook.
+         * Returns the protection object for a workbook.
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -4288,7 +4288,7 @@ export declare namespace Excel {
         bold: boolean;
         /**
          *
-         * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+         * HTML color code representation of the text color (e.g., #FF0000 represents Red).
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -5201,14 +5201,14 @@ export declare namespace Excel {
         hasDataLabel: boolean;
         /**
          *
-         * HTML color code representation of the marker background color of data point. e.g., #FF0000 represents Red.
+         * HTML color code representation of the marker background color of data point (e.g., #FF0000 represents Red).
          *
          * [Api set: ExcelApi 1.7]
          */
         markerBackgroundColor: string;
         /**
          *
-         * HTML color code representation of the marker foreground color of data point. e.g., #FF0000 represents Red.
+         * HTML color code representation of the marker foreground color of data point (e.g., #FF0000 represents Red).
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -7120,7 +7120,7 @@ export declare namespace Excel {
         bold: boolean;
         /**
          *
-         * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+         * HTML color code representation of the text color (e.g., #FF0000 represents Red).
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -8985,7 +8985,7 @@ export declare namespace Excel {
         fillColor: string;
         /**
          *
-         * specifies if the DataBar has a gradient.
+         * Specifies if the DataBar has a gradient.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -9064,7 +9064,7 @@ export declare namespace Excel {
         matchPositiveBorderColor: boolean;
         /**
          *
-         * Specified if the negative DataBar has the same fill color as the positive DataBar.
+         * Specifies if the negative DataBar has the same fill color as the positive DataBar.
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -9943,7 +9943,7 @@ export declare namespace Excel {
         bold: boolean;
         /**
          *
-         * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+         * HTML color code representation of the text color (e.g., #FF0000 represents Red).
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -11736,17 +11736,17 @@ export declare namespace Excel {
         worksheetRowHiddenChanged = "WorksheetRowHiddenChanged",
         recordingStateChangedEvent = "RecordingStateChangedEvent",
         /**
-         * CommentAdded represents the type of event that is registered on commentCollection, and occurs when comment(s) is(are) added.
+         * CommentAdded represents the type of event that is registered on commentCollection, and occurs when comments are added.
          *
          */
         commentAdded = "CommentAdded",
         /**
-         * CommentDeleted represents the type of event that is registered on commentCollection, and occurs when comment(s) is(are) deleted.
+         * CommentDeleted represents the type of event that is registered on commentCollection, and occurs when comments are deleted.
          *
          */
         commentDeleted = "CommentDeleted",
         /**
-         * CommentChanged represents the type of event that is registered on commentCollection, and occurs when comment(s) is(are) changed.
+         * CommentChanged represents the type of event that is registered on commentCollection, and occurs when comments are changed.
          *
          */
         commentChanged = "CommentChanged",
@@ -15945,7 +15945,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+             * HTML color code representation of the text color (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -16285,14 +16285,14 @@ export declare namespace Excel {
             hasDataLabel?: boolean;
             /**
              *
-             * HTML color code representation of the marker background color of data point. e.g., #FF0000 represents Red.
+             * HTML color code representation of the marker background color of data point (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.7]
              */
             markerBackgroundColor?: string;
             /**
              *
-             * HTML color code representation of the marker foreground color of data point. e.g., #FF0000 represents Red.
+             * HTML color code representation of the marker foreground color of data point (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -17044,7 +17044,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+             * HTML color code representation of the text color (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -17581,7 +17581,7 @@ export declare namespace Excel {
             fillColor?: string;
             /**
              *
-             * specifies if the DataBar has a gradient.
+             * Specifies if the DataBar has a gradient.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -17613,7 +17613,7 @@ export declare namespace Excel {
             matchPositiveBorderColor?: boolean;
             /**
              *
-             * Specified if the negative DataBar has the same fill color as the positive DataBar.
+             * Specifies if the negative DataBar has the same fill color as the positive DataBar.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -17811,7 +17811,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+             * HTML color code representation of the text color (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -18307,7 +18307,7 @@ export declare namespace Excel {
             properties?: Excel.Interfaces.DocumentPropertiesData;
             /**
             *
-            * Returns workbook protection object for a workbook.
+            * Returns the protection object for a workbook.
             *
             * [Api set: ExcelApi 1.7]
             */
@@ -19261,7 +19261,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+             * HTML color code representation of the text color (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -19629,14 +19629,14 @@ export declare namespace Excel {
             hasDataLabel?: boolean;
             /**
              *
-             * HTML color code representation of the marker background color of data point. e.g., #FF0000 represents Red.
+             * HTML color code representation of the marker background color of data point (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.7]
              */
             markerBackgroundColor?: string;
             /**
              *
-             * HTML color code representation of the marker foreground color of data point. e.g., #FF0000 represents Red.
+             * HTML color code representation of the marker foreground color of data point (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -20473,7 +20473,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+             * HTML color code representation of the text color (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -21150,7 +21150,7 @@ export declare namespace Excel {
             fillColor?: string;
             /**
              *
-             * specifies if the DataBar has a gradient.
+             * Specifies if the DataBar has a gradient.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -21182,7 +21182,7 @@ export declare namespace Excel {
             matchPositiveBorderColor?: boolean;
             /**
              *
-             * Specified if the negative DataBar has the same fill color as the positive DataBar.
+             * Specifies if the negative DataBar has the same fill color as the positive DataBar.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -21387,7 +21387,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+             * HTML color code representation of the text color (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -21955,7 +21955,7 @@ export declare namespace Excel {
             properties?: Excel.Interfaces.DocumentPropertiesLoadOptions;
             /**
             *
-            * Returns workbook protection object for a workbook.
+            * Returns the protection object for a workbook.
             *
             * [Api set: ExcelApi 1.7]
             */
@@ -23520,7 +23520,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+             * HTML color code representation of the text color (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -24191,14 +24191,14 @@ export declare namespace Excel {
             hasDataLabel?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: HTML color code representation of the marker background color of data point. e.g., #FF0000 represents Red.
+             * For EACH ITEM in the collection: HTML color code representation of the marker background color of data point (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.7]
              */
             markerBackgroundColor?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: HTML color code representation of the marker foreground color of data point. e.g., #FF0000 represents Red.
+             * For EACH ITEM in the collection: HTML color code representation of the marker foreground color of data point (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -24259,14 +24259,14 @@ export declare namespace Excel {
             hasDataLabel?: boolean;
             /**
              *
-             * HTML color code representation of the marker background color of data point. e.g., #FF0000 represents Red.
+             * HTML color code representation of the marker background color of data point (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.7]
              */
             markerBackgroundColor?: boolean;
             /**
              *
-             * HTML color code representation of the marker foreground color of data point. e.g., #FF0000 represents Red.
+             * HTML color code representation of the marker foreground color of data point (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -25279,7 +25279,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+             * HTML color code representation of the text color (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -26257,7 +26257,7 @@ export declare namespace Excel {
             fillColor?: boolean;
             /**
              *
-             * specifies if the DataBar has a gradient.
+             * Specifies if the DataBar has a gradient.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -26298,7 +26298,7 @@ export declare namespace Excel {
             matchPositiveBorderColor?: boolean;
             /**
              *
-             * Specified if the negative DataBar has the same fill color as the positive DataBar.
+             * Specifies if the negative DataBar has the same fill color as the positive DataBar.
              *
              * [Api set: ExcelApi 1.6]
              */
@@ -26593,7 +26593,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+             * HTML color code representation of the text color (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.6]
              */

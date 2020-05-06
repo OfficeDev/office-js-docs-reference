@@ -33,7 +33,7 @@ items:
           - boolean
   - uid: 'excel!Excel.Interfaces.ConditionalRangeFontUpdateData#color:member'
     summary: |-
-      HTML color code representation of the text color. e.g., \#FF0000 represents Red.
+      HTML color code representation of the text color (e.g., \#FF0000 represents Red).
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color

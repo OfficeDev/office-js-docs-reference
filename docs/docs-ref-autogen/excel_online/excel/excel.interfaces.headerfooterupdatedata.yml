@@ -18,7 +18,7 @@ items:
   - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#centerFooter:member'
     summary: >-
       The center footer of the worksheet. To apply font formatting or insert a variable value, use format codes
-      specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+      specified here: https://msdn.microsoft.com/library/bb225426.aspx.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -35,7 +35,7 @@ items:
   - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#centerHeader:member'
     summary: >-
       The center header of the worksheet. To apply font formatting or insert a variable value, use format codes
-      specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+      specified here: https://msdn.microsoft.com/library/bb225426.aspx.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -52,7 +52,7 @@ items:
   - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#leftFooter:member'
     summary: >-
       The left footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified
-      here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+      here: https://msdn.microsoft.com/library/bb225426.aspx.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -69,7 +69,7 @@ items:
   - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#leftHeader:member'
     summary: >-
       The left header of the worksheet. To apply font formatting or insert a variable value, use format codes specified
-      here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+      here: https://msdn.microsoft.com/library/bb225426.aspx.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -86,7 +86,7 @@ items:
   - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#rightFooter:member'
     summary: >-
       The right footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified
-      here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+      here: https://msdn.microsoft.com/library/bb225426.aspx.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -103,7 +103,7 @@ items:
   - uid: 'excel!Excel.Interfaces.HeaderFooterUpdateData#rightHeader:member'
     summary: >-
       The right header of the worksheet. To apply font formatting or insert a variable value, use format codes specified
-      here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+      here: https://msdn.microsoft.com/library/bb225426.aspx.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

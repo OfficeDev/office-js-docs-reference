@@ -48,7 +48,7 @@ items:
   - uid: 'excel!Excel.Interfaces.ChartUpdateData#categoryLabelLevel:member'
     summary: >-
       Specifies a ChartCategoryLabelLevel enumeration constant referring to the level of where the category labels are
-      being sourced from. Read/Write.
+      being sourced from.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

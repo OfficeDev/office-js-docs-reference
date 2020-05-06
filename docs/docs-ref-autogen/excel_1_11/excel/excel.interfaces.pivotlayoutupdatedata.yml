@@ -18,7 +18,7 @@ items:
       - 'excel!Excel.Interfaces.PivotLayoutUpdateData#subtotalLocation:member'
   - uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData#autoFormat:member'
     summary: |-
-      Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved
+      Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoFormat

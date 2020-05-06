@@ -168,7 +168,7 @@ items:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/workbook-save-and-close.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/workbook-save-and-close.yaml
 
           await Excel.run(async (context) => {
               context.workbook.close(Excel.CloseBehavior.save);
@@ -770,7 +770,7 @@ items:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/workbook-save-and-close.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/workbook-save-and-close.yaml
 
           await Excel.run(async (context) => {
               context.workbook.save(Excel.SaveBehavior.save);

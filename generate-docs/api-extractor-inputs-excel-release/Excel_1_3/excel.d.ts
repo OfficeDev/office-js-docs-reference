@@ -3082,7 +3082,7 @@ export declare namespace Excel {
         bold: boolean;
         /**
          *
-         * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+         * HTML color code representation of the text color (e.g., #FF0000 represents Red).
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -5072,7 +5072,7 @@ export declare namespace Excel {
         bold: boolean;
         /**
          *
-         * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+         * HTML color code representation of the text color (e.g., #FF0000 represents Red).
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -10337,7 +10337,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+             * HTML color code representation of the text color (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -11044,7 +11044,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+             * HTML color code representation of the text color (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -12444,7 +12444,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+             * HTML color code representation of the text color (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -13192,7 +13192,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+             * HTML color code representation of the text color (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -15248,7 +15248,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+             * HTML color code representation of the text color (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -16317,7 +16317,7 @@ export declare namespace Excel {
             bold?: boolean;
             /**
              *
-             * HTML color code representation of the text color. e.g., #FF0000 represents Red.
+             * HTML color code representation of the text color (e.g., #FF0000 represents Red).
              *
              * [Api set: ExcelApi 1.1]
              */

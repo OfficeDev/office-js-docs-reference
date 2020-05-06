@@ -129,7 +129,7 @@ items:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/culture-info.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/culture-info.yaml
 
           // This will convert a number like "14,37" to "14.37"
 
@@ -191,7 +191,7 @@ items:
           ```typescript
 
           // Link to full sample:
-          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/85-preview-apis/culture-info.yaml
+          https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/excel/50-workbook/culture-info.yaml
 
           await Excel.run(async (context) => {
             // This will convert a number like "123-456-789" to "123,456,789"
