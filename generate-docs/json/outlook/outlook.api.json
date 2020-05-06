@@ -7565,6 +7565,33 @@
                 },
                 {
                   "kind": "MethodSignature",
+                  "canonicalReference": "outlook!Office.CustomProperties#getAll:member(1)",
+                  "docComment": "/**\n * Returns an object with all custom properties in a collection of name/value pairs. The following are equivalent.\n *\n * `customProps.get(\"name\")`\n *\n * `var dictionary = customProps.getAll(); dictionary[\"name\"]`\n *\n * The dictionary object can be iterated through to discover all `names` and `values`.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @returns An object with all custom properties in a collection of name/value pairs.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "getAll(): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "any"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 1,
+                  "parameters": [],
+                  "name": "getAll"
+                },
+                {
+                  "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.CustomProperties#remove:member(1)",
                   "docComment": "/**\n * Removes the specified property from the custom property collection.\n *\n * To make the removal of the property permanent, you must call the `saveAsync` method of the `CustomProperties` object.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @param name - The `name` of the property to be removed.\n */\n",
                   "excerptTokens": [
