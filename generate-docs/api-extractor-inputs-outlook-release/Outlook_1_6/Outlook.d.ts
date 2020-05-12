@@ -732,7 +732,7 @@ export declare namespace Office {
          *
          * **Note**: The following clients have different behavior for `saveAsync` on appointments in compose mode:
          *
-         * - In Outlook on Mac, only preview build 16.35.205.0 or later with an Office 365 subscription supports saving a meeting.
+         * - In Outlook on Mac, only build 16.35.308 or later supports saving a meeting.
          * Otherwise, the `saveAsync` method fails when called from a meeting in compose mode.
          * For a workaround, see {@link https://support.microsoft.com/help/4505745 | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.
          *
@@ -772,7 +772,7 @@ export declare namespace Office {
          *
          * **Note**: The following clients have different behavior for `saveAsync` on appointments in compose mode:
          *
-         * - In Outlook on Mac, only preview build 16.35.205.0 or later with an Office 365 subscription supports saving a meeting.
+         * - In Outlook on Mac, only build 16.35.308 or later supports saving a meeting.
          * Otherwise, the `saveAsync` method fails when called from a meeting in compose mode.
          * For a workaround, see {@link https://support.microsoft.com/help/4505745 | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.
          *
