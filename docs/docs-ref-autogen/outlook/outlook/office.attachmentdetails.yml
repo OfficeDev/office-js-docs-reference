@@ -5,6 +5,8 @@ items:
       Represents an attachment on an item from the server. Read mode only.
 
       An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -60,7 +62,6 @@ items:
       - 'outlook!Office.AttachmentDetails#isInline:member'
       - 'outlook!Office.AttachmentDetails#name:member'
       - 'outlook!Office.AttachmentDetails#size:member'
-      - 'outlook!Office.AttachmentDetails#url:member'
   - uid: 'outlook!Office.AttachmentDetails#attachmentType:member'
     summary: Gets a value that indicates the type of an attachment.
     name: attachmentType
@@ -74,10 +75,7 @@ items:
         type:
           - 'outlook!Office.AttachmentDetails#attachmentType~0:complex'
   - uid: 'outlook!Office.AttachmentDetails#contentType:member'
-    summary: |-
-      Gets the MIME content type of the attachment.
-
-      This property is only available in Read mode.
+    summary: Gets the MIME content type of the attachment.
     name: contentType
     fullName: contentType
     langs:
@@ -89,7 +87,9 @@ items:
         type:
           - string
   - uid: 'outlook!Office.AttachmentDetails#id:member'
-    summary: Gets the Exchange attachment ID of the attachment.
+    summary: >-
+      Gets the Exchange attachment ID of the attachment. However, if the attachment type is
+      `MailboxEnums.AttachmentType.Cloud`<!-- -->, then a URL for the file is returned.
     name: id
     fullName: id
     langs:
@@ -141,21 +141,6 @@ items:
       return:
         type:
           - number
-  - uid: 'outlook!Office.AttachmentDetails#url:member'
-    summary: |-
-      Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`<!-- -->.
-
-      \[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    name: url
-    fullName: url
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'url: string;'
-      return:
-        type:
-          - string
 references:
   - uid: 'outlook!Office.AttachmentDetails#attachmentType~0:complex'
     name: MailboxEnums.AttachmentType | string
