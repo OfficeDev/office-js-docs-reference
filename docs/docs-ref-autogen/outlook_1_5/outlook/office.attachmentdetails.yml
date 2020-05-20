@@ -5,6 +5,8 @@ items:
       Represents an attachment on an item from the server. Read mode only.
 
       An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -73,10 +75,7 @@ items:
         type:
           - 'outlook!Office.AttachmentDetails#attachmentType~0:complex'
   - uid: 'outlook!Office.AttachmentDetails#contentType:member'
-    summary: |-
-      Gets the MIME content type of the attachment.
-
-      This property is only available in Read mode.
+    summary: Gets the MIME content type of the attachment.
     name: contentType
     fullName: contentType
     langs:
@@ -88,7 +87,9 @@ items:
         type:
           - string
   - uid: 'outlook!Office.AttachmentDetails#id:member'
-    summary: Gets the Exchange attachment ID of the attachment.
+    summary: >-
+      Gets the Exchange attachment ID of the attachment. However, if the attachment type is
+      `MailboxEnums.AttachmentType.Cloud`<!-- -->, then a URL for the file is returned.
     name: id
     fullName: id
     langs:
