@@ -14,6 +14,7 @@ items:
       - 'outlook!Office.AppointmentTimeChangedEventArgs:interface'
       - 'outlook!Office.AttachmentContent:interface'
       - 'outlook!Office.AttachmentDetails:interface'
+      - 'outlook!Office.AttachmentDetailsCompose:interface'
       - 'outlook!Office.AttachmentsChangedEventArgs:interface'
       - 'outlook!Office.Body:interface'
       - 'outlook!Office.Categories:interface'
@@ -96,6 +97,8 @@ references:
     name: Office.AttachmentContent
   - uid: 'outlook!Office.AttachmentDetails:interface'
     name: Office.AttachmentDetails
+  - uid: 'outlook!Office.AttachmentDetailsCompose:interface'
+    name: Office.AttachmentDetailsCompose
   - uid: 'outlook!Office.AttachmentsChangedEventArgs:interface'
     name: Office.AttachmentsChangedEventArgs
   - uid: 'outlook!Office.Body:interface'

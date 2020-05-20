@@ -24,7 +24,13 @@ export declare namespace Office {
              */
             Item = "item",
             /**
-             * The attachment is stored in a cloud location, such as OneDrive. The `id` property of the attachment contains a URL to the file.
+             * The attachment is stored in a cloud location, such as OneDrive.
+             *
+             * **Important**: In Read mode, the `id` property of the attachment's {@link Office.AttachmentDetails | details} object
+             * contains a URL to the file.
+             * From requirement set 1.8, the `url` property included in the attachment's
+             * {@link https://docs.microsoft.com/javascript/api/outlook/office.attachmentdetailscompose?view=outlook-js-1.8 | details} object
+             * contains a URL to the file in Compose mode.
              */
             Cloud = "cloud"
         }
@@ -1214,15 +1220,18 @@ export declare namespace Office {
     }
     
     
+    
     /**
      * Represents an attachment on an item from the server. Read mode only.
      *
      * An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.
      *
+     * [Api set: Mailbox 1.1]
+     *
      * @remarks
-     * 
+     *
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-     * 
+     *
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
      */
     export interface AttachmentDetails {
@@ -1232,12 +1241,11 @@ export declare namespace Office {
         attachmentType: MailboxEnums.AttachmentType | string;
         /**
          * Gets the MIME content type of the attachment.
-         * 
-         * This property is only available in Read mode.
          */
         contentType: string;
         /**
          * Gets the Exchange attachment ID of the attachment.
+         * However, if the attachment type is `MailboxEnums.AttachmentType.Cloud`, then a URL for the file is returned.
          */
         id: string;
         /**
@@ -1246,7 +1254,7 @@ export declare namespace Office {
         isInline: boolean;
         /**
          * Gets the name of the attachment.
-         * 
+         *
          * **Important**: For message or appointment items that were attached by drag-and-drop or "Attach Item",
          * `name` includes a file extension in Outlook on Mac, but excludes the extension on the web or Windows.
          */
@@ -1255,7 +1263,6 @@ export declare namespace Office {
          * Gets the size of the attachment in bytes.
          */
         size: number;
-        
     }
     
     /**
@@ -2834,7 +2841,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-		 *
+         *
          * The `itemClass` property specifies the message class of the selected item.
          * The following are the default message classes for the message or appointment item.
          * 

@@ -1350,7 +1350,7 @@ items:
     syntax:
       content: >-
         getAttachmentsAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<AttachmentDetails[]>) => void): void;
+        Office.AsyncResult<AttachmentDetailsCompose[]>) => void): void;
       return:
         type:
           - void
@@ -1416,7 +1416,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAttachmentsAsync(callback?: (asyncResult: Office.AsyncResult<AttachmentDetails[]>) => void): void;'
+      content: 'getAttachmentsAsync(callback?: (asyncResult: Office.AsyncResult<AttachmentDetailsCompose[]>) => void): void;'
       return:
         type:
           - void
@@ -3505,8 +3505,8 @@ references:
       - name: '>) => void'
         fullName: '>) => void'
   - uid: 'outlook!Office.AppointmentCompose#getAttachmentsAsync~0:complex'
-    name: '(asyncResult: Office.AsyncResult<AttachmentDetails[]>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<Office.AttachmentDetails[]>) => void'
+    name: '(asyncResult: Office.AsyncResult<AttachmentDetailsCompose[]>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<Office.AttachmentDetailsCompose[]>) => void'
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
@@ -3515,14 +3515,14 @@ references:
         fullName: Office.AsyncResult
       - name: <
         fullName: <
-      - uid: 'outlook!Office.AttachmentDetails:interface'
-        name: AttachmentDetails
-        fullName: Office.AttachmentDetails
+      - uid: 'outlook!Office.AttachmentDetailsCompose:interface'
+        name: AttachmentDetailsCompose
+        fullName: Office.AttachmentDetailsCompose
       - name: '[]>) => void'
         fullName: '[]>) => void'
   - uid: 'outlook!Office.AppointmentCompose#getAttachmentsAsync~1:complex'
-    name: '(asyncResult: Office.AsyncResult<AttachmentDetails[]>) => void'
-    fullName: '(asyncResult: Office.AsyncResult<Office.AttachmentDetails[]>) => void'
+    name: '(asyncResult: Office.AsyncResult<AttachmentDetailsCompose[]>) => void'
+    fullName: '(asyncResult: Office.AsyncResult<Office.AttachmentDetailsCompose[]>) => void'
     spec.typeScript:
       - name: '(asyncResult: '
         fullName: '(asyncResult: '
@@ -3531,9 +3531,9 @@ references:
         fullName: Office.AsyncResult
       - name: <
         fullName: <
-      - uid: 'outlook!Office.AttachmentDetails:interface'
-        name: AttachmentDetails
-        fullName: Office.AttachmentDetails
+      - uid: 'outlook!Office.AttachmentDetailsCompose:interface'
+        name: AttachmentDetailsCompose
+        fullName: Office.AttachmentDetailsCompose
       - name: '[]>) => void'
         fullName: '[]>) => void'
   - uid: 'outlook!Office.AppointmentCompose#getItemIdAsync~0:complex'

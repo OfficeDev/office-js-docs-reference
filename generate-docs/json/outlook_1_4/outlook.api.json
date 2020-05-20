@@ -2579,7 +2579,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.AttachmentDetails:interface",
-              "docComment": "/**\n * Represents an attachment on an item from the server. Read mode only.\n *\n * An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read\n */\n",
+              "docComment": "/**\n * Represents an attachment on an item from the server. Read mode only.\n *\n * An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -2622,7 +2622,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AttachmentDetails#contentType:member",
-                  "docComment": "/**\n * Gets the MIME content type of the attachment.\n *\n * This property is only available in Read mode.\n */\n",
+                  "docComment": "/**\n * Gets the MIME content type of the attachment.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2647,7 +2647,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AttachmentDetails#id:member",
-                  "docComment": "/**\n * Gets the Exchange attachment ID of the attachment.\n */\n",
+                  "docComment": "/**\n * Gets the Exchange attachment ID of the attachment. However, if the attachment type is `MailboxEnums.AttachmentType.Cloud`, then a URL for the file is returned.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5833,7 +5833,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.AttachmentType.Cloud:member",
-                      "docComment": "/**\n * The attachment is stored in a cloud location, such as OneDrive. The `id` property of the attachment contains a URL to the file.\n */\n",
+                      "docComment": "/**\n * The attachment is stored in a cloud location, such as OneDrive.\n *\n * **Important**: In Read mode, the `id` property of the attachment's {@link Office.AttachmentDetails | details} object contains a URL to the file. From requirement set 1.8, the `url` property included in the attachment's {@link https://docs.microsoft.com/javascript/api/outlook/office.attachmentdetailscompose?view=outlook-js-1.8 | details} object contains a URL to the file in Compose mode.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
