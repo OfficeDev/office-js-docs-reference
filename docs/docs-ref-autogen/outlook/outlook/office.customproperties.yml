@@ -87,6 +87,8 @@ items:
       `var dictionary = customProps.getAll(); dictionary["name"]`
 
       The dictionary object can be iterated through to discover all `names` and `values`<!-- -->.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
       level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
@@ -96,6 +98,7 @@ items:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
+    isPreview: true
     name: getAll()
     fullName: getAll()
     langs:
