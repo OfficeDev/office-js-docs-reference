@@ -809,8 +809,8 @@ items:
       message.
 
 
-      By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following
-      limits apply.
+      By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, Windows, and
+      Mac, the following limits apply.
 
 
       - Get 500 members maximum.
@@ -1065,8 +1065,8 @@ items:
 
 
       The `cc` property returns a [Recipients](xref:outlook!Office.Recipients:interface) object that provides methods to
-      get or update the recipients on the Cc line of the message. By default, the collection is limited to a maximum of
-      100 members. However, on Windows and Mac, the following limits apply.
+      get or update the recipients on the **Cc** line of the message. By default, the collection is limited to a maximum
+      of 100 members. However, in Outlook on the web, Windows, and Mac, the following limits apply.
 
 
       - Get 500 members maximum.
@@ -3426,9 +3426,9 @@ items:
       the mode of the current item.
 
 
-      The `to` property returns a `Recipients` object that provides methods to get or update the recipients on the To
-      line of the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and
-      Mac, the following limits apply.
+      The `to` property returns a [Recipients](xref:outlook!Office.Recipients:interface) object that provides methods to
+      get or update the recipients on the **To** line of the message. By default, the collection is limited to a maximum
+      of 100 members. However, in Outlook on the web, Windows, and Mac, the following limits apply.
 
 
       - Get 500 members maximum.
