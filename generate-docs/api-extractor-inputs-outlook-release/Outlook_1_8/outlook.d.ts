@@ -3231,7 +3231,7 @@ export declare namespace Office {
         /**
          * Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`.
          */
-        url: string;
+        url?: string;
     }
     /**
      * Represents an attachment on an item from the server. Read mode only.
