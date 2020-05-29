@@ -254,6 +254,14 @@
       },
       {
         "files": [
+          "overview.md"
+        ],
+        "group": "outlook-js-1.1",
+        "src": "docs-ref-autogen/overview",
+        "dest": "api"
+      },
+      {
+        "files": [
           "toc.yml"
         ],
         "group": "outlook-js-1.1",
@@ -285,6 +293,14 @@
         ],
         "group": "outlook-js-1.2",
         "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "overview.md"
+        ],
+        "group": "outlook-js-1.2",
+        "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
       {
@@ -324,6 +340,14 @@
       },
       {
         "files": [
+          "overview.md"
+        ],
+        "group": "outlook-js-1.3",
+        "src": "docs-ref-autogen/overview",
+        "dest": "api"
+      },
+      {
+        "files": [
           "toc.yml"
         ],
         "group": "outlook-js-1.3",
@@ -355,6 +379,14 @@
         ],
         "group": "outlook-js-1.4",
         "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "overview.md"
+        ],
+        "group": "outlook-js-1.4",
+        "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
       {
@@ -394,6 +426,14 @@
       },
       {
         "files": [
+          "overview.md"
+        ],
+        "group": "outlook-js-1.5",
+        "src": "docs-ref-autogen/overview",
+        "dest": "api"
+      },
+      {
+        "files": [
           "toc.yml"
         ],
         "group": "outlook-js-1.5",
@@ -425,6 +465,14 @@
         ],
         "group": "outlook-js-1.6",
         "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "overview.md"
+        ],
+        "group": "outlook-js-1.6",
+        "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
       {
@@ -464,6 +512,14 @@
       },
       {
         "files": [
+          "overview.md"
+        ],
+        "group": "outlook-js-1.7",
+        "src": "docs-ref-autogen/overview",
+        "dest": "api"
+      },
+      {
+        "files": [
           "toc.yml"
         ],
         "group": "outlook-js-1.7",
@@ -495,6 +551,14 @@
         ],
         "group": "outlook-js-1.8",
         "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "overview.md"
+        ],
+        "group": "outlook-js-1.8",
+        "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
       {
@@ -542,6 +606,14 @@
       },
       {
         "files": [
+          "overview.md"
+        ],
+        "group": "excel-js-preview",
+        "src": "docs-ref-autogen/overview",
+        "dest": "api"
+      },
+      {
+        "files": [
           "toc.yml"
         ],
         "group": "excel-js-preview",
@@ -573,6 +645,14 @@
         ],
         "group": "excel-js-1.1",
         "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "overview.md"
+        ],
+        "group": "excel-js-1.1",
+        "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
       {
@@ -612,6 +692,14 @@
       },
       {
         "files": [
+          "overview.md"
+        ],
+        "group": "excel-js-1.2",
+        "src": "docs-ref-autogen/overview",
+        "dest": "api"
+      },
+      {
+        "files": [
           "toc.yml"
         ],
         "group": "excel-js-1.2",
@@ -643,6 +731,14 @@
         ],
         "group": "excel-js-1.3",
         "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "overview.md"
+        ],
+        "group": "excel-js-1.3",
+        "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
       {
@@ -682,6 +778,14 @@
     },
     {
       "files": [
+        "overview.md"
+      ],
+      "group": "excel-js-1.4",
+      "src": "docs-ref-autogen/overview",
+      "dest": "api"
+    },
+    {
+      "files": [
         "toc.yml"
       ],
       "group": "excel-js-1.4",
@@ -713,6 +817,14 @@
       ],
       "group": "excel-js-1.5",
       "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "overview.md"
+      ],
+      "group": "excel-js-1.5",
+      "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
     {
@@ -752,6 +864,14 @@
     },
     {
       "files": [
+        "overview.md"
+      ],
+      "group": "excel-js-1.6",
+      "src": "docs-ref-autogen/overview",
+      "dest": "api"
+    },
+    {
+      "files": [
         "toc.yml"
       ],
       "group": "excel-js-1.6",
@@ -783,6 +903,14 @@
       ],
       "group": "excel-js-1.7",
       "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "overview.md"
+      ],
+      "group": "excel-js-1.7",
+      "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
     {
@@ -822,6 +950,14 @@
     },
     {
       "files": [
+        "overview.md"
+      ],
+      "group": "excel-js-1.8",
+      "src": "docs-ref-autogen/overview",
+      "dest": "api"
+    },
+    {
+      "files": [
         "toc.yml"
       ],
       "group": "excel-js-1.8",
@@ -853,6 +989,14 @@
       ],
       "group": "excel-js-1.9",
       "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "overview.md"
+      ],
+      "group": "excel-js-1.9",
+      "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
     {
@@ -892,6 +1036,14 @@
     },
     {
       "files": [
+        "overview.md"
+      ],
+      "group": "excel-js-1.10",
+      "src": "docs-ref-autogen/overview",
+      "dest": "api"
+    },
+    {
+      "files": [
         "toc.yml"
       ],
       "group": "excel-js-1.10",
@@ -923,6 +1075,14 @@
       ],
       "group": "excel-js-1.11",
       "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "overview.md"
+      ],
+      "group": "excel-js-1.11",
+      "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
     {
@@ -962,6 +1122,14 @@
     },
     {
       "files": [
+        "overview.md"
+      ],
+      "group": "excel-js-online",
+      "src": "docs-ref-autogen/overview",
+      "dest": "api"
+    },
+    {
+      "files": [
         "toc.yml"
       ],
       "group": "excel-js-online",
@@ -993,6 +1161,14 @@
       ],
       "group": "onenote-js-1.1",
       "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "overview.md"
+      ],
+      "group": "onenote-js-1.1",
+      "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
     {
@@ -1032,6 +1208,14 @@
     },
     {
       "files": [
+        "overview.md"
+      ],
+      "group": "powerpoint-js-1.1",
+      "src": "docs-ref-autogen/overview",
+      "dest": "api"
+    },
+    {
+      "files": [
         "toc.yml"
       ],
       "group": "powerpoint-js-1.1",
@@ -1063,6 +1247,14 @@
       ],
       "group": "visio-js-1.1",
       "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "overview.md"
+      ],
+      "group": "visio-js-1.1",
+      "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
     {
@@ -1102,6 +1294,14 @@
     },
     {
       "files": [
+        "overview.md"
+      ],
+      "group": "word-js-preview",
+      "src": "docs-ref-autogen/overview",
+      "dest": "api"
+    },
+    {
+      "files": [
         "toc.yml"
       ],
       "group": "word-js-preview",
@@ -1133,6 +1333,14 @@
       ],
       "group": "word-js-1.1",
       "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "overview.md"
+      ],
+      "group": "word-js-1.1",
+      "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
     {
@@ -1172,6 +1380,14 @@
     },
     {
       "files": [
+        "overview.md"
+      ],
+      "group": "word-js-1.2",
+      "src": "docs-ref-autogen/overview",
+      "dest": "api"
+    },
+    {
+      "files": [
         "toc.yml"
       ],
       "group": "word-js-1.2",
@@ -1203,6 +1419,14 @@
       ],
       "group": "word-js-1.3",
       "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "overview.md"
+      ],
+      "group": "word-js-1.3",
+      "src": "docs-ref-autogen/overview",
       "dest": "api"
     },
     {
