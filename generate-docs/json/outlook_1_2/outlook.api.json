@@ -2380,7 +2380,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.AttachmentDetails:interface",
-              "docComment": "/**\n * Represents an attachment on an item from the server. Read mode only.\n *\n * An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read\n */\n",
+              "docComment": "/**\n * Represents an attachment on an item from the server. Read mode only.\n *\n * An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -2423,7 +2423,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AttachmentDetails#contentType:member",
-                  "docComment": "/**\n * Gets the MIME content type of the attachment.\n *\n * This property is only available in Read mode.\n */\n",
+                  "docComment": "/**\n * Gets the MIME content type of the attachment.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2448,7 +2448,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AttachmentDetails#id:member",
-                  "docComment": "/**\n * Gets the Exchange attachment ID of the attachment.\n */\n",
+                  "docComment": "/**\n * Gets the Exchange attachment ID of the attachment. However, if the attachment type is `MailboxEnums.AttachmentType.Cloud`, then a URL for the file is returned.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5189,7 +5189,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.AttachmentType.Cloud:member",
-                      "docComment": "/**\n * The attachment is stored in a cloud location, such as OneDrive. The `id` property of the attachment contains a URL to the file.\n */\n",
+                      "docComment": "/**\n * The attachment is stored in a cloud location, such as OneDrive.\n *\n * **Important**: In Read mode, the `id` property of the attachment's {@link Office.AttachmentDetails | details} object contains a URL to the file. From requirement set 1.8, the `url` property included in the attachment's {@link https://docs.microsoft.com/javascript/api/outlook/office.attachmentdetailscompose?view=outlook-js-1.8 | details} object contains a URL to the file in Compose mode.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -6424,7 +6424,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageCompose#bcc:member",
-                  "docComment": "/**\n * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message.\n *\n * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.\n *\n * - Get 500 members maximum.\n *\n * - Set a maximum of 100 members per call, up to 500 members total.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
+                  "docComment": "/**\n * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message.\n *\n * By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, Windows, and Mac, the following limits apply.\n *\n * - Get 500 members maximum.\n *\n * - Set a maximum of 100 members per call, up to 500 members total.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6476,7 +6476,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageCompose#cc:member",
-                  "docComment": "/**\n * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item.\n *\n * The `cc` property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the recipients on the Cc line of the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.\n *\n * - Get 500 members maximum.\n *\n * - Set a maximum of 100 members per call, up to 500 members total.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
+                  "docComment": "/**\n * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item.\n *\n * The `cc` property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the recipients on the **Cc** line of the message. By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, Windows, and Mac, the following limits apply.\n *\n * - Get 500 members maximum.\n *\n * - Set a maximum of 100 members per call, up to 500 members total.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7128,7 +7128,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageCompose#to:member",
-                  "docComment": "/**\n * Provides access to the recipients on the To line of a message. The type of object and level of access depends on the mode of the current item.\n *\n * The `to` property returns a `Recipients` object that provides methods to get or update the recipients on the To line of the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.\n *\n * - Get 500 members maximum.\n *\n * - Set a maximum of 100 members per call, up to 500 members total.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
+                  "docComment": "/**\n * Provides access to the recipients on the To line of a message. The type of object and level of access depends on the mode of the current item.\n *\n * The `to` property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the recipients on the **To** line of the message. By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, Windows, and Mac, the following limits apply.\n *\n * - Get 500 members maximum.\n *\n * - Set a maximum of 100 members per call, up to 500 members total.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7253,7 +7253,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageRead#cc:member",
-                  "docComment": "/**\n * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item.\n *\n * The `cc` property returns an array that contains an `EmailAddressDetails` object for each recipient listed on the Cc line of the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
+                  "docComment": "/**\n * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item.\n *\n * The `cc` property returns an array that contains an `EmailAddressDetails` object for each recipient listed on the Cc line of the message. By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, you can get 20 members maximum, while on Windows and Mac, you can get 500 members maximum.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -8077,7 +8077,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageRead#to:member",
-                  "docComment": "/**\n * Provides access to the recipients on the To line of a message. The type of object and level of access depends on the mode of the current item.\n *\n * The `to` property returns an array that contains an `EmailAddressDetails` object for each recipient listed on the To line of the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
+                  "docComment": "/**\n * Provides access to the recipients on the To line of a message. The type of object and level of access depends on the mode of the current item.\n *\n * The `to` property returns an array that contains an `EmailAddressDetails` object for each recipient listed on the To line of the message. By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, you can get 20 members maximum, while on Windows and Mac, you can get 500 members maximum.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

@@ -24,7 +24,13 @@ export declare namespace Office {
              */
             Item = "item",
             /**
-             * The attachment is stored in a cloud location, such as OneDrive. The `id` property of the attachment contains a URL to the file.
+             * The attachment is stored in a cloud location, such as OneDrive.
+             *
+             * **Important**: In Read mode, the `id` property of the attachment's {@link Office.AttachmentDetails | details} object
+             * contains a URL to the file.
+             * From requirement set 1.8, the `url` property included in the attachment's
+             * {@link https://docs.microsoft.com/javascript/api/outlook/office.attachmentdetailscompose?view=outlook-js-1.8 | details} object
+             * contains a URL to the file in Compose mode.
              */
             Cloud = "cloud"
         }
@@ -1341,15 +1347,18 @@ export declare namespace Office {
     }
     
     
+    
     /**
      * Represents an attachment on an item from the server. Read mode only.
      *
      * An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.
      *
+     * [Api set: Mailbox 1.1]
+     *
      * @remarks
-     * 
+     *
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
-     * 
+     *
      * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
      */
     export interface AttachmentDetails {
@@ -1359,12 +1368,11 @@ export declare namespace Office {
         attachmentType: MailboxEnums.AttachmentType | string;
         /**
          * Gets the MIME content type of the attachment.
-         * 
-         * This property is only available in Read mode.
          */
         contentType: string;
         /**
          * Gets the Exchange attachment ID of the attachment.
+         * However, if the attachment type is `MailboxEnums.AttachmentType.Cloud`, then a URL for the file is returned.
          */
         id: string;
         /**
@@ -1373,7 +1381,7 @@ export declare namespace Office {
         isInline: boolean;
         /**
          * Gets the name of the attachment.
-         * 
+         *
          * **Important**: For message or appointment items that were attached by drag-and-drop or "Attach Item",
          * `name` includes a file extension in Outlook on Mac, but excludes the extension on the web or Windows.
          */
@@ -1382,7 +1390,6 @@ export declare namespace Office {
          * Gets the size of the attachment in bytes.
          */
         size: number;
-        
     }
     
     /**
@@ -2456,7 +2463,8 @@ export declare namespace Office {
         /**
          * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message.
          *
-         * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
+         * By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, Windows, and Mac,
+         * the following limits apply.
          *
          * - Get 500 members maximum.
          *
@@ -2488,8 +2496,9 @@ export declare namespace Office {
          * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the 
          * current item.
          *
-         * The `cc` property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the recipients on the Cc line of 
-         * the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
+         * The `cc` property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the recipients on the
+         * **Cc** line of the message. By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, Windows,
+         * and Mac, the following limits apply.
          * 
          * - Get 500 members maximum.
          *
@@ -2554,8 +2563,9 @@ export declare namespace Office {
          * Provides access to the recipients on the To line of a message. The type of object and level of access depends on the mode of the
          * current item.
          *
-         * The `to` property returns a `Recipients` object that provides methods to get or update the recipients on the To line of the message.
-         * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.
+         * The `to` property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the recipients on the
+         * **To** line of the message. By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, Windows,
+         * and Mac, the following limits apply.
          * 
          * - Get 500 members maximum.
          *
@@ -2967,7 +2977,8 @@ export declare namespace Office {
          * current item.
          *
          * The `cc` property returns an array that contains an `EmailAddressDetails` object for each recipient listed on the Cc line of the message. 
-         * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.
+         * By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, you can get 20 members maximum, while
+         * on Windows and Mac, you can get 500 members maximum.
          *
          * @remarks
          *
@@ -3069,7 +3080,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
          * 
          * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read
-		 *
+         *
          * The `itemClass` property specifies the message class of the selected item.
          * The following are the default message classes for the message or appointment item.
          * 
@@ -3202,7 +3213,8 @@ export declare namespace Office {
          * current item.
          *
          * The `to` property returns an array that contains an `EmailAddressDetails` object for each recipient listed on the To line of the message.
-         * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.
+         * By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, you can get 20 members maximum, while
+         * on Windows and Mac, you can get 500 members maximum.
          *
          * @remarks
          *

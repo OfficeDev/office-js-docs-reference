@@ -1158,8 +1158,8 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "AttachmentDetails",
-                      "canonicalReference": "outlook!Office.AttachmentDetails:interface"
+                      "text": "AttachmentDetailsCompose",
+                      "canonicalReference": "outlook!Office.AttachmentDetailsCompose:interface"
                     },
                     {
                       "kind": "Content",
@@ -1226,8 +1226,8 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "AttachmentDetails",
-                      "canonicalReference": "outlook!Office.AttachmentDetails:interface"
+                      "text": "AttachmentDetailsCompose",
+                      "canonicalReference": "outlook!Office.AttachmentDetailsCompose:interface"
                     },
                     {
                       "kind": "Content",
@@ -2256,7 +2256,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#saveAsync:member(1)",
-                  "docComment": "/**\n * Asynchronously saves an item.\n *\n * When invoked, this method saves the current message as a draft and returns the item ID via the callback method. In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is saved to the local cache.\n *\n * Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item will be saved as a normal appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent. Saving an existing appointment will send an update to added or removed attendees.\n *\n * **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually synced to the server. Until the item is synced, using the item ID will return an error.\n *\n * **Note**: The following clients have different behavior for `saveAsync` on appointments in compose mode:\n *\n * - In Outlook on Mac, only preview build 16.35.205.0 or later with an Office 365 subscription supports saving a meeting. Otherwise, the `saveAsync` method fails when called from a meeting in compose mode. For a workaround, see {@link https://support.microsoft.com/help/4505745 | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.\n *\n * - Outlook on the web always sends an invitation or update when `saveAsync` is called on an appointment in compose mode.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `InvalidAttachmentId`: The attachment identifier does not exist.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "docComment": "/**\n * Asynchronously saves an item.\n *\n * When invoked, this method saves the current message as a draft and returns the item ID via the callback method. In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is saved to the local cache.\n *\n * Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item will be saved as a normal appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent. Saving an existing appointment will send an update to added or removed attendees.\n *\n * **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually synced to the server. Until the item is synced, using the item ID will return an error.\n *\n * **Note**: The following clients have different behavior for `saveAsync` on appointments in compose mode:\n *\n * - In Outlook on Mac, only build 16.35.308 or later supports saving a meeting. Otherwise, the `saveAsync` method fails when called from a meeting in compose mode. For a workaround, see {@link https://support.microsoft.com/help/4505745 | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.\n *\n * - Outlook on the web always sends an invitation or update when `saveAsync` is called on an appointment in compose mode.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `InvalidAttachmentId`: The attachment identifier does not exist.\n *\n * @param options - An object literal that contains one or more of the following properties. `asyncContext`: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -2324,7 +2324,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "outlook!Office.AppointmentCompose#saveAsync:member(2)",
-                  "docComment": "/**\n * Asynchronously saves an item.\n *\n * When invoked, this method saves the current message as a draft and returns the item ID via the callback method. In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is saved to the local cache.\n *\n * Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item will be saved as a normal appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent. Saving an existing appointment will send an update to added or removed attendees.\n *\n * **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually synced to the server. Until the item is synced, using the item ID will return an error.\n *\n * **Note**: The following clients have different behavior for `saveAsync` on appointments in compose mode:\n *\n * - In Outlook on Mac, only preview build 16.35.205.0 or later with an Office 365 subscription supports saving a meeting. Otherwise, the `saveAsync` method fails when called from a meeting in compose mode. For a workaround, see {@link https://support.microsoft.com/help/4505745 | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.\n *\n * - Outlook on the web always sends an invitation or update when `saveAsync` is called on an appointment in compose mode.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `InvalidAttachmentId`: The attachment identifier does not exist.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
+                  "docComment": "/**\n * Asynchronously saves an item.\n *\n * When invoked, this method saves the current message as a draft and returns the item ID via the callback method. In Outlook on the web or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is saved to the local cache.\n *\n * Since appointments have no draft state, if `saveAsync` is called on an appointment in compose mode, the item will be saved as a normal appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent. Saving an existing appointment will send an update to added or removed attendees.\n *\n * **Note**: If your add-in calls `saveAsync` on an item in compose mode in order to get an item ID to use with EWS or the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually synced to the server. Until the item is synced, using the item ID will return an error.\n *\n * **Note**: The following clients have different behavior for `saveAsync` on appointments in compose mode:\n *\n * - In Outlook on Mac, only build 16.35.308 or later supports saving a meeting. Otherwise, the `saveAsync` method fails when called from a meeting in compose mode. For a workaround, see {@link https://support.microsoft.com/help/4505745 | Cannot save a meeting as a draft in Outlook for Mac by using Office JS API}.\n *\n * - Outlook on the web always sends an invitation or update when `saveAsync` is called on an appointment in compose mode.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `InvalidAttachmentId`: The attachment identifier does not exist.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type `Office.AsyncResult`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4784,7 +4784,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "outlook!Office.AttachmentDetails:interface",
-              "docComment": "/**\n * Represents an attachment on an item from the server. Read mode only.\n *\n * An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read\n */\n",
+              "docComment": "/**\n * Represents an attachment on an item from the server. Read mode only.\n *\n * An array of `AttachmentDetails` objects is returned as the attachments property of an appointment or message item.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -4827,7 +4827,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AttachmentDetails#contentType:member",
-                  "docComment": "/**\n * Gets the MIME content type of the attachment.\n *\n * This property is only available in Read mode.\n */\n",
+                  "docComment": "/**\n * Gets the MIME content type of the attachment.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4852,7 +4852,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AttachmentDetails#id:member",
-                  "docComment": "/**\n * Gets the Exchange attachment ID of the attachment.\n */\n",
+                  "docComment": "/**\n * Gets the Exchange attachment ID of the attachment. However, if the attachment type is `MailboxEnums.AttachmentType.Cloud`, then a URL for the file is returned.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4948,15 +4948,161 @@
                     "startIndex": 1,
                     "endIndex": 2
                   }
-                },
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "outlook!Office.AttachmentDetailsCompose:interface",
+              "docComment": "/**\n * Represents an attachment on an item. Compose mode only.\n *\n * An array of `AttachmentDetailsCompose` objects is returned as the attachments property of an appointment or message item.\n *\n * [Api set: Mailbox 1.8]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface AttachmentDetailsCompose "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "AttachmentDetailsCompose",
+              "members": [
                 {
                   "kind": "PropertySignature",
-                  "canonicalReference": "outlook!Office.AttachmentDetails#url:member",
-                  "docComment": "/**\n * Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`.\n *\n * [Api set: Mailbox 1.8]\n */\n",
+                  "canonicalReference": "outlook!Office.AttachmentDetailsCompose#attachmentType:member",
+                  "docComment": "/**\n * Gets a value that indicates the type of an attachment.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "url: "
+                      "text": "attachmentType: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "MailboxEnums.AttachmentType",
+                      "canonicalReference": "outlook!Office.MailboxEnums.AttachmentType:enum"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "attachmentType",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.AttachmentDetailsCompose#id:member",
+                  "docComment": "/**\n * Gets the index of the attachment.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "id: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "id",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.AttachmentDetailsCompose#isInline:member",
+                  "docComment": "/**\n * Gets a value that indicates whether the attachment should be displayed in the body of the item.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "isInline: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "isInline",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.AttachmentDetailsCompose#name:member",
+                  "docComment": "/**\n * Gets the name of the attachment.\n *\n * **Important**: For message or appointment items that were attached by drag-and-drop or \"Attach Item\", `name` includes a file extension in Outlook on Mac, but excludes the extension on the web or Windows.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "name: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "name",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.AttachmentDetailsCompose#size:member",
+                  "docComment": "/**\n * Gets the size of the attachment in bytes.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "size: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "number"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "size",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "outlook!Office.AttachmentDetailsCompose#url:member",
+                  "docComment": "/**\n * Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "url?: "
                     },
                     {
                       "kind": "Content",
@@ -4993,7 +5139,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.AttachmentsChangedEventArgs#attachmentDetails:member",
-                  "docComment": "/**\n * Represents the set of attachments that were added or removed. For each such attachment, gets a subset of {@link Office.AttachmentDetails | AttachmentDetails} properties: `id`, `name`, `size`, and `attachmentType`.\n *\n * [Api set: Mailbox 1.8]\n */\n",
+                  "docComment": "/**\n * Represents the set of attachments that were added or removed. For each such attachment, gets `id`, `name`, `size`, and `attachmentType` properties.\n *\n * [Api set: Mailbox 1.8]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10740,7 +10886,7 @@
                     {
                       "kind": "EnumMember",
                       "canonicalReference": "outlook!Office.MailboxEnums.AttachmentType.Cloud:member",
-                      "docComment": "/**\n * The attachment is stored in a cloud location, such as OneDrive. The `id` property of the attachment contains a URL to the file.\n */\n",
+                      "docComment": "/**\n * The attachment is stored in a cloud location, such as OneDrive.\n *\n * **Important**: In Read mode, the `id` property of the attachment's {@link Office.AttachmentDetails | details} object contains a URL to the file. From requirement set 1.8, the `url` property included in the attachment's {@link https://docs.microsoft.com/javascript/api/outlook/office.attachmentdetailscompose?view=outlook-js-1.8 | details} object contains a URL to the file in Compose mode.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17227,7 +17373,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageCompose#bcc:member",
-                  "docComment": "/**\n * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message.\n *\n * By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.\n *\n * - Get 500 members maximum.\n *\n * - Set a maximum of 100 members per call, up to 500 members total.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
+                  "docComment": "/**\n * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message.\n *\n * By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, Windows, and Mac, the following limits apply.\n *\n * - Get 500 members maximum.\n *\n * - Set a maximum of 100 members per call, up to 500 members total.\n *\n * [Api set: Mailbox 1.1]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17305,7 +17451,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageCompose#cc:member",
-                  "docComment": "/**\n * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item.\n *\n * The `cc` property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the recipients on the Cc line of the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.\n *\n * - Get 500 members maximum.\n *\n * - Set a maximum of 100 members per call, up to 500 members total.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
+                  "docComment": "/**\n * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item.\n *\n * The `cc` property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the recipients on the **Cc** line of the message. By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, Windows, and Mac, the following limits apply.\n *\n * - Get 500 members maximum.\n *\n * - Set a maximum of 100 members per call, up to 500 members total.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17607,8 +17753,8 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "AttachmentDetails",
-                      "canonicalReference": "outlook!Office.AttachmentDetails:interface"
+                      "text": "AttachmentDetailsCompose",
+                      "canonicalReference": "outlook!Office.AttachmentDetailsCompose:interface"
                     },
                     {
                       "kind": "Content",
@@ -17675,8 +17821,8 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "AttachmentDetails",
-                      "canonicalReference": "outlook!Office.AttachmentDetails:interface"
+                      "text": "AttachmentDetailsCompose",
+                      "canonicalReference": "outlook!Office.AttachmentDetailsCompose:interface"
                     },
                     {
                       "kind": "Content",
@@ -18931,7 +19077,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageCompose#to:member",
-                  "docComment": "/**\n * Provides access to the recipients on the To line of a message. The type of object and level of access depends on the mode of the current item.\n *\n * The `to` property returns a `Recipients` object that provides methods to get or update the recipients on the To line of the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, the following limits apply.\n *\n * - Get 500 members maximum.\n *\n * - Set a maximum of 100 members per call, up to 500 members total.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
+                  "docComment": "/**\n * Provides access to the recipients on the To line of a message. The type of object and level of access depends on the mode of the current item.\n *\n * The `to` property returns a {@link Office.Recipients | Recipients} object that provides methods to get or update the recipients on the **To** line of the message. By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, Windows, and Mac, the following limits apply.\n *\n * - Get 500 members maximum.\n *\n * - Set a maximum of 100 members per call, up to 500 members total.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Compose\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -19272,7 +19418,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageRead#cc:member",
-                  "docComment": "/**\n * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item.\n *\n * The `cc` property returns an array that contains an `EmailAddressDetails` object for each recipient listed on the Cc line of the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
+                  "docComment": "/**\n * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item.\n *\n * The `cc` property returns an array that contains an `EmailAddressDetails` object for each recipient listed on the Cc line of the message. By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, you can get 20 members maximum, while on Windows and Mac, you can get 500 members maximum.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -20814,7 +20960,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "outlook!Office.MessageRead#to:member",
-                  "docComment": "/**\n * Provides access to the recipients on the To line of a message. The type of object and level of access depends on the mode of the current item.\n *\n * The `to` property returns an array that contains an `EmailAddressDetails` object for each recipient listed on the To line of the message. By default, the collection is limited to a maximum of 100 members. However, on Windows and Mac, you can get 500 members maximum.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
+                  "docComment": "/**\n * Provides access to the recipients on the To line of a message. The type of object and level of access depends on the mode of the current item.\n *\n * The `to` property returns an array that contains an `EmailAddressDetails` object for each recipient listed on the To line of the message. By default, the collection is limited to a maximum of 100 members. However, in Outlook on the web, you can get 20 members maximum, while on Windows and Mac, you can get 500 members maximum.\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`\n *\n * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Message Read\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
