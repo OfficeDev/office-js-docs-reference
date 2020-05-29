@@ -5685,7 +5685,7 @@
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "url: "
+                      "text": "url?: "
                     },
                     {
                       "kind": "Content",
