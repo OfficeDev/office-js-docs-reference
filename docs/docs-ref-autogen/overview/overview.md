@@ -1,7 +1,7 @@
 ---
 title: Office JavaScript API reference 
 description: 'The Office JavaScript APIs requirement sets by host.'
-ms.date: 05/29/2020
+ms.date: 05/30/2020
 ---
 
 # Office JavaScript API reference
