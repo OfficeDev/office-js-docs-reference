@@ -1,7 +1,7 @@
 ---
 title: Office JavaScript API reference 
 description: 'The Office JavaScript APIs requirement sets by host.'
-ms.date: 05/05/2020
+ms.date: 05/29/2020
 ---
 
 # Office JavaScript API reference
@@ -14,6 +14,87 @@ The following is a list of host-specific requirement sets (and the cross-host Co
 
 > [!TIP]
 > Choose a link on this page to view reference documentation for APIs supported by the specified requirement set, or use the filter selection drop-down menu above the table of contents to change the requirement set at any time.
+
+<!-- <ul class="cardsM cols cols3">
+    <li>
+        <a class="card x-hidden-focus" href="/javascript/api/excel?view=excel-js-preview">
+        <div class="cardImageOuter">
+            <div class="cardImage">
+                <img src="images/logo-excel.svg" alt="Excel add-ins" />
+            </div>
+        </div>
+        <div class="cardText">
+            <h3>Excel add-ins documentation</h3>
+            <p>Learn how to build Excel add-ins.</p>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a class="card x-hidden-focus" href="/javascript/api/onenote?view=onenote-js-1.1">
+        <div class="cardImageOuter">
+            <div class="cardImage">
+                <img src="images/logo-onenote.svg" alt="OneNote add-ins" />
+            </div>
+        </div>
+        <div class="cardText">
+            <h3>OneNote add-ins documentation</h3>
+            <p>Learn how to build OneNote add-ins.</p>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a class="card x-hidden-focus" href="/javascript/api/outlook?view=outlook-js-preview">
+        <div class="cardImageOuter">
+            <div class="cardImage">
+                <img src="images/logo-outlook.svg" alt="Outlook add-ins" />
+            </div>
+        </div>
+        <div class="cardText">
+            <h3>Outlook add-ins documentation</h3>
+            <p>Learn how to build Outlook add-ins.</p>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a class="card x-hidden-focus" href="/javascript/api/powerpoint?view=powerpoint-js-1.1">
+        <div class="cardImageOuter">
+            <div class="cardImage">
+                <img src="images/logo-powerpoint.svg" alt="PowerPoint add-ins" />
+            </div>
+        </div>
+        <div class="cardText">
+            <h3>PowerPoint add-ins documentation</h3>
+            <p>Learn how to build PowerPoint add-ins.</p>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a class="card x-hidden-focus" href="/javascript/api/visio?view=visio-js-1.1">
+        <div class="cardImageOuter">
+            <div class="cardImage">
+                <img src="images/logo-project-server.svg" alt="Project add-ins" />
+            </div>
+        </div>
+        <div class="cardText">
+            <h3>Project add-ins documentation</h3>
+            <p>Learn how to build Project add-ins.</p>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a class="card x-hidden-focus" href="/javascript/api/word?view=word-js-preview">
+        <div class="cardImageOuter">
+            <div class="cardImage">
+                <img src="images/logo-word.svg" alt="Word add-ins" />
+            </div>
+        </div>
+        <div class="cardText">
+            <h3>Word add-ins documentation</h3>
+            <p>Learn how to build Word add-ins.</p>
+        </div>
+        </a>
+    </li>
+</ul> -->
 
 ## Excel
 

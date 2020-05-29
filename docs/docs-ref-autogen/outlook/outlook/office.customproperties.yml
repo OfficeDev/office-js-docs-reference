@@ -28,7 +28,6 @@ items:
     package: outlook!
     children:
       - 'outlook!Office.CustomProperties#get:member(1)'
-      - 'outlook!Office.CustomProperties#getAll:member(1)'
       - 'outlook!Office.CustomProperties#remove:member(1)'
       - 'outlook!Office.CustomProperties#saveAsync:member(1)'
       - 'outlook!Office.CustomProperties#set:member(1)'
@@ -78,35 +77,6 @@ items:
           description: The name of the custom property to be returned.
           type:
             - string
-  - uid: 'outlook!Office.CustomProperties#getAll:member(1)'
-    summary: |-
-      Returns an object with all custom properties in a collection of name/value pairs. The following are equivalent.
-
-      `customProps.get("name")`
-
-      `var dictionary = customProps.getAll(); dictionary["name"]`
-
-      The dictionary object can be iterated through to discover all `names` and `values`<!-- -->.
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!-- -->**:
-      `ReadItem`
-
-
-      **[Applicable Outlook
-      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
-      Compose or Read
-    name: getAll()
-    fullName: getAll()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAll(): any;'
-      return:
-        type:
-          - any
-        description: An object with all custom properties in a collection of name/value pairs.
   - uid: 'outlook!Office.CustomProperties#remove:member(1)'
     summary: >-
       Removes the specified property from the custom property collection.

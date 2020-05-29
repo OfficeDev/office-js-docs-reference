@@ -131,7 +131,6 @@ tryCatch(async () => {
 
     console.log(`Moving common TOC to its own folder`);
     fsx.copySync(docsDestination + "/office/toc.yml", docsDestination +  "/common/toc.yml");
-    fsx.copySync(docsDestination + "/overview/overview.md", docsDestination + "/common/overview.md");
 
     // remove to prevent build errors
     fsx.removeSync(docsDestination + "/office/overview.md");
@@ -161,7 +160,6 @@ function scrubAndWriteToc(versionFolder: string, commonToc?: Toc, hostName?: str
     }
 
     fsx.writeFileSync(tocPath, jsyaml.safeDump(latestToc));
-    fsx.copySync("../../docs/docs-ref-autogen/overview/overview.md", versionFolder + "/overview.md");
     return latestToc;
 }
 
@@ -178,7 +176,7 @@ function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber
     }];
     newToc.items[0].items = [{
         "name": "API reference overview",
-        "href": "overview.md"
+        "href": "../overview/overview.md"
     }] as any;
     
     
@@ -332,7 +330,7 @@ function fixCommonToc(tocPath: string): Toc {
     // add API reference overview to Common API
     newToc.items[0].items.unshift({
         "name": "API reference overview",
-        "href": "overview.md"
+        "href": "../overview/overview.md"
     } as any);
 
     return newToc;

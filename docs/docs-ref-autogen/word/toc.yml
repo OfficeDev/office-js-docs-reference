@@ -2,7 +2,7 @@ items:
   - name: API reference
     items:
       - name: API reference overview
-        href: overview.md
+        href: ../overview/overview.md
       - name: Word
         uid: word!
         items:

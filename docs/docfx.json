@@ -168,6 +168,14 @@
       },
       {
         "files": [
+          "overview.md"
+        ],
+        "group": "common-js",
+        "src": "docs-ref-autogen/overview",
+        "dest": "api"
+      },
+      {
+        "files": [
           "toc.yml"
         ],
         "group": "common-js",
@@ -190,6 +198,14 @@
         ],
         "group": "outlook-js-preview",
         "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "overview.md"
+        ],
+        "group": "outlook-js-preview",
+        "src": "docs-ref-autogen/overview",
         "dest": "api"
       },
       {
