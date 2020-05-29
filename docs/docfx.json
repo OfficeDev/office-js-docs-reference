@@ -1451,27 +1451,14 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
-          "**/*.svg",
-          "overview/images/*.svg"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ],
-        "dest": "api"
-      },
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg",
           "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ],
-        "src": "docs-ref-conceptual",
-        "dest": "office"
+        "src":"docs-ref-autogen",
+        "dest": "api"
       }
     ],
     "groups": {
