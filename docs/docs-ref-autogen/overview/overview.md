@@ -1,6 +1,12 @@
 ---
+layout: LandingPage
+ms.topic: landing-page
 title: Office JavaScript API reference 
 description: 'The Office JavaScript APIs requirement sets by host.'
+author: o365devx
+ms.author: o365devx
+ms.prod: non-product-specific
+localization_priority: Priority
 ms.date: 05/30/2020
 ---
 
