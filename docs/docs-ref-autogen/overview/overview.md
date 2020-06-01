@@ -30,13 +30,11 @@ The following is a list of host-specific requirement sets (and the cross-host Co
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage bgdAccent1">
-                            <img src="/javascript/api/overview/images/logo-outlook.svg" alt="Outlook add-ins" class="x-hidden-focus"/>
+                            <img src="/javascript/api/overview/images/logo-outlook.svg" alt="Outlook add-ins" class="x-hidden-focus" href="/javascript/api/outlook?view=outlook-js-preview"/>
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Outlook APIs</h3>
-                        <p>All the requirement sets for Outlook</p>
-                        <br/>
+                        <h3>Outlook requirement sets</h3>
                         <ul>
                             <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-preview">Mailbox Preview</a></li>
                             <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.8">Mailbox 1.8</a></li>
@@ -59,13 +57,11 @@ The following is a list of host-specific requirement sets (and the cross-host Co
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage bgdAccent1">
-                            <img src="/javascript/api/overview/images/logo-excel.svg" alt="Excel add-ins"  data-linktype="external" class="x-hidden-focus"/>
+                            <img src="/javascript/api/overview/images/logo-excel.svg" alt="Excel add-ins"  data-linktype="external" class="x-hidden-focus" href="/javascript/api/excel?view=excel-js-preview"/>
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Excel APIs</h3>
-                        <p>All the requirement sets for Excel.</p>
-                        <br/>
+                        <h3>Excel requirement sets</h3>
                         <ul>
                             <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-preview">ExcelApi Preview</a></li>
                             <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-online">ExcelApiOnline 1.1</a></li>
@@ -92,13 +88,11 @@ The following is a list of host-specific requirement sets (and the cross-host Co
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage bgdAccent1">
-                            <img src="/javascript/api/overview/images/logo-word.svg" alt="Word add-ins" data-linktype="external" class="x-hidden-focus"/>
+                            <img src="/javascript/api/overview/images/logo-word.svg" alt="Word add-ins" data-linktype="external" class="x-hidden-focus" href="/javascript/api/word?view=word-js-preview"/>
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Word APIs</h3>
-                        <p>All the requirement sets for Word.</p>
-                        <br/>
+                        <h3>Word requirement sets</h3>
                         <ul>
                             <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-preview">WordApi Preview</a></li>
                             <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-1.3">WordApi 1.3</a></li>
@@ -116,13 +110,11 @@ The following is a list of host-specific requirement sets (and the cross-host Co
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage bgdAccent1">
-                            <img src="/javascript/api/overview/images/logo-onenote.svg" alt="OneNote add-ins" data-linktype="external" class="x-hidden-focus"/>
+                            <img src="/javascript/api/overview/images/logo-onenote.svg" alt="OneNote add-ins" data-linktype="external" class="x-hidden-focus" href="/javascript/api/onenote?view=onenote-js-1.1"/>
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>OneNote APIs</h3>
-                        <p>All the requirement sets for OneNote.</p>
-                        <br/>
+                        <h3>OneNote requirement sets</h3>
                         <ul>
                             <li><a style="font-size: 1rem;" href="/javascript/api/onenote?view=onenote-js-1.1">OneNoteApi 1.1</a></li>
                         </ul>
@@ -137,13 +129,11 @@ The following is a list of host-specific requirement sets (and the cross-host Co
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage bgdAccent1">
-                            <img src="/javascript/api/overview/images/logo-visio.svg" alt="Visio add-ins" data-linktype="external" class="x-hidden-focus"/>
+                            <img src="/javascript/api/overview/images/logo-visio.svg" alt="Visio add-ins" data-linktype="external" class="x-hidden-focus" href="/javascript/api/visio?view=Visio-js-1.1"/>
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visio APIs</h3>
-                        <p>All the requirement sets for Visio.</p>
-                        <br/>
+                        <h3>Visio requirement sets</h3>
                         <ul>
                             <li><a style="font-size: 1rem;" href="/javascript/api/visio?view=Visio-js-1.1">VisioApi 1.1</a></li>
                         </ul>
@@ -158,13 +148,11 @@ The following is a list of host-specific requirement sets (and the cross-host Co
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage bgdAccent1">
-                            <img src="/javascript/api/overview/images/logo-powerpoint.svg" alt="PowerPoint add-ins" data-linktype="external" class="x-hidden-focus"/>
+                            <img src="/javascript/api/overview/images/logo-powerpoint.svg" alt="PowerPoint add-ins" data-linktype="external" class="x-hidden-focus" href="/javascript/api/powerpoint?view=powerpoint-js-1.1"/>
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>PowerPoint APIs</h3>
-                        <p>All the requirement sets for PowerPoint.</p>
-                        <br/>
+                        <h3>PowerPoint requirement sets</h3>
                         <ul>
                             <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-1.1">PowerPointApi 1.1</a></li>
                         </ul>
@@ -173,138 +161,26 @@ The following is a list of host-specific requirement sets (and the cross-host Co
             </div>
         </div>
     </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage bgdAccent1">
+                            <img src="/javascript/api/overview/images/logo-office.svg" alt="Common APIs" data-linktype="external" class="x-hidden-focus" href="/javascript/api/common?view=common-js-1.1"/>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Common APIs</h3>
+                        <ul>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/common?view=common-js-1.1">Common APIs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
 </ul>
-<!-- 
-<ul class="cardsM cols cols3">
-    <li>
-        <a class="card x-hidden-focus" href="/javascript/api/excel?view=excel-js-preview">
-            <div class="cardImageOuter">
-                <div class="cardImage">
-                    <img src="/javascript/api/overview/images/logo-excel.svg" alt="Excel add-ins" />
-                </div>
-            </div>
-            <div class="cardText">
-                <h3>Excel add-in APIs</h3>
-                <p>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-preview">ExcelApi Preview</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-online">ExcelApiOnline 1.1</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.11">ExcelApi 1.11</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.10">ExcelApi 1.10</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.9">ExcelApi 1.9</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.8">ExcelApi 1.8</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.7">ExcelApi 1.7</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.6">ExcelApi 1.6</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.5">ExcelApi 1.5</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.4">ExcelApi 1.4</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.3">ExcelApi 1.3</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.2">ExcelApi 1.2</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.1">ExcelApi 1.1</a></li>
-                </p>
-            </div>
-        </a>
-    </li>
-    <li>
-        <a class="card x-hidden-focus" href="/javascript/api/onenote?view=onenote-js-1.1">
-        <div class="cardImageOuter">
-            <div class="cardImage">
-                <img src="/javascript/api/overview/images/logo-onenote.svg" alt="OneNote add-ins" />
-            </div>
-        </div>
-        <div class="cardText">
-            <h3>OneNote add-in APIs</h3>
-            <p>
-                <li><a style="font-size: 1rem;" href="/javascript/api/onenote?view=onenote-js-1.1">OneNoteApi 1.1</a></li>
-            </p>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a class="card x-hidden-focus" href="/javascript/api/outlook?view=outlook-js-preview">
-            <div class="cardImageOuter">
-                <div class="cardImage">
-                    <img src="/javascript/api/overview/images/logo-outlook.svg" alt="Outlook add-ins" />
-                </div>
-            </div>
-            <div class="cardText">
-                <h3>Outlook add-in APIs</h3>
-                <p>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-preview">Mailbox Preview</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.8">Mailbox 1.8</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.7">Mailbox 1.7</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.6">Mailbox 1.6</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.5">Mailbox 1.5</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.4">Mailbox 1.4</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.3">Mailbox 1.3</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.2">Mailbox 1.2</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.1">Mailbox 1.1</a></li>
-                </p>
-            </div>
-        </a>
-    </li>
-    <li>
-        <a class="card x-hidden-focus" href="/javascript/api/powerpoint?view=powerpoint-js-1.1">
-            <div class="cardImageOuter">
-                <div class="cardImage">
-                    <img src="/javascript/api/overview/images/logo-powerpoint.svg" alt="PowerPoint add-ins" />
-                </div>
-            </div>
-            <div class="cardText">
-                <h3>PowerPoint add-in APIs</h3>
-                <p>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-1.1">PowerPointApi 1.1</a></li>
-                </p>
-            </div>
-        </a>
-    </li>
-    <li>
-        <a class="card x-hidden-focus" href="/javascript/api/visio?view=visio-js-1.1">
-        <div class="cardImageOuter">
-            <div class="cardImage">
-                <img src="/javascript/api/overview/images/logo-visio.svg" alt="Visio add-ins" />
-            </div>
-        </div>
-        <div class="cardText">
-            <h3>Visio add-in APIs</h3>
-            <p>
-                <li><a style="font-size: 1rem;" href="/javascript/api/visio?view=visio-js-1.1">Visio 1.1</a></li>
-            </p>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a class="card x-hidden-focus" href="/javascript/api/word?view=word-js-preview">
-        <div class="cardImageOuter">
-            <div class="cardImage">
-                <img src="/javascript/api/overview/images/logo-word.svg" alt="Word add-ins" />
-            </div>
-        </div>
-        <div class="cardText">
-            <h3>Word add-in APIs</h3>
-            <p>
-                <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-preview">WordApi Preview</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-1.3">WordApi 1.3</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-1.2">WordApi 1.2</a></li>
-                <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-1.1">WordApi 1.1</a></li>
-            </p>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a class="card x-hidden-focus" href="/javascript/api/common?view=common-js">
-        <div class="cardImageOuter">
-            <div class="cardImage">
-                <img src="/javascript/api/overview/images/logo-office.svg" alt="Common APIs" />
-            </div>
-        </div>
-        <div class="cardText">
-            <h3>Common APIs</h3>
-            <p>
-                <li><a style="font-size: 1rem;" href="/javascript/api/common?view=common-js">Common APIs</a></li>
-            </p>
-        </div>
-        </a>
-    </li>
-</ul> -->
 
 ## See also
 
