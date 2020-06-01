@@ -59,7 +59,7 @@ The following is a list of host-specific requirement sets (and the cross-host Co
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage bgdAccent1">
-                            <img src="images/index-landing-page/get-started-2.svg" alt="Office Add-ins quick starts graphic" data-linktype="external" class="x-hidden-focus"/>
+                            <img src="/javascript/api/overview/images/logo-excel.svg" alt="Excel add-ins"  data-linktype="external" class="x-hidden-focus"/>
                         </div>
                     </div>
                     <div class="cardText">
@@ -104,6 +104,69 @@ The following is a list of host-specific requirement sets (and the cross-host Co
                             <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-1.3">WordApi 1.3</a></li>
                             <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-1.2">WordApi 1.2</a></li>
                             <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-1.1">WordApi 1.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage bgdAccent1">
+                            <img src="/javascript/api/overview/images/logo-onenote.svg" alt="OneNote add-ins" data-linktype="external" class="x-hidden-focus"/>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>OneNote APIs</h3>
+                        <p>All the requirement sets for OneNote.</p>
+                        <br/>
+                        <ul>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/onenote?view=onenote-js-1.1">OneNoteApi 1.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage bgdAccent1">
+                            <img src="/javascript/api/overview/images/logo-visio.svg" alt="Visio add-ins" data-linktype="external" class="x-hidden-focus"/>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Visio APIs</h3>
+                        <p>All the requirement sets for Visio.</p>
+                        <br/>
+                        <ul>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/visio?view=Visio-js-1.1">VisioApi 1.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage bgdAccent1">
+                            <img src="/javascript/api/overview/images/logo-powerpoint.svg" alt="PowerPoint add-ins" data-linktype="external" class="x-hidden-focus"/>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>PowerPoint APIs</h3>
+                        <p>All the requirement sets for PowerPoint.</p>
+                        <br/>
+                        <ul>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-1.1">PowerPointApi 1.1</a></li>
                         </ul>
                     </div>
                 </div>
