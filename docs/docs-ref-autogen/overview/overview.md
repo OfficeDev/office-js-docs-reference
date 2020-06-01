@@ -23,6 +23,95 @@ The following is a list of host-specific requirement sets (and the cross-host Co
 
 <h2>Office Add-ins host-specific requirement sets</h2>
 
+<ul class="cardsK panelContent cols cols3">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage bgdAccent1">
+                            <img src="/javascript/api/overview/images/logo-outlook.svg" alt="Outlook add-ins" class="x-hidden-focus"/>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Outlook APIs</h3>
+                        <p>All the requirement sets for Outlook</p>
+                        <br/>
+                        <ul>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-preview">Mailbox Preview</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.8">Mailbox 1.8</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.7">Mailbox 1.7</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.6">Mailbox 1.6</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.5">Mailbox 1.5</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.4">Mailbox 1.4</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.3">Mailbox 1.3</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.2">Mailbox 1.2</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.1">Mailbox 1.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage bgdAccent1">
+                            <img src="images/index-landing-page/get-started-2.svg" alt="Office Add-ins quick starts graphic" data-linktype="external" class="x-hidden-focus"/>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Excel APIs</h3>
+                        <p>All the requirement sets for Excel.</p>
+                        <br/>
+                        <ul>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-preview">ExcelApi Preview</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-online">ExcelApiOnline 1.1</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.11">ExcelApi 1.11</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.10">ExcelApi 1.10</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.9">ExcelApi 1.9</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.8">ExcelApi 1.8</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.7">ExcelApi 1.7</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.6">ExcelApi 1.6</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.5">ExcelApi 1.5</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.4">ExcelApi 1.4</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.3">ExcelApi 1.3</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.2">ExcelApi 1.2</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.1">ExcelApi 1.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage bgdAccent1">
+                            <img src="/javascript/api/overview/images/logo-word.svg" alt="Word add-ins" data-linktype="external" class="x-hidden-focus"/>
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Word APIs</h3>
+                        <p>All the requirement sets for Word.</p>
+                        <br/>
+                        <ul>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-preview">WordApi Preview</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-1.3">WordApi 1.3</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-1.2">WordApi 1.2</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-1.1">WordApi 1.1</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+<!-- 
 <ul class="cardsM cols cols3">
     <li>
         <a class="card x-hidden-focus" href="/javascript/api/excel?view=excel-js-preview">
@@ -152,7 +241,7 @@ The following is a list of host-specific requirement sets (and the cross-host Co
         </div>
         </a>
     </li>
-</ul>
+</ul> -->
 
 ## See also
 
