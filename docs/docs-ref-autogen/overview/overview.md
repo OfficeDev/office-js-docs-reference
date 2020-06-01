@@ -24,7 +24,7 @@ The following is a list of host-specific requirement sets (and the cross-host Co
 <h2>Office Add-ins host-specific requirement sets</h2>
 
 <ul class="cardsK panelContent cols cols3">
-    <li>
+    <!-- <li>
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card" href="/javascript/api/outlook?view=outlook-js-preview">
@@ -103,65 +103,47 @@ The following is a list of host-specific requirement sets (and the cross-host Co
                 </div>
             </div>
         </div>
-    </li>
+    </li> -->
     <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" href="/javascript/api/onenote?view=onenote-js-1.1">
-                    <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                            <img src="/javascript/api/overview/images/logo-onenote.svg" alt="OneNote add-ins" data-linktype="external" class="x-hidden-focus" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>OneNote requirement sets</h3>
-                        <ul>
-                            <li><a style="font-size: 1rem;" href="/javascript/api/onenote?view=onenote-js-1.1">OneNoteApi 1.1</a></li>
-                        </ul>
-                    </div>
-                </div>
+        <a class="card x-hidden-focus" href="/javascript/api/onenote?view=onenote-js-1.1">
+        <div class="cardImageOuter">
+            <div class="cardImage">
+                <img src="/javascript/api/overview/images/logo-onenote.svg" alt="OneNote add-ins" />
             </div>
         </div>
+        <div class="cardText">
+            <h3>OneNote requirement sets</h3>
+            <p><a style="font-size: 1rem;" href="/javascript/api/onenote?view=onenote-js-1.1">OneNoteApi 1.1</a></p>
+        </div>
+        </a>
     </li>
     <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" href="/javascript/api/visio?view=visio-js-1.1">
-                    <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                            <img src="/javascript/api/overview/images/logo-visio.svg" alt="Visio add-ins" data-linktype="external" class="x-hidden-focus" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Visio requirement sets</h3>
-                        <ul>
-                            <li><a style="font-size: 1rem;" href="/javascript/api/visio?view=visio-js-1.1">VisioApi 1.1</a></li>
-                        </ul>
-                    </div>
-                </div>
+        <a class="card x-hidden-focus" href="/javascript/api/visio?view=visio-js-1.1">
+        <div class="cardImageOuter">
+            <div class="cardImage">
+                <img src="/javascript/api/overview/images/logo-visio.svg" alt="Visio add-ins" />
             </div>
         </div>
+        <div class="cardText">
+            <h3>Visio requirement sets</h3>
+            <p><a style="font-size: 1rem;" href="/javascript/api/visio?view=visio-js-1.1">VisioApi 1.1</a></p>
+        </div>
+        </a>
     </li>
     <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" href="/javascript/api/powerpoint?view=powerpoint-js-1.1">
-                    <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                            <img src="/javascript/api/overview/images/logo-powerpoint.svg" alt="PowerPoint add-ins" data-linktype="external" class="x-hidden-focus" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>PowerPoint requirement sets</h3>
-                        <ul>
-                            <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-1.1">PowerPointApi 1.1</a></li>
-                        </ul>
-                    </div>
-                </div>
+        <a class="card x-hidden-focus" href="/javascript/api/powerpoint?view=powerpoint-js-1.1">
+        <div class="cardImageOuter">
+            <div class="cardImage">
+                <img src="/javascript/api/overview/images/logo-powerpoint.svg" alt="PowerPoint add-ins" />
             </div>
         </div>
+        <div class="cardText">
+            <h3>PowerPoint requirement sets</h3>
+            <p><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-1.1">PowerPointApi 1.1</a></p>
+        </div>
+        </a>
     </li>
-    <li>
+    <!-- <li>
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card" href="/javascript/api/common?view=common-js-1.1">
@@ -179,7 +161,7 @@ The following is a list of host-specific requirement sets (and the cross-host Co
                 </div>
             </div>
         </div>
-    </li>
+    </li> -->
 </ul>
 
 ## See also
