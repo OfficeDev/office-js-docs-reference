@@ -27,8 +27,8 @@ The following is a list of host-specific requirement sets (and the cross-host Co
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter" href="/javascript/api/outlook?view=outlook-js-preview">
+                <div class="card" href="/javascript/api/outlook?view=outlook-js-preview">
+                    <div class="cardImageOuter">
                         <div class="cardImage bgdAccent1">
                             <img src="/javascript/api/overview/images/logo-outlook.svg" alt="Outlook add-ins" class="x-hidden-focus" />
                         </div>
@@ -54,8 +54,8 @@ The following is a list of host-specific requirement sets (and the cross-host Co
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter" href="/javascript/api/excel?view=excel-js-preview">
+                <div class="card" href="/javascript/api/excel?view=excel-js-preview">
+                    <div class="cardImageOuter">
                         <div class="cardImage bgdAccent1">
                             <img src="/javascript/api/overview/images/logo-excel.svg" alt="Excel add-ins"  data-linktype="external" class="x-hidden-focus" />
                         </div>
@@ -85,8 +85,8 @@ The following is a list of host-specific requirement sets (and the cross-host Co
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter" href="/javascript/api/word?view=word-js-preview">
+                <div class="card" href="/javascript/api/word?view=word-js-preview">
+                    <div class="cardImageOuter">
                         <div class="cardImage bgdAccent1">
                             <img src="/javascript/api/overview/images/logo-word.svg" alt="Word add-ins" data-linktype="external" class="x-hidden-focus" />
                         </div>
@@ -107,8 +107,8 @@ The following is a list of host-specific requirement sets (and the cross-host Co
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter" href="/javascript/api/onenote?view=onenote-js-1.1">
+                <div class="card" href="/javascript/api/onenote?view=onenote-js-1.1">
+                    <div class="cardImageOuter">
                         <div class="cardImage bgdAccent1">
                             <img src="/javascript/api/overview/images/logo-onenote.svg" alt="OneNote add-ins" data-linktype="external" class="x-hidden-focus" />
                         </div>
@@ -126,8 +126,8 @@ The following is a list of host-specific requirement sets (and the cross-host Co
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter" href="/javascript/api/visio?view=Visio-js-1.1">
+                <div class="card" href="/javascript/api/visio?view=visio-js-1.1">
+                    <div class="cardImageOuter">
                         <div class="cardImage bgdAccent1">
                             <img src="/javascript/api/overview/images/logo-visio.svg" alt="Visio add-ins" data-linktype="external" class="x-hidden-focus" />
                         </div>
@@ -135,7 +135,7 @@ The following is a list of host-specific requirement sets (and the cross-host Co
                     <div class="cardText">
                         <h3>Visio requirement sets</h3>
                         <ul>
-                            <li><a style="font-size: 1rem;" href="/javascript/api/visio?view=Visio-js-1.1">VisioApi 1.1</a></li>
+                            <li><a style="font-size: 1rem;" href="/javascript/api/visio?view=visio-js-1.1">VisioApi 1.1</a></li>
                         </ul>
                     </div>
                 </div>
@@ -145,8 +145,8 @@ The following is a list of host-specific requirement sets (and the cross-host Co
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter" href="/javascript/api/powerpoint?view=powerpoint-js-1.1">
+                <div class="card" href="/javascript/api/powerpoint?view=powerpoint-js-1.1">
+                    <div class="cardImageOuter">
                         <div class="cardImage bgdAccent1">
                             <img src="/javascript/api/overview/images/logo-powerpoint.svg" alt="PowerPoint add-ins" data-linktype="external" class="x-hidden-focus" />
                         </div>
@@ -164,8 +164,8 @@ The following is a list of host-specific requirement sets (and the cross-host Co
     <li>
         <div class="cardSize">
             <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter" href="/javascript/api/common?view=common-js-1.1">
+                <div class="card" href="/javascript/api/common?view=common-js-1.1">
+                    <div class="cardImageOuter">
                         <div class="cardImage bgdAccent1">
                             <img src="/javascript/api/overview/images/logo-office.svg" alt="Common APIs" data-linktype="external" class="x-hidden-focus" />
                         </div>
