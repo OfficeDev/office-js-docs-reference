@@ -51,7 +51,7 @@ The following is a list of host-specific requirement sets (and the cross-host Co
         <a class="card x-hidden-focus" href="/javascript/api/excel?view=excel-js-preview">
             <div class="cardImageOuter">
                 <div class="cardImage">
-                    <img src="/javascript/api/overview/images/logo-visio.svg" alt="Excel add-ins" />
+                    <img src="/javascript/api/overview/images/logo-excel.svg" alt="Excel add-ins" />
                 </div>
             </div>
             <div class="cardText">
@@ -101,7 +101,9 @@ The following is a list of host-specific requirement sets (and the cross-host Co
             </div>
             <div class="cardText">
                 <h3>OneNote requirement sets</h3>
-                <p><a style="font-size: 1rem;" href="/javascript/api/onenote?view=onenote-js-1.1">OneNoteApi 1.1</a></p>
+                <ul>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/onenote?view=onenote-js-1.1">OneNoteApi 1.1</a></li>
+                </ul>
             </div>
         </a>
     </li>
@@ -114,7 +116,9 @@ The following is a list of host-specific requirement sets (and the cross-host Co
             </div>
             <div class="cardText">
                 <h3>Visio requirement sets</h3>
-                <p><a style="font-size: 1rem;" href="/javascript/api/visio?view=visio-js-1.1">VisioApi 1.1</a></p>
+                <ul>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/visio?view=visio-js-1.1">VisioApi 1.1</a></li>
+                </ul>
             </div>
         </a>
     </li>
@@ -127,7 +131,9 @@ The following is a list of host-specific requirement sets (and the cross-host Co
             </div>
             <div class="cardText">
                 <h3>PowerPoint requirement sets</h3>
-                <p><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-1.1">PowerPointApi 1.1</a></p>
+                <ul>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-1.1">PowerPointApi 1.1</li></p>
+                </ul>
             </div>
         </a>
     </li>
