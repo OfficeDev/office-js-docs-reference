@@ -25,29 +25,6 @@ The following is a list of host-specific requirement sets (and the cross-host Co
 
 <ul class="cardsK panelContent cols cols3">
     <li>
-        <a class="card x-hidden-focus" href="/javascript/api/outlook?view=outlook-js-preview">
-            <div class="cardImageOuter">
-                <div class="cardImage">
-                    <img src="/javascript/api/overview/images/logo-outlook.svg" alt="Outlook add-ins" />
-                </div>
-            </div>
-            <div class="cardText">
-                <h3>Outlook requirement sets</h3>
-                <ul>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-preview">Mailbox Preview</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.8">Mailbox 1.8</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.7">Mailbox 1.7</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.6">Mailbox 1.6</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.5">Mailbox 1.5</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.4">Mailbox 1.4</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.3">Mailbox 1.3</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.2">Mailbox 1.2</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.1">Mailbox 1.1</a></li>
-                </ul>
-            </div>
-        </a>
-    </li>
-    <li>
         <a class="card x-hidden-focus" href="/javascript/api/excel?view=excel-js-preview">
             <div class="cardImageOuter">
                 <div class="cardImage">
@@ -70,6 +47,29 @@ The following is a list of host-specific requirement sets (and the cross-host Co
                     <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.3">ExcelApi 1.3</a></li>
                     <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.2">ExcelApi 1.2</a></li>
                     <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.1">ExcelApi 1.1</a></li>
+                </ul>
+            </div>
+        </a>
+    </li>
+    <li>
+        <a class="card x-hidden-focus" href="/javascript/api/outlook?view=outlook-js-preview">
+            <div class="cardImageOuter">
+                <div class="cardImage">
+                    <img src="/javascript/api/overview/images/logo-outlook.svg" alt="Outlook add-ins" />
+                </div>
+            </div>
+            <div class="cardText">
+                <h3>Outlook requirement sets</h3>
+                <ul>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-preview">Mailbox Preview</a></li>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.8">Mailbox 1.8</a></li>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.7">Mailbox 1.7</a></li>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.6">Mailbox 1.6</a></li>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.5">Mailbox 1.5</a></li>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.4">Mailbox 1.4</a></li>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.3">Mailbox 1.3</a></li>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.2">Mailbox 1.2</a></li>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.1">Mailbox 1.1</a></li>
                 </ul>
             </div>
         </a>
@@ -138,23 +138,19 @@ The following is a list of host-specific requirement sets (and the cross-host Co
         </a>
     </li>
     <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card" href="/javascript/api/common?view=common-js-1.1">
-                    <div class="cardImageOuter">
-                        <div class="cardImage bgdAccent1">
-                            <img src="/javascript/api/overview/images/logo-office.svg" alt="Common APIs" data-linktype="external" class="x-hidden-focus" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Common APIs</h3>
-                        <ul>
-                            <li><a style="font-size: 1rem;" href="/javascript/api/common?view=common-js-1.1">Common APIs</a></li>
-                        </ul>
-                    </div>
+        <a class="card x-hidden-focus" href="/javascript/api/common?view=common-js">
+            <div class="cardImageOuter">
+                <div class="cardImage">
+                    <img src="/javascript/api/overview/images/logo-office.svg" alt="Common APIs" />
                 </div>
             </div>
-        </div>
+            <div class="cardText">
+                <h3>Common APIs</h3>
+                <ul>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/common?view=common-js">Common APIs</a></li>
+                </ul>
+            </div>
+        </a>
     </li>
 </ul>
 
