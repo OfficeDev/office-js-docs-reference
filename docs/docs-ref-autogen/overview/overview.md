@@ -147,7 +147,7 @@ The following is a list of [requirement sets](/office/dev/add-ins/develop/office
             <div class="cardText">
                 <h3>Project requirement sets</h3>
                 <ul>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=common-js">Common APIs only</li></p>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/common?view=common-js">Common APIs only</li></p>
                 </ul>
             </div>
         </a>
