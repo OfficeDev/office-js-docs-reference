@@ -138,7 +138,7 @@ The following is a list of [requirement sets](/office/dev/add-ins/develop/office
         </a>
     </li>
     <li>
-        <a class="card x-hidden-focus" href="/javascript/api/project?view=common-js">
+        <a class="card x-hidden-focus" href="/javascript/api/common?view=common-js">
             <div class="cardImageOuter">
                 <div class="cardImage">
                     <img src="/javascript/api/overview/images/logo-project.svg" alt="Project add-ins" />
