@@ -14,7 +14,7 @@ ms.date: 05/30/2020
 
 The JavaScript API for Office enables you to create web applications that interact with the object models in Office host applications. Use this section to learn more about the classes, methods, and other types available for building Office Add-ins.
 
-The following is a list of [requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets) for the [supported Office host applications](/office/dev/add-ins/overview/office-add-in-availability). Each item links to a version of the API reference documentation that is supported by that requirement set (e.g. ExcelApi 1.3 shows APIs in ExcelApi 1.1, 1.2, 1.3 as well as the Common APIs). Common API content includes all the [Common API requirement sets](/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets).
+The following is a list of [requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets) for the [supported Office host applications](/office/dev/add-ins/overview/office-add-in-availability). Each item links to a version of the API reference documentation that is supported by that requirement set (for example, ExcelApi 1.3 shows APIs in ExcelApi 1.1, 1.2, 1.3 as well as the Common APIs). Common API content includes all the [Common API requirement sets](/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets).
 
 `ExcelApiOnline 1.1` is a special requirement set. It contains the latest APIs for Excel on the web, but those APIs may not yet be fully supported across all platforms. See [Excel JavaScript API online-only requirement set](/office/dev/add-ins/reference/requirement-sets/excel-api-online-requirement-set) for more information.
 
