@@ -14,7 +14,7 @@ ms.date: 06/03/2020
 
 The JavaScript API for Office enables you to create web applications that interact with the object models in Office host applications. Use this section to learn more about the classes, methods, and other types available for building Office Add-ins.
 
-The following is a list of APIs for the [supported Office host applications](/office/dev/add-ins/overview/office-add-in-availability). "Common APIs only" links include all APIs outside of a host-specific or Outlook requirement set (as detailed in [Office Common API requirement set](/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets)). Other items link to a version of the API reference documentation for that host based on a requirement set. The reference documentation will be versioned to include all APIs up to and including that requirement set (for example, ExcelApi 1.3 shows APIs in ExcelApi 1.1, 1.2, 1.3 as well as the Common APIs).
+The following is a list of APIs for the [supported Office host applications](/office/dev/add-ins/overview/office-add-in-availability). Common API links include all APIs not attributed to a particular host (as detailed in [Office Common API requirement set](/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets)). Other items link to a version of the API reference documentation for that host based on a requirement set. The reference documentation will be versioned to include all APIs up to and including that requirement set (for example, ExcelApi 1.3 shows APIs in ExcelApi 1.1, 1.2, 1.3 as well as the Common APIs).
 
 `ExcelApiOnline 1.1` is a special requirement set. It contains the latest APIs for Excel on the web, but those APIs may not yet be fully supported across all platforms. See [Excel JavaScript API online-only requirement set](/office/dev/add-ins/reference/requirement-sets/excel-api-online-requirement-set) for more information.
 
@@ -47,7 +47,7 @@ The following is a list of APIs for the [supported Office host applications](/of
                     <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.3">ExcelApi 1.3</a></li>
                     <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.2">ExcelApi 1.2</a></li>
                     <li><a style="font-size: 1rem;" href="/javascript/api/excel?view=excel-js-1.1">ExcelApi 1.1</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/office?view=common-js">Common APIs only</a></li>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/office?view=excel-js-preview">Common APIs</a></li>
                 </ul>
             </div>
         </a>
@@ -71,7 +71,7 @@ The following is a list of APIs for the [supported Office host applications](/of
                     <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.3">Mailbox 1.3</a></li>
                     <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.2">Mailbox 1.2</a></li>
                     <li><a style="font-size: 1rem;" href="/javascript/api/outlook?view=outlook-js-1.1">Mailbox 1.1</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/office?view=common-js">Common APIs only</a></li>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/office?view=outlook-js-preview">Common APIs</a></li>
                 </ul>
             </div>
         </a>
@@ -90,7 +90,7 @@ The following is a list of APIs for the [supported Office host applications](/of
                     <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-1.3">WordApi 1.3</a></li>
                     <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-1.2">WordApi 1.2</a></li>
                     <li><a style="font-size: 1rem;" href="/javascript/api/word?view=word-js-1.1">WordApi 1.1</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/office?view=common-js">Common APIs only</a></li>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/office?view=word-js-preview">Common APIs</a></li>
                 </ul>
             </div>
         </a>
@@ -106,7 +106,7 @@ The following is a list of APIs for the [supported Office host applications](/of
                 <h3>OneNote APIs</h3>
                 <ul>
                     <li><a style="font-size: 1rem;" href="/javascript/api/onenote?view=onenote-js-1.1">OneNoteApi 1.1</a></li>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/office?view=common-js">Common APIs only</a></li>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/office?view=onenote-js-1.1">Common APIs</a></li>
                 </ul>
             </div>
         </a>
@@ -136,8 +136,8 @@ The following is a list of APIs for the [supported Office host applications](/of
             <div class="cardText">
                 <h3>PowerPoint APIs</h3>
                 <ul>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-1.1">PowerPointApi 1.1</li></p>
-                    <li><a style="font-size: 1rem;" href="/javascript/api/office?view=common-js">Common APIs only</a></li>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/powerpoint?view=powerpoint-js-1.1">PowerPointApi 1.1</a></li>
+                    <li><a style="font-size: 1rem;" href="/javascript/api/office?view=powerpoint-js-1.1">Common APIs</a></li>
                 </ul>
             </div>
         </a>
