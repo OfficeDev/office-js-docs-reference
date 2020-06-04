@@ -64,7 +64,7 @@ tryCatch(async () => {
                                 {"name": "PowerPoint", "href": "/javascript/api/powerpoint?view=powerpoint-js-1.1"},
                                 {"name": "Visio", "href": "/javascript/api/visio?view=visio-js-1.1"},
                                 {"name": "Word", "href": "/javascript/api/word?view=word-js-preview"},
-                                {"name": "CommonAPI", "href": "/javascript/api/office?view=common-js"}] as any;
+                                {"name": "Common APIs", "href": "/javascript/api/office?view=common-js"}] as any;
     fsx.writeFileSync(docsDestination + "/toc.yml", jsyaml.safeDump(globalToc));
     fsx.writeFileSync(docsDestination + "/overview/toc.yml", jsyaml.safeDump(globalToc));
 
@@ -131,7 +131,6 @@ tryCatch(async () => {
 
     console.log(`Moving common TOC to its own folder`);
     fsx.copySync(docsDestination + "/office/toc.yml", docsDestination +  "/common/toc.yml");
-    fsx.copySync(docsDestination + "/overview/overview.md", docsDestination + "/common/overview.md");
 
     // remove to prevent build errors
     fsx.removeSync(docsDestination + "/office/overview.md");
@@ -161,7 +160,6 @@ function scrubAndWriteToc(versionFolder: string, commonToc?: Toc, hostName?: str
     }
 
     fsx.writeFileSync(tocPath, jsyaml.safeDump(latestToc));
-    fsx.copySync("../../docs/docs-ref-autogen/overview/overview.md", versionFolder + "/overview.md");
     return latestToc;
 }
 
@@ -178,10 +176,9 @@ function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber
     }];
     newToc.items[0].items = [{
         "name": "API reference overview",
-        "href": "overview.md"
+        "href": "../overview/overview.md"
     }] as any;
-    
-    
+
     let generalFilter: string[] = ["Interfaces"]
     let enumFilter: string[];
     if (hostName === "outlook") {
@@ -218,7 +215,7 @@ function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber
             packageItem.items.forEach((namespaceItem, namespaceIndex) => {
                 membersToMove.items = namespaceItem.items;
             });
-            
+
             if (packageName.toLocaleLowerCase().includes('custom functions runtime')) {
                 customFunctionsRoot.items.push({
                     "name": packageName,
@@ -276,8 +273,11 @@ function fixToc(tocPath: string, commonToc: Toc, hostName: string, versionNumber
         });
     });
 
-    // append the common API toc
-    newToc.items[0].items.push((commonToc.items[0] as any).items[1]);
+    // Append the Common API TOC.
+    if (hostName !== "visio") {
+        newToc.items[0].items.push((commonToc.items[0] as any).items[1]);
+    }
+
     return newToc;
 }
 
@@ -332,7 +332,7 @@ function fixCommonToc(tocPath: string): Toc {
     // add API reference overview to Common API
     newToc.items[0].items.unshift({
         "name": "API reference overview",
-        "href": "overview.md"
+        "href": "../overview/overview.md"
     } as any);
 
     return newToc;

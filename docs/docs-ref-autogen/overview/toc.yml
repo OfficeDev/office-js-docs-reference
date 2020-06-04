@@ -15,5 +15,5 @@ items:
         href: /javascript/api/visio?view=visio-js-1.1
       - name: Word
         href: /javascript/api/word?view=word-js-preview
-      - name: CommonAPI
+      - name: Common APIs
         href: /javascript/api/office?view=common-js
