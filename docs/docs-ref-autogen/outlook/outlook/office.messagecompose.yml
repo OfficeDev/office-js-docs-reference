@@ -1263,7 +1263,8 @@ items:
       `ReadWriteItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points)<!-- -->**:
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Message Compose
     isPreview: true
     name: 'disableClientSignatureAsync(options, callback)'
@@ -1310,7 +1311,8 @@ items:
       `ReadWriteItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points)<!-- -->**:
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Message Compose
 
 
@@ -1691,7 +1693,8 @@ items:
       `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points)<!-- -->**:
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Message Compose
     isPreview: true
     name: 'getComposeTypeAsync(options, callback)'
@@ -1734,7 +1737,8 @@ items:
       `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points)<!-- -->**:
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Message Compose
 
 
@@ -2400,7 +2404,8 @@ items:
       `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points)<!-- -->**:
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Message Compose
     isPreview: true
     name: 'isClientSignatureEnabledAsync(options, callback)'
@@ -2448,7 +2453,8 @@ items:
       `ReadItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points)<!-- -->**:
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Message Compose
 
 
