@@ -848,7 +848,8 @@ items:
       `ReadWriteItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points)<!-- -->**:
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
 
 
@@ -946,7 +947,8 @@ items:
       `ReadWriteItem`
 
 
-      **[Applicable Outlook mode](https://docs.microsoft.com/office/dev/add-ins/outlook/#extension-points)<!-- -->**:
+      **[Applicable Outlook
+      mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
 
 
