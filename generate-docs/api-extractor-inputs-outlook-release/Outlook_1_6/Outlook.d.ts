@@ -2467,7 +2467,7 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
          *
-         * To see which event types are supported, see `Office.EventType` for details.
+         * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox#events | events section} for supported events.
          *
          * [Api set: Mailbox 1.5]
          *
@@ -2488,7 +2488,7 @@ export declare namespace Office {
         /**
          * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
          *
-         * To see which event types are supported, see `Office.EventType` for details.
+         * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox#events | events section} for supported events.
          *
          * [Api set: Mailbox 1.5]
          *
@@ -2908,7 +2908,7 @@ export declare namespace Office {
         /**
          * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
          *
-         * To see which event types are supported, see `Office.EventType` for details.
+         * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox#events | events section} for supported events.
          *
          * [Api set: Mailbox 1.5]
          *
@@ -2927,7 +2927,7 @@ export declare namespace Office {
         /**
          * Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
          *
-         * To see which event types are supported, see `Office.EventType` for details.
+         * Refer to the Mailbox object model {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox#events | events section} for supported events.
          *
          * [Api set: Mailbox 1.5]
          *
