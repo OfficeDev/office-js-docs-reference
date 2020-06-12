@@ -71,10 +71,14 @@ items:
       - 'outlook!Office.AppointmentRead#start:member'
       - 'outlook!Office.AppointmentRead#subject:member'
   - uid: 'outlook!Office.AppointmentRead#addHandlerAsync:member(1)'
-    summary: |-
+    summary: >-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
-      To see which event types are supported, see `Office.EventType` for details.
+
+      Refer to the Item object model [events
+      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events)
+      for supported events.
+
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -123,10 +127,14 @@ items:
           type:
             - 'outlook!Office.AppointmentRead#addHandlerAsync~1:complex'
   - uid: 'outlook!Office.AppointmentRead#addHandlerAsync:member(2)'
-    summary: |-
+    summary: >-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
-      To see which event types are supported, see `Office.EventType` for details.
+
+      Refer to the Item object model [events
+      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events)
+      for supported events.
+
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -2627,10 +2635,14 @@ items:
         type:
           - 'outlook!Office.Recurrence:interface'
   - uid: 'outlook!Office.AppointmentRead#removeHandlerAsync:member(1)'
-    summary: |-
+    summary: >-
       Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
-      To see which event types are supported, see `Office.EventType` for details.
+
+      Refer to the Item object model [events
+      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events)
+      for supported events.
+
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -2673,10 +2685,14 @@ items:
           type:
             - 'outlook!Office.AppointmentRead#removeHandlerAsync~1:complex'
   - uid: 'outlook!Office.AppointmentRead#removeHandlerAsync:member(2)'
-    summary: |-
+    summary: >-
       Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
-      To see which event types are supported, see `Office.EventType` for details.
+
+      Refer to the Item object model [events
+      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item#events)
+      for supported events.
+
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-

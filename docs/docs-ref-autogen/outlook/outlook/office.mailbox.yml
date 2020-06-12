@@ -50,10 +50,14 @@ items:
       - 'outlook!Office.Mailbox#restUrl:member'
       - 'outlook!Office.Mailbox#userProfile:member'
   - uid: 'outlook!Office.Mailbox#addHandlerAsync:member(1)'
-    summary: |-
+    summary: >-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
-      To see which event types are supported, see `Office.EventType` for details.
+
+      Refer to the Mailbox object model [events
+      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox#events)
+      for supported events.
+
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -100,10 +104,14 @@ items:
           type:
             - 'outlook!Office.Mailbox#addHandlerAsync~2:complex'
   - uid: 'outlook!Office.Mailbox#addHandlerAsync:member(2)'
-    summary: |-
+    summary: >-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
-      To see which event types are supported, see `Office.EventType` for details.
+
+      Refer to the Mailbox object model [events
+      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox#events)
+      for supported events.
+
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -1514,10 +1522,14 @@ items:
         type:
           - 'outlook!Office.MasterCategories:interface'
   - uid: 'outlook!Office.Mailbox#removeHandlerAsync:member(1)'
-    summary: |-
+    summary: >-
       Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
-      To see which event types are supported, see `Office.EventType` for details.
+
+      Refer to the Mailbox object model [events
+      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox#events)
+      for supported events.
+
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -1558,10 +1570,14 @@ items:
           type:
             - 'outlook!Office.Mailbox#removeHandlerAsync~1:complex'
   - uid: 'outlook!Office.Mailbox#removeHandlerAsync:member(2)'
-    summary: |-
+    summary: >-
       Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
-      To see which event types are supported, see `Office.EventType` for details.
+
+      Refer to the Mailbox object model [events
+      section](https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox#events)
+      for supported events.
+
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
