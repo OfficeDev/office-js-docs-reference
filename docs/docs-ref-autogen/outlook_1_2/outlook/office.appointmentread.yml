@@ -242,20 +242,20 @@ items:
           - '!Date:interface'
   - uid: 'outlook!Office.AppointmentRead#displayReplyAllForm:member(1)'
     summary: >-
-      Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all
-      attendees of the selected appointment.
+      Displays a reply form that includes either the sender and all recipients of the selected message or the organizer
+      and all attendees of the selected appointment.
 
 
       In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the
-      2- or 1-column view.
+      2-column or 1-column view.
 
 
       If any of the string parameters exceed their limits, `displayReplyAllForm` throws an exception.
 
 
-      When attachments are specified in the `formData.attachments` parameter, Outlook on the web and desktop clients
-      attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an
-      error is shown in the form UI. If this isn't possible, then no error message is thrown.
+      When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
+      attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form
+      UI. If this isn't possible, then no error message is thrown.
 
 
       **Note**: This method is not supported in Outlook on iOS or Android.
@@ -395,15 +395,15 @@ items:
 
 
       In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the
-      2- or 1-column view.
+      2-column or 1-column view.
 
 
       If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
 
 
-      When attachments are specified in the `formData.attachments` parameter, Outlook on the web and desktop clients
-      attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an
-      error is shown in the form UI. If this isn't possible, then no error message is thrown.
+      When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all
+      attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form
+      UI. If this isn't possible, then no error message is thrown.
 
 
       **Note**: This method is not supported in Outlook on iOS or Android.

@@ -1272,16 +1272,15 @@ export declare namespace Office {
         
         
         /**
-         * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the 
+         * Displays a reply form that includes either the sender and all recipients of the selected message or the organizer and all attendees of the
          * selected appointment.
          *
-         * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
+         * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
          *
          * If any of the string parameters exceed their limits, `displayReplyAllForm` throws an exception.
          *
-         * When attachments are specified in the `formData.attachments` parameter, Outlook on the web and desktop clients attempt to download
-         * all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
-         * If this isn't possible, then no error message is thrown.
+         * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
+         * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
@@ -1298,13 +1297,12 @@ export declare namespace Office {
         /**
          * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
          *
-         * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
+         * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
          *
          * If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
          *
-         * When attachments are specified in the `formData.attachments` parameter, Outlook on the web and desktop clients attempt to download
-         * all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
-         * If this isn't possible, then no error message is thrown.
+         * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
+         * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
@@ -2487,14 +2485,14 @@ export declare namespace Office {
          * The `displayAppointmentForm` method opens an existing calendar appointment in a new window on the desktop or in a dialog box on 
          * mobile devices.
          *
-         * In Outlook on Mac, you can use this method to display a single appointment that is not part of a recurring series, or the 
-         * master appointment of a recurring series, but you cannot display an instance of the series. 
-         * This is because in Outlook on Mac, you cannot access the properties (including the item ID) of instances of a recurring series.
+         * In Outlook on Mac, you can use this method to display a single appointment that is not part of a recurring series, or the master appointment
+         * of a recurring series. However, you can't display an instance of the series because you can't access the properties
+         * (including the item ID) of instances of a recurring series.
          *
-         * In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to 32KB number of characters.
+         * In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to 32K characters.
          *
          * If the specified item identifier does not identify an existing appointment, a blank pane opens on the client computer or device, and 
-         * no error message will be returned.
+         * no error message is returned.
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
@@ -2512,10 +2510,10 @@ export declare namespace Office {
          *
          * The `displayMessageForm` method opens an existing message in a new window on the desktop or in a dialog box on mobile devices.
          *
-         * In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to 32 KB number of characters.
+         * In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to 32K characters.
          *
          * If the specified item identifier does not identify an existing message, no message will be displayed on the client computer, and
-         * no error message will be returned.
+         * no error message is returned.
          *
          * Do not use the `displayMessageForm` with an itemId that represents an appointment. Use the `displayAppointmentForm` method to display
          * an existing appointment, and `displayNewAppointmentForm` to display a form to create a new appointment.
@@ -3627,16 +3625,15 @@ export declare namespace Office {
         
         
         /**
-         * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the 
+         * Displays a reply form that includes either the sender and all recipients of the selected message or the organizer and all attendees of the
          * selected appointment.
          *
-         * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
+         * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
          *
          * If any of the string parameters exceed their limits, `displayReplyAllForm` throws an exception.
          *
-         * When attachments are specified in the `formData.attachments` parameter, Outlook on the web and desktop clients attempt to download
-         * all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI.
-         * If this isn't possible, then no error message is thrown.
+         * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
+         * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
@@ -3653,13 +3650,12 @@ export declare namespace Office {
         /**
          * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
          *
-         * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
+         * In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-column or 1-column view.
          *
          * If any of the string parameters exceed their limits, `displayReplyForm` throws an exception.
          *
-         * When attachments are specified in the `formData.attachments` parameter, Outlook on the web and desktop clients attempt to download
-         * all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI.
-         * If this isn't possible, then no error message is thrown.
+         * When attachments are specified in the `formData.attachments` parameter, Outlook attempts to download all attachments and attach them to the
+         * reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
          *
          * **Note**: This method is not supported in Outlook on iOS or Android.
          *
