@@ -4287,10 +4287,9 @@ export declare namespace Office {
          *
          * `customProps.get("name")`
          *
-         * `var dictionary = customProps.getAll();
-         * dictionary["name"]`
+         * `var dictionary = customProps.getAll(); dictionary["name"]`
          *
-         * The dictionary object can be iterated through to discover all `names` and `values`.
+         * You can iterate through the dictionary object to discover all `names` and `values`.
          *
          * [Api set: Mailbox Preview]
          *
@@ -9820,6 +9819,8 @@ export declare namespace Office {
         emailAddress: string;
         /**
          * Gets the user's time zone in Windows format.
+         *
+         * The system time zone is usually returned. However, in Outlook on the web, the default time zone in the calendar preferences is returned instead.
          *
          * @remarks
          *
