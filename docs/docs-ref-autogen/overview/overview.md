@@ -7,10 +7,10 @@ author: o365devx
 ms.author: o365devx
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.date: 06/03/2020
+ms.date: 06/17/2020
 ---
 
-# Office JavaScript API reference
+# Office Add-ins JavaScript API reference
 
 The JavaScript API for Office enables you to create web applications that interact with the object models in Office host applications. Use this section to learn more about the classes, methods, and other types available for building Office Add-ins.
 
@@ -158,6 +158,9 @@ The following is a list of APIs for the [supported Office host applications](/of
         </a>
     </li>
 </ul>
+
+> [!NOTE]
+> If you're looking for the JavaScript APIs for developing Office Scripts, visit the [Office Scripts API reference](/javascript/api/office-scripts/overview).
 
 ## See also
 
