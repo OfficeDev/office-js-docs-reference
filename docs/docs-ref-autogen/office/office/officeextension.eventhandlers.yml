@@ -38,6 +38,7 @@ items:
           type:
             - 'office!OfficeExtension.EventHandlers~0:complex'
   - uid: 'office!OfficeExtension.EventHandlers#add:member(1)'
+    summary: Adds a function to be called when the event is triggered.
     name: add(handler)
     fullName: add(handler)
     langs:
@@ -51,10 +52,18 @@ items:
         description: ''
       parameters:
         - id: handler
-          description: ''
+          description: A promise-based function that takes in any relevant event arguments.
           type:
             - 'office!OfficeExtension.EventHandlers#add~1:complex'
   - uid: 'office!OfficeExtension.EventHandlers#remove:member(1)'
+    summary: >-
+      Removes the specified function from the event handler list so that it will not be called on subsequent events.
+
+
+      **Note**: The same  object that the handler was added in must be used when removing the handler. More information
+      can be found in the [Coding guidance for common issues and unexpected platform
+      behaviors](https://docs.microsoft.com/office/dev/add-ins/develop/common-coding-issues#removing-event-handlers)<!--
+      -->.
     name: remove(handler)
     fullName: remove(handler)
     langs:
@@ -68,7 +77,7 @@ items:
         description: ''
       parameters:
         - id: handler
-          description: ''
+          description: A reference to a function previously provided to the `add` method as an event handler.
           type:
             - 'office!OfficeExtension.EventHandlers#remove~0:complex'
 references:
