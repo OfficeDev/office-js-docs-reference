@@ -60,8 +60,9 @@ items:
       Removes the specified function from the event handler list so that it will not be called on subsequent events.
 
 
-      **Note**: The same  object that the handler was added in must be used when removing the handler. More information
-      can be found in the [Coding guidance for common issues and unexpected platform
+      **Note**: The same [RequestContext](xref:office!OfficeExtension.ClientRequestContext:class) object that the
+      handler was added in must be used when removing the handler. More information can be found in [Coding guidance for
+      common issues and unexpected platform
       behaviors](https://docs.microsoft.com/office/dev/add-ins/develop/common-coding-issues#removing-event-handlers)<!--
       -->.
     name: remove(handler)
