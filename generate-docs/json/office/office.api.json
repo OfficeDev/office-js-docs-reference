@@ -27529,7 +27529,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "office!Office.Settings#set:member(1)",
-                  "docComment": "/**\n * Sets or creates the specified setting.\n *\n * **Important**: Be aware that the Settings.set method affects only the in-memory copy of the settings property bag. To make sure that additions or changes to settings will be available to your add-in the next time the document is opened, at some point after calling the Settings.set method and before the add-in is closed, you must call the Settings.saveAsync method to persist settings in the document.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings | Settings}\n *\n * The set method creates a new setting of the specified name if it does not already exist, or sets an existing setting of the specified name in the in-memory copy of the settings property bag. After you call the Settings.saveAsync method, the value is stored in the document as the serialized JSON representation of its data type. A maximum of 2MB is available for the settings of each add-in.\n *\n * @param settingName - The case-sensitive name of the setting to set or create.\n *\n * @param value - Specifies the value to be stored.\n */\n",
+                  "docComment": "/**\n * Sets or creates the specified setting.\n *\n * **Important**: Be aware that the Settings.set method affects only the in-memory copy of the settings property bag. To make sure that additions or changes to settings will be available to your add-in the next time the document is opened, at some point after calling the Settings.set method and before the add-in is closed, you must call the Settings.saveAsync method to persist settings in the document.\n *\n * @remarks\n *\n * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings | Settings}\n *\n * The set method creates a new setting of the specified name if it does not already exist, or sets an existing setting of the specified name in the in-memory copy of the settings property bag. After you call the Settings.saveAsync method, the value is stored in the document as the serialized JSON representation of its data type.\n *\n * @param settingName - The case-sensitive name of the setting to set or create.\n *\n * @param value - Specifies the value to be stored.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -31582,7 +31582,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "office!OfficeExtension.EventHandlers#add:member(1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Adds a function to be called when the event is triggered.\n *\n * @param handler - A promise-based function that takes in any relevant event arguments.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -31640,7 +31640,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "office!OfficeExtension.EventHandlers#remove:member(1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Removes the specified function from the event handler list so that it will not be called on subsequent events.\n *\n * **Note**: The same {@link OfficeExtension.ClientRequestContext | RequestContext} object that the handler was added in must be used when removing the handler. More information can be found in {@link https://docs.microsoft.com/office/dev/add-ins/develop/common-coding-issues#removing-event-handlers | Coding guidance for common issues and unexpected platform behaviors}.\n *\n * @param handler - A reference to a function previously provided to the `add` method as an event handler.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
