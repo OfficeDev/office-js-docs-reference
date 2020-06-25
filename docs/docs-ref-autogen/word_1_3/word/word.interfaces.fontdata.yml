@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'word!Word.Interfaces.FontData:interface'
-    summary: An interface describing the data returned by calling "font.toJSON()".
+    summary: An interface describing the data returned by calling `font.toJSON()`<!-- -->.
     name: Word.Interfaces.FontData
     fullName: Word.Interfaces.FontData
     langs:

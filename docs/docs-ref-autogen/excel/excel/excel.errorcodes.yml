@@ -26,6 +26,7 @@ items:
       - 'excel!Excel.ErrorCodes.rangeExceedsLimit:member'
       - 'excel!Excel.ErrorCodes.requestAborted:member'
       - 'excel!Excel.ErrorCodes.unsupportedOperation:member'
+      - 'excel!Excel.ErrorCodes.unsupportedSheet:member'
   - uid: 'excel!Excel.ErrorCodes.accessDenied:member'
     name: accessDenied
     fullName: accessDenied
@@ -152,3 +153,10 @@ items:
       - typeScript
     type: field
     numericValue: '"UnsupportedOperation"'
+  - uid: 'excel!Excel.ErrorCodes.unsupportedSheet:member'
+    name: unsupportedSheet
+    fullName: unsupportedSheet
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UnsupportedSheet"'

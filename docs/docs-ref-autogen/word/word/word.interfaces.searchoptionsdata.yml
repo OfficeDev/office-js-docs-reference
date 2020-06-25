@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'word!Word.Interfaces.SearchOptionsData:interface'
-    summary: An interface describing the data returned by calling "searchOptions.toJSON()".
+    summary: An interface describing the data returned by calling `searchOptions.toJSON()`<!-- -->.
     name: Word.Interfaces.SearchOptionsData
     fullName: Word.Interfaces.SearchOptionsData
     langs:

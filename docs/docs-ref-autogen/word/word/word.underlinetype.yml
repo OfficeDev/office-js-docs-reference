@@ -2,7 +2,7 @@
 items:
   - uid: 'word!Word.UnderlineType:enum'
     summary: |-
-      Underline types
+      The supported styles for underline format.
 
       \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.UnderlineType

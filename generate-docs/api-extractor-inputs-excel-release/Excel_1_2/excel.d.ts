@@ -264,10 +264,8 @@ export declare namespace Excel {
     /**
      *
      * Provides information about the selection that raised the "SelectionChanged" event.
-     * 
-     * **Note**: If multiple, discontiguous cells are selected, 
-     * `Binding.onSelectionChanged` only reports row and column information for one selection.
-     * Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+                
+                 **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
      *
      * [Api set: ExcelApi 1.2]
      */
@@ -1686,10 +1684,8 @@ export declare namespace Excel {
         /**
          *
          * Occurs when the selected content in the binding is changed.
-         *
-         * **Note**: If multiple, discontiguous cells are selected, 
-         * `Binding.onSelectionChanged` only reports row and column information for one selection. 
-         * Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+                    
+                     **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
          *
          * [Api set: ExcelApi 1.2]
          *
@@ -5220,7 +5216,7 @@ export declare namespace Excel {
          * The first criterion used to filter data. Used as an operator in the case of "custom" filtering.
                      For example ">50" for number greater than 50 or "=*s" for values ending in "s".
                     
-                     Used as a number in the case of top/bottom items/percents. e.g., "5" for the top 5 items if filterOn is set to "topItems"
+                     Used as a number in the case of top/bottom items/percents (e.g., "5" for the top 5 items if filterOn is set to "topItems").
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -9436,6 +9432,7 @@ export declare namespace Excel {
         rangeExceedsLimit = "RangeExceedsLimit",
         requestAborted = "RequestAborted",
         unsupportedOperation = "UnsupportedOperation",
+        unsupportedSheet = "UnsupportedSheet",
         invalidOperationInCellEditMode = "InvalidOperationInCellEditMode"
     }
     export module Interfaces {

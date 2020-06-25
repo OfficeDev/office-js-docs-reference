@@ -1,0 +1,77 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CommentChangeType:enum'
+    summary: >-
+      Represents how the comments in the event were changed.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.CommentChangeType
+    fullName: Excel.CommentChangeType
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.CommentChangeType.commentEdited:member'
+      - 'excel!Excel.CommentChangeType.commentReopened:member'
+      - 'excel!Excel.CommentChangeType.commentResolved:member'
+      - 'excel!Excel.CommentChangeType.replyAdded:member'
+      - 'excel!Excel.CommentChangeType.replyDeleted:member'
+      - 'excel!Excel.CommentChangeType.replyEdited:member'
+  - uid: 'excel!Excel.CommentChangeType.commentEdited:member'
+    summary: Comments were edited.
+    isPreview: true
+    name: commentEdited
+    fullName: commentEdited
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CommentEdited"'
+  - uid: 'excel!Excel.CommentChangeType.commentReopened:member'
+    summary: Comments were reopened.
+    isPreview: true
+    name: commentReopened
+    fullName: commentReopened
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CommentReopened"'
+  - uid: 'excel!Excel.CommentChangeType.commentResolved:member'
+    summary: Comments were resolved.
+    isPreview: true
+    name: commentResolved
+    fullName: commentResolved
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CommentResolved"'
+  - uid: 'excel!Excel.CommentChangeType.replyAdded:member'
+    summary: Replies were added.
+    isPreview: true
+    name: replyAdded
+    fullName: replyAdded
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ReplyAdded"'
+  - uid: 'excel!Excel.CommentChangeType.replyDeleted:member'
+    summary: Replies were deleted.
+    isPreview: true
+    name: replyDeleted
+    fullName: replyDeleted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ReplyDeleted"'
+  - uid: 'excel!Excel.CommentChangeType.replyEdited:member'
+    summary: Replies were edited.
+    isPreview: true
+    name: replyEdited
+    fullName: replyEdited
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ReplyEdited"'

@@ -2,8 +2,8 @@
 items:
   - uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData:interface'
     summary: >-
-      An interface for updating data on the DocumentProperties object, for use in "documentProperties.set(<!-- -->{ ...
-      }<!-- -->)".
+      An interface for updating data on the DocumentProperties object, for use in `documentProperties.set({ ... })`<!--
+      -->.
     name: Word.Interfaces.DocumentPropertiesUpdateData
     fullName: Word.Interfaces.DocumentPropertiesUpdateData
     langs:

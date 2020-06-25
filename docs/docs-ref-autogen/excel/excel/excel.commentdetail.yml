@@ -1,0 +1,55 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CommentDetail:interface'
+    summary: >-
+      A structure for the comment ID and IDs of its related replies.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.CommentDetail
+    fullName: Excel.CommentDetail
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CommentDetail#commentId:member'
+      - 'excel!Excel.CommentDetail#replyIds:member'
+  - uid: 'excel!Excel.CommentDetail#commentId:member'
+    summary: >-
+      Represents the ID of comment.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: commentId
+    fullName: commentId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'commentId: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.CommentDetail#replyIds:member'
+    summary: >-
+      Represents the IDs of the related replies belong to comment.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: replyIds
+    fullName: replyIds
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'replyIds: string[];'
+      return:
+        type:
+          - 'string[]'

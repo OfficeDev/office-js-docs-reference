@@ -134,6 +134,8 @@ items:
                 uid: 'excel!Excel.ClearApplyTo:enum'
               - name: CloseBehavior
                 uid: 'excel!Excel.CloseBehavior:enum'
+              - name: CommentChangeType
+                uid: 'excel!Excel.CommentChangeType:enum'
               - name: ConditionalCellValueOperator
                 uid: 'excel!Excel.ConditionalCellValueOperator:enum'
               - name: ConditionalDataBarAxisFormat
@@ -515,8 +517,16 @@ items:
             uid: 'excel!Excel.ColumnPropertiesLoadOptions:interface'
           - name: Comment
             uid: 'excel!Excel.Comment:class'
+          - name: CommentAddedEventArgs
+            uid: 'excel!Excel.CommentAddedEventArgs:interface'
+          - name: CommentChangedEventArgs
+            uid: 'excel!Excel.CommentChangedEventArgs:interface'
           - name: CommentCollection
             uid: 'excel!Excel.CommentCollection:class'
+          - name: CommentDeletedEventArgs
+            uid: 'excel!Excel.CommentDeletedEventArgs:interface'
+          - name: CommentDetail
+            uid: 'excel!Excel.CommentDetail:interface'
           - name: CommentMention
             uid: 'excel!Excel.CommentMention:interface'
           - name: CommentReply
@@ -641,6 +651,10 @@ items:
             uid: 'excel!Excel.NamedItemArrayValues:class'
           - name: NamedItemCollection
             uid: 'excel!Excel.NamedItemCollection:class'
+          - name: NamedSheetView
+            uid: 'excel!Excel.NamedSheetView:class'
+          - name: NamedSheetViewCollection
+            uid: 'excel!Excel.NamedSheetViewCollection:class'
           - name: NumberFormatInfo
             uid: 'excel!Excel.NumberFormatInfo:class'
           - name: PageBreak
@@ -693,6 +707,8 @@ items:
             uid: 'excel!Excel.Range:class'
           - name: RangeAreas
             uid: 'excel!Excel.RangeAreas:class'
+          - name: RangeAreasCollection
+            uid: 'excel!Excel.RangeAreasCollection:class'
           - name: RangeBorder
             uid: 'excel!Excel.RangeBorder:class'
           - name: RangeBorderCollection
@@ -839,6 +855,8 @@ items:
             uid: 'excel!Excel.WorkbookCreated:class'
           - name: WorkbookProtection
             uid: 'excel!Excel.WorkbookProtection:class'
+          - name: WorkbookRangeAreas
+            uid: 'excel!Excel.WorkbookRangeAreas:class'
           - name: Worksheet
             uid: 'excel!Excel.Worksheet:class'
           - name: WorksheetActivatedEventArgs

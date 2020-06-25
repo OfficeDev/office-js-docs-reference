@@ -19,6 +19,9 @@ items:
       - 'word!Word.Interfaces.SettingCollectionLoadOptions#key:member'
       - 'word!Word.Interfaces.SettingCollectionLoadOptions#value:member'
   - uid: 'word!Word.Interfaces.SettingCollectionLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     isPreview: true
     name: $all
     fullName: $all

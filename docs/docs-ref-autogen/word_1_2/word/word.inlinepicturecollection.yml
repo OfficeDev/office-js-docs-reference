@@ -50,42 +50,24 @@ items:
           - 'word!Word.InlinePictureCollection#items~0:complex'
   - uid: 'word!Word.InlinePictureCollection#load:member(1)'
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    remarks: >-
-      In addition to this signature, this method has the following signatures:
-
-
-      `load(option?: string | string[]): Word.InlinePictureCollection` - Where option is a comma-delimited string or an
-      array of strings that specify the properties to load.
-
-
-      `load(option?: { select?: string; expand?: string; }): Word.InlinePictureCollection` - Where option.select is a
-      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
-      specifies the navigation properties to load.
-
-
-      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.InlinePictureCollection` -
-      Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
-      number of collection items that can be included in the result. Option.skip specifies the number of items that are
-      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
-      the specified number of items.
-    name: load(option)
-    fullName: load(option)
+    name: load(options)
+    fullName: load(options)
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        load(option?: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        load(options?: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
         Word.InlinePictureCollection;
       return:
         type:
           - 'word!Word.InlinePictureCollection:class'
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: options
+          description: Provides options for which properties of the object to load.
           type:
             - 'word!Word.InlinePictureCollection#load~0:complex'
   - uid: 'word!Word.InlinePictureCollection#load:member(2)'
@@ -109,20 +91,25 @@ items:
           type:
             - 'string | string[]'
   - uid: 'word!Word.InlinePictureCollection#load:member(3)'
-    name: load(option)
-    fullName: load(option)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: OfficeExtension.LoadOption): Word.InlinePictureCollection;'
+      content: 'load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.InlinePictureCollection;'
       return:
         type:
           - 'word!Word.InlinePictureCollection:class'
         description: ''
       parameters:
-        - id: option
-          description: ''
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
           type:
             - 'office!OfficeExtension.LoadOption:interface'
   - uid: 'word!Word.InlinePictureCollection#toJSON:member(1)'
@@ -146,10 +133,10 @@ items:
   - uid: 'word!Word.InlinePictureCollection#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
-      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
-      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
-      method on the object, you needed to have added the object to the tracked object collection when the object was
-      first created.
+      for `context.trackedObjects.add(thisObject)`<!-- -->. If you are using this object across `.sync` calls and
+      outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property
+      or invoking a method on the object, you needed to have added the object to the tracked object collection when the
+      object was first created.
     name: track()
     fullName: track()
     langs:
@@ -164,9 +151,9 @@ items:
   - uid: 'word!Word.InlinePictureCollection#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
-      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
-      the memory release takes effect.
+      `context.trackedObjects.remove(thisObject)`<!-- -->. Having many tracked objects slows down the host application,
+      so please remember to free any objects you add, once you're done using them. You will need to call
+      `context.sync()` before the memory release takes effect.
     name: untrack()
     fullName: untrack()
     langs:

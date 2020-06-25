@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'word!Word.Interfaces.SectionData:interface'
-    summary: An interface describing the data returned by calling "section.toJSON()".
+    summary: An interface describing the data returned by calling `section.toJSON()`<!-- -->.
     name: Word.Interfaces.SectionData
     fullName: Word.Interfaces.SectionData
     langs:

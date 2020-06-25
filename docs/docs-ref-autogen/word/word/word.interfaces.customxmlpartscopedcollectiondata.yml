@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'word!Word.Interfaces.CustomXmlPartScopedCollectionData:interface'
-    summary: An interface describing the data returned by calling "customXmlPartScopedCollection.toJSON()".
+    summary: An interface describing the data returned by calling `customXmlPartScopedCollection.toJSON()`<!-- -->.
     name: Word.Interfaces.CustomXmlPartScopedCollectionData
     fullName: Word.Interfaces.CustomXmlPartScopedCollectionData
     langs:

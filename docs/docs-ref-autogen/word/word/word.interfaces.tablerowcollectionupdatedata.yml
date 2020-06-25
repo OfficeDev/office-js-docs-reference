@@ -2,8 +2,8 @@
 items:
   - uid: 'word!Word.Interfaces.TableRowCollectionUpdateData:interface'
     summary: >-
-      An interface for updating data on the TableRowCollection object, for use in "tableRowCollection.set(<!-- -->{ ...
-      }<!-- -->)".
+      An interface for updating data on the TableRowCollection object, for use in `tableRowCollection.set({ ... })`<!--
+      -->.
     name: Word.Interfaces.TableRowCollectionUpdateData
     fullName: Word.Interfaces.TableRowCollectionUpdateData
     langs:

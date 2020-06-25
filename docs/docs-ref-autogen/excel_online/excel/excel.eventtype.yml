@@ -17,8 +17,9 @@ items:
       - 'excel!Excel.EventType.commentAdded:member'
       - 'excel!Excel.EventType.commentChanged:member'
       - 'excel!Excel.EventType.commentDeleted:member'
+      - 'excel!Excel.EventType.linkedDataTypeLinkedDataTypeAdded:member'
+      - 'excel!Excel.EventType.linkedDataTypeRefreshModeChanged:member'
       - 'excel!Excel.EventType.linkedDataTypeRefreshRequestCompleted:member'
-      - 'excel!Excel.EventType.recordingStateChangedEvent:member'
       - 'excel!Excel.EventType.ribbonCommandExecuted:member'
       - 'excel!Excel.EventType.shapeActivated:member'
       - 'excel!Excel.EventType.shapeDeactivated:member'
@@ -124,6 +125,26 @@ items:
       - typeScript
     type: field
     numericValue: '"CommentDeleted"'
+  - uid: 'excel!Excel.EventType.linkedDataTypeLinkedDataTypeAdded:member'
+    summary: >-
+      LinkedDataTypeAdded represents the type of event registered on LinkedDataType, and occurs when a new linked data
+      type is added to the workbook.
+    name: linkedDataTypeLinkedDataTypeAdded
+    fullName: linkedDataTypeLinkedDataTypeAdded
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LinkedDataTypeLinkedDataTypeAdded"'
+  - uid: 'excel!Excel.EventType.linkedDataTypeRefreshModeChanged:member'
+    summary: >-
+      RefreshModeChanged represents the type of event registered on LinkedDataType, and occurs when the linked data type
+      refresh mode is changed.
+    name: linkedDataTypeRefreshModeChanged
+    fullName: linkedDataTypeRefreshModeChanged
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LinkedDataTypeRefreshModeChanged"'
   - uid: 'excel!Excel.EventType.linkedDataTypeRefreshRequestCompleted:member'
     summary: >-
       RefreshRequestCompleted represents the type of event registered on LinkedDataType, and occurs when a request to
@@ -134,13 +155,6 @@ items:
       - typeScript
     type: field
     numericValue: '"LinkedDataTypeRefreshRequestCompleted"'
-  - uid: 'excel!Excel.EventType.recordingStateChangedEvent:member'
-    name: recordingStateChangedEvent
-    fullName: recordingStateChangedEvent
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"RecordingStateChangedEvent"'
   - uid: 'excel!Excel.EventType.ribbonCommandExecuted:member'
     summary: 'RibbonCommandExecuted represents the type of event registered on ribbon, and occurs when user click on ribbon'
     name: ribbonCommandExecuted

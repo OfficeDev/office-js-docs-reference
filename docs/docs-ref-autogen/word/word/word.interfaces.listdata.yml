@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'word!Word.Interfaces.ListData:interface'
-    summary: An interface describing the data returned by calling "list.toJSON()".
+    summary: An interface describing the data returned by calling `list.toJSON()`<!-- -->.
     name: Word.Interfaces.ListData
     fullName: Word.Interfaces.ListData
     langs:

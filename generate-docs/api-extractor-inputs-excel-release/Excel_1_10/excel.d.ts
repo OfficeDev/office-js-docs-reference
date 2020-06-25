@@ -752,10 +752,8 @@ export declare namespace Excel {
     /**
      *
      * Provides information about the selection that raised the "SelectionChanged" event.
-     * 
-     * **Note**: If multiple, discontiguous cells are selected, 
-     * `Binding.onSelectionChanged` only reports row and column information for one selection.
-     * Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+                
+                 **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
      *
      * [Api set: ExcelApi 1.2]
      */
@@ -5552,10 +5550,8 @@ export declare namespace Excel {
         /**
          *
          * Occurs when the selected content in the binding is changed.
-         *
-         * **Note**: If multiple, discontiguous cells are selected, 
-         * `Binding.onSelectionChanged` only reports row and column information for one selection. 
-         * Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+                    
+                     **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
          *
          * [Api set: ExcelApi 1.2]
          *
@@ -7117,7 +7113,7 @@ export declare namespace Excel {
         pattern: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
         /**
          *
-         * The HTML color code representing the color of the range pattern, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+         * The HTML color code representing the color of the range pattern, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -7677,7 +7673,7 @@ export declare namespace Excel {
         /**
          *
          * Specifies a ChartCategoryLabelLevel enumeration constant referring to
-                    the level of where the category labels are being sourced from. 
+                    the level of where the category labels are being sourced from.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -8248,7 +8244,7 @@ export declare namespace Excel {
         filtered: boolean;
         /**
          *
-         * Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360.Specifies if the negative DataBar has the same fill color as the positive DataBar.
+         * Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -8410,7 +8406,7 @@ export declare namespace Excel {
         plotOrder: number;
         /**
          *
-         * Specifies the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
+         * Specifies the size of the secondary section of either a pie-of-pie chart or a bar-of-pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -12339,7 +12335,7 @@ export declare namespace Excel {
          * The first criterion used to filter data. Used as an operator in the case of "custom" filtering.
                      For example ">50" for number greater than 50 or "=*s" for values ending in "s".
                     
-                     Used as a number in the case of top/bottom items/percents. e.g., "5" for the top 5 items if filterOn is set to "topItems"
+                     Used as a number in the case of top/bottom items/percents (e.g., "5" for the top 5 items if filterOn is set to "topItems").
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -12542,7 +12538,7 @@ export declare namespace Excel {
     /**
      *
      * A scoped collection of custom XML parts.
-                A scoped collection is the result of some operation, e.g., filtering by namespace.
+                A scoped collection is the result of some operation (e.g., filtering by namespace).
                 A scoped collection cannot be scoped any further.
      *
      * [Api set: ExcelApi 1.5]
@@ -13911,7 +13907,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param sortBy - Specifies if the sorting is done in ascending or descending order.
+         * @param sortBy - Specifies if the sorting is done in ascending or descending order.
          */
         sortByLabels(sortBy: SortBy): void;
         /**
@@ -13920,7 +13916,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.9]
          *
-         * @param sortBy - Specifies if the sorting is done in ascending or descending order.
+         * @param sortBy - Specifies if the sorting is done in ascending or descending order.
          * @param valuesHierarchy - Specifies the values hierarchy on the data axis to be used for sorting.
          * @param pivotItemScope - The items that should be used for the scope of the sorting. These will be the
                     items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
@@ -13934,7 +13930,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.9]
          *
-         * @param sortByString - Specifies if the sorting is done in ascending or descending order.
+         * @param sortByString - Specifies if the sorting is done in ascending or descending order.
          * @param valuesHierarchy - Specifies the values hierarchy on the data axis to be used for sorting.
          * @param pivotItemScope - The items that should be used for the scope of the sorting. These will be the
                     items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
@@ -14503,7 +14499,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * The key of the custom property.
+         * The key of the custom property. The key is limited to 255 characters outside of Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -14517,7 +14513,7 @@ export declare namespace Excel {
         readonly type: Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float";
         /**
          *
-         * The value of the custom property.
+         * The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -14585,8 +14581,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param key - Required. The custom property's key, which is case-insensitive.
-         * @param value - Required. The custom property's value.
+         * @param key - Required. The custom property's key, which is case-insensitive. The key is limited to 255 characters outside of Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
+         * @param value - Required. The custom property's value. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
          */
         add(key: string, value: any): Excel.CustomProperty;
         /**
@@ -15580,7 +15576,7 @@ export declare namespace Excel {
     export interface ConditionalColorScaleCriterion {
         /**
          *
-         * HTML color code representation of the color scale color. e.g., #FF0000 represents Red.
+         * HTML color code representation of the color scale color (e.g., #FF0000 represents Red).
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -21623,41 +21619,49 @@ export declare namespace Excel {
     enum DataChangeType {
         /**
          * Unknown represents the type of data change is not the listed types.
+         * [Api set: ExcelApi The name of this value was 'Others' in ExcelApi 1.7]
          *
          */
         unknown = "Unknown",
         /**
          * RangeEdited represents the data change event is triggered by range being edited.
+         * [Api set: ExcelApi 1.7]
          *
          */
         rangeEdited = "RangeEdited",
         /**
          * RowInserted represents the data change event is triggered by inserting new rows.
+         * [Api set: ExcelApi 1.7]
          *
          */
         rowInserted = "RowInserted",
         /**
          * RowDeleted represents the data change event is triggered by deleting rows.
+         * [Api set: ExcelApi 1.7]
          *
          */
         rowDeleted = "RowDeleted",
         /**
          * ColumnInserted represents the data change event is triggered by inserting new columns.
+         * [Api set: ExcelApi 1.7]
          *
          */
         columnInserted = "ColumnInserted",
         /**
          * ColumnDeleted represents the data change event is triggered by deleting columns.
+         * [Api set: ExcelApi 1.7]
          *
          */
         columnDeleted = "ColumnDeleted",
         /**
          * CellInserted represents the data change event is triggered by inserting new cells.
+         * [Api set: ExcelApi 1.7]
          *
          */
         cellInserted = "CellInserted",
         /**
          * CellDeleted represents the data change event is triggered by deleting cells.
+         * [Api set: ExcelApi 1.7]
          *
          */
         cellDeleted = "CellDeleted"
@@ -21813,19 +21817,18 @@ export declare namespace Excel {
          *
          */
         worksheetRowHiddenChanged = "WorksheetRowHiddenChanged",
-        recordingStateChangedEvent = "RecordingStateChangedEvent",
         /**
-         * CommentAdded represents the type of event that is registered on commentCollection, and occurs when comments are added.
+         * CommentAdded represents the type of event that is registered on commentCollection, and occurs when comments are added.
          *
          */
         commentAdded = "CommentAdded",
         /**
-         * CommentDeleted represents the type of event that is registered on commentCollection, and occurs when comments are deleted.
+         * CommentDeleted represents the type of event that is registered on commentCollection, and occurs when comments are deleted.
          *
          */
         commentDeleted = "CommentDeleted",
         /**
-         * CommentChanged represents the type of event that is registered on commentCollection, and occurs when comments are changed.
+         * CommentChanged represents the type of event that is registered on commentCollection, and occurs when comments are changed.
          *
          */
         commentChanged = "CommentChanged",
@@ -21833,7 +21836,17 @@ export declare namespace Excel {
          * RefreshRequestCompleted represents the type of event registered on LinkedDataType, and occurs when a request to refresh a data source is completed.
          *
          */
-        linkedDataTypeRefreshRequestCompleted = "LinkedDataTypeRefreshRequestCompleted"
+        linkedDataTypeRefreshRequestCompleted = "LinkedDataTypeRefreshRequestCompleted",
+        /**
+         * RefreshModeChanged represents the type of event registered on LinkedDataType, and occurs when the linked data type refresh mode is changed.
+         *
+         */
+        linkedDataTypeRefreshModeChanged = "LinkedDataTypeRefreshModeChanged",
+        /**
+         * LinkedDataTypeAdded represents the type of event registered on LinkedDataType, and occurs when a new linked data type is added to the workbook.
+         *
+         */
+        linkedDataTypeLinkedDataTypeAdded = "LinkedDataTypeLinkedDataTypeAdded"
     }
     /**
      * [Api set: ExcelApi 1.7]
@@ -22148,20 +22161,71 @@ export declare namespace Excel {
         firstOddAndEven = "FirstOddAndEven"
     }
     /**
+     *
+     * The behavior types when AutoFill is used on a range in the workbook.
+     *
      * [Api set: ExcelApi 1.9]
      */
     enum AutoFillType {
+        /**
+         * Populates the adjacent cells based on the surrounding data (the standard AutoFill behavior).
+         *
+         */
         fillDefault = "FillDefault",
+        /**
+         * Populates the adjacent cells with data based on the selected data.
+         *
+         */
         fillCopy = "FillCopy",
+        /**
+         * Populates the adjacent cells with data that follows a pattern in the copied cells.
+         *
+         */
         fillSeries = "FillSeries",
+        /**
+         * Populates the adjacent cells with the selected formulas.
+         *
+         */
         fillFormats = "FillFormats",
+        /**
+         * Populates the adjacent cells with the selected values.
+         *
+         */
         fillValues = "FillValues",
+        /**
+         * A version of "FillSeries" for dates that bases the pattern on either the day of the month or the day of the week, depending on the context.
+         *
+         */
         fillDays = "FillDays",
+        /**
+         * A version of "FillSeries" for dates that bases the pattern on the day of the week and only includes weekdays.
+         *
+         */
         fillWeekdays = "FillWeekdays",
+        /**
+         * A version of "FillSeries" for dates that bases the pattern on the month.
+         *
+         */
         fillMonths = "FillMonths",
+        /**
+         * A version of "FillSeries" for dates that bases the pattern on the year.
+         *
+         */
         fillYears = "FillYears",
+        /**
+         * A version of "FillSeries" for numbers that fills out the values in the adjacent cells according to a linear trend model.
+         *
+         */
         linearTrend = "LinearTrend",
+        /**
+         * A version of "FillSeries" for numbers that fills out the values in the adjacent cells according to a growth trend model.
+         *
+         */
         growthTrend = "GrowthTrend",
+        /**
+         * Populates the adjacent cells by using Excel's FlashFill feature.
+         *
+         */
         flashFill = "FlashFill"
     }
     /**
@@ -26227,6 +26291,7 @@ export declare namespace Excel {
         rangeExceedsLimit = "RangeExceedsLimit",
         requestAborted = "RequestAborted",
         unsupportedOperation = "UnsupportedOperation",
+        unsupportedSheet = "UnsupportedSheet",
         invalidOperationInCellEditMode = "InvalidOperationInCellEditMode"
     }
     export module Interfaces {
@@ -26910,7 +26975,7 @@ export declare namespace Excel {
             pattern?: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
             /**
              *
-             * The HTML color code representing the color of the range pattern, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+             * The HTML color code representing the color of the range pattern, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -27114,7 +27179,7 @@ export declare namespace Excel {
             /**
              *
              * Specifies a ChartCategoryLabelLevel enumeration constant referring to
-                        the level of where the category labels are being sourced from. 
+                        the level of where the category labels are being sourced from.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -27376,7 +27441,7 @@ export declare namespace Excel {
             filtered?: boolean;
             /**
              *
-             * Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360.Specifies if the negative DataBar has the same fill color as the positive DataBar.
+             * Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -27538,7 +27603,7 @@ export declare namespace Excel {
             plotOrder?: number;
             /**
              *
-             * Specifies the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
+             * Specifies the size of the secondary section of either a pie-of-pie chart or a bar-of-pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -29329,7 +29394,7 @@ export declare namespace Excel {
         export interface CustomPropertyUpdateData {
             /**
              *
-             * The value of the custom property.
+             * The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -32189,7 +32254,7 @@ export declare namespace Excel {
             pattern?: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
             /**
              *
-             * The HTML color code representing the color of the range pattern, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+             * The HTML color code representing the color of the range pattern, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -32399,7 +32464,7 @@ export declare namespace Excel {
             /**
              *
              * Specifies a ChartCategoryLabelLevel enumeration constant referring to
-                        the level of where the category labels are being sourced from. 
+                        the level of where the category labels are being sourced from.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -32682,7 +32747,7 @@ export declare namespace Excel {
             filtered?: boolean;
             /**
              *
-             * Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360.Specifies if the negative DataBar has the same fill color as the positive DataBar.
+             * Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -32844,7 +32909,7 @@ export declare namespace Excel {
             plotOrder?: number;
             /**
              *
-             * Specifies the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
+             * Specifies the size of the secondary section of either a pie-of-pie chart or a bar-of-pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -35000,7 +35065,7 @@ export declare namespace Excel {
         export interface CustomPropertyData {
             /**
              *
-             * The key of the custom property.
+             * The key of the custom property. The key is limited to 255 characters outside of Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -35014,7 +35079,7 @@ export declare namespace Excel {
             type?: Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float";
             /**
              *
-             * The value of the custom property.
+             * The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -38914,7 +38979,7 @@ export declare namespace Excel {
             pattern?: boolean;
             /**
              *
-             * The HTML color code representing the color of the range pattern, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+             * The HTML color code representing the color of the range pattern, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
              *
              * [Api set: ExcelApi 1.9]
              */
@@ -39198,7 +39263,7 @@ export declare namespace Excel {
             /**
              *
              * For EACH ITEM in the collection: Specifies a ChartCategoryLabelLevel enumeration constant referring to
-                        the level of where the category labels are being sourced from. 
+                        the level of where the category labels are being sourced from.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -39383,7 +39448,7 @@ export declare namespace Excel {
             /**
              *
              * Specifies a ChartCategoryLabelLevel enumeration constant referring to
-                        the level of where the category labels are being sourced from. 
+                        the level of where the category labels are being sourced from.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -39682,7 +39747,7 @@ export declare namespace Excel {
             filtered?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360.Specifies if the negative DataBar has the same fill color as the positive DataBar.
+             * For EACH ITEM in the collection: Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -39844,7 +39909,7 @@ export declare namespace Excel {
             plotOrder?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
+             * For EACH ITEM in the collection: Specifies the size of the secondary section of either a pie-of-pie chart or a bar-of-pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -40011,7 +40076,7 @@ export declare namespace Excel {
             filtered?: boolean;
             /**
              *
-             * Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360.Specifies if the negative DataBar has the same fill color as the positive DataBar.
+             * Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -40173,7 +40238,7 @@ export declare namespace Excel {
             plotOrder?: boolean;
             /**
              *
-             * Specifies the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
+             * Specifies the size of the secondary section of either a pie-of-pie chart or a bar-of-pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -42375,7 +42440,7 @@ export declare namespace Excel {
         /**
          *
          * A scoped collection of custom XML parts.
-                    A scoped collection is the result of some operation, e.g., filtering by namespace.
+                    A scoped collection is the result of some operation (e.g., filtering by namespace).
                     A scoped collection cannot be scoped any further.
          *
          * [Api set: ExcelApi 1.5]
@@ -43205,7 +43270,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * The key of the custom property.
+             * The key of the custom property. The key is limited to 255 characters outside of Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -43219,7 +43284,7 @@ export declare namespace Excel {
             type?: boolean;
             /**
              *
-             * The value of the custom property.
+             * The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -43238,7 +43303,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: The key of the custom property.
+             * For EACH ITEM in the collection: The key of the custom property. The key is limited to 255 characters outside of Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -43252,7 +43317,7 @@ export declare namespace Excel {
             type?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: The value of the custom property.
+             * For EACH ITEM in the collection: The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
              *
              * [Api set: ExcelApi 1.7]
              */
