@@ -54,6 +54,7 @@ items:
       - 'excel!Excel.Range#getColumnProperties:member(1)'
       - 'excel!Excel.Range#getColumnsAfter:member(1)'
       - 'excel!Excel.Range#getColumnsBefore:member(1)'
+      - 'excel!Excel.Range#getDirectPrecedents:member(1)'
       - 'excel!Excel.Range#getEntireColumn:member(1)'
       - 'excel!Excel.Range#getEntireRow:member(1)'
       - 'excel!Excel.Range#getImage:member(1)'
@@ -62,8 +63,10 @@ items:
       - 'excel!Excel.Range#getLastCell:member(1)'
       - 'excel!Excel.Range#getLastColumn:member(1)'
       - 'excel!Excel.Range#getLastRow:member(1)'
+      - 'excel!Excel.Range#getMergedAreas:member(1)'
       - 'excel!Excel.Range#getOffsetRange:member(1)'
       - 'excel!Excel.Range#getPivotTables:member(1)'
+      - 'excel!Excel.Range#getPrecedents:member(1)'
       - 'excel!Excel.Range#getResizedRange:member(1)'
       - 'excel!Excel.Range#getRow:member(1)'
       - 'excel!Excel.Range#getRowProperties:member(1)'
@@ -1150,6 +1153,26 @@ items:
             current range. The default value is 1.
           type:
             - number
+  - uid: 'excel!Excel.Range#getDirectPrecedents:member(1)'
+    summary: >-
+      Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedents of a cell in
+      same worksheet or in multiple worksheets.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getDirectPrecedents()
+    fullName: getDirectPrecedents()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDirectPrecedents(): Excel.WorkbookRangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.WorkbookRangeAreas:class'
+        description: ''
   - uid: 'excel!Excel.Range#getEntireColumn:member(1)'
     summary: >-
       Gets an object that represents the entire column of the range (for example, if the current range represents cells
@@ -1493,6 +1516,26 @@ items:
               }
           });
           ```
+  - uid: 'excel!Excel.Range#getMergedAreas:member(1)'
+    summary: >-
+      Returns a RangeAreas object that represents the merged areas in this range. Note that if the merged areas count in
+      this range is more than 512, the API will fail to return the result.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getMergedAreas()
+    fullName: getMergedAreas()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMergedAreas(): Excel.RangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.RangeAreas:class'
+        description: ''
   - uid: 'excel!Excel.Range#getOffsetRange:member(1)'
     summary: >-
       Gets an object which represents a range that's offset from the specified range. The dimension of the returned
@@ -1569,6 +1612,26 @@ items:
             false.
           type:
             - boolean
+  - uid: 'excel!Excel.Range#getPrecedents:member(1)'
+    summary: >-
+      Returns a `WorkbookRangeAreas` object that represents the range containing all the precedents of a cell in same
+      worksheet or in multiple worksheets.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getPrecedents()
+    fullName: getPrecedents()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrecedents(): Excel.WorkbookRangeAreas;'
+      return:
+        type:
+          - 'excel!Excel.WorkbookRangeAreas:class'
+        description: ''
   - uid: 'excel!Excel.Range#getResizedRange:member(1)'
     summary: >-
       Gets a Range object similar to the current Range object, but with its bottom-right corner expanded (or contracted)
@@ -3749,6 +3812,8 @@ references:
         fullName: '[]>'
   - uid: 'excel!Excel.ColumnPropertiesLoadOptions:interface'
     name: ColumnPropertiesLoadOptions
+  - uid: 'excel!Excel.WorkbookRangeAreas:class'
+    name: Excel.WorkbookRangeAreas
   - uid: 'excel!Excel.Range#getImage~0:complex'
     name: OfficeExtension.ClientResult<string>
     fullName: OfficeExtension.ClientResult<string>
@@ -3776,6 +3841,8 @@ references:
         fullName: Excel.Range
       - name: ' | string'
         fullName: ' | string'
+  - uid: 'excel!Excel.RangeAreas:class'
+    name: Excel.RangeAreas
   - uid: 'excel!Excel.PivotTableScopedCollection:class'
     name: Excel.PivotTableScopedCollection
   - uid: 'excel!Excel.Range#getRowProperties~0:complex'
@@ -3794,8 +3861,6 @@ references:
         fullName: '[]>'
   - uid: 'excel!Excel.RowPropertiesLoadOptions:interface'
     name: RowPropertiesLoadOptions
-  - uid: 'excel!Excel.RangeAreas:class'
-    name: Excel.RangeAreas
   - uid: 'excel!Excel.SpecialCellType:enum'
     name: Excel.SpecialCellType
   - uid: 'excel!Excel.SpecialCellValueType:enum'

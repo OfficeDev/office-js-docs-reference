@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'word!Word.Interfaces.DocumentCreatedData:interface'
-    summary: An interface describing the data returned by calling "documentCreated.toJSON()".
+    summary: An interface describing the data returned by calling `documentCreated.toJSON()`<!-- -->.
     name: Word.Interfaces.DocumentCreatedData
     fullName: Word.Interfaces.DocumentCreatedData
     langs:

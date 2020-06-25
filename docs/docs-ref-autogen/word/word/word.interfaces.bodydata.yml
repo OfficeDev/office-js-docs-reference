@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'word!Word.Interfaces.BodyData:interface'
-    summary: An interface describing the data returned by calling "body.toJSON()".
+    summary: An interface describing the data returned by calling `body.toJSON()`<!-- -->.
     name: Word.Interfaces.BodyData
     fullName: Word.Interfaces.BodyData
     langs:

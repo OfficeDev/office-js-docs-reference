@@ -49,7 +49,9 @@ items:
         description: ''
       parameters:
         - id: key
-          description: The key that identifies the custom property object. It is case-insensitive.
+          description: >-
+            The key that identifies the custom property object. It is case-insensitive.The key is limited to 255
+            characters (larger values will cause an "InvalidArgument" error to be thrown.)
           type:
             - string
         - id: value

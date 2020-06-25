@@ -43,11 +43,15 @@ items:
         description: ''
       parameters:
         - id: key
-          description: 'Required. The custom property''s key, which is case-insensitive.'
+          description: >-
+            Required. The custom property's key, which is case-insensitive. The key is limited to 255 characters outside
+            of Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
           type:
             - string
         - id: value
-          description: Required. The custom property's value.
+          description: >-
+            Required. The custom property's value. The value is limited to 255 characters outside of Excel on the web
+            (larger values are automatically trimmed to 255 characters on other platforms).
           type:
             - any
   - uid: 'excel!Excel.CustomPropertyCollection#context:member'

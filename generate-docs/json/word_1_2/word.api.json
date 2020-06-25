@@ -1271,11 +1271,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#load:member(1)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.Body` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.Body` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Body` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(option?: "
+                      "text": "load(options?: "
                     },
                     {
                       "kind": "Reference",
@@ -1305,7 +1305,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -1362,7 +1362,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1370,7 +1370,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -1802,7 +1802,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across \".sync\" calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -1831,7 +1831,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call \"context.sync()\" before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4241,11 +4241,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#load:member(1)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.ContentControl` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.ContentControl` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ContentControl` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(option?: "
+                      "text": "load(options?: "
                     },
                     {
                       "kind": "Reference",
@@ -4275,7 +4275,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -4332,7 +4332,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4340,7 +4340,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -4876,7 +4876,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across \".sync\" calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -4936,7 +4936,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call \"context.sync()\" before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5310,11 +5310,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControlCollection#load:member(1)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.ContentControlCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.ContentControlCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ContentControlCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(option?: "
+                      "text": "load(options?: "
                     },
                     {
                       "kind": "Reference",
@@ -5353,7 +5353,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
@@ -5410,11 +5410,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControlCollection#load:member(3)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(option?: "
+                      "text": "load(propertyNamesAndPaths?: "
                     },
                     {
                       "kind": "Reference",
@@ -5444,7 +5444,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "propertyNamesAndPaths",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -5485,7 +5485,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControlCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across \".sync\" calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -5514,7 +5514,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControlCollection#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call \"context.sync()\" before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6054,11 +6054,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#load:member(1)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.Document` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.Document` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Document` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(option?: "
+                      "text": "load(options?: "
                     },
                     {
                       "kind": "Reference",
@@ -6088,7 +6088,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -6145,7 +6145,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6153,7 +6153,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -6406,7 +6406,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across \".sync\" calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6435,7 +6435,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Document#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call \"context.sync()\" before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -6680,6 +6680,48 @@
                   ],
                   "releaseTag": "Public",
                   "name": "notImplemented",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ErrorCodes.searchDialogIsOpen:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "searchDialogIsOpen = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"SearchDialogIsOpen\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "searchDialogIsOpen",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "word!Word.ErrorCodes.searchStringInvalidOrTooLong:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "searchStringInvalidOrTooLong = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"SearchStringInvalidOrTooLong\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "searchStringInvalidOrTooLong",
                   "initializerTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
@@ -7109,11 +7151,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Font#load:member(1)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.Font` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.Font` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Font` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(option?: "
+                      "text": "load(options?: "
                     },
                     {
                       "kind": "Reference",
@@ -7143,7 +7185,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -7200,7 +7242,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Font#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7208,7 +7250,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -7510,7 +7552,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Font#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across \".sync\" calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -7570,7 +7612,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Font#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call \"context.sync()\" before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9082,11 +9124,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#load:member(1)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.InlinePicture` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.InlinePicture` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.InlinePicture` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(option?: "
+                      "text": "load(options?: "
                     },
                     {
                       "kind": "Reference",
@@ -9116,7 +9158,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -9173,7 +9215,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9181,7 +9223,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -9522,7 +9564,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across \".sync\" calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9551,7 +9593,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call \"context.sync()\" before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9693,11 +9735,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePictureCollection#load:member(1)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.InlinePictureCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.InlinePictureCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.InlinePictureCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(option?: "
+                      "text": "load(options?: "
                     },
                     {
                       "kind": "Reference",
@@ -9736,7 +9778,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
@@ -9793,11 +9835,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePictureCollection#load:member(3)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(option?: "
+                      "text": "load(propertyNamesAndPaths?: "
                     },
                     {
                       "kind": "Reference",
@@ -9827,7 +9869,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "propertyNamesAndPaths",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -9868,7 +9910,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePictureCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across \".sync\" calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9897,7 +9939,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePictureCollection#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call \"context.sync()\" before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -9933,7 +9975,7 @@
             {
               "kind": "Enum",
               "canonicalReference": "word!Word.InsertLocation:enum",
-              "docComment": "/**\n * The insertion location types\n *\n * [Api set: WordApi]\n */\n",
+              "docComment": "/**\n * The insertion location types.\n *\n * [Api set: WordApi]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -10066,7 +10108,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.BodyData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"body.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `body.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10261,7 +10303,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.BodyLoadOptions#$all:member",
-                      "docComment": "",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10391,7 +10433,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.BodyUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the Body object, for use in \"body.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the Body object, for use in `body.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10524,7 +10566,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.ContentControlCollectionData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"contentControlCollection.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `contentControlCollection.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -10583,7 +10625,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlCollectionLoadOptions#$all:member",
-                      "docComment": "",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -10963,7 +11005,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.ContentControlCollectionUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the ContentControlCollection object, for use in \"contentControlCollection.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the ContentControlCollection object, for use in `contentControlCollection.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11009,7 +11051,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.ContentControlData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"contentControl.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `contentControl.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -11464,7 +11506,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ContentControlLoadOptions#$all:member",
-                      "docComment": "",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -11844,7 +11886,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.ContentControlUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the ContentControl object, for use in \"contentControl.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the ContentControl object, for use in `contentControl.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12116,7 +12158,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.CustomPropertyCollectionData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"customPropertyCollection.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `customPropertyCollection.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12162,7 +12204,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.CustomPropertyCollectionUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the CustomPropertyCollection object, for use in \"customPropertyCollection.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the CustomPropertyCollection object, for use in `customPropertyCollection.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12208,7 +12250,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.CustomPropertyData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"customProperty.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `customProperty.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12223,7 +12265,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.CustomPropertyUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the CustomProperty object, for use in \"customProperty.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the CustomProperty object, for use in `customProperty.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12238,7 +12280,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.DocumentCreatedData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"documentCreated.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `documentCreated.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12391,7 +12433,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.DocumentCreatedUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the DocumentCreated object, for use in \"documentCreated.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the DocumentCreated object, for use in `documentCreated.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12459,7 +12501,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.DocumentData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"document.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `document.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12599,7 +12641,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.DocumentLoadOptions#$all:member",
-                      "docComment": "",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -12703,7 +12745,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.DocumentPropertiesData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"documentProperties.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `documentProperties.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12718,7 +12760,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.DocumentPropertiesUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the DocumentProperties object, for use in \"documentProperties.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the DocumentProperties object, for use in `documentProperties.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12733,7 +12775,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.DocumentUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the Document object, for use in \"document.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the Document object, for use in `document.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -12775,7 +12817,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.FontData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"font.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `font.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13084,7 +13126,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.FontLoadOptions#$all:member",
-                      "docComment": "",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13387,7 +13429,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.FontUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the Font object, for use in \"font.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the Font object, for use in `font.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13683,7 +13725,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.InlinePictureCollectionData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"inlinePictureCollection.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `inlinePictureCollection.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -13742,7 +13784,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureCollectionLoadOptions#$all:member",
-                      "docComment": "",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -13972,7 +14014,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.InlinePictureCollectionUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the InlinePictureCollection object, for use in \"inlinePictureCollection.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the InlinePictureCollection object, for use in `inlinePictureCollection.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14018,7 +14060,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.InlinePictureData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"inlinePicture.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `inlinePicture.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14197,7 +14239,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.InlinePictureLoadOptions#$all:member",
-                      "docComment": "",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -14427,7 +14469,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.InlinePictureUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the InlinePicture object, for use in \"inlinePicture.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the InlinePicture object, for use in `inlinePicture.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14593,7 +14635,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.ListCollectionData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"listCollection.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `listCollection.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14639,7 +14681,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.ListCollectionUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the ListCollection object, for use in \"listCollection.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the ListCollection object, for use in `listCollection.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14685,7 +14727,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.ListData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"list.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `list.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14700,7 +14742,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.ListItemData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"listItem.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `listItem.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14715,7 +14757,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.ListItemUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the ListItem object, for use in \"listItem.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the ListItem object, for use in `listItem.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14730,7 +14772,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.ParagraphCollectionData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"paragraphCollection.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `paragraphCollection.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -14789,7 +14831,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphCollectionLoadOptions#$all:member",
-                      "docComment": "",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15169,7 +15211,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.ParagraphCollectionUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the ParagraphCollection object, for use in \"paragraphCollection.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the ParagraphCollection object, for use in `paragraphCollection.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15215,7 +15257,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.ParagraphData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"paragraph.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `paragraph.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -15605,7 +15647,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.ParagraphLoadOptions#$all:member",
-                      "docComment": "",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -15985,7 +16027,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.ParagraphUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the Paragraph object, for use in \"paragraph.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the Paragraph object, for use in `paragraph.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -16307,7 +16349,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.RangeCollectionData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"rangeCollection.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `rangeCollection.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -16366,7 +16408,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.RangeCollectionLoadOptions#$all:member",
-                      "docComment": "",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16496,7 +16538,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.RangeCollectionUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the RangeCollection object, for use in \"rangeCollection.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the RangeCollection object, for use in `rangeCollection.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -16542,7 +16584,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.RangeData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"range.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `range.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -16677,7 +16719,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.RangeLoadOptions#$all:member",
-                      "docComment": "",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -16807,7 +16849,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.RangeUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the Range object, for use in \"range.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the Range object, for use in `range.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -16874,7 +16916,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.SearchOptionsData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"searchOptions.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `searchOptions.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17078,7 +17120,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SearchOptionsLoadOptions#$all:member",
-                      "docComment": "",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17281,7 +17323,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.SearchOptionsUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the SearchOptions object, for use in \"searchOptions.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the SearchOptions object, for use in `searchOptions.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17472,7 +17514,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.SectionCollectionData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"sectionCollection.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `sectionCollection.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17531,7 +17573,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SectionCollectionLoadOptions#$all:member",
-                      "docComment": "",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17585,7 +17627,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.SectionCollectionUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the SectionCollection object, for use in \"sectionCollection.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the SectionCollection object, for use in `sectionCollection.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17631,7 +17673,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.SectionData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"section.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `section.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17686,7 +17728,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "word!Word.Interfaces.SectionLoadOptions#$all:member",
-                      "docComment": "",
+                      "docComment": "/**\n * Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Content",
@@ -17740,7 +17782,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.SectionUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the Section object, for use in \"section.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the Section object, for use in `section.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17782,7 +17824,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.TableBorderData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"tableBorder.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `tableBorder.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17797,7 +17839,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.TableBorderUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the TableBorder object, for use in \"tableBorder.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the TableBorder object, for use in `tableBorder.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17812,7 +17854,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.TableCellCollectionData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"tableCellCollection.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `tableCellCollection.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17858,7 +17900,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.TableCellCollectionUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the TableCellCollection object, for use in \"tableCellCollection.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the TableCellCollection object, for use in `tableCellCollection.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17904,7 +17946,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.TableCellData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"tableCell.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `tableCell.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17919,7 +17961,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.TableCellUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the TableCell object, for use in \"tableCell.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the TableCell object, for use in `tableCell.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17934,7 +17976,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.TableCollectionData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"tableCollection.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `tableCollection.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -17980,7 +18022,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.TableCollectionUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the TableCollection object, for use in \"tableCollection.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the TableCollection object, for use in `tableCollection.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18026,7 +18068,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.TableData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"table.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `table.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18041,7 +18083,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.TableRowCollectionData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"tableRowCollection.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `tableRowCollection.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18087,7 +18129,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.TableRowCollectionUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the TableRowCollection object, for use in \"tableRowCollection.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the TableRowCollection object, for use in `tableRowCollection.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18133,7 +18175,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.TableRowData:interface",
-                  "docComment": "/**\n * An interface describing the data returned by calling \"tableRow.toJSON()\".\n */\n",
+                  "docComment": "/**\n * An interface describing the data returned by calling `tableRow.toJSON()`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18148,7 +18190,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.TableRowUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the TableRow object, for use in \"tableRow.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the TableRow object, for use in `tableRow.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -18163,7 +18205,7 @@
                 {
                   "kind": "Interface",
                   "canonicalReference": "word!Word.Interfaces.TableUpdateData:interface",
-                  "docComment": "/**\n * An interface for updating data on the Table object, for use in \"table.set({ ... })\".\n */\n",
+                  "docComment": "/**\n * An interface for updating data on the Table object, for use in `table.set({ ... })`.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -20158,11 +20200,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#load:member(1)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.Paragraph` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.Paragraph` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Paragraph` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(option?: "
+                      "text": "load(options?: "
                     },
                     {
                       "kind": "Reference",
@@ -20192,7 +20234,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -20249,7 +20291,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -20257,7 +20299,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -20766,7 +20808,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across \".sync\" calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -20795,7 +20837,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call \"context.sync()\" before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -20911,11 +20953,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ParagraphCollection#load:member(1)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.ParagraphCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.ParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ParagraphCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(option?: "
+                      "text": "load(options?: "
                     },
                     {
                       "kind": "Reference",
@@ -20954,7 +20996,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
@@ -21011,11 +21053,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ParagraphCollection#load:member(3)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(option?: "
+                      "text": "load(propertyNamesAndPaths?: "
                     },
                     {
                       "kind": "Reference",
@@ -21045,7 +21087,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "propertyNamesAndPaths",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -21086,7 +21128,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ParagraphCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across \".sync\" calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -21115,7 +21157,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ParagraphCollection#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call \"context.sync()\" before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22278,11 +22320,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#load:member(1)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.Range` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.Range` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Range` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(option?: "
+                      "text": "load(options?: "
                     },
                     {
                       "kind": "Reference",
@@ -22312,7 +22354,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -22369,7 +22411,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22377,7 +22419,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -22809,7 +22851,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across \".sync\" calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22838,7 +22880,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call \"context.sync()\" before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -22954,11 +22996,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.RangeCollection#load:member(1)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.RangeCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.RangeCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.RangeCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(option?: "
+                      "text": "load(options?: "
                     },
                     {
                       "kind": "Reference",
@@ -22997,7 +23039,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
@@ -23054,11 +23096,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.RangeCollection#load:member(3)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(option?: "
+                      "text": "load(propertyNamesAndPaths?: "
                     },
                     {
                       "kind": "Reference",
@@ -23088,7 +23130,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "propertyNamesAndPaths",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -23129,7 +23171,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.RangeCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across \".sync\" calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -23158,7 +23200,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.RangeCollection#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call \"context.sync()\" before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -23795,11 +23837,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.SearchOptions#load:member(1)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.SearchOptions` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.SearchOptions` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.SearchOptions` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(option?: "
+                      "text": "load(options?: "
                     },
                     {
                       "kind": "Reference",
@@ -23829,7 +23871,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -23886,7 +23928,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.SearchOptions#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -23894,7 +23936,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -24052,32 +24094,6 @@
                   ],
                   "releaseTag": "Public",
                   "name": "matchWildcards",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 2
-                  },
-                  "isStatic": false
-                },
-                {
-                  "kind": "Property",
-                  "canonicalReference": "word!Word.SearchOptions#matchWildCards:member",
-                  "docComment": "",
-                  "excerptTokens": [
-                    {
-                      "kind": "Content",
-                      "text": "matchWildCards: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "boolean"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "matchWildCards",
                   "propertyTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
@@ -24533,11 +24549,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Section#load:member(1)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.Section` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.Section` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Section` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(option?: "
+                      "text": "load(options?: "
                     },
                     {
                       "kind": "Reference",
@@ -24567,7 +24583,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -24624,7 +24640,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Section#load:member(3)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -24632,7 +24648,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{ select?: string; expand?: string; }"
+                      "text": "{\n            select?: string;\n            expand?: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -24804,7 +24820,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Section#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across \".sync\" calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -24833,7 +24849,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Section#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call \"context.sync()\" before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -24949,11 +24965,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.SectionCollection#load:member(1)",
-                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.SectionCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.SectionCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.SectionCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(option?: "
+                      "text": "load(options?: "
                     },
                     {
                       "kind": "Reference",
@@ -24992,7 +25008,7 @@
                   "overloadIndex": 1,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 4
@@ -25049,11 +25065,11 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.SectionCollection#load:member(3)",
-                  "docComment": "",
+                  "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
-                      "text": "load(option?: "
+                      "text": "load(propertyNamesAndPaths?: "
                     },
                     {
                       "kind": "Reference",
@@ -25083,7 +25099,7 @@
                   "overloadIndex": 3,
                   "parameters": [
                     {
-                      "parameterName": "option",
+                      "parameterName": "propertyNamesAndPaths",
                       "parameterTypeTokenRange": {
                         "startIndex": 1,
                         "endIndex": 2
@@ -25124,7 +25140,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.SectionCollection#track:member(1)",
-                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across \".sync\" calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
+                  "docComment": "/**\n * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -25153,7 +25169,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.SectionCollection#untrack:member(1)",
-                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call \"context.sync()\" before the memory release takes effect.\n */\n",
+                  "docComment": "/**\n * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -28552,7 +28568,7 @@
             {
               "kind": "Enum",
               "canonicalReference": "word!Word.UnderlineType:enum",
-              "docComment": "/**\n * Underline types\n *\n * [Api set: WordApi]\n */\n",
+              "docComment": "/**\n * The supported styles for underline format.\n *\n * [Api set: WordApi]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",

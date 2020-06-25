@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'word!Word.Interfaces.ContentControlData:interface'
-    summary: An interface describing the data returned by calling "contentControl.toJSON()".
+    summary: An interface describing the data returned by calling `contentControl.toJSON()`<!-- -->.
     name: Word.Interfaces.ContentControlData
     fullName: Word.Interfaces.ContentControlData
     langs:

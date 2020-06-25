@@ -15,6 +15,9 @@ items:
       - 'word!Word.Interfaces.SectionCollectionLoadOptions#$all:member'
       - 'word!Word.Interfaces.SectionCollectionLoadOptions#body:member'
   - uid: 'word!Word.Interfaces.SectionCollectionLoadOptions#$all:member'
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     name: $all
     fullName: $all
     langs:

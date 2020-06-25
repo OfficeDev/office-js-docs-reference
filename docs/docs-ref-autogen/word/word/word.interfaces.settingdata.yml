@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'word!Word.Interfaces.SettingData:interface'
-    summary: An interface describing the data returned by calling "setting.toJSON()".
+    summary: An interface describing the data returned by calling `setting.toJSON()`<!-- -->.
     name: Word.Interfaces.SettingData
     fullName: Word.Interfaces.SettingData
     langs:

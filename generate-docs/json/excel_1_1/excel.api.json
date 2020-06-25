@@ -15153,6 +15153,27 @@
                     "startIndex": 1,
                     "endIndex": 2
                   }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "excel!Excel.ErrorCodes.unsupportedSheet:member",
+                  "docComment": "",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "unsupportedSheet = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"UnsupportedSheet\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "unsupportedSheet",
+                  "initializerTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
                 }
               ]
             },

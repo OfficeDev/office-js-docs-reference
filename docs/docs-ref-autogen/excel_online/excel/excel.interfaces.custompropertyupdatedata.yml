@@ -11,8 +11,10 @@ items:
     children:
       - 'excel!Excel.Interfaces.CustomPropertyUpdateData#value:member'
   - uid: 'excel!Excel.Interfaces.CustomPropertyUpdateData#value:member'
-    summary: |-
-      The value of the custom property.
+    summary: >-
+      The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger
+      values are automatically trimmed to 255 characters on other platforms).
+
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: value

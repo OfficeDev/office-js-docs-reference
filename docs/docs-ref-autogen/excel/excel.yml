@@ -134,7 +134,12 @@ items:
       - 'excel!Excel.ColumnProperties:interface'
       - 'excel!Excel.ColumnPropertiesLoadOptions:interface'
       - 'excel!Excel.Comment:class'
+      - 'excel!Excel.CommentAddedEventArgs:interface'
+      - 'excel!Excel.CommentChangedEventArgs:interface'
+      - 'excel!Excel.CommentChangeType:enum'
       - 'excel!Excel.CommentCollection:class'
+      - 'excel!Excel.CommentDeletedEventArgs:interface'
+      - 'excel!Excel.CommentDetail:interface'
       - 'excel!Excel.CommentMention:interface'
       - 'excel!Excel.CommentReply:class'
       - 'excel!Excel.CommentReplyCollection:class'
@@ -508,6 +513,12 @@ items:
       - 'excel!Excel.Interfaces.NamedItemData:interface'
       - 'excel!Excel.Interfaces.NamedItemLoadOptions:interface'
       - 'excel!Excel.Interfaces.NamedItemUpdateData:interface'
+      - 'excel!Excel.Interfaces.NamedSheetViewCollectionData:interface'
+      - 'excel!Excel.Interfaces.NamedSheetViewCollectionLoadOptions:interface'
+      - 'excel!Excel.Interfaces.NamedSheetViewCollectionUpdateData:interface'
+      - 'excel!Excel.Interfaces.NamedSheetViewData:interface'
+      - 'excel!Excel.Interfaces.NamedSheetViewLoadOptions:interface'
+      - 'excel!Excel.Interfaces.NamedSheetViewUpdateData:interface'
       - 'excel!Excel.Interfaces.NumberFormatInfoData:interface'
       - 'excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface'
       - 'excel!Excel.Interfaces.PageBreakCollectionData:interface'
@@ -557,6 +568,9 @@ items:
       - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface'
       - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions:interface'
       - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface'
+      - 'excel!Excel.Interfaces.RangeAreasCollectionData:interface'
+      - 'excel!Excel.Interfaces.RangeAreasCollectionLoadOptions:interface'
+      - 'excel!Excel.Interfaces.RangeAreasCollectionUpdateData:interface'
       - 'excel!Excel.Interfaces.RangeAreasData:interface'
       - 'excel!Excel.Interfaces.RangeAreasLoadOptions:interface'
       - 'excel!Excel.Interfaces.RangeAreasUpdateData:interface'
@@ -697,6 +711,8 @@ items:
       - 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
       - 'excel!Excel.Interfaces.WorkbookProtectionData:interface'
       - 'excel!Excel.Interfaces.WorkbookProtectionLoadOptions:interface'
+      - 'excel!Excel.Interfaces.WorkbookRangeAreasData:interface'
+      - 'excel!Excel.Interfaces.WorkbookRangeAreasLoadOptions:interface'
       - 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
       - 'excel!Excel.Interfaces.WorksheetCollectionData:interface'
       - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions:interface'
@@ -722,6 +738,8 @@ items:
       - 'excel!Excel.NamedItemCollection:class'
       - 'excel!Excel.NamedItemScope:enum'
       - 'excel!Excel.NamedItemType:enum'
+      - 'excel!Excel.NamedSheetView:class'
+      - 'excel!Excel.NamedSheetViewCollection:class'
       - 'excel!Excel.NumberFormatCategory:enum'
       - 'excel!Excel.NumberFormatInfo:class'
       - 'excel!Excel.PageBreak:class'
@@ -763,6 +781,7 @@ items:
       - 'excel!Excel.ProtectionSelectionMode:enum'
       - 'excel!Excel.Range:class'
       - 'excel!Excel.RangeAreas:class'
+      - 'excel!Excel.RangeAreasCollection:class'
       - 'excel!Excel.RangeBorder:class'
       - 'excel!Excel.RangeBorderCollection:class'
       - 'excel!Excel.RangeCollection:class'
@@ -888,6 +907,7 @@ items:
       - 'excel!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface'
       - 'excel!Excel.WorkbookCreated:class'
       - 'excel!Excel.WorkbookProtection:class'
+      - 'excel!Excel.WorkbookRangeAreas:class'
       - 'excel!Excel.Worksheet:class'
       - 'excel!Excel.WorksheetActivatedEventArgs:interface'
       - 'excel!Excel.WorksheetAddedEventArgs:interface'
@@ -1409,8 +1429,18 @@ references:
     name: Excel.ColumnPropertiesLoadOptions
   - uid: 'excel!Excel.Comment:class'
     name: Excel.Comment
+  - uid: 'excel!Excel.CommentAddedEventArgs:interface'
+    name: Excel.CommentAddedEventArgs
+  - uid: 'excel!Excel.CommentChangedEventArgs:interface'
+    name: Excel.CommentChangedEventArgs
+  - uid: 'excel!Excel.CommentChangeType:enum'
+    name: Excel.CommentChangeType
   - uid: 'excel!Excel.CommentCollection:class'
     name: Excel.CommentCollection
+  - uid: 'excel!Excel.CommentDeletedEventArgs:interface'
+    name: Excel.CommentDeletedEventArgs
+  - uid: 'excel!Excel.CommentDetail:interface'
+    name: Excel.CommentDetail
   - uid: 'excel!Excel.CommentMention:interface'
     name: Excel.CommentMention
   - uid: 'excel!Excel.CommentReply:class'
@@ -2162,6 +2192,18 @@ references:
     name: Excel.Interfaces.NamedItemLoadOptions
   - uid: 'excel!Excel.Interfaces.NamedItemUpdateData:interface'
     name: Excel.Interfaces.NamedItemUpdateData
+  - uid: 'excel!Excel.Interfaces.NamedSheetViewCollectionData:interface'
+    name: Excel.Interfaces.NamedSheetViewCollectionData
+  - uid: 'excel!Excel.Interfaces.NamedSheetViewCollectionLoadOptions:interface'
+    name: Excel.Interfaces.NamedSheetViewCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.NamedSheetViewCollectionUpdateData:interface'
+    name: Excel.Interfaces.NamedSheetViewCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.NamedSheetViewData:interface'
+    name: Excel.Interfaces.NamedSheetViewData
+  - uid: 'excel!Excel.Interfaces.NamedSheetViewLoadOptions:interface'
+    name: Excel.Interfaces.NamedSheetViewLoadOptions
+  - uid: 'excel!Excel.Interfaces.NamedSheetViewUpdateData:interface'
+    name: Excel.Interfaces.NamedSheetViewUpdateData
   - uid: 'excel!Excel.Interfaces.NumberFormatInfoData:interface'
     name: Excel.Interfaces.NumberFormatInfoData
   - uid: 'excel!Excel.Interfaces.NumberFormatInfoLoadOptions:interface'
@@ -2260,6 +2302,12 @@ references:
     name: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
   - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface'
     name: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.RangeAreasCollectionData:interface'
+    name: Excel.Interfaces.RangeAreasCollectionData
+  - uid: 'excel!Excel.Interfaces.RangeAreasCollectionLoadOptions:interface'
+    name: Excel.Interfaces.RangeAreasCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.RangeAreasCollectionUpdateData:interface'
+    name: Excel.Interfaces.RangeAreasCollectionUpdateData
   - uid: 'excel!Excel.Interfaces.RangeAreasData:interface'
     name: Excel.Interfaces.RangeAreasData
   - uid: 'excel!Excel.Interfaces.RangeAreasLoadOptions:interface'
@@ -2540,6 +2588,10 @@ references:
     name: Excel.Interfaces.WorkbookProtectionData
   - uid: 'excel!Excel.Interfaces.WorkbookProtectionLoadOptions:interface'
     name: Excel.Interfaces.WorkbookProtectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorkbookRangeAreasData:interface'
+    name: Excel.Interfaces.WorkbookRangeAreasData
+  - uid: 'excel!Excel.Interfaces.WorkbookRangeAreasLoadOptions:interface'
+    name: Excel.Interfaces.WorkbookRangeAreasLoadOptions
   - uid: 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
     name: Excel.Interfaces.WorkbookUpdateData
   - uid: 'excel!Excel.Interfaces.WorksheetCollectionData:interface'
@@ -2590,6 +2642,10 @@ references:
     name: Excel.NamedItemScope
   - uid: 'excel!Excel.NamedItemType:enum'
     name: Excel.NamedItemType
+  - uid: 'excel!Excel.NamedSheetView:class'
+    name: Excel.NamedSheetView
+  - uid: 'excel!Excel.NamedSheetViewCollection:class'
+    name: Excel.NamedSheetViewCollection
   - uid: 'excel!Excel.NumberFormatCategory:enum'
     name: Excel.NumberFormatCategory
   - uid: 'excel!Excel.NumberFormatInfo:class'
@@ -2670,6 +2726,8 @@ references:
     name: Excel.Range
   - uid: 'excel!Excel.RangeAreas:class'
     name: Excel.RangeAreas
+  - uid: 'excel!Excel.RangeAreasCollection:class'
+    name: Excel.RangeAreasCollection
   - uid: 'excel!Excel.RangeBorder:class'
     name: Excel.RangeBorder
   - uid: 'excel!Excel.RangeBorderCollection:class'
@@ -3048,6 +3106,8 @@ references:
     name: Excel.WorkbookCreated
   - uid: 'excel!Excel.WorkbookProtection:class'
     name: Excel.WorkbookProtection
+  - uid: 'excel!Excel.WorkbookRangeAreas:class'
+    name: Excel.WorkbookRangeAreas
   - uid: 'excel!Excel.Worksheet:class'
     name: Excel.Worksheet
   - uid: 'excel!Excel.WorksheetActivatedEventArgs:interface'

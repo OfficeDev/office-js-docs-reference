@@ -216,8 +216,7 @@ items:
   - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#firstSliceAngle:member'
     summary: >-
       For EACH ITEM in the collection: Specifies the angle of the first pie-chart or doughnut-chart slice, in degrees
-      (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through
-      360.Specifies if the negative DataBar has the same fill color as the positive DataBar.
+      (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -618,8 +617,8 @@ items:
           - 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface'
   - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#secondPlotSize:member'
     summary: >-
-      For EACH ITEM in the collection: Specifies the size of the secondary section of either a pie of pie chart or a bar
-      of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
+      For EACH ITEM in the collection: Specifies the size of the secondary section of either a pie-of-pie chart or a
+      bar-of-pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200.
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

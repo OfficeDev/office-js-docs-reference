@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'word!Word.Interfaces.ListCollectionUpdateData:interface'
-    summary: >-
-      An interface for updating data on the ListCollection object, for use in "listCollection.set(<!-- -->{ ... }<!--
-      -->)".
+    summary: 'An interface for updating data on the ListCollection object, for use in `listCollection.set({ ... })`<!-- -->.'
     name: Word.Interfaces.ListCollectionUpdateData
     fullName: Word.Interfaces.ListCollectionUpdateData
     langs:

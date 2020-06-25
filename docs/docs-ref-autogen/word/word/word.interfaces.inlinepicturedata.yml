@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'word!Word.Interfaces.InlinePictureData:interface'
-    summary: An interface describing the data returned by calling "inlinePicture.toJSON()".
+    summary: An interface describing the data returned by calling `inlinePicture.toJSON()`<!-- -->.
     name: Word.Interfaces.InlinePictureData
     fullName: Word.Interfaces.InlinePictureData
     langs:

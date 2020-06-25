@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'word!Word.Interfaces.InlinePictureUpdateData:interface'
-    summary: >-
-      An interface for updating data on the InlinePicture object, for use in "inlinePicture.set(<!-- -->{ ... }<!--
-      -->)".
+    summary: 'An interface for updating data on the InlinePicture object, for use in `inlinePicture.set({ ... })`<!-- -->.'
     name: Word.Interfaces.InlinePictureUpdateData
     fullName: Word.Interfaces.InlinePictureUpdateData
     langs:

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'word!Word.Interfaces.BodyUpdateData:interface'
-    summary: 'An interface for updating data on the Body object, for use in "body.set(<!-- -->{ ... }<!-- -->)".'
+    summary: 'An interface for updating data on the Body object, for use in `body.set({ ... })`<!-- -->.'
     name: Word.Interfaces.BodyUpdateData
     fullName: Word.Interfaces.BodyUpdateData
     langs:

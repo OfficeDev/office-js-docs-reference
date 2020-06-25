@@ -78,7 +78,7 @@ items:
             - 'excel!Excel.WorksheetFreezePanes#freezeAt~0:complex'
   - uid: 'excel!Excel.WorksheetFreezePanes#freezeColumns:member(1)'
     summary: |-
-      Freeze the first column(s) of the worksheet in place.
+      Freeze the first column or columns of the worksheet in place.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: freezeColumns(count)
@@ -119,7 +119,7 @@ items:
             - number
   - uid: 'excel!Excel.WorksheetFreezePanes#freezeRows:member(1)'
     summary: |-
-      Freeze the top row(s) of the worksheet in place.
+      Freeze the top row or rows of the worksheet in place.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: freezeRows(count)
