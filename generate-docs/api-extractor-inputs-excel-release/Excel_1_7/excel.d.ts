@@ -275,7 +275,8 @@ export declare namespace Excel {
     export interface BindingSelectionChangedEventArgs {
         /**
          *
-         * Gets the Binding object that represents the binding that raised the SelectionChanged event.
+         * Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. 
+         * Use that ID with `BindingCollection.getItem(id)` to get the binding.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -318,7 +319,8 @@ export declare namespace Excel {
     export interface BindingDataChangedEventArgs {
         /**
          *
-         * Gets the Binding object that represents the binding that raised the DataChanged event.
+         * Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. 
+         * Use that ID with `BindingCollection.getItem(id)` to get the binding.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -11712,7 +11714,6 @@ export declare namespace Excel {
          *
          */
         worksheetFormatChanged = "WorksheetFormatChanged",
-        wacoperationEvent = "WACOperationEvent",
         /**
          * RibbonCommandExecuted represents the type of event registered on ribbon, and occurs when user click on ribbon
          *

@@ -23,8 +23,10 @@ items:
       - 'excel!Excel.BindingSelectionChangedEventArgs#startColumn:member'
       - 'excel!Excel.BindingSelectionChangedEventArgs#startRow:member'
   - uid: 'excel!Excel.BindingSelectionChangedEventArgs#binding:member'
-    summary: |-
-      Gets the Binding object that represents the binding that raised the SelectionChanged event.
+    summary: >-
+      Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. Use that ID
+      with `BindingCollection.getItem(id)` to get the binding.
+
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: binding
