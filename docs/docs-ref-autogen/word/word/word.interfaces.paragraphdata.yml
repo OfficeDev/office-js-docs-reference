@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'word!Word.Interfaces.ParagraphData:interface'
-    summary: An interface describing the data returned by calling "paragraph.toJSON()".
+    summary: An interface describing the data returned by calling `paragraph.toJSON()`<!-- -->.
     name: Word.Interfaces.ParagraphData
     fullName: Word.Interfaces.ParagraphData
     langs:

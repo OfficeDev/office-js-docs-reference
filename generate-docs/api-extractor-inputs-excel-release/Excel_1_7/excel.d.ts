@@ -267,17 +267,16 @@ export declare namespace Excel {
     /**
      *
      * Provides information about the selection that raised the "SelectionChanged" event.
-     * 
-     * **Note**: If multiple, discontiguous cells are selected, 
-     * `Binding.onSelectionChanged` only reports row and column information for one selection.
-     * Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+                
+                 **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
      *
      * [Api set: ExcelApi 1.2]
      */
     export interface BindingSelectionChangedEventArgs {
         /**
          *
-         * Gets the Binding object that represents the binding that raised the SelectionChanged event.
+         * Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. 
+         * Use that ID with `BindingCollection.getItem(id)` to get the binding.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -320,7 +319,8 @@ export declare namespace Excel {
     export interface BindingDataChangedEventArgs {
         /**
          *
-         * Gets the Binding object that represents the binding that raised the DataChanged event.
+         * Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. 
+         * Use that ID with `BindingCollection.getItem(id)` to get the binding.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -3005,10 +3005,8 @@ export declare namespace Excel {
         /**
          *
          * Occurs when the selected content in the binding is changed.
-         *
-         * **Note**: If multiple, discontiguous cells are selected, 
-         * `Binding.onSelectionChanged` only reports row and column information for one selection. 
-         * Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+                    
+                     **Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
          *
          * [Api set: ExcelApi 1.2]
          *
@@ -7780,7 +7778,7 @@ export declare namespace Excel {
          * The first criterion used to filter data. Used as an operator in the case of "custom" filtering.
                      For example ">50" for number greater than 50 or "=*s" for values ending in "s".
                     
-                     Used as a number in the case of top/bottom items/percents. e.g., "5" for the top 5 items if filterOn is set to "topItems"
+                     Used as a number in the case of top/bottom items/percents (e.g., "5" for the top 5 items if filterOn is set to "topItems").
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -7879,7 +7877,7 @@ export declare namespace Excel {
     /**
      *
      * A scoped collection of custom XML parts.
-                A scoped collection is the result of some operation, e.g., filtering by namespace.
+                A scoped collection is the result of some operation (e.g., filtering by namespace).
                 A scoped collection cannot be scoped any further.
      *
      * [Api set: ExcelApi 1.5]
@@ -8411,7 +8409,7 @@ export declare namespace Excel {
         context: RequestContext;
         /**
          *
-         * The key of the custom property.
+         * The key of the custom property. The key is limited to 255 characters outside of Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -8425,7 +8423,7 @@ export declare namespace Excel {
         readonly type: Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float";
         /**
          *
-         * The value of the custom property.
+         * The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
          *
          * [Api set: ExcelApi 1.7]
          */
@@ -8493,8 +8491,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param key - Required. The custom property's key, which is case-insensitive.
-         * @param value - Required. The custom property's value.
+         * @param key - Required. The custom property's key, which is case-insensitive. The key is limited to 255 characters outside of Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
+         * @param value - Required. The custom property's value. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
          */
         add(key: string, value: any): Excel.CustomProperty;
         /**
@@ -9483,7 +9481,7 @@ export declare namespace Excel {
     export interface ConditionalColorScaleCriterion {
         /**
          *
-         * HTML color code representation of the color scale color. e.g., #FF0000 represents Red.
+         * HTML color code representation of the color scale color (e.g., #FF0000 represents Red).
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -11544,41 +11542,49 @@ export declare namespace Excel {
     enum DataChangeType {
         /**
          * Unknown represents the type of data change is not the listed types.
+         * [Api set: ExcelApi The name of this value was 'Others' in ExcelApi 1.7]
          *
          */
         unknown = "Unknown",
         /**
          * RangeEdited represents the data change event is triggered by range being edited.
+         * [Api set: ExcelApi 1.7]
          *
          */
         rangeEdited = "RangeEdited",
         /**
          * RowInserted represents the data change event is triggered by inserting new rows.
+         * [Api set: ExcelApi 1.7]
          *
          */
         rowInserted = "RowInserted",
         /**
          * RowDeleted represents the data change event is triggered by deleting rows.
+         * [Api set: ExcelApi 1.7]
          *
          */
         rowDeleted = "RowDeleted",
         /**
          * ColumnInserted represents the data change event is triggered by inserting new columns.
+         * [Api set: ExcelApi 1.7]
          *
          */
         columnInserted = "ColumnInserted",
         /**
          * ColumnDeleted represents the data change event is triggered by deleting columns.
+         * [Api set: ExcelApi 1.7]
          *
          */
         columnDeleted = "ColumnDeleted",
         /**
          * CellInserted represents the data change event is triggered by inserting new cells.
+         * [Api set: ExcelApi 1.7]
          *
          */
         cellInserted = "CellInserted",
         /**
          * CellDeleted represents the data change event is triggered by deleting cells.
+         * [Api set: ExcelApi 1.7]
          *
          */
         cellDeleted = "CellDeleted"
@@ -11708,7 +11714,6 @@ export declare namespace Excel {
          *
          */
         worksheetFormatChanged = "WorksheetFormatChanged",
-        wacoperationEvent = "WACOperationEvent",
         /**
          * RibbonCommandExecuted represents the type of event registered on ribbon, and occurs when user click on ribbon
          *
@@ -11734,19 +11739,18 @@ export declare namespace Excel {
          *
          */
         worksheetRowHiddenChanged = "WorksheetRowHiddenChanged",
-        recordingStateChangedEvent = "RecordingStateChangedEvent",
         /**
-         * CommentAdded represents the type of event that is registered on commentCollection, and occurs when comments are added.
+         * CommentAdded represents the type of event that is registered on commentCollection, and occurs when comments are added.
          *
          */
         commentAdded = "CommentAdded",
         /**
-         * CommentDeleted represents the type of event that is registered on commentCollection, and occurs when comments are deleted.
+         * CommentDeleted represents the type of event that is registered on commentCollection, and occurs when comments are deleted.
          *
          */
         commentDeleted = "CommentDeleted",
         /**
-         * CommentChanged represents the type of event that is registered on commentCollection, and occurs when comments are changed.
+         * CommentChanged represents the type of event that is registered on commentCollection, and occurs when comments are changed.
          *
          */
         commentChanged = "CommentChanged",
@@ -11754,7 +11758,17 @@ export declare namespace Excel {
          * RefreshRequestCompleted represents the type of event registered on LinkedDataType, and occurs when a request to refresh a data source is completed.
          *
          */
-        linkedDataTypeRefreshRequestCompleted = "LinkedDataTypeRefreshRequestCompleted"
+        linkedDataTypeRefreshRequestCompleted = "LinkedDataTypeRefreshRequestCompleted",
+        /**
+         * RefreshModeChanged represents the type of event registered on LinkedDataType, and occurs when the linked data type refresh mode is changed.
+         *
+         */
+        linkedDataTypeRefreshModeChanged = "LinkedDataTypeRefreshModeChanged",
+        /**
+         * LinkedDataTypeAdded represents the type of event registered on LinkedDataType, and occurs when a new linked data type is added to the workbook.
+         *
+         */
+        linkedDataTypeLinkedDataTypeAdded = "LinkedDataTypeLinkedDataTypeAdded"
     }
     /**
      * [Api set: ExcelApi 1.7]
@@ -15378,6 +15392,7 @@ export declare namespace Excel {
         rangeExceedsLimit = "RangeExceedsLimit",
         requestAborted = "RequestAborted",
         unsupportedOperation = "UnsupportedOperation",
+        unsupportedSheet = "UnsupportedSheet",
         invalidOperationInCellEditMode = "InvalidOperationInCellEditMode"
     }
     export module Interfaces {
@@ -17346,7 +17361,7 @@ export declare namespace Excel {
         export interface CustomPropertyUpdateData {
             /**
              *
-             * The value of the custom property.
+             * The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -20887,7 +20902,7 @@ export declare namespace Excel {
         export interface CustomPropertyData {
             /**
              *
-             * The key of the custom property.
+             * The key of the custom property. The key is limited to 255 characters outside of Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -20901,7 +20916,7 @@ export declare namespace Excel {
             type?: Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float";
             /**
              *
-             * The value of the custom property.
+             * The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -25512,7 +25527,7 @@ export declare namespace Excel {
         /**
          *
          * A scoped collection of custom XML parts.
-                    A scoped collection is the result of some operation, e.g., filtering by namespace.
+                    A scoped collection is the result of some operation (e.g., filtering by namespace).
                     A scoped collection cannot be scoped any further.
          *
          * [Api set: ExcelApi 1.5]
@@ -25778,7 +25793,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * The key of the custom property.
+             * The key of the custom property. The key is limited to 255 characters outside of Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -25792,7 +25807,7 @@ export declare namespace Excel {
             type?: boolean;
             /**
              *
-             * The value of the custom property.
+             * The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -25811,7 +25826,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: The key of the custom property.
+             * For EACH ITEM in the collection: The key of the custom property. The key is limited to 255 characters outside of Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
              *
              * [Api set: ExcelApi 1.7]
              */
@@ -25825,7 +25840,7 @@ export declare namespace Excel {
             type?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: The value of the custom property.
+             * For EACH ITEM in the collection: The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
              *
              * [Api set: ExcelApi 1.7]
              */

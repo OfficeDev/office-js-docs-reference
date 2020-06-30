@@ -1,0 +1,31 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.NamedSheetViewUpdateData:interface'
+    summary: 'An interface for updating data on the NamedSheetView object, for use in `namedSheetView.set({ ... })`<!-- -->.'
+    name: Excel.Interfaces.NamedSheetViewUpdateData
+    fullName: Excel.Interfaces.NamedSheetViewUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.NamedSheetViewUpdateData#name:member'
+  - uid: 'excel!Excel.Interfaces.NamedSheetViewUpdateData#name:member'
+    summary: >-
+      Gets or sets the name of the sheet view. The temporary sheet view name is the empty string (""). Naming the view
+      by using the name property causes the sheet view to be saved.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string

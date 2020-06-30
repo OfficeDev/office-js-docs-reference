@@ -2,8 +2,8 @@
 items:
   - uid: 'word!Word.Interfaces.SectionCollectionUpdateData:interface'
     summary: >-
-      An interface for updating data on the SectionCollection object, for use in "sectionCollection.set(<!-- -->{ ...
-      }<!-- -->)".
+      An interface for updating data on the SectionCollection object, for use in `sectionCollection.set({ ... })`<!--
+      -->.
     name: Word.Interfaces.SectionCollectionUpdateData
     fullName: Word.Interfaces.SectionCollectionUpdateData
     langs:

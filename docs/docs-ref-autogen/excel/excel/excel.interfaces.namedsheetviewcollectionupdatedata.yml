@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Interfaces.NamedSheetViewCollectionUpdateData:interface'
+    summary: >-
+      An interface for updating data on the NamedSheetViewCollection object, for use in `namedSheetViewCollection.set({
+      ... })`<!-- -->.
+    name: Excel.Interfaces.NamedSheetViewCollectionUpdateData
+    fullName: Excel.Interfaces.NamedSheetViewCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Interfaces.NamedSheetViewCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.NamedSheetViewCollectionUpdateData#items:member'
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.NamedSheetViewData[];'
+      return:
+        type:
+          - 'excel!Excel.Interfaces.NamedSheetViewCollectionUpdateData#items~0:complex'
+references:
+  - uid: 'excel!Excel.Interfaces.NamedSheetViewCollectionUpdateData#items~0:complex'
+    name: 'Excel.Interfaces.NamedSheetViewData[]'
+    fullName: 'Excel.Interfaces.NamedSheetViewData[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.Interfaces.NamedSheetViewData:interface'
+        name: Excel.Interfaces.NamedSheetViewData
+        fullName: Excel.Interfaces.NamedSheetViewData
+      - name: '[]'
+        fullName: '[]'

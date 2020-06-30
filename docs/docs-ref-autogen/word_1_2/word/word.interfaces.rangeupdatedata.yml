@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'word!Word.Interfaces.RangeUpdateData:interface'
-    summary: 'An interface for updating data on the Range object, for use in "range.set(<!-- -->{ ... }<!-- -->)".'
+    summary: 'An interface for updating data on the Range object, for use in `range.set({ ... })`<!-- -->.'
     name: Word.Interfaces.RangeUpdateData
     fullName: Word.Interfaces.RangeUpdateData
     langs:

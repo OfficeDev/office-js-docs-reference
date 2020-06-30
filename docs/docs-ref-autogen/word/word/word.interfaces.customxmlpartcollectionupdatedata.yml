@@ -2,8 +2,8 @@
 items:
   - uid: 'word!Word.Interfaces.CustomXmlPartCollectionUpdateData:interface'
     summary: >-
-      An interface for updating data on the CustomXmlPartCollection object, for use in "customXmlPartCollection.set(<!--
-      -->{ ... }<!-- -->)".
+      An interface for updating data on the CustomXmlPartCollection object, for use in `customXmlPartCollection.set({
+      ... })`<!-- -->.
     name: Word.Interfaces.CustomXmlPartCollectionUpdateData
     fullName: Word.Interfaces.CustomXmlPartCollectionUpdateData
     langs:

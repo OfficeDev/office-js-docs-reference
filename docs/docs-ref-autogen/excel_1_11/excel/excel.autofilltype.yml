@@ -1,7 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.AutoFillType:enum'
-    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    summary: |-
+      The behavior types when AutoFill is used on a range in the workbook.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.AutoFillType
     fullName: Excel.AutoFillType
     langs:
@@ -22,6 +25,7 @@ items:
       - 'excel!Excel.AutoFillType.growthTrend:member'
       - 'excel!Excel.AutoFillType.linearTrend:member'
   - uid: 'excel!Excel.AutoFillType.fillCopy:member'
+    summary: Populates the adjacent cells with data based on the selected data.
     name: fillCopy
     fullName: fillCopy
     langs:
@@ -29,6 +33,9 @@ items:
     type: field
     numericValue: '"FillCopy"'
   - uid: 'excel!Excel.AutoFillType.fillDays:member'
+    summary: >-
+      A version of "FillSeries" for dates that bases the pattern on either the day of the month or the day of the week,
+      depending on the context.
     name: fillDays
     fullName: fillDays
     langs:
@@ -36,6 +43,7 @@ items:
     type: field
     numericValue: '"FillDays"'
   - uid: 'excel!Excel.AutoFillType.fillDefault:member'
+    summary: Populates the adjacent cells based on the surrounding data (the standard AutoFill behavior).
     name: fillDefault
     fullName: fillDefault
     langs:
@@ -43,6 +51,7 @@ items:
     type: field
     numericValue: '"FillDefault"'
   - uid: 'excel!Excel.AutoFillType.fillFormats:member'
+    summary: Populates the adjacent cells with the selected formulas.
     name: fillFormats
     fullName: fillFormats
     langs:
@@ -50,6 +59,7 @@ items:
     type: field
     numericValue: '"FillFormats"'
   - uid: 'excel!Excel.AutoFillType.fillMonths:member'
+    summary: A version of "FillSeries" for dates that bases the pattern on the month.
     name: fillMonths
     fullName: fillMonths
     langs:
@@ -57,6 +67,7 @@ items:
     type: field
     numericValue: '"FillMonths"'
   - uid: 'excel!Excel.AutoFillType.fillSeries:member'
+    summary: Populates the adjacent cells with data that follows a pattern in the copied cells.
     name: fillSeries
     fullName: fillSeries
     langs:
@@ -64,6 +75,7 @@ items:
     type: field
     numericValue: '"FillSeries"'
   - uid: 'excel!Excel.AutoFillType.fillValues:member'
+    summary: Populates the adjacent cells with the selected values.
     name: fillValues
     fullName: fillValues
     langs:
@@ -71,6 +83,7 @@ items:
     type: field
     numericValue: '"FillValues"'
   - uid: 'excel!Excel.AutoFillType.fillWeekdays:member'
+    summary: A version of "FillSeries" for dates that bases the pattern on the day of the week and only includes weekdays.
     name: fillWeekdays
     fullName: fillWeekdays
     langs:
@@ -78,6 +91,7 @@ items:
     type: field
     numericValue: '"FillWeekdays"'
   - uid: 'excel!Excel.AutoFillType.fillYears:member'
+    summary: A version of "FillSeries" for dates that bases the pattern on the year.
     name: fillYears
     fullName: fillYears
     langs:
@@ -85,6 +99,7 @@ items:
     type: field
     numericValue: '"FillYears"'
   - uid: 'excel!Excel.AutoFillType.flashFill:member'
+    summary: Populates the adjacent cells by using Excel's FlashFill feature.
     name: flashFill
     fullName: flashFill
     langs:
@@ -92,6 +107,9 @@ items:
     type: field
     numericValue: '"FlashFill"'
   - uid: 'excel!Excel.AutoFillType.growthTrend:member'
+    summary: >-
+      A version of "FillSeries" for numbers that fills out the values in the adjacent cells according to a growth trend
+      model.
     name: growthTrend
     fullName: growthTrend
     langs:
@@ -99,6 +117,9 @@ items:
     type: field
     numericValue: '"GrowthTrend"'
   - uid: 'excel!Excel.AutoFillType.linearTrend:member'
+    summary: >-
+      A version of "FillSeries" for numbers that fills out the values in the adjacent cells according to a linear trend
+      model.
     name: linearTrend
     fullName: linearTrend
     langs:

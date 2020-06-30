@@ -2,8 +2,8 @@
 items:
   - uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions:interface'
     summary: >-
-      A scoped collection of custom XML parts. A scoped collection is the result of some operation, e.g., filtering by
-      namespace. A scoped collection cannot be scoped any further.
+      A scoped collection of custom XML parts. A scoped collection is the result of some operation (e.g., filtering by
+      namespace). A scoped collection cannot be scoped any further.
 
 
       \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]

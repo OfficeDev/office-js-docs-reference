@@ -47,6 +47,7 @@ items:
       - 'excel!Excel.Worksheet#load:member(2)'
       - 'excel!Excel.Worksheet#load:member(3)'
       - 'excel!Excel.Worksheet#name:member'
+      - 'excel!Excel.Worksheet#namedSheetViews:member'
       - 'excel!Excel.Worksheet#names:member'
       - 'excel!Excel.Worksheet#onActivated:member'
       - 'excel!Excel.Worksheet#onCalculated:member'
@@ -1025,6 +1026,24 @@ items:
       return:
         type:
           - string
+  - uid: 'excel!Excel.Worksheet#namedSheetViews:member'
+    summary: >-
+      Returns a collection of sheet views that are present in the worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: namedSheetViews
+    fullName: namedSheetViews
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly namedSheetViews: Excel.NamedSheetViewCollection;'
+      return:
+        type:
+          - 'excel!Excel.NamedSheetViewCollection:class'
   - uid: 'excel!Excel.Worksheet#names:member'
     summary: |-
       Collection of names scoped to the current worksheet.
@@ -1937,6 +1956,8 @@ references:
     name: Excel.PageBreakCollection
   - uid: 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
     name: Excel.Interfaces.WorksheetLoadOptions
+  - uid: 'excel!Excel.NamedSheetViewCollection:class'
+    name: Excel.NamedSheetViewCollection
   - uid: 'excel!Excel.NamedItemCollection:class'
     name: Excel.NamedItemCollection
   - uid: 'excel!Excel.Worksheet#onActivated~0:complex'

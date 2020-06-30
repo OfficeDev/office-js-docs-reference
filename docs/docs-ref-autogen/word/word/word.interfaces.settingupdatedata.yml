@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'word!Word.Interfaces.SettingUpdateData:interface'
-    summary: 'An interface for updating data on the Setting object, for use in "setting.set(<!-- -->{ ... }<!-- -->)".'
+    summary: 'An interface for updating data on the Setting object, for use in `setting.set({ ... })`<!-- -->.'
     name: Word.Interfaces.SettingUpdateData
     fullName: Word.Interfaces.SettingUpdateData
     langs:

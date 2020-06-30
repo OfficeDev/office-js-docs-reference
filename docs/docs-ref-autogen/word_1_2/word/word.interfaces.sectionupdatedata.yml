@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'word!Word.Interfaces.SectionUpdateData:interface'
-    summary: 'An interface for updating data on the Section object, for use in "section.set(<!-- -->{ ... }<!-- -->)".'
+    summary: 'An interface for updating data on the Section object, for use in `section.set({ ... })`<!-- -->.'
     name: Word.Interfaces.SectionUpdateData
     fullName: Word.Interfaces.SectionUpdateData
     langs:

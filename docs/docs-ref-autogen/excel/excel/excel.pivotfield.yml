@@ -38,8 +38,8 @@ items:
       - 'excel!Excel.PivotField#toJSON:member(1)'
   - uid: 'excel!Excel.PivotField#applyFilter:member(1)'
     summary: >-
-      Sets one or multiple of the field's current PivotFilters and applies them to the field. If the provided filters
-      are invalid or cannot be applied, an exception is thrown.
+      Sets one or more of the field's current PivotFilters and applies them to the field. If the provided filters are
+      invalid or cannot be applied, an exception is thrown.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

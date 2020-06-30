@@ -13,6 +13,8 @@ items:
       - 'word!Word.ErrorCodes.invalidArgument:member'
       - 'word!Word.ErrorCodes.itemNotFound:member'
       - 'word!Word.ErrorCodes.notImplemented:member'
+      - 'word!Word.ErrorCodes.searchDialogIsOpen:member'
+      - 'word!Word.ErrorCodes.searchStringInvalidOrTooLong:member'
   - uid: 'word!Word.ErrorCodes.accessDenied:member'
     name: accessDenied
     fullName: accessDenied
@@ -48,3 +50,17 @@ items:
       - typeScript
     type: field
     numericValue: '"NotImplemented"'
+  - uid: 'word!Word.ErrorCodes.searchDialogIsOpen:member'
+    name: searchDialogIsOpen
+    fullName: searchDialogIsOpen
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SearchDialogIsOpen"'
+  - uid: 'word!Word.ErrorCodes.searchStringInvalidOrTooLong:member'
+    name: searchStringInvalidOrTooLong
+    fullName: searchStringInvalidOrTooLong
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SearchStringInvalidOrTooLong"'

@@ -881,7 +881,7 @@ items:
           - string
   - uid: 'outlook!Office.Mailbox#getCallbackTokenAsync:member(1)'
     summary: >-
-      Gets a string that contains a token used to call REST APIs or Exchange Web Services.
+      Gets a string that contains a token used to call REST APIs or Exchange Web Services (EWS).
 
 
       The `getCallbackTokenAsync` method makes an asynchronous call to get an opaque token from the Exchange Server that
@@ -898,14 +898,18 @@ items:
       method requires a minimum permission level of `ReadWriteItem`<!-- -->.
 
 
+      **Important**: For guidance on delegate or shared scenarios, see the [delegate
+      access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
+
+
       *REST Tokens*
 
 
       When a REST token is requested (`options.isRest` = `true`<!-- -->), the resulting token will not work to
-      authenticate Exchange Web Services calls. The token will be limited in scope to read-only access to the current
-      item and its attachments, unless the add-in has specified the `ReadWriteMailbox` permission in its manifest. If
-      the `ReadWriteMailbox` permission is specified, the resulting token will grant read/write access to mail,
-      calendar, and contacts, including the ability to send mail.
+      authenticate EWS calls. The token will be limited in scope to read-only access to the current item and its
+      attachments, unless the add-in has specified the `ReadWriteMailbox` permission in its manifest. If the
+      `ReadWriteMailbox` permission is specified, the resulting token will grant read/write access to mail, calendar,
+      and contacts, including the ability to send mail.
 
 
       The add-in should use the `restUrl` property to determine the correct URL to use when making REST API calls.
@@ -1054,6 +1058,10 @@ items:
 
       Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item. The `saveAsync`
       method requires a minimum permission level of `ReadWriteItem`<!-- -->.
+
+
+      **Important**: For guidance on delegate or shared scenarios, see the [delegate
+      access](https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access) article.
 
 
       \[ [API set: All support Read mode; Mailbox 1.3 introduced Compose mode
