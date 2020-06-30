@@ -30,7 +30,6 @@ items:
       - 'excel!Excel.EventType.tableSelectionChanged:member'
       - 'excel!Excel.EventType.visualChange:member'
       - 'excel!Excel.EventType.visualSelectionChanged:member'
-      - 'excel!Excel.EventType.wacoperationEvent:member'
       - 'excel!Excel.EventType.workbookAutoSaveSettingChanged:member'
       - 'excel!Excel.EventType.worksheetActivated:member'
       - 'excel!Excel.EventType.worksheetAdded:member'
@@ -241,13 +240,6 @@ items:
       - typeScript
     type: field
     numericValue: '"VisualSelectionChanged"'
-  - uid: 'excel!Excel.EventType.wacoperationEvent:member'
-    name: wacoperationEvent
-    fullName: wacoperationEvent
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"WACOperationEvent"'
   - uid: 'excel!Excel.EventType.workbookAutoSaveSettingChanged:member'
     summary: >-
       WorkbookAutoSaveSettingChanged represents the type of event registered on workbook, and occurs when there is an
