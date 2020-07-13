@@ -536,7 +536,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-existing-appointment.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-existing-appointment.yaml
 
       var itemId = $("#itemId").val();
 
@@ -594,6 +594,28 @@ items:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-existing-appointment.yaml
+
+      var itemId = $("#itemId").val();
+
+
+      // The async version will return error 9049 if the item is not found.
+
+      // The async version is only available in preview.
+
+      Office.context.mailbox.displayAppointmentFormAsync(itemId, function(asyncResult) {
+        console.log("Result: " + JSON.stringify(asyncResult));
+      });
+
+      ```
     isPreview: true
     name: 'displayAppointmentFormAsync(itemId, options, callback)'
     fullName: 'displayAppointmentFormAsync(itemId, options, callback)'
@@ -665,7 +687,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-existing-message.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-existing-message.yaml
 
       var itemId = $("#itemId").val();
 
@@ -724,6 +746,28 @@ items:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-existing-message.yaml
+
+      var itemId = $("#itemId").val();
+
+
+      // The async version will return error 9049 if the item is not found.
+
+      // The async version is only available in preview.
+
+      Office.context.mailbox.displayAppointmentFormAsync(itemId, function (asyncResult) {
+       console.log("Result: " + JSON.stringify(asyncResult));
+      });
+
+      ```
     isPreview: true
     name: 'displayMessageFormAsync(itemId, options, callback)'
     fullName: 'displayMessageFormAsync(itemId, options, callback)'
@@ -798,7 +842,7 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-new-appointment.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-new-appointment.yaml
 
       var start = new Date();
 
@@ -807,17 +851,15 @@ items:
       end.setHours(start.getHours() + 1);
 
 
-      Office.context.mailbox.displayNewAppointmentForm(
-
-      {
-          requiredAttendees: ['bob@contoso.com'],
-          optionalAttendees: ['sam@contoso.com'],
-          start: start,
-          end: end,
-          location: 'Home',
-          subject: 'meeting',
-          resources: ['projector@contoso.com'],
-          body: 'Hello World!'
+      Office.context.mailbox.displayNewAppointmentForm({
+        requiredAttendees: ["bob@contoso.com"],
+        optionalAttendees: ["sam@contoso.com"],
+        start: start,
+        end: end,
+        location: "Home",
+        subject: "meeting",
+        resources: ["projector@contoso.com"],
+        body: "Hello World!"
       });
 
       ```
@@ -875,6 +917,44 @@ items:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-new-appointment.yaml
+
+      var start = new Date();
+
+      var end = new Date();
+
+      end.setHours(start.getHours() + 1);
+
+
+      // The async version is only available in preview, and provides
+
+      // a callback when the new appointment form has been created.
+
+      Office.context.mailbox.displayNewAppointmentFormAsync(
+        {
+          requiredAttendees: ["bob@contoso.com"],
+          optionalAttendees: ["sam@contoso.com"],
+          start: start,
+          end: end,
+          location: "Home",
+          subject: "meeting",
+          resources: ["projector@contoso.com"],
+          body: "Hello World!"
+        },
+        function(asyncResult) {
+          console.log(JSON.stringify(asyncResult));
+        }
+      );
+
+      ```
     isPreview: true
     name: 'displayNewAppointmentFormAsync(parameters, options, callback)'
     fullName: 'displayNewAppointmentFormAsync(parameters, options, callback)'
@@ -937,24 +1017,21 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-new-message.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-new-message.yaml
 
-      Office.context.mailbox.displayNewMessageForm(
-
-      {
-          toRecipients: Office.context.mailbox.item.to, // Copies the To line from current item
-          ccRecipients: ['sam@contoso.com'],
-          subject: 'Outlook add-ins are cool!',
-          htmlBody: 'Hello <b>World</b>!<br/><img src="cid:image.png"></i>',
-          attachments:
-          [
-              {
-                  type: 'file',
-                  name: 'image.png',
-                  url: 'http://www.cutestpaw.com/wp-content/uploads/2011/11/Cute-Black-Dogs-s.jpg',
-                  isInline: true
-              }
-          ]
+      Office.context.mailbox.displayNewMessageForm({
+        toRecipients: Office.context.mailbox.item.to, // Copies the To line from current item
+        ccRecipients: ["sam@contoso.com"],
+        subject: "Outlook add-ins are cool!",
+        htmlBody: 'Hello <b>World</b>!<br/><img src="cid:image.png"></i>',
+        attachments: [
+          {
+            type: "file",
+            name: "image.png",
+            url: "http://www.cutestpaw.com/wp-content/uploads/2011/11/Cute-Black-Dogs-s.jpg",
+            isInline: true
+          }
+        ]
       });
 
       ```
@@ -1043,6 +1120,41 @@ items:
       **[Applicable Outlook
       mode](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-new-message.yaml
+
+      // The async version is only available in preview, and
+
+      // provides a callback when the new message form has been created.
+
+      Office.context.mailbox.displayNewMessageFormAsync(
+        {
+          toRecipients: Office.context.mailbox.item.to, // Copies the To line from current item
+          ccRecipients: ["sam@contoso.com"],
+          subject: "Outlook add-ins are cool!",
+          htmlBody: 'Hello <b>World</b>!<br/><img src="cid:image.png"></i>',
+          attachments: [
+            {
+              type: "file",
+              name: "image.png",
+              url: "http://www.cutestpaw.com/wp-content/uploads/2011/11/Cute-Black-Dogs-s.jpg",
+              isInline: true
+            }
+          ]
+        },
+        function(asyncResult) {
+          console.log(JSON.stringify(asyncResult));
+        }
+      );
+
+      ```
     isPreview: true
     name: 'displayNewMessageFormAsync(parameters, options, callback)'
     fullName: 'displayNewMessageFormAsync(parameters, options, callback)'
