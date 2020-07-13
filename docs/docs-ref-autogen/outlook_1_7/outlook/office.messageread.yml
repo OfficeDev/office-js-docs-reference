@@ -590,11 +590,9 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-reply-forms.yaml
 
-      Office.context.mailbox.item.displayReplyAllForm(
-        "This is a reply ALL with <b>some bold text</b>."
-      );
+      Office.context.mailbox.item.displayReplyAllForm("This is a reply ALL with <b>some bold text</b>.");
 
       ```
     name: displayReplyAllForm(formData)
@@ -736,36 +734,29 @@ items:
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-forms.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-reply-forms.yaml
 
-      Office.context.mailbox.item.displayReplyForm(
-        "This is a reply with <i>some text in italics</i>."
-      );
+      Office.context.mailbox.item.displayReplyForm("This is a reply with <i>some text in italics</i>.");
 
       ```
 
       ```javascript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/55-display-items/display-reply-with-attachments.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/99-preview-apis/display-reply-with-attachments.yaml
 
-      Office.context.mailbox.item.displayReplyForm(
-
-      {
-          htmlBody : "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
-          attachments :
-          [
-              { type: "file", url: "http://i.imgur.com/9S36xvA.jpg", name: "dog.jpg", isInline: true },
-              { type: "item", itemId : Office.context.mailbox.item.itemId, name: "test_email.msg" }
-          ],
-          options : { asyncContext: null },
-          callback : function (result)
-          {
-              if (result.status !== Office.AsyncResultStatus.Succeeded)
-              {
-                  console.error(`Action failed with message ${result.error.message}`);
-              }
+      Office.context.mailbox.item.displayReplyForm({
+        htmlBody: "This is a reply with a couple of attachments - an inline image and an item<br><img src='cid:dog.jpg'>",
+        attachments: [
+          { type: "file", url: "http://i.imgur.com/9S36xvA.jpg", name: "dog.jpg", isInline: true },
+          { type: "item", itemId: Office.context.mailbox.item.itemId, name: "test_email.msg" }
+        ],
+        options: { asyncContext: null },
+        callback: function(result) {
+          if (result.status !== Office.AsyncResultStatus.Succeeded) {
+            console.error(`Action failed with message ${result.error.message}`);
           }
+        }
       });
 
       ```
