@@ -10041,6 +10041,14 @@
         // Apply body background color to a CSS class.
         $('.body').css('background-color', bodyBackgroundColor);
     }
+'Office.Context#roamingSettings:member':
+  - |-
+    // Get the current value of the 'myKey' setting.
+    var value = Office.context.roamingSettings.get('myKey');
+    // Update the value of the 'myKey' setting.
+    Office.context.roamingSettings.set('myKey', 'Hello World!');
+    // Persist the change.
+    Office.context.roamingSettings.saveAsync();
 'Office.CustomProperties#get:member(1)':
   - >-
     // Link to full sample:
@@ -16102,13 +16110,6 @@
       }
     });
 'Office.RoamingSettings#set:member(1)':
-  - |-
-    // Get the current value of the 'myKey' setting.
-    var value = Office.context.roamingSettings.get('myKey');
-    // Update the value of the 'myKey' setting.
-    Office.context.roamingSettings.set('myKey', 'Hello World!');
-    // Persist the change.
-    Office.context.roamingSettings.saveAsync();
   - >-
     // Link to full sample:
     https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/samples/outlook/10-roaming-settings/roaming-settings.yaml
