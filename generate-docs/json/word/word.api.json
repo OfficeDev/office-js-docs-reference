@@ -47971,7 +47971,7 @@
             {
               "kind": "Enum",
               "canonicalReference": "word!Word.SelectionMode:enum",
-              "docComment": "/**\n * [Api set: WordApi]\n */\n",
+              "docComment": "/**\n * This enum sets where the cursor (insertion point) in the document is after a selection.\n *\n * [Api set: WordApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -47984,7 +47984,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "word!Word.SelectionMode.end:member",
-                  "docComment": "",
+                  "docComment": "/**\n * The cursor is at the end of the selection (just after the end of the selected range).\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -48005,7 +48005,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "word!Word.SelectionMode.select:member",
-                  "docComment": "",
+                  "docComment": "/**\n * The entire range is selected.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -48026,7 +48026,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "word!Word.SelectionMode.start:member",
-                  "docComment": "",
+                  "docComment": "/**\n * The cursor is at the beginning of the selection (just before the start of the selected range).\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
